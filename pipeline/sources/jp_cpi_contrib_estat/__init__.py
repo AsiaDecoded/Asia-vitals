@@ -205,6 +205,18 @@ def english_names():
     return {}
 
 
+def _full_names(names):
+    """e-Stat lists sub-items under a parent as '(elementary school)'; prefix the parent's name."""
+    out, base = {}, ""
+    for code, name in names.items():
+        if name.startswith("(") and base:
+            out[code] = f"{base} {name}"
+        else:
+            out[code] = name
+            base = name
+    return out
+
+
 def _mlabel(d):
     return f"{MONTHS[int(d[5:7]) - 1]} {d[:4]}"
 
@@ -274,6 +286,7 @@ def update(from_dir=None, **_):
             names_path.write_text(json.dumps(names, ensure_ascii=False, indent=1) + "\n")
         except Exception as e:  # noqa: BLE001 - English names are a nicety; keep Japanese if the call fails
             warnings.append(f"English item names not refreshed: {e}")
+    names = _full_names(names)
     if len(items) < 400:
         raise CheckFailed([f"only {len(items)} items parsed from the latest Table 5"])
     OUT.mkdir(parents=True, exist_ok=True)
