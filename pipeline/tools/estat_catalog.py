@@ -30,10 +30,31 @@ def text(x):
     return x.get("$", "") if isinstance(x, dict) else (x or "")
 
 
+def scrub(x):
+    """Drop anything that could echo the app ID."""
+    if isinstance(x, dict):
+        return {k: scrub(v) for k, v in x.items() if "app" not in k.lower()}
+    if isinstance(x, list):
+        return [scrub(v) for v in x]
+    return x
+
+
 def main(stats_code, out, *words):
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
-    found = []
+    found, raw, errors = [], [], []
+    try:
+        _search(stats_code, words, found, raw)
+    except Exception as e:  # noqa: BLE001 - keep what was found and say what went wrong
+        import traceback
+        errors.append(traceback.format_exc().replace(os.environ.get("ESTAT_APP_ID", "\0"), "<app id>"))
+    (out / "catalog_raw.json").write_text(json.dumps(scrub(raw[:3]), ensure_ascii=False, indent=1))
+    (out / "catalog_errors.txt").write_text("\n".join(errors) or "none\n")
+    (out / "catalog.json").write_text(json.dumps(found, ensure_ascii=False, indent=1))
+    print(f"{len(found)} resources, {len(errors)} errors")
+
+
+def _search(stats_code, words, found, raw):
     for w in words or [""]:
         start = 1
         while True:
@@ -41,12 +62,13 @@ def main(stats_code, out, *words):
             if w:
                 params["searchWord"] = w
             res = call("getDataCatalog", **params)
+            raw.append(res)
             body = res["GET_DATA_CATALOG"]
             st = body["RESULT"]["STATUS"]
             if st == 1:
                 break
             if st != 0:
-                raise SystemExit(f"getDataCatalog error {st}: {body['RESULT'].get('ERROR_MSG')}")
+                raise RuntimeError(f"getDataCatalog error {st}: {body['RESULT'].get('ERROR_MSG')}")
             dl = body.get("DATA_CATALOG_LIST_INF", {})
             for d in as_list(dl.get("DATA_CATALOG_INF")):
                 ds = d.get("DATASET", {})
@@ -67,8 +89,6 @@ def main(stats_code, out, *words):
             if not nxt:
                 break
             start = int(nxt)
-    (out / "catalog.json").write_text(json.dumps(found, ensure_ascii=False, indent=1))
-    print(f"{len(found)} resources")
 
 
 if __name__ == "__main__":
