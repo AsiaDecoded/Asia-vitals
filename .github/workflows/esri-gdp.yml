@@ -1,0 +1,40 @@
+name: ESRI GDP release
+
+# ESRI publishes at 08:50 JST (23:50 UTC the day before). Releases fall between the
+# 5th and 20th of Feb, Mar, May, Jun, Aug, Sep, Nov and Dec, so the workflow only
+# looks in those windows: 00:15 and 03:15 UTC (08:15 / 11:15 Singapore).
+on:
+  schedule:
+    - cron: "15 0,3 4-20 2,3,5,6,8,9,11,12 *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: esri-gdp
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Look for a new release, check it, rebuild the data
+        id: run
+        run: python -I pipeline/run.py
+
+      - name: Commit the new release
+        if: steps.run.outputs.updated == 'true'
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data raw
+          git commit -m "ESRI GDP ${{ steps.run.outputs.code }}"
+          git push
