@@ -1,0 +1,4821 @@
+{
+ "slug": "jp-ppi-yoy",
+ "title": "Japan producer, export and import prices",
+ "units": "% y/y",
+ "freq": "monthly",
+ "source": "Bank of Japan, Corporate Goods Price Index (2020 base), Sep 2026.",
+ "release": "M2026-09",
+ "columns": [
+  "ppi",
+  "export_yen",
+  "import_yen"
+ ],
+ "data": [
+  {
+   "date": "1960-01-01",
+   "ppi": null,
+   "export_yen": null,
+   "import_yen": null
+  },
+  {
+   "date": "1960-02-01",
+   "ppi": null,
+   "export_yen": null,
+   "import_yen": null
+  },
+  {
+   "date": "1960-03-01",
+   "ppi": null,
+   "export_yen": null,
+   "import_yen": null
+  },
+  {
+   "date": "1960-04-01",
+   "ppi": null,
+   "export_yen": null,
+   "import_yen": null
+  },
+  {
+   "date": "1960-05-01",
+   "ppi": null,
+   "export_yen": null,
+   "import_yen": null
+  },
+  {
+   "date": "1960-06-01",
+   "ppi": null,
+   "export_yen": null,
+   "import_yen": null
+  },
+  {
+   "date": "1960-07-01",
+   "ppi": null,
+   "export_yen": null,
+   "import_yen": null
+  },
+  {
+   "date": "1960-08-01",
+   "ppi": null,
+   "export_yen": null,
+   "import_yen": null
+  },
+  {
+   "date": "1960-09-01",
+   "ppi": null,
+   "export_yen": null,
+   "import_yen": null
+  },
+  {
+   "date": "1960-10-01",
+   "ppi": null,
+   "export_yen": null,
+   "import_yen": null
+  },
+  {
+   "date": "1960-11-01",
+   "ppi": null,
+   "export_yen": null,
+   "import_yen": null
+  },
+  {
+   "date": "1960-12-01",
+   "ppi": null,
+   "export_yen": null,
+   "import_yen": null
+  },
+  {
+   "date": "1961-01-01",
+   "ppi": -0.4,
+   "export_yen": -5.7,
+   "import_yen": -3.9
+  },
+  {
+   "date": "1961-02-01",
+   "ppi": -0.4,
+   "export_yen": -5,
+   "import_yen": -3.1
+  },
+  {
+   "date": "1961-03-01",
+   "ppi": 0.2,
+   "export_yen": -4.5,
+   "import_yen": -1.2
+  },
+  {
+   "date": "1961-04-01",
+   "ppi": 1,
+   "export_yen": -2.1,
+   "import_yen": 0
+  },
+  {
+   "date": "1961-05-01",
+   "ppi": 1.5,
+   "export_yen": -4.1,
+   "import_yen": 1.4
+  },
+  {
+   "date": "1961-06-01",
+   "ppi": 1.7,
+   "export_yen": -3.3,
+   "import_yen": 0
+  },
+  {
+   "date": "1961-07-01",
+   "ppi": 2.1,
+   "export_yen": -3.8,
+   "import_yen": 1.4
+  },
+  {
+   "date": "1961-08-01",
+   "ppi": 2.3,
+   "export_yen": -3.9,
+   "import_yen": 2.6
+  },
+  {
+   "date": "1961-09-01",
+   "ppi": 1.9,
+   "export_yen": -4.4,
+   "import_yen": 2.2
+  },
+  {
+   "date": "1961-10-01",
+   "ppi": 1.7,
+   "export_yen": -4.3,
+   "import_yen": 2.5
+  },
+  {
+   "date": "1961-11-01",
+   "ppi": 1.5,
+   "export_yen": -4.5,
+   "import_yen": 1.2
+  },
+  {
+   "date": "1961-12-01",
+   "ppi": 1.3,
+   "export_yen": -4.2,
+   "import_yen": 0.8
+  },
+  {
+   "date": "1962-01-01",
+   "ppi": 0.6,
+   "export_yen": -3.8,
+   "import_yen": 0.2
+  },
+  {
+   "date": "1962-02-01",
+   "ppi": 0.6,
+   "export_yen": -3.9,
+   "import_yen": 0
+  },
+  {
+   "date": "1962-03-01",
+   "ppi": 0,
+   "export_yen": -4.3,
+   "import_yen": -1.6
+  },
+  {
+   "date": "1962-04-01",
+   "ppi": -1.2,
+   "export_yen": -4.9,
+   "import_yen": -3.3
+  },
+  {
+   "date": "1962-05-01",
+   "ppi": -2.1,
+   "export_yen": -2.6,
+   "import_yen": -4.3
+  },
+  {
+   "date": "1962-06-01",
+   "ppi": -2.7,
+   "export_yen": -2.7,
+   "import_yen": -3.2
+  },
+  {
+   "date": "1962-07-01",
+   "ppi": -2.5,
+   "export_yen": -2.6,
+   "import_yen": -3.8
+  },
+  {
+   "date": "1962-08-01",
+   "ppi": -2.9,
+   "export_yen": -3,
+   "import_yen": -5
+  },
+  {
+   "date": "1962-09-01",
+   "ppi": -3.1,
+   "export_yen": -2.7,
+   "import_yen": -5
+  },
+  {
+   "date": "1962-10-01",
+   "ppi": -2.9,
+   "export_yen": -2.4,
+   "import_yen": -4.2
+  },
+  {
+   "date": "1962-11-01",
+   "ppi": -2.5,
+   "export_yen": -1.9,
+   "import_yen": -2.6
+  },
+  {
+   "date": "1962-12-01",
+   "ppi": -1.4,
+   "export_yen": -0.9,
+   "import_yen": -2.4
+  },
+  {
+   "date": "1963-01-01",
+   "ppi": -0.6,
+   "export_yen": 0.2,
+   "import_yen": -1.4
+  },
+  {
+   "date": "1963-02-01",
+   "ppi": -0.4,
+   "export_yen": 0.7,
+   "import_yen": -1.2
+  },
+  {
+   "date": "1963-03-01",
+   "ppi": 0,
+   "export_yen": 1.2,
+   "import_yen": -0.6
+  },
+  {
+   "date": "1963-04-01",
+   "ppi": 0.6,
+   "export_yen": 1.6,
+   "import_yen": 0.8
+  },
+  {
+   "date": "1963-05-01",
+   "ppi": 1.5,
+   "export_yen": 1.6,
+   "import_yen": 1.6
+  },
+  {
+   "date": "1963-06-01",
+   "ppi": 2.5,
+   "export_yen": 2.5,
+   "import_yen": 2.9
+  },
+  {
+   "date": "1963-07-01",
+   "ppi": 2.3,
+   "export_yen": 2,
+   "import_yen": 3.5
+  },
+  {
+   "date": "1963-08-01",
+   "ppi": 2.3,
+   "export_yen": 2.9,
+   "import_yen": 4.4
+  },
+  {
+   "date": "1963-09-01",
+   "ppi": 2.7,
+   "export_yen": 3.2,
+   "import_yen": 5.5
+  },
+  {
+   "date": "1963-10-01",
+   "ppi": 2.7,
+   "export_yen": 3.6,
+   "import_yen": 6.1
+  },
+  {
+   "date": "1963-11-01",
+   "ppi": 3,
+   "export_yen": 3.8,
+   "import_yen": 7.3
+  },
+  {
+   "date": "1963-12-01",
+   "ppi": 1.9,
+   "export_yen": 3.4,
+   "import_yen": 7
+  },
+  {
+   "date": "1964-01-01",
+   "ppi": 1.5,
+   "export_yen": 2.5,
+   "import_yen": 6.6
+  },
+  {
+   "date": "1964-02-01",
+   "ppi": 1,
+   "export_yen": 2.2,
+   "import_yen": 5.7
+  },
+  {
+   "date": "1964-03-01",
+   "ppi": 0.6,
+   "export_yen": 1.8,
+   "import_yen": 4.7
+  },
+  {
+   "date": "1964-04-01",
+   "ppi": 0.6,
+   "export_yen": 1.9,
+   "import_yen": 3.2
+  },
+  {
+   "date": "1964-05-01",
+   "ppi": 0,
+   "export_yen": 2.2,
+   "import_yen": 2.2
+  },
+  {
+   "date": "1964-06-01",
+   "ppi": -0.6,
+   "export_yen": 1.3,
+   "import_yen": 1.2
+  },
+  {
+   "date": "1964-07-01",
+   "ppi": -0.4,
+   "export_yen": 1.6,
+   "import_yen": 0
+  },
+  {
+   "date": "1964-08-01",
+   "ppi": -0.2,
+   "export_yen": 1.3,
+   "import_yen": 0.4
+  },
+  {
+   "date": "1964-09-01",
+   "ppi": -0.2,
+   "export_yen": 1,
+   "import_yen": 0
+  },
+  {
+   "date": "1964-10-01",
+   "ppi": -0.2,
+   "export_yen": 0.8,
+   "import_yen": -0.8
+  },
+  {
+   "date": "1964-11-01",
+   "ppi": -0.4,
+   "export_yen": 0.2,
+   "import_yen": -2.5
+  },
+  {
+   "date": "1964-12-01",
+   "ppi": -0.2,
+   "export_yen": 0,
+   "import_yen": -2.9
+  },
+  {
+   "date": "1965-01-01",
+   "ppi": 0.6,
+   "export_yen": 0.4,
+   "import_yen": -4.8
+  },
+  {
+   "date": "1965-02-01",
+   "ppi": 0.8,
+   "export_yen": 0,
+   "import_yen": -4.3
+  },
+  {
+   "date": "1965-03-01",
+   "ppi": 1,
+   "export_yen": -0.2,
+   "import_yen": -3.9
+  },
+  {
+   "date": "1965-04-01",
+   "ppi": 1,
+   "export_yen": -0.2,
+   "import_yen": -3.1
+  },
+  {
+   "date": "1965-05-01",
+   "ppi": 1.4,
+   "export_yen": -0.9,
+   "import_yen": -2.6
+  },
+  {
+   "date": "1965-06-01",
+   "ppi": 1.2,
+   "export_yen": -1.1,
+   "import_yen": -2.2
+  },
+  {
+   "date": "1965-07-01",
+   "ppi": 0.8,
+   "export_yen": -1,
+   "import_yen": -1
+  },
+  {
+   "date": "1965-08-01",
+   "ppi": 0.6,
+   "export_yen": -1.1,
+   "import_yen": -1.4
+  },
+  {
+   "date": "1965-09-01",
+   "ppi": 0.8,
+   "export_yen": -0.9,
+   "import_yen": -1.8
+  },
+  {
+   "date": "1965-10-01",
+   "ppi": 0.8,
+   "export_yen": -0.8,
+   "import_yen": -1.8
+  },
+  {
+   "date": "1965-11-01",
+   "ppi": 1,
+   "export_yen": -0.6,
+   "import_yen": -1.8
+  },
+  {
+   "date": "1965-12-01",
+   "ppi": 1.4,
+   "export_yen": -1.1,
+   "import_yen": -1
+  },
+  {
+   "date": "1966-01-01",
+   "ppi": 1.2,
+   "export_yen": -1.6,
+   "import_yen": 1.6
+  },
+  {
+   "date": "1966-02-01",
+   "ppi": 1.6,
+   "export_yen": -1.5,
+   "import_yen": 2.6
+  },
+  {
+   "date": "1966-03-01",
+   "ppi": 1.6,
+   "export_yen": -1.2,
+   "import_yen": 2.8
+  },
+  {
+   "date": "1966-04-01",
+   "ppi": 1.6,
+   "export_yen": -0.9,
+   "import_yen": 1.8
+  },
+  {
+   "date": "1966-05-01",
+   "ppi": 1.6,
+   "export_yen": -0.6,
+   "import_yen": 2.6
+  },
+  {
+   "date": "1966-06-01",
+   "ppi": 2.5,
+   "export_yen": -0.1,
+   "import_yen": 2.8
+  },
+  {
+   "date": "1966-07-01",
+   "ppi": 3.1,
+   "export_yen": 0,
+   "import_yen": 2.8
+  },
+  {
+   "date": "1966-08-01",
+   "ppi": 3.1,
+   "export_yen": 0,
+   "import_yen": 2.6
+  },
+  {
+   "date": "1966-09-01",
+   "ppi": 2.7,
+   "export_yen": 0.2,
+   "import_yen": 1.6
+  },
+  {
+   "date": "1966-10-01",
+   "ppi": 3.3,
+   "export_yen": 0.6,
+   "import_yen": 1.4
+  },
+  {
+   "date": "1966-11-01",
+   "ppi": 3.1,
+   "export_yen": 0.6,
+   "import_yen": 1.6
+  },
+  {
+   "date": "1966-12-01",
+   "ppi": 3,
+   "export_yen": 1.5,
+   "import_yen": 1
+  },
+  {
+   "date": "1967-01-01",
+   "ppi": 3.8,
+   "export_yen": 1.5,
+   "import_yen": -0.2
+  },
+  {
+   "date": "1967-02-01",
+   "ppi": 3.4,
+   "export_yen": 0.6,
+   "import_yen": -1
+  },
+  {
+   "date": "1967-03-01",
+   "ppi": 3.4,
+   "export_yen": 0.5,
+   "import_yen": -1.2
+  },
+  {
+   "date": "1967-04-01",
+   "ppi": 2.4,
+   "export_yen": 0.1,
+   "import_yen": -1.4
+  },
+  {
+   "date": "1967-05-01",
+   "ppi": 2.4,
+   "export_yen": 0.1,
+   "import_yen": -2.2
+  },
+  {
+   "date": "1967-06-01",
+   "ppi": 2,
+   "export_yen": 0.1,
+   "import_yen": -2.7
+  },
+  {
+   "date": "1967-07-01",
+   "ppi": 1.6,
+   "export_yen": 0,
+   "import_yen": -2.7
+  },
+  {
+   "date": "1967-08-01",
+   "ppi": 2.4,
+   "export_yen": 0,
+   "import_yen": -2.6
+  },
+  {
+   "date": "1967-09-01",
+   "ppi": 2.6,
+   "export_yen": 0,
+   "import_yen": -1.4
+  },
+  {
+   "date": "1967-10-01",
+   "ppi": 2.6,
+   "export_yen": -0.3,
+   "import_yen": 0
+  },
+  {
+   "date": "1967-11-01",
+   "ppi": 2.8,
+   "export_yen": -0.1,
+   "import_yen": 0.2
+  },
+  {
+   "date": "1967-12-01",
+   "ppi": 2.4,
+   "export_yen": -0.6,
+   "import_yen": 1.2
+  },
+  {
+   "date": "1968-01-01",
+   "ppi": 0.8,
+   "export_yen": -0.6,
+   "import_yen": 1.8
+  },
+  {
+   "date": "1968-02-01",
+   "ppi": 1,
+   "export_yen": 0.4,
+   "import_yen": 1.6
+  },
+  {
+   "date": "1968-03-01",
+   "ppi": 1,
+   "export_yen": 0.5,
+   "import_yen": 1.8
+  },
+  {
+   "date": "1968-04-01",
+   "ppi": 1.4,
+   "export_yen": 0.2,
+   "import_yen": 1
+  },
+  {
+   "date": "1968-05-01",
+   "ppi": 1.6,
+   "export_yen": 0.1,
+   "import_yen": 1
+  },
+  {
+   "date": "1968-06-01",
+   "ppi": 1.6,
+   "export_yen": 0,
+   "import_yen": 1
+  },
+  {
+   "date": "1968-07-01",
+   "ppi": 1.6,
+   "export_yen": 0,
+   "import_yen": 0
+  },
+  {
+   "date": "1968-08-01",
+   "ppi": 0.6,
+   "export_yen": 0,
+   "import_yen": 0
+  },
+  {
+   "date": "1968-09-01",
+   "ppi": 0.8,
+   "export_yen": -0.2,
+   "import_yen": 0
+  },
+  {
+   "date": "1968-10-01",
+   "ppi": 0.6,
+   "export_yen": 0.2,
+   "import_yen": -1.4
+  },
+  {
+   "date": "1968-11-01",
+   "ppi": 0.4,
+   "export_yen": 0.1,
+   "import_yen": -0.8
+  },
+  {
+   "date": "1968-12-01",
+   "ppi": 0.4,
+   "export_yen": 0.3,
+   "import_yen": -1.2
+  },
+  {
+   "date": "1969-01-01",
+   "ppi": 0.6,
+   "export_yen": 0.8,
+   "import_yen": -1.6
+  },
+  {
+   "date": "1969-02-01",
+   "ppi": 0.4,
+   "export_yen": 0.9,
+   "import_yen": -1.4
+  },
+  {
+   "date": "1969-03-01",
+   "ppi": 0.6,
+   "export_yen": 1,
+   "import_yen": -0.6
+  },
+  {
+   "date": "1969-04-01",
+   "ppi": 1.2,
+   "export_yen": 1.6,
+   "import_yen": 1.8
+  },
+  {
+   "date": "1969-05-01",
+   "ppi": 1.4,
+   "export_yen": 2.3,
+   "import_yen": 2.6
+  },
+  {
+   "date": "1969-06-01",
+   "ppi": 1.5,
+   "export_yen": 2.6,
+   "import_yen": 3
+  },
+  {
+   "date": "1969-07-01",
+   "ppi": 1.7,
+   "export_yen": 3.1,
+   "import_yen": 3.4
+  },
+  {
+   "date": "1969-08-01",
+   "ppi": 2.3,
+   "export_yen": 3.3,
+   "import_yen": 3.8
+  },
+  {
+   "date": "1969-09-01",
+   "ppi": 3.1,
+   "export_yen": 3.9,
+   "import_yen": 3.2
+  },
+  {
+   "date": "1969-10-01",
+   "ppi": 2.7,
+   "export_yen": 4,
+   "import_yen": 3.8
+  },
+  {
+   "date": "1969-11-01",
+   "ppi": 3.1,
+   "export_yen": 4.6,
+   "import_yen": 4
+  },
+  {
+   "date": "1969-12-01",
+   "ppi": 3.4,
+   "export_yen": 5.4,
+   "import_yen": 3.6
+  },
+  {
+   "date": "1970-01-01",
+   "ppi": 4,
+   "export_yen": 6.4,
+   "import_yen": 5.6
+  },
+  {
+   "date": "1970-02-01",
+   "ppi": 4.6,
+   "export_yen": 6.7,
+   "import_yen": 5.8
+  },
+  {
+   "date": "1970-03-01",
+   "ppi": 4.8,
+   "export_yen": 6.4,
+   "import_yen": 5.5
+  },
+  {
+   "date": "1970-04-01",
+   "ppi": 5,
+   "export_yen": 6.2,
+   "import_yen": 4.9
+  },
+  {
+   "date": "1970-05-01",
+   "ppi": 4.6,
+   "export_yen": 5.7,
+   "import_yen": 3.9
+  },
+  {
+   "date": "1970-06-01",
+   "ppi": 4,
+   "export_yen": 5.4,
+   "import_yen": 2.7
+  },
+  {
+   "date": "1970-07-01",
+   "ppi": 3.8,
+   "export_yen": 4.8,
+   "import_yen": 2.9
+  },
+  {
+   "date": "1970-08-01",
+   "ppi": 3.4,
+   "export_yen": 4,
+   "import_yen": 2.3
+  },
+  {
+   "date": "1970-09-01",
+   "ppi": 2.2,
+   "export_yen": 3.2,
+   "import_yen": 2.9
+  },
+  {
+   "date": "1970-10-01",
+   "ppi": 2.1,
+   "export_yen": 2.4,
+   "import_yen": 1.8
+  },
+  {
+   "date": "1970-11-01",
+   "ppi": 1.5,
+   "export_yen": 1.5,
+   "import_yen": 1.2
+  },
+  {
+   "date": "1970-12-01",
+   "ppi": 0.9,
+   "export_yen": 0.6,
+   "import_yen": 1.2
+  },
+  {
+   "date": "1971-01-01",
+   "ppi": 0.2,
+   "export_yen": -0.9,
+   "import_yen": -0.4
+  },
+  {
+   "date": "1971-02-01",
+   "ppi": -0.7,
+   "export_yen": -1.4,
+   "import_yen": -0.4
+  },
+  {
+   "date": "1971-03-01",
+   "ppi": -1.1,
+   "export_yen": -1.4,
+   "import_yen": 0
+  },
+  {
+   "date": "1971-04-01",
+   "ppi": -1.1,
+   "export_yen": -1.3,
+   "import_yen": 0.7
+  },
+  {
+   "date": "1971-05-01",
+   "ppi": -1.1,
+   "export_yen": -1.1,
+   "import_yen": 0.9
+  },
+  {
+   "date": "1971-06-01",
+   "ppi": -0.9,
+   "export_yen": -1.1,
+   "import_yen": 1.7
+  },
+  {
+   "date": "1971-07-01",
+   "ppi": -0.9,
+   "export_yen": -0.7,
+   "import_yen": 2.5
+  },
+  {
+   "date": "1971-08-01",
+   "ppi": -0.7,
+   "export_yen": -0.8,
+   "import_yen": 3
+  },
+  {
+   "date": "1971-09-01",
+   "ppi": -0.9,
+   "export_yen": -1.6,
+   "import_yen": -0.6
+  },
+  {
+   "date": "1971-10-01",
+   "ppi": -1.1,
+   "export_yen": -1.7,
+   "import_yen": -1.5
+  },
+  {
+   "date": "1971-11-01",
+   "ppi": -1.1,
+   "export_yen": -2,
+   "import_yen": -2.9
+  },
+  {
+   "date": "1971-12-01",
+   "ppi": -0.6,
+   "export_yen": -2.9,
+   "import_yen": -4.4
+  },
+  {
+   "date": "1972-01-01",
+   "ppi": -0.6,
+   "export_yen": -3.9,
+   "import_yen": -5.1
+  },
+  {
+   "date": "1972-02-01",
+   "ppi": 0,
+   "export_yen": -4.5,
+   "import_yen": -5.8
+  },
+  {
+   "date": "1972-03-01",
+   "ppi": 0.2,
+   "export_yen": -4.7,
+   "import_yen": -6.7
+  },
+  {
+   "date": "1972-04-01",
+   "ppi": 0.4,
+   "export_yen": -4.5,
+   "import_yen": -7
+  },
+  {
+   "date": "1972-05-01",
+   "ppi": 0.4,
+   "export_yen": -4.3,
+   "import_yen": -7
+  },
+  {
+   "date": "1972-06-01",
+   "ppi": 0.6,
+   "export_yen": -4.1,
+   "import_yen": -7
+  },
+  {
+   "date": "1972-07-01",
+   "ppi": 0.7,
+   "export_yen": -4.6,
+   "import_yen": -8.3
+  },
+  {
+   "date": "1972-08-01",
+   "ppi": 0.9,
+   "export_yen": -3.7,
+   "import_yen": -7.7
+  },
+  {
+   "date": "1972-09-01",
+   "ppi": 2.4,
+   "export_yen": -2.5,
+   "import_yen": -3.6
+  },
+  {
+   "date": "1972-10-01",
+   "ppi": 3.5,
+   "export_yen": -1.7,
+   "import_yen": 0
+  },
+  {
+   "date": "1972-11-01",
+   "ppi": 5.2,
+   "export_yen": -0.8,
+   "import_yen": 2.2
+  },
+  {
+   "date": "1972-12-01",
+   "ppi": 6.3,
+   "export_yen": 0.7,
+   "import_yen": 6.6
+  },
+  {
+   "date": "1973-01-01",
+   "ppi": 7.8,
+   "export_yen": 3.1,
+   "import_yen": 12.9
+  },
+  {
+   "date": "1973-02-01",
+   "ppi": 9.4,
+   "export_yen": 3.2,
+   "import_yen": 11.2
+  },
+  {
+   "date": "1973-03-01",
+   "ppi": 12,
+   "export_yen": 4,
+   "import_yen": 13.4
+  },
+  {
+   "date": "1973-04-01",
+   "ppi": 11.9,
+   "export_yen": 5.5,
+   "import_yen": 12.2
+  },
+  {
+   "date": "1973-05-01",
+   "ppi": 12.5,
+   "export_yen": 6.4,
+   "import_yen": 14.5
+  },
+  {
+   "date": "1973-06-01",
+   "ppi": 13.9,
+   "export_yen": 7.7,
+   "import_yen": 17.9
+  },
+  {
+   "date": "1973-07-01",
+   "ppi": 15.2,
+   "export_yen": 9.5,
+   "import_yen": 23.9
+  },
+  {
+   "date": "1973-08-01",
+   "ppi": 17.7,
+   "export_yen": 11,
+   "import_yen": 27.6
+  },
+  {
+   "date": "1973-09-01",
+   "ppi": 18.5,
+   "export_yen": 12.3,
+   "import_yen": 25.8
+  },
+  {
+   "date": "1973-10-01",
+   "ppi": 19.6,
+   "export_yen": 15.5,
+   "import_yen": 26.2
+  },
+  {
+   "date": "1973-11-01",
+   "ppi": 21.3,
+   "export_yen": 20.3,
+   "import_yen": 33
+  },
+  {
+   "date": "1973-12-01",
+   "ppi": 28.5,
+   "export_yen": 23.1,
+   "import_yen": 35.3
+  },
+  {
+   "date": "1974-01-01",
+   "ppi": 33.3,
+   "export_yen": 31.7,
+   "import_yen": 43.7
+  },
+  {
+   "date": "1974-02-01",
+   "ppi": 33.9,
+   "export_yen": 36.3,
+   "import_yen": 70.9
+  },
+  {
+   "date": "1974-03-01",
+   "ppi": 31.3,
+   "export_yen": 35.4,
+   "import_yen": 70.2
+  },
+  {
+   "date": "1974-04-01",
+   "ppi": 31.8,
+   "export_yen": 35.7,
+   "import_yen": 75.5
+  },
+  {
+   "date": "1974-05-01",
+   "ppi": 31.6,
+   "export_yen": 36.5,
+   "import_yen": 76.2
+  },
+  {
+   "date": "1974-06-01",
+   "ppi": 31.4,
+   "export_yen": 36.5,
+   "import_yen": 73.5
+  },
+  {
+   "date": "1974-07-01",
+   "ppi": 30.7,
+   "export_yen": 39.5,
+   "import_yen": 72.4
+  },
+  {
+   "date": "1974-08-01",
+   "ppi": 27.7,
+   "export_yen": 40.7,
+   "import_yen": 72.9
+  },
+  {
+   "date": "1974-09-01",
+   "ppi": 25.2,
+   "export_yen": 37.6,
+   "import_yen": 72.7
+  },
+  {
+   "date": "1974-10-01",
+   "ppi": 23.9,
+   "export_yen": 32.8,
+   "import_yen": 70.3
+  },
+  {
+   "date": "1974-11-01",
+   "ppi": 20.9,
+   "export_yen": 25.8,
+   "import_yen": 60.7
+  },
+  {
+   "date": "1974-12-01",
+   "ppi": 12.8,
+   "export_yen": 21,
+   "import_yen": 54.6
+  },
+  {
+   "date": "1975-01-01",
+   "ppi": 7.2,
+   "export_yen": 10.5,
+   "import_yen": 36.8
+  },
+  {
+   "date": "1975-02-01",
+   "ppi": 4.8,
+   "export_yen": 3.4,
+   "import_yen": 14.9
+  },
+  {
+   "date": "1975-03-01",
+   "ppi": 4.3,
+   "export_yen": 1.6,
+   "import_yen": 10.9
+  },
+  {
+   "date": "1975-04-01",
+   "ppi": 3.5,
+   "export_yen": -0.1,
+   "import_yen": 9.6
+  },
+  {
+   "date": "1975-05-01",
+   "ppi": 3.1,
+   "export_yen": -2.3,
+   "import_yen": 6.9
+  },
+  {
+   "date": "1975-06-01",
+   "ppi": 1.8,
+   "export_yen": -4,
+   "import_yen": 5.1
+  },
+  {
+   "date": "1975-07-01",
+   "ppi": 1.2,
+   "export_yen": -8,
+   "import_yen": 2.8
+  },
+  {
+   "date": "1975-08-01",
+   "ppi": 1.2,
+   "export_yen": -10.1,
+   "import_yen": 0.7
+  },
+  {
+   "date": "1975-09-01",
+   "ppi": 1.7,
+   "export_yen": -9.9,
+   "import_yen": 2
+  },
+  {
+   "date": "1975-10-01",
+   "ppi": 1.6,
+   "export_yen": -9.7,
+   "import_yen": 2.2
+  },
+  {
+   "date": "1975-11-01",
+   "ppi": 1.2,
+   "export_yen": -8.9,
+   "import_yen": 2.6
+  },
+  {
+   "date": "1975-12-01",
+   "ppi": 1.6,
+   "export_yen": -7.7,
+   "import_yen": 3.1
+  },
+  {
+   "date": "1976-01-01",
+   "ppi": 2.8,
+   "export_yen": -6.7,
+   "import_yen": 4
+  },
+  {
+   "date": "1976-02-01",
+   "ppi": 3.4,
+   "export_yen": -2.9,
+   "import_yen": 6.6
+  },
+  {
+   "date": "1976-03-01",
+   "ppi": 4.1,
+   "export_yen": -0.9,
+   "import_yen": 8.8
+  },
+  {
+   "date": "1976-04-01",
+   "ppi": 4.6,
+   "export_yen": -0.6,
+   "import_yen": 7.8
+  },
+  {
+   "date": "1976-05-01",
+   "ppi": 4.8,
+   "export_yen": 0,
+   "import_yen": 8.5
+  },
+  {
+   "date": "1976-06-01",
+   "ppi": 5.3,
+   "export_yen": 1,
+   "import_yen": 9.4
+  },
+  {
+   "date": "1976-07-01",
+   "ppi": 6.5,
+   "export_yen": 0.9,
+   "import_yen": 8
+  },
+  {
+   "date": "1976-08-01",
+   "ppi": 7.2,
+   "export_yen": -0.1,
+   "import_yen": 4.1
+  },
+  {
+   "date": "1976-09-01",
+   "ppi": 7.3,
+   "export_yen": -0.1,
+   "import_yen": 2.4
+  },
+  {
+   "date": "1976-10-01",
+   "ppi": 7,
+   "export_yen": 0.2,
+   "import_yen": 1.8
+  },
+  {
+   "date": "1976-11-01",
+   "ppi": 7.1,
+   "export_yen": 0.8,
+   "import_yen": 1.7
+  },
+  {
+   "date": "1976-12-01",
+   "ppi": 6.7,
+   "export_yen": 0.4,
+   "import_yen": 0.3
+  },
+  {
+   "date": "1977-01-01",
+   "ppi": 5.7,
+   "export_yen": -0.7,
+   "import_yen": 0
+  },
+  {
+   "date": "1977-02-01",
+   "ppi": 5.8,
+   "export_yen": -2.1,
+   "import_yen": 0.3
+  },
+  {
+   "date": "1977-03-01",
+   "ppi": 5.1,
+   "export_yen": -3.4,
+   "import_yen": 0.3
+  },
+  {
+   "date": "1977-04-01",
+   "ppi": 4.8,
+   "export_yen": -4.6,
+   "import_yen": -0.9
+  },
+  {
+   "date": "1977-05-01",
+   "ppi": 4.7,
+   "export_yen": -4.1,
+   "import_yen": -1.4
+  },
+  {
+   "date": "1977-06-01",
+   "ppi": 4.3,
+   "export_yen": -5.5,
+   "import_yen": -4.2
+  },
+  {
+   "date": "1977-07-01",
+   "ppi": 2.8,
+   "export_yen": -5.8,
+   "import_yen": -7.2
+  },
+  {
+   "date": "1977-08-01",
+   "ppi": 2,
+   "export_yen": -4.7,
+   "import_yen": -5.5
+  },
+  {
+   "date": "1977-09-01",
+   "ppi": 1.7,
+   "export_yen": -3.8,
+   "import_yen": -4.4
+  },
+  {
+   "date": "1977-10-01",
+   "ppi": 1.4,
+   "export_yen": -5.8,
+   "import_yen": -7.7
+  },
+  {
+   "date": "1977-11-01",
+   "ppi": 1.1,
+   "export_yen": -7.9,
+   "import_yen": -11.8
+  },
+  {
+   "date": "1977-12-01",
+   "ppi": 0.7,
+   "export_yen": -8.5,
+   "import_yen": -12.8
+  },
+  {
+   "date": "1978-01-01",
+   "ppi": 0.6,
+   "export_yen": -7.4,
+   "import_yen": -12.8
+  },
+  {
+   "date": "1978-02-01",
+   "ppi": 0,
+   "export_yen": -5.6,
+   "import_yen": -13.3
+  },
+  {
+   "date": "1978-03-01",
+   "ppi": 0.1,
+   "export_yen": -5.4,
+   "import_yen": -14.7
+  },
+  {
+   "date": "1978-04-01",
+   "ppi": 0,
+   "export_yen": -5.8,
+   "import_yen": -17.3
+  },
+  {
+   "date": "1978-05-01",
+   "ppi": -0.1,
+   "export_yen": -4.7,
+   "import_yen": -16.2
+  },
+  {
+   "date": "1978-06-01",
+   "ppi": -0.1,
+   "export_yen": -5.8,
+   "import_yen": -17.1
+  },
+  {
+   "date": "1978-07-01",
+   "ppi": -0.1,
+   "export_yen": -7.1,
+   "import_yen": -20.1
+  },
+  {
+   "date": "1978-08-01",
+   "ppi": -0.8,
+   "export_yen": -10.2,
+   "import_yen": -24
+  },
+  {
+   "date": "1978-09-01",
+   "ppi": -1.2,
+   "export_yen": -9.8,
+   "import_yen": -23
+  },
+  {
+   "date": "1978-10-01",
+   "ppi": -1.6,
+   "export_yen": -9.3,
+   "import_yen": -21.4
+  },
+  {
+   "date": "1978-11-01",
+   "ppi": -1.4,
+   "export_yen": -5.6,
+   "import_yen": -16.9
+  },
+  {
+   "date": "1978-12-01",
+   "ppi": -1.1,
+   "export_yen": -2.9,
+   "import_yen": -13.1
+  },
+  {
+   "date": "1979-01-01",
+   "ppi": -0.7,
+   "export_yen": -2,
+   "import_yen": -10.7
+  },
+  {
+   "date": "1979-02-01",
+   "ppi": 0,
+   "export_yen": -1.4,
+   "import_yen": -7.3
+  },
+  {
+   "date": "1979-03-01",
+   "ppi": 0.4,
+   "export_yen": 1.9,
+   "import_yen": -3.1
+  },
+  {
+   "date": "1979-04-01",
+   "ppi": 1.5,
+   "export_yen": 6.2,
+   "import_yen": 6.9
+  },
+  {
+   "date": "1979-05-01",
+   "ppi": 2.4,
+   "export_yen": 6.1,
+   "import_yen": 12.9
+  },
+  {
+   "date": "1979-06-01",
+   "ppi": 3.4,
+   "export_yen": 9.2,
+   "import_yen": 20.9
+  },
+  {
+   "date": "1979-07-01",
+   "ppi": 5.5,
+   "export_yen": 12.3,
+   "import_yen": 36.7
+  },
+  {
+   "date": "1979-08-01",
+   "ppi": 7.1,
+   "export_yen": 16.7,
+   "import_yen": 51.6
+  },
+  {
+   "date": "1979-09-01",
+   "ppi": 8.5,
+   "export_yen": 17.3,
+   "import_yen": 54.5
+  },
+  {
+   "date": "1979-10-01",
+   "ppi": 9.8,
+   "export_yen": 21.8,
+   "import_yen": 61.8
+  },
+  {
+   "date": "1979-11-01",
+   "ppi": 10.7,
+   "export_yen": 23.6,
+   "import_yen": 70.1
+  },
+  {
+   "date": "1979-12-01",
+   "ppi": 12,
+   "export_yen": 21.4,
+   "import_yen": 73.9
+  },
+  {
+   "date": "1980-01-01",
+   "ppi": 13.8,
+   "export_yen": 20.8,
+   "import_yen": 84.4
+  },
+  {
+   "date": "1980-02-01",
+   "ppi": 15.2,
+   "export_yen": 20.9,
+   "import_yen": 89.2
+  },
+  {
+   "date": "1980-03-01",
+   "ppi": 16.3,
+   "export_yen": 19.6,
+   "import_yen": 86.5
+  },
+  {
+   "date": "1980-04-01",
+   "ppi": 18.5,
+   "export_yen": 17.4,
+   "import_yen": 78.1
+  },
+  {
+   "date": "1980-05-01",
+   "ppi": 18.4,
+   "export_yen": 10.6,
+   "import_yen": 56.4
+  },
+  {
+   "date": "1980-06-01",
+   "ppi": 17.7,
+   "export_yen": 6.6,
+   "import_yen": 46.6
+  },
+  {
+   "date": "1980-07-01",
+   "ppi": 16,
+   "export_yen": 7.1,
+   "import_yen": 40.9
+  },
+  {
+   "date": "1980-08-01",
+   "ppi": 15.5,
+   "export_yen": 7.1,
+   "import_yen": 37.1
+  },
+  {
+   "date": "1980-09-01",
+   "ppi": 14.4,
+   "export_yen": 3.9,
+   "import_yen": 29.7
+  },
+  {
+   "date": "1980-10-01",
+   "ppi": 12.9,
+   "export_yen": 0.5,
+   "import_yen": 21.4
+  },
+  {
+   "date": "1980-11-01",
+   "ppi": 11.8,
+   "export_yen": -2.2,
+   "import_yen": 14.5
+  },
+  {
+   "date": "1980-12-01",
+   "ppi": 10.4,
+   "export_yen": -3.1,
+   "import_yen": 7.7
+  },
+  {
+   "date": "1981-01-01",
+   "ppi": 8.1,
+   "export_yen": -4.8,
+   "import_yen": -2.8
+  },
+  {
+   "date": "1981-02-01",
+   "ppi": 5.7,
+   "export_yen": -5.6,
+   "import_yen": -7.3
+  },
+  {
+   "date": "1981-03-01",
+   "ppi": 3.8,
+   "export_yen": -6,
+   "import_yen": -7
+  },
+  {
+   "date": "1981-04-01",
+   "ppi": 0.8,
+   "export_yen": -5.4,
+   "import_yen": -6.4
+  },
+  {
+   "date": "1981-05-01",
+   "ppi": 0.3,
+   "export_yen": 0.2,
+   "import_yen": 1.9
+  },
+  {
+   "date": "1981-06-01",
+   "ppi": -0.2,
+   "export_yen": 4.2,
+   "import_yen": 6.4
+  },
+  {
+   "date": "1981-07-01",
+   "ppi": -0.4,
+   "export_yen": 5.3,
+   "import_yen": 6.7
+  },
+  {
+   "date": "1981-08-01",
+   "ppi": -0.5,
+   "export_yen": 5.1,
+   "import_yen": 4.6
+  },
+  {
+   "date": "1981-09-01",
+   "ppi": -0.3,
+   "export_yen": 6.2,
+   "import_yen": 5.8
+  },
+  {
+   "date": "1981-10-01",
+   "ppi": -0.1,
+   "export_yen": 7.3,
+   "import_yen": 8.9
+  },
+  {
+   "date": "1981-11-01",
+   "ppi": 0.2,
+   "export_yen": 4.7,
+   "import_yen": 6
+  },
+  {
+   "date": "1981-12-01",
+   "ppi": 0.3,
+   "export_yen": 4.1,
+   "import_yen": 4.6
+  },
+  {
+   "date": "1982-01-01",
+   "ppi": 0.4,
+   "export_yen": 6.7,
+   "import_yen": 7.8
+  },
+  {
+   "date": "1982-02-01",
+   "ppi": 0.9,
+   "export_yen": 8,
+   "import_yen": 9.4
+  },
+  {
+   "date": "1982-03-01",
+   "ppi": 1.1,
+   "export_yen": 7.9,
+   "import_yen": 9.3
+  },
+  {
+   "date": "1982-04-01",
+   "ppi": 1.1,
+   "export_yen": 6.5,
+   "import_yen": 8.5
+  },
+  {
+   "date": "1982-05-01",
+   "ppi": 0.5,
+   "export_yen": 2.5,
+   "import_yen": 3.6
+  },
+  {
+   "date": "1982-06-01",
+   "ppi": 0.4,
+   "export_yen": 3.9,
+   "import_yen": 5.2
+  },
+  {
+   "date": "1982-07-01",
+   "ppi": 0.4,
+   "export_yen": 2.7,
+   "import_yen": 5.8
+  },
+  {
+   "date": "1982-08-01",
+   "ppi": 0.4,
+   "export_yen": 1.3,
+   "import_yen": 6.2
+  },
+  {
+   "date": "1982-09-01",
+   "ppi": 0.3,
+   "export_yen": 2.4,
+   "import_yen": 8.8
+  },
+  {
+   "date": "1982-10-01",
+   "ppi": 0.3,
+   "export_yen": 2.9,
+   "import_yen": 10.7
+  },
+  {
+   "date": "1982-11-01",
+   "ppi": 0.2,
+   "export_yen": 2.8,
+   "import_yen": 11.4
+  },
+  {
+   "date": "1982-12-01",
+   "ppi": 0,
+   "export_yen": -0.1,
+   "import_yen": 7.6
+  },
+  {
+   "date": "1983-01-01",
+   "ppi": 0,
+   "export_yen": -3.5,
+   "import_yen": 2.6
+  },
+  {
+   "date": "1983-02-01",
+   "ppi": 0,
+   "export_yen": -5.5,
+   "import_yen": -0.3
+  },
+  {
+   "date": "1983-03-01",
+   "ppi": -0.1,
+   "export_yen": -6.2,
+   "import_yen": -4
+  },
+  {
+   "date": "1983-04-01",
+   "ppi": -1,
+   "export_yen": -6.6,
+   "import_yen": -6.1
+  },
+  {
+   "date": "1983-05-01",
+   "ppi": -0.6,
+   "export_yen": -4.9,
+   "import_yen": -6.7
+  },
+  {
+   "date": "1983-06-01",
+   "ppi": -0.4,
+   "export_yen": -6.5,
+   "import_yen": -8.3
+  },
+  {
+   "date": "1983-07-01",
+   "ppi": -0.4,
+   "export_yen": -7,
+   "import_yen": -10.1
+  },
+  {
+   "date": "1983-08-01",
+   "ppi": -1.3,
+   "export_yen": -6,
+   "import_yen": -9.5
+  },
+  {
+   "date": "1983-09-01",
+   "ppi": -1.3,
+   "export_yen": -6.6,
+   "import_yen": -10.6
+  },
+  {
+   "date": "1983-10-01",
+   "ppi": -1.2,
+   "export_yen": -8.6,
+   "import_yen": -15
+  },
+  {
+   "date": "1983-11-01",
+   "ppi": -1.2,
+   "export_yen": -6.8,
+   "import_yen": -14.2
+  },
+  {
+   "date": "1983-12-01",
+   "ppi": -0.9,
+   "export_yen": -3.1,
+   "import_yen": -9.5
+  },
+  {
+   "date": "1984-01-01",
+   "ppi": -0.7,
+   "export_yen": -1,
+   "import_yen": -6.5
+  },
+  {
+   "date": "1984-02-01",
+   "ppi": -0.5,
+   "export_yen": -0.2,
+   "import_yen": -6.8
+  },
+  {
+   "date": "1984-03-01",
+   "ppi": -0.4,
+   "export_yen": -1.9,
+   "import_yen": -6.4
+  },
+  {
+   "date": "1984-04-01",
+   "ppi": 0.3,
+   "export_yen": -2,
+   "import_yen": -5.7
+  },
+  {
+   "date": "1984-05-01",
+   "ppi": 0.2,
+   "export_yen": -0.1,
+   "import_yen": -2
+  },
+  {
+   "date": "1984-06-01",
+   "ppi": 0.1,
+   "export_yen": -0.2,
+   "import_yen": -3
+  },
+  {
+   "date": "1984-07-01",
+   "ppi": 0.1,
+   "export_yen": 1.7,
+   "import_yen": -2.1
+  },
+  {
+   "date": "1984-08-01",
+   "ppi": 0.7,
+   "export_yen": 1.1,
+   "import_yen": -3.5
+  },
+  {
+   "date": "1984-09-01",
+   "ppi": 0.6,
+   "export_yen": 1.7,
+   "import_yen": -3.1
+  },
+  {
+   "date": "1984-10-01",
+   "ppi": 0.4,
+   "export_yen": 3.3,
+   "import_yen": 0
+  },
+  {
+   "date": "1984-11-01",
+   "ppi": 0.3,
+   "export_yen": 2.1,
+   "import_yen": -0.7
+  },
+  {
+   "date": "1984-12-01",
+   "ppi": 0.1,
+   "export_yen": 2.7,
+   "import_yen": 0.1
+  },
+  {
+   "date": "1985-01-01",
+   "ppi": 0.1,
+   "export_yen": 3.8,
+   "import_yen": 1.7
+  },
+  {
+   "date": "1985-02-01",
+   "ppi": 0,
+   "export_yen": 4.2,
+   "import_yen": 2.9
+  },
+  {
+   "date": "1985-03-01",
+   "ppi": -0.3,
+   "export_yen": 5.6,
+   "import_yen": 4.3
+  },
+  {
+   "date": "1985-04-01",
+   "ppi": -0.3,
+   "export_yen": 4.3,
+   "import_yen": 3.3
+  },
+  {
+   "date": "1985-05-01",
+   "ppi": -0.6,
+   "export_yen": 2.6,
+   "import_yen": 2.1
+  },
+  {
+   "date": "1985-06-01",
+   "ppi": -0.6,
+   "export_yen": 1.1,
+   "import_yen": 0.8
+  },
+  {
+   "date": "1985-07-01",
+   "ppi": -0.8,
+   "export_yen": -2.1,
+   "import_yen": -2.2
+  },
+  {
+   "date": "1985-08-01",
+   "ppi": -1,
+   "export_yen": -3.2,
+   "import_yen": -4.2
+  },
+  {
+   "date": "1985-09-01",
+   "ppi": -1.3,
+   "export_yen": -4.2,
+   "import_yen": -5.4
+  },
+  {
+   "date": "1985-10-01",
+   "ppi": -1.5,
+   "export_yen": -8,
+   "import_yen": -9.2
+  },
+  {
+   "date": "1985-11-01",
+   "ppi": -1.8,
+   "export_yen": -9.7,
+   "import_yen": -11.1
+  },
+  {
+   "date": "1985-12-01",
+   "ppi": -2,
+   "export_yen": -10.7,
+   "import_yen": -12.2
+  },
+  {
+   "date": "1986-01-01",
+   "ppi": -3.1,
+   "export_yen": -12.4,
+   "import_yen": -17.2
+  },
+  {
+   "date": "1986-02-01",
+   "ppi": -3.6,
+   "export_yen": -16.5,
+   "import_yen": -24
+  },
+  {
+   "date": "1986-03-01",
+   "ppi": -3.6,
+   "export_yen": -17.1,
+   "import_yen": -31.6
+  },
+  {
+   "date": "1986-04-01",
+   "ppi": -4.3,
+   "export_yen": -16.6,
+   "import_yen": -35.9
+  },
+  {
+   "date": "1986-05-01",
+   "ppi": -4.1,
+   "export_yen": -18.5,
+   "import_yen": -40.6
+  },
+  {
+   "date": "1986-06-01",
+   "ppi": -4.5,
+   "export_yen": -17.3,
+   "import_yen": -40.9
+  },
+  {
+   "date": "1986-07-01",
+   "ppi": -4.9,
+   "export_yen": -18,
+   "import_yen": -43.6
+  },
+  {
+   "date": "1986-08-01",
+   "ppi": -5.1,
+   "export_yen": -18.2,
+   "import_yen": -45.8
+  },
+  {
+   "date": "1986-09-01",
+   "ppi": -5.6,
+   "export_yen": -17,
+   "import_yen": -44.6
+  },
+  {
+   "date": "1986-10-01",
+   "ppi": -6,
+   "export_yen": -12.4,
+   "import_yen": -39.1
+  },
+  {
+   "date": "1986-11-01",
+   "ppi": -5.9,
+   "export_yen": -8,
+   "import_yen": -34.8
+  },
+  {
+   "date": "1986-12-01",
+   "ppi": -5.8,
+   "export_yen": -7.2,
+   "import_yen": -33.8
+  },
+  {
+   "date": "1987-01-01",
+   "ppi": -6.1,
+   "export_yen": -9.6,
+   "import_yen": -33.9
+  },
+  {
+   "date": "1987-02-01",
+   "ppi": -5.8,
+   "export_yen": -6.9,
+   "import_yen": -28.1
+  },
+  {
+   "date": "1987-03-01",
+   "ppi": -5.4,
+   "export_yen": -6.1,
+   "import_yen": -19.2
+  },
+  {
+   "date": "1987-04-01",
+   "ppi": -4.8,
+   "export_yen": -7.5,
+   "import_yen": -15.1
+  },
+  {
+   "date": "1987-05-01",
+   "ppi": -4.6,
+   "export_yen": -6.3,
+   "import_yen": -8
+  },
+  {
+   "date": "1987-06-01",
+   "ppi": -3.8,
+   "export_yen": -5.1,
+   "import_yen": -4.3
+  },
+  {
+   "date": "1987-07-01",
+   "ppi": -2.9,
+   "export_yen": -0.4,
+   "import_yen": 6.5
+  },
+  {
+   "date": "1987-08-01",
+   "ppi": -2.2,
+   "export_yen": 0.4,
+   "import_yen": 14
+  },
+  {
+   "date": "1987-09-01",
+   "ppi": -1.2,
+   "export_yen": -1.6,
+   "import_yen": 11.1
+  },
+  {
+   "date": "1987-10-01",
+   "ppi": -0.2,
+   "export_yen": -2.3,
+   "import_yen": 8
+  },
+  {
+   "date": "1987-11-01",
+   "ppi": 0,
+   "export_yen": -6.3,
+   "import_yen": 1.9
+  },
+  {
+   "date": "1987-12-01",
+   "ppi": 0,
+   "export_yen": -8.2,
+   "import_yen": -1.9
+  },
+  {
+   "date": "1988-01-01",
+   "ppi": -0.1,
+   "export_yen": -6.4,
+   "import_yen": -3.3
+  },
+  {
+   "date": "1988-02-01",
+   "ppi": -0.1,
+   "export_yen": -5.2,
+   "import_yen": -4.3
+  },
+  {
+   "date": "1988-03-01",
+   "ppi": -0.2,
+   "export_yen": -5,
+   "import_yen": -4.2
+  },
+  {
+   "date": "1988-04-01",
+   "ppi": -0.2,
+   "export_yen": -2.3,
+   "import_yen": -3
+  },
+  {
+   "date": "1988-05-01",
+   "ppi": -0.2,
+   "export_yen": -1.4,
+   "import_yen": -2.8
+  },
+  {
+   "date": "1988-06-01",
+   "ppi": -0.2,
+   "export_yen": -2.5,
+   "import_yen": -2.9
+  },
+  {
+   "date": "1988-07-01",
+   "ppi": -0.4,
+   "export_yen": -2.6,
+   "import_yen": -4.3
+  },
+  {
+   "date": "1988-08-01",
+   "ppi": -0.8,
+   "export_yen": -1.2,
+   "import_yen": -5.4
+  },
+  {
+   "date": "1988-09-01",
+   "ppi": -0.9,
+   "export_yen": 0.6,
+   "import_yen": -3.8
+  },
+  {
+   "date": "1988-10-01",
+   "ppi": -1.1,
+   "export_yen": -1.1,
+   "import_yen": -6.8
+  },
+  {
+   "date": "1988-11-01",
+   "ppi": -1.1,
+   "export_yen": -1,
+   "import_yen": -8.5
+  },
+  {
+   "date": "1988-12-01",
+   "ppi": -1,
+   "export_yen": 0.9,
+   "import_yen": -6.1
+  },
+  {
+   "date": "1989-01-01",
+   "ppi": -0.4,
+   "export_yen": 2.3,
+   "import_yen": -1.4
+  },
+  {
+   "date": "1989-02-01",
+   "ppi": 0,
+   "export_yen": 2.1,
+   "import_yen": 0.7
+  },
+  {
+   "date": "1989-03-01",
+   "ppi": 0.1,
+   "export_yen": 3.2,
+   "import_yen": 2.3
+  },
+  {
+   "date": "1989-04-01",
+   "ppi": 2.2,
+   "export_yen": 3.5,
+   "import_yen": 6.8
+  },
+  {
+   "date": "1989-05-01",
+   "ppi": 2.5,
+   "export_yen": 5.7,
+   "import_yen": 10.6
+  },
+  {
+   "date": "1989-06-01",
+   "ppi": 2.5,
+   "export_yen": 7.5,
+   "import_yen": 10.7
+  },
+  {
+   "date": "1989-07-01",
+   "ppi": 2.7,
+   "export_yen": 3.9,
+   "import_yen": 6.9
+  },
+  {
+   "date": "1989-08-01",
+   "ppi": 2.8,
+   "export_yen": 2.7,
+   "import_yen": 7.1
+  },
+  {
+   "date": "1989-09-01",
+   "ppi": 2.7,
+   "export_yen": 3.8,
+   "import_yen": 8.3
+  },
+  {
+   "date": "1989-10-01",
+   "ppi": 2.6,
+   "export_yen": 4.4,
+   "import_yen": 9.2
+  },
+  {
+   "date": "1989-11-01",
+   "ppi": 2.5,
+   "export_yen": 7,
+   "import_yen": 14.8
+  },
+  {
+   "date": "1989-12-01",
+   "ppi": 2.5,
+   "export_yen": 7.2,
+   "import_yen": 15.3
+  },
+  {
+   "date": "1990-01-01",
+   "ppi": 2.6,
+   "export_yen": 6.3,
+   "import_yen": 13
+  },
+  {
+   "date": "1990-02-01",
+   "ppi": 2.5,
+   "export_yen": 6,
+   "import_yen": 11.8
+  },
+  {
+   "date": "1990-03-01",
+   "ppi": 2.5,
+   "export_yen": 7.4,
+   "import_yen": 14
+  },
+  {
+   "date": "1990-04-01",
+   "ppi": 0.7,
+   "export_yen": 9.1,
+   "import_yen": 13.3
+  },
+  {
+   "date": "1990-05-01",
+   "ppi": 0.6,
+   "export_yen": 5.4,
+   "import_yen": 7
+  },
+  {
+   "date": "1990-06-01",
+   "ppi": 0.5,
+   "export_yen": 2.3,
+   "import_yen": 3
+  },
+  {
+   "date": "1990-07-01",
+   "ppi": 0.5,
+   "export_yen": 2.3,
+   "import_yen": 1.9
+  },
+  {
+   "date": "1990-08-01",
+   "ppi": 0.6,
+   "export_yen": 2.5,
+   "import_yen": 3.6
+  },
+  {
+   "date": "1990-09-01",
+   "ppi": 1.1,
+   "export_yen": -2.3,
+   "import_yen": 6.1
+  },
+  {
+   "date": "1990-10-01",
+   "ppi": 1.8,
+   "export_yen": -4,
+   "import_yen": 9.7
+  },
+  {
+   "date": "1990-11-01",
+   "ppi": 2.2,
+   "export_yen": -4.8,
+   "import_yen": 10.5
+  },
+  {
+   "date": "1990-12-01",
+   "ppi": 2.3,
+   "export_yen": -3.2,
+   "import_yen": 11.5
+  },
+  {
+   "date": "1991-01-01",
+   "ppi": 1.6,
+   "export_yen": -5,
+   "import_yen": 5.3
+  },
+  {
+   "date": "1991-02-01",
+   "ppi": 1.7,
+   "export_yen": -6.6,
+   "import_yen": -1.1
+  },
+  {
+   "date": "1991-03-01",
+   "ppi": 1.6,
+   "export_yen": -7.1,
+   "import_yen": -6.4
+  },
+  {
+   "date": "1991-04-01",
+   "ppi": 1.5,
+   "export_yen": -9.4,
+   "import_yen": -9.8
+  },
+  {
+   "date": "1991-05-01",
+   "ppi": 1.6,
+   "export_yen": -7.4,
+   "import_yen": -8.4
+  },
+  {
+   "date": "1991-06-01",
+   "ppi": 1.4,
+   "export_yen": -6.6,
+   "import_yen": -6.8
+  },
+  {
+   "date": "1991-07-01",
+   "ppi": 1.2,
+   "export_yen": -6,
+   "import_yen": -6.5
+  },
+  {
+   "date": "1991-08-01",
+   "ppi": 1,
+   "export_yen": -5.8,
+   "import_yen": -8.4
+  },
+  {
+   "date": "1991-09-01",
+   "ppi": 0.5,
+   "export_yen": -3.3,
+   "import_yen": -11.1
+  },
+  {
+   "date": "1991-10-01",
+   "ppi": 0.1,
+   "export_yen": -1.7,
+   "import_yen": -14.2
+  },
+  {
+   "date": "1991-11-01",
+   "ppi": -0.2,
+   "export_yen": -1.2,
+   "import_yen": -14.3
+  },
+  {
+   "date": "1991-12-01",
+   "ppi": -0.4,
+   "export_yen": -3.4,
+   "import_yen": -15.4
+  },
+  {
+   "date": "1992-01-01",
+   "ppi": -0.6,
+   "export_yen": -5.5,
+   "import_yen": -15.7
+  },
+  {
+   "date": "1992-02-01",
+   "ppi": -0.7,
+   "export_yen": -3.3,
+   "import_yen": -10.5
+  },
+  {
+   "date": "1992-03-01",
+   "ppi": -0.8,
+   "export_yen": -2.9,
+   "import_yen": -7
+  },
+  {
+   "date": "1992-04-01",
+   "ppi": -0.9,
+   "export_yen": -1.6,
+   "import_yen": -5
+  },
+  {
+   "date": "1992-05-01",
+   "ppi": -1,
+   "export_yen": -2.8,
+   "import_yen": -4.7
+  },
+  {
+   "date": "1992-06-01",
+   "ppi": -0.9,
+   "export_yen": -5,
+   "import_yen": -6.5
+  },
+  {
+   "date": "1992-07-01",
+   "ppi": -0.8,
+   "export_yen": -4.3,
+   "import_yen": -3.7
+  },
+  {
+   "date": "1992-08-01",
+   "ppi": -0.9,
+   "export_yen": -3.5,
+   "import_yen": -2.2
+  },
+  {
+   "date": "1992-09-01",
+   "ppi": -0.8,
+   "export_yen": -4.3,
+   "import_yen": -3.7
+  },
+  {
+   "date": "1992-10-01",
+   "ppi": -1,
+   "export_yen": -3.8,
+   "import_yen": -4.6
+  },
+  {
+   "date": "1992-11-01",
+   "ppi": -1.1,
+   "export_yen": -3.4,
+   "import_yen": -4.4
+  },
+  {
+   "date": "1992-12-01",
+   "ppi": -1,
+   "export_yen": -3,
+   "import_yen": -3.8
+  },
+  {
+   "date": "1993-01-01",
+   "ppi": -1,
+   "export_yen": -1.1,
+   "import_yen": -0.8
+  },
+  {
+   "date": "1993-02-01",
+   "ppi": -1.1,
+   "export_yen": -4.1,
+   "import_yen": -3.5
+  },
+  {
+   "date": "1993-03-01",
+   "ppi": -1.2,
+   "export_yen": -8.3,
+   "import_yen": -6.9
+  },
+  {
+   "date": "1993-04-01",
+   "ppi": -1.2,
+   "export_yen": -10.6,
+   "import_yen": -9
+  },
+  {
+   "date": "1993-05-01",
+   "ppi": -1.3,
+   "export_yen": -10.7,
+   "import_yen": -9.7
+  },
+  {
+   "date": "1993-06-01",
+   "ppi": -1.5,
+   "export_yen": -10.6,
+   "import_yen": -10.5
+  },
+  {
+   "date": "1993-07-01",
+   "ppi": -1.6,
+   "export_yen": -10.1,
+   "import_yen": -12.4
+  },
+  {
+   "date": "1993-08-01",
+   "ppi": -1.7,
+   "export_yen": -12.3,
+   "import_yen": -16.7
+  },
+  {
+   "date": "1993-09-01",
+   "ppi": -1.9,
+   "export_yen": -9,
+   "import_yen": -15.3
+  },
+  {
+   "date": "1993-10-01",
+   "ppi": -1.9,
+   "export_yen": -6.4,
+   "import_yen": -13.5
+  },
+  {
+   "date": "1993-11-01",
+   "ppi": -2,
+   "export_yen": -6.7,
+   "import_yen": -13.4
+  },
+  {
+   "date": "1993-12-01",
+   "ppi": -2.1,
+   "export_yen": -5.6,
+   "import_yen": -12.7
+  },
+  {
+   "date": "1994-01-01",
+   "ppi": -2.1,
+   "export_yen": -4.5,
+   "import_yen": -12.2
+  },
+  {
+   "date": "1994-02-01",
+   "ppi": -2,
+   "export_yen": -5.4,
+   "import_yen": -12.5
+  },
+  {
+   "date": "1994-03-01",
+   "ppi": -2,
+   "export_yen": -3.8,
+   "import_yen": -11.3
+  },
+  {
+   "date": "1994-04-01",
+   "ppi": -2,
+   "export_yen": -2.9,
+   "import_yen": -11
+  },
+  {
+   "date": "1994-05-01",
+   "ppi": -1.9,
+   "export_yen": -1.3,
+   "import_yen": -8.7
+  },
+  {
+   "date": "1994-06-01",
+   "ppi": -1.7,
+   "export_yen": 0.1,
+   "import_yen": -5.8
+  },
+  {
+   "date": "1994-07-01",
+   "ppi": -1.7,
+   "export_yen": -2.6,
+   "import_yen": -6.3
+  },
+  {
+   "date": "1994-08-01",
+   "ppi": -1.5,
+   "export_yen": 0.1,
+   "import_yen": -0.3
+  },
+  {
+   "date": "1994-09-01",
+   "ppi": -1.3,
+   "export_yen": -2.1,
+   "import_yen": 0.4
+  },
+  {
+   "date": "1994-10-01",
+   "ppi": -1.3,
+   "export_yen": -3.1,
+   "import_yen": 0.7
+  },
+  {
+   "date": "1994-11-01",
+   "ppi": -1.2,
+   "export_yen": -3.7,
+   "import_yen": 1.1
+  },
+  {
+   "date": "1994-12-01",
+   "ppi": -1,
+   "export_yen": -3.8,
+   "import_yen": 2.7
+  },
+  {
+   "date": "1995-01-01",
+   "ppi": -1,
+   "export_yen": -5.1,
+   "import_yen": 3.5
+  },
+  {
+   "date": "1995-02-01",
+   "ppi": -0.9,
+   "export_yen": -2.4,
+   "import_yen": 5.5
+  },
+  {
+   "date": "1995-03-01",
+   "ppi": -0.7,
+   "export_yen": -5.7,
+   "import_yen": 2.1
+  },
+  {
+   "date": "1995-04-01",
+   "ppi": -0.6,
+   "export_yen": -8.4,
+   "import_yen": -1.7
+  },
+  {
+   "date": "1995-05-01",
+   "ppi": -0.7,
+   "export_yen": -8.3,
+   "import_yen": -3.9
+  },
+  {
+   "date": "1995-06-01",
+   "ppi": -0.8,
+   "export_yen": -8,
+   "import_yen": -5.2
+  },
+  {
+   "date": "1995-07-01",
+   "ppi": -0.8,
+   "export_yen": -3.8,
+   "import_yen": -3.5
+  },
+  {
+   "date": "1995-08-01",
+   "ppi": -0.9,
+   "export_yen": 0.1,
+   "import_yen": -2.2
+  },
+  {
+   "date": "1995-09-01",
+   "ppi": -0.9,
+   "export_yen": 4.1,
+   "import_yen": 1.5
+  },
+  {
+   "date": "1995-10-01",
+   "ppi": -0.8,
+   "export_yen": 3.9,
+   "import_yen": 1.9
+  },
+  {
+   "date": "1995-11-01",
+   "ppi": -0.7,
+   "export_yen": 4.7,
+   "import_yen": 1.6
+  },
+  {
+   "date": "1995-12-01",
+   "ppi": -0.7,
+   "export_yen": 3.1,
+   "import_yen": -0.7
+  },
+  {
+   "date": "1996-01-01",
+   "ppi": -1.5,
+   "export_yen": 4.5,
+   "import_yen": 2.1
+  },
+  {
+   "date": "1996-02-01",
+   "ppi": -1.6,
+   "export_yen": 4.7,
+   "import_yen": 3.1
+  },
+  {
+   "date": "1996-03-01",
+   "ppi": -1.6,
+   "export_yen": 8.7,
+   "import_yen": 6.8
+  },
+  {
+   "date": "1996-04-01",
+   "ppi": -1.7,
+   "export_yen": 13.6,
+   "import_yen": 14.5
+  },
+  {
+   "date": "1996-05-01",
+   "ppi": -1.7,
+   "export_yen": 10.6,
+   "import_yen": 14.2
+  },
+  {
+   "date": "1996-06-01",
+   "ppi": -1.9,
+   "export_yen": 11.5,
+   "import_yen": 16
+  },
+  {
+   "date": "1996-07-01",
+   "ppi": -1.7,
+   "export_yen": 8.2,
+   "import_yen": 15.1
+  },
+  {
+   "date": "1996-08-01",
+   "ppi": -1.7,
+   "export_yen": 1.7,
+   "import_yen": 9.7
+  },
+  {
+   "date": "1996-09-01",
+   "ppi": -1.8,
+   "export_yen": -1.4,
+   "import_yen": 6.7
+  },
+  {
+   "date": "1996-10-01",
+   "ppi": -1.6,
+   "export_yen": -0.4,
+   "import_yen": 9
+  },
+  {
+   "date": "1996-11-01",
+   "ppi": -1.5,
+   "export_yen": -1.3,
+   "import_yen": 10
+  },
+  {
+   "date": "1996-12-01",
+   "ppi": -1.3,
+   "export_yen": -0.4,
+   "import_yen": 11.3
+  },
+  {
+   "date": "1997-01-01",
+   "ppi": -1.2,
+   "export_yen": -0.7,
+   "import_yen": 11.3
+  },
+  {
+   "date": "1997-02-01",
+   "ppi": -1,
+   "export_yen": 2.8,
+   "import_yen": 15
+  },
+  {
+   "date": "1997-03-01",
+   "ppi": -0.8,
+   "export_yen": 2.8,
+   "import_yen": 14.2
+  },
+  {
+   "date": "1997-04-01",
+   "ppi": 1.3,
+   "export_yen": 3.9,
+   "import_yen": 13
+  },
+  {
+   "date": "1997-05-01",
+   "ppi": 1.4,
+   "export_yen": 2.4,
+   "import_yen": 9.4
+  },
+  {
+   "date": "1997-06-01",
+   "ppi": 1.5,
+   "export_yen": -1.8,
+   "import_yen": 4.9
+  },
+  {
+   "date": "1997-07-01",
+   "ppi": 1.4,
+   "export_yen": -1.1,
+   "import_yen": 3.5
+  },
+  {
+   "date": "1997-08-01",
+   "ppi": 1.4,
+   "export_yen": 1.5,
+   "import_yen": 5.1
+  },
+  {
+   "date": "1997-09-01",
+   "ppi": 1.4,
+   "export_yen": 2.5,
+   "import_yen": 5.1
+  },
+  {
+   "date": "1997-10-01",
+   "ppi": 1.1,
+   "export_yen": 1.2,
+   "import_yen": 2.6
+  },
+  {
+   "date": "1997-11-01",
+   "ppi": 0.9,
+   "export_yen": 3.7,
+   "import_yen": 2.8
+  },
+  {
+   "date": "1997-12-01",
+   "ppi": 0.7,
+   "export_yen": 5.2,
+   "import_yen": 3.5
+  },
+  {
+   "date": "1998-01-01",
+   "ppi": 0.7,
+   "export_yen": 3.3,
+   "import_yen": -1.2
+  },
+  {
+   "date": "1998-02-01",
+   "ppi": 0.3,
+   "export_yen": -1.9,
+   "import_yen": -8.4
+  },
+  {
+   "date": "1998-03-01",
+   "ppi": -0.1,
+   "export_yen": -0.8,
+   "import_yen": -8.2
+  },
+  {
+   "date": "1998-04-01",
+   "ppi": -2.3,
+   "export_yen": -0.8,
+   "import_yen": -8
+  },
+  {
+   "date": "1998-05-01",
+   "ppi": -2.3,
+   "export_yen": 3.9,
+   "import_yen": -3.5
+  },
+  {
+   "date": "1998-06-01",
+   "ppi": -2.1,
+   "export_yen": 10.4,
+   "import_yen": 2
+  },
+  {
+   "date": "1998-07-01",
+   "ppi": -2.2,
+   "export_yen": 9.4,
+   "import_yen": 2.7
+  },
+  {
+   "date": "1998-08-01",
+   "ppi": -2.1,
+   "export_yen": 9.7,
+   "import_yen": 3.3
+  },
+  {
+   "date": "1998-09-01",
+   "ppi": -2,
+   "export_yen": 2.9,
+   "import_yen": -2.2
+  },
+  {
+   "date": "1998-10-01",
+   "ppi": -2.1,
+   "export_yen": -3,
+   "import_yen": -7.9
+  },
+  {
+   "date": "1998-11-01",
+   "ppi": -2.2,
+   "export_yen": -6,
+   "import_yen": -11.2
+  },
+  {
+   "date": "1998-12-01",
+   "ppi": -2.2,
+   "export_yen": -9.5,
+   "import_yen": -14.9
+  },
+  {
+   "date": "1999-01-01",
+   "ppi": -2.4,
+   "export_yen": -11.3,
+   "import_yen": -16.4
+  },
+  {
+   "date": "1999-02-01",
+   "ppi": -2.2,
+   "export_yen": -7.6,
+   "import_yen": -11.8
+  },
+  {
+   "date": "1999-03-01",
+   "ppi": -1.9,
+   "export_yen": -7.3,
+   "import_yen": -10.3
+  },
+  {
+   "date": "1999-04-01",
+   "ppi": -1.8,
+   "export_yen": -8.3,
+   "import_yen": -9.9
+  },
+  {
+   "date": "1999-05-01",
+   "ppi": -1.6,
+   "export_yen": -8.5,
+   "import_yen": -8.9
+  },
+  {
+   "date": "1999-06-01",
+   "ppi": -1.7,
+   "export_yen": -11.6,
+   "import_yen": -10.8
+  },
+  {
+   "date": "1999-07-01",
+   "ppi": -1.4,
+   "export_yen": -11.6,
+   "import_yen": -10
+  },
+  {
+   "date": "1999-08-01",
+   "ppi": -1.2,
+   "export_yen": -15.6,
+   "import_yen": -12.6
+  },
+  {
+   "date": "1999-09-01",
+   "ppi": -1.2,
+   "export_yen": -14.3,
+   "import_yen": -10.4
+  },
+  {
+   "date": "1999-10-01",
+   "ppi": -0.7,
+   "export_yen": -8.4,
+   "import_yen": -4.1
+  },
+  {
+   "date": "1999-11-01",
+   "ppi": -0.5,
+   "export_yen": -8,
+   "import_yen": -2.8
+  },
+  {
+   "date": "1999-12-01",
+   "ppi": -0.5,
+   "export_yen": -7.7,
+   "import_yen": -1
+  },
+  {
+   "date": "2000-01-01",
+   "ppi": -0.1,
+   "export_yen": -5,
+   "import_yen": 3.4
+  },
+  {
+   "date": "2000-02-01",
+   "ppi": 0,
+   "export_yen": -3.8,
+   "import_yen": 6.6
+  },
+  {
+   "date": "2000-03-01",
+   "ppi": 0.2,
+   "export_yen": -6.9,
+   "import_yen": 4.2
+  },
+  {
+   "date": "2000-04-01",
+   "ppi": 0.4,
+   "export_yen": -7.9,
+   "import_yen": 2.2
+  },
+  {
+   "date": "2000-05-01",
+   "ppi": 0.2,
+   "export_yen": -7.6,
+   "import_yen": 0.8
+  },
+  {
+   "date": "2000-06-01",
+   "ppi": 0.3,
+   "export_yen": -7.8,
+   "import_yen": 0.1
+  },
+  {
+   "date": "2000-07-01",
+   "ppi": 0.3,
+   "export_yen": -7,
+   "import_yen": 2.4
+  },
+  {
+   "date": "2000-08-01",
+   "ppi": 0.2,
+   "export_yen": -3.8,
+   "import_yen": 4.6
+  },
+  {
+   "date": "2000-09-01",
+   "ppi": 0.1,
+   "export_yen": -2.2,
+   "import_yen": 5.3
+  },
+  {
+   "date": "2000-10-01",
+   "ppi": -0.2,
+   "export_yen": -2.4,
+   "import_yen": 6.7
+  },
+  {
+   "date": "2000-11-01",
+   "ppi": -0.2,
+   "export_yen": -1.9,
+   "import_yen": 8
+  },
+  {
+   "date": "2000-12-01",
+   "ppi": -0.2,
+   "export_yen": 1.6,
+   "import_yen": 11.9
+  },
+  {
+   "date": "2001-01-01",
+   "ppi": -1.8,
+   "export_yen": 4,
+   "import_yen": 5.7
+  },
+  {
+   "date": "2001-02-01",
+   "ppi": -1.8,
+   "export_yen": 0.4,
+   "import_yen": 0.5
+  },
+  {
+   "date": "2001-03-01",
+   "ppi": -1.9,
+   "export_yen": 5,
+   "import_yen": 5.9
+  },
+  {
+   "date": "2001-04-01",
+   "ppi": -2,
+   "export_yen": 6.3,
+   "import_yen": 7.7
+  },
+  {
+   "date": "2001-05-01",
+   "ppi": -1.9,
+   "export_yen": 3.4,
+   "import_yen": 5.7
+  },
+  {
+   "date": "2001-06-01",
+   "ppi": -2.1,
+   "export_yen": 3.3,
+   "import_yen": 6.3
+  },
+  {
+   "date": "2001-07-01",
+   "ppi": -2.4,
+   "export_yen": 3.8,
+   "import_yen": 5
+  },
+  {
+   "date": "2001-08-01",
+   "ppi": -2.5,
+   "export_yen": 2.5,
+   "import_yen": 1.5
+  },
+  {
+   "date": "2001-09-01",
+   "ppi": -2.5,
+   "export_yen": 2,
+   "import_yen": 0.2
+  },
+  {
+   "date": "2001-10-01",
+   "ppi": -2.7,
+   "export_yen": 1.7,
+   "import_yen": -1.3
+  },
+  {
+   "date": "2001-11-01",
+   "ppi": -2.7,
+   "export_yen": 2,
+   "import_yen": -3.6
+  },
+  {
+   "date": "2001-12-01",
+   "ppi": -2.8,
+   "export_yen": 2.1,
+   "import_yen": -3.5
+  },
+  {
+   "date": "2002-01-01",
+   "ppi": -2.7,
+   "export_yen": 2,
+   "import_yen": -1.8
+  },
+  {
+   "date": "2002-02-01",
+   "ppi": -2.7,
+   "export_yen": 3.2,
+   "import_yen": 0.4
+  },
+  {
+   "date": "2002-03-01",
+   "ppi": -2.5,
+   "export_yen": 0,
+   "import_yen": -3.7
+  },
+  {
+   "date": "2002-04-01",
+   "ppi": -2.4,
+   "export_yen": -0.4,
+   "import_yen": -2.3
+  },
+  {
+   "date": "2002-05-01",
+   "ppi": -2.2,
+   "export_yen": -1.5,
+   "import_yen": -2.4
+  },
+  {
+   "date": "2002-06-01",
+   "ppi": -2.1,
+   "export_yen": -2.3,
+   "import_yen": -3.6
+  },
+  {
+   "date": "2002-07-01",
+   "ppi": -2.1,
+   "export_yen": -5.7,
+   "import_yen": -7.4
+  },
+  {
+   "date": "2002-08-01",
+   "ppi": -2,
+   "export_yen": -3.9,
+   "import_yen": -3.7
+  },
+  {
+   "date": "2002-09-01",
+   "ppi": -2,
+   "export_yen": -1,
+   "import_yen": 0.4
+  },
+  {
+   "date": "2002-10-01",
+   "ppi": -1.6,
+   "export_yen": 0.4,
+   "import_yen": 2.9
+  },
+  {
+   "date": "2002-11-01",
+   "ppi": -1.2,
+   "export_yen": -0.8,
+   "import_yen": 4.1
+  },
+  {
+   "date": "2002-12-01",
+   "ppi": -1.3,
+   "export_yen": -3,
+   "import_yen": 1.1
+  },
+  {
+   "date": "2003-01-01",
+   "ppi": -1,
+   "export_yen": -6.7,
+   "import_yen": -1.2
+  },
+  {
+   "date": "2003-02-01",
+   "ppi": -0.8,
+   "export_yen": -6.3,
+   "import_yen": 0.8
+  },
+  {
+   "date": "2003-03-01",
+   "ppi": -0.8,
+   "export_yen": -6.1,
+   "import_yen": 2
+  },
+  {
+   "date": "2003-04-01",
+   "ppi": -0.8,
+   "export_yen": -5,
+   "import_yen": -1.1
+  },
+  {
+   "date": "2003-05-01",
+   "ppi": -1.1,
+   "export_yen": -3.2,
+   "import_yen": -2.5
+  },
+  {
+   "date": "2003-06-01",
+   "ppi": -1.3,
+   "export_yen": -1.1,
+   "import_yen": -0.1
+  },
+  {
+   "date": "2003-07-01",
+   "ppi": -0.8,
+   "export_yen": 1,
+   "import_yen": 3.4
+  },
+  {
+   "date": "2003-08-01",
+   "ppi": -0.7,
+   "export_yen": 0.5,
+   "import_yen": 3.4
+  },
+  {
+   "date": "2003-09-01",
+   "ppi": -0.6,
+   "export_yen": -2.5,
+   "import_yen": -0.1
+  },
+  {
+   "date": "2003-10-01",
+   "ppi": -0.5,
+   "export_yen": -6.9,
+   "import_yen": -6.3
+  },
+  {
+   "date": "2003-11-01",
+   "ppi": -0.5,
+   "export_yen": -6,
+   "import_yen": -4.7
+  },
+  {
+   "date": "2003-12-01",
+   "ppi": -0.2,
+   "export_yen": -6.3,
+   "import_yen": -3.6
+  },
+  {
+   "date": "2004-01-01",
+   "ppi": 0,
+   "export_yen": -4.6,
+   "import_yen": -2.6
+  },
+  {
+   "date": "2004-02-01",
+   "ppi": 0,
+   "export_yen": -4.3,
+   "import_yen": -3.8
+  },
+  {
+   "date": "2004-03-01",
+   "ppi": 0.2,
+   "export_yen": -2.7,
+   "import_yen": -2
+  },
+  {
+   "date": "2004-04-01",
+   "ppi": 0.6,
+   "export_yen": -5.3,
+   "import_yen": -0.4
+  },
+  {
+   "date": "2004-05-01",
+   "ppi": 0.9,
+   "export_yen": -1.2,
+   "import_yen": 6.7
+  },
+  {
+   "date": "2004-06-01",
+   "ppi": 1.5,
+   "export_yen": -3.4,
+   "import_yen": 5.5
+  },
+  {
+   "date": "2004-07-01",
+   "ppi": 1.7,
+   "export_yen": -2.3,
+   "import_yen": 4.9
+  },
+  {
+   "date": "2004-08-01",
+   "ppi": 1.7,
+   "export_yen": -1.1,
+   "import_yen": 5.3
+  },
+  {
+   "date": "2004-09-01",
+   "ppi": 1.9,
+   "export_yen": 1,
+   "import_yen": 8.8
+  },
+  {
+   "date": "2004-10-01",
+   "ppi": 2.1,
+   "export_yen": 4.3,
+   "import_yen": 11.7
+  },
+  {
+   "date": "2004-11-01",
+   "ppi": 2.1,
+   "export_yen": 2.5,
+   "import_yen": 9.5
+  },
+  {
+   "date": "2004-12-01",
+   "ppi": 1.9,
+   "export_yen": 1.8,
+   "import_yen": 7.4
+  },
+  {
+   "date": "2005-01-01",
+   "ppi": 1.4,
+   "export_yen": 0.6,
+   "import_yen": 5.7
+  },
+  {
+   "date": "2005-02-01",
+   "ppi": 1.3,
+   "export_yen": 1,
+   "import_yen": 7.6
+  },
+  {
+   "date": "2005-03-01",
+   "ppi": 1.4,
+   "export_yen": 0.4,
+   "import_yen": 7
+  },
+  {
+   "date": "2005-04-01",
+   "ppi": 1.9,
+   "export_yen": 3.5,
+   "import_yen": 13.9
+  },
+  {
+   "date": "2005-05-01",
+   "ppi": 1.8,
+   "export_yen": -1.3,
+   "import_yen": 9
+  },
+  {
+   "date": "2005-06-01",
+   "ppi": 1.4,
+   "export_yen": 0.8,
+   "import_yen": 9.5
+  },
+  {
+   "date": "2005-07-01",
+   "ppi": 1.6,
+   "export_yen": 1.9,
+   "import_yen": 14.2
+  },
+  {
+   "date": "2005-08-01",
+   "ppi": 1.8,
+   "export_yen": 0.5,
+   "import_yen": 13.1
+  },
+  {
+   "date": "2005-09-01",
+   "ppi": 1.8,
+   "export_yen": 0.6,
+   "import_yen": 13.6
+  },
+  {
+   "date": "2005-10-01",
+   "ppi": 2.1,
+   "export_yen": 2.4,
+   "import_yen": 18.2
+  },
+  {
+   "date": "2005-11-01",
+   "ppi": 2,
+   "export_yen": 6,
+   "import_yen": 21.8
+  },
+  {
+   "date": "2005-12-01",
+   "ppi": 2.3,
+   "export_yen": 6.8,
+   "import_yen": 23.3
+  },
+  {
+   "date": "2006-01-01",
+   "ppi": 2,
+   "export_yen": 3.7,
+   "import_yen": 19
+  },
+  {
+   "date": "2006-02-01",
+   "ppi": 2.2,
+   "export_yen": 3.7,
+   "import_yen": 20.9
+  },
+  {
+   "date": "2006-03-01",
+   "ppi": 2,
+   "export_yen": 2.8,
+   "import_yen": 18.6
+  },
+  {
+   "date": "2006-04-01",
+   "ppi": 1.7,
+   "export_yen": 2.8,
+   "import_yen": 14.2
+  },
+  {
+   "date": "2006-05-01",
+   "ppi": 2.3,
+   "export_yen": 2.1,
+   "import_yen": 14
+  },
+  {
+   "date": "2006-06-01",
+   "ppi": 2.5,
+   "export_yen": 3.4,
+   "import_yen": 16.3
+  },
+  {
+   "date": "2006-07-01",
+   "ppi": 2.5,
+   "export_yen": 3.1,
+   "import_yen": 13.9
+  },
+  {
+   "date": "2006-08-01",
+   "ppi": 2.6,
+   "export_yen": 4.3,
+   "import_yen": 15.6
+  },
+  {
+   "date": "2006-09-01",
+   "ppi": 2.7,
+   "export_yen": 5,
+   "import_yen": 14.8
+  },
+  {
+   "date": "2006-10-01",
+   "ppi": 2,
+   "export_yen": 3.5,
+   "import_yen": 9.7
+  },
+  {
+   "date": "2006-11-01",
+   "ppi": 1.9,
+   "export_yen": 1.2,
+   "import_yen": 6
+  },
+  {
+   "date": "2006-12-01",
+   "ppi": 1.7,
+   "export_yen": 1.4,
+   "import_yen": 6.8
+  },
+  {
+   "date": "2007-01-01",
+   "ppi": 1.5,
+   "export_yen": 4.9,
+   "import_yen": 10.6
+  },
+  {
+   "date": "2007-02-01",
+   "ppi": 1.2,
+   "export_yen": 3.4,
+   "import_yen": 4.3
+  },
+  {
+   "date": "2007-03-01",
+   "ppi": 1.3,
+   "export_yen": 2.5,
+   "import_yen": 4.4
+  },
+  {
+   "date": "2007-04-01",
+   "ppi": 1.9,
+   "export_yen": 3.4,
+   "import_yen": 6.6
+  },
+  {
+   "date": "2007-05-01",
+   "ppi": 1.7,
+   "export_yen": 6.9,
+   "import_yen": 11.4
+  },
+  {
+   "date": "2007-06-01",
+   "ppi": 1.8,
+   "export_yen": 6.5,
+   "import_yen": 10.4
+  },
+  {
+   "date": "2007-07-01",
+   "ppi": 1.8,
+   "export_yen": 4.7,
+   "import_yen": 8.6
+  },
+  {
+   "date": "2007-08-01",
+   "ppi": 1.6,
+   "export_yen": 0.8,
+   "import_yen": 4.2
+  },
+  {
+   "date": "2007-09-01",
+   "ppi": 1.3,
+   "export_yen": -1,
+   "import_yen": 2.2
+  },
+  {
+   "date": "2007-10-01",
+   "ppi": 2,
+   "export_yen": -0.6,
+   "import_yen": 7.4
+  },
+  {
+   "date": "2007-11-01",
+   "ppi": 2.3,
+   "export_yen": -2.3,
+   "import_yen": 8.4
+  },
+  {
+   "date": "2007-12-01",
+   "ppi": 2.6,
+   "export_yen": -2.1,
+   "import_yen": 12.2
+  },
+  {
+   "date": "2008-01-01",
+   "ppi": 3,
+   "export_yen": -5.8,
+   "import_yen": 6.8
+  },
+  {
+   "date": "2008-02-01",
+   "ppi": 3.6,
+   "export_yen": -5.3,
+   "import_yen": 10.5
+  },
+  {
+   "date": "2008-03-01",
+   "ppi": 4,
+   "export_yen": -6.8,
+   "import_yen": 7.9
+  },
+  {
+   "date": "2008-04-01",
+   "ppi": 4,
+   "export_yen": -5.9,
+   "import_yen": 11.5
+  },
+  {
+   "date": "2008-05-01",
+   "ppi": 4.9,
+   "export_yen": -5.6,
+   "import_yen": 11.9
+  },
+  {
+   "date": "2008-06-01",
+   "ppi": 5.8,
+   "export_yen": -4,
+   "import_yen": 18.5
+  },
+  {
+   "date": "2008-07-01",
+   "ppi": 7.5,
+   "export_yen": -2.7,
+   "import_yen": 21.7
+  },
+  {
+   "date": "2008-08-01",
+   "ppi": 7.5,
+   "export_yen": 0.5,
+   "import_yen": 27.2
+  },
+  {
+   "date": "2008-09-01",
+   "ppi": 6.9,
+   "export_yen": -1.7,
+   "import_yen": 19.7
+  },
+  {
+   "date": "2008-10-01",
+   "ppi": 4.5,
+   "export_yen": -9.5,
+   "import_yen": 2.5
+  },
+  {
+   "date": "2008-11-01",
+   "ppi": 2.4,
+   "export_yen": -11.4,
+   "import_yen": -9.6
+  },
+  {
+   "date": "2008-12-01",
+   "ppi": 0.9,
+   "export_yen": -15.1,
+   "import_yen": -23.6
+  },
+  {
+   "date": "2009-01-01",
+   "ppi": -0.9,
+   "export_yen": -13.8,
+   "import_yen": -25.7
+  },
+  {
+   "date": "2009-02-01",
+   "ppi": -2,
+   "export_yen": -13.8,
+   "import_yen": -25.6
+  },
+  {
+   "date": "2009-03-01",
+   "ppi": -2.6,
+   "export_yen": -7.5,
+   "import_yen": -20.8
+  },
+  {
+   "date": "2009-04-01",
+   "ppi": -4.1,
+   "export_yen": -8.4,
+   "import_yen": -25.7
+  },
+  {
+   "date": "2009-05-01",
+   "ppi": -5.6,
+   "export_yen": -11.5,
+   "import_yen": -30.4
+  },
+  {
+   "date": "2009-06-01",
+   "ppi": -6.8,
+   "export_yen": -13.1,
+   "import_yen": -33.4
+  },
+  {
+   "date": "2009-07-01",
+   "ppi": -8.4,
+   "export_yen": -15.5,
+   "import_yen": -34
+  },
+  {
+   "date": "2009-08-01",
+   "ppi": -8.5,
+   "export_yen": -14.5,
+   "import_yen": -34.8
+  },
+  {
+   "date": "2009-09-01",
+   "ppi": -7.9,
+   "export_yen": -13.7,
+   "import_yen": -30.9
+  },
+  {
+   "date": "2009-10-01",
+   "ppi": -6.8,
+   "export_yen": -7.7,
+   "import_yen": -22.7
+  },
+  {
+   "date": "2009-11-01",
+   "ppi": -5,
+   "export_yen": -3.5,
+   "import_yen": -10.4
+  },
+  {
+   "date": "2009-12-01",
+   "ppi": -3.8,
+   "export_yen": 0.1,
+   "import_yen": 4.9
+  },
+  {
+   "date": "2010-01-01",
+   "ppi": -2.1,
+   "export_yen": 2.8,
+   "import_yen": 12.2
+  },
+  {
+   "date": "2010-02-01",
+   "ppi": -1.6,
+   "export_yen": 1.2,
+   "import_yen": 9.9
+  },
+  {
+   "date": "2010-03-01",
+   "ppi": -1.3,
+   "export_yen": -2.3,
+   "import_yen": 6
+  },
+  {
+   "date": "2010-04-01",
+   "ppi": -0.2,
+   "export_yen": -0.7,
+   "import_yen": 12.3
+  },
+  {
+   "date": "2010-05-01",
+   "ppi": 0.4,
+   "export_yen": -1.2,
+   "import_yen": 15.3
+  },
+  {
+   "date": "2010-06-01",
+   "ppi": 0.5,
+   "export_yen": -3.4,
+   "import_yen": 9.3
+  },
+  {
+   "date": "2010-07-01",
+   "ppi": -0.1,
+   "export_yen": -4.2,
+   "import_yen": 5
+  },
+  {
+   "date": "2010-08-01",
+   "ppi": 0,
+   "export_yen": -6.7,
+   "import_yen": 2.1
+  },
+  {
+   "date": "2010-09-01",
+   "ppi": -0.1,
+   "export_yen": -5,
+   "import_yen": 3.2
+  },
+  {
+   "date": "2010-10-01",
+   "ppi": 0.9,
+   "export_yen": -4.7,
+   "import_yen": 2.5
+  },
+  {
+   "date": "2010-11-01",
+   "ppi": 0.9,
+   "export_yen": -3.2,
+   "import_yen": 4.4
+  },
+  {
+   "date": "2010-12-01",
+   "ppi": 1.2,
+   "export_yen": -2.1,
+   "import_yen": 4.4
+  },
+  {
+   "date": "2011-01-01",
+   "ppi": 0.6,
+   "export_yen": -3.5,
+   "import_yen": 2.6
+  },
+  {
+   "date": "2011-02-01",
+   "ppi": 0.7,
+   "export_yen": -2.1,
+   "import_yen": 4.5
+  },
+  {
+   "date": "2011-03-01",
+   "ppi": 1.3,
+   "export_yen": -2.2,
+   "import_yen": 7.2
+  },
+  {
+   "date": "2011-04-01",
+   "ppi": 1.8,
+   "export_yen": -2.8,
+   "import_yen": 7
+  },
+  {
+   "date": "2011-05-01",
+   "ppi": 1.6,
+   "export_yen": -2.9,
+   "import_yen": 7.1
+  },
+  {
+   "date": "2011-06-01",
+   "ppi": 1.9,
+   "export_yen": -2.3,
+   "import_yen": 8
+  },
+  {
+   "date": "2011-07-01",
+   "ppi": 2.2,
+   "export_yen": -0.7,
+   "import_yen": 10.4
+  },
+  {
+   "date": "2011-08-01",
+   "ppi": 2.2,
+   "export_yen": -0.7,
+   "import_yen": 10.9
+  },
+  {
+   "date": "2011-09-01",
+   "ppi": 2,
+   "export_yen": -0.9,
+   "import_yen": 9.3
+  },
+  {
+   "date": "2011-10-01",
+   "ppi": 1.3,
+   "export_yen": -1.2,
+   "import_yen": 10.2
+  },
+  {
+   "date": "2011-11-01",
+   "ppi": 1.3,
+   "export_yen": -2.7,
+   "import_yen": 7.3
+  },
+  {
+   "date": "2011-12-01",
+   "ppi": 0.8,
+   "export_yen": -3.9,
+   "import_yen": 5.6
+  },
+  {
+   "date": "2012-01-01",
+   "ppi": 0.3,
+   "export_yen": -4.7,
+   "import_yen": 1.6
+  },
+  {
+   "date": "2012-02-01",
+   "ppi": 0.4,
+   "export_yen": -3.7,
+   "import_yen": 2
+  },
+  {
+   "date": "2012-03-01",
+   "ppi": 0.3,
+   "export_yen": -0.4,
+   "import_yen": 6.2
+  },
+  {
+   "date": "2012-04-01",
+   "ppi": -0.7,
+   "export_yen": -2.9,
+   "import_yen": 1.1
+  },
+  {
+   "date": "2012-05-01",
+   "ppi": -0.9,
+   "export_yen": -3.6,
+   "import_yen": -2.3
+  },
+  {
+   "date": "2012-06-01",
+   "ppi": -1.5,
+   "export_yen": -4.3,
+   "import_yen": -3.4
+  },
+  {
+   "date": "2012-07-01",
+   "ppi": -2.2,
+   "export_yen": -4.4,
+   "import_yen": -6.1
+  },
+  {
+   "date": "2012-08-01",
+   "ppi": -2,
+   "export_yen": -2.6,
+   "import_yen": -4.2
+  },
+  {
+   "date": "2012-09-01",
+   "ppi": -1.5,
+   "export_yen": -2.1,
+   "import_yen": -0.9
+  },
+  {
+   "date": "2012-10-01",
+   "ppi": -1.1,
+   "export_yen": -0.5,
+   "import_yen": -0.4
+  },
+  {
+   "date": "2012-11-01",
+   "ppi": -1.1,
+   "export_yen": 1.2,
+   "import_yen": 1
+  },
+  {
+   "date": "2012-12-01",
+   "ppi": -0.7,
+   "export_yen": 3.7,
+   "import_yen": 3.1
+  },
+  {
+   "date": "2013-01-01",
+   "ppi": -0.4,
+   "export_yen": 8.9,
+   "import_yen": 10.7
+  },
+  {
+   "date": "2013-02-01",
+   "ppi": -0.1,
+   "export_yen": 10.5,
+   "import_yen": 13
+  },
+  {
+   "date": "2013-03-01",
+   "ppi": -0.5,
+   "export_yen": 7.5,
+   "import_yen": 8.1
+  },
+  {
+   "date": "2013-04-01",
+   "ppi": 0.1,
+   "export_yen": 8.9,
+   "import_yen": 9.5
+  },
+  {
+   "date": "2013-05-01",
+   "ppi": 0.6,
+   "export_yen": 13.3,
+   "import_yen": 14.1
+  },
+  {
+   "date": "2013-06-01",
+   "ppi": 1.2,
+   "export_yen": 11.7,
+   "import_yen": 13.6
+  },
+  {
+   "date": "2013-07-01",
+   "ppi": 2.1,
+   "export_yen": 14.4,
+   "import_yen": 18.6
+  },
+  {
+   "date": "2013-08-01",
+   "ppi": 2.3,
+   "export_yen": 12.8,
+   "import_yen": 17.1
+  },
+  {
+   "date": "2013-09-01",
+   "ppi": 2.3,
+   "export_yen": 13.9,
+   "import_yen": 17.9
+  },
+  {
+   "date": "2013-10-01",
+   "ppi": 2.5,
+   "export_yen": 12.7,
+   "import_yen": 16.8
+  },
+  {
+   "date": "2013-11-01",
+   "ppi": 2.6,
+   "export_yen": 12.6,
+   "import_yen": 17.3
+  },
+  {
+   "date": "2013-12-01",
+   "ppi": 2.5,
+   "export_yen": 12.7,
+   "import_yen": 17.8
+  },
+  {
+   "date": "2014-01-01",
+   "ppi": 2.5,
+   "export_yen": 8.1,
+   "import_yen": 12.7
+  },
+  {
+   "date": "2014-02-01",
+   "ppi": 1.8,
+   "export_yen": 3.1,
+   "import_yen": 6.2
+  },
+  {
+   "date": "2014-03-01",
+   "ppi": 1.7,
+   "export_yen": 2.3,
+   "import_yen": 4.4
+  },
+  {
+   "date": "2014-04-01",
+   "ppi": 4.2,
+   "export_yen": 1.4,
+   "import_yen": 2.5
+  },
+  {
+   "date": "2014-05-01",
+   "ppi": 4.4,
+   "export_yen": -0.8,
+   "import_yen": 0.5
+  },
+  {
+   "date": "2014-06-01",
+   "ppi": 4.5,
+   "export_yen": 1.9,
+   "import_yen": 4.1
+  },
+  {
+   "date": "2014-07-01",
+   "ppi": 4.4,
+   "export_yen": 0.4,
+   "import_yen": 2.5
+  },
+  {
+   "date": "2014-08-01",
+   "ppi": 4,
+   "export_yen": 2.5,
+   "import_yen": 4.5
+  },
+  {
+   "date": "2014-09-01",
+   "ppi": 3.6,
+   "export_yen": 3.5,
+   "import_yen": 4.4
+  },
+  {
+   "date": "2014-10-01",
+   "ppi": 2.8,
+   "export_yen": 3.8,
+   "import_yen": 4.1
+  },
+  {
+   "date": "2014-11-01",
+   "ppi": 2.6,
+   "export_yen": 7,
+   "import_yen": 5.4
+  },
+  {
+   "date": "2014-12-01",
+   "ppi": 1.8,
+   "export_yen": 5.4,
+   "import_yen": 0.3
+  },
+  {
+   "date": "2015-01-01",
+   "ppi": 0.3,
+   "export_yen": 2.2,
+   "import_yen": -6.7
+  },
+  {
+   "date": "2015-02-01",
+   "ppi": 0.4,
+   "export_yen": 2.7,
+   "import_yen": -10.4
+  },
+  {
+   "date": "2015-03-01",
+   "ppi": 0.7,
+   "export_yen": 3.4,
+   "import_yen": -8.2
+  },
+  {
+   "date": "2015-04-01",
+   "ppi": -2.1,
+   "export_yen": 2.8,
+   "import_yen": -9.8
+  },
+  {
+   "date": "2015-05-01",
+   "ppi": -2.2,
+   "export_yen": 4.8,
+   "import_yen": -8.7
+  },
+  {
+   "date": "2015-06-01",
+   "ppi": -2.4,
+   "export_yen": 6.6,
+   "import_yen": -5.9
+  },
+  {
+   "date": "2015-07-01",
+   "ppi": -3.2,
+   "export_yen": 5.3,
+   "import_yen": -7.4
+  },
+  {
+   "date": "2015-08-01",
+   "ppi": -3.8,
+   "export_yen": 3.6,
+   "import_yen": -9.9
+  },
+  {
+   "date": "2015-09-01",
+   "ppi": -4,
+   "export_yen": -1.3,
+   "import_yen": -15.6
+  },
+  {
+   "date": "2015-10-01",
+   "ppi": -3.8,
+   "export_yen": -1.9,
+   "import_yen": -15.8
+  },
+  {
+   "date": "2015-11-01",
+   "ppi": -3.7,
+   "export_yen": -5.3,
+   "import_yen": -17.7
+  },
+  {
+   "date": "2015-12-01",
+   "ppi": -3.6,
+   "export_yen": -6.9,
+   "import_yen": -18.6
+  },
+  {
+   "date": "2016-01-01",
+   "ppi": -3.4,
+   "export_yen": -6.4,
+   "import_yen": -17.2
+  },
+  {
+   "date": "2016-02-01",
+   "ppi": -3.7,
+   "export_yen": -7.4,
+   "import_yen": -16.2
+  },
+  {
+   "date": "2016-03-01",
+   "ppi": -4,
+   "export_yen": -8.8,
+   "import_yen": -18.9
+  },
+  {
+   "date": "2016-04-01",
+   "ppi": -4.4,
+   "export_yen": -9.2,
+   "import_yen": -18.4
+  },
+  {
+   "date": "2016-05-01",
+   "ppi": -4.6,
+   "export_yen": -10.7,
+   "import_yen": -18.8
+  },
+  {
+   "date": "2016-06-01",
+   "ppi": -4.5,
+   "export_yen": -13.7,
+   "import_yen": -21.8
+  },
+  {
+   "date": "2016-07-01",
+   "ppi": -4.2,
+   "export_yen": -13.3,
+   "import_yen": -20.8
+  },
+  {
+   "date": "2016-08-01",
+   "ppi": -3.8,
+   "export_yen": -13.7,
+   "import_yen": -20.4
+  },
+  {
+   "date": "2016-09-01",
+   "ppi": -3.3,
+   "export_yen": -10.9,
+   "import_yen": -16.1
+  },
+  {
+   "date": "2016-10-01",
+   "ppi": -2.7,
+   "export_yen": -8.9,
+   "import_yen": -14.1
+  },
+  {
+   "date": "2016-11-01",
+   "ppi": -2.3,
+   "export_yen": -6.9,
+   "import_yen": -9.8
+  },
+  {
+   "date": "2016-12-01",
+   "ppi": -1.2,
+   "export_yen": -1.8,
+   "import_yen": -2.9
+  },
+  {
+   "date": "2017-01-01",
+   "ppi": 0.5,
+   "export_yen": 1,
+   "import_yen": 4.3
+  },
+  {
+   "date": "2017-02-01",
+   "ppi": 1,
+   "export_yen": 2.8,
+   "import_yen": 9.6
+  },
+  {
+   "date": "2017-03-01",
+   "ppi": 1.4,
+   "export_yen": 4,
+   "import_yen": 12.1
+  },
+  {
+   "date": "2017-04-01",
+   "ppi": 2.1,
+   "export_yen": 3,
+   "import_yen": 10.9
+  },
+  {
+   "date": "2017-05-01",
+   "ppi": 2.1,
+   "export_yen": 4.4,
+   "import_yen": 12.4
+  },
+  {
+   "date": "2017-06-01",
+   "ppi": 2.2,
+   "export_yen": 5.7,
+   "import_yen": 11.5
+  },
+  {
+   "date": "2017-07-01",
+   "ppi": 2.5,
+   "export_yen": 7.6,
+   "import_yen": 11.9
+  },
+  {
+   "date": "2017-08-01",
+   "ppi": 2.8,
+   "export_yen": 8.4,
+   "import_yen": 12.8
+  },
+  {
+   "date": "2017-09-01",
+   "ppi": 3,
+   "export_yen": 9.1,
+   "import_yen": 13.8
+  },
+  {
+   "date": "2017-10-01",
+   "ppi": 3.5,
+   "export_yen": 9.7,
+   "import_yen": 15.6
+  },
+  {
+   "date": "2017-11-01",
+   "ppi": 3.5,
+   "export_yen": 6.8,
+   "import_yen": 10.5
+  },
+  {
+   "date": "2017-12-01",
+   "ppi": 3,
+   "export_yen": 2.3,
+   "import_yen": 7.3
+  },
+  {
+   "date": "2018-01-01",
+   "ppi": 2.7,
+   "export_yen": 1.6,
+   "import_yen": 5
+  },
+  {
+   "date": "2018-02-01",
+   "ppi": 2.5,
+   "export_yen": 0.8,
+   "import_yen": 4.4
+  },
+  {
+   "date": "2018-03-01",
+   "ppi": 2,
+   "export_yen": -0.5,
+   "import_yen": 1.7
+  },
+  {
+   "date": "2018-04-01",
+   "ppi": 2.2,
+   "export_yen": 1.9,
+   "import_yen": 5.1
+  },
+  {
+   "date": "2018-05-01",
+   "ppi": 2.7,
+   "export_yen": 2.4,
+   "import_yen": 6.7
+  },
+  {
+   "date": "2018-06-01",
+   "ppi": 2.9,
+   "export_yen": 3.3,
+   "import_yen": 10.8
+  },
+  {
+   "date": "2018-07-01",
+   "ppi": 3.1,
+   "export_yen": 2.6,
+   "import_yen": 11.6
+  },
+  {
+   "date": "2018-08-01",
+   "ppi": 3.1,
+   "export_yen": 2.8,
+   "import_yen": 12.3
+  },
+  {
+   "date": "2018-09-01",
+   "ppi": 3,
+   "export_yen": 2,
+   "import_yen": 10.9
+  },
+  {
+   "date": "2018-10-01",
+   "ppi": 3,
+   "export_yen": 0.7,
+   "import_yen": 9.8
+  },
+  {
+   "date": "2018-11-01",
+   "ppi": 2.2,
+   "export_yen": 0.5,
+   "import_yen": 9.3
+  },
+  {
+   "date": "2018-12-01",
+   "ppi": 1.4,
+   "export_yen": -1.5,
+   "import_yen": 3.1
+  },
+  {
+   "date": "2019-01-01",
+   "ppi": 0.5,
+   "export_yen": -3.5,
+   "import_yen": -2
+  },
+  {
+   "date": "2019-02-01",
+   "ppi": 0.9,
+   "export_yen": -1.6,
+   "import_yen": -0.8
+  },
+  {
+   "date": "2019-03-01",
+   "ppi": 1.3,
+   "export_yen": 0.1,
+   "import_yen": 2.4
+  },
+  {
+   "date": "2019-04-01",
+   "ppi": 1.3,
+   "export_yen": 0.2,
+   "import_yen": 1.5
+  },
+  {
+   "date": "2019-05-01",
+   "ppi": 0.6,
+   "export_yen": -2.6,
+   "import_yen": -1.8
+  },
+  {
+   "date": "2019-06-01",
+   "ppi": -0.2,
+   "export_yen": -4.3,
+   "import_yen": -5.8
+  },
+  {
+   "date": "2019-07-01",
+   "ppi": -0.7,
+   "export_yen": -4.9,
+   "import_yen": -8.4
+  },
+  {
+   "date": "2019-08-01",
+   "ppi": -0.9,
+   "export_yen": -5.8,
+   "import_yen": -8.5
+  },
+  {
+   "date": "2019-09-01",
+   "ppi": -1.1,
+   "export_yen": -6.2,
+   "import_yen": -9.7
+  },
+  {
+   "date": "2019-10-01",
+   "ppi": -0.4,
+   "export_yen": -6.3,
+   "import_yen": -10.8
+  },
+  {
+   "date": "2019-11-01",
+   "ppi": 0.1,
+   "export_yen": -6.1,
+   "import_yen": -11.3
+  },
+  {
+   "date": "2019-12-01",
+   "ppi": 0.9,
+   "export_yen": -4.4,
+   "import_yen": -6.6
+  },
+  {
+   "date": "2020-01-01",
+   "ppi": 1.5,
+   "export_yen": -1.5,
+   "import_yen": -0.8
+  },
+  {
+   "date": "2020-02-01",
+   "ppi": 0.7,
+   "export_yen": -2.2,
+   "import_yen": -1.8
+  },
+  {
+   "date": "2020-03-01",
+   "ppi": -0.4,
+   "export_yen": -5.1,
+   "import_yen": -7.8
+  },
+  {
+   "date": "2020-04-01",
+   "ppi": -2.4,
+   "export_yen": -6.5,
+   "import_yen": -13.5
+  },
+  {
+   "date": "2020-05-01",
+   "ppi": -2.7,
+   "export_yen": -6.5,
+   "import_yen": -18.5
+  },
+  {
+   "date": "2020-06-01",
+   "ppi": -1.6,
+   "export_yen": -4.1,
+   "import_yen": -16.2
+  },
+  {
+   "date": "2020-07-01",
+   "ppi": -0.9,
+   "export_yen": -3.3,
+   "import_yen": -12.7
+  },
+  {
+   "date": "2020-08-01",
+   "ppi": -0.6,
+   "export_yen": -1.8,
+   "import_yen": -11
+  },
+  {
+   "date": "2020-09-01",
+   "ppi": -0.8,
+   "export_yen": -1.5,
+   "import_yen": -10.3
+  },
+  {
+   "date": "2020-10-01",
+   "ppi": -2.2,
+   "export_yen": -2,
+   "import_yen": -10.9
+  },
+  {
+   "date": "2020-11-01",
+   "ppi": -2.4,
+   "export_yen": -2.1,
+   "import_yen": -10.6
+  },
+  {
+   "date": "2020-12-01",
+   "ppi": -2.1,
+   "export_yen": -1.4,
+   "import_yen": -9.8
+  },
+  {
+   "date": "2021-01-01",
+   "ppi": -1.8,
+   "export_yen": -1.5,
+   "import_yen": -7.4
+  },
+  {
+   "date": "2021-02-01",
+   "ppi": -0.9,
+   "export_yen": -0.5,
+   "import_yen": -3.4
+  },
+  {
+   "date": "2021-03-01",
+   "ppi": 1,
+   "export_yen": 4.8,
+   "import_yen": 5.2
+  },
+  {
+   "date": "2021-04-01",
+   "ppi": 3.8,
+   "export_yen": 7.2,
+   "import_yen": 14.9
+  },
+  {
+   "date": "2021-05-01",
+   "ppi": 5,
+   "export_yen": 10.1,
+   "import_yen": 24.9
+  },
+  {
+   "date": "2021-06-01",
+   "ppi": 5,
+   "export_yen": 9.9,
+   "import_yen": 27.6
+  },
+  {
+   "date": "2021-07-01",
+   "ppi": 5.6,
+   "export_yen": 10.4,
+   "import_yen": 27.3
+  },
+  {
+   "date": "2021-08-01",
+   "ppi": 5.7,
+   "export_yen": 9.6,
+   "import_yen": 28.7
+  },
+  {
+   "date": "2021-09-01",
+   "ppi": 6.2,
+   "export_yen": 10.1,
+   "import_yen": 30.2
+  },
+  {
+   "date": "2021-10-01",
+   "ppi": 8.2,
+   "export_yen": 13,
+   "import_yen": 36.5
+  },
+  {
+   "date": "2021-11-01",
+   "ppi": 9.1,
+   "export_yen": 14.1,
+   "import_yen": 43.1
+  },
+  {
+   "date": "2021-12-01",
+   "ppi": 8.6,
+   "export_yen": 12.7,
+   "import_yen": 40.2
+  },
+  {
+   "date": "2022-01-01",
+   "ppi": 9.2,
+   "export_yen": 12.6,
+   "import_yen": 35.5
+  },
+  {
+   "date": "2022-02-01",
+   "ppi": 9.5,
+   "export_yen": 12.5,
+   "import_yen": 33.1
+  },
+  {
+   "date": "2022-03-01",
+   "ppi": 9.5,
+   "export_yen": 12.7,
+   "import_yen": 32.7
+  },
+  {
+   "date": "2022-04-01",
+   "ppi": 10.2,
+   "export_yen": 16.9,
+   "import_yen": 42.6
+  },
+  {
+   "date": "2022-05-01",
+   "ppi": 9.6,
+   "export_yen": 17.1,
+   "import_yen": 44.9
+  },
+  {
+   "date": "2022-06-01",
+   "ppi": 9.8,
+   "export_yen": 19.3,
+   "import_yen": 48.5
+  },
+  {
+   "date": "2022-07-01",
+   "ppi": 9.5,
+   "export_yen": 19.8,
+   "import_yen": 49.5
+  },
+  {
+   "date": "2022-08-01",
+   "ppi": 9.8,
+   "export_yen": 17.4,
+   "import_yen": 43.1
+  },
+  {
+   "date": "2022-09-01",
+   "ppi": 10.4,
+   "export_yen": 20.2,
+   "import_yen": 48.7
+  },
+  {
+   "date": "2022-10-01",
+   "ppi": 9.7,
+   "export_yen": 18.7,
+   "import_yen": 42.3
+  },
+  {
+   "date": "2022-11-01",
+   "ppi": 10,
+   "export_yen": 15.1,
+   "import_yen": 28
+  },
+  {
+   "date": "2022-12-01",
+   "ppi": 10.6,
+   "export_yen": 12.1,
+   "import_yen": 22.2
+  },
+  {
+   "date": "2023-01-01",
+   "ppi": 9.6,
+   "export_yen": 9,
+   "import_yen": 16.9
+  },
+  {
+   "date": "2023-02-01",
+   "ppi": 8.4,
+   "export_yen": 9.3,
+   "import_yen": 15
+  },
+  {
+   "date": "2023-03-01",
+   "ppi": 7.4,
+   "export_yen": 7,
+   "import_yen": 9.3
+  },
+  {
+   "date": "2023-04-01",
+   "ppi": 6.1,
+   "export_yen": 1.8,
+   "import_yen": -3.7
+  },
+  {
+   "date": "2023-05-01",
+   "ppi": 5.4,
+   "export_yen": 2.1,
+   "import_yen": -5.4
+  },
+  {
+   "date": "2023-06-01",
+   "ppi": 4.5,
+   "export_yen": 0.6,
+   "import_yen": -11.7
+  },
+  {
+   "date": "2023-07-01",
+   "ppi": 3.7,
+   "export_yen": -0.3,
+   "import_yen": -14.7
+  },
+  {
+   "date": "2023-08-01",
+   "ppi": 3.5,
+   "export_yen": 4.1,
+   "import_yen": -11.6
+  },
+  {
+   "date": "2023-09-01",
+   "ppi": 2.4,
+   "export_yen": 3,
+   "import_yen": -14.3
+  },
+  {
+   "date": "2023-10-01",
+   "ppi": 1.2,
+   "export_yen": 2.5,
+   "import_yen": -11.8
+  },
+  {
+   "date": "2023-11-01",
+   "ppi": 0.6,
+   "export_yen": 4.9,
+   "import_yen": -6.4
+  },
+  {
+   "date": "2023-12-01",
+   "ppi": 0.3,
+   "export_yen": 5.6,
+   "import_yen": -5
+  },
+  {
+   "date": "2024-01-01",
+   "ppi": 0.3,
+   "export_yen": 9.6,
+   "import_yen": -0.1
+  },
+  {
+   "date": "2024-02-01",
+   "ppi": 0.8,
+   "export_yen": 9.5,
+   "import_yen": 0.4
+  },
+  {
+   "date": "2024-03-01",
+   "ppi": 1,
+   "export_yen": 9.6,
+   "import_yen": 1.7
+  },
+  {
+   "date": "2024-04-01",
+   "ppi": 1.2,
+   "export_yen": 11.7,
+   "import_yen": 7
+  },
+  {
+   "date": "2024-05-01",
+   "ppi": 2.6,
+   "export_yen": 11.5,
+   "import_yen": 7.2
+  },
+  {
+   "date": "2024-06-01",
+   "ppi": 2.8,
+   "export_yen": 11,
+   "import_yen": 9.5
+  },
+  {
+   "date": "2024-07-01",
+   "ppi": 3.3,
+   "export_yen": 10.9,
+   "import_yen": 10.6
+  },
+  {
+   "date": "2024-08-01",
+   "ppi": 2.7,
+   "export_yen": 3.1,
+   "import_yen": 2.3
+  },
+  {
+   "date": "2024-09-01",
+   "ppi": 3.2,
+   "export_yen": -0.7,
+   "import_yen": -2.7
+  },
+  {
+   "date": "2024-10-01",
+   "ppi": 3.8,
+   "export_yen": 1.2,
+   "import_yen": -2.5
+  },
+  {
+   "date": "2024-11-01",
+   "ppi": 3.9,
+   "export_yen": 2.9,
+   "import_yen": -1.4
+  },
+  {
+   "date": "2024-12-01",
+   "ppi": 4.1,
+   "export_yen": 4.8,
+   "import_yen": 1.2
+  },
+  {
+   "date": "2025-01-01",
+   "ppi": 4.2,
+   "export_yen": 4.3,
+   "import_yen": 2.1
+  },
+  {
+   "date": "2025-02-01",
+   "ppi": 4.3,
+   "export_yen": 1.5,
+   "import_yen": -1.2
+  },
+  {
+   "date": "2025-03-01",
+   "ppi": 4.3,
+   "export_yen": -0.4,
+   "import_yen": -2.6
+  },
+  {
+   "date": "2025-04-01",
+   "ppi": 3.9,
+   "export_yen": -4.5,
+   "import_yen": -7.4
+  },
+  {
+   "date": "2025-05-01",
+   "ppi": 3.1,
+   "export_yen": -6.8,
+   "import_yen": -10.4
+  },
+  {
+   "date": "2025-06-01",
+   "ppi": 2.8,
+   "export_yen": -7.3,
+   "import_yen": -12.2
+  },
+  {
+   "date": "2025-07-01",
+   "ppi": 2.5,
+   "export_yen": -5.7,
+   "import_yen": -10.7
+  },
+  {
+   "date": "2025-08-01",
+   "ppi": 2.7,
+   "export_yen": -0.1,
+   "import_yen": -4.4
+  },
+  {
+   "date": "2025-09-01",
+   "ppi": 2.8,
+   "export_yen": 2.4,
+   "import_yen": -1.2
+  },
+  {
+   "date": "2025-10-01",
+   "ppi": 2.8,
+   "export_yen": 2.2,
+   "import_yen": -1.6
+  },
+  {
+   "date": "2025-11-01",
+   "ppi": 2.8,
+   "export_yen": 2.1,
+   "import_yen": -1.7
+  },
+  {
+   "date": "2025-12-01",
+   "ppi": 2.5,
+   "export_yen": 4,
+   "import_yen": 0.2
+  },
+  {
+   "date": "2026-01-01",
+   "ppi": 2.5,
+   "export_yen": 4.9,
+   "import_yen": 0.7
+  },
+  {
+   "date": "2026-02-01",
+   "ppi": 2.2,
+   "export_yen": 8.4,
+   "import_yen": 2.8
+  },
+  {
+   "date": "2026-03-01",
+   "ppi": 3,
+   "export_yen": 11.3,
+   "import_yen": 8.3
+  },
+  {
+   "date": "2026-04-01",
+   "ppi": 5.5,
+   "export_yen": 18.1,
+   "import_yen": 21.7
+  },
+  {
+   "date": "2026-05-01",
+   "ppi": 6.8,
+   "export_yen": 20.6,
+   "import_yen": 26.4
+  },
+  {
+   "date": "2026-06-01",
+   "ppi": 7.5,
+   "export_yen": 21.3,
+   "import_yen": 30.4
+  },
+  {
+   "date": "2026-07-01",
+   "ppi": 7.7,
+   "export_yen": 19.4,
+   "import_yen": 29.4
+  },
+  {
+   "date": "2026-08-01",
+   "ppi": 7.6,
+   "export_yen": 18,
+   "import_yen": 25.1
+  },
+  {
+   "date": "2026-09-01",
+   "ppi": 6.8,
+   "export_yen": 17.9,
+   "import_yen": 24.5
+  }
+ ]
+}
