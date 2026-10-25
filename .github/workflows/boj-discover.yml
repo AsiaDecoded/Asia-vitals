@@ -1,0 +1,37 @@
+name: BoJ discovery (manual)
+
+# One-off helper: saves a BoJ database's series list (and optionally sample values)
+# to the "discovery" branch. Used when building new BoJ fetchers.
+on:
+  workflow_dispatch:
+    inputs:
+      db:
+        description: "BoJ database (PR01 = CGPI, PR02 = SPPI)"
+        default: "PR01"
+      codes:
+        description: "Optional series codes for sample values, space-separated"
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Query the BoJ API
+        run: python -I pipeline/tools/boj_discover.py "${{ inputs.db }}" discovery/boj ${{ inputs.codes }}
+      - name: Push results to the discovery branch
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          git fetch origin discovery && git checkout -B discovery origin/discovery -- 2>/dev/null || git checkout -B discovery
+          git checkout -B discovery
+          git add discovery
+          git commit -m "BoJ discovery ${{ inputs.db }}"
+          git push -f origin discovery
