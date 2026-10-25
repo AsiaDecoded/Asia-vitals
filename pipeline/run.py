@@ -118,6 +118,9 @@ def main():
     STATE.write_text(json.dumps({**release, "processed_at": now, "rows": rows,
                                  "warnings": warnings, "history": history},
                                 ensure_ascii=False, indent=1) + "\n")
+    # The same release info as a one-row table, for the dashboard's "release" dataset.
+    (DATA / "release_row.json").write_text(json.dumps([{**release, "processed_at": now}],
+                                                      ensure_ascii=False, indent=1) + "\n")
     print(f"Wrote data/jp_gdp.csv ({rows} rows), {len(slugs)} JSON files, data/release.json")
     gh_output(updated="true", code=code)
     return 0
