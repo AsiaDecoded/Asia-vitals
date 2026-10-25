@@ -1,0 +1,18 @@
+{
+ "code": "N2026-09_T2026-09",
+ "label": "National Sep 2026, Tokyo Sep 2026",
+ "national_month": "2026-09-01",
+ "tokyo_month": "2026-09-01",
+ "table": "e-Stat 0004052037 (2025 base)",
+ "processed_at": "2026-10-25T07:30:31Z",
+ "rows": 31974,
+ "warnings": [],
+ "fingerprint": "e58040b27764c4d4",
+ "long_rows": 93330,
+ "history": [
+  {
+   "code": "N2026-09_T2026-09",
+   "processed_at": "2026-10-25T07:30:31Z"
+  }
+ ]
+}
