@@ -6,4 +6,5 @@ and raises core.common.CheckFailed if the new data fails its checks (nothing is 
 SOURCES = [
     "jp_gdp_esri",
     "jp_cpi_estat",
+    "jp_ppi_boj",
 ]
