@@ -50,6 +50,15 @@ jobs:
           branch="${{ inputs.push_branch || 'main' }}"
           if [ "$branch" = "main" ]; then git push; else git push -f origin "HEAD:refs/heads/$branch"; fi
 
+      - name: Publish run report to the run-reports branch
+        if: always()
+        run: |
+          [ -f run_report.txt ] || echo "pipeline did not produce a report (crashed before the end)" > run_report.txt
+          mkdir -p /tmp/rr && cp run_report.txt /tmp/rr/ && cd /tmp/rr
+          git init -q && git config user.name "asia-vitals bot" && git config user.email "actions@users.noreply.github.com"
+          git add run_report.txt && git commit -qm "Run report ${{ github.run_id }}"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" HEAD:refs/heads/run-reports
+
       - name: Flag failed sources
         if: steps.run.outcome == 'failure'
         run: |

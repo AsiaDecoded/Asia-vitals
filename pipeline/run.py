@@ -18,7 +18,7 @@ import traceback
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from core.common import DATA, LONG_COLUMNS, CheckFailed  # noqa: E402
+from core.common import DATA, LONG_COLUMNS, CheckFailed, now  # noqa: E402
 from sources import SOURCES  # noqa: E402
 
 
@@ -58,30 +58,38 @@ def main():
         raise SystemExit(f"unknown source(s): {unknown}; known: {SOURCES}")
 
     updated, failed = [], []
+    report = [f"run at {now()} UTC; sources: {' '.join(names)}"]
+
+    def say(line):
+        print(line)
+        report.append(line)
+
     for name in names:
-        print(f"== {name}")
+        say(f"== {name}")
         mod = importlib.import_module(f"sources.{name}")
         try:
             res = mod.update(code=args.code, from_dir=args.from_dir, from_file=args.from_file)
         except CheckFailed as e:
-            print(f"   CHECKS FAILED ({len(e.errors)}); nothing written for {name}:")
+            say(f"   CHECKS FAILED ({len(e.errors)}); nothing written for {name}:")
             for err in e.errors[:40]:
-                print("   -", err)
+                say(f"   - {err}")
             failed.append(name)
             continue
         except Exception:  # noqa: BLE001 - one source's failure must not stop the others
-            print(f"   ERROR in {name}; nothing written:")
-            traceback.print_exc()
+            say(f"   ERROR in {name}; nothing written:")
+            say(traceback.format_exc().rstrip())
             failed.append(name)
             continue
-        print("  ", res["summary"])
+        say(f"   {'UPDATED' if res['updated'] else 'unchanged'}: {res['summary']}")
         for w in res.get("warnings", []):
-            print("   WARNING:", w)
+            say(f"   WARNING: {w}")
         if res["updated"]:
             updated.append(name)
 
     if updated:
-        print(f"== combined long file: {combine_long()} rows")
+        say(f"== combined long file: {combine_long()} rows")
+    say(f"result: updated={updated or '-'} failed={failed or '-'}")
+    (Path(__file__).resolve().parent.parent / "run_report.txt").write_text("\n".join(report) + "\n")
     gh_output(updated=str(bool(updated)).lower(), updated_sources=" ".join(updated),
               failed_sources=" ".join(failed))
     return 1 if failed else 0
