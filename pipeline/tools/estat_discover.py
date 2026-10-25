@@ -74,7 +74,7 @@ def main(stats_code, out, *keywords):
                 "name": c.get("@name"),
                 "count": len(items),
                 "items": [{"code": i.get("@code"), "name": i.get("@name"), "level": i.get("@level"),
-                           "unit": i.get("@unit"), "parent": i.get("@parentCode")} for i in items[:400]],
+                           "unit": i.get("@unit"), "parent": i.get("@parentCode")} for i in items[:3000]],
             }
         (out / "meta" / f"{t['id']}.json").write_text(json.dumps(
             {"table": t, "classes": classes}, ensure_ascii=False, indent=1))
