@@ -8,6 +8,10 @@ raw/jp/cpi_contrib/ and only new months are downloaded.
 
 Series (national, percentage points): all items, fresh food, energy, goods, services, and
 goods less fresh food and energy = goods - fresh food - energy (all three published).
+
+Also writes jp_cpi_items.csv: every individual item (not categories) in the latest month's Table 5,
+national, with its weight, y/y, m/m and published contribution to the all-items y/y. English item
+names come from the e-Stat API's English metadata for the 2025-base CPI table.
 """
 import csv
 import gzip
@@ -148,6 +152,59 @@ def parse(data):
     return found
 
 
+def parse_items(data):
+    """Individual items (codes not starting with 0) with national weight, index, m/m, y/y and contribution."""
+    rows = _sheet_rows(data)
+    hdr = None
+    for i, r in enumerate(rows[:20]):
+        if any(_norm(c) == "類・品目符号" for c in r):
+            hdr = i
+            break
+    if hdr is None:
+        raise ValueError("no item-code header row")
+    cols = {_norm(c): j for j, c in enumerate(rows[hdr]) if c}
+    jc, jn = cols["類・品目符号"], cols["類・品目"]
+    # the national block: first occurrence of each measure in the 表章項目 row
+    meas_row = next(r for r in rows[:20] if any(_norm(c) == "表章項目" for c in r))
+    first = {}
+    for j, c in enumerate(meas_row):
+        k = _norm(c)
+        if k and k not in first:
+            first[k] = j
+    def col(prefix):
+        return next(j for k, j in first.items() if k.startswith(prefix))
+    jw, ji, jm, jy = col("ウエイト"), col("指数"), col("前月比"), col("前年同月比")
+    jcy = col("総合指数の前年同月比に対する寄与度")
+    jcm = col("総合指数の前月比に対する寄与度")
+
+    def num(v):
+        try:
+            return float(v)
+        except (TypeError, ValueError):
+            return None
+    out = []
+    for r in rows[hdr + 1:]:
+        if len(r) <= max(jcy, jcm):
+            continue
+        code = str(r[jc] or "").strip()
+        if not re.fullmatch(r"[1-9]\d{3}", code):
+            continue
+        out.append({"code": code, "name_ja": str(r[jn]).strip(), "weight": num(r[jw]), "index": num(r[ji]),
+                    "mom": num(r[jm]), "yoy": num(r[jy]), "contrib_mom": num(r[jcm]), "contrib_yoy": num(r[jcy])})
+    return out
+
+
+def english_names():
+    """{item code: English name} from the e-Stat English metadata of the 2025-base CPI table."""
+    res = _call("getMetaInfo", {"statsDataId": "0004052037", "lang": "E"})
+    meta = res["GET_META_INFO"].get("METADATA_INF", {})
+    for c in _as_list(meta.get("CLASS_INF", {}).get("CLASS_OBJ")):
+        if c.get("@id") == "cat01":
+            return {i["@code"]: re.sub(r"^\d{4}\s*", "", i.get("@name", "")).strip()
+                    for i in _as_list(c.get("CLASS"))}
+    return {}
+
+
 def _mlabel(d):
     return f"{MONTHS[int(d[5:7]) - 1]} {d[:4]}"
 
@@ -189,7 +246,7 @@ def update(from_dir=None, **_):
     if not table:
         raise CheckFailed(["no Table 5 files found in the e-Stat catalogue"])
     latest = max(table)
-    if not new and state.get("latest_month") == latest and not from_dir:
+    if not new and state.get("latest_month") == latest and not from_dir and (OUT / "jp_cpi_items.csv").exists():
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {latest[:7]})"}
 
     errors, warnings = _checks(table)
@@ -206,6 +263,19 @@ def update(from_dir=None, **_):
         v["goods_core"] = round(v["goods"] - v["fresh_food"] - v["energy"], 2)
         for k in ORDER:
             out.append({"date": d, "series": k, "label": labels[k], "order": ORDER[k], "contrib_yoy": v[k]})
+    # item detail for the latest month
+    items = parse_items(gzip.decompress(have[latest[:7]].read_bytes()))
+    OUT.mkdir(parents=True, exist_ok=True)
+    names_path = OUT / "item_names_en.json"
+    names = read_json(names_path, {}) or {}
+    if from_dir is None and any(i["code"] not in names for i in items):
+        try:
+            names = english_names() or names
+            names_path.write_text(json.dumps(names, ensure_ascii=False, indent=1) + "\n")
+        except Exception as e:  # noqa: BLE001 - English names are a nicety; keep Japanese if the call fails
+            warnings.append(f"English item names not refreshed: {e}")
+    if len(items) < 400:
+        raise CheckFailed([f"only {len(items)} items parsed from the latest Table 5"])
     OUT.mkdir(parents=True, exist_ok=True)
     with open(OUT / "jp_cpi_contrib.csv", "w", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
@@ -216,6 +286,12 @@ def update(from_dir=None, **_):
                          "measure": "contrib_yoy", "area": "national", "freq": "M", "date": r["date"],
                          "value": r["contrib_yoy"], "unit": "pp", "source": "Statistics Bureau of Japan",
                          "release": code} for r in out), OUT / "long.csv")
-    write_release(OUT, release, warnings, len(out), {"long_rows": nlong, "new_months": new})
+    with open(OUT / "jp_cpi_items.csv", "w", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["date", "code", "name", "name_ja", "weight", "index", "mom", "yoy", "contrib_mom", "contrib_yoy"])
+        for i in items:
+            w.writerow([latest, i["code"], names.get(i["code"], i["name_ja"]), i["name_ja"]] +
+                       ["" if i[k] is None else i[k] for k in ("weight", "index", "mom", "yoy", "contrib_mom", "contrib_yoy")])
+    write_release(OUT, release, warnings, len(out), {"long_rows": nlong, "new_months": new, "items": len(items)})
     return {"updated": True, "code": code, "summary": f"{release['label']}: {len(table)} months, {len(new)} new",
             "warnings": warnings}
