@@ -1,0 +1,38 @@
+name: e-Stat discovery (manual)
+
+# One-off helper: lists e-Stat tables for a statistics code and their structure,
+# and pushes the result to the "discovery" branch. Used when building new fetchers.
+on:
+  workflow_dispatch:
+    inputs:
+      stats_code:
+        description: "e-Stat statistics code (00200573 = CPI)"
+        default: "00200573"
+      keywords:
+        description: "Title keywords for detailed structure, space-separated"
+        default: "中分類 財・サービス 季節調整 長期時系列"
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Query e-Stat
+        env:
+          ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
+        run: python -I pipeline/tools/estat_discover.py "${{ inputs.stats_code }}" "discovery/${{ inputs.stats_code }}" ${{ inputs.keywords }}
+      - name: Push results to the discovery branch
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -B discovery
+          git add discovery
+          git commit -m "e-Stat discovery ${{ inputs.stats_code }}"
+          git push -f origin discovery
