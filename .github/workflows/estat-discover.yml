@@ -11,6 +11,9 @@ on:
       keywords:
         description: "Title keywords for detailed structure, space-separated"
         default: "中分類 財・サービス 季節調整 長期時系列"
+      file_ids:
+        description: "Optional: e-Stat file statInfIds to download (Excel), space-separated"
+        default: ""
       catalog_words:
         description: "Optional: search the file catalogue (Excel/CSV) for these words, space-separated"
         default: ""
@@ -36,6 +39,9 @@ jobs:
         env:
           ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
         run: python -I pipeline/tools/estat_catalog.py "${{ inputs.stats_code }}" "discovery/${{ inputs.stats_code }}" ${{ inputs.catalog_words }}
+      - name: Download files
+        if: ${{ inputs.file_ids != '' }}
+        run: python -I pipeline/tools/estat_files.py "discovery/${{ inputs.stats_code }}/files" ${{ inputs.file_ids }}
       - name: Push results to the discovery branch
         if: always()
         run: |
