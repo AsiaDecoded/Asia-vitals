@@ -22,6 +22,7 @@ TABLE = "0004052037"  # 消費者物価指数（2025年基準）
 OUT = DATA / "jp" / "cpi"
 RAWDIR = RAW / "jp" / "cpi_estat"
 
+BASE_START = "2025-01-01"  # first month of the 2025 base
 AREAS = {"00000": "national", "13100": "tokyo"}
 TABS = {"1": "index", "2": "mom", "3": "yoy"}
 
@@ -125,16 +126,20 @@ def _checks(tidy, state):
         errors.append(f"latest national month {nat} is before the one already stored ({state['national_month']})")
     if state.get("tokyo_month") and tok < state["tokyo_month"]:
         errors.append(f"latest Tokyo month {tok} is before the one already stored ({state['tokyo_month']})")
-    # 3. Published y/y and m/m agree with the index over the last 24 months (rounded indices: ±0.15pp).
+    # 3. Published y/y and m/m agree with the index (rounded indices: ±0.15pp), but only where both
+    #    months are on the 2025 base. Rates spanning the base change are the officially published ones
+    #    from the old base and can't be recomputed from the rescaled old-base index.
     for (area, key), series in tidy.items():
         if key.endswith("_sa"):
             continue
-        last = nat if area == "national" else tok
         for d, v in series.items():
-            if d < _shift(last, -24) or v.get("index") is None:
+            if v.get("index") is None:
                 continue
             for meas, lag in (("yoy", 12), ("mom", 1)):
-                prev = series.get(_shift(d, -lag), {}).get("index")
+                start = _shift(d, -lag)
+                if start < BASE_START:
+                    continue
+                prev = series.get(start, {}).get("index")
                 if v.get(meas) is None or not prev:
                     continue
                 implied = (v["index"] / prev - 1) * 100
