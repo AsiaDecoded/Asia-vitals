@@ -58,7 +58,7 @@ def _search(stats_code, words, found, raw):
     for w in words or [""]:
         start = 1
         while True:
-            params = {"statsCode": stats_code, "limit": 1000, "startPosition": start}
+            params = {"statsCode": stats_code, "limit": 100, "startPosition": start}
             if w:
                 params["searchWord"] = w
             res = call("getDataCatalog", **params)
