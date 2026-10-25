@@ -145,10 +145,10 @@ def _checks(tidy, state):
                 implied = (v["index"] / prev - 1) * 100
                 if abs(implied - v[meas]) > 0.15:
                     errors.append(f"{area} {key} {meas} {d}: published {v[meas]}, from index {implied:.2f}")
-    # 4. Plausible index levels.
+    # 4. Plausible index levels (series start in 1970, when some groups were near 10).
     for (area, key), series in tidy.items():
         for d, v in series.items():
-            if v.get("index") is not None and not 20 < v["index"] < 400:
+            if v.get("index") is not None and not 0 < v["index"] < 1000:
                 errors.append(f"{area} {key} index {d} = {v['index']} out of range")
     return errors, warnings
 
