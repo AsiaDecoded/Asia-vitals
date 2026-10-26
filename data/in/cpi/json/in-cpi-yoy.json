@@ -12,76 +12,148 @@
  ],
  "data": [
   {
+   "date": "2012-01-01",
+   "combined": 7.65,
+   "rural": 7.28,
+   "urban": 8.25
+  },
+  {
+   "date": "2012-02-01",
+   "combined": 8.83,
+   "rural": 8.36,
+   "urban": 9.45
+  },
+  {
+   "date": "2012-03-01",
+   "combined": 9.38,
+   "rural": 8.7,
+   "urban": 10.3
+  },
+  {
+   "date": "2012-04-01",
+   "combined": 10.26,
+   "rural": 9.67,
+   "urban": 11.1
+  },
+  {
+   "date": "2012-05-01",
+   "combined": 10.36,
+   "rural": 9.57,
+   "urban": 11.52
+  },
+  {
+   "date": "2012-06-01",
+   "combined": 9.93,
+   "rural": 9.65,
+   "urban": 10.44
+  },
+  {
+   "date": "2012-07-01",
+   "combined": 9.86,
+   "rural": 9.76,
+   "urban": 10.1
+  },
+  {
+   "date": "2012-08-01",
+   "combined": 10.03,
+   "rural": 9.9,
+   "urban": 10.19
+  },
+  {
+   "date": "2012-09-01",
+   "combined": 9.73,
+   "rural": 9.79,
+   "urban": 9.72
+  },
+  {
+   "date": "2012-10-01",
+   "combined": 9.75,
+   "rural": 9.9,
+   "urban": 9.46
+  },
+  {
+   "date": "2012-11-01",
+   "combined": 9.9,
+   "rural": 9.97,
+   "urban": 9.69
+  },
+  {
+   "date": "2012-12-01",
+   "combined": 10.56,
+   "rural": 10.74,
+   "urban": 10.42
+  },
+  {
    "date": "2013-01-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 10.79,
+   "rural": 10.79,
+   "urban": 10.73
   },
   {
    "date": "2013-02-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 10.91,
+   "rural": 11.01,
+   "urban": 10.84
   },
   {
    "date": "2013-03-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 10.39,
+   "rural": 10.41,
+   "urban": 10.38
   },
   {
    "date": "2013-04-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 9.39,
+   "rural": 9.16,
+   "urban": 9.73
   },
   {
    "date": "2013-05-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 9.31,
+   "rural": 8.98,
+   "urban": 9.65
   },
   {
    "date": "2013-06-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 9.87,
+   "rural": 9.63,
+   "urban": 10.13
   },
   {
    "date": "2013-07-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 9.64,
+   "rural": 9.14,
+   "urban": 10.18
   },
   {
    "date": "2013-08-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 9.52,
+   "rural": 8.93,
+   "urban": 10.32
   },
   {
    "date": "2013-09-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 9.84,
+   "rural": 9.71,
+   "urban": 9.93
   },
   {
    "date": "2013-10-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 10.17,
+   "rural": 10.19,
+   "urban": 10.2
   },
   {
    "date": "2013-11-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 11.16,
+   "rural": 11.66,
+   "urban": 10.53
   },
   {
    "date": "2013-12-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 9.87,
+   "rural": 10.49,
+   "urban": 9.11
   },
   {
    "date": "2014-01-01",
