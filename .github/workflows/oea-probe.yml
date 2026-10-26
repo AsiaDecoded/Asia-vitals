@@ -1,0 +1,30 @@
+name: OEA probe (manual)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-food]
+    paths:
+      - .github/workflows/oea-probe.yml
+      - pipeline/tools/oea_urls.txt
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: dev-food
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch and commit
+        run: |
+          mkdir -p raw/in/oea_probe
+          python -I pipeline/tools/probe_urls.py pipeline/tools/oea_urls.txt raw/in/oea_probe || true
+          git config user.name "asia-vitals bot" && git config user.email "actions@users.noreply.github.com"
+          git add raw/in/oea_probe && git commit -qm "Probe: OEA pages ${{ github.run_id }}" && git push -q
