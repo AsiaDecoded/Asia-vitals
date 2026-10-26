@@ -37,8 +37,8 @@ MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "No
 
 PRECIOUS = {"13.2.1.1.1.01", "13.2.1.1.1.02"}  # gold/diamond/platinum jewellery; silver jewellery
 MEASURES = [
-    ("core1", "Core 1: CPI excluding food and beverages, and fuel"),
-    ("core2", "Core 2: core 1 excluding gold and silver jewellery"),
+    ("core1", "Core 1 (CPI excluding food and fuel)"),
+    ("core2", "Core 2 (core excluding precious metals)"),
 ]
 
 
