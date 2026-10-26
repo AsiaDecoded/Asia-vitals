@@ -130,9 +130,9 @@ dash.calc('ppi_cpi', {
   const f1 = (v) => (v == null ? '—' : J.f1(v));
   const pct = (v) => (v == null ? '—' : J.f1(v) + '%');
   const SECTORS = [
-    { key: 'combined', name: 'CPI', color: 'var(--ad-c1)' },
-    { key: 'rural', name: 'Rural', color: 'var(--ad-c3)' },
-    { key: 'urban', name: 'Urban', color: 'var(--ad-c4)' },
+    { key: 'combined', name: 'CPI', color: 'var(--ad-c2)' },
+    { key: 'rural', name: 'Rural', color: 'var(--ad-c5)' },
+    { key: 'urban', name: 'Urban', color: 'var(--ad-c1)' },
   ];
   const defPeriod = (id) => { const c = document.getElementById(id); return c && c.dataset.def != null ? Number(c.dataset.def) : 120; };
   const win = (rows, id) => { const n = J.periodOf(id, defPeriod(id)); return n ? rows.slice(-n) : rows; };
