@@ -1,37 +1,44 @@
 [
  {
-  "name": "dl2223",
-  "url": "https://eaindustry.nic.in/download_data_2223.asp",
+  "name": "wpi2223_m",
+  "url": "https://eaindustry.nic.in/indx_download_2223/wpi_monthly_index_202610.xlsx",
+  "status": 200,
+  "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "bytes": 331956
+ },
+ {
+  "name": "oppi2223_m",
+  "url": "https://eaindustry.nic.in/indx_download_2223/oppi_monthly_index_202610.xlsx",
+  "status": 200,
+  "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "bytes": 51801
+ },
+ {
+  "name": "ippi2223_m",
+  "url": "https://eaindustry.nic.in/indx_download_2223/trial_ippi_monthly_index_202610.xlsx",
+  "status": 200,
+  "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "bytes": 11273
+ },
+ {
+  "name": "wpi1112_m",
+  "url": "https://eaindustry.nic.in/indx_download_1112/monthly_index_202606.xls",
+  "status": 200,
+  "type": "application/vnd.ms-excel",
+  "bytes": 1339904
+ },
+ {
+  "name": "linking",
+  "url": "https://eaindustry.nic.in/wpi_linking_factor.asp",
   "status": 200,
   "type": "text/html",
-  "bytes": 20419
+  "bytes": 16242
  },
  {
-  "name": "dl1112",
-  "url": "https://eaindustry.nic.in/download_data_1112.asp",
+  "name": "dl0405",
+  "url": "https://eaindustry.nic.in/download_data_0405.asp",
   "status": 200,
   "type": "text/html",
-  "bytes": 17477
- },
- {
-  "name": "home",
-  "url": "https://eaindustry.nic.in/",
-  "status": 200,
-  "type": "text/html",
-  "bytes": 38523
- },
- {
-  "name": "wpi_home",
-  "url": "https://eaindustry.nic.in/home.asp",
-  "status": 404,
-  "type": "text/html; charset=utf-8",
-  "bytes": 4845
- },
- {
-  "name": "press202609",
-  "url": "https://eaindustry.nic.in/press_release/press_release_202610.pdf",
-  "status": 404,
-  "type": "text/html; charset=utf-8",
-  "bytes": 4905
+  "bytes": 17847
  }
 ]
