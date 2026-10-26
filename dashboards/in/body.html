@@ -57,7 +57,6 @@
       </section>
     </div>
 
-
     <div class="jg-grid">
       <section class="jg-card" id="cpi-gs" data-periods="none">
         <h2>India goods and services CPI</h2>
@@ -80,27 +79,26 @@
         <div class="jg-chart" id="cpi-diffusion-chart" data-source="in_cpi_diffusion"></div>
         <div class="ad-foot"><span>Source: MoSPI, Asia Decoded calculations</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
+      <section class="jg-card" id="cpi-movers">
+        <div class="jg-cardhead">
+          <div><h2>India CPI biggest contributors</h2></div>
+          <div class="jg-seg" id="cpi-movers-seg" role="group" aria-label="Averaging window"><button data-n="3" aria-pressed="true">3m avg.</button><button data-n="6">6m avg.</button></div>
+        </div>
+        <div class="ad-top"><span class="ad-units" id="cpi-movers-units">%, ppt</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-tablewrap">
+          <table id="cpi-movers-table" data-source="cpi_movers" data-row-key="name">
+            <thead><tr>
+              <th data-field="name">Item</th>
+              <th data-field="weight">Weight</th>
+              <th data-field="yoy">y/y, latest</th>
+              <th data-field="avg3" id="cpi-movers-avg">Contribution, 3m avg.</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="ad-foot"><span>Source: MoSPI, Asia Decoded calculations</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
     </div>
-
-    <section class="jg-card" id="cpi-movers">
-      <div class="jg-cardhead">
-        <div><h2>India CPI biggest contributors</h2></div>
-        <div class="jg-seg" id="cpi-movers-seg" role="group" aria-label="Averaging window"><button data-n="3" aria-pressed="true">3m avg.</button><button data-n="6">6m avg.</button></div>
-      </div>
-      <div class="ad-top"><span class="ad-units" id="cpi-movers-units">%, ppt</span><span></span><span class="ad-units r"></span></div>
-      <div class="jg-tablewrap">
-        <table id="cpi-movers-table" data-source="cpi_movers" data-row-key="name">
-          <thead><tr>
-            <th data-field="name">Item</th>
-            <th data-field="weight">Weight</th>
-            <th data-field="yoy">y/y, latest</th>
-            <th data-field="avg3" id="cpi-movers-avg">Contribution, 3m avg.</th>
-          </tr></thead>
-          <tbody></tbody>
-        </table>
-      </div>
-      <div class="ad-foot"><span>Source: MoSPI, Asia Decoded calculations</span><span class="ad-brand">Asia Decoded</span></div>
-    </section>
 
     <section class="jg-card" id="cpi-sectors" data-def="0">
       <h2>India consumer inflation</h2>
@@ -108,7 +106,6 @@
       <div class="jg-chart" id="cpi-sectors-chart" data-source="cpi_series"></div>
       <div class="ad-foot"><span>Source: Ministry of Statistics and Programme Implementation</span><span class="ad-brand">Asia Decoded</span></div>
     </section>
-
 
     <div class="jg-grid">
       <section class="jg-card" id="cpi-long-m" data-periods="ml" data-def="0">
