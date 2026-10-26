@@ -453,7 +453,7 @@ dash.calc('rbi_style', {
     lines('rbi-style-chart', 'rbi-style', 'rbi-style-legend', 'yoy', [
       { key: 'headline', name: 'CPI', color: 'var(--ad-c2)' },
       { key: 'food_bev', name: 'Food and beverages', color: 'var(--ad-c6)' },
-      { key: 'fuel', name: 'Fuel', color: 'var(--ad-c1)' },
+      { key: 'fuel', name: 'Fuel', color: 'var(--ad-c1)', dash: true },
       { key: 'core1', name: 'Core (CPI ex-food and fuel)', color: 'var(--ad-c4)' },
     ], (v) => d3.format('.0f')(v), 300, true, { date: '2026-01-01', label: '', mid: true }, 'rbi_style');
     contribChart('cpi-contrib-linked', 'in_cpi_contrib_linked', false);
