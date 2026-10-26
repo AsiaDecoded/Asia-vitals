@@ -90,7 +90,19 @@
 .ad-notes ol { margin: var(--cds-gap-sm) 0 0; padding-left: 1.2rem; display: flex; flex-direction: column; gap: var(--cds-gap-xs); font-size: 0.8125rem; line-height: 1.5; color: var(--ad-ink, var(--color-fg-muted)); max-width: 60rem; }
 .ad-notes ol b { color: var(--ad-ink, var(--color-fg)); }
 #cpi-movers-table th:not(:first-child), #cpi-movers-table td:not(:first-child) { text-align: center; }
+.ad-slider { position: relative; height: 22px; margin: 2px 8px 0; }
+.ad-slider-track { position: absolute; left: 0; right: 0; top: 9px; height: 4px; border-radius: 2px; background: var(--color-border-line); }
+.ad-slider-sel { position: absolute; top: 0; bottom: 0; background: var(--ad-c1); border-radius: 2px; opacity: 0.6; }
+.ad-slider input[type=range] { position: absolute; left: -8px; right: -8px; width: calc(100% + 16px); top: 0; height: 22px; margin: 0; background: none; pointer-events: none; -webkit-appearance: none; appearance: none; }
+.ad-slider input[type=range]::-webkit-slider-runnable-track { background: none; height: 22px; }
+.ad-slider input[type=range]::-moz-range-track { background: none; }
+.ad-slider input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; pointer-events: auto; width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: var(--color-bg); border: 2px solid var(--ad-c1); cursor: ew-resize; }
+.ad-slider input[type=range]::-moz-range-thumb { pointer-events: auto; width: 12px; height: 12px; border-radius: 50%; background: var(--color-bg); border: 2px solid var(--ad-c1); cursor: ew-resize; }
+.ad-slider input[type=range]:focus-visible::-webkit-slider-thumb { outline: 2px solid var(--ad-c1); outline-offset: 2px; }
+.ad-slider-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-align: right; margin: 0 8px 4px; font-variant-numeric: tabular-nums; }
 </style>
+
+
 
 <div class="jg">
   <header class="jg-head" id="top">
@@ -291,6 +303,44 @@ window.JG = {
   period: {},
   periodOf(id, def) { return id in this.period ? this.period[id] : def; },
   window(rows, id) { const n = this.periodOf(id, 40); return n ? rows.slice(-n) : rows; },
+  // Range slider per chart: the selected share of the chart's full date range, [from, to] in 0..1.
+  range: {},
+  slice(rows, id) {
+    const [lo, hi] = this.range[id] || [0, 1];
+    if (!rows.length) return rows;
+    const n = rows.length - 1, i0 = Math.round(lo * n), i1 = Math.max(i0, Math.round(hi * n));
+    const out = rows.slice(i0, i1 + 1);
+    const card = document.getElementById(id), lbl = card && card.querySelector('.ad-slider-lbl');
+    if (lbl && out.length) {
+      const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      const f = (d) => (card.dataset.periods === 'a' ? d.slice(0, 4) : MON[Number(d.slice(5, 7)) - 1] + ' ' + d.slice(0, 4));
+      lbl.textContent = `${f(out[0].date)} to ${f(out[out.length - 1].date)}`;
+    }
+    return out;
+  },
+  addSliders(redraw) {
+    document.querySelectorAll('.jg-card').forEach((card) => {
+      const chart = card.querySelector(':scope > .jg-chart'); if (!chart || !card.id) return;
+      const wrap = document.createElement('div'); wrap.className = 'ad-slider';
+      const track = document.createElement('div'); track.className = 'ad-slider-track';
+      const sel = document.createElement('div'); sel.className = 'ad-slider-sel'; track.appendChild(sel);
+      const mk = (v, label) => { const i = document.createElement('input'); i.type = 'range'; i.min = 0; i.max = 1000; i.step = 1; i.value = v; i.setAttribute('aria-label', label); return i; };
+      const a = mk(0, 'Start date'), b = mk(1000, 'End date');
+      const lbl = document.createElement('div'); lbl.className = 'ad-slider-lbl';
+      wrap.append(track, a, b);
+      let raf = 0;
+      const upd = (moved) => {
+        let lo = Number(a.value), hi = Number(b.value);
+        if (hi - lo < 20) { if (moved === a) { lo = hi - 20; a.value = lo; } else { hi = lo + 20; b.value = hi; } }
+        sel.style.left = `${lo / 10}%`; sel.style.right = `${100 - hi / 10}%`;
+        JG.range[card.id] = [lo / 1000, hi / 1000];
+        cancelAnimationFrame(raf); raf = requestAnimationFrame(() => redraw());
+      };
+      a.addEventListener('input', () => upd(a)); b.addEventListener('input', () => upd(b));
+      chart.after(wrap, lbl);
+      sel.style.left = '0%'; sel.style.right = '0%';
+    });
+  },
   addPeriods() {
     const SETS = { q: [['5Y', 20], ['10Y', 40], ['All', 0]], m: [['3Y', 36], ['5Y', 60], ['10Y', 120], ['All', 0]], ml: [['10Y', 120], ['30Y', 360], ['All', 0]], a: [['20Y', 20], ['40Y', 40], ['All', 0]] };
     document.querySelectorAll('.jg-card').forEach((card) => {

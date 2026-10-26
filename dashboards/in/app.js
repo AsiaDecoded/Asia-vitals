@@ -136,7 +136,7 @@ dash.calc('rbi_style', {
 (() => {
   const J = window.JG;
   J.theme();
-  J.addPeriods();
+  J.addSliders(() => J.redrawCpi());
   dash.onData(() => J.theme());
 
   const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -151,7 +151,7 @@ dash.calc('rbi_style', {
     { key: 'urban', name: 'Urban', color: 'var(--ad-c1)', dash: true },
   ];
   const defPeriod = (id) => { const c = document.getElementById(id); return c && c.dataset.def != null ? Number(c.dataset.def) : 120; };
-  const win = (rows, id) => { const n = J.periodOf(id, defPeriod(id)); return n ? rows.slice(-n) : rows; };
+  const win = (rows, id) => J.slice(rows, id);
 
   function legend(id, series) {
     const el = document.getElementById(id);
@@ -351,8 +351,7 @@ dash.calc('rbi_style', {
     const all = D.data.filter((r) => r.yoy !== '' && r.yoy != null)
       .map((r) => ({ date: annual ? `${r.year}-01-01` : r.date, label: annual ? String(r.year) : mLabel(r.date), v: Number(r.yoy) }))
       .sort((p, q) => (p.date < q.date ? -1 : 1));
-    const n = J.periodOf(cardId, 0);
-    const rows = n ? all.slice(-n) : all;
+    const rows = win(all, cardId);
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 280, mr = 8, color = 'var(--ad-c1)';
     const { svg, x, y, W, ml } = frame(box, rows, H, rows.map((r) => r.v), (v) => d3.format('.0f')(v), true, mr);
