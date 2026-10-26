@@ -127,9 +127,9 @@ dash.calc('core_bases', {
 
 dash.calc('rbi_style', {
   title: 'CPI inflation, RBI presentation',
-  description: 'Headline, food and beverages, fuel and CPI excluding food and fuel, y/y within the 2012 base to Dec 2025 and within the 2024 base from Jan 2026, joined (as in RBI MPR Chart IV.1), from Feb 2024.',
+  description: 'Headline, food and beverages, fuel and CPI excluding food and fuel, y/y within the 2012 base to Dec 2025 and within the 2024 base from Jan 2026, joined (as in RBI MPR Chart IV.1), from Jan 2015.',
   inputs: ['in_cpi_rbi_style'],
-  fn: (rows) => rows.filter((r) => r.date >= '2024-02-01' && r.yoy !== '' && r.yoy != null)
+  fn: (rows) => rows.filter((r) => r.yoy !== '' && r.yoy != null)
     .map((r) => ({ date: r.date, series: r.series, yoy: Number(r.yoy) })),
 });
 
