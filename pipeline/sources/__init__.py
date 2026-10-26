@@ -11,4 +11,5 @@ SOURCES = [
     "in_cpi_mospi",
     "in_cpi_imf",
     "in_cpi_core",
+    "in_ppi_oea",
 ]

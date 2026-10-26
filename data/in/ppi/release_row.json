@@ -1,0 +1,19 @@
+[
+ {
+  "code": "M2026-09",
+  "label": "Sep 2026",
+  "latest_month": "2026-09-01",
+  "files": {
+   "wpi": "indx_download_2223/wpi_monthly_index_202610.xlsx",
+   "oppi": "indx_download_2223/oppi_monthly_index_202610.xlsx",
+   "ippi": "indx_download_2223/trial_ippi_monthly_index_202610.xlsx"
+  },
+  "splice": {
+   "link_fy": "2024-25",
+   "oppi_per_old_wpi": 0.651619,
+   "wpi_link_check": 1.5327,
+   "first_new_month": "2023-04-01"
+  },
+  "processed_at": "2026-10-26T12:04:35Z"
+ }
+]

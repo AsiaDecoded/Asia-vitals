@@ -1,0 +1,540 @@
+date,series,label,weight,index
+2023-04-01,oppi,All commodities,100.0,99.1
+2023-05-01,oppi,All commodities,100.0,98.6
+2023-06-01,oppi,All commodities,100.0,98.2
+2023-07-01,oppi,All commodities,100.0,99.1
+2023-08-01,oppi,All commodities,100.0,99.4
+2023-09-01,oppi,All commodities,100.0,99.6
+2023-10-01,oppi,All commodities,100.0,100.0
+2023-11-01,oppi,All commodities,100.0,99.9
+2023-12-01,oppi,All commodities,100.0,99.2
+2024-01-01,oppi,All commodities,100.0,99.2
+2024-02-01,oppi,All commodities,100.0,99.2
+2024-03-01,oppi,All commodities,100.0,99.2
+2024-04-01,oppi,All commodities,100.0,99.7
+2024-05-01,oppi,All commodities,100.0,100.1
+2024-06-01,oppi,All commodities,100.0,100.4
+2024-07-01,oppi,All commodities,100.0,100.8
+2024-08-01,oppi,All commodities,100.0,100.7
+2024-09-01,oppi,All commodities,100.0,101.0
+2024-10-01,oppi,All commodities,100.0,101.8
+2024-11-01,oppi,All commodities,100.0,102.0
+2024-12-01,oppi,All commodities,100.0,101.5
+2025-01-01,oppi,All commodities,100.0,101.2
+2025-02-01,oppi,All commodities,100.0,101.0
+2025-03-01,oppi,All commodities,100.0,100.7
+2025-04-01,oppi,All commodities,100.0,100.5
+2025-05-01,oppi,All commodities,100.0,100.2
+2025-06-01,oppi,All commodities,100.0,100.3
+2025-07-01,oppi,All commodities,100.0,100.3
+2025-08-01,oppi,All commodities,100.0,100.9
+2025-09-01,oppi,All commodities,100.0,101.0
+2025-10-01,oppi,All commodities,100.0,101.1
+2025-11-01,oppi,All commodities,100.0,101.7
+2025-12-01,oppi,All commodities,100.0,102.1
+2026-01-01,oppi,All commodities,100.0,102.6
+2026-02-01,oppi,All commodities,100.0,103.3
+2026-03-01,oppi,All commodities,100.0,104.9
+2026-04-01,oppi,All commodities,100.0,108.8
+2026-05-01,oppi,All commodities,100.0,109.9
+2026-06-01,oppi,All commodities,100.0,110.0
+2026-07-01,oppi,All commodities,100.0,109.9
+2026-08-01,oppi,All commodities,100.0,110.8
+2026-09-01,oppi,All commodities,100.0,112.5
+2023-04-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,102.4
+2023-05-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,102.5
+2023-06-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,103.4
+2023-07-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,107.4
+2023-08-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,107.8
+2023-09-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,106.9
+2023-10-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,108.0
+2023-11-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,108.9
+2023-12-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,107.0
+2024-01-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,106.9
+2024-02-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,106.9
+2024-03-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,107.1
+2024-04-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,107.6
+2024-05-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,108.4
+2024-06-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,109.8
+2024-07-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,111.3
+2024-08-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,112.1
+2024-09-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,113.8
+2024-10-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,115.1
+2024-11-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,115.2
+2024-12-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,113.9
+2025-01-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,111.3
+2025-02-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,109.2
+2025-03-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,107.8
+2025-04-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,107.5
+2025-05-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,107.0
+2025-06-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,107.1
+2025-07-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,107.2
+2025-08-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,108.6
+2025-09-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,109.4
+2025-10-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,109.6
+2025-11-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,111.5
+2025-12-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,111.3
+2026-01-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,111.3
+2026-02-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,110.8
+2026-03-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,110.6
+2026-04-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,111.4
+2026-05-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,112.1
+2026-06-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,114.1
+2026-07-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,115.6
+2026-08-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,116.5
+2026-09-01,oppi_1100000000,"Agriculture, forestry and fishing",22.1565,118.7
+2023-04-01,oppi_1200000000,Mining and quarrying,3.4207,99.1
+2023-05-01,oppi_1200000000,Mining and quarrying,3.4207,96.6
+2023-06-01,oppi_1200000000,Mining and quarrying,3.4207,95.6
+2023-07-01,oppi_1200000000,Mining and quarrying,3.4207,99.2
+2023-08-01,oppi_1200000000,Mining and quarrying,3.4207,100.3
+2023-09-01,oppi_1200000000,Mining and quarrying,3.4207,102.4
+2023-10-01,oppi_1200000000,Mining and quarrying,3.4207,101.4
+2023-11-01,oppi_1200000000,Mining and quarrying,3.4207,100.4
+2023-12-01,oppi_1200000000,Mining and quarrying,3.4207,99.8
+2024-01-01,oppi_1200000000,Mining and quarrying,3.4207,100.5
+2024-02-01,oppi_1200000000,Mining and quarrying,3.4207,102.8
+2024-03-01,oppi_1200000000,Mining and quarrying,3.4207,103.7
+2024-04-01,oppi_1200000000,Mining and quarrying,3.4207,105.4
+2024-05-01,oppi_1200000000,Mining and quarrying,3.4207,105.3
+2024-06-01,oppi_1200000000,Mining and quarrying,3.4207,106.1
+2024-07-01,oppi_1200000000,Mining and quarrying,3.4207,107.6
+2024-08-01,oppi_1200000000,Mining and quarrying,3.4207,105.6
+2024-09-01,oppi_1200000000,Mining and quarrying,3.4207,103.9
+2024-10-01,oppi_1200000000,Mining and quarrying,3.4207,105.6
+2024-11-01,oppi_1200000000,Mining and quarrying,3.4207,106.0
+2024-12-01,oppi_1200000000,Mining and quarrying,3.4207,103.1
+2025-01-01,oppi_1200000000,Mining and quarrying,3.4207,104.4
+2025-02-01,oppi_1200000000,Mining and quarrying,3.4207,103.9
+2025-03-01,oppi_1200000000,Mining and quarrying,3.4207,103.6
+2025-04-01,oppi_1200000000,Mining and quarrying,3.4207,102.6
+2025-05-01,oppi_1200000000,Mining and quarrying,3.4207,102.8
+2025-06-01,oppi_1200000000,Mining and quarrying,3.4207,105.2
+2025-07-01,oppi_1200000000,Mining and quarrying,3.4207,104.7
+2025-08-01,oppi_1200000000,Mining and quarrying,3.4207,106.0
+2025-09-01,oppi_1200000000,Mining and quarrying,3.4207,106.5
+2025-10-01,oppi_1200000000,Mining and quarrying,3.4207,106.9
+2025-11-01,oppi_1200000000,Mining and quarrying,3.4207,105.9
+2025-12-01,oppi_1200000000,Mining and quarrying,3.4207,106.1
+2026-01-01,oppi_1200000000,Mining and quarrying,3.4207,106.9
+2026-02-01,oppi_1200000000,Mining and quarrying,3.4207,109.9
+2026-03-01,oppi_1200000000,Mining and quarrying,3.4207,117.0
+2026-04-01,oppi_1200000000,Mining and quarrying,3.4207,125.2
+2026-05-01,oppi_1200000000,Mining and quarrying,3.4207,124.6
+2026-06-01,oppi_1200000000,Mining and quarrying,3.4207,120.5
+2026-07-01,oppi_1200000000,Mining and quarrying,3.4207,120.1
+2026-08-01,oppi_1200000000,Mining and quarrying,3.4207,122.0
+2026-09-01,oppi_1200000000,Mining and quarrying,3.4207,129.2
+2023-04-01,oppi_1300000000,Manufactured products,69.9357,98.2
+2023-05-01,oppi_1300000000,Manufactured products,69.9357,97.8
+2023-06-01,oppi_1300000000,Manufactured products,69.9357,96.9
+2023-07-01,oppi_1300000000,Manufactured products,69.9357,96.7
+2023-08-01,oppi_1300000000,Manufactured products,69.9357,97.1
+2023-09-01,oppi_1300000000,Manufactured products,69.9357,97.5
+2023-10-01,oppi_1300000000,Manufactured products,69.9357,97.7
+2023-11-01,oppi_1300000000,Manufactured products,69.9357,97.3
+2023-12-01,oppi_1300000000,Manufactured products,69.9357,96.9
+2024-01-01,oppi_1300000000,Manufactured products,69.9357,96.7
+2024-02-01,oppi_1300000000,Manufactured products,69.9357,96.6
+2024-03-01,oppi_1300000000,Manufactured products,69.9357,96.7
+2024-04-01,oppi_1300000000,Manufactured products,69.9357,97.4
+2024-05-01,oppi_1300000000,Manufactured products,69.9357,97.7
+2024-06-01,oppi_1300000000,Manufactured products,69.9357,97.7
+2024-07-01,oppi_1300000000,Manufactured products,69.9357,97.6
+2024-08-01,oppi_1300000000,Manufactured products,69.9357,97.3
+2024-09-01,oppi_1300000000,Manufactured products,69.9357,97.3
+2024-10-01,oppi_1300000000,Manufactured products,69.9357,97.7
+2024-11-01,oppi_1300000000,Manufactured products,69.9357,97.9
+2024-12-01,oppi_1300000000,Manufactured products,69.9357,97.7
+2025-01-01,oppi_1300000000,Manufactured products,69.9357,98.1
+2025-02-01,oppi_1300000000,Manufactured products,69.9357,98.6
+2025-03-01,oppi_1300000000,Manufactured products,69.9357,98.8
+2025-04-01,oppi_1300000000,Manufactured products,69.9357,98.7
+2025-05-01,oppi_1300000000,Manufactured products,69.9357,98.4
+2025-06-01,oppi_1300000000,Manufactured products,69.9357,98.4
+2025-07-01,oppi_1300000000,Manufactured products,69.9357,98.5
+2025-08-01,oppi_1300000000,Manufactured products,69.9357,98.8
+2025-09-01,oppi_1300000000,Manufactured products,69.9357,98.6
+2025-10-01,oppi_1300000000,Manufactured products,69.9357,98.9
+2025-11-01,oppi_1300000000,Manufactured products,69.9357,98.9
+2025-12-01,oppi_1300000000,Manufactured products,69.9357,99.4
+2026-01-01,oppi_1300000000,Manufactured products,69.9357,100.1
+2026-02-01,oppi_1300000000,Manufactured products,69.9357,101.2
+2026-03-01,oppi_1300000000,Manufactured products,69.9357,103.4
+2026-04-01,oppi_1300000000,Manufactured products,69.9357,108.3
+2026-05-01,oppi_1300000000,Manufactured products,69.9357,109.7
+2026-06-01,oppi_1300000000,Manufactured products,69.9357,109.4
+2026-07-01,oppi_1300000000,Manufactured products,69.9357,108.7
+2026-08-01,oppi_1300000000,Manufactured products,69.9357,109.7
+2026-09-01,oppi_1300000000,Manufactured products,69.9357,111.0
+2023-04-01,oppi_1400000000,Electricity,4.4872,96.8
+2023-05-01,oppi_1400000000,Electricity,4.4872,94.0
+2023-06-01,oppi_1400000000,Electricity,4.4872,94.9
+2023-07-01,oppi_1400000000,Electricity,4.4872,95.6
+2023-08-01,oppi_1400000000,Electricity,4.4872,94.1
+2023-09-01,oppi_1400000000,Electricity,4.4872,93.9
+2023-10-01,oppi_1400000000,Electricity,4.4872,95.0
+2023-11-01,oppi_1400000000,Electricity,4.4872,95.2
+2023-12-01,oppi_1400000000,Electricity,4.4872,96.9
+2024-01-01,oppi_1400000000,Electricity,4.4872,98.9
+2024-02-01,oppi_1400000000,Electricity,4.4872,97.9
+2024-03-01,oppi_1400000000,Electricity,4.4872,96.2
+2024-04-01,oppi_1400000000,Electricity,4.4872,92.9
+2024-05-01,oppi_1400000000,Electricity,4.4872,92.5
+2024-06-01,oppi_1400000000,Electricity,4.4872,90.7
+2024-07-01,oppi_1400000000,Electricity,4.4872,92.9
+2024-08-01,oppi_1400000000,Electricity,4.4872,92.8
+2024-09-01,oppi_1400000000,Electricity,4.4872,93.4
+2024-10-01,oppi_1400000000,Electricity,4.4872,96.2
+2024-11-01,oppi_1400000000,Electricity,4.4872,97.3
+2024-12-01,oppi_1400000000,Electricity,4.4872,98.3
+2025-01-01,oppi_1400000000,Electricity,4.4872,96.7
+2025-02-01,oppi_1400000000,Electricity,4.4872,96.2
+2025-03-01,oppi_1400000000,Electricity,4.4872,93.0
+2025-04-01,oppi_1400000000,Electricity,4.4872,93.2
+2025-05-01,oppi_1400000000,Electricity,4.4872,92.0
+2025-06-01,oppi_1400000000,Electricity,4.4872,92.6
+2025-07-01,oppi_1400000000,Electricity,4.4872,91.4
+2025-08-01,oppi_1400000000,Electricity,4.4872,92.5
+2025-09-01,oppi_1400000000,Electricity,4.4872,92.3
+2025-10-01,oppi_1400000000,Electricity,4.4872,89.2
+2025-11-01,oppi_1400000000,Electricity,4.4872,94.1
+2025-12-01,oppi_1400000000,Electricity,4.4872,95.5
+2026-01-01,oppi_1400000000,Electricity,4.4872,94.5
+2026-02-01,oppi_1400000000,Electricity,4.4872,94.5
+2026-03-01,oppi_1400000000,Electricity,4.4872,91.1
+2026-04-01,oppi_1400000000,Electricity,4.4872,90.8
+2026-05-01,oppi_1400000000,Electricity,4.4872,91.6
+2026-06-01,oppi_1400000000,Electricity,4.4872,91.2
+2026-07-01,oppi_1400000000,Electricity,4.4872,91.8
+2026-08-01,oppi_1400000000,Electricity,4.4872,90.9
+2026-09-01,oppi_1400000000,Electricity,4.4872,92.0
+2023-04-01,wpi,All Commodities,100.0,99.0
+2023-05-01,wpi,All Commodities,100.0,98.6
+2023-06-01,wpi,All Commodities,100.0,98.3
+2023-07-01,wpi,All Commodities,100.0,99.1
+2023-08-01,wpi,All Commodities,100.0,99.5
+2023-09-01,wpi,All Commodities,100.0,99.6
+2023-10-01,wpi,All Commodities,100.0,100.1
+2023-11-01,wpi,All Commodities,100.0,100.1
+2023-12-01,wpi,All Commodities,100.0,99.4
+2024-01-01,wpi,All Commodities,100.0,99.3
+2024-02-01,wpi,All Commodities,100.0,99.3
+2024-03-01,wpi,All Commodities,100.0,99.4
+2024-04-01,wpi,All Commodities,100.0,99.9
+2024-05-01,wpi,All Commodities,100.0,100.4
+2024-06-01,wpi,All Commodities,100.0,100.7
+2024-07-01,wpi,All Commodities,100.0,101.0
+2024-08-01,wpi,All Commodities,100.0,100.8
+2024-09-01,wpi,All Commodities,100.0,101.2
+2024-10-01,wpi,All Commodities,100.0,102.1
+2024-11-01,wpi,All Commodities,100.0,102.1
+2024-12-01,wpi,All Commodities,100.0,101.6
+2025-01-01,wpi,All Commodities,100.0,101.1
+2025-02-01,wpi,All Commodities,100.0,100.9
+2025-03-01,wpi,All Commodities,100.0,100.6
+2025-04-01,wpi,All Commodities,100.0,100.5
+2025-05-01,wpi,All Commodities,100.0,100.2
+2025-06-01,wpi,All Commodities,100.0,100.3
+2025-07-01,wpi,All Commodities,100.0,100.2
+2025-08-01,wpi,All Commodities,100.0,100.8
+2025-09-01,wpi,All Commodities,100.0,101.0
+2025-10-01,wpi,All Commodities,100.0,100.9
+2025-11-01,wpi,All Commodities,100.0,101.5
+2025-12-01,wpi,All Commodities,100.0,101.9
+2026-01-01,wpi,All Commodities,100.0,102.3
+2026-02-01,wpi,All Commodities,100.0,103.1
+2026-03-01,wpi,All Commodities,100.0,104.6
+2026-04-01,wpi,All Commodities,100.0,108.9
+2026-05-01,wpi,All Commodities,100.0,110.1
+2026-06-01,wpi,All Commodities,100.0,110.3
+2026-07-01,wpi,All Commodities,100.0,110.0
+2026-08-01,wpi,All Commodities,100.0,110.8
+2026-09-01,wpi,All Commodities,100.0,112.5
+2023-04-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,102.0
+2023-05-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,102.3
+2023-06-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,103.3
+2023-07-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,107.9
+2023-08-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,108.0
+2023-09-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,106.4
+2023-10-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,107.8
+2023-11-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,108.9
+2023-12-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,107.2
+2024-01-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,107.4
+2024-02-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,107.9
+2024-03-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,108.1
+2024-04-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,108.8
+2024-05-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,110.1
+2024-06-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,111.8
+2024-07-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,113.1
+2024-08-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,113.8
+2024-09-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,115.4
+2024-10-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,117.1
+2024-11-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,117.1
+2024-12-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,115.2
+2025-01-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,112.2
+2025-02-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,109.8
+2025-03-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,108.6
+2025-04-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,108.5
+2025-05-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,108.3
+2025-06-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,108.5
+2025-07-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,108.0
+2025-08-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,109.6
+2025-09-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,110.7
+2025-10-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,110.4
+2025-11-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,112.3
+2025-12-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,112.0
+2026-01-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,112.1
+2026-02-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,111.6
+2026-03-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,111.4
+2026-04-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,112.8
+2026-05-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,114.0
+2026-06-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,116.1
+2026-07-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,117.3
+2026-08-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,118.1
+2026-09-01,wpi_1100000000,I PRIMARY ARTICLES,22.7573,120.3
+2023-04-01,wpi_1200000000,II FUEL & POWER,14.1143,94.0
+2023-05-01,wpi_1200000000,II FUEL & POWER,14.1143,91.4
+2023-06-01,wpi_1200000000,II FUEL & POWER,14.1143,90.5
+2023-07-01,wpi_1200000000,II FUEL & POWER,14.1143,90.6
+2023-08-01,wpi_1200000000,II FUEL & POWER,14.1143,91.8
+2023-09-01,wpi_1200000000,II FUEL & POWER,14.1143,94.2
+2023-10-01,wpi_1200000000,II FUEL & POWER,14.1143,95.2
+2023-11-01,wpi_1200000000,II FUEL & POWER,14.1143,94.2
+2023-12-01,wpi_1200000000,II FUEL & POWER,14.1143,93.5
+2024-01-01,wpi_1200000000,II FUEL & POWER,14.1143,93.7
+2024-02-01,wpi_1200000000,II FUEL & POWER,14.1143,93.6
+2024-03-01,wpi_1200000000,II FUEL & POWER,14.1143,93.3
+2024-04-01,wpi_1200000000,II FUEL & POWER,14.1143,92.0
+2024-05-01,wpi_1200000000,II FUEL & POWER,14.1143,91.7
+2024-06-01,wpi_1200000000,II FUEL & POWER,14.1143,89.9
+2024-07-01,wpi_1200000000,II FUEL & POWER,14.1143,91.2
+2024-08-01,wpi_1200000000,II FUEL & POWER,14.1143,90.9
+2024-09-01,wpi_1200000000,II FUEL & POWER,14.1143,90.1
+2024-10-01,wpi_1200000000,II FUEL & POWER,14.1143,90.6
+2024-11-01,wpi_1200000000,II FUEL & POWER,14.1143,91.1
+2024-12-01,wpi_1200000000,II FUEL & POWER,14.1143,91.4
+2025-01-01,wpi_1200000000,II FUEL & POWER,14.1143,91.5
+2025-02-01,wpi_1200000000,II FUEL & POWER,14.1143,92.1
+2025-03-01,wpi_1200000000,II FUEL & POWER,14.1143,90.6
+2025-04-01,wpi_1200000000,II FUEL & POWER,14.1143,88.8
+2025-05-01,wpi_1200000000,II FUEL & POWER,14.1143,86.7
+2025-06-01,wpi_1200000000,II FUEL & POWER,14.1143,87.2
+2025-07-01,wpi_1200000000,II FUEL & POWER,14.1143,87.8
+2025-08-01,wpi_1200000000,II FUEL & POWER,14.1143,88.1
+2025-09-01,wpi_1200000000,II FUEL & POWER,14.1143,87.8
+2025-10-01,wpi_1200000000,II FUEL & POWER,14.1143,87.1
+2025-11-01,wpi_1200000000,II FUEL & POWER,14.1143,88.4
+2025-12-01,wpi_1200000000,II FUEL & POWER,14.1143,89.0
+2026-01-01,wpi_1200000000,II FUEL & POWER,14.1143,88.0
+2026-02-01,wpi_1200000000,II FUEL & POWER,14.1143,89.0
+2026-03-01,wpi_1200000000,II FUEL & POWER,14.1143,93.5
+2026-04-01,wpi_1200000000,II FUEL & POWER,14.1143,111.0
+2026-05-01,wpi_1200000000,II FUEL & POWER,14.1143,113.4
+2026-06-01,wpi_1200000000,II FUEL & POWER,14.1143,110.9
+2026-07-01,wpi_1200000000,II FUEL & POWER,14.1143,105.2
+2026-08-01,wpi_1200000000,II FUEL & POWER,14.1143,108.3
+2026-09-01,wpi_1200000000,II FUEL & POWER,14.1143,110.5
+2023-04-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,99.1
+2023-05-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,98.9
+2023-06-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,98.2
+2023-07-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,97.8
+2023-08-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,98.1
+2023-09-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,98.3
+2023-10-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,98.4
+2023-11-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,98.2
+2023-12-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,97.9
+2024-01-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,97.7
+2024-02-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,97.4
+2024-03-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,97.7
+2024-04-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,98.5
+2024-05-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,98.9
+2024-06-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,99.1
+2024-07-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,98.8
+2024-08-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,98.4
+2024-09-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,98.6
+2024-10-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,99.2
+2024-11-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,99.2
+2024-12-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,98.9
+2025-01-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,99.2
+2025-02-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,99.6
+2025-03-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,99.9
+2025-04-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,100.3
+2025-05-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,100.3
+2025-06-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,100.3
+2025-07-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,100.1
+2025-08-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,100.4
+2025-09-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,100.4
+2025-10-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,100.6
+2025-11-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,100.6
+2025-12-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,101.1
+2026-01-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,102.0
+2026-02-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,103.2
+2026-03-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,104.7
+2026-04-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,107.0
+2026-05-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,108.0
+2026-06-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,108.1
+2026-07-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,108.4
+2026-08-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,108.8
+2026-09-01,wpi_1300000000,III. MANUFACTURED PRODUCTS,63.1284,110.2
+2026-03-01,ippi,Manufacturing Sector,100.0,100.9
+2026-04-01,ippi,Manufacturing Sector,100.0,104.2
+2026-05-01,ippi,Manufacturing Sector,100.0,106.5
+2026-06-01,ippi,Manufacturing Sector,100.0,105.9
+2026-07-01,ippi,Manufacturing Sector,100.0,105.5
+2026-08-01,ippi,Manufacturing Sector,100.0,104.2
+2026-09-01,ippi,Manufacturing Sector,100.0,106.1
+2026-03-01,ippi_01,(A). Manufacture of Food Products,14.8464,107.1
+2026-04-01,ippi_01,(A). Manufacture of Food Products,14.8464,108.3
+2026-05-01,ippi_01,(A). Manufacture of Food Products,14.8464,110.5
+2026-06-01,ippi_01,(A). Manufacture of Food Products,14.8464,112.1
+2026-07-01,ippi_01,(A). Manufacture of Food Products,14.8464,113.5
+2026-08-01,ippi_01,(A). Manufacture of Food Products,14.8464,114.7
+2026-09-01,ippi_01,(A). Manufacture of Food Products,14.8464,115.3
+2026-03-01,ippi_02,(B). Manufacture of Beverages,1.0304,106.0
+2026-04-01,ippi_02,(B). Manufacture of Beverages,1.0304,104.5
+2026-05-01,ippi_02,(B). Manufacture of Beverages,1.0304,105.4
+2026-06-01,ippi_02,(B). Manufacture of Beverages,1.0304,105.5
+2026-07-01,ippi_02,(B). Manufacture of Beverages,1.0304,106.5
+2026-08-01,ippi_02,(B). Manufacture of Beverages,1.0304,108.9
+2026-09-01,ippi_02,(B). Manufacture of Beverages,1.0304,108.8
+2026-03-01,ippi_03,(C). Manufacture of Tobacco Products,0.2644,128.0
+2026-04-01,ippi_03,(C). Manufacture of Tobacco Products,0.2644,124.7
+2026-05-01,ippi_03,(C). Manufacture of Tobacco Products,0.2644,122.5
+2026-06-01,ippi_03,(C). Manufacture of Tobacco Products,0.2644,123.5
+2026-07-01,ippi_03,(C). Manufacture of Tobacco Products,0.2644,125.7
+2026-08-01,ippi_03,(C). Manufacture of Tobacco Products,0.2644,125.8
+2026-09-01,ippi_03,(C). Manufacture of Tobacco Products,0.2644,125.8
+2026-03-01,ippi_04,(D). Manufacture of Textiles,5.8892,95.5
+2026-04-01,ippi_04,(D). Manufacture of Textiles,5.8892,100.8
+2026-05-01,ippi_04,(D). Manufacture of Textiles,5.8892,103.4
+2026-06-01,ippi_04,(D). Manufacture of Textiles,5.8892,103.8
+2026-07-01,ippi_04,(D). Manufacture of Textiles,5.8892,104.0
+2026-08-01,ippi_04,(D). Manufacture of Textiles,5.8892,103.8
+2026-09-01,ippi_04,(D). Manufacture of Textiles,5.8892,104.9
+2026-03-01,ippi_05,(E). Manufacture of Wearing Apparel,1.5701,105.6
+2026-04-01,ippi_05,(E). Manufacture of Wearing Apparel,1.5701,106.6
+2026-05-01,ippi_05,(E). Manufacture of Wearing Apparel,1.5701,107.4
+2026-06-01,ippi_05,(E). Manufacture of Wearing Apparel,1.5701,108.3
+2026-07-01,ippi_05,(E). Manufacture of Wearing Apparel,1.5701,107.9
+2026-08-01,ippi_05,(E). Manufacture of Wearing Apparel,1.5701,108.8
+2026-09-01,ippi_05,(E). Manufacture of Wearing Apparel,1.5701,109.4
+2026-03-01,ippi_06,(F). Manufacture of Leather and Related Products,0.7763,96.3
+2026-04-01,ippi_06,(F). Manufacture of Leather and Related Products,0.7763,96.0
+2026-05-01,ippi_06,(F). Manufacture of Leather and Related Products,0.7763,97.9
+2026-06-01,ippi_06,(F). Manufacture of Leather and Related Products,0.7763,97.1
+2026-07-01,ippi_06,(F). Manufacture of Leather and Related Products,0.7763,98.6
+2026-08-01,ippi_06,(F). Manufacture of Leather and Related Products,0.7763,97.1
+2026-09-01,ippi_06,(F). Manufacture of Leather and Related Products,0.7763,99.0
+2026-03-01,ippi_07,"(G). Manufacture of Wood and Products of Wood and Cork, Except Furniture; Manufacture of Articles of Straw and Plaiting Materials",1.8219,99.7
+2026-04-01,ippi_07,"(G). Manufacture of Wood and Products of Wood and Cork, Except Furniture; Manufacture of Articles of Straw and Plaiting Materials",1.8219,110.8
+2026-05-01,ippi_07,"(G). Manufacture of Wood and Products of Wood and Cork, Except Furniture; Manufacture of Articles of Straw and Plaiting Materials",1.8219,113.4
+2026-06-01,ippi_07,"(G). Manufacture of Wood and Products of Wood and Cork, Except Furniture; Manufacture of Articles of Straw and Plaiting Materials",1.8219,111.5
+2026-07-01,ippi_07,"(G). Manufacture of Wood and Products of Wood and Cork, Except Furniture; Manufacture of Articles of Straw and Plaiting Materials",1.8219,110.5
+2026-08-01,ippi_07,"(G). Manufacture of Wood and Products of Wood and Cork, Except Furniture; Manufacture of Articles of Straw and Plaiting Materials",1.8219,113.2
+2026-09-01,ippi_07,"(G). Manufacture of Wood and Products of Wood and Cork, Except Furniture; Manufacture of Articles of Straw and Plaiting Materials",1.8219,111.8
+2026-03-01,ippi_08,(H). Manufacture of Paper and Paper Products,0.8749,95.1
+2026-04-01,ippi_08,(H). Manufacture of Paper and Paper Products,0.8749,96.8
+2026-05-01,ippi_08,(H). Manufacture of Paper and Paper Products,0.8749,97.2
+2026-06-01,ippi_08,(H). Manufacture of Paper and Paper Products,0.8749,97.4
+2026-07-01,ippi_08,(H). Manufacture of Paper and Paper Products,0.8749,98.1
+2026-08-01,ippi_08,(H). Manufacture of Paper and Paper Products,0.8749,98.8
+2026-09-01,ippi_08,(H). Manufacture of Paper and Paper Products,0.8749,99.8
+2026-03-01,ippi_09,(I). Printing and Reproduction of Recorded Media,0.4661,96.4
+2026-04-01,ippi_09,(I). Printing and Reproduction of Recorded Media,0.4661,98.3
+2026-05-01,ippi_09,(I). Printing and Reproduction of Recorded Media,0.4661,98.9
+2026-06-01,ippi_09,(I). Printing and Reproduction of Recorded Media,0.4661,98.8
+2026-07-01,ippi_09,(I). Printing and Reproduction of Recorded Media,0.4661,99.1
+2026-08-01,ippi_09,(I). Printing and Reproduction of Recorded Media,0.4661,99.4
+2026-09-01,ippi_09,(I). Printing and Reproduction of Recorded Media,0.4661,97.6
+2026-03-01,ippi_10,(J). Manufacture of Coke and Refined Petroleum Products,12.3291,98.2
+2026-04-01,ippi_10,(J). Manufacture of Coke and Refined Petroleum Products,12.3291,105.2
+2026-05-01,ippi_10,(J). Manufacture of Coke and Refined Petroleum Products,12.3291,111.8
+2026-06-01,ippi_10,(J). Manufacture of Coke and Refined Petroleum Products,12.3291,105.1
+2026-07-01,ippi_10,(J). Manufacture of Coke and Refined Petroleum Products,12.3291,100.6
+2026-08-01,ippi_10,(J). Manufacture of Coke and Refined Petroleum Products,12.3291,86.7
+2026-09-01,ippi_10,(J). Manufacture of Coke and Refined Petroleum Products,12.3291,94.7
+2026-03-01,ippi_11,(K). Manufacture of Chemicals and Chemical Products,7.9892,100.9
+2026-04-01,ippi_11,(K). Manufacture of Chemicals and Chemical Products,7.9892,107.9
+2026-05-01,ippi_11,(K). Manufacture of Chemicals and Chemical Products,7.9892,110.5
+2026-06-01,ippi_11,(K). Manufacture of Chemicals and Chemical Products,7.9892,110.7
+2026-07-01,ippi_11,(K). Manufacture of Chemicals and Chemical Products,7.9892,109.9
+2026-08-01,ippi_11,(K). Manufacture of Chemicals and Chemical Products,7.9892,110.8
+2026-09-01,ippi_11,(K). Manufacture of Chemicals and Chemical Products,7.9892,113.4
+2026-03-01,ippi_12,(L). Manufacture of Basic Pharmaceutical Products and Pharmaceutical Preparations,2.4046,98.2
+2026-04-01,ippi_12,(L). Manufacture of Basic Pharmaceutical Products and Pharmaceutical Preparations,2.4046,103.5
+2026-05-01,ippi_12,(L). Manufacture of Basic Pharmaceutical Products and Pharmaceutical Preparations,2.4046,105.3
+2026-06-01,ippi_12,(L). Manufacture of Basic Pharmaceutical Products and Pharmaceutical Preparations,2.4046,104.7
+2026-07-01,ippi_12,(L). Manufacture of Basic Pharmaceutical Products and Pharmaceutical Preparations,2.4046,105.0
+2026-08-01,ippi_12,(L). Manufacture of Basic Pharmaceutical Products and Pharmaceutical Preparations,2.4046,105.8
+2026-09-01,ippi_12,(L). Manufacture of Basic Pharmaceutical Products and Pharmaceutical Preparations,2.4046,107.3
+2026-03-01,ippi_13,(M). Manufacture of Rubber and Plastic Products,3.4024,105.9
+2026-04-01,ippi_13,(M). Manufacture of Rubber and Plastic Products,3.4024,109.8
+2026-05-01,ippi_13,(M). Manufacture of Rubber and Plastic Products,3.4024,111.1
+2026-06-01,ippi_13,(M). Manufacture of Rubber and Plastic Products,3.4024,112.8
+2026-07-01,ippi_13,(M). Manufacture of Rubber and Plastic Products,3.4024,111.9
+2026-08-01,ippi_13,(M). Manufacture of Rubber and Plastic Products,3.4024,113.3
+2026-09-01,ippi_13,(M). Manufacture of Rubber and Plastic Products,3.4024,115.5
+2026-03-01,ippi_14,(N). Manufacture of Other Non-Metallic Mineral Products,3.2831,92.3
+2026-04-01,ippi_14,(N). Manufacture of Other Non-Metallic Mineral Products,3.2831,96.4
+2026-05-01,ippi_14,(N). Manufacture of Other Non-Metallic Mineral Products,3.2831,98.4
+2026-06-01,ippi_14,(N). Manufacture of Other Non-Metallic Mineral Products,3.2831,96.4
+2026-07-01,ippi_14,(N). Manufacture of Other Non-Metallic Mineral Products,3.2831,93.1
+2026-08-01,ippi_14,(N). Manufacture of Other Non-Metallic Mineral Products,3.2831,93.7
+2026-09-01,ippi_14,(N). Manufacture of Other Non-Metallic Mineral Products,3.2831,95.8
+2026-03-01,ippi_15,(O). Manufacture of Basic Metals,11.2523,98.3
+2026-04-01,ippi_15,(O). Manufacture of Basic Metals,11.2523,100.6
+2026-05-01,ippi_15,(O). Manufacture of Basic Metals,11.2523,102.2
+2026-06-01,ippi_15,(O). Manufacture of Basic Metals,11.2523,101.6
+2026-07-01,ippi_15,(O). Manufacture of Basic Metals,11.2523,101.6
+2026-08-01,ippi_15,(O). Manufacture of Basic Metals,11.2523,101.8
+2026-09-01,ippi_15,(O). Manufacture of Basic Metals,11.2523,103.4
+2026-03-01,ippi_16,"(P). Manufacture of Fabricated Metal Products, except Machinery and Equipment",5.5924,99.7
+2026-04-01,ippi_16,"(P). Manufacture of Fabricated Metal Products, except Machinery and Equipment",5.5924,102.2
+2026-05-01,ippi_16,"(P). Manufacture of Fabricated Metal Products, except Machinery and Equipment",5.5924,104.7
+2026-06-01,ippi_16,"(P). Manufacture of Fabricated Metal Products, except Machinery and Equipment",5.5924,105.7
+2026-07-01,ippi_16,"(P). Manufacture of Fabricated Metal Products, except Machinery and Equipment",5.5924,105.7
+2026-08-01,ippi_16,"(P). Manufacture of Fabricated Metal Products, except Machinery and Equipment",5.5924,105.5
+2026-09-01,ippi_16,"(P). Manufacture of Fabricated Metal Products, except Machinery and Equipment",5.5924,106.9
+2026-03-01,ippi_17,"(Q). Manufacture of Computer, Electronic and Optical Products",2.2296,108.0
+2026-04-01,ippi_17,"(Q). Manufacture of Computer, Electronic and Optical Products",2.2296,108.2
+2026-05-01,ippi_17,"(Q). Manufacture of Computer, Electronic and Optical Products",2.2296,107.0
+2026-06-01,ippi_17,"(Q). Manufacture of Computer, Electronic and Optical Products",2.2296,108.9
+2026-07-01,ippi_17,"(Q). Manufacture of Computer, Electronic and Optical Products",2.2296,109.8
+2026-08-01,ippi_17,"(Q). Manufacture of Computer, Electronic and Optical Products",2.2296,108.9
+2026-09-01,ippi_17,"(Q). Manufacture of Computer, Electronic and Optical Products",2.2296,108.8
+2026-03-01,ippi_18,(R). Manufacture of Electrical Equipment,3.6444,111.5
+2026-04-01,ippi_18,(R). Manufacture of Electrical Equipment,3.6444,113.4
+2026-05-01,ippi_18,(R). Manufacture of Electrical Equipment,3.6444,116.2
+2026-06-01,ippi_18,(R). Manufacture of Electrical Equipment,3.6444,117.5
+2026-07-01,ippi_18,(R). Manufacture of Electrical Equipment,3.6444,117.6
+2026-08-01,ippi_18,(R). Manufacture of Electrical Equipment,3.6444,118.7
+2026-09-01,ippi_18,(R). Manufacture of Electrical Equipment,3.6444,120.2
+2026-03-01,ippi_19,(S). Manufacture of Machinery and Equipment n.e.c.,5.0778,102.2
+2026-04-01,ippi_19,(S). Manufacture of Machinery and Equipment n.e.c.,5.0778,105.0
+2026-05-01,ippi_19,(S). Manufacture of Machinery and Equipment n.e.c.,5.0778,105.4
+2026-06-01,ippi_19,(S). Manufacture of Machinery and Equipment n.e.c.,5.0778,105.0
+2026-07-01,ippi_19,(S). Manufacture of Machinery and Equipment n.e.c.,5.0778,105.2
+2026-08-01,ippi_19,(S). Manufacture of Machinery and Equipment n.e.c.,5.0778,106.2
+2026-09-01,ippi_19,(S). Manufacture of Machinery and Equipment n.e.c.,5.0778,104.5
+2026-03-01,ippi_20,"(T). Manufacture of Motor Vehicles, Trailers and Semi-Trailers, and Manufacture of Other Transport Equipment",10.4945,101.5
+2026-04-01,ippi_20,"(T). Manufacture of Motor Vehicles, Trailers and Semi-Trailers, and Manufacture of Other Transport Equipment",10.4945,102.8
+2026-05-01,ippi_20,"(T). Manufacture of Motor Vehicles, Trailers and Semi-Trailers, and Manufacture of Other Transport Equipment",10.4945,103.7
+2026-06-01,ippi_20,"(T). Manufacture of Motor Vehicles, Trailers and Semi-Trailers, and Manufacture of Other Transport Equipment",10.4945,104.0
+2026-07-01,ippi_20,"(T). Manufacture of Motor Vehicles, Trailers and Semi-Trailers, and Manufacture of Other Transport Equipment",10.4945,104.8
+2026-08-01,ippi_20,"(T). Manufacture of Motor Vehicles, Trailers and Semi-Trailers, and Manufacture of Other Transport Equipment",10.4945,105.1
+2026-09-01,ippi_20,"(T). Manufacture of Motor Vehicles, Trailers and Semi-Trailers, and Manufacture of Other Transport Equipment",10.4945,106.3
+2026-03-01,ippi_21,(U). Manufacture of Furniture,0.9835,97.6
+2026-04-01,ippi_21,(U). Manufacture of Furniture,0.9835,101.1
+2026-05-01,ippi_21,(U). Manufacture of Furniture,0.9835,100.7
+2026-06-01,ippi_21,(U). Manufacture of Furniture,0.9835,100.5
+2026-07-01,ippi_21,(U). Manufacture of Furniture,0.9835,101.9
+2026-08-01,ippi_21,(U). Manufacture of Furniture,0.9835,103.2
+2026-09-01,ippi_21,(U). Manufacture of Furniture,0.9835,102.0
+2026-03-01,ippi_22,(V). Other Manufacturing,3.7774,88.9
+2026-04-01,ippi_22,(V). Other Manufacturing,3.7774,88.4
+2026-05-01,ippi_22,(V). Other Manufacturing,3.7774,89.5
+2026-06-01,ippi_22,(V). Other Manufacturing,3.7774,87.3
+2026-07-01,ippi_22,(V). Other Manufacturing,3.7774,87.7
+2026-08-01,ippi_22,(V). Other Manufacturing,3.7774,85.2
+2026-09-01,ippi_22,(V). Other Manufacturing,3.7774,86.2
