@@ -1,0 +1,29 @@
+name: PPAC fuel prices pull (manual)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-food]
+    paths:
+      - .github/workflows/ppac-pull.yml
+      - pipeline/tools/ppac_rsp.py
+
+permissions:
+  contents: write
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: dev-food
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pull and commit
+        run: |
+          mkdir -p raw/in/fuel_ppac && (python -I pipeline/tools/ppac_rsp.py raw/in/fuel_ppac 2>&1 | tee raw/in/fuel_ppac/log.txt) || true
+          git config user.name "asia-vitals bot" && git config user.email "actions@users.noreply.github.com"
+          git add raw/in/fuel_ppac && git commit -qm "Raw: PPAC metro fuel prices ${{ github.run_id }}" && git push -q
