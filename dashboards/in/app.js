@@ -133,21 +133,12 @@ dash.calc('rbi_style', {
     .map((r) => ({ date: r.date, series: r.series, yoy: Number(r.yoy) })),
 });
 
-dash.calc('grp_series', {
-  title: 'CPI divisions and groups, 2024 base',
-  description: 'MoSPI division (Annex I) and group (Annex II) indices, published y/y, weights and contributions to CPI y/y (Asia Decoded calculation), from Jan 2026.',
-  inputs: ['in_cpi_groups'],
-  fn: (rows) => rows.filter((r) => r.date >= '2026-01-01' && r.yoy !== '' && r.yoy != null).map((r) => ({
-    date: r.date, level: r.level, code: r.code, name: r.name, division: r.division, weight: Number(r.weight),
-    yoy: Number(r.yoy), contrib: r.contrib_yoy === '' ? null : Number(r.contrib_yoy),
-  })),
-});
 
 
 (() => {
   const J = window.JG;
   J.theme();
-  J.addSliders(() => { J.redrawCpi(); J.redrawPressures && J.redrawPressures(); });
+  J.addSliders(() => J.redrawCpi());
   dash.onData(() => J.theme());
 
   const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -448,62 +439,6 @@ dash.calc('grp_series', {
   });
 
 
-  // Price pressures page.
-  const visibleP = () => { const p = document.getElementById('pressures'); return p && !p.hidden; };
-  const MONS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-  const heatColor = (v) => d3.interpolateRdBu(0.5 - Math.max(-1, Math.min(1, v / 12)) / 2);
-  const heatInk = (v) => (Math.abs(v) > 7 ? '#fff' : '#1a1a1a');
-
-
-  // Groups by month: heatmap of published y/y, grouped by division.
-  function heatmap() {
-    const box = document.getElementById('pp-heat-chart');
-    const G = dash.data('grp_series');
-    if (failed(G.status)) { J.fail(box); return; }
-    if (G.status !== 'ok') return;
-    const dates = Array.from(new Set(G.data.map((r) => r.date))).sort();
-    const divs = Array.from(new Set(G.data.filter((r) => r.level === 'division').map((r) => r.code))).sort();
-    const lines = [];
-    divs.forEach((dc) => {
-      const dv = G.data.find((r) => r.code === dc);
-      lines.push({ code: dc, name: dv.name, head: false });
-    });
-    const val = new Map(G.data.map((r) => [`${r.code}|${r.date}`, r]));
-    const W = box.clientWidth, rowH = 28, top = 24;
-    const H = top + lines.length * rowH + 4;
-    box.replaceChildren();
-    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
-    const short = (t, n) => (t.length > n ? t.slice(0, n - 2) + '…' : t);
-    const nmax = W < 600 ? 30 : 70;
-    const ml = Math.min(W * 0.5, J.textWidth(svg, lines.map((l) => short(l.name, nmax))) * 1.05 + 16);
-    const cw = (W - ml) / dates.length;
-    dates.forEach((d, j) => svg.append('text').attr('x', ml + cw * j + cw / 2).attr('y', 14).attr('text-anchor', 'middle').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(`${MONS[+d.slice(5, 7) - 1]} ${d.slice(2, 4)}`));
-    const card = document.getElementById('pp-heat'), tip = J.tip(card);
-    lines.forEach((l, i) => {
-      const y0 = top + i * rowH;
-      if (l.head && i > 0) svg.append('line').attr('x1', 0).attr('x2', W).attr('y1', y0).attr('y2', y0).attr('stroke', 'var(--color-border-line)');
-      svg.append('text').attr('x', 2).attr('y', y0 + rowH / 2 + 4).attr('font-size', 12.5).attr('font-weight', l.head ? 700 : 400)
-        .attr('fill', 'var(--ad-ink)').text(short(l.name, nmax)).append('title').text(l.name);
-      dates.forEach((d, j) => {
-        const r = val.get(`${l.code}|${d}`); if (!r) return;
-        const g = svg.append('g');
-        g.append('rect').attr('x', ml + cw * j + 1).attr('y', y0 + 1).attr('width', cw - 2).attr('height', rowH - 2).attr('rx', 2).attr('fill', heatColor(r.yoy));
-        g.append('text').attr('x', ml + cw * j + cw / 2).attr('y', y0 + rowH / 2 + 4).attr('text-anchor', 'middle').attr('font-size', 12)
-          .attr('font-weight', l.head ? 700 : 400).attr('fill', heatInk(r.yoy)).text(J.f1(r.yoy));
-        g.on('mousemove', (ev) => {
-          const cr = card.getBoundingClientRect();
-          J.showTip(card, tip, `${r.name}, ${MONS[+d.slice(5, 7) - 1]} ${d.slice(0, 4)}`, [[null, 'y/y', `${J.f1(r.yoy)}%`], [null, 'Weight', `${r.weight.toFixed(2)}%`],
-            [null, 'Contribution', r.contrib == null ? '—' : `${r.contrib.toFixed(2)}pp`]], ev.clientX - cr.left, ev.clientY - cr.top);
-        }).on('mouseleave', () => { tip.style.display = 'none'; });
-      });
-    });
-  }
-
-
-  J.redrawPressures = () => {
-    if (!visibleP()) return;
-    heatmap();
-  };
 
   J.redrawCpi = () => {
     if (!visible()) return;
@@ -550,11 +485,10 @@ dash.calc('grp_series', {
     document.querySelectorAll('.jg-page').forEach((pg) => { pg.hidden = pg.id !== id; });
     dash.setLink(id);
     if (id === 'inflation') J.redrawCpi();
-    if (id === 'pressures') J.redrawPressures();
   };
   J.show = show;
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
   if (location.hash.slice(1) === 'methodology') show('methodology');
 
-  dash.onData(() => { tiles(); takeaway(); moversTable(); J.redrawCpi(); J.redrawPressures(); });
+  dash.onData(() => { tiles(); takeaway(); moversTable(); J.redrawCpi(); });
 })();
