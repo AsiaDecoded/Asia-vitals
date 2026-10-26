@@ -268,8 +268,11 @@ def update(from_file=None, **_):
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {state.get('latest_month')})"}
 
     weights = item_weights()
+    snaps = sorted(RAWDIR.glob("M*.json.gz")) if RAWDIR.exists() else []
     if from_file:
         rows = json.loads(gzip.decompress(open(from_file, "rb").read()))
+    elif snaps and trigger and trigger == state.get("headline_fingerprint"):
+        rows = json.loads(gzip.decompress(snaps[-1].read_bytes()))  # only the calculation changed: no fetch
     else:
         rows = _fetch_items()
 
