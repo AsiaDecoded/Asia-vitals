@@ -135,6 +135,14 @@ dash.calc('rbi_style', {
 
 
 
+dash.calc('div_heat', {
+  title: 'CPI inflation by division, y/y',
+  description: 'MoSPI published y/y for the 12 CPI divisions (all-India, combined, 2024 base), from Jan 2026.',
+  inputs: ['in_cpi_groups'],
+  fn: (rows) => rows.filter((r) => r.level === 'division' && r.date >= '2026-01-01' && r.yoy !== '' && r.yoy != null)
+    .map((r) => ({ date: r.date, code: r.code, name: r.name, yoy: Number(r.yoy) })),
+});
+
 (() => {
   const J = window.JG;
   J.theme();
@@ -440,6 +448,39 @@ dash.calc('rbi_style', {
 
 
 
+  // Division heat table: published y/y by month, colour-coded (red higher, blue below zero).
+  function divHeat() {
+    const tbl = document.getElementById('div-heat-table');
+    const D = dash.data('div_heat');
+    if (failed(D.status)) { tbl.replaceChildren(); return; }
+    if (D.status !== 'ok') return;
+    const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const dates = Array.from(new Set(D.data.map((r) => r.date))).sort();
+    const codes = Array.from(new Set(D.data.map((r) => r.code))).sort();
+    const val = new Map(D.data.map((r) => [`${r.code}|${r.date}`, r]));
+    const color = (v) => d3.interpolateRdBu(0.5 - Math.max(-1, Math.min(1, v / 12)) / 2);
+    tbl.replaceChildren();
+    const head = tbl.createTHead().insertRow();
+    ['Code', 'Division'].concat(dates.map((d) => `${MON[+d.slice(5, 7) - 1]} ${d.slice(2, 4)}`)).forEach((t) => {
+      const th = document.createElement('th'); th.textContent = t; head.appendChild(th);
+    });
+    const tb = tbl.createTBody();
+    codes.forEach((c) => {
+      const tr = tb.insertRow();
+      const name = (D.data.find((r) => r.code === c) || {}).name || '';
+      tr.insertCell().textContent = c;
+      tr.insertCell().textContent = name;
+      dates.forEach((d) => {
+        const td = tr.insertCell(); const r = val.get(`${c}|${d}`);
+        if (!r) return;
+        td.textContent = J.f1(r.yoy) === '-0.0' ? '0.0' : J.f1(r.yoy);
+        td.className = 'heat';
+        td.style.background = color(r.yoy);
+        td.style.color = Math.abs(r.yoy) > 7 ? '#fff' : '#1a1a1a';
+      });
+    });
+  }
+
   J.redrawCpi = () => {
     if (!visible()) return;
     lines('cpi-sectors-chart', 'cpi-sectors', 'cpi-sectors-legend', 'yoy', SECTORS, (v) => d3.format('.0f')(v), 280, true);
@@ -490,5 +531,5 @@ dash.calc('rbi_style', {
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
   if (location.hash.slice(1) === 'methodology') show('methodology');
 
-  dash.onData(() => { tiles(); takeaway(); moversTable(); J.redrawCpi(); });
+  dash.onData(() => { tiles(); takeaway(); moversTable(); divHeat(); J.redrawCpi(); });
 })();

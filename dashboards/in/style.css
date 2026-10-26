@@ -110,5 +110,11 @@
 #pp-moves-table { font-size: 0.8125rem; }
 #pp-moves-table th, #pp-moves-table td { padding: 1px 6px; line-height: 1.3; }
 #pp-moves-table th:not(:first-child), #pp-moves-table td:not(:first-child) { text-align: center; }
+#div-heat-table { font-size: 0.8125rem; }
+#div-heat-table th, #div-heat-table td { padding: 3px 6px; }
+#div-heat-table th:nth-child(n+3), #div-heat-table td:nth-child(n+3) { text-align: center; }
+#div-heat-table td.heat { font-variant-numeric: tabular-nums; border: 2px solid var(--color-bg); }
+#div-heat-table td:first-child { color: var(--color-fg-muted); }
+#div-heat-table th:nth-child(2), #div-heat-table td:nth-child(2) { text-align: left; }
 </style>
 
