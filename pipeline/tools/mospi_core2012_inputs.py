@@ -2,7 +2,7 @@
 
   python -I pipeline/tools/mospi_core2012_inputs.py raw/in/cpi_core/core2012_inputs.json
 
-General index, Food and beverages and Fuel and light groups (getCPIIndex, base 2012, sector Combined) and the
+General index, Food and beverages, Fuel and light and Consumer Food Price (CFPI) groups (getCPIIndex, base 2012, sector Combined) and the
 items Petrol for Vehicle, Diesel for Vehicle, Gold and Silver (getItemIndex, base 2012). The 2012 base ended in
 Dec 2025, so this file is built once.
 """
@@ -13,7 +13,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from core import mospi  # noqa: E402
 
-GROUPS = {"General-Overall": "general", "Food and Beverages-Overall": "food_bev", "Fuel and Light-Overall": "fuel_light"}
+GROUPS = {"General-Overall": "general", "Food and Beverages-Overall": "food_bev", "Fuel and Light-Overall": "fuel_light",
+          "Consumer Food Price-Overall": "food"}
 ITEMS = {"Petrol for Vehicle": "petrol", "Diesel for Vehicle": "diesel", "Gold": "gold", "Silver": "silver"}
 
 
