@@ -1,0 +1,59 @@
+name: MoSPI full pull (manual)
+
+# One-off: every CPI group/subgroup/item index on the 2024 base (all-India rural, urban, combined)
+# and every group/subgroup index on the 2012 and 2010 bases, committed under raw/in/cpi_full/.
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-food]
+    paths:
+      - .github/workflows/mospi-pull.yml
+
+permissions:
+  contents: write
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        part: [old, rural, urban, combined]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pull
+        run: |
+          mkdir -p out
+          if [ "${{ matrix.part }}" = old ]; then
+            python -I pipeline/tools/mospi_core2012_inputs.py out/core2012_inputs.json
+          else
+            python -I pipeline/tools/mospi_cpi_detail.py out ${{ matrix.part }}
+          fi
+          ls -la out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: part-${{ matrix.part }}
+          path: out/
+
+  commit:
+    needs: pull
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: dev-food
+      - uses: actions/download-artifact@v4
+        with:
+          path: parts
+      - name: Commit to dev-food
+        run: |
+          mkdir -p raw/in/cpi_full
+          find parts -type f -exec cp {} raw/in/cpi_full/ \;
+          ls -la raw/in/cpi_full
+          git config user.name "asia-vitals bot" && git config user.email "actions@users.noreply.github.com"
+          git add raw/in/cpi_full && git commit -qm "Raw: MoSPI full pull ${{ github.run_id }}" && git push -q
