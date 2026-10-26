@@ -5,6 +5,7 @@
 
   <nav class="jg-tabs" role="tablist" aria-label="Sections">
     <button role="tab" data-tab="inflation" aria-selected="true">Inflation</button>
+    <button role="tab" data-tab="pressures" aria-selected="false">Price pressures</button>
     <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
   </nav>
 
@@ -139,6 +140,54 @@
       </ol>
     </section>
 
+  </section>
+
+  <section class="jg-page" id="pressures" role="tabpanel" hidden>
+    <div class="jg-pagehead"><p class="jg-take">Where inflation is coming from and where it is building, across MoSPI&rsquo;s 12 CPI divisions and 43 groups (all-India, combined, 2024 base), from January 2026.</p></div>
+
+    <section class="jg-card" id="pp-contrib" data-periods="none">
+      <h2>India CPI inflation by division</h2>
+      <div class="ad-top"><span class="ad-units">ppt</span><div class="jg-legend" id="pp-contrib-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="pp-contrib-chart" data-source="in_cpi_groups"></div>
+      <div class="ad-foot"><span>Source: MoSPI, Asia Decoded calculations</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="pp-dumb">
+        <h2>India CPI inflation by division, then and now</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="pp-dumb-legend"></div><span class="ad-units r"></span></div>
+        <div class="pp-free" id="pp-dumb-chart" data-source="in_cpi_groups"></div>
+        <div class="ad-foot"><span>Source: MoSPI</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="pp-moves">
+        <h2>India CPI groups gaining and losing momentum</h2>
+        <div class="ad-top"><span class="ad-units" id="pp-moves-units">% and pp</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-tablewrap">
+          <table id="pp-moves-table" data-source="in_cpi_groups">
+            <thead><tr><th>Group</th><th>Weight</th><th>y/y</th><th>Change</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="ad-foot"><span>Source: MoSPI, Asia Decoded calculations</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card" id="pp-heat">
+      <h2>India CPI inflation by group</h2>
+      <div class="ad-top"><span class="ad-units">% y/y</span><span></span><span class="ad-units r"></span></div>
+      <div class="pp-free" id="pp-heat-chart" data-source="in_cpi_groups"></div>
+      <div class="ad-foot"><span>Source: MoSPI</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <section class="jg-card ad-notes" id="pp-notes">
+      <h2>Chart notes</h2>
+      <ol>
+        <li><b>India CPI inflation by division:</b> contributions, in percentage points, of MoSPI&rsquo;s CPI divisions to combined CPI y/y, with the seven smallest divisions together as other. Each contribution is the division&rsquo;s weight (MoSPI&rsquo;s published item weights, summed) times the change in its published index over 12 months, divided by the headline index a year earlier, and they add up to CPI y/y (checked every month). Personal care and miscellaneous includes gold and silver jewellery. Asia Decoded calculations.</li>
+        <li><b>India CPI inflation by division, then and now:</b> MoSPI&rsquo;s published y/y for each of the 12 divisions in January 2026 (hollow circle) and the latest month (filled circle, red where higher, blue where lower), sorted by the latest rate.</li>
+        <li><b>India CPI groups gaining and losing momentum:</b> the five groups whose published y/y rose most, and the five whose y/y fell most, over the latest three months, among the 43 groups with a weight of at least 0.1% of the CPI, with their weight in the CPI (%) and latest y/y. Asia Decoded calculations from MoSPI&rsquo;s published rates.</li>
+        <li><b>India CPI inflation by group:</b> MoSPI&rsquo;s published y/y for each division (bold) and, where a division has more than one, its groups (Annex I and II of MoSPI&rsquo;s monthly release), from January 2026, the first month with a 2024-base year earlier. Red is higher inflation, blue is deflation, the colour scale is capped at &plusmn;12%. Hover for the weight and the contribution to CPI y/y.</li>
+      </ol>
+    </section>
   </section>
 
   <section class="jg-page" id="methodology" role="tabpanel" hidden>
