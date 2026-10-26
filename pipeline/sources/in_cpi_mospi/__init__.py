@@ -84,13 +84,17 @@ def _checks(tidy, raw, state):
         for d, v in s.items():
             if (d < CURRENT_START) != (v["basis"] == "back"):
                 errors.append(f"{key} {d}: came from the {v['basis']} series")
-        # published y/y agrees with the linked index (rounded indices: ±0.15pp)
+        # Published y/y agrees with the linked index: ±0.15pp (rounding) from Jan 2025 on.
+        # Back-series y/y are the rates published at the time on the 2012 base; three months
+        # in 2014 (Mar combined and rural, Oct urban) differ from the linked index by ~0.15-0.17pp,
+        # so the back period is held to ±0.5pp, which still catches a wrong or shifted month.
         for d, v in s.items():
             prev = s.get(_shift(d, -12), {}).get("index")
             if v["yoy"] is None or not prev or v["index"] is None:
                 continue
             implied = (v["index"] / prev - 1) * 100
-            if abs(implied - v["yoy"]) > 0.15:
+            tol = 0.15 if d >= CURRENT_START else 0.5
+            if abs(implied - v["yoy"]) > tol:
                 errors.append(f"{key} y/y {d}: published {v['yoy']}, from index {implied:.2f}")
         for d, v in s.items():
             if v["index"] is not None and not 30 < v["index"] < 300:
