@@ -451,10 +451,10 @@ dash.calc('rbi_style', {
       { key: 'core2_2024', name: 'Core 2, 2024 base', color: 'var(--ad-c3)', dash: true },
     ], (v) => d3.format('.0f')(v), 280, true, null, 'core_bases', true);
     lines('rbi-style-chart', 'rbi-style', 'rbi-style-legend', 'yoy', [
-      { key: 'headline', name: 'CPI', color: 'var(--ad-c1)' },
+      { key: 'headline', name: 'CPI', color: 'var(--ad-c2)' },
       { key: 'food_bev', name: 'Food and beverages', color: 'var(--ad-c6)' },
-      { key: 'fuel', name: 'Fuel', color: 'var(--ad-c2)' },
-      { key: 'core1', name: 'CPI excluding food and fuel', color: 'var(--ad-c4)' },
+      { key: 'fuel', name: 'Fuel', color: 'var(--ad-c1)' },
+      { key: 'core1', name: 'Core (CPI ex-food and fuel)', color: 'var(--ad-c4)' },
     ], (v) => d3.format('.0f')(v), 300, true, { date: '2026-01-01', label: '', mid: true }, 'rbi_style');
     contribChart('cpi-contrib-linked', 'in_cpi_contrib_linked', false);
     lines('cpi-fe-chart', 'cpi-fe', 'cpi-fe-legend', 'yoy', [
