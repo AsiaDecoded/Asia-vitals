@@ -1,6 +1,6 @@
 # Asia Vitals
 
-Data pipeline for Asia Decoded's macro dashboards: GDP, inflation and trade for 12 Asian economies. Currently: Japan GDP, CPI, CPI contributions and PPI; India CPI (headline).
+Data pipeline for Asia Decoded's macro dashboards: GDP, inflation and trade for 12 Asian economies. Currently: Japan GDP, CPI, CPI contributions and PPI; India CPI (headline, and a long series from the IMF).
 
 ## How it updates
 
@@ -17,6 +17,7 @@ Data pipeline for Asia Decoded's macro dashboards: GDP, inflation and trade for 
 | Japan CPI contributions, Statistics Bureau | `sources/jp_cpi_contrib_estat` | Monthly, Jul 2016–; national contributions to y/y (services, goods, fresh food, energy) from Table 5 of each monthly report (Excel files found through the e-Stat file catalogue), as published on the base then in use | A new month's Table 5 in the catalogue (C2026-09 → C2026-10) |
 | Japan PPI, Bank of Japan | `sources/jp_ppi_boj` | Monthly, 1960–; producer, export and import prices (CGPI, 2020 base); BoJ API database PR01, no key | Any change in the data; new month gives a new code (M2026-09 → M2026-10) |
 | India CPI, MoSPI | `sources/in_cpi_mospi` | Monthly, Jan 2013–; general index, all-India, rural/urban/combined; 2024 base (Jan 2025–) with MoSPI's linked back series (2013–2024); y/y as published (2012-base rates to Dec 2025, 2024-base from Jan 2026); nothing calculated; MoSPI API, no key | Any change in the data; new month gives a new code (M2026-09 → M2026-10) |
+| India CPI, long series, IMF | `sources/in_cpi_imf` | Monthly Jan 1957– and annual 1957–; all items, 2024 = 100, as published in the IMF Consumer Price Index dataset (formerly IFS; IMF.STA:CPI IND.CPI._T.IX.M/A); IMF joins India's indices at overlaps; no key | Any change in the data; new month gives a new code |
 
 The e-Stat API needs the repository secret `ESTAT_APP_ID`. The Excel readers (openpyxl, xlrd) are installed by the workflow.
 
@@ -43,6 +44,7 @@ The e-Stat API needs the repository secret `ESTAT_APP_ID`. The Excel readers (op
 - **CPI:** required series present for the latest national and Tokyo months; months never go backwards; published m/m and y/y match the index where both months are on the 2025 base (earlier rates are the officially published ones from older bases); index levels plausible.
 - **PPI:** PPI, export and import (yen) index and y/y present for the latest month; months never go backwards; published y/y matches the index where both months are on the 2020 base; index levels plausible. A revision without a new month is noted as a warning.
 - **India CPI:** every month from Jan 2013 to the latest present for all three sectors; back series up to Dec 2024 and the 2024 base from Jan 2025; published y/y within 0.15pp of the index from 2026 (0.5pp for 2014–2024, where the rates are the 2012-base ones published at the time); 2012-base y/y present for every 2025 month; index levels plausible.
+- **India CPI, IMF:** one monthly and one annual series, reference period 2024 = 100; no gaps from the first month or year to the latest; months never go backwards; 2024 annual within 1 of 100; warning if any month from Jan 2025 differs from MoSPI's combined CPI by more than 0.02.
 - **CPI contributions:** all items, fresh food, energy, goods and services found in every month's file; goods + services within 0.1pp of all items; all items within ±15.
 
 ## Adding a source
