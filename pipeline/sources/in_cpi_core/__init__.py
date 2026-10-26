@@ -73,6 +73,51 @@ def _old_core():
     return out
 
 
+CONTRIB = [("food", "Food and beverages"), ("fuel", "Fuel"), ("core", "CPI excluding food and fuel")]
+
+
+def _contrib_old():
+    """2012 base: {month: {food, fuel, core, cpi}} contributions to y/y (pp), Jan 2015-Dec 2025."""
+    src = json.loads(OLD_INPUTS.read_text())["series"]
+    w = OLD_W
+    out = {}
+    for m, h in src["general"].items():
+        p = f"{int(m[:4]) - 1}{m[4:]}"
+        hp = src["general"].get(p)
+        need = ["food_bev", "fuel_light", "petrol", "diesel"]
+        if not hp or any(src[k].get(m) is None or src[k].get(p) is None for k in need):
+            continue
+        food = w["food_bev"] * (src["food_bev"][m] - src["food_bev"][p]) / hp
+        fuel = sum(w[k] * (src[k][m] - src[k][p]) for k in ("fuel_light", "petrol", "diesel")) / hp
+        cpi = (h / hp - 1) * 100
+        out[f"{m}-01"] = {"food": food, "fuel": fuel, "core": cpi - food - fuel, "cpi": cpi, "base": "2012"}
+    return out
+
+
+def _contrib_new(rows, weights):
+    """2024 base: {month: {food, fuel, core, cpi}} contributions to y/y (pp), from Jan 2026."""
+    idx = defaultdict(dict)
+    for r in rows:
+        if r.get("state") != "All India" or r.get("sector") != "Combined" or r.get("index") in (None, ""):
+            continue
+        code = r.get("code") or ("general" if r.get("division") == "CPI (General)" and not r.get("group") else None)
+        if code in ("general", "01", "04.5", "07.2.2"):
+            idx[code][_month(r)] = float(r["index"])
+    wt = lambda prefix: sum(w for k, (_, w) in weights.items() if k.startswith(prefix))
+    wf, w045, w0722 = wt("01."), wt("04.5."), wt("07.2.2.")
+    out = {}
+    for m, h in idx["general"].items():
+        p = _prev_year(m)
+        hp = idx["general"].get(p)
+        if not hp or any(p not in idx[c] or m not in idx[c] for c in ("01", "04.5", "07.2.2")):
+            continue
+        food = wf * (idx["01"][m] - idx["01"][p]) / hp
+        fuel = (w045 * (idx["04.5"][m] - idx["04.5"][p]) + w0722 * (idx["07.2.2"][m] - idx["07.2.2"][p])) / hp
+        cpi = (h / hp - 1) * 100
+        out[m] = {"food": food, "fuel": fuel, "core": cpi - food - fuel, "cpi": cpi, "base": "2024"}
+    return out
+
+
 def _gm(vals):
     import math
     return math.exp(sum(math.log(v) for v in vals) / len(vals))  # gold/diamond/platinum jewellery; silver jewellery
@@ -227,6 +272,22 @@ def update(from_file=None, **_):
         w.writerow(cols)
         for r in csv_rows:
             w.writerow(["" if r[c] is None else r[c] for c in cols])
+
+    # Contributions to CPI y/y: within the 2012 base to Dec 2025, within the 2024 base from Jan 2026.
+    contrib = _contrib_old()
+    contrib = {m: v for m, v in contrib.items() if m < "2026-01-01"}
+    contrib.update(_contrib_new(rows, weights))
+    for m, v in contrib.items():
+        # The published component indices, at their weights, must account for the headline (residual = core):
+        # a large or implausible core contribution means a broken input.
+        if not -5 < v["core"] < 10:
+            raise CheckFailed([f"{m}: core contribution {v['core']:.2f}pp out of range"])
+    with open(OUT / "in_cpi_contrib.csv", "w", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["date", "cpi_yoy", "food", "fuel", "core", "base"])
+        for m in sorted(contrib):
+            v = contrib[m]
+            w.writerow([m, round(v["cpi"], 2), round(v["food"], 3), round(v["fuel"], 3), round(v["core"], 3), v["base"]])
 
     def long_rows():
         for r in csv_rows:
