@@ -100,6 +100,9 @@
 .ad-slider input[type=range]::-moz-range-thumb { pointer-events: auto; width: 12px; height: 12px; border-radius: 50%; background: var(--color-bg); border: 2px solid var(--ad-c1); cursor: ew-resize; }
 .ad-slider input[type=range]:focus-visible::-webkit-slider-thumb { outline: 2px solid var(--ad-c1); outline-offset: 2px; }
 .ad-slider-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-align: right; margin: 0 8px 4px; font-variant-numeric: tabular-nums; }
+.ad-defs { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.45; margin-top: 4px; }
+.ad-defs p { margin: 2px 0 0; }
+.ad-defs b { color: var(--ad-ink, var(--color-fg)); font-weight: 600; }
 </style>
 
 
@@ -153,6 +156,7 @@
         <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="core-bases-legend"></div><span class="ad-units r"></span></div>
         <div class="jg-chart" id="core-bases-chart" data-source="in_cpi_core_bases"></div>
         <div class="ad-foot"><span>Source: MoSPI, Asia Decoded calculations</span><span class="ad-brand">Asia Decoded</span></div>
+        <div class="ad-defs"><p><b>Core 1</b> (CPI excluding food and fuel): 2024 base, CPI excluding food and beverages, electricity, gas and other fuels, and petrol, diesel and CNG for vehicles. 2012 base, CPI excluding food and beverages, fuel and light, and petrol and diesel for vehicles.</p><p><b>Core 2</b> (CPI excluding food, fuel and precious metals): core 1 also excluding gold and silver (jewellery on the 2024 base, gold and silver on the 2012 base).</p></div>
       </section>
     </div>
 
