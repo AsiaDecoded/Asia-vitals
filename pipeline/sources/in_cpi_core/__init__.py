@@ -55,7 +55,7 @@ OLD_EXCL = {"core1": ["food_bev", "fuel_light", "petrol", "diesel"],
 RBI_2025 = {"core1": [3.9, 4.3, 4.3, 4.4, 4.3, 4.6, 4.2, 4.3, 4.5, 4.5, 4.4, 4.8],
             "core2": [3.2, 3.4, 3.3, 3.5, 3.4, 3.5, 3.2, 3.1, 3.1, 2.6, 2.4, 2.4]}
 LINK_YEAR = "2025"
-CALC_VERSION = 12  # bump when the calculation changes, so the next run recomputes without new data
+CALC_VERSION = 13  # bump when the calculation changes, so the next run recomputes without new data
 
 
 GROUPS_2012 = ROOT / "raw" / "in" / "cpi_full"
@@ -594,6 +594,23 @@ def update(from_file=None, **_):
             yoy = (lk[m] / lk[p] - 1) * 100 if p in lk else None
             fe_rows.append([m, key, label, round(lk[m], 3), "" if yoy is None else round(yoy, 2),
                             "2024 base" if m >= f"{LINK_YEAR}-01-01" else "2012 base, linked"])
+    # RBI-style series (MPR Chart IV.1): y/y within the 2012 base to Dec 2025 and within the 2024 base from
+    # Jan 2026, joined, not spliced: headline, food and beverages, fuel, and CPI excluding food and fuel.
+    rbi_rows = []
+    old_h = {f"{m}-01": v for m, v in src12["general"].items()}
+    within = {"headline": (old_h, gen), "food_bev": (old_fe["food_bev"], new_fe["food_bev"]),
+              "fuel": (old_fe["energy"], new_fe["energy"]), "core1": (old["core1"], out["core1"]["new"])}
+    for key, (o, n_) in within.items():
+        for base, idx, keep in (("2012", o, lambda m: m < "2026-01-01"), ("2024", n_, lambda m: m >= "2026-01-01")):
+            for m in sorted(idx):
+                p_ = _prev_year(m)
+                if keep(m) and p_ in idx:
+                    rbi_rows.append([m, key, base, round((idx[m] / idx[p_] - 1) * 100, 2)])
+    with open(OUT / "in_cpi_rbi_style.csv", "w", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["date", "series", "base", "yoy"])
+        w.writerows(sorted(rbi_rows))
+
     with open(OUT / "in_cpi_food_energy.csv", "w", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
         w.writerow(["date", "series", "label", "index", "yoy", "basis"])
