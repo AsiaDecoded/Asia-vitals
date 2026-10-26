@@ -63,3 +63,8 @@ python -I pipeline/run.py jp_gdp_esri --code qe262_2 --from-dir raw/jp/gdp_esri/
 ```
 
 Or from the Actions tab: "Update data" → Run workflow (optionally push to a test branch).
+
+### Raw MoSPI CPI indices (fixed, for analysis)
+- `raw/in/cpi_full/cpi2024_{rural,urban,combined}.json.gz`: every 2024-base all-India series (general index, 12 divisions, 43 groups, 92 classes, 162 subclasses, 358 items), Jan 2025–Sep 2026, as returned by getCPIData (`tools/mospi_cpi_detail.py`). Divisions and groups match the press release Annexes I and II.
+- `raw/in/cpi_full/groups2012_<year>.json.gz` (2013–2025) and `groups2010_<year>.json.gz` (2011–2014): every all-India group and subgroup index on the 2012 and 2010 bases, rural, urban and combined (`tools/mospi_old_groups.py`). The 2012-base current series starts in Jan 2013.
+- `raw/in/cpi_old/items2012.json.gz` (299 items, 2014–2025) and `items2010.json.gz` (317 items, 2011–2014): all-India item indices (`tools/mospi_items_old.py`). MoSPI published no 2012-base item indices for Mar–May 2020.
