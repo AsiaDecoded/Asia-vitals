@@ -16,19 +16,19 @@
   "core2": 0.53691
  },
  "link_year": "2025",
- "processed_at": "2026-10-26T07:06:10Z",
- "rows": 300,
+ "processed_at": "2026-10-26T07:16:33Z",
+ "rows": 306,
  "warnings": [
   "recent months revised (no new month)"
  ],
- "fingerprint": "9f52eb2cf1e7efb5",
+ "fingerprint": "254f2cdb16928c96",
  "headline_fingerprint": "015a114d18e34c0c",
- "long_rows": 570,
- "calc_version": 5,
+ "long_rows": 588,
+ "calc_version": 6,
  "history": [
   {
    "code": "M2026-09",
-   "processed_at": "2026-10-26T07:06:10Z"
+   "processed_at": "2026-10-26T07:16:33Z"
   }
  ]
 }

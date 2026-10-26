@@ -55,12 +55,54 @@ OLD_EXCL = {"core1": ["food_bev", "fuel_light", "petrol", "diesel"],
 RBI_2025 = {"core1": [3.9, 4.3, 4.3, 4.4, 4.3, 4.6, 4.2, 4.3, 4.5, 4.5, 4.4, 4.8],
             "core2": [3.2, 3.4, 3.3, 3.5, 3.4, 3.5, 3.2, 3.1, 3.1, 2.6, 2.4, 2.4]}
 LINK_YEAR = "2025"
-CALC_VERSION = 5  # bump when the calculation changes, so the next run recomputes without new data
+CALC_VERSION = 6  # bump when the calculation changes, so the next run recomputes without new data
+
+
+FUEL_PRICES = ROOT / "raw" / "in" / "fuel_ppac" / "ppac_metro_daily.json"
+GOLD_PRICES = ROOT / "raw" / "in" / "gold_rbi" / "gold_silver_mumbai_2019_2021.json"
+GAP = ["2020-03", "2020-04", "2020-05"]  # MoSPI published no 2012-base item indices for these months
+
+
+def _price_months():
+    """Monthly average prices: petrol and diesel (PPAC, average of the four metros over calendar days,
+    carrying each revision forward) and gold and silver (RBI, Mumbai monthly averages)."""
+    import datetime as dt
+    daily = json.loads(FUEL_PRICES.read_text())["daily"]
+    days = sorted(daily)
+    acc = defaultdict(lambda: defaultdict(list))
+    d, end, cur = dt.date.fromisoformat(days[0]), dt.date.fromisoformat(days[-1]), None
+    while d <= end:
+        cur = daily.get(d.isoformat(), cur)
+        for f in ("petrol", "diesel"):
+            acc[f][d.strftime("%Y-%m")].append(sum(cur[f]) / len(cur[f]))
+        d += dt.timedelta(days=1)
+    out = {f: {m: sum(v) / len(v) for m, v in acc[f].items()} for f in acc}
+    gold = json.loads(GOLD_PRICES.read_text())["data"]
+    for f in ("gold", "silver"):
+        out[f] = {m: v[f] for m, v in gold.items()}
+    return out
+
+
+def _old_inputs():
+    """2012-base inputs, with the Mar-May 2020 item indices for petrol, diesel, gold and silver imputed:
+    the Feb 2020 index moved with the item's market price, then benchmarked to MoSPI's Jun 2020 index
+    (the gap between the index's and the price's Feb-Jun change spread evenly, geometrically, over the
+    four months)."""
+    src = json.loads(OLD_INPUTS.read_text())["series"]
+    prices = _price_months()
+    for k in ("petrol", "diesel", "gold", "silver"):
+        s, pr = src[k], prices[k]
+        if any(m in s for m in GAP) or "2020-02" not in s or "2020-06" not in s:
+            continue
+        r = (s["2020-06"] / s["2020-02"]) / (pr["2020-06"] / pr["2020-02"])
+        for i, m in enumerate(GAP, start=1):
+            s[m] = s["2020-02"] * pr[m] / pr["2020-02"] * r ** (i / 4)
+    return src
 
 
 def _old_core():
     """{measure: {YYYY-MM-01: 2012-base core index}}, residual from the published general index."""
-    src = json.loads(OLD_INPUTS.read_text())["series"]
+    src = _old_inputs()
     out = {}
     for key, excl in OLD_EXCL.items():
         wk = 100 - sum(OLD_W[e] for e in excl)
@@ -79,7 +121,7 @@ CONTRIB = [("food", "Food and beverages"), ("fuel", "Fuel"), ("core", "CPI exclu
 
 def _contrib_old():
     """2012 base: {month: {food, fuel, core, cpi}} contributions to y/y (pp), Jan 2015-Dec 2025."""
-    src = json.loads(OLD_INPUTS.read_text())["series"]
+    src = _old_inputs()
     w = OLD_W
     out = {}
     for m, h in src["general"].items():
@@ -162,7 +204,7 @@ def _contrib_linked(rows, weights, headline):
     a year earlier, plus the same on the new basket from the 2025 average to the month, scaled by the old
     headline's change to the link (the decomposition used for annually chain-linked HICP contributions).
     The total is the spliced headline y/y; CPI excluding food and fuel is the residual."""
-    src = json.loads(OLD_INPUTS.read_text())["series"]
+    src = _old_inputs()
     w = OLD_W
     old = {k: {f"{m}-01": v for m, v in src[k].items()} for k in ("general", "food_bev", "fuel_light", "petrol", "diesel")}
     new = defaultdict(dict)
@@ -333,7 +375,9 @@ def update(from_file=None, **_):
         linked = {m: v * f for m, v in old[key].items() if m < f"{LINK_YEAR}-01-01"}
         linked.update(new)
         out[key]["index"] = linked
-        out[key]["basis"] = {m: ("2012 base, linked" if m < f"{LINK_YEAR}-01-01" else "2024 base") for m in linked}
+        out[key]["basis"] = {m: ("2024 base" if m >= f"{LINK_YEAR}-01-01" else
+                                 "2012 base, linked; items imputed from prices" if m[:7] in GAP else "2012 base, linked")
+                             for m in linked}
         out[key]["yoy"] = {m: (linked[m] / linked[_prev_year(m)] - 1) * 100 for m in linked if _prev_year(m) in linked}
         # 2012-base y/y for 2025 against the RBI's published figures (one decimal: within 0.06pp).
         for i, ref in enumerate(RBI_2025[key]):
