@@ -130,7 +130,7 @@ dash.calc('ppi_cpi', {
   const f1 = (v) => (v == null ? '—' : J.f1(v));
   const pct = (v) => (v == null ? '—' : J.f1(v) + '%');
   const SECTORS = [
-    { key: 'combined', name: 'Combined', color: 'var(--ad-c1)' },
+    { key: 'combined', name: 'CPI', color: 'var(--ad-c1)' },
     { key: 'rural', name: 'Rural', color: 'var(--ad-c3)' },
     { key: 'urban', name: 'Urban', color: 'var(--ad-c4)' },
   ];
