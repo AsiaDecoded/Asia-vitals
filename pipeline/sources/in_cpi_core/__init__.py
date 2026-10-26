@@ -14,6 +14,16 @@ state x sector shares). y/y is the 12-month change in that index, from Jan 2026 
 month with a 2024-base year earlier). Checked against the RBI's published figures for
 Jun-Aug 2026 (core1 3.9, 3.9, 4.2; core2 2.5, 2.7, 2.9): all match to one decimal.
 
+Back to Jan 2014 (y/y from Jan 2015): each measure is also calculated on the 2012 base, the way the
+RBI does (MPR Apr 2026, Table IV.1: "derived as residual from headline CPI"), from MoSPI's published
+2012-base general index, Food and beverages and Fuel and light groups, and Petrol for vehicle, Diesel
+for vehicle, Gold and Silver items, with MoSPI's 2012-base weights (fixed inputs in
+raw/in/cpi_core/core2012_inputs.json). The 2012-base index is linked to the 2024-base index by the
+ratio of their geometric-mean averages over the 2025 overlap year (the method MoSPI uses for its own
+headline back series), and y/y is calculated from the linked index. 2012-base y/y for 2025 is checked
+against the RBI's published Table IV.1. MoSPI published no 2012-base item indices for Mar-May 2020,
+so those months, and y/y for Mar-May 2020 and Mar-May 2021, are missing.
+
 Runs only when the MoSPI headline data (in_cpi_mospi) has changed, since it pages through
 every item for every month.
 """
@@ -35,7 +45,37 @@ HEADLINE_RELEASE = DATA / "in" / "cpi" / "release.json"
 FIRST_YEAR = 2025
 MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
-PRECIOUS = {"13.2.1.1.1.01", "13.2.1.1.1.02"}  # gold/diamond/platinum jewellery; silver jewellery
+PRECIOUS = {"13.2.1.1.1.01", "13.2.1.1.1.02"}
+OLD_INPUTS = ROOT / "raw" / "in" / "cpi_core" / "core2012_inputs.json"
+# MoSPI CPI 2012=100 weights, all-India combined (groups and items).
+OLD_W = {"food_bev": 45.86, "fuel_light": 6.84, "petrol": 2.18697, "diesel": 0.148, "gold": 1.08035, "silver": 0.11175}
+OLD_EXCL = {"core1": ["food_bev", "fuel_light", "petrol", "diesel"],
+            "core2": ["food_bev", "fuel_light", "petrol", "diesel", "gold", "silver"]}
+# RBI MPR April 2026, Table IV.1: 2012-base y/y, Jan-Dec 2025 (one decimal). A fixed reference check.
+RBI_2025 = {"core1": [3.9, 4.3, 4.3, 4.4, 4.3, 4.6, 4.2, 4.3, 4.5, 4.5, 4.4, 4.8],
+            "core2": [3.2, 3.4, 3.3, 3.5, 3.4, 3.5, 3.2, 3.1, 3.1, 2.6, 2.4, 2.4]}
+LINK_YEAR = "2025"
+
+
+def _old_core():
+    """{measure: {YYYY-MM-01: 2012-base core index}}, residual from the published general index."""
+    src = json.loads(OLD_INPUTS.read_text())["series"]
+    out = {}
+    for key, excl in OLD_EXCL.items():
+        wk = 100 - sum(OLD_W[e] for e in excl)
+        idx = {}
+        for m, g in src["general"].items():
+            vals = [src[e].get(m) for e in excl]
+            if None in vals:
+                continue
+            idx[f"{m}-01"] = (100 * g - sum(OLD_W[e] * v for e, v in zip(excl, vals))) / wk
+        out[key] = idx
+    return out
+
+
+def _gm(vals):
+    import math
+    return math.exp(sum(math.log(v) for v in vals) / len(vals))  # gold/diamond/platinum jewellery; silver jewellery
 MEASURES = [
     ("core1", "Core 1 (CPI excluding food and fuel)"),
     ("core2", "Core 2 (CPI excluding food, fuel and precious metals)"),
@@ -134,26 +174,54 @@ def update(from_file=None, **_):
         keep = {k: w for k, (_, w) in weights.items() if not _excluded(key, k)}
         sw = sum(keep.values())
         idx = {m: sum(w * items[k][m] for k, w in keep.items()) / sw for m in months}
-        out[key] = {"weight": sw, "index": idx,
-                    "yoy": {m: (idx[m] / idx[_prev_year(m)] - 1) * 100 for m in months if _prev_year(m) in idx}}
+        out[key] = {"weight": sw, "new": idx}
+
+    # Link the 2012-base core to the 2024-base core over the 2025 overlap; y/y from the linked index.
+    old = _old_core()
+    links = {}
+    for key, _ in MEASURES:
+        new = out[key]["new"]
+        ov = [m for m in new if m[:4] == LINK_YEAR]
+        if len(ov) != 12 or any(m not in old[key] for m in ov):
+            errors.append(f"{key}: no full {LINK_YEAR} overlap between the 2012-base and 2024-base core")
+            continue
+        f = _gm([new[m] for m in ov]) / _gm([old[key][m] for m in ov])
+        links[key] = f
+        linked = {m: v * f for m, v in old[key].items() if m < f"{LINK_YEAR}-01-01"}
+        linked.update(new)
+        out[key]["index"] = linked
+        out[key]["basis"] = {m: ("2012 base, linked" if m < f"{LINK_YEAR}-01-01" else "2024 base") for m in linked}
+        out[key]["yoy"] = {m: (linked[m] / linked[_prev_year(m)] - 1) * 100 for m in linked if _prev_year(m) in linked}
+        # 2012-base y/y for 2025 against the RBI's published figures (one decimal: within 0.06pp).
+        for i, ref in enumerate(RBI_2025[key]):
+            m, p = f"2025-{i + 1:02d}-01", f"2024-{i + 1:02d}-01"
+            yo = (old[key][m] / old[key][p] - 1) * 100
+            if abs(yo - ref) > 0.06:
+                errors.append(f"{key} {m[:7]}: 2012-base y/y {yo:.2f}, RBI published {ref}")
+        # Calculated 2026 y/y is on the 2024 base alone, unaffected by the link.
+    if errors:
+        raise CheckFailed(errors)
 
     code = f"M{latest[:7]}"
     if state.get("code") == code:
         warnings.append("recent months revised (no new month)")
     release = {"code": code, "label": f"{MON[int(latest[5:7]) - 1]} {latest[:4]}", "latest_month": latest,
-               "table": "Calculated from MoSPI CPI 2024 item indices (all-India, combined) and Annex 5.3d item weights",
-               "weights": {k: round(v["weight"], 4) for k, v in out.items()}}
+               "table": "Calculated from MoSPI CPI 2024 item indices (all-India, combined) and Annex 5.3d item weights; 2012-base residual core linked over 2025",
+               "weights": {k: round(v["weight"], 4) for k, v in out.items()},
+               "weights_2012": {k: round(100 - sum(OLD_W[e] for e in v), 4) for k, v in OLD_EXCL.items()},
+               "link_factors_2012": {k: round(v, 6) for k, v in links.items()}, "link_year": LINK_YEAR}
 
     OUT.mkdir(parents=True, exist_ok=True)
     labels = dict(MEASURES)
     csv_rows = []
     for order, (key, label) in enumerate(MEASURES):
-        for m in months:
+        for m in sorted(out[key]["index"]):
             y = out[key]["yoy"].get(m)
             csv_rows.append({"date": m, "series": key, "label": label, "order": order,
-                             "index": round(out[key]["index"][m], 3), "yoy": None if y is None else round(y, 2)})
+                             "index": round(out[key]["index"][m], 3), "yoy": None if y is None else round(y, 2),
+                             "basis": out[key]["basis"][m]})
     csv_rows.sort(key=lambda r: (r["date"], r["order"]))
-    cols = ["date", "series", "label", "order", "index", "yoy"]
+    cols = ["date", "series", "label", "order", "index", "yoy", "basis"]
     with open(OUT / "in_cpi_core.csv", "w", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
         w.writerow(cols)
@@ -167,7 +235,7 @@ def update(from_file=None, **_):
                        "measure": meas, "area": "all-India", "freq": "M", "date": r["date"], "value": r[meas],
                        "unit": unit, "source": "Asia Decoded calculation from MoSPI", "release": code}
     nlong = write_long(long_rows(), OUT / "long.csv")
-    fingerprint = hashlib.sha256(json.dumps(out, sort_keys=True).encode()).hexdigest()[:16]
+    fingerprint = hashlib.sha256(json.dumps({k: v["index"] for k, v in out.items()}, sort_keys=True).encode()).hexdigest()[:16]
     RAWDIR.mkdir(parents=True, exist_ok=True)
     (RAWDIR / f"{code}_{fingerprint}.json.gz").write_bytes(gzip.compress(json.dumps(rows).encode()))
     write_release(OUT, release, warnings, len(csv_rows),
