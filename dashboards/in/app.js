@@ -125,6 +125,14 @@ dash.calc('core_bases', {
     .map((r) => ({ date: r.date, series: `${r.series}_${r.base}`, yoy: Number(r.yoy) })),
 });
 
+dash.calc('rbi_style', {
+  title: 'CPI inflation, RBI presentation',
+  description: 'Headline, food and beverages, fuel and CPI excluding food and fuel, y/y within the 2012 base to Dec 2025 and within the 2024 base from Jan 2026, joined (as in RBI MPR Chart IV.1), from Feb 2024.',
+  inputs: ['in_cpi_rbi_style'],
+  fn: (rows) => rows.filter((r) => r.date >= '2024-02-01' && r.yoy !== '' && r.yoy != null)
+    .map((r) => ({ date: r.date, series: r.series, yoy: Number(r.yoy) })),
+});
+
 (() => {
   const J = window.JG;
   J.theme();
@@ -236,14 +244,18 @@ dash.calc('core_bases', {
     const mr = 8;
     const { svg, x, y, W, ml } = frame(box, rows, H, rows.flatMap((r) => series.map((s) => r[s.key])).filter((v) => v != null), fmt, zero, mr);
     const spLabel = splice && typeof splice === 'object' ? splice.label : '2024 base';
+    const spMid = splice && typeof splice === 'object' && splice.mid;
     if (splice && typeof splice === 'object') splice = splice.date;
     if (splice && rows[0].date < splice && rows[rows.length - 1].date >= splice) {
-      const sx = x(J.date(splice));
+      const si = rows.findIndex((r) => r.date >= splice);
+      const sx = spMid && si > 0 ? (x(J.date(rows[si - 1].date)) + x(J.date(rows[si].date))) / 2 : x(J.date(splice));
       svg.append('line').attr('x1', sx).attr('x2', sx).attr('y1', 12).attr('y2', H - 24)
         .attr('stroke', 'var(--ad-axis)').attr('stroke-dasharray', '3 3');
-      const t = svg.append('text').attr('y', 16).attr('font-size', 11).attr('fill', 'var(--ad-ink)').text(spLabel);
-      const tw = t.node().getComputedTextLength();
-      t.attr('x', sx + 4 + tw > W - mr ? sx - 4 - tw : sx + 4);
+      if (spLabel) {
+        const t = svg.append('text').attr('y', 16).attr('font-size', 11).attr('fill', 'var(--ad-ink)').text(spLabel);
+        const tw = t.node().getComputedTextLength();
+        t.attr('x', sx + 4 + tw > W - mr ? sx - 4 - tw : sx + 4);
+      }
     }
     series.forEach((s) => {
       svg.append('path').attr('d', d3.line().defined((r) => r[s.key] != null).x((r) => x(J.date(r.date))).y((r) => y(r[s.key]))(rows))
@@ -439,6 +451,12 @@ dash.calc('core_bases', {
       { key: 'core2_2012', name: 'Core 2, 2012 base', color: 'var(--ad-c1)', dash: true },
       { key: 'core2_2024', name: 'Core 2, 2024 base', color: 'var(--ad-c3)', dash: true },
     ], (v) => d3.format('.0f')(v), 280, true, null, 'core_bases', true);
+    lines('rbi-style-chart', 'rbi-style', 'rbi-style-legend', 'yoy', [
+      { key: 'headline', name: 'Headline', color: 'var(--ad-ink)' },
+      { key: 'food_bev', name: 'Food and beverages', color: 'var(--ad-c6)' },
+      { key: 'fuel', name: 'Fuel', color: 'var(--ad-c2)' },
+      { key: 'core1', name: 'CPI excluding food and fuel', color: 'var(--ad-c4)' },
+    ], (v) => d3.format('.0f')(v), 300, true, { date: '2026-01-01', label: '', mid: true }, 'rbi_style');
     contribChart('cpi-contrib-linked', 'in_cpi_contrib_linked', false);
     lines('cpi-fe-chart', 'cpi-fe', 'cpi-fe-legend', 'yoy', [
       { key: 'food', name: 'Food', color: 'var(--ad-c3)' },
