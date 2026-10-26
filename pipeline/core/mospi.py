@@ -72,3 +72,10 @@ def cpi_2012(years, **filters):
               **{k: str(v) for k, v in filters.items()}}
     return paged("/api/cpi/getCPIIndex", params)
 
+
+def cpi_2010(years, **filters):
+    """CPI on the 2010 base (Jan 2011 to Dec 2014): groups and subgroups, published y/y from Jan 2012."""
+    params = {"base_year": "2010", "series": "Current", "year": ",".join(str(y) for y in years),
+              **{k: str(v) for k, v in filters.items()}}
+    return paged("/api/cpi/getCPIIndex", params)
+

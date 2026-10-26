@@ -1,10 +1,11 @@
-"""India consumer prices: MoSPI CPI (general index), 2024 base, all-India, Jan 2013 on.
+"""India consumer prices: MoSPI CPI (general index), 2024 base, all-India, y/y from Jan 2012.
 
 One continuous series per sector (combined, rural, urban):
 - Jan 2013 to Dec 2024: MoSPI's back series on the 2024 base (the 2012-base general index
   rescaled by MoSPI's linking factors, overlap year 2025). General index only.
 - Jan 2025 on: the 2024-base series itself.
-Index: the 2024-base series, linked. y/y: MoSPI's published rates. MoSPI publishes no 2024-base
+Index: the 2024-base series, linked, from Jan 2013. y/y: MoSPI's published rates, from Jan 2012:
+2010-base rates for 2012-2013 (the 2012-base series has no y/y before 2014; 2012 has no index here). MoSPI publishes no 2024-base
 y/y for 2025, and the back series carries the 2012-base rates published at the time, so 2014-2025
 y/y are the 2012-base published rates and 2026 on are 2024-base rates (column yoy_base).
 Nothing is calculated here: the file carries only what MoSPI publishes (index and y/y).
@@ -25,6 +26,7 @@ DESCRIPTION = "India CPI general index, all-India, 2024 base with linked back se
 OUT = DATA / "in" / "cpi"
 RAWDIR = RAW / "in" / "cpi_mospi"
 FIRST = "2013-01-01"
+YOY_FIRST = "2012-01-01"
 CURRENT_START = "2025-01-01"
 MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 SECTORS = [("Combined", "combined", "CPI, combined"),
@@ -50,15 +52,17 @@ def _fetch():
     cur, n_cur = mospi.cpi("Current", years=years, state_code=1, division_code=0)
     old, n_old = mospi.cpi_2012([2024, 2025], state_code=99)
     old = [r for r in old if r.get("group") == "General"]
-    return {"back": back, "current": cur, "old2012": old,
-            "totals": {"back": n_back, "current": n_cur, "old2012": n_old}}
+    old10, n_old10 = mospi.cpi_2010([2012, 2013], state_code=99)
+    old10 = [r for r in old10 if r.get("group") == "General"]
+    return {"back": back, "current": cur, "old2012": old, "old2010": old10,
+            "totals": {"back": n_back, "current": n_cur, "old2012": n_old, "old2010": n_old10}}
 
 
-def _old(raw):
-    """2012-base general index, all-India: {key: {date: {index, yoy}}} for 2024-2025."""
+def _old(raw, part="old2012"):
+    """Older-base general index, all-India: {key: {date: {index, yoy}}} (2012 base: 2024-2025; 2010 base: 2012-2013)."""
     keys = {s: k for s, k, _ in SECTORS}
     out = {}
-    for r in raw.get("old2012", []):
+    for r in raw.get(part, []):
         if r.get("state") != "All India" or r.get("sector") not in keys:
             continue
         date = f"{int(r['year'])}-{mospi.month_number(r['month']):02d}-01"
@@ -81,11 +85,18 @@ def _tidy(raw):
             out.setdefault(keys[r["sector"]], {})[date] = {
                 "index": _num(r.get("index")), "yoy": _num(r.get("inflation")), "basis": basis}
     old = _old(raw)
+    old10 = _old(raw, "old2010")
     for key, series in out.items():
         for d, v in series.items():
             v["yoy_base"] = "2024" if d >= "2026-01-01" else "2012"
             if d < "2026-01-01" and d >= CURRENT_START:
                 v["yoy"] = old.get(key, {}).get(d, {}).get("yoy")
+        # 2012-2013: the 2010-base published y/y (2013 keeps its back-series index; 2012 has none).
+        for d, v10 in old10.get(key, {}).items():
+            if YOY_FIRST <= d < "2014-01-01":
+                row = series.setdefault(d, {"index": None, "basis": "back"})
+                row["yoy"] = v10["yoy"]
+                row["yoy_base"] = "2010"
     return out, stray
 
 
@@ -98,12 +109,17 @@ def _checks(tidy, raw, state):
         errors.append(f"latest month {latest} is before the one already stored ({state['latest_month']})")
     for _, key, _ in SECTORS:
         s = tidy.get(key, {})
-        # every month from Jan 2013 to the latest, no gaps
+        # every month from Jan 2013 to the latest, no gaps (index); y/y from Jan 2012
         d = FIRST
         while d <= latest:
             v = s.get(d)
             if not v or v["index"] is None:
                 errors.append(f"{key}: index missing for {d}")
+            d = _shift(d, 1)
+        d = YOY_FIRST
+        while d <= latest:
+            if s.get(d, {}).get("yoy") is None:
+                errors.append(f"{key}: y/y missing for {d}")
             d = _shift(d, 1)
         # the two parts meet where they should
         for d, v in s.items():
@@ -115,7 +131,7 @@ def _checks(tidy, raw, state):
         # so the back period is held to ±0.5pp, which still catches a wrong or shifted month.
         for d, v in s.items():
             prev = s.get(_shift(d, -12), {}).get("index")
-            if v["yoy"] is None or not prev or v["index"] is None or "2025" == d[:4]:
+            if v["yoy"] is None or not prev or v["index"] is None or d[:4] in ("2025", "2013"):
                 continue
             implied = (v["index"] / prev - 1) * 100
             tol = 0.15 if d >= CURRENT_START else 0.5
