@@ -55,7 +55,7 @@ OLD_EXCL = {"core1": ["food_bev", "fuel_light", "petrol", "diesel"],
 RBI_2025 = {"core1": [3.9, 4.3, 4.3, 4.4, 4.3, 4.6, 4.2, 4.3, 4.5, 4.5, 4.4, 4.8],
             "core2": [3.2, 3.4, 3.3, 3.5, 3.4, 3.5, 3.2, 3.1, 3.1, 2.6, 2.4, 2.4]}
 LINK_YEAR = "2025"
-CALC_VERSION = 6  # bump when the calculation changes, so the next run recomputes without new data
+CALC_VERSION = 7  # bump when the calculation changes, so the next run recomputes without new data
 
 
 FUEL_PRICES = ROOT / "raw" / "in" / "fuel_ppac" / "ppac_metro_daily.json"
@@ -379,6 +379,10 @@ def update(from_file=None, **_):
                                  "2012 base, linked; items imputed from prices" if m[:7] in GAP else "2012 base, linked")
                              for m in linked}
         out[key]["yoy"] = {m: (linked[m] / linked[_prev_year(m)] - 1) * 100 for m in linked if _prev_year(m) in linked}
+        # The Mar-May 2020 imputation must be in place: no gap in the index or the y/y from Jan 2015.
+        for m in [f"{y}-{mm}-01" for y in ("2020", "2021") for mm in ("03", "04", "05")]:
+            if m not in out[key]["yoy"]:
+                errors.append(f"{key} {m[:7]}: y/y missing (Mar-May 2020 imputation not applied)")
         # 2012-base y/y for 2025 against the RBI's published figures (one decimal: within 0.06pp).
         for i, ref in enumerate(RBI_2025[key]):
             m, p = f"2025-{i + 1:02d}-01", f"2024-{i + 1:02d}-01"
