@@ -421,9 +421,9 @@ dash.calc('ppi_cpi', {
     if (!visible()) return;
     lines('cpi-sectors-chart', 'cpi-sectors', 'cpi-sectors-legend', 'yoy', SECTORS, (v) => d3.format('.0f')(v), 280, true);
     lines('cpi-core-chart', 'cpi-core', 'cpi-core-legend', 'yoy', [
-      { key: 'cpi', name: 'CPI', color: 'var(--ad-c1)' },
-      { key: 'core1', name: 'Core 1 (CPI excluding food and fuel)', color: 'var(--ad-c2)' },
-      { key: 'core2', name: 'Core 2 (CPI excluding food, fuel and precious metals)', color: 'var(--ad-c3)' },
+      { key: 'cpi', name: 'CPI', color: 'var(--ad-c2)' },
+      { key: 'core1', name: 'Core 1 (CPI excluding food and fuel)', color: 'var(--ad-c1)' },
+      { key: 'core2', name: 'Core 2 (CPI excluding food, fuel and precious metals)', color: 'var(--ad-c1)', dash: true },
     ], (v) => d3.format('.1f')(v), 280, false, null, 'core_series');
     contribChart('cpi-contrib-linked', 'in_cpi_contrib_linked', false);
     lines('cpi-fe-chart', 'cpi-fe', 'cpi-fe-legend', 'yoy', [
