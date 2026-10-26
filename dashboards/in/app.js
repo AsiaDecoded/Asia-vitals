@@ -466,33 +466,32 @@ dash.calc('div_heat', {
       return o(p) - o(q) || (p < q ? -1 : 1);
     });
     const val = new Map(D.data.map((r) => [`${r.code}|${r.date}`, r]));
-    // Diverging scale without d3-scale-chromatic (not in the dashboard's d3): blue below zero, red above.
-    const STOPS = [[-1, [33, 102, 172]], [-0.5, [146, 197, 222]], [0, [247, 247, 247]], [0.25, [253, 219, 199]], [0.5, [244, 165, 130]], [0.75, [214, 96, 77]], [1, [103, 0, 31]]];
-    const color = (v) => {
-      const t = Math.max(-1, Math.min(1, v / 12));
-      let i = 0; while (i < STOPS.length - 2 && t > STOPS[i + 1][0]) i += 1;
-      const [t0, c0] = STOPS[i], [t1, c1] = STOPS[i + 1], f = (t - t0) / (t1 - t0);
+    // Colour each row on its own range: green at the row's lowest rate, amber in the middle, red at its highest.
+    const STOPS = [[0, [99, 190, 123]], [0.5, [255, 235, 132]], [1, [248, 105, 107]]];
+    const color = (t) => {
+      let i = t > 0.5 ? 1 : 0; const [t0, c0] = STOPS[i], [t1, c1] = STOPS[i + 1], f = (t - t0) / (t1 - t0);
       return `rgb(${c0.map((c, k) => Math.round(c + (c1[k] - c) * f)).join(',')})`;
     };
     tbl.replaceChildren();
     const head = tbl.createTHead().insertRow();
-    ['Code', 'Division'].concat(dates.map((d) => `${MON[+d.slice(5, 7) - 1]} ${d.slice(2, 4)}`)).forEach((t) => {
+    ['Division'].concat(dates.map((d) => `${MON[+d.slice(5, 7) - 1]} ${d.slice(2, 4)}`)).forEach((t) => {
       const th = document.createElement('th'); th.textContent = t; head.appendChild(th);
     });
     const tb = tbl.createTBody();
     codes.forEach((c) => {
       const tr = tb.insertRow();
       const name = (D.data.find((r) => r.code === c) || {}).name || '';
-      tr.insertCell().textContent = c;
       tr.insertCell().textContent = name;
+      const vs = dates.map((d) => (val.get(`${c}|${d}`) || {}).yoy).filter((v) => v != null);
+      const lo = Math.min(...vs), hi = Math.max(...vs);
       if (c === '' || c === '01.1') tr.className = 'lead';
       dates.forEach((d) => {
         const td = tr.insertCell(); const r = val.get(`${c}|${d}`);
         if (!r) return;
         td.textContent = J.f1(r.yoy) === '-0.0' ? '0.0' : J.f1(r.yoy);
         td.className = 'heat';
-        td.style.background = color(r.yoy);
-        td.style.color = Math.abs(r.yoy) > 7 ? '#fff' : '#1a1a1a';
+        td.style.background = color(hi > lo ? (r.yoy - lo) / (hi - lo) : 0.5);
+        td.style.color = '#1a1a1a';
       });
     });
   }
