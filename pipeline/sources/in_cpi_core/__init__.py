@@ -48,14 +48,14 @@ MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "No
 PRECIOUS = {"13.2.1.1.1.01", "13.2.1.1.1.02"}
 OLD_INPUTS = ROOT / "raw" / "in" / "cpi_core" / "core2012_inputs.json"
 # MoSPI CPI 2012=100 weights, all-India combined (groups and items).
-OLD_W = {"food_bev": 45.86, "fuel_light": 6.84, "petrol": 2.18697, "diesel": 0.148, "gold": 1.08035, "silver": 0.11175}
+OLD_W = {"food": 39.06, "food_bev": 45.86, "fuel_light": 6.84, "petrol": 2.18697, "diesel": 0.148, "gold": 1.08035, "silver": 0.11175}
 OLD_EXCL = {"core1": ["food_bev", "fuel_light", "petrol", "diesel"],
             "core2": ["food_bev", "fuel_light", "petrol", "diesel", "gold", "silver"]}
 # RBI MPR April 2026, Table IV.1: 2012-base y/y, Jan-Dec 2025 (one decimal). A fixed reference check.
 RBI_2025 = {"core1": [3.9, 4.3, 4.3, 4.4, 4.3, 4.6, 4.2, 4.3, 4.5, 4.5, 4.4, 4.8],
             "core2": [3.2, 3.4, 3.3, 3.5, 3.4, 3.5, 3.2, 3.1, 3.1, 2.6, 2.4, 2.4]}
 LINK_YEAR = "2025"
-CALC_VERSION = 4  # bump when the calculation changes, so the next run recomputes without new data
+CALC_VERSION = 5  # bump when the calculation changes, so the next run recomputes without new data
 
 
 def _old_core():
@@ -74,7 +74,7 @@ def _old_core():
     return out
 
 
-CONTRIB = [("food", "Food and beverages"), ("fuel", "Fuel"), ("core", "CPI excluding food and fuel")]
+CONTRIB = [("food", "Food"), ("fuel", "Fuel"), ("core", "CPI excluding food and fuel")]
 
 
 def _contrib_old():
@@ -85,10 +85,10 @@ def _contrib_old():
     for m, h in src["general"].items():
         p = f"{int(m[:4]) - 1}{m[4:]}"
         hp = src["general"].get(p)
-        need = ["food_bev", "fuel_light", "petrol", "diesel"]
+        need = ["food", "fuel_light", "petrol", "diesel"]
         if not hp or any(src[k].get(m) is None or src[k].get(p) is None for k in need):
             continue
-        food = w["food_bev"] * (src["food_bev"][m] - src["food_bev"][p]) / hp
+        food = w["food"] * (src["food"][m] - src["food"][p]) / hp  # Consumer Food Price Index
         fuel = sum(w[k] * (src[k][m] - src[k][p]) for k in ("fuel_light", "petrol", "diesel")) / hp
         cpi = (h / hp - 1) * 100
         out[f"{m}-01"] = {"food": food, "fuel": fuel, "core": cpi - food - fuel, "cpi": cpi, "base": "2012"}
@@ -102,17 +102,17 @@ def _contrib_new(rows, weights):
         if r.get("state") != "All India" or r.get("sector") != "Combined" or r.get("index") in (None, ""):
             continue
         code = r.get("code") or ("general" if r.get("division") == "CPI (General)" and not r.get("group") else None)
-        if code in ("general", "01", "04.5", "07.2.2"):
+        if code in ("general", "01.1", "04.5", "07.2.2"):
             idx[code][_month(r)] = float(r["index"])
     wt = lambda prefix: sum(w for k, (_, w) in weights.items() if k.startswith(prefix))
-    wf, w045, w0722 = wt("01."), wt("04.5."), wt("07.2.2.")
+    wf, w045, w0722 = wt("01.1."), wt("04.5."), wt("07.2.2.")
     out = {}
     for m, h in idx["general"].items():
         p = _prev_year(m)
         hp = idx["general"].get(p)
-        if not hp or any(p not in idx[c] or m not in idx[c] for c in ("01", "04.5", "07.2.2")):
+        if not hp or any(p not in idx[c] or m not in idx[c] for c in ("01.1", "04.5", "07.2.2")):
             continue
-        food = wf * (idx["01"][m] - idx["01"][p]) / hp
+        food = wf * (idx["01.1"][m] - idx["01.1"][p]) / hp  # group 01.1 Food
         fuel = (w045 * (idx["04.5"][m] - idx["04.5"][p]) + w0722 * (idx["07.2.2"][m] - idx["07.2.2"][p])) / hp
         cpi = (h / hp - 1) * 100
         out[m] = {"food": food, "fuel": fuel, "core": cpi - food - fuel, "cpi": cpi, "base": "2024"}
@@ -121,8 +121,8 @@ def _contrib_new(rows, weights):
 
 def _fetch_items():
     """All 2024-base rows (all-India, combined). Keeps the rows already downloaded (the newest raw
-    snapshot) and fetches only the last two stored months onwards, which MoSPI may still revise,
-    plus any new months: about 15 pages instead of one per 100 rows since Jan 2025."""
+    snapshot) and fetches only the last two stored months onwards (provisional to final revisions),
+    plus any new months. When a new month appears, refetches the full history once."""
     import datetime as dt
     snaps = sorted(RAWDIR.glob("M*.json.gz")) if RAWDIR.exists() else []  # by release code (M2026-09_...)
     cached = json.loads(gzip.decompress(snaps[-1].read_bytes())) if snaps else []
@@ -143,6 +143,13 @@ def _fetch_items():
         part, _ = mospi.cpi("Current", years=[y], month_code=codes, state_code=1, sector_code=3, max_pages=100)
         fresh.extend(part)
     got = {_month(r) for r in fresh}
+    if got and max(got) > months[-1]:
+        # A new month is out: refetch everything, so revisions MoSPI ships with a release
+        # to any earlier month are picked up (once a month, ~5 minutes).
+        print("in_cpi_core: new month, full refetch", flush=True)
+        years = list(range(FIRST_YEAR, today.year + 1))
+        rows, _ = mospi.cpi("Current", years=years, state_code=1, sector_code=3, max_pages=600)
+        return rows
     return [r for r in cached if _month(r) not in got] + fresh
 
 

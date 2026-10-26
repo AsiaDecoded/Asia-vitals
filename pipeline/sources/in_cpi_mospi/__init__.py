@@ -206,8 +206,25 @@ def _write(tidy, release):
     return len(rows), nlong
 
 
+RELEASE_DAY = 12  # MoSPI publishes each month's CPI on the 12th of the next month
+
+
+def _due(state):
+    """Latest month MoSPI should have published by today; nothing to fetch if we already have it."""
+    import datetime as dt
+    t = dt.date.today()
+    back = 1 if t.day >= RELEASE_DAY else 2
+    y, m = t.year, t.month - back
+    if m < 1:
+        y, m = y - 1, m + 12
+    return f"{y}-{m:02d}-01"
+
+
 def update(from_file=None, **_):
     state = read_json(OUT / "release.json", {}) or {}
+    if not from_file and state.get("latest_month", "") >= _due(state):
+        return {"updated": False, "code": state.get("code"),
+                "summary": f"not due (have {state.get('latest_month')}; next release on the {RELEASE_DAY}th)"}
     if from_file:
         raw = json.loads(gzip.decompress(open(from_file, "rb").read()) if from_file.endswith(".gz") else open(from_file).read())
     else:
