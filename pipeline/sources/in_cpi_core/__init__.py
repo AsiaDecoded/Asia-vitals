@@ -55,9 +55,10 @@ OLD_EXCL = {"core1": ["food_bev", "fuel_light", "petrol", "diesel"],
 RBI_2025 = {"core1": [3.9, 4.3, 4.3, 4.4, 4.3, 4.6, 4.2, 4.3, 4.5, 4.5, 4.4, 4.8],
             "core2": [3.2, 3.4, 3.3, 3.5, 3.4, 3.5, 3.2, 3.1, 3.1, 2.6, 2.4, 2.4]}
 LINK_YEAR = "2025"
-CALC_VERSION = 8  # bump when the calculation changes, so the next run recomputes without new data
+CALC_VERSION = 9  # bump when the calculation changes, so the next run recomputes without new data
 
 
+OLD_ITEMS = ROOT / "raw" / "in" / "cpi_old" / "items2012.json.gz"
 FUEL_PRICES = ROOT / "raw" / "in" / "fuel_ppac" / "ppac_metro_daily.json"
 GOLD_PRICES = ROOT / "raw" / "in" / "gold_rbi" / "gold_silver_mumbai_2019_2021.json"
 GAP = ["2020-03", "2020-04", "2020-05"]  # MoSPI published no 2012-base item indices for these months
@@ -483,6 +484,35 @@ def update(from_file=None, **_):
         w = csv.writer(f, lineterminator="\n")
         w.writerow(["date", "code", "name", "weight", "yoy", "contrib_yoy"])
         w.writerows(item_rows)
+
+    # CPI diffusion index (as for Japan): share of individual items, unweighted, with y/y above and below
+    # zero. 2012 base (299 items, y/y from MoSPI's item indices) to Dec 2025; 2024 base (358 items, MoSPI's
+    # published item y/y) from Jan 2026. No 2012-base item indices for Mar-May 2020, so those months and
+    # Mar-May 2021 are missing.
+    old_items = defaultdict(dict)
+    for r in json.loads(gzip.decompress(OLD_ITEMS.read_bytes())):
+        if r.get("index") not in (None, ""):
+            old_items[r["item"]][f"{r['year']}-{mospi.month_number(r['month']):02d}-01"] = float(r["index"])
+    diff = {}
+    for m in sorted({m for s_ in old_items.values() for m in s_}):
+        if m >= "2026-01-01":
+            continue
+        p = _prev_year(m)
+        ys = [s_[m] / s_[p] - 1 for s_ in old_items.values() if m in s_ and p in s_]
+        if len(ys) >= 250:
+            diff[m] = (ys, "2012 base, 299 items")
+    for m in sorted({m for s_ in iyoy.values() for m in s_}):
+        ys = [s_[m] for code, s_ in iyoy.items() if m in s_ and code in weights]
+        if len(ys) >= 330:
+            diff[m] = (ys, "2024 base, 358 items")
+    with open(OUT / "in_cpi_diffusion.csv", "w", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["date", "items", "rising", "falling", "unchanged", "share_rising", "share_falling", "diffusion", "basis"])
+        for m in sorted(diff):
+            ys, basis = diff[m]
+            n, up, down = len(ys), sum(v > 0 for v in ys), sum(v < 0 for v in ys)
+            w.writerow([m, n, up, down, n - up - down, round(up / n * 100, 1), round(down / n * 100, 1),
+                        round((up - down) / n * 100, 1), basis])
 
     def long_rows():
         for r in csv_rows:
