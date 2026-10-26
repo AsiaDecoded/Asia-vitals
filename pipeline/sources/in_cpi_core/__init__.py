@@ -55,6 +55,7 @@ OLD_EXCL = {"core1": ["food_bev", "fuel_light", "petrol", "diesel"],
 RBI_2025 = {"core1": [3.9, 4.3, 4.3, 4.4, 4.3, 4.6, 4.2, 4.3, 4.5, 4.5, 4.4, 4.8],
             "core2": [3.2, 3.4, 3.3, 3.5, 3.4, 3.5, 3.2, 3.1, 3.1, 2.6, 2.4, 2.4]}
 LINK_YEAR = "2025"
+CALC_VERSION = 3  # bump when the calculation changes, so the next run recomputes without new data
 
 
 def _old_core():
@@ -167,7 +168,8 @@ def update(from_file=None, **_):
     state = read_json(OUT / "release.json", {}) or {}
     head = read_json(HEADLINE_RELEASE, {}) or {}
     trigger = head.get("fingerprint")
-    if not from_file and trigger and trigger == state.get("headline_fingerprint"):
+    if (not from_file and trigger and trigger == state.get("headline_fingerprint")
+            and state.get("calc_version") == CALC_VERSION):
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {state.get('latest_month')})"}
 
     weights = item_weights()
@@ -300,7 +302,8 @@ def update(from_file=None, **_):
     RAWDIR.mkdir(parents=True, exist_ok=True)
     (RAWDIR / f"{code}_{fingerprint}.json.gz").write_bytes(gzip.compress(json.dumps(rows).encode()))
     write_release(OUT, release, warnings, len(csv_rows),
-                  {"fingerprint": fingerprint, "headline_fingerprint": trigger, "long_rows": nlong})
+                  {"fingerprint": fingerprint, "headline_fingerprint": trigger, "long_rows": nlong,
+                   "calc_version": CALC_VERSION})
     lv = {k: out[k]["yoy"].get(latest) for k in out}
     return {"updated": True, "code": code,
             "summary": f"{release['label']}: core1 {lv['core1']:.2f}%, core2 {lv['core2']:.2f}% y/y",
