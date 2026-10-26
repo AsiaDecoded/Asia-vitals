@@ -16,7 +16,7 @@
   "core2": 0.53691
  },
  "link_year": "2025",
- "processed_at": "2026-10-26T06:25:37Z",
+ "processed_at": "2026-10-26T06:28:20Z",
  "rows": 300,
  "warnings": [
   "recent months revised (no new month)"
@@ -24,11 +24,11 @@
  "fingerprint": "9f52eb2cf1e7efb5",
  "headline_fingerprint": "015a114d18e34c0c",
  "long_rows": 570,
- "calc_version": 3,
+ "calc_version": 4,
  "history": [
   {
    "code": "M2026-09",
-   "processed_at": "2026-10-26T06:25:37Z"
+   "processed_at": "2026-10-26T06:28:20Z"
   }
  ]
 }
