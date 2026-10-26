@@ -3,15 +3,17 @@
  "label": "Sep 2026",
  "latest_month": "2026-09-01",
  "table": "MoSPI CPI, 2024 base (getCPIData: Current from Jan 2025, Back Jan 2013-Dec 2024)",
- "processed_at": "2026-10-26T01:34:50Z",
+ "processed_at": "2026-10-26T01:42:20Z",
  "rows": 495,
- "warnings": [],
- "fingerprint": "68104cda0b699ab7",
- "long_rows": 1446,
+ "warnings": [
+  "recent months revised (no new month)"
+ ],
+ "fingerprint": "7046de8ef6b2dc5f",
+ "long_rows": 954,
  "history": [
   {
    "code": "M2026-09",
-   "processed_at": "2026-10-26T01:34:50Z"
+   "processed_at": "2026-10-26T01:42:20Z"
   }
  ]
 }
