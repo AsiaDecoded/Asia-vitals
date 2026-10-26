@@ -9,7 +9,7 @@ raw/jp/cpi_contrib/ and only new months are downloaded.
 Series (national, percentage points): all items, fresh food, energy, goods, services, and
 goods less fresh food and energy = goods - fresh food - energy (all three published).
 
-Also writes jp_cpi_items.csv: every individual item (not categories) in the latest month's Table 5,
+Also writes jp_cpi_items.csv: every individual item (not categories) in each of the last 12 months' Table 5,
 national, with its weight, y/y, m/m and published contribution to the all-items y/y. English item
 names come from the e-Stat API's English metadata for the 2025-base CPI table.
 """
@@ -276,7 +276,10 @@ def update(from_dir=None, **_):
         for k in ORDER:
             out.append({"date": d, "series": k, "label": labels[k], "order": ORDER[k], "contrib_yoy": v[k]})
     # item detail for the latest month
-    items = parse_items(gzip.decompress(have[latest[:7]].read_bytes()))
+    # last 12 months, each from its own report (base in use at the time)
+    item_months = sorted(table)[-12:]
+    items_by_month = {d: parse_items(gzip.decompress(have[d[:7]].read_bytes())) for d in item_months}
+    items = items_by_month[latest]
     OUT.mkdir(parents=True, exist_ok=True)
     names_path = OUT / "item_names_en.json"
     names = read_json(names_path, {}) or {}
@@ -302,9 +305,10 @@ def update(from_dir=None, **_):
     with open(OUT / "jp_cpi_items.csv", "w", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
         w.writerow(["date", "code", "name", "name_ja", "weight", "index", "mom", "yoy", "contrib_mom", "contrib_yoy"])
-        for i in items:
-            w.writerow([latest, i["code"], names.get(i["code"], i["name_ja"]), i["name_ja"]] +
-                       ["" if i[k] is None else i[k] for k in ("weight", "index", "mom", "yoy", "contrib_mom", "contrib_yoy")])
+        for d in item_months:
+            for i in items_by_month[d]:
+                w.writerow([d, i["code"], names.get(i["code"], i["name_ja"]), i["name_ja"]] +
+                           ["" if i[k] is None else i[k] for k in ("weight", "index", "mom", "yoy", "contrib_mom", "contrib_yoy")])
     write_release(OUT, release, warnings, len(out), {"long_rows": nlong, "new_months": new, "items": len(items)})
     return {"updated": True, "code": code, "summary": f"{release['label']}: {len(table)} months, {len(new)} new",
             "warnings": warnings}
