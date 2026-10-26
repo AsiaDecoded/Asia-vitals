@@ -194,6 +194,63 @@ def parse_items(data):
     return out
 
 
+def parse_items_old(data):
+    """Older Table 5 layout (no item codes): items are the leaf rows of the name hierarchy, up to the
+    special aggregates that start at 生鮮食品. Returns [{name_ja, weight, yoy}]."""
+    rows = _sheet_rows(data)
+    yc = wc = None
+    for r in rows[:20]:
+        for j, c in enumerate(r):
+            k = _norm(c)
+            if yc is None and k == "前年同月比":
+                yc = j
+            if wc is None and k.startswith("ウエイト"):
+                wc = j
+    if yc is None or wc is None:
+        raise ValueError("no weight or y/y column in the older layout")
+    recs = []
+    for r in rows:
+        if len(r) <= yc:
+            continue
+        lv = name = None
+        for j in range(5, wc):
+            v = r[j]
+            if isinstance(v, str) and v.strip() and not re.fullmatch(r"[\d\s]+", v.strip()):
+                lv, name = j, v.strip()
+                break
+        if lv is None:
+            continue
+        if _norm(name).startswith("生鮮食品"):
+            break
+        try:
+            w, y = float(r[wc]), float(r[yc])
+        except (TypeError, ValueError):
+            w = y = None
+        recs.append((lv, name, w, y))
+    out = []
+    for i, (lv, name, w, y) in enumerate(recs):
+        nxt = recs[i + 1][0] if i + 1 < len(recs) else -1
+        if nxt <= lv and w and _norm(name) != "総合":
+            out.append({"name_ja": name, "weight": w, "yoy": y})
+    return out
+
+
+def diffusion(data):
+    """Share of CPI items (all individual items, unweighted) with y/y above and below zero."""
+    try:
+        items = [{"weight": i["weight"], "yoy": i["yoy"]} for i in parse_items(data)]
+    except ValueError:
+        items = parse_items_old(data)
+    ys = [i["yoy"] for i in items if i["weight"] and i["yoy"] is not None]
+    n = len(ys)
+    if n < 400:
+        raise ValueError(f"only {n} items with a y/y")
+    up, down = sum(v > 0 for v in ys), sum(v < 0 for v in ys)
+    return {"items": n, "rising": up, "falling": down, "unchanged": n - up - down,
+            "share_rising": round(up / n * 100, 1), "share_falling": round(down / n * 100, 1),
+            "diffusion": round((up - down) / n * 100, 1)}
+
+
 def english_names():
     """{item code: English name} from the e-Stat English metadata of the 2025-base CPI table."""
     res = _call("getMetaInfo", {"statsDataId": "0004052037", "lang": "E"})
@@ -259,7 +316,8 @@ def update(from_dir=None, **_):
         raise CheckFailed(["no Table 5 files found in the e-Stat catalogue"])
     latest = max(table)
     if not new and state.get("latest_month") == latest and not from_dir and (OUT / "jp_cpi_items.csv").exists() \
-            and state.get("items_months") == min(12, len(table)):
+            and state.get("items_months") == min(12, len(table)) \
+            and state.get("diffusion_months") == len(table):
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {latest[:7]})"}
 
     errors, warnings = _checks(table)
@@ -311,6 +369,22 @@ def update(from_dir=None, **_):
                          "measure": "contrib_yoy", "area": "national", "freq": "M", "date": r["date"],
                          "value": r["contrib_yoy"], "unit": "pp", "source": "Statistics Bureau of Japan",
                          "release": code} for r in out), OUT / "long.csv")
+    diff, diff_errors = {}, []
+    for d in sorted(table):
+        try:
+            diff[d] = diffusion(gzip.decompress(have[d[:7]].read_bytes()))
+        except Exception as e:  # noqa: BLE001
+            diff_errors.append(f"{d[:7]}: {e}")
+    if latest not in diff:
+        raise CheckFailed(["diffusion index could not be built for the latest month"] + diff_errors[:5])
+    if diff_errors:
+        warnings.append(f"diffusion index missing for {len(diff_errors)} month(s): " + "; ".join(diff_errors[:3]))
+    with open(OUT / "jp_cpi_diffusion.csv", "w", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        cols = ["items", "rising", "falling", "unchanged", "share_rising", "share_falling", "diffusion"]
+        w.writerow(["date"] + cols)
+        for d in sorted(diff):
+            w.writerow([d] + [diff[d][c] for c in cols])
     with open(OUT / "jp_cpi_items.csv", "w", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
         w.writerow(["date", "code", "name", "name_ja", "weight", "index", "mom", "yoy", "contrib_mom", "contrib_yoy"])
@@ -319,6 +393,7 @@ def update(from_dir=None, **_):
                 w.writerow([d, i["code"], names.get(i["code"], i["name_ja"]), i["name_ja"]] +
                            ["" if i[k] is None else i[k] for k in ("weight", "index", "mom", "yoy", "contrib_mom", "contrib_yoy")])
     write_release(OUT, release, warnings, len(out), {"long_rows": nlong, "new_months": new, "items": len(items),
-                                                 "items_months": len(item_months)})
+                                                 "items_months": len(item_months),
+                                                 "diffusion_months": len(diff)})
     return {"updated": True, "code": code, "summary": f"{release['label']}: {len(table)} months, {len(new)} new",
             "warnings": warnings}
