@@ -55,9 +55,10 @@ OLD_EXCL = {"core1": ["food_bev", "fuel_light", "petrol", "diesel"],
 RBI_2025 = {"core1": [3.9, 4.3, 4.3, 4.4, 4.3, 4.6, 4.2, 4.3, 4.5, 4.5, 4.4, 4.8],
             "core2": [3.2, 3.4, 3.3, 3.5, 3.4, 3.5, 3.2, 3.1, 3.1, 2.6, 2.4, 2.4]}
 LINK_YEAR = "2025"
-CALC_VERSION = 10  # bump when the calculation changes, so the next run recomputes without new data
+CALC_VERSION = 11  # bump when the calculation changes, so the next run recomputes without new data
 
 
+GROUPS_2012 = ROOT / "raw" / "in" / "cpi_full"
 OLD_ITEMS = ROOT / "raw" / "in" / "cpi_old" / "items2012.json.gz"
 FUEL_PRICES = ROOT / "raw" / "in" / "fuel_ppac" / "ppac_metro_daily.json"
 GOLD_PRICES = ROOT / "raw" / "in" / "gold_rbi" / "gold_silver_mumbai_2019_2021.json"
@@ -539,6 +540,52 @@ def update(from_file=None, **_):
         w = csv.writer(f, lineterminator="\n")
         w.writerow(["date", "series", "weight", "index", "yoy", "contrib_yoy"])
         w.writerows(gs_rows)
+
+    # Food, food and beverages, and energy CPI: 2024 base from Jan 2025 (group 01.1, division 01, and
+    # energy = group 04.5 and class 07.2.2 weighted together), 2012 base before (Consumer Food Price Index,
+    # food and beverages group, and fuel and light + petrol + diesel weighted together, from Jan 2013 for
+    # food and Jan 2014 for energy), linked over 2025 by the ratio of geometric means; y/y from the linked index.
+    grp = defaultdict(dict)
+    for f_ in sorted(GROUPS_2012.glob("groups2012_*.json.gz")):
+        for r in json.loads(gzip.decompress(f_.read_bytes())):
+            if r.get("sector") == "Combined" and r.get("index") not in (None, ""):
+                grp[r["subgroup"]][f"{r['year']}-{mospi.month_number(r['month']):02d}-01"] = float(r["index"])
+    src12 = _old_inputs()
+    m12 = lambda k: {f"{m}-01": v for m, v in src12[k].items()}
+    pet, die = m12("petrol"), m12("diesel")
+    fl = grp["Fuel and Light-Overall"]
+    ew12 = OLD_W["fuel_light"] + OLD_W["petrol"] + OLD_W["diesel"]
+    old_fe = {"food": grp["Consumer Food Price-Overall"], "food_bev": grp["Food and Beverages-Overall"],
+              "energy": {m: (OLD_W["fuel_light"] * fl[m] + OLD_W["petrol"] * pet[m] + OLD_W["diesel"] * die[m]) / ew12
+                         for m in fl if m in pet and m in die}}
+    gidx = defaultdict(dict)
+    for r in rows:
+        if r.get("state") == "All India" and r.get("sector") == "Combined" and r.get("code") in ("01", "01.1", "04.5", "07.2.2") \
+                and not r.get("item") and r.get("index") not in (None, ""):
+            gidx[r["code"]][_month(r)] = float(r["index"])
+    w45 = sum(wt for code, (_, wt) in weights.items() if code.startswith("04.5."))
+    w722 = sum(wt for code, (_, wt) in weights.items() if code.startswith("07.2.2."))
+    new_fe = {"food": gidx["01.1"], "food_bev": gidx["01"],
+              "energy": {m: (w45 * gidx["04.5"][m] + w722 * gidx["07.2.2"][m]) / (w45 + w722)
+                         for m in gidx["04.5"] if m in gidx["07.2.2"]}}
+    fe_rows = []
+    link = [f"{LINK_YEAR}-{i:02d}-01" for i in range(1, 13)]
+    for key, label in (("food", "Food"), ("food_bev", "Food and beverages"), ("energy", "Energy")):
+        o, n_ = old_fe[key], new_fe[key]
+        if not all(m in o and m in n_ for m in link):
+            raise CheckFailed([f"{key}: no full {LINK_YEAR} overlap between the 2012 and 2024 bases"])
+        f_ = _gm([n_[m] for m in link]) / _gm([o[m] for m in link])
+        lk = {m: v * f_ for m, v in o.items() if m < f"{LINK_YEAR}-01-01"}
+        lk.update(n_)
+        for m in sorted(lk):
+            p = _prev_year(m)
+            yoy = (lk[m] / lk[p] - 1) * 100 if p in lk else None
+            fe_rows.append([m, key, label, round(lk[m], 3), "" if yoy is None else round(yoy, 2),
+                            "2024 base" if m >= f"{LINK_YEAR}-01-01" else "2012 base, linked"])
+    with open(OUT / "in_cpi_food_energy.csv", "w", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["date", "series", "label", "index", "yoy", "basis"])
+        w.writerows(sorted(fe_rows))
 
     # CPI diffusion index (as for Japan): share of individual items, unweighted, with y/y above and below
     # zero. 2012 base (299 items, y/y from MoSPI's item indices) to Dec 2025; 2024 base (358 items, MoSPI's
