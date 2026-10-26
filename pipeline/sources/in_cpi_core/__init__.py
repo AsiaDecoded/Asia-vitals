@@ -55,7 +55,7 @@ OLD_EXCL = {"core1": ["food_bev", "fuel_light", "petrol", "diesel"],
 RBI_2025 = {"core1": [3.9, 4.3, 4.3, 4.4, 4.3, 4.6, 4.2, 4.3, 4.5, 4.5, 4.4, 4.8],
             "core2": [3.2, 3.4, 3.3, 3.5, 3.4, 3.5, 3.2, 3.1, 3.1, 2.6, 2.4, 2.4]}
 LINK_YEAR = "2025"
-CALC_VERSION = 11  # bump when the calculation changes, so the next run recomputes without new data
+CALC_VERSION = 12  # bump when the calculation changes, so the next run recomputes without new data
 
 
 GROUPS_2012 = ROOT / "raw" / "in" / "cpi_full"
@@ -448,6 +448,18 @@ def update(from_file=None, **_):
         w.writerow(cols)
         for r in csv_rows:
             w.writerow(["" if r[c] is None else r[c] for c in cols])
+
+    # Core on each base separately, no splicing: y/y within the 2012 base (to Dec 2025) and within the 2024 base
+    # (from Jan 2026), each from its own index.
+    with open(OUT / "in_cpi_core_bases.csv", "w", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["date", "series", "base", "index", "yoy"])
+        for key, _ in MEASURES:
+            for base, idx in (("2012", old[key]), ("2024", out[key]["new"])):
+                for m in sorted(idx):
+                    p_ = _prev_year(m)
+                    yoy = "" if p_ not in idx else round((idx[m] / idx[p_] - 1) * 100, 2)
+                    w.writerow([m, key, base, round(idx[m], 3), yoy])
 
     # Contributions to CPI y/y: within the 2012 base to Dec 2025, within the 2024 base from Jan 2026.
     contrib = _contrib_old()
