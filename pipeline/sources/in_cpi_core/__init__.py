@@ -55,7 +55,7 @@ OLD_EXCL = {"core1": ["food_bev", "fuel_light", "petrol", "diesel"],
 RBI_2025 = {"core1": [3.9, 4.3, 4.3, 4.4, 4.3, 4.6, 4.2, 4.3, 4.5, 4.5, 4.4, 4.8],
             "core2": [3.2, 3.4, 3.3, 3.5, 3.4, 3.5, 3.2, 3.1, 3.1, 2.6, 2.4, 2.4]}
 LINK_YEAR = "2025"
-CALC_VERSION = 3  # bump when the calculation changes, so the next run recomputes without new data
+CALC_VERSION = 4  # bump when the calculation changes, so the next run recomputes without new data
 
 
 def _old_core():
@@ -119,6 +119,38 @@ def _contrib_new(rows, weights):
     return out
 
 
+def _fetch_items():
+    """All 2024-base rows (all-India, combined). Keeps the rows already downloaded (the newest raw
+    snapshot) and fetches only the last two stored months onwards, which MoSPI may still revise,
+    plus any new months: about 15 pages instead of one per 100 rows since Jan 2025."""
+    import datetime as dt
+    snaps = sorted(RAWDIR.glob("M*.json.gz")) if RAWDIR.exists() else []  # by release code (M2026-09_...)
+    cached = json.loads(gzip.decompress(snaps[-1].read_bytes())) if snaps else []
+    months = sorted({_month(r) for r in cached})
+    if len(months) < 12:
+        years = list(range(FIRST_YEAR, dt.date.today().year + 1))
+        rows, _ = mospi.cpi("Current", years=years, state_code=1, sector_code=3, max_pages=600)
+        return rows
+    start = months[-2]
+    today = dt.date.today()
+    want, d = [], start
+    while d <= f"{today.year}-{today.month:02d}-01":
+        want.append(d)
+        d = _shift_month(d, 1)
+    fresh = []
+    for y in sorted({m[:4] for m in want}):
+        codes = ",".join(str(int(m[5:7])) for m in want if m[:4] == y)
+        part, _ = mospi.cpi("Current", years=[y], month_code=codes, state_code=1, sector_code=3, max_pages=100)
+        fresh.extend(part)
+    got = {_month(r) for r in fresh}
+    return [r for r in cached if _month(r) not in got] + fresh
+
+
+def _shift_month(d, n):
+    y, m = int(d[:4]), int(d[5:7]) - 1 + n
+    return f"{y + m // 12}-{m % 12 + 1:02d}-01"
+
+
 def _gm(vals):
     import math
     return math.exp(sum(math.log(v) for v in vals) / len(vals))  # gold/diamond/platinum jewellery; silver jewellery
@@ -176,9 +208,7 @@ def update(from_file=None, **_):
     if from_file:
         rows = json.loads(gzip.decompress(open(from_file, "rb").read()))
     else:
-        import datetime as dt
-        years = list(range(FIRST_YEAR, dt.date.today().year + 1))
-        rows, _ = mospi.cpi("Current", years=years, state_code=1, sector_code=3, max_pages=600)
+        rows = _fetch_items()
 
     items, general = defaultdict(dict), {}
     for r in rows:
