@@ -10,4 +10,5 @@ SOURCES = [
     "jp_cpi_contrib_estat",
     "in_cpi_mospi",
     "in_cpi_imf",
+    "in_cpi_core",
 ]

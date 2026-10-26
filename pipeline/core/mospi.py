@@ -54,12 +54,12 @@ def paged(path, params, max_pages=60):
     return rows, total
 
 
-def cpi(series, years=None, **filters):
+def cpi(series, years=None, max_pages=60, **filters):
     """CPI on the 2024 base. series: "Current" or "Back"."""
     params = {"base_year": "2024", "series": series, **{k: str(v) for k, v in filters.items()}}
     if years:
         params["year"] = ",".join(str(y) for y in years)
-    return paged("/api/cpi/getCPIData", params)
+    return paged("/api/cpi/getCPIData", params, max_pages=max_pages)
 
 
 def month_number(name):
