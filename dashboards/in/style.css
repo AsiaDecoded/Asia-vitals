@@ -116,5 +116,7 @@
 #div-heat-table td.heat { font-variant-numeric: tabular-nums; border: 2px solid var(--color-bg); }
 #div-heat-table td:first-child { color: var(--color-fg-muted); }
 #div-heat-table th:nth-child(2), #div-heat-table td:nth-child(2) { text-align: left; }
+#div-heat-table tr.lead td { font-weight: 700; }
+#div-heat-table tr.lead + tr:not(.lead) td { border-top: 2px solid var(--color-border-line); }
 </style>
 

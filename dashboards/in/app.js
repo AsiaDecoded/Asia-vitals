@@ -137,10 +137,15 @@ dash.calc('rbi_style', {
 
 dash.calc('div_heat', {
   title: 'CPI inflation by division, y/y',
-  description: 'MoSPI published y/y for the 12 CPI divisions (all-India, combined, 2024 base), from Jan 2026.',
-  inputs: ['in_cpi_groups'],
-  fn: (rows) => rows.filter((r) => r.level === 'division' && r.date >= '2026-01-01' && r.yoy !== '' && r.yoy != null)
-    .map((r) => ({ date: r.date, code: r.code, name: r.name, yoy: Number(r.yoy) })),
+  description: 'MoSPI published y/y for combined CPI, food (group 01.1) and the 12 CPI divisions (all-India, combined, 2024 base), from Jan 2026.',
+  inputs: ['in_cpi_groups', 'cpi_series'],
+  fn: (rows, cpi) => {
+    const head = cpi.filter((r) => r.series === 'combined' && r.date >= '2026-01-01' && r.yoy_published != null)
+      .map((r) => ({ date: r.date, code: '', name: 'CPI', yoy: r.yoy_published, order: 0 }));
+    const parts = rows.filter((r) => (r.level === 'division' || r.code === '01.1') && r.date >= '2026-01-01' && r.yoy !== '' && r.yoy != null)
+      .map((r) => ({ date: r.date, code: r.code, name: r.name, yoy: Number(r.yoy), order: r.code === '01.1' ? 1 : 2 }));
+    return head.concat(parts);
+  },
 });
 
 (() => {
@@ -456,7 +461,10 @@ dash.calc('div_heat', {
     if (D.status !== 'ok') return;
     const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     const dates = Array.from(new Set(D.data.map((r) => r.date))).sort();
-    const codes = Array.from(new Set(D.data.map((r) => r.code))).sort();
+    const codes = Array.from(new Set(D.data.map((r) => r.code))).sort((p, q) => {
+      const o = (c) => (D.data.find((r) => r.code === c) || {}).order;
+      return o(p) - o(q) || (p < q ? -1 : 1);
+    });
     const val = new Map(D.data.map((r) => [`${r.code}|${r.date}`, r]));
     // Diverging scale without d3-scale-chromatic (not in the dashboard's d3): blue below zero, red above.
     const STOPS = [[-1, [33, 102, 172]], [-0.5, [146, 197, 222]], [0, [247, 247, 247]], [0.25, [253, 219, 199]], [0.5, [244, 165, 130]], [0.75, [214, 96, 77]], [1, [103, 0, 31]]];
@@ -477,6 +485,7 @@ dash.calc('div_heat', {
       const name = (D.data.find((r) => r.code === c) || {}).name || '';
       tr.insertCell().textContent = c;
       tr.insertCell().textContent = name;
+      if (c === '' || c === '01.1') tr.className = 'lead';
       dates.forEach((d) => {
         const td = tr.insertCell(); const r = val.get(`${c}|${d}`);
         if (!r) return;
