@@ -55,7 +55,7 @@ OLD_EXCL = {"core1": ["food_bev", "fuel_light", "petrol", "diesel"],
 RBI_2025 = {"core1": [3.9, 4.3, 4.3, 4.4, 4.3, 4.6, 4.2, 4.3, 4.5, 4.5, 4.4, 4.8],
             "core2": [3.2, 3.4, 3.3, 3.5, 3.4, 3.5, 3.2, 3.1, 3.1, 2.6, 2.4, 2.4]}
 LINK_YEAR = "2025"
-CALC_VERSION = 13  # bump when the calculation changes, so the next run recomputes without new data
+CALC_VERSION = 14  # bump when the calculation changes, so the next run recomputes without new data
 
 
 GROUPS_2012 = ROOT / "raw" / "in" / "cpi_full"
@@ -321,6 +321,13 @@ def item_types():
     if missing:
         raise CheckFailed([f"no goods/services type for {len(missing)} items, e.g. {missing[:3]}"])
     return out
+
+
+def _num(v):
+    try:
+        return None if v in (None, "") else float(v)
+    except (TypeError, ValueError):
+        return None
 
 
 def _month(r):
@@ -615,6 +622,35 @@ def update(from_file=None, **_):
         w = csv.writer(f, lineterminator="\n")
         w.writerow(["date", "series", "label", "index", "yoy", "basis"])
         w.writerows(sorted(fe_rows))
+
+    # Divisions (Annex I) and groups (Annex II), 2024 base: MoSPI's published index and y/y, weights summed from
+    # the item weights, and contributions to CPI y/y (weight x 12-month change / headline a year earlier).
+    lv = defaultdict(dict)
+    meta = {}
+    for r in rows:
+        c = r.get("code")
+        if r.get("state") != "All India" or r.get("sector") != "Combined" or r.get("item") or not c \
+                or c.count(".") > 1 or r.get("index") in (None, ""):
+            continue
+        lv[c][_month(r)] = (float(r["index"]), _num(r.get("inflation")))
+        meta[c] = (r.get("division") if "." not in c else r.get("group"), r.get("division"))
+    grp_rows = []
+    for c in sorted(lv):
+        wt = sum(w_ for code, (_, w_) in weights.items() if code.startswith(c + "."))
+        for m in sorted(lv[c]):
+            i, y = lv[c][m]
+            p_ = _prev_year(m)
+            con = "" if p_ not in lv[c] or p_ not in gen else round(wt * (i - lv[c][p_][0]) / gen[p_], 4)
+            grp_rows.append([m, "division" if "." not in c else "group", c, meta[c][0], meta[c][1], round(wt, 4), i,
+                             "" if y is None else y, con])
+    for m in sorted({r_[0] for r_ in grp_rows if r_[8] != ""}):
+        tot = sum(r_[8] for r_ in grp_rows if r_[0] == m and r_[1] == "division")
+        if abs(tot - (gen[m] / gen[_prev_year(m)] - 1) * 100) > 0.02:
+            raise CheckFailed([f"{m}: division contributions sum to {tot:.3f}, not headline y/y"])
+    with open(OUT / "in_cpi_groups.csv", "w", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["date", "level", "code", "name", "division", "weight", "index", "yoy", "contrib_yoy"])
+        w.writerows(grp_rows)
 
     # CPI diffusion index (as for Japan): share of individual items, unweighted, with y/y above and below
     # zero. 2012 base (299 items, y/y from MoSPI's item indices) to Dec 2025; 2024 base (358 items, MoSPI's
