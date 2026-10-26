@@ -279,7 +279,15 @@ def update(from_dir=None, **_):
     # item detail for the latest month
     # last 12 months, each from its own report (base in use at the time)
     item_months = sorted(table)[-12:]
-    items_by_month = {d: parse_items(gzip.decompress(have[d[:7]].read_bytes())) for d in item_months}
+    items_by_month = {}
+    for d in item_months:
+        try:
+            items_by_month[d] = parse_items(gzip.decompress(have[d[:7]].read_bytes()))
+        except Exception as e:  # noqa: BLE001 - an older layout; the latest month is checked below
+            warnings.append(f"items not read for {d[:7]}: {e}")
+    item_months = [d for d in item_months if d in items_by_month]
+    if latest not in items_by_month:
+        raise CheckFailed([f"items could not be read from the latest Table 5 ({latest[:7]})"])
     items = items_by_month[latest]
     OUT.mkdir(parents=True, exist_ok=True)
     names_path = OUT / "item_names_en.json"
