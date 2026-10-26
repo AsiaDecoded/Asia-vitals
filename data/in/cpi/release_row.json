@@ -3,7 +3,13 @@
   "code": "M2026-09",
   "label": "Sep 2026",
   "latest_month": "2026-09-01",
-  "table": "MoSPI CPI, 2024 base (getCPIData: Current from Jan 2025, Back Jan 2013-Dec 2024)",
-  "processed_at": "2026-10-26T03:42:52Z"
+  "table": "MoSPI CPI, 2024 base (getCPIData: Current from Jan 2025, Back Jan 2013-Dec 2024); 2010 base (getCPIIndex) Jan 2011-Dec 2012, linked",
+  "link_factors_2010": {
+   "rural": 0.431664,
+   "urban": 0.44564,
+   "combined": 0.437915
+  },
+  "link_year": "2013",
+  "processed_at": "2026-10-26T04:11:33Z"
  }
 ]

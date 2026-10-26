@@ -3,7 +3,7 @@
  "title": "India consumer price index",
  "units": "index, 2024 = 100",
  "freq": "monthly",
- "source": "MoSPI, Consumer Price Index (2024 base; Jan 2013-Dec 2024 linked back series), Sep 2026.",
+ "source": "MoSPI, Consumer Price Index (2024 base; 2013-2024 back series; 2011-2012 2010 base, linked by Asia Decoded), Sep 2026.",
  "release": "M2026-09",
  "columns": [
   "combined",
@@ -12,76 +12,148 @@
  ],
  "data": [
   {
+   "date": "2011-01-01",
+   "combined": 46.3752,
+   "rural": 46.2313,
+   "urban": 46.4357
+  },
+  {
+   "date": "2011-02-01",
+   "combined": 46.1124,
+   "rural": 45.9723,
+   "urban": 46.2129
+  },
+  {
+   "date": "2011-03-01",
+   "combined": 46.2438,
+   "rural": 46.1449,
+   "urban": 46.302
+  },
+  {
+   "date": "2011-04-01",
+   "combined": 46.5065,
+   "rural": 46.4039,
+   "urban": 46.5694
+  },
+  {
+   "date": "2011-05-01",
+   "combined": 46.9007,
+   "rural": 46.9219,
+   "urban": 46.7922
+  },
+  {
+   "date": "2011-06-01",
+   "combined": 47.6451,
+   "rural": 47.4399,
+   "urban": 47.8172
+  },
+  {
+   "date": "2011-07-01",
+   "combined": 48.3896,
+   "rural": 48.2169,
+   "urban": 48.5302
+  },
+  {
+   "date": "2011-08-01",
+   "combined": 48.9151,
+   "rural": 48.8212,
+   "urban": 48.9758
+  },
+  {
+   "date": "2011-09-01",
+   "combined": 49.4843,
+   "rural": 49.3824,
+   "urban": 49.5106
+  },
+  {
+   "date": "2011-10-01",
+   "combined": 49.8347,
+   "rural": 49.7277,
+   "urban": 49.9117
+  },
+  {
+   "date": "2011-11-01",
+   "combined": 49.9661,
+   "rural": 49.8141,
+   "urban": 50.1345
+  },
+  {
+   "date": "2011-12-01",
+   "combined": 49.7471,
+   "rural": 49.4256,
+   "urban": 50.0454
+  },
+  {
    "date": "2012-01-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 49.9223,
+   "rural": 49.5982,
+   "urban": 50.2682
   },
   {
    "date": "2012-02-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 50.185,
+   "rural": 49.8141,
+   "urban": 50.5801
   },
   {
    "date": "2012-03-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 50.5791,
+   "rural": 50.1594,
+   "urban": 51.0703
   },
   {
    "date": "2012-04-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 51.2798,
+   "rural": 50.8932,
+   "urban": 51.7388
   },
   {
    "date": "2012-05-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 51.7615,
+   "rural": 51.4112,
+   "urban": 52.1844
   },
   {
    "date": "2012-06-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 52.3746,
+   "rural": 52.0156,
+   "urban": 52.8083
   },
   {
    "date": "2012-07-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 53.1628,
+   "rural": 52.9221,
+   "urban": 53.4322
   },
   {
    "date": "2012-08-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 53.8197,
+   "rural": 53.6559,
+   "urban": 53.967
   },
   {
    "date": "2012-09-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 54.3014,
+   "rural": 54.217,
+   "urban": 54.3235
   },
   {
    "date": "2012-10-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 54.6955,
+   "rural": 54.6487,
+   "urban": 54.6354
   },
   {
    "date": "2012-11-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 54.9145,
+   "rural": 54.7782,
+   "urban": 54.992
   },
   {
    "date": "2012-12-01",
-   "combined": null,
-   "rural": null,
-   "urban": null
+   "combined": 55.0021,
+   "rural": 54.735,
+   "urban": 55.2593
   },
   {
    "date": "2013-01-01",

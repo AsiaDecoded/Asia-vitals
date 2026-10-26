@@ -2,18 +2,41 @@
  "code": "M2026-09",
  "label": "Sep 2026",
  "latest_month": "2026-09-01",
- "table": "MoSPI CPI, 2024 base (getCPIData: Current from Jan 2025, Back Jan 2013-Dec 2024)",
- "processed_at": "2026-10-26T03:42:52Z",
- "rows": 531,
+ "table": "MoSPI CPI, 2024 base (getCPIData: Current from Jan 2025, Back Jan 2013-Dec 2024); 2010 base (getCPIIndex) Jan 2011-Dec 2012, linked",
+ "link_factors_2010": {
+  "rural": 0.431664,
+  "urban": 0.44564,
+  "combined": 0.437915
+ },
+ "link_year": "2013",
+ "processed_at": "2026-10-26T04:11:33Z",
+ "rows": 567,
  "warnings": [
   "recent months revised (no new month)"
  ],
- "fingerprint": "e77db55fa6992c4c",
- "long_rows": 1026,
+ "fingerprint": "015a114d18e34c0c",
+ "long_rows": 1629,
+ "calculated_vs_published": {
+  "combined": {
+   "max_gap_pp": -0.54,
+   "month": "2013-05",
+   "mean_abs_gap_pp": 0.073
+  },
+  "rural": {
+   "max_gap_pp": -0.49,
+   "month": "2025-01",
+   "mean_abs_gap_pp": 0.056
+  },
+  "urban": {
+   "max_gap_pp": -1.11,
+   "month": "2013-04",
+   "mean_abs_gap_pp": 0.096
+  }
+ },
  "history": [
   {
    "code": "M2026-09",
-   "processed_at": "2026-10-26T03:42:52Z"
+   "processed_at": "2026-10-26T04:11:33Z"
   }
  ]
 }

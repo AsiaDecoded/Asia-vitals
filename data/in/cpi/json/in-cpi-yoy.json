@@ -3,7 +3,7 @@
  "title": "India consumer inflation",
  "units": "% y/y",
  "freq": "monthly",
- "source": "MoSPI, Consumer Price Index (2024 base; Jan 2013-Dec 2024 linked back series), Sep 2026.",
+ "source": "MoSPI, Consumer Price Index (2024 base; 2013-2024 back series; 2011-2012 2010 base, linked by Asia Decoded), Sep 2026.",
  "release": "M2026-09",
  "columns": [
   "combined",
@@ -11,6 +11,78 @@
   "urban"
  ],
  "data": [
+  {
+   "date": "2011-01-01",
+   "combined": null,
+   "rural": null,
+   "urban": null
+  },
+  {
+   "date": "2011-02-01",
+   "combined": null,
+   "rural": null,
+   "urban": null
+  },
+  {
+   "date": "2011-03-01",
+   "combined": null,
+   "rural": null,
+   "urban": null
+  },
+  {
+   "date": "2011-04-01",
+   "combined": null,
+   "rural": null,
+   "urban": null
+  },
+  {
+   "date": "2011-05-01",
+   "combined": null,
+   "rural": null,
+   "urban": null
+  },
+  {
+   "date": "2011-06-01",
+   "combined": null,
+   "rural": null,
+   "urban": null
+  },
+  {
+   "date": "2011-07-01",
+   "combined": null,
+   "rural": null,
+   "urban": null
+  },
+  {
+   "date": "2011-08-01",
+   "combined": null,
+   "rural": null,
+   "urban": null
+  },
+  {
+   "date": "2011-09-01",
+   "combined": null,
+   "rural": null,
+   "urban": null
+  },
+  {
+   "date": "2011-10-01",
+   "combined": null,
+   "rural": null,
+   "urban": null
+  },
+  {
+   "date": "2011-11-01",
+   "combined": null,
+   "rural": null,
+   "urban": null
+  },
+  {
+   "date": "2011-12-01",
+   "combined": null,
+   "rural": null,
+   "urban": null
+  },
   {
    "date": "2012-01-01",
    "combined": 7.65,
@@ -25,7 +97,7 @@
   },
   {
    "date": "2012-03-01",
-   "combined": 9.38,
+   "combined": 9.37,
    "rural": 8.7,
    "urban": 10.3
   },
@@ -85,943 +157,943 @@
   },
   {
    "date": "2013-01-01",
-   "combined": 10.79,
-   "rural": 10.79,
-   "urban": 10.73
+   "combined": 10.37,
+   "rural": 10.69,
+   "urban": 10.01
   },
   {
    "date": "2013-02-01",
-   "combined": 10.91,
-   "rural": 11.01,
-   "urban": 10.84
+   "combined": 10.59,
+   "rural": 10.81,
+   "urban": 10.12
   },
   {
    "date": "2013-03-01",
-   "combined": 10.39,
-   "rural": 10.41,
-   "urban": 10.38
+   "combined": 9.93,
+   "rural": 10.45,
+   "urban": 9.46
   },
   {
    "date": "2013-04-01",
-   "combined": 9.39,
-   "rural": 9.16,
-   "urban": 9.73
+   "combined": 9.01,
+   "rural": 9.25,
+   "urban": 8.62
   },
   {
    "date": "2013-05-01",
-   "combined": 9.31,
-   "rural": 8.98,
-   "urban": 9.65
+   "combined": 8.77,
+   "rural": 8.93,
+   "urban": 8.65
   },
   {
    "date": "2013-06-01",
-   "combined": 9.87,
-   "rural": 9.63,
-   "urban": 10.13
+   "combined": 9.98,
+   "rural": 9.39,
+   "urban": 10.59
   },
   {
    "date": "2013-07-01",
-   "combined": 9.64,
-   "rural": 9.14,
-   "urban": 10.18
+   "combined": 10.04,
+   "rural": 9.22,
+   "urban": 10.98
   },
   {
    "date": "2013-08-01",
-   "combined": 9.52,
-   "rural": 8.93,
-   "urban": 10.32
+   "combined": 10.0,
+   "rural": 9.03,
+   "urban": 11.18
   },
   {
    "date": "2013-09-01",
-   "combined": 9.84,
-   "rural": 9.71,
-   "urban": 9.93
+   "combined": 10.31,
+   "rural": 9.93,
+   "urban": 10.82
   },
   {
    "date": "2013-10-01",
-   "combined": 10.17,
-   "rural": 10.19,
-   "urban": 10.2
+   "combined": 10.61,
+   "rural": 10.34,
+   "urban": 10.92
   },
   {
    "date": "2013-11-01",
-   "combined": 11.16,
-   "rural": 11.66,
-   "urban": 10.53
+   "combined": 11.63,
+   "rural": 11.91,
+   "urban": 11.29
   },
   {
    "date": "2013-12-01",
-   "combined": 9.87,
-   "rural": 10.49,
-   "urban": 9.11
+   "combined": 9.63,
+   "rural": 10.17,
+   "urban": 9.12
   },
   {
    "date": "2014-01-01",
-   "combined": 8.6,
-   "rural": 8.66,
-   "urban": 8.56
+   "combined": 8.53,
+   "rural": 8.56,
+   "urban": 8.68
   },
   {
    "date": "2014-02-01",
-   "combined": 7.88,
-   "rural": 7.75,
-   "urban": 8.02
+   "combined": 7.75,
+   "rural": 7.79,
+   "urban": 8.08
   },
   {
    "date": "2014-03-01",
-   "combined": 8.25,
-   "rural": 8.11,
-   "urban": 8.29
+   "combined": 8.09,
+   "rural": 7.94,
+   "urban": 8.23
   },
   {
    "date": "2014-04-01",
-   "combined": 8.48,
-   "rural": 8.46,
-   "urban": 8.51
+   "combined": 8.41,
+   "rural": 8.45,
+   "urban": 8.54
   },
   {
    "date": "2014-05-01",
-   "combined": 8.33,
+   "combined": 8.35,
    "rural": 8.21,
-   "urban": 8.44
+   "urban": 8.47
   },
   {
    "date": "2014-06-01",
    "combined": 6.77,
-   "rural": 7.44,
-   "urban": 6.11
+   "rural": 7.38,
+   "urban": 5.99
   },
   {
    "date": "2014-07-01",
-   "combined": 7.39,
-   "rural": 7.95,
-   "urban": 6.73
+   "combined": 7.35,
+   "rural": 7.96,
+   "urban": 6.75
   },
   {
    "date": "2014-08-01",
-   "combined": 7.03,
-   "rural": 7.67,
-   "urban": 6.39
+   "combined": 7.09,
+   "rural": 7.69,
+   "urban": 6.33
   },
   {
    "date": "2014-09-01",
-   "combined": 5.63,
+   "combined": 5.68,
    "rural": 5.87,
-   "urban": 5.3
+   "urban": 5.32
   },
   {
    "date": "2014-10-01",
-   "combined": 4.62,
-   "rural": 4.76,
-   "urban": 4.47
+   "combined": 4.63,
+   "rural": 4.81,
+   "urban": 4.62
   },
   {
    "date": "2014-11-01",
-   "combined": 3.27,
-   "rural": 3.15,
-   "urban": 3.48
+   "combined": 3.26,
+   "rural": 3.1,
+   "urban": 3.43
   },
   {
    "date": "2014-12-01",
-   "combined": 4.28,
-   "rural": 4.16,
-   "urban": 4.5
+   "combined": 4.31,
+   "rural": 4.15,
+   "urban": 4.48
   },
   {
    "date": "2015-01-01",
-   "combined": 5.19,
-   "rural": 5.34,
-   "urban": 4.96
+   "combined": 5.18,
+   "rural": 5.37,
+   "urban": 4.83
   },
   {
    "date": "2015-02-01",
-   "combined": 5.37,
-   "rural": 5.79,
-   "urban": 4.95
+   "combined": 5.35,
+   "rural": 5.88,
+   "urban": 4.82
   },
   {
    "date": "2015-03-01",
-   "combined": 5.25,
-   "rural": 5.67,
-   "urban": 4.75
+   "combined": 5.32,
+   "rural": 5.69,
+   "urban": 4.79
   },
   {
    "date": "2015-04-01",
-   "combined": 4.87,
-   "rural": 5.29,
-   "urban": 4.36
+   "combined": 4.95,
+   "rural": 5.14,
+   "urban": 4.43
   },
   {
    "date": "2015-05-01",
-   "combined": 5.01,
-   "rural": 5.52,
-   "urban": 4.41
+   "combined": 4.92,
+   "rural": 5.45,
+   "urban": 4.39
   },
   {
    "date": "2015-06-01",
-   "combined": 5.4,
-   "rural": 6.07,
-   "urban": 4.55
+   "combined": 5.37,
+   "rural": 6.06,
+   "urban": 4.52
   },
   {
    "date": "2015-07-01",
-   "combined": 3.69,
-   "rural": 4.35,
-   "urban": 2.94
+   "combined": 3.66,
+   "rural": 4.33,
+   "urban": 2.84
   },
   {
    "date": "2015-08-01",
-   "combined": 3.74,
-   "rural": 4.47,
-   "urban": 2.75
+   "combined": 3.63,
+   "rural": 4.44,
+   "urban": 2.66
   },
   {
    "date": "2015-09-01",
-   "combined": 4.41,
-   "rural": 5.05,
-   "urban": 3.61
+   "combined": 4.27,
+   "rural": 5.07,
+   "urban": 3.63
   },
   {
    "date": "2015-10-01",
-   "combined": 5.0,
+   "combined": 4.9,
    "rural": 5.54,
-   "urban": 4.28
+   "urban": 4.26
   },
   {
    "date": "2015-11-01",
-   "combined": 5.41,
-   "rural": 5.95,
-   "urban": 4.71
+   "combined": 5.37,
+   "rural": 6.01,
+   "urban": 4.74
   },
   {
    "date": "2015-12-01",
-   "combined": 5.61,
-   "rural": 6.32,
-   "urban": 4.73
+   "combined": 5.56,
+   "rural": 6.37,
+   "urban": 4.76
   },
   {
    "date": "2016-01-01",
-   "combined": 5.69,
-   "rural": 6.48,
-   "urban": 4.81
+   "combined": 5.72,
+   "rural": 6.53,
+   "urban": 4.92
   },
   {
    "date": "2016-02-01",
-   "combined": 5.26,
-   "rural": 6.05,
-   "urban": 4.3
+   "combined": 5.4,
+   "rural": 6.03,
+   "urban": 4.44
   },
   {
    "date": "2016-03-01",
-   "combined": 4.83,
+   "combined": 4.9,
    "rural": 5.7,
-   "urban": 3.95
+   "urban": 3.94
   },
   {
    "date": "2016-04-01",
-   "combined": 5.47,
-   "rural": 6.17,
-   "urban": 4.68
+   "combined": 5.35,
+   "rural": 6.31,
+   "urban": 4.71
   },
   {
    "date": "2016-05-01",
-   "combined": 5.76,
-   "rural": 6.45,
-   "urban": 4.89
+   "combined": 5.78,
+   "rural": 6.42,
+   "urban": 4.98
   },
   {
    "date": "2016-06-01",
-   "combined": 5.77,
-   "rural": 6.29,
+   "combined": 5.71,
+   "rural": 6.33,
    "urban": 5.26
   },
   {
    "date": "2016-07-01",
-   "combined": 6.07,
-   "rural": 6.66,
-   "urban": 5.39
+   "combined": 6.14,
+   "rural": 6.76,
+   "urban": 5.38
   },
   {
    "date": "2016-08-01",
-   "combined": 5.05,
-   "rural": 5.87,
-   "urban": 4.22
+   "combined": 5.18,
+   "rural": 5.93,
+   "urban": 4.27
   },
   {
    "date": "2016-09-01",
    "combined": 4.39,
-   "rural": 5.04,
-   "urban": 3.64
+   "rural": 5.13,
+   "urban": 3.65
   },
   {
    "date": "2016-10-01",
-   "combined": 4.2,
-   "rural": 4.78,
-   "urban": 3.54
+   "combined": 4.22,
+   "rural": 4.8,
+   "urban": 3.48
   },
   {
    "date": "2016-11-01",
-   "combined": 3.63,
-   "rural": 4.13,
-   "urban": 3.13
+   "combined": 3.6,
+   "rural": 4.18,
+   "urban": 3.17
   },
   {
    "date": "2016-12-01",
-   "combined": 3.41,
-   "rural": 3.83,
-   "urban": 2.9
+   "combined": 3.46,
+   "rural": 3.74,
+   "urban": 2.88
   },
   {
    "date": "2017-01-01",
-   "combined": 3.17,
-   "rural": 3.36,
-   "urban": 2.9
+   "combined": 3.16,
+   "rural": 3.29,
+   "urban": 2.87
   },
   {
    "date": "2017-02-01",
-   "combined": 3.65,
-   "rural": 3.67,
-   "urban": 3.55
+   "combined": 3.61,
+   "rural": 3.59,
+   "urban": 3.49
   },
   {
    "date": "2017-03-01",
-   "combined": 3.89,
-   "rural": 3.75,
-   "urban": 3.96
+   "combined": 3.77,
+   "rural": 3.74,
+   "urban": 3.95
   },
   {
    "date": "2017-04-01",
-   "combined": 2.99,
-   "rural": 3.02,
-   "urban": 3.03
+   "combined": 3.13,
+   "rural": 2.97,
+   "urban": 3.0
   },
   {
    "date": "2017-05-01",
-   "combined": 2.18,
-   "rural": 2.3,
-   "urban": 2.13
+   "combined": 2.22,
+   "rural": 2.35,
+   "urban": 2.08
   },
   {
    "date": "2017-06-01",
    "combined": 1.46,
-   "rural": 1.52,
-   "urban": 1.41
+   "rural": 1.45,
+   "urban": 1.47
   },
   {
    "date": "2017-07-01",
-   "combined": 2.36,
-   "rural": 2.41,
-   "urban": 2.17
+   "combined": 2.32,
+   "rural": 2.3,
+   "urban": 2.19
   },
   {
    "date": "2017-08-01",
-   "combined": 3.28,
-   "rural": 3.22,
-   "urban": 3.35
+   "combined": 3.18,
+   "rural": 3.3,
+   "urban": 3.37
   },
   {
    "date": "2017-09-01",
-   "combined": 3.28,
-   "rural": 3.15,
-   "urban": 3.44
+   "combined": 3.34,
+   "rural": 3.16,
+   "urban": 3.38
   },
   {
    "date": "2017-10-01",
-   "combined": 3.58,
-   "rural": 3.36,
-   "urban": 3.81
+   "combined": 3.61,
+   "rural": 3.29,
+   "urban": 3.8
   },
   {
    "date": "2017-11-01",
-   "combined": 4.88,
-   "rural": 4.79,
-   "urban": 4.9
+   "combined": 4.92,
+   "rural": 4.73,
+   "urban": 4.82
   },
   {
    "date": "2017-12-01",
-   "combined": 5.21,
-   "rural": 5.27,
-   "urban": 5.09
+   "combined": 5.24,
+   "rural": 5.34,
+   "urban": 5.01
   },
   {
    "date": "2018-01-01",
-   "combined": 5.07,
+   "combined": 5.1,
    "rural": 5.21,
-   "urban": 4.93
-  },
-  {
-   "date": "2018-02-01",
-   "combined": 4.44,
-   "rural": 4.45,
-   "urban": 4.52
-  },
-  {
-   "date": "2018-03-01",
-   "combined": 4.28,
-   "rural": 4.44,
-   "urban": 4.12
-  },
-  {
-   "date": "2018-04-01",
-   "combined": 4.58,
-   "rural": 4.67,
-   "urban": 4.42
-  },
-  {
-   "date": "2018-05-01",
-   "combined": 4.87,
-   "rural": 4.88,
-   "urban": 4.72
-  },
-  {
-   "date": "2018-06-01",
-   "combined": 4.92,
-   "rural": 4.93,
    "urban": 4.85
   },
   {
+   "date": "2018-02-01",
+   "combined": 4.36,
+   "rural": 4.48,
+   "urban": 4.55
+  },
+  {
+   "date": "2018-03-01",
+   "combined": 4.35,
+   "rural": 4.47,
+   "urban": 4.09
+  },
+  {
+   "date": "2018-04-01",
+   "combined": 4.49,
+   "rural": 4.61,
+   "urban": 4.37
+  },
+  {
+   "date": "2018-05-01",
+   "combined": 4.91,
+   "rural": 4.89,
+   "urban": 4.65
+  },
+  {
+   "date": "2018-06-01",
+   "combined": 4.89,
+   "rural": 5.01,
+   "urban": 4.92
+  },
+  {
    "date": "2018-07-01",
-   "combined": 4.17,
-   "rural": 4.11,
-   "urban": 4.32
+   "combined": 4.1,
+   "rural": 4.08,
+   "urban": 4.42
   },
   {
    "date": "2018-08-01",
-   "combined": 3.69,
-   "rural": 3.41,
-   "urban": 3.99
+   "combined": 3.65,
+   "rural": 3.33,
+   "urban": 3.97
   },
   {
    "date": "2018-09-01",
-   "combined": 3.7,
-   "rural": 3.27,
-   "urban": 4.31
+   "combined": 3.65,
+   "rural": 3.2,
+   "urban": 4.4
   },
   {
    "date": "2018-10-01",
-   "combined": 3.38,
-   "rural": 2.82,
-   "urban": 4.04
+   "combined": 3.35,
+   "rural": 2.91,
+   "urban": 4.08
   },
   {
    "date": "2018-11-01",
-   "combined": 2.33,
-   "rural": 1.71,
-   "urban": 3.12
+   "combined": 2.34,
+   "rural": 1.78,
+   "urban": 3.07
   },
   {
    "date": "2018-12-01",
-   "combined": 2.11,
-   "rural": 1.5,
-   "urban": 2.91
+   "combined": 2.07,
+   "rural": 1.51,
+   "urban": 2.95
   },
   {
    "date": "2019-01-01",
-   "combined": 1.97,
-   "rural": 1.22,
-   "urban": 2.91
+   "combined": 1.94,
+   "rural": 1.24,
+   "urban": 2.95
   },
   {
    "date": "2019-02-01",
-   "combined": 2.57,
-   "rural": 1.81,
-   "urban": 3.43
+   "combined": 2.65,
+   "rural": 1.8,
+   "urban": 3.37
   },
   {
    "date": "2019-03-01",
-   "combined": 2.86,
+   "combined": 2.78,
    "rural": 1.8,
-   "urban": 4.1
+   "urban": 4.07
   },
   {
    "date": "2019-04-01",
-   "combined": 2.99,
-   "rural": 1.87,
-   "urban": 4.3
+   "combined": 3.05,
+   "rural": 1.93,
+   "urban": 4.32
   },
   {
    "date": "2019-05-01",
-   "combined": 3.05,
-   "rural": 1.86,
-   "urban": 4.51
+   "combined": 3.03,
+   "rural": 1.92,
+   "urban": 4.58
   },
   {
    "date": "2019-06-01",
-   "combined": 3.18,
-   "rural": 2.21,
-   "urban": 4.33
+   "combined": 3.29,
+   "rural": 2.18,
+   "urban": 4.28
   },
   {
    "date": "2019-07-01",
-   "combined": 3.15,
-   "rural": 2.19,
-   "urban": 4.22
+   "combined": 3.26,
+   "rural": 2.3,
+   "urban": 4.1
   },
   {
    "date": "2019-08-01",
-   "combined": 3.28,
-   "rural": 2.25,
-   "urban": 4.49
+   "combined": 3.38,
+   "rural": 2.28,
+   "urban": 4.5
   },
   {
    "date": "2019-09-01",
-   "combined": 3.99,
-   "rural": 3.24,
-   "urban": 4.78
+   "combined": 4.07,
+   "rural": 3.23,
+   "urban": 4.76
   },
   {
    "date": "2019-10-01",
-   "combined": 4.62,
-   "rural": 4.29,
-   "urban": 5.11
+   "combined": 4.59,
+   "rural": 4.17,
+   "urban": 5.14
   },
   {
    "date": "2019-11-01",
-   "combined": 5.54,
-   "rural": 5.27,
-   "urban": 5.76
+   "combined": 5.53,
+   "rural": 5.24,
+   "urban": 5.82
   },
   {
    "date": "2019-12-01",
-   "combined": 7.35,
-   "rural": 7.33,
-   "urban": 7.46
+   "combined": 7.32,
+   "rural": 7.29,
+   "urban": 7.49
   },
   {
    "date": "2020-01-01",
-   "combined": 7.59,
-   "rural": 7.73,
-   "urban": 7.39
+   "combined": 7.62,
+   "rural": 7.74,
+   "urban": 7.36
   },
   {
    "date": "2020-02-01",
-   "combined": 6.58,
-   "rural": 6.67,
-   "urban": 6.57
+   "combined": 6.51,
+   "rural": 6.66,
+   "urban": 6.65
   },
   {
    "date": "2020-03-01",
-   "combined": 5.84,
-   "rural": 6.09,
-   "urban": 5.59
+   "combined": 5.95,
+   "rural": 6.11,
+   "urban": 5.66
   },
   {
    "date": "2020-04-01",
-   "combined": 7.22,
-   "rural": 7.2,
-   "urban": 7.33
+   "combined": 7.12,
+   "rural": 7.16,
+   "urban": 7.35
   },
   {
    "date": "2020-05-01",
-   "combined": 6.27,
+   "combined": 6.28,
    "rural": 6.18,
-   "urban": 6.43
+   "urban": 6.37
   },
   {
    "date": "2020-06-01",
-   "combined": 6.23,
-   "rural": 6.34,
-   "urban": 6.12
+   "combined": 6.24,
+   "rural": 6.27,
+   "urban": 6.08
   },
   {
    "date": "2020-07-01",
-   "combined": 6.73,
-   "rural": 6.76,
-   "urban": 6.7
+   "combined": 6.71,
+   "rural": 6.74,
+   "urban": 6.69
   },
   {
    "date": "2020-08-01",
-   "combined": 6.69,
-   "rural": 6.66,
-   "urban": 6.8
+   "combined": 6.68,
+   "rural": 6.57,
+   "urban": 6.78
   },
   {
    "date": "2020-09-01",
-   "combined": 7.27,
-   "rural": 7.36,
-   "urban": 7.26
+   "combined": 7.29,
+   "rural": 7.31,
+   "urban": 7.27
   },
   {
    "date": "2020-10-01",
    "combined": 7.61,
    "rural": 7.75,
-   "urban": 7.33
+   "urban": 7.34
   },
   {
    "date": "2020-11-01",
-   "combined": 6.93,
-   "rural": 7.2,
-   "urban": 6.73
+   "combined": 6.9,
+   "rural": 7.15,
+   "urban": 6.78
   },
   {
    "date": "2020-12-01",
-   "combined": 4.59,
-   "rural": 4.07,
-   "urban": 5.19
+   "combined": 4.55,
+   "rural": 4.15,
+   "urban": 5.2
   },
   {
    "date": "2021-01-01",
-   "combined": 4.06,
-   "rural": 3.23,
-   "urban": 5.13
+   "combined": 4.05,
+   "rural": 3.28,
+   "urban": 5.2
   },
   {
    "date": "2021-02-01",
-   "combined": 5.03,
-   "rural": 4.19,
-   "urban": 5.96
+   "combined": 5.1,
+   "rural": 4.2,
+   "urban": 5.98
   },
   {
    "date": "2021-03-01",
-   "combined": 5.52,
-   "rural": 4.61,
-   "urban": 6.52
+   "combined": 5.49,
+   "rural": 4.6,
+   "urban": 6.51
   },
   {
    "date": "2021-04-01",
-   "combined": 4.23,
-   "rural": 3.75,
-   "urban": 4.71
+   "combined": 4.27,
+   "rural": 3.78,
+   "urban": 4.73
   },
   {
    "date": "2021-05-01",
-   "combined": 6.3,
-   "rural": 6.55,
-   "urban": 5.91
+   "combined": 6.29,
+   "rural": 6.46,
+   "urban": 5.99
   },
   {
    "date": "2021-06-01",
-   "combined": 6.26,
-   "rural": 6.16,
-   "urban": 6.37
+   "combined": 6.25,
+   "rural": 6.15,
+   "urban": 6.36
   },
   {
    "date": "2021-07-01",
-   "combined": 5.59,
-   "rural": 5.49,
-   "urban": 5.82
+   "combined": 5.55,
+   "rural": 5.45,
+   "urban": 5.9
   },
   {
    "date": "2021-08-01",
-   "combined": 5.3,
-   "rural": 5.28,
-   "urban": 5.32
+   "combined": 5.28,
+   "rural": 5.3,
+   "urban": 5.37
   },
   {
    "date": "2021-09-01",
-   "combined": 4.35,
-   "rural": 4.13,
-   "urban": 4.57
+   "combined": 4.37,
+   "rural": 4.14,
+   "urban": 4.48
   },
   {
    "date": "2021-10-01",
-   "combined": 4.48,
-   "rural": 4.07,
+   "combined": 4.56,
+   "rural": 4.08,
    "urban": 5.04
   },
   {
    "date": "2021-11-01",
-   "combined": 4.91,
+   "combined": 4.9,
    "rural": 4.29,
-   "urban": 5.54
+   "urban": 5.51
   },
   {
    "date": "2021-12-01",
-   "combined": 5.66,
-   "rural": 5.36,
+   "combined": 5.68,
+   "rural": 5.31,
    "urban": 5.9
   },
   {
    "date": "2022-01-01",
-   "combined": 6.01,
-   "rural": 6.12,
+   "combined": 6.08,
+   "rural": 6.11,
    "urban": 5.91
   },
   {
    "date": "2022-02-01",
-   "combined": 6.07,
-   "rural": 6.38,
-   "urban": 5.75
+   "combined": 6.06,
+   "rural": 6.48,
+   "urban": 5.64
   },
   {
    "date": "2022-03-01",
-   "combined": 6.95,
-   "rural": 7.66,
-   "urban": 6.12
+   "combined": 6.9,
+   "rural": 7.7,
+   "urban": 6.11
   },
   {
    "date": "2022-04-01",
-   "combined": 7.79,
+   "combined": 7.82,
    "rural": 8.38,
-   "urban": 7.09
+   "urban": 7.02
   },
   {
    "date": "2022-05-01",
-   "combined": 7.04,
-   "rural": 7.08,
-   "urban": 7.08
+   "combined": 6.98,
+   "rural": 7.13,
+   "urban": 7.07
   },
   {
    "date": "2022-06-01",
-   "combined": 7.01,
-   "rural": 7.09,
-   "urban": 6.86
+   "combined": 6.94,
+   "rural": 7.21,
+   "urban": 6.92
   },
   {
    "date": "2022-07-01",
-   "combined": 6.71,
-   "rural": 6.8,
-   "urban": 6.49
+   "combined": 6.66,
+   "rural": 6.81,
+   "urban": 6.5
   },
   {
    "date": "2022-08-01",
-   "combined": 7.0,
-   "rural": 7.15,
+   "combined": 6.99,
+   "rural": 7.14,
    "urban": 6.72
   },
   {
    "date": "2022-09-01",
-   "combined": 7.41,
-   "rural": 7.56,
-   "urban": 7.27
+   "combined": 7.33,
+   "rural": 7.59,
+   "urban": 7.3
   },
   {
    "date": "2022-10-01",
    "combined": 6.77,
-   "rural": 6.98,
-   "urban": 6.5
+   "rural": 7.03,
+   "urban": 6.51
   },
   {
    "date": "2022-11-01",
-   "combined": 5.88,
-   "rural": 6.09,
+   "combined": 5.92,
+   "rural": 6.06,
    "urban": 5.68
   },
   {
    "date": "2022-12-01",
-   "combined": 5.72,
-   "rural": 6.05,
-   "urban": 5.39
+   "combined": 5.71,
+   "rural": 6.08,
+   "urban": 5.35
   },
   {
    "date": "2023-01-01",
-   "combined": 6.52,
-   "rural": 6.85,
-   "urban": 6.0
+   "combined": 6.53,
+   "rural": 6.79,
+   "urban": 5.92
   },
   {
    "date": "2023-02-01",
-   "combined": 6.44,
-   "rural": 6.72,
-   "urban": 6.1
+   "combined": 6.4,
+   "rural": 6.66,
+   "urban": 6.14
   },
   {
    "date": "2023-03-01",
    "combined": 5.66,
-   "rural": 5.51,
-   "urban": 5.89
+   "rural": 5.56,
+   "urban": 5.87
   },
   {
    "date": "2023-04-01",
-   "combined": 4.7,
-   "rural": 4.68,
-   "urban": 4.85
+   "combined": 4.69,
+   "rural": 4.71,
+   "urban": 4.89
   },
   {
    "date": "2023-05-01",
    "combined": 4.31,
-   "rural": 4.23,
-   "urban": 4.33
+   "rural": 4.22,
+   "urban": 4.29
   },
   {
    "date": "2023-06-01",
-   "combined": 4.87,
-   "rural": 4.78,
-   "urban": 4.96
+   "combined": 4.84,
+   "rural": 4.74,
+   "urban": 4.93
   },
   {
    "date": "2023-07-01",
-   "combined": 7.44,
-   "rural": 7.63,
+   "combined": 7.45,
+   "rural": 7.69,
    "urban": 7.2
   },
   {
    "date": "2023-08-01",
-   "combined": 6.83,
-   "rural": 7.02,
-   "urban": 6.59
+   "combined": 6.86,
+   "rural": 7.1,
+   "urban": 6.62
   },
   {
    "date": "2023-09-01",
-   "combined": 5.02,
-   "rural": 5.33,
-   "urban": 4.65
+   "combined": 5.09,
+   "rural": 5.32,
+   "urban": 4.64
   },
   {
    "date": "2023-10-01",
-   "combined": 4.87,
-   "rural": 5.12,
-   "urban": 4.62
+   "combined": 4.83,
+   "rural": 5.17,
+   "urban": 4.61
   },
   {
    "date": "2023-11-01",
-   "combined": 5.55,
-   "rural": 5.85,
+   "combined": 5.48,
+   "rural": 5.93,
    "urban": 5.26
   },
   {
    "date": "2023-12-01",
-   "combined": 5.69,
-   "rural": 5.93,
-   "urban": 5.46
+   "combined": 5.73,
+   "rural": 5.95,
+   "urban": 5.51
   },
   {
    "date": "2024-01-01",
-   "combined": 5.1,
-   "rural": 5.34,
-   "urban": 4.92
+   "combined": 5.05,
+   "rural": 5.39,
+   "urban": 4.95
   },
   {
    "date": "2024-02-01",
-   "combined": 5.09,
-   "rural": 5.34,
-   "urban": 4.78
+   "combined": 5.16,
+   "rural": 5.38,
+   "urban": 4.82
   },
   {
    "date": "2024-03-01",
-   "combined": 4.85,
-   "rural": 5.51,
-   "urban": 4.14
+   "combined": 4.93,
+   "rural": 5.48,
+   "urban": 4.16
   },
   {
    "date": "2024-04-01",
-   "combined": 4.83,
-   "rural": 5.43,
-   "urban": 4.11
+   "combined": 4.8,
+   "rural": 5.35,
+   "urban": 4.13
   },
   {
    "date": "2024-05-01",
-   "combined": 4.8,
-   "rural": 5.34,
-   "urban": 4.21
+   "combined": 4.88,
+   "rural": 5.32,
+   "urban": 4.22
   },
   {
    "date": "2024-06-01",
-   "combined": 5.08,
-   "rural": 5.66,
+   "combined": 5.14,
+   "rural": 5.68,
    "urban": 4.39
   },
   {
    "date": "2024-07-01",
-   "combined": 3.6,
-   "rural": 4.1,
-   "urban": 3.03
+   "combined": 3.67,
+   "rural": 4.08,
+   "urban": 2.95
   },
   {
    "date": "2024-08-01",
-   "combined": 3.65,
-   "rural": 4.16,
-   "urban": 3.14
+   "combined": 3.67,
+   "rural": 4.08,
+   "urban": 3.05
   },
   {
    "date": "2024-09-01",
-   "combined": 5.49,
-   "rural": 5.87,
-   "urban": 5.05
+   "combined": 5.46,
+   "rural": 5.88,
+   "urban": 5.06
   },
   {
    "date": "2024-10-01",
-   "combined": 6.21,
-   "rural": 6.68,
-   "urban": 5.62
+   "combined": 6.25,
+   "rural": 6.65,
+   "urban": 5.53
   },
   {
    "date": "2024-11-01",
-   "combined": 5.48,
-   "rural": 5.95,
-   "urban": 4.89
+   "combined": 5.5,
+   "rural": 5.9,
+   "urban": 4.9
   },
   {
    "date": "2024-12-01",
-   "combined": 5.22,
-   "rural": 5.76,
-   "urban": 4.58
+   "combined": 5.21,
+   "rural": 5.71,
+   "urban": 4.5
   },
   {
    "date": "2025-01-01",
-   "combined": 4.26,
-   "rural": 4.59,
-   "urban": 3.87
+   "combined": 4.06,
+   "rural": 4.1,
+   "urban": 3.99
   },
   {
    "date": "2025-02-01",
-   "combined": 3.61,
-   "rural": 3.79,
-   "urban": 3.32
+   "combined": 3.49,
+   "rural": 3.5,
+   "urban": 3.47
   },
   {
    "date": "2025-03-01",
-   "combined": 3.34,
-   "rural": 3.25,
-   "urban": 3.43
+   "combined": 3.56,
+   "rural": 3.3,
+   "urban": 3.86
   },
   {
    "date": "2025-04-01",
-   "combined": 3.16,
-   "rural": 2.92,
-   "urban": 3.36
+   "combined": 3.34,
+   "rural": 3.14,
+   "urban": 3.47
   },
   {
    "date": "2025-05-01",
-   "combined": 2.82,
-   "rural": 2.59,
-   "urban": 3.12
+   "combined": 3.03,
+   "rural": 2.91,
+   "urban": 3.3
   },
   {
    "date": "2025-06-01",
-   "combined": 2.1,
-   "rural": 1.72,
-   "urban": 2.56
+   "combined": 2.31,
+   "rural": 1.98,
+   "urban": 2.76
   },
   {
    "date": "2025-07-01",
-   "combined": 1.61,
-   "rural": 1.18,
-   "urban": 2.1
+   "combined": 1.62,
+   "rural": 1.31,
+   "urban": 2.13
   },
   {
    "date": "2025-08-01",
-   "combined": 2.07,
-   "rural": 1.69,
-   "urban": 2.47
+   "combined": 2.01,
+   "rural": 1.8,
+   "urban": 2.37
   },
   {
    "date": "2025-09-01",
-   "combined": 1.44,
+   "combined": 1.41,
    "rural": 1.07,
    "urban": 1.83
   },
   {
    "date": "2025-10-01",
-   "combined": 0.25,
-   "rural": -0.25,
-   "urban": 0.88
+   "combined": 0.04,
+   "rural": -0.34,
+   "urban": 0.59
   },
   {
    "date": "2025-11-01",
-   "combined": 0.71,
-   "rural": 0.1,
-   "urban": 1.4
+   "combined": 0.49,
+   "rural": 0.06,
+   "urban": 1.0
   },
   {
    "date": "2025-12-01",
-   "combined": 1.33,
-   "rural": 0.76,
-   "urban": 2.03
+   "combined": 1.17,
+   "rural": 0.57,
+   "urban": 1.84
   },
   {
    "date": "2026-01-01",
-   "combined": 2.74,
+   "combined": 2.73,
    "rural": 2.73,
    "urban": 2.75
   },
@@ -1035,17 +1107,17 @@
    "date": "2026-03-01",
    "combined": 3.4,
    "rural": 3.63,
-   "urban": 3.11
+   "urban": 3.1
   },
   {
    "date": "2026-04-01",
    "combined": 3.48,
-   "rural": 3.74,
+   "rural": 3.73,
    "urban": 3.16
   },
   {
    "date": "2026-05-01",
-   "combined": 3.93,
+   "combined": 3.94,
    "rural": 4.25,
    "urban": 3.53
   },
@@ -1063,7 +1135,7 @@
   },
   {
    "date": "2026-08-01",
-   "combined": 4.83,
+   "combined": 4.82,
    "rural": 5.24,
    "urban": 4.31
   },
@@ -1071,7 +1143,7 @@
    "date": "2026-09-01",
    "combined": 5.54,
    "rural": 6.08,
-   "urban": 4.88
+   "urban": 4.87
   }
  ]
 }
