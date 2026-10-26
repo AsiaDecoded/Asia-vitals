@@ -52,18 +52,47 @@ CALLS = [
     ("cpi2012_allindia_2025", "/api/cpi/getCPIIndex",
      {"base_year": "2012", "series": "Current", "year": "2025", "state_code": "99",
       "limit": "100", "page": "1", "Format": "JSON"}),
+    # Item level, All India (state 1), Combined (sector 3), latest month, full paging test
+    ("cpi2024_ai_comb_sep26_p1", "/api/cpi/getCPIData",
+     {"base_year": "2024", "series": "Current", "year": "2026", "month_code": "9",
+      "state_code": "1", "sector_code": "3", "limit": "200", "page": "1", "Format": "JSON"}),
+    ("cpi2024_ai_comb_sep26_p4", "/api/cpi/getCPIData",
+     {"base_year": "2024", "series": "Current", "year": "2026", "month_code": "9",
+      "state_code": "1", "sector_code": "3", "limit": "200", "page": "4", "Format": "JSON"}),
+    ("cpi2024_ai_comb_item1", "/api/cpi/getItemIndex",
+     {"base_year": "2024", "series": "Current", "year": "2025,2026", "state_code": "1",
+      "sector_code": "3", "item_code": "1", "limit": "200", "page": "1", "Format": "JSON"}),
+    ("cpi2024_ai_comb_2025", "/api/cpi/getCPIData",
+     {"base_year": "2024", "series": "Current", "year": "2025", "month_code": "1",
+      "state_code": "1", "sector_code": "3", "limit": "200", "page": "1", "Format": "JSON"}),
+    ("cpi2024_back_all", "/api/cpi/getCPIData",
+     {"base_year": "2024", "series": "Back", "sector_code": "3", "limit": "200",
+      "page": "1", "Format": "JSON"}),
     # WPI
     ("wpi_base_years", "/api/wpi/getWpiBaseYear", {}),
     ("wpi_filters_2223", "/api/wpi/getWpiData", {"base_year": "2022-23"}),
     ("wpi2223_2026", "/api/wpi/getWpiRecords",
      {"base_year": "2022-23", "year": "2026", "limit": "100", "page": "1", "Format": "JSON"}),
+    ("wpi2223_major_2023_26", "/api/wpi/getWpiRecords",
+     {"base_year": "2022-23", "year": "2023,2024,2025,2026",
+      "major_group_code": "1000000000,1100000000,1200000000,1300000000",
+      "limit": "200", "page": "1", "Format": "JSON"}),
+    ("wpi1112_2025", "/api/wpi/getWpiRecords",
+     {"base_year": "2011-12", "year": "2025", "limit": "200", "page": "1", "Format": "JSON"}),
     ("wpi2223_limit1000", "/api/wpi/getWpiRecords",
      {"base_year": "2022-23", "year": "2026", "limit": "1000", "page": "1", "Format": "JSON"}),
 ]
 
 
+PAGES = [
+    ("page_cpi_portal", "https://cpi.mospi.gov.in/"),
+    ("page_mospi_cpi", "https://www.mospi.gov.in/cpi"),
+    ("page_eaindustry", "https://eaindustry.nic.in/"),
+]
+
+
 def get(path, params):
-    url = BASE + path + ("?" + urllib.parse.urlencode(params) if params else "")
+    url = (path if path.startswith("http") else BASE + path) + ("?" + urllib.parse.urlencode(params) if params else "")
     req = urllib.request.Request(url, headers=UA)
     try:
         with urllib.request.urlopen(req, timeout=60, context=CTX) as r:
@@ -107,6 +136,11 @@ def main(out):
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
     summary = []
+    for name, url in PAGES:
+        url, status, body = get(url, {})
+        (out / f"{name}.html").write_bytes(body[:3_000_000])
+        summary.append({"name": name, "url": url, "status": status, "bytes": len(body)})
+        print(name, status, len(body))
     for name, path, params in CALLS:
         url, status, body = get(path, params)
         entry = {"name": name, "url": url, "status": status, "bytes": len(body)}
