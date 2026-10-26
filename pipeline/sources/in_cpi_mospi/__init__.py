@@ -7,10 +7,7 @@ One continuous series per sector (combined, rural, urban):
 Index: the 2024-base series, linked. y/y: MoSPI's published rates. MoSPI publishes no 2024-base
 y/y for 2025, and the back series carries the 2012-base rates published at the time, so 2014-2025
 y/y are the 2012-base published rates and 2026 on are 2024-base rates (column yoy_base).
-Computing 2025 y/y from the linked index instead would put the splice into the rate: the linking
-factor matches annual averages, not each month.
-m/m is computed from the index (not seasonally adjusted), except January 2025, the splice month,
-where it comes from the 2012-base index.
+Nothing is calculated here: the file carries only what MoSPI publishes (index and y/y).
 MoSPI revises the latest (provisional) month a month later, so any change in the data counts
 as an update; a new month gives a new release code.
 """
@@ -89,10 +86,6 @@ def _tidy(raw):
             v["yoy_base"] = "2024" if d >= "2026-01-01" else "2012"
             if d < "2026-01-01" and d >= CURRENT_START:
                 v["yoy"] = old.get(key, {}).get(d, {}).get("yoy")
-        o = old.get(key, {})
-        jan, dec = o.get(CURRENT_START, {}).get("index"), o.get("2024-12-01", {}).get("index")
-        if CURRENT_START in series:
-            series[CURRENT_START]["mom_splice"] = round((jan / dec - 1) * 100, 2) if jan and dec else None
     return out, stray
 
 
@@ -134,8 +127,6 @@ def _checks(tidy, raw, state):
         for d in s:
             if d[:4] == "2025" and s[d]["yoy"] is None:
                 errors.append(f"{key}: 2012-base y/y missing for {d}")
-        if CURRENT_START <= latest and s.get(CURRENT_START, {}).get("mom_splice") is None:
-            errors.append(f"{key}: 2012-base index missing for Dec 2024 or Jan 2025 (splice m/m)")
         lv = s.get(latest, {})
         if lv.get("yoy") is None:
             errors.append(f"{key}: y/y missing for latest month {latest}")
@@ -149,15 +140,11 @@ def _write(tidy, release):
         s = tidy[key]
         for d in sorted(s):
             v = s[d]
-            prev = s.get(_shift(d, -1), {}).get("index")
-            mom = round((v["index"] / prev - 1) * 100, 2) if prev and v["index"] is not None else None
-            if d == CURRENT_START:
-                mom = v.get("mom_splice")
             rows.append({"date": d, "series": key, "label": label, "order": order,
-                         "index": v["index"], "yoy": v["yoy"], "mom": mom, "basis": v["basis"],
+                         "index": v["index"], "yoy": v["yoy"], "basis": v["basis"],
                          "yoy_base": v["yoy_base"] if v["yoy"] is not None else None})
     rows.sort(key=lambda r: (r["date"], r["order"]))
-    cols = ["date", "series", "label", "order", "index", "yoy", "mom", "basis", "yoy_base"]
+    cols = ["date", "series", "label", "order", "index", "yoy", "basis", "yoy_base"]
     with open(OUT / "in_cpi.csv", "w", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
         w.writerow(cols)
@@ -166,7 +153,7 @@ def _write(tidy, release):
 
     def long_rows():
         for r in rows:
-            for meas, unit in (("index", "index, 2024 = 100"), ("yoy", "%"), ("mom", "%")):
+            for meas, unit in (("index", "index, 2024 = 100"), ("yoy", "%")):
                 yield {"country": "IN", "indicator": "cpi", "series": r["series"], "label": r["label"],
                        "measure": meas, "area": "all-India", "freq": "M", "date": r["date"],
                        "value": r[meas], "unit": unit, "source": "MoSPI", "release": release["code"]}
@@ -194,7 +181,7 @@ def update(from_file=None, **_):
     else:
         raw = _fetch()
     tidy, stray = _tidy(raw)
-    compact = sorted([k, d, v["index"], v["yoy"], v.get("mom_splice")] for k, s in tidy.items() for d, v in s.items())
+    compact = sorted([k, d, v["index"], v["yoy"]] for k, s in tidy.items() for d, v in s.items())
     fingerprint = hashlib.sha256(json.dumps(compact).encode()).hexdigest()[:16]
     if fingerprint == state.get("fingerprint") and not from_file:
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {state.get('latest_month')})"}

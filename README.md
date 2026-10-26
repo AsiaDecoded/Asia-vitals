@@ -16,7 +16,7 @@ Data pipeline for Asia Decoded's macro dashboards: GDP, inflation and trade for 
 | Japan CPI, Statistics Bureau | `sources/jp_cpi_estat` | Monthly, 1970–; national and Tokyo; e-Stat API table 0004052037 (2025 base) | Any change in the data (new month, Tokyo early release, revisions) |
 | Japan CPI contributions, Statistics Bureau | `sources/jp_cpi_contrib_estat` | Monthly, Jul 2016–; national contributions to y/y (services, goods, fresh food, energy) from Table 5 of each monthly report (Excel files found through the e-Stat file catalogue), as published on the base then in use | A new month's Table 5 in the catalogue (C2026-09 → C2026-10) |
 | Japan PPI, Bank of Japan | `sources/jp_ppi_boj` | Monthly, 1960–; producer, export and import prices (CGPI, 2020 base); BoJ API database PR01, no key | Any change in the data; new month gives a new code (M2026-09 → M2026-10) |
-| India CPI, MoSPI | `sources/in_cpi_mospi` | Monthly, Jan 2013–; general index, all-India, rural/urban/combined; 2024 base (Jan 2025–) with MoSPI's linked back series (2013–2024); y/y as published (2012-base rates to Dec 2025, 2024-base from Jan 2026); MoSPI API, no key | Any change in the data; new month gives a new code (M2026-09 → M2026-10) |
+| India CPI, MoSPI | `sources/in_cpi_mospi` | Monthly, Jan 2013–; general index, all-India, rural/urban/combined; 2024 base (Jan 2025–) with MoSPI's linked back series (2013–2024); y/y as published (2012-base rates to Dec 2025, 2024-base from Jan 2026); nothing calculated; MoSPI API, no key | Any change in the data; new month gives a new code (M2026-09 → M2026-10) |
 
 The e-Stat API needs the repository secret `ESTAT_APP_ID`. The Excel readers (openpyxl, xlrd) are installed by the workflow.
 
