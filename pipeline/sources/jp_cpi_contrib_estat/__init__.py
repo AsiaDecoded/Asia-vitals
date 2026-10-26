@@ -258,7 +258,8 @@ def update(from_dir=None, **_):
     if not table:
         raise CheckFailed(["no Table 5 files found in the e-Stat catalogue"])
     latest = max(table)
-    if not new and state.get("latest_month") == latest and not from_dir and (OUT / "jp_cpi_items.csv").exists():
+    if not new and state.get("latest_month") == latest and not from_dir and (OUT / "jp_cpi_items.csv").exists() \
+            and state.get("items_months") == min(12, len(table)):
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {latest[:7]})"}
 
     errors, warnings = _checks(table)
@@ -309,6 +310,7 @@ def update(from_dir=None, **_):
             for i in items_by_month[d]:
                 w.writerow([d, i["code"], names.get(i["code"], i["name_ja"]), i["name_ja"]] +
                            ["" if i[k] is None else i[k] for k in ("weight", "index", "mom", "yoy", "contrib_mom", "contrib_yoy")])
-    write_release(OUT, release, warnings, len(out), {"long_rows": nlong, "new_months": new, "items": len(items)})
+    write_release(OUT, release, warnings, len(out), {"long_rows": nlong, "new_months": new, "items": len(items),
+                                                 "items_months": len(item_months)})
     return {"updated": True, "code": code, "summary": f"{release['label']}: {len(table)} months, {len(new)} new",
             "warnings": warnings}
