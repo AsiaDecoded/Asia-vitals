@@ -64,3 +64,11 @@ def cpi(series, years=None, **filters):
 
 def month_number(name):
     return MONTHS.index(str(name).strip().capitalize()) + 1
+
+
+def cpi_2012(years, **filters):
+    """CPI on the old 2012 base (to Dec 2025): groups and subgroups, published y/y."""
+    params = {"base_year": "2012", "series": "Current", "year": ",".join(str(y) for y in years),
+              **{k: str(v) for k, v in filters.items()}}
+    return paged("/api/cpi/getCPIIndex", params)
+
