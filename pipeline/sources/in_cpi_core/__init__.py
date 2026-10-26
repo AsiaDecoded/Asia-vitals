@@ -55,7 +55,7 @@ OLD_EXCL = {"core1": ["food_bev", "fuel_light", "petrol", "diesel"],
 RBI_2025 = {"core1": [3.9, 4.3, 4.3, 4.4, 4.3, 4.6, 4.2, 4.3, 4.5, 4.5, 4.4, 4.8],
             "core2": [3.2, 3.4, 3.3, 3.5, 3.4, 3.5, 3.2, 3.1, 3.1, 2.6, 2.4, 2.4]}
 LINK_YEAR = "2025"
-CALC_VERSION = 7  # bump when the calculation changes, so the next run recomputes without new data
+CALC_VERSION = 8  # bump when the calculation changes, so the next run recomputes without new data
 
 
 FUEL_PRICES = ROOT / "raw" / "in" / "fuel_ppac" / "ppac_metro_daily.json"
@@ -450,6 +450,39 @@ def update(from_file=None, **_):
         for m in sorted(linked):
             v = linked[m]
             w.writerow([m, round(v["cpi"], 2), round(v["food"], 3), round(v["fuel"], 3), round(v["core"], 3), v["base"]])
+
+    # Item contributions to CPI y/y (2024 basket, from Jan 2026): weight x 12-month change in the item index
+    # / headline index a year earlier. MoSPI's index is a weighted average of item indices, so they add up to
+    # the headline y/y; checked to 0.02pp. y/y is MoSPI's published item inflation.
+    iidx, iyoy, gen = defaultdict(dict), defaultdict(dict), {}
+    for r in rows:
+        if r.get("state") != "All India" or r.get("sector") != "Combined" or r.get("index") in (None, ""):
+            continue
+        if r.get("item"):
+            iidx[r["code"]][_month(r)] = float(r["index"])
+            if r.get("inflation") not in (None, ""):
+                iyoy[r["code"]][_month(r)] = float(r["inflation"])
+        elif r.get("division") == "CPI (General)" and not r.get("group"):
+            gen[_month(r)] = float(r["index"])
+    item_rows = []
+    for m in sorted(gen):
+        p = _prev_year(m)
+        if p not in gen:
+            continue
+        tot = 0.0
+        for code, (name, wt) in weights.items():
+            s_ = iidx.get(code, {})
+            if m not in s_ or p not in s_:
+                continue
+            c = wt * (s_[m] - s_[p]) / gen[p]
+            tot += c
+            item_rows.append([m, code, name, round(wt, 4), iyoy[code].get(m, ""), round(c, 4)])
+        if abs(tot - (gen[m] / gen[p] - 1) * 100) > 0.02:
+            raise CheckFailed([f"{m}: item contributions sum to {tot:.3f}, headline y/y {(gen[m] / gen[p] - 1) * 100:.3f}"])
+    with open(OUT / "in_cpi_items.csv", "w", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["date", "code", "name", "weight", "yoy", "contrib_yoy"])
+        w.writerows(item_rows)
 
     def long_rows():
         for r in csv_rows:
