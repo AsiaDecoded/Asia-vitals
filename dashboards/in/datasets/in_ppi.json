@@ -1,0 +1,14 @@
+{
+ "description": "Output PPI (All commodities and major groups, Apr 2023 on), trial Input PPI for manufacturing (sector and 22 industry groups, Mar 2026 on) and WPI (All commodities and major groups), index 2022-23 = 100, as published by the Office of the Economic Adviser, DPIIT. Built by the AsiaDecoded/asia-vitals pipeline (data/in/ppi/in_ppi.csv).",
+ "schedule": "Replaced after each release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "in_ppi_M2026-09.csv",
+  "url": "/_blob/4dd7e7b86af461e66d6cb25f871e1f23"
+ },
+ "title": "India producer prices (2022-23 base)",
+ "updated": {
+  "at": "2026-10-26T12:15:00Z",
+  "by": "Claude"
+ }
+}

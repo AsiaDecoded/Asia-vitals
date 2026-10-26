@@ -1,0 +1,14 @@
+{
+ "description": "Output PPI All commodities (2022-23 = 100) from Apr 2023, linked to WPI 2011-12 All commodities before (Apr 2012 on) by the ratio of geometric means over FY 2024-25 (the OEA's linking year), with y/y calculated from the linked index (Asia Decoded calculation). Built by the AsiaDecoded/asia-vitals pipeline (data/in/ppi/in_ppi_spliced.csv).",
+ "schedule": "Replaced after each release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "in_ppi_spliced_M2026-09.csv",
+  "url": "/_blob/d69f27d2958f3587eed8dd71209bb176"
+ },
+ "title": "India output PPI, spliced with WPI",
+ "updated": {
+  "at": "2026-10-26T12:15:00Z",
+  "by": "Claude"
+ }
+}

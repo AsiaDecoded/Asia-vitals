@@ -1,0 +1,14 @@
+{
+ "description": "Expenditure-side GDP and its components from Cabinet Office (ESRI) Quarterly Estimates: levels (\u00a5 billion; seasonally adjusted annual rate and original quarterly series; real in chained 2020 yen), q/q, annualised q/q and y/y growth, contributions to real GDP growth, and ESRI deflators (2020 = 100). Built by the AsiaDecoded/asia-vitals pipeline (data/jp_gdp.csv) from ESRI's published CSV tables.",
+ "schedule": "Replaced after each ESRI GDP release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "jp_gdp_qe262_2.csv",
+  "url": "/_blob/1e5c78b69ff3cf03d65181e7914b4cd7"
+ },
+ "title": "Japan GDP, ESRI quarterly",
+ "updated": {
+  "at": "2026-10-25T05:53:32Z",
+  "by": "Claude"
+ }
+}

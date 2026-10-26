@@ -1,0 +1,14 @@
+{
+ "description": "Latest month of producer price data. Written by the AsiaDecoded/asia-vitals pipeline (data/jp/ppi/release_row.json).",
+ "schedule": "Replaced after each release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "ppi_release_M2026-09.json",
+  "url": "/_blob/65702ec6b597182627fb4b4ce31da51a"
+ },
+ "title": "PPI release",
+ "updated": {
+  "at": "2026-10-25T07:41:33Z",
+  "by": "Claude"
+ }
+}

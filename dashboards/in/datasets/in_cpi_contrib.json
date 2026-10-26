@@ -1,0 +1,14 @@
+{
+ "description": "Contributions (pp) of food and beverages, fuel and CPI excluding food and fuel to combined CPI y/y, monthly from Jan 2015: within the 2012 base to Dec 2025 and the 2024 base from Jan 2026 (base column). Asia Decoded calculation from MoSPI's published indices and weights; ex food and fuel is the residual. Built by the AsiaDecoded/asia-vitals pipeline (data/in/cpi_core/in_cpi_contrib.csv).",
+ "schedule": "Replaced after each release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "in_cpi_contrib_M2026-09.csv",
+  "url": "/_blob/f4c27dd3edd10c7ded0073d66536074f"
+ },
+ "title": "India CPI contributions",
+ "updated": {
+  "at": "2026-10-26T07:30:00Z",
+  "by": "Claude"
+ }
+}

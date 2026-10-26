@@ -1,0 +1,14 @@
+{
+ "description": "All-India CPI general index for combined, rural and urban, spliced, 2024 = 100, from Jan 2011: MoSPI's 2024-base series from Jan 2025, its back series 2013-2024, and the 2010-base index 2011-2012 linked by Asia Decoded (2013 geometric-mean ratio). y/y calculated from the spliced index from Jan 2012; MoSPI's published rates in yoy_published. Built by the AsiaDecoded/asia-vitals pipeline (data/in/cpi/in_cpi.csv).",
+ "schedule": "Replaced after each release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "in_cpi_M2026-09.csv",
+  "url": "/_blob/268993bce4e25866fe3f16f3ae12ebbc"
+ },
+ "title": "India CPI, MoSPI",
+ "updated": {
+  "at": "2026-10-26T04:12:24Z",
+  "by": "Claude"
+ }
+}

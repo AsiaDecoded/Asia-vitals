@@ -1,0 +1,15 @@
+{
+ "description": "Japan national CPI: contributions of services, goods less fresh food and energy, energy and fresh food to the y/y change in all items, in percentage points, as published in each monthly report's Table 5 (Statistics Bureau, via e-Stat), July 2016 on.",
+ "schedule": "Daily copy from the asia-vitals GitHub repository, which checks e-Stat twice a day",
+ "source": {
+  "kind": "file",
+  "name": "jp_cpi_contrib_C2026-09.csv",
+  "url": "/_blob/28925cf114d0a13a1cc8e42356a9edd9"
+ },
+ "staleAfterHours": 1080,
+ "title": "CPI contributions to y/y",
+ "updated": {
+  "at": "2026-10-25T13:55:00Z",
+  "by": "Claude"
+ }
+}

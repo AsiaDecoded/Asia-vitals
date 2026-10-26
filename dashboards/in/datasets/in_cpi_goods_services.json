@@ -1,0 +1,14 @@
+{
+ "description": "Combined CPI (2024 base) split into goods and services: weight (%), index (weighted average of MoSPI item indices with MoSPI item weights), y/y and contribution (pp) to CPI y/y, monthly from Jan 2025 (y/y from Jan 2026). Items typed by COICOP 2018 (MoSPI's ND/SD/D/S marks in Annex 5.3d). Asia Decoded calculation; built by the AsiaDecoded/asia-vitals pipeline (data/in/cpi_core/in_cpi_goods_services.csv).",
+ "schedule": "Replaced after each release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "in_cpi_goods_services_M2026-09.csv",
+  "url": "/_blob/68876906bffd7f1805e5d2915e914603"
+ },
+ "title": "India goods and services CPI",
+ "updated": {
+  "at": "2026-10-26T11:50:00Z",
+  "by": "Claude"
+ }
+}

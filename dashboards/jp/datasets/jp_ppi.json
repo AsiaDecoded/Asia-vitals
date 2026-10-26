@@ -1,0 +1,14 @@
+{
+ "description": "Bank of Japan Corporate Goods Price Index (2020 base) via the BoJ Time-Series Data Search API (database PR01): producer, export and import price indices with the BoJ's published y/y rates. Built by the AsiaDecoded/asia-vitals pipeline (data/jp/ppi/jp_ppi.csv).",
+ "schedule": "Replaced after each release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "jp_ppi_M2026-09.csv",
+  "url": "/_blob/d547f6091b910cb3030fa5a7fd5d686d"
+ },
+ "title": "Japan PPI, Bank of Japan",
+ "updated": {
+  "at": "2026-10-25T07:41:33Z",
+  "by": "Claude"
+ }
+}

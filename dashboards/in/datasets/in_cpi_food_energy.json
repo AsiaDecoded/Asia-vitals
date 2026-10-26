@@ -1,0 +1,14 @@
+{
+ "description": "All-India combined linked indices and y/y: food (group 01.1; 2012 base: Consumer Food Price Index), food and beverages (division 01; 2012 base: group), energy (group 04.5 + class 07.2.2; 2012 base: fuel and light + petrol + diesel), linked over 2025 by geometric-mean ratio; y/y from the linked index. Asia Decoded calculation; built by the AsiaDecoded/asia-vitals pipeline (data/in/cpi_core/in_cpi_food_energy.csv).",
+ "schedule": "Replaced after each release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "in_cpi_food_energy_M2026-09.csv",
+  "url": "/_blob/0f293d926f79b18bb8c24d6e99afe63c"
+ },
+ "title": "India food, food and beverages, and energy CPI",
+ "updated": {
+  "at": "2026-10-26T11:55:00Z",
+  "by": "Claude"
+ }
+}

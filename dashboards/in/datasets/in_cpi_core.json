@@ -1,0 +1,14 @@
+{
+ "description": "Core 1 (CPI excluding food and fuel) and core 2 (CPI excluding food, fuel and precious metals), all-India combined, RBI definitions: linked index from Jan 2014, y/y from Jan 2015. Asia Decoded calculation: 2024 base from Jan 2025 (MoSPI item indices and weights); 2012 base 2014-2024 (residual of MoSPI's headline, RBI method), linked over 2025; Mar-May 2020 petrol, diesel, gold and silver imputed from PPAC and RBI market prices. Built by the AsiaDecoded/asia-vitals pipeline (data/in/cpi_core/in_cpi_core.csv).",
+ "schedule": "Replaced after each release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "in_cpi_core_M2026-09.csv",
+  "url": "/_blob/afb784238802d18957f51d1377181b00"
+ },
+ "title": "India core CPI, calculated",
+ "updated": {
+  "at": "2026-10-26T07:30:00Z",
+  "by": "Claude"
+ }
+}

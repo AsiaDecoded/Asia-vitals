@@ -1,0 +1,14 @@
+{
+ "description": "Which ESRI release the figures come from: release code, label and reference quarter. Written by the AsiaDecoded/asia-vitals pipeline (data/release_row.json).",
+ "schedule": "Replaced after each ESRI GDP release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "release_qe262_2.json",
+  "url": "/_blob/91f145d71e1649225f29c5d0639e5948"
+ },
+ "title": "ESRI release",
+ "updated": {
+  "at": "2026-10-25T06:33:00Z",
+  "by": "Claude"
+ }
+}

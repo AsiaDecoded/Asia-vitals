@@ -1,0 +1,15 @@
+{
+ "description": "Every individual item in Japan's national CPI for each of the latest 12 months, from Table 5 of each monthly report (as published on the base then in use): weight (per 10,000), index, m/m, y/y and published contributions to the all-items change. English item names from e-Stat.",
+ "schedule": "Daily copy from the asia-vitals GitHub repository, which checks e-Stat twice a day",
+ "source": {
+  "kind": "file",
+  "name": "jp_cpi_items_C2026-09.csv",
+  "url": "/_blob/d0b10404f9fb55bece7d623107d59210"
+ },
+ "staleAfterHours": 1080,
+ "title": "CPI items, latest month",
+ "updated": {
+  "at": "2026-10-26T00:12:00Z",
+  "by": "Claude"
+ }
+}

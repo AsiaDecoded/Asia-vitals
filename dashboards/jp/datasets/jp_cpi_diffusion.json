@@ -1,0 +1,15 @@
+{
+ "description": "Japan national CPI: share of individual items with prices up and down on a year earlier (unweighted, all items), and the diffusion index (rising minus falling), from Table 5 of each monthly report, July 2016 on.",
+ "schedule": "Daily copy from the asia-vitals GitHub repository, which checks e-Stat twice a day",
+ "source": {
+  "kind": "file",
+  "name": "jp_cpi_diffusion_C2026-09.csv",
+  "url": "/_blob/fcf1de9afbf6618e57e6523a446abea1"
+ },
+ "staleAfterHours": 1080,
+ "title": "CPI diffusion index",
+ "updated": {
+  "at": "2026-10-26T00:15:00Z",
+  "by": "Claude"
+ }
+}

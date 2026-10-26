@@ -1,0 +1,14 @@
+{
+ "description": "Every MoSPI CPI item (2024 base, all-India combined, 358 items), monthly from Jan 2026: item weight (%), MoSPI published y/y, and its contribution (pp) to combined CPI y/y: weight x 12-month change in the item index / headline index a year earlier (Asia Decoded calculation; they add up to CPI y/y). Built by the AsiaDecoded/asia-vitals pipeline (data/in/cpi_core/in_cpi_items.csv).",
+ "schedule": "Replaced after each release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "in_cpi_items_M2026-09.csv",
+  "url": "/_blob/0bcb907ce2bf2deb11b16e865d9c4920"
+ },
+ "title": "India CPI item contributions",
+ "updated": {
+  "at": "2026-10-26T11:25:00Z",
+  "by": "Claude"
+ }
+}

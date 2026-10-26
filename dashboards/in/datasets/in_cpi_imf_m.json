@@ -1,0 +1,14 @@
+{
+ "description": "India all-items CPI (2024 = 100) and the IMF's y/y rate, monthly from Jan 1957, from the IMF Consumer Price Index dataset (formerly IFS; IND.CPI._T.IX.M and IND.CPI._T.YOY_PCH_PA_PT.M), as published. Built by the AsiaDecoded/asia-vitals pipeline (data/in/cpi_imf/in_cpi_imf_m.csv).",
+ "schedule": "Replaced after each release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "in_cpi_imf_m_M2026-07.csv",
+  "url": "/_blob/31d519576e1d8eef7567888b4f4d6930"
+ },
+ "title": "India CPI, IMF monthly",
+ "updated": {
+  "at": "2026-10-26T02:15:57Z",
+  "by": "Claude"
+ }
+}

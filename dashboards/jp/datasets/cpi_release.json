@@ -1,0 +1,14 @@
+{
+ "description": "Latest national and Tokyo CPI months in the data. Written by the AsiaDecoded/asia-vitals pipeline (data/jp/cpi/release_row.json).",
+ "schedule": "Replaced after each release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "cpi_release_N2026-09_T2026-09.json",
+  "url": "/_blob/6d51e3f1b25d479a660c4ceefed46da2"
+ },
+ "title": "CPI release",
+ "updated": {
+  "at": "2026-10-25T07:33:38Z",
+  "by": "Claude"
+ }
+}

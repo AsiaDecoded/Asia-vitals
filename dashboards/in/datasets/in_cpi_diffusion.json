@@ -1,0 +1,14 @@
+{
+ "description": "Share of individual CPI items (all-India combined, unweighted) with y/y above and below zero, and the diffusion index (rising minus falling), monthly from Jan 2015: 2012 base (299 items, y/y from MoSPI item indices) to Dec 2025, 2024 base (358 items, MoSPI published y/y) from Jan 2026 (basis column). Mar-May 2020 and 2021 missing. Asia Decoded calculation; built by the AsiaDecoded/asia-vitals pipeline (data/in/cpi_core/in_cpi_diffusion.csv).",
+ "schedule": "Replaced after each release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "in_cpi_diffusion_M2026-09.csv",
+  "url": "/_blob/dcc9e1021b5cf9da664e127f64805a67"
+ },
+ "title": "India CPI diffusion index",
+ "updated": {
+  "at": "2026-10-26T11:35:00Z",
+  "by": "Claude"
+ }
+}

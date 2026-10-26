@@ -1,0 +1,896 @@
+<style>
+#dash-root .jg { font-family: var(--font-anthropic-sans); display: flex; flex-direction: column; gap: var(--cds-gap-lg); }
+.jg-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; }
+.jg-take { margin: var(--cds-gap-xs) 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); max-width: 60rem; line-height: 1.5; }
+.jg-take b, .jg b { font-weight: var(--cds-font-weight-medium); color: var(--color-fg); }
+.jg-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: var(--cds-gap-md); }
+.jg-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); position: relative; min-width: 0; }
+.jg-tile .lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.jg-tile .val { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; margin-top: var(--cds-gap-xs); }
+.jg-tile .sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: var(--cds-gap-xs); font-variant-numeric: tabular-nums; }
+.jg-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); align-items: center; }
+.jg-seg { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); overflow: hidden; }
+.jg-seg button { font: inherit; font-size: var(--cds-font-size-caption); background: transparent; color: var(--color-fg-muted); border: 0; padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; }
+.jg-seg button[aria-pressed="true"] { background: var(--color-bg); color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.jg-seg-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.jg-card h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+.jg-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-xs) 0 var(--cds-gap-md); line-height: 1.45; }
+.jg-cardhead { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--cds-gap-sm); align-items: flex-start; }
+.jg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.jg-chart { min-height: 280px; position: relative; }
+.jg-chart.small { min-height: 280px; }
+.jg-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: var(--cds-gap-sm); }
+.jg-legend span.sw { display: inline-block; width: 0.625rem; height: 0.625rem; border-radius: 2px; margin-right: 0.35rem; vertical-align: -1px; }
+.jg-legend span.ln { display: inline-block; width: 0.9rem; height: 2px; margin-right: 0.35rem; vertical-align: 3px; }
+.jg-legend span.dot { display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 50%; margin-right: 0.35rem; vertical-align: 0; background: var(--color-fg); }
+.jg-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; z-index: 2; display: none; font-variant-numeric: tabular-nums; }
+.jg-tip .t { color: var(--cds-text-secondary); margin-bottom: 2px; }
+.jg-tip .r { display: flex; gap: 0.4rem; align-items: center; justify-content: space-between; }
+.jg-tip .r .k { display: flex; gap: 0.35rem; align-items: center; }
+.jg-tip .r i { display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 2px; }
+.jg svg text { font-family: var(--font-anthropic-sans); }
+.jg-tablewrap { overflow-x: auto; }
+.jg table { width: 100%; border-collapse: collapse; font-size: 0.875rem; font-variant-numeric: tabular-nums; }
+.jg th { text-align: right; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: bottom; }
+.jg th:first-child, .jg td:first-child { text-align: left; }
+.jg td { text-align: right; padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); }
+.jg tr.gdp td { font-weight: var(--cds-font-weight-medium); }
+.jg tr.agg td:first-child { color: var(--color-fg-muted); }
+.jg tr.sep td { border-top: 2px solid var(--color-border-line); }
+.jg td.neg { color: var(--color-bad); }
+#cpi-table th:not(:first-child), #cpi-table td:not(:first-child), #cpi-movers-table th:not(:first-child), #cpi-movers-table td:not(:first-child) { text-align: center; }
+.jg tr.grp td { font-weight: 700; color: var(--ad-ink, var(--color-fg)); text-align: left !important; padding-top: var(--cds-pad-sm); }
+.jg-foot { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.5; }
+.jg-fail { display: flex; align-items: center; justify-content: center; gap: 0.4rem; min-height: inherit; height: 100%; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.jg-fail::before { content: ""; width: 0.375rem; height: 0.375rem; border-radius: 50%; background: var(--color-bad); }
+[data-dash-source-state=empty] { color: transparent; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+@media (max-width: 640px) { .jg .hide-narrow { display: none; } }
+.jg-tabs { display: flex; gap: var(--cds-gap-md); border-bottom: 1px solid var(--color-border-line); margin-top: calc(-1 * var(--cds-gap-sm)); }
+.jg-tabs button { font: inherit; font-size: var(--cds-font-size-body); background: transparent; border: 0; border-bottom: 2px solid transparent; color: var(--color-fg-muted); padding: var(--cds-pad-sm) 0; margin-bottom: -1px; cursor: pointer; }
+.jg-tabs button[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.jg-page { display: flex; flex-direction: column; gap: var(--cds-gap-lg); }
+.jg-page[hidden] { display: none; }
+.jg-pagehead .jg-take { margin-top: var(--cds-gap-xs); }
+.jg-empty { color: var(--color-fg-muted); font-size: var(--cds-font-size-body); margin: var(--cds-gap-lg) 0; }
+
+/* Asia Decoded chart style */
+.jg-card { font-family: Arial, Helvetica, sans-serif; }
+.jg-card h2 { font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 1.15rem; color: var(--ad-ink, var(--color-fg)); }
+.jg svg text { font-family: Arial, Helvetica, sans-serif; }
+.ad-top { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--cds-gap-xs) var(--cds-gap-lg); margin-top: var(--cds-gap-sm); }
+.ad-top .ad-units.r { margin-left: auto; }
+.ad-top { position: relative; z-index: 1; height: 1.4rem; flex-wrap: nowrap; align-items: flex-start; }
+.ad-top .jg-legend { background: transparent; }
+.ad-units { font-size: 0.8125rem; color: var(--ad-ink, var(--color-fg-muted)); }
+.ad-units.r { text-align: right; }
+.ad-top .jg-legend { margin-top: 0; justify-content: flex-start; flex: 1 1 0; min-width: 10rem; color: var(--ad-ink, var(--color-fg-muted)); font-size: 0.8125rem; }
+.jg-legend span.ln { width: 1.6rem; height: 3px; vertical-align: 3px; }
+.ad-foot { display: flex; justify-content: space-between; align-items: baseline; gap: var(--cds-gap-md); margin-top: var(--cds-gap-xs); font-size: 0.8125rem; color: var(--ad-ink, var(--color-fg-muted)); line-height: 1.4; }
+.ad-brand { color: #EE6600; font-weight: 700; white-space: nowrap; }
+.ad-foot > span:first-child { font-size: 0.6875rem; }
+.ad-foot .ad-brand { font-size: 0.6875rem; }
+.ad-foot .ad-right { display: flex; align-items: baseline; gap: var(--cds-gap-md); }
+.ad-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; }
+.ad-png { font: inherit; font-size: 0.75rem; background: transparent; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); color: var(--color-fg-muted); padding: 1px 8px; cursor: pointer; white-space: nowrap; }
+.ad-png:hover { color: var(--color-fg); }
+.ad-shot { position: fixed; inset: 0; background: rgba(0,0,0,.55); display: flex; align-items: center; justify-content: center; z-index: 50; padding: 16px; }
+.ad-shot-box { margin-top: var(--cds-gap-md); padding-top: var(--cds-gap-md); border-top: 1px solid var(--color-border-line); display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
+.ad-shot-box img { width: 100%; height: auto; border: 1px solid var(--color-border-line); }
+.ad-shot-bar { display: flex; justify-content: space-between; align-items: center; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.ad-shot-bar a, .ad-shot-bar button { font: inherit; color: var(--color-fg); background: transparent; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: 2px 10px; cursor: pointer; text-decoration: none; }
+
+.ad-method { font-family: Arial, Helvetica, sans-serif; max-width: 52rem; line-height: 1.55; font-size: 0.9375rem; color: var(--color-fg); }
+.ad-method h3 { font-size: 1rem; margin: var(--cds-gap-lg) 0 var(--cds-gap-xs); color: var(--ad-ink, var(--color-fg)); }
+.ad-method p { margin: var(--cds-gap-xs) 0; }
+.ad-method ul { margin: var(--cds-gap-xs) 0; padding-left: 1.2rem; }
+.ad-method li { margin: 2px 0; }
+.ad-method .ad-foot { margin-top: var(--cds-gap-lg); }
+</style>
+
+<div class="jg">
+  <header class="jg-head" id="top">
+    <h1>Japan</h1>
+  </header>
+
+  <nav class="jg-tabs" role="tablist" aria-label="Sections">
+    <button role="tab" data-tab="gdp" aria-selected="true">GDP</button>
+    <button role="tab" data-tab="inflation" aria-selected="false">Inflation</button>
+    <button role="tab" data-tab="trade" aria-selected="false">Trade</button>
+    <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
+  </nav>
+
+  <section class="jg-page" id="gdp" role="tabpanel">
+  <div class="jg-pagehead">
+    <div class="jg-note" id="latest-q" style="margin:0"><span data-source="release" data-field="label" data-row="0" class="dash-skeleton">—</span></div>
+    <p class="jg-take" id="takeaway"><span class="dash-skeleton">—</span></p>
+  </div>
+
+  <section class="jg-tiles" id="headline" aria-label="Headline figures">
+    <div class="jg-card jg-tile"><div class="lbl">Real GDP, q/q (ESRI headline)</div>
+      <div class="val"><span data-source="gdp_latest" data-field="real_qoq" data-row="0" class="dash-skeleton">—</span>%</div>
+      <div class="sub">prior quarter <span data-source="gdp_latest" data-field="real_qoq_prev" data-row="0">—</span>%</div></div>
+    <div class="jg-card jg-tile"><div class="lbl">Real GDP, q/q annualised</div>
+      <div class="val"><span data-source="gdp_latest" data-field="real_qoq_ann" data-row="0" class="dash-skeleton">—</span>%</div>
+      <div class="sub">prior quarter <span data-source="gdp_latest" data-field="real_qoq_ann_prev" data-row="0">—</span>%</div></div>
+    <div class="jg-card jg-tile"><div class="lbl">Real GDP, y/y</div>
+      <div class="val"><span data-source="gdp_latest" data-field="real_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+      <div class="sub">prior quarter <span data-source="gdp_latest" data-field="real_yoy_prev" data-row="0">—</span>%</div></div>
+    <div class="jg-card jg-tile"><div class="lbl">Nominal GDP, q/q</div>
+      <div class="val"><span data-source="gdp_latest" data-field="nominal_qoq" data-row="0" class="dash-skeleton">—</span>%</div>
+      <div class="sub">prior quarter <span data-source="gdp_latest" data-field="nominal_qoq_prev" data-row="0">—</span>%</div></div>
+    <div class="jg-card jg-tile"><div class="lbl">Nominal GDP, q/q annualised</div>
+      <div class="val"><span data-source="gdp_latest" data-field="nominal_qoq_ann" data-row="0" class="dash-skeleton">—</span>%</div>
+      <div class="sub">prior quarter <span data-source="gdp_latest" data-field="nominal_qoq_ann_prev" data-row="0">—</span>%</div></div>
+    <div class="jg-card jg-tile"><div class="lbl">Nominal GDP, y/y</div>
+      <div class="val"><span data-source="gdp_latest" data-field="nominal_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+      <div class="sub">prior quarter <span data-source="gdp_latest" data-field="nominal_yoy_prev" data-row="0">—</span>%</div></div>
+    <div class="jg-card jg-tile"><div class="lbl">GDP deflator, y/y</div>
+      <div class="val"><span data-source="gdp_latest" data-field="deflator_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+      <div class="sub">prior quarter <span data-source="gdp_latest" data-field="deflator_yoy_prev" data-row="0">—</span>%</div></div>
+  </section>
+
+  <section class="jg-card" id="growth">
+    <div class="jg-cardhead">
+      <div><h2>Japan GDP growth</h2></div>
+      <div class="jg-seg" id="basis-seg" role="group" aria-label="Price basis">
+        <button data-b="real" aria-pressed="true">Real</button><button data-b="nominal">Nominal</button>
+      </div>
+    </div>
+    <div class="ad-top"><span class="ad-units">%</span><div class="jg-legend" id="growth-legend"></div><span class="ad-units r"></span></div>
+    <div class="jg-chart" id="growth-chart" data-source="gdp_series"></div>
+    <div class="ad-foot"><span>Source: Cabinet Office of Japan (ESRI)</span><span class="ad-brand">Asia Decoded</span></div>
+  </section>
+
+  <section class="jg-card" id="original">
+    <div class="jg-cardhead">
+      <div><h2>Japan GDP level, original series</h2></div>
+      <div class="jg-seg" id="orig-seg" role="group" aria-label="Price basis">
+        <button data-b="real" aria-pressed="true">Real</button><button data-b="nominal">Nominal</button>
+      </div>
+    </div>
+    <div class="ad-top"><span class="ad-units">¥ trillion per quarter, not seasonally adjusted</span><span></span><span class="ad-units r"></span></div>
+    <div class="jg-chart small" id="original-chart" data-source="gdp_series"></div>
+    <div class="ad-foot"><span>Source: Cabinet Office of Japan (ESRI)</span><span class="ad-brand">Asia Decoded</span></div>
+  </section>
+
+  <div class="jg-grid">
+    <section class="jg-card" id="levels">
+      <div class="jg-cardhead">
+        <div><h2>Japan GDP level, seasonally adjusted</h2></div>
+        <div class="jg-seg" id="levels-seg" role="group" aria-label="Price basis">
+          <button data-b="real" aria-pressed="true">Real</button><button data-b="nominal">Nominal</button>
+        </div>
+      </div>
+      <div class="ad-top"><span class="ad-units">¥ trillion, seasonally adjusted annual rate</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-chart small" id="levels-chart" data-source="gdp_series"></div>
+      <div class="ad-foot"><span>Source: Cabinet Office of Japan (ESRI)</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+    <section class="jg-card" id="deflator">
+      <h2>Japan GDP deflator</h2>
+      <div class="ad-top"><span class="ad-units">% y/y</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-chart small" id="deflator-chart" data-source="gdp_series"></div>
+      <div class="ad-foot"><span>Source: Cabinet Office of Japan (ESRI)</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+  </div>
+
+  <section class="jg-card" id="contributions">
+    <div class="jg-cardhead">
+      <div><h2>Japan Contributions to real GDP growth</h2></div>
+      <div class="jg-seg" id="contrib-seg" role="group" aria-label="Contribution basis">
+        <button data-c="qoq" aria-pressed="true">q/q</button><button data-c="yoy">y/y</button>
+      </div>
+    </div>
+    <p class="jg-note" id="contrib-flag" hidden></p>
+    <div class="ad-top"><span class="ad-units">ppt</span><div class="jg-legend" id="contrib-legend" data-source="jp_gdp"></div><span class="ad-units r"></span></div>
+    <div class="jg-chart" id="contrib-chart" data-source="jp_gdp"></div>
+    <div class="ad-foot"><span>Source: Cabinet Office of Japan (ESRI)</span><span class="ad-brand">Asia Decoded</span></div>
+  </section>
+
+  <section class="jg-card" id="components">
+    <h2>Japan Components, <span id="table-q">latest quarter</span></h2>
+    <div class="ad-top"><span class="ad-units">%; contributions in ppt</span><span></span><span class="ad-units r"></span></div>
+    <div class="jg-tablewrap">
+      <table id="comp-table" data-source="components_latest" data-row-key="component">
+        <thead><tr>
+          <th data-field="component">Component</th>
+          <th data-field="real_level_trn">Real level, ¥ trn</th>
+          <th data-field="real_qoq" class="hide-narrow">Real q/q</th>
+          <th data-field="real_qoq_ann">Real q/q ann.</th>
+          <th data-field="real_yoy">Real y/y</th>
+          <th data-field="nominal_yoy" class="hide-narrow">Nominal y/y</th>
+          <th data-field="deflator_yoy" class="hide-narrow">Deflator y/y</th>
+          <th data-field="contrib_qoq">Contrib. q/q</th>
+          <th data-field="contrib_yoy" class="hide-narrow">Contrib. y/y</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="ad-foot"><span>Source: Cabinet Office of Japan (ESRI)</span><span class="ad-brand">Asia Decoded</span></div>
+  </section>
+
+  <p class="jg-foot" id="source-note">Source: Cabinet Office of Japan, Economic and Social Research Institute (ESRI), Quarterly Estimates of GDP, <span data-source="release" data-field="label" data-row="0">—</span>. Levels are seasonally adjusted annual rates; real series are chain-linked, so components do not sum to GDP. Deflators are ESRI's (2020 = 100); year-on-year changes use the original series.</p>
+  </section>
+
+  <section class="jg-page" id="inflation" role="tabpanel" hidden>
+    <div class="jg-pagehead">
+      <div class="jg-note" style="margin:0"><span id="cpi-month" class="dash-skeleton" style="color: var(--color-fg)">—</span></div>
+      <p class="jg-take" id="cpi-takeaway"><span class="dash-skeleton">—</span></p>
+    </div>
+
+    <section class="jg-tiles" id="cpi-headline" aria-label="Headline inflation">
+      <div class="jg-card jg-tile"><div class="lbl">CPI, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="all_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="all_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Less fresh food and energy, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="core_core_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="core_core_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Goods, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="goods_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="goods_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Services, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="services_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="services_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">PPI, y/y</div>
+        <div class="val"><span data-source="ppi_latest" data-field="ppi_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="ppi_latest" data-field="ppi_yoy_prev" data-row="0">—</span>%</div></div>
+    </section>
+
+    <section class="jg-card" id="cpi-components">
+      <h2>Japan CPI momentum</h2>
+      <div class="ad-top"><span class="ad-units" id="cpi-table-units">%</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-tablewrap">
+        <table id="cpi-table" data-source="cpi_table" data-row-key="label">
+          <thead><tr>
+            <th data-field="label">Series</th>
+            <th data-field="ann1">1m ann.</th>
+            <th data-field="ann2">2m ann.</th>
+            <th data-field="ann3">3m ann.</th>
+            <th data-field="ann6">6m ann.</th>
+            <th data-field="yoy12">12m</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="ppi-cpi">
+        <h2>Japan inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="ppi-cpi-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="ppi-cpi-chart" data-source="cpi_series ppi_series"></div>
+        <div class="ad-foot"><span>Source: Bank of Japan, Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-ym">
+        <h2>Japan consumer inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-ym-legend"></div><span class="ad-units r">% m/m</span></div>
+        <div class="jg-chart" id="cpi-ym-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-measures">
+        <div class="jg-cardhead">
+          <div><h2>Japan consumer inflation</h2></div>
+          <div class="jg-seg" id="cpi-measures-seg" role="group" aria-label="Area">
+            <button data-a="national" aria-pressed="true">National</button><button data-a="tokyo">Tokyo</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-measures-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-measures-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-momentum">
+        <div class="jg-cardhead">
+          <div><h2>Japan consumer inflation</h2></div>
+          <div class="jg-seg" id="cpi-sa-seg" role="group" aria-label="Measure">
+            <button data-s="all_sa" aria-pressed="true">Headline</button><button data-s="core_sa">Core 1</button><button data-s="core_core_sa">Core 2</button><button data-s="goods_sa">Goods</button><button data-s="services_sa">Services</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units">% m/m, seasonally adjusted</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-sa-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-contrib">
+        <h2>Japan consumer inflation contribution</h2>
+        <div class="ad-top"><span class="ad-units">ppt</span><div class="jg-legend" id="cpi-contrib-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-contrib-chart" data-source="jp_cpi_contrib"></div>
+        <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-diffusion">
+        <h2>Japan CPI diffusion index</h2>
+        <div class="ad-top"><span class="ad-units">% of items</span><div class="jg-legend" id="cpi-diffusion-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-diffusion-chart" data-source="jp_cpi_diffusion"></div>
+        <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card" id="cpi-movers">
+      <div class="jg-cardhead">
+        <div><h2>Japan CPI biggest contributors</h2></div>
+        <div class="jg-seg" id="cpi-movers-seg" role="group" aria-label="Averaging window"><button data-n="3" aria-pressed="true">3m avg.</button><button data-n="6">6m avg.</button></div>
+      </div>
+      <div class="ad-top"><span class="ad-units" id="cpi-movers-units">%, ppt</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-tablewrap">
+        <table id="cpi-movers-table" data-source="cpi_movers" data-row-key="name">
+          <thead><tr>
+            <th data-field="name">Item</th>
+            <th data-field="weight">Weight</th>
+            <th data-field="yoy">y/y, latest</th>
+            <th data-field="avg3" id="cpi-movers-avg">Contribution, 3m avg.</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-gs">
+        <div class="jg-cardhead">
+          <div><h2>Japan goods and services CPI</h2></div>
+          <div class="jg-seg" id="cpi-gs-seg" role="group" aria-label="Area">
+            <button data-a="national" aria-pressed="true">National</button><button data-a="tokyo">Tokyo</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-gs-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart small" id="cpi-gs-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-drivers">
+        <div class="jg-cardhead">
+          <div><h2>Japan food and energy CPI</h2></div>
+          <div class="jg-seg" id="cpi-drivers-seg" role="group" aria-label="Area">
+            <button data-a="national" aria-pressed="true">National</button><button data-a="tokyo">Tokyo</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-drivers-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart small" id="cpi-drivers-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <p class="jg-foot">Source: Statistics Bureau of Japan (Ministry of Internal Affairs and Communications), Consumer Price Index, 2025 base, via the e-Stat API (table 0004052037): <span data-source="cpi_release" data-field="label" data-row="0">—</span>. Tokyo is the Tokyo ward area; its figures come out about four weeks before the national ones. Producer, import and export prices: Bank of Japan, Corporate Goods Price Index (2020 base), via the BoJ Time-Series Data Search API: <span data-source="ppi_release" data-field="label" data-row="0">—</span>.</p>
+  </section>
+
+  <section class="jg-page" id="trade" role="tabpanel" hidden>
+
+    <section class="jg-card" id="trade-prices">
+      <h2>Japan Import and export inflation</h2>
+      <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="trade-prices-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart small" id="trade-prices-chart" data-source="ppi_series"></div>
+      <div class="ad-foot"><span>Source: Bank of Japan</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+  </section>
+
+  <section class="jg-page" id="methodology" role="tabpanel" hidden>
+    <article class="jg-card ad-method" id="method-diffusion">
+      <h2>CPI diffusion index</h2>
+      <p>The diffusion index measures how broad-based inflation is: not how fast prices are rising on average, but how many of the things people buy are getting more expensive.</p>
+      <h3>Definition</h3>
+      <p>For each month, every individual item in Japan&rsquo;s national CPI is classified by its year-on-year price change:</p>
+      <ul>
+        <li><b>Rising</b>: y/y above zero</li>
+        <li><b>Falling</b>: y/y below zero</li>
+        <li><b>Unchanged</b>: y/y exactly zero</li>
+      </ul>
+      <p>The chart shows the share of items rising and the share falling, as a percentage of all items counted, and the diffusion index: share rising minus share falling. It runs from &minus;100 (every item falling) to +100 (every item rising). Zero means as many items are rising as falling.</p>
+      <h3>Data</h3>
+      <ul>
+        <li><b>Source:</b> Statistics Bureau of Japan, monthly CPI report, Table 5 (item indices and contributions, national and Tokyo), one Excel file per month on e-Stat, July 2016 onward.</li>
+        <li><b>Y/y changes:</b> the published rate for each item, taken from that month&rsquo;s own report on the base in use at the time (2015, 2020 or 2025). No index values are recalculated.</li>
+        <li><b>Items:</b> individual items only (the lowest level of the classification, such as a specific rice variety or mobile phone charges). Category totals such as food or goods are excluded, so nothing is counted twice.</li>
+        <li><b>Inclusion:</b> an item is counted in a month if it has a weight and a published y/y for that month.</li>
+      </ul>
+      <h3>Why the number of items varies</h3>
+      <ul>
+        <li><b>Seasonal items:</b> some items, such as certain fresh fruit and seasonal clothing, are priced only in season and drop out in other months.</li>
+        <li><b>Rebasing:</b> each five-yearly rebasing adds and drops items. Items new to a base have no y/y until they have been priced for a year.</li>
+      </ul>
+      <h3>Choices and limits</h3>
+      <ul>
+        <li><b>Unweighted:</b> each item counts once, whatever its weight. A small item counts as much as rent or electricity. This is deliberate: the index is about breadth, and the weighted picture is in the CPI itself and the contributions chart.</li>
+        <li><b>Fresh food included:</b> the Bank of Japan&rsquo;s diffusion index excludes fresh food. This one includes all items, so it is somewhat more volatile and will not match the Bank&rsquo;s figures exactly.</li>
+        <li><b>Threshold of zero:</b> an item rising 0.1% counts the same as one rising 20%. A small change in many items can move the index a lot.</li>
+        <li><b>Base splices:</b> the item basket changes at each rebasing (2021 and 2026 in this period), so small level shifts around those dates partly reflect the change of basket.</li>
+      </ul>
+      <h3>Production</h3>
+      <p>The asia-vitals data pipeline finds each month&rsquo;s Table 5 file through the e-Stat file catalogue, keeps an unchanged copy, reads every item&rsquo;s weight and y/y, and computes the shares and the index. Older files use a different layout without item codes; there, items are identified as the lowest rows of the classification. The pipeline checks the result each month (at least 400 items counted) before the dashboard is updated.</p>
+      <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
+    </article>
+  </section>
+</div>
+
+<script>
+const num = (v) => (v === '' || v == null ? null : Number(v));
+
+dash.calc('gdp_series', {
+  title: 'GDP series',
+  description: 'The GDP rows only, with text cells read as numbers.',
+  inputs: ['jp_gdp'],
+  fn: (jp_gdp) => {
+    const n = (v) => (v === '' ? null : Number(v));
+    return jp_gdp.filter((r) => r.component === 'GDP').map((r) => ({
+      date: r.date,
+      real_level: n(r.real_level), nominal_level: n(r.nominal_level),
+      real_level_orig: n(r.real_level_orig), nominal_level_orig: n(r.nominal_level_orig),
+      real_qoq: n(r.real_qoq), real_qoq_ann: n(r.real_qoq_ann), real_yoy: n(r.real_yoy),
+      nominal_qoq: n(r.nominal_qoq), nominal_qoq_ann: n(r.nominal_qoq_ann), nominal_yoy: n(r.nominal_yoy),
+      deflator_index: n(r.deflator_index), deflator_qoq: n(r.deflator_qoq), deflator_yoy: n(r.deflator_yoy),
+    }));
+  },
+});
+
+dash.calc('gdp_latest', {
+  title: 'Latest quarter and the one before',
+  description: 'The last quarter of the GDP series beside the previous quarter, for the headline figures.',
+  inputs: ['gdp_series'],
+  fn: (gdp_series) => {
+    const a = gdp_series[gdp_series.length - 1], b = gdp_series[gdp_series.length - 2];
+    return [{
+      date: a.date,
+      real_qoq: a.real_qoq, real_qoq_prev: b.real_qoq,
+      real_qoq_ann: a.real_qoq_ann, real_qoq_ann_prev: b.real_qoq_ann,
+      real_yoy: a.real_yoy, real_yoy_prev: b.real_yoy,
+      nominal_qoq: a.nominal_qoq, nominal_qoq_prev: b.nominal_qoq,
+      nominal_qoq_ann: a.nominal_qoq_ann, nominal_qoq_ann_prev: b.nominal_qoq_ann,
+      nominal_yoy: a.nominal_yoy, nominal_yoy_prev: b.nominal_yoy,
+      deflator_yoy: a.deflator_yoy, deflator_yoy_prev: b.deflator_yoy,
+    }];
+  },
+});
+
+dash.calc('components_latest', {
+  title: 'Components, latest quarter',
+  description: 'Every component in the latest quarter, with the real level in ¥ trillion (¥ billion ÷ 1,000, one decimal).',
+  inputs: ['jp_gdp'],
+  fn: (jp_gdp) => {
+    const last = jp_gdp.reduce((m, r) => (r.date > m ? r.date : m), '');
+    const n = (v) => (v === '' ? null : Number(v));
+    return jp_gdp.filter((r) => r.date === last).sort((x, y) => Number(x.order) - Number(y.order)).map((r) => ({
+      component: r.component, date: r.date,
+      real_level_trn: r.real_level === '' ? null : Math.round(Number(r.real_level) / 100) / 10,
+      real_qoq: n(r.real_qoq), real_qoq_ann: n(r.real_qoq_ann), real_yoy: n(r.real_yoy),
+      nominal_yoy: n(r.nominal_yoy), deflator_yoy: n(r.deflator_yoy),
+      contrib_qoq: n(r.contrib_qoq), contrib_yoy: n(r.contrib_yoy),
+    }));
+  },
+});
+
+window.JG = {
+  state: { basis: 'real', origBasis: 'real', levelBasis: 'real', quarters: 40, contrib: 'qoq' },
+  num,
+  qLabel(d) {
+    const m = Number(d.slice(5, 7));
+    return ({ 1: 'Jan–Mar', 4: 'Apr–Jun', 7: 'Jul–Sep', 10: 'Oct–Dec' })[m] + ' ' + d.slice(0, 4);
+  },
+  date(d) { return new Date(Date.UTC(Number(d.slice(0, 4)), Number(d.slice(5, 7)) - 1, 1)); },
+  f1(v) { return v == null || Number.isNaN(v) ? '' : v.toFixed(1); },
+  fail(el) {
+    el.replaceChildren();
+    const d = document.createElement('div'); d.className = 'jg-fail'; d.textContent = 'Failed to load'; el.appendChild(d);
+  },
+  // Period per chart: number of points to show (0 = all), set by each chart's own buttons.
+  period: {},
+  periodOf(id, def) { return id in this.period ? this.period[id] : def; },
+  window(rows, id) { const n = this.periodOf(id, 40); return n ? rows.slice(-n) : rows; },
+  addPeriods() {
+    const SETS = { q: [['5Y', 20], ['10Y', 40], ['All', 0]], m: [['3Y', 36], ['10Y', 120], ['All', 0]] };
+    document.querySelectorAll('.jg-card').forEach((card) => {
+      const chart = card.querySelector('.jg-chart'); if (!chart) return;
+      const page = card.closest('.jg-page'); const kind = page && page.id === 'gdp' ? 'q' : 'm';
+      const def = kind === 'q' ? 40 : 120;
+      const seg = document.createElement('div'); seg.className = 'jg-seg ad-period'; seg.setAttribute('role', 'group'); seg.setAttribute('aria-label', 'Period');
+      SETS[kind].forEach(([lab, n]) => {
+        const b = document.createElement('button'); b.type = 'button'; b.textContent = lab; b.dataset.n = n;
+        b.setAttribute('aria-pressed', String(n === def)); seg.appendChild(b);
+      });
+      seg.addEventListener('click', (e) => {
+        const b = e.target.closest('button'); if (!b) return;
+        JG.period[card.id] = Number(b.dataset.n);
+        seg.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+        const p = page ? page.id : 'gdp';
+        if (p === 'gdp') JG.redraw && JG.redraw(); else if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else JG.redrawTrade && JG.redrawTrade();
+      });
+      let head = card.querySelector(':scope > .jg-cardhead');
+      if (!head) {
+        const h2 = card.querySelector(':scope > h2');
+        head = document.createElement('div'); head.className = 'jg-cardhead';
+        const left = document.createElement('div'); h2.replaceWith(head); left.appendChild(h2); head.appendChild(left);
+      }
+      let right = head.querySelector(':scope > .ad-controls');
+      if (!right) {
+        right = document.createElement('div'); right.className = 'ad-controls';
+        const segs = Array.from(head.querySelectorAll(':scope > .jg-seg'));
+        segs.forEach((x) => right.appendChild(x)); head.appendChild(right);
+      }
+      right.appendChild(seg);
+    });
+  },
+  // Measure text widths so margins fit the labels actually drawn.
+  textWidth(svg, labels) {
+    const g = svg.append('g').attr('opacity', 0);
+    let w = 0;
+    labels.forEach((t) => { const n = g.append('text').attr('font-size', 12).text(t).node(); w = Math.max(w, n.getComputedTextLength()); });
+    g.remove();
+    return w;
+  },
+  yearTicks(dates, width) {
+    const years = Array.from(new Set(dates.map((d) => d.slice(0, 4))));
+    const room = Math.max(1, Math.floor(width / 48));
+    const step = [1, 2, 4, 5, 10].find((s) => years.length / s <= room) || 10;
+    return dates.filter((d) => d.slice(5, 7) === '01' && Number(d.slice(0, 4)) % step === 0);
+  },
+  tip(card) {
+    let t = card.querySelector(':scope > .jg-tip');
+    if (!t) { t = document.createElement('div'); t.className = 'jg-tip'; card.appendChild(t); }
+    return t;
+  },
+  showTip(card, tip, title, lines, px, py) {
+    tip.replaceChildren();
+    const h = document.createElement('div'); h.className = 't'; h.textContent = title; tip.appendChild(h);
+    lines.forEach(([color, name, value]) => {
+      const r = document.createElement('div'); r.className = 'r';
+      const k = document.createElement('span'); k.className = 'k';
+      if (color) { const i = document.createElement('i'); i.style.background = color; k.appendChild(i); }
+      const s = document.createElement('span'); s.textContent = name; k.appendChild(s);
+      const v = document.createElement('span'); v.textContent = value;
+      r.append(k, v); tip.appendChild(r);
+    });
+    tip.style.display = 'block';
+    const cw = card.clientWidth, tw = tip.offsetWidth;
+    let left = px + 14; if (left + tw > cw - 8) left = px - tw - 14; if (left < 8) left = 8;
+    tip.style.left = left + 'px'; tip.style.top = Math.max(8, py - 10) + 'px';
+  },
+  // Asia Decoded palette; the two dark greys lighten on a dark background.
+  PAL: [1, 2, 3, 4, 5, 6, 7, 8].map((i) => `var(--ad-c${i})`),
+  theme() {
+    const root = document.querySelector('#dash-root .jg') || document.querySelector('.jg');
+    if (!root) return;
+    const bg = getComputedStyle(root).getPropertyValue('--color-bg').trim() || getComputedStyle(document.body).backgroundColor;
+    const probe = document.createElement('span'); probe.style.color = bg; root.appendChild(probe);
+    const col = getComputedStyle(probe).color; probe.remove();
+    const n = (col.match(/[\d.]+%?/g) || ['255', '255', '255']);
+    let dark;
+    if (/^(ok)?l(ab|ch)/.test(col)) { let L = parseFloat(n[0]); if (n[0].endsWith('%') || L > 1) L /= 100; dark = L < 0.5; }
+    else { const v = n.map(parseFloat); dark = (0.2126 * v[0] + 0.7152 * v[1] + 0.0722 * v[2]) < 128; }
+    const v = { '--ad-c1': '#0C84FF', '--ad-c2': '#BD1B21', '--ad-c3': '#EE6631', '--ad-c4': dark ? '#ADB5BD' : '#495057',
+      '--ad-c5': '#FFC000', '--ad-c6': '#92D050', '--ad-c7': '#954F72', '--ad-c8': dark ? '#8496B0' : '#44546A',
+      '--ad-ink': dark ? 'var(--color-fg-muted)' : '#495057', '--ad-grid': dark ? 'var(--cds-chart-grid)' : '#D9D9D9',
+      '--ad-axis': dark ? 'var(--cds-chart-axis)' : '#A6A6A6' };
+    Object.entries(v).forEach(([k, x]) => root.style.setProperty(k, x));
+  },
+  axisStyle(g) {
+    g.attr('font-size', null).attr('font-family', null);
+    g.selectAll('text').attr('fill', 'var(--ad-ink)').attr('font-size', 12);
+    g.selectAll('line').attr('stroke', 'var(--ad-axis)');
+    g.select('.domain').remove();
+  },
+};
+</script>
+
+<script>
+(() => {
+  const J = window.JG;
+  J.theme();
+  J.addPeriods();
+  dash.onData(() => J.theme());
+  // Controls
+  const seg = (id, key, attr, parse) => {
+    const el = document.getElementById(id);
+    el.addEventListener('click', (e) => {
+      const b = e.target.closest('button'); if (!b) return;
+      J.state[key] = parse(b.dataset[attr]);
+      el.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      J.redraw && J.redraw();
+    });
+  };
+  seg('basis-seg', 'basis', 'b', String);
+  seg('orig-seg', 'origBasis', 'b', String);
+  seg('levels-seg', 'levelBasis', 'b', String);
+  seg('contrib-seg', 'contrib', 'c', String);
+
+  const CONTRIB = ['Private consumption', 'Private residential investment', 'Private non-residential investment', 'Change in private inventories', 'Government consumption', 'Public investment', 'Change in public inventories', 'Net exports'];
+  const SHORT = { 'Private consumption': 'Consumption', 'Private residential investment': 'Housing', 'Private non-residential investment': 'Business investment', 'Change in private inventories': 'Private inventories', 'Government consumption': 'Government consumption', 'Public investment': 'Public investment', 'Change in public inventories': 'Public inventories', 'Net exports': 'Net exports' };
+
+  function headline() {
+    const L = dash.data('gdp_latest');
+    const spans = document.querySelectorAll('#headline [data-source="gdp_latest"]');
+    spans.forEach((s) => {
+      if (L.status === 'ok' && L.data.length) { s.classList.remove('dash-skeleton'); s.textContent = J.f1(L.data[0][s.dataset.field]); }
+      else if (L.status !== 'loading') { s.classList.remove('dash-skeleton'); s.textContent = '—'; }
+    });
+    const R = dash.data('release');
+    document.querySelectorAll('[data-source="release"][data-field="label"]').forEach((s) => {
+      if (R.status === 'ok' && R.data.length) { s.classList.remove('dash-skeleton'); s.textContent = R.data[0].label; }
+      else if (R.status !== 'loading') { s.classList.remove('dash-skeleton'); s.textContent = ''; }
+    });
+  }
+
+  function takeaway() {
+    const p = document.getElementById('takeaway');
+    const L = dash.data('gdp_latest'), C = dash.data('components_latest');
+    if (L.status !== 'ok' || C.status !== 'ok' || !L.data.length) {
+      if (L.status === 'error' || C.status === 'error') { p.replaceChildren(); p.textContent = ''; }
+      return;
+    }
+    const a = L.data[0];
+    const parts = C.data.filter((r) => CONTRIB.includes(r.component) && r.contrib_qoq != null);
+    const up = parts.filter((r) => r.contrib_qoq > 0).sort((x, y) => y.contrib_qoq - x.contrib_qoq).slice(0, 2);
+    const down = parts.filter((r) => r.contrib_qoq < 0).sort((x, y) => x.contrib_qoq - y.contrib_qoq)[0];
+    const mk = (src, field, row, where) => {
+      const s = document.createElement('b');
+      s.dataset.source = src; s.dataset.field = field;
+      if (where) s.dataset.where = 'component=' + encodeURIComponent(where); else s.dataset.row = String(row);
+      return s;
+    };
+    p.replaceChildren();
+    const t = (x) => p.append(document.createTextNode(x));
+    const v1 = mk('gdp_latest', 'real_qoq_ann', 0); v1.textContent = J.f1(Math.abs(a.real_qoq_ann));
+    const v2 = mk('gdp_latest', 'nominal_qoq_ann', 0); v2.textContent = J.f1(Math.abs(a.nominal_qoq_ann));
+    t('In ' + J.qLabel(a.date) + ', real GDP ' + (a.real_qoq_ann >= 0 ? 'grew ' : 'shrank ')); p.append(v1);
+    t('% annualised and nominal GDP ' + (a.nominal_qoq_ann >= 0 ? 'grew ' : 'shrank ')); p.append(v2); t('%. ');
+    if (up.length) {
+      t('The largest contributions came from ');
+      up.forEach((r, i) => {
+        if (i) t(' and ');
+        t(SHORT[r.component].toLowerCase() + ' (+');
+        const s = mk('components_latest', 'contrib_qoq', null, r.component); s.textContent = J.f1(r.contrib_qoq); p.append(s); t('ppt)');
+      });
+      t(down ? '; the biggest drag was ' : '.');
+    }
+    if (down) {
+      t(SHORT[down.component].toLowerCase() + ' (');
+      const s = mk('components_latest', 'contrib_qoq', null, down.component); s.textContent = J.f1(down.contrib_qoq); p.append(s); t('ppt).');
+    }
+  }
+
+  function growthChart() {
+    const box = document.getElementById('growth-chart');
+    const D = dash.data('gdp_series');
+    if (D.status === 'error' || D.status === 'connect' || D.status === 'declined') { J.fail(box); return; }
+    if (D.status !== 'ok') { box.replaceChildren(); return; }
+    const b = J.state.basis;
+    const rows = J.window(D.data.filter((r) => r[b + '_qoq_ann'] != null), 'growth');
+    const W = box.clientWidth, H = 280;
+    box.replaceChildren();
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const vals = rows.flatMap((r) => [r[b + '_qoq_ann'], r[b + '_yoy']]).filter((v) => v != null);
+    const y = d3.scaleLinear([Math.min(0, d3.min(vals)), Math.max(0, d3.max(vals))], [H - 24, 10]).nice();
+    const ticks = y.ticks(5);
+    const ml = J.textWidth(svg, ticks.map((v) => d3.format('.0f')(v))) + 10;
+    const x = d3.scaleBand(rows.map((r) => r.date), [ml, W - 8]).padding(0.2);
+    svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', ml).attr('x2', W - 8).attr('y1', y).attr('y2', y)
+      .attr('stroke', (v) => (v === 0 ? 'var(--ad-axis)' : 'var(--ad-grid)')).attr('stroke-width', 1);
+    const ya = svg.append('g').attr('transform', `translate(${ml - 4},0)`).call(d3.axisLeft(y).tickValues(ticks).tickSize(0).tickFormat(d3.format('.0f')));
+    J.axisStyle(ya);
+    const xt = J.yearTicks(rows.map((r) => r.date), W - ml);
+    const xa = svg.append('g').attr('transform', `translate(0,${H - 20})`).call(d3.axisBottom(x).tickValues(xt).tickSize(0).tickFormat((d) => d.slice(0, 4)));
+    J.axisStyle(xa);
+    const color = J.PAL[0], lc = J.PAL[1];
+    svg.append('g').selectAll('rect').data(rows).join('rect')
+      .attr('x', (r) => x(r.date)).attr('width', x.bandwidth())
+      .attr('y', (r) => y(Math.max(0, r[b + '_qoq_ann']))).attr('height', (r) => Math.abs(y(r[b + '_qoq_ann']) - y(0)))
+      .attr('fill', color);
+    const line = d3.line().defined((r) => r[b + '_yoy'] != null).x((r) => x(r.date) + x.bandwidth() / 2).y((r) => y(r[b + '_yoy']));
+    svg.append('path').attr('d', line(rows)).attr('fill', 'none').attr('stroke', lc).attr('stroke-width', 2.5)
+      .attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
+    const lg = document.getElementById('growth-legend'); lg.replaceChildren();
+    [['sw', color, 'q/q annualised, seasonally adjusted'], ['ln', lc, 'y/y, original series']].forEach(([cls, col, txt]) => {
+      const sp = document.createElement('span'), m = document.createElement('span'); m.className = cls; m.style.background = col;
+      sp.append(m, document.createTextNode(txt)); lg.appendChild(sp);
+    });
+    const hl = svg.append('rect').attr('fill', 'var(--color-fg)').attr('opacity', 0.06).attr('display', 'none');
+    const card = document.getElementById('growth'), tip = J.tip(card);
+    svg.append('rect').attr('x', ml).attr('y', 0).attr('width', W - ml).attr('height', H).attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const [mx] = d3.pointer(ev);
+        const i = Math.max(0, Math.min(rows.length - 1, Math.floor((mx - ml) / (x.step()))));
+        const r = rows[i];
+        hl.attr('display', null).attr('x', x(r.date) - x.step() * x.paddingInner() / 2).attr('width', x.step()).attr('y', 0).attr('height', H - 22);
+        const cr = card.getBoundingClientRect();
+        J.showTip(card, tip, J.qLabel(r.date) + (b === 'real' ? ', real' : ', nominal'),
+          [[color, 'q/q annualised', J.f1(r[b + '_qoq_ann']) + '%'], [lc, 'y/y', r[b + '_yoy'] == null ? '—' : J.f1(r[b + '_yoy']) + '%']],
+          ev.clientX - cr.left, ev.clientY - cr.top);
+      })
+      .on('mouseleave', () => { hl.attr('display', 'none'); tip.style.display = 'none'; });
+  }
+
+  function linesChart(id, cardId, series, fmt, H, zero, prep, extra) {
+    const box = document.getElementById(id);
+    const D = dash.data('gdp_series');
+    if (D.status === 'error' || D.status === 'connect' || D.status === 'declined') { J.fail(box); return; }
+    if (D.status !== 'ok') { box.replaceChildren(); return; }
+    const src = prep ? D.data.map(prep) : D.data;
+    const rows = J.window(src.filter((r) => series.every((s) => r[s.key] != null)), cardId);
+    const W = box.clientWidth;
+    box.replaceChildren();
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const vals = rows.flatMap((r) => series.map((s) => r[s.key]));
+    let lo = d3.min(vals), hi = d3.max(vals);
+    if (zero) { lo = Math.min(0, lo); hi = Math.max(0, hi); }
+    const y = d3.scaleLinear([lo, hi], [H - 24, 12]).nice();
+    const ticks = y.ticks(4);
+    const ml = J.textWidth(svg, ticks.map(fmt)) + 10;
+    const last = rows[rows.length - 1];
+    const mr = 8;
+    const x = d3.scaleUtc([J.date(rows[0].date), J.date(last.date)], [ml, W - mr]);
+    svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', ml).attr('x2', W - mr).attr('y1', y).attr('y2', y)
+      .attr('stroke', (v) => (zero && v === 0 ? 'var(--cds-chart-reference)' : 'var(--ad-grid)'));
+    J.axisStyle(svg.append('g').attr('transform', `translate(${ml - 4},0)`).call(d3.axisLeft(y).tickValues(ticks).tickSize(0).tickFormat(fmt)));
+    const nYears = Math.max(1, Math.round((W - ml - mr) / 56));
+    J.axisStyle(svg.append('g').attr('transform', `translate(0,${H - 20})`).call(d3.axisBottom(x).ticks(nYears).tickSize(0).tickFormat(d3.utcFormat('%Y'))));
+    series.forEach((s, i) => {
+      svg.append('path').attr('d', d3.line().x((r) => x(J.date(r.date))).y((r) => y(r[s.key]))(rows))
+        .attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
+    });
+    const card = document.getElementById(cardId), tip = J.tip(card);
+    const rule = svg.append('line').attr('y1', 8).attr('y2', H - 22).attr('stroke', 'var(--cds-chart-reference)').attr('display', 'none');
+    const dots = series.map((s) => svg.append('circle').attr('r', 3.5).attr('fill', s.color).attr('display', 'none'));
+    const bis = d3.bisector((r) => J.date(r.date)).center;
+    svg.append('rect').attr('x', ml).attr('width', W - ml - mr).attr('height', H).attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const [mx] = d3.pointer(ev);
+        const r = rows[bis(rows, x.invert(mx))];
+        const px = x(J.date(r.date));
+        rule.attr('display', null).attr('x1', px).attr('x2', px);
+        dots.forEach((d, i) => d.attr('display', null).attr('cx', px).attr('cy', y(r[series[i].key])));
+        const cr = card.getBoundingClientRect();
+        const tl = series.map((s) => [series.length > 1 ? s.color : null, s.name, fmt(r[s.key])]).concat(extra ? extra(r) : []);
+        J.showTip(card, tip, J.qLabel(r.date), tl, ev.clientX - cr.left, ev.clientY - cr.top);
+      })
+      .on('mouseleave', () => { rule.attr('display', 'none'); dots.forEach((d) => d.attr('display', 'none')); tip.style.display = 'none'; });
+  }
+
+  const pct = (v) => (v == null ? '—' : J.f1(v) + '%');
+  const trn = (v) => '¥' + d3.format(',.1f')(v);
+
+  function originalChart() {
+    const b = J.state.origBasis;
+    linesChart('original-chart', 'original', [
+      { key: 'v', name: b === 'real' ? 'Real' : 'Nominal', color: b === 'real' ? J.PAL[0] : J.PAL[1] },
+    ], trn, 280, false,
+    (r) => ({ date: r.date, v: r[b + '_level_orig'] == null ? null : r[b + '_level_orig'] / 1000, yoy: r[b + '_yoy'] }),
+    (r) => [[null, 'y/y', pct(r.yoy)]]);
+  }
+
+  function levelsChart() {
+    const b = J.state.levelBasis;
+    linesChart('levels-chart', 'levels', [
+      { key: 'v', name: b === 'real' ? 'Real' : 'Nominal', color: b === 'real' ? J.PAL[0] : J.PAL[1] },
+    ], trn, 280, false,
+    (r) => ({ date: r.date, v: r[b + '_level'] == null ? null : r[b + '_level'] / 1000, ann: r[b + '_qoq_ann'] }),
+    (r) => [[null, 'q/q annualised', pct(r.ann)]]);
+  }
+
+  function deflatorChart() {
+    linesChart('deflator-chart', 'deflator', [{ key: 'deflator_yoy', name: 'y/y', color: J.PAL[0] }], (v) => d3.format('.1f')(v) + '%', 280, true);
+  }
+
+  function contribChart() {
+    const box = document.getElementById('contrib-chart'), legend = document.getElementById('contrib-legend');
+    const flag = document.getElementById('contrib-flag');
+    const D = dash.data('jp_gdp');
+    if (D.status === 'error' || D.status === 'connect' || D.status === 'declined') { J.fail(box); legend.replaceChildren(); return; }
+    if (D.status !== 'ok') { box.replaceChildren(); return; }
+    const k = 'contrib_' + J.state.contrib;
+    const byDate = d3.group(D.data, (r) => r.date);
+    let rows = Array.from(byDate, ([date, rs]) => {
+      const o = { date };
+      rs.forEach((r) => { if (r.component === 'GDP' || CONTRIB.includes(r.component)) o[r.component] = J.num(r[k]); });
+      return o;
+    }).filter((o) => o.GDP != null).sort((a, b) => (a.date < b.date ? -1 : 1));
+    rows = J.window(rows, 'contributions');
+    const W = box.clientWidth, H = 280;
+    box.replaceChildren();
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const stack = d3.stack().keys(CONTRIB).value((d, key) => d[key] || 0).offset(d3.stackOffsetDiverging)(rows);
+    const lo = Math.min(d3.min(stack, (s) => d3.min(s, (d) => d[0])), d3.min(rows, (r) => r.GDP));
+    const hi = Math.max(d3.max(stack, (s) => d3.max(s, (d) => d[1])), d3.max(rows, (r) => r.GDP));
+    const y = d3.scaleLinear([Math.min(0, lo), Math.max(0, hi)], [H - 24, 10]).nice();
+    const ticks = y.ticks(5);
+    const ml = J.textWidth(svg, ticks.map((v) => d3.format('.0f')(v))) + 10;
+    const x = d3.scaleBand(rows.map((r) => r.date), [ml, W - 8]).padding(0.2);
+    svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', ml).attr('x2', W - 8).attr('y1', y).attr('y2', y)
+      .attr('stroke', (v) => (v === 0 ? 'var(--ad-axis)' : 'var(--ad-grid)'));
+    J.axisStyle(svg.append('g').attr('transform', `translate(${ml - 4},0)`).call(d3.axisLeft(y).tickValues(ticks).tickSize(0).tickFormat(d3.format('.0f'))));
+    J.axisStyle(svg.append('g').attr('transform', `translate(0,${H - 20})`).call(d3.axisBottom(x).tickValues(J.yearTicks(rows.map((r) => r.date), W - ml)).tickSize(0).tickFormat((d) => d.slice(0, 4))));
+    svg.append('g').selectAll('g').data(stack).join('g').attr('fill', (s, i) => J.PAL[i])
+      .selectAll('rect').data((s) => s).join('rect')
+      .attr('x', (d) => x(d.data.date)).attr('width', x.bandwidth())
+      .attr('y', (d) => y(Math.max(d[0], d[1]))).attr('height', (d) => Math.abs(y(d[0]) - y(d[1])));
+    svg.append('g').selectAll('circle').data(rows).join('circle')
+      .attr('cx', (r) => x(r.date) + x.bandwidth() / 2).attr('cy', (r) => y(r.GDP)).attr('r', Math.max(2, Math.min(4, x.bandwidth() / 3)))
+      .attr('fill', 'var(--color-fg)').attr('stroke', 'var(--color-panel)').attr('stroke-width', 1);
+    const hl = svg.append('rect').attr('fill', 'var(--color-fg)').attr('opacity', 0.06).attr('display', 'none');
+    const card = document.getElementById('contributions'), tip = J.tip(card);
+    svg.append('rect').attr('x', ml).attr('width', W - ml).attr('height', H).attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const [mx] = d3.pointer(ev);
+        const i = Math.max(0, Math.min(rows.length - 1, Math.floor((mx - ml) / x.step())));
+        const r = rows[i];
+        hl.attr('display', null).attr('x', x(r.date) - x.step() * x.paddingInner() / 2).attr('width', x.step()).attr('y', 0).attr('height', H - 22);
+        const cr = card.getBoundingClientRect();
+        const lines = [[null, 'GDP, ' + (J.state.contrib === 'qoq' ? 'q/q' : 'y/y'), J.f1(r.GDP) + '%']]
+          .concat(CONTRIB.map((c, j) => [J.PAL[j], SHORT[c], (r[c] > 0 ? '+' : '') + J.f1(r[c]) + 'ppt']));
+        J.showTip(card, tip, J.qLabel(r.date), lines, ev.clientX - cr.left, ev.clientY - cr.top);
+      })
+      .on('mouseleave', () => { hl.attr('display', 'none'); tip.style.display = 'none'; });
+    // legend
+    legend.replaceChildren();
+    CONTRIB.forEach((c, i) => {
+      const s = document.createElement('span'); const sw = document.createElement('span'); sw.className = 'sw'; sw.style.background = J.PAL[i];
+      s.append(sw, document.createTextNode(SHORT[c])); legend.appendChild(s);
+    });
+    const g = document.createElement('span'); const dot = document.createElement('span'); dot.className = 'dot';
+    g.append(dot, document.createTextNode('GDP growth')); legend.appendChild(g);
+    // flag an unusually large public-inventory swing in the latest quarter
+    const C = dash.data('components_latest');
+    const pub = C.status === 'ok' ? C.data.find((r) => r.component === 'Change in public inventories') : null;
+    if (pub && pub.contrib_qoq != null && Math.abs(pub.contrib_qoq) >= 0.3) {
+      flag.hidden = false; flag.replaceChildren();
+      const v = document.createElement('b'); v.dataset.source = 'components_latest'; v.dataset.field = 'contrib_qoq';
+      v.dataset.where = 'component=' + encodeURIComponent('Change in public inventories'); v.textContent = J.f1(pub.contrib_qoq);
+      flag.append(document.createTextNode('Latest quarter: public inventories contributed '), v,
+        document.createTextNode('ppt to q/q growth, unusually large for an item that is normally close to zero.'));
+    } else { flag.hidden = true; flag.replaceChildren(); }
+  }
+
+  function table() {
+    const tb = document.querySelector('#comp-table tbody');
+    const C = dash.data('components_latest');
+    if (C.status === 'error' || C.status === 'connect' || C.status === 'declined') {
+      tb.replaceChildren(); const tr = tb.insertRow(); const td = tr.insertCell(); td.colSpan = 9; J.fail(td); return;
+    }
+    if (C.status !== 'ok') return;
+    document.getElementById('table-q').textContent = C.data.length ? J.qLabel(C.data[0].date) : 'latest quarter';
+    const cols = ['component', 'real_level_trn', 'real_qoq', 'real_qoq_ann', 'real_yoy', 'nominal_yoy', 'deflator_yoy', 'contrib_qoq', 'contrib_yoy'];
+    const narrow = { real_qoq: 1, nominal_yoy: 1, deflator_yoy: 1, contrib_yoy: 1 };
+    tb.replaceChildren();
+    C.data.forEach((r) => {
+      const tr = tb.insertRow();
+      if (r.component === 'GDP') tr.className = 'gdp';
+      if (['Domestic demand', 'Private demand', 'Public demand'].includes(r.component)) tr.className = 'agg' + (r.component === 'Domestic demand' ? ' sep' : '');
+      cols.forEach((c) => {
+        const td = tr.insertCell();
+        if (narrow[c]) td.classList.add('hide-narrow');
+        if (c === 'component') { td.textContent = r.component; return; }
+        const v = r[c];
+        td.textContent = v == null ? '' : (c === 'real_level_trn' ? d3.format(',.1f')(v) : J.f1(v));
+        if (v != null && v < 0 && c !== 'real_level_trn') td.classList.add('neg');
+      });
+    });
+  }
+
+  // Tabs: one page shown at a time; charts on a hidden page are drawn when it is shown.
+  const tabs = document.querySelectorAll('.jg-tabs [data-tab]');
+  const show = (id) => {
+    if (!document.getElementById(id)) return;
+    tabs.forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === id)));
+    document.querySelectorAll('.jg-page').forEach((p) => { p.hidden = p.id !== id; });
+    dash.setLink(id);
+    if (id === 'gdp') J.redraw();
+    if (id === 'inflation' && J.redrawCpi) J.redrawCpi();
+    if (id === 'trade' && J.redrawTrade) J.redrawTrade();
+  };
+  J.show = show;
+  tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
+  const linked = location.hash.slice(1);
+  if (['inflation', 'trade', 'methodology'].includes(linked)) show(linked);
+
+  J.redraw = () => {
+    if (document.getElementById('gdp').hidden) return;
+    growthChart(); originalChart(); levelsChart(); deflatorChart(); contribChart();
+  };
+  dash.onData(() => {
+    headline(); takeaway(); table(); J.redraw();
+  });
+})();
+</script>
+<script src="cpi.js"></script>
+<script src="export.js"></script>
