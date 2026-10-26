@@ -34,11 +34,11 @@ dash.calc('cpi_latest', {
 
 dash.calc('core_series', {
   title: 'CPI and core, y/y',
-  description: 'Combined CPI y/y and core 1 and core 2 y/y, from the first month with core figures, months without a core figure are left blank.',
+  description: 'Combined CPI y/y and core 1 and core 2 y/y (spliced), from February 2024.',
   inputs: ['cpi_series', 'in_cpi_core'],
   fn: (cpi_series, in_cpi_core) => {
     const core = in_cpi_core.map((r) => ({ date: r.date, series: r.series, yoy: r.yoy === '' || r.yoy == null ? null : Number(r.yoy) }));
-    const first = core.filter((r) => r.yoy != null).reduce((m, r) => (m && m < r.date ? m : r.date), null);
+    const first = '2024-02-01';
     const cpi = cpi_series.filter((r) => r.series === 'combined' && first && r.date >= first)
       .map((r) => ({ date: r.date, series: 'cpi', yoy: r.yoy }));
     return cpi.concat(core.filter((r) => first && r.date >= first));
