@@ -532,8 +532,8 @@ dash.calc('tiles_extra', {
     ], (v) => d3.format('.0f')(v), 300, true, { date: '2026-01-01', label: '', mid: true }, 'rbi_style');
     contribChart('cpi-contrib-linked', 'in_cpi_contrib_linked', false);
     lines('cpi-fe-chart', 'cpi-fe', 'cpi-fe-legend', 'yoy', [
-      { key: 'food', name: 'Food', color: 'var(--ad-c3)' },
-      { key: 'energy', name: 'Energy (electricity, gas and other fuels, petrol, diesel and CNG)', color: 'var(--ad-c1)' },
+      { key: 'food', name: 'Food', color: 'var(--ad-c2)' },
+      { key: 'energy', name: 'Fuel', color: 'var(--ad-c1)' },
     ], (v) => d3.format('.0f')(v), 280, true, null, 'fe_series');
     lines('cpi-gs-chart', 'cpi-gs', 'cpi-gs-legend', 'yoy', [
       { key: 'goods', name: 'Goods', color: 'var(--ad-c1)' },
