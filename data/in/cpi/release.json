@@ -1,0 +1,17 @@
+{
+ "code": "M2026-09",
+ "label": "Sep 2026",
+ "latest_month": "2026-09-01",
+ "table": "MoSPI CPI, 2024 base (getCPIData: Current from Jan 2025, Back Jan 2013-Dec 2024)",
+ "processed_at": "2026-10-26T01:34:50Z",
+ "rows": 495,
+ "warnings": [],
+ "fingerprint": "68104cda0b699ab7",
+ "long_rows": 1446,
+ "history": [
+  {
+   "code": "M2026-09",
+   "processed_at": "2026-10-26T01:34:50Z"
+  }
+ ]
+}

@@ -1,4 +1,1450 @@
 country,indicator,series,label,measure,area,freq,date,value,unit,source,release
+IN,cpi,combined,"CPI, combined",index,all-India,M,2013-01-01,55.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2013-01-01,54.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2013-01-01,55.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2013-02-01,55.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2013-02-01,0.73,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2013-02-01,55.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2013-02-01,0.55,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2013-02-01,55.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2013-02-01,0.72,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2013-03-01,55.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2013-03-01,0.18,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2013-03-01,55.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2013-03-01,0.36,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2013-03-01,55.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2013-03-01,0.36,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2013-04-01,55.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2013-04-01,0.54,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2013-04-01,55.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2013-04-01,0.36,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2013-04-01,56.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2013-04-01,0.54,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2013-05-01,56.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2013-05-01,0.72,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2013-05-01,56.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2013-05-01,0.72,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2013-05-01,56.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2013-05-01,0.89,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2013-06-01,57.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2013-06-01,2.31,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2013-06-01,56.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2013-06-01,1.61,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2013-06-01,58.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2013-06-01,3.0,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2013-07-01,58.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2013-07-01,1.56,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2013-07-01,57.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2013-07-01,1.58,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2013-07-01,59.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2013-07-01,1.54,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2013-08-01,59.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2013-08-01,1.2,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2013-08-01,58.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2013-08-01,1.21,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2013-08-01,60.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2013-08-01,1.18,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2013-09-01,59.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2013-09-01,1.18,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2013-09-01,59.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2013-09-01,1.88,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2013-09-01,60.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2013-09-01,0.33,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2013-10-01,60.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2013-10-01,1.0,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2013-10-01,60.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2013-10-01,1.17,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2013-10-01,60.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2013-10-01,0.66,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2013-11-01,61.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2013-11-01,1.32,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2013-11-01,61.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2013-11-01,1.66,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2013-11-01,61.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2013-11-01,0.99,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2013-12-01,60.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2013-12-01,-1.63,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2013-12-01,60.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2013-12-01,-1.63,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2013-12-01,60.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2013-12-01,-1.47,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2014-01-01,59.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2014-01-01,8.6,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2014-01-01,-0.83,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2014-01-01,59.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2014-01-01,8.66,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2014-01-01,-1.16,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2014-01-01,60.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2014-01-01,8.56,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2014-01-01,-0.33,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2014-02-01,59.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2014-02-01,7.88,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2014-02-01,0.0,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2014-02-01,59.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2014-02-01,7.75,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2014-02-01,-0.17,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2014-02-01,60.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2014-02-01,8.02,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2014-02-01,0.17,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2014-03-01,60.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2014-03-01,8.25,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2014-03-01,0.5,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2014-03-01,59.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2014-03-01,8.11,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2014-03-01,0.5,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2014-03-01,60.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2014-03-01,8.29,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2014-03-01,0.5,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2014-04-01,60.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2014-04-01,8.48,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2014-04-01,0.83,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2014-04-01,60.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2014-04-01,8.46,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2014-04-01,0.84,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2014-04-01,61.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2014-04-01,8.51,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2014-04-01,0.83,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2014-05-01,61.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2014-05-01,8.33,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2014-05-01,0.66,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2014-05-01,60.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2014-05-01,8.21,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2014-05-01,0.5,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2014-05-01,61.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2014-05-01,8.44,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2014-05-01,0.82,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2014-06-01,61.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2014-06-01,6.77,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2014-06-01,0.82,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2014-06-01,61.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2014-06-01,7.44,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2014-06-01,0.83,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2014-06-01,61.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2014-06-01,6.11,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2014-06-01,0.65,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2014-07-01,62.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2014-07-01,7.39,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2014-07-01,2.11,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2014-07-01,62.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2014-07-01,7.95,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2014-07-01,2.13,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2014-07-01,63.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2014-07-01,6.73,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2014-07-01,2.26,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2014-08-01,63.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2014-08-01,7.03,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2014-08-01,0.96,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2014-08-01,63.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2014-08-01,7.67,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2014-08-01,0.96,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2014-08-01,63.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2014-08-01,6.39,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2014-08-01,0.79,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2014-09-01,63.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2014-09-01,5.63,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2014-09-01,-0.16,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2014-09-01,63.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2014-09-01,5.87,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2014-09-01,0.16,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2014-09-01,63.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2014-09-01,5.3,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2014-09-01,-0.63,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2014-10-01,63.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2014-10-01,4.62,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2014-10-01,0.0,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2014-10-01,63.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2014-10-01,4.76,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2014-10-01,0.16,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2014-10-01,63.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2014-10-01,4.47,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2014-10-01,0.0,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2014-11-01,63.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2014-11-01,3.27,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2014-11-01,0.0,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2014-11-01,63.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2014-11-01,3.15,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2014-11-01,0.0,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2014-11-01,63.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2014-11-01,3.48,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2014-11-01,-0.16,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2014-12-01,62.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2014-12-01,4.28,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2014-12-01,-0.63,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2014-12-01,62.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2014-12-01,4.16,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2014-12-01,-0.63,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2014-12-01,63.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2014-12-01,4.5,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2014-12-01,-0.47,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2015-01-01,62.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2015-01-01,5.19,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2015-01-01,0.0,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2015-01-01,62.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2015-01-01,5.34,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2015-01-01,0.0,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2015-01-01,63.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2015-01-01,4.96,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2015-01-01,0.0,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2015-02-01,63.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2015-02-01,5.37,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2015-02-01,0.16,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2015-02-01,63.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2015-02-01,5.79,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2015-02-01,0.32,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2015-02-01,63.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2015-02-01,4.95,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2015-02-01,0.16,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2015-03-01,63.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2015-03-01,5.25,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2015-03-01,0.48,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2015-03-01,63.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2015-03-01,5.67,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2015-03-01,0.32,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2015-03-01,63.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2015-03-01,4.75,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2015-03-01,0.48,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2015-04-01,63.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2015-04-01,4.87,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2015-04-01,0.47,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2015-04-01,63.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2015-04-01,5.29,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2015-04-01,0.32,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2015-04-01,63.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2015-04-01,4.36,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2015-04-01,0.47,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2015-05-01,64.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2015-05-01,5.01,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2015-05-01,0.63,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2015-05-01,63.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2015-05-01,5.52,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2015-05-01,0.79,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2015-05-01,64.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2015-05-01,4.41,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2015-05-01,0.78,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2015-06-01,64.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2015-06-01,5.4,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2015-06-01,1.25,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2015-06-01,64.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2015-06-01,6.07,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2015-06-01,1.41,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2015-06-01,64.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2015-06-01,4.55,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2015-06-01,0.78,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2015-07-01,65.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2015-07-01,3.69,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2015-07-01,0.46,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2015-07-01,65.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2015-07-01,4.35,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2015-07-01,0.46,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2015-07-01,65.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2015-07-01,2.94,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2015-07-01,0.62,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2015-08-01,65.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2015-08-01,3.74,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2015-08-01,0.92,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2015-08-01,65.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2015-08-01,4.47,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2015-08-01,1.08,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2015-08-01,65.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2015-08-01,2.75,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2015-08-01,0.61,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2015-09-01,66.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2015-09-01,4.41,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2015-09-01,0.46,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2015-09-01,66.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2015-09-01,5.05,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2015-09-01,0.76,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2015-09-01,65.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2015-09-01,3.61,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2015-09-01,0.31,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2015-10-01,66.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2015-10-01,5.0,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2015-10-01,0.61,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2015-10-01,66.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2015-10-01,5.54,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2015-10-01,0.6,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2015-10-01,66.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2015-10-01,4.28,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2015-10-01,0.61,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2015-11-01,66.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2015-11-01,5.41,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2015-11-01,0.45,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2015-11-01,67.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2015-11-01,5.95,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2015-11-01,0.45,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2015-11-01,66.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2015-11-01,4.71,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2015-11-01,0.3,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2015-12-01,66.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2015-12-01,5.61,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2015-12-01,-0.45,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2015-12-01,66.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2015-12-01,6.32,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2015-12-01,-0.3,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2015-12-01,66.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2015-12-01,4.73,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2015-12-01,-0.45,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2016-01-01,66.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2016-01-01,5.69,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2016-01-01,0.15,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2016-01-01,66.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2016-01-01,6.48,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2016-01-01,0.15,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2016-01-01,66.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2016-01-01,4.81,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2016-01-01,0.15,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2016-02-01,66.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2016-02-01,5.26,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2016-02-01,-0.15,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2016-02-01,66.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2016-02-01,6.05,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2016-02-01,-0.15,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2016-02-01,65.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2016-02-01,4.3,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2016-02-01,-0.3,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2016-03-01,66.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2016-03-01,4.83,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2016-03-01,0.0,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2016-03-01,66.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2016-03-01,5.7,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2016-03-01,0.0,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2016-03-01,65.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2016-03-01,3.95,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2016-03-01,0.0,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2016-04-01,67.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2016-04-01,5.47,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2016-04-01,0.9,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2016-04-01,67.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2016-04-01,6.17,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2016-04-01,0.9,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2016-04-01,66.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2016-04-01,4.68,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2016-04-01,1.21,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2016-05-01,67.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2016-05-01,5.76,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2016-05-01,1.04,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2016-05-01,68.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2016-05-01,6.45,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2016-05-01,0.89,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2016-05-01,67.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2016-05-01,4.89,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2016-05-01,1.05,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2016-06-01,68.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2016-06-01,5.77,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2016-06-01,1.18,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2016-06-01,68.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2016-06-01,6.29,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2016-06-01,1.32,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2016-06-01,68.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2016-06-01,5.26,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2016-06-01,1.04,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2016-07-01,69.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2016-07-01,6.07,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2016-07-01,0.88,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2016-07-01,69.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2016-07-01,6.66,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2016-07-01,0.87,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2016-07-01,68.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2016-07-01,5.39,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2016-07-01,0.73,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2016-08-01,69.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2016-08-01,5.05,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2016-08-01,0.0,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2016-08-01,69.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2016-08-01,5.87,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2016-08-01,0.29,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2016-08-01,68.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2016-08-01,4.22,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2016-08-01,-0.44,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2016-09-01,68.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2016-09-01,4.39,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2016-09-01,-0.29,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2016-09-01,69.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2016-09-01,5.04,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2016-09-01,0.0,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2016-09-01,68.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2016-09-01,3.64,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2016-09-01,-0.29,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2016-10-01,69.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2016-10-01,4.2,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2016-10-01,0.44,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2016-10-01,69.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2016-10-01,4.78,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2016-10-01,0.29,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2016-10-01,68.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2016-10-01,3.54,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2016-10-01,0.44,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2016-11-01,69.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2016-11-01,3.63,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2016-11-01,-0.14,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2016-11-01,69.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2016-11-01,4.13,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2016-11-01,-0.14,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2016-11-01,68.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2016-11-01,3.13,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2016-11-01,0.0,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2016-12-01,68.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2016-12-01,3.41,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2016-12-01,-0.58,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2016-12-01,69.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2016-12-01,3.83,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2016-12-01,-0.72,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2016-12-01,67.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2016-12-01,2.9,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2016-12-01,-0.73,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2017-01-01,68.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2017-01-01,3.17,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2017-01-01,-0.15,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2017-01-01,69.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2017-01-01,3.36,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2017-01-01,-0.29,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2017-01-01,68.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2017-01-01,2.9,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2017-01-01,0.15,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2017-02-01,68.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2017-02-01,3.65,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2017-02-01,0.29,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2017-02-01,69.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2017-02-01,3.67,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2017-02-01,0.14,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2017-02-01,68.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2017-02-01,3.55,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2017-02-01,0.29,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2017-03-01,68.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2017-03-01,3.89,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2017-03-01,0.15,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2017-03-01,69.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2017-03-01,3.75,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2017-03-01,0.14,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2017-03-01,68.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2017-03-01,3.96,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2017-03-01,0.44,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2017-04-01,69.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2017-04-01,2.99,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2017-04-01,0.29,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2017-04-01,69.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2017-04-01,3.02,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2017-04-01,0.14,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2017-04-01,68.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2017-04-01,3.03,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2017-04-01,0.29,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2017-05-01,69.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2017-05-01,2.18,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2017-05-01,0.14,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2017-05-01,69.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2017-05-01,2.3,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2017-05-01,0.29,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2017-05-01,68.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2017-05-01,2.13,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2017-05-01,0.15,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2017-06-01,69.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2017-06-01,1.46,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2017-06-01,0.43,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2017-06-01,69.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2017-06-01,1.52,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2017-06-01,0.43,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2017-06-01,69.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2017-06-01,1.41,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2017-06-01,0.44,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2017-07-01,70.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2017-07-01,2.36,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2017-07-01,1.73,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2017-07-01,71.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2017-07-01,2.41,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2017-07-01,1.72,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2017-07-01,70.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2017-07-01,2.17,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2017-07-01,1.45,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2017-08-01,71.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2017-08-01,3.28,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2017-08-01,0.85,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2017-08-01,72.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2017-08-01,3.22,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2017-08-01,1.27,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2017-08-01,70.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2017-08-01,3.35,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2017-08-01,0.71,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2017-09-01,71.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2017-09-01,3.28,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2017-09-01,-0.14,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2017-09-01,71.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2017-09-01,3.15,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2017-09-01,-0.14,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2017-09-01,70.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2017-09-01,3.44,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2017-09-01,-0.28,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2017-10-01,71.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2017-10-01,3.58,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2017-10-01,0.7,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2017-10-01,72.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2017-10-01,3.36,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2017-10-01,0.42,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2017-10-01,71.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2017-10-01,3.81,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2017-10-01,0.85,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2017-11-01,72.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2017-11-01,4.88,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2017-11-01,1.12,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2017-11-01,73.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2017-11-01,4.79,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2017-11-01,1.25,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2017-11-01,71.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2017-11-01,4.9,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2017-11-01,0.99,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2017-12-01,72.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2017-12-01,5.21,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2017-12-01,-0.28,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2017-12-01,73.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2017-12-01,5.27,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2017-12-01,-0.14,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2017-12-01,71.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2017-12-01,5.09,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2017-12-01,-0.56,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2018-01-01,72.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2018-01-01,5.07,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2018-01-01,-0.28,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2018-01-01,72.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2018-01-01,5.21,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2018-01-01,-0.41,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2018-01-01,71.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2018-01-01,4.93,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2018-01-01,0.0,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2018-02-01,71.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2018-02-01,4.44,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2018-02-01,-0.42,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2018-02-01,72.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2018-02-01,4.45,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2018-02-01,-0.55,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2018-02-01,71.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2018-02-01,4.52,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2018-02-01,0.0,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2018-03-01,71.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2018-03-01,4.28,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2018-03-01,0.14,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2018-03-01,72.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2018-03-01,4.44,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2018-03-01,0.14,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2018-03-01,71.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2018-03-01,4.12,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2018-03-01,0.0,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2018-04-01,72.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2018-04-01,4.58,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2018-04-01,0.42,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2018-04-01,72.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2018-04-01,4.67,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2018-04-01,0.28,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2018-04-01,71.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2018-04-01,4.42,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2018-04-01,0.56,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2018-05-01,72.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2018-05-01,4.87,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2018-05-01,0.55,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2018-05-01,73.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2018-05-01,4.88,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2018-05-01,0.55,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2018-05-01,72.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2018-05-01,4.72,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2018-05-01,0.42,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2018-06-01,72.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2018-06-01,4.92,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2018-06-01,0.41,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2018-06-01,73.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2018-06-01,4.93,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2018-06-01,0.55,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2018-06-01,72.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2018-06-01,4.85,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2018-06-01,0.69,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2018-07-01,73.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2018-07-01,4.17,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2018-07-01,0.96,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2018-07-01,74.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2018-07-01,4.11,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2018-07-01,0.82,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2018-07-01,73.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2018-07-01,4.32,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2018-07-01,0.97,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2018-08-01,73.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2018-08-01,3.69,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2018-08-01,0.41,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2018-08-01,74.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2018-08-01,3.41,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2018-08-01,0.54,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2018-08-01,73.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2018-08-01,3.99,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2018-08-01,0.27,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2018-09-01,73.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2018-09-01,3.7,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2018-09-01,-0.14,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2018-09-01,74.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2018-09-01,3.27,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2018-09-01,-0.27,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2018-09-01,73.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2018-09-01,4.31,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2018-09-01,0.14,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2018-10-01,74.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2018-10-01,3.38,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2018-10-01,0.41,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2018-10-01,74.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2018-10-01,2.82,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2018-10-01,0.13,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2018-10-01,73.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2018-10-01,4.04,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2018-10-01,0.54,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2018-11-01,74.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2018-11-01,2.33,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2018-11-01,0.13,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2018-11-01,74.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2018-11-01,1.71,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2018-11-01,0.13,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2018-11-01,73.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2018-11-01,3.12,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2018-11-01,0.0,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2018-12-01,73.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2018-12-01,2.11,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2018-12-01,-0.54,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2018-12-01,74.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2018-12-01,1.5,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2018-12-01,-0.4,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2018-12-01,73.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2018-12-01,2.91,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2018-12-01,-0.68,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2019-01-01,73.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2019-01-01,1.97,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2019-01-01,-0.41,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2019-01-01,73.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2019-01-01,1.22,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2019-01-01,-0.67,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2019-01-01,73.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2019-01-01,2.91,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2019-01-01,0.0,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2019-02-01,73.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2019-02-01,2.57,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2019-02-01,0.27,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2019-02-01,73.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2019-02-01,1.81,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2019-02-01,0.0,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2019-02-01,73.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2019-02-01,3.43,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2019-02-01,0.41,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2019-03-01,73.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2019-03-01,2.86,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2019-03-01,0.27,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2019-03-01,73.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2019-03-01,1.8,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2019-03-01,0.14,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2019-03-01,74.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2019-03-01,4.1,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2019-03-01,0.68,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2019-04-01,74.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2019-04-01,2.99,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2019-04-01,0.68,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2019-04-01,74.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2019-04-01,1.87,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2019-04-01,0.41,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2019-04-01,74.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2019-04-01,4.3,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2019-04-01,0.81,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2019-05-01,74.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2019-05-01,3.05,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2019-05-01,0.54,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2019-05-01,74.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2019-05-01,1.86,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2019-05-01,0.54,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2019-05-01,75.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2019-05-01,4.51,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2019-05-01,0.67,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2019-06-01,75.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2019-06-01,3.18,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2019-06-01,0.67,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2019-06-01,75.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2019-06-01,2.21,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2019-06-01,0.81,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2019-06-01,75.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2019-06-01,4.33,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2019-06-01,0.4,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2019-07-01,76.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2019-07-01,3.15,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2019-07-01,0.93,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2019-07-01,75.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2019-07-01,2.19,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2019-07-01,0.93,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2019-07-01,76.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2019-07-01,4.22,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2019-07-01,0.79,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2019-08-01,76.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2019-08-01,3.28,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2019-08-01,0.53,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2019-08-01,76.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2019-08-01,2.25,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2019-08-01,0.53,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2019-08-01,76.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2019-08-01,4.49,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2019-08-01,0.66,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2019-09-01,76.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2019-09-01,3.99,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2019-09-01,0.52,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2019-09-01,76.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2019-09-01,3.24,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2019-09-01,0.66,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2019-09-01,77.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2019-09-01,4.78,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2019-09-01,0.39,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2019-10-01,77.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2019-10-01,4.62,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2019-10-01,0.91,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2019-10-01,77.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2019-10-01,4.29,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2019-10-01,1.04,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2019-10-01,77.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2019-10-01,5.11,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2019-10-01,0.91,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2019-11-01,78.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2019-11-01,5.54,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2019-11-01,1.03,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2019-11-01,78.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2019-11-01,5.27,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2019-11-01,1.16,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2019-11-01,78.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2019-11-01,5.76,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2019-11-01,0.64,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2019-12-01,79.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2019-12-01,7.35,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2019-12-01,1.15,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2019-12-01,79.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2019-12-01,7.33,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2019-12-01,1.53,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2019-12-01,78.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2019-12-01,7.46,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2019-12-01,0.9,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2020-01-01,79.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2020-01-01,7.59,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2020-01-01,-0.13,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2020-01-01,79.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2020-01-01,7.73,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2020-01-01,-0.25,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2020-01-01,78.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2020-01-01,7.39,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2020-01-01,-0.13,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2020-02-01,78.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2020-02-01,6.58,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2020-02-01,-0.76,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2020-02-01,78.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2020-02-01,6.67,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2020-02-01,-1.01,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2020-02-01,78.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2020-02-01,6.57,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2020-02-01,-0.25,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2020-03-01,78.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2020-03-01,5.84,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2020-03-01,-0.25,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2020-03-01,78.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2020-03-01,6.09,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2020-03-01,-0.38,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2020-03-01,78.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2020-03-01,5.59,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2020-03-01,-0.25,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2020-04-01,79.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2020-04-01,7.22,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2020-04-01,1.79,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2020-04-01,79.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2020-04-01,7.2,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2020-04-01,1.41,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2020-04-01,80.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2020-04-01,7.33,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2020-04-01,2.42,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2020-05-01,79.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2020-05-01,6.27,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2020-05-01,-0.25,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2020-05-01,79.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2020-05-01,6.18,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2020-05-01,-0.38,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2020-05-01,80.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2020-05-01,6.43,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2020-05-01,-0.25,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2020-06-01,80.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2020-06-01,6.23,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2020-06-01,0.63,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2020-06-01,79.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2020-06-01,6.34,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2020-06-01,0.89,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2020-06-01,80.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2020-06-01,6.12,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2020-06-01,0.12,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2020-07-01,81.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2020-07-01,6.73,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2020-07-01,1.37,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2020-07-01,80.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2020-07-01,6.76,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2020-07-01,1.38,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2020-07-01,81.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2020-07-01,6.7,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2020-07-01,1.37,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2020-08-01,81.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2020-08-01,6.69,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2020-08-01,0.49,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2020-08-01,81.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2020-08-01,6.66,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2020-08-01,0.37,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2020-08-01,81.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2020-08-01,6.8,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2020-08-01,0.74,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2020-09-01,82.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2020-09-01,7.27,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2020-09-01,1.1,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2020-09-01,82.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2020-09-01,7.36,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2020-09-01,1.36,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2020-09-01,82.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2020-09-01,7.26,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2020-09-01,0.85,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2020-10-01,83.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2020-10-01,7.61,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2020-10-01,1.21,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2020-10-01,83.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2020-10-01,7.75,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2020-10-01,1.46,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2020-10-01,83.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2020-10-01,7.33,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2020-10-01,0.97,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2020-11-01,83.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2020-11-01,6.93,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2020-11-01,0.36,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2020-11-01,83.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2020-11-01,7.2,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2020-11-01,0.6,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2020-11-01,83.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2020-11-01,6.73,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2020-11-01,0.12,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2020-12-01,82.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2020-12-01,4.59,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2020-12-01,-1.08,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2020-12-01,82.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2020-12-01,4.07,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2020-12-01,-1.31,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2020-12-01,83.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2020-12-01,5.19,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2020-12-01,-0.6,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2021-01-01,82.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2021-01-01,4.06,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2021-01-01,-0.6,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2021-01-01,81.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2021-01-01,3.23,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2021-01-01,-1.09,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2021-01-01,82.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2021-01-01,5.13,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2021-01-01,-0.12,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2021-02-01,82.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2021-02-01,5.03,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2021-02-01,0.24,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2021-02-01,81.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2021-02-01,4.19,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2021-02-01,-0.12,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2021-02-01,83.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2021-02-01,5.96,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2021-02-01,0.48,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2021-03-01,82.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2021-03-01,5.52,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2021-03-01,0.12,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2021-03-01,81.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2021-03-01,4.61,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2021-03-01,0.0,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2021-03-01,83.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2021-03-01,6.52,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2021-03-01,0.24,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2021-04-01,83.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2021-04-01,4.23,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2021-04-01,0.61,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2021-04-01,82.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2021-04-01,3.75,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2021-04-01,0.61,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2021-04-01,84.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2021-04-01,4.71,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2021-04-01,0.72,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2021-05-01,84.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2021-05-01,6.3,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2021-05-01,1.68,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2021-05-01,84.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2021-05-01,6.55,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2021-05-01,2.19,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2021-05-01,84.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2021-05-01,5.91,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2021-05-01,0.95,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2021-06-01,85.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2021-06-01,6.26,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2021-06-01,0.59,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2021-06-01,84.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2021-06-01,6.16,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2021-06-01,0.59,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2021-06-01,85.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2021-06-01,6.37,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2021-06-01,0.47,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2021-07-01,85.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2021-07-01,5.59,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2021-07-01,0.71,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2021-07-01,85.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2021-07-01,5.49,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2021-07-01,0.71,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2021-07-01,86.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2021-07-01,5.82,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2021-07-01,0.94,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2021-08-01,85.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2021-08-01,5.3,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2021-08-01,0.23,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2021-08-01,85.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2021-08-01,5.28,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2021-08-01,0.23,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2021-08-01,86.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2021-08-01,5.32,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2021-08-01,0.23,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2021-09-01,86.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2021-09-01,4.35,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2021-09-01,0.23,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2021-09-01,85.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2021-09-01,4.13,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2021-09-01,0.23,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2021-09-01,86.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2021-09-01,4.57,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2021-09-01,0.0,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2021-10-01,87.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2021-10-01,4.48,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2021-10-01,1.4,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2021-10-01,86.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2021-10-01,4.07,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2021-10-01,1.4,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2021-10-01,87.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2021-10-01,5.04,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2021-10-01,1.51,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2021-11-01,87.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2021-11-01,4.91,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2021-11-01,0.69,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2021-11-01,87.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2021-11-01,4.29,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2021-11-01,0.81,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2021-11-01,88.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2021-11-01,5.54,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2021-11-01,0.57,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2021-12-01,87.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2021-12-01,5.66,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2021-12-01,-0.34,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2021-12-01,87.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2021-12-01,5.36,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2021-12-01,-0.34,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2021-12-01,87.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2021-12-01,5.9,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2021-12-01,-0.23,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2022-01-01,87.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2022-01-01,6.01,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2022-01-01,-0.23,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2022-01-01,86.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2022-01-01,6.12,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2022-01-01,-0.34,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2022-01-01,87.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2022-01-01,5.91,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2022-01-01,-0.11,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2022-02-01,87.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2022-02-01,6.07,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2022-02-01,0.23,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2022-02-01,87.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2022-02-01,6.38,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2022-02-01,0.23,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2022-02-01,88.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2022-02-01,5.75,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2022-02-01,0.23,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2022-03-01,88.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2022-03-01,6.95,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2022-03-01,0.91,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2022-03-01,88.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2022-03-01,7.66,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2022-03-01,1.15,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2022-03-01,88.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2022-03-01,6.12,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2022-03-01,0.68,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2022-04-01,89.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2022-04-01,7.79,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2022-04-01,1.47,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2022-04-01,89.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2022-04-01,8.38,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2022-04-01,1.25,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2022-04-01,90.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2022-04-01,7.09,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2022-04-01,1.58,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2022-05-01,90.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2022-05-01,7.04,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2022-05-01,0.89,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2022-05-01,90.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2022-05-01,7.08,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2022-05-01,1.01,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2022-05-01,90.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2022-05-01,7.08,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2022-05-01,1.0,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2022-06-01,90.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2022-06-01,7.01,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2022-06-01,0.55,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2022-06-01,90.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2022-06-01,7.09,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2022-06-01,0.67,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2022-06-01,91.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2022-06-01,6.86,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2022-06-01,0.33,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2022-07-01,91.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2022-07-01,6.71,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2022-07-01,0.44,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2022-07-01,91.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2022-07-01,6.8,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2022-07-01,0.33,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2022-07-01,91.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2022-07-01,6.49,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2022-07-01,0.55,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2022-08-01,91.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2022-08-01,7.0,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2022-08-01,0.55,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2022-08-01,91.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2022-08-01,7.15,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2022-08-01,0.55,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2022-08-01,92.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2022-08-01,6.72,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2022-08-01,0.44,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2022-09-01,92.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2022-09-01,7.41,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2022-09-01,0.54,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2022-09-01,92.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2022-09-01,7.56,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2022-09-01,0.66,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2022-09-01,92.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2022-09-01,7.27,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2022-09-01,0.54,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2022-10-01,93.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2022-10-01,6.77,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2022-10-01,0.87,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2022-10-01,92.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2022-10-01,6.98,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2022-10-01,0.87,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2022-10-01,93.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2022-10-01,6.5,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2022-10-01,0.76,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2022-11-01,93.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2022-11-01,5.88,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2022-11-01,-0.11,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2022-11-01,92.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2022-11-01,6.09,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2022-11-01,-0.11,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2022-11-01,93.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2022-11-01,5.68,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2022-11-01,-0.21,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2022-12-01,92.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2022-12-01,5.72,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2022-12-01,-0.54,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2022-12-01,92.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2022-12-01,6.05,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2022-12-01,-0.32,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2022-12-01,92.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2022-12-01,5.39,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2022-12-01,-0.54,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2023-01-01,93.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2023-01-01,6.52,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2023-01-01,0.54,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2023-01-01,92.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2023-01-01,6.85,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2023-01-01,0.32,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2023-01-01,93.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2023-01-01,6.0,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2023-01-01,0.43,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2023-02-01,93.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2023-02-01,6.44,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2023-02-01,0.11,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2023-02-01,92.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2023-02-01,6.72,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2023-02-01,0.11,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2023-02-01,93.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2023-02-01,6.1,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2023-02-01,0.43,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2023-03-01,93.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2023-03-01,5.66,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2023-03-01,0.21,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2023-03-01,93.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2023-03-01,5.51,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2023-03-01,0.11,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2023-03-01,93.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2023-03-01,5.89,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2023-03-01,0.43,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2023-04-01,93.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2023-04-01,4.7,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2023-04-01,0.54,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2023-04-01,93.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2023-04-01,4.68,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2023-04-01,0.43,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2023-04-01,94.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2023-04-01,4.85,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2023-04-01,0.64,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2023-05-01,94.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2023-05-01,4.31,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2023-05-01,0.53,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2023-05-01,93.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2023-05-01,4.23,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2023-05-01,0.54,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2023-05-01,94.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2023-05-01,4.33,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2023-05-01,0.42,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2023-06-01,95.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2023-06-01,4.87,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2023-06-01,1.06,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2023-06-01,95.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2023-06-01,4.78,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2023-06-01,1.17,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2023-06-01,95.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2023-06-01,4.96,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2023-06-01,0.95,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2023-07-01,98.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2023-07-01,7.44,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2023-07-01,2.94,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2023-07-01,98.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2023-07-01,7.63,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2023-07-01,3.16,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2023-07-01,98.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2023-07-01,7.2,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2023-07-01,2.72,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2023-08-01,98.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2023-08-01,6.83,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2023-08-01,0.0,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2023-08-01,98.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2023-08-01,7.02,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2023-08-01,0.0,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2023-08-01,98.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2023-08-01,6.59,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2023-08-01,-0.1,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2023-09-01,97.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2023-09-01,5.02,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2023-09-01,-1.12,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2023-09-01,97.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2023-09-01,5.33,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2023-09-01,-1.02,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2023-09-01,96.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2023-09-01,4.65,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2023-09-01,-1.32,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2023-10-01,97.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2023-10-01,4.87,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2023-10-01,0.62,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2023-10-01,97.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2023-10-01,5.12,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2023-10-01,0.72,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2023-10-01,97.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2023-10-01,4.62,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2023-10-01,0.72,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2023-11-01,98.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2023-11-01,5.55,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2023-11-01,0.51,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2023-11-01,98.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2023-11-01,5.85,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2023-11-01,0.61,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2023-11-01,98.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2023-11-01,5.26,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2023-11-01,0.41,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2023-12-01,97.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2023-12-01,5.69,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2023-12-01,-0.31,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2023-12-01,98.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2023-12-01,5.93,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2023-12-01,-0.31,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2023-12-01,97.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2023-12-01,5.46,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2023-12-01,-0.31,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2024-01-01,97.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2024-01-01,5.1,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2024-01-01,-0.1,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2024-01-01,97.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2024-01-01,5.34,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2024-01-01,-0.2,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2024-01-01,97.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2024-01-01,4.92,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2024-01-01,-0.1,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2024-02-01,97.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2024-02-01,5.09,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2024-02-01,0.2,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2024-02-01,97.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2024-02-01,5.34,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2024-02-01,0.1,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2024-02-01,97.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2024-02-01,4.78,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2024-02-01,0.31,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2024-03-01,97.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2024-03-01,4.85,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2024-03-01,0.0,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2024-03-01,98.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2024-03-01,5.51,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2024-03-01,0.2,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2024-03-01,97.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2024-03-01,4.14,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2024-03-01,-0.2,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2024-04-01,98.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2024-04-01,4.83,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2024-04-01,0.41,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2024-04-01,98.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2024-04-01,5.43,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2024-04-01,0.31,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2024-04-01,98.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2024-04-01,4.11,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2024-04-01,0.61,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2024-05-01,98.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2024-05-01,4.8,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2024-05-01,0.61,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2024-05-01,98.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2024-05-01,5.34,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2024-05-01,0.51,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2024-05-01,98.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2024-05-01,4.21,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2024-05-01,0.51,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2024-06-01,100.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2024-06-01,5.08,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2024-06-01,1.31,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2024-06-01,100.4,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2024-06-01,5.66,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2024-06-01,1.52,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2024-06-01,99.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2024-06-01,4.39,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2024-06-01,1.11,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2024-07-01,101.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2024-07-01,3.6,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2024-07-01,1.5,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2024-07-01,102.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2024-07-01,4.1,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2024-07-01,1.59,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2024-07-01,101.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2024-07-01,3.03,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2024-07-01,1.3,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2024-08-01,101.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2024-08-01,3.65,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2024-08-01,0.0,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2024-08-01,102.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2024-08-01,4.16,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2024-08-01,0.0,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2024-08-01,101.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2024-08-01,3.14,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2024-08-01,0.0,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2024-09-01,102.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2024-09-01,5.49,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2024-09-01,0.59,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2024-09-01,102.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2024-09-01,5.87,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2024-09-01,0.69,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2024-09-01,101.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2024-09-01,5.05,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2024-09-01,0.59,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2024-10-01,103.7,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2024-10-01,6.21,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2024-10-01,1.37,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2024-10-01,104.2,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2024-10-01,6.68,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2024-10-01,1.46,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2024-10-01,103.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2024-10-01,5.62,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2024-10-01,1.18,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2024-11-01,103.5,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2024-11-01,5.48,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2024-11-01,-0.19,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2024-11-01,104.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2024-11-01,5.95,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2024-11-01,-0.1,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2024-11-01,102.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2024-11-01,4.89,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2024-11-01,-0.19,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2024-12-01,102.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2024-12-01,5.22,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2024-12-01,-0.58,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2024-12-01,103.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2024-12-01,5.76,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2024-12-01,-0.48,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2024-12-01,102.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2024-12-01,4.58,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2024-12-01,-0.68,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2025-01-01,101.67,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2025-01-01,4.26,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2025-01-01,-1.02,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2025-01-01,101.81,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2025-01-01,4.59,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2025-01-01,-1.26,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2025-01-01,101.49,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2025-01-01,3.87,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2025-01-01,-0.73,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2025-02-01,101.32,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2025-02-01,3.61,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2025-02-01,-0.34,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2025-02-01,101.33,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2025-02-01,3.79,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2025-02-01,-0.47,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2025-02-01,101.3,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2025-02-01,3.32,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2025-02-01,-0.19,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2025-03-01,101.39,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2025-03-01,3.34,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2025-03-01,0.07,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2025-03-01,101.34,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2025-03-01,3.25,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2025-03-01,0.01,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2025-03-01,101.47,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2025-03-01,3.43,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2025-03-01,0.17,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2025-04-01,101.58,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2025-04-01,3.16,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2025-04-01,0.19,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2025-04-01,101.49,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2025-04-01,2.92,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2025-04-01,0.15,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2025-04-01,101.71,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2025-04-01,3.36,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2025-04-01,0.24,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2025-05-01,101.9,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2025-05-01,2.82,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2025-05-01,0.32,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2025-05-01,101.78,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2025-05-01,2.59,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2025-05-01,0.29,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2025-05-01,102.06,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2025-05-01,3.12,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2025-05-01,0.34,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2025-06-01,102.51,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2025-06-01,2.1,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2025-06-01,0.6,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2025-06-01,102.39,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2025-06-01,1.72,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2025-06-01,0.6,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2025-06-01,102.66,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2025-06-01,2.56,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2025-06-01,0.59,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2025-07-01,103.35,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2025-07-01,1.61,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2025-07-01,0.82,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2025-07-01,103.34,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2025-07-01,1.18,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2025-07-01,0.93,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2025-07-01,103.36,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2025-07-01,2.1,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2025-07-01,0.68,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2025-08-01,103.74,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2025-08-01,2.07,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2025-08-01,0.38,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2025-08-01,103.84,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2025-08-01,1.69,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2025-08-01,0.48,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2025-08-01,103.6,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2025-08-01,2.47,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2025-08-01,0.23,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2025-09-01,103.74,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2025-09-01,1.44,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2025-09-01,0.0,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2025-09-01,103.8,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2025-09-01,1.07,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2025-09-01,-0.04,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2025-09-01,103.66,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2025-09-01,1.83,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2025-09-01,0.06,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2025-10-01,103.74,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2025-10-01,0.25,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2025-10-01,0.0,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2025-10-01,103.85,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2025-10-01,-0.25,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2025-10-01,0.05,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2025-10-01,103.61,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2025-10-01,0.88,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2025-10-01,-0.05,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2025-11-01,104.01,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2025-11-01,0.71,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2025-11-01,0.26,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2025-11-01,104.16,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2025-11-01,0.1,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2025-11-01,0.3,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2025-11-01,103.83,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2025-11-01,1.4,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2025-11-01,0.21,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2025-12-01,104.1,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2025-12-01,1.33,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2025-12-01,0.09,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2025-12-01,104.19,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2025-12-01,0.76,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2025-12-01,0.03,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2025-12-01,103.98,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2025-12-01,2.03,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2025-12-01,0.14,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2026-01-01,104.45,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2026-01-01,2.74,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2026-01-01,0.34,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2026-01-01,104.59,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2026-01-01,2.73,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2026-01-01,0.38,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2026-01-01,104.28,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2026-01-01,2.75,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2026-01-01,0.29,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2026-02-01,104.57,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2026-02-01,3.21,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2026-02-01,0.11,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2026-02-01,104.74,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2026-02-01,3.37,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2026-02-01,0.14,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2026-02-01,104.36,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2026-02-01,3.02,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2026-02-01,0.08,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2026-03-01,104.84,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2026-03-01,3.4,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2026-03-01,0.26,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2026-03-01,105.02,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2026-03-01,3.63,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2026-03-01,0.27,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2026-03-01,104.62,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2026-03-01,3.11,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2026-03-01,0.25,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2026-04-01,105.12,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2026-04-01,3.48,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2026-04-01,0.27,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2026-04-01,105.28,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2026-04-01,3.74,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2026-04-01,0.25,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2026-04-01,104.92,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2026-04-01,3.16,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2026-04-01,0.29,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2026-05-01,105.91,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2026-05-01,3.93,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2026-05-01,0.75,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2026-05-01,106.11,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2026-05-01,4.25,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2026-05-01,0.79,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2026-05-01,105.66,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2026-05-01,3.53,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2026-05-01,0.71,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2026-06-01,107.0,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2026-06-01,4.38,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2026-06-01,1.03,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2026-06-01,107.24,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2026-06-01,4.74,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2026-06-01,1.06,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2026-06-01,106.69,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2026-06-01,3.93,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2026-06-01,0.97,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2026-07-01,107.95,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2026-07-01,4.45,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2026-07-01,0.89,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2026-07-01,108.34,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2026-07-01,4.84,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2026-07-01,1.03,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2026-07-01,107.45,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2026-07-01,3.96,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2026-07-01,0.71,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2026-08-01,108.74,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2026-08-01,4.83,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2026-08-01,0.73,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2026-08-01,109.28,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2026-08-01,5.24,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2026-08-01,0.87,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2026-08-01,108.07,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2026-08-01,4.31,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2026-08-01,0.58,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",index,all-India,M,2026-09-01,109.49,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",yoy,all-India,M,2026-09-01,5.54,%,MoSPI,M2026-09
+IN,cpi,combined,"CPI, combined",mom,all-India,M,2026-09-01,0.69,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",index,all-India,M,2026-09-01,110.11,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",yoy,all-India,M,2026-09-01,6.08,%,MoSPI,M2026-09
+IN,cpi,rural,"CPI, rural",mom,all-India,M,2026-09-01,0.76,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",index,all-India,M,2026-09-01,108.71,"index, 2024 = 100",MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",yoy,all-India,M,2026-09-01,4.88,%,MoSPI,M2026-09
+IN,cpi,urban,"CPI, urban",mom,all-India,M,2026-09-01,0.59,%,MoSPI,M2026-09
 JP,cpi,all,All items,index,national,M,1970-01-01,27.0,"index, 2025 = 100",Statistics Bureau (MIC),N2026-09_T2026-09
 JP,cpi,core,All items less fresh food (core),index,national,M,1970-01-01,27.5,"index, 2025 = 100",Statistics Bureau (MIC),N2026-09_T2026-09
 JP,cpi,core_core,All items less fresh food and energy,index,national,M,1970-01-01,27.4,"index, 2025 = 100",Statistics Bureau (MIC),N2026-09_T2026-09
