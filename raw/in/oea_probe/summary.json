@@ -1,0 +1,37 @@
+[
+ {
+  "name": "dl2223",
+  "url": "https://eaindustry.nic.in/download_data_2223.asp",
+  "status": 200,
+  "type": "text/html",
+  "bytes": 20419
+ },
+ {
+  "name": "dl1112",
+  "url": "https://eaindustry.nic.in/download_data_1112.asp",
+  "status": 200,
+  "type": "text/html",
+  "bytes": 17477
+ },
+ {
+  "name": "home",
+  "url": "https://eaindustry.nic.in/",
+  "status": 200,
+  "type": "text/html",
+  "bytes": 38523
+ },
+ {
+  "name": "wpi_home",
+  "url": "https://eaindustry.nic.in/home.asp",
+  "status": 404,
+  "type": "text/html; charset=utf-8",
+  "bytes": 4845
+ },
+ {
+  "name": "press202609",
+  "url": "https://eaindustry.nic.in/press_release/press_release_202610.pdf",
+  "status": 404,
+  "type": "text/html; charset=utf-8",
+  "bytes": 4905
+ }
+]
