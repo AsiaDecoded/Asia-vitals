@@ -106,7 +106,7 @@ dash.calc('fe_series', {
 
 dash.calc('ppi_cpi', {
   title: 'Producer and consumer price inflation',
-  description: 'Spliced output PPI y/y (WPI 2011-12 linked before Apr 2023) and combined CPI y/y (chart 2), from Apr 2013.',
+  description: 'Spliced output PPI y/y (WPI 2011-12 linked before Apr 2023) and combined CPI y/y (chart 3), from Apr 2013.',
   inputs: ['in_ppi_spliced', 'cpi_series'],
   fn: (ppi, cpi_series) => {
     const p = ppi.filter((r) => r.yoy !== '' && r.yoy != null).map((r) => ({ date: r.date, series: 'ppi', yoy: Number(r.yoy) }));
