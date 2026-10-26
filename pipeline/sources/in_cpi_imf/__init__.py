@@ -1,11 +1,12 @@
 """India consumer prices, long history: IMF Consumer Price Index dataset (formerly IFS), all items.
 
 Series IMF.STA:CPI IND.CPI._T.IX.M (monthly, Jan 1957 on) and IND.CPI._T.IX.A (annual, 1957 on),
-both with reference period 2024 = 100, as the IMF publishes them. The IMF joins India's indices
+both with reference period 2024 = 100, and the IMF's own y/y rates for each
+(IND.CPI._T.YOY_PCH_PA_PT.M and .A), as the IMF publishes them. The IMF joins India's indices
 at overlaps (series attribute OVERLAP="OL"); it publishes no splice dates. Compared with MoSPI,
 2025 on matches the 2024-base combined CPI and 2013-2024 the 2012-base combined CPI; earlier
 years appear to be CPI for Industrial Workers (not confirmed against Labour Bureau data).
-Index levels only, as published; nothing is calculated here.
+Index levels and y/y as published by the IMF; nothing is calculated here.
 """
 import csv
 import gzip
@@ -20,7 +21,8 @@ DESCRIPTION = "India CPI all items, monthly and annual from 1957, 2024 = 100 (IM
 OUT = DATA / "in" / "cpi_imf"
 RAWDIR = RAW / "in" / "cpi_imf"
 FLOW = "IMF.STA,CPI"
-KEYS = {"M": "IND.CPI._T.IX.M", "A": "IND.CPI._T.IX.A"}
+KEYS = {"M": "IND.CPI._T.IX.M", "A": "IND.CPI._T.IX.A",
+        "M_yoy": "IND.CPI._T.YOY_PCH_PA_PT.M", "A_yoy": "IND.CPI._T.YOY_PCH_PA_PT.A"}
 MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 
@@ -41,9 +43,9 @@ def _tidy(raw):
         for period, v, oattr in obs:
             if v is None:
                 continue
-            if oattr.get("REFERENCE_PERIOD") not in (None, "2024A"):
+            if not freq.endswith("_yoy") and oattr.get("REFERENCE_PERIOD") not in (None, "2024A"):
                 raise CheckFailed([f"{freq} {period}: reference period {oattr.get('REFERENCE_PERIOD')}, expected 2024A"])
-            if freq == "M":
+            if freq.startswith("M"):
                 y, m = period.split("-M")
                 vals[f"{y}-{int(m):02d}-01"] = v
             else:
@@ -62,6 +64,18 @@ def _checks(tidy, attrs, state):
     m, a = tidy.get("M", {}), tidy.get("A", {})
     if not m or not a:
         return ["no monthly or no annual data returned"], warnings, None
+    my, ay = tidy.get("M_yoy", {}), tidy.get("A_yoy", {})
+    if not my or not ay:
+        errors.append("no monthly or no annual y/y returned")
+    # The IMF's y/y should agree with its own index (both as published; ±0.05pp).
+    for idx, yoy, lag, f in ((m, my, lambda d: f"{int(d[:4]) - 1}{d[4:]}", "M"), (a, ay, lambda y: str(int(y) - 1), "A")):
+        for k, v in yoy.items():
+            p = idx.get(lag(k))
+            if p and k in idx and abs((idx[k] / p - 1) * 100 - v) > 0.05:
+                errors.append(f"{f} y/y {k}: IMF rate {v:.2f} does not match its index")
+        latest_idx = max(idx) if idx else None
+        if latest_idx and yoy and max(yoy) != latest_idx:
+            warnings.append(f"{f}: latest y/y {max(yoy)} differs from latest index {latest_idx}")
     for f in ("M", "A"):
         ref = attrs[f].get("COMMON_REFERENCE_PERIOD")
         if ref != "2024A":
@@ -100,24 +114,25 @@ def _checks(tidy, attrs, state):
 
 def _write(tidy, release):
     OUT.mkdir(parents=True, exist_ok=True)
-    m, a = tidy["M"], tidy["A"]
+    m, a, my, ay = tidy["M"], tidy["A"], tidy["M_yoy"], tidy["A_yoy"]
     with open(OUT / "in_cpi_imf_m.csv", "w", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
-        w.writerow(["date", "index"])
+        w.writerow(["date", "index", "yoy"])
         for d in sorted(m):
-            w.writerow([d, m[d]])
+            w.writerow([d, m[d], "" if my.get(d) is None else my[d]])
     with open(OUT / "in_cpi_imf_a.csv", "w", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
-        w.writerow(["year", "index"])
+        w.writerow(["year", "index", "yoy"])
         for y in sorted(a):
-            w.writerow([y, a[y]])
+            w.writerow([y, a[y], "" if ay.get(y) is None else ay[y]])
 
     def long_rows():
-        for freq, s in (("M", m), ("A", a)):
+        for freq, meas, unit, s in (("M", "index", "index, 2024 = 100", m), ("A", "index", "index, 2024 = 100", a),
+                                    ("M", "yoy", "%", my), ("A", "yoy", "%", ay)):
             for k in sorted(s):
                 yield {"country": "IN", "indicator": "cpi_long", "series": "all_items", "label": "CPI, all items (IMF)",
-                       "measure": "index", "area": "all-India", "freq": freq,
-                       "date": k if freq == "M" else f"{k}-01-01", "value": s[k], "unit": "index, 2024 = 100",
+                       "measure": meas, "area": "all-India", "freq": freq,
+                       "date": k if freq == "M" else f"{k}-01-01", "value": s[k], "unit": unit,
                        "source": "IMF, Consumer Price Index dataset", "release": release["code"]}
     nlong = write_long(long_rows(), OUT / "long.csv")
     return len(m) + len(a), nlong
