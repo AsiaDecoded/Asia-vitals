@@ -143,20 +143,6 @@ dash.calc('grp_series', {
   })),
 });
 
-dash.calc('div_contrib', {
-  title: 'Division contributions to CPI y/y',
-  description: 'Contributions (pp) to combined CPI y/y by division, with the smaller divisions together as other, from Jan 2026.',
-  inputs: ['grp_series'],
-  fn: (g) => {
-    const KEY = { '01': 'food', '04': 'housing', '07': 'transport', '11': 'restaurants', '13': 'personal' };
-    const by = new Map();
-    g.filter((r) => r.level === 'division' && r.contrib != null).forEach((r) => {
-      if (!by.has(r.date)) by.set(r.date, { date: r.date, food: 0, housing: 0, transport: 0, restaurants: 0, personal: 0, other: 0, cpi_yoy: 0 });
-      const o = by.get(r.date); o[KEY[r.code] || 'other'] += r.contrib; o.cpi_yoy += r.contrib;
-    });
-    return Array.from(by.values()).sort((a, b) => (a.date < b.date ? -1 : 1));
-  },
-});
 
 (() => {
   const J = window.JG;
@@ -468,42 +454,6 @@ dash.calc('div_contrib', {
   const heatColor = (v) => d3.interpolateRdBu(0.5 - Math.max(-1, Math.min(1, v / 12)) / 2);
   const heatInk = (v) => (Math.abs(v) > 7 ? '#fff' : '#1a1a1a');
 
-  // Divisions: y/y in the first month (hollow) and the latest month (filled), sorted by the latest.
-  function dumbbell() {
-    const box = document.getElementById('pp-dumb-chart');
-    const G = dash.data('grp_series');
-    if (failed(G.status)) { J.fail(box); return; }
-    if (G.status !== 'ok') return;
-    const divs = G.data.filter((r) => r.level === 'division');
-    const dates = Array.from(new Set(divs.map((r) => r.date))).sort();
-    const d0 = dates[0], d1 = dates[dates.length - 1];
-    const rows = Array.from(new Set(divs.map((r) => r.code))).map((c) => {
-      const a = divs.find((r) => r.code === c && r.date === d0), b = divs.find((r) => r.code === c && r.date === d1);
-      return a && b ? { code: c, name: b.name, a: a.yoy, b: b.yoy, w: b.weight } : null;
-    }).filter(Boolean).sort((p, q) => q.b - p.b);
-    const W = box.clientWidth, rowH = 26, top = 24, H = top + rows.length * rowH + 24;
-    box.replaceChildren();
-    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
-    const short = (t) => (t.length > 34 ? t.slice(0, 32) + '…' : t);
-    const ml = Math.min(W * 0.45, J.textWidth(svg, rows.map((r) => short(r.name))) + 12);
-    const vals = rows.flatMap((r) => [r.a, r.b]);
-    const x = d3.scaleLinear([Math.min(0, d3.min(vals)), d3.max(vals)], [ml, W - 40]).nice();
-    x.ticks(6).forEach((t) => {
-      svg.append('line').attr('x1', x(t)).attr('x2', x(t)).attr('y1', top - 6).attr('y2', H - 22).attr('stroke', t === 0 ? 'var(--cds-chart-reference)' : 'var(--ad-grid)');
-      svg.append('text').attr('x', x(t)).attr('y', H - 6).attr('text-anchor', 'middle').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(t);
-    });
-    rows.forEach((r, i) => {
-      const cy = top + i * rowH + rowH / 2;
-      svg.append('text').attr('x', ml - 8).attr('y', cy + 4).attr('text-anchor', 'end').attr('font-size', 12).attr('fill', 'var(--ad-ink)').text(short(r.name)).append('title').text(`${r.name} (weight ${r.w.toFixed(1)}%)`);
-      const up = r.b >= r.a;
-      svg.append('line').attr('x1', x(r.a)).attr('x2', x(r.b)).attr('y1', cy).attr('y2', cy).attr('stroke', up ? 'var(--ad-c2)' : 'var(--ad-c1)').attr('stroke-width', 3).attr('opacity', 0.5);
-      svg.append('circle').attr('cx', x(r.a)).attr('cy', cy).attr('r', 4.5).attr('fill', 'var(--color-bg)').attr('stroke', 'var(--color-fg-muted)').attr('stroke-width', 1.5);
-      svg.append('circle').attr('cx', x(r.b)).attr('cy', cy).attr('r', 5).attr('fill', up ? 'var(--ad-c2)' : 'var(--ad-c1)');
-      svg.append('text').attr('x', Math.max(x(r.a), x(r.b)) + 9).attr('y', cy + 4).attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(J.f1(r.b));
-    });
-    const lg = document.getElementById('pp-dumb-legend');
-    lg.textContent = `○ ${MONS[+d0.slice(5, 7) - 1]} ${d0.slice(0, 4)}   ● ${MONS[+d1.slice(5, 7) - 1]} ${d1.slice(0, 4)} (red: higher, blue: lower)`;
-  }
 
   // Groups by month: heatmap of published y/y, grouped by division.
   function heatmap() {
@@ -516,31 +466,29 @@ dash.calc('div_contrib', {
     const lines = [];
     divs.forEach((dc) => {
       const dv = G.data.find((r) => r.code === dc);
-      const groups = Array.from(new Set(G.data.filter((r) => r.level === 'group' && r.code.startsWith(dc + '.')).map((r) => r.code))).sort();
-      lines.push({ code: dc, name: dv.name, head: true });
-      if (groups.length > 1) groups.forEach((gc) => lines.push({ code: gc, name: G.data.find((r) => r.code === gc).name, head: false }));
+      lines.push({ code: dc, name: dv.name, head: false });
     });
     const val = new Map(G.data.map((r) => [`${r.code}|${r.date}`, r]));
-    const W = box.clientWidth, rowH = 20, top = 22;
+    const W = box.clientWidth, rowH = 28, top = 24;
     const H = top + lines.length * rowH + 4;
     box.replaceChildren();
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
     const short = (t, n) => (t.length > n ? t.slice(0, n - 2) + '…' : t);
-    const nmax = W < 600 ? 26 : 48;
-    const ml = Math.min(W * 0.5, J.textWidth(svg, lines.map((l) => (l.head ? '' : '   ') + short(l.name, nmax))) + 14);
+    const nmax = W < 600 ? 30 : 70;
+    const ml = Math.min(W * 0.5, J.textWidth(svg, lines.map((l) => short(l.name, nmax))) * 1.05 + 16);
     const cw = (W - ml) / dates.length;
     dates.forEach((d, j) => svg.append('text').attr('x', ml + cw * j + cw / 2).attr('y', 14).attr('text-anchor', 'middle').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(`${MONS[+d.slice(5, 7) - 1]} ${d.slice(2, 4)}`));
     const card = document.getElementById('pp-heat'), tip = J.tip(card);
     lines.forEach((l, i) => {
       const y0 = top + i * rowH;
       if (l.head && i > 0) svg.append('line').attr('x1', 0).attr('x2', W).attr('y1', y0).attr('y2', y0).attr('stroke', 'var(--color-border-line)');
-      svg.append('text').attr('x', l.head ? 2 : 14).attr('y', y0 + rowH / 2 + 4).attr('font-size', 11.5).attr('font-weight', l.head ? 700 : 400)
+      svg.append('text').attr('x', 2).attr('y', y0 + rowH / 2 + 4).attr('font-size', 12.5).attr('font-weight', l.head ? 700 : 400)
         .attr('fill', 'var(--ad-ink)').text(short(l.name, nmax)).append('title').text(l.name);
       dates.forEach((d, j) => {
         const r = val.get(`${l.code}|${d}`); if (!r) return;
         const g = svg.append('g');
         g.append('rect').attr('x', ml + cw * j + 1).attr('y', y0 + 1).attr('width', cw - 2).attr('height', rowH - 2).attr('rx', 2).attr('fill', heatColor(r.yoy));
-        g.append('text').attr('x', ml + cw * j + cw / 2).attr('y', y0 + rowH / 2 + 4).attr('text-anchor', 'middle').attr('font-size', 10.5)
+        g.append('text').attr('x', ml + cw * j + cw / 2).attr('y', y0 + rowH / 2 + 4).attr('text-anchor', 'middle').attr('font-size', 12)
           .attr('font-weight', l.head ? 700 : 400).attr('fill', heatInk(r.yoy)).text(J.f1(r.yoy));
         g.on('mousemove', (ev) => {
           const cr = card.getBoundingClientRect();
@@ -551,46 +499,10 @@ dash.calc('div_contrib', {
     });
   }
 
-  // Groups whose y/y rose or fell most over the latest three months.
-  function movesTable() {
-    const tb = document.querySelector('#pp-moves-table tbody');
-    const G = dash.data('grp_series');
-    if (failed(G.status)) { tb.replaceChildren(); return; }
-    if (G.status !== 'ok') return;
-    const dates = Array.from(new Set(G.data.map((r) => r.date))).sort();
-    if (dates.length < 4) return;
-    const d1 = dates[dates.length - 1], d0 = dates[dates.length - 4];
-    const gs = G.data.filter((r) => r.level === 'group');
-    const rows = Array.from(new Set(gs.map((r) => r.code))).map((c) => {
-      const a = gs.find((r) => r.code === c && r.date === d0), b = gs.find((r) => r.code === c && r.date === d1);
-      return a && b && b.weight >= 0.1 ? { name: b.name, w: b.weight, y: b.yoy, ch: b.yoy - a.yoy } : null;
-    }).filter(Boolean);
-    const up = rows.slice().sort((p, q) => q.ch - p.ch).slice(0, 5), down = rows.slice().sort((p, q) => p.ch - q.ch).slice(0, 5);
-    document.getElementById('pp-moves-units').textContent = `% and pp, change in y/y from ${MONS[+d0.slice(5, 7) - 1]} to ${MONS[+d1.slice(5, 7) - 1]} ${d1.slice(0, 4)}`;
-    tb.replaceChildren();
-    [['Fastest acceleration', up], ['Fastest deceleration', down]].forEach(([t, list], gi) => {
-      const gr = tb.insertRow(); gr.className = 'grp' + (gi ? ' sep' : ''); const gtd = gr.insertCell(); gtd.colSpan = 4; gtd.textContent = t;
-      list.forEach((r) => {
-        const tr = tb.insertRow();
-        [r.name, r.w.toFixed(2), J.f1(r.y), (r.ch > 0 ? '+' : '') + J.f1(r.ch)].forEach((v, k) => {
-          const td = tr.insertCell(); td.textContent = v;
-          if (k >= 2 && Number(v) < 0) td.classList.add('neg');
-        });
-      });
-    });
-  }
 
   J.redrawPressures = () => {
     if (!visibleP()) return;
-    contribChart('pp-contrib', 'div_contrib', false, [
-      { key: 'food', name: 'Food and beverages', color: 'var(--ad-c6)', bar: true },
-      { key: 'personal', name: 'Personal care and misc. (incl. jewellery)', color: 'var(--ad-c5)', bar: true },
-      { key: 'housing', name: 'Housing and utilities', color: 'var(--ad-c1)', bar: true },
-      { key: 'transport', name: 'Transport', color: 'var(--ad-c3)', bar: true },
-      { key: 'restaurants', name: 'Restaurants and accommodation', color: 'var(--ad-c7)', bar: true },
-      { key: 'other', name: 'Other', color: 'var(--ad-c4)', bar: true },
-    ]);
-    dumbbell(); heatmap(); movesTable();
+    heatmap();
   };
 
   J.redrawCpi = () => {
