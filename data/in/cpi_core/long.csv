@@ -1,0 +1,61 @@
+country,indicator,series,label,measure,area,freq,date,value,unit,source,release
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2025-01-01,101.828,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2025-01-01,101.708,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2025-02-01,102.12,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2025-02-01,101.931,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2025-03-01,102.34,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2025-03-01,102.117,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2025-04-01,102.657,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2025-04-01,102.386,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2025-05-01,102.978,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2025-05-01,102.684,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2025-06-01,103.316,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2025-06-01,102.97,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2025-07-01,103.62,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2025-07-01,103.233,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2025-08-01,103.886,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2025-08-01,103.45,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2025-09-01,104.128,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2025-09-01,103.548,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2025-10-01,104.262,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2025-10-01,103.415,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2025-11-01,104.45,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2025-11-01,103.556,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2025-12-01,104.836,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2025-12-01,103.691,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2026-01-01,105.567,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",yoy,all-India,M,2026-01-01,3.67,%,Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2026-01-01,103.856,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,yoy,all-India,M,2026-01-01,2.11,%,Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2026-02-01,105.902,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",yoy,all-India,M,2026-02-01,3.7,%,Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2026-02-01,104.034,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,yoy,all-India,M,2026-02-01,2.06,%,Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2026-03-01,106.084,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",yoy,all-India,M,2026-03-01,3.66,%,Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2026-03-01,104.265,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,yoy,all-India,M,2026-03-01,2.1,%,Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2026-04-01,106.454,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",yoy,all-India,M,2026-04-01,3.7,%,Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2026-04-01,104.666,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,yoy,all-India,M,2026-04-01,2.23,%,Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2026-05-01,106.988,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",yoy,all-India,M,2026-05-01,3.89,%,Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2026-05-01,105.083,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,yoy,all-India,M,2026-05-01,2.34,%,Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2026-06-01,107.341,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",yoy,all-India,M,2026-06-01,3.9,%,Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2026-06-01,105.544,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,yoy,all-India,M,2026-06-01,2.5,%,Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2026-07-01,107.625,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",yoy,all-India,M,2026-07-01,3.87,%,Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2026-07-01,105.973,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,yoy,all-India,M,2026-07-01,2.65,%,Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2026-08-01,108.206,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",yoy,all-India,M,2026-08-01,4.16,%,Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2026-08-01,106.456,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,yoy,all-India,M,2026-08-01,2.91,%,Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",index,all-India,M,2026-09-01,108.64,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core1,"Core 1: CPI excluding food and beverages, and fuel",yoy,all-India,M,2026-09-01,4.33,%,Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,index,all-India,M,2026-09-01,106.88,"index, 2024 = 100",Asia Decoded calculation from MoSPI,M2026-09
+IN,cpi_core,core2,Core 2: core 1 excluding gold and silver jewellery,yoy,all-India,M,2026-09-01,3.22,%,Asia Decoded calculation from MoSPI,M2026-09
