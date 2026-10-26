@@ -7,16 +7,18 @@
   "core1": 53.04,
   "core2": 52.1044
  },
- "processed_at": "2026-10-26T03:28:49Z",
+ "processed_at": "2026-10-26T03:57:35Z",
  "rows": 42,
- "warnings": [],
+ "warnings": [
+  "recent months revised (no new month)"
+ ],
  "fingerprint": "e9f6d9b1a7e95202",
- "headline_fingerprint": "7046de8ef6b2dc5f",
+ "headline_fingerprint": "e77db55fa6992c4c",
  "long_rows": 60,
  "history": [
   {
    "code": "M2026-09",
-   "processed_at": "2026-10-26T03:28:49Z"
+   "processed_at": "2026-10-26T03:57:35Z"
   }
  ]
 }
