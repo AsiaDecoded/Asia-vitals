@@ -7,6 +7,7 @@ for every call: URL, HTTP status, record count, the keys of the first record and
 latest year/month seen. No key or token: this tests what an unauthenticated client gets.
 """
 import json
+import ssl
 import sys
 import time
 import urllib.error
@@ -15,6 +16,10 @@ import urllib.request
 from pathlib import Path
 
 BASE = "https://api.mospi.gov.in"
+# MoSPI's server still needs legacy TLS renegotiation, which OpenSSL 3 refuses by default.
+# Certificate checks stay on; only the renegotiation flag is relaxed.
+CTX = ssl.create_default_context()
+CTX.options |= getattr(ssl, "OP_LEGACY_SERVER_CONNECT", 0x4)
 UA = {"User-Agent": "asia-vitals/0.1 (+https://github.com/AsiaDecoded/asia-vitals)",
       "Accept": "application/json"}
 
@@ -61,7 +66,7 @@ def get(path, params):
     url = BASE + path + ("?" + urllib.parse.urlencode(params) if params else "")
     req = urllib.request.Request(url, headers=UA)
     try:
-        with urllib.request.urlopen(req, timeout=60) as r:
+        with urllib.request.urlopen(req, timeout=60, context=CTX) as r:
             return url, r.status, r.read()
     except urllib.error.HTTPError as e:
         return url, e.code, e.read()
