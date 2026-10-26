@@ -1,6 +1,6 @@
 # Asia Vitals
 
-Data pipeline for Asia Decoded's macro dashboards: GDP, inflation and trade for 12 Asian economies. Currently: Japan GDP, CPI, CPI contributions and PPI.
+Data pipeline for Asia Decoded's macro dashboards: GDP, inflation and trade for 12 Asian economies. Currently: Japan GDP, CPI, CPI contributions and PPI; India CPI (headline).
 
 ## How it updates
 
@@ -16,6 +16,7 @@ Data pipeline for Asia Decoded's macro dashboards: GDP, inflation and trade for 
 | Japan CPI, Statistics Bureau | `sources/jp_cpi_estat` | Monthly, 1970–; national and Tokyo; e-Stat API table 0004052037 (2025 base) | Any change in the data (new month, Tokyo early release, revisions) |
 | Japan CPI contributions, Statistics Bureau | `sources/jp_cpi_contrib_estat` | Monthly, Jul 2016–; national contributions to y/y (services, goods, fresh food, energy) from Table 5 of each monthly report (Excel files found through the e-Stat file catalogue), as published on the base then in use | A new month's Table 5 in the catalogue (C2026-09 → C2026-10) |
 | Japan PPI, Bank of Japan | `sources/jp_ppi_boj` | Monthly, 1960–; producer, export and import prices (CGPI, 2020 base); BoJ API database PR01, no key | Any change in the data; new month gives a new code (M2026-09 → M2026-10) |
+| India CPI, MoSPI | `sources/in_cpi_mospi` | Monthly, Jan 2013–; general index, all-India, rural/urban/combined; 2024 base (Jan 2025–) with MoSPI's linked back series (2013–2024); y/y as published (2012-base rates to Dec 2025, 2024-base from Jan 2026); MoSPI API, no key | Any change in the data; new month gives a new code (M2026-09 → M2026-10) |
 
 The e-Stat API needs the repository secret `ESTAT_APP_ID`. The Excel readers (openpyxl, xlrd) are installed by the workflow.
 
@@ -29,6 +30,7 @@ The e-Stat API needs the repository secret `ESTAT_APP_ID`. The Excel readers (op
 | `pipeline/tools/estat_discover.py` | Lists e-Stat tables and their codes (manual workflow `estat-discover.yml`) |
 | `pipeline/tools/estat_catalog.py`, `estat_files.py` | Search e-Stat's file catalogue and download sample files (manual workflow `estat-discover.yml`) |
 | `pipeline/tools/boj_discover.py` | Lists BoJ series codes (manual workflow `boj-discover.yml`) |
+| `pipeline/tools/mospi_discover.py` | Probes MoSPI's CPI and WPI API (workflow `mospi-discover.yml`) |
 | `raw/<country>/<source>/` | Original files for every release processed, unchanged (CPI: compressed API response) |
 | `data/<country>/<indicator>/` | `<country>_<indicator>.csv` (dashboard format), `long.csv` (common format), `json/` (per chart), `release.json`, `release_row.json` |
 | `data/all_long.csv` | Every source's long file stacked: the input for cross-country views |
@@ -40,6 +42,7 @@ The e-Stat API needs the repository secret `ESTAT_APP_ID`. The Excel readers (op
 - **GDP:** all tables and columns present; latest quarter matches the release; q/q, annualised q/q and y/y match the levels; contributions sum to GDP; deflator matches nominal ÷ real. Warning if past levels are revised by more than 2%.
 - **CPI:** required series present for the latest national and Tokyo months; months never go backwards; published m/m and y/y match the index where both months are on the 2025 base (earlier rates are the officially published ones from older bases); index levels plausible.
 - **PPI:** PPI, export and import (yen) index and y/y present for the latest month; months never go backwards; published y/y matches the index where both months are on the 2020 base; index levels plausible. A revision without a new month is noted as a warning.
+- **India CPI:** every month from Jan 2013 to the latest present for all three sectors; back series up to Dec 2024 and the 2024 base from Jan 2025; published y/y within 0.15pp of the index from 2026 (0.5pp for 2014–2024, where the rates are the 2012-base ones published at the time); 2012-base y/y present for every 2025 month; index levels plausible.
 - **CPI contributions:** all items, fresh food, energy, goods and services found in every month's file; goods + services within 0.1pp of all items; all items within ±15.
 
 ## Adding a source
