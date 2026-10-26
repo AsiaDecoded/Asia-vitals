@@ -412,7 +412,7 @@ dash.calc('rbi_style', {
     const down = rows.slice().sort((a, b) => a[k] - b[k] || a.yoy - b.yoy).slice(0, 5);
     const date = M.data.length ? M.data[0].date : null;
     document.getElementById('cpi-movers-units').textContent = date ? `%, ppt, ${moversN}-month average to ${mLabel(date)}` : '%, ppt';
-    document.getElementById('cpi-movers-avg').textContent = `Contribution, ${moversN}m avg.`;
+    document.getElementById('cpi-movers-avg').textContent = `Contrib., ${moversN}m`;
     tb.replaceChildren();
     [['Largest positive contributions', up], ['Largest negative contributions', down]].forEach(([g, list], gi) => {
       const gr = tb.insertRow(); gr.className = 'grp' + (gi ? ' sep' : '');
