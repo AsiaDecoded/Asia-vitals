@@ -55,7 +55,7 @@ OLD_EXCL = {"core1": ["food_bev", "fuel_light", "petrol", "diesel"],
 RBI_2025 = {"core1": [3.9, 4.3, 4.3, 4.4, 4.3, 4.6, 4.2, 4.3, 4.5, 4.5, 4.4, 4.8],
             "core2": [3.2, 3.4, 3.3, 3.5, 3.4, 3.5, 3.2, 3.1, 3.1, 2.6, 2.4, 2.4]}
 LINK_YEAR = "2025"
-CALC_VERSION = 4  # bump when the calculation changes, so the next run recomputes without new data
+CALC_VERSION = 5  # bump when the calculation changes, so the next run recomputes without new data
 
 
 def _old_core():
@@ -151,6 +151,62 @@ def _fetch_items():
         rows, _ = mospi.cpi("Current", years=years, state_code=1, sector_code=3, max_pages=600)
         return rows
     return [r for r in cached if _month(r) not in got] + fresh
+
+
+def _contrib_linked(rows, weights, headline):
+    """Chain-linked contributions (pp) to the spliced headline y/y (chart 1), Jan 2015 on.
+
+    2012 basket to Dec 2024 and 2024 basket from Jan 2026, as in the within-base version. Months in 2025
+    compare a 2024 price on the old basket with a 2025 price on the new one, so each component's contribution
+    is split at the 2025 link (annual average): w_old x (old 2025 average - old a year earlier) / old headline
+    a year earlier, plus the same on the new basket from the 2025 average to the month, scaled by the old
+    headline's change to the link (the decomposition used for annually chain-linked HICP contributions).
+    The total is the spliced headline y/y; CPI excluding food and fuel is the residual."""
+    src = json.loads(OLD_INPUTS.read_text())["series"]
+    w = OLD_W
+    old = {k: {f"{m}-01": v for m, v in src[k].items()} for k in ("general", "food_bev", "fuel_light", "petrol", "diesel")}
+    new = defaultdict(dict)
+    for r in rows:
+        if r.get("state") != "All India" or r.get("sector") != "Combined" or r.get("index") in (None, ""):
+            continue
+        code = r.get("code") or ("general" if r.get("division") == "CPI (General)" and not r.get("group") else None)
+        if code in ("general", "01", "04.5", "07.2.2"):
+            new[code][_month(r)] = float(r["index"])
+    wt = lambda prefix: sum(v for k, (_, v) in weights.items() if k.startswith(prefix))
+    nw = {"01": wt("01."), "04.5": wt("04.5."), "07.2.2": wt("07.2.2.")}
+    link = [f"{LINK_YEAR}-{i:02d}-01" for i in range(1, 13)]
+    avg = lambda s: sum(s[m] for m in link) / 12 if all(m in s for m in link) else None
+    oa = {k: avg(v) for k, v in old.items()}
+    na = {k: avg(v) for k, v in new.items()}
+    within_old, within_new = _contrib_old(), _contrib_new(rows, weights)
+    out = {}
+    for m, h in headline.items():
+        if m < "2015-01-01" or h is None:
+            continue
+        p = _prev_year(m)
+        if m < f"{LINK_YEAR}-01-01":
+            v = within_old.get(m)
+            if not v:
+                continue
+            food, fuel, basis = v["food"], v["fuel"], "2012 basket"
+        elif m < f"{int(LINK_YEAR) + 1}-01-01":
+            hp = old["general"].get(p)
+            need_old = [old[k].get(p) for k in ("food_bev", "fuel_light", "petrol", "diesel")]
+            if not hp or None in need_old or None in oa.values() or None in na.values() or any(m not in new[c] for c in nw):
+                continue
+            b = oa["general"] / hp
+            food = (w["food_bev"] * (oa["food_bev"] - old["food_bev"][p]) / hp
+                    + b * nw["01"] * (new["01"][m] - na["01"]) / na["general"])
+            fuel = (sum(w[k] * (oa[k] - old[k][p]) for k in ("fuel_light", "petrol", "diesel")) / hp
+                    + b * sum(nw[c] * (new[c][m] - na[c]) for c in ("04.5", "07.2.2")) / na["general"])
+            basis = "2012 and 2024 baskets, linked over 2025"
+        else:
+            v = within_new.get(m)
+            if not v:
+                continue
+            food, fuel, basis = v["food"], v["fuel"], "2024 basket"
+        out[m] = {"food": food, "fuel": fuel, "core": h - food - fuel, "cpi": h, "base": basis}
+    return out
 
 
 def _shift_month(d, n):
@@ -326,6 +382,22 @@ def update(from_file=None, **_):
         w.writerow(["date", "cpi_yoy", "food", "fuel", "core", "base"])
         for m in sorted(contrib):
             v = contrib[m]
+            w.writerow([m, round(v["cpi"], 2), round(v["food"], 3), round(v["fuel"], 3), round(v["core"], 3), v["base"]])
+
+    # Chain-linked version: totals are the spliced headline y/y from in_cpi_mospi (chart 1).
+    headline = {}
+    for r in csv.DictReader(open(DATA / "in" / "cpi" / "in_cpi.csv")):
+        if r["series"] == "combined" and r["yoy"] not in ("", None):
+            headline[r["date"]] = float(r["yoy"])
+    linked = _contrib_linked(rows, weights, headline)
+    for m, v in linked.items():
+        if not -5 < v["core"] < 10:
+            raise CheckFailed([f"{m}: linked core contribution {v['core']:.2f}pp out of range"])
+    with open(OUT / "in_cpi_contrib_linked.csv", "w", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["date", "cpi_yoy", "food", "fuel", "core", "basis"])
+        for m in sorted(linked):
+            v = linked[m]
             w.writerow([m, round(v["cpi"], 2), round(v["food"], 3), round(v["fuel"], 3), round(v["core"], 3), v["base"]])
 
     def long_rows():

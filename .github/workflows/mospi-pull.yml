@@ -19,7 +19,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        part: [old, rural, urban, combined]
+        part: [old]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -28,13 +28,10 @@ jobs:
       - name: Pull
         run: |
           mkdir -p out
-          if [ "${{ matrix.part }}" = old ]; then
-            python -I pipeline/tools/mospi_core2012_inputs.py out/core2012_inputs.json
-          else
-            python -I pipeline/tools/mospi_cpi_detail.py out ${{ matrix.part }}
-          fi
+          python -I pipeline/tools/mospi_old_groups.py out 2>&1 | tee out/old_pull_log.txt
           ls -la out
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: part-${{ matrix.part }}
           path: out/
