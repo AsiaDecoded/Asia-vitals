@@ -55,7 +55,7 @@ OLD_EXCL = {"core1": ["food_bev", "fuel_light", "petrol", "diesel"],
 RBI_2025 = {"core1": [3.9, 4.3, 4.3, 4.4, 4.3, 4.6, 4.2, 4.3, 4.5, 4.5, 4.4, 4.8],
             "core2": [3.2, 3.4, 3.3, 3.5, 3.4, 3.5, 3.2, 3.1, 3.1, 2.6, 2.4, 2.4]}
 LINK_YEAR = "2025"
-CALC_VERSION = 9  # bump when the calculation changes, so the next run recomputes without new data
+CALC_VERSION = 10  # bump when the calculation changes, so the next run recomputes without new data
 
 
 OLD_ITEMS = ROOT / "raw" / "in" / "cpi_old" / "items2012.json.gz"
@@ -294,6 +294,34 @@ def item_weights():
     return {k: (names[k], w[k]) for k in w}
 
 
+# Goods or services, by COICOP 2018 type: MoSPI tags each subclass (or class) name in Annex 5.3d with (ND),
+# (SD), (D) or (S); these subclasses carry no tag and are typed here from COICOP 2018.
+UNTAGGED_TYPE = {"01.2.9": "G", "01.3.0": "S", "02.3.0": "G", "03.1.4": "S", "08.1.1": "G", "08.1.2": "G",
+                 "08.1.4": "G", "08.3.4": "S", "10.4.0": "S", "13.1.1": "G"}
+
+
+def item_types():
+    """{item code: "G" (goods: ND, SD or D) or "S" (services)}."""
+    import openpyxl
+    import re
+    wb = openpyxl.load_workbook(WEIGHTS, read_only=True, data_only=True)
+    out, header = {}, None
+    tag = lambda s: (re.search(r"\((ND|SD|D|S)\)\s*$", str(s or "").strip()) or [None, None])[1]
+    for row in wb["5.3d"].iter_rows(values_only=True):
+        if header is None:
+            header = row if row and row[0] == "State" else None
+            continue
+        if not row or row[4] is None:
+            continue
+        code = str(row[4]).strip()
+        t = tag(row[6]) or tag(row[8])
+        out[code] = ("S" if t == "S" else "G") if t else UNTAGGED_TYPE.get(code[:6])
+    missing = [c for c, t in out.items() if t is None]
+    if missing:
+        raise CheckFailed([f"no goods/services type for {len(missing)} items, e.g. {missing[:3]}"])
+    return out
+
+
 def _month(r):
     return f"{int(r['year'])}-{mospi.month_number(r['month']):02d}-01"
 
@@ -484,6 +512,33 @@ def update(from_file=None, **_):
         w = csv.writer(f, lineterminator="\n")
         w.writerow(["date", "code", "name", "weight", "yoy", "contrib_yoy"])
         w.writerows(item_rows)
+
+    # Goods and services CPI (2024 base): weighted averages of the item indices, as MoSPI aggregates them;
+    # y/y from Jan 2026 and contributions to CPI y/y. Goods + services reproduce the published index.
+    types = item_types()
+    gs_w = {k: sum(wt for code, (_, wt) in weights.items() if types[code] == k) for k in ("G", "S")}
+    gs_rows = []
+    gs_idx = {"G": {}, "S": {}}
+    for m in sorted(gen):
+        if any(m not in iidx.get(code, {}) for code in weights):
+            continue
+        for k in ("G", "S"):
+            gs_idx[k][m] = sum(wt * iidx[code][m] for code, (_, wt) in weights.items() if types[code] == k) / gs_w[k]
+        agg = (gs_w["G"] * gs_idx["G"][m] + gs_w["S"] * gs_idx["S"][m]) / 100
+        if abs(agg - gen[m]) > 0.06:
+            raise CheckFailed([f"{m}: goods and services give {agg:.3f}, published general index {gen[m]}"])
+    for m in sorted(gs_idx["G"]):
+        p = _prev_year(m)
+        for k, label in (("G", "goods"), ("S", "services")):
+            i, ip = gs_idx[k][m], gs_idx[k].get(p)
+            yoy = None if ip is None else (i / ip - 1) * 100
+            con = None if ip is None else gs_w[k] * (i - ip) / gen[p]
+            gs_rows.append([m, label, round(gs_w[k], 2), round(i, 3), "" if yoy is None else round(yoy, 2),
+                            "" if con is None else round(con, 3)])
+    with open(OUT / "in_cpi_goods_services.csv", "w", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["date", "series", "weight", "index", "yoy", "contrib_yoy"])
+        w.writerows(gs_rows)
 
     # CPI diffusion index (as for Japan): share of individual items, unweighted, with y/y above and below
     # zero. 2012 base (299 items, y/y from MoSPI's item indices) to Dec 2025; 2024 base (358 items, MoSPI's
