@@ -132,7 +132,7 @@ dash.calc('ppi_cpi', {
   const SECTORS = [
     { key: 'combined', name: 'CPI', color: 'var(--ad-c2)' },
     { key: 'rural', name: 'Rural', color: 'var(--ad-c5)' },
-    { key: 'urban', name: 'Urban', color: 'var(--ad-c1)' },
+    { key: 'urban', name: 'Urban', color: 'var(--ad-c1)', dash: true },
   ];
   const defPeriod = (id) => { const c = document.getElementById(id); return c && c.dataset.def != null ? Number(c.dataset.def) : 120; };
   const win = (rows, id) => { const n = J.periodOf(id, defPeriod(id)); return n ? rows.slice(-n) : rows; };
@@ -142,7 +142,8 @@ dash.calc('ppi_cpi', {
     el.replaceChildren();
     series.forEach((s) => {
       const span = document.createElement('span'); const ln = document.createElement('span');
-      ln.className = s.bar ? 'sw' : 'ln'; ln.style.background = s.color;
+      ln.className = s.bar ? 'sw' : 'ln';
+      if (s.dash) { ln.style.background = `repeating-linear-gradient(90deg, ${s.color} 0 5px, transparent 5px 8px)`; } else { ln.style.background = s.color; }
       span.append(ln, document.createTextNode(s.name)); el.appendChild(span);
     });
   }
@@ -238,7 +239,8 @@ dash.calc('ppi_cpi', {
     }
     series.forEach((s) => {
       svg.append('path').attr('d', d3.line().defined((r) => r[s.key] != null).x((r) => x(J.date(r.date))).y((r) => y(r[s.key]))(rows))
-        .attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
+        .attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', 2.5).attr('stroke-linecap', s.dash ? 'butt' : 'round').attr('stroke-linejoin', 'round')
+        .attr('stroke-dasharray', s.dash ? '6 4' : null);
     });
     const card = document.getElementById(cardId);
     const dots = series.map((s) => svg.append('circle').attr('r', 3.5).attr('fill', s.color).attr('display', 'none'));
