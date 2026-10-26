@@ -458,7 +458,14 @@ dash.calc('div_heat', {
     const dates = Array.from(new Set(D.data.map((r) => r.date))).sort();
     const codes = Array.from(new Set(D.data.map((r) => r.code))).sort();
     const val = new Map(D.data.map((r) => [`${r.code}|${r.date}`, r]));
-    const color = (v) => d3.interpolateRdBu(0.5 - Math.max(-1, Math.min(1, v / 12)) / 2);
+    // Diverging scale without d3-scale-chromatic (not in the dashboard's d3): blue below zero, red above.
+    const STOPS = [[-1, [33, 102, 172]], [-0.5, [146, 197, 222]], [0, [247, 247, 247]], [0.25, [253, 219, 199]], [0.5, [244, 165, 130]], [0.75, [214, 96, 77]], [1, [103, 0, 31]]];
+    const color = (v) => {
+      const t = Math.max(-1, Math.min(1, v / 12));
+      let i = 0; while (i < STOPS.length - 2 && t > STOPS[i + 1][0]) i += 1;
+      const [t0, c0] = STOPS[i], [t1, c1] = STOPS[i + 1], f = (t - t0) / (t1 - t0);
+      return `rgb(${c0.map((c, k) => Math.round(c + (c1[k] - c) * f)).join(',')})`;
+    };
     tbl.replaceChildren();
     const head = tbl.createTHead().insertRow();
     ['Code', 'Division'].concat(dates.map((d) => `${MON[+d.slice(5, 7) - 1]} ${d.slice(2, 4)}`)).forEach((t) => {
