@@ -6,15 +6,17 @@
  "first_year": "1957",
  "latest_year": "2025",
  "table": "IMF IMF.STA,CPI IND.CPI._T.IX.M and IND.CPI._T.IX.A (2024 = 100)",
- "processed_at": "2026-10-26T02:10:35Z",
+ "processed_at": "2026-10-26T02:14:57Z",
  "rows": 904,
- "warnings": [],
- "fingerprint": "8df53ec43e194dd1",
- "long_rows": 904,
+ "warnings": [
+  "recent values revised (no new month)"
+ ],
+ "fingerprint": "1e68f024a8dbbc3b",
+ "long_rows": 1795,
  "history": [
   {
    "code": "M2026-07",
-   "processed_at": "2026-10-26T02:10:35Z"
+   "processed_at": "2026-10-26T02:14:57Z"
   }
  ]
 }
