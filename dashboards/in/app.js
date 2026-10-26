@@ -106,7 +106,7 @@ dash.calc('fe_series', {
 
 dash.calc('ppi_cpi', {
   title: 'Producer and consumer price inflation',
-  description: 'Spliced output PPI y/y (WPI 2011-12 linked before Apr 2023) and combined CPI y/y (chart 9), from Apr 2013.',
+  description: 'Spliced output PPI y/y (WPI 2011-12 linked before Apr 2023) and combined CPI y/y (chart 8), from Apr 2013.',
   inputs: ['in_ppi_spliced', 'cpi_series'],
   fn: (ppi, cpi_series) => {
     const p = ppi.filter((r) => r.yoy !== '' && r.yoy != null).map((r) => ({ date: r.date, series: 'ppi', yoy: Number(r.yoy) }));
@@ -439,11 +439,6 @@ dash.calc('rbi_style', {
   J.redrawCpi = () => {
     if (!visible()) return;
     lines('cpi-sectors-chart', 'cpi-sectors', 'cpi-sectors-legend', 'yoy', SECTORS, (v) => d3.format('.0f')(v), 280, true);
-    lines('cpi-core-chart', 'cpi-core', 'cpi-core-legend', 'yoy', [
-      { key: 'cpi', name: 'CPI', color: 'var(--ad-c2)' },
-      { key: 'core1', name: 'Core 1 (CPI excluding food and fuel)', color: 'var(--ad-c1)' },
-      { key: 'core2', name: 'Core 2 (CPI excluding food, fuel and precious metals)', color: 'var(--ad-c1)', dash: true },
-    ], (v) => d3.format('.1f')(v), 280, false, null, 'core_series');
     lines('core-bases-chart', 'core-bases', 'core-bases-legend', 'yoy', [
       { key: 'core1_2012', name: 'Core 1, 2012 base', color: 'var(--ad-c1)' },
       { key: 'core1_2024', name: 'Core 1, 2024 base', color: 'var(--ad-c3)' },
