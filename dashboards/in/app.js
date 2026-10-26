@@ -151,6 +151,22 @@ dash.calc('div_heat', {
   },
 });
 
+dash.calc('tiles_extra', {
+  title: 'Latest core and PPI',
+  description: 'Core (CPI excluding food and fuel, RBI definition, 2024 base) and output PPI y/y in the latest month and the month before.',
+  inputs: ['in_cpi_rbi_style', 'in_ppi_spliced'],
+  fn: (rbi, ppi) => {
+    const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const last2 = (rows) => rows.filter((r) => r.yoy !== '' && r.yoy != null).sort((a, b) => (a.date < b.date ? -1 : 1)).slice(-2);
+    const c = last2(rbi.filter((r) => r.series === 'core1')), p = last2(ppi);
+    const lab = (r) => (r ? `${MON[+r.date.slice(5, 7) - 1]} ${r.date.slice(0, 4)}` : '');
+    return [{
+      core_yoy: c[1] ? Number(c[1].yoy) : null, core_yoy_prev: c[0] ? Number(c[0].yoy) : null, core_month: lab(c[1]),
+      ppi_yoy: p[1] ? Number(p[1].yoy) : null, ppi_yoy_prev: p[0] ? Number(p[0].yoy) : null, ppi_month: lab(p[1]),
+    }];
+  },
+});
+
 (() => {
   const J = window.JG;
   J.theme();
@@ -406,14 +422,14 @@ dash.calc('div_heat', {
   }
 
   function tiles() {
-    const L = dash.data('cpi_latest');
     const hm = document.getElementById('cpi-month');
-    document.querySelectorAll('#inflation [data-source="cpi_latest"]').forEach((el) => {
+    document.querySelectorAll('#cpi-headline [data-source], #cpi-month').forEach((el) => {
       if (el.closest('#cpi-takeaway')) return;
+      const L = dash.data(el.dataset.source);
       if (L.status !== 'ok' || !L.data.length) { el.textContent = '—'; return; }
       el.classList.remove('dash-skeleton');
       const v = L.data[0][el.dataset.field];
-      el.textContent = el === hm ? v : f1(v);
+      el.textContent = el === hm || el.dataset.text ? (v || '') : f1(v);
     });
   }
 
