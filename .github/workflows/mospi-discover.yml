@@ -1,0 +1,40 @@
+name: MoSPI discovery (manual)
+
+# One-off helper: probes MoSPI's API for India CPI (2024 base) and WPI (2022-23 base)
+# and saves the raw responses to the "discovery" branch, under discovery/mospi.
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-india]
+    paths:
+      - pipeline/tools/mospi_discover.py
+      - .github/workflows/mospi-discover.yml
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Query the MoSPI API
+        run: python -I pipeline/tools/mospi_discover.py discovery/mospi
+      - name: Push results to the discovery branch
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mv discovery /tmp/discovery
+          if git fetch origin discovery; then
+            git checkout -B discovery origin/discovery
+          else
+            git checkout --orphan discovery && git rm -rf --quiet --cached .
+          fi
+          mkdir -p discovery && rm -rf discovery/mospi && cp -r /tmp/discovery/mospi discovery/
+          git add discovery/mospi
+          git commit -m "MoSPI discovery"
+          git push origin discovery
