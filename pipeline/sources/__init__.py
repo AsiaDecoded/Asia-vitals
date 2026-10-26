@@ -8,4 +8,5 @@ SOURCES = [
     "jp_cpi_estat",
     "jp_ppi_boj",
     "jp_cpi_contrib_estat",
+    "in_cpi_mospi",
 ]
