@@ -438,8 +438,8 @@ dash.calc('ppi_cpi', {
       { key: 'share_falling', name: 'Falling', color: 'var(--ad-c1)' },
     ], (v) => d3.format('.0f')(v), 280, true, null, 'diffusion_series');
     lines('ppi-cpi-chart', 'ppi-cpi', 'ppi-cpi-legend', 'yoy', [
-      { key: 'ppi', name: 'PPI', color: 'var(--ad-c2)' },
-      { key: 'cpi', name: 'CPI', color: 'var(--ad-c1)' },
+      { key: 'ppi', name: 'PPI', color: 'var(--ad-c1)' },
+      { key: 'cpi', name: 'CPI', color: 'var(--ad-c2)' },
     ], (v) => d3.format('.0f')(v), 280, true, null, 'ppi_cpi');
     longChart('cpi-long-m-chart', 'cpi-long-m', 'in_cpi_imf_m', false);
     longChart('cpi-long-a-chart', 'cpi-long-a', 'in_cpi_imf_a', true);
