@@ -117,6 +117,14 @@ dash.calc('ppi_cpi', {
   },
 });
 
+dash.calc('core_bases', {
+  title: 'Core 1 on each CPI base, y/y',
+  description: 'Core 1 y/y within the 2012 base (to Dec 2025) and within the 2024 base (from Jan 2026), each from its own index, not spliced.',
+  inputs: ['in_cpi_core_bases'],
+  fn: (rows) => rows.filter((r) => r.series === 'core1' && r.yoy !== '' && r.yoy != null)
+    .map((r) => ({ date: r.date, series: `b${r.base}`, yoy: Number(r.yoy) })),
+});
+
 (() => {
   const J = window.JG;
   J.theme();
@@ -425,6 +433,10 @@ dash.calc('ppi_cpi', {
       { key: 'core1', name: 'Core 1 (CPI excluding food and fuel)', color: 'var(--ad-c1)' },
       { key: 'core2', name: 'Core 2 (CPI excluding food, fuel and precious metals)', color: 'var(--ad-c1)', dash: true },
     ], (v) => d3.format('.1f')(v), 280, false, null, 'core_series');
+    lines('core-bases-chart', 'core-bases', 'core-bases-legend', 'yoy', [
+      { key: 'b2012', name: 'Core 1, 2012 base', color: 'var(--ad-c1)' },
+      { key: 'b2024', name: 'Core 1, 2024 base', color: 'var(--ad-c3)' },
+    ], (v) => d3.format('.0f')(v), 280, true, null, 'core_bases', true);
     contribChart('cpi-contrib-linked', 'in_cpi_contrib_linked', false);
     lines('cpi-fe-chart', 'cpi-fe', 'cpi-fe-legend', 'yoy', [
       { key: 'food', name: 'Food', color: 'var(--ad-c3)' },
