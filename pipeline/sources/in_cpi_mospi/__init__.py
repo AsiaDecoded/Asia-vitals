@@ -232,14 +232,20 @@ def update(from_file=None, **_):
     tidy, stray, factors = _tidy(raw)
     compact = sorted([k, d, v["index"], v.get("yoy_published")] for k, s in tidy.items() for d, v in s.items())
     fingerprint = hashlib.sha256(json.dumps(compact).encode()).hexdigest()[:16]
-    if fingerprint == state.get("fingerprint") and not from_file:
+    # MoSPI's 2024-base back series (2013-2024) has only the general index so far. If it starts to include
+    # divisions, groups or items, core and the contributions should move onto it: flag it on the first run.
+    back_parts = sum(1 for r in raw["back"] if r.get("division") != GENERAL or r.get("group") or r.get("item"))
+    if fingerprint == state.get("fingerprint") and back_parts == state.get("back_components", 0) and not from_file:
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {state.get('latest_month')})"}
 
     errors, latest, notes = _checks(tidy, factors, state)
     if errors:
         raise CheckFailed(errors)
     warnings = []
-    if stray:
+    if back_parts:
+        warnings.append(f"ACTION: MoSPI's back series now has {back_parts} division/group/item rows; "
+                        "core and contributions before 2025 can be rebuilt on it (see README)")
+    elif stray:
         warnings.append(f"{stray} rows other than the all-India general index were returned and skipped")
     code = f"M{latest[:7]}"
     if state.get("code") == code:
@@ -250,6 +256,6 @@ def update(from_file=None, **_):
     RAWDIR.mkdir(parents=True, exist_ok=True)
     (RAWDIR / f"{code}_{fingerprint}.json.gz").write_bytes(gzip.compress(json.dumps(raw).encode()))
     rows, nlong = _write(tidy, release)
-    write_release(OUT, release, warnings, rows, {"fingerprint": fingerprint, "long_rows": nlong,
+    write_release(OUT, release, warnings, rows, {"fingerprint": fingerprint, "long_rows": nlong, "back_components": back_parts,
                                                  "calculated_vs_published": notes})
     return {"updated": True, "code": code, "summary": f"{release['label']}: {rows} rows", "warnings": warnings}
