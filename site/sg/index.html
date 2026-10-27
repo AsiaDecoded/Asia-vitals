@@ -111,9 +111,9 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
 .ad-x:hover, .ad-x:focus-visible { color: var(--color-fg); border-color: var(--color-border-line); }
 .ad-x svg { width: 15px; height: 15px; }
 .jg-card.ad-hasx > h2, .jg-card.ad-hasx > .jg-cardhead { padding-right: 30px; }
-.jg-card.ad-expanded { position: fixed; top: 4vh; left: 50%; width: min(1180px, calc(100vw - 32px)); max-height: 92vh; margin-left: calc(min(1180px, calc(100vw - 32px)) / -2); z-index: 60; overflow: auto; box-shadow: 0 10px 40px rgba(0,0,0,.35); }
-.ad-x-back { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 59; }
-body.ad-noscroll { overflow: hidden; }
+.jg-card.ad-expanded, .jg-grid:has(> .ad-expanded) > .jg-card { grid-column: 1 / -1; }
+.jg-card.ad-full > .ad-x { display: none; }
+.jg-card.ad-full.ad-hasx > h2, .jg-card.ad-full.ad-hasx > .jg-cardhead { padding-right: 0; }
 
 .ad-shot { position: fixed; inset: 0; background: rgba(0,0,0,.55); display: flex; align-items: center; justify-content: center; z-index: 50; padding: 16px; }
 .ad-shot-box { margin-top: var(--cds-gap-md); padding-top: var(--cds-gap-md); border-top: 1px solid var(--color-border-line); display: flex; flex-direction: column; gap: var(--cds-gap-sm); }

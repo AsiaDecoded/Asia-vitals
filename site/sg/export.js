@@ -210,35 +210,41 @@
     try { box.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); } catch (err) { /* older browsers */ }
   }
 
-  // Expand / collapse arrows on every chart and table card.
+  // Expand / collapse arrows: a card sharing a row with another widens to the full row (in place, so the page
+  // scrolls normally in any host); cards already full width don't get an arrow.
   const ICON_OPEN = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2.5h4v4M13.5 2.5 9 7M6.5 13.5h-4v-4M2.5 13.5 7 9"/></svg>';
   const ICON_CLOSE = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 6.5h-4v-4M9.5 6.5 14 2M2.5 9.5h4v4M6.5 9.5 2 14"/></svg>';
-  let openCard = null, back = null;
-  function collapse() {
-    if (!openCard) return;
-    const btn = openCard.querySelector(':scope > .ad-x');
-    openCard.classList.remove('ad-expanded'); document.body.classList.remove('ad-noscroll');
-    if (btn) { btn.innerHTML = ICON_OPEN; btn.setAttribute('aria-label', 'Expand'); btn.title = 'Expand'; }
-    if (back) back.remove();
-    const c = openCard; openCard = null; back = null;
-    try { c.scrollIntoView({ block: 'nearest' }); } catch (e) { /* older browsers */ }
+  const redraw = () => requestAnimationFrame(() => { try { if (window.JG && window.JG.redrawCpi) window.JG.redrawCpi(); } catch (e) { /* best effort */ } });
+  const xcards = [];
+  function setIcon(card, open) {
+    const x = card.querySelector(':scope > .ad-x'); if (!x) return;
+    x.innerHTML = open ? ICON_CLOSE : ICON_OPEN; x.title = open ? 'Collapse' : 'Expand'; x.setAttribute('aria-label', x.title);
   }
-  function expand(card) {
-    collapse();
-    back = document.createElement('div'); back.className = 'ad-x-back'; back.addEventListener('click', collapse);
-    document.body.appendChild(back);
-    card.classList.add('ad-expanded'); document.body.classList.add('ad-noscroll'); openCard = card;
-    const btn = card.querySelector(':scope > .ad-x');
-    if (btn) { btn.innerHTML = ICON_CLOSE; btn.setAttribute('aria-label', 'Collapse'); btn.title = 'Collapse'; }
+  function toggle(card) {
+    const open = !card.classList.contains('ad-expanded');
+    xcards.forEach((c) => { if (c !== card && c.classList.contains('ad-expanded')) { c.classList.remove('ad-expanded'); setIcon(c, false); } });
+    card.classList.toggle('ad-expanded', open); setIcon(card, open); redraw(); markFull();
+    requestAnimationFrame(() => { try { card.scrollIntoView({ block: 'start', behavior: 'smooth' }); } catch (e) { /* older browsers */ } });
   }
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') collapse(); });
+  function markFull() {
+    xcards.forEach((c) => {
+      const grid = c.parentElement, sib = grid && grid.classList.contains('jg-grid') ? Array.from(grid.children).filter((n) => n.classList.contains('jg-card')) : [];
+      const shared = sib.length > 1 && sib.some((n) => n !== c && Math.abs(n.getBoundingClientRect().top - c.getBoundingClientRect().top) < 2);
+      c.classList.toggle('ad-full', !shared && !c.classList.contains('ad-expanded'));
+    });
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    xcards.forEach((c) => { if (c.classList.contains('ad-expanded')) { c.classList.remove('ad-expanded'); setIcon(c, false); } });
+    redraw(); markFull();
+  });
   document.querySelectorAll('.jg-card').forEach((card) => {
     if (!card.querySelector('.jg-chart') && !card.querySelector('table')) return;
     const x = document.createElement('button'); x.type = 'button'; x.className = 'ad-x';
-    x.innerHTML = ICON_OPEN; x.setAttribute('aria-label', 'Expand'); x.title = 'Expand';
-    x.addEventListener('click', () => (openCard === card ? collapse() : expand(card)));
-    card.classList.add('ad-hasx'); card.appendChild(x);
+    x.addEventListener('click', () => toggle(card));
+    card.classList.add('ad-hasx'); card.appendChild(x); setIcon(card, false); xcards.push(card);
   });
+  markFull(); window.addEventListener('resize', markFull);
 
   document.querySelectorAll('.jg-card').forEach((card) => {
     const isTable = !card.querySelector('.jg-chart') && card.querySelector('table');
