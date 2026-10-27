@@ -474,7 +474,7 @@ dash.calc('cpi_heat', {
       const th = document.createElement('th'); th.textContent = t; head.appendChild(th);
     });
     const tb = tbl.createTBody();
-    const CHILDREN = { fuel: ['electricity', 'gas', 'petrol', 'other_fuels'] };
+    const CHILDREN = { fuel: ['electricity', 'gas', 'petrol', 'other_fuels'], accommodation: ['imputed_rentals'] };
     const PARENT = {}; Object.entries(CHILDREN).forEach(([p, cs]) => cs.forEach((c) => { PARENT[c] = p; }));
     const OPEN = (J.state.heatOpen = J.state.heatOpen || {});
     keys.forEach((k) => {
