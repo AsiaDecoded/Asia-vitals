@@ -480,8 +480,8 @@ dash.calc('cpi_heat', {
       tr.insertCell().textContent = NAMES[k] || D.data.find((r) => r.series === k).name;
       const wt = D.data.find((r) => r.series === k).weight;
       const wc = tr.insertCell(); wc.className = 'wt'; wc.textContent = wt == null ? '' : d3.format('.1f')(wt / 100);
-      if (['all', 'less_imputed', 'less_accom', 'core'].includes(k)) tr.className = 'lead';
-      if (['food_ex_fbss', 'fbss', 'accommodation', 'electricity', 'gas', 'petrol', 'other_fuels', 'private_transport'].includes(k)) tr.className = 'sub';
+      if (['all', 'less_imputed', 'less_accom', 'accommodation', 'private_transport', 'core'].includes(k)) tr.className = 'lead';
+      if (['food_ex_fbss', 'fbss', 'electricity', 'gas', 'petrol', 'other_fuels'].includes(k)) tr.className = 'sub';
       if (k === 'food') tr.className = 'gap';
       const vs = dates.map((d) => (val.get(`${k}|${d}`) || {}).yoy).filter((v) => v != null);
       const lo = Math.min(...vs), hi = Math.max(...vs);
