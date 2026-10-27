@@ -1,0 +1,674 @@
+{
+ "baskets": [
+  {
+   "from": "2014-01-01",
+   "to": "2018-12-01",
+   "max_residual": 0.00102,
+   "weights_per_10000": {
+    "food": 2403.3,
+    "services": 2962.4,
+    "retail_goods": 1078.9,
+    "elec_gas": 221.5,
+    "accommodation": 1937.1,
+    "private_transport": 1375.2
+   }
+  },
+  {
+   "from": "2019-01-01",
+   "to": "2023-12-01",
+   "max_residual": 0.00104,
+   "weights_per_10000": {
+    "food": 2154.3,
+    "services": 3030.6,
+    "retail_goods": 972.6,
+    "elec_gas": 196.0,
+    "accommodation": 2160.1,
+    "private_transport": 1486.4
+   }
+  },
+  {
+   "from": "2024-01-01",
+   "to": "2026-09-01",
+   "max_residual": 0.00059,
+   "weights_per_10000": {
+    "food": 2039.0,
+    "services": 3175.7,
+    "retail_goods": 1025.3,
+    "elec_gas": 198.1,
+    "accommodation": 2655.8,
+    "private_transport": 906.1
+   }
+  }
+ ],
+ "items_2024": {
+  "1.01.1.1": {
+   "name": "Rice",
+   "weight_per_10000": 14.02
+  },
+  "1.01.1.2": {
+   "name": "Flour",
+   "weight_per_10000": 2.0
+  },
+  "1.01.1.3": {
+   "name": "Bread",
+   "weight_per_10000": 36.05
+  },
+  "1.01.1.4": {
+   "name": "Macaroni, Noodles & Similar Pasta Products",
+   "weight_per_10000": 11.02
+  },
+  "1.01.1.5": {
+   "name": "Biscuits & Cookies",
+   "weight_per_10000": 11.02
+  },
+  "1.01.1.6": {
+   "name": "Cakes & Pastries",
+   "weight_per_10000": 40.06
+  },
+  "1.01.1.7": {
+   "name": "Breakfast Cereals",
+   "weight_per_10000": 4.0
+  },
+  "1.01.1.8": {
+   "name": "Other Cereal Products Nec",
+   "weight_per_10000": 4.01
+  },
+  "1.01.10.1": {
+   "name": "Fruit & Vegetable Juices",
+   "weight_per_10000": 5.0
+  },
+  "1.01.10.2": {
+   "name": "Coffee & Coffee Substitutes",
+   "weight_per_10000": 11.01
+  },
+  "1.01.10.3": {
+   "name": "Tea",
+   "weight_per_10000": 8.0
+  },
+  "1.01.10.4": {
+   "name": "Cocoa & Malt-Based Drinks",
+   "weight_per_10000": 4.01
+  },
+  "1.01.10.5": {
+   "name": "Water",
+   "weight_per_10000": 2.0
+  },
+  "1.01.10.6": {
+   "name": "Soft Drinks",
+   "weight_per_10000": 6.0
+  },
+  "1.01.10.7": {
+   "name": "Non-Alcoholic Beverages Nec",
+   "weight_per_10000": 5.01
+  },
+  "1.01.2.1": {
+   "name": "Pork, Chilled Or Frozen",
+   "weight_per_10000": 35.06
+  },
+  "1.01.2.2": {
+   "name": "Beef, Chilled Or Frozen",
+   "weight_per_10000": 13.03
+  },
+  "1.01.2.3": {
+   "name": "Mutton, Chilled Or Frozen",
+   "weight_per_10000": 3.01
+  },
+  "1.01.2.4": {
+   "name": "Poultry, Chilled Or Frozen",
+   "weight_per_10000": 33.07
+  },
+  "1.01.2.5": {
+   "name": "Meat, Preserved Or Prepared",
+   "weight_per_10000": 17.03
+  },
+  "1.01.3.1": {
+   "name": "Fish, Fresh Or Chilled",
+   "weight_per_10000": 44.03
+  },
+  "1.01.3.2": {
+   "name": "Fish, Frozen",
+   "weight_per_10000": 2.0
+  },
+  "1.01.3.3": {
+   "name": "Other Seafood, Fresh, Chilled Or Frozen",
+   "weight_per_10000": 17.02
+  },
+  "1.01.3.4": {
+   "name": "Seafood Preparations",
+   "weight_per_10000": 16.01
+  },
+  "1.01.4.1": {
+   "name": "Milk",
+   "weight_per_10000": 13.99
+  },
+  "1.01.4.2": {
+   "name": "Other Milk & Cream",
+   "weight_per_10000": 23.01
+  },
+  "1.01.4.3": {
+   "name": "Dairy Products Nec",
+   "weight_per_10000": 13.0
+  },
+  "1.01.4.4": {
+   "name": "Eggs",
+   "weight_per_10000": 14.0
+  },
+  "1.01.5.1": {
+   "name": "Vegetable Oils",
+   "weight_per_10000": 8.98
+  },
+  "1.01.5.2": {
+   "name": "Butter & Other Fats",
+   "weight_per_10000": 2.99
+  },
+  "1.01.6.1": {
+   "name": "Tropical Fruits, Fresh",
+   "weight_per_10000": 26.02
+  },
+  "1.01.6.2": {
+   "name": "Citrus, Beries, Stone & Other Fruits, Fresh",
+   "weight_per_10000": 41.03
+  },
+  "1.01.6.3": {
+   "name": "Fruit, Dried & Dehydrated",
+   "weight_per_10000": 2.99
+  },
+  "1.01.6.4": {
+   "name": "Fruits, Canned Or Bottled",
+   "weight_per_10000": 1.0
+  },
+  "1.01.6.5": {
+   "name": "Nuts & Seed, In Shell Or Shelled",
+   "weight_per_10000": 8.01
+  },
+  "1.01.7.1": {
+   "name": "Leafy Vegetables, Fresh Or Chilled",
+   "weight_per_10000": 28.03
+  },
+  "1.01.7.2": {
+   "name": "Fruit-Bearing Vegetables, Fresh Or Chilled",
+   "weight_per_10000": 16.02
+  },
+  "1.01.7.3": {
+   "name": "Root Vegetables, Fresh Or Chilled",
+   "weight_per_10000": 13.02
+  },
+  "1.01.7.4": {
+   "name": "Other Vegetables, Fresh Or Chilled",
+   "weight_per_10000": 4.0
+  },
+  "1.01.7.5": {
+   "name": "Vegetables, Frozen",
+   "weight_per_10000": 2.0
+  },
+  "1.01.7.6": {
+   "name": "Vegetables, Dried, Salted, Steamed Or Smoked",
+   "weight_per_10000": 3.0
+  },
+  "1.01.7.7": {
+   "name": "Vegetables, Canned Or Bottled",
+   "weight_per_10000": 3.0
+  },
+  "1.01.7.8": {
+   "name": "Vegetables, Preserved Or Prepared, Other Forms",
+   "weight_per_10000": 13.02
+  },
+  "1.01.8.1": {
+   "name": "Sugar",
+   "weight_per_10000": 2.0
+  },
+  "1.01.8.2": {
+   "name": "Jams, Fruit Jellies, Fruit Puree & Pastes, Honey",
+   "weight_per_10000": 5.01
+  },
+  "1.01.8.3": {
+   "name": "Nut Butter & Paste",
+   "weight_per_10000": 1.0
+  },
+  "1.01.8.4": {
+   "name": "Chocolate, Cocoa, & Cocoa-Based Food Products",
+   "weight_per_10000": 9.01
+  },
+  "1.01.8.5": {
+   "name": "Ice & Ice Cream",
+   "weight_per_10000": 7.01
+  },
+  "1.01.8.6": {
+   "name": "Sugar Confectionery & Desserts Nec",
+   "weight_per_10000": 3.0
+  },
+  "1.01.9.1": {
+   "name": "Ready-Made Food",
+   "weight_per_10000": 18.0
+  },
+  "1.01.9.2": {
+   "name": "Baby Food",
+   "weight_per_10000": 1.0
+  },
+  "1.01.9.3": {
+   "name": "Salt, Condiments & Sauces",
+   "weight_per_10000": 11.0
+  },
+  "1.01.9.4": {
+   "name": "Spices, Culinary Herbs & Seeds",
+   "weight_per_10000": 4.0
+  },
+  "1.01.9.5": {
+   "name": "Food Hampers, Incl Fruits",
+   "weight_per_10000": 1.0
+  },
+  "1.01.9.6": {
+   "name": "Other Food Products Nec",
+   "weight_per_10000": 9.0
+  },
+  "1.02.1.1": {
+   "name": "Garments",
+   "weight_per_10000": 120.63
+  },
+  "1.02.1.2": {
+   "name": "Other Articles Of Clothing & Clothing Accessories",
+   "weight_per_10000": 3.99
+  },
+  "1.02.1.3": {
+   "name": "Cleaning, Repair, Tailoring & Rental Of Clothing",
+   "weight_per_10000": 3.99
+  },
+  "1.02.2": {
+   "name": "Footwear",
+   "weight_per_10000": 35.89
+  },
+  "1.03.1.1": {
+   "name": "Actual Rentals For Housing",
+   "weight_per_10000": 294.37
+  },
+  "1.03.1.2": {
+   "name": "Imputed Rentals For Housing",
+   "weight_per_10000": 2137.43
+  },
+  "1.03.1.3": {
+   "name": "Housing Maintenance & Repairs",
+   "weight_per_10000": 223.98
+  },
+  "1.03.2.1": {
+   "name": "Water Supply",
+   "weight_per_10000": 66.01
+  },
+  "1.03.2.2": {
+   "name": "Refuse Collection",
+   "weight_per_10000": 17.99
+  },
+  "1.03.2.3": {
+   "name": "Electricity",
+   "weight_per_10000": 179.01
+  },
+  "1.03.2.4": {
+   "name": "Gas",
+   "weight_per_10000": 19.01
+  },
+  "1.04.1": {
+   "name": "Furniture & Furnishings",
+   "weight_per_10000": 128.16
+  },
+  "1.04.2": {
+   "name": "Household Textiles",
+   "weight_per_10000": 17.02
+  },
+  "1.04.3.1": {
+   "name": "Major Household Appliances",
+   "weight_per_10000": 66.1
+  },
+  "1.04.3.2": {
+   "name": "Small Household Appliances",
+   "weight_per_10000": 15.03
+  },
+  "1.04.3.3": {
+   "name": "Repair & Installation Of Household Appliances",
+   "weight_per_10000": 20.03
+  },
+  "1.04.4": {
+   "name": "Glassware, Tableware & Household Utensils",
+   "weight_per_10000": 17.08
+  },
+  "1.04.5": {
+   "name": "Tools & Equipment For House & Garden",
+   "weight_per_10000": 4.98
+  },
+  "1.04.6.1": {
+   "name": "Non-Durable Household Goods",
+   "weight_per_10000": 33.04
+  },
+  "1.04.6.2": {
+   "name": "Domestic Services & Household Services",
+   "weight_per_10000": 245.35
+  },
+  "1.04.6.3": {
+   "name": "Other Insurance Nec",
+   "weight_per_10000": 0.99
+  },
+  "1.05.1.1": {
+   "name": "Medicines & Health Supplements",
+   "weight_per_10000": 64.08
+  },
+  "1.05.1.2": {
+   "name": "Medical Products",
+   "weight_per_10000": 4.01
+  },
+  "1.05.1.3": {
+   "name": "Assistive Products",
+   "weight_per_10000": 26.03
+  },
+  "1.05.2.1": {
+   "name": "Fees At Polyclinics",
+   "weight_per_10000": 36.05
+  },
+  "1.05.2.2": {
+   "name": "Fees At General Practitioners (GP) Clinics",
+   "weight_per_10000": 47.13
+  },
+  "1.05.2.3": {
+   "name": "Fees At Specialist Outpatient Clinics",
+   "weight_per_10000": 254.61
+  },
+  "1.05.2.4": {
+   "name": "Outpatient Dental Services",
+   "weight_per_10000": 57.11
+  },
+  "1.05.2.5": {
+   "name": "Outpatient Care Services Nec",
+   "weight_per_10000": 34.07
+  },
+  "1.05.3": {
+   "name": "Inpatient Care Services",
+   "weight_per_10000": 238.42
+  },
+  "1.05.4.1": {
+   "name": "Diagnostic Imaging Services & Medical Laboratory Services",
+   "weight_per_10000": 19.9
+  },
+  "1.05.4.2": {
+   "name": "Patient Emergency Transportation Services & Emergency Rescue",
+   "weight_per_10000": 2.99
+  },
+  "1.05.5": {
+   "name": "Health Insurance",
+   "weight_per_10000": 225.44
+  },
+  "1.06.1.1": {
+   "name": "Motor Cars",
+   "weight_per_10000": 458.45
+  },
+  "1.06.1.2": {
+   "name": "Motorcycles",
+   "weight_per_10000": 20.98
+  },
+  "1.06.1.3": {
+   "name": "Bicycles",
+   "weight_per_10000": 6.01
+  },
+  "1.06.1.4": {
+   "name": "Parts & Accessories For Personal Transport Equipment",
+   "weight_per_10000": 10.0
+  },
+  "1.06.1.5": {
+   "name": "Petrol",
+   "weight_per_10000": 173.78
+  },
+  "1.06.1.6": {
+   "name": "Other Fuel & Lubricants For Personal Transport Equipment",
+   "weight_per_10000": 4.0
+  },
+  "1.06.1.7": {
+   "name": "Maintenance & Repair Of Personal Transport Equipment",
+   "weight_per_10000": 56.96
+  },
+  "1.06.1.8": {
+   "name": "Other Services In Respect Of Personal Transport Equipment",
+   "weight_per_10000": 160.81
+  },
+  "1.06.1.9": {
+   "name": "Insurance Connected With Transport",
+   "weight_per_10000": 13.92
+  },
+  "1.06.2.1": {
+   "name": "Bus & Train Fares",
+   "weight_per_10000": 137.79
+  },
+  "1.06.2.2": {
+   "name": "Point-To-Point Transport Services",
+   "weight_per_10000": 107.86
+  },
+  "1.06.2.3": {
+   "name": "Commuting Fares",
+   "weight_per_10000": 9.99
+  },
+  "1.06.2.4": {
+   "name": "Other Land Transport Services",
+   "weight_per_10000": 5.99
+  },
+  "1.06.3.1": {
+   "name": "Airfares",
+   "weight_per_10000": 128.83
+  },
+  "1.06.3.2": {
+   "name": "Seafares",
+   "weight_per_10000": 1.0
+  },
+  "1.06.3.3": {
+   "name": "Travel Insurance",
+   "weight_per_10000": 1.0
+  },
+  "1.06.4": {
+   "name": "Transport Services Of Goods",
+   "weight_per_10000": 7.98
+  },
+  "1.07.1.1": {
+   "name": "Mobile Telephone Equipment",
+   "weight_per_10000": 30.94
+  },
+  "1.07.1.2": {
+   "name": "Information Processing Equipment",
+   "weight_per_10000": 27.96
+  },
+  "1.07.1.3": {
+   "name": "Equipment For The Reception, Recording & Reproduction Of Sound & Vision",
+   "weight_per_10000": 21.95
+  },
+  "1.07.1.4": {
+   "name": "Unrecorded Recording Media",
+   "weight_per_10000": 1.0
+  },
+  "1.07.1.5": {
+   "name": "Information & Communication Equipment & Accessories Nec",
+   "weight_per_10000": 8.98
+  },
+  "1.07.2": {
+   "name": "Software Excl Games",
+   "weight_per_10000": 2.98
+  },
+  "1.07.3.1": {
+   "name": "Fixed Communication Services",
+   "weight_per_10000": 4.0
+  },
+  "1.07.3.2": {
+   "name": "Mobile Communication Services",
+   "weight_per_10000": 121.79
+  },
+  "1.07.3.3": {
+   "name": "Internet, Bundled & Other Telecommunication Services",
+   "weight_per_10000": 148.73
+  },
+  "1.07.3.4": {
+   "name": "Information & Communication Services Nec",
+   "weight_per_10000": 11.98
+  },
+  "1.08.1": {
+   "name": "Recreation & Cultural Goods",
+   "weight_per_10000": 9.05
+  },
+  "1.08.2.1": {
+   "name": "Games, Toys & Hobbies",
+   "weight_per_10000": 24.02
+  },
+  "1.08.2.2": {
+   "name": "Equipment For Sport, Camping & Open-Air Recreation",
+   "weight_per_10000": 9.01
+  },
+  "1.08.3.1": {
+   "name": "Garden Products, Plants & Flowers",
+   "weight_per_10000": 8.01
+  },
+  "1.08.3.2": {
+   "name": "Pets & Products For Pets",
+   "weight_per_10000": 19.03
+  },
+  "1.08.4.1": {
+   "name": "Other Recreational Services",
+   "weight_per_10000": 3.0
+  },
+  "1.08.4.2": {
+   "name": "Veterinary & Other Services For Pets",
+   "weight_per_10000": 13.01
+  },
+  "1.08.4.3": {
+   "name": "Recreational & Sporting Services",
+   "weight_per_10000": 128.15
+  },
+  "1.08.5.1": {
+   "name": "Services Provided By Cinemas, Theatres & Concert Venues",
+   "weight_per_10000": 15.02
+  },
+  "1.08.5.2": {
+   "name": "Services Provided By Museums & Cultural Sites",
+   "weight_per_10000": 6.01
+  },
+  "1.08.5.3": {
+   "name": "Photographic Services",
+   "weight_per_10000": 7.01
+  },
+  "1.08.5.4": {
+   "name": "Cultural Services Nec",
+   "weight_per_10000": 24.02
+  },
+  "1.08.6.1": {
+   "name": "Books, Excl School Textbooks & Study Guides",
+   "weight_per_10000": 4.98
+  },
+  "1.08.6.2": {
+   "name": "Newspapers & Others",
+   "weight_per_10000": 5.97
+  },
+  "1.08.6.3": {
+   "name": "Stationery & Drawing Materials",
+   "weight_per_10000": 8.96
+  },
+  "1.08.7.1": {
+   "name": "Hotels",
+   "weight_per_10000": 103.11
+  },
+  "1.08.7.2": {
+   "name": "Chalets",
+   "weight_per_10000": 1.0
+  },
+  "1.08.7.3": {
+   "name": "Package Holidays",
+   "weight_per_10000": 206.18
+  },
+  "1.09.1.1": {
+   "name": "Primary Education",
+   "weight_per_10000": 26.21
+  },
+  "1.09.1.2": {
+   "name": "Secondary Education",
+   "weight_per_10000": 41.05
+  },
+  "1.09.1.3": {
+   "name": "Post-Secondary (Non-Tertiary) Education",
+   "weight_per_10000": 17.5
+  },
+  "1.09.1.4": {
+   "name": "Polytechnic Education",
+   "weight_per_10000": 22.0
+  },
+  "1.09.1.5": {
+   "name": "Other Education",
+   "weight_per_10000": 283.52
+  },
+  "1.09.2": {
+   "name": "Private Tuition & Other Educational Courses",
+   "weight_per_10000": 183.64
+  },
+  "1.09.3": {
+   "name": "School Textbooks & Study Guides",
+   "weight_per_10000": 4.03
+  },
+  "1.10.1.1": {
+   "name": "Hairdressing & Personal Grooming Services",
+   "weight_per_10000": 95.7
+  },
+  "1.10.1.2": {
+   "name": "Electric Appliances For Personal Care",
+   "weight_per_10000": 4.03
+  },
+  "1.10.1.3": {
+   "name": "Other Appliances, Articles & Products For Personal Care",
+   "weight_per_10000": 112.84
+  },
+  "1.10.2.1": {
+   "name": "Alcoholic Beverages",
+   "weight_per_10000": 23.18
+  },
+  "1.10.2.2": {
+   "name": "Tobacco",
+   "weight_per_10000": 35.28
+  },
+  "1.10.3.1": {
+   "name": "Jewellery & Watches",
+   "weight_per_10000": 14.11
+  },
+  "1.10.3.2": {
+   "name": "Devotional Articles & Articles For Religious & Ritual Celebrations",
+   "weight_per_10000": 7.05
+  },
+  "1.10.3.3": {
+   "name": "Other Personal Effects Nec",
+   "weight_per_10000": 41.31
+  },
+  "1.10.4": {
+   "name": "Social Services",
+   "weight_per_10000": 32.25
+  },
+  "1.10.5": {
+   "name": "Other Miscellaneous Services",
+   "weight_per_10000": 75.57
+  },
+  "1.11.1.1": {
+   "name": "Restaurants",
+   "weight_per_10000": 489.56
+  },
+  "1.11.1.2": {
+   "name": "Cafes",
+   "weight_per_10000": 81.75
+  },
+  "1.11.1.3": {
+   "name": "Pubs",
+   "weight_per_10000": 11.97
+  },
+  "1.11.2": {
+   "name": "Fast Food Restaurants",
+   "weight_per_10000": 84.98
+  },
+  "1.11.3.1": {
+   "name": "Hawker Centres",
+   "weight_per_10000": 168.56
+  },
+  "1.11.3.2": {
+   "name": "Food Courts, Coffee Shops & Kiosks",
+   "weight_per_10000": 536.94
+  },
+  "1.11.4": {
+   "name": "Other Catering Services, Incl Vending Machines",
+   "weight_per_10000": 14.21
+  }
+ },
+ "item_tree_max_residual": 0.00069
+}

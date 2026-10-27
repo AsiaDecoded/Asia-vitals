@@ -1,0 +1,17 @@
+{
+ "code": "P2026-08",
+ "label": "Aug 2026",
+ "latest_month": "2026-08-01",
+ "table": "SingStat M213241, M213291, M213381, M213431 (2023 base)",
+ "processed_at": "2026-10-27T00:22:21Z",
+ "rows": 4960,
+ "warnings": [],
+ "fingerprint": "90053cce07c0feb9",
+ "long_rows": 9824,
+ "history": [
+  {
+   "code": "P2026-08",
+   "processed_at": "2026-10-27T00:22:21Z"
+  }
+ ]
+}

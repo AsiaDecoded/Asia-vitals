@@ -12,4 +12,6 @@ SOURCES = [
     "in_cpi_imf",
     "in_cpi_core",
     "in_ppi_oea",
+    "sg_cpi_singstat",
+    "sg_ppi_singstat",
 ]

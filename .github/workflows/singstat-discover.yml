@@ -1,0 +1,41 @@
+name: SingStat discovery (manual)
+
+# One-off helper: probes SingStat's Table Builder API for Singapore price tables
+# and saves the responses to the "discovery" branch, under discovery/singstat.
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-sg]
+    paths:
+      - pipeline/tools/singstat_discover.py
+      - pipeline/core/singstat.py
+      - .github/workflows/singstat-discover.yml
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Query the SingStat API
+        run: python -I pipeline/tools/singstat_discover.py discovery/singstat2
+      - name: Push results to the discovery branch
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mv discovery /tmp/discovery
+          if git fetch origin discovery; then
+            git checkout -B discovery origin/discovery
+          else
+            git checkout --orphan discovery && git rm -rf --quiet --cached .
+          fi
+          mkdir -p discovery && rm -rf discovery/singstat2 && cp -r /tmp/discovery/singstat2 discovery/
+          git add discovery/singstat2
+          git commit -m "SingStat discovery"
+          git push origin discovery
