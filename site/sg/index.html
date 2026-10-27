@@ -393,10 +393,20 @@ window.JG = {
   window(rows, id) { const n = this.periodOf(id, 40); return n ? rows.slice(-n) : rows; },
   // Range slider per chart: the selected share of the chart's full date range, [from, to] in 0..1.
   range: {},
+  // Charts open from this month until the reader moves the slider.
+  defStart: '2016-01-01',
   slice(rows, id) {
-    const [lo, hi] = this.range[id] || [0, 1];
     if (!rows.length) return rows;
-    const n = rows.length - 1, i0 = Math.round(lo * n), i1 = Math.max(i0, Math.round(hi * n));
+    const n = rows.length - 1;
+    let lo, hi;
+    if (this.range[id]) [lo, hi] = this.range[id];
+    else {
+      const k = rows.findIndex((r) => r.date >= this.defStart);
+      lo = n > 0 && k > 0 ? k / n : 0; hi = 1;
+      const card = document.getElementById(id), sl = card && card._slider;
+      if (sl) { sl.a.value = Math.round(lo * 1000); sl.sel.style.left = `${lo * 100}%`; sl.sel.style.right = '0%'; }
+    }
+    const i0 = Math.round(lo * n), i1 = Math.max(i0, Math.round(hi * n));
     const out = rows.slice(i0, i1 + 1);
     const card = document.getElementById(id), lbl = card && card.querySelector('.ad-slider-lbl');
     if (lbl && out.length) {
@@ -430,6 +440,7 @@ window.JG = {
       a.addEventListener('input', () => upd(a)); b.addEventListener('input', () => upd(b));
       chart.after(wrap, lbl);
       sel.style.left = '0%'; sel.style.right = '0%';
+      card._slider = { a, b, sel };
     });
   },
   addPeriods() {
