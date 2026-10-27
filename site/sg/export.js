@@ -111,7 +111,7 @@
     const table = card.querySelector('table');
     if (!table) return null;
     const head = Array.from(table.querySelectorAll('thead th')).map((th) => th.textContent.trim());
-    const body = Array.from(table.querySelectorAll('tbody tr')).map((tr) => ({
+    const body = Array.from(table.querySelectorAll('tbody tr')).filter((tr) => !tr.classList.contains('spacer')).map((tr) => ({
       bold: (tr.classList.contains('gdp') && table.id !== 'cpi-table') || tr.classList.contains('grp') || tr.classList.contains('lead'),
       muted: tr.classList.contains('agg'), sep: tr.classList.contains('sep'), sub: tr.classList.contains('sub'), gap: tr.classList.contains('gap'),
       cells: Array.from(tr.cells).map((td) => ({ text: td.textContent, neg: td.classList.contains('neg'), bg: td.style.background || '' })),
@@ -137,7 +137,7 @@
     m.font = `11px ${FONT}`;
     const srcLines = wrap(m, src, W - pad * 2 - 110);
     const gaps = body.filter((r) => r.gap).length * gapH;
-    const H = pad + 34 + (units ? 22 : 8) + headH + body.length * lineH + gaps + 14 + srcLines.length * 14 + 12 + pad;
+    const H = pad + 34 + (units ? 22 : 8) + (heat ? 6 : 0) + headH + body.length * lineH + gaps + 14 + srcLines.length * 14 + 12 + pad;
     const cv = document.createElement('canvas'); cv.width = W * SCALE; cv.height = H * SCALE;
     const ctx = cv.getContext('2d'); ctx.scale(SCALE, SCALE);
     ctx.fillStyle = '#FFFFFF'; ctx.fillRect(0, 0, W, H);
@@ -170,6 +170,7 @@
       y += lineH;
       if (!heat) { ctx.fillStyle = '#D9D9D9'; ctx.fillRect(pad, y - 1, tableW, 1); }
     });
+    if (heat) { y += 6; ctx.fillStyle = INK; ctx.fillRect(pad, y, tableW, 1.2); }
     ctx.textAlign = 'left';
     y += 18; ctx.font = `11px ${FONT}`; ctx.fillStyle = INK;
     srcLines.forEach((l, i) => ctx.fillText(l, pad, y + i * 14));

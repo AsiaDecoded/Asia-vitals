@@ -470,6 +470,7 @@ dash.calc('cpi_heat', {
     });
     const tb = tbl.createTBody();
     keys.forEach((k) => {
+      if (k === 'food') { const sp = tb.insertRow(); sp.className = 'spacer'; sp.insertCell().colSpan = dates.length + 1; }
       const tr = tb.insertRow();
       tr.insertCell().textContent = NAMES[k] || D.data.find((r) => r.series === k).name;
       if (['all', 'less_imputed', 'less_accom', 'core', 'fuel'].includes(k)) tr.className = 'lead';
