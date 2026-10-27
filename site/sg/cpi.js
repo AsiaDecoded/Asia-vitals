@@ -114,7 +114,7 @@ dash.calc('cpi_heat', {
   inputs: ['cpi_series', 'sg_cpi_series_weights'],
   fn: (cpi_series, sg_cpi_series_weights) => {
     const W = new Map(sg_cpi_series_weights.map((r) => [r.series, Number(r.weight)]));
-    const ROWS = ['all', 'less_imputed', 'less_accom', 'accommodation', 'private_transport', 'core', 'food', 'food_ex_fbss', 'fbss',
+    const ROWS = ['all', 'less_imputed', 'less_accom', 'accommodation', 'private_transport', 'core', 'ex_food_energy', 'food', 'food_ex_fbss', 'fbss',
       'fuel', 'electricity', 'gas', 'petrol', 'other_fuels', 'clothing', 'housing',
       'household', 'health', 'transport', 'info_comm', 'recreation', 'education', 'misc'];
     return cpi_series.filter((r) => ROWS.includes(r.series) && r.date >= '2026-01-01' && r.yoy != null)
@@ -467,7 +467,7 @@ dash.calc('cpi_heat', {
       const i = t > 0.5 ? 1 : 0; const [t0, c0] = STOPS[i], [t1, c1] = STOPS[i + 1], f = (t - t0) / (t1 - t0);
       return `rgb(${c0.map((c, k) => Math.round(c + (c1[k] - c) * f)).join(',')})`;
     };
-    const NAMES = { all: 'CPI', less_imputed: 'CPI less imputed rentals for housing', less_accom: 'CPI less accommodation', core: 'MAS core*', fuel: 'Energy', other_fuels: 'Other fuel and lubricants' };
+    const NAMES = { all: 'CPI', less_imputed: 'CPI less imputed rentals for housing', less_accom: 'CPI less accommodation', core: 'MAS core*', fuel: 'Energy', ex_food_energy: 'CPI less food and energy**', other_fuels: 'Other fuel and lubricants' };
     tbl.replaceChildren();
     const head = tbl.createTHead().insertRow();
     ['', 'Weight'].concat(dates.map((d) => `${MON[+d.slice(5, 7) - 1]} ${d.slice(2, 4)}`)).forEach((t) => {
@@ -480,7 +480,7 @@ dash.calc('cpi_heat', {
       tr.insertCell().textContent = NAMES[k] || D.data.find((r) => r.series === k).name;
       const wt = D.data.find((r) => r.series === k).weight;
       const wc = tr.insertCell(); wc.className = 'wt'; wc.textContent = wt == null ? '' : d3.format('.1f')(wt / 100);
-      if (['all', 'less_imputed', 'less_accom', 'accommodation', 'private_transport', 'core'].includes(k)) tr.className = 'lead';
+      if (['all', 'less_imputed', 'less_accom', 'accommodation', 'private_transport', 'core', 'ex_food_energy'].includes(k)) tr.className = 'lead';
       if (['food_ex_fbss', 'fbss', 'electricity', 'gas', 'petrol', 'other_fuels'].includes(k)) tr.className = 'sub';
       if (k === 'food') tr.className = 'gap';
       const vs = dates.map((d) => (val.get(`${k}|${d}`) || {}).yoy).filter((v) => v != null);
