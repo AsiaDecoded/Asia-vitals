@@ -10,7 +10,10 @@ weight-average of its parts' indices. For each base:
     Core 3 index = (w0168 x I0168 + w0042 x I0042) / (w0168 + w0042)
 with the Statistics Bureau's published weights per 10,000 (Table 5 of the monthly report):
     2015 base: 6713, 521   2020 base: 6781, 460   2025 base: 6609, 508
-y/y is the 12-month change in that index on the base the Bureau uses for that month's official rates:
+y/y combines the two parts' published y/y rates, weighted by weight x index a year earlier (the
+aggregation rule for a fixed-weight index; using the Bureau's rates, which are calculated from unrounded
+indices, avoids rounding in the one-decimal indices). It is checked against the 12-month change in the
+combined index (within 0.2pp). Both are on the base the Bureau uses for that month's official rates:
 2015 base for 2016-2020, 2020 base for 2021-2025, 2025 base from 2026. Indices come from the e-Stat
 API tables for each base (national, monthly), so both months of every y/y are on the same base.
 Checked: the same method applied to code 0168 alone reproduces its published y/y.
@@ -77,7 +80,18 @@ def update(**_):
             if p not in idx:
                 errors.append(f"{base} base: no index for {p[:7]} (needed for {d[:7]})")
                 continue
-            yoy = round((idx[d] / idx[p] - 1) * 100, 2)
+            # y/y of the aggregate = the parts' published y/y, weighted by weight x index a year earlier.
+            # Using the Bureau's published rates (calculated from unrounded indices) avoids the rounding
+            # in the one-decimal indices; the indices only set the shares.
+            ya, yb = a[d].get("yoy"), b[d].get("yoy")
+            if ya is None or yb is None:
+                errors.append(f"{d[:7]}: published y/y missing (0168 {ya}, 0042 {yb})")
+                continue
+            sa, sb = wa * a[p]["index"], wb * b[p]["index"]
+            yoy = round((sa * ya + sb * yb) / (sa + sb), 2)
+            from_index = (idx[d] / idx[p] - 1) * 100
+            if abs(from_index - yoy) > 0.2:
+                errors.append(f"{d[:7]}: Core 3 y/y {yoy} vs from index {from_index:.2f}")
             # method check: the same calculation on 0168 alone should give its published y/y
             pub = a[d].get("yoy")
             own = (a[d]["index"] / a[p]["index"] - 1) * 100 if a.get(p, {}).get("index") else None
