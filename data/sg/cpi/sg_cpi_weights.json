@@ -3,40 +3,28 @@
   {
    "from": "2014-01-01",
    "to": "2018-12-01",
-   "max_residual": 0.00102,
-   "weights_per_10000": {
-    "food": 2403.3,
-    "services": 2962.4,
-    "retail_goods": 1078.9,
-    "elec_gas": 221.5,
-    "accommodation": 1937.1,
-    "private_transport": 1375.2
+   "published_weights_per_10000": {
+    "core": 6564,
+    "accommodation": 2287,
+    "private_transport": 1149
    }
   },
   {
    "from": "2019-01-01",
    "to": "2023-12-01",
-   "max_residual": 0.00104,
-   "weights_per_10000": {
-    "food": 2154.3,
-    "services": 3030.6,
-    "retail_goods": 972.6,
-    "elec_gas": 196.0,
-    "accommodation": 2160.1,
-    "private_transport": 1486.4
+   "published_weights_per_10000": {
+    "core": 6581,
+    "accommodation": 2198,
+    "private_transport": 1221
    }
   },
   {
    "from": "2024-01-01",
    "to": "2026-09-01",
-   "max_residual": 0.00059,
-   "weights_per_10000": {
-    "food": 2039.0,
-    "services": 3175.7,
-    "retail_goods": 1025.3,
-    "elec_gas": 198.1,
-    "accommodation": 2655.8,
-    "private_transport": 906.1
+   "published_weights_per_10000": {
+    "core": 6438,
+    "accommodation": 2656,
+    "private_transport": 906
    }
   }
  ],
