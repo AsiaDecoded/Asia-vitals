@@ -111,7 +111,8 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
 .ad-x:hover, .ad-x:focus-visible { color: var(--color-fg); border-color: var(--color-border-line); }
 .ad-x svg { width: 15px; height: 15px; }
 .jg-card.ad-hasx > h2, .jg-card.ad-hasx > .jg-cardhead { padding-right: 30px; }
-.jg-card.ad-expanded, .jg-grid:has(> .ad-expanded) > .jg-card { grid-column: 1 / -1; }
+.jg-grid > .ad-expanded, .jg-grid:has(.ad-expanded) > * { grid-column: 1 / -1; }
+.ad-stack { display: flex; flex-direction: column; gap: var(--cds-gap-md); min-width: 0; }
 .jg-card.ad-full > .ad-x { display: none; }
 .jg-card.ad-full.ad-hasx > h2, .jg-card.ad-full.ad-hasx > .jg-cardhead { padding-right: 0; }
 
@@ -204,47 +205,46 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
         </div>
         <div class="ad-foot"><span>Source: Singapore Department of Statistics. Weight: 2024 basket, % of CPI, as published by SingStat. *CPI excluding accommodation and private transport. **Asia Decoded calculation: CPI excluding food other than food and beverage serving services, and energy; broadly comparable to Japan&rsquo;s core-core and India&rsquo;s core.</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
-      <section class="jg-card" id="cpi-movers">
-        <div class="jg-cardhead">
-          <div><h2>Singapore CPI biggest contributors</h2></div>
-          <div class="jg-seg" id="cpi-movers-seg" role="group" aria-label="Averaging window"><button data-n="3" aria-pressed="true">3m avg.</button><button data-n="6">6m avg.</button></div>
-        </div>
-        <div class="ad-top"><span class="ad-units" id="cpi-movers-units">%, ppt</span><span></span><span class="ad-units r"></span></div>
-        <div class="jg-tablewrap">
-          <table id="cpi-movers-table" data-source="cpi_movers" data-row-key="name">
-            <thead><tr>
-              <th data-field="name">Item</th>
-              <th data-field="weight">Weight</th>
-              <th data-field="yoy">y/y, latest</th>
-              <th data-field="avg3" id="cpi-movers-avg">Contribution, 3m avg.</th>
-            </tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
-        <div class="ad-foot"><span>Source: Singapore Department of Statistics, Asia Decoded calculations</span><span class="ad-brand">Asia Decoded</span></div>
-      </section>
-    </div>
-
-    <div class="jg-grid">
-      <section class="jg-card" id="cpi-components">
-        <h2>Singapore CPI momentum</h2>
-        <div class="ad-top"><span class="ad-units" id="cpi-table-units">%</span><span></span><span class="ad-units r"></span></div>
-        <div class="jg-tablewrap">
-          <table id="cpi-table" data-source="cpi_table" data-row-key="label">
-            <thead><tr>
-              <th data-field="label">Series</th>
-              <th data-field="ann1">1m ann.</th>
-              <th data-field="ann2">2m ann.</th>
-              <th data-field="ann3">3m ann.</th>
-              <th data-field="ann6">6m ann.</th>
-              <th data-field="yoy12">12m</th>
-            </tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
-        <p class="jg-note" style="margin:var(--cds-gap-sm) 0 0">Annualised rates use SingStat&rsquo;s seasonally adjusted indices. SingStat publishes no seasonally adjusted MAS core index, so MAS core shows the 12-month rate only.</p>
-        <div class="ad-foot"><span>Source: Singapore Department of Statistics</span><span class="ad-brand">Asia Decoded</span></div>
-      </section>
+      <div class="ad-stack">
+        <section class="jg-card" id="cpi-movers">
+          <div class="jg-cardhead">
+            <div><h2>Singapore CPI biggest contributors</h2></div>
+            <div class="jg-seg" id="cpi-movers-seg" role="group" aria-label="Averaging window"><button data-n="3" aria-pressed="true">3m avg.</button><button data-n="6">6m avg.</button></div>
+          </div>
+          <div class="ad-top"><span class="ad-units" id="cpi-movers-units">%, ppt</span><span></span><span class="ad-units r"></span></div>
+          <div class="jg-tablewrap">
+            <table id="cpi-movers-table" data-source="cpi_movers" data-row-key="name">
+              <thead><tr>
+                <th data-field="name">Item</th>
+                <th data-field="weight">Weight</th>
+                <th data-field="yoy">y/y, latest</th>
+                <th data-field="avg3" id="cpi-movers-avg">Contribution, 3m avg.</th>
+              </tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="ad-foot"><span>Source: Singapore Department of Statistics, Asia Decoded calculations</span><span class="ad-brand">Asia Decoded</span></div>
+        </section>
+        <section class="jg-card" id="cpi-components">
+          <h2>Singapore CPI momentum</h2>
+          <div class="ad-top"><span class="ad-units" id="cpi-table-units">%</span><span></span><span class="ad-units r"></span></div>
+          <div class="jg-tablewrap">
+            <table id="cpi-table" data-source="cpi_table" data-row-key="label">
+              <thead><tr>
+                <th data-field="label">Series</th>
+                <th data-field="ann1">1m ann.</th>
+                <th data-field="ann2">2m ann.</th>
+                <th data-field="ann3">3m ann.</th>
+                <th data-field="ann6">6m ann.</th>
+                <th data-field="yoy12">12m</th>
+              </tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <p class="jg-note" style="margin:var(--cds-gap-sm) 0 0">Annualised rates use SingStat&rsquo;s seasonally adjusted indices. SingStat publishes no seasonally adjusted MAS core index, so MAS core shows the 12-month rate only.</p>
+          <div class="ad-foot"><span>Source: Singapore Department of Statistics</span><span class="ad-brand">Asia Decoded</span></div>
+        </section>
+      </div>
     </div>
 
     <div class="jg-grid">

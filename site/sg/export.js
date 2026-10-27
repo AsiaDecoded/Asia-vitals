@@ -228,8 +228,11 @@
   }
   function markFull() {
     xcards.forEach((c) => {
-      const grid = c.parentElement, sib = grid && grid.classList.contains('jg-grid') ? Array.from(grid.children).filter((n) => n.classList.contains('jg-card')) : [];
-      const shared = sib.length > 1 && sib.some((n) => n !== c && Math.abs(n.getBoundingClientRect().top - c.getBoundingClientRect().top) < 2);
+      // the grid item holding the card: the card itself, or the stack of cards it sits in
+      const item = c.parentElement && c.parentElement.classList.contains('ad-stack') ? c.parentElement : c;
+      const grid = item.parentElement, sib = grid && grid.classList.contains('jg-grid') ? Array.from(grid.children) : [];
+      const top = item.getBoundingClientRect().top;
+      const shared = sib.length > 1 && sib.some((n) => n !== item && Math.abs(n.getBoundingClientRect().top - top) < 2);
       c.classList.toggle('ad-full', !shared && !c.classList.contains('ad-expanded'));
     });
   }
