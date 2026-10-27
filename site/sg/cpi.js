@@ -528,12 +528,16 @@ dash.calc('cpi_heat', {
       const max = () => wrap.scrollWidth - wrap.clientWidth;
       const room = () => track.clientWidth - thumb.offsetWidth;
       let drag = null;
-      thumb.addEventListener('pointerdown', (e) => { drag = { x: e.clientX, s: wrap.scrollLeft }; thumb.setPointerCapture(e.pointerId); e.preventDefault(); });
+      // starts at the latest months (right); once the reader scrolls, their position is kept
+      const touched = () => { J.state.heatScrolled = true; };
+      ['wheel', 'touchstart', 'keydown'].forEach((ev) => wrap.addEventListener(ev, touched, { passive: true }));
+      thumb.addEventListener('pointerdown', (e) => { touched(); drag = { x: e.clientX, s: wrap.scrollLeft }; thumb.setPointerCapture(e.pointerId); e.preventDefault(); });
       thumb.addEventListener('pointermove', (e) => { if (!drag || room() <= 0) return; wrap.scrollLeft = drag.s + (e.clientX - drag.x) * max() / room(); });
       thumb.addEventListener('pointerup', () => { drag = null; });
       thumb.addEventListener('pointercancel', () => { drag = null; });
       track.addEventListener('pointerdown', (e) => {
         if (e.target !== track) return;
+        touched();
         const r = track.getBoundingClientRect();
         wrap.scrollLeft = ((e.clientX - r.left - thumb.offsetWidth / 2) / Math.max(1, room())) * max();
       });
@@ -553,6 +557,7 @@ dash.calc('cpi_heat', {
       track.style.marginLeft = `${fixed}px`;
       track.hidden = wrap.scrollWidth - wrap.clientWidth <= 1;
       thumb.style.width = `${Math.max(24, (view / Math.max(1, full)) * track.clientWidth)}px`;
+      if (!J.state.heatScrolled) wrap.scrollLeft = wrap.scrollWidth;
       place();
     };
     fit();
