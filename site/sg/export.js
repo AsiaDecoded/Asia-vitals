@@ -111,10 +111,10 @@
     const table = card.querySelector('table');
     if (!table) return null;
     const head = Array.from(table.querySelectorAll('thead th')).map((th) => th.textContent.trim());
-    const body = Array.from(table.querySelectorAll('tbody tr')).filter((tr) => !tr.classList.contains('spacer')).map((tr) => ({
+    const body = Array.from(table.querySelectorAll('tbody tr')).filter((tr) => !tr.classList.contains('spacer') && !tr.hidden).map((tr) => ({
       bold: (tr.classList.contains('gdp') && table.id !== 'cpi-table') || tr.classList.contains('grp') || tr.classList.contains('lead'),
       muted: tr.classList.contains('agg'), sep: tr.classList.contains('sep'), sub: tr.classList.contains('sub'), gap: tr.classList.contains('gap'),
-      cells: Array.from(tr.cells).map((td) => ({ text: td.textContent, neg: td.classList.contains('neg'), bg: td.style.background || '' })),
+      cells: Array.from(tr.cells).map((td) => ({ text: td.dataset.label || td.textContent, neg: td.classList.contains('neg'), bg: td.style.background || '' })),
     }));
     if (!body.length) return null;
     const heat = table.id === 'cpi-heat-table';

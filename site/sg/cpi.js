@@ -474,10 +474,24 @@ dash.calc('cpi_heat', {
       const th = document.createElement('th'); th.textContent = t; head.appendChild(th);
     });
     const tb = tbl.createTBody();
+    const CHILDREN = { fuel: ['electricity', 'gas', 'petrol', 'other_fuels'] };
+    const PARENT = {}; Object.entries(CHILDREN).forEach(([p, cs]) => cs.forEach((c) => { PARENT[c] = p; }));
+    const OPEN = (J.state.heatOpen = J.state.heatOpen || {});
     keys.forEach((k) => {
       if (k === 'food') { const sp = tb.insertRow(); sp.className = 'spacer'; sp.insertCell().colSpan = dates.length + 2; }
       const tr = tb.insertRow();
-      tr.insertCell().textContent = NAMES[k] || D.data.find((r) => r.series === k).name;
+      const label = NAMES[k] || D.data.find((r) => r.series === k).name;
+      const nc = tr.insertCell(); nc.dataset.label = label;
+      if (CHILDREN[k]) {
+        const open = !!OPEN[k];
+        const b = document.createElement('button'); b.type = 'button'; b.className = 'heat-tog';
+        b.setAttribute('aria-expanded', String(open));
+        const ar = document.createElement('span'); ar.className = 'heat-arrow'; ar.textContent = open ? '\u25BE' : '\u25B8';
+        b.append(document.createTextNode(label + ' '), ar);
+        b.addEventListener('click', () => { OPEN[k] = !OPEN[k]; heat(); });
+        nc.appendChild(b);
+      } else nc.textContent = label;
+      if (PARENT[k] && !OPEN[PARENT[k]]) tr.hidden = true;
       const wt = D.data.find((r) => r.series === k).weight;
       const wc = tr.insertCell(); wc.className = 'wt'; wc.textContent = wt == null ? '' : d3.format('.1f')(wt / 100);
       if (['all', 'less_imputed', 'less_accom', 'accommodation', 'private_transport', 'core', 'ex_food_energy', 'food_ex_fbss', 'fuel'].includes(k)) tr.className = 'lead';
