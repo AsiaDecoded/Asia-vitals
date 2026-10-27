@@ -8,7 +8,8 @@ Writes data/sg/cpi/:
   sg_cpi_contrib.csv    contributions (pp) of MAS core, accommodation and private transport to all-items y/y at
                         published weights, Jan 2015 on (calculated);
                         rows with series "core_*": contributions of food, services, retail & other goods and
-                        electricity & gas to MAS core y/y at MAS's published weights, Jan 2020 on
+                        electricity & gas to MAS core y/y at MAS's published weights, Jan 2015 on
+                        (2014 basket: services / retail & other goods split estimated)
   sg_cpi_diffusion.csv  share of items with prices up / down on a year earlier, Jan 2016 on
   sg_cpi_items.csv      every item, latest 12 months: published 2024 weight, index, m/m, y/y (published),
                         contribution to all-items y/y (calculated)
@@ -93,7 +94,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 13  # bump when the outputs change, so the next run rebuilds them
+VERSION = 14  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -177,18 +178,26 @@ def _contrib_headline(idx, mas, errors):
     return rows, weights
 
 
-# MAS core weights per 10,000 of all items, as published by MAS/MTI (Consumer Price Developments, Table A.1).
-# MAS publishes none for the 2014 basket, so these contributions start in Jan 2020.
-CORE_WEIGHTS = {"2019": {"food": 2110, "services": 3173, "retail_goods": 1111, "elec_gas": 188},
+# MAS core weights per 10,000 of all items. 2019 and 2024: as published by MAS/MTI (Consumer Price Developments,
+# Table A.1). 2014: MAS published none. Food (2,167) and electricity & gas (215 + 34) are SingStat's published
+# weights (IP-E48); MAS core is 10,000 less accommodation (2,287) and private transport (1,149); the remaining 4,148
+# is split between services and retail & other goods in the ratio implied by the published MAS core indices over
+# 2014-18 (expressed at 2014 prices). The same calculation reproduces MAS's published 2019 and 2024 splits; summing
+# SingStat's 2014 item weights by MAS's classification gives 2,922 and 1,226, within about 20 of these.
+CORE_WEIGHTS = {"2014": {"food": 2167, "services": 2939, "retail_goods": 1209, "elec_gas": 249},
+                "2019": {"food": 2110, "services": 3173, "retail_goods": 1111, "elec_gas": 188},
                 "2024": {"food": 2042, "services": 3173, "retail_goods": 1025, "elec_gas": 198}}
 
 
 def _contrib_core(idx, mas, errors):
-    """Contributions of food, services, retail & other goods and electricity & gas to MAS core y/y, Jan 2020 on,
-    at MAS's published weights; same method as _contrib_headline, with MAS core in place of all items."""
+    """Contributions of food, services, retail & other goods and electricity & gas to MAS core y/y, Jan 2015 on,
+    at MAS's published weights (estimated split for the 2014 basket, see CORE_WEIGHTS); same method as _contrib_headline, with MAS core in place of all items."""
     A = mas["1"]
     P = {"food": idx["1.0"], "services": mas["2"], "retail_goods": mas["3"], "elec_gas": mas["4"]}
-    segs = [("2019", "2019-01-01", "2023-12-01", "2018-12-01"), ("2024", "2024-01-01", max(A), "2023-12-01")]
+    # the services, retail & other goods and electricity & gas indices start in Jan 2014, so the 2014 basket is
+    # anchored there rather than at Dec 2013
+    segs = [("2014", "2014-01-01", "2018-12-01", "2014-01-01"),
+            ("2019", "2019-01-01", "2023-12-01", "2018-12-01"), ("2024", "2024-01-01", max(A), "2023-12-01")]
     W = {b: {k: v / sum(w.values()) for k, v in w.items()} for b, w in CORE_WEIGHTS.items()}
     seg_of = lambda d: next((x for x in segs if x[1] <= d <= x[2]), None)  # noqa: E731
 
@@ -199,7 +208,7 @@ def _contrib_core(idx, mas, errors):
     for t in sorted(A):
         s = _shift(t, -12)
         St, Ss = seg_of(t), seg_of(s)
-        if not St or not Ss:
+        if t < "2015-01-01" or not St or not Ss:
             continue
         if St is Ss:
             C = {k: part(St, k, s, t) for k in P}

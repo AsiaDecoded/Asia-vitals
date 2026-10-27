@@ -30,6 +30,16 @@
  ],
  "core_baskets": [
   {
+   "from": "2014-01-01",
+   "to": "2018-12-01",
+   "published_weights_per_10000": {
+    "food": 2167,
+    "services": 2939,
+    "retail_goods": 1209,
+    "elec_gas": 249
+   }
+  },
+  {
    "from": "2019-01-01",
    "to": "2023-12-01",
    "published_weights_per_10000": {
