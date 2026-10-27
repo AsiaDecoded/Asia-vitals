@@ -557,11 +557,6 @@ dash.calc('cpi_heat', {
         return J.slice(out, 'ppi-cpi');
       },
     });
-    lineChart('cpi-gs-chart', 'cpi-gs', 'cpi-gs-legend', 'national', [
-      { key: 'retail_goods', name: 'Retail and other goods', color: C[0] },
-      { key: 'services', name: 'Services', color: C[1] },
-      { key: 'accommodation', name: 'Accommodation', color: C[1], dash: true },
-    ], 280);
     lineChart('cpi-drivers-chart', 'cpi-drivers', 'cpi-drivers-legend', 'national', [
       { key: 'food_ex_fbss', name: 'Food excl. serving services', color: C[0] },
       { key: 'fbss', name: 'Food and beverage serving services', color: C[5] },
