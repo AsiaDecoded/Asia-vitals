@@ -41,8 +41,8 @@ dash.calc('cpi_latest', {
 dash.calc('cpi_table', {
   title: 'Annualised rates, latest month',
   description: 'For the five seasonally adjusted national series: 1-, 2-, 3- and 6-month changes in the SA index, annualised, and the published 12-month change of the unadjusted series.',
-  inputs: ['cpi_series'],
-  fn: (cpi_series) => {
+  inputs: ['cpi_series', 'jp_cpi_core3'],
+  fn: (cpi_series, jp_cpi_core3) => {
     const SA = [['all', 'All items'], ['core', 'Core 1 (less fresh food)'], ['core_core', 'Core 2 (less fresh food and energy)'], ['goods', 'Goods'], ['services', 'Services']];
     const nat = cpi_series.filter((r) => r.area === 'national' && r.series === 'all_sa' && r.index != null)
       .reduce((m, r) => (r.date > m ? r.date : m), '');
@@ -52,11 +52,16 @@ dash.calc('cpi_table', {
       const a = at(series, nat), b = at(series, back(nat, k));
       return a && b && a.index != null && b.index ? Math.round((Math.pow(a.index / b.index, 12 / k) - 1) * 1000) / 10 : null;
     };
-    return SA.map(([k, label]) => {
+    const rows = SA.map(([k, label]) => {
       const y = at(k, nat);
       return { label, series: k, date: nat, ann1: ann(k + '_sa', 1), ann2: ann(k + '_sa', 2), ann3: ann(k + '_sa', 3),
         ann6: ann(k + '_sa', 6), yoy12: y ? y.yoy : null };
     });
+    // Core 3: Asia Decoded calculation, no seasonally adjusted index, so 12-month only
+    const k3 = jp_cpi_core3.find((r) => r.date === nat);
+    rows.splice(3, 0, { label: 'Core 3 (less food and energy)', series: 'core3', date: nat, ann1: null, ann2: null, ann3: null, ann6: null,
+      yoy12: k3 && k3.yoy !== '' ? Math.round(Number(k3.yoy) * 10) / 10 : null });
+    return rows;
   },
 });
 
@@ -153,7 +158,7 @@ dash.calc('ppi_latest', {
       by.get(r.date)[r.series] = r[meas];
     });
     const out = Array.from(by.values()).sort((a, b) => (a.date < b.date ? -1 : 1));
-    return M(id) ? out.slice(-M(id)) : out;
+    return J.slice(out, id);
   }
 
   function legend(id, series) {
@@ -223,7 +228,7 @@ dash.calc('ppi_latest', {
       if (r.series === 'all_sa') put(r.date, 'mom', r.mom);
     });
     let rows = Array.from(by.values()).sort((a, b) => (a.date < b.date ? -1 : 1));
-    if (M('cpi-ym')) rows = rows.slice(-M('cpi-ym'));
+    rows = J.slice(rows, 'cpi-ym');
     if (!rows.length) { box.replaceChildren(); return; }
     const series = [
       { key: 'yoy', name: 'y/y', color: J.PAL[0] },
@@ -295,7 +300,7 @@ dash.calc('ppi_latest', {
       by.get(r.date)[r.series] = v;
     });
     let rows = Array.from(by.values()).filter((r) => r.all != null).sort((a, b) => (a.date < b.date ? -1 : 1));
-    if (M('cpi-contrib')) rows = rows.slice(-M('cpi-contrib'));
+    rows = J.slice(rows, 'cpi-contrib');
     if (!rows.length) { box.replaceChildren(); return; }
     const keys = PARTS.map((p) => p.key);
     const W = box.clientWidth, H = 280;
@@ -485,11 +490,31 @@ dash.calc('ppi_latest', {
   const C = J.PAL;
   J.redrawCpi = () => {
     if (!visible()) return;
-    lineChart('cpi-measures-chart', 'cpi-measures', 'cpi-measures-legend', S.measures, [
-      { key: 'all', name: 'CPI', color: C[1] },
-      { key: 'core', name: 'Less fresh food', color: C[5] },
-      { key: 'core_core', name: 'Less fresh food and energy', color: C[4] },
-    ], 280);
+    {
+      const ms = [
+        { key: 'all', name: 'CPI', color: C[1] },
+        { key: 'core', name: 'Less fresh food', color: C[5] },
+        { key: 'core_core', name: 'Less fresh food and energy', color: C[4] },
+      ];
+      if (S.measures === 'national') {
+        // Core 3 (national only): Asia Decoded calculation
+        lineChart('cpi-measures-chart', 'cpi-measures', 'cpi-measures-legend', 'national', ms.concat([{ key: 'core3', name: 'Less food and energy', color: C[0] }]), 280, {
+          ids: ['cpi_series', 'jp_cpi_core3'],
+          rows: (cpi, k3) => {
+            const by = new Map();
+            cpi.forEach((r) => {
+              if (r.area !== 'national' || !['all', 'core', 'core_core'].includes(r.series) || r.yoy == null) return;
+              if (!by.has(r.date)) by.set(r.date, { date: r.date });
+              by.get(r.date)[r.series] = r.yoy;
+            });
+            k3.forEach((r) => { if (r.yoy !== '' && by.has(r.date)) by.get(r.date).core3 = Math.round(Number(r.yoy) * 10) / 10; });
+            return J.slice(Array.from(by.values()).sort((a, b) => (a.date < b.date ? -1 : 1)), 'cpi-measures');
+          },
+        });
+      } else {
+        lineChart('cpi-measures-chart', 'cpi-measures', 'cpi-measures-legend', S.measures, ms, 280);
+      }
+    }
     lineChart('ppi-cpi-chart', 'ppi-cpi', 'ppi-cpi-legend', 'national', [
       { key: 'ppi', name: 'Producer prices (PPI)', color: C[0] },
       { key: 'cpi', name: 'Consumer prices (CPI)', color: C[1] },
@@ -501,7 +526,7 @@ dash.calc('ppi_latest', {
         cpi.forEach((r) => { if (r.area === 'national' && r.series === 'all') put(r.date, 'cpi', r.yoy); });
         ppi.forEach((r) => { if (r.series === 'ppi') put(r.date, 'ppi', r.yoy); });
         const out = Array.from(by.values()).sort((a, b) => (a.date < b.date ? -1 : 1));
-        return M('ppi-cpi') ? out.slice(-M('ppi-cpi')) : out;
+        return J.slice(out, 'ppi-cpi');
       },
     });
     lineChart('cpi-gs-chart', 'cpi-gs', 'cpi-gs-legend', S.gs, [
@@ -524,7 +549,7 @@ dash.calc('ppi_latest', {
       rows: (d) => {
         const out = d.map((r) => ({ date: r.date, diffusion: Number(r.diffusion), share_rising: Number(r.share_rising), share_falling: Number(r.share_falling) }))
           .sort((a, b) => (a.date < b.date ? -1 : 1));
-        return M('cpi-diffusion') ? out.slice(-M('cpi-diffusion')) : out;
+        return J.slice(out, 'cpi-diffusion');
       },
     });
     ymChart();
@@ -546,7 +571,7 @@ dash.calc('ppi_latest', {
           by.get(r.date)[r.series] = r.yoy;
         });
         const out = Array.from(by.values()).sort((a, b) => (a.date < b.date ? -1 : 1));
-        return M('trade-prices') ? out.slice(-M('trade-prices')) : out;
+        return J.slice(out, 'trade-prices');
       },
     });
   };

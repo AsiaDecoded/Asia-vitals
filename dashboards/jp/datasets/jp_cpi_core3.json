@@ -1,0 +1,15 @@
+{
+ "description": "Asia Decoded calculation: Japan national CPI less food (excl. alcohol) and energy, plus eating out, to match India's core definition. Combines the Statistics Bureau's published 'less food and energy' and 'eating out' series with their published weights, base by base, from January 2016.",
+ "schedule": "Daily copy from the asia-vitals GitHub repository, which checks e-Stat twice a day",
+ "source": {
+  "kind": "file",
+  "name": "jp_cpi_core3_K2026-09.csv",
+  "url": "/_blob/d97b3020bee50c7458c6523bcbb2871e"
+ },
+ "staleAfterHours": 1080,
+ "title": "CPI Core 3 (less food and energy)",
+ "updated": {
+  "at": "2026-10-27T07:30:00Z",
+  "by": "Claude"
+ }
+}

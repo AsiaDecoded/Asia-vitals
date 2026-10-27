@@ -86,6 +86,17 @@
 .ad-method ul { margin: var(--cds-gap-xs) 0; padding-left: 1.2rem; }
 .ad-method li { margin: 2px 0; }
 .ad-method .ad-foot { margin-top: var(--cds-gap-lg); }
+#methodology { gap: var(--cds-gap-lg); }
+.ad-slider { position: relative; height: 22px; margin: 2px 8px 0; }
+.ad-slider-track { position: absolute; left: 0; right: 0; top: 9px; height: 4px; border-radius: 2px; background: var(--color-border-line); }
+.ad-slider-sel { position: absolute; top: 0; bottom: 0; background: var(--ad-c1); border-radius: 2px; opacity: 0.6; }
+.ad-slider input[type=range] { position: absolute; left: -8px; right: -8px; width: calc(100% + 16px); top: 0; height: 22px; margin: 0; background: none; pointer-events: none; -webkit-appearance: none; appearance: none; }
+.ad-slider input[type=range]::-webkit-slider-runnable-track { background: none; height: 22px; }
+.ad-slider input[type=range]::-moz-range-track { background: none; }
+.ad-slider input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; pointer-events: auto; width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: var(--color-bg); border: 2px solid var(--ad-c1); cursor: ew-resize; }
+.ad-slider input[type=range]::-moz-range-thumb { pointer-events: auto; width: 12px; height: 12px; border-radius: 50%; background: var(--color-bg); border: 2px solid var(--ad-c1); cursor: ew-resize; }
+.ad-slider input[type=range]:focus-visible::-webkit-slider-thumb { outline: 2px solid var(--ad-c1); outline-offset: 2px; }
+.ad-slider-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-align: right; margin: 0 8px 4px; font-variant-numeric: tabular-nums; }
 </style>
 
 <div class="jg">
@@ -369,6 +380,29 @@
   </section>
 
   <section class="jg-page" id="methodology" role="tabpanel" hidden>
+    <article class="jg-card ad-method" id="method-core3">
+      <h2>Core 3 (less food and energy)</h2>
+      <p>Core 3 is an Asia Decoded measure of underlying inflation, built so Japan can be compared with core inflation in India and other economies that keep restaurant meals in their core measure.</p>
+      <h3>Why it is needed</h3>
+      <p>Japan publishes three core-type measures. Core 1 removes fresh food only, and Core 2 removes fresh food and energy. The third, &ldquo;all items less food (excluding alcoholic beverages) and energy&rdquo;, removes all of the Food group. In Japan&rsquo;s CPI, eating out sits inside Food, so that measure drops restaurant meals too. India&rsquo;s core measure (CPI excluding food and beverages and fuel) keeps them, because restaurant meals are a separate category there.</p>
+      <h3>Definition</h3>
+      <ul>
+        <li><b>Excluded:</b> food (including non-alcoholic drinks), electricity, gas, kerosene and gasoline.</li>
+        <li><b>Kept:</b> eating out (including school lunches, which international classifications treat as canteen meals), alcoholic drinks, and everything outside food and energy.</li>
+      </ul>
+      <h3>Calculation</h3>
+      <p>Japan&rsquo;s CPI is a fixed-weight index, so within one base an aggregate equals the weighted average of its parts. Core 3 is the weighted average of two published indices, &ldquo;all items less food (excl. alcoholic beverages) and energy&rdquo; and &ldquo;eating out&rdquo;, using the Statistics Bureau&rsquo;s published weights for each base (from Table 5 of the monthly report). Within a base this is the index the Bureau would publish if it defined the aggregate.</p>
+      <p>The year-on-year rate combines the two parts&rsquo; published year-on-year rates, each weighted by its weight times its index a year earlier (the aggregation rule for a fixed-weight index). Using the published rates, which the Bureau calculates from unrounded indices, avoids the rounding in the one-decimal indices; the result is checked against the change in the combined index.</p>
+      <p>Everything is on the base the Bureau uses for that month&rsquo;s official rates: the 2015 base for 2016 to 2020, the 2020 base for 2021 to 2025 and the 2025 base from 2026. Both months of every comparison are on the same base. Data come from the e-Stat database for each base, national, monthly. As a check, the same calculation applied to the published &ldquo;less food and energy&rdquo; index alone reproduces its published year-on-year rate.</p>
+      <h3>Limits</h3>
+      <ul>
+        <li><b>Not an official series:</b> the Statistics Bureau does not publish this aggregate.</li>
+        <li><b>From 2016:</b> earlier years would need indices from older bases.</li>
+        <li><b>National only:</b> there is no Tokyo version, and no seasonally adjusted series, so it appears only as a 12-month rate in the momentum table.</li>
+        <li><b>Definitions still differ:</b> energy and the edges of food are defined slightly differently in each country&rsquo;s CPI, so the measures are comparable, not identical.</li>
+      </ul>
+      <div class="ad-foot"><span>Source: Asia Decoded calculation from Statistics Bureau of Japan data</span><span class="ad-brand">Asia Decoded</span></div>
+    </article>
     <article class="jg-card ad-method" id="method-diffusion">
       <h2>CPI diffusion index</h2>
       <p>The diffusion index measures how broad-based inflation is: not how fast prices are rising on average, but how many of the things people buy are getting more expensive.</p>
@@ -479,6 +513,47 @@ window.JG = {
   period: {},
   periodOf(id, def) { return id in this.period ? this.period[id] : def; },
   window(rows, id) { const n = this.periodOf(id, 40); return n ? rows.slice(-n) : rows; },
+  // Range slider per chart: the selected share of the chart's full date range, [from, to] in 0..1.
+  range: {},
+  slice(rows, id) {
+    const [lo, hi] = this.range[id] || [0, 1];
+    if (!rows.length) return rows;
+    const n = rows.length - 1, i0 = Math.round(lo * n), i1 = Math.max(i0, Math.round(hi * n));
+    const out = rows.slice(i0, i1 + 1);
+    const card = document.getElementById(id), lbl = card && card.querySelector('.ad-slider-lbl');
+    if (lbl && out.length) {
+      const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      const q = card.closest('.jg-page') && card.closest('.jg-page').id === 'gdp';
+      const f = (d) => (q ? `Q${Math.floor((Number(d.slice(5, 7)) - 1) / 3) + 1} ${d.slice(0, 4)}` : MON[Number(d.slice(5, 7)) - 1] + ' ' + d.slice(0, 4));
+      lbl.textContent = `${f(out[0].date)} to ${f(out[out.length - 1].date)}`;
+    }
+    return out;
+  },
+  addSliders() {
+    document.querySelectorAll('.jg-card').forEach((card) => {
+      const chart = card.querySelector(':scope > .jg-chart'); if (!chart || !card.id) return;
+      const page = card.closest('.jg-page'); const p = page ? page.id : 'gdp';
+      const redraw = () => { if (p === 'gdp') JG.redraw && JG.redraw(); else if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else JG.redrawTrade && JG.redrawTrade(); };
+      const wrap = document.createElement('div'); wrap.className = 'ad-slider';
+      const track = document.createElement('div'); track.className = 'ad-slider-track';
+      const sel = document.createElement('div'); sel.className = 'ad-slider-sel'; track.appendChild(sel);
+      const mk = (v, label) => { const i = document.createElement('input'); i.type = 'range'; i.min = 0; i.max = 1000; i.step = 1; i.value = v; i.setAttribute('aria-label', label); return i; };
+      const a = mk(0, 'Start date'), b = mk(1000, 'End date');
+      const lbl = document.createElement('div'); lbl.className = 'ad-slider-lbl';
+      wrap.append(track, a, b);
+      let raf = 0;
+      const upd = (moved) => {
+        let lo = Number(a.value), hi = Number(b.value);
+        if (hi - lo < 20) { if (moved === a) { lo = hi - 20; a.value = lo; } else { hi = lo + 20; b.value = hi; } }
+        sel.style.left = `${lo / 10}%`; sel.style.right = `${100 - hi / 10}%`;
+        JG.range[card.id] = [lo / 1000, hi / 1000];
+        cancelAnimationFrame(raf); raf = requestAnimationFrame(redraw);
+      };
+      a.addEventListener('input', () => upd(a)); b.addEventListener('input', () => upd(b));
+      chart.after(wrap, lbl);
+      sel.style.left = '0%'; sel.style.right = '0%';
+    });
+  },
   addPeriods() {
     const SETS = { q: [['5Y', 20], ['10Y', 40], ['All', 0]], m: [['3Y', 36], ['10Y', 120], ['All', 0]] };
     document.querySelectorAll('.jg-card').forEach((card) => {
@@ -578,7 +653,7 @@ window.JG = {
 (() => {
   const J = window.JG;
   J.theme();
-  J.addPeriods();
+  J.addSliders();
   dash.onData(() => J.theme());
   // Controls
   const seg = (id, key, attr, parse) => {
@@ -656,7 +731,7 @@ window.JG = {
     if (D.status === 'error' || D.status === 'connect' || D.status === 'declined') { J.fail(box); return; }
     if (D.status !== 'ok') { box.replaceChildren(); return; }
     const b = J.state.basis;
-    const rows = J.window(D.data.filter((r) => r[b + '_qoq_ann'] != null), 'growth');
+    const rows = J.slice(D.data.filter((r) => r[b + '_qoq_ann'] != null), 'growth');
     const W = box.clientWidth, H = 280;
     box.replaceChildren();
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
@@ -707,7 +782,7 @@ window.JG = {
     if (D.status === 'error' || D.status === 'connect' || D.status === 'declined') { J.fail(box); return; }
     if (D.status !== 'ok') { box.replaceChildren(); return; }
     const src = prep ? D.data.map(prep) : D.data;
-    const rows = J.window(src.filter((r) => series.every((s) => r[s.key] != null)), cardId);
+    const rows = J.slice(src.filter((r) => series.every((s) => r[s.key] != null)), cardId);
     const W = box.clientWidth;
     box.replaceChildren();
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
@@ -785,7 +860,7 @@ window.JG = {
       rs.forEach((r) => { if (r.component === 'GDP' || CONTRIB.includes(r.component)) o[r.component] = J.num(r[k]); });
       return o;
     }).filter((o) => o.GDP != null).sort((a, b) => (a.date < b.date ? -1 : 1));
-    rows = J.window(rows, 'contributions');
+    rows = J.slice(rows, 'contributions');
     const W = box.clientWidth, H = 280;
     box.replaceChildren();
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
