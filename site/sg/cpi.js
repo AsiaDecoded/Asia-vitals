@@ -110,13 +110,14 @@ dash.calc('ppi_latest', {
 
 dash.calc('cpi_heat', {
   title: 'CPI inflation by division, y/y',
-  description: 'SingStat published y/y for all items, food and its two parts, the 10 other divisions, all items less imputed rentals, all items less accommodation and MAS core, and the calculated fuel CPI, from Jan 2026.',
-  inputs: ['cpi_series'],
-  fn: (cpi_series) => {
+  description: 'SingStat published y/y, with 2024 basket weights per 10,000, for all items, food and its two parts, the 10 other divisions, all items less imputed rentals, all items less accommodation and MAS core, and the calculated fuel CPI, from Jan 2026.',
+  inputs: ['cpi_series', 'sg_cpi_series_weights'],
+  fn: (cpi_series, sg_cpi_series_weights) => {
+    const W = new Map(sg_cpi_series_weights.map((r) => [r.series, Number(r.weight)]));
     const ROWS = ['all', 'less_imputed', 'less_accom', 'core', 'fuel', 'food', 'food_ex_fbss', 'fbss', 'clothing', 'housing',
       'household', 'health', 'transport', 'info_comm', 'recreation', 'education', 'misc'];
     return cpi_series.filter((r) => ROWS.includes(r.series) && r.date >= '2026-01-01' && r.yoy != null)
-      .map((r) => ({ date: r.date, series: r.series, name: r.label, yoy: r.yoy, order: ROWS.indexOf(r.series) }));
+      .map((r) => ({ date: r.date, series: r.series, name: r.label, yoy: r.yoy, order: ROWS.indexOf(r.series), weight: W.has(r.series) ? W.get(r.series) : null }));
   },
 });
 
@@ -468,14 +469,16 @@ dash.calc('cpi_heat', {
     const NAMES = { all: 'CPI', less_imputed: 'CPI less imputed rentals for housing', less_accom: 'CPI less accommodation', core: 'MAS core*', fuel: 'Energy**' };
     tbl.replaceChildren();
     const head = tbl.createTHead().insertRow();
-    [''].concat(dates.map((d) => `${MON[+d.slice(5, 7) - 1]} ${d.slice(2, 4)}`)).forEach((t) => {
+    ['', 'Weight'].concat(dates.map((d) => `${MON[+d.slice(5, 7) - 1]} ${d.slice(2, 4)}`)).forEach((t) => {
       const th = document.createElement('th'); th.textContent = t; head.appendChild(th);
     });
     const tb = tbl.createTBody();
     keys.forEach((k) => {
-      if (k === 'food') { const sp = tb.insertRow(); sp.className = 'spacer'; sp.insertCell().colSpan = dates.length + 1; }
+      if (k === 'food') { const sp = tb.insertRow(); sp.className = 'spacer'; sp.insertCell().colSpan = dates.length + 2; }
       const tr = tb.insertRow();
       tr.insertCell().textContent = NAMES[k] || D.data.find((r) => r.series === k).name;
+      const wt = D.data.find((r) => r.series === k).weight;
+      const wc = tr.insertCell(); wc.className = 'wt'; wc.textContent = wt == null ? '' : d3.format(',.0f')(wt);
       if (['all', 'less_imputed', 'less_accom', 'core', 'fuel'].includes(k)) tr.className = 'lead';
       if (['food_ex_fbss', 'fbss'].includes(k)) tr.className = 'sub';
       if (k === 'food') tr.className = 'gap';

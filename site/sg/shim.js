@@ -3,7 +3,7 @@
 (() => {
   const SRC = {
     sg_cpi: 'data/sg_cpi.csv', sg_cpi_contrib: 'data/sg_cpi_contrib.csv', sg_cpi_diffusion: 'data/sg_cpi_diffusion.csv',
-    sg_cpi_items: 'data/sg_cpi_items.csv', sg_ppi: 'data/sg_ppi.csv',
+    sg_cpi_items: 'data/sg_cpi_items.csv', sg_ppi: 'data/sg_ppi.csv', sg_cpi_series_weights: 'data/sg_cpi_series_weights.csv',
     cpi_release: 'data/cpi_release.json', ppi_release: 'data/ppi_release.json',
   };
   const store = {}, calcs = {}, subs = [];
