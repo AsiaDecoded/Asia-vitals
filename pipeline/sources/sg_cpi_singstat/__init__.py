@@ -53,6 +53,7 @@ CPI = [
     ("food_ex_fbss", "Food excl. food and beverage serving services", "drivers", "1.01"),
     ("fbss", "Food and beverage serving services", "drivers", "1.11"),
     ("accommodation", "Accommodation", "drivers", "1.03.1"),
+    ("imputed_rentals", "Imputed rentals for housing", "drivers", "1.03.1.2"),
     ("private_transport", "Private transport", "drivers", "1.06.1"),
     ("petrol", "Petrol", "drivers", "1.06.1.5"),
     ("electricity", "Electricity", "drivers", "1.03.2.3"),
