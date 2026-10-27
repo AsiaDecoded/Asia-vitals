@@ -20631,6 +20631,7 @@ date,area,series,label,group,order,index,mom,yoy
 2024-01-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,98.932,-0.5,
 2024-01-01,national,education_sa,"Education, seasonally adjusted",sa,38,99.648,1.7,
 2024-01-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,99.831,1.0,
+2024-01-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,98.808,,
 2024-02-01,national,all,All items,headline,0,99.755,1.0,3.6
 2024-02-01,national,less_accom,All items less accommodation,headline,1,99.687,0.3,3.5
 2024-02-01,national,less_imputed,All items less imputed rentals for housing,headline,2,99.873,1.2,3.5
@@ -20671,6 +20672,7 @@ date,area,series,label,group,order,index,mom,yoy
 2024-02-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,99.624,0.7,
 2024-02-01,national,education_sa,"Education, seasonally adjusted",sa,38,99.565,-0.1,
 2024-02-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,100.296,0.5,
+2024-02-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,100.009,1.2,
 2024-03-01,national,all,All items,headline,0,99.712,0.0,3.0
 2024-03-01,national,less_accom,All items less accommodation,headline,1,99.566,-0.1,2.8
 2024-03-01,national,less_imputed,All items less imputed rentals for housing,headline,2,99.766,-0.1,2.9
@@ -20711,6 +20713,7 @@ date,area,series,label,group,order,index,mom,yoy
 2024-03-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,99.612,0.0,
 2024-03-01,national,education_sa,"Education, seasonally adjusted",sa,38,99.69,0.1,
 2024-03-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,99.911,-0.4,
+2024-03-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,99.994,-0.0,
 2024-04-01,national,all,All items,headline,0,99.426,-0.3,2.6
 2024-04-01,national,less_accom,All items less accommodation,headline,1,99.996,0.4,2.5
 2024-04-01,national,less_imputed,All items less imputed rentals for housing,headline,2,99.347,-0.4,2.4
@@ -20751,6 +20754,7 @@ date,area,series,label,group,order,index,mom,yoy
 2024-04-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,99.997,0.4,
 2024-04-01,national,education_sa,"Education, seasonally adjusted",sa,38,99.824,0.1,
 2024-04-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,100.042,0.1,
+2024-04-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,101.288,1.3,
 2024-05-01,national,all,All items,headline,0,100.209,0.8,3.1
 2024-05-01,national,less_accom,All items less accommodation,headline,1,100.133,0.1,3.0
 2024-05-01,national,less_imputed,All items less imputed rentals for housing,headline,2,100.307,1.0,3.1
@@ -20791,6 +20795,7 @@ date,area,series,label,group,order,index,mom,yoy
 2024-05-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,100.531,0.5,
 2024-05-01,national,education_sa,"Education, seasonally adjusted",sa,38,99.907,0.1,
 2024-05-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,99.979,-0.1,
+2024-05-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,100.896,-0.4,
 2024-06-01,national,all,All items,headline,0,100.104,-0.1,2.5
 2024-06-01,national,less_accom,All items less accommodation,headline,1,99.946,-0.2,2.3
 2024-06-01,national,less_imputed,All items less imputed rentals for housing,headline,2,100.137,-0.2,2.4
@@ -20831,6 +20836,7 @@ date,area,series,label,group,order,index,mom,yoy
 2024-06-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,100.889,0.4,
 2024-06-01,national,education_sa,"Education, seasonally adjusted",sa,38,100.066,0.2,
 2024-06-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,99.627,-0.4,
+2024-06-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,100.104,-0.8,
 2024-07-01,national,all,All items,headline,0,99.818,-0.3,2.5
 2024-07-01,national,less_accom,All items less accommodation,headline,1,100.008,0.1,2.4
 2024-07-01,national,less_imputed,All items less imputed rentals for housing,headline,2,99.72,-0.4,2.4
@@ -20871,6 +20877,7 @@ date,area,series,label,group,order,index,mom,yoy
 2024-07-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,100.031,-0.9,
 2024-07-01,national,education_sa,"Education, seasonally adjusted",sa,38,100.103,0.0,
 2024-07-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,100.02,0.4,
+2024-07-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,100.985,0.9,
 2024-08-01,national,all,All items,headline,0,100.414,0.6,2.2
 2024-08-01,national,less_accom,All items less accommodation,headline,1,100.145,0.1,1.9
 2024-08-01,national,less_imputed,All items less imputed rentals for housing,headline,2,100.449,0.7,2.1
@@ -20911,6 +20918,7 @@ date,area,series,label,group,order,index,mom,yoy
 2024-08-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,101.09,1.1,
 2024-08-01,national,education_sa,"Education, seasonally adjusted",sa,38,100.18,0.1,
 2024-08-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,100.39,0.4,
+2024-08-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,99.512,-1.5,
 2024-09-01,national,all,All items,headline,0,100.645,0.2,1.9
 2024-09-01,national,less_accom,All items less accommodation,headline,1,100.437,0.3,1.6
 2024-09-01,national,less_imputed,All items less imputed rentals for housing,headline,2,100.721,0.3,1.8
@@ -20951,6 +20959,7 @@ date,area,series,label,group,order,index,mom,yoy
 2024-09-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,101.144,0.1,
 2024-09-01,national,education_sa,"Education, seasonally adjusted",sa,38,100.224,0.0,
 2024-09-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,99.826,-0.6,
+2024-09-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,99.904,0.4,
 2024-10-01,national,all,All items,headline,0,100.119,-0.5,1.2
 2024-10-01,national,less_accom,All items less accommodation,headline,1,100.292,-0.1,0.8
 2024-10-01,national,less_imputed,All items less imputed rentals for housing,headline,2,100.022,-0.7,0.9
@@ -20991,6 +21000,7 @@ date,area,series,label,group,order,index,mom,yoy
 2024-10-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,99.257,-1.9,
 2024-10-01,national,education_sa,"Education, seasonally adjusted",sa,38,100.262,0.0,
 2024-10-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,100.109,0.3,
+2024-10-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,99.781,-0.1,
 2024-11-01,national,all,All items,headline,0,100.387,0.3,1.6
 2024-11-01,national,less_accom,All items less accommodation,headline,1,100.018,-0.3,1.3
 2024-11-01,national,less_imputed,All items less imputed rentals for housing,headline,2,100.343,0.3,1.5
@@ -21031,6 +21041,7 @@ date,area,series,label,group,order,index,mom,yoy
 2024-11-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,99.356,0.1,
 2024-11-01,national,education_sa,"Education, seasonally adjusted",sa,38,100.328,0.1,
 2024-11-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,99.978,-0.1,
+2024-11-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,99.625,-0.2,
 2024-12-01,national,all,All items,headline,0,100.661,0.3,1.5
 2024-12-01,national,less_accom,All items less accommodation,headline,1,100.365,0.3,1.3
 2024-12-01,national,less_imputed,All items less imputed rentals for housing,headline,2,100.674,0.3,1.4
@@ -21071,6 +21082,7 @@ date,area,series,label,group,order,index,mom,yoy
 2024-12-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,99.419,0.1,
 2024-12-01,national,education_sa,"Education, seasonally adjusted",sa,38,100.258,-0.1,
 2024-12-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,99.96,0.0,
+2024-12-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,99.095,-0.5,
 2025-01-01,national,all,All items,headline,0,99.908,-0.7,1.2
 2025-01-01,national,less_accom,All items less accommodation,headline,1,100.426,0.1,1.0
 2025-01-01,national,less_imputed,All items less imputed rentals for housing,headline,2,99.713,-1.0,1.1
@@ -21111,6 +21123,7 @@ date,area,series,label,group,order,index,mom,yoy
 2025-01-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,98.338,-1.1,
 2025-01-01,national,education_sa,"Education, seasonally adjusted",sa,38,99.722,-0.5,
 2025-01-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,99.959,0.0,
+2025-01-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,98.49,-0.6,-0.3
 2025-02-01,national,all,All items,headline,0,100.677,0.8,0.9
 2025-02-01,national,less_accom,All items less accommodation,headline,1,100.373,-0.1,0.7
 2025-02-01,national,less_imputed,All items less imputed rentals for housing,headline,2,100.687,1.0,0.8
@@ -21151,6 +21164,7 @@ date,area,series,label,group,order,index,mom,yoy
 2025-02-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,98.584,0.3,
 2025-02-01,national,education_sa,"Education, seasonally adjusted",sa,38,99.93,0.2,
 2025-02-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,99.82,-0.1,
+2025-02-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,99.039,0.6,-1.0
 2025-03-01,national,all,All items,headline,0,100.599,-0.1,0.9
 2025-03-01,national,less_accom,All items less accommodation,headline,1,100.261,-0.1,0.7
 2025-03-01,national,less_imputed,All items less imputed rentals for housing,headline,2,100.587,-0.1,0.8
@@ -21191,6 +21205,7 @@ date,area,series,label,group,order,index,mom,yoy
 2025-03-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,98.714,0.1,
 2025-03-01,national,education_sa,"Education, seasonally adjusted",sa,38,100.112,0.2,
 2025-03-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,99.543,-0.3,
+2025-03-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,97.216,-1.8,-2.8
 2025-04-01,national,all,All items,headline,0,100.283,-0.3,0.9
 2025-04-01,national,less_accom,All items less accommodation,headline,1,100.774,0.5,0.8
 2025-04-01,national,less_imputed,All items less imputed rentals for housing,headline,2,100.189,-0.4,0.8
@@ -21231,6 +21246,7 @@ date,area,series,label,group,order,index,mom,yoy
 2025-04-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,98.901,0.2,
 2025-04-01,national,education_sa,"Education, seasonally adjusted",sa,38,100.307,0.2,
 2025-04-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,99.715,0.2,
+2025-04-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,97.716,0.5,-3.5
 2025-05-01,national,all,All items,headline,0,100.978,0.7,0.8
 2025-05-01,national,less_accom,All items less accommodation,headline,1,100.78,0.0,0.6
 2025-05-01,national,less_imputed,All items less imputed rentals for housing,headline,2,101.075,0.9,0.8
@@ -21271,6 +21287,7 @@ date,area,series,label,group,order,index,mom,yoy
 2025-05-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,98.561,-0.3,
 2025-05-01,national,education_sa,"Education, seasonally adjusted",sa,38,100.414,0.1,
 2025-05-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,99.568,-0.1,
+2025-05-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,97.174,-0.6,-3.7
 2025-06-01,national,all,All items,headline,0,100.9,-0.1,0.8
 2025-06-01,national,less_accom,All items less accommodation,headline,1,100.676,-0.1,0.7
 2025-06-01,national,less_imputed,All items less imputed rentals for housing,headline,2,100.978,-0.1,0.8
@@ -21311,6 +21328,7 @@ date,area,series,label,group,order,index,mom,yoy
 2025-06-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,98.206,-0.4,
 2025-06-01,national,education_sa,"Education, seasonally adjusted",sa,38,100.562,0.1,
 2025-06-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,99.666,0.1,
+2025-06-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,97.891,0.7,-2.2
 2025-07-01,national,all,All items,headline,0,100.447,-0.4,0.6
 2025-07-01,national,less_accom,All items less accommodation,headline,1,100.672,0.0,0.7
 2025-07-01,national,less_imputed,All items less imputed rentals for housing,headline,2,100.398,-0.6,0.7
@@ -21351,6 +21369,7 @@ date,area,series,label,group,order,index,mom,yoy
 2025-07-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,98.787,0.6,
 2025-07-01,national,education_sa,"Education, seasonally adjusted",sa,38,100.822,0.3,
 2025-07-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,99.584,-0.1,
+2025-07-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,97.118,-0.8,-3.8
 2025-08-01,national,all,All items,headline,0,100.963,0.5,0.5
 2025-08-01,national,less_accom,All items less accommodation,headline,1,100.732,0.1,0.6
 2025-08-01,national,less_imputed,All items less imputed rentals for housing,headline,2,101.055,0.7,0.6
@@ -21391,6 +21410,7 @@ date,area,series,label,group,order,index,mom,yoy
 2025-08-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,98.075,-0.7,
 2025-08-01,national,education_sa,"Education, seasonally adjusted",sa,38,100.996,0.2,
 2025-08-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,99.575,0.0,
+2025-08-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,96.02,-1.1,-3.5
 2025-09-01,national,all,All items,headline,0,101.32,0.4,0.7
 2025-09-01,national,less_accom,All items less accommodation,headline,1,101.216,0.5,0.8
 2025-09-01,national,less_imputed,All items less imputed rentals for housing,headline,2,101.508,0.4,0.8
@@ -21431,6 +21451,7 @@ date,area,series,label,group,order,index,mom,yoy
 2025-09-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,98.91,0.9,
 2025-09-01,national,education_sa,"Education, seasonally adjusted",sa,38,101.204,0.2,
 2025-09-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,99.762,0.2,
+2025-09-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,96.176,0.2,-3.7
 2025-10-01,national,all,All items,headline,0,101.33,0.0,1.2
 2025-10-01,national,less_accom,All items less accommodation,headline,1,101.827,0.6,1.5
 2025-10-01,national,less_imputed,All items less imputed rentals for housing,headline,2,101.516,0.0,1.5
@@ -21471,6 +21492,7 @@ date,area,series,label,group,order,index,mom,yoy
 2025-10-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,100.291,1.4,
 2025-10-01,national,education_sa,"Education, seasonally adjusted",sa,38,101.361,0.2,
 2025-10-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,100.354,0.6,
+2025-10-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,95.878,-0.3,-3.9
 2025-11-01,national,all,All items,headline,0,101.579,0.2,1.2
 2025-11-01,national,less_accom,All items less accommodation,headline,1,101.533,-0.3,1.5
 2025-11-01,national,less_imputed,All items less imputed rentals for housing,headline,2,101.824,0.3,1.5
@@ -21511,6 +21533,7 @@ date,area,series,label,group,order,index,mom,yoy
 2025-11-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,99.871,-0.4,
 2025-11-01,national,education_sa,"Education, seasonally adjusted",sa,38,101.424,0.1,
 2025-11-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,100.095,-0.3,
+2025-11-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,96.515,0.7,-3.1
 2025-12-01,national,all,All items,headline,0,101.854,0.3,1.2
 2025-12-01,national,less_accom,All items less accommodation,headline,1,101.888,0.3,1.5
 2025-12-01,national,less_imputed,All items less imputed rentals for housing,headline,2,102.164,0.3,1.5
@@ -21551,6 +21574,7 @@ date,area,series,label,group,order,index,mom,yoy
 2025-12-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,99.684,-0.2,
 2025-12-01,national,education_sa,"Education, seasonally adjusted",sa,38,101.449,0.0,
 2025-12-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,100.01,-0.1,
+2025-12-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,96.374,-0.1,-2.7
 2026-01-01,national,all,All items,headline,0,101.333,-0.5,1.4
 2026-01-01,national,less_accom,All items less accommodation,headline,1,101.678,-0.2,1.2
 2026-01-01,national,less_imputed,All items less imputed rentals for housing,headline,2,101.498,-0.7,1.8
@@ -21591,6 +21615,7 @@ date,area,series,label,group,order,index,mom,yoy
 2026-01-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,98.971,-0.7,
 2026-01-01,national,education_sa,"Education, seasonally adjusted",sa,38,99.139,-2.3,
 2026-01-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,100.227,0.2,
+2026-01-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,95.383,-1.0,-3.2
 2026-02-01,national,all,All items,headline,0,101.918,0.6,1.2
 2026-02-01,national,less_accom,All items less accommodation,headline,1,101.941,0.3,1.6
 2026-02-01,national,less_imputed,All items less imputed rentals for housing,headline,2,102.236,0.7,1.5
@@ -21631,6 +21656,7 @@ date,area,series,label,group,order,index,mom,yoy
 2026-02-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,100.487,1.5,
 2026-02-01,national,education_sa,"Education, seasonally adjusted",sa,38,99.202,0.1,
 2026-02-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,100.346,0.1,
+2026-02-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,94.913,-0.5,-4.2
 2026-03-01,national,all,All items,headline,0,102.405,0.5,1.8
 2026-03-01,national,less_accom,All items less accommodation,headline,1,102.592,0.6,2.3
 2026-03-01,national,less_imputed,All items less imputed rentals for housing,headline,2,102.848,0.6,2.2
@@ -21671,6 +21697,7 @@ date,area,series,label,group,order,index,mom,yoy
 2026-03-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,100.396,-0.1,
 2026-03-01,national,education_sa,"Education, seasonally adjusted",sa,38,99.347,0.1,
 2026-03-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,101.059,0.7,
+2026-03-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,102.453,7.9,5.4
 2026-04-01,national,all,All items,headline,0,102.052,-0.3,1.8
 2026-04-01,national,less_accom,All items less accommodation,headline,1,103.03,0.4,2.2
 2026-04-01,national,less_imputed,All items less imputed rentals for housing,headline,2,102.387,-0.4,2.2
@@ -21711,6 +21738,7 @@ date,area,series,label,group,order,index,mom,yoy
 2026-04-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,99.791,-0.6,
 2026-04-01,national,education_sa,"Education, seasonally adjusted",sa,38,99.466,0.1,
 2026-04-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,101.459,0.4,
+2026-04-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,105.689,3.2,8.2
 2026-05-01,national,all,All items,headline,0,102.814,0.7,1.8
 2026-05-01,national,less_accom,All items less accommodation,headline,1,103.102,0.1,2.3
 2026-05-01,national,less_imputed,All items less imputed rentals for housing,headline,2,103.339,0.9,2.2
@@ -21751,6 +21779,7 @@ date,area,series,label,group,order,index,mom,yoy
 2026-05-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,99.859,0.1,
 2026-05-01,national,education_sa,"Education, seasonally adjusted",sa,38,99.611,0.1,
 2026-05-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,101.998,0.5,
+2026-05-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,105.338,-0.3,8.4
 2026-06-01,national,all,All items,headline,0,102.858,0.0,1.9
 2026-06-01,national,less_accom,All items less accommodation,headline,1,103.139,0.0,2.4
 2026-06-01,national,less_imputed,All items less imputed rentals for housing,headline,2,103.377,0.0,2.4
@@ -21791,6 +21820,7 @@ date,area,series,label,group,order,index,mom,yoy
 2026-06-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,99.895,0.0,
 2026-06-01,national,education_sa,"Education, seasonally adjusted",sa,38,99.737,0.1,
 2026-06-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,101.699,-0.3,
+2026-06-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,104.739,-0.6,7.0
 2026-07-01,national,all,All items,headline,0,102.696,-0.2,2.2
 2026-07-01,national,less_accom,All items less accommodation,headline,1,103.459,0.3,2.8
 2026-07-01,national,less_imputed,All items less imputed rentals for housing,headline,2,103.136,-0.2,2.7
@@ -21831,6 +21861,7 @@ date,area,series,label,group,order,index,mom,yoy
 2026-07-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,99.877,0.0,
 2026-07-01,national,education_sa,"Education, seasonally adjusted",sa,38,99.959,0.2,
 2026-07-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,101.506,-0.2,
+2026-07-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,108.896,4.0,12.1
 2026-08-01,national,all,All items,headline,0,103.334,0.6,2.3
 2026-08-01,national,less_accom,All items less accommodation,headline,1,103.656,0.2,2.9
 2026-08-01,national,less_imputed,All items less imputed rentals for housing,headline,2,103.922,0.8,2.8
@@ -21871,6 +21902,7 @@ date,area,series,label,group,order,index,mom,yoy
 2026-08-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,99.083,-0.8,
 2026-08-01,national,education_sa,"Education, seasonally adjusted",sa,38,100.24,0.3,
 2026-08-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,102.193,0.7,
+2026-08-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,107.78,-1.0,12.2
 2026-09-01,national,all,All items,headline,0,103.551,0.2,2.2
 2026-09-01,national,less_accom,All items less accommodation,headline,1,103.927,0.3,2.7
 2026-09-01,national,less_imputed,All items less imputed rentals for housing,headline,2,104.18,0.2,2.6
@@ -21911,3 +21943,4 @@ date,area,series,label,group,order,index,mom,yoy
 2026-09-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,37,99.632,0.6,
 2026-09-01,national,education_sa,"Education, seasonally adjusted",sa,38,100.378,0.1,
 2026-09-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,39,102.235,0.0,
+2026-09-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,40,109.075,1.2,13.4

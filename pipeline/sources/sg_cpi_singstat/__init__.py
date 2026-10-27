@@ -11,6 +11,9 @@ Writes data/sg/cpi/:
   sg_cpi_items.csv      every item, latest 12 months: 2024 weight, index, m/m, y/y (published),
                         contribution to all-items y/y (calculated)
   sg_cpi_weights.json   the effective basket weights recovered from the published indices, and fit residuals
+                        Also in sg_cpi.csv (calculated, series "fuel"): fuel CPI = electricity, gas, petrol and other
+                        fuel & lubricants for personal transport, weighted by their 2024 basket weights, Jan 2024 on
+                        (2024 = 100); m/m and y/y from that index
 
 Weights: SingStat publishes no weights table. Within each basket (2014, 2019 and 2024 bases) the published
 all-items index is exactly a fixed linear combination of its components; the coefficients are recovered by
@@ -74,7 +77,9 @@ CONTRIB_PARTS = [("food", "Food"), ("services", "Services"), ("retail_goods", "R
                  ("private_transport", "Private transport")]
 DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.09", "1.10", "1.11"]
 DIFFUSION_START = "2016-01-01"
+FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
+VERSION = 2  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -258,7 +263,7 @@ def update(**_):
     OUT.mkdir(parents=True, exist_ok=True)
     state = read_json(OUT / "release.json", {}) or {}
     metas = {k: singstat.metadata(t) for k, t in T.items()}
-    stamp = json.dumps({k: [m.get("dataLastUpdated"), m.get("endPeriod")] for k, m in metas.items()}, sort_keys=True)
+    stamp = json.dumps({"v": VERSION, **{k: [m.get("dataLastUpdated"), m.get("endPeriod")] for k, m in metas.items()}}, sort_keys=True)
     fingerprint = hashlib.sha256(stamp.encode()).hexdigest()[:16]
     if fingerprint == state.get("fingerprint"):
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {state.get('latest_month')})"}
@@ -272,6 +277,9 @@ def update(**_):
     contrib, seg_weights = _contrib(idx, {k: mas[k] for k in ("1", "2", "3", "4")}, errors)
     item_w, worst = _tree(idx, names, errors)
     diff = _diffusion(S["yoy"][0], names)
+    missing = [no for no in FUEL_ITEMS if no not in item_w]
+    if missing:
+        errors.append(f"fuel CPI: items {missing} have no 2024 weight")
     if diff and diff[-1]["items"] < 120:
         errors.append(f"diffusion: only {diff[-1]['items']} items in {diff[-1]['date']}")
     if errors:
@@ -303,6 +311,20 @@ def update(**_):
             rows.append({"date": d, "area": "national", "series": key + "_sa", "label": lab + ", seasonally adjusted",
                          "group": "sa", "order": order, "index": isa[no][d], "mom": msa.get(no, {}).get(d), "yoy": None})
         order += 1
+    # fuel CPI (calculated) on the 2024 basket
+    fw = {no: item_w[no] for no in FUEL_ITEMS}
+    fuel = {}
+    for d in sorted(idx["1"]):
+        if d < BASKETS[-1][0] or any(d not in idx.get(no, {}) for no in FUEL_ITEMS):
+            continue
+        fuel[d] = sum(w * idx[no][d] for no, w in fw.items()) / sum(fw.values())
+    for d in sorted(fuel):
+        pm, py = fuel.get(_shift(d, -1)), fuel.get(_shift(d, -12))
+        rows.append({"date": d, "area": "national", "series": "fuel",
+                     "label": "Fuel (electricity, gas, petrol, other fuels; calculated)", "group": "drivers", "order": order,
+                     "index": round(fuel[d], 3), "mom": round((fuel[d] / pm - 1) * 100, 1) if pm else None,
+                     "yoy": round((fuel[d] / py - 1) * 100, 1) if py else None})
+    order += 1
     rows.sort(key=lambda r: (r["date"], r["order"]))
     _write_csv(OUT / "sg_cpi.csv", ["date", "area", "series", "label", "group", "order", "index", "mom", "yoy"], rows)
 
