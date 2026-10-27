@@ -478,7 +478,7 @@ dash.calc('cpi_heat', {
       const tr = tb.insertRow();
       tr.insertCell().textContent = NAMES[k] || D.data.find((r) => r.series === k).name;
       const wt = D.data.find((r) => r.series === k).weight;
-      const wc = tr.insertCell(); wc.className = 'wt'; wc.textContent = wt == null ? '' : d3.format(',.0f')(wt);
+      const wc = tr.insertCell(); wc.className = 'wt'; wc.textContent = wt == null ? '' : d3.format('.1f')(wt / 100);
       if (['all', 'less_imputed', 'less_accom', 'core', 'fuel'].includes(k)) tr.className = 'lead';
       if (['food_ex_fbss', 'fbss'].includes(k)) tr.className = 'sub';
       if (k === 'food') tr.className = 'gap';
