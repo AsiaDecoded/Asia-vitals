@@ -282,12 +282,13 @@ dash.calc('cpi_heat', {
   }
 
   // Contributions to the y/y change in all items (calculated from the published indices; see Methodology).
-  function contribChart() {
-    const box = document.getElementById('cpi-contrib-chart');
+  function contribChart(opt) {
+    opt = opt || { id: 'cpi-contrib', pre: '', line: 'CPI, y/y', keys: null };
+    const box = document.getElementById(opt.id + '-chart');
     const D = dash.data('sg_cpi_contrib');
     if (failed(D.status)) { J.fail(box); return; }
     if (D.status !== 'ok') { box.replaceChildren(); return; }
-    const PARTS = [
+    const ALL = [
       { key: 'services', name: 'Services', color: J.PAL[3], bar: true },
       { key: 'retail_goods', name: 'Retail and other goods', color: J.PAL[4], bar: true },
       { key: 'food', name: 'Food', color: J.PAL[5], bar: true },
@@ -295,14 +296,16 @@ dash.calc('cpi_heat', {
       { key: 'accommodation', name: 'Accommodation', color: J.PAL[7], bar: true },
       { key: 'private_transport', name: 'Private transport', color: J.PAL[6], bar: true },
     ];
+    const PARTS = opt.keys ? ALL.filter((p) => opt.keys.includes(p.key)) : ALL;
     const by = new Map();
     D.data.forEach((r) => {
       const v = r.contrib_yoy === '' || r.contrib_yoy == null ? null : Number(r.contrib_yoy);
+      if (opt.pre ? !r.series.startsWith(opt.pre) : r.series.startsWith('core_')) return;
       if (!by.has(r.date)) by.set(r.date, { date: r.date });
-      by.get(r.date)[r.series] = v;
+      by.get(r.date)[r.series.slice(opt.pre.length)] = v;
     });
     let rows = Array.from(by.values()).filter((r) => r.all != null).sort((a, b) => (a.date < b.date ? -1 : 1));
-    rows = J.slice(rows, 'cpi-contrib');
+    rows = J.slice(rows, opt.id);
     if (!rows.length) { box.replaceChildren(); return; }
     const keys = PARTS.map((p) => p.key);
     const W = box.clientWidth, H = 280;
@@ -331,8 +334,8 @@ dash.calc('cpi_heat', {
     const lineColor = J.PAL[1];
     svg.append('path').attr('d', d3.line().x((r) => cx(r.date)).y((r) => y(r.all))(rows))
       .attr('fill', 'none').attr('stroke', lineColor).attr('stroke-width', 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
-    legend('cpi-contrib-legend', [{ key: 'all', name: 'CPI, y/y', color: lineColor }].concat(PARTS.filter((p) => p.key !== 'services'), PARTS.filter((p) => p.key === 'services')));
-    const card = document.getElementById('cpi-contrib'), tip = J.tip(card);
+    legend(opt.id + '-legend', [{ key: 'all', name: opt.line, color: lineColor }].concat(PARTS.filter((p) => p.key !== 'services'), PARTS.filter((p) => p.key === 'services')));
+    const card = document.getElementById(opt.id), tip = J.tip(card);
     const hl = svg.append('rect').attr('fill', 'var(--color-fg)').attr('opacity', 0.06).attr('display', 'none');
     const sg = (v) => (v == null ? '—' : (v > 0 ? '+' : '') + J.f1(v) + 'ppt');
     svg.append('rect').attr('x', ml).attr('width', W - ml - 8).attr('height', H).attr('fill', 'transparent')
@@ -341,7 +344,7 @@ dash.calc('cpi_heat', {
         const r = rows[i];
         hl.attr('display', null).attr('x', x(r.date) - x.step() * x.paddingInner() / 2).attr('width', x.step()).attr('y', 0).attr('height', H - 22);
         const cr = card.getBoundingClientRect();
-        J.showTip(card, tip, mLabel(r.date), [[lineColor, 'CPI, y/y', pct(r.all)]].concat(PARTS.map((p) => [p.color, p.name, sg(r[p.key])])),
+        J.showTip(card, tip, mLabel(r.date), [[lineColor, opt.line, pct(r.all)]].concat(PARTS.map((p) => [p.color, p.name, sg(r[p.key])])),
           ev.clientX - cr.left, ev.clientY - cr.top);
       })
       .on('mouseleave', () => { hl.attr('display', 'none'); tip.style.display = 'none'; });
@@ -580,6 +583,7 @@ dash.calc('cpi_heat', {
     });
     ymChart();
     contribChart();
+    contribChart({ id: 'core-contrib', pre: 'core_', line: 'MAS core, y/y', keys: ['services', 'retail_goods', 'food', 'elec_gas'] });
   };
 
   dash.onData(() => { tiles(); takeaway(); heat(); table(); moversTable(); J.redrawCpi(); });

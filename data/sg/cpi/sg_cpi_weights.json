@@ -40,6 +40,41 @@
    }
   }
  ],
+ "core_baskets": [
+  {
+   "from": "2014-01-01",
+   "to": "2018-12-01",
+   "max_residual": 0.00141,
+   "weights_per_10000": {
+    "food": 3602.2,
+    "services": 4454.8,
+    "retail_goods": 1618.0,
+    "elec_gas": 332.6
+   }
+  },
+  {
+   "from": "2019-01-01",
+   "to": "2023-12-01",
+   "max_residual": 0.00189,
+   "weights_per_10000": {
+    "food": 3391.3,
+    "services": 4769.9,
+    "retail_goods": 1530.3,
+    "elec_gas": 308.6
+   }
+  },
+  {
+   "from": "2024-01-01",
+   "to": "2026-09-01",
+   "max_residual": 0.00135,
+   "weights_per_10000": {
+    "food": 3169.2,
+    "services": 4929.3,
+    "retail_goods": 1594.0,
+    "elec_gas": 307.4
+   }
+  }
+ ],
  "items_2024": {
   "1.01.1.1": {
    "name": "Rice",

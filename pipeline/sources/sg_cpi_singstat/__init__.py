@@ -6,7 +6,8 @@ Writes data/sg/cpi/:
                         publishes them (no SA series exists for MAS core or its services, retail and
                         electricity & gas components, so none is made here)
   sg_cpi_contrib.csv    contributions (pp) of food, services, retail & other goods, electricity & gas,
-                        accommodation and private transport to all-items y/y, Jan 2015 on (calculated)
+                        accommodation and private transport to all-items y/y, Jan 2015 on (calculated);
+                        rows with series "core_*": contributions of the first four to MAS core y/y
   sg_cpi_diffusion.csv  share of items with prices up / down on a year earlier, Jan 2016 on
   sg_cpi_items.csv      every item, latest 12 months: 2024 weight, index, m/m, y/y (published),
                         contribution to all-items y/y (calculated)
@@ -75,11 +76,12 @@ BASKETS = [("2014-01-01", "2018-12-01"), ("2019-01-01", "2023-12-01"), ("2024-01
 CONTRIB_PARTS = [("food", "Food"), ("services", "Services"), ("retail_goods", "Retail and other goods"),
                  ("elec_gas", "Electricity and gas"), ("accommodation", "Accommodation"),
                  ("private_transport", "Private transport")]
+CORE_PARTS = CONTRIB_PARTS[:4]  # food, services, retail & other goods, electricity & gas
 DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.09", "1.10", "1.11"]
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 2  # bump when the outputs change, so the next run rebuilds them
+VERSION = 3  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -115,13 +117,16 @@ def _lstsq(parent, kids, months):
     return c, float(np.abs(X @ c - y).max())
 
 
-def _contrib(idx, mas, errors):
-    """Contributions to all-items y/y. Parts partition all items: MAS core (food, services, retail & other
-    goods, electricity & gas) + accommodation + private transport."""
+def _contrib(idx, mas, errors, core=False):
+    """Contributions to y/y. All items (core=False): parts are MAS core (food, services, retail & other goods,
+    electricity & gas) + accommodation + private transport. MAS core (core=True): its four parts.
+    Core rows carry series names prefixed "core_"."""
     parts = {"food": idx["1.0"], "services": mas["2"], "retail_goods": mas["3"], "elec_gas": mas["4"],
              "accommodation": idx["1.03.1"], "private_transport": idx["1.06.1"]}
-    keys = [k for k, _ in CONTRIB_PARTS]
-    A = idx["1"]
+    spec = CORE_PARTS if core else CONTRIB_PARTS
+    keys = [k for k, _ in spec]
+    A = mas["1"] if core else idx["1"]
+    pre = "core_" if core else ""
     latest = max(A)
     segs = []
     for a, b in BASKETS:
@@ -129,7 +134,7 @@ def _contrib(idx, mas, errors):
         months = sorted(d for d in A if a <= d <= b and all(d in parts[k] for k in keys))
         c, res = _lstsq(A, [parts[k] for k in keys], months)
         if res > TOL or (c < 0).any():
-            errors.append(f"contributions: basket from {a} not reproduced (max residual {res:.4f}, coefs {np.round(c, 4).tolist()})")
+            errors.append(f"{pre}contributions: basket from {a} not reproduced (max residual {res:.4f}, coefs {np.round(c, 4).tolist()})")
         segs.append((a, b, dict(zip(keys, c)), res))
     seg_of = lambda d: next((s for s in segs if s[0] <= d <= s[1]), None)  # noqa: E731
     rows, out = [], []
@@ -154,12 +159,12 @@ def _contrib(idx, mas, errors):
                 C[k] = (old[k] * (I[k][L] - I[k][s]) + b + new[k] * (I[k][t] - I[k][J])) / A[s] * 100
         tot = (A[t] / A[s] - 1) * 100
         if abs(sum(C.values()) - tot) > 0.01:  # indices are published to 3 decimals
-            errors.append(f"contributions {t}: parts sum {sum(C.values()):.4f}, all items {tot:.4f}")
+            errors.append(f"{pre}contributions {t}: parts sum {sum(C.values()):.4f}, all items {tot:.4f}")
         out.append((t, round(tot, 2), {k: round(v, 2) for k, v in C.items()}))
     for t, tot, C in out:
-        rows.append({"date": t, "series": "all", "label": "All items", "order": 0, "contrib_yoy": tot})
-        for i, (k, lab) in enumerate(CONTRIB_PARTS, 1):
-            rows.append({"date": t, "series": k, "label": lab, "order": i, "contrib_yoy": C[k]})
+        rows.append({"date": t, "series": pre + "all", "label": "MAS core" if core else "All items", "order": 10 if core else 0, "contrib_yoy": tot})
+        for i, (k, lab) in enumerate(spec, 1):
+            rows.append({"date": t, "series": pre + k, "label": lab, "order": (10 if core else 0) + i, "contrib_yoy": C[k]})
     weights = [{"from": a, "to": b, "max_residual": round(res, 5), "weights_per_10000": {k: round(v * 1e4, 1) for k, v in c.items()}}
                for a, b, c, res in segs]
     return rows, weights
@@ -275,6 +280,8 @@ def update(**_):
     idx, names = S["index"][0], S["index"][1]
     mas = S["mas"][0]
     contrib, seg_weights = _contrib(idx, {k: mas[k] for k in ("1", "2", "3", "4")}, errors)
+    core_contrib, core_weights = _contrib(idx, {k: mas[k] for k in ("1", "2", "3", "4")}, errors, core=True)
+    contrib = sorted(contrib + core_contrib, key=lambda r: (r["date"], r["order"]))
     item_w, worst = _tree(idx, names, errors)
     diff = _diffusion(S["yoy"][0], names)
     missing = [no for no in FUEL_ITEMS if no not in item_w]
@@ -345,7 +352,7 @@ def update(**_):
                           "contrib_yoy": None if c is None else round(c, 3)})
     _write_csv(OUT / "sg_cpi_items.csv", ["date", "code", "name", "weight", "index", "mom", "yoy", "contrib_yoy"], items)
     (OUT / "sg_cpi_weights.json").write_text(json.dumps(
-        {"baskets": seg_weights, "items_2024": {no: {"name": names[no], "weight_per_10000": round(w * 1e4, 2)} for no, w in sorted(item_w.items())},
+        {"baskets": seg_weights, "core_baskets": core_weights, "items_2024": {no: {"name": names[no], "weight_per_10000": round(w * 1e4, 2)} for no, w in sorted(item_w.items())},
          "item_tree_max_residual": round(worst, 5)}, ensure_ascii=False, indent=1) + "\n")
 
     def long_rows():
