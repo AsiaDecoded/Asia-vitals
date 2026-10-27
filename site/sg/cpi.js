@@ -114,9 +114,9 @@ dash.calc('cpi_heat', {
   inputs: ['cpi_series', 'sg_cpi_series_weights'],
   fn: (cpi_series, sg_cpi_series_weights) => {
     const W = new Map(sg_cpi_series_weights.map((r) => [r.series, Number(r.weight)]));
-    const ROWS = ['all', 'less_imputed', 'less_accom', 'core', 'food', 'food_ex_fbss', 'fbss',
-      'fuel', 'electricity', 'gas', 'petrol', 'other_fuels', 'clothing', 'housing', 'accommodation',
-      'household', 'health', 'transport', 'private_transport', 'info_comm', 'recreation', 'education', 'misc'];
+    const ROWS = ['all', 'less_imputed', 'less_accom', 'accommodation', 'private_transport', 'core', 'food', 'food_ex_fbss', 'fbss',
+      'fuel', 'electricity', 'gas', 'petrol', 'other_fuels', 'clothing', 'housing',
+      'household', 'health', 'transport', 'info_comm', 'recreation', 'education', 'misc'];
     return cpi_series.filter((r) => ROWS.includes(r.series) && r.date >= '2026-01-01' && r.yoy != null)
       .map((r) => ({ date: r.date, series: r.series, name: r.label, yoy: r.yoy, order: ROWS.indexOf(r.series), weight: W.has(r.series) ? W.get(r.series) : null }));
   },
