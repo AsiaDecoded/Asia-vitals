@@ -295,8 +295,8 @@ dash.calc('cpi_heat', {
       { key: 'services', name: 'Services', color: J.PAL[3], bar: true },
       { key: 'retail_goods', name: 'Retail and other goods', color: J.PAL[4], bar: true },
       { key: 'food', name: 'Food', color: J.PAL[5], bar: true },
-      { key: 'food_ex_fbss', name: 'Food excl. serving services', color: J.PAL[5], bar: true },
-      { key: 'fbss', name: 'Food serving services', color: J.PAL[6], bar: true },
+      { key: 'food_ex_fbss', name: 'Food excl. FBSS', color: J.PAL[5], bar: true },
+      { key: 'fbss', name: 'FBSS', color: J.PAL[6], bar: true },
       { key: 'elec_gas', name: 'Electricity and gas', color: J.PAL[0], bar: true },
       { key: 'accommodation', name: 'Accommodation', color: J.PAL[4], bar: true },
       { key: 'private_transport', name: 'Private transport', color: J.PAL[5], bar: true },
@@ -632,8 +632,8 @@ dash.calc('cpi_heat', {
       },
     });
     lineChart('cpi-drivers-chart', 'cpi-drivers', 'cpi-drivers-legend', 'national', [
-      { key: 'food_ex_fbss', name: 'Food excl. serving services', color: C[0] },
-      { key: 'fbss', name: 'Food and beverage serving services', color: C[5] },
+      { key: 'food_ex_fbss', name: 'Food excl. FBSS', color: C[0] },
+      { key: 'fbss', name: 'FBSS', color: C[5] },
       { key: 'elec_gas', name: 'Electricity and gas', color: C[1] },
       { key: 'petrol', name: 'Petrol', color: C[3] },
     ], 280);
