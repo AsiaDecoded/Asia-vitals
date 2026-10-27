@@ -12,7 +12,7 @@
   "kr_ppi": "Bank of Korea: no calendar found; pattern: around the 18th-23rd, 06:00 KST"
  },
  "groups": {
-  "jp_cpi": {"label": "Japan CPI (national) and CPI contributions", "sources": ["jp_cpi_estat", "jp_cpi_contrib_estat"], "time_sgt": "07:30", "dates": [
+  "jp_cpi": {"label": "Japan CPI (national) and CPI contributions", "sources": ["jp_cpi_estat", "jp_cpi_contrib_estat", "jp_cpi_core3_estat"], "time_sgt": "07:30", "dates": [
    {"ref": "2026-10", "date": "2026-11-20", "status": "official"},
    {"ref": "2026-11", "date": "2026-12-18", "status": "official"},
    {"ref": "2026-12", "date": "2027-01-22", "status": "official"},
