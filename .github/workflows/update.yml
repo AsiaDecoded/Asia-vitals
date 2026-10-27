@@ -1,7 +1,8 @@
 name: Update data
 
-# Checks every source twice a day (00:15 and 03:15 UTC = 08:15 and 11:15 Singapore).
-# Japanese releases come out at 08:30-08:50 JST (23:30-23:50 UTC the day before).
+# Wakes twice a day (00:15 and 03:15 UTC = 08:15 and 11:15 Singapore) but runs only the sources
+# due that day under pipeline/release_calendar.json (release date to the end of its catch-up window);
+# on other days it fetches nothing. A manual run with a sources list (or blank = all) ignores the calendar.
 # Each source writes only when it has something new that passes its checks.
 on:
   schedule:
@@ -36,13 +37,37 @@ jobs:
       - name: Install Excel readers and numpy
         run: pip install --quiet openpyxl==3.1.5 xlrd==2.0.1 numpy==2.2.6
 
+      - name: Sources due today (release calendar)
+        id: due
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            s="${{ inputs.sources }}"; [ -n "$s" ] || s="all"
+          else
+            s=$(python -I pipeline/tools/due.py sources)
+          fi
+          echo "sources=$s" >> "$GITHUB_OUTPUT"
+          echo "Due: ${s:-nothing}"
+          if [ -z "$s" ]; then
+            { echo "run at $(date -u +%Y-%m-%dT%H:%M:%SZ) UTC; no sources due today under the release calendar"
+              echo "next release day and what it brings:"
+              python -I pipeline/tools/due.py next-refresh
+              python -I pipeline/tools/due.py warnings
+              echo "result: updated=- failed=-"; } > run_report.txt
+          fi
+
       - name: Fetch, check and rebuild
         id: run
+        if: steps.due.outputs.sources != ''
         continue-on-error: true
         env:
           ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
           ECOS_KEY: ${{ secrets.ECOS_KEY }}
-        run: python -I pipeline/run.py ${{ inputs.sources }}
+        run: |
+          s="${{ steps.due.outputs.sources }}"; [ "$s" = "all" ] && s=""
+          rc=0; python -I pipeline/run.py $s || rc=$?
+          python -I pipeline/tools/due.py warnings | sed 's/^/   WARNING: /' > /tmp/w.txt
+          if [ -s /tmp/w.txt ]; then sed -i '$e cat /tmp/w.txt' run_report.txt; fi
+          exit $rc
 
       - name: Commit what passed
         if: steps.run.outputs.updated == 'true'

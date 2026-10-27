@@ -4,9 +4,9 @@ Data pipeline for Asia Decoded's macro dashboards: GDP, inflation and trade for 
 
 ## How it updates
 
-1. **GitHub Actions** (`.github/workflows/update.yml`) runs every source twice a day (00:15 and 03:15 UTC). Each source fetches its data, runs its checks and writes only if there is something new that passes. A failing source writes nothing and doesn't block the others.
-2. After every run, `run_report.txt` (what each source did, and why any failed) is pushed to the **run-reports** branch.
-3. **A scheduled task in Claude** copies new data into the Claude dashboards and reports failures.
+1. **GitHub Actions** (`.github/workflows/update.yml`) wakes at 08:15 and 11:15 Singapore time but runs a source only on its release days: from the date in `pipeline/release_calendar.json` to the end of a short catch-up window (`pipeline/tools/due.py sources`). On other days it fetches nothing. Each source fetches its data, runs its checks and writes only if there is something new that passes. A failing source writes nothing and doesn't block the others. A manual run with a list of sources (blank = all) ignores the calendar.
+2. After every run, `run_report.txt` (what each source did and why any failed, or that nothing was due and the next release day) is pushed to the **run-reports** branch. From 45 days before a group's last calendar date it carries an ACTION warning to add the next dates.
+3. **A scheduled task in Claude** copies new data into the Claude dashboards and reports failures. It runs only on refresh days (`pipeline/tools/due.py next-refresh`): the release day for morning releases (Japan, Korea), the day after for releases that reach the repo after 11:15 Singapore time (India, Singapore). Each run first schedules the next one.
 
 ## Sources
 
@@ -32,6 +32,7 @@ The e-Stat API needs the repository secret `ESTAT_APP_ID`. ECOS uses the secret 
 | Path | Contents |
 |---|---|
 | `pipeline/run.py` | Runs all sources (or those named), writes the run report and `data/all_long.csv` |
+| `pipeline/release_calendar.json`, `pipeline/tools/due.py` | Release dates per source (official calendars, or the agency's usual pattern where none is published); which sources are due on a day, and the next dashboard refresh day |
 | `pipeline/sources/` | One module per source; registry in `sources/__init__.py` |
 | `pipeline/core/` | Shared: long format, release files, e-Stat and BoJ clients |
 | `pipeline/tools/estat_discover.py` | Lists e-Stat tables and their codes (manual workflow `estat-discover.yml`) |
