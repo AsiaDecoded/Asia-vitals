@@ -85,7 +85,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 5  # bump when the outputs change, so the next run rebuilds them
+VERSION = 6  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -336,18 +336,35 @@ def update(**_):
                      "index": round(fuel[d], 3), "mom": round((fuel[d] / pm - 1) * 100, 1) if pm else None,
                      "yoy": round((fuel[d] / py - 1) * 100, 1) if py else None})
     order += 1
+    # CPI excluding food (other than food and beverage serving services) and energy, calculated on the 2024 basket:
+    # all items less the weighted groceries and energy indices, rescaled. Broadly comparable to Japan's core-core
+    # and India's core (both keep eating out, exclude food bought for the home and energy).
+    wg = node_w["1.01"]
+    ex = {}
+    for d in sorted(fuel):
+        if d not in idx["1.01"]:
+            continue
+        ex[d] = (idx["1"][d] - wg * idx["1.01"][d] - sum(w * idx[no][d] for no, w in fw.items())) / (1 - wg - sum(fw.values()))
+    for d in sorted(ex):
+        pm, py = ex.get(_shift(d, -1)), ex.get(_shift(d, -12))
+        rows.append({"date": d, "area": "national", "series": "ex_food_energy",
+                     "label": "CPI less food (excl. serving services) and energy (calculated)", "group": "headline", "order": order,
+                     "index": round(ex[d], 3), "mom": round((ex[d] / pm - 1) * 100, 1) if pm else None,
+                     "yoy": round((ex[d] / py - 1) * 100, 1) if py else None})
+    order += 1
     rows.sort(key=lambda r: (r["date"], r["order"]))
     _write_csv(OUT / "sg_cpi.csv", ["date", "area", "series", "label", "group", "order", "index", "mom", "yoy"], rows)
 
     # 2024 basket weights (per 10,000) of the headline series, divisions and calculated measures
     W = {"all": 1.0, "less_imputed": 1 - node_w["1.03.1.2"], "less_accom": 1 - node_w["1.03.1"],
          "core": 1 - node_w["1.03.1"] - node_w["1.06.1"], "fuel": sum(item_w[no] for no in FUEL_ITEMS),
-         "food": node_w["1.01"] + node_w["1.11"]}
+         "food": node_w["1.01"] + node_w["1.11"],
+         "ex_food_energy": 1 - node_w["1.01"] - sum(item_w[no] for no in FUEL_ITEMS)}
     for key, lab, grp, no in CPI:
         if key not in W and no in node_w:
             W[key] = node_w[no]
     labels = {k: lab for k, lab, *_r in CPI}
-    labels.update({"core": "MAS core inflation measure", "fuel": "Energy (calculated)"})
+    labels.update({"core": "MAS core inflation measure", "fuel": "Energy (calculated)", "ex_food_energy": "CPI less food (excl. serving services) and energy (calculated)"})
     _write_csv(OUT / "sg_cpi_series_weights.csv", ["series", "label", "weight"],
                [{"series": k, "label": labels.get(k, k), "weight": round(v * 1e4, 1)} for k, v in W.items()])
     _write_csv(OUT / "sg_cpi_contrib.csv", ["date", "series", "label", "order", "contrib_yoy"], contrib)

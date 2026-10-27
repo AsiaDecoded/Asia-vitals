@@ -3,17 +3,17 @@
  "label": "Sep 2026",
  "latest_month": "2026-09-01",
  "table": "SingStat Table Builder M213751, M213752, M213781, M213771, M213792, M213891 (2024 base)",
- "processed_at": "2026-10-27T06:52:21Z",
- "rows": 22227,
+ "processed_at": "2026-10-27T07:04:42Z",
+ "rows": 22260,
  "warnings": [],
- "fingerprint": "491e2a4816d8195b",
- "long_rows": 57653,
+ "fingerprint": "724747fef533d4e1",
+ "long_rows": 57739,
  "contrib_rows": 1692,
  "diffusion_items": 157,
  "history": [
   {
    "code": "C2026-09",
-   "processed_at": "2026-10-27T06:52:21Z"
+   "processed_at": "2026-10-27T07:04:42Z"
   }
  ]
 }
