@@ -8,13 +8,13 @@ Writes data/sg/cpi/:
   sg_cpi_contrib.csv    contributions (pp) of MAS core, accommodation and private transport to all-items y/y at
                         published weights, Jan 2015 on (calculated);
                         rows with series "core_*": contributions of food, services, retail & other goods and
-                        electricity & gas to MAS core y/y (weights recovered from the indices; none published)
+                        electricity & gas to MAS core y/y at MAS's published weights, Jan 2020 on
   sg_cpi_diffusion.csv  share of items with prices up / down on a year earlier, Jan 2016 on
   sg_cpi_items.csv      every item, latest 12 months: published 2024 weight, index, m/m, y/y (published),
                         contribution to all-items y/y (calculated)
   sg_cpi_series_weights.csv  published 2024 basket weight (per 10,000) of all items, CPI less imputed rentals, CPI less
                         accommodation, MAS core, energy (calculated), food, divisions and groups in sg_cpi.csv
-  sg_cpi_weights.json   segment weights recovered from the indices (contributions), published item weights
+  sg_cpi_weights.json   published contribution weights by basket, published item weights
                         beside the index-implied ones, and fit residuals
                         Also in sg_cpi.csv (calculated, series "fuel"): fuel CPI = electricity, gas, petrol and other
                         fuel & lubricants for personal transport, weighted by their published 2024 weights, Jan 2024 on
@@ -22,8 +22,8 @@ Writes data/sg/cpi/:
 
 Weights: item, group, division and series weights are SingStat's published 2024 weights (Information Paper
 IP-E61, kept in weights_2024.csv), summed up the tree; CPI less food and energy uses the published 2014, 2019 and
-2024 weights. SingStat publishes no weights for MAS core's services and retail & other goods segments, so the
-contribution segments use weights recovered from the indices: within each basket (2014, 2019 and 2024 bases) the published
+2024 weights. Contributions use published weights: SingStat's for accommodation and private transport, MAS's for MAS core and
+its parts. The CPI tree identity below is used only to check the published item weights: within each basket (2014, 2019 and 2024 bases) the published
 all-items index is exactly a fixed linear combination of its components; the coefficients are recovered by
 least squares over that basket's months and accepted only if they reproduce the published parent index
 within 0.01 index points in every month (checked below). On the 2024 base the coefficients are the 2024
@@ -93,7 +93,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 12  # bump when the outputs change, so the next run rebuilds them
+VERSION = 13  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -127,59 +127,6 @@ def _lstsq(parent, kids, months):
     y = np.array([parent[d] for d in months])
     c, *_ = np.linalg.lstsq(X, y, rcond=None)
     return c, float(np.abs(X @ c - y).max())
-
-
-def _contrib(idx, mas, errors, core=False):
-    """Contributions to y/y. All items (core=False): parts are MAS core (food, services, retail & other goods,
-    electricity & gas) + accommodation + private transport. MAS core (core=True): its four parts.
-    Core rows carry series names prefixed "core_"."""
-    parts = {"food": idx["1.0"], "services": mas["2"], "retail_goods": mas["3"], "elec_gas": mas["4"],
-             "accommodation": idx["1.03.1"], "private_transport": idx["1.06.1"]}
-    spec = CORE_PARTS if core else CONTRIB_PARTS
-    keys = [k for k, _ in spec]
-    A = mas["1"] if core else idx["1"]
-    pre = "core_" if core else ""
-    latest = max(A)
-    segs = []
-    for a, b in BASKETS:
-        b = b or latest
-        months = sorted(d for d in A if a <= d <= b and all(d in parts[k] for k in keys))
-        c, res = _lstsq(A, [parts[k] for k in keys], months)
-        if res > TOL or (c < 0).any():
-            errors.append(f"{pre}contributions: basket from {a} not reproduced (max residual {res:.4f}, coefs {np.round(c, 4).tolist()})")
-        segs.append((a, b, dict(zip(keys, c)), res))
-    seg_of = lambda d: next((s for s in segs if s[0] <= d <= s[1]), None)  # noqa: E731
-    rows, out = [], []
-    for t in sorted(A):
-        s = _shift(t, -12)
-        St, Ss = seg_of(t), seg_of(s)
-        if not St or not Ss or s not in A:
-            continue
-        I = {k: parts[k] for k in keys}
-        if St is Ss:
-            C = {k: St[2][k] * (I[k][t] - I[k][s]) / A[s] * 100 for k in keys}
-        else:
-            J = St[0]
-            L = _shift(J, -1)
-            old, new = Ss[2], St[2]
-            step = A[J] - A[L]
-            newstep = sum(new[k] * (I[k][J] - I[k][L]) for k in keys)
-            gap = step - newstep  # linking residual at the basket change, spread by weight
-            C = {}
-            for k in keys:
-                b = new[k] * (I[k][J] - I[k][L]) + gap * new[k] * I[k][J] / A[J]
-                C[k] = (old[k] * (I[k][L] - I[k][s]) + b + new[k] * (I[k][t] - I[k][J])) / A[s] * 100
-        tot = (A[t] / A[s] - 1) * 100
-        if abs(sum(C.values()) - tot) > 0.01:  # indices are published to 3 decimals
-            errors.append(f"{pre}contributions {t}: parts sum {sum(C.values()):.4f}, all items {tot:.4f}")
-        out.append((t, round(tot, 2), {k: round(v, 2) for k, v in C.items()}))
-    for t, tot, C in out:
-        rows.append({"date": t, "series": pre + "all", "label": "MAS core" if core else "All items", "order": 10 if core else 0, "contrib_yoy": tot})
-        for i, (k, lab) in enumerate(spec, 1):
-            rows.append({"date": t, "series": pre + k, "label": lab, "order": (10 if core else 0) + i, "contrib_yoy": C[k]})
-    weights = [{"from": a, "to": b, "max_residual": round(res, 5), "weights_per_10000": {k: round(v * 1e4, 1) for k, v in c.items()}}
-               for a, b, c, res in segs]
-    return rows, weights
 
 
 # Published weights per 10,000 of accommodation and private transport (2014 basket: IP-E48; 2019, restated, and 2024:
@@ -227,6 +174,45 @@ def _contrib_headline(idx, mas, errors):
             rows.append({"date": t, "series": k, "label": lab, "order": i, "contrib_yoy": round(C[k], 2)})
     weights = [{"from": a, "to": b, "published_weights_per_10000": {k: round(v * 1e4) for k, v in W[n].items()}}
                for n, a, b, _ in segs]
+    return rows, weights
+
+
+# MAS core weights per 10,000 of all items, as published by MAS/MTI (Consumer Price Developments, Table A.1).
+# MAS publishes none for the 2014 basket, so these contributions start in Jan 2020.
+CORE_WEIGHTS = {"2019": {"food": 2110, "services": 3173, "retail_goods": 1111, "elec_gas": 188},
+                "2024": {"food": 2042, "services": 3173, "retail_goods": 1025, "elec_gas": 198}}
+
+
+def _contrib_core(idx, mas, errors):
+    """Contributions of food, services, retail & other goods and electricity & gas to MAS core y/y, Jan 2020 on,
+    at MAS's published weights; same method as _contrib_headline, with MAS core in place of all items."""
+    A = mas["1"]
+    P = {"food": idx["1.0"], "services": mas["2"], "retail_goods": mas["3"], "elec_gas": mas["4"]}
+    segs = [("2019", "2019-01-01", "2023-12-01", "2018-12-01"), ("2024", "2024-01-01", max(A), "2023-12-01")]
+    W = {b: {k: v / sum(w.values()) for k, v in w.items()} for b, w in CORE_WEIGHTS.items()}
+    seg_of = lambda d: next((x for x in segs if x[1] <= d <= x[2]), None)  # noqa: E731
+
+    def part(seg, k, x, y):
+        b, _, _, L = seg
+        return A[L] * W[b][k] * (P[k][y] - P[k][x]) / P[k][L]
+    rows = []
+    for t in sorted(A):
+        s = _shift(t, -12)
+        St, Ss = seg_of(t), seg_of(s)
+        if not St or not Ss:
+            continue
+        if St is Ss:
+            C = {k: part(St, k, s, t) for k in P}
+        else:
+            C = {k: part(Ss, k, s, St[3]) + part(St, k, St[3], t) for k in P}
+        C = {k: v / A[s] * 100 for k, v in C.items()}
+        tot = (A[t] / A[s] - 1) * 100
+        if abs(sum(C.values()) - tot) > 0.25:
+            errors.append(f"core contributions {t}: parts sum {sum(C.values()):.3f}, MAS core {tot:.3f}")
+        rows.append({"date": t, "series": "core_all", "label": "MAS core", "order": 10, "contrib_yoy": round(tot, 2)})
+        for i, (k, lab) in enumerate(CORE_PARTS, 1):
+            rows.append({"date": t, "series": "core_" + k, "label": lab, "order": 10 + i, "contrib_yoy": round(C[k], 2)})
+    weights = [{"from": a, "to": b, "published_weights_per_10000": CORE_WEIGHTS[n]} for n, a, b, _ in segs]
     return rows, weights
 
 
@@ -398,7 +384,7 @@ def update(**_):
     idx, names = S["index"][0], S["index"][1]
     mas = S["mas"][0]
     contrib, seg_weights = _contrib_headline(idx, mas, errors)
-    core_contrib, core_weights = _contrib(idx, {k: mas[k] for k in ("1", "2", "3", "4")}, errors, core=True)
+    core_contrib, core_weights = _contrib_core(idx, mas, errors)
     contrib = sorted(contrib + core_contrib, key=lambda r: (r["date"], r["order"]))
     implied, worst, _ = _tree(idx, names, errors)
     item_w, node_w = _published_weights(implied, errors)
