@@ -1,0 +1,44 @@
+name: ECOS discovery (manual)
+
+# One-off helper: probes Bank of Korea ECOS API for Korean price tables
+# and saves the responses to the "discovery" branch, under discovery/ecos_p2.
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-kr]
+    paths:
+      - pipeline/tools/ecos_discover.py
+      - .github/workflows/ecos-discover.yml
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Query the ECOS API
+        timeout-minutes: 25
+        continue-on-error: true
+        env:
+          ECOS_KEY: ${{ secrets.ECOS_KEY }}
+        run: python -I pipeline/tools/ecos_discover.py discovery/ecos_p2
+      - name: Push results to the discovery branch
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mv discovery /tmp/discovery
+          if git fetch origin discovery; then
+            git checkout -B discovery origin/discovery
+          else
+            git checkout --orphan discovery && git rm -rf --quiet --cached .
+          fi
+          mkdir -p discovery && rm -rf discovery/ecos_p2 && cp -r /tmp/discovery/ecos_p2 discovery/
+          git add discovery/ecos_p2
+          git commit -m "ECOS discovery"
+          git push origin discovery

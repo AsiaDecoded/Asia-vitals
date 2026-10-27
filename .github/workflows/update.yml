@@ -41,6 +41,7 @@ jobs:
         continue-on-error: true
         env:
           ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
+          ECOS_KEY: ${{ secrets.ECOS_KEY }}
         run: python -I pipeline/run.py ${{ inputs.sources }}
 
       - name: Commit what passed

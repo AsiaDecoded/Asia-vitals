@@ -1,0 +1,65 @@
+name: ECOS months (manual)
+
+# One-off helper: fetches every CPI item month by month in parallel ranges and saves partial
+# stores to the "discovery" branch under discovery/ecos_parts (merged into the store by hand).
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-kr]
+    paths:
+      - pipeline/tools/ecos_months.py
+      - .github/workflows/ecos-months.yml
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        include:
+          - {range: "201501-201510"}
+          - {range: "201511-201608"}
+          - {range: "201609-201706"}
+          - {range: "201707-201804"}
+          - {range: "201805-201902"}
+          - {range: "201903-201912"}
+          - {range: "202001-202010"}
+          - {range: "202011-202111"}
+          - {spec: "901Y009:0:196501,901Y009:A:198501,901Y009:B:198501,901Y009:C:198501,901Y009:D:198501,901Y009:E:198501,901Y009:F:198501", name: "s0"}
+          - {spec: "901Y009:G:198501,901Y009:H:198501,901Y009:I:198501,901Y009:J:198501,901Y009:K:198501,901Y009:L:198501", name: "s1"}
+          - {spec: "901Y010:00:198501,901Y010:21:198501,901Y010:211:198501,901Y010:2111:198501,901Y010:2112:198501,901Y010:2113:198501,901Y010:212:198501,901Y010:2121:198501", name: "s2"}
+          - {spec: "901Y010:2122:198501,901Y010:2123:198501,901Y010:2124:198501,901Y010:2125:198501,901Y010:2126:198501,901Y010:2127:198501,901Y010:2129:198501,901Y010:213:198501", name: "s3"}
+          - {spec: "901Y010:22:198501,901Y010:221:198501,901Y010:222:198501,901Y010:223:198501,901Y010:2231:198501,901Y010:2239:198501,901Y010:10:199001,901Y010:11:199001", name: "s4"}
+          - {spec: "901Y010:12:199001,901Y010:13:199001,901Y010:20:199001,901Y010:QB:199001,901Y010:DB:199001,901Y010:110:199501", name: "s5"}
+          - {spec: "404Y014:*AA:196501,404Y014:1AA:196501,404Y014:2AA:196501,404Y014:3AA:196501,404Y014:4AA:196501,404Y014:5AA:196501", name: "s6"}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch
+        env:
+          ECOS_KEY: ${{ secrets.ECOS_KEY }}
+        run: |
+          r="${{ matrix.range }}"
+          if [ -n "$r" ]; then
+            python -I pipeline/tools/ecos_months.py 901Y009 "${r%-*}" "${r#*-}" "/tmp/part_$r.json.gz"
+          else
+            python -I pipeline/tools/ecos_months.py series "${{ matrix.spec }}" "/tmp/part_${{ matrix.name }}.json.gz"
+          fi
+      - name: Push the part
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          for i in 1 2 3 4 5 6; do
+            git fetch -q origin discovery && git checkout -q -B discovery origin/discovery
+            mkdir -p discovery/ecos_parts && cp /tmp/part_*.json.gz discovery/ecos_parts/
+            git add discovery/ecos_parts && git commit -qm "ECOS part ${{ matrix.range }}${{ matrix.name }}"
+            git push -q origin discovery && break
+            sleep $((RANDOM % 10 + 5))
+          done

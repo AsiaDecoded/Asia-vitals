@@ -1,0 +1,42 @@
+name: ECOS backfill (manual)
+
+# One-off: builds raw/kr/ecos/store.json.gz (Korea CPI, PPI, import/export prices from the
+# Bank of Korea's ECOS API) and pushes it to the branch it ran on. Resumable.
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-kr]
+    paths:
+      - pipeline/tools/ecos_backfill.py
+      - .github/workflows/ecos-backfill.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ecos-backfill
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch from ECOS
+        timeout-minutes: 280
+        continue-on-error: true
+        env:
+          ECOS_KEY: ${{ secrets.ECOS_KEY }}
+        run: python -I pipeline/tools/ecos_backfill.py 201501
+      - name: Push the store
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add raw/kr/ecos
+          git commit -m "ECOS backfill" || exit 0
+          git pull --rebase -q origin "${GITHUB_REF_NAME}" || true
+          git push origin "HEAD:${GITHUB_REF_NAME}"

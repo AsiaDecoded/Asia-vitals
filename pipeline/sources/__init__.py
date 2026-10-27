@@ -14,4 +14,6 @@ SOURCES = [
     "in_ppi_oea",
     "sg_cpi_singstat",
     "sg_ppi_singstat",
+    "kr_cpi_ecos",
+    "kr_ppi_ecos",
 ]
