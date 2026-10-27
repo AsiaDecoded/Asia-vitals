@@ -39,7 +39,7 @@ dash.calc('cpi_table', {
   description: 'For the series SingStat seasonally adjusts: 1-, 2-, 3- and 6-month changes in the SA index, annualised, and the published 12-month change of the unadjusted series. MAS core has no SA index, so only its 12-month change is shown.',
   inputs: ['cpi_series'],
   fn: (cpi_series) => {
-    const SA = [['all', 'CPI'], ['accommodation', 'Accommodation'], ['private_transport', 'Private transport'], ['less_accom', 'CPI less accommodation'], ['core', 'MAS core'], ['food_ex_fbss', 'Food excl. food and beverage serving services'], ['fbss', 'Food and beverage serving services']];
+    const SA = [['all', 'CPI'], ['accommodation', 'Accommodation'], ['private_transport', 'Private transport'], ['less_accom', 'CPI less accommodation'], ['core', 'MAS core'], ['food_ex_fbss', 'Food excl. FBSS'], ['fbss', 'FBSS']];
     const nat = cpi_series.filter((r) => r.area === 'national' && r.series === 'all_sa' && r.index != null)
       .reduce((m, r) => (r.date > m ? r.date : m), '');
     const back = (d, k) => { const y = +d.slice(0, 4), m = +d.slice(5, 7) - 1 - k; const t = new Date(Date.UTC(y, m, 1)); return t.toISOString().slice(0, 10); };
@@ -470,7 +470,7 @@ dash.calc('cpi_heat', {
       const i = t > 0.5 ? 1 : 0; const [t0, c0] = STOPS[i], [t1, c1] = STOPS[i + 1], f = (t - t0) / (t1 - t0);
       return `rgb(${c0.map((c, k) => Math.round(c + (c1[k] - c) * f)).join(',')})`;
     };
-    const NAMES = { all: 'CPI', less_imputed: 'CPI less imputed rentals for housing', less_accom: 'CPI less accommodation', core: 'MAS core*', fuel: 'Energy', ex_food_energy: 'CPI less food and energy**', other_fuels: 'Other fuel and lubricants' };
+    const NAMES = { all: 'CPI', less_imputed: 'CPI less imputed rentals for housing', less_accom: 'CPI less accommodation', core: 'MAS core*', fuel: 'Energy', ex_food_energy: 'CPI less food and energy**', other_fuels: 'Other fuel and lubricants', food_ex_fbss: 'Food excl. FBSS', fbss: 'FBSS' };
     tbl.replaceChildren();
     const head = tbl.createTHead().insertRow();
     ['', 'Weight'].concat(dates.map((d) => `${MON[+d.slice(5, 7) - 1]} ${d.slice(2, 4)}`)).forEach((t) => {
