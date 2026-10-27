@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Singapore inflation | Asia Decoded</title>
+<meta name="description" content="Singapore consumer and producer price inflation: CPI, MAS core, components, contributions and diffusion. Data from the Singapore Department of Statistics, updated after each release.">
+<style>
+:root {
+  --color-fg: #1f2328; --color-fg-muted: #5c636a; --color-bg: #ffffff; --color-panel: #ffffff;
+  --color-border-line: #e3e5e8; --color-ok: #1a7f37; --color-warn: #9a6700; --color-bad: #c62828;
+  --font-anthropic-sans: Arial, Helvetica, sans-serif; --font-anthropic-serif: Georgia, "Times New Roman", serif;
+  --cds-font-size-caption: 0.75rem; --cds-font-size-body: 0.9375rem; --cds-font-size-heading: 1.0625rem; --cds-font-size-title: 1.75rem;
+  --cds-font-weight-medium: 600;
+  --cds-gap-xs: 4px; --cds-gap-sm: 8px; --cds-gap-md: 14px; --cds-gap-lg: 22px;
+  --cds-pad-xs: 4px; --cds-pad-sm: 8px; --cds-pad-lg: 18px; --cds-radius: 8px;
+  --cds-chart-grid: #e6e6e6; --cds-chart-axis: #a6a6a6; --cds-chart-reference: #8a8f94;
+  --cds-surface-popover: #ffffff; --cds-border: #d0d4d8; --cds-shadow-popover: 0 4px 14px rgba(0,0,0,.12);
+  --cds-text-secondary: #5c636a; --cds-dur-slow: 300ms;
+}
+html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
+#dash-root { max-width: 1200px; margin: 0 auto; padding: 20px 16px 40px; font-family: var(--font-anthropic-sans); }
+.dash-skeleton { color: transparent !important; background: var(--color-border-line); border-radius: 4px; }
+.jg-card { background: var(--color-panel); }
+.site-brand { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; font-size: 0.8125rem; color: var(--color-fg-muted); }
+.site-brand b { color: #EE6600; }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="shim.js"></script>
+</head>
+<body>
+<div id="dash-root">
+<div class="site-brand"><b>Asia Decoded</b><span>Data: Singapore Department of Statistics</span></div>
+<style>
+#dash-root .jg { font-family: var(--font-anthropic-sans); display: flex; flex-direction: column; gap: var(--cds-gap-lg); }
+.jg-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; }
+.jg-take { margin: var(--cds-gap-xs) 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); max-width: 60rem; line-height: 1.5; }
+.jg-take b, .jg b { font-weight: var(--cds-font-weight-medium); color: var(--color-fg); }
+.jg-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: var(--cds-gap-md); }
+.jg-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); position: relative; min-width: 0; }
+.jg-tile .lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.jg-tile .val { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; margin-top: var(--cds-gap-xs); }
+.jg-tile .sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: var(--cds-gap-xs); font-variant-numeric: tabular-nums; }
+.jg-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); align-items: center; }
+.jg-seg { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); overflow: hidden; }
+.jg-seg button { font: inherit; font-size: var(--cds-font-size-caption); background: transparent; color: var(--color-fg-muted); border: 0; padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; }
+.jg-seg button[aria-pressed="true"] { background: var(--color-bg); color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.jg-seg-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.jg-card h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+.jg-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-xs) 0 var(--cds-gap-md); line-height: 1.45; }
+.jg-cardhead { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--cds-gap-sm); align-items: flex-start; }
+.jg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.jg-chart { min-height: 280px; position: relative; }
+.jg-chart.small { min-height: 280px; }
+.jg-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: var(--cds-gap-sm); }
+.jg-legend span.sw { display: inline-block; width: 0.625rem; height: 0.625rem; border-radius: 2px; margin-right: 0.35rem; vertical-align: -1px; }
+.jg-legend span.ln { display: inline-block; width: 0.9rem; height: 2px; margin-right: 0.35rem; vertical-align: 3px; }
+.jg-legend span.dot { display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 50%; margin-right: 0.35rem; vertical-align: 0; background: var(--color-fg); }
+.jg-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; z-index: 2; display: none; font-variant-numeric: tabular-nums; }
+.jg-tip .t { color: var(--cds-text-secondary); margin-bottom: 2px; }
+.jg-tip .r { display: flex; gap: 0.4rem; align-items: center; justify-content: space-between; }
+.jg-tip .r .k { display: flex; gap: 0.35rem; align-items: center; }
+.jg-tip .r i { display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 2px; }
+.jg svg text { font-family: var(--font-anthropic-sans); }
+.jg-tablewrap { overflow-x: auto; }
+.jg table { width: 100%; border-collapse: collapse; font-size: 0.875rem; font-variant-numeric: tabular-nums; }
+.jg th { text-align: right; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: bottom; }
+.jg th:first-child, .jg td:first-child { text-align: left; }
+.jg td { text-align: right; padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); }
+.jg tr.gdp td { font-weight: var(--cds-font-weight-medium); }
+.jg tr.agg td:first-child { color: var(--color-fg-muted); }
+.jg tr.sep td { border-top: 2px solid var(--color-border-line); }
+.jg td.neg { color: var(--color-bad); }
+#cpi-table th:not(:first-child), #cpi-table td:not(:first-child), #cpi-movers-table th:not(:first-child), #cpi-movers-table td:not(:first-child) { text-align: center; }
+.jg tr.grp td { font-weight: 700; color: var(--ad-ink, var(--color-fg)); text-align: left !important; padding-top: var(--cds-pad-sm); }
+.jg-foot { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.5; }
+.jg-fail { display: flex; align-items: center; justify-content: center; gap: 0.4rem; min-height: inherit; height: 100%; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.jg-fail::before { content: ""; width: 0.375rem; height: 0.375rem; border-radius: 50%; background: var(--color-bad); }
+[data-dash-source-state=empty] { color: transparent; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+@media (max-width: 640px) { .jg .hide-narrow { display: none; } }
+.jg-tabs { display: flex; gap: var(--cds-gap-md); border-bottom: 1px solid var(--color-border-line); margin-top: calc(-1 * var(--cds-gap-sm)); }
+.jg-tabs button { font: inherit; font-size: var(--cds-font-size-body); background: transparent; border: 0; border-bottom: 2px solid transparent; color: var(--color-fg-muted); padding: var(--cds-pad-sm) 0; margin-bottom: -1px; cursor: pointer; }
+.jg-tabs button[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.jg-page { display: flex; flex-direction: column; gap: var(--cds-gap-lg); }
+.jg-page[hidden] { display: none; }
+.jg-pagehead .jg-take { margin-top: var(--cds-gap-xs); }
+.jg-empty { color: var(--color-fg-muted); font-size: var(--cds-font-size-body); margin: var(--cds-gap-lg) 0; }
+
+/* Asia Decoded chart style */
+.jg-card { font-family: Arial, Helvetica, sans-serif; }
+.jg-card h2 { font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 1.15rem; color: var(--ad-ink, var(--color-fg)); }
+.jg svg text { font-family: Arial, Helvetica, sans-serif; }
+.ad-top { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--cds-gap-xs) var(--cds-gap-lg); margin-top: var(--cds-gap-sm); }
+.ad-top .ad-units.r { margin-left: auto; }
+.ad-top { position: relative; z-index: 1; height: 1.4rem; flex-wrap: nowrap; align-items: flex-start; }
+.ad-top .jg-legend { background: transparent; }
+.ad-units { font-size: 0.8125rem; color: var(--ad-ink, var(--color-fg-muted)); }
+.ad-units.r { text-align: right; }
+.ad-top .jg-legend { margin-top: 0; justify-content: flex-start; flex: 1 1 0; min-width: 10rem; color: var(--ad-ink, var(--color-fg-muted)); font-size: 0.8125rem; }
+.jg-legend span.ln { width: 1.6rem; height: 3px; vertical-align: 3px; }
+.ad-foot { display: flex; justify-content: space-between; align-items: baseline; gap: var(--cds-gap-md); margin-top: var(--cds-gap-xs); font-size: 0.8125rem; color: var(--ad-ink, var(--color-fg-muted)); line-height: 1.4; }
+.ad-brand { color: #EE6600; font-weight: 700; white-space: nowrap; }
+.ad-foot > span:first-child { font-size: 0.6875rem; }
+.ad-foot .ad-brand { font-size: 0.6875rem; }
+.ad-foot .ad-right { display: flex; align-items: baseline; gap: var(--cds-gap-md); }
+.ad-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; }
+.ad-png { font: inherit; font-size: 0.75rem; background: transparent; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); color: var(--color-fg-muted); padding: 1px 8px; cursor: pointer; white-space: nowrap; }
+.ad-png:hover { color: var(--color-fg); }
+.ad-shot { position: fixed; inset: 0; background: rgba(0,0,0,.55); display: flex; align-items: center; justify-content: center; z-index: 50; padding: 16px; }
+.ad-shot-box { margin-top: var(--cds-gap-md); padding-top: var(--cds-gap-md); border-top: 1px solid var(--color-border-line); display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
+.ad-shot-box img { width: 100%; height: auto; border: 1px solid var(--color-border-line); }
+.ad-shot-bar { display: flex; justify-content: space-between; align-items: center; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.ad-shot-bar a, .ad-shot-bar button { font: inherit; color: var(--color-fg); background: transparent; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: 2px 10px; cursor: pointer; text-decoration: none; }
+
+.ad-method { font-family: Arial, Helvetica, sans-serif; max-width: 52rem; line-height: 1.55; font-size: 0.9375rem; color: var(--color-fg); }
+.ad-method h3 { font-size: 1rem; margin: var(--cds-gap-lg) 0 var(--cds-gap-xs); color: var(--ad-ink, var(--color-fg)); }
+.ad-method p { margin: var(--cds-gap-xs) 0; }
+.ad-method ul { margin: var(--cds-gap-xs) 0; padding-left: 1.2rem; }
+.ad-method li { margin: 2px 0; }
+.ad-method .ad-foot { margin-top: var(--cds-gap-lg); }
+.ad-slider { position: relative; height: 22px; margin: 2px 8px 0; }
+.ad-slider-track { position: absolute; left: 0; right: 0; top: 9px; height: 4px; border-radius: 2px; background: var(--color-border-line); }
+.ad-slider-sel { position: absolute; top: 0; bottom: 0; background: var(--ad-c1); border-radius: 2px; opacity: 0.6; }
+.ad-slider input[type=range] { position: absolute; left: -8px; right: -8px; width: calc(100% + 16px); top: 0; height: 22px; margin: 0; background: none; pointer-events: none; -webkit-appearance: none; appearance: none; }
+.ad-slider input[type=range]::-webkit-slider-runnable-track { background: none; height: 22px; }
+.ad-slider input[type=range]::-moz-range-track { background: none; }
+.ad-slider input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; pointer-events: auto; width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: var(--color-bg); border: 2px solid var(--ad-c1); cursor: ew-resize; }
+.ad-slider input[type=range]::-moz-range-thumb { pointer-events: auto; width: 12px; height: 12px; border-radius: 50%; background: var(--color-bg); border: 2px solid var(--ad-c1); cursor: ew-resize; }
+.ad-slider input[type=range]:focus-visible::-webkit-slider-thumb { outline: 2px solid var(--ad-c1); outline-offset: 2px; }
+.ad-slider-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-align: right; margin: 0 8px 4px; font-variant-numeric: tabular-nums; }
+#cpi-heat-table { font-size: 0.8125rem; }
+#cpi-heat-table th, #cpi-heat-table td { padding: 3px 6px; }
+#cpi-heat-table th:nth-child(n+2), #cpi-heat-table td:nth-child(n+2) { text-align: center; }
+#cpi-heat-table td.heat { font-variant-numeric: tabular-nums; border: 2px solid var(--color-bg); }
+#cpi-heat-table th:first-child, #cpi-heat-table td:first-child { text-align: left; white-space: nowrap; }
+#cpi-heat-table td, #cpi-heat-table th { border-bottom: 0; }
+#cpi-heat-table tr.lead td { font-weight: 700; }
+#cpi-heat-table tr.sub td:first-child { padding-left: 1.1rem; }
+#cpi-heat-table tr.gap td { border-top: 12px solid var(--color-bg); }
+#cpi-heat-table tr.gap td:first-child { border-top-color: transparent; }
+</style>
+
+<div class="jg">
+  <header class="jg-head" id="top">
+    <h1>Singapore</h1>
+  </header>
+
+  <nav class="jg-tabs" role="tablist" aria-label="Sections">
+    <button role="tab" data-tab="inflation" aria-selected="true">Inflation</button>
+    <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
+  </nav>
+
+  <section class="jg-page" id="inflation" role="tabpanel">
+    <div class="jg-pagehead">
+      <div class="jg-note" style="margin:0"><span id="cpi-month" class="dash-skeleton" style="color: var(--color-fg)">—</span></div>
+      <p class="jg-take" id="cpi-takeaway"><span class="dash-skeleton">—</span></p>
+    </div>
+
+    <section class="jg-tiles" id="cpi-headline" aria-label="Headline inflation">
+      <div class="jg-card jg-tile"><div class="lbl">CPI, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="all_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="all_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">MAS core, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="core_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="core_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Retail and other goods, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="retail_goods_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="retail_goods_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Services, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="services_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="services_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">PPI, y/y</div>
+        <div class="val"><span data-source="ppi_latest" data-field="ppi_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="ppi_latest" data-field="ppi_yoy_prev" data-row="0">—</span>%</div></div>
+    </section>
+
+    <section class="jg-card" id="cpi-heat">
+      <h2>Singapore consumer inflation</h2>
+      <div class="ad-top"><span class="ad-units">% y/y</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-tablewrap">
+        <table id="cpi-heat-table" data-source="cpi_heat"></table>
+      </div>
+      <div class="ad-foot"><span>Source: Singapore Department of Statistics. *CPI excluding accommodation and private transport. **Asia Decoded calculation: electricity, gas, petrol and other fuel and lubricants for personal transport, at their 2024 CPI weights.</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-components">
+        <h2>Singapore CPI momentum</h2>
+        <div class="ad-top"><span class="ad-units" id="cpi-table-units">%</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-tablewrap">
+          <table id="cpi-table" data-source="cpi_table" data-row-key="label">
+            <thead><tr>
+              <th data-field="label">Series</th>
+              <th data-field="ann1">1m ann.</th>
+              <th data-field="ann2">2m ann.</th>
+              <th data-field="ann3">3m ann.</th>
+              <th data-field="ann6">6m ann.</th>
+              <th data-field="yoy12">12m</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p class="jg-note" style="margin:var(--cds-gap-sm) 0 0">Annualised rates use SingStat&rsquo;s seasonally adjusted indices. SingStat publishes no seasonally adjusted MAS core index, so MAS core shows the 12-month rate only.</p>
+        <div class="ad-foot"><span>Source: Singapore Department of Statistics</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-movers">
+        <div class="jg-cardhead">
+          <div><h2>Singapore CPI biggest contributors</h2></div>
+          <div class="jg-seg" id="cpi-movers-seg" role="group" aria-label="Averaging window"><button data-n="3" aria-pressed="true">3m avg.</button><button data-n="6">6m avg.</button></div>
+        </div>
+        <div class="ad-top"><span class="ad-units" id="cpi-movers-units">%, ppt</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-tablewrap">
+          <table id="cpi-movers-table" data-source="cpi_movers" data-row-key="name">
+            <thead><tr>
+              <th data-field="name">Item</th>
+              <th data-field="weight">Weight</th>
+              <th data-field="yoy">y/y, latest</th>
+              <th data-field="avg3" id="cpi-movers-avg">Contribution, 3m avg.</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="ad-foot"><span>Source: Singapore Department of Statistics, Asia Decoded calculations</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="ppi-cpi">
+        <h2>Singapore inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="ppi-cpi-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="ppi-cpi-chart" data-source="cpi_series ppi_series"></div>
+        <div class="ad-foot"><span>Source: Singapore Department of Statistics. PPI is the Singapore Manufactured Products Price Index (SMPPI).</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-ym">
+        <h2>Singapore consumer inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-ym-legend"></div><span class="ad-units r">% m/m</span></div>
+        <div class="jg-chart" id="cpi-ym-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: Singapore Department of Statistics</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-measures">
+        <h2>Singapore consumer inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-measures-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-measures-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: Singapore Department of Statistics, Monetary Authority of Singapore</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-momentum">
+        <div class="jg-cardhead">
+          <div><h2>Singapore consumer inflation</h2></div>
+          <div class="jg-seg" id="cpi-sa-seg" role="group" aria-label="Measure">
+            <button data-s="all_sa" aria-pressed="true">Headline</button><button data-s="less_accom_sa">Less accom.</button><button data-s="less_imputed_sa">Less imputed rent</button><button data-s="food_sa">Food</button><button data-s="private_transport_sa">Private transport</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units">% m/m, seasonally adjusted</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-sa-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: Singapore Department of Statistics</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-contrib">
+        <h2>Singapore consumer inflation contribution</h2>
+        <div class="ad-top"><span class="ad-units">ppt</span><div class="jg-legend" id="cpi-contrib-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-contrib-chart" data-source="sg_cpi_contrib"></div>
+        <div class="ad-foot"><span>Source: Singapore Department of Statistics, Asia Decoded calculations</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-diffusion">
+        <h2>Singapore CPI diffusion index</h2>
+        <div class="ad-top"><span class="ad-units">% of items</span><div class="jg-legend" id="cpi-diffusion-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-diffusion-chart" data-source="sg_cpi_diffusion"></div>
+        <div class="ad-foot"><span>Source: Singapore Department of Statistics, Asia Decoded calculations</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-gs">
+        <h2>Singapore goods and services CPI</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-gs-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart small" id="cpi-gs-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: Singapore Department of Statistics, Monetary Authority of Singapore</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-drivers">
+        <h2>Singapore food and energy CPI</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-drivers-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart small" id="cpi-drivers-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: Singapore Department of Statistics</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <p class="jg-foot">Source: Singapore Department of Statistics (SingStat), Consumer Price Index, 2024 base, via the Table Builder API (tables M213751, M213752, M213771, M213781, M213792, M213891): <span data-source="cpi_release" data-field="label" data-row="0">—</span>. MAS core and its services, retail and other goods, and electricity and gas measures are compiled by SingStat for the Monetary Authority of Singapore and are not seasonally adjusted. Producer prices: Singapore Manufactured Products Price Index (2023 base), via the Table Builder API (M213431): <span data-source="ppi_release" data-field="label" data-row="0">—</span>.</p>
+  </section>
+
+  <section class="jg-page" id="methodology" role="tabpanel" hidden>
+    <article class="jg-card ad-method" id="method-sa">
+      <h2>Seasonally adjusted series</h2>
+      <p>SingStat publishes seasonally adjusted indices and m/m changes for all items, all items less accommodation, all items less imputed rentals, food and every division and group of the CPI. It publishes none for the MAS core measure or its services, retail and other goods, and electricity and gas components. This dashboard does not seasonally adjust any series itself, so MAS core appears in y/y terms only, and the momentum table and m/m charts use SingStat&rsquo;s own adjusted series.</p>
+      <div class="ad-foot"><span>Source: Singapore Department of Statistics</span><span class="ad-brand">Asia Decoded</span></div>
+    </article>
+    <article class="jg-card ad-method" id="method-contrib">
+      <h2>Contributions and weights</h2>
+      <p>SingStat does not publish contributions to CPI inflation or a table of basket weights, so both are calculated here from the published indices.</p>
+      <h3>Weights</h3>
+      <ul>
+        <li><b>Identity:</b> within each basket (2014, 2019 and 2024 bases) the all-items index is a fixed weighted sum of its components. The weights are solved from that identity over the basket&rsquo;s months and are used only if they reproduce the published all-items index to within 0.01 index points in every month. In practice the largest gap is 0.001, i.e. index rounding.</li>
+        <li><b>Items:</b> the same identity is applied down the classification (division to group to item), giving a weight for each of the 157 items on the 2024 basket. These sum to 10,000.</li>
+      </ul>
+      <h3>Contributions to y/y</h3>
+      <ul>
+        <li><b>Parts:</b> food, services, retail and other goods, electricity and gas (together, MAS core), accommodation and private transport. These six make up all items.</li>
+        <li><b>Formula:</b> weight &times; (index now &minus; index a year earlier) &divide; all-items index a year earlier.</li>
+        <li><b>Basket changes:</b> for the twelve months that straddle a change of basket (2019 and 2024), the part before the change uses the old weights and the part after uses the new ones. The small linking gap SingStat&rsquo;s index shows at each change (under 0.1 index points) is spread across the parts by weight.</li>
+        <li><b>Rounding:</b> the parts add up to the all-items rate within 0.01pp.</li>
+      </ul>
+      <h3>Biggest contributors</h3>
+      <p>Item contributions use the 2024 item weights and the published item indices, for months whose year-earlier month is also on the 2024 basket (January 2025 on). The table ranks items by their average contribution over the latest three or six months.</p>
+      <div class="ad-foot"><span>Source: Singapore Department of Statistics, Asia Decoded calculations</span><span class="ad-brand">Asia Decoded</span></div>
+    </article>
+    <article class="jg-card ad-method" id="method-diffusion">
+      <h2>CPI diffusion index</h2>
+      <p>The diffusion index measures how broad-based inflation is: not how fast prices are rising on average, but how many of the things people buy are getting more expensive.</p>
+      <h3>Definition</h3>
+      <p>For each month, every individual item in Singapore&rsquo;s CPI is classified by its published year-on-year price change: rising (above zero), falling (below zero) or unchanged. The chart shows the share of items rising, the share falling, and the diffusion index: share rising minus share falling, from &minus;100 to +100.</p>
+      <h3>Data</h3>
+      <ul>
+        <li><b>Source:</b> SingStat&rsquo;s y/y rates for every CPI series (table M213781), January 2016 on.</li>
+        <li><b>Items:</b> the lowest level of the classification with a published y/y in that month. Category totals are excluded, so nothing is counted twice.</li>
+      </ul>
+      <h3>Why the number of items varies</h3>
+      <p>SingStat&rsquo;s detailed item series start at different dates. 117 items have y/y rates from 2016, 118 from 2020, and the full 157 from January 2025, when items introduced with the 2024 basket gained a year of history. Some of the level shift at those dates reflects the change in coverage.</p>
+      <h3>Choices and limits</h3>
+      <ul>
+        <li><b>Unweighted:</b> each item counts once, whatever its weight. The weighted picture is in the CPI itself and the contributions chart.</li>
+        <li><b>Threshold of zero:</b> an item rising 0.1% counts the same as one rising 20%.</li>
+      </ul>
+      <div class="ad-foot"><span>Source: Singapore Department of Statistics</span><span class="ad-brand">Asia Decoded</span></div>
+    </article>
+  </section>
+</div>
+
+<script>
+const num = (v) => (v === '' || v == null ? null : Number(v));
+
+window.JG = {
+  state: {},
+  num,
+  qLabel(d) {
+    const m = Number(d.slice(5, 7));
+    return ({ 1: 'Jan–Mar', 4: 'Apr–Jun', 7: 'Jul–Sep', 10: 'Oct–Dec' })[m] + ' ' + d.slice(0, 4);
+  },
+  date(d) { return new Date(Date.UTC(Number(d.slice(0, 4)), Number(d.slice(5, 7)) - 1, 1)); },
+  f1(v) { return v == null || Number.isNaN(v) ? '' : v.toFixed(1); },
+  fail(el) {
+    el.replaceChildren();
+    const d = document.createElement('div'); d.className = 'jg-fail'; d.textContent = 'Failed to load'; el.appendChild(d);
+  },
+  // Period per chart: number of points to show (0 = all), set by each chart's own buttons.
+  period: {},
+  periodOf(id, def) { return id in this.period ? this.period[id] : def; },
+  window(rows, id) { const n = this.periodOf(id, 40); return n ? rows.slice(-n) : rows; },
+  // Range slider per chart: the selected share of the chart's full date range, [from, to] in 0..1.
+  range: {},
+  slice(rows, id) {
+    const [lo, hi] = this.range[id] || [0, 1];
+    if (!rows.length) return rows;
+    const n = rows.length - 1, i0 = Math.round(lo * n), i1 = Math.max(i0, Math.round(hi * n));
+    const out = rows.slice(i0, i1 + 1);
+    const card = document.getElementById(id), lbl = card && card.querySelector('.ad-slider-lbl');
+    if (lbl && out.length) {
+      const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      const q = card.closest('.jg-page') && card.closest('.jg-page').id === 'gdp';
+      const f = (d) => (q ? `Q${Math.floor((Number(d.slice(5, 7)) - 1) / 3) + 1} ${d.slice(0, 4)}` : MON[Number(d.slice(5, 7)) - 1] + ' ' + d.slice(0, 4));
+      lbl.textContent = `${f(out[0].date)} to ${f(out[out.length - 1].date)}`;
+    }
+    return out;
+  },
+  addSliders() {
+    document.querySelectorAll('.jg-card').forEach((card) => {
+      const chart = card.querySelector(':scope > .jg-chart'); if (!chart || !card.id) return;
+      const page = card.closest('.jg-page'); const p = page ? page.id : 'inflation';
+      const redraw = () => { if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); };
+      const wrap = document.createElement('div'); wrap.className = 'ad-slider';
+      const track = document.createElement('div'); track.className = 'ad-slider-track';
+      const sel = document.createElement('div'); sel.className = 'ad-slider-sel'; track.appendChild(sel);
+      const mk = (v, label) => { const i = document.createElement('input'); i.type = 'range'; i.min = 0; i.max = 1000; i.step = 1; i.value = v; i.setAttribute('aria-label', label); return i; };
+      const a = mk(0, 'Start date'), b = mk(1000, 'End date');
+      const lbl = document.createElement('div'); lbl.className = 'ad-slider-lbl';
+      wrap.append(track, a, b);
+      let raf = 0;
+      const upd = (moved) => {
+        let lo = Number(a.value), hi = Number(b.value);
+        if (hi - lo < 20) { if (moved === a) { lo = hi - 20; a.value = lo; } else { hi = lo + 20; b.value = hi; } }
+        sel.style.left = `${lo / 10}%`; sel.style.right = `${100 - hi / 10}%`;
+        JG.range[card.id] = [lo / 1000, hi / 1000];
+        cancelAnimationFrame(raf); raf = requestAnimationFrame(redraw);
+      };
+      a.addEventListener('input', () => upd(a)); b.addEventListener('input', () => upd(b));
+      chart.after(wrap, lbl);
+      sel.style.left = '0%'; sel.style.right = '0%';
+    });
+  },
+  addPeriods() {
+    const SETS = { q: [['5Y', 20], ['10Y', 40], ['All', 0]], m: [['3Y', 36], ['10Y', 120], ['All', 0]] };
+    document.querySelectorAll('.jg-card').forEach((card) => {
+      const chart = card.querySelector('.jg-chart'); if (!chart) return;
+      const page = card.closest('.jg-page'); const kind = page && page.id === 'gdp' ? 'q' : 'm';
+      const def = kind === 'q' ? 40 : 120;
+      const seg = document.createElement('div'); seg.className = 'jg-seg ad-period'; seg.setAttribute('role', 'group'); seg.setAttribute('aria-label', 'Period');
+      SETS[kind].forEach(([lab, n]) => {
+        const b = document.createElement('button'); b.type = 'button'; b.textContent = lab; b.dataset.n = n;
+        b.setAttribute('aria-pressed', String(n === def)); seg.appendChild(b);
+      });
+      seg.addEventListener('click', (e) => {
+        const b = e.target.closest('button'); if (!b) return;
+        JG.period[card.id] = Number(b.dataset.n);
+        seg.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+        const p = page ? page.id : 'gdp';
+        if (p === 'gdp') JG.redraw && JG.redraw(); else if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else JG.redrawTrade && JG.redrawTrade();
+      });
+      let head = card.querySelector(':scope > .jg-cardhead');
+      if (!head) {
+        const h2 = card.querySelector(':scope > h2');
+        head = document.createElement('div'); head.className = 'jg-cardhead';
+        const left = document.createElement('div'); h2.replaceWith(head); left.appendChild(h2); head.appendChild(left);
+      }
+      let right = head.querySelector(':scope > .ad-controls');
+      if (!right) {
+        right = document.createElement('div'); right.className = 'ad-controls';
+        const segs = Array.from(head.querySelectorAll(':scope > .jg-seg'));
+        segs.forEach((x) => right.appendChild(x)); head.appendChild(right);
+      }
+      right.appendChild(seg);
+    });
+  },
+  // Measure text widths so margins fit the labels actually drawn.
+  textWidth(svg, labels) {
+    const g = svg.append('g').attr('opacity', 0);
+    let w = 0;
+    labels.forEach((t) => { const n = g.append('text').attr('font-size', 12).text(t).node(); w = Math.max(w, n.getComputedTextLength()); });
+    g.remove();
+    return w;
+  },
+  yearTicks(dates, width) {
+    const years = Array.from(new Set(dates.map((d) => d.slice(0, 4))));
+    const room = Math.max(1, Math.floor(width / 48));
+    const step = [1, 2, 4, 5, 10].find((s) => years.length / s <= room) || 10;
+    return dates.filter((d) => d.slice(5, 7) === '01' && Number(d.slice(0, 4)) % step === 0);
+  },
+  tip(card) {
+    let t = card.querySelector(':scope > .jg-tip');
+    if (!t) { t = document.createElement('div'); t.className = 'jg-tip'; card.appendChild(t); }
+    return t;
+  },
+  showTip(card, tip, title, lines, px, py) {
+    tip.replaceChildren();
+    const h = document.createElement('div'); h.className = 't'; h.textContent = title; tip.appendChild(h);
+    lines.forEach(([color, name, value]) => {
+      const r = document.createElement('div'); r.className = 'r';
+      const k = document.createElement('span'); k.className = 'k';
+      if (color) { const i = document.createElement('i'); i.style.background = color; k.appendChild(i); }
+      const s = document.createElement('span'); s.textContent = name; k.appendChild(s);
+      const v = document.createElement('span'); v.textContent = value;
+      r.append(k, v); tip.appendChild(r);
+    });
+    tip.style.display = 'block';
+    const cw = card.clientWidth, tw = tip.offsetWidth;
+    let left = px + 14; if (left + tw > cw - 8) left = px - tw - 14; if (left < 8) left = 8;
+    tip.style.left = left + 'px'; tip.style.top = Math.max(8, py - 10) + 'px';
+  },
+  // Asia Decoded palette; the two dark greys lighten on a dark background.
+  PAL: [1, 2, 3, 4, 5, 6, 7, 8].map((i) => `var(--ad-c${i})`),
+  theme() {
+    const root = document.querySelector('#dash-root .jg') || document.querySelector('.jg');
+    if (!root) return;
+    const bg = getComputedStyle(root).getPropertyValue('--color-bg').trim() || getComputedStyle(document.body).backgroundColor;
+    const probe = document.createElement('span'); probe.style.color = bg; root.appendChild(probe);
+    const col = getComputedStyle(probe).color; probe.remove();
+    const n = (col.match(/[\d.]+%?/g) || ['255', '255', '255']);
+    let dark;
+    if (/^(ok)?l(ab|ch)/.test(col)) { let L = parseFloat(n[0]); if (n[0].endsWith('%') || L > 1) L /= 100; dark = L < 0.5; }
+    else { const v = n.map(parseFloat); dark = (0.2126 * v[0] + 0.7152 * v[1] + 0.0722 * v[2]) < 128; }
+    const v = { '--ad-c1': '#0C84FF', '--ad-c2': '#BD1B21', '--ad-c3': '#EE6631', '--ad-c4': dark ? '#ADB5BD' : '#495057',
+      '--ad-c5': '#FFC000', '--ad-c6': '#92D050', '--ad-c7': '#954F72', '--ad-c8': dark ? '#8496B0' : '#44546A',
+      '--ad-ink': dark ? 'var(--color-fg-muted)' : '#495057', '--ad-grid': dark ? 'var(--cds-chart-grid)' : '#D9D9D9',
+      '--ad-axis': dark ? 'var(--cds-chart-axis)' : '#A6A6A6' };
+    Object.entries(v).forEach(([k, x]) => root.style.setProperty(k, x));
+  },
+  axisStyle(g) {
+    g.attr('font-size', null).attr('font-family', null);
+    g.selectAll('text').attr('fill', 'var(--ad-ink)').attr('font-size', 12);
+    g.selectAll('line').attr('stroke', 'var(--ad-axis)');
+    g.select('.domain').remove();
+  },
+};
+</script>
+
+<script>
+(() => {
+  const J = window.JG;
+  J.theme();
+  J.addSliders();
+  dash.onData(() => J.theme());
+  // Tabs: one page shown at a time; charts on a hidden page are drawn when it is shown.
+  const tabs = document.querySelectorAll('.jg-tabs [data-tab]');
+  const show = (id) => {
+    if (!document.getElementById(id)) return;
+    tabs.forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === id)));
+    document.querySelectorAll('.jg-page').forEach((p) => { p.hidden = p.id !== id; });
+    dash.setLink(id);
+    if (id === 'inflation' && J.redrawCpi) J.redrawCpi();
+  };
+  J.show = show;
+  tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
+  if (location.hash.slice(1) === 'methodology') show('methodology');
+})();
+</script>
+</div>
+<script src="cpi.js"></script>
+<script src="export.js"></script>
+</body>
+</html>
