@@ -509,6 +509,54 @@ dash.calc('cpi_heat', {
         td.style.color = '#1a1a1a';
       });
     });
+    heatScroll();
+  }
+
+  // Table 1 scrolls sideways under the month columns only: the label and weight columns stay put (sticky) and a
+  // scroll bar drawn beneath the heatmap drives the table (and follows it when the table is swiped).
+  let heatRO = null;
+  function heatScroll() {
+    const tbl = document.getElementById('cpi-heat-table');
+    const wrap = tbl && tbl.closest('.jg-tablewrap');
+    if (!wrap) return;
+    let bw = wrap.nextElementSibling;
+    if (!bw || !bw.classList.contains('heat-barwrap')) {
+      bw = document.createElement('div'); bw.className = 'heat-barwrap';
+      const track = document.createElement('div'); track.className = 'heat-track';
+      const thumb = document.createElement('div'); thumb.className = 'heat-thumb';
+      track.appendChild(thumb); bw.appendChild(track); wrap.after(bw);
+      const max = () => wrap.scrollWidth - wrap.clientWidth;
+      const room = () => track.clientWidth - thumb.offsetWidth;
+      let drag = null;
+      thumb.addEventListener('pointerdown', (e) => { drag = { x: e.clientX, s: wrap.scrollLeft }; thumb.setPointerCapture(e.pointerId); e.preventDefault(); });
+      thumb.addEventListener('pointermove', (e) => { if (!drag || room() <= 0) return; wrap.scrollLeft = drag.s + (e.clientX - drag.x) * max() / room(); });
+      thumb.addEventListener('pointerup', () => { drag = null; });
+      thumb.addEventListener('pointercancel', () => { drag = null; });
+      track.addEventListener('pointerdown', (e) => {
+        if (e.target !== track) return;
+        const r = track.getBoundingClientRect();
+        wrap.scrollLeft = ((e.clientX - r.left - thumb.offsetWidth / 2) / Math.max(1, room())) * max();
+      });
+      wrap.addEventListener('scroll', () => place());
+    }
+    const track = bw.firstChild, thumb = track.firstChild;
+    function place() {
+      const m = wrap.scrollWidth - wrap.clientWidth, r = track.clientWidth - thumb.offsetWidth;
+      thumb.style.transform = `translateX(${m > 0 ? (wrap.scrollLeft / m) * r : 0}px)`;
+    }
+    const fit = () => {
+      const row = tbl.tHead && tbl.tHead.rows[0];
+      if (!row || row.cells.length < 3) return;
+      const w1 = row.cells[0].getBoundingClientRect().width, w2 = row.cells[1].getBoundingClientRect().width;
+      tbl.style.setProperty('--heat-c1', `${w1}px`);
+      const fixed = w1 + w2, view = wrap.clientWidth - fixed, full = wrap.scrollWidth - fixed;
+      track.style.marginLeft = `${fixed}px`;
+      track.hidden = wrap.scrollWidth - wrap.clientWidth <= 1;
+      thumb.style.width = `${Math.max(24, (view / Math.max(1, full)) * track.clientWidth)}px`;
+      place();
+    };
+    fit();
+    if (!heatRO && window.ResizeObserver) { heatRO = new ResizeObserver(() => fit()); heatRO.observe(wrap); }
   }
 
   function takeaway() {
