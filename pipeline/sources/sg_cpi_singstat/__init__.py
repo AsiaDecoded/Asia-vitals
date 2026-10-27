@@ -7,8 +7,8 @@ Writes data/sg/cpi/:
                         electricity & gas components, so none is made here)
   sg_cpi_contrib.csv    contributions (pp) of MAS core, accommodation and private transport to all-items y/y at
                         published weights, Jan 2015 on (calculated);
-                        rows with series "core_*": contributions of food, services, retail & other goods and
-                        electricity & gas to MAS core y/y at MAS's published weights, Jan 2015 on
+                        rows with series "core_*": contributions of food excl. serving services, food & beverage
+                        serving services, services, retail & other goods and electricity & gas to MAS core y/y at MAS's published weights, Jan 2015 on
                         (2014 basket: services / retail & other goods split estimated)
   sg_cpi_diffusion.csv  share of items with prices up / down on a year earlier, Jan 2016 on
   sg_cpi_items.csv      every item, latest 12 months: published 2024 weight, index, m/m, y/y (published),
@@ -89,12 +89,14 @@ BASKETS = [("2014-01-01", "2018-12-01"), ("2019-01-01", "2023-12-01"), ("2024-01
 CONTRIB_PARTS = [("food", "Food"), ("services", "Services"), ("retail_goods", "Retail and other goods"),
                  ("elec_gas", "Electricity and gas"), ("accommodation", "Accommodation"),
                  ("private_transport", "Private transport")]
-CORE_PARTS = CONTRIB_PARTS[:4]  # food, services, retail & other goods, electricity & gas
+CORE_PARTS = [("food_ex_fbss", "Food excl. food and beverage serving services"),
+              ("fbss", "Food and beverage serving services"), ("services", "Services"),
+              ("retail_goods", "Retail and other goods"), ("elec_gas", "Electricity and gas")]
 DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.09", "1.10", "1.11"]
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 14  # bump when the outputs change, so the next run rebuilds them
+VERSION = 15  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -184,16 +186,19 @@ def _contrib_headline(idx, mas, errors):
 # is split between services and retail & other goods in the ratio implied by the published MAS core indices over
 # 2014-18 (expressed at 2014 prices). The same calculation reproduces MAS's published 2019 and 2024 splits; summing
 # SingStat's 2014 item weights by MAS's classification gives 2,922 and 1,226, within about 20 of these.
-CORE_WEIGHTS = {"2014": {"food": 2167, "services": 2939, "retail_goods": 1209, "elec_gas": 249},
-                "2019": {"food": 2110, "services": 3173, "retail_goods": 1111, "elec_gas": 188},
-                "2024": {"food": 2042, "services": 3173, "retail_goods": 1025, "elec_gas": 198}}
+CORE_WEIGHTS = {"2014": {"food_ex_fbss": 774, "fbss": 1393, "services": 2939, "retail_goods": 1209, "elec_gas": 249},
+                "2019": {"food_ex_fbss": 682, "fbss": 1428, "services": 3173, "retail_goods": 1111, "elec_gas": 188},
+                "2024": {"food_ex_fbss": 651, "fbss": 1391, "services": 3173, "retail_goods": 1025, "elec_gas": 198}}
+# Food is split into its two parts at SingStat's published weights (2014 and 2019: IP-E48, on the classification
+# MAS's 2019 food weight of 2,110 uses; 2024: IP-E61); each pair sums to MAS's food weight.
 
 
 def _contrib_core(idx, mas, errors):
-    """Contributions of food, services, retail & other goods and electricity & gas to MAS core y/y, Jan 2015 on,
+    """Contributions of food (groceries and serving services), services, retail & other goods and electricity & gas
+    to MAS core y/y, Jan 2015 on,
     at MAS's published weights (estimated split for the 2014 basket, see CORE_WEIGHTS); same method as _contrib_headline, with MAS core in place of all items."""
     A = mas["1"]
-    P = {"food": idx["1.0"], "services": mas["2"], "retail_goods": mas["3"], "elec_gas": mas["4"]}
+    P = {"food_ex_fbss": idx["1.01"], "fbss": idx["1.11"], "services": mas["2"], "retail_goods": mas["3"], "elec_gas": mas["4"]}
     # the services, retail & other goods and electricity & gas indices start in Jan 2014, so the 2014 basket is
     # anchored there rather than at Dec 2013
     segs = [("2014", "2014-01-01", "2018-12-01", "2014-01-01"),
