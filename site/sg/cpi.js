@@ -285,18 +285,19 @@ dash.calc('cpi_heat', {
 
   // Contributions to the y/y change in all items (calculated from the published indices; see Methodology).
   function contribChart(opt) {
-    opt = opt || { id: 'cpi-contrib', pre: '', line: 'CPI, y/y', keys: null };
+    opt = opt || { id: 'cpi-contrib', pre: '', line: 'CPI, y/y', keys: ['core', 'accommodation', 'private_transport'] };
     const box = document.getElementById(opt.id + '-chart');
     const D = dash.data('sg_cpi_contrib');
     if (failed(D.status)) { J.fail(box); return; }
     if (D.status !== 'ok') { box.replaceChildren(); return; }
     const ALL = [
+      { key: 'core', name: 'MAS core', color: J.PAL[0], bar: true },
       { key: 'services', name: 'Services', color: J.PAL[3], bar: true },
       { key: 'retail_goods', name: 'Retail and other goods', color: J.PAL[4], bar: true },
       { key: 'food', name: 'Food', color: J.PAL[5], bar: true },
       { key: 'elec_gas', name: 'Electricity and gas', color: J.PAL[0], bar: true },
-      { key: 'accommodation', name: 'Accommodation', color: J.PAL[7], bar: true },
-      { key: 'private_transport', name: 'Private transport', color: J.PAL[6], bar: true },
+      { key: 'accommodation', name: 'Accommodation', color: J.PAL[4], bar: true },
+      { key: 'private_transport', name: 'Private transport', color: J.PAL[5], bar: true },
     ];
     const PARTS = opt.keys ? ALL.filter((p) => opt.keys.includes(p.key)) : ALL;
     const by = new Map();

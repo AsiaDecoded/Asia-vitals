@@ -210,6 +210,36 @@
     try { box.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); } catch (err) { /* older browsers */ }
   }
 
+  // Expand / collapse arrows on every chart and table card.
+  const ICON_OPEN = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2.5h4v4M13.5 2.5 9 7M6.5 13.5h-4v-4M2.5 13.5 7 9"/></svg>';
+  const ICON_CLOSE = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 6.5h-4v-4M9.5 6.5 14 2M2.5 9.5h4v4M6.5 9.5 2 14"/></svg>';
+  let openCard = null, back = null;
+  function collapse() {
+    if (!openCard) return;
+    const btn = openCard.querySelector(':scope > .ad-x');
+    openCard.classList.remove('ad-expanded'); document.body.classList.remove('ad-noscroll');
+    if (btn) { btn.innerHTML = ICON_OPEN; btn.setAttribute('aria-label', 'Expand'); btn.title = 'Expand'; }
+    if (back) back.remove();
+    const c = openCard; openCard = null; back = null;
+    try { c.scrollIntoView({ block: 'nearest' }); } catch (e) { /* older browsers */ }
+  }
+  function expand(card) {
+    collapse();
+    back = document.createElement('div'); back.className = 'ad-x-back'; back.addEventListener('click', collapse);
+    document.body.appendChild(back);
+    card.classList.add('ad-expanded'); document.body.classList.add('ad-noscroll'); openCard = card;
+    const btn = card.querySelector(':scope > .ad-x');
+    if (btn) { btn.innerHTML = ICON_CLOSE; btn.setAttribute('aria-label', 'Collapse'); btn.title = 'Collapse'; }
+  }
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') collapse(); });
+  document.querySelectorAll('.jg-card').forEach((card) => {
+    if (!card.querySelector('.jg-chart') && !card.querySelector('table')) return;
+    const x = document.createElement('button'); x.type = 'button'; x.className = 'ad-x';
+    x.innerHTML = ICON_OPEN; x.setAttribute('aria-label', 'Expand'); x.title = 'Expand';
+    x.addEventListener('click', () => (openCard === card ? collapse() : expand(card)));
+    card.classList.add('ad-hasx'); card.appendChild(x);
+  });
+
   document.querySelectorAll('.jg-card').forEach((card) => {
     const isTable = !card.querySelector('.jg-chart') && card.querySelector('table');
     if (!card.querySelector('.jg-chart') && !isTable) return;
