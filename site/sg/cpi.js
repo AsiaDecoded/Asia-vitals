@@ -116,7 +116,7 @@ dash.calc('cpi_heat', {
     const W = new Map(sg_cpi_series_weights.map((r) => [r.series, Number(r.weight)]));
     const ROWS = ['all', 'less_imputed', 'less_accom', 'core', 'food', 'food_ex_fbss', 'fbss',
       'fuel', 'electricity', 'gas', 'petrol', 'other_fuels', 'clothing', 'housing', 'accommodation',
-      'household', 'health', 'transport', 'info_comm', 'recreation', 'education', 'misc'];
+      'household', 'health', 'transport', 'private_transport', 'info_comm', 'recreation', 'education', 'misc'];
     return cpi_series.filter((r) => ROWS.includes(r.series) && r.date >= '2026-01-01' && r.yoy != null)
       .map((r) => ({ date: r.date, series: r.series, name: r.label, yoy: r.yoy, order: ROWS.indexOf(r.series), weight: W.has(r.series) ? W.get(r.series) : null }));
   },
@@ -481,7 +481,7 @@ dash.calc('cpi_heat', {
       const wt = D.data.find((r) => r.series === k).weight;
       const wc = tr.insertCell(); wc.className = 'wt'; wc.textContent = wt == null ? '' : d3.format('.1f')(wt / 100);
       if (['all', 'less_imputed', 'less_accom', 'core'].includes(k)) tr.className = 'lead';
-      if (['food_ex_fbss', 'fbss', 'accommodation', 'electricity', 'gas', 'petrol', 'other_fuels'].includes(k)) tr.className = 'sub';
+      if (['food_ex_fbss', 'fbss', 'accommodation', 'electricity', 'gas', 'petrol', 'other_fuels', 'private_transport'].includes(k)) tr.className = 'sub';
       if (k === 'food') tr.className = 'gap';
       const vs = dates.map((d) => (val.get(`${k}|${d}`) || {}).yoy).filter((v) => v != null);
       const lo = Math.min(...vs), hi = Math.max(...vs);
