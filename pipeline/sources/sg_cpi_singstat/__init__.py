@@ -86,7 +86,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 8  # bump when the outputs change, so the next run rebuilds them
+VERSION = 9  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -173,6 +173,60 @@ def _contrib(idx, mas, errors, core=False):
     weights = [{"from": a, "to": b, "max_residual": round(res, 5), "weights_per_10000": {k: round(v * 1e4, 1) for k, v in c.items()}}
                for a, b, c, res in segs]
     return rows, weights
+
+
+def _path_coef(idx, names, no, months):
+    """Coefficient of series `no` in all items over `months`, multiplying parent->child shares down the tree."""
+    parts = no.split(".")
+    chain = [".".join(parts[:i]) for i in range(2, len(parts) + 1)]
+    c, worst, parent = 1.0, 0.0, "1"
+    for node in chain:
+        if parent == "1":
+            kids = DIVISIONS
+        else:
+            depth = parent.count(".") + 1
+            kids = [n for n in names if n.startswith(parent + ".") and n.count(".") == depth
+                    and all(t in idx.get(n, {}) for t in months)]
+        k, r = _lstsq(idx[parent], [idx[x] for x in kids], months)
+        worst = max(worst, r)
+        c *= dict(zip(kids, k))[node]
+        parent = node
+    return c, worst
+
+
+PETROL_W2019 = 194  # per 10,000, 2019-based CPI (SingStat IP-E48, Appendix I)
+
+
+def _ex_food_energy(idx, names, errors):
+    latest = max(idx["1"])
+    segs = []
+    for a, b in (("2019-01-01", "2023-12-01"), ("2024-01-01", latest)):
+        months = sorted(d for d in idx["1"] if a <= d <= b)
+        cd, worst = _lstsq(idx["1"], [idx[x] for x in DIVISIONS], months)
+        ck = {}
+        for n in ["1.01", "1.03.2.3", "1.03.2.4"] + (["1.06.1.5", "1.06.1.6"] if a >= "2024" else []):
+            c, r = _path_coef(idx, names, n, months)
+            ck[n], worst = c, max(worst, r)
+        if a < "2024":
+            ref = lambda s: sum(s[f"2019-{m:02d}-01"] for m in range(1, 13)) / 12  # noqa: E731
+            ck["1.06.1.5"] = PETROL_W2019 / 1e4 * ref(idx["1"]) / ref(idx["1.06.1.5"])
+        if worst > TOL or any(v < 0 for v in ck.values()):
+            errors.append(f"CPI less food and energy: basket from {a} not reproduced (residual {worst:.4f})")
+        segs.append((months, cd, ck))
+
+    def level(cd, ck, t):
+        return sum(c * idx[x][t] for c, x in zip(cd, DIVISIONS)) - sum(c * idx[n][t] for n, c in ck.items())
+    out = {}
+    for i, (months, cd, ck) in enumerate(segs):
+        seg = {t: level(cd, ck, t) for t in months}
+        if i:
+            L = _shift(months[0], -1)
+            f = out[L] / level(cd, ck, L)
+            seg = {t: v * f for t, v in seg.items()}
+        out.update(seg)
+    # express on 2024 = 100
+    base = sum(out[f"2024-{m:02d}-01"] for m in range(1, 13)) / 12
+    return {t: v / base * 100 for t, v in out.items()}
 
 
 def _tree(idx, names, errors):
@@ -337,15 +391,13 @@ def update(**_):
                      "index": round(fuel[d], 3), "mom": round((fuel[d] / pm - 1) * 100, 1) if pm else None,
                      "yoy": round((fuel[d] / py - 1) * 100, 1) if py else None})
     order += 1
-    # CPI excluding food (other than food and beverage serving services) and energy, calculated on the 2024 basket:
-    # all items less the weighted groceries and energy indices, rescaled. Broadly comparable to Japan's core-core
-    # and India's core (both keep eating out, exclude food bought for the home and energy).
-    wg = node_w["1.01"]
-    ex = {}
-    for d in sorted(fuel):
-        if d not in idx["1.01"]:
-            continue
-        ex[d] = (idx["1"][d] - wg * idx["1.01"][d] - sum(w * idx[no][d] for no, w in fw.items())) / (1 - wg - sum(fw.values()))
+    # CPI excluding food (other than food and beverage serving services) and energy: Jan 2019 on, the 2019 and
+    # 2024 baskets linked at Dec 2023. In each basket: all items (as the weighted divisions) less the weighted
+    # groceries and energy indices. Weights come from the index identities, except petrol on the 2019 basket,
+    # whose item weight is SingStat's published one (Information Paper IP-E48: 194 per 10,000), because the
+    # other private-transport items have no history before 2024 to solve it from. Broadly comparable to Japan's
+    # core (less food and energy, plus eating out) and India's core 1 (both keep eating out).
+    ex = _ex_food_energy(idx, names, errors)
     for d in sorted(ex):
         pm, py = ex.get(_shift(d, -1)), ex.get(_shift(d, -12))
         rows.append({"date": d, "area": "national", "series": "ex_food_energy",

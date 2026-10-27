@@ -45980,6 +45980,7 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2019-01-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2019-01-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2019-01-01,96.935,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2019-01-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2019-01-01,85.473,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2019-02-01,85.901,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2019-02-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2019-02-01,0.5,%,Singapore Department of Statistics,C2026-09
@@ -46092,6 +46093,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2019-02-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2019-02-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2019-02-01,96.686,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2019-02-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2019-02-01,86.013,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2019-02-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2019-03-01,85.917,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2019-03-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2019-03-01,0.7,%,Singapore Department of Statistics,C2026-09
@@ -46204,6 +46207,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2019-03-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2019-03-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2019-03-01,96.43,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2019-03-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2019-03-01,86.041,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2019-03-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2019-04-01,85.73,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2019-04-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2019-04-01,0.9,%,Singapore Department of Statistics,C2026-09
@@ -46316,6 +46321,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2019-04-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2019-04-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2019-04-01,96.209,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2019-04-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2019-04-01,85.887,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2019-04-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2019-05-01,86.221,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2019-05-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2019-05-01,0.9,%,Singapore Department of Statistics,C2026-09
@@ -46428,6 +46435,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2019-05-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2019-05-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2019-05-01,96.876,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2019-05-01,0.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2019-05-01,86.432,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2019-05-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2019-06-01,85.974,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2019-06-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2019-06-01,0.5,%,Singapore Department of Statistics,C2026-09
@@ -46540,6 +46549,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2019-06-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2019-06-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2019-06-01,97.071,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2019-06-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2019-06-01,86.206,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2019-06-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2019-07-01,85.587,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2019-07-01,-0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2019-07-01,0.2,%,Singapore Department of Statistics,C2026-09
@@ -46652,6 +46663,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2019-07-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2019-07-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2019-07-01,97.087,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2019-07-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2019-07-01,85.717,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2019-07-01,-0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2019-08-01,86.123,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2019-08-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2019-08-01,0.4,%,Singapore Department of Statistics,C2026-09
@@ -46764,6 +46777,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2019-08-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2019-08-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2019-08-01,97.037,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2019-08-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2019-08-01,86.314,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2019-08-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2019-09-01,86.069,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2019-09-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2019-09-01,0.4,%,Singapore Department of Statistics,C2026-09
@@ -46876,6 +46891,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2019-09-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2019-09-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2019-09-01,96.931,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2019-09-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2019-09-01,86.224,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2019-09-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2019-10-01,85.883,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2019-10-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2019-10-01,0.5,%,Singapore Department of Statistics,C2026-09
@@ -46988,6 +47005,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2019-10-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2019-10-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2019-10-01,96.987,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2019-10-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2019-10-01,86.034,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2019-10-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2019-11-01,86.16,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2019-11-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2019-11-01,0.6,%,Singapore Department of Statistics,C2026-09
@@ -47100,6 +47119,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2019-11-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2019-11-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2019-11-01,97.018,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2019-11-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2019-11-01,86.341,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2019-11-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2019-12-01,86.325,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2019-12-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2019-12-01,0.8,%,Singapore Department of Statistics,C2026-09
@@ -47212,6 +47233,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2019-12-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2019-12-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2019-12-01,96.915,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2019-12-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2019-12-01,86.492,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2019-12-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2020-01-01,86.121,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2020-01-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2020-01-01,0.8,%,Singapore Department of Statistics,C2026-09
@@ -47324,6 +47347,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2020-01-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2020-01-01,-2.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2020-01-01,96.754,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2020-01-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2020-01-01,86.172,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2020-01-01,-0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2020-01-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2020-02-01,86.183,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2020-02-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2020-02-01,0.3,%,Singapore Department of Statistics,C2026-09
@@ -47436,6 +47462,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2020-02-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2020-02-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2020-02-01,96.603,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2020-02-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2020-02-01,86.266,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2020-02-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2020-02-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2020-03-01,85.888,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2020-03-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2020-03-01,0.0,%,Singapore Department of Statistics,C2026-09
@@ -47548,6 +47577,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2020-03-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2020-03-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2020-03-01,96.182,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2020-03-01,-0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2020-03-01,86.066,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2020-03-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2020-03-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2020-04-01,85.098,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2020-04-01,-0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2020-04-01,-0.7,%,Singapore Department of Statistics,C2026-09
@@ -47660,6 +47692,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2020-04-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2020-04-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2020-04-01,95.409,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2020-04-01,-0.8,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2020-04-01,85.197,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2020-04-01,-1.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2020-04-01,-0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2020-05-01,85.502,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2020-05-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2020-05-01,-0.8,%,Singapore Department of Statistics,C2026-09
@@ -47772,6 +47807,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2020-05-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2020-05-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2020-05-01,95.519,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2020-05-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2020-05-01,85.685,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2020-05-01,0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2020-05-01,-0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2020-06-01,85.52,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2020-06-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2020-06-01,-0.5,%,Singapore Department of Statistics,C2026-09
@@ -47884,6 +47922,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2020-06-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2020-06-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2020-06-01,95.255,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2020-06-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2020-06-01,85.682,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2020-06-01,-0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2020-06-01,-0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2020-07-01,85.245,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2020-07-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2020-07-01,-0.4,%,Singapore Department of Statistics,C2026-09
@@ -47996,6 +48037,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2020-07-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2020-07-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2020-07-01,95.514,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2020-07-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2020-07-01,85.535,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2020-07-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2020-07-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2020-08-01,85.787,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2020-08-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2020-08-01,-0.4,%,Singapore Department of Statistics,C2026-09
@@ -48108,6 +48152,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2020-08-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2020-08-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2020-08-01,95.263,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2020-08-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2020-08-01,86.175,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2020-08-01,0.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2020-08-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2020-09-01,86.073,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2020-09-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2020-09-01,0.0,%,Singapore Department of Statistics,C2026-09
@@ -48220,6 +48267,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2020-09-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2020-09-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2020-09-01,95.499,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2020-09-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2020-09-01,86.478,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2020-09-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2020-09-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2020-10-01,85.709,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2020-10-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2020-10-01,-0.2,%,Singapore Department of Statistics,C2026-09
@@ -48332,6 +48382,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2020-10-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2020-10-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2020-10-01,95.705,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2020-10-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2020-10-01,86.009,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2020-10-01,-0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2020-10-01,-0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2020-11-01,86.047,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2020-11-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2020-11-01,-0.1,%,Singapore Department of Statistics,C2026-09
@@ -48444,6 +48497,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2020-11-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2020-11-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2020-11-01,95.291,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2020-11-01,-0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2020-11-01,86.376,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2020-11-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2020-11-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2020-12-01,86.358,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2020-12-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2020-12-01,0.0,%,Singapore Department of Statistics,C2026-09
@@ -48556,6 +48612,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2020-12-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2020-12-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2020-12-01,95.457,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2020-12-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2020-12-01,86.708,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2020-12-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2020-12-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2021-01-01,86.334,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2021-01-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2021-01-01,0.2,%,Singapore Department of Statistics,C2026-09
@@ -48668,6 +48727,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2021-01-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2021-01-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2021-01-01,95.235,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2021-01-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2021-01-01,86.615,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2021-01-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2021-01-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2021-02-01,86.827,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2021-02-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2021-02-01,0.7,%,Singapore Department of Statistics,C2026-09
@@ -48780,6 +48842,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2021-02-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2021-02-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2021-02-01,95.154,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2021-02-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2021-02-01,87.01,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2021-02-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2021-02-01,0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2021-03-01,87.019,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2021-03-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2021-03-01,1.3,%,Singapore Department of Statistics,C2026-09
@@ -48892,6 +48957,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2021-03-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2021-03-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2021-03-01,95.118,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2021-03-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2021-03-01,87.17,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2021-03-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2021-03-01,1.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2021-04-01,86.875,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2021-04-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2021-04-01,2.1,%,Singapore Department of Statistics,C2026-09
@@ -49004,6 +49072,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2021-04-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2021-04-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2021-04-01,95.17,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2021-04-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2021-04-01,86.931,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2021-04-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2021-04-01,2.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2021-05-01,87.574,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2021-05-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2021-05-01,2.4,%,Singapore Department of Statistics,C2026-09
@@ -49116,6 +49187,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2021-05-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2021-05-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2021-05-01,95.284,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2021-05-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2021-05-01,87.646,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2021-05-01,0.8,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2021-05-01,2.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2021-06-01,87.569,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2021-06-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2021-06-01,2.4,%,Singapore Department of Statistics,C2026-09
@@ -49228,6 +49302,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2021-06-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2021-06-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2021-06-01,95.221,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2021-06-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2021-06-01,87.626,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2021-06-01,-0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2021-06-01,2.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2021-07-01,87.398,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2021-07-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2021-07-01,2.5,%,Singapore Department of Statistics,C2026-09
@@ -49340,6 +49417,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2021-07-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2021-07-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2021-07-01,94.92,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2021-07-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2021-07-01,87.325,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2021-07-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2021-07-01,2.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2021-08-01,87.882,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2021-08-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2021-08-01,2.4,%,Singapore Department of Statistics,C2026-09
@@ -49452,6 +49532,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2021-08-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2021-08-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2021-08-01,95.236,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2021-08-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2021-08-01,87.853,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2021-08-01,0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2021-08-01,1.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2021-09-01,88.248,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2021-09-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2021-09-01,2.5,%,Singapore Department of Statistics,C2026-09
@@ -49564,6 +49647,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2021-09-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2021-09-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2021-09-01,95.307,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2021-09-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2021-09-01,88.23,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2021-09-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2021-09-01,2.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2021-10-01,88.5,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2021-10-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2021-10-01,3.3,%,Singapore Department of Statistics,C2026-09
@@ -49676,6 +49762,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2021-10-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2021-10-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2021-10-01,95.212,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2021-10-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2021-10-01,88.405,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2021-10-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2021-10-01,2.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2021-11-01,89.369,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2021-11-01,1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2021-11-01,3.9,%,Singapore Department of Statistics,C2026-09
@@ -49788,6 +49877,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2021-11-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2021-11-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2021-11-01,95.246,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2021-11-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2021-11-01,89.271,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2021-11-01,1.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2021-11-01,3.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2021-12-01,89.781,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2021-12-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2021-12-01,4.0,%,Singapore Department of Statistics,C2026-09
@@ -49900,6 +49992,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2021-12-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2021-12-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2021-12-01,95.493,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2021-12-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2021-12-01,89.731,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2021-12-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2021-12-01,3.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2022-01-01,89.81,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2022-01-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2022-01-01,4.0,%,Singapore Department of Statistics,C2026-09
@@ -50012,6 +50107,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2022-01-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2022-01-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2022-01-01,95.166,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2022-01-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2022-01-01,89.559,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2022-01-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2022-01-01,3.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2022-02-01,90.59,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2022-02-01,0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2022-02-01,4.3,%,Singapore Department of Statistics,C2026-09
@@ -50124,6 +50222,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2022-02-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2022-02-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2022-02-01,95.311,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2022-02-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2022-02-01,90.4,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2022-02-01,0.9,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2022-02-01,3.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2022-03-01,91.715,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2022-03-01,1.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2022-03-01,5.4,%,Singapore Department of Statistics,C2026-09
@@ -50236,6 +50337,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2022-03-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2022-03-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2022-03-01,95.52,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2022-03-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2022-03-01,91.396,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2022-03-01,1.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2022-03-01,4.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2022-04-01,91.594,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2022-04-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2022-04-01,5.4,%,Singapore Department of Statistics,C2026-09
@@ -50348,6 +50452,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2022-04-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2022-04-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2022-04-01,95.427,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2022-04-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2022-04-01,91.077,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2022-04-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2022-04-01,4.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2022-05-01,92.502,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2022-05-01,1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2022-05-01,5.6,%,Singapore Department of Statistics,C2026-09
@@ -50460,6 +50567,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2022-05-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2022-05-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2022-05-01,95.424,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2022-05-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2022-05-01,91.93,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2022-05-01,0.9,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2022-05-01,4.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2022-06-01,93.423,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2022-06-01,1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2022-06-01,6.7,%,Singapore Department of Statistics,C2026-09
@@ -50572,6 +50682,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2022-06-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2022-06-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2022-06-01,95.781,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2022-06-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2022-06-01,92.743,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2022-06-01,0.9,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2022-06-01,5.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2022-07-01,93.563,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2022-07-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2022-07-01,7.1,%,Singapore Department of Statistics,C2026-09
@@ -50684,6 +50797,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2022-07-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2022-07-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2022-07-01,95.512,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2022-07-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2022-07-01,92.959,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2022-07-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2022-07-01,6.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2022-08-01,94.445,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2022-08-01,0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2022-08-01,7.5,%,Singapore Department of Statistics,C2026-09
@@ -50796,6 +50912,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2022-08-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2022-08-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2022-08-01,95.545,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2022-08-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2022-08-01,94.09,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2022-08-01,1.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2022-08-01,7.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2022-09-01,94.854,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2022-09-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2022-09-01,7.5,%,Singapore Department of Statistics,C2026-09
@@ -50908,6 +51027,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2022-09-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2022-09-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2022-09-01,96.283,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2022-09-01,0.8,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2022-09-01,94.512,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2022-09-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2022-09-01,7.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2022-10-01,94.475,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2022-10-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2022-10-01,6.8,%,Singapore Department of Statistics,C2026-09
@@ -51020,6 +51142,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2022-10-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2022-10-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2022-10-01,96.148,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2022-10-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2022-10-01,94.137,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2022-10-01,-0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2022-10-01,6.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2022-11-01,95.396,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2022-11-01,1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2022-11-01,6.7,%,Singapore Department of Statistics,C2026-09
@@ -51132,6 +51257,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2022-11-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2022-11-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2022-11-01,96.69,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2022-11-01,0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2022-11-01,95.123,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2022-11-01,1.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2022-11-01,6.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2022-12-01,95.591,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2022-12-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2022-12-01,6.5,%,Singapore Department of Statistics,C2026-09
@@ -51244,6 +51372,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2022-12-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2022-12-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2022-12-01,96.631,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2022-12-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2022-12-01,95.363,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2022-12-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2022-12-01,6.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2023-01-01,95.772,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2023-01-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2023-01-01,6.6,%,Singapore Department of Statistics,C2026-09
@@ -51356,6 +51487,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2023-01-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2023-01-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2023-01-01,97.177,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2023-01-01,0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2023-01-01,95.462,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2023-01-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2023-01-01,6.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2023-02-01,96.308,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2023-02-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2023-02-01,6.3,%,Singapore Department of Statistics,C2026-09
@@ -51468,6 +51602,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2023-02-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2023-02-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2023-02-01,97.778,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2023-02-01,0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2023-02-01,96.068,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2023-02-01,0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2023-02-01,6.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2023-03-01,96.792,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2023-03-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2023-03-01,5.5,%,Singapore Department of Statistics,C2026-09
@@ -51580,6 +51717,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2023-03-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2023-03-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2023-03-01,98.349,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2023-03-01,0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2023-03-01,96.559,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2023-03-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2023-03-01,5.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2023-04-01,96.869,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2023-04-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2023-04-01,5.8,%,Singapore Department of Statistics,C2026-09
@@ -51692,6 +51832,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2023-04-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2023-04-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2023-04-01,98.311,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2023-04-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2023-04-01,96.676,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2023-04-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2023-04-01,6.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2023-05-01,97.181,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2023-05-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2023-05-01,5.1,%,Singapore Department of Statistics,C2026-09
@@ -51804,6 +51947,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2023-05-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2023-05-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2023-05-01,98.782,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2023-05-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2023-05-01,96.989,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2023-05-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2023-05-01,5.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2023-06-01,97.645,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2023-06-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2023-06-01,4.5,%,Singapore Department of Statistics,C2026-09
@@ -51916,6 +52062,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2023-06-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2023-06-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2023-06-01,98.805,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2023-06-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2023-06-01,97.528,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2023-06-01,0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2023-06-01,5.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2023-07-01,97.417,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2023-07-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2023-07-01,4.1,%,Singapore Department of Statistics,C2026-09
@@ -52028,6 +52177,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2023-07-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2023-07-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2023-07-01,99.373,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2023-07-01,0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2023-07-01,97.227,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2023-07-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2023-07-01,4.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2023-08-01,98.278,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2023-08-01,0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2023-08-01,4.1,%,Singapore Department of Statistics,C2026-09
@@ -52140,6 +52292,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2023-08-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2023-08-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2023-08-01,99.45,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2023-08-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2023-08-01,98.096,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2023-08-01,0.9,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2023-08-01,4.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2023-09-01,98.776,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2023-09-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2023-09-01,4.1,%,Singapore Department of Statistics,C2026-09
@@ -52252,6 +52407,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2023-09-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2023-09-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2023-09-01,98.798,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2023-09-01,-0.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2023-09-01,98.589,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2023-09-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2023-09-01,4.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2023-10-01,98.974,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2023-10-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2023-10-01,4.8,%,Singapore Department of Statistics,C2026-09
@@ -52364,6 +52522,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2023-10-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2023-10-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2023-10-01,99.302,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2023-10-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2023-10-01,98.791,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2023-10-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2023-10-01,4.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2023-11-01,98.808,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2023-11-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2023-11-01,3.6,%,Singapore Department of Statistics,C2026-09
@@ -52476,6 +52637,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2023-11-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2023-11-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2023-11-01,99.301,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2023-11-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2023-11-01,98.604,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2023-11-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2023-11-01,3.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2023-12-01,99.177,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2023-12-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2023-12-01,3.8,%,Singapore Department of Statistics,C2026-09
@@ -52588,6 +52752,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2023-12-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2023-12-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2023-12-01,98.799,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2023-12-01,-0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2023-12-01,99.091,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2023-12-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2023-12-01,3.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2024-01-01,98.752,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2024-01-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2024-01-01,3.1,%,Singapore Department of Statistics,C2026-09
@@ -52701,7 +52868,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2024-01-01,1
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2024-01-01,99.831,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2024-01-01,1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",index,national,M,2024-01-01,98.808,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
-SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2024-01-01,98.711,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2024-01-01,98.71,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2024-01-01,-0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2024-01-01,3.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2024-02-01,99.755,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2024-02-01,1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2024-02-01,3.6,%,Singapore Department of Statistics,C2026-09
@@ -52818,6 +52987,7 @@ SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",index,nat
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",mom,national,M,2024-02-01,1.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2024-02-01,99.712,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2024-02-01,1.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2024-02-01,3.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2024-03-01,99.712,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2024-03-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2024-03-01,3.0,%,Singapore Department of Statistics,C2026-09
@@ -52934,6 +53104,7 @@ SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",index,nat
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",mom,national,M,2024-03-01,-0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2024-03-01,99.71,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2024-03-01,-0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2024-03-01,3.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2024-04-01,99.426,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2024-04-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2024-04-01,2.6,%,Singapore Department of Statistics,C2026-09
@@ -53048,8 +53219,9 @@ SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,nat
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2024-04-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",index,national,M,2024-04-01,101.288,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",mom,national,M,2024-04-01,1.3,%,Singapore Department of Statistics,C2026-09
-SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2024-04-01,99.371,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2024-04-01,99.37,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2024-04-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2024-04-01,2.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2024-05-01,100.209,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2024-05-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2024-05-01,3.1,%,Singapore Department of Statistics,C2026-09
@@ -53164,8 +53336,9 @@ SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,nat
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2024-05-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",index,national,M,2024-05-01,100.896,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",mom,national,M,2024-05-01,-0.4,%,Singapore Department of Statistics,C2026-09
-SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2024-05-01,100.217,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2024-05-01,100.216,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2024-05-01,0.9,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2024-05-01,3.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2024-06-01,100.104,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2024-06-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2024-06-01,2.5,%,Singapore Department of Statistics,C2026-09
@@ -53282,6 +53455,7 @@ SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",index,nat
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",mom,national,M,2024-06-01,-0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2024-06-01,100.141,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2024-06-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2024-06-01,2.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2024-07-01,99.818,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2024-07-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2024-07-01,2.5,%,Singapore Department of Statistics,C2026-09
@@ -53398,6 +53572,7 @@ SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",index,nat
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",mom,national,M,2024-07-01,0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2024-07-01,99.775,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2024-07-01,-0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2024-07-01,2.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2024-08-01,100.414,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2024-08-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2024-08-01,2.2,%,Singapore Department of Statistics,C2026-09
@@ -53514,6 +53689,7 @@ SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",index,nat
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",mom,national,M,2024-08-01,-1.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2024-08-01,100.488,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2024-08-01,0.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2024-08-01,2.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2024-09-01,100.645,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2024-09-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2024-09-01,1.9,%,Singapore Department of Statistics,C2026-09
@@ -53628,8 +53804,9 @@ SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,nat
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2024-09-01,-0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",index,national,M,2024-09-01,99.904,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",mom,national,M,2024-09-01,0.4,%,Singapore Department of Statistics,C2026-09
-SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2024-09-01,100.673,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2024-09-01,100.672,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2024-09-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2024-09-01,2.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2024-10-01,100.119,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2024-10-01,-0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2024-10-01,1.2,%,Singapore Department of Statistics,C2026-09
@@ -53746,6 +53923,7 @@ SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",index,nat
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",mom,national,M,2024-10-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2024-10-01,100.089,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2024-10-01,-0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2024-10-01,1.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2024-11-01,100.387,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2024-11-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2024-11-01,1.6,%,Singapore Department of Statistics,C2026-09
@@ -53860,8 +54038,9 @@ SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,nat
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2024-11-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",index,national,M,2024-11-01,99.625,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",mom,national,M,2024-11-01,-0.2,%,Singapore Department of Statistics,C2026-09
-SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2024-11-01,100.397,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2024-11-01,100.396,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2024-11-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2024-11-01,1.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2024-12-01,100.661,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2024-12-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2024-12-01,1.5,%,Singapore Department of Statistics,C2026-09
@@ -53978,6 +54157,7 @@ SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",index,nat
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",mom,national,M,2024-12-01,-0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2024-12-01,100.72,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2024-12-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2024-12-01,1.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2025-01-01,99.908,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2025-01-01,-0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2025-01-01,1.2,%,Singapore Department of Statistics,C2026-09
@@ -54683,7 +54863,7 @@ SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,natio
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",index,national,M,2025-06-01,97.891,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",mom,national,M,2025-06-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",yoy,national,M,2025-06-01,-2.2,%,Singapore Department of Statistics,C2026-09
-SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2025-06-01,101.064,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2025-06-01,101.063,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2025-06-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2025-06-01,0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2025-07-01,100.447,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
@@ -55037,7 +55217,7 @@ SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,natio
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",index,national,M,2025-09-01,96.176,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",mom,national,M,2025-09-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",yoy,national,M,2025-09-01,-3.7,%,Singapore Department of Statistics,C2026-09
-SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2025-09-01,101.565,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2025-09-01,101.564,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2025-09-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2025-09-01,0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2025-10-01,101.33,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
@@ -55273,7 +55453,7 @@ SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,natio
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",index,national,M,2025-11-01,96.515,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",mom,national,M,2025-11-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",yoy,national,M,2025-11-01,-3.1,%,Singapore Department of Statistics,C2026-09
-SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2025-11-01,101.794,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2025-11-01,101.793,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2025-11-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2025-11-01,1.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2025-12-01,101.854,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
@@ -55627,7 +55807,7 @@ SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,natio
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",index,national,M,2026-02-01,94.913,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",mom,national,M,2026-02-01,-0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",yoy,national,M,2026-02-01,-4.2,%,Singapore Department of Statistics,C2026-09
-SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2026-02-01,102.104,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2026-02-01,102.103,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2026-02-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2026-02-01,1.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2026-03-01,102.405,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
@@ -55863,7 +56043,7 @@ SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,natio
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",index,national,M,2026-04-01,105.689,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",mom,national,M,2026-04-01,3.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",yoy,national,M,2026-04-01,8.2,%,Singapore Department of Statistics,C2026-09
-SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2026-04-01,101.785,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2026-04-01,101.786,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2026-04-01,-0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2026-04-01,1.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2026-05-01,102.814,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
@@ -56099,7 +56279,7 @@ SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,natio
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",index,national,M,2026-06-01,104.739,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",mom,national,M,2026-06-01,-0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",yoy,national,M,2026-06-01,7.0,%,Singapore Department of Statistics,C2026-09
-SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2026-06-01,102.731,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),index,national,M,2026-06-01,102.73,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),mom,national,M,2026-06-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),yoy,national,M,2026-06-01,1.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2026-07-01,102.696,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
