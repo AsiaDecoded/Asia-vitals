@@ -1,0 +1,22 @@
+series,label,weight
+all,All items,10000.0
+less_imputed,All items less imputed rentals for housing,7862.6
+less_accom,All items less accommodation,7344.2
+core,MAS core inflation measure,6439.3
+fuel,Energy (calculated),375.8
+food,Food,2039.6
+food_ex_fbss,Food excl. food and beverage serving services,651.7
+fbss,Food and beverage serving services,1388.0
+accommodation,Accommodation,2655.8
+private_transport,Private transport,904.9
+petrol,Petrol,173.8
+electricity,Electricity,179.0
+clothing,Clothing and footwear,164.5
+housing,Housing and utilities,2937.8
+household,Household durables and services,547.8
+health,Health,1009.8
+transport,Transport,1305.3
+info_comm,Information and communication,380.3
+recreation,"Recreation, sport and culture",595.5
+education,Education,577.9
+misc,Miscellaneous goods and services,441.3

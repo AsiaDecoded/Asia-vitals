@@ -11,6 +11,8 @@ Writes data/sg/cpi/:
   sg_cpi_diffusion.csv  share of items with prices up / down on a year earlier, Jan 2016 on
   sg_cpi_items.csv      every item, latest 12 months: 2024 weight, index, m/m, y/y (published),
                         contribution to all-items y/y (calculated)
+  sg_cpi_series_weights.csv  2024 basket weight (per 10,000) of all items, CPI less imputed rentals, CPI less
+                        accommodation, MAS core, energy (calculated), food, divisions and groups in sg_cpi.csv
   sg_cpi_weights.json   the effective basket weights recovered from the published indices, and fit residuals
                         Also in sg_cpi.csv (calculated, series "fuel"): fuel CPI = electricity, gas, petrol and other
                         fuel & lubricants for personal transport, weighted by their 2024 basket weights, Jan 2024 on
@@ -81,7 +83,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 3  # bump when the outputs change, so the next run rebuilds them
+VERSION = 4  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -201,7 +203,7 @@ def _tree(idx, names, errors):
     leaves = {k: v for k, v in coef.items() if k != "1" and not kids(k)}
     if abs(sum(leaves.values()) - 1) > 0.001:
         errors.append(f"item weights sum to {sum(leaves.values()):.4f}, not 1")
-    return leaves, worst
+    return leaves, worst, coef
 
 
 def _diffusion(yoy, names):
@@ -282,7 +284,7 @@ def update(**_):
     contrib, seg_weights = _contrib(idx, {k: mas[k] for k in ("1", "2", "3", "4")}, errors)
     core_contrib, core_weights = _contrib(idx, {k: mas[k] for k in ("1", "2", "3", "4")}, errors, core=True)
     contrib = sorted(contrib + core_contrib, key=lambda r: (r["date"], r["order"]))
-    item_w, worst = _tree(idx, names, errors)
+    item_w, worst, node_w = _tree(idx, names, errors)
     diff = _diffusion(S["yoy"][0], names)
     missing = [no for no in FUEL_ITEMS if no not in item_w]
     if missing:
@@ -335,6 +337,17 @@ def update(**_):
     rows.sort(key=lambda r: (r["date"], r["order"]))
     _write_csv(OUT / "sg_cpi.csv", ["date", "area", "series", "label", "group", "order", "index", "mom", "yoy"], rows)
 
+    # 2024 basket weights (per 10,000) of the headline series, divisions and calculated measures
+    W = {"all": 1.0, "less_imputed": 1 - node_w["1.03.1.2"], "less_accom": 1 - node_w["1.03.1"],
+         "core": 1 - node_w["1.03.1"] - node_w["1.06.1"], "fuel": sum(item_w[no] for no in FUEL_ITEMS),
+         "food": node_w["1.01"] + node_w["1.11"]}
+    for key, lab, grp, no in CPI:
+        if key not in W and no in node_w:
+            W[key] = node_w[no]
+    labels = {k: lab for k, lab, *_r in CPI}
+    labels.update({"core": "MAS core inflation measure", "fuel": "Energy (calculated)"})
+    _write_csv(OUT / "sg_cpi_series_weights.csv", ["series", "label", "weight"],
+               [{"series": k, "label": labels.get(k, k), "weight": round(v * 1e4, 1)} for k, v in W.items()])
     _write_csv(OUT / "sg_cpi_contrib.csv", ["date", "series", "label", "order", "contrib_yoy"], contrib)
     _write_csv(OUT / "sg_cpi_diffusion.csv", ["date", "items", "rising", "falling", "unchanged",
                                               "share_rising", "share_falling", "diffusion"], diff)
