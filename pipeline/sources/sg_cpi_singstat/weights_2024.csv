@@ -1,0 +1,160 @@
+# SingStat published CPI weights, 2024 basket, per 10,000 of all items, at the most detailed level
+# the CPI indices are published for. Source: Rebasing of the CPI (2024 as base year), Information Paper IP-E61, Appendix III.
+code,name,weight
+1.01.1.1,Rice,14
+1.01.1.2,Flour,2
+1.01.1.3,Bread,36
+1.01.1.4,"Macaroni, Noodles & Similar Pasta Products",11
+1.01.1.5,Biscuits & Cookies,11
+1.01.1.6,Cakes & Pastries,40
+1.01.1.7,Breakfast Cereals,4
+1.01.1.8,Other Cereal Products Nec,4
+1.01.2.1,"Pork, Chilled Or Frozen",35
+1.01.2.2,"Beef, Chilled Or Frozen",13
+1.01.2.3,"Mutton, Chilled Or Frozen",3
+1.01.2.4,"Poultry, Chilled Or Frozen",33
+1.01.2.5,"Meat, Preserved Or Prepared",17
+1.01.3.1,"Fish, Fresh Or Chilled",44
+1.01.3.2,"Fish, Frozen",2
+1.01.3.3,"Other Seafood, Fresh, Chilled Or Frozen",17
+1.01.3.4,Seafood Preparations,16
+1.01.4.1,Milk,14
+1.01.4.2,Other Milk & Cream,23
+1.01.4.3,Dairy Products Nec,13
+1.01.4.4,Eggs,14
+1.01.5.1,Vegetable Oils,9
+1.01.5.2,Butter & Other Fats,3
+1.01.6.1,"Tropical Fruits, Fresh",26
+1.01.6.2,"Citrus, Beries, Stone & Other Fruits, Fresh",41
+1.01.6.3,"Fruit, Dried & Dehydrated",3
+1.01.6.4,"Fruits, Canned Or Bottled",1
+1.01.6.5,"Nuts & Seed, In Shell Or Shelled",8
+1.01.7.1,"Leafy Vegetables, Fresh Or Chilled",28
+1.01.7.2,"Fruit-Bearing Vegetables, Fresh Or Chilled",16
+1.01.7.3,"Root Vegetables, Fresh Or Chilled",13
+1.01.7.4,"Other Vegetables, Fresh Or Chilled",4
+1.01.7.5,"Vegetables, Frozen",2
+1.01.7.6,"Vegetables, Dried, Salted, Steamed Or Smoked",3
+1.01.7.7,"Vegetables, Canned Or Bottled",3
+1.01.7.8,"Vegetables, Preserved Or Prepared, Other Forms",13
+1.01.8.1,Sugar,2
+1.01.8.2,"Jams, Fruit Jellies, Fruit Puree & Pastes, Honey",5
+1.01.8.3,Nut Butter & Paste,1
+1.01.8.4,"Chocolate, Cocoa, & Cocoa-Based Food Products",9
+1.01.8.5,Ice & Ice Cream,7
+1.01.8.6,Sugar Confectionery & Desserts Nec,3
+1.01.9.1,Ready-Made Food,18
+1.01.9.2,Baby Food,1
+1.01.9.3,"Salt, Condiments & Sauces",11
+1.01.9.4,"Spices, Culinary Herbs & Seeds",4
+1.01.9.5,"Food Hampers, Incl Fruits",1
+1.01.9.6,Other Food Products Nec,9
+1.01.10.1,Fruit & Vegetable Juices,5
+1.01.10.2,Coffee & Coffee Substitutes,11
+1.01.10.3,Tea,8
+1.01.10.4,Cocoa & Malt-Based Drinks,4
+1.01.10.5,Water,2
+1.01.10.6,Soft Drinks,6
+1.01.10.7,Non-Alcoholic Beverages Nec,5
+1.02.1.1,Garments,121
+1.02.1.2,Other Articles Of Clothing & Clothing Accessories,4
+1.02.1.3,"Cleaning, Repair, Tailoring & Rental Of Clothing",4
+1.02.2,Footwear,36
+1.03.1.1,Actual Rentals For Housing,294
+1.03.1.2,Imputed Rentals For Housing,2138
+1.03.1.3,Housing Maintenance & Repairs,224
+1.03.2.1,Water Supply,66
+1.03.2.2,Refuse Collection,18
+1.03.2.3,Electricity,179
+1.03.2.4,Gas,19
+1.04.1,Furniture & Furnishings,128
+1.04.2,Household Textiles,17
+1.04.3.1,Major Household Appliances,66
+1.04.3.2,Small Household Appliances,15
+1.04.3.3,Repair & Installation Of Household Appliances,20
+1.04.4,"Glassware, Tableware & Household Utensils",17
+1.04.5,Tools & Equipment For House & Garden,5
+1.04.6.1,Non-Durable Household Goods,33
+1.04.6.2,Domestic Services & Household Services,245
+1.04.6.3,Other Insurance Nec,1
+1.05.1.1,Medicines & Health Supplements,64
+1.05.1.2,Medical Products,4
+1.05.1.3,Assistive Products,26
+1.05.2.1,Fees At Polyclinics,36
+1.05.2.2,Fees At General Practitioners (GP) Clinics,47
+1.05.2.3,Fees At Specialist Outpatient Clinics,254
+1.05.2.4,Outpatient Dental Services,57
+1.05.2.5,Outpatient Care Services Nec,34
+1.05.3,Inpatient Care Services,238
+1.05.4.1,Diagnostic Imaging Services & Medical Laboratory Services,20
+1.05.4.2,Patient Emergency Transportation Services & Emergency Rescue,3
+1.05.5,Health Insurance,225
+1.06.1.1,Motor Cars,459
+1.06.1.2,Motorcycles,21
+1.06.1.3,Bicycles,6
+1.06.1.4,Parts & Accessories For Personal Transport Equipment,10
+1.06.1.5,Petrol,174
+1.06.1.6,Other Fuel & Lubricants For Personal Transport Equipment,4
+1.06.1.7,Maintenance & Repair Of Personal Transport Equipment,57
+1.06.1.8,Other Services In Respect Of Personal Transport Equipment,161
+1.06.1.9,Insurance Connected With Transport,14
+1.06.2.1,Bus & Train Fares,138
+1.06.2.2,Point-To-Point Transport Services,108
+1.06.2.3,Commuting Fares,10
+1.06.2.4,Other Land Transport Services,6
+1.06.3.1,Airfares,129
+1.06.3.2,Seafares,1
+1.06.3.3,Travel Insurance,1
+1.06.4,Transport Services Of Goods,8
+1.07.1.1,Mobile Telephone Equipment,31
+1.07.1.2,Information Processing Equipment,28
+1.07.1.3,"Equipment For The Reception, Recording & Reproduction Of Sound & Vision",22
+1.07.1.4,Unrecorded Recording Media,1
+1.07.1.5,Information & Communication Equipment & Accessories Nec,9
+1.07.2,Software Excl Games,3
+1.07.3.1,Fixed Communication Services,4
+1.07.3.2,Mobile Communication Services,122
+1.07.3.3,"Internet, Bundled & Other Telecommunication Services",149
+1.07.3.4,Information & Communication Services Nec,12
+1.08.1,Recreation & Cultural Goods,9
+1.08.2.1,"Games, Toys & Hobbies",24
+1.08.2.2,"Equipment For Sport, Camping & Open-Air Recreation",9
+1.08.3.1,"Garden Products, Plants & Flowers",8
+1.08.3.2,Pets & Products For Pets,19
+1.08.4.1,Other Recreational Services,3
+1.08.4.2,Veterinary & Other Services For Pets,13
+1.08.4.3,Recreational & Sporting Services,128
+1.08.5.1,"Services Provided By Cinemas, Theatres & Concert Venues",15
+1.08.5.2,Services Provided By Museums & Cultural Sites,6
+1.08.5.3,Photographic Services,7
+1.08.5.4,Cultural Services Nec,24
+1.08.6.1,"Books, Excl School Textbooks & Study Guides",5
+1.08.6.2,Newspapers & Others,6
+1.08.6.3,Stationery & Drawing Materials,9
+1.08.7.1,Hotels,103
+1.08.7.2,Chalets,1
+1.08.7.3,Package Holidays,206
+1.09.1.1,Primary Education,26
+1.09.1.2,Secondary Education,39
+1.09.1.3,Post-Secondary (Non-Tertiary) Education,20
+1.09.1.4,Polytechnic Education,22
+1.09.1.5,Other Education,284
+1.09.2,Private Tuition & Other Educational Courses,184
+1.09.3,School Textbooks & Study Guides,4
+1.10.1.1,Hairdressing & Personal Grooming Services,95
+1.10.1.2,Electric Appliances For Personal Care,4
+1.10.1.3,"Other Appliances, Articles & Products For Personal Care",112
+1.10.2.1,Alcoholic Beverages,23
+1.10.2.2,Tobacco,35
+1.10.3.1,Jewellery & Watches,14
+1.10.3.2,Devotional Articles & Articles For Religious & Ritual Celebrations,7
+1.10.3.3,Other Personal Effects Nec,41
+1.10.4,Social Services,32
+1.10.5,Other Miscellaneous Services,75
+1.11.1.1,Restaurants,491
+1.11.1.2,Cafes,82
+1.11.1.3,Pubs,12
+1.11.2,Fast Food Restaurants,85
+1.11.3.1,Hawker Centres,169
+1.11.3.2,"Food Courts, Coffee Shops & Kiosks",538
+1.11.4,"Other Catering Services, Incl Vending Machines",14

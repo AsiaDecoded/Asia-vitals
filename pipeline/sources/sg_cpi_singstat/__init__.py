@@ -9,16 +9,20 @@ Writes data/sg/cpi/:
                         accommodation and private transport to all-items y/y, Jan 2015 on (calculated);
                         rows with series "core_*": contributions of the first four to MAS core y/y
   sg_cpi_diffusion.csv  share of items with prices up / down on a year earlier, Jan 2016 on
-  sg_cpi_items.csv      every item, latest 12 months: 2024 weight, index, m/m, y/y (published),
+  sg_cpi_items.csv      every item, latest 12 months: published 2024 weight, index, m/m, y/y (published),
                         contribution to all-items y/y (calculated)
-  sg_cpi_series_weights.csv  2024 basket weight (per 10,000) of all items, CPI less imputed rentals, CPI less
+  sg_cpi_series_weights.csv  published 2024 basket weight (per 10,000) of all items, CPI less imputed rentals, CPI less
                         accommodation, MAS core, energy (calculated), food, divisions and groups in sg_cpi.csv
-  sg_cpi_weights.json   the effective basket weights recovered from the published indices, and fit residuals
+  sg_cpi_weights.json   segment weights recovered from the indices (contributions), published item weights
+                        beside the index-implied ones, and fit residuals
                         Also in sg_cpi.csv (calculated, series "fuel"): fuel CPI = electricity, gas, petrol and other
-                        fuel & lubricants for personal transport, weighted by their 2024 basket weights, Jan 2024 on
+                        fuel & lubricants for personal transport, weighted by their published 2024 weights, Jan 2024 on
                         (2024 = 100); m/m and y/y from that index
 
-Weights: SingStat publishes no weights table. Within each basket (2014, 2019 and 2024 bases) the published
+Weights: item, group, division and series weights are SingStat's published 2024 weights (Information Paper
+IP-E61, kept in weights_2024.csv), summed up the tree; CPI less food and energy uses the published 2014, 2019 and
+2024 weights. SingStat publishes no weights for MAS core's services and retail & other goods segments, so the
+contribution segments use weights recovered from the indices: within each basket (2014, 2019 and 2024 bases) the published
 all-items index is exactly a fixed linear combination of its components; the coefficients are recovered by
 least squares over that basket's months and accepted only if they reproduce the published parent index
 within 0.01 index points in every month (checked below). On the 2024 base the coefficients are the 2024
@@ -28,6 +32,8 @@ import csv
 import gzip
 import hashlib
 import json
+
+from pathlib import Path
 
 import numpy as np
 
@@ -86,7 +92,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 10  # bump when the outputs change, so the next run rebuilds them
+VERSION = 11  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -176,11 +182,12 @@ def _contrib(idx, mas, errors, core=False):
 
 
 # Published CPI weights per 10,000 for the items taken out of CPI less food and energy:
-# 2014 and 2019 baskets from SingStat Information Paper IP-E48 (Appendix I), 2024 basket from IP-E61 (Appendix III).
+# 2014 basket from SingStat Information Paper IP-E48 (Appendix I); 2019 and 2024 baskets from IP-E61 (Appendix III),
+# where the 2019 weights are restated on the current classification the indices use.
 # The 2014 basket lists no separate weight for other fuel and lubricants.
 EX_WEIGHTS = {
     "2014": {"1.01": 774, "1.03.2.3": 215, "1.03.2.4": 34, "1.06.1.5": 250},
-    "2019": {"1.01": 682, "1.03.2.3": 159, "1.03.2.4": 29, "1.06.1.5": 194, "1.06.1.6": 6},
+    "2019": {"1.01": 687, "1.03.2.3": 159, "1.03.2.4": 29, "1.06.1.5": 194, "1.06.1.6": 6},
     "2024": {"1.01": 651, "1.03.2.3": 179, "1.03.2.4": 19, "1.06.1.5": 174, "1.06.1.6": 4},
 }
 
@@ -239,6 +246,31 @@ def _tree(idx, names, errors):
     if abs(sum(leaves.values()) - 1) > 0.001:
         errors.append(f"item weights sum to {sum(leaves.values()):.4f}, not 1")
     return leaves, worst, coef
+
+
+WEIGHTS_2024 = Path(__file__).with_name("weights_2024.csv")
+
+
+def _published_weights(implied, errors):
+    """SingStat's published 2024 weights for the items (the most detailed CPI indices), summed up the tree for the
+    groups and divisions. Each is checked against the weight implied by the indices: a gap of more than 5 per
+    10,000 means the file is out of date (for instance after a rebasing) or mistyped."""
+    lines = [l for l in WEIGHTS_2024.read_text().splitlines() if not l.startswith("#")]
+    pub = {r["code"]: float(r["weight"]) / 1e4 for r in csv.DictReader(lines)}
+    if abs(sum(pub.values()) - 1) > 1e-9:
+        errors.append(f"published weights sum to {sum(pub.values()) * 1e4:.0f}, not 10,000")
+    if set(pub) != set(implied):
+        errors.append(f"published weights: items differ from the CPI tree: {sorted(set(pub) ^ set(implied))}")
+    for no, w in pub.items():
+        if no in implied and abs(w - implied[no]) > 5e-4:
+            errors.append(f"published weight of {no} ({w * 1e4:.0f}) is far from the index-implied {implied[no] * 1e4:.1f}")
+    nodes = {}
+    for no, w in pub.items():
+        parts = no.split(".")
+        for i in range(2, len(parts) + 1):
+            k = ".".join(parts[:i])
+            nodes[k] = nodes.get(k, 0.0) + w
+    return pub, nodes
 
 
 def _diffusion(yoy, names):
@@ -319,7 +351,8 @@ def update(**_):
     contrib, seg_weights = _contrib(idx, {k: mas[k] for k in ("1", "2", "3", "4")}, errors)
     core_contrib, core_weights = _contrib(idx, {k: mas[k] for k in ("1", "2", "3", "4")}, errors, core=True)
     contrib = sorted(contrib + core_contrib, key=lambda r: (r["date"], r["order"]))
-    item_w, worst, node_w = _tree(idx, names, errors)
+    implied, worst, _ = _tree(idx, names, errors)
+    item_w, node_w = _published_weights(implied, errors)
     diff = _diffusion(S["yoy"][0], names)
     missing = [no for no in FUEL_ITEMS if no not in item_w]
     if missing:
@@ -412,7 +445,7 @@ def update(**_):
                           "contrib_yoy": None if c is None else round(c, 3)})
     _write_csv(OUT / "sg_cpi_items.csv", ["date", "code", "name", "weight", "index", "mom", "yoy", "contrib_yoy"], items)
     (OUT / "sg_cpi_weights.json").write_text(json.dumps(
-        {"baskets": seg_weights, "core_baskets": core_weights, "items_2024": {no: {"name": names[no], "weight_per_10000": round(w * 1e4, 2)} for no, w in sorted(item_w.items())},
+        {"baskets": seg_weights, "core_baskets": core_weights, "items_2024": {no: {"name": names[no], "weight_per_10000": round(w * 1e4), "index_implied": round(implied[no] * 1e4, 1)} for no, w in sorted(item_w.items())},
          "item_tree_max_residual": round(worst, 5)}, ensure_ascii=False, indent=1) + "\n")
 
     def long_rows():

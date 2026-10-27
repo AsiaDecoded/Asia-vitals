@@ -1,26 +1,26 @@
 series,label,weight
 all,All items,10000.0
-less_imputed,All items less imputed rentals for housing,7862.6
-less_accom,All items less accommodation,7344.2
-core,MAS core inflation measure,6439.3
-fuel,Energy (calculated),375.8
-food,Food,2039.6
-ex_food_energy,CPI less food (excl. serving services) and energy (calculated),8972.5
-food_ex_fbss,Food excl. food and beverage serving services,651.7
-fbss,Food and beverage serving services,1388.0
-accommodation,Accommodation,2655.8
-imputed_rentals,Imputed rentals for housing,2137.4
-private_transport,Private transport,904.9
-petrol,Petrol,173.8
+less_imputed,All items less imputed rentals for housing,7862.0
+less_accom,All items less accommodation,7344.0
+core,MAS core inflation measure,6438.0
+fuel,Energy (calculated),376.0
+food,Food,2042.0
+ex_food_energy,CPI less food (excl. serving services) and energy (calculated),8973.0
+food_ex_fbss,Food excl. food and beverage serving services,651.0
+fbss,Food and beverage serving services,1391.0
+accommodation,Accommodation,2656.0
+imputed_rentals,Imputed rentals for housing,2138.0
+private_transport,Private transport,906.0
+petrol,Petrol,174.0
 electricity,Electricity,179.0
 gas,Gas,19.0
 other_fuels,Other fuel and lubricants for personal transport,4.0
-clothing,Clothing and footwear,164.5
-housing,Housing and utilities,2937.8
-household,Household durables and services,547.8
-health,Health,1009.8
-transport,Transport,1305.3
-info_comm,Information and communication,380.3
-recreation,"Recreation, sport and culture",595.5
-education,Education,577.9
-misc,Miscellaneous goods and services,441.3
+clothing,Clothing and footwear,165.0
+housing,Housing and utilities,2938.0
+household,Household durables and services,547.0
+health,Health,1008.0
+transport,Transport,1307.0
+info_comm,Information and communication,381.0
+recreation,"Recreation, sport and culture",595.0
+education,Education,579.0
+misc,Miscellaneous goods and services,438.0
