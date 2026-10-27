@@ -465,7 +465,7 @@ dash.calc('cpi_heat', {
     const NAMES = { all: 'CPI', less_imputed: 'CPI less imputed rentals for housing', less_accom: 'CPI less accommodation', core: 'MAS core*', fuel: 'Energy**' };
     tbl.replaceChildren();
     const head = tbl.createTHead().insertRow();
-    ['% y/y'].concat(dates.map((d) => `${MON[+d.slice(5, 7) - 1]} ${d.slice(2, 4)}`)).forEach((t) => {
+    [''].concat(dates.map((d) => `${MON[+d.slice(5, 7) - 1]} ${d.slice(2, 4)}`)).forEach((t) => {
       const th = document.createElement('th'); th.textContent = t; head.appendChild(th);
     });
     const tb = tbl.createTBody();
