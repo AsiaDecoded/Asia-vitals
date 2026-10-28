@@ -299,8 +299,8 @@ dash.calc('cpi_heat', {
     const ALL = [
       { key: 'core', name: 'MAS core', color: J.PAL[0], bar: true },
       { key: 'exfe', name: 'CPI less food and energy', color: J.PAL[0], bar: true },
-      { key: 'groc', name: 'Food ex-FBSS', color: J.PAL[5], bar: true },
-      { key: 'energy', name: 'Energy', color: J.PAL[4], bar: true },
+      { key: 'groc', name: 'Food ex-FBSS', color: J.PAL[4], bar: true },
+      { key: 'energy', name: 'Energy', color: J.PAL[5], bar: true },
       { key: 'acco', name: 'Accommodation', color: '#A6A6A6', bar: true },
       { key: 'ptx', name: 'Private transport ex-fuel', color: J.PAL[0], bar: true },
       { key: 'services', name: 'Services', color: J.PAL[4], bar: true },
