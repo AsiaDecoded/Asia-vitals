@@ -312,7 +312,8 @@ dash.calc('cpi_heat', {
       { key: 'accommodation', name: 'Accommodation', color: J.PAL[4], bar: true },
       { key: 'private_transport', name: 'Private transport', color: J.PAL[5], bar: true },
     ];
-    const PARTS = opt.keys ? ALL.filter((p) => opt.keys.includes(p.key)) : ALL;
+    // stacked in the order of opt.keys: the first sits next to zero
+    const PARTS = opt.keys ? opt.keys.map((k) => ALL.find((p) => p.key === k)).filter(Boolean) : ALL;
     const by = new Map();
     D.data.forEach((r) => {
       const v = r.contrib_yoy === '' || r.contrib_yoy == null ? null : Number(r.contrib_yoy);
