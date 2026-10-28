@@ -114,7 +114,11 @@ dash.calc('cpi_gap_series', {
   title: 'MAS core vs CPI less food and energy, monthly',
   description: 'Monthly effects (pp) of each part on MAS core minus CPI less food and energy, the difference, and both measures’ y/y, from Jan 2025.',
   inputs: ['cpi_series', 'sg_cpi_series_weights'],
-  fn: (cpi_series, wts) => gapMonths(cpi_series, wts).months.map((m) => ({ date: m.date, ...m.eff, net: m.net, core: m.core, ex: m.ex })),
+  fn: (cpi_series, wts) => gapMonths(cpi_series, wts).months.map((m) => {
+    const o = { date: m.date, core: m.core, ex: m.ex };
+    ['groc', 'eg', 'imp', 'rm', 'ptx', 'rest'].forEach((k) => { o[k] = m.r[k] * 100; });
+    return o;
+  }),
 });
 
 dash.calc('cpi_movers', {
@@ -255,7 +259,11 @@ dash.calc('cpi_heat', {
     svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', ml).attr('x2', W - 8).attr('y1', y).attr('y2', y)
       .attr('stroke', (v) => (v === 0 ? 'var(--ad-axis)' : 'var(--ad-grid)'));
     J.axisStyle(svg.append('g').attr('transform', `translate(${ml - 4},0)`).call(d3.axisLeft(y).tickValues(ticks).tickSize(0).tickFormat(d3.format('.0f'))));
-    J.axisStyle(svg.append('g').attr('transform', `translate(0,${H - 20})`).call(d3.axisBottom(x).ticks(Math.max(2, Math.round((W - ml) / 70))).tickSize(0).tickFormat(d3.utcFormat('%Y'))));
+    const short = rows.length <= 36;
+    const xax = d3.axisBottom(x).tickSize(0);
+    if (short) xax.ticks(d3.utcMonth.every(rows.length > 18 ? 3 : rows.length > 9 ? 2 : 1)).tickFormat(d3.utcFormat('%b %y'));
+    else xax.ticks(Math.max(2, Math.round((W - ml) / 70))).tickFormat(d3.utcFormat('%Y'));
+    J.axisStyle(svg.append('g').attr('transform', `translate(0,${H - 20})`).call(xax));
     series.forEach((s) => {
       svg.append('path').attr('d', d3.line().defined((r) => r[s.key] != null).x((r) => x(J.date(r.date))).y((r) => y(r[s.key]))(rows))
         .attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', s.width || 2.5).attr('stroke-dasharray', s.dash ? '6 4' : null).attr('stroke-linecap', s.dash ? 'butt' : 'round').attr('stroke-linejoin', 'round');
@@ -416,74 +424,19 @@ dash.calc('cpi_heat', {
       .on('mouseleave', () => { hl.attr('display', 'none'); tip.style.display = 'none'; });
   }
 
-  // MAS core vs CPI less food and energy: effects as stacked bars, the difference as a line (left axis, pp);
-  // both measures' y/y as lines on the right axis.
+  // MAS core vs CPI less food and energy, and the parts that separate them: all y/y.
   function gapChart() {
-    const box = document.getElementById('cpi-gapc-chart');
-    if (!box) return;
-    const D = dash.data('cpi_gap_series');
-    if (failed(D.status)) { J.fail(box); return; }
-    if (D.status !== 'ok') { box.replaceChildren(); return; }
-    const rows = J.slice(D.data.slice(), 'cpi-gapc');
-    if (!rows.length) { box.replaceChildren(); return; }
-    const PARTS = [
-      { key: 'groc', name: 'Food excl. FBSS', color: J.PAL[5] },
-      { key: 'eg', name: 'Electricity and gas', color: J.PAL[0] },
-      { key: 'imp', name: 'Imputed rentals', color: J.PAL[4] },
-      { key: 'rm', name: 'Actual rents and maintenance', color: J.PAL[6] },
-      { key: 'ptx', name: 'Private transport excl. fuel', color: J.PAL[7] },
-    ];
-    const NET = { name: 'Difference', color: J.PAL[1] }, CORE = { name: 'MAS core, y/y (RHS)', color: J.PAL[3] }, EX = { name: 'CPI less food and energy, y/y (RHS)', color: J.PAL[2] };
-    const W = box.clientWidth, H = 300;
-    box.replaceChildren();
-    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
-    const keys = PARTS.map((p) => p.key);
-    const stack = d3.stack().keys(keys).value((d, k) => d[k] || 0).offset(d3.stackOffsetDiverging)(rows);
-    const lo = Math.min(0, d3.min(stack, (s) => d3.min(s, (d) => d[0])), d3.min(rows, (r) => r.net));
-    const hi = Math.max(0, d3.max(stack, (s) => d3.max(s, (d) => d[1])), d3.max(rows, (r) => r.net));
-    const y = d3.scaleLinear([lo, hi], [H - 24, 10]).nice();
-    const ticks = y.ticks(5);
-    const fmt = d3.format('.1f');
-    const rlo = Math.min(0, d3.min(rows, (r) => Math.min(r.core, r.ex))), rhi = d3.max(rows, (r) => Math.max(r.core, r.ex));
-    const y2 = d3.scaleLinear([rlo, rhi], [H - 24, 10]).nice();
-    const ticks2 = y2.ticks(5);
-    const ml = J.textWidth(svg, ticks.map(fmt)) + 10, mr = J.textWidth(svg, ticks2.map(fmt)) + 10;
-    const x = d3.scaleBand(rows.map((r) => r.date), [ml, W - mr]).padding(0.2);
-    const cx = (d) => x(d) + x.bandwidth() / 2;
-    svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', ml).attr('x2', W - mr).attr('y1', y).attr('y2', y)
-      .attr('stroke', (v) => (v === 0 ? 'var(--ad-axis)' : 'var(--ad-grid)'));
-    J.axisStyle(svg.append('g').attr('transform', `translate(${ml - 4},0)`).call(d3.axisLeft(y).tickValues(ticks).tickSize(0).tickFormat(fmt)));
-    J.axisStyle(svg.append('g').attr('transform', `translate(${W - mr + 4},0)`).call(d3.axisRight(y2).tickValues(ticks2).tickSize(0).tickFormat(fmt)));
-    const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    const every = rows.length > 24 ? 6 : 3;
-    const xt = rows.map((r) => r.date).filter((d) => (+d.slice(5, 7) - 1) % every === 0);
-    J.axisStyle(svg.append('g').attr('transform', `translate(0,${H - 20})`).call(d3.axisBottom(x).tickValues(xt).tickSize(0)
-      .tickFormat((d) => `${MON[+d.slice(5, 7) - 1]} ${d.slice(2, 4)}`)));
-    svg.append('g').selectAll('g').data(stack).join('g').attr('fill', (s, i) => PARTS[i].color)
-      .selectAll('rect').data((s) => s).join('rect')
-      .attr('x', (d) => x(d.data.date)).attr('width', x.bandwidth())
-      .attr('y', (d) => y(Math.max(d[0], d[1]))).attr('height', (d) => Math.abs(y(d[0]) - y(d[1])));
-    const line = (sc, f, color, dash) => svg.append('path').attr('d', d3.line().x((r) => cx(r.date)).y((r) => sc(f(r)))(rows))
-      .attr('fill', 'none').attr('stroke', color).attr('stroke-width', 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round')
-      .attr('stroke-dasharray', dash || null);
-    line(y2, (r) => r.core, CORE.color, '6 4');
-    line(y2, (r) => r.ex, EX.color, '6 4');
-    line(y, (r) => r.net, NET.color);
-    legend('cpi-gapc-legend', [{ key: 'net', name: NET.name, color: NET.color }, { key: 'core', name: CORE.name, color: CORE.color, dash: true },
-      { key: 'ex', name: EX.name, color: EX.color, dash: true }].concat(PARTS.map((p) => ({ ...p, bar: true }))));
-    const card = document.getElementById('cpi-gapc'), tip = J.tip(card);
-    const hl = svg.append('rect').attr('fill', 'var(--color-fg)').attr('opacity', 0.06).attr('display', 'none');
-    const sg = (v) => (v == null ? '—' : (v > 0 ? '+' : '') + d3.format('.2f')(v) + 'pp');
-    svg.append('rect').attr('x', ml).attr('width', W - ml - mr).attr('height', H).attr('fill', 'transparent')
-      .on('mousemove', (ev) => {
-        const i = Math.max(0, Math.min(rows.length - 1, Math.floor((d3.pointer(ev)[0] - ml) / x.step())));
-        const r = rows[i];
-        hl.attr('display', null).attr('x', x(r.date) - x.step() * x.paddingInner() / 2).attr('width', x.step()).attr('y', 0).attr('height', H - 22);
-        const cr = card.getBoundingClientRect();
-        J.showTip(card, tip, mLabel(r.date), [[CORE.color, 'MAS core, y/y', pct(r.core)], [EX.color, 'CPI less food and energy, y/y', pct(r.ex)],
-          [NET.color, NET.name, sg(r.net)]].concat(PARTS.map((p) => [p.color, p.name, sg(r[p.key])])), ev.clientX - cr.left, ev.clientY - cr.top);
-      })
-      .on('mouseleave', () => { hl.attr('display', 'none'); tip.style.display = 'none'; });
+    if (!document.getElementById('cpi-gapc-chart')) return;
+    lineChart('cpi-gapc-chart', 'cpi-gapc', 'cpi-gapc-legend', 'national', [
+      { key: 'core', name: 'MAS core', color: C[5], width: 3 },
+      { key: 'ex', name: 'CPI less food and energy', color: C[4], width: 3 },
+      { key: 'rest', name: 'Shared basket', color: C[3], width: 2, dash: true },
+      { key: 'groc', name: 'Food excl. FBSS', color: C[2], width: 1.75 },
+      { key: 'eg', name: 'Electricity and gas', color: C[0], width: 1.75 },
+      { key: 'imp', name: 'Imputed rentals', color: C[6], width: 1.75 },
+      { key: 'rm', name: 'Actual rents and maintenance', color: C[1], width: 1.75 },
+      { key: 'ptx', name: 'Private transport excl. fuel', color: C[7], width: 1.75 },
+    ], 300, { ids: ['cpi_gap_series'], rows: (d) => J.slice(d.slice(), 'cpi-gapc') });
   }
 
   function saChart() {
