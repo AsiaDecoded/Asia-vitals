@@ -237,7 +237,45 @@ def fallbacks():
           "CHN.M.......?startPeriod=2025-01&format=csvfilewithlabels", ext=".csv")
 
 
+# ---------------------------------------------------------------- stage 2
+def stage2():
+    """New data portal (single-page app): its scripts, to find the data API; DBnomics full
+    history for the monthly price datasets; OECD headline history; NBS's notes on the 2026
+    base rotation and the September 2026 interpretation."""
+    base = "https://data.stats.gov.cn/"
+    for n in ("setting/script", "common/config_project.js", "common/global_project.js",
+              "static/js/project/dsf-pc.js", "static/js/project/subPage.js",
+              "modules/dataview/js/dsf-dataview.common.js", "modules/dataview/js/dsf-dataview.pc.js",
+              "modules/platform/js/dsf-platform.common.js", "modules/core/js/dsf-core.js", "robots.txt"):
+        fetch("spa_" + re.sub(r"\W", "_", n), base + n, ext=".txt")
+    d = "https://api.db.nomics.world/v22/series/NBS"
+    for ds in ("M_A01010J", "M_A01010K", "M_A01010L", "M_A01020J", "M_A01030J", "M_A01010G",
+               "M_A010101", "M_A010102", "M_A010801", "M_A010701", "M_A010804", "M_A010807", "M_A010H"):
+        fetch(f"dbn_obs_{ds}", f"{d}/{ds}?observations=1&limit=1000")
+        time.sleep(0.4)
+    o = "https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_PRICES@DF_PRICES_ALL,1.0"
+    fetch("oecd_cpi_headline_full", f"{o}/CHN.M.N.CPI.PA._T.N.GY?startPeriod=1985-01&format=csvfilewithlabels", ext=".csv")
+    fetch("oecd_cpi_index_full", f"{o}/CHN.M.N.CPI.IX._T.N._Z?startPeriod=1985-01&format=csvfilewithlabels", ext=".csv")
+    for name, u in (
+            ("zh_sjjd_rotation", "https://www.stats.gov.cn/sj/sjjd/202602/t20260211_1962589.html"),
+            ("zh_sjjd_sep2026", "https://www.stats.gov.cn/sj/sjjd/202610/t20261014_1965475.html"),
+            ("zh_sjjd_q3_2026", "https://www.stats.gov.cn/sj/sjjd/202610/t20261019_1965630.html"),
+            ("zh_sjjd_2025", "https://www.stats.gov.cn/sj/sjjd/202601/t20260119_1962341.html")):
+        fetch(name, u)
+        time.sleep(0.4)
+    for i in (10, 20, 40, 60, 80, 100, 120):
+        fetch(f"en_list_{i}", f"https://www.stats.gov.cn/english/PressRelease/index_{i}.html")
+    for i in range(12, 40):
+        fetch(f"zh_zxfb_list_{i}", f"https://www.stats.gov.cn/sj/zxfb/index_{i}.html")
+        time.sleep(0.3)
+    fetch("en_calendar_2026", "https://www.stats.gov.cn/english/PressRelease/ReleaseCalendar/202512/t20251226_1962154.html")
+    fetch("runner_ip", "https://ipinfo.io/json")
+    (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
+
+
 def main():
+    if len(sys.argv) > 2 and sys.argv[2] == "stage2":
+        return stage2()
     summary = {}
     for name, fn in (("portal", portal), ("releases", releases), ("fallbacks", fallbacks)):
         try:
