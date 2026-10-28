@@ -319,7 +319,76 @@ def stage4():
     (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
 
 
+def stage5():
+    """Call the new portal's data API: indicator tree (monthly national, code 1; monthly by
+    province, code 4), indicators under the price nodes, their date range, and data."""
+    ext = "https://data.stats.gov.cn/dg/website/publicrelease/web/external"
+    hdr = {"Referer": "https://data.stats.gov.cn/dg/website/page.html", "Origin": "https://data.stats.gov.cn",
+           "Accept": "application/json, text/plain, */*"}
+
+    def get(name, path, params):
+        r = fetch(name, ext + path + "?" + urllib.parse.urlencode(params), headers=hdr, ext=".json")
+        return js(r)
+
+    def post(name, path, body):
+        r = fetch(name, ext + path, data=json.dumps(body).encode(), ext=".json",
+                  headers={**hdr, "Content-Type": "application/json;charset=UTF-8"})
+        return js(r)
+
+    report = {}
+    for code in ("1", "4"):
+        tree = {}
+        top = get(f"t5_tree_{code}_root", "/new/queryIndexTreeAsync", {"pid": "", "code": code}) or {}
+        level = top.get("data") or []
+        for n in level:
+            tree[n["_id"]] = {k: n.get(k) for k in ("_name", "name", "show_name", "isLeaf", "treeinfo_level", "treeinfo_pid")}
+        # walk only nodes whose name mentions prices
+        def pname(n):
+            return str(n.get("_name") or n.get("name") or n.get("show_name") or "")
+        queue = [n for n in level if not n.get("isLeaf")]
+        steps = 0
+        while queue and steps < 80:
+            n = queue.pop(0)
+            nm = pname(n)
+            depth = n.get("treeinfo_level") or 0
+            if depth and int(depth) >= 2 and "价格" not in nm and "指数" not in nm:
+                continue
+            steps += 1
+            sub = (get(f"t5_tree_{code}_{steps:03d}", "/new/queryIndexTreeAsync", {"pid": n["_id"], "code": code}) or {}).get("data") or []
+            for c in sub:
+                tree[c["_id"]] = {**{k: c.get(k) for k in ("_name", "name", "show_name", "isLeaf", "treeinfo_level")}, "parent": n["_id"]}
+                if not c.get("isLeaf") and ("价格" in pname(c) or int(c.get("treeinfo_level") or 0) <= 2):
+                    queue.append(c)
+            time.sleep(0.3)
+        (OUT / f"tree_{code}.json").write_text(json.dumps(tree, ensure_ascii=False, indent=1))
+        leaves = [k for k, v in tree.items() if v.get("isLeaf") and ("居民消费价格" in str(v) or "工业生产者" in str(v))]
+        report[f"code{code}_nodes"] = len(tree)
+        report[f"code{code}_price_leaves"] = len(leaves)
+        root_id = level[0]["_id"] if level else ""
+        for j, cid in enumerate(leaves[:12]):
+            ind = get(f"t5_ind_{code}_{j:02d}", "/new/queryIndicatorsByCid", {"cid": cid, "dt": "", "name": ""}) or {}
+            lst = ((ind.get("data") or {}).get("list")) or []
+            dt = get(f"t5_dt_{code}_{j:02d}", "/new/queryDtByCid", {"cid": cid, "rootId": root_id}) or {}
+            ids = [x.get("_id") for x in lst][:40]
+            if not ids:
+                continue
+            for k, dts in enumerate((["199001MM-202609MM"], ["199001-202609"], ["202501MM-202609MM"], [""])):
+                body = {"cid": cid, "indicatorIds": ids, "daCatalogId": "", "das": [], "showType": 1, "dts": dts,
+                        "rootId": root_id}
+                if code == "4":
+                    body["das"] = [{"text": "北京市", "value": "110000000000"}, {"text": "上海市", "value": "310000000000"}]
+                d = post(f"t5_data_{code}_{j:02d}_{k}", "/getEsDataByIndicatorIdAndDa", body) or {}
+                if d.get("success") and d.get("data"):
+                    break
+                time.sleep(0.3)
+            time.sleep(0.3)
+    (OUT / "summary.json").write_text(json.dumps(report, ensure_ascii=False, indent=1))
+    (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
+
+
 def main():
+    if len(sys.argv) > 2 and sys.argv[2] == "stage5":
+        return stage5()
     if len(sys.argv) > 2 and sys.argv[2] == "stage4":
         return stage4()
     if len(sys.argv) > 2 and sys.argv[2] == "stage2":
