@@ -22,6 +22,33 @@ VARS = {  # var id: what it should be
 
 
 def main(out):
+    """Round 5: every press release in the price subjects (titles, dates, pdf links masked), and the latest
+    wholesale price (IHPB) release PDF."""
+    import urllib.request  # noqa: PLC0415
+    out = Path(out)
+    out.mkdir(parents=True, exist_ok=True)
+    rels, page = [], 1
+    while page < 300:
+        st, d, s = get(f"list/model/pressrelease/domain/0000/lang/ind/page/{page}")
+        paging, rows = rows_of(d)
+        rels += [{k: r.get(k) for k in ("brs_id", "subj_id", "subj", "title", "rl_date", "pdf")} for r in rows]
+        if not paging or page >= int(paging.get("pages", 1)):
+            break
+        page += 1
+    keep = [r for r in rels if re.search(r"(?i)inflasi|harga konsumen|perdagangan besar|IHPB|harga produsen|deflasi", r["title"] or "")]
+    (out / "releases_prices.json").write_text(json.dumps(keep, ensure_ascii=False, indent=1))
+    print(len(rels), "releases;", len(keep), "on prices", flush=True)
+    w = [r for r in keep if re.search(r"(?i)perdagangan besar|IHPB", r["title"])]
+    if w:
+        try:
+            with urllib.request.urlopen(urllib.request.Request(w[0]["pdf"], headers={"User-Agent": "asia-vitals/1.0"}), timeout=120) as r:
+                (out / "ihpb.pdf").write_bytes(r.read())
+        except Exception as e:  # noqa: BLE001
+            (out / "ihpb_error.txt").write_text(repr(e))
+
+
+def main_round4(out):
+
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
     log = []
