@@ -1,0 +1,23 @@
+# Round 1: DGBAS statistical database, stat.gov.tw price pages, data.gov.tw, old file host
+nstat_cn https://nstatdb.dgbas.gov.tw/dgbasall/webMain.aspx?k=dgmain
+nstat_en https://nstatdb.dgbas.gov.tw/dgbasall/webMain.aspx?k=engmain
+nstat_tbl https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=210&funid=A030101015
+nstat_sdmx https://nstatdb.dgbas.gov.tw/dgbasall/webMain.aspx?sdmx/A030101015/1..M.&startTime=2025-M1&endTime=2026-M9
+nstat_sdmx2 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sdmx/A030101015/1+2+3..M.&startTime=2025-M1&endTime=2026-M9
+stat_home https://www.stat.gov.tw/
+stat_2669 https://www.stat.gov.tw/cp.aspx?n=2669
+stat_2943 https://www.stat.gov.tw/cl.aspx?n=2943
+stat_3664 https://www.stat.gov.tw/cl.aspx?n=3664
+stat_3563 https://www.stat.gov.tw/cl.aspx?n=3563
+stat_2876 https://www.stat.gov.tw/cl.aspx?n=2876
+stat_3654 https://www.stat.gov.tw/cl.aspx?n=3654
+stat_3442 https://www.stat.gov.tw/cl.aspx?n=3442
+stat_news2750 https://www.stat.gov.tw/News_Content.aspx?n=2750
+stat_cal https://www.stat.gov.tw/News_NoticeCalendar_Future.aspx?n=3907
+eng_home https://eng.stat.gov.tw/
+ws_cpispl https://ws.dgbas.gov.tw/001/Upload/463/relfile/10315/2414/cpispl.xls
+dgov_6019 https://data.gov.tw/api/v2/rest/dataset/6019
+dgov_131757 https://data.gov.tw/api/v2/rest/dataset/131757
+dgov_131035 https://data.gov.tw/api/v2/rest/dataset/131035
+dgov_search https://data.gov.tw/api/v2/rest/dataset?q=%E6%B6%88%E8%B2%BB%E8%80%85%E7%89%A9%E5%83%B9%E6%8C%87%E6%95%B8
+dgov_search2 https://data.gov.tw/api/front/dataset/list {"bool":[{"fulltext":{"value":"消費者物價指數"}}],"filter":[],"page_num":1,"page_limit":50,"tids":[],"sort":"_score_desc"}

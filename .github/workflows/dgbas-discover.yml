@@ -1,0 +1,44 @@
+name: DGBAS discovery (manual)
+
+# Probes DGBAS price-statistics routes for Taiwan and saves every response to the
+# "discovery" branch under discovery/dgbas (round named by DGBAS_ROUND).
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-tw]
+    paths:
+      - pipeline/tools/dgbas_discover.py
+      - pipeline/tools/dgbas_seeds.txt
+      - .github/workflows/dgbas-discover.yml
+
+permissions:
+  contents: write
+
+env:
+  DGBAS_ROUND: r1
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Runner IP
+        run: curl -s https://ipinfo.io/json || true
+      - name: Probe DGBAS
+        run: python -I pipeline/tools/dgbas_discover.py pipeline/tools/dgbas_seeds.txt discovery/dgbas/$DGBAS_ROUND 250 2
+      - name: Push results to the discovery branch
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mv discovery /tmp/discovery
+          for i in 1 2 3; do
+            git fetch origin discovery && git checkout -f -B discovery origin/discovery
+            mkdir -p discovery/dgbas && rm -rf discovery/dgbas/$DGBAS_ROUND && cp -r /tmp/discovery/dgbas/$DGBAS_ROUND discovery/dgbas/
+            git add discovery/dgbas/$DGBAS_ROUND
+            git commit -qm "DGBAS discovery $DGBAS_ROUND" && git push -q origin discovery && break
+            sleep 5
+          done
