@@ -9,7 +9,6 @@ on:
     branches: [dev-cn]
     paths:
       - pipeline/tools/nbs_discover.py
-      - pipeline/core/nbs.py
       - .github/workflows/nbs-discover.yml
 
 permissions:
