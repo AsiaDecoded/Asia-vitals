@@ -97,7 +97,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 17  # bump when the outputs change, so the next run rebuilds them
+VERSION = 18  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -267,12 +267,16 @@ def _ex_food_energy(idx, names, errors):
 # The parts that separate MAS core from CPI less food and energy, as weighted indices on the same chained method
 # (published weights per 10,000; a negative weight subtracts an item from its group):
 #   in MAS core only: food excl. FBSS + electricity + gas
+#   shared by both: all items - accommodation - private transport - food excl. FBSS - electricity - gas
 #   in CPI less food and energy only: accommodation + private transport - petrol - other fuel and lubricants
 #   (= imputed rentals, actual rents and maintenance, private transport excl. fuel)
 GAP_PARTS = {
     "core_only": {"2014": {"1.01": 774, "1.03.2.3": 215, "1.03.2.4": 34},
                   "2019": {"1.01": 687, "1.03.2.3": 159, "1.03.2.4": 29},
                   "2024": {"1.01": 651, "1.03.2.3": 179, "1.03.2.4": 19}},
+    "shared": {"2014": {"1": 10000, "1.03.1": -2287, "1.06.1": -1149, "1.01": -774, "1.03.2.3": -215, "1.03.2.4": -34},
+               "2019": {"1": 10000, "1.03.1": -2198, "1.06.1": -1221, "1.01": -687, "1.03.2.3": -159, "1.03.2.4": -29},
+               "2024": {"1": 10000, "1.03.1": -2656, "1.06.1": -906, "1.01": -651, "1.03.2.3": -179, "1.03.2.4": -19}},
     "exfe_only": {"2014": {"1.03.1": 2287, "1.06.1": 1149, "1.06.1.5": -250},
                   "2019": {"1.03.1": 2198, "1.06.1": 1221, "1.06.1.5": -194, "1.06.1.6": -6},
                   "2024": {"1.03.1": 2656, "1.06.1": 906, "1.06.1.5": -174, "1.06.1.6": -4}},
@@ -500,7 +504,8 @@ def update(**_):
                      "yoy": round((ex[d] / py - 1) * 100, 1) if py else None})
     order += 1
     labels = {"core_only": "In MAS core only: food excl. FBSS, electricity and gas (calculated)",
-              "exfe_only": "In CPI less food and energy only: accommodation and private transport excl. fuel (calculated)"}
+              "exfe_only": "In CPI less food and energy only: accommodation and private transport excl. fuel (calculated)",
+              "shared": "In both MAS core and CPI less food and energy (calculated)"}
     for key, w in GAP_PARTS.items():
         g = _chained(idx, w, errors, key)
         for d in sorted(g):

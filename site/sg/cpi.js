@@ -430,6 +430,7 @@ dash.calc('cpi_heat', {
     lineChart('cpi-gapc-chart', 'cpi-gapc', 'cpi-gapc-legend', 'national', [
       { key: 'core_only', name: 'In MAS core only', color: C[5], width: 3 },
       { key: 'exfe_only', name: 'In CPI less food and energy only', color: C[4], width: 3 },
+      { key: 'shared', name: 'In both', color: C[3], width: 2, dash: true },
     ], 300);
   }
 
