@@ -396,6 +396,7 @@ dash.calc('cpi_ctab', {
       { key: 'svc_land', name: 'Land transport', color: C[4] },
       { key: 'svc_air', name: 'Airfares', color: C[5] },
       { key: 'svc_rent', name: 'Actual rentals', color: C[2] },
+      { key: 'svc_imputed', name: 'Imputed rentals', color: C[1] },
       { key: 'svc_other', name: 'Other services', color: C[3] },
     ], 280);
   }

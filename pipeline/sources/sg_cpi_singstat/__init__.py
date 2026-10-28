@@ -100,7 +100,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 36  # bump when the outputs change, so the next run rebuilds them
+VERSION = 37  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -455,18 +455,18 @@ def _ex_food_energy(idx, names, errors):
 # indices on the chained method (weights per 10,000 of CPI). "S" is MAS's services index (CORE_WEIGHTS; 2014 estimated).
 # Accommodation as in HEADLINE_WEIGHTS. Health, land transport, airfares and actual rentals: IP-E61 Appendix III for
 # 2019 and 2024; IP-E48 for 2014 (old classification: bus and train 174, point-to-point 105, other public transport 25,
-# air fares 121). IP-E48 does not split accommodation, so the 2014 actual rentals weight (212) is the one implied by the
-# indices (accommodation = rentals + imputed + maintenance, exact fit 2015-2018). Private transport services
+# air fares 121). IP-E48 does not split accommodation, so the 2014 actual and imputed rentals weights (212 and 1,885) are the ones
+# implied by the indices (accommodation = rentals + imputed + maintenance, exact fit 2015-2018). Private transport services
 # (maintenance and repair, other services, insurance: 57 + 161 + 14) are indexed only from Jan 2024, so they enter the
 # 2024 basket only, as private transport less cars, motorcycles, petrol and other fuel (248; this carries bicycles and
 # parts, 16, which also have no index before 2024).
 _SVC = {
     "2014": {"health": {"1.05.2": 212, "1.05.3": 211, "1.05.5": 52}, "services": 2939, "acco": 2287,
-             "land": 304, "air": 121, "rent": 212, "ptx": {}},
+             "land": 304, "air": 121, "rent": 212, "imputed": 1885, "ptx": {}},
     "2019": {"health": {"1.05.2": 274, "1.05.3": 151, "1.05.4": 28, "1.05.5": 82}, "services": 3173, "acco": 2198,
-             "land": 310, "air": 170, "rent": 228, "ptx": {}},
+             "land": 310, "air": 170, "rent": 228, "imputed": 1750, "ptx": {}},
     "2024": {"health": {"1.05.2": 428, "1.05.3": 238, "1.05.4": 23, "1.05.5": 225}, "services": 3173, "acco": 2656,
-             "land": 262, "air": 129, "rent": 294, "ptx": {"1.06.1": 906, "1.06.1.1": -459, "1.06.1.2": -21,
+             "land": 262, "air": 129, "rent": 294, "imputed": 2138, "ptx": {"1.06.1": 906, "1.06.1.1": -459, "1.06.1.2": -21,
                                                                          "1.06.1.5": -174, "1.06.1.6": -4}},
 }
 SVC_PARTS = {
@@ -474,13 +474,15 @@ SVC_PARTS = {
     "svc_land": {b: {"1.06.2": v["land"]} for b, v in _SVC.items()},
     "svc_air": {b: {"1.06.3.1": v["air"]} for b, v in _SVC.items()},
     "svc_rent": {b: {"1.03.1.1": v["rent"]} for b, v in _SVC.items()},
+    "svc_imputed": {b: {"1.03.1.2": v["imputed"]} for b, v in _SVC.items()},
     "svc_other": {b: {"S": v["services"], "1.03.1": v["acco"], "1.11": CORE_WEIGHTS[b]["fbss"], **v["ptx"], "1.06.2": -v["land"], "1.06.3.1": -v["air"],
-                      "1.03.1.1": -v["rent"], **{c: -w for c, w in v["health"].items()}} for b, v in _SVC.items()},
+                      "1.03.1.1": -v["rent"], "1.03.1.2": -v["imputed"], **{c: -w for c, w in v["health"].items()}} for b, v in _SVC.items()},
     "svc_all": {b: {"S": v["services"], "1.03.1": v["acco"], "1.11": CORE_WEIGHTS[b]["fbss"], **v["ptx"]}
                 for b, v in _SVC.items()},
 }
 SVC_LABELS = {"svc_health": "Services: health (calculated)", "svc_land": "Services: land transport (calculated)",
               "svc_air": "Services: airfares (calculated)", "svc_rent": "Services: actual rentals (calculated)",
+              "svc_imputed": "Services: imputed rentals (calculated)",
               "svc_other": "Services: other (calculated)",
               "svc_all": "Services, broad: MAS services + accommodation + FBSS + private transport services (calculated)"}
 
