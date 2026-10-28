@@ -68,6 +68,7 @@ def run(spec, force=False):
                 if ym == latest[t]:
                     published[t] = r.get("createdAt")
             order += 1
+    rawdir.mkdir(parents=True, exist_ok=True)
     with gzip.open(store_path, "wt", encoding="utf-8") as f:  # kept even if the checks fail
         json.dump(store, f, ensure_ascii=False, separators=(",", ":"))
     # checks
