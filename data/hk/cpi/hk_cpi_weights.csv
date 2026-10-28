@@ -1,0 +1,741 @@
+reference_year,adopted,index_type,series,label,level,section,weight_pct
+2025,(Adopted from the reference month of April 2026 onwards),composite,all,All items,all,all,100.0
+2025,(Adopted from the reference month of April 2026 onwards),a,all,All items,all,all,100.0
+2025,(Adopted from the reference month of April 2026 onwards),b,all,All items,all,all,100.0
+2025,(Adopted from the reference month of April 2026 onwards),c,all,All items,all,all,100.0
+2025,(Adopted from the reference month of April 2026 onwards),composite,food,Food,section,food,25.27
+2025,(Adopted from the reference month of April 2026 onwards),a,food,Food,section,food,30.97
+2025,(Adopted from the reference month of April 2026 onwards),b,food,Food,section,food,24.39
+2025,(Adopted from the reference month of April 2026 onwards),c,food,Food,section,food,19.01
+2025,(Adopted from the reference month of April 2026 onwards),composite,meals_out,Meals out and takeaway food,subsection,food,15.92
+2025,(Adopted from the reference month of April 2026 onwards),a,meals_out,Meals out and takeaway food,subsection,food,18.26
+2025,(Adopted from the reference month of April 2026 onwards),b,meals_out,Meals out and takeaway food,subsection,food,16.25
+2025,(Adopted from the reference month of April 2026 onwards),c,meals_out,Meals out and takeaway food,subsection,food,12.27
+2025,(Adopted from the reference month of April 2026 onwards),composite,basic_food,Basic food,subsection,food,9.35
+2025,(Adopted from the reference month of April 2026 onwards),a,basic_food,Basic food,subsection,food,12.71
+2025,(Adopted from the reference month of April 2026 onwards),b,basic_food,Basic food,subsection,food,8.14
+2025,(Adopted from the reference month of April 2026 onwards),c,basic_food,Basic food,subsection,food,6.74
+2025,(Adopted from the reference month of April 2026 onwards),composite,g2,Rice,group,food,0.14
+2025,(Adopted from the reference month of April 2026 onwards),a,g2,Rice,group,food,0.21
+2025,(Adopted from the reference month of April 2026 onwards),b,g2,Rice,group,food,0.11
+2025,(Adopted from the reference month of April 2026 onwards),c,g2,Rice,group,food,0.08
+2025,(Adopted from the reference month of April 2026 onwards),composite,g3,Other cereals and cereal preparations,group,food,0.24
+2025,(Adopted from the reference month of April 2026 onwards),a,g3,Other cereals and cereal preparations,group,food,0.35
+2025,(Adopted from the reference month of April 2026 onwards),b,g3,Other cereals and cereal preparations,group,food,0.2
+2025,(Adopted from the reference month of April 2026 onwards),c,g3,Other cereals and cereal preparations,group,food,0.15
+2025,(Adopted from the reference month of April 2026 onwards),composite,g4,"Bread, cakes, biscuits and pastries",group,food,0.71
+2025,(Adopted from the reference month of April 2026 onwards),a,g4,"Bread, cakes, biscuits and pastries",group,food,0.93
+2025,(Adopted from the reference month of April 2026 onwards),b,g4,"Bread, cakes, biscuits and pastries",group,food,0.65
+2025,(Adopted from the reference month of April 2026 onwards),c,g4,"Bread, cakes, biscuits and pastries",group,food,0.52
+2025,(Adopted from the reference month of April 2026 onwards),composite,g5,Salt-water fish,group,food,0.76
+2025,(Adopted from the reference month of April 2026 onwards),a,g5,Salt-water fish,group,food,1.09
+2025,(Adopted from the reference month of April 2026 onwards),b,g5,Salt-water fish,group,food,0.65
+2025,(Adopted from the reference month of April 2026 onwards),c,g5,Salt-water fish,group,food,0.49
+2025,(Adopted from the reference month of April 2026 onwards),composite,g6,Fresh-water fish,group,food,0.26
+2025,(Adopted from the reference month of April 2026 onwards),a,g6,Fresh-water fish,group,food,0.46
+2025,(Adopted from the reference month of April 2026 onwards),b,g6,Fresh-water fish,group,food,0.2
+2025,(Adopted from the reference month of April 2026 onwards),c,g6,Fresh-water fish,group,food,0.1
+2025,(Adopted from the reference month of April 2026 onwards),composite,g7,Other fresh seafood,group,food,0.3
+2025,(Adopted from the reference month of April 2026 onwards),a,g7,Other fresh seafood,group,food,0.32
+2025,(Adopted from the reference month of April 2026 onwards),b,g7,Other fresh seafood,group,food,0.29
+2025,(Adopted from the reference month of April 2026 onwards),c,g7,Other fresh seafood,group,food,0.29
+2025,(Adopted from the reference month of April 2026 onwards),composite,g8,Processed sea products,group,food,0.5
+2025,(Adopted from the reference month of April 2026 onwards),a,g8,Processed sea products,group,food,0.53
+2025,(Adopted from the reference month of April 2026 onwards),b,g8,Processed sea products,group,food,0.48
+2025,(Adopted from the reference month of April 2026 onwards),c,g8,Processed sea products,group,food,0.47
+2025,(Adopted from the reference month of April 2026 onwards),composite,g9,Pork,group,food,1.16
+2025,(Adopted from the reference month of April 2026 onwards),a,g9,Pork,group,food,1.83
+2025,(Adopted from the reference month of April 2026 onwards),b,g9,Pork,group,food,0.92
+2025,(Adopted from the reference month of April 2026 onwards),c,g9,Pork,group,food,0.66
+2025,(Adopted from the reference month of April 2026 onwards),composite,g10,Beef,group,food,0.27
+2025,(Adopted from the reference month of April 2026 onwards),a,g10,Beef,group,food,0.31
+2025,(Adopted from the reference month of April 2026 onwards),b,g10,Beef,group,food,0.25
+2025,(Adopted from the reference month of April 2026 onwards),c,g10,Beef,group,food,0.24
+2025,(Adopted from the reference month of April 2026 onwards),composite,g11,Poultry,group,food,0.39
+2025,(Adopted from the reference month of April 2026 onwards),a,g11,Poultry,group,food,0.53
+2025,(Adopted from the reference month of April 2026 onwards),b,g11,Poultry,group,food,0.34
+2025,(Adopted from the reference month of April 2026 onwards),c,g11,Poultry,group,food,0.28
+2025,(Adopted from the reference month of April 2026 onwards),composite,g12,Frozen meat,group,food,0.67
+2025,(Adopted from the reference month of April 2026 onwards),a,g12,Frozen meat,group,food,0.81
+2025,(Adopted from the reference month of April 2026 onwards),b,g12,Frozen meat,group,food,0.63
+2025,(Adopted from the reference month of April 2026 onwards),c,g12,Frozen meat,group,food,0.54
+2025,(Adopted from the reference month of April 2026 onwards),composite,g13,Other meat,group,food,0.3
+2025,(Adopted from the reference month of April 2026 onwards),a,g13,Other meat,group,food,0.43
+2025,(Adopted from the reference month of April 2026 onwards),b,g13,Other meat,group,food,0.26
+2025,(Adopted from the reference month of April 2026 onwards),c,g13,Other meat,group,food,0.19
+2025,(Adopted from the reference month of April 2026 onwards),composite,g14,Vegetables,group,food,1.2
+2025,(Adopted from the reference month of April 2026 onwards),a,g14,Vegetables,group,food,1.81
+2025,(Adopted from the reference month of April 2026 onwards),b,g14,Vegetables,group,food,0.97
+2025,(Adopted from the reference month of April 2026 onwards),c,g14,Vegetables,group,food,0.72
+2025,(Adopted from the reference month of April 2026 onwards),composite,g15,Fruits,group,food,0.88
+2025,(Adopted from the reference month of April 2026 onwards),a,g15,Fruits,group,food,1.14
+2025,(Adopted from the reference month of April 2026 onwards),b,g15,Fruits,group,food,0.79
+2025,(Adopted from the reference month of April 2026 onwards),c,g15,Fruits,group,food,0.69
+2025,(Adopted from the reference month of April 2026 onwards),composite,g16,Dairy products,group,food,0.34
+2025,(Adopted from the reference month of April 2026 onwards),a,g16,Dairy products,group,food,0.38
+2025,(Adopted from the reference month of April 2026 onwards),b,g16,Dairy products,group,food,0.31
+2025,(Adopted from the reference month of April 2026 onwards),c,g16,Dairy products,group,food,0.33
+2025,(Adopted from the reference month of April 2026 onwards),composite,g17,Eggs,group,food,0.14
+2025,(Adopted from the reference month of April 2026 onwards),a,g17,Eggs,group,food,0.21
+2025,(Adopted from the reference month of April 2026 onwards),b,g17,Eggs,group,food,0.11
+2025,(Adopted from the reference month of April 2026 onwards),c,g17,Eggs,group,food,0.09
+2025,(Adopted from the reference month of April 2026 onwards),composite,g18,Edible oils,group,food,0.09
+2025,(Adopted from the reference month of April 2026 onwards),a,g18,Edible oils,group,food,0.12
+2025,(Adopted from the reference month of April 2026 onwards),b,g18,Edible oils,group,food,0.07
+2025,(Adopted from the reference month of April 2026 onwards),c,g18,Edible oils,group,food,0.08
+2025,(Adopted from the reference month of April 2026 onwards),composite,g19,Non-alcoholic beverages,group,food,0.25
+2025,(Adopted from the reference month of April 2026 onwards),a,g19,Non-alcoholic beverages,group,food,0.34
+2025,(Adopted from the reference month of April 2026 onwards),b,g19,Non-alcoholic beverages,group,food,0.21
+2025,(Adopted from the reference month of April 2026 onwards),c,g19,Non-alcoholic beverages,group,food,0.19
+2025,(Adopted from the reference month of April 2026 onwards),composite,g20,Confectionery and snacks,group,food,0.24
+2025,(Adopted from the reference month of April 2026 onwards),a,g20,Confectionery and snacks,group,food,0.26
+2025,(Adopted from the reference month of April 2026 onwards),b,g20,Confectionery and snacks,group,food,0.25
+2025,(Adopted from the reference month of April 2026 onwards),c,g20,Confectionery and snacks,group,food,0.21
+2025,(Adopted from the reference month of April 2026 onwards),composite,g21,Condiments and sauces,group,food,0.1
+2025,(Adopted from the reference month of April 2026 onwards),a,g21,Condiments and sauces,group,food,0.13
+2025,(Adopted from the reference month of April 2026 onwards),b,g21,Condiments and sauces,group,food,0.09
+2025,(Adopted from the reference month of April 2026 onwards),c,g21,Condiments and sauces,group,food,0.08
+2025,(Adopted from the reference month of April 2026 onwards),composite,g22,Other food,group,food,0.41
+2025,(Adopted from the reference month of April 2026 onwards),a,g22,Other food,group,food,0.52
+2025,(Adopted from the reference month of April 2026 onwards),b,g22,Other food,group,food,0.36
+2025,(Adopted from the reference month of April 2026 onwards),c,g22,Other food,group,food,0.34
+2025,(Adopted from the reference month of April 2026 onwards),composite,housing,Housing,section,housing,39.69
+2025,(Adopted from the reference month of April 2026 onwards),a,housing,Housing,section,housing,41.14
+2025,(Adopted from the reference month of April 2026 onwards),b,housing,Housing,section,housing,40.82
+2025,(Adopted from the reference month of April 2026 onwards),c,housing,Housing,section,housing,35.95
+2025,(Adopted from the reference month of April 2026 onwards),composite,g23,"Rent, including rates and government rent",group,housing,36.19
+2025,(Adopted from the reference month of April 2026 onwards),a,g23,"Rent, including rates and government rent",group,housing,38.48
+2025,(Adopted from the reference month of April 2026 onwards),b,g23,"Rent, including rates and government rent",group,housing,37.1
+2025,(Adopted from the reference month of April 2026 onwards),c,g23,"Rent, including rates and government rent",group,housing,31.66
+2025,(Adopted from the reference month of April 2026 onwards),composite,g24,Management fees and other housing expenses,group,housing,3.5
+2025,(Adopted from the reference month of April 2026 onwards),a,g24,Management fees and other housing expenses,group,housing,2.66
+2025,(Adopted from the reference month of April 2026 onwards),b,g24,Management fees and other housing expenses,group,housing,3.72
+2025,(Adopted from the reference month of April 2026 onwards),c,g24,Management fees and other housing expenses,group,housing,4.29
+2025,(Adopted from the reference month of April 2026 onwards),composite,egw,"Electricity, gas and water",section,egw,2.8
+2025,(Adopted from the reference month of April 2026 onwards),a,egw,"Electricity, gas and water",section,egw,3.74
+2025,(Adopted from the reference month of April 2026 onwards),b,egw,"Electricity, gas and water",section,egw,2.57
+2025,(Adopted from the reference month of April 2026 onwards),c,egw,"Electricity, gas and water",section,egw,1.91
+2025,(Adopted from the reference month of April 2026 onwards),composite,g25,Electricity,group,egw,1.83
+2025,(Adopted from the reference month of April 2026 onwards),a,g25,Electricity,group,egw,2.4
+2025,(Adopted from the reference month of April 2026 onwards),b,g25,Electricity,group,egw,1.7
+2025,(Adopted from the reference month of April 2026 onwards),c,g25,Electricity,group,egw,1.28
+2025,(Adopted from the reference month of April 2026 onwards),composite,g26,Towngas,group,egw,0.61
+2025,(Adopted from the reference month of April 2026 onwards),a,g26,Towngas,group,egw,0.85
+2025,(Adopted from the reference month of April 2026 onwards),b,g26,Towngas,group,egw,0.54
+2025,(Adopted from the reference month of April 2026 onwards),c,g26,Towngas,group,egw,0.37
+2025,(Adopted from the reference month of April 2026 onwards),composite,g27,Liquefied petroleum gas and other fuel,group,egw,0.1
+2025,(Adopted from the reference month of April 2026 onwards),a,g27,Liquefied petroleum gas and other fuel,group,egw,0.14
+2025,(Adopted from the reference month of April 2026 onwards),b,g27,Liquefied petroleum gas and other fuel,group,egw,0.08
+2025,(Adopted from the reference month of April 2026 onwards),c,g27,Liquefied petroleum gas and other fuel,group,egw,0.08
+2025,(Adopted from the reference month of April 2026 onwards),composite,g28,Water and sewage charges,group,egw,0.26
+2025,(Adopted from the reference month of April 2026 onwards),a,g28,Water and sewage charges,group,egw,0.35
+2025,(Adopted from the reference month of April 2026 onwards),b,g28,Water and sewage charges,group,egw,0.25
+2025,(Adopted from the reference month of April 2026 onwards),c,g28,Water and sewage charges,group,egw,0.18
+2025,(Adopted from the reference month of April 2026 onwards),composite,alcohol_tobacco,Alcoholic drinks and tobacco,section,alcohol_tobacco,0.41
+2025,(Adopted from the reference month of April 2026 onwards),a,alcohol_tobacco,Alcoholic drinks and tobacco,section,alcohol_tobacco,0.65
+2025,(Adopted from the reference month of April 2026 onwards),b,alcohol_tobacco,Alcoholic drinks and tobacco,section,alcohol_tobacco,0.31
+2025,(Adopted from the reference month of April 2026 onwards),c,alcohol_tobacco,Alcoholic drinks and tobacco,section,alcohol_tobacco,0.22
+2025,(Adopted from the reference month of April 2026 onwards),composite,g29,Wines and spirits,group,alcohol_tobacco,0.12
+2025,(Adopted from the reference month of April 2026 onwards),a,g29,Wines and spirits,group,alcohol_tobacco,0.06
+2025,(Adopted from the reference month of April 2026 onwards),b,g29,Wines and spirits,group,alcohol_tobacco,0.13
+2025,(Adopted from the reference month of April 2026 onwards),c,g29,Wines and spirits,group,alcohol_tobacco,0.17
+2025,(Adopted from the reference month of April 2026 onwards),composite,g30,Beer,group,alcohol_tobacco,0.05
+2025,(Adopted from the reference month of April 2026 onwards),a,g30,Beer,group,alcohol_tobacco,0.08
+2025,(Adopted from the reference month of April 2026 onwards),b,g30,Beer,group,alcohol_tobacco,0.04
+2025,(Adopted from the reference month of April 2026 onwards),c,g30,Beer,group,alcohol_tobacco,0.02
+2025,(Adopted from the reference month of April 2026 onwards),composite,g31,Cigarettes,group,alcohol_tobacco,0.24
+2025,(Adopted from the reference month of April 2026 onwards),a,g31,Cigarettes,group,alcohol_tobacco,0.51
+2025,(Adopted from the reference month of April 2026 onwards),b,g31,Cigarettes,group,alcohol_tobacco,0.14
+2025,(Adopted from the reference month of April 2026 onwards),c,g31,Cigarettes,group,alcohol_tobacco,0.03
+2025,(Adopted from the reference month of April 2026 onwards),composite,clothing,Clothing and footwear,section,clothing,2.1
+2025,(Adopted from the reference month of April 2026 onwards),a,clothing,Clothing and footwear,section,clothing,1.62
+2025,(Adopted from the reference month of April 2026 onwards),b,clothing,Clothing and footwear,section,clothing,2.23
+2025,(Adopted from the reference month of April 2026 onwards),c,clothing,Clothing and footwear,section,clothing,2.52
+2025,(Adopted from the reference month of April 2026 onwards),composite,g32,Men’s clothing,group,clothing,0.51
+2025,(Adopted from the reference month of April 2026 onwards),a,g32,Men’s clothing,group,clothing,0.42
+2025,(Adopted from the reference month of April 2026 onwards),b,g32,Men’s clothing,group,clothing,0.53
+2025,(Adopted from the reference month of April 2026 onwards),c,g32,Men’s clothing,group,clothing,0.6
+2025,(Adopted from the reference month of April 2026 onwards),composite,g33,Women’s clothing,group,clothing,0.95
+2025,(Adopted from the reference month of April 2026 onwards),a,g33,Women’s clothing,group,clothing,0.67
+2025,(Adopted from the reference month of April 2026 onwards),b,g33,Women’s clothing,group,clothing,1.11
+2025,(Adopted from the reference month of April 2026 onwards),c,g33,Women’s clothing,group,clothing,1.08
+2025,(Adopted from the reference month of April 2026 onwards),composite,g34,Children’s and infants’ clothing,group,clothing,0.16
+2025,(Adopted from the reference month of April 2026 onwards),a,g34,Children’s and infants’ clothing,group,clothing,0.11
+2025,(Adopted from the reference month of April 2026 onwards),b,g34,Children’s and infants’ clothing,group,clothing,0.15
+2025,(Adopted from the reference month of April 2026 onwards),c,g34,Children’s and infants’ clothing,group,clothing,0.24
+2025,(Adopted from the reference month of April 2026 onwards),composite,g35,Other clothing,group,clothing,0.06
+2025,(Adopted from the reference month of April 2026 onwards),a,g35,Other clothing,group,clothing,0.06
+2025,(Adopted from the reference month of April 2026 onwards),b,g35,Other clothing,group,clothing,0.04
+2025,(Adopted from the reference month of April 2026 onwards),c,g35,Other clothing,group,clothing,0.08
+2025,(Adopted from the reference month of April 2026 onwards),composite,g36,Men’s footwear,group,clothing,0.17
+2025,(Adopted from the reference month of April 2026 onwards),a,g36,Men’s footwear,group,clothing,0.12
+2025,(Adopted from the reference month of April 2026 onwards),b,g36,Men’s footwear,group,clothing,0.16
+2025,(Adopted from the reference month of April 2026 onwards),c,g36,Men’s footwear,group,clothing,0.25
+2025,(Adopted from the reference month of April 2026 onwards),composite,g37,Women’s footwear,group,clothing,0.2
+2025,(Adopted from the reference month of April 2026 onwards),a,g37,Women’s footwear,group,clothing,0.2
+2025,(Adopted from the reference month of April 2026 onwards),b,g37,Women’s footwear,group,clothing,0.19
+2025,(Adopted from the reference month of April 2026 onwards),c,g37,Women’s footwear,group,clothing,0.2
+2025,(Adopted from the reference month of April 2026 onwards),composite,g38,Children’s and infants’ footwear,group,clothing,0.05
+2025,(Adopted from the reference month of April 2026 onwards),a,g38,Children’s and infants’ footwear,group,clothing,0.04
+2025,(Adopted from the reference month of April 2026 onwards),b,g38,Children’s and infants’ footwear,group,clothing,0.05
+2025,(Adopted from the reference month of April 2026 onwards),c,g38,Children’s and infants’ footwear,group,clothing,0.07
+2025,(Adopted from the reference month of April 2026 onwards),composite,durables,Durable goods,section,durables,3.44
+2025,(Adopted from the reference month of April 2026 onwards),a,durables,Durable goods,section,durables,2.64
+2025,(Adopted from the reference month of April 2026 onwards),b,durables,Durable goods,section,durables,3.62
+2025,(Adopted from the reference month of April 2026 onwards),c,durables,Durable goods,section,durables,4.23
+2025,(Adopted from the reference month of April 2026 onwards),composite,g39,Furniture,group,durables,0.28
+2025,(Adopted from the reference month of April 2026 onwards),a,g39,Furniture,group,durables,0.25
+2025,(Adopted from the reference month of April 2026 onwards),b,g39,Furniture,group,durables,0.29
+2025,(Adopted from the reference month of April 2026 onwards),c,g39,Furniture,group,durables,0.28
+2025,(Adopted from the reference month of April 2026 onwards),composite,g40,"Home appliances, electric and gas",group,durables,0.89
+2025,(Adopted from the reference month of April 2026 onwards),a,g40,"Home appliances, electric and gas",group,durables,0.89
+2025,(Adopted from the reference month of April 2026 onwards),b,g40,"Home appliances, electric and gas",group,durables,0.94
+2025,(Adopted from the reference month of April 2026 onwards),c,g40,"Home appliances, electric and gas",group,durables,0.82
+2025,(Adopted from the reference month of April 2026 onwards),composite,g41,Video and sound equipment,group,durables,0.19
+2025,(Adopted from the reference month of April 2026 onwards),a,g41,Video and sound equipment,group,durables,0.16
+2025,(Adopted from the reference month of April 2026 onwards),b,g41,Video and sound equipment,group,durables,0.17
+2025,(Adopted from the reference month of April 2026 onwards),c,g41,Video and sound equipment,group,durables,0.27
+2025,(Adopted from the reference month of April 2026 onwards),composite,g42,Information technology and telecommunications equipment,group,durables,1.25
+2025,(Adopted from the reference month of April 2026 onwards),a,g42,Information technology and telecommunications equipment,group,durables,0.79
+2025,(Adopted from the reference month of April 2026 onwards),b,g42,Information technology and telecommunications equipment,group,durables,1.38
+2025,(Adopted from the reference month of April 2026 onwards),c,g42,Information technology and telecommunications equipment,group,durables,1.64
+2025,(Adopted from the reference month of April 2026 onwards),composite,g43,Tableware and kitchen utensils,group,durables,0.07
+2025,(Adopted from the reference month of April 2026 onwards),a,g43,Tableware and kitchen utensils,group,durables,0.07
+2025,(Adopted from the reference month of April 2026 onwards),b,g43,Tableware and kitchen utensils,group,durables,0.07
+2025,(Adopted from the reference month of April 2026 onwards),c,g43,Tableware and kitchen utensils,group,durables,0.08
+2025,(Adopted from the reference month of April 2026 onwards),composite,g44,"Watches, clocks, cameras and optical goods",group,durables,0.35
+2025,(Adopted from the reference month of April 2026 onwards),a,g44,"Watches, clocks, cameras and optical goods",group,durables,0.28
+2025,(Adopted from the reference month of April 2026 onwards),b,g44,"Watches, clocks, cameras and optical goods",group,durables,0.36
+2025,(Adopted from the reference month of April 2026 onwards),c,g44,"Watches, clocks, cameras and optical goods",group,durables,0.43
+2025,(Adopted from the reference month of April 2026 onwards),composite,g45,"Travel goods, handbags and other personal effects",group,durables,0.36
+2025,(Adopted from the reference month of April 2026 onwards),a,g45,"Travel goods, handbags and other personal effects",group,durables,0.17
+2025,(Adopted from the reference month of April 2026 onwards),b,g45,"Travel goods, handbags and other personal effects",group,durables,0.37
+2025,(Adopted from the reference month of April 2026 onwards),c,g45,"Travel goods, handbags and other personal effects",group,durables,0.61
+2025,(Adopted from the reference month of April 2026 onwards),composite,g46,Other durable goods,group,durables,0.05
+2025,(Adopted from the reference month of April 2026 onwards),a,g46,Other durable goods,group,durables,0.03
+2025,(Adopted from the reference month of April 2026 onwards),b,g46,Other durable goods,group,durables,0.04
+2025,(Adopted from the reference month of April 2026 onwards),c,g46,Other durable goods,group,durables,0.1
+2025,(Adopted from the reference month of April 2026 onwards),composite,misc_goods,Miscellaneous goods,section,misc_goods,3.13
+2025,(Adopted from the reference month of April 2026 onwards),a,misc_goods,Miscellaneous goods,section,misc_goods,2.96
+2025,(Adopted from the reference month of April 2026 onwards),b,misc_goods,Miscellaneous goods,section,misc_goods,2.97
+2025,(Adopted from the reference month of April 2026 onwards),c,misc_goods,Miscellaneous goods,section,misc_goods,3.62
+2025,(Adopted from the reference month of April 2026 onwards),composite,g47,Medicines and health products,group,misc_goods,0.77
+2025,(Adopted from the reference month of April 2026 onwards),a,g47,Medicines and health products,group,misc_goods,0.78
+2025,(Adopted from the reference month of April 2026 onwards),b,g47,Medicines and health products,group,misc_goods,0.75
+2025,(Adopted from the reference month of April 2026 onwards),c,g47,Medicines and health products,group,misc_goods,0.79
+2025,(Adopted from the reference month of April 2026 onwards),composite,g48,"Newspapers, books and stationery",group,misc_goods,0.15
+2025,(Adopted from the reference month of April 2026 onwards),a,g48,"Newspapers, books and stationery",group,misc_goods,0.14
+2025,(Adopted from the reference month of April 2026 onwards),b,g48,"Newspapers, books and stationery",group,misc_goods,0.15
+2025,(Adopted from the reference month of April 2026 onwards),c,g48,"Newspapers, books and stationery",group,misc_goods,0.16
+2025,(Adopted from the reference month of April 2026 onwards),composite,g49,Soft furnishings,group,misc_goods,0.08
+2025,(Adopted from the reference month of April 2026 onwards),a,g49,Soft furnishings,group,misc_goods,0.06
+2025,(Adopted from the reference month of April 2026 onwards),b,g49,Soft furnishings,group,misc_goods,0.09
+2025,(Adopted from the reference month of April 2026 onwards),c,g49,Soft furnishings,group,misc_goods,0.09
+2025,(Adopted from the reference month of April 2026 onwards),composite,g50,Cosmetics and personal care products,group,misc_goods,0.92
+2025,(Adopted from the reference month of April 2026 onwards),a,g50,Cosmetics and personal care products,group,misc_goods,0.98
+2025,(Adopted from the reference month of April 2026 onwards),b,g50,Cosmetics and personal care products,group,misc_goods,0.8
+2025,(Adopted from the reference month of April 2026 onwards),c,g50,Cosmetics and personal care products,group,misc_goods,1.04
+2025,(Adopted from the reference month of April 2026 onwards),composite,g51,Household cleansing tools and supplies,group,misc_goods,0.15
+2025,(Adopted from the reference month of April 2026 onwards),a,g51,Household cleansing tools and supplies,group,misc_goods,0.2
+2025,(Adopted from the reference month of April 2026 onwards),b,g51,Household cleansing tools and supplies,group,misc_goods,0.13
+2025,(Adopted from the reference month of April 2026 onwards),c,g51,Household cleansing tools and supplies,group,misc_goods,0.12
+2025,(Adopted from the reference month of April 2026 onwards),composite,g52,Jewellery,group,misc_goods,0.24
+2025,(Adopted from the reference month of April 2026 onwards),a,g52,Jewellery,group,misc_goods,0.04
+2025,(Adopted from the reference month of April 2026 onwards),b,g52,Jewellery,group,misc_goods,0.2
+2025,(Adopted from the reference month of April 2026 onwards),c,g52,Jewellery,group,misc_goods,0.58
+2025,(Adopted from the reference month of April 2026 onwards),composite,g53,Toys and hobbies,group,misc_goods,0.26
+2025,(Adopted from the reference month of April 2026 onwards),a,g53,Toys and hobbies,group,misc_goods,0.17
+2025,(Adopted from the reference month of April 2026 onwards),b,g53,Toys and hobbies,group,misc_goods,0.28
+2025,(Adopted from the reference month of April 2026 onwards),c,g53,Toys and hobbies,group,misc_goods,0.32
+2025,(Adopted from the reference month of April 2026 onwards),composite,g54,Textbooks,group,misc_goods,0.39
+2025,(Adopted from the reference month of April 2026 onwards),a,g54,Textbooks,group,misc_goods,0.43
+2025,(Adopted from the reference month of April 2026 onwards),b,g54,Textbooks,group,misc_goods,0.38
+2025,(Adopted from the reference month of April 2026 onwards),c,g54,Textbooks,group,misc_goods,0.37
+2025,(Adopted from the reference month of April 2026 onwards),composite,g55,Other household goods,group,misc_goods,0.17
+2025,(Adopted from the reference month of April 2026 onwards),a,g55,Other household goods,group,misc_goods,0.16
+2025,(Adopted from the reference month of April 2026 onwards),b,g55,Other household goods,group,misc_goods,0.19
+2025,(Adopted from the reference month of April 2026 onwards),c,g55,Other household goods,group,misc_goods,0.15
+2025,(Adopted from the reference month of April 2026 onwards),composite,transport,Transport,section,transport,7.59
+2025,(Adopted from the reference month of April 2026 onwards),a,transport,Transport,section,transport,5.53
+2025,(Adopted from the reference month of April 2026 onwards),b,transport,Transport,section,transport,7.86
+2025,(Adopted from the reference month of April 2026 onwards),c,transport,Transport,section,transport,9.95
+2025,(Adopted from the reference month of April 2026 onwards),composite,g56,Purchases of and repairs to vehicles,group,transport,0.55
+2025,(Adopted from the reference month of April 2026 onwards),a,g56,Purchases of and repairs to vehicles,group,transport,0.1
+2025,(Adopted from the reference month of April 2026 onwards),b,g56,Purchases of and repairs to vehicles,group,transport,0.42
+2025,(Adopted from the reference month of April 2026 onwards),c,g56,Purchases of and repairs to vehicles,group,transport,1.37
+2025,(Adopted from the reference month of April 2026 onwards),composite,g57,Fuels for personal transport equipment,group,transport,0.43
+2025,(Adopted from the reference month of April 2026 onwards),a,g57,Fuels for personal transport equipment,group,transport,0.14
+2025,(Adopted from the reference month of April 2026 onwards),b,g57,Fuels for personal transport equipment,group,transport,0.47
+2025,(Adopted from the reference month of April 2026 onwards),c,g57,Fuels for personal transport equipment,group,transport,0.73
+2025,(Adopted from the reference month of April 2026 onwards),composite,g58,"Vehicle and driving licences, insurance, instructor’s fees, parking fees and road tunnel tolls",group,transport,1.98
+2025,(Adopted from the reference month of April 2026 onwards),a,g58,"Vehicle and driving licences, insurance, instructor’s fees, parking fees and road tunnel tolls",group,transport,0.55
+2025,(Adopted from the reference month of April 2026 onwards),b,g58,"Vehicle and driving licences, insurance, instructor’s fees, parking fees and road tunnel tolls",group,transport,2.31
+2025,(Adopted from the reference month of April 2026 onwards),c,g58,"Vehicle and driving licences, insurance, instructor’s fees, parking fees and road tunnel tolls",group,transport,3.39
+2025,(Adopted from the reference month of April 2026 onwards),composite,g59,Bus fares,group,transport,0.9
+2025,(Adopted from the reference month of April 2026 onwards),a,g59,Bus fares,group,transport,1.27
+2025,(Adopted from the reference month of April 2026 onwards),b,g59,Bus fares,group,transport,0.91
+2025,(Adopted from the reference month of April 2026 onwards),c,g59,Bus fares,group,transport,0.4
+2025,(Adopted from the reference month of April 2026 onwards),composite,g60,Tram fares,group,transport,0.01
+2025,(Adopted from the reference month of April 2026 onwards),a,g60,Tram fares,group,transport,0.02
+2025,(Adopted from the reference month of April 2026 onwards),b,g60,Tram fares,group,transport,0.01
+2025,(Adopted from the reference month of April 2026 onwards),c,g60,Tram fares,group,transport,0.01
+2025,(Adopted from the reference month of April 2026 onwards),composite,g61,Public light bus fares,group,transport,0.24
+2025,(Adopted from the reference month of April 2026 onwards),a,g61,Public light bus fares,group,transport,0.33
+2025,(Adopted from the reference month of April 2026 onwards),b,g61,Public light bus fares,group,transport,0.21
+2025,(Adopted from the reference month of April 2026 onwards),c,g61,Public light bus fares,group,transport,0.16
+2025,(Adopted from the reference month of April 2026 onwards),composite,g62,Taxi fares,group,transport,0.31
+2025,(Adopted from the reference month of April 2026 onwards),a,g62,Taxi fares,group,transport,0.17
+2025,(Adopted from the reference month of April 2026 onwards),b,g62,Taxi fares,group,transport,0.28
+2025,(Adopted from the reference month of April 2026 onwards),c,g62,Taxi fares,group,transport,0.54
+2025,(Adopted from the reference month of April 2026 onwards),composite,g63,MTR fares,group,transport,1.47
+2025,(Adopted from the reference month of April 2026 onwards),a,g63,MTR fares,group,transport,1.93
+2025,(Adopted from the reference month of April 2026 onwards),b,g63,MTR fares,group,transport,1.44
+2025,(Adopted from the reference month of April 2026 onwards),c,g63,MTR fares,group,transport,0.91
+2025,(Adopted from the reference month of April 2026 onwards),composite,g64,Ferry fares,group,transport,0.03
+2025,(Adopted from the reference month of April 2026 onwards),a,g64,Ferry fares,group,transport,0.05
+2025,(Adopted from the reference month of April 2026 onwards),b,g64,Ferry fares,group,transport,0.02
+2025,(Adopted from the reference month of April 2026 onwards),c,g64,Ferry fares,group,transport,0.02
+2025,(Adopted from the reference month of April 2026 onwards),composite,g65,Other local transport fares,group,transport,0.17
+2025,(Adopted from the reference month of April 2026 onwards),a,g65,Other local transport fares,group,transport,0.07
+2025,(Adopted from the reference month of April 2026 onwards),b,g65,Other local transport fares,group,transport,0.16
+2025,(Adopted from the reference month of April 2026 onwards),c,g65,Other local transport fares,group,transport,0.32
+2025,(Adopted from the reference month of April 2026 onwards),composite,g66,Inbound and outbound transport fares,group,transport,1.5
+2025,(Adopted from the reference month of April 2026 onwards),a,g66,Inbound and outbound transport fares,group,transport,0.9
+2025,(Adopted from the reference month of April 2026 onwards),b,g66,Inbound and outbound transport fares,group,transport,1.63
+2025,(Adopted from the reference month of April 2026 onwards),c,g66,Inbound and outbound transport fares,group,transport,2.1
+2025,(Adopted from the reference month of April 2026 onwards),composite,misc_services,Miscellaneous services,section,misc_services,15.57
+2025,(Adopted from the reference month of April 2026 onwards),a,misc_services,Miscellaneous services,section,misc_services,10.75
+2025,(Adopted from the reference month of April 2026 onwards),b,misc_services,Miscellaneous services,section,misc_services,15.23
+2025,(Adopted from the reference month of April 2026 onwards),c,misc_services,Miscellaneous services,section,misc_services,22.59
+2025,(Adopted from the reference month of April 2026 onwards),composite,g67,Educational services,group,misc_services,4.62
+2025,(Adopted from the reference month of April 2026 onwards),a,g67,Educational services,group,misc_services,2.64
+2025,(Adopted from the reference month of April 2026 onwards),b,g67,Educational services,group,misc_services,4.53
+2025,(Adopted from the reference month of April 2026 onwards),c,g67,Educational services,group,misc_services,7.42
+2025,(Adopted from the reference month of April 2026 onwards),composite,g68,Health services,group,misc_services,3.07
+2025,(Adopted from the reference month of April 2026 onwards),a,g68,Health services,group,misc_services,1.97
+2025,(Adopted from the reference month of April 2026 onwards),b,g68,Health services,group,misc_services,3.1
+2025,(Adopted from the reference month of April 2026 onwards),c,g68,Health services,group,misc_services,4.5
+2025,(Adopted from the reference month of April 2026 onwards),composite,g69,Package holidays,group,misc_services,1.44
+2025,(Adopted from the reference month of April 2026 onwards),a,g69,Package holidays,group,misc_services,0.87
+2025,(Adopted from the reference month of April 2026 onwards),b,g69,Package holidays,group,misc_services,1.29
+2025,(Adopted from the reference month of April 2026 onwards),c,g69,Package holidays,group,misc_services,2.44
+2025,(Adopted from the reference month of April 2026 onwards),composite,g70,Other entertainment expenses,group,misc_services,0.32
+2025,(Adopted from the reference month of April 2026 onwards),a,g70,Other entertainment expenses,group,misc_services,0.18
+2025,(Adopted from the reference month of April 2026 onwards),b,g70,Other entertainment expenses,group,misc_services,0.32
+2025,(Adopted from the reference month of April 2026 onwards),c,g70,Other entertainment expenses,group,misc_services,0.51
+2025,(Adopted from the reference month of April 2026 onwards),composite,g71,Household services,group,misc_services,2.27
+2025,(Adopted from the reference month of April 2026 onwards),a,g71,Household services,group,misc_services,1.14
+2025,(Adopted from the reference month of April 2026 onwards),b,g71,Household services,group,misc_services,2.22
+2025,(Adopted from the reference month of April 2026 onwards),c,g71,Household services,group,misc_services,3.87
+2025,(Adopted from the reference month of April 2026 onwards),composite,g72,Hair-dressing,group,misc_services,0.43
+2025,(Adopted from the reference month of April 2026 onwards),a,g72,Hair-dressing,group,misc_services,0.45
+2025,(Adopted from the reference month of April 2026 onwards),b,g72,Hair-dressing,group,misc_services,0.43
+2025,(Adopted from the reference month of April 2026 onwards),c,g72,Hair-dressing,group,misc_services,0.4
+2025,(Adopted from the reference month of April 2026 onwards),composite,g73,Beauty treatment and fitness services,group,misc_services,0.56
+2025,(Adopted from the reference month of April 2026 onwards),a,g73,Beauty treatment and fitness services,group,misc_services,0.28
+2025,(Adopted from the reference month of April 2026 onwards),b,g73,Beauty treatment and fitness services,group,misc_services,0.62
+2025,(Adopted from the reference month of April 2026 onwards),c,g73,Beauty treatment and fitness services,group,misc_services,0.84
+2025,(Adopted from the reference month of April 2026 onwards),composite,g74,Information and communications services,group,misc_services,1.89
+2025,(Adopted from the reference month of April 2026 onwards),a,g74,Information and communications services,group,misc_services,2.47
+2025,(Adopted from the reference month of April 2026 onwards),b,g74,Information and communications services,group,misc_services,1.77
+2025,(Adopted from the reference month of April 2026 onwards),c,g74,Information and communications services,group,misc_services,1.31
+2025,(Adopted from the reference month of April 2026 onwards),composite,g75,Other services,group,misc_services,0.97
+2025,(Adopted from the reference month of April 2026 onwards),a,g75,Other services,group,misc_services,0.75
+2025,(Adopted from the reference month of April 2026 onwards),b,g75,Other services,group,misc_services,0.95
+2025,(Adopted from the reference month of April 2026 onwards),c,g75,Other services,group,misc_services,1.3
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,all,All items,all,all,100.0
+2024,(Adopted for the reference months from April 2025 to March 2026),a,all,All items,all,all,100.0
+2024,(Adopted for the reference months from April 2025 to March 2026),b,all,All items,all,all,100.0
+2024,(Adopted for the reference months from April 2025 to March 2026),c,all,All items,all,all,100.0
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,food,Food,section,food,25.53
+2024,(Adopted for the reference months from April 2025 to March 2026),a,food,Food,section,food,30.62
+2024,(Adopted for the reference months from April 2025 to March 2026),b,food,Food,section,food,25.14
+2024,(Adopted for the reference months from April 2025 to March 2026),c,food,Food,section,food,20.08
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,meals_out,Meals out and takeaway food,subsection,food,16.82
+2024,(Adopted for the reference months from April 2025 to March 2026),a,meals_out,Meals out and takeaway food,subsection,food,18.83
+2024,(Adopted for the reference months from April 2025 to March 2026),b,meals_out,Meals out and takeaway food,subsection,food,17.13
+2024,(Adopted for the reference months from April 2025 to March 2026),c,meals_out,Meals out and takeaway food,subsection,food,14.05
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,basic_food,Basic food,subsection,food,8.71
+2024,(Adopted for the reference months from April 2025 to March 2026),a,basic_food,Basic food,subsection,food,11.79
+2024,(Adopted for the reference months from April 2025 to March 2026),b,basic_food,Basic food,subsection,food,8.01
+2024,(Adopted for the reference months from April 2025 to March 2026),c,basic_food,Basic food,subsection,food,6.03
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g2,Rice,group,food,0.17
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g2,Rice,group,food,0.25
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g2,Rice,group,food,0.16
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g2,Rice,group,food,0.1
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g3,Other cereals and cereal preparations,group,food,0.24
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g3,Other cereals and cereal preparations,group,food,0.34
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g3,Other cereals and cereal preparations,group,food,0.21
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g3,Other cereals and cereal preparations,group,food,0.16
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g4,"Bread, cakes, biscuits and puddings",group,food,0.55
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g4,"Bread, cakes, biscuits and puddings",group,food,0.68
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g4,"Bread, cakes, biscuits and puddings",group,food,0.53
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g4,"Bread, cakes, biscuits and puddings",group,food,0.43
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g5,Salt-water fish,group,food,0.7
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g5,Salt-water fish,group,food,1.0
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g5,Salt-water fish,group,food,0.61
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g5,Salt-water fish,group,food,0.49
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g6,Fresh-water fish,group,food,0.25
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g6,Fresh-water fish,group,food,0.43
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g6,Fresh-water fish,group,food,0.19
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g6,Fresh-water fish,group,food,0.11
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g7,Other fresh sea products,group,food,0.24
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g7,Other fresh sea products,group,food,0.25
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g7,Other fresh sea products,group,food,0.25
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g7,Other fresh sea products,group,food,0.21
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g8,Processed sea products,group,food,0.48
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g8,Processed sea products,group,food,0.56
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g8,Processed sea products,group,food,0.48
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g8,Processed sea products,group,food,0.37
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g9,Pork,group,food,1.26
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g9,Pork,group,food,1.95
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g9,Pork,group,food,1.08
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g9,Pork,group,food,0.71
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g10,Beef,group,food,0.29
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g10,Beef,group,food,0.33
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g10,Beef,group,food,0.28
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g10,Beef,group,food,0.27
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g11,Poultry,group,food,0.34
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g11,Poultry,group,food,0.46
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g11,Poultry,group,food,0.33
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g11,Poultry,group,food,0.23
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g12,"Meat, frozen",group,food,0.73
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g12,"Meat, frozen",group,food,0.91
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g12,"Meat, frozen",group,food,0.68
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g12,"Meat, frozen",group,food,0.58
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g13,"Meat, canned",group,food,0.05
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g13,"Meat, canned",group,food,0.08
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g13,"Meat, canned",group,food,0.04
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g13,"Meat, canned",group,food,0.02
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g14,"Meat, others",group,food,0.2
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g14,"Meat, others",group,food,0.3
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g14,"Meat, others",group,food,0.19
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g14,"Meat, others",group,food,0.11
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g15,Fresh vegetables,group,food,0.99
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g15,Fresh vegetables,group,food,1.46
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g15,Fresh vegetables,group,food,0.87
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g15,Fresh vegetables,group,food,0.59
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g16,Processed vegetables,group,food,0.04
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g16,Processed vegetables,group,food,0.05
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g16,Processed vegetables,group,food,0.03
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g16,Processed vegetables,group,food,0.03
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g17,Fresh fruit,group,food,0.76
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g17,Fresh fruit,group,food,1.01
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g17,Fresh fruit,group,food,0.7
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g17,Fresh fruit,group,food,0.56
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g18,Processed fruit,group,food,0.02
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g18,Processed fruit,group,food,0.02
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g18,Processed fruit,group,food,0.01
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g18,Processed fruit,group,food,0.01
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g19,Dairy products,group,food,0.26
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g19,Dairy products,group,food,0.27
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g19,Dairy products,group,food,0.26
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g19,Dairy products,group,food,0.23
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g20,Eggs,group,food,0.14
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g20,Eggs,group,food,0.21
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g20,Eggs,group,food,0.13
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g20,Eggs,group,food,0.09
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g21,Edible oils,group,food,0.09
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g21,Edible oils,group,food,0.13
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g21,Edible oils,group,food,0.07
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g21,Edible oils,group,food,0.05
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g22,Carbonated drinks,group,food,0.05
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g22,Carbonated drinks,group,food,0.07
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g22,Carbonated drinks,group,food,0.04
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g22,Carbonated drinks,group,food,0.03
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g23,Other non-alcoholic beverages,group,food,0.21
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g23,Other non-alcoholic beverages,group,food,0.27
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g23,Other non-alcoholic beverages,group,food,0.21
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g23,Other non-alcoholic beverages,group,food,0.15
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g24,Sugar,group,food,0.02
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g24,Sugar,group,food,0.02
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g24,Sugar,group,food,0.02
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g24,Sugar,group,food,0.01
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g25,Confectionery,group,food,0.07
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g25,Confectionery,group,food,0.06
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g25,Confectionery,group,food,0.08
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g25,Confectionery,group,food,0.06
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g26,Flavourings and additives,group,food,0.09
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g26,Flavourings and additives,group,food,0.1
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g26,Flavourings and additives,group,food,0.09
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g26,Flavourings and additives,group,food,0.07
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g27,"Food, others",group,food,0.47
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g27,"Food, others",group,food,0.58
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g27,"Food, others",group,food,0.47
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g27,"Food, others",group,food,0.36
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,housing,Housing,section,housing,38.89
+2024,(Adopted for the reference months from April 2025 to March 2026),a,housing,Housing,section,housing,40.17
+2024,(Adopted for the reference months from April 2025 to March 2026),b,housing,Housing,section,housing,39.08
+2024,(Adopted for the reference months from April 2025 to March 2026),c,housing,Housing,section,housing,37.12
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g28,"Rent, including rates and government rent",group,housing,35.79
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g28,"Rent, including rates and government rent",group,housing,37.93
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g28,"Rent, including rates and government rent",group,housing,35.87
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g28,"Rent, including rates and government rent",group,housing,33.15
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g29,Management fees and other housing charges,group,housing,3.1
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g29,Management fees and other housing charges,group,housing,2.24
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g29,Management fees and other housing charges,group,housing,3.21
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g29,Management fees and other housing charges,group,housing,3.97
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,egw,"Electricity, gas and water",section,egw,2.97
+2024,(Adopted for the reference months from April 2025 to March 2026),a,egw,"Electricity, gas and water",section,egw,4.1
+2024,(Adopted for the reference months from April 2025 to March 2026),b,egw,"Electricity, gas and water",section,egw,2.73
+2024,(Adopted for the reference months from April 2025 to March 2026),c,egw,"Electricity, gas and water",section,egw,1.98
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g30,Electricity,group,egw,2.04
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g30,Electricity,group,egw,2.79
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g30,Electricity,group,egw,1.88
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g30,Electricity,group,egw,1.39
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g31,Towngas,group,egw,0.55
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g31,Towngas,group,egw,0.78
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g31,Towngas,group,egw,0.49
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g31,Towngas,group,egw,0.37
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g32,Liquefied petroleum gas and other fuel,group,egw,0.12
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g32,Liquefied petroleum gas and other fuel,group,egw,0.18
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g32,Liquefied petroleum gas and other fuel,group,egw,0.12
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g32,Liquefied petroleum gas and other fuel,group,egw,0.04
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g33,Water and sewage charges,group,egw,0.26
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g33,Water and sewage charges,group,egw,0.35
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g33,Water and sewage charges,group,egw,0.24
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g33,Water and sewage charges,group,egw,0.18
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,alcohol_tobacco,Alcoholic drinks and tobacco,section,alcohol_tobacco,0.48
+2024,(Adopted for the reference months from April 2025 to March 2026),a,alcohol_tobacco,Alcoholic drinks and tobacco,section,alcohol_tobacco,0.75
+2024,(Adopted for the reference months from April 2025 to March 2026),b,alcohol_tobacco,Alcoholic drinks and tobacco,section,alcohol_tobacco,0.4
+2024,(Adopted for the reference months from April 2025 to March 2026),c,alcohol_tobacco,Alcoholic drinks and tobacco,section,alcohol_tobacco,0.26
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g34,Wines and spirits,group,alcohol_tobacco,0.09
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g34,Wines and spirits,group,alcohol_tobacco,0.06
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g34,Wines and spirits,group,alcohol_tobacco,0.11
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g34,Wines and spirits,group,alcohol_tobacco,0.09
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g35,Beer,group,alcohol_tobacco,0.06
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g35,Beer,group,alcohol_tobacco,0.1
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g35,Beer,group,alcohol_tobacco,0.04
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g35,Beer,group,alcohol_tobacco,0.04
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g36,Cigarettes,group,alcohol_tobacco,0.33
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g36,Cigarettes,group,alcohol_tobacco,0.59
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g36,Cigarettes,group,alcohol_tobacco,0.25
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g36,Cigarettes,group,alcohol_tobacco,0.13
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,clothing,Clothing and footwear,section,clothing,2.46
+2024,(Adopted for the reference months from April 2025 to March 2026),a,clothing,Clothing and footwear,section,clothing,1.82
+2024,(Adopted for the reference months from April 2025 to March 2026),b,clothing,Clothing and footwear,section,clothing,2.57
+2024,(Adopted for the reference months from April 2025 to March 2026),c,clothing,Clothing and footwear,section,clothing,3.09
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g37,Men’s outerclothing,group,clothing,0.5
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g37,Men’s outerclothing,group,clothing,0.34
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g37,Men’s outerclothing,group,clothing,0.56
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g37,Men’s outerclothing,group,clothing,0.62
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g38,Men’s underclothing,group,clothing,0.04
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g38,Men’s underclothing,group,clothing,0.04
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g38,Men’s underclothing,group,clothing,0.03
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g38,Men’s underclothing,group,clothing,0.04
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g39,Women’s outerclothing,group,clothing,1.04
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g39,Women’s outerclothing,group,clothing,0.69
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g39,Women’s outerclothing,group,clothing,1.09
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g39,Women’s outerclothing,group,clothing,1.36
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g40,Women’s underclothing,group,clothing,0.06
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g40,Women’s underclothing,group,clothing,0.06
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g40,Women’s underclothing,group,clothing,0.07
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g40,Women’s underclothing,group,clothing,0.06
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g41,Children’s outerclothing,group,clothing,0.16
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g41,Children’s outerclothing,group,clothing,0.14
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g41,Children’s outerclothing,group,clothing,0.14
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g41,Children’s outerclothing,group,clothing,0.22
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g42,Children’s underclothing,group,clothing,0.02
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g42,Children’s underclothing,group,clothing,0.02
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g42,Children’s underclothing,group,clothing,0.02
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g42,Children’s underclothing,group,clothing,0.01
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g43,Infants’ clothing,group,clothing,0.04
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g43,Infants’ clothing,group,clothing,0.02
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g43,Infants’ clothing,group,clothing,0.03
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g43,Infants’ clothing,group,clothing,0.06
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g44,"Clothing, others",group,clothing,0.08
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g44,"Clothing, others",group,clothing,0.06
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g44,"Clothing, others",group,clothing,0.09
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g44,"Clothing, others",group,clothing,0.1
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g45,Men’s footwear,group,clothing,0.19
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g45,Men’s footwear,group,clothing,0.17
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g45,Men’s footwear,group,clothing,0.19
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g45,Men’s footwear,group,clothing,0.23
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g46,Women’s footwear,group,clothing,0.26
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g46,Women’s footwear,group,clothing,0.22
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g46,Women’s footwear,group,clothing,0.28
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g46,Women’s footwear,group,clothing,0.29
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g47,Children’s and infants’ footwear,group,clothing,0.07
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g47,Children’s and infants’ footwear,group,clothing,0.06
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g47,Children’s and infants’ footwear,group,clothing,0.07
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g47,Children’s and infants’ footwear,group,clothing,0.1
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,durables,Durable goods,section,durables,3.73
+2024,(Adopted for the reference months from April 2025 to March 2026),a,durables,Durable goods,section,durables,3.07
+2024,(Adopted for the reference months from April 2025 to March 2026),b,durables,Durable goods,section,durables,3.7
+2024,(Adopted for the reference months from April 2025 to March 2026),c,durables,Durable goods,section,durables,4.55
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g48,Furniture,group,durables,0.27
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g48,Furniture,group,durables,0.2
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g48,Furniture,group,durables,0.29
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g48,Furniture,group,durables,0.32
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g49,"Home appliances, electric and gas",group,durables,0.73
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g49,"Home appliances, electric and gas",group,durables,0.66
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g49,"Home appliances, electric and gas",group,durables,0.67
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g49,"Home appliances, electric and gas",group,durables,0.87
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g50,Video and sound equipment,group,durables,0.17
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g50,Video and sound equipment,group,durables,0.15
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g50,Video and sound equipment,group,durables,0.18
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g50,Video and sound equipment,group,durables,0.19
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g51,Information technology and telecommunications equipment,group,durables,1.62
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g51,Information technology and telecommunications equipment,group,durables,1.44
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g51,Information technology and telecommunications equipment,group,durables,1.75
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g51,Information technology and telecommunications equipment,group,durables,1.65
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g52,Tableware and kitchen utensils,group,durables,0.07
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g52,Tableware and kitchen utensils,group,durables,0.07
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g52,Tableware and kitchen utensils,group,durables,0.07
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g52,Tableware and kitchen utensils,group,durables,0.08
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g53,"Watches, clocks, cameras and optical goods",group,durables,0.37
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g53,"Watches, clocks, cameras and optical goods",group,durables,0.23
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g53,"Watches, clocks, cameras and optical goods",group,durables,0.31
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g53,"Watches, clocks, cameras and optical goods",group,durables,0.62
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g54,"Travel goods, handbags and other personal effects",group,durables,0.44
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g54,"Travel goods, handbags and other personal effects",group,durables,0.3
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g54,"Travel goods, handbags and other personal effects",group,durables,0.37
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g54,"Travel goods, handbags and other personal effects",group,durables,0.72
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g55,"Durable goods, others",group,durables,0.06
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g55,"Durable goods, others",group,durables,0.02
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g55,"Durable goods, others",group,durables,0.06
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g55,"Durable goods, others",group,durables,0.1
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,misc_goods,Miscellaneous goods,section,misc_goods,3.37
+2024,(Adopted for the reference months from April 2025 to March 2026),a,misc_goods,Miscellaneous goods,section,misc_goods,3.31
+2024,(Adopted for the reference months from April 2025 to March 2026),b,misc_goods,Miscellaneous goods,section,misc_goods,3.52
+2024,(Adopted for the reference months from April 2025 to March 2026),c,misc_goods,Miscellaneous goods,section,misc_goods,3.25
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g56,Proprietary medicines and supplies,group,misc_goods,0.84
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g56,Proprietary medicines and supplies,group,misc_goods,0.93
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g56,Proprietary medicines and supplies,group,misc_goods,0.92
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g56,Proprietary medicines and supplies,group,misc_goods,0.63
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g57,"Newspapers, books and periodicals",group,misc_goods,0.09
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g57,"Newspapers, books and periodicals",group,misc_goods,0.09
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g57,"Newspapers, books and periodicals",group,misc_goods,0.09
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g57,"Newspapers, books and periodicals",group,misc_goods,0.1
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g58,Stationery,group,misc_goods,0.12
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g58,Stationery,group,misc_goods,0.09
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g58,Stationery,group,misc_goods,0.11
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g58,Stationery,group,misc_goods,0.15
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g59,Soft furnishings,group,misc_goods,0.1
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g59,Soft furnishings,group,misc_goods,0.07
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g59,Soft furnishings,group,misc_goods,0.13
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g59,Soft furnishings,group,misc_goods,0.09
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g60,Cosmetics and personal care products,group,misc_goods,0.9
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g60,Cosmetics and personal care products,group,misc_goods,0.95
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g60,Cosmetics and personal care products,group,misc_goods,1.0
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g60,Cosmetics and personal care products,group,misc_goods,0.71
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g61,Household cleansing tools and supplies,group,misc_goods,0.18
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g61,Household cleansing tools and supplies,group,misc_goods,0.23
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g61,Household cleansing tools and supplies,group,misc_goods,0.18
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g61,Household cleansing tools and supplies,group,misc_goods,0.13
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g62,Jewellery,group,misc_goods,0.31
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g62,Jewellery,group,misc_goods,0.18
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g62,Jewellery,group,misc_goods,0.23
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g62,Jewellery,group,misc_goods,0.56
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g63,Toys and hobbies,group,misc_goods,0.27
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g63,Toys and hobbies,group,misc_goods,0.19
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g63,Toys and hobbies,group,misc_goods,0.31
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g63,Toys and hobbies,group,misc_goods,0.31
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g64,Purchases of textbooks,group,misc_goods,0.35
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g64,Purchases of textbooks,group,misc_goods,0.39
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g64,Purchases of textbooks,group,misc_goods,0.32
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g64,Purchases of textbooks,group,misc_goods,0.35
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g65,"Household goods, others",group,misc_goods,0.21
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g65,"Household goods, others",group,misc_goods,0.19
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g65,"Household goods, others",group,misc_goods,0.23
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g65,"Household goods, others",group,misc_goods,0.22
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,transport,Transport,section,transport,7.49
+2024,(Adopted for the reference months from April 2025 to March 2026),a,transport,Transport,section,transport,5.5
+2024,(Adopted for the reference months from April 2025 to March 2026),b,transport,Transport,section,transport,7.7
+2024,(Adopted for the reference months from April 2025 to March 2026),c,transport,Transport,section,transport,9.53
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g66,Purchases of and repairs to motor vehicles,group,transport,0.37
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g66,Purchases of and repairs to motor vehicles,group,transport,0.17
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g66,Purchases of and repairs to motor vehicles,group,transport,0.44
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g66,Purchases of and repairs to motor vehicles,group,transport,0.51
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g67,Motor fuel,group,transport,0.5
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g67,Motor fuel,group,transport,0.16
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g67,Motor fuel,group,transport,0.52
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g67,Motor fuel,group,transport,0.86
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g68,"Motor licences, insurance, instructor’s fees, parking fees and tunnel tolls",group,transport,2.0
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g68,"Motor licences, insurance, instructor’s fees, parking fees and tunnel tolls",group,transport,0.6
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g68,"Motor licences, insurance, instructor’s fees, parking fees and tunnel tolls",group,transport,2.11
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g68,"Motor licences, insurance, instructor’s fees, parking fees and tunnel tolls",group,transport,3.5
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g69,Bus fares,group,transport,0.99
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g69,Bus fares,group,transport,1.42
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g69,Bus fares,group,transport,0.99
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g69,Bus fares,group,transport,0.48
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g70,Tram fares,group,transport,0.01
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g70,Tram fares,group,transport,0.01
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g70,Tram fares,group,transport,0.02
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g70,Tram fares,group,transport,0.01
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g71,Public light bus fares,group,transport,0.32
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g71,Public light bus fares,group,transport,0.46
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g71,Public light bus fares,group,transport,0.32
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g71,Public light bus fares,group,transport,0.14
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g72,Taxi fares,group,transport,0.36
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g72,Taxi fares,group,transport,0.2
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g72,Taxi fares,group,transport,0.38
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g72,Taxi fares,group,transport,0.51
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g73,MTR fares,group,transport,1.48
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g73,MTR fares,group,transport,1.82
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g73,MTR fares,group,transport,1.55
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g73,MTR fares,group,transport,0.98
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g74,Ferry fares,group,transport,0.04
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g74,Ferry fares,group,transport,0.04
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g74,Ferry fares,group,transport,0.06
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g74,Ferry fares,group,transport,0.03
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g75,"Local transport, others",group,transport,0.2
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g75,"Local transport, others",group,transport,0.11
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g75,"Local transport, others",group,transport,0.2
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g75,"Local transport, others",group,transport,0.3
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g76,Inbound and outbound transport fares,group,transport,1.22
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g76,Inbound and outbound transport fares,group,transport,0.51
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g76,Inbound and outbound transport fares,group,transport,1.11
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g76,Inbound and outbound transport fares,group,transport,2.21
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,misc_services,Miscellaneous services,section,misc_services,15.08
+2024,(Adopted for the reference months from April 2025 to March 2026),a,misc_services,Miscellaneous services,section,misc_services,10.66
+2024,(Adopted for the reference months from April 2025 to March 2026),b,misc_services,Miscellaneous services,section,misc_services,15.16
+2024,(Adopted for the reference months from April 2025 to March 2026),c,misc_services,Miscellaneous services,section,misc_services,20.14
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g77,School fees,group,misc_services,4.12
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g77,School fees,group,misc_services,2.56
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g77,School fees,group,misc_services,4.24
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g77,School fees,group,misc_services,5.8
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g78,Other educational charges,group,misc_services,0.13
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g78,Other educational charges,group,misc_services,0.1
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g78,Other educational charges,group,misc_services,0.12
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g78,Other educational charges,group,misc_services,0.18
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g79,Medical services,group,misc_services,2.89
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g79,Medical services,group,misc_services,2.14
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g79,Medical services,group,misc_services,2.73
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g79,Medical services,group,misc_services,4.0
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g80,Cinema entertainment,group,misc_services,0.06
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g80,Cinema entertainment,group,misc_services,0.07
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g80,Cinema entertainment,group,misc_services,0.06
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g80,Cinema entertainment,group,misc_services,0.05
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g81,Package tours,group,misc_services,1.42
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g81,Package tours,group,misc_services,0.59
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g81,Package tours,group,misc_services,1.38
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g81,Package tours,group,misc_services,2.45
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g82,Expenses on parties,group,misc_services,0.05
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g82,Expenses on parties,group,misc_services,0.02
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g82,Expenses on parties,group,misc_services,0.05
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g82,Expenses on parties,group,misc_services,0.07
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g83,Other entertainment and holiday expenses,group,misc_services,0.13
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g83,Other entertainment and holiday expenses,group,misc_services,0.1
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g83,Other entertainment and holiday expenses,group,misc_services,0.12
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g83,Other entertainment and holiday expenses,group,misc_services,0.16
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g84,Household services,group,misc_services,2.46
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g84,Household services,group,misc_services,1.08
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g84,Household services,group,misc_services,2.69
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g84,Household services,group,misc_services,3.75
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g85,Hair-dressing,group,misc_services,0.36
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g85,Hair-dressing,group,misc_services,0.38
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g85,Hair-dressing,group,misc_services,0.35
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g85,Hair-dressing,group,misc_services,0.35
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g86,Beauty treatment and fitness services,group,misc_services,0.58
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g86,Beauty treatment and fitness services,group,misc_services,0.27
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g86,Beauty treatment and fitness services,group,misc_services,0.57
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g86,Beauty treatment and fitness services,group,misc_services,0.98
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g87,Information and communications services,group,misc_services,2.21
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g87,Information and communications services,group,misc_services,2.86
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g87,Information and communications services,group,misc_services,2.15
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g87,Information and communications services,group,misc_services,1.5
+2024,(Adopted for the reference months from April 2025 to March 2026),composite,g88,Other services,group,misc_services,0.67
+2024,(Adopted for the reference months from April 2025 to March 2026),a,g88,Other services,group,misc_services,0.49
+2024,(Adopted for the reference months from April 2025 to March 2026),b,g88,Other services,group,misc_services,0.7
+2024,(Adopted for the reference months from April 2025 to March 2026),c,g88,Other services,group,misc_services,0.85

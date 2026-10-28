@@ -1,0 +1,481 @@
+date,series,label,contrib_pp,issue
+2023-06-01,all,All items,1.9,B10600012023MM06
+2023-06-01,food,Food,0.7,B10600012023MM06
+2023-06-01,meals_out,Meals out and takeaway food,0.7,B10600012023MM06
+2023-06-01,basic_food,Basic food,0.0,B10600012023MM06
+2023-06-01,housing,Housing,0.2,B10600012023MM06
+2023-06-01,egw,"Electricity, gas and water",0.5,B10600012023MM06
+2023-06-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012023MM06
+2023-06-01,clothing,Clothing and footwear,0.1,B10600012023MM06
+2023-06-01,durables,Durable goods,-0.1,B10600012023MM06
+2023-06-01,misc_goods,Miscellaneous goods,0.1,B10600012023MM06
+2023-06-01,transport,Transport,0.1,B10600012023MM06
+2023-06-01,misc_services,Miscellaneous services,0.3,B10600012023MM06
+2023-07-01,all,All items,1.8,B10600012023MM07
+2023-07-01,food,Food,0.6,B10600012023MM07
+2023-07-01,meals_out,Meals out and takeaway food,0.6,B10600012023MM07
+2023-07-01,basic_food,Basic food,-0.1,B10600012023MM07
+2023-07-01,housing,Housing,0.3,B10600012023MM07
+2023-07-01,egw,"Electricity, gas and water",0.3,B10600012023MM07
+2023-07-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012023MM07
+2023-07-01,clothing,Clothing and footwear,0.2,B10600012023MM07
+2023-07-01,durables,Durable goods,-0.1,B10600012023MM07
+2023-07-01,misc_goods,Miscellaneous goods,0.1,B10600012023MM07
+2023-07-01,transport,Transport,0.1,B10600012023MM07
+2023-07-01,misc_services,Miscellaneous services,0.3,B10600012023MM07
+2023-08-01,all,All items,1.8,B10600012023MM08
+2023-08-01,food,Food,0.6,B10600012023MM08
+2023-08-01,meals_out,Meals out and takeaway food,0.6,B10600012023MM08
+2023-08-01,basic_food,Basic food,0.0,B10600012023MM08
+2023-08-01,housing,Housing,0.3,B10600012023MM08
+2023-08-01,egw,"Electricity, gas and water",0.2,B10600012023MM08
+2023-08-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012023MM08
+2023-08-01,clothing,Clothing and footwear,0.2,B10600012023MM08
+2023-08-01,durables,Durable goods,-0.1,B10600012023MM08
+2023-08-01,misc_goods,Miscellaneous goods,0.1,B10600012023MM08
+2023-08-01,transport,Transport,0.1,B10600012023MM08
+2023-08-01,misc_services,Miscellaneous services,0.3,B10600012023MM08
+2023-09-01,all,All items,2.0,B10600012023MM09
+2023-09-01,food,Food,0.8,B10600012023MM09
+2023-09-01,meals_out,Meals out and takeaway food,0.7,B10600012023MM09
+2023-09-01,basic_food,Basic food,0.1,B10600012023MM09
+2023-09-01,housing,Housing,0.3,B10600012023MM09
+2023-09-01,egw,"Electricity, gas and water",0.1,B10600012023MM09
+2023-09-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012023MM09
+2023-09-01,clothing,Clothing and footwear,0.2,B10600012023MM09
+2023-09-01,durables,Durable goods,-0.1,B10600012023MM09
+2023-09-01,misc_goods,Miscellaneous goods,0.1,B10600012023MM09
+2023-09-01,transport,Transport,0.2,B10600012023MM09
+2023-09-01,misc_services,Miscellaneous services,0.4,B10600012023MM09
+2023-10-01,all,All items,2.7,B10600012023MM10
+2023-10-01,food,Food,0.8,B10600012023MM10
+2023-10-01,meals_out,Meals out and takeaway food,0.7,B10600012023MM10
+2023-10-01,basic_food,Basic food,0.2,B10600012023MM10
+2023-10-01,housing,Housing,1.0,B10600012023MM10
+2023-10-01,egw,"Electricity, gas and water",0.0,B10600012023MM10
+2023-10-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012023MM10
+2023-10-01,clothing,Clothing and footwear,0.2,B10600012023MM10
+2023-10-01,durables,Durable goods,0.0,B10600012023MM10
+2023-10-01,misc_goods,Miscellaneous goods,0.1,B10600012023MM10
+2023-10-01,transport,Transport,0.1,B10600012023MM10
+2023-10-01,misc_services,Miscellaneous services,0.4,B10600012023MM10
+2023-11-01,all,All items,2.6,B10600012023MM11
+2023-11-01,food,Food,0.8,B10600012023MM11
+2023-11-01,meals_out,Meals out and takeaway food,0.6,B10600012023MM11
+2023-11-01,basic_food,Basic food,0.1,B10600012023MM11
+2023-11-01,housing,Housing,1.1,B10600012023MM11
+2023-11-01,egw,"Electricity, gas and water",-0.1,B10600012023MM11
+2023-11-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012023MM11
+2023-11-01,clothing,Clothing and footwear,0.1,B10600012023MM11
+2023-11-01,durables,Durable goods,-0.1,B10600012023MM11
+2023-11-01,misc_goods,Miscellaneous goods,0.1,B10600012023MM11
+2023-11-01,transport,Transport,0.1,B10600012023MM11
+2023-11-01,misc_services,Miscellaneous services,0.4,B10600012023MM11
+2023-12-01,all,All items,2.4,B10600012023MM12
+2023-12-01,food,Food,0.6,B10600012023MM12
+2023-12-01,meals_out,Meals out and takeaway food,0.6,B10600012023MM12
+2023-12-01,basic_food,Basic food,0.0,B10600012023MM12
+2023-12-01,housing,Housing,1.1,B10600012023MM12
+2023-12-01,egw,"Electricity, gas and water",-0.2,B10600012023MM12
+2023-12-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012023MM12
+2023-12-01,clothing,Clothing and footwear,0.1,B10600012023MM12
+2023-12-01,durables,Durable goods,0.0,B10600012023MM12
+2023-12-01,misc_goods,Miscellaneous goods,0.1,B10600012023MM12
+2023-12-01,transport,Transport,0.2,B10600012023MM12
+2023-12-01,misc_services,Miscellaneous services,0.4,B10600012023MM12
+2024-01-01,all,All items,1.7,B10600012024MM01
+2024-01-01,food,Food,0.3,B10600012024MM01
+2024-01-01,meals_out,Meals out and takeaway food,0.5,B10600012024MM01
+2024-01-01,basic_food,Basic food,-0.3,B10600012024MM01
+2024-01-01,housing,Housing,1.1,B10600012024MM01
+2024-01-01,egw,"Electricity, gas and water",-0.3,B10600012024MM01
+2024-01-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012024MM01
+2024-01-01,clothing,Clothing and footwear,0.1,B10600012024MM01
+2024-01-01,durables,Durable goods,-0.1,B10600012024MM01
+2024-01-01,misc_goods,Miscellaneous goods,0.1,B10600012024MM01
+2024-01-01,transport,Transport,0.1,B10600012024MM01
+2024-01-01,misc_services,Miscellaneous services,0.3,B10600012024MM01
+2024-02-01,all,All items,2.1,B10600012024MM02
+2024-02-01,food,Food,0.6,B10600012024MM02
+2024-02-01,meals_out,Meals out and takeaway food,0.6,B10600012024MM02
+2024-02-01,basic_food,Basic food,0.0,B10600012024MM02
+2024-02-01,housing,Housing,1.2,B10600012024MM02
+2024-02-01,egw,"Electricity, gas and water",-0.3,B10600012024MM02
+2024-02-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012024MM02
+2024-02-01,clothing,Clothing and footwear,0.0,B10600012024MM02
+2024-02-01,durables,Durable goods,-0.1,B10600012024MM02
+2024-02-01,misc_goods,Miscellaneous goods,0.0,B10600012024MM02
+2024-02-01,transport,Transport,0.1,B10600012024MM02
+2024-02-01,misc_services,Miscellaneous services,0.5,B10600012024MM02
+2024-03-01,all,All items,2.0,B10600012024MM03
+2024-03-01,food,Food,0.5,B10600012024MM03
+2024-03-01,meals_out,Meals out and takeaway food,0.6,B10600012024MM03
+2024-03-01,basic_food,Basic food,-0.1,B10600012024MM03
+2024-03-01,housing,Housing,1.2,B10600012024MM03
+2024-03-01,egw,"Electricity, gas and water",-0.3,B10600012024MM03
+2024-03-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012024MM03
+2024-03-01,clothing,Clothing and footwear,0.0,B10600012024MM03
+2024-03-01,durables,Durable goods,-0.1,B10600012024MM03
+2024-03-01,misc_goods,Miscellaneous goods,0.0,B10600012024MM03
+2024-03-01,transport,Transport,0.1,B10600012024MM03
+2024-03-01,misc_services,Miscellaneous services,0.4,B10600012024MM03
+2024-04-01,all,All items,1.1,B10600012024MM04
+2024-04-01,food,Food,0.5,B10600012024MM04
+2024-04-01,meals_out,Meals out and takeaway food,0.6,B10600012024MM04
+2024-04-01,basic_food,Basic food,0.0,B10600012024MM04
+2024-04-01,housing,Housing,0.4,B10600012024MM04
+2024-04-01,egw,"Electricity, gas and water",-0.4,B10600012024MM04
+2024-04-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012024MM04
+2024-04-01,clothing,Clothing and footwear,0.0,B10600012024MM04
+2024-04-01,durables,Durable goods,0.0,B10600012024MM04
+2024-04-01,misc_goods,Miscellaneous goods,0.0,B10600012024MM04
+2024-04-01,transport,Transport,0.1,B10600012024MM04
+2024-04-01,misc_services,Miscellaneous services,0.3,B10600012024MM04
+2024-05-01,all,All items,1.2,B10600012024MM05
+2024-05-01,food,Food,0.5,B10600012024MM05
+2024-05-01,meals_out,Meals out and takeaway food,0.5,B10600012024MM05
+2024-05-01,basic_food,Basic food,0.0,B10600012024MM05
+2024-05-01,housing,Housing,0.4,B10600012024MM05
+2024-05-01,egw,"Electricity, gas and water",-0.4,B10600012024MM05
+2024-05-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012024MM05
+2024-05-01,clothing,Clothing and footwear,0.0,B10600012024MM05
+2024-05-01,durables,Durable goods,0.0,B10600012024MM05
+2024-05-01,misc_goods,Miscellaneous goods,0.0,B10600012024MM05
+2024-05-01,transport,Transport,0.1,B10600012024MM05
+2024-05-01,misc_services,Miscellaneous services,0.3,B10600012024MM05
+2024-06-01,all,All items,1.5,B10600012024MM06
+2024-06-01,food,Food,0.5,B10600012024MM06
+2024-06-01,meals_out,Meals out and takeaway food,0.5,B10600012024MM06
+2024-06-01,basic_food,Basic food,0.1,B10600012024MM06
+2024-06-01,housing,Housing,0.4,B10600012024MM06
+2024-06-01,egw,"Electricity, gas and water",0.0,B10600012024MM06
+2024-06-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012024MM06
+2024-06-01,clothing,Clothing and footwear,0.0,B10600012024MM06
+2024-06-01,durables,Durable goods,0.0,B10600012024MM06
+2024-06-01,misc_goods,Miscellaneous goods,0.0,B10600012024MM06
+2024-06-01,transport,Transport,0.1,B10600012024MM06
+2024-06-01,misc_services,Miscellaneous services,0.3,B10600012024MM06
+2024-07-01,all,All items,2.5,B10600012024MM07
+2024-07-01,food,Food,0.5,B10600012024MM07
+2024-07-01,meals_out,Meals out and takeaway food,0.5,B10600012024MM07
+2024-07-01,basic_food,Basic food,0.1,B10600012024MM07
+2024-07-01,housing,Housing,1.3,B10600012024MM07
+2024-07-01,egw,"Electricity, gas and water",0.1,B10600012024MM07
+2024-07-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012024MM07
+2024-07-01,clothing,Clothing and footwear,0.0,B10600012024MM07
+2024-07-01,durables,Durable goods,0.0,B10600012024MM07
+2024-07-01,misc_goods,Miscellaneous goods,0.0,B10600012024MM07
+2024-07-01,transport,Transport,0.2,B10600012024MM07
+2024-07-01,misc_services,Miscellaneous services,0.4,B10600012024MM07
+2024-08-01,all,All items,2.5,B10600012024MM08
+2024-08-01,food,Food,0.5,B10600012024MM08
+2024-08-01,meals_out,Meals out and takeaway food,0.4,B10600012024MM08
+2024-08-01,basic_food,Basic food,0.1,B10600012024MM08
+2024-08-01,housing,Housing,1.3,B10600012024MM08
+2024-08-01,egw,"Electricity, gas and water",0.1,B10600012024MM08
+2024-08-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012024MM08
+2024-08-01,clothing,Clothing and footwear,-0.1,B10600012024MM08
+2024-08-01,durables,Durable goods,0.0,B10600012024MM08
+2024-08-01,misc_goods,Miscellaneous goods,0.0,B10600012024MM08
+2024-08-01,transport,Transport,0.2,B10600012024MM08
+2024-08-01,misc_services,Miscellaneous services,0.3,B10600012024MM08
+2024-09-01,all,All items,2.2,B10600012024MM09
+2024-09-01,food,Food,0.3,B10600012024MM09
+2024-09-01,meals_out,Meals out and takeaway food,0.3,B10600012024MM09
+2024-09-01,basic_food,Basic food,0.0,B10600012024MM09
+2024-09-01,housing,Housing,1.3,B10600012024MM09
+2024-09-01,egw,"Electricity, gas and water",0.2,B10600012024MM09
+2024-09-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012024MM09
+2024-09-01,clothing,Clothing and footwear,0.0,B10600012024MM09
+2024-09-01,durables,Durable goods,0.0,B10600012024MM09
+2024-09-01,misc_goods,Miscellaneous goods,0.0,B10600012024MM09
+2024-09-01,transport,Transport,0.1,B10600012024MM09
+2024-09-01,misc_services,Miscellaneous services,0.3,B10600012024MM09
+2024-10-01,all,All items,1.4,B10600012024MM10
+2024-10-01,food,Food,0.2,B10600012024MM10
+2024-10-01,meals_out,Meals out and takeaway food,0.3,B10600012024MM10
+2024-10-01,basic_food,Basic food,0.0,B10600012024MM10
+2024-10-01,housing,Housing,0.4,B10600012024MM10
+2024-10-01,egw,"Electricity, gas and water",0.3,B10600012024MM10
+2024-10-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012024MM10
+2024-10-01,clothing,Clothing and footwear,0.0,B10600012024MM10
+2024-10-01,durables,Durable goods,0.0,B10600012024MM10
+2024-10-01,misc_goods,Miscellaneous goods,0.1,B10600012024MM10
+2024-10-01,transport,Transport,0.1,B10600012024MM10
+2024-10-01,misc_services,Miscellaneous services,0.3,B10600012024MM10
+2024-11-01,all,All items,1.4,B10600012024MM11
+2024-11-01,food,Food,0.3,B10600012024MM11
+2024-11-01,meals_out,Meals out and takeaway food,0.3,B10600012024MM11
+2024-11-01,basic_food,Basic food,0.0,B10600012024MM11
+2024-11-01,housing,Housing,0.4,B10600012024MM11
+2024-11-01,egw,"Electricity, gas and water",0.3,B10600012024MM11
+2024-11-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012024MM11
+2024-11-01,clothing,Clothing and footwear,-0.1,B10600012024MM11
+2024-11-01,durables,Durable goods,0.0,B10600012024MM11
+2024-11-01,misc_goods,Miscellaneous goods,0.0,B10600012024MM11
+2024-11-01,transport,Transport,0.1,B10600012024MM11
+2024-11-01,misc_services,Miscellaneous services,0.3,B10600012024MM11
+2024-12-01,all,All items,1.4,B10600012024MM12
+2024-12-01,food,Food,0.3,B10600012024MM12
+2024-12-01,meals_out,Meals out and takeaway food,0.3,B10600012024MM12
+2024-12-01,basic_food,Basic food,0.0,B10600012024MM12
+2024-12-01,housing,Housing,0.4,B10600012024MM12
+2024-12-01,egw,"Electricity, gas and water",0.4,B10600012024MM12
+2024-12-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012024MM12
+2024-12-01,clothing,Clothing and footwear,-0.1,B10600012024MM12
+2024-12-01,durables,Durable goods,-0.1,B10600012024MM12
+2024-12-01,misc_goods,Miscellaneous goods,0.0,B10600012024MM12
+2024-12-01,transport,Transport,0.1,B10600012024MM12
+2024-12-01,misc_services,Miscellaneous services,0.3,B10600012024MM12
+2025-01-01,all,All items,2.0,B10600012025MM01
+2025-01-01,food,Food,0.3,B10600012025MM01
+2025-01-01,meals_out,Meals out and takeaway food,0.3,B10600012025MM01
+2025-01-01,basic_food,Basic food,0.0,B10600012025MM01
+2025-01-01,housing,Housing,0.6,B10600012025MM01
+2025-01-01,egw,"Electricity, gas and water",0.4,B10600012025MM01
+2025-01-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012025MM01
+2025-01-01,clothing,Clothing and footwear,-0.1,B10600012025MM01
+2025-01-01,durables,Durable goods,0.0,B10600012025MM01
+2025-01-01,misc_goods,Miscellaneous goods,0.0,B10600012025MM01
+2025-01-01,transport,Transport,0.3,B10600012025MM01
+2025-01-01,misc_services,Miscellaneous services,0.4,B10600012025MM01
+2025-02-01,all,All items,1.4,B10600012025MM02
+2025-02-01,food,Food,0.0,B10600012025MM02
+2025-02-01,meals_out,Meals out and takeaway food,0.2,B10600012025MM02
+2025-02-01,basic_food,Basic food,-0.2,B10600012025MM02
+2025-02-01,housing,Housing,0.6,B10600012025MM02
+2025-02-01,egw,"Electricity, gas and water",0.4,B10600012025MM02
+2025-02-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.1,B10600012025MM02
+2025-02-01,clothing,Clothing and footwear,-0.1,B10600012025MM02
+2025-02-01,durables,Durable goods,0.0,B10600012025MM02
+2025-02-01,misc_goods,Miscellaneous goods,0.0,B10600012025MM02
+2025-02-01,transport,Transport,0.2,B10600012025MM02
+2025-02-01,misc_services,Miscellaneous services,0.2,B10600012025MM02
+2025-03-01,all,All items,1.4,B10600012025MM03
+2025-03-01,food,Food,0.1,B10600012025MM03
+2025-03-01,meals_out,Meals out and takeaway food,0.2,B10600012025MM03
+2025-03-01,basic_food,Basic food,-0.1,B10600012025MM03
+2025-03-01,housing,Housing,0.6,B10600012025MM03
+2025-03-01,egw,"Electricity, gas and water",0.4,B10600012025MM03
+2025-03-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012025MM03
+2025-03-01,clothing,Clothing and footwear,-0.1,B10600012025MM03
+2025-03-01,durables,Durable goods,0.0,B10600012025MM03
+2025-03-01,misc_goods,Miscellaneous goods,0.0,B10600012025MM03
+2025-03-01,transport,Transport,0.1,B10600012025MM03
+2025-03-01,misc_services,Miscellaneous services,0.1,B10600012025MM03
+2025-04-01,all,All items,2.0,B10600012025MM04
+2025-04-01,food,Food,0.1,B10600012025MM04
+2025-04-01,meals_out,Meals out and takeaway food,0.2,B10600012025MM04
+2025-04-01,basic_food,Basic food,-0.1,B10600012025MM04
+2025-04-01,housing,Housing,1.1,B10600012025MM04
+2025-04-01,egw,"Electricity, gas and water",0.4,B10600012025MM04
+2025-04-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012025MM04
+2025-04-01,clothing,Clothing and footwear,-0.1,B10600012025MM04
+2025-04-01,durables,Durable goods,-0.1,B10600012025MM04
+2025-04-01,misc_goods,Miscellaneous goods,0.0,B10600012025MM04
+2025-04-01,transport,Transport,0.3,B10600012025MM04
+2025-04-01,misc_services,Miscellaneous services,0.3,B10600012025MM04
+2025-05-01,all,All items,1.9,B10600012025MM05
+2025-05-01,food,Food,0.1,B10600012025MM05
+2025-05-01,meals_out,Meals out and takeaway food,0.2,B10600012025MM05
+2025-05-01,basic_food,Basic food,-0.1,B10600012025MM05
+2025-05-01,housing,Housing,1.1,B10600012025MM05
+2025-05-01,egw,"Electricity, gas and water",0.6,B10600012025MM05
+2025-05-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012025MM05
+2025-05-01,clothing,Clothing and footwear,-0.1,B10600012025MM05
+2025-05-01,durables,Durable goods,-0.1,B10600012025MM05
+2025-05-01,misc_goods,Miscellaneous goods,0.0,B10600012025MM05
+2025-05-01,transport,Transport,0.2,B10600012025MM05
+2025-05-01,misc_services,Miscellaneous services,0.2,B10600012025MM05
+2025-06-01,all,All items,1.4,B10600012025MM06
+2025-06-01,food,Food,0.2,B10600012025MM06
+2025-06-01,meals_out,Meals out and takeaway food,0.2,B10600012025MM06
+2025-06-01,basic_food,Basic food,0.0,B10600012025MM06
+2025-06-01,housing,Housing,1.1,B10600012025MM06
+2025-06-01,egw,"Electricity, gas and water",0.1,B10600012025MM06
+2025-06-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012025MM06
+2025-06-01,clothing,Clothing and footwear,-0.1,B10600012025MM06
+2025-06-01,durables,Durable goods,-0.1,B10600012025MM06
+2025-06-01,misc_goods,Miscellaneous goods,0.0,B10600012025MM06
+2025-06-01,transport,Transport,0.1,B10600012025MM06
+2025-06-01,misc_services,Miscellaneous services,0.1,B10600012025MM06
+2025-07-01,all,All items,1.0,B10600012025MM07
+2025-07-01,food,Food,0.2,B10600012025MM07
+2025-07-01,meals_out,Meals out and takeaway food,0.2,B10600012025MM07
+2025-07-01,basic_food,Basic food,0.0,B10600012025MM07
+2025-07-01,housing,Housing,0.7,B10600012025MM07
+2025-07-01,egw,"Electricity, gas and water",0.0,B10600012025MM07
+2025-07-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012025MM07
+2025-07-01,clothing,Clothing and footwear,-0.1,B10600012025MM07
+2025-07-01,durables,Durable goods,-0.1,B10600012025MM07
+2025-07-01,misc_goods,Miscellaneous goods,0.0,B10600012025MM07
+2025-07-01,transport,Transport,0.1,B10600012025MM07
+2025-07-01,misc_services,Miscellaneous services,0.1,B10600012025MM07
+2025-08-01,all,All items,1.1,B10600012025MM08
+2025-08-01,food,Food,0.2,B10600012025MM08
+2025-08-01,meals_out,Meals out and takeaway food,0.2,B10600012025MM08
+2025-08-01,basic_food,Basic food,0.0,B10600012025MM08
+2025-08-01,housing,Housing,0.7,B10600012025MM08
+2025-08-01,egw,"Electricity, gas and water",0.0,B10600012025MM08
+2025-08-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012025MM08
+2025-08-01,clothing,Clothing and footwear,-0.1,B10600012025MM08
+2025-08-01,durables,Durable goods,-0.1,B10600012025MM08
+2025-08-01,misc_goods,Miscellaneous goods,0.0,B10600012025MM08
+2025-08-01,transport,Transport,0.2,B10600012025MM08
+2025-08-01,misc_services,Miscellaneous services,0.2,B10600012025MM08
+2025-09-01,all,All items,1.1,B10600012025MM09
+2025-09-01,food,Food,0.2,B10600012025MM09
+2025-09-01,meals_out,Meals out and takeaway food,0.2,B10600012025MM09
+2025-09-01,basic_food,Basic food,0.0,B10600012025MM09
+2025-09-01,housing,Housing,0.6,B10600012025MM09
+2025-09-01,egw,"Electricity, gas and water",0.0,B10600012025MM09
+2025-09-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012025MM09
+2025-09-01,clothing,Clothing and footwear,-0.1,B10600012025MM09
+2025-09-01,durables,Durable goods,-0.1,B10600012025MM09
+2025-09-01,misc_goods,Miscellaneous goods,0.0,B10600012025MM09
+2025-09-01,transport,Transport,0.2,B10600012025MM09
+2025-09-01,misc_services,Miscellaneous services,0.2,B10600012025MM09
+2025-10-01,all,All items,1.2,B10600012025MM10
+2025-10-01,food,Food,0.2,B10600012025MM10
+2025-10-01,meals_out,Meals out and takeaway food,0.2,B10600012025MM10
+2025-10-01,basic_food,Basic food,0.0,B10600012025MM10
+2025-10-01,housing,Housing,0.6,B10600012025MM10
+2025-10-01,egw,"Electricity, gas and water",0.0,B10600012025MM10
+2025-10-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012025MM10
+2025-10-01,clothing,Clothing and footwear,-0.1,B10600012025MM10
+2025-10-01,durables,Durable goods,-0.1,B10600012025MM10
+2025-10-01,misc_goods,Miscellaneous goods,0.0,B10600012025MM10
+2025-10-01,transport,Transport,0.2,B10600012025MM10
+2025-10-01,misc_services,Miscellaneous services,0.3,B10600012025MM10
+2025-11-01,all,All items,1.2,B10600012025MM11
+2025-11-01,food,Food,0.3,B10600012025MM11
+2025-11-01,meals_out,Meals out and takeaway food,0.2,B10600012025MM11
+2025-11-01,basic_food,Basic food,0.1,B10600012025MM11
+2025-11-01,housing,Housing,0.6,B10600012025MM11
+2025-11-01,egw,"Electricity, gas and water",0.0,B10600012025MM11
+2025-11-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012025MM11
+2025-11-01,clothing,Clothing and footwear,-0.1,B10600012025MM11
+2025-11-01,durables,Durable goods,-0.1,B10600012025MM11
+2025-11-01,misc_goods,Miscellaneous goods,0.0,B10600012025MM11
+2025-11-01,transport,Transport,0.3,B10600012025MM11
+2025-11-01,misc_services,Miscellaneous services,0.3,B10600012025MM11
+2025-12-01,all,All items,1.4,B10600012025MM12
+2025-12-01,food,Food,0.2,B10600012025MM12
+2025-12-01,meals_out,Meals out and takeaway food,0.2,B10600012025MM12
+2025-12-01,basic_food,Basic food,0.1,B10600012025MM12
+2025-12-01,housing,Housing,0.6,B10600012025MM12
+2025-12-01,egw,"Electricity, gas and water",0.0,B10600012025MM12
+2025-12-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012025MM12
+2025-12-01,clothing,Clothing and footwear,0.0,B10600012025MM12
+2025-12-01,durables,Durable goods,-0.1,B10600012025MM12
+2025-12-01,misc_goods,Miscellaneous goods,0.0,B10600012025MM12
+2025-12-01,transport,Transport,0.3,B10600012025MM12
+2025-12-01,misc_services,Miscellaneous services,0.4,B10600012025MM12
+2026-01-01,all,All items,1.1,B10600012026MM01
+2026-01-01,food,Food,0.1,B10600012026MM01
+2026-01-01,meals_out,Meals out and takeaway food,0.2,B10600012026MM01
+2026-01-01,basic_food,Basic food,0.0,B10600012026MM01
+2026-01-01,housing,Housing,0.4,B10600012026MM01
+2026-01-01,egw,"Electricity, gas and water",0.1,B10600012026MM01
+2026-01-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012026MM01
+2026-01-01,clothing,Clothing and footwear,-0.1,B10600012026MM01
+2026-01-01,durables,Durable goods,-0.1,B10600012026MM01
+2026-01-01,misc_goods,Miscellaneous goods,0.1,B10600012026MM01
+2026-01-01,transport,Transport,0.1,B10600012026MM01
+2026-01-01,misc_services,Miscellaneous services,0.5,B10600012026MM01
+2026-02-01,all,All items,1.7,B10600012026MM02
+2026-02-01,food,Food,0.2,B10600012026MM02
+2026-02-01,meals_out,Meals out and takeaway food,0.2,B10600012026MM02
+2026-02-01,basic_food,Basic food,0.0,B10600012026MM02
+2026-02-01,housing,Housing,0.4,B10600012026MM02
+2026-02-01,egw,"Electricity, gas and water",0.1,B10600012026MM02
+2026-02-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012026MM02
+2026-02-01,clothing,Clothing and footwear,-0.1,B10600012026MM02
+2026-02-01,durables,Durable goods,-0.1,B10600012026MM02
+2026-02-01,misc_goods,Miscellaneous goods,0.1,B10600012026MM02
+2026-02-01,transport,Transport,0.3,B10600012026MM02
+2026-02-01,misc_services,Miscellaneous services,0.7,B10600012026MM02
+2026-03-01,all,All items,1.7,B10600012026MM03
+2026-03-01,food,Food,0.2,B10600012026MM03
+2026-03-01,meals_out,Meals out and takeaway food,0.1,B10600012026MM03
+2026-03-01,basic_food,Basic food,0.1,B10600012026MM03
+2026-03-01,housing,Housing,0.4,B10600012026MM03
+2026-03-01,egw,"Electricity, gas and water",0.1,B10600012026MM03
+2026-03-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012026MM03
+2026-03-01,clothing,Clothing and footwear,0.0,B10600012026MM03
+2026-03-01,durables,Durable goods,-0.1,B10600012026MM03
+2026-03-01,misc_goods,Miscellaneous goods,0.1,B10600012026MM03
+2026-03-01,transport,Transport,0.3,B10600012026MM03
+2026-03-01,misc_services,Miscellaneous services,0.7,B10600012026MM03
+2026-04-01,all,All items,1.7,B10600012026MM04
+2026-04-01,food,Food,0.2,B10600012026MM04
+2026-04-01,meals_out,Meals out and takeaway food,0.1,B10600012026MM04
+2026-04-01,basic_food,Basic food,0.0,B10600012026MM04
+2026-04-01,housing,Housing,0.4,B10600012026MM04
+2026-04-01,egw,"Electricity, gas and water",0.2,B10600012026MM04
+2026-04-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012026MM04
+2026-04-01,clothing,Clothing and footwear,0.0,B10600012026MM04
+2026-04-01,durables,Durable goods,-0.1,B10600012026MM04
+2026-04-01,misc_goods,Miscellaneous goods,0.1,B10600012026MM04
+2026-04-01,transport,Transport,0.3,B10600012026MM04
+2026-04-01,misc_services,Miscellaneous services,0.7,B10600012026MM04
+2026-05-01,all,All items,2.0,B10600012026MM05
+2026-05-01,food,Food,0.2,B10600012026MM05
+2026-05-01,meals_out,Meals out and takeaway food,0.1,B10600012026MM05
+2026-05-01,basic_food,Basic food,0.0,B10600012026MM05
+2026-05-01,housing,Housing,0.4,B10600012026MM05
+2026-05-01,egw,"Electricity, gas and water",0.2,B10600012026MM05
+2026-05-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012026MM05
+2026-05-01,clothing,Clothing and footwear,0.0,B10600012026MM05
+2026-05-01,durables,Durable goods,0.0,B10600012026MM05
+2026-05-01,misc_goods,Miscellaneous goods,0.1,B10600012026MM05
+2026-05-01,transport,Transport,0.4,B10600012026MM05
+2026-05-01,misc_services,Miscellaneous services,0.8,B10600012026MM05
+2026-06-01,all,All items,2.0,B10600012026MM06
+2026-06-01,food,Food,0.1,B10600012026MM06
+2026-06-01,meals_out,Meals out and takeaway food,0.1,B10600012026MM06
+2026-06-01,basic_food,Basic food,0.0,B10600012026MM06
+2026-06-01,housing,Housing,0.4,B10600012026MM06
+2026-06-01,egw,"Electricity, gas and water",0.3,B10600012026MM06
+2026-06-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012026MM06
+2026-06-01,clothing,Clothing and footwear,0.0,B10600012026MM06
+2026-06-01,durables,Durable goods,0.0,B10600012026MM06
+2026-06-01,misc_goods,Miscellaneous goods,0.1,B10600012026MM06
+2026-06-01,transport,Transport,0.4,B10600012026MM06
+2026-06-01,misc_services,Miscellaneous services,0.8,B10600012026MM06
+2026-07-01,all,All items,1.7,B10600012026MM07
+2026-07-01,food,Food,0.1,B10600012026MM07
+2026-07-01,meals_out,Meals out and takeaway food,0.1,B10600012026MM07
+2026-07-01,basic_food,Basic food,0.0,B10600012026MM07
+2026-07-01,housing,Housing,0.0,B10600012026MM07
+2026-07-01,egw,"Electricity, gas and water",0.3,B10600012026MM07
+2026-07-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012026MM07
+2026-07-01,clothing,Clothing and footwear,0.0,B10600012026MM07
+2026-07-01,durables,Durable goods,0.0,B10600012026MM07
+2026-07-01,misc_goods,Miscellaneous goods,0.1,B10600012026MM07
+2026-07-01,transport,Transport,0.4,B10600012026MM07
+2026-07-01,misc_services,Miscellaneous services,0.7,B10600012026MM07
+2026-08-01,all,All items,1.7,B10600012026MM08
+2026-08-01,food,Food,0.2,B10600012026MM08
+2026-08-01,meals_out,Meals out and takeaway food,0.2,B10600012026MM08
+2026-08-01,basic_food,Basic food,0.0,B10600012026MM08
+2026-08-01,housing,Housing,0.0,B10600012026MM08
+2026-08-01,egw,"Electricity, gas and water",0.3,B10600012026MM08
+2026-08-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012026MM08
+2026-08-01,clothing,Clothing and footwear,0.0,B10600012026MM08
+2026-08-01,durables,Durable goods,0.0,B10600012026MM08
+2026-08-01,misc_goods,Miscellaneous goods,0.1,B10600012026MM08
+2026-08-01,transport,Transport,0.3,B10600012026MM08
+2026-08-01,misc_services,Miscellaneous services,0.7,B10600012026MM08
+2026-09-01,all,All items,1.9,B10600012026MM09
+2026-09-01,food,Food,0.1,B10600012026MM09
+2026-09-01,meals_out,Meals out and takeaway food,0.2,B10600012026MM09
+2026-09-01,basic_food,Basic food,0.0,B10600012026MM09
+2026-09-01,housing,Housing,0.1,B10600012026MM09
+2026-09-01,egw,"Electricity, gas and water",0.4,B10600012026MM09
+2026-09-01,alcohol_tobacco,Alcoholic drinks and tobacco,0.0,B10600012026MM09
+2026-09-01,clothing,Clothing and footwear,0.0,B10600012026MM09
+2026-09-01,durables,Durable goods,0.0,B10600012026MM09
+2026-09-01,misc_goods,Miscellaneous goods,0.1,B10600012026MM09
+2026-09-01,transport,Transport,0.4,B10600012026MM09
+2026-09-01,misc_services,Miscellaneous services,0.8,B10600012026MM09
