@@ -1,4 +1,4 @@
-// Inflation tab: Singapore CPI (SingStat, 2024 base) and producer prices (SMPPI, 2023 base).
+// Inflation tab: Singapore CPI (SingStat, 2024 base) and producer prices (SMPPI and DSPI, 2023 base).
 
 dash.calc('cpi_series', {
   title: 'CPI series',
@@ -495,7 +495,7 @@ dash.calc('cpi_ctab', {
       hm.classList.remove('dash-skeleton');
       const parts = [];
       if (L.status === 'ok' && L.data.length) parts.push(`${mLabel(L.data[0].date)} CPI`);
-      if (P.status === 'ok' && P.data.length) parts.push(`${mLabel(P.data[0].date)} PPI`);
+      if (P.status === 'ok' && P.data.length) parts.push(`${mLabel(P.data[0].date)} SMPPI`);
       hm.textContent = parts.join(', ');
     }
     document.querySelectorAll('#cpi-headline [data-source="ppi_latest"]').forEach((s) => {
@@ -751,7 +751,7 @@ dash.calc('cpi_ctab', {
     if (P.status === 'ok' && P.data.length && P.data[0].ppi_yoy != null) {
       const q = P.data[0];
       const b = document.createElement('b'); b.dataset.source = 'ppi_latest'; b.dataset.field = 'ppi_yoy'; b.dataset.row = '0'; b.textContent = J.f1(q.ppi_yoy);
-      t(' Producer price inflation (manufactured products) was '); p.append(b); pc(); t(' y/y in '); mb(q.date); t('.');
+      t(' SMPPI inflation was '); p.append(b); pc(); t(' y/y in '); mb(q.date); t('.');
     }
   }
 
@@ -788,15 +788,16 @@ dash.calc('cpi_ctab', {
       { key: 'less_imputed', name: 'CPI less imputed rentals', color: C[0] },
     ], 280);
     lineChart('ppi-cpi-chart', 'ppi-cpi', 'ppi-cpi-legend', 'national', [
-      { key: 'ppi', name: 'Producer prices (PPI)', color: C[0] },
-      { key: 'cpi', name: 'Consumer prices (CPI)', color: C[1] },
+      { key: 'ppi', name: 'SMPPI', color: C[0] },
+      { key: 'dspi', name: 'DSPI', color: C[4] },
+      { key: 'cpi', name: 'CPI', color: C[1] },
     ], 280, {
       ids: ['cpi_series', 'ppi_series'],
       rows: (cpi, ppi) => {
         const by = new Map();
         const put = (d, k, v) => { if (v == null) return; if (!by.has(d)) by.set(d, { date: d }); by.get(d)[k] = v; };
         cpi.forEach((r) => { if (r.area === 'national' && r.series === 'all') put(r.date, 'cpi', r.yoy); });
-        ppi.forEach((r) => { if (r.series === 'ppi') put(r.date, 'ppi', r.yoy); });
+        ppi.forEach((r) => { if (r.series === 'ppi' || r.series === 'dspi') put(r.date, r.series, r.yoy); });
         const out = Array.from(by.values()).sort((a, b) => (a.date < b.date ? -1 : 1));
         return J.slice(out, 'ppi-cpi');
       },
