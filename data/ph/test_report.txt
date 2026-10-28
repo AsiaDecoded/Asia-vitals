@@ -1,6 +1,5 @@
 == ph_cpi_psa
-   UPDATED: Sep 2026: 12576 rows
+   unchanged: no change (latest Sep 2026)
 == ph_ppi_psa
-   UPDATED: Jul 2026: 2573 rows
-== combined long file: 269057 rows
-result: updated=['ph_cpi_psa', 'ph_ppi_psa'] failed=-
+   unchanged: no change (latest Jul 2026)
+result: updated=- failed=-
