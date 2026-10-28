@@ -805,9 +805,6 @@ dash.calc('cpi_ctab', {
     contribChart({ id: 'core-contrib', pre: 'core_', line: 'MAS core, y/y', keys: ['services', 'retail_goods', 'fbss', 'food_ex_fbss', 'elec_gas'] });
     gsChart();
     svcChart();
-    contribChart({ id: 'fe-contrib', pre: 'fe_', line: 'CPI, y/y', keys: ['exfe', 'groc', 'energy'] });
-    contribChart({ id: 'gs-contrib', pre: 'gs_', line: 'CPI, y/y', keys: ['services', 'goods'] });
-    contribChart({ id: 'xf-contrib', pre: 'xf_', line: 'CPI less food and energy, y/y', keys: ['services', 'retail_goods', 'fbss', 'acco', 'ptx'] });
   };
 
   dash.onData(() => { tiles(); takeaway(); heat(); ctab(); table(); moversTable(); J.redrawCpi(); });
