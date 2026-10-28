@@ -645,8 +645,8 @@ dash.calc('cpi_ctab', {
     if (!heatRO[id] && window.ResizeObserver) { heatRO[id] = new ResizeObserver(() => fit()); heatRO[id].observe(wrap); }
   }
 
-  // Contribution table: contributions (ppt) to CPI y/y by month; the parts add up to CPI. Parts share one colour scale
-  // (green below zero, white at zero, red above); only the divisions block is coloured.
+  // Contribution table: contributions (ppt) to CPI y/y by month. Only the divisions block is coloured, each row on its
+  // own range as in Table 1.
   function ctab() {
     const tbl = document.getElementById('cpi-ctab-table');
     if (!tbl) return;
@@ -705,8 +705,9 @@ dash.calc('cpi_ctab', {
         td.textContent = f2 === '-0.00' ? '0.00' : f2;
         td.className = 'heat';
         if (OWN.includes(k) || block(PARENT[k] || k) !== 'div') return;  // only the divisions block is coloured
-        const t = Math.max(-1, Math.min(1, r.contrib / AMAX.div));
-        td.style.background = t >= 0 ? mix(Wh, R, t) : mix(Wh, G, -t);
+        // as Table 1: each row on its own range, green at its lowest, yellow in the middle, red at its highest
+        const t = hi > lo ? (r.contrib - lo) / (hi - lo) : 0.5;
+        td.style.background = t > 0.5 ? mix(Y, R, (t - 0.5) / 0.5) : mix(G, Y, t / 0.5);
         td.style.color = '#1a1a1a';
       });
     });
