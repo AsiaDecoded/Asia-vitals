@@ -34,7 +34,14 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
       "Chrome/124.0 Safari/537.36 asia-vitals")
 
 
-def fetch(name, url, data=None, headers=None, timeout=60, save=True, ext=None):
+DEAD = {}  # host -> consecutive connection failures; after 3, the host is skipped
+
+
+def fetch(name, url, data=None, headers=None, timeout=45, save=True, ext=None):
+    host = urllib.parse.urlsplit(url).netloc
+    if DEAD.get(host, 0) >= 3:
+        LOG.append({"name": name, "url": url, "status": None, "error": "skipped: host failed 3 times", "bytes": 0})
+        return None
     h = {"User-Agent": UA, "Accept": "*/*", "Accept-Language": "en,zh-CN;q=0.8"}
     h.update(headers or {})
     body = urllib.parse.urlencode(data).encode() if isinstance(data, dict) else data
@@ -52,6 +59,7 @@ def fetch(name, url, data=None, headers=None, timeout=60, save=True, ext=None):
     except Exception as e:  # noqa: BLE001
         rec.update(status=None, error=f"{type(e).__name__}: {e}")
     rec["bytes"] = len(raw) if raw else 0
+    DEAD[host] = DEAD.get(host, 0) + 1 if rec.get("status") is None else 0
     rec["secs"] = round(time.time() - t0, 1)
     if raw:
         rec["head"] = raw[:300].decode("utf-8", "replace")
