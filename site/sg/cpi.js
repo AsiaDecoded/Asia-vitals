@@ -36,7 +36,7 @@ dash.calc('cpi_latest', {
 
 dash.calc('cpi_table', {
   title: 'Annualised rates, latest month',
-  description: 'For the series SingStat seasonally adjusts: 1-, 2-, 3- and 6-month changes in the SA index, annualised, and the published 12-month change of the unadjusted series.',
+  description: 'For the series SingStat seasonally adjusts: 1-, 3- and 6-month changes in the SA index, annualised, and the published 12-month change of the unadjusted series.',
   inputs: ['cpi_series'],
   fn: (cpi_series) => {
     const SA = [['all', 'CPI'], ['accommodation', 'Accommodation'], ['private_transport', 'Private transport'], ['less_imputed', 'CPI less imputed rentals'], ['food_ex_fbss', 'Food excl. FBSS'], ['fbss', 'FBSS'], ['health', 'Health']];
@@ -593,7 +593,7 @@ dash.calc('cpi_heat', {
     if (failed(C.status)) { tb.replaceChildren(); const td = tb.insertRow().insertCell(); td.colSpan = 6; J.fail(td); return; }
     if (C.status !== 'ok') return;
     document.getElementById('cpi-table-units').textContent = C.data.length && C.data[0].date ? `%, ${mLabel(C.data[0].date)}` : '%';
-    const cols = ['label', 'ann1', 'ann2', 'ann3', 'ann6', 'yoy12'];
+    const cols = ['label', 'ann1', 'ann3', 'ann6', 'yoy12'];
     tb.replaceChildren();
     C.data.forEach((r) => {
       const tr = tb.insertRow();
