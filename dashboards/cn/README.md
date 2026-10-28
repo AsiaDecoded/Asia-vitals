@@ -1,0 +1,3 @@
+# China dashboard (Claude Dashboard artifact) — page source
+
+Copy of the page files published to https://claude.ai/artifact/2omuUUQJvzqPtfvnHrBMeF (documents `files/index.html`, `files/app.js` and `files/export.js` in the artifact's database). `index.html` is assembled by `build.sh` from style.css, body.html and jg.js (as for dashboards/in); `app.js` holds the charts (it only selects and reshapes published figures). `datasets/` holds the dataset documents, which point at uploaded copies of `data/cn/cpi/cn_cpi_dash.csv`, `cn_cpi_provinces_dash.csv`, `cn_cpi_weights.csv`, `cn_cpi_impacts.csv` and `data/cn/ppi/cn_ppi_dash.csv`. The artifact is the live copy; this folder is a backup.

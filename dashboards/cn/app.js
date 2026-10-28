@@ -27,7 +27,7 @@ dash.calc('ppi_latest', {
   description: 'NBS published PPI and purchasing prices y/y in the latest month and the month before.',
   inputs: ['cn_ppi'],
   fn: (cn_ppi) => {
-    const r = cn_ppi.filter((x) => x.measure === 'yoy' && x.area === 'national' && (x.series === 'ppi' || x.series === 'purchasing'))
+    const r = cn_ppi.filter((x) => x.measure === 'yoy' && (x.area || 'national') === 'national' && (x.series === 'ppi' || x.series === 'purchasing'))
       .sort((a, b) => (a.date < b.date ? -1 : 1));
     const ppi = r.filter((x) => x.series === 'ppi'), pur = r.filter((x) => x.series === 'purchasing');
     const v = (a, i) => (a.length >= i ? Number(a[a.length - i].pct) : null);
@@ -88,7 +88,7 @@ dash.calc('impacts_latest', {
       const D = dash.data(s.ds);
       if (D.status !== 'ok') return;
       D.data.forEach((r) => {
-        if (r.series !== s.series || r.area !== (s.area || 'national') || r.measure !== (s.measure || 'yoy')) return;
+        if (r.series !== s.series || (r.area || 'national') !== (s.area || 'national') || r.measure !== (s.measure || 'yoy')) return;
         const v = num(r.pct); if (v == null) return;
         if (!by.has(r.date)) by.set(r.date, { date: r.date });
         by.get(r.date)[s.key] = v;
@@ -405,7 +405,7 @@ dash.calc('impacts_latest', {
       C('health_care', 'm', 'Health care', 'var(--ad-c3)'), C('other', 'o', 'Miscellaneous', 'var(--ad-c2)', { thin: true }),
     ], { anyStart: true, bases: true });
     hbars('cpi-prov', 'cn_cpi_provinces', (r) => r.series === 'all' && r.measure === 'yoy', (r) => r.area_name, 'var(--ad-c2)', 'cpi-prov-units');
-    hbars('ppi-ind', 'cn_ppi', (r) => r.area === 'national' && r.group === 'industry' && r.measure === 'yoy', (r) => r.label, 'var(--ad-c3)', 'ppi-ind-units');
+    hbars('ppi-ind', 'cn_ppi', (r) => r.group === 'industry' && r.measure === 'yoy', (r) => r.label, 'var(--ad-c3)', 'ppi-ind-units');
   };
 
   const tabs = document.querySelectorAll('.jg-tabs [data-tab]');

@@ -1,0 +1,14 @@
+{
+    "title": "China CPI by province",
+    "description": "CPI y/y for the 31 provinces, all items and 8 categories, as published by NBS. Pipeline file data/cn/cpi/cn_cpi_provinces_dash.csv.",
+    "source": {
+        "kind": "file",
+        "url": "/_blob/75f914a4ac11744e96404f41fba823aa",
+        "name": "cn_cpi_provinces_dash.csv"
+    },
+    "updated": {
+        "at": "2026-10-28T17:01:42Z",
+        "by": "Claude"
+    },
+    "schedule": "Replaced after each NBS release by the refresh scheduled task that reads AsiaDecoded/asia-vitals (once dev-cn is merged)."
+}

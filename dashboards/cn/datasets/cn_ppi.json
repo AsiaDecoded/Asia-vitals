@@ -1,0 +1,14 @@
+{
+    "title": "China PPI, NBS",
+    "description": "Producer prices of industrial products (with means of production and consumer goods and their groups), purchasing prices (9 groups) and PPI by industry; y/y, YTD and m/m as published by NBS, from 1993. Pipeline file data/cn/ppi/cn_ppi_dash.csv.",
+    "source": {
+        "kind": "file",
+        "url": "/_blob/bf87cfa60f8f40b7e7481c0e341bec17",
+        "name": "cn_ppi_dash.csv"
+    },
+    "updated": {
+        "at": "2026-10-28T17:01:42Z",
+        "by": "Claude"
+    },
+    "schedule": "Replaced after each NBS release by the refresh scheduled task that reads AsiaDecoded/asia-vitals (once dev-cn is merged)."
+}

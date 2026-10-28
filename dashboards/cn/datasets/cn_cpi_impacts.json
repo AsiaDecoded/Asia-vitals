@@ -1,0 +1,14 @@
+{
+    "title": "NBS-reported CPI impacts",
+    "description": "Impacts on CPI (percentage points) stated in the text of NBS's monthly CPI releases and its chief statistician's interpretations, from Jan 2025, parsed from stats.gov.cn. Partial: only the items NBS names.",
+    "source": {
+        "kind": "file",
+        "url": "/_blob/3c807a6dc0a470cec678ab5cdda3cb5a",
+        "name": "cn_cpi_impacts.csv"
+    },
+    "updated": {
+        "at": "2026-10-28T17:01:42Z",
+        "by": "Claude"
+    },
+    "schedule": "Replaced after each NBS release by the refresh scheduled task that reads AsiaDecoded/asia-vitals (once dev-cn is merged)."
+}
