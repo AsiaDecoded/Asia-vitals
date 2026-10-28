@@ -393,9 +393,10 @@ dash.calc('cpi_ctab', {
   function svcChart() {
     if (!document.getElementById('cpi-svc-chart')) return;
     const btn = document.querySelector(`#cpi-svc-seg [data-s="${S.svc}"]`);
-    lineChart('cpi-svc-chart', 'cpi-svc', 'cpi-svc-legend', 'national', [
-      { key: S.svc, name: btn ? btn.dataset.name : '', color: C[0] },
-    ], 280);
+    const series = S.svc === 'rent'
+      ? [{ key: 'svc_rent', name: 'Actual rentals', color: C[0] }, { key: 'svc_imputed', name: 'Imputed rentals', color: C[1] }]
+      : [{ key: S.svc, name: btn ? btn.dataset.name : '', color: C[0] }];
+    lineChart('cpi-svc-chart', 'cpi-svc', 'cpi-svc-legend', 'national', series, 280);
   }
 
   // Goods and services CPI (services incl. FBSS; goods = all items less services); y/y.
