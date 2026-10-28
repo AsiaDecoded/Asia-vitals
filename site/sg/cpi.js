@@ -143,7 +143,7 @@ dash.calc('cpi_ctab', {
 
 (() => {
   const J = window.JG;
-  const S = { months: 120, sa: 'all_sa', movers: 3, svc: 'svc_health' };
+  const S = { months: 120, sa: 'all_sa', movers: 3, svc: 'svc_health', fe: 'food' };
   const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   const mLabel = (d) => (d ? MONTHS[+d.slice(5, 7) - 1] + ' ' + d.slice(0, 4) : '');
   const visible = () => !document.getElementById('inflation').hidden;
@@ -167,6 +167,7 @@ dash.calc('cpi_ctab', {
   });
   seg('cpi-sa-seg', 'sa', 's', String);
   seg('cpi-svc-seg', 'svc', 's', String);
+  seg('cpi-fe-seg', 'fe', 's', String);
 
   const failed = (st) => st === 'error' || st === 'connect' || st === 'declined';
 
@@ -780,12 +781,9 @@ dash.calc('cpi_ctab', {
         return J.slice(out, 'ppi-cpi');
       },
     });
-    lineChart('cpi-drivers-chart', 'cpi-drivers', 'cpi-drivers-legend', 'national', [
-      { key: 'food_ex_fbss', name: 'Food excl. FBSS', color: C[0] },
-      { key: 'fbss', name: 'FBSS', color: C[5] },
-      { key: 'electricity', name: 'Electricity', color: C[1] },
-      { key: 'petrol', name: 'Petrol', color: C[3] },
-    ], 280);
+    lineChart('cpi-drivers-chart', 'cpi-drivers', 'cpi-drivers-legend', 'national', S.fe === 'energy'
+      ? [{ key: 'electricity', name: 'Electricity', color: C[1] }, { key: 'petrol', name: 'Petrol', color: C[0] }]
+      : [{ key: 'food_ex_fbss', name: 'Food excl. FBSS', color: C[0] }, { key: 'fbss', name: 'FBSS', color: C[1] }], 280);
     saChart();
     lineChart('cpi-diffusion-chart', 'cpi-diffusion', 'cpi-diffusion-legend', 'national', [
       { key: 'diffusion', name: 'Diffusion index (rising minus falling)', color: C[1] },
