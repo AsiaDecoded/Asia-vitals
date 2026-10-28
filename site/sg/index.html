@@ -338,6 +338,15 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
       </section>
     </div>
 
+    <div class="jg-grid">
+      <section class="jg-card" id="fe-contrib">
+        <h2>Singapore consumer inflation contribution: food and energy</h2>
+        <div class="ad-top"><span class="ad-units">ppt</span><div class="jg-legend" id="fe-contrib-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="fe-contrib-chart" data-source="sg_cpi_contrib"></div>
+        <div class="ad-foot"><span>Source: SingStat. Energy: electricity, gas, petrol, and other fuel and lubricants. FBSS: food and beverage serving services.</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
     <p class="jg-foot">Source: SingStat (SingStat), Consumer Price Index, 2024 base, via the Table Builder API (tables M213751, M213752, M213771, M213781, M213792, M213891): <span data-source="cpi_release" data-field="label" data-row="0">—</span>. MAS core and its services, retail and other goods, and electricity and gas measures are compiled by SingStat for the Monetary Authority of Singapore and are not seasonally adjusted. Producer prices: Singapore Manufactured Products Price Index (2023 base), via the Table Builder API (M213431): <span data-source="ppi_release" data-field="label" data-row="0">—</span>.</p>
   </section>
 
@@ -360,6 +369,7 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
         <li><b>CPI:</b> the first chart splits CPI y/y into MAS core, accommodation and private transport, which make up all items. Weights are SingStat&rsquo;s published accommodation and private transport weights for each basket (2014: 22.87 and 11.49; 2019: 21.98 and 12.21; 2024: 26.56 and 9.06, % of CPI); MAS core is the remainder.</li>
         <li><b>Formula:</b> within a basket, each index is set to 1 in the month before the basket starts (December 2013, 2018 and 2023). A part&rsquo;s contribution is its weight &times; the change in its rebased index over the year &times; the all-items index in that month before the basket &divide; the all-items index a year earlier. For the twelve months that straddle a change of basket, the year is split at that month: old weights before, new after.</li>
         <li><b>Rounding:</b> because published weights are rounded and apply to the basket&rsquo;s reference prices, the parts add up to the CPI rate within 0.02pp on average and 0.1pp at most (January 2024).</li>
+        <li><b>Food and energy:</b> a third chart splits CPI y/y into CPI less food and energy, food excl. FBSS, and energy (electricity, gas, petrol, other fuel and lubricants) at SingStat&rsquo;s published weights for each basket, by the same method; the energy series start in January 2015, so it begins in January 2016. The parts add up to the CPI rate.</li>
         <li><b>MAS core:</b> the second chart splits MAS core y/y into food excl. food and beverage serving services, food and beverage serving services, services, retail and other goods, and electricity and gas, at MAS&rsquo;s published weights (each part&rsquo;s share of MAS core), by the same formula with the MAS core index in place of all items. It starts in January 2015; for 2015&ndash;2019 the services and retail and other goods weights are estimates (above). On the 2014 basket the indices are set to 1 in January 2014, when SingStat&rsquo;s services, retail and other goods, and electricity and gas series begin. The parts add up to the MAS core rate within 0.02pp on average and 0.07pp at most.</li>
       </ul>
       <h3>Biggest contributors</h3>

@@ -100,7 +100,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 20  # bump when the outputs change, so the next run rebuilds them
+VERSION = 21  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -232,6 +232,59 @@ def _contrib_core(idx, mas, errors):
             rows.append({"date": t, "series": "core_" + k, "label": lab, "order": 10 + i, "contrib_yoy": round(C[k], 2)})
     weights = [{"from": a, "to": b, "published_weights_per_10000": CORE_WEIGHTS[n]} for n, a, b, _ in segs]
     return rows, weights
+
+
+# CPI split into CPI less food and energy, food excl. FBSS and energy, at published weights (2014 basket: IP-E48;
+# 2019, restated, and 2024: IP-E61). Signed item weights per 10,000; CPI less food and energy is all items less the rest.
+FE_PARTS = {
+    "2014": {"groc": {"1.01": 774}, "energy": {"1.03.2.3": 215, "1.03.2.4": 34, "1.06.1.5": 250}},
+    "2019": {"groc": {"1.01": 687}, "energy": {"1.03.2.3": 159, "1.03.2.4": 29, "1.06.1.5": 194, "1.06.1.6": 6}},
+    "2024": {"groc": {"1.01": 651}, "energy": {"1.03.2.3": 179, "1.03.2.4": 19, "1.06.1.5": 174, "1.06.1.6": 4}},
+}
+FE_LABELS = [("exfe", "CPI less food and energy"), ("groc", "Food excl. FBSS"), ("energy", "Energy")]
+
+
+def _contrib_fe(idx, errors):
+    """Contributions of CPI less food and energy, food excl. FBSS and energy to all-items y/y, Jan 2016 on. Same method
+    as _contrib_headline; the energy items start in Jan 2015, so the 2014 basket is anchored there. Each part's
+    contribution is all items at the link month x the weighted change in its items' rebased indices / all items a year
+    earlier; CPI less food and energy is all items less the other two, so the parts add up exactly."""
+    A = idx["1"]
+    segs = [("2014", "2014-01-01", "2018-12-01", "2015-01-01"),
+            ("2019", "2019-01-01", "2023-12-01", "2018-12-01"),
+            ("2024", "2024-01-01", max(A), "2023-12-01")]
+    seg_of = lambda d: next((x for x in segs if x[1] <= d <= x[2]), None)  # noqa: E731
+
+    def items(basket):
+        p = {k: dict(v) for k, v in FE_PARTS[basket].items()}
+        ex = {"1": 10000}
+        for part in p.values():
+            for code, w in part.items():
+                ex[code] = ex.get(code, 0) - w
+        p["exfe"] = ex
+        return p
+
+    def part(seg, k, x, y):
+        b, _, _, L = seg
+        return A[L] * sum(w / 1e4 * (idx[c][y] - idx[c][x]) / idx[c][L] for c, w in items(b)[k].items())
+    rows = []
+    for t in sorted(A):
+        s = _shift(t, -12)
+        St, Ss = seg_of(t), seg_of(s)
+        if t < "2016-01-01" or not St or not Ss:
+            continue
+        if St is Ss:
+            C = {k: part(St, k, s, t) for k, _ in FE_LABELS}
+        else:
+            C = {k: part(Ss, k, s, St[3]) + part(St, k, St[3], t) for k, _ in FE_LABELS}
+        C = {k: v / A[s] * 100 for k, v in C.items()}
+        tot = (A[t] / A[s] - 1) * 100
+        if abs(sum(C.values()) - tot) > 0.02:
+            errors.append(f"food and energy contributions {t}: parts sum {sum(C.values()):.3f}, all items {tot:.3f}")
+        rows.append({"date": t, "series": "fe_all", "label": "All items", "order": 20, "contrib_yoy": round(tot, 2)})
+        for i, (k, lab) in enumerate(FE_LABELS, 1):
+            rows.append({"date": t, "series": "fe_" + k, "label": lab, "order": 20 + i, "contrib_yoy": round(C[k], 2)})
+    return rows
 
 
 # Published CPI weights per 10,000 for the items taken out of CPI less food and energy:
@@ -443,7 +496,8 @@ def update(**_):
     mas = S["mas"][0]
     contrib, seg_weights = _contrib_headline(idx, mas, errors)
     core_contrib, core_weights = _contrib_core(idx, mas, errors)
-    contrib = sorted(contrib + core_contrib, key=lambda r: (r["date"], r["order"]))
+    fe_contrib = _contrib_fe(idx, errors)
+    contrib = sorted(contrib + core_contrib + fe_contrib, key=lambda r: (r["date"], r["order"]))
     implied, worst, _ = _tree(idx, names, errors)
     item_w, node_w = _published_weights(implied, errors)
     diff = _diffusion(S["yoy"][0], names)
