@@ -1,0 +1,35 @@
+name: Philippines sources test (dev-ph)
+
+# Runs the Philippines sources live on the dev-ph branch and commits their output there.
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-ph]
+    paths:
+      - pipeline/sources/ph_*/**
+      - pipeline/core/psa.py
+      - .github/workflows/ph-test.yml
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run the Philippines sources
+        run: python -I pipeline/run.py ph_cpi_psa ph_ppi_psa | tee /tmp/report.txt
+      - name: Commit output to dev-ph
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mkdir -p data/ph && cp /tmp/report.txt data/ph/test_report.txt
+          git add data/ph raw/ph
+          git commit -m "PH test run" || exit 0
+          git pull --rebase origin dev-ph && git push origin HEAD:dev-ph

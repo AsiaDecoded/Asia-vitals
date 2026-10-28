@@ -17,4 +17,6 @@ SOURCES = [
     "sg_ppi_singstat",
     "kr_cpi_ecos",
     "kr_ppi_ecos",
+    "ph_cpi_psa",
+    "ph_ppi_psa",
 ]
