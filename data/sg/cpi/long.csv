@@ -40603,6 +40603,7 @@ SG,cpi,accommodation,Accommodation,index,national,M,2015-01-01,100.18,"index, 20
 SG,cpi,accommodation,Accommodation,mom,national,M,2015-01-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,accommodation,Accommodation,yoy,national,M,2015-01-01,-1.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2015-01-01,101.372,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2015-01-01,100.985,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2015-01-01,68.776,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2015-01-01,-0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2015-01-01,-5.0,%,Singapore Department of Statistics,C2026-09
@@ -40703,6 +40704,8 @@ SG,cpi,accommodation,Accommodation,mom,national,M,2015-02-01,-0.2,%,Singapore De
 SG,cpi,accommodation,Accommodation,yoy,national,M,2015-02-01,-2.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2015-02-01,101.165,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2015-02-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2015-02-01,100.816,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2015-02-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2015-02-01,68.395,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2015-02-01,-0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2015-02-01,-5.8,%,Singapore Department of Statistics,C2026-09
@@ -40810,6 +40813,8 @@ SG,cpi,accommodation,Accommodation,mom,national,M,2015-03-01,-0.2,%,Singapore De
 SG,cpi,accommodation,Accommodation,yoy,national,M,2015-03-01,-2.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2015-03-01,100.887,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2015-03-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2015-03-01,100.587,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2015-03-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2015-03-01,70.537,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2015-03-01,3.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2015-03-01,-4.0,%,Singapore Department of Statistics,C2026-09
@@ -40917,6 +40922,8 @@ SG,cpi,accommodation,Accommodation,mom,national,M,2015-04-01,-2.7,%,Singapore De
 SG,cpi,accommodation,Accommodation,yoy,national,M,2015-04-01,-2.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2015-04-01,100.575,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2015-04-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2015-04-01,100.313,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2015-04-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2015-04-01,71.625,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2015-04-01,1.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2015-04-01,-2.1,%,Singapore Department of Statistics,C2026-09
@@ -41024,6 +41031,8 @@ SG,cpi,accommodation,Accommodation,mom,national,M,2015-05-01,2.3,%,Singapore Dep
 SG,cpi,accommodation,Accommodation,yoy,national,M,2015-05-01,-2.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2015-05-01,100.268,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2015-05-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2015-05-01,100.042,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2015-05-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2015-05-01,72.331,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2015-05-01,1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2015-05-01,1.0,%,Singapore Department of Statistics,C2026-09
@@ -41131,6 +41140,8 @@ SG,cpi,accommodation,Accommodation,mom,national,M,2015-06-01,-0.3,%,Singapore De
 SG,cpi,accommodation,Accommodation,yoy,national,M,2015-06-01,-2.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2015-06-01,99.953,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2015-06-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2015-06-01,99.753,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2015-06-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2015-06-01,72.185,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2015-06-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2015-06-01,1.2,%,Singapore Department of Statistics,C2026-09
@@ -41238,6 +41249,8 @@ SG,cpi,accommodation,Accommodation,mom,national,M,2015-07-01,-1.9,%,Singapore De
 SG,cpi,accommodation,Accommodation,yoy,national,M,2015-07-01,-2.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2015-07-01,99.617,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2015-07-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2015-07-01,99.423,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2015-07-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2015-07-01,71.083,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2015-07-01,-1.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2015-07-01,-0.1,%,Singapore Department of Statistics,C2026-09
@@ -41345,6 +41358,8 @@ SG,cpi,accommodation,Accommodation,mom,national,M,2015-08-01,1.4,%,Singapore Dep
 SG,cpi,accommodation,Accommodation,yoy,national,M,2015-08-01,-2.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2015-08-01,99.269,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2015-08-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2015-08-01,99.1,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2015-08-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2015-08-01,69.497,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2015-08-01,-2.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2015-08-01,-2.9,%,Singapore Department of Statistics,C2026-09
@@ -41452,6 +41467,8 @@ SG,cpi,accommodation,Accommodation,mom,national,M,2015-09-01,-0.3,%,Singapore De
 SG,cpi,accommodation,Accommodation,yoy,national,M,2015-09-01,-2.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2015-09-01,98.955,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2015-09-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2015-09-01,98.812,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2015-09-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2015-09-01,69.137,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2015-09-01,-0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2015-09-01,-3.2,%,Singapore Department of Statistics,C2026-09
@@ -41559,6 +41576,8 @@ SG,cpi,accommodation,Accommodation,mom,national,M,2015-10-01,-1.8,%,Singapore De
 SG,cpi,accommodation,Accommodation,yoy,national,M,2015-10-01,-3.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2015-10-01,98.66,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2015-10-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2015-10-01,98.54,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2015-10-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2015-10-01,69.283,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2015-10-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2015-10-01,-2.3,%,Singapore Department of Statistics,C2026-09
@@ -41666,6 +41685,8 @@ SG,cpi,accommodation,Accommodation,mom,national,M,2015-11-01,1.2,%,Singapore Dep
 SG,cpi,accommodation,Accommodation,yoy,national,M,2015-11-01,-3.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2015-11-01,98.343,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2015-11-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2015-11-01,98.27,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2015-11-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2015-11-01,69.167,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2015-11-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2015-11-01,-1.7,%,Singapore Department of Statistics,C2026-09
@@ -41773,6 +41794,8 @@ SG,cpi,accommodation,Accommodation,mom,national,M,2015-12-01,-0.3,%,Singapore De
 SG,cpi,accommodation,Accommodation,yoy,national,M,2015-12-01,-3.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2015-12-01,97.999,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2015-12-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2015-12-01,97.979,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2015-12-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2015-12-01,68.511,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2015-12-01,-0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2015-12-01,-1.1,%,Singapore Department of Statistics,C2026-09
@@ -41883,6 +41906,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2016-01-01,-3.1,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2016-01-01,97.668,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2016-01-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2016-01-01,-3.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2016-01-01,97.688,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2016-01-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2016-01-01,-3.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2016-01-01,67.55,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2016-01-01,-1.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2016-01-01,-1.8,%,Singapore Department of Statistics,C2026-09
@@ -41998,6 +42024,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2016-02-01,-3.2,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2016-02-01,97.374,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2016-02-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2016-02-01,-3.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2016-02-01,97.444,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2016-02-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2016-02-01,-3.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2016-02-01,65.71,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2016-02-01,-2.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2016-02-01,-3.9,%,Singapore Department of Statistics,C2026-09
@@ -42113,6 +42142,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2016-03-01,-3.2,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2016-03-01,97.026,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2016-03-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2016-03-01,-3.8,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2016-03-01,97.14,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2016-03-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2016-03-01,-3.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2016-03-01,66.367,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2016-03-01,1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2016-03-01,-5.9,%,Singapore Department of Statistics,C2026-09
@@ -42228,6 +42260,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2016-04-01,-0.9,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2016-04-01,96.635,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2016-04-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2016-04-01,-3.9,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2016-04-01,96.812,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2016-04-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2016-04-01,-3.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2016-04-01,66.539,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2016-04-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2016-04-01,-7.1,%,Singapore Department of Statistics,C2026-09
@@ -42343,6 +42378,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2016-05-01,-6.0,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2016-05-01,96.296,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2016-05-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2016-05-01,-4.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2016-05-01,96.527,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2016-05-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2016-05-01,-3.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2016-05-01,66.828,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2016-05-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2016-05-01,-7.6,%,Singapore Department of Statistics,C2026-09
@@ -42458,6 +42496,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2016-06-01,-3.5,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2016-06-01,95.913,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2016-06-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2016-06-01,-4.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2016-06-01,96.201,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2016-06-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2016-06-01,-3.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2016-06-01,68.114,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2016-06-01,1.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2016-06-01,-5.6,%,Singapore Department of Statistics,C2026-09
@@ -42573,6 +42614,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2016-07-01,-3.6,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2016-07-01,95.516,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2016-07-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2016-07-01,-4.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2016-07-01,95.846,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2016-07-01,-0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2016-07-01,-3.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2016-07-01,67.987,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2016-07-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2016-07-01,-4.4,%,Singapore Department of Statistics,C2026-09
@@ -42688,6 +42732,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2016-08-01,-3.6,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2016-08-01,95.127,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2016-08-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2016-08-01,-4.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2016-08-01,95.503,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2016-08-01,-0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2016-08-01,-3.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2016-08-01,68.777,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2016-08-01,1.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2016-08-01,-1.0,%,Singapore Department of Statistics,C2026-09
@@ -42803,6 +42850,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2016-09-01,-3.7,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2016-09-01,94.768,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2016-09-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2016-09-01,-4.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2016-09-01,95.19,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2016-09-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2016-09-01,-3.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2016-09-01,68.9,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2016-09-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2016-09-01,-0.3,%,Singapore Department of Statistics,C2026-09
@@ -42918,6 +42968,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2016-10-01,-3.8,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2016-10-01,94.422,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2016-10-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2016-10-01,-4.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2016-10-01,94.899,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2016-10-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2016-10-01,-3.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2016-10-01,69.256,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2016-10-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2016-10-01,0.0,%,Singapore Department of Statistics,C2026-09
@@ -43033,6 +43086,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2016-11-01,-3.8,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2016-11-01,94.062,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2016-11-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2016-11-01,-4.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2016-11-01,94.604,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2016-11-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2016-11-01,-3.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2016-11-01,69.286,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2016-11-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2016-11-01,0.2,%,Singapore Department of Statistics,C2026-09
@@ -43148,6 +43204,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2016-12-01,-3.8,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2016-12-01,93.658,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2016-12-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2016-12-01,-4.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2016-12-01,94.286,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2016-12-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2016-12-01,-3.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2016-12-01,69.668,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2016-12-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2016-12-01,1.7,%,Singapore Department of Statistics,C2026-09
@@ -43263,6 +43322,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2017-01-01,-3.9,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2017-01-01,93.277,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2017-01-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2017-01-01,-4.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2017-01-01,93.972,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2017-01-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2017-01-01,-3.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2017-01-01,70.322,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2017-01-01,0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2017-01-01,4.1,%,Singapore Department of Statistics,C2026-09
@@ -43378,6 +43440,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2017-02-01,-4.0,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2017-02-01,92.952,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2017-02-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2017-02-01,-4.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2017-02-01,93.706,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2017-02-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2017-02-01,-3.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2017-02-01,70.393,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2017-02-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2017-02-01,7.1,%,Singapore Department of Statistics,C2026-09
@@ -43493,6 +43558,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2017-03-01,-4.0,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2017-03-01,92.552,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2017-03-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2017-03-01,-4.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2017-03-01,93.386,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2017-03-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2017-03-01,-3.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2017-03-01,70.951,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2017-03-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2017-03-01,6.9,%,Singapore Department of Statistics,C2026-09
@@ -43608,6 +43676,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2017-04-01,-6.7,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2017-04-01,92.153,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2017-04-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2017-04-01,-4.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2017-04-01,93.067,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2017-04-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2017-04-01,-3.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2017-04-01,71.206,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2017-04-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2017-04-01,7.0,%,Singapore Department of Statistics,C2026-09
@@ -43723,6 +43794,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2017-05-01,-1.5,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2017-05-01,91.768,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2017-05-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2017-05-01,-4.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2017-05-01,92.762,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2017-05-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2017-05-01,-3.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2017-05-01,70.868,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2017-05-01,-0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2017-05-01,6.0,%,Singapore Department of Statistics,C2026-09
@@ -43838,6 +43912,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2017-06-01,-3.9,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2017-06-01,91.396,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2017-06-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2017-06-01,-4.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2017-06-01,92.463,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2017-06-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2017-06-01,-3.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2017-06-01,70.152,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2017-06-01,-1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2017-06-01,3.0,%,Singapore Department of Statistics,C2026-09
@@ -43953,6 +44030,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2017-07-01,-4.1,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2017-07-01,90.998,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2017-07-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2017-07-01,-4.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2017-07-01,92.126,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2017-07-01,-0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2017-07-01,-3.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2017-07-01,70.347,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2017-07-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2017-07-01,3.5,%,Singapore Department of Statistics,C2026-09
@@ -44068,6 +44148,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2017-08-01,-3.9,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2017-08-01,90.614,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2017-08-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2017-08-01,-4.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2017-08-01,91.826,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2017-08-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2017-08-01,-3.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2017-08-01,70.567,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2017-08-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2017-08-01,2.6,%,Singapore Department of Statistics,C2026-09
@@ -44183,6 +44266,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2017-09-01,-3.9,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2017-09-01,90.29,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2017-09-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2017-09-01,-4.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2017-09-01,91.559,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2017-09-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2017-09-01,-3.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2017-09-01,70.368,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2017-09-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2017-09-01,2.1,%,Singapore Department of Statistics,C2026-09
@@ -44298,6 +44384,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2017-10-01,-4.2,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2017-10-01,89.974,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2017-10-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2017-10-01,-4.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2017-10-01,91.302,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2017-10-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2017-10-01,-3.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2017-10-01,70.762,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2017-10-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2017-10-01,2.2,%,Singapore Department of Statistics,C2026-09
@@ -44413,6 +44502,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2017-11-01,-3.8,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2017-11-01,89.669,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2017-11-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2017-11-01,-4.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2017-11-01,91.065,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2017-11-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2017-11-01,-3.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2017-11-01,72.106,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2017-11-01,1.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2017-11-01,4.1,%,Singapore Department of Statistics,C2026-09
@@ -44528,6 +44620,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2017-12-01,-3.8,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2017-12-01,89.362,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2017-12-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2017-12-01,-4.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2017-12-01,90.825,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2017-12-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2017-12-01,-3.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2017-12-01,71.465,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2017-12-01,-0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2017-12-01,2.6,%,Singapore Department of Statistics,C2026-09
@@ -44643,6 +44738,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2018-01-01,-5.3,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2018-01-01,89.082,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2018-01-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2018-01-01,-4.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2018-01-01,90.6,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2018-01-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2018-01-01,-3.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2018-01-01,71.477,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2018-01-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2018-01-01,1.6,%,Singapore Department of Statistics,C2026-09
@@ -44758,6 +44856,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2018-02-01,-3.6,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2018-02-01,88.866,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2018-02-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2018-02-01,-4.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2018-02-01,90.426,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2018-02-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2018-02-01,-3.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2018-02-01,70.839,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2018-02-01,-0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2018-02-01,0.6,%,Singapore Department of Statistics,C2026-09
@@ -44873,6 +44974,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2018-03-01,-3.4,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2018-03-01,88.609,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2018-03-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2018-03-01,-4.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2018-03-01,90.221,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2018-03-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2018-03-01,-3.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2018-03-01,70.544,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2018-03-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2018-03-01,-0.6,%,Singapore Department of Statistics,C2026-09
@@ -44988,6 +45092,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2018-04-01,-3.6,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2018-04-01,88.341,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2018-04-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2018-04-01,-4.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2018-04-01,90.022,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2018-04-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2018-04-01,-3.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2018-04-01,70.653,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2018-04-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2018-04-01,-0.8,%,Singapore Department of Statistics,C2026-09
@@ -45103,6 +45210,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2018-05-01,-3.2,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2018-05-01,88.111,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2018-05-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2018-05-01,-4.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2018-05-01,89.845,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2018-05-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2018-05-01,-3.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2018-05-01,70.927,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2018-05-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2018-05-01,0.1,%,Singapore Department of Statistics,C2026-09
@@ -45218,6 +45328,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2018-06-01,-3.0,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2018-06-01,87.884,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2018-06-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2018-06-01,-3.8,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2018-06-01,89.675,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2018-06-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2018-06-01,-3.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2018-06-01,70.429,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2018-06-01,-0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2018-06-01,0.4,%,Singapore Department of Statistics,C2026-09
@@ -45333,6 +45446,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2018-07-01,-3.0,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2018-07-01,87.685,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2018-07-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2018-07-01,-3.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2018-07-01,89.521,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2018-07-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2018-07-01,-2.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2018-07-01,70.186,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2018-07-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2018-07-01,-0.2,%,Singapore Department of Statistics,C2026-09
@@ -45448,6 +45564,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2018-08-01,-2.6,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2018-08-01,87.51,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2018-08-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2018-08-01,-3.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2018-08-01,89.4,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2018-08-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2018-08-01,-2.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2018-08-01,70.421,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2018-08-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2018-08-01,-0.2,%,Singapore Department of Statistics,C2026-09
@@ -45563,6 +45682,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2018-09-01,-2.5,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2018-09-01,87.363,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2018-09-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2018-09-01,-3.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2018-09-01,89.285,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2018-09-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2018-09-01,-2.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2018-09-01,70.305,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2018-09-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2018-09-01,-0.1,%,Singapore Department of Statistics,C2026-09
@@ -45678,6 +45800,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2018-10-01,-2.5,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2018-10-01,87.23,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2018-10-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2018-10-01,-3.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2018-10-01,89.182,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2018-10-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2018-10-01,-2.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2018-10-01,70.362,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2018-10-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2018-10-01,-0.6,%,Singapore Department of Statistics,C2026-09
@@ -45793,6 +45918,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2018-11-01,-2.1,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2018-11-01,87.133,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2018-11-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2018-11-01,-2.8,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2018-11-01,89.106,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2018-11-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2018-11-01,-2.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2018-11-01,69.498,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2018-11-01,-1.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2018-11-01,-3.6,%,Singapore Department of Statistics,C2026-09
@@ -45908,6 +46036,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2018-12-01,-1.9,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2018-12-01,87.025,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2018-12-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2018-12-01,-2.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2018-12-01,89.028,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2018-12-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2018-12-01,-2.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2018-12-01,68.85,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2018-12-01,-0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2018-12-01,-3.7,%,Singapore Department of Statistics,C2026-09
@@ -46023,6 +46154,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2019-01-01,-1.9,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2019-01-01,86.807,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2019-01-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2019-01-01,-2.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2019-01-01,88.837,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2019-01-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2019-01-01,-1.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2019-01-01,68.411,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2019-01-01,-0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2019-01-01,-4.3,%,Singapore Department of Statistics,C2026-09
@@ -46138,6 +46272,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2019-02-01,-1.9,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2019-02-01,86.781,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2019-02-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2019-02-01,-2.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2019-02-01,88.816,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2019-02-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2019-02-01,-1.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2019-02-01,68.795,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2019-02-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2019-02-01,-2.9,%,Singapore Department of Statistics,C2026-09
@@ -46253,6 +46390,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2019-03-01,-1.6,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2019-03-01,86.777,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2019-03-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2019-03-01,-2.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2019-03-01,88.804,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2019-03-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2019-03-01,-1.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2019-03-01,69.594,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2019-03-01,1.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2019-03-01,-1.3,%,Singapore Department of Statistics,C2026-09
@@ -46368,6 +46508,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2019-04-01,-1.1,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2019-04-01,86.768,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2019-04-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2019-04-01,-1.8,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2019-04-01,88.796,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2019-04-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2019-04-01,-1.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2019-04-01,71.871,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2019-04-01,3.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2019-04-01,1.7,%,Singapore Department of Statistics,C2026-09
@@ -46483,6 +46626,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2019-05-01,-1.1,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2019-05-01,86.768,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2019-05-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2019-05-01,-1.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2019-05-01,88.796,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2019-05-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2019-05-01,-1.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2019-05-01,72.222,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2019-05-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2019-05-01,1.8,%,Singapore Department of Statistics,C2026-09
@@ -46598,6 +46744,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2019-06-01,-1.2,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2019-06-01,86.789,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2019-06-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2019-06-01,-1.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2019-06-01,88.811,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2019-06-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2019-06-01,-1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2019-06-01,70.46,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2019-06-01,-2.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2019-06-01,0.0,%,Singapore Department of Statistics,C2026-09
@@ -46713,6 +46862,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2019-07-01,-0.7,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2019-07-01,86.82,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2019-07-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2019-07-01,-1.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2019-07-01,88.837,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2019-07-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2019-07-01,-0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2019-07-01,70.135,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2019-07-01,-0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2019-07-01,-0.1,%,Singapore Department of Statistics,C2026-09
@@ -46828,6 +46980,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2019-08-01,-0.7,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2019-08-01,86.843,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2019-08-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2019-08-01,-0.8,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2019-08-01,88.913,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2019-08-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2019-08-01,-0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2019-08-01,71.117,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2019-08-01,1.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2019-08-01,1.0,%,Singapore Department of Statistics,C2026-09
@@ -46943,6 +47098,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2019-09-01,-0.6,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2019-09-01,86.87,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2019-09-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2019-09-01,-0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2019-09-01,88.937,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2019-09-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2019-09-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2019-09-01,70.805,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2019-09-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2019-09-01,0.7,%,Singapore Department of Statistics,C2026-09
@@ -47058,6 +47216,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2019-10-01,-0.1,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2019-10-01,86.894,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2019-10-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2019-10-01,-0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2019-10-01,88.975,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2019-10-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2019-10-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2019-10-01,71.483,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2019-10-01,1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2019-10-01,1.6,%,Singapore Department of Statistics,C2026-09
@@ -47173,6 +47334,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2019-11-01,-0.3,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2019-11-01,86.931,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2019-11-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2019-11-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2019-11-01,89.005,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2019-11-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2019-11-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2019-11-01,71.281,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2019-11-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2019-11-01,2.6,%,Singapore Department of Statistics,C2026-09
@@ -47288,6 +47452,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2019-12-01,-0.1,%,Singapore De
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2019-12-01,86.982,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2019-12-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2019-12-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2019-12-01,89.054,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2019-12-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2019-12-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2019-12-01,71.155,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2019-12-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2019-12-01,3.3,%,Singapore Department of Statistics,C2026-09
@@ -47403,6 +47570,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2020-01-01,0.3,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2020-01-01,87.032,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2020-01-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2020-01-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2020-01-01,89.129,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2020-01-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2020-01-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2020-01-01,71.574,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2020-01-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2020-01-01,4.6,%,Singapore Department of Statistics,C2026-09
@@ -47518,6 +47688,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2020-02-01,0.4,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2020-02-01,87.103,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2020-02-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2020-02-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2020-02-01,89.183,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2020-02-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2020-02-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2020-02-01,70.45,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2020-02-01,-1.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2020-02-01,2.4,%,Singapore Department of Statistics,C2026-09
@@ -47633,6 +47806,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2020-03-01,0.5,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2020-03-01,87.169,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2020-03-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2020-03-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2020-03-01,89.249,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2020-03-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2020-03-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2020-03-01,69.418,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2020-03-01,-1.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2020-03-01,-0.3,%,Singapore Department of Statistics,C2026-09
@@ -47748,6 +47924,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2020-04-01,0.5,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2020-04-01,87.211,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2020-04-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2020-04-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2020-04-01,89.294,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2020-04-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2020-04-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2020-04-01,67.931,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2020-04-01,-2.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2020-04-01,-5.5,%,Singapore Department of Statistics,C2026-09
@@ -47863,6 +48042,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2020-05-01,0.5,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2020-05-01,87.225,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2020-05-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2020-05-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2020-05-01,89.294,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2020-05-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2020-05-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2020-05-01,67.34,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2020-05-01,-0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2020-05-01,-6.8,%,Singapore Department of Statistics,C2026-09
@@ -47978,6 +48160,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2020-06-01,0.5,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2020-06-01,87.226,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2020-06-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2020-06-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2020-06-01,89.272,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2020-06-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2020-06-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2020-06-01,67.389,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2020-06-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2020-06-01,-4.4,%,Singapore Department of Statistics,C2026-09
@@ -48093,6 +48278,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2020-07-01,0.4,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2020-07-01,87.216,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2020-07-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2020-07-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2020-07-01,89.229,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2020-07-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2020-07-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2020-07-01,68.646,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2020-07-01,1.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2020-07-01,-2.1,%,Singapore Department of Statistics,C2026-09
@@ -48208,6 +48396,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2020-08-01,0.4,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2020-08-01,87.23,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2020-08-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2020-08-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2020-08-01,89.205,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2020-08-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2020-08-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2020-08-01,69.443,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2020-08-01,1.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2020-08-01,-2.4,%,Singapore Department of Statistics,C2026-09
@@ -48323,6 +48514,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2020-09-01,0.4,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2020-09-01,87.262,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2020-09-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2020-09-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2020-09-01,89.192,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2020-09-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2020-09-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2020-09-01,70.701,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2020-09-01,1.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2020-09-01,-0.1,%,Singapore Department of Statistics,C2026-09
@@ -48438,6 +48632,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2020-10-01,0.2,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2020-10-01,87.307,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2020-10-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2020-10-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2020-10-01,87.864,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2020-10-01,-1.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2020-10-01,-1.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2020-10-01,70.557,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2020-10-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2020-10-01,-1.3,%,Singapore Department of Statistics,C2026-09
@@ -48553,6 +48750,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2020-11-01,0.3,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2020-11-01,87.365,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2020-11-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2020-11-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2020-11-01,87.837,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2020-11-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2020-11-01,-1.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2020-11-01,70.381,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2020-11-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2020-11-01,-1.3,%,Singapore Department of Statistics,C2026-09
@@ -48668,6 +48868,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2020-12-01,0.3,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2020-12-01,87.452,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2020-12-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2020-12-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2020-12-01,87.857,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2020-12-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2020-12-01,-1.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2020-12-01,71.985,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2020-12-01,2.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2020-12-01,1.2,%,Singapore Department of Statistics,C2026-09
@@ -48783,6 +48986,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2021-01-01,0.5,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2021-01-01,87.569,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2021-01-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2021-01-01,0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2021-01-01,89.267,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2021-01-01,1.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2021-01-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2021-01-01,72.903,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2021-01-01,1.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2021-01-01,1.9,%,Singapore Department of Statistics,C2026-09
@@ -48898,6 +49104,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2021-02-01,0.5,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2021-02-01,87.638,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2021-02-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2021-02-01,0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2021-02-01,89.295,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2021-02-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2021-02-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2021-02-01,73.404,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2021-02-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2021-02-01,4.2,%,Singapore Department of Statistics,C2026-09
@@ -49013,6 +49222,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2021-03-01,0.5,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2021-03-01,87.781,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2021-03-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2021-03-01,0.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2021-03-01,89.373,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2021-03-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2021-03-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2021-03-01,74.387,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2021-03-01,1.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2021-03-01,7.2,%,Singapore Department of Statistics,C2026-09
@@ -49128,6 +49340,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2021-04-01,0.7,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2021-04-01,87.963,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2021-04-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2021-04-01,0.9,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2021-04-01,89.468,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2021-04-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2021-04-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2021-04-01,76.658,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2021-04-01,3.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2021-04-01,12.8,%,Singapore Department of Statistics,C2026-09
@@ -49243,6 +49458,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2021-05-01,0.8,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2021-05-01,88.146,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2021-05-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2021-05-01,1.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2021-05-01,89.573,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2021-05-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2021-05-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2021-05-01,77.076,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2021-05-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2021-05-01,14.5,%,Singapore Department of Statistics,C2026-09
@@ -49358,6 +49576,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2021-06-01,1.1,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2021-06-01,88.382,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2021-06-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2021-06-01,1.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2021-06-01,89.733,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2021-06-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2021-06-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2021-06-01,77.43,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2021-06-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2021-06-01,14.9,%,Singapore Department of Statistics,C2026-09
@@ -49473,6 +49694,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2021-07-01,1.4,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2021-07-01,88.678,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2021-07-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2021-07-01,1.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2021-07-01,89.939,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2021-07-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2021-07-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2021-07-01,77.301,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2021-07-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2021-07-01,12.6,%,Singapore Department of Statistics,C2026-09
@@ -49588,6 +49812,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2021-08-01,1.7,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2021-08-01,88.94,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2021-08-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2021-08-01,2.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2021-08-01,90.139,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2021-08-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2021-08-01,1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2021-08-01,76.968,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2021-08-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2021-08-01,10.8,%,Singapore Department of Statistics,C2026-09
@@ -49703,6 +49930,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2021-09-01,1.9,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2021-09-01,89.117,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2021-09-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2021-09-01,2.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2021-09-01,90.264,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2021-09-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2021-09-01,1.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2021-09-01,78.336,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2021-09-01,1.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2021-09-01,10.8,%,Singapore Department of Statistics,C2026-09
@@ -49818,6 +50048,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2021-10-01,2.5,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2021-10-01,89.493,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2021-10-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2021-10-01,2.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2021-10-01,90.551,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2021-10-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2021-10-01,3.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2021-10-01,80.613,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2021-10-01,2.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2021-10-01,14.3,%,Singapore Department of Statistics,C2026-09
@@ -49933,6 +50166,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2021-11-01,2.7,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2021-11-01,89.782,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2021-11-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2021-11-01,2.8,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2021-11-01,90.764,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2021-11-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2021-11-01,3.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2021-11-01,82.98,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2021-11-01,2.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2021-11-01,17.9,%,Singapore Department of Statistics,C2026-09
@@ -50048,6 +50284,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2021-12-01,3.0,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2021-12-01,90.157,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2021-12-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2021-12-01,3.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2021-12-01,91.06,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2021-12-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2021-12-01,3.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2021-12-01,83.117,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2021-12-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2021-12-01,15.5,%,Singapore Department of Statistics,C2026-09
@@ -50163,6 +50402,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2022-01-01,3.1,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2022-01-01,90.541,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2022-01-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2022-01-01,3.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2022-01-01,91.39,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2022-01-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2022-01-01,2.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2022-01-01,83.132,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2022-01-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2022-01-01,14.0,%,Singapore Department of Statistics,C2026-09
@@ -50278,6 +50520,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2022-02-01,3.3,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2022-02-01,90.8,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2022-02-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2022-02-01,3.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2022-02-01,91.597,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2022-02-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2022-02-01,2.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2022-02-01,86.045,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2022-02-01,3.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2022-02-01,17.2,%,Singapore Department of Statistics,C2026-09
@@ -50393,6 +50638,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2022-03-01,3.5,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2022-03-01,91.186,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2022-03-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2022-03-01,3.9,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2022-03-01,91.92,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2022-03-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2022-03-01,2.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2022-03-01,90.393,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2022-03-01,5.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2022-03-01,21.5,%,Singapore Department of Statistics,C2026-09
@@ -50508,6 +50756,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2022-04-01,3.9,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2022-04-01,91.647,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2022-04-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2022-04-01,4.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2022-04-01,92.317,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2022-04-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2022-04-01,3.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2022-04-01,90.715,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2022-04-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2022-04-01,18.3,%,Singapore Department of Statistics,C2026-09
@@ -50623,6 +50874,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2022-05-01,4.0,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2022-05-01,92.021,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2022-05-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2022-05-01,4.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2022-05-01,92.63,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2022-05-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2022-05-01,3.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2022-05-01,91.332,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2022-05-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2022-05-01,18.5,%,Singapore Department of Statistics,C2026-09
@@ -50738,6 +50992,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2022-06-01,4.2,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2022-06-01,92.464,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2022-06-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2022-06-01,4.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2022-06-01,93.006,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2022-06-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2022-06-01,3.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2022-06-01,94.385,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2022-06-01,3.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2022-06-01,21.9,%,Singapore Department of Statistics,C2026-09
@@ -50853,6 +51110,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2022-07-01,4.6,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2022-07-01,92.999,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2022-07-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2022-07-01,4.9,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2022-07-01,93.492,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2022-07-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2022-07-01,4.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2022-07-01,94.477,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2022-07-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2022-07-01,22.2,%,Singapore Department of Statistics,C2026-09
@@ -50968,6 +51228,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2022-08-01,4.7,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2022-08-01,93.491,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2022-08-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2022-08-01,5.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2022-08-01,94.028,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2022-08-01,0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2022-08-01,4.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2022-08-01,95.511,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2022-08-01,1.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2022-08-01,24.1,%,Singapore Department of Statistics,C2026-09
@@ -51083,6 +51346,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2022-09-01,4.9,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2022-09-01,93.912,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2022-09-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2022-09-01,5.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2022-09-01,94.4,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2022-09-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2022-09-01,4.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2022-09-01,95.83,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2022-09-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2022-09-01,22.3,%,Singapore Department of Statistics,C2026-09
@@ -51198,6 +51464,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2022-10-01,4.9,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2022-10-01,94.292,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2022-10-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2022-10-01,5.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2022-10-01,94.734,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2022-10-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2022-10-01,4.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2022-10-01,94.579,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2022-10-01,-1.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2022-10-01,17.3,%,Singapore Department of Statistics,C2026-09
@@ -51313,6 +51582,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2022-11-01,4.8,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2022-11-01,94.576,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2022-11-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2022-11-01,5.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2022-11-01,94.993,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2022-11-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2022-11-01,4.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2022-11-01,97.269,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2022-11-01,2.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2022-11-01,17.2,%,Singapore Department of Statistics,C2026-09
@@ -51428,6 +51700,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2022-12-01,4.7,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2022-12-01,94.818,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2022-12-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2022-12-01,5.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2022-12-01,95.204,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2022-12-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2022-12-01,4.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2022-12-01,95.967,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2022-12-01,-1.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2022-12-01,15.5,%,Singapore Department of Statistics,C2026-09
@@ -51543,6 +51818,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2023-01-01,5.0,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2023-01-01,95.359,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2023-01-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2023-01-01,5.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2023-01-01,95.671,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2023-01-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2023-01-01,4.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2023-01-01,94.979,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2023-01-01,-1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2023-01-01,14.3,%,Singapore Department of Statistics,C2026-09
@@ -51658,6 +51936,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2023-02-01,4.9,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2023-02-01,95.531,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2023-02-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2023-02-01,5.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2023-02-01,95.823,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2023-02-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2023-02-01,4.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2023-02-01,96.458,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2023-02-01,1.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2023-02-01,12.1,%,Singapore Department of Statistics,C2026-09
@@ -51773,6 +52054,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2023-03-01,4.8,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2023-03-01,95.913,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2023-03-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2023-03-01,5.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2023-03-01,96.151,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2023-03-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2023-03-01,4.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2023-03-01,98.193,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2023-03-01,1.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2023-03-01,8.6,%,Singapore Department of Statistics,C2026-09
@@ -51888,6 +52172,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2023-04-01,4.8,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2023-04-01,96.246,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2023-04-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2023-04-01,5.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2023-04-01,96.447,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2023-04-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2023-04-01,4.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2023-04-01,100.162,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2023-04-01,2.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2023-04-01,10.4,%,Singapore Department of Statistics,C2026-09
@@ -52003,6 +52290,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2023-05-01,4.7,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2023-05-01,96.566,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2023-05-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2023-05-01,4.9,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2023-05-01,96.719,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2023-05-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2023-05-01,4.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2023-05-01,97.951,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2023-05-01,-2.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2023-05-01,7.2,%,Singapore Department of Statistics,C2026-09
@@ -52118,6 +52408,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2023-06-01,4.5,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2023-06-01,96.88,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2023-06-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2023-06-01,4.8,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2023-06-01,97.004,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2023-06-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2023-06-01,4.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2023-06-01,99.895,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2023-06-01,2.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2023-06-01,5.8,%,Singapore Department of Statistics,C2026-09
@@ -52233,6 +52526,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2023-07-01,4.5,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2023-07-01,97.357,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2023-07-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2023-07-01,4.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2023-07-01,97.418,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2023-07-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2023-07-01,4.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2023-07-01,98.976,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2023-07-01,-0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2023-07-01,4.8,%,Singapore Department of Statistics,C2026-09
@@ -52348,6 +52644,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2023-08-01,4.4,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2023-08-01,97.692,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2023-08-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2023-08-01,4.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2023-08-01,97.828,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2023-08-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2023-08-01,4.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2023-08-01,101.572,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2023-08-01,2.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2023-08-01,6.3,%,Singapore Department of Statistics,C2026-09
@@ -52463,6 +52762,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2023-09-01,4.3,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2023-09-01,97.987,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2023-09-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2023-09-01,4.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2023-09-01,98.1,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2023-09-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2023-09-01,3.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2023-09-01,103.985,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2023-09-01,2.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2023-09-01,8.5,%,Singapore Department of Statistics,C2026-09
@@ -52578,6 +52880,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2023-10-01,4.2,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2023-10-01,98.28,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2023-10-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2023-10-01,4.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2023-10-01,98.37,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2023-10-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2023-10-01,3.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2023-10-01,105.641,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2023-10-01,1.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2023-10-01,11.7,%,Singapore Department of Statistics,C2026-09
@@ -52693,6 +52998,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2023-11-01,4.1,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2023-11-01,98.504,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2023-11-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2023-11-01,4.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2023-11-01,98.575,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2023-11-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2023-11-01,3.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2023-11-01,101.31,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2023-11-01,-4.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2023-11-01,4.2,%,Singapore Department of Statistics,C2026-09
@@ -52808,6 +53116,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2023-12-01,4.1,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2023-12-01,98.764,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2023-12-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2023-12-01,4.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2023-12-01,98.818,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2023-12-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2023-12-01,3.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2023-12-01,100.746,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2023-12-01,-0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2023-12-01,5.0,%,Singapore Department of Statistics,C2026-09
@@ -52923,6 +53234,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2024-01-01,2.4,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2024-01-01,99.145,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2024-01-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2024-01-01,4.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2024-01-01,99.148,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2024-01-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2024-01-01,3.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2024-01-01,98.777,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2024-01-01,-2.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2024-01-01,4.0,%,Singapore Department of Statistics,C2026-09
@@ -53039,6 +53353,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2024-02-01,4.0,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2024-02-01,99.322,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2024-02-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2024-02-01,4.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2024-02-01,99.279,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2024-02-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2024-02-01,3.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2024-02-01,99.074,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2024-02-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2024-02-01,2.7,%,Singapore Department of Statistics,C2026-09
@@ -53156,6 +53473,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2024-03-01,3.8,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2024-03-01,99.515,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2024-03-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2024-03-01,3.8,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2024-03-01,99.43,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2024-03-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2024-03-01,3.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2024-03-01,98.659,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2024-03-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2024-03-01,0.5,%,Singapore Department of Statistics,C2026-09
@@ -53273,6 +53593,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2024-04-01,3.7,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2024-04-01,99.715,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2024-04-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2024-04-01,3.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2024-04-01,99.563,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2024-04-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2024-04-01,3.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2024-04-01,100.324,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2024-04-01,1.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2024-04-01,0.2,%,Singapore Department of Statistics,C2026-09
@@ -53390,6 +53713,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2024-05-01,3.4,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2024-05-01,99.85,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2024-05-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2024-05-01,3.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2024-05-01,99.654,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2024-05-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2024-05-01,3.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2024-05-01,100.579,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2024-05-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2024-05-01,2.7,%,Singapore Department of Statistics,C2026-09
@@ -53507,6 +53833,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2024-06-01,3.2,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2024-06-01,99.982,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2024-06-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2024-06-01,3.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2024-06-01,99.737,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2024-06-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2024-06-01,2.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2024-06-01,99.513,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2024-06-01,-1.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2024-06-01,-0.4,%,Singapore Department of Statistics,C2026-09
@@ -53624,6 +53953,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2024-07-01,3.0,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2024-07-01,100.177,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2024-07-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2024-07-01,2.9,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2024-07-01,99.868,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2024-07-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2024-07-01,2.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2024-07-01,100.245,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2024-07-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2024-07-01,1.3,%,Singapore Department of Statistics,C2026-09
@@ -53741,6 +54073,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2024-08-01,2.9,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2024-08-01,100.287,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2024-08-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2024-08-01,2.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2024-08-01,100.591,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2024-08-01,0.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2024-08-01,2.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2024-08-01,100.035,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2024-08-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2024-08-01,-1.5,%,Singapore Department of Statistics,C2026-09
@@ -53858,6 +54193,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2024-09-01,2.6,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2024-09-01,100.367,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2024-09-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2024-09-01,2.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2024-09-01,100.625,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2024-09-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2024-09-01,2.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2024-09-01,100.734,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2024-09-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2024-09-01,-3.1,%,Singapore Department of Statistics,C2026-09
@@ -53975,6 +54313,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2024-10-01,2.5,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2024-10-01,100.474,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2024-10-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2024-10-01,2.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2024-10-01,100.672,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2024-10-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2024-10-01,2.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2024-10-01,101.904,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2024-10-01,1.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2024-10-01,-3.5,%,Singapore Department of Statistics,C2026-09
@@ -54092,6 +54433,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2024-11-01,2.3,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2024-11-01,100.55,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2024-11-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2024-11-01,2.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2024-11-01,100.702,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2024-11-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2024-11-01,2.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2024-11-01,100.315,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2024-11-01,-1.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2024-11-01,-1.0,%,Singapore Department of Statistics,C2026-09
@@ -54209,6 +54553,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2024-12-01,2.1,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2024-12-01,100.614,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2024-12-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2024-12-01,1.9,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2024-12-01,100.73,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2024-12-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2024-12-01,1.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2024-12-01,99.842,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2024-12-01,-0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2024-12-01,-0.9,%,Singapore Department of Statistics,C2026-09
@@ -54326,6 +54673,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2025-01-01,1.6,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2025-01-01,100.625,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2025-01-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2025-01-01,1.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2025-01-01,100.702,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2025-01-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2025-01-01,1.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2025-01-01,101.528,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2025-01-01,1.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2025-01-01,2.8,%,Singapore Department of Statistics,C2026-09
@@ -54444,6 +54794,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2025-02-01,1.6,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2025-02-01,100.642,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2025-02-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2025-02-01,1.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2025-02-01,100.687,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2025-02-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2025-02-01,1.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2025-02-01,100.688,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2025-02-01,-0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2025-02-01,1.6,%,Singapore Department of Statistics,C2026-09
@@ -54562,6 +54915,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2025-03-01,1.4,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2025-03-01,100.642,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2025-03-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2025-03-01,1.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2025-03-01,100.658,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2025-03-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2025-03-01,1.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2025-03-01,100.741,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2025-03-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2025-03-01,2.1,%,Singapore Department of Statistics,C2026-09
@@ -54680,6 +55036,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2025-04-01,1.1,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2025-04-01,100.63,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2025-04-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2025-04-01,0.9,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2025-04-01,100.63,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2025-04-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2025-04-01,1.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2025-04-01,101.669,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2025-04-01,0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2025-04-01,1.3,%,Singapore Department of Statistics,C2026-09
@@ -54798,6 +55157,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2025-05-01,1.1,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2025-05-01,100.62,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2025-05-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2025-05-01,0.8,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2025-05-01,100.609,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2025-05-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2025-05-01,1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2025-05-01,101.702,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2025-05-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2025-05-01,1.1,%,Singapore Department of Statistics,C2026-09
@@ -54916,6 +55278,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2025-06-01,1.0,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2025-06-01,100.613,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2025-06-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2025-06-01,0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2025-06-01,100.578,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2025-06-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2025-06-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2025-06-01,101.46,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2025-06-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2025-06-01,2.0,%,Singapore Department of Statistics,C2026-09
@@ -55034,6 +55399,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2025-07-01,0.5,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2025-07-01,100.626,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2025-07-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2025-07-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2025-07-01,100.563,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2025-07-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2025-07-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2025-07-01,102.382,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2025-07-01,0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2025-07-01,2.1,%,Singapore Department of Statistics,C2026-09
@@ -55152,6 +55520,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2025-08-01,0.4,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2025-08-01,100.624,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2025-08-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2025-08-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2025-08-01,101.185,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2025-08-01,0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2025-08-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2025-08-01,102.449,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2025-08-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2025-08-01,2.4,%,Singapore Department of Statistics,C2026-09
@@ -55270,6 +55641,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2025-09-01,0.4,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2025-09-01,100.63,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2025-09-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2025-09-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2025-09-01,101.166,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2025-09-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2025-09-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2025-09-01,104.506,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2025-09-01,2.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2025-09-01,3.7,%,Singapore Department of Statistics,C2026-09
@@ -55388,6 +55762,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2025-10-01,0.3,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2025-10-01,100.647,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2025-10-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2025-10-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2025-10-01,101.165,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2025-10-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2025-10-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2025-10-01,105.786,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2025-10-01,1.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2025-10-01,3.8,%,Singapore Department of Statistics,C2026-09
@@ -55506,6 +55883,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2025-11-01,0.3,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2025-11-01,100.677,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2025-11-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2025-11-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2025-11-01,101.182,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2025-11-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2025-11-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2025-11-01,103.788,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2025-11-01,-1.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2025-11-01,3.5,%,Singapore Department of Statistics,C2026-09
@@ -55624,6 +56004,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2025-12-01,0.3,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2025-12-01,100.715,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2025-12-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2025-12-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2025-12-01,101.208,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2025-12-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2025-12-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2025-12-01,103.488,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2025-12-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2025-12-01,3.7,%,Singapore Department of Statistics,C2026-09
@@ -55742,6 +56125,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2026-01-01,1.9,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2026-01-01,100.726,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2026-01-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2026-01-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2026-01-01,101.214,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2026-01-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2026-01-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2026-01-01,104.246,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2026-01-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2026-01-01,2.7,%,Singapore Department of Statistics,C2026-09
@@ -55860,6 +56246,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2026-02-01,0.3,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2026-02-01,100.749,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2026-02-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2026-02-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2026-02-01,101.231,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2026-02-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2026-02-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2026-02-01,103.09,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2026-02-01,-1.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2026-02-01,2.4,%,Singapore Department of Statistics,C2026-09
@@ -55978,6 +56367,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2026-03-01,0.3,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2026-03-01,100.777,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2026-03-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2026-03-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2026-03-01,101.255,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2026-03-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2026-03-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2026-03-01,107.427,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2026-03-01,4.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2026-03-01,6.6,%,Singapore Department of Statistics,C2026-09
@@ -56096,6 +56488,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2026-04-01,0.4,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2026-04-01,100.819,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2026-04-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2026-04-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2026-04-01,101.29,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2026-04-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2026-04-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2026-04-01,109.858,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2026-04-01,2.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2026-04-01,8.1,%,Singapore Department of Statistics,C2026-09
@@ -56214,6 +56609,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2026-05-01,0.5,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2026-05-01,100.884,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2026-05-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2026-05-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2026-05-01,101.344,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2026-05-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2026-05-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2026-05-01,110.498,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2026-05-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2026-05-01,8.6,%,Singapore Department of Statistics,C2026-09
@@ -56332,6 +56730,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2026-06-01,0.6,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2026-06-01,100.95,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2026-06-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2026-06-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2026-06-01,101.401,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2026-06-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2026-06-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2026-06-01,110.011,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2026-06-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2026-06-01,8.4,%,Singapore Department of Statistics,C2026-09
@@ -56450,6 +56851,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2026-07-01,0.8,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2026-07-01,101.079,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2026-07-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2026-07-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2026-07-01,101.513,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2026-07-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2026-07-01,0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2026-07-01,110.537,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2026-07-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2026-07-01,8.0,%,Singapore Department of Statistics,C2026-09
@@ -56568,6 +56972,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2026-08-01,0.8,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2026-08-01,101.171,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2026-08-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2026-08-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2026-08-01,102.23,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2026-08-01,0.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2026-08-01,1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2026-08-01,110.136,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2026-08-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2026-08-01,7.5,%,Singapore Department of Statistics,C2026-09
@@ -56686,6 +57093,9 @@ SG,cpi,accommodation,Accommodation,yoy,national,M,2026-09-01,0.9,%,Singapore Dep
 SG,cpi,imputed_rentals,Imputed rentals for housing,index,national,M,2026-09-01,101.237,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,mom,national,M,2026-09-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,imputed_rentals,Imputed rentals for housing,yoy,national,M,2026-09-01,0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,index,national,M,2026-09-01,102.287,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,mom,national,M,2026-09-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,actual_rentals,Actual rentals for housing,yoy,national,M,2026-09-01,1.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,index,national,M,2026-09-01,111.882,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,mom,national,M,2026-09-01,1.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,private_transport,Private transport,yoy,national,M,2026-09-01,7.1,%,Singapore Department of Statistics,C2026-09
