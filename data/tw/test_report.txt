@@ -1,44 +1,10 @@
 == tw_cpi_dgbas
-   CHECKS FAILED (125):
-   - release table 1 2023-01: groups missing (['food', 'clothing', 'housing', 'transport_comm', 'health', 'education_entertainment', 'miscellaneous'])
-   - release table 1 2024-01: groups missing (['food', 'clothing', 'housing', 'transport_comm', 'health', 'education_entertainment', 'miscellaneous'])
-   - release table 1 2025-01: groups missing (['food', 'clothing', 'housing', 'transport_comm', 'health', 'education_entertainment', 'miscellaneous'])
-   - release table 1 2026-01: groups missing (['food', 'clothing', 'housing', 'transport_comm', 'health', 'education_entertainment', 'miscellaneous'])
-   - weights do not reproduce the headline index within 0.03 (max 0.051): [{'month': '2023-09', 'published': 106.52, 'from_weights': 106.48, 'diff': -0.04, 'weight_sum_pm': 1000.01}, {'month': '2023-10', 'published': 106.93, 'from_weights': 106.879, 'diff': -0.051, 'weight_sum_pm': 1000.01}, {'month': '2023-11', 'published': 106.63, 'from_weights': 106.579, 'diff': -0.051, 'weight_sum_pm': 1000.01}, {'month': '2023-12', 'published': 106.59, 'from_weights': 106.55, 'diff': -0.04, 'weight_sum_pm': 1000.01}]
-   - national comm_equipment index 1991-01 = 2607.52 out of range
-   - national comm_equipment index 1991-02 = 2607.52 out of range
-   - national comm_equipment index 1991-03 = 2581.41 out of range
-   - national comm_equipment index 1991-04 = 2568.0 out of range
-   - national comm_equipment index 1991-05 = 2535.63 out of range
-   - national comm_equipment index 1991-06 = 2525.03 out of range
-   - national comm_equipment index 1991-07 = 2532.94 out of range
-   - national comm_equipment index 1991-08 = 2536.65 out of range
-   - national comm_equipment index 1991-09 = 2535.18 out of range
-   - national comm_equipment index 1991-10 = 2488.89 out of range
-   - national comm_equipment index 1991-11 = 2460.33 out of range
-   - national comm_equipment index 1991-12 = 2453.02 out of range
-   - national comm_equipment index 1992-01 = 2459.54 out of range
-   - national comm_equipment index 1992-02 = 2423.79 out of range
-   - national comm_equipment index 1992-03 = 2396.48 out of range
-   - national comm_equipment index 1992-04 = 2344.44 out of range
-   - national comm_equipment index 1992-05 = 2295.66 out of range
-   - national comm_equipment index 1992-06 = 2268.68 out of range
-   - national comm_equipment index 1992-07 = 2228.77 out of range
-   - national comm_equipment index 1992-08 = 2212.93 out of range
-   - national comm_equipment index 1992-09 = 2211.01 out of range
-   - national comm_equipment index 1992-10 = 2217.05 out of range
-   - national comm_equipment index 1992-11 = 2217.25 out of range
-   - national comm_equipment index 1992-12 = 2203.96 out of range
-   - national comm_equipment index 1993-01 = 2194.81 out of range
-   - national comm_equipment index 1993-02 = 2140.87 out of range
-   - national comm_equipment index 1993-03 = 2120.55 out of range
-   - national comm_equipment index 1993-04 = 2118.56 out of range
-   - national comm_equipment index 1993-05 = 2099.32 out of range
-   - national comm_equipment index 1993-06 = 2091.29 out of range
-   - national comm_equipment index 1993-07 = 2070.58 out of range
-   - national comm_equipment index 1993-08 = 2067.42 out of range
-   - national comm_equipment index 1993-09 = 2041.57 out of range
-   - national comm_equipment index 1993-10 = 2039.75 out of range
-   - national comm_equipment index 1993-11 = 2020.78 out of range
+   UPDATED: September 2026: 216653 rows, 368 items, 45 release tables; rates vs index 142378 tested, max 0.005; weights vs headline max 0.051 (83s)
+   WARNING: release table 14 2023-01: item weights sum to 0.6% (1 items listed)
+   WARNING: release table 14 2023-02: item weights sum to 0.6% (1 items listed)
+   WARNING: release table 14 2023-03: item weights sum to 0% (0 items listed)
+   WARNING: release table 14 2023-12: item weights sum to 0% (0 items listed)
+   WARNING: release table 14 2024-12: item weights sum to 0% (0 items listed)
 == tw_ppi_dgbas
-   UPDATED: September 2026: 369050 rows; rates vs index 241374 tested, max 0.005 (69s)
+   UPDATED: September 2026: 369050 rows; rates vs index 241374 tested, max 0.005 (71s)
+September 2026 vs DGBAS release: 38/38 match
