@@ -305,7 +305,7 @@ dash.calc('cpi_heat', {
       { key: 'ptx', name: 'Private transport ex-fuel', color: J.PAL[0], bar: true },
       { key: 'services', name: 'Services', color: J.PAL[4], bar: true },
       { key: 'retail_goods', name: 'Retail and other goods', color: '#1F4E79', bar: true },
-      { key: 'goods', name: 'Goods', color: '#1F4E79', bar: true },
+      { key: 'goods', name: 'Goods', color: J.PAL[0], bar: true },
       { key: 'food', name: 'Food', color: J.PAL[5], bar: true },
       { key: 'food_ex_fbss', name: 'Food excl. FBSS', color: '#A6A6A6', bar: true },
       { key: 'fbss', name: 'FBSS', color: J.PAL[5], bar: true },
@@ -384,8 +384,8 @@ dash.calc('cpi_heat', {
   function gsChart() {
     if (!document.getElementById('gs-yoy-chart')) return;
     lineChart('gs-yoy-chart', 'gs-yoy', 'gs-yoy-legend', 'national', [
-      { key: 'gs_services', name: 'Services (74.7%)', color: J.PAL[4] },
-      { key: 'gs_goods', name: 'Goods (25.3%)', color: '#1F4E79' },
+      { key: 'gs_services', name: 'Services (74.7%)', color: J.PAL[0] },
+      { key: 'gs_goods', name: 'Goods (25.3%)', color: J.PAL[1] },
     ], 280);
   }
 
