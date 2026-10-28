@@ -1,0 +1,40 @@
+name: DOSM discovery (manual)
+
+# One-off helper: probes OpenDOSM / data.gov.my for Malaysian price datasets
+# and saves the responses to the "discovery" branch, under discovery/dosm.
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-my]
+    paths:
+      - pipeline/tools/dosm_discover.py
+      - .github/workflows/dosm-discover.yml
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Query OpenDOSM
+        run: python -I pipeline/tools/dosm_discover.py discovery/dosm
+      - name: Push results to the discovery branch
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mv discovery /tmp/discovery
+          if git fetch origin discovery; then
+            git checkout -B discovery origin/discovery
+          else
+            git checkout --orphan discovery && git rm -rf --quiet --cached .
+          fi
+          mkdir -p discovery && rm -rf discovery/dosm && cp -r /tmp/discovery/dosm discovery/
+          git add discovery/dosm
+          git commit -m "DOSM discovery"
+          git push origin discovery
