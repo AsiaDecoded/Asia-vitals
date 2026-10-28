@@ -396,7 +396,15 @@ dash.calc('cpi_heat', {
     if (failed(D.status)) { J.fail(box); return; }
     if (D.status !== 'ok') { box.replaceChildren(); return; }
     const k = S.sa;
-    const rows = wide(D.data, 'national', [k], 'mom', 'cpi-momentum');
+    // 3m/3m: average of the seasonally adjusted index over the latest three months against the three before, % change
+    const lv = D.data.filter((r) => r.area === 'national' && r.series === k && r.index != null)
+      .sort((p, q) => (p.date < q.date ? -1 : 1)).map((r) => [r.date, Number(r.index)]);
+    const all = [];
+    for (let i = 5; i < lv.length; i++) {
+      const a3 = (lv[i][1] + lv[i - 1][1] + lv[i - 2][1]) / 3, b3 = (lv[i - 3][1] + lv[i - 4][1] + lv[i - 5][1]) / 3;
+      all.push({ date: lv[i][0], [k]: (a3 / b3 - 1) * 100 });
+    }
+    const rows = J.slice(all, 'cpi-momentum');
     if (!rows.length) { box.replaceChildren(); return; }
     const W = box.clientWidth, H = 280;
     box.replaceChildren();
@@ -424,7 +432,7 @@ dash.calc('cpi_heat', {
       .on('mousemove', (ev) => {
         const i = Math.max(0, Math.min(rows.length - 1, Math.floor((d3.pointer(ev)[0] - ml) / x.step())));
         const cr = card.getBoundingClientRect();
-        J.showTip(card, tip, mLabel(rows[i].date), [[null, name + ', m/m SA', pct(rows[i][k])]], ev.clientX - cr.left, ev.clientY - cr.top);
+        J.showTip(card, tip, mLabel(rows[i].date), [[null, name + ', 3m/3m SA', pct(rows[i][k])]], ev.clientX - cr.left, ev.clientY - cr.top);
       })
       .on('mouseleave', () => { tip.style.display = 'none'; });
   }
