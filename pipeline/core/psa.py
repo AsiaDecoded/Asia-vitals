@@ -2,7 +2,7 @@
 
 Tables are addressed by their folder path, e.g. "2M/PI/CPI/2018NEW/0012M4ACP22.px".
 meta(path) returns the table's variables; get(path, select) returns tidy rows:
-[{<variable code>: <value text>, ..., "value": float or None}], from a json-stat2 response.
+[{<variable code>: <value text>, ..., "value": float or None}], from PXWeb's json response.
 select maps a variable code to a list of value texts, or to a function text -> bool;
 variables not named are fetched in full. OpenSTAT allows up to 100,000 cells per query.
 """
@@ -76,10 +76,32 @@ def _fetch(path, chosen, m):
                 _fetch(path, {**chosen, big: keep[half:]}, m))
     body = {"query": [{"code": k, "selection": {"filter": "item", "values": [c for c, _ in keep]}}
                       for k, keep in chosen.items()],
-            "response": {"format": "json-stat2"}}
+            "response": {"format": "json"}}
     time.sleep(0.5)
     js = _request(f"{BASE}/{path}", body)
-    return tidy(js)
+    if LAST is not None:
+        LAST.append(js)
+    return tidy_json(js, m)
+
+
+LAST = None  # set to a list to keep raw responses (discovery)
+
+
+def tidy_json(js, m):
+    """PXWeb's native json: columns (dimensions 'd'/'t', then content 'c') and data [{key, values}]."""
+    texts = {v["code"]: dict(zip(v["values"], v["valueTexts"])) for v in m["variables"]}
+    cols = js["columns"]
+    dims = [c["code"] for c in cols if c.get("type") in ("d", "t")]
+    rows = []
+    for rec in js["data"]:
+        r = {d: texts.get(d, {}).get(k, k) for d, k in zip(dims, rec["key"])}
+        v = rec["values"][0]
+        try:
+            r["value"] = float(v)
+        except (TypeError, ValueError):
+            r["value"] = None
+        rows.append(r)
+    return rows
 
 
 def tidy(js):

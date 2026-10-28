@@ -2,7 +2,7 @@
 
   python -I pipeline/tools/psa_discover.py OUTDIR
 
-Round 2: data of the CPI, core CPI, seasonally adjusted CPI, bottom-30% CPI and manufacturing PPI tables
+Round 2 (native json): data of the CPI, core CPI, seasonally adjusted CPI, bottom-30% CPI and manufacturing PPI tables
 the Philippines inflation source needs (national, NCR/AONCR and regions), as tidy rows, gzipped.
 """
 import gzip
@@ -50,7 +50,9 @@ def main(out):
     summary = {}
     for name, path, sel in JOBS:
         try:
+            psa.LAST = []
             rows = psa.get(path, sel)
+            (out / f"{name}.raw_head.json").write_text(json.dumps(psa.LAST[0], ensure_ascii=False)[:4000])
             with gzip.open(out / f"{name}.json.gz", "wt", encoding="utf-8") as f:
                 json.dump(rows, f, ensure_ascii=False)
             summary[name] = {"path": path, "rows": len(rows), "nonnull": sum(r["value"] is not None for r in rows),
