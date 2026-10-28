@@ -111,6 +111,6 @@ jobs:
           git config user.name "asia-vitals bot"
           git config user.email "actions@users.noreply.github.com"
           mkdir -p data/cn && cp cn_report.txt data/cn/test_report.txt 2>/dev/null || true
-          git add data/cn raw/cn || true
+          git add data/cn; [ -d raw/cn ] && git add raw/cn
           git commit -qm "China test run ${{ github.run_id }}" || exit 0
           for i in 1 2 3; do git pull -q --rebase origin dev-cn && git push -q origin HEAD:dev-cn && break; sleep 5; done
