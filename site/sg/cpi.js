@@ -130,8 +130,8 @@ dash.calc('cpi_ctab', {
     const W = { all: 10000, core: 6438, food: 2042, food_x: 651, fbss_x: 1391, energy: 376, electricity: 179, gas: 19, petrol_e: 174, other_fuels: 4,
       accommodation: 2656, imputed_rentals: 2138, actual_rentals: 294, private_transport: 906, motor_cars: 459, petrol: 174,
       food_ex_fbss: 651, fbss: 1391, elec_gas: 198, services: 3173, retail_goods: 1025 };
-    const ROWS = ['all', 'core', 'food', 'food_x', 'fbss_x', 'energy', 'electricity', 'gas', 'petrol_e', 'other_fuels',
-      'accommodation', 'imputed_rentals', 'actual_rentals', 'private_transport', 'motor_cars', 'petrol',
+    const ROWS = ['all', 'core', 'accommodation', 'imputed_rentals', 'actual_rentals', 'private_transport', 'motor_cars', 'petrol',
+      'food', 'food_x', 'fbss_x', 'energy', 'electricity', 'gas', 'petrol_e', 'other_fuels',
       'food_ex_fbss', 'fbss', 'elec_gas', 'services', 'retail_goods'];
     return sg_cpi_contrib.filter((r) => r.series.startsWith('tb_') && r.date >= '2026-01-01' && r.contrib_yoy != null && r.contrib_yoy !== '')
       .map((r) => { const k = r.series.slice(3); return { date: r.date, series: k, name: r.label, contrib: Number(r.contrib_yoy), order: ROWS.indexOf(k), weight: W[k] }; })
@@ -672,7 +672,7 @@ dash.calc('cpi_ctab', {
     });
     const tb = tbl.createTBody();
     keys.forEach((k) => {
-      if (k === 'food_ex_fbss' || k === 'accommodation') { const sp = tb.insertRow(); sp.className = 'spacer'; sp.insertCell().colSpan = dates.length + 2; }
+      if (k === 'food_ex_fbss') { const sp = tb.insertRow(); sp.className = 'spacer'; sp.insertCell().colSpan = dates.length + 2; }
       const tr = tb.insertRow();
       const label = D.data.find((r) => r.series === k).name;
       const nc = tr.insertCell();
@@ -686,7 +686,7 @@ dash.calc('cpi_ctab', {
         nc.appendChild(b);
       } else nc.textContent = label;
       if (PARENT[k] && !OPEN[PARENT[k]]) tr.hidden = true;
-      if (['all', 'core', 'food', 'energy'].includes(k)) tr.className = 'lead';
+      if (['all', 'core', 'accommodation', 'private_transport', 'food', 'energy'].includes(k)) tr.className = 'lead';
       if (PARENT[k]) tr.className = 'sub';
       const wt = D.data.find((r) => r.series === k).weight;
       const wc = tr.insertCell(); wc.className = 'wt'; wc.textContent = wt == null ? '' : d3.format('.1f')(wt / 100);
