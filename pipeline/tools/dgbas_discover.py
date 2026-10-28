@@ -18,7 +18,10 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+import os
 CTX = ssl.create_default_context()
+if os.environ.get("DGBAS_CA"):  # extra intermediate(s): ws.dgbas.gov.tw sends an incomplete chain
+    CTX.load_verify_locations(os.environ["DGBAS_CA"])
 CTX.options |= getattr(ssl, "OP_LEGACY_SERVER_CONNECT", 0x4)
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) asia-vitals/0.1 (+https://github.com/AsiaDecoded/asia-vitals)",
       "Accept": "*/*", "Accept-Language": "zh-TW,en;q=0.8"}

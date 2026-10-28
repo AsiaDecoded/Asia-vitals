@@ -15,7 +15,7 @@ permissions:
   contents: write
 
 env:
-  DGBAS_ROUND: r1
+  DGBAS_ROUND: r2
 
 jobs:
   discover:
@@ -28,8 +28,20 @@ jobs:
           python-version: "3.12"
       - name: Runner IP
         run: curl -s https://ipinfo.io/json || true
+      - name: Certificate chain of ws.dgbas.gov.tw (incomplete; add the issuer from AIA)
+        run: |
+          mkdir -p discovery/dgbas/$DGBAS_ROUND
+          echo | openssl s_client -connect ws.dgbas.gov.tw:443 -servername ws.dgbas.gov.tw -showcerts 2>&1 | tee discovery/dgbas/$DGBAS_ROUND/ws_chain.txt | grep -E "s:|i:|Verify" || true
+          echo | openssl s_client -connect ws.dgbas.gov.tw:443 -servername ws.dgbas.gov.tw 2>/dev/null | openssl x509 -noout -text > /tmp/leaf.txt
+          grep -A2 "Authority Information" /tmp/leaf.txt | tee -a discovery/dgbas/$DGBAS_ROUND/ws_chain.txt
+          AIA=$(grep -o "CA Issuers - URI:[^ ]*" /tmp/leaf.txt | head -1 | sed 's/CA Issuers - URI://')
+          echo "AIA: $AIA"
+          curl -sS -m 30 -o /tmp/issuer.crt "$AIA"
+          (openssl x509 -inform DER -in /tmp/issuer.crt -out /tmp/issuer.pem 2>/dev/null || cp /tmp/issuer.crt /tmp/issuer.pem)
+          openssl x509 -in /tmp/issuer.pem -noout -subject -issuer -enddate -fingerprint -sha256 | tee -a discovery/dgbas/$DGBAS_ROUND/ws_chain.txt
+          cp /tmp/issuer.pem discovery/dgbas/$DGBAS_ROUND/ws_issuer.pem
       - name: Probe DGBAS
-        run: python -I pipeline/tools/dgbas_discover.py pipeline/tools/dgbas_seeds.txt discovery/dgbas/$DGBAS_ROUND 250 2
+        run: DGBAS_CA=/tmp/issuer.pem python -I pipeline/tools/dgbas_discover.py pipeline/tools/dgbas_seeds.txt discovery/dgbas/$DGBAS_ROUND 120 1
       - name: Push results to the discovery branch
         run: |
           git config user.name "asia-vitals bot"
