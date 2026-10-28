@@ -1,0 +1,195 @@
+code,name_en
+00000,All items
+10000,Food and non-alcoholic beverages
+11000,Food at home
+11100,"Rice, flour and cereal products"
+11110,Rice
+11120,Flour and cereal products
+11121,Flour
+11122,Cereal products
+11200,"Meat, poultry and fish"
+11210,Meat
+11211,Fresh meat
+11212,Processed meat
+11220,Poultry
+11221,Fresh poultry
+11222,Prepared and processed poultry
+11230,Fish and aquatic animals
+11231,Fresh freshwater fish
+11232,Fresh sea fish
+11233,Other aquatic animals
+11234,Processed fish
+11235,Processed aquatic animals
+11300,Eggs and dairy products
+11310,Eggs
+11320,Milk and dairy products
+11400,Vegetables and fruit
+11410,"Vegetables, fresh, processed and other"
+11411,Fresh vegetables
+11412,Processed and other vegetables
+11420,"Fruit, fresh, processed and other"
+11421,Fresh fruit
+11422,Processed and other fruit
+11500,Seasonings and condiments
+11510,Sugar products
+11511,Sugar and sweets
+11520,Cooking ingredients
+11521,Oils and fats
+11522,Seasonings
+11600,Non-alcoholic beverages
+11700,Sugar products (other)
+11710,Sugar and sweets (other)
+12000,Prepared food
+12100,Prepared food eaten at home
+12200,Food eaten away from home
+12300,Ready-to-eat food
+12400,Food from popular restaurants
+12500,Fast food and delivery
+20000,Apparel and footwear
+21000,Fabrics and clothing
+21100,Men's
+21110,Men's fabrics
+21120,Men's uniforms
+21130,Men's shirts
+21140,Men's trousers
+21150,Other men's clothing
+21160,Men's accessories
+21200,Women's
+21210,Women's fabrics
+21220,Women's uniforms
+21230,Women's blouses
+21240,Women's trousers and skirts
+21250,Other women's clothing
+21260,Women's accessories
+21300,Children's
+21310,Children's uniforms
+21320,Children's shirts
+21330,Children's trousers
+21340,Other children's clothing
+21400,Tailoring charges and materials
+21410,Tailoring charges
+21420,Sewing materials
+22000,Footwear
+22100,Men's footwear
+22110,Men's shoes
+22120,Men's sports shoes and sneakers
+22130,Men's sandals
+22200,Women's footwear
+22210,Women's shoes
+22220,Women's sports shoes and sneakers
+22230,Women's sandals
+22300,Children's footwear
+22310,Children's shoes
+22320,Children's sports shoes and sneakers
+22330,Children's sandals
+22400,Repair and care
+22410,Repair charges
+22420,Care charges
+30000,Housing and furnishing
+31000,Shelter
+31100,Rent
+31200,Fire insurance
+31300,Construction materials
+31400,Sanitary ware
+31500,Labour charges
+31600,Home repair equipment
+32000,"Electricity, fuel, water supply and lighting"
+32100,Electricity
+32200,Household fuel
+32300,Water supply
+32400,Lighting
+33000,Household textiles
+34000,Household utensils
+35000,Furniture and other household equipment
+35100,Furniture
+35200,Other household equipment
+36000,Cleaning supplies
+37000,Domestic servants and workers
+40000,Medical and personal care
+41000,Medical care and medicines
+41100,Medicines and medical supplies
+41110,Medicines
+41120,Medical supplies
+41200,Medical services
+41210,Outpatient
+41211,"Outpatient consultation, services and medicines"
+41212,Dental care
+41213,Eye examination
+41214,Radiology services
+41215,Other outpatient services
+41216,Laboratory tests
+41220,Inpatient
+41221,Hospital room charges
+41222,"Inpatient treatment, services and medicines"
+41224,Other inpatient services
+42000,Personal care
+42100,Personal care products
+42200,Personal care services
+42210,Beauty services
+42220,Relaxation services
+43000,Health and life insurance
+50000,"Transport and communication"
+51000,Public transport fares
+51100,Local fares
+51200,Long-distance fares
+52000,Vehicles and fuel
+52100,Vehicle purchase
+52110,Vehicles
+52120,Vehicle accessories
+52200,Vehicle fuel
+52300,Vehicle maintenance and repair
+53000,Vehicle tax and insurance
+53100,Vehicle tax
+53200,Vehicle insurance
+53300,Other vehicle expenses
+54000,Communication
+54100,Communication services
+54200,Communication equipment
+60000,"Recreation, reading, education and religion"
+61000,Recreation and reading
+61100,Fees and subscriptions
+61200,Sports equipment and toys
+61210,Sports equipment
+61220,Toys
+61230,Photography
+61240,Entertainment
+61250,Pet expenses
+61260,Gardening
+61300,Recreational equipment
+61400,Reading
+61500,Travel and holidays
+62000,Education
+62100,Tuition and fees
+62110,Primary education
+62120,"Secondary education, general"
+62130,"Secondary education, technical and vocational"
+62140,Higher education
+62150,Private tutoring
+62200,Books and school supplies
+62210,Books
+62211,"Textbooks, private"
+62212,"Textbooks, government"
+62220,School supplies
+62300,Other education expenses
+63000,Religion
+63100,"Religious offerings, food and other"
+63110,Offerings to monks
+70000,Tobacco and alcoholic beverages
+71000,Tobacco products
+72000,Alcoholic beverages
+72100,Beer
+72200,Wine
+72300,Spirits
+80000,"Non-food and beverages"
+81000,"Excluding food, beverages and energy"
+82000,"Food and beverages excluding fresh food"
+90000,Fresh food and energy
+91000,Fresh food
+92000,Energy
+93000,Core CPI
+94000,Core CPI excluding house rent
+95100,"Gasoline 91, 95 and diesel"
+95200,"CPI excluding gasoline 91, 95 and diesel"
+96000,"CPI excluding gasoline 91, 95, diesel and items of the Department of Internal Trade"
+97000,CPI excluding fresh food
+98000,CPI excluding energy

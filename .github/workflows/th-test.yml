@@ -1,0 +1,35 @@
+name: Thailand sources test (dev-th)
+
+# Runs the Thailand sources live on the dev-th branch and commits their output there.
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-th]
+    paths:
+      - pipeline/sources/th_*/**
+      - pipeline/core/tpso*.py
+      - .github/workflows/th-test.yml
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run the Thailand sources
+        run: python -I pipeline/run.py th_cpi_tpso th_ppi_tpso th_xmpi_tpso | tee /tmp/report.txt
+      - name: Commit output to dev-th
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mkdir -p data/th && cp /tmp/report.txt data/th/test_report.txt
+          git add data/th raw/th
+          git commit -m "TH test run" || exit 0
+          git checkout -- . && git pull --rebase origin dev-th && git push origin HEAD:dev-th

@@ -1,0 +1,14 @@
+code,name,weight,source
+00000,All items,100.00,"TPSO, การปรับปรุงดัชนีราคาผู้บริโภค ปีฐาน 2566 (Feb 2025), expenditure shares, base 2566"
+10000,Food and non-alcoholic beverages,38.74,same
+80000,Non-food and beverages,61.26,same
+20000,Apparel and footwear,2.13,same
+30000,Housing and furnishing,24.77,same
+40000,Medical and personal care,6.43,same
+50000,Transport and communication,22.71,same
+60000,"Recreation, reading, education and religion",3.99,same
+70000,Tobacco and alcoholic beverages,1.23,same
+93000,Core CPI,69.68,same
+90000,Fresh food and energy,30.32,same
+91000,Fresh food,17.43,same
+92000,Energy,12.89,same

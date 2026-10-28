@@ -9,64 +9,482 @@
   "sg_cpi": "SingStat Advance Release Calendar pattern: 23rd, or next working day",
   "sg_ppi": "SingStat Advance Release Calendar pattern: around the 27th-30th",
   "kr_cpi": "Ministry of Data and Statistics 2026 release schedule (mods.go.kr); 2027 expected from pattern",
-  "kr_ppi": "Bank of Korea: no calendar found; pattern: around the 18th-23rd, 06:00 KST"
+  "kr_ppi": "Bank of Korea: no calendar found; pattern: around the 18th-23rd, 06:00 KST",
+  "th_cpi": "TPSO (Ministry of Commerce): no calendar found; pattern from the Open API's createdAt stamps: CPI and PPI on the 5th-7th, 10:15-14:00 Bangkok (Sep 2026 CPI 6 Oct 2026, 11:32 Bangkok)",
+  "th_xmpi": "TPSO export and import price indices: no calendar found; pattern: around the 28th (Sep 2026 on 28 Oct 2026, 11:21 Bangkok; Aug on 28 Sep)"
  },
  "groups": {
-  "jp_cpi": {"label": "Japan CPI (national) and CPI contributions", "sources": ["jp_cpi_estat", "jp_cpi_contrib_estat", "jp_cpi_core3_estat"], "time_sgt": "07:30", "dates": [
-   {"ref": "2026-10", "date": "2026-11-20", "status": "official"},
-   {"ref": "2026-11", "date": "2026-12-18", "status": "official"},
-   {"ref": "2026-12", "date": "2027-01-22", "status": "official"},
-   {"ref": "2027-01", "date": "2027-02-19", "status": "official"},
-   {"ref": "2027-02", "date": "2027-03-19", "status": "official"}]},
-  "jp_ppi": {"label": "Japan producer prices (BoJ CGPI)", "sources": ["jp_ppi_boj"], "time_sgt": "07:50", "dates": [
-   {"ref": "2026-10", "date": "2026-11-12", "from": "2026-11-10", "to": "2026-11-17", "status": "expected"},
-   {"ref": "2026-11", "date": "2026-12-10", "from": "2026-12-08", "to": "2026-12-15", "status": "expected"},
-   {"ref": "2026-12", "date": "2027-01-14", "from": "2027-01-12", "to": "2027-01-19", "status": "expected"},
-   {"ref": "2027-01", "date": "2027-02-10", "from": "2027-02-08", "to": "2027-02-15", "status": "expected"},
-   {"ref": "2027-02", "date": "2027-03-10", "from": "2027-03-08", "to": "2027-03-15", "status": "expected"}]},
-  "jp_gdp": {"label": "Japan GDP (ESRI, quarterly)", "sources": ["jp_gdp_esri"], "time_sgt": "07:50", "dates": [
-   {"ref": "2026-Q3 first", "date": "2026-11-16", "status": "official"},
-   {"ref": "2026-Q3 second", "date": "2026-12-08", "status": "official"},
-   {"ref": "2026-Q4 first", "date": "2027-02-15", "from": "2027-02-12", "to": "2027-02-19", "status": "expected"},
-   {"ref": "2026-Q4 second", "date": "2027-03-09", "from": "2027-03-08", "to": "2027-03-12", "status": "expected"}]},
-  "in_cpi": {"label": "India CPI and core CPI", "sources": ["in_cpi_mospi", "in_cpi_core"], "time_sgt": "18:30", "dates": [
-   {"ref": "2026-10", "date": "2026-11-12", "status": "official"},
-   {"ref": "2026-11", "date": "2026-12-14", "from": "2026-12-12", "to": "2026-12-18", "status": "official", "note": "12 Dec is a Saturday"},
-   {"ref": "2026-12", "date": "2027-01-12", "status": "official"},
-   {"ref": "2027-01", "date": "2027-02-12", "status": "official"},
-   {"ref": "2027-02", "date": "2027-03-12", "status": "official"}]},
-  "in_imf": {"label": "India CPI long series (IMF): no calendar; checked for three weeks after each MoSPI release", "sources": ["in_cpi_imf"], "follows": "in_cpi", "extra_days": 21},
-  "in_ppi": {"label": "India producer prices (OEA)", "sources": ["in_ppi_oea"], "time_sgt": "14:30", "dates": [
-   {"ref": "2026-10", "date": "2026-11-16", "status": "official"},
-   {"ref": "2026-11", "date": "2026-12-14", "status": "official"},
-   {"ref": "2026-12", "date": "2027-01-14", "status": "official"},
-   {"ref": "2027-01", "date": "2027-02-15", "status": "official"},
-   {"ref": "2027-02", "date": "2027-03-15", "status": "official"},
-   {"ref": "2027-03", "date": "2027-04-16", "status": "official"}]},
-  "sg_cpi": {"label": "Singapore CPI", "sources": ["sg_cpi_singstat"], "time_sgt": "13:00", "dates": [
-   {"ref": "2026-10", "date": "2026-11-23", "from": "2026-11-23", "to": "2026-11-27", "status": "expected"},
-   {"ref": "2026-11", "date": "2026-12-23", "from": "2026-12-23", "to": "2026-12-29", "status": "expected"},
-   {"ref": "2026-12", "date": "2027-01-25", "from": "2027-01-22", "to": "2027-01-28", "status": "expected"},
-   {"ref": "2027-01", "date": "2027-02-23", "from": "2027-02-23", "to": "2027-02-26", "status": "expected"},
-   {"ref": "2027-02", "date": "2027-03-23", "from": "2027-03-23", "to": "2027-03-26", "status": "expected"}]},
-  "sg_ppi": {"label": "Singapore producer prices", "sources": ["sg_ppi_singstat"], "time_sgt": "13:00", "dates": [
-   {"ref": "2026-09", "date": "2026-10-29", "from": "2026-10-27", "to": "2026-11-03", "status": "expected"},
-   {"ref": "2026-10", "date": "2026-11-27", "from": "2026-11-25", "to": "2026-12-02", "status": "expected"},
-   {"ref": "2026-11", "date": "2026-12-29", "from": "2026-12-24", "to": "2027-01-04", "status": "expected"},
-   {"ref": "2026-12", "date": "2027-01-29", "from": "2027-01-27", "to": "2027-02-03", "status": "expected"},
-   {"ref": "2027-01", "date": "2027-02-26", "from": "2027-02-24", "to": "2027-03-03", "status": "expected"},
-   {"ref": "2027-02", "date": "2027-03-29", "from": "2027-03-26", "to": "2027-04-02", "status": "expected"}]},
-  "kr_cpi": {"label": "South Korea CPI", "sources": ["kr_cpi_ecos"], "time_sgt": "07:00", "dates": [
-   {"ref": "2026-10", "date": "2026-11-03", "status": "official"},
-   {"ref": "2026-11", "date": "2026-12-02", "status": "official"},
-   {"ref": "2026-12", "date": "2026-12-31", "status": "official", "note": "first release on the 2025 base: the source will stop with an ACTION error until updated"},
-   {"ref": "2027-01", "date": "2027-02-02", "from": "2027-02-01", "to": "2027-02-05", "status": "expected"},
-   {"ref": "2027-02", "date": "2027-03-03", "from": "2027-03-02", "to": "2027-03-06", "status": "expected"}]},
-  "kr_ppi": {"label": "South Korea producer prices", "sources": ["kr_ppi_ecos"], "time_sgt": "05:00", "dates": [
-   {"ref": "2026-10", "date": "2026-11-20", "from": "2026-11-17", "to": "2026-11-25", "status": "expected"},
-   {"ref": "2026-11", "date": "2026-12-18", "from": "2026-12-16", "to": "2026-12-23", "status": "expected"},
-   {"ref": "2026-12", "date": "2027-01-21", "from": "2027-01-19", "to": "2027-01-26", "status": "expected"},
-   {"ref": "2027-01", "date": "2027-02-19", "from": "2027-02-17", "to": "2027-02-24", "status": "expected"},
-   {"ref": "2027-02", "date": "2027-03-19", "from": "2027-03-17", "to": "2027-03-24", "status": "expected"}]}
+  "jp_cpi": {
+   "label": "Japan CPI (national) and CPI contributions",
+   "sources": [
+    "jp_cpi_estat",
+    "jp_cpi_contrib_estat",
+    "jp_cpi_core3_estat"
+   ],
+   "time_sgt": "07:30",
+   "dates": [
+    {
+     "ref": "2026-10",
+     "date": "2026-11-20",
+     "status": "official"
+    },
+    {
+     "ref": "2026-11",
+     "date": "2026-12-18",
+     "status": "official"
+    },
+    {
+     "ref": "2026-12",
+     "date": "2027-01-22",
+     "status": "official"
+    },
+    {
+     "ref": "2027-01",
+     "date": "2027-02-19",
+     "status": "official"
+    },
+    {
+     "ref": "2027-02",
+     "date": "2027-03-19",
+     "status": "official"
+    }
+   ]
+  },
+  "jp_ppi": {
+   "label": "Japan producer prices (BoJ CGPI)",
+   "sources": [
+    "jp_ppi_boj"
+   ],
+   "time_sgt": "07:50",
+   "dates": [
+    {
+     "ref": "2026-10",
+     "date": "2026-11-12",
+     "from": "2026-11-10",
+     "to": "2026-11-17",
+     "status": "expected"
+    },
+    {
+     "ref": "2026-11",
+     "date": "2026-12-10",
+     "from": "2026-12-08",
+     "to": "2026-12-15",
+     "status": "expected"
+    },
+    {
+     "ref": "2026-12",
+     "date": "2027-01-14",
+     "from": "2027-01-12",
+     "to": "2027-01-19",
+     "status": "expected"
+    },
+    {
+     "ref": "2027-01",
+     "date": "2027-02-10",
+     "from": "2027-02-08",
+     "to": "2027-02-15",
+     "status": "expected"
+    },
+    {
+     "ref": "2027-02",
+     "date": "2027-03-10",
+     "from": "2027-03-08",
+     "to": "2027-03-15",
+     "status": "expected"
+    }
+   ]
+  },
+  "jp_gdp": {
+   "label": "Japan GDP (ESRI, quarterly)",
+   "sources": [
+    "jp_gdp_esri"
+   ],
+   "time_sgt": "07:50",
+   "dates": [
+    {
+     "ref": "2026-Q3 first",
+     "date": "2026-11-16",
+     "status": "official"
+    },
+    {
+     "ref": "2026-Q3 second",
+     "date": "2026-12-08",
+     "status": "official"
+    },
+    {
+     "ref": "2026-Q4 first",
+     "date": "2027-02-15",
+     "from": "2027-02-12",
+     "to": "2027-02-19",
+     "status": "expected"
+    },
+    {
+     "ref": "2026-Q4 second",
+     "date": "2027-03-09",
+     "from": "2027-03-08",
+     "to": "2027-03-12",
+     "status": "expected"
+    }
+   ]
+  },
+  "in_cpi": {
+   "label": "India CPI and core CPI",
+   "sources": [
+    "in_cpi_mospi",
+    "in_cpi_core"
+   ],
+   "time_sgt": "18:30",
+   "dates": [
+    {
+     "ref": "2026-10",
+     "date": "2026-11-12",
+     "status": "official"
+    },
+    {
+     "ref": "2026-11",
+     "date": "2026-12-14",
+     "from": "2026-12-12",
+     "to": "2026-12-18",
+     "status": "official",
+     "note": "12 Dec is a Saturday"
+    },
+    {
+     "ref": "2026-12",
+     "date": "2027-01-12",
+     "status": "official"
+    },
+    {
+     "ref": "2027-01",
+     "date": "2027-02-12",
+     "status": "official"
+    },
+    {
+     "ref": "2027-02",
+     "date": "2027-03-12",
+     "status": "official"
+    }
+   ]
+  },
+  "in_imf": {
+   "label": "India CPI long series (IMF): no calendar; checked for three weeks after each MoSPI release",
+   "sources": [
+    "in_cpi_imf"
+   ],
+   "follows": "in_cpi",
+   "extra_days": 21
+  },
+  "in_ppi": {
+   "label": "India producer prices (OEA)",
+   "sources": [
+    "in_ppi_oea"
+   ],
+   "time_sgt": "14:30",
+   "dates": [
+    {
+     "ref": "2026-10",
+     "date": "2026-11-16",
+     "status": "official"
+    },
+    {
+     "ref": "2026-11",
+     "date": "2026-12-14",
+     "status": "official"
+    },
+    {
+     "ref": "2026-12",
+     "date": "2027-01-14",
+     "status": "official"
+    },
+    {
+     "ref": "2027-01",
+     "date": "2027-02-15",
+     "status": "official"
+    },
+    {
+     "ref": "2027-02",
+     "date": "2027-03-15",
+     "status": "official"
+    },
+    {
+     "ref": "2027-03",
+     "date": "2027-04-16",
+     "status": "official"
+    }
+   ]
+  },
+  "sg_cpi": {
+   "label": "Singapore CPI",
+   "sources": [
+    "sg_cpi_singstat"
+   ],
+   "time_sgt": "13:00",
+   "dates": [
+    {
+     "ref": "2026-10",
+     "date": "2026-11-23",
+     "from": "2026-11-23",
+     "to": "2026-11-27",
+     "status": "expected"
+    },
+    {
+     "ref": "2026-11",
+     "date": "2026-12-23",
+     "from": "2026-12-23",
+     "to": "2026-12-29",
+     "status": "expected"
+    },
+    {
+     "ref": "2026-12",
+     "date": "2027-01-25",
+     "from": "2027-01-22",
+     "to": "2027-01-28",
+     "status": "expected"
+    },
+    {
+     "ref": "2027-01",
+     "date": "2027-02-23",
+     "from": "2027-02-23",
+     "to": "2027-02-26",
+     "status": "expected"
+    },
+    {
+     "ref": "2027-02",
+     "date": "2027-03-23",
+     "from": "2027-03-23",
+     "to": "2027-03-26",
+     "status": "expected"
+    }
+   ]
+  },
+  "sg_ppi": {
+   "label": "Singapore producer prices",
+   "sources": [
+    "sg_ppi_singstat"
+   ],
+   "time_sgt": "13:00",
+   "dates": [
+    {
+     "ref": "2026-09",
+     "date": "2026-10-29",
+     "from": "2026-10-27",
+     "to": "2026-11-03",
+     "status": "expected"
+    },
+    {
+     "ref": "2026-10",
+     "date": "2026-11-27",
+     "from": "2026-11-25",
+     "to": "2026-12-02",
+     "status": "expected"
+    },
+    {
+     "ref": "2026-11",
+     "date": "2026-12-29",
+     "from": "2026-12-24",
+     "to": "2027-01-04",
+     "status": "expected"
+    },
+    {
+     "ref": "2026-12",
+     "date": "2027-01-29",
+     "from": "2027-01-27",
+     "to": "2027-02-03",
+     "status": "expected"
+    },
+    {
+     "ref": "2027-01",
+     "date": "2027-02-26",
+     "from": "2027-02-24",
+     "to": "2027-03-03",
+     "status": "expected"
+    },
+    {
+     "ref": "2027-02",
+     "date": "2027-03-29",
+     "from": "2027-03-26",
+     "to": "2027-04-02",
+     "status": "expected"
+    }
+   ]
+  },
+  "kr_cpi": {
+   "label": "South Korea CPI",
+   "sources": [
+    "kr_cpi_ecos"
+   ],
+   "time_sgt": "07:00",
+   "dates": [
+    {
+     "ref": "2026-10",
+     "date": "2026-11-03",
+     "status": "official"
+    },
+    {
+     "ref": "2026-11",
+     "date": "2026-12-02",
+     "status": "official"
+    },
+    {
+     "ref": "2026-12",
+     "date": "2026-12-31",
+     "status": "official",
+     "note": "first release on the 2025 base: the source will stop with an ACTION error until updated"
+    },
+    {
+     "ref": "2027-01",
+     "date": "2027-02-02",
+     "from": "2027-02-01",
+     "to": "2027-02-05",
+     "status": "expected"
+    },
+    {
+     "ref": "2027-02",
+     "date": "2027-03-03",
+     "from": "2027-03-02",
+     "to": "2027-03-06",
+     "status": "expected"
+    }
+   ]
+  },
+  "kr_ppi": {
+   "label": "South Korea producer prices",
+   "sources": [
+    "kr_ppi_ecos"
+   ],
+   "time_sgt": "05:00",
+   "dates": [
+    {
+     "ref": "2026-10",
+     "date": "2026-11-20",
+     "from": "2026-11-17",
+     "to": "2026-11-25",
+     "status": "expected"
+    },
+    {
+     "ref": "2026-11",
+     "date": "2026-12-18",
+     "from": "2026-12-16",
+     "to": "2026-12-23",
+     "status": "expected"
+    },
+    {
+     "ref": "2026-12",
+     "date": "2027-01-21",
+     "from": "2027-01-19",
+     "to": "2027-01-26",
+     "status": "expected"
+    },
+    {
+     "ref": "2027-01",
+     "date": "2027-02-19",
+     "from": "2027-02-17",
+     "to": "2027-02-24",
+     "status": "expected"
+    },
+    {
+     "ref": "2027-02",
+     "date": "2027-03-19",
+     "from": "2027-03-17",
+     "to": "2027-03-24",
+     "status": "expected"
+    }
+   ]
+  },
+  "th_cpi": {
+   "label": "Thailand CPI and producer prices",
+   "sources": [
+    "th_cpi_tpso",
+    "th_ppi_tpso"
+   ],
+   "time_sgt": "12:30",
+   "dates": [
+    {
+     "ref": "2026-10",
+     "date": "2026-11-05",
+     "from": "2026-11-02",
+     "to": "2026-11-10",
+     "status": "expected"
+    },
+    {
+     "ref": "2026-11",
+     "date": "2026-12-04",
+     "from": "2026-12-01",
+     "to": "2026-12-09",
+     "status": "expected"
+    },
+    {
+     "ref": "2026-12",
+     "date": "2027-01-06",
+     "from": "2027-01-04",
+     "to": "2027-01-11",
+     "status": "expected"
+    },
+    {
+     "ref": "2027-01",
+     "date": "2027-02-05",
+     "from": "2027-02-02",
+     "to": "2027-02-10",
+     "status": "expected"
+    },
+    {
+     "ref": "2027-02",
+     "date": "2027-03-05",
+     "from": "2027-03-02",
+     "to": "2027-03-10",
+     "status": "expected"
+    },
+    {
+     "ref": "2027-03",
+     "date": "2027-04-07",
+     "from": "2027-04-01",
+     "to": "2027-04-10",
+     "status": "expected"
+    }
+   ]
+  },
+  "th_xmpi": {
+   "label": "Thailand export and import prices",
+   "sources": [
+    "th_xmpi_tpso"
+   ],
+   "time_sgt": "12:30",
+   "dates": [
+    {
+     "ref": "2026-10",
+     "date": "2026-11-27",
+     "from": "2026-11-24",
+     "to": "2026-12-02",
+     "status": "expected"
+    },
+    {
+     "ref": "2026-11",
+     "date": "2026-12-28",
+     "from": "2026-12-23",
+     "to": "2027-01-04",
+     "status": "expected"
+    },
+    {
+     "ref": "2026-12",
+     "date": "2027-01-28",
+     "from": "2027-01-25",
+     "to": "2027-02-02",
+     "status": "expected"
+    },
+    {
+     "ref": "2027-01",
+     "date": "2027-02-26",
+     "from": "2027-02-23",
+     "to": "2027-03-03",
+     "status": "expected"
+    },
+    {
+     "ref": "2027-02",
+     "date": "2027-03-29",
+     "from": "2027-03-25",
+     "to": "2027-04-02",
+     "status": "expected"
+    }
+   ]
+  }
  }
 }
