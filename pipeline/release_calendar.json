@@ -43,7 +43,7 @@
    {"ref": "2027-01", "date": "2027-02-15", "status": "official"},
    {"ref": "2027-02", "date": "2027-03-15", "status": "official"},
    {"ref": "2027-03", "date": "2027-04-16", "status": "official"}]},
-  "sg_cpi": {"label": "Singapore CPI", "sources": ["sg_cpi_singstat", "sg_mas_forecast"], "time_sgt": "13:00", "dates": [
+  "sg_cpi": {"label": "Singapore CPI", "sources": ["sg_cpi_singstat"], "time_sgt": "13:00", "dates": [
    {"ref": "2026-10", "date": "2026-11-23", "from": "2026-11-23", "to": "2026-11-27", "status": "expected"},
    {"ref": "2026-11", "date": "2026-12-23", "from": "2026-12-23", "to": "2026-12-29", "status": "expected"},
    {"ref": "2026-12", "date": "2027-01-25", "from": "2027-01-22", "to": "2027-01-28", "status": "expected"},

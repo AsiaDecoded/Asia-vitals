@@ -3,7 +3,11 @@
 Each release ends with MAS's forecast ranges for MAS core and CPI-All Items inflation for the current year (and,
 later in the year, the next). The ranges are published only as text, so this source reads the release PDF for the
 latest CPI month already in data/sg/cpi and writes the stated ranges, word for word, to
-data/sg/cpi/mas_forecast.csv. It runs on Singapore CPI release days, after sg_cpi_singstat.
+data/sg/cpi/mas_forecast.csv.
+
+Not on the release calendar: mas.gov.sg serves a "Maintenance" page instead of the PDF to GitHub's runners (checked
+28 Oct 2026, twice), so the dashboard refresh task reads the release instead (its step 4b). Run it by hand from a
+machine that can reach mas.gov.sg: python pipeline/run.py sg_mas_forecast
 """
 import csv
 import io
