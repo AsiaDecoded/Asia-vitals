@@ -108,7 +108,7 @@ def month_of(text):
     return f"{m.group(2)}-{MONTHS_ID[m.group(1).lower()]:02d}"
 
 
-def table_rows(text, start, stop, width=8):
+def table_rows(text, start, stop, width=(8,)):
     """Numeric rows (exactly `width` numbers) between a line matching `start` and the next matching `stop`,
     with the label text collected since the previous numeric row."""
     lines = text.splitlines()
@@ -121,7 +121,7 @@ def table_rows(text, start, stop, width=8):
             break
         ns = numbers(l)
         words = re.sub(NUM, " ", l).strip()
-        if len(ns) == width:
+        if len(ns) in width:
             out.append((" ".join(label + [words]).strip(), ns))
             label = []
         elif ns and words == "":

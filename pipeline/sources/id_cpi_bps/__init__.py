@@ -1,7 +1,7 @@
 """Indonesia CPI from BPS-Statistics Indonesia itself, through the BPS WebAPI (key: repository secret BPS_KEY).
 
 Everything is as published by BPS; nothing is calculated here.
-  - Monthly CPI press release (Berita Resmi Statistik, BRS), January 2020 on: the PDF that the WebAPI links,
+  - Monthly CPI press release (Berita Resmi Statistik, BRS), October 2022 on: the PDF that the WebAPI links,
     read with pdftotext.
       Table 1: CPI and the 11 expenditure groups (COICOP 2018): index, m/m, year to date, y/y, and contributions
                (andil) to m/m and y/y.
@@ -9,10 +9,9 @@ Everything is as published by BPS; nothing is calculated here.
                (bergejolak), and the energy and food (bahan makanan) groupings: the same eight figures.
     A month is kept only if its published rates agree with its published indices (y/y and year to date within
     0.02, or 0.06 where the index is far below 100), so a table read wrongly from an older layout is dropped,
-    not stored. Base: 2022 = 100 from January 2024, 2018 = 100 for 2020-2023.
+    not stored. Read from October 2022 (earlier releases use another layout). Base: 2022 = 100 from January 2024, 2018 = 100 before.
   - Static table 908 (Inflasi Umum, Inti, Harga Diatur Pemerintah, dan Bergejolak Nasional, M-to-M dan Y-to-D):
-    m/m for CPI, core, administered and volatile food from January 2009, for the months before the press
-    releases read here.
+    m/m for CPI, core, administered and volatile food from January 2009, for the months before.
 
 New data is detected from the newest CPI press release in the WebAPI's list. The text of every release read
 is kept in raw/id/cpi_bps/brs/<YYYY-MM>.txt.gz (the PDFs are not kept), so only new releases are downloaded.
@@ -31,7 +30,7 @@ NAME = "id_cpi_bps"
 DESCRIPTION = "Indonesia CPI (BPS WebAPI): core, administered, volatile food, energy, food, groups with y/y and contributions"
 OUT = DATA / "id" / "cpi_bps"
 RAWDIR = RAW / "id" / "cpi_bps"
-FIRST = "2020-01"
+FIRST = "2022-10"  # first release whose tables the parser reads (earlier releases use another layout)
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 SOURCE = "BPS-Statistics Indonesia (WebAPI)"
 # Table 1 rows in order
@@ -64,9 +63,12 @@ def releases():
     for r in bps.rows("list/model/pressrelease/domain/0000/lang/ind",
                        stop=lambda r: (r.get("rl_date") or "9999") < FIRST):
         t = r.get("title") or ""
-        if not re.search(r"(?i)inflasi|deflasi", t) or re.search(r"(?i)perdagangan besar|ihpb|produsen|petani|grosir", t):
+        if not re.search(r"(?i)inflasi|deflasi", t) or re.search(r"(?i)perdagangan\s*besar|ihpb|produsen|petani|grosir|ekspor|impor|triwulan", t):
             continue
         ym = _ym_title(t)
+        if not ym and r.get("rl_date"):  # a few titles name no month: the release covers the month before
+            y, m = int(r["rl_date"][:4]), int(r["rl_date"][5:7]) - 1
+            ym = f"{y - (m == 0)}-{(m - 1) % 12 + 1:02d}"
         if ym and ym >= FIRST and ym not in out and r.get("pdf"):
             out[ym] = (r.get("brs_id"), r["pdf"])
     return out
@@ -82,17 +84,26 @@ def _ok(f):
     return abs(yoy - f["yoy"]) <= tol(f["idx_year_ago"]) and abs(ytd - f["ytd"]) <= tol(f["idx_dec"])
 
 
+def _from_umum(rows):
+    """Rows from the CPI (Umum) row on, each as 8 fields. December releases have no separate December column
+    (7 numbers): the December index of the year before is then also the year-ago index."""
+    i = next((i for i, (lab, _ns) in enumerate(rows) if re.search(r"(?i)\bumum\b", lab)), None)
+    if i is None:
+        return []
+    return [(lab, ns if len(ns) == 8 else ns[:1] + ns[:1] + ns[1:]) for lab, ns in rows[i:]]
+
+
 def parse_release(text):
     """{series: {field: value}} from one release's text, or {} where a table fails its check."""
     out = {}
-    t1 = bps.table_rows(text, r"^\s*Tabel 1\b", r"^\s*Catatan")
+    t1 = _from_umum(bps.table_rows(text, r"^\s*Tabel 1\b", r"^\s*(Catatan|Tabel)", width=(7, 8)))[:len(GROUPS)]
     if len(t1) == len(GROUPS):
         rows = {k: dict(zip(FIELDS, ns)) for (k, _l), (_lab, ns) in zip(GROUPS, t1)}
         if all(_ok(v) for v in rows.values()):
             out.update(rows)
     t9 = None
     for m in re.finditer(r"(?m)^\s*Tabel \d+\b", text):
-        rows = bps.table_rows(text[m.start():], r"Tabel", r"^\s*Catatan")
+        rows = _from_umum(bps.table_rows(text[m.start():], r"Tabel", r"^\s*(Catatan|Tabel)", width=(7, 8)))
         if any(re.search(r"(?i)^inti\b", lab) for lab, _ in rows):
             t9 = rows
             break

@@ -50,15 +50,21 @@ def releases():
 
 
 def _ok(f):
-    if min(f["idx_year_ago"], f["idx_prev"], f["index"]) <= 0:
+    """Published m/m (and y/y, where the year-ago index is printed) agree with the published indices."""
+    if min(f["idx_prev"], f["index"]) <= 0:
         return False
-    yoy = (f["index"] / f["idx_year_ago"] - 1) * 100
     mom = (f["index"] / f["idx_prev"] - 1) * 100
-    return abs(yoy - f["yoy"]) <= 0.02 and abs(mom - f["mom"]) <= 0.02
+    if abs(mom - f["mom"]) > 0.02:
+        return False
+    if f["idx_year_ago"] is None:  # January releases print December and January only
+        return True
+    return abs((f["index"] / f["idx_year_ago"] - 1) * 100 - f["yoy"]) <= 0.02
 
 
 def parse_release(text, ym):
-    rows = bps.table_rows(text, r"^\s*Tabel 1\b", r"^\s*Catatan")
+    rows = bps.table_rows(text, r"^\s*Tabel 1\b", r"^\s*(Catatan|Tabel)", width=(7, 8))
+    i = next((i for i, (lab, _ns) in enumerate(rows) if re.search(r"(?i)umum", lab)), None)
+    rows = [(lab, ns if len(ns) == 8 else [None] + ns) for lab, ns in rows[i:]][:len(ROWS)] if i is not None else []
     if len(rows) != len(ROWS):
         return {}
     hd = re.search(r"Tabel 1[\s\S]{0,400}?\(2023=100\),\s*([A-Za-z]+)\s+(\d{4})", text)
