@@ -13,6 +13,7 @@ Everything is as published by the PSA; nothing is calculated here.
   - Weights (% of CPI): all income (0012M4ACP25), core (0012M4ACP32, its all-items weight is core's share
     of the CPI), bottom 30% (0022M4ABIR3).
   - Regions: all-items y/y for NCR, AONCR and the 17 regions.
+  - Every commodity group (national): index and y/y for the latest 25 months (ph_cpi_items.csv).
 
 New data is detected from the folder listing's last-updated dates (one call); the tables are fetched only
 when one of them changes. Raw responses: raw/ph/cpi_psa/<code>/<table>.json.gz.
@@ -274,8 +275,9 @@ def build(t):
                     "in_core": c in cw, "weight_core": cw.get(c), "weight_b30": bw.get(c), "order": i}
                    for i, c in enumerate(codes)]
     item_rows = []
+    y0 = f"{int(latest[:4]) - 2}{latest[4:]}"  # latest 25 months
     for (a, c, d), v in idx.items():
-        if a == "national" and d >= "2018-01-01" and c in names:
+        if a == "national" and d >= y0 and c in names:
             item_rows.append({"date": d, "code": c, "name": _name(names[c]), "order": codes.index(c),
                               "index": v, "yoy": yoy.get((a, c, d))})
     item_rows.sort(key=lambda r: (r["date"], r["order"]))
