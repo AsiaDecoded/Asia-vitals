@@ -243,8 +243,47 @@ def round3():
     (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
 
 
+def round4():
+    """Web-report data files (monthly CPI report, HES report, PPI report, trade index report),
+    table E501, trade index tables, and the release-schedule data behind press_release.html."""
+    for pc in ("B1060001", "B1060003", "B1070003", "B1020006", "D5600001"):
+        st, body = fetch(f"elidx_{pc}", f"{CSD}/en/data/stat_report/product/{pc}/report_element_index.json")
+        fetch(f"el_{pc}", f"{CSD}/en/data/stat_report/product/{pc}/report_element.json")
+        o = as_json(body) if st == 200 else None
+        for k in ((o or {}).get("elementindex") or [])[:2]:
+            fetch(f"el_{pc}_{k}", f"{CSD}/en/data/stat_report/product/{pc}/report_element_{k}.json")
+    for pc, ec in (("B1060001", "B10600012026MM09"), ("B1060003", "B10600032025XXXX"),
+                   ("B1070003", "B10700032026QQ02")):
+        d = f"{CSD}/wbr/{pc}/{ec}/data/"
+        st, body = fetch(f"wbr_{ec}", f"{d}en/wbr.json")
+        o = as_json(body) if st == 200 else None
+        ids = (o or {}).get("tb_code_list") or []
+        if isinstance(ids, str):
+            ids = [i for i in re.split(r"[,; ]+", ids) if i]
+        ids = [i if isinstance(i, str) else (i.get("table_id") or i.get("id") or json.dumps(i)) for i in ids]
+        for tid in ids[:60]:
+            fetch(f"wbr_{ec}_table_{tid}_comp", f"{d}table_{tid}_comp.json")
+            fetch(f"wbr_{ec}_table_{tid}_lang", f"{d}en/table_{tid}_lang.json")
+            time.sleep(0.2)
+    fetch("e501_xlsx", f"{CSD}/en/data/stat_report/product/D5600001/att/D5600001B2026MM09B.xlsx", ext=".xlsx")
+    fetch("e501_zip", f"{CSD}/en/data/stat_report/product/D5600001/att/D5600001B2026MM09B.zip", ext=".zip")
+    for tid in ("410-51001", "410-51002", "410-51003"):
+        fetch(f"csd_{tid}", f"{CSD}/api/get.php?{urllib.parse.urlencode({'id': tid, 'lang': 'en', 'full_series': 1})}",
+              timeout=150)
+    st, body = fetch("js_press_release_list", f"{CSD}/js/press_release_list.js", ext=".js")
+    txt = body.decode("utf-8", "replace") if body else ""
+    names = sorted(set(re.findall(r"[\w./-]*\.json", txt)))
+    (OUT / "press_release_json_names.json").write_text(json.dumps(names, indent=1))
+    for n in names[:20]:
+        base = n.split("/")[-1]
+        fetch(f"pr_{base}", f"{CSD}/data/en/press_release/{base}")
+    (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
+
+
 if __name__ == "__main__":
-    if len(sys.argv) > 2 and sys.argv[2] == "round3":
+    if len(sys.argv) > 2 and sys.argv[2] == "round4":
+        round4()
+    elif len(sys.argv) > 2 and sys.argv[2] == "round3":
         round3()
     elif len(sys.argv) > 2 and sys.argv[2] == "round2":
         round2()
