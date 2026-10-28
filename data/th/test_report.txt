@@ -1,0 +1,10 @@
+== th_cpi_tpso
+   CHECKS FAILED (1); nothing written for th_cpi_tpso:
+   - national fuel: no y/y for 2026-09
+== th_ppi_tpso
+   CHECKS FAILED (1); nothing written for th_ppi_tpso:
+   - 20 published y/y rates differ from the index, e.g. ['CPA 1030 2024-04: published 1.0, index gives 0.84', 'CPA 1030 2025-01: published 9.1, index gives 9.29', 'CPA 3100 2022-06: published 9.2, index gives 9.05']
+== th_xmpi_tpso
+   UPDATED: Sep 2026: 3531 rows, 642 months fetched
+== combined long file: 251375 rows
+result: updated=['th_xmpi_tpso'] failed=['th_cpi_tpso', 'th_ppi_tpso']
