@@ -1,0 +1,461 @@
+<style>
+#dash-root .jg { font-family: var(--font-anthropic-sans); display: flex; flex-direction: column; gap: var(--cds-gap-lg); }
+.jg-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; }
+.jg-take { margin: var(--cds-gap-xs) 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); max-width: 60rem; line-height: 1.5; }
+.jg-take b, .jg b { font-weight: var(--cds-font-weight-medium); color: var(--color-fg); }
+.jg-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: var(--cds-gap-md); }
+.jg-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); position: relative; min-width: 0; }
+.jg-tile .lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.jg-tile .val { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; margin-top: var(--cds-gap-xs); }
+.jg-tile .sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: var(--cds-gap-xs); font-variant-numeric: tabular-nums; }
+.jg-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); align-items: center; }
+.jg-seg { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); overflow: hidden; }
+.jg-seg button { font: inherit; font-size: var(--cds-font-size-caption); background: transparent; color: var(--color-fg-muted); border: 0; padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; }
+.jg-seg button[aria-pressed="true"] { background: var(--color-bg); color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.jg-seg-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.jg-card h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+.jg-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-xs) 0 var(--cds-gap-md); line-height: 1.45; }
+.jg-cardhead { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--cds-gap-sm); align-items: flex-start; }
+.jg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.jg-chart { min-height: 280px; position: relative; }
+.jg-chart.small { min-height: 280px; }
+.jg-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: var(--cds-gap-sm); }
+.jg-legend span.sw { display: inline-block; width: 0.625rem; height: 0.625rem; border-radius: 2px; margin-right: 0.35rem; vertical-align: -1px; }
+.jg-legend span.ln { display: inline-block; width: 0.9rem; height: 2px; margin-right: 0.35rem; vertical-align: 3px; }
+.jg-legend span.dot { display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 50%; margin-right: 0.35rem; vertical-align: 0; background: var(--color-fg); }
+.jg-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; z-index: 2; display: none; font-variant-numeric: tabular-nums; }
+.jg-tip .t { color: var(--cds-text-secondary); margin-bottom: 2px; }
+.jg-tip .r { display: flex; gap: 0.4rem; align-items: center; justify-content: space-between; }
+.jg-tip .r .k { display: flex; gap: 0.35rem; align-items: center; }
+.jg-tip .r i { display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 2px; }
+.jg svg text { font-family: var(--font-anthropic-sans); }
+.jg-tablewrap { overflow-x: auto; }
+.jg table { width: 100%; border-collapse: collapse; font-size: 0.875rem; font-variant-numeric: tabular-nums; }
+.jg th { text-align: right; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: bottom; }
+.jg th:first-child, .jg td:first-child { text-align: left; }
+.jg td { text-align: right; padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); }
+.jg tr.gdp td { font-weight: var(--cds-font-weight-medium); }
+.jg tr.agg td:first-child { color: var(--color-fg-muted); }
+.jg tr.sep td { border-top: 2px solid var(--color-border-line); }
+.jg td.neg { color: var(--color-bad); }
+#cpi-table th:not(:first-child), #cpi-table td:not(:first-child), #cpi-movers-table th:not(:first-child), #cpi-movers-table td:not(:first-child) { text-align: center; }
+.jg tr.grp td { font-weight: 700; color: var(--ad-ink, var(--color-fg)); text-align: left !important; padding-top: var(--cds-pad-sm); }
+.jg-foot { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.5; }
+.jg-fail { display: flex; align-items: center; justify-content: center; gap: 0.4rem; min-height: inherit; height: 100%; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.jg-fail::before { content: ""; width: 0.375rem; height: 0.375rem; border-radius: 50%; background: var(--color-bad); }
+[data-dash-source-state=empty] { color: transparent; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+@media (max-width: 640px) { .jg .hide-narrow { display: none; } }
+.jg-tabs { display: flex; gap: var(--cds-gap-md); border-bottom: 1px solid var(--color-border-line); margin-top: calc(-1 * var(--cds-gap-sm)); }
+.jg-tabs button { font: inherit; font-size: var(--cds-font-size-body); background: transparent; border: 0; border-bottom: 2px solid transparent; color: var(--color-fg-muted); padding: var(--cds-pad-sm) 0; margin-bottom: -1px; cursor: pointer; }
+.jg-tabs button[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.jg-page { display: flex; flex-direction: column; gap: var(--cds-gap-lg); }
+.jg-page[hidden] { display: none; }
+.jg-pagehead .jg-take { margin-top: var(--cds-gap-xs); }
+.jg-empty { color: var(--color-fg-muted); font-size: var(--cds-font-size-body); margin: var(--cds-gap-lg) 0; }
+
+/* Asia Decoded chart style */
+.jg-card { font-family: Arial, Helvetica, sans-serif; }
+.jg-card h2 { font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 1.15rem; color: var(--ad-ink, var(--color-fg)); }
+.jg svg text { font-family: Arial, Helvetica, sans-serif; }
+.ad-top { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--cds-gap-xs) var(--cds-gap-lg); margin-top: var(--cds-gap-sm); }
+.ad-top .ad-units.r { margin-left: auto; }
+.ad-top { position: relative; z-index: 1; height: 1.4rem; flex-wrap: nowrap; align-items: flex-start; }
+.ad-top .jg-legend { background: transparent; }
+.ad-units { font-size: 0.8125rem; color: var(--ad-ink, var(--color-fg-muted)); }
+.ad-units.r { text-align: right; }
+.ad-top .jg-legend { margin-top: 0; justify-content: flex-start; flex: 1 1 0; min-width: 10rem; color: var(--ad-ink, var(--color-fg-muted)); font-size: 0.8125rem; }
+.jg-legend span.ln { width: 1.6rem; height: 3px; vertical-align: 3px; }
+.ad-foot { display: flex; justify-content: space-between; align-items: baseline; gap: var(--cds-gap-md); margin-top: var(--cds-gap-xs); font-size: 0.8125rem; color: var(--ad-ink, var(--color-fg-muted)); line-height: 1.4; }
+.ad-brand { color: #EE6600; font-weight: 700; white-space: nowrap; }
+.ad-foot > span:first-child { font-size: 0.6875rem; }
+.ad-foot .ad-brand { font-size: 0.6875rem; }
+.ad-foot .ad-right { display: flex; align-items: baseline; gap: var(--cds-gap-md); }
+.ad-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; }
+.ad-png { font: inherit; font-size: 0.75rem; background: transparent; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); color: var(--color-fg-muted); padding: 1px 8px; cursor: pointer; white-space: nowrap; }
+.ad-png:hover { color: var(--color-fg); }
+.ad-shot { position: fixed; inset: 0; background: rgba(0,0,0,.55); display: flex; align-items: center; justify-content: center; z-index: 50; padding: 16px; }
+.ad-shot-box { margin-top: var(--cds-gap-md); padding-top: var(--cds-gap-md); border-top: 1px solid var(--color-border-line); display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
+.ad-shot-box img { width: 100%; height: auto; border: 1px solid var(--color-border-line); }
+.ad-shot-bar { display: flex; justify-content: space-between; align-items: center; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.ad-shot-bar a, .ad-shot-bar button { font: inherit; color: var(--color-fg); background: transparent; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: 2px 10px; cursor: pointer; text-decoration: none; }
+
+.ad-method { font-family: Arial, Helvetica, sans-serif; max-width: 52rem; line-height: 1.55; font-size: 0.9375rem; color: var(--color-fg); }
+.ad-method h3 { font-size: 1rem; margin: var(--cds-gap-lg) 0 var(--cds-gap-xs); color: var(--ad-ink, var(--color-fg)); }
+.ad-method p { margin: var(--cds-gap-xs) 0; }
+.ad-method ul { margin: var(--cds-gap-xs) 0; padding-left: 1.2rem; }
+.ad-method li { margin: 2px 0; }
+.ad-method .ad-foot { margin-top: var(--cds-gap-lg); }
+.ad-slider { position: relative; height: 22px; margin: 2px 8px 0; }
+.ad-slider-track { position: absolute; left: 0; right: 0; top: 9px; height: 4px; border-radius: 2px; background: var(--color-border-line); }
+.ad-slider-sel { position: absolute; top: 0; bottom: 0; background: var(--ad-c1); border-radius: 2px; opacity: 0.6; }
+.ad-slider input[type=range] { position: absolute; left: -8px; right: -8px; width: calc(100% + 16px); top: 0; height: 22px; margin: 0; background: none; pointer-events: none; -webkit-appearance: none; appearance: none; }
+.ad-slider input[type=range]::-webkit-slider-runnable-track { background: none; height: 22px; }
+.ad-slider input[type=range]::-moz-range-track { background: none; }
+.ad-slider input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; pointer-events: auto; width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: var(--color-bg); border: 2px solid var(--ad-c1); cursor: ew-resize; }
+.ad-slider input[type=range]::-moz-range-thumb { pointer-events: auto; width: 12px; height: 12px; border-radius: 50%; background: var(--color-bg); border: 2px solid var(--ad-c1); cursor: ew-resize; }
+.ad-slider input[type=range]:focus-visible::-webkit-slider-thumb { outline: 2px solid var(--ad-c1); outline-offset: 2px; }
+.ad-slider-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-align: right; margin: 0 8px 4px; font-variant-numeric: tabular-nums; }
+#cpi-div-table th:not(:first-child), #cpi-div-table td:not(:first-child), #cpi-groups-table th:not(:first-child), #cpi-groups-table td:not(:first-child) { text-align: center; }
+#cpi-div-table tr.agg td { font-weight: var(--cds-font-weight-medium); }
+#cpi-groups-table td.l2 { padding-left: 1.4rem; }
+#cpi-groups-table td.l3 { padding-left: 2.4rem; }
+#cpi-groups-table td.l4 { padding-left: 3.4rem; color: var(--color-fg-muted); }
+#cpi-groups-table tr.l1 td { font-weight: var(--cds-font-weight-medium); }
+.th-groupwrap { max-height: 32rem; overflow: auto; }
+.th-groupwrap th { position: sticky; top: 0; background: var(--color-panel); z-index: 1; }
+.th-search { font: inherit; font-size: var(--cds-font-size-caption); background: transparent; color: var(--color-fg); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); min-width: 10rem; }
+.jg-chart.tall { min-height: 460px; }
+</style>
+
+<div class="jg">
+  <header class="jg-head" id="top">
+    <h1>Thailand</h1>
+  </header>
+
+  <nav class="jg-tabs" role="tablist" aria-label="Sections">
+    <button role="tab" data-tab="inflation" aria-selected="true">Inflation</button>
+    <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
+  </nav>
+
+  <section class="jg-page" id="inflation" role="tabpanel">
+    <div class="jg-pagehead">
+      <div class="jg-note" style="margin:0"><span id="cpi-month" class="dash-skeleton" style="color: var(--color-fg)">—</span></div>
+      <p class="jg-take" id="cpi-takeaway"><span class="dash-skeleton">—</span></p>
+    </div>
+
+    <section class="jg-tiles" id="cpi-headline" aria-label="Headline inflation">
+      <div class="jg-card jg-tile"><div class="lbl">CPI, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="all_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="all_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Core CPI, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="core_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="core_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">CPI ex food and energy, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="ex_food_energy_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="ex_food_energy_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Fresh food, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="fresh_food_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="fresh_food_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Energy, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="energy_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="energy_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">PPI, y/y</div>
+        <div class="val"><span data-source="ppi_latest" data-field="ppi_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub"><span data-source="ppi_latest" data-field="label" data-row="0">—</span>; prior month <span data-source="ppi_latest" data-field="ppi_yoy_prev" data-row="0">—</span>%</div></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="ppi-cpi">
+        <h2>Thailand inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="ppi-cpi-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="ppi-cpi-chart" data-source="cpi_series ppi_series xmpi_series"></div>
+        <div class="ad-foot"><span>Source: Trade Policy and Strategy Office, Ministry of Commerce</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-measures">
+        <h2>Thailand consumer inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-measures-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-measures-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: Trade Policy and Strategy Office, Ministry of Commerce</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-fe">
+        <h2>Thailand fresh food and energy CPI</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-fe-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-fe-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: Trade Policy and Strategy Office, Ministry of Commerce</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-areas">
+        <h2>Thailand CPI: Bangkok and low-income households</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-areas-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-areas-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: Trade Policy and Strategy Office, Ministry of Commerce</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card" id="cpi-div">
+      <h2>Thailand CPI by group</h2>
+      <div class="ad-top"><span class="ad-units" id="cpi-div-units">% y/y; weight, % of CPI</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-tablewrap">
+        <table id="cpi-div-table" data-source="cpi_div" data-row-key="name">
+          <thead><tr>
+            <th data-field="name">Group</th>
+            <th data-field="weight">Weight</th>
+            <th data-field="m3" class="hide-narrow">—</th>
+            <th data-field="m2" class="hide-narrow">—</th>
+            <th data-field="m1">—</th>
+            <th data-field="m0">—</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="ad-foot"><span>Source: Trade Policy and Strategy Office, Ministry of Commerce</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-food">
+        <h2>Thailand food CPI</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-food-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart small" id="cpi-food-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: Trade Policy and Strategy Office, Ministry of Commerce</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-energy">
+        <h2>Thailand energy and transport CPI</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-energy-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart small" id="cpi-energy-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: Trade Policy and Strategy Office, Ministry of Commerce</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-regions">
+        <h2>Thailand CPI by region</h2>
+        <div class="ad-top"><span class="ad-units" id="cpi-regions-units">% y/y</span><div class="jg-legend" id="cpi-regions-legend"></div><span class="ad-units r"></span></div>
+        <div><div class="jg-chart" id="cpi-regions-chart" data-source="th_cpi_regions"></div></div>
+        <div class="ad-foot"><span>Source: Trade Policy and Strategy Office, Ministry of Commerce</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="ppi-sop">
+        <h2>Thailand producer prices by stage of processing</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="ppi-sop-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="ppi-sop-chart" data-source="ppi_series"></div>
+        <div class="ad-foot"><span>Source: Trade Policy and Strategy Office, Ministry of Commerce</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card" id="cpi-groups">
+      <div class="jg-cardhead">
+        <div><h2>Thailand CPI by item group</h2></div>
+        <div class="ad-controls">
+          <input class="th-search" id="cpi-groups-search" type="search" placeholder="Search groups" aria-label="Search item groups">
+          <div class="jg-seg" id="cpi-groups-seg" role="group" aria-label="Detail"><button data-l="2" aria-pressed="true">Groups</button><button data-l="3">Sub-groups</button><button data-l="5">All</button></div>
+        </div>
+      </div>
+      <div class="ad-top"><span class="ad-units" id="cpi-groups-units">% y/y; weight, % of CPI</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-tablewrap th-groupwrap">
+        <table id="cpi-groups-table" data-source="cpi_groups" data-row-key="code">
+          <thead><tr>
+            <th data-field="name">Item group</th>
+            <th data-field="weight">Weight</th>
+            <th data-field="y12" class="hide-narrow">—</th>
+            <th data-field="y2" class="hide-narrow">—</th>
+            <th data-field="y1">—</th>
+            <th data-field="y0">—</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="ad-foot"><span>Source: Trade Policy and Strategy Office, Ministry of Commerce</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <p class="jg-foot">Source: Trade Policy and Strategy Office (TPSO), Ministry of Commerce, Consumer Price Index (2023 = 100), Open API: <span data-source="cpi_release" data-field="label" data-row="0">—</span>. Producer Price Index (2021 = 100): <span data-source="ppi_release" data-field="label" data-row="0">—</span>. Export and import price indices (2012 = 100): <span data-source="xmpi_release" data-field="label" data-row="0">—</span>. All figures are as published by TPSO, including its linking of the 2023-based CPI back to 1976. TPSO publishes no seasonally adjusted CPI.</p>
+  </section>
+
+  <section class="jg-page" id="methodology" role="tabpanel" hidden>
+    <article class="jg-card ad-method" id="method-data">
+      <h2>Data</h2>
+      <p>Every figure on this page is published by Thailand&rsquo;s Trade Policy and Strategy Office (TPSO), Ministry of Commerce, and taken from its Open API (index-api.tpso.go.th). Nothing is calculated, linked or seasonally adjusted here.</p>
+      <h3>Consumer prices</h3>
+      <ul>
+        <li><b>Index:</b> general CPI, 2023 = 100. The 2023 basket (464 items) has been used since January 2025. TPSO links the 2023-based index back to January 1976; the page shows that series as published.</li>
+        <li><b>Classification:</b> TPSO&rsquo;s own eight groups (food and non-alcoholic beverages; apparel and footwear; housing and furnishing; medical and personal care; transport and communication; recreation, reading, education and religion; tobacco and alcoholic beverages; and non-food as a whole), not COICOP. TPSO&rsquo;s Thai series names are shown in English translation.</li>
+        <li><b>Year-on-year rates:</b> TPSO&rsquo;s published rates for every month.</li>
+        <li><b>Weights:</b> TPSO&rsquo;s published expenditure shares for the 2023 basket, % of CPI, from its rebasing note (February 2025). TPSO publishes weights for the groups, core, fresh food and energy only, so sub-groups carry none.</li>
+        <li><b>Areas:</b> Bangkok and vicinity, and the Central, North, Northeast and South regions, all items, as published. Low-income households: TPSO&rsquo;s separate CPI for low-income households, 2023 = 100.</li>
+      </ul>
+      <h3>Core CPI and other aggregates</h3>
+      <p>TPSO&rsquo;s core CPI excludes fresh food and energy: 126 of the 464 items, 30.3% of the basket. TPSO also publishes CPI excluding food, non-alcoholic beverages and energy, which removes all food rather than fresh food only and is closer to the measure most countries call core; the page shows it for comparison across countries. Both are TPSO&rsquo;s series, as published.</p>
+      <h3>Seasonal adjustment</h3>
+      <p>TPSO publishes no seasonally adjusted CPI, so the page has no seasonally adjusted month-on-month measure.</p>
+      <h3>Producer, export and import prices</h3>
+      <ul>
+        <li><b>PPI:</b> TPSO Producer Price Index, 2021 = 100, by product (all items from January 2015, y/y from January 2016) and by stage of processing (from January 1995). Released with the CPI.</li>
+        <li><b>Export and import prices:</b> TPSO indices in baht, 2012 = 100, from January 2000, released around the 28th of the following month.</li>
+      </ul>
+      <h3>Not on this page</h3>
+      <p>TPSO publishes no goods and services split, no contributions to y/y in its database and no diffusion measure, and no weights below group level, so the page has none of these.</p>
+      <div class="ad-foot"><span>Source: Trade Policy and Strategy Office, Ministry of Commerce</span><span class="ad-brand">Asia Decoded</span></div>
+    </article>
+  </section>
+</div>
+
+<script>
+const num = (v) => (v === '' || v == null ? null : Number(v));
+
+window.JG = {
+  state: {},
+  num,
+  qLabel(d) {
+    const m = Number(d.slice(5, 7));
+    return ({ 1: 'Jan–Mar', 4: 'Apr–Jun', 7: 'Jul–Sep', 10: 'Oct–Dec' })[m] + ' ' + d.slice(0, 4);
+  },
+  date(d) { return new Date(Date.UTC(Number(d.slice(0, 4)), Number(d.slice(5, 7)) - 1, 1)); },
+  f1(v) { return v == null || Number.isNaN(v) ? '' : v.toFixed(1); },
+  fail(el) {
+    el.replaceChildren();
+    const d = document.createElement('div'); d.className = 'jg-fail'; d.textContent = 'Failed to load'; el.appendChild(d);
+  },
+  // Period per chart: number of points to show (0 = all), set by each chart's own buttons.
+  period: {},
+  periodOf(id, def) { return id in this.period ? this.period[id] : def; },
+  window(rows, id) { const n = this.periodOf(id, 40); return n ? rows.slice(-n) : rows; },
+  // Range slider per chart: the selected share of the chart's full date range, [from, to] in 0..1.
+  range: {},
+  slice(rows, id) {
+    const [lo, hi] = this.range[id] || [0, 1];
+    if (!rows.length) return rows;
+    const n = rows.length - 1, i0 = Math.round(lo * n), i1 = Math.max(i0, Math.round(hi * n));
+    const out = rows.slice(i0, i1 + 1);
+    const card = document.getElementById(id), lbl = card && card.querySelector('.ad-slider-lbl');
+    if (lbl && out.length) {
+      const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      const q = card.closest('.jg-page') && card.closest('.jg-page').id === 'gdp';
+      const f = (d) => (q ? `Q${Math.floor((Number(d.slice(5, 7)) - 1) / 3) + 1} ${d.slice(0, 4)}` : MON[Number(d.slice(5, 7)) - 1] + ' ' + d.slice(0, 4));
+      lbl.textContent = `${f(out[0].date)} to ${f(out[out.length - 1].date)}`;
+    }
+    return out;
+  },
+  addSliders() {
+    document.querySelectorAll('.jg-card').forEach((card) => {
+      const chart = card.querySelector(':scope > .jg-chart'); if (!chart || !card.id) return;
+      const page = card.closest('.jg-page'); const p = page ? page.id : 'inflation';
+      const redraw = () => { if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); };
+      const wrap = document.createElement('div'); wrap.className = 'ad-slider';
+      const track = document.createElement('div'); track.className = 'ad-slider-track';
+      const sel = document.createElement('div'); sel.className = 'ad-slider-sel'; track.appendChild(sel);
+      const mk = (v, label) => { const i = document.createElement('input'); i.type = 'range'; i.min = 0; i.max = 1000; i.step = 1; i.value = v; i.setAttribute('aria-label', label); return i; };
+      const a = mk(0, 'Start date'), b = mk(1000, 'End date');
+      const lbl = document.createElement('div'); lbl.className = 'ad-slider-lbl';
+      wrap.append(track, a, b);
+      let raf = 0;
+      const upd = (moved) => {
+        let lo = Number(a.value), hi = Number(b.value);
+        if (hi - lo < 20) { if (moved === a) { lo = hi - 20; a.value = lo; } else { hi = lo + 20; b.value = hi; } }
+        sel.style.left = `${lo / 10}%`; sel.style.right = `${100 - hi / 10}%`;
+        JG.range[card.id] = [lo / 1000, hi / 1000];
+        cancelAnimationFrame(raf); raf = requestAnimationFrame(redraw);
+      };
+      a.addEventListener('input', () => upd(a)); b.addEventListener('input', () => upd(b));
+      chart.after(wrap, lbl);
+      sel.style.left = '0%'; sel.style.right = '0%';
+    });
+  },
+  addPeriods() {
+    const SETS = { q: [['5Y', 20], ['10Y', 40], ['All', 0]], m: [['3Y', 36], ['10Y', 120], ['All', 0]] };
+    document.querySelectorAll('.jg-card').forEach((card) => {
+      const chart = card.querySelector('.jg-chart'); if (!chart) return;
+      const page = card.closest('.jg-page'); const kind = page && page.id === 'gdp' ? 'q' : 'm';
+      const def = kind === 'q' ? 40 : 120;
+      const seg = document.createElement('div'); seg.className = 'jg-seg ad-period'; seg.setAttribute('role', 'group'); seg.setAttribute('aria-label', 'Period');
+      SETS[kind].forEach(([lab, n]) => {
+        const b = document.createElement('button'); b.type = 'button'; b.textContent = lab; b.dataset.n = n;
+        b.setAttribute('aria-pressed', String(n === def)); seg.appendChild(b);
+      });
+      seg.addEventListener('click', (e) => {
+        const b = e.target.closest('button'); if (!b) return;
+        JG.period[card.id] = Number(b.dataset.n);
+        seg.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+        const p = page ? page.id : 'gdp';
+        if (p === 'gdp') JG.redraw && JG.redraw(); else if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else JG.redrawTrade && JG.redrawTrade();
+      });
+      let head = card.querySelector(':scope > .jg-cardhead');
+      if (!head) {
+        const h2 = card.querySelector(':scope > h2');
+        head = document.createElement('div'); head.className = 'jg-cardhead';
+        const left = document.createElement('div'); h2.replaceWith(head); left.appendChild(h2); head.appendChild(left);
+      }
+      let right = head.querySelector(':scope > .ad-controls');
+      if (!right) {
+        right = document.createElement('div'); right.className = 'ad-controls';
+        const segs = Array.from(head.querySelectorAll(':scope > .jg-seg'));
+        segs.forEach((x) => right.appendChild(x)); head.appendChild(right);
+      }
+      right.appendChild(seg);
+    });
+  },
+  // Measure text widths so margins fit the labels actually drawn.
+  textWidth(svg, labels) {
+    const g = svg.append('g').attr('opacity', 0);
+    let w = 0;
+    labels.forEach((t) => { const n = g.append('text').attr('font-size', 12).text(t).node(); w = Math.max(w, n.getComputedTextLength()); });
+    g.remove();
+    return w;
+  },
+  yearTicks(dates, width) {
+    const years = Array.from(new Set(dates.map((d) => d.slice(0, 4))));
+    const room = Math.max(1, Math.floor(width / 48));
+    const step = [1, 2, 4, 5, 10].find((s) => years.length / s <= room) || 10;
+    return dates.filter((d) => d.slice(5, 7) === '01' && Number(d.slice(0, 4)) % step === 0);
+  },
+  tip(card) {
+    let t = card.querySelector(':scope > .jg-tip');
+    if (!t) { t = document.createElement('div'); t.className = 'jg-tip'; card.appendChild(t); }
+    return t;
+  },
+  showTip(card, tip, title, lines, px, py) {
+    tip.replaceChildren();
+    const h = document.createElement('div'); h.className = 't'; h.textContent = title; tip.appendChild(h);
+    lines.forEach(([color, name, value]) => {
+      const r = document.createElement('div'); r.className = 'r';
+      const k = document.createElement('span'); k.className = 'k';
+      if (color) { const i = document.createElement('i'); i.style.background = color; k.appendChild(i); }
+      const s = document.createElement('span'); s.textContent = name; k.appendChild(s);
+      const v = document.createElement('span'); v.textContent = value;
+      r.append(k, v); tip.appendChild(r);
+    });
+    tip.style.display = 'block';
+    const cw = card.clientWidth, tw = tip.offsetWidth;
+    let left = px + 14; if (left + tw > cw - 8) left = px - tw - 14; if (left < 8) left = 8;
+    tip.style.left = left + 'px'; tip.style.top = Math.max(8, py - 10) + 'px';
+  },
+  // Asia Decoded palette; the two dark greys lighten on a dark background.
+  PAL: [1, 2, 3, 4, 5, 6, 7, 8].map((i) => `var(--ad-c${i})`),
+  theme() {
+    const root = document.querySelector('#dash-root .jg') || document.querySelector('.jg');
+    if (!root) return;
+    const bg = getComputedStyle(root).getPropertyValue('--color-bg').trim() || getComputedStyle(document.body).backgroundColor;
+    const probe = document.createElement('span'); probe.style.color = bg; root.appendChild(probe);
+    const col = getComputedStyle(probe).color; probe.remove();
+    const n = (col.match(/[\d.]+%?/g) || ['255', '255', '255']);
+    let dark;
+    if (/^(ok)?l(ab|ch)/.test(col)) { let L = parseFloat(n[0]); if (n[0].endsWith('%') || L > 1) L /= 100; dark = L < 0.5; }
+    else { const v = n.map(parseFloat); dark = (0.2126 * v[0] + 0.7152 * v[1] + 0.0722 * v[2]) < 128; }
+    const v = { '--ad-c1': '#0C84FF', '--ad-c2': '#BD1B21', '--ad-c3': '#EE6631', '--ad-c4': dark ? '#ADB5BD' : '#495057',
+      '--ad-c5': '#FFC000', '--ad-c6': '#92D050', '--ad-c7': '#954F72', '--ad-c8': dark ? '#8496B0' : '#44546A',
+      '--ad-ink': dark ? 'var(--color-fg-muted)' : '#495057', '--ad-grid': dark ? 'var(--cds-chart-grid)' : '#D9D9D9',
+      '--ad-axis': dark ? 'var(--cds-chart-axis)' : '#A6A6A6' };
+    Object.entries(v).forEach(([k, x]) => root.style.setProperty(k, x));
+  },
+  axisStyle(g) {
+    g.attr('font-size', null).attr('font-family', null);
+    g.selectAll('text').attr('fill', 'var(--ad-ink)').attr('font-size', 12);
+    g.selectAll('line').attr('stroke', 'var(--ad-axis)');
+    g.select('.domain').remove();
+  },
+};
+</script>
+
+<script>
+(() => {
+  const J = window.JG;
+  J.theme();
+  J.addSliders();
+  dash.onData(() => J.theme());
+  // Tabs: one page shown at a time; charts on a hidden page are drawn when it is shown.
+  const tabs = document.querySelectorAll('.jg-tabs [data-tab]');
+  const show = (id) => {
+    if (!document.getElementById(id)) return;
+    tabs.forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === id)));
+    document.querySelectorAll('.jg-page').forEach((p) => { p.hidden = p.id !== id; });
+    dash.setLink(id);
+    if (id === 'inflation' && J.redrawCpi) J.redrawCpi();
+  };
+  J.show = show;
+  tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
+  if (location.hash.slice(1) === 'methodology') show('methodology');
+})();
+</script>
+
+<script src="cpi.js"></script>
+<script src="export.js"></script>

@@ -200,7 +200,8 @@ def check(b, state, latest):
     if state.get("latest_month") and latest + "-01" < state["latest_month"]:
         errors.append(f"latest month {latest} is before the one already stored ({state['latest_month']})")
     have = {(r["area"], r["series"]) for r in b["series"] if r["date"] == latest + "-01" and r["yoy"] is not None}
-    need = [("national", k) for k, _c, g in SERIES if g in ("headline", "group", "component")] + \
+    need = [("national", k) for k, _c, g in SERIES if g in ("headline", "group")] + \
+        [("national", "fresh_food"), ("national", "energy"), ("national", "ex_food_energy")] + \
         [("bangkok", "all"), ("bangkok", "core"), ("lowincome", "all")]
     for a, k in need:
         if (a, k) not in have:
@@ -273,6 +274,7 @@ def update(force=False, **_):
     if latest + "-01" == state.get("latest_month") and complete and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {state.get('label')})"}
     new = fetch(store, latest, masters, force=force)
+    save_store(store)  # raw responses kept even if the checks below fail, so a rerun does not refetch them
     b = build(store, latest)
     errors, warnings = check(b, state, latest)
     if errors:
@@ -284,7 +286,6 @@ def update(force=False, **_):
         if recent:
             with gzip.open(dest / f"{key.replace(':', '_')}.json.gz", "wt", encoding="utf-8") as f:
                 json.dump(recent, f, ensure_ascii=False)
-    save_store(store)
     code = f"C{latest}"
     _write_csv(OUT / "th_cpi.csv", b["series"],
                ["date", "area", "series", "code", "label", "group", "order", "index", "yoy", "mom", "weight"])

@@ -15,7 +15,7 @@ from core import tpso
 from core.common import CheckFailed, read_json, write_long, write_release
 
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-YOY_TOL = 0.15  # published y/y vs the published index (one decimal)
+YOY_TOL = 0.25  # published y/y vs the published index (TPSO rounds indices to one decimal, rates come from unrounded ones)
 
 
 def _shift(ym, k):
@@ -68,6 +68,8 @@ def run(spec, force=False):
                 if ym == latest[t]:
                     published[t] = r.get("createdAt")
             order += 1
+    with gzip.open(store_path, "wt", encoding="utf-8") as f:  # kept even if the checks fail
+        json.dump(store, f, ensure_ascii=False, separators=(",", ":"))
     # checks
     for t, code in spec["need"]:
         if not any(r["type"] == t and r["code"] == code and r["date"] == latest[t] + "-01" and r["yoy"] is not None
