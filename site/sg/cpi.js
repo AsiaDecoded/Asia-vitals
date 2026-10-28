@@ -410,7 +410,7 @@ dash.calc('cpi_heat', {
     const rows = J.slice(all, 'cpi-momentum');
     if (!rows.length) { box.replaceChildren(); return; }
     const name = document.querySelector(`#cpi-sa-seg [data-s="${k}"]`).textContent;
-    legend('cpi-sa-legend', (withCpi ? [{ name: 'CPI, y/y', color: J.PAL[1] }] : []).concat([{ name: name + ', 3m/3m annualised, SA', color: J.PAL[5], bar: true }]));
+    legend('cpi-sa-legend', (withCpi ? [{ name: 'CPI, y/y', color: J.PAL[0] }] : []).concat([{ name: name + ', 3m/3m annualised, SA', color: J.PAL[1], bar: true }]));
     const W = box.clientWidth, H = 280;
     box.replaceChildren();
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
@@ -430,15 +430,15 @@ dash.calc('cpi_heat', {
     svg.append('g').selectAll('rect').data(rows).join('rect')
       .attr('x', (r) => x(r.date)).attr('width', x.bandwidth())
       .attr('y', (r) => y(Math.max(0, r[k]))).attr('height', (r) => Math.abs(y(r[k]) - y(0)))
-      .attr('fill', J.PAL[5]);
-    if (withCpi) svg.append('path').datum(rows.filter((r) => r.yoy != null)).attr('fill', 'none').attr('stroke', J.PAL[1]).attr('stroke-width', 2)
+      .attr('fill', J.PAL[1]);
+    if (withCpi) svg.append('path').datum(rows.filter((r) => r.yoy != null)).attr('fill', 'none').attr('stroke', J.PAL[0]).attr('stroke-width', 2)
       .attr('d', d3.line().x((r) => x(r.date) + x.bandwidth() / 2).y((r) => y(r.yoy)));
     const card = document.getElementById('cpi-momentum'), tip = J.tip(card);
     svg.append('rect').attr('x', ml).attr('width', W - ml).attr('height', H).attr('fill', 'transparent')
       .on('mousemove', (ev) => {
         const i = Math.max(0, Math.min(rows.length - 1, Math.floor((d3.pointer(ev)[0] - ml) / x.step())));
         const cr = card.getBoundingClientRect();
-        J.showTip(card, tip, mLabel(rows[i].date), (withCpi ? [[J.PAL[1], 'CPI, y/y', pct(rows[i].yoy)]] : []).concat([[J.PAL[5], name + ', 3m/3m ann. SA', pct(rows[i][k])]]), ev.clientX - cr.left, ev.clientY - cr.top);
+        J.showTip(card, tip, mLabel(rows[i].date), (withCpi ? [[J.PAL[0], 'CPI, y/y', pct(rows[i].yoy)]] : []).concat([[J.PAL[1], name + ', 3m/3m ann. SA', pct(rows[i][k])]]), ev.clientX - cr.left, ev.clientY - cr.top);
       })
       .on('mouseleave', () => { tip.style.display = 'none'; });
   }
