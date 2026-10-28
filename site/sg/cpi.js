@@ -430,11 +430,6 @@ dash.calc('cpi_heat', {
     lineChart('cpi-gapc-chart', 'cpi-gapc', 'cpi-gapc-legend', 'national', [
       { key: 'conly', name: 'In MAS core only', color: C[5], width: 3.5 },
       { key: 'xonly', name: 'In CPI less food and energy only', color: C[4], width: 3.5 },
-      { key: 'groc', name: 'Food excl. FBSS', color: C[2], width: 1.75 },
-      { key: 'eg', name: 'Electricity and gas', color: C[0], width: 1.75 },
-      { key: 'imp', name: 'Imputed rentals', color: C[6], width: 1.75 },
-      { key: 'rm', name: 'Actual rents and maintenance', color: C[1], width: 1.75 },
-      { key: 'ptx', name: 'Private transport excl. fuel', color: C[7], width: 1.75 },
     ], 300, { ids: ['cpi_gap_series'], rows: (d) => J.slice(d.slice(), 'cpi-gapc') });
   }
 
