@@ -1,0 +1,1621 @@
+date,series,label,order,base,index,mom,ytd,yoy
+1966-01-01,all,"CPI, all items",0,older base,27.92,,,
+1966-02-01,all,"CPI, all items",0,older base,33.55,20.16,,
+1966-03-01,all,"CPI, all items",0,older base,43.72,30.31,,
+1966-04-01,all,"CPI, all items",0,older base,47.87,9.49,,
+1966-05-01,all,"CPI, all items",0,older base,51.1,6.75,,
+1966-06-01,all,"CPI, all items",0,older base,68.73,34.5,,
+1966-07-01,all,"CPI, all items",0,older base,74.27,8.06,,
+1966-08-01,all,"CPI, all items",0,older base,87.53,17.85,,
+1966-09-01,all,"CPI, all items",0,older base,100.0,14.25,,
+1966-10-01,all,"CPI, all items",0,older base,118.95,18.95,,
+1966-11-01,all,"CPI, all items",0,older base,129.38,8.77,,
+1966-12-01,all,"CPI, all items",0,older base,133.23,2.98,,
+1967-01-01,all,"CPI, all items",0,older base,145.42,9.15,9.15,420.85
+1967-02-01,all,"CPI, all items",0,older base,173.75,19.48,28.63,417.88
+1967-03-01,all,"CPI, all items",0,older base,180.26,3.75,32.38,312.31
+1967-04-01,all,"CPI, all items",0,older base,181.44,0.65,33.03,279.03
+1967-05-01,all,"CPI, all items",0,older base,181.06,-0.21,32.82,254.32
+1967-06-01,all,"CPI, all items",0,older base,186.84,3.19,36.01,171.85
+1967-07-01,all,"CPI, all items",0,older base,190.63,2.03,38.04,156.67
+1967-08-01,all,"CPI, all items",0,older base,200.85,5.36,43.4,129.46
+1967-09-01,all,"CPI, all items",0,older base,221.75,10.41,53.81,121.75
+1967-10-01,all,"CPI, all items",0,older base,237.69,7.19,61.0,99.82
+1967-11-01,all,"CPI, all items",0,older base,287.2,20.83,81.83,121.98
+1967-12-01,all,"CPI, all items",0,older base,282.67,-1.58,80.25,112.17
+1968-01-01,all,"CPI, all items",0,older base,395.2,39.81,39.81,171.76
+1968-02-01,all,"CPI, all items",0,older base,431.7,9.24,49.05,148.46
+1968-03-01,all,"CPI, all items",0,older base,445.16,3.12,52.17,146.95
+1968-04-01,all,"CPI, all items",0,older base,418.99,-5.88,46.29,130.92
+1968-05-01,all,"CPI, all items",0,older base,443.5,5.85,52.14,144.95
+1968-06-01,all,"CPI, all items",0,older base,455.08,2.61,54.75,143.57
+1968-07-01,all,"CPI, all items",0,older base,474.57,4.28,59.03,148.95
+1968-08-01,all,"CPI, all items",0,older base,492.16,3.71,62.74,145.04
+1968-09-01,all,"CPI, all items",0,older base,493.4,0.25,62.99,122.5
+1968-10-01,all,"CPI, all items",0,older base,486.87,-1.32,61.67,104.83
+1968-11-01,all,"CPI, all items",0,older base,504.83,3.69,65.36,75.78
+1968-12-01,all,"CPI, all items",0,older base,523.23,3.64,69.0,85.1
+1969-01-01,all,"CPI, all items",0,older base,534.56,2.17,2.17,35.26
+1969-02-01,all,"CPI, all items",0,older base,543.25,1.63,3.8,25.84
+1969-03-01,all,"CPI, all items",0,older base,555.29,2.22,6.02,24.74
+1969-04-01,all,"CPI, all items",0,older base,531.96,-4.2,1.82,26.96
+1969-05-01,all,"CPI, all items",0,older base,528.6,-0.63,1.19,19.19
+1969-06-01,all,"CPI, all items",0,older base,521.49,-1.35,-0.1600000000000006,14.59
+1969-07-01,all,"CPI, all items",0,older base,531.26,1.87,1.71,11.95
+1969-08-01,all,"CPI, all items",0,older base,547.42,3.04,4.75,11.23
+1969-09-01,all,"CPI, all items",0,older base,546.14,-0.23,4.52,10.69
+1969-10-01,all,"CPI, all items",0,older base,558.14,2.2,6.72,14.64
+1969-11-01,all,"CPI, all items",0,older base,564.12,1.07,7.79,11.74
+1969-12-01,all,"CPI, all items",0,older base,574.98,1.93,9.72,9.89
+1970-01-01,all,"CPI, all items",0,older base,616.88,7.29,7.29,15.4
+1970-02-01,all,"CPI, all items",0,older base,617.15,0.04,7.33,13.6
+1970-03-01,all,"CPI, all items",0,older base,614.44,-0.44,6.89,10.65
+1970-04-01,all,"CPI, all items",0,older base,605.07,-1.52,5.37,13.74
+1970-05-01,all,"CPI, all items",0,older base,606.53,0.24,5.61,14.74
+1970-06-01,all,"CPI, all items",0,older base,611.14,0.76,6.37,17.19
+1970-07-01,all,"CPI, all items",0,older base,612.87,0.28,6.65,15.36
+1970-08-01,all,"CPI, all items",0,older base,611.41,-0.24,6.41,11.69
+1970-09-01,all,"CPI, all items",0,older base,600.4,-1.8,4.61,9.94
+1970-10-01,all,"CPI, all items",0,older base,598.97,-0.24,4.37,7.32
+1970-11-01,all,"CPI, all items",0,older base,622.12,3.86,8.23,10.28
+1970-12-01,all,"CPI, all items",0,older base,626.05,0.63,8.86,8.88
+1971-01-01,all,"CPI, all items",0,older base,644.1,2.88,2.88,4.41
+1971-02-01,all,"CPI, all items",0,older base,660.6,2.56,5.44,7.04
+1971-03-01,all,"CPI, all items",0,older base,662.24,0.25,5.69,7.78
+1971-04-01,all,"CPI, all items",0,older base,653.11,-1.38,4.31,7.94
+1971-05-01,all,"CPI, all items",0,older base,637.94,-2.32,1.99,5.18
+1971-06-01,all,"CPI, all items",0,older base,625.64,-1.93,0.05999999999999983,2.37
+1971-07-01,all,"CPI, all items",0,older base,625.89,0.04,0.09999999999999984,2.12
+1971-08-01,all,"CPI, all items",0,older base,620.32,-0.89,-0.79,1.46
+1971-09-01,all,"CPI, all items",0,older base,618.32,-0.32,-1.11,2.98
+1971-10-01,all,"CPI, all items",0,older base,625.11,1.1,-0.01,4.36
+1971-11-01,all,"CPI, all items",0,older base,647.37,3.56,3.55,4.06
+1971-12-01,all,"CPI, all items",0,older base,641.49,-0.91,2.64,2.47
+1972-01-01,all,"CPI, all items",0,older base,651.53,1.57,1.57,1.15
+1972-02-01,all,"CPI, all items",0,older base,667.37,2.43,4.0,1.02
+1972-03-01,all,"CPI, all items",0,older base,667.61,0.04,4.04,0.81
+1972-04-01,all,"CPI, all items",0,older base,665.76,-0.28,3.76,1.94
+1972-05-01,all,"CPI, all items",0,older base,659.75,-0.9,2.86,3.42
+1972-06-01,all,"CPI, all items",0,older base,650.24,-1.44,1.42,3.93
+1972-07-01,all,"CPI, all items",0,older base,645.4,-0.74,0.68,3.12
+1972-08-01,all,"CPI, all items",0,older base,647.96,0.4,1.08,4.46
+1972-09-01,all,"CPI, all items",0,older base,657.87,1.53,2.61,6.4
+1972-10-01,all,"CPI, all items",0,older base,682.52,3.75,6.36,9.18
+1972-11-01,all,"CPI, all items",0,older base,757.11,10.93,17.29,16.95
+1972-12-01,all,"CPI, all items",0,older base,807.24,6.62,23.91,25.84
+1973-01-01,all,"CPI, all items",0,older base,793.92,-1.65,-1.65,21.85
+1973-02-01,all,"CPI, all items",0,older base,796.36,0.31,-1.34,19.33
+1973-03-01,all,"CPI, all items",0,older base,806.38,1.26,-0.07999999999999985,20.79
+1973-04-01,all,"CPI, all items",0,older base,829.48,2.86,2.78,24.59
+1973-05-01,all,"CPI, all items",0,older base,828.03,-0.17,2.61,25.51
+1973-06-01,all,"CPI, all items",0,older base,871.39,5.24,7.85,34.01
+1973-07-01,all,"CPI, all items",0,older base,917.3,5.27,13.12,42.13
+1973-08-01,all,"CPI, all items",0,older base,915.8,-0.16,12.96,41.34
+1973-09-01,all,"CPI, all items",0,older base,944.83,3.17,16.13,43.62
+1973-10-01,all,"CPI, all items",0,older base,970.85,2.75,18.88,42.24
+1973-11-01,all,"CPI, all items",0,older base,992.79,2.26,21.14,31.13
+1973-12-01,all,"CPI, all items",0,older base,1027.64,3.51,24.65,27.3
+1974-01-01,all,"CPI, all items",0,older base,1130.55,10.01,10.01,42.4
+1974-02-01,all,"CPI, all items",0,older base,1172.21,3.68,13.69,47.2
+1974-03-01,all,"CPI, all items",0,older base,1188.17,1.36,15.05,47.35
+1974-04-01,all,"CPI, all items",0,older base,1236.55,4.07,19.12,49.08
+1974-05-01,all,"CPI, all items",0,older base,1236.96,0.03,19.15,49.39
+1974-06-01,all,"CPI, all items",0,older base,1250.74,1.11,20.26,43.53
+1974-07-01,all,"CPI, all items",0,older base,1256.21,0.44,20.7,36.95
+1974-08-01,all,"CPI, all items",0,older base,1256.47,0.02,20.72,37.2
+1974-09-01,all,"CPI, all items",0,older base,1282.48,2.07,22.79,35.74
+1974-10-01,all,"CPI, all items",0,older base,1315.53,2.58,25.37,35.5
+1974-11-01,all,"CPI, all items",0,older base,1340.38,1.89,27.26,35.01
+1974-12-01,all,"CPI, all items",0,older base,1370.01,2.21,29.47,33.32
+1975-01-01,all,"CPI, all items",0,older base,1386.38,1.19,1.19,22.63
+1975-02-01,all,"CPI, all items",0,older base,1396.5,0.73,1.92,19.13
+1975-03-01,all,"CPI, all items",0,older base,1427.01,2.18,4.1,20.1
+1975-04-01,all,"CPI, all items",0,older base,1450.27,1.63,5.73,17.28
+1975-05-01,all,"CPI, all items",0,older base,1462.8,0.86,6.59,18.26
+1975-06-01,all,"CPI, all items",0,older base,1465.22,0.17,6.76,17.15
+1975-07-01,all,"CPI, all items",0,older base,1475.81,0.72,7.48,17.48
+1975-08-01,all,"CPI, all items",0,older base,1487.58,0.8,8.28,18.39
+1975-09-01,all,"CPI, all items",0,older base,1545.06,3.86,12.14,20.47
+1975-10-01,all,"CPI, all items",0,older base,1559.46,0.93,13.07,18.54
+1975-11-01,all,"CPI, all items",0,older base,1605.24,2.94,16.01,19.76
+1975-12-01,all,"CPI, all items",0,older base,1639.81,2.15,18.16,19.69
+1976-01-01,all,"CPI, all items",0,older base,1676.12,2.21,2.21,20.9
+1976-02-01,all,"CPI, all items",0,older base,1708.55,1.93,4.14,22.35
+1976-03-01,all,"CPI, all items",0,older base,1709.15,0.04,4.18,19.77
+1976-04-01,all,"CPI, all items",0,older base,1720.77,0.68,4.86,18.65
+1976-05-01,all,"CPI, all items",0,older base,1747.99,1.58,6.44,19.5
+1976-06-01,all,"CPI, all items",0,older base,1778.89,1.77,8.21,21.41
+1976-07-01,all,"CPI, all items",0,older base,1779.19,0.02,8.23,20.56
+1976-08-01,all,"CPI, all items",0,older base,1829.28,2.82,11.05,22.97
+1976-09-01,all,"CPI, all items",0,older base,1870.14,2.23,13.28,21.04
+1976-10-01,all,"CPI, all items",0,older base,1869.94,-0.01,13.27,19.91
+1976-11-01,all,"CPI, all items",0,older base,1875.4,0.29,13.56,16.83
+1976-12-01,all,"CPI, all items",0,older base,1872.63,-0.15,13.41,14.2
+1977-01-01,all,"CPI, all items",0,older base,1902.07,1.57,1.57,13.48
+1977-02-01,all,"CPI, all items",0,older base,1903.71,0.09,1.66,11.42
+1977-03-01,all,"CPI, all items",0,older base,1916.26,0.66,2.32,12.12
+1977-04-01,all,"CPI, all items",0,older base,1935.22,0.99,3.31,12.46
+1977-05-01,all,"CPI, all items",0,older base,1963.01,1.44,4.75,12.3
+1977-06-01,all,"CPI, all items",0,older base,1962.88,-0.01,4.74,10.34
+1977-07-01,all,"CPI, all items",0,older base,1993.03,1.54,6.28,12.02
+1977-08-01,all,"CPI, all items",0,older base,2006.57,0.68,6.96,9.69
+1977-09-01,all,"CPI, all items",0,older base,2039.02,1.62,8.58,9.03
+1977-10-01,all,"CPI, all items",0,older base,2045.19,0.3,8.88,9.37
+1977-11-01,all,"CPI, all items",0,older base,2063.33,0.89,9.77,10.02
+1977-12-01,all,"CPI, all items",0,older base,2094.0,1.49,11.26,11.82
+1978-01-01,all,"CPI, all items",0,older base,2095.89,0.09,0.09,10.19
+1978-02-01,all,"CPI, all items",0,older base,2097.88,0.09,0.18,10.2
+1978-03-01,all,"CPI, all items",0,older base,2109.49,0.55,0.73,10.08
+1978-04-01,all,"CPI, all items",0,older base,2147.35,1.79,2.52,10.96
+1978-05-01,all,"CPI, all items",0,older base,2136.65,-0.5,2.02,8.85
+1978-06-01,all,"CPI, all items",0,older base,2109.29,-1.28,0.74,7.46
+1978-07-01,all,"CPI, all items",0,older base,2142.66,1.58,2.32,7.51
+1978-08-01,all,"CPI, all items",0,older base,2170.11,1.28,3.6,8.15
+1978-09-01,all,"CPI, all items",0,older base,2144.18,-1.19,2.41,5.16
+1978-10-01,all,"CPI, all items",0,older base,2159.1,0.7,3.11,5.57
+1978-11-01,all,"CPI, all items",0,older base,2210.33,2.37,5.48,7.12
+1978-12-01,all,"CPI, all items",0,older base,2234.08,1.07,6.55,6.69
+1979-01-01,all,"CPI, all items",0,older base,2292.0,2.59,2.59,9.36
+1979-02-01,all,"CPI, all items",0,older base,2345.0,2.31,4.9,11.78
+1979-03-01,all,"CPI, all items",0,older base,121.77,,,
+1979-04-01,all,"CPI, all items",0,older base,125.45,3.02,,
+1979-05-01,all,"CPI, all items",0,older base,129.27,3.05,,
+1979-06-01,all,"CPI, all items",0,older base,132.27,2.32,,
+1979-07-01,all,"CPI, all items",0,older base,135.58,2.5,,
+1979-08-01,all,"CPI, all items",0,older base,138.75,2.34,,
+1979-09-01,all,"CPI, all items",0,older base,139.78,0.74,,
+1979-10-01,all,"CPI, all items",0,older base,141.03,0.89,,
+1979-11-01,all,"CPI, all items",0,older base,141.84,0.57,,
+1979-12-01,all,"CPI, all items",0,older base,143.07,0.87,,
+1980-01-01,all,"CPI, all items",0,older base,144.77,1.19,1.19,
+1980-02-01,all,"CPI, all items",0,older base,146.82,1.42,2.61,
+1980-03-01,all,"CPI, all items",0,older base,147.14,0.22,2.83,20.83
+1980-04-01,all,"CPI, all items",0,older base,148.67,1.04,3.87,18.51
+1980-05-01,all,"CPI, all items",0,older base,154.31,3.79,7.66,19.37
+1980-06-01,all,"CPI, all items",0,older base,160.21,3.82,11.48,21.12
+1980-07-01,all,"CPI, all items",0,older base,158.33,-1.17,10.31,16.78
+1980-08-01,all,"CPI, all items",0,older base,160.21,1.19,11.5,15.47
+1980-09-01,all,"CPI, all items",0,older base,160.78,0.36,11.86,15.02
+1980-10-01,all,"CPI, all items",0,older base,163.49,1.69,13.55,15.93
+1980-11-01,all,"CPI, all items",0,older base,167.12,2.22,15.77,17.82
+1980-12-01,all,"CPI, all items",0,older base,167.55,0.26,16.03,17.11
+1981-01-01,all,"CPI, all items",0,older base,169.75,1.31,1.31,17.25
+1981-02-01,all,"CPI, all items",0,older base,170.94,0.7,2.01,16.43
+1981-03-01,all,"CPI, all items",0,older base,172.14,0.7,2.71,16.99
+1981-04-01,all,"CPI, all items",0,older base,173.74,0.93,3.64,16.86
+1981-05-01,all,"CPI, all items",0,older base,174.0,0.15,3.79,12.76
+1981-06-01,all,"CPI, all items",0,older base,174.73,0.42,4.21,9.06
+1981-07-01,all,"CPI, all items",0,older base,176.83,1.2,5.41,11.68
+1981-08-01,all,"CPI, all items",0,older base,177.74,0.51,5.92,10.94
+1981-09-01,all,"CPI, all items",0,older base,177.4,-0.19,5.73,10.34
+1981-10-01,all,"CPI, all items",0,older base,179.48,1.17,6.9,9.78
+1981-11-01,all,"CPI, all items",0,older base,178.91,-0.32,6.58,7.05
+1981-12-01,all,"CPI, all items",0,older base,179.82,0.51,7.09,7.32
+1982-01-01,all,"CPI, all items",0,older base,188.28,4.7,4.7,10.92
+1982-02-01,all,"CPI, all items",0,older base,189.29,0.54,5.24,10.73
+1982-03-01,all,"CPI, all items",0,older base,189.63,0.18,5.42,10.16
+1982-04-01,all,"CPI, all items",0,older base,189.52,-0.06,5.36,9.08
+1982-05-01,all,"CPI, all items",0,older base,189.86,0.18,5.54,9.11
+1982-06-01,all,"CPI, all items",0,older base,190.49,0.33,5.87,9.02
+1982-07-01,all,"CPI, all items",0,older base,192.6,1.11,6.98,8.92
+1982-08-01,all,"CPI, all items",0,older base,191.49,-0.58,6.4,7.74
+1982-09-01,all,"CPI, all items",0,older base,193.41,1.0,7.4,9.02
+1982-10-01,all,"CPI, all items",0,older base,195.8,1.24,8.64,9.09
+1982-11-01,all,"CPI, all items",0,older base,196.66,0.44,9.08,9.92
+1982-12-01,all,"CPI, all items",0,older base,197.85,0.61,9.69,10.03
+1983-01-01,all,"CPI, all items",0,older base,206.94,4.59,4.59,9.91
+1983-02-01,all,"CPI, all items",0,older base,207.24,0.14,4.73,9.48
+1983-03-01,all,"CPI, all items",0,older base,205.99,-0.6,4.13,8.63
+1983-04-01,all,"CPI, all items",0,older base,210.99,2.43,6.56,11.33
+1983-05-01,all,"CPI, all items",0,older base,212.83,0.87,7.43,12.1
+1983-06-01,all,"CPI, all items",0,older base,216.19,1.58,9.01,13.49
+1983-07-01,all,"CPI, all items",0,older base,217.88,0.78,9.79,13.13
+1983-08-01,all,"CPI, all items",0,older base,217.83,-0.02,9.77,13.76
+1983-09-01,all,"CPI, all items",0,older base,219.61,0.82,10.59,13.55
+1983-10-01,all,"CPI, all items",0,older base,219.59,-0.01,10.58,12.15
+1983-11-01,all,"CPI, all items",0,older base,220.2,0.28,10.86,11.97
+1983-12-01,all,"CPI, all items",0,older base,221.53,0.6,11.46,11.97
+1984-01-01,all,"CPI, all items",0,older base,229.11,3.42,3.42,10.71
+1984-02-01,all,"CPI, all items",0,older base,232.91,1.66,5.08,12.39
+1984-03-01,all,"CPI, all items",0,older base,233.42,0.22,5.3,13.32
+1984-04-01,all,"CPI, all items",0,older base,236.48,1.31,6.61,12.08
+1984-05-01,all,"CPI, all items",0,older base,238.02,0.65,7.26,11.84
+1984-06-01,all,"CPI, all items",0,older base,238.69,0.28,7.54,10.41
+1984-07-01,all,"CPI, all items",0,older base,239.58,0.37,7.91,9.96
+1984-08-01,all,"CPI, all items",0,older base,239.22,-0.15,7.76,9.82
+1984-09-01,all,"CPI, all items",0,older base,238.98,-0.1,7.66,8.82
+1984-10-01,all,"CPI, all items",0,older base,239.06,0.03,7.69,8.87
+1984-11-01,all,"CPI, all items",0,older base,239.14,0.03,7.72,8.6
+1984-12-01,all,"CPI, all items",0,older base,241.63,1.04,8.76,9.07
+1985-01-01,all,"CPI, all items",0,older base,242.75,0.46,0.46,5.95
+1985-02-01,all,"CPI, all items",0,older base,241.54,-0.5,-0.04,3.71
+1985-03-01,all,"CPI, all items",0,older base,242.07,0.22,0.18,3.71
+1985-04-01,all,"CPI, all items",0,older base,248.13,2.5,2.68,4.93
+1985-05-01,all,"CPI, all items",0,older base,249.02,0.36,3.04,4.62
+1985-06-01,all,"CPI, all items",0,older base,251.23,0.89,3.93,5.25
+1985-07-01,all,"CPI, all items",0,older base,250.94,-0.12,3.81,4.74
+1985-08-01,all,"CPI, all items",0,older base,250.76,-0.07,3.74,4.82
+1985-09-01,all,"CPI, all items",0,older base,250.38,-0.15,3.59,4.77
+1985-10-01,all,"CPI, all items",0,older base,250.59,0.08,3.67,4.82
+1985-11-01,all,"CPI, all items",0,older base,251.24,0.26,3.93,5.06
+1985-12-01,all,"CPI, all items",0,older base,252.2,0.38,4.31,4.37
+1986-01-01,all,"CPI, all items",0,older base,255.39,1.26,1.26,5.21
+1986-02-01,all,"CPI, all items",0,older base,257.18,0.7,1.96,6.48
+1986-03-01,all,"CPI, all items",0,older base,256.07,-0.43,1.53,5.78
+1986-04-01,all,"CPI, all items",0,older base,256.33,0.1,1.63,3.3
+1986-05-01,all,"CPI, all items",0,older base,259.59,1.27,2.9,4.24
+1986-06-01,all,"CPI, all items",0,older base,260.2,0.23,3.13,3.57
+1986-07-01,all,"CPI, all items",0,older base,259.67,-0.2,2.93,3.48
+1986-08-01,all,"CPI, all items",0,older base,260.13,0.18,3.11,3.74
+1986-09-01,all,"CPI, all items",0,older base,267.44,2.81,5.92,6.81
+1986-10-01,all,"CPI, all items",0,older base,272.88,2.03,7.95,8.9
+1986-11-01,all,"CPI, all items",0,older base,274.4,0.56,8.51,9.22
+1986-12-01,all,"CPI, all items",0,older base,275.27,0.32,8.83,9.15
+1987-01-01,all,"CPI, all items",0,older base,276.24,0.35,0.35,8.16
+1987-02-01,all,"CPI, all items",0,older base,280.28,1.46,1.81,8.98
+1987-03-01,all,"CPI, all items",0,older base,279.49,-0.28,1.53,9.15
+1987-04-01,all,"CPI, all items",0,older base,279.75,0.09,1.62,9.14
+1987-05-01,all,"CPI, all items",0,older base,284.92,1.85,3.47,9.76
+1987-06-01,all,"CPI, all items",0,older base,285.79,0.31,3.78,9.83
+1987-07-01,all,"CPI, all items",0,older base,286.89,0.38,4.16,10.48
+1987-08-01,all,"CPI, all items",0,older base,288.45,0.54,4.7,10.89
+1987-09-01,all,"CPI, all items",0,older base,290.49,0.71,5.41,8.62
+1987-10-01,all,"CPI, all items",0,older base,294.47,1.37,6.78,7.91
+1987-11-01,all,"CPI, all items",0,older base,299.63,1.75,8.53,9.19
+1987-12-01,all,"CPI, all items",0,older base,300.75,0.37,8.9,9.26
+1988-01-01,all,"CPI, all items",0,older base,301.75,0.33,0.33,9.23
+1988-02-01,all,"CPI, all items",0,older base,303.34,0.53,0.86,8.23
+1988-03-01,all,"CPI, all items",0,older base,303.52,0.06,0.92,8.6
+1988-04-01,all,"CPI, all items",0,older base,305.7,0.72,1.64,9.28
+1988-05-01,all,"CPI, all items",0,older base,308.53,0.93,2.57,8.29
+1988-06-01,all,"CPI, all items",0,older base,309.72,0.39,2.96,8.37
+1988-07-01,all,"CPI, all items",0,older base,313.16,1.11,4.07,9.16
+1988-08-01,all,"CPI, all items",0,older base,314.44,0.41,4.48,9.01
+1988-09-01,all,"CPI, all items",0,older base,314.28,-0.05,4.43,8.19
+1988-10-01,all,"CPI, all items",0,older base,315.51,0.39,4.82,7.15
+1988-11-01,all,"CPI, all items",0,older base,316.9,0.44,5.26,5.76
+1988-12-01,all,"CPI, all items",0,older base,317.56,0.21,5.47,5.59
+1989-01-01,all,"CPI, all items",0,older base,319.16,0.5,0.5,5.77
+1989-02-01,all,"CPI, all items",0,older base,323.2,1.27,1.77,6.55
+1989-03-01,all,"CPI, all items",0,older base,323.94,0.23,2.0,6.73
+1989-04-01,all,"CPI, all items",0,older base,329.04,1.57,3.57,7.63
+1989-05-01,all,"CPI, all items",0,older base,314.13,-4.53,-0.96,1.82
+1989-06-01,all,"CPI, all items",0,older base,330.42,5.19,4.23,6.68
+1989-07-01,all,"CPI, all items",0,older base,331.9,0.45,4.68,5.98
+1989-08-01,all,"CPI, all items",0,older base,332.22,0.1,4.78,5.65
+1989-09-01,all,"CPI, all items",0,older base,332.93,0.21,4.99,5.93
+1989-10-01,all,"CPI, all items",0,older base,335.43,0.75,5.74,6.31
+1989-11-01,all,"CPI, all items",0,older base,337.1,0.5,6.24,6.37
+1989-12-01,all,"CPI, all items",0,older base,336.96,-0.04,6.2,6.11
+1990-01-01,all,"CPI, all items",0,older base,340.04,0.91,0.91,6.54
+1990-02-01,all,"CPI, all items",0,older base,343.39,0.99,1.9,6.25
+1990-03-01,all,"CPI, all items",0,older base,108.02,-0.39,1.51,5.59
+1990-04-01,all,"CPI, all items",0,older base,109.55,1.42,2.93,
+1990-05-01,all,"CPI, all items",0,older base,110.19,0.58,3.51,
+1990-06-01,all,"CPI, all items",0,older base,111.61,1.29,4.8,
+1990-07-01,all,"CPI, all items",0,older base,114.08,2.21,7.01,
+1990-08-01,all,"CPI, all items",0,older base,114.75,0.59,7.6,
+1990-09-01,all,"CPI, all items",0,older base,115.34,0.51,8.11,
+1990-10-01,all,"CPI, all items",0,older base,116.53,1.03,9.14,
+1990-11-01,all,"CPI, all items",0,older base,116.91,0.33,9.47,
+1990-12-01,all,"CPI, all items",0,older base,116.98,0.06,9.53,
+1991-01-01,all,"CPI, all items",0,older base,117.87,0.76,0.76,
+1991-02-01,all,"CPI, all items",0,older base,118.22,0.3,1.06,
+1991-03-01,all,"CPI, all items",0,older base,118.26,0.03,1.09,9.48
+1991-04-01,all,"CPI, all items",0,older base,120.5,1.89,2.98,10.0
+1991-05-01,all,"CPI, all items",0,older base,120.72,0.18,3.16,9.56
+1991-06-01,all,"CPI, all items",0,older base,121.25,0.44,3.6,8.64
+1991-07-01,all,"CPI, all items",0,older base,123.54,1.89,5.49,8.29
+1991-08-01,all,"CPI, all items",0,older base,125.89,1.9,7.39,9.71
+1991-09-01,all,"CPI, all items",0,older base,126.04,0.12,7.51,9.28
+1991-10-01,all,"CPI, all items",0,older base,127.0,0.76,8.27,8.98
+1991-11-01,all,"CPI, all items",0,older base,128.35,1.06,9.33,9.79
+1991-12-01,all,"CPI, all items",0,older base,128.6,0.19,9.52,9.93
+1992-01-01,all,"CPI, all items",0,older base,129.17,0.44,0.44,9.59
+1992-02-01,all,"CPI, all items",0,older base,129.5,0.26,0.7,9.54
+1992-03-01,all,"CPI, all items",0,older base,130.34,0.65,1.35,10.21
+1992-04-01,all,"CPI, all items",0,older base,131.54,0.92,2.27,9.16
+1992-05-01,all,"CPI, all items",0,older base,131.68,0.11,2.38,9.08
+1992-06-01,all,"CPI, all items",0,older base,132.53,0.65,3.03,9.3
+1992-07-01,all,"CPI, all items",0,older base,132.83,0.23,3.26,7.52
+1992-08-01,all,"CPI, all items",0,older base,133.04,0.16,3.42,5.68
+1992-09-01,all,"CPI, all items",0,older base,133.3,0.2,3.62,5.76
+1992-10-01,all,"CPI, all items",0,older base,133.85,0.41,4.03,5.39
+1992-11-01,all,"CPI, all items",0,older base,134.19,0.25,4.28,4.55
+1992-12-01,all,"CPI, all items",0,older base,135.08,0.66,4.94,5.04
+1993-01-01,all,"CPI, all items",0,older base,139.03,2.92,2.92,7.63
+1993-02-01,all,"CPI, all items",0,older base,141.85,2.03,4.95,9.54
+1993-03-01,all,"CPI, all items",0,older base,143.96,1.49,6.44,10.45
+1993-04-01,all,"CPI, all items",0,older base,144.17,0.15,6.59,9.6
+1993-05-01,all,"CPI, all items",0,older base,144.37,0.14,6.73,9.64
+1993-06-01,all,"CPI, all items",0,older base,144.72,0.24,6.97,9.2
+1993-07-01,all,"CPI, all items",0,older base,145.69,0.67,7.64,9.68
+1993-08-01,all,"CPI, all items",0,older base,146.15,0.32,7.96,9.85
+1993-09-01,all,"CPI, all items",0,older base,146.56,0.28,8.24,9.95
+1993-10-01,all,"CPI, all items",0,older base,147.43,0.59,8.83,10.15
+1993-11-01,all,"CPI, all items",0,older base,148.04,0.41,9.24,10.32
+1993-12-01,all,"CPI, all items",0,older base,148.83,0.53,9.77,10.18
+1994-01-01,all,"CPI, all items",0,older base,150.69,1.25,1.25,8.39
+1994-02-01,all,"CPI, all items",0,older base,153.34,1.76,3.01,8.1
+1994-03-01,all,"CPI, all items",0,older base,154.41,0.7,3.71,7.26
+1994-04-01,all,"CPI, all items",0,older base,154.78,0.24,3.95,7.36
+1994-05-01,all,"CPI, all items",0,older base,155.59,0.52,4.47,7.77
+1994-06-01,all,"CPI, all items",0,older base,155.78,0.12,4.59,7.64
+1994-07-01,all,"CPI, all items",0,older base,157.91,1.37,5.96,8.39
+1994-08-01,all,"CPI, all items",0,older base,159.32,0.89,6.85,9.01
+1994-09-01,all,"CPI, all items",0,older base,160.17,0.53,7.38,9.29
+1994-10-01,all,"CPI, all items",0,older base,161.6,0.89,8.27,9.61
+1994-11-01,all,"CPI, all items",0,older base,162.33,0.45,8.72,9.65
+1994-12-01,all,"CPI, all items",0,older base,163.17,0.52,9.24,9.64
+1995-01-01,all,"CPI, all items",0,older base,165.06,1.16,1.16,9.54
+1995-02-01,all,"CPI, all items",0,older base,167.22,1.31,2.47,9.05
+1995-03-01,all,"CPI, all items",0,older base,168.18,0.57,3.04,8.92
+1995-04-01,all,"CPI, all items",0,older base,171.02,1.69,4.73,10.49
+1995-05-01,all,"CPI, all items",0,older base,171.86,0.49,5.22,10.46
+1995-06-01,all,"CPI, all items",0,older base,172.14,0.16,5.38,10.5
+1995-07-01,all,"CPI, all items",0,older base,173.36,0.71,6.09,9.78
+1995-08-01,all,"CPI, all items",0,older base,173.91,0.32,6.41,9.16
+1995-09-01,all,"CPI, all items",0,older base,174.57,0.38,6.79,8.99
+1995-10-01,all,"CPI, all items",0,older base,175.69,0.64,7.43,8.72
+1995-11-01,all,"CPI, all items",0,older base,176.43,0.42,7.85,8.69
+1995-12-01,all,"CPI, all items",0,older base,177.83,0.79,8.64,8.98
+1996-01-01,all,"CPI, all items",0,older base,98.56,2.16,2.16,10.06
+1996-02-01,all,"CPI, all items",0,older base,99.86,1.32,3.87,10.5
+1996-03-01,all,"CPI, all items",0,older base,99.2,-0.66,3.26,9.2
+1996-04-01,all,"CPI, all items",0,older base,99.49,0.29,4.04,8.22
+1996-05-01,all,"CPI, all items",0,older base,100.13,0.64,4.1,7.76
+1996-06-01,all,"CPI, all items",0,older base,99.38,-0.75,4.03,7.51
+1996-07-01,all,"CPI, all items",0,older base,100.08,0.7,4.71,7.48
+1996-08-01,all,"CPI, all items",0,older base,100.04,-0.04,4.98,7.43
+1996-09-01,all,"CPI, all items",0,older base,100.22,0.18,4.94,6.98
+1996-10-01,all,"CPI, all items",0,older base,100.63,0.41,5.35,6.73
+1996-11-01,all,"CPI, all items",0,older base,101.03,0.4,5.92,6.89
+1996-12-01,all,"CPI, all items",0,older base,101.38,0.35,6.47,6.63
+1997-01-01,all,"CPI, all items",0,older base,103.29,1.88,1.88,4.8
+1997-02-01,all,"CPI, all items",0,older base,104.07,0.76,2.65,4.22
+1997-03-01,all,"CPI, all items",0,older base,104.0,-0.07,2.58,4.84
+1997-04-01,all,"CPI, all items",0,older base,104.42,0.4,3.0,4.96
+1997-05-01,all,"CPI, all items",0,older base,104.63,0.2,3.21,4.49
+1997-06-01,all,"CPI, all items",0,older base,104.54,-0.09,3.12,5.19
+1997-07-01,all,"CPI, all items",0,older base,105.38,0.8,3.95,5.3
+1997-08-01,all,"CPI, all items",0,older base,106.33,0.9,4.88,6.29
+1997-09-01,all,"CPI, all items",0,older base,107.49,1.09,6.03,7.25
+1997-10-01,all,"CPI, all items",0,older base,108.52,0.96,7.04,7.84
+1997-11-01,all,"CPI, all items",0,older base,109.87,1.24,8.37,8.75
+1997-12-01,all,"CPI, all items",0,older base,111.79,1.75,10.27,10.27
+1998-01-01,all,"CPI, all items",0,1996 = 100,119.13,6.57,6.57,15.34
+1998-02-01,all,"CPI, all items",0,1996 = 100,133.96,12.45,19.83,28.72
+1998-03-01,all,"CPI, all items",0,1996 = 100,141.06,5.3,26.18,35.63
+1998-04-01,all,"CPI, all items",0,1996 = 100,147.65,4.67,32.08,41.4
+1998-05-01,all,"CPI, all items",0,1996 = 100,155.33,5.2,38.95,48.46
+1998-06-01,all,"CPI, all items",0,1996 = 100,163.0,4.94,45.81,55.92
+1998-07-01,all,"CPI, all items",0,1996 = 100,177.94,9.17,59.17,68.86
+1998-08-01,all,"CPI, all items",0,1996 = 100,189.22,6.34,69.26,77.96
+1998-09-01,all,"CPI, all items",0,1996 = 100,196.28,3.73,75.58,82.6
+1998-10-01,all,"CPI, all items",0,1996 = 100,195.74,-0.28,75.1,80.37
+1998-11-01,all,"CPI, all items",0,1996 = 100,195.91,0.09,75.25,78.31
+1998-12-01,all,"CPI, all items",0,1996 = 100,198.47,1.31,77.54,77.54
+1999-01-01,all,"CPI, all items",0,1996 = 100,204.4,2.99,2.99,71.58
+1999-02-01,all,"CPI, all items",0,1996 = 100,207.01,1.28,4.3,54.53
+1999-03-01,all,"CPI, all items",0,1996 = 100,206.61,-0.19,4.1,46.47
+1999-04-01,all,"CPI, all items",0,1996 = 100,205.18,-0.69,3.38,38.96
+1999-05-01,all,"CPI, all items",0,1996 = 100,204.61,-0.28,3.09,31.73
+1999-06-01,all,"CPI, all items",0,1996 = 100,203.87,-0.36,2.72,25.07
+1999-07-01,all,"CPI, all items",0,1996 = 100,201.71,-1.06,1.63,13.36
+1999-08-01,all,"CPI, all items",0,1996 = 100,199.78,-0.96,0.66,5.58
+1999-09-01,all,"CPI, all items",0,1996 = 100,198.4,-0.69,-0.04,1.08
+1999-10-01,all,"CPI, all items",0,1996 = 100,198.51,0.06,0.02,1.42
+1999-11-01,all,"CPI, all items",0,1996 = 100,199.0,0.25,0.27,1.58
+1999-12-01,all,"CPI, all items",0,1996 = 100,202.45,1.73,2.01,2.01
+2000-01-01,all,"CPI, all items",0,1996 = 100,205.12,1.32,1.32,0.35
+2000-02-01,all,"CPI, all items",0,1996 = 100,205.27,0.07,1.39,-0.84
+2000-03-01,all,"CPI, all items",0,1996 = 100,204.34,-0.45,0.93,-1.1
+2000-04-01,all,"CPI, all items",0,1996 = 100,205.48,0.56,1.5,0.15
+2000-05-01,all,"CPI, all items",0,1996 = 100,207.21,0.84,2.35,1.27
+2000-06-01,all,"CPI, all items",0,1996 = 100,208.24,0.5,2.86,2.14
+2000-07-01,all,"CPI, all items",0,1996 = 100,210.91,1.28,4.18,4.56
+2000-08-01,all,"CPI, all items",0,1996 = 100,211.99,0.51,4.71,6.11
+2000-09-01,all,"CPI, all items",0,1996 = 100,211.87,-0.06,4.65,6.79
+2000-10-01,all,"CPI, all items",0,1996 = 100,214.33,1.16,5.87,7.97
+2000-11-01,all,"CPI, all items",0,1996 = 100,217.15,1.32,7.26,9.12
+2000-12-01,all,"CPI, all items",0,1996 = 100,221.37,1.94,9.35,9.35
+2001-01-01,all,"CPI, all items",0,1996 = 100,222.1,0.33,0.33,8.28
+2001-02-01,all,"CPI, all items",0,1996 = 100,224.04,0.87,1.21,9.14
+2001-03-01,all,"CPI, all items",0,1996 = 100,226.04,0.89,2.11,10.62
+2001-04-01,all,"CPI, all items",0,1996 = 100,227.07,0.46,2.57,10.51
+2001-05-01,all,"CPI, all items",0,1996 = 100,229.63,1.13,3.73,10.82
+2001-06-01,all,"CPI, all items",0,1996 = 100,233.46,1.67,5.46,12.11
+2001-07-01,all,"CPI, all items",0,1996 = 100,238.42,2.12,7.7,13.04
+2001-08-01,all,"CPI, all items",0,1996 = 100,237.92,-0.21,7.48,12.23
+2001-09-01,all,"CPI, all items",0,1996 = 100,239.44,0.64,8.16,13.01
+2001-10-01,all,"CPI, all items",0,1996 = 100,241.06,0.68,8.89,12.47
+2001-11-01,all,"CPI, all items",0,1996 = 100,245.18,1.71,10.76,12.91
+2001-12-01,all,"CPI, all items",0,1996 = 100,249.15,1.62,12.55,12.55
+2002-01-01,all,"CPI, all items",0,1996 = 100,96.95,0.0,0.0,0.0
+2002-02-01,all,"CPI, all items",0,1996 = 100,98.11,1.2,0.0,0.0
+2002-03-01,all,"CPI, all items",0,1996 = 100,98.39,0.29,0.0,0.0
+2002-04-01,all,"CPI, all items",0,1996 = 100,98.18,-0.21,0.0,0.0
+2002-05-01,all,"CPI, all items",0,1996 = 100,98.96,0.79,0.0,0.0
+2002-06-01,all,"CPI, all items",0,1996 = 100,99.26,0.3,0.0,0.0
+2002-07-01,all,"CPI, all items",0,1996 = 100,99.96,0.71,0.0,0.0
+2002-08-01,all,"CPI, all items",0,1996 = 100,100.32,0.36,0.0,0.0
+2002-09-01,all,"CPI, all items",0,1996 = 100,100.88,0.56,0.0,0.0
+2002-10-01,all,"CPI, all items",0,1996 = 100,101.36,0.48,0.0,0.0
+2002-11-01,all,"CPI, all items",0,1996 = 100,103.22,1.84,0.0,0.0
+2002-12-01,all,"CPI, all items",0,1996 = 100,104.44,1.18,0.0,0.0
+2003-01-01,all,"CPI, all items",0,1996 = 100,276.33,0.8,0.8,8.74
+2003-02-01,all,"CPI, all items",0,1996 = 100,276.87,0.2,1.0,7.34
+2003-03-01,all,"CPI, all items",0,1996 = 100,276.23,-0.23,0.77,7.12
+2003-04-01,all,"CPI, all items",0,1996 = 100,276.65,0.15,0.92,7.54
+2003-05-01,all,"CPI, all items",0,1996 = 100,277.23,0.21,1.13,6.91
+2003-06-01,all,"CPI, all items",0,1996 = 100,277.49,0.09,1.23,6.62
+2003-07-01,all,"CPI, all items",0,1996 = 100,277.58,0.03,1.26,5.79
+2003-08-01,all,"CPI, all items",0,1996 = 100,279.92,0.84,2.11,6.38
+2003-09-01,all,"CPI, all items",0,1996 = 100,280.93,0.36,2.48,6.2
+2003-10-01,all,"CPI, all items",0,1996 = 100,282.48,0.55,3.05,6.22
+2003-11-01,all,"CPI, all items",0,1996 = 100,285.32,1.01,4.08,5.33
+2003-12-01,all,"CPI, all items",0,1996 = 100,287.99,0.94,5.06,5.06
+2004-01-01,all,"CPI, all items",0,2002 = 100,110.45,0.56,0.56,4.82
+2004-02-01,all,"CPI, all items",0,2002 = 100,110.43,-0.02,0.55,4.6
+2004-03-01,all,"CPI, all items",0,2002 = 100,110.83,0.36,0.91,5.11
+2004-04-01,all,"CPI, all items",0,2002 = 100,111.91,0.97,1.89,5.92
+2004-05-01,all,"CPI, all items",0,2002 = 100,112.9,0.88,2.8,6.47
+2004-06-01,all,"CPI, all items",0,2002 = 100,113.44,0.48,3.29,6.83
+2004-07-01,all,"CPI, all items",0,2002 = 100,113.88,0.39,3.69,7.2
+2004-08-01,all,"CPI, all items",0,2002 = 100,113.98,0.09,3.78,6.67
+2004-09-01,all,"CPI, all items",0,2002 = 100,114.0,0.02,3.8,6.27
+2004-10-01,all,"CPI, all items",0,2002 = 100,114.64,0.56,4.38,6.22
+2004-11-01,all,"CPI, all items",0,2002 = 100,115.66,0.89,5.31,6.18
+2004-12-01,all,"CPI, all items",0,2002 = 100,116.86,1.04,6.4,6.4
+2005-01-01,all,"CPI, all items",0,2002 = 100,118.53,1.43,1.43,7.32
+2005-02-01,all,"CPI, all items",0,2002 = 100,118.33,-0.17,1.26,7.15
+2005-03-01,all,"CPI, all items",0,2002 = 100,120.59,1.91,3.19,8.81
+2005-04-01,all,"CPI, all items",0,2002 = 100,121.0,0.34,3.54,8.12
+2005-05-01,all,"CPI, all items",0,2002 = 100,121.25,0.21,3.76,7.4
+2005-06-01,all,"CPI, all items",0,2002 = 100,121.86,0.5,4.28,7.42
+2005-07-01,all,"CPI, all items",0,2002 = 100,122.81,0.78,5.09,7.84
+2005-08-01,all,"CPI, all items",0,2002 = 100,123.48,0.55,5.67,8.34
+2005-09-01,all,"CPI, all items",0,2002 = 100,124.33,0.69,6.39,9.06
+2005-10-01,all,"CPI, all items",0,2002 = 100,135.15,8.7,15.65,17.89
+2005-11-01,all,"CPI, all items",0,2002 = 100,136.92,1.31,17.17,18.38
+2005-12-01,all,"CPI, all items",0,2002 = 100,136.86,-0.04,17.11,17.11
+2006-01-01,all,"CPI, all items",0,2002 = 100,138.72,1.36,1.36,17.03
+2006-02-01,all,"CPI, all items",0,2002 = 100,139.53,0.58,1.95,17.92
+2006-03-01,all,"CPI, all items",0,2002 = 100,139.57,0.03,1.98,15.74
+2006-04-01,all,"CPI, all items",0,2002 = 100,139.64,0.05,2.03,15.4
+2006-05-01,all,"CPI, all items",0,2002 = 100,140.16,0.37,2.41,15.6
+2006-06-01,all,"CPI, all items",0,2002 = 100,140.79,0.45,2.87,15.53
+2006-07-01,all,"CPI, all items",0,2002 = 100,141.42,0.45,3.33,15.15
+2006-08-01,all,"CPI, all items",0,2002 = 100,141.88,0.33,3.67,14.9
+2006-09-01,all,"CPI, all items",0,2002 = 100,142.42,0.38,4.06,14.55
+2006-10-01,all,"CPI, all items",0,2002 = 100,143.65,0.86,4.96,6.29
+2006-11-01,all,"CPI, all items",0,2002 = 100,144.14,0.34,5.32,5.27
+2006-12-01,all,"CPI, all items",0,2002 = 100,145.89,1.21,6.6,6.6
+2007-01-01,all,"CPI, all items",0,2002 = 100,147.41,1.04,1.04,6.26
+2007-02-01,all,"CPI, all items",0,2002 = 100,148.32,0.62,1.67,6.3
+2007-03-01,all,"CPI, all items",0,2002 = 100,148.67,0.24,1.91,6.52
+2007-04-01,all,"CPI, all items",0,2002 = 100,148.43,-0.16,1.74,6.3
+2007-05-01,all,"CPI, all items",0,2002 = 100,148.58,0.1,1.84,6.01
+2007-06-01,all,"CPI, all items",0,2002 = 100,148.92,0.23,2.08,5.78
+2007-07-01,all,"CPI, all items",0,2002 = 100,149.99,0.72,2.81,6.06
+2007-08-01,all,"CPI, all items",0,2002 = 100,151.11,0.75,3.58,6.51
+2007-09-01,all,"CPI, all items",0,2002 = 100,152.32,0.8,4.41,6.95
+2007-10-01,all,"CPI, all items",0,2002 = 100,153.53,0.79,5.24,6.88
+2007-11-01,all,"CPI, all items",0,2002 = 100,153.81,0.18,5.43,6.71
+2007-12-01,all,"CPI, all items",0,2002 = 100,155.5,1.1,6.59,6.59
+2008-01-01,all,"CPI, all items",0,2002 = 100,158.26,1.78,1.78,7.36
+2008-02-01,all,"CPI, all items",0,2002 = 100,159.29,0.65,2.44,7.4
+2008-03-01,all,"CPI, all items",0,2002 = 100,160.81,0.95,3.42,8.17
+2008-04-01,all,"CPI, all items",0,2002 = 100,161.73,0.57,4.01,8.96
+2008-05-01,all,"CPI, all items",0,2002 = 100,164.01,1.41,5.47,10.38
+2008-06-01,all,"CPI, all items",0,2007 = 100,110.08,2.42,7.37,11.03
+2008-07-01,all,"CPI, all items",0,2007 = 100,111.59,1.37,8.85,11.9
+2008-08-01,all,"CPI, all items",0,2007 = 100,112.16,0.51,9.4,11.85
+2008-09-01,all,"CPI, all items",0,2007 = 100,113.25,0.97,10.47,12.14
+2008-10-01,all,"CPI, all items",0,2007 = 100,113.76,0.45,10.96,11.77
+2008-11-01,all,"CPI, all items",0,2007 = 100,113.9,0.12,11.1,11.68
+2008-12-01,all,"CPI, all items",0,2007 = 100,113.86,-0.04,11.06,11.06
+2009-01-01,all,"CPI, all items",0,2007 = 100,113.78,-0.07,-0.07,9.17
+2009-02-01,all,"CPI, all items",0,2007 = 100,114.02,0.21,0.14,8.6
+2009-03-01,all,"CPI, all items",0,2007 = 100,114.27,0.22,0.36,7.92
+2009-04-01,all,"CPI, all items",0,2007 = 100,113.92,-0.31,0.05,7.31
+2009-05-01,all,"CPI, all items",0,2007 = 100,113.97,0.04,0.1,6.04
+2009-06-01,all,"CPI, all items",0,2007 = 100,114.1,0.11,0.21,3.65
+2009-07-01,all,"CPI, all items",0,2007 = 100,114.61,0.45,0.66,2.71
+2009-08-01,all,"CPI, all items",0,2007 = 100,115.25,0.56,1.22,2.75
+2009-09-01,all,"CPI, all items",0,2007 = 100,116.46,1.05,2.28,2.83
+2009-10-01,all,"CPI, all items",0,2007 = 100,116.68,0.19,2.48,2.57
+2009-11-01,all,"CPI, all items",0,2007 = 100,116.65,-0.03,2.45,2.41
+2009-12-01,all,"CPI, all items",0,2007 = 100,117.03,0.33,2.78,2.78
+2010-01-01,all,"CPI, all items",0,2007 = 100,118.01,0.84,0.84,3.72
+2010-02-01,all,"CPI, all items",0,2007 = 100,118.36,0.3,1.14,3.81
+2010-03-01,all,"CPI, all items",0,2007 = 100,118.19,-0.14,0.99,3.43
+2010-04-01,all,"CPI, all items",0,2007 = 100,118.37,0.15,1.15,3.91
+2010-05-01,all,"CPI, all items",0,2007 = 100,118.71,0.29,1.44,4.16
+2010-06-01,all,"CPI, all items",0,2007 = 100,119.86,0.97,2.42,5.05
+2010-07-01,all,"CPI, all items",0,2007 = 100,121.74,1.57,4.02,6.22
+2010-08-01,all,"CPI, all items",0,2007 = 100,122.67,0.76,4.82,6.44
+2010-09-01,all,"CPI, all items",0,2007 = 100,123.21,0.44,5.28,5.8
+2010-10-01,all,"CPI, all items",0,2007 = 100,123.29,0.06,5.35,5.67
+2010-11-01,all,"CPI, all items",0,2007 = 100,124.03,0.6,5.98,6.33
+2010-12-01,all,"CPI, all items",0,2007 = 100,125.17,0.92,6.96,6.96
+2011-01-01,all,"CPI, all items",0,2007 = 100,126.29,0.89,0.89,7.02
+2011-02-01,all,"CPI, all items",0,2007 = 100,126.46,0.13,1.03,6.84
+2011-03-01,all,"CPI, all items",0,2007 = 100,126.05,-0.32,0.7,6.65
+2011-04-01,all,"CPI, all items",0,2007 = 100,125.66,-0.31,0.39,6.16
+2011-05-01,all,"CPI, all items",0,2007 = 100,125.81,0.12,0.51,5.98
+2011-06-01,all,"CPI, all items",0,2007 = 100,126.5,0.55,1.06,5.54
+2011-07-01,all,"CPI, all items",0,2007 = 100,127.35,0.67,1.74,4.61
+2011-08-01,all,"CPI, all items",0,2007 = 100,128.54,0.93,2.69,4.79
+2011-09-01,all,"CPI, all items",0,2007 = 100,128.89,0.27,2.97,4.61
+2011-10-01,all,"CPI, all items",0,2007 = 100,128.74,-0.12,2.85,4.42
+2011-11-01,all,"CPI, all items",0,2007 = 100,129.18,0.34,3.2,4.15
+2011-12-01,all,"CPI, all items",0,2007 = 100,129.91,0.57,3.79,3.79
+2012-01-01,all,"CPI, all items",0,2007 = 100,130.9,0.76,0.76,3.65
+2012-02-01,all,"CPI, all items",0,2007 = 100,130.96,0.05,0.81,3.56
+2012-03-01,all,"CPI, all items",0,2007 = 100,131.05,0.07,0.88,3.97
+2012-04-01,all,"CPI, all items",0,2007 = 100,131.32,0.21,1.09,4.5
+2012-05-01,all,"CPI, all items",0,2007 = 100,131.41,0.07,1.15,4.45
+2012-06-01,all,"CPI, all items",0,2007 = 100,132.23,0.62,1.79,4.53
+2012-07-01,all,"CPI, all items",0,2007 = 100,133.16,0.7,2.5,4.56
+2012-08-01,all,"CPI, all items",0,2007 = 100,134.43,0.95,3.48,4.58
+2012-09-01,all,"CPI, all items",0,2007 = 100,134.45,0.01,3.49,4.31
+2012-10-01,all,"CPI, all items",0,2007 = 100,134.67,0.16,3.66,4.61
+2012-11-01,all,"CPI, all items",0,2007 = 100,134.76,0.07,3.73,4.32
+2012-12-01,all,"CPI, all items",0,2007 = 100,135.49,0.54,4.3,4.3
+2013-01-01,all,"CPI, all items",0,2007 = 100,136.88,1.03,1.03,4.57
+2013-02-01,all,"CPI, all items",0,2007 = 100,137.91,0.75,1.79,5.31
+2013-03-01,all,"CPI, all items",0,2007 = 100,138.78,0.63,2.43,5.9
+2013-04-01,all,"CPI, all items",0,2007 = 100,138.64,-0.1,2.32,5.57
+2013-05-01,all,"CPI, all items",0,2007 = 100,138.6,-0.3,2.3,5.47
+2013-06-01,all,"CPI, all items",0,2007 = 100,140.03,1.03,3.35,5.9
+2013-07-01,all,"CPI, all items",0,2007 = 100,144.63,3.29,6.75,8.61
+2013-08-01,all,"CPI, all items",0,2007 = 100,146.25,1.12,7.94,8.79
+2013-09-01,all,"CPI, all items",0,2007 = 100,145.74,-0.35,7.57,8.4
+2013-10-01,all,"CPI, all items",0,2007 = 100,145.87,0.09,7.66,8.32
+2013-11-01,all,"CPI, all items",0,2007 = 100,146.04,0.12,7.79,8.37
+2013-12-01,all,"CPI, all items",0,2007 = 100,146.84,0.55,8.38,8.38
+2014-01-01,all,"CPI, all items",0,2012 = 100,110.99,1.07,1.07,8.22
+2014-02-01,all,"CPI, all items",0,2012 = 100,111.28,0.26,1.33,7.75
+2014-03-01,all,"CPI, all items",0,2012 = 100,111.37,0.08,1.41,7.32
+2014-04-01,all,"CPI, all items",0,2012 = 100,111.35,-0.02,1.39,7.25
+2014-05-01,all,"CPI, all items",0,2012 = 100,111.53,0.16,1.56,7.32
+2014-06-01,all,"CPI, all items",0,2012 = 100,112.01,0.43,1.99,6.7
+2014-07-01,all,"CPI, all items",0,2012 = 100,113.05,0.93,2.94,4.53
+2014-08-01,all,"CPI, all items",0,2012 = 100,113.58,0.47,3.42,3.99
+2014-09-01,all,"CPI, all items",0,2012 = 100,113.89,0.27,3.71,4.53
+2014-10-01,all,"CPI, all items",0,2012 = 100,114.42,0.47,4.19,4.83
+2014-11-01,all,"CPI, all items",0,2012 = 100,116.14,1.5,5.75,6.23
+2014-12-01,all,"CPI, all items",0,2012 = 100,119.0,2.46,8.36,8.36
+2015-01-01,all,"CPI, all items",0,2012 = 100,118.71,-0.24,-0.24,6.96
+2015-02-01,all,"CPI, all items",0,2012 = 100,118.28,-0.36,-0.61,6.29
+2015-03-01,all,"CPI, all items",0,2012 = 100,118.48,0.17,-0.44,6.38
+2015-04-01,all,"CPI, all items",0,2012 = 100,118.91,0.36,-0.08,6.79
+2015-05-01,all,"CPI, all items",0,2012 = 100,119.5,0.5,0.42,7.15
+2015-06-01,all,"CPI, all items",0,2012 = 100,120.14,0.54,0.96,7.26
+2015-07-01,all,"CPI, all items",0,2012 = 100,121.26,0.93,1.9,7.26
+2015-08-01,all,"CPI, all items",0,2012 = 100,121.73,0.39,2.29,7.18
+2015-09-01,all,"CPI, all items",0,2012 = 100,121.67,-0.05,2.24,6.83
+2015-10-01,all,"CPI, all items",0,2012 = 100,121.57,-0.08,2.16,6.25
+2015-11-01,all,"CPI, all items",0,2012 = 100,121.82,0.21,2.37,4.89
+2015-12-01,all,"CPI, all items",0,2012 = 100,122.99,0.96,3.35,3.35
+2016-01-01,all,"CPI, all items",0,2012 = 100,123.62,0.51,0.51,4.14
+2016-02-01,all,"CPI, all items",0,2012 = 100,123.51,-0.09,0.42,4.42
+2016-03-01,all,"CPI, all items",0,2012 = 100,123.75,0.19,0.62,4.45
+2016-04-01,all,"CPI, all items",0,2012 = 100,123.19,-0.45,0.16,3.6
+2016-05-01,all,"CPI, all items",0,2012 = 100,123.48,0.24,0.4,3.33
+2016-06-01,all,"CPI, all items",0,2012 = 100,124.29,0.66,1.06,3.45
+2016-07-01,all,"CPI, all items",0,2012 = 100,125.15,0.69,1.76,3.21
+2016-08-01,all,"CPI, all items",0,2012 = 100,125.13,-0.02,1.74,2.79
+2016-09-01,all,"CPI, all items",0,2012 = 100,125.41,0.22,1.97,3.07
+2016-10-01,all,"CPI, all items",0,2012 = 100,125.59,0.14,2.11,3.31
+2016-11-01,all,"CPI, all items",0,2012 = 100,126.18,0.47,2.59,3.58
+2016-12-01,all,"CPI, all items",0,2012 = 100,126.71,0.42,3.02,3.02
+2017-01-01,all,"CPI, all items",0,2012 = 100,127.94,0.97,0.97,3.49
+2017-02-01,all,"CPI, all items",0,2012 = 100,128.24,0.23,1.21,3.83
+2017-03-01,all,"CPI, all items",0,2012 = 100,128.22,-0.02,1.19,3.61
+2017-04-01,all,"CPI, all items",0,2012 = 100,128.33,0.09,1.28,4.17
+2017-05-01,all,"CPI, all items",0,2012 = 100,128.83,0.39,1.67,4.33
+2017-06-01,all,"CPI, all items",0,2012 = 100,129.72,0.69,2.38,4.37
+2017-07-01,all,"CPI, all items",0,2012 = 100,130.0,0.22,2.6,3.88
+2017-08-01,all,"CPI, all items",0,2012 = 100,129.91,-0.07,2.53,3.82
+2017-09-01,all,"CPI, all items",0,2012 = 100,130.08,0.13,2.66,3.72
+2017-10-01,all,"CPI, all items",0,2012 = 100,130.09,0.01,2.67,3.58
+2017-11-01,all,"CPI, all items",0,2012 = 100,130.35,0.2,2.87,3.3
+2017-12-01,all,"CPI, all items",0,2012 = 100,131.28,0.71,3.61,3.61
+2018-01-01,all,"CPI, all items",0,2012 = 100,132.1,0.62,0.62,3.25
+2018-02-01,all,"CPI, all items",0,2012 = 100,132.32,0.17,0.79,3.18
+2018-03-01,all,"CPI, all items",0,2012 = 100,132.58,0.2,0.99,3.4
+2018-04-01,all,"CPI, all items",0,2012 = 100,132.71,0.1,1.09,3.41
+2018-05-01,all,"CPI, all items",0,2012 = 100,132.99,0.21,1.3,3.23
+2018-06-01,all,"CPI, all items",0,2012 = 100,133.77,0.59,1.9,3.12
+2018-07-01,all,"CPI, all items",0,2012 = 100,134.14,0.28,2.18,3.18
+2018-08-01,all,"CPI, all items",0,2012 = 100,134.07,-0.05,2.13,3.2
+2018-09-01,all,"CPI, all items",0,2012 = 100,133.83,-0.18,1.94,2.88
+2018-10-01,all,"CPI, all items",0,2012 = 100,134.2,0.28,2.22,3.16
+2018-11-01,all,"CPI, all items",0,2012 = 100,134.56,0.27,2.5,3.23
+2018-12-01,all,"CPI, all items",0,2012 = 100,135.39,0.62,3.13,3.13
+2019-01-01,all,"CPI, all items",0,2012 = 100,135.83,0.32,0.32,2.82
+2019-02-01,all,"CPI, all items",0,2012 = 100,135.72,-0.08,0.24,2.57
+2019-03-01,all,"CPI, all items",0,2012 = 100,135.87,0.11,0.35,2.48
+2019-04-01,all,"CPI, all items",0,2012 = 100,136.47,0.44,0.8,2.83
+2019-05-01,all,"CPI, all items",0,2012 = 100,137.4,0.68,1.48,3.32
+2019-06-01,all,"CPI, all items",0,2012 = 100,138.16,0.55,2.05,3.28
+2019-07-01,all,"CPI, all items",0,2012 = 100,138.59,0.31,2.36,3.32
+2019-08-01,all,"CPI, all items",0,2012 = 100,138.75,0.12,2.48,3.49
+2019-09-01,all,"CPI, all items",0,2012 = 100,138.37,-0.27,2.2,3.39
+2019-10-01,all,"CPI, all items",0,2012 = 100,138.4,0.02,2.22,3.13
+2019-11-01,all,"CPI, all items",0,2012 = 100,138.6,0.14,2.37,3.0
+2019-12-01,all,"CPI, all items",0,2012 = 100,139.07,0.34,2.72,2.72
+2020-01-01,all,"CPI, all items",0,2018 = 100,104.330417,0.387417,0.387417,2.676944
+2020-01-01,food,"Food, beverages and tobacco",1,2018 = 100,105.889733,1.616541,,
+2020-01-01,clothing,Clothing and footwear,2,2018 = 100,104.445808,0.118541,,
+2020-01-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,102.613896,0.129202,,
+2020-01-01,household,Household equipment and routine maintenance,4,2018 = 100,104.818501,0.088598,,
+2020-01-01,health,Health,5,2018 = 100,105.301356,0.41719,,
+2020-01-01,transport,Transport,6,2018 = 100,102.96642,-0.886151,,
+2020-01-01,communication,"Information, communication and financial services",7,2018 = 100,100.458643,0.040049,,
+2020-01-01,recreation,"Recreation, sport and culture",8,2018 = 100,103.331462,0.179171,,
+2020-01-01,education,Education,9,2018 = 100,106.066696,-0.136626,,
+2020-01-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,105.423511,0.194439,,
+2020-01-01,personal,Personal care and other services,11,2018 = 100,106.429762,0.458282,,
+2020-02-01,all,"CPI, all items",0,2018 = 100,104.62,0.28,0.66,2.98
+2020-02-01,food,"Food, beverages and tobacco",1,2018 = 100,106.9,0.95,,
+2020-02-01,clothing,Clothing and footwear,2,2018 = 100,104.67,0.21,,
+2020-02-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,102.7,0.09,,
+2020-02-01,household,Household equipment and routine maintenance,4,2018 = 100,104.88,0.06,,
+2020-02-01,health,Health,5,2018 = 100,105.66,0.34,,
+2020-02-01,transport,Transport,6,2018 = 100,102.59,-0.37,,
+2020-02-01,communication,"Information, communication and financial services",7,2018 = 100,100.45,-0.01,,
+2020-02-01,recreation,"Recreation, sport and culture",8,2018 = 100,103.4,0.07,,
+2020-02-01,education,Education,9,2018 = 100,106.09,0.02,,
+2020-02-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,105.6,0.17,,
+2020-02-01,personal,Personal care and other services,11,2018 = 100,106.87,0.41,,
+2020-03-01,all,"CPI, all items",0,2018 = 100,104.72,0.1,0.76,2.96
+2020-03-01,food,"Food, beverages and tobacco",1,2018 = 100,107.01,0.1,,
+2020-03-01,clothing,Clothing and footwear,2,2018 = 100,104.8,0.12,,
+2020-03-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,102.72,0.02,,
+2020-03-01,household,Household equipment and routine maintenance,4,2018 = 100,105.17,0.28,,
+2020-03-01,health,Health,5,2018 = 100,105.88,0.21,,
+2020-03-01,transport,Transport,6,2018 = 100,102.15,-0.43,,
+2020-03-01,communication,"Information, communication and financial services",7,2018 = 100,100.36,-0.09,,
+2020-03-01,recreation,"Recreation, sport and culture",8,2018 = 100,103.42,0.02,,
+2020-03-01,education,Education,9,2018 = 100,106.09,0.0,,
+2020-03-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,105.98,0.36,,
+2020-03-01,personal,Personal care and other services,11,2018 = 100,107.93,0.99,,
+2020-04-01,all,"CPI, all items",0,2018 = 100,104.8,0.08,0.83710189551,2.6746350544
+2020-04-01,food,"Food, beverages and tobacco",1,2018 = 100,107.11,0.09,,
+2020-04-01,clothing,Clothing and footwear,2,2018 = 100,104.84,0.04,,
+2020-04-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,102.81,0.09,,
+2020-04-01,household,Household equipment and routine maintenance,4,2018 = 100,105.26,0.09,,
+2020-04-01,health,Health,5,2018 = 100,106.12,0.23,,
+2020-04-01,transport,Transport,6,2018 = 100,101.72,-0.42,,
+2020-04-01,communication,"Information, communication and financial services",7,2018 = 100,100.02,-0.34,,
+2020-04-01,recreation,"Recreation, sport and culture",8,2018 = 100,103.45,0.03,,
+2020-04-01,education,Education,9,2018 = 100,106.09,0.0,,
+2020-04-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,106.17,0.18,,
+2020-04-01,personal,Personal care and other services,11,2018 = 100,109.22,1.2,,
+2020-05-01,all,"CPI, all items",0,2018 = 100,104.87,0.07,0.9,2.19
+2020-05-01,food,"Food, beverages and tobacco",1,2018 = 100,106.77,-0.32,,
+2020-05-01,clothing,Clothing and footwear,2,2018 = 100,104.93,0.09,,
+2020-05-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,102.85,0.04,,
+2020-05-01,household,Household equipment and routine maintenance,4,2018 = 100,105.36,0.1,,
+2020-05-01,health,Health,5,2018 = 100,106.41,0.27,,
+2020-05-01,transport,Transport,6,2018 = 100,102.61,0.87,,
+2020-05-01,communication,"Information, communication and financial services",7,2018 = 100,100.1,0.08,,
+2020-05-01,recreation,"Recreation, sport and culture",8,2018 = 100,103.51,0.06,,
+2020-05-01,education,Education,9,2018 = 100,106.09,0.0,,
+2020-05-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,106.25,0.08,,
+2020-05-01,personal,Personal care and other services,11,2018 = 100,109.35,0.12,,
+2020-06-01,all,"CPI, all items",0,2018 = 100,105.06,0.18,1.09,1.96
+2020-06-01,food,"Food, beverages and tobacco",1,2018 = 100,107.27,0.47,,
+2020-06-01,clothing,Clothing and footwear,2,2018 = 100,104.95,0.02,,
+2020-06-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,102.81,-0.04,,
+2020-06-01,household,Household equipment and routine maintenance,4,2018 = 100,105.33,-0.03,,
+2020-06-01,health,Health,5,2018 = 100,106.55,0.13,,
+2020-06-01,transport,Transport,6,2018 = 100,103.03,0.41,,
+2020-06-01,communication,"Information, communication and financial services",7,2018 = 100,100.04,-0.06,,
+2020-06-01,recreation,"Recreation, sport and culture",8,2018 = 100,103.64,0.13,,
+2020-06-01,education,Education,9,2018 = 100,106.09,0.0,,
+2020-06-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,106.55,0.28,,
+2020-06-01,personal,Personal care and other services,11,2018 = 100,109.26,-0.08,,
+2020-07-01,all,"CPI, all items",0,2018 = 100,104.95,-0.1,0.98,1.54
+2020-07-01,food,"Food, beverages and tobacco",1,2018 = 100,106.49,-0.73,,
+2020-07-01,clothing,Clothing and footwear,2,2018 = 100,105.04,0.09,,
+2020-07-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,102.8,-0.01,,
+2020-07-01,household,Household equipment and routine maintenance,4,2018 = 100,105.44,0.1,,
+2020-07-01,health,Health,5,2018 = 100,106.86,0.29,,
+2020-07-01,transport,Transport,6,2018 = 100,102.85,-0.17,,
+2020-07-01,communication,"Information, communication and financial services",7,2018 = 100,100.06,0.02,,
+2020-07-01,recreation,"Recreation, sport and culture",8,2018 = 100,103.8,0.15,,
+2020-07-01,education,Education,9,2018 = 100,106.26,0.16,,
+2020-07-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,106.71,0.15,,
+2020-07-01,personal,Personal care and other services,11,2018 = 100,110.28,0.93,,
+2020-08-01,all,"CPI, all items",0,2018 = 100,104.9,-0.05,0.93,1.32
+2020-08-01,food,"Food, beverages and tobacco",1,2018 = 100,105.57,-0.86,,
+2020-08-01,clothing,Clothing and footwear,2,2018 = 100,105.11,0.07,,
+2020-08-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,102.82,0.02,,
+2020-08-01,household,Household equipment and routine maintenance,4,2018 = 100,105.52,0.08,,
+2020-08-01,health,Health,5,2018 = 100,106.92,0.06,,
+2020-08-01,transport,Transport,6,2018 = 100,102.71,-0.14,,
+2020-08-01,communication,"Information, communication and financial services",7,2018 = 100,100.09,0.03,,
+2020-08-01,recreation,"Recreation, sport and culture",8,2018 = 100,103.85,0.05,,
+2020-08-01,education,Education,9,2018 = 100,106.87,0.57,,
+2020-08-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,106.85,0.13,,
+2020-08-01,personal,Personal care and other services,11,2018 = 100,112.51,2.02,,
+2020-09-01,all,"CPI, all items",0,2018 = 100,104.85,-0.05,0.89,1.42
+2020-09-01,food,"Food, beverages and tobacco",1,2018 = 100,105.18,-0.37,,
+2020-09-01,clothing,Clothing and footwear,2,2018 = 100,105.1,-0.01,,
+2020-09-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,102.89,0.07,,
+2020-09-01,household,Household equipment and routine maintenance,4,2018 = 100,105.68,0.15,,
+2020-09-01,health,Health,5,2018 = 100,107.09,0.16,,
+2020-09-01,transport,Transport,6,2018 = 100,102.37,-0.33,,
+2020-09-01,communication,"Information, communication and financial services",7,2018 = 100,100.08,-0.01,,
+2020-09-01,recreation,"Recreation, sport and culture",8,2018 = 100,103.85,0.0,,
+2020-09-01,education,Education,9,2018 = 100,107.53,0.62,,
+2020-09-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,106.99,0.13,,
+2020-09-01,personal,Personal care and other services,11,2018 = 100,112.79,0.25,,
+2020-10-01,all,"CPI, all items",0,2018 = 100,104.92,0.07,0.95,1.44
+2020-10-01,food,"Food, beverages and tobacco",1,2018 = 100,105.49,0.29,,
+2020-10-01,clothing,Clothing and footwear,2,2018 = 100,105.19,0.09,,
+2020-10-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,102.85,-0.04,,
+2020-10-01,household,Household equipment and routine maintenance,4,2018 = 100,105.65,-0.03,,
+2020-10-01,health,Health,5,2018 = 100,107.25,0.15,,
+2020-10-01,transport,Transport,6,2018 = 100,102.23,-0.14,,
+2020-10-01,communication,"Information, communication and financial services",7,2018 = 100,100.06,-0.02,,
+2020-10-01,recreation,"Recreation, sport and culture",8,2018 = 100,103.87,0.02,,
+2020-10-01,education,Education,9,2018 = 100,107.57,0.04,,
+2020-10-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,107.19,0.19,,
+2020-10-01,personal,Personal care and other services,11,2018 = 100,112.67,-0.11,,
+2020-11-01,all,"CPI, all items",0,2018 = 100,105.21,0.28,1.23,1.59
+2020-11-01,food,"Food, beverages and tobacco",1,2018 = 100,106.4,0.86,,
+2020-11-01,clothing,Clothing and footwear,2,2018 = 100,105.34,0.14,,
+2020-11-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,102.81,-0.04,,
+2020-11-01,household,Household equipment and routine maintenance,4,2018 = 100,105.73,0.08,,
+2020-11-01,health,Health,5,2018 = 100,107.59,0.32,,
+2020-11-01,transport,Transport,6,2018 = 100,102.54,0.3,,
+2020-11-01,communication,"Information, communication and financial services",7,2018 = 100,100.08,0.02,,
+2020-11-01,recreation,"Recreation, sport and culture",8,2018 = 100,103.91,0.04,,
+2020-11-01,education,Education,9,2018 = 100,107.7,0.12,,
+2020-11-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,107.31,0.11,,
+2020-11-01,personal,Personal care and other services,11,2018 = 100,112.41,-0.23,,
+2020-12-01,all,"CPI, all items",0,2018 = 100,105.68,0.45,1.68,1.68
+2020-12-01,food,"Food, beverages and tobacco",1,2018 = 100,107.99,1.49,,
+2020-12-01,clothing,Clothing and footwear,2,2018 = 100,105.37,0.03,,
+2020-12-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,102.84,0.03,,
+2020-12-01,household,Household equipment and routine maintenance,4,2018 = 100,105.81,0.08,,
+2020-12-01,health,Health,5,2018 = 100,107.79,0.19,,
+2020-12-01,transport,Transport,6,2018 = 100,103.01,0.46,,
+2020-12-01,communication,"Information, communication and financial services",7,2018 = 100,100.07,-0.01,,
+2020-12-01,recreation,"Recreation, sport and culture",8,2018 = 100,103.9,-0.01,,
+2020-12-01,education,Education,9,2018 = 100,107.7,0.0,,
+2020-12-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,107.6,0.27,,
+2020-12-01,personal,Personal care and other services,11,2018 = 100,112.08,-0.29,,
+2021-01-01,all,"CPI, all items",0,2018 = 100,105.95,0.26,0.26,1.55
+2021-01-01,food,"Food, beverages and tobacco",1,2018 = 100,108.87,0.81,,
+2021-01-01,clothing,Clothing and footwear,2,2018 = 100,105.49,0.11,,
+2021-01-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,102.87,0.03,,
+2021-01-01,household,Household equipment and routine maintenance,4,2018 = 100,105.97,0.15,,
+2021-01-01,health,Health,5,2018 = 100,107.99,0.19,,
+2021-01-01,transport,Transport,6,2018 = 100,102.7,-0.3,,
+2021-01-01,communication,"Information, communication and financial services",7,2018 = 100,100.11,0.04,,
+2021-01-01,recreation,"Recreation, sport and culture",8,2018 = 100,103.95,0.05,,
+2021-01-01,education,Education,9,2018 = 100,107.74,0.04,,
+2021-01-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,107.96,0.33,,
+2021-01-01,personal,Personal care and other services,11,2018 = 100,112.34,0.23,,
+2021-02-01,all,"CPI, all items",0,2018 = 100,106.06,0.1,0.36,1.38
+2021-02-01,food,"Food, beverages and tobacco",1,2018 = 100,108.95,0.07,,
+2021-02-01,clothing,Clothing and footwear,2,2018 = 100,105.55,0.06,,
+2021-02-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,102.91,0.04,,
+2021-02-01,household,Household equipment and routine maintenance,4,2018 = 100,106.35,0.36,,
+2021-02-01,health,Health,5,2018 = 100,108.2,0.19,,
+2021-02-01,transport,Transport,6,2018 = 100,103.01,0.3,,
+2021-02-01,communication,"Information, communication and financial services",7,2018 = 100,100.08,-0.03,,
+2021-02-01,recreation,"Recreation, sport and culture",8,2018 = 100,104.01,0.06,,
+2021-02-01,education,Education,9,2018 = 100,107.74,0.0,,
+2021-02-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,108.26,0.28,,
+2021-02-01,personal,Personal care and other services,11,2018 = 100,112.18,-0.14,,
+2021-03-01,all,"CPI, all items",0,2018 = 100,106.15,0.08,0.44,1.37
+2021-03-01,food,"Food, beverages and tobacco",1,2018 = 100,109.39,0.4,,
+2021-03-01,clothing,Clothing and footwear,2,2018 = 100,105.57,0.02,,
+2021-03-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,102.95,0.04,,
+2021-03-01,household,Household equipment and routine maintenance,4,2018 = 100,106.46,0.1,,
+2021-03-01,health,Health,5,2018 = 100,108.29,0.08,,
+2021-03-01,transport,Transport,6,2018 = 100,102.75,-0.25,,
+2021-03-01,communication,"Information, communication and financial services",7,2018 = 100,100.05,-0.03,,
+2021-03-01,recreation,"Recreation, sport and culture",8,2018 = 100,104.06,0.05,,
+2021-03-01,education,Education,9,2018 = 100,107.75,0.01,,
+2021-03-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,108.44,0.17,,
+2021-03-01,personal,Personal care and other services,11,2018 = 100,111.74,-0.39,,
+2021-04-01,all,"CPI, all items",0,2018 = 100,106.29,0.13,0.58,1.42
+2021-04-01,food,"Food, beverages and tobacco",1,2018 = 100,109.61,0.2,,
+2021-04-01,clothing,Clothing and footwear,2,2018 = 100,105.77,0.19,,
+2021-04-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,103.02,0.07,,
+2021-04-01,household,Household equipment and routine maintenance,4,2018 = 100,106.74,0.26,,
+2021-04-01,health,Health,5,2018 = 100,108.49,0.18,,
+2021-04-01,transport,Transport,6,2018 = 100,102.75,0.0,,
+2021-04-01,communication,"Information, communication and financial services",7,2018 = 100,100.05,0.0,,
+2021-04-01,recreation,"Recreation, sport and culture",8,2018 = 100,104.27,0.2,,
+2021-04-01,education,Education,9,2018 = 100,107.76,0.01,,
+2021-04-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,108.67,0.21,,
+2021-04-01,personal,Personal care and other services,11,2018 = 100,112.06,0.29,,
+2021-05-01,all,"CPI, all items",0,2018 = 100,106.63,0.32,0.9,1.68
+2021-05-01,food,"Food, beverages and tobacco",1,2018 = 100,110.03,0.38,,
+2021-05-01,clothing,Clothing and footwear,2,2018 = 100,106.32,0.52,,
+2021-05-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,103.05,0.03,,
+2021-05-01,household,Household equipment and routine maintenance,4,2018 = 100,107.03,0.27,,
+2021-05-01,health,Health,5,2018 = 100,108.57,0.07,,
+2021-05-01,transport,Transport,6,2018 = 100,103.48,0.71,,
+2021-05-01,communication,"Information, communication and financial services",7,2018 = 100,100.06,0.01,,
+2021-05-01,recreation,"Recreation, sport and culture",8,2018 = 100,104.4,0.12,,
+2021-05-01,education,Education,9,2018 = 100,107.77,0.01,,
+2021-05-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,109.15,0.44,,
+2021-05-01,personal,Personal care and other services,11,2018 = 100,112.72,0.59,,
+2021-06-01,all,"CPI, all items",0,2018 = 100,106.46,-0.16,0.74,1.33
+2021-06-01,food,"Food, beverages and tobacco",1,2018 = 100,109.25,-0.71,,
+2021-06-01,clothing,Clothing and footwear,2,2018 = 100,106.19,-0.12,,
+2021-06-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,103.12,0.07,,
+2021-06-01,household,Household equipment and routine maintenance,4,2018 = 100,107.21,0.17,,
+2021-06-01,health,Health,5,2018 = 100,108.6,0.03,,
+2021-06-01,transport,Transport,6,2018 = 100,103.12,-0.35,,
+2021-06-01,communication,"Information, communication and financial services",7,2018 = 100,100.05,-0.01,,
+2021-06-01,recreation,"Recreation, sport and culture",8,2018 = 100,104.64,0.23,,
+2021-06-01,education,Education,9,2018 = 100,107.8,0.03,,
+2021-06-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,109.41,0.24,,
+2021-06-01,personal,Personal care and other services,11,2018 = 100,113.12,0.35,,
+2021-07-01,all,"CPI, all items",0,2018 = 100,106.54,0.08,0.81,1.52
+2021-07-01,food,"Food, beverages and tobacco",1,2018 = 100,109.41,0.15,,
+2021-07-01,clothing,Clothing and footwear,2,2018 = 100,106.27,0.08,,
+2021-07-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,103.17,0.05,,
+2021-07-01,household,Household equipment and routine maintenance,4,2018 = 100,107.33,0.11,,
+2021-07-01,health,Health,5,2018 = 100,108.86,0.24,,
+2021-07-01,transport,Transport,6,2018 = 100,103.11,-0.01,,
+2021-07-01,communication,"Information, communication and financial services",7,2018 = 100,100.08,0.03,,
+2021-07-01,recreation,"Recreation, sport and culture",8,2018 = 100,104.69,0.05,,
+2021-07-01,education,Education,9,2018 = 100,107.99,0.18,,
+2021-07-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,109.47,0.05,,
+2021-07-01,personal,Personal care and other services,11,2018 = 100,113.04,-0.07,,
+2021-08-01,all,"CPI, all items",0,2018 = 100,106.57,0.03,0.84,1.59
+2021-08-01,food,"Food, beverages and tobacco",1,2018 = 100,109.06,-0.32,,
+2021-08-01,clothing,Clothing and footwear,2,2018 = 100,106.2,-0.07,,
+2021-08-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,103.22,0.05,,
+2021-08-01,household,Household equipment and routine maintenance,4,2018 = 100,107.62,0.27,,
+2021-08-01,health,Health,5,2018 = 100,109.21,0.32,,
+2021-08-01,transport,Transport,6,2018 = 100,103.06,-0.05,,
+2021-08-01,communication,"Information, communication and financial services",7,2018 = 100,100.07,-0.01,,
+2021-08-01,recreation,"Recreation, sport and culture",8,2018 = 100,104.62,-0.07,,
+2021-08-01,education,Education,9,2018 = 100,109.29,1.2,,
+2021-08-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,109.58,0.1,,
+2021-08-01,personal,Personal care and other services,11,2018 = 100,113.21,0.15,,
+2021-09-01,all,"CPI, all items",0,2018 = 100,106.53,-0.04,0.8,1.6
+2021-09-01,food,"Food, beverages and tobacco",1,2018 = 100,108.55,-0.47,,
+2021-09-01,clothing,Clothing and footwear,2,2018 = 100,106.49,0.27,,
+2021-09-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,103.3,0.08,,
+2021-09-01,household,Household equipment and routine maintenance,4,2018 = 100,107.84,0.2,,
+2021-09-01,health,Health,5,2018 = 100,109.34,0.12,,
+2021-09-01,transport,Transport,6,2018 = 100,103.13,0.07,,
+2021-09-01,communication,"Information, communication and financial services",7,2018 = 100,100.06,-0.01,,
+2021-09-01,recreation,"Recreation, sport and culture",8,2018 = 100,104.74,0.11,,
+2021-09-01,education,Education,9,2018 = 100,109.4,0.1,,
+2021-09-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,109.85,0.25,,
+2021-09-01,personal,Personal care and other services,11,2018 = 100,113.26,0.04,,
+2021-10-01,all,"CPI, all items",0,2018 = 100,106.66,0.12,0.93,1.66
+2021-10-01,food,"Food, beverages and tobacco",1,2018 = 100,108.66,0.1,,
+2021-10-01,clothing,Clothing and footwear,2,2018 = 100,106.65,0.15,,
+2021-10-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,103.38,0.08,,
+2021-10-01,household,Household equipment and routine maintenance,4,2018 = 100,107.98,0.13,,
+2021-10-01,health,Health,5,2018 = 100,109.41,0.06,,
+2021-10-01,transport,Transport,6,2018 = 100,103.47,0.33,,
+2021-10-01,communication,"Information, communication and financial services",7,2018 = 100,100.1,0.04,,
+2021-10-01,recreation,"Recreation, sport and culture",8,2018 = 100,104.78,0.04,,
+2021-10-01,education,Education,9,2018 = 100,109.42,0.02,,
+2021-10-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,109.98,0.12,,
+2021-10-01,personal,Personal care and other services,11,2018 = 100,113.28,0.02,,
+2021-11-01,all,"CPI, all items",0,2018 = 100,107.05,0.37,1.3,1.75
+2021-11-01,food,"Food, beverages and tobacco",1,2018 = 100,109.57,0.84,,
+2021-11-01,clothing,Clothing and footwear,2,2018 = 100,106.75,0.09,,
+2021-11-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,103.52,0.14,,
+2021-11-01,household,Household equipment and routine maintenance,4,2018 = 100,108.36,0.35,,
+2021-11-01,health,Health,5,2018 = 100,109.42,0.01,,
+2021-11-01,transport,Transport,6,2018 = 100,104.0,0.51,,
+2021-11-01,communication,"Information, communication and financial services",7,2018 = 100,100.1,0.0,,
+2021-11-01,recreation,"Recreation, sport and culture",8,2018 = 100,104.97,0.18,,
+2021-11-01,education,Education,9,2018 = 100,109.42,0.0,,
+2021-11-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,110.22,0.22,,
+2021-11-01,personal,Personal care and other services,11,2018 = 100,113.7,0.37,,
+2021-12-01,all,"CPI, all items",0,2018 = 100,107.66,0.57,1.87,1.87
+2021-12-01,food,"Food, beverages and tobacco",1,2018 = 100,111.33,1.61,,
+2021-12-01,clothing,Clothing and footwear,2,2018 = 100,106.98,0.22,,
+2021-12-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,103.62,0.1,,
+2021-12-01,household,Household equipment and routine maintenance,4,2018 = 100,108.62,0.24,,
+2021-12-01,health,Health,5,2018 = 100,109.6,0.16,,
+2021-12-01,transport,Transport,6,2018 = 100,104.64,0.62,,
+2021-12-01,communication,"Information, communication and financial services",7,2018 = 100,100.0,-0.1,,
+2021-12-01,recreation,"Recreation, sport and culture",8,2018 = 100,105.07,0.1,,
+2021-12-01,education,Education,9,2018 = 100,109.42,0.0,,
+2021-12-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,110.48,0.24,,
+2021-12-01,personal,Personal care and other services,11,2018 = 100,113.98,0.25,,
+2022-01-01,all,"CPI, all items",0,2018 = 100,108.26,0.56,0.56,2.18
+2022-01-01,food,"Food, beverages and tobacco",1,2018 = 100,112.63,1.17,,
+2022-01-01,clothing,Clothing and footwear,2,2018 = 100,107.44,0.43,,
+2022-01-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,104.15,0.51,,
+2022-01-01,household,Household equipment and routine maintenance,4,2018 = 100,109.48,0.79,,
+2022-01-01,health,Health,5,2018 = 100,109.86,0.24,,
+2022-01-01,transport,Transport,6,2018 = 100,104.66,0.02,,
+2022-01-01,communication,"Information, communication and financial services",7,2018 = 100,99.87,-0.13,,
+2022-01-01,recreation,"Recreation, sport and culture",8,2018 = 100,105.5,0.41,,
+2022-01-01,education,Education,9,2018 = 100,109.51,0.08,,
+2022-01-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,110.88,0.36,,
+2022-01-01,personal,Personal care and other services,11,2018 = 100,114.69,0.62,,
+2022-02-01,all,"CPI, all items",0,2018 = 100,108.24,-0.02,0.54,2.06
+2022-02-01,food,"Food, beverages and tobacco",1,2018 = 100,111.68,-0.84,,
+2022-02-01,clothing,Clothing and footwear,2,2018 = 100,107.54,0.09,,
+2022-02-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,104.41,0.25,,
+2022-02-01,household,Household equipment and routine maintenance,4,2018 = 100,109.97,0.45,,
+2022-02-01,health,Health,5,2018 = 100,110.22,0.33,,
+2022-02-01,transport,Transport,6,2018 = 100,104.73,0.07,,
+2022-02-01,communication,"Information, communication and financial services",7,2018 = 100,99.83,-0.04,,
+2022-02-01,recreation,"Recreation, sport and culture",8,2018 = 100,105.86,0.34,,
+2022-02-01,education,Education,9,2018 = 100,109.59,0.07,,
+2022-02-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,111.47,0.53,,
+2022-02-01,personal,Personal care and other services,11,2018 = 100,115.38,0.6,,
+2022-03-01,all,"CPI, all items",0,2018 = 100,108.95,0.66,1.2,2.64
+2022-03-01,food,"Food, beverages and tobacco",1,2018 = 100,113.32,1.47,,
+2022-03-01,clothing,Clothing and footwear,2,2018 = 100,107.72,0.17,,
+2022-03-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,104.84,0.41,,
+2022-03-01,household,Household equipment and routine maintenance,4,2018 = 100,110.52,0.5,,
+2022-03-01,health,Health,5,2018 = 100,110.53,0.28,,
+2022-03-01,transport,Transport,6,2018 = 100,105.17,0.42,,
+2022-03-01,communication,"Information, communication and financial services",7,2018 = 100,99.83,0.0,,
+2022-03-01,recreation,"Recreation, sport and culture",8,2018 = 100,106.04,0.17,,
+2022-03-01,education,Education,9,2018 = 100,109.6,0.01,,
+2022-03-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,111.83,0.32,,
+2022-03-01,personal,Personal care and other services,11,2018 = 100,116.69,1.14,,
+2022-04-01,all,"CPI, all items",0,2018 = 100,109.98,0.95,2.15,3.47
+2022-04-01,food,"Food, beverages and tobacco",1,2018 = 100,115.31,1.76,,
+2022-04-01,clothing,Clothing and footwear,2,2018 = 100,107.71,-0.01,,
+2022-04-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,105.13,0.28,,
+2022-04-01,household,Household equipment and routine maintenance,4,2018 = 100,111.25,0.66,,
+2022-04-01,health,Health,5,2018 = 100,110.87,0.31,,
+2022-04-01,transport,Transport,6,2018 = 100,107.72,2.42,,
+2022-04-01,communication,"Information, communication and financial services",7,2018 = 100,99.83,0.0,,
+2022-04-01,recreation,"Recreation, sport and culture",8,2018 = 100,106.25,0.2,,
+2022-04-01,education,Education,9,2018 = 100,109.6,0.0,,
+2022-04-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,112.44,0.55,,
+2022-04-01,personal,Personal care and other services,11,2018 = 100,117.56,0.75,,
+2022-05-01,all,"CPI, all items",0,2018 = 100,110.42,0.4,2.56,3.55
+2022-05-01,food,"Food, beverages and tobacco",1,2018 = 100,116.21,0.78,,
+2022-05-01,clothing,Clothing and footwear,2,2018 = 100,107.49,-0.2,,
+2022-05-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,105.23,0.1,,
+2022-05-01,household,Household equipment and routine maintenance,4,2018 = 100,111.73,0.43,,
+2022-05-01,health,Health,5,2018 = 100,111.08,0.19,,
+2022-05-01,transport,Transport,6,2018 = 100,108.42,0.65,,
+2022-05-01,communication,"Information, communication and financial services",7,2018 = 100,99.86,0.03,,
+2022-05-01,recreation,"Recreation, sport and culture",8,2018 = 100,106.57,0.3,,
+2022-05-01,education,Education,9,2018 = 100,109.61,0.01,,
+2022-05-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,113.05,0.54,,
+2022-05-01,personal,Personal care and other services,11,2018 = 100,117.94,0.32,,
+2022-06-01,all,"CPI, all items",0,2018 = 100,111.09,0.61,3.19,4.35
+2022-06-01,food,"Food, beverages and tobacco",1,2018 = 100,118.27,1.77,,
+2022-06-01,clothing,Clothing and footwear,2,2018 = 100,107.66,0.16,,
+2022-06-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,105.33,0.1,,
+2022-06-01,household,Household equipment and routine maintenance,4,2018 = 100,112.32,0.53,,
+2022-06-01,health,Health,5,2018 = 100,111.27,0.17,,
+2022-06-01,transport,Transport,6,2018 = 100,108.74,0.3,,
+2022-06-01,communication,"Information, communication and financial services",7,2018 = 100,99.82,-0.04,,
+2022-06-01,recreation,"Recreation, sport and culture",8,2018 = 100,106.7,0.12,,
+2022-06-01,education,Education,9,2018 = 100,109.62,0.01,,
+2022-06-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,113.42,0.33,,
+2022-06-01,personal,Personal care and other services,11,2018 = 100,118.13,0.16,,
+2022-07-01,all,"CPI, all items",0,2018 = 100,111.8,0.64,3.85,4.94
+2022-07-01,food,"Food, beverages and tobacco",1,2018 = 100,119.64,1.16,,
+2022-07-01,clothing,Clothing and footwear,2,2018 = 100,107.91,0.23,,
+2022-07-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,105.82,0.47,,
+2022-07-01,household,Household equipment and routine maintenance,4,2018 = 100,112.6,0.25,,
+2022-07-01,health,Health,5,2018 = 100,111.36,0.08,,
+2022-07-01,transport,Transport,6,2018 = 100,109.97,1.13,,
+2022-07-01,communication,"Information, communication and financial services",7,2018 = 100,99.81,-0.01,,
+2022-07-01,recreation,"Recreation, sport and culture",8,2018 = 100,107.05,0.33,,
+2022-07-01,education,Education,9,2018 = 100,109.99,0.34,,
+2022-07-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,113.8,0.34,,
+2022-07-01,personal,Personal care and other services,11,2018 = 100,118.45,0.27,,
+2022-08-01,all,"CPI, all items",0,2018 = 100,111.57,-0.21,3.63,4.69
+2022-08-01,food,"Food, beverages and tobacco",1,2018 = 100,117.49,-1.8,,
+2022-08-01,clothing,Clothing and footwear,2,2018 = 100,107.93,0.02,,
+2022-08-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,106.43,0.58,,
+2022-08-01,household,Household equipment and routine maintenance,4,2018 = 100,112.88,0.25,,
+2022-08-01,health,Health,5,2018 = 100,111.48,0.11,,
+2022-08-01,transport,Transport,6,2018 = 100,109.88,-0.08,,
+2022-08-01,communication,"Information, communication and financial services",7,2018 = 100,99.78,-0.03,,
+2022-08-01,recreation,"Recreation, sport and culture",8,2018 = 100,107.27,0.21,,
+2022-08-01,education,Education,9,2018 = 100,112.02,1.85,,
+2022-08-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,114.18,0.33,,
+2022-08-01,personal,Personal care and other services,11,2018 = 100,118.79,0.29,,
+2022-09-01,all,"CPI, all items",0,2018 = 100,112.87,1.17,4.84,5.95
+2022-09-01,food,"Food, beverages and tobacco",1,2018 = 100,117.14,-0.3,,
+2022-09-01,clothing,Clothing and footwear,2,2018 = 100,108.15,0.2,,
+2022-09-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,106.6,0.16,,
+2022-09-01,household,Household equipment and routine maintenance,4,2018 = 100,113.27,0.35,,
+2022-09-01,health,Health,5,2018 = 100,112.12,0.57,,
+2022-09-01,transport,Transport,6,2018 = 100,119.64,8.88,,
+2022-09-01,communication,"Information, communication and financial services",7,2018 = 100,99.75,-0.03,,
+2022-09-01,recreation,"Recreation, sport and culture",8,2018 = 100,107.6,0.31,,
+2022-09-01,education,Education,9,2018 = 100,112.25,0.21,,
+2022-09-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,114.83,0.57,,
+2022-09-01,personal,Personal care and other services,11,2018 = 100,119.12,0.28,,
+2022-10-01,all,"CPI, all items",0,2018 = 100,112.75,-0.11,4.73,5.71
+2022-10-01,food,"Food, beverages and tobacco",1,2018 = 100,116.0,-0.97,,
+2022-10-01,clothing,Clothing and footwear,2,2018 = 100,108.25,0.09,,
+2022-10-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,106.79,0.18,,
+2022-10-01,household,Household equipment and routine maintenance,4,2018 = 100,113.47,0.18,,
+2022-10-01,health,Health,5,2018 = 100,112.36,0.21,,
+2022-10-01,transport,Transport,6,2018 = 100,120.06,0.35,,
+2022-10-01,communication,"Information, communication and financial services",7,2018 = 100,99.68,-0.07,,
+2022-10-01,recreation,"Recreation, sport and culture",8,2018 = 100,107.77,0.16,,
+2022-10-01,education,Education,9,2018 = 100,112.42,0.15,,
+2022-10-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,115.17,0.3,,
+2022-10-01,personal,Personal care and other services,11,2018 = 100,119.41,0.24,,
+2022-11-01,all,"CPI, all items",0,2018 = 100,112.85,0.09,4.82,5.42
+2022-11-01,food,"Food, beverages and tobacco",1,2018 = 100,116.0,0.0,,
+2022-11-01,clothing,Clothing and footwear,2,2018 = 100,108.38,0.12,,
+2022-11-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,106.87,0.07,,
+2022-11-01,household,Household equipment and routine maintenance,4,2018 = 100,113.73,0.23,,
+2022-11-01,health,Health,5,2018 = 100,112.59,0.2,,
+2022-11-01,transport,Transport,6,2018 = 100,120.07,0.01,,
+2022-11-01,communication,"Information, communication and financial services",7,2018 = 100,99.7,0.02,,
+2022-11-01,recreation,"Recreation, sport and culture",8,2018 = 100,108.01,0.22,,
+2022-11-01,education,Education,9,2018 = 100,112.44,0.02,,
+2022-11-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,115.28,0.1,,
+2022-11-01,personal,Personal care and other services,11,2018 = 100,119.93,0.44,,
+2022-12-01,all,"CPI, all items",0,2018 = 100,113.59,0.66,5.51,5.51
+2022-12-01,food,"Food, beverages and tobacco",1,2018 = 100,117.82,1.57,,
+2022-12-01,clothing,Clothing and footwear,2,2018 = 100,108.48,0.09,,
+2022-12-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,107.54,0.63,,
+2022-12-01,household,Household equipment and routine maintenance,4,2018 = 100,113.9,0.15,,
+2022-12-01,health,Health,5,2018 = 100,112.75,0.14,,
+2022-12-01,transport,Transport,6,2018 = 100,120.61,0.45,,
+2022-12-01,communication,"Information, communication and financial services",7,2018 = 100,99.64,-0.06,,
+2022-12-01,recreation,"Recreation, sport and culture",8,2018 = 100,108.26,0.23,,
+2022-12-01,education,Education,9,2018 = 100,112.45,0.01,,
+2022-12-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,115.44,0.14,,
+2022-12-01,personal,Personal care and other services,11,2018 = 100,120.72,0.66,,
+2023-01-01,all,"CPI, all items",0,2018 = 100,113.98,0.34,0.34,5.28
+2023-01-01,food,"Food, beverages and tobacco",1,2018 = 100,119.19,1.16,,
+2023-01-01,clothing,Clothing and footwear,2,2018 = 100,108.59,0.1,,
+2023-01-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,107.92,0.35,,
+2023-01-01,household,Household equipment and routine maintenance,4,2018 = 100,114.17,0.24,,
+2023-01-01,health,Health,5,2018 = 100,113.2,0.4,,
+2023-01-01,transport,Transport,6,2018 = 100,119.22,-1.15,,
+2023-01-01,communication,"Information, communication and financial services",7,2018 = 100,99.65,0.01,,
+2023-01-01,recreation,"Recreation, sport and culture",8,2018 = 100,108.53,0.25,,
+2023-01-01,education,Education,9,2018 = 100,112.58,0.12,,
+2023-01-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,115.82,0.33,,
+2023-01-01,personal,Personal care and other services,11,2018 = 100,121.74,0.84,,
+2023-02-01,all,"CPI, all items",0,2018 = 100,114.16,0.16,0.5,5.47
+2023-02-01,food,"Food, beverages and tobacco",1,2018 = 100,119.76,0.48,,
+2023-02-01,clothing,Clothing and footwear,2,2018 = 100,108.81,0.2,,
+2023-02-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,107.99,0.06,,
+2023-02-01,household,Household equipment and routine maintenance,4,2018 = 100,114.39,0.19,,
+2023-02-01,health,Health,5,2018 = 100,113.46,0.23,,
+2023-02-01,transport,Transport,6,2018 = 100,118.96,-0.22,,
+2023-02-01,communication,"Information, communication and financial services",7,2018 = 100,99.63,-0.02,,
+2023-02-01,recreation,"Recreation, sport and culture",8,2018 = 100,108.61,0.07,,
+2023-02-01,education,Education,9,2018 = 100,112.61,0.03,,
+2023-02-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,116.02,0.17,,
+2023-02-01,personal,Personal care and other services,11,2018 = 100,121.88,0.11,,
+2023-03-01,all,"CPI, all items",0,2018 = 100,114.36,0.18,0.68,4.97
+2023-03-01,food,"Food, beverages and tobacco",1,2018 = 100,120.18,0.35,,
+2023-03-01,clothing,Clothing and footwear,2,2018 = 100,108.99,0.17,,
+2023-03-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,107.71,-0.26,,
+2023-03-01,household,Household equipment and routine maintenance,4,2018 = 100,114.63,0.21,,
+2023-03-01,health,Health,5,2018 = 100,113.46,0.0,,
+2023-03-01,transport,Transport,6,2018 = 100,119.6,0.54,,
+2023-03-01,communication,"Information, communication and financial services",7,2018 = 100,99.6,-0.03,,
+2023-03-01,recreation,"Recreation, sport and culture",8,2018 = 100,108.73,0.11,,
+2023-03-01,education,Education,9,2018 = 100,112.61,0.0,,
+2023-03-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,116.3,0.24,,
+2023-03-01,personal,Personal care and other services,11,2018 = 100,122.22,0.28,,
+2023-04-01,all,"CPI, all items",0,2018 = 100,114.74,0.33,1.01,4.33
+2023-04-01,food,"Food, beverages and tobacco",1,2018 = 100,120.59,0.34,,
+2023-04-01,clothing,Clothing and footwear,2,2018 = 100,109.65,0.61,,
+2023-04-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,107.79,0.07,,
+2023-04-01,household,Household equipment and routine maintenance,4,2018 = 100,114.89,0.23,,
+2023-04-01,health,Health,5,2018 = 100,113.75,0.26,,
+2023-04-01,transport,Transport,6,2018 = 100,120.6,0.84,,
+2023-04-01,communication,"Information, communication and financial services",7,2018 = 100,99.58,-0.02,,
+2023-04-01,recreation,"Recreation, sport and culture",8,2018 = 100,108.78,0.05,,
+2023-04-01,education,Education,9,2018 = 100,112.61,0.0,,
+2023-04-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,116.7,0.34,,
+2023-04-01,personal,Personal care and other services,11,2018 = 100,123.05,0.68,,
+2023-05-01,all,"CPI, all items",0,2018 = 100,114.84,0.09,1.1,4.0
+2023-05-01,food,"Food, beverages and tobacco",1,2018 = 100,121.17,0.48,,
+2023-05-01,clothing,Clothing and footwear,2,2018 = 100,109.15,-0.46,,
+2023-05-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,107.84,0.05,,
+2023-05-01,household,Household equipment and routine maintenance,4,2018 = 100,115.12,0.2,,
+2023-05-01,health,Health,5,2018 = 100,113.88,0.11,,
+2023-05-01,transport,Transport,6,2018 = 100,119.93,-0.56,,
+2023-05-01,communication,"Information, communication and financial services",7,2018 = 100,99.59,0.01,,
+2023-05-01,recreation,"Recreation, sport and culture",8,2018 = 100,108.89,0.1,,
+2023-05-01,education,Education,9,2018 = 100,112.62,0.01,,
+2023-05-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,116.87,0.15,,
+2023-05-01,personal,Personal care and other services,11,2018 = 100,123.22,0.14,,
+2023-06-01,all,"CPI, all items",0,2018 = 100,115.0,0.14,1.24,3.52
+2023-06-01,food,"Food, beverages and tobacco",1,2018 = 100,121.64,0.39,,
+2023-06-01,clothing,Clothing and footwear,2,2018 = 100,109.24,0.08,,
+2023-06-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,107.95,0.1,,
+2023-06-01,household,Household equipment and routine maintenance,4,2018 = 100,115.21,0.08,,
+2023-06-01,health,Health,5,2018 = 100,114.14,0.23,,
+2023-06-01,transport,Transport,6,2018 = 100,119.81,-0.1,,
+2023-06-01,communication,"Information, communication and financial services",7,2018 = 100,99.59,0.0,,
+2023-06-01,recreation,"Recreation, sport and culture",8,2018 = 100,109.02,0.12,,
+2023-06-01,education,Education,9,2018 = 100,112.63,0.01,,
+2023-06-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,117.13,0.22,,
+2023-06-01,personal,Personal care and other services,11,2018 = 100,123.17,-0.04,,
+2023-07-01,all,"CPI, all items",0,2018 = 100,115.24,0.21,1.45,3.08
+2023-07-01,food,"Food, beverages and tobacco",1,2018 = 100,121.91,0.22,,
+2023-07-01,clothing,Clothing and footwear,2,2018 = 100,109.44,0.18,,
+2023-07-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,107.97,0.02,,
+2023-07-01,household,Household equipment and routine maintenance,4,2018 = 100,115.27,0.05,,
+2023-07-01,health,Health,5,2018 = 100,114.36,0.19,,
+2023-07-01,transport,Transport,6,2018 = 100,120.5,0.58,,
+2023-07-01,communication,"Information, communication and financial services",7,2018 = 100,99.57,-0.02,,
+2023-07-01,recreation,"Recreation, sport and culture",8,2018 = 100,109.21,0.17,,
+2023-07-01,education,Education,9,2018 = 100,113.37,0.66,,
+2023-07-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,117.3,0.15,,
+2023-07-01,personal,Personal care and other services,11,2018 = 100,123.16,-0.01,,
+2023-08-01,all,"CPI, all items",0,2018 = 100,115.22,-0.02,1.43,3.27
+2023-08-01,food,"Food, beverages and tobacco",1,2018 = 100,121.61,-0.25,,
+2023-08-01,clothing,Clothing and footwear,2,2018 = 100,109.14,-0.27,,
+2023-08-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,107.92,-0.05,,
+2023-08-01,household,Household equipment and routine maintenance,4,2018 = 100,115.38,0.1,,
+2023-08-01,health,Health,5,2018 = 100,114.48,0.1,,
+2023-08-01,transport,Transport,6,2018 = 100,120.48,-0.02,,
+2023-08-01,communication,"Information, communication and financial services",7,2018 = 100,99.56,-0.01,,
+2023-08-01,recreation,"Recreation, sport and culture",8,2018 = 100,109.29,0.07,,
+2023-08-01,education,Education,9,2018 = 100,114.34,0.86,,
+2023-08-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,117.47,0.14,,
+2023-08-01,personal,Personal care and other services,11,2018 = 100,123.26,0.08,,
+2023-09-01,all,"CPI, all items",0,2018 = 100,115.44,0.19,1.63,2.28
+2023-09-01,food,"Food, beverages and tobacco",1,2018 = 100,122.03,0.35,,
+2023-09-01,clothing,Clothing and footwear,2,2018 = 100,109.21,0.06,,
+2023-09-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,107.94,0.02,,
+2023-09-01,household,Household equipment and routine maintenance,4,2018 = 100,115.5,0.1,,
+2023-09-01,health,Health,5,2018 = 100,114.52,0.03,,
+2023-09-01,transport,Transport,6,2018 = 100,120.83,0.29,,
+2023-09-01,communication,"Information, communication and financial services",7,2018 = 100,99.81,0.25,,
+2023-09-01,recreation,"Recreation, sport and culture",8,2018 = 100,109.3,0.01,,
+2023-09-01,education,Education,9,2018 = 100,114.58,0.21,,
+2023-09-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,117.59,0.1,,
+2023-09-01,personal,Personal care and other services,11,2018 = 100,123.5,0.19,,
+2023-10-01,all,"CPI, all items",0,2018 = 100,115.64,0.17,1.8,2.56
+2023-10-01,food,"Food, beverages and tobacco",1,2018 = 100,122.27,0.2,,
+2023-10-01,clothing,Clothing and footwear,2,2018 = 100,109.17,-0.04,,
+2023-10-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,108.03,0.08,,
+2023-10-01,household,Household equipment and routine maintenance,4,2018 = 100,115.62,0.1,,
+2023-10-01,health,Health,5,2018 = 100,114.65,0.11,,
+2023-10-01,transport,Transport,6,2018 = 100,121.5,0.55,,
+2023-10-01,communication,"Information, communication and financial services",7,2018 = 100,99.79,-0.02,,
+2023-10-01,recreation,"Recreation, sport and culture",8,2018 = 100,109.39,0.08,,
+2023-10-01,education,Education,9,2018 = 100,114.66,0.07,,
+2023-10-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,117.71,0.1,,
+2023-10-01,personal,Personal care and other services,11,2018 = 100,123.79,0.23,,
+2023-11-01,all,"CPI, all items",0,2018 = 100,116.08,0.38,2.19,2.86
+2023-11-01,food,"Food, beverages and tobacco",1,2018 = 100,123.78,1.23,,
+2023-11-01,clothing,Clothing and footwear,2,2018 = 100,109.13,-0.04,,
+2023-11-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,108.07,0.04,,
+2023-11-01,household,Household equipment and routine maintenance,4,2018 = 100,115.58,-0.03,,
+2023-11-01,health,Health,5,2018 = 100,114.89,0.21,,
+2023-11-01,transport,Transport,6,2018 = 100,121.59,0.07,,
+2023-11-01,communication,"Information, communication and financial services",7,2018 = 100,99.77,-0.02,,
+2023-11-01,recreation,"Recreation, sport and culture",8,2018 = 100,109.5,0.1,,
+2023-11-01,education,Education,9,2018 = 100,114.67,0.01,,
+2023-11-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,117.79,0.07,,
+2023-11-01,personal,Personal care and other services,11,2018 = 100,124.44,0.53,,
+2023-12-01,all,"CPI, all items",0,2018 = 100,116.56,0.41,2.61,2.61
+2023-12-01,food,"Food, beverages and tobacco",1,2018 = 100,125.1,1.07,,
+2023-12-01,clothing,Clothing and footwear,2,2018 = 100,109.33,0.18,,
+2023-12-01,housing,"Housing, water, electricity and household fuels",3,2018 = 100,108.08,0.01,,
+2023-12-01,household,Household equipment and routine maintenance,4,2018 = 100,115.69,0.1,,
+2023-12-01,health,Health,5,2018 = 100,114.94,0.04,,
+2023-12-01,transport,Transport,6,2018 = 100,122.14,0.45,,
+2023-12-01,communication,"Information, communication and financial services",7,2018 = 100,99.84,0.07,,
+2023-12-01,recreation,"Recreation, sport and culture",8,2018 = 100,110.09,0.54,,
+2023-12-01,education,Education,9,2018 = 100,114.67,0.0,,
+2023-12-01,restaurants,Food and beverage services (restaurants),10,2018 = 100,117.83,0.03,,
+2023-12-01,personal,Personal care and other services,11,2018 = 100,125.01,0.46,,
+2024-01-01,all,"CPI, all items",0,2022 = 100,105.19,0.04,0.04,2.57
+2024-01-01,food,"Food, beverages and tobacco",1,2022 = 100,108.54,0.18,,
+2024-01-01,clothing,Clothing and footwear,2,2022 = 100,102.21,0.02,,
+2024-01-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,102.14,0.14,,
+2024-01-01,household,Household equipment and routine maintenance,4,2022 = 100,102.84,0.04,,
+2024-01-01,health,Health,5,2022 = 100,103.16,0.49,,
+2024-01-01,transport,Transport,6,2022 = 100,108.85,-0.87,,
+2024-01-01,communication,"Information, communication and financial services",7,2022 = 100,99.7,-0.05,,
+2024-01-01,recreation,"Recreation, sport and culture",8,2022 = 100,103.32,0.26,,
+2024-01-01,education,Education,9,2022 = 100,102.95,0.03,,
+2024-01-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,104.38,0.31,,
+2024-01-01,personal,Personal care and other services,11,2022 = 100,106.18,0.37,,
+2024-02-01,all,"CPI, all items",0,2022 = 100,105.58,0.37,0.41,2.75
+2024-02-01,food,"Food, beverages and tobacco",1,2022 = 100,109.63,1.0,,
+2024-02-01,clothing,Clothing and footwear,2,2022 = 100,102.28,0.07,,
+2024-02-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,102.2,0.06,,
+2024-02-01,household,Household equipment and routine maintenance,4,2022 = 100,102.96,0.12,,
+2024-02-01,health,Health,5,2022 = 100,103.39,0.22,,
+2024-02-01,transport,Transport,6,2022 = 100,109.04,0.17,,
+2024-02-01,communication,"Information, communication and financial services",7,2022 = 100,99.67,-0.03,,
+2024-02-01,recreation,"Recreation, sport and culture",8,2022 = 100,103.41,0.09,,
+2024-02-01,education,Education,9,2022 = 100,102.97,0.02,,
+2024-02-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,104.56,0.17,,
+2024-02-01,personal,Personal care and other services,11,2022 = 100,106.4,0.21,,
+2024-03-01,all,"CPI, all items",0,2022 = 100,106.13,0.52,0.93,3.05
+2024-03-01,food,"Food, beverages and tobacco",1,2022 = 100,111.19,1.42,,
+2024-03-01,clothing,Clothing and footwear,2,2022 = 100,102.51,0.22,,
+2024-03-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,102.22,0.02,,
+2024-03-01,household,Household equipment and routine maintenance,4,2022 = 100,103.04,0.08,,
+2024-03-01,health,Health,5,2022 = 100,103.61,0.21,,
+2024-03-01,transport,Transport,6,2022 = 100,109.08,0.04,,
+2024-03-01,communication,"Information, communication and financial services",7,2022 = 100,99.65,-0.02,,
+2024-03-01,recreation,"Recreation, sport and culture",8,2022 = 100,103.42,0.01,,
+2024-03-01,education,Education,9,2022 = 100,103.12,0.15,,
+2024-03-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,104.9,0.33,,
+2024-03-01,personal,Personal care and other services,11,2022 = 100,107.14,0.7,,
+2024-04-01,all,"CPI, all items",0,2022 = 100,106.4,0.25,1.19,3.0
+2024-04-01,food,"Food, beverages and tobacco",1,2022 = 100,111.16,-0.03,,
+2024-04-01,clothing,Clothing and footwear,2,2022 = 100,102.98,0.46,,
+2024-04-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,102.23,0.01,,
+2024-04-01,household,Household equipment and routine maintenance,4,2022 = 100,103.2,0.16,,
+2024-04-01,health,Health,5,2022 = 100,103.68,0.07,,
+2024-04-01,transport,Transport,6,2022 = 100,110.09,0.93,,
+2024-04-01,communication,"Information, communication and financial services",7,2022 = 100,99.63,-0.02,,
+2024-04-01,recreation,"Recreation, sport and culture",8,2022 = 100,103.49,0.07,,
+2024-04-01,education,Education,9,2022 = 100,103.14,0.02,,
+2024-04-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,105.22,0.31,,
+2024-04-01,personal,Personal care and other services,11,2022 = 100,108.56,1.33,,
+2024-05-01,all,"CPI, all items",0,2022 = 100,106.37,-0.03,1.16,2.84
+2024-05-01,food,"Food, beverages and tobacco",1,2022 = 100,110.84,-0.29,,
+2024-05-01,clothing,Clothing and footwear,2,2022 = 100,102.94,-0.04,,
+2024-05-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,102.31,0.08,,
+2024-05-01,household,Household equipment and routine maintenance,4,2022 = 100,103.25,0.05,,
+2024-05-01,health,Health,5,2022 = 100,103.72,0.04,,
+2024-05-01,transport,Transport,6,2022 = 100,109.69,-0.36,,
+2024-05-01,communication,"Information, communication and financial services",7,2022 = 100,99.58,-0.05,,
+2024-05-01,recreation,"Recreation, sport and culture",8,2022 = 100,103.59,0.1,,
+2024-05-01,education,Education,9,2022 = 100,103.14,0.0,,
+2024-05-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,105.49,0.26,,
+2024-05-01,personal,Personal care and other services,11,2022 = 100,109.5,0.87,,
+2024-06-01,all,"CPI, all items",0,2022 = 100,106.28,-0.08,1.07,2.51
+2024-06-01,food,"Food, beverages and tobacco",1,2022 = 100,110.3,-0.49,,
+2024-06-01,clothing,Clothing and footwear,2,2022 = 100,102.96,0.02,,
+2024-06-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,102.35,0.04,,
+2024-06-01,household,Household equipment and routine maintenance,4,2022 = 100,103.47,0.21,,
+2024-06-01,health,Health,5,2022 = 100,103.77,0.05,,
+2024-06-01,transport,Transport,6,2022 = 100,109.81,0.11,,
+2024-06-01,communication,"Information, communication and financial services",7,2022 = 100,99.56,-0.02,,
+2024-06-01,recreation,"Recreation, sport and culture",8,2022 = 100,103.68,0.09,,
+2024-06-01,education,Education,9,2022 = 100,103.15,0.01,,
+2024-06-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,105.59,0.09,,
+2024-06-01,personal,Personal care and other services,11,2022 = 100,109.8,0.27,,
+2024-07-01,all,"CPI, all items",0,2022 = 100,106.09,-0.18,0.89,2.13
+2024-07-01,food,"Food, beverages and tobacco",1,2022 = 100,109.23,-0.97,,
+2024-07-01,clothing,Clothing and footwear,2,2022 = 100,103.07,0.11,,
+2024-07-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,102.4,0.05,,
+2024-07-01,household,Household equipment and routine maintenance,4,2022 = 100,103.59,0.12,,
+2024-07-01,health,Health,5,2022 = 100,103.85,0.08,,
+2024-07-01,transport,Transport,6,2022 = 100,109.84,0.03,,
+2024-07-01,communication,"Information, communication and financial services",7,2022 = 100,99.56,0.0,,
+2024-07-01,recreation,"Recreation, sport and culture",8,2022 = 100,103.98,0.29,,
+2024-07-01,education,Education,9,2022 = 100,103.86,0.69,,
+2024-07-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,105.76,0.16,,
+2024-07-01,personal,Personal care and other services,11,2022 = 100,110.18,0.35,,
+2024-08-01,all,"CPI, all items",0,2022 = 100,106.06,-0.03,0.87,2.12
+2024-08-01,food,"Food, beverages and tobacco",1,2022 = 100,108.66,-0.52,,
+2024-08-01,clothing,Clothing and footwear,2,2022 = 100,103.16,0.09,,
+2024-08-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,102.43,0.03,,
+2024-08-01,household,Household equipment and routine maintenance,4,2022 = 100,103.63,0.04,,
+2024-08-01,health,Health,5,2022 = 100,103.92,0.07,,
+2024-08-01,transport,Transport,6,2022 = 100,110.08,0.22,,
+2024-08-01,communication,"Information, communication and financial services",7,2022 = 100,99.54,-0.02,,
+2024-08-01,recreation,"Recreation, sport and culture",8,2022 = 100,104.02,0.04,,
+2024-08-01,education,Education,9,2022 = 100,104.53,0.65,,
+2024-08-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,105.88,0.11,,
+2024-08-01,personal,Personal care and other services,11,2022 = 100,110.73,0.5,,
+2024-09-01,all,"CPI, all items",0,2022 = 100,105.93,-0.12,0.74,1.84
+2024-09-01,food,"Food, beverages and tobacco",1,2022 = 100,108.02,-0.59,,
+2024-09-01,clothing,Clothing and footwear,2,2022 = 100,103.21,0.05,,
+2024-09-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,102.47,0.04,,
+2024-09-01,household,Household equipment and routine maintenance,4,2022 = 100,103.75,0.12,,
+2024-09-01,health,Health,5,2022 = 100,103.96,0.04,,
+2024-09-01,transport,Transport,6,2022 = 100,109.9,-0.16,,
+2024-09-01,communication,"Information, communication and financial services",7,2022 = 100,99.53,-0.01,,
+2024-09-01,recreation,"Recreation, sport and culture",8,2022 = 100,104.07,0.05,,
+2024-09-01,education,Education,9,2022 = 100,104.83,0.29,,
+2024-09-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,106.02,0.13,,
+2024-09-01,personal,Personal care and other services,11,2022 = 100,111.15,0.38,,
+2024-10-01,all,"CPI, all items",0,2022 = 100,106.01,0.08,0.82,1.71
+2024-10-01,food,"Food, beverages and tobacco",1,2022 = 100,108.12,0.09,,
+2024-10-01,clothing,Clothing and footwear,2,2022 = 100,103.26,0.05,,
+2024-10-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,102.55,0.08,,
+2024-10-01,household,Household equipment and routine maintenance,4,2022 = 100,103.81,0.06,,
+2024-10-01,health,Health,5,2022 = 100,104.12,0.15,,
+2024-10-01,transport,Transport,6,2022 = 100,109.33,-0.52,,
+2024-10-01,communication,"Information, communication and financial services",7,2022 = 100,99.5,-0.03,,
+2024-10-01,recreation,"Recreation, sport and culture",8,2022 = 100,104.12,0.05,,
+2024-10-01,education,Education,9,2022 = 100,104.87,0.04,,
+2024-10-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,106.28,0.25,,
+2024-10-01,personal,Personal care and other services,11,2022 = 100,112.2,0.94,,
+2024-11-01,all,"CPI, all items",0,2022 = 100,106.33,0.3,1.12,1.55
+2024-11-01,food,"Food, beverages and tobacco",1,2022 = 100,108.96,0.78,,
+2024-11-01,clothing,Clothing and footwear,2,2022 = 100,103.27,0.01,,
+2024-11-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,102.59,0.04,,
+2024-11-01,household,Household equipment and routine maintenance,4,2022 = 100,103.84,0.03,,
+2024-11-01,health,Health,5,2022 = 100,104.27,0.14,,
+2024-11-01,transport,Transport,6,2022 = 100,109.44,0.1,,
+2024-11-01,communication,"Information, communication and financial services",7,2022 = 100,99.48,-0.02,,
+2024-11-01,recreation,"Recreation, sport and culture",8,2022 = 100,104.17,0.05,,
+2024-11-01,education,Education,9,2022 = 100,104.87,0.0,,
+2024-11-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,106.46,0.17,,
+2024-11-01,personal,Personal care and other services,11,2022 = 100,112.93,0.65,,
+2024-12-01,all,"CPI, all items",0,2022 = 100,106.8,0.44,1.57,1.57
+2024-12-01,food,"Food, beverages and tobacco",1,2022 = 100,110.41,1.33,,
+2024-12-01,clothing,Clothing and footwear,2,2022 = 100,103.38,0.11,,
+2024-12-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,102.6,0.01,,
+2024-12-01,household,Household equipment and routine maintenance,4,2022 = 100,103.87,0.03,,
+2024-12-01,health,Health,5,2022 = 100,104.64,0.35,,
+2024-12-01,transport,Transport,6,2022 = 100,109.48,0.04,,
+2024-12-01,communication,"Information, communication and financial services",7,2022 = 100,99.48,0.0,,
+2024-12-01,recreation,"Recreation, sport and culture",8,2022 = 100,104.26,0.09,,
+2024-12-01,education,Education,9,2022 = 100,104.92,0.05,,
+2024-12-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,106.64,0.17,,
+2024-12-01,personal,Personal care and other services,11,2022 = 100,113.22,0.26,,
+2025-01-01,all,"CPI, all items",0,2022 = 100,105.99,-0.76,-0.76,0.76
+2025-01-01,food,"Food, beverages and tobacco",1,2022 = 100,112.55,1.94,,
+2025-01-01,clothing,Clothing and footwear,2,2022 = 100,103.48,0.1,,
+2025-01-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,93.2,-9.16,,
+2025-01-01,household,Household equipment and routine maintenance,4,2022 = 100,104.01,0.13,,
+2025-01-01,health,Health,5,2022 = 100,105.06,0.4,,
+2025-01-01,transport,Transport,6,2022 = 100,109.68,0.18,,
+2025-01-01,communication,"Information, communication and financial services",7,2022 = 100,99.4,-0.08,,
+2025-01-01,recreation,"Recreation, sport and culture",8,2022 = 100,104.47,0.2,,
+2025-01-01,education,Education,9,2022 = 100,105.06,0.13,,
+2025-01-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,106.96,0.3,,
+2025-01-01,personal,Personal care and other services,11,2022 = 100,113.9,0.6,,
+2025-02-01,all,"CPI, all items",0,2022 = 100,105.48,-0.48,-1.24,-0.09
+2025-02-01,food,"Food, beverages and tobacco",1,2022 = 100,112.1,-0.4,,
+2025-02-01,clothing,Clothing and footwear,2,2022 = 100,103.49,0.01,,
+2025-02-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,89.85,-3.59,,
+2025-02-01,household,Household equipment and routine maintenance,4,2022 = 100,104.01,0.0,,
+2025-02-01,health,Health,5,2022 = 100,105.24,0.17,,
+2025-02-01,transport,Transport,6,2022 = 100,110.07,0.36,,
+2025-02-01,communication,"Information, communication and financial services",7,2022 = 100,99.41,0.01,,
+2025-02-01,recreation,"Recreation, sport and culture",8,2022 = 100,104.59,0.11,,
+2025-02-01,education,Education,9,2022 = 100,105.07,0.01,,
+2025-02-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,107.14,0.17,,
+2025-02-01,personal,Personal care and other services,11,2022 = 100,115.37,1.29,,
+2025-03-01,all,"CPI, all items",0,2022 = 100,107.22,1.65,0.39,1.03
+2025-03-01,food,"Food, beverages and tobacco",1,2022 = 100,113.49,1.24,,
+2025-03-01,clothing,Clothing and footwear,2,2022 = 100,103.96,0.45,,
+2025-03-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,97.44,8.45,,
+2025-03-01,household,Household equipment and routine maintenance,4,2022 = 100,104.02,0.01,,
+2025-03-01,health,Health,5,2022 = 100,105.47,0.22,,
+2025-03-01,transport,Transport,6,2022 = 100,109.98,-0.08,,
+2025-03-01,communication,"Information, communication and financial services",7,2022 = 100,99.41,0.0,,
+2025-03-01,recreation,"Recreation, sport and culture",8,2022 = 100,104.63,0.04,,
+2025-03-01,education,Education,9,2022 = 100,105.07,0.0,,
+2025-03-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,107.27,0.12,,
+2025-03-01,personal,Personal care and other services,11,2022 = 100,116.47,0.95,,
+2025-04-01,all,"CPI, all items",0,2022 = 100,108.47,1.17,1.56,1.95
+2025-04-01,food,"Food, beverages and tobacco",1,2022 = 100,113.57,0.07,,
+2025-04-01,clothing,Clothing and footwear,2,2022 = 100,103.92,-0.04,,
+2025-04-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,103.87,6.6,,
+2025-04-01,household,Household equipment and routine maintenance,4,2022 = 100,104.11,0.09,,
+2025-04-01,health,Health,5,2022 = 100,105.58,0.1,,
+2025-04-01,transport,Transport,6,2022 = 100,109.97,-0.01,,
+2025-04-01,communication,"Information, communication and financial services",7,2022 = 100,98.99,-0.42,,
+2025-04-01,recreation,"Recreation, sport and culture",8,2022 = 100,104.78,0.14,,
+2025-04-01,education,Education,9,2022 = 100,105.08,0.01,,
+2025-04-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,107.47,0.19,,
+2025-04-01,personal,Personal care and other services,11,2022 = 100,119.34,2.46,,
+2025-05-01,all,"CPI, all items",0,2022 = 100,108.07,-0.37,1.19,1.6
+2025-05-01,food,"Food, beverages and tobacco",1,2022 = 100,111.98,-1.4,,
+2025-05-01,clothing,Clothing and footwear,2,2022 = 100,103.95,0.03,,
+2025-05-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,103.89,0.02,,
+2025-05-01,household,Household equipment and routine maintenance,4,2022 = 100,104.07,-0.04,,
+2025-05-01,health,Health,5,2022 = 100,105.58,0.0,,
+2025-05-01,transport,Transport,6,2022 = 100,109.89,-0.07,,
+2025-05-01,communication,"Information, communication and financial services",7,2022 = 100,99.3,0.31,,
+2025-05-01,recreation,"Recreation, sport and culture",8,2022 = 100,104.87,0.09,,
+2025-05-01,education,Education,9,2022 = 100,105.08,0.0,,
+2025-05-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,107.57,0.09,,
+2025-05-01,personal,Personal care and other services,11,2022 = 100,119.62,0.23,,
+2025-06-01,all,"CPI, all items",0,2022 = 100,108.27,0.19,1.38,1.87
+2025-06-01,food,"Food, beverages and tobacco",1,2022 = 100,112.5,0.46,,
+2025-06-01,clothing,Clothing and footwear,2,2022 = 100,104.0,0.05,,
+2025-06-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,103.98,0.09,,
+2025-06-01,household,Household equipment and routine maintenance,4,2022 = 100,104.06,-0.01,,
+2025-06-01,health,Health,5,2022 = 100,105.68,0.09,,
+2025-06-01,transport,Transport,6,2022 = 100,109.97,0.07,,
+2025-06-01,communication,"Information, communication and financial services",7,2022 = 100,99.29,-0.01,,
+2025-06-01,recreation,"Recreation, sport and culture",8,2022 = 100,104.96,0.09,,
+2025-06-01,education,Education,9,2022 = 100,105.03,-0.05,,
+2025-06-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,107.65,0.07,,
+2025-06-01,personal,Personal care and other services,11,2022 = 100,120.01,0.33,,
+2025-07-01,all,"CPI, all items",0,2022 = 100,108.6,0.3,1.69,2.37
+2025-07-01,food,"Food, beverages and tobacco",1,2022 = 100,113.33,0.74,,
+2025-07-01,clothing,Clothing and footwear,2,2022 = 100,104.1,0.1,,
+2025-07-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,104.09,0.11,,
+2025-07-01,household,Household equipment and routine maintenance,4,2022 = 100,104.13,0.07,,
+2025-07-01,health,Health,5,2022 = 100,105.86,0.17,,
+2025-07-01,transport,Transport,6,2022 = 100,109.97,0.0,,
+2025-07-01,communication,"Information, communication and financial services",7,2022 = 100,99.25,-0.04,,
+2025-07-01,recreation,"Recreation, sport and culture",8,2022 = 100,105.07,0.1,,
+2025-07-01,education,Education,9,2022 = 100,105.89,0.82,,
+2025-07-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,107.73,0.07,,
+2025-07-01,personal,Personal care and other services,11,2022 = 100,120.1,0.07,,
+2025-08-01,all,"CPI, all items",0,2022 = 100,108.51,-0.08,1.6,2.31
+2025-08-01,food,"Food, beverages and tobacco",1,2022 = 100,113.0,-0.29,,
+2025-08-01,clothing,Clothing and footwear,2,2022 = 100,104.0,-0.1,,
+2025-08-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,104.12,0.03,,
+2025-08-01,household,Household equipment and routine maintenance,4,2022 = 100,104.07,-0.06,,
+2025-08-01,health,Health,5,2022 = 100,105.91,0.05,,
+2025-08-01,transport,Transport,6,2022 = 100,109.76,-0.19,,
+2025-08-01,communication,"Information, communication and financial services",7,2022 = 100,99.21,-0.04,,
+2025-08-01,recreation,"Recreation, sport and culture",8,2022 = 100,105.16,0.09,,
+2025-08-01,education,Education,9,2022 = 100,106.03,0.13,,
+2025-08-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,107.84,0.1,,
+2025-08-01,personal,Personal care and other services,11,2022 = 100,120.32,0.18,,
+2025-09-01,all,"CPI, all items",0,2022 = 100,108.74,0.21,1.82,2.65
+2025-09-01,food,"Food, beverages and tobacco",1,2022 = 100,113.43,0.38,,
+2025-09-01,clothing,Clothing and footwear,2,2022 = 100,104.03,0.03,,
+2025-09-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,104.15,0.03,,
+2025-09-01,household,Household equipment and routine maintenance,4,2022 = 100,104.06,-0.01,,
+2025-09-01,health,Health,5,2022 = 100,106.05,0.13,,
+2025-09-01,transport,Transport,6,2022 = 100,109.74,-0.02,,
+2025-09-01,communication,"Information, communication and financial services",7,2022 = 100,99.22,0.01,,
+2025-09-01,recreation,"Recreation, sport and culture",8,2022 = 100,105.18,0.02,,
+2025-09-01,education,Education,9,2022 = 100,106.04,0.01,,
+2025-09-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,107.93,0.08,,
+2025-09-01,personal,Personal care and other services,11,2022 = 100,121.81,1.24,,
+2025-10-01,all,"CPI, all items",0,2022 = 100,109.04,0.28,2.1,2.86
+2025-10-01,food,"Food, beverages and tobacco",1,2022 = 100,113.52,0.08,,
+2025-10-01,clothing,Clothing and footwear,2,2022 = 100,104.03,0.0,,
+2025-10-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,104.18,0.03,,
+2025-10-01,household,Household equipment and routine maintenance,4,2022 = 100,104.05,-0.01,,
+2025-10-01,health,Health,5,2022 = 100,106.32,0.25,,
+2025-10-01,transport,Transport,6,2022 = 100,109.85,0.1,,
+2025-10-01,communication,"Information, communication and financial services",7,2022 = 100,99.25,0.03,,
+2025-10-01,recreation,"Recreation, sport and culture",8,2022 = 100,105.35,0.16,,
+2025-10-01,education,Education,9,2022 = 100,106.19,0.14,,
+2025-10-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,107.99,0.06,,
+2025-10-01,personal,Personal care and other services,11,2022 = 100,125.52,3.05,,
+2025-11-01,all,"CPI, all items",0,2022 = 100,109.22,0.17,2.27,2.72
+2025-11-01,food,"Food, beverages and tobacco",1,2022 = 100,113.59,0.06,,
+2025-11-01,clothing,Clothing and footwear,2,2022 = 100,104.06,0.03,,
+2025-11-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,104.2,0.02,,
+2025-11-01,household,Household equipment and routine maintenance,4,2022 = 100,104.08,0.03,,
+2025-11-01,health,Health,5,2022 = 100,106.45,0.12,,
+2025-11-01,transport,Transport,6,2022 = 100,110.22,0.34,,
+2025-11-01,communication,"Information, communication and financial services",7,2022 = 100,99.23,-0.02,,
+2025-11-01,recreation,"Recreation, sport and culture",8,2022 = 100,105.37,0.02,,
+2025-11-01,education,Education,9,2022 = 100,106.19,0.0,,
+2025-11-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,108.06,0.06,,
+2025-11-01,personal,Personal care and other services,11,2022 = 100,127.04,1.21,,
+2025-12-01,all,"CPI, all items",0,2022 = 100,109.92,0.64,2.92,2.92
+2025-12-01,food,"Food, beverages and tobacco",1,2022 = 100,115.47,1.66,,
+2025-12-01,clothing,Clothing and footwear,2,2022 = 100,104.06,0.0,,
+2025-12-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,104.26,0.06,,
+2025-12-01,household,Household equipment and routine maintenance,4,2022 = 100,104.08,0.0,,
+2025-12-01,health,Health,5,2022 = 100,106.55,0.09,,
+2025-12-01,transport,Transport,6,2022 = 100,110.83,0.55,,
+2025-12-01,communication,"Information, communication and financial services",7,2022 = 100,99.2,-0.03,,
+2025-12-01,recreation,"Recreation, sport and culture",8,2022 = 100,105.48,0.1,,
+2025-12-01,education,Education,9,2022 = 100,106.2,0.01,,
+2025-12-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,108.2,0.13,,
+2025-12-01,personal,Personal care and other services,11,2022 = 100,128.31,1.0,,
+2026-01-01,all,"CPI, all items",0,2022 = 100,109.75,-0.15,-0.15,3.55
+2026-01-01,food,"Food, beverages and tobacco",1,2022 = 100,114.28,-1.03,,
+2026-01-01,clothing,Clothing and footwear,2,2022 = 100,104.06,0.0,,
+2026-01-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,104.32,0.06,,
+2026-01-01,household,Household equipment and routine maintenance,4,2022 = 100,104.18,0.1,,
+2026-01-01,health,Health,5,2022 = 100,106.76,0.2,,
+2026-01-01,transport,Transport,6,2022 = 100,110.32,-0.46,,
+2026-01-01,communication,"Information, communication and financial services",7,2022 = 100,99.21,0.01,,
+2026-01-01,recreation,"Recreation, sport and culture",8,2022 = 100,105.57,0.09,,
+2026-01-01,education,Education,9,2022 = 100,106.23,0.03,,
+2026-01-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,108.41,0.19,,
+2026-01-01,personal,Personal care and other services,11,2022 = 100,131.24,2.28,,
+2026-02-01,all,"CPI, all items",0,2022 = 100,110.5,0.68,0.53,4.76
+2026-02-01,food,"Food, beverages and tobacco",1,2022 = 100,116.04,1.54,,
+2026-02-01,clothing,Clothing and footwear,2,2022 = 100,104.25,0.18,,
+2026-02-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,104.4,0.08,,
+2026-02-01,household,Household equipment and routine maintenance,4,2022 = 100,104.23,0.05,,
+2026-02-01,health,Health,5,2022 = 100,106.93,0.16,,
+2026-02-01,transport,Transport,6,2022 = 100,110.2,-0.11,,
+2026-02-01,communication,"Information, communication and financial services",7,2022 = 100,99.32,0.11,,
+2026-02-01,recreation,"Recreation, sport and culture",8,2022 = 100,105.59,0.02,,
+2026-02-01,education,Education,9,2022 = 100,106.24,0.01,,
+2026-02-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,108.61,0.18,,
+2026-02-01,personal,Personal care and other services,11,2022 = 100,134.59,2.55,,
+2026-03-01,all,"CPI, all items",0,2022 = 100,110.95,0.41,0.94,3.48
+2026-03-01,food,"Food, beverages and tobacco",1,2022 = 100,117.28,1.07,,
+2026-03-01,clothing,Clothing and footwear,2,2022 = 100,104.64,0.37,,
+2026-03-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,104.49,0.09,,
+2026-03-01,household,Household equipment and routine maintenance,4,2022 = 100,104.27,0.04,,
+2026-03-01,health,Health,5,2022 = 100,107.04,0.1,,
+2026-03-01,transport,Transport,6,2022 = 100,110.65,0.41,,
+2026-03-01,communication,"Information, communication and financial services",7,2022 = 100,99.38,0.06,,
+2026-03-01,recreation,"Recreation, sport and culture",8,2022 = 100,105.76,0.16,,
+2026-03-01,education,Education,9,2022 = 100,106.27,0.03,,
+2026-03-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,108.79,0.17,,
+2026-03-01,personal,Personal care and other services,11,2022 = 100,134.31,-0.21,,
+2026-04-01,all,"CPI, all items",0,2022 = 100,111.09,0.13,1.06,2.42
+2026-04-01,food,"Food, beverages and tobacco",1,2022 = 100,117.05,-0.2,,
+2026-04-01,clothing,Clothing and footwear,2,2022 = 100,104.74,0.1,,
+2026-04-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,104.64,0.14,,
+2026-04-01,household,Household equipment and routine maintenance,4,2022 = 100,104.73,0.44,,
+2026-04-01,health,Health,5,2022 = 100,107.15,0.1,,
+2026-04-01,transport,Transport,6,2022 = 100,111.74,0.99,,
+2026-04-01,communication,"Information, communication and financial services",7,2022 = 100,99.81,0.43,,
+2026-04-01,recreation,"Recreation, sport and culture",8,2022 = 100,106.03,0.26,,
+2026-04-01,education,Education,9,2022 = 100,106.28,0.01,,
+2026-04-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,109.54,0.69,,
+2026-04-01,personal,Personal care and other services,11,2022 = 100,132.98,-0.99,,
+2026-05-01,all,"CPI, all items",0,2022 = 100,111.4,0.28,1.35,3.08
+2026-05-01,food,"Food, beverages and tobacco",1,2022 = 100,117.51,0.39,,
+2026-05-01,clothing,Clothing and footwear,2,2022 = 100,104.82,0.08,,
+2026-05-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,104.93,0.28,,
+2026-05-01,household,Household equipment and routine maintenance,4,2022 = 100,105.09,0.34,,
+2026-05-01,health,Health,5,2022 = 100,107.38,0.21,,
+2026-05-01,transport,Transport,6,2022 = 100,112.42,0.61,,
+2026-05-01,communication,"Information, communication and financial services",7,2022 = 100,100.26,0.45,,
+2026-05-01,recreation,"Recreation, sport and culture",8,2022 = 100,106.23,0.19,,
+2026-05-01,education,Education,9,2022 = 100,106.29,0.01,,
+2026-05-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,109.98,0.4,,
+2026-05-01,personal,Personal care and other services,11,2022 = 100,132.0,-0.74,,
+2026-06-01,all,"CPI, all items",0,2022 = 100,111.89,0.44,1.79,3.34
+2026-06-01,food,"Food, beverages and tobacco",1,2022 = 100,117.75,0.2,,
+2026-06-01,clothing,Clothing and footwear,2,2022 = 100,105.04,0.21,,
+2026-06-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,105.06,0.12,,
+2026-06-01,household,Household equipment and routine maintenance,4,2022 = 100,105.56,0.45,,
+2026-06-01,health,Health,5,2022 = 100,107.62,0.22,,
+2026-06-01,transport,Transport,6,2022 = 100,115.0,2.29,,
+2026-06-01,communication,"Information, communication and financial services",7,2022 = 100,100.54,0.28,,
+2026-06-01,recreation,"Recreation, sport and culture",8,2022 = 100,106.43,0.19,,
+2026-06-01,education,Education,9,2022 = 100,106.36,0.07,,
+2026-06-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,110.19,0.19,,
+2026-06-01,personal,Personal care and other services,11,2022 = 100,132.13,0.1,,
+2026-07-01,all,"CPI, all items",0,2022 = 100,111.73,-0.14,1.65,2.88
+2026-07-01,food,"Food, beverages and tobacco",1,2022 = 100,116.7,-0.89,,
+2026-07-01,clothing,Clothing and footwear,2,2022 = 100,105.18,0.13,,
+2026-07-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,105.12,0.06,,
+2026-07-01,household,Household equipment and routine maintenance,4,2022 = 100,105.92,0.34,,
+2026-07-01,health,Health,5,2022 = 100,107.93,0.29,,
+2026-07-01,transport,Transport,6,2022 = 100,115.6,0.52,,
+2026-07-01,communication,"Information, communication and financial services",7,2022 = 100,100.74,0.2,,
+2026-07-01,recreation,"Recreation, sport and culture",8,2022 = 100,106.73,0.28,,
+2026-07-01,education,Education,9,2022 = 100,106.95,0.55,,
+2026-07-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,110.48,0.26,,
+2026-07-01,personal,Personal care and other services,11,2022 = 100,130.96,-0.89,,
+2026-08-01,all,"CPI, all items",0,2022 = 100,111.97,0.21,1.86,3.19
+2026-08-01,food,"Food, beverages and tobacco",1,2022 = 100,117.36,0.57,,
+2026-08-01,clothing,Clothing and footwear,2,2022 = 100,105.25,0.07,,
+2026-08-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,105.17,0.05,,
+2026-08-01,household,Household equipment and routine maintenance,4,2022 = 100,106.15,0.22,,
+2026-08-01,health,Health,5,2022 = 100,108.15,0.2,,
+2026-08-01,transport,Transport,6,2022 = 100,115.02,-0.5,,
+2026-08-01,communication,"Information, communication and financial services",7,2022 = 100,100.92,0.18,,
+2026-08-01,recreation,"Recreation, sport and culture",8,2022 = 100,107.0,0.25,,
+2026-08-01,education,Education,9,2022 = 100,107.3,0.33,,
+2026-08-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,110.72,0.22,,
+2026-08-01,personal,Personal care and other services,11,2022 = 100,131.45,0.37,,
+2026-09-01,all,"CPI, all items",0,2022 = 100,112.31,0.3,2.17,3.28
+2026-09-01,food,"Food, beverages and tobacco",1,2022 = 100,118.39,0.88,,
+2026-09-01,clothing,Clothing and footwear,2,2022 = 100,105.28,0.03,,
+2026-09-01,housing,"Housing, water, electricity and household fuels",3,2022 = 100,105.21,0.04,,
+2026-09-01,household,Household equipment and routine maintenance,4,2022 = 100,106.34,0.18,,
+2026-09-01,health,Health,5,2022 = 100,108.43,0.26,,
+2026-09-01,transport,Transport,6,2022 = 100,115.05,0.03,,
+2026-09-01,communication,"Information, communication and financial services",7,2022 = 100,101.04,0.12,,
+2026-09-01,recreation,"Recreation, sport and culture",8,2022 = 100,107.08,0.07,,
+2026-09-01,education,Education,9,2022 = 100,107.56,0.24,,
+2026-09-01,restaurants,Food and beverage services (restaurants),10,2022 = 100,110.84,0.11,,
+2026-09-01,personal,Personal care and other services,11,2022 = 100,131.27,-0.14,,
