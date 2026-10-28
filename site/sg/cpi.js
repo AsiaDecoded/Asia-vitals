@@ -429,10 +429,10 @@ dash.calc('cpi_ctab', {
     };
     const sb = document.querySelector(`#cpi-sa-seg [data-s="${k}"]`); const name = sb.dataset.name || sb.textContent;
     // bars: the tab's series; lines: CPI y/y on the CPI tab, or the two food series on the food tab
-    const BAR = k === 'food' ? null : { key: k, name: name + ', 3m/3m annualised, SA', color: J.PAL[4], vals: m3(k) };
+    const BAR = k === 'food' ? null : { key: k, name: name + ', 3m/3m annualised, sa', color: J.PAL[4], vals: m3(k) };
     const LINES = k === 'food'
-      ? [{ key: 'food_ex_fbss_sa', name: 'Food excl. FBSS, 3m/3m annualised, SA', color: J.PAL[0], vals: m3('food_ex_fbss_sa') },
-        { key: 'fbss_sa', name: 'FBSS, 3m/3m annualised, SA', color: J.PAL[1], vals: m3('fbss_sa') }]
+      ? [{ key: 'food_ex_fbss_sa', name: 'Food excl. FBSS, 3m/3m annualised, sa', color: J.PAL[0], vals: m3('food_ex_fbss_sa') },
+        { key: 'fbss_sa', name: 'FBSS, 3m/3m annualised, sa', color: J.PAL[1], vals: m3('fbss_sa') }]
       : k === 'all_sa'
         ? [{ key: 'yoy', name: 'CPI, y/y', color: J.PAL[1], vals: new Map(D.data.filter((r) => r.area === 'national' && r.series === 'all' && r.yoy != null).map((r) => [r.date, Number(r.yoy)])) }]
         : [];
