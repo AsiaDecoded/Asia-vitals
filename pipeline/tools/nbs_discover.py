@@ -273,9 +273,31 @@ def stage2():
     (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
 
 
+def stage3():
+    """The new data portal (data.stats.gov.cn/dg/website/): page, scripts and the API paths in them."""
+    base = "https://data.stats.gov.cn/dg/website/"
+    raw = fetch("p3_page", base + "page.html")
+    page = text(raw)
+    srcs = re.findall(r'(?:src|href)="([^"]+\.(?:js|json)[^"]*)"', page) + ["setting/script"]
+    found = {}
+    for i, s in enumerate(srcs):
+        u = urllib.parse.urljoin(base + "page.html", s)
+        r = fetch(f"p3_js_{i:02d}", u, ext=".txt", timeout=90)
+        t = text(r)
+        for m in set(re.findall(r'["\'`](/?[A-Za-z0-9_\-]+(?:/[A-Za-z0-9_\-\.]+){1,8})["\'`]', t)):
+            if re.search(r"(?i)api|query|data|search|tree|esdata|indicator|publicrelease|external|cube|index|menu", m) \
+                    and not re.search(r"\.(css|png|svg|gif|jpg|woff|ttf|vue)$", m):
+                found.setdefault(m, []).append(i)
+        time.sleep(0.3)
+    (OUT / "api_paths.json").write_text(json.dumps({"scripts": srcs, "paths": found}, ensure_ascii=False, indent=1))
+    (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
+
+
 def main():
     if len(sys.argv) > 2 and sys.argv[2] == "stage2":
         return stage2()
+    if len(sys.argv) > 2 and sys.argv[2] == "stage3":
+        return stage3()
     summary = {}
     for name, fn in (("portal", portal), ("releases", releases), ("fallbacks", fallbacks)):
         try:
