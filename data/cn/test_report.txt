@@ -1,0 +1,14 @@
+== cn_cpi_nbs
+   CHECKS FAILED (2):
+   - January YTD differs from y/y (2): ['urban all 1988-01: YTD 107.6 vs y/y 111.2', 'rural all 1988-01: YTD 108.1 vs y/y 108.0']
+   - provincial CPI y/y for 2026-09: 1 provinces, expected 31
+== cn_ppi_nbs
+   CHECKS FAILED (8):
+   - national ind_other_mining yoy 2008-12 = 0.0 out of range
+   - national ind_other_mining yoy 2008-11 = 0.0 out of range
+   - national ind_other_mining yoy 2008-10 = 0.0 out of range
+   - national ind_other_mining yoy 2008-09 = 0.0 out of range
+   - national ind_other_mining yoy 2008-08 = 0.0 out of range
+   - national ind_other_mining yoy 2007-12 = 0.0 out of range
+   - national ind_other_mining yoy 2007-01 = 0.0 out of range
+   - YTD inconsistent with y/y (131 of 3780): ['pur_fuel_power 2026-09: YTD 104.1 vs y/y average 104.40', 'pur_fuel_power 2026-08: YTD 103.0 vs y/y average 103.25', 'pur_fuel_power 2026-07: YTD 102.1 vs y/y average 102.31', 'pur_fuel_power 2026-06: YTD 100.9 vs y/y average 101.15', 'pur_nonferrous 2025-08: YTD 106.8 vs y/y average 106.97']
