@@ -8,6 +8,7 @@ on:
     paths:
       - pipeline/sources/id_*/**
       - pipeline/core/seki.py
+      - pipeline/core/bps.py
       - .github/workflows/id-test.yml
 
 permissions:
@@ -22,10 +23,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install Excel reader
-        run: pip install xlrd
+      - name: Install Excel and PDF readers
+        run: pip install xlrd && sudo apt-get install -y -qq poppler-utils
       - name: Run the Indonesia sources
-        run: python -I pipeline/run.py id_cpi_seki | tee /tmp/report.txt
+        run: python -I pipeline/run.py id_cpi_seki id_cpi_bps id_wpi_bps | tee /tmp/report.txt
+        env:
+          BPS_KEY: ${{ secrets.BPS_KEY }}
       - name: Commit output to dev-id
         if: always()
         run: |

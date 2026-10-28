@@ -18,4 +18,6 @@ SOURCES = [
     "kr_cpi_ecos",
     "kr_ppi_ecos",
     "id_cpi_seki",
+    "id_cpi_bps",
+    "id_wpi_bps",
 ]
