@@ -306,8 +306,8 @@ dash.calc('cpi_heat', {
       { key: 'services', name: 'Services', color: '#44546A', bar: true },
       { key: 'retail_goods', name: 'Retail and other goods', color: J.PAL[4], bar: true },
       { key: 'food', name: 'Food', color: J.PAL[5], bar: true },
-      { key: 'food_ex_fbss', name: 'Food excl. FBSS', color: J.PAL[5], bar: true },
-      { key: 'fbss', name: 'FBSS', color: '#C3CCD8', bar: true },
+      { key: 'food_ex_fbss', name: 'Food excl. FBSS', color: '#4E7F22', bar: true },
+      { key: 'fbss', name: 'FBSS', color: J.PAL[5], bar: true },
       { key: 'elec_gas', name: 'Electricity and gas', color: J.PAL[6], bar: true },
       { key: 'accommodation', name: 'Accommodation', color: J.PAL[4], bar: true },
       { key: 'private_transport', name: 'Private transport', color: J.PAL[5], bar: true },
@@ -681,7 +681,7 @@ dash.calc('cpi_heat', {
     });
     ymChart();
     contribChart();
-    contribChart({ id: 'core-contrib', pre: 'core_', line: 'MAS core, y/y', keys: ['services', 'retail_goods', 'food_ex_fbss', 'fbss', 'elec_gas'] });
+    contribChart({ id: 'core-contrib', pre: 'core_', line: 'MAS core, y/y', keys: ['services', 'retail_goods', 'fbss', 'food_ex_fbss', 'elec_gas'] });
     gapChart();
     contribChart({ id: 'fe-contrib', pre: 'fe_', line: 'CPI, y/y', keys: ['exfe', 'groc', 'energy'] });
     contribChart({ id: 'xf-contrib', pre: 'xf_', line: 'CPI less food and energy, y/y', keys: ['services', 'retail_goods', 'fbss', 'acco', 'ptx'] });
