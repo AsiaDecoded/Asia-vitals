@@ -143,7 +143,7 @@ dash.calc('cpi_ctab', {
 
 (() => {
   const J = window.JG;
-  const S = { months: 120, sa: 'all_sa', movers: 3, svc: 'svc_health', fe: 'food' };
+  const S = { months: 120, sa: 'all_sa', movers: 3, svc: 'svc_health', fe: 'food', hh: 'all' };
   const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   const mLabel = (d) => (d ? MONTHS[+d.slice(5, 7) - 1] + ' ' + d.slice(0, 4) : '');
   const visible = () => !document.getElementById('inflation').hidden;
@@ -168,6 +168,7 @@ dash.calc('cpi_ctab', {
   seg('cpi-sa-seg', 'sa', 's', String);
   seg('cpi-svc-seg', 'svc', 's', String);
   seg('cpi-fe-seg', 'fe', 's', String);
+  seg('cpi-hh-seg', 'hh', 's', String);
 
   const failed = (st) => st === 'error' || st === 'connect' || st === 'declined';
 
@@ -217,7 +218,7 @@ dash.calc('cpi_ctab', {
     svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', ml).attr('x2', W - 8).attr('y1', y).attr('y2', y)
       .attr('stroke', (v) => (v === 0 ? 'var(--ad-axis)' : 'var(--ad-grid)'));
     J.axisStyle(svg.append('g').attr('transform', `translate(${ml - 4},0)`).call(d3.axisLeft(y).tickValues(ticks).tickSize(0).tickFormat(d3.format('.0f'))));
-    const short = rows.length <= 36;
+    const short = !(build && build.yearly) && rows.length <= 36;
     const xax = d3.axisBottom(x).tickSize(0);
     if (short) xax.ticks(d3.utcMonth.every(rows.length > 18 ? 3 : rows.length > 9 ? 2 : 1)).tickFormat(d3.utcFormat('%b %y'));
     else xax.ticks(Math.max(2, Math.round((W - ml) / 70))).tickFormat(d3.utcFormat('%Y'));
@@ -238,7 +239,7 @@ dash.calc('cpi_ctab', {
         rule.attr('display', null).attr('x1', px).attr('x2', px);
         dots.forEach((d, i) => (r[series[i].key] == null ? d.attr('display', 'none') : d.attr('display', null).attr('cx', px).attr('cy', y(r[series[i].key]))));
         const cr = card.getBoundingClientRect();
-        J.showTip(card, tip, mLabel(r.date), series.map((s) => [s.color, s.name, pct(r[s.key])]), ev.clientX - cr.left, ev.clientY - cr.top);
+        J.showTip(card, tip, build && build.label ? build.label(r.date) : mLabel(r.date), series.map((s) => [s.color, s.name, pct(r[s.key])]), ev.clientX - cr.left, ev.clientY - cr.top);
       })
       .on('mouseleave', () => { rule.attr('display', 'none'); dots.forEach((d) => d.attr('display', 'none')); tip.style.display = 'none'; });
   }
@@ -408,6 +409,29 @@ dash.calc('cpi_ctab', {
       { key: 'gs_services', name: 'Services', color: J.PAL[0] },
       { key: 'services', name: 'MAS services', color: J.PAL[4] },
     ], 280);
+  }
+
+  // CPI by household income group: SingStat's half-yearly y/y for the lowest 20%, middle 60% and highest 20%.
+  function hhChart() {
+    if (!document.getElementById('cpi-hh-chart')) return;
+    lineChart('cpi-hh-chart', 'cpi-hh', 'cpi-hh-legend', 'national', [
+      { key: 'l20', name: 'Lowest 20%', color: C[0] },
+      { key: 'm60', name: 'Middle 60%', color: C[4] },
+      { key: 'h20', name: 'Highest 20%', color: C[1] },
+    ], 280, {
+      ids: ['sg_cpi_hh'],
+      yearly: true,
+      label: (d) => `${d.slice(5, 7) === '06' ? '1H' : '2H'} ${d.slice(0, 4)}`,
+      rows: (hh) => {
+        const by = new Map();
+        hh.forEach((r) => {
+          if (r.series !== S.hh || r.yoy === '' || r.yoy == null) return;
+          if (!by.has(r.date)) by.set(r.date, { date: r.date });
+          by.get(r.date)[r.group] = Number(r.yoy);
+        });
+        return J.slice(Array.from(by.values()).sort((p, q) => (p.date < q.date ? -1 : 1)), 'cpi-hh');
+      },
+    });
   }
 
   function saChart() {
@@ -837,6 +861,7 @@ dash.calc('cpi_ctab', {
     contribChart({ id: 'core-contrib', pre: 'core_', line: 'MAS core, y/y', keys: ['services', 'retail_goods', 'fbss', 'food_ex_fbss', 'elec_gas'] });
     gsChart();
     svcChart();
+    hhChart();
   };
 
   dash.onData(() => { tiles(); takeaway(); heat(); ctab(); table(); moversTable(); J.redrawCpi(); });

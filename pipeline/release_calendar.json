@@ -49,6 +49,9 @@
    {"ref": "2026-12", "date": "2027-01-25", "from": "2027-01-22", "to": "2027-01-28", "status": "expected"},
    {"ref": "2027-01", "date": "2027-02-23", "from": "2027-02-23", "to": "2027-02-26", "status": "expected"},
    {"ref": "2027-02", "date": "2027-03-23", "from": "2027-03-23", "to": "2027-03-26", "status": "expected"}]},
+  "sg_cpi_hh": {"label": "Singapore CPI by household income group (half-yearly)", "sources": ["sg_cpi_hh_singstat"], "time_sgt": "13:00", "dates": [
+   {"ref": "2026-H2", "date": "2027-01-25", "from": "2027-01-22", "to": "2027-02-01", "status": "expected"},
+   {"ref": "2027-H1", "date": "2027-07-23", "from": "2027-07-22", "to": "2027-07-30", "status": "expected"}]},
   "sg_ppi": {"label": "Singapore producer prices", "sources": ["sg_ppi_singstat"], "time_sgt": "13:00", "dates": [
    {"ref": "2026-09", "date": "2026-10-29", "from": "2026-10-27", "to": "2026-11-03", "status": "expected"},
    {"ref": "2026-10", "date": "2026-11-27", "from": "2026-11-25", "to": "2026-12-02", "status": "expected"},

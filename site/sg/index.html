@@ -367,6 +367,20 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
       </section>
     </div>
 
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-hh">
+        <div class="jg-cardhead">
+          <div><h2>Singapore CPI by household income group</h2></div>
+          <div class="jg-seg" id="cpi-hh-seg" role="group" aria-label="Measure">
+            <button data-s="all" aria-pressed="true">All items</button><button data-s="less_accom">Ex-accommodation</button><button data-s="less_imputed">Ex-imputed rent</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units">% y/y, half-yearly</span><div class="jg-legend" id="cpi-hh-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-hh-chart" data-source="sg_cpi_hh"></div>
+        <div class="ad-foot"><span>Source: SingStat</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
     <section class="jg-card ad-notes" id="chart-notes">
       <h2>Chart notes</h2>
       <p class="jg-foot">Weights are SingStat&rsquo;s published 2024-basket weights (Information Paper IP-E61), % of CPI; MAS&rsquo;s for services and retail and other goods. Calculated series chain the published weights of the 2014, 2019 and 2024 baskets (see Methodology). FBSS: food and beverage serving services.</p>
@@ -383,6 +397,7 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
         <li><b>Chart 7, Singapore MAS core inflation contribution:</b> contributions of services (31.7%), retail and other goods (10.3%), FBSS (13.9%), food excl. FBSS (6.5%) and electricity and gas (2.0%) to MAS core y/y, ppt, at MAS&rsquo;s weights (2014 basket split between services and retail and other goods estimated), Asia Decoded calculations.</li>
         <li><b>Chart 8, Singapore food and energy CPI:</b> % y/y. Food tab: food excl. FBSS (6.5%) and FBSS (13.9%); energy tab: electricity (1.8%) and petrol (1.7%).</li>
         <li><b>Chart 9, Singapore services CPI:</b> % y/y, one series per tab, Asia Decoded calculations. Services as in chart 4 (74.7%): MAS core services plus accommodation, FBSS and private transport services. Health (9.1%: outpatient and inpatient care, other health services, health insurance), land transport (2.6%: bus and train, point-to-point transport, commuting fares), airfares (1.3%), rent: actual rentals (2.9%) and imputed rentals (21.4%), and other services (37.3%, including FBSS, 13.9%). Actual rentals fell in Oct&ndash;Dec 2020, when public rental flat households received a 50% rental rebate, which also lifts their y/y in Oct&ndash;Dec 2021. Land transport, airfares and the two rentals are SingStat&rsquo;s published indices, over their full history (land transport from 2006, the others from 2016); health and other services are built from published indices and weights, from 2016.</li>
+        <li><b>Chart 10, Singapore CPI by household income group:</b> SingStat&rsquo;s published y/y for the CPI of the lowest 20%, middle 60% and highest 20% of resident households by income, each with its own expenditure weights, half-yearly (each half-year against the same half a year earlier; January&ndash;June shown at June, July&ndash;December at December). Tabs: all items (from 1994), and all items less accommodation and less imputed rentals for housing (from 2016). Released in January and July.</li>
       </ol>
     </section>
 
