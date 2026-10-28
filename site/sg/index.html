@@ -293,6 +293,21 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
     </div>
 
     <div class="jg-grid">
+      <section class="jg-card" id="core-contrib">
+        <h2>Singapore MAS core inflation contribution</h2>
+        <div class="ad-top"><span class="ad-units">ppt</span><div class="jg-legend" id="core-contrib-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="core-contrib-chart" data-source="sg_cpi_contrib"></div>
+        <div class="ad-foot"><span>Source: SingStat, MAS. FBSS: food and beverage serving services.</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-drivers">
+        <h2>Singapore food and energy CPI</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-drivers-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart small" id="cpi-drivers-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: SingStat. FBSS: food and beverage serving services.</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
       <section class="jg-card" id="cpi-gapc">
         <h2>MAS core vs CPI less food and energy</h2>
         <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-gapc-legend"></div><span class="ad-units r"></span></div>
@@ -336,21 +351,6 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
         <div class="ad-top"><span class="ad-units">% m/m, seasonally adjusted</span><span></span><span class="ad-units r"></span></div>
         <div class="jg-chart" id="cpi-sa-chart" data-source="cpi_series"></div>
         <div class="ad-foot"><span>Source: SingStat</span><span class="ad-brand">Asia Decoded</span></div>
-      </section>
-    </div>
-
-    <div class="jg-grid">
-      <section class="jg-card" id="core-contrib">
-        <h2>Singapore MAS core inflation contribution</h2>
-        <div class="ad-top"><span class="ad-units">ppt</span><div class="jg-legend" id="core-contrib-legend"></div><span class="ad-units r"></span></div>
-        <div class="jg-chart" id="core-contrib-chart" data-source="sg_cpi_contrib"></div>
-        <div class="ad-foot"><span>Source: SingStat, MAS. FBSS: food and beverage serving services.</span><span class="ad-brand">Asia Decoded</span></div>
-      </section>
-      <section class="jg-card" id="cpi-drivers">
-        <h2>Singapore food and energy CPI</h2>
-        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-drivers-legend"></div><span class="ad-units r"></span></div>
-        <div class="jg-chart small" id="cpi-drivers-chart" data-source="cpi_series"></div>
-        <div class="ad-foot"><span>Source: SingStat. FBSS: food and beverage serving services.</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
     </div>
 
