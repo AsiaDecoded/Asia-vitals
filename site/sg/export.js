@@ -117,7 +117,7 @@
       cells: Array.from(tr.cells).map((td) => ({ text: td.dataset.label || td.textContent, neg: td.classList.contains('neg'), bg: td.style.background || '' })),
     }));
     if (!body.length) return null;
-    const heat = table.id === 'cpi-heat-table';
+    const heat = table.id === 'cpi-heat-table' || table.id === 'cpi-ctab-table';
     const pad = 18, cpad = 10, lineH = 24, gapH = 10, indent = 14;
     const centre = table.id === 'cpi-table' || table.id === 'cpi-movers-table' || heat;
     const m = document.createElement('canvas').getContext('2d');

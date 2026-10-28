@@ -737,6 +737,7 @@ dash.calc('cpi_ctab', {
 
   function table() {
     const tb = document.querySelector('#cpi-table tbody');
+    if (!tb) return;
     const C = dash.data('cpi_table');
     if (failed(C.status)) { tb.replaceChildren(); const td = tb.insertRow().insertCell(); td.colSpan = 6; J.fail(td); return; }
     if (C.status !== 'ok') return;
