@@ -305,6 +305,7 @@ dash.calc('cpi_heat', {
       { key: 'ptx', name: 'Private transport ex-fuel', color: J.PAL[0], bar: true },
       { key: 'services', name: 'Services', color: J.PAL[4], bar: true },
       { key: 'retail_goods', name: 'Retail and other goods', color: '#1F4E79', bar: true },
+      { key: 'goods', name: 'Goods', color: '#1F4E79', bar: true },
       { key: 'food', name: 'Food', color: J.PAL[5], bar: true },
       { key: 'food_ex_fbss', name: 'Food excl. FBSS', color: '#A6A6A6', bar: true },
       { key: 'fbss', name: 'FBSS', color: J.PAL[5], bar: true },
@@ -317,7 +318,7 @@ dash.calc('cpi_heat', {
     const by = new Map();
     D.data.forEach((r) => {
       const v = r.contrib_yoy === '' || r.contrib_yoy == null ? null : Number(r.contrib_yoy);
-      if (opt.pre ? !r.series.startsWith(opt.pre) : /^(core|fe|xf)_/.test(r.series)) return;
+      if (opt.pre ? !r.series.startsWith(opt.pre) : /^(core|fe|xf|gs)_/.test(r.series)) return;
       if (!by.has(r.date)) by.set(r.date, { date: r.date });
       by.get(r.date)[r.series.slice(opt.pre.length)] = v;
     });
@@ -376,6 +377,15 @@ dash.calc('cpi_heat', {
       { key: 'svc_air', name: 'Airfares (1.3%)', color: C[5] },
       { key: 'svc_rent', name: 'Actual rentals (2.9%)', color: C[2] },
       { key: 'svc_other', name: 'Other services (44.8%)', color: C[3] },
+    ], 280);
+  }
+
+  // Goods and services CPI (services incl. FBSS; goods = all items less services); y/y.
+  function gsChart() {
+    if (!document.getElementById('gs-yoy-chart')) return;
+    lineChart('gs-yoy-chart', 'gs-yoy', 'gs-yoy-legend', 'national', [
+      { key: 'gs_services', name: 'Services (74.7%)', color: J.PAL[4] },
+      { key: 'gs_goods', name: 'Goods (25.3%)', color: '#1F4E79' },
     ], 280);
   }
 
@@ -684,8 +694,10 @@ dash.calc('cpi_heat', {
     ymChart();
     contribChart();
     contribChart({ id: 'core-contrib', pre: 'core_', line: 'MAS core, y/y', keys: ['services', 'retail_goods', 'fbss', 'food_ex_fbss', 'elec_gas'] });
+    gsChart();
     svcChart();
     contribChart({ id: 'fe-contrib', pre: 'fe_', line: 'CPI, y/y', keys: ['exfe', 'groc', 'energy'] });
+    contribChart({ id: 'gs-contrib', pre: 'gs_', line: 'CPI, y/y', keys: ['services', 'goods'] });
     contribChart({ id: 'xf-contrib', pre: 'xf_', line: 'CPI less food and energy, y/y', keys: ['services', 'retail_goods', 'fbss', 'acco', 'ptx'] });
   };
 

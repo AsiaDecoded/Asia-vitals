@@ -100,7 +100,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 25  # bump when the outputs change, so the next run rebuilds them
+VERSION = 26  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -420,6 +420,54 @@ SVC_LABELS = {"svc_health": "Services: health (calculated)", "svc_land": "Servic
               "svc_other": "Services: other (calculated)",
               "svc_all": "Services, broad: MAS services + accommodation + private transport services (calculated)"}
 
+
+# CPI split into services and goods. Services: MAS services ("S", CORE_WEIGHTS; 2014 estimated), accommodation
+# (HEADLINE_WEIGHTS), FBSS (CORE_WEIGHTS) and, in the 2024 basket only (indexed from Jan 2024), private transport
+# services, taken as private transport less cars, motorcycles, petrol and other fuel (see _SVC). Goods: all items less
+# services (food excl. FBSS, retail and other goods, electricity and gas, cars, motorcycles, fuel; before 2024 also
+# private transport services). Signed weights per 10,000 of CPI.
+GS_SERVICES = {b: {"S": v["services"], "1.03.1": v["acco"], "1.11": CORE_WEIGHTS[b]["fbss"], **v["ptx"]}
+               for b, v in _SVC.items()}
+GS_PARTS = {"gs_services": GS_SERVICES,
+            "gs_goods": {b: {"1": 10000, **{c: -w for c, w in sv.items()}} for b, sv in GS_SERVICES.items()}}
+GS_LABELS = {"gs_services": "Services, incl. FBSS (calculated)", "gs_goods": "Goods (calculated)"}
+
+
+def _contrib_gs(idx, mas, errors):
+    """Contributions of goods and services to all-items y/y, Jan 2016 on; same method as _contrib_fe (2014 basket
+    anchored at Jan 2015), goods being all items less services, so the parts add up exactly."""
+    src = dict(idx, S=mas["2"])
+    A = idx["1"]
+    segs = [("2014", "2014-01-01", "2018-12-01", "2015-01-01"),
+            ("2019", "2019-01-01", "2023-12-01", "2018-12-01"),
+            ("2024", "2024-01-01", max(A), "2023-12-01")]
+    seg_of = lambda d: next((x for x in segs if x[1] <= d <= x[2]), None)  # noqa: E731
+    keys = [("services", "gs_services"), ("goods", "gs_goods")]
+
+    def part(seg, k, x, y):
+        b, _, _, L = seg
+        return A[L] * sum(w / 1e4 * (src[c][y] - src[c][x]) / src[c][L] for c, w in GS_PARTS[k][b].items())
+    rows = []
+    for t in sorted(A):
+        s = _shift(t, -12)
+        St, Ss = seg_of(t), seg_of(s)
+        if t < "2016-01-01" or not St or not Ss:
+            continue
+        if St is Ss:
+            C = {k: part(St, k, s, t) for _, k in keys}
+        else:
+            C = {k: part(Ss, k, s, St[3]) + part(St, k, St[3], t) for _, k in keys}
+        C = {k: v / A[s] * 100 for k, v in C.items()}
+        tot = (A[t] / A[s] - 1) * 100
+        if abs(sum(C.values()) - tot) > 0.02:
+            errors.append(f"goods and services contributions {t}: parts sum {sum(C.values()):.3f}, all items {tot:.3f}")
+        rows.append({"date": t, "series": "gs_all", "label": "All items", "order": 40, "contrib_yoy": round(tot, 2)})
+        for i, (k, key) in enumerate(keys, 1):
+            rows.append({"date": t, "series": key, "label": GS_LABELS[key].replace(" (calculated)", ""),
+                         "order": 40 + i, "contrib_yoy": round(C[key], 2)})
+    return rows
+
+
 GAP_PARTS = {
     "core_only": {"2014": {"1.01": 774, "1.03.2.3": 215, "1.03.2.4": 34},
                   "2019": {"1.01": 687, "1.03.2.3": 159, "1.03.2.4": 29},
@@ -592,7 +640,8 @@ def update(**_):
     core_contrib, core_weights = _contrib_core(idx, mas, errors)
     fe_contrib = _contrib_fe(idx, errors)
     xf_contrib = _contrib_xf(idx, mas, errors)
-    contrib = sorted(contrib + core_contrib + fe_contrib + xf_contrib, key=lambda r: (r["date"], r["order"]))
+    gs_contrib = _contrib_gs(idx, mas, errors)
+    contrib = sorted(contrib + core_contrib + fe_contrib + xf_contrib + gs_contrib, key=lambda r: (r["date"], r["order"]))
     implied, worst, _ = _tree(idx, names, errors)
     item_w, node_w = _published_weights(implied, errors)
     diff = _diffusion(S["yoy"][0], names)
@@ -658,11 +707,11 @@ def update(**_):
     labels = {"core_only": "In MAS core only: food excl. FBSS, electricity and gas (calculated)",
               "exfe_only": "In CPI less food and energy only: accommodation and private transport excl. fuel (calculated)",
               "shared": "In both MAS core and CPI less food and energy (calculated)"}
-    for key, w in list(GAP_PARTS.items()) + list(SVC_PARTS.items()):
+    for key, w in list(GAP_PARTS.items()) + list(SVC_PARTS.items()) + list(GS_PARTS.items()):
         g = _chained(dict(idx, S=mas["2"]), w, errors, key)
         for d in sorted(g):
             pm, py = g.get(_shift(d, -1)), g.get(_shift(d, -12))
-            rows.append({"date": d, "area": "national", "series": key, "label": labels.get(key) or SVC_LABELS[key], "group": "headline", "order": order,
+            rows.append({"date": d, "area": "national", "series": key, "label": labels.get(key) or SVC_LABELS.get(key) or GS_LABELS[key], "group": "headline", "order": order,
                          "index": round(g[d], 3), "mom": round((g[d] / pm - 1) * 100, 1) if pm else None,
                          "yoy": round((g[d] / py - 1) * 100, 1) if py else None})
         order += 1
