@@ -1,10 +1,25 @@
 == th_cpi_tpso
-   CHECKS FAILED (1); nothing written for th_cpi_tpso:
-   - national fuel: no y/y for 2026-09
+   UPDATED: Sep 2026: 19759 rows, 1591 months fetched
 == th_ppi_tpso
-   CHECKS FAILED (1); nothing written for th_ppi_tpso:
-   - 20 published y/y rates differ from the index, e.g. ['CPA 1030 2024-04: published 1.0, index gives 0.84', 'CPA 1030 2025-01: published 9.1, index gives 9.29', 'CPA 3100 2022-06: published 9.2, index gives 9.05']
+   ERROR in th_ppi_tpso; nothing written:
+Traceback (most recent call last):
+  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/run.py", line 71, in main
+    res = mod.update(code=args.code, from_dir=args.from_dir, from_file=args.from_file)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/sources/th_ppi_tpso/__init__.py", line 57, in update
+    return tpso_prices.run(SPEC, force=force)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/core/tpso_prices.py", line 71, in run
+    with gzip.open(store_path, "wt", encoding="utf-8") as f:  # kept even if the checks fail
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/gzip.py", line 65, in open
+    binary_file = GzipFile(filename, gz_mode, compresslevel)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/gzip.py", line 201, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/Asia-vitals/Asia-vitals/raw/th/ppi_tpso/store.json.gz'
 == th_xmpi_tpso
-   UPDATED: Sep 2026: 3531 rows, 642 months fetched
-== combined long file: 251375 rows
-result: updated=['th_xmpi_tpso'] failed=['th_cpi_tpso', 'th_ppi_tpso']
+   unchanged: no change (latest Sep 2026)
+== combined long file: 309229 rows
+result: updated=['th_cpi_tpso'] failed=['th_ppi_tpso']

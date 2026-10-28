@@ -1,0 +1,18 @@
+{
+ "code": "C2026-09",
+ "label": "Sep 2026",
+ "latest_month": "2026-09-01",
+ "published_at": "2026-10-06T04:32:39.514018Z",
+ "table": "TPSO Open API: Cpig (types TG, 10, CC, NN, EE, SS) and Cpil (TL), base 2023 (BE 2566)",
+ "processed_at": "2026-10-28T06:40:39Z",
+ "rows": 19759,
+ "warnings": [],
+ "fingerprint": "192ec4af79ea4d12",
+ "long_rows": 57854,
+ "history": [
+  {
+   "code": "C2026-09",
+   "processed_at": "2026-10-28T06:40:39Z"
+  }
+ ]
+}
