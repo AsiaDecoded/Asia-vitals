@@ -97,7 +97,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 16  # bump when the outputs change, so the next run rebuilds them
+VERSION = 17  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -263,6 +263,42 @@ def _ex_food_energy(idx, names, errors):
             out[t] = level * r / rest
     base = sum(out[f"2024-{m:02d}-01"] for m in range(1, 13)) / 12
     return {t: v / base * 100 for t, v in out.items()}
+
+# The parts that separate MAS core from CPI less food and energy, as weighted indices on the same chained method
+# (published weights per 10,000; a negative weight subtracts an item from its group):
+#   in MAS core only: food excl. FBSS + electricity + gas
+#   in CPI less food and energy only: accommodation + private transport - petrol - other fuel and lubricants
+#   (= imputed rentals, actual rents and maintenance, private transport excl. fuel)
+GAP_PARTS = {
+    "core_only": {"2014": {"1.01": 774, "1.03.2.3": 215, "1.03.2.4": 34},
+                  "2019": {"1.01": 687, "1.03.2.3": 159, "1.03.2.4": 29},
+                  "2024": {"1.01": 651, "1.03.2.3": 179, "1.03.2.4": 19}},
+    "exfe_only": {"2014": {"1.03.1": 2287, "1.06.1": 1149, "1.06.1.5": -250},
+                  "2019": {"1.03.1": 2198, "1.06.1": 1221, "1.06.1.5": -194, "1.06.1.6": -6},
+                  "2024": {"1.03.1": 2656, "1.06.1": 906, "1.06.1.5": -174, "1.06.1.6": -4}},
+}
+
+
+def _chained(idx, weights, errors, name):
+    """Weighted index of a set of CPI series, Jan 2015 on: in each basket every index is rebased to the link month
+    (Jan 2015, Dec 2018, Dec 2023) and weighted by its published weight; segments chained; 2024 = 100."""
+    latest = max(idx["1"])
+    segs = [("2014", "2015-01-01", "2018-12-01", "2015-01-01"),
+            ("2019", "2019-01-01", "2023-12-01", "2018-12-01"),
+            ("2024", "2024-01-01", latest, "2023-12-01")]
+    out = {}
+    for basket, a, b, link in segs:
+        w = weights[basket]
+        tot = sum(w.values())
+        level = out.get(link, 100.0)
+        for t in sorted(d for d in idx["1"] if a <= d <= b):
+            if any(t not in idx.get(k, {}) or link not in idx.get(k, {}) for k in w):
+                errors.append(f"{name}: a series is missing for {t}")
+                return {}
+            out[t] = level * sum(v * idx[k][t] / idx[k][link] for k, v in w.items()) / tot
+    base = sum(out[f"2024-{m:02d}-01"] for m in range(1, 13)) / 12
+    return {t: v / base * 100 for t, v in out.items()}
+
 
 def _tree(idx, names, errors):
     """Item weights on the 2024 basket: the identity parent = sum(coef * child) solved node by node."""
@@ -463,6 +499,16 @@ def update(**_):
                      "index": round(ex[d], 3), "mom": round((ex[d] / pm - 1) * 100, 1) if pm else None,
                      "yoy": round((ex[d] / py - 1) * 100, 1) if py else None})
     order += 1
+    labels = {"core_only": "In MAS core only: food excl. FBSS, electricity and gas (calculated)",
+              "exfe_only": "In CPI less food and energy only: accommodation and private transport excl. fuel (calculated)"}
+    for key, w in GAP_PARTS.items():
+        g = _chained(idx, w, errors, key)
+        for d in sorted(g):
+            pm, py = g.get(_shift(d, -1)), g.get(_shift(d, -12))
+            rows.append({"date": d, "area": "national", "series": key, "label": labels[key], "group": "headline", "order": order,
+                         "index": round(g[d], 3), "mom": round((g[d] / pm - 1) * 100, 1) if pm else None,
+                         "yoy": round((g[d] / py - 1) * 100, 1) if py else None})
+        order += 1
     rows.sort(key=lambda r: (r["date"], r["order"]))
     _write_csv(OUT / "sg_cpi.csv", ["date", "area", "series", "label", "group", "order", "index", "mom", "yoy"], rows)
 

@@ -428,9 +428,9 @@ dash.calc('cpi_heat', {
   function gapChart() {
     if (!document.getElementById('cpi-gapc-chart')) return;
     lineChart('cpi-gapc-chart', 'cpi-gapc', 'cpi-gapc-legend', 'national', [
-      { key: 'conly', name: 'In MAS core only', color: C[5], width: 3.5 },
-      { key: 'xonly', name: 'In CPI less food and energy only', color: C[4], width: 3.5 },
-    ], 300, { ids: ['cpi_gap_series'], rows: (d) => J.slice(d.slice(), 'cpi-gapc') });
+      { key: 'core_only', name: 'In MAS core only', color: C[5], width: 3 },
+      { key: 'exfe_only', name: 'In CPI less food and energy only', color: C[4], width: 3 },
+    ], 300);
   }
 
   function saChart() {
