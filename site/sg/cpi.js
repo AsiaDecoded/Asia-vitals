@@ -70,7 +70,7 @@ function gapMonths(cpi_series, wts) {
     const core = v('core'), groc = v('food_ex_fbss'), eg = v('electricity') + v('gas');
     const imp = v('imputed_rentals'), rm = v('accommodation') - imp, ptx = v('private_transport') - v('petrol') - v('other_fuels');
     const rest = core - groc - eg;
-    return { core, rest, groc, eg, imp, rm, ptx, ex: rest + imp + rm + ptx };
+    return { core, rest, groc, eg, imp, rm, ptx, ex: rest + imp + rm + ptx, conly: groc + eg, xonly: imp + rm + ptx };
   };
   const wt = { rest: W.core - W.food_ex_fbss - W.electricity - W.gas, groc: W.food_ex_fbss, eg: W.electricity + W.gas,
     imp: W.imputed_rentals, rm: W.accommodation - W.imputed_rentals, ptx: W.private_transport - W.petrol - W.other_fuels };
@@ -116,7 +116,7 @@ dash.calc('cpi_gap_series', {
   inputs: ['cpi_series', 'sg_cpi_series_weights'],
   fn: (cpi_series, wts) => gapMonths(cpi_series, wts).months.map((m) => {
     const o = { date: m.date, core: m.core, ex: m.ex };
-    ['groc', 'eg', 'imp', 'rm', 'ptx', 'rest'].forEach((k) => { o[k] = m.r[k] * 100; });
+    ['groc', 'eg', 'imp', 'rm', 'ptx', 'rest', 'conly', 'xonly'].forEach((k) => { o[k] = m.r[k] * 100; });
     return o;
   }),
 });
@@ -428,6 +428,8 @@ dash.calc('cpi_heat', {
   function gapChart() {
     if (!document.getElementById('cpi-gapc-chart')) return;
     lineChart('cpi-gapc-chart', 'cpi-gapc', 'cpi-gapc-legend', 'national', [
+      { key: 'conly', name: 'In MAS core only', color: C[5], width: 3.5 },
+      { key: 'xonly', name: 'In CPI less food and energy only', color: C[4], width: 3.5 },
       { key: 'groc', name: 'Food excl. FBSS', color: C[2], width: 1.75 },
       { key: 'eg', name: 'Electricity and gas', color: C[0], width: 1.75 },
       { key: 'imp', name: 'Imputed rentals', color: C[6], width: 1.75 },
