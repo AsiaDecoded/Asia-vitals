@@ -301,6 +301,8 @@ dash.calc('cpi_heat', {
       { key: 'exfe', name: 'CPI less food and energy', color: J.PAL[0], bar: true },
       { key: 'groc', name: 'Food ex-FBSS', color: J.PAL[5], bar: true },
       { key: 'energy', name: 'Energy', color: J.PAL[4], bar: true },
+      { key: 'acco', name: 'Accommodation', color: J.PAL[2], bar: true },
+      { key: 'ptx', name: 'Private transport ex-fuel', color: '#1D9E75', bar: true },
       { key: 'services', name: 'Services', color: J.PAL[3], bar: true },
       { key: 'retail_goods', name: 'Retail and other goods', color: J.PAL[4], bar: true },
       { key: 'food', name: 'Food', color: J.PAL[5], bar: true },
@@ -314,7 +316,7 @@ dash.calc('cpi_heat', {
     const by = new Map();
     D.data.forEach((r) => {
       const v = r.contrib_yoy === '' || r.contrib_yoy == null ? null : Number(r.contrib_yoy);
-      if (opt.pre ? !r.series.startsWith(opt.pre) : (r.series.startsWith('core_') || r.series.startsWith('fe_'))) return;
+      if (opt.pre ? !r.series.startsWith(opt.pre) : /^(core|fe|xf)_/.test(r.series)) return;
       if (!by.has(r.date)) by.set(r.date, { date: r.date });
       by.get(r.date)[r.series.slice(opt.pre.length)] = v;
     });
@@ -681,6 +683,7 @@ dash.calc('cpi_heat', {
     contribChart({ id: 'core-contrib', pre: 'core_', line: 'MAS core, y/y', keys: ['services', 'retail_goods', 'food_ex_fbss', 'fbss', 'elec_gas'] });
     gapChart();
     contribChart({ id: 'fe-contrib', pre: 'fe_', line: 'CPI, y/y', keys: ['exfe', 'groc', 'energy'] });
+    contribChart({ id: 'xf-contrib', pre: 'xf_', line: 'CPI less food and energy, y/y', keys: ['services', 'retail_goods', 'fbss', 'acco', 'ptx'] });
   };
 
   dash.onData(() => { tiles(); takeaway(); heat(); table(); moversTable(); J.redrawCpi(); });

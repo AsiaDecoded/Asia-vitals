@@ -100,7 +100,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 21  # bump when the outputs change, so the next run rebuilds them
+VERSION = 22  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -284,6 +284,67 @@ def _contrib_fe(idx, errors):
         rows.append({"date": t, "series": "fe_all", "label": "All items", "order": 20, "contrib_yoy": round(tot, 2)})
         for i, (k, lab) in enumerate(FE_LABELS, 1):
             rows.append({"date": t, "series": "fe_" + k, "label": lab, "order": 20 + i, "contrib_yoy": round(C[k], 2)})
+    return rows
+
+
+# CPI less food and energy split into the three parts it shares with MAS core (services, retail & other goods, FBSS)
+# and the two it adds (accommodation, private transport excl. fuel). Weights per 10,000 of CPI: services and retail
+# & other goods as in CORE_WEIGHTS (MAS; 2014 estimated), FBSS from SingStat's papers on the classification MAS's food
+# weight uses, accommodation and private transport as in HEADLINE_WEIGHTS, petrol and other fuels from EX_WEIGHTS.
+XF_PARTS = {
+    "2014": {"services": {"S": 2939}, "retail_goods": {"R": 1209}, "fbss": {"1.11": 1393},
+             "acco": {"1.03.1": 2287}, "ptx": {"1.06.1": 1149, "1.06.1.5": -250}},
+    "2019": {"services": {"S": 3173}, "retail_goods": {"R": 1111}, "fbss": {"1.11": 1428},
+             "acco": {"1.03.1": 2198}, "ptx": {"1.06.1": 1221, "1.06.1.5": -194, "1.06.1.6": -6}},
+    "2024": {"services": {"S": 3173}, "retail_goods": {"R": 1025}, "fbss": {"1.11": 1391},
+             "acco": {"1.03.1": 2656}, "ptx": {"1.06.1": 906, "1.06.1.5": -174, "1.06.1.6": -4}},
+}
+XF_LABELS = [("services", "Services"), ("retail_goods", "Retail and other goods"), ("fbss", "FBSS"),
+             ("acco", "Accommodation"), ("ptx", "Private transport ex-fuel")]
+
+
+def _contrib_xf(idx, mas, errors):
+    """Contributions of its five parts to the y/y of CPI less food and energy, Jan 2016 on. The aggregate is the
+    weighted sum of the parts (each index rebased to the link month: Jan 2015, Dec 2018, Dec 2023), chained, so the
+    parts add up exactly to its y/y; across a basket change the year is split at the link month."""
+    src = dict(idx, S=mas["2"], R=mas["3"])
+    latest = max(idx["1"])
+    segs = [("2014", "2014-01-01", "2018-12-01", "2015-01-01"),
+            ("2019", "2019-01-01", "2023-12-01", "2018-12-01"),
+            ("2024", "2024-01-01", latest, "2023-12-01")]
+    seg_of = lambda d: next((x for x in segs if x[1] <= d <= x[2]), None)  # noqa: E731
+    keys = [k for k, _ in XF_LABELS]
+
+    def rel(b, k, t, L):
+        return sum(w * src[c][t] / src[c][L] for c, w in XF_PARTS[b][k].items())
+    E = {}
+    for b, a, z, L in segs:
+        W = sum(sum(v.values()) for v in XF_PARTS[b].values())
+        lev = E.get(L, 100.0)
+        for t in sorted(d for d in idx["1"] if a <= d <= z and d >= "2015-01-01"):
+            E[t] = lev * sum(rel(b, k, t, L) for k in keys) / W
+    rows = []
+    for t in sorted(E):
+        s = _shift(t, -12)
+        if s not in E:
+            continue
+        St, Ss = seg_of(t), seg_of(s)
+        b, _, _, L = St
+        Wt = sum(sum(v.values()) for v in XF_PARTS[b].values())
+        if St is Ss:
+            C = {k: E[L] * (rel(b, k, t, L) - rel(b, k, s, L)) / Wt for k in keys}
+        else:
+            bp, _, _, Lp = Ss
+            Wp = sum(sum(v.values()) for v in XF_PARTS[bp].values())
+            C = {k: E[L] * (rel(b, k, t, L) - sum(XF_PARTS[b][k].values())) / Wt
+                 + E[Lp] * (rel(bp, k, L, Lp) - rel(bp, k, s, Lp)) / Wp for k in keys}
+        C = {k: v / E[s] * 100 for k, v in C.items()}
+        tot = (E[t] / E[s] - 1) * 100
+        if abs(sum(C.values()) - tot) > 0.01:
+            errors.append(f"CPI less food and energy contributions {t}: parts {sum(C.values()):.3f}, total {tot:.3f}")
+        rows.append({"date": t, "series": "xf_all", "label": "CPI less food and energy", "order": 30, "contrib_yoy": round(tot, 2)})
+        for i, (k, lab) in enumerate(XF_LABELS, 1):
+            rows.append({"date": t, "series": "xf_" + k, "label": lab, "order": 30 + i, "contrib_yoy": round(C[k], 2)})
     return rows
 
 
@@ -497,7 +558,8 @@ def update(**_):
     contrib, seg_weights = _contrib_headline(idx, mas, errors)
     core_contrib, core_weights = _contrib_core(idx, mas, errors)
     fe_contrib = _contrib_fe(idx, errors)
-    contrib = sorted(contrib + core_contrib + fe_contrib, key=lambda r: (r["date"], r["order"]))
+    xf_contrib = _contrib_xf(idx, mas, errors)
+    contrib = sorted(contrib + core_contrib + fe_contrib + xf_contrib, key=lambda r: (r["date"], r["order"]))
     implied, worst, _ = _tree(idx, names, errors)
     item_w, node_w = _published_weights(implied, errors)
     diff = _diffusion(S["yoy"][0], names)
