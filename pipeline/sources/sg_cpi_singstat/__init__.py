@@ -100,7 +100,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 35  # bump when the outputs change, so the next run rebuilds them
+VERSION = 36  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -360,6 +360,18 @@ TB_ITEMS = [("imputed_rentals", "Imputed rentals", "1.03.1.2", 2138), ("actual_r
             ("food_x", "Food excl. FBSS", "1.01", 651), ("fbss_x", "FBSS", "1.11", 1391),
             ("electricity", "Electricity", "1.03.2.3", 179), ("gas", "Gas", "1.03.2.4", 19),
             ("petrol_e", "Petrol", "1.06.1.5", 174), ("other_fuels", "Other fuel and lubricants", "1.06.1.6", 4)]
+# Bottom block of the contribution table, as in Table 1: divisions (published 2024 weights; food as food excl. FBSS
+# plus FBSS), then goods and services (as in GS_SERVICES) and MAS services.
+TB_DIVS = [("d_fbss", "FBSS", "1.11", 1391), ("d_clothing", "", "1.02", 165), ("d_housing", "", "1.03", 2938),
+           ("d_household", "", "1.04", 547), ("d_health", "", "1.05", 1008), ("d_transport", "", "1.06", 1307),
+           ("d_info_comm", "", "1.07", 381), ("d_recreation", "", "1.08", 595), ("d_education", "", "1.09", 579),
+           ("d_misc", "", "1.10", 438)]
+TB_DIV_LABELS = [("d_food", "Food"), ("d_fbss", "FBSS"), ("d_clothing", "Clothing and footwear"),
+                 ("d_housing", "Housing and utilities"), ("d_household", "Household durables and services"),
+                 ("d_health", "Health"), ("d_transport", "Transport"), ("d_info_comm", "Information and communication"),
+                 ("d_recreation", "Recreation, sport and culture"), ("d_education", "Education"),
+                 ("d_misc", "Miscellaneous goods and services"), ("d_goods", "Goods"), ("d_services", "Services"),
+                 ("d_mas_services", "MAS services")]
 # Groups shown above the additive parts: MAS core (its five parts), food (food excl. FBSS + FBSS) and energy
 # (electricity, gas, petrol, other fuel and lubricants), each the sum of its parts' contributions; and CPI less food
 # and energy, CPI less food excl. FBSS and energy.
@@ -388,6 +400,13 @@ def _contrib_table(idx, mas, errors):
             rows.append({"date": t, "series": "tb_" + k, "label": lab, "order": 50, "contrib_yoy": round(sum(C[x] for x in ks), 2)})
         exfe = tot - C["food_x"] - sum(C[x] for x in ("electricity", "gas", "petrol_e", "other_fuels"))
         rows.append({"date": t, "series": "tb_exfe", "label": "CPI less food and energy", "order": 50, "contrib_yoy": round(exfe, 2)})
+        # bottom block, as Table 1: food (with FBSS) and the other divisions, then goods, services and MAS services
+        D = {k: w * (src[c][t] - src[c][s]) / den * 100 for k, _, c, w in TB_DIVS}
+        D["d_food"] = C["food_x"] + C["fbss_x"]
+        svc = sum(w * (src[c][t] - src[c][s]) for c, w in GS_SERVICES["2024"].items()) / den * 100
+        D.update({"d_goods": tot - svc, "d_services": svc, "d_mas_services": C["services"]})
+        for k, lab in TB_DIV_LABELS:
+            rows.append({"date": t, "series": "tb_" + k, "label": lab, "order": 50, "contrib_yoy": round(D[k], 2)})
         for i, (k, lab, *_r) in enumerate(TB_PARTS + TB_ITEMS, 1):
             rows.append({"date": t, "series": "tb_" + k, "label": lab, "order": 50 + i, "contrib_yoy": round(C[k], 2)})
     return rows

@@ -124,15 +124,17 @@ dash.calc('cpi_heat', {
 
 dash.calc('cpi_ctab', {
   title: 'Contributions to CPI y/y',
-  description: 'Contributions (ppt) to CPI y/y of MAS core, food excl. FBSS, energy and CPI less food and energy, and of accommodation, private transport and the five parts of MAS core, which add up to CPI y/y, with selected items, and their 2024 basket weights per 10,000, from Jan 2026.',
+  description: 'Contributions (ppt) to CPI y/y of accommodation, private transport, MAS core, food excl. FBSS, energy and CPI less food and energy, with selected items; of food (with FBSS) and the other divisions; and of goods, services and MAS services; with 2024 basket weights per 10,000, from Jan 2026.',
   inputs: ['sg_cpi_contrib'],
   fn: (sg_cpi_contrib) => {
     const W = { all: 10000, core: 6438, exfe: 8973, food: 2042, food_x: 651, fbss_x: 1391, energy: 376, electricity: 179, gas: 19, petrol_e: 174, other_fuels: 4,
       accommodation: 2656, imputed_rentals: 2138, actual_rentals: 294, private_transport: 906, motor_cars: 459, petrol: 174,
-      food_ex_fbss: 651, fbss: 1391, elec_gas: 198, services: 3173, retail_goods: 1025 };
+      d_food: 2042, d_fbss: 1391, d_clothing: 165, d_housing: 2938, d_household: 547, d_health: 1008, d_transport: 1307, d_info_comm: 381,
+      d_recreation: 595, d_education: 579, d_misc: 438, d_goods: 2532, d_services: 7468, d_mas_services: 3173 };
     const ROWS = ['all', 'accommodation', 'imputed_rentals', 'private_transport', 'motor_cars', 'core',
       'food_x', 'energy', 'electricity', 'gas', 'petrol_e', 'other_fuels', 'exfe',
-      'food_ex_fbss', 'fbss', 'elec_gas', 'services', 'retail_goods'];
+      'd_food', 'd_fbss', 'd_clothing', 'd_housing', 'd_household', 'd_health', 'd_transport', 'd_info_comm', 'd_recreation', 'd_education', 'd_misc',
+      'd_goods', 'd_services', 'd_mas_services'];
     return sg_cpi_contrib.filter((r) => r.series.startsWith('tb_') && r.date >= '2026-01-01' && r.contrib_yoy != null && r.contrib_yoy !== '')
       .map((r) => { const k = r.series.slice(3); return { date: r.date, series: k, name: r.label, contrib: Number(r.contrib_yoy), order: ROWS.indexOf(k), weight: W[k] }; })
       .filter((r) => r.order >= 0);
@@ -662,8 +664,12 @@ dash.calc('cpi_ctab', {
       accommodation: ['imputed_rentals'], private_transport: ['motor_cars'] };
     const PARENT = {}; Object.entries(CHILDREN).forEach(([p, cs]) => cs.forEach((c) => { PARENT[c] = p; }));
     const OWN = ['all', 'core', 'exfe'];  // coloured on their own range
-    const parts = D.data.filter((r) => !OWN.includes(r.series) && !PARENT[r.series]);
-    const amax = Math.max(1e-9, ...parts.map((r) => Math.abs(r.contrib)));
+    // one colour scale per block: the top block's parts, the divisions, and goods and services
+    const block = (k) => (['d_goods', 'd_services', 'd_mas_services'].includes(k) ? 'gs' : k.startsWith('d_') ? 'div' : 'top');
+    const AMAX = {};
+    D.data.filter((r) => !OWN.includes(r.series) && !PARENT[r.series]).forEach((r) => {
+      const b = block(r.series); AMAX[b] = Math.max(AMAX[b] || 1e-9, Math.abs(r.contrib));
+    });
     const OPEN = (J.state.ctabOpen = J.state.ctabOpen || {});
     tbl.replaceChildren();
     const head = tbl.createTHead().insertRow();
@@ -672,7 +678,7 @@ dash.calc('cpi_ctab', {
     });
     const tb = tbl.createTBody();
     keys.forEach((k) => {
-      if (k === 'food_ex_fbss') { const sp = tb.insertRow(); sp.className = 'spacer'; sp.insertCell().colSpan = dates.length + 2; }
+      if (k === 'd_food' || k === 'd_goods') { const sp = tb.insertRow(); sp.className = 'spacer'; sp.insertCell().colSpan = dates.length + 2; }
       const tr = tb.insertRow();
       const label = D.data.find((r) => r.series === k).name;
       const nc = tr.insertCell();
@@ -687,7 +693,7 @@ dash.calc('cpi_ctab', {
       } else nc.textContent = label;
       if (PARENT[k] && !OPEN[PARENT[k]]) tr.hidden = true;
       if (['all', 'core', 'accommodation', 'private_transport', 'food_x', 'energy', 'exfe'].includes(k)) tr.className = 'lead';
-      if (PARENT[k]) tr.className = 'sub';
+      if (PARENT[k] || k === 'd_fbss') tr.className = 'sub';
       const wt = D.data.find((r) => r.series === k).weight;
       const wc = tr.insertCell(); wc.className = 'wt'; wc.textContent = wt == null ? '' : d3.format('.1f')(wt / 100);
       const vs = dates.map((d) => (val.get(`${k}|${d}`) || {}).contrib).filter((v) => v != null);
@@ -702,7 +708,7 @@ dash.calc('cpi_ctab', {
           const t = hi > lo ? (r.contrib - lo) / (hi - lo) : 0.5;
           td.style.background = t > 0.5 ? mix(Y, R, (t - 0.5) / 0.5) : mix(G, Y, t / 0.5);
         } else {
-          const t = Math.max(-1, Math.min(1, r.contrib / amax));
+          const t = Math.max(-1, Math.min(1, r.contrib / AMAX[block(PARENT[k] || k)]));
           td.style.background = t >= 0 ? mix(Wh, R, t) : mix(Wh, G, -t);
         }
         td.style.color = '#1a1a1a';
