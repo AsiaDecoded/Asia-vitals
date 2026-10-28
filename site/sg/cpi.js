@@ -384,8 +384,8 @@ dash.calc('cpi_heat', {
   function gsChart() {
     if (!document.getElementById('gs-yoy-chart')) return;
     lineChart('gs-yoy-chart', 'gs-yoy', 'gs-yoy-legend', 'national', [
-      { key: 'gs_services', name: 'Services (74.7%)', color: J.PAL[0] },
-      { key: 'gs_goods', name: 'Goods (25.3%)', color: J.PAL[1] },
+      { key: 'gs_goods', name: 'Goods', color: J.PAL[1] },
+      { key: 'gs_services', name: 'Services', color: J.PAL[0] },
     ], 280);
   }
 
