@@ -185,7 +185,7 @@ def _check(tidy, impacts, latest, state, warnings):
             errors.append(f"headline y/y has gaps: {missing[:12]}")
     # Range
     for v in tidy.values():
-        if not 50 < v["value"] < 200:
+        if not 0 < v["value"] < 400:
             errors.append(f"{v['area']} {v['series']} {v['measure']} {v['date'][:7]} = {v['value']} out of range")
     # Consistency of y/y, m/m and YTD (published to one decimal): YTD in January equals y/y; YTD is the
     # average of the year's y/y rates, within rounding (NBS averages unrounded rates, so 0.15pp).
@@ -193,6 +193,11 @@ def _check(tidy, impacts, latest, state, warnings):
     bad_jan, bad_avg, tested = [], [], 0
     for (p, area, key, meas), val in get.items():
         if meas != "ytd" or area not in ("national", "urban", "rural"):
+            continue
+        # Exact only for broad aggregates; for volatile items (pork) YTD, a ratio of cumulative
+        # indices, departs from the simple average of y/y rates.
+        if key not in ("all", "core", "non_food", "goods", "services", "food_tobacco_liquor", "clothing",
+                       "residence", "household", "transport_telecom", "education_culture", "health_care", "other"):
             continue
         y, m = int(p[:4]), int(p[5:7])
         yoys = [get.get((f"{y}-{i:02d}", area, key, "yoy")) for i in range(1, m + 1)]

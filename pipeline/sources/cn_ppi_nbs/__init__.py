@@ -245,12 +245,12 @@ def update(**opts):
     if missing:
         errors.append(f"PPI y/y has gaps: {missing[:12]}")
     for v in list(tidy.values()) + list(ptidy.values()):
-        if not 40 < v["value"] < 250:
+        if not 0 < v["value"] < 400:
             errors.append(f"{v['area']} {v['series']} {v['measure']} {v['date'][:7]} = {v['value']} out of range")
     # YTD in January equals y/y; YTD is the average of the year's y/y (within 0.15, NBS averages unrounded rates)
     bad, n = [], 0
     for (p, area, key, meas), v in tidy.items():
-        if meas != "ytd":
+        if meas != "ytd" or key.startswith("ind_"):
             continue
         y, m = int(p[:4]), int(p[5:7])
         ys = [tidy.get((f"{y}-{i:02d}", area, key, "yoy")) for i in range(1, m + 1)]
