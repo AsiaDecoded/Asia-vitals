@@ -187,7 +187,9 @@ dash.calc('cpi_heat', {
     box.replaceChildren();
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
     const vals = rows.flatMap((r) => keys.map((k) => r[k])).filter((v) => v != null);
-    const y = d3.scaleLinear([Math.min(0, d3.min(vals)), Math.max(0, d3.max(vals))], [H - 24, 10]).nice(8);
+    const cardEl = document.getElementById(cardId), room = cardEl && cardEl.dataset.headroom ? Number(cardEl.dataset.headroom) : 1;
+    const vmin = Math.min(0, d3.min(vals)), vmax = Math.max(0, d3.max(vals));
+    const y = d3.scaleLinear([vmin, vmin + (vmax - vmin) * room], [H - 24, 10]).nice(8);
     const ticks = y.ticks(5);
     const ml = J.textWidth(svg, ticks.map((v) => d3.format('.0f')(v))) + 10;
     const x = d3.scaleUtc([J.date(rows[0].date), J.date(rows[rows.length - 1].date)], [ml, W - 8]);
