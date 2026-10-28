@@ -289,9 +289,11 @@ def update(**opts):
         errors.append(f"published rate differs from the index beyond rounding ({len(bad_strict)}): {bad_strict[:6]}")
     if bad_other:
         warnings.append(f"rate vs index beyond rounding in {len(bad_other)} of {stats['tested']} cases (other series): {bad_other[:4]}")
-    # Weights (release table 1): 7 groups sum to 1000 per mille and, chained from the previous December,
-    # reproduce the published headline index within rounding (each month's own weights: fruit and
-    # vegetable weights change by month).
+    # Weights (release table 1): 7 groups sum to 1000 per mille and, chained from the previous December
+    # (I = I_Dec x sum w (I_g / I_g,Dec) / 1000), reproduce the published headline index. Table 1 shows
+    # the year's weights; DGBAS gives fresh fruit and vegetables month-specific weights inside food, which
+    # it does not publish in table 1, so the group-level identity holds to about 0.05 index points, not
+    # to rounding (limit 0.06; the largest gap is reported).
     wcheck = []
     for m, t in sorted(t1.items()):
         rows = {T1_KEYS.get(r["label"]): r for r in t["rows"] if T1_KEYS.get(r["label"])}
@@ -318,9 +320,9 @@ def update(**opts):
             errors.append(f"release table 1 {m}: goods + services contributions differ from CPI y/y")
     if wcheck:
         mx = max(abs(w["diff"]) for w in wcheck)
-        if mx > 0.03:
-            errors.append(f"weights do not reproduce the headline index within 0.03 (max {mx:.3f}): "
-                          f"{[w for w in wcheck if abs(w['diff']) > 0.03][:4]}")
+        if mx > 0.06:
+            errors.append(f"weights do not reproduce the headline index within 0.06 (max {mx:.3f}): "
+                          f"{[w for w in wcheck if abs(w['diff']) > 0.06][:4]}")
     else:
         errors.append("no release table 1 read: weights check could not run")
     wsum14 = {m: round(sum(i["weight_pct"] for i in it.values()), 3) for m, it in t14.items()}
@@ -331,7 +333,7 @@ def update(**opts):
         errors.append(f"items: {n_items} found, expected 368")
     for (area, key, meas), vals in data.items():
         for p, v in vals.items():
-            if meas in ("index", "sa_index") and not 0 < v < 1000:
+            if meas in ("index", "sa_index") and not 0 < v < 10000:  # communication equipment ~2600 in 1991
                 errors.append(f"{area} {key} {meas} {p} = {v} out of range")
     if errors:
         raise CheckFailed(errors)

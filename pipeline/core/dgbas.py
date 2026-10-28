@@ -220,14 +220,12 @@ def read_t1(blob):
                 month = f"{int(m.group(1)) + 1911}-{int(m.group(2)):02d}"
         texts = [str(c).replace("\n", "").replace(" ", "").replace("　", "") for c in cells if isinstance(c, str)]
         nums = [_num(c) for c in cells if _num(c) is not None]
-        if not texts or len(nums) < 9:
-            continue
+        if not texts or len(nums) not in (6, 9):
+            continue  # 9 numbers; January tables have no year-to-date columns (6)
         label = texts[-1]
         if len(texts) > 1:
             section = texts[0]
-        if len(nums) > 10:  # a year or code column slipped in
-            nums = nums[-10:]
-        w, idx, mom, mompp, yoy, yoypp, ytdi, ytd, ytdpp = (nums + [None])[:9] if len(nums) == 9 else nums[-9:]
+        w, idx, mom, mompp, yoy, yoypp, ytdi, ytd, ytdpp = (nums + [None, None, None])[:9]
         rows.append({"label": label, "section": section, "weight_pm": w, "index": idx, "mom": mom, "mom_pp": mompp,
                      "yoy": yoy, "yoy_pp": yoypp, "ytd_index": ytdi, "ytd": ytd, "ytd_pp": ytdpp})
     return {"month": month, "rows": rows}
