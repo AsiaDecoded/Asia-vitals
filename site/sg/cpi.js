@@ -122,6 +122,21 @@ dash.calc('cpi_heat', {
   },
 });
 
+dash.calc('cpi_ctab', {
+  title: 'Contributions to CPI y/y',
+  description: 'Contributions (ppt) to CPI y/y of accommodation, private transport and the five parts of MAS core, which add up to CPI y/y, with selected items, and their 2024 basket weights per 10,000, from Jan 2026.',
+  inputs: ['sg_cpi_contrib'],
+  fn: (sg_cpi_contrib) => {
+    const W = { all: 10000, accommodation: 2656, imputed_rentals: 2138, actual_rentals: 294, private_transport: 906, motor_cars: 459, petrol: 174,
+      food_ex_fbss: 651, fbss: 1391, elec_gas: 198, services: 3173, retail_goods: 1025 };
+    const ROWS = ['all', 'accommodation', 'imputed_rentals', 'actual_rentals', 'private_transport', 'motor_cars', 'petrol',
+      'food_ex_fbss', 'fbss', 'elec_gas', 'services', 'retail_goods'];
+    return sg_cpi_contrib.filter((r) => r.series.startsWith('tb_') && r.date >= '2026-01-01' && r.contrib_yoy != null && r.contrib_yoy !== '')
+      .map((r) => { const k = r.series.slice(3); return { date: r.date, series: k, name: r.label, contrib: Number(r.contrib_yoy), order: ROWS.indexOf(k), weight: W[k] }; })
+      .filter((r) => r.order >= 0);
+  },
+});
+
 (() => {
   const J = window.JG;
   const S = { months: 120, sa: 'all_sa', movers: 3 };
@@ -566,9 +581,9 @@ dash.calc('cpi_heat', {
 
   // Table 1 scrolls sideways under the month columns only: the label and weight columns stay put (sticky) and a
   // scroll bar drawn beneath the heatmap drives the table (and follows it when the table is swiped).
-  let heatRO = null;
-  function heatScroll() {
-    const tbl = document.getElementById('cpi-heat-table');
+  const heatRO = {};
+  function heatScroll(id = 'cpi-heat-table', sk = 'heatScrolled') {
+    const tbl = document.getElementById(id);
     const wrap = tbl && tbl.closest('.jg-tablewrap');
     if (!wrap) return;
     let bw = wrap.nextElementSibling;
@@ -581,7 +596,7 @@ dash.calc('cpi_heat', {
       const room = () => track.clientWidth - thumb.offsetWidth;
       let drag = null;
       // starts at the latest months (right); once the reader scrolls, their position is kept
-      const touched = () => { J.state.heatScrolled = true; };
+      const touched = () => { J.state[sk] = true; };
       ['wheel', 'touchstart', 'keydown'].forEach((ev) => wrap.addEventListener(ev, touched, { passive: true }));
       thumb.addEventListener('pointerdown', (e) => { touched(); drag = { x: e.clientX, s: wrap.scrollLeft }; thumb.setPointerCapture(e.pointerId); e.preventDefault(); });
       thumb.addEventListener('pointermove', (e) => { if (!drag || room() <= 0) return; wrap.scrollLeft = drag.s + (e.clientX - drag.x) * max() / room(); });
@@ -609,11 +624,87 @@ dash.calc('cpi_heat', {
       track.style.marginLeft = `${fixed}px`;
       track.hidden = wrap.scrollWidth - wrap.clientWidth <= 1;
       thumb.style.width = `${Math.max(24, (view / Math.max(1, full)) * track.clientWidth)}px`;
-      if (!J.state.heatScrolled) wrap.scrollLeft = wrap.scrollWidth;
+      if (!J.state[sk]) {
+        // start at the latest months, with the first visible month column whole (not cut by the sticky columns)
+        tbl.style.marginRight = '0px';
+        wrap.scrollLeft = wrap.scrollWidth;
+        const cells = Array.from(row.cells).slice(2);
+        const first = cells.find((cell) => cell.offsetLeft - fixed >= wrap.scrollLeft - 1);
+        if (first && first.offsetLeft - fixed > wrap.scrollLeft + 0.5) {
+          tbl.style.marginRight = `${first.offsetLeft - fixed - wrap.scrollLeft}px`;
+          wrap.scrollLeft = first.offsetLeft - fixed;
+        }
+      }
       place();
     };
     fit();
-    if (!heatRO && window.ResizeObserver) { heatRO = new ResizeObserver(() => fit()); heatRO.observe(wrap); }
+    if (!heatRO[id] && window.ResizeObserver) { heatRO[id] = new ResizeObserver(() => fit()); heatRO[id].observe(wrap); }
+  }
+
+  // Contribution table: contributions (ppt) to CPI y/y by month; the parts add up to CPI. Parts share one colour scale
+  // (green below zero, white at zero, red above); CPI is coloured on its own range, as in Table 1.
+  function ctab() {
+    const tbl = document.getElementById('cpi-ctab-table');
+    if (!tbl) return;
+    const D = dash.data('cpi_ctab');
+    if (failed(D.status)) { tbl.replaceChildren(); return; }
+    if (D.status !== 'ok') return;
+    const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const dates = Array.from(new Set(D.data.map((r) => r.date))).sort();
+    const keys = Array.from(new Set(D.data.map((r) => r.series)))
+      .sort((p, q) => D.data.find((r) => r.series === p).order - D.data.find((r) => r.series === q).order);
+    const val = new Map(D.data.map((r) => [`${r.series}|${r.date}`, r]));
+    const mix = (c0, c1, f) => `rgb(${c0.map((c, k) => Math.round(c + (c1[k] - c) * f)).join(',')})`;
+    const G = [99, 190, 123], Y = [255, 235, 132], R = [248, 105, 107], Wh = [255, 255, 255];
+    const CHILDREN = { accommodation: ['imputed_rentals', 'actual_rentals'], private_transport: ['motor_cars', 'petrol'] };
+    const PARENT = {}; Object.entries(CHILDREN).forEach(([p, cs]) => cs.forEach((c) => { PARENT[c] = p; }));
+    const parts = D.data.filter((r) => r.series !== 'all' && !PARENT[r.series]);
+    const amax = Math.max(1e-9, ...parts.map((r) => Math.abs(r.contrib)));
+    const OPEN = (J.state.ctabOpen = J.state.ctabOpen || {});
+    tbl.replaceChildren();
+    const head = tbl.createTHead().insertRow();
+    ['', 'Weight'].concat(dates.map((d) => `${MON[+d.slice(5, 7) - 1]} ${d.slice(2, 4)}`)).forEach((t) => {
+      const th = document.createElement('th'); th.textContent = t; head.appendChild(th);
+    });
+    const tb = tbl.createTBody();
+    keys.forEach((k) => {
+      if (k === 'food_ex_fbss') { const sp = tb.insertRow(); sp.className = 'spacer'; sp.insertCell().colSpan = dates.length + 2; }
+      const tr = tb.insertRow();
+      const label = D.data.find((r) => r.series === k).name;
+      const nc = tr.insertCell();
+      if (CHILDREN[k]) {
+        const open = !!OPEN[k];
+        const b = document.createElement('button'); b.type = 'button'; b.className = 'heat-tog';
+        b.setAttribute('aria-expanded', String(open));
+        const ar = document.createElement('span'); ar.className = 'heat-arrow'; ar.textContent = open ? '\u25BE' : '\u25B8';
+        b.append(document.createTextNode(label + ' '), ar);
+        b.addEventListener('click', () => { OPEN[k] = !OPEN[k]; ctab(); });
+        nc.appendChild(b);
+      } else nc.textContent = label;
+      if (PARENT[k] && !OPEN[PARENT[k]]) tr.hidden = true;
+      if (k === 'all') tr.className = 'lead';
+      if (PARENT[k]) tr.className = 'sub';
+      const wt = D.data.find((r) => r.series === k).weight;
+      const wc = tr.insertCell(); wc.className = 'wt'; wc.textContent = wt == null ? '' : d3.format('.1f')(wt / 100);
+      const vs = dates.map((d) => (val.get(`${k}|${d}`) || {}).contrib).filter((v) => v != null);
+      const lo = Math.min(...vs), hi = Math.max(...vs);
+      dates.forEach((d) => {
+        const td = tr.insertCell(); const r = val.get(`${k}|${d}`);
+        if (!r) return;
+        const f2 = d3.format('.2f')(r.contrib);
+        td.textContent = f2 === '-0.00' ? '0.00' : f2;
+        td.className = 'heat';
+        if (k === 'all') {
+          const t = hi > lo ? (r.contrib - lo) / (hi - lo) : 0.5;
+          td.style.background = t > 0.5 ? mix(Y, R, (t - 0.5) / 0.5) : mix(G, Y, t / 0.5);
+        } else {
+          const t = Math.max(-1, Math.min(1, r.contrib / amax));
+          td.style.background = t >= 0 ? mix(Wh, R, t) : mix(Wh, G, -t);
+        }
+        td.style.color = '#1a1a1a';
+      });
+    });
+    heatScroll('cpi-ctab-table', 'ctabScrolled');
   }
 
   function takeaway() {
@@ -711,6 +802,6 @@ dash.calc('cpi_heat', {
     contribChart({ id: 'xf-contrib', pre: 'xf_', line: 'CPI less food and energy, y/y', keys: ['services', 'retail_goods', 'fbss', 'acco', 'ptx'] });
   };
 
-  dash.onData(() => { tiles(); takeaway(); heat(); table(); moversTable(); J.redrawCpi(); });
+  dash.onData(() => { tiles(); takeaway(); heat(); ctab(); table(); moversTable(); J.redrawCpi(); });
   J.redrawCpi();
 })();

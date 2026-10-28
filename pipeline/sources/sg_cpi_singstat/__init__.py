@@ -100,7 +100,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 30  # bump when the outputs change, so the next run rebuilds them
+VERSION = 31  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -345,6 +345,39 @@ def _contrib_xf(idx, mas, errors):
         rows.append({"date": t, "series": "xf_all", "label": "CPI less food and energy", "order": 30, "contrib_yoy": round(tot, 2)})
         for i, (k, lab) in enumerate(XF_LABELS, 1):
             rows.append({"date": t, "series": "xf_" + k, "label": lab, "order": 30 + i, "contrib_yoy": round(C[k], 2)})
+    return rows
+
+
+# Contribution table: CPI y/y split into parts that add up to it, on the 2024 basket (Jan 2025 on, when the year-earlier
+# month is also on the 2024 basket): accommodation and private transport (HEADLINE_WEIGHTS) and MAS core's five parts
+# (CORE_WEIGHTS), with selected items under accommodation and private transport. Weights per 10,000 of CPI.
+TB_PARTS = [("accommodation", "Accommodation", "1.03.1", 2656), ("private_transport", "Private transport", "1.06.1", 906),
+            ("food_ex_fbss", "Food excl. FBSS", "1.01", 651), ("fbss", "FBSS", "1.11", 1391),
+            ("elec_gas", "Electricity and gas", "E", 198), ("services", "MAS services", "S", 3173),
+            ("retail_goods", "Retail and other goods", "R", 1025)]
+TB_ITEMS = [("imputed_rentals", "Imputed rentals", "1.03.1.2", 2138), ("actual_rentals", "Actual rentals", "1.03.1.1", 294),
+            ("motor_cars", "Motor cars", "1.06.1.1", 459), ("petrol", "Petrol", "1.06.1.5", 174)]
+
+
+def _contrib_table(idx, mas, errors):
+    """Contributions (ppt) to CPI y/y: weight x change in the part's index (2024 = 100) over 12 months / the weighted
+    sum of the parts' indices a year earlier, so the parts add up to the y/y of their weighted sum, which is checked
+    against SingStat's published CPI y/y."""
+    src = dict(idx, S=mas["2"], R=mas["3"], E=mas["4"])
+    rows = []
+    for t in sorted(idx["1"]):
+        s = _shift(t, -12)
+        if s < "2024-01-01":
+            continue
+        den = sum(w * src[c][s] for _, _, c, w in TB_PARTS)
+        C = {k: w * (src[c][t] - src[c][s]) / den * 100 for k, _, c, w in TB_PARTS + TB_ITEMS}
+        tot = sum(C[k] for k, *_ in TB_PARTS)
+        pub = (idx["1"][t] / idx["1"][s] - 1) * 100
+        if abs(tot - pub) > 0.1:
+            errors.append(f"contribution table {t}: parts {tot:.3f}, CPI {pub:.3f}")
+        rows.append({"date": t, "series": "tb_all", "label": "CPI", "order": 50, "contrib_yoy": round(tot, 2)})
+        for i, (k, lab, *_r) in enumerate(TB_PARTS + TB_ITEMS, 1):
+            rows.append({"date": t, "series": "tb_" + k, "label": lab, "order": 50 + i, "contrib_yoy": round(C[k], 2)})
     return rows
 
 
@@ -641,7 +674,8 @@ def update(**_):
     fe_contrib = _contrib_fe(idx, errors)
     xf_contrib = _contrib_xf(idx, mas, errors)
     gs_contrib = _contrib_gs(idx, mas, errors)
-    contrib = sorted(contrib + core_contrib + fe_contrib + xf_contrib + gs_contrib, key=lambda r: (r["date"], r["order"]))
+    tb_contrib = _contrib_table(idx, mas, errors)
+    contrib = sorted(contrib + core_contrib + fe_contrib + xf_contrib + gs_contrib + tb_contrib, key=lambda r: (r["date"], r["order"]))
     implied, worst, _ = _tree(idx, names, errors)
     item_w, node_w = _published_weights(implied, errors)
     diff = _diffusion(S["yoy"][0], names)

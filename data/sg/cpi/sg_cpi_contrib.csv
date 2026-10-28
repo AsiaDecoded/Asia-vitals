@@ -2626,6 +2626,18 @@ date,series,label,order,contrib_yoy
 2025-01-01,gs_all,All items,40,1.17
 2025-01-01,gs_services,"Services, incl. FBSS",41,0.97
 2025-01-01,gs_goods,Goods,42,0.21
+2025-01-01,tb_all,CPI,50,1.17
+2025-01-01,tb_accommodation,Accommodation,51,0.42
+2025-01-01,tb_private_transport,Private transport,52,0.25
+2025-01-01,tb_food_ex_fbss,Food excl. FBSS,53,0.14
+2025-01-01,tb_fbss,FBSS,54,0.16
+2025-01-01,tb_elec_gas,Electricity and gas,55,-0.06
+2025-01-01,tb_services,MAS services,56,0.33
+2025-01-01,tb_retail_goods,Retail and other goods,57,-0.07
+2025-01-01,tb_imputed_rentals,Imputed rentals,58,0.32
+2025-01-01,tb_actual_rentals,Actual rentals,59,0.05
+2025-01-01,tb_motor_cars,Motor cars,60,0.15
+2025-01-01,tb_petrol,Petrol,61,0.05
 2025-02-01,all,All items,0,0.92
 2025-02-01,core,MAS core,1,0.36
 2025-02-01,accommodation,Accommodation,2,0.42
@@ -2649,6 +2661,18 @@ date,series,label,order,contrib_yoy
 2025-02-01,gs_all,All items,40,0.92
 2025-02-01,gs_services,"Services, incl. FBSS",41,0.89
 2025-02-01,gs_goods,Goods,42,0.04
+2025-02-01,tb_all,CPI,50,0.92
+2025-02-01,tb_accommodation,Accommodation,51,0.42
+2025-02-01,tb_private_transport,Private transport,52,0.15
+2025-02-01,tb_food_ex_fbss,Food excl. FBSS,53,0.07
+2025-02-01,tb_fbss,FBSS,54,0.14
+2025-02-01,tb_elec_gas,Electricity and gas,55,-0.06
+2025-02-01,tb_services,MAS services,56,0.26
+2025-02-01,tb_retail_goods,Retail and other goods,57,-0.05
+2025-02-01,tb_imputed_rentals,Imputed rentals,58,0.28
+2025-02-01,tb_actual_rentals,Actual rentals,59,0.04
+2025-02-01,tb_motor_cars,Motor cars,60,0.06
+2025-02-01,tb_petrol,Petrol,61,0.03
 2025-03-01,all,All items,0,0.89
 2025-03-01,core,MAS core,1,0.32
 2025-03-01,accommodation,Accommodation,2,0.38
@@ -2672,6 +2696,18 @@ date,series,label,order,contrib_yoy
 2025-03-01,gs_all,All items,40,0.89
 2025-03-01,gs_services,"Services, incl. FBSS",41,0.79
 2025-03-01,gs_goods,Goods,42,0.1
+2025-03-01,tb_all,CPI,50,0.89
+2025-03-01,tb_accommodation,Accommodation,51,0.38
+2025-03-01,tb_private_transport,Private transport,52,0.19
+2025-03-01,tb_food_ex_fbss,Food excl. FBSS,53,0.1
+2025-03-01,tb_fbss,FBSS,54,0.16
+2025-03-01,tb_elec_gas,Electricity and gas,55,-0.07
+2025-03-01,tb_services,MAS services,56,0.19
+2025-03-01,tb_retail_goods,Retail and other goods,57,-0.05
+2025-03-01,tb_imputed_rentals,Imputed rentals,58,0.24
+2025-03-01,tb_actual_rentals,Actual rentals,59,0.04
+2025-03-01,tb_motor_cars,Motor cars,60,0.16
+2025-03-01,tb_petrol,Petrol,61,-0.03
 2025-04-01,all,All items,0,0.86
 2025-04-01,core,MAS core,1,0.45
 2025-04-01,accommodation,Accommodation,2,0.29
@@ -2695,6 +2731,18 @@ date,series,label,order,contrib_yoy
 2025-04-01,gs_all,All items,40,0.86
 2025-04-01,gs_services,"Services, incl. FBSS",41,0.87
 2025-04-01,gs_goods,Goods,42,-0.0
+2025-04-01,tb_all,CPI,50,0.86
+2025-04-01,tb_accommodation,Accommodation,51,0.29
+2025-04-01,tb_private_transport,Private transport,52,0.12
+2025-04-01,tb_food_ex_fbss,Food excl. FBSS,53,0.14
+2025-04-01,tb_fbss,FBSS,54,0.15
+2025-04-01,tb_elec_gas,Electricity and gas,55,-0.07
+2025-04-01,tb_services,MAS services,56,0.36
+2025-04-01,tb_retail_goods,Retail and other goods,57,-0.13
+2025-04-01,tb_imputed_rentals,Imputed rentals,58,0.2
+2025-04-01,tb_actual_rentals,Actual rentals,59,0.03
+2025-04-01,tb_motor_cars,Motor cars,60,0.13
+2025-04-01,tb_petrol,Petrol,61,-0.06
 2025-05-01,all,All items,0,0.77
 2025-05-01,core,MAS core,1,0.37
 2025-05-01,accommodation,Accommodation,2,0.29
@@ -2718,6 +2766,18 @@ date,series,label,order,contrib_yoy
 2025-05-01,gs_all,All items,40,0.77
 2025-05-01,gs_services,"Services, incl. FBSS",41,0.86
 2025-05-01,gs_goods,Goods,42,-0.09
+2025-05-01,tb_all,CPI,50,0.77
+2025-05-01,tb_accommodation,Accommodation,51,0.29
+2025-05-01,tb_private_transport,Private transport,52,0.1
+2025-05-01,tb_food_ex_fbss,Food excl. FBSS,53,0.06
+2025-05-01,tb_fbss,FBSS,54,0.16
+2025-05-01,tb_elec_gas,Electricity and gas,55,-0.07
+2025-05-01,tb_services,MAS services,56,0.33
+2025-05-01,tb_retail_goods,Retail and other goods,57,-0.11
+2025-05-01,tb_imputed_rentals,Imputed rentals,58,0.16
+2025-05-01,tb_actual_rentals,Actual rentals,59,0.03
+2025-05-01,tb_motor_cars,Motor cars,60,0.11
+2025-05-01,tb_petrol,Petrol,61,-0.06
 2025-06-01,all,All items,0,0.8
 2025-06-01,core,MAS core,1,0.36
 2025-06-01,accommodation,Accommodation,2,0.26
@@ -2741,6 +2801,18 @@ date,series,label,order,contrib_yoy
 2025-06-01,gs_all,All items,40,0.8
 2025-06-01,gs_services,"Services, incl. FBSS",41,0.71
 2025-06-01,gs_goods,Goods,42,0.09
+2025-06-01,tb_all,CPI,50,0.8
+2025-06-01,tb_accommodation,Accommodation,51,0.26
+2025-06-01,tb_private_transport,Private transport,52,0.18
+2025-06-01,tb_food_ex_fbss,Food excl. FBSS,53,0.05
+2025-06-01,tb_fbss,FBSS,54,0.15
+2025-06-01,tb_elec_gas,Electricity and gas,55,-0.08
+2025-06-01,tb_services,MAS services,56,0.23
+2025-06-01,tb_retail_goods,Retail and other goods,57,0.0
+2025-06-01,tb_imputed_rentals,Imputed rentals,58,0.13
+2025-06-01,tb_actual_rentals,Actual rentals,59,0.02
+2025-06-01,tb_motor_cars,Motor cars,60,0.12
+2025-06-01,tb_petrol,Petrol,61,-0.01
 2025-07-01,all,All items,0,0.63
 2025-07-01,core,MAS core,1,0.3
 2025-07-01,accommodation,Accommodation,2,0.14
@@ -2764,6 +2836,18 @@ date,series,label,order,contrib_yoy
 2025-07-01,gs_all,All items,40,0.63
 2025-07-01,gs_services,"Services, incl. FBSS",41,0.57
 2025-07-01,gs_goods,Goods,42,0.06
+2025-07-01,tb_all,CPI,50,0.63
+2025-07-01,tb_accommodation,Accommodation,51,0.14
+2025-07-01,tb_private_transport,Private transport,52,0.19
+2025-07-01,tb_food_ex_fbss,Food excl. FBSS,53,0.06
+2025-07-01,tb_fbss,FBSS,54,0.17
+2025-07-01,tb_elec_gas,Electricity and gas,55,-0.11
+2025-07-01,tb_services,MAS services,56,0.23
+2025-07-01,tb_retail_goods,Retail and other goods,57,-0.05
+2025-07-01,tb_imputed_rentals,Imputed rentals,58,0.1
+2025-07-01,tb_actual_rentals,Actual rentals,59,0.02
+2025-07-01,tb_motor_cars,Motor cars,60,0.19
+2025-07-01,tb_petrol,Petrol,61,-0.03
 2025-08-01,all,All items,0,0.55
 2025-08-01,core,MAS core,1,0.21
 2025-08-01,accommodation,Accommodation,2,0.12
@@ -2787,6 +2871,18 @@ date,series,label,order,contrib_yoy
 2025-08-01,gs_all,All items,40,0.55
 2025-08-01,gs_services,"Services, incl. FBSS",41,0.44
 2025-08-01,gs_goods,Goods,42,0.1
+2025-08-01,tb_all,CPI,50,0.55
+2025-08-01,tb_accommodation,Accommodation,51,0.12
+2025-08-01,tb_private_transport,Private transport,52,0.22
+2025-08-01,tb_food_ex_fbss,Food excl. FBSS,53,0.06
+2025-08-01,tb_fbss,FBSS,54,0.17
+2025-08-01,tb_elec_gas,Electricity and gas,55,-0.11
+2025-08-01,tb_services,MAS services,56,0.12
+2025-08-01,tb_retail_goods,Retail and other goods,57,-0.02
+2025-08-01,tb_imputed_rentals,Imputed rentals,58,0.07
+2025-08-01,tb_actual_rentals,Actual rentals,59,0.02
+2025-08-01,tb_motor_cars,Motor cars,60,0.21
+2025-08-01,tb_petrol,Petrol,61,-0.02
 2025-09-01,all,All items,0,0.67
 2025-09-01,core,MAS core,1,0.23
 2025-09-01,accommodation,Accommodation,2,0.1
@@ -2810,6 +2906,18 @@ date,series,label,order,contrib_yoy
 2025-09-01,gs_all,All items,40,0.67
 2025-09-01,gs_services,"Services, incl. FBSS",41,0.44
 2025-09-01,gs_goods,Goods,42,0.23
+2025-09-01,tb_all,CPI,50,0.67
+2025-09-01,tb_accommodation,Accommodation,51,0.1
+2025-09-01,tb_private_transport,Private transport,52,0.34
+2025-09-01,tb_food_ex_fbss,Food excl. FBSS,53,0.01
+2025-09-01,tb_fbss,FBSS,54,0.2
+2025-09-01,tb_elec_gas,Electricity and gas,55,-0.11
+2025-09-01,tb_services,MAS services,56,0.1
+2025-09-01,tb_retail_goods,Retail and other goods,57,0.03
+2025-09-01,tb_imputed_rentals,Imputed rentals,58,0.06
+2025-09-01,tb_actual_rentals,Actual rentals,59,0.02
+2025-09-01,tb_motor_cars,Motor cars,60,0.34
+2025-09-01,tb_petrol,Petrol,61,-0.02
 2025-10-01,all,All items,0,1.21
 2025-10-01,core,MAS core,1,0.78
 2025-10-01,accommodation,Accommodation,2,0.08
@@ -2833,6 +2941,18 @@ date,series,label,order,contrib_yoy
 2025-10-01,gs_all,All items,40,1.21
 2025-10-01,gs_services,"Services, incl. FBSS",41,0.88
 2025-10-01,gs_goods,Goods,42,0.33
+2025-10-01,tb_all,CPI,50,1.21
+2025-10-01,tb_accommodation,Accommodation,51,0.08
+2025-10-01,tb_private_transport,Private transport,52,0.35
+2025-10-01,tb_food_ex_fbss,Food excl. FBSS,53,0.05
+2025-10-01,tb_fbss,FBSS,54,0.19
+2025-10-01,tb_elec_gas,Electricity and gas,55,-0.08
+2025-10-01,tb_services,MAS services,56,0.57
+2025-10-01,tb_retail_goods,Retail and other goods,57,0.05
+2025-10-01,tb_imputed_rentals,Imputed rentals,58,0.04
+2025-10-01,tb_actual_rentals,Actual rentals,59,0.01
+2025-10-01,tb_motor_cars,Motor cars,60,0.39
+2025-10-01,tb_petrol,Petrol,61,-0.07
 2025-11-01,all,All items,0,1.19
 2025-11-01,core,MAS core,1,0.8
 2025-11-01,accommodation,Accommodation,2,0.08
@@ -2856,6 +2976,18 @@ date,series,label,order,contrib_yoy
 2025-11-01,gs_all,All items,40,1.19
 2025-11-01,gs_services,"Services, incl. FBSS",41,0.91
 2025-11-01,gs_goods,Goods,42,0.28
+2025-11-01,tb_all,CPI,50,1.19
+2025-11-01,tb_accommodation,Accommodation,51,0.08
+2025-11-01,tb_private_transport,Private transport,52,0.31
+2025-11-01,tb_food_ex_fbss,Food excl. FBSS,53,0.06
+2025-11-01,tb_fbss,FBSS,54,0.19
+2025-11-01,tb_elec_gas,Electricity and gas,55,-0.08
+2025-11-01,tb_services,MAS services,56,0.6
+2025-11-01,tb_retail_goods,Retail and other goods,57,0.03
+2025-11-01,tb_imputed_rentals,Imputed rentals,58,0.03
+2025-11-01,tb_actual_rentals,Actual rentals,59,0.01
+2025-11-01,tb_motor_cars,Motor cars,60,0.32
+2025-11-01,tb_petrol,Petrol,61,-0.04
 2025-12-01,all,All items,0,1.19
 2025-12-01,core,MAS core,1,0.79
 2025-12-01,accommodation,Accommodation,2,0.07
@@ -2879,6 +3011,18 @@ date,series,label,order,contrib_yoy
 2025-12-01,gs_all,All items,40,1.19
 2025-12-01,gs_services,"Services, incl. FBSS",41,0.91
 2025-12-01,gs_goods,Goods,42,0.28
+2025-12-01,tb_all,CPI,50,1.19
+2025-12-01,tb_accommodation,Accommodation,51,0.07
+2025-12-01,tb_private_transport,Private transport,52,0.33
+2025-12-01,tb_food_ex_fbss,Food excl. FBSS,53,0.06
+2025-12-01,tb_fbss,FBSS,54,0.19
+2025-12-01,tb_elec_gas,Electricity and gas,55,-0.08
+2025-12-01,tb_services,MAS services,56,0.61
+2025-12-01,tb_retail_goods,Retail and other goods,57,-0.0
+2025-12-01,tb_imputed_rentals,Imputed rentals,58,0.02
+2025-12-01,tb_actual_rentals,Actual rentals,59,0.01
+2025-12-01,tb_motor_cars,Motor cars,60,0.32
+2025-12-01,tb_petrol,Petrol,61,-0.02
 2026-01-01,all,All items,0,1.43
 2026-01-01,core,MAS core,1,0.68
 2026-01-01,accommodation,Accommodation,2,0.5
@@ -2902,6 +3046,18 @@ date,series,label,order,contrib_yoy
 2026-01-01,gs_all,All items,40,1.43
 2026-01-01,gs_services,"Services, incl. FBSS",41,1.19
 2026-01-01,gs_goods,Goods,42,0.24
+2026-01-01,tb_all,CPI,50,1.43
+2026-01-01,tb_accommodation,Accommodation,51,0.51
+2026-01-01,tb_private_transport,Private transport,52,0.25
+2026-01-01,tb_food_ex_fbss,Food excl. FBSS,53,0.05
+2026-01-01,tb_fbss,FBSS,54,0.19
+2026-01-01,tb_elec_gas,Electricity and gas,55,-0.08
+2026-01-01,tb_services,MAS services,56,0.46
+2026-01-01,tb_retail_goods,Retail and other goods,57,0.05
+2026-01-01,tb_imputed_rentals,Imputed rentals,58,0.02
+2026-01-01,tb_actual_rentals,Actual rentals,59,0.02
+2026-01-01,tb_motor_cars,Motor cars,60,0.25
+2026-01-01,tb_petrol,Petrol,61,-0.04
 2026-02-01,all,All items,0,1.23
 2026-02-01,core,MAS core,1,0.93
 2026-02-01,accommodation,Accommodation,2,0.09
@@ -2925,6 +3081,18 @@ date,series,label,order,contrib_yoy
 2026-02-01,gs_all,All items,40,1.23
 2026-02-01,gs_services,"Services, incl. FBSS",41,0.93
 2026-02-01,gs_goods,Goods,42,0.3
+2026-02-01,tb_all,CPI,50,1.23
+2026-02-01,tb_accommodation,Accommodation,51,0.09
+2026-02-01,tb_private_transport,Private transport,52,0.22
+2026-02-01,tb_food_ex_fbss,Food excl. FBSS,53,0.14
+2026-02-01,tb_fbss,FBSS,54,0.19
+2026-02-01,tb_elec_gas,Electricity and gas,55,-0.08
+2026-02-01,tb_services,MAS services,56,0.62
+2026-02-01,tb_retail_goods,Retail and other goods,57,0.06
+2026-02-01,tb_imputed_rentals,Imputed rentals,58,0.02
+2026-02-01,tb_actual_rentals,Actual rentals,59,0.02
+2026-02-01,tb_motor_cars,Motor cars,60,0.27
+2026-02-01,tb_petrol,Petrol,61,-0.07
 2026-03-01,all,All items,0,1.8
 2026-03-01,core,MAS core,1,1.1
 2026-03-01,accommodation,Accommodation,2,0.09
@@ -2948,6 +3116,18 @@ date,series,label,order,contrib_yoy
 2026-03-01,gs_all,All items,40,1.8
 2026-03-01,gs_services,"Services, incl. FBSS",41,0.97
 2026-03-01,gs_goods,Goods,42,0.82
+2026-03-01,tb_all,CPI,50,1.8
+2026-03-01,tb_accommodation,Accommodation,51,0.09
+2026-03-01,tb_private_transport,Private transport,52,0.6
+2026-03-01,tb_food_ex_fbss,Food excl. FBSS,53,0.14
+2026-03-01,tb_fbss,FBSS,54,0.18
+2026-03-01,tb_elec_gas,Electricity and gas,55,-0.08
+2026-03-01,tb_services,MAS services,56,0.67
+2026-03-01,tb_retail_goods,Retail and other goods,57,0.19
+2026-03-01,tb_imputed_rentals,Imputed rentals,58,0.03
+2026-03-01,tb_actual_rentals,Actual rentals,59,0.02
+2026-03-01,tb_motor_cars,Motor cars,60,0.3
+2026-03-01,tb_petrol,Petrol,61,0.27
 2026-04-01,all,All items,0,1.76
 2026-04-01,core,MAS core,1,0.92
 2026-04-01,accommodation,Accommodation,2,0.11
@@ -2971,6 +3151,18 @@ date,series,label,order,contrib_yoy
 2026-04-01,gs_all,All items,40,1.76
 2026-04-01,gs_services,"Services, incl. FBSS",41,0.8
 2026-04-01,gs_goods,Goods,42,0.96
+2026-04-01,tb_all,CPI,50,1.76
+2026-04-01,tb_accommodation,Accommodation,51,0.11
+2026-04-01,tb_private_transport,Private transport,52,0.74
+2026-04-01,tb_food_ex_fbss,Food excl. FBSS,53,0.15
+2026-04-01,tb_fbss,FBSS,54,0.19
+2026-04-01,tb_elec_gas,Electricity and gas,55,-0.06
+2026-04-01,tb_services,MAS services,56,0.48
+2026-04-01,tb_retail_goods,Retail and other goods,57,0.15
+2026-04-01,tb_imputed_rentals,Imputed rentals,58,0.04
+2026-04-01,tb_actual_rentals,Actual rentals,59,0.02
+2026-04-01,tb_motor_cars,Motor cars,60,0.35
+2026-04-01,tb_petrol,Petrol,61,0.33
 2026-05-01,all,All items,0,1.82
 2026-05-01,core,MAS core,1,0.9
 2026-05-01,accommodation,Accommodation,2,0.13
@@ -2994,6 +3186,18 @@ date,series,label,order,contrib_yoy
 2026-05-01,gs_all,All items,40,1.82
 2026-05-01,gs_services,"Services, incl. FBSS",41,0.78
 2026-05-01,gs_goods,Goods,42,1.04
+2026-05-01,tb_all,CPI,50,1.82
+2026-05-01,tb_accommodation,Accommodation,51,0.13
+2026-05-01,tb_private_transport,Private transport,52,0.79
+2026-05-01,tb_food_ex_fbss,Food excl. FBSS,53,0.17
+2026-05-01,tb_fbss,FBSS,54,0.2
+2026-05-01,tb_elec_gas,Electricity and gas,55,-0.06
+2026-05-01,tb_services,MAS services,56,0.42
+2026-05-01,tb_retail_goods,Retail and other goods,57,0.17
+2026-05-01,tb_imputed_rentals,Imputed rentals,58,0.06
+2026-05-01,tb_actual_rentals,Actual rentals,59,0.02
+2026-05-01,tb_motor_cars,Motor cars,60,0.38
+2026-05-01,tb_petrol,Petrol,61,0.34
 2026-06-01,all,All items,0,1.94
 2026-06-01,core,MAS core,1,1.03
 2026-06-01,accommodation,Accommodation,2,0.15
@@ -3017,6 +3221,18 @@ date,series,label,order,contrib_yoy
 2026-06-01,gs_all,All items,40,1.94
 2026-06-01,gs_services,"Services, incl. FBSS",41,0.89
 2026-06-01,gs_goods,Goods,42,1.05
+2026-06-01,tb_all,CPI,50,1.94
+2026-06-01,tb_accommodation,Accommodation,51,0.15
+2026-06-01,tb_private_transport,Private transport,52,0.77
+2026-06-01,tb_food_ex_fbss,Food excl. FBSS,53,0.2
+2026-06-01,tb_fbss,FBSS,54,0.23
+2026-06-01,tb_elec_gas,Electricity and gas,55,-0.06
+2026-06-01,tb_services,MAS services,56,0.48
+2026-06-01,tb_retail_goods,Retail and other goods,57,0.17
+2026-06-01,tb_imputed_rentals,Imputed rentals,58,0.07
+2026-06-01,tb_actual_rentals,Actual rentals,59,0.02
+2026-06-01,tb_motor_cars,Motor cars,60,0.41
+2026-06-01,tb_petrol,Petrol,61,0.29
 2026-07-01,all,All items,0,2.24
 2026-07-01,core,MAS core,1,1.31
 2026-07-01,accommodation,Accommodation,2,0.2
@@ -3040,6 +3256,18 @@ date,series,label,order,contrib_yoy
 2026-07-01,gs_all,All items,40,2.24
 2026-07-01,gs_services,"Services, incl. FBSS",41,1.04
 2026-07-01,gs_goods,Goods,42,1.2
+2026-07-01,tb_all,CPI,50,2.24
+2026-07-01,tb_accommodation,Accommodation,51,0.2
+2026-07-01,tb_private_transport,Private transport,52,0.74
+2026-07-01,tb_food_ex_fbss,Food excl. FBSS,53,0.21
+2026-07-01,tb_fbss,FBSS,54,0.25
+2026-07-01,tb_elec_gas,Electricity and gas,55,0.16
+2026-07-01,tb_services,MAS services,56,0.54
+2026-07-01,tb_retail_goods,Retail and other goods,57,0.14
+2026-07-01,tb_imputed_rentals,Imputed rentals,58,0.1
+2026-07-01,tb_actual_rentals,Actual rentals,59,0.03
+2026-07-01,tb_motor_cars,Motor cars,60,0.4
+2026-07-01,tb_petrol,Petrol,61,0.26
 2026-08-01,all,All items,0,2.35
 2026-08-01,core,MAS core,1,1.44
 2026-08-01,accommodation,Accommodation,2,0.22
@@ -3063,6 +3291,18 @@ date,series,label,order,contrib_yoy
 2026-08-01,gs_all,All items,40,2.35
 2026-08-01,gs_services,"Services, incl. FBSS",41,1.16
 2026-08-01,gs_goods,Goods,42,1.19
+2026-08-01,tb_all,CPI,50,2.35
+2026-08-01,tb_accommodation,Accommodation,51,0.22
+2026-08-01,tb_private_transport,Private transport,52,0.69
+2026-08-01,tb_food_ex_fbss,Food excl. FBSS,53,0.2
+2026-08-01,tb_fbss,FBSS,54,0.27
+2026-08-01,tb_elec_gas,Electricity and gas,55,0.16
+2026-08-01,tb_services,MAS services,56,0.63
+2026-08-01,tb_retail_goods,Retail and other goods,57,0.19
+2026-08-01,tb_imputed_rentals,Imputed rentals,58,0.12
+2026-08-01,tb_actual_rentals,Actual rentals,59,0.03
+2026-08-01,tb_motor_cars,Motor cars,60,0.35
+2026-08-01,tb_petrol,Petrol,61,0.26
 2026-09-01,all,All items,0,2.2
 2026-09-01,core,MAS core,1,1.31
 2026-09-01,accommodation,Accommodation,2,0.24
@@ -3086,3 +3326,15 @@ date,series,label,order,contrib_yoy
 2026-09-01,gs_all,All items,40,2.2
 2026-09-01,gs_services,"Services, incl. FBSS",41,1.09
 2026-09-01,gs_goods,Goods,42,1.11
+2026-09-01,tb_all,CPI,50,2.2
+2026-09-01,tb_accommodation,Accommodation,51,0.24
+2026-09-01,tb_private_transport,Private transport,52,0.66
+2026-09-01,tb_food_ex_fbss,Food excl. FBSS,53,0.21
+2026-09-01,tb_fbss,FBSS,54,0.28
+2026-09-01,tb_elec_gas,Electricity and gas,55,0.16
+2026-09-01,tb_services,MAS services,56,0.53
+2026-09-01,tb_retail_goods,Retail and other goods,57,0.13
+2026-09-01,tb_imputed_rentals,Imputed rentals,58,0.13
+2026-09-01,tb_actual_rentals,Actual rentals,59,0.03
+2026-09-01,tb_motor_cars,Motor cars,60,0.26
+2026-09-01,tb_petrol,Petrol,61,0.3

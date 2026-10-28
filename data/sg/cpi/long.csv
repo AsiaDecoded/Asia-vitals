@@ -66438,6 +66438,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2025-01-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2025-01-01,1.17,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2025-01-01,0.97,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2025-01-01,0.21,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2025-01-01,1.17,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2025-01-01,0.42,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2025-01-01,0.25,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2025-01-01,0.14,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2025-01-01,0.16,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2025-01-01,-0.06,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2025-01-01,0.33,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2025-01-01,-0.07,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2025-01-01,0.32,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2025-01-01,0.05,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2025-01-01,0.15,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2025-01-01,0.05,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2025-02-01,0.92,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2025-02-01,0.36,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2025-02-01,0.42,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66461,6 +66473,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2025-02-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2025-02-01,0.92,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2025-02-01,0.89,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2025-02-01,0.04,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2025-02-01,0.92,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2025-02-01,0.42,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2025-02-01,0.15,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2025-02-01,0.07,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2025-02-01,0.14,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2025-02-01,-0.06,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2025-02-01,0.26,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2025-02-01,-0.05,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2025-02-01,0.28,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2025-02-01,0.04,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2025-02-01,0.06,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2025-02-01,0.03,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2025-03-01,0.89,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2025-03-01,0.32,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2025-03-01,0.38,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66484,6 +66508,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2025-03-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2025-03-01,0.89,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2025-03-01,0.79,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2025-03-01,0.1,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2025-03-01,0.89,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2025-03-01,0.38,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2025-03-01,0.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2025-03-01,0.1,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2025-03-01,0.16,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2025-03-01,-0.07,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2025-03-01,0.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2025-03-01,-0.05,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2025-03-01,0.24,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2025-03-01,0.04,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2025-03-01,0.16,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2025-03-01,-0.03,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2025-04-01,0.86,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2025-04-01,0.45,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2025-04-01,0.29,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66507,6 +66543,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2025-04-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2025-04-01,0.86,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2025-04-01,0.87,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2025-04-01,-0.0,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2025-04-01,0.86,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2025-04-01,0.29,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2025-04-01,0.12,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2025-04-01,0.14,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2025-04-01,0.15,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2025-04-01,-0.07,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2025-04-01,0.36,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2025-04-01,-0.13,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2025-04-01,0.2,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2025-04-01,0.03,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2025-04-01,0.13,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2025-04-01,-0.06,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2025-05-01,0.77,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2025-05-01,0.37,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2025-05-01,0.29,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66530,6 +66578,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2025-05-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2025-05-01,0.77,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2025-05-01,0.86,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2025-05-01,-0.09,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2025-05-01,0.77,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2025-05-01,0.29,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2025-05-01,0.1,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2025-05-01,0.06,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2025-05-01,0.16,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2025-05-01,-0.07,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2025-05-01,0.33,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2025-05-01,-0.11,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2025-05-01,0.16,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2025-05-01,0.03,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2025-05-01,0.11,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2025-05-01,-0.06,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2025-06-01,0.8,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2025-06-01,0.36,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2025-06-01,0.26,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66553,6 +66613,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2025-06-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2025-06-01,0.8,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2025-06-01,0.71,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2025-06-01,0.09,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2025-06-01,0.8,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2025-06-01,0.26,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2025-06-01,0.18,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2025-06-01,0.05,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2025-06-01,0.15,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2025-06-01,-0.08,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2025-06-01,0.23,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2025-06-01,0.0,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2025-06-01,0.13,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2025-06-01,0.02,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2025-06-01,0.12,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2025-06-01,-0.01,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2025-07-01,0.63,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2025-07-01,0.3,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2025-07-01,0.14,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66576,6 +66648,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2025-07-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2025-07-01,0.63,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2025-07-01,0.57,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2025-07-01,0.06,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2025-07-01,0.63,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2025-07-01,0.14,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2025-07-01,0.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2025-07-01,0.06,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2025-07-01,0.17,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2025-07-01,-0.11,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2025-07-01,0.23,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2025-07-01,-0.05,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2025-07-01,0.1,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2025-07-01,0.02,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2025-07-01,0.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2025-07-01,-0.03,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2025-08-01,0.55,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2025-08-01,0.21,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2025-08-01,0.12,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66599,6 +66683,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2025-08-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2025-08-01,0.55,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2025-08-01,0.44,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2025-08-01,0.1,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2025-08-01,0.55,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2025-08-01,0.12,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2025-08-01,0.22,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2025-08-01,0.06,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2025-08-01,0.17,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2025-08-01,-0.11,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2025-08-01,0.12,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2025-08-01,-0.02,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2025-08-01,0.07,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2025-08-01,0.02,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2025-08-01,0.21,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2025-08-01,-0.02,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2025-09-01,0.67,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2025-09-01,0.23,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2025-09-01,0.1,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66622,6 +66718,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2025-09-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2025-09-01,0.67,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2025-09-01,0.44,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2025-09-01,0.23,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2025-09-01,0.67,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2025-09-01,0.1,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2025-09-01,0.34,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2025-09-01,0.01,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2025-09-01,0.2,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2025-09-01,-0.11,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2025-09-01,0.1,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2025-09-01,0.03,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2025-09-01,0.06,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2025-09-01,0.02,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2025-09-01,0.34,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2025-09-01,-0.02,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2025-10-01,1.21,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2025-10-01,0.78,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2025-10-01,0.08,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66645,6 +66753,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2025-10-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2025-10-01,1.21,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2025-10-01,0.88,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2025-10-01,0.33,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2025-10-01,1.21,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2025-10-01,0.08,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2025-10-01,0.35,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2025-10-01,0.05,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2025-10-01,0.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2025-10-01,-0.08,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2025-10-01,0.57,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2025-10-01,0.05,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2025-10-01,0.04,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2025-10-01,0.01,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2025-10-01,0.39,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2025-10-01,-0.07,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2025-11-01,1.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2025-11-01,0.8,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2025-11-01,0.08,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66668,6 +66788,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2025-11-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2025-11-01,1.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2025-11-01,0.91,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2025-11-01,0.28,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2025-11-01,1.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2025-11-01,0.08,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2025-11-01,0.31,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2025-11-01,0.06,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2025-11-01,0.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2025-11-01,-0.08,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2025-11-01,0.6,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2025-11-01,0.03,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2025-11-01,0.03,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2025-11-01,0.01,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2025-11-01,0.32,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2025-11-01,-0.04,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2025-12-01,1.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2025-12-01,0.79,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2025-12-01,0.07,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66691,6 +66823,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2025-12-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2025-12-01,1.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2025-12-01,0.91,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2025-12-01,0.28,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2025-12-01,1.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2025-12-01,0.07,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2025-12-01,0.33,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2025-12-01,0.06,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2025-12-01,0.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2025-12-01,-0.08,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2025-12-01,0.61,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2025-12-01,-0.0,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2025-12-01,0.02,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2025-12-01,0.01,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2025-12-01,0.32,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2025-12-01,-0.02,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2026-01-01,1.43,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2026-01-01,0.68,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2026-01-01,0.5,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66714,6 +66858,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2026-01-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2026-01-01,1.43,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2026-01-01,1.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2026-01-01,0.24,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2026-01-01,1.43,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2026-01-01,0.51,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2026-01-01,0.25,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2026-01-01,0.05,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2026-01-01,0.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2026-01-01,-0.08,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2026-01-01,0.46,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2026-01-01,0.05,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2026-01-01,0.02,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2026-01-01,0.02,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2026-01-01,0.25,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2026-01-01,-0.04,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2026-02-01,1.23,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2026-02-01,0.93,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2026-02-01,0.09,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66737,6 +66893,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2026-02-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2026-02-01,1.23,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2026-02-01,0.93,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2026-02-01,0.3,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2026-02-01,1.23,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2026-02-01,0.09,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2026-02-01,0.22,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2026-02-01,0.14,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2026-02-01,0.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2026-02-01,-0.08,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2026-02-01,0.62,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2026-02-01,0.06,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2026-02-01,0.02,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2026-02-01,0.02,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2026-02-01,0.27,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2026-02-01,-0.07,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2026-03-01,1.8,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2026-03-01,1.1,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2026-03-01,0.09,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66760,6 +66928,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2026-03-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2026-03-01,1.8,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2026-03-01,0.97,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2026-03-01,0.82,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2026-03-01,1.8,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2026-03-01,0.09,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2026-03-01,0.6,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2026-03-01,0.14,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2026-03-01,0.18,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2026-03-01,-0.08,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2026-03-01,0.67,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2026-03-01,0.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2026-03-01,0.03,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2026-03-01,0.02,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2026-03-01,0.3,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2026-03-01,0.27,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2026-04-01,1.76,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2026-04-01,0.92,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2026-04-01,0.11,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66783,6 +66963,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2026-04-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2026-04-01,1.76,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2026-04-01,0.8,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2026-04-01,0.96,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2026-04-01,1.76,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2026-04-01,0.11,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2026-04-01,0.74,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2026-04-01,0.15,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2026-04-01,0.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2026-04-01,-0.06,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2026-04-01,0.48,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2026-04-01,0.15,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2026-04-01,0.04,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2026-04-01,0.02,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2026-04-01,0.35,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2026-04-01,0.33,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2026-05-01,1.82,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2026-05-01,0.9,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2026-05-01,0.13,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66806,6 +66998,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2026-05-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2026-05-01,1.82,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2026-05-01,0.78,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2026-05-01,1.04,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2026-05-01,1.82,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2026-05-01,0.13,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2026-05-01,0.79,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2026-05-01,0.17,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2026-05-01,0.2,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2026-05-01,-0.06,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2026-05-01,0.42,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2026-05-01,0.17,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2026-05-01,0.06,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2026-05-01,0.02,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2026-05-01,0.38,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2026-05-01,0.34,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2026-06-01,1.94,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2026-06-01,1.03,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2026-06-01,0.15,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66829,6 +67033,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2026-06-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2026-06-01,1.94,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2026-06-01,0.89,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2026-06-01,1.05,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2026-06-01,1.94,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2026-06-01,0.15,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2026-06-01,0.77,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2026-06-01,0.2,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2026-06-01,0.23,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2026-06-01,-0.06,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2026-06-01,0.48,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2026-06-01,0.17,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2026-06-01,0.07,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2026-06-01,0.02,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2026-06-01,0.41,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2026-06-01,0.29,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2026-07-01,2.24,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2026-07-01,1.31,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2026-07-01,0.2,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66852,6 +67068,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2026-07-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2026-07-01,2.24,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2026-07-01,1.04,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2026-07-01,1.2,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2026-07-01,2.24,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2026-07-01,0.2,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2026-07-01,0.74,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2026-07-01,0.21,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2026-07-01,0.25,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2026-07-01,0.16,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2026-07-01,0.54,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2026-07-01,0.14,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2026-07-01,0.1,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2026-07-01,0.03,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2026-07-01,0.4,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2026-07-01,0.26,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2026-08-01,2.35,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2026-08-01,1.44,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2026-08-01,0.22,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66875,6 +67103,18 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2026-08-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2026-08-01,2.35,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2026-08-01,1.16,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2026-08-01,1.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2026-08-01,2.35,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2026-08-01,0.22,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2026-08-01,0.69,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2026-08-01,0.2,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2026-08-01,0.27,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2026-08-01,0.16,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2026-08-01,0.63,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2026-08-01,0.19,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2026-08-01,0.12,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2026-08-01,0.03,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2026-08-01,0.35,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2026-08-01,0.26,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,all,All items,contrib_yoy,national,M,2026-09-01,2.2,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,core,MAS core,contrib_yoy,national,M,2026-09-01,1.31,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,accommodation,Accommodation,contrib_yoy,national,M,2026-09-01,0.24,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
@@ -66898,3 +67138,15 @@ SG,cpi_contrib,xf_ptx,Private transport ex-fuel,contrib_yoy,national,M,2026-09-0
 SG,cpi_contrib,gs_all,All items,contrib_yoy,national,M,2026-09-01,2.2,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_services,"Services, incl. FBSS",contrib_yoy,national,M,2026-09-01,1.09,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
 SG,cpi_contrib,gs_goods,Goods,contrib_yoy,national,M,2026-09-01,1.11,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_all,CPI,contrib_yoy,national,M,2026-09-01,2.2,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_accommodation,Accommodation,contrib_yoy,national,M,2026-09-01,0.24,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_private_transport,Private transport,contrib_yoy,national,M,2026-09-01,0.66,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_food_ex_fbss,Food excl. FBSS,contrib_yoy,national,M,2026-09-01,0.21,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_fbss,FBSS,contrib_yoy,national,M,2026-09-01,0.28,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_elec_gas,Electricity and gas,contrib_yoy,national,M,2026-09-01,0.16,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_services,MAS services,contrib_yoy,national,M,2026-09-01,0.53,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_retail_goods,Retail and other goods,contrib_yoy,national,M,2026-09-01,0.13,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_imputed_rentals,Imputed rentals,contrib_yoy,national,M,2026-09-01,0.13,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_actual_rentals,Actual rentals,contrib_yoy,national,M,2026-09-01,0.03,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_motor_cars,Motor cars,contrib_yoy,national,M,2026-09-01,0.26,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09
+SG,cpi_contrib,tb_petrol,Petrol,contrib_yoy,national,M,2026-09-01,0.3,pp,Singapore Department of Statistics; Asia Decoded calculation,C2026-09

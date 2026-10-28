@@ -173,6 +173,29 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
 #cpi-heat .heat-thumb:active { cursor: grabbing; background: var(--ad-ink, var(--color-fg-muted)); }
 #cpi-heat-table th:nth-child(-n+2), #cpi-heat-table td:nth-child(-n+2) { position: sticky; left: 0; background: var(--color-panel); z-index: 1; }
 #cpi-heat-table th:nth-child(2), #cpi-heat-table td:nth-child(2) { left: var(--heat-c1, 0px); }
+#cpi-ctab-table { font-size: 0.8125rem; }
+#cpi-ctab-table th, #cpi-ctab-table td { padding: 3px 6px; }
+#cpi-ctab-table th:nth-child(n+2), #cpi-ctab-table td:nth-child(n+2) { text-align: center; }
+#cpi-ctab-table td.heat { font-variant-numeric: tabular-nums; border: 2px solid var(--color-bg); }
+#cpi-ctab-table th:first-child, #cpi-ctab-table td:first-child { text-align: left; white-space: nowrap; }
+#cpi-ctab-table td, #cpi-ctab-table th { border-bottom: 0; }
+#cpi-ctab-table tr.lead td { font-weight: 700; }
+#cpi-ctab-table td.wt { color: var(--ad-ink, var(--color-fg-muted)); font-weight: 400; padding-right: 12px; }
+#cpi-ctab > h2 { padding-bottom: var(--cds-gap-sm); border-bottom: 1px solid var(--ad-ink, var(--color-fg-muted)); }
+#cpi-ctab-table thead th:first-child { font-weight: 400; font-size: 0.8125rem; color: var(--ad-ink, var(--color-fg-muted)); }
+#cpi-ctab-table tr.sub td:first-child { padding-left: 1.1rem; }
+#cpi-ctab-table tr.spacer td { height: 10px; padding: 0; border: 0; background: none; }
+#cpi-ctab-table .heat-tog { font: inherit; font-weight: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-align: left; }
+#cpi-ctab-table .heat-arrow { color: var(--ad-ink, var(--color-fg-muted)); font-size: 0.85em; }
+#cpi-ctab .jg-tablewrap { overflow-x: auto; scrollbar-width: none; }
+#cpi-ctab .jg-tablewrap::-webkit-scrollbar { display: none; }
+#cpi-ctab .heat-barwrap { padding-bottom: var(--cds-gap-sm); border-bottom: 1px solid var(--ad-ink, var(--color-fg-muted)); }
+#cpi-ctab .heat-track { position: relative; height: 8px; margin-top: 6px; border-radius: 4px; background: var(--color-border-line); cursor: pointer; touch-action: none; }
+#cpi-ctab .heat-track[hidden] { display: none; }
+#cpi-ctab .heat-thumb { position: absolute; top: 0; left: 0; height: 8px; border-radius: 4px; background: var(--ad-axis, #A6A6A6); cursor: grab; touch-action: none; }
+#cpi-ctab .heat-thumb:active { cursor: grabbing; background: var(--ad-ink, var(--color-fg-muted)); }
+#cpi-ctab-table th:nth-child(-n+2), #cpi-ctab-table td:nth-child(-n+2) { position: sticky; left: 0; background: var(--color-panel); z-index: 1; }
+#cpi-ctab-table th:nth-child(2), #cpi-ctab-table td:nth-child(2) { left: var(--heat-c1, 0px); }
 .ad-notes { font-family: Arial, Helvetica, sans-serif; }
 .ad-notes ol { margin: var(--cds-gap-sm) 0 0; padding-left: 1.2rem; display: flex; flex-direction: column; gap: var(--cds-gap-xs); font-size: 0.8125rem; line-height: 1.5; color: var(--ad-ink, var(--color-fg-muted)); max-width: 60rem; }
 .ad-notes ol b { color: var(--ad-ink, var(--color-fg)); }
@@ -256,44 +279,52 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
         </div>
         <div class="ad-foot"><span>Source: SingStat</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
-      <div class="ad-stack">
-        <section class="jg-card" id="cpi-movers">
-          <div class="jg-cardhead">
-            <div><h2>Singapore CPI biggest contributors</h2></div>
-            <div class="jg-seg" id="cpi-movers-seg" role="group" aria-label="Averaging window"><button data-n="3" aria-pressed="true">3m avg.</button><button data-n="6">6m avg.</button></div>
-          </div>
-          <div class="ad-top"><span class="ad-units" id="cpi-movers-units">%, ppt</span><span></span><span class="ad-units r"></span></div>
-          <div class="jg-tablewrap">
-            <table id="cpi-movers-table" data-source="cpi_movers" data-row-key="name">
-              <thead><tr>
-                <th data-field="name">Item</th>
-                <th data-field="weight">Weight</th>
-                <th data-field="yoy">y/y, latest</th>
-                <th data-field="avg3" id="cpi-movers-avg">Contribution, 3m avg.</th>
-              </tr></thead>
-              <tbody></tbody>
-            </table>
-          </div>
-          <div class="ad-foot"><span>Source: SingStat</span><span class="ad-brand">Asia Decoded</span></div>
-        </section>
-        <section class="jg-card" id="cpi-components">
-          <h2>Singapore CPI momentum</h2>
-          <div class="ad-top"><span class="ad-units" id="cpi-table-units">%</span><span></span><span class="ad-units r"></span></div>
-          <div class="jg-tablewrap">
-            <table id="cpi-table" data-source="cpi_table" data-row-key="label">
-              <thead><tr>
-                <th data-field="label">Series</th>
-                <th data-field="ann1">1m ann.</th>
-                  <th data-field="ann3">3m ann.</th>
-                <th data-field="ann6">6m ann.</th>
-                <th data-field="yoy12">12m</th>
-              </tr></thead>
-              <tbody></tbody>
-            </table>
-          </div>
-          <div class="ad-foot"><span>Source: SingStat</span><span class="ad-brand">Asia Decoded</span></div>
-        </section>
+      <section class="jg-card" id="cpi-ctab">
+        <h2>Singapore CPI contributions, ppt</h2>
+        <div class="jg-tablewrap" style="margin-top: var(--cds-gap-sm)">
+          <table id="cpi-ctab-table" data-source="cpi_ctab"></table>
+        </div>
+        <div class="ad-foot"><span>Source: SingStat, MAS</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
     </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-movers">
+        <div class="jg-cardhead">
+          <div><h2>Singapore CPI biggest contributors</h2></div>
+          <div class="jg-seg" id="cpi-movers-seg" role="group" aria-label="Averaging window"><button data-n="3" aria-pressed="true">3m avg.</button><button data-n="6">6m avg.</button></div>
+        </div>
+        <div class="ad-top"><span class="ad-units" id="cpi-movers-units">%, ppt</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-tablewrap">
+          <table id="cpi-movers-table" data-source="cpi_movers" data-row-key="name">
+            <thead><tr>
+              <th data-field="name">Item</th>
+              <th data-field="weight">Weight</th>
+              <th data-field="yoy">y/y, latest</th>
+              <th data-field="avg3" id="cpi-movers-avg">Contribution, 3m avg.</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="ad-foot"><span>Source: SingStat</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-components">
+        <h2>Singapore CPI momentum</h2>
+        <div class="ad-top"><span class="ad-units" id="cpi-table-units">%</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-tablewrap">
+          <table id="cpi-table" data-source="cpi_table" data-row-key="label">
+            <thead><tr>
+              <th data-field="label">Series</th>
+              <th data-field="ann1">1m ann.</th>
+                <th data-field="ann3">3m ann.</th>
+              <th data-field="ann6">6m ann.</th>
+              <th data-field="yoy12">12m</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="ad-foot"><span>Source: SingStat</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
     </div>
 
     <div class="jg-grid">
@@ -363,8 +394,9 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
       <p class="jg-foot">Weights are SingStat&rsquo;s published 2024-basket weights (Information Paper IP-E61), % of CPI; MAS&rsquo;s for services and retail and other goods. Calculated series chain the published weights of the 2014, 2019 and 2024 baskets (see Methodology). FBSS: food and beverage serving services.</p>
       <ol>
         <li><b>Table 1, Singapore consumer inflation:</b> SingStat&rsquo;s published y/y for CPI, its measures, food and the divisions. MAS core (64.4%) is CPI excluding accommodation and private transport. CPI less food and energy (89.7%) is CPI excluding food other than FBSS (6.5%) and energy (electricity, gas, petrol, and other fuel and lubricants, 3.8%), Asia Decoded calculations. CPI less imputed rentals 78.6%, CPI less accommodation 73.4%. Goods (25.3%) and services (74.7%) as in chart 4, Asia Decoded calculations. MAS services (31.7%): SingStat&rsquo;s published y/y.</li>
-        <li><b>Table 2, Singapore CPI biggest contributors:</b> SingStat&rsquo;s most detailed published CPI items (157) with the largest positive and negative contributions to CPI y/y, averaged over the latest 3 or 6 months, Asia Decoded calculations. Each item&rsquo;s contribution is its weight times the change in its index over 12 months, divided by CPI a year earlier. From January 2025, the first month with a 2024-basket year earlier.</li>
-        <li><b>Table 3, Singapore CPI momentum:</b> 1, 3 and 6-month changes at annual rates, from SingStat&rsquo;s seasonally adjusted indices, and the published 12-month change. Weights: CPI 100%, accommodation 26.6%, private transport 9.1%, CPI less imputed rentals 78.6%, food excl. FBSS 6.5%, FBSS 13.9%, health 10.1%.</li>
+        <li><b>Table 2, Singapore CPI contributions:</b> contributions, in percentage points, to CPI y/y of accommodation (26.6%), private transport (9.1%) and the five parts of MAS core: food excl. FBSS (6.5%), FBSS (13.9%), electricity and gas (2.0%), MAS services (31.7%) and retail and other goods (10.3%), which add up to CPI y/y, Asia Decoded calculations. Under accommodation, imputed rentals (21.4%) and actual rentals (2.9%); under private transport, motor cars (4.6%) and petrol (1.7%). Each is its weight times the change in its published index over 12 months, divided by the weighted sum of the parts&rsquo; indices a year earlier, on the 2024 basket; the total is within 0.1pp of the published CPI y/y. The parts share one colour scale, green below zero and red above; CPI is coloured on its own range, as in Table 1.</li>
+        <li><b>Table 3, Singapore CPI biggest contributors:</b> SingStat&rsquo;s most detailed published CPI items (157) with the largest positive and negative contributions to CPI y/y, averaged over the latest 3 or 6 months, Asia Decoded calculations. Each item&rsquo;s contribution is its weight times the change in its index over 12 months, divided by CPI a year earlier. From January 2025, the first month with a 2024-basket year earlier.</li>
+        <li><b>Table 4, Singapore CPI momentum:</b> 1, 3 and 6-month changes at annual rates, from SingStat&rsquo;s seasonally adjusted indices, and the published 12-month change. Weights: CPI 100%, accommodation 26.6%, private transport 9.1%, CPI less imputed rentals 78.6%, food excl. FBSS 6.5%, FBSS 13.9%, health 10.1%.</li>
         <li><b>Chart 1, Singapore inflation:</b> producer prices are the Singapore Manufactured Products Price Index (SMPPI, 2023 base); consumer prices are the CPI. % y/y.</li>
         <li><b>Chart 2, Singapore consumer inflation:</b> CPI, MAS core (64.4%), CPI less food and energy (89.7%, as in Table 1) and CPI less imputed rentals (78.6%), % y/y.</li>
         <li><b>Chart 3, Singapore consumer inflation:</b> % 3m/3m: the average of SingStat&rsquo;s seasonally adjusted index over the latest three months against the average over the previous three months, annualised (the ratio to the fourth power), Asia Decoded calculations. On the CPI tab, the line is CPI, % y/y, as published.</li>
