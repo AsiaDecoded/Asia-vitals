@@ -303,7 +303,7 @@ dash.calc('cpi_heat', {
       { key: 'energy', name: 'Energy', color: J.PAL[4], bar: true },
       { key: 'acco', name: 'Accommodation', color: '#C3CCD8', bar: true },
       { key: 'ptx', name: 'Private transport ex-fuel', color: J.PAL[0], bar: true },
-      { key: 'services', name: 'Services', color: '#44546A', bar: true },
+      { key: 'services', name: 'Services', color: '#1A2564', bar: true },
       { key: 'retail_goods', name: 'Retail and other goods', color: J.PAL[4], bar: true },
       { key: 'food', name: 'Food', color: J.PAL[5], bar: true },
       { key: 'food_ex_fbss', name: 'Food excl. FBSS', color: '#C3CCD8', bar: true },
