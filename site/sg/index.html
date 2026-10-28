@@ -228,12 +228,7 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
     </div>
 
     <div class="jg-grid">
-      <section class="jg-card" id="cpi-ym">
-        <h2>Singapore consumer inflation</h2>
-        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-ym-legend"></div><span class="ad-units r">% m/m</span></div>
-        <div class="jg-chart" id="cpi-ym-chart" data-source="cpi_series"></div>
-        <div class="ad-foot"><span>Source: SingStat</span><span class="ad-brand">Asia Decoded</span></div>
-      </section>
+      
       <section class="jg-card" id="cpi-momentum">
         <div class="jg-cardhead">
           <div><h2>Singapore consumer inflation</h2></div>
@@ -244,6 +239,12 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
         <div class="ad-top"><span class="ad-units">%</span><div class="jg-legend" id="cpi-sa-legend"></div><span class="ad-units r"></span></div>
         <div class="jg-chart" id="cpi-sa-chart" data-source="cpi_series"></div>
         <div class="ad-foot"><span>Source: SingStat</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="gs-yoy">
+        <h2>Singapore goods and services CPI</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="gs-yoy-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gs-yoy-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: SingStat, MAS</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
     </div>
 
@@ -292,7 +293,7 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
           </div>
           <div class="ad-foot"><span>Source: SingStat</span><span class="ad-brand">Asia Decoded</span></div>
         </section>
-      </div>
+    </div>
     </div>
 
     <div class="jg-grid">
@@ -326,12 +327,7 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
     </div>
 
     <div class="jg-grid">
-      <section class="jg-card" id="gs-yoy">
-        <h2>Singapore goods and services CPI</h2>
-        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="gs-yoy-legend"></div><span class="ad-units r"></span></div>
-        <div class="jg-chart" id="gs-yoy-chart" data-source="cpi_series"></div>
-        <div class="ad-foot"><span>Source: SingStat, MAS</span><span class="ad-brand">Asia Decoded</span></div>
-      </section>
+      
       <section class="jg-card" id="gs-contrib">
         <h2>Singapore consumer inflation contribution</h2>
         <div class="ad-top"><span class="ad-units">ppt</span><div class="jg-legend" id="gs-contrib-legend"></div><span class="ad-units r"></span></div>
@@ -374,23 +370,22 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
       <h2>Chart notes</h2>
       <p class="jg-foot">Weights are SingStat&rsquo;s published 2024-basket weights (Information Paper IP-E61), % of CPI; MAS&rsquo;s for services and retail and other goods. Calculated series chain the published weights of the 2014, 2019 and 2024 baskets (see Methodology). FBSS: food and beverage serving services.</p>
       <ol>
-        <li><b>Table 1, Singapore consumer inflation:</b> SingStat&rsquo;s published y/y for CPI, its measures, food and the divisions. MAS core (64.4%) is CPI excluding accommodation and private transport. CPI less food and energy (89.7%) is CPI excluding food other than FBSS (6.5%) and energy (electricity, gas, petrol, and other fuel and lubricants, 3.8%), Asia Decoded calculations. CPI less imputed rentals 78.6%, CPI less accommodation 73.4%. Goods (25.3%) and services (74.7%) as in chart 9, Asia Decoded calculations. MAS services (31.7%): SingStat&rsquo;s published y/y.</li>
+        <li><b>Table 1, Singapore consumer inflation:</b> SingStat&rsquo;s published y/y for CPI, its measures, food and the divisions. MAS core (64.4%) is CPI excluding accommodation and private transport. CPI less food and energy (89.7%) is CPI excluding food other than FBSS (6.5%) and energy (electricity, gas, petrol, and other fuel and lubricants, 3.8%), Asia Decoded calculations. CPI less imputed rentals 78.6%, CPI less accommodation 73.4%. Goods (25.3%) and services (74.7%) as in chart 4, Asia Decoded calculations. MAS services (31.7%): SingStat&rsquo;s published y/y.</li>
         <li><b>Table 2, Singapore CPI biggest contributors:</b> SingStat&rsquo;s most detailed published CPI items (157) with the largest positive and negative contributions to CPI y/y, averaged over the latest 3 or 6 months, Asia Decoded calculations. Each item&rsquo;s contribution is its weight times the change in its index over 12 months, divided by CPI a year earlier. From January 2025, the first month with a 2024-basket year earlier.</li>
         <li><b>Table 3, Singapore CPI momentum:</b> 1, 3 and 6-month changes at annual rates, from SingStat&rsquo;s seasonally adjusted indices, and the published 12-month change. Weights: CPI 100%, accommodation 26.6%, private transport 9.1%, CPI less imputed rentals 78.6%, food excl. FBSS 6.5%, FBSS 13.9%, health 10.1%.</li>
         <li><b>Chart 1, Singapore inflation:</b> producer prices are the Singapore Manufactured Products Price Index (SMPPI, 2023 base); consumer prices are the CPI. % y/y.</li>
         <li><b>Chart 2, Singapore consumer inflation:</b> CPI, MAS core (64.4%), CPI less food and energy (89.7%, as in Table 1) and CPI less imputed rentals (78.6%), % y/y.</li>
-        <li><b>Chart 3, Singapore consumer inflation:</b> CPI, % y/y, and % m/m from SingStat&rsquo;s seasonally adjusted index.</li>
-        <li><b>Chart 4, Singapore consumer inflation:</b> % 3m/3m: the average of SingStat&rsquo;s seasonally adjusted index over the latest three months against the average over the previous three months, annualised (the ratio to the fourth power), Asia Decoded calculations. On the CPI tab, the line is CPI, % y/y, as published.</li>
+        <li><b>Chart 3, Singapore consumer inflation:</b> % 3m/3m: the average of SingStat&rsquo;s seasonally adjusted index over the latest three months against the average over the previous three months, annualised (the ratio to the fourth power), Asia Decoded calculations. On the CPI tab, the line is CPI, % y/y, as published.</li>
+        <li><b>Chart 4, Singapore goods and services CPI:</b> % y/y, Asia Decoded calculations. Services (74.7%): MAS core services (31.7%), accommodation (26.6%), FBSS (13.9%) and private transport services (2.5%: maintenance and repair, parking, ERP and other services, vehicle insurance; from 2024 only, before then in goods). Goods (25.3%): all other items. MAS services (31.7%): the services part of MAS core, published by SingStat for MAS (excluding accommodation, private transport services and FBSS).</li>
         <li><b>Chart 5, Singapore consumer inflation contribution:</b> contributions of MAS core (64.4%), accommodation (26.6%) and private transport (9.1%) to CPI y/y, ppt, Asia Decoded calculations.</li>
         <li><b>Chart 6, Singapore consumer inflation contribution:</b> contributions of CPI less food and energy (89.7%), food excl. FBSS (6.5%) and energy (3.8%: electricity 1.8%, petrol 1.7%, gas 0.2%, other fuel and lubricants 0.04%) to CPI y/y, ppt, Asia Decoded calculations.</li>
         <li><b>Chart 7, Singapore MAS core inflation contribution:</b> contributions of services (31.7%), retail and other goods (10.3%), FBSS (13.9%), food excl. FBSS (6.5%) and electricity and gas (2.0%) to MAS core y/y, ppt, at MAS&rsquo;s weights (2014 basket split between services and retail and other goods estimated), Asia Decoded calculations.</li>
         <li><b>Chart 8, Singapore CPI less food and energy contribution:</b> contributions of services (31.7%), retail and other goods (10.3%), FBSS (13.9%), accommodation (26.6%) and private transport excl. fuel (7.3%) to CPI less food and energy y/y, ppt, Asia Decoded calculations.</li>
-        <li><b>Chart 9, Singapore goods and services CPI:</b> % y/y, Asia Decoded calculations. Services (74.7%): MAS core services (31.7%), accommodation (26.6%), FBSS (13.9%) and private transport services (2.5%: maintenance and repair, parking, ERP and other services, vehicle insurance; from 2024 only, before then in goods). Goods (25.3%): all other items. MAS services (31.7%): the services part of MAS core, published by SingStat for MAS (excluding accommodation, private transport services and FBSS).</li>
-        <li><b>Chart 10, Singapore consumer inflation contribution:</b> contributions of goods and services, as in chart 9, to CPI y/y, ppt, Asia Decoded calculations.</li>
-        <li><b>Chart 11, Singapore food and energy CPI:</b> food excl. FBSS (6.5%), FBSS (13.9%), electricity (1.8%) and petrol (1.7%), % y/y.</li>
-        <li><b>Chart 12, Singapore services CPI:</b> % y/y, Asia Decoded calculations. Services as in chart 9 (74.7%): MAS core services plus accommodation, FBSS and private transport services. Health (9.1%: outpatient and inpatient care, other health services, health insurance), land transport (2.6%: bus and train, point-to-point transport, commuting fares), airfares (1.3%), actual rentals (2.9%) and other services (58.7%, including imputed rentals, 21.4%, and FBSS, 13.9%).</li>
-        <li><b>Chart 13, Singapore rents, cars and services CPI:</b> actual rents (2.9%), motor cars (4.6%), health insurance (2.3%) and airfares (1.3%), % y/y.</li>
-        <li><b>Chart 14, Singapore CPI diffusion index:</b> the share of SingStat&rsquo;s most detailed published CPI items (unweighted) whose index is higher than a year earlier, the share lower, and the diffusion index, share rising minus share falling, Asia Decoded calculations.</li>
+        <li><b>Chart 9, Singapore consumer inflation contribution:</b> contributions of goods and services, as in chart 4, to CPI y/y, ppt, Asia Decoded calculations.</li>
+        <li><b>Chart 10, Singapore food and energy CPI:</b> food excl. FBSS (6.5%), FBSS (13.9%), electricity (1.8%) and petrol (1.7%), % y/y.</li>
+        <li><b>Chart 11, Singapore services CPI:</b> % y/y, Asia Decoded calculations. Services as in chart 4 (74.7%): MAS core services plus accommodation, FBSS and private transport services. Health (9.1%: outpatient and inpatient care, other health services, health insurance), land transport (2.6%: bus and train, point-to-point transport, commuting fares), airfares (1.3%), actual rentals (2.9%) and other services (58.7%, including imputed rentals, 21.4%, and FBSS, 13.9%).</li>
+        <li><b>Chart 12, Singapore rents, cars and services CPI:</b> actual rents (2.9%), motor cars (4.6%), health insurance (2.3%) and airfares (1.3%), % y/y.</li>
+        <li><b>Chart 13, Singapore CPI diffusion index:</b> the share of SingStat&rsquo;s most detailed published CPI items (unweighted) whose index is higher than a year earlier, the share lower, and the diffusion index, share rising minus share falling, Asia Decoded calculations.</li>
       </ol>
     </section>
 
@@ -448,7 +443,7 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
       <div class="ad-foot"><span>Source: SingStat</span><span class="ad-brand">Asia Decoded</span></div>
     </article>
   </section>
-</div>
+    </div>
 
 <script>
 const num = (v) => (v === '' || v == null ? null : Number(v));

@@ -225,6 +225,7 @@ dash.calc('cpi_heat', {
   // CPI all items: y/y (line, as published) and m/m seasonally adjusted (bars, as published).
   function ymChart() {
     const box = document.getElementById('cpi-ym-chart');
+    if (!box) return;
     const D = dash.data('cpi_series');
     if (failed(D.status)) { J.fail(box); return; }
     if (D.status !== 'ok') { box.replaceChildren(); return; }
