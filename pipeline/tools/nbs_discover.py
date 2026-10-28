@@ -427,7 +427,44 @@ def stage6():
     (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
 
 
+def stage7():
+    """Full history: the chart call (getEsDataByIndicatorIdAndDa, one indicator) and the table call
+    (stream/esData, many indicators), on national CPI y/y catalogs (2026- and -2015) and PPI."""
+    base = "https://data.stats.gov.cn/dg/website/publicrelease/"
+    hdr = {"Referer": "https://data.stats.gov.cn/dg/website/page.html", "Origin": "https://data.stats.gov.cn",
+           "Accept": "application/json, text/plain, */*", "Content-Type": "application/json;charset=UTF-8"}
+    root = "fc982599aa684be7969d7b90b1bd0e84"
+    cats = {"cpi26": "5c7452825c7c4dcba391db5ca7f335c5", "cpi15": "954cfd7597e34b919ec71caf6aeead51",
+            "ppi": "60e8b361f11c4a878c652a6487a25561"}
+    for nm, cid in cats.items():
+        ind = js(fetch(f"t7_ind_{nm}", base + "web/external/new/queryIndicatorsByCid?" +
+                       urllib.parse.urlencode({"cid": cid, "dt": "", "name": ""}), headers=hdr, ext=".json")) or {}
+        lst = (ind.get("data") or {}).get("list") or []
+        if not lst:
+            continue
+        ids = [x["_id"] for x in lst]
+        for k, dts in enumerate((["198301MM-202609MM"], ["202601MM-202609MM"], "")):
+            body = {"cid": cid, "id": ids[0], "da": "000000000000", "dt": "", "rootId": root, "dts": dts}
+            fetch(f"t7_chart_{nm}_{k}", base + "web/external/getEsDataByIndicatorIdAndDa", headers=hdr, ext=".json",
+                  data=json.dumps(body).encode())
+            time.sleep(0.4)
+        for k, (dts, das) in enumerate(((["198301MM-202609MM"], []), (["202601MM-202609MM"], []),
+                                        (["198301MM-202609MM"], [{"text": "全国", "value": "000000000000"}]))):
+            body = {"cid": cid, "indicatorIds": ids, "daCatalogId": "", "das": das, "showType": 1, "dts": dts,
+                    "rootId": root}
+            fetch(f"t7_stream_{nm}_{k}", base + "web/external/stream/esData", headers=hdr, ext=".txt",
+                  data=json.dumps(body).encode())
+            time.sleep(0.4)
+        body = {"cid": cid, "indicatorIds": ids, "daCatalogId": "", "das": [], "showType": 1,
+                "dts": ["198301MM-202609MM"], "rootId": root}
+        fetch(f"t7_stream_en_{nm}", base + "en/web/external/stream/esData", headers=hdr, ext=".txt",
+              data=json.dumps(body).encode())
+    (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
+
+
 def main():
+    if len(sys.argv) > 2 and sys.argv[2] == "stage7":
+        return stage7()
     if len(sys.argv) > 2 and sys.argv[2] == "stage6":
         return stage6()
     if len(sys.argv) > 2 and sys.argv[2] == "stage5":
