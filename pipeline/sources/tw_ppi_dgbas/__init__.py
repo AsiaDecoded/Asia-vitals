@@ -127,7 +127,7 @@ def update(**opts):
             sid = f"{prefix}_{key}"
             data[(sid, meas)] = vals
             meta[sid] = {"label": f"{PREFIX_LABEL[prefix]}: {label}" if key != "all" else PREFIX_LABEL[prefix],
-                         "label_zh": field, "group": group, "prefix": prefix}
+                         "label_zh": field, "group": group, }
     s, r = dgbas.series("A030601015", "1981-01", latest, ("00", "1"))
     raw.update(r)
     for (field, meas), vals in s.items():
@@ -183,15 +183,15 @@ def update(**opts):
         pass
     rows = []
     for (sid, meas), vals in data.items():
-        m = meta.get(sid, {"label": sid, "label_zh": "", "group": "seasonally_adjusted"})
         for p, v in vals.items():
-            rows.append({"date": p + "-01", "series": sid, "label": m["label"], "label_zh": m["label_zh"],
-                         "group": m["group"], "measure": meas, "value": v,
+            rows.append({"date": p + "-01", "series": sid, "measure": meas, "value": v,
                          "base_break": 1 if (p == "2026-01" and sid.startswith(("ipi", "epi"))) else 0,
                          "release_date": rel_dates.get(p, "")})
-    rows.sort(key=lambda r: (r["date"], r["group"], r["series"], r["measure"]))
-    cols = ["date", "series", "label", "label_zh", "group", "measure", "value", "base_break", "release_date"]
-    _write_csv(OUT / "tw_ppi.csv", cols, rows)
+    rows.sort(key=lambda r: (r["date"], r["series"], r["measure"]))
+    _write_csv(OUT / "tw_ppi.csv", ["date", "series", "measure", "value", "base_break", "release_date"], rows)
+    sids = sorted({s for s, _ in data})
+    _write_csv(OUT / "tw_ppi_series.csv", ["series", "label", "label_zh", "group"],
+               [{"series": s, **meta.get(s, {"label": s, "label_zh": "", "group": "seasonally_adjusted"})} for s in sids])
     dash = [r for r in rows if r["series"] in {"ppi_all", "ppi_agriculture", "ppi_mining", "ppi_manufacturing",
                                                "ppi_utilities", "dsp_all", "ipi_usd_all", "ipi_ntd_all", "epi_usd_all",
                                                "epi_ntd_all", "ppi_electronic_parts", "ppi_petroleum", "ppi_chemicals",
@@ -200,9 +200,12 @@ def update(**opts):
     code = f"P{latest}"
     label = f"{LONGMONTHS[int(latest[5:7]) - 1]} {latest[:4]}"
 
-    def long_rows():
+    def long_rows():  # named series (HS chapters and subgroups without an English name are in tw_ppi.csv only)
         for r in rows:
-            yield {"country": "TW", "indicator": "ppi", "series": f"{r['series']}_{r['measure']}", "label": r["label"],
+            if "_f_" in r["series"]:
+                continue
+            yield {"country": "TW", "indicator": "ppi", "series": f"{r['series']}_{r['measure']}",
+                   "label": meta.get(r["series"], {}).get("label", r["series"]),
                    "measure": r["measure"], "area": "national", "freq": "M", "date": r["date"], "value": r["value"],
                    "unit": "index 2021=100" if "index" in r["measure"] else "%", "source": "DGBAS", "release": code}
     nlong = write_long(long_rows(), OUT / "long.csv")

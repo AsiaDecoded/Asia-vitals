@@ -192,6 +192,21 @@ def release_page(url):
     return {"date": date, "files": files}
 
 
+def xlsx_has(blob, text):
+    """True if the first sheet of an .xlsx mentions text in its first rows (finds a release table by title)."""
+    import openpyxl
+    try:
+        ws = openpyxl.load_workbook(io.BytesIO(blob), data_only=True, read_only=True).worksheets[0]
+    except Exception:  # noqa: BLE001
+        return False
+    for i, r in enumerate(ws.iter_rows(values_only=True)):
+        if i > 6:
+            break
+        if any(isinstance(c, str) and text in c.replace(" ", "").replace("\u3000", "") for c in r):
+            return True
+    return False
+
+
 def _num(v):
     if isinstance(v, (int, float)):
         return float(v)

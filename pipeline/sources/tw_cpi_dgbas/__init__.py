@@ -16,7 +16,6 @@ and its weights with its headline; they write nothing.
 import csv
 import gzip
 import hashlib
-import io
 import json
 
 from core import dgbas
@@ -152,18 +151,27 @@ def _release_archive(warnings):
     for rel in listed:
         m = rel["month"]
         rec = index.get(m)
-        if rec and (store / rec.get("t1", "-")).exists() and (store / rec.get("t14", "-")).exists():
+        if rec and rec.get("t14_file") and (store / rec["t1"]).exists() and (store / rec["t14"]).exists():
             continue
         try:
             page = dgbas.release_page(rel["url"])
             tag = f"t{int(m[:4]) - 1911}{m[5:7]}"
             rec = {"url": rel["url"], "title": rel["title"], "date": page["date"]}
-            for t in ("1", "14"):
-                fname = f"{tag}_{t}.xlsx"
-                if fname not in page["files"]:
-                    raise dgbas.DGBASError(f"{fname} not on the release page")
-                (store / f"{m}_t{t}.xlsx").write_bytes(dgbas.get(page["files"][fname]))
-                rec[f"t{t}"] = f"{m}_t{t}.xlsx"
+            # Table numbers shift in some months; pick tables by their title.
+            want = {"1": ("消費者物價指數變動分析", ("1", "2")), "14": ("查價項目", ("14", "15", "13", "16", "12"))}
+            for t, (title, tries) in want.items():
+                for n in tries:
+                    fname = f"{tag}_{n}.xlsx"
+                    if fname not in page["files"]:
+                        continue
+                    blob = dgbas.get(page["files"][fname])
+                    if dgbas.xlsx_has(blob, title):
+                        (store / f"{m}_t{t}.xlsx").write_bytes(blob)
+                        rec[f"t{t}"] = f"{m}_t{t}.xlsx"
+                        rec[f"t{t}_file"] = fname
+                        break
+                else:
+                    raise dgbas.DGBASError(f"no table titled {title} on the release page")
             index[m] = rec
         except dgbas.DGBASError as e:
             warnings.append(f"release {m}: {e}"[:300])
@@ -341,25 +349,32 @@ def update(**opts):
     # ---- write
     rel_dates = {m: t.get("release_date", "") for m, t in t1.items()}
     labels = {r["key"]: r for r in names.values()}
+    labels.update({k: {"label": v} for k, v in (("lowest20", "Lowest 20% income households"), ("middle60", "Middle 60% income households"),
+                                                 ("highest20", "Highest 20% income households"), ("elderly", "Elderly households"))
+                   if k not in labels})
     area_names = {"national": "Taiwan", "elderly": "Elderly households", "all_households": "All households",
                   "lowest20": "Lowest 20% income", "middle60": "Middle 60% income", "highest20": "Highest 20% income"}
     rows = []
     for (area, key, meas), vals in data.items():
-        nm = labels.get(key, {})
         for p, v in vals.items():
-            rows.append({"date": p + "-01", "area": area, "area_name": area_names.get(area, area), "series": key,
-                         "label": nm.get("label", key), "group": meta.get(key, {}).get("group", "basic"),
-                         "level": nm.get("level", ""), "parent": nm.get("parent", ""), "measure": meas, "value": v,
+            rows.append({"date": p + "-01", "area": area, "series": key, "measure": meas, "value": v,
                          "base_break": 1 if p in BASE_STARTS else 0, "release_date": rel_dates.get(p, "")})
-    rows.sort(key=lambda r: (r["date"], r["area"] != "national", r["area"], r["group"], r["series"], r["measure"]))
-    cols = ["date", "area", "area_name", "series", "label", "group", "level", "parent", "measure", "value",
-            "base_break", "release_date"]
-    _write_csv(OUT / "tw_cpi.csv", cols, rows)
+    rows.sort(key=lambda r: (r["date"], r["area"] != "national", r["area"], r["series"], r["measure"]))
+    _write_csv(OUT / "tw_cpi.csv", ["date", "area", "series", "measure", "value", "base_break", "release_date"], rows)
+    slist = sorted({(a, k) for (a, k, m) in data})
+    _write_csv(OUT / "tw_cpi_series.csv", ["area", "area_name", "series", "label", "group", "level", "parent", "first", "last"],
+               [{"area": a, "area_name": area_names.get(a, a), "series": k, "label": labels.get(k, {}).get("label", k),
+                 "group": meta.get(k, {}).get("group", "income" if a not in ("national", "elderly") else "basic"),
+                 "level": labels.get(k, {}).get("level", ""), "parent": labels.get(k, {}).get("parent", ""),
+                 "first": min(min(data[(a2, k2, m)]) for (a2, k2, m) in data if a2 == a and k2 == k),
+                 "last": max(max(data[(a2, k2, m)]) for (a2, k2, m) in data if a2 == a and k2 == k)} for a, k in slist])
     dash_keys = set(GROUPS7) | {"all", "core", "energy", "goods", "services", "core_goods", "noncore_goods",
                                 "ex_food_energy", "ex_fruit_veg", "vegetables", "fruit", "eating_out", "fuels",
-                                "electricity", "gas", "rent", "durable", "semidurable", "nondurable"}
+                                "electricity", "gas", "rent", "durable", "semidurable", "nondurable",
+                                "services_eating_out", "medical_services", "transport_fees", "cereals", "meat"}
     _write_csv(OUT / "tw_cpi_dash.csv", ["date", "area", "series", "measure", "value"],
-               [r for r in rows if r["series"] in dash_keys and r["date"] >= "1960-01-01"])
+               [r for r in rows if r["series"] in dash_keys and r["date"] >= "1960-01-01"
+                and (r["area"] == "national" or r["series"] == "all")])
     item_rows.sort(key=lambda r: (r["date"], r["code"], r["measure"]))
     _write_csv(OUT / "tw_cpi_items.csv", ["date", "code", "name", "measure", "value"], item_rows)
     # Published weights (% of CPI) and contributions (pp), as first released
@@ -389,10 +404,13 @@ def update(**opts):
     label = f"{LONGMONTHS[int(latest[5:7]) - 1]} {latest[:4]}"
     src = "DGBAS"
 
-    def long_rows():
+    def long_rows():  # the dashboard's series (all series are in tw_cpi.csv)
         for r in rows:
+            if r["series"] not in dash_keys or not (r["area"] == "national" or r["series"] == "all"):
+                continue
             unit = "index 2021=100" if r["measure"] in ("index", "sa_index") else "%"
-            yield {"country": "TW", "indicator": "cpi", "series": f"{r['series']}_{r['measure']}", "label": r["label"],
+            yield {"country": "TW", "indicator": "cpi", "series": f"{r['series']}_{r['measure']}",
+                   "label": labels.get(r["series"], {}).get("label", r["series"]),
                    "measure": r["measure"], "area": r["area"], "freq": "M", "date": r["date"], "value": r["value"],
                    "unit": unit, "source": src, "release": code}
     nlong = write_long(long_rows(), OUT / "long.csv")
