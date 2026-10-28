@@ -367,14 +367,15 @@ dash.calc('cpi_heat', {
       .on('mouseleave', () => { hl.attr('display', 'none'); tip.style.display = 'none'; });
   }
 
-  // MAS core vs CPI less food and energy, and the parts that separate them: all y/y.
-  function gapChart() {
-    if (!document.getElementById('cpi-gapc-chart')) return;
-    lineChart('cpi-gapc-chart', 'cpi-gapc', 'cpi-gapc-legend', 'national', [
-      { key: 'core_only', name: 'In MAS core only (food ex-FBSS + electricity and gas, 8.5%)', color: C[5], width: 3 },
-      { key: 'exfe_only', name: 'In CPI less food and energy only (acco + private transport ex-fuel, 33.8%)', color: C[4], width: 3 },
-      { key: 'shared', name: 'In both (55.9%)', color: C[0], width: 2, dash: true },
-    ], 300);
+  // Services (as in MAS core) by type: health, transport, education and the rest; all y/y.
+  function svcChart() {
+    if (!document.getElementById('cpi-svc-chart')) return;
+    lineChart('cpi-svc-chart', 'cpi-svc', 'cpi-svc-legend', 'national', [
+      { key: 'svc_health', name: 'Health (9.1%)', color: C[0] },
+      { key: 'svc_transport', name: 'Transport (4.0%)', color: C[2] },
+      { key: 'svc_education', name: 'Education (5.8%)', color: C[5] },
+      { key: 'svc_other', name: 'Other services (12.8%)', color: C[3] },
+    ], 280);
   }
 
   function saChart() {
@@ -682,7 +683,7 @@ dash.calc('cpi_heat', {
     ymChart();
     contribChart();
     contribChart({ id: 'core-contrib', pre: 'core_', line: 'MAS core, y/y', keys: ['services', 'retail_goods', 'fbss', 'food_ex_fbss', 'elec_gas'] });
-    gapChart();
+    svcChart();
     contribChart({ id: 'fe-contrib', pre: 'fe_', line: 'CPI, y/y', keys: ['exfe', 'groc', 'energy'] });
     contribChart({ id: 'xf-contrib', pre: 'xf_', line: 'CPI less food and energy, y/y', keys: ['services', 'retail_goods', 'fbss', 'acco', 'ptx'] });
   };

@@ -100,7 +100,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 22  # bump when the outputs change, so the next run rebuilds them
+VERSION = 23  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -387,6 +387,26 @@ def _ex_food_energy(idx, names, errors):
 #   shared by both: all items - accommodation - private transport - food excl. FBSS - electricity - gas
 #   in CPI less food and energy only: accommodation + private transport - petrol - other fuel and lubricants
 #   (= imputed rentals, actual rents and maintenance, private transport excl. fuel)
+# MAS core services split into health services, transport services, education services and the rest, as weighted
+# indices on the chained method (weights per 10,000 of CPI: services from CORE_WEIGHTS, MAS, 2014 estimated; groups
+# from IP-E61 for 2019 and 2024 and IP-E48, old classification, for 2014). "S" is MAS's services index.
+_SVC = {
+    "2014": {"health": {"1.05.2": 212, "1.05.3": 211, "1.05.5": 52},
+             "transport": {"1.06.2": 304, "1.06.3": 126},
+             "education": {"1.09": 615, "1.09.3": -9}, "services": 2939},
+    "2019": {"health": {"1.05.2": 274, "1.05.3": 151, "1.05.4": 28, "1.05.5": 82},
+             "transport": {"1.06.2": 310, "1.06.3": 174, "1.06.4": 4},
+             "education": {"1.09": 670, "1.09.3": -8}, "services": 3173},
+    "2024": {"health": {"1.05.2": 428, "1.05.3": 238, "1.05.4": 23, "1.05.5": 225},
+             "transport": {"1.06.2": 262, "1.06.3": 131, "1.06.4": 8},
+             "education": {"1.09": 579, "1.09.3": -4}, "services": 3173},
+}
+SVC_PARTS = {f"svc_{k}": {b: v[k] for b, v in _SVC.items()} for k in ("health", "transport", "education")}
+SVC_PARTS["svc_other"] = {b: {"S": v["services"], **{c: -w for k in ("health", "transport", "education") for c, w in v[k].items()}}
+                          for b, v in _SVC.items()}
+SVC_LABELS = {"svc_health": "Health services (calculated)", "svc_transport": "Transport services (calculated)",
+              "svc_education": "Education services (calculated)", "svc_other": "Other services (calculated)"}
+
 GAP_PARTS = {
     "core_only": {"2014": {"1.01": 774, "1.03.2.3": 215, "1.03.2.4": 34},
                   "2019": {"1.01": 687, "1.03.2.3": 159, "1.03.2.4": 29},
@@ -625,11 +645,11 @@ def update(**_):
     labels = {"core_only": "In MAS core only: food excl. FBSS, electricity and gas (calculated)",
               "exfe_only": "In CPI less food and energy only: accommodation and private transport excl. fuel (calculated)",
               "shared": "In both MAS core and CPI less food and energy (calculated)"}
-    for key, w in GAP_PARTS.items():
-        g = _chained(idx, w, errors, key)
+    for key, w in list(GAP_PARTS.items()) + list(SVC_PARTS.items()):
+        g = _chained(dict(idx, S=mas["2"]), w, errors, key)
         for d in sorted(g):
             pm, py = g.get(_shift(d, -1)), g.get(_shift(d, -12))
-            rows.append({"date": d, "area": "national", "series": key, "label": labels[key], "group": "headline", "order": order,
+            rows.append({"date": d, "area": "national", "series": key, "label": labels.get(key) or SVC_LABELS[key], "group": "headline", "order": order,
                          "index": round(g[d], 3), "mom": round((g[d] / pm - 1) * 100, 1) if pm else None,
                          "yoy": round((g[d] / py - 1) * 100, 1) if py else None})
         order += 1
