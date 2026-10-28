@@ -646,7 +646,7 @@ dash.calc('cpi_ctab', {
   }
 
   // Contribution table: contributions (ppt) to CPI y/y by month; the parts add up to CPI. Parts share one colour scale
-  // (green below zero, white at zero, red above); CPI, MAS core and CPI less food and energy are coloured on their own range, as in Table 1.
+  // (green below zero, white at zero, red above); only the divisions block is coloured.
   function ctab() {
     const tbl = document.getElementById('cpi-ctab-table');
     if (!tbl) return;
@@ -704,13 +704,9 @@ dash.calc('cpi_ctab', {
         const f2 = d3.format('.2f')(r.contrib);
         td.textContent = f2 === '-0.00' ? '0.00' : f2;
         td.className = 'heat';
-        if (OWN.includes(k)) {
-          const t = hi > lo ? (r.contrib - lo) / (hi - lo) : 0.5;
-          td.style.background = t > 0.5 ? mix(Y, R, (t - 0.5) / 0.5) : mix(G, Y, t / 0.5);
-        } else {
-          const t = Math.max(-1, Math.min(1, r.contrib / AMAX[block(PARENT[k] || k)]));
-          td.style.background = t >= 0 ? mix(Wh, R, t) : mix(Wh, G, -t);
-        }
+        if (OWN.includes(k) || block(PARENT[k] || k) !== 'div') return;  // only the divisions block is coloured
+        const t = Math.max(-1, Math.min(1, r.contrib / AMAX.div));
+        td.style.background = t >= 0 ? mix(Wh, R, t) : mix(Wh, G, -t);
         td.style.color = '#1a1a1a';
       });
     });
