@@ -280,8 +280,54 @@ def round4():
     (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
 
 
+def mdt_name(theme, table, sv, sp):
+    return f"MDT_{theme}_{table}_{sv}_{sp}.csv".replace("%", "percent").replace("$", "dollar")
+
+
+def round5():
+    """Expenditure weights (Annex 1), the current report's table data (MDT CSVs), and the
+    published contribution table from every web-format issue of the monthly CPI report."""
+    att = (f"{CSD}/wbr/B1060001/B10600012026MM09/att/en/54/"
+           "Annex_1%20to%20CPI%20Report%20%28last%20update%20in%20April%202026%20issue%29_v1.3.xlsx")
+    fetch("annex1_weights", att, ext=".xlsx")
+    st, body = fetch("elidx_B1060001", f"{CSD}/en/data/stat_report/product/B1060001/report_element_index.json")
+    ids = ((as_json(body) or {}).get("elementindex") or []) if st == 200 else []
+    issues = []
+    for k in ids[:90]:
+        st, body = fetch(f"el_{k}", f"{CSD}/en/data/stat_report/product/B1060001/report_element_{k}.json", keep=False)
+        e = (((as_json(body) or {}).get("elementlist") or [{}])[0]) if st == 200 else {}
+        if e.get("Is_Web_Rpt") == "1" and e.get("Element_Code"):
+            issues.append({"id": k, "code": e["Element_Code"], "issue": e.get("Issue"), "eff": e.get("Eff_Date")})
+    summary = []
+    for n, it in enumerate(issues):
+        d = f"{CSD}/wbr/B1060001/{it['code']}/data/"
+        st, body = fetch(f"wbr_{it['code']}", f"{d}en/wbr.json", keep=(n < 2))
+        tbs = ((as_json(body) or {}).get("tb_code_list") or []) if st == 200 else []
+        it["tables"] = tbs
+        want = tbs if n == 0 else []
+        for tid in tbs:
+            st, body = fetch(f"{it['code']}_{tid}_lang", f"{d}en/table_{tid}_lang.json", keep=False)
+            title = ((as_json(body) or {}).get("tb_title") or "") if st == 200 else ""
+            if "Contribution" in title or tid in want:
+                st, cb = fetch(f"{it['code']}_{tid}_comp", f"{d}table_{tid}_comp.json")
+                comp = as_json(cb) if st == 200 else None
+                if comp:
+                    for c in comp.get("table_component_list") or []:
+                        fetch(f"{it['code']}_{tid}_{c['stat_var']}_{c['stat_pres']}".replace("%", "pct"),
+                              d + mdt_name(comp.get("theme_id"), tid, c["stat_var"], c["stat_pres"]), ext=".csv")
+                if "Contribution" in title:
+                    fetch(f"{it['code']}_{tid}_lang", f"{d}en/table_{tid}_lang.json")
+                    it["contribution_table"] = tid
+        summary.append(it)
+        time.sleep(0.2)
+    (OUT / "report_issues.json").write_text(json.dumps(summary, ensure_ascii=False, indent=1))
+    (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
+
+
 if __name__ == "__main__":
-    if len(sys.argv) > 2 and sys.argv[2] == "round4":
+    if len(sys.argv) > 2 and sys.argv[2] == "round5":
+        round5()
+    elif len(sys.argv) > 2 and sys.argv[2] == "round4":
         round4()
     elif len(sys.argv) > 2 and sys.argv[2] == "round3":
         round3()
