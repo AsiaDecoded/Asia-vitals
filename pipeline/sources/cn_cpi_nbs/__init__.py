@@ -39,6 +39,8 @@ CATS = {
     "": ("all", "CPI", "headline", 0),
     "6067101000036": ("core", "CPI excluding food and energy", "headline", 1),
     "6039803100002": ("food", "Food", "headline", 2),
+    "601300100001": ("food", "Food", "headline", 2),
+    "6067101000030": ("tobacco_liquor_old", "Tobacco, liquor and articles (to 2015)", "category_old", 90),
     "6067101000034": ("non_food", "Non-food", "headline", 3),
     "6067101000035": ("goods", "Consumer goods", "headline", 4),
     "6067101000033": ("services", "Services", "headline", 5),
@@ -338,6 +340,11 @@ def update(**opts):
         r["release_date"] = rel_dates.get(r["date"][:7], "")
     _write_csv(OUT / "cn_cpi.csv", cols, [r for r in out_rows if r["area"] in ("national", "urban", "rural")])
     _write_csv(OUT / "cn_cpi_provinces.csv", cols, [r for r in out_rows if r["area"] not in ("national", "urban", "rural")])
+    # Slim copies for the dashboard (same figures, fewer columns; provinces y/y only)
+    dcols = ["date", "area", "series", "label", "group", "measure", "pct", "base_break"]
+    _write_csv(OUT / "cn_cpi_dash.csv", dcols, [r for r in out_rows if r["area"] in ("national", "urban", "rural")])
+    _write_csv(OUT / "cn_cpi_provinces_dash.csv", ["date", "area", "area_name", "series", "measure", "pct"],
+               [r for r in out_rows if r["area"] not in ("national", "urban", "rural") and r["measure"] == "yoy"])
     wt = list(csv.DictReader(open(HERE / "weights_2025.csv")))
     _write_csv(OUT / "cn_cpi_weights.csv", ["key", "name_zh", "name_en", "weight_pct"], wt)
     irows = []

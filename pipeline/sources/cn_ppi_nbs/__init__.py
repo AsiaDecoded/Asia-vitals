@@ -110,6 +110,9 @@ NAMES = {
     "废弃资源和废旧材料回收加工业": ("ind_waste", "Recycling of waste resources and materials"),
     "金属制品、机械和设备修理业": ("ind_repair", "Repair of metal products, machinery and equipment"),
     "电力、热力生产和供应业": ("ind_power_heat", "Production and supply of electricity and heat"),
+    "电力、热力的生产和供应业": ("ind_power_heat", "Production and supply of electricity and heat"),
+    "皮革、毛皮、羽毛": ("ind_leather", "Leather, fur, feathers and related products"),
+    "通信设备、计算机及其他电子设备制造": ("ind_electronics", "Communication equipment, computers and other electronic equipment"),
     "燃气生产和供应业": ("ind_gas", "Production and supply of gas"),
     "水的生产和供应业": ("ind_water", "Production and supply of water"),
 }
@@ -299,6 +302,8 @@ def update(**opts):
         r["base_break"] = 1 if r["date"][:7] in BASE_STARTS else 0
     _write_csv(OUT / "cn_ppi.csv", cols, [r for r in out if r["area"] == "national"])
     _write_csv(OUT / "cn_ppi_provinces.csv", cols, [r for r in out if r["area"] != "national"])
+    _write_csv(OUT / "cn_ppi_dash.csv", ["date", "series", "label", "group", "measure", "pct", "base_break"],
+               [r for r in out if r["area"] == "national"])
     code = f"P{latest[:7]}"
     label = f"{LONGMONTHS[int(latest[5:7]) - 1]} {latest[:4]}"
     rel_date = ""
