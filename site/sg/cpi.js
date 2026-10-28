@@ -616,6 +616,7 @@ dash.calc('cpi_heat', {
       { key: 'all', name: 'CPI', color: C[1] },
       { key: 'core', name: 'MAS core', color: C[5] },
       { key: 'ex_food_energy', name: 'CPI less food and energy', color: C[4] },
+      { key: 'less_imputed', name: 'CPI less imputed rentals', color: C[0] },
     ], 280);
     lineChart('ppi-cpi-chart', 'ppi-cpi', 'ppi-cpi-legend', 'national', [
       { key: 'ppi', name: 'Producer prices (PPI)', color: C[0] },
