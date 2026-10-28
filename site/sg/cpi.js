@@ -132,7 +132,7 @@ dash.calc('cpi_ctab', {
       d_food: 2042, d_fbss: 1391, d_clothing: 165, d_housing: 2938, d_household: 547, d_health: 1008, d_transport: 1307, d_info_comm: 381,
       d_recreation: 595, d_education: 579, d_misc: 438, d_goods: 2532, d_services: 7468, d_mas_services: 3173 };
     const ROWS = ['all', 'accommodation', 'imputed_rentals', 'private_transport', 'motor_cars', 'core',
-      'food_x', 'energy', 'electricity', 'gas', 'petrol_e', 'other_fuels', 'exfe',
+      'food_x', 'energy', 'electricity', 'petrol_e', 'exfe',
       'd_food', 'd_fbss', 'd_clothing', 'd_housing', 'd_household', 'd_health', 'd_transport', 'd_info_comm', 'd_recreation', 'd_education', 'd_misc',
       'd_goods', 'd_services', 'd_mas_services'];
     return sg_cpi_contrib.filter((r) => r.series.startsWith('tb_') && r.date >= '2026-01-01' && r.contrib_yoy != null && r.contrib_yoy !== '')
@@ -660,7 +660,7 @@ dash.calc('cpi_ctab', {
     const val = new Map(D.data.map((r) => [`${r.series}|${r.date}`, r]));
     const mix = (c0, c1, f) => `rgb(${c0.map((c, k) => Math.round(c + (c1[k] - c) * f)).join(',')})`;
     const G = [99, 190, 123], Y = [255, 235, 132], R = [248, 105, 107], Wh = [255, 255, 255];
-    const CHILDREN = { energy: ['electricity', 'gas', 'petrol_e', 'other_fuels'],
+    const CHILDREN = { energy: ['electricity', 'petrol_e'],
       accommodation: ['imputed_rentals'], private_transport: ['motor_cars'] };
     const PARENT = {}; Object.entries(CHILDREN).forEach(([p, cs]) => cs.forEach((c) => { PARENT[c] = p; }));
     const OWN = ['all', 'core', 'exfe'];  // coloured on their own range
