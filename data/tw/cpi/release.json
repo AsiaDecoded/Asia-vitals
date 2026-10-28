@@ -4,16 +4,10 @@
  "latest_month": "2026-09-01",
  "release_date": "2026-10-07",
  "table": "DGBAS Macro Database (nstatdb) price tables; monthly releases on stat.gov.tw",
- "processed_at": "2026-10-28T22:48:46Z",
+ "processed_at": "2026-10-28T22:55:24Z",
  "rows": 216653,
- "warnings": [
-  "release table 14 2023-01: item weights sum to 0.6% (1 items listed)",
-  "release table 14 2023-02: item weights sum to 0.6% (1 items listed)",
-  "release table 14 2023-03: item weights sum to 0% (0 items listed)",
-  "release table 14 2023-12: item weights sum to 0% (0 items listed)",
-  "release table 14 2024-12: item weights sum to 0% (0 items listed)"
- ],
- "long_rows": 216653,
+ "warnings": [],
+ "long_rows": 56651,
  "items": 368,
  "release_months": 45,
  "rate_checks": {
@@ -25,7 +19,7 @@
  "history": [
   {
    "code": "C2026-09",
-   "processed_at": "2026-10-28T22:48:46Z"
+   "processed_at": "2026-10-28T22:55:24Z"
   }
  ]
 }
