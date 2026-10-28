@@ -41,18 +41,17 @@ LEGACY.options |= getattr(ssl, "OP_LEGACY_SERVER_CONNECT", 0x4)
 LEGACY.set_ciphers("DEFAULT:@SECLEVEL=1")
 
 
-def fetch(url, tries=3):
+def fetch(url, tries=1, timeout=25):
     last = None
     for ctx in (CTX, LEGACY):
         for a in range(tries):
             try:
-                with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60, context=ctx) as r:
+                with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout, context=ctx) as r:
                     return r.status, dict(r.headers), r.read()
             except urllib.error.HTTPError as e:
                 return e.code, dict(e.headers), e.read()
             except Exception as e:  # noqa: BLE001
                 last = e
-                time.sleep(3 * (a + 1))
     return None, {}, repr(last).encode()
 
 
@@ -72,6 +71,10 @@ def api(endpoint, **q):
         return st, json.loads(body.decode("utf-8-sig"))
     except Exception:  # noqa: BLE001
         return st, body[:500].decode("utf-8", "replace")
+
+
+T0 = time.time()
+BUDGET = 22 * 60
 
 
 def main(out):
@@ -102,6 +105,8 @@ def main(out):
         print(ep, st, summary["api"][ep]["n"], len(codes.get(ep, [])))
         time.sleep(1)
 
+    pages(out, summary)
+    (out / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=1))
     # CPI headline long history (base years), all regions, and every code for 2025-2026
     for y0, y1 in ((1976, 1999), (2000, 2014), (2015, 2023)):
         st, data = api("cpig-indexes", region_id=5, index_id="0000000000000000", from_year=y0, to_year=y1)
@@ -111,6 +116,9 @@ def main(out):
     for ep in ("cpig-indexes", "ppi-cpa-indexes", "ppi-sop-indexes", "exi-indexes", "imi-indexes", "cpil-indexes"):
         rows, fails = [], []
         for c in codes.get(ep, []):
+            if time.time() - T0 > BUDGET:
+                fails.append(['budget', None, 'stopped'])
+                break
             q = {"index_id": c, "from_year": 2025, "to_year": 2026}
             if ep.startswith("cpi"):
                 q["region_id"] = 5
@@ -123,11 +131,16 @@ def main(out):
         save(out, f"api/{ep}_allcodes_2025_2026.json", json.dumps(rows, ensure_ascii=False).encode())
         summary["api"][f"{ep}_allcodes"] = {"codes": len(codes.get(ep, [])), "rows": len(rows), "fails": fails[:20],
                                             "nfails": len(fails)}
-        print(ep, "allcodes", len(rows), len(fails))
+        print(ep, "allcodes", len(rows), len(fails), flush=True)
+        (out / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=1))
     # Without index_id, and an invalid region, to see defaults
     st, data = api("cpig-indexes", region_id=5, from_year=2026, to_year=2026)
     summary["api"]["cpig_noid"] = {"status": st, "n": len(data) if isinstance(data, list) else data}
 
+    (out / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=1))
+
+
+def pages(out, summary):
     for url in PAGES:
         st, hd, body = fetch(url)
         name = re.sub(r"[^A-Za-z0-9]+", "_", url)[:120]
@@ -137,7 +150,6 @@ def main(out):
                                  "seasonal_hits": len(re.findall(r"ปรับฤดูกาล|[Ss]easonal", txt)),
                                  "weight_hits": len(re.findall(r"น้ำหนัก|[Ww]eight", txt)),
                                  "links": sorted(set(re.findall(r"https?://[^\s\"'<>]+\.(?:xlsx?|csv|pdf|json)", txt)))[:60]}
-    (out / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=1))
 
 
 if __name__ == "__main__":

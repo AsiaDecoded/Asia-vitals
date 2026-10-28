@@ -24,8 +24,9 @@ jobs:
         with:
           python-version: "3.12"
       - name: Query the MoC open data API
-        run: python -I pipeline/tools/moc_discover.py discovery/moc
+        run: timeout 30m python -I -u pipeline/tools/moc_discover.py discovery/moc || true
       - name: Push results to the discovery branch
+        if: always()
         run: |
           git config user.name "asia-vitals bot"
           git config user.email "actions@users.noreply.github.com"
