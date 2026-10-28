@@ -386,6 +386,7 @@ dash.calc('cpi_heat', {
     lineChart('gs-yoy-chart', 'gs-yoy', 'gs-yoy-legend', 'national', [
       { key: 'gs_goods', name: 'Goods', color: J.PAL[1] },
       { key: 'gs_services', name: 'Services', color: J.PAL[0] },
+      { key: 'services', name: 'MAS services', color: J.PAL[4] },
     ], 280);
   }
 
