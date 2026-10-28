@@ -1,13 +1,14 @@
 name: PSA discovery (manual)
 
 # One-off helper: probes PSA OpenSTAT for Philippine price tables
-# and saves the raw responses to the "discovery" branch, under discovery/psa.
+# and saves the raw responses to the "discovery" branch, under discovery/psa2.
 on:
   workflow_dispatch:
   push:
     branches: [dev-ph]
     paths:
       - pipeline/tools/psa_discover.py
+      - pipeline/core/psa.py
       - .github/workflows/psa-discover.yml
 
 permissions:
@@ -23,7 +24,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Query the PSA OpenSTAT API
-        run: python -I pipeline/tools/psa_discover.py discovery/psa
+        run: python -I pipeline/tools/psa_discover.py discovery/psa2
       - name: Push results to the discovery branch
         run: |
           git config user.name "asia-vitals bot"
@@ -34,7 +35,7 @@ jobs:
           else
             git checkout --orphan discovery && git rm -rf --quiet --cached .
           fi
-          mkdir -p discovery && rm -rf discovery/psa && cp -r /tmp/discovery/psa discovery/
-          git add discovery/psa
+          mkdir -p discovery && rm -rf discovery/psa2 && cp -r /tmp/discovery/psa2 discovery/
+          git add discovery/psa2
           git commit -m "PSA discovery"
           git push origin discovery

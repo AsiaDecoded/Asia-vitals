@@ -2,99 +2,64 @@
 
   python -I pipeline/tools/psa_discover.py OUTDIR
 
-Round 1: the folder tree under DB/2M (prices), every table's metadata, and status of
-psa.gov.ph pages (CPI page, advance release calendar).
+Round 2: data of the CPI, core CPI, seasonally adjusted CPI, bottom-30% CPI and manufacturing PPI tables
+the Philippines inflation source needs (national, NCR/AONCR and regions), as tidy rows, gzipped.
 """
 import gzip
 import json
+import re
 import sys
-import time
-import urllib.error
-import urllib.request
 from pathlib import Path
 
-BASE = "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB"
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
-    "Accept": "application/json, text/plain, */*",
-    "Accept-Language": "en-US,en;q=0.9",
-}
-PAGES = [
-    "https://psa.gov.ph/price-indices/cpi-ir",
-    "https://psa.gov.ph/statistics/price-indices/cpi-ir",
-    "https://psa.gov.ph/advance-release-calendar",
-    "https://psa.gov.ph/content/summary-inflation-report-consumer-price-index-2018100-september-2026",
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from core import psa  # noqa: E402
+
+C = "2M/PI/CPI/2018NEW/"
+REGIONS = lambda t: not t.startswith("....")  # PH, NCR, AONCR and the 17 regions  # noqa: E731
+LEVEL = lambda n: (lambda t: len(t.split(" - ")[0].split(".")) <= n)  # noqa: E731
+JOBS = [
+    ("cpi_index_ph", C + "0012M4ACP22.px", {"Geolocation": ["PHILIPPINES"]}),
+    ("cpi_yoy_ph", C + "0012M4ACP23.px", {"Geolocation": ["PHILIPPINES"]}),
+    ("cpi_index_reg", C + "0012M4ACP22.px", {"Geolocation": REGIONS, "Commodity Description": LEVEL(1)}),
+    ("cpi_yoy_reg", C + "0012M4ACP23.px", {"Geolocation": REGIONS, "Commodity Description": LEVEL(1)}),
+    ("cpi_weights", C + "0012M4ACP25.px", {"Geolocation": REGIONS}),
+    ("cpi_index_1957", C + "0012M4ACP26.px", {"Geolocation": ["PHILIPPINES"]}),
+    ("cpi_yoy_1958", C + "0012M4ACP27.px", {"Geolocation": ["PHILIPPINES"]}),
+    ("cpi_index_back", C + "0012M4ACP28.px", {"Geolocation": ["PHILIPPINES", "National Capital Region (NCR)", "Areas Outside National Capital Region (AONCR)"], "Commodity Description": LEVEL(2)}),
+    ("cpi_yoy_back", C + "0012M4ACP29.px", {"Geolocation": REGIONS, "Commodity Description": LEVEL(1)}),
+    ("core_index", C + "0012M4ACP30.px", {}),
+    ("core_yoy", C + "0012M4ACP31.px", {}),
+    ("core_weights", C + "0012M4ACP32.px", {}),
+    ("core_index_back", C + "0012M4ACP33.px", {}),
+    ("core_yoy_back", C + "0012M4ACP34.px", {}),
+    ("sa_index", "2M/PI/SACPI/0012M4ASAC1.px", {}),
+    ("sa_mom", "2M/PI/SACPI/0012M4ASAC2.px", {}),
+    ("sa_mom_0022", "2M/PI/SACPI/0022M4ASAC2.px", {}),
+    ("b30_index", "2M/PI/BIH/2018NEW/0022M4ABIR1.px", {"Geolocation": ["PHILIPPINES", "NCR", "AONCR"], "Commodity Description": LEVEL(2)}),
+    ("b30_yoy", "2M/PI/BIH/2018NEW/0022M4ABIR2.px", {"Geolocation": ["PHILIPPINES", "NCR", "AONCR"], "Commodity Description": LEVEL(2)}),
+    ("b30_weights", "2M/PI/BIH/2018NEW/0022M4ABIR3.px", {"Geolocation": ["PHILIPPINES"]}),
+    ("ppim", "2M/PI/PPI/PPIM/0012M4CPPI2.px", {}),
+    ("ppim_back", "2M/PI/PPI/PPIM/0022M4CPPI1.px", {}),
+    ("ppia", "2M/PI/PPI/PPIA/0062M4APPI1.px", {}),
 ]
-LOG = []
-
-
-def get(url, data=None, raw=False):
-    req = urllib.request.Request(url, data=data, headers={**HEADERS, **({"Content-Type": "application/json"} if data else {})})
-    for attempt in range(3):
-        try:
-            with urllib.request.urlopen(req, timeout=60) as r:
-                body = r.read()
-                LOG.append([url, r.status, len(body)])
-                return body if raw else json.loads(body.decode("utf-8-sig"))
-        except urllib.error.HTTPError as e:
-            LOG.append([url, e.code, 0])
-            if e.code in (429, 503):
-                time.sleep(5 * (attempt + 1))
-                continue
-            raise
-        except Exception as e:  # noqa: BLE001
-            LOG.append([url, repr(e), 0])
-            time.sleep(3)
-    raise RuntimeError(f"failed {url}")
-
-
-def walk(path, out, tree):
-    items = get(f"{BASE}/{path}")
-    time.sleep(0.4)
-    for it in items:
-        sub = f"{path}/{it['id']}"
-        node = {"path": sub, "type": it.get("type"), "text": it.get("text"), "updated": it.get("updated")}
-        tree.append(node)
-        if it.get("type") == "l":
-            walk(sub, out, tree)
-        elif it.get("type") == "t":
-            try:
-                meta = get(f"{BASE}/{sub}")
-                node["variables"] = [
-                    {"code": v["code"], "text": v["text"], "n": len(v["values"]),
-                     "first": v["valueTexts"][:3], "last": v["valueTexts"][-3:]}
-                    for v in meta.get("variables", [])]
-                fn = sub.replace("/", "__") + ".meta.json"
-                (out / "meta" / fn).write_text(json.dumps(meta, ensure_ascii=False, indent=1))
-            except Exception as e:  # noqa: BLE001
-                node["error"] = repr(e)
-            time.sleep(0.4)
 
 
 def main(out):
     out = Path(out)
-    (out / "meta").mkdir(parents=True, exist_ok=True)
-    (out / "pages").mkdir(exist_ok=True)
-    tree = []
-    try:
-        top = get(BASE)
-        (out / "top.json").write_text(json.dumps(top, ensure_ascii=False, indent=1))
-    except Exception as e:  # noqa: BLE001
-        (out / "top.error.txt").write_text(repr(e))
-    try:
-        walk("2M", out, tree)
-    except Exception as e:  # noqa: BLE001
-        (out / "walk.error.txt").write_text(repr(e))
-    (out / "tree.json").write_text(json.dumps(tree, ensure_ascii=False, indent=1))
-    for i, p in enumerate(PAGES):
+    out.mkdir(parents=True, exist_ok=True)
+    summary = {}
+    for name, path, sel in JOBS:
         try:
-            body = get(p, raw=True)
-            with gzip.open(out / "pages" / f"page{i}.html.gz", "wb") as f:
-                f.write(body)
+            rows = psa.get(path, sel)
+            with gzip.open(out / f"{name}.json.gz", "wt", encoding="utf-8") as f:
+                json.dump(rows, f, ensure_ascii=False)
+            summary[name] = {"path": path, "rows": len(rows), "nonnull": sum(r["value"] is not None for r in rows),
+                             "sample": rows[:2]}
+            print(name, len(rows))
         except Exception as e:  # noqa: BLE001
-            (out / "pages" / f"page{i}.error.txt").write_text(f"{p}\n{e!r}")
-    (out / "log.json").write_text(json.dumps(LOG, indent=0))
-    print(len(tree), "nodes")
+            summary[name] = {"path": path, "error": repr(e)[:500]}
+            print(name, "ERROR", e)
+    (out / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=1))
 
 
 if __name__ == "__main__":
