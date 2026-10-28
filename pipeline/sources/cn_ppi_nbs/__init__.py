@@ -11,6 +11,7 @@ import csv
 import gzip
 import hashlib
 import json
+import time
 
 from core import nbs
 from core.common import DATA, RAW, CheckFailed, read_json, write_long, write_release
@@ -209,12 +210,15 @@ def update(**opts):
     if lp and state.get("latest_month") == f"{lp[:4]}-{lp[4:6]}-01" and not opts.get("force"):
         return {"updated": False, "code": state.get("code"), "summary": f"no new month (latest {state['latest_month'][:7]})"}
     raw, rows = {}, []
-    for cid, meta in cats.items():
+    t0 = time.time()
+
+    def fetch(cid):
         inds = nbs.indicators(cid)
-        if inds:
-            r, data = nbs.table(cid, [x["_id"] for x in inds])
-            raw[cid] = {"meta": meta, "data": data}
-            rows += r
+        return (cid,) + (nbs.table(cid, [x["_id"] for x in inds]) if inds else ([], []))
+    for cid, r, data in nbs.parallel(fetch, list(cats)):
+        raw[cid] = {"meta": cats[cid], "data": data}
+        rows += r
+    timing = {"national_s": round(time.time() - t0)}
     tidy = _tidy(rows, False, warnings)
     pcats = nbs.catalogs("4", nbs.ROOT_PROVINCE, lambda p, n: "工业生产者" in (p + n))
     prow = []
@@ -320,5 +324,5 @@ def update(**opts):
     release = {"code": code, "label": label, "latest_month": latest,
                "table": "NBS data portal (data.stats.gov.cn), monthly industrial producer price catalogs"}
     write_release(OUT, release, warnings, len(out), {"long_rows": nlong, "catalogs": len(cats), "province_catalogs": len(pcats)})
-    return {"updated": True, "code": code, "summary": f"{label}: {len(tidy)} national and {len(ptidy)} provincial rows",
+    return {"updated": True, "code": code, "summary": f"{label}: {len(tidy)} national and {len(ptidy)} provincial rows; {round(time.time() - t0)}s",
             "warnings": warnings}

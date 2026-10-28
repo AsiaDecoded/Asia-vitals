@@ -134,15 +134,22 @@ def provinces():
     return _call("getAllProvince") or []
 
 
+def parallel(fn, items, workers=6):
+    """[fn(x) for x in items] on a few threads (the portal answers one table in a few seconds)."""
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        return list(ex.map(fn, items))
+
+
 def province_rows(cid, ids, start="198301", end="203012"):
     """Rows for every province, one call per province: a call with several areas (das) or with the
     area catalog ('全部地区') as daCatalogId returns only the first province."""
+    def one(p):
+        return p, table(cid, ids, start, end, root=ROOT_PROVINCE, das=[{"text": p.get("text"), "value": p.get("value")}])
     rows, data = [], []
-    for p in provinces():
-        r, d = table(cid, ids, start, end, root=ROOT_PROVINCE, das=[{"text": p.get("text"), "value": p.get("value")}])
+    for p, (r, d) in parallel(one, provinces(), workers=8):
         rows += r
         data.append({"area": p.get("value"), "data": d})
-        time.sleep(0.2)
     if not rows:
         raise NBSError(f"no provincial rows for catalog {cid}")
     return rows, data

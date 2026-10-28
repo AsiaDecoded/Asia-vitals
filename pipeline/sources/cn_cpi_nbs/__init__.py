@@ -17,6 +17,7 @@ import csv
 import gzip
 import hashlib
 import json
+import time
 import re
 
 from core import nbs
@@ -263,13 +264,15 @@ def update(**opts):
     if latest_p and state.get("latest_month") == f"{latest_p[:4]}-{latest_p[4:6]}-01" and not opts.get("force"):
         return {"updated": False, "code": state.get("code"), "summary": f"no new month (latest {state.get('latest_month')[:7]})"}
     raw, rows = {}, []
-    for cid, meta in cats.items():
+    t0 = time.time()
+
+    def fetch(cid):
         inds = nbs.indicators(cid)
-        if not inds:
-            continue
-        r, data = nbs.table(cid, [x["_id"] for x in inds])
-        raw[cid] = {"meta": meta, "data": data}
+        return (cid,) + (nbs.table(cid, [x["_id"] for x in inds]) if inds else ([], []))
+    for cid, r, data in nbs.parallel(fetch, list(cats)):
+        raw[cid] = {"meta": cats[cid], "data": data}
         rows += r
+    timing = {"national_s": round(time.time() - t0)}
     tidy = _tidy(rows, warnings=warnings)
     # Provinces: y/y for every base period and food items, m/m and YTD for the current base
     # (one call per province and table)
@@ -288,6 +291,7 @@ def update(**opts):
         raw["prov_" + cid] = {"meta": meta, "data": data}
         prov_rows += r
     ptidy = _tidy(prov_rows, prov=True, warnings=warnings)
+    timing["province_s"] = round(time.time() - t0) - timing["national_s"]
     latest = max(v["date"] for v in tidy.values() if v["series"] == "all" and v["area"] == "national")
     # NBS releases (HTML): published impacts on CPI, and release dates
     try:
@@ -295,6 +299,7 @@ def update(**opts):
     except Exception as e:  # noqa: BLE001 - impacts are an extra; the data stand without them
         rel = []
         warnings.append(f"NBS release pages not read: {e!r}"[:300])
+    timing["total_s"] = round(time.time() - t0)
     impacts = []
     for r in rel:
         head = next((v["pct"] for v in tidy.values() if v["date"][:7] == r["month"] and v["area"] == "national"
@@ -373,5 +378,5 @@ def update(**opts):
     write_release(OUT, release, warnings, len(out_rows),
                   {"long_rows": nlong, "catalogs": len(cats), "province_catalogs": len(pcats),
                    "impact_months": len(impacts), "impacts_checked": len(tested)})
-    return {"updated": True, "code": code, "summary": f"{label}: {len(tidy)} national and {len(ptidy)} provincial rows",
+    return {"updated": True, "code": code, "summary": f"{label}: {len(tidy)} national and {len(ptidy)} provincial rows; timing {timing}",
             "warnings": warnings}
