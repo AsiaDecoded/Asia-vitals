@@ -129,14 +129,21 @@ def catalogs(code, root, keep):
     return out
 
 
+def provinces():
+    """[{text, value}] for the 31 provinces (value '110000000000' ...)."""
+    return _call("getAllProvince") or []
+
+
 def province_rows(cid, ids, start="198301", end="203012"):
-    """Rows for every province: the catalog's area list '全部地区' passed as daCatalogId."""
-    for a in area_catalogs(cid):
-        if (a.get("name") or a.get("_name")) == "全部地区" and not a.get("children"):
-            rows, data = table(cid, ids, start, end, root=ROOT_PROVINCE, da_catalog=a["_id"])
-            if rows:
-                return rows, data
-    raise NBSError(f"no provincial rows for catalog {cid}")
+    """Rows for every province: the provinces passed explicitly as areas (das). Passing the area
+    catalog id ('全部地区') as daCatalogId returns only the first province."""
+    das = [{"text": p.get("text"), "value": p.get("value")} for p in provinces()]
+    if not das:
+        raise NBSError("province list is empty")
+    rows, data = table(cid, ids, start, end, root=ROOT_PROVINCE, das=das)
+    if not rows:
+        raise NBSError(f"no provincial rows for catalog {cid}")
+    return rows, data
 
 
 # ---------------------------------------------------------------- NBS release pages (HTML, stats.gov.cn)

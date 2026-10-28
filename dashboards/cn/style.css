@@ -119,3 +119,9 @@
 #div-heat-table tr.lead td { font-weight: 700; }
 </style>
 
+#cpi-impacts-table { font-size: 0.8125rem; }
+#cpi-impacts-table th, #cpi-impacts-table td { padding: 2px 6px; line-height: 1.3; }
+#cpi-impacts-table th:not(:first-child), #cpi-impacts-table td:not(:first-child) { text-align: center; }
+#div-heat-table td.wt { color: var(--ad-ink, var(--color-fg-muted)); padding-right: 12px; }
+#div-heat-table th:nth-child(2) { font-weight: 400; }
+.jg .jg-chart { min-height: 280px; }

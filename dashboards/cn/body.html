@@ -1,0 +1,180 @@
+<div class="jg">
+  <header class="jg-head" id="top">
+    <h1>China</h1>
+  </header>
+
+  <nav class="jg-tabs" role="tablist" aria-label="Sections">
+    <button role="tab" data-tab="inflation" aria-selected="true">Inflation</button>
+    <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
+  </nav>
+
+  <section class="jg-page" id="inflation" role="tabpanel">
+    <div class="jg-pagehead">
+      <div class="jg-note" style="margin:0"><span id="cpi-month" class="dash-skeleton" style="color: var(--color-fg)" data-source="cpi_latest" data-field="month" data-row="0">—</span></div>
+      <p class="jg-take" id="cpi-takeaway"><span class="dash-skeleton">—</span></p>
+    </div>
+
+    <section class="jg-tiles" id="cpi-headline" aria-label="Headline inflation">
+      <div class="jg-card jg-tile"><div class="lbl">CPI, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="all_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="all_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Core (ex food and energy), y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="core_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="core_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Consumer goods, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="goods_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="goods_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Services, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="services_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="services_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">PPI, y/y</div>
+        <div class="val"><span data-source="ppi_latest" data-field="ppi_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="ppi_latest" data-field="ppi_yoy_prev" data-row="0">—</span>%</div></div>
+    </section>
+
+    <section class="jg-card" id="div-heat">
+      <h2>China consumer inflation</h2>
+      <div class="ad-top"><span class="ad-units">% y/y; weight, % of CPI (2025 base)</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-tablewrap">
+        <table id="div-heat-table" data-source="cn_cpi cn_cpi_weights"></table>
+      </div>
+      <div class="ad-foot"><span>Source: National Bureau of Statistics of China</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <section class="jg-card" id="cpi-impacts">
+      <div class="jg-cardhead">
+        <div><h2>China CPI: NBS-reported impacts</h2></div>
+        <div class="jg-seg" id="cpi-impacts-seg" role="group" aria-label="Comparison"><button data-m="yoy" aria-pressed="true">y/y</button><button data-m="mom">m/m</button></div>
+      </div>
+      <div class="ad-top"><span class="ad-units" id="cpi-impacts-units">%, ppt</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-tablewrap">
+        <table id="cpi-impacts-table" data-source="impacts_latest" data-row-key="name">
+          <thead><tr>
+            <th data-field="name">Item</th>
+            <th data-field="rate">Change, %</th>
+            <th data-field="pp">Impact on CPI, ppt</th>
+            <th data-field="where">Stated in</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="ad-foot"><span>Source: National Bureau of Statistics of China, monthly CPI release and interpretation</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="ppi-cpi" data-periods="ml" data-def="360">
+        <h2>China inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="ppi-cpi-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="ppi-cpi-chart" data-source="cn_cpi cn_ppi"></div>
+        <div class="ad-foot"><span>Source: National Bureau of Statistics of China</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-ym" data-def="60">
+        <h2>China consumer inflation</h2>
+        <div class="ad-top"><span class="ad-units">%</span><div class="jg-legend" id="cpi-ym-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-ym-chart" data-source="cn_cpi"></div>
+        <div class="ad-foot"><span>Source: National Bureau of Statistics of China</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-core" data-periods="ml" data-def="120">
+        <h2>China core inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-core-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-core-chart" data-source="cn_cpi"></div>
+        <div class="ad-foot"><span>Source: National Bureau of Statistics of China</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-gs" data-def="120">
+        <h2>China goods and services CPI</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-gs-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-gs-chart" data-source="cn_cpi"></div>
+        <div class="ad-foot"><span>Source: National Bureau of Statistics of China</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-fe" data-def="120">
+        <h2>China food and fuel CPI</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-fe-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-fe-chart" data-source="cn_cpi"></div>
+        <div class="ad-foot"><span>Source: National Bureau of Statistics of China</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-sectors" data-periods="ml" data-def="120">
+        <h2>China consumer inflation, urban and rural</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-sectors-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-sectors-chart" data-source="cn_cpi"></div>
+        <div class="ad-foot"><span>Source: National Bureau of Statistics of China</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="ppi-parts" data-periods="ml" data-def="120">
+        <h2>China producer prices</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="ppi-parts-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="ppi-parts-chart" data-source="cn_ppi"></div>
+        <div class="ad-foot"><span>Source: National Bureau of Statistics of China</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="ppi-ind" data-periods="none">
+        <h2>China producer prices by industry</h2>
+        <div class="ad-top"><span class="ad-units" id="ppi-ind-units">% y/y</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="ppi-ind-chart" data-source="cn_ppi"></div>
+        <div class="ad-foot"><span>Source: National Bureau of Statistics of China</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-prov" data-periods="none">
+        <h2>China consumer inflation by province</h2>
+        <div class="ad-top"><span class="ad-units" id="cpi-prov-units">% y/y</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-prov-chart" data-source="cn_cpi_provinces"></div>
+        <div class="ad-foot"><span>Source: National Bureau of Statistics of China</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-cats" data-def="60">
+        <h2>China consumer inflation by category</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-cats-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-cats-chart" data-source="cn_cpi"></div>
+        <div class="ad-foot"><span>Source: National Bureau of Statistics of China</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card ad-notes" id="chart-notes">
+      <h2>Chart notes</h2>
+      <ol>
+        <li><b>All figures are as published by the National Bureau of Statistics (NBS); none is calculated.</b> NBS publishes CPI and PPI only as rates: an index with the same month a year earlier = 100 (y/y), the same period of the previous year = 100 (year to date) or the previous month = 100 (m/m), to one decimal. 100.9 is shown as 0.9%, the figure in NBS&rsquo;s release. NBS publishes no index levels and no seasonally adjusted series.</li>
+        <li><b>Table, China consumer inflation:</b> y/y for the latest 13 months: CPI, NBS&rsquo;s CPI excluding food and energy, food, non-food, consumer goods, services, the eight CPI categories and the food items NBS publishes. Weights are NBS&rsquo;s 2025-base weights (published 11 February 2026), in % of CPI, for the eight categories, food and four food items; NBS publishes no other weights. Each row is coloured on its own range, from green at its lowest rate in the window to red at its highest.</li>
+        <li><b>Table, NBS-reported impacts:</b> the impacts on CPI, in percentage points, that NBS states in the text of its monthly release and in its chief statistician&rsquo;s interpretation for the latest month. They cover only the items NBS chooses to mention and do not add up to CPI inflation. Combined entries are statements NBS makes for several items together.</li>
+        <li><b>Chart 1, China inflation:</b> CPI and PPI (producer prices of industrial products, ex-factory), y/y. The NBS data portal has monthly CPI from January 1998 and PPI from January 1993.</li>
+        <li><b>Chart 2, China consumer inflation:</b> CPI y/y (line) and m/m (bars), not seasonally adjusted.</li>
+        <li><b>Chart 3, China core inflation:</b> CPI and NBS&rsquo;s CPI excluding food and energy (NBS&rsquo;s own definition; it is not the same as the core measures on the India and Singapore pages), with food.</li>
+        <li><b>Chart 4, China goods and services CPI:</b> NBS&rsquo;s split of the CPI into consumer goods and services.</li>
+        <li><b>Chart 5, China food and fuel CPI:</b> food, pork and fresh vegetables, and the two fuel series NBS publishes: energy for transport facilities (vehicle fuel; from 2026 including electricity for vehicles) and water, electricity and fuels. NBS states energy prices as a whole only in the text of its interpretation, not as a series.</li>
+        <li><b>Chart 6, China consumer inflation, urban and rural:</b> CPI for China, urban and rural areas, y/y.</li>
+        <li><b>Chart 7, China producer prices:</b> PPI and its two parts, means of production and consumer goods, and the purchasing price index for industrial producers, y/y.</li>
+        <li><b>Chart 8, China producer prices by industry:</b> PPI y/y by industry (GB/T 4754-2017 divisions) in the latest month.</li>
+        <li><b>Chart 9, China consumer inflation by province:</b> CPI y/y in the latest month for the 31 provinces, autonomous regions and municipalities.</li>
+        <li><b>Chart 10, China consumer inflation by category:</b> the eight CPI categories, y/y. NBS changed the categories in January 2016 (to eight categories on the international pattern) and renamed food, tobacco and liquor to include dining out in January 2026; the dashed line marks each change of base.</li>
+        <li><b>Base periods:</b> NBS rebases the CPI and PPI every five years, the latest in January 2026 (2025 = 100). NBS estimates the effect of the 2026 rotation on y/y rates at 0.06pp on average for the CPI and 0.08pp for the PPI.</li>
+      </ol>
+    </section>
+  </section>
+
+  <section class="jg-page" id="methodology" role="tabpanel" hidden>
+    <article class="jg-card ad-method" id="method-cpi">
+      <h2>Consumer and producer prices</h2>
+      <p>China&rsquo;s consumer price index (CPI) and producer price indices are compiled monthly by the National Bureau of Statistics (NBS). The CPI covers the goods and services bought by urban and rural households in 31 provinces, about 120,000 outlets in about 500 cities and counties, eight categories and 268 basic categories. The producer price index for industrial products (PPI) covers ex-factory prices of more than 1,300 basic categories in 41 industries; the purchasing price index for industrial producers covers more than 800 basic categories of inputs.</p>
+      <h3>What NBS publishes</h3>
+      <p>NBS publishes rates only: indices with the comparison period = 100, to one decimal, for the same month a year earlier (y/y), the same period of the previous year (year to date) and the previous month (m/m). There are no index levels, no seasonally adjusted series and no item-level indices. The page shows these as published, with 100.9 written as 0.9%, the figure in NBS&rsquo;s release.</p>
+      <ul>
+        <li><b>CPI:</b> all items for China, urban and rural areas; food, non-food, consumer goods, services and CPI excluding food and energy (China only); the eight categories (China, urban, rural, each province) and about 30 subcategories and food items (China).</li>
+        <li><b>PPI:</b> ex-factory prices with means of production and consumer goods; purchasing prices with nine groups; ex-factory prices by industry; PPI and purchasing prices by province.</li>
+        <li><b>Weights:</b> 2025-base weights for the eight categories, food and four food items (NBS, 11 February 2026): food, tobacco, liquor and dining out 29.5%, of which food 17.2% (grain 1.2%, fresh vegetables 1.7%, pork 1.9%, fresh fruits 1.9%); clothing 5.4%; residence 22.1%; household facilities, articles and services 5.5%; transportation and telecommunication 14.3%; education, culture and recreation 11.4%; health care and medical services 8.9%; miscellaneous goods and services 2.9%. NBS notes these are base-period weights: the weights behind each y/y and m/m rate shift with relative prices.</li>
+        <li><b>Impacts on CPI:</b> NBS states in the text of its monthly release and interpretation how much some items moved the CPI, in percentage points. These are shown as stated; they are not a complete breakdown.</li>
+      </ul>
+      <h3>Base periods and classification</h3>
+      <p>NBS rebases the CPI and PPI every five years. Since January 2026 both are on a 2025 base, with a revised basket, outlets and weights; NBS estimates the effect on y/y rates at 0.06pp for the CPI and 0.08pp for the PPI on average. Earlier bases started in January 2001, 2006, 2011, 2016 and 2021. In January 2016 the CPI categories changed from the old eight (food; tobacco, liquor and articles; clothing; household facilities; health care and personal articles; transport and communication; recreation, education and culture; residence) to the current eight; the old categories are shown to December 2015. In January 2026 &ldquo;food, tobacco and liquor&rdquo; became &ldquo;food, tobacco, liquor and dining out&rdquo; and &ldquo;tourism&rdquo; became &ldquo;travel agencies and other touring services&rdquo;. The portal publishes each base period&rsquo;s categories as separate tables; the page joins them with no adjustment, and the data mark each base change.</p>
+      <h3>Releases</h3>
+      <p>NBS releases the CPI and PPI together at 09:30 Beijing time (09:30 Singapore), usually on the 9th to 15th of the following month, on the dates in its published release calendar. The figures are not revised.</p>
+      <h3>Data</h3>
+      <p>NBS data portal (data.stats.gov.cn, rebuilt in 2025&ndash;26; its JSON interface is open, with no key), monthly national and provincial price tables; NBS monthly releases and interpretations (stats.gov.cn) for the impacts; 2025-base weights from NBS&rsquo;s interview on the base rotation (11 February 2026). Built by the AsiaDecoded/asia-vitals pipeline (data/cn/cpi, data/cn/ppi), which fetches only on NBS release days.</p>
+    </article>
+  </section>
+</div>
