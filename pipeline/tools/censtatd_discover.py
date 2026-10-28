@@ -230,8 +230,23 @@ def round2():
     (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
 
 
+def round3():
+    """The page scripts, to find the endpoints behind the report and release-schedule pages."""
+    for js in ("web_report_init.js", "cnds_cdm.js", "subject_common.js", "common.js", "search_ajax.js",
+               "press_release.js", "press_release_calendar.js"):
+        fetch(f"js_{js}", f"{CSD}/js/{js}", ext=".js")
+    for name, url in [("csd_press_release_page", f"{CSD}/en/press_release.html"),
+                      ("csd_page_CPI_lang", f"{CSD}/en/page_CPI_lang.json"),
+                      ("csd_page_CPI_lang_2", f"{CSD}/page_CPI_lang.json"),
+                      ("csd_hes_report_page", f"{CSD}/en/EIndexbySubject.html?pcode=B1060003&scode=290")]:
+        fetch(name, url, ext=".html")
+    (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
+
+
 if __name__ == "__main__":
-    if len(sys.argv) > 2 and sys.argv[2] == "round2":
+    if len(sys.argv) > 2 and sys.argv[2] == "round3":
+        round3()
+    elif len(sys.argv) > 2 and sys.argv[2] == "round2":
         round2()
     else:
         main()
