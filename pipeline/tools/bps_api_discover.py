@@ -62,13 +62,23 @@ def main(out):
         (out / "log.json").write_text('{"error": "BPS_KEY not set"}')
         print("BPS_KEY not set")
         return
-    # subjects
-    for lang in ("ind", "eng"):
-        st, d, s = get(f"list/model/subject/domain/0000/lang/{lang}")
-        save(f"subjects_{lang}", f"list/model/subject/domain/0000/lang/{lang}", d, st, s)
+    # subjects (all pages)
+    subs = []
+    for page in range(1, 10):
+        st, d, s = get(f"list/model/subject/domain/0000/lang/ind/page/{page}")
+        paging, rows = rows_of(d)
+        subs += rows
+        if not paging or page >= int(paging.get("pages", 1)):
+            break
+    (out / "subjects_all.json").write_text(json.dumps(subs, ensure_ascii=False, indent=1))
+    # static tables on core inflation, components and wholesale prices
+    for kw in ("inflasi inti", "komponen", "harga perdagangan besar", "harga produsen", "andil"):
+        p = f"list/model/statictable/domain/0000/lang/ind/keyword/{kw.replace(' ', '%20')}"
+        st, d, s = get(p)
+        save("static_" + kw.replace(" ", "_"), p, d, st, s)
     # every variable (dynamic table) in the national domain, all pages
     allvars, page = [], 1
-    while page < 80:
+    while page < 200:
         p = f"list/model/var/domain/0000/lang/ind/page/{page}"
         st, d, s = get(p)
         paging, rows = rows_of(d)
@@ -84,7 +94,7 @@ def main(out):
     print(len(allvars), "vars;", len(hits), "hits", flush=True)
     # English titles for the hits
     eng, page = {}, 1
-    while page < 80:
+    while page < 200:
         st, d, s = get(f"list/model/var/domain/0000/lang/eng/page/{page}")
         paging, rows = rows_of(d)
         for v in rows:
@@ -95,7 +105,12 @@ def main(out):
     (out / "vars_hits_eng.json").write_text(json.dumps({h["var_id"]: eng.get(h["var_id"]) for h in hits},
                                                        ensure_ascii=False, indent=1))
     # periods and the latest data for each hit (at most 60)
-    for v in hits[:60]:
+    focus = re.compile(r"(?i)inti|komponen|diatur|bergejolak|andil|perdagangan besar|ihpb|produsen|"
+                       r"^inflasi bulanan|^inflasi tahunan|^inflasi tahun kalender \(y|^indeks harga konsumen \(umum|"
+                       r"\(2022=100\) menurut kelompok dan sub kelompok 01|150 kabupaten")
+    pick = [v for v in hits if focus.search(v["title"]) and "Provinsi" not in v["title"]]
+    (out / "vars_pick.json").write_text(json.dumps(pick, ensure_ascii=False, indent=1))
+    for v in pick[:60]:
         vid = v["var_id"]
         st, d, s = get(f"list/model/th/domain/0000/var/{vid}")
         save(f"th_{vid}", f"list/model/th/domain/0000/var/{vid}", d, st, s)
