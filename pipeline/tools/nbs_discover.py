@@ -383,7 +383,53 @@ def stage5():
     (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
 
 
+def stage6():
+    """Data calls on one catalog (national CPI y/y, 2026-): queryMacroecData and
+    getEsDataByIndicatorIdAndDa with several parameter shapes."""
+    ext = "https://data.stats.gov.cn/dg/website/publicrelease/web/external"
+    hdr = {"Referer": "https://data.stats.gov.cn/dg/website/page.html", "Origin": "https://data.stats.gov.cn",
+           "Accept": "application/json, text/plain, */*", "Content-Type": "application/json;charset=UTF-8"}
+    cid = "5c7452825c7c4dcba391db5ca7f335c5"
+    ind = js(fetch("t6_ind", ext + "/new/queryIndicatorsByCid?" + urllib.parse.urlencode({"cid": cid, "dt": "", "name": ""}),
+                   headers=hdr, ext=".json")) or {}
+    lst = (ind.get("data") or {}).get("list") or []
+    root = "fc982599aa684be7969d7b90b1bd0e84"
+    x = lst[0] if lst else {}
+    ek, du, dp = x.get("ek"), x.get("du"), x.get("dp")
+    tries = [
+        ("mac_mm", "/queryMacroecData", {"ek": ek, "du": du, "dp": dp, "isMap": "0", "period": "", "type": "MM"}),
+        ("mac_mm_p", "/queryMacroecData", {"ek": ek, "du": du, "dp": dp, "isMap": "0", "period": "202609MM", "type": "MM"}),
+    ]
+    ids = [y["_id"] for y in lst]
+    nat = [{"text": "全国", "value": "000000000000"}]
+    for k, (dts, das) in enumerate([
+            (["202601MM-202609MM"], nat), (["202601-202609"], nat), (["202609MM"], nat), (["202601MM-202609MM"], []),
+            (["2026MM"], nat), ([""], nat)]):
+        tries.append((f"es_{k}", "/getEsDataByIndicatorIdAndDa",
+                      {"cid": cid, "indicatorIds": ids, "daCatalogId": "", "das": das, "showType": 1, "dts": dts,
+                       "rootId": root}))
+    tries.append(("es_area_cat", "/getEsDataByIndicatorIdAndDa",
+                  {"cid": cid, "indicatorIds": ids[:1], "daCatalogId": "", "das": nat, "showType": "1",
+                   "dts": ["202601MM-202609MM"], "rootId": root}))
+    for name, path, body in tries:
+        fetch("t6_" + name, ext + path, data=json.dumps(body, ensure_ascii=False).encode("utf-8"), headers=hdr, ext=".json")
+        time.sleep(0.5)
+    # Long history: the -2015 catalog and the PPI catalog
+    for nm, c in (("cpi_old", "954cfd7597e34b919ec71caf6aeead51"), ("ppi", "60e8b361f11c4a878c652a6487a25561")):
+        ind = js(fetch(f"t6_ind_{nm}", ext + "/new/queryIndicatorsByCid?" + urllib.parse.urlencode({"cid": c, "dt": "", "name": ""}),
+                       headers=hdr, ext=".json")) or {}
+        l2 = (ind.get("data") or {}).get("list") or []
+        if l2:
+            y = l2[0]
+            fetch(f"t6_mac_{nm}", ext + "/queryMacroecData", headers=hdr, ext=".json",
+                  data=json.dumps({"ek": y.get("ek"), "du": y.get("du"), "dp": y.get("dp"), "isMap": "0", "period": "",
+                                   "type": "MM"}).encode())
+    (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
+
+
 def main():
+    if len(sys.argv) > 2 and sys.argv[2] == "stage6":
+        return stage6()
     if len(sys.argv) > 2 and sys.argv[2] == "stage5":
         return stage5()
     if len(sys.argv) > 2 and sys.argv[2] == "stage4":
