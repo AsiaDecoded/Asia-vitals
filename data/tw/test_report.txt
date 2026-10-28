@@ -1,5 +1,5 @@
 == tw_cpi_dgbas
-   UPDATED: September 2026: 216653 rows, 368 items, 45 release tables; rates vs index 142378 tested, max 0.005; weights vs headline max 0.051 (213s)
+   UPDATED: September 2026: 216653 rows, 368 items, 45 release tables; rates vs index 142378 tested, max 0.005; weights vs headline max 0.051 (70s)
 == tw_ppi_dgbas
-   UPDATED: September 2026: 369050 rows; rates vs index 241374 tested, max 0.005 (72s)
+   UPDATED: September 2026: 369050 rows; rates vs index 241374 tested, max 0.005 (63s)
 September 2026 vs DGBAS release: 38/38 match
