@@ -1,0 +1,108 @@
+name: Hong Kong test (dev-hk)
+
+# Runs the Hong Kong sources (hk_cpi_censtatd, hk_ppi_censtatd) on the dev-hk branch, which are not yet in the
+# shared registry (pipeline/sources/__init__.py), with their checks; then checks the September 2026 figures
+# against C&SD's release (22 Oct 2026) and pushes data/hk and raw/hk back to dev-hk.
+# Not part of the scheduled update until merged.
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-hk]
+    paths:
+      - pipeline/core/censtatd.py
+      - pipeline/sources/hk_cpi_censtatd/**
+      - pipeline/sources/hk_ppi_censtatd/**
+      - .github/workflows/hk-test.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hk-test
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install the Excel reader
+        run: pip install --quiet openpyxl==3.1.5
+
+      - name: Run the Hong Kong sources with their checks
+        run: |
+          python -I - <<'EOF'
+          import sys, time, traceback, importlib
+          sys.path.insert(0, "pipeline")
+          from core.common import CheckFailed
+          rc, lines = 0, []
+          for name in ("hk_cpi_censtatd", "hk_ppi_censtatd"):
+              lines.append(f"== {name}")
+              t0 = time.time()
+              try:
+                  res = importlib.import_module(f"sources.{name}").update(force=True)
+                  lines.append(f"   {'UPDATED' if res['updated'] else 'unchanged'}: {res['summary']} ({time.time() - t0:.0f}s)")
+                  lines += [f"   WARNING: {w}" for w in res.get("warnings", [])]
+              except CheckFailed as e:
+                  rc = 1
+                  lines.append(f"   CHECKS FAILED ({len(e.errors)}):")
+                  lines += [f"   - {x}" for x in e.errors[:40]]
+              except Exception:
+                  rc = 1
+                  lines.append(traceback.format_exc())
+          open("hk_report.txt", "w").write("\n".join(lines) + "\n")
+          print("\n".join(lines))
+          sys.exit(rc)
+          EOF
+
+      - name: September 2026 against the C&SD release
+        run: |
+          python -I - <<'EOF'
+          import csv, sys
+          # As reported in C&SD's press release "Consumer Price Indices for September 2026" (22 Oct 2026)
+          CPI = {  # (index type, basis, series, measure): figure
+              ("composite", "headline", "all", "yoy"): 1.9, ("a", "headline", "all", "yoy"): 1.4,
+              ("b", "headline", "all", "yoy"): 2.0, ("c", "headline", "all", "yoy"): 2.3,
+              ("composite", "underlying", "all", "yoy"): 2.1, ("a", "underlying", "all", "yoy"): 1.7,
+              ("b", "underlying", "all", "yoy"): 2.2, ("c", "underlying", "all", "yoy"): 2.4,
+              ("composite", "headline", "egw", "yoy"): 12.9, ("composite", "headline", "misc_services", "yoy"): 5.3,
+              ("composite", "headline", "transport", "yoy"): 5.2, ("composite", "headline", "misc_goods", "yoy"): 2.1,
+              ("composite", "headline", "durables", "yoy"): 1.1, ("composite", "headline", "meals_out", "yoy"): 1.0,
+              ("composite", "headline", "clothing", "yoy"): 0.3, ("composite", "headline", "housing", "yoy"): 0.2,
+              ("composite", "headline", "alcohol_tobacco", "yoy"): -0.4, ("composite", "headline", "basic_food", "yoy"): -0.2,
+          }
+          # "On a seasonally adjusted basis, the average monthly rate of increase ... 3-month period ending September 2026"
+          SA = {("composite", "headline"): 0.2, ("a", "headline"): 0.2, ("b", "headline"): 0.2, ("c", "headline"): 0.2,
+                ("composite", "underlying"): 0.2, ("a", "underlying"): 0.1, ("b", "underlying"): 0.2, ("c", "underlying"): 0.2}
+          bad, n = [], 0
+          rows = {(r["index_type"], r["basis"], r["series"]): r for r in csv.DictReader(open("data/hk/cpi/hk_cpi.csv")) if r["date"] == "2026-09-01"}
+          for (it, b, s, m), v in CPI.items():
+              n += 1
+              r = rows.get((it, b, s))
+              if not r or r[m] == "": bad.append(f"{it} {b} {s} {m}: missing")
+              elif abs(float(r[m]) - v) > 0.001: bad.append(f"{it} {b} {s} {m}: {r[m]} vs release {v}")
+          sa = {(r["index_type"], r["basis"]): float(r["value"]) for r in csv.DictReader(open("data/hk/cpi/hk_cpi_sa.csv"))
+                if r["date"] == "2026-09-01" and r["measure"] == "sa_mom3" and r["series"] == "all"}
+          for k, v in SA.items():
+              n += 1
+              if k not in sa: bad.append(f"SA 3m {k}: missing")
+              elif abs(sa[k] - v) > 0.001: bad.append(f"SA 3m {k}: {sa[k]} vs release {v}")
+          msg = f"September 2026 vs C&SD release: {n - len(bad)}/{n} match"
+          print(msg); [print("  -", b) for b in bad]
+          open("hk_report.txt", "a").write(msg + "\n" + "".join(f"  - {b}\n" for b in bad))
+          sys.exit(1 if bad else 0)
+          EOF
+
+      - name: Push data and report to dev-hk
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mkdir -p data/hk && cp hk_report.txt data/hk/test_report.txt 2>/dev/null || true
+          git add data/hk; if [ -d raw/hk ]; then git add raw/hk; fi
+          git commit -qm "Hong Kong test run ${{ github.run_id }}" || exit 0
+          for i in 1 2 3; do git pull -q --rebase origin dev-hk && git push -q origin HEAD:dev-hk && break; sleep 5; done
