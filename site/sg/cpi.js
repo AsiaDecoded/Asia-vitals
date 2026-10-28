@@ -430,7 +430,6 @@ dash.calc('cpi_heat', {
     lineChart('cpi-gapc-chart', 'cpi-gapc', 'cpi-gapc-legend', 'national', [
       { key: 'core', name: 'MAS core', color: C[5], width: 3 },
       { key: 'ex', name: 'CPI less food and energy', color: C[4], width: 3 },
-      { key: 'rest', name: 'Shared basket', color: C[3], width: 2, dash: true },
       { key: 'groc', name: 'Food excl. FBSS', color: C[2], width: 1.75 },
       { key: 'eg', name: 'Electricity and gas', color: C[0], width: 1.75 },
       { key: 'imp', name: 'Imputed rentals', color: C[6], width: 1.75 },
