@@ -32,4 +32,4 @@ jobs:
           mkdir -p data/ph && cp /tmp/report.txt data/ph/test_report.txt
           git add data/ph raw/ph
           git commit -m "PH test run" || exit 0
-          git pull --rebase origin dev-ph && git push origin HEAD:dev-ph
+          git checkout -- . && git pull --rebase origin dev-ph && git push origin HEAD:dev-ph
