@@ -688,12 +688,6 @@ dash.calc('cpi_heat', {
       { key: 'electricity', name: 'Electricity', color: C[1] },
       { key: 'petrol', name: 'Petrol', color: C[3] },
     ], 280);
-    lineChart('cpi-keyitems-chart', 'cpi-keyitems', 'cpi-keyitems-legend', 'national', [
-      { key: 'actual_rentals', name: 'Actual rents', color: C[0] },
-      { key: 'motor_cars', name: 'Motor cars', color: C[1] },
-      { key: 'health_insurance', name: 'Health insurance', color: C[5] },
-      { key: 'airfares', name: 'Airfares', color: C[3] },
-    ], 280);
     saChart();
     lineChart('cpi-diffusion-chart', 'cpi-diffusion', 'cpi-diffusion-legend', 'national', [
       { key: 'diffusion', name: 'Diffusion index (rising minus falling)', color: C[1] },
