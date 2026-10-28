@@ -29,20 +29,24 @@ jobs:
       - name: Runner IP
         run: curl -s https://ipinfo.io/json || true
       - name: Certificate chain of ws.dgbas.gov.tw (incomplete; add the issuer from AIA)
+        continue-on-error: true
         run: |
-          mkdir -p discovery/dgbas/$DGBAS_ROUND
-          echo | openssl s_client -connect ws.dgbas.gov.tw:443 -servername ws.dgbas.gov.tw -showcerts 2>&1 | tee discovery/dgbas/$DGBAS_ROUND/ws_chain.txt | grep -E "s:|i:|Verify" || true
-          echo | openssl s_client -connect ws.dgbas.gov.tw:443 -servername ws.dgbas.gov.tw 2>/dev/null | openssl x509 -noout -text > /tmp/leaf.txt
-          grep -A2 "Authority Information" /tmp/leaf.txt | tee -a discovery/dgbas/$DGBAS_ROUND/ws_chain.txt
-          AIA=$(grep -o "CA Issuers - URI:[^ ]*" /tmp/leaf.txt | head -1 | sed 's/CA Issuers - URI://')
-          echo "AIA: $AIA"
-          curl -sS -m 30 -o /tmp/issuer.crt "$AIA"
-          (openssl x509 -inform DER -in /tmp/issuer.crt -out /tmp/issuer.pem 2>/dev/null || cp /tmp/issuer.crt /tmp/issuer.pem)
-          openssl x509 -in /tmp/issuer.pem -noout -subject -issuer -enddate -fingerprint -sha256 | tee -a discovery/dgbas/$DGBAS_ROUND/ws_chain.txt
-          cp /tmp/issuer.pem discovery/dgbas/$DGBAS_ROUND/ws_issuer.pem
+          set +e
+          D=discovery/dgbas/$DGBAS_ROUND; mkdir -p $D
+          timeout 40 openssl s_client -connect ws.dgbas.gov.tw:443 -servername ws.dgbas.gov.tw -showcerts </dev/null > $D/ws_chain.txt 2>&1
+          awk '/BEGIN CERT/{n++} n==1' $D/ws_chain.txt | sed '/END CERT/q' > /tmp/leaf.pem
+          openssl x509 -in /tmp/leaf.pem -noout -text > $D/ws_leaf.txt 2>&1
+          AIA=$(grep -o "CA Issuers - URI:[^ ]*" $D/ws_leaf.txt | head -1 | sed 's/CA Issuers - URI://')
+          echo "AIA=$AIA" >> $D/ws_leaf.txt
+          curl -sS -m 30 -o /tmp/issuer.crt "$AIA" >> $D/ws_leaf.txt 2>&1
+          openssl x509 -inform DER -in /tmp/issuer.crt -out /tmp/issuer.pem 2>/dev/null || cp /tmp/issuer.crt /tmp/issuer.pem
+          openssl x509 -in /tmp/issuer.pem -noout -subject -issuer -enddate -fingerprint -sha256 >> $D/ws_leaf.txt 2>&1
+          cp /tmp/issuer.pem $D/ws_issuer.pem
       - name: Probe DGBAS
-        run: DGBAS_CA=/tmp/issuer.pem python -I pipeline/tools/dgbas_discover.py pipeline/tools/dgbas_seeds.txt discovery/dgbas/$DGBAS_ROUND 120 1
+        continue-on-error: true
+        run: DGBAS_CA=$( [ -s /tmp/issuer.pem ] && echo /tmp/issuer.pem ) python -I pipeline/tools/dgbas_discover.py pipeline/tools/dgbas_seeds.txt discovery/dgbas/$DGBAS_ROUND 120 1
       - name: Push results to the discovery branch
+        if: always()
         run: |
           git config user.name "asia-vitals bot"
           git config user.email "actions@users.noreply.github.com"
