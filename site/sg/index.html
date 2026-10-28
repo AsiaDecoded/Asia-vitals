@@ -124,11 +124,6 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
 .ad-stack .jg-card { padding-bottom: var(--cds-pad-md, 14px); }
 .ad-stack .jg-note { font-size: 0.75rem; }
 #cpi-movers-table { table-layout: fixed; width: 100%; }
-#cpi-gap-table { table-layout: fixed; width: 100%; font-size: 0.8125rem; }
-#cpi-gap-table th, #cpi-gap-table td { padding: 3px 6px; }
-#cpi-gap-table th:nth-child(n+2) { width: 13%; }
-#cpi-gap-table th:nth-child(n+2), #cpi-gap-table td:nth-child(n+2) { text-align: right; }
-#cpi-gap-table tr.total td { font-weight: 700; border-top: 1px solid var(--ad-ink, var(--color-fg-muted)); }
 #cpi-movers-table th:nth-child(n+2) { width: 19%; }
 .jg-card.ad-full > .ad-x { display: none; }
 .jg-card.ad-full.ad-hasx > h2, .jg-card.ad-full.ad-hasx > .jg-cardhead { padding-right: 0; }
@@ -308,33 +303,12 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
     </div>
 
     <div class="jg-grid">
-      <section class="jg-card" id="cpi-gap">
-        <h2>MAS core vs CPI less food and energy</h2>
-        <div class="ad-top"><span class="ad-units" id="cpi-gap-units">%, pp</span><span></span><span class="ad-units r"></span></div>
-        <div class="jg-tablewrap">
-          <table id="cpi-gap-table" data-source="cpi_gap" data-row-key="key">
-            <thead><tr>
-              <th data-field="name">Part of the basket</th>
-              <th data-field="weight">Weight</th>
-              <th data-field="yoy">y/y, latest</th>
-              <th data-field="eff">Effect, latest</th>
-              <th data-field="eff3">Effect, 3m avg.</th>
-              <th data-field="eff6">Effect, 6m avg.</th>
-            </tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
-        <div class="ad-foot"><span>Source: SingStat, MAS. Weight: % of CPI. Effect: how much each part raises (+) or lowers (&minus;) MAS core relative to CPI less food and energy, against the shared basket both measures keep; the effects add up to the difference. FBSS: food and beverage serving services.</span><span class="ad-brand">Asia Decoded</span></div>
-      </section>
       <section class="jg-card" id="cpi-ym">
         <h2>Singapore consumer inflation</h2>
         <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-ym-legend"></div><span class="ad-units r">% m/m</span></div>
         <div class="jg-chart" id="cpi-ym-chart" data-source="cpi_series"></div>
         <div class="ad-foot"><span>Source: SingStat</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
-    </div>
-
-    <div class="jg-grid">
       <section class="jg-card" id="cpi-momentum">
         <div class="jg-cardhead">
           <div><h2>Singapore consumer inflation</h2></div>
@@ -346,6 +320,9 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
         <div class="jg-chart" id="cpi-sa-chart" data-source="cpi_series"></div>
         <div class="ad-foot"><span>Source: SingStat</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
+    </div>
+
+    <div class="jg-grid">
       <section class="jg-card" id="cpi-drivers">
         <h2>Singapore food and energy CPI</h2>
         <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-drivers-legend"></div><span class="ad-units r"></span></div>
@@ -381,7 +358,7 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
       <h3>Biggest contributors</h3>
       <p>Item contributions use the published 2024 item weights and the published item indices, for months whose year-earlier month is also on the 2024 basket (January 2025 on). The table ranks items by their average contribution over the latest three or six months.</p>
       <h3>MAS core vs CPI less food and energy</h3>
-      <p>Both measures keep a shared basket (55.9% of CPI: services, retail and other goods, and FBSS). MAS core also keeps food excl. FBSS and electricity and gas; CPI less food and energy also keeps imputed rentals, actual rents and maintenance, and private transport excluding fuel. Each part&rsquo;s effect is its share of its measure a year earlier &times; (its y/y &minus; the shared basket&rsquo;s y/y), with the sign reversed for parts only in CPI less food and energy, so the effects add up exactly to MAS core minus CPI less food and energy. It uses the published 2024 weights and indices (2024 = 100), so it starts in January 2025.</p>
+      <p>The two measures share most of the basket (55.9% of CPI: services, retail and other goods, and FBSS). MAS core also keeps food excl. FBSS and electricity and gas (8.5%); CPI less food and energy also keeps imputed rentals, actual rents and maintenance, and private transport excluding fuel (33.8%). The chart shows the y/y of each of these three groups, built like CPI less food and energy: SingStat&rsquo;s published weights for each basket (2014, 2019, 2024), chained, from January 2015.</p>
       <div class="ad-foot"><span>Source: SingStat, Asia Decoded calculations</span><span class="ad-brand">Asia Decoded</span></div>
     </article>
     <article class="jg-card ad-method" id="method-diffusion">

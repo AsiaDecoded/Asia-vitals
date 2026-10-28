@@ -56,71 +56,6 @@ dash.calc('cpi_table', {
   },
 });
 
-// MAS core vs CPI less food and energy, month by month (2024 basket, published weights; from Jan 2025).
-// Each part's effect on the difference = its share of its measure a year earlier x (its y/y - shared basket's y/y),
-// sign reversed for parts only in CPI less food and energy, so the effects add up to the difference.
-function gapMonths(cpi_series, wts) {
-  const W = {}; wts.forEach((r) => { W[r.series] = Number(r.weight); });
-  const I = {}; cpi_series.forEach((r) => { if (r.area === 'national' && r.index != null) (I[r.series] = I[r.series] || {})[r.date] = r.index; });
-  const need = ['core', 'food_ex_fbss', 'electricity', 'gas', 'imputed_rentals', 'accommodation', 'private_transport', 'petrol', 'other_fuels'];
-  const back = (d) => `${+d.slice(0, 4) - 1}${d.slice(4)}`;
-  const blocks = (t) => {
-    if (need.some((k) => !I[k] || I[k][t] == null)) return null;
-    const v = (k) => W[k] * I[k][t];
-    const core = v('core'), groc = v('food_ex_fbss'), eg = v('electricity') + v('gas');
-    const imp = v('imputed_rentals'), rm = v('accommodation') - imp, ptx = v('private_transport') - v('petrol') - v('other_fuels');
-    const rest = core - groc - eg;
-    return { core, rest, groc, eg, imp, rm, ptx, ex: rest + imp + rm + ptx, conly: groc + eg, xonly: imp + rm + ptx };
-  };
-  const wt = { rest: W.core - W.food_ex_fbss - W.electricity - W.gas, groc: W.food_ex_fbss, eg: W.electricity + W.gas,
-    imp: W.imputed_rentals, rm: W.accommodation - W.imputed_rentals, ptx: W.private_transport - W.petrol - W.other_fuels };
-  const months = Object.keys(I.core || {}).filter((d) => d >= '2025-01-01').sort().map((t) => {
-    const b = blocks(t), a = blocks(back(t));
-    if (!b || !a) return null;
-    const r = {}; Object.keys(b).forEach((k) => { r[k] = b[k] / a[k] - 1; });
-    const eff = {};
-    GAP_A.forEach((k) => { eff[k] = (a[k] / a.core) * (r[k] - r.rest) * 100; });
-    GAP_B.forEach((k) => { eff[k] = -(a[k] / a.ex) * (r[k] - r.rest) * 100; });
-    const net = GAP_A.concat(GAP_B).reduce((x, k) => x + eff[k], 0);
-    return { date: t, r, eff, net, core: r.core * 100, ex: r.ex * 100 };
-  }).filter(Boolean);
-  return { months, wt };
-}
-const GAP_A = ['groc', 'eg'], GAP_B = ['imp', 'rm', 'ptx'];
-const GAP_NAME = { groc: 'Food excl. FBSS', eg: 'Electricity and gas', imp: 'Imputed rentals', rm: 'Actual rents and maintenance', ptx: 'Private transport excl. fuel' };
-
-dash.calc('cpi_gap', {
-  title: 'MAS core vs CPI less food and energy',
-  description: 'What separates MAS core from CPI less food and energy, latest month and 3- and 6-month averages. Both share most of the basket; MAS core also keeps groceries and electricity and gas, CPI less food and energy also keeps imputed rentals, actual rents and maintenance, and private transport excluding fuel. Effects (pp) add up to MAS core minus CPI less food and energy. 2024 basket, published weights; months from Jan 2025.',
-  inputs: ['cpi_series', 'sg_cpi_series_weights'],
-  fn: (cpi_series, wts) => {
-    const { months, wt } = gapMonths(cpi_series, wts);
-    if (!months.length) return [];
-    const last = months[months.length - 1];
-    const avg = (f, n) => { const s = months.slice(-n); return s.length === n ? s.reduce((x, m) => x + f(m), 0) / n : null; };
-    const row = (k, section) => ({ key: k, section, name: GAP_NAME[k], date: last.date, weight: wt[k] / 100, yoy: last.r[k] * 100,
-      eff: last.eff[k], eff3: avg((m) => m.eff[k], 3), eff6: avg((m) => m.eff[k], 6) });
-    return [
-      ...GAP_A.map((k) => row(k, 'core')),
-      ...GAP_B.map((k) => row(k, 'ex')),
-      { key: 'rest', section: 'shared', name: 'Shared basket', date: last.date, weight: wt.rest / 100, yoy: last.r.rest * 100, eff: null, eff3: null, eff6: null },
-      { key: 'net', section: 'net', name: 'Difference', date: last.date, weight: null, yoy: null,
-        eff: last.net, eff3: avg((m) => m.net, 3), eff6: avg((m) => m.net, 6), core_yoy: last.core, ex_yoy: last.ex },
-    ];
-  },
-});
-
-dash.calc('cpi_gap_series', {
-  title: 'MAS core vs CPI less food and energy, monthly',
-  description: 'Monthly effects (pp) of each part on MAS core minus CPI less food and energy, the difference, and both measures’ y/y, from Jan 2025.',
-  inputs: ['cpi_series', 'sg_cpi_series_weights'],
-  fn: (cpi_series, wts) => gapMonths(cpi_series, wts).months.map((m) => {
-    const o = { date: m.date, core: m.core, ex: m.ex };
-    ['groc', 'eg', 'imp', 'rm', 'ptx', 'rest', 'conly', 'xonly'].forEach((k) => { o[k] = m.r[k] * 100; });
-    return o;
-  }),
-});
-
 dash.calc('cpi_movers', {
   title: 'Item contributions, 3- and 6-month averages',
   description: 'For each individual CPI item: its 2024 weight and y/y in the latest month, and the average of its contribution to the all-items y/y (calculated from the 2024 weights) over the latest 3 and 6 months.',
@@ -504,36 +439,6 @@ dash.calc('cpi_heat', {
     });
   }
 
-  // MAS core vs CPI less food and energy: what separates them (see the cpi_gap calc).
-  function gapTable() {
-    const tb = document.querySelector('#cpi-gap-table tbody');
-    if (!tb) return;
-    const G = dash.data('cpi_gap');
-    if (failed(G.status)) { tb.replaceChildren(); const td = tb.insertRow().insertCell(); td.colSpan = 6; J.fail(td); return; }
-    if (G.status !== 'ok' || !G.data.length) return;
-    const net = G.data.find((r) => r.key === 'net');
-    document.getElementById('cpi-gap-units').textContent =
-      `%, pp, ${mLabel(net.date)}: MAS core ${J.f1(net.core_yoy)}%, CPI less food and energy ${J.f1(net.ex_yoy)}% y/y`;
-    const f2 = (v) => (v == null ? '' : d3.format('.2f')(Math.abs(v) < 0.005 ? 0 : v));
-    tb.replaceChildren();
-    const put = (r, cls) => {
-      const tr = tb.insertRow(); if (cls) tr.className = cls; tr.dataset.key = r.key;
-      [['name', r.name], ['weight', r.weight], ['yoy', r.yoy], ['eff', r.eff], ['eff3', r.eff3], ['eff6', r.eff6]].forEach(([f, v]) => {
-        const td = tr.insertCell();
-        if (f === 'name') { td.textContent = v; return; }
-        td.textContent = v == null ? '' : (f.startsWith('eff') ? f2(v) : J.f1(v));
-        if (v != null && v < -0.004 && f !== 'weight') td.classList.add('neg');
-      });
-    };
-    [['In MAS core only', 'core'], ['In CPI less food and energy only', 'ex']].forEach(([g, s], gi) => {
-      const gr = tb.insertRow(); gr.className = 'grp' + (gi ? ' sep' : '');
-      const gtd = gr.insertCell(); gtd.colSpan = 6; gtd.textContent = g;
-      G.data.filter((r) => r.section === s).forEach((r) => put(r));
-    });
-    put(G.data.find((r) => r.key === 'rest'), 'sep');
-    put(net, 'total');
-  }
-
   function moversTable() {
     const tb = document.querySelector('#cpi-movers-table tbody');
     const M = dash.data('cpi_movers');
@@ -766,6 +671,6 @@ dash.calc('cpi_heat', {
     gapChart();
   };
 
-  dash.onData(() => { tiles(); takeaway(); heat(); table(); moversTable(); gapTable(); J.redrawCpi(); });
+  dash.onData(() => { tiles(); takeaway(); heat(); table(); moversTable(); J.redrawCpi(); });
   J.redrawCpi();
 })();
