@@ -100,7 +100,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 28  # bump when the outputs change, so the next run rebuilds them
+VERSION = 30  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -725,11 +725,12 @@ def update(**_):
          "ex_food_energy": 1 - node_w["1.01"] - sum(item_w[no] for no in FUEL_ITEMS),
          "gs_services": sum(GS_SERVICES["2024"].values()) / 1e4}
     W["gs_goods"] = 1 - W["gs_services"]
+    W["services"] = CORE_WEIGHTS["2024"]["services"] / 1e4  # MAS (Table A.1)
     for key, lab, grp, no in CPI:
         if key not in W and no in node_w:
             W[key] = node_w[no]
     labels = {k: lab for k, lab, *_r in CPI}
-    labels.update(GS_LABELS)
+    labels.update(GS_LABELS, services="MAS services")
     labels.update({"core": "MAS core inflation measure", "fuel": "Energy (calculated)", "ex_food_energy": "CPI less food (excl. serving services) and energy (calculated)"})
     _write_csv(OUT / "sg_cpi_series_weights.csv", ["series", "label", "weight"],
                [{"series": k, "label": labels.get(k, k), "weight": round(v * 1e4, 1)} for k, v in W.items()])
