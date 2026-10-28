@@ -6,6 +6,8 @@ core,MAS core inflation measure,6438.0
 fuel,Energy (calculated),376.0
 food,Food,2042.0
 ex_food_energy,CPI less food (excl. serving services) and energy (calculated),8973.0
+gs_services,"Services, incl. FBSS (calculated)",7468.0
+gs_goods,Goods (calculated),2532.0
 food_ex_fbss,Food excl. food and beverage serving services,651.0
 fbss,Food and beverage serving services,1391.0
 accommodation,Accommodation,2656.0

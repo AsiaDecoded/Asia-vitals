@@ -110,13 +110,13 @@ dash.calc('ppi_latest', {
 
 dash.calc('cpi_heat', {
   title: 'CPI inflation by division, y/y',
-  description: 'SingStat published y/y, with 2024 basket weights per 10,000, for all items, food and its two parts, the 10 other divisions, all items less imputed rentals, all items less accommodation and MAS core, and the calculated fuel CPI, from Jan 2026.',
+  description: 'SingStat published y/y, with 2024 basket weights per 10,000, for all items, food and its two parts, the 10 other divisions, all items less imputed rentals, all items less accommodation and MAS core, the calculated fuel CPI, and calculated goods and services CPI, from Jan 2026.',
   inputs: ['cpi_series', 'sg_cpi_series_weights'],
   fn: (cpi_series, sg_cpi_series_weights) => {
     const W = new Map(sg_cpi_series_weights.map((r) => [r.series, Number(r.weight)]));
     const ROWS = ['all', 'accommodation', 'imputed_rentals', 'actual_rentals', 'private_transport', 'less_imputed', 'less_accom', 'core',
       'food_ex_fbss', 'fuel', 'electricity', 'gas', 'petrol', 'other_fuels', 'ex_food_energy',
-      'food', 'fbss', 'clothing', 'housing', 'household', 'health', 'transport', 'info_comm', 'recreation', 'education', 'misc'];
+      'food', 'fbss', 'clothing', 'housing', 'household', 'health', 'transport', 'info_comm', 'recreation', 'education', 'misc', 'gs_goods', 'gs_services'];
     return cpi_series.filter((r) => ROWS.includes(r.series) && r.date >= '2026-01-01' && r.yoy != null)
       .map((r) => ({ date: r.date, series: r.series, name: r.label, yoy: r.yoy, order: ROWS.indexOf(r.series), weight: W.has(r.series) ? W.get(r.series) : null }));
   },
@@ -504,7 +504,7 @@ dash.calc('cpi_heat', {
       const i = t > 0.5 ? 1 : 0; const [t0, c0] = STOPS[i], [t1, c1] = STOPS[i + 1], f = (t - t0) / (t1 - t0);
       return `rgb(${c0.map((c, k) => Math.round(c + (c1[k] - c) * f)).join(',')})`;
     };
-    const NAMES = { all: 'CPI', less_imputed: 'CPI less imputed rentals for housing', less_accom: 'CPI less accommodation', core: 'MAS core', fuel: 'Energy', ex_food_energy: 'CPI less food and energy', other_fuels: 'Other fuel and lubricants', food_ex_fbss: 'Food excl. FBSS', fbss: 'FBSS' };
+    const NAMES = { all: 'CPI', less_imputed: 'CPI less imputed rentals for housing', less_accom: 'CPI less accommodation', core: 'MAS core', fuel: 'Energy', ex_food_energy: 'CPI less food and energy', other_fuels: 'Other fuel and lubricants', food_ex_fbss: 'Food excl. FBSS', fbss: 'FBSS', gs_goods: 'Goods', gs_services: 'Services' };
     tbl.replaceChildren();
     const head = tbl.createTHead().insertRow();
     ['', 'Weight'].concat(dates.map((d) => `${MON[+d.slice(5, 7) - 1]} ${d.slice(2, 4)}`)).forEach((t) => {
@@ -515,7 +515,7 @@ dash.calc('cpi_heat', {
     const PARENT = {}; Object.entries(CHILDREN).forEach(([p, cs]) => cs.forEach((c) => { PARENT[c] = p; }));
     const OPEN = (J.state.heatOpen = J.state.heatOpen || {});
     keys.forEach((k) => {
-      if (k === 'food') { const sp = tb.insertRow(); sp.className = 'spacer'; sp.insertCell().colSpan = dates.length + 2; }
+      if (k === 'food' || k === 'gs_goods') { const sp = tb.insertRow(); sp.className = 'spacer'; sp.insertCell().colSpan = dates.length + 2; }
       const tr = tb.insertRow();
       const label = NAMES[k] || D.data.find((r) => r.series === k).name;
       const nc = tr.insertCell(); nc.dataset.label = label;
