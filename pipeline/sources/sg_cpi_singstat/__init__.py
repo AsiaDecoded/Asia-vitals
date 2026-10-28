@@ -100,7 +100,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 26  # bump when the outputs change, so the next run rebuilds them
+VERSION = 27  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -387,8 +387,7 @@ def _ex_food_energy(idx, names, errors):
 #   shared by both: all items - accommodation - private transport - food excl. FBSS - electricity - gas
 #   in CPI less food and energy only: accommodation + private transport - petrol - other fuel and lubricants
 #   (= imputed rentals, actual rents and maintenance, private transport excl. fuel)
-# Services, broadly: MAS core's services plus accommodation and private transport services (FBSS excluded, as in MAS
-# core). Split into health services, land transport services, airfares, actual rentals and other services, as weighted
+# Services, broadly: MAS core's services plus accommodation, FBSS (in other services) and private transport services. Split into health services, land transport services, airfares, actual rentals and other services, as weighted
 # indices on the chained method (weights per 10,000 of CPI). "S" is MAS's services index (CORE_WEIGHTS; 2014 estimated).
 # Accommodation as in HEADLINE_WEIGHTS. Health, land transport, airfares and actual rentals: IP-E61 Appendix III for
 # 2019 and 2024; IP-E48 for 2014 (old classification: bus and train 174, point-to-point 105, other public transport 25,
@@ -411,14 +410,15 @@ SVC_PARTS = {
     "svc_land": {b: {"1.06.2": v["land"]} for b, v in _SVC.items()},
     "svc_air": {b: {"1.06.3.1": v["air"]} for b, v in _SVC.items()},
     "svc_rent": {b: {"1.03.1.1": v["rent"]} for b, v in _SVC.items()},
-    "svc_other": {b: {"S": v["services"], "1.03.1": v["acco"], **v["ptx"], "1.06.2": -v["land"], "1.06.3.1": -v["air"],
+    "svc_other": {b: {"S": v["services"], "1.03.1": v["acco"], "1.11": CORE_WEIGHTS[b]["fbss"], **v["ptx"], "1.06.2": -v["land"], "1.06.3.1": -v["air"],
                       "1.03.1.1": -v["rent"], **{c: -w for c, w in v["health"].items()}} for b, v in _SVC.items()},
-    "svc_all": {b: {"S": v["services"], "1.03.1": v["acco"], **v["ptx"]} for b, v in _SVC.items()},
+    "svc_all": {b: {"S": v["services"], "1.03.1": v["acco"], "1.11": CORE_WEIGHTS[b]["fbss"], **v["ptx"]}
+                for b, v in _SVC.items()},
 }
 SVC_LABELS = {"svc_health": "Services: health (calculated)", "svc_land": "Services: land transport (calculated)",
               "svc_air": "Services: airfares (calculated)", "svc_rent": "Services: actual rentals (calculated)",
               "svc_other": "Services: other (calculated)",
-              "svc_all": "Services, broad: MAS services + accommodation + private transport services (calculated)"}
+              "svc_all": "Services, broad: MAS services + accommodation + FBSS + private transport services (calculated)"}
 
 
 # CPI split into services and goods. Services: MAS services ("S", CORE_WEIGHTS; 2014 estimated), accommodation
