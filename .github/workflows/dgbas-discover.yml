@@ -15,7 +15,7 @@ permissions:
   contents: write
 
 env:
-  DGBAS_ROUND: r2
+  DGBAS_ROUND: r3
 
 jobs:
   discover:

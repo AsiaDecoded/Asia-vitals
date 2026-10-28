@@ -32,6 +32,7 @@ HREF = re.compile(r"""<a\b[^>]*?href\s*=\s*["']([^"'#]+)["'][^>]*>(.*?)</a>""", 
 
 
 def fetch(url, data=None, headers=None):
+    url = urllib.parse.quote(url, safe=":/?&=%#+,;@!$'()*~")
     req = urllib.request.Request(url, data=data, headers={**UA, **(headers or {})})
     t = time.time()
     try:
@@ -76,10 +77,13 @@ def main(seedfile, out, max_fetch=250, depth=2):
         status, headers, body, final, secs, err = fetch(url, data, hdr)
         ct = headers.get("Content-Type", "")
         h = hashlib.md5(key.encode()).hexdigest()[:10]
-        ext = ("json" if "json" in ct else "xml" if "xml" in ct else "html" if "html" in ct else
-               "xls" if ("excel" in ct or url.lower().split("?")[0].endswith(".xls")) else
-               "xlsx" if ("spreadsheetml" in ct or url.lower().split("?")[0].endswith(".xlsx")) else
-               "csv" if "csv" in ct else "pdf" if "pdf" in ct else "bin")
+        low = url.lower().split("?")[0]
+        ext = ("xlsx" if ("spreadsheetml" in ct or low.endswith(".xlsx")) else
+               "xls" if ("excel" in ct or low.endswith(".xls")) else
+               "ods" if ("opendocument" in ct or low.endswith(".ods")) else
+               "pdf" if ("pdf" in ct or low.endswith(".pdf")) else
+               "json" if "json" in ct else "xml" if "xml" in ct else "html" if "html" in ct else
+               "csv" if "csv" in ct else "bin")
         fn = f"{name}_{h}.{ext}"
         (out / "files" / fn).write_bytes(body[:30_000_000])
         rec = {"name": name, "url": url, "post": post, "final_url": final, "status": status, "error": err,
