@@ -38,7 +38,14 @@ class NBSError(RuntimeError):
     pass
 
 
-def _call(path, params=None, body=None, tries=4, timeout=120):
+# The portal's firewall answers bursts of requests with a redirect that sets a cookie; keep cookies
+# so the redirect resolves, and keep concurrency low.
+import http.cookiejar as _cj
+_JAR = _cj.CookieJar()
+_OPENER = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(_JAR))
+
+
+def _call(path, params=None, body=None, tries=6, timeout=120):
     url = f"{BASE}/{path}"
     if params:
         url += "?" + urllib.parse.urlencode(params)
@@ -50,7 +57,7 @@ def _call(path, params=None, body=None, tries=4, timeout=120):
     for i in range(tries):
         try:
             req = urllib.request.Request(url, data=data, headers=headers)
-            with urllib.request.urlopen(req, timeout=timeout) as r:
+            with _OPENER.open(req, timeout=timeout) as r:
                 raw = r.read()
             try:
                 out = json.loads(raw.decode("utf-8"))
@@ -62,7 +69,7 @@ def _call(path, params=None, body=None, tries=4, timeout=120):
             return out.get("data")
         except (urllib.error.URLError, TimeoutError, NBSError, ConnectionError) as e:
             err = e
-            time.sleep(4 * (i + 1))
+            time.sleep(10 * (i + 1))
     raise NBSError(f"NBS request failed: {url}: {err!r}")
 
 
@@ -134,7 +141,7 @@ def provinces():
     return _call("getAllProvince") or []
 
 
-def parallel(fn, items, workers=6):
+def parallel(fn, items, workers=3):
     """[fn(x) for x in items] on a few threads (the portal answers one table in a few seconds)."""
     from concurrent.futures import ThreadPoolExecutor
     with ThreadPoolExecutor(max_workers=workers) as ex:
@@ -147,7 +154,7 @@ def province_rows(cid, ids, start="198301", end="203012"):
     def one(p):
         return p, table(cid, ids, start, end, root=ROOT_PROVINCE, das=[{"text": p.get("text"), "value": p.get("value")}])
     rows, data = [], []
-    for p, (r, d) in parallel(one, provinces(), workers=8):
+    for p, (r, d) in parallel(one, provinces(), workers=3):
         rows += r
         data.append({"area": p.get("value"), "data": d})
     if not rows:
