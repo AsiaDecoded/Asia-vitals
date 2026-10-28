@@ -351,7 +351,7 @@ dash.calc('cpi_heat', {
     const lineColor = J.PAL[1];
     svg.append('path').attr('d', d3.line().x((r) => cx(r.date)).y((r) => y(r.all))(rows))
       .attr('fill', 'none').attr('stroke', lineColor).attr('stroke-width', 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
-    legend(opt.id + '-legend', [{ key: 'all', name: opt.line, color: lineColor }].concat(PARTS.filter((p) => p.key !== 'services'), PARTS.filter((p) => p.key === 'services')));
+    legend(opt.id + '-legend', [{ key: 'all', name: opt.line, color: lineColor }].concat(PARTS));
     const card = document.getElementById(opt.id), tip = J.tip(card);
     const hl = svg.append('rect').attr('fill', 'var(--color-fg)').attr('opacity', 0.06).attr('display', 'none');
     const sg = (v) => (v == null ? '—' : (v > 0 ? '+' : '') + J.f1(v) + 'ppt');
