@@ -35,5 +35,5 @@ jobs:
           git checkout -B discovery origin/discovery
           mkdir -p discovery && rm -rf discovery/nbs5 && cp -r /tmp/discovery/nbs5 discovery/
           git add discovery/nbs5
-          git commit -m "NBS discovery 5"
+          git commit -m "NBS discovery 5b"
           for i in 1 2 3; do git push origin discovery && break; git pull --rebase origin discovery; done

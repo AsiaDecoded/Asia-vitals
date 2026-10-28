@@ -345,27 +345,24 @@ def stage5():
         # walk only nodes whose name mentions prices
         def pname(n):
             return str(n.get("_name") or n.get("name") or n.get("show_name") or "")
-        queue = [n for n in level if not n.get("isLeaf")]
+        queue = [(n, False) for n in level if not n.get("isLeaf")]
         steps = 0
-        while queue and steps < 80:
-            n = queue.pop(0)
-            nm = pname(n)
-            depth = n.get("treeinfo_level") or 0
-            if depth and int(depth) >= 2 and "价格" not in nm and "指数" not in nm:
-                continue
+        while queue and steps < 120:
+            n, in_price = queue.pop(0)
             steps += 1
             sub = (get(f"t5_tree_{code}_{steps:03d}", "/new/queryIndexTreeAsync", {"pid": n["_id"], "code": code}) or {}).get("data") or []
             for c in sub:
-                tree[c["_id"]] = {**{k: c.get(k) for k in ("_name", "name", "show_name", "isLeaf", "treeinfo_level")}, "parent": n["_id"]}
-                if not c.get("isLeaf") and ("价格" in pname(c) or int(c.get("treeinfo_level") or 0) <= 2):
-                    queue.append(c)
+                tree[c["_id"]] = {**{k: c.get(k) for k in ("_name", "name", "show_name", "isLeaf", "treeinfo_level", "sdate", "edate")}, "parent": n["_id"]}
+                p = in_price or "价格" in pname(c)
+                if not c.get("isLeaf") and p:
+                    queue.append((c, True))
             time.sleep(0.3)
         (OUT / f"tree_{code}.json").write_text(json.dumps(tree, ensure_ascii=False, indent=1))
-        leaves = [k for k, v in tree.items() if v.get("isLeaf") and ("居民消费价格" in str(v) or "工业生产者" in str(v))]
+        leaves = [k for k, v in tree.items() if v.get("isLeaf") and "价格" in str(v)]
         report[f"code{code}_nodes"] = len(tree)
         report[f"code{code}_price_leaves"] = len(leaves)
         root_id = level[0]["_id"] if level else ""
-        for j, cid in enumerate(leaves[:12]):
+        for j, cid in enumerate(leaves[:30]):
             ind = get(f"t5_ind_{code}_{j:02d}", "/new/queryIndicatorsByCid", {"cid": cid, "dt": "", "name": ""}) or {}
             lst = ((ind.get("data") or {}).get("list")) or []
             dt = get(f"t5_dt_{code}_{j:02d}", "/new/queryDtByCid", {"cid": cid, "rootId": root_id}) or {}
