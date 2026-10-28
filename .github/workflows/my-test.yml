@@ -1,0 +1,35 @@
+name: Malaysia sources test (dev-my)
+
+# Runs the Malaysia sources live on the dev-my branch and commits their output there.
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-my]
+    paths:
+      - pipeline/sources/my_*/**
+      - pipeline/core/dosm.py
+      - .github/workflows/my-test.yml
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run the Malaysia sources
+        run: python -I pipeline/run.py my_cpi_dosm my_ppi_dosm | tee /tmp/report.txt
+      - name: Commit output to dev-my
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mkdir -p data/my && cp /tmp/report.txt data/my/test_report.txt
+          git add data/my raw/my
+          git commit -m "MY test run" || exit 0
+          git checkout -- . && git pull --rebase origin dev-my && git push origin HEAD:dev-my
