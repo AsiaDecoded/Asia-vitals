@@ -241,7 +241,7 @@
     xcards.forEach((c) => { if (c.classList.contains('ad-expanded')) { c.classList.remove('ad-expanded'); setIcon(c, false); } });
     redraw(); markFull();
   });
-  document.querySelectorAll('.jg-card').forEach((card) => {
+  document.querySelectorAll('.jg-card:not(.ad-duo)').forEach((card) => {
     if (!card.querySelector('.jg-chart') && !card.querySelector('table')) return;
     const x = document.createElement('button'); x.type = 'button'; x.className = 'ad-x';
     x.addEventListener('click', () => toggle(card));
@@ -249,7 +249,7 @@
   });
   markFull(); window.addEventListener('resize', markFull);
 
-  document.querySelectorAll('.jg-card').forEach((card) => {
+  document.querySelectorAll('.jg-card:not(.ad-duo)').forEach((card) => {
     const isTable = !card.querySelector('.jg-chart') && card.querySelector('table');
     if (!card.querySelector('.jg-chart') && !isTable) return;
     const foot = card.querySelector('.ad-foot'), brand = foot && foot.querySelector('.ad-brand');

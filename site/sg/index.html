@@ -113,6 +113,11 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
 .jg-card.ad-hasx > h2, .jg-card.ad-hasx > .jg-cardhead { padding-right: 30px; }
 .jg-grid > .ad-expanded, .jg-grid:has(.ad-expanded) > * { grid-column: 1 / -1; }
 .ad-stack { display: flex; flex-direction: column; gap: var(--cds-gap-md); min-width: 0; }
+.ad-duo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-lg); margin-top: var(--cds-gap-sm); }
+.jg-card.ad-panel { border: 0; padding: 0; background: none; border-radius: 0; }
+.jg-card.ad-panel > h2 { font-size: 1rem; }
+.jg-card.ad-panel > .ad-x { display: none; }
+.jg-card.ad-panel.ad-hasx > h2, .jg-card.ad-panel.ad-hasx > .jg-cardhead { padding-right: 0; }
 .ad-stack table { font-size: 0.8125rem; line-height: 1.25; }
 .ad-stack table th, .ad-stack table td { padding: 3px 6px; }
 .ad-stack table thead th { font-size: 0.75rem; vertical-align: bottom; }
@@ -258,21 +263,32 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
     </div>
 
     <div class="jg-grid">
+      <section class="jg-card ad-duo" id="cpi-duo">
+        <h2>Singapore consumer inflation</h2>
+        <div class="ad-duo-grid">
+          <section class="jg-card ad-panel" id="cpi-measures">
+            <h2>CPI and core measures</h2>
+            <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-measures-legend"></div><span class="ad-units r"></span></div>
+            <div class="jg-chart" id="cpi-measures-chart" data-source="cpi_series"></div>
+            <div class="ad-foot"><span>Source: SingStat, Monetary Authority of Singapore</span><span class="ad-brand">Asia Decoded</span></div>
+          </section>
+          <section class="jg-card ad-panel" id="cpi-gapc">
+            <h2>MAS core vs CPI less food and energy</h2>
+            <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-gapc-legend"></div><span class="ad-units r"></span></div>
+            <div class="jg-chart" id="cpi-gapc-chart" data-source="cpi_gap_series"></div>
+            <div class="ad-foot"><span>Source: SingStat, MAS. FBSS: food and beverage serving services.</span><span class="ad-brand">Asia Decoded</span></div>
+          </section>
+        </div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
       <section class="jg-card" id="ppi-cpi">
         <h2>Singapore inflation</h2>
         <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="ppi-cpi-legend"></div><span class="ad-units r"></span></div>
         <div class="jg-chart" id="ppi-cpi-chart" data-source="cpi_series ppi_series"></div>
         <div class="ad-foot"><span>Source: SingStat. PPI is the Singapore Manufactured Products Price Index (SMPPI).</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
-      <section class="jg-card" id="cpi-measures">
-        <h2>Singapore consumer inflation</h2>
-        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-measures-legend"></div><span class="ad-units r"></span></div>
-        <div class="jg-chart" id="cpi-measures-chart" data-source="cpi_series"></div>
-        <div class="ad-foot"><span>Source: SingStat, Monetary Authority of Singapore</span><span class="ad-brand">Asia Decoded</span></div>
-      </section>
-    </div>
-
-    <div class="jg-grid">
       <section class="jg-card" id="cpi-gap">
         <h2>MAS core vs CPI less food and energy</h2>
         <div class="ad-top"><span class="ad-units" id="cpi-gap-units">%, pp</span><span></span><span class="ad-units r"></span></div>
@@ -290,12 +306,6 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
           </table>
         </div>
         <div class="ad-foot"><span>Source: SingStat, MAS. Weight: % of CPI. Effect: how much each part raises (+) or lowers (&minus;) MAS core relative to CPI less food and energy, against the shared basket both measures keep; the effects add up to the difference. FBSS: food and beverage serving services.</span><span class="ad-brand">Asia Decoded</span></div>
-      </section>
-      <section class="jg-card" id="cpi-gapc">
-        <h2>MAS core vs CPI less food and energy</h2>
-        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-gapc-legend"></div><span class="ad-units r"></span></div>
-        <div class="jg-chart" id="cpi-gapc-chart" data-source="cpi_gap_series"></div>
-        <div class="ad-foot"><span>Source: SingStat, MAS. FBSS: food and beverage serving services.</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
     </div>
 
