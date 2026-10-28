@@ -462,7 +462,101 @@ def stage7():
     (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
 
 
+def stage8():
+    """Coverage of every price catalog in the monthly national tree and the provincial CPI/PPI
+    catalogs, through pipeline/core/nbs.py; raw tables saved gzipped."""
+    import gzip
+    sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "pipeline"))
+    from core import nbs  # noqa: E402
+    cov = {"national": {}, "province": {}}
+    raw_dir = OUT / "raw"
+    raw_dir.mkdir(exist_ok=True)
+
+    def walk(code, root):
+        out, queue = {}, [(root, "")]
+        while queue:
+            pid, path = queue.pop(0)
+            for n in nbs.tree(code, pid):
+                nm = (n.get("_name") or n.get("name") or "").strip()
+                if pid == root and "价格" not in nm:
+                    continue
+                if n.get("isLeaf"):
+                    out[n["_id"]] = {"name": nm, "path": path, "sdate": n.get("sdate"), "edate": n.get("edate")}
+                else:
+                    queue.append((n["_id"], (path + " > " + nm).strip(" >")))
+            time.sleep(0.2)
+        return out
+
+    for scope, code, root in (("national", "1", nbs.ROOT_MONTHLY), ("province", "4", nbs.ROOT_PROVINCE)):
+        try:
+            cats = walk(code, root)
+        except Exception as e:  # noqa: BLE001
+            cov[scope] = {"error": repr(e)}
+            continue
+        for cid, meta in cats.items():
+            nm = meta["name"]
+            if scope == "national" and ("集贸" in nm or "零售" in nm):
+                continue
+            if scope == "province" and "零售" in nm:
+                continue
+            rec = {**meta}
+            try:
+                inds = nbs.indicators(cid)
+                rec["indicators"] = [{"id": x["_id"], "ek": x.get("ek"), "name": (x.get("i_showname") or "").strip(),
+                                      "unit": x.get("du_name"), "decimals": x.get("num_accuracy_value")} for x in inds]
+                try:
+                    en = js(fetch("en_ind_" + cid, BASE_EN + "/new/queryIndicatorsByCid?" +
+                                  urllib.parse.urlencode({"cid": cid, "dt": "", "name": ""}), save=False))
+                    en_l = ((en or {}).get("data") or {}).get("list") or []
+                    en_map = {x["_id"]: (x.get("i_showname") or "").strip() for x in en_l}
+                    for x in rec["indicators"]:
+                        x["name_en"] = en_map.get(x["id"])
+                except Exception:  # noqa: BLE001
+                    pass
+                if scope == "national":
+                    rows, data = nbs.table(cid, [x["_id"] for x in inds])
+                else:
+                    areas = nbs.area_catalogs(cid)
+                    rec["area_catalogs"] = [(a.get("_id"), a.get("name") or a.get("_name")) for a in areas]
+                    rows, data = [], []
+                    for a in areas:
+                        if (a.get("name") or a.get("_name")) == "全部地区" and not a.get("children"):
+                            try:
+                                rows, data = nbs.table(cid, [x["_id"] for x in inds], root=nbs.ROOT_PROVINCE,
+                                                       da_catalog=a["_id"])
+                            except Exception as e:  # noqa: BLE001
+                                rec.setdefault("errors", []).append(repr(e)[:200])
+                            if rows:
+                                rec["area_catalog_used"] = a["_id"]
+                                break
+                with gzip.open(raw_dir / f"{scope}_{cid}.json.gz", "wt", encoding="utf-8") as f:
+                    json.dump(data, f, ensure_ascii=False)
+                by = {}
+                for r in rows:
+                    by.setdefault((r["name"], r["area_name"]), []).append(r["period"])
+                rec["series"] = []
+                for (name, area), ps in sorted(by.items()):
+                    ps = sorted(set(ps))
+                    y0, m0 = int(ps[0][:4]), int(ps[0][5:])
+                    y1, m1 = int(ps[-1][:4]), int(ps[-1][5:])
+                    span = (y1 - y0) * 12 + (m1 - m0) + 1
+                    rec["series"].append({"name": name, "area": area, "first": ps[0], "last": ps[-1], "n": len(ps),
+                                          "missing": span - len(ps)})
+            except Exception as e:  # noqa: BLE001
+                rec["error"] = repr(e)[:300]
+            cov[scope][cid] = rec
+            print(scope, nm, len(rec.get("series") or []), rec.get("error", ""), flush=True)
+            time.sleep(0.3)
+        (OUT / "coverage.json").write_text(json.dumps(cov, ensure_ascii=False, indent=1))
+    (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
+
+
+BASE_EN = "https://data.stats.gov.cn/dg/website/publicrelease/en/web/external"
+
+
 def main():
+    if len(sys.argv) > 2 and sys.argv[2] == "stage8":
+        return stage8()
     if len(sys.argv) > 2 and sys.argv[2] == "stage7":
         return stage7()
     if len(sys.argv) > 2 and sys.argv[2] == "stage6":
