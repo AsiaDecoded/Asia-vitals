@@ -404,12 +404,16 @@ dash.calc('cpi_heat', {
       const a3 = (lv[i][1] + lv[i - 1][1] + lv[i - 2][1]) / 3, b3 = (lv[i - 3][1] + lv[i - 4][1] + lv[i - 5][1]) / 3;
       all.push({ date: lv[i][0], [k]: (Math.pow(a3 / b3, 4) - 1) * 100 });
     }
+    const yy = new Map(D.data.filter((r) => r.area === 'national' && r.series === 'all' && r.yoy != null).map((r) => [r.date, Number(r.yoy)]));
+    all.forEach((r) => { r.yoy = yy.has(r.date) ? yy.get(r.date) : null; });
     const rows = J.slice(all, 'cpi-momentum');
     if (!rows.length) { box.replaceChildren(); return; }
+    const name = document.querySelector(`#cpi-sa-seg [data-s="${k}"]`).textContent;
+    legend('cpi-sa-legend', [{ name: name + ', 3m/3m annualised, SA', color: J.PAL[0], bar: true }, { name: 'CPI, y/y', color: J.PAL[1] }]);
     const W = box.clientWidth, H = 280;
     box.replaceChildren();
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
-    const vals = rows.map((r) => r[k]);
+    const vals = rows.map((r) => r[k]).concat(rows.map((r) => r.yoy).filter((v) => v != null));
     const y = d3.scaleLinear([Math.min(0, d3.min(vals)), Math.max(0, d3.max(vals))], [H - 24, 10]).nice();
     const ticks = y.ticks(5);
     const fmt = d3.format('.1f');
@@ -426,13 +430,14 @@ dash.calc('cpi_heat', {
       .attr('x', (r) => x(r.date)).attr('width', x.bandwidth())
       .attr('y', (r) => y(Math.max(0, r[k]))).attr('height', (r) => Math.abs(y(r[k]) - y(0)))
       .attr('fill', J.PAL[0]);
+    svg.append('path').datum(rows.filter((r) => r.yoy != null)).attr('fill', 'none').attr('stroke', J.PAL[1]).attr('stroke-width', 2)
+      .attr('d', d3.line().x((r) => x(r.date) + x.bandwidth() / 2).y((r) => y(r.yoy)));
     const card = document.getElementById('cpi-momentum'), tip = J.tip(card);
-    const name = document.querySelector(`#cpi-sa-seg [data-s="${k}"]`).textContent;
     svg.append('rect').attr('x', ml).attr('width', W - ml).attr('height', H).attr('fill', 'transparent')
       .on('mousemove', (ev) => {
         const i = Math.max(0, Math.min(rows.length - 1, Math.floor((d3.pointer(ev)[0] - ml) / x.step())));
         const cr = card.getBoundingClientRect();
-        J.showTip(card, tip, mLabel(rows[i].date), [[null, name + ', 3m/3m ann. SA', pct(rows[i][k])]], ev.clientX - cr.left, ev.clientY - cr.top);
+        J.showTip(card, tip, mLabel(rows[i].date), [[J.PAL[0], name + ', 3m/3m ann. SA', pct(rows[i][k])], [J.PAL[1], 'CPI, y/y', pct(rows[i].yoy)]], ev.clientX - cr.left, ev.clientY - cr.top);
       })
       .on('mouseleave', () => { tip.style.display = 'none'; });
   }
