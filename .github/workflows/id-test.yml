@@ -1,0 +1,37 @@
+name: Indonesia sources test (dev-id)
+
+# Runs the Indonesia sources live on the dev-id branch and commits their output there.
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-id]
+    paths:
+      - pipeline/sources/id_*/**
+      - pipeline/core/seki.py
+      - .github/workflows/id-test.yml
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Excel reader
+        run: pip install xlrd
+      - name: Run the Indonesia sources
+        run: python -I pipeline/run.py id_cpi_seki | tee /tmp/report.txt
+      - name: Commit output to dev-id
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mkdir -p data/id && cp /tmp/report.txt data/id/test_report.txt
+          git add data/id raw/id
+          git commit -m "ID test run" || exit 0
+          git checkout -- . && git pull --rebase origin dev-id && git push origin HEAD:dev-id
