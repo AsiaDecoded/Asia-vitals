@@ -192,17 +192,20 @@ def update(**opts):
     sids = sorted({s for s, _ in data})
     _write_csv(OUT / "tw_ppi_series.csv", ["series", "label", "label_zh", "group"],
                [{"series": s, **meta.get(s, {"label": s, "label_zh": "", "group": "seasonally_adjusted"})} for s in sids])
-    dash = [r for r in rows if r["series"] in {"ppi_all", "ppi_agriculture", "ppi_mining", "ppi_manufacturing",
+    DASH = {"ppi_all", "ppi_agriculture", "ppi_mining", "ppi_manufacturing",
                                                "ppi_utilities", "dsp_all", "ipi_usd_all", "ipi_ntd_all", "epi_usd_all",
                                                "epi_ntd_all", "ppi_electronic_parts", "ppi_petroleum", "ppi_chemicals",
-                                               "ppi_computers", "ppi_basic_metals"}]
-    _write_csv(OUT / "tw_ppi_dash.csv", ["date", "series", "measure", "value"], dash)
+                                               "ppi_computers", "ppi_basic_metals"}
+    DASH |= {s for s in meta if s.startswith("ppi_") and not s.startswith("ppi_f_")}  # PPI sections and divisions
+    DASH |= {"ipi_usd_hs16", "ipi_usd_hs05", "ipi_usd_crude_oil", "epi_usd_hs16", "epi_usd_hs8542", "ipi_usd_hs8542"}
+    _write_csv(OUT / "tw_ppi_dash.csv", ["date", "series", "measure", "value"],
+               [r for r in rows if r["series"] in DASH or (r["series"].endswith("_all") and r["measure"].startswith("sa_"))])
     code = f"P{latest}"
     label = f"{LONGMONTHS[int(latest[5:7]) - 1]} {latest[:4]}"
 
-    def long_rows():  # named series (HS chapters and subgroups without an English name are in tw_ppi.csv only)
+    def long_rows():  # the dashboard's series (every series is in tw_ppi.csv)
         for r in rows:
-            if "_f_" in r["series"]:
+            if r["series"] not in DASH:
                 continue
             yield {"country": "TW", "indicator": "ppi", "series": f"{r['series']}_{r['measure']}",
                    "label": meta.get(r["series"], {}).get("label", r["series"]),
