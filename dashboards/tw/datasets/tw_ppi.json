@@ -1,0 +1,14 @@
+{
+ "title": "Taiwan PPI and trade prices",
+ "description": "PPI (2021 = 100, from January 2021) by section and industry, domestic sales prices, and import and export price indices in NTD and USD: index, m/m and y/y as published by DGBAS (data/tw/ppi/tw_ppi_dash.csv).",
+ "source": {
+  "kind": "file",
+  "url": "/_blob/5f4833ccf1e02e3985cb504b9b3e0104",
+  "name": "tw_ppi_dash.csv"
+ },
+ "updated": {
+  "at": "2026-10-29T07:05:00Z",
+  "by": "Claude"
+ },
+ "schedule": "Replaced after each DGBAS release by the refresh scheduled task that reads AsiaDecoded/asia-vitals (once dev-tw is merged)."
+}

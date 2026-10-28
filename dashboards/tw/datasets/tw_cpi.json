@@ -1,0 +1,14 @@
+{
+ "title": "Taiwan CPI, DGBAS",
+ "description": "CPI for Taiwan: all items, DGBAS core, goods, services, energy, the seven groups and main subgroups, income groups and elderly households; index (2021 = 100), m/m, y/y and DGBAS seasonally adjusted index and m/m, as published by DGBAS, from 1960. DGBAS Macro Database via the AsiaDecoded/asia-vitals pipeline (data/tw/cpi/tw_cpi_dash.csv).",
+ "source": {
+  "kind": "file",
+  "url": "/_blob/eb16595b49696df3e895a46948ed0589",
+  "name": "tw_cpi_dash.csv"
+ },
+ "updated": {
+  "at": "2026-10-29T07:05:00Z",
+  "by": "Claude"
+ },
+ "schedule": "Replaced after each DGBAS release by the refresh scheduled task that reads AsiaDecoded/asia-vitals (once dev-tw is merged)."
+}

@@ -1,0 +1,14 @@
+{
+ "title": "Taiwan CPI weights, contributions",
+ "description": "DGBAS release table 1 for each month from January 2023, as first published: weights (% of CPI), index, m/m, y/y, YTD and DGBAS's contributions to CPI (percentage points) by group, goods and services (data/tw/cpi/tw_cpi_contrib.csv).",
+ "source": {
+  "kind": "file",
+  "url": "/_blob/00e3b884b29c07d98c9a8a8ba57ea8bd",
+  "name": "tw_cpi_contrib.csv"
+ },
+ "updated": {
+  "at": "2026-10-29T07:05:00Z",
+  "by": "Claude"
+ },
+ "schedule": "Replaced after each DGBAS release by the refresh scheduled task that reads AsiaDecoded/asia-vitals (once dev-tw is merged)."
+}
