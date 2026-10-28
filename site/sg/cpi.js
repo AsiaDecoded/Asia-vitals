@@ -372,11 +372,11 @@ dash.calc('cpi_heat', {
   function svcChart() {
     if (!document.getElementById('cpi-svc-chart')) return;
     lineChart('cpi-svc-chart', 'cpi-svc', 'cpi-svc-legend', 'national', [
-      { key: 'svc_health', name: 'Health (9.1%)', color: C[0] },
-      { key: 'svc_land', name: 'Land transport (2.6%)', color: C[4] },
-      { key: 'svc_air', name: 'Airfares (1.3%)', color: C[5] },
-      { key: 'svc_rent', name: 'Actual rentals (2.9%)', color: C[2] },
-      { key: 'svc_other', name: 'Other services (44.8%)', color: C[3] },
+      { key: 'svc_health', name: 'Health', color: C[0] },
+      { key: 'svc_land', name: 'Land transport', color: C[4] },
+      { key: 'svc_air', name: 'Airfares', color: C[5] },
+      { key: 'svc_rent', name: 'Actual rentals', color: C[2] },
+      { key: 'svc_other', name: 'Other services', color: C[3] },
     ], 280);
   }
 
@@ -504,7 +504,7 @@ dash.calc('cpi_heat', {
       const i = t > 0.5 ? 1 : 0; const [t0, c0] = STOPS[i], [t1, c1] = STOPS[i + 1], f = (t - t0) / (t1 - t0);
       return `rgb(${c0.map((c, k) => Math.round(c + (c1[k] - c) * f)).join(',')})`;
     };
-    const NAMES = { all: 'CPI', less_imputed: 'CPI less imputed rentals for housing', less_accom: 'CPI less accommodation', core: 'MAS core*', fuel: 'Energy', ex_food_energy: 'CPI less food and energy**', other_fuels: 'Other fuel and lubricants', food_ex_fbss: 'Food excl. FBSS', fbss: 'FBSS' };
+    const NAMES = { all: 'CPI', less_imputed: 'CPI less imputed rentals for housing', less_accom: 'CPI less accommodation', core: 'MAS core', fuel: 'Energy', ex_food_energy: 'CPI less food and energy', other_fuels: 'Other fuel and lubricants', food_ex_fbss: 'Food excl. FBSS', fbss: 'FBSS' };
     tbl.replaceChildren();
     const head = tbl.createTHead().insertRow();
     ['', 'Weight'].concat(dates.map((d) => `${MON[+d.slice(5, 7) - 1]} ${d.slice(2, 4)}`)).forEach((t) => {
