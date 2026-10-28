@@ -365,7 +365,7 @@ dash.calc('cpi_heat', {
     lineChart('cpi-gapc-chart', 'cpi-gapc', 'cpi-gapc-legend', 'national', [
       { key: 'core_only', name: 'In MAS core only (food excl. FBSS + electricity and gas, 8.5%)', color: C[5], width: 3 },
       { key: 'exfe_only', name: 'In CPI less food and energy only (imputed rentals + actual rents and maintenance + private transport excl. fuel, 33.8%)', color: C[4], width: 3 },
-      { key: 'shared', name: 'In both (services + retail and other goods + FBSS, 55.9%)', color: C[0], width: 2, dash: true },
+      { key: 'shared', name: 'In both (55.9%)', color: C[0], width: 2, dash: true },
     ], 300);
   }
 
