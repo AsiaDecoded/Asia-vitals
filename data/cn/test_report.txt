@@ -1,14 +1,29 @@
 == cn_cpi_nbs
-   CHECKS FAILED (2):
-   - January YTD differs from y/y (2): ['urban all 1988-01: YTD 107.6 vs y/y 111.2', 'rural all 1988-01: YTD 108.1 vs y/y 108.0']
-   - provincial CPI y/y for 2026-09: 1 provinces, expected 31
+Traceback (most recent call last):
+  File "<stdin>", line 10, in <module>
+  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/sources/cn_cpi_nbs/__init__.py", line 283, in update
+    inds = nbs.indicators(cid)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/core/nbs.py", line 74, in indicators
+    return ((_call("new/queryIndicatorsByCid", {"cid": cid, "dt": "", "name": ""}) or {}).get("list")) or []
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/core/nbs.py", line 66, in _call
+    raise NBSError(f"NBS request failed: {url}: {err!r}")
+core.nbs.NBSError: NBS request failed: https://data.stats.gov.cn/dg/website/publicrelease/web/external/new/queryIndicatorsByCid?cid=f6b9c87376ad4b24b170766f419dc076&dt=&name=: <HTTPError 302: 'The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Temporarily'>
+
 == cn_ppi_nbs
-   CHECKS FAILED (8):
-   - national ind_other_mining yoy 2008-12 = 0.0 out of range
-   - national ind_other_mining yoy 2008-11 = 0.0 out of range
-   - national ind_other_mining yoy 2008-10 = 0.0 out of range
-   - national ind_other_mining yoy 2008-09 = 0.0 out of range
-   - national ind_other_mining yoy 2008-08 = 0.0 out of range
-   - national ind_other_mining yoy 2007-12 = 0.0 out of range
-   - national ind_other_mining yoy 2007-01 = 0.0 out of range
-   - YTD inconsistent with y/y (131 of 3780): ['pur_fuel_power 2026-09: YTD 104.1 vs y/y average 104.40', 'pur_fuel_power 2026-08: YTD 103.0 vs y/y average 103.25', 'pur_fuel_power 2026-07: YTD 102.1 vs y/y average 102.31', 'pur_fuel_power 2026-06: YTD 100.9 vs y/y average 101.15', 'pur_nonferrous 2025-08: YTD 106.8 vs y/y average 106.97']
+Traceback (most recent call last):
+  File "<stdin>", line 10, in <module>
+  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/sources/cn_ppi_nbs/__init__.py", line 205, in update
+    cats = nbs.catalogs("1", nbs.ROOT_MONTHLY, _keep)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/core/nbs.py", line 119, in catalogs
+    for n in tree(code, pid):
+             ^^^^^^^^^^^^^^^
+  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/core/nbs.py", line 70, in tree
+    return _call("new/queryIndexTreeAsync", {"pid": pid, "code": code}) or []
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/core/nbs.py", line 66, in _call
+    raise NBSError(f"NBS request failed: {url}: {err!r}")
+core.nbs.NBSError: NBS request failed: https://data.stats.gov.cn/dg/website/publicrelease/web/external/new/queryIndexTreeAsync?pid=fc982599aa684be7969d7b90b1bd0e84&code=1: <HTTPError 302: 'The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Temporarily'>
+
