@@ -367,14 +367,14 @@ dash.calc('cpi_heat', {
       .on('mouseleave', () => { hl.attr('display', 'none'); tip.style.display = 'none'; });
   }
 
-  // Services (as in MAS core) by type: health, transport, education and the rest; all y/y.
+  // Services, broadly (MAS services + accommodation + FBSS), by type; all y/y.
   function svcChart() {
     if (!document.getElementById('cpi-svc-chart')) return;
     lineChart('cpi-svc-chart', 'cpi-svc', 'cpi-svc-legend', 'national', [
-      { key: 'svc_health', name: 'Health (9.1%)', color: C[0] },
-      { key: 'svc_transport', name: 'Transport (4.0%)', color: C[2] },
-      { key: 'svc_education', name: 'Education (5.8%)', color: C[5] },
-      { key: 'svc_other', name: 'Other services (12.8%)', color: C[3] },
+      { key: 'svc_acco', name: 'Accommodation (26.6%)', color: C[0] },
+      { key: 'svc_fbss', name: 'FBSS (13.9%)', color: C[5] },
+      { key: 'svc_health', name: 'Health (9.1%)', color: C[2] },
+      { key: 'svc_other', name: 'Other services (22.6%)', color: C[3] },
     ], 280);
   }
 

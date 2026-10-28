@@ -100,7 +100,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 23  # bump when the outputs change, so the next run rebuilds them
+VERSION = 24  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -387,25 +387,26 @@ def _ex_food_energy(idx, names, errors):
 #   shared by both: all items - accommodation - private transport - food excl. FBSS - electricity - gas
 #   in CPI less food and energy only: accommodation + private transport - petrol - other fuel and lubricants
 #   (= imputed rentals, actual rents and maintenance, private transport excl. fuel)
-# MAS core services split into health services, transport services, education services and the rest, as weighted
-# indices on the chained method (weights per 10,000 of CPI: services from CORE_WEIGHTS, MAS, 2014 estimated; groups
-# from IP-E61 for 2019 and 2024 and IP-E48, old classification, for 2014). "S" is MAS's services index.
+# Services, broadly: MAS core's services plus accommodation and FBSS (excluding only the small private transport
+# services, which have no published weights before 2024). Split into accommodation, FBSS, health services and other
+# services, as weighted indices on the chained method (weights per 10,000 of CPI: services from CORE_WEIGHTS, MAS, 2014
+# estimated; accommodation as in HEADLINE_WEIGHTS; FBSS as in XF_PARTS; health groups from IP-E61 for 2019 and 2024 and
+# IP-E48, old classification, for 2014). "S" is MAS's services index.
 _SVC = {
-    "2014": {"health": {"1.05.2": 212, "1.05.3": 211, "1.05.5": 52},
-             "transport": {"1.06.2": 304, "1.06.3": 126},
-             "education": {"1.09": 615, "1.09.3": -9}, "services": 2939},
-    "2019": {"health": {"1.05.2": 274, "1.05.3": 151, "1.05.4": 28, "1.05.5": 82},
-             "transport": {"1.06.2": 310, "1.06.3": 174, "1.06.4": 4},
-             "education": {"1.09": 670, "1.09.3": -8}, "services": 3173},
-    "2024": {"health": {"1.05.2": 428, "1.05.3": 238, "1.05.4": 23, "1.05.5": 225},
-             "transport": {"1.06.2": 262, "1.06.3": 131, "1.06.4": 8},
-             "education": {"1.09": 579, "1.09.3": -4}, "services": 3173},
+    "2014": {"health": {"1.05.2": 212, "1.05.3": 211, "1.05.5": 52}, "services": 2939, "acco": 2287, "fbss": 1393},
+    "2019": {"health": {"1.05.2": 274, "1.05.3": 151, "1.05.4": 28, "1.05.5": 82}, "services": 3173, "acco": 2198, "fbss": 1428},
+    "2024": {"health": {"1.05.2": 428, "1.05.3": 238, "1.05.4": 23, "1.05.5": 225}, "services": 3173, "acco": 2656, "fbss": 1391},
 }
-SVC_PARTS = {f"svc_{k}": {b: v[k] for b, v in _SVC.items()} for k in ("health", "transport", "education")}
-SVC_PARTS["svc_other"] = {b: {"S": v["services"], **{c: -w for k in ("health", "transport", "education") for c, w in v[k].items()}}
-                          for b, v in _SVC.items()}
-SVC_LABELS = {"svc_health": "Health services (calculated)", "svc_transport": "Transport services (calculated)",
-              "svc_education": "Education services (calculated)", "svc_other": "Other services (calculated)"}
+SVC_PARTS = {
+    "svc_acco": {b: {"1.03.1": v["acco"]} for b, v in _SVC.items()},
+    "svc_fbss": {b: {"1.11": v["fbss"]} for b, v in _SVC.items()},
+    "svc_health": {b: v["health"] for b, v in _SVC.items()},
+    "svc_other": {b: {"S": v["services"], **{c: -w for c, w in v["health"].items()}} for b, v in _SVC.items()},
+    "svc_all": {b: {"S": v["services"], "1.03.1": v["acco"], "1.11": v["fbss"]} for b, v in _SVC.items()},
+}
+SVC_LABELS = {"svc_acco": "Services: accommodation (calculated)", "svc_fbss": "Services: FBSS (calculated)",
+              "svc_health": "Services: health (calculated)", "svc_other": "Services: other (calculated)",
+              "svc_all": "Services, broad: MAS services + accommodation + FBSS (calculated)"}
 
 GAP_PARTS = {
     "core_only": {"2014": {"1.01": 774, "1.03.2.3": 215, "1.03.2.4": 34},
