@@ -56,52 +56,65 @@ dash.calc('cpi_table', {
   },
 });
 
+// MAS core vs CPI less food and energy, month by month (2024 basket, published weights; from Jan 2025).
+// Each part's effect on the difference = its share of its measure a year earlier x (its y/y - shared basket's y/y),
+// sign reversed for parts only in CPI less food and energy, so the effects add up to the difference.
+function gapMonths(cpi_series, wts) {
+  const W = {}; wts.forEach((r) => { W[r.series] = Number(r.weight); });
+  const I = {}; cpi_series.forEach((r) => { if (r.area === 'national' && r.index != null) (I[r.series] = I[r.series] || {})[r.date] = r.index; });
+  const need = ['core', 'food_ex_fbss', 'electricity', 'gas', 'imputed_rentals', 'accommodation', 'private_transport', 'petrol', 'other_fuels'];
+  const back = (d) => `${+d.slice(0, 4) - 1}${d.slice(4)}`;
+  const blocks = (t) => {
+    if (need.some((k) => !I[k] || I[k][t] == null)) return null;
+    const v = (k) => W[k] * I[k][t];
+    const core = v('core'), groc = v('food_ex_fbss'), eg = v('electricity') + v('gas');
+    const imp = v('imputed_rentals'), rm = v('accommodation') - imp, ptx = v('private_transport') - v('petrol') - v('other_fuels');
+    const rest = core - groc - eg;
+    return { core, rest, groc, eg, imp, rm, ptx, ex: rest + imp + rm + ptx };
+  };
+  const wt = { rest: W.core - W.food_ex_fbss - W.electricity - W.gas, groc: W.food_ex_fbss, eg: W.electricity + W.gas,
+    imp: W.imputed_rentals, rm: W.accommodation - W.imputed_rentals, ptx: W.private_transport - W.petrol - W.other_fuels };
+  const months = Object.keys(I.core || {}).filter((d) => d >= '2025-01-01').sort().map((t) => {
+    const b = blocks(t), a = blocks(back(t));
+    if (!b || !a) return null;
+    const r = {}; Object.keys(b).forEach((k) => { r[k] = b[k] / a[k] - 1; });
+    const eff = {};
+    GAP_A.forEach((k) => { eff[k] = (a[k] / a.core) * (r[k] - r.rest) * 100; });
+    GAP_B.forEach((k) => { eff[k] = -(a[k] / a.ex) * (r[k] - r.rest) * 100; });
+    const net = GAP_A.concat(GAP_B).reduce((x, k) => x + eff[k], 0);
+    return { date: t, r, eff, net, core: r.core * 100, ex: r.ex * 100 };
+  }).filter(Boolean);
+  return { months, wt };
+}
+const GAP_A = ['groc', 'eg'], GAP_B = ['imp', 'rm', 'ptx'];
+const GAP_NAME = { groc: 'Food excl. FBSS', eg: 'Electricity and gas', imp: 'Imputed rentals', rm: 'Actual rents and maintenance', ptx: 'Private transport excl. fuel' };
+
 dash.calc('cpi_gap', {
   title: 'MAS core vs CPI less food and energy',
-  description: 'What separates MAS core from CPI less food and energy. Both share most of the basket; MAS core also keeps groceries and electricity and gas, CPI less food and energy also keeps imputed rentals, actual rents and maintenance, and private transport excluding fuel. Each part\'s effect (pp) is its share of its measure a year earlier times its y/y minus the shared basket\'s y/y, with the sign flipped for parts only in CPI less food and energy, so the effects add up to MAS core minus CPI less food and energy. 2024 basket, published weights; months from Jan 2025.',
+  description: 'What separates MAS core from CPI less food and energy, latest month and 3- and 6-month averages. Both share most of the basket; MAS core also keeps groceries and electricity and gas, CPI less food and energy also keeps imputed rentals, actual rents and maintenance, and private transport excluding fuel. Effects (pp) add up to MAS core minus CPI less food and energy. 2024 basket, published weights; months from Jan 2025.',
   inputs: ['cpi_series', 'sg_cpi_series_weights'],
   fn: (cpi_series, wts) => {
-    const W = {}; wts.forEach((r) => { W[r.series] = Number(r.weight); });
-    const I = {}; cpi_series.forEach((r) => { if (r.area === 'national' && r.index != null) (I[r.series] = I[r.series] || {})[r.date] = r.index; });
-    const need = ['core', 'food_ex_fbss', 'electricity', 'gas', 'imputed_rentals', 'accommodation', 'private_transport', 'petrol', 'other_fuels'];
-    const back = (d) => `${+d.slice(0, 4) - 1}${d.slice(4)}`;
-    const blocks = (t) => {
-      if (need.some((k) => !I[k] || I[k][t] == null)) return null;
-      const v = (k) => W[k] * I[k][t];
-      const core = v('core'), groc = v('food_ex_fbss'), eg = v('electricity') + v('gas');
-      const imp = v('imputed_rentals'), rm = v('accommodation') - imp, ptx = v('private_transport') - v('petrol') - v('other_fuels');
-      const rest = core - groc - eg;
-      return { core, rest, groc, eg, imp, rm, ptx, ex: rest + imp + rm + ptx };
-    };
-    const dates = Object.keys(I.core || {}).filter((d) => d >= '2025-01-01').sort();
-    const A = ['groc', 'eg'], B = ['imp', 'rm', 'ptx'];
-    const months = dates.map((t) => {
-      const b = blocks(t), a = blocks(back(t));
-      if (!b || !a) return null;
-      const r = {}; Object.keys(b).forEach((k) => { r[k] = b[k] / a[k] - 1; });
-      const eff = {};
-      A.forEach((k) => { eff[k] = (a[k] / a.core) * (r[k] - r.rest) * 100; });
-      B.forEach((k) => { eff[k] = -(a[k] / a.ex) * (r[k] - r.rest) * 100; });
-      return { date: t, r, eff };
-    }).filter(Boolean);
+    const { months, wt } = gapMonths(cpi_series, wts);
     if (!months.length) return [];
     const last = months[months.length - 1];
-    const avg = (k, n) => { const s = months.slice(-n); return s.length === n ? s.reduce((x, m) => x + m.eff[k], 0) / n : null; };
-    const wt = { rest: W.core - W.food_ex_fbss - W.electricity - W.gas, groc: W.food_ex_fbss, eg: W.electricity + W.gas,
-      imp: W.imputed_rentals, rm: W.accommodation - W.imputed_rentals, ptx: W.private_transport - W.petrol - W.other_fuels };
-    const NAME = { groc: 'Food excl. FBSS', eg: 'Electricity and gas', imp: 'Imputed rentals', rm: 'Actual rents and maintenance', ptx: 'Private transport excl. fuel' };
-    const row = (k, section) => ({ key: k, section, name: NAME[k], date: last.date, weight: wt[k] / 100, yoy: last.r[k] * 100,
-      eff: last.eff[k], eff3: avg(k, 3), eff6: avg(k, 6) });
-    const sum = (f) => [...A, ...B].reduce((x, k) => x + f(k), 0);
-    const tot = (n) => { const s = months.slice(-n); return s.length === n ? s.reduce((x, m) => x + A.concat(B).reduce((y, k) => y + m.eff[k], 0), 0) / n : null; };
+    const avg = (f, n) => { const s = months.slice(-n); return s.length === n ? s.reduce((x, m) => x + f(m), 0) / n : null; };
+    const row = (k, section) => ({ key: k, section, name: GAP_NAME[k], date: last.date, weight: wt[k] / 100, yoy: last.r[k] * 100,
+      eff: last.eff[k], eff3: avg((m) => m.eff[k], 3), eff6: avg((m) => m.eff[k], 6) });
     return [
-      ...A.map((k) => row(k, 'core')),
-      ...B.map((k) => row(k, 'ex')),
+      ...GAP_A.map((k) => row(k, 'core')),
+      ...GAP_B.map((k) => row(k, 'ex')),
       { key: 'rest', section: 'shared', name: 'Shared basket', date: last.date, weight: wt.rest / 100, yoy: last.r.rest * 100, eff: null, eff3: null, eff6: null },
       { key: 'net', section: 'net', name: 'Difference', date: last.date, weight: null, yoy: null,
-        eff: sum((k) => last.eff[k]), eff3: tot(3), eff6: tot(6), core_yoy: last.r.core * 100, ex_yoy: last.r.ex * 100 },
+        eff: last.net, eff3: avg((m) => m.net, 3), eff6: avg((m) => m.net, 6), core_yoy: last.core, ex_yoy: last.ex },
     ];
   },
+});
+
+dash.calc('cpi_gap_series', {
+  title: 'MAS core vs CPI less food and energy, monthly',
+  description: 'Monthly effects (pp) of each part on MAS core minus CPI less food and energy, the difference, and both measures’ y/y, from Jan 2025.',
+  inputs: ['cpi_series', 'sg_cpi_series_weights'],
+  fn: (cpi_series, wts) => gapMonths(cpi_series, wts).months.map((m) => ({ date: m.date, ...m.eff, net: m.net, core: m.core, ex: m.ex })),
 });
 
 dash.calc('cpi_movers', {
@@ -399,6 +412,76 @@ dash.calc('cpi_heat', {
         const cr = card.getBoundingClientRect();
         J.showTip(card, tip, mLabel(r.date), [[lineColor, opt.line, pct(r.all)]].concat(PARTS.map((p) => [p.color, p.name, sg(r[p.key])])),
           ev.clientX - cr.left, ev.clientY - cr.top);
+      })
+      .on('mouseleave', () => { hl.attr('display', 'none'); tip.style.display = 'none'; });
+  }
+
+  // MAS core vs CPI less food and energy: effects as stacked bars, the difference as a line (left axis, pp);
+  // both measures' y/y as lines on the right axis.
+  function gapChart() {
+    const box = document.getElementById('cpi-gapc-chart');
+    if (!box) return;
+    const D = dash.data('cpi_gap_series');
+    if (failed(D.status)) { J.fail(box); return; }
+    if (D.status !== 'ok') { box.replaceChildren(); return; }
+    const rows = J.slice(D.data.slice(), 'cpi-gapc');
+    if (!rows.length) { box.replaceChildren(); return; }
+    const PARTS = [
+      { key: 'groc', name: 'Food excl. FBSS', color: J.PAL[5] },
+      { key: 'eg', name: 'Electricity and gas', color: J.PAL[0] },
+      { key: 'imp', name: 'Imputed rentals', color: J.PAL[4] },
+      { key: 'rm', name: 'Actual rents and maintenance', color: J.PAL[6] },
+      { key: 'ptx', name: 'Private transport excl. fuel', color: J.PAL[7] },
+    ];
+    const NET = { name: 'Difference', color: J.PAL[1] }, CORE = { name: 'MAS core, y/y (RHS)', color: J.PAL[3] }, EX = { name: 'CPI less food and energy, y/y (RHS)', color: J.PAL[2] };
+    const W = box.clientWidth, H = 300;
+    box.replaceChildren();
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const keys = PARTS.map((p) => p.key);
+    const stack = d3.stack().keys(keys).value((d, k) => d[k] || 0).offset(d3.stackOffsetDiverging)(rows);
+    const lo = Math.min(0, d3.min(stack, (s) => d3.min(s, (d) => d[0])), d3.min(rows, (r) => r.net));
+    const hi = Math.max(0, d3.max(stack, (s) => d3.max(s, (d) => d[1])), d3.max(rows, (r) => r.net));
+    const y = d3.scaleLinear([lo, hi], [H - 24, 10]).nice();
+    const ticks = y.ticks(5);
+    const fmt = d3.format('.1f');
+    const rlo = Math.min(0, d3.min(rows, (r) => Math.min(r.core, r.ex))), rhi = d3.max(rows, (r) => Math.max(r.core, r.ex));
+    const y2 = d3.scaleLinear([rlo, rhi], [H - 24, 10]).nice();
+    const ticks2 = y2.ticks(5);
+    const ml = J.textWidth(svg, ticks.map(fmt)) + 10, mr = J.textWidth(svg, ticks2.map(fmt)) + 10;
+    const x = d3.scaleBand(rows.map((r) => r.date), [ml, W - mr]).padding(0.2);
+    const cx = (d) => x(d) + x.bandwidth() / 2;
+    svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', ml).attr('x2', W - mr).attr('y1', y).attr('y2', y)
+      .attr('stroke', (v) => (v === 0 ? 'var(--ad-axis)' : 'var(--ad-grid)'));
+    J.axisStyle(svg.append('g').attr('transform', `translate(${ml - 4},0)`).call(d3.axisLeft(y).tickValues(ticks).tickSize(0).tickFormat(fmt)));
+    J.axisStyle(svg.append('g').attr('transform', `translate(${W - mr + 4},0)`).call(d3.axisRight(y2).tickValues(ticks2).tickSize(0).tickFormat(fmt)));
+    const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const every = rows.length > 24 ? 6 : 3;
+    const xt = rows.map((r) => r.date).filter((d) => (+d.slice(5, 7) - 1) % every === 0);
+    J.axisStyle(svg.append('g').attr('transform', `translate(0,${H - 20})`).call(d3.axisBottom(x).tickValues(xt).tickSize(0)
+      .tickFormat((d) => `${MON[+d.slice(5, 7) - 1]} ${d.slice(2, 4)}`)));
+    svg.append('g').selectAll('g').data(stack).join('g').attr('fill', (s, i) => PARTS[i].color)
+      .selectAll('rect').data((s) => s).join('rect')
+      .attr('x', (d) => x(d.data.date)).attr('width', x.bandwidth())
+      .attr('y', (d) => y(Math.max(d[0], d[1]))).attr('height', (d) => Math.abs(y(d[0]) - y(d[1])));
+    const line = (sc, f, color, dash) => svg.append('path').attr('d', d3.line().x((r) => cx(r.date)).y((r) => sc(f(r)))(rows))
+      .attr('fill', 'none').attr('stroke', color).attr('stroke-width', 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round')
+      .attr('stroke-dasharray', dash || null);
+    line(y2, (r) => r.core, CORE.color, '6 4');
+    line(y2, (r) => r.ex, EX.color, '6 4');
+    line(y, (r) => r.net, NET.color);
+    legend('cpi-gapc-legend', [{ key: 'net', name: NET.name, color: NET.color }, { key: 'core', name: CORE.name, color: CORE.color, dash: true },
+      { key: 'ex', name: EX.name, color: EX.color, dash: true }].concat(PARTS.map((p) => ({ ...p, bar: true }))));
+    const card = document.getElementById('cpi-gapc'), tip = J.tip(card);
+    const hl = svg.append('rect').attr('fill', 'var(--color-fg)').attr('opacity', 0.06).attr('display', 'none');
+    const sg = (v) => (v == null ? '—' : (v > 0 ? '+' : '') + d3.format('.2f')(v) + 'pp');
+    svg.append('rect').attr('x', ml).attr('width', W - ml - mr).attr('height', H).attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const i = Math.max(0, Math.min(rows.length - 1, Math.floor((d3.pointer(ev)[0] - ml) / x.step())));
+        const r = rows[i];
+        hl.attr('display', null).attr('x', x(r.date) - x.step() * x.paddingInner() / 2).attr('width', x.step()).attr('y', 0).attr('height', H - 22);
+        const cr = card.getBoundingClientRect();
+        J.showTip(card, tip, mLabel(r.date), [[CORE.color, 'MAS core, y/y', pct(r.core)], [EX.color, 'CPI less food and energy, y/y', pct(r.ex)],
+          [NET.color, NET.name, sg(r.net)]].concat(PARTS.map((p) => [p.color, p.name, sg(r[p.key])])), ev.clientX - cr.left, ev.clientY - cr.top);
       })
       .on('mouseleave', () => { hl.attr('display', 'none'); tip.style.display = 'none'; });
   }
@@ -732,6 +815,7 @@ dash.calc('cpi_heat', {
     ymChart();
     contribChart();
     contribChart({ id: 'core-contrib', pre: 'core_', line: 'MAS core, y/y', keys: ['services', 'retail_goods', 'food_ex_fbss', 'fbss', 'elec_gas'] });
+    gapChart();
   };
 
   dash.onData(() => { tiles(); takeaway(); heat(); table(); moversTable(); gapTable(); J.redrawCpi(); });
