@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Query NBS and fallbacks
-        run: python -I pipeline/tools/nbs_discover.py discovery/nbs3 stage3
+        run: python -I pipeline/tools/nbs_discover.py discovery/nbs4 stage4
       - name: Push results to the discovery branch
         if: always()
         run: |
@@ -33,7 +33,7 @@ jobs:
           mv discovery /tmp/discovery
           git fetch origin discovery
           git checkout -B discovery origin/discovery
-          mkdir -p discovery && rm -rf discovery/nbs3 && cp -r /tmp/discovery/nbs3 discovery/
-          git add discovery/nbs3
-          git commit -m "NBS discovery 3"
+          mkdir -p discovery && rm -rf discovery/nbs4 && cp -r /tmp/discovery/nbs4 discovery/
+          git add discovery/nbs4
+          git commit -m "NBS discovery 4"
           for i in 1 2 3; do git push origin discovery && break; git pull --rebase origin discovery; done

@@ -293,7 +293,35 @@ def stage3():
     (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
 
 
+def stage4():
+    """The portal's data-page chunks, the API calls they make, and a bare call to each."""
+    base = "https://data.stats.gov.cn/dg/website/"
+    hdr = {"Referer": base + "page.html", "Origin": "https://data.stats.gov.cn"}
+    fetch("p4_page", base + "page.html")
+    chunks = ["DataPage", "DataPage~ReportPage~SearchPage", "project_national_datapage", "project_national_datatree",
+              "DataPage~MapPage~ReportPage~project_national_datapage~project_national_home",
+              "MapPage~ReportPage~project_national_datapage~project_national_home", "project_national_home",
+              "ReportPage", "SearchPage", "project_national_page"]
+    paths = {}
+    for c in chunks:
+        r = fetch("p4_chunk_" + c.replace("~", "-")[:60], base + "static/js/project/" + urllib.parse.quote(c) + ".js",
+                  ext=".txt", headers=hdr, timeout=90)
+        t = text(r)
+        for m in re.findall(r'["\'`]((?:/[A-Za-z0-9_\-]+){2,9})["\'`?]', t):
+            if "external" in m or "/api/" in m or "data" in m.lower():
+                paths.setdefault(m, []).append(c)
+        time.sleep(0.3)
+    (OUT / "api_paths.json").write_text(json.dumps(paths, ensure_ascii=False, indent=1))
+    for i, m in enumerate(sorted(paths)):
+        if m.startswith("/publicrelease/") or m.startswith("/api/"):
+            fetch(f"p4_get_{i:03d}", "https://data.stats.gov.cn/dg/website" + m, headers=hdr, ext=".txt")
+            time.sleep(0.4)
+    (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
+
+
 def main():
+    if len(sys.argv) > 2 and sys.argv[2] == "stage4":
+        return stage4()
     if len(sys.argv) > 2 and sys.argv[2] == "stage2":
         return stage2()
     if len(sys.argv) > 2 and sys.argv[2] == "stage3":
