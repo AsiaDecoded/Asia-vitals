@@ -10,7 +10,7 @@
   "sg_ppi": "SingStat Advance Release Calendar pattern: around the 27th-30th",
   "kr_cpi": "Ministry of Data and Statistics 2026 release schedule (mods.go.kr); 2027 expected from pattern",
   "kr_ppi": "Bank of Korea: no calendar found; pattern: around the 18th-23rd, 06:00 KST",
-  "my_cpi": "DOSM: next date from OpenDOSM's catalogue (cpi_headline 'next update'); later dates expected from the pattern (around the 19th-23rd, 12:00 MYT)",
+  "my_cpi": "DOSM: next date from OpenDOSM's catalogue (cpi_headline 'next update'); later dates expected from the pattern (around the 19th-23rd, 12:00-12:30 MYT)",
   "my_ppi": "DOSM: next date from OpenDOSM's catalogue (ppi 'next update'); later dates expected from the pattern (around the 26th-30th, 12:00 MYT)"
  },
  "groups": {
@@ -64,7 +64,7 @@
    {"ref": "2026-12", "date": "2026-12-31", "status": "official", "note": "first release on the 2025 base: the source will stop with an ACTION error until updated"},
    {"ref": "2027-01", "date": "2027-02-02", "from": "2027-02-01", "to": "2027-02-05", "status": "expected"},
    {"ref": "2027-02", "date": "2027-03-03", "from": "2027-03-02", "to": "2027-03-06", "status": "expected"}]},
-  "my_cpi": {"label": "Malaysia CPI", "sources": ["my_cpi_dosm"], "time_sgt": "12:00", "dates": [
+  "my_cpi": {"label": "Malaysia CPI", "sources": ["my_cpi_dosm"], "time_sgt": "12:30", "dates": [
    {"ref": "2026-10", "date": "2026-11-19", "status": "official"},
    {"ref": "2026-11", "date": "2026-12-22", "from": "2026-12-18", "to": "2026-12-29", "status": "expected"},
    {"ref": "2026-12", "date": "2027-01-21", "from": "2027-01-19", "to": "2027-01-27", "status": "expected"},
