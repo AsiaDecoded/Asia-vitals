@@ -725,8 +725,8 @@ dash.calc('cpi_ctab', {
     const pc = () => { const b = document.createElement('b'); b.textContent = '%'; p.append(b); };
     const mb = (d) => t(mLabel(d));
     t('In '); mb(a.date); t(', CPI inflation was '); p.append(mk('all_yoy')); pc(); t(' y/y. MAS core inflation was ');
-    p.append(mk('core_yoy')); pc(); t(', with services at '); p.append(mk('services_yoy'));
-    pc(); t(' and retail and other goods at '); p.append(mk('retail_goods_yoy')); pc(); t('.');
+    p.append(mk('core_yoy')); pc(); t('. Goods inflation was '); p.append(mk('gs_goods_yoy'));
+    pc(); t(' and services inflation '); p.append(mk('gs_services_yoy')); pc(); t('.');
     const P = dash.data('ppi_latest');
     if (P.status === 'ok' && P.data.length && P.data[0].ppi_yoy != null) {
       const q = P.data[0];
