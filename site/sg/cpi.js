@@ -143,7 +143,7 @@ dash.calc('cpi_ctab', {
 
 (() => {
   const J = window.JG;
-  const S = { months: 120, sa: 'all_sa', movers: 3, svc: 'svc_all' };
+  const S = { months: 120, sa: 'all_sa', movers: 3, svc: 'svc_health' };
   const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   const mLabel = (d) => (d ? MONTHS[+d.slice(5, 7) - 1] + ' ' + d.slice(0, 4) : '');
   const visible = () => !document.getElementById('inflation').hidden;
