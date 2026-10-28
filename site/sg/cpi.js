@@ -746,9 +746,21 @@ dash.calc('cpi_ctab', {
     const mb = (d) => t(mLabel(d));
     t('In '); mb(a.date); t(', CPI inflation was '); p.append(mk('all_yoy')); pc(); t(' y/y. MAS core inflation was ');
     p.append(mk('core_yoy')); pc(); t('.');
-    // MAS's latest forecasts, from the monthly MAS-MTI release; updated by hand when MAS revises them
-    const FC = { year: 2026, headline: 'around 2.0%', core: '1.5\u20132.0%', src: 'MAS\u2013MTI, Sep 2026 CPI release' };
-    t(` MAS forecasts CPI inflation at ${FC.headline} and MAS core inflation at ${FC.core} in ${FC.year} (${FC.src}).`);
+    // MAS's forecasts for the year, read by the pipeline from the latest MAS-MTI release (mas_forecast); shown only
+    // when that release is for one of the latest three CPI months, for the calendar year in which it was published
+    const F = dash.data('mas_forecast');
+    if (F.status === 'ok' && F.data.length && a.date) {
+      const fm = F.data[0].cpi_month;
+      const gap = (+a.date.slice(0, 4) - +fm.slice(0, 4)) * 12 + (+a.date.slice(5, 7) - +fm.slice(5, 7));
+      const pubYear = String(+fm.slice(5, 7) === 12 ? +fm.slice(0, 4) + 1 : +fm.slice(0, 4));
+      const get = (m) => (F.data.find((r) => r.year === pubYear && r.measure === m) || {}).forecast;
+      const hl = get('headline'), co = get('core');
+      if (gap >= 0 && gap <= 2 && hl && co) {
+        t(` MAS forecasts CPI inflation at ${hl} and MAS core inflation at ${co} in ${pubYear} (`);
+        const ln = document.createElement('a'); ln.href = F.data[0].release_url; ln.target = '_blank'; ln.rel = 'noopener'; ln.style.color = 'inherit';
+        ln.textContent = `MAS\u2013MTI, ${mLabel(fm)} CPI release`; p.append(ln); t(').');
+      }
+    }
     const P = dash.data('ppi_latest');
     if (P.status === 'ok' && P.data.length && P.data[0].ppi_yoy != null) {
       const q = P.data[0];

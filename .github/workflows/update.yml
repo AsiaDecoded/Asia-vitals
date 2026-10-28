@@ -34,8 +34,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install Excel readers and numpy
-        run: pip install --quiet openpyxl==3.1.5 xlrd==2.0.1 numpy==2.2.6
+      - name: Install Excel and PDF readers and numpy
+        run: pip install --quiet openpyxl==3.1.5 xlrd==2.0.1 numpy==2.2.6 pypdf==5.1.0
 
       - name: Sources due today (release calendar)
         id: due
