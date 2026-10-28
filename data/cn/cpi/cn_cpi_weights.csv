@@ -1,0 +1,15 @@
+key,name_zh,name_en,weight_pct
+all,CPI,CPI,100.0
+food_tobacco_liquor,食品烟酒及在外餐饮,"Food, tobacco, liquor and dining out",29.5
+food,食品,Food,17.2
+grain,粮食,Grain,1.2
+fresh_vegetables,鲜菜,Fresh vegetables,1.7
+pork,猪肉,Pork,1.9
+fresh_fruit,鲜果,Fresh fruits,1.9
+clothing,衣着,Clothing,5.4
+residence,居住,Residence,22.1
+household,生活用品及服务,"Household facilities, articles and services",5.5
+transport_telecom,交通通信,Transportation and telecommunication,14.3
+education_culture,教育文化娱乐,"Education, culture and recreation",11.4
+health_care,医疗保健,Health care and medical services,8.9
+other,其他用品及服务,Miscellaneous goods and services,2.9
