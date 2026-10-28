@@ -114,7 +114,7 @@ dash.calc('cpi_heat', {
   inputs: ['cpi_series', 'sg_cpi_series_weights'],
   fn: (cpi_series, sg_cpi_series_weights) => {
     const W = new Map(sg_cpi_series_weights.map((r) => [r.series, Number(r.weight)]));
-    const ROWS = ['all', 'accommodation', 'imputed_rentals', 'actual_rentals', 'private_transport', 'less_imputed', 'less_accom', 'core',
+    const ROWS = ['all', 'accommodation', 'imputed_rentals', 'actual_rentals', 'private_transport', 'motor_cars', 'less_imputed', 'less_accom', 'core',
       'food_ex_fbss', 'fuel', 'electricity', 'gas', 'petrol', 'other_fuels', 'ex_food_energy',
       'food', 'fbss', 'clothing', 'housing', 'household', 'health', 'transport', 'info_comm', 'recreation', 'education', 'misc', 'gs_goods', 'gs_services', 'services'];
     return cpi_series.filter((r) => ROWS.includes(r.series) && r.date >= '2026-01-01' && r.yoy != null)
@@ -512,7 +512,7 @@ dash.calc('cpi_heat', {
       const th = document.createElement('th'); th.textContent = t; head.appendChild(th);
     });
     const tb = tbl.createTBody();
-    const CHILDREN = { fuel: ['electricity', 'gas', 'petrol', 'other_fuels'], accommodation: ['imputed_rentals', 'actual_rentals'] };
+    const CHILDREN = { fuel: ['electricity', 'gas', 'petrol', 'other_fuels'], accommodation: ['imputed_rentals', 'actual_rentals'], private_transport: ['motor_cars'] };
     const PARENT = {}; Object.entries(CHILDREN).forEach(([p, cs]) => cs.forEach((c) => { PARENT[c] = p; }));
     const OPEN = (J.state.heatOpen = J.state.heatOpen || {});
     keys.forEach((k) => {
@@ -533,7 +533,7 @@ dash.calc('cpi_heat', {
       const wt = D.data.find((r) => r.series === k).weight;
       const wc = tr.insertCell(); wc.className = 'wt'; wc.textContent = wt == null ? '' : d3.format('.1f')(wt / 100);
       if (['all', 'less_imputed', 'less_accom', 'accommodation', 'private_transport', 'core', 'ex_food_energy', 'food_ex_fbss', 'fuel'].includes(k)) tr.className = 'lead';
-      if (['fbss', 'electricity', 'gas', 'petrol', 'other_fuels', 'imputed_rentals', 'actual_rentals'].includes(k)) tr.className = 'sub';
+      if (['fbss', 'electricity', 'gas', 'petrol', 'other_fuels', 'imputed_rentals', 'actual_rentals', 'motor_cars'].includes(k)) tr.className = 'sub';
       if (k === 'food') tr.className = 'gap';
       const vs = dates.map((d) => (val.get(`${k}|${d}`) || {}).yoy).filter((v) => v != null);
       const lo = Math.min(...vs), hi = Math.max(...vs);
