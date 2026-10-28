@@ -10,7 +10,7 @@
   "sg_ppi": "SingStat Advance Release Calendar pattern: around the 27th-30th",
   "kr_cpi": "Ministry of Data and Statistics 2026 release schedule (mods.go.kr); 2027 expected from pattern",
   "kr_ppi": "Bank of Korea: no calendar found; pattern: around the 18th-23rd, 06:00 KST",
-  "id_cpi": "BPS: CPI on the first working day of the following month, 11:00 Jakarta (12:00 SGT); dates from that pattern. Bank Indonesia's SEKI table VIII.1 carries the data some days later (lag not published), so each window runs three weeks from the BPS release"
+  "id_cpi": "BPS: CPI on the first working day of the following month, 11:00 Jakarta (12:00 SGT); dates from that pattern. Bank Indonesia's SEKI table VIII.1 carries the data some days later (lag not published), so each window runs three weeks from the BPS release. The BPS WebAPI sources (id_bps) carry the release the same day"
  },
  "groups": {
   "jp_cpi": {"label": "Japan CPI (national) and CPI contributions", "sources": ["jp_cpi_estat", "jp_cpi_contrib_estat", "jp_cpi_core3_estat"], "time_sgt": "07:30", "dates": [
@@ -75,6 +75,13 @@
    {"ref": "2026-12", "date": "2027-01-04", "from": "2027-01-04", "to": "2027-01-25", "status": "expected"},
    {"ref": "2027-01", "date": "2027-02-01", "from": "2027-02-01", "to": "2027-02-22", "status": "expected"},
    {"ref": "2027-02", "date": "2027-03-01", "from": "2027-03-01", "to": "2027-03-22", "status": "expected"},
-   {"ref": "2027-03", "date": "2027-04-01", "from": "2027-04-01", "to": "2027-04-22", "status": "expected"}]}
+   {"ref": "2027-03", "date": "2027-04-01", "from": "2027-04-01", "to": "2027-04-22", "status": "expected"}]},
+  "id_bps": {"label": "Indonesia CPI and WPI (BPS WebAPI)", "sources": ["id_cpi_bps", "id_wpi_bps"], "time_sgt": "12:00", "dates": [
+   {"ref": "2026-10", "date": "2026-11-02", "status": "expected"},
+   {"ref": "2026-11", "date": "2026-12-01", "status": "expected"},
+   {"ref": "2026-12", "date": "2027-01-04", "status": "expected"},
+   {"ref": "2027-01", "date": "2027-02-01", "status": "expected"},
+   {"ref": "2027-02", "date": "2027-03-01", "status": "expected"},
+   {"ref": "2027-03", "date": "2027-04-01", "status": "expected"}]}
  }
 }
