@@ -3,22 +3,21 @@
  "label": "September 2026",
  "latest_month": "2026-09-01",
  "table": "NBS data portal (data.stats.gov.cn), monthly industrial producer price catalogs",
- "processed_at": "2026-10-28T16:58:16Z",
- "rows": 59041,
+ "processed_at": "2026-10-28T17:23:21Z",
+ "rows": 59293,
  "warnings": [
   "7 values of 0 left out as missing: ['ind_other_mining yoy 2008-12', 'ind_other_mining yoy 2008-11', 'ind_other_mining yoy 2008-10', 'ind_other_mining yoy 2008-09', 'ind_other_mining yoy 2008-08']",
-  "PPI series not mapped (left out): 电力、热力的生产和供应业; 皮革、毛皮、羽毛; 通信设备、计算机及其他电子设备制造",
   "4 values of 0 left out as missing: ['purchasing yoy 2020-02', 'purchasing yoy 2010-07', 'purchasing yoy 2009-12', 'purchasing yoy 2006-05']",
   "YTD vs y/y average beyond 0.15 in 4 of 756: ['purchasing 2022-12: YTD 106.1 vs y/y average 106.31', 'purchasing 2022-11: YTD 106.7 vs y/y average 106.85', 'ppi_production 2022-12: YTD 104.9 vs y/y average 105.13']",
   "m/m compounded over 12 months differs from y/y by more than 0.4pp in 7 of 712 months: ['purchasing 2021-05: y/y 112.5 vs m/m compounded 113.00', 'purchasing 2021-04: y/y 109.0 vs m/m compounded 109.56', 'purchasing 2021-03: y/y 105.2 vs m/m compounded 105.67']"
  ],
- "long_rows": 59041,
+ "long_rows": 59293,
  "catalogs": 20,
  "province_catalogs": 1,
  "history": [
   {
    "code": "P2026-09",
-   "processed_at": "2026-10-28T16:58:16Z"
+   "processed_at": "2026-10-28T17:23:21Z"
   }
  ]
 }
