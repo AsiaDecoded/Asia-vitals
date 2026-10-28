@@ -427,7 +427,7 @@ dash.calc('cpi_ctab', {
       }
       return out;
     };
-    const name = document.querySelector(`#cpi-sa-seg [data-s="${k}"]`).textContent;
+    const sb = document.querySelector(`#cpi-sa-seg [data-s="${k}"]`); const name = sb.dataset.name || sb.textContent;
     // bars: the tab's series; lines: CPI y/y on the CPI tab, or the two food series on the food tab
     const BAR = k === 'food' ? null : { key: k, name: name + ', 3m/3m annualised, SA', color: J.PAL[4], vals: m3(k) };
     const LINES = k === 'food'

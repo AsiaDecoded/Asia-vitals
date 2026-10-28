@@ -49,6 +49,8 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
 .jg-card h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
 .jg-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-xs) 0 var(--cds-gap-md); line-height: 1.45; }
 .jg-cardhead { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--cds-gap-sm); align-items: flex-start; }
+.jg-cardhead .jg-seg button { padding-left: 6px; padding-right: 6px; }
+.jg-cardhead > .jg-seg { margin: -1px 0; }
 .jg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
 .jg-chart { min-height: 280px; position: relative; }
 .jg-chart.small { min-height: 280px; }
@@ -265,7 +267,7 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
         <div class="jg-cardhead">
           <div><h2>Singapore consumer inflation</h2></div>
           <div class="jg-seg" id="cpi-sa-seg" role="group" aria-label="Measure">
-            <button data-s="all_sa" aria-pressed="true">CPI</button><button data-s="less_imputed_sa">Less imputed rent</button><button data-s="food">Food</button><button data-s="private_transport_sa">Private transport</button>
+            <button data-s="all_sa" aria-pressed="true">CPI</button><button data-s="less_imputed_sa" data-name="CPI less imputed rentals">Ex-imputed rent</button><button data-s="food">Food</button><button data-s="private_transport_sa" data-name="Private transport">Pvt transport</button>
           </div>
         </div>
         <div class="ad-top"><span class="ad-units">%</span><div class="jg-legend" id="cpi-sa-legend"></div><span class="ad-units r"></span></div>
