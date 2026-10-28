@@ -1,4 +1,10 @@
 == id_cpi_seki
-   UPDATED: Sep 2026: headline y/y 3.28%, 1620 rows
-== combined long file: 248297 rows
-result: updated=['id_cpi_seki'] failed=-
+   unchanged: no change (latest Sep 2026)
+== id_cpi_bps
+   CHECKS FAILED (1); nothing written for id_cpi_bps:
+   - core missing for ['2024-12', '2025-12']
+== id_wpi_bps
+   UPDATED: Sep 2026: WPI 6.76% y/y; 21 releases read, 120 rows
+   WARNING: 2025-01: Table 1 not read or failed its check
+== combined long file: 249017 rows
+result: updated=['id_wpi_bps'] failed=['id_cpi_bps']

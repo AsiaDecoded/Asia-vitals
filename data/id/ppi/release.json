@@ -1,0 +1,20 @@
+{
+ "code": "P2026-09",
+ "label": "Sep 2026",
+ "latest_month": "2026-09-01",
+ "brs_id": 168713,
+ "table": "BPS WebAPI: WPI (IHPB) press releases, Table 1",
+ "processed_at": "2026-10-28T09:12:46Z",
+ "rows": 120,
+ "warnings": [
+  "2025-01: Table 1 not read or failed its check"
+ ],
+ "fingerprint": "56790b75a692ae3d",
+ "long_rows": 720,
+ "history": [
+  {
+   "code": "P2026-09",
+   "processed_at": "2026-10-28T09:12:46Z"
+  }
+ ]
+}
