@@ -29,6 +29,13 @@ NAMES = {
     "工业生产者出厂价格指数": ("ppi", "PPI (ex-factory prices of industrial products)"),
     "生产资料工业生产者出厂价格指数": ("ppi_production", "Means of production"),
     "生活资料工业生产者出厂价格指数": ("ppi_consumer", "Consumer goods"),
+    "采掘业生产资料": ("ppi_mining", "Mining and quarrying"),
+    "原料业生产资料": ("ppi_raw", "Raw materials"),
+    "加工业生产资料": ("ppi_processing", "Processing"),
+    "食品类": ("ppi_food", "Food"),
+    "衣着类": ("ppi_clothing", "Clothing"),
+    "一般日用品类": ("ppi_daily", "Articles for daily use"),
+    "耐用消费品类": ("ppi_durables", "Durable consumer goods"),
     "工业生产者购进价格指数": ("purchasing", "Purchasing prices of industrial producers"),
     "燃料、动力类": ("pur_fuel_power", "Fuel and power"),
     "黑色金属材料类": ("pur_ferrous", "Ferrous metals"),
@@ -38,6 +45,7 @@ NAMES = {
     "木材及纸浆类": ("pur_timber_pulp", "Timber and paper pulp"),
     "建筑材料及非金属类": ("pur_building", "Building materials and non-metals"),
     "其他工业原材料及半成品类": ("pur_other", "Other industrial raw materials and semi-products"),
+    "其它工业原材料及半成品类": ("pur_other", "Other industrial raw materials and semi-products"),
     "农副产品类": ("pur_agri", "Agricultural and sideline products"),
     "纺织原料类": ("pur_textile", "Textile materials"),
     "煤炭开采和洗选业": ("ind_coal", "Mining and washing of coal"),
@@ -129,11 +137,13 @@ def _clean(name):
     for suf in ("工业生产者出厂价格指数", "工业生产者购进价格指数"):
         if n.endswith(suf) and n != suf and n not in NAMES:
             n = n[: -len(suf)].strip()
+    if n in NAMES:
+        return n
     return n.replace("购进价格指数", "").strip() or name
 
 
 def _keep(path, name):
-    return "工业生产者" in (path + name) and "中类" not in (path + name)
+    return "工业生产者" in (path + name) and "中类" not in (path + name) and "按工业部门" not in name
 
 
 def _tidy(rows, prov, warnings):
