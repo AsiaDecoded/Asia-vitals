@@ -747,6 +747,9 @@ dash.calc('cpi_ctab', {
     t('In '); mb(a.date); t(', CPI inflation was '); p.append(mk('all_yoy')); pc(); t(' y/y. MAS core inflation was ');
     p.append(mk('core_yoy')); pc(); t('. Goods inflation was '); p.append(mk('gs_goods_yoy'));
     pc(); t(' and services inflation '); p.append(mk('gs_services_yoy')); pc(); t('.');
+    // MAS's latest forecasts, from the monthly MAS-MTI release; updated by hand when MAS revises them
+    const FC = { year: 2026, headline: 'around 2.0%', core: '1.5\u20132.0%', src: 'MAS\u2013MTI, Sep 2026 CPI release' };
+    t(` MAS forecasts CPI inflation at ${FC.headline} and MAS core inflation at ${FC.core} in ${FC.year} (${FC.src}).`);
     const P = dash.data('ppi_latest');
     if (P.status === 'ok' && P.data.length && P.data[0].ppi_yoy != null) {
       const q = P.data[0];
