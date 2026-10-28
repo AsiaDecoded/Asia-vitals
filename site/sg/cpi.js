@@ -417,24 +417,39 @@ dash.calc('cpi_ctab', {
     if (D.status !== 'ok') { box.replaceChildren(); return; }
     const k = S.sa;
     // 3m/3m annualised: average of the seasonally adjusted index over the latest three months against the three before, % change at an annual rate
-    const lv = D.data.filter((r) => r.area === 'national' && r.series === k && r.index != null)
-      .sort((p, q) => (p.date < q.date ? -1 : 1)).map((r) => [r.date, Number(r.index)]);
-    const all = [];
-    for (let i = 5; i < lv.length; i++) {
-      const a3 = (lv[i][1] + lv[i - 1][1] + lv[i - 2][1]) / 3, b3 = (lv[i - 3][1] + lv[i - 4][1] + lv[i - 5][1]) / 3;
-      all.push({ date: lv[i][0], [k]: (Math.pow(a3 / b3, 4) - 1) * 100 });
-    }
-    const yy = new Map(D.data.filter((r) => r.area === 'national' && r.series === 'all' && r.yoy != null).map((r) => [r.date, Number(r.yoy)]));
-    const withCpi = k === 'all_sa';  // the CPI y/y line only on the CPI tab
-    all.forEach((r) => { r.yoy = withCpi && yy.has(r.date) ? yy.get(r.date) : null; });
+    const m3 = (key) => {
+      const lv = D.data.filter((r) => r.area === 'national' && r.series === key && r.index != null)
+        .sort((p, q) => (p.date < q.date ? -1 : 1)).map((r) => [r.date, Number(r.index)]);
+      const out = new Map();
+      for (let i = 5; i < lv.length; i++) {
+        const a3 = (lv[i][1] + lv[i - 1][1] + lv[i - 2][1]) / 3, b3 = (lv[i - 3][1] + lv[i - 4][1] + lv[i - 5][1]) / 3;
+        out.set(lv[i][0], (Math.pow(a3 / b3, 4) - 1) * 100);
+      }
+      return out;
+    };
+    const name = document.querySelector(`#cpi-sa-seg [data-s="${k}"]`).textContent;
+    // bars: the tab's series; lines: CPI y/y on the CPI tab, or the two food series on the food tab
+    const BAR = k === 'food' ? null : { key: k, name: name + ', 3m/3m annualised, SA', color: J.PAL[4], vals: m3(k) };
+    const LINES = k === 'food'
+      ? [{ key: 'food_ex_fbss_sa', name: 'Food excl. FBSS, 3m/3m annualised, SA', color: J.PAL[0], vals: m3('food_ex_fbss_sa') },
+        { key: 'fbss_sa', name: 'FBSS, 3m/3m annualised, SA', color: J.PAL[1], vals: m3('fbss_sa') }]
+      : k === 'all_sa'
+        ? [{ key: 'yoy', name: 'CPI, y/y', color: J.PAL[1], vals: new Map(D.data.filter((r) => r.area === 'national' && r.series === 'all' && r.yoy != null).map((r) => [r.date, Number(r.yoy)])) }]
+        : [];
+    const base = BAR ? BAR.vals : LINES[0].vals;
+    const all = Array.from(base.keys()).sort().map((d) => {
+      const r = { date: d };
+      [BAR].concat(LINES).filter(Boolean).forEach((s) => { r[s.key] = s.vals.has(d) ? s.vals.get(d) : null; });
+      return r;
+    });
     const rows = J.slice(all, 'cpi-momentum');
     if (!rows.length) { box.replaceChildren(); return; }
-    const name = document.querySelector(`#cpi-sa-seg [data-s="${k}"]`).textContent;
-    legend('cpi-sa-legend', (withCpi ? [{ name: 'CPI, y/y', color: J.PAL[1] }] : []).concat([{ name: name + ', 3m/3m annualised, SA', color: J.PAL[4], bar: true }]));
+    legend('cpi-sa-legend', LINES.map((s) => ({ name: s.name, color: s.color })).concat(BAR ? [{ name: BAR.name, color: BAR.color, bar: true }] : []));
     const W = box.clientWidth, H = 280;
     box.replaceChildren();
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
-    const vals = rows.map((r) => r[k]).concat(rows.map((r) => r.yoy).filter((v) => v != null));
+    const vals = [];
+    rows.forEach((r) => [BAR].concat(LINES).filter(Boolean).forEach((s) => { if (r[s.key] != null) vals.push(r[s.key]); }));
     const y = d3.scaleLinear([Math.min(0, d3.min(vals)), Math.max(0, d3.max(vals))], [H - 24, 10]).nice();
     const ticks = y.ticks(5);
     const fmt = d3.format('.1f');
@@ -447,18 +462,23 @@ dash.calc('cpi_ctab', {
     const step = [1, 2, 5, 10].find((s) => years.length / s <= Math.max(1, (W - ml) / 56)) || 10;
     const xt = rows.map((r) => r.date).filter((d) => d.slice(5, 7) === '01' && +d.slice(0, 4) % step === 0);
     J.axisStyle(svg.append('g').attr('transform', `translate(0,${H - 20})`).call(d3.axisBottom(x).tickValues(xt).tickSize(0).tickFormat((d) => d.slice(0, 4))));
-    svg.append('g').selectAll('rect').data(rows).join('rect')
-      .attr('x', (r) => x(r.date)).attr('width', x.bandwidth())
-      .attr('y', (r) => y(Math.max(0, r[k]))).attr('height', (r) => Math.abs(y(r[k]) - y(0)))
-      .attr('fill', J.PAL[4]);
-    if (withCpi) svg.append('path').datum(rows.filter((r) => r.yoy != null)).attr('fill', 'none').attr('stroke', J.PAL[1]).attr('stroke-width', 2)
-      .attr('d', d3.line().x((r) => x(r.date) + x.bandwidth() / 2).y((r) => y(r.yoy)));
+    if (BAR) {
+      svg.append('g').selectAll('rect').data(rows.filter((r) => r[BAR.key] != null)).join('rect')
+        .attr('x', (r) => x(r.date)).attr('width', x.bandwidth())
+        .attr('y', (r) => y(Math.max(0, r[BAR.key]))).attr('height', (r) => Math.abs(y(r[BAR.key]) - y(0)))
+        .attr('fill', BAR.color);
+    }
+    LINES.forEach((s) => {
+      svg.append('path').datum(rows.filter((r) => r[s.key] != null)).attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', 2)
+        .attr('d', d3.line().x((r) => x(r.date) + x.bandwidth() / 2).y((r) => y(r[s.key])));
+    });
     const card = document.getElementById('cpi-momentum'), tip = J.tip(card);
     svg.append('rect').attr('x', ml).attr('width', W - ml).attr('height', H).attr('fill', 'transparent')
       .on('mousemove', (ev) => {
         const i = Math.max(0, Math.min(rows.length - 1, Math.floor((d3.pointer(ev)[0] - ml) / x.step())));
         const cr = card.getBoundingClientRect();
-        J.showTip(card, tip, mLabel(rows[i].date), (withCpi ? [[J.PAL[1], 'CPI, y/y', pct(rows[i].yoy)]] : []).concat([[J.PAL[4], name + ', 3m/3m ann. SA', pct(rows[i][k])]]), ev.clientX - cr.left, ev.clientY - cr.top);
+        const items = LINES.concat(BAR ? [BAR] : []).map((s) => [s.color, s.name.replace('annualised', 'ann.'), pct(rows[i][s.key])]);
+        J.showTip(card, tip, mLabel(rows[i].date), items, ev.clientX - cr.left, ev.clientY - cr.top);
       })
       .on('mouseleave', () => { tip.style.display = 'none'; });
   }
