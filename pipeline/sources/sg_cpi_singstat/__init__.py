@@ -63,6 +63,9 @@ CPI = [
     ("accommodation", "Accommodation", "drivers", "1.03.1"),
     ("imputed_rentals", "Imputed rentals for housing", "drivers", "1.03.1.2"),
     ("actual_rentals", "Actual rentals for housing", "drivers", "1.03.1.1"),
+    ("motor_cars", "Motor cars", "drivers", "1.06.1.1"),
+    ("health_insurance", "Health insurance", "drivers", "1.05.5"),
+    ("airfares", "Airfares", "drivers", "1.06.3.1"),
     ("private_transport", "Private transport", "drivers", "1.06.1"),
     ("petrol", "Petrol", "drivers", "1.06.1.5"),
     ("electricity", "Electricity", "drivers", "1.03.2.3"),
@@ -97,7 +100,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 18  # bump when the outputs change, so the next run rebuilds them
+VERSION = 20  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
