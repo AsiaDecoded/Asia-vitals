@@ -1,0 +1,21 @@
+{
+ "code": "P2026-07",
+ "label": "Jul 2026",
+ "latest_month": "2026-07-01",
+ "table": "PSA OpenSTAT 0012M4CPPI2, 0022M4CPPI1 (PPI for manufacturing, 2018 = 100)",
+ "processed_at": "2026-10-28T02:11:06Z",
+ "rows": 2573,
+ "warnings": [],
+ "long_rows": 4832,
+ "stamps": {
+  "2M/PI/PPI/PPIM/0012M4CPPI2.px": "2026-09-09T09:27:00",
+  "2M/PI/PPI/PPIM/0022M4CPPI0.px": "2026-06-29T08:59:38",
+  "2M/PI/PPI/PPIM/0022M4CPPI1.px": "2026-06-29T09:12:28"
+ },
+ "history": [
+  {
+   "code": "P2026-07",
+   "processed_at": "2026-10-28T02:11:06Z"
+  }
+ ]
+}
