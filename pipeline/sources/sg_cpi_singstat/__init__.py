@@ -100,7 +100,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 37  # bump when the outputs change, so the next run rebuilds them
+VERSION = 38  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -775,7 +775,14 @@ def update(**_):
               "exfe_only": "In CPI less food and energy only: accommodation and private transport excl. fuel (calculated)",
               "shared": "In both MAS core and CPI less food and energy (calculated)"}
     for key, w in list(GAP_PARTS.items()) + list(SVC_PARTS.items()) + list(GS_PARTS.items()):
-        g = _chained(dict(idx, S=mas["2"]), w, errors, key)
+        one = {tuple(v) for v in w.values()}
+        if len(one) == 1 and len(next(iter(one))) == 1 and next(iter(one))[0] in idx:
+            # a single published index in every basket: use it over its full history, 2024 = 100
+            src = idx[next(iter(one))[0]]
+            base = sum(src[f"2024-{m:02d}-01"] for m in range(1, 13)) / 12
+            g = {t: v / base * 100 for t, v in src.items()}
+        else:
+            g = _chained(dict(idx, S=mas["2"]), w, errors, key)
         for d in sorted(g):
             pm, py = g.get(_shift(d, -1)), g.get(_shift(d, -12))
             rows.append({"date": d, "area": "national", "series": key, "label": labels.get(key) or SVC_LABELS.get(key) or GS_LABELS[key], "group": "headline", "order": order,

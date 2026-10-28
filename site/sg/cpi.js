@@ -143,7 +143,7 @@ dash.calc('cpi_ctab', {
 
 (() => {
   const J = window.JG;
-  const S = { months: 120, sa: 'all_sa', movers: 3 };
+  const S = { months: 120, sa: 'all_sa', movers: 3, svc: 'svc_all' };
   const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   const mLabel = (d) => (d ? MONTHS[+d.slice(5, 7) - 1] + ' ' + d.slice(0, 4) : '');
   const visible = () => !document.getElementById('inflation').hidden;
@@ -166,6 +166,7 @@ dash.calc('cpi_ctab', {
     moversTable();
   });
   seg('cpi-sa-seg', 'sa', 's', String);
+  seg('cpi-svc-seg', 'svc', 's', String);
 
   const failed = (st) => st === 'error' || st === 'connect' || st === 'declined';
 
@@ -388,16 +389,12 @@ dash.calc('cpi_ctab', {
       .on('mouseleave', () => { hl.attr('display', 'none'); tip.style.display = 'none'; });
   }
 
-  // Services, broadly (MAS services + accommodation + private transport services), by type; all y/y.
+  // Services, broadly (MAS services + accommodation + FBSS + private transport services), one series per tab; y/y.
   function svcChart() {
     if (!document.getElementById('cpi-svc-chart')) return;
+    const btn = document.querySelector(`#cpi-svc-seg [data-s="${S.svc}"]`);
     lineChart('cpi-svc-chart', 'cpi-svc', 'cpi-svc-legend', 'national', [
-      { key: 'svc_health', name: 'Health', color: C[0] },
-      { key: 'svc_land', name: 'Land transport', color: C[4] },
-      { key: 'svc_air', name: 'Airfares', color: C[5] },
-      { key: 'svc_rent', name: 'Actual rentals', color: C[2] },
-      { key: 'svc_imputed', name: 'Imputed rentals', color: C[1] },
-      { key: 'svc_other', name: 'Other services', color: C[3] },
+      { key: S.svc, name: btn ? btn.dataset.name : '', color: C[0] },
     ], 280);
   }
 

@@ -31258,6 +31258,7 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2005-01-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2005-01-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2005-01-01,80.608,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2005-01-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2005-01-01,65.47,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2005-02-01,65.801,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2005-02-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2005-02-01,0.0,%,Singapore Department of Statistics,C2026-09
@@ -31338,6 +31339,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2005-02-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2005-02-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2005-02-01,80.308,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2005-02-01,-0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2005-02-01,65.47,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2005-02-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2005-03-01,65.608,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2005-03-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2005-03-01,0.4,%,Singapore Department of Statistics,C2026-09
@@ -31418,6 +31421,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2005-03-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2005-03-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2005-03-01,84.344,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2005-03-01,5.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2005-03-01,65.595,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2005-03-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2005-04-01,66.013,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2005-04-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2005-04-01,0.4,%,Singapore Department of Statistics,C2026-09
@@ -31498,6 +31503,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2005-04-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2005-04-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2005-04-01,84.351,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2005-04-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2005-04-01,65.603,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2005-04-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2005-05-01,65.91,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2005-05-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2005-05-01,0.0,%,Singapore Department of Statistics,C2026-09
@@ -31578,6 +31585,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2005-05-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2005-05-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2005-05-01,83.936,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2005-05-01,-0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2005-05-01,65.603,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2005-05-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2005-06-01,65.308,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2005-06-01,-0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2005-06-01,-0.2,%,Singapore Department of Statistics,C2026-09
@@ -31658,6 +31667,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2005-06-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2005-06-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2005-06-01,83.733,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2005-06-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2005-06-01,65.603,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2005-06-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2005-07-01,65.992,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2005-07-01,1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2005-07-01,0.1,%,Singapore Department of Statistics,C2026-09
@@ -31738,6 +31749,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2005-07-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2005-07-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2005-07-01,83.944,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2005-07-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2005-07-01,66.49,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2005-07-01,1.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2005-08-01,66.304,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2005-08-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2005-08-01,0.7,%,Singapore Department of Statistics,C2026-09
@@ -31818,6 +31831,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2005-08-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2005-08-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2005-08-01,84.591,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2005-08-01,0.8,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2005-08-01,66.49,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2005-08-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2005-09-01,66.397,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2005-09-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2005-09-01,0.6,%,Singapore Department of Statistics,C2026-09
@@ -31898,6 +31913,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2005-09-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2005-09-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2005-09-01,84.336,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2005-09-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2005-09-01,66.49,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2005-09-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2005-10-01,66.668,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2005-10-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2005-10-01,1.1,%,Singapore Department of Statistics,C2026-09
@@ -31978,6 +31995,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2005-10-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2005-10-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2005-10-01,84.42,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2005-10-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2005-10-01,66.504,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2005-10-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2005-11-01,66.587,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2005-11-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2005-11-01,1.0,%,Singapore Department of Statistics,C2026-09
@@ -32058,6 +32077,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2005-11-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2005-11-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2005-11-01,84.662,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2005-11-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2005-11-01,66.497,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2005-11-01,-0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2005-12-01,66.609,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2005-12-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2005-12-01,1.3,%,Singapore Department of Statistics,C2026-09
@@ -32138,6 +32159,8 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2005-12-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2005-12-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2005-12-01,84.163,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2005-12-01,-0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2005-12-01,66.497,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2005-12-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2006-01-01,66.455,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2006-01-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2006-01-01,1.7,%,Singapore Department of Statistics,C2026-09
@@ -32221,6 +32244,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2006-01-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2006-01-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2006-01-01,84.828,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2006-01-01,0.8,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2006-01-01,66.641,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2006-01-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2006-01-01,1.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2006-02-01,66.587,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2006-02-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2006-02-01,1.2,%,Singapore Department of Statistics,C2026-09
@@ -32304,6 +32330,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2006-02-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2006-02-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2006-02-01,85.233,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2006-02-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2006-02-01,66.641,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2006-02-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2006-02-01,1.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2006-03-01,66.366,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2006-03-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2006-03-01,1.2,%,Singapore Department of Statistics,C2026-09
@@ -32387,6 +32416,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2006-03-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2006-03-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2006-03-01,85.184,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2006-03-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2006-03-01,66.675,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2006-03-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2006-03-01,1.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2006-04-01,66.728,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2006-04-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2006-04-01,1.1,%,Singapore Department of Statistics,C2026-09
@@ -32470,6 +32502,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2006-04-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2006-04-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2006-04-01,85.35,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2006-04-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2006-04-01,66.683,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2006-04-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2006-04-01,1.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2006-05-01,66.629,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2006-05-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2006-05-01,1.1,%,Singapore Department of Statistics,C2026-09
@@ -32553,6 +32588,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2006-05-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2006-05-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2006-05-01,85.136,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2006-05-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2006-05-01,66.683,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2006-05-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2006-05-01,1.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2006-06-01,66.209,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2006-06-01,-0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2006-06-01,1.4,%,Singapore Department of Statistics,C2026-09
@@ -32636,6 +32674,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2006-06-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2006-06-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2006-06-01,85.319,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2006-06-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2006-06-01,66.683,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2006-06-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2006-06-01,1.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2006-07-01,66.71,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2006-07-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2006-07-01,1.1,%,Singapore Department of Statistics,C2026-09
@@ -32719,6 +32760,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2006-07-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2006-07-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2006-07-01,85.532,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2006-07-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2006-07-01,68.617,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2006-07-01,2.9,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2006-07-01,3.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2006-08-01,66.747,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2006-08-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2006-08-01,0.7,%,Singapore Department of Statistics,C2026-09
@@ -32802,6 +32846,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2006-08-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2006-08-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2006-08-01,86.065,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2006-08-01,0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2006-08-01,69.633,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2006-08-01,1.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2006-08-01,4.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2006-09-01,66.689,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2006-09-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2006-09-01,0.4,%,Singapore Department of Statistics,C2026-09
@@ -32885,6 +32932,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2006-09-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2006-09-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2006-09-01,85.858,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2006-09-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2006-09-01,69.633,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2006-09-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2006-09-01,4.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2006-10-01,66.95,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2006-10-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2006-10-01,0.4,%,Singapore Department of Statistics,C2026-09
@@ -32968,6 +33018,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2006-10-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2006-10-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2006-10-01,86.374,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2006-10-01,0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2006-10-01,70.234,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2006-10-01,0.9,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2006-10-01,5.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2006-11-01,66.95,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2006-11-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2006-11-01,0.5,%,Singapore Department of Statistics,C2026-09
@@ -33051,6 +33104,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2006-11-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2006-11-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2006-11-01,86.266,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2006-11-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2006-11-01,70.248,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2006-11-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2006-11-01,5.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2006-12-01,67.15,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2006-12-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2006-12-01,0.8,%,Singapore Department of Statistics,C2026-09
@@ -33134,6 +33190,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2006-12-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2006-12-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2006-12-01,86.293,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2006-12-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2006-12-01,70.248,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2006-12-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2006-12-01,5.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2007-01-01,66.072,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2007-01-01,-1.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2007-01-01,-0.6,%,Singapore Department of Statistics,C2026-09
@@ -33217,6 +33276,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2007-01-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2007-01-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2007-01-01,86.476,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2007-01-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2007-01-01,70.373,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2007-01-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2007-01-01,5.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2007-02-01,66.566,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2007-02-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2007-02-01,0.0,%,Singapore Department of Statistics,C2026-09
@@ -33300,6 +33362,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2007-02-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2007-02-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2007-02-01,86.423,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2007-02-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2007-02-01,70.373,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2007-02-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2007-02-01,5.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2007-03-01,66.523,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2007-03-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2007-03-01,0.2,%,Singapore Department of Statistics,C2026-09
@@ -33383,6 +33448,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2007-03-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2007-03-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2007-03-01,86.549,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2007-03-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2007-03-01,70.373,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2007-03-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2007-03-01,5.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2007-04-01,67.035,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2007-04-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2007-04-01,0.5,%,Singapore Department of Statistics,C2026-09
@@ -33466,6 +33534,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2007-04-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2007-04-01,-0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2007-04-01,86.628,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2007-04-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2007-04-01,70.376,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2007-04-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2007-04-01,5.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2007-05-01,67.472,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2007-05-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2007-05-01,1.3,%,Singapore Department of Statistics,C2026-09
@@ -33549,6 +33620,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2007-05-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2007-05-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2007-05-01,86.311,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2007-05-01,-0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2007-05-01,70.376,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2007-05-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2007-05-01,5.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2007-06-01,67.34,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2007-06-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2007-06-01,1.7,%,Singapore Department of Statistics,C2026-09
@@ -33632,6 +33706,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2007-06-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2007-06-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2007-06-01,86.388,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2007-06-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2007-06-01,70.389,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2007-06-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2007-06-01,5.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2007-07-01,68.695,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2007-07-01,2.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2007-07-01,3.0,%,Singapore Department of Statistics,C2026-09
@@ -33715,6 +33792,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2007-07-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2007-07-01,2.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2007-07-01,88.308,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2007-07-01,2.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2007-07-01,70.399,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2007-07-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2007-07-01,2.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2007-08-01,69.051,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2007-08-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2007-08-01,3.5,%,Singapore Department of Statistics,C2026-09
@@ -33798,6 +33878,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2007-08-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2007-08-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2007-08-01,88.769,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2007-08-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2007-08-01,70.399,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2007-08-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2007-08-01,1.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2007-09-01,68.696,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2007-09-01,-0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2007-09-01,3.0,%,Singapore Department of Statistics,C2026-09
@@ -33881,6 +33964,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2007-09-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2007-09-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2007-09-01,88.677,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2007-09-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2007-09-01,70.399,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2007-09-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2007-09-01,1.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2007-10-01,69.671,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2007-10-01,1.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2007-10-01,4.1,%,Singapore Department of Statistics,C2026-09
@@ -33964,6 +34050,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2007-10-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2007-10-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2007-10-01,88.538,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2007-10-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2007-10-01,70.779,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2007-10-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2007-10-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2007-11-01,70.204,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2007-11-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2007-11-01,4.9,%,Singapore Department of Statistics,C2026-09
@@ -34047,6 +34136,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2007-11-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2007-11-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2007-11-01,88.839,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2007-11-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2007-11-01,70.779,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2007-11-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2007-11-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2007-12-01,69.727,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2007-12-01,-0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2007-12-01,3.8,%,Singapore Department of Statistics,C2026-09
@@ -34130,6 +34222,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2007-12-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2007-12-01,2.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2007-12-01,88.897,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2007-12-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2007-12-01,74.513,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2007-12-01,5.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2007-12-01,6.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2008-01-01,70.46,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2008-01-01,1.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2008-01-01,6.6,%,Singapore Department of Statistics,C2026-09
@@ -34213,6 +34308,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2008-01-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2008-01-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2008-01-01,89.054,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2008-01-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2008-01-01,74.644,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2008-01-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2008-01-01,6.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2008-02-01,70.937,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2008-02-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2008-02-01,6.6,%,Singapore Department of Statistics,C2026-09
@@ -34296,6 +34394,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2008-02-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2008-02-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2008-02-01,88.988,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2008-02-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2008-02-01,74.644,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2008-02-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2008-02-01,6.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2008-03-01,71.0,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2008-03-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2008-03-01,6.7,%,Singapore Department of Statistics,C2026-09
@@ -34379,6 +34480,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2008-03-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2008-03-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2008-03-01,89.398,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2008-03-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2008-03-01,74.644,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2008-03-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2008-03-01,6.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2008-04-01,72.117,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2008-04-01,1.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2008-04-01,7.6,%,Singapore Department of Statistics,C2026-09
@@ -34462,6 +34566,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2008-04-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2008-04-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2008-04-01,89.501,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2008-04-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2008-04-01,74.659,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2008-04-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2008-04-01,6.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2008-05-01,72.561,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2008-05-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2008-05-01,7.5,%,Singapore Department of Statistics,C2026-09
@@ -34545,6 +34652,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2008-05-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2008-05-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2008-05-01,89.204,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2008-05-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2008-05-01,74.659,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2008-05-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2008-05-01,6.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2008-06-01,72.428,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2008-06-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2008-06-01,7.6,%,Singapore Department of Statistics,C2026-09
@@ -34628,6 +34738,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2008-06-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2008-06-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2008-06-01,89.032,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2008-06-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2008-06-01,74.659,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2008-06-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2008-06-01,6.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2008-07-01,73.218,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2008-07-01,1.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2008-07-01,6.6,%,Singapore Department of Statistics,C2026-09
@@ -34711,6 +34824,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2008-07-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2008-07-01,-0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2008-07-01,89.317,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2008-07-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2008-07-01,74.716,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2008-07-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2008-07-01,6.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2008-08-01,73.497,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2008-08-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2008-08-01,6.4,%,Singapore Department of Statistics,C2026-09
@@ -34794,6 +34910,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2008-08-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2008-08-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2008-08-01,89.702,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2008-08-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2008-08-01,74.716,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2008-08-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2008-08-01,6.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2008-09-01,73.34,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2008-09-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2008-09-01,6.8,%,Singapore Department of Statistics,C2026-09
@@ -34877,6 +34996,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2008-09-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2008-09-01,-1.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2008-09-01,89.757,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2008-09-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2008-09-01,74.719,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2008-09-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2008-09-01,6.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2008-10-01,74.15,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2008-10-01,1.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2008-10-01,6.4,%,Singapore Department of Statistics,C2026-09
@@ -34960,6 +35082,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2008-10-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2008-10-01,1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2008-10-01,89.743,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2008-10-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2008-10-01,75.073,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2008-10-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2008-10-01,6.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2008-11-01,74.1,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2008-11-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2008-11-01,5.5,%,Singapore Department of Statistics,C2026-09
@@ -35043,6 +35168,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2008-11-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2008-11-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2008-11-01,89.238,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2008-11-01,-0.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2008-11-01,75.073,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2008-11-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2008-11-01,6.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2008-12-01,73.459,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2008-12-01,-0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2008-12-01,5.4,%,Singapore Department of Statistics,C2026-09
@@ -35126,6 +35254,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2008-12-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2008-12-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2008-12-01,89.65,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2008-12-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2008-12-01,75.073,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2008-12-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2008-12-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2009-01-01,73.463,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2009-01-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2009-01-01,4.3,%,Singapore Department of Statistics,C2026-09
@@ -35209,6 +35340,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2009-01-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2009-01-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2009-01-01,89.4,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2009-01-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2009-01-01,75.254,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2009-01-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2009-01-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2009-02-01,73.229,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2009-02-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2009-02-01,3.2,%,Singapore Department of Statistics,C2026-09
@@ -35292,6 +35426,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2009-02-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2009-02-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2009-02-01,89.405,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2009-02-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2009-02-01,75.252,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2009-02-01,-0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2009-02-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2009-03-01,72.814,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2009-03-01,-0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2009-03-01,2.6,%,Singapore Department of Statistics,C2026-09
@@ -35375,6 +35512,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2009-03-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2009-03-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2009-03-01,89.774,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2009-03-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2009-03-01,75.25,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2009-03-01,-0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2009-03-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2009-04-01,72.344,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2009-04-01,-0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2009-04-01,0.3,%,Singapore Department of Statistics,C2026-09
@@ -35458,6 +35598,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2009-04-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2009-04-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2009-04-01,89.523,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2009-04-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2009-04-01,73.339,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2009-04-01,-2.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2009-04-01,-1.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2009-05-01,72.729,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2009-05-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2009-05-01,0.2,%,Singapore Department of Statistics,C2026-09
@@ -35541,6 +35684,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2009-05-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2009-05-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2009-05-01,89.634,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2009-05-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2009-05-01,73.331,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2009-05-01,-0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2009-05-01,-1.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2009-06-01,72.41,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2009-06-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2009-06-01,0.0,%,Singapore Department of Statistics,C2026-09
@@ -35624,6 +35770,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2009-06-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2009-06-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2009-06-01,89.591,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2009-06-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2009-06-01,73.331,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2009-06-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2009-06-01,-1.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2009-07-01,73.029,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2009-07-01,0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2009-07-01,-0.3,%,Singapore Department of Statistics,C2026-09
@@ -35707,6 +35856,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2009-07-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2009-07-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2009-07-01,89.365,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2009-07-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2009-07-01,73.331,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2009-07-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2009-07-01,-1.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2009-08-01,73.29,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2009-08-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2009-08-01,-0.3,%,Singapore Department of Statistics,C2026-09
@@ -35790,6 +35942,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2009-08-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2009-08-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2009-08-01,89.621,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2009-08-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2009-08-01,73.331,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2009-08-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2009-08-01,-1.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2009-09-01,73.034,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2009-09-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2009-09-01,-0.4,%,Singapore Department of Statistics,C2026-09
@@ -35873,6 +36028,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2009-09-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2009-09-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2009-09-01,89.657,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2009-09-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2009-09-01,73.331,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2009-09-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2009-09-01,-1.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2009-10-01,73.473,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2009-10-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2009-10-01,-0.9,%,Singapore Department of Statistics,C2026-09
@@ -35956,6 +36114,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2009-10-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2009-10-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2009-10-01,89.651,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2009-10-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2009-10-01,73.331,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2009-10-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2009-10-01,-2.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2009-11-01,73.514,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2009-11-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2009-11-01,-0.8,%,Singapore Department of Statistics,C2026-09
@@ -36039,6 +36200,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2009-11-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2009-11-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2009-11-01,89.731,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2009-11-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2009-11-01,73.343,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2009-11-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2009-11-01,-2.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2009-12-01,73.071,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2009-12-01,-0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2009-12-01,-0.5,%,Singapore Department of Statistics,C2026-09
@@ -36122,6 +36286,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2009-12-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2009-12-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2009-12-01,90.14,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2009-12-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2009-12-01,73.331,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2009-12-01,-0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2009-12-01,-2.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2010-01-01,73.616,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2010-01-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2010-01-01,0.2,%,Singapore Department of Statistics,C2026-09
@@ -36205,6 +36372,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2010-01-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2010-01-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2010-01-01,89.821,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2010-01-01,-0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2010-01-01,73.485,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2010-01-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2010-01-01,-2.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2010-02-01,73.93,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2010-02-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2010-02-01,1.0,%,Singapore Department of Statistics,C2026-09
@@ -36288,6 +36458,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2010-02-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2010-02-01,1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2010-02-01,89.866,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2010-02-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2010-02-01,73.497,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2010-02-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2010-02-01,-2.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2010-03-01,73.987,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2010-03-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2010-03-01,1.6,%,Singapore Department of Statistics,C2026-09
@@ -36371,6 +36544,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2010-03-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2010-03-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2010-03-01,89.843,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2010-03-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2010-03-01,73.497,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2010-03-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2010-03-01,-2.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2010-04-01,74.664,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2010-04-01,0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2010-04-01,3.2,%,Singapore Department of Statistics,C2026-09
@@ -36454,6 +36630,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2010-04-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2010-04-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2010-04-01,90.014,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2010-04-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2010-04-01,73.491,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2010-04-01,-0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2010-04-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2010-05-01,75.093,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2010-05-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2010-05-01,3.3,%,Singapore Department of Statistics,C2026-09
@@ -36537,6 +36716,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2010-05-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2010-05-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2010-05-01,90.033,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2010-05-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2010-05-01,73.491,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2010-05-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2010-05-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2010-06-01,74.377,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2010-06-01,-1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2010-06-01,2.7,%,Singapore Department of Statistics,C2026-09
@@ -36620,6 +36802,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2010-06-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2010-06-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2010-06-01,90.131,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2010-06-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2010-06-01,73.491,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2010-06-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2010-06-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2010-07-01,75.329,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2010-07-01,1.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2010-07-01,3.1,%,Singapore Department of Statistics,C2026-09
@@ -36703,6 +36888,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2010-07-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2010-07-01,0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2010-07-01,89.952,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2010-07-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2010-07-01,73.68,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2010-07-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2010-07-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2010-08-01,75.677,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2010-08-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2010-08-01,3.3,%,Singapore Department of Statistics,C2026-09
@@ -36786,6 +36974,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2010-08-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2010-08-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2010-08-01,90.386,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2010-08-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2010-08-01,73.68,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2010-08-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2010-08-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2010-09-01,75.72,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2010-09-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2010-09-01,3.7,%,Singapore Department of Statistics,C2026-09
@@ -36869,6 +37060,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2010-09-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2010-09-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2010-09-01,90.428,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2010-09-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2010-09-01,73.68,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2010-09-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2010-09-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2010-10-01,76.06,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2010-10-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2010-10-01,3.5,%,Singapore Department of Statistics,C2026-09
@@ -36952,6 +37146,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2010-10-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2010-10-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2010-10-01,90.535,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2010-10-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2010-10-01,73.679,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2010-10-01,-0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2010-10-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2010-11-01,76.312,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2010-11-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2010-11-01,3.8,%,Singapore Department of Statistics,C2026-09
@@ -37035,6 +37232,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2010-11-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2010-11-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2010-11-01,90.951,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2010-11-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2010-11-01,73.68,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2010-11-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2010-11-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2010-12-01,76.427,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2010-12-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2010-12-01,4.6,%,Singapore Department of Statistics,C2026-09
@@ -37118,6 +37318,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2010-12-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2010-12-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2010-12-01,91.015,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2010-12-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2010-12-01,73.689,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2010-12-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2010-12-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2011-01-01,77.674,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2011-01-01,1.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2011-01-01,5.5,%,Singapore Department of Statistics,C2026-09
@@ -37201,6 +37404,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2011-01-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2011-01-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2011-01-01,90.824,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2011-01-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2011-01-01,73.928,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2011-01-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2011-01-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2011-02-01,77.618,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2011-02-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2011-02-01,5.0,%,Singapore Department of Statistics,C2026-09
@@ -37284,6 +37490,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2011-02-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2011-02-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2011-02-01,90.766,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2011-02-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2011-02-01,73.926,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2011-02-01,-0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2011-02-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2011-03-01,77.722,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2011-03-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2011-03-01,5.0,%,Singapore Department of Statistics,C2026-09
@@ -37367,6 +37576,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2011-03-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2011-03-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2011-03-01,90.907,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2011-03-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2011-03-01,74.05,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2011-03-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2011-03-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2011-04-01,77.992,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2011-04-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2011-04-01,4.5,%,Singapore Department of Statistics,C2026-09
@@ -37450,6 +37662,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2011-04-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2011-04-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2011-04-01,90.99,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2011-04-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2011-04-01,74.178,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2011-04-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2011-04-01,0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2011-05-01,78.462,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2011-05-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2011-05-01,4.5,%,Singapore Department of Statistics,C2026-09
@@ -37533,6 +37748,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2011-05-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2011-05-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2011-05-01,90.942,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2011-05-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2011-05-01,74.191,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2011-05-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2011-05-01,1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2011-06-01,78.277,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2011-06-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2011-06-01,5.2,%,Singapore Department of Statistics,C2026-09
@@ -37616,6 +37834,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2011-06-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2011-06-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2011-06-01,91.021,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2011-06-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2011-06-01,74.182,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2011-06-01,-0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2011-06-01,0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2011-07-01,79.433,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2011-07-01,1.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2011-07-01,5.4,%,Singapore Department of Statistics,C2026-09
@@ -37699,6 +37920,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2011-07-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2011-07-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2011-07-01,91.175,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2011-07-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2011-07-01,74.24,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2011-07-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2011-07-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2011-08-01,80.005,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2011-08-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2011-08-01,5.7,%,Singapore Department of Statistics,C2026-09
@@ -37782,6 +38006,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2011-08-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2011-08-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2011-08-01,91.216,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2011-08-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2011-08-01,74.24,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2011-08-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2011-08-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2011-09-01,79.856,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2011-09-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2011-09-01,5.5,%,Singapore Department of Statistics,C2026-09
@@ -37865,6 +38092,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2011-09-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2011-09-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2011-09-01,91.275,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2011-09-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2011-09-01,74.24,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2011-09-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2011-09-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2011-10-01,80.183,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2011-10-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2011-10-01,5.4,%,Singapore Department of Statistics,C2026-09
@@ -37948,6 +38178,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2011-10-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2011-10-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2011-10-01,91.498,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2011-10-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2011-10-01,74.557,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2011-10-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2011-10-01,1.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2011-11-01,80.63,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2011-11-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2011-11-01,5.7,%,Singapore Department of Statistics,C2026-09
@@ -38031,6 +38264,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2011-11-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2011-11-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2011-11-01,91.412,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2011-11-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2011-11-01,74.653,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2011-11-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2011-11-01,1.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2011-12-01,80.663,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2011-12-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2011-12-01,5.5,%,Singapore Department of Statistics,C2026-09
@@ -38114,6 +38350,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2011-12-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2011-12-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2011-12-01,91.569,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2011-12-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2011-12-01,75.234,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2011-12-01,0.8,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2011-12-01,2.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2012-01-01,81.412,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2012-01-01,0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2012-01-01,4.8,%,Singapore Department of Statistics,C2026-09
@@ -38197,6 +38436,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2012-01-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2012-01-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2012-01-01,91.531,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2012-01-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2012-01-01,77.756,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2012-01-01,3.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2012-01-01,5.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2012-02-01,81.19,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2012-02-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2012-02-01,4.6,%,Singapore Department of Statistics,C2026-09
@@ -38280,6 +38522,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2012-02-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2012-02-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2012-02-01,91.823,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2012-02-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2012-02-01,77.866,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2012-02-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2012-02-01,5.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2012-03-01,81.806,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2012-03-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2012-03-01,5.3,%,Singapore Department of Statistics,C2026-09
@@ -38363,6 +38608,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2012-03-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2012-03-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2012-03-01,91.575,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2012-03-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2012-03-01,77.866,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2012-03-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2012-03-01,5.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2012-04-01,82.245,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2012-04-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2012-04-01,5.5,%,Singapore Department of Statistics,C2026-09
@@ -38446,6 +38694,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2012-04-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2012-04-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2012-04-01,91.642,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2012-04-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2012-04-01,77.887,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2012-04-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2012-04-01,5.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2012-05-01,82.418,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2012-05-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2012-05-01,5.0,%,Singapore Department of Statistics,C2026-09
@@ -38529,6 +38780,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2012-05-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2012-05-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2012-05-01,91.543,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2012-05-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2012-05-01,77.887,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2012-05-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2012-05-01,5.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2012-06-01,82.423,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2012-06-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2012-06-01,5.3,%,Singapore Department of Statistics,C2026-09
@@ -38612,6 +38866,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2012-06-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2012-06-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2012-06-01,91.83,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2012-06-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2012-06-01,77.887,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2012-06-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2012-06-01,5.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2012-07-01,82.614,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2012-07-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2012-07-01,4.0,%,Singapore Department of Statistics,C2026-09
@@ -38695,6 +38952,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2012-07-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2012-07-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2012-07-01,91.993,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2012-07-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2012-07-01,77.887,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2012-07-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2012-07-01,4.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2012-08-01,83.128,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2012-08-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2012-08-01,3.9,%,Singapore Department of Statistics,C2026-09
@@ -38778,6 +39038,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2012-08-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2012-08-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2012-08-01,92.153,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2012-08-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2012-08-01,77.887,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2012-08-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2012-08-01,4.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2012-09-01,83.604,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2012-09-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2012-09-01,4.7,%,Singapore Department of Statistics,C2026-09
@@ -38861,6 +39124,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2012-09-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2012-09-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2012-09-01,92.457,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2012-09-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2012-09-01,77.887,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2012-09-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2012-09-01,4.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2012-10-01,83.434,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2012-10-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2012-10-01,4.1,%,Singapore Department of Statistics,C2026-09
@@ -38944,6 +39210,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2012-10-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2012-10-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2012-10-01,92.651,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2012-10-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2012-10-01,77.883,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2012-10-01,-0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2012-10-01,4.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2012-11-01,83.54,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2012-11-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2012-11-01,3.6,%,Singapore Department of Statistics,C2026-09
@@ -39027,6 +39296,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2012-11-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2012-11-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2012-11-01,93.048,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2012-11-01,0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2012-11-01,77.883,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2012-11-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2012-11-01,4.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2012-12-01,84.151,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2012-12-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2012-12-01,4.3,%,Singapore Department of Statistics,C2026-09
@@ -39110,6 +39382,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2012-12-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2012-12-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2012-12-01,93.234,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2012-12-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2012-12-01,77.883,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2012-12-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2012-12-01,3.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2013-01-01,84.315,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2013-01-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2013-01-01,3.6,%,Singapore Department of Statistics,C2026-09
@@ -39193,6 +39468,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2013-01-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2013-01-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2013-01-01,93.697,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2013-01-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2013-01-01,78.098,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2013-01-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2013-01-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2013-02-01,85.162,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2013-02-01,1.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2013-02-01,4.9,%,Singapore Department of Statistics,C2026-09
@@ -39276,6 +39554,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2013-02-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2013-02-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2013-02-01,93.694,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2013-02-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2013-02-01,78.138,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2013-02-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2013-02-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2013-03-01,84.703,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2013-03-01,-0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2013-03-01,3.5,%,Singapore Department of Statistics,C2026-09
@@ -39359,6 +39640,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2013-03-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2013-03-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2013-03-01,93.904,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2013-03-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2013-03-01,78.098,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2013-03-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2013-03-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2013-04-01,83.448,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2013-04-01,-1.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2013-04-01,1.5,%,Singapore Department of Statistics,C2026-09
@@ -39442,6 +39726,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2013-04-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2013-04-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2013-04-01,93.796,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2013-04-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2013-04-01,78.098,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2013-04-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2013-04-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2013-05-01,83.746,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2013-05-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2013-05-01,1.6,%,Singapore Department of Statistics,C2026-09
@@ -39525,6 +39812,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2013-05-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2013-05-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2013-05-01,94.114,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2013-05-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2013-05-01,78.098,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2013-05-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2013-05-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2013-06-01,83.917,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2013-06-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2013-06-01,1.8,%,Singapore Department of Statistics,C2026-09
@@ -39608,6 +39898,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2013-06-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2013-06-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2013-06-01,94.105,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2013-06-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2013-06-01,78.098,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2013-06-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2013-06-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2013-07-01,84.151,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2013-07-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2013-07-01,1.9,%,Singapore Department of Statistics,C2026-09
@@ -39691,6 +39984,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2013-07-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2013-07-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2013-07-01,93.833,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2013-07-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2013-07-01,78.118,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2013-07-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2013-07-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2013-08-01,84.829,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2013-08-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2013-08-01,2.0,%,Singapore Department of Statistics,C2026-09
@@ -39774,6 +40070,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2013-08-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2013-08-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2013-08-01,93.915,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2013-08-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2013-08-01,78.118,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2013-08-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2013-08-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2013-09-01,84.954,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2013-09-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2013-09-01,1.6,%,Singapore Department of Statistics,C2026-09
@@ -39857,6 +40156,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2013-09-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2013-09-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2013-09-01,93.989,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2013-09-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2013-09-01,78.118,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2013-09-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2013-09-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2013-10-01,85.088,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2013-10-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2013-10-01,2.0,%,Singapore Department of Statistics,C2026-09
@@ -39940,6 +40242,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2013-10-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2013-10-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2013-10-01,93.948,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2013-10-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2013-10-01,78.284,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2013-10-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2013-10-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2013-11-01,85.689,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2013-11-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2013-11-01,2.6,%,Singapore Department of Statistics,C2026-09
@@ -40023,6 +40328,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2013-11-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2013-11-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2013-11-01,94.134,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2013-11-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2013-11-01,78.284,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2013-11-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2013-11-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2013-12-01,85.417,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2013-12-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2013-12-01,1.5,%,Singapore Department of Statistics,C2026-09
@@ -40106,6 +40414,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2013-12-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2013-12-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2013-12-01,93.979,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2013-12-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2013-12-01,78.322,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2013-12-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2013-12-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2014-01-01,85.511,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2014-01-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2014-01-01,1.4,%,Singapore Department of Statistics,C2026-09
@@ -40192,6 +40503,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2014-01-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2014-01-01,0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2014-01-01,94.258,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2014-01-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2014-01-01,78.736,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2014-01-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2014-01-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2014-02-01,85.491,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2014-02-01,0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2014-02-01,0.4,%,Singapore Department of Statistics,C2026-09
@@ -40281,6 +40595,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2014-02-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2014-02-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2014-02-01,93.995,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2014-02-01,-0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2014-02-01,78.707,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2014-02-01,-0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2014-02-01,0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2014-03-01,85.719,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2014-03-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2014-03-01,1.2,%,Singapore Department of Statistics,C2026-09
@@ -40370,6 +40687,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2014-03-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2014-03-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2014-03-01,94.748,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2014-03-01,0.8,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2014-03-01,78.707,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2014-03-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2014-03-01,0.8,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2014-04-01,85.369,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2014-04-01,-0.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2014-04-01,2.3,%,Singapore Department of Statistics,C2026-09
@@ -40459,6 +40779,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2014-04-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2014-04-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2014-04-01,95.454,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2014-04-01,0.7,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2014-04-01,79.898,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2014-04-01,1.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2014-04-01,2.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2014-05-01,85.656,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2014-05-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2014-05-01,2.3,%,Singapore Department of Statistics,C2026-09
@@ -40548,6 +40871,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2014-05-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2014-05-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2014-05-01,95.381,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2014-05-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2014-05-01,80.108,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2014-05-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2014-05-01,2.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2014-06-01,85.513,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2014-06-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2014-06-01,1.9,%,Singapore Department of Statistics,C2026-09
@@ -40637,6 +40963,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2014-06-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2014-06-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2014-06-01,95.182,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2014-06-01,-0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2014-06-01,80.108,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2014-06-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2014-06-01,2.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2014-07-01,85.258,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2014-07-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2014-07-01,1.3,%,Singapore Department of Statistics,C2026-09
@@ -40726,6 +41055,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2014-07-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2014-07-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2014-07-01,95.676,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2014-07-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2014-07-01,80.108,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2014-07-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2014-07-01,2.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2014-08-01,85.714,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2014-08-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2014-08-01,1.0,%,Singapore Department of Statistics,C2026-09
@@ -40815,6 +41147,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2014-08-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2014-08-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2014-08-01,95.582,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2014-08-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2014-08-01,80.108,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2014-08-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2014-08-01,2.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2014-09-01,85.556,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2014-09-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2014-09-01,0.7,%,Singapore Department of Statistics,C2026-09
@@ -40904,6 +41239,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2014-09-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2014-09-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2014-09-01,95.161,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2014-09-01,-0.4,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2014-09-01,80.108,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2014-09-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2014-09-01,2.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2014-10-01,85.3,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2014-10-01,-0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2014-10-01,0.2,%,Singapore Department of Statistics,C2026-09
@@ -40993,6 +41331,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2014-10-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2014-10-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2014-10-01,95.616,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2014-10-01,0.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2014-10-01,80.126,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2014-10-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2014-10-01,2.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2014-11-01,85.46,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2014-11-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2014-11-01,-0.3,%,Singapore Department of Statistics,C2026-09
@@ -41082,6 +41423,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2014-11-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2014-11-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2014-11-01,95.517,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2014-11-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2014-11-01,80.131,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2014-11-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2014-11-01,2.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2014-12-01,85.363,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2014-12-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2014-12-01,-0.1,%,Singapore Department of Statistics,C2026-09
@@ -41171,6 +41515,9 @@ SG,cpi,education_sa,"Education, seasonally adjusted",index,national,M,2014-12-01
 SG,cpi,education_sa,"Education, seasonally adjusted",mom,national,M,2014-12-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",index,national,M,2014-12-01,95.405,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,misc_sa,"Miscellaneous goods and services, seasonally adjusted",mom,national,M,2014-12-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2014-12-01,80.135,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2014-12-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2014-12-01,2.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,index,national,M,2015-01-01,85.179,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,mom,national,M,2015-01-01,-0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,all,All items,yoy,national,M,2015-01-01,-0.4,%,Singapore Department of Statistics,C2026-09
@@ -41281,6 +41628,8 @@ SG,cpi,shared,In both MAS core and CPI less food and energy (calculated),index,n
 SG,cpi,exfe_only,In CPI less food and energy only: accommodation and private transport excl. fuel (calculated),index,national,M,2015-01-01,89.744,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_health,Services: health (calculated),index,national,M,2015-01-01,80.91,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2015-01-01,80.414,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2015-01-01,0.3,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2015-01-01,2.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),index,national,M,2015-01-01,96.935,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_rent,Services: actual rentals (calculated),index,national,M,2015-01-01,100.985,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_imputed,Services: imputed rentals (calculated),index,national,M,2015-01-01,101.372,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
@@ -41416,6 +41765,7 @@ SG,cpi,svc_health,Services: health (calculated),index,national,M,2015-02-01,80.9
 SG,cpi,svc_health,Services: health (calculated),mom,national,M,2015-02-01,0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2015-02-01,80.497,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2015-02-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2015-02-01,2.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),index,national,M,2015-02-01,100.668,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),mom,national,M,2015-02-01,3.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_rent,Services: actual rentals (calculated),index,national,M,2015-02-01,100.816,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
@@ -41558,6 +41908,7 @@ SG,cpi,svc_health,Services: health (calculated),index,national,M,2015-03-01,81.2
 SG,cpi,svc_health,Services: health (calculated),mom,national,M,2015-03-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2015-03-01,80.407,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2015-03-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2015-03-01,2.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),index,national,M,2015-03-01,94.059,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),mom,national,M,2015-03-01,-6.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_rent,Services: actual rentals (calculated),index,national,M,2015-03-01,100.587,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
@@ -41700,6 +42051,7 @@ SG,cpi,svc_health,Services: health (calculated),index,national,M,2015-04-01,81.3
 SG,cpi,svc_health,Services: health (calculated),mom,national,M,2015-04-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2015-04-01,81.622,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2015-04-01,1.5,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2015-04-01,2.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),index,national,M,2015-04-01,93.213,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),mom,national,M,2015-04-01,-0.9,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_rent,Services: actual rentals (calculated),index,national,M,2015-04-01,100.313,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
@@ -41842,6 +42194,7 @@ SG,cpi,svc_health,Services: health (calculated),index,national,M,2015-05-01,81.6
 SG,cpi,svc_health,Services: health (calculated),mom,national,M,2015-05-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2015-05-01,81.81,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2015-05-01,0.2,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2015-05-01,2.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),index,national,M,2015-05-01,91.904,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),mom,national,M,2015-05-01,-1.4,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_rent,Services: actual rentals (calculated),index,national,M,2015-05-01,100.042,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
@@ -41984,6 +42337,7 @@ SG,cpi,svc_health,Services: health (calculated),index,national,M,2015-06-01,81.8
 SG,cpi,svc_health,Services: health (calculated),mom,national,M,2015-06-01,0.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2015-06-01,81.882,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2015-06-01,0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2015-06-01,2.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),index,national,M,2015-06-01,91.861,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),mom,national,M,2015-06-01,-0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_rent,Services: actual rentals (calculated),index,national,M,2015-06-01,99.753,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
@@ -42126,6 +42480,7 @@ SG,cpi,svc_health,Services: health (calculated),index,national,M,2015-07-01,82.2
 SG,cpi,svc_health,Services: health (calculated),mom,national,M,2015-07-01,0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2015-07-01,81.907,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2015-07-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2015-07-01,2.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),index,national,M,2015-07-01,93.068,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),mom,national,M,2015-07-01,1.3,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_rent,Services: actual rentals (calculated),index,national,M,2015-07-01,99.423,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
@@ -42268,6 +42623,7 @@ SG,cpi,svc_health,Services: health (calculated),index,national,M,2015-08-01,82.4
 SG,cpi,svc_health,Services: health (calculated),mom,national,M,2015-08-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2015-08-01,80.588,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2015-08-01,-1.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2015-08-01,0.6,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),index,national,M,2015-08-01,92.942,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),mom,national,M,2015-08-01,-0.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_rent,Services: actual rentals (calculated),index,national,M,2015-08-01,99.1,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
@@ -42410,6 +42766,7 @@ SG,cpi,svc_health,Services: health (calculated),index,national,M,2015-09-01,82.4
 SG,cpi,svc_health,Services: health (calculated),mom,national,M,2015-09-01,-0.0,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2015-09-01,81.901,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2015-09-01,1.6,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2015-09-01,2.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),index,national,M,2015-09-01,92.327,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),mom,national,M,2015-09-01,-0.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_rent,Services: actual rentals (calculated),index,national,M,2015-09-01,98.812,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
@@ -42552,6 +42909,7 @@ SG,cpi,svc_health,Services: health (calculated),index,national,M,2015-10-01,82.5
 SG,cpi,svc_health,Services: health (calculated),mom,national,M,2015-10-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2015-10-01,81.883,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2015-10-01,-0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2015-10-01,2.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),index,national,M,2015-10-01,91.838,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),mom,national,M,2015-10-01,-0.5,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_rent,Services: actual rentals (calculated),index,national,M,2015-10-01,98.54,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
@@ -42694,6 +43052,7 @@ SG,cpi,svc_health,Services: health (calculated),index,national,M,2015-11-01,81.1
 SG,cpi,svc_health,Services: health (calculated),mom,national,M,2015-11-01,-1.7,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2015-11-01,81.898,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2015-11-01,0.0,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2015-11-01,2.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),index,national,M,2015-11-01,93.848,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),mom,national,M,2015-11-01,2.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_rent,Services: actual rentals (calculated),index,national,M,2015-11-01,98.27,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
@@ -42836,6 +43195,7 @@ SG,cpi,svc_health,Services: health (calculated),index,national,M,2015-12-01,81.3
 SG,cpi,svc_health,Services: health (calculated),mom,national,M,2015-12-01,0.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),index,national,M,2015-12-01,81.817,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_land,Services: land transport (calculated),mom,national,M,2015-12-01,-0.1,%,Singapore Department of Statistics,C2026-09
+SG,cpi,svc_land,Services: land transport (calculated),yoy,national,M,2015-12-01,2.1,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),index,national,M,2015-12-01,99.661,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
 SG,cpi,svc_air,Services: airfares (calculated),mom,national,M,2015-12-01,6.2,%,Singapore Department of Statistics,C2026-09
 SG,cpi,svc_rent,Services: actual rentals (calculated),index,national,M,2015-12-01,97.979,"index, 2024 = 100",Singapore Department of Statistics,C2026-09
