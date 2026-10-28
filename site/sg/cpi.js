@@ -124,14 +124,14 @@ dash.calc('cpi_heat', {
 
 dash.calc('cpi_ctab', {
   title: 'Contributions to CPI y/y',
-  description: 'Contributions (ppt) to CPI y/y of MAS core, food and energy, and of accommodation, private transport and the five parts of MAS core, which add up to CPI y/y, with selected items, and their 2024 basket weights per 10,000, from Jan 2026.',
+  description: 'Contributions (ppt) to CPI y/y of MAS core, food, energy and CPI less food and energy, and of accommodation, private transport and the five parts of MAS core, which add up to CPI y/y, with selected items, and their 2024 basket weights per 10,000, from Jan 2026.',
   inputs: ['sg_cpi_contrib'],
   fn: (sg_cpi_contrib) => {
-    const W = { all: 10000, core: 6438, food: 2042, food_x: 651, fbss_x: 1391, energy: 376, electricity: 179, gas: 19, petrol_e: 174, other_fuels: 4,
+    const W = { all: 10000, core: 6438, exfe: 8973, food: 2042, food_x: 651, fbss_x: 1391, energy: 376, electricity: 179, gas: 19, petrol_e: 174, other_fuels: 4,
       accommodation: 2656, imputed_rentals: 2138, actual_rentals: 294, private_transport: 906, motor_cars: 459, petrol: 174,
       food_ex_fbss: 651, fbss: 1391, elec_gas: 198, services: 3173, retail_goods: 1025 };
-    const ROWS = ['all', 'core', 'accommodation', 'imputed_rentals', 'actual_rentals', 'private_transport', 'motor_cars', 'petrol',
-      'food', 'food_x', 'fbss_x', 'energy', 'electricity', 'gas', 'petrol_e', 'other_fuels',
+    const ROWS = ['all', 'accommodation', 'imputed_rentals', 'actual_rentals', 'private_transport', 'motor_cars', 'petrol', 'core',
+      'food', 'food_x', 'fbss_x', 'energy', 'electricity', 'gas', 'petrol_e', 'other_fuels', 'exfe',
       'food_ex_fbss', 'fbss', 'elec_gas', 'services', 'retail_goods'];
     return sg_cpi_contrib.filter((r) => r.series.startsWith('tb_') && r.date >= '2026-01-01' && r.contrib_yoy != null && r.contrib_yoy !== '')
       .map((r) => { const k = r.series.slice(3); return { date: r.date, series: k, name: r.label, contrib: Number(r.contrib_yoy), order: ROWS.indexOf(k), weight: W[k] }; })
@@ -644,7 +644,7 @@ dash.calc('cpi_ctab', {
   }
 
   // Contribution table: contributions (ppt) to CPI y/y by month; the parts add up to CPI. Parts share one colour scale
-  // (green below zero, white at zero, red above); CPI and MAS core are coloured on their own range, as in Table 1.
+  // (green below zero, white at zero, red above); CPI, MAS core and CPI less food and energy are coloured on their own range, as in Table 1.
   function ctab() {
     const tbl = document.getElementById('cpi-ctab-table');
     if (!tbl) return;
@@ -661,7 +661,7 @@ dash.calc('cpi_ctab', {
     const CHILDREN = { food: ['food_x', 'fbss_x'], energy: ['electricity', 'gas', 'petrol_e', 'other_fuels'],
       accommodation: ['imputed_rentals', 'actual_rentals'], private_transport: ['motor_cars', 'petrol'] };
     const PARENT = {}; Object.entries(CHILDREN).forEach(([p, cs]) => cs.forEach((c) => { PARENT[c] = p; }));
-    const OWN = ['all', 'core'];  // coloured on their own range
+    const OWN = ['all', 'core', 'exfe'];  // coloured on their own range
     const parts = D.data.filter((r) => !OWN.includes(r.series) && !PARENT[r.series]);
     const amax = Math.max(1e-9, ...parts.map((r) => Math.abs(r.contrib)));
     const OPEN = (J.state.ctabOpen = J.state.ctabOpen || {});
@@ -686,7 +686,7 @@ dash.calc('cpi_ctab', {
         nc.appendChild(b);
       } else nc.textContent = label;
       if (PARENT[k] && !OPEN[PARENT[k]]) tr.hidden = true;
-      if (['all', 'core', 'accommodation', 'private_transport', 'food', 'energy'].includes(k)) tr.className = 'lead';
+      if (['all', 'core', 'accommodation', 'private_transport', 'food', 'energy', 'exfe'].includes(k)) tr.className = 'lead';
       if (PARENT[k]) tr.className = 'sub';
       const wt = D.data.find((r) => r.series === k).weight;
       const wc = tr.insertCell(); wc.className = 'wt'; wc.textContent = wt == null ? '' : d3.format('.1f')(wt / 100);

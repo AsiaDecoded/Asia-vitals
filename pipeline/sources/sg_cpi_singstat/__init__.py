@@ -100,7 +100,7 @@ DIVISIONS = ["1.01", "1.02", "1.03", "1.04", "1.05", "1.06", "1.07", "1.08", "1.
 DIFFUSION_START = "2016-01-01"
 FUEL_ITEMS = ["1.03.2.3", "1.03.2.4", "1.06.1.5", "1.06.1.6"]  # electricity, gas, petrol, other fuel & lubricants
 TOL = 0.01
-VERSION = 34  # bump when the outputs change, so the next run rebuilds them
+VERSION = 35  # bump when the outputs change, so the next run rebuilds them
 
 
 def _date(key):
@@ -361,7 +361,8 @@ TB_ITEMS = [("imputed_rentals", "Imputed rentals", "1.03.1.2", 2138), ("actual_r
             ("electricity", "Electricity", "1.03.2.3", 179), ("gas", "Gas", "1.03.2.4", 19),
             ("petrol_e", "Petrol", "1.06.1.5", 174), ("other_fuels", "Other fuel and lubricants", "1.06.1.6", 4)]
 # Groups shown above the additive parts: MAS core (its five parts), food (food excl. FBSS + FBSS) and energy
-# (electricity, gas, petrol, other fuel and lubricants), each the sum of its parts' contributions.
+# (electricity, gas, petrol, other fuel and lubricants), each the sum of its parts' contributions; and CPI less food
+# and energy, CPI less food excl. FBSS and energy.
 TB_GROUPS = [("core", "MAS core", ("food_ex_fbss", "fbss", "elec_gas", "services", "retail_goods")),
              ("food", "Food", ("food_x", "fbss_x")), ("energy", "Energy", ("electricity", "gas", "petrol_e", "other_fuels"))]
 
@@ -385,6 +386,8 @@ def _contrib_table(idx, mas, errors):
         rows.append({"date": t, "series": "tb_all", "label": "CPI", "order": 50, "contrib_yoy": round(tot, 2)})
         for k, lab, ks in TB_GROUPS:
             rows.append({"date": t, "series": "tb_" + k, "label": lab, "order": 50, "contrib_yoy": round(sum(C[x] for x in ks), 2)})
+        exfe = tot - C["food_x"] - sum(C[x] for x in ("electricity", "gas", "petrol_e", "other_fuels"))
+        rows.append({"date": t, "series": "tb_exfe", "label": "CPI less food and energy", "order": 50, "contrib_yoy": round(exfe, 2)})
         for i, (k, lab, *_r) in enumerate(TB_PARTS + TB_ITEMS, 1):
             rows.append({"date": t, "series": "tb_" + k, "label": lab, "order": 50 + i, "contrib_yoy": round(C[k], 2)})
     return rows
