@@ -1,0 +1,6 @@
+== my_cpi_dosm
+   UPDATED: Sep 2026: CPI 1.8% y/y, core 1.7%; 7755 rows
+== my_ppi_dosm
+   UPDATED: Aug 2026: PPI 10.7% y/y, 1.5% m/m seasonally adjusted; 1200 rows
+== combined long file: 262335 rows
+result: updated=['my_cpi_dosm', 'my_ppi_dosm'] failed=-
