@@ -5,7 +5,7 @@ As published, nothing calculated: Table 1 of each release, January 2025 on (the 
 the general (Umum Nasional) index and its five sections: index, m/m, year to date, y/y, and contributions (andil)
 to m/m and y/y. A month is kept only if its published m/m and y/y agree with its published indices (within 0.02).
 Released with the CPI, on the first working day of the following month.
-Text of every release read: raw/id/wpi_bps/brs/<YYYY-MM>.txt.gz.
+Text of every release read (kept, so later runs download only new releases): raw/id/wpi_bps/brs/<YYYY-MM>.txt.gz.
 """
 import csv
 import gzip
