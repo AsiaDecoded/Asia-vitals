@@ -409,7 +409,7 @@ dash.calc('cpi_heat', {
     const rows = J.slice(all, 'cpi-momentum');
     if (!rows.length) { box.replaceChildren(); return; }
     const name = document.querySelector(`#cpi-sa-seg [data-s="${k}"]`).textContent;
-    legend('cpi-sa-legend', [{ name: name + ', 3m/3m annualised, SA', color: J.PAL[0], bar: true }, { name: 'CPI, y/y', color: J.PAL[1] }]);
+    legend('cpi-sa-legend', [{ name: 'CPI, y/y', color: J.PAL[1] }, { name: name + ', 3m/3m annualised, SA', color: J.PAL[0], bar: true }]);
     const W = box.clientWidth, H = 280;
     box.replaceChildren();
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
@@ -437,7 +437,7 @@ dash.calc('cpi_heat', {
       .on('mousemove', (ev) => {
         const i = Math.max(0, Math.min(rows.length - 1, Math.floor((d3.pointer(ev)[0] - ml) / x.step())));
         const cr = card.getBoundingClientRect();
-        J.showTip(card, tip, mLabel(rows[i].date), [[J.PAL[0], name + ', 3m/3m ann. SA', pct(rows[i][k])], [J.PAL[1], 'CPI, y/y', pct(rows[i].yoy)]], ev.clientX - cr.left, ev.clientY - cr.top);
+        J.showTip(card, tip, mLabel(rows[i].date), [[J.PAL[1], 'CPI, y/y', pct(rows[i].yoy)], [J.PAL[0], name + ', 3m/3m ann. SA', pct(rows[i][k])]], ev.clientX - cr.left, ev.clientY - cr.top);
       })
       .on('mouseleave', () => { tip.style.display = 'none'; });
   }
