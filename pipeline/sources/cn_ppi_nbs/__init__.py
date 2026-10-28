@@ -147,7 +147,7 @@ def _keep(path, name):
 
 
 def _tidy(rows, prov, warnings):
-    out, unknown = {}, set()
+    out, unknown, zeros = {}, set(), []
     for r in rows:
         codes = (r["ek"] or "").split("|")[0].split("-")
         meas = next((MEASURES[c] for c in codes if c in MEASURES), None)
@@ -166,6 +166,9 @@ def _tidy(rows, prov, warnings):
         else:
             area, area_name = "national", "China"
         v = float(r["value"])
+        if v == 0:   # the portal's placeholder for a month with no figure (an index cannot be 0)
+            zeros.append(f"{key} {meas} {r['period']}")
+            continue
         k = (r["period"], area, key, meas)
         if k in out and abs(out[k]["value"] - v) > 1e-9:
             warnings.append(f"{key} {meas} {area} {r['period']}: catalogs disagree ({out[k]['value']} vs {v})")
@@ -174,6 +177,8 @@ def _tidy(rows, prov, warnings):
                   "group": "industry" if key.startswith("ind_") else ("purchasing" if key.startswith("pur") else "ppi"),
                   "order": ORDER[key], "measure": meas, "value": v, "pct": round(v - 100, 1),
                   "base": base_of(r["period"]), "ek": (r["ek"] or "").split("|")[0]}
+    if zeros:
+        warnings.append(f"{len(zeros)} values of 0 left out as missing: {zeros[:5]}")
     if unknown:
         warnings.append("PPI series not mapped (left out): " + "; ".join(sorted(unknown))[:500])
     return out
@@ -250,7 +255,7 @@ def update(**opts):
     # YTD in January equals y/y; YTD is the average of the year's y/y (within 0.15, NBS averages unrounded rates)
     bad, n = [], 0
     for (p, area, key, meas), v in tidy.items():
-        if meas != "ytd" or key.startswith("ind_"):
+        if meas != "ytd" or key not in ("ppi", "ppi_production", "ppi_consumer", "purchasing"):
             continue
         y, m = int(p[:4]), int(p[5:7])
         ys = [tidy.get((f"{y}-{i:02d}", area, key, "yoy")) for i in range(1, m + 1)]

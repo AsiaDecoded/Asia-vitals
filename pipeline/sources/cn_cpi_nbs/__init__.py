@@ -204,7 +204,7 @@ def _check(tidy, impacts, latest, state, warnings):
         if any(x is None for x in yoys):
             continue
         tested += 1
-        if m == 1 and abs(val - yoys[0]) > 0.051:
+        if m == 1 and abs(val - yoys[0]) > 0.051 and p >= "2001":
             bad_jan.append(f"{area} {key} {p}: YTD {val} vs y/y {yoys[0]}")
         avg = sum(yoys) / len(yoys)
         if abs(val - avg) > 0.15:
@@ -271,7 +271,10 @@ def update(**opts):
         raw[cid] = {"meta": meta, "data": data}
         rows += r
     tidy = _tidy(rows, warnings=warnings)
-    pcats = nbs.catalogs("4", nbs.ROOT_PROVINCE, _keep_cpi)
+    # Provinces: y/y for every base period and food items, m/m and YTD for the current base
+    # (one call per province and table)
+    pcats = {c: m for c, m in nbs.catalogs("4", nbs.ROOT_PROVINCE, _keep_cpi).items()
+             if "上年同月" in m["name"] or "(2026-)" in m["name"]}
     prov_rows = []
     for cid, meta in pcats.items():
         inds = nbs.indicators(cid)

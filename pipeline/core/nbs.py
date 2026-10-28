@@ -135,12 +135,14 @@ def provinces():
 
 
 def province_rows(cid, ids, start="198301", end="203012"):
-    """Rows for every province: the provinces passed explicitly as areas (das). Passing the area
-    catalog id ('全部地区') as daCatalogId returns only the first province."""
-    das = [{"text": p.get("text"), "value": p.get("value")} for p in provinces()]
-    if not das:
-        raise NBSError("province list is empty")
-    rows, data = table(cid, ids, start, end, root=ROOT_PROVINCE, das=das)
+    """Rows for every province, one call per province: a call with several areas (das) or with the
+    area catalog ('全部地区') as daCatalogId returns only the first province."""
+    rows, data = [], []
+    for p in provinces():
+        r, d = table(cid, ids, start, end, root=ROOT_PROVINCE, das=[{"text": p.get("text"), "value": p.get("value")}])
+        rows += r
+        data.append({"area": p.get("value"), "data": d})
+        time.sleep(0.2)
     if not rows:
         raise NBSError(f"no provincial rows for catalog {cid}")
     return rows, data
