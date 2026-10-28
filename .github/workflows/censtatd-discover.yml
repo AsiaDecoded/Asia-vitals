@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Probe Hong Kong sources
-        run: python -I pipeline/tools/censtatd_discover.py discovery/censtatd
+        run: python -I pipeline/tools/censtatd_discover.py discovery/censtatd2 round2
       - name: Push results to the discovery branch
         run: |
           git config user.name "asia-vitals bot"
@@ -35,7 +35,7 @@ jobs:
           else
             git checkout --orphan discovery && git rm -rf --quiet --cached .
           fi
-          mkdir -p discovery && rm -rf discovery/censtatd && cp -r /tmp/discovery/censtatd discovery/
-          git add discovery/censtatd
+          mkdir -p discovery && rm -rf discovery/censtatd2 && cp -r /tmp/discovery/censtatd2 discovery/
+          git add discovery/censtatd2
           git commit -m "C&SD discovery"
           git push origin discovery

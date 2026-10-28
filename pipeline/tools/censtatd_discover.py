@@ -180,5 +180,58 @@ def main():
     (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
 
 
+def round2():
+    """Section-level tables, the monthly report's Excel/CSV/XML files, catalogue entries for
+    reports and trade price indices, and the C&SD release schedules."""
+    for tid in ("510-60001A", "510-60002A"):
+        fetch(f"csd_{tid}", f"{CSD}/api/get.php?{urllib.parse.urlencode({'id': tid, 'lang': 'en', 'full_series': 1})}",
+              timeout=150)
+    for ym in ("2026MM09", "2026MM08"):
+        code = f"B1060001{ym}"
+        for fmt, ext in (("excel", ".xlsx"), ("csv", ".csv"), ("xml", ".xml")):
+            if ym != "2026MM09" and fmt != "excel":
+                continue
+            fetch(f"report_{code}_{fmt}", f"{CSD}/en/wbr.html?ecode={code}&download_{fmt}=1", ext=ext, timeout=150)
+        fetch(f"report_{code}_page", f"{CSD}/en/wbr.html?ecode={code}", ext=".html")
+    ck = "https://data.gov.hk/en-data/api/3/action"
+    for pk in ("b1060001", "b1060003", "b1070003", "d5600001", "fa100117", "fa100024", "510-60001a", "520-62001"):
+        fetch(f"ckan_show_{pk}", f"{ck}/package_show?id=hk-censtatd-tablechart-{pk}")
+    hits = {}
+    for q in ("unit value index", "trade index numbers", "import price", "export price",
+              "Consumer Price Index weights", "Household Expenditure Survey"):
+        st, body = fetch(f"ckan_q_{re.sub(r'[^a-z0-9]+', '_', q.lower())}",
+                         f"{ck}/package_search?{urllib.parse.urlencode({'q': q, 'fq': 'organization:hk-censtatd', 'rows': 200})}")
+        o = as_json(body) if st == 200 else None
+        for p in ((o or {}).get("result") or {}).get("results") or []:
+            hits[p["name"]] = {"title": p.get("title"),
+                               "resources": [r.get("url") for r in p.get("resources") or []][:4]}
+        if not ((o or {}).get("result") or {}).get("results"):
+            st, body = fetch(f"ckan_q2_{re.sub(r'[^a-z0-9]+', '_', q.lower())}",
+                             f"{ck}/package_search?{urllib.parse.urlencode({'q': q + ' censtatd', 'rows': 200})}")
+            o = as_json(body) if st == 200 else None
+            for p in ((o or {}).get("result") or {}).get("results") or []:
+                if "censtatd" in p["name"]:
+                    hits[p["name"]] = {"title": p.get("title"),
+                                       "resources": [r.get("url") for r in p.get("resources") or []][:4]}
+    (OUT / "ckan_hits_round2.json").write_text(json.dumps(hits, ensure_ascii=False, indent=1))
+    # Release schedules: 2026 (announced Sep 2025) and 2027 (announced around mid-Sep 2026)
+    fetch("gia_schedule_2026", "https://www.info.gov.hk/gia/general/202509/15/P2025091200738.htm", ext=".html")
+    found = []
+    for d in range(8, 31):
+        st, body = fetch(f"gia_index_202609{d:02d}", f"https://www.info.gov.hk/gia/general/202609/{d:02d}.htm",
+                         ext=".html", keep=False)
+        txt = body.decode("utf-8", "replace") if body else ""
+        for m in re.finditer(r'href="([^"]+P20\d+\.htm)"[^>]*>([^<]*(?:schedule|Schedule)[^<]*)<', txt):
+            found.append({"day": d, "href": m.group(1), "title": m.group(2).strip()})
+    for i, f in enumerate(found):
+        f["url"] = urllib.parse.urljoin("https://www.info.gov.hk/gia/general/202609/01.htm", f["href"])
+        fetch(f"gia_schedule_2027_{i}", f["url"], ext=".html")
+    (OUT / "gia_schedule_2027.json").write_text(json.dumps(found, ensure_ascii=False, indent=1))
+    (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
+
+
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 2 and sys.argv[2] == "round2":
+        round2()
+    else:
+        main()
