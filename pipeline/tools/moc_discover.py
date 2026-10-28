@@ -1,10 +1,6 @@
-"""Probe TPSO's Open API (index-api.tpso.go.th), round 4.
+"""Probe TPSO's Open API (index-api.tpso.go.th), round 5: CPI with a region type, timings, release stamps.
 
   python -I pipeline/tools/moc_discover.py OUTDIR
-
-GET /OpenApi/<Family>/Month/MasterData and POST /OpenApi/<Family>/Month for the latest months of each base,
-for CPI (Cpig, Cpil, Cpiu), PPI and export/import prices (Imex); plus TPSO's COICOP 2018 file and the
-CPI methodology PDF.
 """
 import json
 import sys
@@ -26,96 +22,56 @@ def call(path, body=None, timeout=120):
     t0 = time.time()
     try:
         with urllib.request.urlopen(urllib.request.Request(API + path, data=data, headers=hdr), timeout=timeout) as r:
-            return r.status, r.read(), round(time.time() - t0, 1)
+            return r.status, r.read(), round(time.time() - t0, 2)
     except urllib.error.HTTPError as e:
-        return e.code, e.read(), round(time.time() - t0, 1)
+        return e.code, e.read(), round(time.time() - t0, 2)
     except Exception as e:  # noqa: BLE001
-        return None, repr(e).encode(), round(time.time() - t0, 1)
-
-
-def get_file(url, dest, timeout=120):
-    try:
-        with urllib.request.urlopen(urllib.request.Request(urllib.parse.quote(url, safe=":/"), headers=UA), timeout=timeout) as r:
-            dest.write_bytes(r.read())
-            return r.status, dest.stat().st_size
-    except Exception as e:  # noqa: BLE001
-        return repr(e)[:200], 0
+        return None, repr(e).encode(), round(time.time() - t0, 2)
 
 
 def main(out):
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
-    s = {"master": {}, "month": {}, "files": {}}
-    masters = {}
-    for fam in ("Cpig", "Cpil", "Cpiu", "Ppi", "Imex"):
-        st, b, secs = call(f"/OpenApi/{fam}/Month/MasterData")
-        (out / f"master_{fam}.json").write_bytes(b)
-        s["master"][fam] = {"status": st, "secs": secs, "bytes": len(b), "head": b[:600].decode("utf-8", "replace")}
-        try:
-            masters[fam] = json.loads(b)
-        except Exception:  # noqa: BLE001
-            pass
-        print(fam, st, secs, len(b), flush=True)
-    (out / "summary.json").write_text(json.dumps(s, ensure_ascii=False, indent=1))
+    s = {"calls": [], "files": {}}
 
-    def periods(m):
-        found = []
-        def walk(x):
-            if isinstance(x, dict):
-                if "yearBase" in x and "endYear" in x:
-                    found.append(x)
-                for v in x.values():
-                    walk(v)
-            elif isinstance(x, list):
-                for v in x:
-                    walk(v)
-        walk(m)
-        return found
-
-    jobs = []
-    for fam, m in masters.items():
-        ps = periods(m)
-        s["master"][fam]["periods"] = ps[:20]
-        types = {""}
-        if fam == "Ppi":
-            types = {"SOP", "CPA"}
-        if fam == "Imex":
-            types = {"EXI", "IMI"}
-        seen = set()
-        for p in ps:
-            key = (p["yearBase"], p["endYear"], p["endPeriod"])
-            if key in seen:
-                continue
-            seen.add(key)
-            for t in sorted(types):
-                jobs.append((fam, t, p["yearBase"], p["endYear"], p["endPeriod"]))
-                jobs.append((fam, t, p["yearBase"], p["startYear"], p["startPeriod"]))
-    if not jobs:  # fall back to the documented example shape
-        for fam, t in (("Cpig", ""), ("Cpig", "TG"), ("Ppi", "SOP"), ("Ppi", "CPA"), ("Imex", "EXI"), ("Imex", "IMI")):
-            for yb in (2566, 2562, 2558, 2555):
-                jobs.append((fam, t, yb, 2569, 8))
-    for fam, t, yb, y, mo in jobs[:60]:
-        body = {"yearBase": yb, "year": y, "month": mo, "type": t, "commodities": []}
+    def month(fam, t, yb, y, m, commodities=()):
+        body = {"yearBase": yb, "year": y, "month": m, "type": t, "commodities": list(commodities)}
         st, b, secs = call(f"/OpenApi/{fam}/Month", body)
-        name = f"month_{fam}_{t or 'all'}_{yb}_{y}_{mo:02d}.json"
+        name = f"{fam}_{t}_{yb}_{y}_{m:02d}{'_sel' if commodities else ''}.json"
         (out / name).write_bytes(b)
         info = {"body": body, "status": st, "secs": secs, "bytes": len(b)}
         try:
             d = json.loads(b)
-            rows = d if isinstance(d, list) else d.get("data", d)
-            info["n"] = len(rows) if isinstance(rows, list) else None
-            info["sample"] = rows[:3] if isinstance(rows, list) else str(d)[:500]
+            info["n"] = len(d)
+            info["head"] = [r for r in d if r.get("commodityCode") in ("00000", "93000", "0000", "000")][:3]
+            info["created"] = sorted({r.get("createdAt", "")[:16] for r in d})[:3]
         except Exception:  # noqa: BLE001
-            info["text"] = b[:300].decode("utf-8", "replace")
-        s["month"][name] = info
+            info["text"] = b[:200].decode("utf-8", "replace")
+        s["calls"].append(info)
         print(name, st, secs, info.get("n"), flush=True)
         (out / "summary.json").write_text(json.dumps(s, ensure_ascii=False, indent=1))
-    for url, name in (("https://uploads.tpso.go.th/economic/pdf/Th_CPI_COICOP2018.xlsx", "Th_CPI_COICOP2018.xlsx"),
-                      ("https://uploads.tpso.go.th/กระบวนการจัดทำ-ดัชนีราคาผู้บริโภค.pdf", "cpi_process.pdf"),
-                      ("https://uploads.tpso.go.th/กระบวนการจัดทำ-ดัชนีราคาผู้ผลิต.pdf", "ppi_process.pdf"),
-                      ("https://uploads.tpso.go.th/exi-imi_price_index2025_note.pdf", "exi_imi_2025_note.pdf"),
-                      ("https://uploads.tpso.go.th/economic/pdf/ppi_note_2564.pdf", "ppi_note_2564.pdf")):
-        s["files"][name] = get_file(url, out / name)
+
+    for t in ("TG", "10", "CC", "NN", "EE", "SS"):
+        month("Cpig", t, 2566, 2569, 9)
+    for m in range(1, 9):
+        month("Cpig", "TG", 2566, 2569, m)
+    for y, m in ((2568, 9), (2568, 12), (2567, 6), (2566, 1), (2562, 1), (2553, 1), (2540, 6), (2519, 1)):
+        month("Cpig", "TG", 2566, y, m)
+    month("Cpig", "TG", 2566, 2569, 9, ["00000", "93000"])
+    month("Cpil", "TG", 2566, 2569, 9)
+    month("Cpiu", "TG", 2566, 2569, 9)
+    for y, m in ((2569, 8), (2569, 7), (2568, 9)):
+        month("Ppi", "CPA", 2564, y, m)
+        month("Imex", "EXI", 2555, y, m)
+    for url, name in (("https://www.price.moc.go.th/price/fileuploader/file_cpi/cpi_note_2566.pdf", "cpi_note_2566.pdf"),
+                      ("https://www.price.moc.go.th/price/fileuploader/file_cpi/cpi_note_2562.pdf", "cpi_note_2562.pdf"),
+                      ("https://uploads.tpso.go.th/economic/pdf/Cpig.pdf", "Cpig.pdf")):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(urllib.parse.quote(url, safe=":/"), headers=UA), timeout=90) as r:
+                (out / name).write_bytes(r.read())
+                s["files"][name] = r.status
+        except Exception as e:  # noqa: BLE001
+            s["files"][name] = repr(e)[:200]
     (out / "summary.json").write_text(json.dumps(s, ensure_ascii=False, indent=1))
 
 

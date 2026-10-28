@@ -1,7 +1,7 @@
 name: MoC (Thailand) discovery (manual)
 
 # One-off helper: probes MoC open data for Thai price indices
-# and saves the raw responses to the "discovery" branch, under discovery/moc4.
+# and saves the raw responses to the "discovery" branch, under discovery/moc5.
 on:
   workflow_dispatch:
   push:
@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Query the MoC open data API
-        run: timeout 30m python -I -u pipeline/tools/moc_discover.py discovery/moc4 || true
+        run: timeout 30m python -I -u pipeline/tools/moc_discover.py discovery/moc5 || true
       - name: Push results to the discovery branch
         if: always()
         run: |
@@ -36,7 +36,7 @@ jobs:
           else
             git checkout --orphan discovery && git rm -rf --quiet --cached .
           fi
-          mkdir -p discovery && rm -rf discovery/moc4 && cp -r /tmp/discovery/moc4 discovery/
-          git add discovery/moc4
+          mkdir -p discovery && rm -rf discovery/moc5 && cp -r /tmp/discovery/moc5 discovery/
+          git add discovery/moc5
           git commit -m "MoC discovery"
           git push origin discovery
