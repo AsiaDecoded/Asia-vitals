@@ -36,7 +36,7 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
 .jg-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; }
 .jg-take { margin: var(--cds-gap-xs) 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); max-width: 60rem; line-height: 1.5; }
 .jg-take b, .jg b { font-weight: var(--cds-font-weight-medium); color: var(--color-fg); }
-.jg-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: var(--cds-gap-md); }
+.jg-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); gap: var(--cds-gap-md); }
 .jg-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); position: relative; min-width: 0; }
 .jg-tile .lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
 .jg-tile .val { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; margin-top: var(--cds-gap-xs); }
@@ -233,6 +233,12 @@ html, body { margin: 0; background: #f6f7f8; color: var(--color-fg); }
       <div class="jg-card jg-tile"><div class="lbl">Services, y/y</div>
         <div class="val"><span data-source="cpi_latest" data-field="gs_services_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
         <div class="sub">prior month <span data-source="cpi_latest" data-field="gs_services_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Food, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="food_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="food_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Energy, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="fuel_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="fuel_yoy_prev" data-row="0">—</span>%</div></div>
       <div class="jg-card jg-tile"><div class="lbl">PPI, y/y</div>
         <div class="val"><span data-source="ppi_latest" data-field="ppi_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
         <div class="sub">prior month <span data-source="ppi_latest" data-field="ppi_yoy_prev" data-row="0">—</span>%</div></div>

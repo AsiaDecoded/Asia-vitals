@@ -15,7 +15,7 @@ dash.calc('cpi_series', {
 
 dash.calc('cpi_latest', {
   title: 'Latest month and the one before',
-  description: 'Year-on-year rates for the latest month and the month before: all items, MAS core and its services and retail and other goods measures, and calculated goods and services CPI.',
+  description: 'Year-on-year rates for the latest month and the month before: all items, MAS core and its services and retail and other goods measures, calculated goods and services CPI, food, and calculated energy CPI.',
   inputs: ['cpi_series'],
   fn: (cpi_series) => {
     const pair = (area, series) => {
@@ -24,7 +24,7 @@ dash.calc('cpi_latest', {
       return [s[s.length - 1], s[s.length - 2]];
     };
     const row = {};
-    ['all', 'core', 'less_accom', 'services', 'retail_goods', 'gs_goods', 'gs_services'].forEach((k) => {
+    ['all', 'core', 'less_accom', 'services', 'retail_goods', 'gs_goods', 'gs_services', 'food', 'fuel'].forEach((k) => {
       const [a, b] = pair('national', k);
       row[k + '_yoy'] = a ? a.yoy : null;
       row[k + '_yoy_prev'] = b ? b.yoy : null;
