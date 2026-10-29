@@ -1,6 +1,8 @@
 """Download e-Stat file datasets (Excel) by statInfId into a folder, for building parsers.
 
-  python -I pipeline/tools/estat_files.py discovery/files 000040513578 ...
+  python -I pipeline/tools/estat_files.py discovery/files 000040513578 000040430872:2 ...
+
+An id may end in :<fileKind> (0 Excel, the default; 2 PDF).
 
 No app ID needed: these are the public file-download links.
 """
@@ -13,7 +15,8 @@ def main(out, *ids):
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
     for i in ids:
-        url = f"https://www.e-stat.go.jp/stat-search/file-download?statInfId={i}&fileKind=0"
+        i, _, kind = i.partition(":")
+        url = f"https://www.e-stat.go.jp/stat-search/file-download?statInfId={i}&fileKind={kind or 0}"
         req = urllib.request.Request(url, headers={"User-Agent": "asia-vitals"})
         with urllib.request.urlopen(req, timeout=180) as r:
             data = r.read()
