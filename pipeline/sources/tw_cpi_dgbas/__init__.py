@@ -203,6 +203,106 @@ def _check(get, t1, t14, latest, state, warnings):
     return errors
 
 
+# COICOP 01 food (food and non-alcoholic beverages) for the Asia tab, calculated (decision 7, set by the
+# user 29 Oct 2026). DGBAS's food group (食物類) holds 18 subgroups; two are outside COICOP 01:
+# 14 alcoholic beverages (items 133-136) and 17 food away from home (items 153-164: meals, coffee and
+# drinks bought out, kindergarten snacks, school lunches). Tobacco is not in DGBAS food. Removed from the
+# published food index the way DGBAS aggregates (Laspeyres within each weight year, linked at December):
+#   C_t = C_Dec x (W_F r_F - W_A r_A - W_E r_E) / (W_F - W_A - W_E),  r_x = I_x,t / I_x,Dec
+# W_F food and W_E food away from home from release table 1, W_A the sum of the four alcohol items'
+# weights in release table 14 (all published, % of CPI, that month's release). Index Dec 2022 = 100;
+# y/y from Jan 2024 (first weights Jan 2023).
+FOOD_SUBGROUPS = {"cereals": (1, 10), "meat": (11, 16), "meat_products": (17, 19), "eggs": (20, 21), "fish": (22, 42),
+                  "processed_fish": (43, 46), "vegetables": (47, 88), "processed_veg": (89, 94), "fruit": (95, 118),
+                  "processed_fruit": (119, 120), "dairy": (121, 124), "edible_oil": (125, 127), "condiments": (128, 132),
+                  "alcohol": (133, 136), "non_alcoholic": (137, 146), "cooked_food": (147, 152), "eating_out": (153, 164),
+                  "other_food": (165, 171)}
+FOOD01_FIRST = "2023-01"
+FOOD01_SENS_LIMIT = 0.06   # pp, y/y: food weight from table 1 vs the month's table 14 total
+FOOD01_ID_LIMIT = 0.001    # index points: recombined food vs published food
+
+
+def _food01(data, t1, t14, latest, errors, warnings):
+    idx = {k: data.get(("national", k, "index"), {}) for k in FOOD_SUBGROUPS}
+    idx["food"] = data.get(("national", "food", "index"), {})
+    months = _months(FOOD01_FIRST, latest)
+    T1 = {}
+    for m, t in t1.items():
+        for r in t["rows"]:
+            k = T1_KEYS.get(r["label"])
+            if k in ("food", "services_eating_out"):
+                T1[(k, m)] = r["weight_pm"] / 10
+    wts, rows, chk = [], [], []
+    C = {f"{int(FOOD01_FIRST[:4]) - 1}-12": 100.0}
+    alt = dict(C)
+    for m in months:
+        D = f"{int(m[:4]) - 1}-12"
+        it = t14.get(m, {})
+        miss = [x for x in (("food", m), ("services_eating_out", m)) if x not in T1]
+        alc = [it[c] for c in range(133, 137) if c in it]
+        if miss or len(alc) != 4 or not all("酒" in a["name"] for a in alc):
+            errors.append(f"COICOP 01 food {m}: weights missing (table 1 {miss}, alcohol items in table 14: {len(alc)})")
+            continue
+        try:
+            r = {k: idx[k][m] / idx[k][D] for k in ("food", "alcohol", "eating_out")}
+        except KeyError as e:
+            errors.append(f"COICOP 01 food {m}: index missing ({e})")
+            continue
+        WF, WE, WA = T1[("food", m)], T1[("services_eating_out", m)], sum(a["weight_pct"] for a in alc)
+        WC = WF - WA - WE
+        C[m] = C[D] * (WF * r["food"] - WA * r["alcohol"] - WE * r["eating_out"]) / WC
+        # identity: kept + removed parts at the same weights give back the published food index
+        rec = idx["food"][D] * (WC * C[m] / C[D] + WA * r["alcohol"] + WE * r["eating_out"]) / WF
+        # sensitivity: the month's food total in table 14 (fruit weights change by month) instead of table 1
+        WF2 = sum(i["weight_pct"] for c, i in it.items() if c <= 171)
+        alt[m] = alt[D] * (WF2 * r["food"] - WA * r["alcohol"] - WE * r["eating_out"]) / (WF2 - WA - WE)
+        # independent: food from its 18 subgroups at table-14 weights (reported only)
+        sw = {k: sum(i["weight_pct"] for c, i in it.items() if a <= c <= b) for k, (a, b) in FOOD_SUBGROUPS.items()}
+        try:
+            sub = idx["food"][D] * sum(sw[k] * idx[k][m] / idx[k][D] for k in sw) / sum(sw.values())
+        except KeyError:
+            sub = None
+        chk.append({"month": m, "identity_gap": round(rec - idx["food"][m], 6),
+                    "subgroups_gap": None if sub is None else round(sub - idx["food"][m], 3)})
+        wts.append({"date": m + "-01", "food_pct": WF, "alcohol_pct": round(WA, 4), "eating_out_pct": WE,
+                    "kept_pct": round(WC, 4), "weight_sum_check": round(WC + WA + WE - WF, 9),
+                    "food_t14_total_pct": round(WF2, 4)})
+    sens = []
+    rows.append({"date": f"{int(FOOD01_FIRST[:4]) - 1}-12-01", "index": 100.0, "yoy": None, "base_break": 0})  # link month
+    for m in months:
+        p0 = f"{int(m[:4]) - 1}{m[4:]}"
+        if m in C and p0 in C and m >= _shift(FOOD01_FIRST, 12):
+            y = (C[m] / C[p0] - 1) * 100
+            y2 = (alt[m] / alt[p0] - 1) * 100
+            sens.append(abs(y - y2))
+            rows.append({"date": m + "-01", "index": round(C[m], 4), "yoy": round(y, 4),
+                         "base_break": 1 if m[5:7] == "01" else 0})
+        elif m in C:
+            rows.append({"date": m + "-01", "index": round(C[m], 4), "yoy": None, "base_break": 1 if m[5:7] == "01" else 0})
+    ymonths = [r["date"][:7] for r in rows if r["yoy"] is not None]
+    gaps = sorted(set(_months(_shift(FOOD01_FIRST, 12), latest)) - set(ymonths))
+    if gaps:
+        errors.append(f"COICOP 01 food y/y has gaps: {gaps[:12]}")
+    if latest not in ymonths:
+        errors.append(f"COICOP 01 food: latest month {latest} missing")
+    idg = max((abs(c["identity_gap"]) for c in chk), default=None)
+    if idg is None or idg > FOOD01_ID_LIMIT:
+        errors.append(f"COICOP 01 food: recombined food differs from the published food index by {idg}")
+    for w in wts:
+        if abs(w["weight_sum_check"]) > 1e-6:
+            errors.append(f"COICOP 01 food {w['date'][:7]}: kept + removed weights do not sum to food")
+    smax = max(sens, default=0.0)
+    if smax > FOOD01_SENS_LIMIT:
+        errors.append(f"COICOP 01 food: y/y depends on the food weight by up to {smax:.3f}pp (limit {FOOD01_SENS_LIMIT})")
+    sg = [abs(c["subgroups_gap"]) for c in chk if c["subgroups_gap"] is not None]
+    if sg:
+        warnings.append(f"COICOP 01 food: food rebuilt from its 18 subgroups at table-14 weights misses the published "
+                        f"food index by up to {max(sg):.3f} index points (fruit's month-varying weights; not used)")
+    stats = {"identity_max_gap": idg, "sensitivity_max_pp": round(smax, 4),
+             "subgroups_max_gap": round(max(sg), 3) if sg else None, "months": len(chk)}
+    return rows, wts, chk, stats
+
+
 def update(**opts):
     OUT.mkdir(parents=True, exist_ok=True)
     state = read_json(OUT / "release.json", {}) or {}
@@ -343,6 +443,7 @@ def update(**opts):
         for p, v in vals.items():
             if meas in ("index", "sa_index") and not 0 < v < 10000:  # communication equipment ~2600 in 1991
                 errors.append(f"{area} {key} {meas} {p} = {v} out of range")
+    food01, food01_w, food01_chk, food01_stats = _food01(data, t1, t14, latest, errors, warnings)
     if errors:
         raise CheckFailed(errors)
 
@@ -399,7 +500,11 @@ def update(**opts):
                                             "yoy", "yoy_pp", "ytd", "ytd_pp", "release_date"], crows)
     _write_csv(OUT / "tw_cpi_weights.csv", ["date", "level", "key", "label", "weight_pct", "source"], wrows)
     (OUT / "tw_cpi_checks.json").write_text(json.dumps({"rates_vs_index": stats, "weights_vs_headline": wcheck,
-                                                       "item_weight_sums": wsum14}, indent=1) + "\n")
+                                                       "item_weight_sums": wsum14, "food_coicop01": food01_stats,
+                                                       "food_coicop01_months": food01_chk}, indent=1) + "\n")
+    _write_csv(OUT / "tw_cpi_food01.csv", ["date", "index", "yoy", "base_break"], food01)
+    _write_csv(OUT / "tw_cpi_food01_weights.csv", ["date", "food_pct", "alcohol_pct", "eating_out_pct", "kept_pct",
+                                                   "food_t14_total_pct", "weight_sum_check"], food01_w)
     code = f"C{latest}"
     label = f"{LONGMONTHS[int(latest[5:7]) - 1]} {latest[:4]}"
     src = "DGBAS"
@@ -414,8 +519,8 @@ def update(**opts):
                    "measure": r["measure"], "area": r["area"], "freq": "M", "date": r["date"], "value": r["value"],
                    "unit": unit, "source": src, "release": code}
     nlong = write_long(long_rows(), OUT / "long.csv")
-    # Asia tab: concepts DGBAS publishes on a matching definition (food and CPI ex food and energy are
-    # open decisions: DGBAS's food includes eating out and alcohol)
+    # Asia tab: headline and energy as published; food (COICOP 01) calculated, see _food01; CPI ex food
+    # and energy still an open decision
     asia = []
     for r in rows:
         if r["area"] == "national" and r["measure"] == "yoy" and r["series"] in ("all", "energy"):
@@ -423,6 +528,12 @@ def update(**opts):
                          "series_id": f"tw.cpi.{r['series']}.yoy", "date": r["date"], "value": r["value"],
                          "unit": "% y/y", "basis": "published", "source": "DGBAS", "base_break": r["base_break"],
                          "release_date": r["release_date"]})
+    for r in food01:
+        if r["yoy"] is not None:
+            asia.append({"country": "TW", "concept": "food_yoy",
+                         "series_id": "tw.cpi.food_ex_alcohol_ex_eating_out.yoy", "date": r["date"],
+                         "value": round(r["yoy"], 2), "unit": "% y/y", "basis": "calculated", "source": "DGBAS; Asia Decoded",
+                         "base_break": r["base_break"], "release_date": rel_dates.get(r["date"][:7], "")})
     _write_csv(OUT / "asia.csv", ["country", "concept", "series_id", "date", "value", "unit", "basis", "source",
                                   "base_break", "release_date"], asia)
     payload = json.dumps({k: v for k, v in raw.items() if v}, ensure_ascii=False).encode()
@@ -437,7 +548,8 @@ def update(**opts):
     return {"updated": True, "code": code,
             "summary": f"{label}: {len(rows)} rows, {n_items} items, {len(t1)} release tables; "
                        f"rates vs index {stats['tested']} tested, max {stats['max']:.3f}; "
-                       f"weights vs headline max {max((abs(w['diff']) for w in wcheck), default=0):.3f}",
+                       f"weights vs headline max {max((abs(w['diff']) for w in wcheck), default=0):.3f}; "
+                       f"COICOP 01 food {food01_stats}",
             "warnings": warnings}
 
 
