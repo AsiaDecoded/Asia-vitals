@@ -88,6 +88,15 @@ def main():
 
     if updated:
         say(f"== combined long file: {combine_long()} rows")
+        try:
+            from core.asia import build as build_asia
+            res = build_asia()
+            say(f"== Asia table: {'UPDATED' if res['updated'] else 'unchanged'}: {res['summary']}")
+            for w in res["warnings"]:
+                say(f"   WARNING: {w}")
+        except Exception:  # noqa: BLE001 - the Asia table must not fail the country sources
+            say("   ERROR building the Asia table:")
+            say(traceback.format_exc().rstrip())
     say(f"result: updated={updated or '-'} failed={failed or '-'}")
     (Path(__file__).resolve().parent.parent / "run_report.txt").write_text("\n".join(report) + "\n")
     gh_output(updated=str(bool(updated)).lower(), updated_sources=" ".join(updated),
