@@ -103,7 +103,6 @@ A030102015,雜項服務,services_misc,Miscellaneous services,2,services
 A030103015,總指數(不含食物),ex_food,CPI excluding food,0,
 A030103015,總指數(不含蔬菜水果),ex_fruit_veg,CPI excluding fruit and vegetables,0,
 A030103015,總指數(不含蔬果及能源)【即核心物價】,core,"Core CPI (excluding fruit, vegetables and energy)",0,
-A030103015,總指數(不含食物及能源),ex_food_energy,CPI excluding food and energy (DGBAS definition),0,
 A030103015,總指數(不含蔬果水產及能源),ex_fruit_veg_fish_energy,"CPI excluding fruit, vegetables, fish and energy",0,
 A030103015,總指數(不含設算租金),ex_imputed_rent,CPI excluding imputed rent,0,
 A030103015,不含自有住宅設算租金之核心,core_ex_imputed_rent,Core CPI excluding imputed rent,0,

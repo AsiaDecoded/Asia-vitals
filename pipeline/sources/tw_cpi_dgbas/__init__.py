@@ -43,6 +43,9 @@ INCOME = ("A030104015", "1981-01")
 INCOME_AREAS = {"全體家庭": "all_households", "最低20%所得家庭": "lowest20", "中間60%所得家庭": "middle60",
                 "最高20%所得家庭": "highest20"}
 GROUPS7 = ["food", "clothing", "housing", "transport_comm", "health", "education_entertainment", "miscellaneous"]
+# Published DGBAS series left out at the user's request (29 Oct 2026): CPI excluding DGBAS's whole food
+# group and energy, easily confused with Core 1.
+SKIP_FIELDS = {("A030103015", "總指數(不含食物及能源)")}
 # Classification rebases (first month on the new base); weights are also re-linked every December
 # since the 2016 base (open decision on flagging those).
 BASE_STARTS = {"2023-01": "2021"}
@@ -423,6 +426,8 @@ def update(**opts):
         raw.update(r)
         for (field, meas), vals in s.items():
             nm = names.get((funid, field))
+            if (funid, field) in SKIP_FIELDS:
+                continue
             if nm is None:
                 if funid != "A030601015":
                     unknown.append(f"{funid} {field}")
@@ -586,7 +591,7 @@ def update(**opts):
                    "first": cr[0]["date"][:7] if cr else "", "last": cr[-1]["date"][:7] if cr else ""}
                   for key, lab, parent, cr in calc])
     dash_keys = set(GROUPS7) | {"all", "core", "energy", "goods", "services", "core_goods", "noncore_goods",
-                                "ex_food_energy", "ex_fruit_veg", "vegetables", "fruit", "eating_out", "fuels",
+                                "ex_fruit_veg", "vegetables", "fruit", "eating_out", "fuels",
                                 "electricity", "gas", "rent", "durable", "semidurable", "nondurable",
                                 "services_eating_out", "medical_services", "transport_fees", "cereals", "meat"}
     # Dashboard file: DGBAS's series as published, plus the calculated food01 and core1
