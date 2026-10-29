@@ -67,8 +67,12 @@ def _workbooks(state, force):
     new = [m for m in media if m["url"] not in {v["url"] for v in index.values()}]
     dates = _post_dates([m["post"] for m in new])
     for m in new:
-        body, _ = N.get(m["url"])
-        rows, meta = N.read_cpi_workbook(body)
+        try:
+            body, _ = N.get(m["url"])
+            rows, meta = N.read_cpi_workbook(body)
+        except Exception as e:  # noqa: BLE001 - a listed attachment can be gone (404) or unreadable; others cover it
+            print(f"   skipped {m['url']}: {e}")
+            continue
         if not meta.get("ref") or not rows:
             continue
         ref = meta["ref"]
