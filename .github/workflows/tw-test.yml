@@ -1,18 +1,11 @@
-name: Taiwan test (dev-tw)
+name: Taiwan test (manual)
 
-# Runs the Taiwan sources (tw_cpi_dgbas, tw_ppi_dgbas) on the dev-tw branch, which are not yet in the
-# shared registry (pipeline/sources/__init__.py), with their checks; then checks the September 2026
-# figures against DGBAS's release (7 Oct 2026) and pushes data/tw and raw/tw back to dev-tw.
-# Not part of the scheduled update until merged.
+# Manual test of the Taiwan sources (tw_cpi_dgbas, tw_ppi_dgbas) with their checks, forced (ignores the
+# release calendar); then checks the September 2026 figures against DGBAS's release (7 Oct 2026) and
+# pushes data/tw and raw/tw to the branch it ran on. The scheduled update (update.yml) runs these
+# sources on DGBAS release days.
 on:
   workflow_dispatch:
-  push:
-    branches: [dev-tw]
-    paths:
-      - pipeline/core/dgbas.py
-      - pipeline/sources/tw_cpi_dgbas/**
-      - pipeline/sources/tw_ppi_dgbas/**
-      - .github/workflows/tw-test.yml
 
 permissions:
   contents: write
@@ -111,4 +104,4 @@ jobs:
           mkdir -p data/tw && cp tw_report.txt data/tw/test_report.txt 2>/dev/null || true
           git add data/tw; if [ -d raw/tw ]; then git add raw/tw; fi
           git commit -qm "Taiwan test run ${{ github.run_id }}" || exit 0
-          for i in 1 2 3; do git pull -q --rebase origin dev-tw && git push -q origin HEAD:dev-tw && break; sleep 5; done
+          B=${GITHUB_REF_NAME}; for i in 1 2 3; do git pull -q --rebase origin $B && git push -q origin HEAD:$B && break; sleep 5; done

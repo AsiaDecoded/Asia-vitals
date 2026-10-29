@@ -5,7 +5,7 @@ name: DGBAS discovery (manual)
 on:
   workflow_dispatch:
   push:
-    branches: [dev-tw]
+    branches: [main]
     paths:
       - pipeline/tools/dgbas_discover.py
       - pipeline/tools/dgbas_seeds.txt
