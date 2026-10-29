@@ -3,7 +3,7 @@
 .jg-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; }
 .jg-take { margin: var(--cds-gap-xs) 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); max-width: 60rem; line-height: 1.5; }
 .jg-take b, .jg b { font-weight: var(--cds-font-weight-medium); color: var(--color-fg); }
-.jg-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: var(--cds-gap-md); }
+.jg-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); gap: var(--cds-gap-md); }
 .jg-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); position: relative; min-width: 0; }
 .jg-tile .lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
 .jg-tile .val { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; margin-top: var(--cds-gap-xs); }
@@ -16,6 +16,8 @@
 .jg-card h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
 .jg-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-xs) 0 var(--cds-gap-md); line-height: 1.45; }
 .jg-cardhead { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--cds-gap-sm); align-items: flex-start; }
+.jg-cardhead .jg-seg button { padding-left: 6px; padding-right: 6px; }
+.jg-cardhead > .jg-seg { margin: -1px 0; }
 .jg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
 .jg-chart { min-height: 280px; position: relative; }
 .jg-chart.small { min-height: 280px; }
@@ -74,6 +76,30 @@
 .ad-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; }
 .ad-png { font: inherit; font-size: 0.75rem; background: transparent; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); color: var(--color-fg-muted); padding: 1px 8px; cursor: pointer; white-space: nowrap; }
 .ad-png:hover { color: var(--color-fg); }
+.ad-x { position: absolute; top: 10px; right: 10px; width: 26px; height: 26px; display: inline-flex; align-items: center; justify-content: center; background: transparent; border: 1px solid transparent; border-radius: var(--cds-radius); color: var(--color-fg-muted); cursor: pointer; padding: 0; z-index: 2; }
+.ad-x:hover, .ad-x:focus-visible { color: var(--color-fg); border-color: var(--color-border-line); }
+.ad-x svg { width: 15px; height: 15px; }
+.jg-card.ad-hasx > h2, .jg-card.ad-hasx > .jg-cardhead { padding-right: 30px; }
+.jg-grid > .ad-expanded, .jg-grid:has(.ad-expanded) > * { grid-column: 1 / -1; }
+.ad-stack { display: flex; flex-direction: column; gap: var(--cds-gap-md); min-width: 0; }
+.ad-duo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-lg); margin-top: var(--cds-gap-sm); }
+.jg-card.ad-panel { border: 0; padding: 0; background: none; border-radius: 0; }
+.jg-card.ad-panel > h2 { font-size: 1rem; }
+.jg-card.ad-panel > .ad-x { display: none; }
+.jg-card.ad-panel.ad-hasx > h2, .jg-card.ad-panel.ad-hasx > .jg-cardhead { padding-right: 0; }
+.ad-stack table { font-size: 0.8125rem; line-height: 1.25; }
+.ad-stack table th, .ad-stack table td { padding: 3px 6px; }
+.ad-stack table thead th { font-size: 0.75rem; vertical-align: bottom; }
+.ad-stack .jg-card { padding-bottom: var(--cds-pad-md, 14px); }
+.ad-stack .jg-note { font-size: 0.75rem; }
+#cpi-movers-table { table-layout: fixed; width: 100%; }
+#cpi-movers-table th:nth-child(n+2) { width: 15%; }
+#cpi-movers-table { font-size: 0.8125rem; line-height: 1.25; }
+#cpi-movers-table th, #cpi-movers-table td { padding: 3px 6px; }
+#cpi-movers-table thead th { font-size: 0.75rem; vertical-align: bottom; }
+.jg-card.ad-full > .ad-x { display: none; }
+.jg-card.ad-full.ad-hasx > h2, .jg-card.ad-full.ad-hasx > .jg-cardhead { padding-right: 0; }
+
 .ad-shot { position: fixed; inset: 0; background: rgba(0,0,0,.55); display: flex; align-items: center; justify-content: center; z-index: 50; padding: 16px; }
 .ad-shot-box { margin-top: var(--cds-gap-md); padding-top: var(--cds-gap-md); border-top: 1px solid var(--color-border-line); display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
 .ad-shot-box img { width: 100%; height: auto; border: 1px solid var(--color-border-line); }
@@ -96,6 +122,55 @@
 .ad-slider input[type=range]::-moz-range-thumb { pointer-events: auto; width: 12px; height: 12px; border-radius: 50%; background: var(--color-bg); border: 2px solid var(--ad-c1); cursor: ew-resize; }
 .ad-slider input[type=range]:focus-visible::-webkit-slider-thumb { outline: 2px solid var(--ad-c1); outline-offset: 2px; }
 .ad-slider-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-align: right; margin: 0 8px 4px; font-variant-numeric: tabular-nums; }
+#cpi-heat-table { font-size: 0.8125rem; }
+#cpi-heat-table th, #cpi-heat-table td { padding: 3px 6px; }
+#cpi-heat-table th:nth-child(n+2), #cpi-heat-table td:nth-child(n+2) { text-align: center; }
+#cpi-heat-table td.heat { font-variant-numeric: tabular-nums; border: 2px solid var(--color-bg); }
+#cpi-heat-table th:first-child, #cpi-heat-table td:first-child { text-align: left; white-space: nowrap; }
+#cpi-heat-table td, #cpi-heat-table th { border-bottom: 0; }
+#cpi-heat-table tr.lead td { font-weight: 700; }
+#cpi-heat-table td.wt { color: var(--ad-ink, var(--color-fg-muted)); font-weight: 400; padding-right: 12px; }
+#cpi-heat > h2 { padding-bottom: var(--cds-gap-sm); border-bottom: 1px solid var(--ad-ink, var(--color-fg-muted)); }
+#cpi-heat-table thead th:first-child { font-weight: 400; font-size: 0.8125rem; color: var(--ad-ink, var(--color-fg-muted)); }
+#cpi-heat-table tr.sub td:first-child { padding-left: 1.1rem; }
+#cpi-heat-table tr.spacer td { height: 10px; padding: 0; border: 0; background: none; }
+#cpi-heat-table .heat-tog { font: inherit; font-weight: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-align: left; }
+#cpi-heat-table .heat-arrow { color: var(--ad-ink, var(--color-fg-muted)); font-size: 0.85em; }
+#cpi-heat .jg-tablewrap { overflow-x: auto; scrollbar-width: none; }
+#cpi-heat .jg-tablewrap::-webkit-scrollbar { display: none; }
+#cpi-heat .heat-barwrap { padding-bottom: var(--cds-gap-sm); border-bottom: 1px solid var(--ad-ink, var(--color-fg-muted)); }
+#cpi-heat .heat-track { position: relative; height: 8px; margin-top: 6px; border-radius: 4px; background: var(--color-border-line); cursor: pointer; touch-action: none; }
+#cpi-heat .heat-track[hidden] { display: none; }
+#cpi-heat .heat-thumb { position: absolute; top: 0; left: 0; height: 8px; border-radius: 4px; background: var(--ad-axis, #A6A6A6); cursor: grab; touch-action: none; }
+#cpi-heat .heat-thumb:active { cursor: grabbing; background: var(--ad-ink, var(--color-fg-muted)); }
+#cpi-heat-table th:nth-child(-n+2), #cpi-heat-table td:nth-child(-n+2) { position: sticky; left: 0; background: var(--color-panel); z-index: 1; }
+#cpi-heat-table th:nth-child(2), #cpi-heat-table td:nth-child(2) { left: var(--heat-c1, 0px); }
+#cpi-ctab-table { font-size: 0.8125rem; }
+#cpi-ctab-table th, #cpi-ctab-table td { padding: 3px 6px; }
+#cpi-ctab-table th:nth-child(n+2), #cpi-ctab-table td:nth-child(n+2) { text-align: center; }
+#cpi-ctab-table td.heat { font-variant-numeric: tabular-nums; border: 2px solid var(--color-bg); }
+#cpi-ctab-table th:first-child, #cpi-ctab-table td:first-child { text-align: left; white-space: nowrap; }
+#cpi-ctab-table td, #cpi-ctab-table th { border-bottom: 0; }
+#cpi-ctab-table tr.lead td { font-weight: 700; }
+#cpi-ctab-table td.wt { color: var(--ad-ink, var(--color-fg-muted)); font-weight: 400; padding-right: 12px; }
+#cpi-ctab > h2 { padding-bottom: var(--cds-gap-sm); border-bottom: 1px solid var(--ad-ink, var(--color-fg-muted)); }
+#cpi-ctab-table thead th:first-child { font-weight: 400; font-size: 0.8125rem; color: var(--ad-ink, var(--color-fg-muted)); }
+#cpi-ctab-table tr.sub td:first-child { padding-left: 1.1rem; }
+#cpi-ctab-table tr.spacer td { height: 10px; padding: 0; border: 0; background: none; }
+#cpi-ctab-table .heat-tog { font: inherit; font-weight: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-align: left; }
+#cpi-ctab-table .heat-arrow { color: var(--ad-ink, var(--color-fg-muted)); font-size: 0.85em; }
+#cpi-ctab .jg-tablewrap { overflow-x: auto; scrollbar-width: none; }
+#cpi-ctab .jg-tablewrap::-webkit-scrollbar { display: none; }
+#cpi-ctab .heat-barwrap { padding-bottom: var(--cds-gap-sm); border-bottom: 1px solid var(--ad-ink, var(--color-fg-muted)); }
+#cpi-ctab .heat-track { position: relative; height: 8px; margin-top: 6px; border-radius: 4px; background: var(--color-border-line); cursor: pointer; touch-action: none; }
+#cpi-ctab .heat-track[hidden] { display: none; }
+#cpi-ctab .heat-thumb { position: absolute; top: 0; left: 0; height: 8px; border-radius: 4px; background: var(--ad-axis, #A6A6A6); cursor: grab; touch-action: none; }
+#cpi-ctab .heat-thumb:active { cursor: grabbing; background: var(--ad-ink, var(--color-fg-muted)); }
+#cpi-ctab-table th:nth-child(-n+2), #cpi-ctab-table td:nth-child(-n+2) { position: sticky; left: 0; background: var(--color-panel); z-index: 1; }
+#cpi-ctab-table th:nth-child(2), #cpi-ctab-table td:nth-child(2) { left: var(--heat-c1, 0px); }
+.ad-notes { font-family: Arial, Helvetica, sans-serif; }
+.ad-notes ol { margin: var(--cds-gap-sm) 0 0; padding-left: 1.2rem; display: flex; flex-direction: column; gap: var(--cds-gap-xs); font-size: 0.8125rem; line-height: 1.5; color: var(--ad-ink, var(--color-fg-muted)); max-width: 60rem; }
+.ad-notes ol b { color: var(--ad-ink, var(--color-fg)); }
 </style>
 
 <div class="jg">
@@ -118,9 +193,12 @@
       <div class="jg-card jg-tile"><div class="lbl">CPI, y/y</div>
         <div class="val"><span data-source="cpi_latest" data-field="all_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
         <div class="sub">prior month <span data-source="cpi_latest" data-field="all_yoy_prev" data-row="0">—</span>%</div></div>
-      <div class="jg-card jg-tile"><div class="lbl">Excl. food and energy, y/y</div>
+      <div class="jg-card jg-tile"><div class="lbl">Core, y/y</div>
         <div class="val"><span data-source="cpi_latest" data-field="ex_food_energy_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
         <div class="sub">prior month <span data-source="cpi_latest" data-field="ex_food_energy_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Food, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="div_A_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="div_A_yoy_prev" data-row="0">—</span>%</div></div>
       <div class="jg-card jg-tile"><div class="lbl">Goods, y/y</div>
         <div class="val"><span data-source="cpi_latest" data-field="goods_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
         <div class="sub">prior month <span data-source="cpi_latest" data-field="goods_yoy_prev" data-row="0">—</span>%</div></div>
@@ -148,74 +226,122 @@
     </div>
 
     <div class="jg-grid">
+      <section class="jg-card" id="gs-yoy">
+        <h2>South Korea goods and services CPI</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="gs-yoy-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gs-yoy-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: Ministry of Data and Statistics</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
       <section class="jg-card" id="cpi-contrib">
         <h2>South Korea consumer inflation contribution</h2>
         <div class="ad-top"><span class="ad-units">ppt</span><div class="jg-legend" id="cpi-contrib-legend"></div><span class="ad-units r"></span></div>
         <div class="jg-chart" id="cpi-contrib-chart" data-source="kr_cpi_contrib"></div>
-        <div class="ad-foot"><span>Source: Ministry of Data and Statistics, Asia Decoded calculations</span><span class="ad-brand">Asia Decoded</span></div>
+        <div class="ad-foot"><span>Source: Ministry of Data and Statistics</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-heat">
+        <h2>South Korea consumer inflation, % y/y</h2>
+        <div class="jg-tablewrap" style="margin-top: var(--cds-gap-sm)">
+          <table id="cpi-heat-table" data-source="cpi_heat"></table>
+        </div>
+        <div class="ad-foot"><span>Source: Ministry of Data and Statistics</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-movers">
+        <div class="jg-cardhead">
+          <div><h2>South Korea CPI biggest contributors</h2></div>
+          <div class="jg-seg" id="cpi-movers-seg" role="group" aria-label="Averaging window"><button data-n="3" aria-pressed="true">3m avg.</button><button data-n="6">6m avg.</button></div>
+        </div>
+        <div class="ad-top"><span class="ad-units" id="cpi-movers-units">%, ppt</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-tablewrap">
+          <table id="cpi-movers-table" data-source="cpi_movers" data-row-key="name">
+            <thead><tr>
+              <th data-field="name">Item</th>
+              <th data-field="weight">Weight</th>
+              <th data-field="yoy">y/y, latest</th>
+              <th data-field="avg3" id="cpi-movers-avg">Contribution, 3m avg.</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="ad-foot"><span>Source: Ministry of Data and Statistics</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
       <section class="jg-card" id="cpi-diffusion">
         <h2>South Korea CPI diffusion index</h2>
         <div class="ad-top"><span class="ad-units">% of items</span><div class="jg-legend" id="cpi-diffusion-legend"></div><span class="ad-units r"></span></div>
         <div class="jg-chart" id="cpi-diffusion-chart" data-source="kr_cpi_diffusion"></div>
-        <div class="ad-foot"><span>Source: Ministry of Data and Statistics, Asia Decoded calculations</span><span class="ad-brand">Asia Decoded</span></div>
+        <div class="ad-foot"><span>Source: Ministry of Data and Statistics</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
     </div>
 
-    <section class="jg-card" id="cpi-movers">
-      <div class="jg-cardhead">
-        <div><h2>South Korea CPI biggest contributors</h2></div>
-        <div class="jg-seg" id="cpi-movers-seg" role="group" aria-label="Averaging window"><button data-n="3" aria-pressed="true">3m avg.</button><button data-n="6">6m avg.</button></div>
-      </div>
-      <div class="ad-top"><span class="ad-units" id="cpi-movers-units">%, ppt</span><span></span><span class="ad-units r"></span></div>
-      <div class="jg-tablewrap">
-        <table id="cpi-movers-table" data-source="cpi_movers" data-row-key="name">
-          <thead><tr>
-            <th data-field="name">Item</th>
-            <th data-field="weight">Weight</th>
-            <th data-field="yoy">y/y, latest</th>
-            <th data-field="avg3" id="cpi-movers-avg">Contribution, 3m avg.</th>
-          </tr></thead>
-          <tbody></tbody>
-        </table>
-      </div>
-      <div class="ad-foot"><span>Source: Ministry of Data and Statistics, Asia Decoded calculations</span><span class="ad-brand">Asia Decoded</span></div>
-    </section>
-
     <div class="jg-grid">
-      <section class="jg-card" id="cpi-gs">
-        <h2>South Korea goods and services CPI</h2>
-        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-gs-legend"></div><span class="ad-units r"></span></div>
-        <div class="jg-chart small" id="cpi-gs-chart" data-source="cpi_series"></div>
-        <div class="ad-foot"><span>Source: Ministry of Data and Statistics</span><span class="ad-brand">Asia Decoded</span></div>
-      </section>
       <section class="jg-card" id="cpi-drivers">
-        <h2>South Korea food and energy CPI</h2>
+        <div class="jg-cardhead">
+          <div><h2>South Korea food and energy CPI</h2></div>
+          <div class="jg-seg" id="cpi-fe-seg" role="group" aria-label="Series">
+            <button data-s="food" aria-pressed="true">Food</button><button data-s="energy">Energy</button>
+          </div>
+        </div>
         <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-drivers-legend"></div><span class="ad-units r"></span></div>
         <div class="jg-chart small" id="cpi-drivers-chart" data-source="cpi_series"></div>
         <div class="ad-foot"><span>Source: Ministry of Data and Statistics</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
+      <section class="jg-card" id="cpi-svc">
+        <div class="jg-cardhead">
+          <div><h2>South Korea services CPI</h2></div>
+          <div class="jg-seg" id="cpi-svc-seg" role="group" aria-label="Series">
+            <button data-s="rent" data-name="Rent" aria-pressed="true">Rent</button><button data-s="public" data-name="Public services">Public</button><button data-s="personal_ex_eating_out" data-name="Personal services excl. eating out">Personal</button><button data-s="eating_out" data-name="Eating out">Eating out</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-svc-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-svc-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: Ministry of Data and Statistics</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
     </div>
 
-    <p class="jg-foot">Source: Ministry of Data and Statistics (formerly Statistics Korea), Consumer Price Index (2020 = 100, 2022 weights), via the Bank of Korea&rsquo;s ECOS database (tables 901Y009 and 901Y010): <span data-source="cpi_release" data-field="label" data-row="0">—</span>. The ministry publishes no seasonally adjusted CPI, so the tab shows no momentum or m/m charts. Producer prices: Bank of Korea Producer Price Index (2020 = 100), ECOS table 404Y014: <span data-source="ppi_release" data-field="label" data-row="0">—</span>.</p>
+    <section class="jg-card ad-notes" id="chart-notes">
+      <h2>Chart notes</h2>
+      <p class="jg-foot">Weights are the Ministry of Data and Statistics&rsquo; published 2022-basket weights (from ECOS), % of CPI. ECOS publishes index levels only; y/y rates are calculated from the published indices, as the ministry does.</p>
+      <ol>
+        <li><b>Table 1, South Korea consumer inflation:</b> y/y for CPI, its published measures and divisions (COICOP 1999), and the published goods and services split. Core is CPI excluding food and energy (78.2%), the ministry&rsquo;s and the Bank of Korea&rsquo;s core measure: CPI less food and non-alcoholic beverages (division 01, 14.2%) and energy (electricity, city gas, LPG for cooking, kerosene, district heating, butane gas, petrol, diesel, LPG for vehicles, 7.6%). CPI excluding agricultural products and oil (91.0%) is the ministry&rsquo;s older core measure. Petroleum products 4.7% (petrol 2.4%, diesel 1.6%); electricity, gas and water 3.4% (electricity 1.6%, city gas 1.2%). Goods 44.8%; services 55.2% (rent 9.9%: jeonse 5.4%, monthly rent 4.5%; public services 12.0%; personal services 33.3%: eating out 13.8% and other personal services 19.5%).</li>
+        <li><b>Table 2, South Korea CPI biggest contributors:</b> the 458 CPI items with the largest positive and negative contributions to CPI y/y, averaged over the latest 3 or 6 months, Asia Decoded calculations. Each item&rsquo;s contribution is its published weight times the change in its index over 12 months, divided by CPI a year earlier (see Methodology), from December 2023, the first month with a 2022-basket year earlier.</li>
+        <li><b>Chart 1, South Korea inflation:</b> % y/y. PPI: the Bank of Korea&rsquo;s Producer Price Index (2020 = 100), domestic producers&rsquo; prices of goods and services. DSPI: the Bank of Korea&rsquo;s Domestic Supply Price Index (2020 = 100), prices of goods and services supplied to the domestic market, produced at home and imported. CPI: consumer prices. Both are published as indices; y/y is calculated from them.</li>
+        <li><b>Chart 2, South Korea consumer inflation:</b> CPI, core (CPI excluding food and energy, 78.2%) and CPI excluding agricultural products and oil (91.0%), % y/y.</li>
+        <li><b>Chart 3, South Korea goods and services CPI:</b> % y/y, the ministry&rsquo;s published split. Goods (44.8%): agricultural, livestock and fishery products, industrial products, and electricity, gas and water. Services (55.2%): rent, public services and personal services, including eating out. Personal services excluding eating out: 19.5%.</li>
+        <li><b>Chart 4, South Korea consumer inflation contribution:</b> contributions to CPI y/y of services (55.2%), industrial products excluding petroleum (29.2%), agricultural, livestock and fishery products (7.6%), petroleum products (4.7%) and electricity, gas and water (3.4%), ppt, Asia Decoded calculations, from December 2023.</li>
+        <li><b>Chart 5, South Korea CPI diffusion index:</b> the share of the 458 CPI items (unweighted) whose index is higher than a year earlier, the share lower, and the diffusion index, share rising minus share falling, Asia Decoded calculations.</li>
+        <li><b>Chart 6, South Korea food and energy CPI:</b> % y/y. Food tab: food and non-alcoholic beverages (14.2%), eating out (13.8%) and fresh food (3.8%); energy tab: electricity (1.6%), city gas (1.2%), petrol (2.4%) and diesel (1.6%), published item indices from 2015 (y/y from 2016).</li>
+        <li><b>Chart 7, South Korea services CPI:</b> % y/y, one tab per series. Rent: jeonse (lump-sum deposit rent, 5.4%) and monthly rent (4.5%), published item indices from 2015 (y/y from 2016). Public services (12.0%), personal services excluding eating out (19.5%) and eating out (13.8%): the ministry&rsquo;s published series.</li>
+      </ol>
+    </section>
+
+    <p class="jg-foot">Source: Ministry of Data and Statistics (Statistics Korea until October 2025), Consumer Price Index (2020 = 100, 2022 weights), via the Bank of Korea&rsquo;s ECOS database (tables 901Y009 and 901Y010): <span data-source="cpi_release" data-field="label" data-row="0">—</span>. The ministry publishes no seasonally adjusted CPI. Producer prices: Bank of Korea Producer Price Index and Domestic Supply Price Index (2020 = 100), ECOS tables 404Y014 and 405Y006: <span data-source="ppi_release" data-field="label" data-row="0">—</span>.</p>
   </section>
 
   <section class="jg-page" id="methodology" role="tabpanel" hidden>
     <article class="jg-card ad-method" id="method-sa">
       <h2>Seasonally adjusted series</h2>
-      <p>The Ministry of Data and Statistics (Statistics Korea until October 2025) publishes no seasonally adjusted consumer prices, and the Bank of Korea&rsquo;s ECOS database carries none either. Its monthly release reports unadjusted month-on-month changes only. This dashboard does not seasonally adjust any series itself, so the momentum table, the m/m bars and the seasonally adjusted m/m chart on Japan&rsquo;s page have no Korean counterpart.</p>
+      <p>The Ministry of Data and Statistics (Statistics Korea until October 2025) publishes no seasonally adjusted consumer prices, and the Bank of Korea&rsquo;s ECOS database carries none either. Its monthly release reports unadjusted month-on-month changes only. This dashboard does not seasonally adjust any series itself, so it has no momentum chart.</p>
       <h3>Year-on-year rates</h3>
-      <p>ECOS publishes index levels to two decimals. The y/y rates here are calculated from those indices and rounded to one decimal, which is how the ministry derives its published rates.</p>
+      <p>ECOS publishes index levels to two decimals. The y/y rates here are calculated from those indices and rounded to one decimal, which is how the ministry derives its published rates; they are checked against the published rates on every update.</p>
       <div class="ad-foot"><span>Source: Ministry of Data and Statistics, Bank of Korea</span><span class="ad-brand">Asia Decoded</span></div>
     </article>
     <article class="jg-card ad-method" id="method-contrib">
       <h2>Contributions and weights</h2>
-      <p>The ministry does not publish a contributions series, so contributions are calculated here from the published indices and the published 2022 basket weights (per 1,000, from ECOS).</p>
+      <p>The ministry does not publish a contributions series, so contributions are calculated here from the published indices and the published 2022 basket weights.</p>
+      <h3>Weights</h3>
+      <ul>
+        <li><b>Published:</b> ECOS gives the ministry&rsquo;s 2022 basket weight (per 1,000) for every item, division and special aggregate. They are shown as % of CPI.</li>
+      </ul>
       <h3>Contributions to y/y</h3>
       <ul>
         <li><b>Parts:</b> agricultural, livestock and fishery products; industrial products excluding petroleum; petroleum products; electricity, gas and water; and services. These five make up all items.</li>
-        <li id="method-contrib-formula"><b>Formula:</b> the CPI is a Lowe index. Each item&rsquo;s coefficient is its weight divided by its 2022 average index, scaled so that the weighted items equal the all-items index in December 2022. A contribution is coefficient &times; (index now &minus; index a year earlier) &divide; all-items index a year earlier. The weighted items reproduce the published all-items index to within 0.01 index points in every month since December 2022.</li>
-        <li id="method-contrib-period"><b>Period:</b> December 2023 on, the months whose year-earlier month is also on the 2022 basket (linked in at December 2022). The weights of the earlier 2020 basket are not published in ECOS, so the chart starts there.</li>
+        <li><b>Formula:</b> the CPI is a Lowe index. Each part&rsquo;s coefficient is its weight divided by its 2022 average index, scaled so that the weighted parts equal the all-items index in December 2022, when the 2022 basket was linked in. A contribution is coefficient &times; (index now &minus; index a year earlier) &divide; all-items index a year earlier. The weighted items reproduce the published all-items index to within 0.01 index points in every month since December 2022.</li>
+        <li><b>Period:</b> December 2023 on, the months whose year-earlier month is also on the 2022 basket. ECOS does not publish the weights of the earlier 2020 basket.</li>
         <li><b>Rounding:</b> weights are published to one decimal, so the parts add up to the all-items rate within about 0.02pp.</li>
       </ul>
       <h3>Biggest contributors</h3>
@@ -230,7 +356,7 @@
       <h3>Data</h3>
       <ul>
         <li><b>Source:</b> the item indices in ECOS table 901Y009, with y/y calculated from the index.</li>
-        <li id="method-diffusion-items"><b>Items:</b> the 458 items of the current basket, January 2016 on. Category totals are excluded, so nothing is counted twice. y/y is rounded to one decimal, as published, before classifying.</li>
+        <li><b>Items:</b> the 458 items of the current basket, January 2016 on. Category totals are excluded, so nothing is counted twice. y/y is rounded to one decimal, as published, before classifying.</li>
       </ul>
       <h3>Why the number of items varies</h3>
       <p>ECOS carries only the items in today&rsquo;s basket. 443 of them have a y/y rate from 2016, 444 from 2020 and all 458 from January 2021, when items introduced with the 2020 basket gained a year of history.</p>
@@ -266,10 +392,20 @@ window.JG = {
   window(rows, id) { const n = this.periodOf(id, 40); return n ? rows.slice(-n) : rows; },
   // Range slider per chart: the selected share of the chart's full date range, [from, to] in 0..1.
   range: {},
+  // Charts open from this month until the reader moves the slider.
+  defStart: '2016-01-01',
   slice(rows, id) {
-    const [lo, hi] = this.range[id] || [0, 1];
     if (!rows.length) return rows;
-    const n = rows.length - 1, i0 = Math.round(lo * n), i1 = Math.max(i0, Math.round(hi * n));
+    const n = rows.length - 1;
+    let lo, hi;
+    if (this.range[id]) [lo, hi] = this.range[id];
+    else {
+      const k = rows.findIndex((r) => r.date >= this.defStart);
+      lo = n > 0 && k > 0 ? k / n : 0; hi = 1;
+      const card = document.getElementById(id), sl = card && card._slider;
+      if (sl) { sl.a.value = Math.round(lo * 1000); sl.sel.style.left = `${lo * 100}%`; sl.sel.style.right = '0%'; }
+    }
+    const i0 = Math.round(lo * n), i1 = Math.max(i0, Math.round(hi * n));
     const out = rows.slice(i0, i1 + 1);
     const card = document.getElementById(id), lbl = card && card.querySelector('.ad-slider-lbl');
     if (lbl && out.length) {
@@ -303,6 +439,7 @@ window.JG = {
       a.addEventListener('input', () => upd(a)); b.addEventListener('input', () => upd(b));
       chart.after(wrap, lbl);
       sel.style.left = '0%'; sel.style.right = '0%';
+      card._slider = { a, b, sel };
     });
   },
   addPeriods() {

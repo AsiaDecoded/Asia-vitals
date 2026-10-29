@@ -111,16 +111,19 @@
     const table = card.querySelector('table');
     if (!table) return null;
     const head = Array.from(table.querySelectorAll('thead th')).map((th) => th.textContent.trim());
-    const body = Array.from(table.querySelectorAll('tbody tr')).map((tr) => ({
-      bold: (tr.classList.contains('gdp') && table.id !== 'cpi-table') || tr.classList.contains('grp'), muted: tr.classList.contains('agg'), sep: tr.classList.contains('sep'),
-      cells: Array.from(tr.cells).map((td) => ({ text: td.textContent, neg: td.classList.contains('neg') })),
+    const body = Array.from(table.querySelectorAll('tbody tr')).filter((tr) => !tr.classList.contains('spacer') && !tr.hidden).map((tr) => ({
+      bold: (tr.classList.contains('gdp') && table.id !== 'cpi-table') || tr.classList.contains('grp') || tr.classList.contains('lead'),
+      muted: tr.classList.contains('agg'), sep: tr.classList.contains('sep'), sub: tr.classList.contains('sub'), gap: tr.classList.contains('gap'),
+      cells: Array.from(tr.cells).map((td) => ({ text: td.dataset.label || td.textContent, neg: td.classList.contains('neg'), bg: td.style.background || '' })),
     }));
     if (!body.length) return null;
-    const pad = 18, cpad = 10, lineH = 24, centre = table.id === 'cpi-table' || table.id === 'cpi-movers-table';
+    const heat = table.id === 'cpi-heat-table' || table.id === 'cpi-ctab-table';
+    const pad = 18, cpad = 10, lineH = 24, gapH = 10, indent = 14;
+    const centre = table.id === 'cpi-table' || table.id === 'cpi-movers-table' || heat;
     const m = document.createElement('canvas').getContext('2d');
     m.font = `14px ${FONT}`;
     const colW = head.map((h, j) => {
-      const cellW = Math.max(...body.map((r) => (r.cells[j] ? m.measureText(r.cells[j].text).width : 0)));
+      const cellW = Math.max(...body.map((r) => (r.cells[j] ? m.measureText(r.cells[j].text).width + (j === 0 && r.sub ? indent : 0) : 0)));
       const hw = j === 0 ? m.measureText(h).width : Math.max(56, Math.min(m.measureText(h).width, 96));
       return Math.ceil(Math.max(cellW, hw) + cpad * 2);
     });
@@ -133,15 +136,16 @@
     const src = ((card.querySelector('.ad-foot > span') || {}).textContent || '').trim();
     m.font = `11px ${FONT}`;
     const srcLines = wrap(m, src, W - pad * 2 - 110);
-    const H = pad + 34 + 22 + headH + body.length * lineH + 14 + srcLines.length * 14 + 12 + pad;
+    const gaps = body.filter((r) => r.gap).length * gapH;
+    const H = pad + 34 + (units ? 22 : 8) + (heat ? 6 : 0) + headH + body.length * lineH + gaps + 14 + srcLines.length * 14 + 12 + pad;
     const cv = document.createElement('canvas'); cv.width = W * SCALE; cv.height = H * SCALE;
     const ctx = cv.getContext('2d'); ctx.scale(SCALE, SCALE);
     ctx.fillStyle = '#FFFFFF'; ctx.fillRect(0, 0, W, H);
     let y = pad + 22;
     ctx.fillStyle = INK; ctx.font = `bold 21px ${FONT}`; ctx.fillText(title, pad, y);
-    y += 26; ctx.font = `13px ${FONT}`; ctx.fillText(units, pad, y);
-    y += 10;
     const xs = []; colW.reduce((x, w) => { xs.push(x); return x + w; }, pad);
+    if (heat) { ctx.fillStyle = INK; ctx.fillRect(pad, y + 9, tableW, 1.2); }
+    if (units) { y += 26; ctx.font = `13px ${FONT}`; ctx.fillText(units, pad, y); y += 10; } else { y += 12; }
     ctx.font = `bold 14px ${FONT}`;
     headLines.forEach((ls, j) => {
       const off = headH - 10 - ls.length * 17;
@@ -151,18 +155,22 @@
       });
     });
     y += headH;
-    ctx.fillStyle = INK; ctx.fillRect(pad, y - 1, tableW, 1.2);
+    if (!heat) { ctx.fillStyle = INK; ctx.fillRect(pad, y - 1, tableW, 1.2); }
     body.forEach((r) => {
+      if (r.gap) y += gapH;
       if (r.sep) { ctx.fillStyle = '#A6A6A6'; ctx.fillRect(pad, y, tableW, 1); }
       ctx.font = `${r.bold ? 'bold ' : ''}14px ${FONT}`;
       r.cells.forEach((c, j) => {
-        ctx.fillStyle = c.neg ? '#BD1B21' : (r.muted && j === 0 ? '#868E96' : INK);
+        if (c.bg && j > 0) { ctx.fillStyle = c.bg; ctx.fillRect(xs[j] + 1, y + 1, colW[j] - 2, lineH - 2); }
+        ctx.fillStyle = c.bg ? '#1a1a1a' : (c.neg ? '#BD1B21' : (r.muted && j === 0 ? '#868E96' : INK));
         ctx.textAlign = j === 0 ? 'left' : (centre ? 'center' : 'right');
-        ctx.fillText(c.text, j === 0 ? xs[j] + 2 : (centre ? xs[j] + colW[j] / 2 : xs[j] + colW[j] - cpad), y + 16);
+        const x0 = xs[j] + 2 + (j === 0 && r.sub ? indent : 0);
+        ctx.fillText(c.text, j === 0 ? x0 : (centre ? xs[j] + colW[j] / 2 : xs[j] + colW[j] - cpad), y + 16);
       });
       y += lineH;
-      ctx.fillStyle = '#D9D9D9'; ctx.fillRect(pad, y - 1, tableW, 1);
+      if (!heat) { ctx.fillStyle = '#D9D9D9'; ctx.fillRect(pad, y - 1, tableW, 1); }
     });
+    if (heat) { y += 6; ctx.fillStyle = INK; ctx.fillRect(pad, y, tableW, 1.2); }
     ctx.textAlign = 'left';
     y += 18; ctx.font = `11px ${FONT}`; ctx.fillStyle = INK;
     srcLines.forEach((l, i) => ctx.fillText(l, pad, y + i * 14));
@@ -202,7 +210,46 @@
     try { box.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); } catch (err) { /* older browsers */ }
   }
 
-  document.querySelectorAll('.jg-card').forEach((card) => {
+  // Expand / collapse arrows: a card sharing a row with another widens to the full row (in place, so the page
+  // scrolls normally in any host); cards already full width don't get an arrow.
+  const ICON_OPEN = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2.5h4v4M13.5 2.5 9 7M6.5 13.5h-4v-4M2.5 13.5 7 9"/></svg>';
+  const ICON_CLOSE = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 6.5h-4v-4M9.5 6.5 14 2M2.5 9.5h4v4M6.5 9.5 2 14"/></svg>';
+  const redraw = () => requestAnimationFrame(() => { try { if (window.JG && window.JG.redrawCpi) window.JG.redrawCpi(); } catch (e) { /* best effort */ } });
+  const xcards = [];
+  function setIcon(card, open) {
+    const x = card.querySelector(':scope > .ad-x'); if (!x) return;
+    x.innerHTML = open ? ICON_CLOSE : ICON_OPEN; x.title = open ? 'Collapse' : 'Expand'; x.setAttribute('aria-label', x.title);
+  }
+  function toggle(card) {
+    const open = !card.classList.contains('ad-expanded');
+    xcards.forEach((c) => { if (c !== card && c.classList.contains('ad-expanded')) { c.classList.remove('ad-expanded'); setIcon(c, false); } });
+    card.classList.toggle('ad-expanded', open); setIcon(card, open); redraw(); markFull();
+    requestAnimationFrame(() => { try { card.scrollIntoView({ block: 'start', behavior: 'smooth' }); } catch (e) { /* older browsers */ } });
+  }
+  function markFull() {
+    xcards.forEach((c) => {
+      // the grid item holding the card: the card itself, or the stack of cards it sits in
+      const item = c.parentElement && c.parentElement.classList.contains('ad-stack') ? c.parentElement : c;
+      const grid = item.parentElement, sib = grid && grid.classList.contains('jg-grid') ? Array.from(grid.children) : [];
+      const top = item.getBoundingClientRect().top;
+      const shared = sib.length > 1 && sib.some((n) => n !== item && Math.abs(n.getBoundingClientRect().top - top) < 2);
+      c.classList.toggle('ad-full', !shared && !c.classList.contains('ad-expanded'));
+    });
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    xcards.forEach((c) => { if (c.classList.contains('ad-expanded')) { c.classList.remove('ad-expanded'); setIcon(c, false); } });
+    redraw(); markFull();
+  });
+  document.querySelectorAll('.jg-card:not(.ad-duo)').forEach((card) => {
+    if (!card.querySelector('.jg-chart') && !card.querySelector('table')) return;
+    const x = document.createElement('button'); x.type = 'button'; x.className = 'ad-x';
+    x.addEventListener('click', () => toggle(card));
+    card.classList.add('ad-hasx'); card.appendChild(x); setIcon(card, false); xcards.push(card);
+  });
+  markFull(); window.addEventListener('resize', markFull);
+
+  document.querySelectorAll('.jg-card:not(.ad-duo)').forEach((card) => {
     const isTable = !card.querySelector('.jg-chart') && card.querySelector('table');
     if (!card.querySelector('.jg-chart') && !isTable) return;
     const foot = card.querySelector('.ad-foot'), brand = foot && foot.querySelector('.ad-brand');
