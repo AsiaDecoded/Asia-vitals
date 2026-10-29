@@ -13,7 +13,9 @@
   "hk_cpi": "C&SD schedule of regular press releases (censtatd.gov.hk press_release.html, data/en/press_release/press_release_index.json), to Dec 2027",
   "hk_ppi": "C&SD schedule of regular press releases: PPI for manufacturing (quarterly) and volume and price statistics of external merchandise trade (monthly), to Dec 2027",
   "my_cpi": "DOSM: next date from OpenDOSM's catalogue (cpi_headline 'next update'); later dates expected from the pattern (around the 19th-23rd, 12:00-12:30 MYT)",
-  "my_ppi": "DOSM: next date from OpenDOSM's catalogue (ppi 'next update'); later dates expected from the pattern (around the 26th-30th, 12:00 MYT)"
+  "my_ppi": "DOSM: next date from OpenDOSM's catalogue (ppi 'next update'); later dates expected from the pattern (around the 26th-30th, 12:00 MYT)",
+  "ph_cpi": "PSA: no calendar found; pattern: around the 5th, 09:00 Manila (Sep 2026 CPI released 6 Oct 2026)",
+  "ph_ppi": "PSA PPI for manufacturing (MISSI): no calendar found; about two months after the month (Jul 2026 table updated 9 Sep 2026)"
  },
  "groups": {
   "jp_cpi": {"label": "Japan CPI (national) and CPI contributions", "sources": ["jp_cpi_estat", "jp_cpi_contrib_estat", "jp_cpi_food_estat", "jp_cpi_core3_estat"], "time_sgt": "07:30", "dates": [
@@ -122,6 +124,18 @@
    {"ref": "2027-08 trade prices", "date": "2027-10-20", "status": "official"},
    {"ref": "2027-09 trade prices", "date": "2027-11-12", "status": "official"},
    {"ref": "2027-Q3 PPI", "date": "2027-12-14", "status": "official"},
-   {"ref": "2027-10 trade prices", "date": "2027-12-20", "status": "official"}]}
+   {"ref": "2027-10 trade prices", "date": "2027-12-20", "status": "official"}]},
+  "ph_cpi": {"label": "Philippines CPI", "sources": ["ph_cpi_psa"], "time_sgt": "09:00", "dates": [
+   {"ref": "2026-10", "date": "2026-11-05", "from": "2026-11-04", "to": "2026-11-10", "status": "expected"},
+   {"ref": "2026-11", "date": "2026-12-04", "from": "2026-12-03", "to": "2026-12-09", "status": "expected"},
+   {"ref": "2026-12", "date": "2027-01-06", "from": "2027-01-05", "to": "2027-01-12", "status": "expected"},
+   {"ref": "2027-01", "date": "2027-02-05", "from": "2027-02-04", "to": "2027-02-10", "status": "expected"},
+   {"ref": "2027-02", "date": "2027-03-05", "from": "2027-03-04", "to": "2027-03-10", "status": "expected"}]},
+  "ph_ppi": {"label": "Philippines producer prices (manufacturing)", "sources": ["ph_ppi_psa"], "time_sgt": "09:30", "dates": [
+   {"ref": "2026-08", "date": "2026-11-05", "from": "2026-10-29", "to": "2026-11-13", "status": "expected", "note": "overdue on the usual pattern"},
+   {"ref": "2026-09", "date": "2026-12-07", "from": "2026-12-03", "to": "2026-12-15", "status": "expected"},
+   {"ref": "2026-10", "date": "2027-01-08", "from": "2027-01-05", "to": "2027-01-15", "status": "expected"},
+   {"ref": "2026-11", "date": "2027-02-08", "from": "2027-02-04", "to": "2027-02-15", "status": "expected"},
+   {"ref": "2026-12", "date": "2027-03-08", "from": "2027-03-04", "to": "2027-03-15", "status": "expected"}]}
  }
 }

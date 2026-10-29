@@ -24,4 +24,6 @@ SOURCES = [
     "hk_ppi_censtatd",
     "my_cpi_dosm",
     "my_ppi_dosm",
+    "ph_cpi_psa",
+    "ph_ppi_psa",
 ]
