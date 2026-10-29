@@ -9,6 +9,7 @@ SOURCES = [
     "jp_ppi_boj",
     "jp_cpi_contrib_estat",
     "jp_cpi_core3_estat",
+    "jp_cpi_food_estat",
     "in_cpi_mospi",
     "in_cpi_imf",
     "in_cpi_core",
