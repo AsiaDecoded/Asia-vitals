@@ -400,7 +400,7 @@ dash.calc('impacts_latest', {
 
   // Heat table: published y/y for the latest 13 months, each row on its own colour range; DGBAS weights.
   const HEAT = [
-    ['all', 'CPI', 'lead'], ['core', 'Core CPI (ex fruit, vegetables and energy)', 'lead'], ['ex_food_energy', 'CPI ex food and energy (DGBAS definition)', ''],
+    ['all', 'CPI', 'lead'], ['core1', 'Core 1 (ex food and non-alcoholic beverages and energy; calculated)', 'lead'], ['core', 'Core CPI (ex fruit, vegetables and energy)', 'lead'], ['ex_food_energy', 'CPI ex food and energy (DGBAS definition)', ''],
     ['goods', 'Goods', ''], ['core_goods', 'Core goods', 'sub'], ['services', 'Services', ''], ['energy', 'Energy', ''],
     ['food', 'Food', 'cat'], ['cereals', 'Cereals and products', 'sub'], ['meat', 'Meat', 'sub'], ['vegetables', 'Vegetables', 'sub'],
     ['fruit', 'Fruits', 'sub'], ['eating_out', 'Food away from home', 'sub'],
@@ -458,7 +458,8 @@ dash.calc('impacts_latest', {
     ymChart();
     saChart();
     contribChart();
-    lines('cpi-core', [C('all', 'cpi', 'CPI', 'var(--ad-c2)'), C('core', 'core', 'Core CPI (ex fruit, vegetables and energy)', 'var(--ad-c6)'),
+    lines('cpi-core', [C('all', 'cpi', 'CPI', 'var(--ad-c2)'), C('core1', 'core1', 'Core 1 (calculated)', 'var(--ad-c1)'),
+      C('core', 'core', 'Core CPI (ex fruit, vegetables and energy)', 'var(--ad-c6)'),
       C('ex_food_energy', 'xfe', 'CPI ex food and energy (DGBAS)', 'var(--ad-c8)', { dash: true })], { anyStart: true });
     lines('cpi-gs', [C('goods', 'goods', 'Goods', 'var(--ad-c1)'), C('services', 'services', 'Services', 'var(--ad-c2)'),
       C('core_goods', 'cg', 'Core goods', 'var(--ad-c6)', { thin: true })], { anyStart: true });

@@ -305,6 +305,107 @@ def _food01(data, t1, t14, latest, errors, warnings):
     return rows, wts, chk, stats
 
 
+# Core 1 = CPI excluding food and non-alcoholic beverages (COICOP 01, series food01 above) and energy:
+# the Asia-tab core (set by the user 29 Oct 2026). Energy = DGBAS's energy boundary (gas, electricity,
+# fuels and lubricants: items 236-237, 239, 246-250), removed as its three subgroups, the way the
+# headline aggregates them. Removed from the published all-items index, Laspeyres within each weight
+# year, linked at December:
+#   K_t = K_Dec x (100 r_all - W_C r_C - sum_e W_e r_e) / (100 - W_C - sum_e W_e)
+# W_C the COICOP 01 food weight (food01 weights), W_e from release table 14 (that month's release),
+# % of CPI. Index Dec 2022 = 100; y/y from Jan 2024.
+CORE1_KEY = "core1"
+CORE1_LABEL = "Core 1: CPI excl. food and non-alcoholic beverages (COICOP 01) and energy, calculated"
+CORE1_ENERGY = {"gas": (236, 237), "electricity": (239,), "fuels": (246, 247, 248, 249, 250)}
+CORE1_SENS_LIMIT = 0.06    # pp, y/y: food weight from table 1 vs the month's table 14 total
+CORE1_ENERGY_LIMIT = 0.06  # pp, y/y: energy removed as three subgroups vs as DGBAS's energy index
+
+
+def _core1(data, t1, t14, food01, food01_w, latest, errors, warnings):
+    idx = {k: data.get(("national", k, "index"), {}) for k in ("all", "energy") + tuple(CORE1_ENERGY)}
+    fidx = {r["date"][:7]: r["index"] for r in food01}
+    fw = {w["date"][:7]: w for w in food01_w}
+    T1 = {}
+    for m, t in t1.items():
+        for r in t["rows"]:
+            k = T1_KEYS.get(r["label"])
+            if k in ("core", "vegetables", "fruit"):
+                T1[(k, m)] = r["weight_pm"] / 10
+    base = f"{int(FOOD01_FIRST[:4]) - 1}-12"
+    K, Kalt, Kspec = {base: 100.0}, {base: 100.0}, {base: 100.0}
+    rows = [{"date": base + "-01", "index": 100.0, "yoy": None, "base_break": 0}]
+    wts, chk = [], []
+    for m in _months(FOOD01_FIRST, latest):
+        D = f"{int(m[:4]) - 1}-12"
+        it = t14.get(m, {})
+        ew = {}
+        for k, codes in CORE1_ENERGY.items():
+            got = [it[c]["weight_pct"] for c in codes if c in it]
+            if len(got) != len(codes):
+                errors.append(f"Core 1 {m}: energy items missing in table 14 ({k})")
+            ew[k] = sum(got)
+        if m not in fw or m not in fidx or D not in fidx:
+            errors.append(f"Core 1 {m}: COICOP 01 food missing")
+            continue
+        try:
+            r = {k: idx[k][m] / idx[k][D] for k in idx}
+        except KeyError as e:
+            errors.append(f"Core 1 {m}: index missing ({e})")
+            continue
+        rc = fidx[m] / fidx[D]
+        WC, WE = fw[m]["kept_pct"], sum(ew.values())
+        WK = 100 - WC - WE
+        rem = sum(ew[k] * r[k] for k in ew)
+        K[m] = K[D] * (100 * r["all"] - WC * rc - rem) / WK
+        rec = idx["all"][D] * (WK * K[m] / K[D] + WC * rc + rem) / 100      # identity: back to all items
+        WC2 = fw[m]["food_t14_total_pct"] - fw[m]["alcohol_pct"] - fw[m]["eating_out_pct"]
+        Kalt[m] = Kalt[D] * (100 * r["all"] - WC2 * rc - rem) / (100 - WC2 - WE)
+        Kspec[m] = Kspec[D] * (100 * r["all"] - WC * rc - WE * r["energy"]) / WK
+        pub_e = None
+        if all((k, m) in T1 for k in ("core", "vegetables", "fruit")):
+            pub_e = round(100 - T1[("core", m)] - T1[("vegetables", m)] - T1[("fruit", m)], 4)
+        chk.append({"month": m, "identity_gap": round(rec - idx["all"][m], 6),
+                    "energy_weight_t14": round(WE, 4), "energy_weight_from_t1": pub_e})
+        wts.append({"date": m + "-01", "food01_pct": WC, "energy_pct": round(WE, 4),
+                    **{f"{k}_pct": round(v, 4) for k, v in ew.items()}, "core1_pct": round(WK, 4),
+                    "weight_sum_check": round(WK + WC + WE - 100, 9)})
+    sens, spec = [], []
+    for m in _months(FOOD01_FIRST, latest):
+        if m not in K:
+            continue
+        p0 = f"{int(m[:4]) - 1}{m[4:]}"
+        y = None
+        if m >= _shift(FOOD01_FIRST, 12) and p0 in K:
+            y = (K[m] / K[p0] - 1) * 100
+            sens.append(abs(y - (Kalt[m] / Kalt[p0] - 1) * 100))
+            spec.append(abs(y - (Kspec[m] / Kspec[p0] - 1) * 100))
+        rows.append({"date": m + "-01", "index": round(K[m], 4), "yoy": None if y is None else round(y, 4),
+                     "base_break": 1 if m[5:7] == "01" else 0})
+    ym = [r["date"][:7] for r in rows if r["yoy"] is not None]
+    gaps = sorted(set(_months(_shift(FOOD01_FIRST, 12), latest)) - set(ym))
+    if gaps:
+        errors.append(f"Core 1 y/y has gaps: {gaps[:12]}")
+    if latest not in ym:
+        errors.append(f"Core 1: latest month {latest} missing")
+    idg = max((abs(c["identity_gap"]) for c in chk), default=None)
+    if idg is None or idg > FOOD01_ID_LIMIT:
+        errors.append(f"Core 1: recombined all-items index differs from the published one by {idg}")
+    for w in wts:
+        if abs(w["weight_sum_check"]) > 1e-6:
+            errors.append(f"Core 1 {w['date'][:7]}: weights do not sum to 100")
+    ewd = [abs(c["energy_weight_t14"] - c["energy_weight_from_t1"]) for c in chk if c["energy_weight_from_t1"] is not None]
+    if ewd and max(ewd) > 0.005:
+        errors.append(f"Core 1: energy weight (table 14 items) differs from 100 - core - vegetables - fruit (table 1) by {max(ewd):.4f}")
+    smax, emax = max(sens, default=0.0), max(spec, default=0.0)
+    if smax > CORE1_SENS_LIMIT:
+        errors.append(f"Core 1: y/y depends on the food weight by up to {smax:.3f}pp (limit {CORE1_SENS_LIMIT})")
+    if emax > CORE1_ENERGY_LIMIT:
+        errors.append(f"Core 1: energy as subgroups vs DGBAS's energy index changes y/y by up to {emax:.3f}pp")
+    stats = {"identity_max_gap": idg, "sensitivity_max_pp": round(smax, 4), "energy_index_vs_subgroups_max_pp": round(emax, 4),
+             "energy_weight_check_max": round(max(ewd), 4) if ewd else None, "energy_weight_checked_months": len(ewd),
+             "months": len(chk)}
+    return rows, wts, chk, stats
+
+
 def update(**opts):
     OUT.mkdir(parents=True, exist_ok=True)
     state = read_json(OUT / "release.json", {}) or {}
@@ -446,6 +547,7 @@ def update(**opts):
             if meas in ("index", "sa_index") and not 0 < v < 10000:  # communication equipment ~2600 in 1991
                 errors.append(f"{area} {key} {meas} {p} = {v} out of range")
     food01, food01_w, food01_chk, food01_stats = _food01(data, t1, t14, latest, errors, warnings)
+    core1, core1_w, core1_chk, core1_stats = _core1(data, t1, t14, food01, food01_w, latest, errors, warnings)
     if errors:
         raise CheckFailed(errors)
 
@@ -463,11 +565,13 @@ def update(**opts):
             rows.append({"date": p + "-01", "area": area, "series": key, "measure": meas, "value": v,
                          "base_break": 1 if p in BASE_STARTS else 0, "release_date": rel_dates.get(p, "")})
     # Calculated COICOP 01 food (see _food01) beside DGBAS's series: series food01, index and y/y
-    for r in food01:
-        for meas in ("index", "yoy"):
-            if r[meas] is not None:
-                rows.append({"date": r["date"], "area": "national", "series": FOOD01_KEY, "measure": meas, "value": r[meas],
-                             "base_break": r["base_break"], "release_date": rel_dates.get(r["date"][:7], "")})
+    calc = [(FOOD01_KEY, FOOD01_LABEL, "food", food01), (CORE1_KEY, CORE1_LABEL, "all", core1)]
+    for key, _, _, crows_ in calc:
+        for r in crows_:
+            for meas in ("index", "yoy"):
+                if r[meas] is not None:
+                    rows.append({"date": r["date"], "area": "national", "series": key, "measure": meas, "value": r[meas],
+                                 "base_break": r["base_break"], "release_date": rel_dates.get(r["date"][:7], "")})
     rows.sort(key=lambda r: (r["date"], r["area"] != "national", r["area"], r["series"], r["measure"]))
     _write_csv(OUT / "tw_cpi.csv", ["date", "area", "series", "measure", "value", "base_break", "release_date"], rows)
     slist = sorted({(a, k) for (a, k, m) in data})
@@ -477,16 +581,17 @@ def update(**opts):
                  "level": labels.get(k, {}).get("level", ""), "parent": labels.get(k, {}).get("parent", ""),
                  "first": min(min(data[(a2, k2, m)]) for (a2, k2, m) in data if a2 == a and k2 == k),
                  "last": max(max(data[(a2, k2, m)]) for (a2, k2, m) in data if a2 == a and k2 == k)} for a, k in slist]
-               + [{"area": "national", "area_name": "Taiwan", "series": FOOD01_KEY, "label": FOOD01_LABEL,
-                   "group": "calculated", "level": "", "parent": "food",
-                   "first": food01[0]["date"][:7] if food01 else "", "last": food01[-1]["date"][:7] if food01 else ""}])
+               + [{"area": "national", "area_name": "Taiwan", "series": key, "label": lab,
+                   "group": "calculated", "level": "", "parent": parent,
+                   "first": cr[0]["date"][:7] if cr else "", "last": cr[-1]["date"][:7] if cr else ""}
+                  for key, lab, parent, cr in calc])
     dash_keys = set(GROUPS7) | {"all", "core", "energy", "goods", "services", "core_goods", "noncore_goods",
                                 "ex_food_energy", "ex_fruit_veg", "vegetables", "fruit", "eating_out", "fuels",
                                 "electricity", "gas", "rent", "durable", "semidurable", "nondurable",
                                 "services_eating_out", "medical_services", "transport_fees", "cereals", "meat"}
-    # Dashboard file: DGBAS's series as published, plus the calculated COICOP 01 food (series food01)
+    # Dashboard file: DGBAS's series as published, plus the calculated food01 and core1
     _write_csv(OUT / "tw_cpi_dash.csv", ["date", "area", "series", "measure", "value"],
-               [r for r in rows if (r["series"] in dash_keys or r["series"] == FOOD01_KEY) and r["date"] >= "1960-01-01"
+               [r for r in rows if (r["series"] in dash_keys or r["series"] in (FOOD01_KEY, CORE1_KEY)) and r["date"] >= "1960-01-01"
                 and (r["area"] == "national" or r["series"] == "all")])
     item_rows.sort(key=lambda r: (r["date"], r["code"], r["measure"]))
     _write_csv(OUT / "tw_cpi_items.csv", ["date", "code", "name", "measure", "value"], item_rows)
@@ -513,7 +618,10 @@ def update(**opts):
     _write_csv(OUT / "tw_cpi_weights.csv", ["date", "level", "key", "label", "weight_pct", "source"], wrows)
     (OUT / "tw_cpi_checks.json").write_text(json.dumps({"rates_vs_index": stats, "weights_vs_headline": wcheck,
                                                        "item_weight_sums": wsum14, "food_coicop01": food01_stats,
-                                                       "food_coicop01_months": food01_chk}, indent=1) + "\n")
+                                                       "food_coicop01_months": food01_chk, "core1": core1_stats,
+                                                       "core1_months": core1_chk}, indent=1) + "\n")
+    _write_csv(OUT / "tw_cpi_core1_weights.csv", ["date", "core1_pct", "food01_pct", "energy_pct", "gas_pct",
+                                                  "electricity_pct", "fuels_pct", "weight_sum_check"], core1_w)
     _write_csv(OUT / "tw_cpi_food01_weights.csv", ["date", "food_pct", "alcohol_pct", "eating_out_pct", "kept_pct",
                                                    "food_t14_total_pct", "weight_sum_check"], food01_w)
     code = f"C{latest}"
@@ -543,7 +651,7 @@ def update(**opts):
             "summary": f"{label}: {len(rows)} rows, {n_items} items, {len(t1)} release tables; "
                        f"rates vs index {stats['tested']} tested, max {stats['max']:.3f}; "
                        f"weights vs headline max {max((abs(w['diff']) for w in wcheck), default=0):.3f}; "
-                       f"COICOP 01 food {food01_stats}",
+                       f"COICOP 01 food {food01_stats}; Core 1 {core1_stats}",
             "warnings": warnings}
 
 
