@@ -26,4 +26,7 @@ SOURCES = [
     "my_ppi_dosm",
     "ph_cpi_psa",
     "ph_ppi_psa",
+    "th_cpi_tpso",
+    "th_ppi_tpso",
+    "th_xmpi_tpso",
 ]
