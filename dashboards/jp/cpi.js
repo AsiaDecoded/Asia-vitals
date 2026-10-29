@@ -722,10 +722,27 @@ dash.calc('ppi_latest', {
       { key: 'services', name: 'Services', color: C[1] },
       { key: 'services_ex_rent', name: 'Services less imputed rent', color: C[1], dash: true },
     ], 280);
-    lineChart('cpi-drivers-chart', 'cpi-drivers', 'cpi-drivers-legend', S.drivers, S.fe === 'energy'
-      ? [{ key: 'electricity', name: 'Electricity', color: C[1] }, { key: 'city_gas', name: 'City gas', color: C[0] },
-        { key: 'lp_gas', name: 'LP gas', color: C[2] }, { key: 'kerosene', name: 'Kerosene', color: C[4] }, { key: 'gasoline', name: 'Gasoline', color: C[3] }]
-      : [{ key: 'fresh_food', name: 'Fresh food', color: C[0] }, { key: 'food_ex_fresh', name: 'Food less fresh food', color: C[5] }], 280);
+    if (S.fe === 'food' && S.drivers === 'national') {
+      // national: adds food and non-alcoholic beverages (Asia Decoded calculation, COICOP 01, from 2011)
+      lineChart('cpi-drivers-chart', 'cpi-drivers', 'cpi-drivers-legend', 'national', [
+        { key: 'fresh_food', name: 'Fresh food', color: C[0] }, { key: 'food_ex_fresh', name: 'Food less fresh food', color: C[5] },
+        { key: 'fnab', name: 'Food and non-alcoholic beverages', color: C[1] },
+      ], 280, {
+        ids: ['cpi_series', 'jp_cpi_food'],
+        rows: (cpi, food) => {
+          const by = new Map();
+          const put = (d, k, v) => { if (v == null) return; if (!by.has(d)) by.set(d, { date: d }); by.get(d)[k] = v; };
+          cpi.forEach((r) => { if (r.area === 'national' && (r.series === 'fresh_food' || r.series === 'food_ex_fresh')) put(r.date, r.series, r.yoy); });
+          food.forEach((r) => { if (r.yoy !== '') put(r.date, 'fnab', Math.round(Number(r.yoy) * 10) / 10); });
+          return J.slice(Array.from(by.values()).sort((a, b) => (a.date < b.date ? -1 : 1)), 'cpi-drivers');
+        },
+      });
+    } else {
+      lineChart('cpi-drivers-chart', 'cpi-drivers', 'cpi-drivers-legend', S.drivers, S.fe === 'energy'
+        ? [{ key: 'electricity', name: 'Electricity', color: C[1] }, { key: 'city_gas', name: 'City gas', color: C[0] },
+          { key: 'lp_gas', name: 'LP gas', color: C[2] }, { key: 'kerosene', name: 'Kerosene', color: C[4] }, { key: 'gasoline', name: 'Gasoline', color: C[3] }]
+        : [{ key: 'fresh_food', name: 'Fresh food', color: C[0] }, { key: 'food_ex_fresh', name: 'Food less fresh food', color: C[5] }], 280);
+    }
     {
       const b = document.querySelector(`#cpi-svc-seg [data-s="${S.svc}"]`);
       lineChart('cpi-svc-chart', 'cpi-svc', 'cpi-svc-legend', 'national', S.svc === 'rent'
