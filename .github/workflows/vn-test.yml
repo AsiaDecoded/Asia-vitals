@@ -1,0 +1,115 @@
+name: Vietnam test (dev-vn)
+
+# Runs the Vietnam sources (vn_cpi_nso, vn_ppi_nso) on the dev-vn branch, which are not yet in the shared
+# registry (pipeline/sources/__init__.py), with their checks; then checks the September 2026 figures against
+# NSO's release (3 Oct 2026) and pushes data/vn and raw/vn back to dev-vn. Not part of the scheduled update
+# until merged.
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-vn]
+    paths:
+      - pipeline/core/nso_vn.py
+      - pipeline/sources/vn_cpi_nso/**
+      - pipeline/sources/vn_ppi_nso/**
+      - .github/workflows/vn-test.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vn-test
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Excel readers
+        run: pip install -q openpyxl==3.1.5 xlrd==2.0.1
+
+      - name: Run the Vietnam sources with their checks
+        run: |
+          python -I - <<'PY'
+          import sys, traceback, importlib, time
+          sys.path.insert(0, "pipeline")
+          from core.common import CheckFailed
+          rc, lines = 0, []
+          for name in ("vn_cpi_nso", "vn_ppi_nso"):
+              t0 = time.time()
+              lines.append(f"== {name}")
+              try:
+                  res = importlib.import_module(f"sources.{name}").update(force=True)
+                  lines.append(f"   {'UPDATED' if res['updated'] else 'unchanged'}: {res['summary']} ({time.time() - t0:.0f}s)")
+                  for w in res.get("warnings", []):
+                      lines.append(f"   WARNING: {w}"[:1500])
+              except CheckFailed as e:
+                  rc = 1
+                  lines.append(f"   CHECKS FAILED ({len(e.errors)}):")
+                  lines += [f"   - {x}"[:600] for x in e.errors[:40]]
+              except Exception:
+                  rc = 1
+                  lines.append(traceback.format_exc())
+          open("vn_report.txt", "w").write("\n".join(lines) + "\n")
+          print("\n".join(lines))
+          sys.exit(rc)
+          PY
+
+      - name: September 2026 against the NSO release
+        run: |
+          python -I - <<'PY'
+          import csv, sys
+          # As reported in NSO's release for September 2026 (3 Oct 2026: press release page, Vietnamese and English
+          # workbooks), % change against each comparison period, two decimals.
+          CPI = {("all", "yoy"): 5.08, ("all", "prev_month"): 0.62, ("all", "prev_dec"): 4.20, ("all", "qtr_avg"): 4.80,
+                 ("all", "ytd_avg"): 4.52, ("core", "yoy"): 4.45, ("core", "prev_month"): 0.11, ("core", "ytd_avg"): 4.26,
+                 ("gold", "yoy"): 12.42, ("gold", "prev_month"): 2.38, ("gold", "prev_dec"): -4.04, ("gold", "ytd_avg"): 42.67,
+                 ("usd", "yoy"): -1.34, ("usd", "prev_month"): -0.69, ("usd", "prev_dec"): -1.07, ("usd", "ytd_avg"): 1.01,
+                 ("food_catering", "ytd_avg"): 4.72, ("housing", "ytd_avg"): 6.68, ("transport", "ytd_avg"): 6.06}
+          INDEX = {("all", 2024): 108.656}
+          PPI = {("ppi", "industry", "yoy"): 4.75, ("ppi", "agriculture", "yoy"): 4.20, ("ppi", "services", "yoy"): 4.14,
+                 ("export", "all", "yoy"): 5.87, ("import", "all", "yoy"): 5.92}
+          bad, n = [], 0
+          rows = {}
+          for r in csv.DictReader(open("data/vn/cpi/vn_cpi.csv")):
+              if r["date"] == "2026-09-01" and r["area"] == "national":
+                  rows[(r["series"], r["comparison_base"], r["base_year"])] = r
+          for (s, b), v in CPI.items():
+              n += 1; x = rows.get((s, b, ""))
+              if x is None: bad.append(f"CPI {s} {b}: missing")
+              elif abs(round(float(x["rate"]), 2) - v) > 0.0051: bad.append(f"CPI {s} {b}: {float(x['rate']):.3f} vs release {v}")
+          for (s, by), v in INDEX.items():
+              n += 1; x = rows.get((s, "base_period", str(by)))
+              if x is None: bad.append(f"CPI {s} index {by}: missing")
+              elif abs(float(x["value"]) - v) > 0.0006: bad.append(f"CPI {s} index: {x['value']} vs release {v}")
+          for a in ("urban", "rural"):
+              n += 1
+              if not any(r["date"] == "2026-09-01" and r["area"] == a and r["series"] == "all" and r["comparison_base"] == "yoy"
+                         for r in csv.DictReader(open("data/vn/cpi/vn_cpi.csv"))):
+                  bad.append(f"CPI {a}: missing")
+          rows = {(r["table"], r["series"], r["comparison_base"]): float(r["rate"]) for r in csv.DictReader(open("data/vn/ppi/vn_ppi.csv"))
+                  if r["period"] == "2026-Q3"}
+          for k, v in PPI.items():
+              n += 1; x = rows.get(k)
+              if x is None: bad.append(f"PPI {k}: missing")
+              elif abs(round(x, 2) - v) > 0.0051: bad.append(f"PPI {k}: {x:.3f} vs release {v}")
+          msg = f"September 2026 vs NSO release: {n - len(bad)}/{n} match"
+          print(msg); [print("  -", b) for b in bad]
+          open("vn_report.txt", "a").write(msg + "\n" + "".join(f"  - {b}\n" for b in bad))
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: Push data and report to dev-vn
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mkdir -p data/vn && cp vn_report.txt data/vn/test_report.txt 2>/dev/null || true
+          git add data/vn; if [ -d raw/vn ]; then git add raw/vn; fi
+          git commit -qm "Vietnam test run ${{ github.run_id }}" || exit 0
+          for i in 1 2 3; do git pull -q --rebase origin dev-vn && git push -q origin HEAD:dev-vn && break; sleep 5; done

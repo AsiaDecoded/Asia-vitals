@@ -1,0 +1,2104 @@
+date,period,table,series,label,measure,value
+2020-03-01,2020-Q1,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,5.968743
+2020-03-01,2020-Q1,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,4.452352
+2020-03-01,2020-Q1,ppi,ppi_forestry,Forestry and related services,yoy,-0.098247
+2020-03-01,2020-Q1,ppi,ppi_forestry,Forestry and related services,qoq,0.057743
+2020-03-01,2020-Q1,ppi,ppi_fishery,Fishing and aquaculture,yoy,1.09517
+2020-03-01,2020-Q1,ppi,ppi_fishery,Fishing and aquaculture,qoq,2.750526
+2020-03-01,2020-Q1,ppi,ppi_industry,Industry,yoy,1.045949
+2020-03-01,2020-Q1,ppi,ppi_industry,Industry,qoq,-0.025485
+2020-03-01,2020-Q1,ppi,ppi_mining,Mining and quarrying,yoy,6.349118
+2020-03-01,2020-Q1,ppi,ppi_mining,Mining and quarrying,qoq,1.361027
+2020-03-01,2020-Q1,ppi,ppi_manufacturing,Manufacturing,yoy,0.568284
+2020-03-01,2020-Q1,ppi,ppi_manufacturing,Manufacturing,qoq,0.150139
+2020-03-01,2020-Q1,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,2.335529
+2020-03-01,2020-Q1,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.798147
+2020-03-01,2020-Q1,ppi,ppi_services,Services,yoy,2.28211
+2020-03-01,2020-Q1,ppi,ppi_services,Services,qoq,-0.248686
+2020-03-01,2020-Q1,ppi,ppi_svc_transport,Transport and storage,yoy,-1.911449
+2020-03-01,2020-Q1,ppi,ppi_svc_transport,Transport and storage,qoq,-2.01368
+2020-03-01,2020-Q1,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,2.36635
+2020-03-01,2020-Q1,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,0.598365
+2020-03-01,2020-Q1,ppi,ppi_svc_info,Information and communication,yoy,0.49135
+2020-03-01,2020-Q1,ppi,ppi_svc_info,Information and communication,qoq,-0.033466
+2020-03-01,2020-Q1,ppi,ppi_svc_education,Education and training,yoy,4.146421
+2020-03-01,2020-Q1,ppi,ppi_svc_education,Education and training,qoq,0.115003
+2020-03-01,2020-Q1,ppi,ppi_svc_health,Health and social work,yoy,3.575464
+2020-03-01,2020-Q1,ppi,ppi_svc_health,Health and social work,qoq,0.063438
+2020-03-01,2020-Q1,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,1.872719
+2020-03-01,2020-Q1,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.158104
+2020-03-01,2020-Q1,input,input_all,All items,yoy,1.139776
+2020-03-01,2020-Q1,input,input_all,All items,qoq,0.09887
+2020-03-01,2020-Q1,input,input_for_constr,Used for construction,yoy,1.278634
+2020-03-01,2020-Q1,input,input_for_constr,Used for construction,qoq,-0.082457
+2020-03-01,2020-Q1,transport,transport_all,All items,yoy,-1.911449
+2020-03-01,2020-Q1,transport,transport_all,All items,qoq,-2.01368
+2020-03-01,2020-Q1,export,export_all,All items,yoy,-0.531389
+2020-03-01,2020-Q1,export,export_all,All items,qoq,-0.276116
+2020-03-01,2020-Q1,export,export_agri_food,Agricultural products and food,yoy,-1.396676
+2020-03-01,2020-Q1,export,export_agri_food,Agricultural products and food,qoq,0.26861
+2020-03-01,2020-Q1,export,export_fuel,Fuels,yoy,-9.253659
+2020-03-01,2020-Q1,export,export_fuel,Fuels,qoq,-5.514827
+2020-03-01,2020-Q1,export,export_manufactured,Other manufactured goods,yoy,-0.052247
+2020-03-01,2020-Q1,export,export_manufactured,Other manufactured goods,qoq,-0.143973
+2020-03-01,2020-Q1,import,import_all,All items,yoy,0.078038
+2020-03-01,2020-Q1,import,import_all,All items,qoq,-0.157964
+2020-03-01,2020-Q1,import,import_agri_food,Agricultural products and food,yoy,1.002029
+2020-03-01,2020-Q1,import,import_agri_food,Agricultural products and food,qoq,0.52019
+2020-03-01,2020-Q1,import,import_fuel,Fuels,yoy,4.745206
+2020-03-01,2020-Q1,import,import_fuel,Fuels,qoq,0.56408
+2020-03-01,2020-Q1,import,import_manufactured,Other manufactured goods,yoy,-0.193028
+2020-03-01,2020-Q1,import,import_manufactured,Other manufactured goods,qoq,-0.229879
+2020-03-01,2020-Q1,tot,tot_all,All items,yoy,-0.608951
+2020-03-01,2020-Q1,tot,tot_all,All items,qoq,-0.118338
+2020-06-01,2020-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,8.312538
+2020-06-01,2020-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,0.820261
+2020-06-01,2020-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,7.134231
+2020-06-01,2020-Q2,ppi,ppi_forestry,Forestry and related services,yoy,-0.476277
+2020-06-01,2020-Q2,ppi,ppi_forestry,Forestry and related services,qoq,-0.291217
+2020-06-01,2020-Q2,ppi,ppi_forestry,Forestry and related services,ytd_avg,-0.287441
+2020-06-01,2020-Q2,ppi,ppi_fishery,Fishing and aquaculture,yoy,-2.400553
+2020-06-01,2020-Q2,ppi,ppi_fishery,Fishing and aquaculture,qoq,-3.330197
+2020-06-01,2020-Q2,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,-0.668068
+2020-06-01,2020-Q2,ppi,ppi_industry,Industry,yoy,-1.69447
+2020-06-01,2020-Q2,ppi,ppi_industry,Industry,qoq,-1.656076
+2020-06-01,2020-Q2,ppi,ppi_industry,Industry,ytd_avg,-0.333653
+2020-06-01,2020-Q2,ppi,ppi_mining,Mining and quarrying,yoy,-19.313779
+2020-06-01,2020-Q2,ppi,ppi_mining,Mining and quarrying,qoq,-18.759216
+2020-06-01,2020-Q2,ppi,ppi_mining,Mining and quarrying,ytd_avg,-7.366807
+2020-06-01,2020-Q2,ppi,ppi_manufacturing,Manufacturing,yoy,-0.8104
+2020-06-01,2020-Q2,ppi,ppi_manufacturing,Manufacturing,qoq,-0.934307
+2020-06-01,2020-Q2,ppi,ppi_manufacturing,Manufacturing,ytd_avg,-0.123437
+2020-06-01,2020-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,3.174591
+2020-06-01,2020-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.825086
+2020-06-01,2020-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,2.75842
+2020-06-01,2020-Q2,ppi,ppi_services,Services,yoy,-0.868925
+2020-06-01,2020-Q2,ppi,ppi_services,Services,qoq,-1.957111
+2020-06-01,2020-Q2,ppi,ppi_services,Services,ytd_avg,0.071547
+2020-06-01,2020-Q2,ppi,ppi_svc_transport,Transport and storage,yoy,-7.73677
+2020-06-01,2020-Q2,ppi,ppi_svc_transport,Transport and storage,qoq,-5.860315
+2020-06-01,2020-Q2,ppi,ppi_svc_transport,Transport and storage,ytd_avg,-4.868688
+2020-06-01,2020-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,-0.187178
+2020-06-01,2020-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,-0.993587
+2020-06-01,2020-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,0.741693
+2020-06-01,2020-Q2,ppi,ppi_svc_info,Information and communication,yoy,0.278227
+2020-06-01,2020-Q2,ppi,ppi_svc_info,Information and communication,qoq,-0.0599
+2020-06-01,2020-Q2,ppi,ppi_svc_info,Information and communication,ytd_avg,0.378802
+2020-06-01,2020-Q2,ppi,ppi_svc_education,Education and training,yoy,4.320995
+2020-06-01,2020-Q2,ppi,ppi_svc_education,Education and training,qoq,-0.078023
+2020-06-01,2020-Q2,ppi,ppi_svc_education,Education and training,ytd_avg,4.233672
+2020-06-01,2020-Q2,ppi,ppi_svc_health,Health and social work,yoy,3.563961
+2020-06-01,2020-Q2,ppi,ppi_svc_health,Health and social work,qoq,0.054101
+2020-06-01,2020-Q2,ppi,ppi_svc_health,Health and social work,ytd_avg,3.569712
+2020-06-01,2020-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,1.414312
+2020-06-01,2020-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.036309
+2020-06-01,2020-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,1.643257
+2020-06-01,2020-Q2,input,input_all,All items,yoy,1.502227
+2020-06-01,2020-Q2,input,input_all,All items,qoq,1.733469
+2020-06-01,2020-Q2,input,input_all,All items,ytd_avg,1.33216
+2020-06-01,2020-Q2,input,input_for_constr,Used for construction,yoy,4.256806
+2020-06-01,2020-Q2,input,input_for_constr,Used for construction,qoq,1.319778
+2020-06-01,2020-Q2,input,input_for_constr,Used for construction,ytd_avg,0.40587
+2020-06-01,2020-Q2,transport,transport_all,All items,yoy,-7.73677
+2020-06-01,2020-Q2,transport,transport_all,All items,qoq,-5.860315
+2020-06-01,2020-Q2,transport,transport_all,All items,ytd_avg,-4.868688
+2020-06-01,2020-Q2,export,export_all,All items,yoy,-1.908064
+2020-06-01,2020-Q2,export,export_all,All items,qoq,-1.735236
+2020-06-01,2020-Q2,export,export_all,All items,ytd_avg,-1.222125
+2020-06-01,2020-Q2,export,export_agri_food,Agricultural products and food,yoy,-3.266276
+2020-06-01,2020-Q2,export,export_agri_food,Agricultural products and food,qoq,-2.074262
+2020-06-01,2020-Q2,export,export_agri_food,Agricultural products and food,ytd_avg,-2.33595
+2020-06-01,2020-Q2,export,export_fuel,Fuels,yoy,-38.234895
+2020-06-01,2020-Q2,export,export_fuel,Fuels,qoq,-30.634604
+2020-06-01,2020-Q2,export,export_fuel,Fuels,ytd_avg,-25.133737
+2020-06-01,2020-Q2,export,export_manufactured,Other manufactured goods,yoy,0.068741
+2020-06-01,2020-Q2,export,export_manufactured,Other manufactured goods,qoq,-0.347497
+2020-06-01,2020-Q2,export,export_manufactured,Other manufactured goods,ytd_avg,0.008229
+2020-06-01,2020-Q2,import,import_all,All items,yoy,-0.975511
+2020-06-01,2020-Q2,import,import_all,All items,qoq,-0.742231
+2020-06-01,2020-Q2,import,import_all,All items,ytd_avg,-0.45013
+2020-06-01,2020-Q2,import,import_agri_food,Agricultural products and food,yoy,0.955676
+2020-06-01,2020-Q2,import,import_agri_food,Agricultural products and food,qoq,0.872558
+2020-06-01,2020-Q2,import,import_agri_food,Agricultural products and food,ytd_avg,0.97885
+2020-06-01,2020-Q2,import,import_fuel,Fuels,yoy,-11.540104
+2020-06-01,2020-Q2,import,import_fuel,Fuels,qoq,-10.705644
+2020-06-01,2020-Q2,import,import_fuel,Fuels,ytd_avg,-3.741234
+2020-06-01,2020-Q2,import,import_manufactured,Other manufactured goods,yoy,-0.538375
+2020-06-01,2020-Q2,import,import_manufactured,Other manufactured goods,qoq,-0.320661
+2020-06-01,2020-Q2,import,import_manufactured,Other manufactured goods,ytd_avg,-0.365851
+2020-06-01,2020-Q2,tot,tot_all,All items,yoy,-0.94174
+2020-06-01,2020-Q2,tot,tot_all,All items,qoq,-1.00043
+2020-06-01,2020-Q2,tot,tot_all,All items,ytd_avg,-0.775485
+2020-09-01,2020-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,10.992945
+2020-09-01,2020-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,1.428883
+2020-09-01,2020-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,8.405329
+2020-09-01,2020-Q3,ppi,ppi_forestry,Forestry and related services,yoy,-0.096404
+2020-09-01,2020-Q3,ppi,ppi_forestry,Forestry and related services,qoq,0.027281
+2020-09-01,2020-Q3,ppi,ppi_forestry,Forestry and related services,ytd_avg,-0.223803
+2020-09-01,2020-Q3,ppi,ppi_fishery,Fishing and aquaculture,yoy,-2.192027
+2020-09-01,2020-Q3,ppi,ppi_fishery,Fishing and aquaculture,qoq,-1.515676
+2020-09-01,2020-Q3,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,-1.178675
+2020-09-01,2020-Q3,ppi,ppi_industry,Industry,yoy,-0.95488
+2020-09-01,2020-Q3,ppi,ppi_industry,Industry,qoq,0.812023
+2020-09-01,2020-Q3,ppi,ppi_industry,Industry,ytd_avg,-0.54116
+2020-09-01,2020-Q3,ppi,ppi_mining,Mining and quarrying,yoy,-9.863715
+2020-09-01,2020-Q3,ppi,ppi_mining,Mining and quarrying,qoq,9.14373
+2020-09-01,2020-Q3,ppi,ppi_mining,Mining and quarrying,ytd_avg,-8.206702
+2020-09-01,2020-Q3,ppi,ppi_manufacturing,Manufacturing,yoy,-0.356334
+2020-09-01,2020-Q3,ppi,ppi_manufacturing,Manufacturing,qoq,0.399671
+2020-09-01,2020-Q3,ppi,ppi_manufacturing,Manufacturing,ytd_avg,-0.20113
+2020-09-01,2020-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,2.683067
+2020-09-01,2020-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.289482
+2020-09-01,2020-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,2.733296
+2020-09-01,2020-Q3,ppi,ppi_services,Services,yoy,-1.507499
+2020-09-01,2020-Q3,ppi,ppi_services,Services,qoq,1.115352
+2020-09-01,2020-Q3,ppi,ppi_services,Services,ytd_avg,-0.579999
+2020-09-01,2020-Q3,ppi,ppi_svc_transport,Transport and storage,yoy,-6.082464
+2020-09-01,2020-Q3,ppi,ppi_svc_transport,Transport and storage,qoq,2.705171
+2020-09-01,2020-Q3,ppi,ppi_svc_transport,Transport and storage,ytd_avg,-5.275013
+2020-09-01,2020-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,0.405439
+2020-09-01,2020-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,0.336499
+2020-09-01,2020-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,1.08234
+2020-09-01,2020-Q3,ppi,ppi_svc_info,Information and communication,yoy,-3.757015
+2020-09-01,2020-Q3,ppi,ppi_svc_info,Information and communication,qoq,0.802596
+2020-09-01,2020-Q3,ppi,ppi_svc_info,Information and communication,ytd_avg,-3.06308
+2020-09-01,2020-Q3,ppi,ppi_svc_education,Education and training,yoy,2.671449
+2020-09-01,2020-Q3,ppi,ppi_svc_education,Education and training,qoq,0.828999
+2020-09-01,2020-Q3,ppi,ppi_svc_education,Education and training,ytd_avg,3.710307
+2020-09-01,2020-Q3,ppi,ppi_svc_health,Health and social work,yoy,0.774963
+2020-09-01,2020-Q3,ppi,ppi_svc_health,Health and social work,qoq,0.046938
+2020-09-01,2020-Q3,ppi,ppi_svc_health,Health and social work,ytd_avg,2.629622
+2020-09-01,2020-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,0.696586
+2020-09-01,2020-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.083149
+2020-09-01,2020-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,1.326715
+2020-09-01,2020-Q3,input,input_all,All items,yoy,1.412918
+2020-09-01,2020-Q3,input,input_all,All items,qoq,0.558868
+2020-09-01,2020-Q3,input,input_all,All items,ytd_avg,1.359072
+2020-09-01,2020-Q3,input,input_for_constr,Used for construction,yoy,1.068743
+2020-09-01,2020-Q3,input,input_for_constr,Used for construction,qoq,0.642746
+2020-09-01,2020-Q3,input,input_for_constr,Used for construction,ytd_avg,0.626343
+2020-09-01,2020-Q3,transport,transport_all,All items,yoy,-6.082464
+2020-09-01,2020-Q3,transport,transport_all,All items,qoq,2.705171
+2020-09-01,2020-Q3,transport,transport_all,All items,ytd_avg,-5.275013
+2020-09-01,2020-Q3,export,export_all,All items,yoy,-1.550089
+2020-09-01,2020-Q3,export,export_all,All items,qoq,0.166332
+2020-09-01,2020-Q3,export,export_all,All items,ytd_avg,-1.331567
+2020-09-01,2020-Q3,export,export_agri_food,Agricultural products and food,yoy,-4.096648
+2020-09-01,2020-Q3,export,export_agri_food,Agricultural products and food,qoq,-0.983971
+2020-09-01,2020-Q3,export,export_agri_food,Agricultural products and food,ytd_avg,-2.926412
+2020-09-01,2020-Q3,export,export_fuel,Fuels,yoy,-31.815074
+2020-09-01,2020-Q3,export,export_fuel,Fuels,qoq,9.129883
+2020-09-01,2020-Q3,export,export_fuel,Fuels,ytd_avg,-27.430595
+2020-09-01,2020-Q3,export,export_manufactured,Other manufactured goods,yoy,0.23713
+2020-09-01,2020-Q3,export,export_manufactured,Other manufactured goods,qoq,-0.003016
+2020-09-01,2020-Q3,export,export_manufactured,Other manufactured goods,ytd_avg,0.084471
+2020-09-01,2020-Q3,import,import_all,All items,yoy,-0.953918
+2020-09-01,2020-Q3,import,import_all,All items,qoq,0.029975
+2020-09-01,2020-Q3,import,import_all,All items,ytd_avg,-0.618344
+2020-09-01,2020-Q3,import,import_agri_food,Agricultural products and food,yoy,0.727047
+2020-09-01,2020-Q3,import,import_agri_food,Agricultural products and food,qoq,-0.115011
+2020-09-01,2020-Q3,import,import_agri_food,Agricultural products and food,ytd_avg,0.894846
+2020-09-01,2020-Q3,import,import_fuel,Fuels,yoy,-3.312052
+2020-09-01,2020-Q3,import,import_fuel,Fuels,qoq,7.096681
+2020-09-01,2020-Q3,import,import_fuel,Fuels,ytd_avg,-3.598385
+2020-09-01,2020-Q3,import,import_manufactured,Other manufactured goods,yoy,-0.929789
+2020-09-01,2020-Q3,import,import_manufactured,Other manufactured goods,qoq,-0.29229
+2020-09-01,2020-Q3,import,import_manufactured,Other manufactured goods,ytd_avg,-0.554186
+2020-09-01,2020-Q3,tot,tot_all,All items,yoy,-0.601912
+2020-09-01,2020-Q3,tot,tot_all,All items,qoq,0.136316
+2020-09-01,2020-Q3,tot,tot_all,All items,ytd_avg,-0.717661
+2020-12-01,2020-Q4,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,7.752624
+2020-12-01,2020-Q4,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,0.878861
+2020-12-01,2020-Q4,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,8.241783
+2020-12-01,2020-Q4,ppi,ppi_forestry,Forestry and related services,yoy,-0.095122
+2020-12-01,2020-Q4,ppi,ppi_forestry,Forestry and related services,qoq,0.111533
+2020-12-01,2020-Q4,ppi,ppi_forestry,Forestry and related services,ytd_avg,-0.191648
+2020-12-01,2020-Q4,ppi,ppi_fishery,Fishing and aquaculture,yoy,-1.632019
+2020-12-01,2020-Q4,ppi,ppi_fishery,Fishing and aquaculture,qoq,0.556873
+2020-12-01,2020-Q4,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,-1.292206
+2020-12-01,2020-Q4,ppi,ppi_industry,Industry,yoy,-0.781197
+2020-12-01,2020-Q4,ppi,ppi_industry,Industry,qoq,0.102423
+2020-12-01,2020-Q4,ppi,ppi_industry,Industry,ytd_avg,-0.601224
+2020-12-01,2020-Q4,ppi,ppi_mining,Mining and quarrying,yoy,-10.416269
+2020-12-01,2020-Q4,ppi,ppi_mining,Mining and quarrying,qoq,-0.325228
+2020-12-01,2020-Q4,ppi,ppi_mining,Mining and quarrying,ytd_avg,-8.764151
+2020-12-01,2020-Q4,ppi,ppi_manufacturing,Manufacturing,yoy,-0.29697
+2020-12-01,2020-Q4,ppi,ppi_manufacturing,Manufacturing,qoq,0.092429
+2020-12-01,2020-Q4,ppi,ppi_manufacturing,Manufacturing,ytd_avg,-0.225098
+2020-12-01,2020-Q4,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,2.384788
+2020-12-01,2020-Q4,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.443828
+2020-12-01,2020-Q4,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,2.646058
+2020-12-01,2020-Q4,ppi,ppi_services,Services,yoy,-1.296728
+2020-12-01,2020-Q4,ppi,ppi_services,Services,qoq,0.662296
+2020-12-01,2020-Q4,ppi,ppi_services,Services,ytd_avg,-0.726141
+2020-12-01,2020-Q4,ppi,ppi_svc_transport,Transport and storage,yoy,-4.998722
+2020-12-01,2020-Q4,ppi,ppi_svc_transport,Transport and storage,qoq,0.276451
+2020-12-01,2020-Q4,ppi,ppi_svc_transport,Transport and storage,ytd_avg,-5.206016
+2020-12-01,2020-Q4,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,-0.04119
+2020-12-01,2020-Q4,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,0.024845
+2020-12-01,2020-Q4,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,0.800279
+2020-12-01,2020-Q4,ppi,ppi_svc_info,Information and communication,yoy,-3.751742
+2020-12-01,2020-Q4,ppi,ppi_svc_info,Information and communication,qoq,0.005868
+2020-12-01,2020-Q4,ppi,ppi_svc_info,Information and communication,ytd_avg,-3.235706
+2020-12-01,2020-Q4,ppi,ppi_svc_education,Education and training,yoy,2.839873
+2020-12-01,2020-Q4,ppi,ppi_svc_education,Education and training,qoq,2.025368
+2020-12-01,2020-Q4,ppi,ppi_svc_education,Education and training,ytd_avg,3.4746
+2020-12-01,2020-Q4,ppi,ppi_svc_health,Health and social work,yoy,0.171
+2020-12-01,2020-Q4,ppi,ppi_svc_health,Health and social work,qoq,0.002045
+2020-12-01,2020-Q4,ppi,ppi_svc_health,Health and social work,ytd_avg,2.010483
+2020-12-01,2020-Q4,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,0.318276
+2020-12-01,2020-Q4,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.040383
+2020-12-01,2020-Q4,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,1.073659
+2020-12-01,2020-Q4,input,input_all,All items,yoy,2.833679
+2020-12-01,2020-Q4,input,input_all,All items,qoq,0.604965
+2020-12-01,2020-Q4,input,input_all,All items,ytd_avg,1.72573
+2020-12-01,2020-Q4,input,input_for_constr,Used for construction,yoy,1.801428
+2020-12-01,2020-Q4,input,input_for_constr,Used for construction,qoq,0.513855
+2020-12-01,2020-Q4,input,input_for_constr,Used for construction,ytd_avg,0.918837
+2020-12-01,2020-Q4,transport,transport_all,All items,yoy,-4.998722
+2020-12-01,2020-Q4,transport,transport_all,All items,qoq,0.276451
+2020-12-01,2020-Q4,transport,transport_all,All items,ytd_avg,-5.206016
+2020-12-01,2020-Q4,export,export_all,All items,yoy,-1.296842
+2020-12-01,2020-Q4,export,export_all,All items,qoq,0.535365
+2020-12-01,2020-Q4,export,export_all,All items,ytd_avg,-1.322887
+2020-12-01,2020-Q4,export,export_agri_food,Agricultural products and food,yoy,-0.458443
+2020-12-01,2020-Q4,export,export_agri_food,Agricultural products and food,qoq,2.385175
+2020-12-01,2020-Q4,export,export_agri_food,Agricultural products and food,ytd_avg,-2.315216
+2020-12-01,2020-Q4,export,export_fuel,Fuels,yoy,-25.813229
+2020-12-01,2020-Q4,export,export_fuel,Fuels,qoq,3.723281
+2020-12-01,2020-Q4,export,export_fuel,Fuels,ytd_avg,-27.02959
+2020-12-01,2020-Q4,export,export_manufactured,Other manufactured goods,yoy,-0.315276
+2020-12-01,2020-Q4,export,export_manufactured,Other manufactured goods,qoq,0.154143
+2020-12-01,2020-Q4,export,export_manufactured,Other manufactured goods,ytd_avg,-0.015616
+2020-12-01,2020-Q4,import,import_all,All items,yoy,-0.488433
+2020-12-01,2020-Q4,import,import_all,All items,qoq,0.384224
+2020-12-01,2020-Q4,import,import_all,All items,ytd_avg,-0.585882
+2020-12-01,2020-Q4,import,import_agri_food,Agricultural products and food,yoy,1.045273
+2020-12-01,2020-Q4,import,import_agri_food,Agricultural products and food,qoq,-0.232419
+2020-12-01,2020-Q4,import,import_agri_food,Agricultural products and food,ytd_avg,0.932432
+2020-12-01,2020-Q4,import,import_fuel,Fuels,yoy,-0.699193
+2020-12-01,2020-Q4,import,import_fuel,Fuels,qoq,3.254711
+2020-12-01,2020-Q4,import,import_fuel,Fuels,ytd_avg,-2.881621
+2020-12-01,2020-Q4,import,import_manufactured,Other manufactured goods,yoy,-0.561716
+2020-12-01,2020-Q4,import,import_manufactured,Other manufactured goods,qoq,0.281133
+2020-12-01,2020-Q4,import,import_manufactured,Other manufactured goods,ytd_avg,-0.556069
+2020-12-01,2020-Q4,tot,tot_all,All items,yoy,-0.812377
+2020-12-01,2020-Q4,tot,tot_all,All items,qoq,0.150562
+2020-12-01,2020-Q4,tot,tot_all,All items,ytd_avg,-0.741349
+2021-03-01,2021-Q1,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,4.540081
+2021-03-01,2021-Q1,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,1.338204
+2021-03-01,2021-Q1,ppi,ppi_forestry,Forestry and related services,yoy,-0.074225
+2021-03-01,2021-Q1,ppi,ppi_forestry,Forestry and related services,qoq,0.078672
+2021-03-01,2021-Q1,ppi,ppi_fishery,Fishing and aquaculture,yoy,-1.318562
+2021-03-01,2021-Q1,ppi,ppi_fishery,Fishing and aquaculture,qoq,3.077948
+2021-03-01,2021-Q1,ppi,ppi_industry,Industry,yoy,0.273042
+2021-03-01,2021-Q1,ppi,ppi_industry,Industry,qoq,1.036836
+2021-03-01,2021-Q1,ppi,ppi_mining,Mining and quarrying,yoy,-3.246669
+2021-03-01,2021-Q1,ppi,ppi_mining,Mining and quarrying,qoq,9.473191
+2021-03-01,2021-Q1,ppi,ppi_manufacturing,Manufacturing,yoy,0.592267
+2021-03-01,2021-Q1,ppi,ppi_manufacturing,Manufacturing,qoq,1.043364
+2021-03-01,2021-Q1,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,1.544249
+2021-03-01,2021-Q1,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,-0.021161
+2021-03-01,2021-Q1,ppi,ppi_services,Services,yoy,-0.265042
+2021-03-01,2021-Q1,ppi,ppi_services,Services,qoq,0.012877
+2021-03-01,2021-Q1,ppi,ppi_svc_transport,Transport and storage,yoy,-2.784428
+2021-03-01,2021-Q1,ppi,ppi_svc_transport,Transport and storage,qoq,0.270189
+2021-03-01,2021-Q1,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,0.045047
+2021-03-01,2021-Q1,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,0.685154
+2021-03-01,2021-Q1,ppi,ppi_svc_info,Information and communication,yoy,-2.051619
+2021-03-01,2021-Q1,ppi,ppi_svc_info,Information and communication,qoq,-0.006936
+2021-03-01,2021-Q1,ppi,ppi_svc_education,Education and training,yoy,3.171107
+2021-03-01,2021-Q1,ppi,ppi_svc_education,Education and training,qoq,0.43746
+2021-03-01,2021-Q1,ppi,ppi_svc_health,Health and social work,yoy,0.248076
+2021-03-01,2021-Q1,ppi,ppi_svc_health,Health and social work,qoq,0.140431
+2021-03-01,2021-Q1,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,0.426566
+2021-03-01,2021-Q1,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.266221
+2021-03-01,2021-Q1,input,input_all,All items,yoy,4.629258
+2021-03-01,2021-Q1,input,input_all,All items,qoq,2.138409
+2021-03-01,2021-Q1,input,input_for_constr,Used for construction,yoy,1.463965
+2021-03-01,2021-Q1,input,input_for_constr,Used for construction,qoq,3.012075
+2021-03-01,2021-Q1,transport,transport_all,All items,yoy,-2.784428
+2021-03-01,2021-Q1,transport,transport_all,All items,qoq,0.270189
+2021-03-01,2021-Q1,export,export_all,All items,yoy,-0.301702
+2021-03-01,2021-Q1,export,export_all,All items,qoq,0.750984
+2021-03-01,2021-Q1,export,export_agri_food,Agricultural products and food,yoy,0.56785
+2021-03-01,2021-Q1,export,export_agri_food,Agricultural products and food,qoq,1.3024
+2021-03-01,2021-Q1,export,export_fuel,Fuels,yoy,-19.36215
+2021-03-01,2021-Q1,export,export_fuel,Fuels,qoq,2.701347
+2021-03-01,2021-Q1,export,export_manufactured,Other manufactured goods,yoy,0.39996
+2021-03-01,2021-Q1,export,export_manufactured,Other manufactured goods,qoq,0.598037
+2021-03-01,2021-Q1,import,import_all,All items,yoy,1.202177
+2021-03-01,2021-Q1,import,import_all,All items,qoq,1.538261
+2021-03-01,2021-Q1,import,import_agri_food,Agricultural products and food,yoy,1.81344
+2021-03-01,2021-Q1,import,import_agri_food,Agricultural products and food,qoq,1.284365
+2021-03-01,2021-Q1,import,import_fuel,Fuels,yoy,11.49808
+2021-03-01,2021-Q1,import,import_fuel,Fuels,qoq,12.916522
+2021-03-01,2021-Q1,import,import_manufactured,Other manufactured goods,yoy,0.69506
+2021-03-01,2021-Q1,import,import_manufactured,Other manufactured goods,qoq,1.031091
+2021-03-01,2021-Q1,tot,tot_all,All items,yoy,-1.486015
+2021-03-01,2021-Q1,tot,tot_all,All items,qoq,-0.77535
+2021-06-01,2021-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,3.871074
+2021-06-01,2021-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,0.243824
+2021-06-01,2021-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,4.229255
+2021-06-01,2021-Q2,ppi,ppi_forestry,Forestry and related services,yoy,0.725715
+2021-06-01,2021-Q2,ppi,ppi_forestry,Forestry and related services,qoq,0.54763
+2021-06-01,2021-Q2,ppi,ppi_forestry,Forestry and related services,ytd_avg,0.304741
+2021-06-01,2021-Q2,ppi,ppi_fishery,Fishing and aquaculture,yoy,2.399635
+2021-06-01,2021-Q2,ppi,ppi_fishery,Fishing and aquaculture,qoq,0.407644
+2021-06-01,2021-Q2,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,0.475495
+2021-06-01,2021-Q2,ppi,ppi_industry,Industry,yoy,3.389461
+2021-06-01,2021-Q2,ppi,ppi_industry,Industry,qoq,1.400462
+2021-06-01,2021-Q2,ppi,ppi_industry,Industry,ytd_avg,1.819292
+2021-06-01,2021-Q2,ppi,ppi_mining,Mining and quarrying,yoy,25.01217
+2021-06-01,2021-Q2,ppi,ppi_mining,Mining and quarrying,qoq,4.969088
+2021-06-01,2021-Q2,ppi,ppi_mining,Mining and quarrying,ytd_avg,9.978714
+2021-06-01,2021-Q2,ppi,ppi_manufacturing,Manufacturing,yoy,2.697399
+2021-06-01,2021-Q2,ppi,ppi_manufacturing,Manufacturing,qoq,1.138912
+2021-06-01,2021-Q2,ppi,ppi_manufacturing,Manufacturing,ytd_avg,1.639366
+2021-06-01,2021-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,1.533428
+2021-06-01,2021-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.81677
+2021-06-01,2021-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,1.537616
+2021-06-01,2021-Q2,ppi,ppi_services,Services,yoy,1.997131
+2021-06-01,2021-Q2,ppi,ppi_services,Services,qoq,0.01
+2021-06-01,2021-Q2,ppi,ppi_services,Services,ytd_avg,0.885009
+2021-06-01,2021-Q2,ppi,ppi_svc_transport,Transport and storage,yoy,3.087725
+2021-06-01,2021-Q2,ppi,ppi_svc_transport,Transport and storage,qoq,-0.384698
+2021-06-01,2021-Q2,ppi,ppi_svc_transport,Transport and storage,ytd_avg,0.214439
+2021-06-01,2021-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,1.272408
+2021-06-01,2021-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,0.221032
+2021-06-01,2021-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,0.656857
+2021-06-01,2021-Q2,ppi,ppi_svc_info,Information and communication,yoy,0.898903
+2021-06-01,2021-Q2,ppi,ppi_svc_info,Information and communication,qoq,0.096609
+2021-06-01,2021-Q2,ppi,ppi_svc_info,Information and communication,ytd_avg,-0.587304
+2021-06-01,2021-Q2,ppi,ppi_svc_education,Education and training,yoy,3.294982
+2021-06-01,2021-Q2,ppi,ppi_svc_education,Education and training,qoq,0.041951
+2021-06-01,2021-Q2,ppi,ppi_svc_education,Education and training,ytd_avg,3.233026
+2021-06-01,2021-Q2,ppi,ppi_svc_health,Health and social work,yoy,0.417193
+2021-06-01,2021-Q2,ppi,ppi_svc_health,Health and social work,qoq,0.22289
+2021-06-01,2021-Q2,ppi,ppi_svc_health,Health and social work,ytd_avg,0.332599
+2021-06-01,2021-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,0.54021
+2021-06-01,2021-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.149512
+2021-06-01,2021-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,0.483372
+2021-06-01,2021-Q2,transport,transport_all,All items,yoy,3.087725
+2021-06-01,2021-Q2,transport,transport_all,All items,qoq,-0.384698
+2021-06-01,2021-Q2,transport,transport_all,All items,ytd_avg,0.214439
+2021-06-01,2021-Q2,input,input_all,All items,yoy,4.958132
+2021-06-01,2021-Q2,input,input_all,All items,qoq,1.575128
+2021-06-01,2021-Q2,input,input_all,All items,ytd_avg,4.793566
+2021-06-01,2021-Q2,input,input_for_constr,Used for construction,yoy,6.415444
+2021-06-01,2021-Q2,input,input_for_constr,Used for construction,qoq,2.119387
+2021-06-01,2021-Q2,input,input_for_constr,Used for construction,ytd_avg,3.910215
+2021-06-01,2021-Q2,export,export_all,All items,yoy,2.768423
+2021-06-01,2021-Q2,export,export_all,All items,qoq,1.290745
+2021-06-01,2021-Q2,export,export_all,All items,ytd_avg,1.221721
+2021-06-01,2021-Q2,export,export_agri_food,Agricultural products and food,yoy,3.655172
+2021-06-01,2021-Q2,export,export_agri_food,Agricultural products and food,qoq,0.93195
+2021-06-01,2021-Q2,export,export_agri_food,Agricultural products and food,ytd_avg,2.099842
+2021-06-01,2021-Q2,export,export_fuel,Fuels,yoy,27.293214
+2021-06-01,2021-Q2,export,export_fuel,Fuels,qoq,9.498754
+2021-06-01,2021-Q2,export,export_fuel,Fuels,ytd_avg,1.314615
+2021-06-01,2021-Q2,export,export_manufactured,Other manufactured goods,yoy,1.793195
+2021-06-01,2021-Q2,export,export_manufactured,Other manufactured goods,qoq,1.035366
+2021-06-01,2021-Q2,export,export_manufactured,Other manufactured goods,ytd_avg,1.094178
+2021-06-01,2021-Q2,import,import_all,All items,yoy,3.283794
+2021-06-01,2021-Q2,import,import_all,All items,qoq,1.299848
+2021-06-01,2021-Q2,import,import_all,All items,ytd_avg,2.237457
+2021-06-01,2021-Q2,import,import_agri_food,Agricultural products and food,yoy,2.846841
+2021-06-01,2021-Q2,import,import_agri_food,Agricultural products and food,qoq,1.896271
+2021-06-01,2021-Q2,import,import_agri_food,Agricultural products and food,ytd_avg,2.328905
+2021-06-01,2021-Q2,import,import_fuel,Fuels,yoy,31.202223
+2021-06-01,2021-Q2,import,import_fuel,Fuels,qoq,5.076372
+2021-06-01,2021-Q2,import,import_fuel,Fuels,ytd_avg,20.948549
+2021-06-01,2021-Q2,import,import_manufactured,Other manufactured goods,yoy,2.117473
+2021-06-01,2021-Q2,import,import_manufactured,Other manufactured goods,qoq,1.087833
+2021-06-01,2021-Q2,import,import_manufactured,Other manufactured goods,ytd_avg,1.403557
+2021-06-01,2021-Q2,tot,tot_all,All items,yoy,-0.498985
+2021-06-01,2021-Q2,tot,tot_all,All items,qoq,-0.008986
+2021-06-01,2021-Q2,tot,tot_all,All items,ytd_avg,-0.993507
+2021-09-01,2021-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,0.048044
+2021-09-01,2021-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,-2.281701
+2021-09-01,2021-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,2.816454
+2021-09-01,2021-Q3,ppi,ppi_forestry,Forestry and related services,yoy,0.768667
+2021-09-01,2021-Q3,ppi,ppi_forestry,Forestry and related services,qoq,0.06621
+2021-09-01,2021-Q3,ppi,ppi_forestry,Forestry and related services,ytd_avg,0.459145
+2021-09-01,2021-Q3,ppi,ppi_fishery,Fishing and aquaculture,yoy,1.87795
+2021-09-01,2021-Q3,ppi,ppi_fishery,Fishing and aquaculture,qoq,-2.017551
+2021-09-01,2021-Q3,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,0.940822
+2021-09-01,2021-Q3,ppi,ppi_industry,Industry,yoy,3.706346
+2021-09-01,2021-Q3,ppi,ppi_industry,Industry,qoq,1.120929
+2021-09-01,2021-Q3,ppi,ppi_industry,Industry,ytd_avg,2.444515
+2021-09-01,2021-Q3,ppi,ppi_mining,Mining and quarrying,yoy,18.347876
+2021-09-01,2021-Q3,ppi,ppi_mining,Mining and quarrying,qoq,3.325101
+2021-09-01,2021-Q3,ppi,ppi_mining,Mining and quarrying,ytd_avg,12.700698
+2021-09-01,2021-Q3,ppi,ppi_manufacturing,Manufacturing,yoy,3.263243
+2021-09-01,2021-Q3,ppi,ppi_manufacturing,Manufacturing,qoq,0.952846
+2021-09-01,2021-Q3,ppi,ppi_manufacturing,Manufacturing,ytd_avg,2.177815
+2021-09-01,2021-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,1.768697
+2021-09-01,2021-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.519542
+2021-09-01,2021-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,1.616184
+2021-09-01,2021-Q3,ppi,ppi_services,Services,yoy,0.464428
+2021-09-01,2021-Q3,ppi,ppi_services,Services,qoq,-0.068485
+2021-09-01,2021-Q3,ppi,ppi_services,Services,ytd_avg,0.677043
+2021-09-01,2021-Q3,ppi,ppi_svc_transport,Transport and storage,yoy,-1.780874
+2021-09-01,2021-Q3,ppi,ppi_svc_transport,Transport and storage,qoq,-2.145362
+2021-09-01,2021-Q3,ppi,ppi_svc_transport,Transport and storage,ytd_avg,-0.455129
+2021-09-01,2021-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,0.978994
+2021-09-01,2021-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,0.045797
+2021-09-01,2021-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,0.764122
+2021-09-01,2021-Q3,ppi,ppi_svc_info,Information and communication,yoy,0.172872
+2021-09-01,2021-Q3,ppi,ppi_svc_info,Information and communication,qoq,0.077258
+2021-09-01,2021-Q3,ppi,ppi_svc_info,Information and communication,ytd_avg,-0.334555
+2021-09-01,2021-Q3,ppi,ppi_svc_education,Education and training,yoy,2.582136
+2021-09-01,2021-Q3,ppi,ppi_svc_education,Education and training,qoq,0.065805
+2021-09-01,2021-Q3,ppi,ppi_svc_education,Education and training,ytd_avg,3.015605
+2021-09-01,2021-Q3,ppi,ppi_svc_health,Health and social work,yoy,0.80511
+2021-09-01,2021-Q3,ppi,ppi_svc_health,Health and social work,qoq,0.4378
+2021-09-01,2021-Q3,ppi,ppi_svc_health,Health and social work,ytd_avg,0.489863
+2021-09-01,2021-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,0.430749
+2021-09-01,2021-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,-0.025815
+2021-09-01,2021-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,0.465828
+2021-09-01,2021-Q3,transport,transport_all,All items,yoy,-1.780874
+2021-09-01,2021-Q3,transport,transport_all,All items,qoq,-2.145362
+2021-09-01,2021-Q3,transport,transport_all,All items,ytd_avg,-0.455129
+2021-09-01,2021-Q3,input,input_all,All items,yoy,5.364955
+2021-09-01,2021-Q3,input,input_all,All items,qoq,1.360363
+2021-09-01,2021-Q3,input,input_all,All items,ytd_avg,4.86631
+2021-09-01,2021-Q3,input,input_for_constr,Used for construction,yoy,5.351165
+2021-09-01,2021-Q3,input,input_for_constr,Used for construction,qoq,2.396714
+2021-09-01,2021-Q3,input,input_for_constr,Used for construction,ytd_avg,3.594612
+2021-09-01,2021-Q3,export,export_all,All items,yoy,3.724072
+2021-09-01,2021-Q3,export,export_all,All items,qoq,1.097784
+2021-09-01,2021-Q3,export,export_all,All items,ytd_avg,2.049057
+2021-09-01,2021-Q3,export,export_agri_food,Agricultural products and food,yoy,5.685439
+2021-09-01,2021-Q3,export,export_agri_food,Agricultural products and food,qoq,0.955431
+2021-09-01,2021-Q3,export,export_agri_food,Agricultural products and food,ytd_avg,3.281316
+2021-09-01,2021-Q3,export,export_fuel,Fuels,yoy,25.669318
+2021-09-01,2021-Q3,export,export_fuel,Fuels,qoq,7.737699
+2021-09-01,2021-Q3,export,export_fuel,Fuels,ytd_avg,8.857365
+2021-09-01,2021-Q3,export,export_manufactured,Other manufactured goods,yoy,2.680217
+2021-09-01,2021-Q3,export,export_manufactured,Other manufactured goods,qoq,0.868354
+2021-09-01,2021-Q3,export,export_manufactured,Other manufactured goods,ytd_avg,1.620117
+2021-09-01,2021-Q3,import,import_all,All items,yoy,9.457477
+2021-09-01,2021-Q3,import,import_all,All items,qoq,4.168696
+2021-09-01,2021-Q3,import,import_all,All items,ytd_avg,6.030357
+2021-09-01,2021-Q3,import,import_agri_food,Agricultural products and food,yoy,6.240888
+2021-09-01,2021-Q3,import,import_agri_food,Agricultural products and food,qoq,2.082204
+2021-09-01,2021-Q3,import,import_agri_food,Agricultural products and food,ytd_avg,4.357962
+2021-09-01,2021-Q3,import,import_fuel,Fuels,yoy,38.932999
+2021-09-01,2021-Q3,import,import_fuel,Fuels,qoq,2.010413
+2021-09-01,2021-Q3,import,import_fuel,Fuels,ytd_avg,34.133541
+2021-09-01,2021-Q3,import,import_manufactured,Other manufactured goods,yoy,8.377739
+2021-09-01,2021-Q3,import,import_manufactured,Other manufactured goods,qoq,4.390245
+2021-09-01,2021-Q3,import,import_manufactured,Other manufactured goods,ytd_avg,4.921204
+2021-09-01,2021-Q3,tot,tot_all,All items,yoy,-5.238021
+2021-09-01,2021-Q3,tot,tot_all,All items,qoq,-2.948018
+2021-09-01,2021-Q3,tot,tot_all,All items,ytd_avg,-3.754868
+2021-12-01,2021-Q4,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,0.06564
+2021-12-01,2021-Q4,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,0.776993
+2021-12-01,2021-Q4,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,2.121743
+2021-12-01,2021-Q4,ppi,ppi_agri_crops,Agriculture and related services,yoy,-0.741692
+2021-12-01,2021-Q4,ppi,ppi_agri_crops,Agriculture and related services,qoq,0.67221
+2021-12-01,2021-Q4,ppi,ppi_agri_crops,Agriculture and related services,ytd_avg,2.437682
+2021-12-01,2021-Q4,ppi,ppi_forestry,Forestry and related services,yoy,0.825887
+2021-12-01,2021-Q4,ppi,ppi_forestry,Forestry and related services,qoq,0.168207
+2021-12-01,2021-Q4,ppi,ppi_forestry,Forestry and related services,ytd_avg,0.550699
+2021-12-01,2021-Q4,ppi,ppi_fishery,Fishing and aquaculture,yoy,2.514014
+2021-12-01,2021-Q4,ppi,ppi_fishery,Fishing and aquaculture,qoq,1.18455
+2021-12-01,2021-Q4,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,1.331848
+2021-12-01,2021-Q4,ppi,ppi_industry,Industry,yoy,4.331519
+2021-12-01,2021-Q4,ppi,ppi_industry,Industry,qoq,0.705871
+2021-12-01,2021-Q4,ppi,ppi_industry,Industry,ytd_avg,2.913042
+2021-12-01,2021-Q4,ppi,ppi_mining,Mining and quarrying,yoy,23.901399
+2021-12-01,2021-Q4,ppi,ppi_mining,Mining and quarrying,qoq,4.352052
+2021-12-01,2021-Q4,ppi,ppi_mining,Mining and quarrying,ytd_avg,15.402178
+2021-12-01,2021-Q4,ppi,ppi_manufacturing,Manufacturing,yoy,4.011667
+2021-12-01,2021-Q4,ppi,ppi_manufacturing,Manufacturing,qoq,0.817872
+2021-12-01,2021-Q4,ppi,ppi_manufacturing,Manufacturing,ytd_avg,2.633224
+2021-12-01,2021-Q4,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,0.948529
+2021-12-01,2021-Q4,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,-0.365662
+2021-12-01,2021-Q4,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,1.448857
+2021-12-01,2021-Q4,ppi,ppi_services,Services,yoy,1.24415
+2021-12-01,2021-Q4,ppi,ppi_services,Services,qoq,0.54
+2021-12-01,2021-Q4,ppi,ppi_services,Services,ytd_avg,0.950035
+2021-12-01,2021-Q4,ppi,ppi_svc_transport,Transport and storage,yoy,0.763677
+2021-12-01,2021-Q4,ppi,ppi_svc_transport,Transport and storage,qoq,1.788863
+2021-12-01,2021-Q4,ppi,ppi_svc_transport,Transport and storage,ytd_avg,0.113311
+2021-12-01,2021-Q4,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,2.038917
+2021-12-01,2021-Q4,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,0.600044
+2021-12-01,2021-Q4,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,1.200354
+2021-12-01,2021-Q4,ppi,ppi_svc_info,Information and communication,yoy,0.475802
+2021-12-01,2021-Q4,ppi,ppi_svc_info,Information and communication,qoq,0.013926
+2021-12-01,2021-Q4,ppi,ppi_svc_info,Information and communication,ytd_avg,-0.059177
+2021-12-01,2021-Q4,ppi,ppi_svc_education,Education and training,yoy,0.92369
+2021-12-01,2021-Q4,ppi,ppi_svc_education,Education and training,qoq,0.441976
+2021-12-01,2021-Q4,ppi,ppi_svc_education,Education and training,ytd_avg,2.471742
+2021-12-01,2021-Q4,ppi,ppi_svc_health,Health and social work,yoy,0.8183
+2021-12-01,2021-Q4,ppi,ppi_svc_health,Health and social work,qoq,0.441998
+2021-12-01,2021-Q4,ppi,ppi_svc_health,Health and social work,ytd_avg,0.464841
+2021-12-01,2021-Q4,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,0.546632
+2021-12-01,2021-Q4,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.04575
+2021-12-01,2021-Q4,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,0.513649
+2021-12-01,2021-Q4,transport,transport_all,All items,yoy,0.763677
+2021-12-01,2021-Q4,transport,transport_all,All items,qoq,1.788863
+2021-12-01,2021-Q4,transport,transport_all,All items,ytd_avg,0.113311
+2021-12-01,2021-Q4,input,input_all,All items,yoy,6.433293
+2021-12-01,2021-Q4,input,input_all,All items,qoq,1.182805
+2021-12-01,2021-Q4,input,input_all,All items,ytd_avg,5.509912
+2021-12-01,2021-Q4,input,input_for_manuf,Used for manufacturing,yoy,6.134375
+2021-12-01,2021-Q4,input,input_for_manuf,Used for manufacturing,qoq,1.116572
+2021-12-01,2021-Q4,input,input_for_manuf,Used for manufacturing,ytd_avg,5.419069
+2021-12-01,2021-Q4,input,input_for_constr,Used for construction,yoy,9.683349
+2021-12-01,2021-Q4,input,input_for_constr,Used for construction,qoq,1.86652
+2021-12-01,2021-Q4,input,input_for_constr,Used for construction,ytd_avg,6.40159
+2021-12-01,2021-Q4,export,export_all,All items,yoy,5.131997
+2021-12-01,2021-Q4,export,export_all,All items,qoq,1.617878
+2021-12-01,2021-Q4,export,export_all,All items,ytd_avg,2.858424
+2021-12-01,2021-Q4,export,export_agri_food,Agricultural products and food,yoy,10.145101
+2021-12-01,2021-Q4,export,export_agri_food,Agricultural products and food,qoq,2.692937
+2021-12-01,2021-Q4,export,export_agri_food,Agricultural products and food,ytd_avg,7.281252
+2021-12-01,2021-Q4,export,export_fuel,Fuels,yoy,44.637475
+2021-12-01,2021-Q4,export,export_fuel,Fuels,qoq,6.366471
+2021-12-01,2021-Q4,export,export_fuel,Fuels,ytd_avg,25.458312
+2021-12-01,2021-Q4,export,export_manufactured,Other manufactured goods,yoy,3.152984
+2021-12-01,2021-Q4,export,export_manufactured,Other manufactured goods,qoq,1.286394
+2021-12-01,2021-Q4,export,export_manufactured,Other manufactured goods,ytd_avg,1.459932
+2021-12-01,2021-Q4,import,import_all,All items,yoy,9.959013
+2021-12-01,2021-Q4,import,import_all,All items,qoq,3.831527
+2021-12-01,2021-Q4,import,import_all,All items,ytd_avg,5.485513
+2021-12-01,2021-Q4,import,import_agri_food,Agricultural products and food,yoy,13.329143
+2021-12-01,2021-Q4,import,import_agri_food,Agricultural products and food,qoq,0.755543
+2021-12-01,2021-Q4,import,import_agri_food,Agricultural products and food,ytd_avg,10.660286
+2021-12-01,2021-Q4,import,import_fuel,Fuels,yoy,54.901086
+2021-12-01,2021-Q4,import,import_fuel,Fuels,qoq,7.334329
+2021-12-01,2021-Q4,import,import_fuel,Fuels,ytd_avg,40.564695
+2021-12-01,2021-Q4,import,import_manufactured,Other manufactured goods,yoy,7.969859
+2021-12-01,2021-Q4,import,import_manufactured,Other manufactured goods,qoq,3.836022
+2021-12-01,2021-Q4,import,import_manufactured,Other manufactured goods,ytd_avg,3.755683
+2021-12-01,2021-Q4,tot,tot_all,All items,yoy,-4.389832
+2021-12-01,2021-Q4,tot,tot_all,All items,qoq,-2.131962
+2021-12-01,2021-Q4,tot,tot_all,All items,ytd_avg,-2.490474
+2022-03-01,2022-Q1,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,0.58
+2022-03-01,2022-Q1,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,1.89
+2022-03-01,2022-Q1,ppi,ppi_agri_crops,Agriculture and related services,yoy,-0.59
+2022-03-01,2022-Q1,ppi,ppi_agri_crops,Agriculture and related services,qoq,1.04
+2022-03-01,2022-Q1,ppi,ppi_forestry,Forestry and related services,yoy,1.36
+2022-03-01,2022-Q1,ppi,ppi_forestry,Forestry and related services,qoq,0.57
+2022-03-01,2022-Q1,ppi,ppi_fishery,Fishing and aquaculture,yoy,4.22
+2022-03-01,2022-Q1,ppi,ppi_fishery,Fishing and aquaculture,qoq,4.69
+2022-03-01,2022-Q1,ppi,ppi_industry,Industry,yoy,4.388347
+2022-03-01,2022-Q1,ppi,ppi_industry,Industry,qoq,1.09187
+2022-03-01,2022-Q1,ppi,ppi_mining,Mining and quarrying,yoy,18.685474
+2022-03-01,2022-Q1,ppi,ppi_mining,Mining and quarrying,qoq,4.864656
+2022-03-01,2022-Q1,ppi,ppi_manufacturing,Manufacturing,yoy,3.838098
+2022-03-01,2022-Q1,ppi,ppi_manufacturing,Manufacturing,qoq,0.874749
+2022-03-01,2022-Q1,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,1.906267
+2022-03-01,2022-Q1,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.927377
+2022-03-01,2022-Q1,ppi,ppi_services,Services,yoy,1.97584
+2022-03-01,2022-Q1,ppi,ppi_services,Services,qoq,0.786225
+2022-03-01,2022-Q1,ppi,ppi_svc_transport,Transport and storage,yoy,3.079971
+2022-03-01,2022-Q1,ppi,ppi_svc_transport,Transport and storage,qoq,2.792143
+2022-03-01,2022-Q1,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,3.376928
+2022-03-01,2022-Q1,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,2.005414
+2022-03-01,2022-Q1,ppi,ppi_svc_info,Information and communication,yoy,0.559489
+2022-03-01,2022-Q1,ppi,ppi_svc_info,Information and communication,qoq,0.076349
+2022-03-01,2022-Q1,ppi,ppi_svc_education,Education and training,yoy,0.599348
+2022-03-01,2022-Q1,ppi,ppi_svc_education,Education and training,qoq,0.114681
+2022-03-01,2022-Q1,ppi,ppi_svc_health,Health and social work,yoy,0.760223
+2022-03-01,2022-Q1,ppi,ppi_svc_health,Health and social work,qoq,0.082746
+2022-03-01,2022-Q1,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,0.385594
+2022-03-01,2022-Q1,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.105632
+2022-03-01,2022-Q1,input,input_all,All items,yoy,5.699855
+2022-03-01,2022-Q1,input,input_all,All items,qoq,1.49156
+2022-03-01,2022-Q1,input,input_for_manuf,Used for manufacturing,yoy,5.522842
+2022-03-01,2022-Q1,input,input_for_manuf,Used for manufacturing,qoq,1.47035
+2022-03-01,2022-Q1,input,input_for_constr,Used for construction,yoy,8.257079
+2022-03-01,2022-Q1,input,input_for_constr,Used for construction,qoq,1.672555
+2022-03-01,2022-Q1,transport,transport_all,All items,yoy,3.079971
+2022-03-01,2022-Q1,transport,transport_all,All items,qoq,2.792143
+2022-03-01,2022-Q1,export,export_all,All items,yoy,7.512991
+2022-03-01,2022-Q1,export,export_all,All items,qoq,2.46727
+2022-03-01,2022-Q1,export,export_agri_food,Agricultural products and food,yoy,9.318916
+2022-03-01,2022-Q1,export,export_agri_food,Agricultural products and food,qoq,2.13077
+2022-03-01,2022-Q1,export,export_fuel,Fuels,yoy,55.698583
+2022-03-01,2022-Q1,export,export_fuel,Fuels,qoq,16.122578
+2022-03-01,2022-Q1,export,export_manufactured,Other manufactured goods,yoy,5.7269
+2022-03-01,2022-Q1,export,export_manufactured,Other manufactured goods,qoq,2.017944
+2022-03-01,2022-Q1,import,import_all,All items,yoy,10.982842
+2022-03-01,2022-Q1,import,import_all,All items,qoq,2.698385
+2022-03-01,2022-Q1,import,import_agri_food,Agricultural products and food,yoy,10.952454
+2022-03-01,2022-Q1,import,import_agri_food,Agricultural products and food,qoq,4.109066
+2022-03-01,2022-Q1,import,import_fuel,Fuels,yoy,37.432621
+2022-03-01,2022-Q1,import,import_fuel,Fuels,qoq,5.697536
+2022-03-01,2022-Q1,import,import_manufactured,Other manufactured goods,yoy,9.841296
+2022-03-01,2022-Q1,import,import_manufactured,Other manufactured goods,qoq,2.478535
+2022-03-01,2022-Q1,tot,tot_all,All items,yoy,-3.126475
+2022-03-01,2022-Q1,tot,tot_all,All items,qoq,-0.225043
+2022-06-01,2022-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,2.183046
+2022-06-01,2022-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,1.836793
+2022-06-01,2022-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,1.380703
+2022-06-01,2022-Q2,ppi,ppi_agri_crops,Agriculture and related services,yoy,0.415276
+2022-06-01,2022-Q2,ppi,ppi_agri_crops,Agriculture and related services,qoq,1.190606
+2022-06-01,2022-Q2,ppi,ppi_agri_crops,Agriculture and related services,ytd_avg,-0.087542
+2022-06-01,2022-Q2,ppi,ppi_forestry,Forestry and related services,yoy,2.482306
+2022-06-01,2022-Q2,ppi,ppi_forestry,Forestry and related services,qoq,1.659977
+2022-06-01,2022-Q2,ppi,ppi_forestry,Forestry and related services,ytd_avg,1.920092
+2022-06-01,2022-Q2,ppi,ppi_fishery,Fishing and aquaculture,yoy,7.732012
+2022-06-01,2022-Q2,ppi,ppi_fishery,Fishing and aquaculture,qoq,3.794376
+2022-06-01,2022-Q2,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,5.959828
+2022-06-01,2022-Q2,ppi,ppi_industry,Industry,yoy,5.111701
+2022-06-01,2022-Q2,ppi,ppi_industry,Industry,qoq,2.103115
+2022-06-01,2022-Q2,ppi,ppi_industry,Industry,ytd_avg,4.7494
+2022-06-01,2022-Q2,ppi,ppi_mining,Mining and quarrying,yoy,27.160006
+2022-06-01,2022-Q2,ppi,ppi_mining,Mining and quarrying,qoq,12.464271
+2022-06-01,2022-Q2,ppi,ppi_mining,Mining and quarrying,ytd_avg,22.849687
+2022-06-01,2022-Q2,ppi,ppi_manufacturing,Manufacturing,yoy,4.438945
+2022-06-01,2022-Q2,ppi,ppi_manufacturing,Manufacturing,qoq,1.724115
+2022-06-01,2022-Q2,ppi,ppi_manufacturing,Manufacturing,ytd_avg,4.138088
+2022-06-01,2022-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,1.89219
+2022-06-01,2022-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.802747
+2022-06-01,2022-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,1.899228
+2022-06-01,2022-Q2,ppi,ppi_services,Services,yoy,3.571993
+2022-06-01,2022-Q2,ppi,ppi_services,Services,qoq,1.253754
+2022-06-01,2022-Q2,ppi,ppi_services,Services,ytd_avg,2.830359
+2022-06-01,2022-Q2,ppi,ppi_svc_transport,Transport and storage,yoy,8.165592
+2022-06-01,2022-Q2,ppi,ppi_svc_transport,Transport and storage,qoq,3.998633
+2022-06-01,2022-Q2,ppi,ppi_svc_transport,Transport and storage,ytd_avg,5.861573
+2022-06-01,2022-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,5.498382
+2022-06-01,2022-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,2.277721
+2022-06-01,2022-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,4.432268
+2022-06-01,2022-Q2,ppi,ppi_svc_info,Information and communication,yoy,0.68508
+2022-06-01,2022-Q2,ppi,ppi_svc_info,Information and communication,qoq,0.221622
+2022-06-01,2022-Q2,ppi,ppi_svc_info,Information and communication,ytd_avg,0.622265
+2022-06-01,2022-Q2,ppi,ppi_svc_education,Education and training,yoy,0.879824
+2022-06-01,2022-Q2,ppi,ppi_svc_education,Education and training,qoq,0.320873
+2022-06-01,2022-Q2,ppi,ppi_svc_education,Education and training,ytd_avg,0.739488
+2022-06-01,2022-Q2,ppi,ppi_svc_health,Health and social work,yoy,0.953387
+2022-06-01,2022-Q2,ppi,ppi_svc_health,Health and social work,qoq,0.415024
+2022-06-01,2022-Q2,ppi,ppi_svc_health,Health and social work,ytd_avg,0.856759
+2022-06-01,2022-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,0.540146
+2022-06-01,2022-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.303701
+2022-06-01,2022-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,0.46284
+2022-06-01,2022-Q2,transport,transport_all,All items,yoy,8.165592
+2022-06-01,2022-Q2,transport,transport_all,All items,qoq,3.998633
+2022-06-01,2022-Q2,transport,transport_all,All items,ytd_avg,5.861573
+2022-06-01,2022-Q2,input,input_all,All items,yoy,6.378306
+2022-06-01,2022-Q2,input,input_all,All items,qoq,2.227105
+2022-06-01,2022-Q2,input,input_all,All items,ytd_avg,6.038538
+2022-06-01,2022-Q2,input,input_for_constr,Used for construction,yoy,10.39717
+2022-06-01,2022-Q2,input,input_for_constr,Used for construction,qoq,4.138144
+2022-06-01,2022-Q2,input,input_for_constr,Used for construction,ytd_avg,9.321888
+2022-06-01,2022-Q2,export,export_all,All items,yoy,8.557988
+2022-06-01,2022-Q2,export,export_all,All items,qoq,3.310484
+2022-06-01,2022-Q2,export,export_all,All items,ytd_avg,8.034226
+2022-06-01,2022-Q2,export,export_agri_food,Agricultural products and food,yoy,9.555301
+2022-06-01,2022-Q2,export,export_agri_food,Agricultural products and food,qoq,2.984429
+2022-06-01,2022-Q2,export,export_agri_food,Agricultural products and food,ytd_avg,9.437044
+2022-06-01,2022-Q2,export,export_fuel,Fuels,yoy,77.564116
+2022-06-01,2022-Q2,export,export_fuel,Fuels,qoq,33.914226
+2022-06-01,2022-Q2,export,export_fuel,Fuels,ytd_avg,66.27231
+2022-06-01,2022-Q2,export,export_manufactured,Other manufactured goods,yoy,6.364011
+2022-06-01,2022-Q2,export,export_manufactured,Other manufactured goods,qoq,2.319989
+2022-06-01,2022-Q2,export,export_manufactured,Other manufactured goods,ytd_avg,6.044977
+2022-06-01,2022-Q2,import,import_all,All items,yoy,11.426533
+2022-06-01,2022-Q2,import,import_all,All items,qoq,2.623341
+2022-06-01,2022-Q2,import,import_all,All items,ytd_avg,11.207927
+2022-06-01,2022-Q2,import,import_agri_food,Agricultural products and food,yoy,11.225874
+2022-06-01,2022-Q2,import,import_agri_food,Agricultural products and food,qoq,4.350252
+2022-06-01,2022-Q2,import,import_agri_food,Agricultural products and food,ytd_avg,11.08908
+2022-06-01,2022-Q2,import,import_fuel,Fuels,yoy,52.159854
+2022-06-01,2022-Q2,import,import_fuel,Fuels,qoq,20.83155
+2022-06-01,2022-Q2,import,import_fuel,Fuels,ytd_avg,44.608878
+2022-06-01,2022-Q2,import,import_manufactured,Other manufactured goods,yoy,9.768397
+2022-06-01,2022-Q2,import,import_manufactured,Other manufactured goods,qoq,1.721434
+2022-06-01,2022-Q2,import,import_manufactured,Other manufactured goods,ytd_avg,9.808611
+2022-06-01,2022-Q2,tot,tot_all,All items,yoy,-2.574382
+2022-06-01,2022-Q2,tot,tot_all,All items,qoq,0.669577
+2022-06-01,2022-Q2,tot,tot_all,All items,ytd_avg,-2.853844
+2022-09-01,2022-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,6.485387
+2022-09-01,2022-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,1.832656
+2022-09-01,2022-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,3.054479
+2022-09-01,2022-Q3,ppi,ppi_agri_crops,Agriculture and related services,yoy,4.994879
+2022-09-01,2022-Q3,ppi,ppi_agri_crops,Agriculture and related services,qoq,2.001669
+2022-09-01,2022-Q3,ppi,ppi_agri_crops,Agriculture and related services,ytd_avg,1.578657
+2022-09-01,2022-Q3,ppi,ppi_forestry,Forestry and related services,yoy,5.831833
+2022-09-01,2022-Q3,ppi,ppi_forestry,Forestry and related services,qoq,3.33677
+2022-09-01,2022-Q3,ppi,ppi_forestry,Forestry and related services,ytd_avg,3.207671
+2022-09-01,2022-Q3,ppi,ppi_fishery,Fishing and aquaculture,yoy,11.215604
+2022-09-01,2022-Q3,ppi,ppi_fishery,Fishing and aquaculture,qoq,1.150783
+2022-09-01,2022-Q3,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,7.68356
+2022-09-01,2022-Q3,ppi,ppi_industry,Industry,yoy,4.622637
+2022-09-01,2022-Q3,ppi,ppi_industry,Industry,qoq,0.650434
+2022-09-01,2022-Q3,ppi,ppi_industry,Industry,ytd_avg,4.707128
+2022-09-01,2022-Q3,ppi,ppi_mining,Mining and quarrying,yoy,24.17679
+2022-09-01,2022-Q3,ppi,ppi_mining,Mining and quarrying,qoq,0.90106
+2022-09-01,2022-Q3,ppi,ppi_mining,Mining and quarrying,ytd_avg,23.290472
+2022-09-01,2022-Q3,ppi,ppi_manufacturing,Manufacturing,yoy,3.85932
+2022-09-01,2022-Q3,ppi,ppi_manufacturing,Manufacturing,qoq,0.392568
+2022-09-01,2022-Q3,ppi,ppi_manufacturing,Manufacturing,ytd_avg,4.045083
+2022-09-01,2022-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,1.619987
+2022-09-01,2022-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.251007
+2022-09-01,2022-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,1.806063
+2022-09-01,2022-Q3,ppi,ppi_services,Services,yoy,4.400233
+2022-09-01,2022-Q3,ppi,ppi_services,Services,qoq,1.281333
+2022-09-01,2022-Q3,ppi,ppi_services,Services,ytd_avg,3.342826
+2022-09-01,2022-Q3,ppi,ppi_svc_transport,Transport and storage,yoy,12.438429
+2022-09-01,2022-Q3,ppi,ppi_svc_transport,Transport and storage,qoq,2.80487
+2022-09-01,2022-Q3,ppi,ppi_svc_transport,Transport and storage,ytd_avg,8.009963
+2022-09-01,2022-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,6.282014
+2022-09-01,2022-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,1.222228
+2022-09-01,2022-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,5.059876
+2022-09-01,2022-Q3,ppi,ppi_svc_info,Information and communication,yoy,0.381703
+2022-09-01,2022-Q3,ppi,ppi_svc_info,Information and communication,qoq,0.079912
+2022-09-01,2022-Q3,ppi,ppi_svc_info,Information and communication,ytd_avg,0.538486
+2022-09-01,2022-Q3,ppi,ppi_svc_education,Education and training,yoy,2.824722
+2022-09-01,2022-Q3,ppi,ppi_svc_education,Education and training,qoq,2.134074
+2022-09-01,2022-Q3,ppi,ppi_svc_education,Education and training,ytd_avg,1.36154
+2022-09-01,2022-Q3,ppi,ppi_svc_health,Health and social work,yoy,0.828721
+2022-09-01,2022-Q3,ppi,ppi_svc_health,Health and social work,qoq,0.056729
+2022-09-01,2022-Q3,ppi,ppi_svc_health,Health and social work,ytd_avg,0.790514
+2022-09-01,2022-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,0.483065
+2022-09-01,2022-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.187508
+2022-09-01,2022-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,0.416016
+2022-09-01,2022-Q3,transport,transport_all,All items,yoy,12.438429
+2022-09-01,2022-Q3,transport,transport_all,All items,qoq,2.80487
+2022-09-01,2022-Q3,transport,transport_all,All items,ytd_avg,8.009963
+2022-09-01,2022-Q3,input,input_all,All items,yoy,5.916242
+2022-09-01,2022-Q3,input,input_all,All items,qoq,0.911152
+2022-09-01,2022-Q3,input,input_all,All items,ytd_avg,5.997757
+2022-09-01,2022-Q3,input,input_for_constr,Used for construction,yoy,8.239942
+2022-09-01,2022-Q3,input,input_for_constr,Used for construction,qoq,0.355808
+2022-09-01,2022-Q3,input,input_for_constr,Used for construction,ytd_avg,8.960043
+2022-09-01,2022-Q3,export,export_all,All items,yoy,8.852557
+2022-09-01,2022-Q3,export,export_all,All items,qoq,1.190316
+2022-09-01,2022-Q3,export,export_all,All items,ytd_avg,8.306317
+2022-09-01,2022-Q3,export,export_agri_food,Agricultural products and food,yoy,8.983656
+2022-09-01,2022-Q3,export,export_agri_food,Agricultural products and food,qoq,0.90034
+2022-09-01,2022-Q3,export,export_agri_food,Agricultural products and food,ytd_avg,9.285706
+2022-09-01,2022-Q3,export,export_fuel,Fuels,yoy,70.116819
+2022-09-01,2022-Q3,export,export_fuel,Fuels,qoq,2.848774
+2022-09-01,2022-Q3,export,export_fuel,Fuels,ytd_avg,67.544061
+2022-09-01,2022-Q3,export,export_manufactured,Other manufactured goods,yoy,6.962008
+2022-09-01,2022-Q3,export,export_manufactured,Other manufactured goods,qoq,1.167586
+2022-09-01,2022-Q3,export,export_manufactured,Other manufactured goods,ytd_avg,6.349777
+2022-09-01,2022-Q3,import,import_all,All items,yoy,10.154089
+2022-09-01,2022-Q3,import,import_all,All items,qoq,0.654823
+2022-09-01,2022-Q3,import,import_all,All items,ytd_avg,10.855532
+2022-09-01,2022-Q3,import,import_agri_food,Agricultural products and food,yoy,10.286482
+2022-09-01,2022-Q3,import,import_agri_food,Agricultural products and food,qoq,0.756084
+2022-09-01,2022-Q3,import,import_agri_food,Agricultural products and food,ytd_avg,10.8209
+2022-09-01,2022-Q3,import,import_fuel,Fuels,yoy,37.487629
+2022-09-01,2022-Q3,import,import_fuel,Fuels,qoq,0.295112
+2022-09-01,2022-Q3,import,import_fuel,Fuels,ytd_avg,42.195061
+2022-09-01,2022-Q3,import,import_manufactured,Other manufactured goods,yoy,8.97056
+2022-09-01,2022-Q3,import,import_manufactured,Other manufactured goods,qoq,0.666724
+2022-09-01,2022-Q3,import,import_manufactured,Other manufactured goods,ytd_avg,9.528547
+2022-09-01,2022-Q3,tot,tot_all,All items,yoy,-1.181556
+2022-09-01,2022-Q3,tot,tot_all,All items,qoq,0.53201
+2022-09-01,2022-Q3,tot,tot_all,All items,ytd_avg,-2.299583
+2022-12-01,2022-Q4,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,6.451566
+2022-12-01,2022-Q4,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,0.744992
+2022-12-01,2022-Q4,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,3.89345
+2022-12-01,2022-Q4,ppi,ppi_agri_crops,Agriculture and related services,yoy,5.086948
+2022-12-01,2022-Q4,ppi,ppi_agri_crops,Agriculture and related services,qoq,0.760473
+2022-12-01,2022-Q4,ppi,ppi_agri_crops,Agriculture and related services,ytd_avg,2.444594
+2022-12-01,2022-Q4,ppi,ppi_forestry,Forestry and related services,yoy,6.317525
+2022-12-01,2022-Q4,ppi,ppi_forestry,Forestry and related services,qoq,0.627882
+2022-12-01,2022-Q4,ppi,ppi_forestry,Forestry and related services,ytd_avg,3.9765
+2022-12-01,2022-Q4,ppi,ppi_fishery,Fishing and aquaculture,yoy,10.701957
+2022-12-01,2022-Q4,ppi,ppi_fishery,Fishing and aquaculture,qoq,0.717253
+2022-12-01,2022-Q4,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,8.430355
+2022-12-01,2022-Q4,ppi,ppi_industry,Industry,yoy,2.841511
+2022-12-01,2022-Q4,ppi,ppi_industry,Industry,qoq,-1.008575
+2022-12-01,2022-Q4,ppi,ppi_industry,Industry,ytd_avg,4.237575
+2022-12-01,2022-Q4,ppi,ppi_mining,Mining and quarrying,yoy,6.638008
+2022-12-01,2022-Q4,ppi,ppi_mining,Mining and quarrying,qoq,-10.386676
+2022-12-01,2022-Q4,ppi,ppi_mining,Mining and quarrying,ytd_avg,18.898162
+2022-12-01,2022-Q4,ppi,ppi_manufacturing,Manufacturing,yoy,2.638381
+2022-12-01,2022-Q4,ppi,ppi_manufacturing,Manufacturing,qoq,-0.367313
+2022-12-01,2022-Q4,ppi,ppi_manufacturing,Manufacturing,ytd_avg,3.69161
+2022-12-01,2022-Q4,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,2.209331
+2022-12-01,2022-Q4,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.212166
+2022-12-01,2022-Q4,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,1.90673
+2022-12-01,2022-Q4,ppi,ppi_services,Services,yoy,4.739709
+2022-12-01,2022-Q4,ppi,ppi_services,Services,qoq,1.2441
+2022-12-01,2022-Q4,ppi,ppi_services,Services,ytd_avg,3.690291
+2022-12-01,2022-Q4,ppi,ppi_svc_transport,Transport and storage,yoy,9.409922
+2022-12-01,2022-Q4,ppi,ppi_svc_transport,Transport and storage,qoq,-0.9528
+2022-12-01,2022-Q4,ppi,ppi_svc_transport,Transport and storage,ytd_avg,8.358265
+2022-12-01,2022-Q4,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,6.894938
+2022-12-01,2022-Q4,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,1.1802
+2022-12-01,2022-Q4,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,5.515666
+2022-12-01,2022-Q4,ppi,ppi_svc_info,Information and communication,yoy,2.667953
+2022-12-01,2022-Q4,ppi,ppi_svc_info,Information and communication,qoq,2.2918
+2022-12-01,2022-Q4,ppi,ppi_svc_info,Information and communication,ytd_avg,1.066676
+2022-12-01,2022-Q4,ppi,ppi_svc_education,Education and training,yoy,9.328661
+2022-12-01,2022-Q4,ppi,ppi_svc_education,Education and training,qoq,6.7952
+2022-12-01,2022-Q4,ppi,ppi_svc_education,Education and training,ytd_avg,3.297166
+2022-12-01,2022-Q4,ppi,ppi_svc_health,Health and social work,yoy,0.406403
+2022-12-01,2022-Q4,ppi,ppi_svc_health,Health and social work,qoq,0.0213
+2022-12-01,2022-Q4,ppi,ppi_svc_health,Health and social work,ytd_avg,0.694349
+2022-12-01,2022-Q4,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,1.022563
+2022-12-01,2022-Q4,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.5829
+2022-12-01,2022-Q4,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,0.567311
+2022-12-01,2022-Q4,transport,transport_all,All items,yoy,9.409922
+2022-12-01,2022-Q4,transport,transport_all,All items,qoq,-0.9528
+2022-12-01,2022-Q4,transport,transport_all,All items,ytd_avg,8.358265
+2022-12-01,2022-Q4,input,input_all,All items,yoy,4.786543
+2022-12-01,2022-Q4,input,input_all,All items,qoq,0.157275
+2022-12-01,2022-Q4,input,input_all,All items,ytd_avg,6.786506
+2022-12-01,2022-Q4,input,input_for_constr,Used for construction,yoy,3.976274
+2022-12-01,2022-Q4,input,input_for_constr,Used for construction,qoq,-0.920271
+2022-12-01,2022-Q4,input,input_for_constr,Used for construction,ytd_avg,6.958069
+2022-12-01,2022-Q4,export,export_all,All items,yoy,3.510289
+2022-12-01,2022-Q4,export,export_all,All items,qoq,-3.369326
+2022-12-01,2022-Q4,export,export_all,All items,ytd_avg,7.086869
+2022-12-01,2022-Q4,export,export_agri_food,Agricultural products and food,yoy,3.218445
+2022-12-01,2022-Q4,export,export_agri_food,Agricultural products and food,qoq,-2.739497
+2022-12-01,2022-Q4,export,export_agri_food,Agricultural products and food,ytd_avg,7.736249
+2022-12-01,2022-Q4,export,export_fuel,Fuels,yoy,55.871964
+2022-12-01,2022-Q4,export,export_fuel,Fuels,qoq,-2.540203
+2022-12-01,2022-Q4,export,export_fuel,Fuels,ytd_avg,64.54655
+2022-12-01,2022-Q4,export,export_manufactured,Other manufactured goods,yoy,1.933167
+2022-12-01,2022-Q4,export,export_manufactured,Other manufactured goods,qoq,-3.475607
+2022-12-01,2022-Q4,export,export_manufactured,Other manufactured goods,ytd_avg,5.228
+2022-12-01,2022-Q4,import,import_all,All items,yoy,1.970954
+2022-12-01,2022-Q4,import,import_all,All items,qoq,-3.881918
+2022-12-01,2022-Q4,import,import_all,All items,ytd_avg,8.564328
+2022-12-01,2022-Q4,import,import_agri_food,Agricultural products and food,yoy,6.542974
+2022-12-01,2022-Q4,import,import_agri_food,Agricultural products and food,qoq,-2.664451
+2022-12-01,2022-Q4,import,import_agri_food,Agricultural products and food,ytd_avg,9.735579
+2022-12-01,2022-Q4,import,import_fuel,Fuels,yoy,17.27486
+2022-12-01,2022-Q4,import,import_fuel,Fuels,qoq,-8.445447
+2022-12-01,2022-Q4,import,import_fuel,Fuels,ytd_avg,35.5079
+2022-12-01,2022-Q4,import,import_manufactured,Other manufactured goods,yoy,1.278834
+2022-12-01,2022-Q4,import,import_manufactured,Other manufactured goods,qoq,-3.493281
+2022-12-01,2022-Q4,import,import_manufactured,Other manufactured goods,ytd_avg,7.405165
+2022-12-01,2022-Q4,tot,tot_all,All items,yoy,1.509582
+2022-12-01,2022-Q4,tot,tot_all,All items,qoq,0.533293
+2022-12-01,2022-Q4,tot,tot_all,All items,ytd_avg,-1.360906
+2023-03-01,2023-Q1,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,4.969778
+2023-03-01,2023-Q1,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,0.472921
+2023-03-01,2023-Q1,ppi,ppi_agri_crops,Agriculture and related services,yoy,3.739058
+2023-03-01,2023-Q1,ppi,ppi_agri_crops,Agriculture and related services,qoq,-0.251902
+2023-03-01,2023-Q1,ppi,ppi_forestry,Forestry and related services,yoy,5.174713
+2023-03-01,2023-Q1,ppi,ppi_forestry,Forestry and related services,qoq,-0.50801
+2023-03-01,2023-Q1,ppi,ppi_fishery,Fishing and aquaculture,yoy,8.771207
+2023-03-01,2023-Q1,ppi,ppi_fishery,Fishing and aquaculture,qoq,2.864851
+2023-03-01,2023-Q1,ppi,ppi_industry,Industry,yoy,1.053153
+2023-03-01,2023-Q1,ppi,ppi_industry,Industry,qoq,-0.663399
+2023-03-01,2023-Q1,ppi,ppi_mining,Mining and quarrying,yoy,-2.644626
+2023-03-01,2023-Q1,ppi,ppi_mining,Mining and quarrying,qoq,-4.267961
+2023-03-01,2023-Q1,ppi,ppi_manufacturing,Manufacturing,yoy,1.265356
+2023-03-01,2023-Q1,ppi,ppi_manufacturing,Manufacturing,qoq,-0.471393
+2023-03-01,2023-Q1,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",yoy,5.690572
+2023-03-01,2023-Q1,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",qoq,0.291097
+2023-03-01,2023-Q1,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,1.73239
+2023-03-01,2023-Q1,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.457263
+2023-03-01,2023-Q1,ppi,ppi_services,Services,yoy,6.179549
+2023-03-01,2023-Q1,ppi,ppi_services,Services,qoq,2.152798
+2023-03-01,2023-Q1,ppi,ppi_svc_transport,Transport and storage,yoy,13.348134
+2023-03-01,2023-Q1,ppi,ppi_svc_transport,Transport and storage,qoq,7.036739
+2023-03-01,2023-Q1,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,6.829235
+2023-03-01,2023-Q1,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,2.042765
+2023-03-01,2023-Q1,ppi,ppi_svc_info,Information and communication,yoy,2.711794
+2023-03-01,2023-Q1,ppi,ppi_svc_info,Information and communication,qoq,0.085466
+2023-03-01,2023-Q1,ppi,ppi_svc_education,Education and training,yoy,8.639479
+2023-03-01,2023-Q1,ppi,ppi_svc_education,Education and training,qoq,-0.866924
+2023-03-01,2023-Q1,ppi,ppi_svc_health,Health and social work,yoy,0.339711
+2023-03-01,2023-Q1,ppi,ppi_svc_health,Health and social work,qoq,0.0163
+2023-03-01,2023-Q1,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,1.350526
+2023-03-01,2023-Q1,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.468177
+2023-03-01,2023-Q1,input,input_all,All items,yoy,4.273105
+2023-03-01,2023-Q1,input,input_all,All items,qoq,0.441451
+2023-03-01,2023-Q1,input,input_for_agri,"Used for agriculture, forestry and fishing",yoy,4.855664
+2023-03-01,2023-Q1,input,input_for_agri,"Used for agriculture, forestry and fishing",qoq,-0.685244
+2023-03-01,2023-Q1,input,input_for_manuf,Used for manufacturing,yoy,4.045918
+2023-03-01,2023-Q1,input,input_for_manuf,Used for manufacturing,qoq,0.47036
+2023-03-01,2023-Q1,input,input_for_constr,Used for construction,yoy,3.767765
+2023-03-01,2023-Q1,input,input_for_constr,Used for construction,qoq,1.076898
+2023-03-01,2023-Q1,transport,transport_all,All items,yoy,13.348134
+2023-03-01,2023-Q1,transport,transport_all,All items,qoq,7.036739
+2023-03-01,2023-Q1,export,export_all,All items,yoy,-0.338107
+2023-03-01,2023-Q1,export,export_all,All items,qoq,-1.323197
+2023-03-01,2023-Q1,export,export_agri_food,Agricultural products and food,yoy,-1.922029
+2023-03-01,2023-Q1,export,export_agri_food,Agricultural products and food,qoq,-2.754987
+2023-03-01,2023-Q1,export,export_fuel,Fuels,yoy,13.27603
+2023-03-01,2023-Q1,export,export_fuel,Fuels,qoq,-15.610836
+2023-03-01,2023-Q1,export,export_manufactured,Other manufactured goods,yoy,-0.697441
+2023-03-01,2023-Q1,export,export_manufactured,Other manufactured goods,qoq,-0.617289
+2023-03-01,2023-Q1,import,import_all,All items,yoy,-3.290872
+2023-03-01,2023-Q1,import,import_all,All items,qoq,-2.622239
+2023-03-01,2023-Q1,import,import_agri_food,Agricultural products and food,yoy,-0.263665
+2023-03-01,2023-Q1,import,import_agri_food,Agricultural products and food,qoq,-2.54208
+2023-03-01,2023-Q1,import,import_fuel,Fuels,yoy,-1.704041
+2023-03-01,2023-Q1,import,import_fuel,Fuels,qoq,-11.407776
+2023-03-01,2023-Q1,import,import_manufactured,Other manufactured goods,yoy,-2.968664
+2023-03-01,2023-Q1,import,import_manufactured,Other manufactured goods,qoq,-1.843425
+2023-03-01,2023-Q1,tot,tot_all,All items,yoy,3.053244
+2023-03-01,2023-Q1,tot,tot_all,All items,qoq,1.334023
+2023-06-01,2023-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,2.723734
+2023-06-01,2023-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,-0.32184
+2023-06-01,2023-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,3.83007
+2023-06-01,2023-Q2,ppi,ppi_agri_crops,Agriculture and related services,yoy,2.635002
+2023-06-01,2023-Q2,ppi,ppi_agri_crops,Agriculture and related services,qoq,-0.082684
+2023-06-01,2023-Q2,ppi,ppi_agri_crops,Agriculture and related services,ytd_avg,3.286893
+2023-06-01,2023-Q2,ppi,ppi_forestry,Forestry and related services,yoy,2.487712
+2023-06-01,2023-Q2,ppi,ppi_forestry,Forestry and related services,qoq,-0.891409
+2023-06-01,2023-Q2,ppi,ppi_forestry,Forestry and related services,ytd_avg,3.798517
+2023-06-01,2023-Q2,ppi,ppi_fishery,Fishing and aquaculture,yoy,3.046495
+2023-06-01,2023-Q2,ppi,ppi_fishery,Fishing and aquaculture,qoq,-0.995145
+2023-06-01,2023-Q2,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,5.509579
+2023-06-01,2023-Q2,ppi,ppi_industry,Industry,yoy,-1.517998
+2023-06-01,2023-Q2,ppi,ppi_industry,Industry,qoq,-0.494751
+2023-06-01,2023-Q2,ppi,ppi_industry,Industry,ytd_avg,-0.240706
+2023-06-01,2023-Q2,ppi,ppi_mining,Mining and quarrying,yoy,-15.072172
+2023-06-01,2023-Q2,ppi,ppi_mining,Mining and quarrying,qoq,-1.891946
+2023-06-01,2023-Q2,ppi,ppi_mining,Mining and quarrying,ytd_avg,-9.070464
+2023-06-01,2023-Q2,ppi,ppi_manufacturing,Manufacturing,yoy,-0.917091
+2023-06-01,2023-Q2,ppi,ppi_manufacturing,Manufacturing,qoq,-0.468219
+2023-06-01,2023-Q2,ppi,ppi_manufacturing,Manufacturing,ytd_avg,0.168189
+2023-06-01,2023-Q2,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",yoy,4.432569
+2023-06-01,2023-Q2,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",qoq,0.949851
+2023-06-01,2023-Q2,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",ytd_avg,5.059688
+2023-06-01,2023-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,1.143828
+2023-06-01,2023-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.219562
+2023-06-01,2023-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,1.437682
+2023-06-01,2023-Q2,ppi,ppi_services,Services,yoy,4.788548
+2023-06-01,2023-Q2,ppi,ppi_services,Services,qoq,0.019036
+2023-06-01,2023-Q2,ppi,ppi_services,Services,ytd_avg,5.42084
+2023-06-01,2023-Q2,ppi,ppi_svc_transport,Transport and storage,yoy,9.174189
+2023-06-01,2023-Q2,ppi,ppi_svc_transport,Transport and storage,qoq,0.168003
+2023-06-01,2023-Q2,ppi,ppi_svc_transport,Transport and storage,ytd_avg,11.242126
+2023-06-01,2023-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,5.389516
+2023-06-01,2023-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,1.041024
+2023-06-01,2023-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,6.054668
+2023-06-01,2023-Q2,ppi,ppi_svc_info,Information and communication,yoy,2.836598
+2023-06-01,2023-Q2,ppi,ppi_svc_info,Information and communication,qoq,0.332841
+2023-06-01,2023-Q2,ppi,ppi_svc_info,Information and communication,ytd_avg,2.774177
+2023-06-01,2023-Q2,ppi,ppi_svc_education,Education and training,yoy,3.712044
+2023-06-01,2023-Q2,ppi,ppi_svc_education,Education and training,qoq,-4.004931
+2023-06-01,2023-Q2,ppi,ppi_svc_education,Education and training,ytd_avg,5.916024
+2023-06-01,2023-Q2,ppi,ppi_svc_health,Health and social work,yoy,0.147008
+2023-06-01,2023-Q2,ppi,ppi_svc_health,Health and social work,qoq,0.038267
+2023-06-01,2023-Q2,ppi,ppi_svc_health,Health and social work,ytd_avg,0.250513
+2023-06-01,2023-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,2.212769
+2023-06-01,2023-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,1.019828
+2023-06-01,2023-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,1.768392
+2023-06-01,2023-Q2,transport,transport_all,All items,yoy,9.174189
+2023-06-01,2023-Q2,transport,transport_all,All items,qoq,0.168003
+2023-06-01,2023-Q2,transport,transport_all,All items,ytd_avg,11.242126
+2023-06-01,2023-Q2,input,input_all,All items,yoy,-1.540966
+2023-06-01,2023-Q2,input,input_all,All items,qoq,-0.858701
+2023-06-01,2023-Q2,input,input_all,All items,ytd_avg,-0.020423
+2023-06-01,2023-Q2,input,input_for_agri,"Used for agriculture, forestry and fishing",yoy,-1.154735
+2023-06-01,2023-Q2,input,input_for_agri,"Used for agriculture, forestry and fishing",qoq,-1.852527
+2023-06-01,2023-Q2,input,input_for_agri,"Used for agriculture, forestry and fishing",ytd_avg,1.747772
+2023-06-01,2023-Q2,input,input_for_manuf,Used for manufacturing,yoy,-1.545533
+2023-06-01,2023-Q2,input,input_for_manuf,Used for manufacturing,qoq,-0.855384
+2023-06-01,2023-Q2,input,input_for_manuf,Used for manufacturing,ytd_avg,-0.109874
+2023-06-01,2023-Q2,input,input_for_constr,Used for construction,yoy,-0.545597
+2023-06-01,2023-Q2,input,input_for_constr,Used for construction,qoq,-1.055325
+2023-06-01,2023-Q2,input,input_for_constr,Used for construction,ytd_avg,2.031135
+2023-06-01,2023-Q2,export,export_all,All items,yoy,-0.693778
+2023-06-01,2023-Q2,export,export_all,All items,qoq,2.941792
+2023-06-01,2023-Q2,export,export_all,All items,ytd_avg,-0.516101
+2023-06-01,2023-Q2,export,export_agri_food,Agricultural products and food,yoy,-3.406371
+2023-06-01,2023-Q2,export,export_agri_food,Agricultural products and food,qoq,1.425832
+2023-06-01,2023-Q2,export,export_agri_food,Agricultural products and food,ytd_avg,-2.66703
+2023-06-01,2023-Q2,export,export_fuel,Fuels,yoy,-18.742732
+2023-06-01,2023-Q2,export,export_fuel,Fuels,qoq,-3.938158
+2023-06-01,2023-Q2,export,export_fuel,Fuels,ytd_avg,-4.059911
+2023-06-01,2023-Q2,export,export_manufactured,Other manufactured goods,yoy,0.291452
+2023-06-01,2023-Q2,export,export_manufactured,Other manufactured goods,qoq,3.33893
+2023-06-01,2023-Q2,export,export_manufactured,Other manufactured goods,ytd_avg,-0.204219
+2023-06-01,2023-Q2,import,import_all,All items,yoy,-4.412311
+2023-06-01,2023-Q2,import,import_all,All items,qoq,1.433321
+2023-06-01,2023-Q2,import,import_all,All items,ytd_avg,-3.853227
+2023-06-01,2023-Q2,import,import_agri_food,Agricultural products and food,yoy,-6.421584
+2023-06-01,2023-Q2,import,import_agri_food,Agricultural products and food,qoq,-2.09254
+2023-06-01,2023-Q2,import,import_agri_food,Agricultural products and food,ytd_avg,-3.391676
+2023-06-01,2023-Q2,import,import_fuel,Fuels,yoy,-25.861264
+2023-06-01,2023-Q2,import,import_fuel,Fuels,qoq,-8.864021
+2023-06-01,2023-Q2,import,import_fuel,Fuels,ytd_avg,-14.632921
+2023-06-01,2023-Q2,import,import_manufactured,Other manufactured goods,yoy,-2.346137
+2023-06-01,2023-Q2,import,import_manufactured,Other manufactured goods,qoq,2.374052
+2023-06-01,2023-Q2,import,import_manufactured,Other manufactured goods,ytd_avg,-2.657898
+2023-06-01,2023-Q2,tot,tot_all,All items,yoy,3.890181
+2023-06-01,2023-Q2,tot,tot_all,All items,qoq,1.487155
+2023-06-01,2023-Q2,tot,tot_all,All items,ytd_avg,3.470866
+2023-09-01,2023-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,2.115533
+2023-09-01,2023-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,1.22973
+2023-09-01,2023-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,3.255383
+2023-09-01,2023-Q3,ppi,ppi_agri_crops,Agriculture and related services,yoy,3.208412
+2023-09-01,2023-Q3,ppi,ppi_agri_crops,Agriculture and related services,qoq,2.57154
+2023-09-01,2023-Q3,ppi,ppi_agri_crops,Agriculture and related services,ytd_avg,3.260726
+2023-09-01,2023-Q3,ppi,ppi_forestry,Forestry and related services,yoy,-0.717641
+2023-09-01,2023-Q3,ppi,ppi_forestry,Forestry and related services,qoq,0.104862
+2023-09-01,2023-Q3,ppi,ppi_forestry,Forestry and related services,ytd_avg,2.270755
+2023-09-01,2023-Q3,ppi,ppi_fishery,Fishing and aquaculture,yoy,-0.954803
+2023-09-01,2023-Q3,ppi,ppi_fishery,Fishing and aquaculture,qoq,-2.776905
+2023-09-01,2023-Q3,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,3.309217
+2023-09-01,2023-Q3,ppi,ppi_industry,Industry,yoy,-2.493631
+2023-09-01,2023-Q3,ppi,ppi_industry,Industry,qoq,-0.354131
+2023-09-01,2023-Q3,ppi,ppi_industry,Industry,ytd_avg,-0.994428
+2023-09-01,2023-Q3,ppi,ppi_mining,Mining and quarrying,yoy,-16.779287
+2023-09-01,2023-Q3,ppi,ppi_mining,Mining and quarrying,qoq,-1.127126
+2023-09-01,2023-Q3,ppi,ppi_mining,Mining and quarrying,ytd_avg,-11.716315
+2023-09-01,2023-Q3,ppi,ppi_manufacturing,Manufacturing,yoy,-1.673762
+2023-09-01,2023-Q3,ppi,ppi_manufacturing,Manufacturing,qoq,-0.382342
+2023-09-01,2023-Q3,ppi,ppi_manufacturing,Manufacturing,ytd_avg,-0.446279
+2023-09-01,2023-Q3,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",yoy,2.568399
+2023-09-01,2023-Q3,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",qoq,1.510869
+2023-09-01,2023-Q3,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",ytd_avg,4.222585
+2023-09-01,2023-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,2.105903
+2023-09-01,2023-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,1.204585
+2023-09-01,2023-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,1.659937
+2023-09-01,2023-Q3,ppi,ppi_services,Services,yoy,8.25482
+2023-09-01,2023-Q3,ppi,ppi_services,Services,qoq,2.833495
+2023-09-01,2023-Q3,ppi,ppi_services,Services,ytd_avg,7.343268
+2023-09-01,2023-Q3,ppi,ppi_svc_transport,Transport and storage,yoy,23.402307
+2023-09-01,2023-Q3,ppi,ppi_svc_transport,Transport and storage,qoq,8.844181
+2023-09-01,2023-Q3,ppi,ppi_svc_transport,Transport and storage,ytd_avg,19.335718
+2023-09-01,2023-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,5.66367
+2023-09-01,2023-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,1.366729
+2023-09-01,2023-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,5.965543
+2023-09-01,2023-Q3,ppi,ppi_svc_info,Information and communication,yoy,2.855975
+2023-09-01,2023-Q3,ppi,ppi_svc_info,Information and communication,qoq,0.098769
+2023-09-01,2023-Q3,ppi,ppi_svc_info,Information and communication,ytd_avg,2.801436
+2023-09-01,2023-Q3,ppi,ppi_svc_education,Education and training,yoy,3.432661
+2023-09-01,2023-Q3,ppi,ppi_svc_education,Education and training,qoq,0.853095
+2023-09-01,2023-Q3,ppi,ppi_svc_education,Education and training,ytd_avg,5.429866
+2023-09-01,2023-Q3,ppi,ppi_svc_health,Health and social work,yoy,0.119623
+2023-09-01,2023-Q3,ppi,ppi_svc_health,Health and social work,qoq,0.031102
+2023-09-01,2023-Q3,ppi,ppi_svc_health,Health and social work,ytd_avg,0.206285
+2023-09-01,2023-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,2.738204
+2023-09-01,2023-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.635909
+2023-09-01,2023-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,2.113165
+2023-09-01,2023-Q3,transport,transport_all,All items,yoy,23.402307
+2023-09-01,2023-Q3,transport,transport_all,All items,qoq,8.844181
+2023-09-01,2023-Q3,transport,transport_all,All items,ytd_avg,19.335718
+2023-09-01,2023-Q3,input,input_all,All items,yoy,-2.575069
+2023-09-01,2023-Q3,input,input_all,All items,qoq,-0.148704
+2023-09-01,2023-Q3,input,input_all,All items,ytd_avg,-0.879329
+2023-09-01,2023-Q3,input,input_for_agri,"Used for agriculture, forestry and fishing",yoy,-2.136289
+2023-09-01,2023-Q3,input,input_for_agri,"Used for agriculture, forestry and fishing",qoq,1.188897
+2023-09-01,2023-Q3,input,input_for_agri,"Used for agriculture, forestry and fishing",ytd_avg,0.436252
+2023-09-01,2023-Q3,input,input_for_manuf,Used for manufacturing,yoy,-2.621391
+2023-09-01,2023-Q3,input,input_for_manuf,Used for manufacturing,qoq,-0.14
+2023-09-01,2023-Q3,input,input_for_manuf,Used for manufacturing,ytd_avg,-0.954162
+2023-09-01,2023-Q3,input,input_for_constr,Used for construction,yoy,-1.596093
+2023-09-01,2023-Q3,input,input_for_constr,Used for construction,qoq,-0.704209
+2023-09-01,2023-Q3,input,input_for_constr,Used for construction,ytd_avg,0.807441
+2023-09-01,2023-Q3,export,export_all,All items,yoy,-2.17715
+2023-09-01,2023-Q3,export,export_all,All items,qoq,-0.321199
+2023-09-01,2023-Q3,export,export_all,All items,ytd_avg,-1.072894
+2023-09-01,2023-Q3,export,export_agri_food,Agricultural products and food,yoy,-3.16273
+2023-09-01,2023-Q3,export,export_agri_food,Agricultural products and food,qoq,1.154844
+2023-09-01,2023-Q3,export,export_agri_food,Agricultural products and food,ytd_avg,-2.832544
+2023-09-01,2023-Q3,export,export_fuel,Fuels,yoy,-25.14687
+2023-09-01,2023-Q3,export,export_fuel,Fuels,qoq,-5.257057
+2023-09-01,2023-Q3,export,export_fuel,Fuels,ytd_avg,-11.677762
+2023-09-01,2023-Q3,export,export_manufactured,Other manufactured goods,yoy,-1.210198
+2023-09-01,2023-Q3,export,export_manufactured,Other manufactured goods,qoq,-0.347182
+2023-09-01,2023-Q3,export,export_manufactured,Other manufactured goods,ytd_avg,-0.540679
+2023-09-01,2023-Q3,import,import_all,All items,yoy,-6.719746
+2023-09-01,2023-Q3,import,import_all,All items,qoq,-1.774929
+2023-09-01,2023-Q3,import,import_all,All items,ytd_avg,-4.81839
+2023-09-01,2023-Q3,import,import_agri_food,Agricultural products and food,yoy,-9.203588
+2023-09-01,2023-Q3,import,import_agri_food,Agricultural products and food,qoq,-2.239306
+2023-09-01,2023-Q3,import,import_agri_food,Agricultural products and food,ytd_avg,-5.369182
+2023-09-01,2023-Q3,import,import_fuel,Fuels,yoy,-34.68165
+2023-09-01,2023-Q3,import,import_fuel,Fuels,qoq,-11.637134
+2023-09-01,2023-Q3,import,import_fuel,Fuels,ytd_avg,-21.920202
+2023-09-01,2023-Q3,import,import_manufactured,Other manufactured goods,yoy,-4.017066
+2023-09-01,2023-Q3,import,import_manufactured,Other manufactured goods,qoq,-1.055758
+2023-09-01,2023-Q3,import,import_manufactured,Other manufactured goods,ytd_avg,-3.113079
+2023-09-01,2023-Q3,tot,tot_all,All items,yoy,4.869837
+2023-09-01,2023-Q3,tot,tot_all,All items,qoq,1.479999
+2023-09-01,2023-Q3,tot,tot_all,All items,ytd_avg,3.935104
+2023-12-01,2023-Q4,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,2.791847
+2023-12-01,2023-Q4,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,1.412229
+2023-12-01,2023-Q4,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,3.139303
+2023-12-01,2023-Q4,ppi,ppi_agri_crops,Agriculture and related services,yoy,4.203335
+2023-12-01,2023-Q4,ppi,ppi_agri_crops,Agriculture and related services,qoq,1.731799
+2023-12-01,2023-Q4,ppi,ppi_agri_crops,Agriculture and related services,ytd_avg,3.495576
+2023-12-01,2023-Q4,ppi,ppi_forestry,Forestry and related services,yoy,-1.36364
+2023-12-01,2023-Q4,ppi,ppi_forestry,Forestry and related services,qoq,-0.026873
+2023-12-01,2023-Q4,ppi,ppi_forestry,Forestry and related services,ytd_avg,1.34979
+2023-12-01,2023-Q4,ppi,ppi_fishery,Fishing and aquaculture,yoy,-1.113578
+2023-12-01,2023-Q4,ppi,ppi_fishery,Fishing and aquaculture,qoq,0.555798
+2023-12-01,2023-Q4,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,2.18531
+2023-12-01,2023-Q4,ppi,ppi_industry,Industry,yoy,-0.530419
+2023-12-01,2023-Q4,ppi,ppi_industry,Industry,qoq,0.981059
+2023-12-01,2023-Q4,ppi,ppi_industry,Industry,ytd_avg,-0.878424
+2023-12-01,2023-Q4,ppi,ppi_mining,Mining and quarrying,yoy,1.897268
+2023-12-01,2023-Q4,ppi,ppi_mining,Mining and quarrying,qoq,9.729468
+2023-12-01,2023-Q4,ppi,ppi_mining,Mining and quarrying,ytd_avg,-8.49368
+2023-12-01,2023-Q4,ppi,ppi_manufacturing,Manufacturing,yoy,-0.862929
+2023-12-01,2023-Q4,ppi,ppi_manufacturing,Manufacturing,qoq,0.450171
+2023-12-01,2023-Q4,ppi,ppi_manufacturing,Manufacturing,ytd_avg,-0.550391
+2023-12-01,2023-Q4,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",yoy,3.916294
+2023-12-01,2023-Q4,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",qoq,1.112097
+2023-12-01,2023-Q4,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",ytd_avg,4.145949
+2023-12-01,2023-Q4,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,2.202557
+2023-12-01,2023-Q4,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.294173
+2023-12-01,2023-Q4,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,1.801705
+2023-12-01,2023-Q4,ppi,ppi_services,Services,yoy,16.307663
+2023-12-01,2023-Q4,ppi,ppi_services,Services,qoq,8.623759
+2023-12-01,2023-Q4,ppi,ppi_services,Services,ytd_avg,9.587167
+2023-12-01,2023-Q4,ppi,ppi_svc_transport,Transport and storage,yoy,57.392124
+2023-12-01,2023-Q4,ppi,ppi_svc_transport,Transport and storage,qoq,26.32463
+2023-12-01,2023-Q4,ppi,ppi_svc_transport,Transport and storage,ytd_avg,27.887045
+2023-12-01,2023-Q4,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,5.074975
+2023-12-01,2023-Q4,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,0.495622
+2023-12-01,2023-Q4,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,5.748039
+2023-12-01,2023-Q4,ppi,ppi_svc_info,Information and communication,yoy,0.663506
+2023-12-01,2023-Q4,ppi,ppi_svc_info,Information and communication,qoq,0.144982
+2023-12-01,2023-Q4,ppi,ppi_svc_info,Information and communication,ytd_avg,2.262734
+2023-12-01,2023-Q4,ppi,ppi_svc_education,Education and training,yoy,8.310049
+2023-12-01,2023-Q4,ppi,ppi_svc_education,Education and training,qoq,9.350931
+2023-12-01,2023-Q4,ppi,ppi_svc_education,Education and training,ytd_avg,6.833686
+2023-12-01,2023-Q4,ppi,ppi_svc_health,Health and social work,yoy,3.945944
+2023-12-01,2023-Q4,ppi,ppi_svc_health,Health and social work,qoq,3.827497
+2023-12-01,2023-Q4,ppi,ppi_svc_health,Health and social work,ytd_avg,1.13237
+2023-12-01,2023-Q4,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,2.382122
+2023-12-01,2023-Q4,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.18667
+2023-12-01,2023-Q4,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,2.182925
+2023-12-01,2023-Q4,transport,transport_all,All items,yoy,57.392124
+2023-12-01,2023-Q4,transport,transport_all,All items,qoq,26.32463
+2023-12-01,2023-Q4,transport,transport_all,All items,ytd_avg,27.887045
+2023-12-01,2023-Q4,input,input_all,All items,yoy,-2.574064
+2023-12-01,2023-Q4,input,input_all,All items,qoq,0.860688
+2023-12-01,2023-Q4,input,input_all,All items,ytd_avg,-1.881675
+2023-12-01,2023-Q4,input,input_for_agri,"Used for agriculture, forestry and fishing",yoy,-0.316999
+2023-12-01,2023-Q4,input,input_for_agri,"Used for agriculture, forestry and fishing",qoq,0.695589
+2023-12-01,2023-Q4,input,input_for_agri,"Used for agriculture, forestry and fishing",ytd_avg,0.937606
+2023-12-01,2023-Q4,input,input_for_manuf,Used for manufacturing,yoy,-2.829005
+2023-12-01,2023-Q4,input,input_for_manuf,Used for manufacturing,qoq,0.927113
+2023-12-01,2023-Q4,input,input_for_manuf,Used for manufacturing,ytd_avg,-2.118953
+2023-12-01,2023-Q4,input,input_for_constr,Used for construction,yoy,-0.579669
+2023-12-01,2023-Q4,input,input_for_constr,Used for construction,qoq,0.318079
+2023-12-01,2023-Q4,input,input_for_constr,Used for construction,ytd_avg,0.046946
+2023-12-01,2023-Q4,export,export_all,All items,yoy,1.114874
+2023-12-01,2023-Q4,export,export_all,All items,qoq,-0.136808
+2023-12-01,2023-Q4,export,export_all,All items,ytd_avg,-0.530431
+2023-12-01,2023-Q4,export,export_agri_food,Agricultural products and food,yoy,0.236101
+2023-12-01,2023-Q4,export,export_agri_food,Agricultural products and food,qoq,0.466568
+2023-12-01,2023-Q4,export,export_agri_food,Agricultural products and food,ytd_avg,-2.074304
+2023-12-01,2023-Q4,export,export_fuel,Fuels,yoy,-15.608689
+2023-12-01,2023-Q4,export,export_fuel,Fuels,qoq,9.878637
+2023-12-01,2023-Q4,export,export_fuel,Fuels,ytd_avg,-12.677335
+2023-12-01,2023-Q4,export,export_manufactured,Other manufactured goods,yoy,1.844809
+2023-12-01,2023-Q4,export,export_manufactured,Other manufactured goods,qoq,-0.488215
+2023-12-01,2023-Q4,export,export_manufactured,Other manufactured goods,ytd_avg,0.050403
+2023-12-01,2023-Q4,import,import_all,All items,yoy,-3.943999
+2023-12-01,2023-Q4,import,import_all,All items,qoq,-0.451753
+2023-12-01,2023-Q4,import,import_all,All items,ytd_avg,-4.730708
+2023-12-01,2023-Q4,import,import_agri_food,Agricultural products and food,yoy,-10.382295
+2023-12-01,2023-Q4,import,import_agri_food,Agricultural products and food,qoq,-3.92839
+2023-12-01,2023-Q4,import,import_agri_food,Agricultural products and food,ytd_avg,-6.648073
+2023-12-01,2023-Q4,import,import_fuel,Fuels,yoy,-30.503948
+2023-12-01,2023-Q4,import,import_fuel,Fuels,qoq,-2.589701
+2023-12-01,2023-Q4,import,import_fuel,Fuels,ytd_avg,-24.160747
+2023-12-01,2023-Q4,import,import_manufactured,Other manufactured goods,yoy,-1.371825
+2023-12-01,2023-Q4,import,import_manufactured,Other manufactured goods,qoq,-0.207548
+2023-12-01,2023-Q4,import,import_manufactured,Other manufactured goods,ytd_avg,-2.826021
+2023-12-01,2023-Q4,tot,tot_all,All items,yoy,5.266587
+2023-12-01,2023-Q4,tot,tot_all,All items,qoq,0.316374
+2023-12-01,2023-Q4,tot,tot_all,All items,ytd_avg,4.408847
+2024-03-01,2024-Q1,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,5.806124
+2024-03-01,2024-Q1,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,3.398059
+2024-03-01,2024-Q1,ppi,ppi_agri_crops,Agriculture and related services,yoy,8.225422
+2024-03-01,2024-Q1,ppi,ppi_agri_crops,Agriculture and related services,qoq,3.80181
+2024-03-01,2024-Q1,ppi,ppi_forestry,Forestry and related services,yoy,-0.444278
+2024-03-01,2024-Q1,ppi,ppi_forestry,Forestry and related services,qoq,0.372901
+2024-03-01,2024-Q1,ppi,ppi_fishery,Fishing and aquaculture,yoy,-0.783151
+2024-03-01,2024-Q1,ppi,ppi_fishery,Fishing and aquaculture,qoq,2.506731
+2024-03-01,2024-Q1,ppi,ppi_industry,Industry,yoy,-0.561773
+2024-03-01,2024-Q1,ppi,ppi_industry,Industry,qoq,-0.636443
+2024-03-01,2024-Q1,ppi,ppi_mining,Mining and quarrying,yoy,3.228465
+2024-03-01,2024-Q1,ppi,ppi_mining,Mining and quarrying,qoq,-3.017274
+2024-03-01,2024-Q1,ppi,ppi_manufacturing,Manufacturing,yoy,-1.009074
+2024-03-01,2024-Q1,ppi,ppi_manufacturing,Manufacturing,qoq,-0.553355
+2024-03-01,2024-Q1,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",yoy,4.746617
+2024-03-01,2024-Q1,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",qoq,1.092465
+2024-03-01,2024-Q1,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,2.528284
+2024-03-01,2024-Q1,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.777431
+2024-03-01,2024-Q1,ppi,ppi_services,Services,yoy,7.152241
+2024-03-01,2024-Q1,ppi,ppi_services,Services,qoq,1.974318
+2024-03-01,2024-Q1,ppi,ppi_svc_transport,Transport and storage,yoy,15.490169
+2024-03-01,2024-Q1,ppi,ppi_svc_transport,Transport and storage,qoq,4.239343
+2024-03-01,2024-Q1,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,4.903
+2024-03-01,2024-Q1,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,1.814351
+2024-03-01,2024-Q1,ppi,ppi_svc_info,Information and communication,yoy,0.635259
+2024-03-01,2024-Q1,ppi,ppi_svc_info,Information and communication,qoq,0.057342
+2024-03-01,2024-Q1,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,3.368766
+2024-03-01,2024-Q1,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,1.36843
+2024-03-01,2024-Q1,input,input_all,All items,yoy,1.250346
+2024-03-01,2024-Q1,input,input_all,All items,qoq,1.393946
+2024-03-01,2024-Q1,input,input_for_agri,"Used for agriculture, forestry and fishing",yoy,-0.340267
+2024-03-01,2024-Q1,input,input_for_agri,"Used for agriculture, forestry and fishing",qoq,-0.573679
+2024-03-01,2024-Q1,input,input_for_manuf,Used for manufacturing,yoy,1.496913
+2024-03-01,2024-Q1,input,input_for_manuf,Used for manufacturing,qoq,1.49226
+2024-03-01,2024-Q1,input,input_for_constr,Used for construction,yoy,-0.943416
+2024-03-01,2024-Q1,input,input_for_constr,Used for construction,qoq,0.368534
+2024-03-01,2024-Q1,transport,transport_all,All items,yoy,15.490169
+2024-03-01,2024-Q1,transport,transport_all,All items,qoq,4.239343
+2024-03-01,2024-Q1,export,export_all,All items,yoy,-1.745181
+2024-03-01,2024-Q1,export,export_all,All items,qoq,-1.597112
+2024-03-01,2024-Q1,export,export_agri_food,Agricultural products and food,yoy,4.633278
+2024-03-01,2024-Q1,export,export_agri_food,Agricultural products and food,qoq,2.35612
+2024-03-01,2024-Q1,export,export_fuel,Fuels,yoy,-6.723121
+2024-03-01,2024-Q1,export,export_fuel,Fuels,qoq,-6.726167
+2024-03-01,2024-Q1,export,export_manufactured,Other manufactured goods,yoy,-2.342954
+2024-03-01,2024-Q1,export,export_manufactured,Other manufactured goods,qoq,-1.914537
+2024-03-01,2024-Q1,import,import_all,All items,yoy,-1.544704
+2024-03-01,2024-Q1,import,import_all,All items,qoq,-0.39455
+2024-03-01,2024-Q1,import,import_agri_food,Agricultural products and food,yoy,-7.82894
+2024-03-01,2024-Q1,import,import_agri_food,Agricultural products and food,qoq,0.221823
+2024-03-01,2024-Q1,import,import_fuel,Fuels,yoy,-20.719188
+2024-03-01,2024-Q1,import,import_fuel,Fuels,qoq,1.065646
+2024-03-01,2024-Q1,import,import_manufactured,Other manufactured goods,yoy,0.200981
+2024-03-01,2024-Q1,import,import_manufactured,Other manufactured goods,qoq,-0.504262
+2024-03-01,2024-Q1,tot,tot_all,All items,yoy,-0.203621
+2024-03-01,2024-Q1,tot,tot_all,All items,qoq,-1.207326
+2024-06-01,2024-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,9.086301
+2024-06-01,2024-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,2.768359
+2024-06-01,2024-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,7.433695
+2024-06-01,2024-Q2,ppi,ppi_agri_crops,Agriculture and related services,yoy,12.3909
+2024-06-01,2024-Q2,ppi,ppi_agri_crops,Agriculture and related services,qoq,3.763024
+2024-06-01,2024-Q2,ppi,ppi_agri_crops,Agriculture and related services,ytd_avg,10.288497
+2024-06-01,2024-Q2,ppi,ppi_forestry,Forestry and related services,yoy,1.142517
+2024-06-01,2024-Q2,ppi,ppi_forestry,Forestry and related services,qoq,0.688259
+2024-06-01,2024-Q2,ppi,ppi_forestry,Forestry and related services,ytd_avg,0.345983
+2024-06-01,2024-Q2,ppi,ppi_fishery,Fishing and aquaculture,yoy,0.067132
+2024-06-01,2024-Q2,ppi,ppi_fishery,Fishing and aquaculture,qoq,-0.146679
+2024-06-01,2024-Q2,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,-0.358916
+2024-06-01,2024-Q2,ppi,ppi_industry,Industry,yoy,1.074175
+2024-06-01,2024-Q2,ppi,ppi_industry,Industry,qoq,1.148665
+2024-06-01,2024-Q2,ppi,ppi_industry,Industry,ytd_avg,0.25272
+2024-06-01,2024-Q2,ppi,ppi_mining,Mining and quarrying,yoy,9.502443
+2024-06-01,2024-Q2,ppi,ppi_mining,Mining and quarrying,qoq,4.070823
+2024-06-01,2024-Q2,ppi,ppi_mining,Mining and quarrying,ytd_avg,6.319193
+2024-06-01,2024-Q2,ppi,ppi_manufacturing,Manufacturing,yoy,0.487689
+2024-06-01,2024-Q2,ppi,ppi_manufacturing,Manufacturing,qoq,1.043631
+2024-06-01,2024-Q2,ppi,ppi_manufacturing,Manufacturing,ytd_avg,-0.263643
+2024-06-01,2024-Q2,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",yoy,4.990179
+2024-06-01,2024-Q2,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",qoq,1.184554
+2024-06-01,2024-Q2,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",ytd_avg,4.868329
+2024-06-01,2024-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,3.488123
+2024-06-01,2024-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,1.171519
+2024-06-01,2024-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,3.006719
+2024-06-01,2024-Q2,ppi,ppi_services,Services,yoy,7.002586
+2024-06-01,2024-Q2,ppi,ppi_services,Services,qoq,0.158213
+2024-06-01,2024-Q2,ppi,ppi_services,Services,ytd_avg,7.001043
+2024-06-01,2024-Q2,ppi,ppi_svc_transport,Transport and storage,yoy,16.111839
+2024-06-01,2024-Q2,ppi,ppi_svc_transport,Transport and storage,qoq,0.760991
+2024-06-01,2024-Q2,ppi,ppi_svc_transport,Transport and storage,ytd_avg,15.792335
+2024-06-01,2024-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,4.40315
+2024-06-01,2024-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,0.934869
+2024-06-01,2024-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,4.519237
+2024-06-01,2024-Q2,ppi,ppi_svc_info,Information and communication,yoy,0.61666
+2024-06-01,2024-Q2,ppi,ppi_svc_info,Information and communication,qoq,0.282663
+2024-06-01,2024-Q2,ppi,ppi_svc_info,Information and communication,ytd_avg,0.641829
+2024-06-01,2024-Q2,ppi,ppi_svc_education,Education and training,yoy,8.571281
+2024-06-01,2024-Q2,ppi,ppi_svc_education,Education and training,qoq,-3.984593
+2024-06-01,2024-Q2,ppi,ppi_svc_education,Education and training,ytd_avg,9.099793
+2024-06-01,2024-Q2,ppi,ppi_svc_health,Health and social work,yoy,9.458778
+2024-06-01,2024-Q2,ppi,ppi_svc_health,Health and social work,qoq,1.191112
+2024-06-01,2024-Q2,ppi,ppi_svc_health,Health and social work,ytd_avg,8.832531
+2024-06-01,2024-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,2.548904
+2024-06-01,2024-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.672253
+2024-06-01,2024-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,2.759776
+2024-06-01,2024-Q2,transport,transport_all,All items,yoy,16.111839
+2024-06-01,2024-Q2,transport,transport_all,All items,qoq,0.760991
+2024-06-01,2024-Q2,transport,transport_all,All items,ytd_avg,15.792335
+2024-06-01,2024-Q2,input,input_all,All items,yoy,3.087185
+2024-06-01,2024-Q2,input,input_all,All items,qoq,0.933262
+2024-06-01,2024-Q2,input,input_all,All items,ytd_avg,2.164637
+2024-06-01,2024-Q2,input,input_for_agri,"Used for agriculture, forestry and fishing",yoy,1.806608
+2024-06-01,2024-Q2,input,input_for_agri,"Used for agriculture, forestry and fishing",qoq,0.491946
+2024-06-01,2024-Q2,input,input_for_agri,"Used for agriculture, forestry and fishing",ytd_avg,0.727451
+2024-06-01,2024-Q2,input,input_for_manuf,Used for manufacturing,yoy,3.351513
+2024-06-01,2024-Q2,input,input_for_manuf,Used for manufacturing,qoq,0.946534
+2024-06-01,2024-Q2,input,input_for_manuf,Used for manufacturing,ytd_avg,2.420015
+2024-06-01,2024-Q2,input,input_for_constr,Used for construction,yoy,0.516741
+2024-06-01,2024-Q2,input,input_for_constr,Used for construction,qoq,0.537307
+2024-06-01,2024-Q2,input,input_for_constr,Used for construction,ytd_avg,-0.216008
+2024-06-01,2024-Q2,export,export_all,All items,yoy,-2.49885
+2024-06-01,2024-Q2,export,export_all,All items,qoq,1.588775
+2024-06-01,2024-Q2,export,export_all,All items,ytd_avg,-1.950541
+2024-06-01,2024-Q2,export,export_agri_food,Agricultural products and food,yoy,7.739162
+2024-06-01,2024-Q2,export,export_agri_food,Agricultural products and food,qoq,3.913028
+2024-06-01,2024-Q2,export,export_agri_food,Agricultural products and food,ytd_avg,6.230439
+2024-06-01,2024-Q2,export,export_fuel,Fuels,yoy,1.364225
+2024-06-01,2024-Q2,export,export_fuel,Fuels,qoq,4.390652
+2024-06-01,2024-Q2,export,export_fuel,Fuels,ytd_avg,-2.763492
+2024-06-01,2024-Q2,export,export_manufactured,Other manufactured goods,yoy,-3.801082
+2024-06-01,2024-Q2,export,export_manufactured,Other manufactured goods,qoq,1.209962
+2024-06-01,2024-Q2,export,export_manufactured,Other manufactured goods,ytd_avg,-2.883874
+2024-06-01,2024-Q2,import,import_all,All items,yoy,-3.017228
+2024-06-01,2024-Q2,import,import_all,All items,qoq,-0.208131
+2024-06-01,2024-Q2,import,import_all,All items,ytd_avg,-2.150295
+2024-06-01,2024-Q2,import,import_agri_food,Agricultural products and food,yoy,-5.780076
+2024-06-01,2024-Q2,import,import_agri_food,Agricultural products and food,qoq,0.152129
+2024-06-01,2024-Q2,import,import_agri_food,Agricultural products and food,ytd_avg,-6.816438
+2024-06-01,2024-Q2,import,import_fuel,Fuels,yoy,-14.225419
+2024-06-01,2024-Q2,import,import_fuel,Fuels,qoq,-1.368209
+2024-06-01,2024-Q2,import,import_fuel,Fuels,ytd_avg,-17.549161
+2024-06-01,2024-Q2,import,import_manufactured,Other manufactured goods,yoy,-2.130582
+2024-06-01,2024-Q2,import,import_manufactured,Other manufactured goods,qoq,-0.14527
+2024-06-01,2024-Q2,import,import_manufactured,Other manufactured goods,ytd_avg,-0.822609
+2024-06-01,2024-Q2,tot,tot_all,All items,yoy,0.534505
+2024-06-01,2024-Q2,tot,tot_all,All items,qoq,1.800653
+2024-06-01,2024-Q2,tot,tot_all,All items,ytd_avg,0.204144
+2024-09-01,2024-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,9.342644
+2024-09-01,2024-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,1.467611
+2024-09-01,2024-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,8.066279
+2024-09-01,2024-Q3,ppi,ppi_agri_crops,Agriculture and related services,yoy,12.151565
+2024-09-01,2024-Q3,ppi,ppi_agri_crops,Agriculture and related services,qoq,2.353115
+2024-09-01,2024-Q3,ppi,ppi_agri_crops,Agriculture and related services,ytd_avg,10.906055
+2024-09-01,2024-Q3,ppi,ppi_forestry,Forestry and related services,yoy,1.579532
+2024-09-01,2024-Q3,ppi,ppi_forestry,Forestry and related services,qoq,0.537394
+2024-09-01,2024-Q3,ppi,ppi_forestry,Forestry and related services,ytd_avg,0.755492
+2024-09-01,2024-Q3,ppi,ppi_fishery,Fishing and aquaculture,yoy,1.570306
+2024-09-01,2024-Q3,ppi,ppi_fishery,Fishing and aquaculture,qoq,-1.316453
+2024-09-01,2024-Q3,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,0.280052
+2024-09-01,2024-Q3,ppi,ppi_industry,Industry,yoy,1.506001
+2024-09-01,2024-Q3,ppi,ppi_industry,Industry,qoq,0.072325
+2024-09-01,2024-Q3,ppi,ppi_industry,Industry,ytd_avg,0.668662
+2024-09-01,2024-Q3,ppi,ppi_mining,Mining and quarrying,yoy,8.705135
+2024-09-01,2024-Q3,ppi,ppi_mining,Mining and quarrying,qoq,-1.840275
+2024-09-01,2024-Q3,ppi,ppi_mining,Mining and quarrying,ytd_avg,7.106171
+2024-09-01,2024-Q3,ppi,ppi_manufacturing,Manufacturing,yoy,0.915529
+2024-09-01,2024-Q3,ppi,ppi_manufacturing,Manufacturing,qoq,0.042325
+2024-09-01,2024-Q3,ppi,ppi_manufacturing,Manufacturing,ytd_avg,0.127875
+2024-09-01,2024-Q3,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",yoy,6.262131
+2024-09-01,2024-Q3,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",qoq,2.740669
+2024-09-01,2024-Q3,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",ytd_avg,5.330887
+2024-09-01,2024-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,2.731131
+2024-09-01,2024-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.462692
+2024-09-01,2024-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,2.914774
+2024-09-01,2024-Q3,ppi,ppi_services,Services,yoy,5.592386
+2024-09-01,2024-Q3,ppi,ppi_services,Services,qoq,0.606499
+2024-09-01,2024-Q3,ppi,ppi_services,Services,ytd_avg,6.604007
+2024-09-01,2024-Q3,ppi,ppi_svc_transport,Transport and storage,yoy,12.470831
+2024-09-01,2024-Q3,ppi,ppi_svc_transport,Transport and storage,qoq,1.265935
+2024-09-01,2024-Q3,ppi,ppi_svc_transport,Transport and storage,ytd_avg,14.987303
+2024-09-01,2024-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,3.899077
+2024-09-01,2024-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,0.862962
+2024-09-01,2024-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,4.32474
+2024-09-01,2024-Q3,ppi,ppi_svc_info,Information and communication,yoy,-0.022119
+2024-09-01,2024-Q3,ppi,ppi_svc_info,Information and communication,qoq,-0.489654
+2024-09-01,2024-Q3,ppi,ppi_svc_info,Information and communication,ytd_avg,0.393634
+2024-09-01,2024-Q3,ppi,ppi_svc_education,Education and training,yoy,5.035768
+2024-09-01,2024-Q3,ppi,ppi_svc_education,Education and training,qoq,0.0338
+2024-09-01,2024-Q3,ppi,ppi_svc_education,Education and training,ytd_avg,7.764149
+2024-09-01,2024-Q3,ppi,ppi_svc_health,Health and social work,yoy,11.297494
+2024-09-01,2024-Q3,ppi,ppi_svc_health,Health and social work,qoq,1.472346
+2024-09-01,2024-Q3,ppi,ppi_svc_health,Health and social work,ytd_avg,9.739867
+2024-09-01,2024-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,1.381872
+2024-09-01,2024-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,-0.145733
+2024-09-01,2024-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,2.177531
+2024-09-01,2024-Q3,transport,transport_all,All items,yoy,12.470831
+2024-09-01,2024-Q3,transport,transport_all,All items,qoq,1.265935
+2024-09-01,2024-Q3,transport,transport_all,All items,ytd_avg,14.987303
+2024-09-01,2024-Q3,input,input_all,All items,yoy,3.627327
+2024-09-01,2024-Q3,input,input_all,All items,qoq,0.417778
+2024-09-01,2024-Q3,input,input_all,All items,ytd_avg,2.649892
+2024-09-01,2024-Q3,input,input_for_agri,"Used for agriculture, forestry and fishing",yoy,0.844004
+2024-09-01,2024-Q3,input,input_for_agri,"Used for agriculture, forestry and fishing",qoq,0.232144
+2024-09-01,2024-Q3,input,input_for_agri,"Used for agriculture, forestry and fishing",ytd_avg,0.766287
+2024-09-01,2024-Q3,input,input_for_manuf,Used for manufacturing,yoy,3.86762
+2024-09-01,2024-Q3,input,input_for_manuf,Used for manufacturing,qoq,0.462201
+2024-09-01,2024-Q3,input,input_for_manuf,Used for manufacturing,ytd_avg,2.900294
+2024-09-01,2024-Q3,input,input_for_constr,Used for construction,yoy,1.048009
+2024-09-01,2024-Q3,input,input_for_constr,Used for construction,qoq,-0.179405
+2024-09-01,2024-Q3,input,input_for_constr,Used for construction,ytd_avg,0.203564
+2024-09-01,2024-Q3,export,export_all,All items,yoy,-0.429605
+2024-09-01,2024-Q3,export,export_all,All items,qoq,-0.111894
+2024-09-01,2024-Q3,export,export_all,All items,ytd_avg,-1.442267
+2024-09-01,2024-Q3,export,export_agri_food,Agricultural products and food,yoy,7.825662
+2024-09-01,2024-Q3,export,export_agri_food,Agricultural products and food,qoq,0.815844
+2024-09-01,2024-Q3,export,export_agri_food,Agricultural products and food,ytd_avg,6.753367
+2024-09-01,2024-Q3,export,export_fuel,Fuels,yoy,4.584801
+2024-09-01,2024-Q3,export,export_fuel,Fuels,qoq,-2.245984
+2024-09-01,2024-Q3,export,export_fuel,Fuels,ytd_avg,-0.373296
+2024-09-01,2024-Q3,export,export_manufactured,Other manufactured goods,yoy,-1.562285
+2024-09-01,2024-Q3,export,export_manufactured,Other manufactured goods,qoq,-0.165976
+2024-09-01,2024-Q3,export,export_manufactured,Other manufactured goods,ytd_avg,-2.440119
+2024-09-01,2024-Q3,import,import_all,All items,yoy,-0.710558
+2024-09-01,2024-Q3,import,import_all,All items,qoq,0.328067
+2024-09-01,2024-Q3,import,import_all,All items,ytd_avg,-1.727689
+2024-09-01,2024-Q3,import,import_agri_food,Agricultural products and food,yoy,-3.702978
+2024-09-01,2024-Q3,import,import_agri_food,Agricultural products and food,qoq,-0.100826
+2024-09-01,2024-Q3,import,import_agri_food,Agricultural products and food,ytd_avg,-5.789967
+2024-09-01,2024-Q3,import,import_fuel,Fuels,yoy,-3.415846
+2024-09-01,2024-Q3,import,import_fuel,Fuels,qoq,-0.501377
+2024-09-01,2024-Q3,import,import_fuel,Fuels,ytd_avg,-13.084211
+2024-09-01,2024-Q3,import,import_manufactured,Other manufactured goods,yoy,-0.44518
+2024-09-01,2024-Q3,import,import_manufactured,Other manufactured goods,qoq,0.392929
+2024-09-01,2024-Q3,import,import_manufactured,Other manufactured goods,ytd_avg,-0.757612
+2024-09-01,2024-Q3,tot,tot_all,All items,yoy,0.282963
+2024-09-01,2024-Q3,tot,tot_all,All items,qoq,-0.438523
+2024-09-01,2024-Q3,tot,tot_all,All items,ytd_avg,0.29044
+2024-12-01,2024-Q4,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,10.049619
+2024-12-01,2024-Q4,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,2.067929
+2024-12-01,2024-Q4,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,8.558738
+2024-12-01,2024-Q4,ppi,ppi_agri_crops,Agriculture and related services,yoy,12.511208
+2024-12-01,2024-Q4,ppi,ppi_agri_crops,Agriculture and related services,qoq,2.058028
+2024-12-01,2024-Q4,ppi,ppi_agri_crops,Agriculture and related services,ytd_avg,11.305183
+2024-12-01,2024-Q4,ppi,ppi_forestry,Forestry and related services,yoy,2.651899
+2024-12-01,2024-Q4,ppi,ppi_forestry,Forestry and related services,qoq,1.028536
+2024-12-01,2024-Q4,ppi,ppi_forestry,Forestry and related services,ytd_avg,1.226284
+2024-12-01,2024-Q4,ppi,ppi_fishery,Fishing and aquaculture,yoy,3.262455
+2024-12-01,2024-Q4,ppi,ppi_fishery,Fishing and aquaculture,qoq,2.231045
+2024-12-01,2024-Q4,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,1.017478
+2024-12-01,2024-Q4,ppi,ppi_industry,Industry,yoy,0.341882
+2024-12-01,2024-Q4,ppi,ppi_industry,Industry,qoq,-0.234099
+2024-12-01,2024-Q4,ppi,ppi_industry,Industry,ytd_avg,0.586867
+2024-12-01,2024-Q4,ppi,ppi_mining,Mining and quarrying,yoy,-3.607965
+2024-12-01,2024-Q4,ppi,ppi_mining,Mining and quarrying,qoq,-2.699659
+2024-12-01,2024-Q4,ppi,ppi_mining,Mining and quarrying,ytd_avg,4.320859
+2024-12-01,2024-Q4,ppi,ppi_manufacturing,Manufacturing,yoy,0.288223
+2024-12-01,2024-Q4,ppi,ppi_manufacturing,Manufacturing,qoq,-0.237556
+2024-12-01,2024-Q4,ppi,ppi_manufacturing,Manufacturing,ytd_avg,0.167938
+2024-12-01,2024-Q4,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",yoy,7.359021
+2024-12-01,2024-Q4,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",qoq,2.155826
+2024-12-01,2024-Q4,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",ytd_avg,5.8343
+2024-12-01,2024-Q4,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,2.613683
+2024-12-01,2024-Q4,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.179511
+2024-12-01,2024-Q4,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,2.839419
+2024-12-01,2024-Q4,ppi,ppi_services,Services,yoy,3.563732
+2024-12-01,2024-Q4,ppi,ppi_services,Services,qoq,0.715528
+2024-12-01,2024-Q4,ppi,ppi_services,Services,ytd_avg,5.85828
+2024-12-01,2024-Q4,ppi,ppi_svc_transport,Transport and storage,yoy,7.839905
+2024-12-01,2024-Q4,ppi,ppi_svc_transport,Transport and storage,qoq,0.94249
+2024-12-01,2024-Q4,ppi,ppi_svc_transport,Transport and storage,ytd_avg,13.156226
+2024-12-01,2024-Q4,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,4.344106
+2024-12-01,2024-Q4,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,0.768424
+2024-12-01,2024-Q4,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,4.360381
+2024-12-01,2024-Q4,ppi,ppi_svc_info,Information and communication,yoy,-0.204487
+2024-12-01,2024-Q4,ppi,ppi_svc_info,Information and communication,qoq,-0.03769
+2024-12-01,2024-Q4,ppi,ppi_svc_info,Information and communication,ytd_avg,0.243769
+2024-12-01,2024-Q4,ppi,ppi_svc_education,Education and training,yoy,-1.099358
+2024-12-01,2024-Q4,ppi,ppi_svc_education,Education and training,qoq,2.244333
+2024-12-01,2024-Q4,ppi,ppi_svc_education,Education and training,ytd_avg,5.667254
+2024-12-01,2024-Q4,ppi,ppi_svc_health,Health and social work,yoy,7.551288
+2024-12-01,2024-Q4,ppi,ppi_svc_health,Health and social work,qoq,0.077125
+2024-12-01,2024-Q4,ppi,ppi_svc_health,Health and social work,ytd_avg,9.17005
+2024-12-01,2024-Q4,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,1.465062
+2024-12-01,2024-Q4,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.337825
+2024-12-01,2024-Q4,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,1.992349
+2024-12-01,2024-Q4,transport,transport_all,All items,yoy,7.839905
+2024-12-01,2024-Q4,transport,transport_all,All items,qoq,0.94249
+2024-12-01,2024-Q4,transport,transport_all,All items,ytd_avg,13.156226
+2024-12-01,2024-Q4,input,input_all,All items,yoy,2.856945
+2024-12-01,2024-Q4,input,input_all,All items,qoq,0.741021
+2024-12-01,2024-Q4,input,input_all,All items,ytd_avg,2.25813
+2024-12-01,2024-Q4,input,input_for_agri,"Used for agriculture, forestry and fishing",yoy,-0.673813
+2024-12-01,2024-Q4,input,input_for_agri,"Used for agriculture, forestry and fishing",qoq,-0.008519
+2024-12-01,2024-Q4,input,input_for_agri,"Used for agriculture, forestry and fishing",ytd_avg,-0.081947
+2024-12-01,2024-Q4,input,input_for_manuf,Used for manufacturing,yoy,4.340057
+2024-12-01,2024-Q4,input,input_for_manuf,Used for manufacturing,qoq,0.714259
+2024-12-01,2024-Q4,input,input_for_manuf,Used for manufacturing,ytd_avg,3.787744
+2024-12-01,2024-Q4,input,input_for_constr,Used for construction,yoy,-3.151346
+2024-12-01,2024-Q4,input,input_for_constr,Used for construction,qoq,1.959309
+2024-12-01,2024-Q4,input,input_for_constr,Used for construction,ytd_avg,0.307977
+2024-12-01,2024-Q4,export,export_all,All items,yoy,4.585253
+2024-12-01,2024-Q4,export,export_all,All items,qoq,-0.869843
+2024-12-01,2024-Q4,export,export_all,All items,ytd_avg,1.150211
+2024-12-01,2024-Q4,export,export_agri_food,Agricultural products and food,yoy,20.279004
+2024-12-01,2024-Q4,export,export_agri_food,Agricultural products and food,qoq,6.106894
+2024-12-01,2024-Q4,export,export_agri_food,Agricultural products and food,ytd_avg,11.424617
+2024-12-01,2024-Q4,export,export_fuel,Fuels,yoy,-12.410652
+2024-12-01,2024-Q4,export,export_fuel,Fuels,qoq,-7.642471
+2024-12-01,2024-Q4,export,export_fuel,Fuels,ytd_avg,-3.617013
+2024-12-01,2024-Q4,export,export_manufactured,Other manufactured goods,yoy,3.217834
+2024-12-01,2024-Q4,export,export_manufactured,Other manufactured goods,qoq,-1.591911
+2024-12-01,2024-Q4,export,export_manufactured,Other manufactured goods,ytd_avg,0.062608
+2024-12-01,2024-Q4,import,import_all,All items,yoy,-1.284099
+2024-12-01,2024-Q4,import,import_all,All items,qoq,-0.443277
+2024-12-01,2024-Q4,import,import_all,All items,ytd_avg,-1.940316
+2024-12-01,2024-Q4,import,import_agri_food,Agricultural products and food,yoy,2.390499
+2024-12-01,2024-Q4,import,import_agri_food,Agricultural products and food,qoq,2.316177
+2024-12-01,2024-Q4,import,import_agri_food,Agricultural products and food,ytd_avg,-3.858773
+2024-12-01,2024-Q4,import,import_fuel,Fuels,yoy,-4.078552
+2024-12-01,2024-Q4,import,import_fuel,Fuels,qoq,0.987764
+2024-12-01,2024-Q4,import,import_fuel,Fuels,ytd_avg,-11.866822
+2024-12-01,2024-Q4,import,import_manufactured,Other manufactured goods,yoy,-1.217826
+2024-12-01,2024-Q4,import,import_manufactured,Other manufactured goods,qoq,-0.611187
+2024-12-01,2024-Q4,import,import_manufactured,Other manufactured goods,ytd_avg,-1.162244
+2024-12-01,2024-Q4,tot,tot_all,All items,yoy,5.945701
+2024-12-01,2024-Q4,tot,tot_all,All items,qoq,-0.428465
+2024-12-01,2024-Q4,tot,tot_all,All items,ytd_avg,3.151679
+2025-03-01,2025-Q1,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,8.281056
+2025-03-01,2025-Q1,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,1.73639
+2025-03-01,2025-Q1,ppi,ppi_agri_crops,Agriculture and related services,yoy,9.787133
+2025-03-01,2025-Q1,ppi,ppi_agri_crops,Agriculture and related services,qoq,1.288604
+2025-03-01,2025-Q1,ppi,ppi_forestry,Forestry and related services,yoy,3.960364
+2025-03-01,2025-Q1,ppi,ppi_forestry,Forestry and related services,qoq,1.652316
+2025-03-01,2025-Q1,ppi,ppi_fishery,Fishing and aquaculture,yoy,3.926495
+2025-03-01,2025-Q1,ppi,ppi_fishery,Fishing and aquaculture,qoq,3.165911
+2025-03-01,2025-Q1,ppi,ppi_industry,Industry,yoy,2.24348
+2025-03-01,2025-Q1,ppi,ppi_industry,Industry,qoq,1.246615
+2025-03-01,2025-Q1,ppi,ppi_mining,Mining and quarrying,yoy,0.070353
+2025-03-01,2025-Q1,ppi,ppi_mining,Mining and quarrying,qoq,0.683585
+2025-03-01,2025-Q1,ppi,ppi_manufacturing,Manufacturing,yoy,2.013374
+2025-03-01,2025-Q1,ppi,ppi_manufacturing,Manufacturing,qoq,1.157319
+2025-03-01,2025-Q1,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",yoy,10.711469
+2025-03-01,2025-Q1,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",qoq,4.249231
+2025-03-01,2025-Q1,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,2.469033
+2025-03-01,2025-Q1,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.63537
+2025-03-01,2025-Q1,ppi,ppi_services,Services,yoy,4.7411
+2025-03-01,2025-Q1,ppi,ppi_services,Services,qoq,2.911471
+2025-03-01,2025-Q1,ppi,ppi_svc_transport,Transport and storage,yoy,6.218408
+2025-03-01,2025-Q1,ppi,ppi_svc_transport,Transport and storage,qoq,3.025502
+2025-03-01,2025-Q1,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,4.28089
+2025-03-01,2025-Q1,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,1.530294
+2025-03-01,2025-Q1,ppi,ppi_svc_info,Information and communication,yoy,0.236745
+2025-03-01,2025-Q1,ppi,ppi_svc_info,Information and communication,qoq,0.49977
+2025-03-01,2025-Q1,ppi,ppi_svc_education,Education and training,yoy,-0.873526
+2025-03-01,2025-Q1,ppi,ppi_svc_education,Education and training,qoq,0.095157
+2025-03-01,2025-Q1,ppi,ppi_svc_health,Health and social work,yoy,19.612675
+2025-03-01,2025-Q1,ppi,ppi_svc_health,Health and social work,qoq,15.110427
+2025-03-01,2025-Q1,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,0.665127
+2025-03-01,2025-Q1,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.239058
+2025-03-01,2025-Q1,input,input_all,All items,yoy,4.926395
+2025-03-01,2025-Q1,input,input_all,All items,qoq,2.762223
+2025-03-01,2025-Q1,input,input_for_agri,"Used for agriculture, forestry and fishing",yoy,1.896748
+2025-03-01,2025-Q1,input,input_for_agri,"Used for agriculture, forestry and fishing",qoq,1.171701
+2025-03-01,2025-Q1,input,input_for_manuf,Used for manufacturing,yoy,5.278393
+2025-03-01,2025-Q1,input,input_for_manuf,Used for manufacturing,qoq,2.916983
+2025-03-01,2025-Q1,input,input_for_constr,Used for construction,yoy,1.100591
+2025-03-01,2025-Q1,input,input_for_constr,Used for construction,qoq,0.711217
+2025-03-01,2025-Q1,transport,transport_all,All items,yoy,6.218408
+2025-03-01,2025-Q1,transport,transport_all,All items,qoq,3.025502
+2025-03-01,2025-Q1,export,export_all,All items,yoy,6.605463
+2025-03-01,2025-Q1,export,export_all,All items,qoq,0.221603
+2025-03-01,2025-Q1,export,export_agri_food,Agricultural products and food,yoy,19.203134
+2025-03-01,2025-Q1,export,export_agri_food,Agricultural products and food,qoq,1.381754
+2025-03-01,2025-Q1,export,export_fuel,Fuels,yoy,-9.003395
+2025-03-01,2025-Q1,export,export_fuel,Fuels,qoq,-3.097782
+2025-03-01,2025-Q1,export,export_manufactured,Other manufactured goods,yoy,5.479286
+2025-03-01,2025-Q1,export,export_manufactured,Other manufactured goods,qoq,0.146929
+2025-03-01,2025-Q1,import,import_all,All items,yoy,-1.067102
+2025-03-01,2025-Q1,import,import_all,All items,qoq,-0.250613
+2025-03-01,2025-Q1,import,import_agri_food,Agricultural products and food,yoy,4.195802
+2025-03-01,2025-Q1,import,import_agri_food,Agricultural products and food,qoq,1.963463
+2025-03-01,2025-Q1,import,import_fuel,Fuels,yoy,-6.284558
+2025-03-01,2025-Q1,import,import_fuel,Fuels,qoq,-1.289705
+2025-03-01,2025-Q1,import,import_manufactured,Other manufactured goods,yoy,-0.891973
+2025-03-01,2025-Q1,import,import_manufactured,Other manufactured goods,qoq,-0.255342
+2025-03-01,2025-Q1,tot,tot_all,All items,yoy,7.755323
+2025-03-01,2025-Q1,tot,tot_all,All items,qoq,0.473402
+2025-06-01,2025-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,4.680843
+2025-06-01,2025-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,-0.648564
+2025-06-01,2025-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,6.465732
+2025-06-01,2025-Q2,ppi,ppi_agri_crops,Agriculture and related services,yoy,4.974789
+2025-06-01,2025-Q2,ppi,ppi_agri_crops,Agriculture and related services,qoq,-0.785262
+2025-06-01,2025-Q2,ppi,ppi_agri_crops,Agriculture and related services,ytd_avg,7.353999
+2025-06-01,2025-Q2,ppi,ppi_forestry,Forestry and related services,yoy,3.350615
+2025-06-01,2025-Q2,ppi,ppi_forestry,Forestry and related services,qoq,0.097701
+2025-06-01,2025-Q2,ppi,ppi_forestry,Forestry and related services,ytd_avg,3.655041
+2025-06-01,2025-Q2,ppi,ppi_fishery,Fishing and aquaculture,yoy,3.715105
+2025-06-01,2025-Q2,ppi,ppi_fishery,Fishing and aquaculture,qoq,-0.349785
+2025-06-01,2025-Q2,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,3.820746
+2025-06-01,2025-Q2,ppi,ppi_industry,Industry,yoy,1.650108
+2025-06-01,2025-Q2,ppi,ppi_industry,Industry,qoq,0.560074
+2025-06-01,2025-Q2,ppi,ppi_industry,Industry,ytd_avg,1.947023
+2025-06-01,2025-Q2,ppi,ppi_mining,Mining and quarrying,yoy,-7.046685
+2025-06-01,2025-Q2,ppi,ppi_mining,Mining and quarrying,qoq,-3.33739
+2025-06-01,2025-Q2,ppi,ppi_mining,Mining and quarrying,ytd_avg,-3.553792
+2025-06-01,2025-Q2,ppi,ppi_manufacturing,Manufacturing,yoy,1.696122
+2025-06-01,2025-Q2,ppi,ppi_manufacturing,Manufacturing,qoq,0.727954
+2025-06-01,2025-Q2,ppi,ppi_manufacturing,Manufacturing,ytd_avg,1.855353
+2025-06-01,2025-Q2,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",yoy,9.82859
+2025-06-01,2025-Q2,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",qoq,0.377648
+2025-06-01,2025-Q2,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",ytd_avg,10.269146
+2025-06-01,2025-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,1.682812
+2025-06-01,2025-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.395254
+2025-06-01,2025-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,2.075165
+2025-06-01,2025-Q2,ppi,ppi_services,Services,yoy,5.116008
+2025-06-01,2025-Q2,ppi,ppi_services,Services,qoq,0.579383
+2025-06-01,2025-Q2,ppi,ppi_services,Services,ytd_avg,4.928386
+2025-06-01,2025-Q2,ppi,ppi_svc_transport,Transport and storage,yoy,6.23265
+2025-06-01,2025-Q2,ppi,ppi_svc_transport,Transport and storage,qoq,0.876684
+2025-06-01,2025-Q2,ppi,ppi_svc_transport,Transport and storage,ytd_avg,6.225529
+2025-06-01,2025-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,4.827531
+2025-06-01,2025-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,1.500839
+2025-06-01,2025-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,4.553853
+2025-06-01,2025-Q2,ppi,ppi_svc_info,Information and communication,yoy,-0.185211
+2025-06-01,2025-Q2,ppi,ppi_svc_info,Information and communication,qoq,-0.155234
+2025-06-01,2025-Q2,ppi,ppi_svc_info,Information and communication,ytd_avg,0.025545
+2025-06-01,2025-Q2,ppi,ppi_svc_education,Education and training,yoy,3.13133
+2025-06-01,2025-Q2,ppi,ppi_svc_education,Education and training,qoq,-0.004667
+2025-06-01,2025-Q2,ppi,ppi_svc_education,Education and training,ytd_avg,1.109076
+2025-06-01,2025-Q2,ppi,ppi_svc_health,Health and social work,yoy,18.335293
+2025-06-01,2025-Q2,ppi,ppi_svc_health,Health and social work,qoq,0.362138
+2025-06-01,2025-Q2,ppi,ppi_svc_health,Health and social work,ytd_avg,18.972269
+2025-06-01,2025-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,0.790734
+2025-06-01,2025-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.440984
+2025-06-01,2025-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,0.727911
+2025-06-01,2025-Q2,transport,transport_all,All items,yoy,6.23265
+2025-06-01,2025-Q2,transport,transport_all,All items,qoq,0.876684
+2025-06-01,2025-Q2,transport,transport_all,All items,ytd_avg,6.225529
+2025-06-01,2025-Q2,input,input_all,All items,yoy,3.702304
+2025-06-01,2025-Q2,input,input_all,All items,qoq,0.67294
+2025-06-01,2025-Q2,input,input_all,All items,ytd_avg,3.836295
+2025-06-01,2025-Q2,input,input_for_agri,"Used for agriculture, forestry and fishing",yoy,1.700475
+2025-06-01,2025-Q2,input,input_for_agri,"Used for agriculture, forestry and fishing",qoq,0.326431
+2025-06-01,2025-Q2,input,input_for_agri,"Used for agriculture, forestry and fishing",ytd_avg,1.784331
+2025-06-01,2025-Q2,input,input_for_manuf,Used for manufacturing,yoy,4.108015
+2025-06-01,2025-Q2,input,input_for_manuf,Used for manufacturing,qoq,0.671548
+2025-06-01,2025-Q2,input,input_for_manuf,Used for manufacturing,ytd_avg,4.250105
+2025-06-01,2025-Q2,input,input_for_constr,Used for construction,yoy,1.292451
+2025-06-01,2025-Q2,input,input_for_constr,Used for construction,qoq,0.72022
+2025-06-01,2025-Q2,input,input_for_constr,Used for construction,ytd_avg,1.200433
+2025-06-01,2025-Q2,export,export_all,All items,yoy,2.46492
+2025-06-01,2025-Q2,export,export_all,All items,qoq,-0.591503
+2025-06-01,2025-Q2,export,export_all,All items,ytd_avg,3.68052
+2025-06-01,2025-Q2,export,export_agri_food,Agricultural products and food,yoy,14.995724
+2025-06-01,2025-Q2,export,export_agri_food,Agricultural products and food,qoq,0.533862
+2025-06-01,2025-Q2,export,export_agri_food,Agricultural products and food,ytd_avg,16.935677
+2025-06-01,2025-Q2,export,export_fuel,Fuels,yoy,-15.453117
+2025-06-01,2025-Q2,export,export_fuel,Fuels,qoq,-3.008422
+2025-06-01,2025-Q2,export,export_fuel,Fuels,ytd_avg,-12.287519
+2025-06-01,2025-Q2,export,export_manufactured,Other manufactured goods,yoy,1.393516
+2025-06-01,2025-Q2,export,export_manufactured,Other manufactured goods,qoq,-0.691163
+2025-06-01,2025-Q2,export,export_manufactured,Other manufactured goods,ytd_avg,2.468628
+2025-06-01,2025-Q2,import,import_all,All items,yoy,-1.559746
+2025-06-01,2025-Q2,import,import_all,All items,qoq,-0.304141
+2025-06-01,2025-Q2,import,import_all,All items,ytd_avg,-1.567074
+2025-06-01,2025-Q2,import,import_agri_food,Agricultural products and food,yoy,2.944293
+2025-06-01,2025-Q2,import,import_agri_food,Agricultural products and food,qoq,-0.301361
+2025-06-01,2025-Q2,import,import_agri_food,Agricultural products and food,ytd_avg,3.177789
+2025-06-01,2025-Q2,import,import_fuel,Fuels,yoy,-8.282797
+2025-06-01,2025-Q2,import,import_fuel,Fuels,qoq,-3.471276
+2025-06-01,2025-Q2,import,import_fuel,Fuels,ytd_avg,-7.289061
+2025-06-01,2025-Q2,import,import_manufactured,Other manufactured goods,yoy,-1.271424
+2025-06-01,2025-Q2,import,import_manufactured,Other manufactured goods,qoq,-0.112553
+2025-06-01,2025-Q2,import,import_manufactured,Other manufactured goods,ytd_avg,-1.347397
+2025-06-01,2025-Q2,tot,tot_all,All items,yoy,4.088435
+2025-06-01,2025-Q2,tot,tot_all,All items,qoq,-0.288239
+2025-06-01,2025-Q2,tot,tot_all,All items,ytd_avg,5.331136
+2025-09-01,2025-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,1.872313
+2025-09-01,2025-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,-1.25471
+2025-09-01,2025-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,4.912029
+2025-09-01,2025-Q3,ppi,ppi_agri_crops,Agriculture and related services,yoy,0.600569
+2025-09-01,2025-Q3,ppi,ppi_agri_crops,Agriculture and related services,qoq,-1.911862
+2025-09-01,2025-Q3,ppi,ppi_agri_crops,Agriculture and related services,ytd_avg,5.053929
+2025-09-01,2025-Q3,ppi,ppi_forestry,Forestry and related services,yoy,3.286436
+2025-09-01,2025-Q3,ppi,ppi_forestry,Forestry and related services,qoq,0.474962
+2025-09-01,2025-Q3,ppi,ppi_forestry,Forestry and related services,ytd_avg,3.532027
+2025-09-01,2025-Q3,ppi,ppi_fishery,Fishing and aquaculture,yoy,5.525041
+2025-09-01,2025-Q3,ppi,ppi_fishery,Fishing and aquaculture,qoq,0.405677
+2025-09-01,2025-Q3,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,4.385764
+2025-09-01,2025-Q3,ppi,ppi_industry,Industry,yoy,2.731793
+2025-09-01,2025-Q3,ppi,ppi_industry,Industry,qoq,1.0598
+2025-09-01,2025-Q3,ppi,ppi_industry,Industry,ytd_avg,2.234106
+2025-09-01,2025-Q3,ppi,ppi_mining,Mining and quarrying,yoy,-3.11524
+2025-09-01,2025-Q3,ppi,ppi_mining,Mining and quarrying,qoq,2.311374
+2025-09-01,2025-Q3,ppi,ppi_mining,Mining and quarrying,ytd_avg,-3.407829
+2025-09-01,2025-Q3,ppi,ppi_manufacturing,Manufacturing,yoy,2.774286
+2025-09-01,2025-Q3,ppi,ppi_manufacturing,Manufacturing,qoq,1.018981
+2025-09-01,2025-Q3,ppi,ppi_manufacturing,Manufacturing,ytd_avg,2.189127
+2025-09-01,2025-Q3,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",yoy,7.961975
+2025-09-01,2025-Q3,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",qoq,0.994519
+2025-09-01,2025-Q3,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",ytd_avg,9.494662
+2025-09-01,2025-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,1.509499
+2025-09-01,2025-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.291459
+2025-09-01,2025-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,1.88626
+2025-09-01,2025-Q3,ppi,ppi_services,Services,yoy,5.297022
+2025-09-01,2025-Q3,ppi,ppi_services,Services,qoq,0.859259
+2025-09-01,2025-Q3,ppi,ppi_services,Services,ytd_avg,5.053423
+2025-09-01,2025-Q3,ppi,ppi_svc_transport,Transport and storage,yoy,7.20528
+2025-09-01,2025-Q3,ppi,ppi_svc_transport,Transport and storage,qoq,2.189076
+2025-09-01,2025-Q3,ppi,ppi_svc_transport,Transport and storage,ytd_avg,6.551254
+2025-09-01,2025-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,5.011804
+2025-09-01,2025-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,1.153428
+2025-09-01,2025-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,4.708422
+2025-09-01,2025-Q3,ppi,ppi_svc_info,Information and communication,yoy,0.337976
+2025-09-01,2025-Q3,ppi,ppi_svc_info,Information and communication,qoq,0.031937
+2025-09-01,2025-Q3,ppi,ppi_svc_info,Information and communication,ytd_avg,0.12958
+2025-09-01,2025-Q3,ppi,ppi_svc_education,Education and training,yoy,2.57358
+2025-09-01,2025-Q3,ppi,ppi_svc_education,Education and training,qoq,0.214343
+2025-09-01,2025-Q3,ppi,ppi_svc_education,Education and training,ytd_avg,1.595018
+2025-09-01,2025-Q3,ppi,ppi_svc_health,Health and social work,yoy,16.703503
+2025-09-01,2025-Q3,ppi,ppi_svc_health,Health and social work,qoq,0.003867
+2025-09-01,2025-Q3,ppi,ppi_svc_health,Health and social work,ytd_avg,18.211667
+2025-09-01,2025-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,1.406429
+2025-09-01,2025-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.482897
+2025-09-01,2025-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,0.938625
+2025-09-01,2025-Q3,transport,transport_all,All items,yoy,7.20528
+2025-09-01,2025-Q3,transport,transport_all,All items,qoq,2.189076
+2025-09-01,2025-Q3,transport,transport_all,All items,ytd_avg,6.551254
+2025-09-01,2025-Q3,input,input_all,All items,yoy,4.603401
+2025-09-01,2025-Q3,input,input_all,All items,qoq,1.290334
+2025-09-01,2025-Q3,input,input_all,All items,ytd_avg,4.09137
+2025-09-01,2025-Q3,input,input_for_agri,"Used for agriculture, forestry and fishing",yoy,2.655345
+2025-09-01,2025-Q3,input,input_for_agri,"Used for agriculture, forestry and fishing",qoq,1.173228
+2025-09-01,2025-Q3,input,input_for_agri,"Used for agriculture, forestry and fishing",ytd_avg,2.073845
+2025-09-01,2025-Q3,input,input_for_manuf,Used for manufacturing,yoy,4.804406
+2025-09-01,2025-Q3,input,input_for_manuf,Used for manufacturing,qoq,1.134204
+2025-09-01,2025-Q3,input,input_for_manuf,Used for manufacturing,ytd_avg,4.434545
+2025-09-01,2025-Q3,input,input_for_constr,Used for construction,yoy,4.639766
+2025-09-01,2025-Q3,input,input_for_constr,Used for construction,qoq,3.119272
+2025-09-01,2025-Q3,input,input_for_constr,Used for construction,ytd_avg,2.33413
+2025-09-01,2025-Q3,export,export_all,All items,yoy,0.310257
+2025-09-01,2025-Q3,export,export_all,All items,qoq,0.105004
+2025-09-01,2025-Q3,export,export_all,All items,ytd_avg,4.456463
+2025-09-01,2025-Q3,export,export_agri_food,Agricultural products and food,yoy,6.582916
+2025-09-01,2025-Q3,export,export_agri_food,Agricultural products and food,qoq,-5.149977
+2025-09-01,2025-Q3,export,export_agri_food,Agricultural products and food,ytd_avg,16.783233
+2025-09-01,2025-Q3,export,export_fuel,Fuels,yoy,-22.232673
+2025-09-01,2025-Q3,export,export_fuel,Fuels,qoq,-7.737058
+2025-09-01,2025-Q3,export,export_fuel,Fuels,ytd_avg,-17.517126
+2025-09-01,2025-Q3,export,export_manufactured,Other manufactured goods,yoy,0.135294
+2025-09-01,2025-Q3,export,export_manufactured,Other manufactured goods,qoq,1.081016
+2025-09-01,2025-Q3,export,export_manufactured,Other manufactured goods,ytd_avg,3.515806
+2025-09-01,2025-Q3,import,import_all,All items,yoy,0.168204
+2025-09-01,2025-Q3,import,import_all,All items,qoq,-0.930897
+2025-09-01,2025-Q3,import,import_all,All items,ytd_avg,1.022896
+2025-09-01,2025-Q3,import,import_agri_food,Agricultural products and food,yoy,5.40413
+2025-09-01,2025-Q3,import,import_agri_food,Agricultural products and food,qoq,-1.222897
+2025-09-01,2025-Q3,import,import_agri_food,Agricultural products and food,ytd_avg,6.295239
+2025-09-01,2025-Q3,import,import_fuel,Fuels,yoy,-5.704701
+2025-09-01,2025-Q3,import,import_fuel,Fuels,qoq,-1.306287
+2025-09-01,2025-Q3,import,import_fuel,Fuels,ytd_avg,-6.579122
+2025-09-01,2025-Q3,import,import_manufactured,Other manufactured goods,yoy,0.36372
+2025-09-01,2025-Q3,import,import_manufactured,Other manufactured goods,qoq,-0.900527
+2025-09-01,2025-Q3,import,import_manufactured,Other manufactured goods,ytd_avg,1.338439
+2025-09-01,2025-Q3,tot,tot_all,All items,yoy,0.141815
+2025-09-01,2025-Q3,tot,tot_all,All items,qoq,1.045635
+2025-09-01,2025-Q3,tot,tot_all,All items,ytd_avg,3.3988
+2025-12-01,2025-Q4,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,1.353427
+2025-12-01,2025-Q4,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,1.548047
+2025-12-01,2025-Q4,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,4.010833
+2025-12-01,2025-Q4,ppi,ppi_agri_crops,Agriculture and related services,yoy,0.194266
+2025-12-01,2025-Q4,ppi,ppi_agri_crops,Agriculture and related services,qoq,1.645839
+2025-12-01,2025-Q4,ppi,ppi_agri_crops,Agriculture and related services,ytd_avg,3.81735
+2025-12-01,2025-Q4,ppi,ppi_forestry,Forestry and related services,yoy,3.761891
+2025-12-01,2025-Q4,ppi,ppi_forestry,Forestry and related services,qoq,1.493597
+2025-12-01,2025-Q4,ppi,ppi_forestry,Forestry and related services,ytd_avg,3.589445
+2025-12-01,2025-Q4,ppi,ppi_fishery,Fishing and aquaculture,yoy,4.544363
+2025-12-01,2025-Q4,ppi,ppi_fishery,Fishing and aquaculture,qoq,1.280978
+2025-12-01,2025-Q4,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,4.425391
+2025-12-01,2025-Q4,ppi,ppi_industry,Industry,yoy,3.502925
+2025-12-01,2025-Q4,ppi,ppi_industry,Industry,qoq,0.514803
+2025-12-01,2025-Q4,ppi,ppi_industry,Industry,ytd_avg,2.549845
+2025-12-01,2025-Q4,ppi,ppi_mining,Mining and quarrying,yoy,-2.636014
+2025-12-01,2025-Q4,ppi,ppi_mining,Mining and quarrying,qoq,-2.218376
+2025-12-01,2025-Q4,ppi,ppi_mining,Mining and quarrying,ytd_avg,-3.215451
+2025-12-01,2025-Q4,ppi,ppi_manufacturing,Manufacturing,yoy,3.586148
+2025-12-01,2025-Q4,ppi,ppi_manufacturing,Manufacturing,qoq,0.550547
+2025-12-01,2025-Q4,ppi,ppi_manufacturing,Manufacturing,ytd_avg,2.536606
+2025-12-01,2025-Q4,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",yoy,8.293238
+2025-12-01,2025-Q4,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",qoq,2.469274
+2025-12-01,2025-Q4,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",ytd_avg,9.193062
+2025-12-01,2025-Q4,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,1.340842
+2025-12-01,2025-Q4,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.013064
+2025-12-01,2025-Q4,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,1.749631
+2025-12-01,2025-Q4,ppi,ppi_services,Services,yoy,5.096226
+2025-12-01,2025-Q4,ppi,ppi_services,Services,qoq,0.571169
+2025-12-01,2025-Q4,ppi,ppi_services,Services,ytd_avg,5.088108
+2025-12-01,2025-Q4,ppi,ppi_svc_transport,Transport and storage,yoy,5.937336
+2025-12-01,2025-Q4,ppi,ppi_svc_transport,Transport and storage,qoq,-0.252291
+2025-12-01,2025-Q4,ppi,ppi_svc_transport,Transport and storage,ytd_avg,6.397711
+2025-12-01,2025-Q4,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,5.089824
+2025-12-01,2025-Q4,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,0.752539
+2025-12-01,2025-Q4,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,4.817649
+2025-12-01,2025-Q4,ppi,ppi_svc_info,Information and communication,yoy,0.379608
+2025-12-01,2025-Q4,ppi,ppi_svc_info,Information and communication,qoq,0.003786
+2025-12-01,2025-Q4,ppi,ppi_svc_info,Information and communication,ytd_avg,0.192029
+2025-12-01,2025-Q4,ppi,ppi_svc_education,Education and training,yoy,3.370625
+2025-12-01,2025-Q4,ppi,ppi_svc_education,Education and training,qoq,2.305268
+2025-12-01,2025-Q4,ppi,ppi_svc_education,Education and training,ytd_avg,2.222701
+2025-12-01,2025-Q4,ppi,ppi_svc_health,Health and social work,yoy,15.574311
+2025-12-01,2025-Q4,ppi,ppi_svc_health,Health and social work,qoq,0.034836
+2025-12-01,2025-Q4,ppi,ppi_svc_health,Health and social work,ytd_avg,17.546945
+2025-12-01,2025-Q4,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,1.447024
+2025-12-01,2025-Q4,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.33111
+2025-12-01,2025-Q4,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,1.062961
+2025-12-01,2025-Q4,transport,transport_all,All items,yoy,5.937336
+2025-12-01,2025-Q4,transport,transport_all,All items,qoq,-0.252291
+2025-12-01,2025-Q4,transport,transport_all,All items,ytd_avg,6.397711
+2025-12-01,2025-Q4,input,input_all,All items,yoy,5.157383
+2025-12-01,2025-Q4,input,input_all,All items,qoq,1.274548
+2025-12-01,2025-Q4,input,input_all,All items,ytd_avg,4.356856
+2025-12-01,2025-Q4,input,input_for_agri,"Used for agriculture, forestry and fishing",yoy,3.096579
+2025-12-01,2025-Q4,input,input_for_agri,"Used for agriculture, forestry and fishing",qoq,0.421265
+2025-12-01,2025-Q4,input,input_for_agri,"Used for agriculture, forestry and fishing",ytd_avg,2.328573
+2025-12-01,2025-Q4,input,input_for_manuf,Used for manufacturing,yoy,5.255588
+2025-12-01,2025-Q4,input,input_for_manuf,Used for manufacturing,qoq,1.30333
+2025-12-01,2025-Q4,input,input_for_manuf,Used for manufacturing,ytd_avg,4.38392
+2025-12-01,2025-Q4,input,input_for_constr,Used for construction,yoy,5.413658
+2025-12-01,2025-Q4,input,input_for_constr,Used for construction,qoq,0.769375
+2025-12-01,2025-Q4,input,input_for_constr,Used for construction,ytd_avg,3.095473
+2025-12-01,2025-Q4,export,export_all,All items,yoy,0.7455
+2025-12-01,2025-Q4,export,export_all,All items,qoq,-0.597993
+2025-12-01,2025-Q4,export,export_all,All items,ytd_avg,3.624667
+2025-12-01,2025-Q4,export,export_agri_food,Agricultural products and food,yoy,2.102464
+2025-12-01,2025-Q4,export,export_agri_food,Agricultural products and food,qoq,1.646452
+2025-12-01,2025-Q4,export,export_agri_food,Agricultural products and food,ytd_avg,12.926125
+2025-12-01,2025-Q4,export,export_fuel,Fuels,yoy,-19.221815
+2025-12-01,2025-Q4,export,export_fuel,Fuels,qoq,-4.066736
+2025-12-01,2025-Q4,export,export_fuel,Fuels,ytd_avg,-17.946642
+2025-12-01,2025-Q4,export,export_manufactured,Other manufactured goods,yoy,0.920633
+2025-12-01,2025-Q4,export,export_manufactured,Other manufactured goods,qoq,-0.869594
+2025-12-01,2025-Q4,export,export_manufactured,Other manufactured goods,ytd_avg,2.872068
+2025-12-01,2025-Q4,import,import_all,All items,yoy,0.740856
+2025-12-01,2025-Q4,import,import_all,All items,qoq,-0.073994
+2025-12-01,2025-Q4,import,import_all,All items,ytd_avg,1.097934
+2025-12-01,2025-Q4,import,import_agri_food,Agricultural products and food,yoy,3.281008
+2025-12-01,2025-Q4,import,import_agri_food,Agricultural products and food,qoq,0.255255
+2025-12-01,2025-Q4,import,import_agri_food,Agricultural products and food,ytd_avg,5.533533
+2025-12-01,2025-Q4,import,import_fuel,Fuels,yoy,-7.288563
+2025-12-01,2025-Q4,import,import_fuel,Fuels,qoq,-2.894351
+2025-12-01,2025-Q4,import,import_fuel,Fuels,ytd_avg,-5.600299
+2025-12-01,2025-Q4,import,import_manufactured,Other manufactured goods,yoy,1.117402
+2025-12-01,2025-Q4,import,import_manufactured,Other manufactured goods,qoq,0.135266
+2025-12-01,2025-Q4,import,import_manufactured,Other manufactured goods,ytd_avg,1.283034
+2025-12-01,2025-Q4,tot,tot_all,All items,yoy,0.00461
+2025-12-01,2025-Q4,tot,tot_all,All items,qoq,-0.524387
+2025-12-01,2025-Q4,tot,tot_all,All items,ytd_avg,2.499292
+2026-03-01,2026-Q1,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,4.502298
+2026-03-01,2026-Q1,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,5.389085
+2026-03-01,2026-Q1,ppi,ppi_agri_crops,Agriculture and related services,yoy,4.492471
+2026-03-01,2026-Q1,ppi,ppi_agri_crops,Agriculture and related services,qoq,6.199143
+2026-03-01,2026-Q1,ppi,ppi_forestry,Forestry and related services,yoy,3.728109
+2026-03-01,2026-Q1,ppi,ppi_forestry,Forestry and related services,qoq,2.411201
+2026-03-01,2026-Q1,ppi,ppi_fishery,Fishing and aquaculture,yoy,4.275363
+2026-03-01,2026-Q1,ppi,ppi_fishery,Fishing and aquaculture,qoq,2.685839
+2026-03-01,2026-Q1,ppi,ppi_industry,Industry,yoy,2.950904
+2026-03-01,2026-Q1,ppi,ppi_industry,Industry,qoq,0.680511
+2026-03-01,2026-Q1,ppi,ppi_mining,Mining and quarrying,yoy,-3.585139
+2026-03-01,2026-Q1,ppi,ppi_mining,Mining and quarrying,qoq,-0.052387
+2026-03-01,2026-Q1,ppi,ppi_manufacturing,Manufacturing,yoy,3.133455
+2026-03-01,2026-Q1,ppi,ppi_manufacturing,Manufacturing,qoq,0.688091
+2026-03-01,2026-Q1,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",yoy,5.227125
+2026-03-01,2026-Q1,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",qoq,0.973609
+2026-03-01,2026-Q1,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,2.727291
+2026-03-01,2026-Q1,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,2.009392
+2026-03-01,2026-Q1,ppi,ppi_services,Services,yoy,4.065418
+2026-03-01,2026-Q1,ppi,ppi_services,Services,qoq,2.07852
+2026-03-01,2026-Q1,ppi,ppi_svc_transport,Transport and storage,yoy,8.770974
+2026-03-01,2026-Q1,ppi,ppi_svc_transport,Transport and storage,qoq,5.750984
+2026-03-01,2026-Q1,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,5.291827
+2026-03-01,2026-Q1,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,2.196233
+2026-03-01,2026-Q1,ppi,ppi_svc_info,Information and communication,yoy,-0.060718
+2026-03-01,2026-Q1,ppi,ppi_svc_info,Information and communication,qoq,0.054705
+2026-03-01,2026-Q1,ppi,ppi_svc_education,Education and training,yoy,3.41664
+2026-03-01,2026-Q1,ppi,ppi_svc_education,Education and training,qoq,0.153763
+2026-03-01,2026-Q1,ppi,ppi_svc_health,Health and social work,yoy,0.631001
+2026-03-01,2026-Q1,ppi,ppi_svc_health,Health and social work,qoq,0.37842
+2026-03-01,2026-Q1,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,1.515329
+2026-03-01,2026-Q1,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.360147
+2026-03-01,2026-Q1,input,input_all,All items,yoy,4.762377
+2026-03-01,2026-Q1,input,input_all,All items,qoq,1.443512
+2026-03-01,2026-Q1,input,input_for_agri,"Used for agriculture, forestry and fishing",yoy,3.839876
+2026-03-01,2026-Q1,input,input_for_agri,"Used for agriculture, forestry and fishing",qoq,1.872628
+2026-03-01,2026-Q1,input,input_for_manuf,Used for manufacturing,yoy,4.637115
+2026-03-01,2026-Q1,input,input_for_manuf,Used for manufacturing,qoq,1.415121
+2026-03-01,2026-Q1,input,input_for_constr,Used for construction,yoy,6.320931
+2026-03-01,2026-Q1,input,input_for_constr,Used for construction,qoq,1.585963
+2026-03-01,2026-Q1,transport,transport_all,All items,yoy,8.770974
+2026-03-01,2026-Q1,transport,transport_all,All items,qoq,5.750984
+2026-03-01,2026-Q1,export,export_all,All items,yoy,-0.17627
+2026-03-01,2026-Q1,export,export_all,All items,qoq,0.311349
+2026-03-01,2026-Q1,export,export_agri_food,Agricultural products and food,yoy,-5.330827
+2026-03-01,2026-Q1,export,export_agri_food,Agricultural products and food,qoq,-1.619961
+2026-03-01,2026-Q1,export,export_fuel,Fuels,yoy,-16.041616
+2026-03-01,2026-Q1,export,export_fuel,Fuels,qoq,-2.715138
+2026-03-01,2026-Q1,export,export_manufactured,Other manufactured goods,yoy,0.981826
+2026-03-01,2026-Q1,export,export_manufactured,Other manufactured goods,qoq,0.662617
+2026-03-01,2026-Q1,import,import_all,All items,yoy,-1.419297
+2026-03-01,2026-Q1,import,import_all,All items,qoq,0.629962
+2026-03-01,2026-Q1,import,import_agri_food,Agricultural products and food,yoy,-1.108209
+2026-03-01,2026-Q1,import,import_agri_food,Agricultural products and food,qoq,0.325739
+2026-03-01,2026-Q1,import,import_fuel,Fuels,yoy,-6.080452
+2026-03-01,2026-Q1,import,import_fuel,Fuels,qoq,1.309966
+2026-03-01,2026-Q1,import,import_manufactured,Other manufactured goods,yoy,-1.054136
+2026-03-01,2026-Q1,import,import_manufactured,Other manufactured goods,qoq,0.589538
+2026-03-01,2026-Q1,tot,tot_all,All items,yoy,1.260923
+2026-03-01,2026-Q1,tot,tot_all,All items,qoq,-0.316618
+2026-06-01,2026-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,3.638811
+2026-06-01,2026-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,-2.2401
+2026-06-01,2026-Q2,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,4.070231
+2026-06-01,2026-Q2,ppi,ppi_agri_crops,Agriculture and related services,yoy,3.217722
+2026-06-01,2026-Q2,ppi,ppi_agri_crops,Agriculture and related services,qoq,-2.935685
+2026-06-01,2026-Q2,ppi,ppi_agri_crops,Agriculture and related services,ytd_avg,3.853012
+2026-06-01,2026-Q2,ppi,ppi_forestry,Forestry and related services,yoy,5.731278
+2026-06-01,2026-Q2,ppi,ppi_forestry,Forestry and related services,qoq,2.071659
+2026-06-01,2026-Q2,ppi,ppi_forestry,Forestry and related services,ytd_avg,4.724904
+2026-06-01,2026-Q2,ppi,ppi_fishery,Fishing and aquaculture,yoy,4.646681
+2026-06-01,2026-Q2,ppi,ppi_fishery,Fishing and aquaculture,qoq,-0.180777
+2026-06-01,2026-Q2,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,4.460857
+2026-06-01,2026-Q2,ppi,ppi_industry,Industry,yoy,5.403151
+2026-06-01,2026-Q2,ppi,ppi_industry,Industry,qoq,3.050804
+2026-06-01,2026-Q2,ppi,ppi_industry,Industry,ytd_avg,4.182
+2026-06-01,2026-Q2,ppi,ppi_mining,Mining and quarrying,yoy,17.223887
+2026-06-01,2026-Q2,ppi,ppi_mining,Mining and quarrying,qoq,17.490021
+2026-06-01,2026-Q2,ppi,ppi_mining,Mining and quarrying,ytd_avg,6.3121
+2026-06-01,2026-Q2,ppi,ppi_manufacturing,Manufacturing,yoy,4.942024
+2026-06-01,2026-Q2,ppi,ppi_manufacturing,Manufacturing,qoq,2.568842
+2026-06-01,2026-Q2,ppi,ppi_manufacturing,Manufacturing,ytd_avg,4.0823
+2026-06-01,2026-Q2,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",yoy,6.084431
+2026-06-01,2026-Q2,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",qoq,1.913594
+2026-06-01,2026-Q2,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",ytd_avg,4.7546
+2026-06-01,2026-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,3.847179
+2026-06-01,2026-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,1.297204
+2026-06-01,2026-Q2,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,3.3869
+2026-06-01,2026-Q2,ppi,ppi_services,Services,yoy,5.266931
+2026-06-01,2026-Q2,ppi,ppi_services,Services,qoq,2.436865
+2026-06-01,2026-Q2,ppi,ppi_services,Services,ytd_avg,4.1674
+2026-06-01,2026-Q2,ppi,ppi_svc_transport,Transport and storage,yoy,10.543381
+2026-06-01,2026-Q2,ppi,ppi_svc_transport,Transport and storage,qoq,6.378947
+2026-06-01,2026-Q2,ppi,ppi_svc_transport,Transport and storage,ytd_avg,7.262
+2026-06-01,2026-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,8.353893
+2026-06-01,2026-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,3.530859
+2026-06-01,2026-Q2,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,7.0482
+2026-06-01,2026-Q2,ppi,ppi_svc_info,Information and communication,yoy,0.379317
+2026-06-01,2026-Q2,ppi,ppi_svc_info,Information and communication,qoq,0.204919
+2026-06-01,2026-Q2,ppi,ppi_svc_info,Information and communication,ytd_avg,0.2007
+2026-06-01,2026-Q2,ppi,ppi_svc_education,Education and training,yoy,3.568197
+2026-06-01,2026-Q2,ppi,ppi_svc_education,Education and training,qoq,0.143004
+2026-06-01,2026-Q2,ppi,ppi_svc_education,Education and training,ytd_avg,3.4931
+2026-06-01,2026-Q2,ppi,ppi_svc_health,Health and social work,yoy,0.743996
+2026-06-01,2026-Q2,ppi,ppi_svc_health,Health and social work,qoq,0.267068
+2026-06-01,2026-Q2,ppi,ppi_svc_health,Health and social work,ytd_avg,0.7193
+2026-06-01,2026-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,1.940942
+2026-06-01,2026-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.822786
+2026-06-01,2026-Q2,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,1.7193
+2026-06-01,2026-Q2,input,input_all,All items,yoy,6.042763
+2026-06-01,2026-Q2,input,input_all,All items,qoq,1.910211
+2026-06-01,2026-Q2,input,input_all,All items,ytd_avg,5.397104
+2026-06-01,2026-Q2,input,input_for_agri,"Used for agriculture, forestry and fishing",yoy,4.913944
+2026-06-01,2026-Q2,input,input_for_agri,"Used for agriculture, forestry and fishing",qoq,0.665166
+2026-06-01,2026-Q2,input,input_for_agri,"Used for agriculture, forestry and fishing",ytd_avg,4.795989
+2026-06-01,2026-Q2,input,input_for_manuf,Used for manufacturing,yoy,6.025319
+2026-06-01,2026-Q2,input,input_for_manuf,Used for manufacturing,qoq,2.06632
+2026-06-01,2026-Q2,input,input_for_manuf,Used for manufacturing,ytd_avg,5.260053
+2026-06-01,2026-Q2,input,input_for_constr,Used for construction,yoy,3.800561
+2026-06-01,2026-Q2,input,input_for_constr,Used for construction,qoq,1.869528
+2026-06-01,2026-Q2,input,input_for_constr,Used for construction,ytd_avg,3.09291
+2026-06-01,2026-Q2,transport,transport_all,All items,yoy,10.543381
+2026-06-01,2026-Q2,transport,transport_all,All items,qoq,6.378947
+2026-06-01,2026-Q2,transport,transport_all,All items,ytd_avg,7.262
+2026-06-01,2026-Q2,export,export_all,All items,yoy,1.539328
+2026-06-01,2026-Q2,export,export_all,All items,qoq,1.704097
+2026-06-01,2026-Q2,export,export_all,All items,ytd_avg,0.677875
+2026-06-01,2026-Q2,export,export_agri_food,Agricultural products and food,yoy,-6.61247
+2026-06-01,2026-Q2,export,export_agri_food,Agricultural products and food,qoq,-1.541723
+2026-06-01,2026-Q2,export,export_agri_food,Agricultural products and food,ytd_avg,-5.973832
+2026-06-01,2026-Q2,export,export_fuel,Fuels,yoy,7.148481
+2026-06-01,2026-Q2,export,export_fuel,Fuels,qoq,24.435481
+2026-06-01,2026-Q2,export,export_fuel,Fuels,ytd_avg,-5.152684
+2026-06-01,2026-Q2,export,export_manufactured,Other manufactured goods,yoy,2.726859
+2026-06-01,2026-Q2,export,export_manufactured,Other manufactured goods,qoq,1.79517
+2026-06-01,2026-Q2,export,export_manufactured,Other manufactured goods,ytd_avg,1.850605
+2026-06-01,2026-Q2,import,import_all,All items,yoy,3.305501
+2026-06-01,2026-Q2,import,import_all,All items,qoq,3.744893
+2026-06-01,2026-Q2,import,import_all,All items,ytd_avg,0.915454
+2026-06-01,2026-Q2,import,import_agri_food,Agricultural products and food,yoy,1.01655
+2026-06-01,2026-Q2,import,import_agri_food,Agricultural products and food,qoq,1.675599
+2026-06-01,2026-Q2,import,import_agri_food,Agricultural products and food,ytd_avg,-0.051475
+2026-06-01,2026-Q2,import,import_fuel,Fuels,yoy,2.786382
+2026-06-01,2026-Q2,import,import_fuel,Fuels,qoq,6.373069
+2026-06-01,2026-Q2,import,import_fuel,Fuels,ytd_avg,-1.747008
+2026-06-01,2026-Q2,import,import_manufactured,Other manufactured goods,yoy,3.432442
+2026-06-01,2026-Q2,import,import_manufactured,Other manufactured goods,qoq,3.620442
+2026-06-01,2026-Q2,import,import_manufactured,Other manufactured goods,ytd_avg,1.164284
+2026-06-01,2026-Q2,tot,tot_all,All items,yoy,-1.70966
+2026-06-01,2026-Q2,tot,tot_all,All items,qoq,-1.967129
+2026-06-01,2026-Q2,tot,tot_all,All items,ytd_avg,-0.235424
+2026-09-01,2026-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",yoy,4.200842
+2026-09-01,2026-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",qoq,-1.156774
+2026-09-01,2026-Q3,ppi,ppi_agriculture,"Agriculture, forestry and fishing",ytd_avg,4.11375
+2026-09-01,2026-Q3,ppi,ppi_agri_crops,Agriculture and related services,yoy,4.703034
+2026-09-01,2026-Q3,ppi,ppi_agri_crops,Agriculture and related services,qoq,-1.033276
+2026-09-01,2026-Q3,ppi,ppi_agri_crops,Agriculture and related services,ytd_avg,4.135583
+2026-09-01,2026-Q3,ppi,ppi_forestry,Forestry and related services,yoy,6.830209
+2026-09-01,2026-Q3,ppi,ppi_forestry,Forestry and related services,qoq,0.925797
+2026-09-01,2026-Q3,ppi,ppi_forestry,Forestry and related services,ytd_avg,5.422021
+2026-09-01,2026-Q3,ppi,ppi_fishery,Fishing and aquaculture,yoy,1.973407
+2026-09-01,2026-Q3,ppi,ppi_fishery,Fishing and aquaculture,qoq,-1.901592
+2026-09-01,2026-Q3,ppi,ppi_fishery,Fishing and aquaculture,ytd_avg,3.625037
+2026-09-01,2026-Q3,ppi,ppi_industry,Industry,yoy,4.751152
+2026-09-01,2026-Q3,ppi,ppi_industry,Industry,qoq,0.466969
+2026-09-01,2026-Q3,ppi,ppi_industry,Industry,ytd_avg,4.3713
+2026-09-01,2026-Q3,ppi,ppi_mining,Mining and quarrying,yoy,7.883212
+2026-09-01,2026-Q3,ppi,ppi_mining,Mining and quarrying,qoq,-5.914079
+2026-09-01,2026-Q3,ppi,ppi_mining,Mining and quarrying,ytd_avg,6.8333
+2026-09-01,2026-Q3,ppi,ppi_manufacturing,Manufacturing,yoy,4.678521
+2026-09-01,2026-Q3,ppi,ppi_manufacturing,Manufacturing,qoq,0.790686
+2026-09-01,2026-Q3,ppi,ppi_manufacturing,Manufacturing,ytd_avg,4.2806
+2026-09-01,2026-Q3,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",yoy,3.941743
+2026-09-01,2026-Q3,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",qoq,-0.725803
+2026-09-01,2026-Q3,ppi,ppi_electricity,"Electricity, gas, steam and air conditioning",ytd_avg,4.4829
+2026-09-01,2026-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",yoy,3.827899
+2026-09-01,2026-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",qoq,0.334244
+2026-09-01,2026-Q3,ppi,ppi_water,"Water supply, sewerage and waste management",ytd_avg,3.5337
+2026-09-01,2026-Q3,ppi,ppi_services,Services,yoy,4.140069
+2026-09-01,2026-Q3,ppi,ppi_services,Services,qoq,-0.129539
+2026-09-01,2026-Q3,ppi,ppi_services,Services,ytd_avg,4.0196
+2026-09-01,2026-Q3,ppi,ppi_svc_transport,Transport and storage,yoy,6.932819
+2026-09-01,2026-Q3,ppi,ppi_svc_transport,Transport and storage,qoq,-1.76955
+2026-09-01,2026-Q3,ppi,ppi_svc_transport,Transport and storage,ytd_avg,6.7725
+2026-09-01,2026-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,yoy,7.533542
+2026-09-01,2026-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,qoq,0.641957
+2026-09-01,2026-Q3,ppi,ppi_svc_accommodation,Accommodation and food services,ytd_avg,7.1147
+2026-09-01,2026-Q3,ppi,ppi_svc_info,Information and communication,yoy,0.343832
+2026-09-01,2026-Q3,ppi,ppi_svc_info,Information and communication,qoq,-0.002718
+2026-09-01,2026-Q3,ppi,ppi_svc_info,Information and communication,ytd_avg,0.2484
+2026-09-01,2026-Q3,ppi,ppi_svc_education,Education and training,yoy,3.535875
+2026-09-01,2026-Q3,ppi,ppi_svc_education,Education and training,qoq,0.901383
+2026-09-01,2026-Q3,ppi,ppi_svc_education,Education and training,ytd_avg,3.5131
+2026-09-01,2026-Q3,ppi,ppi_svc_health,Health and social work,yoy,0.767999
+2026-09-01,2026-Q3,ppi,ppi_svc_health,Health and social work,qoq,0.030666
+2026-09-01,2026-Q3,ppi,ppi_svc_health,Health and social work,ytd_avg,0.7348
+2026-09-01,2026-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",yoy,1.734821
+2026-09-01,2026-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",qoq,0.220097
+2026-09-01,2026-Q3,ppi,ppi_svc_arts,"Arts, entertainment and recreation",ytd_avg,1.7418
+2026-09-01,2026-Q3,transport,transport_all,All items,yoy,6.932819
+2026-09-01,2026-Q3,transport,transport_all,All items,qoq,-1.76955
+2026-09-01,2026-Q3,transport,transport_all,All items,ytd_avg,6.7725
+2026-09-01,2026-Q3,input,input_all,All items,yoy,4.567811
+2026-09-01,2026-Q3,input,input_all,All items,qoq,-0.125965
+2026-09-01,2026-Q3,input,input_all,All items,ytd_avg,5.119945
+2026-09-01,2026-Q3,input,input_for_agri,"Used for agriculture, forestry and fishing",yoy,4.274531
+2026-09-01,2026-Q3,input,input_for_agri,"Used for agriculture, forestry and fishing",qoq,-0.666318
+2026-09-01,2026-Q3,input,input_for_agri,"Used for agriculture, forestry and fishing",ytd_avg,4.62188
+2026-09-01,2026-Q3,input,input_for_manuf,Used for manufacturing,yoy,4.615745
+2026-09-01,2026-Q3,input,input_for_manuf,Used for manufacturing,qoq,-0.10905
+2026-09-01,2026-Q3,input,input_for_manuf,Used for manufacturing,ytd_avg,5.044844
+2026-09-01,2026-Q3,input,input_for_constr,Used for construction,yoy,5.188789
+2026-09-01,2026-Q3,input,input_for_constr,Used for construction,qoq,1.389123
+2026-09-01,2026-Q3,input,input_for_constr,Used for construction,ytd_avg,3.786855
+2026-09-01,2026-Q3,export,export_all,All items,yoy,5.872652
+2026-09-01,2026-Q3,export,export_all,All items,qoq,4.399909
+2026-09-01,2026-Q3,export,export_all,All items,ytd_avg,2.38051
+2026-09-01,2026-Q3,export,export_agri_food,Agricultural products and food,yoy,-0.107244
+2026-09-01,2026-Q3,export,export_agri_food,Agricultural products and food,qoq,1.457124
+2026-09-01,2026-Q3,export,export_agri_food,Agricultural products and food,ytd_avg,-4.05762
+2026-09-01,2026-Q3,export,export_fuel,Fuels,yoy,24.318035
+2026-09-01,2026-Q3,export,export_fuel,Fuels,qoq,7.047226
+2026-09-01,2026-Q3,export,export_fuel,Fuels,ytd_avg,3.799376
+2026-09-01,2026-Q3,export,export_manufactured,Other manufactured goods,yoy,6.424751
+2026-09-01,2026-Q3,export,export_manufactured,Other manufactured goods,qoq,4.770827
+2026-09-01,2026-Q3,export,export_manufactured,Other manufactured goods,ytd_avg,3.353048
+2026-09-01,2026-Q3,import,import_all,All items,yoy,5.917177
+2026-09-01,2026-Q3,import,import_all,All items,qoq,1.529871
+2026-09-01,2026-Q3,import,import_all,All items,ytd_avg,2.555885
+2026-09-01,2026-Q3,import,import_agri_food,Agricultural products and food,yoy,3.278278
+2026-09-01,2026-Q3,import,import_agri_food,Agricultural products and food,qoq,0.98869
+2026-09-01,2026-Q3,import,import_agri_food,Agricultural products and food,ytd_avg,1.04634
+2026-09-01,2026-Q3,import,import_fuel,Fuels,yoy,11.293596
+2026-09-01,2026-Q3,import,import_fuel,Fuels,qoq,6.351061
+2026-09-01,2026-Q3,import,import_fuel,Fuels,ytd_avg,2.420584
+2026-09-01,2026-Q3,import,import_manufactured,Other manufactured goods,yoy,5.593409
+2026-09-01,2026-Q3,import,import_manufactured,Other manufactured goods,qoq,1.169943
+2026-09-01,2026-Q3,import,import_manufactured,Other manufactured goods,ytd_avg,2.619622
+2026-09-01,2026-Q3,tot,tot_all,All items,yoy,-0.042038
+2026-09-01,2026-Q3,tot,tot_all,All items,qoq,2.826791
+2026-09-01,2026-Q3,tot,tot_all,All items,ytd_avg,-0.171004
