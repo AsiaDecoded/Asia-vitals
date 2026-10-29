@@ -20465,6 +20465,7 @@ KR,cpi,electricity,Electricity,index,national,M,2015-01-01,116.261,"index, 2020 
 KR,cpi,city_gas,City gas,index,national,M,2015-01-01,136.791,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,petrol,Petrol,index,national,M,2015-01-01,108.908,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2015-01-01,111.904,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2015-01-01,123.956,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2015-02-01,94.587,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2015-02-01,0.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2015-02-01,93.995,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -20531,6 +20532,7 @@ KR,cpi,electricity,Electricity,index,national,M,2015-02-01,116.261,"index, 2020 
 KR,cpi,city_gas,City gas,index,national,M,2015-02-01,136.779,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,petrol,Petrol,index,national,M,2015-02-01,103.689,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2015-02-01,106.992,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2015-02-01,123.844,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2015-03-01,94.596,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2015-03-01,0.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2015-03-01,94.137,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -20597,6 +20599,7 @@ KR,cpi,electricity,Electricity,index,national,M,2015-03-01,116.261,"index, 2020 
 KR,cpi,city_gas,City gas,index,national,M,2015-03-01,125.338,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,petrol,Petrol,index,national,M,2015-03-01,109.083,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2015-03-01,111.522,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2015-03-01,123.844,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2015-04-01,94.625,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2015-04-01,0.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2015-04-01,94.194,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -20663,6 +20666,7 @@ KR,cpi,electricity,Electricity,index,national,M,2015-04-01,116.261,"index, 2020 
 KR,cpi,city_gas,City gas,index,national,M,2015-04-01,125.35,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,petrol,Petrol,index,national,M,2015-04-01,109.017,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2015-04-01,110.747,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2015-04-01,123.758,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2015-05-01,94.89,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2015-05-01,0.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2015-05-01,94.383,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -20729,6 +20733,7 @@ KR,cpi,electricity,Electricity,index,national,M,2015-05-01,116.261,"index, 2020 
 KR,cpi,city_gas,City gas,index,national,M,2015-05-01,115.278,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,petrol,Petrol,index,national,M,2015-05-01,111.616,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2015-05-01,112.733,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2015-05-01,123.758,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2015-06-01,94.909,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2015-06-01,0.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2015-06-01,94.345,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -20795,6 +20800,7 @@ KR,cpi,electricity,Electricity,index,national,M,2015-06-01,116.261,"index, 2020 
 KR,cpi,city_gas,City gas,index,national,M,2015-06-01,115.278,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,petrol,Petrol,index,national,M,2015-06-01,114.335,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2015-06-01,114.872,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2015-06-01,123.696,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2015-07-01,95.08,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2015-07-01,0.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2015-07-01,94.78,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -20861,6 +20867,7 @@ KR,cpi,electricity,Electricity,index,national,M,2015-07-01,108.848,"index, 2020 
 KR,cpi,city_gas,City gas,index,national,M,2015-07-01,115.461,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,petrol,Petrol,index,national,M,2015-07-01,114.029,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2015-07-01,113.759,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2015-07-01,123.696,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2015-08-01,95.213,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2015-08-01,0.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2015-08-01,94.969,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -20927,6 +20934,7 @@ KR,cpi,electricity,Electricity,index,national,M,2015-08-01,108.848,"index, 2020 
 KR,cpi,city_gas,City gas,index,national,M,2015-08-01,115.62,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,petrol,Petrol,index,national,M,2015-08-01,111.889,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2015-08-01,110.136,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2015-08-01,123.696,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2015-09-01,94.966,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2015-09-01,0.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2015-09-01,94.752,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -20993,6 +21001,7 @@ KR,cpi,electricity,Electricity,index,national,M,2015-09-01,108.848,"index, 2020 
 KR,cpi,city_gas,City gas,index,national,M,2015-09-01,120.229,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,petrol,Petrol,index,national,M,2015-09-01,109.29,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2015-09-01,106.294,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2015-09-01,123.696,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2015-10-01,94.966,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2015-10-01,0.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2015-10-01,94.846,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -21059,6 +21068,7 @@ KR,cpi,electricity,Electricity,index,national,M,2015-10-01,116.261,"index, 2020 
 KR,cpi,city_gas,City gas,index,national,M,2015-10-01,120.229,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,petrol,Petrol,index,national,M,2015-10-01,108.231,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2015-10-01,105.148,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2015-10-01,123.77,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2015-11-01,94.786,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2015-11-01,0.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2015-11-01,94.903,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -21125,6 +21135,7 @@ KR,cpi,electricity,Electricity,index,national,M,2015-11-01,116.261,"index, 2020 
 KR,cpi,city_gas,City gas,index,national,M,2015-11-01,120.229,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,petrol,Petrol,index,national,M,2015-11-01,106.397,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2015-11-01,103.685,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2015-11-01,123.77,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2015-12-01,95.07,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2015-12-01,1.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2015-12-01,95.111,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -21191,6 +21202,7 @@ KR,cpi,electricity,Electricity,index,national,M,2015-12-01,116.261,"index, 2020 
 KR,cpi,city_gas,City gas,index,national,M,2015-12-01,120.229,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,petrol,Petrol,index,national,M,2015-12-01,103.7,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2015-12-01,101.917,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2015-12-01,123.77,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2016-01-01,95.232,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2016-01-01,0.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2016-01-01,95.555,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -21263,6 +21275,8 @@ KR,cpi,petrol,Petrol,index,national,M,2016-01-01,100.228,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2016-01-01,-8.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2016-01-01,97.246,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2016-01-01,-13.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2016-01-01,115.49,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2016-01-01,-6.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2016-02-01,95.64,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2016-02-01,1.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2016-02-01,95.782,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -21335,6 +21349,8 @@ KR,cpi,petrol,Petrol,index,national,M,2016-02-01,97.892,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2016-02-01,-5.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2016-02-01,92.826,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2016-02-01,-13.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2016-02-01,115.44,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2016-02-01,-6.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2016-03-01,95.393,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2016-03-01,0.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2016-03-01,95.905,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -21407,6 +21423,8 @@ KR,cpi,petrol,Petrol,index,national,M,2016-03-01,97.248,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2016-03-01,-10.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2016-03-01,92.302,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2016-03-01,-17.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2016-03-01,107.383,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2016-03-01,-13.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2016-04-01,95.573,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2016-04-01,1.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2016-04-01,96.075,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -21479,6 +21497,8 @@ KR,cpi,petrol,Petrol,index,national,M,2016-04-01,98.23,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2016-04-01,-9.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2016-04-01,93.884,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2016-04-01,-15.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2016-04-01,107.333,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2016-04-01,-13.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2016-05-01,95.63,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2016-05-01,0.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2016-05-01,96.302,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -21551,6 +21571,8 @@ KR,cpi,petrol,Petrol,index,national,M,2016-05-01,100.141,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2016-05-01,-10.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2016-05-01,96.722,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2016-05-01,-14.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2016-05-01,102.865,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2016-05-01,-16.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2016-06-01,95.611,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2016-06-01,0.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2016-06-01,96.321,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -21623,6 +21645,8 @@ KR,cpi,petrol,Petrol,index,national,M,2016-06-01,104.279,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2016-06-01,-8.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2016-06-01,102.965,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2016-06-01,-10.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2016-06-01,102.803,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2016-06-01,-16.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2016-07-01,95.431,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2016-07-01,0.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2016-07-01,96.529,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -21695,6 +21719,8 @@ KR,cpi,petrol,Petrol,index,national,M,2016-07-01,104.421,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2016-07-01,-8.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2016-07-01,103.456,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2016-07-01,-9.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2016-07-01,96.318,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2016-07-01,-22.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2016-08-01,95.677,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2016-08-01,0.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2016-08-01,96.708,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -21767,6 +21793,8 @@ KR,cpi,petrol,Petrol,index,national,M,2016-08-01,102.63,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2016-08-01,-8.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2016-08-01,101.808,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2016-08-01,-7.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2016-08-01,95.996,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2016-08-01,-22.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2016-09-01,96.247,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2016-09-01,1.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2016-09-01,96.642,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -21839,6 +21867,8 @@ KR,cpi,petrol,Petrol,index,national,M,2016-09-01,102.281,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2016-09-01,-6.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2016-09-01,101.361,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2016-09-01,-4.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2016-09-01,95.996,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2016-09-01,-22.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2016-10-01,96.379,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2016-10-01,1.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2016-10-01,96.604,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -21911,6 +21941,8 @@ KR,cpi,petrol,Petrol,index,national,M,2016-10-01,102.565,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2016-10-01,-5.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2016-10-01,101.623,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2016-10-01,-3.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2016-10-01,95.996,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2016-10-01,-22.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2016-11-01,96.237,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2016-11-01,1.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2016-11-01,96.51,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -21983,6 +22015,8 @@ KR,cpi,petrol,Petrol,index,national,M,2016-11-01,103.504,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2016-11-01,-2.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2016-11-01,102.932,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2016-11-01,-0.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2016-11-01,99.858,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2016-11-01,-19.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2016-12-01,96.342,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2016-12-01,1.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2016-12-01,96.633,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -22055,6 +22089,8 @@ KR,cpi,petrol,Petrol,index,national,M,2016-12-01,105.152,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2016-12-01,1.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2016-12-01,104.733,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2016-12-01,2.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2016-12-01,100.056,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2016-12-01,-19.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2017-01-01,97.366,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2017-01-01,2.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2017-01-01,97.228,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -22127,6 +22163,8 @@ KR,cpi,petrol,Petrol,index,national,M,2017-01-01,109.181,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2017-01-01,8.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2017-01-01,109.132,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2017-01-01,12.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2017-01-01,100.056,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2017-01-01,-13.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2017-02-01,97.632,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2017-02-01,2.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2017-02-01,97.483,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -22199,6 +22237,8 @@ KR,cpi,petrol,Petrol,index,national,M,2017-02-01,110.022,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2017-02-01,12.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2017-02-01,110.005,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2017-02-01,18.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2017-02-01,100.056,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2017-02-01,-13.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2017-03-01,97.565,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2017-03-01,2.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2017-03-01,97.502,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -22271,6 +22311,8 @@ KR,cpi,petrol,Petrol,index,national,M,2017-03-01,109.279,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2017-03-01,12.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2017-03-01,109.121,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2017-03-01,18.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2017-03-01,102.197,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2017-03-01,-4.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2017-04-01,97.442,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2017-04-01,2.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2017-04-01,97.597,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -22343,6 +22385,8 @@ KR,cpi,petrol,Petrol,index,national,M,2017-04-01,107.522,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2017-04-01,9.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2017-04-01,107.112,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2017-04-01,14.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2017-04-01,102.246,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2017-04-01,-4.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2017-05-01,97.546,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2017-05-01,2.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2017-05-01,97.786,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -22415,6 +22459,8 @@ KR,cpi,petrol,Petrol,index,national,M,2017-05-01,107.129,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2017-05-01,7.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2017-05-01,106.676,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2017-05-01,10.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2017-05-01,104.425,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2017-05-01,1.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2017-06-01,97.338,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2017-06-01,1.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2017-06-01,97.729,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -22487,6 +22533,8 @@ KR,cpi,petrol,Petrol,index,national,M,2017-06-01,105.917,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2017-06-01,1.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2017-06-01,105.268,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2017-06-01,2.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2017-06-01,104.425,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2017-06-01,1.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2017-07-01,97.499,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2017-07-01,2.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2017-07-01,97.984,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -22559,6 +22607,8 @@ KR,cpi,petrol,Petrol,index,national,M,2017-07-01,104.028,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2017-07-01,-0.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2017-07-01,103.216,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2017-07-01,-0.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2017-07-01,99.264,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2017-07-01,3.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2017-08-01,98.058,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2017-08-01,2.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2017-08-01,98.126,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -22631,6 +22681,8 @@ KR,cpi,petrol,Petrol,index,national,M,2017-08-01,105.316,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2017-08-01,2.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2017-08-01,104.831,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2017-08-01,3.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2017-08-01,99.053,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2017-08-01,3.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2017-09-01,98.172,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2017-09-01,2.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2017-09-01,97.965,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -22703,6 +22755,8 @@ KR,cpi,petrol,Petrol,index,national,M,2017-09-01,107.194,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2017-09-01,4.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2017-09-01,106.807,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2017-09-01,5.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2017-09-01,99.053,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2017-09-01,3.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2017-10-01,98.077,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2017-10-01,1.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2017-10-01,98.145,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -22775,6 +22829,8 @@ KR,cpi,petrol,Petrol,index,national,M,2017-10-01,109.345,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2017-10-01,6.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2017-10-01,109.339,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2017-10-01,7.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2017-10-01,98.905,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2017-10-01,3.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2017-11-01,97.347,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2017-11-01,1.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2017-11-01,97.805,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -22847,6 +22903,8 @@ KR,cpi,petrol,Petrol,index,national,M,2017-11-01,110.24,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2017-11-01,6.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2017-11-01,110.398,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2017-11-01,7.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2017-11-01,97.58,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2017-11-01,-2.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2017-12-01,97.698,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2017-12-01,1.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2017-12-01,97.965,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -22919,6 +22977,8 @@ KR,cpi,petrol,Petrol,index,national,M,2017-12-01,111.649,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2017-12-01,6.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2017-12-01,112.013,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2017-12-01,7.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2017-12-01,97.58,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2017-12-01,-2.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2018-01-01,98.106,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2018-01-01,0.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2018-01-01,98.192,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -22991,6 +23051,8 @@ KR,cpi,petrol,Petrol,index,national,M,2018-01-01,112.315,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2018-01-01,2.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2018-01-01,112.864,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2018-01-01,3.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2018-01-01,97.58,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2018-01-01,-2.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2018-02-01,98.855,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2018-02-01,1.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2018-02-01,98.608,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -23063,6 +23125,8 @@ KR,cpi,petrol,Petrol,index,national,M,2018-02-01,113.308,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2018-02-01,3.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2018-02-01,114.272,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2018-02-01,3.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2018-02-01,97.58,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2018-02-01,-2.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2018-03-01,98.751,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2018-03-01,1.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2018-03-01,98.807,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -23135,6 +23199,8 @@ KR,cpi,petrol,Petrol,index,national,M,2018-03-01,112.773,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2018-03-01,3.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2018-03-01,113.716,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2018-03-01,4.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2018-03-01,97.58,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2018-03-01,-4.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2018-04-01,98.931,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2018-04-01,1.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2018-04-01,98.996,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -23207,6 +23273,8 @@ KR,cpi,petrol,Petrol,index,national,M,2018-04-01,112.053,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2018-04-01,4.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2018-04-01,112.995,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2018-04-01,5.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2018-04-01,97.58,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2018-04-01,-4.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2018-05-01,98.979,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2018-05-01,1.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2018-05-01,99.137,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -23279,6 +23347,8 @@ KR,cpi,petrol,Petrol,index,national,M,2018-05-01,113.931,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2018-05-01,6.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2018-05-01,115.331,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2018-05-01,8.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2018-05-01,97.58,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2018-05-01,-6.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2018-06-01,98.779,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2018-06-01,1.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2018-06-01,98.958,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -23351,6 +23421,8 @@ KR,cpi,petrol,Petrol,index,national,M,2018-06-01,116.409,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2018-06-01,9.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2018-06-01,118.234,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2018-06-01,12.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2018-06-01,97.58,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2018-06-01,-6.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2018-07-01,98.59,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2018-07-01,1.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2018-07-01,98.967,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -23423,6 +23495,8 @@ KR,cpi,petrol,Petrol,index,national,M,2018-07-01,116.365,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2018-07-01,11.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2018-07-01,118.256,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2018-07-01,14.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2018-07-01,98.038,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2018-07-01,-1.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2018-08-01,99.462,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2018-08-01,1.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2018-08-01,99.137,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -23495,6 +23569,8 @@ KR,cpi,petrol,Petrol,index,national,M,2018-08-01,116.933,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2018-08-01,11.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2018-08-01,118.856,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2018-08-01,13.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2018-08-01,98.038,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2018-08-01,-1.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2018-09-01,100.221,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2018-09-01,2.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2018-09-01,99.062,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -23567,6 +23643,8 @@ KR,cpi,petrol,Petrol,index,national,M,2018-09-01,117.85,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2018-09-01,9.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2018-09-01,119.991,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2018-09-01,12.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2018-09-01,98.038,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2018-09-01,-1.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2018-10-01,100.041,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2018-10-01,2.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2018-10-01,99.137,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -23639,6 +23717,8 @@ KR,cpi,petrol,Petrol,index,national,M,2018-10-01,121.224,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2018-10-01,10.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2018-10-01,124.095,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2018-10-01,13.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2018-10-01,98.038,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2018-10-01,-0.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2018-11-01,99.33,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2018-11-01,2.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2018-11-01,99.015,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -23711,6 +23791,8 @@ KR,cpi,petrol,Petrol,index,national,M,2018-11-01,115.809,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2018-11-01,5.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2018-11-01,120.504,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2018-11-01,9.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2018-11-01,98.038,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2018-11-01,0.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2018-12-01,98.988,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2018-12-01,1.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2018-12-01,98.996,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -23783,6 +23865,8 @@ KR,cpi,petrol,Petrol,index,national,M,2018-12-01,105.142,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2018-12-01,-5.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2018-12-01,112.351,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2018-12-01,0.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2018-12-01,98.038,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2018-12-01,0.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2019-01-01,98.884,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2019-01-01,0.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2019-01-01,99.223,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -23855,6 +23939,8 @@ KR,cpi,petrol,Petrol,index,national,M,2019-01-01,98.056,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2019-01-01,-12.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2019-01-01,104.995,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2019-01-01,-7.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2019-01-01,98.038,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2019-01-01,0.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2019-02-01,99.311,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2019-02-01,0.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2019-02-01,99.695,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -23927,6 +24013,8 @@ KR,cpi,petrol,Petrol,index,national,M,2019-02-01,97.171,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2019-02-01,-14.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2019-02-01,104.1,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2019-02-01,-8.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2019-02-01,98.038,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2019-02-01,0.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2019-03-01,99.121,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2019-03-01,0.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2019-03-01,99.544,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -23999,6 +24087,8 @@ KR,cpi,petrol,Petrol,index,national,M,2019-03-01,98.514,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2019-03-01,-12.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2019-03-01,105.715,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2019-03-01,-7.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2019-03-01,98.038,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2019-03-01,0.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2019-04-01,99.481,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2019-04-01,0.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2019-04-01,99.695,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -24071,6 +24161,8 @@ KR,cpi,petrol,Petrol,index,national,M,2019-04-01,102.576,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2019-04-01,-8.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2019-04-01,109.885,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2019-04-01,-2.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2019-04-01,98.038,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2019-04-01,0.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2019-05-01,99.652,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2019-05-01,0.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2019-05-01,99.705,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -24143,6 +24235,8 @@ KR,cpi,petrol,Petrol,index,national,M,2019-05-01,109.214,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2019-05-01,-4.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2019-05-01,115.713,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2019-05-01,0.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2019-05-01,98.038,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2019-05-01,0.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2019-06-01,99.491,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2019-06-01,0.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2019-06-01,99.638,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -24215,6 +24309,8 @@ KR,cpi,petrol,Petrol,index,national,M,2019-06-01,110.197,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2019-06-01,-5.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2019-06-01,116.215,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2019-06-01,-1.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2019-06-01,98.038,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2019-06-01,0.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2019-07-01,99.187,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2019-07-01,0.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2019-07-01,99.837,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -24287,6 +24383,8 @@ KR,cpi,petrol,Petrol,index,national,M,2019-07-01,107.729,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2019-07-01,-7.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2019-07-01,113.399,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2019-07-01,-4.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2019-07-01,98.038,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2019-07-01,0.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2019-08-01,99.425,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2019-08-01,-0.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2019-08-01,99.969,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -24359,6 +24457,8 @@ KR,cpi,petrol,Petrol,index,national,M,2019-08-01,107.915,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2019-08-01,-7.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2019-08-01,113.334,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2019-08-01,-4.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2019-08-01,101.293,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2019-08-01,3.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2019-09-01,99.794,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2019-09-01,-0.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2019-09-01,99.534,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -24431,6 +24531,8 @@ KR,cpi,petrol,Petrol,index,national,M,2019-09-01,110.393,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2019-09-01,-6.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2019-09-01,115.56,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2019-09-01,-3.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2019-09-01,101.293,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2019-09-01,3.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2019-10-01,100.041,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2019-10-01,0.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2019-10-01,99.761,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -24503,6 +24605,8 @@ KR,cpi,petrol,Petrol,index,national,M,2019-10-01,111.54,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2019-10-01,-8.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2019-10-01,116.51,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2019-10-01,-6.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2019-10-01,101.293,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2019-10-01,3.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2019-11-01,99.481,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2019-11-01,0.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2019-11-01,99.534,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -24575,6 +24679,8 @@ KR,cpi,petrol,Petrol,index,national,M,2019-11-01,110.895,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2019-11-01,-4.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2019-11-01,115.571,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2019-11-01,-4.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2019-11-01,101.293,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2019-11-01,3.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2019-12-01,99.719,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2019-12-01,0.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2019-12-01,99.62,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -24647,6 +24753,8 @@ KR,cpi,petrol,Petrol,index,national,M,2019-12-01,111.725,"index, 2020 = 100",Min
 KR,cpi,petrol,Petrol,yoy,national,M,2019-12-01,6.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2019-12-01,115.909,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2019-12-01,3.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2019-12-01,101.293,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2019-12-01,3.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2020-01-01,100.09,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2020-01-01,1.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2020-01-01,99.84,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -24719,6 +24827,8 @@ KR,cpi,petrol,Petrol,index,national,M,2020-01-01,113.37,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2020-01-01,15.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2020-01-01,117.29,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2020-01-01,11.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2020-01-01,101.27,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2020-01-01,3.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2020-02-01,100.16,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2020-02-01,0.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2020-02-01,100.07,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -24791,6 +24901,8 @@ KR,cpi,petrol,Petrol,index,national,M,2020-02-01,111.92,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2020-02-01,15.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2020-02-01,115.28,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2020-02-01,10.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2020-02-01,101.27,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2020-02-01,3.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2020-03-01,99.94,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2020-03-01,0.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2020-03-01,99.75,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -24863,6 +24975,8 @@ KR,cpi,petrol,Petrol,index,national,M,2020-03-01,107.26,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2020-03-01,8.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2020-03-01,108.95,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2020-03-01,3.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2020-03-01,101.27,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2020-03-01,3.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2020-04-01,99.5,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2020-04-01,0.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2020-04-01,99.79,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -24935,6 +25049,8 @@ KR,cpi,petrol,Petrol,index,national,M,2020-04-01,97.28,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2020-04-01,-5.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2020-04-01,96.83,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2020-04-01,-11.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2020-04-01,101.27,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2020-04-01,3.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2020-05-01,99.44,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2020-05-01,-0.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2020-05-01,99.93,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -25007,6 +25123,8 @@ KR,cpi,petrol,Petrol,index,national,M,2020-05-01,90.37,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2020-05-01,-17.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2020-05-01,89.06,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2020-05-01,-23.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2020-05-01,101.27,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2020-05-01,3.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2020-06-01,99.71,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2020-06-01,0.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2020-06-01,100.02,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -25079,6 +25197,8 @@ KR,cpi,petrol,Petrol,index,national,M,2020-06-01,94.91,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2020-06-01,-13.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2020-06-01,93.81,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2020-06-01,-19.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2020-06-01,101.27,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2020-06-01,3.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2020-07-01,99.63,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2020-07-01,0.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2020-07-01,100.17,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -25151,6 +25271,8 @@ KR,cpi,petrol,Petrol,index,national,M,2020-07-01,98.43,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2020-07-01,-8.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2020-07-01,97.66,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2020-07-01,-13.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2020-07-01,98.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2020-07-01,0.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2020-08-01,100.19,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2020-08-01,0.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2020-08-01,100.36,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -25223,6 +25345,8 @@ KR,cpi,petrol,Petrol,index,national,M,2020-08-01,98.51,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2020-08-01,-8.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2020-08-01,97.77,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2020-08-01,-13.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2020-08-01,98.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2020-08-01,-2.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2020-09-01,100.74,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2020-09-01,0.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2020-09-01,100.16,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -25295,6 +25419,8 @@ KR,cpi,petrol,Petrol,index,national,M,2020-09-01,98.03,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2020-09-01,-11.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2020-09-01,97.2,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2020-09-01,-15.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2020-09-01,98.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2020-09-01,-2.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2020-10-01,100.18,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2020-10-01,0.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2020-10-01,99.5,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -25367,6 +25493,8 @@ KR,cpi,petrol,Petrol,index,national,M,2020-10-01,96.49,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2020-10-01,-13.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2020-10-01,95.22,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2020-10-01,-18.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2020-10-01,98.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2020-10-01,-2.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2020-11-01,100.09,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2020-11-01,0.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2020-11-01,100.16,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -25439,6 +25567,8 @@ KR,cpi,petrol,Petrol,index,national,M,2020-11-01,95.24,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2020-11-01,-14.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2020-11-01,93.72,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2020-11-01,-18.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2020-11-01,98.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2020-11-01,-2.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2020-12-01,100.33,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2020-12-01,0.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2020-12-01,100.26,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -25511,6 +25641,8 @@ KR,cpi,petrol,Petrol,index,national,M,2020-12-01,98.19,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2020-12-01,-12.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2020-12-01,97.2,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2020-12-01,-16.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2020-12-01,98.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2020-12-01,-2.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2021-01-01,101.04,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2021-01-01,0.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2021-01-01,100.56,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -25583,6 +25715,8 @@ KR,cpi,petrol,Petrol,index,national,M,2021-01-01,104.17,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2021-01-01,-8.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2021-01-01,104.08,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2021-01-01,-11.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2021-01-01,98.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2021-01-01,-2.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2021-02-01,101.58,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2021-02-01,1.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2021-02-01,100.7,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -25655,6 +25789,8 @@ KR,cpi,petrol,Petrol,index,national,M,2021-02-01,105.74,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2021-02-01,-5.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2021-02-01,105.85,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2021-02-01,-8.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2021-02-01,98.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2021-02-01,-2.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2021-03-01,101.84,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2021-03-01,1.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2021-03-01,100.82,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -25727,6 +25863,8 @@ KR,cpi,petrol,Petrol,index,national,M,2021-03-01,109.13,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2021-03-01,1.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2021-03-01,109.76,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2021-03-01,0.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2021-03-01,98.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2021-03-01,-2.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2021-04-01,101.98,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2021-04-01,2.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2021-04-01,101.01,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -25799,6 +25937,8 @@ KR,cpi,petrol,Petrol,index,national,M,2021-04-01,110.92,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2021-04-01,14.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2021-04-01,111.72,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2021-04-01,15.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2021-04-01,98.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2021-04-01,-2.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2021-05-01,102.05,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2021-05-01,2.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2021-05-01,101.12,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -25871,6 +26011,8 @@ KR,cpi,petrol,Petrol,index,national,M,2021-05-01,111.19,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2021-05-01,23.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2021-05-01,111.97,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2021-05-01,25.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2021-05-01,98.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2021-05-01,-2.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2021-06-01,102.05,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2021-06-01,2.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2021-06-01,101.14,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -25943,6 +26085,8 @@ KR,cpi,petrol,Petrol,index,national,M,2021-06-01,113.71,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2021-06-01,19.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2021-06-01,114.88,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2021-06-01,22.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2021-06-01,98.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2021-06-01,-2.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2021-07-01,102.26,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2021-07-01,2.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2021-07-01,101.45,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -26015,6 +26159,8 @@ KR,cpi,petrol,Petrol,index,national,M,2021-07-01,117.47,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2021-07-01,19.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2021-07-01,119.16,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2021-07-01,22.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2021-07-01,98.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2021-07-01,0.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2021-08-01,102.75,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2021-08-01,2.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2021-08-01,101.7,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -26087,6 +26233,8 @@ KR,cpi,petrol,Petrol,index,national,M,2021-08-01,119.01,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2021-08-01,20.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2021-08-01,120.83,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2021-08-01,23.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2021-08-01,98.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2021-08-01,0.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2021-09-01,103.17,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2021-09-01,2.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2021-09-01,101.58,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -26159,6 +26307,8 @@ KR,cpi,petrol,Petrol,index,national,M,2021-09-01,118.62,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2021-09-01,21.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2021-09-01,120.35,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2021-09-01,23.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2021-09-01,98.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2021-09-01,0.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2021-10-01,103.35,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2021-10-01,3.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2021-10-01,101.83,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -26231,6 +26381,8 @@ KR,cpi,petrol,Petrol,index,national,M,2021-10-01,122.06,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2021-10-01,26.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2021-10-01,124.48,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2021-10-01,30.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2021-10-01,98.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2021-10-01,0.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2021-11-01,103.87,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2021-11-01,3.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2021-11-01,102.06,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -26303,6 +26455,8 @@ KR,cpi,petrol,Petrol,index,national,M,2021-11-01,127.11,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2021-11-01,33.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2021-11-01,131.08,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2021-11-01,39.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2021-11-01,98.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2021-11-01,0.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2021-12-01,104.04,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2021-12-01,3.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2021-12-01,102.51,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -26375,6 +26529,8 @@ KR,cpi,petrol,Petrol,index,national,M,2021-12-01,118.78,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2021-12-01,21.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2021-12-01,123.08,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2021-12-01,26.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2021-12-01,98.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2021-12-01,0.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2022-01-01,104.85,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2022-01-01,3.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2022-01-01,103.17,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -26447,6 +26603,8 @@ KR,cpi,petrol,Petrol,index,national,M,2022-01-01,117.52,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2022-01-01,12.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2022-01-01,121.24,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2022-01-01,16.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2022-01-01,98.54,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2022-01-01,-0.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2022-02-01,105.42,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2022-02-01,3.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2022-02-01,103.59,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -26519,6 +26677,8 @@ KR,cpi,petrol,Petrol,index,national,M,2022-02-01,123.23,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2022-02-01,16.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2022-02-01,128.09,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2022-02-01,21.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2022-02-01,98.54,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2022-02-01,-0.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2022-03-01,106.1,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2022-03-01,4.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2022-03-01,103.68,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -26591,6 +26751,8 @@ KR,cpi,petrol,Petrol,index,national,M,2022-03-01,138.99,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2022-03-01,27.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2022-03-01,151.41,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2022-03-01,37.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2022-03-01,98.54,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2022-03-01,-0.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2022-04-01,106.83,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2022-04-01,4.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2022-04-01,104.05,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -26663,6 +26825,8 @@ KR,cpi,petrol,Petrol,index,national,M,2022-04-01,142.49,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2022-04-01,28.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2022-04-01,159.05,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2022-04-01,42.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2022-04-01,100.92,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2022-04-01,2.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2022-05-01,107.5,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2022-05-01,5.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2022-05-01,104.57,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -26735,6 +26899,8 @@ KR,cpi,petrol,Petrol,index,national,M,2022-05-01,141.17,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2022-05-01,27.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2022-05-01,163.22,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2022-05-01,45.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2022-05-01,100.92,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2022-05-01,2.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2022-06-01,108.21,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2022-06-01,6.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2022-06-01,105.09,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -26807,6 +26973,8 @@ KR,cpi,petrol,Petrol,index,national,M,2022-06-01,149.4,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2022-06-01,31.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2022-06-01,173.12,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2022-06-01,50.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2022-06-01,100.92,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2022-06-01,2.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2022-07-01,108.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2022-07-01,6.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2022-07-01,105.52,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -26879,6 +27047,8 @@ KR,cpi,petrol,Petrol,index,national,M,2022-07-01,147.42,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2022-07-01,25.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2022-07-01,175.11,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2022-07-01,47.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2022-07-01,111.18,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2022-07-01,12.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2022-08-01,108.63,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2022-08-01,5.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2022-08-01,105.84,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -26951,6 +27121,8 @@ KR,cpi,petrol,Petrol,index,national,M,2022-08-01,129.14,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2022-08-01,8.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2022-08-01,157.59,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2022-08-01,30.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2022-08-01,111.18,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2022-08-01,12.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2022-09-01,108.82,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2022-09-01,5.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2022-09-01,105.7,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -27023,6 +27195,8 @@ KR,cpi,petrol,Petrol,index,national,M,2022-09-01,124.76,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2022-09-01,5.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2022-09-01,154.5,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2022-09-01,28.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2022-09-01,111.18,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2022-09-01,12.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2022-10-01,109.16,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2022-10-01,5.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2022-10-01,106.1,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -27095,6 +27269,8 @@ KR,cpi,petrol,Petrol,index,national,M,2022-10-01,119.58,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2022-10-01,-2.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2022-10-01,153.18,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2022-10-01,23.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2022-10-01,132.45,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2022-10-01,34.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2022-11-01,109.07,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2022-11-01,5.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2022-11-01,106.35,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -27167,6 +27343,8 @@ KR,cpi,petrol,Petrol,index,national,M,2022-11-01,118.49,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2022-11-01,-6.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2022-11-01,156.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2022-11-01,19.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2022-11-01,132.45,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2022-11-01,34.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2022-12-01,109.26,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2022-12-01,5.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2022-12-01,106.65,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -27239,6 +27417,9 @@ KR,cpi,petrol,Petrol,index,national,M,2022-12-01,113.03,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2022-12-01,-4.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2022-12-01,150.03,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2022-12-01,21.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2022-12-01,132.45,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2022-12-01,34.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2022-12-01,100.0,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2023-01-01,110.07,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2023-01-01,5.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2023-01-01,107.29,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -27311,6 +27492,9 @@ KR,cpi,petrol,Petrol,index,national,M,2023-01-01,112.49,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2023-01-01,-4.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2023-01-01,140.09,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2023-01-01,15.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2023-01-01,132.45,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2023-01-01,34.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2023-01-01,100.523,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2023-02-01,110.33,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2023-02-01,4.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2023-02-01,107.6,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -27383,6 +27567,9 @@ KR,cpi,petrol,Petrol,index,national,M,2023-02-01,113.8,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2023-02-01,-7.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2023-02-01,134.19,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2023-02-01,4.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2023-02-01,132.45,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2023-02-01,34.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2023-02-01,99.851,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2023-03-01,110.52,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2023-03-01,4.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2023-03-01,107.81,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -27455,6 +27642,9 @@ KR,cpi,petrol,Petrol,index,national,M,2023-03-01,114.69,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2023-03-01,-17.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2023-03-01,128.66,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2023-03-01,-15.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2023-03-01,132.45,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2023-03-01,34.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2023-03-01,99.212,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2023-04-01,110.77,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2023-04-01,3.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2023-04-01,108.12,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -27527,6 +27717,9 @@ KR,cpi,petrol,Petrol,index,national,M,2023-04-01,118.23,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2023-04-01,-17.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2023-04-01,128.42,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2023-04-01,-19.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2023-04-01,132.45,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2023-04-01,31.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2023-04-01,99.987,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2023-05-01,111.13,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2023-05-01,3.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2023-05-01,108.51,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -27599,6 +27792,9 @@ KR,cpi,petrol,Petrol,index,national,M,2023-05-01,117.86,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2023-05-01,-16.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2023-05-01,123.96,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2023-05-01,-24.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2023-05-01,132.45,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2023-05-01,31.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2023-05-01,100.362,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2023-06-01,111.16,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2023-06-01,2.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2023-06-01,108.61,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -27671,6 +27867,9 @@ KR,cpi,petrol,Petrol,index,national,M,2023-06-01,113.87,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2023-06-01,-23.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2023-06-01,116.87,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2023-06-01,-32.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2023-06-01,138.34,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2023-06-01,37.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2023-06-01,99.417,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2023-07-01,111.29,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2023-07-01,2.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2023-07-01,108.91,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -27743,6 +27942,9 @@ KR,cpi,petrol,Petrol,index,national,M,2023-07-01,113.82,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2023-07-01,-22.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2023-07-01,116.53,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2023-07-01,-33.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2023-07-01,148.49,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2023-07-01,33.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2023-07-01,96.341,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2023-08-01,112.28,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2023-08-01,3.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2023-08-01,109.16,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -27815,6 +28017,9 @@ KR,cpi,petrol,Petrol,index,national,M,2023-08-01,123.23,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2023-08-01,-4.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2023-08-01,131.01,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2023-08-01,-16.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2023-08-01,148.49,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2023-08-01,33.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2023-08-01,100.56,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2023-09-01,112.85,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2023-09-01,3.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2023-09-01,109.02,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -27887,6 +28092,9 @@ KR,cpi,petrol,Petrol,index,national,M,2023-09-01,127.13,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2023-09-01,1.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2023-09-01,138.68,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2023-09-01,-10.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2023-09-01,148.49,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2023-09-01,33.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2023-09-01,105.744,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2023-10-01,113.27,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2023-10-01,3.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2023-10-01,109.4,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -27959,6 +28167,9 @@ KR,cpi,petrol,Petrol,index,national,M,2023-10-01,127.84,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2023-10-01,6.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2023-10-01,141.12,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2023-10-01,-7.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2023-10-01,148.49,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2023-10-01,12.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2023-10-01,106.497,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2023-11-01,112.68,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2023-11-01,3.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2023-11-01,109.4,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -28031,6 +28242,9 @@ KR,cpi,petrol,Petrol,index,national,M,2023-11-01,121.3,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2023-11-01,2.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2023-11-01,136.11,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2023-11-01,-13.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2023-11-01,148.49,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2023-11-01,12.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2023-11-01,104.379,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2023-12-01,112.73,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2023-12-01,3.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2023-12-01,109.6,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -28103,6 +28317,10 @@ KR,cpi,petrol,Petrol,index,national,M,2023-12-01,115.37,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2023-12-01,2.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2023-12-01,127.89,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2023-12-01,-14.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2023-12-01,148.49,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2023-12-01,12.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2023-12-01,101.737,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2023-12-01,1.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2024-01-01,113.17,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2024-01-01,2.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2024-01-01,110.01,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -28175,6 +28393,10 @@ KR,cpi,petrol,Petrol,index,national,M,2024-01-01,112.63,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2024-01-01,0.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2024-01-01,123.38,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2024-01-01,-11.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2024-01-01,148.49,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2024-01-01,12.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2024-01-01,100.389,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2024-01-01,-0.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2024-02-01,113.78,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2024-02-01,3.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2024-02-01,110.34,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -28247,6 +28469,10 @@ KR,cpi,petrol,Petrol,index,national,M,2024-02-01,116.11,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2024-02-01,2.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2024-02-01,126.57,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2024-02-01,-5.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2024-02-01,148.49,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2024-02-01,12.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2024-02-01,101.673,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2024-02-01,1.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2024-03-01,113.95,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2024-03-01,3.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2024-03-01,110.42,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -28319,6 +28545,10 @@ KR,cpi,petrol,Petrol,index,national,M,2024-03-01,118.16,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2024-03-01,3.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2024-03-01,128.65,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2024-03-01,-0.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2024-03-01,148.49,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2024-03-01,12.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2024-03-01,102.471,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2024-03-01,3.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2024-04-01,114.01,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2024-04-01,2.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2024-04-01,110.66,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -28391,6 +28621,10 @@ KR,cpi,petrol,Petrol,index,national,M,2024-04-01,121.03,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2024-04-01,2.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2024-04-01,129.74,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2024-04-01,1.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2024-04-01,148.49,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2024-04-01,12.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2024-04-01,103.323,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2024-04-01,3.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2024-05-01,114.1,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2024-05-01,2.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2024-05-01,110.91,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -28463,6 +28697,10 @@ KR,cpi,petrol,Petrol,index,national,M,2024-05-01,122.37,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2024-05-01,3.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2024-05-01,128.79,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2024-05-01,3.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2024-05-01,148.49,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2024-05-01,12.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2024-05-01,103.51,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2024-05-01,3.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2024-06-01,113.84,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2024-06-01,2.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2024-06-01,110.95,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -28535,6 +28773,10 @@ KR,cpi,petrol,Petrol,index,national,M,2024-06-01,118.8,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2024-06-01,4.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2024-06-01,123.65,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2024-06-01,5.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2024-06-01,148.49,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2024-06-01,7.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2024-06-01,101.902,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2024-06-01,2.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2024-07-01,114.13,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2024-07-01,2.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2024-07-01,111.27,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -28607,6 +28849,10 @@ KR,cpi,petrol,Petrol,index,national,M,2024-07-01,122.83,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2024-07-01,7.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2024-07-01,128.82,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2024-07-01,10.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2024-07-01,162.91,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2024-07-01,9.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2024-07-01,100.885,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2024-07-01,4.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2024-08-01,114.54,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2024-08-01,2.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2024-08-01,111.4,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -28679,6 +28925,10 @@ KR,cpi,petrol,Petrol,index,national,M,2024-08-01,122.39,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2024-08-01,-0.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2024-08-01,128.54,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2024-08-01,-1.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2024-08-01,162.99,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2024-08-01,9.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2024-08-01,102.101,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2024-08-01,1.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2024-09-01,114.65,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2024-09-01,1.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2024-09-01,111.18,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -28751,6 +29001,10 @@ KR,cpi,petrol,Petrol,index,national,M,2024-09-01,116.9,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2024-09-01,-8.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2024-09-01,122.07,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2024-09-01,-12.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2024-09-01,162.99,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2024-09-01,9.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2024-09-01,102.808,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2024-09-01,-2.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2024-10-01,114.69,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2024-10-01,1.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2024-10-01,111.39,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -28823,6 +29077,10 @@ KR,cpi,petrol,Petrol,index,national,M,2024-10-01,114.23,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2024-10-01,-10.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2024-10-01,118.36,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2024-10-01,-16.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2024-10-01,162.99,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2024-10-01,9.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2024-10-01,101.61,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2024-10-01,-4.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2024-11-01,114.4,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2024-11-01,1.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2024-11-01,111.44,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -28895,6 +29153,10 @@ KR,cpi,petrol,Petrol,index,national,M,2024-11-01,117.18,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2024-11-01,-3.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2024-11-01,121.92,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2024-11-01,-10.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2024-11-01,162.99,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2024-11-01,9.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2024-11-01,102.881,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2024-11-01,-1.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2024-12-01,114.91,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2024-12-01,1.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2024-12-01,111.59,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -28967,6 +29229,10 @@ KR,cpi,petrol,Petrol,index,national,M,2024-12-01,118.68,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2024-12-01,2.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2024-12-01,124.62,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2024-12-01,-2.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2024-12-01,162.99,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2024-12-01,9.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2024-12-01,103.742,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2024-12-01,2.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2025-01-01,115.71,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2025-01-01,2.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2025-01-01,112.14,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -29039,6 +29305,10 @@ KR,cpi,petrol,Petrol,index,national,M,2025-01-01,123.03,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2025-01-01,9.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2025-01-01,130.37,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2025-01-01,5.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2025-01-01,162.99,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2025-01-01,9.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2025-01-01,105.623,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2025-01-01,5.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2025-02-01,116.08,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2025-02-01,2.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2025-02-01,112.29,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -29111,6 +29381,10 @@ KR,cpi,petrol,Petrol,index,national,M,2025-02-01,124.51,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2025-02-01,7.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2025-02-01,133.26,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2025-02-01,5.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2025-02-01,162.99,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2025-02-01,9.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2025-02-01,106.468,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2025-02-01,4.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2025-03-01,116.29,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2025-03-01,2.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2025-03-01,112.52,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -29183,6 +29457,10 @@ KR,cpi,petrol,Petrol,index,national,M,2025-03-01,121.9,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2025-03-01,3.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2025-03-01,130.31,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2025-03-01,1.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2025-03-01,162.99,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2025-03-01,9.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2025-03-01,105.415,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2025-03-01,2.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2025-04-01,116.38,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2025-04-01,2.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2025-04-01,112.93,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -29255,6 +29533,10 @@ KR,cpi,petrol,Petrol,index,national,M,2025-04-01,118.11,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2025-04-01,-2.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2025-04-01,126.04,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2025-04-01,-2.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2025-04-01,162.99,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2025-04-01,9.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2025-04-01,103.872,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2025-04-01,0.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2025-05-01,116.27,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2025-05-01,1.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2025-05-01,113.1,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -29327,6 +29609,10 @@ KR,cpi,petrol,Petrol,index,national,M,2025-05-01,117.57,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2025-05-01,-3.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2025-05-01,125.41,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2025-05-01,-2.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2025-05-01,162.99,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2025-05-01,9.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2025-05-01,103.681,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2025-05-01,0.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2025-06-01,116.31,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2025-06-01,2.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2025-06-01,113.17,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -29399,6 +29685,10 @@ KR,cpi,petrol,Petrol,index,national,M,2025-06-01,117.39,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2025-06-01,-1.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2025-06-01,124.88,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2025-06-01,1.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2025-06-01,162.99,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2025-06-01,9.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2025-06-01,103.489,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2025-06-01,1.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2025-07-01,116.52,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2025-07-01,2.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2025-07-01,113.47,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -29471,6 +29761,10 @@ KR,cpi,petrol,Petrol,index,national,M,2025-07-01,120.27,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2025-07-01,-2.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2025-07-01,128.17,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2025-07-01,-0.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2025-07-01,163.42,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2025-07-01,0.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2025-07-01,101.533,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2025-07-01,0.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2025-08-01,116.45,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2025-08-01,1.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2025-08-01,112.84,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -29543,6 +29837,10 @@ KR,cpi,petrol,Petrol,index,national,M,2025-08-01,119.91,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2025-08-01,-2.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2025-08-01,128.29,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2025-08-01,-0.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2025-08-01,163.43,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2025-08-01,0.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2025-08-01,101.419,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2025-08-01,-0.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2025-09-01,117.06,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2025-09-01,2.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2025-09-01,113.36,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -29615,6 +29913,10 @@ KR,cpi,petrol,Petrol,index,national,M,2025-09-01,119.28,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2025-09-01,2.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2025-09-01,127.69,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2025-09-01,4.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2025-09-01,163.43,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2025-09-01,0.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2025-09-01,103.977,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2025-09-01,1.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2025-10-01,117.42,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2025-10-01,2.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2025-10-01,113.79,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -29687,6 +29989,10 @@ KR,cpi,petrol,Petrol,index,national,M,2025-10-01,119.4,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2025-10-01,4.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2025-10-01,128.03,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2025-10-01,8.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2025-10-01,163.43,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2025-10-01,0.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2025-10-01,104.056,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2025-10-01,2.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2025-11-01,117.2,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2025-11-01,2.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2025-11-01,113.64,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -29759,6 +30065,10 @@ KR,cpi,petrol,Petrol,index,national,M,2025-11-01,123.39,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2025-11-01,5.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2025-11-01,134.64,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2025-11-01,10.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2025-11-01,163.43,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2025-11-01,0.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2025-11-01,105.974,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2025-11-01,3.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2025-12-01,117.57,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2025-12-01,2.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2025-12-01,113.83,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -29831,6 +30141,10 @@ KR,cpi,petrol,Petrol,index,national,M,2025-12-01,125.41,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2025-12-01,5.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2025-12-01,138.09,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2025-12-01,10.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2025-12-01,163.43,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2025-12-01,0.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2025-12-01,106.977,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2025-12-01,3.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2026-01-01,118.03,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2026-01-01,2.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2026-01-01,114.41,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -29903,6 +30217,10 @@ KR,cpi,petrol,Petrol,index,national,M,2026-01-01,122.43,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2026-01-01,-0.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2026-01-01,133.22,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2026-01-01,2.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2026-01-01,163.43,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2026-01-01,0.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2026-01-01,105.565,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2026-01-01,-0.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2026-02-01,118.4,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2026-02-01,2.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2026-02-01,114.87,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -29975,6 +30293,10 @@ KR,cpi,petrol,Petrol,index,national,M,2026-02-01,121.2,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2026-02-01,-2.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2026-02-01,132.15,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2026-02-01,-0.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2026-02-01,163.43,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2026-02-01,0.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2026-02-01,105.093,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2026-02-01,-1.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2026-03-01,118.8,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2026-03-01,2.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2026-03-01,114.98,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -30047,6 +30369,10 @@ KR,cpi,petrol,Petrol,index,national,M,2026-03-01,131.6,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2026-03-01,8.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2026-03-01,152.52,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2026-03-01,17.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2026-03-01,163.43,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2026-03-01,0.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2026-03-01,110.85,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2026-03-01,5.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2026-04-01,119.37,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2026-04-01,2.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2026-04-01,115.38,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -30119,6 +30445,10 @@ KR,cpi,petrol,Petrol,index,national,M,2026-04-01,143.01,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2026-04-01,21.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2026-04-01,164.9,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2026-04-01,30.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2026-04-01,163.3,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2026-04-01,0.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2026-04-01,115.65,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2026-04-01,11.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2026-05-01,119.92,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2026-05-01,3.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2026-05-01,115.97,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -30191,6 +30521,10 @@ KR,cpi,petrol,Petrol,index,national,M,2026-05-01,144.69,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2026-05-01,23.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2026-05-01,167.13,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2026-05-01,33.3,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2026-05-01,163.3,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2026-05-01,0.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2026-05-01,116.662,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2026-05-01,12.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2026-06-01,119.99,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2026-06-01,3.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2026-06-01,115.98,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -30263,6 +30597,10 @@ KR,cpi,petrol,Petrol,index,national,M,2026-06-01,144.48,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2026-06-01,23.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2026-06-01,166.93,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2026-06-01,33.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2026-06-01,163.3,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2026-06-01,0.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2026-06-01,116.671,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2026-06-01,12.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2026-07-01,119.77,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2026-07-01,2.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2026-07-01,116.43,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -30335,6 +30673,10 @@ KR,cpi,petrol,Petrol,index,national,M,2026-07-01,135.46,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2026-07-01,12.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2026-07-01,155.79,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2026-07-01,21.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2026-07-01,163.15,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2026-07-01,-0.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2026-07-01,110.061,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2026-07-01,8.4,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2026-08-01,120.05,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2026-08-01,3.1,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2026-08-01,116.64,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -30407,6 +30749,10 @@ KR,cpi,petrol,Petrol,index,national,M,2026-08-01,133.74,"index, 2020 = 100",Mini
 KR,cpi,petrol,Petrol,yoy,national,M,2026-08-01,11.5,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2026-08-01,153.44,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2026-08-01,19.6,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2026-08-01,163.15,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2026-08-01,-0.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2026-08-01,109.2,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2026-08-01,7.7,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,index,national,M,2026-09-01,120.43,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,all,All items,yoy,national,M,2026-09-01,2.9,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,ex_food_energy,Excl. food and energy,index,national,M,2026-09-01,116.53,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
@@ -30479,6 +30825,10 @@ KR,cpi,petrol,Petrol,index,national,M,2026-09-01,133.4,"index, 2020 = 100",Minis
 KR,cpi,petrol,Petrol,yoy,national,M,2026-09-01,11.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,index,national,M,2026-09-01,153.26,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,diesel,Diesel,yoy,national,M,2026-09-01,20.0,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,index,national,M,2026-09-01,163.15,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,district_heating,District heating,yoy,national,M,2026-09-01,-0.2,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),index,national,M,2026-09-01,112.037,"index, 2020 = 100",Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
+KR,cpi,energy,Energy (calculated),yoy,national,M,2026-09-01,7.8,%,Ministry of Data and Statistics (via Bank of Korea ECOS),C2026-09
 KR,cpi,contrib_all,All items,contribution to y/y,national,M,2023-12-01,3.18,ppt,Asia Decoded calculations from Ministry of Data and Statistics,C2026-09
 KR,cpi,contrib_agri,"Agricultural, livestock and fishery products",contribution to y/y,national,M,2023-12-01,0.56,ppt,Asia Decoded calculations from Ministry of Data and Statistics,C2026-09
 KR,cpi,contrib_industrial_ex_oil,Industrial products excl. petroleum,contribution to y/y,national,M,2023-12-01,0.94,ppt,Asia Decoded calculations from Ministry of Data and Statistics,C2026-09

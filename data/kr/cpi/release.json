@@ -3,11 +3,11 @@
  "label": "Sep 2026",
  "latest_month": "2026-09-01",
  "table": "ECOS 901Y009, 901Y010 (Ministry of Data and Statistics CPI, 2020 = 100, 2022 weights)",
- "processed_at": "2026-10-29T08:15:34Z",
- "rows": 15456,
+ "processed_at": "2026-10-29T08:24:12Z",
+ "rows": 15643,
  "warnings": [],
- "fingerprint": "4eb5cea548a78651",
- "long_rows": 30684,
+ "fingerprint": "3f7e5d6856e3b707",
+ "long_rows": 31034,
  "contrib_rows": 204,
  "diffusion_items": 458,
  "fit_max_gap": {
@@ -19,7 +19,7 @@
  "history": [
   {
    "code": "C2026-09",
-   "processed_at": "2026-10-29T08:15:34Z"
+   "processed_at": "2026-10-29T08:24:12Z"
   }
  ]
 }
