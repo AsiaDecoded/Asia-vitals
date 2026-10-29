@@ -1,14 +1,14 @@
 {
- "description": "National and Tokyo ward-area CPI (2025 base) from the Statistics Bureau via the e-Stat API (table 0004052037): headline, core measures, goods and services, the 10 major groups and seasonally adjusted series; index, m/m and y/y as published. Built by the AsiaDecoded/asia-vitals pipeline (data/jp/cpi/jp_cpi.csv).",
+ "description": "National and Tokyo ward-area CPI (2025 base) from the Statistics Bureau via the e-Stat API (table 0004052037): headline, core measures, goods and services, the 10 major groups, seasonally adjusted series, and services and energy detail (medical services, public transport, airfares, private and imputed rent, other services, electricity, city gas, LP gas, kerosene, gasoline); index, m/m and y/y as published. Built by the AsiaDecoded/asia-vitals pipeline (data/jp/cpi/jp_cpi.csv).",
  "schedule": "Replaced after each release by a scheduled task that reads AsiaDecoded/asia-vitals.",
  "source": {
   "kind": "file",
   "name": "jp_cpi_N2026-09_T2026-09.csv",
-  "url": "/_blob/e09cc215546dd50f9519f3e067def1c3"
+  "url": "/_blob/6a24800501fc0d831cdf42d1c8ab9a3a"
  },
  "title": "Japan CPI, Statistics Bureau",
  "updated": {
-  "at": "2026-10-25T07:33:38Z",
+  "at": "2026-10-29T04:30:00Z",
   "by": "Claude"
  }
 }

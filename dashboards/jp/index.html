@@ -3,7 +3,7 @@
 .jg-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; }
 .jg-take { margin: var(--cds-gap-xs) 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); max-width: 60rem; line-height: 1.5; }
 .jg-take b, .jg b { font-weight: var(--cds-font-weight-medium); color: var(--color-fg); }
-.jg-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: var(--cds-gap-md); }
+.jg-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); gap: var(--cds-gap-md); }
 .jg-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); position: relative; min-width: 0; }
 .jg-tile .lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
 .jg-tile .val { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; margin-top: var(--cds-gap-xs); }
@@ -16,6 +16,8 @@
 .jg-card h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
 .jg-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-xs) 0 var(--cds-gap-md); line-height: 1.45; }
 .jg-cardhead { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--cds-gap-sm); align-items: flex-start; }
+.jg-cardhead .jg-seg button { padding-left: 6px; padding-right: 6px; }
+.jg-cardhead > .jg-seg { margin: -1px 0; }
 .jg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
 .jg-chart { min-height: 280px; position: relative; }
 .jg-chart.small { min-height: 280px; }
@@ -74,6 +76,30 @@
 .ad-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; }
 .ad-png { font: inherit; font-size: 0.75rem; background: transparent; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); color: var(--color-fg-muted); padding: 1px 8px; cursor: pointer; white-space: nowrap; }
 .ad-png:hover { color: var(--color-fg); }
+.ad-x { position: absolute; top: 10px; right: 10px; width: 26px; height: 26px; display: inline-flex; align-items: center; justify-content: center; background: transparent; border: 1px solid transparent; border-radius: var(--cds-radius); color: var(--color-fg-muted); cursor: pointer; padding: 0; z-index: 2; }
+.ad-x:hover, .ad-x:focus-visible { color: var(--color-fg); border-color: var(--color-border-line); }
+.ad-x svg { width: 15px; height: 15px; }
+.jg-card.ad-hasx > h2, .jg-card.ad-hasx > .jg-cardhead { padding-right: 30px; }
+.jg-grid > .ad-expanded, .jg-grid:has(.ad-expanded) > * { grid-column: 1 / -1; }
+.ad-stack { display: flex; flex-direction: column; gap: var(--cds-gap-md); min-width: 0; }
+.ad-duo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-lg); margin-top: var(--cds-gap-sm); }
+.jg-card.ad-panel { border: 0; padding: 0; background: none; border-radius: 0; }
+.jg-card.ad-panel > h2 { font-size: 1rem; }
+.jg-card.ad-panel > .ad-x { display: none; }
+.jg-card.ad-panel.ad-hasx > h2, .jg-card.ad-panel.ad-hasx > .jg-cardhead { padding-right: 0; }
+.ad-stack table { font-size: 0.8125rem; line-height: 1.25; }
+.ad-stack table th, .ad-stack table td { padding: 3px 6px; }
+.ad-stack table thead th { font-size: 0.75rem; vertical-align: bottom; }
+.ad-stack .jg-card { padding-bottom: var(--cds-pad-md, 14px); }
+.ad-stack .jg-note { font-size: 0.75rem; }
+#cpi-movers-table { table-layout: fixed; width: 100%; }
+#cpi-movers-table th:nth-child(n+2) { width: 15%; }
+#cpi-movers-table { font-size: 0.8125rem; line-height: 1.25; }
+#cpi-movers-table th, #cpi-movers-table td { padding: 3px 6px; }
+#cpi-movers-table thead th { font-size: 0.75rem; vertical-align: bottom; }
+.jg-card.ad-full > .ad-x { display: none; }
+.jg-card.ad-full.ad-hasx > h2, .jg-card.ad-full.ad-hasx > .jg-cardhead { padding-right: 0; }
+
 .ad-shot { position: fixed; inset: 0; background: rgba(0,0,0,.55); display: flex; align-items: center; justify-content: center; z-index: 50; padding: 16px; }
 .ad-shot-box { margin-top: var(--cds-gap-md); padding-top: var(--cds-gap-md); border-top: 1px solid var(--color-border-line); display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
 .ad-shot-box img { width: 100%; height: auto; border: 1px solid var(--color-border-line); }
@@ -86,7 +112,6 @@
 .ad-method ul { margin: var(--cds-gap-xs) 0; padding-left: 1.2rem; }
 .ad-method li { margin: 2px 0; }
 .ad-method .ad-foot { margin-top: var(--cds-gap-lg); }
-#methodology { gap: var(--cds-gap-lg); }
 .ad-slider { position: relative; height: 22px; margin: 2px 8px 0; }
 .ad-slider-track { position: absolute; left: 0; right: 0; top: 9px; height: 4px; border-radius: 2px; background: var(--color-border-line); }
 .ad-slider-sel { position: absolute; top: 0; bottom: 0; background: var(--ad-c1); border-radius: 2px; opacity: 0.6; }
@@ -97,6 +122,56 @@
 .ad-slider input[type=range]::-moz-range-thumb { pointer-events: auto; width: 12px; height: 12px; border-radius: 50%; background: var(--color-bg); border: 2px solid var(--ad-c1); cursor: ew-resize; }
 .ad-slider input[type=range]:focus-visible::-webkit-slider-thumb { outline: 2px solid var(--ad-c1); outline-offset: 2px; }
 .ad-slider-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-align: right; margin: 0 8px 4px; font-variant-numeric: tabular-nums; }
+#cpi-heat-table { font-size: 0.8125rem; }
+#cpi-heat-table th, #cpi-heat-table td { padding: 3px 6px; }
+#cpi-heat-table th:nth-child(n+2), #cpi-heat-table td:nth-child(n+2) { text-align: center; }
+#cpi-heat-table td.heat { font-variant-numeric: tabular-nums; border: 2px solid var(--color-bg); }
+#cpi-heat-table th:first-child, #cpi-heat-table td:first-child { text-align: left; white-space: nowrap; }
+#cpi-heat-table td, #cpi-heat-table th { border-bottom: 0; }
+#cpi-heat-table tr.lead td { font-weight: 700; }
+#cpi-heat-table td.wt { color: var(--ad-ink, var(--color-fg-muted)); font-weight: 400; padding-right: 12px; }
+#cpi-heat > h2 { padding-bottom: var(--cds-gap-sm); border-bottom: 1px solid var(--ad-ink, var(--color-fg-muted)); }
+#cpi-heat-table thead th:first-child { font-weight: 400; font-size: 0.8125rem; color: var(--ad-ink, var(--color-fg-muted)); }
+#cpi-heat-table tr.sub td:first-child { padding-left: 1.1rem; }
+#cpi-heat-table tr.spacer td { height: 10px; padding: 0; border: 0; background: none; }
+#cpi-heat-table .heat-tog { font: inherit; font-weight: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-align: left; }
+#cpi-heat-table .heat-arrow { color: var(--ad-ink, var(--color-fg-muted)); font-size: 0.85em; }
+#cpi-heat .jg-tablewrap { overflow-x: auto; scrollbar-width: none; }
+#cpi-heat .jg-tablewrap::-webkit-scrollbar { display: none; }
+#cpi-heat .heat-barwrap { padding-bottom: var(--cds-gap-sm); border-bottom: 1px solid var(--ad-ink, var(--color-fg-muted)); }
+#cpi-heat .heat-track { position: relative; height: 8px; margin-top: 6px; border-radius: 4px; background: var(--color-border-line); cursor: pointer; touch-action: none; }
+#cpi-heat .heat-track[hidden] { display: none; }
+#cpi-heat .heat-thumb { position: absolute; top: 0; left: 0; height: 8px; border-radius: 4px; background: var(--ad-axis, #A6A6A6); cursor: grab; touch-action: none; }
+#cpi-heat .heat-thumb:active { cursor: grabbing; background: var(--ad-ink, var(--color-fg-muted)); }
+#cpi-heat-table th:nth-child(-n+2), #cpi-heat-table td:nth-child(-n+2) { position: sticky; left: 0; background: var(--color-panel); z-index: 1; }
+#cpi-heat-table th:nth-child(2), #cpi-heat-table td:nth-child(2) { left: var(--heat-c1, 0px); }
+#cpi-ctab-table { font-size: 0.8125rem; }
+#cpi-ctab-table th, #cpi-ctab-table td { padding: 3px 6px; }
+#cpi-ctab-table th:nth-child(n+2), #cpi-ctab-table td:nth-child(n+2) { text-align: center; }
+#cpi-ctab-table td.heat { font-variant-numeric: tabular-nums; border: 2px solid var(--color-bg); }
+#cpi-ctab-table th:first-child, #cpi-ctab-table td:first-child { text-align: left; white-space: nowrap; }
+#cpi-ctab-table td, #cpi-ctab-table th { border-bottom: 0; }
+#cpi-ctab-table tr.lead td { font-weight: 700; }
+#cpi-ctab-table td.wt { color: var(--ad-ink, var(--color-fg-muted)); font-weight: 400; padding-right: 12px; }
+#cpi-ctab > h2 { padding-bottom: var(--cds-gap-sm); border-bottom: 1px solid var(--ad-ink, var(--color-fg-muted)); }
+#cpi-ctab-table thead th:first-child { font-weight: 400; font-size: 0.8125rem; color: var(--ad-ink, var(--color-fg-muted)); }
+#cpi-ctab-table tr.sub td:first-child { padding-left: 1.1rem; }
+#cpi-ctab-table tr.spacer td { height: 10px; padding: 0; border: 0; background: none; }
+#cpi-ctab-table .heat-tog { font: inherit; font-weight: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-align: left; }
+#cpi-ctab-table .heat-arrow { color: var(--ad-ink, var(--color-fg-muted)); font-size: 0.85em; }
+#cpi-ctab .jg-tablewrap { overflow-x: auto; scrollbar-width: none; }
+#cpi-ctab .jg-tablewrap::-webkit-scrollbar { display: none; }
+#cpi-ctab .heat-barwrap { padding-bottom: var(--cds-gap-sm); border-bottom: 1px solid var(--ad-ink, var(--color-fg-muted)); }
+#cpi-ctab .heat-track { position: relative; height: 8px; margin-top: 6px; border-radius: 4px; background: var(--color-border-line); cursor: pointer; touch-action: none; }
+#cpi-ctab .heat-track[hidden] { display: none; }
+#cpi-ctab .heat-thumb { position: absolute; top: 0; left: 0; height: 8px; border-radius: 4px; background: var(--ad-axis, #A6A6A6); cursor: grab; touch-action: none; }
+#cpi-ctab .heat-thumb:active { cursor: grabbing; background: var(--ad-ink, var(--color-fg-muted)); }
+#cpi-ctab-table th:nth-child(-n+2), #cpi-ctab-table td:nth-child(-n+2) { position: sticky; left: 0; background: var(--color-panel); z-index: 1; }
+#cpi-ctab-table th:nth-child(2), #cpi-ctab-table td:nth-child(2) { left: var(--heat-c1, 0px); }
+.ad-notes { font-family: Arial, Helvetica, sans-serif; }
+.ad-notes ol { margin: var(--cds-gap-sm) 0 0; padding-left: 1.2rem; display: flex; flex-direction: column; gap: var(--cds-gap-xs); font-size: 0.8125rem; line-height: 1.5; color: var(--ad-ink, var(--color-fg-muted)); max-width: 60rem; }
+.ad-notes ol b { color: var(--ad-ink, var(--color-fg)); }
+#methodology { gap: var(--cds-gap-lg); }
 </style>
 
 <div class="jg">
@@ -233,9 +308,18 @@
       <div class="jg-card jg-tile"><div class="lbl">CPI, y/y</div>
         <div class="val"><span data-source="cpi_latest" data-field="all_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
         <div class="sub">prior month <span data-source="cpi_latest" data-field="all_yoy_prev" data-row="0">—</span>%</div></div>
-      <div class="jg-card jg-tile"><div class="lbl">Less fresh food and energy, y/y</div>
-        <div class="val"><span data-source="cpi_latest" data-field="core_core_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
-        <div class="sub">prior month <span data-source="cpi_latest" data-field="core_core_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Core (CPI less fresh food), y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="core_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="core_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Fresh food, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="fresh_food_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="fresh_food_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Food less fresh food, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="food_ex_fresh_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="food_ex_fresh_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Energy, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="energy_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="energy_yoy_prev" data-row="0">—</span>%</div></div>
       <div class="jg-card jg-tile"><div class="lbl">Goods, y/y</div>
         <div class="val"><span data-source="cpi_latest" data-field="goods_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
         <div class="sub">prior month <span data-source="cpi_latest" data-field="goods_yoy_prev" data-row="0">—</span>%</div></div>
@@ -273,15 +357,6 @@
         <div class="jg-chart" id="ppi-cpi-chart" data-source="cpi_series ppi_series"></div>
         <div class="ad-foot"><span>Source: Bank of Japan, Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
-      <section class="jg-card" id="cpi-ym">
-        <h2>Japan consumer inflation</h2>
-        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-ym-legend"></div><span class="ad-units r">% m/m</span></div>
-        <div class="jg-chart" id="cpi-ym-chart" data-source="cpi_series"></div>
-        <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
-      </section>
-    </div>
-
-    <div class="jg-grid">
       <section class="jg-card" id="cpi-measures">
         <div class="jg-cardhead">
           <div><h2>Japan consumer inflation</h2></div>
@@ -293,55 +368,20 @@
         <div class="jg-chart" id="cpi-measures-chart" data-source="cpi_series"></div>
         <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
+    </div>
+
+    <div class="jg-grid">
       <section class="jg-card" id="cpi-momentum">
         <div class="jg-cardhead">
           <div><h2>Japan consumer inflation</h2></div>
           <div class="jg-seg" id="cpi-sa-seg" role="group" aria-label="Measure">
-            <button data-s="all_sa" aria-pressed="true">Headline</button><button data-s="core_sa">Core 1</button><button data-s="core_core_sa">Core 2</button><button data-s="goods_sa">Goods</button><button data-s="services_sa">Services</button>
+            <button data-s="all_sa" data-name="CPI" aria-pressed="true">Headline</button><button data-s="core_sa" data-name="Core">Core</button><button data-s="core_core_sa" data-name="Core 1">Core 1</button><button data-s="goods_sa" data-name="Goods">Goods</button><button data-s="services_sa" data-name="Services">Services</button>
           </div>
         </div>
-        <div class="ad-top"><span class="ad-units">% m/m, seasonally adjusted</span><span></span><span class="ad-units r"></span></div>
+        <div class="ad-top"><span class="ad-units">%</span><div class="jg-legend" id="cpi-sa-legend"></div><span class="ad-units r"></span></div>
         <div class="jg-chart" id="cpi-sa-chart" data-source="cpi_series"></div>
         <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
-    </div>
-
-    <div class="jg-grid">
-      <section class="jg-card" id="cpi-contrib">
-        <h2>Japan consumer inflation contribution</h2>
-        <div class="ad-top"><span class="ad-units">ppt</span><div class="jg-legend" id="cpi-contrib-legend"></div><span class="ad-units r"></span></div>
-        <div class="jg-chart" id="cpi-contrib-chart" data-source="jp_cpi_contrib"></div>
-        <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
-      </section>
-      <section class="jg-card" id="cpi-diffusion">
-        <h2>Japan CPI diffusion index</h2>
-        <div class="ad-top"><span class="ad-units">% of items</span><div class="jg-legend" id="cpi-diffusion-legend"></div><span class="ad-units r"></span></div>
-        <div class="jg-chart" id="cpi-diffusion-chart" data-source="jp_cpi_diffusion"></div>
-        <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
-      </section>
-    </div>
-
-    <section class="jg-card" id="cpi-movers">
-      <div class="jg-cardhead">
-        <div><h2>Japan CPI biggest contributors</h2></div>
-        <div class="jg-seg" id="cpi-movers-seg" role="group" aria-label="Averaging window"><button data-n="3" aria-pressed="true">3m avg.</button><button data-n="6">6m avg.</button></div>
-      </div>
-      <div class="ad-top"><span class="ad-units" id="cpi-movers-units">%, ppt</span><span></span><span class="ad-units r"></span></div>
-      <div class="jg-tablewrap">
-        <table id="cpi-movers-table" data-source="cpi_movers" data-row-key="name">
-          <thead><tr>
-            <th data-field="name">Item</th>
-            <th data-field="weight">Weight</th>
-            <th data-field="yoy">y/y, latest</th>
-            <th data-field="avg3" id="cpi-movers-avg">Contribution, 3m avg.</th>
-          </tr></thead>
-          <tbody></tbody>
-        </table>
-      </div>
-      <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
-    </section>
-
-    <div class="jg-grid">
       <section class="jg-card" id="cpi-gs">
         <div class="jg-cardhead">
           <div><h2>Japan goods and services CPI</h2></div>
@@ -353,15 +393,94 @@
         <div class="jg-chart small" id="cpi-gs-chart" data-source="cpi_series"></div>
         <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-heat">
+        <h2>Japan consumer inflation, % y/y</h2>
+        <div class="jg-tablewrap" style="margin-top: var(--cds-gap-sm)">
+          <table id="cpi-heat-table" data-source="cpi_heat"></table>
+        </div>
+        <div class="ad-foot"><span>Source: Statistics Bureau of Japan, Asia Decoded calculations</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-ctab">
+        <h2>Japan CPI contributions, ppt</h2>
+        <div class="jg-tablewrap" style="margin-top: var(--cds-gap-sm)">
+          <table id="cpi-ctab-table" data-source="cpi_ctab"></table>
+        </div>
+        <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-movers">
+        <div class="jg-cardhead">
+          <div><h2>Japan CPI biggest contributors</h2></div>
+          <div class="jg-seg" id="cpi-movers-seg" role="group" aria-label="Averaging window"><button data-n="3" aria-pressed="true">3m avg.</button><button data-n="6">6m avg.</button></div>
+        </div>
+        <div class="ad-top"><span class="ad-units" id="cpi-movers-units">%, ppt</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-tablewrap">
+          <table id="cpi-movers-table" data-source="cpi_movers" data-row-key="name">
+            <thead><tr>
+              <th data-field="name">Item</th>
+              <th data-field="weight">Weight</th>
+              <th data-field="yoy">y/y, latest</th>
+              <th data-field="avg3" id="cpi-movers-avg">Contribution, 3m avg.</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-diffusion">
+        <h2>Japan CPI diffusion index</h2>
+        <div class="ad-top"><span class="ad-units">% of items</span><div class="jg-legend" id="cpi-diffusion-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-diffusion-chart" data-source="jp_cpi_diffusion"></div>
+        <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-contrib">
+        <h2>Japan consumer inflation contribution</h2>
+        <div class="ad-top"><span class="ad-units">ppt</span><div class="jg-legend" id="cpi-contrib-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-contrib-chart" data-source="jp_cpi_contrib"></div>
+        <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-ym">
+        <h2>Japan consumer inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-ym-legend"></div><span class="ad-units r">% m/m</span></div>
+        <div class="jg-chart" id="cpi-ym-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
       <section class="jg-card" id="cpi-drivers">
         <div class="jg-cardhead">
-          <div><h2>Japan fresh food and energy CPI</h2></div>
-          <div class="jg-seg" id="cpi-drivers-seg" role="group" aria-label="Area">
-            <button data-a="national" aria-pressed="true">National</button><button data-a="tokyo">Tokyo</button>
+          <div><h2>Japan food and energy CPI by component</h2></div>
+          <div style="display:flex; gap: var(--cds-gap-xs); flex-wrap: wrap; justify-content: flex-end">
+            <div class="jg-seg" id="cpi-fe-seg" role="group" aria-label="Series">
+              <button data-s="food" aria-pressed="true">Food</button><button data-s="energy">Energy</button>
+            </div>
+            <div class="jg-seg" id="cpi-drivers-seg" role="group" aria-label="Area">
+              <button data-a="national" aria-pressed="true">National</button><button data-a="tokyo">Tokyo</button>
+            </div>
           </div>
         </div>
         <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-drivers-legend"></div><span class="ad-units r"></span></div>
-        <div class="jg-chart small" id="cpi-drivers-chart" data-source="cpi_series"></div>
+        <div class="jg-chart" id="cpi-drivers-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-svc">
+        <div class="jg-cardhead">
+          <div><h2>Japan services CPI</h2></div>
+          <div class="jg-seg" id="cpi-svc-seg" role="group" aria-label="Series">
+            <button data-s="medical_services" data-name="Medical services" aria-pressed="true">Medical</button><button data-s="public_transport" data-name="Public transport">Public transport</button><button data-s="airfares" data-name="Airfares">Airfares</button><button data-s="rent" data-name="Rent">Rent</button><button data-s="other_services" data-name="Other services">Other</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-svc-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-svc-chart" data-source="cpi_series"></div>
         <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
     </div>
@@ -388,17 +507,17 @@
 
   <section class="jg-page" id="methodology" role="tabpanel" hidden>
     <article class="jg-card ad-method" id="method-core3">
-      <h2>Core 3 (less food and energy)</h2>
-      <p>Core 3 is an Asia Decoded measure of underlying inflation, built so Japan can be compared with core inflation in India and other economies that keep restaurant meals in their core measure.</p>
+      <h2>Core 2 (less food and energy)</h2>
+      <p>Core 2 is an Asia Decoded measure of underlying inflation, built so Japan can be compared with core inflation in India and other economies that keep restaurant meals in their core measure.</p>
       <h3>Why it is needed</h3>
-      <p>Japan publishes three core-type measures. Core 1 removes fresh food only, and Core 2 removes fresh food and energy. The third, &ldquo;all items less food (excluding alcoholic beverages) and energy&rdquo;, removes all of the Food group. In Japan&rsquo;s CPI, eating out sits inside Food, so that measure drops restaurant meals too. India&rsquo;s core measure (CPI excluding food and beverages and fuel) keeps them, because restaurant meals are a separate category there.</p>
+      <p>Japan publishes three core-type measures. Core removes fresh food only, and Core 1 removes fresh food and energy. The third, &ldquo;all items less food (excluding alcoholic beverages) and energy&rdquo;, removes all of the Food group. In Japan&rsquo;s CPI, eating out sits inside Food, so that measure drops restaurant meals too. India&rsquo;s core measure (CPI excluding food and beverages and fuel) keeps them, because restaurant meals are a separate category there.</p>
       <h3>Definition</h3>
       <ul>
         <li><b>Excluded:</b> food (including non-alcoholic drinks), electricity, gas, kerosene and gasoline.</li>
         <li><b>Kept:</b> eating out (including school lunches, which international classifications treat as canteen meals), alcoholic drinks, and everything outside food and energy.</li>
       </ul>
       <h3>Calculation</h3>
-      <p>Japan&rsquo;s CPI is a fixed-weight index, so within one base an aggregate equals the weighted average of its parts. Core 3 is the weighted average of two published indices, &ldquo;all items less food (excl. alcoholic beverages) and energy&rdquo; and &ldquo;eating out&rdquo;, using the Statistics Bureau&rsquo;s published weights for each base (from Table 5 of the monthly report). Within a base this is the index the Bureau would publish if it defined the aggregate.</p>
+      <p>Japan&rsquo;s CPI is a fixed-weight index, so within one base an aggregate equals the weighted average of its parts. Core 2 is the weighted average of two published indices, &ldquo;all items less food (excl. alcoholic beverages) and energy&rdquo; and &ldquo;eating out&rdquo;, using the Statistics Bureau&rsquo;s published weights for each base (from Table 5 of the monthly report). Within a base this is the index the Bureau would publish if it defined the aggregate.</p>
       <p>The year-on-year rate combines the two parts&rsquo; published year-on-year rates, each weighted by its weight times its index a year earlier (the aggregation rule for a fixed-weight index). Using the published rates, which the Bureau calculates from unrounded indices, avoids the rounding in the one-decimal indices; the result is checked against the change in the combined index.</p>
       <p>Everything is on the base the Bureau uses for that month&rsquo;s official rates: the 2015 base for 2016 to 2020, the 2020 base for 2021 to 2025 and the 2025 base from 2026. Both months of every comparison are on the same base. Data come from the e-Stat database for each base, national, monthly. As a check, the same calculation applied to the published &ldquo;less food and energy&rdquo; index alone reproduces its published year-on-year rate.</p>
       <h3>Limits</h3>

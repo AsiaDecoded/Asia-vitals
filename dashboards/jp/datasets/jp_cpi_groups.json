@@ -1,0 +1,15 @@
+{
+ "title": "CPI categories: weight, y/y and contribution",
+ "description": "Japan national CPI, Table 5 of each monthly report (Statistics Bureau), July 2016 onward, as published on the base then in use: weight (per 10,000), y/y and contribution to the all-items y/y for all items, core (less fresh food), core 1 (less fresh food and energy), fresh food, food less fresh food, energy and its five items, the 10 major groups with selected subgroups, and goods and services. Built by the AsiaDecoded/asia-vitals pipeline (data/jp/cpi_contrib/jp_cpi_groups.csv).",
+ "schedule": "Replaced after each release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "jp_cpi_groups_C2026-09.csv",
+  "url": "/_blob/120ac3e15a0fc59fb154e66f7e351c57"
+ },
+ "staleAfterHours": 1080,
+ "updated": {
+  "at": "2026-10-29T04:30:00Z",
+  "by": "Claude"
+ }
+}
