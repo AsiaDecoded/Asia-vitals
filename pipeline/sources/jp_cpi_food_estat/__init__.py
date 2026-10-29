@@ -49,7 +49,7 @@ HIST = {
     2020: ("0003427113", {"0002": 2626, "0041": 119, "0042": 460, "6090": 19, "6094": 19, "1952": 3},
            ["6090", "6094"], ["1952"], "2020-01-01", None, None),
 }
-HIST_VERSION = 1
+HIST_VERSION = 2
 W01_2020 = 2083  # published COICOP 01 weight, 2020 base (annual report appendix 5)
 
 
@@ -205,7 +205,8 @@ def update(from_file=None, **_):
     series, weight = parse(data)
 
     errors, warnings = [], []
-    pub = [{"date": d, "basis": "published", "base": 2025 if d >= "2026-01-01" else 2020, "weight": weight,
+    pub = [{"date": d, "basis": "published", "base": 2025 if d >= "2026-01-01" else 2020,
+            "weight": weight if d >= "2026-01-01" else W01_2020,
             **{k: v.get(k) for k in ("index", "mom", "yoy")}}
            for d, v in sorted(series.items()) if v.get("yoy") is not None]
     if not pub or pub[0]["date"] != "2021-01-01":
