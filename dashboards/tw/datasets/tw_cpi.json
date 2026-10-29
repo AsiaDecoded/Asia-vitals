@@ -1,13 +1,13 @@
 {
  "title": "Taiwan CPI, DGBAS",
- "description": "CPI for Taiwan: all items, DGBAS core, goods, services, energy, the seven groups and main subgroups, income groups and elderly households; index (2021 = 100), m/m, y/y and DGBAS seasonally adjusted index and m/m, as published by DGBAS, from 1960; plus food and non-alcoholic beverages (COICOP 01) y/y from Jan 2024, calculated by Asia Decoded (series food_coicop01, measure yoy_calc). DGBAS Macro Database via the AsiaDecoded/asia-vitals pipeline (data/tw/cpi/tw_cpi_dash.csv).",
+ "description": "CPI for Taiwan: all items, DGBAS core, goods, services, energy, the seven groups and main subgroups, income groups and elderly households; index (2021 = 100), m/m, y/y and DGBAS seasonally adjusted index and m/m, as published by DGBAS, from 1960; plus food and non-alcoholic beverages (COICOP 01) y/y from Jan 2024, calculated by Asia Decoded (series food01: index Dec 2022 = 100 and y/y). DGBAS Macro Database via the AsiaDecoded/asia-vitals pipeline (data/tw/cpi/tw_cpi_dash.csv).",
  "source": {
   "kind": "file",
-  "url": "/_blob/16c2baf6960bc3bf70946331fa24f9fa",
+  "url": "/_blob/f7ee4636d57267ef13e84c9b65dbdf24",
   "name": "tw_cpi_dash.csv"
  },
  "updated": {
-  "at": "2026-10-29T07:22:00Z",
+  "at": "2026-10-29T07:40:00Z",
   "by": "Claude"
  },
  "schedule": "Replaced after each DGBAS release by the refresh scheduled task that reads AsiaDecoded/asia-vitals (main)."
