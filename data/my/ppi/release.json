@@ -1,0 +1,19 @@
+{
+ "code": "P2026-08",
+ "label": "Aug 2026",
+ "latest_month": "2026-08-01",
+ "table": "OpenDOSM ppi, ppi_1d (2010 base)",
+ "dosm_last_updated": "2026-09-28 12:00",
+ "dosm_next_update": "2026-10-28 12:00",
+ "processed_at": "2026-10-28T02:46:12Z",
+ "rows": 1200,
+ "warnings": [],
+ "fingerprint": "620e79c0552ef852",
+ "long_rows": 4517,
+ "history": [
+  {
+   "code": "P2026-08",
+   "processed_at": "2026-10-28T02:46:12Z"
+  }
+ ]
+}

@@ -11,7 +11,9 @@
   "kr_cpi": "Ministry of Data and Statistics 2026 release schedule (mods.go.kr); 2027 expected from pattern",
   "kr_ppi": "Bank of Korea: no calendar found; pattern: around the 18th-23rd, 06:00 KST",
   "hk_cpi": "C&SD schedule of regular press releases (censtatd.gov.hk press_release.html, data/en/press_release/press_release_index.json), to Dec 2027",
-  "hk_ppi": "C&SD schedule of regular press releases: PPI for manufacturing (quarterly) and volume and price statistics of external merchandise trade (monthly), to Dec 2027"
+  "hk_ppi": "C&SD schedule of regular press releases: PPI for manufacturing (quarterly) and volume and price statistics of external merchandise trade (monthly), to Dec 2027",
+  "my_cpi": "DOSM: next date from OpenDOSM's catalogue (cpi_headline 'next update'); later dates expected from the pattern (around the 19th-23rd, 12:00-12:30 MYT)",
+  "my_ppi": "DOSM: next date from OpenDOSM's catalogue (ppi 'next update'); later dates expected from the pattern (around the 26th-30th, 12:00 MYT)"
  },
  "groups": {
   "jp_cpi": {"label": "Japan CPI (national) and CPI contributions", "sources": ["jp_cpi_estat", "jp_cpi_contrib_estat", "jp_cpi_food_estat", "jp_cpi_core3_estat"], "time_sgt": "07:30", "dates": [
@@ -67,6 +69,19 @@
    {"ref": "2026-12", "date": "2026-12-31", "status": "official", "note": "first release on the 2025 base: the source will stop with an ACTION error until updated"},
    {"ref": "2027-01", "date": "2027-02-02", "from": "2027-02-01", "to": "2027-02-05", "status": "expected"},
    {"ref": "2027-02", "date": "2027-03-03", "from": "2027-03-02", "to": "2027-03-06", "status": "expected"}]},
+  "my_cpi": {"label": "Malaysia CPI", "sources": ["my_cpi_dosm"], "time_sgt": "12:30", "dates": [
+   {"ref": "2026-10", "date": "2026-11-19", "status": "official"},
+   {"ref": "2026-11", "date": "2026-12-22", "from": "2026-12-18", "to": "2026-12-29", "status": "expected"},
+   {"ref": "2026-12", "date": "2027-01-21", "from": "2027-01-19", "to": "2027-01-27", "status": "expected"},
+   {"ref": "2027-01", "date": "2027-02-23", "from": "2027-02-19", "to": "2027-02-27", "status": "expected"},
+   {"ref": "2027-02", "date": "2027-03-22", "from": "2027-03-19", "to": "2027-03-26", "status": "expected"}]},
+  "my_ppi": {"label": "Malaysia producer prices", "sources": ["my_ppi_dosm"], "time_sgt": "12:00", "dates": [
+   {"ref": "2026-09", "date": "2026-10-28", "status": "official"},
+   {"ref": "2026-10", "date": "2026-11-27", "from": "2026-11-25", "to": "2026-12-03", "status": "expected"},
+   {"ref": "2026-11", "date": "2026-12-29", "from": "2026-12-24", "to": "2027-01-05", "status": "expected"},
+   {"ref": "2026-12", "date": "2027-01-28", "from": "2027-01-26", "to": "2027-02-03", "status": "expected"},
+   {"ref": "2027-01", "date": "2027-02-26", "from": "2027-02-24", "to": "2027-03-04", "status": "expected"},
+   {"ref": "2027-02", "date": "2027-03-29", "from": "2027-03-26", "to": "2027-04-02", "status": "expected"}]},
   "kr_ppi": {"label": "South Korea producer prices", "sources": ["kr_ppi_ecos"], "time_sgt": "05:00", "dates": [
    {"ref": "2026-10", "date": "2026-11-20", "from": "2026-11-17", "to": "2026-11-25", "status": "expected"},
    {"ref": "2026-11", "date": "2026-12-18", "from": "2026-12-16", "to": "2026-12-23", "status": "expected"},

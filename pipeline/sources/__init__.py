@@ -22,4 +22,6 @@ SOURCES = [
     "kr_ppi_ecos",
     "hk_cpi_censtatd",
     "hk_ppi_censtatd",
+    "my_cpi_dosm",
+    "my_ppi_dosm",
 ]
