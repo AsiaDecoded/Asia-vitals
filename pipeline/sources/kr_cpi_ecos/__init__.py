@@ -57,9 +57,18 @@ SERIES = [
     ("public", "901Y010", "222", "Public services", "goods_services"),
     ("personal", "901Y010", "223", "Personal services", "goods_services"),
     ("eating_out", "901Y010", "2231", "Eating out", "goods_services"),
+    ("personal_ex_eating_out", "901Y010", "2239", "Personal services excl. eating out", "goods_services"),
     ("fresh", "901Y010", "10", "Fresh food", "drivers"),
     ("ex_fresh", "901Y010", "20", "Excl. fresh food", "headline"),
-] + [("div_" + c, "901Y009", c, lab, "divisions") for c, lab in DIVS.items()]
+] + [("div_" + c, "901Y009", c, lab, "divisions") for c, lab in DIVS.items()] + [
+    # published item indices (item history in the store from Jan 2015)
+    ("jeonse", "901Y009", "D01101", "Jeonse (lump-sum deposit rent)", "items"),
+    ("monthly_rent", "901Y009", "D01102", "Monthly rent", "items"),
+    ("electricity", "901Y009", "D05101", "Electricity", "items"),
+    ("city_gas", "901Y009", "D05201", "City gas", "items"),
+    ("petrol", "901Y009", "G02101", "Petrol", "items"),
+    ("diesel", "901Y009", "G02102", "Diesel", "items"),
+]
 REQUIRED = ["all", "ex_food_energy", "ex_agri_oil", "goods", "services", "fresh", "petroleum", "utilities"]
 # Contribution parts (special classification); industrial excl. petroleum = 212 minus 2125.
 PARTS = [("agri", "Agricultural, livestock and fishery products"), ("industrial_ex_oil", "Industrial products excl. petroleum"),
@@ -276,6 +285,11 @@ def update(**_):
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {state.get('label')})"}
     ecos.save_store(store)
     _write_csv(OUT / "kr_cpi.csv", ["date", "area", "series", "label", "group", "order", "index", "yoy"], rows)
+    # Published 2022 basket weights (per 1,000) of every series in kr_cpi.csv: ECOS's weight for that item
+    wts = {"901Y009": _weights(store, "901Y009"), "901Y010": w10}
+    _write_csv(OUT / "kr_cpi_series_weights.csv", ["series", "label", "weight"],
+               [{"series": key, "label": lab, "weight": wts[table].get(code)} for key, table, code, lab, _g in SERIES
+                if wts[table].get(code) is not None])
     _write_csv(OUT / "kr_cpi_contrib.csv", ["date", "series", "label", "order", "contrib_yoy"], contrib)
     _write_csv(OUT / "kr_cpi_items.csv", ["date", "code", "name", "weight", "index", "yoy", "contrib_yoy"], items_rows)
     _write_csv(OUT / "kr_cpi_diffusion.csv", ["date", "items", "rising", "falling", "unchanged", "share_rising",
