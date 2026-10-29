@@ -1,0 +1,757 @@
+country,indicator,series,label,measure,area,freq,date,value,unit,source,release
+ID,ppi,wpi,"WPI, general",index,national,M,2025-01-01,104.2,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2025-01-01,0.8,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2025-01-01,0.8,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2025-01-01,2.11,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2025-01-01,0.8,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2025-01-01,2.11,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2025-01-01,106.7,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2025-01-01,2.69,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2025-01-01,2.69,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2025-01-01,1.97,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2025-01-01,0.48,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2025-01-01,0.36,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2025-01-01,101.41,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2025-01-01,0.0,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2025-01-01,0.0,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2025-01-01,0.59,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2025-01-01,0.0,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2025-01-01,0.01,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2025-01-01,105.89,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2025-01-01,0.46,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2025-01-01,0.46,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2025-01-01,2.78,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2025-01-01,0.15,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2025-01-01,0.89,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2025-01-01,101.35,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2025-01-01,0.43,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2025-01-01,0.43,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2025-01-01,1.28,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2025-01-01,0.12,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2025-01-01,0.35,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2025-01-01,103.46,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2025-01-01,0.24,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2025-01-01,0.24,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2025-01-01,2.33,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2025-01-01,0.05,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2025-01-01,0.5,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2025-02-01,104.34,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2025-02-01,0.13,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2025-02-01,0.94,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2025-02-01,1.3,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2025-02-01,0.13,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2025-02-01,1.3,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2025-02-01,106.07,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2025-02-01,-0.59,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2025-02-01,2.08,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2025-02-01,-0.24,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2025-02-01,-0.11,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2025-02-01,-0.04,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2025-02-01,100.21,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2025-02-01,-1.18,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2025-02-01,-1.08,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2025-02-01,-0.44,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2025-02-01,-0.01,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2025-02-01,-0.01,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2025-02-01,106.27,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2025-02-01,0.36,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2025-02-01,0.82,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2025-02-01,1.3,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2025-02-01,0.11,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2025-02-01,0.42,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2025-02-01,101.76,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2025-02-01,0.4,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2025-02-01,0.84,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2025-02-01,1.54,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2025-02-01,0.11,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2025-02-01,0.42,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2025-02-01,103.61,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2025-02-01,0.14,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2025-02-01,0.39,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2025-02-01,2.42,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2025-02-01,0.03,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2025-02-01,0.51,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2025-03-01,105.12,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2025-03-01,0.75,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2025-03-01,1.69,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2025-03-01,1.58,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2025-03-01,0.75,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2025-03-01,1.58,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2025-03-01,109.2,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2025-03-01,2.95,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2025-03-01,5.09,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2025-03-01,1.94,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2025-03-01,0.54,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2025-03-01,0.36,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2025-03-01,100.54,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2025-03-01,0.33,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2025-03-01,-0.75,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2025-03-01,-0.31,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2025-03-01,0.0,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2025-03-01,-0.01,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2025-03-01,106.82,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2025-03-01,0.52,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2025-03-01,1.34,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2025-03-01,0.88,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2025-03-01,0.17,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2025-03-01,0.28,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2025-03-01,101.76,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2025-03-01,0.0,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2025-03-01,0.84,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2025-03-01,1.47,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2025-03-01,0.0,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2025-03-01,0.4,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2025-03-01,103.83,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2025-03-01,0.21,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2025-03-01,0.6,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2025-03-01,2.61,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2025-03-01,0.04,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2025-03-01,0.55,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2025-04-01,105.07,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2025-04-01,-0.05,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2025-04-01,1.64,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2025-04-01,1.63,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2025-04-01,-0.05,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2025-04-01,1.63,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2025-04-01,108.41,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2025-04-01,-0.72,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2025-04-01,4.33,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2025-04-01,2.62,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2025-04-01,-0.13,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2025-04-01,0.48,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2025-04-01,100.89,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2025-04-01,0.35,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2025-04-01,-0.51,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2025-04-01,-0.1,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2025-04-01,0.01,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2025-04-01,0.0,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2025-04-01,106.86,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2025-04-01,0.04,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2025-04-01,1.38,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2025-04-01,0.79,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2025-04-01,0.01,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2025-04-01,0.26,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2025-04-01,101.8,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2025-04-01,0.04,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2025-04-01,0.87,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2025-04-01,1.49,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2025-04-01,0.01,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2025-04-01,0.4,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2025-04-01,104.09,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2025-04-01,0.25,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2025-04-01,0.85,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2025-04-01,2.34,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2025-04-01,0.05,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2025-04-01,0.49,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2025-05-01,104.6,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2025-05-01,-0.45,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2025-05-01,1.19,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2025-05-01,1.23,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2025-05-01,-0.45,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2025-05-01,1.23,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2025-05-01,106.08,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2025-05-01,-2.15,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2025-05-01,2.09,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2025-05-01,0.27,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2025-05-01,-0.4,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2025-05-01,0.05,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2025-05-01,101.26,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2025-05-01,0.37,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2025-05-01,-0.15,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2025-05-01,-0.2,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2025-05-01,0.0,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2025-05-01,0.0,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2025-05-01,106.81,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2025-05-01,-0.05,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2025-05-01,1.33,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2025-05-01,1.07,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2025-05-01,-0.02,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2025-05-01,0.34,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2025-05-01,101.71,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2025-05-01,-0.09,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2025-05-01,0.78,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2025-05-01,1.37,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2025-05-01,-0.02,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2025-05-01,0.37,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2025-05-01,104.05,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2025-05-01,-0.04,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2025-05-01,0.81,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2025-05-01,2.23,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2025-05-01,-0.01,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2025-05-01,0.47,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2025-06-01,104.73,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2025-06-01,0.12,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2025-06-01,1.32,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2025-06-01,1.36,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2025-06-01,0.12,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2025-06-01,1.36,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2025-06-01,106.6,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2025-06-01,0.49,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2025-06-01,2.59,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2025-06-01,0.94,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2025-06-01,0.09,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2025-06-01,0.17,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2025-06-01,100.0,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2025-06-01,-1.24,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2025-06-01,-1.39,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2025-06-01,-1.03,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2025-06-01,-0.01,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2025-06-01,-0.01,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2025-06-01,107.04,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2025-06-01,0.22,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2025-06-01,1.55,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2025-06-01,1.38,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2025-06-01,0.07,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2025-06-01,0.44,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2025-06-01,101.62,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2025-06-01,-0.09,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2025-06-01,0.69,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2025-06-01,1.1,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2025-06-01,-0.03,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2025-06-01,0.3,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2025-06-01,104.07,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2025-06-01,0.02,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2025-06-01,0.83,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2025-06-01,2.15,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2025-06-01,0.0,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2025-06-01,0.46,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2025-07-01,105.19,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2025-07-01,0.44,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2025-07-01,1.76,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2025-07-01,1.89,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2025-07-01,0.44,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2025-07-01,1.89,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2025-07-01,108.15,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2025-07-01,1.45,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2025-07-01,4.08,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2025-07-01,4.1,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2025-07-01,0.27,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2025-07-01,0.74,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2025-07-01,100.14,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2025-07-01,0.14,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2025-07-01,-1.25,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2025-07-01,-1.35,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2025-07-01,0.0,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2025-07-01,-0.01,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2025-07-01,107.32,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2025-07-01,0.26,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2025-07-01,1.81,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2025-07-01,1.37,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2025-07-01,0.08,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2025-07-01,0.44,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2025-07-01,101.88,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2025-07-01,0.26,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2025-07-01,0.95,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2025-07-01,1.29,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2025-07-01,0.07,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2025-07-01,0.35,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2025-07-01,104.16,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2025-07-01,0.09,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2025-07-01,0.92,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2025-07-01,1.75,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2025-07-01,0.02,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2025-07-01,0.37,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2025-08-01,105.2,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2025-08-01,0.01,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2025-08-01,1.77,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2025-08-01,2.03,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2025-08-01,0.01,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2025-08-01,2.03,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2025-08-01,107.77,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2025-08-01,-0.35,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2025-08-01,3.71,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2025-08-01,4.14,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2025-08-01,-0.06,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2025-08-01,0.75,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2025-08-01,99.53,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2025-08-01,-0.61,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2025-08-01,-1.85,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2025-08-01,-1.69,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2025-08-01,-0.01,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2025-08-01,-0.02,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2025-08-01,107.25,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2025-08-01,-0.07,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2025-08-01,1.75,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2025-08-01,2.06,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2025-08-01,-0.02,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2025-08-01,0.66,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2025-08-01,102.14,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2025-08-01,0.26,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2025-08-01,1.21,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2025-08-01,1.28,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2025-08-01,0.07,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2025-08-01,0.35,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2025-08-01,104.29,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2025-08-01,0.12,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2025-08-01,1.05,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2025-08-01,1.35,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2025-08-01,0.03,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2025-08-01,0.29,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2025-09-01,105.27,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2025-09-01,0.07,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2025-09-01,1.84,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2025-09-01,2.31,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2025-09-01,0.07,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2025-09-01,2.31,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2025-09-01,107.46,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2025-09-01,-0.29,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2025-09-01,3.42,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2025-09-01,5.74,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2025-09-01,-0.05,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2025-09-01,1.01,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2025-09-01,99.67,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2025-09-01,0.14,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2025-09-01,-1.72,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2025-09-01,-1.21,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2025-09-01,0.0,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2025-09-01,-0.01,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2025-09-01,107.63,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2025-09-01,0.35,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2025-09-01,2.11,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2025-09-01,2.14,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2025-09-01,0.11,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2025-09-01,0.69,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2025-09-01,102.09,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2025-09-01,-0.05,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2025-09-01,1.16,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2025-09-01,1.23,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2025-09-01,-0.01,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2025-09-01,0.34,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2025-09-01,104.41,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2025-09-01,0.12,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2025-09-01,1.16,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2025-09-01,1.33,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2025-09-01,0.02,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2025-09-01,0.28,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2025-10-01,105.46,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2025-10-01,0.18,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2025-10-01,2.02,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2025-10-01,2.61,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2025-10-01,0.18,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2025-10-01,2.61,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2025-10-01,107.96,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2025-10-01,0.47,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2025-10-01,3.9,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2025-10-01,7.06,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2025-10-01,0.09,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2025-10-01,1.24,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2025-10-01,100.06,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2025-10-01,0.39,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2025-10-01,-1.33,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2025-10-01,-0.65,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2025-10-01,0.0,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2025-10-01,-0.01,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2025-10-01,107.82,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2025-10-01,0.18,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2025-10-01,2.29,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2025-10-01,2.12,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2025-10-01,0.06,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2025-10-01,0.69,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2025-10-01,102.18,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2025-10-01,0.09,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2025-10-01,1.25,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2025-10-01,1.47,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2025-10-01,0.02,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2025-10-01,0.4,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2025-10-01,104.45,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2025-10-01,0.04,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2025-10-01,1.2,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2025-10-01,1.32,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2025-10-01,0.01,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2025-10-01,0.29,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2025-11-01,105.4,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2025-11-01,-0.06,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2025-11-01,1.96,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2025-11-01,2.35,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2025-11-01,-0.06,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2025-11-01,2.35,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2025-11-01,107.83,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2025-11-01,-0.12,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2025-11-01,3.77,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2025-11-01,5.76,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2025-11-01,-0.02,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2025-11-01,1.02,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2025-11-01,100.83,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2025-11-01,0.77,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2025-11-01,-0.57,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2025-11-01,0.1,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2025-11-01,0.01,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2025-11-01,0.0,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2025-11-01,107.68,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2025-11-01,-0.13,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2025-11-01,2.15,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2025-11-01,2.16,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2025-11-01,-0.04,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2025-11-01,0.7,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2025-11-01,102.11,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2025-11-01,-0.07,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2025-11-01,1.18,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2025-11-01,1.27,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2025-11-01,-0.02,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2025-11-01,0.35,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2025-11-01,104.51,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2025-11-01,0.06,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2025-11-01,1.26,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2025-11-01,1.31,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2025-11-01,0.01,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2025-11-01,0.28,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2025-12-01,106.3,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2025-12-01,0.85,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2025-12-01,2.83,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2025-12-01,2.83,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2025-12-01,0.85,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2025-12-01,2.83,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2025-12-01,111.87,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2025-12-01,3.75,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2025-12-01,7.66,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2025-12-01,7.66,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2025-12-01,0.68,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2025-12-01,1.38,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2025-12-01,101.15,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2025-12-01,0.32,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2025-12-01,-0.26,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2025-12-01,-0.26,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2025-12-01,0.0,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2025-12-01,-0.01,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2025-12-01,108.04,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2025-12-01,0.33,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2025-12-01,2.5,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2025-12-01,2.5,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2025-12-01,0.1,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2025-12-01,0.8,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2025-12-01,102.32,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2025-12-01,0.21,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2025-12-01,1.39,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2025-12-01,1.39,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2025-12-01,0.06,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2025-12-01,0.38,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2025-12-01,104.55,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2025-12-01,0.04,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2025-12-01,1.3,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2025-12-01,1.3,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2025-12-01,0.01,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2025-12-01,0.28,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2026-01-01,106.0,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2026-01-01,-0.28,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2026-01-01,-0.28,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2026-01-01,1.73,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2026-01-01,-0.28,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2026-01-01,1.73,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2026-01-01,109.05,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2026-01-01,-2.52,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2026-01-01,-2.52,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2026-01-01,2.2,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2026-01-01,-0.47,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2026-01-01,0.4,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2026-01-01,102.15,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2026-01-01,0.99,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2026-01-01,0.99,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2026-01-01,0.73,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2026-01-01,0.01,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2026-01-01,0.01,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2026-01-01,108.4,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2026-01-01,0.33,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2026-01-01,0.33,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2026-01-01,2.37,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2026-01-01,0.11,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2026-01-01,0.76,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2026-01-01,102.14,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2026-01-01,-0.18,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2026-01-01,-0.18,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2026-01-01,0.78,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2026-01-01,-0.05,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2026-01-01,0.21,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2026-01-01,105.14,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2026-01-01,0.56,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2026-01-01,0.56,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2026-01-01,1.62,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2026-01-01,0.12,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2026-01-01,0.35,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2026-02-01,106.85,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2026-02-01,0.8,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2026-02-01,0.52,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2026-02-01,2.41,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2026-02-01,0.8,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2026-02-01,2.41,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2026-02-01,111.91,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2026-02-01,2.62,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2026-02-01,0.04,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2026-02-01,5.51,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2026-02-01,0.48,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2026-02-01,1.0,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2026-02-01,102.4,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2026-02-01,0.24,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2026-02-01,1.24,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2026-02-01,2.19,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2026-02-01,0.0,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2026-02-01,0.02,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2026-02-01,108.93,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2026-02-01,0.49,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2026-02-01,0.82,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2026-02-01,2.5,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2026-02-01,0.16,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2026-02-01,0.81,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2026-02-01,102.42,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2026-02-01,0.27,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2026-02-01,0.1,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2026-02-01,0.65,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2026-02-01,0.07,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2026-02-01,0.18,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2026-02-01,105.56,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2026-02-01,0.4,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2026-02-01,0.97,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2026-02-01,1.88,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2026-02-01,0.09,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2026-02-01,0.4,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2026-03-01,107.52,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2026-03-01,0.63,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2026-03-01,1.15,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2026-03-01,2.28,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2026-03-01,0.63,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2026-03-01,2.28,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2026-03-01,113.25,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2026-03-01,1.2,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2026-03-01,1.23,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2026-03-01,3.71,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2026-03-01,0.22,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2026-03-01,0.69,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2026-03-01,101.77,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2026-03-01,-0.62,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2026-03-01,0.61,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2026-03-01,1.22,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2026-03-01,-0.01,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2026-03-01,0.01,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2026-03-01,109.57,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2026-03-01,0.59,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2026-03-01,1.42,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2026-03-01,2.57,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2026-03-01,0.19,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2026-03-01,0.82,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2026-03-01,102.9,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2026-03-01,0.47,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2026-03-01,0.57,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2026-03-01,1.12,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2026-03-01,0.13,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2026-03-01,0.3,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2026-03-01,106.05,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2026-03-01,0.46,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2026-03-01,1.43,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2026-03-01,2.14,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2026-03-01,0.1,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2026-03-01,0.46,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2026-04-01,109.07,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2026-04-01,1.44,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2026-04-01,2.61,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2026-04-01,3.81,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2026-04-01,1.44,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2026-04-01,3.81,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2026-04-01,113.31,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2026-04-01,0.05,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2026-04-01,1.29,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2026-04-01,4.52,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2026-04-01,0.01,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2026-04-01,0.84,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2026-04-01,103.34,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2026-04-01,1.54,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2026-04-01,2.17,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2026-04-01,2.43,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2026-04-01,0.02,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2026-04-01,0.02,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2026-04-01,110.06,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2026-04-01,0.45,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2026-04-01,1.87,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2026-04-01,2.99,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2026-04-01,0.14,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2026-04-01,0.96,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2026-04-01,107.04,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2026-04-01,4.02,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2026-04-01,4.61,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2026-04-01,5.15,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2026-04-01,1.08,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2026-04-01,1.39,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2026-04-01,107.0,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2026-04-01,0.9,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2026-04-01,2.34,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2026-04-01,2.8,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2026-04-01,0.19,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2026-04-01,0.6,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2026-05-01,110.63,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2026-05-01,1.43,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2026-05-01,4.07,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2026-05-01,5.76,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2026-05-01,1.43,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2026-05-01,5.76,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2026-05-01,114.28,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2026-05-01,0.86,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2026-05-01,2.15,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2026-05-01,7.73,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2026-05-01,0.16,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2026-05-01,1.4,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2026-05-01,110.29,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2026-05-01,6.73,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2026-05-01,9.04,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2026-05-01,8.92,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2026-05-01,0.07,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2026-05-01,0.09,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2026-05-01,110.78,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2026-05-01,0.65,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2026-05-01,2.54,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2026-05-01,3.72,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2026-05-01,0.2,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2026-05-01,1.2,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2026-05-01,109.82,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2026-05-01,2.6,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2026-05-01,7.33,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2026-05-01,7.97,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2026-05-01,0.71,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2026-05-01,2.16,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2026-05-01,108.45,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2026-05-01,1.36,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2026-05-01,3.73,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2026-05-01,4.23,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2026-05-01,0.29,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2026-05-01,0.91,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2026-06-01,111.55,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2026-06-01,0.83,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2026-06-01,4.94,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2026-06-01,6.51,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2026-06-01,0.83,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2026-06-01,6.51,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2026-06-01,115.49,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2026-06-01,1.06,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2026-06-01,3.24,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2026-06-01,8.34,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2026-06-01,0.2,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2026-06-01,1.52,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2026-06-01,110.87,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2026-06-01,0.53,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2026-06-01,9.61,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2026-06-01,10.87,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2026-06-01,0.0,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2026-06-01,0.11,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2026-06-01,111.27,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2026-06-01,0.44,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2026-06-01,2.99,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2026-06-01,3.95,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2026-06-01,0.14,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2026-06-01,1.27,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2026-06-01,110.8,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2026-06-01,0.89,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2026-06-01,8.29,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2026-06-01,9.03,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2026-06-01,0.25,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2026-06-01,2.45,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2026-06-01,109.69,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2026-06-01,1.14,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2026-06-01,4.92,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2026-06-01,5.4,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2026-06-01,0.24,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2026-06-01,1.16,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2026-07-01,111.14,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2026-07-01,-0.37,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2026-07-01,4.55,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2026-07-01,5.66,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2026-07-01,-0.37,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2026-07-01,5.66,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2026-07-01,112.89,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2026-07-01,-2.25,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2026-07-01,0.91,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2026-07-01,4.38,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2026-07-01,-0.41,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2026-07-01,0.81,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2026-07-01,110.94,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2026-07-01,0.06,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2026-07-01,9.68,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2026-07-01,10.78,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2026-07-01,0.0,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2026-07-01,0.11,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2026-07-01,111.49,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2026-07-01,0.2,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2026-07-01,3.19,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2026-07-01,3.89,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2026-07-01,0.06,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2026-07-01,1.25,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2026-07-01,110.37,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2026-07-01,-0.39,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2026-07-01,7.87,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2026-07-01,8.33,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2026-07-01,-0.11,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2026-07-01,2.26,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2026-07-01,110.17,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2026-07-01,0.44,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2026-07-01,5.38,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2026-07-01,5.77,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2026-07-01,0.09,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2026-07-01,1.23,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2026-08-01,111.7,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2026-08-01,0.5,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2026-08-01,5.08,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2026-08-01,6.18,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2026-08-01,0.5,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2026-08-01,6.18,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2026-08-01,114.12,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2026-08-01,1.09,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2026-08-01,2.01,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2026-08-01,5.89,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2026-08-01,0.2,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2026-08-01,1.08,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2026-08-01,113.96,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2026-08-01,2.72,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2026-08-01,12.66,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2026-08-01,14.5,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2026-08-01,0.03,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2026-08-01,0.15,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2026-08-01,112.1,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2026-08-01,0.55,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2026-08-01,3.76,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2026-08-01,4.52,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2026-08-01,0.17,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2026-08-01,1.45,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2026-08-01,110.46,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2026-08-01,0.08,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2026-08-01,7.96,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2026-08-01,8.15,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2026-08-01,0.02,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2026-08-01,2.21,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2026-08-01,110.62,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2026-08-01,0.41,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2026-08-01,5.81,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2026-08-01,6.07,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2026-08-01,0.08,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2026-08-01,1.29,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",index,national,M,2026-09-01,112.39,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",mom,national,M,2026-09-01,0.62,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",ytd,national,M,2026-09-01,5.73,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",yoy,national,M,2026-09-01,6.76,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_mom,national,M,2026-09-01,0.62,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,wpi,"WPI, general",contrib_yoy,national,M,2026-09-01,6.76,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",index,national,M,2026-09-01,115.66,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",mom,national,M,2026-09-01,1.35,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",ytd,national,M,2026-09-01,3.39,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",yoy,national,M,2026-09-01,7.63,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_mom,national,M,2026-09-01,0.25,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,agriculture,"Agriculture, forestry and fishery products",contrib_yoy,national,M,2026-09-01,1.39,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",index,national,M,2026-09-01,114.23,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",mom,national,M,2026-09-01,0.24,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",ytd,national,M,2026-09-01,12.93,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",yoy,national,M,2026-09-01,14.61,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_mom,national,M,2026-09-01,0.0,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,ores_utilities,"Ores and minerals; electricity, gas and water",contrib_yoy,national,M,2026-09-01,0.15,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",index,national,M,2026-09-01,112.61,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",mom,national,M,2026-09-01,0.45,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",ytd,national,M,2026-09-01,4.23,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",yoy,national,M,2026-09-01,4.63,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_mom,national,M,2026-09-01,0.14,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,food_textiles,"Food, beverages and tobacco; textiles, apparel and leather",contrib_yoy,national,M,2026-09-01,1.49,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",index,national,M,2026-09-01,111.1,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",mom,national,M,2026-09-01,0.58,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",ytd,national,M,2026-09-01,8.58,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",yoy,national,M,2026-09-01,8.83,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_mom,national,M,2026-09-01,0.16,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,other_goods,"Other transportable goods, except metal products and machinery",contrib_yoy,national,M,2026-09-01,2.39,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",index,national,M,2026-09-01,110.95,"index, 2023 = 100",BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",mom,national,M,2026-09-01,0.3,% m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",ytd,national,M,2026-09-01,6.12,% YTD,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",yoy,national,M,2026-09-01,6.26,%,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_mom,national,M,2026-09-01,0.07,pp of WPI m/m,BPS-Statistics Indonesia (WebAPI),P2026-09
+ID,ppi,metal_machinery,"Metal products, machinery and equipment",contrib_yoy,national,M,2026-09-01,1.34,pp of WPI y/y,BPS-Statistics Indonesia (WebAPI),P2026-09

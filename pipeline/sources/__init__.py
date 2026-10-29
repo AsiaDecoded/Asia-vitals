@@ -29,4 +29,7 @@ SOURCES = [
     "th_cpi_tpso",
     "th_ppi_tpso",
     "th_xmpi_tpso",
+    "id_cpi_seki",
+    "id_cpi_bps",
+    "id_wpi_bps",
 ]
