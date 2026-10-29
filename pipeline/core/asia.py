@@ -44,6 +44,8 @@ SPEC = [
     ("KR", "cpi", "kr/cpi/kr_cpi.csv", {"area": "national", "series": "all"}, "yoy", CALC, "All items"),
     ("KR", "food", "kr/cpi/kr_cpi.csv", {"area": "national", "series": "div_A"}, "yoy", CALC, "Food and non-alcoholic beverages"),
     ("KR", "core", "kr/cpi/kr_cpi.csv", {"area": "national", "series": "ex_food_energy"}, "yoy", CALC, "Excl. food and energy"),
+    # Official core: the Bank of Korea's measure (excl. food and energy), the same series as core
+    ("KR", "official_core", "kr/cpi/kr_cpi.csv", {"area": "national", "series": "ex_food_energy"}, "yoy", CALC, "Excl. food and energy (Bank of Korea's core)"),
     ("KR", "ppi", "kr/ppi/kr_ppi.csv", {"series": "ppi"}, "yoy", CALC, "PPI"),
     # Taiwan
     ("TW", "cpi", "tw/cpi/tw_cpi.csv", {"area": "national", "series": "all", "measure": "yoy"}, "value", PUB, "All items"),
