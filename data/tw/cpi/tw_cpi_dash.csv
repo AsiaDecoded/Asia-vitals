@@ -51502,6 +51502,7 @@ date,area,series,measure,value
 2022-12-01,national,core,sa_index,103.61
 2022-12-01,national,core,sa_mom,0.14
 2022-12-01,national,core,yoy,2.72
+2022-12-01,national,core1,index,100.0
 2022-12-01,national,core_goods,index,103.84
 2022-12-01,national,core_goods,mom,-0.07
 2022-12-01,national,core_goods,yoy,2.6
@@ -51615,6 +51616,7 @@ date,area,series,measure,value
 2023-01-01,national,core,sa_index,103.99
 2023-01-01,national,core,sa_mom,0.37
 2023-01-01,national,core,yoy,2.98
+2023-01-01,national,core1,index,100.9882
 2023-01-01,national,core_goods,index,103.88
 2023-01-01,national,core_goods,mom,0.04
 2023-01-01,national,core_goods,yoy,2.68
@@ -51728,6 +51730,7 @@ date,area,series,measure,value
 2023-02-01,national,core,sa_index,104.24
 2023-02-01,national,core,sa_mom,0.24
 2023-02-01,national,core,yoy,2.53
+2023-02-01,national,core1,index,100.4139
 2023-02-01,national,core_goods,index,104.07
 2023-02-01,national,core_goods,mom,0.18
 2023-02-01,national,core_goods,yoy,2.57
@@ -51841,6 +51844,7 @@ date,area,series,measure,value
 2023-03-01,national,core,sa_index,104.54
 2023-03-01,national,core,sa_mom,0.29
 2023-03-01,national,core,yoy,2.55
+2023-03-01,national,core1,index,100.5257
 2023-03-01,national,core_goods,index,104.37
 2023-03-01,national,core_goods,mom,0.29
 2023-03-01,national,core_goods,yoy,2.4
@@ -51954,6 +51958,7 @@ date,area,series,measure,value
 2023-04-01,national,core,sa_index,105.05
 2023-04-01,national,core,sa_mom,0.49
 2023-04-01,national,core,yoy,2.72
+2023-04-01,national,core1,index,101.3531
 2023-04-01,national,core_goods,index,105.71
 2023-04-01,national,core_goods,mom,1.28
 2023-04-01,national,core_goods,yoy,2.46
@@ -52067,6 +52072,7 @@ date,area,series,measure,value
 2023-05-01,national,core,sa_index,105.13
 2023-05-01,national,core,sa_mom,0.08
 2023-05-01,national,core,yoy,2.57
+2023-05-01,national,core1,index,101.3245
 2023-05-01,national,core_goods,index,105.65
 2023-05-01,national,core_goods,mom,-0.06
 2023-05-01,national,core_goods,yoy,2.3
@@ -52180,6 +52186,7 @@ date,area,series,measure,value
 2023-06-01,national,core,sa_index,105.32
 2023-06-01,national,core,sa_mom,0.18
 2023-06-01,national,core,yoy,2.61
+2023-06-01,national,core1,index,101.3687
 2023-06-01,national,core_goods,index,105.31
 2023-06-01,national,core_goods,mom,-0.32
 2023-06-01,national,core_goods,yoy,2.17
@@ -52293,6 +52300,7 @@ date,area,series,measure,value
 2023-07-01,national,core,sa_index,105.49
 2023-07-01,national,core,sa_mom,0.16
 2023-07-01,national,core,yoy,2.74
+2023-07-01,national,core1,index,101.505
 2023-07-01,national,core_goods,index,105.17
 2023-07-01,national,core_goods,mom,-0.13
 2023-07-01,national,core_goods,yoy,2.29
@@ -52406,6 +52414,7 @@ date,area,series,measure,value
 2023-08-01,national,core,sa_index,105.53
 2023-08-01,national,core,sa_mom,0.04
 2023-08-01,national,core,yoy,2.57
+2023-08-01,national,core1,index,101.4501
 2023-08-01,national,core_goods,index,104.83
 2023-08-01,national,core_goods,mom,-0.32
 2023-08-01,national,core_goods,yoy,1.96
@@ -52519,6 +52528,7 @@ date,area,series,measure,value
 2023-09-01,national,core,sa_index,105.77
 2023-09-01,national,core,sa_mom,0.23
 2023-09-01,national,core,yoy,2.48
+2023-09-01,national,core1,index,101.5828
 2023-09-01,national,core_goods,index,105.14
 2023-09-01,national,core_goods,mom,0.3
 2023-09-01,national,core_goods,yoy,2.03
@@ -52632,6 +52642,7 @@ date,area,series,measure,value
 2023-10-01,national,core,sa_index,105.96
 2023-10-01,national,core,sa_mom,0.18
 2023-10-01,national,core,yoy,2.48
+2023-10-01,national,core1,index,102.2824
 2023-10-01,national,core_goods,index,106.34
 2023-10-01,national,core_goods,mom,1.14
 2023-10-01,national,core_goods,yoy,2.02
@@ -52745,6 +52756,7 @@ date,area,series,measure,value
 2023-11-01,national,core,sa_index,105.95
 2023-11-01,national,core,sa_mom,-0.01
 2023-11-01,national,core,yoy,2.38
+2023-11-01,national,core1,index,102.1584
 2023-11-01,national,core_goods,index,106.01
 2023-11-01,national,core_goods,mom,-0.31
 2023-11-01,national,core_goods,yoy,2.02
@@ -52858,6 +52870,7 @@ date,area,series,measure,value
 2023-12-01,national,core,sa_index,106.14
 2023-12-01,national,core,sa_mom,0.18
 2023-12-01,national,core,yoy,2.42
+2023-12-01,national,core1,index,102.3156
 2023-12-01,national,core_goods,index,106.0
 2023-12-01,national,core_goods,mom,-0.01
 2023-12-01,national,core_goods,yoy,2.08
@@ -52971,6 +52984,8 @@ date,area,series,measure,value
 2024-01-01,national,core,sa_index,106.34
 2024-01-01,national,core,sa_mom,0.19
 2024-01-01,national,core,yoy,1.65
+2024-01-01,national,core1,index,102.4455
+2024-01-01,national,core1,yoy,1.4431
 2024-01-01,national,core_goods,index,105.9
 2024-01-01,national,core_goods,mom,-0.09
 2024-01-01,national,core_goods,yoy,1.94
@@ -53085,6 +53100,8 @@ date,area,series,measure,value
 2024-02-01,national,core,sa_index,106.56
 2024-02-01,national,core,sa_mom,0.21
 2024-02-01,national,core,yoy,2.89
+2024-02-01,national,core1,index,103.3157
+2024-02-01,national,core1,yoy,2.8899
 2024-02-01,national,core_goods,index,105.81
 2024-02-01,national,core_goods,mom,-0.08
 2024-02-01,national,core_goods,yoy,1.67
@@ -53199,6 +53216,8 @@ date,area,series,measure,value
 2024-03-01,national,core,sa_index,106.78
 2024-03-01,national,core,sa_mom,0.21
 2024-03-01,national,core,yoy,2.14
+2024-03-01,national,core1,index,102.6781
+2024-03-01,national,core1,yoy,2.1411
 2024-03-01,national,core_goods,index,105.93
 2024-03-01,national,core_goods,mom,0.11
 2024-03-01,national,core_goods,yoy,1.49
@@ -53313,6 +53332,8 @@ date,area,series,measure,value
 2024-04-01,national,core,sa_index,106.96
 2024-04-01,national,core,sa_mom,0.17
 2024-04-01,national,core,yoy,1.81
+2024-04-01,national,core1,index,103.3016
+2024-04-01,national,core1,yoy,1.9225
 2024-04-01,national,core_goods,index,106.74
 2024-04-01,national,core_goods,mom,0.76
 2024-04-01,national,core_goods,yoy,0.97
@@ -53427,6 +53448,8 @@ date,area,series,measure,value
 2024-05-01,national,core,sa_index,107.13
 2024-05-01,national,core,sa_mom,0.16
 2024-05-01,national,core,yoy,1.83
+2024-05-01,national,core1,index,103.2848
+2024-05-01,national,core1,yoy,1.9347
 2024-05-01,national,core_goods,index,106.75
 2024-05-01,national,core_goods,mom,0.01
 2024-05-01,national,core_goods,yoy,1.04
@@ -53541,6 +53564,8 @@ date,area,series,measure,value
 2024-06-01,national,core,sa_index,107.28
 2024-06-01,national,core,sa_mom,0.14
 2024-06-01,national,core,yoy,1.83
+2024-06-01,national,core1,index,103.3515
+2024-06-01,national,core1,yoy,1.956
 2024-06-01,national,core_goods,index,106.35
 2024-06-01,national,core_goods,mom,-0.37
 2024-06-01,national,core_goods,yoy,0.99
@@ -53655,6 +53680,8 @@ date,area,series,measure,value
 2024-07-01,national,core,sa_index,107.35
 2024-07-01,national,core,sa_mom,0.07
 2024-07-01,national,core,yoy,1.85
+2024-07-01,national,core1,index,103.5418
+2024-07-01,national,core1,yoy,2.0066
 2024-07-01,national,core_goods,index,106.22
 2024-07-01,national,core_goods,mom,-0.12
 2024-07-01,national,core_goods,yoy,1.0
@@ -53769,6 +53796,8 @@ date,area,series,measure,value
 2024-08-01,national,core,sa_index,107.37
 2024-08-01,national,core,sa_mom,0.02
 2024-08-01,national,core,yoy,1.79
+2024-08-01,national,core1,index,103.3444
+2024-08-01,national,core1,yoy,1.8672
 2024-08-01,national,core_goods,index,105.86
 2024-08-01,national,core_goods,mom,-0.34
 2024-08-01,national,core_goods,yoy,0.98
@@ -53883,6 +53912,8 @@ date,area,series,measure,value
 2024-09-01,national,core,sa_index,107.7
 2024-09-01,national,core,sa_mom,0.31
 2024-09-01,national,core,yoy,1.78
+2024-09-01,national,core1,index,103.4334
+2024-09-01,national,core1,yoy,1.8217
 2024-09-01,national,core_goods,index,106.24
 2024-09-01,national,core_goods,mom,0.36
 2024-09-01,national,core_goods,yoy,1.05
@@ -53997,6 +54028,8 @@ date,area,series,measure,value
 2024-10-01,national,core,sa_index,107.71
 2024-10-01,national,core,sa_mom,0.01
 2024-10-01,national,core,yoy,1.64
+2024-10-01,national,core1,index,103.9966
+2024-10-01,national,core1,yoy,1.6759
 2024-10-01,national,core_goods,index,107.33
 2024-10-01,national,core_goods,mom,1.03
 2024-10-01,national,core_goods,yoy,0.93
@@ -54111,6 +54144,8 @@ date,area,series,measure,value
 2024-11-01,national,core,sa_index,107.8
 2024-11-01,national,core,sa_mom,0.08
 2024-11-01,national,core,yoy,1.73
+2024-11-01,national,core1,index,103.9433
+2024-11-01,national,core1,yoy,1.7473
 2024-11-01,national,core_goods,index,107.08
 2024-11-01,national,core_goods,mom,-0.23
 2024-11-01,national,core_goods,yoy,1.01
@@ -54225,6 +54260,8 @@ date,area,series,measure,value
 2024-12-01,national,core,sa_index,107.89
 2024-12-01,national,core,sa_mom,0.08
 2024-12-01,national,core,yoy,1.65
+2024-12-01,national,core1,index,104.0458
+2024-12-01,national,core1,yoy,1.6911
 2024-12-01,national,core_goods,index,107.05
 2024-12-01,national,core_goods,mom,-0.03
 2024-12-01,national,core_goods,yoy,0.99
@@ -54339,6 +54376,8 @@ date,area,series,measure,value
 2025-01-01,national,core,sa_index,108.16
 2025-01-01,national,core,sa_mom,0.25
 2025-01-01,national,core,yoy,2.26
+2025-01-01,national,core1,index,104.9082
+2025-01-01,national,core1,yoy,2.4039
 2025-01-01,national,core_goods,index,106.82
 2025-01-01,national,core_goods,mom,-0.21
 2025-01-01,national,core_goods,yoy,0.87
@@ -54453,6 +54492,8 @@ date,area,series,measure,value
 2025-02-01,national,core,sa_index,108.34
 2025-02-01,national,core,sa_mom,0.17
 2025-02-01,national,core,yoy,1.02
+2025-02-01,national,core1,index,104.3226
+2025-02-01,national,core1,yoy,0.9746
 2025-02-01,national,core_goods,index,106.98
 2025-02-01,national,core_goods,mom,0.15
 2025-02-01,national,core_goods,yoy,1.11
@@ -54567,6 +54608,8 @@ date,area,series,measure,value
 2025-03-01,national,core,sa_index,108.59
 2025-03-01,national,core,sa_mom,0.23
 2025-03-01,national,core,yoy,1.68
+2025-03-01,national,core1,index,104.3955
+2025-03-01,national,core1,yoy,1.6726
 2025-03-01,national,core_goods,index,107.18
 2025-03-01,national,core_goods,mom,0.19
 2025-03-01,national,core_goods,yoy,1.18
@@ -54681,6 +54724,8 @@ date,area,series,measure,value
 2025-04-01,national,core,sa_index,108.79
 2025-04-01,national,core,sa_mom,0.18
 2025-04-01,national,core,yoy,1.67
+2025-04-01,national,core1,index,105.0041
+2025-04-01,national,core1,yoy,1.6481
 2025-04-01,national,core_goods,index,108.04
 2025-04-01,national,core_goods,mom,0.8
 2025-04-01,national,core_goods,yoy,1.22
@@ -54795,6 +54840,8 @@ date,area,series,measure,value
 2025-05-01,national,core,sa_index,108.86
 2025-05-01,national,core,sa_mom,0.06
 2025-05-01,national,core,yoy,1.6
+2025-05-01,national,core1,index,104.906
+2025-05-01,national,core1,yoy,1.5697
 2025-05-01,national,core_goods,index,107.81
 2025-05-01,national,core_goods,mom,-0.21
 2025-05-01,national,core_goods,yoy,0.99
@@ -54909,6 +54956,8 @@ date,area,series,measure,value
 2025-06-01,national,core,sa_index,108.85
 2025-06-01,national,core,sa_mom,-0.01
 2025-06-01,national,core,yoy,1.46
+2025-06-01,national,core1,index,104.8293
+2025-06-01,national,core1,yoy,1.4299
 2025-06-01,national,core_goods,index,107.34
 2025-06-01,national,core_goods,mom,-0.44
 2025-06-01,national,core_goods,yoy,0.93
@@ -55023,6 +55072,8 @@ date,area,series,measure,value
 2025-07-01,national,core,sa_index,109.12
 2025-07-01,national,core,sa_mom,0.25
 2025-07-01,national,core,yoy,1.68
+2025-07-01,national,core1,index,105.1875
+2025-07-01,national,core1,yoy,1.5894
 2025-07-01,national,core_goods,index,107.27
 2025-07-01,national,core_goods,mom,-0.07
 2025-07-01,national,core_goods,yoy,0.99
@@ -55137,6 +55188,8 @@ date,area,series,measure,value
 2025-08-01,national,core,sa_index,109.21
 2025-08-01,national,core,sa_mom,0.08
 2025-08-01,national,core,yoy,1.75
+2025-08-01,national,core1,index,105.0535
+2025-08-01,national,core1,yoy,1.6537
 2025-08-01,national,core_goods,index,107.11
 2025-08-01,national,core_goods,mom,-0.15
 2025-08-01,national,core_goods,yoy,1.18
@@ -55251,6 +55304,8 @@ date,area,series,measure,value
 2025-09-01,national,core,sa_index,109.29
 2025-09-01,national,core,sa_mom,0.07
 2025-09-01,national,core,yoy,1.45
+2025-09-01,national,core1,index,104.8247
+2025-09-01,national,core1,yoy,1.3452
 2025-09-01,national,core_goods,index,107.06
 2025-09-01,national,core_goods,mom,-0.05
 2025-09-01,national,core_goods,yoy,0.77
@@ -55365,6 +55420,8 @@ date,area,series,measure,value
 2025-10-01,national,core,sa_index,109.6
 2025-10-01,national,core,sa_mom,0.28
 2025-10-01,national,core,yoy,1.82
+2025-10-01,national,core1,index,105.7776
+2025-10-01,national,core1,yoy,1.7126
 2025-10-01,national,core_goods,index,108.49
 2025-10-01,national,core_goods,mom,1.34
 2025-10-01,national,core_goods,yoy,1.08
@@ -55479,6 +55536,8 @@ date,area,series,measure,value
 2025-11-01,national,core,sa_index,109.6
 2025-11-01,national,core,sa_mom,0.0
 2025-11-01,national,core,yoy,1.7
+2025-11-01,national,core1,index,105.5371
+2025-11-01,national,core1,yoy,1.5333
 2025-11-01,national,core_goods,index,108.2
 2025-11-01,national,core_goods,mom,-0.27
 2025-11-01,national,core_goods,yoy,1.05
@@ -55593,6 +55652,8 @@ date,area,series,measure,value
 2025-12-01,national,core,sa_index,109.85
 2025-12-01,national,core,sa_mom,0.23
 2025-12-01,national,core,yoy,1.83
+2025-12-01,national,core1,index,105.8048
+2025-12-01,national,core1,yoy,1.6906
 2025-12-01,national,core_goods,index,108.41
 2025-12-01,national,core_goods,mom,0.19
 2025-12-01,national,core_goods,yoy,1.27
@@ -55707,6 +55768,8 @@ date,area,series,measure,value
 2026-01-01,national,core,sa_index,110.16
 2026-01-01,national,core,sa_mom,0.28
 2026-01-01,national,core,yoy,1.26
+2026-01-01,national,core1,index,105.9914
+2026-01-01,national,core1,yoy,1.0325
 2026-01-01,national,core_goods,index,108.56
 2026-01-01,national,core_goods,mom,0.14
 2026-01-01,national,core_goods,yoy,1.63
@@ -55821,6 +55884,8 @@ date,area,series,measure,value
 2026-02-01,national,core,sa_index,110.45
 2026-02-01,national,core,sa_mom,0.26
 2026-02-01,national,core,yoy,2.59
+2026-02-01,national,core1,index,106.9943
+2026-02-01,national,core1,yoy,2.561
 2026-02-01,national,core_goods,index,108.6
 2026-02-01,national,core_goods,mom,0.04
 2026-02-01,national,core_goods,yoy,1.51
@@ -55935,6 +56000,8 @@ date,area,series,measure,value
 2026-03-01,national,core,sa_index,110.71
 2026-03-01,national,core,sa_mom,0.24
 2026-03-01,national,core,yoy,1.94
+2026-03-01,national,core1,index,106.2838
+2026-03-01,national,core1,yoy,1.8088
 2026-03-01,national,core_goods,index,108.88
 2026-03-01,national,core_goods,mom,0.26
 2026-03-01,national,core_goods,yoy,1.59
@@ -56049,6 +56116,8 @@ date,area,series,measure,value
 2026-04-01,national,core,sa_index,110.86
 2026-04-01,national,core,sa_mom,0.14
 2026-04-01,national,core,yoy,1.89
+2026-04-01,national,core1,index,106.8777
+2026-04-01,national,core1,yoy,1.7843
 2026-04-01,national,core_goods,index,109.48
 2026-04-01,national,core_goods,mom,0.55
 2026-04-01,national,core_goods,yoy,1.33
@@ -56163,6 +56232,8 @@ date,area,series,measure,value
 2026-05-01,national,core,sa_index,111.2
 2026-05-01,national,core,sa_mom,0.31
 2026-05-01,national,core,yoy,2.11
+2026-05-01,national,core1,index,106.9793
+2026-05-01,national,core1,yoy,1.9763
 2026-05-01,national,core_goods,index,109.5
 2026-05-01,national,core_goods,mom,0.02
 2026-05-01,national,core_goods,yoy,1.57
@@ -56277,6 +56348,8 @@ date,area,series,measure,value
 2026-06-01,national,core,sa_index,111.45
 2026-06-01,national,core,sa_mom,0.22
 2026-06-01,national,core,yoy,2.4
+2026-06-01,national,core1,index,107.2556
+2026-06-01,national,core1,yoy,2.3145
 2026-06-01,national,core_goods,index,109.39
 2026-06-01,national,core_goods,mom,-0.1
 2026-06-01,national,core_goods,yoy,1.91
@@ -56391,6 +56464,8 @@ date,area,series,measure,value
 2026-07-01,national,core,sa_index,111.65
 2026-07-01,national,core,sa_mom,0.18
 2026-07-01,national,core,yoy,2.36
+2026-07-01,national,core1,index,107.5885
+2026-07-01,national,core1,yoy,2.2826
 2026-07-01,national,core_goods,index,109.5
 2026-07-01,national,core_goods,mom,0.1
 2026-07-01,national,core_goods,yoy,2.08
@@ -56505,6 +56580,8 @@ date,area,series,measure,value
 2026-08-01,national,core,sa_index,111.71
 2026-08-01,national,core,sa_mom,0.05
 2026-08-01,national,core,yoy,2.31
+2026-08-01,national,core1,index,107.4215
+2026-08-01,national,core1,yoy,2.2541
 2026-08-01,national,core_goods,index,109.36
 2026-08-01,national,core_goods,mom,-0.13
 2026-08-01,national,core_goods,yoy,2.1
@@ -56619,6 +56696,8 @@ date,area,series,measure,value
 2026-09-01,national,core,sa_index,111.9
 2026-09-01,national,core,sa_mom,0.17
 2026-09-01,national,core,yoy,2.52
+2026-09-01,national,core1,index,107.3961
+2026-09-01,national,core1,yoy,2.4531
 2026-09-01,national,core_goods,index,109.78
 2026-09-01,national,core_goods,mom,0.38
 2026-09-01,national,core_goods,yoy,2.54
