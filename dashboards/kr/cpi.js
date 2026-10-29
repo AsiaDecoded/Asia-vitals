@@ -16,7 +16,7 @@ dash.calc('cpi_series', {
 
 dash.calc('cpi_latest', {
   title: 'Latest month and the one before',
-  description: 'Year-on-year rates for the latest month and the month before: all items, CPI excluding food and energy (core), food and non-alcoholic beverages, goods and services.',
+  description: 'Year-on-year rates for the latest month and the month before: all items, CPI excluding food and energy (core), food and non-alcoholic beverages, energy (calculated), goods and services.',
   inputs: ['cpi_series'],
   fn: (cpi_series) => {
     const pair = (area, series) => {
@@ -25,7 +25,7 @@ dash.calc('cpi_latest', {
       return [s[s.length - 1], s[s.length - 2]];
     };
     const row = {};
-    ['all', 'ex_food_energy', 'div_A', 'goods', 'services'].forEach((k) => {
+    ['all', 'ex_food_energy', 'div_A', 'energy', 'goods', 'services'].forEach((k) => {
       const [a, b] = pair('national', k);
       row[k + '_yoy'] = a ? a.yoy : null;
       row[k + '_yoy_prev'] = b ? b.yoy : null;
@@ -88,11 +88,11 @@ dash.calc('ppi_latest', {
 
 dash.calc('cpi_heat', {
   title: 'CPI inflation by measure and division, y/y',
-  description: 'y/y (calculated from the published index, as the ministry does) with the published 2022 basket weights per 1,000, for all items, the published core measures, selected items, the 12 divisions, and the published goods and services split, from Jan 2026.',
+  description: 'y/y (calculated from the published index, as the ministry does) with the published 2022 basket weights per 1,000, for all items, the published core measures, energy (calculated from its nine items) and selected items, the 12 divisions, and the published goods and services split, from Jan 2026.',
   inputs: ['cpi_series', 'kr_cpi_series_weights'],
   fn: (cpi_series, kr_cpi_series_weights) => {
     const W = new Map(kr_cpi_series_weights.map((r) => [r.series, Number(r.weight)]));
-    const ROWS = ['all', 'ex_food_energy', 'ex_agri_oil', 'living', 'fresh', 'petroleum', 'petrol', 'diesel', 'utilities', 'electricity', 'city_gas',
+    const ROWS = ['all', 'ex_food_energy', 'ex_agri_oil', 'living', 'fresh', 'energy', 'petroleum', 'petrol', 'diesel', 'electricity', 'city_gas', 'district_heating', 'utilities',
       'div_A', 'div_B', 'div_C', 'div_D', 'div_E', 'div_F', 'div_G', 'div_H', 'div_I', 'div_J', 'div_K', 'div_L',
       'goods', 'agri', 'industrial', 'processed_food', 'services', 'rent', 'jeonse', 'monthly_rent', 'public', 'personal', 'eating_out', 'personal_ex_eating_out'];
     return cpi_series.filter((r) => ROWS.includes(r.series) && r.date >= '2026-01-01' && r.yoy != null)
@@ -366,14 +366,14 @@ dash.calc('cpi_heat', {
       const i = t > 0.5 ? 1 : 0; const [t0, c0] = STOPS[i], [t1, c1] = STOPS[i + 1], f = (t - t0) / (t1 - t0);
       return `rgb(${c0.map((c, k) => Math.round(c + (c1[k] - c) * f)).join(',')})`;
     };
-    const NAMES = { all: 'CPI', ex_food_energy: 'Core (CPI excl. food and energy)', ex_agri_oil: 'CPI excl. agricultural products and oil', living: 'Living cost index', jeonse: 'Jeonse', personal_ex_eating_out: 'Personal services excl. eating out' };
+    const NAMES = { energy: 'Energy', all: 'CPI', ex_food_energy: 'Core (CPI excl. food and energy)', ex_agri_oil: 'CPI excl. agricultural products and oil', living: 'Living cost index', jeonse: 'Jeonse', personal_ex_eating_out: 'Personal services excl. eating out' };
     tbl.replaceChildren();
     const head = tbl.createTHead().insertRow();
     ['', 'Weight'].concat(dates.map((d) => `${MON[+d.slice(5, 7) - 1]} ${d.slice(2, 4)}`)).forEach((t) => {
       const th = document.createElement('th'); th.textContent = t; head.appendChild(th);
     });
     const tb = tbl.createTBody();
-    const CHILDREN = { petroleum: ['petrol', 'diesel'], utilities: ['electricity', 'city_gas'], goods: ['agri', 'industrial', 'processed_food'],
+    const CHILDREN = { energy: ['petroleum', 'electricity', 'city_gas', 'district_heating'], petroleum: ['petrol', 'diesel'], goods: ['agri', 'industrial', 'processed_food'],
       services: ['rent', 'public', 'personal', 'eating_out', 'personal_ex_eating_out'], rent: ['jeonse', 'monthly_rent'] };
     const PARENT = {}; Object.entries(CHILDREN).forEach(([p, cs]) => cs.forEach((c) => { PARENT[c] = p; }));
     const OPEN = (J.state.heatOpen = J.state.heatOpen || {});
@@ -395,7 +395,7 @@ dash.calc('cpi_heat', {
       for (let p = PARENT[k]; p; p = PARENT[p]) if (!OPEN[p]) { tr.hidden = true; break; }
       const wt = D.data.find((r) => r.series === k).weight;
       const wc = tr.insertCell(); wc.className = 'wt'; wc.textContent = wt == null ? '' : d3.format('.1f')(wt / 10);
-      if (['all', 'ex_food_energy', 'ex_agri_oil', 'living', 'fresh', 'petroleum', 'utilities', 'goods', 'services'].includes(k)) tr.className = 'lead';
+      if (['all', 'ex_food_energy', 'ex_agri_oil', 'living', 'fresh', 'energy', 'utilities', 'goods', 'services'].includes(k)) tr.className = 'lead';
       if (PARENT[k]) tr.className = 'sub';
       if (k === 'div_A') tr.className = 'gap';
       const vs = dates.map((d) => (val.get(`${k}|${d}`) || {}).yoy).filter((v) => v != null);
@@ -518,7 +518,7 @@ dash.calc('cpi_heat', {
       },
     });
     lineChart('cpi-drivers-chart', 'cpi-drivers', 'cpi-drivers-legend', 'national', S.fe === 'energy'
-      ? [{ key: 'electricity', name: 'Electricity', color: C[1] }, { key: 'city_gas', name: 'City gas', color: C[4] },
+      ? [{ key: 'energy', name: 'Energy', color: C[7] }, { key: 'electricity', name: 'Electricity', color: C[1] }, { key: 'city_gas', name: 'City gas', color: C[4] },
         { key: 'petrol', name: 'Petrol', color: C[0] }, { key: 'diesel', name: 'Diesel', color: C[5] }]
       : [{ key: 'div_A', name: 'Food and non-alcoholic beverages', color: C[0] }, { key: 'eating_out', name: 'Eating out', color: C[1] },
         { key: 'fresh', name: 'Fresh food', color: C[0], dash: true }], 280);
