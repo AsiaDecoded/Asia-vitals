@@ -1,0 +1,40 @@
+== vn_cpi_nso
+Traceback (most recent call last):
+  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/core/nso_vn.py", line 51, in get
+    with (opener.open(req, timeout=timeout) if opener else urllib.request.urlopen(req, timeout=timeout)) as r:
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<stdin>", line 9, in <module>
+  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/sources/vn_cpi_nso/__init__.py", line 373, in update
+    index, new = _workbooks(state, force)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/sources/vn_cpi_nso/__init__.py", line 70, in _workbooks
+    body, _ = N.get(m["url"])
+              ^^^^^^^^^^^^^^^
+  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/core/nso_vn.py", line 55, in get
+    raise RuntimeError(f"NSO HTTP {e.code} for {url}") from e
+RuntimeError: NSO HTTP 404 for https://www.nso.gov.vn/wp-content/uploads/2023/03/CPI-Thang-2-nam-2023_Chinh-thuc-1.xlsx
+
+== vn_ppi_nso
+   UPDATED: 2026-Q3: 4871 rows, 27 quarterly workbooks (264s)
