@@ -1,41 +1,40 @@
-"""Japan CPI less food (excl. alcohol) and energy, plus eating out ("Core 3"): Asia Decoded calculation.
+"""Japan CPI less food and non-alcoholic beverages and energy ("Core 2" on the dashboard): Asia Decoded calculation.
 
-Built to match India's core definition (RBI core: CPI excluding food and beverages and fuel), which
-keeps meals outside the home (COICOP division 11, including canteens). Japan publishes "all items
-less food (excl. alcoholic beverages) and energy" (code 0168), which drops all of Food, eating out
-included. Core 3 adds eating out (外食, code 0042, school lunches included) back.
+The cross-country core: all items less food and non-alcoholic beverages (COICOP 01) and energy, keeping
+alcohol and restaurant meals. Parts, all published by the Statistics Bureau:
+  all items (0001) and energy (0167: electricity, city and LP gas, kerosene, gasoline; matches COICOP
+  04.5 + 07.2.2) from the e-Stat database table of each base; food and non-alcoholic beverages from the
+  Bureau's COICOP classification index (category 01, raw file kept by jp_cpi_food_estat).
+Weights per 10,000, published: COICOP 01 2,083 (2020 base, annual report appendix 5) and 2,163 (2025 base);
+energy 712 (2020 base) and 749 (2025 base), Table 5 of the monthly report.
 
-Calculation: Japan's CPI is a fixed-weight Laspeyres index, so within one base an aggregate is the
-weight-average of its parts' indices. For each base:
-    Core 3 index = (w0168 x I0168 + w0042 x I0042) / (w0168 + w0042)
-with the Statistics Bureau's published weights per 10,000 (Table 5 of the monthly report):
-    2015 base: 6713, 521   2020 base: 6781, 460   2025 base: 6609, 508
-y/y combines the two parts' published y/y rates, weighted by weight x index a year earlier (the
-aggregation rule for a fixed-weight index; using the Bureau's rates, which are calculated from unrounded
-indices, avoids rounding in the one-decimal indices). It is checked against the 12-month change in the
-combined index (within 0.2pp). Both are on the base the Bureau uses for that month's official rates:
-2015 base for 2016-2020, 2020 base for 2021-2025, 2025 base from 2026. Indices come from the e-Stat
-API tables for each base (national, monthly), so both months of every y/y are on the same base.
-Checked: the same method applied to code 0168 alone reproduces its published y/y.
+Within one base Japan's CPI is a fixed-weight index, so
+    Core 2 index = (10000 x I_all - w01 x I_01 - wE x I_energy) / (10000 - w01 - wE)
+and its y/y combines the parts' published y/y rates, each weighted by weight x index a year earlier, on the base
+the Bureau uses for that month's official rates (2020 base for 2021-2025, 2025 base from 2026), the same
+convention as the Bureau's own aggregates. COICOP 01 levels on the 2020 base are the COICOP table's linked
+2020-2024 values divided by their 2020 average (the link is a constant rescaling). y/y from Jan 2021, the first
+month the COICOP table allows. Check: where both months are on one base, y/y from the combined index agrees within 0.2pp.
 """
 import csv
+import gzip
 import hashlib
 import json
 import re
 
 from core import estat
-from core.common import DATA, CheckFailed, read_json, write_long, write_release
+from core.common import DATA, RAW, CheckFailed, read_json, write_long, write_release
 
 NAME = "jp_cpi_core3_estat"
-DESCRIPTION = "Japan CPI less food and energy plus eating out (Core 3), calculated from e-Stat"
+DESCRIPTION = "Japan CPI less food and non-alcoholic beverages and energy (Core 2), calculated from published series"
 OUT = DATA / "jp" / "cpi_core3"
+FOOD_RAW = RAW / "jp" / "cpi_food"
 MONTH_RE = re.compile(r"^(\d{4})00(0[1-9]|1[0-2])\2$")  # e.g. 2026000909 = Sep 2026
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-# base: (e-Stat table, weight of 0168, weight of 0042, first and last y/y month on this base)
+# base: (e-Stat table, COICOP 01 weight, energy weight, first and last y/y month on this base)
 BASES = {
-    2015: ("0003143513", 6713, 521, "2016-01-01", "2020-12-01"),
-    2020: ("0003427113", 6781, 460, "2021-01-01", "2025-12-01"),
-    2025: ("0004052037", 6609, 508, "2026-01-01", "9999-12-01"),
+    2020: ("0003427113", 2083, 712, "2021-01-01", "2025-12-01"),
+    2025: ("0004052037", 2163, 749, "2026-01-01", "9999-12-01"),
 }
 
 
@@ -45,8 +44,8 @@ def _shift(d, months):
 
 
 def _fetch(table):
-    """{code: {date: {index, yoy}}} for 0168 and 0042, national."""
-    vals = estat.get_values(table, cdArea="00000", cdTab="1,3", cdCat01="0168,0042")
+    """{key: {date: {index, yoy}}} for all items and energy, national."""
+    vals = estat.get_values(table, cdArea="00000", cdTab="1,3", cdCat01="0001,0167")
     out = {}
     for v in vals:
         m = MONTH_RE.match(v.get("time", ""))
@@ -56,76 +55,105 @@ def _fetch(table):
             x = float(v.get("value"))
         except (TypeError, ValueError):
             continue
-        d = f"{m.group(1)}-{m.group(2)}-01"
-        out.setdefault(v["cat01"], {}).setdefault(d, {})["index" if v["tab"] == "1" else "yoy"] = x
+        k = {"0001": "all", "0167": "energy"}[v["cat01"]]
+        out.setdefault(k, {}).setdefault(f"{m.group(1)}-{m.group(2)}-01", {})["index" if v["tab"] == "1" else "yoy"] = x
     return out
+
+
+def _coicop():
+    """COICOP 01 {date: {index, yoy}} (index 2025 = 100, linked before 2025) and weight, from the kept raw file."""
+    from sources.jp_cpi_food_estat import parse
+    files = sorted(FOOD_RAW.glob("*.gz"))
+    if not files:
+        raise CheckFailed(["no COICOP raw file (run jp_cpi_food_estat first)"])
+    return parse(gzip.decompress(files[-1].read_bytes()))
 
 
 def update(**_):
     state = read_json(OUT / "release.json", {}) or {}
     data = {b: _fetch(t) for b, (t, *_r) in BASES.items()}
-    fp = hashlib.sha256(json.dumps(data, sort_keys=True).encode()).hexdigest()[:16]
+    c01, w01_file = _coicop()
+    fp = hashlib.sha256(json.dumps([data, c01], sort_keys=True).encode()).hexdigest()[:16]
     if fp == state.get("fingerprint"):
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {state.get('latest_month')})"}
 
-    rows, errors, warnings = [], [], []
-    for base, (table, wa, wb, first, last) in BASES.items():
-        a, b = data[base].get("0168", {}), data[base].get("0042", {})
-        idx = {d: (wa * a[d]["index"] + wb * b[d]["index"]) / (wa + wb)
-               for d in a if "index" in a[d] and "index" in b.get(d, {})}
-        for d in sorted(idx):
-            if not (first <= d <= last):
+    errors, warnings = [], []
+    if w01_file != BASES[2025][1]:
+        errors.append(f"COICOP 01 weight in the table {w01_file}, expected {BASES[2025][1]}")
+    groups = DATA / "jp" / "cpi_contrib" / "jp_cpi_groups.csv"
+    if groups.exists():
+        ew = {r["date"]: float(r["weight"]) for r in csv.DictReader(open(groups)) if r["series"] == "energy" and r["weight"]}
+        for b, (_t, _w, we, *_r) in BASES.items():
+            got = {w for d, w in ew.items() if d >= ("2021-07-01" if b == 2020 else "2026-07-01") and (b == 2025 or d < "2026-07-01")}
+            if got and got != {float(we)}:
+                errors.append(f"{b} base energy weight in Table 5 {got}, expected {we}")
+    # COICOP 01 on each base: 2025 values as they are; 2020-2024 rescaled to 2020 = 100
+    lv20 = [c01[d]["index"] for d in c01 if d.startswith("2020-") and c01[d].get("index")]
+    if len(lv20) != 12:
+        errors.append(f"COICOP 01: {len(lv20)} months of 2020 index, need 12")
+    k = sum(lv20) / len(lv20) / 100 if lv20 else 1
+    i01 = {2020: {d: v["index"] / k for d, v in c01.items() if v.get("index") and d < "2025-01-01"},
+           2025: {d: v["index"] for d, v in c01.items() if v.get("index") and d >= "2025-01-01"}}
+    if errors:
+        raise CheckFailed(errors)
+
+    rows, worst = [], 0.0
+    for base, (_t, w01, we, first, last) in BASES.items():
+        A, E = data[base].get("all", {}), data[base].get("energy", {})
+        rest = 10000 - w01 - we
+
+        def idx(d):
+            try:
+                return (10000 * A[d]["index"] - w01 * i01[base][d] - we * E[d]["index"]) / rest
+            except KeyError:
+                return None
+        for d in sorted(c01):
+            if not (first <= d <= last) or c01[d].get("yoy") is None:
                 continue
             p = _shift(d, -12)
-            if p not in idx:
-                errors.append(f"{base} base: no index for {p[:7]} (needed for {d[:7]})")
+            try:
+                sa, s1, se = 10000 * A[p]["index"], w01 * i01[base][p], we * E[p]["index"]
+                ya, y1, ye = A[d]["yoy"], c01[d]["yoy"], E[d]["yoy"]
+            except KeyError as e:
+                errors.append(f"{d[:7]} ({base} base): missing {e}")
                 continue
-            # y/y of the aggregate = the parts' published y/y, weighted by weight x index a year earlier.
-            # Using the Bureau's published rates (calculated from unrounded indices) avoids the rounding
-            # in the one-decimal indices; the indices only set the shares.
-            ya, yb = a[d].get("yoy"), b[d].get("yoy")
-            if ya is None or yb is None:
-                errors.append(f"{d[:7]}: published y/y missing (0168 {ya}, 0042 {yb})")
-                continue
-            sa, sb = wa * a[p]["index"], wb * b[p]["index"]
-            yoy = round((sa * ya + sb * yb) / (sa + sb), 2)
-            from_index = (idx[d] / idx[p] - 1) * 100
-            if abs(from_index - yoy) > 0.2:
-                errors.append(f"{d[:7]}: Core 3 y/y {yoy} vs from index {from_index:.2f}")
-            # method check: the same calculation on 0168 alone should give its published y/y
-            pub = a[d].get("yoy")
-            own = (a[d]["index"] / a[p]["index"] - 1) * 100 if a.get(p, {}).get("index") else None
-            if pub is not None and own is not None and abs(own - pub) > 0.15:
-                errors.append(f"{d[:7]}: 0168 y/y from index {own:.2f} vs published {pub}")
-            rows.append({"date": d, "base": base, "index": round(idx[d], 3), "yoy": yoy,
-                         "ex_food_energy_yoy": pub, "eating_out_yoy": b[d].get("yoy")})
-    rows.sort(key=lambda r: r["date"])
-    if not rows:
-        errors.append("no Core 3 months calculated")
+            yoy = (sa * ya - s1 * y1 - se * ye) / (sa - s1 - se)
+            i_d, i_p = idx(d), idx(p)
+            if i_d is not None and i_p is not None:
+                g = abs((i_d / i_p - 1) * 100 - yoy)
+                worst = max(worst, g)
+                if g > 0.2:
+                    errors.append(f"{d[:7]}: y/y {yoy:.2f} vs from index {(i_d / i_p - 1) * 100:.2f}")
+            rows.append({"date": d, "base": base, "index": None if i_d is None else round(i_d, 3), "yoy": round(yoy, 2),
+                         "all_yoy": ya, "food_nab_yoy": y1, "energy_yoy": ye})
     dates = [r["date"] for r in rows]
+    if not dates or dates[0] != "2021-01-01":
+        errors.append(f"y/y starts {dates[0][:7] if dates else '-'}, expected 2021-01")
     for x, y in zip(dates, dates[1:]):
         if _shift(x, 1) != y:
             errors.append(f"gap between {x[:7]} and {y[:7]}")
-    for r in rows:
-        if r["ex_food_energy_yoy"] is not None and abs(r["yoy"] - r["ex_food_energy_yoy"]) > 2:
-            errors.append(f"{r['date'][:7]}: Core 3 {r['yoy']} far from less food and energy {r['ex_food_energy_yoy']}")
+    nat = (read_json(DATA / "jp" / "cpi" / "release.json", {}) or {}).get("national_month")
+    if dates and nat != dates[-1]:
+        errors.append(f"latest month {dates[-1][:7]} is not the latest national CPI month ({nat})")
     if errors:
         raise CheckFailed(errors[:40])
+    warnings.append(f"y/y vs combined index, same base: max gap {worst:.2f}pp")
 
     latest = dates[-1]
     code = f"K{latest[:7]}"
     OUT.mkdir(parents=True, exist_ok=True)
-    cols = ["date", "base", "index", "yoy", "ex_food_energy_yoy", "eating_out_yoy"]
+    cols = ["date", "base", "index", "yoy", "all_yoy", "food_nab_yoy", "energy_yoy"]
     with open(OUT / "jp_cpi_core3.csv", "w", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
         w.writerow(cols)
         for r in rows:
             w.writerow(["" if r[c] is None else r[c] for c in cols])
     nlong = write_long(({"country": "JP", "indicator": "cpi", "series": "core3",
-                         "label": "Less food (excl. alcohol) and energy, plus eating out", "measure": "yoy",
+                         "label": "Less food and non-alcoholic beverages and energy", "measure": "yoy",
                          "area": "national", "freq": "M", "date": r["date"], "value": r["yoy"], "unit": "%",
                          "source": "Asia Decoded calculation from Statistics Bureau of Japan data", "release": code}
                         for r in rows), OUT / "long.csv")
-    release = {"code": code, "label": f"{MONTHS[int(latest[5:7]) - 1]} {latest[:4]}", "latest_month": latest}
+    release = {"code": code, "label": f"{MONTHS[int(latest[5:7]) - 1]} {latest[:4]}", "latest_month": latest,
+               "weights": {str(b): {"coicop01": v[1], "energy": v[2]} for b, v in BASES.items()}}
     write_release(OUT, release, warnings, len(rows), {"fingerprint": fp, "long_rows": nlong})
     return {"updated": True, "code": code, "summary": f"{release['label']}: {len(rows)} months", "warnings": warnings}

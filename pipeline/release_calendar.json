@@ -14,7 +14,7 @@
   "hk_ppi": "C&SD schedule of regular press releases: PPI for manufacturing (quarterly) and volume and price statistics of external merchandise trade (monthly), to Dec 2027"
  },
  "groups": {
-  "jp_cpi": {"label": "Japan CPI (national) and CPI contributions", "sources": ["jp_cpi_estat", "jp_cpi_contrib_estat", "jp_cpi_core3_estat", "jp_cpi_food_estat"], "time_sgt": "07:30", "dates": [
+  "jp_cpi": {"label": "Japan CPI (national) and CPI contributions", "sources": ["jp_cpi_estat", "jp_cpi_contrib_estat", "jp_cpi_food_estat", "jp_cpi_core3_estat"], "time_sgt": "07:30", "dates": [
    {"ref": "2026-10", "date": "2026-11-20", "status": "official"},
    {"ref": "2026-11", "date": "2026-12-18", "status": "official"},
    {"ref": "2026-12", "date": "2027-01-22", "status": "official"},
