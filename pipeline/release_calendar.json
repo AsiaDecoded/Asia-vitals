@@ -18,7 +18,10 @@
   "ph_ppi": "PSA PPI for manufacturing (MISSI): no calendar found; about two months after the month (Jul 2026 table updated 9 Sep 2026)",
   "th_cpi": "TPSO (Ministry of Commerce): no calendar found; pattern from the Open API's createdAt stamps: CPI and PPI on the 5th-7th, 10:15-14:00 Bangkok (Sep 2026 CPI 6 Oct 2026, 11:32 Bangkok)",
   "th_xmpi": "TPSO export and import price indices: no calendar found; pattern: around the 28th (Sep 2026 on 28 Oct 2026, 11:21 Bangkok; Aug on 28 Sep)",
-  "id_cpi": "BPS: CPI on the first working day of the following month, 11:00 Jakarta (12:00 SGT); dates from that pattern. Bank Indonesia's SEKI table VIII.1 carries the data some days later (lag not published), so each window runs three weeks from the BPS release. The BPS WebAPI sources (id_bps) carry the release the same day"
+  "id_cpi": "BPS: CPI on the first working day of the following month, 11:00 Jakarta (12:00 SGT); dates from that pattern. Bank Indonesia's SEKI table VIII.1 carries the data some days later (lag not published), so each window runs three weeks from the BPS release. The BPS WebAPI sources (id_bps) carry the release the same day",
+  "tw_prices": "DGBAS: each monthly release names the next date (Oct 2026 data on 5 Nov 2026, 16:00 Taipei); later dates expected on the pattern (5th working day after the month); the dated calendar page is script-only",
+  "cn_prices": "NBS 2026 release calendar (to Dec 2026, 09:30 Beijing); 2027 expected from the pattern until NBS publishes its calendar in late December",
+  "vn_prices": "NSO: Decree 13/2026/ND-CP, CPI on the 3rd of the following month (weekends included), about 09:00 Hanoi; no dated calendar found. Quarterly PPI and trade prices come with the quarter-end CPI release"
  },
  "groups": {
   "jp_cpi": {"label": "Japan CPI (national) and CPI contributions", "sources": ["jp_cpi_estat", "jp_cpi_contrib_estat", "jp_cpi_food_estat", "jp_cpi_core3_estat"], "time_sgt": "07:30", "dates": [
@@ -166,6 +169,24 @@
    {"ref": "2026-12", "date": "2027-01-04", "status": "expected"},
    {"ref": "2027-01", "date": "2027-02-01", "status": "expected"},
    {"ref": "2027-02", "date": "2027-03-01", "status": "expected"},
-   {"ref": "2027-03", "date": "2027-04-01", "status": "expected"}]}
+   {"ref": "2027-03", "date": "2027-04-01", "status": "expected"}]},
+  "tw_prices": {"label": "Taiwan CPI, PPI and import/export prices", "sources": ["tw_cpi_dgbas", "tw_ppi_dgbas"], "time_sgt": "16:00", "dates": [
+   {"ref": "2026-10", "date": "2026-11-05", "status": "official"},
+   {"ref": "2026-11", "date": "2026-12-07", "from": "2026-12-04", "to": "2026-12-09", "status": "expected"},
+   {"ref": "2026-12", "date": "2027-01-08", "from": "2027-01-06", "to": "2027-01-12", "status": "expected"},
+   {"ref": "2027-01", "date": "2027-02-05", "from": "2027-02-03", "to": "2027-02-17", "status": "expected"},
+   {"ref": "2027-02", "date": "2027-03-05", "from": "2027-03-04", "to": "2027-03-09", "status": "expected"}]},
+  "cn_prices": {"label": "China CPI and PPI", "sources": ["cn_cpi_nbs", "cn_ppi_nbs"], "time_sgt": "09:30", "dates": [
+   {"ref": "2026-10", "date": "2026-11-09", "status": "official"},
+   {"ref": "2026-11", "date": "2026-12-09", "status": "official"},
+   {"ref": "2026-12", "date": "2027-01-09", "from": "2027-01-08", "to": "2027-01-16", "status": "expected"},
+   {"ref": "2027-01", "date": "2027-02-10", "from": "2027-02-08", "to": "2027-02-17", "status": "expected"},
+   {"ref": "2027-02", "date": "2027-03-09", "from": "2027-03-08", "to": "2027-03-16", "status": "expected"}]},
+  "vn_prices": {"label": "Vietnam CPI (and quarterly producer and trade prices)", "sources": ["vn_cpi_nso", "vn_ppi_nso"], "time_sgt": "10:00", "dates": [
+   {"ref": "2026-10", "date": "2026-11-03", "from": "2026-11-02", "to": "2026-11-07", "status": "expected"},
+   {"ref": "2026-11", "date": "2026-12-03", "from": "2026-12-02", "to": "2026-12-07", "status": "expected"},
+   {"ref": "2026-12", "date": "2027-01-03", "from": "2027-01-02", "to": "2027-01-07", "status": "expected"},
+   {"ref": "2027-01", "date": "2027-02-03", "from": "2027-02-02", "to": "2027-02-08", "status": "expected"},
+   {"ref": "2027-02", "date": "2027-03-03", "from": "2027-03-02", "to": "2027-03-07", "status": "expected"}]}
  }
 }

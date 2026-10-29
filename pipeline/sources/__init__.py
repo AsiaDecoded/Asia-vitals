@@ -32,4 +32,10 @@ SOURCES = [
     "id_cpi_seki",
     "id_cpi_bps",
     "id_wpi_bps",
+    "tw_cpi_dgbas",
+    "tw_ppi_dgbas",
+    "cn_cpi_nbs",
+    "cn_ppi_nbs",
+    "vn_cpi_nso",
+    "vn_ppi_nso",
 ]
