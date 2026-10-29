@@ -2,37 +2,21 @@
  "code": "F2026-09",
  "label": "Sep 2026",
  "latest_month": "2026-09-01",
- "weights": {
-  "2010": {
-   "food": 2525.0,
-   "alcohol": 125.0,
-   "eating_out": 532.0
-  },
-  "2015": {
-   "food": 2623.0,
-   "alcohol": 119.0,
-   "eating_out": 521.0
-  },
-  "2020": {
-   "food": 2626,
-   "alcohol": 119,
-   "eating_out": 460
-  },
-  "2025": {
-   "food": 2754,
-   "alcohol": 111,
-   "eating_out": 508
-  }
- },
- "processed_at": "2026-10-29T02:38:11Z",
- "rows": 189,
- "warnings": [],
- "fingerprint": "a8f8e79b25535e50",
- "long_rows": 189,
+ "basis": "published",
+ "series_id": "JP Statistics Bureau COICOP classification index, 01",
+ "report": "2026-09",
+ "weight_2025": 2163.0,
+ "processed_at": "2026-10-29T06:22:59Z",
+ "rows": 69,
+ "warnings": [
+  "y/y vs index on the 2025 base: max gap 0.07pp"
+ ],
+ "stat_inf_id": "000040513601",
+ "long_rows": 69,
  "history": [
   {
    "code": "F2026-09",
-   "processed_at": "2026-10-29T02:38:11Z"
+   "processed_at": "2026-10-29T06:22:59Z"
   }
  ]
 }
