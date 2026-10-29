@@ -482,7 +482,6 @@
       { ds: 'hk_cpi_sa', it: momIt, series: 'all', measure: 'sa_mom3_long', key: 'h', name: IT[momIt], color: 'var(--ad-c2)' },
       { ds: 'hk_cpi_sa', it: momIt, basis: 'underlying', series: 'all', measure: 'sa_mom3', key: 'u', name: `Underlying ${IT[momIt]}`, color: 'var(--ad-c1)', dash: true, late: true },
     ], { fmt: fmt1 });
-    lineBars('cpi-ym', C('all', 'yoy', 'CPI, y/y', 'var(--ad-c2)'), C('all', 'mom', 'CPI, m/m', 'var(--ad-c1)', { measure: 'mom', bar: true }));
     lineBars('cpi-sa', { ds: 'hk_cpi_sa', series: saS, measure: 'sa_index', key: 'i', name: `SA index (right), ${saS === 'all' ? 'all items' : 'food'}`, color: 'var(--ad-c2)' },
       { ds: 'hk_cpi_sa', series: saS, measure: 'sa_mom', key: 'm', name: 'SA m/m', color: 'var(--ad-c1)', bar: true }, { all: true, right: true });
     lines('cpi-hh', [C('all', 'cc', 'CPI', 'var(--ad-c2)'), C('all', 'a', 'CPI(A)', 'var(--ad-c5)', { it: 'a', thin: true }),
