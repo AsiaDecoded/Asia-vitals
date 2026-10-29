@@ -20,17 +20,17 @@
    "energy": 749
   }
  },
- "processed_at": "2026-10-29T06:41:39Z",
+ "processed_at": "2026-10-29T06:43:21Z",
  "rows": 189,
  "warnings": [
   "y/y vs combined index, same base: max gap 0.17pp"
  ],
- "fingerprint": "903cce01879a59f6",
+ "fingerprint": "475a290279681802",
  "long_rows": 189,
  "history": [
   {
    "code": "K2026-09",
-   "processed_at": "2026-10-29T06:41:39Z"
+   "processed_at": "2026-10-29T06:43:21Z"
   }
  ]
 }

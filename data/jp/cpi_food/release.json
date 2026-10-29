@@ -14,7 +14,7 @@
  },
  "report": "2026-09",
  "weight_2025": 2163.0,
- "processed_at": "2026-10-29T06:41:07Z",
+ "processed_at": "2026-10-29T06:43:01Z",
  "rows": 189,
  "warnings": [
   "published y/y vs index on the 2025 base: max gap 0.07pp",
@@ -22,11 +22,11 @@
  ],
  "stat_inf_id": "000040513601",
  "long_rows": 189,
- "hist_version": 1,
+ "hist_version": 2,
  "history": [
   {
    "code": "F2026-09",
-   "processed_at": "2026-10-29T06:41:07Z"
+   "processed_at": "2026-10-29T06:43:01Z"
   }
  ]
 }
