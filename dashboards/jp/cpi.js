@@ -540,6 +540,21 @@ dash.calc('ppi_latest', {
       { key: 'energy', name: 'Energy', color: C[1] },
     ], 280);
     saChart();
+    lineChart('cpi-fe-chart', 'cpi-fe', 'cpi-fe-legend', 'national', [
+      { key: 'food', name: 'Food and non-alcoholic beverages', color: C[1] },
+      { key: 'energy', name: 'Energy', color: C[0] },
+    ], 280, {
+      ids: ['cpi_series', 'jp_cpi_food'],
+      rows: (cpi, food) => {
+        // Food: Asia Decoded calculation (COICOP 01) from Jan 2011; energy as published
+        const by = new Map();
+        const put = (d, k, v) => { if (v == null) return; if (!by.has(d)) by.set(d, { date: d }); by.get(d)[k] = v; };
+        food.forEach((r) => { if (r.yoy !== '') put(r.date, 'food', Math.round(Number(r.yoy) * 10) / 10); });
+        const first = food.length ? food.map((r) => r.date).sort()[0] : '9999';
+        cpi.forEach((r) => { if (r.area === 'national' && r.series === 'energy' && r.date >= first) put(r.date, 'energy', r.yoy); });
+        return J.slice(Array.from(by.values()).sort((a, b) => (a.date < b.date ? -1 : 1)), 'cpi-fe');
+      },
+    });
     lineChart('cpi-diffusion-chart', 'cpi-diffusion', 'cpi-diffusion-legend', 'national', [
       { key: 'diffusion', name: 'Diffusion index (rising minus falling)', color: C[1] },
       { key: 'share_rising', name: 'Rising', color: C[5] },

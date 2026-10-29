@@ -355,7 +355,7 @@
       </section>
       <section class="jg-card" id="cpi-drivers">
         <div class="jg-cardhead">
-          <div><h2>Japan food and energy CPI</h2></div>
+          <div><h2>Japan fresh food and energy CPI</h2></div>
           <div class="jg-seg" id="cpi-drivers-seg" role="group" aria-label="Area">
             <button data-a="national" aria-pressed="true">National</button><button data-a="tokyo">Tokyo</button>
           </div>
@@ -365,6 +365,13 @@
         <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
     </div>
+
+    <section class="jg-card" id="cpi-fe">
+      <h2>Japan food and energy CPI</h2>
+      <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-fe-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="cpi-fe-chart" data-source="cpi_series jp_cpi_food"></div>
+      <div class="ad-foot"><span>Source: Statistics Bureau of Japan, Asia Decoded calculations</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
 
     <p class="jg-foot">Source: Statistics Bureau of Japan (Ministry of Internal Affairs and Communications), Consumer Price Index, 2025 base, via the e-Stat API (table 0004052037): <span data-source="cpi_release" data-field="label" data-row="0">—</span>. Tokyo is the Tokyo ward area; its figures come out about four weeks before the national ones. Producer, import and export prices: Bank of Japan, Corporate Goods Price Index (2020 base), via the BoJ Time-Series Data Search API: <span data-source="ppi_release" data-field="label" data-row="0">—</span>.</p>
   </section>
@@ -400,6 +407,28 @@
         <li><b>From 2016:</b> earlier years would need indices from older bases.</li>
         <li><b>National only:</b> there is no Tokyo version, and no seasonally adjusted series, so it appears only as a 12-month rate in the momentum table.</li>
         <li><b>Definitions still differ:</b> energy and the edges of food are defined slightly differently in each country&rsquo;s CPI, so the measures are comparable, not identical.</li>
+      </ul>
+      <div class="ad-foot"><span>Source: Asia Decoded calculation from Statistics Bureau of Japan data</span><span class="ad-brand">Asia Decoded</span></div>
+    </article>
+    <article class="jg-card ad-method" id="method-food">
+      <h2>Food and non-alcoholic beverages</h2>
+      <p>The food measure follows the international standard (COICOP division 01, food and non-alcoholic beverages), so Japan can be compared with India and other economies.</p>
+      <h3>Why it is needed</h3>
+      <p>Japan&rsquo;s Food group also contains alcoholic beverages and eating out (including school lunches). COICOP puts these in separate divisions (alcohol with tobacco; restaurants and canteens with accommodation). Japan does not publish a food and non-alcoholic beverages aggregate.</p>
+      <h3>Definition</h3>
+      <ul>
+        <li><b>Included:</b> fresh food, meat, rice and other cereals, dairy and eggs, processed and prepared food bought from shops, and non-alcoholic drinks (tea, coffee, soft drinks, juices).</li>
+        <li><b>Excluded:</b> alcoholic drinks, and eating out (restaurants, takeaway, school lunches). Pet food and tobacco are outside Japan&rsquo;s Food group already.</li>
+      </ul>
+      <h3>Calculation</h3>
+      <p>Food and non-alcoholic beverages is the published Food index less alcoholic beverages and eating out, using the Statistics Bureau&rsquo;s published weights for each base. Within a base, Japan&rsquo;s fixed-weight index makes this exact. The year-on-year rate combines the three parts&rsquo; published rates, each weighted by its weight times its index a year earlier, and is checked against the change in the combined index. It uses the base the Bureau uses for that month&rsquo;s official rates: 2010 base for 2011 to 2015, 2015 base for 2016 to 2020, 2020 base for 2021 to 2025, and 2025 base from 2026.</p>
+      <h3>Energy</h3>
+      <p>Energy is the Statistics Bureau&rsquo;s published series, which matches the international definition: electricity, city and LP gas, kerosene and gasoline. Japan&rsquo;s CPI has no diesel item.</p>
+      <h3>Limits</h3>
+      <ul>
+        <li><b>Not an official series:</b> the Statistics Bureau does not publish this aggregate.</li>
+        <li><b>Rounding:</b> because parts are subtracted, rounding in the published inputs can move the rate by up to about 0.1 percentage point.</li>
+        <li><b>From 2011, national only.</b></li>
       </ul>
       <div class="ad-foot"><span>Source: Asia Decoded calculation from Statistics Bureau of Japan data</span><span class="ad-brand">Asia Decoded</span></div>
     </article>
