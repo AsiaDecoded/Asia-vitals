@@ -1,0 +1,37 @@
+series,label,weight
+all,All items,1000.0
+ex_food_energy,Excl. food and energy,782.2
+ex_agri_oil,Excl. agricultural products and oil,909.8
+living,Living cost index,528.4
+goods,Goods,447.6
+agri,"Agricultural, livestock and fishery products",75.6
+industrial,Industrial products,338.3
+processed_food,Processed food,82.7
+petroleum,Petroleum products,46.6
+utilities,"Electricity, gas and water",33.7
+services,Services,552.4
+rent,Housing rent,99.1
+public,Public services,120.0
+personal,Personal services,333.3
+eating_out,Eating out,138.0
+personal_ex_eating_out,Personal services excl. eating out,195.3
+fresh,Fresh food,37.9
+ex_fresh,Excl. fresh food,962.1
+div_A,Food and non-alcoholic beverages,142.0
+div_B,Alcoholic beverages and tobacco,15.8
+div_C,Clothing and footwear,49.6
+div_D,"Housing, water, electricity and fuels",171.6
+div_E,Furnishings and household goods,45.6
+div_F,Health,84.0
+div_G,Transport,110.6
+div_H,Communication,46.6
+div_I,Recreation and culture,62.9
+div_J,Education,73.9
+div_K,Restaurants and hotels,144.7
+div_L,Miscellaneous goods and services,52.7
+jeonse,Jeonse (lump-sum deposit rent),54.2
+monthly_rent,Monthly rent,44.9
+electricity,Electricity,16.1
+city_gas,City gas,11.5
+petrol,Petrol,24.1
+diesel,Diesel,16.3
