@@ -1,5 +1,6 @@
 == tw_cpi_dgbas
-   UPDATED: September 2026: 216653 rows, 368 items, 45 release tables; rates vs index 142378 tested, max 0.005; weights vs headline max 0.051 (70s)
+   UPDATED: September 2026: 216653 rows, 368 items, 45 release tables; rates vs index 142378 tested, max 0.005; weights vs headline max 0.051; COICOP 01 food {'identity_max_gap': 0.0, 'sensitivity_max_pp': 0.0461, 'subgroups_max_gap': 0.553, 'months': 45} (81s)
+   WARNING: COICOP 01 food: food rebuilt from its 18 subgroups at table-14 weights misses the published food index by up to 0.553 index points (fruit's month-varying weights; not used)
 == tw_ppi_dgbas
-   UPDATED: September 2026: 369050 rows; rates vs index 241374 tested, max 0.005 (63s)
+   UPDATED: September 2026: 369050 rows; rates vs index 241374 tested, max 0.005 (64s)
 September 2026 vs DGBAS release: 38/38 match

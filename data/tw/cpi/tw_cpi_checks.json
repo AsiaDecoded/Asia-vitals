@@ -367,5 +367,238 @@
   "2026-07": 99.676,
   "2026-08": 99.683,
   "2026-09": 99.62
- }
+ },
+ "food_coicop01": {
+  "identity_max_gap": 0.0,
+  "sensitivity_max_pp": 0.0461,
+  "subgroups_max_gap": 0.553,
+  "months": 45
+ },
+ "food_coicop01_months": [
+  {
+   "month": "2023-01",
+   "identity_gap": 0.0,
+   "subgroups_gap": -0.032
+  },
+  {
+   "month": "2023-02",
+   "identity_gap": -0.0,
+   "subgroups_gap": 0.079
+  },
+  {
+   "month": "2023-03",
+   "identity_gap": 0.0,
+   "subgroups_gap": -0.035
+  },
+  {
+   "month": "2023-04",
+   "identity_gap": -0.0,
+   "subgroups_gap": 0.047
+  },
+  {
+   "month": "2023-05",
+   "identity_gap": -0.0,
+   "subgroups_gap": 0.064
+  },
+  {
+   "month": "2023-06",
+   "identity_gap": -0.0,
+   "subgroups_gap": 0.277
+  },
+  {
+   "month": "2023-07",
+   "identity_gap": -0.0,
+   "subgroups_gap": 0.37
+  },
+  {
+   "month": "2023-08",
+   "identity_gap": -0.0,
+   "subgroups_gap": 0.068
+  },
+  {
+   "month": "2023-09",
+   "identity_gap": 0.0,
+   "subgroups_gap": -0.23
+  },
+  {
+   "month": "2023-10",
+   "identity_gap": 0.0,
+   "subgroups_gap": -0.411
+  },
+  {
+   "month": "2023-11",
+   "identity_gap": -0.0,
+   "subgroups_gap": -0.39
+  },
+  {
+   "month": "2023-12",
+   "identity_gap": -0.0,
+   "subgroups_gap": -0.13
+  },
+  {
+   "month": "2024-01",
+   "identity_gap": 0.0,
+   "subgroups_gap": -0.057
+  },
+  {
+   "month": "2024-02",
+   "identity_gap": 0.0,
+   "subgroups_gap": -0.028
+  },
+  {
+   "month": "2024-03",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.182
+  },
+  {
+   "month": "2024-04",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.275
+  },
+  {
+   "month": "2024-05",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.249
+  },
+  {
+   "month": "2024-06",
+   "identity_gap": -0.0,
+   "subgroups_gap": 0.116
+  },
+  {
+   "month": "2024-07",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.192
+  },
+  {
+   "month": "2024-08",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.146
+  },
+  {
+   "month": "2024-09",
+   "identity_gap": -0.0,
+   "subgroups_gap": -0.04
+  },
+  {
+   "month": "2024-10",
+   "identity_gap": -0.0,
+   "subgroups_gap": 0.061
+  },
+  {
+   "month": "2024-11",
+   "identity_gap": -0.0,
+   "subgroups_gap": 0.019
+  },
+  {
+   "month": "2024-12",
+   "identity_gap": -0.0,
+   "subgroups_gap": 0.01
+  },
+  {
+   "month": "2025-01",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.098
+  },
+  {
+   "month": "2025-02",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.143
+  },
+  {
+   "month": "2025-03",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.156
+  },
+  {
+   "month": "2025-04",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.305
+  },
+  {
+   "month": "2025-05",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.306
+  },
+  {
+   "month": "2025-06",
+   "identity_gap": -0.0,
+   "subgroups_gap": 0.432
+  },
+  {
+   "month": "2025-07",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.553
+  },
+  {
+   "month": "2025-08",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.181
+  },
+  {
+   "month": "2025-09",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.244
+  },
+  {
+   "month": "2025-10",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.306
+  },
+  {
+   "month": "2025-11",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.325
+  },
+  {
+   "month": "2025-12",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.341
+  },
+  {
+   "month": "2026-01",
+   "identity_gap": -0.0,
+   "subgroups_gap": -0.019
+  },
+  {
+   "month": "2026-02",
+   "identity_gap": -0.0,
+   "subgroups_gap": -0.027
+  },
+  {
+   "month": "2026-03",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.01
+  },
+  {
+   "month": "2026-04",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.239
+  },
+  {
+   "month": "2026-05",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.292
+  },
+  {
+   "month": "2026-06",
+   "identity_gap": -0.0,
+   "subgroups_gap": 0.374
+  },
+  {
+   "month": "2026-07",
+   "identity_gap": -0.0,
+   "subgroups_gap": 0.311
+  },
+  {
+   "month": "2026-08",
+   "identity_gap": -0.0,
+   "subgroups_gap": 0.174
+  },
+  {
+   "month": "2026-09",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.234
+  }
+ ]
 }
