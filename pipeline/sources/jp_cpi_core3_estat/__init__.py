@@ -6,15 +6,17 @@ alcohol and restaurant meals. Parts, all published by the Statistics Bureau:
   04.5 + 07.2.2) from the e-Stat database table of each base; food and non-alcoholic beverages from the
   Bureau's COICOP classification index (category 01, raw file kept by jp_cpi_food_estat).
 Weights per 10,000, published: COICOP 01 2,083 (2020 base, annual report appendix 5) and 2,163 (2025 base);
-energy 712 (2020 base) and 749 (2025 base), Table 5 of the monthly report.
+energy 712 (2020 base) and 749 (2025 base), Table 5 of the monthly report. For 2011-2020 food and non-alcoholic
+beverages is jp_cpi_food_estat's calculation on the 2010 and 2015 bases (its jp_cpi_food_bases.csv, with the
+weight it sums to from published item weights), and energy's weight is the e-Stat table's weight field.
 
 Within one base Japan's CPI is a fixed-weight index, so
     Core 2 index = (10000 x I_all - w01 x I_01 - wE x I_energy) / (10000 - w01 - wE)
 and its y/y combines the parts' published y/y rates, each weighted by weight x index a year earlier, on the base
-the Bureau uses for that month's official rates (2020 base for 2021-2025, 2025 base from 2026), the same
+the Bureau uses for that month's official rates (2010 base for 2011-2015, 2015 base for 2016-2020, 2020 base for
+2021-2025, 2025 base from 2026), the same
 convention as the Bureau's own aggregates. COICOP 01 levels on the 2020 base are the COICOP table's linked
-2020-2024 values divided by their 2020 average (the link is a constant rescaling). y/y from Jan 2021, the first
-month the COICOP table allows. Check: where both months are on one base, y/y from the combined index agrees within 0.2pp.
+2020-2024 values divided by their 2020 average (the link is a constant rescaling). y/y from Jan 2011. Check: where both months are on one base, y/y from the combined index agrees within 0.2pp.
 """
 import csv
 import gzip
@@ -33,6 +35,8 @@ MONTH_RE = re.compile(r"^(\d{4})00(0[1-9]|1[0-2])\2$")  # e.g. 2026000909 = Sep 
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 # base: (e-Stat table, COICOP 01 weight, energy weight, first and last y/y month on this base)
 BASES = {
+    2010: ("0003036792", None, None, "2011-01-01", "2015-12-01"),
+    2015: ("0003143513", None, None, "2016-01-01", "2020-12-01"),
     2020: ("0003427113", 2083, 712, "2021-01-01", "2025-12-01"),
     2025: ("0004052037", 2163, 749, "2026-01-01", "9999-12-01"),
 }
@@ -44,10 +48,16 @@ def _shift(d, months):
 
 
 def _fetch(table):
-    """{key: {date: {index, yoy}}} for all items and energy, national."""
-    vals = estat.get_values(table, cdArea="00000", cdTab="1,3", cdCat01="0001,0167")
-    out = {}
+    """{key: {date: {index, yoy}}} for all items and energy, national, plus {"weights": {key: w}} where the table has them."""
+    vals = estat.get_values(table, cdArea="00000", cdTab="1,3,5", cdCat01="0001,0167")
+    out = {"weights": {}}
     for v in vals:
+        if v.get("tab") == "5":
+            try:
+                out["weights"][{"0001": "all", "0167": "energy"}[v["cat01"]]] = float(v.get("value"))
+            except (TypeError, ValueError):
+                pass
+            continue
         m = MONTH_RE.match(v.get("time", ""))
         if not m:
             continue
@@ -73,7 +83,9 @@ def update(**_):
     state = read_json(OUT / "release.json", {}) or {}
     data = {b: _fetch(t) for b, (t, *_r) in BASES.items()}
     c01, w01_file = _coicop()
-    fp = hashlib.sha256(json.dumps([data, c01], sort_keys=True).encode()).hexdigest()[:16]
+    food_files = [DATA / "jp" / "cpi_food" / n for n in ("jp_cpi_food.csv", "jp_cpi_food_bases.csv")]
+    fp = hashlib.sha256(json.dumps([data, c01] + [p.read_text() if p.exists() else "" for p in food_files],
+                                   sort_keys=True).encode()).hexdigest()[:16]
     if fp == state.get("fingerprint"):
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {state.get('latest_month')})"}
 
@@ -94,26 +106,48 @@ def update(**_):
     k = sum(lv20) / len(lv20) / 100 if lv20 else 1
     i01 = {2020: {d: v["index"] / k for d, v in c01.items() if v.get("index") and d < "2025-01-01"},
            2025: {d: v["index"] for d, v in c01.items() if v.get("index") and d >= "2025-01-01"}}
+    # 2010 and 2015 bases: jp_cpi_food_estat's calculated COICOP 01 index and y/y
+    y01 = {d: v["yoy"] for d, v in c01.items() if v.get("yoy") is not None}
+    w01, wen = {}, {}
+    fb, fm = DATA / "jp" / "cpi_food" / "jp_cpi_food_bases.csv", DATA / "jp" / "cpi_food" / "jp_cpi_food.csv"
+    if not fb.exists() or not fm.exists():
+        errors.append("jp_cpi_food_bases.csv or jp_cpi_food.csv missing (run jp_cpi_food_estat first)")
+    else:
+        for r in csv.DictReader(open(fb)):
+            b = int(r["base"])
+            if b in (2010, 2015):
+                i01.setdefault(b, {})[r["date"]] = float(r["index"])
+                w01[b] = float(r["weight"])
+        for r in csv.DictReader(open(fm)):
+            if r["basis"] == "calculated":
+                y01[r["date"]] = float(r["yoy"])
+    for b in (2010, 2015):
+        if b not in w01:
+            errors.append(f"{b} base: no calculated COICOP 01 index")
+        wen[b] = data[b]["weights"].get("energy")
+        if not wen[b] or data[b]["weights"].get("all") != 10000:
+            errors.append(f"{b} base: energy or all-items weight missing ({data[b]['weights']})")
     if errors:
         raise CheckFailed(errors)
 
     rows, worst = [], 0.0
-    for base, (_t, w01, we, first, last) in BASES.items():
+    for base, (_t, w01b, web, first, last) in BASES.items():
+        wc, we = w01b or w01[base], web or wen[base]
         A, E = data[base].get("all", {}), data[base].get("energy", {})
-        rest = 10000 - w01 - we
+        rest = 10000 - wc - we
 
         def idx(d):
             try:
-                return (10000 * A[d]["index"] - w01 * i01[base][d] - we * E[d]["index"]) / rest
+                return (10000 * A[d]["index"] - wc * i01[base][d] - we * E[d]["index"]) / rest
             except KeyError:
                 return None
-        for d in sorted(c01):
-            if not (first <= d <= last) or c01[d].get("yoy") is None:
+        for d in sorted(y01):
+            if not (first <= d <= last):
                 continue
             p = _shift(d, -12)
             try:
-                sa, s1, se = 10000 * A[p]["index"], w01 * i01[base][p], we * E[p]["index"]
-                ya, y1, ye = A[d]["yoy"], c01[d]["yoy"], E[d]["yoy"]
+                sa, s1, se = 10000 * A[p]["index"], wc * i01[base][p], we * E[p]["index"]
+                ya, y1, ye = A[d]["yoy"], y01[d], E[d]["yoy"]
             except KeyError as e:
                 errors.append(f"{d[:7]} ({base} base): missing {e}")
                 continue
@@ -127,8 +161,8 @@ def update(**_):
             rows.append({"date": d, "base": base, "index": None if i_d is None else round(i_d, 3), "yoy": round(yoy, 2),
                          "all_yoy": ya, "food_nab_yoy": y1, "energy_yoy": ye})
     dates = [r["date"] for r in rows]
-    if not dates or dates[0] != "2021-01-01":
-        errors.append(f"y/y starts {dates[0][:7] if dates else '-'}, expected 2021-01")
+    if not dates or dates[0] != "2011-01-01":
+        errors.append(f"y/y starts {dates[0][:7] if dates else '-'}, expected 2011-01")
     for x, y in zip(dates, dates[1:]):
         if _shift(x, 1) != y:
             errors.append(f"gap between {x[:7]} and {y[:7]}")
@@ -154,6 +188,6 @@ def update(**_):
                          "source": "Asia Decoded calculation from Statistics Bureau of Japan data", "release": code}
                         for r in rows), OUT / "long.csv")
     release = {"code": code, "label": f"{MONTHS[int(latest[5:7]) - 1]} {latest[:4]}", "latest_month": latest,
-               "weights": {str(b): {"coicop01": v[1], "energy": v[2]} for b, v in BASES.items()}}
+               "weights": {str(b): {"coicop01": v[1] or w01.get(b), "energy": v[2] or wen.get(b)} for b, v in BASES.items()}}
     write_release(OUT, release, warnings, len(rows), {"fingerprint": fp, "long_rows": nlong})
     return {"updated": True, "code": code, "summary": f"{release['label']}: {len(rows)} months", "warnings": warnings}

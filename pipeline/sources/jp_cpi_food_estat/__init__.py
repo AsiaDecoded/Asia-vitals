@@ -1,19 +1,36 @@
-"""Japan CPI food and non-alcoholic beverages (COICOP 01), as published by the Statistics Bureau.
+"""Japan CPI food and non-alcoholic beverages (COICOP 01): published from 2021, calculated 2011-2020.
 
-Source: the COICOP classification index table of the monthly CPI report (2025 base: Table 15,
-"COICOP分類指数_月次"), one Excel file per month on e-Stat, found through the e-Stat file catalogue
-(needs ESTAT_APP_ID). The Bureau re-sorts CPI items into COICOP 2018 categories, each item wholly
-to one category. The latest file carries the whole series: index (2025 = 100) from Jan 2020, and
-m/m and y/y as published (2020 base for 2021-2025, 2025 base from 2026), so y/y runs from Jan 2021.
-Earlier bases have no COICOP table, so the series starts there.
+Published (y/y Jan 2021-): the Statistics Bureau's COICOP classification index, category 01 (2025 base: Table 15,
+"COICOP分類指数_月次"), one Excel file per month on e-Stat, found through the file catalogue (needs ESTAT_APP_ID).
+The latest file carries index (2025 = 100) from Jan 2020 and m/m and y/y as published (2020 base for 2021-2025,
+2025 base from 2026). Kept as published.
 
-Kept as published; nothing is calculated. Writes data/jp/cpi_food/jp_cpi_food.csv (date, weight, index,
-mom, yoy) and keeps the Excel file under raw/jp/cpi_food/.
+Calculated (y/y Jan 2011-Dec 2020), on the Bureau's own item-to-COICOP assignment (品目から類への合算表（COICOP分類）,
+2020 and 2025 bases): COICOP 01 is Japan's Food group less alcoholic beverages and eating out, plus the
+health-supplement items (in medical care in Japan's groups, in COICOP 01.1.9), less the few beverage items the Bureau
+counts as alcoholic. The same items get the same assignment on the 2010 and 2015 bases:
+    2010 base: + サプリメント (6090)
+    2015 base: + 健康保持用摂取品Ａ, Ｂ (6090, 6094)
+    2020 base: + 健康保持用摂取品Ａ, Ｂ; - ノンアルコールビール (1952)   [used only for the check below]
+Within one base Japan's CPI is a fixed-weight index, so
+    I_01 = (wF I_food - wA I_alcohol - wE I_eating_out + sum w_add I_add - sum w_sub I_sub) / W01
+with published weights (2010, 2015: the e-Stat tables' weight field; 2020: Table 5). y/y combines the parts' published
+y/y rates, each weighted by weight x index a year earlier, on the base the Bureau uses for that month's official rates
+(2010 base for 2011-2015, 2015 base for 2016-2020): Japan's convention for its own aggregates.
+
+Checks (errors stop the source): the same calculation on the 2020 base reproduces the published COICOP 01 y/y for
+2021-2025 within 0.15pp (max gap reported) and its weight (2,083) within 3; y/y from the combined index agrees
+within 0.2pp; no gaps from Jan 2011; latest month equals the latest national CPI month.
+
+Writes data/jp/cpi_food/jp_cpi_food.csv (date, basis, base, weight, index, mom, yoy; index and m/m only where
+published) and jp_cpi_food_bases.csv (the calculated COICOP 01 index on each base, every month that base's table
+holds from its base year: used by jp_cpi_core3_estat). Keeps the Excel file under raw/jp/cpi_food/.
 """
 import csv
 import gzip
 import re
 
+from core import estat
 from core.common import DATA, RAW, CheckFailed, read_json, write_long, write_release
 
 NAME = "jp_cpi_food_estat"
@@ -23,6 +40,17 @@ RAWDIR = RAW / "jp" / "cpi_food"
 CODE = "01"
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 SHEETS = {"指数": "index", "前月比": "mom", "前年同月比": "yoy"}
+MONTH_RE = re.compile(r"^(\d{4})00(0[1-9]|1[0-2])\2$")  # e.g. 2026000909 = Sep 2026
+# Calculated history. base: (e-Stat table, weights (None = the table's weight field), added items, removed items,
+#   first month of the base's own index, first and last y/y month taken from it (None = check only))
+HIST = {
+    2010: ("0003036792", None, ["6090"], [], "2010-01-01", "2011-01-01", "2015-12-01"),
+    2015: ("0003143513", None, ["6090", "6094"], [], "2015-01-01", "2016-01-01", "2020-12-01"),
+    2020: ("0003427113", {"0002": 2626, "0041": 119, "0042": 460, "6090": 19, "6094": 19, "1952": 3},
+           ["6090", "6094"], ["1952"], "2020-01-01", None, None),
+}
+HIST_VERSION = 1
+W01_2020 = 2083  # published COICOP 01 weight, 2020 base (annual report appendix 5)
 
 
 def _shift(d, months):
@@ -98,6 +126,65 @@ def parse(data):
     return out, weight
 
 
+def _fetch_base(table, codes, weights_in_table):
+    vals = estat.get_values(table, cdArea="00000", cdTab="1,3,5" if weights_in_table else "1,3", cdCat01=",".join(codes))
+    series, weights = {}, {}
+    for v in vals:
+        try:
+            x = float(v.get("value"))
+        except (TypeError, ValueError):
+            continue
+        c = v.get("cat01")
+        if v.get("tab") == "5":
+            weights[c] = x
+            continue
+        m = MONTH_RE.match(v.get("time", ""))
+        if m:
+            series.setdefault(c, {}).setdefault(f"{m.group(1)}-{m.group(2)}-01", {})["index" if v["tab"] == "1" else "yoy"] = x
+    return series, weights
+
+
+def _history(errors):
+    """Calculated COICOP 01: ({date: y/y} for the official-rate months, [(date, base, index)], {base: W01}, 2020 check y/y)."""
+    yoys, levels, w01s, check = {}, [], {}, {}
+    for base, (table, wts, add, sub, start, first, last) in HIST.items():
+        codes = ["0002", "0041", "0042"] + add + sub
+        s, w = _fetch_base(table, codes, wts is None)
+        w = wts or w
+        miss = [c for c in codes if c not in w or c not in s]
+        if miss:
+            errors.append(f"{base} base: no data or weight for {', '.join(miss)}")
+            continue
+        sign = {"0002": 1, "0041": -1, "0042": -1, **{c: 1 for c in add}, **{c: -1 for c in sub}}
+        W = sum(sign[c] * w[c] for c in codes)
+        w01s[base] = W
+
+        def idx(d):
+            try:
+                return sum(sign[c] * w[c] * s[c][d]["index"] for c in codes) / W
+            except KeyError:
+                return None
+        for d in sorted(s["0002"]):
+            if d >= start and idx(d) is not None:
+                levels.append((d, base, idx(d)))
+        lo, hi = (first, last) if first else ("2021-01-01", "2025-12-01")
+        for d in sorted(s["0002"]):
+            if not lo <= d <= hi:
+                continue
+            p = _shift(d, -12)
+            try:
+                sh = {c: sign[c] * w[c] * s[c][p]["index"] for c in codes}
+                y = sum(sh[c] * s[c][d]["yoy"] for c in codes) / sum(sh.values())
+            except (KeyError, TypeError):
+                errors.append(f"{d[:7]} ({base} base): an index or y/y is missing")
+                continue
+            i_d, i_p = idx(d), idx(p)
+            if i_d and i_p and abs((i_d / i_p - 1) * 100 - y) > 0.2:
+                errors.append(f"{d[:7]} ({base} base): y/y {y:.2f} vs from index {(i_d / i_p - 1) * 100:.2f}")
+            (yoys if first else check)[d] = y
+    return yoys, levels, w01s, check
+
+
 def update(from_file=None, **_):
     from sources.jp_cpi_contrib_estat import download
     state = read_json(OUT / "release.json", {}) or {}
@@ -109,7 +196,7 @@ def update(from_file=None, **_):
         if not found:
             raise CheckFailed(["no monthly COICOP table (2025 base or later) in the e-Stat catalogue"])
         month, sid = found
-        if sid == state.get("stat_inf_id") and (OUT / "jp_cpi_food.csv").exists():
+        if sid == state.get("stat_inf_id") and state.get("hist_version") == HIST_VERSION and (OUT / "jp_cpi_food.csv").exists():
             return {"updated": False, "code": state.get("code"), "summary": f"no change (report {month})"}
         data = download(sid)
         for p in RAWDIR.glob("*.gz"):
@@ -118,13 +205,27 @@ def update(from_file=None, **_):
     series, weight = parse(data)
 
     errors, warnings = [], []
-    rows = [{"date": d, "weight": weight, **{k: v.get(k) for k in ("index", "mom", "yoy")}}
-            for d, v in sorted(series.items()) if v.get("yoy") is not None]
-    if not rows:
-        raise CheckFailed(["no COICOP 01 y/y parsed"])
+    pub = [{"date": d, "basis": "published", "base": 2025 if d >= "2026-01-01" else 2020, "weight": weight,
+            **{k: v.get(k) for k in ("index", "mom", "yoy")}}
+           for d, v in sorted(series.items()) if v.get("yoy") is not None]
+    if not pub or pub[0]["date"] != "2021-01-01":
+        errors.append(f"published y/y starts {pub[0]['date'][:7] if pub else '-'}, expected 2021-01")
+    hist, levels, w01s, check = _history(errors)
+    if errors:
+        raise CheckFailed(errors[:40])
+    # the calculation reproduces the published series where both exist (2020 base, 2021-2025)
+    gaps = [(abs(check[d] - series[d]["yoy"]), d) for d in check if series.get(d, {}).get("yoy") is not None]
+    worst = max(gaps) if gaps else (None, None)
+    if not gaps or worst[0] > 0.15:
+        errors.append(f"calculated vs published COICOP 01 y/y, 2021-2025: max gap {worst[0]} ({worst[1]})")
+    if abs(w01s.get(2020, 0) - W01_2020) > 3:
+        errors.append(f"2020-base COICOP 01 weight {w01s.get(2020)}, published {W01_2020}")
+    rows = [{"date": d, "basis": "calculated", "base": 2010 if d < "2016-01-01" else 2015,
+             "weight": round(w01s[2010 if d < "2016-01-01" else 2015], 1), "index": None, "mom": None, "yoy": round(y, 2)}
+            for d, y in sorted(hist.items())] + pub
     dates = [r["date"] for r in rows]
-    if dates[0] != "2021-01-01":
-        errors.append(f"y/y starts {dates[0][:7]}, expected 2021-01")
+    if dates[0] != "2011-01-01":
+        errors.append(f"y/y starts {dates[0][:7]}, expected 2011-01")
     for x, y2 in zip(dates, dates[1:]):
         if _shift(x, 1) != y2:
             errors.append(f"gap in y/y between {x[:7]} and {y2[:7]}")
@@ -144,12 +245,19 @@ def update(from_file=None, **_):
                 errors.append(f"{d[:7]}: published y/y {series[d]['yoy']} vs index {series[d]['index']}/{series[p]['index']}")
     if errors:
         raise CheckFailed(errors[:40])
-    warnings.append(f"y/y vs index on the 2025 base: max gap {gap:.2f}pp")
+    warnings.append(f"published y/y vs index on the 2025 base: max gap {gap:.2f}pp")
+    warnings.append(f"calculated vs published y/y on the 2020 base, 2021-2025: max gap {worst[0]:.2f}pp ({worst[1][:7]}); "
+                    f"weights {', '.join(f'{b} {w:g}' for b, w in w01s.items())}")
 
     latest = dates[-1]
     code = f"F{latest[:7]}"
     OUT.mkdir(parents=True, exist_ok=True)
-    cols = ["date", "weight", "index", "mom", "yoy"]
+    with open(OUT / "jp_cpi_food_bases.csv", "w", newline="") as f:
+        wr = csv.writer(f, lineterminator="\n")
+        wr.writerow(["date", "base", "weight", "index"])
+        for d, b, i in levels:
+            wr.writerow([d, b, w01s[b], round(i, 4)])
+    cols = ["date", "basis", "base", "weight", "index", "mom", "yoy"]
     with open(OUT / "jp_cpi_food.csv", "w", newline="") as f:
         wr = csv.writer(f, lineterminator="\n")
         wr.writerow(cols)
@@ -158,11 +266,14 @@ def update(from_file=None, **_):
     nlong = write_long(({"country": "JP", "indicator": "cpi", "series": "food_nab",
                          "label": "Food and non-alcoholic beverages (COICOP 01)", "measure": "yoy",
                          "area": "national", "freq": "M", "date": r["date"], "value": r["yoy"], "unit": "%",
-                         "source": "Statistics Bureau of Japan, COICOP classification index", "release": code}
+                         "source": ("Statistics Bureau of Japan, COICOP classification index" if r["basis"] == "published"
+                                    else "Asia Decoded calculation from Statistics Bureau of Japan data"), "release": code}
                         for r in rows), OUT / "long.csv")
     release = {"code": code, "label": f"{MONTHS[int(latest[5:7]) - 1]} {latest[:4]}", "latest_month": latest,
-               "basis": "published", "series_id": "JP Statistics Bureau COICOP classification index, 01",
+               "basis": "calculated 2011-2020, published from 2021",
+               "series_id": "JP COICOP 01: Statistics Bureau COICOP classification index from 2021; before, Food less alcohol and eating out, plus health supplements",
+               "check": {"vs_published_2021_2025_max_pp": round(worst[0], 3), "weights": w01s},
                "report": month, "weight_2025": weight}
-    write_release(OUT, release, warnings, len(rows), {"stat_inf_id": sid, "long_rows": nlong})
-    return {"updated": True, "code": code, "summary": f"{release['label']}: {len(rows)} months (from {dates[0][:7]})",
+    write_release(OUT, release, warnings, len(rows), {"stat_inf_id": sid, "long_rows": nlong, "hist_version": HIST_VERSION})
+    return {"updated": True, "code": code, "summary": f"{release['label']}: {len(rows)} months (from {dates[0][:7]}; published from 2021)",
             "warnings": warnings}
