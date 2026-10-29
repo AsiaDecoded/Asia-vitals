@@ -269,6 +269,34 @@ def step_files2():
                     "&_fields=id,date,source_url,post", save=True)
 
 
+
+def step_quarters():
+    """Socio-economic report workbooks at each quarter end (PPI and trade price tables), 2020-2026."""
+    import datetime as _dt
+    found = []
+    for y in range(2020, 2027):
+        for m in (3, 6, 9, 12):
+            a = _dt.date(y, m, 20) if m != 12 else _dt.date(y, 12, 20)
+            b = (_dt.date(y + (m == 12), (m % 12) + 1, 10))
+            items, _ = jget("wpmedia_q", f"{WP}/media?after={a}T00:00:00&before={b}T00:00:00&per_page=100"
+                            "&_fields=id,date,source_url,post,mime_type", save=False)
+            for x in items or []:
+                u = x["source_url"]
+                if u.lower().endswith((".xlsx", ".xls")) and re.search(r"Bieu|bieu|So-lieu", u) and not re.search(r"CPI|IIP|Lao-dong|XNK|NK|XK", u):
+                    found.append({"quarter": f"{y}Q{m // 3}", **x})
+    (OUT / "quarter_workbooks.json").write_text(json.dumps(found, ensure_ascii=False, indent=1))
+    for x in found:
+        fetch("qbook_" + x["quarter"], x["source_url"])
+
+
+def step_misc():
+    fetch("infographic_2024", "https://www.nso.gov.vn/wp-content/uploads/2026/01/646f8dc5-8880-4de0-ad98-65a9a60e29d6.jpg")
+    for u in ["https://pxweb.nso.gov.vn/pxweb/vi/Ch%e1%bb%89%20s%e1%bb%91%20gi%c3%a1/",
+              "https://pxweb.nso.gov.vn/pxweb/vi/Ch%e1%bb%89%20s%e1%bb%91%20gi%c3%a1/Ch%e1%bb%89%20s%e1%bb%91%20gi%c3%a1__Px_V_11/?tablelist=true",
+              "https://pxweb.nso.gov.vn/pxweb/vi/Ch%e1%bb%89%20s%e1%bb%91%20gi%c3%a1/?tablelist=true"]:
+        fetch("pxvi", u)
+
+
 def main(out, steps="px,wp,files"):
     global OUT
     OUT = Path(out)
@@ -276,7 +304,8 @@ def main(out, steps="px,wp,files"):
     for s in steps.split(","):
         try:
             {"px": step_px, "wp": step_wp, "files": step_files, "pxweb": step_pxweb,
-             "posts": step_posts, "files2": step_files2}[s]()
+             "posts": step_posts, "files2": step_files2,
+             "quarters": step_quarters, "misc": step_misc}[s]()
         except Exception as e:  # noqa: BLE001
             SUMMARY.append({"name": f"step_{s}", "error": f"{type(e).__name__}: {e}"})
             print("step failed", s, e, flush=True)
