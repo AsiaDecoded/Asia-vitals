@@ -1,0 +1,15 @@
+{
+ "description": "C&SD as published: quarterly PPI for manufacturing and industry groups (2015 = 100, table 520-62001), quarterly services PPI (520-63001), monthly import and export unit value indices (2024 = 100, 410-51001/51002).",
+ "schedule": "Replaced after each C&SD release by the dashboard refresh task, which reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "hk_ppi_P2026-08.csv",
+  "url": "/_blob/00f07e5fb77feaea95da6f254be3f3e5"
+ },
+ "staleAfterHours": 960,
+ "title": "Hong Kong producer and trade prices",
+ "updated": {
+  "at": "2026-10-29T02:13:01Z",
+  "by": "Claude"
+ }
+}

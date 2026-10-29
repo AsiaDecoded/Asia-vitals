@@ -1,0 +1,15 @@
+{
+ "description": "C&SD CPI expenditure weights (% of CPI) by section and group for the four CPIs: 2025 reference year (used from Apr 2026) and 2024 (Apr 2025-Mar 2026), from Annex 1 to the Monthly Report on the CPI.",
+ "schedule": "Replaced after each C&SD release by the dashboard refresh task, which reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "hk_cpi_weights_2025.csv",
+  "url": "/_blob/15309aeb2253c57293f15faf41f45760"
+ },
+ "staleAfterHours": 960,
+ "title": "Hong Kong CPI weights",
+ "updated": {
+  "at": "2026-10-29T02:13:01Z",
+  "by": "Claude"
+ }
+}

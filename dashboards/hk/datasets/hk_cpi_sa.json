@@ -1,0 +1,15 @@
+{
+ "description": "C&SD seasonally adjusted CPI as published: SA index and SA m/m for all items and food (latest 36 months, latest report issue), SA 3-month average m/m incl. underlying, and the long SA 3-month average series (table 510-60004).",
+ "schedule": "Replaced after each C&SD release by the dashboard refresh task, which reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "hk_cpi_sa_C2026-09.csv",
+  "url": "/_blob/9f57d2d4fd94e547659672da5edec4c7"
+ },
+ "staleAfterHours": 960,
+ "title": "Hong Kong CPI, seasonally adjusted",
+ "updated": {
+  "at": "2026-10-29T02:13:01Z",
+  "by": "Claude"
+ }
+}

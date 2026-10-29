@@ -1,0 +1,15 @@
+{
+ "description": "Latest-month figures as published for the tiles: Composite, underlying, sections, A/B/C, SA 3-month average; release date and next release from C&SD's schedule.",
+ "schedule": "Replaced after each C&SD release by the dashboard refresh task, which reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "hk_cpi_latest_C2026-09.csv",
+  "url": "/_blob/a4965cc04ed2a4a3095d65aced1e9da8"
+ },
+ "staleAfterHours": 960,
+ "title": "Hong Kong CPI, latest month",
+ "updated": {
+  "at": "2026-10-29T02:13:01Z",
+  "by": "Claude"
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "description": "Latest quarter of manufacturing PPI and latest month of import and export unit value indices, y/y as published.",
+ "schedule": "Replaced after each C&SD release by the dashboard refresh task, which reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "hk_ppi_latest_P2026-08.csv",
+  "url": "/_blob/578c4f9eae40b5365e080aa6b464d59a"
+ },
+ "staleAfterHours": 960,
+ "title": "Hong Kong PPI, latest",
+ "updated": {
+  "at": "2026-10-29T02:13:01Z",
+  "by": "Claude"
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "description": "Composite CPI, CPI(A), (B), (C), Oct 2019-Sep 2020 = 100, headline and underlying: all items and sections from 1974/1980, COICOP divisions from 2005, Composite groups from 2015; index, m/m and y/y as published (web tables 510-60001/60001A/60002/60002A/60003, Table E501). Built by the asia-vitals pipeline (data/hk/cpi/hk_cpi_dash.csv).",
+ "schedule": "Replaced after each C&SD release by the dashboard refresh task, which reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "hk_cpi_C2026-09.csv",
+  "url": "/_blob/8845afd82d3482c6da5b3a260f927f1a"
+ },
+ "staleAfterHours": 960,
+ "title": "Hong Kong CPI, C&SD",
+ "updated": {
+  "at": "2026-10-29T02:13:01Z",
+  "by": "Claude"
+ }
+}

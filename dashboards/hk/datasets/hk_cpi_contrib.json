@@ -1,0 +1,15 @@
+{
+ "description": "Contributions (pp) of the commodity/service sections, meals out and basic food to Composite CPI y/y, as published in each web issue of C&SD's Monthly Report on the CPI (Table 3.05), Jun 2023 on.",
+ "schedule": "Replaced after each C&SD release by the dashboard refresh task, which reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "hk_cpi_contrib_C2026-09.csv",
+  "url": "/_blob/4d2dd5e90e16c658f2f78f06b410dcfe"
+ },
+ "staleAfterHours": 960,
+ "title": "Hong Kong CPI contributions",
+ "updated": {
+  "at": "2026-10-29T02:13:01Z",
+  "by": "Claude"
+ }
+}
