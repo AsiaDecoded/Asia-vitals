@@ -476,11 +476,6 @@
     if (!visible()) return;
     const C = (series, key, name, color, extra) => Object.assign({ ds: 'hk_cpi', it: 'composite', basis: 'headline', series, key, name, color, measure: 'yoy' }, extra || {});
     const IT = { composite: 'Composite CPI', a: 'CPI(A)', b: 'CPI(B)', c: 'CPI(C)' };
-    lines('ppi-cpi', [
-      C('all', 'cpi', 'Composite CPI', 'var(--ad-c2)'),
-      { ds: 'hk_ppi', series: 'import_uvi', key: 'imp', name: 'Import prices', color: 'var(--ad-c1)' },
-      { ds: 'hk_ppi', series: 'manufacturing', key: 'ppi', name: 'PPI, manufacturing', color: 'var(--ad-c8)', sparse: true, shift: 1, dash: true },
-    ]);
     lines('cpi-measures', [C('all', 'cpi', 'Composite CPI', 'var(--ad-c2)'),
       C('all', 'und', 'Underlying Composite CPI', 'var(--ad-c1)', { basis: 'underlying', dash: true })]);
     lines('cpi-momentum', [
