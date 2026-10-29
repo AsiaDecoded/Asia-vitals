@@ -1,0 +1,50 @@
+# name url [POST body]. Round 1: which domains answer, PX-Web, monthly CPI release, yearbook, fallbacks.
+# Domains
+nso_home https://www.nso.gov.vn/
+nso_home_bare https://nso.gov.vn/
+nso_en https://www.nso.gov.vn/en/
+gso_home https://www.gso.gov.vn/
+gso_home_bare https://gso.gov.vn/
+gso_en https://www.gso.gov.vn/en/
+gso_old_cpi https://www.gso.gov.vn/chi-so-gia-tieu-dung/
+gso_old_en_cpi https://www.gso.gov.vn/en/consumer-price-index/
+# Statistical database (PX-Web), old and new hosts
+px_gso_vi https://pxweb.gso.gov.vn/pxweb/vi/
+px_gso_en https://pxweb.gso.gov.vn/pxweb/en/
+px_nso_vi https://pxweb.nso.gov.vn/pxweb/vi/
+px_nso_en https://pxweb.nso.gov.vn/pxweb/en/
+px_gso_api https://pxweb.gso.gov.vn/api/v1/en/
+px_gso_api_vi https://pxweb.gso.gov.vn/api/v1/vi/
+px_nso_api https://pxweb.nso.gov.vn/api/v1/en/
+px_nso_api_vi https://pxweb.nso.gov.vn/api/v1/vi/
+px_gso_legacy https://pxweb.gso.gov.vn/pxweb/en/Gi%C3%A1%20c%E1%BA%A3/
+nso_db https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/
+nso_en_db https://www.nso.gov.vn/en/data-and-statistics/
+nso_cpi_vi https://www.nso.gov.vn/chi-so-gia-tieu-dung/
+nso_cpi_en https://www.nso.gov.vn/en/consumer-price-index/
+nso_price_vi https://www.nso.gov.vn/gia-ca/
+nso_price_en https://www.nso.gov.vn/en/prices/
+nso_press_en https://www.nso.gov.vn/en/press-release/
+# Sep 2026 CPI release (English page and Excel attachment found via the web)
+cpi_sep26_en https://www.nso.gov.vn/en/data-and-statistics/2026/10/consumer-price-index-gold-price-index-and-us-dollar-price-index-in-september-2026-q3-2026-and-the-nine-months-of-2026/
+cpi_sep26_xlsx https://www.nso.gov.vn/wp-content/uploads/2026/10/CPI-Gold-Price-Index-and-US-Dollar-Price-Index-in-Sept.-and-the-nine-months-of-2026_Eng.xlsx
+cpi_sep26_p https://www.nso.gov.vn/?p=62540
+# WordPress REST API (site looks WordPress: ?p= ids, wp-content/uploads)
+wp_posts_search https://www.nso.gov.vn/wp-json/wp/v2/posts?search=CPI&per_page=50
+wp_media_search https://www.nso.gov.vn/wp-json/wp/v2/media?search=CPI&per_page=100
+wp_categories https://www.nso.gov.vn/wp-json/wp/v2/categories?per_page=100
+wp_tags https://www.nso.gov.vn/wp-json/wp/v2/tags?search=price&per_page=100
+wp_root https://www.nso.gov.vn/wp-json/
+gso_wp_media https://www.gso.gov.vn/wp-json/wp/v2/media?search=CPI&per_page=100
+# Yearbook
+nso_yearbook_vi https://www.nso.gov.vn/nien-giam-thong-ke/
+nso_yearbook_en https://www.nso.gov.vn/en/statistical-yearbook/
+# Fallbacks (headline only)
+imf_vn_m https://api.imf.org/external/sdmx/2.1/data/IMF.STA,CPI/VNM.CPI._T.IX.M?startPeriod=1990
+imf_vn_yoy https://api.imf.org/external/sdmx/2.1/data/IMF.STA,CPI/VNM.CPI._T.YOY_PCH_PA_PT.M?startPeriod=1990
+imf_vn_all https://api.imf.org/external/sdmx/2.1/data/IMF.STA,CPI/VNM.....M?startPeriod=2020
+dbn_imf_cpi_vn https://api.db.nomics.world/v22/series/IMF/CPI?dimensions=%7B%22REF_AREA%22%3A%5B%22VN%22%5D%7D&observations=1&limit=50
+dbn_search https://api.db.nomics.world/v22/search?q=vietnam%20consumer%20price&limit=50
+dbn_providers_gso https://api.db.nomics.world/v22/providers/GSO
+# Runner location
+ipinfo https://ipinfo.io/json

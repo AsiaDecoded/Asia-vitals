@@ -1,0 +1,62 @@
+name: NSO Vietnam discovery (manual)
+
+# Probes Vietnam's National Statistics Office (nso.gov.vn, gso.gov.vn, PX-Web) and the
+# IMF / DBnomics fallbacks, and saves every response to the "discovery" branch under
+# discovery/nso/<round> with summary.json (URL, status, error per request).
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-vn]
+    paths:
+      - pipeline/tools/nso_discover.py
+      - pipeline/tools/nso_seeds.txt
+      - .github/workflows/nso-discover.yml
+
+permissions:
+  contents: write
+
+env:
+  NSO_ROUND: r1
+  NSO_MAX: "260"
+  NSO_DEPTH: "1"
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Runner IP
+        run: curl -s https://ipinfo.io/json || true
+      - name: DNS and TLS for the NSO hosts
+        continue-on-error: true
+        run: |
+          set +e
+          D=discovery/nso/$NSO_ROUND; mkdir -p $D
+          for h in www.nso.gov.vn nso.gov.vn www.gso.gov.vn gso.gov.vn pxweb.gso.gov.vn pxweb.nso.gov.vn; do
+            echo "== $h" >> $D/dns_tls.txt
+            getent hosts $h >> $D/dns_tls.txt 2>&1 || echo "no DNS" >> $D/dns_tls.txt
+            timeout 25 openssl s_client -connect $h:443 -servername $h </dev/null 2>&1 | grep -E "subject=|issuer=|Verify return|Protocol|Cipher " >> $D/dns_tls.txt
+            curl -sS -m 30 -o /dev/null -w "curl https: %{http_code} %{time_total}s -> %{redirect_url}\n" https://$h/ >> $D/dns_tls.txt 2>&1
+            curl -sS -m 30 -o /dev/null -w "curl http:  %{http_code} %{time_total}s -> %{redirect_url}\n" http://$h/ >> $D/dns_tls.txt 2>&1
+          done
+          cat $D/dns_tls.txt
+      - name: Probe
+        continue-on-error: true
+        run: python -I pipeline/tools/nso_discover.py pipeline/tools/nso_seeds.txt discovery/nso/$NSO_ROUND $NSO_MAX $NSO_DEPTH
+      - name: Push results to the discovery branch
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mv discovery /tmp/discovery
+          for i in 1 2 3; do
+            git fetch origin discovery && git checkout -f -B discovery origin/discovery
+            mkdir -p discovery/nso && rm -rf discovery/nso/$NSO_ROUND && cp -r /tmp/discovery/nso/$NSO_ROUND discovery/nso/
+            git add discovery/nso/$NSO_ROUND
+            git commit -qm "NSO Vietnam discovery $NSO_ROUND" && git push -q origin discovery && break
+            sleep 5
+          done
