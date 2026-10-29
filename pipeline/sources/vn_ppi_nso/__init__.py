@@ -179,9 +179,6 @@ def update(force=False, **_):
                    "measure": r["comparison_base"], "area": "national", "freq": r["freq"], "date": r["date"], "value": r["rate"],
                    "unit": "%", "source": N.SOURCE, "release": code}
     nlong = write_long(long_rows(), OUT / "long.csv")
-    with open(OUT / "asia.csv", "w", newline="") as f:   # ppi_yoy left empty: NSO publishes no all-economy PPI (decision 3)
-        csv.writer(f, lineterminator="\n").writerow(["country", "concept", "series_id", "date", "value", "unit", "basis", "source",
-                                                     "base_break", "release_date", "comparison_base"])
     release = {"code": code, "label": latest.replace("-", " "), "latest_quarter": latest,
                "table": "NSO socio-economic report tables (quarterly price indices), PX-Web E11.15-E11.27", "books": len(index)}
     write_release(OUT, release, warnings, len(rows), {"long_rows": nlong})

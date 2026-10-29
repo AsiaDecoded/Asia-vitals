@@ -355,16 +355,6 @@ def _write(store, regions, imfd, weights, latest, index, px_meta, extra):
             yield {"country": "VN", "indicator": "cpi", "series": "imf_all", "label": "All items (IMF CPI dataset)", "measure": "yoy",
                    "area": "national", "freq": "M", "date": d, "value": round(v, 6), "unit": "%", "source": "IMF", "release": code}
     nlong = write_long(long_rows(), OUT / "long.csv")
-    # Asia-tab rows (common schema + comparison_base): only concepts NSO publishes on the COICOP/IMF definition
-    acols = ["country", "concept", "series_id", "date", "value", "unit", "basis", "source", "base_break", "release_date", "comparison_base"]
-    with open(OUT / "asia.csv", "w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=acols, lineterminator="\n")
-        w.writeheader()
-        for r in rows:
-            if r["area"] == "national" and r["series"] == "all" and r["comparison_base"] == "yoy":
-                w.writerow({"country": "VN", "concept": "headline_yoy", "series_id": "vn_cpi_nso:all:yoy", "date": r["date"],
-                            "value": r["rate"], "unit": "%", "basis": "published", "source": N.SOURCE, "base_break": r["base_break"],
-                            "release_date": r["release_date"], "comparison_base": "yoy"})
     release = {"code": code, "label": time.strftime("%B %Y", time.strptime(latest[:7], "%Y-%m")), "latest_month": latest,
                "table": "NSO monthly CPI workbooks (Vietnamese), PX-Web E11.01-E11.08, IMF.STA,CPI VNM",
                "workbooks": len(index), "px": px_meta}

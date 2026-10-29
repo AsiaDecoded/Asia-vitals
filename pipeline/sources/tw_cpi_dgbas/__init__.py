@@ -523,23 +523,6 @@ def update(**opts):
                    "measure": r["measure"], "area": r["area"], "freq": "M", "date": r["date"], "value": r["value"],
                    "unit": unit, "source": src, "release": code}
     nlong = write_long(long_rows(), OUT / "long.csv")
-    # Asia tab: headline and energy as published; food (COICOP 01) calculated, see _food01; CPI ex food
-    # and energy still an open decision
-    asia = []
-    for r in rows:
-        if r["area"] == "national" and r["measure"] == "yoy" and r["series"] in ("all", "energy"):
-            asia.append({"country": "TW", "concept": {"all": "headline_yoy", "energy": "energy_yoy"}[r["series"]],
-                         "series_id": f"tw.cpi.{r['series']}.yoy", "date": r["date"], "value": r["value"],
-                         "unit": "% y/y", "basis": "published", "source": "DGBAS", "base_break": r["base_break"],
-                         "release_date": r["release_date"]})
-    for r in food01:
-        if r["yoy"] is not None:
-            asia.append({"country": "TW", "concept": "food_yoy",
-                         "series_id": "tw.cpi.food_ex_alcohol_ex_eating_out.yoy", "date": r["date"],
-                         "value": round(r["yoy"], 2), "unit": "% y/y", "basis": "calculated", "source": "DGBAS; Asia Decoded",
-                         "base_break": r["base_break"], "release_date": rel_dates.get(r["date"][:7], "")})
-    _write_csv(OUT / "asia.csv", ["country", "concept", "series_id", "date", "value", "unit", "basis", "source",
-                                  "base_break", "release_date"], asia)
     payload = json.dumps({k: v for k, v in raw.items() if v}, ensure_ascii=False).encode()
     fp = hashlib.sha256(payload).hexdigest()[:12]
     (RAWDIR / f"{code}_{fp}.json.gz").write_bytes(gzip.compress(payload))

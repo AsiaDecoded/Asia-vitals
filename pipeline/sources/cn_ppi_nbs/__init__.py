@@ -317,12 +317,6 @@ def update(**opts):
                    "measure": r["measure"], "area": r["area"], "freq": "M", "date": r["date"], "value": r["pct"],
                    "unit": "%", "source": "National Bureau of Statistics of China", "release": code}
     nlong = write_long(long_rows(), OUT / "long.csv")
-    asia = [{"country": "CN", "concept": "ppi_yoy", "series_id": "cn.ppi.ppi.yoy", "date": r["date"], "value": r["pct"],
-             "unit": "% y/y", "basis": "published", "source": "NBS", "base_break": r["base_break"],
-             "release_date": rel_date if r["date"] == latest else ""}
-            for r in out if r["area"] == "national" and r["series"] == "ppi" and r["measure"] == "yoy"]
-    _write_csv(OUT / "asia.csv", ["country", "concept", "series_id", "date", "value", "unit", "basis", "source",
-                                  "base_break", "release_date"], asia)
     RAWDIR.mkdir(parents=True, exist_ok=True)
     blob = json.dumps(raw, ensure_ascii=False).encode()
     (RAWDIR / f"{code}_{hashlib.sha256(blob).hexdigest()[:12]}.json.gz").write_bytes(gzip.compress(blob))

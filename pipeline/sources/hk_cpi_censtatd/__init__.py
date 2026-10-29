@@ -454,17 +454,6 @@ def update(force=False, **_):
                        "measure": m, "area": "national", "freq": "M", "date": r["date"], "value": r[m], "unit": unit,
                        "source": SRC, "release": rcode}
     nlong = write_long(long_rows(), OUT / "long.csv")
-    # Asia tab: concepts C&SD publishes on a matching definition (food = COICOP division 01, excluding restaurants)
-    asia = []
-    for r in rows:
-        if r["index_type"] != "composite" or r["basis"] != "headline" or r["yoy"] is None:
-            continue
-        concept = {"all": "headline_yoy", "coicop_01": "food_yoy"}.get(r["series"])
-        if concept:
-            asia.append({"country": "HK", "concept": concept, "series_id": f"hk.cpi.composite.{r['series']}.yoy", "date": r["date"],
-                         "value": r["yoy"], "unit": "% y/y", "basis": "published", "source": "C&SD",
-                         "base_break": r["base_break"], "release_date": r["release_date"]})
-    _write_csv(OUT / "asia.csv", ["country", "concept", "series_id", "date", "value", "unit", "basis", "source", "base_break", "release_date"], asia)
     # latest-month row
     def g(it, b, s, d, m="yoy"):
         return store.get((it, b, s, d), {}).get(m)

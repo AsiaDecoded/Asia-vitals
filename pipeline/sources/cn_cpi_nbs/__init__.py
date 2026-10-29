@@ -363,18 +363,6 @@ def update(**opts):
                    "measure": r["measure"], "area": r["area"], "freq": "M", "date": r["date"], "value": r["pct"],
                    "unit": "%", "source": src, "release": code}
     nlong = write_long(long_rows(), OUT / "long.csv")
-    # Common schema for the Asia tab: only concepts NBS publishes on a matching definition
-    asia = []
-    for r in out_rows:
-        if r["area"] != "national" or r["measure"] != "yoy":
-            continue
-        concept = {"all": "headline_yoy", "food": "food_yoy"}.get(r["series"])
-        if concept:
-            asia.append({"country": "CN", "concept": concept, "series_id": f"cn.cpi.{r['series']}.yoy", "date": r["date"],
-                         "value": r["pct"], "unit": "% y/y", "basis": "published", "source": "NBS",
-                         "base_break": r["base_break"], "release_date": r["release_date"]})
-    _write_csv(OUT / "asia.csv", ["country", "concept", "series_id", "date", "value", "unit", "basis", "source",
-                                  "base_break", "release_date"], asia)
     # latest-month row for the dashboard
     RAWDIR.mkdir(parents=True, exist_ok=True)
     blob = json.dumps(raw, ensure_ascii=False).encode()

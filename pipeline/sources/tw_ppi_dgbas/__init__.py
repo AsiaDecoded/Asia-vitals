@@ -212,11 +212,6 @@ def update(**opts):
                    "measure": r["measure"], "area": "national", "freq": "M", "date": r["date"], "value": r["value"],
                    "unit": "index 2021=100" if "index" in r["measure"] else "%", "source": "DGBAS", "release": code}
     nlong = write_long(long_rows(), OUT / "long.csv")
-    asia = [{"country": "TW", "concept": "ppi_yoy", "series_id": "tw.ppi.all.yoy", "date": r["date"], "value": r["value"],
-             "unit": "% y/y", "basis": "published", "source": "DGBAS", "base_break": r["base_break"],
-             "release_date": r["release_date"]} for r in rows if r["series"] == "ppi_all" and r["measure"] == "yoy"]
-    _write_csv(OUT / "asia.csv", ["country", "concept", "series_id", "date", "value", "unit", "basis", "source",
-                                  "base_break", "release_date"], asia)
     RAWDIR.mkdir(parents=True, exist_ok=True)
     payload = json.dumps(raw, ensure_ascii=False).encode()
     fp = hashlib.sha256(payload).hexdigest()[:12]

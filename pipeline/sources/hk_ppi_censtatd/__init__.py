@@ -133,13 +133,6 @@ def update(force=False, **_):
                        "label": r["label"], "measure": m, "area": "national", "freq": r["freq"], "date": r["date"],
                        "value": r[m], "unit": unit, "source": SRC, "release": code}
     nlong = write_long(long_rows(), OUT / "long.csv")
-    asia = [{"country": "HK", "concept": "ppi_yoy", "series_id": "hk.ppi.manufacturing.yoy", "date": r["date"], "value": r["yoy"],
-             "unit": "% y/y, quarterly", "basis": "published", "source": "C&SD", "base_break": "", "release_date": ""}
-            for r in rows if r["series"] == "manufacturing" and r["yoy"] is not None]
-    with open(OUT / "asia.csv", "w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=["country", "concept", "series_id", "date", "value", "unit", "basis", "source", "base_break", "release_date"], lineterminator="\n")
-        w.writeheader()
-        w.writerows(asia)
     g = lambda k, d, m="yoy": store.get((k, d), {}).get(m)  # noqa: E731
     pq = f"{int(lq[:4]) - (1 if lq[5:7] == '01' else 0)}-{(int(lq[5:7]) - 3 - 1) % 12 + 1:02d}-01"
     pm = f"{int(lm[:4]) - (1 if lm[5:7] == '01' else 0)}-{(int(lm[5:7]) - 2) % 12 + 1:02d}-01"
