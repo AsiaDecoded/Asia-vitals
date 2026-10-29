@@ -281,7 +281,7 @@
     const mk = (field) => { const b = document.createElement('b'); b.dataset.source = 'hk_cpi_latest'; b.dataset.field = field; b.dataset.row = '0'; b.textContent = pct(num(a[field])); return b; };
     const t = (x) => p.append(document.createTextNode(x));
     p.replaceChildren();
-    t(`In ${a.month}, the Composite CPI was `); p.append(mk('all_yoy'));
+    t(`In ${a.month}, the CPI was `); p.append(mk('all_yoy'));
     t(` higher than a year earlier, against `); p.append(mk('all_yoy_prev'));
     t(` in ${a.prev_month}. Netting out the Government's one-off relief measures, underlying inflation was `); p.append(mk('underlying_yoy'));
     t('. Seasonally adjusted, prices rose by an average of '); p.append(mk('sa3')); t(' a month over the latest three months.');
@@ -289,7 +289,7 @@
 
   // Heat table: published y/y for the latest 13 months, each row on its own colour range; 2025 weights.
   const HEAT = [
-    ['all', 'Composite CPI', 'lead'], ['under', 'Underlying Composite CPI', 'lead'],
+    ['all', 'CPI', 'lead'], ['under', 'Underlying CPI', 'lead'],
     ['food', 'Food', ''], ['meals_out', 'Meals out and takeaway food', 'sub'], ['basic_food', 'Basic food', 'sub'],
     ['housing', 'Housing', ''], ['g23_1', 'Private housing rent', 'sub'], ['g23_2', 'Public housing rent', 'sub'],
     ['egw', 'Electricity, gas and water', ''], ['g25', 'Electricity', 'sub'],
@@ -362,7 +362,7 @@
     const head = tbl.createTHead().insertRow();
     [''].concat(last.map((r) => `${MON[+r.date.slice(5, 7) - 1]} ${r.date.slice(2, 4)}`)).forEach((t) => { const th = document.createElement('th'); th.textContent = t; head.appendChild(th); });
     const tb = tbl.createTBody();
-    const order = [['all', 'Composite CPI, y/y', 'lead'], ['food', 'Food', ''], ['meals_out', 'Meals out and takeaway food', 'sub'], ['basic_food', 'Basic food', 'sub'],
+    const order = [['all', 'CPI, y/y', 'lead'], ['food', 'Food', ''], ['meals_out', 'Meals out and takeaway food', 'sub'], ['basic_food', 'Basic food', 'sub'],
       ['housing', 'Housing', ''], ['egw', 'Electricity, gas and water', ''], ['alcohol_tobacco', 'Alcoholic drinks and tobacco', ''],
       ['clothing', 'Clothing and footwear', ''], ['durables', 'Durable goods', ''], ['misc_goods', 'Miscellaneous goods', ''],
       ['transport', 'Transport', ''], ['misc_services', 'Miscellaneous services', '']];
@@ -376,7 +376,7 @@
   }
   function contribChart() {
     const id = 'cpi-contrib', box = document.getElementById(id + '-chart');
-    const leg = [{ name: 'Composite CPI, y/y', color: CC.line }].concat(PARTS.filter((p, i) => !(p[2] === CC.goods && PARTS[i - 1] && PARTS[i - 1][2] === CC.goods))
+    const leg = [{ name: 'CPI, y/y', color: CC.line }].concat(PARTS.filter((p, i) => !(p[2] === CC.goods && PARTS[i - 1] && PARTS[i - 1][2] === CC.goods))
       .map(([k, n, c]) => ({ name: c === CC.goods ? 'Alcohol and tobacco, clothing, durables, misc. goods' : n, color: c, bar: true })));
     legend(id + '-legend', leg);
     if (!status(box, ['hk_cpi_contrib'])) return;
@@ -420,7 +420,7 @@
         const [mx] = d3.pointer(ev);
         const i = Math.max(0, Math.min(rows.length - 1, Math.floor((mx - ml) / xb.step()))), r = rows[i];
         dot.attr('display', r.all == null ? 'none' : null).attr('cx', cx(r)).attr('cy', r.all == null ? 0 : y(r.all));
-        const lines = [[CC.line, 'Composite CPI, y/y', pct(r.all)]].concat(PARTS.map(([k, n, c]) => [c, n, r[k] == null ? 'n/a' : (J.f1(r[k]) === '-0.0' ? '0.0' : J.f1(r[k]))]));
+        const lines = [[CC.line, 'CPI, y/y', pct(r.all)]].concat(PARTS.map(([k, n, c]) => [c, n, r[k] == null ? 'n/a' : (J.f1(r[k]) === '-0.0' ? '0.0' : J.f1(r[k]))]));
         const cr = card.getBoundingClientRect();
         J.showTip(card, tip, mLabel(r.date), lines, ev.clientX - cr.left, ev.clientY - cr.top);
       })
@@ -475,17 +475,17 @@
   J.redrawCpi = () => {
     if (!visible()) return;
     const C = (series, key, name, color, extra) => Object.assign({ ds: 'hk_cpi', it: 'composite', basis: 'headline', series, key, name, color, measure: 'yoy' }, extra || {});
-    const IT = { composite: 'Composite CPI', a: 'CPI(A)', b: 'CPI(B)', c: 'CPI(C)' };
-    lines('cpi-measures', [C('all', 'cpi', 'Composite CPI', 'var(--ad-c2)'),
-      C('all', 'und', 'Underlying Composite CPI', 'var(--ad-c1)', { basis: 'underlying', dash: true })]);
+    const IT = { composite: 'CPI', a: 'CPI(A)', b: 'CPI(B)', c: 'CPI(C)' };
+    lines('cpi-measures', [C('all', 'cpi', 'CPI', 'var(--ad-c2)'),
+      C('all', 'und', 'Underlying CPI', 'var(--ad-c1)', { basis: 'underlying', dash: true })]);
     lines('cpi-momentum', [
       { ds: 'hk_cpi_sa', it: momIt, series: 'all', measure: 'sa_mom3_long', key: 'h', name: IT[momIt], color: 'var(--ad-c2)' },
       { ds: 'hk_cpi_sa', it: momIt, basis: 'underlying', series: 'all', measure: 'sa_mom3', key: 'u', name: `Underlying ${IT[momIt]}`, color: 'var(--ad-c1)', dash: true, late: true },
     ], { fmt: fmt1 });
-    lineBars('cpi-ym', C('all', 'yoy', 'Composite CPI, y/y', 'var(--ad-c2)'), C('all', 'mom', 'Composite CPI, m/m', 'var(--ad-c1)', { measure: 'mom', bar: true }));
+    lineBars('cpi-ym', C('all', 'yoy', 'CPI, y/y', 'var(--ad-c2)'), C('all', 'mom', 'CPI, m/m', 'var(--ad-c1)', { measure: 'mom', bar: true }));
     lineBars('cpi-sa', { ds: 'hk_cpi_sa', series: saS, measure: 'sa_index', key: 'i', name: `SA index (right), ${saS === 'all' ? 'all items' : 'food'}`, color: 'var(--ad-c2)' },
       { ds: 'hk_cpi_sa', series: saS, measure: 'sa_mom', key: 'm', name: 'SA m/m', color: 'var(--ad-c1)', bar: true }, { all: true, right: true });
-    lines('cpi-hh', [C('all', 'cc', 'Composite CPI', 'var(--ad-c2)'), C('all', 'a', 'CPI(A)', 'var(--ad-c5)', { it: 'a', thin: true }),
+    lines('cpi-hh', [C('all', 'cc', 'CPI', 'var(--ad-c2)'), C('all', 'a', 'CPI(A)', 'var(--ad-c5)', { it: 'a', thin: true }),
       C('all', 'b', 'CPI(B)', 'var(--ad-c6)', { it: 'b', thin: true }), C('all', 'c', 'CPI(C)', 'var(--ad-c1)', { it: 'c', thin: true })]);
     lines('cpi-fe', [C('food', 'f', 'Food', 'var(--ad-c5)'), C('meals_out', 'mo', 'Meals out and takeaway food', CC.fbss, { thin: true }),
       C('basic_food', 'bf', 'Basic food', CC.grey, { thin: true }), C('g25', 'el', 'Electricity', CC.bright),
@@ -505,7 +505,7 @@
       P('ind_24-30', 'e', 'Metal, electronic products, machinery', 'var(--ad-c1)', { thin: true }), P('ind_17_18', 'p', 'Paper and printing', 'var(--ad-c8)', { thin: true }),
       P('ind_13_14', 't', 'Textiles and apparel', 'var(--ad-c7)', { thin: true })], { anyStart: true, sparse: true });
     lines('trade-prices', [P('import_uvi', 'i', 'Import prices', 'var(--ad-c1)'), P('export_uvi', 'x', 'Export prices', 'var(--ad-c3)'),
-      C('all', 'cpi', 'Composite CPI', 'var(--ad-c2)', { thin: true })]);
+      C('all', 'cpi', 'CPI', 'var(--ad-c2)', { thin: true })]);
   };
 
   const tabs = document.querySelectorAll('.jg-tabs [data-tab]');
