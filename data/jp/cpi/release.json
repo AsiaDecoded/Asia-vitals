@@ -4,15 +4,17 @@
  "national_month": "2026-09-01",
  "tokyo_month": "2026-09-01",
  "table": "e-Stat 0004052037 (2025 base)",
- "processed_at": "2026-10-25T07:30:31Z",
- "rows": 31974,
- "warnings": [],
- "fingerprint": "e58040b27764c4d4",
- "long_rows": 93330,
+ "processed_at": "2026-10-29T04:25:23Z",
+ "rows": 46956,
+ "warnings": [
+  "data revised without a new month (seasonal factors or corrections)"
+ ],
+ "fingerprint": "5e8664e198e33a20",
+ "long_rows": 137990,
  "history": [
   {
    "code": "N2026-09_T2026-09",
-   "processed_at": "2026-10-25T07:30:31Z"
+   "processed_at": "2026-10-29T04:25:23Z"
   }
  ]
 }

@@ -4,7 +4,7 @@
  "latest_month": "2026-09-01",
  "first_month": "2016-07-01",
  "table": "e-Stat CPI monthly report, Table 5",
- "processed_at": "2026-10-26T00:13:40Z",
+ "processed_at": "2026-10-29T04:26:19Z",
  "rows": 738,
  "warnings": [],
  "long_rows": 738,
@@ -12,10 +12,11 @@
  "items": 589,
  "items_months": 12,
  "diffusion_months": 123,
+ "groups_version": 1,
  "history": [
   {
    "code": "C2026-09",
-   "processed_at": "2026-10-26T00:13:40Z"
+   "processed_at": "2026-10-29T04:26:19Z"
   }
  ]
 }
