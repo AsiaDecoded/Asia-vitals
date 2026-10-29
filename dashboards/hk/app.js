@@ -477,7 +477,7 @@
     const C = (series, key, name, color, extra) => Object.assign({ ds: 'hk_cpi', it: 'composite', basis: 'headline', series, key, name, color, measure: 'yoy' }, extra || {});
     const IT = { composite: 'CPI', a: 'CPI(A)', b: 'CPI(B)', c: 'CPI(C)' };
     lines('cpi-measures', [C('all', 'cpi', 'CPI', 'var(--ad-c2)'),
-      C('all', 'und', 'Underlying CPI', 'var(--ad-c1)', { basis: 'underlying', dash: true })]);
+      C('all', 'und', 'Underlying CPI', 'var(--ad-c1)', { basis: 'underlying', dash: true, late: true })]);
     lines('cpi-momentum', [
       { ds: 'hk_cpi_sa', it: momIt, series: 'all', measure: 'sa_mom3_long', key: 'h', name: IT[momIt], color: 'var(--ad-c2)' },
       { ds: 'hk_cpi_sa', it: momIt, basis: 'underlying', series: 'all', measure: 'sa_mom3', key: 'u', name: `Underlying ${IT[momIt]}`, color: 'var(--ad-c1)', dash: true, late: true },
