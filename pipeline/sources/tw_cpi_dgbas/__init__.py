@@ -473,9 +473,13 @@ def update(**opts):
                                 "ex_food_energy", "ex_fruit_veg", "vegetables", "fruit", "eating_out", "fuels",
                                 "electricity", "gas", "rent", "durable", "semidurable", "nondurable",
                                 "services_eating_out", "medical_services", "transport_fees", "cereals", "meat"}
+    # Dashboard file: DGBAS's series as published, plus the calculated COICOP 01 food y/y (series
+    # food_coicop01, measure yoy_calc so it cannot be mistaken for a DGBAS figure)
     _write_csv(OUT / "tw_cpi_dash.csv", ["date", "area", "series", "measure", "value"],
                [r for r in rows if r["series"] in dash_keys and r["date"] >= "1960-01-01"
-                and (r["area"] == "national" or r["series"] == "all")])
+                and (r["area"] == "national" or r["series"] == "all")]
+               + [{"date": r["date"], "area": "national", "series": "food_coicop01", "measure": "yoy_calc",
+                   "value": round(r["yoy"], 2)} for r in food01 if r["yoy"] is not None])
     item_rows.sort(key=lambda r: (r["date"], r["code"], r["measure"]))
     _write_csv(OUT / "tw_cpi_items.csv", ["date", "code", "name", "measure", "value"], item_rows)
     # Published weights (% of CPI) and contributions (pp), as first released
