@@ -66,7 +66,9 @@ SPEC = [
     ("IN", "core", "in/cpi_core/in_cpi_core.csv", {"series": "core1"}, "yoy", CALC, "Core 1 (excl. food and fuel)"),
     ("IN", "ppi", "in/ppi/in_ppi_spliced.csv", {}, "yoy", CALC, "Output PPI, linked to WPI"),
     # Indonesia (BPS food group includes tobacco: no food column)
-    ("ID", "cpi", "id/cpi_bps/id_cpi_bps.csv", {"series": "all"}, "yoy", PUB, "CPI, all items"),
+    # CPI from SEKI (BPS figures republished by Bank Indonesia, y/y from 1967); the BPS WebAPI file
+    # has y/y only from Oct 2022 and is identical where both exist
+    ("ID", "cpi", "id/cpi/id_cpi.csv", {"series": "all"}, "yoy", PUB, "CPI, all items (BPS, via Bank Indonesia SEKI)"),
     ("ID", "energy", "id/cpi_bps/id_cpi_bps.csv", {"series": "energy"}, "yoy", PUB, "Energy"),
     ("ID", "official_core", "id/cpi_bps/id_cpi_bps.csv", {"series": "core"}, "yoy", PUB, "Core"),
     ("ID", "ppi", "id/ppi/id_ppi.csv", {"series": "wpi"}, "yoy", PUB, "WPI, general"),
