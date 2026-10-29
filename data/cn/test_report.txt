@@ -1,0 +1,12 @@
+== cn_cpi_nbs
+   UPDATED: September 2026: 49681 national and 124502 provincial rows; timing {'national_s': 184, 'province_s': 585, 'total_s': 1036}
+   WARNING: YTD vs average y/y beyond 0.15 in 23 of 8070 cases: ['national transport_telecom 2021-08: YTD 103.0 vs average y/y 103.15', 'national transport_telecom 2021-07: YTD 102.6 vs average y/y 102.76', 'national transport_telecom 2021-06: YTD 101.9 vs average y/y 102.07']
+   WARNING: m/m compounded over 12 months differs from y/y by more than 0.4pp in 29 of 696 months (rounding and base changes): ['services 2026-01: y/y 100.1 vs m/m compounded 99.69', 'food 2011-01: y/y 110.3 vs m/m compounded 110.87', 'all 2006-07: y/y 101.0 vs m/m compounded 101.59']
+   WARNING: published impacts: no month states all four parts (food, energy, industrial consumer goods ex energy, services), so the sum check could not run
+== cn_ppi_nbs
+   UPDATED: September 2026: 30723 national and 28570 provincial rows; 240s
+   WARNING: 7 values of 0 left out as missing: ['ind_other_mining yoy 2008-12', 'ind_other_mining yoy 2008-11', 'ind_other_mining yoy 2008-10', 'ind_other_mining yoy 2008-09', 'ind_other_mining yoy 2008-08']
+   WARNING: 4 values of 0 left out as missing: ['purchasing yoy 2020-02', 'purchasing yoy 2010-07', 'purchasing yoy 2009-12', 'purchasing yoy 2006-05']
+   WARNING: YTD vs y/y average beyond 0.15 in 4 of 756: ['purchasing 2022-12: YTD 106.1 vs y/y average 106.31', 'purchasing 2022-11: YTD 106.7 vs y/y average 106.85', 'ppi_production 2022-12: YTD 104.9 vs y/y average 105.13']
+   WARNING: m/m compounded over 12 months differs from y/y by more than 0.4pp in 7 of 712 months: ['purchasing 2021-05: y/y 112.5 vs m/m compounded 113.00', 'purchasing 2021-04: y/y 109.0 vs m/m compounded 109.56', 'purchasing 2021-03: y/y 105.2 vs m/m compounded 105.67']
+September 2026 vs NBS release: 40/40 match

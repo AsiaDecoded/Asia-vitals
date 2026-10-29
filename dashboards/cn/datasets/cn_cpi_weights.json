@@ -1,0 +1,14 @@
+{
+    "title": "China CPI weights, 2025 base",
+    "description": "NBS 2025-base CPI weights, % of CPI, for the 8 categories, food and four food items (NBS interview on the base rotation, 11 Feb 2026).",
+    "source": {
+        "kind": "file",
+        "url": "/_blob/4ffba2ca7c7f3099b491c83a8ec5a310",
+        "name": "cn_cpi_weights.csv"
+    },
+    "updated": {
+        "at": "2026-10-28T17:01:42Z",
+        "by": "Claude"
+    },
+    "fixed": true
+}

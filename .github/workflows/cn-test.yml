@@ -1,0 +1,116 @@
+name: China test (dev-cn)
+
+# Runs the China sources (cn_cpi_nbs, cn_ppi_nbs) on the dev-cn branch, which are not yet in the
+# shared registry (pipeline/sources/__init__.py), with their checks; then checks the September 2026
+# figures against the NBS release (15 Oct 2026, English; 14 Oct, Chinese) and pushes data/cn and raw/cn
+# back to dev-cn. Not part of the scheduled update until merged.
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-cn]
+    paths:
+      - pipeline/core/nbs.py
+      - pipeline/sources/cn_cpi_nbs/**
+      - pipeline/sources/cn_ppi_nbs/**
+      - .github/workflows/cn-test.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cn-test
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run the China sources with their checks
+        id: run
+        run: |
+          python -I - <<'EOF'
+          import sys, traceback
+          sys.path.insert(0, "pipeline")
+          from core.common import CheckFailed
+          import importlib
+          rc = 0
+          lines = []
+          for name in ("cn_cpi_nbs", "cn_ppi_nbs"):
+              lines.append(f"== {name}")
+              try:
+                  res = importlib.import_module(f"sources.{name}").update(force=True)
+                  lines.append(f"   {'UPDATED' if res['updated'] else 'unchanged'}: {res['summary']}")
+                  for w in res.get("warnings", []):
+                      lines.append(f"   WARNING: {w}")
+              except CheckFailed as e:
+                  rc = 1
+                  lines.append(f"   CHECKS FAILED ({len(e.errors)}):")
+                  lines += [f"   - {x}" for x in e.errors[:40]]
+              except Exception:
+                  rc = 1
+                  lines.append(traceback.format_exc())
+          open("cn_report.txt", "w").write("\n".join(lines) + "\n")
+          print("\n".join(lines))
+          sys.exit(rc)
+          EOF
+
+      - name: September 2026 against the NBS release
+        run: |
+          python -I - <<'EOF'
+          import csv, sys
+          # As reported in NBS's releases for September 2026 (CPI and industrial producer prices, 15 Oct 2026).
+          CPI = {  # series, area, measure: %
+              ("all", "national", "yoy"): 0.9, ("all", "national", "mom"): 0.2, ("all", "national", "ytd"): 0.9,
+              ("all", "urban", "yoy"): 0.9, ("all", "urban", "mom"): 0.2, ("all", "urban", "ytd"): 0.9,
+              ("all", "rural", "yoy"): 0.8, ("all", "rural", "mom"): 0.4, ("all", "rural", "ytd"): 0.7,
+              ("food", "national", "yoy"): -1.7, ("food", "national", "mom"): 0.4, ("food", "national", "ytd"): -0.9,
+              ("non_food", "national", "yoy"): 1.5, ("non_food", "national", "mom"): 0.2,
+              ("goods", "national", "yoy"): 1.0, ("goods", "national", "mom"): 0.5,
+              ("services", "national", "yoy"): 0.8, ("services", "national", "mom"): -0.2,
+              ("core", "national", "yoy"): 1.0, ("core", "national", "mom"): 0.0, ("core", "national", "ytd"): 1.1,
+              ("food_tobacco_liquor", "national", "yoy"): -0.9, ("clothing", "national", "yoy"): 1.2,
+              ("residence", "national", "yoy"): -0.3, ("household", "national", "yoy"): 0.2,
+              ("transport_telecom", "national", "yoy"): 4.3, ("education_culture", "national", "yoy"): 1.4,
+              ("health_care", "national", "yoy"): 2.7, ("other", "national", "yoy"): 5.9,
+              ("pork", "national", "yoy"): -10.0, ("fresh_vegetables", "national", "yoy"): -8.1,
+              ("vehicle_fuel", "national", "yoy"): 14.9,
+          }
+          PPI = {
+              ("ppi", "yoy"): 5.0, ("ppi", "mom"): 1.2, ("ppi", "ytd"): 2.3,
+              ("ppi_production", "yoy"): 6.5, ("ppi_consumer", "yoy"): -0.1,
+              ("purchasing", "yoy"): 6.9, ("purchasing", "mom"): 1.2, ("purchasing", "ytd"): 3.6,
+          }
+          bad, n = [], 0
+          rows = {(r["series"], r["area"], r["measure"]): float(r["pct"]) for r in csv.DictReader(open("data/cn/cpi/cn_cpi.csv")) if r["date"] == "2026-09-01"}
+          for k, v in CPI.items():
+              n += 1
+              if k not in rows: bad.append(f"CPI {k}: missing")
+              elif abs(rows[k] - v) > 0.001: bad.append(f"CPI {k}: {rows[k]} vs release {v}")
+          rows = {(r["series"], r["measure"]): float(r["pct"]) for r in csv.DictReader(open("data/cn/ppi/cn_ppi.csv")) if r["date"] == "2026-09-01" and r["area"] == "national"}
+          for k, v in PPI.items():
+              n += 1
+              if k not in rows: bad.append(f"PPI {k}: missing")
+              elif abs(rows[k] - v) > 0.001: bad.append(f"PPI {k}: {rows[k]} vs release {v}")
+          prov = [r for r in csv.DictReader(open("data/cn/cpi/cn_cpi_provinces.csv")) if r["date"] == "2026-09-01" and r["series"] == "all" and r["measure"] == "yoy"]
+          if len(prov) != 31: bad.append(f"provinces Sep 2026: {len(prov)} rows, expected 31")
+          msg = f"September 2026 vs NBS release: {n - len([b for b in bad if not b.startswith('provinces')])}/{n} match"
+          print(msg); [print("  -", b) for b in bad]
+          open("cn_report.txt", "a").write(msg + "\n" + "".join(f"  - {b}\n" for b in bad))
+          sys.exit(1 if bad else 0)
+          EOF
+
+      - name: Push data and report to dev-cn
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mkdir -p data/cn && cp cn_report.txt data/cn/test_report.txt 2>/dev/null || true
+          git add data/cn; if [ -d raw/cn ]; then git add raw/cn; fi
+          git commit -qm "China test run ${{ github.run_id }}" || exit 0
+          for i in 1 2 3; do git pull -q --rebase origin dev-cn && git push -q origin HEAD:dev-cn && break; sleep 5; done

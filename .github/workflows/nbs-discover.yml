@@ -1,0 +1,39 @@
+name: NBS discovery (manual)
+
+# One-off helper: probes China NBS (data portal, press releases) and the headline-only
+# fallbacks (DBnomics, OECD) and saves the raw responses to the "discovery" branch,
+# under discovery/nbs.
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-cn]
+    paths:
+      - pipeline/tools/nbs_discover.py
+      - .github/workflows/nbs-discover.yml
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Query NBS and fallbacks
+        run: python -I pipeline/tools/nbs_discover.py discovery/nbs8 stage8
+      - name: Push results to the discovery branch
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mv discovery /tmp/discovery
+          git fetch origin discovery
+          git checkout -B discovery origin/discovery
+          mkdir -p discovery && rm -rf discovery/nbs8 && cp -r /tmp/discovery/nbs8 discovery/
+          git add discovery/nbs8
+          git commit -m "NBS discovery 8"
+          for i in 1 2 3; do git push origin discovery && break; git pull --rebase origin discovery; done

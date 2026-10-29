@@ -1,0 +1,14 @@
+{
+ "title": "China CPI, NBS",
+ "description": "CPI for China, urban and rural areas: all items, core (ex food and energy), food, non-food, goods, services, 8 categories and subcategories; y/y, YTD and m/m as published by NBS (comparison period = 100, shown as % change), from 1987/1998. NBS data portal via the AsiaDecoded/asia-vitals pipeline (data/cn/cpi/cn_cpi_dash.csv).",
+ "source": {
+  "kind": "file",
+  "url": "/_blob/83b6d5ecf263e58cc918c852d29c0f2a",
+  "name": "cn_cpi_dash.csv"
+ },
+ "updated": {
+  "at": "2026-10-28T17:25:00Z",
+  "by": "Claude"
+ },
+ "schedule": "Replaced after each NBS release by the refresh scheduled task that reads AsiaDecoded/asia-vitals (once dev-cn is merged)."
+}
