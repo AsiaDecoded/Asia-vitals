@@ -49,13 +49,13 @@ SPEC = [
     ("KR", "ppi", "kr/ppi/kr_ppi.csv", {"series": "ppi"}, "yoy", CALC, "PPI"),
     # Taiwan
     ("TW", "cpi", "tw/cpi/tw_cpi.csv", {"area": "national", "series": "all", "measure": "yoy"}, "value", PUB, "All items"),
-    ("TW", "food", "tw/cpi/asia.csv", {"concept": "food_yoy"}, "value", CALC, "Food excl. alcohol and eating out"),
+    ("TW", "food", "tw/cpi/tw_cpi_food01.csv", {}, "yoy", CALC, "Food and non-alcoholic beverages (COICOP 01): DGBAS food excl. alcohol and eating out"),
     ("TW", "energy", "tw/cpi/tw_cpi.csv", {"area": "national", "series": "energy", "measure": "yoy"}, "value", PUB, "Energy"),
     ("TW", "official_core", "tw/cpi/tw_cpi.csv", {"area": "national", "series": "core", "measure": "yoy"}, "value", PUB, "Core (excl. fruit, vegetables and energy)"),
-    ("TW", "ppi", "tw/ppi/asia.csv", {"concept": "ppi_yoy"}, "value", PUB, "PPI"),
+    ("TW", "ppi", "tw/ppi/tw_ppi.csv", {"series": "ppi_all", "measure": "yoy"}, "value", PUB, "PPI"),
     # Hong Kong
     ("HK", "cpi", "hk/cpi/hk_cpi.csv", {"index_type": "composite", "basis": "headline", "series": "all"}, "yoy", PUB, "Composite CPI"),
-    ("HK", "food", "hk/cpi/asia.csv", {"concept": "food_yoy"}, "value", PUB, "Food and non-alcoholic beverages (COICOP 01)"),
+    ("HK", "food", "hk/cpi/hk_cpi.csv", {"index_type": "composite", "basis": "headline", "series": "coicop_01"}, "yoy", PUB, "Food and non-alcoholic beverages (COICOP 01)"),
     ("HK", "official_core", "hk/cpi/hk_cpi.csv", {"index_type": "composite", "basis": "underlying", "series": "all"}, "yoy", PUB, "Underlying Composite CPI"),
     # China (NBS food excludes beverages: not COICOP 01, so no food column)
     ("CN", "cpi", "cn/cpi/cn_cpi.csv", {"area": "national", "series": "all", "measure": "yoy"}, "pct", PUB, "CPI"),
