@@ -430,9 +430,9 @@ def update(force=False, **_):
     rows.sort(key=lambda r: (r["date"], r["index_type"], r["basis"], r["order"]))
     cols = ["date", "index_type", "basis", "series", "label", "level", "order", "index", "mom", "yoy", "base_break", "release_date"]
     _write_csv(OUT / "hk_cpi.csv", cols, rows)
-    # dashboard copy: all four indices for all items and sections; Composite COICOP divisions; Composite groups from 2015
-    dash = [r for r in rows if r["level"] in ("all", "section", "subsection")
-            or (r["index_type"] == "composite" and r["level"] == "coicop")
+    # dashboard copy: all four indices for all items; Composite sections and COICOP divisions; Composite groups from 2015
+    dash = [r for r in rows if r["level"] == "all"
+            or (r["index_type"] == "composite" and r["level"] in ("section", "subsection", "coicop"))
             or (r["index_type"] == "composite" and r["date"] >= "2015-01-01")]
     _write_csv(OUT / "hk_cpi_dash.csv", cols, dash)
     sa.sort(key=lambda r: (r["measure"], r["index_type"], r["basis"], r["series"], r["date"]))
