@@ -17,6 +17,9 @@ on:
       catalog_words:
         description: "Optional: search the file catalogue (Excel/CSV) for these words, space-separated"
         default: ""
+      urls:
+        description: "Optional: public file URLs to download (e.g. statistics bureau PDFs), space-separated"
+        default: ""
 
 permissions:
   contents: write
@@ -42,6 +45,9 @@ jobs:
       - name: Download files
         if: ${{ inputs.file_ids != '' }}
         run: python -I pipeline/tools/estat_files.py "discovery/${{ inputs.stats_code }}/files" ${{ inputs.file_ids }}
+      - name: Download URLs
+        if: ${{ inputs.urls != '' }}
+        run: python -I pipeline/tools/fetch_urls.py "discovery/${{ inputs.stats_code }}/web" ${{ inputs.urls }}
       - name: Push results to the discovery branch
         if: always()
         run: |
