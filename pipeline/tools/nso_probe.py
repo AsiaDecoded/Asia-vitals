@@ -171,13 +171,112 @@ def step_files():
     print("spreadsheets fetched:", n, flush=True)
 
 
+# --- Round 4: PX-Web web export (the PxWeb API does not publish the price databases), post texts, report tables
+
+import http.cookiejar
+import html as _html
+
+PXWEB = "https://pxweb.nso.gov.vn/pxweb"
+PX_TABLES = [("en", "E 11. CPI", "E 11. CPI__Px_E_11", f"E11.{i:02d}.px") for i in range(1, 29)]
+
+
+def _opener():
+    return urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+
+
+def _post_form(op, url, fields, name):
+    data = urllib.parse.urlencode(fields, doseq=True).encode()
+    req = urllib.request.Request(q(url), data=data, headers={**UA, "Content-Type": "application/x-www-form-urlencoded",
+                                                             "Referer": q(url)})
+    t = time.time()
+    try:
+        with op.open(req, timeout=240) as r:
+            st, hd, body, err = r.status, dict(r.headers), r.read(), None
+    except urllib.error.HTTPError as e:
+        st, hd, body, err = e.code, dict(e.headers), e.read(), f"HTTPError {e.code}"
+    except Exception as e:  # noqa: BLE001
+        st, hd, body, err = None, {}, b"", f"{type(e).__name__}: {e}"
+    cd = hd.get("Content-Disposition", "")
+    ext = "px" if (".px" in cd or body[:8] in (b"CHARSET=", b"AXIS-VER") or body[:5] == b"CHARS") else (
+        "json" if body[:1] == b"{" else "html" if body.lstrip()[:1] == b"<" else "bin")
+    h = hashlib.md5((url + name).encode()).hexdigest()[:10]
+    fn = f"{name}_{h}.{ext}"
+    (OUT / "files" / fn).write_bytes(body)
+    SUMMARY.append({"name": name, "url": url, "post": "form", "status": st, "error": err, "type": hd.get("Content-Type", ""),
+                    "bytes": len(body), "secs": round(time.time() - t, 1), "file": fn,
+                    "headers": {k: v for k, v in hd.items() if k.lower() in ("content-type", "content-disposition")}})
+    print(len(SUMMARY), st, err or "", ext, len(body), url[-60:], flush=True)
+    (OUT / "summary.json").write_text(json.dumps(SUMMARY, ensure_ascii=False, indent=1))
+    return st, body, ext
+
+
+def px_export(lang, db, folder, table, fmt="FileTypePX"):
+    """Select every value of every variable on a PX-Web (ASP.NET) table page and ask for one file format."""
+    op = _opener()
+    url = f"{PXWEB}/{lang}/{db}/{folder}/{table}/"
+    req = urllib.request.Request(q(url), headers=UA)
+    with op.open(req, timeout=120) as r:
+        page = r.read().decode("utf-8", "replace")
+    fields = []
+    for m in re.finditer(r'<input[^>]*type="hidden"[^>]*>', page):
+        n = re.search(r'name="([^"]+)"', m.group(0)); v = re.search(r'value="([^"]*)"', m.group(0))
+        if n:
+            fields.append((_html.unescape(n.group(1)), _html.unescape(v.group(1)) if v else ""))
+    nsel = 0
+    for m in re.finditer(r'<select[^>]*name="([^"]+ValuesListBox)"[^>]*>(.*?)</select>', page, re.S):
+        for v in re.findall(r'<option[^>]*value="([^"]*)"', m.group(2)):
+            fields.append((_html.unescape(m.group(1)), _html.unescape(v)))
+        nsel += 1
+    fmt_name = re.search(r'<select[^>]*name="([^"]+OutputFormatDropDownList)"', page).group(1)
+    btn = re.search(r'<input[^>]*type="submit"[^>]*name="([^"]+ButtonViewTable)"[^>]*value="([^"]*)"', page)
+    fields += [(_html.unescape(fmt_name), fmt), (_html.unescape(btn.group(1)), btn.group(2))]
+    return _post_form(op, url, fields, f"pxweb_{table}_{fmt}")
+
+
+def step_pxweb():
+    for lang, db, folder, table in PX_TABLES:
+        try:
+            st, body, ext = px_export(lang, db, folder, table, "FileTypePX")
+            if ext != "px":
+                px_export(lang, db, folder, table, "FileTypeCsvWithHeadingAndComma")
+        except Exception as e:  # noqa: BLE001
+            SUMMARY.append({"name": "pxweb_" + table, "error": f"{type(e).__name__}: {e}"})
+            print("pxweb failed", table, e, flush=True)
+
+
+POST_IDS = [59623, 2903, 2913, 62508, 59522, 61656]
+
+
+def step_posts():
+    """Full text of the methodology posts and of every monthly CPI post (Vietnamese category 94)."""
+    for pid in POST_IDS:
+        fetch("post", f"{WP}/posts/{pid}?_fields=id,date,modified,link,title,content")
+    for page in range(1, 6):
+        s, h, b = fetch("cpiposts", f"{WP}/posts?categories=94&search={urllib.parse.quote('Chỉ số giá tiêu dùng')}"
+                        f"&per_page=100&page={page}&_fields=id,date,link,title,content")
+        if s != 200 or page >= int(h.get("X-WP-TotalPages", 1) or 1):
+            break
+
+
+REPORT_FILES = ["https://www.nso.gov.vn/wp-content/uploads/2026/10/02.-Bieu-thang-9.2026.xlsx",
+                "https://www.nso.gov.vn/wp-content/uploads/2026/07/2.-Bieu-T6.2026.xlsx"]
+
+
+def step_files2():
+    for u in REPORT_FILES:
+        fetch("report", u)
+    media, _ = jget("wpmedia_reports", f"{WP}/media?search={urllib.parse.quote('Bieu thang')}&per_page=100"
+                    "&_fields=id,date,source_url,post", save=True)
+
+
 def main(out, steps="px,wp,files"):
     global OUT
     OUT = Path(out)
     (OUT / "files").mkdir(parents=True, exist_ok=True)
     for s in steps.split(","):
         try:
-            {"px": step_px, "wp": step_wp, "files": step_files}[s]()
+            {"px": step_px, "wp": step_wp, "files": step_files, "pxweb": step_pxweb,
+             "posts": step_posts, "files2": step_files2}[s]()
         except Exception as e:  # noqa: BLE001
             SUMMARY.append({"name": f"step_{s}", "error": f"{type(e).__name__}: {e}"})
             print("step failed", s, e, flush=True)
