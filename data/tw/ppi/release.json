@@ -4,7 +4,7 @@
  "latest_month": "2026-09-01",
  "release_date": "2026-10-07",
  "table": "DGBAS Macro Database (nstatdb): PPI, domestic sales, import and export price tables",
- "processed_at": "2026-10-29T07:20:34Z",
+ "processed_at": "2026-10-29T07:33:42Z",
  "rows": 369050,
  "warnings": [],
  "long_rows": 25930,
@@ -15,7 +15,7 @@
  "history": [
   {
    "code": "P2026-09",
-   "processed_at": "2026-10-29T07:20:34Z"
+   "processed_at": "2026-10-29T07:33:42Z"
   }
  ]
 }

@@ -51529,6 +51529,7 @@ date,area,series,measure,value
 2022-12-01,national,food,index,107.27
 2022-12-01,national,food,mom,0.4
 2022-12-01,national,food,yoy,4.93
+2022-12-01,national,food01,index,100.0
 2022-12-01,national,fruit,index,106.95
 2022-12-01,national,fruit,mom,0.73
 2022-12-01,national,fruit,yoy,-5.32
@@ -51641,6 +51642,7 @@ date,area,series,measure,value
 2023-01-01,national,food,index,107.81
 2023-01-01,national,food,mom,0.5
 2023-01-01,national,food,yoy,5.29
+2023-01-01,national,food01,index,100.5167
 2023-01-01,national,fruit,index,108.71
 2023-01-01,national,fruit,mom,1.65
 2023-01-01,national,fruit,yoy,-4.01
@@ -51753,6 +51755,7 @@ date,area,series,measure,value
 2023-02-01,national,food,index,107.34
 2023-02-01,national,food,mom,-0.44
 2023-02-01,national,food,yoy,4.31
+2023-02-01,national,food01,index,99.4245
 2023-02-01,national,fruit,index,106.58
 2023-02-01,national,fruit,mom,-1.96
 2023-02-01,national,fruit,yoy,0.98
@@ -51865,6 +51868,7 @@ date,area,series,measure,value
 2023-03-01,national,food,index,108.41
 2023-03-01,national,food,mom,1.0
 2023-03-01,national,food,yoy,4.88
+2023-03-01,national,food01,index,100.6747
 2023-03-01,national,fruit,index,113.86
 2023-03-01,national,fruit,mom,6.83
 2023-03-01,national,fruit,yoy,11.82
@@ -51977,6 +51981,7 @@ date,area,series,measure,value
 2023-04-01,national,food,index,108.82
 2023-04-01,national,food,mom,0.38
 2023-04-01,national,food,yoy,4.2
+2023-04-01,national,food01,index,100.8215
 2023-04-01,national,fruit,index,109.48
 2023-04-01,national,fruit,mom,-3.85
 2023-04-01,national,fruit,yoy,5.18
@@ -52089,6 +52094,7 @@ date,area,series,measure,value
 2023-05-01,national,food,index,109.07
 2023-05-01,national,food,mom,0.23
 2023-05-01,national,food,yoy,2.97
+2023-05-01,national,food01,index,100.9277
 2023-05-01,national,fruit,index,110.0
 2023-05-01,national,fruit,mom,0.47
 2023-05-01,national,fruit,yoy,-5.55
@@ -52201,6 +52207,7 @@ date,area,series,measure,value
 2023-06-01,national,food,index,108.33
 2023-06-01,national,food,mom,-0.68
 2023-06-01,national,food,yoy,1.39
+2023-06-01,national,food01,index,99.6025
 2023-06-01,national,fruit,index,100.76
 2023-06-01,national,fruit,mom,-8.4
 2023-06-01,national,fruit,yoy,-17.89
@@ -52313,6 +52320,7 @@ date,area,series,measure,value
 2023-07-01,national,food,index,108.17
 2023-07-01,national,food,mom,-0.15
 2023-07-01,national,food,yoy,1.28
+2023-07-01,national,food01,index,99.164
 2023-07-01,national,fruit,index,94.43
 2023-07-01,national,fruit,mom,-6.28
 2023-07-01,national,fruit,yoy,-22.08
@@ -52425,6 +52433,7 @@ date,area,series,measure,value
 2023-08-01,national,food,index,110.17
 2023-08-01,national,food,mom,1.85
 2023-08-01,national,food,yoy,3.45
+2023-08-01,national,food01,index,102.2744
 2023-08-01,national,fruit,index,103.26
 2023-08-01,national,fruit,mom,9.35
 2023-08-01,national,fruit,yoy,-8.3
@@ -52537,6 +52546,7 @@ date,area,series,measure,value
 2023-09-01,national,food,index,112.36
 2023-09-01,national,food,mom,1.99
 2023-09-01,national,food,yoy,4.78
+2023-09-01,national,food01,index,105.6144
 2023-09-01,national,fruit,index,115.95
 2023-09-01,national,fruit,mom,12.29
 2023-09-01,national,fruit,yoy,8.46
@@ -52649,6 +52659,7 @@ date,area,series,measure,value
 2023-10-01,national,food,index,113.34
 2023-10-01,national,food,mom,0.87
 2023-10-01,national,food,yoy,5.51
+2023-10-01,national,food01,index,107.0017
 2023-10-01,national,fruit,index,122.66
 2023-10-01,national,fruit,mom,5.79
 2023-10-01,national,fruit,yoy,14.55
@@ -52761,6 +52772,7 @@ date,area,series,measure,value
 2023-11-01,national,food,index,112.87
 2023-11-01,national,food,mom,-0.41
 2023-11-01,national,food,yoy,5.64
+2023-11-01,national,food01,index,106.1778
 2023-11-01,national,fruit,index,126.07
 2023-11-01,national,fruit,mom,2.78
 2023-11-01,national,fruit,yoy,18.73
@@ -52873,6 +52885,7 @@ date,area,series,measure,value
 2023-12-01,national,food,index,112.33
 2023-12-01,national,food,mom,-0.48
 2023-12-01,national,food,yoy,4.72
+2023-12-01,national,food01,index,105.1399
 2023-12-01,national,fruit,index,129.29
 2023-12-01,national,fruit,mom,2.55
 2023-12-01,national,fruit,yoy,20.89
@@ -52985,6 +52998,8 @@ date,area,series,measure,value
 2024-01-01,national,food,index,112.24
 2024-01-01,national,food,mom,-0.08
 2024-01-01,national,food,yoy,4.11
+2024-01-01,national,food01,index,104.6454
+2024-01-01,national,food01,yoy,4.1075
 2024-01-01,national,fruit,index,131.4
 2024-01-01,national,fruit,mom,1.63
 2024-01-01,national,fruit,yoy,20.87
@@ -53097,6 +53112,8 @@ date,area,series,measure,value
 2024-02-01,national,food,index,112.16
 2024-02-01,national,food,mom,-0.07
 2024-02-01,national,food,yoy,4.49
+2024-02-01,national,food01,index,104.1672
+2024-02-01,national,food01,yoy,4.7702
 2024-02-01,national,fruit,index,128.65
 2024-02-01,national,fruit,mom,-2.09
 2024-02-01,national,fruit,yoy,20.71
@@ -53209,6 +53226,8 @@ date,area,series,measure,value
 2024-03-01,national,food,index,111.51
 2024-03-01,national,food,mom,-0.58
 2024-03-01,national,food,yoy,2.86
+2024-03-01,national,food01,index,102.8719
+2024-03-01,national,food01,yoy,2.1825
 2024-03-01,national,fruit,index,116.65
 2024-03-01,national,fruit,mom,-9.33
 2024-03-01,national,fruit,yoy,2.45
@@ -53321,6 +53340,8 @@ date,area,series,measure,value
 2024-04-01,national,food,index,111.63
 2024-04-01,national,food,mom,0.11
 2024-04-01,national,food,yoy,2.58
+2024-04-01,national,food01,index,102.9195
+2024-04-01,national,food01,yoy,2.0809
 2024-04-01,national,fruit,index,114.17
 2024-04-01,national,fruit,mom,-2.13
 2024-04-01,national,fruit,yoy,4.28
@@ -53433,6 +53454,8 @@ date,area,series,measure,value
 2024-05-01,national,food,index,112.78
 2024-05-01,national,food,mom,1.03
 2024-05-01,national,food,yoy,3.4
+2024-05-01,national,food01,index,104.669
+2024-05-01,national,food01,yoy,3.7069
 2024-05-01,national,fruit,index,119.54
 2024-05-01,national,fruit,mom,4.7
 2024-05-01,national,fruit,yoy,8.67
@@ -53545,6 +53568,8 @@ date,area,series,measure,value
 2024-06-01,national,food,index,112.83
 2024-06-01,national,food,mom,0.04
 2024-06-01,national,food,yoy,4.15
+2024-06-01,national,food01,index,104.557
+2024-06-01,national,food01,yoy,4.9743
 2024-06-01,national,fruit,index,123.25
 2024-06-01,national,fruit,mom,3.1
 2024-06-01,national,fruit,yoy,22.32
@@ -53657,6 +53682,8 @@ date,area,series,measure,value
 2024-07-01,national,food,index,113.13
 2024-07-01,national,food,mom,0.27
 2024-07-01,national,food,yoy,4.59
+2024-07-01,national,food01,index,104.8619
+2024-07-01,national,food01,yoy,5.746
 2024-07-01,national,fruit,index,120.19
 2024-07-01,national,fruit,mom,-2.48
 2024-07-01,national,fruit,yoy,27.28
@@ -53769,6 +53796,8 @@ date,area,series,measure,value
 2024-08-01,national,food,index,115.27
 2024-08-01,national,food,mom,1.89
 2024-08-01,national,food,yoy,4.63
+2024-08-01,national,food01,index,108.2976
+2024-08-01,national,food01,yoy,5.8892
 2024-08-01,national,fruit,index,128.13
 2024-08-01,national,fruit,mom,6.61
 2024-08-01,national,fruit,yoy,24.08
@@ -53881,6 +53910,8 @@ date,area,series,measure,value
 2024-09-01,national,food,index,115.74
 2024-09-01,national,food,mom,0.41
 2024-09-01,national,food,yoy,3.01
+2024-09-01,national,food01,index,108.896
+2024-09-01,national,food01,yoy,3.1071
 2024-09-01,national,fruit,index,136.22
 2024-09-01,national,fruit,mom,6.31
 2024-09-01,national,fruit,yoy,17.48
@@ -53993,6 +54024,8 @@ date,area,series,measure,value
 2024-10-01,national,food,index,116.39
 2024-10-01,national,food,mom,0.56
 2024-10-01,national,food,yoy,2.69
+2024-10-01,national,food01,index,109.8841
+2024-10-01,national,food01,yoy,2.6937
 2024-10-01,national,fruit,index,133.46
 2024-10-01,national,fruit,mom,-2.03
 2024-10-01,national,fruit,yoy,8.8
@@ -54105,6 +54138,8 @@ date,area,series,measure,value
 2024-11-01,national,food,index,117.19
 2024-11-01,national,food,mom,0.69
 2024-11-01,national,food,yoy,3.83
+2024-11-01,national,food01,index,111.0849
+2024-11-01,national,food01,yoy,4.6216
 2024-11-01,national,fruit,index,136.77
 2024-11-01,national,fruit,mom,2.48
 2024-11-01,national,fruit,yoy,8.49
@@ -54217,6 +54252,8 @@ date,area,series,measure,value
 2024-12-01,national,food,index,116.91
 2024-12-01,national,food,mom,-0.24
 2024-12-01,national,food,yoy,4.08
+2024-12-01,national,food01,index,110.3769
+2024-12-01,national,food01,yoy,4.9809
 2024-12-01,national,fruit,index,137.07
 2024-12-01,national,fruit,mom,0.22
 2024-12-01,national,fruit,yoy,6.02
@@ -54329,6 +54366,8 @@ date,area,series,measure,value
 2025-01-01,national,food,index,116.43
 2025-01-01,national,food,mom,-0.41
 2025-01-01,national,food,yoy,3.73
+2025-01-01,national,food01,index,109.2094
+2025-01-01,national,food01,yoy,4.3614
 2025-01-01,national,fruit,index,145.27
 2025-01-01,national,fruit,mom,5.98
 2025-01-01,national,fruit,yoy,10.56
@@ -54441,6 +54480,8 @@ date,area,series,measure,value
 2025-02-01,national,food,index,116.7
 2025-02-01,national,food,mom,0.23
 2025-02-01,national,food,yoy,4.05
+2025-02-01,national,food01,index,109.2893
+2025-02-01,national,food01,yoy,4.9171
 2025-02-01,national,fruit,index,150.81
 2025-02-01,national,fruit,mom,3.81
 2025-02-01,national,fruit,yoy,17.23
@@ -54553,6 +54594,8 @@ date,area,series,measure,value
 2025-03-01,national,food,index,116.98
 2025-03-01,national,food,mom,0.24
 2025-03-01,national,food,yoy,4.91
+2025-03-01,national,food01,index,109.4552
+2025-03-01,national,food01,yoy,6.3995
 2025-03-01,national,fruit,index,152.67
 2025-03-01,national,fruit,mom,1.23
 2025-03-01,national,fruit,yoy,30.88
@@ -54665,6 +54708,8 @@ date,area,series,measure,value
 2025-04-01,national,food,index,116.49
 2025-04-01,national,food,mom,-0.42
 2025-04-01,national,food,yoy,4.35
+2025-04-01,national,food01,index,108.3248
+2025-04-01,national,food01,yoy,5.252
 2025-04-01,national,fruit,index,143.0
 2025-04-01,national,fruit,mom,-6.33
 2025-04-01,national,fruit,yoy,25.25
@@ -54777,6 +54822,8 @@ date,area,series,measure,value
 2025-05-01,national,food,index,116.27
 2025-05-01,national,food,mom,-0.19
 2025-05-01,national,food,yoy,3.09
+2025-05-01,national,food01,index,107.7623
+2025-05-01,national,food01,yoy,2.9553
 2025-05-01,national,fruit,index,141.74
 2025-05-01,national,fruit,mom,-0.88
 2025-05-01,national,fruit,yoy,18.57
@@ -54889,6 +54936,8 @@ date,area,series,measure,value
 2025-06-01,national,food,index,116.0
 2025-06-01,national,food,mom,-0.23
 2025-06-01,national,food,yoy,2.81
+2025-06-01,national,food01,index,107.188
+2025-06-01,national,food01,yoy,2.5163
 2025-06-01,national,fruit,index,133.81
 2025-06-01,national,fruit,mom,-5.59
 2025-06-01,national,fruit,yoy,8.57
@@ -55001,6 +55050,8 @@ date,area,series,measure,value
 2025-07-01,national,food,index,116.41
 2025-07-01,national,food,mom,0.35
 2025-07-01,national,food,yoy,2.9
+2025-07-01,national,food01,index,107.6476
+2025-07-01,national,food01,yoy,2.6565
 2025-07-01,national,fruit,index,122.54
 2025-07-01,national,fruit,mom,-8.42
 2025-07-01,national,fruit,yoy,1.96
@@ -55113,6 +55164,8 @@ date,area,series,measure,value
 2025-08-01,national,food,index,118.92
 2025-08-01,national,food,mom,2.16
 2025-08-01,national,food,yoy,3.17
+2025-08-01,national,food01,index,111.8506
+2025-08-01,national,food01,yoy,3.2808
 2025-08-01,national,fruit,index,128.21
 2025-08-01,national,fruit,mom,4.63
 2025-08-01,national,fruit,yoy,0.06
@@ -55225,6 +55278,8 @@ date,area,series,measure,value
 2025-09-01,national,food,index,118.79
 2025-09-01,national,food,mom,-0.11
 2025-09-01,national,food,yoy,2.64
+2025-09-01,national,food01,index,111.3605
+2025-09-01,national,food01,yoy,2.2632
 2025-09-01,national,fruit,index,134.58
 2025-09-01,national,fruit,mom,4.97
 2025-09-01,national,fruit,yoy,-1.2
@@ -55337,6 +55392,8 @@ date,area,series,measure,value
 2025-10-01,national,food,index,118.72
 2025-10-01,national,food,mom,-0.06
 2025-10-01,national,food,yoy,2.0
+2025-10-01,national,food01,index,111.0741
+2025-10-01,national,food01,yoy,1.083
 2025-10-01,national,fruit,index,131.72
 2025-10-01,national,fruit,mom,-2.13
 2025-10-01,national,fruit,yoy,-1.3
@@ -55449,6 +55506,8 @@ date,area,series,measure,value
 2025-11-01,national,food,index,118.91
 2025-11-01,national,food,mom,0.16
 2025-11-01,national,food,yoy,1.47
+2025-11-01,national,food01,index,111.1593
+2025-11-01,national,food01,yoy,0.067
 2025-11-01,national,fruit,index,134.48
 2025-11-01,national,fruit,mom,2.1
 2025-11-01,national,fruit,yoy,-1.67
@@ -55561,6 +55620,8 @@ date,area,series,measure,value
 2025-12-01,national,food,index,118.37
 2025-12-01,national,food,mom,-0.45
 2025-12-01,national,food,yoy,1.25
+2025-12-01,national,food01,index,110.2337
+2025-12-01,national,food01,yoy,-0.1297
 2025-12-01,national,fruit,index,138.21
 2025-12-01,national,fruit,mom,2.77
 2025-12-01,national,fruit,yoy,0.83
@@ -55673,6 +55734,8 @@ date,area,series,measure,value
 2026-01-01,national,food,index,117.78
 2026-01-01,national,food,mom,-0.5
 2026-01-01,national,food,yoy,1.16
+2026-01-01,national,food01,index,108.9717
+2026-01-01,national,food01,yoy,-0.2177
 2026-01-01,national,fruit,index,133.46
 2026-01-01,national,fruit,mom,-3.44
 2026-01-01,national,fruit,yoy,-8.13
@@ -55785,6 +55848,8 @@ date,area,series,measure,value
 2026-02-01,national,food,index,116.95
 2026-02-01,national,food,mom,-0.7
 2026-02-01,national,food,yoy,0.21
+2026-02-01,national,food01,index,107.4785
+2026-02-01,national,food01,yoy,-1.6568
 2026-02-01,national,fruit,index,127.12
 2026-02-01,national,fruit,mom,-4.75
 2026-02-01,national,fruit,yoy,-15.71
@@ -55897,6 +55962,8 @@ date,area,series,measure,value
 2026-03-01,national,food,index,116.72
 2026-03-01,national,food,mom,-0.2
 2026-03-01,national,food,yoy,-0.22
+2026-03-01,national,food01,index,106.7313
+2026-03-01,national,food01,yoy,-2.4886
 2026-03-01,national,fruit,index,117.07
 2026-03-01,national,fruit,mom,-7.91
 2026-03-01,national,fruit,yoy,-23.32
@@ -56009,6 +56076,8 @@ date,area,series,measure,value
 2026-04-01,national,food,index,117.16
 2026-04-01,national,food,mom,0.38
 2026-04-01,national,food,yoy,0.58
+2026-04-01,national,food01,index,107.1694
+2026-04-01,national,food01,yoy,-1.0666
 2026-04-01,national,fruit,index,116.94
 2026-04-01,national,fruit,mom,-0.11
 2026-04-01,national,fruit,yoy,-18.22
@@ -56121,6 +56190,8 @@ date,area,series,measure,value
 2026-05-01,national,food,index,117.84
 2026-05-01,national,food,mom,0.58
 2026-05-01,national,food,yoy,1.35
+2026-05-01,national,food01,index,107.9955
+2026-05-01,national,food01,yoy,0.2164
 2026-05-01,national,fruit,index,118.91
 2026-05-01,national,fruit,mom,1.68
 2026-05-01,national,fruit,yoy,-16.11
@@ -56233,6 +56304,8 @@ date,area,series,measure,value
 2026-06-01,national,food,index,118.08
 2026-06-01,national,food,mom,0.2
 2026-06-01,national,food,yoy,1.79
+2026-06-01,national,food01,index,108.264
+2026-06-01,national,food01,yoy,1.0039
 2026-06-01,national,fruit,index,115.58
 2026-06-01,national,fruit,mom,-2.8
 2026-06-01,national,fruit,yoy,-13.62
@@ -56345,6 +56418,8 @@ date,area,series,measure,value
 2026-07-01,national,food,index,119.32
 2026-07-01,national,food,mom,1.05
 2026-07-01,national,food,yoy,2.5
+2026-07-01,national,food01,index,110.0524
+2026-07-01,national,food01,yoy,2.234
 2026-07-01,national,fruit,index,118.84
 2026-07-01,national,fruit,mom,2.82
 2026-07-01,national,fruit,yoy,-3.02
@@ -56457,6 +56532,8 @@ date,area,series,measure,value
 2026-08-01,national,food,index,119.84
 2026-08-01,national,food,mom,0.44
 2026-08-01,national,food,yoy,0.77
+2026-08-01,national,food01,index,110.7631
+2026-08-01,national,food01,yoy,-0.9723
 2026-08-01,national,fruit,index,128.62
 2026-08-01,national,fruit,mom,8.23
 2026-08-01,national,fruit,yoy,0.32
@@ -56569,6 +56646,8 @@ date,area,series,measure,value
 2026-09-01,national,food,index,121.93
 2026-09-01,national,food,mom,1.74
 2026-09-01,national,food,yoy,2.64
+2026-09-01,national,food01,index,114.0938
+2026-09-01,national,food01,yoy,2.4545
 2026-09-01,national,fruit,index,133.21
 2026-09-01,national,fruit,mom,3.57
 2026-09-01,national,fruit,yoy,-1.02
@@ -56638,36 +56717,3 @@ date,area,series,measure,value
 2026-09-01,middle60,all,index,112.82
 2026-09-01,middle60,all,mom,0.51
 2026-09-01,middle60,all,yoy,2.65
-2024-01-01,national,food_coicop01,yoy_calc,4.11
-2024-02-01,national,food_coicop01,yoy_calc,4.77
-2024-03-01,national,food_coicop01,yoy_calc,2.18
-2024-04-01,national,food_coicop01,yoy_calc,2.08
-2024-05-01,national,food_coicop01,yoy_calc,3.71
-2024-06-01,national,food_coicop01,yoy_calc,4.97
-2024-07-01,national,food_coicop01,yoy_calc,5.75
-2024-08-01,national,food_coicop01,yoy_calc,5.89
-2024-09-01,national,food_coicop01,yoy_calc,3.11
-2024-10-01,national,food_coicop01,yoy_calc,2.69
-2024-11-01,national,food_coicop01,yoy_calc,4.62
-2024-12-01,national,food_coicop01,yoy_calc,4.98
-2025-01-01,national,food_coicop01,yoy_calc,4.36
-2025-02-01,national,food_coicop01,yoy_calc,4.92
-2025-03-01,national,food_coicop01,yoy_calc,6.4
-2025-04-01,national,food_coicop01,yoy_calc,5.25
-2025-05-01,national,food_coicop01,yoy_calc,2.96
-2025-06-01,national,food_coicop01,yoy_calc,2.52
-2025-07-01,national,food_coicop01,yoy_calc,2.66
-2025-08-01,national,food_coicop01,yoy_calc,3.28
-2025-09-01,national,food_coicop01,yoy_calc,2.26
-2025-10-01,national,food_coicop01,yoy_calc,1.08
-2025-11-01,national,food_coicop01,yoy_calc,0.07
-2025-12-01,national,food_coicop01,yoy_calc,-0.13
-2026-01-01,national,food_coicop01,yoy_calc,-0.22
-2026-02-01,national,food_coicop01,yoy_calc,-1.66
-2026-03-01,national,food_coicop01,yoy_calc,-2.49
-2026-04-01,national,food_coicop01,yoy_calc,-1.07
-2026-05-01,national,food_coicop01,yoy_calc,0.22
-2026-06-01,national,food_coicop01,yoy_calc,1.0
-2026-07-01,national,food_coicop01,yoy_calc,2.23
-2026-08-01,national,food_coicop01,yoy_calc,-0.97
-2026-09-01,national,food_coicop01,yoy_calc,2.45
