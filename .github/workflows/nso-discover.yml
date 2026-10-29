@@ -10,13 +10,16 @@ on:
     paths:
       - pipeline/tools/nso_discover.py
       - pipeline/tools/nso_seeds.txt
+      - pipeline/tools/nso_probe.py
       - .github/workflows/nso-discover.yml
 
 permissions:
   contents: write
 
 env:
-  NSO_ROUND: r1
+  NSO_ROUND: r2
+  NSO_MODE: probe            # crawl (nso_discover.py + seeds) or probe (nso_probe.py)
+  NSO_STEPS: px,wp,files
   NSO_MAX: "260"
   NSO_DEPTH: "1"
 
@@ -44,9 +47,14 @@ jobs:
             curl -sS -m 30 -o /dev/null -w "curl http:  %{http_code} %{time_total}s -> %{redirect_url}\n" http://$h/ >> $D/dns_tls.txt 2>&1
           done
           cat $D/dns_tls.txt
-      - name: Probe
+      - name: Crawl (seeds)
+        if: env.NSO_MODE == 'crawl'
         continue-on-error: true
         run: python -I pipeline/tools/nso_discover.py pipeline/tools/nso_seeds.txt discovery/nso/$NSO_ROUND $NSO_MAX $NSO_DEPTH
+      - name: Probe (PX-Web API, WordPress REST, attachments)
+        if: env.NSO_MODE == 'probe'
+        continue-on-error: true
+        run: python -I pipeline/tools/nso_probe.py discovery/nso/$NSO_ROUND $NSO_STEPS
       - name: Push results to the discovery branch
         if: always()
         run: |
