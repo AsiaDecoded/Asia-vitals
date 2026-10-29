@@ -1,15 +1,15 @@
 {
- "description": "Asia Decoded calculation: Japan national CPI less food and non-alcoholic beverages (the Statistics Bureau's published COICOP 01 index) and energy, with published weights, base by base, y/y from January 2021.",
+ "description": "Asia Decoded calculation: Japan national CPI less food and non-alcoholic beverages (COICOP 01) and energy, with published weights, base by base, y/y from January 2011.",
  "schedule": "Copied from the asia-vitals GitHub repository on Japan CPI release days",
  "source": {
   "kind": "file",
   "name": "jp_cpi_core3_K2026-09.csv",
-  "url": "/_blob/4e8017c0d8e770f7bffef6ff0c01d233"
+  "url": "/_blob/d57337c7ee639e0db6a07501a2abb479"
  },
  "staleAfterHours": 1080,
  "title": "CPI Core 2 (less food and energy)",
  "updated": {
-  "at": "2026-10-29T07:00:00Z",
+  "at": "2026-10-29T06:50:00Z",
   "by": "Claude"
  }
 }
