@@ -3,11 +3,11 @@
  "description": "CPI for Taiwan: all items, DGBAS core, goods, services, energy, the seven groups and main subgroups, income groups and elderly households; index (2021 = 100), m/m, y/y and DGBAS seasonally adjusted index and m/m, as published by DGBAS, from 1960; plus food and non-alcoholic beverages (COICOP 01) y/y from Jan 2024, calculated by Asia Decoded (series food01) and Core 1, CPI excl. COICOP 01 food and energy (series core1), index Dec 2022 = 100 and y/y. DGBAS Macro Database via the AsiaDecoded/asia-vitals pipeline (data/tw/cpi/tw_cpi_dash.csv).",
  "source": {
   "kind": "file",
-  "url": "/_blob/64bbe5f36b9322448e8c37e46018d669",
+  "url": "/_blob/1a34228a923205c16dc3541df679cdf5",
   "name": "tw_cpi_dash.csv"
  },
  "updated": {
-  "at": "2026-10-29T08:20:00Z",
+  "at": "2026-10-29T08:12:00Z",
   "by": "Claude"
  },
  "schedule": "Replaced after each DGBAS release by the refresh scheduled task that reads AsiaDecoded/asia-vitals (main)."
