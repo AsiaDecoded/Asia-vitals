@@ -30,6 +30,7 @@ KEY = re.compile(r"gi[aá]|CPI|PPI|[Pp]rice|l[aạ]m-?ph[aá]t|inflation|ti[eê]
                  r"xu[aấ]t-?nh[aậ]p|import|export|kinh-?t[eế]-?x[aã]-?h[oộ]i|socio|ni[eê]n-?gi[aá]m|yearbook|"
                  r"pxweb|px-?web|\.px($|\?)|api/v1|database|c[oơ]-s[oở]-d[uữ]|"
                  r"\.xlsx?($|\?)|\.ods|\.csv|\.json|\.xml|wp-content/uploads|lich|calendar|du-lieu|data-and-statistics", re.I)
+FOLLOW = re.compile(os.environ["NSO_FOLLOW"], re.I) if os.environ.get("NSO_FOLLOW") else None
 HREF = re.compile(r"""<a\b[^>]*?href\s*=\s*["']([^"'#]+)["'][^>]*>(.*?)</a>""", re.I | re.S)
 
 
@@ -108,7 +109,7 @@ def main(seedfile, out, max_fetch=250, depth=2):
             if d < depth:
                 for absu, lab in links:
                     host = urllib.parse.urlparse(absu).hostname or ""
-                    if host.endswith(HOSTS) and (KEY.search(absu) or KEY.search(lab)):
+                    if host.endswith(HOSTS) and ((FOLLOW.search(absu) or FOLLOW.search(lab)) if FOLLOW else (KEY.search(absu) or KEY.search(lab))):
                         queue.append((f"{name}-L{d+1}", absu, None, d + 1, url))
         summary.append(rec)
         print(len(summary), status, err or "", ct[:30], len(body), url[:140], flush=True)
