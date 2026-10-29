@@ -663,10 +663,19 @@ window.JG = {
   window(rows, id) { const n = this.periodOf(id, 40); return n ? rows.slice(-n) : rows; },
   // Range slider per chart: the selected share of the chart's full date range, [from, to] in 0..1.
   range: {},
+  start: '2016-01-01',  // default first month for monthly charts (Inflation and Trade) until the reader moves the slider
   slice(rows, id) {
-    const [lo, hi] = this.range[id] || [0, 1];
     if (!rows.length) return rows;
-    const n = rows.length - 1, i0 = Math.round(lo * n), i1 = Math.max(i0, Math.round(hi * n));
+    let [lo, hi] = this.range[id] || [0, 1];
+    const n = rows.length - 1;
+    const card0 = document.getElementById(id), pg = card0 && card0.closest('.jg-page');
+    if (!this.range[id] && n > 0 && pg && pg.id !== 'gdp') {
+      const i = rows.findIndex((r) => r.date >= this.start);
+      lo = i > 0 ? i / n : 0;
+      const sl = card0.querySelector('.ad-slider');
+      if (sl) { sl.querySelector('input').value = Math.round(lo * 1000); sl.querySelector('.ad-slider-sel').style.left = `${lo * 100}%`; }
+    }
+    const i0 = Math.round(lo * n), i1 = Math.max(i0, Math.round(hi * n));
     const out = rows.slice(i0, i1 + 1);
     const card = document.getElementById(id), lbl = card && card.querySelector('.ad-slider-lbl');
     if (lbl && out.length) {
