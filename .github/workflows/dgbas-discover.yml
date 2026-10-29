@@ -1,0 +1,60 @@
+name: DGBAS discovery (manual)
+
+# Probes DGBAS price-statistics routes for Taiwan and saves every response to the
+# "discovery" branch under discovery/dgbas (round named by DGBAS_ROUND).
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-tw]
+    paths:
+      - pipeline/tools/dgbas_discover.py
+      - pipeline/tools/dgbas_seeds.txt
+      - .github/workflows/dgbas-discover.yml
+
+permissions:
+  contents: write
+
+env:
+  DGBAS_ROUND: r5
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Runner IP
+        run: curl -s https://ipinfo.io/json || true
+      - name: Certificate chain of ws.dgbas.gov.tw (incomplete; add the issuer from AIA)
+        continue-on-error: true
+        run: |
+          set +e
+          D=discovery/dgbas/$DGBAS_ROUND; mkdir -p $D
+          timeout 40 openssl s_client -connect ws.dgbas.gov.tw:443 -servername ws.dgbas.gov.tw -showcerts </dev/null > $D/ws_chain.txt 2>&1
+          awk '/BEGIN CERT/{n++} n==1' $D/ws_chain.txt | sed '/END CERT/q' > /tmp/leaf.pem
+          openssl x509 -in /tmp/leaf.pem -noout -text > $D/ws_leaf.txt 2>&1
+          AIA=$(grep -o "CA Issuers - URI:[^ ]*" $D/ws_leaf.txt | head -1 | sed 's/CA Issuers - URI://')
+          echo "AIA=$AIA" >> $D/ws_leaf.txt
+          curl -sS -m 30 -o /tmp/issuer.crt "$AIA" >> $D/ws_leaf.txt 2>&1
+          openssl x509 -inform DER -in /tmp/issuer.crt -out /tmp/issuer.pem 2>/dev/null || cp /tmp/issuer.crt /tmp/issuer.pem
+          openssl x509 -in /tmp/issuer.pem -noout -subject -issuer -enddate -fingerprint -sha256 >> $D/ws_leaf.txt 2>&1
+          cp /tmp/issuer.pem $D/ws_issuer.pem
+      - name: Probe DGBAS
+        continue-on-error: true
+        run: DGBAS_CA=$( [ -s /tmp/issuer.pem ] && echo /tmp/issuer.pem ) python -I pipeline/tools/dgbas_discover.py pipeline/tools/dgbas_seeds.txt discovery/dgbas/$DGBAS_ROUND 120 0
+      - name: Push results to the discovery branch
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mv discovery /tmp/discovery
+          for i in 1 2 3; do
+            git fetch origin discovery && git checkout -f -B discovery origin/discovery
+            mkdir -p discovery/dgbas && rm -rf discovery/dgbas/$DGBAS_ROUND && cp -r /tmp/discovery/dgbas/$DGBAS_ROUND discovery/dgbas/
+            git add discovery/dgbas/$DGBAS_ROUND
+            git commit -qm "DGBAS discovery $DGBAS_ROUND" && git push -q origin discovery && break
+            sleep 5
+          done

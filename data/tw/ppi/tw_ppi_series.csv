@@ -1,0 +1,401 @@
+series,label,label_zh,group
+dsp_agriculture,"Domestic sales prices: Agriculture, forestry, fishing and animal husbandry products",一.農林漁牧業產品,domestic_sales
+dsp_all,Domestic sales prices,總指數,domestic_sales
+dsp_apparel,Domestic sales prices: Wearing apparel and clothing accessories,5.成衣及服飾品,domestic_sales
+dsp_basic_metals,Domestic sales prices: Basic metals,13.基本金屬,domestic_sales
+dsp_beverages,Domestic sales prices: Beverages,2.飲料,domestic_sales
+dsp_chemicals,"Domestic sales prices: Chemical materials, other chemical products and medicines",10.化學材料及其製品與藥品,domestic_sales
+dsp_computers,"Domestic sales prices: Computers, electronic and optical products",16.電腦、電子產品及光學製品,domestic_sales
+dsp_electrical,Domestic sales prices: Electrical equipment,17.電力設備及配備,domestic_sales
+dsp_electricity,Domestic sales prices: Electricity supply,2.電,domestic_sales
+dsp_electronic_parts,Domestic sales prices: Electronic parts and components,15.電子零組件,domestic_sales
+dsp_fabricated_metal,Domestic sales prices: Fabricated metal products,14.金屬製品,domestic_sales
+dsp_farm,Domestic sales prices: Farm products,1.農產品,domestic_sales
+dsp_fishery,Domestic sales prices: Fishery products,4.水產品,domestic_sales
+dsp_food,Domestic sales prices: Food products and prepared animal feeds,1.食品及飼品,domestic_sales
+dsp_forest,Domestic sales prices: Forest products,3.林產品,domestic_sales
+dsp_furniture,Domestic sales prices: Furniture and fixtures,20.家具及裝設品,domestic_sales
+dsp_gas,Domestic sales prices: Gas supply,3.燃氣,domestic_sales
+dsp_leather,"Domestic sales prices: Leather, fur and related products",6.皮革及其製品,domestic_sales
+dsp_livestock,Domestic sales prices: Livestock and poultry products,2.畜禽產品,domestic_sales
+dsp_machinery,Domestic sales prices: Machinery and equipment,18.機械設備,domestic_sales
+dsp_manufacturing,Domestic sales prices: Manufacturing products,三.製造業產品,domestic_sales
+dsp_mining,Domestic sales prices: Quarrying and mining products,二.土石及礦產品,domestic_sales
+dsp_misc_manufacturing,Domestic sales prices: Miscellaneous products,21.雜項工業製品,domestic_sales
+dsp_non_metallic,Domestic sales prices: Non-metallic mineral products,12.非金屬礦物製品,domestic_sales
+dsp_oil_gas,Domestic sales prices: Crude petroleum and natural gas,1.石油及天然氣,domestic_sales
+dsp_paper,"Domestic sales prices: Pulp, paper, paper products and printing",8.紙漿、紙、紙製品及印刷品,domestic_sales
+dsp_petroleum,Domestic sales prices: Petroleum and coal products,9.石油及煤製品,domestic_sales
+dsp_quarrying,Domestic sales prices: Quarrying and other mining products,2.土石採取及其他礦產品,domestic_sales
+dsp_rubber_plastic,Domestic sales prices: Rubber and plastic products,11.橡膠及塑膠製品,domestic_sales
+dsp_textiles,Domestic sales prices: Textile products,4.紡織品,domestic_sales
+dsp_tobacco,Domestic sales prices: Tobacco,3.菸類,domestic_sales
+dsp_transport_equipment,Domestic sales prices: Transport equipment and parts,19.運輸工具及零件,domestic_sales
+dsp_utilities,"Domestic sales prices: Water, electricity and gas supply",四.水電燃氣,domestic_sales
+dsp_water,Domestic sales prices: Water supply,1.水,domestic_sales
+dsp_wood,Domestic sales prices: Wood and bamboo products,7.木竹製品,domestic_sales
+epi_ntd_all,Export prices (NTD),總指數,export_hs
+epi_ntd_capital,Export prices (NTD): Capital goods,資本用品,export_use
+epi_ntd_consumer,Export prices (NTD): Consumer goods,消費用品,export_use
+epi_ntd_consumer_durable,Export prices (NTD): Durable consumer goods,消費用品-耐久,export_use
+epi_ntd_consumer_nondurable,Export prices (NTD): Non-durable consumer goods,消費用品-非耐久,export_use
+epi_ntd_f_023b55,Export prices (NTD): 87 運輸工具,87 運輸工具,export_hs
+epi_ntd_f_11c4c0,Export prices (NTD): 40 橡膠及其製品,40 橡膠及其製品,export_hs
+epi_ntd_f_19930b,Export prices (NTD): 84 鍋爐、機器、機械用具及其零件,84 鍋爐、機器、機械用具及其零件,export_hs
+epi_ntd_f_1accd5,Export prices (NTD): 32 著色料、漆類及油墨,32 著色料、漆類及油墨,export_hs
+epi_ntd_f_242652,Export prices (NTD): 72 鋼鐵,72 鋼鐵,export_hs
+epi_ntd_f_2658ec,Export prices (NTD): 47 木漿及回收紙製品,47 木漿及回收紙製品,export_hs
+epi_ntd_f_2f840f,Export prices (NTD): 30 醫藥品,30 醫藥品,export_hs
+epi_ntd_f_373e4b,Export prices (NTD): 28 無機化學產品及貴金屬化合物,28 無機化學產品及貴金屬化合物,export_hs
+epi_ntd_f_38adda,Export prices (NTD): 55 人造纖維棉,55 人造纖維棉,export_hs
+epi_ntd_f_4271dc,Export prices (NTD): 58 花邊及窄幅梭織物,58 花邊及窄幅梭織物,export_hs
+epi_ntd_f_48895a,Export prices (NTD): 94 座物、家具、燈具及其零件,94 座物、家具、燈具及其零件,export_hs
+epi_ntd_f_5191f1,Export prices (NTD): 90 光學、計量、檢查、醫療儀器及其零件,90 光學、計量、檢查、醫療儀器及其零件,export_hs
+epi_ntd_f_6311a1,Export prices (NTD): 37 感光或電影用品,37 感光或電影用品,export_hs
+epi_ntd_f_64a3ed,Export prices (NTD): 19 穀類、粉、澱粉調製食品及糕餅類食品,19 穀類、粉、澱粉調製食品及糕餅類食品,export_hs
+epi_ntd_f_72f16d,Export prices (NTD): 70 玻璃及玻璃器,70 玻璃及玻璃器,export_hs
+epi_ntd_f_7b45de,Export prices (NTD): 74 銅及其製品,74 銅及其製品,export_hs
+epi_ntd_f_7b8129,Export prices (NTD): 83 基本金屬雜項製品,83 基本金屬雜項製品,export_hs
+epi_ntd_f_7e87f6,Export prices (NTD): 60 針、鉤針織品,60 針、鉤針織品,export_hs
+epi_ntd_f_8144b6,Export prices (NTD): 34 界面活性劑、潤滑劑及擦光料,34 界面活性劑、潤滑劑及擦光料,export_hs
+epi_ntd_f_83f76b,Export prices (NTD): 22 飲料及酒類,22 飲料及酒類,export_hs
+epi_ntd_f_887afe,Export prices (NTD): 80 錫及其製品,80 錫及其製品,export_hs
+epi_ntd_f_8dbf53,Export prices (NTD): 48 紙、紙板及其製品,48 紙、紙板及其製品,export_hs
+epi_ntd_f_8ddb41,Export prices (NTD): 29 有機化學產品,29 有機化學產品,export_hs
+epi_ntd_f_939527,Export prices (NTD): 54 人造纖維絲、絲紗及其梭織物,54 人造纖維絲、絲紗及其梭織物,export_hs
+epi_ntd_f_a62a02,Export prices (NTD): 73 鋼鐵製品,73 鋼鐵製品,export_hs
+epi_ntd_f_abed78,Export prices (NTD): 76 鋁及其製品,76 鋁及其製品,export_hs
+epi_ntd_f_b3125f,Export prices (NTD): 03 魚、甲殼及軟體類動物,03 魚、甲殼及軟體類動物,export_hs
+epi_ntd_f_b5a1cc,Export prices (NTD): 85 電機、電視影像等設備及其零件,85 電機、電視影像等設備及其零件,export_hs
+epi_ntd_f_bb4915,Export prices (NTD): 38 雜項化學產品,38 雜項化學產品,export_hs
+epi_ntd_f_dd689a,Export prices (NTD): 39 塑膠及其製品,39 塑膠及其製品,export_hs
+epi_ntd_f_deb73a,Export prices (NTD): 95 玩具、遊戲品與運動用品及其零件,95 玩具、遊戲品與運動用品及其零件,export_hs
+epi_ntd_f_e1968c,Export prices (NTD): 96 雜項製品,96 雜項製品,export_hs
+epi_ntd_f_e79fba,Export prices (NTD): 82 基本金屬製工具及其零件,82 基本金屬製工具及其零件,export_hs
+epi_ntd_f_ecda1b,Export prices (NTD): 42 皮革製品,42 皮革製品,export_hs
+epi_ntd_f_f4a1cb,Export prices (NTD): 63 其他製成之紡織品及組合品,63 其他製成之紡織品及組合品,export_hs
+epi_ntd_hs01,Export prices (NTD): Animal products,第1類 動物產品,export_hs
+epi_ntd_hs02,Export prices (NTD): Vegetable products,第2類 植物產品,export_hs
+epi_ntd_hs04,"Export prices (NTD): Prepared foodstuffs, beverages and tobacco",第4類 調製食品、飲料、酒及菸類,export_hs
+epi_ntd_hs05,Export prices (NTD): Mineral products,第5類 礦產品,export_hs
+epi_ntd_hs06,Export prices (NTD): Chemical products,第6類 化學或有關工業產品,export_hs
+epi_ntd_hs07,Export prices (NTD): Plastics and rubber,第7類 塑、橡膠及其製品,export_hs
+epi_ntd_hs08,Export prices (NTD): Leather products,第8類 皮革及其製品,export_hs
+epi_ntd_hs10,"Export prices (NTD): Pulp, paper and products",第10類 木漿、紙及其製品,export_hs
+epi_ntd_hs11,Export prices (NTD): Textiles and products,第11類 紡織及其製品,export_hs
+epi_ntd_hs13,"Export prices (NTD): Stone, ceramic and glass products",第13類 石料製品、玻璃及玻璃器,export_hs
+epi_ntd_hs15,Export prices (NTD): Base metals and products,第15類 基本金屬及其製品,export_hs
+epi_ntd_hs16,Export prices (NTD): Machinery and electrical equipment,第16類 機器、電機及電視影像等設備及其零件,export_hs
+epi_ntd_hs17,Export prices (NTD): Transport equipment,第17類 運輸工具,export_hs
+epi_ntd_hs18,"Export prices (NTD): Optical, measuring and medical instruments",第18類 光學、計量、醫療儀器、樂器及其零件,export_hs
+epi_ntd_hs20,Export prices (NTD): Miscellaneous manufactured articles,第20類 雜項製品,export_hs
+epi_ntd_hs27,Export prices (NTD): Mineral fuels,27 能源礦產品,export_hs
+epi_ntd_hs8542,Export prices (NTD): Integrated circuits,8542 積體電路,export_hs
+epi_ntd_raw_materials,Export prices (NTD): Agricultural and industrial raw materials,農工業原料,export_use
+epi_usd_all,Export prices (USD),總指數,export_hs
+epi_usd_capital,Export prices (USD): Capital goods,資本用品,export_use
+epi_usd_consumer,Export prices (USD): Consumer goods,消費用品,export_use
+epi_usd_consumer_durable,Export prices (USD): Durable consumer goods,消費用品-耐久,export_use
+epi_usd_consumer_nondurable,Export prices (USD): Non-durable consumer goods,消費用品-非耐久,export_use
+epi_usd_f_023b55,Export prices (USD): 87 運輸工具,87 運輸工具,export_hs
+epi_usd_f_11c4c0,Export prices (USD): 40 橡膠及其製品,40 橡膠及其製品,export_hs
+epi_usd_f_19930b,Export prices (USD): 84 鍋爐、機器、機械用具及其零件,84 鍋爐、機器、機械用具及其零件,export_hs
+epi_usd_f_1accd5,Export prices (USD): 32 著色料、漆類及油墨,32 著色料、漆類及油墨,export_hs
+epi_usd_f_242652,Export prices (USD): 72 鋼鐵,72 鋼鐵,export_hs
+epi_usd_f_2658ec,Export prices (USD): 47 木漿及回收紙製品,47 木漿及回收紙製品,export_hs
+epi_usd_f_2f840f,Export prices (USD): 30 醫藥品,30 醫藥品,export_hs
+epi_usd_f_373e4b,Export prices (USD): 28 無機化學產品及貴金屬化合物,28 無機化學產品及貴金屬化合物,export_hs
+epi_usd_f_38adda,Export prices (USD): 55 人造纖維棉,55 人造纖維棉,export_hs
+epi_usd_f_4271dc,Export prices (USD): 58 花邊及窄幅梭織物,58 花邊及窄幅梭織物,export_hs
+epi_usd_f_48895a,Export prices (USD): 94 座物、家具、燈具及其零件,94 座物、家具、燈具及其零件,export_hs
+epi_usd_f_5191f1,Export prices (USD): 90 光學、計量、檢查、醫療儀器及其零件,90 光學、計量、檢查、醫療儀器及其零件,export_hs
+epi_usd_f_6311a1,Export prices (USD): 37 感光或電影用品,37 感光或電影用品,export_hs
+epi_usd_f_64a3ed,Export prices (USD): 19 穀類、粉、澱粉調製食品及糕餅類食品,19 穀類、粉、澱粉調製食品及糕餅類食品,export_hs
+epi_usd_f_72f16d,Export prices (USD): 70 玻璃及玻璃器,70 玻璃及玻璃器,export_hs
+epi_usd_f_7b45de,Export prices (USD): 74 銅及其製品,74 銅及其製品,export_hs
+epi_usd_f_7b8129,Export prices (USD): 83 基本金屬雜項製品,83 基本金屬雜項製品,export_hs
+epi_usd_f_7e87f6,Export prices (USD): 60 針、鉤針織品,60 針、鉤針織品,export_hs
+epi_usd_f_8144b6,Export prices (USD): 34 界面活性劑、潤滑劑及擦光料,34 界面活性劑、潤滑劑及擦光料,export_hs
+epi_usd_f_83f76b,Export prices (USD): 22 飲料及酒類,22 飲料及酒類,export_hs
+epi_usd_f_887afe,Export prices (USD): 80 錫及其製品,80 錫及其製品,export_hs
+epi_usd_f_8dbf53,Export prices (USD): 48 紙、紙板及其製品,48 紙、紙板及其製品,export_hs
+epi_usd_f_8ddb41,Export prices (USD): 29 有機化學產品,29 有機化學產品,export_hs
+epi_usd_f_939527,Export prices (USD): 54 人造纖維絲、絲紗及其梭織物,54 人造纖維絲、絲紗及其梭織物,export_hs
+epi_usd_f_a62a02,Export prices (USD): 73 鋼鐵製品,73 鋼鐵製品,export_hs
+epi_usd_f_abed78,Export prices (USD): 76 鋁及其製品,76 鋁及其製品,export_hs
+epi_usd_f_b3125f,Export prices (USD): 03 魚、甲殼及軟體類動物,03 魚、甲殼及軟體類動物,export_hs
+epi_usd_f_b5a1cc,Export prices (USD): 85 電機、電視影像等設備及其零件,85 電機、電視影像等設備及其零件,export_hs
+epi_usd_f_bb4915,Export prices (USD): 38 雜項化學產品,38 雜項化學產品,export_hs
+epi_usd_f_dd689a,Export prices (USD): 39 塑膠及其製品,39 塑膠及其製品,export_hs
+epi_usd_f_deb73a,Export prices (USD): 95 玩具、遊戲品與運動用品及其零件,95 玩具、遊戲品與運動用品及其零件,export_hs
+epi_usd_f_e1968c,Export prices (USD): 96 雜項製品,96 雜項製品,export_hs
+epi_usd_f_e79fba,Export prices (USD): 82 基本金屬製工具及其零件,82 基本金屬製工具及其零件,export_hs
+epi_usd_f_ecda1b,Export prices (USD): 42 皮革製品,42 皮革製品,export_hs
+epi_usd_f_f4a1cb,Export prices (USD): 63 其他製成之紡織品及組合品,63 其他製成之紡織品及組合品,export_hs
+epi_usd_hs01,Export prices (USD): Animal products,第1類 動物產品,export_hs
+epi_usd_hs02,Export prices (USD): Vegetable products,第2類 植物產品,export_hs
+epi_usd_hs04,"Export prices (USD): Prepared foodstuffs, beverages and tobacco",第4類 調製食品、飲料、酒及菸類,export_hs
+epi_usd_hs05,Export prices (USD): Mineral products,第5類 礦產品,export_hs
+epi_usd_hs06,Export prices (USD): Chemical products,第6類 化學或有關工業產品,export_hs
+epi_usd_hs07,Export prices (USD): Plastics and rubber,第7類 塑、橡膠及其製品,export_hs
+epi_usd_hs08,Export prices (USD): Leather products,第8類 皮革及其製品,export_hs
+epi_usd_hs10,"Export prices (USD): Pulp, paper and products",第10類 木漿、紙及其製品,export_hs
+epi_usd_hs11,Export prices (USD): Textiles and products,第11類 紡織及其製品,export_hs
+epi_usd_hs13,"Export prices (USD): Stone, ceramic and glass products",第13類 石料製品、玻璃及玻璃器,export_hs
+epi_usd_hs15,Export prices (USD): Base metals and products,第15類 基本金屬及其製品,export_hs
+epi_usd_hs16,Export prices (USD): Machinery and electrical equipment,第16類 機器、電機及電視影像等設備及其零件,export_hs
+epi_usd_hs17,Export prices (USD): Transport equipment,第17類 運輸工具,export_hs
+epi_usd_hs18,"Export prices (USD): Optical, measuring and medical instruments",第18類 光學、計量、醫療儀器、樂器及其零件,export_hs
+epi_usd_hs20,Export prices (USD): Miscellaneous manufactured articles,第20類 雜項製品,export_hs
+epi_usd_hs27,Export prices (USD): Mineral fuels,27 能源礦產品,export_hs
+epi_usd_hs8542,Export prices (USD): Integrated circuits,8542 積體電路,export_hs
+epi_usd_raw_materials,Export prices (USD): Agricultural and industrial raw materials,農工業原料,export_use
+ipi_ntd_all,Import prices (NTD),總指數,import_hs
+ipi_ntd_capital,Import prices (NTD): Capital goods,資本用品,import_use
+ipi_ntd_consumer,Import prices (NTD): Consumer goods,消費用品,import_use
+ipi_ntd_consumer_durable,Import prices (NTD): Durable consumer goods,消費用品-耐久,import_use
+ipi_ntd_consumer_nondurable,Import prices (NTD): Non-durable consumer goods,消費用品-非耐久,import_use
+ipi_ntd_crude_oil,Import prices (NTD): Crude oil,原油,import_hs
+ipi_ntd_f_023b55,Import prices (NTD): 87 運輸工具,87 運輸工具,import_hs
+ipi_ntd_f_02a297,Import prices (NTD): 16 肉、魚或甲殼、軟體或其他水產無脊椎動物等之調製品,16 肉、魚或甲殼、軟體或其他水產無脊椎動物等之調製品,import_hs
+ipi_ntd_f_081214,Import prices (NTD): 33 香水、化粧品及髮用製品,33 香水、化粧品及髮用製品,import_hs
+ipi_ntd_f_0f1374,Import prices (NTD): 08 食用果實及堅果,08 食用果實及堅果,import_hs
+ipi_ntd_f_11c4c0,Import prices (NTD): 40 橡膠及其製品,40 橡膠及其製品,import_hs
+ipi_ntd_f_194fa5,Import prices (NTD): 12 油料種子、含油質果實及藥用植物,12 油料種子、含油質果實及藥用植物,import_hs
+ipi_ntd_f_19930b,Import prices (NTD): 84 鍋爐、機器、機械用具及其零件,84 鍋爐、機器、機械用具及其零件,import_hs
+ipi_ntd_f_1accd5,Import prices (NTD): 32 著色料、漆類及油墨,32 著色料、漆類及油墨,import_hs
+ipi_ntd_f_1b06eb,Import prices (NTD): 21 雜項調製食品,21 雜項調製食品,import_hs
+ipi_ntd_f_20f2e1,Import prices (NTD): 61 針、鉤針織之衣著,61 針、鉤針織之衣著,import_hs
+ipi_ntd_f_242652,Import prices (NTD): 72 鋼鐵,72 鋼鐵,import_hs
+ipi_ntd_f_250ea3,Import prices (NTD): 02 肉類,02 肉類,import_hs
+ipi_ntd_f_2658ec,Import prices (NTD): 47 木漿及回收紙製品,47 木漿及回收紙製品,import_hs
+ipi_ntd_f_2f840f,Import prices (NTD): 30 醫藥品,30 醫藥品,import_hs
+ipi_ntd_f_317040,Import prices (NTD): 62 非針、鉤針織之衣著,62 非針、鉤針織之衣著,import_hs
+ipi_ntd_f_373e4b,Import prices (NTD): 28 無機化學產品及貴金屬化合物,28 無機化學產品及貴金屬化合物,import_hs
+ipi_ntd_f_48895a,Import prices (NTD): 94 座物、家具、燈具及其零件,94 座物、家具、燈具及其零件,import_hs
+ipi_ntd_f_5191f1,Import prices (NTD): 90 光學、計量、檢查、醫療儀器及其零件,90 光學、計量、檢查、醫療儀器及其零件,import_hs
+ipi_ntd_f_620875,Import prices (NTD): 17 糖及糖果,17 糖及糖果,import_hs
+ipi_ntd_f_6311a1,Import prices (NTD): 37 感光或電影用品,37 感光或電影用品,import_hs
+ipi_ntd_f_64a3ed,Import prices (NTD): 19 穀類、粉、澱粉調製食品及糕餅類食品,19 穀類、粉、澱粉調製食品及糕餅類食品,import_hs
+ipi_ntd_f_70670d,Import prices (NTD): 黃豆,黃豆,import_hs
+ipi_ntd_f_72f16d,Import prices (NTD): 70 玻璃及玻璃器,70 玻璃及玻璃器,import_hs
+ipi_ntd_f_795ec1,Import prices (NTD): 23 食品產製過程之殘渣及調製動物飼料,23 食品產製過程之殘渣及調製動物飼料,import_hs
+ipi_ntd_f_7b45de,Import prices (NTD): 74 銅及其製品,74 銅及其製品,import_hs
+ipi_ntd_f_8144b6,Import prices (NTD): 34 界面活性劑、潤滑劑及擦光料,34 界面活性劑、潤滑劑及擦光料,import_hs
+ipi_ntd_f_83f76b,Import prices (NTD): 22 飲料及酒類,22 飲料及酒類,import_hs
+ipi_ntd_f_8d4116,Import prices (NTD): 10 穀類,10 穀類,import_hs
+ipi_ntd_f_8dbf53,Import prices (NTD): 48 紙、紙板及其製品,48 紙、紙板及其製品,import_hs
+ipi_ntd_f_8ddb41,Import prices (NTD): 29 有機化學產品,29 有機化學產品,import_hs
+ipi_ntd_f_a62a02,Import prices (NTD): 73 鋼鐵製品,73 鋼鐵製品,import_hs
+ipi_ntd_f_a8bbaa,Import prices (NTD): 04 乳製品,04 乳製品,import_hs
+ipi_ntd_f_aa6039,Import prices (NTD): 25 粗鹽、石料及水泥,25 粗鹽、石料及水泥,import_hs
+ipi_ntd_f_abed78,Import prices (NTD): 76 鋁及其製品,76 鋁及其製品,import_hs
+ipi_ntd_f_b3125f,Import prices (NTD): 03 魚、甲殼及軟體類動物,03 魚、甲殼及軟體類動物,import_hs
+ipi_ntd_f_b5a1cc,Import prices (NTD): 85 電機、電視影像等設備及其零件,85 電機、電視影像等設備及其零件,import_hs
+ipi_ntd_f_b7f337,Import prices (NTD): 44 木及木製品,44 木及木製品,import_hs
+ipi_ntd_f_bb4915,Import prices (NTD): 38 雜項化學產品,38 雜項化學產品,import_hs
+ipi_ntd_f_c271c1,Import prices (NTD): 玉米,玉米,import_hs
+ipi_ntd_f_cb0cd7,Import prices (NTD): 35 蛋白狀物質、膠及黏著劑,35 蛋白狀物質、膠及黏著劑,import_hs
+ipi_ntd_f_dd689a,Import prices (NTD): 39 塑膠及其製品,39 塑膠及其製品,import_hs
+ipi_ntd_f_deb73a,Import prices (NTD): 95 玩具、遊戲品與運動用品及其零件,95 玩具、遊戲品與運動用品及其零件,import_hs
+ipi_ntd_f_e1968c,Import prices (NTD): 96 雜項製品,96 雜項製品,import_hs
+ipi_ntd_f_e75fba,Import prices (NTD): 69 陶瓷產品,69 陶瓷產品,import_hs
+ipi_ntd_f_e79fba,Import prices (NTD): 82 基本金屬製工具及其零件,82 基本金屬製工具及其零件,import_hs
+ipi_ntd_f_ecc7d9,Import prices (NTD): 91 鐘、錶及其零件,91 鐘、錶及其零件,import_hs
+ipi_ntd_f_f4efe8,Import prices (NTD): 68 石料、水泥及礦物製品,68 石料、水泥及礦物製品,import_hs
+ipi_ntd_hs01,Import prices (NTD): Animal products,第1類 動物產品,import_hs
+ipi_ntd_hs02,Import prices (NTD): Vegetable products,第2類 植物產品,import_hs
+ipi_ntd_hs04,"Import prices (NTD): Prepared foodstuffs, beverages and tobacco",第4類 調製食品、飲料、酒及菸類,import_hs
+ipi_ntd_hs05,Import prices (NTD): Mineral products,第5類 礦產品,import_hs
+ipi_ntd_hs06,Import prices (NTD): Chemical products,第6類 化學或有關工業產品,import_hs
+ipi_ntd_hs07,Import prices (NTD): Plastics and rubber,第7類 塑、橡膠及其製品,import_hs
+ipi_ntd_hs09,Import prices (NTD): Wood and wood products,第9類 木及木製品,import_hs
+ipi_ntd_hs10,"Import prices (NTD): Pulp, paper and products",第10類 木漿、紙及其製品,import_hs
+ipi_ntd_hs11,Import prices (NTD): Textiles and products,第11類 紡織及其製品,import_hs
+ipi_ntd_hs13,"Import prices (NTD): Stone, ceramic and glass products",第13類 石料製品、玻璃及玻璃器,import_hs
+ipi_ntd_hs15,Import prices (NTD): Base metals and products,第15類 基本金屬及其製品,import_hs
+ipi_ntd_hs16,Import prices (NTD): Machinery and electrical equipment,第16類 機器、電機及電視影像等設備及其零件,import_hs
+ipi_ntd_hs17,Import prices (NTD): Transport equipment,第17類 運輸工具,import_hs
+ipi_ntd_hs18,"Import prices (NTD): Optical, measuring and medical instruments",第18類 光學、計量、醫療儀器、樂器及其零件,import_hs
+ipi_ntd_hs20,Import prices (NTD): Miscellaneous manufactured articles,第20類 雜項製品,import_hs
+ipi_ntd_hs27,Import prices (NTD): Mineral fuels,27 能源礦產品,import_hs
+ipi_ntd_hs8542,Import prices (NTD): Integrated circuits,8542 積體電路,import_hs
+ipi_ntd_raw_agri,Import prices (NTD): Agricultural raw materials,農工業原料-農業原料,import_use
+ipi_ntd_raw_energy,Import prices (NTD): Energy,農工業原料-能源,import_use
+ipi_ntd_raw_industrial,Import prices (NTD): Industrial raw materials,農工業原料-工業原料,import_use
+ipi_ntd_raw_materials,Import prices (NTD): Agricultural and industrial raw materials,農工業原料,import_use
+ipi_usd_all,Import prices (USD),總指數,import_hs
+ipi_usd_capital,Import prices (USD): Capital goods,資本用品,import_use
+ipi_usd_consumer,Import prices (USD): Consumer goods,消費用品,import_use
+ipi_usd_consumer_durable,Import prices (USD): Durable consumer goods,消費用品-耐久,import_use
+ipi_usd_consumer_nondurable,Import prices (USD): Non-durable consumer goods,消費用品-非耐久,import_use
+ipi_usd_crude_oil,Import prices (USD): Crude oil,原油,import_hs
+ipi_usd_f_023b55,Import prices (USD): 87 運輸工具,87 運輸工具,import_hs
+ipi_usd_f_02a297,Import prices (USD): 16 肉、魚或甲殼、軟體或其他水產無脊椎動物等之調製品,16 肉、魚或甲殼、軟體或其他水產無脊椎動物等之調製品,import_hs
+ipi_usd_f_081214,Import prices (USD): 33 香水、化粧品及髮用製品,33 香水、化粧品及髮用製品,import_hs
+ipi_usd_f_0f1374,Import prices (USD): 08 食用果實及堅果,08 食用果實及堅果,import_hs
+ipi_usd_f_11c4c0,Import prices (USD): 40 橡膠及其製品,40 橡膠及其製品,import_hs
+ipi_usd_f_194fa5,Import prices (USD): 12 油料種子、含油質果實及藥用植物,12 油料種子、含油質果實及藥用植物,import_hs
+ipi_usd_f_19930b,Import prices (USD): 84 鍋爐、機器、機械用具及其零件,84 鍋爐、機器、機械用具及其零件,import_hs
+ipi_usd_f_1accd5,Import prices (USD): 32 著色料、漆類及油墨,32 著色料、漆類及油墨,import_hs
+ipi_usd_f_1b06eb,Import prices (USD): 21 雜項調製食品,21 雜項調製食品,import_hs
+ipi_usd_f_20f2e1,Import prices (USD): 61 針、鉤針織之衣著,61 針、鉤針織之衣著,import_hs
+ipi_usd_f_242652,Import prices (USD): 72 鋼鐵,72 鋼鐵,import_hs
+ipi_usd_f_250ea3,Import prices (USD): 02 肉類,02 肉類,import_hs
+ipi_usd_f_2658ec,Import prices (USD): 47 木漿及回收紙製品,47 木漿及回收紙製品,import_hs
+ipi_usd_f_2f840f,Import prices (USD): 30 醫藥品,30 醫藥品,import_hs
+ipi_usd_f_317040,Import prices (USD): 62 非針、鉤針織之衣著,62 非針、鉤針織之衣著,import_hs
+ipi_usd_f_373e4b,Import prices (USD): 28 無機化學產品及貴金屬化合物,28 無機化學產品及貴金屬化合物,import_hs
+ipi_usd_f_48895a,Import prices (USD): 94 座物、家具、燈具及其零件,94 座物、家具、燈具及其零件,import_hs
+ipi_usd_f_5191f1,Import prices (USD): 90 光學、計量、檢查、醫療儀器及其零件,90 光學、計量、檢查、醫療儀器及其零件,import_hs
+ipi_usd_f_620875,Import prices (USD): 17 糖及糖果,17 糖及糖果,import_hs
+ipi_usd_f_6311a1,Import prices (USD): 37 感光或電影用品,37 感光或電影用品,import_hs
+ipi_usd_f_64a3ed,Import prices (USD): 19 穀類、粉、澱粉調製食品及糕餅類食品,19 穀類、粉、澱粉調製食品及糕餅類食品,import_hs
+ipi_usd_f_70670d,Import prices (USD): 黃豆,黃豆,import_hs
+ipi_usd_f_72f16d,Import prices (USD): 70 玻璃及玻璃器,70 玻璃及玻璃器,import_hs
+ipi_usd_f_795ec1,Import prices (USD): 23 食品產製過程之殘渣及調製動物飼料,23 食品產製過程之殘渣及調製動物飼料,import_hs
+ipi_usd_f_7b45de,Import prices (USD): 74 銅及其製品,74 銅及其製品,import_hs
+ipi_usd_f_8144b6,Import prices (USD): 34 界面活性劑、潤滑劑及擦光料,34 界面活性劑、潤滑劑及擦光料,import_hs
+ipi_usd_f_83f76b,Import prices (USD): 22 飲料及酒類,22 飲料及酒類,import_hs
+ipi_usd_f_8d4116,Import prices (USD): 10 穀類,10 穀類,import_hs
+ipi_usd_f_8dbf53,Import prices (USD): 48 紙、紙板及其製品,48 紙、紙板及其製品,import_hs
+ipi_usd_f_8ddb41,Import prices (USD): 29 有機化學產品,29 有機化學產品,import_hs
+ipi_usd_f_a62a02,Import prices (USD): 73 鋼鐵製品,73 鋼鐵製品,import_hs
+ipi_usd_f_a8bbaa,Import prices (USD): 04 乳製品,04 乳製品,import_hs
+ipi_usd_f_aa6039,Import prices (USD): 25 粗鹽、石料及水泥,25 粗鹽、石料及水泥,import_hs
+ipi_usd_f_abed78,Import prices (USD): 76 鋁及其製品,76 鋁及其製品,import_hs
+ipi_usd_f_b3125f,Import prices (USD): 03 魚、甲殼及軟體類動物,03 魚、甲殼及軟體類動物,import_hs
+ipi_usd_f_b5a1cc,Import prices (USD): 85 電機、電視影像等設備及其零件,85 電機、電視影像等設備及其零件,import_hs
+ipi_usd_f_b7f337,Import prices (USD): 44 木及木製品,44 木及木製品,import_hs
+ipi_usd_f_bb4915,Import prices (USD): 38 雜項化學產品,38 雜項化學產品,import_hs
+ipi_usd_f_c271c1,Import prices (USD): 玉米,玉米,import_hs
+ipi_usd_f_cb0cd7,Import prices (USD): 35 蛋白狀物質、膠及黏著劑,35 蛋白狀物質、膠及黏著劑,import_hs
+ipi_usd_f_dd689a,Import prices (USD): 39 塑膠及其製品,39 塑膠及其製品,import_hs
+ipi_usd_f_deb73a,Import prices (USD): 95 玩具、遊戲品與運動用品及其零件,95 玩具、遊戲品與運動用品及其零件,import_hs
+ipi_usd_f_e1968c,Import prices (USD): 96 雜項製品,96 雜項製品,import_hs
+ipi_usd_f_e75fba,Import prices (USD): 69 陶瓷產品,69 陶瓷產品,import_hs
+ipi_usd_f_e79fba,Import prices (USD): 82 基本金屬製工具及其零件,82 基本金屬製工具及其零件,import_hs
+ipi_usd_f_ecc7d9,Import prices (USD): 91 鐘、錶及其零件,91 鐘、錶及其零件,import_hs
+ipi_usd_f_f4efe8,Import prices (USD): 68 石料、水泥及礦物製品,68 石料、水泥及礦物製品,import_hs
+ipi_usd_hs01,Import prices (USD): Animal products,第1類 動物產品,import_hs
+ipi_usd_hs02,Import prices (USD): Vegetable products,第2類 植物產品,import_hs
+ipi_usd_hs04,"Import prices (USD): Prepared foodstuffs, beverages and tobacco",第4類 調製食品、飲料、酒及菸類,import_hs
+ipi_usd_hs05,Import prices (USD): Mineral products,第5類 礦產品,import_hs
+ipi_usd_hs06,Import prices (USD): Chemical products,第6類 化學或有關工業產品,import_hs
+ipi_usd_hs07,Import prices (USD): Plastics and rubber,第7類 塑、橡膠及其製品,import_hs
+ipi_usd_hs09,Import prices (USD): Wood and wood products,第9類 木及木製品,import_hs
+ipi_usd_hs10,"Import prices (USD): Pulp, paper and products",第10類 木漿、紙及其製品,import_hs
+ipi_usd_hs11,Import prices (USD): Textiles and products,第11類 紡織及其製品,import_hs
+ipi_usd_hs13,"Import prices (USD): Stone, ceramic and glass products",第13類 石料製品、玻璃及玻璃器,import_hs
+ipi_usd_hs15,Import prices (USD): Base metals and products,第15類 基本金屬及其製品,import_hs
+ipi_usd_hs16,Import prices (USD): Machinery and electrical equipment,第16類 機器、電機及電視影像等設備及其零件,import_hs
+ipi_usd_hs17,Import prices (USD): Transport equipment,第17類 運輸工具,import_hs
+ipi_usd_hs18,"Import prices (USD): Optical, measuring and medical instruments",第18類 光學、計量、醫療儀器、樂器及其零件,import_hs
+ipi_usd_hs20,Import prices (USD): Miscellaneous manufactured articles,第20類 雜項製品,import_hs
+ipi_usd_hs27,Import prices (USD): Mineral fuels,27 能源礦產品,import_hs
+ipi_usd_hs8542,Import prices (USD): Integrated circuits,8542 積體電路,import_hs
+ipi_usd_raw_agri,Import prices (USD): Agricultural raw materials,農工業原料-農業原料,import_use
+ipi_usd_raw_energy,Import prices (USD): Energy,農工業原料-能源,import_use
+ipi_usd_raw_industrial,Import prices (USD): Industrial raw materials,農工業原料-工業原料,import_use
+ipi_usd_raw_materials,Import prices (USD): Agricultural and industrial raw materials,農工業原料,import_use
+ppi_agriculture,"PPI: Agriculture, forestry, fishing and animal husbandry products",一.農林漁牧業產品,ppi
+ppi_all,PPI,總指數,ppi
+ppi_apparel,PPI: Wearing apparel and clothing accessories,5.成衣及服飾品,ppi
+ppi_basic_metals,PPI: Basic metals,13.基本金屬,ppi
+ppi_beverages,PPI: Beverages,2.飲料,ppi
+ppi_chemicals,"PPI: Chemical materials, other chemical products and medicines",10.化學材料及其製品與藥品,ppi
+ppi_computers,"PPI: Computers, electronic and optical products",16.電腦、電子產品及光學製品,ppi
+ppi_electrical,PPI: Electrical equipment,17.電力設備及配備,ppi
+ppi_electricity,PPI: Electricity supply,2.電,ppi
+ppi_electronic_parts,PPI: Electronic parts and components,15.電子零組件,ppi
+ppi_f_0672df,PPI: (5)特用作物及其他,(5)特用作物及其他,ppi
+ppi_f_1436f0,PPI: (2)動植物油脂,(2)動植物油脂,ppi
+ppi_f_16f32e,PPI: (4)其他金屬,(4)其他金屬,ppi
+ppi_f_1e8105,PPI: (1)稻穀雜糧,(1)稻穀雜糧,ppi
+ppi_f_230f2a,PPI: (4)碾榖、磨粉及澱粉製品,(4)碾榖、磨粉及澱粉製品,ppi
+ppi_f_24a092,PPI: (5)其他電子零組件,(5)其他電子零組件,ppi
+ppi_f_26d4b8,PPI: (1)魚類,(1)魚類,ppi
+ppi_f_282aa9,PPI: (2)通訊傳播設備,(2)通訊傳播設備,ppi
+ppi_f_2bd687,PPI: (2)布,(2)布,ppi
+ppi_f_316631,PPI: (2)其他水產品,(2)其他水產品,ppi
+ppi_f_3199ca,PPI: (2)耐火、黏土建材及其他陶瓷製品,(2)耐火、黏土建材及其他陶瓷製品,ppi
+ppi_f_31fb55,PPI: (1)酒精飲料,(1)酒精飲料,ppi
+ppi_f_335da9,PPI: (1)鋼鐵,(1)鋼鐵,ppi
+ppi_f_3be863,PPI: (2)蔬菜,(2)蔬菜,ppi
+ppi_f_4121b9,PPI: (3)視聽電子產品,(3)視聽電子產品,ppi
+ppi_f_42e9d2,PPI: (4)其他非金屬礦物製品,(4)其他非金屬礦物製品,ppi
+ppi_f_45e202,PPI: (3)印刷電路板,(3)印刷電路板,ppi
+ppi_f_4a6c2b,PPI: (7)調味品,(7)調味品,ppi
+ppi_f_51a0f2,PPI: (2)其他專用生產機械,(2)其他專用生產機械,ppi
+ppi_f_51d838,PPI: (5)其他金屬製品,(5)其他金屬製品,ppi
+ppi_f_57635d,PPI: (1)塑化原料、肥料及人造纖維,(1)塑化原料、肥料及人造纖維,ppi
+ppi_f_5a1331,PPI: (2)塑膠製品,(2)塑膠製品,ppi
+ppi_f_5ce879,PPI: (3)藥品及醫用化學製品,(3)藥品及醫用化學製品,ppi
+ppi_f_638a40,PPI: (1)紡織纖維及紗線,(1)紡織纖維及紗線,ppi
+ppi_f_6931d4,PPI: (2)其他非醫用化學製品,(2)其他非醫用化學製品,ppi
+ppi_f_6c8f4f,PPI: (1)電腦及其週邊設備,(1)電腦及其週邊設備,ppi
+ppi_f_6ecb29,PPI: (6)烘焙炊蒸食品,(6)烘焙炊蒸食品,ppi
+ppi_f_707753,PPI: (3)乳製品,(3)乳製品,ppi
+ppi_f_70b4bd,PPI: (1)金屬刀具、手工具及模具,(1)金屬刀具、手工具及模具,ppi
+ppi_f_759335,PPI: (3)通用機械,(3)通用機械,ppi
+ppi_f_7c1def,PPI: (4)金屬加工處理製品,(4)金屬加工處理製品,ppi
+ppi_f_7d9f91,PPI: (5)其他電子及光學製品,(5)其他電子及光學製品,ppi
+ppi_f_7fb978,PPI: (1)橡膠製品,(1)橡膠製品,ppi
+ppi_f_829b23,PPI: (8)膳食及菜餚食品,(8)膳食及菜餚食品,ppi
+ppi_f_879b28,PPI: (2)服飾品,(2)服飾品,ppi
+ppi_f_8d9013,PPI: (3)銅,(3)銅,ppi
+ppi_f_8f878f,PPI: (3)水泥及其製品,(3)水泥及其製品,ppi
+ppi_f_9036ce,PPI: (2)汽車零件,(2)汽車零件,ppi
+ppi_f_964886,PPI: (3)家用電器,(3)家用電器,ppi
+ppi_f_9923b7,PPI: (1)汽車,(1)汽車,ppi
+ppi_f_9e9ada,PPI: (3)其他紡織品,(3)其他紡織品,ppi
+ppi_f_a27edf,PPI: (1)成衣,(1)成衣,ppi
+ppi_f_a4330e,PPI: (2)鋁,(2)鋁,ppi
+ppi_f_acbcce,PPI: (3)水果,(3)水果,ppi
+ppi_f_b824a5,PPI: (1)玻璃及其製品,(1)玻璃及其製品,ppi
+ppi_f_bad174,PPI: (2)醫療器材及用品,(2)醫療器材及用品,ppi
+ppi_f_bb653f,PPI: (4)量測、導航及控制設備製品,(4)量測、導航及控制設備製品,ppi
+ppi_f_cbfc12,PPI: (4)其他運輸工具及零件,(4)其他運輸工具及零件,ppi
+ppi_f_cc8a41,PPI: (3)金屬容器,(3)金屬容器,ppi
+ppi_f_d0758a,PPI: (4)光電材料及元件,(4)光電材料及元件,ppi
+ppi_f_d18a21,PPI: (2)電線及配線器材,(2)電線及配線器材,ppi
+ppi_f_d22450,PPI: (1)育樂用品,(1)育樂用品,ppi
+ppi_f_d3b9c4,PPI: (1)家畜及其產品,(1)家畜及其產品,ppi
+ppi_f_d617be,PPI: (9)其他食品,(9)其他食品,ppi
+ppi_f_d62200,PPI: (2)金屬結構及建築組件,(2)金屬結構及建築組件,ppi
+ppi_f_d75c78,PPI: (3)機車及其零件,(3)機車及其零件,ppi
+ppi_f_da972e,PPI: (1)發電、輸電及配電機械,(1)發電、輸電及配電機械,ppi
+ppi_f_dedaf8,PPI: (3)其他雜項工業製品,(3)其他雜項工業製品,ppi
+ppi_f_df348f,PPI: (1)金屬加工用機械,(1)金屬加工用機械,ppi
+ppi_f_e57876,PPI: (2)家禽及其產品,(2)家禽及其產品,ppi
+ppi_f_ed0e82,PPI: (2)非酒精飲料,(2)非酒精飲料,ppi
+ppi_f_f08ddc,PPI: (2)被動電子元件,(2)被動電子元件,ppi
+ppi_f_f1dcc1,PPI: (1)肉類、水產品及蔬果加工與保藏,(1)肉類、水產品及蔬果加工與保藏,ppi
+ppi_f_f5d0de,PPI: (4)其他電力及配備,(4)其他電力及配備,ppi
+ppi_f_f96ccd,PPI: (4)花卉,(4)花卉,ppi
+ppi_fabricated_metal,PPI: Fabricated metal products,14.金屬製品,ppi
+ppi_farm,PPI: Farm products,1.農產品,ppi
+ppi_fishery,PPI: Fishery products,4.水產品,ppi
+ppi_food,PPI: Food products and prepared animal feeds,1.食品及飼品,ppi
+ppi_forest,PPI: Forest products,3.林產品,ppi
+ppi_furniture,PPI: Furniture and fixtures,20.家具及裝設品,ppi
+ppi_gas,PPI: Gas supply,3.燃氣,ppi
+ppi_leather,"PPI: Leather, fur and related products",6.皮革及其製品,ppi
+ppi_livestock,PPI: Livestock and poultry products,2.畜禽產品,ppi
+ppi_machinery,PPI: Machinery and equipment,18.機械設備,ppi
+ppi_manufacturing,PPI: Manufacturing products,三.製造業產品,ppi
+ppi_mining,PPI: Quarrying and mining products,二.土石及礦產品,ppi
+ppi_misc_manufacturing,PPI: Miscellaneous products,21.雜項工業製品,ppi
+ppi_non_metallic,PPI: Non-metallic mineral products,12.非金屬礦物製品,ppi
+ppi_oil_gas,PPI: Crude petroleum and natural gas,1.石油及天然氣,ppi
+ppi_paper,"PPI: Pulp, paper, paper products and printing",8.紙漿、紙、紙製品及印刷品,ppi
+ppi_petroleum,PPI: Petroleum and coal products,9.石油及煤製品,ppi
+ppi_quarrying,PPI: Quarrying and other mining products,2.土石採取及其他礦產品,ppi
+ppi_rubber_plastic,PPI: Rubber and plastic products,11.橡膠及塑膠製品,ppi
+ppi_semiconductors,PPI: Semiconductors,(1)半導體,ppi
+ppi_textiles,PPI: Textile products,4.紡織品,ppi
+ppi_tobacco,PPI: Tobacco,3.菸類,ppi
+ppi_transport_equipment,PPI: Transport equipment and parts,19.運輸工具及零件,ppi
+ppi_utilities,"PPI: Water, electricity and gas supply",四.水電燃氣,ppi
+ppi_water,PPI: Water supply,1.水,ppi
+ppi_wood,PPI: Wood and bamboo products,7.木竹製品,ppi

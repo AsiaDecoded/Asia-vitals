@@ -1,0 +1,196 @@
+<div class="jg">
+  <header class="jg-head" id="top">
+    <h1>Taiwan</h1>
+  </header>
+
+  <nav class="jg-tabs" role="tablist" aria-label="Sections">
+    <button role="tab" data-tab="inflation" aria-selected="true">Inflation</button>
+    <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
+  </nav>
+
+  <section class="jg-page" id="inflation" role="tabpanel">
+    <div class="jg-pagehead">
+      <div class="jg-note" style="margin:0"><span id="cpi-month" class="dash-skeleton" style="color: var(--color-fg)" data-source="cpi_latest" data-field="month" data-row="0">—</span></div>
+      <p class="jg-take" id="cpi-takeaway"><span class="dash-skeleton">—</span></p>
+    </div>
+
+    <section class="jg-tiles" id="cpi-headline" aria-label="Headline inflation">
+      <div class="jg-card jg-tile"><div class="lbl">CPI, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="all_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="all_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Core (ex fruit, vegetables and energy), y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="core_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="core_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Goods, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="goods_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="goods_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Services, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="services_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="services_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">PPI, y/y</div>
+        <div class="val"><span data-source="ppi_latest" data-field="ppi_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="ppi_latest" data-field="ppi_yoy_prev" data-row="0">—</span>%</div></div>
+    </section>
+
+    <section class="jg-card" id="div-heat">
+      <h2>Taiwan consumer inflation</h2>
+      <div class="ad-top"><span class="ad-units" id="div-heat-units">% y/y; weight, % of CPI</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-tablewrap">
+        <table id="div-heat-table" data-source="tw_cpi tw_cpi_contrib"></table>
+      </div>
+      <div class="ad-foot"><span>Source: DGBAS</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="ppi-cpi" data-def="60">
+        <h2>Taiwan inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="ppi-cpi-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="ppi-cpi-chart" data-source="tw_cpi tw_ppi"></div>
+        <div class="ad-foot"><span>Source: DGBAS</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-ym" data-def="60">
+        <h2>Taiwan consumer inflation</h2>
+        <div class="ad-top"><span class="ad-units">%</span><div class="jg-legend" id="cpi-ym-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-ym-chart" data-source="tw_cpi"></div>
+        <div class="ad-foot"><span>Source: DGBAS</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-sa" data-def="60">
+        <h2>Taiwan consumer inflation, seasonally adjusted</h2>
+        <div class="ad-top"><span class="ad-units">% m/m, seasonally adjusted</span><div class="jg-legend" id="cpi-sa-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-sa-chart" data-source="tw_cpi"></div>
+        <div class="ad-foot"><span>Source: DGBAS</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-contrib" data-def="0">
+        <h2>Taiwan consumer inflation contribution</h2>
+        <div class="ad-top"><span class="ad-units">ppt</span><div class="jg-legend" id="cpi-contrib-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-contrib-chart" data-source="tw_cpi_contrib"></div>
+        <div class="ad-foot"><span>Source: DGBAS, monthly release table 1</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card" id="cpi-impacts">
+      <div class="jg-cardhead">
+        <div><h2>Taiwan CPI: contributions by group</h2></div>
+        <div class="jg-seg" id="cpi-impacts-seg" role="group" aria-label="Comparison"><button data-m="yoy" aria-pressed="true">y/y</button><button data-m="mom">m/m</button></div>
+      </div>
+      <div class="ad-top"><span class="ad-units" id="cpi-impacts-units">%, ppt</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-tablewrap">
+        <table id="cpi-impacts-table" data-source="impacts_latest" data-row-key="series">
+          <thead><tr>
+            <th data-field="label">Group</th>
+            <th data-field="weight_pct">Weight, % of CPI</th>
+            <th data-field="rate">Change, %</th>
+            <th data-field="pp">Contribution to CPI, ppt</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="ad-foot"><span>Source: DGBAS, monthly release table 1</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-core" data-periods="ml" data-def="120">
+        <h2>Taiwan core inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-core-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-core-chart" data-source="tw_cpi"></div>
+        <div class="ad-foot"><span>Source: DGBAS</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-gs" data-periods="ml" data-def="120">
+        <h2>Taiwan goods and services CPI</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-gs-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-gs-chart" data-source="tw_cpi"></div>
+        <div class="ad-foot"><span>Source: DGBAS</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-fe" data-def="120">
+        <h2>Taiwan food and energy CPI</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-fe-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-fe-chart" data-source="tw_cpi"></div>
+        <div class="ad-foot"><span>Source: DGBAS</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-income" data-def="60">
+        <h2>Taiwan CPI by household income group</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-income-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-income-chart" data-source="tw_cpi"></div>
+        <div class="ad-foot"><span>Source: DGBAS</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="trade" data-periods="ml" data-def="120">
+        <h2>Taiwan import and export inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="trade-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="trade-chart" data-source="tw_ppi"></div>
+        <div class="ad-foot"><span>Source: DGBAS</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="ppi-parts" data-def="60">
+        <h2>Taiwan producer prices</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="ppi-parts-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="ppi-parts-chart" data-source="tw_ppi"></div>
+        <div class="ad-foot"><span>Source: DGBAS</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="ppi-ind" data-periods="none">
+        <h2>Taiwan producer prices by industry</h2>
+        <div class="ad-top"><span class="ad-units" id="ppi-ind-units">% y/y</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="ppi-ind-chart" data-source="tw_ppi"></div>
+        <div class="ad-foot"><span>Source: DGBAS</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-cats" data-def="60">
+        <h2>Taiwan consumer inflation by group</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-cats-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-cats-chart" data-source="tw_cpi"></div>
+        <div class="ad-foot"><span>Source: DGBAS</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card ad-notes" id="chart-notes">
+      <h2>Chart notes</h2>
+      <ol>
+        <li><b>All figures are as published by the Directorate-General of Budget, Accounting and Statistics (DGBAS); none is calculated.</b> Indices are on 2021 = 100; DGBAS publishes the index and its percentage changes on the previous month and on the same month a year earlier, to two decimals.</li>
+        <li><b>Table, Taiwan consumer inflation:</b> y/y for the latest 13 months: CPI, DGBAS core, CPI excluding food and energy (DGBAS&rsquo;s definition: its food group includes food away from home, alcohol and beverages), goods, services, energy, the seven groups and their main subgroups. Weights are this year&rsquo;s weights in % of CPI, from the latest release (table 1). Each row is coloured on its own range, from green at its lowest rate in the window to red at its highest.</li>
+        <li><b>Chart 1, Taiwan inflation:</b> CPI and PPI, y/y. The PPI replaced the wholesale price index in 2023 and starts in January 2021, so its y/y starts in January 2022.</li>
+        <li><b>Chart 2, Taiwan consumer inflation:</b> CPI y/y (line) and m/m (bars), not seasonally adjusted.</li>
+        <li><b>Chart 3, seasonally adjusted:</b> DGBAS&rsquo;s seasonally adjusted CPI and core CPI, m/m.</li>
+        <li><b>Chart 4, contribution:</b> DGBAS&rsquo;s contributions of goods and services to CPI y/y (&ldquo;impact on the general index&rdquo;, release table 1), from January 2023, as first published. Goods and services add up to CPI y/y within rounding.</li>
+        <li><b>Table, contributions by group:</b> DGBAS&rsquo;s contributions of the seven groups, goods and services to CPI y/y or m/m in the latest month, with each group&rsquo;s weight and change.</li>
+        <li><b>Chart 5, Taiwan core inflation:</b> CPI, DGBAS core (CPI excluding fruit, vegetables and energy) and CPI excluding food and energy on DGBAS&rsquo;s food definition. Neither is the core measure on the India and Singapore pages.</li>
+        <li><b>Chart 6, goods and services:</b> DGBAS&rsquo;s split of the CPI into goods and services, and core goods (goods excluding fruit, vegetables and energy).</li>
+        <li><b>Chart 7, food and energy:</b> food (DGBAS group, including food away from home), vegetables, fruit, energy (gas, electricity and vehicle fuels) and fuels and lubricants.</li>
+        <li><b>Chart 8, income groups:</b> CPI for households in the lowest 20%, middle 60% and highest 20% of disposable income, and for elderly households (all members aged 65 or over, from 2018), each with its own weights.</li>
+        <li><b>Chart 9, import and export inflation:</b> import and export price indices in US dollars, y/y; DGBAS also publishes them in New Taiwan dollars.</li>
+        <li><b>Charts 10 and 11, producer prices:</b> PPI and its four sections, y/y; PPI by industry in the latest month.</li>
+        <li><b>Chart 12, by group:</b> the seven CPI groups, y/y. The dashed line marks the 2021 base (from January 2023).</li>
+      </ol>
+    </section>
+  </section>
+
+  <section class="jg-page" id="methodology" role="tabpanel" hidden>
+    <article class="jg-card ad-method" id="method-cpi">
+      <h2>Consumer and producer prices</h2>
+      <p>Taiwan&rsquo;s consumer price index (CPI) is compiled monthly by the Price Statistics Section of DGBAS. It covers the goods and services bought by households nationwide (excluding Kinmen and Lienchiang counties), priced in 9 cities and 8 counties: 7 groups, 40 subgroups, 62 small groups and 368 priced items. Fresh vegetables, fruits and fish are priced three times a month, other items once.</p>
+      <h3>What DGBAS publishes</h3>
+      <ul>
+        <li><b>CPI:</b> index (2021 = 100), m/m and y/y for all items (linked series from 1959), the groups and subgroups (from 1981) and the 368 items (from 2013); goods and services with their subgroups; DGBAS core (excluding fruit, vegetables and energy), energy, CPI excluding food and energy and other special groups; purchase-frequency groups; income groups; elderly households.</li>
+        <li><b>Seasonally adjusted:</b> DGBAS seasonally adjusts the CPI (from 1959) and core CPI (from 2008) and publishes the adjusted index and m/m.</li>
+        <li><b>Weights and contributions:</b> each release (table 1) gives the year&rsquo;s weights of the groups and main subgroups and DGBAS&rsquo;s contributions to the m/m, y/y and year-to-date change; table 14 gives every priced item&rsquo;s weight. The page shows weights as % of CPI.</li>
+        <li><b>Producer and trade prices:</b> PPI (2021 = 100, from January 2021, 2024 weights; it replaced the wholesale price index), domestic sales prices, and import and export prices in New Taiwan dollars and US dollars by HS section and end use.</li>
+      </ul>
+      <h3>Weights and base</h3>
+      <p>The CPI is a Laspeyres-type index chained each December. Since the 2016 base, DGBAS updates the weights every year from household consumption two years earlier (2026 weights: 2024 structure; 2023 used 2019&ndash;2021 and 2024 used late 2022 to late 2023, because of the pandemic). Fresh vegetables and fruits have monthly weights (three-year moving average of monthly sales). The classification and items are reviewed every five years; the current base, 2021 = 100, started with the January 2023 index. DGBAS rescales earlier years to each new base and publishes the linked series. Because the fruit and vegetable weights change by month, the published group weights reproduce the headline index to about 0.05 index points, not exactly.</p>
+      <h3>Asia tab: food</h3>
+      <p>The Asia tab compares food and non-alcoholic beverages (COICOP 01) across economies. DGBAS does not publish that series: its food group includes alcoholic beverages and food away from home. The Asia tab&rsquo;s Taiwan food series is calculated: DGBAS&rsquo;s food index less alcoholic beverages (4 items) and food away from home (12 items, including coffee and drinks bought out, kindergarten snacks and school lunches), removed at DGBAS&rsquo;s published weights (food and food away from home from release table 1, alcohol from its items in table 14; each year&rsquo;s weights, linked at December, as DGBAS aggregates). Tobacco is not in DGBAS&rsquo;s food group. Index December 2022 = 100, y/y from January 2024. Checks: the kept and removed parts recombine to DGBAS&rsquo;s food index (gap under 0.001 index points) and their weights sum to the food weight; taking the month&rsquo;s food weight from table 14 instead of table 1 changes y/y by at most 0.05pp (limit 0.06). The food series on this page is DGBAS&rsquo;s own.</p>
+      <h3>Releases</h3>
+      <p>DGBAS releases the CPI, PPI and import and export prices together at 16:00 Taipei time (16:00 Singapore) on the fifth working day after the month. The latest three months may be revised. Contributions and weights on this page are as first published.</p>
+      <h3>Data</h3>
+      <p>DGBAS Macro Database (nstatdb.dgbas.gov.tw), price tables; DGBAS&rsquo;s linked CPI file for the all-items index before 1981; monthly releases on stat.gov.tw (tables 1 and 14) for weights and contributions. Built by the AsiaDecoded/asia-vitals pipeline (data/tw/cpi, data/tw/ppi), which fetches only on DGBAS release days.</p>
+    </article>
+  </section>
+</div>

@@ -1,0 +1,154 @@
+area,area_name,series,label,group,level,parent,first,last
+all_households,All households,all,CPI,basic,0,,1981-01,2026-09
+all_households,All households,clothing,Clothing,basic,1,all,1981-01,2026-09
+all_households,All households,education_entertainment,Education and entertainment,basic,1,all,1981-01,2026-09
+all_households,All households,food,Food,basic,1,all,1981-01,2026-09
+all_households,All households,health,Health,basic,1,all,1981-01,2026-09
+all_households,All households,housing,Housing,basic,1,all,1981-01,2026-09
+all_households,All households,miscellaneous,Miscellaneous,basic,1,all,1981-01,2026-09
+all_households,All households,transport_comm,Transportation and communication,basic,1,all,1981-01,2026-09
+elderly,Elderly households,all,CPI,basic,0,,2018-01,2026-09
+elderly,Elderly households,clothing,Clothing,basic,1,all,2018-01,2026-09
+elderly,Elderly households,education_entertainment,Education and entertainment,basic,1,all,2018-01,2026-09
+elderly,Elderly households,food,Food,basic,1,all,2018-01,2026-09
+elderly,Elderly households,health,Health,basic,1,all,2018-01,2026-09
+elderly,Elderly households,housing,Housing,basic,1,all,2018-01,2026-09
+elderly,Elderly households,miscellaneous,Miscellaneous,basic,1,all,2018-01,2026-09
+elderly,Elderly households,transport_comm,Transportation and communication,basic,1,all,2018-01,2026-09
+highest20,Highest 20% income,all,CPI,basic,0,,2008-01,2026-09
+highest20,Highest 20% income,clothing,Clothing,basic,1,all,2008-01,2026-09
+highest20,Highest 20% income,education_entertainment,Education and entertainment,basic,1,all,2008-01,2026-09
+highest20,Highest 20% income,food,Food,basic,1,all,2008-01,2026-09
+highest20,Highest 20% income,health,Health,basic,1,all,2008-01,2026-09
+highest20,Highest 20% income,housing,Housing,basic,1,all,2008-01,2026-09
+highest20,Highest 20% income,miscellaneous,Miscellaneous,basic,1,all,2008-01,2026-09
+highest20,Highest 20% income,transport_comm,Transportation and communication,basic,1,all,2008-01,2026-09
+lowest20,Lowest 20% income,all,CPI,basic,0,,2008-01,2026-09
+lowest20,Lowest 20% income,clothing,Clothing,basic,1,all,2008-01,2026-09
+lowest20,Lowest 20% income,education_entertainment,Education and entertainment,basic,1,all,2008-01,2026-09
+lowest20,Lowest 20% income,food,Food,basic,1,all,2008-01,2026-09
+lowest20,Lowest 20% income,health,Health,basic,1,all,2008-01,2026-09
+lowest20,Lowest 20% income,housing,Housing,basic,1,all,2008-01,2026-09
+lowest20,Lowest 20% income,miscellaneous,Miscellaneous,basic,1,all,2008-01,2026-09
+lowest20,Lowest 20% income,transport_comm,Transportation and communication,basic,1,all,2008-01,2026-09
+middle60,Middle 60% income,all,CPI,basic,0,,2008-01,2026-09
+middle60,Middle 60% income,clothing,Clothing,basic,1,all,2008-01,2026-09
+middle60,Middle 60% income,education_entertainment,Education and entertainment,basic,1,all,2008-01,2026-09
+middle60,Middle 60% income,food,Food,basic,1,all,2008-01,2026-09
+middle60,Middle 60% income,health,Health,basic,1,all,2008-01,2026-09
+middle60,Middle 60% income,housing,Housing,basic,1,all,2008-01,2026-09
+middle60,Middle 60% income,miscellaneous,Miscellaneous,basic,1,all,2008-01,2026-09
+middle60,Middle 60% income,transport_comm,Transportation and communication,basic,1,all,2008-01,2026-09
+national,Taiwan,alcohol,Alcoholic beverages,basic,2,food,1981-01,2026-09
+national,Taiwan,all,CPI,basic,0,,1959-01,2026-09
+national,Taiwan,books,"Books, newspapers and periodicals",basic,3,education,1981-01,2026-09
+national,Taiwan,cereals,Cereals and cereal products,basic,2,food,1981-01,2026-09
+national,Taiwan,childrens_wear,Children's wear and school uniforms,basic,3,garments,1981-01,2026-09
+national,Taiwan,clothing,Clothing,basic,1,all,1981-01,2026-09
+national,Taiwan,clothing_services,Clothing services and accessories,basic,2,clothing,1981-01,2026-09
+national,Taiwan,comm_equipment,Communication equipment,basic,3,transport_comm_equipment,1991-01,2026-09
+national,Taiwan,comm_fees,Communication fees,basic,3,transport_services_parts,1981-01,2026-09
+national,Taiwan,condiments,Condiments,basic,2,food,1981-01,2026-09
+national,Taiwan,cooked_food,Cooked food,basic,2,food,1981-01,2026-09
+national,Taiwan,core,"Core CPI (excluding fruit, vegetables and energy)",special,0,,1981-01,2026-09
+national,Taiwan,core_ex_imputed_rent,Core CPI excluding imputed rent,special,0,,1981-01,2026-09
+national,Taiwan,core_goods,"Core goods (goods excluding fruit, vegetables and energy)",goods_services,2,goods,1981-01,2026-09
+national,Taiwan,cosmetics,Cosmetic and toilet items,basic,2,miscellaneous,1981-01,2026-09
+national,Taiwan,dairy,Dairy products,basic,2,food,1981-01,2026-09
+national,Taiwan,durable,Durable goods,goods_services,2,goods,1981-01,2026-09
+national,Taiwan,dwelling_repair,Dwelling maintenance and repair,basic,2,housing,1981-01,2026-09
+national,Taiwan,eating_out,Food away from home,basic,2,food,1981-01,2026-09
+national,Taiwan,edible_oil,Edible oil,basic,2,food,1981-01,2026-09
+national,Taiwan,education,Educational expenses,basic,2,education_entertainment,1981-01,2026-09
+national,Taiwan,education_entertainment,Education and entertainment,basic,1,all,1981-01,2026-09
+national,Taiwan,education_equipment,Educational equipment and supplies,basic,3,education,1981-01,2026-09
+national,Taiwan,eggs,Eggs,basic,2,food,1981-01,2026-09
+national,Taiwan,electricity,Electricity,basic,3,utilities,1981-01,2026-09
+national,Taiwan,energy,"Energy (gas, electricity, fuels)",special,0,,1981-01,2026-09
+national,Taiwan,entertainment,Entertainment expenses,basic,2,education_entertainment,1981-01,2026-09
+national,Taiwan,entertainment_equipment,Entertainment equipment,basic,3,entertainment,1981-01,2026-09
+national,Taiwan,entertainment_services_group,Entertainment services,basic,3,entertainment,1981-01,2026-09
+national,Taiwan,ex_food,CPI excluding food,special,0,,1981-01,2026-09
+national,Taiwan,ex_food_energy,CPI excluding food and energy (DGBAS definition),special,0,,1981-01,2026-09
+national,Taiwan,ex_fruit_veg,CPI excluding fruit and vegetables,special,0,,1981-01,2026-09
+national,Taiwan,ex_fruit_veg_fish_energy,"CPI excluding fruit, vegetables, fish and energy",special,0,,1981-01,2026-09
+national,Taiwan,ex_imputed_rent,CPI excluding imputed rent,special,0,,1981-01,2026-09
+national,Taiwan,fish,Fish and seafood,basic,2,food,1981-01,2026-09
+national,Taiwan,food,Food,basic,1,all,1981-01,2026-09
+national,Taiwan,footwear,Footwear,basic,2,clothing,1981-01,2026-09
+national,Taiwan,fresh_livestock,Fresh livestock meat,basic,3,meat,1981-01,2026-09
+national,Taiwan,fresh_poultry,Fresh poultry,basic,3,meat,1981-01,2026-09
+national,Taiwan,fruit,Fruits,basic,2,food,1981-01,2026-09
+national,Taiwan,fruit_veg_other,Fruit vegetables and other,basic,3,vegetables,1981-01,2026-09
+national,Taiwan,fuels,Fuels and lubricants,basic,2,transport_comm,1981-01,2026-09
+national,Taiwan,furniture,Furniture,basic,3,household_goods,1981-01,2026-09
+national,Taiwan,garments,Garments,basic,2,clothing,1981-01,2026-09
+national,Taiwan,gas,Gas,basic,3,utilities,1981-01,2026-09
+national,Taiwan,goods,Goods,goods_services,1,gs_all,1981-01,2026-09
+national,Taiwan,goods_ex_food,Goods excluding food,goods_services,2,goods,1981-01,2026-09
+national,Taiwan,gs_all,CPI (goods and services),goods_services,0,,1981-01,2026-09
+national,Taiwan,hairdressing,Hairdressing services,basic,2,miscellaneous,1981-01,2026-09
+national,Taiwan,health,Health,basic,1,all,1981-01,2026-09
+national,Taiwan,household_durables,Household durable equipment,basic,3,household_goods,1981-01,2026-09
+national,Taiwan,household_goods,Household appliances and articles,basic,2,housing,1981-01,2026-09
+national,Taiwan,household_operations,Household operations,basic,2,housing,1986-01,2026-09
+national,Taiwan,housing,Housing,basic,1,all,1981-01,2026-09
+national,Taiwan,leafy_veg,Leafy vegetables,basic,3,vegetables,1981-01,2026-09
+national,Taiwan,meat,Meat,basic,2,food,1981-01,2026-09
+national,Taiwan,meat_products,Meat products,basic,2,food,1981-01,2026-09
+national,Taiwan,medical_services,Medical care services,basic,2,health,1981-01,2026-09
+national,Taiwan,medical_supplies,Medical supplies and appliances,basic,2,health,1981-01,2026-09
+national,Taiwan,medicines,Medicines and health foods,basic,2,health,1981-01,2026-09
+national,Taiwan,mens_wear,Men's wear,basic,3,garments,1981-01,2026-09
+national,Taiwan,miscellaneous,Miscellaneous,basic,1,all,1981-01,2026-09
+national,Taiwan,non_alcoholic,Non-alcoholic beverages and materials,basic,2,food,1981-01,2026-09
+national,Taiwan,noncore_goods,"Non-core goods (fruit, vegetables and energy)",goods_services,2,goods,1981-01,2026-09
+national,Taiwan,nondurable,Non-durable goods,goods_services,2,goods,1981-01,2026-09
+national,Taiwan,nondurable_ex_food,Non-durable goods excluding food,goods_services,3,nondurable,1981-01,2026-09
+national,Taiwan,nursing_care,Services for nursery and nursing care,basic,2,miscellaneous,1986-01,2026-09
+national,Taiwan,other_cereals,Other cereals and products,basic,3,cereals,1981-01,2026-09
+national,Taiwan,other_food,Other food,basic,2,food,1981-01,2026-09
+national,Taiwan,other_misc,Other,basic,2,miscellaneous,1981-01,2026-09
+national,Taiwan,other_transport_services,Other transport services,basic,3,transport_services_parts,1991-01,2026-09
+national,Taiwan,personal_effects,Personal effects,basic,2,miscellaneous,1981-01,2026-09
+national,Taiwan,pf_ex_imputed_rent,CPI excluding imputed rent (purchase frequency),purchase_frequency,0,,1981-01,2026-09
+national,Taiwan,pf_less_often,Items bought less than once a quarter,purchase_frequency,1,pf_ex_imputed_rent,1981-01,2026-09
+national,Taiwan,pf_monthly,Items bought at least once a month,purchase_frequency,1,pf_ex_imputed_rent,1981-01,2026-09
+national,Taiwan,pf_quarterly,Items bought at least once a quarter,purchase_frequency,1,pf_ex_imputed_rent,1981-01,2026-09
+national,Taiwan,processed_fish,Processed fish and seafood,basic,2,food,1981-01,2026-09
+national,Taiwan,processed_fruit,Processed fruits,basic,2,food,1981-01,2026-09
+national,Taiwan,processed_veg,Processed vegetables,basic,2,food,1981-01,2026-09
+national,Taiwan,rent,Residential rents,basic,2,housing,1981-01,2026-09
+national,Taiwan,repair_materials,Repair materials,basic,3,dwelling_repair,1981-01,2026-09
+national,Taiwan,repair_services,Repair services,basic,3,dwelling_repair,1981-01,2026-09
+national,Taiwan,rice,Rice and rice products,basic,3,cereals,1981-01,2026-09
+national,Taiwan,root_veg,Root vegetables,basic,3,vegetables,1981-01,2026-09
+national,Taiwan,semidurable,Semi-durable goods,goods_services,2,goods,1981-01,2026-09
+national,Taiwan,services,Services,goods_services,1,gs_all,1981-01,2026-09
+national,Taiwan,services_clothing,Clothing services,goods_services,2,services,1981-01,2026-09
+national,Taiwan,services_eating_out,Food away from home,goods_services,2,services,1981-01,2026-09
+national,Taiwan,services_education,Education services,goods_services,3,services_education_entertainment,1981-01,2026-09
+national,Taiwan,services_education_entertainment,Education and entertainment services,goods_services,2,services,1981-01,2026-09
+national,Taiwan,services_entertainment,Entertainment services,goods_services,3,services_education_entertainment,1981-01,2026-09
+national,Taiwan,services_ex_food,Services excluding food away from home,goods_services,2,services,1981-01,2026-09
+national,Taiwan,services_health,Health services,goods_services,2,services,1981-01,2026-09
+national,Taiwan,services_housing,Housing services,goods_services,2,services,1981-01,2026-09
+national,Taiwan,services_misc,Miscellaneous services,goods_services,2,services,1981-01,2026-09
+national,Taiwan,services_transport_comm,Transport and communication services,goods_services,2,services,1981-01,2026-09
+national,Taiwan,stem_veg,Stem vegetables,basic,3,vegetables,1981-01,2026-09
+national,Taiwan,tableware,Tableware and other household articles,basic,3,household_goods,1981-01,2026-09
+national,Taiwan,textiles,Household textiles,basic,3,household_goods,1981-01,2026-09
+national,Taiwan,tobacco,Tobacco and betel nuts,basic,2,miscellaneous,1981-01,2026-09
+national,Taiwan,transport_comm,Transportation and communication,basic,1,all,1981-01,2026-09
+national,Taiwan,transport_comm_equipment,Transport and communication equipment,basic,2,transport_comm,1981-01,2026-09
+national,Taiwan,transport_fees,Transportation fees,basic,3,transport_services_parts,1981-01,2026-09
+national,Taiwan,transport_services_parts,Transport services and parts,basic,2,transport_comm,1981-01,2026-09
+national,Taiwan,tuition,Tuition and fees,basic,3,education,1981-01,2026-09
+national,Taiwan,tutoring,Tutoring and courses,basic,3,education,1981-01,2026-09
+national,Taiwan,utilities,"Water, electricity and gas",basic,2,housing,1981-01,2026-09
+national,Taiwan,utility_surcharges,Public utility surcharges,basic,3,utilities,1991-01,2026-09
+national,Taiwan,vegetables,Vegetables,basic,2,food,1981-01,2026-09
+national,Taiwan,vehicle_parts_repair,Vehicle parts and maintenance,basic,3,transport_services_parts,1981-01,2026-09
+national,Taiwan,vehicles,Vehicles,basic,3,transport_comm_equipment,1981-01,2026-09
+national,Taiwan,water,Water,basic,3,utilities,1981-01,2026-09
+national,Taiwan,womens_wear,Women's wear,basic,3,garments,1981-01,2026-09

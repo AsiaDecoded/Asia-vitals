@@ -1,0 +1,3 @@
+# Taiwan dashboard (Claude Dashboard artifact) — page source
+
+Copy of the page files published to https://claude.ai/artifact/S4LAusirGDx6EKgiyGNscW (documents `files/index.html`, `files/app.js` and `files/export.js` in the artifact's database). `index.html` is assembled by `build.sh` from style.css, body.html and jg.js (as for dashboards/in and dashboards/cn); `app.js` holds the charts (it only selects and reshapes published figures). `datasets/` holds the dataset documents, which point at uploaded copies of `data/tw/cpi/tw_cpi_dash.csv`, `data/tw/cpi/tw_cpi_contrib.csv` and `data/tw/ppi/tw_ppi_dash.csv`. The artifact is the live copy; this folder is a backup.

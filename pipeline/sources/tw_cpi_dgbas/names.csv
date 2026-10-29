@@ -1,0 +1,124 @@
+table,field,key,label,level,parent
+A030101015,總指數,all,CPI,0,
+A030101015,一.食物類,food,Food,1,all
+A030101015,1.穀類及其製品,cereals,Cereals and cereal products,2,food
+A030101015,(1)米類及其製品,rice,Rice and rice products,3,cereals
+A030101015,(2)其他穀類及其製品,other_cereals,Other cereals and products,3,cereals
+A030101015,2.肉類,meat,Meat,2,food
+A030101015,(1)生鮮家畜,fresh_livestock,Fresh livestock meat,3,meat
+A030101015,(2)生鮮家禽,fresh_poultry,Fresh poultry,3,meat
+A030101015,3.肉類製品,meat_products,Meat products,2,food
+A030101015,4.蛋類,eggs,Eggs,2,food
+A030101015,5.水產品,fish,Fish and seafood,2,food
+A030101015,6.加工水產品,processed_fish,Processed fish and seafood,2,food
+A030101015,7.蔬菜,vegetables,Vegetables,2,food
+A030101015,(1)根菜,root_veg,Root vegetables,3,vegetables
+A030101015,(2)莖菜,stem_veg,Stem vegetables,3,vegetables
+A030101015,(3)葉菜,leafy_veg,Leafy vegetables,3,vegetables
+A030101015,(4)果菜及其他,fruit_veg_other,Fruit vegetables and other,3,vegetables
+A030101015,8.加工蔬菜,processed_veg,Processed vegetables,2,food
+A030101015,9.水果,fruit,Fruits,2,food
+A030101015,10.加工水果,processed_fruit,Processed fruits,2,food
+A030101015,11.乳類,dairy,Dairy products,2,food
+A030101015,12.食用油,edible_oil,Edible oil,2,food
+A030101015,13.調味品,condiments,Condiments,2,food
+A030101015,14.酒,alcohol,Alcoholic beverages,2,food
+A030101015,15.非酒精性飲料及材料,non_alcoholic,Non-alcoholic beverages and materials,2,food
+A030101015,16.調理食品,cooked_food,Cooked food,2,food
+A030101015,17.外食費,eating_out,Food away from home,2,food
+A030101015,18.其他食品,other_food,Other food,2,food
+A030101015,二.衣著類,clothing,Clothing,1,all
+A030101015,1.成衣,garments,Garments,2,clothing
+A030101015,(1)男用衣著,mens_wear,Men's wear,3,garments
+A030101015,(2)女用衣著,womens_wear,Women's wear,3,garments
+A030101015,(3)兒童衣著及學生制服,childrens_wear,Children's wear and school uniforms,3,garments
+A030101015,2.鞋類,footwear,Footwear,2,clothing
+A030101015,3.衣著服務及配件,clothing_services,Clothing services and accessories,2,clothing
+A030101015,三.居住類,housing,Housing,1,all
+A030101015,1.房租,rent,Residential rents,2,housing
+A030101015,2.住宅維修費,dwelling_repair,Dwelling maintenance and repair,2,housing
+A030101015,(1)維修材料,repair_materials,Repair materials,3,dwelling_repair
+A030101015,(2)維修服務,repair_services,Repair services,3,dwelling_repair
+A030101015,3.家庭用品,household_goods,Household appliances and articles,2,housing
+A030101015,(1)紡織品,textiles,Household textiles,3,household_goods
+A030101015,(2)家具,furniture,Furniture,3,household_goods
+A030101015,(3)家庭耐久設備,household_durables,Household durable equipment,3,household_goods
+A030101015,(4)餐具及其他家用品,tableware,Tableware and other household articles,3,household_goods
+A030101015,4.家庭管理費用,household_operations,Household operations,2,housing
+A030101015,5.水電燃氣,utilities,"Water, electricity and gas",2,housing
+A030101015,(1)燃氣,gas,Gas,3,utilities
+A030101015,(2)水費,water,Water,3,utilities
+A030101015,(3)電費,electricity,Electricity,3,utilities
+A030101015,(4)公共附加費,utility_surcharges,Public utility surcharges,3,utilities
+A030101015,四.交通及通訊類,transport_comm,Transportation and communication,1,all
+A030101015,1.交通及通訊設備,transport_comm_equipment,Transport and communication equipment,2,transport_comm
+A030101015,(1)交通工具,vehicles,Vehicles,3,transport_comm_equipment
+A030101015,(2)通訊設備,comm_equipment,Communication equipment,3,transport_comm_equipment
+A030101015,2.油料費,fuels,Fuels and lubricants,2,transport_comm
+A030101015,3.交通服務及維修零件,transport_services_parts,Transport services and parts,2,transport_comm
+A030101015,(1)運輸費,transport_fees,Transportation fees,3,transport_services_parts
+A030101015,(2)通訊費,comm_fees,Communication fees,3,transport_services_parts
+A030101015,(3)交通工具零件及維修費,vehicle_parts_repair,Vehicle parts and maintenance,3,transport_services_parts
+A030101015,(4)其他交通服務費,other_transport_services,Other transport services,3,transport_services_parts
+A030101015,五.醫藥保健類,health,Health,1,all
+A030101015,1.醫療費用,medical_services,Medical care services,2,health
+A030101015,2.藥品及保健食品,medicines,Medicines and health foods,2,health
+A030101015,3.醫療保健器材,medical_supplies,Medical supplies and appliances,2,health
+A030101015,六.教養娛樂類,education_entertainment,Education and entertainment,1,all
+A030101015,1.教養費用,education,Educational expenses,2,education_entertainment
+A030101015,(1)書報期刊,books,"Books, newspapers and periodicals",3,education
+A030101015,(2)學雜費,tuition,Tuition and fees,3,education
+A030101015,(3)補習及學習費,tutoring,Tutoring and courses,3,education
+A030101015,(4)教養設備及用具,education_equipment,Educational equipment and supplies,3,education
+A030101015,2.娛樂費用,entertainment,Entertainment expenses,2,education_entertainment
+A030101015,(1)娛樂設備,entertainment_equipment,Entertainment equipment,3,entertainment
+A030101015,(2)娛樂服務,entertainment_services_group,Entertainment services,3,entertainment
+A030101015,七.雜項類,miscellaneous,Miscellaneous,1,all
+A030101015,1.香菸及檳榔,tobacco,Tobacco and betel nuts,2,miscellaneous
+A030101015,2.美容及衛生用品,cosmetics,Cosmetic and toilet items,2,miscellaneous
+A030101015,3.個人隨身用品,personal_effects,Personal effects,2,miscellaneous
+A030101015,4.個人照顧服務費,nursing_care,Services for nursery and nursing care,2,miscellaneous
+A030101015,5.理容服務費,hairdressing,Hairdressing services,2,miscellaneous
+A030101015,6.其他,other_misc,Other,2,miscellaneous
+A030102015,總指數(含食物),gs_all,CPI (goods and services),0,
+A030102015,商品類(含食物),goods,Goods,1,gs_all
+A030102015,商品類(不含食物),goods_ex_food,Goods excluding food,2,goods
+A030102015,核心商品,core_goods,"Core goods (goods excluding fruit, vegetables and energy)",2,goods
+A030102015,非核心商品(即蔬果及能源),noncore_goods,"Non-core goods (fruit, vegetables and energy)",2,goods
+A030102015,非耐久性消費品(含食物),nondurable,Non-durable goods,2,goods
+A030102015,非耐久性消費品(不含食物),nondurable_ex_food,Non-durable goods excluding food,3,nondurable
+A030102015,半耐久性消費品,semidurable,Semi-durable goods,2,goods
+A030102015,耐久性消費品,durable,Durable goods,2,goods
+A030102015,服務類,services,Services,1,gs_all
+A030102015,服務類(不含食物),services_ex_food,Services excluding food away from home,2,services
+A030102015,外食費,services_eating_out,Food away from home,2,services
+A030102015,衣著服務,services_clothing,Clothing services,2,services
+A030102015,居住服務,services_housing,Housing services,2,services
+A030102015,交通及通訊服務,services_transport_comm,Transport and communication services,2,services
+A030102015,醫療保健服務,services_health,Health services,2,services
+A030102015,教養娛樂服務,services_education_entertainment,Education and entertainment services,2,services
+A030102015,教養服務,services_education,Education services,3,services_education_entertainment
+A030102015,娛樂服務,services_entertainment,Entertainment services,3,services_education_entertainment
+A030102015,雜項服務,services_misc,Miscellaneous services,2,services
+A030103015,總指數(不含食物),ex_food,CPI excluding food,0,
+A030103015,總指數(不含蔬菜水果),ex_fruit_veg,CPI excluding fruit and vegetables,0,
+A030103015,總指數(不含蔬果及能源)【即核心物價】,core,"Core CPI (excluding fruit, vegetables and energy)",0,
+A030103015,總指數(不含食物及能源),ex_food_energy,CPI excluding food and energy (DGBAS definition),0,
+A030103015,總指數(不含蔬果水產及能源),ex_fruit_veg_fish_energy,"CPI excluding fruit, vegetables, fish and energy",0,
+A030103015,總指數(不含設算租金),ex_imputed_rent,CPI excluding imputed rent,0,
+A030103015,不含自有住宅設算租金之核心,core_ex_imputed_rent,Core CPI excluding imputed rent,0,
+A030103015,能源(含燃氣、電費、油料費),energy,"Energy (gas, electricity, fuels)",0,
+A030105015,總指數(不含設算租金),pf_ex_imputed_rent,CPI excluding imputed rent (purchase frequency),0,
+A030105015,每月至少購買1次,pf_monthly,Items bought at least once a month,1,pf_ex_imputed_rent
+A030105015,每季(不含每月)至少購買1次,pf_quarterly,Items bought at least once a quarter,1,pf_ex_imputed_rent
+A030105015,每季購買不到1次,pf_less_often,Items bought less than once a quarter,1,pf_ex_imputed_rent
+A030106015,總指數,elderly,Elderly households,0,
+A030106015,一.食物類,elderly_food,Elderly households: food,1,elderly
+A030106015,二.衣著類,elderly_clothing,Elderly households: clothing,1,elderly
+A030106015,三.居住類,elderly_housing,Elderly households: housing,1,elderly
+A030106015,四.交通及通訊類,elderly_transport_comm,Elderly households: transportation and communication,1,elderly
+A030106015,五.醫藥保健類,elderly_health,Elderly households: health,1,elderly
+A030106015,六.教養娛樂類,elderly_education_entertainment,Elderly households: education and entertainment,1,elderly
+A030106015,七.雜項類,elderly_miscellaneous,Elderly households: miscellaneous,1,elderly
+A030601015,消費者物價總指數_經季節調整,all_sa,"CPI, seasonally adjusted",0,
+A030601015,消費者物價總指數(不含蔬果及能源)【即核心物價】_經季節調整,core_sa,"Core CPI, seasonally adjusted",0,

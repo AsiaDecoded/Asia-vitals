@@ -1,0 +1,114 @@
+name: Taiwan test (dev-tw)
+
+# Runs the Taiwan sources (tw_cpi_dgbas, tw_ppi_dgbas) on the dev-tw branch, which are not yet in the
+# shared registry (pipeline/sources/__init__.py), with their checks; then checks the September 2026
+# figures against DGBAS's release (7 Oct 2026) and pushes data/tw and raw/tw back to dev-tw.
+# Not part of the scheduled update until merged.
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-tw]
+    paths:
+      - pipeline/core/dgbas.py
+      - pipeline/sources/tw_cpi_dgbas/**
+      - pipeline/sources/tw_ppi_dgbas/**
+      - .github/workflows/tw-test.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tw-test
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Excel readers
+        run: pip install -q openpyxl xlrd
+
+      - name: Run the Taiwan sources with their checks
+        run: |
+          python -I - <<'PY'
+          import sys, traceback, importlib, time
+          sys.path.insert(0, "pipeline")
+          from core.common import CheckFailed
+          rc, lines = 0, []
+          for name in ("tw_cpi_dgbas", "tw_ppi_dgbas"):
+              t0 = time.time()
+              lines.append(f"== {name}")
+              try:
+                  res = importlib.import_module(f"sources.{name}").update(force=True)
+                  lines.append(f"   {'UPDATED' if res['updated'] else 'unchanged'}: {res['summary']} ({time.time() - t0:.0f}s)")
+                  for w in res.get("warnings", []):
+                      lines.append(f"   WARNING: {w}")
+              except CheckFailed as e:
+                  rc = 1
+                  lines.append(f"   CHECKS FAILED ({len(e.errors)}):")
+                  lines += [f"   - {x}"[:600] for x in e.errors[:40]]
+              except Exception:
+                  rc = 1
+                  lines.append(traceback.format_exc())
+          open("tw_report.txt", "w").write("\n".join(lines) + "\n")
+          print("\n".join(lines))
+          sys.exit(rc)
+          PY
+
+      - name: September 2026 against the DGBAS release
+        run: |
+          python -I - <<'PY'
+          import csv, sys
+          # As reported in DGBAS's release for September 2026 (7 Oct 2026, 16:00; English Tables 1-4, Chinese text).
+          CPI = {("all", "yoy"): 2.73, ("all", "mom"): 0.44, ("all", "index"): 112.82, ("all", "sa_mom"): 0.17,
+                 ("core", "yoy"): 2.52, ("core", "mom"): 0.06, ("food", "yoy"): 2.64, ("goods", "yoy"): 3.01,
+                 ("services", "yoy"): 2.49, ("clothing", "yoy"): 2.32, ("housing", "yoy"): 2.38,
+                 ("transport_comm", "yoy"): 4.07, ("health", "yoy"): 0.70, ("education_entertainment", "yoy"): 3.15,
+                 ("miscellaneous", "yoy"): 2.77, ("fuels", "yoy"): 12.72, ("vegetables", "yoy"): 4.93,
+                 ("fruit", "yoy"): -1.02, ("rent", "yoy"): 1.72, ("ex_fruit_veg", "yoy"): 2.78}
+          INC = {("lowest20", "all", "yoy"): 2.44, ("middle60", "all", "yoy"): 2.65, ("highest20", "all", "yoy"): 2.97,
+                 ("elderly", "all", "yoy"): 2.51}
+          PPI = {("ppi_all", "yoy"): 18.12, ("ppi_all", "mom"): 0.76, ("ppi_all", "index"): 127.03,
+                 ("ppi_manufacturing", "yoy"): 18.91, ("ipi_usd_all", "yoy"): 24.07, ("epi_usd_all", "yoy"): 25.76,
+                 ("ipi_ntd_all", "yoy"): 29.59, ("epi_ntd_all", "yoy"): 31.34, ("dsp_all", "yoy"): 12.78}
+          CONTRIB = {"all": 2.73, "food": 0.69, "goods": 1.45, "services": 1.29, "core": 2.32}
+          bad, n = [], 0
+          rows = {(r["area"], r["series"], r["measure"]): float(r["value"]) for r in csv.DictReader(open("data/tw/cpi/tw_cpi.csv")) if r["date"] == "2026-09-01"}
+          for (k, m), v in CPI.items():
+              n += 1; x = rows.get(("national", k, m))
+              if x is None: bad.append(f"CPI {k} {m}: missing")
+              elif abs(x - v) > 0.001: bad.append(f"CPI {k} {m}: {x} vs release {v}")
+          for k, v in INC.items():
+              n += 1; x = rows.get(k)
+              if x is None: bad.append(f"CPI {k}: missing")
+              elif abs(x - v) > 0.001: bad.append(f"CPI {k}: {x} vs release {v}")
+          rows = {(r["series"], r["measure"]): float(r["value"]) for r in csv.DictReader(open("data/tw/ppi/tw_ppi.csv")) if r["date"] == "2026-09-01"}
+          for k, v in PPI.items():
+              n += 1; x = rows.get(k)
+              if x is None: bad.append(f"PPI {k}: missing")
+              elif abs(x - v) > 0.001: bad.append(f"PPI {k}: {x} vs release {v}")
+          rows = {r["series"]: float(r["yoy_pp"]) for r in csv.DictReader(open("data/tw/cpi/tw_cpi_contrib.csv")) if r["date"] == "2026-09-01"}
+          for k, v in CONTRIB.items():
+              n += 1; x = rows.get(k)
+              if x is None: bad.append(f"contribution {k}: missing")
+              elif abs(x - v) > 0.001: bad.append(f"contribution {k}: {x} vs release {v}")
+          msg = f"September 2026 vs DGBAS release: {n - len(bad)}/{n} match"
+          print(msg); [print("  -", b) for b in bad]
+          open("tw_report.txt", "a").write(msg + "\n" + "".join(f"  - {b}\n" for b in bad))
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: Push data and report to dev-tw
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mkdir -p data/tw && cp tw_report.txt data/tw/test_report.txt 2>/dev/null || true
+          git add data/tw; if [ -d raw/tw ]; then git add raw/tw; fi
+          git commit -qm "Taiwan test run ${{ github.run_id }}" || exit 0
+          for i in 1 2 3; do git pull -q --rebase origin dev-tw && git push -q origin HEAD:dev-tw && break; sleep 5; done
