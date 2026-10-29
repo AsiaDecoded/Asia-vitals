@@ -57,7 +57,7 @@ window.JG = {
     const SETS = { q: [['5Y', 20], ['10Y', 40], ['All', 0]], m: [['3Y', 36], ['5Y', 60], ['10Y', 120], ['All', 0]], ml: [['10Y', 120], ['30Y', 360], ['All', 0]], a: [['20Y', 20], ['40Y', 40], ['All', 0]] };
     document.querySelectorAll('.jg-card').forEach((card) => {
       const chart = card.querySelector('.jg-chart'); if (!chart) return;
-      if (card.dataset.periods === 'none') return;
+      if (card.dataset.periods === 'none' || card.dataset.periods === 'fixed') return; // fixed: shows its data-def months, no buttons
       const page = card.closest('.jg-page'); const kind = card.dataset.periods || (page && page.id === 'gdp' ? 'q' : 'm');
       const def = card.dataset.def != null ? Number(card.dataset.def) : (kind === 'q' ? 40 : 120);
       const seg = document.createElement('div'); seg.className = 'jg-seg ad-period'; seg.setAttribute('role', 'group'); seg.setAttribute('aria-label', 'Period');
