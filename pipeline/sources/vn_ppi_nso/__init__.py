@@ -169,7 +169,7 @@ def update(force=False, **_):
         w = csv.DictWriter(f, fieldnames=["date", "period", "table", "series", "label", "measure", "value"], lineterminator="\n")
         w.writeheader()
         for r in q:
-            w.writerow({"date": r["date"], "period": r["period"], "table": r["table"], "series": r["series"], "label": r["label"],
+            w.writerow({"date": r["date"], "period": r["period"], "table": r["table"], "series": f"{r['table']}_{r['series']}", "label": r["label"],
                         "measure": {"yoy": "yoy", "prev_quarter": "qoq", "ytd_avg": "ytd_avg"}[r["comparison_base"]], "value": r["rate"]})
     code = f"P{latest}"
 

@@ -1,0 +1,3 @@
+# Vietnam dashboard (Claude Dashboard artifact) — page source
+
+Copy of the page files published as a Dashboard artifact (documents `files/index.html`, `files/app.js` and `files/export.js` in the artifact's database). `index.html` is assembled by `build.sh` from style.css, body.html and jg.js (as for dashboards/tw); `app.js` holds the charts (it only selects and reshapes published figures). Datasets point at uploaded copies of `data/vn/cpi/vn_cpi_dash.csv`, `vn_cpi_latest.csv`, `vn_cpi_regions.csv`, `vn_cpi_weights.csv` and `data/vn/ppi/vn_ppi_dash.csv`. The artifact is the live copy; this folder is a backup.

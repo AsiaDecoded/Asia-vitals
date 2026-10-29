@@ -1,0 +1,181 @@
+<div class="jg">
+  <header class="jg-head" id="top">
+    <h1>Vietnam</h1>
+  </header>
+
+  <nav class="jg-tabs" role="tablist" aria-label="Sections">
+    <button role="tab" data-tab="inflation" aria-selected="true">Inflation</button>
+    <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
+  </nav>
+
+  <section class="jg-page" id="inflation" role="tabpanel">
+    <div class="jg-pagehead">
+      <div class="jg-note" style="margin:0"><span id="cpi-month" class="dash-skeleton" style="color: var(--color-fg)" data-source="cpi_month" data-field="month" data-row="0">—</span></div>
+      <p class="jg-take" id="cpi-takeaway"><span class="dash-skeleton">—</span></p>
+    </div>
+
+    <section class="jg-tiles" id="cpi-headline" aria-label="Headline inflation">
+      <div class="jg-card jg-tile"><div class="lbl">CPI, y/y</div>
+        <div class="val"><span data-source="vn_cpi_latest" data-field="all_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="vn_cpi_latest" data-field="all_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Core inflation (NSO), y/y</div>
+        <div class="val"><span data-source="vn_cpi_latest" data-field="core_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="vn_cpi_latest" data-field="core_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">CPI, m/m</div>
+        <div class="val"><span data-source="vn_cpi_latest" data-field="all_mom" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">vs December <span data-source="vn_cpi_latest" data-field="all_vs_dec" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">CPI, year-to-date average, y/y</div>
+        <div class="val"><span data-source="vn_cpi_latest" data-field="all_ytd" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">core <span data-source="vn_cpi_latest" data-field="core_ytd" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Industry PPI, y/y (quarterly)</div>
+        <div class="val"><span data-source="ppi_latest" data-field="ind_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub"><span data-source="ppi_latest" data-field="period" data-row="0">—</span>; prior quarter <span data-source="ppi_latest" data-field="ind_yoy_prev" data-row="0">—</span>%</div></div>
+    </section>
+
+    <section class="jg-card" id="div-heat">
+      <h2>Vietnam consumer inflation</h2>
+      <div class="ad-top"><span class="ad-units" id="div-heat-units">% y/y; weight, % of CPI</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-tablewrap">
+        <table id="div-heat-table" data-source="vn_cpi vn_cpi_weights"></table>
+      </div>
+      <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-long" data-periods="ml" data-def="0">
+        <h2>Vietnam inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-long-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-long-chart" data-source="vn_cpi"></div>
+        <div class="ad-foot"><span>Source: NSO; IMF CPI dataset</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-ym" data-def="60">
+        <h2>Vietnam consumer inflation</h2>
+        <div class="ad-top"><span class="ad-units">%</span><div class="jg-legend" id="cpi-ym-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-ym-chart" data-source="vn_cpi"></div>
+        <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-bases" data-def="60">
+        <h2>Vietnam CPI against NSO&rsquo;s comparison periods</h2>
+        <div class="ad-top"><span class="ad-units">% change</span><div class="jg-legend" id="cpi-bases-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-bases-chart" data-source="vn_cpi"></div>
+        <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-core" data-def="0">
+        <h2>Vietnam core inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-core-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-core-chart" data-source="vn_cpi"></div>
+        <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-ur" data-def="0">
+        <h2>Vietnam CPI, urban and rural</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-ur-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-ur-chart" data-source="vn_cpi"></div>
+        <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-fe" data-def="120">
+        <h2>Vietnam food and catering CPI</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-fe-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-fe-chart" data-source="vn_cpi"></div>
+        <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="region" data-periods="none">
+        <h2>Vietnam CPI by region</h2>
+        <div class="ad-top"><span class="ad-units" id="region-units">% m/m</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="region-chart" data-source="vn_cpi_regions"></div>
+        <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="province" data-periods="none">
+        <h2>Vietnam CPI in ten provinces and cities</h2>
+        <div class="ad-top"><span class="ad-units" id="province-units">% m/m</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="province-chart" data-source="vn_cpi_regions"></div>
+        <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="ppi-parts" data-def="0">
+        <h2>Vietnam producer prices</h2>
+        <div class="ad-top"><span class="ad-units">% y/y, quarterly</span><div class="jg-legend" id="ppi-parts-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="ppi-parts-chart" data-source="vn_ppi"></div>
+        <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="trade" data-def="0">
+        <h2>Vietnam import and export inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y, quarterly</span><div class="jg-legend" id="trade-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="trade-chart" data-source="vn_ppi"></div>
+        <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-cats" data-def="120">
+        <h2>Vietnam consumer inflation by group</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-cats-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-cats-chart" data-source="vn_cpi"></div>
+        <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="gold-usd" data-def="60">
+        <h2>Vietnam gold and US dollar price indices</h2>
+        <div class="ad-top"><span class="ad-units">% y/y; not part of the CPI</span><div class="jg-legend" id="gold-usd-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gold-usd-chart" data-source="vn_cpi"></div>
+        <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card ad-notes" id="chart-notes">
+      <h2>Chart notes</h2>
+      <ol>
+        <li><b>All figures are as published by the National Statistics Office of Viet Nam (NSO, the General Statistics Office until 2025); none is calculated.</b> NSO publishes each month&rsquo;s CPI as indices against several comparison periods (each = 100): the base year, the same month a year earlier, December of the previous year, the previous month, and the average of the months to date against the same period a year earlier. The page shows each as the published index less 100, which is the rate in NSO&rsquo;s text. Nothing is converted from one comparison period to another.</li>
+        <li><b>Table, Vietnam consumer inflation:</b> y/y for the latest 13 months: CPI, NSO core, the 11 groups and the published sub-groups. Weights are NSO&rsquo;s 2024-basket weights in % of CPI (in use from November 2025). Each row is coloured on its own range, from green at its lowest rate in the window to red at its highest.</li>
+        <li><b>Chart 1, Vietnam inflation:</b> CPI y/y as published by NSO (from January 2010) and the IMF&rsquo;s CPI y/y for Vietnam (from December 2002; the IMF links NSO&rsquo;s indices on 2024 = 100). Two sources, two lines; neither is spliced to the other.</li>
+        <li><b>Chart 2, Vietnam consumer inflation:</b> CPI y/y (line) and m/m (bars), not seasonally adjusted. NSO publishes no seasonally adjusted CPI.</li>
+        <li><b>Chart 3, comparison periods:</b> the CPI against the same month a year earlier, against December of the previous year, and the year-to-date average against the same period a year earlier.</li>
+        <li><b>Chart 4, core inflation:</b> NSO core: CPI excluding food and fresh foodstuff, energy and goods whose prices the State manages, including health and education services. It is NSO&rsquo;s own definition, not the CPI excluding food and energy used on the India and Singapore pages. Monthly core figures start in December 2021 (earlier releases are PDF only).</li>
+        <li><b>Chart 5, urban and rural:</b> y/y, from December 2021.</li>
+        <li><b>Chart 6, food and catering:</b> NSO&rsquo;s group I, food and catering services, includes eating out; cereals (lương thực) and foodstuff (thực phẩm) are its sub-groups. Non-alcoholic beverages are in group II with alcohol and tobacco, so NSO publishes no food and non-alcoholic beverages measure (COICOP 01).</li>
+        <li><b>Charts 7 and 8, regions and provinces:</b> NSO publishes the six regions and ten provinces and cities against the previous month only, latest month. Regions were not published from July to December 2025, after the provinces were merged.</li>
+        <li><b>Charts 9 and 10, producer and trade prices:</b> quarterly, against the same quarter a year earlier, from the first quarter of 2020, plotted at the quarter&rsquo;s last month. NSO publishes no all-economy PPI and no monthly producer prices. Export and import prices are in US dollars.</li>
+        <li><b>Chart 11, by group:</b> y/y of the 11 CPI groups. Dashed lines mark base changes: January 2020 (2019 = 100) and November 2025 (2024 basket, 775 items). Group VIII was post and telecommunications before November 2025.</li>
+        <li><b>Chart 12, gold and US dollar:</b> NSO&rsquo;s gold and US dollar price indices, published with the CPI but not part of it.</li>
+      </ol>
+    </section>
+  </section>
+
+  <section class="jg-page" id="methodology" role="tabpanel" hidden>
+    <article class="jg-card ad-method" id="method-cpi">
+      <h2>Consumer and producer prices</h2>
+      <p>Vietnam&rsquo;s consumer price index (CPI) is compiled monthly by the National Statistics Office (NSO) under the Ministry of Finance, formerly the General Statistics Office. The 2024 basket, in use from the November 2025 index, has 775 representative goods and services in 11 groups, weighted from the 2024 household living standards survey (about 62,000 households, four rounds). Earlier bases: 2019 (754 items, used for 2020 to October 2025), 2014 (654), 2009 (572), 2005 (494), 2000 (396), 1995 (300). NSO computes a geometric-mean Laspeyres index with fixed base-year weights (as stated for the 2014 basket).</p>
+      <h3>What NSO publishes</h3>
+      <ul>
+        <li><b>CPI:</b> all items, 11 groups, cereals, foodstuff, eating out, health services and education services; national, urban and rural; against the base year, the same month a year earlier, December of the previous year, the previous month, the quarter average and the year-to-date average. Regions and ten provinces against the previous month.</li>
+        <li><b>Core inflation:</b> y/y, m/m and year-to-date average y/y, as % changes. NSO&rsquo;s definition excludes food and fresh foodstuff, energy and State-managed goods including health and education services.</li>
+        <li><b>Gold and US dollar price indices:</b> published with the CPI, not part of it.</li>
+        <li><b>Producer and trade prices:</b> quarterly PPI for agriculture, forestry and fishing, industry and services with their sub-sectors; input prices for production; transport prices; export and import prices in US dollars; terms of trade. Annual figures in the statistical yearbook.</li>
+        <li><b>Not published:</b> seasonally adjusted series, goods and services, energy, CPI excluding food and energy, food and non-alcoholic beverages, contributions to CPI (only some groups&rsquo; impact, in the release text), an all-economy PPI.</li>
+      </ul>
+      <h3>Weights, % of CPI</h3>
+      <div class="jg-tablewrap">
+        <table id="weights-table" data-source="vn_cpi_weights" data-row-key="series">
+          <thead><tr><th data-field="label">Group</th><th data-field="w2014">2014 basket</th><th data-field="w2024">2024 basket</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p>The 2014 weights are from NSO&rsquo;s 2019 press release on the 2015&ndash;2020 method; the 2024 weights from its January 2026 press release on the 2025&ndash;2030 method, read off the infographic in which NSO published them. The 2019-basket weights (2020 to October 2025) were not found in any NSO table.</p>
+      <h3>Bases and breaks</h3>
+      <p>The base-year index is on 2019 = 100 from January 2020 to October 2025 in the monthly releases and on 2024 = 100 from November 2025; the yearbook database restates all of 2025 on 2024 = 100. NSO links its y/y and other rates across the change. This page does not chain the two bases into one index.</p>
+      <h3>Releases</h3>
+      <p>NSO releases the CPI on the 3rd of the following month, weekends included, around 09:00 Hanoi time (10:00 Singapore), with its socio-economic press conference (Decree 13/2026, from the April 2026 index). Until July 2024 the CPI came out on the 29th of the month itself; from August 2024 to March 2026, on the 6th of the following month. Quarterly producer and trade prices come with the CPI in quarter-end months.</p>
+      <h3>Data</h3>
+      <p>NSO monthly CPI workbooks (www.nso.gov.vn, from December 2021), NSO&rsquo;s PX-Web yearbook database (pxweb.nso.gov.vn) for the history, NSO&rsquo;s socio-economic report tables for quarterly prices, and the IMF CPI dataset for the long headline series. Built by the AsiaDecoded/asia-vitals pipeline (data/vn/cpi, data/vn/ppi), which fetches only on NSO release days.</p>
+    </article>
+  </section>
+</div>
