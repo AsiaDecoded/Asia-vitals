@@ -1,16 +1,11 @@
-# Round 5: layouts of multi-dimension and SA tables
-csv_A030104015_00 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=220&funid=A030104015&ymf=11501&ymt=11509&kind=21&type=0&cycle=1&outmode=12&outkind=1&deflst=2&compmode=00
-csv_A030104015_1 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=220&funid=A030104015&ymf=11501&ymt=11509&kind=21&type=0&cycle=1&outmode=12&outkind=1&deflst=2&compmode=1
-csv_A030104015_2 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=220&funid=A030104015&ymf=11501&ymt=11509&kind=21&type=0&cycle=1&outmode=12&outkind=1&deflst=2&compmode=2
-csv_A030601015_00 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=220&funid=A030601015&ymf=11501&ymt=11509&kind=21&type=0&cycle=1&outmode=12&outkind=1&deflst=2&compmode=00
-csv_A030601015_1 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=220&funid=A030601015&ymf=11501&ymt=11509&kind=21&type=0&cycle=1&outmode=12&outkind=1&deflst=2&compmode=1
-csv_A030601015_2 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=220&funid=A030601015&ymf=11501&ymt=11509&kind=21&type=0&cycle=1&outmode=12&outkind=1&deflst=2&compmode=2
-csv_A030106015_00 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=220&funid=A030106015&ymf=11501&ymt=11509&kind=21&type=0&cycle=1&outmode=12&outkind=1&deflst=2&compmode=00
-csv_A030106015_1 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=220&funid=A030106015&ymf=11501&ymt=11509&kind=21&type=0&cycle=1&outmode=12&outkind=1&deflst=2&compmode=1
-csv_A030106015_2 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=220&funid=A030106015&ymf=11501&ymt=11509&kind=21&type=0&cycle=1&outmode=12&outkind=1&deflst=2&compmode=2
-csv_A030102015_00 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=220&funid=A030102015&ymf=11501&ymt=11509&kind=21&type=0&cycle=1&outmode=12&outkind=1&deflst=2&compmode=00
-csv_A030102015_1 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=220&funid=A030102015&ymf=11501&ymt=11509&kind=21&type=0&cycle=1&outmode=12&outkind=1&deflst=2&compmode=1
-csv_A030102015_2 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=220&funid=A030102015&ymf=11501&ymt=11509&kind=21&type=0&cycle=1&outmode=12&outkind=1&deflst=2&compmode=2
-csv_A030101025_00 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=220&funid=A030101025&ymf=10201&ymt=11509&kind=21&type=0&cycle=1&outmode=12&outkind=1&deflst=2&compmode=00
-csv_A030101015_full https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=220&funid=A030101015&ymf=7001&ymt=11509&kind=21&type=0&cycle=1&outmode=12&outkind=1&deflst=2&compmode=2
-csv_A030701015_00 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=220&funid=A030701015&ymf=11001&ymt=11509&kind=21&type=0&cycle=1&outmode=12&outkind=1&deflst=2&compmode=00
+# Round 7: price database table list; price statistics monthly
+tree_7703 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=130&x=2018&id=A03
+tree_25563 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=130&x=2018&id=A0301
+tree_12321 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=132&x=2020&max=60&id=A03
+tree_27847 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=131&x=2019&max=50&day=7&id=A03
+tree_19522 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=139&x=2027&id=a03
+tree_24990 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=100&funid=queryfld
+tree_5706 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=210&x=2098&funid=queryfld
+pub_sep https://eng.stat.gov.tw/News_Content.aspx?n=2328&s=236683
+pub_list https://www.stat.gov.tw/News.aspx?n=2668&sms=10965
+cn_pubs https://www.stat.gov.tw/cl.aspx?n=2663
