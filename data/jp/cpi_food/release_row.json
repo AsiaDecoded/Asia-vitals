@@ -1,0 +1,30 @@
+[
+ {
+  "code": "F2026-09",
+  "label": "Sep 2026",
+  "latest_month": "2026-09-01",
+  "weights": {
+   "2010": {
+    "food": 2525.0,
+    "alcohol": 125.0,
+    "eating_out": 532.0
+   },
+   "2015": {
+    "food": 2623.0,
+    "alcohol": 119.0,
+    "eating_out": 521.0
+   },
+   "2020": {
+    "food": 2626,
+    "alcohol": 119,
+    "eating_out": 460
+   },
+   "2025": {
+    "food": 2754,
+    "alcohol": 111,
+    "eating_out": 508
+   }
+  },
+  "processed_at": "2026-10-29T02:38:11Z"
+ }
+]
