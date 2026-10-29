@@ -123,6 +123,17 @@ def _sheet_rows(data):
     return [s.row_values(i) for i in range(s.nrows)]
 
 
+def _sheet_rows_all(data):
+    """Rows of every sheet in a workbook (xlsx or xls)."""
+    if data[:4] == b"PK\x03\x04":
+        import openpyxl
+        wb = openpyxl.load_workbook(io.BytesIO(data), read_only=True, data_only=True)
+        return [[list(r) for r in ws.iter_rows(values_only=True)] for ws in wb.worksheets]
+    import xlrd
+    book = xlrd.open_workbook(file_contents=data)
+    return [[s.row_values(i) for i in range(s.nrows)] for s in book.sheets()]
+
+
 def _norm(x):
     s = re.sub(r"\s+", "", str(x if x is not None else ""))
     return re.sub(r"\([a-z]\)$|（[a-z]）$", "", s)
