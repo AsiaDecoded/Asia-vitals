@@ -3,10 +3,18 @@
   "code": "F2026-09",
   "label": "Sep 2026",
   "latest_month": "2026-09-01",
-  "basis": "published",
-  "series_id": "JP Statistics Bureau COICOP classification index, 01",
+  "basis": "calculated 2011-2020, published from 2021",
+  "series_id": "JP COICOP 01: Statistics Bureau COICOP classification index from 2021; before, Food less alcohol and eating out, plus health supplements",
+  "check": {
+   "vs_published_2021_2025_max_pp": 0.118,
+   "weights": {
+    "2010": 1904.0,
+    "2015": 2023.0,
+    "2020": 2082
+   }
+  },
   "report": "2026-09",
   "weight_2025": 2163.0,
-  "processed_at": "2026-10-29T06:22:59Z"
+  "processed_at": "2026-10-29T06:41:07Z"
  }
 ]

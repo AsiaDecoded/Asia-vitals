@@ -4,6 +4,14 @@
   "label": "Sep 2026",
   "latest_month": "2026-09-01",
   "weights": {
+   "2010": {
+    "coicop01": 1904.0,
+    "energy": 772.0
+   },
+   "2015": {
+    "coicop01": 2023.0,
+    "energy": 784.0
+   },
    "2020": {
     "coicop01": 2083,
     "energy": 712
@@ -13,6 +21,6 @@
     "energy": 749
    }
   },
-  "processed_at": "2026-10-29T06:32:55Z"
+  "processed_at": "2026-10-29T06:41:39Z"
  }
 ]
