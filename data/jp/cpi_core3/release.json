@@ -2,15 +2,27 @@
  "code": "K2026-09",
  "label": "Sep 2026",
  "latest_month": "2026-09-01",
- "processed_at": "2026-10-27T07:26:07Z",
- "rows": 129,
- "warnings": [],
- "fingerprint": "b8fad4003bf72561",
- "long_rows": 129,
+ "weights": {
+  "2020": {
+   "coicop01": 2083,
+   "energy": 712
+  },
+  "2025": {
+   "coicop01": 2163,
+   "energy": 749
+  }
+ },
+ "processed_at": "2026-10-29T06:32:55Z",
+ "rows": 69,
+ "warnings": [
+  "y/y vs combined index, same base: max gap 0.16pp"
+ ],
+ "fingerprint": "552128ae6fe1806c",
+ "long_rows": 69,
  "history": [
   {
    "code": "K2026-09",
-   "processed_at": "2026-10-27T07:26:07Z"
+   "processed_at": "2026-10-29T06:32:55Z"
   }
  ]
 }
