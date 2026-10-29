@@ -9,6 +9,10 @@ raw/jp/cpi_contrib/ and only new months are downloaded.
 Series (national, percentage points): all items, fresh food, energy, goods, services, and
 goods less fresh food and energy = goods - fresh food - energy (all three published).
 
+Also writes jp_cpi_groups.csv: weight, y/y and contribution to the all-items y/y for the headline and core
+measures, food and energy with the energy items, the 10 major groups with selected subgroups, and goods and
+services (national, every month), as published in Table 5.
+
 Also writes jp_cpi_items.csv: every individual item (not categories) in each of the last 12 months' Table 5,
 national, with its weight, y/y, m/m and published contribution to the all-items y/y. English item
 names come from the e-Stat API's English metadata for the 2025-base CPI table.
@@ -150,6 +154,83 @@ def parse(data):
                 except (TypeError, ValueError):
                     found[key] = None
     return found
+
+
+# Table 5 categories kept for the heat and contribution tables: name in the table, key, English label,
+# block (top: headline and core measures with food and energy; div: the 10 major groups; gs: goods and
+# services), parent key (for rows shown under another row). The first row with that name is used.
+GROUPS = [
+    ("総合", "all", "All items", "top", None),
+    ("生鮮食品を除く総合", "core", "Core (less fresh food)", "top", None),
+    ("生鮮食品及びエネルギーを除く総合", "core1", "Core 1 (less fresh food and energy)", "top", None),
+    ("生鮮食品", "fresh_food", "Fresh food", "top", None),
+    ("生鮮食品を除く食料", "food_ex_fresh", "Food less fresh food", "top", None),
+    ("エネルギー", "energy", "Energy", "top", None),
+    ("電気代", "electricity", "Electricity", "top", "energy"),
+    ("都市ガス代", "city_gas", "City gas", "top", "energy"),
+    ("プロパンガス", "lp_gas", "LP gas", "top", "energy"),
+    ("灯油", "kerosene", "Kerosene", "top", "energy"),
+    ("ガソリン", "gasoline", "Gasoline", "top", "energy"),
+    ("食料", "d_food", "Food", "div", None),
+    ("外食", "d_eating_out", "Eating out", "div", "d_food"),
+    ("住居", "d_housing", "Housing", "div", None),
+    ("家賃", "d_rent", "Rent (incl. imputed rent)", "div", "d_housing"),
+    ("持家の帰属家賃", "d_imputed_rent", "Imputed rent", "div", "d_housing"),
+    ("設備修繕・維持", "d_repairs", "Repairs and maintenance", "div", "d_housing"),
+    ("光熱・水道", "d_fuel", "Fuel, light and water", "div", None),
+    ("家具・家事用品", "d_furniture", "Furniture and household goods", "div", None),
+    ("被服及び履物", "d_clothing", "Clothing and footwear", "div", None),
+    ("保健医療", "d_medical", "Medical care", "div", None),
+    ("保健医療サービス", "d_medical_services", "Medical services", "div", "d_medical"),
+    ("交通・通信", "d_transport", "Transport and communication", "div", None),
+    ("交通", "d_public_transport", "Public transport", "div", "d_transport"),
+    ("自動車等関係費", "d_motoring", "Motoring costs", "div", "d_transport"),
+    ("通信", "d_communication", "Communication", "div", "d_transport"),
+    ("教育", "d_education", "Education", "div", None),
+    ("授業料等", "d_tuition", "Tuition fees", "div", "d_education"),
+    ("教養娯楽", "d_culture", "Culture and recreation", "div", None),
+    ("教養娯楽サービス", "d_rec_services", "Recreational services", "div", "d_culture"),
+    ("諸雑費", "d_misc", "Miscellaneous", "div", None),
+    ("財", "d_goods", "Goods", "gs", None),
+    ("サービス", "d_services", "Services", "gs", None),
+    ("持家の帰属家賃を除くサービス", "d_services_ex_rent", "Services less imputed rent", "gs", None),
+]
+GROUPS_VERSION = 1
+
+
+def parse_groups(data):
+    """{key: {weight, yoy, contrib}} for the GROUPS rows, national, from one Table 5 file (either layout)."""
+    rows = _sheet_rows(data)
+    jw = jy = jc = None
+    for r in rows[:20]:
+        for j, c in enumerate(r):
+            k = _norm(c)
+            if jw is None and k.startswith("ウエイト"):
+                jw = j
+            if jy is None and k == "前年同月比":
+                jy = j
+            if jc is None and "前年同月比に対する寄与度" in k:
+                jc = j
+    if None in (jw, jy, jc):
+        raise ValueError("weight, y/y or contribution column not found")
+
+    def num(v):
+        try:
+            return float(v)
+        except (TypeError, ValueError):
+            return None
+    by_name = {g[0]: g for g in GROUPS}
+    out = {}
+    for r in rows:
+        if len(r) <= max(jw, jy, jc):
+            continue
+        for c in r[:jw]:
+            name = _norm(c) if isinstance(c, str) else ""
+            g = by_name.get(name)
+            if g and g[1] not in out:
+                out[g[1]] = {"weight": num(r[jw]), "yoy": num(r[jy]), "contrib": num(r[jc])}
+                break
+    return out
 
 
 def parse_items(data):
@@ -317,7 +398,8 @@ def update(from_dir=None, **_):
     latest = max(table)
     if not new and state.get("latest_month") == latest and not from_dir and (OUT / "jp_cpi_items.csv").exists() \
             and state.get("items_months") == min(12, len(table)) \
-            and state.get("diffusion_months") == len(table):
+            and state.get("diffusion_months") == len(table) \
+            and state.get("groups_version") == GROUPS_VERSION:
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {latest[:7]})"}
 
     errors, warnings = _checks(table)
@@ -385,6 +467,29 @@ def update(from_dir=None, **_):
         w.writerow(["date"] + cols)
         for d in sorted(diff):
             w.writerow([d] + [diff[d][c] for c in cols])
+    groups, group_errors = {}, []
+    for d in sorted(table):
+        try:
+            groups[d] = parse_groups(gzip.decompress(have[d[:7]].read_bytes()))
+        except Exception as e:  # noqa: BLE001
+            group_errors.append(f"{d[:7]}: {e}")
+    if latest not in groups or any(groups[latest].get(k) is None for _, k, *_r in GROUPS):
+        raise CheckFailed(["category rows could not all be read from the latest Table 5"] + group_errors[:5])
+    if group_errors:
+        warnings.append(f"category rows missing for {len(group_errors)} month(s): " + "; ".join(group_errors[:3]))
+    lat = groups[latest]
+    if abs(lat["d_goods"]["contrib"] + lat["d_services"]["contrib"] - lat["all"]["yoy"]) > 0.1:
+        raise CheckFailed([f"{latest[:7]}: goods + services contributions don't add to the all-items y/y"])
+    with open(OUT / "jp_cpi_groups.csv", "w", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["date", "series", "label", "order", "block", "parent", "weight", "yoy", "contrib_yoy"])
+        for d in sorted(groups):
+            for i, (_, k, lab, blk, par) in enumerate(GROUPS):
+                v = groups[d].get(k)
+                if not v:
+                    continue
+                w.writerow([d, k, lab, i, blk, par or ""] +
+                           ["" if v[m] is None else v[m] for m in ("weight", "yoy", "contrib")])
     with open(OUT / "jp_cpi_items.csv", "w", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
         w.writerow(["date", "code", "name", "name_ja", "weight", "index", "mom", "yoy", "contrib_mom", "contrib_yoy"])
@@ -394,6 +499,7 @@ def update(from_dir=None, **_):
                            ["" if i[k] is None else i[k] for k in ("weight", "index", "mom", "yoy", "contrib_mom", "contrib_yoy")])
     write_release(OUT, release, warnings, len(out), {"long_rows": nlong, "new_months": new, "items": len(items),
                                                  "items_months": len(item_months),
-                                                 "diffusion_months": len(diff)})
+                                                 "diffusion_months": len(diff),
+                                                 "groups_version": GROUPS_VERSION})
     return {"updated": True, "code": code, "summary": f"{release['label']}: {len(table)} months, {len(new)} new",
             "warnings": warnings}

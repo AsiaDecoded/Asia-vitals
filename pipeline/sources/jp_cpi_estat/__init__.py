@@ -55,7 +55,20 @@ SERIES = [
     ("0906", "core_core_sa", "Less fresh food and energy, seasonally adjusted", "sa"),
     ("0921", "goods_sa", "Goods, seasonally adjusted", "sa"),
     ("0924", "services_sa", "Services, seasonally adjusted", "sa"),
+    # services and energy detail (subgroups and items), for the services and energy charts
+    ("0110", "medical_services", "Medical services", "detail"),
+    ("0112", "public_transport", "Public transport", "detail"),
+    ("7070", "airfares", "Airfares", "detail"),
+    ("0047", "private_rent", "Private rent", "detail"),
+    ("0050", "imputed_rent", "Imputed rent", "detail"),
+    ("0232", "other_services", "Other services", "detail"),
+    ("3500", "electricity", "Electricity", "detail"),
+    ("3600", "city_gas", "City gas", "detail"),
+    ("3612", "lp_gas", "LP gas", "detail"),
+    ("3701", "kerosene", "Kerosene", "detail"),
+    ("7301", "gasoline", "Gasoline", "detail"),
 ]
+DETAIL = [k for _, k, _, g in SERIES if g == "detail"]
 BY_CODE = {c: (k, lab, g, i) for i, (c, k, lab, g) in enumerate(SERIES)}
 REQUIRED = {"national": ["all", "core", "core_core", "ex_food_energy", "goods", "services", "food", "energy"],
             "tokyo": ["all", "core", "core_core"]}
@@ -121,6 +134,10 @@ def _checks(tidy, state):
             for meas in ("index", "mom", "yoy"):
                 if v.get(meas) is None:
                     errors.append(f"{area} {key} {meas} missing for {latest}")
+    # 1b. Detail series: warn (not fail) if the 2025-base table doesn't carry a code.
+    for key in DETAIL:
+        if tidy.get(("national", key), {}).get(nat, {}).get("yoy") is None:
+            warnings.append(f"national {key} y/y missing for {nat}")
     # 2. Never go backwards.
     if state.get("national_month") and nat < state["national_month"]:
         errors.append(f"latest national month {nat} is before the one already stored ({state['national_month']})")
