@@ -43,6 +43,7 @@ SPEC = [
     # South Korea (y/y calculated from the published index in the Korea pipeline)
     ("KR", "cpi", "kr/cpi/kr_cpi.csv", {"area": "national", "series": "all"}, "yoy", CALC, "All items"),
     ("KR", "food", "kr/cpi/kr_cpi.csv", {"area": "national", "series": "div_A"}, "yoy", CALC, "Food and non-alcoholic beverages"),
+    ("KR", "energy", "kr/cpi/kr_cpi.csv", {"area": "national", "series": "energy"}, "yoy", CALC, "Energy: the ministry's nine energy items at published weights (Dec 2023-)"),
     ("KR", "core", "kr/cpi/kr_cpi.csv", {"area": "national", "series": "ex_food_energy"}, "yoy", CALC, "Excl. food and energy"),
     # Official core: the Bank of Korea's measure (excl. food and energy), the same series as core
     ("KR", "official_core", "kr/cpi/kr_cpi.csv", {"area": "national", "series": "ex_food_energy"}, "yoy", CALC, "Excl. food and energy (Bank of Korea's core)"),

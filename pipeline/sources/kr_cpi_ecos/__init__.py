@@ -68,7 +68,12 @@ SERIES = [
     ("city_gas", "901Y009", "D05201", "City gas", "items"),
     ("petrol", "901Y009", "G02101", "Petrol", "items"),
     ("diesel", "901Y009", "G02102", "Diesel", "items"),
+    ("district_heating", "901Y009", "D05302", "District heating", "items"),
 ]
+# Energy as the ministry defines it (release appendix: "에너지(9개): 석유류, 전기료, 도시가스, 지역난방비"); no index is
+# published, so it is calculated from the nine item indices at their published 2022 weights (75.8 per 1,000).
+PETROLEUM_ITEMS = ["G02101", "G02102", "G02103", "D05301", "D05202", "D05303"]  # petrol, diesel, vehicle LPG, kerosene, cooking LPG, butane
+ENERGY_ITEMS = PETROLEUM_ITEMS + ["D05101", "D05201", "D05302"]  # + electricity, city gas, district heating
 REQUIRED = ["all", "ex_food_energy", "ex_agri_oil", "goods", "services", "fresh", "petroleum", "utilities"]
 # Contribution parts (special classification); industrial excl. petroleum = 212 minus 2125.
 PARTS = [("agri", "Agricultural, livestock and fishery products"), ("industrial_ex_oil", "Industrial products excl. petroleum"),
@@ -152,6 +157,16 @@ def _lowe(store, w, codes, table, latest, errors, label):
     if not worst < 0.03:
         errors.append(f"{label}: weighted indices miss the published all-items index by {worst:.3f} (limit 0.03)")
     return c, worst
+
+
+def _aggregate(store, w, codes, latest):
+    """Lowe aggregate of item indices on the current basket: sum w_i I_i,t / B_i, set to 100 at LINK (B_i: 2022 average)."""
+    t = store["901Y009"]
+    base = _months(BASE_YEAR + "01", BASE_YEAR + "12")
+    b = {k: sum(t[k]["values"][m] for m in base) / 12 for k in codes}
+    den = sum(w[k] * t[k]["values"][LINK] / b[k] for k in codes)
+    return {ym: sum(w[k] * t[k]["values"][ym] / b[k] for k in codes) / den * 100
+            for ym in _months(LINK, latest) if all(ym in t[k]["values"] for k in codes)}
 
 
 def _write_csv(path, cols, rows):
@@ -267,6 +282,23 @@ def update(**_):
             diff.append({"date": _date(ym), "items": n, "rising": up, "falling": down, "unchanged": flat,
                          "share_rising": round(up / n * 100, 1), "share_falling": round(down / n * 100, 1),
                          "diffusion": round((up - down) / n * 100, 1)})
+    # Energy (calculated). Check: the same method on the six petroleum items reproduces the published petroleum
+    # products index (901Y010 2125) y/y within 0.15pp every month from Dec 2023.
+    energy = {}
+    miss = [k for k in ENERGY_ITEMS if k not in w9 or k not in items9]
+    if miss:
+        errors.append(f"energy items missing: {miss}")
+    else:
+        ew = sum(w9[k] for k in ENERGY_ITEMS)
+        if abs(ew + w9.get("A", 0) + _weights(store, "901Y010").get("DB", 0) - 1000) > 0.15:
+            errors.append(f"energy weight {ew:.1f} + food {w9.get('A')} + core {_weights(store, '901Y010').get('DB')} != 1000")
+        pet = _aggregate(store, w9, PETROLEUM_ITEMS, latest)
+        pub = store["901Y010"]["2125"]["values"]
+        for ym in _months(_shift(LINK, 12), latest):
+            a, b = _yoy(pet, ym), _yoy(pub, ym)
+            if a is None or b is None or abs(a - b) > 0.15:
+                errors.append(f"petroleum check {ym}: items give {a}, published {b}")
+        energy = {ym: round(v, 3) for ym, v in _aggregate(store, w9, ENERGY_ITEMS, latest).items()}
     if errors:
         raise CheckFailed(errors)
 
@@ -276,6 +308,9 @@ def update(**_):
         for ym in sorted(v):
             rows.append({"date": _date(ym), "area": "national", "series": key, "label": lab, "group": grp, "order": o,
                          "index": v[ym], "yoy": _yoy(v, ym)})
+    for ym in sorted(energy):
+        rows.append({"date": _date(ym), "area": "national", "series": "energy", "label": "Energy (calculated)", "group": "headline",
+                     "order": len(SERIES), "index": energy[ym], "yoy": _yoy(energy, ym) if _shift(ym, -12) >= LINK else None})
     rows.sort(key=lambda r: (r["date"], r["order"]))
     blob = json.dumps([rows[-2000:], contrib[-120:], diff[-24:]], sort_keys=True).encode()
     fingerprint = hashlib.sha256(blob).hexdigest()[:16]
@@ -289,7 +324,9 @@ def update(**_):
     wts = {"901Y009": _weights(store, "901Y009"), "901Y010": w10}
     _write_csv(OUT / "kr_cpi_series_weights.csv", ["series", "label", "weight"],
                [{"series": key, "label": lab, "weight": wts[table].get(code)} for key, table, code, lab, _g in SERIES
-                if wts[table].get(code) is not None])
+                if wts[table].get(code) is not None]
+               + [{"series": "energy", "label": "Energy (sum of the nine items' published weights)",
+                   "weight": round(sum(w9[k] for k in ENERGY_ITEMS), 1)}])
     _write_csv(OUT / "kr_cpi_contrib.csv", ["date", "series", "label", "order", "contrib_yoy"], contrib)
     _write_csv(OUT / "kr_cpi_items.csv", ["date", "code", "name", "weight", "index", "yoy", "contrib_yoy"], items_rows)
     _write_csv(OUT / "kr_cpi_diffusion.csv", ["date", "items", "rising", "falling", "unchanged", "share_rising",
