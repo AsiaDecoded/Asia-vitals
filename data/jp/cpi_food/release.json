@@ -2,37 +2,98 @@
  "code": "F2026-09",
  "label": "Sep 2026",
  "latest_month": "2026-09-01",
+ "series_id": "JP_food_nab: 0002 Food less 0041 alcoholic beverages and 0042 eating out",
+ "link_months": [
+  "2015-12-01",
+  "2020-12-01",
+  "2025-12-01"
+ ],
  "weights": {
   "2010": {
    "food": 2525.0,
+   "cereals": 217.0,
+   "fish": 220.0,
+   "meat": 204.0,
+   "dairy_eggs": 106.0,
+   "vegetables": 272.0,
+   "fruits": 97.0,
+   "oils_seasonings": 107.0,
+   "confectionery": 224.0,
+   "prepared_food": 280.0,
+   "beverages": 142.0,
    "alcohol": 125.0,
    "eating_out": 532.0
   },
   "2015": {
    "food": 2623.0,
+   "cereals": 208.0,
+   "fish": 218.0,
+   "meat": 240.0,
+   "dairy_eggs": 118.0,
+   "vegetables": 289.0,
+   "fruits": 104.0,
+   "oils_seasonings": 114.0,
+   "confectionery": 233.0,
+   "prepared_food": 313.0,
+   "beverages": 147.0,
    "alcohol": 119.0,
    "eating_out": 521.0
   },
   "2020": {
-   "food": 2626,
-   "alcohol": 119,
-   "eating_out": 460
+   "food": 2626.0,
+   "cereals": 214.0,
+   "fish": 199.0,
+   "meat": 249.0,
+   "dairy_eggs": 126.0,
+   "vegetables": 285.0,
+   "fruits": 105.0,
+   "oils_seasonings": 121.0,
+   "confectionery": 236.0,
+   "prepared_food": 352.0,
+   "beverages": 163.0,
+   "alcohol": 119.0,
+   "eating_out": 460.0
   },
   "2025": {
-   "food": 2754,
-   "alcohol": 111,
-   "eating_out": 508
+   "food": 2754.0,
+   "cereals": 252.0,
+   "fish": 179.0,
+   "meat": 242.0,
+   "dairy_eggs": 131.0,
+   "vegetables": 276.0,
+   "fruits": 106.0,
+   "oils_seasonings": 120.0,
+   "confectionery": 267.0,
+   "prepared_food": 391.0,
+   "beverages": 170.0,
+   "alcohol": 111.0,
+   "eating_out": 508.0
   }
  },
- "processed_at": "2026-10-29T02:38:11Z",
+ "checks": {
+  "recombination_max_gap": 0.065,
+  "recombination_tolerance": 0.15,
+  "vs_same_base_max_pp": 1.44,
+  "subgroup_weight_gaps": {
+   "2010": 1.0,
+   "2015": 1.0,
+   "2020": 3.0,
+   "2025": -1.0
+  }
+ },
+ "processed_at": "2026-10-29T05:20:29Z",
  "rows": 189,
- "warnings": [],
- "fingerprint": "a8f8e79b25535e50",
+ "warnings": [
+  "subgroup weights less Food weight, by base: 2010 +1, 2015 +1, 2020 +3, 2025 -1",
+  "subgroup recombination: max gap 0.065 index points (2017-11), tolerance 0.15",
+  "chained y/y vs parts' published y/y combined on one base: max difference 1.44pp (2021-09)"
+ ],
+ "fingerprint": "8bc55237c9dabaf3",
  "long_rows": 189,
  "history": [
   {
    "code": "F2026-09",
-   "processed_at": "2026-10-29T02:38:11Z"
+   "processed_at": "2026-10-29T05:20:29Z"
   }
  ]
 }
