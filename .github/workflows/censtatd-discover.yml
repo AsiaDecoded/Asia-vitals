@@ -1,0 +1,41 @@
+name: C&SD discovery (manual)
+
+# One-off helper: probes Hong Kong price data (C&SD web-table API, data.gov.hk catalogue,
+# press releases, HKMA, IMF/OECD/DBnomics fallbacks) and saves the raw responses to the
+# "discovery" branch, under discovery/censtatd.
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-hk]
+    paths:
+      - pipeline/tools/censtatd_discover.py
+      - .github/workflows/censtatd-discover.yml
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe Hong Kong sources
+        run: python -I pipeline/tools/censtatd_discover.py discovery/censtatd5 round5
+      - name: Push results to the discovery branch
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mv discovery /tmp/discovery
+          if git fetch origin discovery; then
+            git checkout -B discovery origin/discovery
+          else
+            git checkout --orphan discovery && git rm -rf --quiet --cached .
+          fi
+          mkdir -p discovery && rm -rf discovery/censtatd5 && cp -r /tmp/discovery/censtatd5 discovery/
+          git add discovery/censtatd5
+          git commit -m "C&SD discovery"
+          git push origin discovery

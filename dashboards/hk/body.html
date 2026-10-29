@@ -1,0 +1,220 @@
+<div class="jg">
+  <header class="jg-head" id="top">
+    <h1>Hong Kong</h1>
+  </header>
+
+  <nav class="jg-tabs" role="tablist" aria-label="Sections">
+    <button role="tab" data-tab="inflation" aria-selected="true">Inflation</button>
+    <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
+  </nav>
+
+  <section class="jg-page" id="inflation" role="tabpanel">
+    <div class="jg-pagehead">
+      <div class="jg-note" style="margin:0"><span id="cpi-month" class="dash-skeleton" style="color: var(--color-fg)" data-source="hk_cpi_latest" data-field="month" data-row="0">—</span></div>
+      <p class="jg-take" id="cpi-takeaway"><span class="dash-skeleton">—</span></p>
+    </div>
+
+    <section class="jg-tiles" id="cpi-headline" aria-label="Headline inflation">
+      <div class="jg-card jg-tile"><div class="lbl">Composite CPI, y/y</div>
+        <div class="val"><span data-source="hk_cpi_latest" data-field="all_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="hk_cpi_latest" data-field="all_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Underlying CPI, y/y</div>
+        <div class="val"><span data-source="hk_cpi_latest" data-field="underlying_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="hk_cpi_latest" data-field="underlying_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Food, y/y</div>
+        <div class="val"><span data-source="hk_cpi_latest" data-field="food_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="hk_cpi_latest" data-field="food_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Housing, y/y</div>
+        <div class="val"><span data-source="hk_cpi_latest" data-field="housing_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="hk_cpi_latest" data-field="housing_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Electricity, gas and water, y/y</div>
+        <div class="val"><span data-source="hk_cpi_latest" data-field="egw_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="hk_cpi_latest" data-field="egw_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Import prices, y/y</div>
+        <div class="val"><span data-source="hk_ppi_latest" data-field="import_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub"><span data-source="hk_ppi_latest" data-field="month" data-row="0">—</span>; prior month <span data-source="hk_ppi_latest" data-field="import_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">PPI, manufacturing, y/y</div>
+        <div class="val"><span data-source="hk_ppi_latest" data-field="ppi_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub"><span data-source="hk_ppi_latest" data-field="quarter" data-row="0">—</span>; prior quarter <span data-source="hk_ppi_latest" data-field="ppi_yoy_prev" data-row="0">—</span>%</div></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="ppi-cpi" data-periods="ml" data-def="120">
+        <h2>Hong Kong inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="ppi-cpi-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="ppi-cpi-chart" data-source="hk_cpi hk_ppi"></div>
+        <div class="ad-foot"><span>Source: Census and Statistics Department, Hong Kong</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-measures" data-periods="ml" data-def="120">
+        <h2>Hong Kong consumer inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-measures-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-measures-chart" data-source="hk_cpi"></div>
+        <div class="ad-foot"><span>Source: Census and Statistics Department, Hong Kong</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-momentum" data-periods="ml" data-def="120">
+        <div class="jg-cardhead">
+          <div><h2>Hong Kong CPI momentum</h2></div>
+          <div class="jg-seg" id="cpi-mom-seg" role="group" aria-label="Index">
+            <button data-s="composite" aria-pressed="true">Composite</button><button data-s="a">CPI(A)</button><button data-s="b">CPI(B)</button><button data-s="c">CPI(C)</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units">% average m/m over 3 months, seasonally adjusted</span><div class="jg-legend" id="cpi-momentum-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-momentum-chart" data-source="hk_cpi_sa"></div>
+        <div class="ad-foot"><span>Source: Census and Statistics Department, Hong Kong</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-ym" data-def="60">
+        <h2>Hong Kong consumer inflation</h2>
+        <div class="ad-top"><span class="ad-units">%</span><div class="jg-legend" id="cpi-ym-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-ym-chart" data-source="hk_cpi"></div>
+        <div class="ad-foot"><span>Source: Census and Statistics Department, Hong Kong</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="div-heat">
+        <h2>Hong Kong consumer inflation, % y/y</h2>
+        <div class="ad-top"><span class="ad-units">% y/y; weight, % of Composite CPI (2025 weights)</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-tablewrap">
+          <table id="div-heat-table" data-source="hk_cpi hk_cpi_weights"></table>
+        </div>
+        <div class="ad-foot"><span>Source: Census and Statistics Department, Hong Kong</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-ctab">
+        <h2>Hong Kong CPI contributions, ppt</h2>
+        <div class="ad-top"><span class="ad-units">Contribution to Composite CPI y/y, ppt, as published</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-tablewrap">
+          <table id="ctab-table" data-source="hk_cpi_contrib"></table>
+        </div>
+        <div class="ad-foot"><span>Source: Census and Statistics Department, Hong Kong, Monthly Report on the CPI</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card" id="cpi-contrib" data-periods="none">
+      <h2>Hong Kong consumer inflation contribution</h2>
+      <div class="ad-top"><span class="ad-units">ppt</span><div class="jg-legend" id="cpi-contrib-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="cpi-contrib-chart" data-source="hk_cpi_contrib"></div>
+      <div class="ad-foot"><span>Source: Census and Statistics Department, Hong Kong, Monthly Report on the CPI</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-sa" data-periods="none">
+        <div class="jg-cardhead">
+          <div><h2>Hong Kong CPI, seasonally adjusted</h2></div>
+          <div class="jg-seg" id="cpi-sa-seg" role="group" aria-label="Measure">
+            <button data-s="all" aria-pressed="true">All items</button><button data-s="food">Food</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units">% m/m, seasonally adjusted</span><div class="jg-legend" id="cpi-sa-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-sa-chart" data-source="hk_cpi_sa"></div>
+        <div class="ad-foot"><span>Source: Census and Statistics Department, Hong Kong, Monthly Report on the CPI</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-hh" data-periods="ml" data-def="120">
+        <h2>Hong Kong CPI by household expenditure group</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-hh-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-hh-chart" data-source="hk_cpi"></div>
+        <div class="ad-foot"><span>Source: Census and Statistics Department, Hong Kong</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-fe" data-def="120">
+        <h2>Hong Kong food and energy CPI</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-fe-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-fe-chart" data-source="hk_cpi"></div>
+        <div class="ad-foot"><span>Source: Census and Statistics Department, Hong Kong</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-housing" data-def="120">
+        <h2>Hong Kong housing CPI</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-housing-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-housing-chart" data-source="hk_cpi"></div>
+        <div class="ad-foot"><span>Source: Census and Statistics Department, Hong Kong</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-sections" data-def="60">
+        <h2>Hong Kong consumer inflation by section</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-sections-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-sections-chart" data-source="hk_cpi"></div>
+        <div class="ad-foot"><span>Source: Census and Statistics Department, Hong Kong</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-coicop" data-periods="none">
+        <h2>Hong Kong consumer inflation by COICOP division</h2>
+        <div class="ad-top"><span class="ad-units" id="cpi-coicop-units">% y/y</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-coicop-chart" data-source="hk_cpi"></div>
+        <div class="ad-foot"><span>Source: Census and Statistics Department, Hong Kong</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card" id="cpi-groups" data-periods="none">
+      <h2>Hong Kong CPI, largest price changes by group</h2>
+      <div class="ad-top"><span class="ad-units" id="cpi-groups-units">% y/y</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="cpi-groups-chart" data-source="hk_cpi hk_cpi_weights"></div>
+      <div class="ad-foot"><span>Source: Census and Statistics Department, Hong Kong</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="ppi-parts" data-periods="ml" data-def="120">
+        <h2>Hong Kong producer prices</h2>
+        <div class="ad-top"><span class="ad-units">% y/y, quarterly</span><div class="jg-legend" id="ppi-parts-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="ppi-parts-chart" data-source="hk_ppi"></div>
+        <div class="ad-foot"><span>Source: Census and Statistics Department, Hong Kong</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="trade-prices" data-periods="ml" data-def="120">
+        <h2>Hong Kong import and export prices</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="trade-prices-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="trade-prices-chart" data-source="hk_ppi"></div>
+        <div class="ad-foot"><span>Source: Census and Statistics Department, Hong Kong</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card ad-notes" id="chart-notes">
+      <h2>Chart notes</h2>
+      <ol>
+        <li><b>All figures are as published by the Census and Statistics Department (C&amp;SD); none is calculated.</b> Indices are on the October 2019 &ndash; September 2020 = 100 base. Rates are C&amp;SD&rsquo;s, computed by C&amp;SD from indices with more than one decimal; a published 0.0 means a change of less than 0.05%.</li>
+        <li><b>Chart 1, Hong Kong inflation:</b> Composite CPI, the import unit value index (C&amp;SD&rsquo;s monthly measure of import prices; 2024 = 100) and the producer price index for manufacturing (quarterly, 2015 = 100; plotted at the middle month of each quarter), y/y. C&amp;SD publishes no monthly PPI.</li>
+        <li><b>Chart 2, Hong Kong consumer inflation:</b> Composite CPI and the underlying Composite CPI, which nets out the effects of the Government&rsquo;s one-off relief measures (rates concessions, public housing rent waivers, electricity charges subsidies and similar). The underlying series starts in 2007. It is C&amp;SD&rsquo;s own measure and is shown on this page only; it is not the CPI excluding food and energy on the India and Singapore pages, which C&amp;SD does not publish.</li>
+        <li><b>Chart 3, Hong Kong CPI momentum:</b> C&amp;SD&rsquo;s average monthly rate of change in the seasonally adjusted index over the latest three months, for the index chosen above (CPI(A), (B) and (C) from 1981, Composite from 1992). The underlying measure (dashed) is published for the latest 36 months only. C&amp;SD revises seasonally adjusted figures as more data arrive; the page shows the latest vintage.</li>
+        <li><b>Chart 4, Hong Kong consumer inflation:</b> Composite CPI y/y (line) and m/m (bars), not seasonally adjusted.</li>
+        <li><b>Table, Hong Kong consumer inflation:</b> y/y for the latest 13 months by commodity/service section, with selected groups. Weights are C&amp;SD&rsquo;s 2025 expenditure weights for the Composite CPI (used from April 2026), in % of CPI. Each row is coloured on its own range, from green at its lowest rate in the window to red at its highest.</li>
+        <li><b>Table and chart, contributions:</b> the contributions of each section to Composite CPI y/y, in percentage points, as C&amp;SD publishes them in Table 3.05 of each month&rsquo;s Monthly Report on the CPI (food split into meals out and takeaway food, and basic food). Each month is the figure in that month&rsquo;s report; the web reports start with the June 2023 issue. The published parts are rounded to one decimal, so they can differ from the published y/y (the line) by up to 0.2pp. Alcoholic drinks and tobacco, clothing and footwear, durable goods and miscellaneous goods share one colour; the tooltip shows each.</li>
+        <li><b>Chart, seasonally adjusted:</b> C&amp;SD&rsquo;s month-on-month change in the seasonally adjusted Composite CPI and its food component (bars), with the seasonally adjusted index (line), for the 36 months in the latest Monthly Report. C&amp;SD publishes seasonally adjusted indices for all items and food only.</li>
+        <li><b>Chart, by household expenditure group:</b> CPI(A), CPI(B) and CPI(C) cover about 50%, 30% and 10% of households, in the relatively low, medium and relatively high expenditure ranges; the Composite CPI covers all three.</li>
+        <li><b>Food and energy, housing:</b> C&amp;SD&rsquo;s section and group indices. C&amp;SD publishes no energy aggregate; electricity, towngas, and fuels for personal transport equipment are its groups. Some group figures are missing in individual months of 2020&ndash;2023, when C&amp;SD could not collect reliable prices during COVID-19.</li>
+        <li><b>By COICOP division:</b> C&amp;SD&rsquo;s Composite CPI on the international COICOP 2018 classification (13 divisions), latest month.</li>
+        <li><b>Largest price changes by group:</b> the ten groups with the largest y/y increases and the ten with the largest falls in the latest month, out of C&amp;SD&rsquo;s 75 groups, with each group&rsquo;s 2025 weight in the tooltip. These are price changes, not contributions.</li>
+        <li><b>Producer prices:</b> quarterly producer price indices for manufacturing and its industry groupings (HSIC 2.0), y/y. <b>Import and export prices:</b> unit value indices of imports and total exports (2024 = 100), y/y. Unit value indices reflect changes in the mix of goods as well as in prices.</li>
+      </ol>
+    </section>
+  </section>
+
+  <section class="jg-page" id="methodology" role="tabpanel" hidden>
+    <article class="jg-card ad-method" id="method-cpi">
+      <h2>Consumer and producer prices</h2>
+      <p>Hong Kong&rsquo;s consumer price indices are compiled monthly by the Census and Statistics Department (C&amp;SD) from over 40,000 price quotations a month from about 3,500 retail outlets and service providers, and from online outlets used by Hong Kong households. Prices are those consumers pay, including taxes and service charges and taking account of most discounts, subsidies and rebates.</p>
+      <h3>Four indices</h3>
+      <p>C&amp;SD compiles CPI(A), CPI(B) and CPI(C) on the expenditure patterns of households in the relatively low, medium and relatively high expenditure ranges (about 50%, 30% and 10% of households), and the Composite CPI on the combined pattern of all three. The year-on-year change in the Composite CPI is the usual measure of consumer price inflation. All four are on an October 2019 &ndash; September 2020 = 100 base. C&amp;SD also publishes underlying indices, which net out the effects of the Government&rsquo;s one-off relief measures since 2007.</p>
+      <h3>Weights</h3>
+      <p>Until 2020, C&amp;SD updated the expenditure weights every five years from its Household Expenditure Survey (HES). Since 2021 it reviews them every year, using retail sales, restaurant receipts and national accounts data, and applies the new weights (with the previous year as reference period) from the April reference month. The 2024/25 HES was used to revise the 2025 weights, applied from April 2026, together with a revised classification of 75 commodity/service groups (88 before). The page shows the 2025 weights for the Composite CPI as published in Annex 1 to the Monthly Report on the CPI.</p>
+      <ul>
+        <li><b>2025 weights, Composite CPI (% of CPI):</b> food 25.27 (meals out and takeaway food 15.92, basic food 9.35); housing 39.69; electricity, gas and water 2.80; alcoholic drinks and tobacco 0.41; clothing and footwear 2.10; durable goods 3.44; miscellaneous goods 3.13; transport 7.59; miscellaneous services 15.57.</li>
+      </ul>
+      <h3>What C&amp;SD publishes</h3>
+      <ul>
+        <li><b>Indices and rates:</b> index, m/m and y/y for all items and the nine sections (from 1980), the 75 groups (Table E501), and the Composite CPI by COICOP 2018 division (from 2005).</li>
+        <li><b>Contributions:</b> the contribution of each section to Composite CPI y/y in the reference month, in the Monthly Report on the CPI.</li>
+        <li><b>Seasonally adjusted:</b> the average monthly change over the latest three months (full history for the headline indices; 36 months for the underlying), and the seasonally adjusted index and m/m for all items and food (36 months per report).</li>
+        <li><b>Not published:</b> a goods/services split, a CPI excluding food and energy, item-level indices.</li>
+      </ul>
+      <h3>Producer and trade prices</h3>
+      <p>C&amp;SD compiles producer price indices for manufacturing and for selected service industries quarterly (2015 = 100). There is no monthly PPI. Its monthly merchandise trade index numbers include unit value indices of imports and total exports (2024 = 100), which move with prices and with the mix of goods traded.</p>
+      <h3>Releases</h3>
+      <p>C&amp;SD releases the CPI at 16:30 Hong Kong time (16:30 Singapore), around the 20th to 23rd of the following month, on the dates in its published schedule; the data tables and the Monthly Report are updated at the same time. Quarterly PPI is released about ten weeks after the quarter; trade unit value indices about six weeks after the month. The page is refreshed the day after each release.</p>
+      <h3>Data</h3>
+      <p>C&amp;SD web tables 510-60001, 510-60001A, 510-60002, 510-60002A, 510-60003, 510-60004, 520-62001, 520-63001 and 410-51001 to 410-51003 (web-table API, no key); Table E501 (CSV); the web Monthly Report on the CPI (data files behind its tables) and its Annex 1. Built by the AsiaDecoded/asia-vitals pipeline (data/hk/cpi, data/hk/ppi), which fetches only on C&amp;SD release days.</p>
+    </article>
+  </section>
+</div>

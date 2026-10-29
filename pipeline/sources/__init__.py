@@ -20,4 +20,6 @@ SOURCES = [
     "sg_ppi_singstat",
     "kr_cpi_ecos",
     "kr_ppi_ecos",
+    "hk_cpi_censtatd",
+    "hk_ppi_censtatd",
 ]

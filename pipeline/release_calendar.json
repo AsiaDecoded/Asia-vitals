@@ -9,7 +9,9 @@
   "sg_cpi": "SingStat Advance Release Calendar pattern: 23rd, or next working day",
   "sg_ppi": "SingStat Advance Release Calendar pattern: around the 27th-30th",
   "kr_cpi": "Ministry of Data and Statistics 2026 release schedule (mods.go.kr); 2027 expected from pattern",
-  "kr_ppi": "Bank of Korea: no calendar found; pattern: around the 18th-23rd, 06:00 KST"
+  "kr_ppi": "Bank of Korea: no calendar found; pattern: around the 18th-23rd, 06:00 KST",
+  "hk_cpi": "C&SD schedule of regular press releases (censtatd.gov.hk press_release.html, data/en/press_release/press_release_index.json), to Dec 2027",
+  "hk_ppi": "C&SD schedule of regular press releases: PPI for manufacturing (quarterly) and volume and price statistics of external merchandise trade (monthly), to Dec 2027"
  },
  "groups": {
   "jp_cpi": {"label": "Japan CPI (national) and CPI contributions", "sources": ["jp_cpi_estat", "jp_cpi_contrib_estat", "jp_cpi_core3_estat", "jp_cpi_food_estat"], "time_sgt": "07:30", "dates": [
@@ -70,6 +72,41 @@
    {"ref": "2026-11", "date": "2026-12-18", "from": "2026-12-16", "to": "2026-12-23", "status": "expected"},
    {"ref": "2026-12", "date": "2027-01-21", "from": "2027-01-19", "to": "2027-01-26", "status": "expected"},
    {"ref": "2027-01", "date": "2027-02-19", "from": "2027-02-17", "to": "2027-02-24", "status": "expected"},
-   {"ref": "2027-02", "date": "2027-03-19", "from": "2027-03-17", "to": "2027-03-24", "status": "expected"}]}
+   {"ref": "2027-02", "date": "2027-03-19", "from": "2027-03-17", "to": "2027-03-24", "status": "expected"}]},
+  "hk_cpi": {"label": "Hong Kong CPI (C&SD)", "sources": ["hk_cpi_censtatd"], "time_sgt": "16:30", "dates": [
+   {"ref": "2026-10", "date": "2026-11-20", "status": "official"},
+   {"ref": "2026-11", "date": "2026-12-21", "status": "official"},
+   {"ref": "2026-12", "date": "2027-01-22", "status": "official"},
+   {"ref": "2027-01", "date": "2027-02-25", "status": "official"},
+   {"ref": "2027-02", "date": "2027-03-24", "status": "official"},
+   {"ref": "2027-03", "date": "2027-04-21", "status": "official"},
+   {"ref": "2027-04", "date": "2027-05-20", "status": "official"},
+   {"ref": "2027-05", "date": "2027-06-22", "status": "official"},
+   {"ref": "2027-06", "date": "2027-07-22", "status": "official"},
+   {"ref": "2027-07", "date": "2027-08-20", "status": "official"},
+   {"ref": "2027-08", "date": "2027-09-22", "status": "official"},
+   {"ref": "2027-09", "date": "2027-10-22", "status": "official"},
+   {"ref": "2027-10", "date": "2027-11-23", "status": "official"},
+   {"ref": "2027-11", "date": "2027-12-21", "status": "official"}]},
+  "hk_ppi": {"label": "Hong Kong producer prices (quarterly) and import/export unit value indices (monthly)", "sources": ["hk_ppi_censtatd"], "time_sgt": "16:30", "dates": [
+   {"ref": "2026-09 trade prices", "date": "2026-11-12", "status": "official"},
+   {"ref": "2026-Q3 PPI", "date": "2026-12-14", "status": "official"},
+   {"ref": "2026-10 trade prices", "date": "2026-12-17", "status": "official"},
+   {"ref": "2026-11 trade prices", "date": "2027-01-14", "status": "official"},
+   {"ref": "2026-12 trade prices", "date": "2027-02-11", "status": "official"},
+   {"ref": "2026-Q4 PPI", "date": "2027-03-12", "status": "official"},
+   {"ref": "2027-01 trade prices", "date": "2027-03-17", "status": "official"},
+   {"ref": "2027-02 trade prices", "date": "2027-04-15", "status": "official"},
+   {"ref": "2027-03 trade prices", "date": "2027-05-11", "status": "official"},
+   {"ref": "2027-Q1 PPI", "date": "2027-06-15", "status": "official"},
+   {"ref": "2027-04 trade prices", "date": "2027-06-17", "status": "official"},
+   {"ref": "2027-05 trade prices", "date": "2027-07-16", "status": "official"},
+   {"ref": "2027-06 trade prices", "date": "2027-08-12", "status": "official"},
+   {"ref": "2027-Q2 PPI", "date": "2027-09-14", "status": "official"},
+   {"ref": "2027-07 trade prices", "date": "2027-09-17", "status": "official"},
+   {"ref": "2027-08 trade prices", "date": "2027-10-20", "status": "official"},
+   {"ref": "2027-09 trade prices", "date": "2027-11-12", "status": "official"},
+   {"ref": "2027-Q3 PPI", "date": "2027-12-14", "status": "official"},
+   {"ref": "2027-10 trade prices", "date": "2027-12-20", "status": "official"}]}
  }
 }

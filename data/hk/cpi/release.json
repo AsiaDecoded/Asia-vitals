@@ -1,0 +1,49 @@
+{
+ "code": "C2026-09",
+ "label": "September 2026",
+ "latest_month": "2026-09-01",
+ "release_date": "2026-10-22",
+ "report_code": "B10600012026MM09",
+ "e501_code": "D56000012026MM09",
+ "table": "C&SD web tables 510-60001/60001A/60002/60002A/60003/60004, Table E501, Monthly Report on the CPI (web), Annex 1",
+ "processed_at": "2026-10-28T22:37:43Z",
+ "rows": 219449,
+ "warnings": [],
+ "long_rows": 142080,
+ "contribution_months": 40,
+ "contribution_max_gap_pp": 0.2,
+ "worst_rate_vs_index_pp": 0.145,
+ "groups_latest": 77,
+ "upcoming_releases": [
+  {
+   "ref_month": "2026-10",
+   "date": "2026-11-20"
+  },
+  {
+   "ref_month": "2026-11",
+   "date": "2026-12-21"
+  },
+  {
+   "ref_month": "2026-12",
+   "date": "2027-01-22"
+  },
+  {
+   "ref_month": "2027-01",
+   "date": "2027-02-25"
+  },
+  {
+   "ref_month": "2027-02",
+   "date": "2027-03-24"
+  },
+  {
+   "ref_month": "2027-03",
+   "date": "2027-04-21"
+  }
+ ],
+ "history": [
+  {
+   "code": "C2026-09",
+   "processed_at": "2026-10-28T22:37:43Z"
+  }
+ ]
+}
