@@ -1,13 +1,13 @@
 {
  "title": "CPI food and non-alcoholic beverages",
- "description": "Asia Decoded calculation: Japan national CPI food and non-alcoholic beverages (COICOP division 01), the published Food index less alcoholic beverages and eating out, with the Statistics Bureau's published weights base by base, y/y from January 2011.",
+ "description": "Japan national CPI food and non-alcoholic beverages (COICOP 2018 division 01), the Statistics Bureau's published COICOP classification index (Table 15 of the monthly report): index (2025 = 100), m/m and y/y as published, y/y from January 2021.",
  "source": {
   "kind": "file",
-  "url": "/_blob/2643929705f359a781d44b1e4ceacf4c",
-  "name": "jp_cpi_food_F2026-09.csv"
+  "name": "jp_cpi_food_F2026-09.csv",
+  "url": "/_blob/844440360c2e5bc873040dd280d4582b"
  },
  "updated": {
-  "at": "2026-10-29T02:45:00Z",
+  "at": "2026-10-29T06:45:00Z",
   "by": "Claude"
  },
  "schedule": "Copied from the asia-vitals GitHub repository on Japan CPI release days",

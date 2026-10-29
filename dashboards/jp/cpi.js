@@ -723,7 +723,7 @@ dash.calc('ppi_latest', {
       { key: 'services_ex_rent', name: 'Services less imputed rent', color: C[1], dash: true },
     ], 280);
     if (S.fe === 'food' && S.drivers === 'national') {
-      // national: adds food and non-alcoholic beverages (Asia Decoded calculation, COICOP 01, from 2011)
+      // national: adds food and non-alcoholic beverages (Statistics Bureau COICOP 01, published, from 2021)
       lineChart('cpi-drivers-chart', 'cpi-drivers', 'cpi-drivers-legend', 'national', [
         { key: 'fresh_food', name: 'Fresh food', color: C[0] }, { key: 'food_ex_fresh', name: 'Food less fresh food', color: C[5] },
         { key: 'fnab', name: 'Food and non-alcoholic beverages', color: C[1] },
@@ -756,7 +756,7 @@ dash.calc('ppi_latest', {
     ], 280, {
       ids: ['cpi_series', 'jp_cpi_food'],
       rows: (cpi, food) => {
-        // Food: Asia Decoded calculation (COICOP 01) from Jan 2011; energy as published
+        // Food: Statistics Bureau COICOP 01 (published) from Jan 2021; energy as published
         const by = new Map();
         const put = (d, k, v) => { if (v == null) return; if (!by.has(d)) by.set(d, { date: d }); by.get(d)[k] = v; };
         food.forEach((r) => { if (r.yoy !== '') put(r.date, 'food', Math.round(Number(r.yoy) * 10) / 10); });
