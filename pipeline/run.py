@@ -31,11 +31,16 @@ def gh_output(**kv):
 
 
 def combine_long():
-    """data/all_long.csv: every source's long.csv stacked, for cross-country views."""
+    """data/all_long.csv.gz: every source's long.csv stacked, for cross-country views.
+
+    Gzipped: uncompressed it passes GitHub's 100 MB file limit with all 12 economies.
+    """
+    import gzip
     files = sorted(p for p in DATA.glob("*/*/long.csv"))
-    out = DATA / "all_long.csv"
+    out = DATA / "all_long.csv.gz"
+    (DATA / "all_long.csv").unlink(missing_ok=True)
     n = 0
-    with open(out, "w", newline="") as f:
+    with gzip.open(out, "wt", newline="", compresslevel=9) as f:
         w = csv.DictWriter(f, fieldnames=LONG_COLUMNS, lineterminator="\n")
         w.writeheader()
         for p in files:
