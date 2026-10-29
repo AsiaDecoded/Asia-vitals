@@ -15,7 +15,7 @@ permissions:
   contents: write
 
 env:
-  DGBAS_ROUND: r6
+  DGBAS_ROUND: r7
 
 jobs:
   discover:
@@ -44,7 +44,7 @@ jobs:
           cp /tmp/issuer.pem $D/ws_issuer.pem
       - name: Probe DGBAS
         continue-on-error: true
-        run: DGBAS_CA=$( [ -s /tmp/issuer.pem ] && echo /tmp/issuer.pem ) python -I pipeline/tools/dgbas_discover.py pipeline/tools/dgbas_seeds.txt discovery/dgbas/$DGBAS_ROUND 120 0
+        run: DGBAS_CA=$( [ -s /tmp/issuer.pem ] && echo /tmp/issuer.pem ) python -I pipeline/tools/dgbas_discover.py pipeline/tools/dgbas_seeds.txt discovery/dgbas/$DGBAS_ROUND 60 1
       - name: Push results to the discovery branch
         if: always()
         run: |

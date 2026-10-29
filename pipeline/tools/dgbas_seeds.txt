@@ -1,24 +1,11 @@
-# Round 6: any COICOP-classified CPI from DGBAS
-dgov_7728 https://data.gov.tw/api/front/dataset/list {"bool":[{"fulltext":{"value":"COICOP"}}],"filter":[],"page_num":1,"page_limit":50,"tids":[],"sort":"_score_desc"}
-dgov_30273 https://data.gov.tw/api/front/dataset/list {"bool":[{"fulltext":{"value":"個人消費支出目的別"}}],"filter":[],"page_num":1,"page_limit":50,"tids":[],"sort":"_score_desc"}
-dgov_30894 https://data.gov.tw/api/front/dataset/list {"bool":[{"fulltext":{"value":"消費目的別"}}],"filter":[],"page_num":1,"page_limit":50,"tids":[],"sort":"_score_desc"}
-dgov_7881 https://data.gov.tw/api/front/dataset/list {"bool":[{"fulltext":{"value":"消費者物價指數 COICOP"}}],"filter":[],"page_num":1,"page_limit":50,"tids":[],"sort":"_score_desc"}
-dgov_29449 https://data.gov.tw/api/front/dataset/list {"bool":[{"fulltext":{"value":"食物及非酒精飲料"}}],"filter":[],"page_num":1,"page_limit":50,"tids":[],"sort":"_score_desc"}
-stat_search https://www.stat.gov.tw/Advanced_Search.aspx?q=COICOP
-stat_search2 https://www.stat.gov.tw/Advanced_Search.aspx?q=%E9%9D%9E%E9%85%92%E7%B2%BE%E9%A3%B2%E6%96%99
-eng_search https://eng.stat.gov.tw/Advanced_Search.aspx?q=COICOP
-def_A030101035 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=212&x=2100&funid=A030101035&plus=0&r=1
-def_A030101045 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=212&x=2100&funid=A030101045&plus=0&r=1
-def_A030107015 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=212&x=2100&funid=A030107015&plus=0&r=1
-def_A030108015 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=212&x=2100&funid=A030108015&plus=0&r=1
-def_A030109015 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=212&x=2100&funid=A030109015&plus=0&r=1
-def_A030110015 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=212&x=2100&funid=A030110015&plus=0&r=1
-def_A030111015 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=212&x=2100&funid=A030111015&plus=0&r=1
-def_A030102025 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=212&x=2100&funid=A030102025&plus=0&r=1
-def_A030103025 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=212&x=2100&funid=A030103025&plus=0&r=1
-def_A030201015 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=212&x=2100&funid=A030201015&plus=0&r=1
-def_A030202015 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=212&x=2100&funid=A030202015&plus=0&r=1
-eng_tables https://eng.stat.gov.tw/cp.aspx?n=2327
-cn_tables https://www.stat.gov.tw/cp.aspx?n=2665
-sdds_cpi https://eng.stat.gov.tw/sdds/cp.aspx?n=4180&s=1802
-nst_tree https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=100&funid=defjsplink
+# Round 7: price database table list; price statistics monthly
+tree_7703 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=130&x=2018&id=A03
+tree_25563 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=130&x=2018&id=A0301
+tree_12321 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=132&x=2020&max=60&id=A03
+tree_27847 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=131&x=2019&max=50&day=7&id=A03
+tree_19522 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=139&x=2027&id=a03
+tree_24990 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=100&funid=queryfld
+tree_5706 https://nstatdb.dgbas.gov.tw/dgbasAll/webMain.aspx?sys=210&x=2098&funid=queryfld
+pub_sep https://eng.stat.gov.tw/News_Content.aspx?n=2328&s=236683
+pub_list https://www.stat.gov.tw/News.aspx?n=2668&sms=10965
+cn_pubs https://www.stat.gov.tw/cl.aspx?n=2663
