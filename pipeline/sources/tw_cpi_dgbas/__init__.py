@@ -218,6 +218,8 @@ FOOD_SUBGROUPS = {"cereals": (1, 10), "meat": (11, 16), "meat_products": (17, 19
                   "alcohol": (133, 136), "non_alcoholic": (137, 146), "cooked_food": (147, 152), "eating_out": (153, 164),
                   "other_food": (165, 171)}
 FOOD01_FIRST = "2023-01"
+FOOD01_KEY = "food01"
+FOOD01_LABEL = "Food and non-alcoholic beverages (COICOP 01), calculated: DGBAS food excl. alcohol and eating out"
 FOOD01_SENS_LIMIT = 0.06   # pp, y/y: food weight from table 1 vs the month's table 14 total
 FOOD01_ID_LIMIT = 0.001    # index points: recombined food vs published food
 
@@ -460,6 +462,12 @@ def update(**opts):
         for p, v in vals.items():
             rows.append({"date": p + "-01", "area": area, "series": key, "measure": meas, "value": v,
                          "base_break": 1 if p in BASE_STARTS else 0, "release_date": rel_dates.get(p, "")})
+    # Calculated COICOP 01 food (see _food01) beside DGBAS's series: series food01, index and y/y
+    for r in food01:
+        for meas in ("index", "yoy"):
+            if r[meas] is not None:
+                rows.append({"date": r["date"], "area": "national", "series": FOOD01_KEY, "measure": meas, "value": r[meas],
+                             "base_break": r["base_break"], "release_date": rel_dates.get(r["date"][:7], "")})
     rows.sort(key=lambda r: (r["date"], r["area"] != "national", r["area"], r["series"], r["measure"]))
     _write_csv(OUT / "tw_cpi.csv", ["date", "area", "series", "measure", "value", "base_break", "release_date"], rows)
     slist = sorted({(a, k) for (a, k, m) in data})
@@ -468,18 +476,18 @@ def update(**opts):
                  "group": meta.get(k, {}).get("group", "income" if a not in ("national", "elderly") else "basic"),
                  "level": labels.get(k, {}).get("level", ""), "parent": labels.get(k, {}).get("parent", ""),
                  "first": min(min(data[(a2, k2, m)]) for (a2, k2, m) in data if a2 == a and k2 == k),
-                 "last": max(max(data[(a2, k2, m)]) for (a2, k2, m) in data if a2 == a and k2 == k)} for a, k in slist])
+                 "last": max(max(data[(a2, k2, m)]) for (a2, k2, m) in data if a2 == a and k2 == k)} for a, k in slist]
+               + [{"area": "national", "area_name": "Taiwan", "series": FOOD01_KEY, "label": FOOD01_LABEL,
+                   "group": "calculated", "level": "", "parent": "food",
+                   "first": food01[0]["date"][:7] if food01 else "", "last": food01[-1]["date"][:7] if food01 else ""}])
     dash_keys = set(GROUPS7) | {"all", "core", "energy", "goods", "services", "core_goods", "noncore_goods",
                                 "ex_food_energy", "ex_fruit_veg", "vegetables", "fruit", "eating_out", "fuels",
                                 "electricity", "gas", "rent", "durable", "semidurable", "nondurable",
                                 "services_eating_out", "medical_services", "transport_fees", "cereals", "meat"}
-    # Dashboard file: DGBAS's series as published, plus the calculated COICOP 01 food y/y (series
-    # food_coicop01, measure yoy_calc so it cannot be mistaken for a DGBAS figure)
+    # Dashboard file: DGBAS's series as published, plus the calculated COICOP 01 food (series food01)
     _write_csv(OUT / "tw_cpi_dash.csv", ["date", "area", "series", "measure", "value"],
-               [r for r in rows if r["series"] in dash_keys and r["date"] >= "1960-01-01"
-                and (r["area"] == "national" or r["series"] == "all")]
-               + [{"date": r["date"], "area": "national", "series": "food_coicop01", "measure": "yoy_calc",
-                   "value": round(r["yoy"], 2)} for r in food01 if r["yoy"] is not None])
+               [r for r in rows if (r["series"] in dash_keys or r["series"] == FOOD01_KEY) and r["date"] >= "1960-01-01"
+                and (r["area"] == "national" or r["series"] == "all")])
     item_rows.sort(key=lambda r: (r["date"], r["code"], r["measure"]))
     _write_csv(OUT / "tw_cpi_items.csv", ["date", "code", "name", "measure", "value"], item_rows)
     # Published weights (% of CPI) and contributions (pp), as first released
@@ -506,7 +514,6 @@ def update(**opts):
     (OUT / "tw_cpi_checks.json").write_text(json.dumps({"rates_vs_index": stats, "weights_vs_headline": wcheck,
                                                        "item_weight_sums": wsum14, "food_coicop01": food01_stats,
                                                        "food_coicop01_months": food01_chk}, indent=1) + "\n")
-    _write_csv(OUT / "tw_cpi_food01.csv", ["date", "index", "yoy", "base_break"], food01)
     _write_csv(OUT / "tw_cpi_food01_weights.csv", ["date", "food_pct", "alcohol_pct", "eating_out_pct", "kept_pct",
                                                    "food_t14_total_pct", "weight_sum_check"], food01_w)
     code = f"C{latest}"

@@ -463,7 +463,7 @@ dash.calc('impacts_latest', {
     lines('cpi-gs', [C('goods', 'goods', 'Goods', 'var(--ad-c1)'), C('services', 'services', 'Services', 'var(--ad-c2)'),
       C('core_goods', 'cg', 'Core goods', 'var(--ad-c6)', { thin: true })], { anyStart: true });
     lines('cpi-fe', [C('food', 'food', 'Food', 'var(--ad-c5)'),
-      C('food_coicop01', 'f01', 'Food and non-alcoholic beverages (calculated)', 'var(--ad-c3)', { measure: 'yoy_calc', dash: true }),
+      C('food01', 'f01', 'Food and non-alcoholic beverages (calculated)', 'var(--ad-c3)', { dash: true }),
       C('vegetables', 'veg', 'Vegetables', 'var(--ad-c6)', { thin: true }),
       C('fruit', 'fruit', 'Fruits', 'var(--ad-c7)', { thin: true }), C('energy', 'energy', 'Energy', 'var(--ad-c1)'),
       C('fuels', 'fuel', 'Fuels and lubricants', 'var(--ad-c8)', { dash: true })], { anyStart: true });

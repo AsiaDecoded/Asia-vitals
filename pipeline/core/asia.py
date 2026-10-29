@@ -49,7 +49,7 @@ SPEC = [
     ("KR", "ppi", "kr/ppi/kr_ppi.csv", {"series": "ppi"}, "yoy", CALC, "PPI"),
     # Taiwan
     ("TW", "cpi", "tw/cpi/tw_cpi.csv", {"area": "national", "series": "all", "measure": "yoy"}, "value", PUB, "All items"),
-    ("TW", "food", "tw/cpi/tw_cpi_food01.csv", {}, "yoy", CALC, "Food and non-alcoholic beverages (COICOP 01): DGBAS food excl. alcohol and eating out"),
+    ("TW", "food", "tw/cpi/tw_cpi.csv", {"area": "national", "series": "food01", "measure": "yoy"}, "value", CALC, "Food and non-alcoholic beverages (COICOP 01): DGBAS food excl. alcohol and eating out"),
     ("TW", "energy", "tw/cpi/tw_cpi.csv", {"area": "national", "series": "energy", "measure": "yoy"}, "value", PUB, "Energy"),
     ("TW", "official_core", "tw/cpi/tw_cpi.csv", {"area": "national", "series": "core", "measure": "yoy"}, "value", PUB, "Core (excl. fruit, vegetables and energy)"),
     ("TW", "ppi", "tw/ppi/tw_ppi.csv", {"series": "ppi_all", "measure": "yoy"}, "value", PUB, "PPI"),
