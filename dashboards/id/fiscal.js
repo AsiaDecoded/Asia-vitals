@@ -234,25 +234,35 @@ dash.calc('sbn_latest', {
   }
 
   function budgetChart() {
-    // y/y growth of revenue and grants and of expenditure (calculated from published levels): actual to the latest
-    // actual year; then the budget law (id_budget_law): first budget year against the last actual, later ones against the previous budget
+    // y/y growth of revenue and grants and of expenditure (calculated from published levels). Actual: SEKI older sheets
+    // (id_fiscal_hist: 1990-1999 April-March fiscal years, 2000 April-December, 2001-2007) and the current sheet (2008 on);
+    // budget law (id_budget_law): first budget year against the last actual, later ones against the previous budget.
+    // No growth for 2000 (nine months) or 2001 (against those nine months): the lines break there.
     const box = document.getElementById('f-budget-chart');
     const D = dash.data('fiscal_years');
     if (bad(D)) { J.fail(box); return; }
     if (D.status !== 'ok') { box.replaceChildren(); return; }
     const lv = {};
+    const Hs = dash.data('id_fiscal_hist');
+    if (Hs.status === 'ok') Hs.data.filter((r) => r.basis === 'actual').forEach((r) => {
+      lv[Number(r.year)] = { rev: Number(r.revenue), exp: Number(r.expenditure), basis: 'actual', period: r.period };
+    });
     D.data.filter((r) => r.basis === 'actual' && r.rev != null && r.exp != null).forEach((r) => { lv[r.year] = { rev: r.rev, exp: r.exp, basis: 'actual' }; });
     const B = dash.data('id_budget_law');
     if (B.status === 'ok') B.data.forEach((r) => {
       const y = Number(r.year);
       if (!lv[y]) lv[y] = { rev: Number(r.revenue) * 1000, exp: Number(r.expenditure) * 1000, basis: 'budget' };
     });
-    const rows = Object.keys(lv).map(Number).sort((a, b) => a - b).filter((y) => lv[y - 1]).map((y) => ({
-      year: y, basis: lv[y].basis, base: lv[y - 1].basis,
-      rev: (lv[y].rev / lv[y - 1].rev - 1) * 100, exp: (lv[y].exp / lv[y - 1].exp - 1) * 100 }));
+    const ys = Object.keys(lv).map(Number).sort((a, b) => a - b);
+    const BREAK = new Set([2000, 2001]);
+    const rows = ys.filter((y) => lv[y - 1]).map((y) => {
+      const ok = !BREAK.has(y);
+      return { year: y, basis: lv[y].basis, base: lv[y - 1].basis, period: lv[y].period, prev: lv[y - 1].period,
+        rev: ok ? (lv[y].rev / lv[y - 1].rev - 1) * 100 : null, exp: ok ? (lv[y].exp / lv[y - 1].exp - 1) * 100 : null };
+    });
     if (!rows.length) { box.replaceChildren(); return; }
-    const H = 260;
-    const vals = rows.flatMap((r) => [r.rev, r.exp]);
+    const H = 280;
+    const vals = rows.flatMap((r) => [r.rev, r.exp]).filter((v) => v != null);
     const f = frame(box, rows.map((r) => String(r.year)), H, d3.min(vals), d3.max(vals), 0.2);
     yearAxis(f, H, rows);
     const cx = (r) => f.x(String(r.year)) + f.x.bandwidth() / 2;
@@ -261,14 +271,19 @@ dash.calc('sbn_latest', {
     const bud = (lastAct ? [lastAct] : []).concat(rows.filter((r) => r.basis === 'budget'));
     f.svg.append('line').attr('x1', 0).attr('x2', f.x.range()[1]).attr('y1', f.y(0)).attr('y2', f.y(0)).attr('stroke', 'var(--color-border-line)');
     [['rev', '#0C84FF'], ['exp', '#BD1B21']].forEach(([k, c]) => {
-      const line = d3.line().x(cx).y((r) => f.y(r[k]));
-      f.svg.append('path').attr('d', line(act)).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
-      if (bud.length > 1) f.svg.append('path').attr('d', line(bud)).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2.5).attr('stroke-dasharray', '5 4');
+      const line = d3.line().defined((r) => r[k] != null).x(cx).y((r) => f.y(r[k]));
+      f.svg.append('path').attr('d', line(act)).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2).attr('stroke-linejoin', 'round');
+      if (bud.length > 1) f.svg.append('path').attr('d', line(bud)).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2).attr('stroke-dasharray', '5 4');
       f.svg.append('g').selectAll('circle').data(rows.filter((r) => r.basis === 'budget')).join('circle').attr('cx', cx).attr('cy', (r) => f.y(r[k]))
         .attr('r', 4).attr('fill', 'var(--color-panel)').attr('stroke', c).attr('stroke-width', 2);
     });
     legend('f-budget-legend', [['ln', '#0C84FF', 'Revenue and grants'], ['ln', '#BD1B21', 'Expenditure']]);
-    const lab = (r) => (r.basis === 'budget' ? `${r.year}, budget vs ${r.year - 1} ${r.base === 'budget' ? 'budget' : 'actual'}` : `${r.year}, actual`);
+    const fy = (p) => (p && /^Apr \d{4}-Mar/.test(p) ? `FY${p.slice(4, 8)}/${p.slice(-2)}` : p);
+    const lab = (r) => {
+      if (r.basis === 'budget') return `${r.year}, budget vs ${r.year - 1} ${r.base === 'budget' ? 'budget' : 'actual'}`;
+      if (BREAK.has(r.year)) return `${r.year}: not comparable (2000 covers Apr–Dec only)`;
+      return r.period && r.period !== String(r.year) ? `${fy(r.period)}, actual` : `${r.year}, actual`;
+    };
     const pc = (v) => (v == null ? '—' : J.f1(v) + '%');
     hover(f, rows, (r) => String(r.year), H, 'f-budget', lab, (r) => [['#0C84FF', 'Revenue and grants', pc(r.rev)], ['#BD1B21', 'Expenditure', pc(r.exp)]]);
   }
