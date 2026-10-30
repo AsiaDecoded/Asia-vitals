@@ -47,14 +47,25 @@ def _split(label):
     return None
 
 
+UNIT_WANT = {UNIT_V: "juta us$", UNIT_T: "ribu ton"}
+SKIPPED = {}
+
+
 def monthly_series(raw):
-    """{(series, date): (label, unit, value)} for the monthly variables."""
+    """{(series, date): (label, unit, value)} for the monthly variables. A year whose stated unit is not the one
+    expected (US$ million, thousand tonnes) is left out, not converted (the trade balance is stated in US$ billion,
+    one decimal, in some years)."""
     out = {}
+    SKIPPED.clear()
 
     def put(series, label, unit, r):
         freq, date = bps.period_of(r)
-        if freq == "M":
-            out[(series, date)] = (label, unit, r["value"])
+        if freq != "M":
+            return
+        if (r.get("unit") or "").lower().replace(" ", "") != UNIT_WANT[unit].replace(" ", ""):
+            SKIPPED.setdefault(series, set()).add(f"{r['year']} ({r.get('unit')})")
+            return
+        out[(series, date)] = (label, unit, r["value"])
 
     for vid, flow in ((196, "exports"), (497, "imports"), (498, "balance")):
         for r in raw[vid][1]:
@@ -210,6 +221,7 @@ def update(force=False, **_):
     p = price_series(raw)
     titles = release_titles()
     errors, warnings = checks(m, p, titles)
+    warnings += [f"{s}: years left out, unit not US$ million / thousand tonnes: {sorted(y)}" for s, y in SKIPPED.items()]
     if state.get("latest_month") and latest < state["latest_month"]:
         errors.append(f"latest month {latest} is before the one stored ({state['latest_month']})")
     if errors:

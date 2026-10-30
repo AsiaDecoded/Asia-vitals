@@ -147,7 +147,8 @@ def var_years(vid):
 
 def var_data(vid, years=None):
     """Every value of a variable, as published: (meta, [{vervar, vervar_label, turvar, turvar_label, year,
-    turtahun, turtahun_label, value}]). Years are fetched one call each; keys of the WebAPI's datacontent are
+    turtahun, turtahun_label, value, unit}]). unit is the
+    variable's unit as stated in that year's answer (BPS changes it between years for some trade tables). Years are fetched one call each; keys of the WebAPI's datacontent are
     vervar + var + turvar + th + turtahun, rebuilt here from the listed dimensions (never split)."""
     ids = var_years(vid)
     meta, out = None, []
@@ -161,6 +162,7 @@ def var_data(vid, years=None):
         meta = {"var": (d.get("var") or [{}])[0], "vervar": d.get("vervar") or [], "turvar": d.get("turvar") or [],
                 "turtahun": d.get("turtahun") or [], "last_update": d.get("last_update")}
         th = d["tahun"][0]["val"] if d.get("tahun") else ids[y]
+        unit = ((d.get("var") or [{}])[0].get("unit") or "").strip()
         for vv in d.get("vervar") or []:
             for tv in d.get("turvar") or [{"val": "0", "label": ""}]:
                 for tt in d.get("turtahun") or []:
@@ -172,7 +174,7 @@ def var_data(vid, years=None):
                             continue
                         out.append({"vervar": vv["val"], "vervar_label": vv["label"], "turvar": tv["val"],
                                     "turvar_label": tv["label"], "year": y, "turtahun": tt["val"],
-                                    "turtahun_label": tt["label"], "value": v})
+                                    "turtahun_label": tt["label"], "value": v, "unit": unit})
         time.sleep(0.2)
     return meta, out
 
