@@ -203,17 +203,17 @@ dash.calc('sbn_latest', {
     f.svg.append('g').selectAll('rect').data(rows.filter((r) => r.balance != null)).join('rect')
       .attr('x', (r) => f.x(String(r.year))).attr('width', f.x.bandwidth())
       .attr('y', (r) => f.y(Math.max(0, t(r.balance)))).attr('height', (r) => Math.abs(f.y(t(r.balance)) - f.y(0)))
-      .attr('fill', (r) => (r.basis === 'ytd' ? 'none' : '#A6A6A6')).attr('stroke', (r) => (r.basis === 'ytd' ? '#A6A6A6' : 'none'))
+      .attr('fill', (r) => (r.basis === 'ytd' ? 'none' : '#BD1B21')).attr('stroke', (r) => (r.basis === 'ytd' ? '#BD1B21' : 'none'))
       .attr('stroke-width', 1.5).attr('stroke-dasharray', (r) => (r.basis === 'ytd' ? '3 2' : null));
-    [['rev', '#0C84FF'], ['exp', '#BD1B21']].forEach(([k, c]) => {
+    [['rev', '#0C84FF'], ['exp', '#FFC000']].forEach(([k, c]) => {
       f.svg.append('path').attr('d', d3.line().x(cx).y((r) => f.y(t(r[k])))(act)).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
       f.svg.append('g').selectAll('circle').data(ytd).join('circle').attr('cx', cx).attr('cy', (r) => f.y(t(r[k])))
         .attr('r', 4).attr('fill', 'var(--color-panel)').attr('stroke', c).attr('stroke-width', 2);
     });
-    const items = [['ln', '#0C84FF', 'Revenue and grants'], ['ln', '#BD1B21', 'Expenditure'], ['sw', '#A6A6A6', 'Fiscal balance']];
+    const items = [['ln', '#0C84FF', 'Revenue and grants'], ['ln', '#FFC000', 'Expenditure'], ['sw', '#BD1B21', 'Fiscal balance']];
     legend('f-balance-legend', items);
     hover(f, rows, (r) => String(r.year), H, 'f-balance', thru,
-      (r) => [['#0C84FF', 'Revenue and grants', trn(r.rev)], ['#BD1B21', 'Expenditure', trn(r.exp)], ['#A6A6A6', 'Fiscal balance', trn(r.balance)]]);
+      (r) => [['#0C84FF', 'Revenue and grants', trn(r.rev)], ['#FFC000', 'Expenditure', trn(r.exp)], ['#BD1B21', 'Fiscal balance', trn(r.balance)]]);
   }
 
   function gdpChart() {
@@ -236,22 +236,22 @@ dash.calc('sbn_latest', {
     f.svg.append('g').selectAll('rect').data(rows).join('rect')
       .attr('x', (r) => f.x(String(r.year))).attr('width', f.x.bandwidth())
       .attr('y', (r) => f.y(Math.max(0, r.bal))).attr('height', (r) => Math.abs(f.y(r.bal) - f.y(0)))
-      .attr('fill', (r) => (r.basis === 'ytd' ? 'none' : '#A6A6A6')).attr('stroke', (r) => (r.basis === 'ytd' ? '#A6A6A6' : 'none'))
+      .attr('fill', (r) => (r.basis === 'ytd' ? 'none' : '#BD1B21')).attr('stroke', (r) => (r.basis === 'ytd' ? '#BD1B21' : 'none'))
       .attr('stroke-width', 1.5).attr('stroke-dasharray', (r) => (r.basis === 'ytd' ? '3 2' : null));
-    [['rev', '#0C84FF'], ['exp', '#BD1B21']].forEach(([k, c]) => {
+    [['rev', '#0C84FF'], ['exp', '#FFC000']].forEach(([k, c]) => {
       f.svg.append('path').attr('d', d3.line().x(cx).y((r) => f.y(r[k]))(act.filter((r) => r[k] != null))).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
       f.svg.append('g').selectAll('circle').data(ytd.filter((r) => r[k] != null)).join('circle').attr('cx', cx).attr('cy', (r) => f.y(r[k]))
         .attr('r', 4).attr('fill', 'var(--color-panel)').attr('stroke', c).attr('stroke-width', 2);
     });
-    legend('f-balance-legend', [['ln', '#0C84FF', 'Revenue and grants'], ['ln', '#BD1B21', 'Expenditure'], ['sw', '#A6A6A6', 'Fiscal balance']]);
+    legend('f-balance-legend', [['ln', '#0C84FF', 'Revenue and grants'], ['ln', '#FFC000', 'Expenditure'], ['sw', '#BD1B21', 'Fiscal balance']]);
     const mo = (d) => MON[Number(d.slice(5, 7)) - 1];
     const lab = (r) => `${r.year}`;
     const pc = (v) => (v == null ? '—' : J.f1(v) + '%');
     const pc2 = (v) => (v == null ? '—' : v.toFixed(2) + '%');
     hover(f, rows, (r) => String(r.year), H, 'f-balance', lab, (r) => (r.basis === 'ytd'
-      ? [['#0C84FF', `Revenue, Jan–${mo(r.through)} (calc.)`, pc(r.rev)], ['#BD1B21', `Expenditure, Jan–${mo(r.through)} (calc.)`, pc(r.exp)],
-         ['#A6A6A6', `Fiscal balance, Jan–${mo(r.mof || r.through)} (MoF)`, pc2(r.bal)]]
-      : [['#0C84FF', 'Revenue and grants', pc(r.rev)], ['#BD1B21', 'Expenditure', pc(r.exp)], ['#A6A6A6', 'Fiscal balance', pc2(r.bal)]]));
+      ? [['#0C84FF', `Revenue, Jan–${mo(r.through)} (calc.)`, pc(r.rev)], ['#FFC000', `Expenditure, Jan–${mo(r.through)} (calc.)`, pc(r.exp)],
+         ['#BD1B21', `Fiscal balance, Jan–${mo(r.mof || r.through)} (MoF)`, pc2(r.bal)]]
+      : [['#0C84FF', 'Revenue and grants', pc(r.rev)], ['#FFC000', 'Expenditure', pc(r.exp)], ['#BD1B21', 'Fiscal balance', pc2(r.bal)]]));
   }
 
   function imfChart() {
