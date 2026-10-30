@@ -7,6 +7,11 @@ chapter IV (Ministry of Finance data). As published, nothing calculated.
   IV.4 Government securities (SBN) outstanding, Rp billion, by type and holder: end-December 2008 and 2009, then
        monthly from January 2010.
 
+Year to date (hand-entered, not from SEKI): ytd.csv in this folder holds the Ministry of Finance's announced
+outturn for the current year to date (revenue and grants, expenditure, surplus/deficit, Rp billion), typed in from
+the Ministry's monthly announcement with its date and source; written with basis "ytd" and a "through" month.
+Only years without a full-year actual are kept. Update by hand after each monthly announcement.
+
 Files: bi.go.id/SEKI/tabel/TABEL4_<n>.xls (no key). The workbook's own English row labels (the ITEMS column) are kept.
 Bank Indonesia updates SEKI some weeks after the Ministry of Finance publishes; new data detected by the latest
 period of IV.4 and of IV.1-IV.3.
@@ -15,6 +20,7 @@ import csv
 import hashlib
 import json
 import re
+from pathlib import Path
 
 from core import seki
 from core.common import DATA, RAW, CheckFailed, read_json, write_long, write_release
@@ -186,7 +192,8 @@ def update(force=False, **_):
     sbn = read_sbn(wb.sheet_by_index(wb.nsheets - 1))
     latest_m = max(d for _i, _l, _e, v in sbn for d in v)
     latest_y = max(y for rows in ann.values() for _s, _i, _l, _e, v in rows for y in v)
-    fp = hashlib.sha256(json.dumps([ann, sbn], sort_keys=True, default=str).encode()).hexdigest()[:16]
+    ytd_text = Path(__file__).with_name("ytd.csv").read_text(encoding="utf-8") if Path(__file__).with_name("ytd.csv").exists() else ""
+    fp = hashlib.sha256(json.dumps([ann, sbn, ytd_text], sort_keys=True, default=str).encode()).hexdigest()[:16]
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {state.get('label')})"}
     errors, warnings = checks(ann, sbn)
@@ -202,13 +209,28 @@ def update(force=False, **_):
         for s, it, l, e, v in rows:
             for y, val in sorted(v.items()):
                 arows.append({"year": y, "table": t, "basis": s, "item": it, "label": e or l, "label_id": l, "value": val})
+    actual_years = {r["year"] for r in arows if r["basis"] == "actual"}
+    ytd_path = Path(__file__).with_name("ytd.csv")
+    ytd = [r for r in csv.DictReader(open(ytd_path, encoding="utf-8"))] if ytd_path.exists() else []
+    for r in ytd:
+        y = int(r["year"])
+        if y in actual_years:
+            warnings.append(f"ytd.csv: {y} now has a full-year actual in SEKI; the year-to-date row is dropped")
+            continue
+        arows.append({"year": y, "table": r["table"], "basis": "ytd", "item": 0, "label": r["label"],
+                      "label_id": r["label_id"], "value": float(r["value"]), "through": r["through"],
+                      "released": r["released"], "note": r["source"]})
+    yt = {r["table"]: r["value"] for r in arows if r["basis"] == "ytd"}
+    if len(yt) == 3 and abs(yt["revenue"] - yt["expenditure"] - yt["financing"]) > 1000:
+        errors.append(f"ytd.csv: revenue - expenditure {yt['revenue'] - yt['expenditure']:,.0f} vs deficit {yt['financing']:,.0f}")
+        raise CheckFailed(errors)
     arows.sort(key=lambda r: (r["year"], list(TABLES.values()).index(r["table"]), r["basis"], r["item"]))
-    acols = ["year", "table", "basis", "item", "label", "label_id", "value"]
+    acols = ["year", "table", "basis", "item", "label", "label_id", "value", "through", "released", "note"]
     with open(OUT / "id_fiscal_annual.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh, lineterminator="\n")
         w.writerow(acols)
         for r in arows:
-            w.writerow([r[c] for c in acols])
+            w.writerow([r.get(c, "") for c in acols])
     srows = [{"date": d, "item": i, "label": e or l, "label_id": l, "value": val}
              for i, l, e, v in sbn for d, val in sorted(v.items())]
     srows.sort(key=lambda r: (r["date"], r["item"]))

@@ -4,7 +4,7 @@
 
 dash.calc('fiscal_years', {
   title: 'Budget and actual by year',
-  description: 'SEKI IV.1-IV.3 rows turned into one row per year and basis (budget, actual) with a column per published item used on the page, Rp billion.',
+  description: 'SEKI IV.1-IV.3 rows turned into one row per year and basis (budget, actual; ytd = the Ministry of Finance announced year-to-date outturn for the current year, with the month it runs to) with a column per published item used on the page, Rp billion.',
   inputs: ['id_fiscal'],
   fn: (id_fiscal) => {
     const ITEMS = {
@@ -16,7 +16,7 @@ dash.calc('fiscal_years', {
     id_fiscal.forEach((r) => {
       const map = ITEMS[r.table]; if (!map) return;
       const key = Object.keys(map).find((k) => map[k] === r.label_id); if (!key) return;
-      const o = (out[r.year + r.basis] = out[r.year + r.basis] || { year: Number(r.year), basis: r.basis });
+      const o = (out[r.year + r.basis] = out[r.year + r.basis] || { year: Number(r.year), basis: r.basis, through: r.through || null });
       if (!(key in o)) o[key] = r.value === '' ? null : Number(r.value);
     });
     return Object.values(out).sort((a, b) => a.year - b.year || (a.basis < b.basis ? -1 : 1));
@@ -110,6 +110,7 @@ dash.calc('sbn_latest', {
     lg.replaceChildren();
     items.forEach(([cls, col, txt]) => {
       const sp = document.createElement('span'), m = document.createElement('span'); m.className = cls; m.style.background = col;
+      if (cls === 'dot') { m.style.background = 'var(--color-panel)'; m.style.border = '2px solid var(--ad-ink, var(--color-fg-muted))'; m.style.boxSizing = 'border-box'; }
       sp.append(m, document.createTextNode(txt)); lg.appendChild(sp);
     });
   }
@@ -154,21 +155,32 @@ dash.calc('sbn_latest', {
     const D = dash.data('fiscal_years');
     if (bad(D)) { J.fail(box); return; }
     if (D.status !== 'ok') { box.replaceChildren(); return; }
-    const rows = D.data.filter((r) => r.basis === 'actual' && r.rev != null && r.exp != null);
+    const act = D.data.filter((r) => r.basis === 'actual' && r.rev != null && r.exp != null);
+    const done = new Set(act.map((r) => r.year));
+    // The Ministry's announced year-to-date outturn for a year with no full-year actual yet: drawn apart, not joined.
+    const ytd = D.data.filter((r) => r.basis === 'ytd' && r.rev != null && r.exp != null && !done.has(r.year));
+    const rows = act.concat(ytd).sort((a, b) => a.year - b.year);
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 280, t = (v) => v / 1000;
+    const thru = (r) => (r.basis === 'ytd' && r.through ? `${r.year}, Jan–${MON[Number(r.through.slice(5, 7)) - 1]}` : `${r.year}, actual`);
     const vals = rows.flatMap((r) => [t(r.rev), t(r.exp), t(r.balance || 0)]);
     const f = frame(box, rows.map((r) => String(r.year)), H, d3.min(vals), d3.max(vals), 0.25);
     yearAxis(f, H, rows);
     const cx = (r) => f.x(String(r.year)) + f.x.bandwidth() / 2;
     f.svg.append('g').selectAll('rect').data(rows.filter((r) => r.balance != null)).join('rect')
       .attr('x', (r) => f.x(String(r.year))).attr('width', f.x.bandwidth())
-      .attr('y', (r) => f.y(Math.max(0, t(r.balance)))).attr('height', (r) => Math.abs(f.y(t(r.balance)) - f.y(0))).attr('fill', '#A6A6A6');
+      .attr('y', (r) => f.y(Math.max(0, t(r.balance)))).attr('height', (r) => Math.abs(f.y(t(r.balance)) - f.y(0)))
+      .attr('fill', (r) => (r.basis === 'ytd' ? 'none' : '#A6A6A6')).attr('stroke', (r) => (r.basis === 'ytd' ? '#A6A6A6' : 'none'))
+      .attr('stroke-width', 1.5).attr('stroke-dasharray', (r) => (r.basis === 'ytd' ? '3 2' : null));
     [['rev', '#0C84FF'], ['exp', '#BD1B21']].forEach(([k, c]) => {
-      f.svg.append('path').attr('d', d3.line().x(cx).y((r) => f.y(t(r[k])))(rows)).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
+      f.svg.append('path').attr('d', d3.line().x(cx).y((r) => f.y(t(r[k])))(act)).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
+      f.svg.append('g').selectAll('circle').data(ytd).join('circle').attr('cx', cx).attr('cy', (r) => f.y(t(r[k])))
+        .attr('r', 4).attr('fill', 'var(--color-panel)').attr('stroke', c).attr('stroke-width', 2);
     });
-    legend('f-balance-legend', [['ln', '#0C84FF', 'Revenue and grants'], ['ln', '#BD1B21', 'Expenditure'], ['sw', '#A6A6A6', 'Surplus / deficit']]);
-    hover(f, rows, (r) => String(r.year), H, 'f-balance', (r) => `${r.year}, actual`,
+    const items = [['ln', '#0C84FF', 'Revenue and grants'], ['ln', '#BD1B21', 'Expenditure'], ['sw', '#A6A6A6', 'Surplus / deficit']];
+    if (ytd.length) items.push(['dot', 'transparent', `${thru(ytd[ytd.length - 1])}, year to date (open markers)`]);
+    legend('f-balance-legend', items);
+    hover(f, rows, (r) => String(r.year), H, 'f-balance', thru,
       (r) => [['#0C84FF', 'Revenue and grants', trn(r.rev)], ['#BD1B21', 'Expenditure', trn(r.exp)], ['#A6A6A6', 'Surplus / deficit', trn(r.balance)]]);
   }
 
