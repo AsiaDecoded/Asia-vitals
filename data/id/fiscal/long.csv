@@ -2501,6 +2501,9 @@ ID,fiscal,financing16,Program Aid,budget,central government,A,2025-01-01,80000.0
 ID,fiscal,financing17,Project Aid,budget,central government,A,2025-01-01,136498.528421,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
 ID,fiscal,financing18,Aid Chaneling,budget,central government,A,2025-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
 ID,fiscal,financing19,"Payment of installments, principal of foreign debt (Amortization)",budget,central government,A,2025-01-01,-88367.885791,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue00,Government Revenues and Grants,ytd,central government,A,2026-01-01,2341500.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure00,Government Expenditures,ytd,central government,A,2026-01-01,2660500.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing00,Surplus / Deficit,ytd,central government,A,2026-01-01,-319000.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
 ID,sbn,sbn01,GOVERNMENT DEBT SECURITIES,outstanding,central government,M,2008-12-01,520995.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
 ID,sbn,sbn02,Government Bonds,outstanding,central government,M,2008-12-01,510983.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
 ID,sbn,sbn03,By Type,outstanding,central government,M,2008-12-01,510983.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
