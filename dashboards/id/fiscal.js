@@ -386,7 +386,8 @@ dash.calc('sbn_latest', {
   function balBudgetChart() {
     // budget law (id_budget_law) against actual (SEKI), % of GDP (calculated: both divided by actual nominal GDP,
     // id_fiscal_gdp); toggle: fiscal balance, revenue and grants, expenditure. For years with no actual GDP yet the
-    // Ministry's own deficit ratio is used for the balance; revenue and expenditure are left out there.
+    // Ministry's own deficit ratio is used for the balance, and revenue and expenditure are divided by the GDP that
+    // ratio implies (the budget's own GDP assumption).
     const box = document.getElementById('f-bb-chart');
     const G = dash.data('id_fiscal_gdp'), B = dash.data('id_budget_law');
     if (bad(G) || bad(B)) { J.fail(box); return; }
@@ -400,7 +401,12 @@ dash.calc('sbn_latest', {
       const y = Number(r.year), v = n(r[col[1]]);
       const o = (by[y] = by[y] || { year: y, actual: null, gdp: null });
       if (v != null && o.gdp) o.budget = v * 1000 / o.gdp * 100;
-      else if (m === 'balance' && n(r.balance_pct_gdp) != null) { o.budget = n(r.balance_pct_gdp); o.mof = true; }
+      else if (v != null && n(r.balance_pct_gdp)) {
+        // no actual GDP yet: the GDP the budget assumes, backed out from the Ministry's deficit and its ratio (calculated)
+        const g = n(r.balance) / n(r.balance_pct_gdp) * 100;
+        o.budget = m === 'balance' ? n(r.balance_pct_gdp) : v / g * 100;
+        o.mof = true;
+      }
     });
     const rows = Object.values(by).filter((r) => r.actual != null || r.budget != null).sort((a, b) => a.year - b.year);
     if (!rows.length) { box.replaceChildren(); return; }
@@ -416,7 +422,7 @@ dash.calc('sbn_latest', {
     legend('f-bb-legend', [['lnd', '#BD1B21', 'Budget law (APBN)'], ['ln', '#BD1B21', 'Actual']]);
     const pc2 = (v) => (v == null ? '—' : v.toFixed(2) + '%');
     hover(f, rows, (r) => String(r.year), H, 'f-bb', (r) => String(r.year),
-      (r) => [['#BD1B21', r.mof ? 'Budget law (MoF ratio)' : 'Budget law', pc2(r.budget)], ['#BD1B21', 'Actual', pc2(r.actual)]]);
+      (r) => [['#BD1B21', r.mof ? 'Budget law (on the budget\u2019s GDP)' : 'Budget law', pc2(r.budget)], ['#BD1B21', 'Actual', pc2(r.actual)]]);
   }
 
   function mixChart() {
