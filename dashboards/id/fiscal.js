@@ -158,7 +158,8 @@ dash.calc('sbn_latest', {
   function yearAxis(f, H, rows) {
     const every = Math.max(1, Math.ceil(rows.length / Math.max(1, Math.floor((f.W - f.ml) / 40))));
     J.axisStyle(f.svg.append('g').attr('transform', `translate(0,${H - 20})`)
-      .call(d3.axisBottom(f.x).tickValues(rows.map((r) => String(r.year)).filter((_, i) => (rows.length - 1 - i) % every === 0)).tickSize(0)));
+      .call(d3.axisBottom(f.x).tickValues(rows.map((r) => String(r.year)).filter((_, i) => (rows.length - 1 - i) % every === 0)).tickSize(0)
+        .tickFormat((y) => (rows.some((r) => String(r.year) === y && r.basis === 'ytd') ? 'YTD' : y))));
   }
 
   function balanceChart() {
