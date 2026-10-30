@@ -250,13 +250,20 @@ dash.calc('sbn_latest', {
     const by = {};
     D.data.forEach((r) => { (by[r.year] = by[r.year] || { year: r.year })[r.basis] = r.balance; });
     const pct = J.state.fBud === 'pct';
+    const B = dash.data('id_budget_law');
+    if (B.status === 'ok') B.data.forEach((r) => {
+      const y = Number(r.year);
+      if (by[y] && by[y].budget != null) return;
+      by[y] = { ...(by[y] || { year: y }), budget: Number(r.balance) * 1000, lawPct: r.balance_pct_gdp === '' ? null : Number(r.balance_pct_gdp), law: true };
+    });
     const G = dash.data('id_fiscal_gdp');
     const gdp = {};
     if (pct && G.status === 'ok') G.data.forEach((r) => { if (r.basis === 'actual' && r.gdp !== '') gdp[Number(r.year)] = Number(r.gdp); });
     let rows = Object.values(by).filter((r) => r.budget != null || r.actual != null).sort((a, b) => a.year - b.year);
-    if (pct) rows = rows.filter((r) => gdp[r.year]);
+    if (pct) rows = rows.filter((r) => gdp[r.year] || r.lawPct != null);
     if (!rows.length) { box.replaceChildren(); return; }
-    const H = 260, t = (v, r) => (pct ? v / gdp[r.year] * 100 : v / 1000);
+    const H = 260;
+    const t = (v, r) => (!pct ? v / 1000 : gdp[r.year] ? v / gdp[r.year] * 100 : r.lawPct);
     const vals = rows.flatMap((r) => [r.budget, r.actual].filter((v) => v != null).map((v) => t(v, r)));
     const f = frame(box, rows.map((r) => String(r.year)), H, d3.min(vals), d3.max(vals), 0.2);
     yearAxis(f, H, rows);
@@ -268,7 +275,7 @@ dash.calc('sbn_latest', {
     });
     legend('f-budget-legend', [['sw', '#ADB5BD', 'Budget (APBN)'], ['sw', '#1F4E79', 'Actual']]);
     const fmt = (v, r) => (v == null ? '—' : pct ? t(v, r).toFixed(2) + '%' : trn(v));
-    hover(f, rows, (r) => String(r.year), H, 'f-budget', (r) => String(r.year), (r) => [['#ADB5BD', 'Budget', fmt(r.budget, r)], ['#1F4E79', 'Actual', fmt(r.actual, r)]]);
+    hover(f, rows, (r) => String(r.year), H, 'f-budget', (r) => String(r.year), (r) => [['#ADB5BD', r.law && pct && !gdp[r.year] ? 'Budget (MoF ratio)' : 'Budget', fmt(r.budget, r)], ['#1F4E79', 'Actual', fmt(r.actual, r)]]);
   }
 
   function mixChart() {
