@@ -4,9 +4,9 @@
 
 dash.calc('fiscal_years', {
   title: 'Budget and actual by year',
-  description: 'SEKI IV.1-IV.3 rows turned into one row per year and basis (budget, actual; ytd = the Ministry of Finance announced year-to-date outturn for the current year, with the month it runs to) with a column per published item used on the page, Rp billion.',
-  inputs: ['id_fiscal'],
-  fn: (id_fiscal) => {
+  description: 'SEKI IV.1-IV.3 rows turned into one row per year and basis (budget, actual) with a column per published item used on the page, Rp billion; plus, for a year with no full-year actual yet, the Ministry of Finance year-to-date outturn for the latest month from its APBN KiTa deck (basis ytd; Rp trillion × 1,000).',
+  inputs: ['id_fiscal', 'id_fiscal_monthly'],
+  fn: (id_fiscal, id_fiscal_monthly) => {
     const ITEMS = {
       revenue: { rev: 'Pendapatan Negara dan Hibah', tax: 'Penerimaan Perpajakan', pph: 'Pajak Penghasilan (PPh)', ppn: 'Pajak Pertambahan Nilai (PPN)', pbb: 'Pajak Bumi dan Bangunan (PBB)', bphtb: 'Bea Perolehan Hak Atas Tanah dan Bangunan (BPHTB)1', cukai: 'Cukai', othtax: 'Pajak Lainnya', trade: 'Pajak Perdagangan Internasional', pnbp: 'Penerimaan Negara Bukan Pajak', grant: 'Hibah' },
       expenditure: { exp: 'Belanja Negara', central: 'Belanja Pemerintah Pusat', pers: 'Belanja Pegawai', goods: 'Belanja Barang', capex: 'Belanja Modal', interest: 'Pembayaran Bunga Utang', subsidy: 'Subsidi', grantx: 'Belanja Hibah', social: 'Bantuan Sosial', othx: 'Belanja Lainnya', transfer: 'Transfer Ke Daerah dan Dana Desa', suspen: 'Suspen' },
@@ -14,10 +14,19 @@ dash.calc('fiscal_years', {
     };
     const out = {};
     id_fiscal.forEach((r) => {
+      if (r.basis !== 'budget' && r.basis !== 'actual') return;
       const map = ITEMS[r.table]; if (!map) return;
       const key = Object.keys(map).find((k) => map[k] === r.label_id); if (!key) return;
-      const o = (out[r.year + r.basis] = out[r.year + r.basis] || { year: Number(r.year), basis: r.basis, through: r.through || null });
+      const o = (out[r.year + r.basis] = out[r.year + r.basis] || { year: Number(r.year), basis: r.basis, through: null });
       if (!(key in o)) o[key] = r.value === '' ? null : Number(r.value);
+    });
+    const done = new Set(Object.values(out).filter((o) => o.basis === 'actual').map((o) => o.year));
+    const latest = {};
+    id_fiscal_monthly.forEach((r) => { const y = Number(r.date.slice(0, 4)); if (!latest[y] || r.date > latest[y].date) latest[y] = r; });
+    Object.values(latest).forEach((r) => {
+      const y = Number(r.date.slice(0, 4)); if (done.has(y)) return;
+      const n = (v) => (v === '' || v == null ? null : Number(v) * 1000);
+      out[y + 'ytd'] = { year: y, basis: 'ytd', through: r.date.slice(0, 7), rev: n(r.revenue), exp: n(r.expenditure), balance: n(r.balance) };
     });
     return Object.values(out).sort((a, b) => a.year - b.year || (a.basis < b.basis ? -1 : 1));
   },
@@ -98,10 +107,12 @@ dash.calc('sbn_latest', {
     const S = dash.data('sbn_latest');
     const m = document.getElementById('f-sbn-month');
     if (m && S.status === 'ok' && S.data.length) m.textContent = MON[Number(S.data[0].date.slice(5, 7)) - 1] + ' ' + S.data[0].date.slice(0, 4);
-    const R = dash.data('fiscal_release');
-    document.querySelectorAll('[data-source="fiscal_release"][data-field="label"]').forEach((s) => {
-      if (R.status === 'ok' && R.data.length) { s.classList.remove('dash-skeleton'); s.textContent = R.data[0].label; }
-      else if (R.status !== 'loading') { s.classList.remove('dash-skeleton'); s.textContent = ''; }
+    ['fiscal_release', 'fiscal_monthly_release'].forEach((id) => {
+      const R = dash.data(id);
+      document.querySelectorAll(`[data-source="${id}"][data-field="label"]`).forEach((s) => {
+        if (R.status === 'ok' && R.data.length) { s.classList.remove('dash-skeleton'); s.textContent = R.data[0].label; }
+        else if (R.status !== 'loading') { s.classList.remove('dash-skeleton'); s.textContent = ''; }
+      });
     });
   }
 

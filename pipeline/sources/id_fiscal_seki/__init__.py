@@ -7,10 +7,8 @@ chapter IV (Ministry of Finance data). As published, nothing calculated.
   IV.4 Government securities (SBN) outstanding, Rp billion, by type and holder: end-December 2008 and 2009, then
        monthly from January 2010.
 
-Year to date (hand-entered, not from SEKI): ytd.csv in this folder holds the Ministry of Finance's announced
-outturn for the current year to date (revenue and grants, expenditure, surplus/deficit, Rp billion), typed in from
-the Ministry's monthly announcement with its date and source; written with basis "ytd" and a "through" month.
-Only years without a full-year actual are kept. Update by hand after each monthly announcement.
+Year to date: the monthly outturn comes from id_fiscal_kemenkeu (data/id/fiscal/id_fiscal_monthly.csv). An optional
+hand-entered ytd.csv in this folder (removed 30 Oct 2026) would still be read as basis "ytd".
 
 Files: bi.go.id/SEKI/tabel/TABEL4_<n>.xls (no key). The workbook's own English row labels (the ITEMS column) are kept.
 Bank Indonesia updates SEKI some weeks after the Ministry of Finance publishes; new data detected by the latest
