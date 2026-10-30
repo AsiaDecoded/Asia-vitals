@@ -289,7 +289,7 @@
 
   // Heat table: published y/y for the latest 13 months, each row on its own colour range; 2025 weights.
   const HEAT = [
-    ['all', 'CPI', 'lead'], ['under', 'Underlying CPI', 'lead'],
+    ['all', 'CPI', 'lead'], ['under', 'Underlying CPI', 'lead'], ['ex_food_energy', 'CPI less food and energy (calculated)', 'lead'],
     ['food', 'Food', ''], ['meals_out', 'Meals out and takeaway food', 'sub'], ['basic_food', 'Basic food', 'sub'], ['coicop_01', 'Food and non-alcoholic beverages (COICOP 01)', 'sub'],
     ['housing', 'Housing', ''], ['g23_1', 'Private housing rent', 'sub'], ['g23_2', 'Public housing rent', 'sub'],
     ['egw', 'Electricity, gas and water', ''], ['g25', 'Electricity', 'sub'], ['energy', 'Energy (calculated)', ''],
@@ -475,7 +475,8 @@
     const C = (series, key, name, color, extra) => Object.assign({ ds: 'hk_cpi', it: 'composite', basis: 'headline', series, key, name, color, measure: 'yoy' }, extra || {});
     const IT = { composite: 'CPI', a: 'CPI(A)', b: 'CPI(B)', c: 'CPI(C)' };
     lines('cpi-measures', [C('all', 'cpi', 'CPI', 'var(--ad-c2)'),
-      C('all', 'und', 'Underlying CPI', 'var(--ad-c1)', { basis: 'underlying', dash: true, late: true })]);
+      C('all', 'und', 'Underlying CPI', 'var(--ad-c1)', { basis: 'underlying', dash: true, late: true }),
+      C('ex_food_energy', 'core', 'CPI less food and energy (calculated)', 'var(--ad-c3)', { late: true })]);
     lines('cpi-momentum', [
       { ds: 'hk_cpi_sa', it: momIt, series: 'all', measure: 'sa_mom3_long', key: 'h', name: IT[momIt], color: 'var(--ad-c2)' },
       { ds: 'hk_cpi_sa', it: momIt, basis: 'underlying', series: 'all', measure: 'sa_mom3', key: 'u', name: `Underlying ${IT[momIt]}`, color: 'var(--ad-c1)', dash: true, late: true },

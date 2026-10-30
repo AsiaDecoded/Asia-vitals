@@ -269,6 +269,61 @@ def _energy(store, labels, weights, errors):
     return {"series": res, "check_egw_max_diff": round(worst, 3), "vintages": refs}
 
 
+def _core(store, labels, weights, energy, errors):
+    """CPI less food and non-alcoholic beverages and energy (calculated; India/Singapore definition: meals out stay in).
+    Food and non-alcoholic beverages = C&SD's basic food (groups 2-22; its y/y is within 0.1pp of C&SD's COICOP 01
+    division, for which no weight is published); energy = the groups in ENERGY. Built from the nine sections at
+    C&SD's published weights less basic food and the energy groups, on the 2019/20 base and chained each April at
+    March like _energy. Check: the nine sections at their weights reproduce the published all-items CPI."""
+    secs = [k for _c, sc, _a, k, _l in SECTIONS if sc]
+    by_label = {lab: k for k, (lab, lev) in labels.items() if lev == "group"}
+    ekeys = {n: next(by_label[p] for p in parts if p in by_label) for n, parts in ENERGY.items()}
+    vint = {}
+    for w in weights:
+        if w["index_type"] != "composite":
+            continue
+        v = vint.setdefault(w["reference_year"], {})
+        if w["level"] == "section" or w["series"] == "basic_food":
+            v[w["series"]] = w["weight_pct"]
+        elif w["level"] == "group":
+            for n, parts in ENERGY.items():
+                if w["label"] in parts:
+                    v[n] = w["weight_pct"]
+    refs = sorted(vint, key=_vintage_start)
+    need = set(secs) | {"basic_food"} | set(ENERGY)
+    for r in refs:
+        if not need <= set(vint[r]):
+            errors.append(f"core: weights {r} incomplete: missing {sorted(need - set(vint[r]))}")
+            return {}
+    gi = lambda k, d: store.get(("composite", "headline", k, d), {}).get("index")
+    dates = sorted({k[3] for k in store if k[0] == "composite" and k[2] == "all" and "index" in store[k]})
+    out, worst = {}, 0.0
+    for d in [x for x in dates if x >= _vintage_start(refs[0])]:
+        ref = [r for r in refs if _vintage_start(r) <= d][-1]
+        w = vint[ref]
+        link = None if ref == refs[0] else _shift(_vintage_start(ref), -1)
+        rel = lambda k: (gi(k, d) / (gi(k, link) if link else 100.0)) if gi(k, d) is not None and (not link or gi(k, link)) else None
+        rs = {k: rel(k) for k in secs + ["basic_food"]}
+        rs.update({n: rel(k) for n, k in ekeys.items()})
+        if any(v is None for v in rs.values()):
+            errors.append(f"core: an index is missing in {d[:7]}")
+            return {}
+        tot = sum(w[k] * rs[k] for k in secs)
+        excl = w["basic_food"] * rs["basic_food"] + sum(w[n] * rs[n] for n in ENERGY)
+        wex = w["basic_food"] + sum(w[n] for n in ENERGY)
+        base_all = gi("all", link) if link else 100.0
+        worst = max(worst, abs(base_all * tot / sum(w[k] for k in secs) - gi("all", d)))
+        base = out[link] if link else 100.0
+        out[d] = base * (tot - excl) / (sum(w[k] for k in secs) - wex)
+    if worst > 0.15:
+        errors.append(f"core: sections at their weights reproduce the all-items CPI only within {worst:.3f} (limit 0.15)")
+    res = {}
+    for d, v in out.items():
+        p = out.get(_shift(d, -12))
+        res[d] = {"index": round(v, 2), "yoy": round((v / p - 1) * 100, 1) if p else None}
+    return {"series": res, "check_all_items_max_diff": round(worst, 3)}
+
+
 def update(force=False, **_):
     OUT.mkdir(parents=True, exist_ok=True)
     RAWDIR.mkdir(parents=True, exist_ok=True)
@@ -427,6 +482,11 @@ def update(force=False, **_):
         store[("composite", "headline", "energy", d)] = {k: x for k, x in v.items() if x is not None}
     if en:
         labels["energy"] = ("Energy (calculated)", "calculated")
+    core = _core(store, labels, weights, en, errors) if en else {}
+    for d, v in (core.get("series") or {}).items():
+        store[("composite", "headline", "ex_food_energy", d)] = {k: x for k, x in v.items() if x is not None}
+    if core:
+        labels["ex_food_energy"] = ("CPI less food and non-alcoholic beverages and energy (calculated)", "calculated")
 
     # Checks
     latest = f"{code[8:12]}-{code[14:16]}-01"
@@ -436,7 +496,7 @@ def update(force=False, **_):
     req += [(it, b, "all", "yoy") for it in INDICES.values() for b in ("headline", "underlying")]
     req += [("composite", "headline", k, "yoy") for k in NINE + ["meals_out", "basic_food"]]
     req += [("composite", "headline", f"coicop_{i:02d}", "yoy") for i in range(1, 14)]
-    req += [("composite", "headline", "energy", "yoy")]
+    req += [("composite", "headline", "energy", "yoy"), ("composite", "headline", "ex_food_energy", "yoy")]
     for k in req:
         if k[3] not in store.get(k[:3] + (latest,), {}):
             errors.append(f"latest month {latest}: {k} missing")
@@ -514,6 +574,8 @@ def update(force=False, **_):
     def ordkey(s):
         if s == "energy":
             return order["egw"] + 0.5
+        if s == "ex_food_energy":
+            return 0.5
         if s in order:
             return order[s]
         if s.startswith("coicop_"):
@@ -565,7 +627,7 @@ def update(force=False, **_):
     prev = _shift(latest, -1)
     lr = {"date": latest, "month": label, "prev_month": MONTHS[int(prev[5:7]) - 1], "release_date": rel.get(latest, ""),
           "next_release": upcoming[0][0] if upcoming else ""}
-    for k in ["all", "food", "meals_out", "basic_food", "housing", "egw", "energy", "transport", "misc_services"]:
+    for k in ["all", "ex_food_energy", "food", "coicop_01", "meals_out", "basic_food", "housing", "egw", "energy", "transport", "misc_services"]:
         lr[f"{k}_yoy"], lr[f"{k}_yoy_prev"] = g("composite", "headline", k, latest), g("composite", "headline", k, prev)
     lr["underlying_yoy"], lr["underlying_yoy_prev"] = g("composite", "underlying", "all", latest), g("composite", "underlying", "all", prev)
     lr["all_mom"] = g("composite", "headline", "all", latest, "mom")
@@ -583,6 +645,7 @@ def update(force=False, **_):
                   {"long_rows": nlong, "contribution_months": len(by), "contribution_max_gap_pp": round(cmax, 2),
                    "worst_rate_vs_index_pp": round(worst[0], 3), "groups_latest": ngroups,
                    "energy_check_egw_max_diff": en.get("check_egw_max_diff"), "energy_weight_vintages": en.get("vintages"),
+                   "core_check_all_items_max_diff": core.get("check_all_items_max_diff"),
                    "upcoming_releases": [{"ref_month": k[:7], "date": d} for d, k in upcoming]})
     (OUT / "release_row.json").write_text(json.dumps([{**release, "upcoming": upcoming[0][0] if upcoming else ""}], indent=1) + "\n")
     return {"updated": True, "code": rcode,

@@ -21,6 +21,9 @@
       <div class="jg-card jg-tile"><div class="lbl">Underlying CPI, y/y</div>
         <div class="val"><span data-source="hk_cpi_latest" data-field="underlying_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
         <div class="sub">prior month <span data-source="hk_cpi_latest" data-field="underlying_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">CPI less food and energy, y/y (calculated)</div>
+        <div class="val"><span data-source="hk_cpi_latest" data-field="ex_food_energy_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="hk_cpi_latest" data-field="ex_food_energy_yoy_prev" data-row="0">—</span>%</div></div>
       <div class="jg-card jg-tile"><div class="lbl">Food, y/y</div>
         <div class="val"><span data-source="hk_cpi_latest" data-field="food_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
         <div class="sub">prior month <span data-source="hk_cpi_latest" data-field="food_yoy_prev" data-row="0">—</span>%</div></div>
@@ -160,7 +163,7 @@
       <h2>Chart notes</h2>
       <ol>
         <li><b>All figures are as published by the Census and Statistics Department (C&amp;SD); none is calculated.</b> Indices are on the October 2019 &ndash; September 2020 = 100 base. Rates are C&amp;SD&rsquo;s, computed by C&amp;SD from indices with more than one decimal; a published 0.0 means a change of less than 0.05%.</li>
-        <li><b>Chart 1, Hong Kong consumer inflation:</b> CPI from October 1981, when its y/y series starts, and the underlying CPI, which nets out the effects of the Government&rsquo;s one-off relief measures (rates concessions, public housing rent waivers, electricity charges subsidies and similar). The underlying series starts in 2007. It is C&amp;SD&rsquo;s own measure and is shown on this page only; it is not the CPI excluding food and energy on the India and Singapore pages, which C&amp;SD does not publish.</li>
+        <li><b>Chart 1, Hong Kong consumer inflation:</b> CPI from October 1981, when its y/y series starts, and the underlying CPI, which nets out the effects of the Government&rsquo;s one-off relief measures (rates concessions, public housing rent waivers, electricity charges subsidies and similar). The underlying series starts in 2007. It is C&amp;SD&rsquo;s own measure and is shown on this page only; it is not the CPI excluding food and energy on the India and Singapore pages, which C&amp;SD does not publish. CPI less food and non-alcoholic beverages and energy (calculated, from October 2020) is the core measure used across the Asia dashboards; see Methodology.</li>
         <li><b>Chart 2, Hong Kong CPI momentum:</b> C&amp;SD&rsquo;s average monthly rate of change in the seasonally adjusted index over the latest three months, for the index chosen above (CPI(A), (B) and (C) from 1981, CPI from 1992). The underlying measure (dashed) is published for the latest 36 months only. C&amp;SD revises seasonally adjusted figures as more data arrive; the page shows the latest vintage.</li>
         <li><b>Table, Hong Kong consumer inflation:</b> y/y for the latest 13 months by commodity/service section, with selected groups. Weights are C&amp;SD&rsquo;s 2025 expenditure weights for the CPI (used from April 2026), in % of CPI. Each row is coloured on its own range, from green at its lowest rate in the window to red at its highest.</li>
         <li><b>Table and chart, contributions:</b> the contributions of each section to CPI y/y, in percentage points, as C&amp;SD publishes them in Table 3.05 of each month&rsquo;s Monthly Report on the CPI (food split into meals out and takeaway food, and basic food). Each month is the figure in that month&rsquo;s report; the web reports start with the June 2023 issue. The published parts are rounded to one decimal, so they can differ from the published y/y (the line) by up to 0.2pp. Alcoholic drinks and tobacco, clothing and footwear, durable goods and miscellaneous goods share one colour; the tooltip shows each.</li>
@@ -193,12 +196,21 @@
         <li><b>Check:</b> the same method applied to electricity, towngas, LPG and water reproduces C&amp;SD&rsquo;s published section index &ldquo;Electricity, gas and water&rdquo; within 0.1 index points every month since October 2019 (the difference is rounding of the published one-decimal indices). The pipeline stops if it exceeds 0.15.</li>
         <li><b>Relief measures:</b> the index is on the headline CPI and so includes the Government&rsquo;s electricity charges subsidies, which moved electricity prices sharply in 2020&ndash;21 and in later years. C&amp;SD publishes underlying indices only for sections, not for groups, so an underlying energy index cannot be built from published figures.</li>
       </ul>
+      <h3>CPI less food and non-alcoholic beverages and energy (calculated)</h3>
+      <p>C&amp;SD publishes no core measure (its underlying CPI removes only the Government&rsquo;s one-off relief measures). The page calculates the core measure used for India and Singapore and on the Asia tab: the CPI less food and non-alcoholic beverages (COICOP 01; meals out and takeaway food stay in) and less energy (as defined above).</p>
+      <ul>
+        <li><b>Food and non-alcoholic beverages:</b> C&amp;SD&rsquo;s basic food (groups 2&ndash;22 on the 2025 classification), the only food aggregate with a published weight. Its y/y is within 0.1pp of C&amp;SD&rsquo;s COICOP 01 division every month since October 2005.</li>
+        <li><b>Weights (% of CPI):</b> basic food 10.36 (2019/20 weights), 9.10 (2023), 8.71 (2024), 9.35 (2025); energy as above. The measure covers 86.5% of the CPI on the 2019/20 weights and 87.7% on the 2025 weights.</li>
+        <li><b>Method:</b> the nine sections at C&amp;SD&rsquo;s published weights, less basic food and the four energy groups at theirs, on the 2019/20 base and chained in at March for each later set of weights, as for energy. y/y from that index, from October 2020.</li>
+        <li><b>Check:</b> the nine sections at their weights reproduce C&amp;SD&rsquo;s published all-items CPI within 0.09 index points every month since October 2019 (rounding); the pipeline stops above 0.15.</li>
+        <li><b>Relief measures:</b> on the headline CPI, so it includes the Government&rsquo;s rates concessions and public housing rent waivers (housing is in the measure); electricity subsidies fall out with energy.</li>
+      </ul>
       <h3>What C&amp;SD publishes</h3>
       <ul>
         <li><b>Indices and rates:</b> index, m/m and y/y for all items and the nine sections (from 1980), the 75 groups (Table E501), and the CPI by COICOP 2018 division (from 2005).</li>
         <li><b>Contributions:</b> the contribution of each section to CPI y/y in the reference month, in the Monthly Report on the CPI.</li>
         <li><b>Seasonally adjusted:</b> the average monthly change over the latest three months (full history for the headline indices; 36 months for the underlying), and the seasonally adjusted index and m/m for all items and food (36 months per report).</li>
-        <li><b>Not published:</b> a goods/services split, an energy index (the page calculates one; above), a CPI excluding food and energy, item-level indices.</li>
+        <li><b>Not published:</b> a goods/services split, an energy index and a CPI excluding food and energy (the page calculates both; above), item-level indices.</li>
       </ul>
       <h3>Producer and trade prices</h3>
       <p>C&amp;SD compiles producer price indices for manufacturing and for selected service industries quarterly (2015 = 100). There is no monthly PPI. Its monthly merchandise trade index numbers include unit value indices of imports and total exports (2024 = 100), which move with prices and with the mix of goods traded.</p>
