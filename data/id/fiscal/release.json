@@ -1,0 +1,24 @@
+{
+ "code": "F2025-2026-09",
+ "label": "budget and actual to 2025; SBN to Sep 2026",
+ "latest_year": 2025,
+ "latest_month": "2026-09-01",
+ "last_modified": {
+  "4_1": "Tue, 13 Oct 2026 09:27:53 GMT",
+  "4_2": "Tue, 13 Oct 2026 09:29:07 GMT",
+  "4_3": "Tue, 13 Oct 2026 09:30:21 GMT",
+  "4_4": "Tue, 06 Oct 2026 10:32:21 GMT"
+ },
+ "table": "Bank Indonesia SEKI IV.1-IV.4",
+ "processed_at": "2026-10-30T06:41:36Z",
+ "rows": 8574,
+ "warnings": [],
+ "fingerprint": "c2873b9cd9570af6",
+ "long_rows": 8574,
+ "history": [
+  {
+   "code": "F2025-2026-09",
+   "processed_at": "2026-10-30T06:41:36Z"
+  }
+ ]
+}
