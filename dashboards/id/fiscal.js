@@ -422,7 +422,7 @@ dash.calc('sbn_latest', {
     legend('f-bb-legend', [['lnd', '#BD1B21', 'Budget law (APBN)'], ['ln', '#BD1B21', 'Actual']]);
     const pc2 = (v) => (v == null ? '—' : v.toFixed(2) + '%');
     hover(f, rows, (r) => String(r.year), H, 'f-bb', (r) => String(r.year),
-      (r) => [['#BD1B21', r.mof ? 'Budget law (on the budget\u2019s GDP)' : 'Budget law', pc2(r.budget)], ['#BD1B21', 'Actual', pc2(r.actual)]]);
+      (r) => [['#BD1B21', 'Budgeted', pc2(r.budget)], ['#BD1B21', 'Actual', pc2(r.actual)]]);
   }
 
   function mixChart() {
