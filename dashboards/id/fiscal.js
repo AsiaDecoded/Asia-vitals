@@ -81,6 +81,15 @@ dash.calc('sbn_latest', {
     J.redrawFiscal();
   });
   J.state.fMix = 'revenue';
+  const segB = document.getElementById('f-budget-seg');
+  if (segB) segB.addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    J.state.fBud = b.dataset.m;
+    segB.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    const u = document.getElementById('f-budget-units'); if (u) u.textContent = b.dataset.m === 'pct' ? '% of GDP' : 'Rp trillion';
+    J.redrawFiscal();
+  });
+  J.state.fBud = 'rp';
   const bad = (D) => D.status === 'error' || D.status === 'connect' || D.status === 'declined';
   const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   const trn = (v) => (v == null ? '—' : 'Rp' + d3.format(',.1f')(v / 1000) + 'trn');
@@ -240,20 +249,26 @@ dash.calc('sbn_latest', {
     if (D.status !== 'ok') { box.replaceChildren(); return; }
     const by = {};
     D.data.forEach((r) => { (by[r.year] = by[r.year] || { year: r.year })[r.basis] = r.balance; });
-    const rows = Object.values(by).filter((r) => r.budget != null || r.actual != null).sort((a, b) => a.year - b.year);
+    const pct = J.state.fBud === 'pct';
+    const G = dash.data('id_fiscal_gdp');
+    const gdp = {};
+    if (pct && G.status === 'ok') G.data.forEach((r) => { if (r.basis === 'actual' && r.gdp !== '') gdp[Number(r.year)] = Number(r.gdp); });
+    let rows = Object.values(by).filter((r) => r.budget != null || r.actual != null).sort((a, b) => a.year - b.year);
+    if (pct) rows = rows.filter((r) => gdp[r.year]);
     if (!rows.length) { box.replaceChildren(); return; }
-    const H = 260, t = (v) => v / 1000;
-    const vals = rows.flatMap((r) => [r.budget, r.actual].filter((v) => v != null).map(t));
+    const H = 260, t = (v, r) => (pct ? v / gdp[r.year] * 100 : v / 1000);
+    const vals = rows.flatMap((r) => [r.budget, r.actual].filter((v) => v != null).map((v) => t(v, r)));
     const f = frame(box, rows.map((r) => String(r.year)), H, d3.min(vals), d3.max(vals), 0.2);
     yearAxis(f, H, rows);
     const bw = f.x.bandwidth() / 2;
     [['budget', '#ADB5BD', 0], ['actual', '#1F4E79', 1]].forEach(([k, c, j]) => {
       f.svg.append('g').selectAll('rect').data(rows.filter((r) => r[k] != null)).join('rect')
         .attr('x', (r) => f.x(String(r.year)) + j * bw).attr('width', bw)
-        .attr('y', (r) => f.y(Math.max(0, t(r[k])))).attr('height', (r) => Math.abs(f.y(t(r[k])) - f.y(0))).attr('fill', c);
+        .attr('y', (r) => f.y(Math.max(0, t(r[k], r)))).attr('height', (r) => Math.abs(f.y(t(r[k], r)) - f.y(0))).attr('fill', c);
     });
     legend('f-budget-legend', [['sw', '#ADB5BD', 'Budget (APBN)'], ['sw', '#1F4E79', 'Actual']]);
-    hover(f, rows, (r) => String(r.year), H, 'f-budget', (r) => String(r.year), (r) => [['#ADB5BD', 'Budget', trn(r.budget)], ['#1F4E79', 'Actual', trn(r.actual)]]);
+    const fmt = (v, r) => (v == null ? '—' : pct ? t(v, r).toFixed(2) + '%' : trn(v));
+    hover(f, rows, (r) => String(r.year), H, 'f-budget', (r) => String(r.year), (r) => [['#ADB5BD', 'Budget', fmt(r.budget, r)], ['#1F4E79', 'Actual', fmt(r.actual, r)]]);
   }
 
   function mixChart() {
