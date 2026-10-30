@@ -1,7 +1,7 @@
 name: BPS (Indonesia) discovery
 
 # One-off helper: probes BPS, Bank Indonesia SEKI and Satu Data for Indonesian price data
-# and saves the raw responses to the "discovery" branch, under discovery/bps17 (WDI metadata and GDP, IMF fiscal series; bps14 fiscal round 8, APBN KiTa list and PDFs; bps7-13 fiscal, bps6 GDP and trade).
+# and saves the raw responses to the "discovery" branch, under discovery/bps18 (original budget laws; WDI metadata and GDP, IMF fiscal series; bps14 fiscal round 8, APBN KiTa list and PDFs; bps7-13 fiscal, bps6 GDP and trade).
 on:
   workflow_dispatch:
   push:
@@ -19,6 +19,7 @@ on:
       - pipeline/tools/fiscal_probe7.py
       - pipeline/tools/fiscal_probe8.py
       - pipeline/tools/imf_probe.py
+      - pipeline/tools/apbn_law_probe.py
       - .github/workflows/bps-discover.yml
 
 permissions:
@@ -36,7 +37,7 @@ jobs:
       - name: Install tools
         run: sudo apt-get install -y -qq poppler-utils && pip install -q xlrd
       - name: Probe the sources
-        run: timeout 40m python -I -u pipeline/tools/imf_probe.py discovery/bps17 || true
+        run: timeout 40m python -I -u pipeline/tools/apbn_law_probe.py discovery/bps18 || true
         env:
           BPS_KEY: ${{ secrets.BPS_KEY }}
       - name: Push results to the discovery branch
@@ -50,7 +51,7 @@ jobs:
           else
             git checkout --orphan discovery && git rm -rf --quiet --cached .
           fi
-          mkdir -p discovery && rm -rf discovery/bps17 && cp -r /tmp/discovery/bps17 discovery/
-          git add discovery/bps17
+          mkdir -p discovery && rm -rf discovery/bps18 && cp -r /tmp/discovery/bps18 discovery/
+          git add discovery/bps18
           git commit -m "BPS discovery"
           git push origin discovery
