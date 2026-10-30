@@ -1,2 +1,17 @@
+== id_fiscal_kemenkeu
+   year to date to end-Sep 2026: revenue Rp2341.5 T, expenditure Rp2660.5 T, balance Rp-319.0 T; 6 months, 18 decks read
+   warning: APBN KiTa Maret 2025 (b6026682-cd60-48f9-9183-f03d51df9479): no outturn summary read
+   warning: APBN KiTa April 2025 (9c212697-97e1-48ac-b664-275b99a702a0): no outturn summary read
+   warning: APBN KiTa Mei 2025 (5cd6f040-dc25-42d6-a8e5-98b71a3e6760): no outturn summary read
+   warning: APBN KiTa Juni 2025 (9f4cf755-9d3e-4296-ad11-ecfbf4ea8a1b): no outturn summary read
+   warning: APBN KiTa September 2025 (00ce3e8a-4394-44f5-aed0-1fd8763fedfb): no outturn summary read
+   warning: APBN KiTa Oktober 2025 (aa2544e4-3518-45f7-a272-80e6028e7841): no outturn summary read
+   warning: APBN KiTa November 2025 (b50146cd-697a-49fb-b165-79bc46077d10): no outturn summary read
+   warning: APBN KiTa Desember 2025 (796fa9a6-ef94-416d-8b22-e012b513f3ec): no outturn summary read
+   warning: APBN KITA Januari 2026 (b7f00cc5-15ad-4d8d-9bb5-42e18e8494a8): no outturn summary read
+   warning: APBN KITA Februari 2026 (89672833-8f45-4160-87fd-dbb441714b13): no outturn summary read
+   warning: APBN KITA April 2026 (f1c0dbec-4b48-4ea9-bf05-3770d9fced4b): no outturn summary read
+   warning: APBN KITA Juli 2026 (fd879869-f1e2-4475-b71f-cabff87a0c56): no outturn summary read
+   warning: months with no deck read: ['2026-03', '2026-06']
 == id_fiscal_seki
-   budget and actual to 2025; SBN to Sep 2026; 2505 annual and 6072 SBN rows
+   budget and actual to 2025; SBN to Sep 2026; 2502 annual and 6072 SBN rows
