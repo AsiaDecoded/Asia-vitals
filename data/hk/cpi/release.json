@@ -6,10 +6,10 @@
  "report_code": "B10600012026MM09",
  "e501_code": "D56000012026MM09",
  "table": "C&SD web tables 510-60001/60001A/60002/60002A/60003/60004, Table E501, Monthly Report on the CPI (web), Annex 1",
- "processed_at": "2026-10-30T01:39:16Z",
- "rows": 219533,
+ "processed_at": "2026-10-30T02:01:33Z",
+ "rows": 219617,
  "warnings": [],
- "long_rows": 142236,
+ "long_rows": 142392,
  "contribution_months": 40,
  "contribution_max_gap_pp": 0.2,
  "worst_rate_vs_index_pp": 0.145,
@@ -21,6 +21,7 @@
   "2024",
   "2025"
  ],
+ "core_check_all_items_max_diff": 0.09,
  "upcoming_releases": [
   {
    "ref_month": "2026-10",
@@ -50,7 +51,7 @@
  "history": [
   {
    "code": "C2026-09",
-   "processed_at": "2026-10-30T01:39:16Z"
+   "processed_at": "2026-10-30T02:01:33Z"
   }
  ]
 }
