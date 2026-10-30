@@ -2,8 +2,10 @@
 chapter IV (Ministry of Finance data). As published, nothing calculated.
 
   IV.1 Government revenue and grants, IV.2 government expenditure, IV.3 government financing: annual, Rp billion,
-       budget (APBN) and actual (realisasi), the current sheet's years (2008 on). Earlier sheets (1990-2000 on the
-       April-March fiscal year, 2001-2007) are not read.
+       budget (APBN) and actual (realisasi), the current sheet's years (2008 on), every row.
+       Earlier sheets, actual totals only (revenue and grants, expenditure, surplus/deficit; added 30 Oct 2026 for the growth
+       chart): 2001-2007 (calendar years) and 1990-2000 (SEKI's 1990 = fiscal year April 1990-March 1991, ...;
+       2000 = the nine-month transition April-December 2000) -> id_fiscal_hist.csv.
   IV.4 Government securities (SBN) outstanding, Rp billion, by type and holder: end-December 2008 and 2009, then
        monthly from January 2010.
 
@@ -115,6 +117,40 @@ def read_sbn(sh):
     return out
 
 
+HIST = {"revenue": r"^Pendapatan Negara dan Hibah$", "expenditure": r"^Belanja Negara$", "financing": r"^Surplus\s*/\s*Defisit$"}
+
+
+def read_hist(sh):
+    """Totals from an older IV.1-IV.3 sheet: {("actual", year): value} for the table's total row (HIST). Actual only
+    (the 1990-2000 budget block in IV.3 is not laid out like the others)."""
+    yr = next(r for r in range(min(12, sh.nrows)) if sum(isinstance(v, float) and 1989 < v < 2008 for v in sh.row_values(r)[3:]) >= 5)
+    cols = {}
+    for c, v in enumerate(sh.row_values(yr)[3:], start=3):
+        if isinstance(v, float) and 1989 < v < 2008 and int(v) not in cols.values():
+            cols[c] = int(v)
+        elif cols:
+            break
+    out, section = {}, None
+    for r in range(yr + 1, sh.nrows):
+        lab = re.sub(r"\s+", " ", " ".join(str(sh.cell_value(r, c)).strip() for c in (1, 2)).strip())
+        if re.match(r"(?i)^apbn$", lab):
+            section = "budget"
+        elif re.match(r"(?i)^realisasi$", lab):
+            section = "actual"
+        elif section == "actual" and any(re.match(pat, lab, re.I) for pat in HIST.values()):
+            if any(k[0] == section for k in out):
+                continue   # first match per section is the total
+            for c, y in cols.items():
+                v = _num(sh.cell_value(r, c))
+                if v is not None:
+                    out[(section, y)] = v
+    return out
+
+
+def period_label(y):
+    return f"Apr {y}-Mar {y + 1}" if y < 2000 else ("Apr-Dec 2000" if y == 2000 else str(y))
+
+
 def checks(ann, sbn):
     errors, warnings = [], []
     a = {(t, s, it): v for t, rows in ann.items() for s, it, _l, _e, v in rows}
@@ -182,19 +218,31 @@ def update(force=False, **_):
     for n in list(TABLES) + ["4_4"]:
         b, lm = seki.download(n)
         books[n], stamps[n] = b, lm
-    ann = {}
+    ann, hist = {}, {}
     for n, t in TABLES.items():
         wb = xlrd.open_workbook(file_contents=books[n])
         ann[t] = read_annual(wb.sheet_by_index(wb.nsheets - 1))
+        for i in range(wb.nsheets - 1):
+            for k, v in read_hist(wb.sheet_by_index(i)).items():
+                hist.setdefault(k, {})[t] = v
     wb = xlrd.open_workbook(file_contents=books["4_4"])
     sbn = read_sbn(wb.sheet_by_index(wb.nsheets - 1))
     latest_m = max(d for _i, _l, _e, v in sbn for d in v)
     latest_y = max(y for rows in ann.values() for _s, _i, _l, _e, v in rows for y in v)
     ytd_text = Path(__file__).with_name("ytd.csv").read_text(encoding="utf-8") if Path(__file__).with_name("ytd.csv").exists() else ""
-    fp = hashlib.sha256(json.dumps([ann, sbn, ytd_text], sort_keys=True, default=str).encode()).hexdigest()[:16]
+    fp = hashlib.sha256(json.dumps([ann, sbn, ytd_text, sorted((list(k), v) for k, v in hist.items())], sort_keys=True,
+                                   default=str).encode()).hexdigest()[:16]
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {state.get('label')})"}
     errors, warnings = checks(ann, sbn)
+    hyears = sorted({k[1] for k in hist})
+    if hyears != list(range(1990, 2008)):
+        errors.append(f"older sheets: years read {hyears[:3]}..{hyears[-3:]}, expected 1990-2007")
+    for k, v in sorted(hist.items()):
+        if set(v) != set(TABLES.values()):
+            errors.append(f"older sheets {k}: missing {set(TABLES.values()) - set(v)}")
+        elif abs(v["revenue"] - v["expenditure"] - v["financing"]) > 2:
+            errors.append(f"older sheets {k}: revenue - expenditure {v['revenue'] - v['expenditure']:,.0f} vs surplus/deficit {v['financing']:,.0f}")
     if state.get("latest_month") and latest_m < state["latest_month"]:
         errors.append(f"IV.4 latest month {latest_m} is before the one stored ({state['latest_month']})")
     if errors:
@@ -229,6 +277,12 @@ def update(force=False, **_):
         w.writerow(acols)
         for r in arows:
             w.writerow([r.get(c, "") for c in acols])
+    hcols = ["year", "period", "basis", "revenue", "expenditure", "balance"]
+    with open(OUT / "id_fiscal_hist.csv", "w", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh, lineterminator="\n")
+        w.writerow(hcols)
+        for (b, y), v in sorted(hist.items(), key=lambda kv: (kv[0][1], kv[0][0])):
+            w.writerow([y, period_label(y), b, v["revenue"], v["expenditure"], v["financing"]])
     srows = [{"date": d, "item": i, "label": e or l, "label_id": l, "value": val}
              for i, l, e, v in sbn for d, val in sorted(v.items())]
     srows.sort(key=lambda r: (r["date"], r["item"]))
