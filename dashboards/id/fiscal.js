@@ -225,11 +225,12 @@ dash.calc('sbn_latest', {
     legend('f-balance-gdp-legend', [['ln', '#0C84FF', 'Revenue and grants'], ['ln', '#BD1B21', 'Expenditure'], ['sw', '#A6A6A6', 'Fiscal balance']]);
     const mo = (d) => MON[Number(d.slice(5, 7)) - 1];
     const lab = (r) => `${r.year}`;
-    const pc = (v) => (v == null ? '—' : v.toFixed(2) + '%');
+    const pc = (v) => (v == null ? '—' : J.f1(v) + '%');
+    const pc2 = (v) => (v == null ? '—' : v.toFixed(2) + '%');
     hover(f, rows, (r) => String(r.year), H, 'f-balance-gdp', lab, (r) => (r.basis === 'ytd'
       ? [['#0C84FF', `Revenue, Jan–${mo(r.through)} (calc.)`, pc(r.rev)], ['#BD1B21', `Expenditure, Jan–${mo(r.through)} (calc.)`, pc(r.exp)],
-         ['#A6A6A6', `Fiscal balance, Jan–${mo(r.mof || r.through)} (MoF)`, pc(r.bal)]]
-      : [['#0C84FF', 'Revenue and grants', pc(r.rev)], ['#BD1B21', 'Expenditure', pc(r.exp)], ['#A6A6A6', 'Fiscal balance', pc(r.bal)]]));
+         ['#A6A6A6', `Fiscal balance, Jan–${mo(r.mof || r.through)} (MoF)`, pc2(r.bal)]]
+      : [['#0C84FF', 'Revenue and grants', pc(r.rev)], ['#BD1B21', 'Expenditure', pc(r.exp)], ['#A6A6A6', 'Fiscal balance', pc2(r.bal)]]));
   }
 
   function budgetChart() {
