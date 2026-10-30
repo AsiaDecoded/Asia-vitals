@@ -1,8 +1,9 @@
-name: Hong Kong test (dev-hk)
+name: Hong Kong test
 
-# Runs the Hong Kong sources (hk_cpi_censtatd, hk_ppi_censtatd) on the dev-hk branch, which are not yet in the
+# Runs the Hong Kong sources (hk_cpi_censtatd, hk_ppi_censtatd) with force (re-processes the latest release), on the
 # shared registry (pipeline/sources/__init__.py), with their checks; then checks the September 2026 figures
-# against C&SD's release (22 Oct 2026) and pushes data/hk and raw/hk back to dev-hk.
+# against C&SD's release (22 Oct 2026) and pushes data/hk and raw/hk back to the branch it ran on.
+# Manual on main (use after a change to the Hong Kong sources); push trigger only on dev-hk.
 # Not part of the scheduled update until merged.
 on:
   workflow_dispatch:
@@ -97,7 +98,7 @@ jobs:
           sys.exit(1 if bad else 0)
           EOF
 
-      - name: Push data and report to dev-hk
+      - name: Push data and report to the branch it ran on
         if: always()
         run: |
           git config user.name "asia-vitals bot"
@@ -105,4 +106,4 @@ jobs:
           mkdir -p data/hk && cp hk_report.txt data/hk/test_report.txt 2>/dev/null || true
           git add data/hk; if [ -d raw/hk ]; then git add raw/hk; fi
           git commit -qm "Hong Kong test run ${{ github.run_id }}" || exit 0
-          for i in 1 2 3; do git pull -q --rebase origin dev-hk && git push -q origin HEAD:dev-hk && break; sleep 5; done
+          for i in 1 2 3; do git pull -q --rebase origin ${{ github.ref_name }} && git push -q origin HEAD:${{ github.ref_name }} && break; sleep 5; done

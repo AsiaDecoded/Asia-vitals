@@ -58,6 +58,10 @@ MEAS = {"Index": "index", "Month-to-month % change": "mom", "Year-on-year % chan
 # Apr 2026 (2024/25 HES and a new group classification). Earlier weight vintages are not flagged here.
 BREAKS = {"2020-10-01", "2025-04-01", "2026-04-01"}
 # Composite groups the dashboard charts over time (food and energy, housing, heat table); the rest only in hk_cpi.csv
+# Energy CPI (calculated; HK row of claude/asia-energy-index-definitions.md): group labels across classifications
+ENERGY = {"electricity": ["Electricity"], "towngas": ["Towngas"], "lpg": ["Liquefied petroleum gas and other fuel"],
+          "motor_fuel": ["Fuels for personal transport equipment", "Motor fuel"]}
+OLD_ANNEX = RAW / "hk" / "cpi_censtatd" / "annex1" / "B10600012026MM03_annex1.xlsx"  # 2024, 2023, 2019/20 weights (fixed)
 DASH_GROUPS = {"g23_1", "g23_2", "g24", "g25", "g26", "g57", "g66", "g69"}
 
 # Release figures to check against (C&SD press release, 22 Oct 2026, September 2026)
@@ -149,6 +153,120 @@ def _contrib_issue(code):
         return None
     t = censtatd.report(code, tables=[tid])["tables"][tid]
     return {"code": code, "table": tid, "labels": censtatd.class_labels(t["lang"]), "csv": next(iter(t["data"].values()))}
+
+
+def _parse_annex(xbytes):
+    """Weights (% of CPI) from an Annex 1 workbook: one sheet per reference year ("2025 CPI weights",
+    "2019-20 CPI weights"). Group keys follow that vintage's own group numbers; labels identify groups across vintages."""
+    import openpyxl  # installed by the workflow
+    wb = openpyxl.load_workbook(io.BytesIO(xbytes), read_only=True, data_only=True)
+    out = []
+    for ws in wb.worksheets:
+        m = re.match(r"(\d{4})(?:[-/ ](\d{2}))? CPI weights", ws.title)
+        if not m:
+            continue
+        ref = m.group(1) + (f"/{m.group(2)}" if m.group(2) else "")
+        rows = list(ws.iter_rows(values_only=True))
+        adopted = next((str(r[0]) for r in rows if r and isinstance(r[0], str) and r[0].startswith("(Adopted")), "")
+        section = None
+        for r in rows:
+            if len(r) < 7 or not isinstance(r[3], (int, float)):
+                continue
+            name = (r[2] or "").strip()
+            if r[0] is None:
+                sec = next(((k, lab) for c, _s, a, k, lab in SECTIONS if a == name), None)
+                if name.startswith("Basic food"):
+                    key, level, lab = "basic_food", "subsection", "Basic food"
+                elif sec:
+                    key, lab = sec
+                    level = "all" if key == "all" else "section"
+                    section = key
+                else:
+                    continue
+            else:
+                code_g = str(r[0]).rstrip("0").rstrip(".") if isinstance(r[0], float) else str(r[0])
+                key, level, lab = _group_key(code_g), "subgroup" if "." in code_g else "group", name
+                if code_g == "1":
+                    key, level = "meals_out", "subsection"
+            for it, col in (("composite", 3), ("a", 4), ("b", 5), ("c", 6)):
+                if isinstance(r[col], (int, float)):
+                    out.append({"reference_year": ref, "adopted": adopted, "index_type": it, "series": key,
+                                "label": lab, "level": level, "section": section if level not in ("all", "section") else key,
+                                "weight_pct": round(float(r[col]), 2)})
+    return out
+
+
+def _vintage_start(ref):
+    """First reference month a weight vintage applies to: 2019/20 weights from Oct 2019 (start of the
+    Oct 2019 - Sep 2020 = 100 series); annual weights for year Y from April of Y+1."""
+    return "2019-10-01" if ref == "2019/20" else f"{int(ref) + 1}-04-01"
+
+
+def _energy(store, labels, weights, errors):
+    """Energy CPI (calculated): electricity, towngas, LPG and other fuel, and fuels for personal transport equipment
+    (motor fuel), weighted by C&SD's published Composite CPI weights. Within the 2019/20 vintage the groups are on
+    its base (Oct 2019 - Sep 2020 = 100): I = sum(w*I_g)/sum(w). Each later vintage is chained at March:
+    I_t = I_Mar * sum(w*I_g,t/I_g,Mar)/sum(w). y/y from the index. Check: the same method on electricity, towngas,
+    LPG and water must reproduce the published section "Electricity, gas and water"."""
+    by_label = {}
+    for k, (lab, lev) in labels.items():
+        if lev == "group":
+            by_label[lab] = k
+    cur = {}
+    for name, parts in ENERGY.items():
+        k = next((by_label[p] for p in parts if p in by_label), None)
+        if not k:
+            errors.append(f"energy: group '{name}' not found in Table E501")
+            return {}
+        cur[name] = k
+    wat = by_label.get("Water and sewage charges")
+    vint = {}
+    for w in weights:
+        if w["index_type"] != "composite" or w["level"] != "group":
+            continue
+        for name, parts in list(ENERGY.items()) + [("water", ["Water and sewage charges"])]:
+            if w["label"] in parts:
+                vint.setdefault(w["reference_year"], {})[name] = w["weight_pct"]
+    refs = sorted(vint, key=_vintage_start)
+    for r in refs:
+        if set(vint[r]) != set(ENERGY) | {"water"}:
+            errors.append(f"energy: weights {r} incomplete: {sorted(vint[r])}")
+            return {}
+    gi = lambda k, d: store.get(("composite", "headline", k, d), {}).get("index")
+    dates = sorted({k[3] for k in store if k[0] == "composite" and k[2] == "all" and "index" in store[k]})
+    out, worst = {}, 0.0
+    for d in [x for x in dates if x >= _vintage_start(refs[0])]:
+        ref = [r for r in refs if _vintage_start(r) <= d][-1]
+        w = vint[ref]
+        link = None if ref == refs[0] else _shift(_vintage_start(ref), -1)
+        def agg(names, keys, base):
+            num_ = den = 0.0
+            for n in names:
+                v, b = gi(keys[n], d), (gi(keys[n], link) if link else 100.0)
+                if v is None or b is None:
+                    return None
+                num_ += w[n] * v / b * 100
+                den += w[n]
+            return base * num_ / den / 100
+        e_base = out[link] if link else 100.0
+        out[d] = agg(list(ENERGY), cur, e_base)
+        if out[d] is None:
+            errors.append(f"energy: a group index is missing in {d[:7]}")
+            return {}
+        egw_pub = gi("egw", d)
+        egw_base = (gi("egw", link) if link else 100.0)
+        if egw_pub is not None and wat:
+            keys = dict(cur, water=wat)
+            x = agg(["electricity", "towngas", "lpg", "water"], keys, egw_base)
+            if x is not None:
+                worst = max(worst, abs(x - egw_pub))
+    if worst > 0.15:
+        errors.append(f"energy: method reproduces 'Electricity, gas and water' only within {worst:.3f} index points (limit 0.15)")
+    res = {}
+    for d, v in out.items():
+        p = out.get(_shift(d, -12))
+        res[d] = {"index": round(v, 2), "yoy": round((v / p - 1) * 100, 1) if p else None}
+    return {"series": res, "check_egw_max_diff": round(worst, 3), "vintages": refs}
 
 
 def update(force=False, **_):
@@ -253,39 +371,10 @@ def update(force=False, **_):
         import openpyxl  # installed by the workflow
         xbytes = censtatd.get(annex)
         (RAWDIR / "annex1_weights.xlsx").write_bytes(xbytes)
-        wb = openpyxl.load_workbook(io.BytesIO(xbytes), read_only=True, data_only=True)
-        for ws in wb.worksheets:
-            m = re.match(r"(\d{4}) CPI weights", ws.title)
-            if not m:
-                continue
-            ref = m.group(1)
-            rows = list(ws.iter_rows(values_only=True))
-            adopted = next((str(r[0]) for r in rows if r and isinstance(r[0], str) and r[0].startswith("(Adopted")), "")
-            section = None
-            for r in rows:
-                if len(r) < 7 or not isinstance(r[3], (int, float)):
-                    continue
-                name = (r[2] or "").strip()
-                if r[0] is None:
-                    sec = next(((k, lab) for c, _s, a, k, lab in SECTIONS if a == name), None)
-                    if name.startswith("Basic food"):
-                        key, level, lab = "basic_food", "subsection", "Basic food"
-                    elif sec:
-                        key, lab = sec
-                        level = "all" if key == "all" else "section"
-                        section = key
-                    else:
-                        continue
-                else:
-                    code_g = str(r[0]).rstrip("0").rstrip(".") if isinstance(r[0], float) else str(r[0])
-                    key, level, lab = _group_key(code_g), "subgroup" if "." in code_g else "group", name
-                    if code_g == "1":
-                        key, level = "meals_out", "subsection"
-                for it, col in (("composite", 3), ("a", 4), ("b", 5), ("c", 6)):
-                    if isinstance(r[col], (int, float)):
-                        weights.append({"reference_year": ref, "adopted": adopted, "index_type": it, "series": key,
-                                        "label": lab, "level": level, "section": section if level not in ("all", "section") else key,
-                                        "weight_pct": round(float(r[col]), 2)})
+        weights = _parse_annex(xbytes)
+        have = {w["reference_year"] for w in weights}
+        old = _parse_annex(OLD_ANNEX.read_bytes()) if OLD_ANNEX.exists() else []
+        weights += [w for w in old if w["reference_year"] not in have]
         # weights add up (as published, to two decimals)
         for ref in sorted({w["reference_year"] for w in weights}):
             for it in INDICES.values():
@@ -296,8 +385,8 @@ def update(force=False, **_):
                     errors.append(f"weights {ref} {it}: sections sum to {secs:.2f}")
                 if abs(grps - 100) > 0.06:
                     errors.append(f"weights {ref} {it}: groups sum to {grps:.2f}")
-        if not {"2024", "2025"} <= {w["reference_year"] for w in weights}:
-            errors.append("Annex 1: 2024 and 2025 weights not both found")
+        if not {"2019/20", "2023", "2024", "2025"} <= {w["reference_year"] for w in weights}:
+            errors.append("Annex 1: weights for 2019/20, 2023, 2024 and 2025 not all found")
 
     # 4. Published contributions, one per web issue (cached in raw/)
     cdir = RAWDIR / "contrib"
@@ -332,6 +421,13 @@ def update(force=False, **_):
             contrib.append({"date": f"{int(r['CCYY']):04d}-{int(r['MM']):02d}-01", "series": part, "label": lab,
                             "contrib_pp": round(float(r["obs_value"]), 1), "issue": rec["code"]})
 
+    # Energy CPI (calculated)
+    en = _energy(store, labels, weights, errors) if weights else {}
+    for d, v in (en.get("series") or {}).items():
+        store[("composite", "headline", "energy", d)] = {k: x for k, x in v.items() if x is not None}
+    if en:
+        labels["energy"] = ("Energy (calculated)", "calculated")
+
     # Checks
     latest = f"{code[8:12]}-{code[14:16]}-01"
     if state.get("latest_month") and latest < state["latest_month"]:
@@ -340,6 +436,7 @@ def update(force=False, **_):
     req += [(it, b, "all", "yoy") for it in INDICES.values() for b in ("headline", "underlying")]
     req += [("composite", "headline", k, "yoy") for k in NINE + ["meals_out", "basic_food"]]
     req += [("composite", "headline", f"coicop_{i:02d}", "yoy") for i in range(1, 14)]
+    req += [("composite", "headline", "energy", "yoy")]
     for k in req:
         if k[3] not in store.get(k[:3] + (latest,), {}):
             errors.append(f"latest month {latest}: {k} missing")
@@ -415,6 +512,8 @@ def update(force=False, **_):
     # Write
     order = {k: i for i, (_c, _s, _a, k, _l) in enumerate(SECTIONS)}
     def ordkey(s):
+        if s == "energy":
+            return order["egw"] + 0.5
         if s in order:
             return order[s]
         if s.startswith("coicop_"):
@@ -435,7 +534,7 @@ def update(force=False, **_):
     # dashboard copy: all four indices for all items; Composite sections and COICOP divisions; from 2015, the Composite
     # groups the page charts over time (DASH_GROUPS). The latest month of every Composite group goes to hk_cpi_groups.csv.
     dash = [r for r in rows if r["level"] == "all"
-            or (r["index_type"] == "composite" and r["level"] in ("section", "subsection", "coicop"))
+            or (r["index_type"] == "composite" and r["level"] in ("section", "subsection", "coicop", "calculated"))
             or (r["index_type"] == "composite" and r["series"] in DASH_GROUPS and r["date"] >= "2015-01-01")]
     _write_csv(OUT / "hk_cpi_dash.csv", cols, dash)
     glatest = [r for r in rows if r["index_type"] == "composite" and r["basis"] == "headline"
@@ -466,7 +565,7 @@ def update(force=False, **_):
     prev = _shift(latest, -1)
     lr = {"date": latest, "month": label, "prev_month": MONTHS[int(prev[5:7]) - 1], "release_date": rel.get(latest, ""),
           "next_release": upcoming[0][0] if upcoming else ""}
-    for k in ["all", "food", "meals_out", "basic_food", "housing", "egw", "transport", "misc_services"]:
+    for k in ["all", "food", "meals_out", "basic_food", "housing", "egw", "energy", "transport", "misc_services"]:
         lr[f"{k}_yoy"], lr[f"{k}_yoy_prev"] = g("composite", "headline", k, latest), g("composite", "headline", k, prev)
     lr["underlying_yoy"], lr["underlying_yoy_prev"] = g("composite", "underlying", "all", latest), g("composite", "underlying", "all", prev)
     lr["all_mom"] = g("composite", "headline", "all", latest, "mom")
@@ -483,6 +582,7 @@ def update(force=False, **_):
     write_release(OUT, release, warnings, len(rows),
                   {"long_rows": nlong, "contribution_months": len(by), "contribution_max_gap_pp": round(cmax, 2),
                    "worst_rate_vs_index_pp": round(worst[0], 3), "groups_latest": ngroups,
+                   "energy_check_egw_max_diff": en.get("check_egw_max_diff"), "energy_weight_vintages": en.get("vintages"),
                    "upcoming_releases": [{"ref_month": k[:7], "date": d} for d, k in upcoming]})
     (OUT / "release_row.json").write_text(json.dumps([{**release, "upcoming": upcoming[0][0] if upcoming else ""}], indent=1) + "\n")
     return {"updated": True, "code": rcode,
