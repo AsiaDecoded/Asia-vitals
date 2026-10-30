@@ -270,15 +270,15 @@ dash.calc('sbn_latest', {
     const line = d3.line().x(cx).y((r) => f.y(r.v));
     const act = rows.filter((r) => !r.proj);
     const pr = rows.filter((r) => r.proj);
-    f.svg.append('path').attr('d', line(act)).attr('fill', 'none').attr('stroke', '#1F4E79').attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
+    f.svg.append('path').attr('d', line(act)).attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
     if (pr.length) {
-      f.svg.append('path').attr('d', line(act.slice(-1).concat(pr))).attr('fill', 'none').attr('stroke', '#1F4E79').attr('stroke-width', 2.5).attr('stroke-dasharray', '5 4');
+      f.svg.append('path').attr('d', line(act.slice(-1).concat(pr))).attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 2.5).attr('stroke-dasharray', '5 4');
       f.svg.append('g').selectAll('circle').data(pr).join('circle').attr('cx', cx).attr('cy', (r) => f.y(r.v)).attr('r', 3.5)
-        .attr('fill', 'var(--color-panel)').attr('stroke', '#1F4E79').attr('stroke-width', 2);
+        .attr('fill', 'var(--color-panel)').attr('stroke', '#BD1B21').attr('stroke-width', 2);
     }
-    legend('f-imf-legend', [['ln', '#1F4E79', 'General government net lending/borrowing']]);
+    legend('f-imf-legend', [['ln', '#BD1B21', 'General government net lending/borrowing']]);
     hover(f, rows, (r) => String(r.year), H, 'f-imf', (r) => `${r.year}${r.proj ? ', IMF projection' : ''}`,
-      (r) => [['#1F4E79', 'Fiscal balance', r.v.toFixed(2) + '%']]);
+      (r) => [['#BD1B21', 'Fiscal balance', r.v.toFixed(2) + '%']]);
   }
 
   function budgetChart() {
