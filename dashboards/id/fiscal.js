@@ -256,7 +256,7 @@ dash.calc('sbn_latest', {
 
   function budgetChart() {
     // y/y growth of revenue and grants and of expenditure (calculated from published levels). Actual: SEKI older sheets
-    // (id_fiscal_hist: 1990-1999 April-March fiscal years, 2000 April-December, 2001-2007) and the current sheet (2008 on);
+    // (id_fiscal_hist: 1990-1999 April-March fiscal years, 2000 April-December, 2001-2007, also in fiscal_years) and the current sheet (2008 on);
     // budget law (id_budget_law): first budget year against the last actual, later ones against the previous budget.
     // No growth for 2000 (nine months) or 2001 (against those nine months): the lines break there.
     const box = document.getElementById('f-budget-chart');
@@ -362,7 +362,8 @@ dash.calc('sbn_latest', {
     if (D.status !== 'ok') { box.replaceChildren(); return; }
     const parts = J.state.fMix === 'revenue' ? REV : EXP;
     const total = J.state.fMix === 'revenue' ? 'rev' : 'exp';
-    const rows = D.data.filter((r) => r.basis === 'actual' && r[total] != null);
+    // expenditure by type from 2005: before that SEKI splits spending into routine and development spending
+    const rows = D.data.filter((r) => r.basis === 'actual' && r[total] != null && (total === 'rev' || r.year >= 2005));
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 300;
     const stack = d3.stack().keys(parts.map((p) => p[0])).value((d, k) => (d[k] || 0) / 1000).offset(d3.stackOffsetDiverging)(rows);

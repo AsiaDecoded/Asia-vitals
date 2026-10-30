@@ -3,6 +3,8 @@ chapter IV (Ministry of Finance data). As published, nothing calculated.
 
   IV.1 Government revenue and grants, IV.2 government expenditure, IV.3 government financing: annual, Rp billion,
        budget (APBN) and actual (realisasi), the current sheet's years (2008 on), every row.
+       The 2001-2007 sheet (calendar years), every row, budget and actual, into the same file (older labels mapped to
+       the current sheet's where they name the same item; OLD_LABELS).
        Earlier sheets, actual totals only (revenue and grants, expenditure, surplus/deficit; added 30 Oct 2026 for the growth
        chart): 2001-2007 (calendar years) and 1990-2000 (SEKI's 1990 = fiscal year April 1990-March 1991, ...;
        2000 = the nine-month transition April-December 2000) -> id_fiscal_hist.csv.
@@ -147,6 +149,85 @@ def read_hist(sh):
     return out
 
 
+# 2001-2007 sheet, every row of both blocks, written to id_fiscal_annual.csv (added 30 Oct 2026). Labels that name the
+# same item as the current sheet under another wording are given the current sheet's label_id (the older label is kept
+# in the note); the rest keep their own. Before 2005 expenditure is split into routine and development spending, so
+# capital spending and social aid are zero there and the items do not add up to central spending.
+OLD_LABELS = {
+    "PPH": "Pajak Penghasilan (PPh)", "PPN": "Pajak Pertambahan Nilai (PPN)", "PBB": "Pajak Bumi dan Bangunan (PBB)",
+    "BPHTB": "Bea Perolehan Hak Atas Tanah dan Bangunan (BPHTB)1",
+    "Pengeluaran rutin lainnya /Belanja Lainnya": "Belanja Lainnya",
+    "Anggaran Belanja untuk Daerah/ Transfer ke Daerah": "Transfer Ke Daerah dan Dana Desa",
+}
+OLD_ITEM0 = 100   # item numbers of older-sheet rows start here, apart from the current sheet's
+
+
+def read_older(sh):
+    """[(section, item, label_id, label_en, {year: value}, note)] from the 2001-2007 sheet (labels in column 1)."""
+    hdr = next(r for r in range(min(10, sh.nrows)) if str(sh.cell_value(r, 1)).strip().upper() == "KETERANGAN")
+    ic = _items_col(sh, hdr)
+    yr = hdr + 1
+    cols = {c: int(v) for c, v in enumerate(sh.row_values(yr)[3:ic], start=3) if isinstance(v, float) and 2000 < v < 2008}
+    out, section, item = [], None, 0
+    for r in range(yr + 1, sh.nrows):
+        lab = re.sub(r"\s+", " ", str(sh.cell_value(r, 1)).strip())
+        eng = re.sub(r"\s+", " ", str(sh.cell_value(r, ic)).strip()) if ic is not None else ""
+        if re.match(r"(?i)^apbn\b", lab):
+            section, item = "budget", OLD_ITEM0
+            continue
+        if re.match(r"(?i)^realisasi\b", lab):
+            section, item = "actual", OLD_ITEM0
+            continue
+        if not section or not lab or lab.startswith("-") or re.match(r"(?i)^sumber", lab):
+            continue
+        vals = {y: _num(sh.cell_value(r, c)) for c, y in cols.items()}
+        vals = {y: v for y, v in vals.items() if v is not None}
+        if not vals:
+            continue
+        item += 1
+        lid = OLD_LABELS.get(lab, lab)
+        out.append((section, item, lid, eng, vals, f"SEKI 2001-2007 sheet: {lab}" if lid != lab else "SEKI 2001-2007 sheet"))
+    return out
+
+
+def check_older(old):
+    errors, warnings, drop = [], [], set()
+    val = {}
+    for t, rows in old.items():
+        for s_, _i, lid, _e, v, _n in rows:
+            for y, x in v.items():
+                val.setdefault((t, s_, lid, y), x)
+    years = sorted({k[3] for k in val})
+    if years != list(range(2001, 2008)):
+        errors.append(f"2001-2007 sheet: years read {years}")
+    for s_ in ("budget", "actual"):
+        for y in years:
+            g = lambda t, l: val.get((t, s_, l, y))  # noqa: E731
+            rv, ex, bl = g("revenue", "Pendapatan Negara dan Hibah"), g("expenditure", "Belanja Negara"), g("financing", "Surplus / Defisit")
+            if None in (rv, ex, bl):
+                errors.append(f"2001-2007 sheet {s_} {y}: revenue, expenditure or surplus/deficit missing")
+                continue
+            if abs(rv - ex - bl) > 2:
+                # SEKI's own inconsistency (2004 budget: +10,536 against revenue - expenditure of -26,271): the
+                # surplus/deficit row for that year is left out of the file, revenue and expenditure kept
+                warnings.append(f"2001-2007 sheet {s_} {y}: revenue - expenditure {rv - ex:,.0f} vs published surplus/deficit "
+                                f"{bl:,.0f}; surplus/deficit left out for this year")
+                drop.add((s_, y))
+            parts = [g("revenue", l) for l in OLD_REV_PARTS]
+            tax = g("revenue", "Penerimaan Perpajakan")
+            if None not in parts and tax is not None and abs(sum(parts) - tax) > 2:
+                warnings.append(f"2001-2007 sheet {s_} {y}: tax items {sum(parts):,.0f} vs tax revenue {tax:,.0f}")
+            cen, trf = g("expenditure", "Belanja Pemerintah Pusat"), g("expenditure", "Transfer Ke Daerah dan Dana Desa")
+            sus = g("expenditure", "Suspen") or 0.0
+            if None not in (cen, trf) and abs(cen + trf + sus - ex) > 2:
+                warnings.append(f"2001-2007 sheet {s_} {y}: central + transfers {cen + trf + sus:,.0f} vs expenditure {ex:,.0f}")
+    return errors, warnings, drop
+
+
+OLD_REV_PARTS = ["Pajak Penghasilan (PPh)", "Pajak Pertambahan Nilai (PPN)", "Pajak Bumi dan Bangunan (PBB)",
+                 "Bea Perolehan Hak Atas Tanah dan Bangunan (BPHTB)1", "Cukai", "Pajak Lainnya", "Pajak Perdagangan Internasional"]
+
+
 def period_label(y):
     return f"Apr {y}-Mar {y + 1}" if y < 2000 else ("Apr-Dec 2000" if y == 2000 else str(y))
 
@@ -218,10 +299,11 @@ def update(force=False, **_):
     for n in list(TABLES) + ["4_4"]:
         b, lm = seki.download(n)
         books[n], stamps[n] = b, lm
-    ann, hist = {}, {}
+    ann, hist, old = {}, {}, {}
     for n, t in TABLES.items():
         wb = xlrd.open_workbook(file_contents=books[n])
         ann[t] = read_annual(wb.sheet_by_index(wb.nsheets - 1))
+        old[t] = read_older(wb.sheet_by_index(wb.nsheets - 2))
         for i in range(wb.nsheets - 1):
             for k, v in read_hist(wb.sheet_by_index(i)).items():
                 hist.setdefault(k, {})[t] = v
@@ -230,11 +312,14 @@ def update(force=False, **_):
     latest_m = max(d for _i, _l, _e, v in sbn for d in v)
     latest_y = max(y for rows in ann.values() for _s, _i, _l, _e, v in rows for y in v)
     ytd_text = Path(__file__).with_name("ytd.csv").read_text(encoding="utf-8") if Path(__file__).with_name("ytd.csv").exists() else ""
-    fp = hashlib.sha256(json.dumps([ann, sbn, ytd_text, sorted((list(k), v) for k, v in hist.items())], sort_keys=True,
+    fp = hashlib.sha256(json.dumps([ann, sbn, ytd_text, sorted((list(k), v) for k, v in hist.items()), old], sort_keys=True,
                                    default=str).encode()).hexdigest()[:16]
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {state.get('label')})"}
     errors, warnings = checks(ann, sbn)
+    e2, w2, drop = check_older(old)
+    errors += e2
+    warnings += w2
     hyears = sorted({k[1] for k in hist})
     if hyears != list(range(1990, 2008)):
         errors.append(f"older sheets: years read {hyears[:3]}..{hyears[-3:]}, expected 1990-2007")
@@ -255,6 +340,12 @@ def update(force=False, **_):
         for s, it, l, e, v in rows:
             for y, val in sorted(v.items()):
                 arows.append({"year": y, "table": t, "basis": s, "item": it, "label": e or l, "label_id": l, "value": val})
+    for t, rows in old.items():
+        for s_, it, l, e, v, note in rows:
+            for y, val in sorted(v.items()):
+                if t == "financing" and (s_, y) in drop:
+                    continue
+                arows.append({"year": y, "table": t, "basis": s_, "item": it, "label": e or l, "label_id": l, "value": val, "note": note})
     actual_years = {r["year"] for r in arows if r["basis"] == "actual"}
     ytd_path = Path(__file__).with_name("ytd.csv")
     ytd = [r for r in csv.DictReader(open(ytd_path, encoding="utf-8"))] if ytd_path.exists() else []
