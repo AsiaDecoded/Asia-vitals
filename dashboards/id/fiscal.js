@@ -143,6 +143,7 @@ dash.calc('sbn_latest', {
     items.forEach(([cls, col, txt]) => {
       const sp = document.createElement('span'), m = document.createElement('span'); m.className = cls; m.style.background = col;
       if (cls === 'dot') { m.style.background = 'var(--color-panel)'; m.style.border = '2px solid var(--ad-ink, var(--color-fg-muted))'; m.style.boxSizing = 'border-box'; }
+      if (cls === 'ol') { m.className = 'sw'; m.style.background = 'transparent'; m.style.border = `1.5px solid ${col}`; m.style.boxSizing = 'border-box'; }
       sp.append(m, document.createTextNode(txt)); lg.appendChild(sp);
     });
   }
@@ -408,14 +409,16 @@ dash.calc('sbn_latest', {
     const f = frame(box, rows.map((r) => String(r.year)), H, d3.min(vals), d3.max(vals), 0.2);
     yearAxis(f, H, rows);
     const bw = f.x.bandwidth() / 2;
-    [['budget', '#ADB5BD', 0], ['actual', '#1F4E79', 1]].forEach(([k, c, j]) => {
+    // budget: red outline; actual: red fill
+    [['budget', 0], ['actual', 1]].forEach(([k, j]) => {
       f.svg.append('g').selectAll('rect').data(rows.filter((r) => r[k] != null)).join('rect')
-        .attr('x', (r) => f.x(String(r.year)) + j * bw).attr('width', bw)
-        .attr('y', (r) => f.y(Math.max(0, t(r[k], r)))).attr('height', (r) => Math.abs(f.y(t(r[k], r)) - f.y(0))).attr('fill', c);
+        .attr('x', (r) => f.x(String(r.year)) + j * bw + (k === 'budget' ? 0.75 : 0)).attr('width', bw - (k === 'budget' ? 1.5 : 0))
+        .attr('y', (r) => f.y(Math.max(0, t(r[k], r)))).attr('height', (r) => Math.abs(f.y(t(r[k], r)) - f.y(0)))
+        .attr('fill', k === 'budget' ? 'none' : '#BD1B21').attr('stroke', k === 'budget' ? '#BD1B21' : 'none').attr('stroke-width', 1.5);
     });
-    legend('f-bb-legend', [['sw', '#ADB5BD', 'Budget (APBN)'], ['sw', '#1F4E79', 'Actual']]);
+    legend('f-bb-legend', [['ol', '#BD1B21', 'Budget (APBN)'], ['sw', '#BD1B21', 'Actual']]);
     const fmt = (v, r) => (v == null ? '—' : pct ? t(v, r).toFixed(2) + '%' : trn(v));
-    hover(f, rows, (r) => String(r.year), H, 'f-bb', (r) => String(r.year), (r) => [['#ADB5BD', r.law && pct && !gdp[r.year] ? 'Budget (MoF ratio)' : 'Budget', fmt(r.budget, r)], ['#1F4E79', 'Actual', fmt(r.actual, r)]]);
+    hover(f, rows, (r) => String(r.year), H, 'f-bb', (r) => String(r.year), (r) => [['#BD1B21', r.law && pct && !gdp[r.year] ? 'Budget (MoF ratio)' : 'Budget', fmt(r.budget, r)], ['#BD1B21', 'Actual', fmt(r.actual, r)]]);
   }
 
   function mixChart() {
