@@ -12,7 +12,12 @@
   is kept as mof_balance_pct (month in mof_through) and is what the dashboard shows for the current year's balance
   (asked for 30 Oct 2026: deficit as published).
 
-Runs after id_gdp_bps, id_fiscal_seki and id_fiscal_kemenkeu; reads their files only (no downloads).
+  Before 2010 (asked for 30 Oct 2026): the same SEKI actuals (2001 on) divided by World Bank WDI nominal GDP
+  (data/id/gdp_wdi/id_gdp_wdi.csv, from id_gdp_wdi). WDI equals BPS from 2010; before 2010 it carries BPS's earlier,
+  lower-level GDP bases, so the ratios for 2001-2009 are on a different GDP base (no splice). Fiscal years before 2001
+  ran April-March, so they are not divided by calendar-year GDP.
+
+Runs after id_gdp_bps, id_gdp_wdi, id_fiscal_seki and id_fiscal_kemenkeu; reads their files only (no downloads).
 """
 import csv
 import hashlib
@@ -21,7 +26,7 @@ import json
 from core.common import DATA, CheckFailed, read_json, write_long, write_release
 
 NAME = "id_fiscal_gdp"
-DESCRIPTION = "Indonesia budget revenue, expenditure and balance as % of GDP (calculated; current year to the latest quarter with GDP)"
+DESCRIPTION = "Indonesia budget revenue, expenditure and balance as % of GDP (calculated; 2001-2009 on WDI GDP; current year to the latest quarter with GDP)"
 OUT = DATA / "id" / "fiscal_gdp"
 SOURCE = "Ministry of Finance (SEKI, APBN KiTa), BPS"
 LABELS = {"revenue": "Pendapatan Negara dan Hibah", "expenditure": "Belanja Negara", "balance": "Surplus / Defisit"}
@@ -35,6 +40,11 @@ def update(force=False, **_):
     for r in csv.DictReader(open(DATA / "id" / "gdp" / "id_gdp_annual.csv", encoding="utf-8")):
         if r["code"] == "800" and r["nominal_level"]:
             gdp[int(r["date"][:4])] = float(r["nominal_level"])
+    wdi = {}
+    pw = DATA / "id" / "gdp_wdi" / "id_gdp_wdi.csv"
+    if pw.exists():
+        for r in csv.DictReader(open(pw, encoding="utf-8")):
+            wdi[int(r["year"])] = float(r["gdp_nominal_rp_bn"])
     fis = {}
     for r in csv.DictReader(open(DATA / "id" / "fiscal" / "id_fiscal_annual.csv", encoding="utf-8")):
         if r["basis"] != "actual":
@@ -44,7 +54,7 @@ def update(force=False, **_):
                 fis.setdefault(int(r["year"]), {}).setdefault(k, float(r["value"]))
     monthly = list(csv.DictReader(open(DATA / "id" / "fiscal" / "id_fiscal_monthly.csv", encoding="utf-8")))
     errors, warnings, rows = [], [], []
-    years = sorted(y for y in fis if y in gdp)
+    years = sorted(y for y in fis if y in gdp or (y >= 2001 and y in wdi))
     if not years:
         errors.append("no year with both a SEKI actual and BPS annual nominal GDP")
     for y in years:
@@ -52,13 +62,17 @@ def update(force=False, **_):
         if not all(k in f for k in LABELS):
             errors.append(f"{y}: revenue, expenditure or balance missing in SEKI")
             continue
-        g = gdp[y]
+        g = gdp.get(y) or wdi[y]
+        how = "BPS annual nominal GDP" if y in gdp else "World Bank WDI nominal GDP (pre-2010 base)"
         row = {"year": y, "basis": "actual", "through": "", "gdp": g, **{f"{k}_pct": round(f[k] / g * 100, 3) for k in LABELS},
-               **{k: f[k] for k in LABELS}, "method": "calculated: SEKI actual / BPS annual nominal GDP"}
+               **{k: f[k] for k in LABELS}, "method": f"calculated: SEKI actual / {how}"}
         if abs(row["revenue_pct"] - row["expenditure_pct"] - row["balance_pct"]) > 0.01:
             errors.append(f"{y}: ratios do not add up ({row['revenue_pct']} - {row['expenditure_pct']} vs {row['balance_pct']})")
         rows.append(row)
     missing = sorted(y for y in fis if y >= 2010 and y not in gdp)
+    nowdi = sorted(y for y in fis if 2001 <= y < 2010 and y not in wdi)
+    if nowdi:
+        warnings.append(f"no WDI GDP for {nowdi}")
     if missing:
         warnings.append(f"SEKI actual with no BPS annual GDP yet: {missing}")
     done = {r["year"] for r in rows}
