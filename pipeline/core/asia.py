@@ -59,7 +59,9 @@ SPEC = [
     ("HK", "cpi", "hk/cpi/hk_cpi.csv", {"index_type": "composite", "basis": "headline", "series": "all"}, "yoy", PUB, "Composite CPI"),
     ("HK", "food", "hk/cpi/hk_cpi.csv", {"index_type": "composite", "basis": "headline", "series": "coicop_01"}, "yoy", PUB, "Food and non-alcoholic beverages (COICOP 01)"),
     ("HK", "energy", "hk/cpi/hk_cpi.csv", {"index_type": "composite", "basis": "headline", "series": "energy"}, "yoy", CALC, "Energy: electricity, towngas, LPG and other fuel, motor fuel groups at published weights, chained each April"),
+    ("HK", "core", "hk/cpi/hk_cpi.csv", {"index_type": "composite", "basis": "headline", "series": "ex_food_energy"}, "yoy", CALC, "CPI less food and non-alcoholic beverages and energy"),
     ("HK", "official_core", "hk/cpi/hk_cpi.csv", {"index_type": "composite", "basis": "underlying", "series": "all"}, "yoy", PUB, "Underlying Composite CPI"),
+    ("HK", "ppi", "hk/ppi/hk_ppi.csv", {"series": "manufacturing"}, "yoy", PUB, "PPI, manufacturing (quarterly; dated at the quarter's first month)"),
     # China (NBS food excludes beverages: not COICOP 01, so no food column)
     ("CN", "cpi", "cn/cpi/cn_cpi.csv", {"area": "national", "series": "all", "measure": "yoy"}, "pct", PUB, "CPI"),
     ("CN", "official_core", "cn/cpi/cn_cpi.csv", {"area": "national", "series": "core", "measure": "yoy"}, "pct", PUB, "CPI excluding food and energy"),
