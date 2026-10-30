@@ -56,6 +56,17 @@ EXP_VARS = {  # var: field by turvar label (None: one turvar)
     1956: "real_level", 1955: "nominal_level", 110: "share_nominal",
     2128: "contrib_qoq", 2129: "contrib_yoy", 2130: "contrib_ctc",
 }
+# Industry categories (KBLI 2009, BPS's 17 categories) and totals: English names; sub-industries keep BPS's label.
+IND_EN = {
+    11000: "A. Agriculture, forestry and fishing", 12000: "B. Mining and quarrying", 13000: "C. Manufacturing",
+    14000: "D. Electricity and gas", 15000: "E. Water supply, sewerage and waste management", 16000: "F. Construction",
+    17000: "G. Wholesale and retail trade; repair of motor vehicles", 18000: "H. Transportation and storage",
+    19000: "I. Accommodation and food services", 20000: "J. Information and communication",
+    21000: "K. Financial and insurance services", 22000: "L. Real estate", 23000: "M, N. Business services",
+    24000: "O. Public administration, defence and compulsory social security", 25000: "P. Education",
+    26000: "Q. Human health and social work", 27000: "R, S, T, U. Other services",
+    99001: "Gross value added at basic prices", 99002: "Taxes less subsidies on products", 99003: "GDP",
+}
 IND_VARS = {65: "level", 104: "growth", 105: "deflator", 106: "share_nominal", 554: "contrib"}
 FIELDS = ["real_level", "nominal_level", "real_qoq", "real_yoy", "real_ctc", "deflator_qoq", "deflator_yoy",
           "share_nominal", "contrib_qoq", "contrib_yoy", "contrib_ctc"]
@@ -229,12 +240,12 @@ def update(force=False, **_):
     qn = (int(latest[5:7]) + 2) // 3
     code = f"G{latest[:4]}Q{qn}"
     label = f"Q{qn} {latest[:4]}"
-    cols = ["date", "code", "component", "level", "order"] + FIELDS
+    cols = ["date", "code", "component", "label_bps", "level", "order"] + FIELDS
 
-    def write(path, d, label_of, order_of, level_of):
+    def write(path, d, label_of, order_of, level_of, bps_label=lambda c: ""):
         rows = []
         for (date, c), f in sorted(d.items(), key=lambda kv: (kv[0][0], order_of(kv[0][1]))):
-            rows.append({"date": date, "code": c, "component": label_of(c), "level": level_of(c),
+            rows.append({"date": date, "code": c, "component": label_of(c), "label_bps": bps_label(c), "level": level_of(c),
                          "order": order_of(c), **{k: f.get(k) for k in FIELDS}})
         with open(path, "w", newline="", encoding="utf-8") as fh:
             w = csv.writer(fh, lineterminator="\n")
@@ -249,13 +260,15 @@ def update(force=False, **_):
     icodes = sorted(ilabels)
 
     def ilevel(c):
-        lab = ilabels.get(c, "")
-        if re.match(r"^[A-Z]\.", lab) or re.search(r"(?i)produk domestik bruto|pajak", lab):
-            return 1 if not re.search(r"(?i)produk domestik bruto", lab) else 0
-        return 2 if re.match(r"^\d+\.", lab) else 3
+        if c == 99003:
+            return 0
+        if c in IND_EN:
+            return 1
+        return 2 if re.match(r"^\d+\.", ilabels.get(c, "")) else 3
 
-    write(OUT / "id_gdp_industry.csv", iq, lambda c: ilabels[c], lambda c: icodes.index(c), ilevel)
-    write(OUT / "id_gdp_industry_annual.csv", ia, lambda c: ilabels[c], lambda c: icodes.index(c), ilevel)
+    iname = lambda c: IND_EN.get(c, ilabels[c])  # noqa: E731
+    write(OUT / "id_gdp_industry.csv", iq, iname, lambda c: icodes.index(c), ilevel, lambda c: ilabels[c])
+    write(OUT / "id_gdp_industry_annual.csv", ia, iname, lambda c: icodes.index(c), ilevel, lambda c: ilabels[c])
     # raw: the WebAPI records as fetched (labels in Indonesian), gzipped
     import gzip  # noqa: PLC0415
     with gzip.open(RAWDIR / "webapi.json.gz", "wt", encoding="utf-8") as fh:

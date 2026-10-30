@@ -335,7 +335,7 @@ dash.calc('industry_latest', {
     const I = dash.data('industry_latest');
     if (I.status === 'ok' && I.data.length) document.getElementById('g-ind-q').textContent = qlab(I.data[0].date);
     table('g-ind-table', 'industry_latest', ['component', 'real_qoq', 'real_yoy', 'share_nominal', 'contrib_yoy'],
-      (r) => (/produk domestik bruto/i.test(r.component) ? 'gdp' : ''));
+      (r) => (r.code === 99003 ? 'gdp' : ''));
   }
 
   J.redrawGdp = () => {
