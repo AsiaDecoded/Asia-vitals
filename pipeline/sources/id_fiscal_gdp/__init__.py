@@ -17,6 +17,10 @@
   bases to the 2010 level (the IMF's splice, published). Used in place of World Bank WDI, which does not link them.
   Fiscal years before 2001 ran April-March, so they are not divided by calendar-year GDP.
 
+  Interest payments and primary balance (asked for 30 Oct 2026, for the fiscal balance chart): SEKI actual interest
+  payments (Pembayaran Bunga Utang) / the same GDP; primary balance = surplus/deficit + interest payments (the Ministry's
+  definition of keseimbangan primer; SEKI has no primary balance row), both calculated, annual actual years only.
+
 Runs after id_gdp_bps, id_gdp_imf, id_fiscal_seki and id_fiscal_kemenkeu; reads their files only (no downloads).
 """
 import csv
@@ -47,9 +51,12 @@ def update(force=False, **_):
             if not r["imf_projection"]:
                 wdi[int(r["year"])] = float(r["gdp_nominal_rp_bn"])
     fis = {}
+    intr = {}
     for r in csv.DictReader(open(DATA / "id" / "fiscal" / "id_fiscal_annual.csv", encoding="utf-8")):
         if r["basis"] != "actual":
             continue
+        if r["table"] == "expenditure" and r["label_id"] == "Pembayaran Bunga Utang" and r["value"] != "":
+            intr.setdefault(int(r["year"]), float(r["value"]))
         for k, lab in LABELS.items():
             if r["table"] == TABLE[k] and r["label_id"] == lab and r["value"] != "":
                 fis.setdefault(int(r["year"]), {}).setdefault(k, float(r["value"]))
@@ -67,6 +74,12 @@ def update(force=False, **_):
         how = "BPS annual nominal GDP" if y in gdp else "IMF WEO nominal GDP (linked to the 2010 base)"
         row = {"year": y, "basis": "actual", "through": "", "gdp": g, **{f"{k}_pct": round(f[k] / g * 100, 3) for k in LABELS},
                **{k: f[k] for k in LABELS}, "method": f"calculated: SEKI actual / {how}"}
+        if y in intr:
+            row["interest"] = intr[y]
+            row["interest_pct"] = round(intr[y] / g * 100, 3)
+            row["primary_pct"] = round((f["balance"] + intr[y]) / g * 100, 3)
+        else:
+            warnings.append(f"{y}: no interest payments in SEKI; primary balance left out")
         if abs(row["revenue_pct"] - row["expenditure_pct"] - row["balance_pct"]) > 0.01:
             errors.append(f"{y}: ratios do not add up ({row['revenue_pct']} - {row['expenditure_pct']} vs {row['balance_pct']})")
         rows.append(row)
@@ -114,7 +127,7 @@ def update(force=False, **_):
         raise CheckFailed(errors)
     rows.sort(key=lambda r: r["year"])
     cols = ["year", "basis", "through", "revenue_pct", "expenditure_pct", "balance_pct", "revenue", "expenditure", "balance", "gdp",
-            "mof_through", "mof_balance_pct", "method"]
+            "mof_through", "mof_balance_pct", "interest", "interest_pct", "primary_pct", "method"]
     fp = hashlib.sha256(json.dumps(rows, sort_keys=True).encode()).hexdigest()[:16]
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {state.get('label')})"}
