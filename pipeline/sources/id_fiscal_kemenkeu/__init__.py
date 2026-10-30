@@ -5,7 +5,7 @@ Where it comes from: the Ministry's site lists APBN KiTa publications through it
 (POST https://media.kemenkeu.go.id/SinglePage/Filter, path=/Pages/Home/Informasi-Terbaru/APBN-Kita, param1=<year>);
 each item links a PDF on media.kemenkeu.go.id/getmedia/... . The monthly deck carries a page headed
 summary of the year-to-date outturn in up to three forms (front-page box "KINERJA APBN HINGGA <month>", summary
-table "A. PENDAPATAN NEGARA ... D. SURPLUS/(DEFISIT)", page "REALISASI APBN S.D. <date>"): state revenue
+table "A. PENDAPATAN NEGARA ... D. SURPLUS/(DEFISIT)", page "REALISASI APBN S.D. <date>", and a month-by-month table of the year so far): state revenue
 (Pendapatan Negara), state expenditure (Belanja Negara), surplus/deficit (and % of GDP) and primary balance
 (Keseimbangan Primer), Rp trillion, one decimal. Every form present is read; they must agree or the source stops.
 The reference month is read from the deck, not from the list's titles or dates (they do not always match the file). Decks from 2025 on (the press-conference format); earlier monthly reports use
@@ -238,6 +238,54 @@ def parse_realisasi(text):
     return got if month else None
 
 
+def parse_progression(text):
+    """Month-by-month table ('Real s.d. 31 Maret | Growth | Real s.d. 30 April | ...' under one year heading, rows
+    A. PENDAPATAN NEGARA, B. BELANJA NEGARA, C. KESEIMBANGAN PRIMER, D. SURPLUS/(DEFISIT), % SURPLUS/(DEFISIT)-PDB):
+    {YYYY-MM: {revenue, expenditure, primary_balance, balance, balance_pct_gdp}} for every month column."""
+    out = {}
+    lines = text.splitlines()
+    for i, l in enumerate(lines):
+        dates = re.findall(r"\b(\d{1,2})\s+(Januari|Februari|Maret|April|Mei|Juni|Juli|Agustus|September|Oktober|November|Desember)\b", l)
+        if len(dates) < 2 or not re.search(r"\bAPBN\b", " ".join(lines[max(0, i - 4): i + 1])):
+            continue
+        yr = re.findall(r"\b(20\d\d)\b", " ".join(lines[max(0, i - 6): i + 1]))
+        if not yr:
+            continue
+        months = [f"{yr[-1]}-{MONTHS[m.lower()]:02d}" for _d, m in dates]
+        rows = {}
+        for k in range(i + 1, min(i + 40, len(lines))):
+            r = lines[k]
+            for key, pat in (("revenue", r"^\s*A\.\s+PENDAPATAN NEGARA"), ("expenditure", r"^\s*B\.\s+BELANJA NEGARA"),
+                             ("primary_balance", r"^\s*C\.\s+KESEIMBANGAN PRIMER"), ("balance", r"^\s*D\.\s+SURPLUS"),
+                             ("balance_pct_gdp", r"^\s*%\s*SURPLUS")):
+                lm = re.match(pat, r)
+                if lm and key not in rows:
+                    rest = re.sub(r"^[\s/]*(\((?:DEFISIT|SURPLUS)\))?(-PDB)?", "", r[lm.end():], flags=re.I)
+                    toks = TNUM.findall(rest)
+                    rows[key] = toks
+        if not all(k in rows for k in ("revenue", "expenditure", "balance")):
+            continue
+        n = len(months)
+        for j, mth in enumerate(months):
+            rec = {}
+            for key, toks in rows.items():
+                if key == "balance_pct_gdp":
+                    idx = 1 + j                      # APBN, then one value per month
+                else:
+                    idx = 1 + 2 * j                  # APBN, then (real, growth) per month
+                need = (1 + n) if key == "balance_pct_gdp" else (1 + 2 * n)
+                if len(toks) >= need - (1 if key != "balance_pct_gdp" else 0) and idx < len(toks):
+                    try:
+                        rec[key] = _signed(toks[idx].rstrip(","))
+                    except ValueError:
+                        pass
+            if all(k in rec for k in ("revenue", "expenditure", "balance")):
+                out[mth] = rec
+        if out:
+            return out
+    return out
+
+
 def parse(text):
     """Year-to-date outturn, Rp trillion, from whichever of the deck's three summary forms are present; where more
     than one is read they must agree (revenue, expenditure, balance within 0.05) or the deck is rejected.
@@ -271,7 +319,7 @@ def update(force=False, **_):
         decks += list_decks(y)
     if not decks:
         raise CheckFailed(["no APBN KiTa press-conference decks listed"])
-    rows, warnings, read, errors_pre = {}, [], 0, []
+    rows, warnings, read, errors_pre, prog = {}, [], 0, [], {}
     for url, fid, title, pub in decks:
         path = RAWDIR / f"{fid}.txt.gz"
         if path.exists() and not force:
@@ -293,12 +341,29 @@ def update(force=False, **_):
             warnings.append(f"{title} ({fid}): no outturn summary read")
             continue
         got["readers"] = "+".join(used)
+        # month-by-month table (earlier months of the same year): fills months no deck's summary gave
+        for mth, rec in parse_progression(text).items():
+            if mth == got["month"]:
+                if any(abs(rec[k] - got[k]) > 0.05 for k in ("revenue", "expenditure", "balance")):
+                    errors_pre.append(f"{title} ({fid}): month-by-month table disagrees with the summary for {mth}: {rec} vs {got}")
+                continue
+            prog.setdefault(mth, []).append({**rec, "month": mth, "readers": "progression", "file": url, "title": title, "listed": pub})
         got.update({"file": url, "title": title, "listed": pub})
         prev = rows.get(got["month"])
         if prev and any(abs((prev[k] or 0) - (got[k] or 0)) > 0.05 for k in ("revenue", "expenditure", "balance")):
             warnings.append(f"{got['month']}: two decks disagree ({prev['title']} vs {title}); first kept")
             continue
         rows.setdefault(got["month"], got)
+    for mth, recs in sorted(prog.items()):
+        base = rows.get(mth) or recs[0]
+        for r in recs:
+            if any(abs(r[k] - base[k]) > 0.05 for k in ("revenue", "expenditure", "balance")):
+                errors_pre.append(f"{mth}: month-by-month table in {r['title']} disagrees with {base.get('title')}: {r} vs {base}")
+        if mth not in rows:
+            rec = dict(recs[0])
+            for k in ("balance_pct_gdp", "primary_balance"):
+                rec.setdefault(k, None)
+            rows[mth] = rec
     errors = list(errors_pre)
     if not rows:
         errors.append("no month read from any deck")

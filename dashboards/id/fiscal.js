@@ -205,6 +205,7 @@ dash.calc('sbn_latest', {
       .filter((r) => r.bal != null).sort((a, b) => a.year - b.year);
     if (!rows.length) { box.replaceChildren(); return; }
     const act = rows.filter((r) => r.basis === 'actual');
+    const ytd = rows.filter((r) => r.basis === 'ytd');
     const H = 280;
     const vals = rows.flatMap((r) => [r.rev, r.exp, r.bal].filter((v) => v != null));
     const f = frame(box, rows.map((r) => String(r.year)), H, d3.min(vals), d3.max(vals), 0.25);
@@ -217,11 +218,11 @@ dash.calc('sbn_latest', {
       .attr('stroke-width', 1.5).attr('stroke-dasharray', (r) => (r.basis === 'ytd' ? '3 2' : null));
     [['rev', '#0C84FF'], ['exp', '#BD1B21']].forEach(([k, c]) => {
       f.svg.append('path').attr('d', d3.line().x(cx).y((r) => f.y(r[k]))(act.filter((r) => r[k] != null))).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
+      f.svg.append('g').selectAll('circle').data(ytd.filter((r) => r[k] != null)).join('circle').attr('cx', cx).attr('cy', (r) => f.y(r[k]))
+        .attr('r', 4).attr('fill', 'var(--color-panel)').attr('stroke', c).attr('stroke-width', 2);
     });
-    const ytd = rows.filter((r) => r.basis === 'ytd');
-    const items = [['ln', '#0C84FF', 'Revenue and grants'], ['ln', '#BD1B21', 'Expenditure'], ['sw', '#A6A6A6', 'Fiscal balance']];
-    const lab = (r) => (r.basis === 'ytd' && r.through ? `${r.year}, Jan–${MON[Number(r.through.slice(5, 7)) - 1]} (Ministry of Finance)` : `${r.year}, actual (calculated)`);
-    legend('f-balance-gdp-legend', items);
+    legend('f-balance-gdp-legend', [['ln', '#0C84FF', 'Revenue and grants'], ['ln', '#BD1B21', 'Expenditure'], ['sw', '#A6A6A6', 'Fiscal balance']]);
+    const lab = (r) => (r.basis === 'ytd' && r.through ? `${r.year}, Jan–${MON[Number(r.through.slice(5, 7)) - 1]} (% of GDP in the same months)` : `${r.year}`);
     const pc = (v) => (v == null ? '—' : J.f1(v) + '%');
     hover(f, rows, (r) => String(r.year), H, 'f-balance-gdp', lab,
       (r) => [['#0C84FF', 'Revenue and grants', pc(r.rev)], ['#BD1B21', 'Expenditure', pc(r.exp)], ['#A6A6A6', 'Fiscal balance', pc(r.bal)]]);
