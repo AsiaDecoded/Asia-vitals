@@ -10,15 +10,15 @@
   "4_4": "Tue, 06 Oct 2026 10:32:21 GMT"
  },
  "table": "Bank Indonesia SEKI IV.1-IV.4",
- "processed_at": "2026-10-30T08:00:50Z",
+ "processed_at": "2026-10-30T09:53:02Z",
  "rows": 8574,
  "warnings": [],
- "fingerprint": "5f804e64a79cb212",
+ "fingerprint": "c79af5d9710542b7",
  "long_rows": 8574,
  "history": [
   {
    "code": "F2025-2026-09",
-   "processed_at": "2026-10-30T08:00:50Z"
+   "processed_at": "2026-10-30T09:53:02Z"
   }
  ]
 }
