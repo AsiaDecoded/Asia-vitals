@@ -15,7 +15,7 @@ dash.calc('cpi_series', {
 
 dash.calc('cpi_latest', {
   title: 'Latest month and the one before',
-  description: 'Published y/y for the latest month and the month before (all items, core, food, bottom 30% households) and the published seasonally adjusted m/m change in all items.',
+  description: 'y/y for the latest month and the month before (all items, core, food, bottom 30% households as published; energy as calculated) and the published seasonally adjusted m/m change in all items.',
   inputs: ['cpi_series', 'ph_cpi_sa'],
   fn: (cpi_series, ph_cpi_sa) => {
     const pair = (area, series) => {
@@ -24,7 +24,7 @@ dash.calc('cpi_latest', {
       return [s[s.length - 1], s[s.length - 2]];
     };
     const row = {};
-    [['all', 'all'], ['core', 'core'], ['food', 'food'], ['b30', 'b30_all']].forEach(([f, k]) => {
+    [['all', 'all'], ['core', 'core'], ['food', 'food'], ['energy', 'energy'], ['b30', 'b30_all']].forEach(([f, k]) => {
       const [a, b] = pair('national', k);
       row[f + '_yoy'] = a ? a.yoy : null;
       row[f + '_yoy_prev'] = b ? b.yoy : null;
@@ -42,10 +42,10 @@ dash.calc('cpi_latest', {
 
 dash.calc('cpi_div', {
   title: 'CPI by division',
-  description: 'All items, core and the 13 divisions: published 2018 weight (% of CPI), published y/y in the latest four months and the published seasonally adjusted m/m in the latest month.',
+  description: 'All items, core, energy (calculated) and the 13 divisions: published 2018 weight (% of CPI), y/y in the latest four months and the published seasonally adjusted m/m in the latest month.',
   inputs: ['cpi_series', 'ph_cpi_sa'],
   fn: (cpi_series, ph_cpi_sa) => {
-    const nat = cpi_series.filter((r) => r.area === 'national' && (r.group === 'division' || r.series === 'all' || r.series === 'core'));
+    const nat = cpi_series.filter((r) => r.area === 'national' && (r.group === 'division' || r.series === 'all' || r.series === 'core' || r.series === 'energy'));
     const months = Array.from(new Set(nat.filter((r) => r.series === 'all' && r.yoy != null).map((r) => r.date))).sort().slice(-4);
     const sa = new Map();
     ph_cpi_sa.forEach((r) => { if (r.area === 'national' && r.date === months[3] && r.sa_mom !== '') sa.set(r.series, Number(r.sa_mom)); });
@@ -55,7 +55,9 @@ dash.calc('cpi_div', {
       const i = months.indexOf(r.date);
       if (i >= 0) by.get(r.series)['m' + (3 - i)] = r.yoy;
     });
-    return Array.from(by.values()).sort((a, b) => a.order - b.order)
+    const top = ['all', 'core', 'energy'];
+    const rank = (r) => (top.includes(r.series) ? top.indexOf(r.series) - 10 : r.order);
+    return Array.from(by.values()).sort((a, b) => rank(a) - rank(b))
       .map((r) => ({ name: r.name, weight: r.weight, m3: r.m3 ?? null, m2: r.m2 ?? null, m1: r.m1 ?? null, m0: r.m0 ?? null, sa_mom: r.sa_mom, d0: months[3], d1: months[2], d2: months[1], d3: months[0] }));
   },
 });
@@ -308,7 +310,7 @@ dash.calc('ppi_latest', {
     tb.replaceChildren();
     D.data.forEach((r, i) => {
       const tr = tb.insertRow(); tr.dataset.key = r.name;
-      if (i < 2) tr.className = 'agg'; if (i === 2) tr.className = 'sep';
+      if (i < 3) tr.className = 'agg'; if (i === 3) tr.className = 'sep';
       cell(tr, r.name, 'text');
       cell(tr, r.weight, 'weight');
       ['m3', 'm2', 'm1', 'm0'].forEach((k, j) => { const td = cell(tr, r[k]); if (j < 2) td.classList.add('hide-narrow'); });
@@ -378,6 +380,7 @@ dash.calc('ppi_latest', {
     t('In ' + mLabel(a.date) + ', CPI inflation was '); p.append(mk('all_yoy')); pc(); t(' y/y');
     if (a.all_yoy_prev != null) { t(dir(a.all_yoy, a.all_yoy_prev)); p.append(mk('all_yoy_prev')); pc(); t(' the month before'); }
     t('. Core inflation was '); p.append(mk('core_yoy')); pc(); t(' and food inflation '); p.append(mk('food_yoy')); pc();
+    if (a.energy_yoy != null) { t(', and energy (calculated) '); p.append(mk('energy_yoy')); pc(); }
     t('. For the bottom 30% of households it was '); p.append(mk('b30_yoy')); pc(); t('.');
     if (a.sa_mom != null && a.sa_date === a.date) { t(' Seasonally adjusted, prices changed by '); p.append(mk('sa_mom')); pc(); t(' on the month.'); }
     const P = dash.data('ppi_latest');
@@ -437,9 +440,10 @@ dash.calc('ppi_latest', {
       { key: 'meat', name: 'Meat', color: C[6] },
     ], 280);
     lineChart('cpi-energy', [
+      { key: 'energy', name: 'Energy (calculated)', color: C[1] },
       { key: 'electricity', name: 'Electricity', color: C[4] },
       { key: 'lpg', name: 'LPG', color: C[2] },
-      { key: 'fuels_transport', name: 'Fuels for personal transport', color: C[1] },
+      { key: 'fuels_transport', name: 'Fuels for personal transport', color: C[6] },
       { key: 'transport_services', name: 'Passenger transport services', color: C[0] },
     ], 280);
     saChart();

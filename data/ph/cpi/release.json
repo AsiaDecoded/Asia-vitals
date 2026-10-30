@@ -3,11 +3,11 @@
  "label": "Sep 2026",
  "latest_month": "2026-09-01",
  "table": "PSA OpenSTAT, CPI for all income households (2018 = 100): 0012M4ACP22-34, SACPI, bottom 30%",
- "processed_at": "2026-10-28T02:12:47Z",
- "rows": 12576,
+ "processed_at": "2026-10-30T02:27:09Z",
+ "rows": 12681,
  "warnings": [],
- "fingerprint": "e1756e83c91ac0bf",
- "long_rows": 30391,
+ "fingerprint": "87a13e357521336d",
+ "long_rows": 30589,
  "stamps": {
   "2M/PI/CPI/2018NEW/0012M4ACP22.px": "2026-10-06T09:22:23",
   "2M/PI/CPI/2018NEW/0012M4ACP23.px": "2026-10-06T09:22:23",
@@ -32,7 +32,7 @@
  "history": [
   {
    "code": "C2026-09",
-   "processed_at": "2026-10-28T02:12:47Z"
+   "processed_at": "2026-10-30T02:27:09Z"
   }
  ]
 }

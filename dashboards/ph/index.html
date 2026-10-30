@@ -134,6 +134,9 @@
       <div class="jg-card jg-tile"><div class="lbl">Food, y/y</div>
         <div class="val"><span data-source="cpi_latest" data-field="food_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
         <div class="sub">prior month <span data-source="cpi_latest" data-field="food_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Energy (calculated), y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="energy_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="energy_yoy_prev" data-row="0">—</span>%</div></div>
       <div class="jg-card jg-tile"><div class="lbl">CPI, m/m, seasonally adjusted</div>
         <div class="val"><span data-source="cpi_latest" data-field="sa_mom" data-row="0" class="dash-skeleton">—</span>%</div>
         <div class="sub">prior month <span data-source="cpi_latest" data-field="sa_mom_prev" data-row="0">—</span>%</div></div>
@@ -245,13 +248,13 @@
       <div class="ad-foot"><span>Source: Philippine Statistics Authority</span><span class="ad-brand">Asia Decoded</span></div>
     </section>
 
-    <p class="jg-foot">Source: Philippine Statistics Authority (PSA), Consumer Price Index for all income households (2018 = 100), OpenSTAT database: <span data-source="cpi_release" data-field="label" data-row="0">—</span>. All figures are as published by the PSA, including its backcast of the 2018-based series to 1957 and its seasonally adjusted CPI. Producer prices: PSA Producer Price Index for manufacturing (2018 = 100): <span data-source="ppi_release" data-field="label" data-row="0">—</span>.</p>
+    <p class="jg-foot">Source: Philippine Statistics Authority (PSA), Consumer Price Index for all income households (2018 = 100), OpenSTAT database: <span data-source="cpi_release" data-field="label" data-row="0">—</span>. All figures are as published by the PSA except energy, calculated by Asia Decoded from published indices and weights (see Methodology). Published figures include the PSA&rsquo;s backcast of the 2018-based series to 1957 and its seasonally adjusted CPI. Producer prices: PSA Producer Price Index for manufacturing (2018 = 100): <span data-source="ppi_release" data-field="label" data-row="0">—</span>.</p>
   </section>
 
   <section class="jg-page" id="methodology" role="tabpanel" hidden>
     <article class="jg-card ad-method" id="method-data">
       <h2>Data</h2>
-      <p>Every figure on this page is published by the Philippine Statistics Authority and taken from its OpenSTAT database. Nothing is calculated, linked or seasonally adjusted here.</p>
+      <p>Every figure on this page is published by the Philippine Statistics Authority and taken from its OpenSTAT database, except energy, which is calculated (below). Nothing is linked or seasonally adjusted here.</p>
       <h3>Consumer prices</h3>
       <ul>
         <li><b>Index:</b> CPI for all income households, 2018 = 100, classified by COICOP 2018 (13 divisions down to 4-digit classes). The current series starts in January 2018; for earlier years the PSA publishes a backcast on the same base: by commodity group from January 1994, all items from January 1957.</li>
@@ -261,6 +264,13 @@
       </ul>
       <h3>Core CPI</h3>
       <p>The PSA&rsquo;s core CPI excludes rice, corn, fresh meat, fresh fish, fruits, vegetables, electricity, LPG, diesel and gasoline, see the core CPI weight in the division table. It is the PSA&rsquo;s own definition, not a standard excluding all food and energy. The PSA publishes core y/y from January 2019 on the current tables and to December 2017 on the backcast, but none for 2018, so the core line has a gap that year.</p>
+      <h3>Energy (calculated)</h3>
+      <p>The PSA publishes no energy index. This one combines two published groups at the PSA&rsquo;s published 2018 weights: electricity, gas and other fuels (COICOP 04.5: electricity, LPG, kerosene, wood and charcoal) and fuels and lubricants for personal transport (07.2.2: diesel, gasoline, other fuels, lubricants). Water is excluded. Its weight is shown in the division table.</p>
+      <ul>
+        <li><b>Formula:</b> the PSA CPI is a fixed-base (Laspeyres) index on 2018 = 100, so a group is the weighted average of its parts. Energy = (weight of 04.5 &times; index of 04.5 + weight of 07.2.2 &times; index of 07.2.2) &divide; the sum of the two weights; y/y is calculated from that index and rounded to one decimal.</li>
+        <li><b>Check:</b> the same method reproduces the PSA&rsquo;s published indices for 04.5, 07.2, division 04 and division 07 from their parts within 0.2 index points in every month since January 2018 (indices are published to one decimal). The pipeline stops if it does not.</li>
+        <li><b>Period:</b> index from January 2018, y/y from January 2019. The PSA&rsquo;s backcast before 2018 does not add up from its parts this way, so the series is not extended back.</li>
+      </ul>
       <h3>Seasonally adjusted CPI</h3>
       <p>The PSA publishes a seasonally adjusted CPI and its month-on-month change for all items, food and non-alcoholic beverages, non-food and the divisions, from January 2018, for the Philippines, NCR and areas outside NCR. The momentum chart and the m/m column show those published rates.</p>
       <h3>Bottom 30% income households</h3>
@@ -268,7 +278,7 @@
       <h3>Producer prices</h3>
       <p>PSA Producer Price Index for manufacturing (2018 = 100), from the Monthly Integrated Survey of Selected Industries, published about two months after the reference month. y/y as published from January 2019, and from the PSA&rsquo;s backcast for total manufacturing for 2002&ndash;2017. No y/y is published for 2018.</p>
       <h3>Not on this page</h3>
-      <p>The PSA publishes no goods and services split, no contributions to y/y in its database (only in the monthly press release) and no diffusion measure, so the page has none. Each could be calculated from the published indices and weights.</p>
+      <p>Apart from energy, the PSA publishes no goods and services split, no contributions to y/y in its database (only in the monthly press release) and no diffusion measure, so the page has none. Each could be calculated from the published indices and weights.</p>
       <div class="ad-foot"><span>Source: Philippine Statistics Authority</span><span class="ad-brand">Asia Decoded</span></div>
     </article>
   </section>

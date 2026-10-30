@@ -1,6 +1,6 @@
 """Philippines CPI: Philippine Statistics Authority, CPI for all income households (2018 = 100), OpenSTAT.
 
-Everything is as published by the PSA; nothing is calculated here.
+Everything is as published by the PSA except energy (calculated; below).
   - CPI by commodity group (COICOP 2018, 354 groups to 4 digits), Jan 2018 on: index (0012M4ACP22) and
     y/y (0012M4ACP23, Jan 2019 on). PSA's backcast on the 2018 base: index Jan 1994-Dec 2017 by group
     (0012M4ACP28) and all items 1957-1993 (0012M4ACP26); y/y Jan 1995-Dec 2018 by group and region
@@ -13,6 +13,8 @@ Everything is as published by the PSA; nothing is calculated here.
   - Weights (% of CPI): all income (0012M4ACP25), core (0012M4ACP32, its all-items weight is core's share
     of the CPI), bottom 30% (0022M4ABIR3).
   - Regions: all-items y/y for NCR, AONCR and the 17 regions.
+  - Energy (calculated, the one series not as published): 04.5 + 07.2.2 at published 2018 weights,
+    index Jan 2018 on, y/y Jan 2019 on (see ENERGY_PARTS).
   - Every commodity group (national): index and y/y for the latest 25 months (ph_cpi_items.csv).
 
 New data is detected from the folder listing's last-updated dates (one call); the tables are fetched only
@@ -105,7 +107,16 @@ REGION_NAMES = {
     "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)": "BARMM",
     "Region XIII (Caraga)": "Caraga (XIII)", "Negros Island Region (NIR)": "Negros Island (NIR)",
 }
-YOY_TOL = 0.15  # published y/y vs the published index (indices are rounded to one decimal)
+YOY_TOL = 0.15
+# Energy (calculated, Asia Decoded): electricity, gas and other fuels (04.5) plus fuels and lubricants for
+# personal transport (07.2.2), combined at the PSA's published 2018 weights. The PSA CPI is a fixed-base
+# Laspeyres index, so a group is the weighted average of its parts on the 2018 base: checked every run on
+# 04.5, 07.2, 04 and 07 against their published indices (AGG_TOL). PSA's backcast before 2018 is not
+# built that way (errors up to 2 index points), so energy starts Jan 2018 (index), Jan 2019 (y/y).
+ENERGY_PARTS = ["04.5", "07.2.2"]
+AGG_CHECKS = {"04.5": ["04.5.1", "04.5.2", "04.5.3", "04.5.4"], "07.2": ["07.2.1", "07.2.2", "07.2.3", "07.2.4"],
+              "04": ["04.1", "04.3", "04.4", "04.5"], "07": ["07.1", "07.2", "07.3", "07.4"]}
+AGG_TOL = 0.2  # index points; published indices are rounded to one decimal  # published y/y vs the published index (indices are rounded to one decimal)
 
 
 def _code(t):
@@ -217,6 +228,17 @@ def build(t):
         if key == "all":
             add("national", "core", "Core (PSA definition)", "headline", core_idx, core_yoy,
                 next((r["value"] for r in t["core_weights"] if _code(r["Commodity Description"]) == "0"), None))
+    ew = [weights.get(("national", c)) for c in ENERGY_PARTS]
+    e_idx = {}
+    if None not in ew:
+        for (a, c, d), v in idx.items():
+            if a == "national" and c == ENERGY_PARTS[0] and d >= "2018-01-01":
+                parts = [idx.get(("national", k, d)) for k in ENERGY_PARTS]
+                if None not in parts:
+                    e_idx[d] = round(sum(x * y for x, y in zip(parts, ew)) / sum(ew), 3)
+    e_yoy = {d: round((v / e_idx[f"{int(d[:4]) - 1}{d[4:]}"] - 1) * 100, 1)
+             for d, v in e_idx.items() if f"{int(d[:4]) - 1}{d[4:]}" in e_idx}
+    add("national", "energy", "Energy (calculated)", "drivers", e_idx, e_yoy, round(sum(ew), 4) if None not in ew else None)
     for area, lab in (("ncr", "NCR"), ("aoncr", "Areas outside NCR")):
         for key, com, label in (("all", "0", "All items"), ("food", "01.1", "Food")):
             ix = {d: v for (a, c, dd), v in idx.items() for d in [dd] if a == area and c == com}
@@ -334,6 +356,24 @@ def check(b, state):
                     worst = max(worst, abs(sum(x * y for x, y in zip(parts, wd)) / 100 - v))
         if worst > 0.15:
             errors.append(f"weighted division indices miss the all-items index by up to {worst:.3f}")
+    # energy (calculated): the weighted-parts method reproduces published groups on the 2018 base
+    for parent, parts in AGG_CHECKS.items():
+        pw = [w.get(("national", k)) for k in parts]
+        if None in pw:
+            errors.append(f"weights missing for parts of {parent}")
+            continue
+        worst = (0, None)
+        for (a, c, d), v in idx.items():
+            if a == "national" and c == parent and d >= "2018-01-01":
+                xs = [idx.get(("national", k, d)) for k in parts]
+                if None not in xs:
+                    gap = abs(sum(x * y for x, y in zip(xs, pw)) / sum(pw) - v)
+                    if gap > worst[0]:
+                        worst = (gap, d)
+        if worst[0] > AGG_TOL:
+            errors.append(f"weighted parts miss published {parent} by {worst[0]:.3f} ({worst[1][:7]}): energy method fails")
+    if ("national", "energy") not in have:
+        errors.append(f"energy (calculated): no y/y for {latest}")
     for r in b["series"]:
         if r["index"] is not None and not 0 < r["index"] < 1000:
             errors.append(f"{r['series']} {r['date']} index {r['index']} out of range")
