@@ -254,6 +254,27 @@ dash.calc('sbn_latest', {
       : [['#0C84FF', 'Revenue and grants', pc(r.rev)], ['#BD1B21', 'Expenditure', pc(r.exp)], ['#A6A6A6', 'Fiscal balance', pc2(r.bal)]]));
   }
 
+  function imfChart() {
+    // IMF WEO general government net lending/borrowing, % of GDP, as published; projections outlined
+    const box = document.getElementById('f-imf-chart');
+    const D = dash.data('id_fiscal_imf');
+    if (bad(D)) { J.fail(box); return; }
+    if (D.status !== 'ok') { box.replaceChildren(); return; }
+    const rows = D.data.filter((r) => r.value !== '').map((r) => ({ year: Number(r.year), v: Number(r.value), proj: r.imf_projection === 'y' }))
+      .sort((a, b) => a.year - b.year);
+    if (!rows.length) { box.replaceChildren(); return; }
+    const H = 280;
+    const f = frame(box, rows.map((r) => String(r.year)), H, d3.min(rows, (r) => r.v), d3.max(rows, (r) => r.v), 0.2);
+    yearAxis(f, H, rows);
+    f.svg.append('g').selectAll('rect').data(rows).join('rect')
+      .attr('x', (r) => f.x(String(r.year))).attr('width', f.x.bandwidth())
+      .attr('y', (r) => f.y(Math.max(0, r.v))).attr('height', (r) => Math.abs(f.y(r.v) - f.y(0)))
+      .attr('fill', (r) => (r.proj ? 'none' : '#1F4E79')).attr('stroke', (r) => (r.proj ? '#1F4E79' : 'none')).attr('stroke-width', 1.5);
+    legend('f-imf-legend', [['sw', '#1F4E79', 'General government net lending/borrowing']]);
+    hover(f, rows, (r) => String(r.year), H, 'f-imf', (r) => `${r.year}${r.proj ? ', IMF projection' : ''}`,
+      (r) => [['#1F4E79', 'Fiscal balance', r.v.toFixed(2) + '%']]);
+  }
+
   function budgetChart() {
     // y/y growth of revenue and grants and of expenditure (calculated from published levels). Actual: SEKI older sheets
     // (id_fiscal_hist: 1990-1999 April-March fiscal years, 2000 April-December, 2001-2007, also in fiscal_years) and the current sheet (2008 on);
@@ -404,7 +425,7 @@ dash.calc('sbn_latest', {
     const pg = document.getElementById('fiscal');
     if (!pg || pg.hidden) return;
     if (J.state.fBal === 'pct') gdpChart(); else balanceChart();
-    budgetChart(); mixChart(); balBudgetChart();
+    imfChart(); budgetChart(); mixChart(); balBudgetChart();
     sbnStack('f-sbn-chart', 'f-sbn', 'f-sbn-legend', [['bonds', 'Government bonds (Obligasi Negara)', '#1F4E79'], ['spn', 'Treasury bills (SPN)', '#0C84FF'], ['sbsn', 'Islamic securities (SBSN)', '#92D050']]);
     sbnStack('f-hold-chart', 'f-hold', 'f-hold-legend', HOLD);
   };
