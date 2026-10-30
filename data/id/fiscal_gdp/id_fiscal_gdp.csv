@@ -1,4 +1,13 @@
 year,basis,through,revenue_pct,expenditure_pct,balance_pct,revenue,expenditure,balance,gdp,mof_through,mof_balance_pct,method
+2001,actual,,18.288,20.747,-2.459,301078.0,341563.0,-40485.0,1646322.0,,,calculated: SEKI actual / World Bank WDI nominal GDP (pre-2010 base)
+2002,actual,,16.386,17.684,-1.298,298528.0,322180.0,-23652.0,1821833.4,,,calculated: SEKI actual / World Bank WDI nominal GDP (pre-2010 base)
+2003,actual,,16.954,18.697,-1.744,341396.0,376505.0,-35109.0,2013674.6,,,calculated: SEKI actual / World Bank WDI nominal GDP (pre-2010 base)
+2004,actual,,17.57,18.607,-1.037,403367.0,427177.0,-23810.0,2295826.2,,,calculated: SEKI actual / World Bank WDI nominal GDP (pre-2010 base)
+2005,actual,,17.851,18.37,-0.519,495224.0,509632.0,-14408.0,2774281.1,,,calculated: SEKI actual / World Bank WDI nominal GDP (pre-2010 base)
+2006,actual,,19.106,19.979,-0.873,637987.0,667129.0,-29142.0,3339216.8,,,calculated: SEKI actual / World Bank WDI nominal GDP (pre-2010 base)
+2007,actual,,17.915,19.177,-1.262,707806.0,757650.0,-49844.0,3950893.2,,,calculated: SEKI actual / World Bank WDI nominal GDP (pre-2010 base)
+2008,actual,,19.836,19.919,-0.083,981609.38,985730.75,-4121.32,4948688.397,,,calculated: SEKI actual / World Bank WDI nominal GDP (pre-2010 base)
+2009,actual,,15.14,16.72,-1.581,848763.16,937382.07,-88618.78,5606203.366,,,calculated: SEKI actual / World Bank WDI nominal GDP (pre-2010 base)
 2010,actual,,14.5,15.182,-0.682,995271.4,1042117.4,-46845.71,6864133.1,,,calculated: SEKI actual / BPS annual nominal GDP
 2011,actual,,15.458,16.535,-1.078,1210599.7,1294999.2,-84399.4,7831726.0,,,calculated: SEKI actual / BPS annual nominal GDP
 2012,actual,,15.531,17.31,-1.779,1338109.62,1491410.22,-153300.6,8615704.5,,,calculated: SEKI actual / BPS annual nominal GDP

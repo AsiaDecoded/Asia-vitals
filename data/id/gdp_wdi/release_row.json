@@ -1,0 +1,9 @@
+[
+ {
+  "code": "W2025-2026-10-08",
+  "label": "1960-2025 (WDI updated 2026-10-08)",
+  "latest_year": 2025,
+  "table": "https://api.worldbank.org/v2/country/IDN/indicator/NY.GDP.MKTP.CN?format=json&per_page=200",
+  "processed_at": "2026-10-30T10:52:21Z"
+ }
+]
