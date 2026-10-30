@@ -269,7 +269,16 @@ dash.calc('sbn_latest', {
     const act = rows.filter((r) => r.basis === 'actual');
     const lastAct = act[act.length - 1];
     const bud = (lastAct ? [lastAct] : []).concat(rows.filter((r) => r.basis === 'budget'));
-    f.svg.append('line').attr('x1', 0).attr('x2', f.x.range()[1]).attr('y1', f.y(0)).attr('y2', f.y(0)).attr('stroke', 'var(--color-border-line)');
+    // Asian financial crisis: fiscal years 1997/98 and 1998/99 shaded
+    const afc = ['1997', '1998'].filter((y) => f.x(y) != null);
+    if (afc.length) {
+      const pad = f.x.step() * f.x.paddingInner() / 2;
+      const x0 = f.x(afc[0]) - pad, x1 = f.x(afc[afc.length - 1]) + f.x.bandwidth() + pad;
+      f.svg.insert('rect', ':first-child').attr('x', x0).attr('width', x1 - x0).attr('y', 10).attr('height', H - 34)
+        .attr('fill', '#FFC000').attr('opacity', 0.18);
+      f.svg.append('text').attr('x', (x0 + x1) / 2).attr('y', 22).attr('text-anchor', 'middle')
+        .attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text('AFC');
+    }
     [['rev', '#0C84FF'], ['exp', '#BD1B21']].forEach(([k, c]) => {
       const line = d3.line().defined((r) => r[k] != null).x(cx).y((r) => f.y(r[k]));
       f.svg.append('path').attr('d', line(act)).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2).attr('stroke-linejoin', 'round');
@@ -282,6 +291,7 @@ dash.calc('sbn_latest', {
     const lab = (r) => {
       if (r.basis === 'budget') return `${r.year}, budget vs ${r.year - 1} ${r.base === 'budget' ? 'budget' : 'actual'}`;
       if (BREAK.has(r.year)) return `${r.year}: not comparable (2000 covers Apr–Dec only)`;
+      if (r.year === 1997 || r.year === 1998) return `${fy(r.period)}, actual (Asian financial crisis)`;
       return r.period && r.period !== String(r.year) ? `${fy(r.period)}, actual` : `${r.year}, actual`;
     };
     const pc = (v) => (v == null ? '—' : J.f1(v) + '%');
