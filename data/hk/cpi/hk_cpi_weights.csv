@@ -739,3 +739,795 @@ reference_year,adopted,index_type,series,label,level,section,weight_pct
 2024,(Adopted for the reference months from April 2025 to March 2026),a,g88,Other services,group,misc_services,0.49
 2024,(Adopted for the reference months from April 2025 to March 2026),b,g88,Other services,group,misc_services,0.7
 2024,(Adopted for the reference months from April 2025 to March 2026),c,g88,Other services,group,misc_services,0.85
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,all,All items,all,all,100.0
+2023,(Adopted for the reference months from April 2024 to March 2025),a,all,All items,all,all,100.0
+2023,(Adopted for the reference months from April 2024 to March 2025),b,all,All items,all,all,100.0
+2023,(Adopted for the reference months from April 2024 to March 2025),c,all,All items,all,all,100.0
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,food,Food,section,food,26.49
+2023,(Adopted for the reference months from April 2024 to March 2025),a,food,Food,section,food,31.58
+2023,(Adopted for the reference months from April 2024 to March 2025),b,food,Food,section,food,26.09
+2023,(Adopted for the reference months from April 2024 to March 2025),c,food,Food,section,food,20.98
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,meals_out,Meals out and takeaway food,subsection,food,17.39
+2023,(Adopted for the reference months from April 2024 to March 2025),a,meals_out,Meals out and takeaway food,subsection,food,19.33
+2023,(Adopted for the reference months from April 2024 to March 2025),b,meals_out,Meals out and takeaway food,subsection,food,17.71
+2023,(Adopted for the reference months from April 2024 to March 2025),c,meals_out,Meals out and takeaway food,subsection,food,14.63
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,basic_food,Basic food,subsection,food,9.1
+2023,(Adopted for the reference months from April 2024 to March 2025),a,basic_food,Basic food,subsection,food,12.25
+2023,(Adopted for the reference months from April 2024 to March 2025),b,basic_food,Basic food,subsection,food,8.38
+2023,(Adopted for the reference months from April 2024 to March 2025),c,basic_food,Basic food,subsection,food,6.35
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g2,Rice,group,food,0.18
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g2,Rice,group,food,0.25
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g2,Rice,group,food,0.16
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g2,Rice,group,food,0.1
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g3,Other cereals and cereal preparations,group,food,0.25
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g3,Other cereals and cereal preparations,group,food,0.35
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g3,Other cereals and cereal preparations,group,food,0.22
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g3,Other cereals and cereal preparations,group,food,0.17
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g4,"Bread, cakes, biscuits and puddings",group,food,0.56
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g4,"Bread, cakes, biscuits and puddings",group,food,0.68
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g4,"Bread, cakes, biscuits and puddings",group,food,0.53
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g4,"Bread, cakes, biscuits and puddings",group,food,0.44
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g5,Salt-water fish,group,food,0.76
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g5,Salt-water fish,group,food,1.07
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g5,Salt-water fish,group,food,0.66
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g5,Salt-water fish,group,food,0.53
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g6,Fresh-water fish,group,food,0.26
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g6,Fresh-water fish,group,food,0.45
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g6,Fresh-water fish,group,food,0.2
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g6,Fresh-water fish,group,food,0.12
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g7,Other fresh sea products,group,food,0.26
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g7,Other fresh sea products,group,food,0.27
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g7,Other fresh sea products,group,food,0.28
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g7,Other fresh sea products,group,food,0.23
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g8,Processed sea products,group,food,0.49
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g8,Processed sea products,group,food,0.58
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g8,Processed sea products,group,food,0.5
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g8,Processed sea products,group,food,0.39
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g9,Pork,group,food,1.31
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g9,Pork,group,food,2.02
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g9,Pork,group,food,1.13
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g9,Pork,group,food,0.75
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g10,Beef,group,food,0.3
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g10,Beef,group,food,0.33
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g10,Beef,group,food,0.29
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g10,Beef,group,food,0.28
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g11,Poultry,group,food,0.36
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g11,Poultry,group,food,0.48
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g11,Poultry,group,food,0.34
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g11,Poultry,group,food,0.24
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g12,"Meat, frozen",group,food,0.74
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g12,"Meat, frozen",group,food,0.92
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g12,"Meat, frozen",group,food,0.69
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g12,"Meat, frozen",group,food,0.59
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g13,"Meat, canned",group,food,0.05
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g13,"Meat, canned",group,food,0.08
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g13,"Meat, canned",group,food,0.05
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g13,"Meat, canned",group,food,0.03
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g14,"Meat, others",group,food,0.21
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g14,"Meat, others",group,food,0.32
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g14,"Meat, others",group,food,0.2
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g14,"Meat, others",group,food,0.11
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g15,Fresh vegetables,group,food,1.06
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g15,Fresh vegetables,group,food,1.56
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g15,Fresh vegetables,group,food,0.93
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g15,Fresh vegetables,group,food,0.64
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g16,Processed vegetables,group,food,0.04
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g16,Processed vegetables,group,food,0.06
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g16,Processed vegetables,group,food,0.04
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g16,Processed vegetables,group,food,0.03
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g17,Fresh fruit,group,food,0.79
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g17,Fresh fruit,group,food,1.03
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g17,Fresh fruit,group,food,0.72
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g17,Fresh fruit,group,food,0.59
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g18,Processed fruit,group,food,0.02
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g18,Processed fruit,group,food,0.02
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g18,Processed fruit,group,food,0.01
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g18,Processed fruit,group,food,0.01
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g19,Dairy products,group,food,0.27
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g19,Dairy products,group,food,0.28
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g19,Dairy products,group,food,0.27
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g19,Dairy products,group,food,0.24
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g20,Eggs,group,food,0.16
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g20,Eggs,group,food,0.23
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g20,Eggs,group,food,0.14
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g20,Eggs,group,food,0.1
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g21,Edible oils,group,food,0.09
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g21,Edible oils,group,food,0.15
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g21,Edible oils,group,food,0.08
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g21,Edible oils,group,food,0.06
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g22,Carbonated drinks,group,food,0.05
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g22,Carbonated drinks,group,food,0.07
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g22,Carbonated drinks,group,food,0.05
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g22,Carbonated drinks,group,food,0.03
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g23,Other non-alcoholic beverages,group,food,0.22
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g23,Other non-alcoholic beverages,group,food,0.27
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g23,Other non-alcoholic beverages,group,food,0.22
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g23,Other non-alcoholic beverages,group,food,0.15
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g24,Sugar,group,food,0.02
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g24,Sugar,group,food,0.02
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g24,Sugar,group,food,0.02
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g24,Sugar,group,food,0.01
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g25,Confectionery,group,food,0.07
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g25,Confectionery,group,food,0.06
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g25,Confectionery,group,food,0.08
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g25,Confectionery,group,food,0.06
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g26,Flavourings and additives,group,food,0.09
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g26,Flavourings and additives,group,food,0.11
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g26,Flavourings and additives,group,food,0.09
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g26,Flavourings and additives,group,food,0.07
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g27,"Food, others",group,food,0.49
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g27,"Food, others",group,food,0.59
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g27,"Food, others",group,food,0.48
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g27,"Food, others",group,food,0.38
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,housing,Housing,section,housing,38.48
+2023,(Adopted for the reference months from April 2024 to March 2025),a,housing,Housing,section,housing,39.54
+2023,(Adopted for the reference months from April 2024 to March 2025),b,housing,Housing,section,housing,38.67
+2023,(Adopted for the reference months from April 2024 to March 2025),c,housing,Housing,section,housing,36.94
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g28,"Rent, including rates and government rent",group,housing,35.55
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g28,"Rent, including rates and government rent",group,housing,37.44
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g28,"Rent, including rates and government rent",group,housing,35.65
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g28,"Rent, including rates and government rent",group,housing,33.18
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g29,Management fees and other housing charges,group,housing,2.93
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g29,Management fees and other housing charges,group,housing,2.1
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g29,Management fees and other housing charges,group,housing,3.02
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g29,Management fees and other housing charges,group,housing,3.76
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,egw,"Electricity, gas and water",section,egw,3.07
+2023,(Adopted for the reference months from April 2024 to March 2025),a,egw,"Electricity, gas and water",section,egw,4.21
+2023,(Adopted for the reference months from April 2024 to March 2025),b,egw,"Electricity, gas and water",section,egw,2.82
+2023,(Adopted for the reference months from April 2024 to March 2025),c,egw,"Electricity, gas and water",section,egw,2.07
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g30,Electricity,group,egw,2.15
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g30,Electricity,group,egw,2.93
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g30,Electricity,group,egw,1.98
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g30,Electricity,group,egw,1.48
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g31,Towngas,group,egw,0.55
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g31,Towngas,group,egw,0.76
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g31,Towngas,group,egw,0.48
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g31,Towngas,group,egw,0.37
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g32,Liquefied petroleum gas and other fuel,group,egw,0.11
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g32,Liquefied petroleum gas and other fuel,group,egw,0.17
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g32,Liquefied petroleum gas and other fuel,group,egw,0.11
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g32,Liquefied petroleum gas and other fuel,group,egw,0.04
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g33,Water and sewage charges,group,egw,0.26
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g33,Water and sewage charges,group,egw,0.35
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g33,Water and sewage charges,group,egw,0.25
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g33,Water and sewage charges,group,egw,0.18
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,alcohol_tobacco,Alcoholic drinks and tobacco,section,alcohol_tobacco,0.52
+2023,(Adopted for the reference months from April 2024 to March 2025),a,alcohol_tobacco,Alcoholic drinks and tobacco,section,alcohol_tobacco,0.84
+2023,(Adopted for the reference months from April 2024 to March 2025),b,alcohol_tobacco,Alcoholic drinks and tobacco,section,alcohol_tobacco,0.44
+2023,(Adopted for the reference months from April 2024 to March 2025),c,alcohol_tobacco,Alcoholic drinks and tobacco,section,alcohol_tobacco,0.27
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g34,Wines and spirits,group,alcohol_tobacco,0.08
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g34,Wines and spirits,group,alcohol_tobacco,0.05
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g34,Wines and spirits,group,alcohol_tobacco,0.1
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g34,Wines and spirits,group,alcohol_tobacco,0.08
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g35,Beer,group,alcohol_tobacco,0.05
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g35,Beer,group,alcohol_tobacco,0.09
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g35,Beer,group,alcohol_tobacco,0.04
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g35,Beer,group,alcohol_tobacco,0.04
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g36,Cigarettes,group,alcohol_tobacco,0.39
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g36,Cigarettes,group,alcohol_tobacco,0.7
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g36,Cigarettes,group,alcohol_tobacco,0.3
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g36,Cigarettes,group,alcohol_tobacco,0.15
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,clothing,Clothing and footwear,section,clothing,2.74
+2023,(Adopted for the reference months from April 2024 to March 2025),a,clothing,Clothing and footwear,section,clothing,2.0
+2023,(Adopted for the reference months from April 2024 to March 2025),b,clothing,Clothing and footwear,section,clothing,2.85
+2023,(Adopted for the reference months from April 2024 to March 2025),c,clothing,Clothing and footwear,section,clothing,3.46
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g37,Men’s outerclothing,group,clothing,0.55
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g37,Men’s outerclothing,group,clothing,0.37
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g37,Men’s outerclothing,group,clothing,0.61
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g37,Men’s outerclothing,group,clothing,0.67
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g38,Men’s underclothing,group,clothing,0.04
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g38,Men’s underclothing,group,clothing,0.04
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g38,Men’s underclothing,group,clothing,0.04
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g38,Men’s underclothing,group,clothing,0.05
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g39,Women’s outerclothing,group,clothing,1.16
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g39,Women’s outerclothing,group,clothing,0.76
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g39,Women’s outerclothing,group,clothing,1.23
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g39,Women’s outerclothing,group,clothing,1.53
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g40,Women’s underclothing,group,clothing,0.07
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g40,Women’s underclothing,group,clothing,0.07
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g40,Women’s underclothing,group,clothing,0.07
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g40,Women’s underclothing,group,clothing,0.07
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g41,Children’s outerclothing,group,clothing,0.18
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g41,Children’s outerclothing,group,clothing,0.16
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g41,Children’s outerclothing,group,clothing,0.16
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g41,Children’s outerclothing,group,clothing,0.24
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g42,Children’s underclothing,group,clothing,0.02
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g42,Children’s underclothing,group,clothing,0.02
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g42,Children’s underclothing,group,clothing,0.02
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g42,Children’s underclothing,group,clothing,0.01
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g43,Infants’ clothing,group,clothing,0.04
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g43,Infants’ clothing,group,clothing,0.03
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g43,Infants’ clothing,group,clothing,0.04
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g43,Infants’ clothing,group,clothing,0.08
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g44,"Clothing, others",group,clothing,0.09
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g44,"Clothing, others",group,clothing,0.06
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g44,"Clothing, others",group,clothing,0.09
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g44,"Clothing, others",group,clothing,0.11
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g45,Men’s footwear,group,clothing,0.21
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g45,Men’s footwear,group,clothing,0.18
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g45,Men’s footwear,group,clothing,0.2
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g45,Men’s footwear,group,clothing,0.26
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g46,Women’s footwear,group,clothing,0.3
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g46,Women’s footwear,group,clothing,0.25
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g46,Women’s footwear,group,clothing,0.32
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g46,Women’s footwear,group,clothing,0.33
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g47,Children’s and infants’ footwear,group,clothing,0.08
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g47,Children’s and infants’ footwear,group,clothing,0.06
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g47,Children’s and infants’ footwear,group,clothing,0.07
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g47,Children’s and infants’ footwear,group,clothing,0.11
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,durables,Durable goods,section,durables,4.3
+2023,(Adopted for the reference months from April 2024 to March 2025),a,durables,Durable goods,section,durables,3.53
+2023,(Adopted for the reference months from April 2024 to March 2025),b,durables,Durable goods,section,durables,4.26
+2023,(Adopted for the reference months from April 2024 to March 2025),c,durables,Durable goods,section,durables,5.29
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g48,Furniture,group,durables,0.31
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g48,Furniture,group,durables,0.22
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g48,Furniture,group,durables,0.33
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g48,Furniture,group,durables,0.36
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g49,"Home appliances, electric and gas",group,durables,0.85
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g49,"Home appliances, electric and gas",group,durables,0.78
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g49,"Home appliances, electric and gas",group,durables,0.79
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g49,"Home appliances, electric and gas",group,durables,1.04
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g50,Video and sound equipment,group,durables,0.2
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g50,Video and sound equipment,group,durables,0.17
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g50,Video and sound equipment,group,durables,0.2
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g50,Video and sound equipment,group,durables,0.22
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g51,Information technology and telecommunications equipment,group,durables,1.86
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g51,Information technology and telecommunications equipment,group,durables,1.65
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g51,Information technology and telecommunications equipment,group,durables,2.01
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g51,Information technology and telecommunications equipment,group,durables,1.92
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g52,Tableware and kitchen utensils,group,durables,0.08
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g52,Tableware and kitchen utensils,group,durables,0.08
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g52,Tableware and kitchen utensils,group,durables,0.08
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g52,Tableware and kitchen utensils,group,durables,0.09
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g53,"Watches, clocks, cameras and optical goods",group,durables,0.44
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g53,"Watches, clocks, cameras and optical goods",group,durables,0.27
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g53,"Watches, clocks, cameras and optical goods",group,durables,0.37
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g53,"Watches, clocks, cameras and optical goods",group,durables,0.75
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g54,"Travel goods, handbags and other personal effects",group,durables,0.5
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g54,"Travel goods, handbags and other personal effects",group,durables,0.33
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g54,"Travel goods, handbags and other personal effects",group,durables,0.42
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g54,"Travel goods, handbags and other personal effects",group,durables,0.81
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g55,"Durable goods, others",group,durables,0.06
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g55,"Durable goods, others",group,durables,0.03
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g55,"Durable goods, others",group,durables,0.06
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g55,"Durable goods, others",group,durables,0.1
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,misc_goods,Miscellaneous goods,section,misc_goods,3.38
+2023,(Adopted for the reference months from April 2024 to March 2025),a,misc_goods,Miscellaneous goods,section,misc_goods,3.27
+2023,(Adopted for the reference months from April 2024 to March 2025),b,misc_goods,Miscellaneous goods,section,misc_goods,3.51
+2023,(Adopted for the reference months from April 2024 to March 2025),c,misc_goods,Miscellaneous goods,section,misc_goods,3.32
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g56,Proprietary medicines and supplies,group,misc_goods,0.82
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g56,Proprietary medicines and supplies,group,misc_goods,0.9
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g56,Proprietary medicines and supplies,group,misc_goods,0.89
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g56,Proprietary medicines and supplies,group,misc_goods,0.62
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g57,"Newspapers, books and periodicals",group,misc_goods,0.12
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g57,"Newspapers, books and periodicals",group,misc_goods,0.12
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g57,"Newspapers, books and periodicals",group,misc_goods,0.12
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g57,"Newspapers, books and periodicals",group,misc_goods,0.13
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g58,Stationery,group,misc_goods,0.09
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g58,Stationery,group,misc_goods,0.07
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g58,Stationery,group,misc_goods,0.09
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g58,Stationery,group,misc_goods,0.12
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g59,Soft furnishings,group,misc_goods,0.11
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g59,Soft furnishings,group,misc_goods,0.08
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g59,Soft furnishings,group,misc_goods,0.14
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g59,Soft furnishings,group,misc_goods,0.1
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g60,Cosmetics and personal care products,group,misc_goods,0.88
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g60,Cosmetics and personal care products,group,misc_goods,0.92
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g60,Cosmetics and personal care products,group,misc_goods,0.97
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g60,Cosmetics and personal care products,group,misc_goods,0.7
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g61,Household cleansing tools and supplies,group,misc_goods,0.18
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g61,Household cleansing tools and supplies,group,misc_goods,0.23
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g61,Household cleansing tools and supplies,group,misc_goods,0.18
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g61,Household cleansing tools and supplies,group,misc_goods,0.13
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g62,Jewellery,group,misc_goods,0.35
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g62,Jewellery,group,misc_goods,0.2
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g62,Jewellery,group,misc_goods,0.26
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g62,Jewellery,group,misc_goods,0.64
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g63,Toys and hobbies,group,misc_goods,0.27
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g63,Toys and hobbies,group,misc_goods,0.18
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g63,Toys and hobbies,group,misc_goods,0.31
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g63,Toys and hobbies,group,misc_goods,0.31
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g64,Purchases of textbooks,group,misc_goods,0.35
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g64,Purchases of textbooks,group,misc_goods,0.39
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g64,Purchases of textbooks,group,misc_goods,0.32
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g64,Purchases of textbooks,group,misc_goods,0.35
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g65,"Household goods, others",group,misc_goods,0.21
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g65,"Household goods, others",group,misc_goods,0.18
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g65,"Household goods, others",group,misc_goods,0.23
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g65,"Household goods, others",group,misc_goods,0.22
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,transport,Transport,section,transport,7.28
+2023,(Adopted for the reference months from April 2024 to March 2025),a,transport,Transport,section,transport,5.29
+2023,(Adopted for the reference months from April 2024 to March 2025),b,transport,Transport,section,transport,7.52
+2023,(Adopted for the reference months from April 2024 to March 2025),c,transport,Transport,section,transport,9.31
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g66,Purchases of and repairs to motor vehicles,group,transport,0.44
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g66,Purchases of and repairs to motor vehicles,group,transport,0.2
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g66,Purchases of and repairs to motor vehicles,group,transport,0.52
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g66,Purchases of and repairs to motor vehicles,group,transport,0.61
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g67,Motor fuel,group,transport,0.55
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g67,Motor fuel,group,transport,0.18
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g67,Motor fuel,group,transport,0.58
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g67,Motor fuel,group,transport,0.96
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g68,"Motor licences, insurance, instructor’s fees, parking fees and tunnel tolls",group,transport,1.97
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g68,"Motor licences, insurance, instructor’s fees, parking fees and tunnel tolls",group,transport,0.59
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g68,"Motor licences, insurance, instructor’s fees, parking fees and tunnel tolls",group,transport,2.07
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g68,"Motor licences, insurance, instructor’s fees, parking fees and tunnel tolls",group,transport,3.47
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g69,Bus fares,group,transport,0.95
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g69,Bus fares,group,transport,1.36
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g69,Bus fares,group,transport,0.95
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g69,Bus fares,group,transport,0.47
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g70,Tram fares,group,transport,0.01
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g70,Tram fares,group,transport,0.01
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g70,Tram fares,group,transport,0.02
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g70,Tram fares,group,transport,0.01
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g71,Public light bus fares,group,transport,0.31
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g71,Public light bus fares,group,transport,0.45
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g71,Public light bus fares,group,transport,0.32
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g71,Public light bus fares,group,transport,0.14
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g72,Taxi fares,group,transport,0.37
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g72,Taxi fares,group,transport,0.2
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g72,Taxi fares,group,transport,0.4
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g72,Taxi fares,group,transport,0.54
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g73,MTR fares,group,transport,1.43
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g73,MTR fares,group,transport,1.74
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g73,MTR fares,group,transport,1.49
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g73,MTR fares,group,transport,0.95
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g74,Ferry fares,group,transport,0.04
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g74,Ferry fares,group,transport,0.03
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g74,Ferry fares,group,transport,0.05
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g74,Ferry fares,group,transport,0.02
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g75,"Local transport, others",group,transport,0.2
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g75,"Local transport, others",group,transport,0.11
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g75,"Local transport, others",group,transport,0.2
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g75,"Local transport, others",group,transport,0.31
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g76,Inbound and outbound transport fares,group,transport,1.01
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g76,Inbound and outbound transport fares,group,transport,0.42
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g76,Inbound and outbound transport fares,group,transport,0.92
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g76,Inbound and outbound transport fares,group,transport,1.83
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,misc_services,Miscellaneous services,section,misc_services,13.74
+2023,(Adopted for the reference months from April 2024 to March 2025),a,misc_services,Miscellaneous services,section,misc_services,9.74
+2023,(Adopted for the reference months from April 2024 to March 2025),b,misc_services,Miscellaneous services,section,misc_services,13.84
+2023,(Adopted for the reference months from April 2024 to March 2025),c,misc_services,Miscellaneous services,section,misc_services,18.36
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g77,School fees,group,misc_services,4.01
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g77,School fees,group,misc_services,2.47
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g77,School fees,group,misc_services,4.13
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g77,School fees,group,misc_services,5.69
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g78,Other educational charges,group,misc_services,0.13
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g78,Other educational charges,group,misc_services,0.1
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g78,Other educational charges,group,misc_services,0.12
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g78,Other educational charges,group,misc_services,0.18
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g79,Medical services,group,misc_services,2.41
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g79,Medical services,group,misc_services,1.78
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g79,Medical services,group,misc_services,2.27
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g79,Medical services,group,misc_services,3.36
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g80,Cinema entertainment,group,misc_services,0.07
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g80,Cinema entertainment,group,misc_services,0.09
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g80,Cinema entertainment,group,misc_services,0.07
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g80,Cinema entertainment,group,misc_services,0.06
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g81,Package tours,group,misc_services,1.1
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g81,Package tours,group,misc_services,0.45
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g81,Package tours,group,misc_services,1.07
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g81,Package tours,group,misc_services,1.91
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g82,Expenses on parties,group,misc_services,0.05
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g82,Expenses on parties,group,misc_services,0.02
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g82,Expenses on parties,group,misc_services,0.05
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g82,Expenses on parties,group,misc_services,0.07
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g83,Other entertainment and holiday expenses,group,misc_services,0.12
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g83,Other entertainment and holiday expenses,group,misc_services,0.1
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g83,Other entertainment and holiday expenses,group,misc_services,0.12
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g83,Other entertainment and holiday expenses,group,misc_services,0.16
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g84,Household services,group,misc_services,2.27
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g84,Household services,group,misc_services,0.99
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g84,Household services,group,misc_services,2.49
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g84,Household services,group,misc_services,3.49
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g85,Hair-dressing,group,misc_services,0.36
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g85,Hair-dressing,group,misc_services,0.37
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g85,Hair-dressing,group,misc_services,0.35
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g85,Hair-dressing,group,misc_services,0.35
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g86,Beauty treatment and fitness services,group,misc_services,0.54
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g86,Beauty treatment and fitness services,group,misc_services,0.24
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g86,Beauty treatment and fitness services,group,misc_services,0.52
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g86,Beauty treatment and fitness services,group,misc_services,0.91
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g87,Information and communications services,group,misc_services,2.1
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g87,Information and communications services,group,misc_services,2.71
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g87,Information and communications services,group,misc_services,2.05
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g87,Information and communications services,group,misc_services,1.44
+2023,(Adopted for the reference months from April 2024 to March 2025),composite,g88,Other services,group,misc_services,0.58
+2023,(Adopted for the reference months from April 2024 to March 2025),a,g88,Other services,group,misc_services,0.42
+2023,(Adopted for the reference months from April 2024 to March 2025),b,g88,Other services,group,misc_services,0.6
+2023,(Adopted for the reference months from April 2024 to March 2025),c,g88,Other services,group,misc_services,0.74
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,all,All items,all,all,100.0
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,all,All items,all,all,100.0
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,all,All items,all,all,100.0
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,all,All items,all,all,100.0
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,food,Food,section,food,27.41
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,food,Food,section,food,32.71
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,food,Food,section,food,26.76
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,food,Food,section,food,21.89
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,meals_out,Meals out and takeaway food,subsection,food,17.05
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,meals_out,Meals out and takeaway food,subsection,food,18.87
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,meals_out,Meals out and takeaway food,subsection,food,17.27
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,meals_out,Meals out and takeaway food,subsection,food,14.55
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,basic_food,Basic food,subsection,food,10.36
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,basic_food,Basic food,subsection,food,13.84
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,basic_food,Basic food,subsection,food,9.49
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,basic_food,Basic food,subsection,food,7.34
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g2,Rice,group,food,0.22
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g2,Rice,group,food,0.31
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g2,Rice,group,food,0.2
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g2,Rice,group,food,0.13
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g3,Other cereals and cereal preparations,group,food,0.3
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g3,Other cereals and cereal preparations,group,food,0.41
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g3,Other cereals and cereal preparations,group,food,0.26
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g3,Other cereals and cereal preparations,group,food,0.21
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g4,"Bread, cakes, biscuits and puddings",group,food,0.64
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g4,"Bread, cakes, biscuits and puddings",group,food,0.78
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g4,"Bread, cakes, biscuits and puddings",group,food,0.61
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g4,"Bread, cakes, biscuits and puddings",group,food,0.51
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g5,Salt-water fish,group,food,0.88
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g5,Salt-water fish,group,food,1.24
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g5,Salt-water fish,group,food,0.76
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g5,Salt-water fish,group,food,0.62
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g6,Fresh-water fish,group,food,0.28
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g6,Fresh-water fish,group,food,0.47
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g6,Fresh-water fish,group,food,0.21
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g6,Fresh-water fish,group,food,0.13
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g7,Other fresh sea products,group,food,0.3
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g7,Other fresh sea products,group,food,0.31
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g7,Other fresh sea products,group,food,0.31
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g7,Other fresh sea products,group,food,0.27
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g8,Processed sea products,group,food,0.58
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g8,Processed sea products,group,food,0.67
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g8,Processed sea products,group,food,0.58
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g8,Processed sea products,group,food,0.45
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g9,Pork,group,food,1.35
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g9,Pork,group,food,2.07
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g9,Pork,group,food,1.15
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g9,Pork,group,food,0.78
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g10,Beef,group,food,0.32
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g10,Beef,group,food,0.35
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g10,Beef,group,food,0.3
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g10,Beef,group,food,0.3
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g11,Poultry,group,food,0.42
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g11,Poultry,group,food,0.55
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g11,Poultry,group,food,0.4
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g11,Poultry,group,food,0.28
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g12,"Meat, frozen",group,food,0.91
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g12,"Meat, frozen",group,food,1.13
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g12,"Meat, frozen",group,food,0.85
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g12,"Meat, frozen",group,food,0.74
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g13,"Meat, canned",group,food,0.06
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g13,"Meat, canned",group,food,0.09
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g13,"Meat, canned",group,food,0.05
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g13,"Meat, canned",group,food,0.03
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g14,"Meat, others",group,food,0.26
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g14,"Meat, others",group,food,0.38
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g14,"Meat, others",group,food,0.24
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g14,"Meat, others",group,food,0.14
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g15,Fresh vegetables,group,food,1.26
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g15,Fresh vegetables,group,food,1.85
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g15,Fresh vegetables,group,food,1.1
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g15,Fresh vegetables,group,food,0.77
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g16,Processed vegetables,group,food,0.05
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g16,Processed vegetables,group,food,0.07
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g16,Processed vegetables,group,food,0.05
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g16,Processed vegetables,group,food,0.03
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g17,Fresh fruit,group,food,0.77
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g17,Fresh fruit,group,food,1.0
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g17,Fresh fruit,group,food,0.7
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g17,Fresh fruit,group,food,0.58
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g18,Processed fruit,group,food,0.02
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g18,Processed fruit,group,food,0.03
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g18,Processed fruit,group,food,0.02
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g18,Processed fruit,group,food,0.02
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g19,Dairy products,group,food,0.34
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g19,Dairy products,group,food,0.36
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g19,Dairy products,group,food,0.35
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g19,Dairy products,group,food,0.32
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g20,Eggs,group,food,0.17
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g20,Eggs,group,food,0.25
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g20,Eggs,group,food,0.15
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g20,Eggs,group,food,0.11
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g21,Edible oils,group,food,0.11
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g21,Edible oils,group,food,0.17
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g21,Edible oils,group,food,0.09
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g21,Edible oils,group,food,0.07
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g22,Carbonated drinks,group,food,0.06
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g22,Carbonated drinks,group,food,0.09
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g22,Carbonated drinks,group,food,0.06
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g22,Carbonated drinks,group,food,0.04
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g23,Other non-alcoholic beverages,group,food,0.27
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g23,Other non-alcoholic beverages,group,food,0.34
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g23,Other non-alcoholic beverages,group,food,0.27
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g23,Other non-alcoholic beverages,group,food,0.19
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g24,Sugar,group,food,0.02
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g24,Sugar,group,food,0.02
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g24,Sugar,group,food,0.02
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g24,Sugar,group,food,0.01
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g25,Confectionery,group,food,0.08
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g25,Confectionery,group,food,0.07
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g25,Confectionery,group,food,0.08
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g25,Confectionery,group,food,0.07
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g26,Flavourings and additives,group,food,0.11
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g26,Flavourings and additives,group,food,0.13
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g26,Flavourings and additives,group,food,0.11
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g26,Flavourings and additives,group,food,0.09
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g27,"Food, others",group,food,0.58
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g27,"Food, others",group,food,0.7
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g27,"Food, others",group,food,0.57
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g27,"Food, others",group,food,0.45
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,housing,Housing,section,housing,40.25
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,housing,Housing,section,housing,40.46
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,housing,Housing,section,housing,40.77
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,housing,Housing,section,housing,39.24
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g28,"Rent, including rates and government rent",group,housing,37.33
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g28,"Rent, including rates and government rent",group,housing,38.38
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g28,"Rent, including rates and government rent",group,housing,37.77
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g28,"Rent, including rates and government rent",group,housing,35.44
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g29,Management fees and other housing charges,group,housing,2.92
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g29,Management fees and other housing charges,group,housing,2.08
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g29,Management fees and other housing charges,group,housing,3.0
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g29,Management fees and other housing charges,group,housing,3.8
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,egw,"Electricity, gas and water",section,egw,2.82
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,egw,"Electricity, gas and water",section,egw,3.85
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,egw,"Electricity, gas and water",section,egw,2.57
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,egw,"Electricity, gas and water",section,egw,1.92
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g30,Electricity,group,egw,1.78
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g30,Electricity,group,egw,2.4
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g30,Electricity,group,egw,1.63
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g30,Electricity,group,egw,1.23
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g31,Towngas,group,egw,0.66
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g31,Towngas,group,egw,0.92
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g31,Towngas,group,egw,0.58
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g31,Towngas,group,egw,0.46
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g32,Liquefied petroleum gas and other fuel,group,egw,0.12
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g32,Liquefied petroleum gas and other fuel,group,egw,0.18
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g32,Liquefied petroleum gas and other fuel,group,egw,0.11
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g32,Liquefied petroleum gas and other fuel,group,egw,0.05
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g33,Water and sewage charges,group,egw,0.26
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g33,Water and sewage charges,group,egw,0.35
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g33,Water and sewage charges,group,egw,0.25
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g33,Water and sewage charges,group,egw,0.18
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,alcohol_tobacco,Alcoholic drinks and tobacco,section,alcohol_tobacco,0.49
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,alcohol_tobacco,Alcoholic drinks and tobacco,section,alcohol_tobacco,0.76
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,alcohol_tobacco,Alcoholic drinks and tobacco,section,alcohol_tobacco,0.41
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,alcohol_tobacco,Alcoholic drinks and tobacco,section,alcohol_tobacco,0.27
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g34,Wines and spirits,group,alcohol_tobacco,0.09
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g34,Wines and spirits,group,alcohol_tobacco,0.06
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g34,Wines and spirits,group,alcohol_tobacco,0.11
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g34,Wines and spirits,group,alcohol_tobacco,0.1
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g35,Beer,group,alcohol_tobacco,0.06
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g35,Beer,group,alcohol_tobacco,0.09
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g35,Beer,group,alcohol_tobacco,0.04
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g35,Beer,group,alcohol_tobacco,0.04
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g36,Cigarettes,group,alcohol_tobacco,0.34
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g36,Cigarettes,group,alcohol_tobacco,0.61
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g36,Cigarettes,group,alcohol_tobacco,0.26
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g36,Cigarettes,group,alcohol_tobacco,0.13
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,clothing,Clothing and footwear,section,clothing,2.42
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,clothing,Clothing and footwear,section,clothing,1.78
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,clothing,Clothing and footwear,section,clothing,2.51
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,clothing,Clothing and footwear,section,clothing,3.08
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g37,Men’s outerclothing,group,clothing,0.56
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g37,Men’s outerclothing,group,clothing,0.38
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g37,Men’s outerclothing,group,clothing,0.62
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g37,Men’s outerclothing,group,clothing,0.7
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g38,Men’s underclothing,group,clothing,0.03
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g38,Men’s underclothing,group,clothing,0.03
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g38,Men’s underclothing,group,clothing,0.03
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g38,Men’s underclothing,group,clothing,0.04
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g39,Women’s outerclothing,group,clothing,0.95
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g39,Women’s outerclothing,group,clothing,0.62
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g39,Women’s outerclothing,group,clothing,0.99
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g39,Women’s outerclothing,group,clothing,1.27
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g40,Women’s underclothing,group,clothing,0.09
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g40,Women’s underclothing,group,clothing,0.09
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g40,Women’s underclothing,group,clothing,0.1
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g40,Women’s underclothing,group,clothing,0.09
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g41,Children’s outerclothing,group,clothing,0.17
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g41,Children’s outerclothing,group,clothing,0.15
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g41,Children’s outerclothing,group,clothing,0.14
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g41,Children’s outerclothing,group,clothing,0.22
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g42,Children’s underclothing,group,clothing,0.01
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g42,Children’s underclothing,group,clothing,0.02
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g42,Children’s underclothing,group,clothing,0.01
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g42,Children’s underclothing,group,clothing,0.01
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g43,Infants’ clothing,group,clothing,0.02
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g43,Infants’ clothing,group,clothing,0.01
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g43,Infants’ clothing,group,clothing,0.02
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g43,Infants’ clothing,group,clothing,0.05
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g44,"Clothing, others",group,clothing,0.07
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g44,"Clothing, others",group,clothing,0.05
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g44,"Clothing, others",group,clothing,0.08
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g44,"Clothing, others",group,clothing,0.09
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g45,Men’s footwear,group,clothing,0.24
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g45,Men’s footwear,group,clothing,0.2
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g45,Men’s footwear,group,clothing,0.23
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g45,Men’s footwear,group,clothing,0.29
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g46,Women’s footwear,group,clothing,0.25
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g46,Women’s footwear,group,clothing,0.21
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g46,Women’s footwear,group,clothing,0.26
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g46,Women’s footwear,group,clothing,0.28
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g47,Children’s and infants’ footwear,group,clothing,0.03
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g47,Children’s and infants’ footwear,group,clothing,0.02
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g47,Children’s and infants’ footwear,group,clothing,0.03
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g47,Children’s and infants’ footwear,group,clothing,0.04
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,durables,Durable goods,section,durables,4.0
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,durables,Durable goods,section,durables,3.29
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,durables,Durable goods,section,durables,3.94
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,durables,Durable goods,section,durables,4.97
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g48,Furniture,group,durables,0.34
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g48,Furniture,group,durables,0.25
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g48,Furniture,group,durables,0.36
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g48,Furniture,group,durables,0.41
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g49,"Home appliances, electric and gas",group,durables,0.94
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g49,"Home appliances, electric and gas",group,durables,0.85
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g49,"Home appliances, electric and gas",group,durables,0.87
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g49,"Home appliances, electric and gas",group,durables,1.16
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g50,Video and sound equipment,group,durables,0.21
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g50,Video and sound equipment,group,durables,0.18
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g50,Video and sound equipment,group,durables,0.22
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g50,Video and sound equipment,group,durables,0.24
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g51,Information technology and telecommunications equipment,group,durables,1.59
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g51,Information technology and telecommunications equipment,group,durables,1.4
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g51,Information technology and telecommunications equipment,group,durables,1.7
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g51,Information technology and telecommunications equipment,group,durables,1.66
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g52,Tableware and kitchen utensils,group,durables,0.09
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g52,Tableware and kitchen utensils,group,durables,0.09
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g52,Tableware and kitchen utensils,group,durables,0.09
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g52,Tableware and kitchen utensils,group,durables,0.11
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g53,"Watches, clocks, cameras and optical goods",group,durables,0.35
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g53,"Watches, clocks, cameras and optical goods",group,durables,0.21
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g53,"Watches, clocks, cameras and optical goods",group,durables,0.29
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g53,"Watches, clocks, cameras and optical goods",group,durables,0.6
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g54,"Travel goods, handbags and other personal effects",group,durables,0.44
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g54,"Travel goods, handbags and other personal effects",group,durables,0.29
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g54,"Travel goods, handbags and other personal effects",group,durables,0.36
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g54,"Travel goods, handbags and other personal effects",group,durables,0.72
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g55,"Durable goods, others",group,durables,0.04
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g55,"Durable goods, others",group,durables,0.02
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g55,"Durable goods, others",group,durables,0.05
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g55,"Durable goods, others",group,durables,0.07
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,misc_goods,Miscellaneous goods,section,misc_goods,3.32
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,misc_goods,Miscellaneous goods,section,misc_goods,3.31
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,misc_goods,Miscellaneous goods,section,misc_goods,3.48
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,misc_goods,Miscellaneous goods,section,misc_goods,3.1
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g56,Proprietary medicines and supplies,group,misc_goods,0.97
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g56,Proprietary medicines and supplies,group,misc_goods,1.06
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g56,Proprietary medicines and supplies,group,misc_goods,1.05
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g56,Proprietary medicines and supplies,group,misc_goods,0.74
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g57,"Newspapers, books and periodicals",group,misc_goods,0.12
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g57,"Newspapers, books and periodicals",group,misc_goods,0.12
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g57,"Newspapers, books and periodicals",group,misc_goods,0.12
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g57,"Newspapers, books and periodicals",group,misc_goods,0.14
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g58,Stationery,group,misc_goods,0.09
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g58,Stationery,group,misc_goods,0.07
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g58,Stationery,group,misc_goods,0.09
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g58,Stationery,group,misc_goods,0.12
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g59,Soft furnishings,group,misc_goods,0.12
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g59,Soft furnishings,group,misc_goods,0.09
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g59,Soft furnishings,group,misc_goods,0.16
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g59,Soft furnishings,group,misc_goods,0.11
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g60,Cosmetics and personal care products,group,misc_goods,0.93
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g60,Cosmetics and personal care products,group,misc_goods,0.97
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g60,Cosmetics and personal care products,group,misc_goods,1.02
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g60,Cosmetics and personal care products,group,misc_goods,0.75
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g61,Household cleansing tools and supplies,group,misc_goods,0.18
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g61,Household cleansing tools and supplies,group,misc_goods,0.22
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g61,Household cleansing tools and supplies,group,misc_goods,0.17
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g61,Household cleansing tools and supplies,group,misc_goods,0.12
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g62,Jewellery,group,misc_goods,0.19
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g62,Jewellery,group,misc_goods,0.11
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g62,Jewellery,group,misc_goods,0.14
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g62,Jewellery,group,misc_goods,0.35
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g63,Toys and hobbies,group,misc_goods,0.2
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g63,Toys and hobbies,group,misc_goods,0.13
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g63,Toys and hobbies,group,misc_goods,0.23
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g63,Toys and hobbies,group,misc_goods,0.23
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g64,Purchases of textbooks,group,misc_goods,0.36
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g64,Purchases of textbooks,group,misc_goods,0.4
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g64,Purchases of textbooks,group,misc_goods,0.33
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g64,Purchases of textbooks,group,misc_goods,0.37
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g65,"Household goods, others",group,misc_goods,0.16
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g65,"Household goods, others",group,misc_goods,0.14
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g65,"Household goods, others",group,misc_goods,0.17
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g65,"Household goods, others",group,misc_goods,0.17
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,transport,Transport,section,transport,6.17
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,transport,Transport,section,transport,4.52
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,transport,Transport,section,transport,6.38
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,transport,Transport,section,transport,7.89
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g66,Purchases of and repairs to motor vehicles,group,transport,0.36
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g66,Purchases of and repairs to motor vehicles,group,transport,0.16
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g66,Purchases of and repairs to motor vehicles,group,transport,0.42
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g66,Purchases of and repairs to motor vehicles,group,transport,0.51
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g67,Motor fuel,group,transport,0.56
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g67,Motor fuel,group,transport,0.17
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g67,Motor fuel,group,transport,0.59
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g67,Motor fuel,group,transport,0.98
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g68,"Motor licences, insurance, instructor’s fees, parking fees and tunnel tolls",group,transport,1.8
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g68,"Motor licences, insurance, instructor’s fees, parking fees and tunnel tolls",group,transport,0.54
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g68,"Motor licences, insurance, instructor’s fees, parking fees and tunnel tolls",group,transport,1.89
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g68,"Motor licences, insurance, instructor’s fees, parking fees and tunnel tolls",group,transport,3.22
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g69,Bus fares,group,transport,0.89
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g69,Bus fares,group,transport,1.27
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g69,Bus fares,group,transport,0.89
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g69,Bus fares,group,transport,0.45
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g70,Tram fares,group,transport,0.01
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g70,Tram fares,group,transport,0.01
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g70,Tram fares,group,transport,0.01
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g70,Tram fares,group,transport,0.01
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g71,Public light bus fares,group,transport,0.32
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g71,Public light bus fares,group,transport,0.46
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g71,Public light bus fares,group,transport,0.32
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g71,Public light bus fares,group,transport,0.14
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g72,Taxi fares,group,transport,0.34
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g72,Taxi fares,group,transport,0.19
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g72,Taxi fares,group,transport,0.36
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g72,Taxi fares,group,transport,0.5
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g73,MTR fares,group,transport,1.12
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g73,MTR fares,group,transport,1.36
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g73,MTR fares,group,transport,1.17
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g73,MTR fares,group,transport,0.76
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g74,Ferry fares,group,transport,0.03
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g74,Ferry fares,group,transport,0.03
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g74,Ferry fares,group,transport,0.04
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g74,Ferry fares,group,transport,0.02
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g75,"Local transport, others",group,transport,0.21
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g75,"Local transport, others",group,transport,0.11
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g75,"Local transport, others",group,transport,0.21
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g75,"Local transport, others",group,transport,0.32
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g76,Inbound and outbound transport fares,group,transport,0.53
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g76,Inbound and outbound transport fares,group,transport,0.22
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g76,Inbound and outbound transport fares,group,transport,0.48
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g76,Inbound and outbound transport fares,group,transport,0.98
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,misc_services,Miscellaneous services,section,misc_services,13.12
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,misc_services,Miscellaneous services,section,misc_services,9.32
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,misc_services,Miscellaneous services,section,misc_services,13.18
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,misc_services,Miscellaneous services,section,misc_services,17.64
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g77,School fees,group,misc_services,4.08
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g77,School fees,group,misc_services,2.5
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g77,School fees,group,misc_services,4.17
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g77,School fees,group,misc_services,5.86
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g78,Other educational charges,group,misc_services,0.13
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g78,Other educational charges,group,misc_services,0.1
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g78,Other educational charges,group,misc_services,0.12
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g78,Other educational charges,group,misc_services,0.19
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g79,Medical services,group,misc_services,2.38
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g79,Medical services,group,misc_services,1.74
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g79,Medical services,group,misc_services,2.23
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g79,Medical services,group,misc_services,3.35
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g80,Cinema entertainment,group,misc_services,0.04
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g80,Cinema entertainment,group,misc_services,0.04
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g80,Cinema entertainment,group,misc_services,0.04
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g80,Cinema entertainment,group,misc_services,0.03
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g81,Package tours,group,misc_services,0.64
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g81,Package tours,group,misc_services,0.26
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g81,Package tours,group,misc_services,0.61
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g81,Package tours,group,misc_services,1.12
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g82,Expenses on parties,group,misc_services,0.03
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g82,Expenses on parties,group,misc_services,0.01
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g82,Expenses on parties,group,misc_services,0.03
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g82,Expenses on parties,group,misc_services,0.04
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g83,Other entertainment and holiday expenses,group,misc_services,0.09
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g83,Other entertainment and holiday expenses,group,misc_services,0.07
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g83,Other entertainment and holiday expenses,group,misc_services,0.09
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g83,Other entertainment and holiday expenses,group,misc_services,0.12
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g84,Household services,group,misc_services,2.36
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g84,Household services,group,misc_services,1.03
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g84,Household services,group,misc_services,2.57
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g84,Household services,group,misc_services,3.68
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g85,Hair-dressing,group,misc_services,0.15
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g85,Hair-dressing,group,misc_services,0.16
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g85,Hair-dressing,group,misc_services,0.15
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g85,Hair-dressing,group,misc_services,0.15
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g86,Beauty treatment and fitness services,group,misc_services,0.47
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g86,Beauty treatment and fitness services,group,misc_services,0.21
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g86,Beauty treatment and fitness services,group,misc_services,0.46
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g86,Beauty treatment and fitness services,group,misc_services,0.81
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g87,Information and communications services,group,misc_services,2.14
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g87,Information and communications services,group,misc_services,2.75
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g87,Information and communications services,group,misc_services,2.08
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g87,Information and communications services,group,misc_services,1.5
+2019/20,(Adopted for the reference months from October 2019 to March 2024),composite,g88,Other services,group,misc_services,0.61
+2019/20,(Adopted for the reference months from October 2019 to March 2024),a,g88,Other services,group,misc_services,0.45
+2019/20,(Adopted for the reference months from October 2019 to March 2024),b,g88,Other services,group,misc_services,0.63
+2019/20,(Adopted for the reference months from October 2019 to March 2024),c,g88,Other services,group,misc_services,0.79

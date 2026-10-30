@@ -4,7 +4,7 @@
  "latest_quarter": "2026-04-01",
  "latest_month": "2026-08-01",
  "table": "C&SD web tables 520-62001, 520-63001, 410-51001, 410-51002, 410-51003",
- "processed_at": "2026-10-28T22:37:52Z",
+ "processed_at": "2026-10-30T01:39:25Z",
  "rows": 3674,
  "warnings": [],
  "fingerprint": "3458dbb767ec8247",
@@ -12,7 +12,7 @@
  "history": [
   {
    "code": "P2026Q2-T2026-08",
-   "processed_at": "2026-10-28T22:37:52Z"
+   "processed_at": "2026-10-30T01:39:25Z"
   }
  ]
 }

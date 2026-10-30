@@ -111461,6 +111461,7 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2019-10-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2019-10-01,119.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2019-10-01,-5.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2019-10-01,0.9,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2019-10-01,118.18,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2019-10-01,99.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2019-10-01,-0.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2019-10-01,0.8,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -111829,6 +111830,7 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2019-11-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2019-11-01,118.8,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2019-11-01,-6.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2019-11-01,-0.6,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2019-11-01,117.58,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2019-11-01,99.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2019-11-01,-0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2019-11-01,0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -112197,6 +112199,7 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2019-12-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2019-12-01,118.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2019-12-01,-6.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2019-12-01,-0.3,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2019-12-01,117.22,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2019-12-01,98.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2019-12-01,-1.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2019-12-01,-1.0,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -112565,6 +112568,7 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2020-01-01,-5.4,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2020-01-01,95.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2020-01-01,-16.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2020-01-01,-19.3,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2020-01-01,96.57,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2020-01-01,98.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2020-01-01,-1.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2020-01-01,0.0,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -112933,6 +112937,7 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2020-02-01,6.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2020-02-01,96.1,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2020-02-01,-15.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2020-02-01,0.6,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2020-02-01,96.78,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2020-02-01,100.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2020-02-01,0.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2020-02-01,2.0,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -113301,6 +113306,7 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2020-03-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2020-03-01,95.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2020-03-01,-16.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2020-03-01,-0.8,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2020-03-01,95.61,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2020-03-01,100.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2020-03-01,-0.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2020-03-01,-0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -113669,6 +113675,7 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2020-04-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2020-04-01,93.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2020-04-01,-18.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2020-04-01,-2.1,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2020-04-01,93.15,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2020-04-01,101.0,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2020-04-01,0.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2020-04-01,0.7,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -114037,6 +114044,7 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2020-05-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2020-05-01,92.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2020-05-01,-19.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2020-05-01,-1.0,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2020-05-01,92.25,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2020-05-01,100.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2020-05-01,0.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2020-05-01,-0.5,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -114405,6 +114413,7 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2020-06-01,-0.1,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2020-06-01,93.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2020-06-01,-18.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2020-06-01,0.9,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2020-06-01,93.56,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2020-06-01,100.0,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2020-06-01,0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2020-06-01,-0.5,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -114773,6 +114782,7 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2020-07-01,-5.7,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2020-07-01,93.1,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2020-07-01,-18.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2020-07-01,-0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2020-07-01,93.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2020-07-01,100.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2020-07-01,0.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2020-07-01,0.3,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -115141,6 +115151,7 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2020-08-01,5.8,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2020-08-01,92.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2020-08-01,-19.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2020-08-01,-0.5,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2020-08-01,93.12,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2020-08-01,100.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2020-08-01,1.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2020-08-01,0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -115509,6 +115520,7 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2020-09-01,-5.6,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2020-09-01,91.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2020-09-01,-19.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2020-09-01,-1.1,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2020-09-01,92.37,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2020-09-01,100.7,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2020-09-01,1.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2020-09-01,0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -115877,6 +115889,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2020-10-01,6.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2020-10-01,90.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2020-10-01,-24.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2020-10-01,-1.5,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2020-10-01,91.2,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2020-10-01,-22.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2020-10-01,99.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2020-10-01,0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2020-10-01,-1.2,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -116245,6 +116259,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2020-11-01,0.2,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2020-11-01,89.0,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2020-11-01,-25.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2020-11-01,-1.4,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2020-11-01,90.02,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2020-11-01,-23.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2020-11-01,100.9,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2020-11-01,1.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2020-11-01,1.4,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -116613,6 +116629,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2020-12-01,-0.1,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2020-12-01,76.7,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2020-12-01,-35.2,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2020-12-01,-13.8,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2020-12-01,79.24,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2020-12-01,-32.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2020-12-01,100.0,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2020-12-01,1.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2020-12-01,-1.0,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -116981,6 +116999,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2021-01-01,-0.1,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2021-01-01,119.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2021-01-01,24.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2021-01-01,55.4,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2021-01-01,117.8,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2021-01-01,22.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2021-01-01,101.0,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2021-01-01,2.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2021-01-01,1.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -117349,6 +117369,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2021-02-01,-0.1,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2021-02-01,120.0,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2021-02-01,24.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2021-02-01,0.6,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2021-02-01,118.54,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2021-02-01,22.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2021-02-01,99.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2021-02-01,-1.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2021-02-01,-1.5,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -117717,6 +117739,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2021-03-01,-0.1,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2021-03-01,120.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2021-03-01,26.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2021-03-01,0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2021-03-01,119.16,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2021-03-01,24.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2021-03-01,100.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2021-03-01,0.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2021-03-01,1.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -118085,6 +118109,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2021-04-01,-0.1,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2021-04-01,120.2,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2021-04-01,28.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2021-04-01,-0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2021-04-01,118.99,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2021-04-01,27.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2021-04-01,100.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2021-04-01,-0.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2021-04-01,-0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -118453,6 +118479,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2021-05-01,-0.1,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2021-05-01,122.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2021-05-01,32.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2021-05-01,1.9,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2021-05-01,121.39,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2021-05-01,31.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2021-05-01,100.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2021-05-01,-0.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2021-05-01,-0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -118821,6 +118849,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2021-06-01,-0.1,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2021-06-01,109.1,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2021-06-01,17.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2021-06-01,-10.9,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2021-06-01,109.38,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2021-06-01,16.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2021-06-01,100.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2021-06-01,0.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2021-06-01,0.0,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -119189,6 +119219,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2021-07-01,-0.1,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2021-07-01,109.7,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2021-07-01,17.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2021-07-01,0.5,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2021-07-01,110.14,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2021-07-01,17.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2021-07-01,99.9,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2021-07-01,-0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2021-07-01,-0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -119557,6 +119589,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2021-08-01,-0.1,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2021-08-01,111.2,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2021-08-01,20.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2021-08-01,1.4,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2021-08-01,111.52,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2021-08-01,19.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2021-08-01,100.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2021-08-01,-0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2021-08-01,0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -119925,6 +119959,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2021-09-01,-6.3,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2021-09-01,113.2,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2021-09-01,23.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2021-09-01,1.8,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2021-09-01,113.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2021-09-01,22.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2021-09-01,100.1,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2021-09-01,-0.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2021-09-01,-0.3,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -120293,6 +120329,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2021-10-01,7.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2021-10-01,115.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2021-10-01,28.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2021-10-01,2.1,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2021-10-01,115.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2021-10-01,26.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2021-10-01,100.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2021-10-01,0.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2021-10-01,0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -120661,6 +120699,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2021-11-01,0.2,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2021-11-01,116.7,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2021-11-01,31.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2021-11-01,1.0,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2021-11-01,116.66,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2021-11-01,29.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2021-11-01,100.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2021-11-01,-0.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2021-11-01,0.0,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -121029,6 +121069,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2021-12-01,-0.1,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2021-12-01,118.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2021-12-01,54.2,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2021-12-01,1.3,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2021-12-01,117.52,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2021-12-01,48.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2021-12-01,100.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2021-12-01,0.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2021-12-01,0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -121397,6 +121439,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2022-01-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2022-01-01,116.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2022-01-01,-2.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2022-01-01,-1.6,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2022-01-01,116.7,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2022-01-01,-0.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2022-01-01,100.8,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2022-01-01,-0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2022-01-01,0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -121765,6 +121809,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2022-02-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2022-02-01,116.7,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2022-02-01,-2.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2022-02-01,0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2022-02-01,117.64,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2022-02-01,-0.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2022-02-01,100.7,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2022-02-01,1.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2022-02-01,-0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -122133,6 +122179,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2022-03-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2022-03-01,118.0,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2022-03-01,-2.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2022-03-01,1.1,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2022-03-01,120.06,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2022-03-01,0.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2022-03-01,100.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2022-03-01,0.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2022-03-01,-0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -122501,6 +122549,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2022-04-01,-0.6,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2022-04-01,120.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2022-04-01,0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2022-04-01,2.0,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2022-04-01,122.27,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2022-04-01,2.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2022-04-01,102.2,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2022-04-01,1.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2022-04-01,1.5,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -122869,6 +122919,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2022-05-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2022-05-01,116.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2022-05-01,-4.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2022-05-01,-3.3,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2022-05-01,118.93,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2022-05-01,-2.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2022-05-01,101.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2022-05-01,1.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2022-05-01,-0.8,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -123237,6 +123289,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2022-06-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2022-06-01,124.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2022-06-01,14.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2022-06-01,6.9,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2022-06-01,126.8,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2022-06-01,15.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2022-06-01,101.9,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2022-06-01,1.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2022-06-01,0.6,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -123605,6 +123659,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2022-07-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2022-07-01,126.2,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2022-07-01,15.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2022-07-01,1.4,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2022-07-01,128.17,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2022-07-01,16.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2022-07-01,101.9,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2022-07-01,2.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2022-07-01,0.0,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -123973,6 +124029,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2022-08-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2022-08-01,128.2,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2022-08-01,15.2,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2022-08-01,1.5,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2022-08-01,129.81,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2022-08-01,16.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2022-08-01,102.0,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2022-08-01,1.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2022-08-01,0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -124341,6 +124399,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2022-09-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2022-09-01,129.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2022-09-01,14.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2022-09-01,1.1,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2022-09-01,130.9,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2022-09-01,15.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2022-09-01,102.0,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2022-09-01,1.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2022-09-01,0.0,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -124709,6 +124769,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2022-10-01,0.7,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2022-10-01,131.1,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2022-10-01,13.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2022-10-01,1.2,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2022-10-01,132.12,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2022-10-01,14.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2022-10-01,102.1,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2022-10-01,1.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2022-10-01,0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -125077,6 +125139,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2022-11-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2022-11-01,133.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2022-11-01,14.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2022-11-01,1.8,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2022-11-01,133.96,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2022-11-01,14.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2022-11-01,102.0,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2022-11-01,1.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2022-11-01,-0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -125445,6 +125509,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2022-12-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2022-12-01,135.7,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2022-12-01,14.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2022-12-01,1.7,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2022-12-01,136.01,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2022-12-01,15.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2022-12-01,102.1,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2022-12-01,1.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2022-12-01,0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -125813,6 +125879,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2023-01-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2023-01-01,140.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2023-01-01,20.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2023-01-01,3.5,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2023-01-01,140.31,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2023-01-01,20.2,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2023-01-01,101.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2023-01-01,0.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2023-01-01,-0.5,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -126181,6 +126249,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2023-02-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2023-02-01,141.0,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2023-02-01,20.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2023-02-01,0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2023-02-01,140.74,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2023-02-01,19.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2023-02-01,114.7,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2023-02-01,14.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2023-02-01,13.0,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -126549,6 +126619,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2023-03-01,-0.1,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2023-03-01,141.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2023-03-01,19.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2023-03-01,0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2023-03-01,141.05,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2023-03-01,17.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2023-03-01,119.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2023-03-01,18.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2023-03-01,4.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -126917,6 +126989,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2023-04-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2023-04-01,141.9,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2023-04-01,17.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2023-04-01,0.3,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2023-04-01,141.62,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2023-04-01,15.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2023-04-01,120.7,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2023-04-01,18.2,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2023-04-01,1.0,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -127285,6 +127359,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2023-05-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2023-05-01,135.7,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2023-05-01,16.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2023-05-01,-4.3,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2023-05-01,136.09,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2023-05-01,14.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2023-05-01,121.2,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2023-05-01,19.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2023-05-01,0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -127653,6 +127729,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2023-06-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2023-06-01,141.1,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2023-06-01,13.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2023-06-01,3.9,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2023-06-01,141.11,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2023-06-01,11.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2023-06-01,120.9,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2023-06-01,18.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2023-06-01,-0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -128021,6 +128099,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2023-07-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2023-07-01,138.7,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2023-07-01,9.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2023-07-01,-1.7,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2023-07-01,138.97,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2023-07-01,8.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2023-07-01,120.7,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2023-07-01,18.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2023-07-01,-0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -128389,6 +128469,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2023-08-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2023-08-01,135.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2023-08-01,5.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2023-08-01,-2.3,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2023-08-01,136.31,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2023-08-01,5.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2023-08-01,122.1,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2023-08-01,19.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2023-08-01,1.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -128757,6 +128839,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2023-09-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2023-09-01,133.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2023-09-01,2.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2023-09-01,-1.5,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2023-09-01,134.8,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2023-09-01,3.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2023-09-01,121.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2023-09-01,18.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2023-09-01,-0.7,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -129125,6 +129209,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2023-10-01,2.5,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2023-10-01,131.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2023-10-01,0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2023-10-01,-1.5,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2023-10-01,133.12,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2023-10-01,0.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2023-10-01,120.8,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2023-10-01,18.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2023-10-01,-0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -129493,6 +129579,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2023-11-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2023-11-01,130.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2023-11-01,-2.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2023-11-01,-0.9,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2023-11-01,131.81,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2023-11-01,-1.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2023-11-01,121.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2023-11-01,18.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2023-11-01,0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -129861,6 +129949,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2023-12-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2023-12-01,129.2,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2023-12-01,-4.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2023-12-01,-0.8,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2023-12-01,130.71,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2023-12-01,-3.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2023-12-01,121.7,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2023-12-01,19.2,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2023-12-01,0.3,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -130229,6 +130319,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2024-01-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2024-01-01,129.7,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2024-01-01,-7.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2024-01-01,0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2024-01-01,131.45,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2024-01-01,-6.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2024-01-01,121.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2024-01-01,19.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2024-01-01,-0.3,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -130597,6 +130689,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2024-02-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2024-02-01,130.0,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2024-02-01,-7.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2024-02-01,0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2024-02-01,131.71,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2024-02-01,-6.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2024-02-01,121.7,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2024-02-01,6.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2024-02-01,0.3,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -130965,6 +131059,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2024-03-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2024-03-01,129.2,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2024-03-01,-8.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2024-03-01,-0.6,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2024-03-01,131.22,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2024-03-01,-7.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2024-03-01,140.7,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2024-03-01,17.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2024-03-01,15.6,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -131333,6 +131429,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2024-04-01,-2.0,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2024-04-01,128.7,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2024-04-01,-9.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2024-04-01,-0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2024-04-01,131.15,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2024-04-01,-7.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2024-04-01,145.9,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2024-04-01,20.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2024-04-01,3.7,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -131701,6 +131799,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2024-05-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2024-05-01,121.0,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2024-05-01,-10.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2024-05-01,-6.0,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2024-05-01,124.24,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2024-05-01,-8.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2024-05-01,145.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2024-05-01,20.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2024-05-01,-0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -132069,6 +132169,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2024-06-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2024-06-01,141.1,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2024-06-01,0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2024-06-01,16.6,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2024-06-01,143.03,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2024-06-01,1.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2024-06-01,147.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2024-06-01,22.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2024-06-01,1.3,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -132437,6 +132539,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2024-07-01,2.2,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2024-07-01,141.9,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2024-07-01,2.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2024-07-01,0.5,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2024-07-01,143.94,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2024-07-01,3.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2024-07-01,147.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2024-07-01,22.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2024-07-01,-0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -132805,6 +132909,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2024-08-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2024-08-01,142.0,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2024-08-01,4.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2024-08-01,0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2024-08-01,144.05,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2024-08-01,5.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2024-08-01,147.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2024-08-01,20.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2024-08-01,0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -133173,6 +133279,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2024-09-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2024-09-01,142.0,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2024-09-01,6.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2024-09-01,0.0,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2024-09-01,144.06,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2024-09-01,6.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2024-09-01,147.2,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2024-09-01,21.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2024-09-01,-0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -133541,6 +133649,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2024-10-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2024-10-01,142.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2024-10-01,8.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2024-10-01,0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2024-10-01,144.71,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2024-10-01,8.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2024-10-01,147.2,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2024-10-01,21.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2024-10-01,0.0,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -133909,6 +134019,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2024-11-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2024-11-01,143.0,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2024-11-01,9.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2024-11-01,0.3,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2024-11-01,143.77,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2024-11-01,9.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2024-11-01,147.1,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2024-11-01,21.2,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2024-11-01,-0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -134277,6 +134389,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2024-12-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2024-12-01,143.9,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2024-12-01,11.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2024-12-01,0.6,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2024-12-01,145.01,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2024-12-01,10.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2024-12-01,147.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2024-12-01,21.2,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2024-12-01,0.3,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -134645,6 +134759,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2025-01-01,0.6,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2025-01-01,146.9,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2025-01-01,13.2,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2025-01-01,2.1,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2025-01-01,148.13,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2025-01-01,12.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2025-01-01,146.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2025-01-01,20.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2025-01-01,-0.7,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -135013,6 +135129,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2025-02-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2025-02-01,147.2,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2025-02-01,13.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2025-02-01,0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2025-02-01,148.95,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2025-02-01,13.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2025-02-01,147.1,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2025-02-01,20.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2025-02-01,0.5,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -135381,6 +135499,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2025-03-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2025-03-01,147.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2025-03-01,14.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2025-03-01,0.0,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2025-03-01,148.98,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2025-03-01,13.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2025-03-01,146.9,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2025-03-01,4.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2025-03-01,-0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -135749,6 +135869,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2025-04-01,-0.9,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2025-04-01,145.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2025-04-01,13.2,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2025-04-01,-1.1,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2025-04-01,147.64,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2025-04-01,12.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2025-04-01,146.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2025-04-01,0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2025-04-01,-0.3,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -136117,6 +136239,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2025-05-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2025-05-01,144.8,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2025-05-01,19.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2025-05-01,-0.5,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2025-05-01,146.85,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2025-05-01,18.2,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2025-05-01,146.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2025-05-01,0.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2025-05-01,-0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -136485,6 +136609,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2025-06-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2025-06-01,143.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2025-06-01,1.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2025-06-01,-1.0,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2025-06-01,145.96,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2025-06-01,2.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2025-06-01,149.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2025-06-01,1.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2025-06-01,2.3,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -136853,6 +136979,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2025-07-01,1.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2025-07-01,142.9,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2025-07-01,0.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2025-07-01,-0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2025-07-01,145.97,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2025-07-01,1.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2025-07-01,149.9,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2025-07-01,1.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2025-07-01,0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -137221,6 +137349,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2025-08-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2025-08-01,142.8,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2025-08-01,0.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2025-08-01,0.0,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2025-08-01,146.48,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2025-08-01,1.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2025-08-01,150.2,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2025-08-01,1.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2025-08-01,0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -137589,6 +137719,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2025-09-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2025-09-01,142.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2025-09-01,0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2025-09-01,-0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2025-09-01,146.47,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2025-09-01,1.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2025-09-01,150.2,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2025-09-01,2.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2025-09-01,0.0,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -137957,6 +138089,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2025-10-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2025-10-01,142.2,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2025-10-01,-0.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2025-10-01,-0.3,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2025-10-01,145.96,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2025-10-01,0.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2025-10-01,150.2,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2025-10-01,2.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2025-10-01,0.0,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -138325,6 +138459,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2025-11-01,0.0,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2025-11-01,142.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2025-11-01,-0.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2025-11-01,0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2025-11-01,146.29,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2025-11-01,1.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2025-11-01,150.2,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2025-11-01,2.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2025-11-01,0.0,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -138693,6 +138829,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2025-12-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2025-12-01,141.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2025-12-01,-1.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2025-12-01,-0.5,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2025-12-01,145.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2025-12-01,0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2025-12-01,150.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2025-12-01,2.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2025-12-01,0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -139061,6 +139199,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2026-01-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2026-01-01,151.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2026-01-01,3.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2026-01-01,6.9,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2026-01-01,154.75,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2026-01-01,4.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2026-01-01,150.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2026-01-01,2.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2026-01-01,0.0,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -139429,6 +139569,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2026-02-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2026-02-01,152.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2026-02-01,3.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2026-02-01,0.7,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2026-02-01,156.33,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2026-02-01,5.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2026-02-01,149.7,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2026-02-01,1.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2026-02-01,-0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -139797,6 +139939,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2026-03-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2026-03-01,153.1,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2026-03-01,3.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2026-03-01,0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2026-03-01,158.74,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2026-03-01,6.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2026-03-01,150.0,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2026-03-01,2.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2026-03-01,0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -140165,6 +140309,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2026-04-01,-0.9,%
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2026-04-01,153.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2026-04-01,5.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2026-04-01,0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2026-04-01,160.24,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2026-04-01,8.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2026-04-01,149.8,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2026-04-01,2.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2026-04-01,-0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -140533,6 +140679,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2026-05-01,0.2,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2026-05-01,154.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2026-05-01,6.6,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2026-05-01,0.5,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2026-05-01,161.06,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2026-05-01,9.7,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2026-05-01,149.9,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2026-05-01,2.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2026-05-01,0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -140901,6 +141049,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2026-06-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2026-06-01,156.6,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2026-06-01,9.2,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2026-06-01,1.4,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2026-06-01,162.68,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2026-06-01,11.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2026-06-01,149.8,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2026-06-01,0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2026-06-01,-0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -141269,6 +141419,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2026-07-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2026-07-01,158.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2026-07-01,10.8,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2026-07-01,1.1,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2026-07-01,163.99,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2026-07-01,12.3,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2026-07-01,150.1,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2026-07-01,0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2026-07-01,0.2,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -141637,6 +141789,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2026-08-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2026-08-01,159.2,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2026-08-01,11.5,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2026-08-01,0.6,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2026-08-01,165.88,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2026-08-01,13.2,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2026-08-01,150.3,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2026-08-01,0.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2026-08-01,0.1,%,"Census and Statistics Department, Hong Kong",C2026-09
@@ -142005,6 +142159,8 @@ HK,cpi,composite_housing,Composite CPI: Housing,mom,national,M,2026-09-01,0.1,%,
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",index,national,M,2026-09-01,161.0,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",yoy,national,M,2026-09-01,12.9,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_egw,"Composite CPI: Electricity, gas and water",mom,national,M,2026-09-01,1.1,%,"Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),index,national,M,2026-09-01,168.4,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
+HK,cpi,composite_energy,Composite CPI: Energy (calculated),yoy,national,M,2026-09-01,15.0,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,index,national,M,2026-09-01,149.5,"index, Oct 2019-Sep 2020 = 100","Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,yoy,national,M,2026-09-01,-0.4,%,"Census and Statistics Department, Hong Kong",C2026-09
 HK,cpi,composite_alcohol_tobacco,Composite CPI: Alcoholic drinks and tobacco,mom,national,M,2026-09-01,-0.5,%,"Census and Statistics Department, Hong Kong",C2026-09
