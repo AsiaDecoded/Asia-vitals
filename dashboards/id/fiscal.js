@@ -254,6 +254,42 @@ dash.calc('sbn_latest', {
       : [['#0C84FF', 'Revenue and grants', pc(r.rev)], ['#FFC000', 'Expenditure', pc(r.exp)], ['#BD1B21', 'Fiscal balance', pc2(r.bal)]]));
   }
 
+  function primaryChart() {
+    // fiscal balance = primary balance - interest payments, % of GDP (all calculated, id_fiscal_gdp), annual actuals;
+    // interest drawn below zero, primary balance stacked on the same side as its sign; dashed line at the 3% legal limit
+    const box = document.getElementById('f-prim-chart');
+    const D = dash.data('id_fiscal_gdp');
+    if (bad(D)) { J.fail(box); return; }
+    if (D.status !== 'ok') { box.replaceChildren(); return; }
+    const n = (v) => (v === '' || v == null ? null : Number(v));
+    const rows = D.data.filter((r) => r.basis === 'actual' && n(r.interest_pct) != null && n(r.primary_pct) != null)
+      .map((r) => ({ year: Number(r.year), int: -n(r.interest_pct), prim: n(r.primary_pct), bal: n(r.balance_pct) }))
+      .sort((a, b) => a.year - b.year);
+    if (!rows.length) { box.replaceChildren(); return; }
+    const H = 300;
+    const stack = d3.stack().keys(['int', 'prim']).offset(d3.stackOffsetDiverging)(rows);
+    const lo = Math.min(-3.5, d3.min(stack, (s) => d3.min(s, (d) => d[0]))), hi = d3.max(stack, (s) => d3.max(s, (d) => d[1]));
+    const f = frame(box, rows.map((r) => String(r.year)), H, lo, hi, 0.2);
+    yearAxis(f, H, rows);
+    const C = { int: '#0C84FF', prim: '#FFC000' };
+    f.svg.append('g').selectAll('g').data(stack).join('g').attr('fill', (s) => C[s.key])
+      .selectAll('rect').data((s) => s).join('rect')
+      .attr('x', (d) => f.x(String(d.data.year))).attr('width', f.x.bandwidth())
+      .attr('y', (d) => f.y(Math.max(d[0], d[1]))).attr('height', (d) => Math.abs(f.y(d[0]) - f.y(d[1])));
+    const x0 = f.ml, x1 = f.W - 8;
+    f.svg.append('line').attr('x1', x0).attr('x2', x1).attr('y1', f.y(-3)).attr('y2', f.y(-3))
+      .attr('stroke', 'var(--color-fg)').attr('stroke-width', 1.2).attr('stroke-dasharray', '5 4');
+    f.svg.append('text').attr('x', x0 + 6).attr('y', f.y(-3) + 14).attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text('Fiscal deficit limit');
+    const cx = (r) => f.x(String(r.year)) + f.x.bandwidth() / 2;
+    f.svg.append('path').attr('d', d3.line().x(cx).y((r) => f.y(r.bal))(rows)).attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
+    f.svg.append('g').selectAll('path').data(rows).join('path').attr('d', d3.symbol(d3.symbolDiamond, 40))
+      .attr('transform', (r) => `translate(${cx(r)},${f.y(r.bal)})`).attr('fill', '#BD1B21');
+    legend('f-prim-legend', [['sw', '#0C84FF', 'Interest payments'], ['sw', '#FFC000', 'Primary balance'], ['ln', '#BD1B21', 'Fiscal balance']]);
+    const pc2 = (v) => (v == null ? '—' : v.toFixed(2) + '%');
+    hover(f, rows, (r) => String(r.year), H, 'f-prim', (r) => String(r.year),
+      (r) => [['#BD1B21', 'Fiscal balance', pc2(r.bal)], ['#FFC000', 'Primary balance', pc2(r.prim)], ['#0C84FF', 'Interest payments', pc2(r.int)]]);
+  }
+
   function imfChart() {
     // IMF WEO general government net lending/borrowing, % of GDP, as published; projections dashed with open markers
     const box = document.getElementById('f-imf-chart');
@@ -431,7 +467,7 @@ dash.calc('sbn_latest', {
     const pg = document.getElementById('fiscal');
     if (!pg || pg.hidden) return;
     if (J.state.fBal === 'pct') gdpChart(); else balanceChart();
-    imfChart(); budgetChart(); mixChart(); balBudgetChart();
+    imfChart(); primaryChart(); budgetChart(); mixChart(); balBudgetChart();
     sbnStack('f-sbn-chart', 'f-sbn', 'f-sbn-legend', [['bonds', 'Government bonds (Obligasi Negara)', '#1F4E79'], ['spn', 'Treasury bills (SPN)', '#0C84FF'], ['sbsn', 'Islamic securities (SBSN)', '#92D050']]);
     sbnStack('f-hold-chart', 'f-hold', 'f-hold-legend', HOLD);
   };
