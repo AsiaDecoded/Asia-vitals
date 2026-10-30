@@ -93,6 +93,15 @@ dash.calc('sbn_latest', {
     J.redrawFiscal();
   });
   J.state.fBal = 'rp';
+  const segB = document.getElementById('f-bb-seg');
+  if (segB) segB.addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    J.state.fBud = b.dataset.m;
+    segB.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    const u = document.getElementById('f-bb-units'); if (u) u.textContent = b.dataset.m === 'pct' ? '% of GDP' : 'Rp trillion';
+    J.redrawFiscal();
+  });
+  J.state.fBud = 'rp';
   const bad = (D) => D.status === 'error' || D.status === 'connect' || D.status === 'declined';
   const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   const trn = (v) => (v == null ? '—' : 'Rp' + d3.format(',.1f')(v / 1000) + 'trn');
@@ -310,6 +319,42 @@ dash.calc('sbn_latest', {
     hover(f, rows, (r) => String(r.year), H, 'f-budget', lab, (r) => [['#0C84FF', 'Revenue and grants', pc(r.rev)], ['#BD1B21', 'Expenditure', pc(r.exp)]]);
   }
 
+  function balBudgetChart() {
+    const box = document.getElementById('f-bb-chart');
+    const D = dash.data('fiscal_years');
+    if (bad(D)) { J.fail(box); return; }
+    if (D.status !== 'ok') { box.replaceChildren(); return; }
+    const by = {};
+    D.data.forEach((r) => { (by[r.year] = by[r.year] || { year: r.year })[r.basis] = r.balance; });
+    const pct = J.state.fBud === 'pct';
+    const B = dash.data('id_budget_law');
+    if (B.status === 'ok') B.data.forEach((r) => {
+      const y = Number(r.year);
+      if (by[y] && by[y].budget != null) return;
+      by[y] = { ...(by[y] || { year: y }), budget: Number(r.balance) * 1000, lawPct: r.balance_pct_gdp === '' ? null : Number(r.balance_pct_gdp), law: true };
+    });
+    const G = dash.data('id_fiscal_gdp');
+    const gdp = {};
+    if (pct && G.status === 'ok') G.data.forEach((r) => { if (r.basis === 'actual' && r.gdp !== '') gdp[Number(r.year)] = Number(r.gdp); });
+    let rows = Object.values(by).filter((r) => r.budget != null || r.actual != null).sort((a, b) => a.year - b.year);
+    if (pct) rows = rows.filter((r) => gdp[r.year] || r.lawPct != null);
+    if (!rows.length) { box.replaceChildren(); return; }
+    const H = 260;
+    const t = (v, r) => (!pct ? v / 1000 : gdp[r.year] ? v / gdp[r.year] * 100 : r.lawPct);
+    const vals = rows.flatMap((r) => [r.budget, r.actual].filter((v) => v != null).map((v) => t(v, r)));
+    const f = frame(box, rows.map((r) => String(r.year)), H, d3.min(vals), d3.max(vals), 0.2);
+    yearAxis(f, H, rows);
+    const bw = f.x.bandwidth() / 2;
+    [['budget', '#ADB5BD', 0], ['actual', '#1F4E79', 1]].forEach(([k, c, j]) => {
+      f.svg.append('g').selectAll('rect').data(rows.filter((r) => r[k] != null)).join('rect')
+        .attr('x', (r) => f.x(String(r.year)) + j * bw).attr('width', bw)
+        .attr('y', (r) => f.y(Math.max(0, t(r[k], r)))).attr('height', (r) => Math.abs(f.y(t(r[k], r)) - f.y(0))).attr('fill', c);
+    });
+    legend('f-bb-legend', [['sw', '#ADB5BD', 'Budget (APBN)'], ['sw', '#1F4E79', 'Actual']]);
+    const fmt = (v, r) => (v == null ? '—' : pct ? t(v, r).toFixed(2) + '%' : trn(v));
+    hover(f, rows, (r) => String(r.year), H, 'f-bb', (r) => String(r.year), (r) => [['#ADB5BD', r.law && pct && !gdp[r.year] ? 'Budget (MoF ratio)' : 'Budget', fmt(r.budget, r)], ['#1F4E79', 'Actual', fmt(r.actual, r)]]);
+  }
+
   function mixChart() {
     const box = document.getElementById('f-mix-chart');
     const D = dash.data('fiscal_years');
@@ -358,7 +403,7 @@ dash.calc('sbn_latest', {
     const pg = document.getElementById('fiscal');
     if (!pg || pg.hidden) return;
     if (J.state.fBal === 'pct') gdpChart(); else balanceChart();
-    budgetChart(); mixChart();
+    budgetChart(); mixChart(); balBudgetChart();
     sbnStack('f-sbn-chart', 'f-sbn', 'f-sbn-legend', [['bonds', 'Government bonds (Obligasi Negara)', '#1F4E79'], ['spn', 'Treasury bills (SPN)', '#0C84FF'], ['sbsn', 'Islamic securities (SBSN)', '#92D050']]);
     sbnStack('f-hold-chart', 'f-hold', 'f-hold-legend', HOLD);
   };
