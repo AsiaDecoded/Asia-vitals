@@ -1,0 +1,803 @@
+<style>
+#dash-root .jg { font-family: var(--font-anthropic-sans); display: flex; flex-direction: column; gap: var(--cds-gap-lg); }
+.jg-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; }
+.jg-take { margin: var(--cds-gap-xs) 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); max-width: 60rem; line-height: 1.5; }
+.jg-take b, .jg b { font-weight: var(--cds-font-weight-medium); color: var(--color-fg); }
+.jg-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); gap: var(--cds-gap-md); }
+.jg-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); position: relative; min-width: 0; }
+.jg-tile .lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.jg-tile .val { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; margin-top: var(--cds-gap-xs); }
+.jg-tile .sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: var(--cds-gap-xs); font-variant-numeric: tabular-nums; }
+.jg-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); align-items: center; }
+.jg-seg { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); overflow: hidden; }
+.jg-seg button { font: inherit; font-size: var(--cds-font-size-caption); background: transparent; color: var(--color-fg-muted); border: 0; padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; }
+.jg-seg button[aria-pressed="true"] { background: var(--color-bg); color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.jg-seg-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.jg-card h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+.jg-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-xs) 0 var(--cds-gap-md); line-height: 1.45; }
+.jg-cardhead { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--cds-gap-sm); align-items: flex-start; }
+.jg-cardhead .jg-seg button { padding-left: 6px; padding-right: 6px; }
+.jg-cardhead > .jg-seg { margin: -1px 0; }
+.jg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.jg-chart { min-height: 280px; position: relative; }
+.jg-chart.small { min-height: 280px; }
+.jg-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: var(--cds-gap-sm); }
+.jg-legend span.sw { display: inline-block; width: 0.625rem; height: 0.625rem; border-radius: 2px; margin-right: 0.35rem; vertical-align: -1px; }
+.jg-legend span.ln { display: inline-block; width: 0.9rem; height: 2px; margin-right: 0.35rem; vertical-align: 3px; }
+.jg-legend span.dot { display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 50%; margin-right: 0.35rem; vertical-align: 0; background: var(--color-fg); }
+.jg-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; z-index: 2; display: none; font-variant-numeric: tabular-nums; }
+.jg-tip .t { color: var(--cds-text-secondary); margin-bottom: 2px; }
+.jg-tip .r { display: flex; gap: 0.4rem; align-items: center; justify-content: space-between; }
+.jg-tip .r .k { display: flex; gap: 0.35rem; align-items: center; }
+.jg-tip .r i { display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 2px; }
+.jg svg text { font-family: var(--font-anthropic-sans); }
+.jg-tablewrap { overflow-x: auto; }
+.jg table { width: 100%; border-collapse: collapse; font-size: 0.875rem; font-variant-numeric: tabular-nums; }
+.jg th { text-align: right; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: bottom; }
+.jg th:first-child, .jg td:first-child { text-align: left; }
+.jg td { text-align: right; padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); }
+.jg tr.gdp td { font-weight: var(--cds-font-weight-medium); }
+.jg tr.agg td:first-child { color: var(--color-fg-muted); }
+.jg tr.sep td { border-top: 2px solid var(--color-border-line); }
+.jg td.neg { color: var(--color-bad); }
+#cpi-table th:not(:first-child), #cpi-table td:not(:first-child), #cpi-movers-table th:not(:first-child), #cpi-movers-table td:not(:first-child) { text-align: center; }
+.jg tr.grp td { font-weight: 700; color: var(--ad-ink, var(--color-fg)); text-align: left !important; padding-top: var(--cds-pad-sm); }
+.jg-foot { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.5; }
+.jg-fail { display: flex; align-items: center; justify-content: center; gap: 0.4rem; min-height: inherit; height: 100%; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.jg-fail::before { content: ""; width: 0.375rem; height: 0.375rem; border-radius: 50%; background: var(--color-bad); }
+[data-dash-source-state=empty] { color: transparent; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+@media (max-width: 640px) { .jg .hide-narrow { display: none; } }
+.jg-tabs { display: flex; gap: var(--cds-gap-md); border-bottom: 1px solid var(--color-border-line); margin-top: calc(-1 * var(--cds-gap-sm)); }
+.jg-tabs button { font: inherit; font-size: var(--cds-font-size-body); background: transparent; border: 0; border-bottom: 2px solid transparent; color: var(--color-fg-muted); padding: var(--cds-pad-sm) 0; margin-bottom: -1px; cursor: pointer; }
+.jg-tabs button[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.jg-page { display: flex; flex-direction: column; gap: var(--cds-gap-lg); }
+.jg-page[hidden] { display: none; }
+.jg-pagehead .jg-take { margin-top: var(--cds-gap-xs); }
+.jg-empty { color: var(--color-fg-muted); font-size: var(--cds-font-size-body); margin: var(--cds-gap-lg) 0; }
+
+/* Asia Decoded chart style */
+.jg-card { font-family: Arial, Helvetica, sans-serif; }
+.jg-card h2 { font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 1.15rem; color: var(--ad-ink, var(--color-fg)); }
+.jg svg text { font-family: Arial, Helvetica, sans-serif; }
+.ad-top { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--cds-gap-xs) var(--cds-gap-lg); margin-top: var(--cds-gap-sm); }
+.ad-top .ad-units.r { margin-left: auto; }
+.ad-top { position: relative; z-index: 1; height: 1.4rem; flex-wrap: nowrap; align-items: flex-start; }
+.ad-top .jg-legend { background: transparent; }
+.ad-units { font-size: 0.8125rem; color: var(--ad-ink, var(--color-fg-muted)); }
+.ad-units.r { text-align: right; }
+.ad-top .jg-legend { margin-top: 0; justify-content: flex-start; flex: 1 1 0; min-width: 10rem; color: var(--ad-ink, var(--color-fg-muted)); font-size: 0.8125rem; }
+.jg-legend span.ln { width: 1.6rem; height: 3px; vertical-align: 3px; }
+.ad-foot { display: flex; justify-content: space-between; align-items: baseline; gap: var(--cds-gap-md); margin-top: var(--cds-gap-xs); font-size: 0.8125rem; color: var(--ad-ink, var(--color-fg-muted)); line-height: 1.4; }
+.ad-brand { color: #EE6600; font-weight: 700; white-space: nowrap; }
+.ad-foot > span:first-child { font-size: 0.6875rem; }
+.ad-foot .ad-brand { font-size: 0.6875rem; }
+.ad-foot .ad-right { display: flex; align-items: baseline; gap: var(--cds-gap-md); }
+.ad-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; }
+.ad-png { font: inherit; font-size: 0.75rem; background: transparent; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); color: var(--color-fg-muted); padding: 1px 8px; cursor: pointer; white-space: nowrap; }
+.ad-png:hover { color: var(--color-fg); }
+.ad-x { position: absolute; top: 10px; right: 10px; width: 26px; height: 26px; display: inline-flex; align-items: center; justify-content: center; background: transparent; border: 1px solid transparent; border-radius: var(--cds-radius); color: var(--color-fg-muted); cursor: pointer; padding: 0; z-index: 2; }
+.ad-x:hover, .ad-x:focus-visible { color: var(--color-fg); border-color: var(--color-border-line); }
+.ad-x svg { width: 15px; height: 15px; }
+.jg-card.ad-hasx > h2, .jg-card.ad-hasx > .jg-cardhead { padding-right: 30px; }
+.jg-grid > .ad-expanded, .jg-grid:has(.ad-expanded) > * { grid-column: 1 / -1; }
+.ad-stack { display: flex; flex-direction: column; gap: var(--cds-gap-md); min-width: 0; }
+.ad-duo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-lg); margin-top: var(--cds-gap-sm); }
+.jg-card.ad-panel { border: 0; padding: 0; background: none; border-radius: 0; }
+.jg-card.ad-panel > h2 { font-size: 1rem; }
+.jg-card.ad-panel > .ad-x { display: none; }
+.jg-card.ad-panel.ad-hasx > h2, .jg-card.ad-panel.ad-hasx > .jg-cardhead { padding-right: 0; }
+.ad-stack table { font-size: 0.8125rem; line-height: 1.25; }
+.ad-stack table th, .ad-stack table td { padding: 3px 6px; }
+.ad-stack table thead th { font-size: 0.75rem; vertical-align: bottom; }
+.ad-stack .jg-card { padding-bottom: var(--cds-pad-md, 14px); }
+.ad-stack .jg-note { font-size: 0.75rem; }
+#cpi-movers-table { table-layout: fixed; width: 100%; }
+#cpi-movers-table th:nth-child(n+2) { width: 15%; }
+#cpi-movers-table { font-size: 0.8125rem; line-height: 1.25; }
+#cpi-movers-table th, #cpi-movers-table td { padding: 3px 6px; }
+#cpi-movers-table thead th { font-size: 0.75rem; vertical-align: bottom; }
+.jg-card.ad-full > .ad-x { display: none; }
+.jg-card.ad-full.ad-hasx > h2, .jg-card.ad-full.ad-hasx > .jg-cardhead { padding-right: 0; }
+
+.ad-shot { position: fixed; inset: 0; background: rgba(0,0,0,.55); display: flex; align-items: center; justify-content: center; z-index: 50; padding: 16px; }
+.ad-shot-box { margin-top: var(--cds-gap-md); padding-top: var(--cds-gap-md); border-top: 1px solid var(--color-border-line); display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
+.ad-shot-box img { width: 100%; height: auto; border: 1px solid var(--color-border-line); }
+.ad-shot-bar { display: flex; justify-content: space-between; align-items: center; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.ad-shot-bar a, .ad-shot-bar button { font: inherit; color: var(--color-fg); background: transparent; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: 2px 10px; cursor: pointer; text-decoration: none; }
+
+.ad-method { font-family: Arial, Helvetica, sans-serif; max-width: 52rem; line-height: 1.55; font-size: 0.9375rem; color: var(--color-fg); }
+.ad-method h3 { font-size: 1rem; margin: var(--cds-gap-lg) 0 var(--cds-gap-xs); color: var(--ad-ink, var(--color-fg)); }
+.ad-method p { margin: var(--cds-gap-xs) 0; }
+.ad-method ul { margin: var(--cds-gap-xs) 0; padding-left: 1.2rem; }
+.ad-method li { margin: 2px 0; }
+.ad-method .ad-foot { margin-top: var(--cds-gap-lg); }
+.ad-slider { position: relative; height: 22px; margin: 2px 8px 0; }
+.ad-slider-track { position: absolute; left: 0; right: 0; top: 9px; height: 4px; border-radius: 2px; background: var(--color-border-line); }
+.ad-slider-sel { position: absolute; top: 0; bottom: 0; background: var(--ad-c1); border-radius: 2px; opacity: 0.6; }
+.ad-slider input[type=range] { position: absolute; left: -8px; right: -8px; width: calc(100% + 16px); top: 0; height: 22px; margin: 0; background: none; pointer-events: none; -webkit-appearance: none; appearance: none; }
+.ad-slider input[type=range]::-webkit-slider-runnable-track { background: none; height: 22px; }
+.ad-slider input[type=range]::-moz-range-track { background: none; }
+.ad-slider input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; pointer-events: auto; width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: var(--color-bg); border: 2px solid var(--ad-c1); cursor: ew-resize; }
+.ad-slider input[type=range]::-moz-range-thumb { pointer-events: auto; width: 12px; height: 12px; border-radius: 50%; background: var(--color-bg); border: 2px solid var(--ad-c1); cursor: ew-resize; }
+.ad-slider input[type=range]:focus-visible::-webkit-slider-thumb { outline: 2px solid var(--ad-c1); outline-offset: 2px; }
+.ad-slider-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-align: right; margin: 0 8px 4px; font-variant-numeric: tabular-nums; }
+#cpi-heat-table { font-size: 0.8125rem; }
+#cpi-heat-table th, #cpi-heat-table td { padding: 3px 6px; }
+#cpi-heat-table th:nth-child(n+2), #cpi-heat-table td:nth-child(n+2) { text-align: center; }
+#cpi-heat-table td.heat { font-variant-numeric: tabular-nums; border: 2px solid var(--color-bg); }
+#cpi-heat-table th:first-child, #cpi-heat-table td:first-child { text-align: left; white-space: nowrap; }
+#cpi-heat-table td, #cpi-heat-table th { border-bottom: 0; }
+#cpi-heat-table tr.lead td { font-weight: 700; }
+#cpi-heat-table td.wt { color: var(--ad-ink, var(--color-fg-muted)); font-weight: 400; padding-right: 12px; }
+#cpi-heat > h2 { padding-bottom: var(--cds-gap-sm); border-bottom: 1px solid var(--ad-ink, var(--color-fg-muted)); }
+#cpi-heat-table thead th:first-child { font-weight: 400; font-size: 0.8125rem; color: var(--ad-ink, var(--color-fg-muted)); }
+#cpi-heat-table tr.sub td:first-child { padding-left: 1.1rem; }
+#cpi-heat-table tr.spacer td { height: 10px; padding: 0; border: 0; background: none; }
+#cpi-heat-table .heat-tog { font: inherit; font-weight: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-align: left; }
+#cpi-heat-table .heat-arrow { color: var(--ad-ink, var(--color-fg-muted)); font-size: 0.85em; }
+#cpi-heat .jg-tablewrap { overflow-x: auto; scrollbar-width: none; }
+#cpi-heat .jg-tablewrap::-webkit-scrollbar { display: none; }
+#cpi-heat .heat-barwrap { padding-bottom: var(--cds-gap-sm); border-bottom: 1px solid var(--ad-ink, var(--color-fg-muted)); }
+#cpi-heat .heat-track { position: relative; height: 8px; margin-top: 6px; border-radius: 4px; background: var(--color-border-line); cursor: pointer; touch-action: none; }
+#cpi-heat .heat-track[hidden] { display: none; }
+#cpi-heat .heat-thumb { position: absolute; top: 0; left: 0; height: 8px; border-radius: 4px; background: var(--ad-axis, #A6A6A6); cursor: grab; touch-action: none; }
+#cpi-heat .heat-thumb:active { cursor: grabbing; background: var(--ad-ink, var(--color-fg-muted)); }
+#cpi-heat-table th:nth-child(-n+2), #cpi-heat-table td:nth-child(-n+2) { position: sticky; left: 0; background: var(--color-panel); z-index: 1; }
+#cpi-heat-table th:nth-child(2), #cpi-heat-table td:nth-child(2) { left: var(--heat-c1, 0px); }
+#cpi-ctab-table { font-size: 0.8125rem; }
+#cpi-ctab-table th, #cpi-ctab-table td { padding: 3px 6px; }
+#cpi-ctab-table th:nth-child(n+2), #cpi-ctab-table td:nth-child(n+2) { text-align: center; }
+#cpi-ctab-table td.heat { font-variant-numeric: tabular-nums; border: 2px solid var(--color-bg); }
+#cpi-ctab-table th:first-child, #cpi-ctab-table td:first-child { text-align: left; white-space: nowrap; }
+#cpi-ctab-table td, #cpi-ctab-table th { border-bottom: 0; }
+#cpi-ctab-table tr.lead td { font-weight: 700; }
+#cpi-ctab-table td.wt { color: var(--ad-ink, var(--color-fg-muted)); font-weight: 400; padding-right: 12px; }
+#cpi-ctab > h2 { padding-bottom: var(--cds-gap-sm); border-bottom: 1px solid var(--ad-ink, var(--color-fg-muted)); }
+#cpi-ctab-table thead th:first-child { font-weight: 400; font-size: 0.8125rem; color: var(--ad-ink, var(--color-fg-muted)); }
+#cpi-ctab-table tr.sub td:first-child { padding-left: 1.1rem; }
+#cpi-ctab-table tr.spacer td { height: 10px; padding: 0; border: 0; background: none; }
+#cpi-ctab-table .heat-tog { font: inherit; font-weight: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-align: left; }
+#cpi-ctab-table .heat-arrow { color: var(--ad-ink, var(--color-fg-muted)); font-size: 0.85em; }
+#cpi-ctab .jg-tablewrap { overflow-x: auto; scrollbar-width: none; }
+#cpi-ctab .jg-tablewrap::-webkit-scrollbar { display: none; }
+#cpi-ctab .heat-barwrap { padding-bottom: var(--cds-gap-sm); border-bottom: 1px solid var(--ad-ink, var(--color-fg-muted)); }
+#cpi-ctab .heat-track { position: relative; height: 8px; margin-top: 6px; border-radius: 4px; background: var(--color-border-line); cursor: pointer; touch-action: none; }
+#cpi-ctab .heat-track[hidden] { display: none; }
+#cpi-ctab .heat-thumb { position: absolute; top: 0; left: 0; height: 8px; border-radius: 4px; background: var(--ad-axis, #A6A6A6); cursor: grab; touch-action: none; }
+#cpi-ctab .heat-thumb:active { cursor: grabbing; background: var(--ad-ink, var(--color-fg-muted)); }
+#cpi-ctab-table th:nth-child(-n+2), #cpi-ctab-table td:nth-child(-n+2) { position: sticky; left: 0; background: var(--color-panel); z-index: 1; }
+#cpi-ctab-table th:nth-child(2), #cpi-ctab-table td:nth-child(2) { left: var(--heat-c1, 0px); }
+#g-comp-table tr.sub td:first-child, #g-ind-table tr.sub td:first-child { padding-left: 1.1rem; }
+#g-comp-table tr.sub2 td:first-child { padding-left: 2.2rem; }
+#g-comp-table th:not(:first-child), #g-comp-table td:not(:first-child), #g-ind-table th:not(:first-child), #g-ind-table td:not(:first-child) { text-align: right; }
+#g-comp-table, #g-ind-table { font-size: 0.8125rem; }
+#g-comp-table th, #g-comp-table td, #g-ind-table th, #g-ind-table td { padding: 3px 6px; }
+.ad-notes { font-family: Arial, Helvetica, sans-serif; }
+.ad-notes ol { margin: var(--cds-gap-sm) 0 0; padding-left: 1.2rem; display: flex; flex-direction: column; gap: var(--cds-gap-xs); font-size: 0.8125rem; line-height: 1.5; color: var(--ad-ink, var(--color-fg-muted)); max-width: 60rem; }
+.ad-notes ol b { color: var(--ad-ink, var(--color-fg)); }
+</style>
+
+<div class="jg">
+  <header class="jg-head" id="top">
+    <h1>Indonesia</h1>
+  </header>
+
+  <nav class="jg-tabs" role="tablist" aria-label="Sections">
+    <button role="tab" data-tab="gdp" aria-selected="true">GDP</button>
+    <button role="tab" data-tab="inflation" aria-selected="false">Inflation</button>
+    <button role="tab" data-tab="trade" aria-selected="false">Trade</button>
+    <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
+  </nav>
+
+  <section class="jg-page" id="gdp" role="tabpanel">
+    <div class="jg-pagehead">
+      <div class="jg-note" style="margin:0"><span data-source="gdp_release" data-field="label" data-row="0" class="dash-skeleton" style="color: var(--color-fg)">—</span></div>
+      <p class="jg-take" id="g-takeaway"><span class="dash-skeleton">—</span></p>
+    </div>
+
+    <section class="jg-tiles" id="g-headline" aria-label="Headline GDP figures">
+      <div class="jg-card jg-tile"><div class="lbl">Real GDP, y/y</div>
+        <div class="val"><span data-source="gdp_latest" data-field="gdp_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior quarter <span data-source="gdp_latest" data-field="gdp_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Real GDP, q/q (not seasonally adjusted)</div>
+        <div class="val"><span data-source="gdp_latest" data-field="gdp_qoq" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior quarter <span data-source="gdp_latest" data-field="gdp_qoq_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Real GDP, year to date</div>
+        <div class="val"><span data-source="gdp_latest" data-field="gdp_ctc" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior quarter <span data-source="gdp_latest" data-field="gdp_ctc_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">GDP deflator, y/y</div>
+        <div class="val"><span data-source="gdp_latest" data-field="defl_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior quarter <span data-source="gdp_latest" data-field="defl_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Household consumption, y/y</div>
+        <div class="val"><span data-source="gdp_latest" data-field="hh_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior quarter <span data-source="gdp_latest" data-field="hh_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Fixed investment, y/y</div>
+        <div class="val"><span data-source="gdp_latest" data-field="gfcf_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior quarter <span data-source="gdp_latest" data-field="gfcf_yoy_prev" data-row="0">—</span>%</div></div>
+    </section>
+
+    <section class="jg-card" id="g-growth" data-start="2015-01-01">
+      <div class="jg-cardhead">
+        <div><h2>Indonesia GDP growth</h2></div>
+        <div class="jg-seg" id="g-growth-seg" role="group" aria-label="Growth basis">
+          <button data-g="yoy" aria-pressed="true">y/y</button><button data-g="qoq" aria-pressed="false">q/q</button>
+        </div>
+      </div>
+      <div class="ad-top"><span class="ad-units">%, 2010 prices</span><div class="jg-legend" id="g-growth-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="g-growth-chart" data-source="gdp_series"></div>
+      <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <section class="jg-card" id="g-contrib" data-start="2015-01-01">
+      <div class="jg-cardhead">
+        <div><h2>Indonesia contributions to real GDP growth</h2></div>
+        <div class="jg-seg" id="g-contrib-seg" role="group" aria-label="Contribution basis">
+          <button data-c="yoy" aria-pressed="true">y/y</button><button data-c="qoq" aria-pressed="false">q/q</button>
+        </div>
+      </div>
+      <div class="ad-top"><span class="ad-units">ppt</span><div class="jg-legend" id="g-contrib-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="g-contrib-chart" data-source="id_gdp"></div>
+      <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="g-level" data-start="2010-01-01">
+        <div class="jg-cardhead">
+          <div><h2>Indonesia GDP level</h2></div>
+          <div class="jg-seg" id="g-level-seg" role="group" aria-label="Price basis">
+            <button data-b="real" aria-pressed="true">Real</button><button data-b="nominal" aria-pressed="false">Nominal</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units">Rp trillion per quarter, not seasonally adjusted</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-chart small" id="g-level-chart" data-source="gdp_series"></div>
+        <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="g-deflator" data-start="2011-01-01">
+        <h2>Indonesia GDP deflator</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-chart small" id="g-deflator-chart" data-source="gdp_series"></div>
+        <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card" id="g-components">
+      <h2>Indonesia GDP by expenditure, <span id="g-table-q">latest quarter</span></h2>
+      <div class="ad-top"><span class="ad-units">%; contributions in ppt</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-tablewrap">
+        <table id="g-comp-table" data-source="components_latest" data-row-key="code">
+          <thead><tr>
+            <th data-field="component">Component</th>
+            <th data-field="real_level_trn">Real level, Rp trn</th>
+            <th data-field="real_qoq" class="hide-narrow">Real q/q</th>
+            <th data-field="real_yoy">Real y/y</th>
+            <th data-field="deflator_yoy" class="hide-narrow">Deflator y/y</th>
+            <th data-field="share_nominal" class="hide-narrow">Share of nominal GDP</th>
+            <th data-field="contrib_yoy">Contrib. y/y</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <section class="jg-card" id="g-industry">
+      <h2>Indonesia GDP by industry, <span id="g-ind-q">latest quarter</span></h2>
+      <div class="ad-top"><span class="ad-units">%; contributions in ppt</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-tablewrap">
+        <table id="g-ind-table" data-source="industry_latest" data-row-key="code">
+          <thead><tr>
+            <th data-field="component">Industry</th>
+            <th data-field="real_qoq" class="hide-narrow">Real q/q</th>
+            <th data-field="real_yoy">Real y/y</th>
+            <th data-field="share_nominal">Share of nominal GDP</th>
+            <th data-field="contrib_yoy">Contrib. y/y</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <section class="jg-card ad-notes" id="g-notes">
+      <h2>Chart notes</h2>
+      <p class="jg-foot">All figures are BPS&rsquo;s, as published: nothing is calculated, linked or seasonally adjusted. GDP is the 2010 series (2010 constant prices), from Q1 2010. BPS publishes no seasonally adjusted GDP, so q/q rates move with the seasons (Q1 is usually negative). The latest three years are preliminary and BPS revises them.</p>
+      <ol>
+        <li><b>Chart 1, Indonesia GDP growth:</b> real GDP, % y/y (bars) and year to date against the same period a year earlier (c-to-c, line); the q/q tab shows % q/q on the original series.</li>
+        <li><b>Chart 2, Indonesia contributions to real GDP growth:</b> BPS&rsquo;s sources of growth (sumber pertumbuhan) by expenditure, ppt, and real GDP growth (line). BPS publishes imports&rsquo; contribution as a positive number when imports grow; GDP subtracts imports, so the chart draws it with the sign reversed (the tooltip shows BPS&rsquo;s figure). Exports and imports are not netted.</li>
+        <li><b>Chart 3, Indonesia GDP level:</b> quarterly GDP, Rp trillion, at 2010 prices (real) or current prices (nominal), not seasonally adjusted.</li>
+        <li><b>Chart 4, Indonesia GDP deflator:</b> BPS&rsquo;s implicit GDP deflator growth (laju implisit), % y/y.</li>
+        <li><b>Table 1, Indonesia GDP by expenditure:</b> latest quarter: level at 2010 prices, real growth, deflator growth, share of nominal GDP and contribution to GDP y/y, as published. Imports&rsquo; contribution is BPS&rsquo;s figure (subtract it). Components do not add up to GDP at 2010 prices only through the statistical discrepancy.</li>
+        <li><b>Table 2, Indonesia GDP by industry:</b> the 17 industry categories (KBLI 2009), taxes less subsidies on products and GDP: real growth, share of nominal GDP and contribution to GDP y/y.</li>
+      </ol>
+    </section>
+
+    <p class="jg-foot">Source: BPS-Statistics Indonesia, Quarterly Gross Domestic Product, 2010 series, from the BPS WebAPI (<span data-source="gdp_release" data-field="label" data-row="0">—</span>).</p>
+  </section>
+
+  <section class="jg-page" id="inflation" role="tabpanel" hidden>
+    <div class="jg-pagehead">
+      <div class="jg-note" style="margin:0"><span id="cpi-month" class="dash-skeleton" style="color: var(--color-fg)">—</span></div>
+      <p class="jg-take" id="cpi-takeaway"><span class="dash-skeleton">—</span></p>
+    </div>
+
+    <section class="jg-tiles" id="cpi-headline" aria-label="Headline inflation">
+      <div class="jg-card jg-tile"><div class="lbl">CPI, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="all_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="all_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Core, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="core_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="core_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Administered prices, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="administered_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="administered_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Volatile food, y/y</div>
+        <div class="val"><span data-source="cpi_latest" data-field="volatile_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="volatile_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">CPI, m/m</div>
+        <div class="val"><span data-source="cpi_latest" data-field="all_mom" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="cpi_latest" data-field="all_mom_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">WPI, y/y</div>
+        <div class="val"><span data-source="ppi_latest" data-field="wpi_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior month <span data-source="ppi_latest" data-field="wpi_yoy_prev" data-row="0">—</span>%</div></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="ppi-cpi" data-start="2024-01-01">
+        <h2>Indonesia inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="ppi-cpi-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="ppi-cpi-chart" data-source="cpi_series ppi_series"></div>
+        <div class="ad-foot"><span>Source: BPS-Statistics Indonesia, Bank Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-measures" data-start="2021-01-01">
+        <h2>Indonesia consumer inflation</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-measures-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-measures-chart" data-source="bps_series"></div>
+        <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-ym" data-start="2021-01-01">
+        <h2>Indonesia consumer inflation, monthly</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-ym-legend"></div><span class="ad-units r">% m/m</span></div>
+        <div class="jg-chart" id="cpi-ym-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: BPS-Statistics Indonesia, Bank Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-comp" data-start="2021-01-01">
+        <div class="jg-cardhead">
+          <div><h2>Indonesia CPI components</h2></div>
+          <div class="jg-seg" id="cpi-comp-seg" role="group" aria-label="Component">
+            <button data-s="core" aria-pressed="true">Core</button><button data-s="administered">Administered</button><button data-s="volatile">Volatile food</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-comp-legend"></div><span class="ad-units r">% m/m</span></div>
+        <div class="jg-chart" id="cpi-comp-chart" data-source="bps_series"></div>
+        <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-heat">
+        <h2>Indonesia consumer inflation, % y/y</h2>
+        <div class="jg-tablewrap" style="margin-top: var(--cds-gap-sm)">
+          <table id="cpi-heat-table" data-source="cpi_heat"></table>
+        </div>
+        <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-ctab">
+        <h2>Indonesia CPI contributions, ppt</h2>
+        <div class="jg-tablewrap" style="margin-top: var(--cds-gap-sm)">
+          <table id="cpi-ctab-table" data-source="cpi_ctab"></table>
+        </div>
+        <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-contrib" data-start="2021-01-01">
+        <h2>Indonesia consumer inflation contribution</h2>
+        <div class="ad-top"><span class="ad-units">ppt</span><div class="jg-legend" id="cpi-contrib-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-contrib-chart" data-source="bps_series"></div>
+        <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="cpi-fe" data-start="2021-01-01">
+        <h2>Indonesia food and energy CPI</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-fe-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-fe-chart" data-source="bps_series"></div>
+        <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-grp" data-start="2021-01-01">
+        <div class="jg-cardhead">
+          <div><h2>Indonesia CPI by expenditure group</h2></div>
+          <div class="jg-seg" id="cpi-grp-seg" role="group" aria-label="Group">
+            <button data-s="food" aria-pressed="true">Food</button><button data-s="housing">Housing</button><button data-s="transport">Transport</button><button data-s="restaurants">Restaurants</button><button data-s="personal">Personal care</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-grp-legend"></div><span class="ad-units r">% m/m</span></div>
+        <div class="jg-chart" id="cpi-grp-chart" data-source="bps_series"></div>
+        <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="ppi-sec">
+        <h2>Indonesia wholesale prices by section</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="ppi-sec-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="ppi-sec-chart" data-source="ppi_series"></div>
+        <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="cpi-long" data-start="2005-01-01">
+        <h2>Indonesia consumer inflation, long run</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="cpi-long-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="cpi-long-chart" data-source="cpi_series"></div>
+        <div class="ad-foot"><span>Source: BPS-Statistics Indonesia, Bank Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card ad-notes" id="chart-notes">
+      <h2>Chart notes</h2>
+      <p class="jg-foot">All figures are BPS&rsquo;s, as published: nothing is calculated or seasonally adjusted. CPI on a 2022 = 100 base (150 cities) from January 2024, 2018 = 100 (90 cities) before. Core is BPS&rsquo;s own measure. BPS publishes no weights through its API, so the tables carry none.</p>
+      <ol>
+        <li><b>Table 1, Indonesia consumer inflation:</b> BPS&rsquo;s published y/y for CPI, its components and the 11 expenditure groups (COICOP 2018), from January 2025. Core excludes administered prices and volatile food. Energy and food (bahan makanan) are BPS&rsquo;s other groupings of the CPI basket, shown under the components; they overlap with them. Each row is coloured on its own range, from green at its lowest to red at its highest.</li>
+        <li><b>Table 2, Indonesia CPI contributions:</b> BPS&rsquo;s published contributions (andil), in percentage points, to CPI y/y; the CPI row is CPI y/y. Core, administered prices and volatile food add up to CPI, as do the 11 groups, up to rounding. Values BPS publishes as &ldquo;~0&rdquo; (close to zero) are shown as 0.00.</li>
+        <li><b>Chart 1, Indonesia inflation:</b> wholesale price index (WPI, IHPB, 2023 = 100) and CPI, % y/y. WPI y/y is published from January 2025, the first year on the 2023 base.</li>
+        <li><b>Chart 2, Indonesia consumer inflation:</b> CPI, core, administered prices and volatile food, % y/y, from January 2020.</li>
+        <li><b>Chart 3, Indonesia consumer inflation, monthly:</b> CPI, % y/y (line, left axis) and % m/m (bars, right axis), not seasonally adjusted: BPS and Bank Indonesia publish no seasonally adjusted CPI, so monthly changes move with Ramadan and Eid, the school year and harvests.</li>
+        <li><b>Chart 4, Indonesia CPI components:</b> one component per tab: % y/y from January 2020 (line, left axis) and % m/m (bars, right axis), the m/m from January 2009.</li>
+        <li><b>Chart 5, Indonesia consumer inflation contribution:</b> contributions of core, administered prices and volatile food to CPI y/y, ppt, as published.</li>
+        <li><b>Chart 6, Indonesia food and energy CPI:</b> BPS&rsquo;s food (bahan makanan) and energy groupings, % y/y.</li>
+        <li><b>Chart 7, Indonesia CPI by expenditure group:</b> one group per tab: % y/y (line, left axis) and % m/m (bars, right axis). Personal care and other services carries gold jewellery.</li>
+        <li><b>Chart 8, Indonesia wholesale prices by section:</b> WPI and its five sections, % y/y, from January 2025.</li>
+        <li><b>Chart 9, Indonesia consumer inflation, long run:</b> CPI, % y/y, from 1967, on the base in use at the time, from Bank Indonesia&rsquo;s SEKI. SEKI has no y/y for March 1979&ndash;February 1980 and April 1990&ndash;February 1991.</li>
+      </ol>
+    </section>
+
+    <p class="jg-foot">Source: BPS-Statistics Indonesia, Consumer Price Index (2022 = 100) and Wholesale Price Index (IHPB, 2023 = 100), from the BPS WebAPI: CPI and WPI press releases and static table 908 (CPI <span data-source="bps_release" data-field="label" data-row="0">—</span>, WPI <span data-source="ppi_release" data-field="label" data-row="0">—</span>). Long-run CPI and CPI m/m from BPS data as republished by Bank Indonesia in SEKI table VIII.1 (<span data-source="cpi_release" data-field="label" data-row="0">—</span>).</p>
+  </section>
+
+  <section class="jg-page" id="trade" role="tabpanel" hidden>
+    <div class="jg-pagehead">
+      <div class="jg-note" style="margin:0"><span data-source="trade_release" data-field="label" data-row="0" class="dash-skeleton" style="color: var(--color-fg)">—</span></div>
+    </div>
+
+    <section class="jg-tiles" id="t-headline" aria-label="Headline trade figures">
+      <div class="jg-card jg-tile"><div class="lbl">Exports, US$ bn</div>
+        <div class="val"><span data-source="trade_latest" data-field="exports_bn" data-row="0" class="dash-skeleton">—</span></div>
+        <div class="sub">prior month <span data-source="trade_latest" data-field="exports_bn_prev" data-row="0">—</span></div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Imports, US$ bn</div>
+        <div class="val"><span data-source="trade_latest" data-field="imports_bn" data-row="0" class="dash-skeleton">—</span></div>
+        <div class="sub">prior month <span data-source="trade_latest" data-field="imports_bn_prev" data-row="0">—</span></div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Trade balance, US$ bn</div>
+        <div class="val"><span data-source="trade_latest" data-field="balance_bn" data-row="0" class="dash-skeleton">—</span></div>
+        <div class="sub">prior month <span data-source="trade_latest" data-field="balance_bn_prev" data-row="0">—</span></div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Export prices, y/y</div>
+        <div class="val"><span data-source="trade_latest" data-field="xp_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior quarter <span data-source="trade_latest" data-field="xp_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Import prices, y/y</div>
+        <div class="val"><span data-source="trade_latest" data-field="mp_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior quarter <span data-source="trade_latest" data-field="mp_yoy_prev" data-row="0">—</span>%</div></div>
+    </section>
+    <p class="jg-note">Export and import prices: <span id="t-price-q">latest quarter</span>.</p>
+
+    <section class="jg-card" id="t-balance" data-start="2019-01-01">
+      <h2>Indonesia exports, imports and trade balance</h2>
+      <div class="ad-top"><span class="ad-units">US$ billion per month</span><div class="jg-legend" id="t-balance-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="t-balance-chart" data-source="trade_wide"></div>
+      <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="t-mix" data-start="2019-01-01">
+        <div class="jg-cardhead">
+          <div><h2>Indonesia trade, oil and gas</h2></div>
+          <div class="jg-seg" id="t-mix-seg" role="group" aria-label="Flow">
+            <button data-f="exports" aria-pressed="true">Exports</button><button data-f="imports" aria-pressed="false">Imports</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units">US$ billion per month</span><div class="jg-legend" id="t-mix-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart small" id="t-mix-chart" data-source="trade_wide"></div>
+        <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="t-use" data-start="2021-01-01">
+        <h2>Indonesia imports by use</h2>
+        <div class="ad-top"><span class="ad-units">US$ billion per month</span><div class="jg-legend" id="t-use-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart small" id="t-use-chart" data-source="trade_wide"></div>
+        <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card" id="t-sitc" data-start="2022-01-01">
+      <div class="jg-cardhead">
+        <div><h2>Indonesia trade by SITC section</h2></div>
+        <div class="jg-seg" id="t-sitc-seg" role="group" aria-label="Flow">
+          <button data-f="exports" aria-pressed="true">Exports</button><button data-f="imports" aria-pressed="false">Imports</button>
+        </div>
+      </div>
+      <div class="ad-top"><span class="ad-units">US$ billion per month</span><div class="jg-legend" id="t-sitc-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="t-sitc-chart" data-source="trade_wide"></div>
+      <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <section class="jg-card" id="t-prices" data-start="2024-01-01">
+      <h2>Indonesia export and import prices</h2>
+      <div class="ad-top"><span class="ad-units">% y/y, quarterly</span><div class="jg-legend" id="t-prices-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart small" id="t-prices-chart" data-source="id_trade_prices"></div>
+      <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <section class="jg-card ad-notes" id="t-notes">
+      <h2>Chart notes</h2>
+      <p class="jg-foot">All figures are BPS&rsquo;s, as published: nothing is calculated or seasonally adjusted. Exports are valued free on board (FOB), imports cost, insurance and freight (CIF), in US$, from customs documents. The latest months are revised in later releases.</p>
+      <ol>
+        <li><b>Chart 1, Indonesia exports, imports and trade balance:</b> monthly, US$ billion, from January 2017.</li>
+        <li><b>Chart 2, Indonesia trade, oil and gas:</b> exports or imports split into oil and gas (migas) and non-oil and gas.</li>
+        <li><b>Chart 3, Indonesia imports by use:</b> consumption goods, raw materials and auxiliary goods, and capital goods (BPS&rsquo;s broad economic categories).</li>
+        <li><b>Chart 4, Indonesia trade by SITC section:</b> exports or imports by the ten SITC sections, from January 2022. BPS rounds these tables to US$ 1 million, so the sections can differ slightly from the totals.</li>
+        <li><b>Chart 5, Indonesia export and import prices:</b> BPS&rsquo;s export and import price indices (IHPI, 2023 = 100), % y/y, quarterly, from Q1 2025 (the indices start in Q1 2024). BPS rebased them from 2010 = 100 in March 2025; the older series is not shown.</li>
+      </ol>
+    </section>
+
+    <p class="jg-foot">Source: BPS-Statistics Indonesia, Foreign Trade Statistics and International Trade Price Index (IHPI, 2023 = 100), from the BPS WebAPI (<span data-source="trade_release" data-field="label" data-row="0">—</span>).</p>
+  </section>
+
+  <section class="jg-page" id="methodology" role="tabpanel" hidden>
+    <article class="jg-card ad-method" id="method-data">
+      <h2>Data</h2>
+      <p>Every figure on this page is published by BPS-Statistics Indonesia. Nothing is calculated, linked or seasonally adjusted here.</p>
+      <h3>Where it comes from</h3>
+      <ul>
+        <li><b>BPS WebAPI, monthly CPI press release (Berita Resmi Statistik):</b> Table 1 (CPI and the 11 expenditure groups) and the components table (core, administered prices, volatile food, energy, food): index, m/m, year to date, y/y and contributions to m/m and y/y, from January 2020. A month is kept only where the published rates agree with the published indices in the same table.</li>
+        <li><b>BPS WebAPI, static table 908:</b> m/m for CPI, core, administered prices and volatile food from January 2009, used for the months before January 2020.</li>
+        <li><b>BPS WebAPI, monthly WPI press release:</b> Table 1, the general wholesale price index (IHPB) and its five sections, 2023 = 100: index, m/m, year to date, y/y and contributions, from January 2025.</li>
+        <li><b>Bank Indonesia, SEKI table VIII.1:</b> BPS&rsquo;s CPI republished unchanged: all items from 1966 (long-run y/y, and the monthly chart&rsquo;s m/m and y/y).</li>
+      </ul>
+      <h3>Consumer prices</h3>
+      <ul>
+        <li><b>Index:</b> CPI, 2022 = 100, covering 150 cities, from January 2024. Earlier bases: 2018 = 100 (90 cities) 2020&ndash;2023, 2012 = 100 (82 cities) 2014&ndash;2019, 2007 = 100 (66 cities) June 2008&ndash;2013, 2002 = 100 (45 cities) 2004&ndash;May 2008, and older bases before. Index levels are not comparable across bases and are not linked here.</li>
+        <li><b>Expenditure groups:</b> the 11 groups of COICOP 2018, used since January 2020.</li>
+      </ul>
+      <h3>Core inflation and components</h3>
+      <p>BPS splits the CPI into three components: core, administered prices (goods and services whose prices the government sets, such as subsidised fuel, electricity tariffs and transport fares) and volatile food (food whose prices swing with supply, such as rice, chillies, shallots and poultry). The page shows BPS&rsquo;s core measure only. BPS also publishes energy and food (bahan makanan) groupings, which overlap with the three components.</p>
+      <h3>Seasonal adjustment</h3>
+      <p>Neither BPS nor Bank Indonesia publishes a seasonally adjusted CPI, so the page has no seasonally adjusted m/m measure. Monthly changes carry strong seasonal patterns, especially around Ramadan and Eid.</p>
+      <h3>Goods and services</h3>
+      <p>BPS publishes no split of the CPI into goods and services, so the page has none.</p>
+      <h3>Release timing</h3>
+      <p>BPS releases the CPI and WPI on the first working day of the following month, at 11:00 Jakarta time (12:00 Singapore). Bank Indonesia adds the CPI to SEKI some days later.</p>
+      <div class="ad-foot"><span>Source: BPS-Statistics Indonesia, Bank Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+    </article>
+    <article class="jg-card ad-method" id="method-gdp">
+      <h2>GDP</h2>
+      <p>Quarterly GDP from BPS&rsquo;s national accounts, 2010 series (2010 constant prices), from Q1 2010, as published in the BPS WebAPI. Nothing is calculated here.</p>
+      <h3>What is shown</h3>
+      <ul>
+        <li><b>Levels:</b> Rp billion at 2010 prices and at current prices, by expenditure (household consumption and its seven groups, NPISH consumption, government consumption, fixed investment by asset, change in inventories, exports and imports of goods and services, statistical discrepancy) and by industry (17 categories of KBLI 2009 and their sub-industries).</li>
+        <li><b>Growth:</b> BPS&rsquo;s published rates at 2010 prices: q/q, y/y and year to date against the same period a year earlier (c-to-c).</li>
+        <li><b>Deflator:</b> BPS&rsquo;s implicit deflator growth (laju implisit), q/q and y/y.</li>
+        <li><b>Contributions:</b> BPS&rsquo;s sources of growth (sumber pertumbuhan), ppt of GDP growth, q/q, y/y and c-to-c. Imports are published as their own contribution, positive when imports grow, to be subtracted.</li>
+      </ul>
+      <h3>Seasonal adjustment</h3>
+      <p>BPS publishes no seasonally adjusted GDP, so there are no annualised rates. q/q changes follow a strong seasonal pattern; y/y is BPS&rsquo;s headline measure.</p>
+      <h3>Revisions and history</h3>
+      <p>BPS marks the latest three years as preliminary and revises them; each update replaces the whole series. Earlier series (2000 base, 1993 and older) are on different bases and are not linked here.</p>
+      <h3>Release timing</h3>
+      <p>About five weeks after the quarter (early February, May, August and November), 11:00 Jakarta time.</p>
+      <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+    </article>
+    <article class="jg-card ad-method" id="method-trade">
+      <h2>Trade</h2>
+      <p>Merchandise trade and trade price indices from BPS, as published in the BPS WebAPI. Nothing is calculated here.</p>
+      <h3>What is shown</h3>
+      <ul>
+        <li><b>Values:</b> monthly exports (FOB) and imports (CIF), US$ million, from customs documents (Directorate General of Customs and Excise), from January 2017: totals, trade balance, oil and gas and non-oil and gas, the ten SITC sections (from January 2022) and imports by use (consumption goods, raw materials and auxiliary goods, capital goods).</li>
+        <li><b>Prices:</b> the International Trade Price Index (IHPI): export and import price indices, 2023 = 100, quarterly from Q1 2024, total, oil and gas and non-oil and gas, with BPS&rsquo;s q/q and y/y. BPS moved them from 2010 = 100 in March 2025.</li>
+      </ul>
+      <h3>Not shown</h3>
+      <p>Growth rates of export and import values: BPS states them in each release&rsquo;s text and tables, not in its data tables, so the page has none yet. Unit value indices (monthly, by HS chapter) have no all-goods total and are left out.</p>
+      <h3>Release timing</h3>
+      <p>Monthly, with the CPI on the first working day of the second month after the reference month, 11:00 Jakarta time; trade price indices once a quarter with a monthly release.</p>
+      <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
+    </article>
+  </section>
+</div>
+
+<script>
+const num = (v) => (v === '' || v == null ? null : Number(v));
+
+window.JG = {
+  state: {},
+  num,
+  qLabel(d) {
+    const m = Number(d.slice(5, 7));
+    return ({ 1: 'Jan–Mar', 4: 'Apr–Jun', 7: 'Jul–Sep', 10: 'Oct–Dec' })[m] + ' ' + d.slice(0, 4);
+  },
+  date(d) { return new Date(Date.UTC(Number(d.slice(0, 4)), Number(d.slice(5, 7)) - 1, 1)); },
+  f1(v) { return v == null || Number.isNaN(v) ? '' : v.toFixed(1); },
+  fail(el) {
+    el.replaceChildren();
+    const d = document.createElement('div'); d.className = 'jg-fail'; d.textContent = 'Failed to load'; el.appendChild(d);
+  },
+  // Period per chart: number of points to show (0 = all), set by each chart's own buttons.
+  period: {},
+  periodOf(id, def) { return id in this.period ? this.period[id] : def; },
+  window(rows, id) { const n = this.periodOf(id, 40); return n ? rows.slice(-n) : rows; },
+  // Range slider per chart: the selected share of the chart's full date range, [from, to] in 0..1.
+  range: {},
+  // Charts open from this month until the reader moves the slider.
+  defStart: '2016-01-01',
+  slice(rows, id) {
+    if (!rows.length) return rows;
+    const n = rows.length - 1;
+    let lo, hi;
+    if (this.range[id]) [lo, hi] = this.range[id];
+    else {
+      const cd = document.getElementById(id), st = (cd && cd.dataset.start) || this.defStart;
+      const k = rows.findIndex((r) => r.date >= st);
+      lo = n > 0 && k > 0 ? k / n : 0; hi = 1;
+      const card = document.getElementById(id), sl = card && card._slider;
+      if (sl) { sl.a.value = Math.round(lo * 1000); sl.sel.style.left = `${lo * 100}%`; sl.sel.style.right = '0%'; }
+    }
+    const i0 = Math.round(lo * n), i1 = Math.max(i0, Math.round(hi * n));
+    const out = rows.slice(i0, i1 + 1);
+    const card = document.getElementById(id), lbl = card && card.querySelector('.ad-slider-lbl');
+    if (lbl && out.length) {
+      const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      const q = card.closest('.jg-page') && card.closest('.jg-page').id === 'gdp';
+      const f = (d) => (q ? `Q${Math.floor((Number(d.slice(5, 7)) - 1) / 3) + 1} ${d.slice(0, 4)}` : MON[Number(d.slice(5, 7)) - 1] + ' ' + d.slice(0, 4));
+      lbl.textContent = `${f(out[0].date)} to ${f(out[out.length - 1].date)}`;
+    }
+    return out;
+  },
+  addSliders() {
+    document.querySelectorAll('.jg-card').forEach((card) => {
+      const chart = card.querySelector(':scope > .jg-chart'); if (!chart || !card.id) return;
+      const page = card.closest('.jg-page'); const p = page ? page.id : 'inflation';
+      const redraw = () => { if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else if (p === 'gdp') JG.redrawGdp && JG.redrawGdp(); else if (p === 'trade') JG.redrawTrade && JG.redrawTrade(); };
+      const wrap = document.createElement('div'); wrap.className = 'ad-slider';
+      const track = document.createElement('div'); track.className = 'ad-slider-track';
+      const sel = document.createElement('div'); sel.className = 'ad-slider-sel'; track.appendChild(sel);
+      const mk = (v, label) => { const i = document.createElement('input'); i.type = 'range'; i.min = 0; i.max = 1000; i.step = 1; i.value = v; i.setAttribute('aria-label', label); return i; };
+      const a = mk(0, 'Start date'), b = mk(1000, 'End date');
+      const lbl = document.createElement('div'); lbl.className = 'ad-slider-lbl';
+      wrap.append(track, a, b);
+      let raf = 0;
+      const upd = (moved) => {
+        let lo = Number(a.value), hi = Number(b.value);
+        if (hi - lo < 20) { if (moved === a) { lo = hi - 20; a.value = lo; } else { hi = lo + 20; b.value = hi; } }
+        sel.style.left = `${lo / 10}%`; sel.style.right = `${100 - hi / 10}%`;
+        JG.range[card.id] = [lo / 1000, hi / 1000];
+        cancelAnimationFrame(raf); raf = requestAnimationFrame(redraw);
+      };
+      a.addEventListener('input', () => upd(a)); b.addEventListener('input', () => upd(b));
+      chart.after(wrap, lbl);
+      sel.style.left = '0%'; sel.style.right = '0%';
+      card._slider = { a, b, sel };
+    });
+  },
+  addPeriods() {
+    const SETS = { q: [['5Y', 20], ['10Y', 40], ['All', 0]], m: [['3Y', 36], ['10Y', 120], ['All', 0]] };
+    document.querySelectorAll('.jg-card').forEach((card) => {
+      const chart = card.querySelector('.jg-chart'); if (!chart) return;
+      const page = card.closest('.jg-page'); const kind = page && page.id === 'gdp' ? 'q' : 'm';
+      const def = kind === 'q' ? 40 : 120;
+      const seg = document.createElement('div'); seg.className = 'jg-seg ad-period'; seg.setAttribute('role', 'group'); seg.setAttribute('aria-label', 'Period');
+      SETS[kind].forEach(([lab, n]) => {
+        const b = document.createElement('button'); b.type = 'button'; b.textContent = lab; b.dataset.n = n;
+        b.setAttribute('aria-pressed', String(n === def)); seg.appendChild(b);
+      });
+      seg.addEventListener('click', (e) => {
+        const b = e.target.closest('button'); if (!b) return;
+        JG.period[card.id] = Number(b.dataset.n);
+        seg.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+        const p = page ? page.id : 'gdp';
+        if (p === 'gdp') JG.redraw && JG.redraw(); else if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else JG.redrawTrade && JG.redrawTrade();
+      });
+      let head = card.querySelector(':scope > .jg-cardhead');
+      if (!head) {
+        const h2 = card.querySelector(':scope > h2');
+        head = document.createElement('div'); head.className = 'jg-cardhead';
+        const left = document.createElement('div'); h2.replaceWith(head); left.appendChild(h2); head.appendChild(left);
+      }
+      let right = head.querySelector(':scope > .ad-controls');
+      if (!right) {
+        right = document.createElement('div'); right.className = 'ad-controls';
+        const segs = Array.from(head.querySelectorAll(':scope > .jg-seg'));
+        segs.forEach((x) => right.appendChild(x)); head.appendChild(right);
+      }
+      right.appendChild(seg);
+    });
+  },
+  // Measure text widths so margins fit the labels actually drawn.
+  textWidth(svg, labels) {
+    const g = svg.append('g').attr('opacity', 0);
+    let w = 0;
+    labels.forEach((t) => { const n = g.append('text').attr('font-size', 12).text(t).node(); w = Math.max(w, n.getComputedTextLength()); });
+    g.remove();
+    return w;
+  },
+  yearTicks(dates, width) {
+    const years = Array.from(new Set(dates.map((d) => d.slice(0, 4))));
+    const room = Math.max(1, Math.floor(width / 48));
+    const step = [1, 2, 4, 5, 10].find((s) => years.length / s <= room) || 10;
+    return dates.filter((d) => d.slice(5, 7) === '01' && Number(d.slice(0, 4)) % step === 0);
+  },
+  tip(card) {
+    let t = card.querySelector(':scope > .jg-tip');
+    if (!t) { t = document.createElement('div'); t.className = 'jg-tip'; card.appendChild(t); }
+    return t;
+  },
+  showTip(card, tip, title, lines, px, py) {
+    tip.replaceChildren();
+    const h = document.createElement('div'); h.className = 't'; h.textContent = title; tip.appendChild(h);
+    lines.forEach(([color, name, value]) => {
+      const r = document.createElement('div'); r.className = 'r';
+      const k = document.createElement('span'); k.className = 'k';
+      if (color) { const i = document.createElement('i'); i.style.background = color; k.appendChild(i); }
+      const s = document.createElement('span'); s.textContent = name; k.appendChild(s);
+      const v = document.createElement('span'); v.textContent = value;
+      r.append(k, v); tip.appendChild(r);
+    });
+    tip.style.display = 'block';
+    const cw = card.clientWidth, tw = tip.offsetWidth;
+    let left = px + 14; if (left + tw > cw - 8) left = px - tw - 14; if (left < 8) left = 8;
+    tip.style.left = left + 'px'; tip.style.top = Math.max(8, py - 10) + 'px';
+  },
+  // Asia Decoded palette; the two dark greys lighten on a dark background.
+  PAL: [1, 2, 3, 4, 5, 6, 7, 8].map((i) => `var(--ad-c${i})`),
+  theme() {
+    const root = document.querySelector('#dash-root .jg') || document.querySelector('.jg');
+    if (!root) return;
+    const bg = getComputedStyle(root).getPropertyValue('--color-bg').trim() || getComputedStyle(document.body).backgroundColor;
+    const probe = document.createElement('span'); probe.style.color = bg; root.appendChild(probe);
+    const col = getComputedStyle(probe).color; probe.remove();
+    const n = (col.match(/[\d.]+%?/g) || ['255', '255', '255']);
+    let dark;
+    if (/^(ok)?l(ab|ch)/.test(col)) { let L = parseFloat(n[0]); if (n[0].endsWith('%') || L > 1) L /= 100; dark = L < 0.5; }
+    else { const v = n.map(parseFloat); dark = (0.2126 * v[0] + 0.7152 * v[1] + 0.0722 * v[2]) < 128; }
+    const v = { '--ad-c1': '#0C84FF', '--ad-c2': '#BD1B21', '--ad-c3': '#EE6631', '--ad-c4': dark ? '#ADB5BD' : '#495057',
+      '--ad-c5': '#FFC000', '--ad-c6': '#92D050', '--ad-c7': '#954F72', '--ad-c8': dark ? '#8496B0' : '#44546A',
+      '--ad-ink': dark ? 'var(--color-fg-muted)' : '#495057', '--ad-grid': dark ? 'var(--cds-chart-grid)' : '#D9D9D9',
+      '--ad-axis': dark ? 'var(--cds-chart-axis)' : '#A6A6A6' };
+    Object.entries(v).forEach(([k, x]) => root.style.setProperty(k, x));
+  },
+  axisStyle(g) {
+    g.attr('font-size', null).attr('font-family', null);
+    g.selectAll('text').attr('fill', 'var(--ad-ink)').attr('font-size', 12);
+    g.selectAll('line').attr('stroke', 'var(--ad-axis)');
+    g.select('.domain').remove();
+  },
+};
+</script>
+
+<script>
+(() => {
+  const J = window.JG;
+  J.theme();
+  J.addSliders();
+  dash.onData(() => J.theme());
+  // Tabs: one page shown at a time; charts on a hidden page are drawn when it is shown.
+  const tabs = document.querySelectorAll('.jg-tabs [data-tab]');
+  const show = (id) => {
+    if (!document.getElementById(id)) return;
+    tabs.forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === id)));
+    document.querySelectorAll('.jg-page').forEach((p) => { p.hidden = p.id !== id; });
+    dash.setLink(id);
+    if (id === 'inflation' && J.redrawCpi) J.redrawCpi();
+    if (id === 'gdp' && J.redrawGdp) J.redrawGdp();
+    if (id === 'trade' && J.redrawTrade) J.redrawTrade();
+  };
+  J.show = show;
+  tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
+  const linked = location.hash.slice(1);
+  if (['inflation', 'trade', 'methodology'].includes(linked)) show(linked);
+})();
+</script>
+<script src="gdp.js"></script>
+<script src="cpi.js"></script>
+<script src="trade.js"></script>
+<script src="export.js"></script>
+
