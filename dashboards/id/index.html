@@ -186,6 +186,7 @@
   <nav class="jg-tabs" role="tablist" aria-label="Sections">
     <button role="tab" data-tab="gdp" aria-selected="true">GDP</button>
     <button role="tab" data-tab="inflation" aria-selected="false">Inflation</button>
+    <button role="tab" data-tab="fiscal" aria-selected="false">Fiscal</button>
     <button role="tab" data-tab="trade" aria-selected="false">Trade</button>
     <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
   </nav>
@@ -459,6 +460,90 @@
     <p class="jg-foot">Source: BPS-Statistics Indonesia, Consumer Price Index (2022 = 100) and Wholesale Price Index (IHPB, 2023 = 100), from the BPS WebAPI: CPI and WPI press releases and static table 908 (CPI <span data-source="bps_release" data-field="label" data-row="0">—</span>, WPI <span data-source="ppi_release" data-field="label" data-row="0">—</span>). Long-run CPI and CPI m/m from BPS data as republished by Bank Indonesia in SEKI table VIII.1 (<span data-source="cpi_release" data-field="label" data-row="0">—</span>).</p>
   </section>
 
+  <section class="jg-page" id="fiscal" role="tabpanel" hidden>
+    <div class="jg-pagehead">
+      <div class="jg-note" style="margin:0"><span data-source="fiscal_release" data-field="label" data-row="0" class="dash-skeleton" style="color: var(--color-fg)">—</span></div>
+    </div>
+
+    <section class="jg-tiles" id="f-headline" aria-label="Headline fiscal figures">
+      <div class="jg-card jg-tile"><div class="lbl">Revenue and grants, <span class="f-year">latest year</span>, Rp trn</div>
+        <div class="val"><span data-source="fiscal_latest" data-field="rev" data-row="0" class="dash-skeleton">—</span></div>
+        <div class="sub">prior year <span data-source="fiscal_latest" data-field="rev_prev" data-row="0">—</span></div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Expenditure, <span class="f-year">latest year</span>, Rp trn</div>
+        <div class="val"><span data-source="fiscal_latest" data-field="exp" data-row="0" class="dash-skeleton">—</span></div>
+        <div class="sub">prior year <span data-source="fiscal_latest" data-field="exp_prev" data-row="0">—</span></div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Surplus / deficit, <span class="f-year">latest year</span>, Rp trn</div>
+        <div class="val"><span data-source="fiscal_latest" data-field="balance" data-row="0" class="dash-skeleton">—</span></div>
+        <div class="sub">prior year <span data-source="fiscal_latest" data-field="balance_prev" data-row="0">—</span></div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Tax revenue, <span class="f-year">latest year</span>, Rp trn</div>
+        <div class="val"><span data-source="fiscal_latest" data-field="tax" data-row="0" class="dash-skeleton">—</span></div>
+        <div class="sub">prior year <span data-source="fiscal_latest" data-field="tax_prev" data-row="0">—</span></div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Government debt securities (SUN), Rp trn</div>
+        <div class="val"><span data-source="sbn_latest" data-field="sun" data-row="0" class="dash-skeleton">—</span></div>
+        <div class="sub">prior month <span data-source="sbn_latest" data-field="sun_prev" data-row="0">—</span></div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Islamic securities (SBSN), Rp trn</div>
+        <div class="val"><span data-source="sbn_latest" data-field="sbsn" data-row="0" class="dash-skeleton">—</span></div>
+        <div class="sub">prior month <span data-source="sbn_latest" data-field="sbsn_prev" data-row="0">—</span></div></div>
+    </section>
+    <p class="jg-note">Budget outturns: actual for <span class="f-year">the latest year</span>. Securities outstanding: end of <span id="f-sbn-month">latest month</span>.</p>
+
+    <section class="jg-card" id="f-balance">
+      <h2>Indonesia central government revenue, expenditure and balance</h2>
+      <div class="ad-top"><span class="ad-units">Rp trillion, actual, per year</span><div class="jg-legend" id="f-balance-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="f-balance-chart" data-source="fiscal_years"></div>
+      <div class="ad-foot"><span>Source: Ministry of Finance, Bank Indonesia (SEKI)</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="f-budget">
+        <h2>Indonesia budget balance: budget and actual</h2>
+        <div class="ad-top"><span class="ad-units">Rp trillion per year</span><div class="jg-legend" id="f-budget-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart small" id="f-budget-chart" data-source="fiscal_years"></div>
+        <div class="ad-foot"><span>Source: Ministry of Finance, Bank Indonesia (SEKI)</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="f-mix">
+        <div class="jg-cardhead">
+          <div><h2>Indonesia revenue and expenditure by type</h2></div>
+          <div class="jg-seg" id="f-mix-seg" role="group" aria-label="Side">
+            <button data-m="revenue" aria-pressed="true">Revenue</button><button data-m="expenditure" aria-pressed="false">Expenditure</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units">Rp trillion, actual, per year</span><div class="jg-legend" id="f-mix-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart small" id="f-mix-chart" data-source="fiscal_years"></div>
+        <div class="ad-foot"><span>Source: Ministry of Finance, Bank Indonesia (SEKI)</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="f-sbn" data-start="2015-01-01">
+        <h2>Indonesia government securities outstanding</h2>
+        <div class="ad-top"><span class="ad-units">Rp trillion, end of month</span><div class="jg-legend" id="f-sbn-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="f-sbn-chart" data-source="sbn_wide"></div>
+        <div class="ad-foot"><span>Source: Ministry of Finance, Bank Indonesia (SEKI)</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="f-hold" data-start="2015-01-01">
+        <h2>Indonesia government bonds by holder</h2>
+        <div class="ad-top"><span class="ad-units">Rp trillion, end of month</span><div class="jg-legend" id="f-hold-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="f-hold-chart" data-source="sbn_wide"></div>
+        <div class="ad-foot"><span>Source: Ministry of Finance, Bank Indonesia (SEKI)</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card ad-notes" id="f-notes">
+      <h2>Chart notes</h2>
+      <p class="jg-foot">All figures are the Ministry of Finance&rsquo;s, as republished by Bank Indonesia in SEKI tables IV.1&ndash;IV.4: nothing is calculated. Central government only (the APBN), Rp trillion (Rp billion as published, divided by 1,000). Fiscal year = calendar year. The latest year&rsquo;s actual is the Ministry&rsquo;s preliminary outturn until the audited accounts (LKPP) replace it.</p>
+      <ol>
+        <li><b>Chart 1, revenue, expenditure and balance:</b> actual revenue and grants, expenditure (central government spending plus transfers to regions and villages), and the published surplus or deficit, from 2008.</li>
+        <li><b>Chart 2, budget balance, budget and actual:</b> the surplus or deficit in the budget (APBN) and as realised.</li>
+        <li><b>Chart 3, revenue and expenditure by type:</b> actual revenue by tax and non-tax source, or actual expenditure by economic type plus transfers to regions and villages; the parts are the published items and add up to the published totals.</li>
+        <li><b>Chart 4, government securities outstanding:</b> tradable government debt securities: government bonds (Obligasi Negara) and treasury bills (SPN), which together make up SUN, and Islamic securities (SBSN), at the end of each month from January 2010 (December only for 2008 and 2009). Loans are not included, so this is not total government debt.</li>
+        <li><b>Chart 5, government bonds by holder:</b> Obligasi Negara by holder. Bank Indonesia&rsquo;s holdings include repo, reverse repo and FX-term securities. Non-bank holders (nasabah) include foreign investors, insurers, pension funds, mutual funds and individuals; SEKI does not split them.</li>
+      </ol>
+    </section>
+
+    <p class="jg-foot">Source: Ministry of Finance of the Republic of Indonesia, as republished by Bank Indonesia, Indonesian Economic and Financial Statistics (SEKI), tables IV.1&ndash;IV.4 (<span data-source="fiscal_release" data-field="label" data-row="0">—</span>).</p>
+  </section>
+
   <section class="jg-page" id="trade" role="tabpanel" hidden>
     <div class="jg-pagehead">
       <div class="jg-note" style="margin:0"><span data-source="trade_release" data-field="label" data-row="0" class="dash-skeleton" style="color: var(--color-fg)">—</span></div>
@@ -588,6 +673,25 @@
       <p>About five weeks after the quarter (early February, May, August and November), 11:00 Jakarta time.</p>
       <div class="ad-foot"><span>Source: BPS-Statistics Indonesia</span><span class="ad-brand">Asia Decoded</span></div>
     </article>
+    <article class="jg-card ad-method" id="method-fiscal">
+      <h2>Fiscal</h2>
+      <p>Central government finance (the state budget, APBN) and government securities, from the Ministry of Finance as republished by Bank Indonesia in SEKI chapter IV. Nothing is calculated here.</p>
+      <h3>What is shown</h3>
+      <ul>
+        <li><b>Budget and actual (SEKI IV.1&ndash;IV.3):</b> annual revenue and grants, expenditure and financing, Rp billion, both the budget (APBN) and the outturn (realisasi), 2008 on. Revenue by tax type and non-tax revenue; expenditure by economic type (personnel, goods, capital, interest, subsidies, grants, social assistance, other) plus transfers to regions and the village fund; financing by instrument.</li>
+        <li><b>Government securities (SEKI IV.4):</b> tradable securities outstanding at month end, Rp billion: government bonds and treasury bills (SUN) by type and holder, and Islamic securities (SBSN) by type.</li>
+      </ul>
+      <h3>Not shown</h3>
+      <ul>
+        <li><b>Ratios to GDP:</b> the Ministry quotes the deficit and debt as % of GDP, but SEKI carries only Rupiah amounts; a ratio here would be a calculation.</li>
+        <li><b>Monthly budget realisation:</b> the Ministry publishes year-to-date outturns each month (APBN KiTa), but not as a data table in a form the pipeline can read.</li>
+        <li><b>Total government debt:</b> SBN excludes loans; the debt office&rsquo;s debt profile is not read yet.</li>
+        <li><b>Years before 2008:</b> SEKI keeps 1990&ndash;2007 on older sheets (the fiscal year ran April to March until 2000); not read.</li>
+      </ul>
+      <h3>Release timing</h3>
+      <p>Bank Indonesia updates SEKI several weeks after the Ministry publishes; the budget tables change once or twice a year (new budget, then outturn), the securities table monthly.</p>
+      <div class="ad-foot"><span>Source: Ministry of Finance, Bank Indonesia (SEKI)</span><span class="ad-brand">Asia Decoded</span></div>
+    </article>
     <article class="jg-card ad-method" id="method-trade">
       <h2>Trade</h2>
       <p>Merchandise trade and trade price indices from BPS, as published in the BPS WebAPI. Nothing is calculated here.</p>
@@ -656,7 +760,7 @@ window.JG = {
     document.querySelectorAll('.jg-card').forEach((card) => {
       const chart = card.querySelector(':scope > .jg-chart'); if (!chart || !card.id) return;
       const page = card.closest('.jg-page'); const p = page ? page.id : 'inflation';
-      const redraw = () => { if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else if (p === 'gdp') JG.redrawGdp && JG.redrawGdp(); else if (p === 'trade') JG.redrawTrade && JG.redrawTrade(); };
+      const redraw = () => { if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else if (p === 'gdp') JG.redrawGdp && JG.redrawGdp(); else if (p === 'trade') JG.redrawTrade && JG.redrawTrade(); else if (p === 'fiscal') JG.redrawFiscal && JG.redrawFiscal(); };
       const wrap = document.createElement('div'); wrap.className = 'ad-slider';
       const track = document.createElement('div'); track.className = 'ad-slider-track';
       const sel = document.createElement('div'); sel.className = 'ad-slider-sel'; track.appendChild(sel);
@@ -789,15 +893,17 @@ window.JG = {
     if (id === 'inflation' && J.redrawCpi) J.redrawCpi();
     if (id === 'gdp' && J.redrawGdp) J.redrawGdp();
     if (id === 'trade' && J.redrawTrade) J.redrawTrade();
+    if (id === 'fiscal' && J.redrawFiscal) J.redrawFiscal();
   };
   J.show = show;
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
   const linked = location.hash.slice(1);
-  if (['inflation', 'trade', 'methodology'].includes(linked)) show(linked);
+  if (['inflation', 'fiscal', 'trade', 'methodology'].includes(linked)) show(linked);
 })();
 </script>
 <script src="gdp.js"></script>
 <script src="cpi.js"></script>
+<script src="fiscal.js"></script>
 <script src="trade.js"></script>
 <script src="export.js"></script>
 
