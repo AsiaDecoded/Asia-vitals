@@ -64,6 +64,7 @@ jobs:
         env:
           ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
           ECOS_KEY: ${{ secrets.ECOS_KEY }}
+          BPS_KEY: ${{ secrets.BPS_KEY }}
         run: |
           s="${{ steps.due.outputs.sources }}"; [ "$s" = "all" ] && s=""
           rc=0; python -I pipeline/run.py $s || rc=$?
