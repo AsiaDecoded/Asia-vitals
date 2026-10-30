@@ -131,3 +131,63 @@ def table_rows(text, start, stop, width=(8,)):
         elif words:
             label = [words]
     return out
+
+
+# --- Dynamic tables (variables): GDP and trade -------------------------------------------------------------------
+
+def var_years(vid):
+    """{year: th_id} for a variable (the WebAPI's own year codes; the list is paged)."""
+    out = {}
+    for t in rows(f"list/model/th/domain/0000/var/{vid}"):
+        y = str(t.get("th", "")).strip()
+        if y.isdigit():
+            out[int(y)] = t["th_id"]
+    return out
+
+
+def var_data(vid, years=None):
+    """Every value of a variable, as published: (meta, [{vervar, vervar_label, turvar, turvar_label, year,
+    turtahun, turtahun_label, value}]). Years are fetched one call each; keys of the WebAPI's datacontent are
+    vervar + var + turvar + th + turtahun, rebuilt here from the listed dimensions (never split)."""
+    ids = var_years(vid)
+    meta, out = None, []
+    for y in sorted(ids):
+        if years and y not in years:
+            continue
+        d = call(f"list/model/data/domain/0000/var/{vid}/th/{ids[y]}")
+        dc = d.get("datacontent") or {}
+        if not isinstance(dc, dict) or not dc:
+            continue
+        meta = {"var": (d.get("var") or [{}])[0], "vervar": d.get("vervar") or [], "turvar": d.get("turvar") or [],
+                "turtahun": d.get("turtahun") or [], "last_update": d.get("last_update")}
+        th = d["tahun"][0]["val"] if d.get("tahun") else ids[y]
+        for vv in d.get("vervar") or []:
+            for tv in d.get("turvar") or [{"val": "0", "label": ""}]:
+                for tt in d.get("turtahun") or []:
+                    k = f"{vv['val']}{vid}{tv['val']}{th}{tt['val']}"
+                    if k in dc and dc[k] not in ("", None):
+                        try:
+                            v = float(dc[k])
+                        except (TypeError, ValueError):
+                            continue
+                        out.append({"vervar": vv["val"], "vervar_label": vv["label"], "turvar": tv["val"],
+                                    "turvar_label": tv["label"], "year": y, "turtahun": tt["val"],
+                                    "turtahun_label": tt["label"], "value": v})
+        time.sleep(0.2)
+    return meta, out
+
+
+QUARTER_ID = {"triwulan i": 1, "triwulan ii": 2, "triwulan iii": 3, "triwulan iv": 4}
+
+
+def period_of(rec):
+    """('Q', 'YYYY-MM-01') for a quarter (first month), ('M', ...) for a month, ('A', 'YYYY-01-01') for a year."""
+    lab = re.sub(r"\s+", " ", (rec["turtahun_label"] or "").strip().lower())
+    y = rec["year"]
+    if lab in QUARTER_ID:
+        return "Q", f"{y}-{3 * QUARTER_ID[lab] - 2:02d}-01"
+    if lab in MONTHS_ID:
+        return "M", f"{y}-{MONTHS_ID[lab]:02d}-01"
+    if lab in ("tahunan", "tahun", "jumlah"):
+        return "A", f"{y}-01-01"
+    return None, None

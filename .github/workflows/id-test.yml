@@ -1,15 +1,13 @@
-name: Indonesia sources test (dev-id)
+name: Indonesia sources test
 
-# Runs the Indonesia sources live on the dev-id branch and commits their output there.
+# Runs Indonesia sources live (named in the dispatch input; default: the GDP and trade sources) and commits
+# their output (data/id, raw/id) to main.
 on:
   workflow_dispatch:
-  push:
-    branches: [dev-id]
-    paths:
-      - pipeline/sources/id_*/**
-      - pipeline/core/seki.py
-      - pipeline/core/bps.py
-      - .github/workflows/id-test.yml
+    inputs:
+      sources:
+        description: "Indonesia sources to run"
+        default: "id_gdp_bps id_trade_bps"
 
 permissions:
   contents: write
@@ -26,15 +24,15 @@ jobs:
       - name: Install Excel and PDF readers
         run: pip install xlrd && sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
       - name: Run the Indonesia sources
-        run: python -I pipeline/run.py id_cpi_seki id_cpi_bps id_wpi_bps | tee /tmp/report.txt
+        run: python -I pipeline/tools/id_run.py ${{ inputs.sources }} 2>&1 | tee /tmp/report.txt; exit ${PIPESTATUS[0]}
         env:
           BPS_KEY: ${{ secrets.BPS_KEY }}
-      - name: Commit output to dev-id
+      - name: Commit output to main
         if: always()
         run: |
           git config user.name "asia-vitals bot"
           git config user.email "actions@users.noreply.github.com"
           mkdir -p data/id && cp /tmp/report.txt data/id/test_report.txt
           git add data/id raw/id
-          git commit -m "ID test run" || exit 0
-          git checkout -- . && git pull --rebase origin dev-id && git push origin HEAD:dev-id
+          git commit -m "ID test run: ${{ inputs.sources }}" || exit 0
+          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 10; done
