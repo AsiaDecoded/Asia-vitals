@@ -16,13 +16,22 @@ IND = ["GGXCNL_NGDP", "GGXONLB_NGDP", "GGR_NGDP", "GGX_NGDP", "GGXWDG_NGDP", "CG
 URLS = []
 for i in IND:
     URLS += [f"https://www.imf.org/external/datamapper/api/v1/{i}/IDN", f"https://www.imf.org/external/datamapper/api/v2/{i}/IDN"]
+META = ["https://api.worldbank.org/v2/sources/2/country/IDN/metadata?format=json",
+        "https://api.worldbank.org/v2/sources/2/country/IDN/series/NY.GDP.MKTP.CN/metadata?format=json",
+        "https://api.worldbank.org/v2/sources/2/series/NY.GDP.MKTP.CN/metadata?format=json",
+        "https://api.worldbank.org/v2/sources/2/country/IDN/series/NY.GDP.MKTP.CN/time/YR2009/metadata?format=json",
+        "https://api.worldbank.org/v2/sources/2/country/IDN/series/NY.GDP.MKTP.CN/time/YR2005/metadata?format=json",
+        "https://api.worldbank.org/v2/sources/2/footnote/IDN~NY.GDP.MKTP.CN~YR2009/metadata?format=json",
+        "https://api.worldbank.org/v2/country/IDN?format=json",
+        "https://api.worldbank.org/v2/country/IDN/indicator/NY.GDP.MKTP.KN?format=json&per_page=200",
+        "https://api.worldbank.org/v2/country/IDN/indicator/NY.GDP.DEFL.ZS?format=json&per_page=200"]
 WDI = ["https://api.worldbank.org/v2/country/IDN/indicator/NY.GDP.MKTP.CN?format=json&per_page=200",
        "https://api.worldbank.org/v2/country/IDN/indicator/NY.GDP.MKTP.CN?format=json&per_page=200&source=2",
        "https://api.worldbank.org/v2/country/IDN/indicator/GC.NLD.TOTL.GD.ZS?format=json&per_page=200",
        "https://api.worldbank.org/v2/country/IDN/indicator/GC.REV.XGRT.GD.ZS?format=json&per_page=200",
        "https://api.worldbank.org/v2/sources/2?format=json",
        "https://api.imf.org/external/sdmx/3.0/data/dataflow/IMF.RES/WEO/+/IDN.NGDP.A"]
-URLS = WDI + URLS
+URLS = META + WDI + URLS
 URLS += [
     "https://www.imf.org/external/datamapper/api/v1/indicators",
     "https://www.imf.org/external/datamapper/api/v2/indicators",
