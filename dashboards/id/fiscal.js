@@ -1,4 +1,4 @@
-// Fiscal tab: central government budget (APBN) and actual (annual), and government securities (SBN) outstanding
+// Fiscal tab: central government budget (APBN) and actual (annual), as % of GDP (id_fiscal_gdp, calculated), and government securities (SBN) outstanding
 // (monthly), as published: Ministry of Finance data republished by Bank Indonesia in SEKI tables IV.1-IV.4
 // (id_fiscal_seki in AsiaDecoded/asia-vitals). Rp billion in the data; shown in Rp trillion (÷ 1,000).
 
@@ -195,6 +195,39 @@ dash.calc('sbn_latest', {
       (r) => [['#0C84FF', 'Revenue and grants', trn(r.rev)], ['#BD1B21', 'Expenditure', trn(r.exp)], ['#A6A6A6', 'Surplus / deficit', trn(r.balance)]]);
   }
 
+  function gdpChart() {
+    const box = document.getElementById('f-balance-gdp-chart');
+    const D = dash.data('id_fiscal_gdp');
+    if (bad(D)) { J.fail(box); return; }
+    if (D.status !== 'ok') { box.replaceChildren(); return; }
+    const n = (v) => (v === '' || v == null ? null : Number(v));
+    const rows = D.data.map((r) => ({ year: Number(r.year), basis: r.basis, through: r.through, rev: n(r.revenue_pct), exp: n(r.expenditure_pct), bal: n(r.balance_pct) }))
+      .filter((r) => r.bal != null).sort((a, b) => a.year - b.year);
+    if (!rows.length) { box.replaceChildren(); return; }
+    const act = rows.filter((r) => r.basis === 'actual');
+    const H = 280;
+    const vals = rows.flatMap((r) => [r.rev, r.exp, r.bal].filter((v) => v != null));
+    const f = frame(box, rows.map((r) => String(r.year)), H, d3.min(vals), d3.max(vals), 0.25);
+    yearAxis(f, H, rows);
+    const cx = (r) => f.x(String(r.year)) + f.x.bandwidth() / 2;
+    f.svg.append('g').selectAll('rect').data(rows).join('rect')
+      .attr('x', (r) => f.x(String(r.year))).attr('width', f.x.bandwidth())
+      .attr('y', (r) => f.y(Math.max(0, r.bal))).attr('height', (r) => Math.abs(f.y(r.bal) - f.y(0)))
+      .attr('fill', (r) => (r.basis === 'ytd' ? 'none' : '#A6A6A6')).attr('stroke', (r) => (r.basis === 'ytd' ? '#A6A6A6' : 'none'))
+      .attr('stroke-width', 1.5).attr('stroke-dasharray', (r) => (r.basis === 'ytd' ? '3 2' : null));
+    [['rev', '#0C84FF'], ['exp', '#BD1B21']].forEach(([k, c]) => {
+      f.svg.append('path').attr('d', d3.line().x(cx).y((r) => f.y(r[k]))(act.filter((r) => r[k] != null))).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
+    });
+    const ytd = rows.filter((r) => r.basis === 'ytd');
+    const items = [['ln', '#0C84FF', 'Revenue and grants'], ['ln', '#BD1B21', 'Expenditure'], ['sw', '#A6A6A6', 'Surplus / deficit']];
+    const lab = (r) => (r.basis === 'ytd' && r.through ? `${r.year}, Jan–${MON[Number(r.through.slice(5, 7)) - 1]} (Ministry of Finance)` : `${r.year}, actual (calculated)`);
+    if (ytd.length) items.push(['dot', 'transparent', `${lab(ytd[ytd.length - 1])}: deficit only`]);
+    legend('f-balance-gdp-legend', items);
+    const pc = (v) => (v == null ? '—' : J.f1(v) + '%');
+    hover(f, rows, (r) => String(r.year), H, 'f-balance-gdp', lab,
+      (r) => [['#0C84FF', 'Revenue and grants', pc(r.rev)], ['#BD1B21', 'Expenditure', pc(r.exp)], ['#A6A6A6', 'Surplus / deficit', pc(r.bal)]]);
+  }
+
   function budgetChart() {
     const box = document.getElementById('f-budget-chart');
     const D = dash.data('fiscal_years');
@@ -265,7 +298,7 @@ dash.calc('sbn_latest', {
   J.redrawFiscal = () => {
     const pg = document.getElementById('fiscal');
     if (!pg || pg.hidden) return;
-    balanceChart(); budgetChart(); mixChart();
+    balanceChart(); gdpChart(); budgetChart(); mixChart();
     sbnStack('f-sbn-chart', 'f-sbn', 'f-sbn-legend', [['bonds', 'Government bonds (Obligasi Negara)', '#1F4E79'], ['spn', 'Treasury bills (SPN)', '#0C84FF'], ['sbsn', 'Islamic securities (SBSN)', '#92D050']]);
     sbnStack('f-hold-chart', 'f-hold', 'f-hold-legend', HOLD);
   };

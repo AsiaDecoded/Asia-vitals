@@ -487,12 +487,20 @@
     </section>
     <p class="jg-note">Budget outturns: actual for <span class="f-year">the latest year</span>. Securities outstanding: end of <span id="f-sbn-month">latest month</span>.</p>
 
-    <section class="jg-card" id="f-balance">
-      <h2>Indonesia central government revenue, expenditure and balance</h2>
-      <div class="ad-top"><span class="ad-units">Rp trillion, actual, per year</span><div class="jg-legend" id="f-balance-legend"></div><span class="ad-units r"></span></div>
-      <div class="jg-chart" id="f-balance-chart" data-source="fiscal_years"></div>
-      <div class="ad-foot"><span>Source: Ministry of Finance, Bank Indonesia (SEKI)</span><span class="ad-brand">Asia Decoded</span></div>
-    </section>
+    <div class="jg-grid">
+      <section class="jg-card" id="f-balance">
+        <h2>Indonesia central government revenue, expenditure and balance</h2>
+        <div class="ad-top"><span class="ad-units">Rp trillion, actual, per year</span><div class="jg-legend" id="f-balance-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="f-balance-chart" data-source="fiscal_years"></div>
+        <div class="ad-foot"><span>Source: Ministry of Finance, Bank Indonesia (SEKI)</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="f-balance-gdp">
+        <h2>Indonesia central government revenue, expenditure and balance, % of GDP</h2>
+        <div class="ad-top"><span class="ad-units">% of GDP, actual, per year</span><div class="jg-legend" id="f-balance-gdp-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="f-balance-gdp-chart" data-source="id_fiscal_gdp"></div>
+        <div class="ad-foot"><span>Source: Asia Decoded calculation from Ministry of Finance (SEKI) and BPS data</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
 
     <div class="jg-grid">
       <section class="jg-card" id="f-budget">
@@ -534,6 +542,7 @@
       <p class="jg-foot">All figures are the Ministry of Finance&rsquo;s, as republished by Bank Indonesia in SEKI tables IV.1&ndash;IV.4: nothing is calculated. Central government only (the APBN), Rp trillion (Rp billion as published, divided by 1,000). Fiscal year = calendar year. The latest year&rsquo;s actual is the Ministry&rsquo;s preliminary outturn until the audited accounts (LKPP) replace it.</p>
       <ol>
         <li><b>Chart 1, revenue, expenditure and balance:</b> actual revenue and grants, expenditure (central government spending plus transfers to regions and villages), and the published surplus or deficit, from 2008. The current year is the Ministry of Finance&rsquo;s outturn for the year to date, from its monthly APBN KiTa press-conference deck (open markers and an outlined bar): not a full year, so it is not joined to the lines, and it gives way to the full-year actual when SEKI publishes it.</li>
+        <li><b>Chart 1b, revenue, expenditure and balance, % of GDP (calculated):</b> the same actual revenue and grants, expenditure and surplus or deficit divided by BPS&rsquo;s annual nominal GDP (2010 series), from 2010, the first year of that series. The current year shows only the Ministry of Finance&rsquo;s own published year-to-date deficit as % of GDP (outlined bar); the Ministry divides by its full-year GDP estimate, which it does not publish as a figure, so no revenue or expenditure ratio is shown for that year.</li>
         <li><b>Chart 2, budget balance, budget and actual:</b> the surplus or deficit in the budget (APBN) and as realised.</li>
         <li><b>Chart 3, revenue and expenditure by type:</b> actual revenue by tax and non-tax source, or actual expenditure by economic type plus transfers to regions and villages; the parts are the published items and add up to the published totals.</li>
         <li><b>Chart 4, government securities outstanding:</b> tradable government debt securities: government bonds (Obligasi Negara) and treasury bills (SPN), which together make up SUN, and Islamic securities (SBSN), at the end of each month from January 2010 (December only for 2008 and 2009). Loans are not included, so this is not total government debt.</li>
@@ -683,7 +692,7 @@
       </ul>
       <h3>Not shown</h3>
       <ul>
-        <li><b>Ratios to GDP:</b> the Ministry quotes the deficit and debt as % of GDP, but SEKI carries only Rupiah amounts; a ratio here would be a calculation.</li>
+        <li><b>Ratios to GDP:</b> chart 1b divides SEKI&rsquo;s actual revenue, expenditure and balance by BPS&rsquo;s annual nominal GDP (calculated; from 2010). Debt and securities are not shown as % of GDP.</li>
         <li><b>Monthly budget realisation:</b> read from the Ministry&rsquo;s monthly APBN KiTa press-conference deck (revenue, expenditure, surplus or deficit and primary balance, year to date, 2025 on); only the latest month is on the page for now, as the current year&rsquo;s point in chart 1.</li>
         <li><b>Total government debt:</b> SBN excludes loans; the debt office&rsquo;s debt profile is not read yet.</li>
         <li><b>Years before 2008:</b> SEKI keeps 1990&ndash;2007 on older sheets (the fiscal year ran April to March until 2000); not read.</li>
