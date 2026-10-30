@@ -87,15 +87,14 @@ dash.calc('industry_latest', {
 
   // Contribution stack: BPS's sources of growth by expenditure. Imports are published as their own
   // contribution (positive when imports grow); GDP subtracts them, so they are drawn below zero when positive.
+  // BPS publishes no contribution for inventories or the statistical discrepancy, so the bars do not add up to GDP.
   const PARTS = [
     { code: 100, name: 'Household consumption', color: '#FFC000' },
     { code: 200, name: 'NPISH consumption', color: '#A6A6A6' },
     { code: 300, name: 'Government consumption', color: '#92D050' },
     { code: 400, name: 'Fixed investment', color: '#1F4E79' },
-    { code: 500, name: 'Inventories', color: '#954F72' },
     { code: 600, name: 'Exports', color: '#0C84FF' },
     { code: 700, name: 'Imports (subtracted)', color: '#EE6631', sign: -1 },
-    { code: 790, name: 'Statistical discrepancy', color: '#44546A' },
   ];
   const pct = (v) => (v == null ? '—' : J.f1(v) + '%');
   const qlab = (d) => `Q${Math.floor((Number(d.slice(5, 7)) - 1) / 3) + 1} ${d.slice(0, 4)}`;
