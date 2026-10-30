@@ -324,7 +324,39 @@ def round5():
     (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
 
 
+def round6():
+    """Every distinct Annex 1 (CPI expenditure weights, Excel) linked from the web issues of the monthly CPI report."""
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    from core import censtatd
+    seen, out = {}, []
+    for it in censtatd.issues("B1060001", n=90):
+        if not it["web"] or not it["code"]:
+            continue
+        try:
+            wbr = censtatd.get_json(f"{CSD}/wbr/B1060001/{it['code']}/data/en/wbr.json")
+        except Exception as e:  # noqa: BLE001
+            out.append({"issue": it["code"], "error": repr(e)})
+            continue
+        links = censtatd.annex_links(wbr)
+        for title, url in links.items():
+            if not title.startswith("Annex 1"):
+                continue
+            fname = url.rsplit("/", 1)[-1]
+            rec = {"issue": it["code"], "title": title, "file": fname, "url": url}
+            if fname not in seen:
+                st, body = fetch(f"annex1_{it['code']}", url, ext=".xlsx")
+                seen[fname] = it["code"]
+                rec["status"] = st
+            out.append(rec)
+        time.sleep(0.2)
+    (OUT / "annex1_by_issue.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
+    (OUT / "log.json").write_text(json.dumps(LOG, ensure_ascii=False, indent=1))
+
+
 if __name__ == "__main__":
+    if len(sys.argv) > 2 and sys.argv[2] == "round6":
+        round6()
+        sys.exit(0)
     if len(sys.argv) > 2 and sys.argv[2] == "round5":
         round5()
     elif len(sys.argv) > 2 and sys.argv[2] == "round4":
