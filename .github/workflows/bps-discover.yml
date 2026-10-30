@@ -1,7 +1,7 @@
 name: BPS (Indonesia) discovery
 
 # One-off helper: probes BPS, Bank Indonesia SEKI and Satu Data for Indonesian price data
-# and saves the raw responses to the "discovery" branch, under discovery/bps5.
+# and saves the raw responses to the "discovery" branch, under discovery/bps6 (GDP and trade round).
 on:
   workflow_dispatch:
   push:
@@ -10,6 +10,7 @@ on:
       - pipeline/tools/bps_discover.py
       - pipeline/tools/bps_api_discover.py
       - pipeline/tools/bps_api_probe.py
+      - pipeline/tools/bps_gdp_trade_probe.py
       - .github/workflows/bps-discover.yml
 
 permissions:
@@ -24,8 +25,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install tools
+        run: sudo apt-get install -y -qq poppler-utils && pip install -q xlrd
       - name: Probe the sources
-        run: timeout 40m python -I -u pipeline/tools/bps_api_probe.py discovery/bps5 || true
+        run: timeout 40m python -I -u pipeline/tools/bps_gdp_trade_probe.py discovery/bps6 || true
         env:
           BPS_KEY: ${{ secrets.BPS_KEY }}
       - name: Push results to the discovery branch
@@ -39,7 +42,7 @@ jobs:
           else
             git checkout --orphan discovery && git rm -rf --quiet --cached .
           fi
-          mkdir -p discovery && rm -rf discovery/bps5 && cp -r /tmp/discovery/bps5 discovery/
-          git add discovery/bps5
+          mkdir -p discovery && rm -rf discovery/bps6 && cp -r /tmp/discovery/bps6 discovery/
+          git add discovery/bps6
           git commit -m "BPS discovery"
           git push origin discovery
