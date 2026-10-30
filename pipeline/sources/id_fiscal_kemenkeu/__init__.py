@@ -119,25 +119,31 @@ def parse_table(text):
     i = next((k for k, l in enumerate(lines) if re.match(r"\s*A\.\s+PENDAPATAN NEGARA\s+[\d(]", l)), None)
     if i is None:
         return None
-    row = {}
+    row, bal_pos = {}, None
     for k in range(i, min(i + 30, len(lines))):
         l = lines[k]
         for key, pat in (("revenue", r"^\s*A\.\s+PENDAPATAN NEGARA"), ("expenditure", r"^\s*B\.\s+BELANJA NEGARA"),
                          ("primary_balance", r"^\s*C\.\s+KESEIMBANGAN PRIMER"), ("balance", r"^\s*D\.\s+SURPLUS")):
             lm = re.match(pat, l)
             if lm and key not in row:
-                rest = l[lm.end():]
-                rest = re.sub(r"^[\s/]*(\((?:DEFISIT|SURPLUS)\))?", "", rest, flags=re.I)  # rest of the label "/ (DEFISIT)"
-                cut = re.search(r"[A-Za-z\u25b2\u25bc%]", rest)
-                nums = TNUM.findall(rest[:cut.start()] if cut else rest)
-                if len(nums) >= 8:
-                    row[key] = _signed(nums[-3])
-        if re.match(r"^\s*% thd PDB", l) and "balance_pct_gdp" not in row and "balance" in row:
-            rest = l.split("PDB", 1)[1]
-            cut = re.search(r"[A-Za-z]", rest)
-            nums = TNUM.findall(rest[:cut.start()] if cut else rest)
-            if nums:
-                row["balance_pct_gdp"] = _signed(nums[-1])
+                s1 = lm.end() + re.match(r"[\s/]*(\((?:DEFISIT|SURPLUS)\))?", l[lm.end():], re.I).end()  # "/ (DEFISIT)"
+                cut = re.search(r"[A-Za-z\u25b2\u25bc%]", l[s1:])
+                end = s1 + cut.start() if cut else len(l)
+                toks = [(m.start() + s1, m.group()) for m in TNUM.finditer(l[s1:end])]
+                if len(toks) >= 8:
+                    row[key] = _signed(toks[-3][1])
+                    if key == "balance":
+                        bal_pos = toks[-3][0]
+        # % of GDP: the value standing under the deficit figure used (the row can carry extra columns)
+        if re.match(r"^\s*% thd PDB", l) and "balance_pct_gdp" not in row and bal_pos is not None:
+            s1 = l.index("PDB") + 3
+            cut = re.search(r"[A-Za-z]", l[s1:])
+            end = s1 + cut.start() if cut else len(l)
+            toks = [(m.start() + s1, m.group()) for m in TNUM.finditer(l[s1:end])]
+            if toks:
+                pos, tok = min(toks, key=lambda t: abs(t[0] - bal_pos))
+                if abs(pos - bal_pos) <= 6:
+                    row["balance_pct_gdp"] = _signed(tok)
     if not all(k in row for k in ("revenue", "expenditure", "balance")):
         return None
     head = "\n".join(lines[max(0, i - 15): i])
@@ -197,7 +203,7 @@ def parse_front(text):
 def parse_realisasi(text):
     """'REALISASI APBN S.D. <day> <MONTH> <YEAR>' page: Pendapatan Negara, Belanja Negara, (Defisit APBN),
     Keseimbangan Primer Surplus/Defisit, amounts in the right-hand column."""
-    m = re.search(r"REALISASI APBN S\.?\s?D\.?\s+(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})", text)
+    m = re.search(r"REALISASI APBN S\.?\s?D\.?\s+(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})", text, re.I)
     if not m:
         return None
     month = _month_word(m.group(2), m.group(3))
