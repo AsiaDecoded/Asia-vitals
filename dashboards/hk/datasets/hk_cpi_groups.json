@@ -1,0 +1,11 @@
+{
+ "description": "All 75 commodity/service groups of the CPI (C&SD Composite CPI), latest month: index, m/m and y/y as published (Table E501). Built by the asia-vitals pipeline (data/hk/cpi/hk_cpi_groups.csv).",
+ "schedule": "Replaced after each C&SD release by the dashboard refresh task, which reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "hk_cpi_groups_C2026-09.csv",
+  "url": "/_blob/978be666421f55fe78193357521f3225"
+ },
+ "staleAfterHours": 960,
+ "title": "Hong Kong CPI groups, latest"
+}

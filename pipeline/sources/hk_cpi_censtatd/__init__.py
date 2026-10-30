@@ -57,6 +57,8 @@ MEAS = {"Index": "index", "Month-to-month % change": "mom", "Year-on-year % chan
 # Documented breaks: y/y from the 2019/20-based series from Oct 2020; new expenditure weights in Apr 2025 and
 # Apr 2026 (2024/25 HES and a new group classification). Earlier weight vintages are not flagged here.
 BREAKS = {"2020-10-01", "2025-04-01", "2026-04-01"}
+# Composite groups the dashboard charts over time (food and energy, housing, heat table); the rest only in hk_cpi.csv
+DASH_GROUPS = {"g23_1", "g23_2", "g24", "g25", "g26", "g57", "g66", "g69"}
 
 # Release figures to check against (C&SD press release, 22 Oct 2026, September 2026)
 RELEASE_SEP_2026 = {("composite", "headline", "all", "yoy"): 1.9, ("composite", "headline", "all", "index"): 111.2,
@@ -430,11 +432,15 @@ def update(force=False, **_):
     rows.sort(key=lambda r: (r["date"], r["index_type"], r["basis"], r["order"]))
     cols = ["date", "index_type", "basis", "series", "label", "level", "order", "index", "mom", "yoy", "base_break", "release_date"]
     _write_csv(OUT / "hk_cpi.csv", cols, rows)
-    # dashboard copy: all four indices for all items; Composite sections and COICOP divisions; Composite groups from 2015
+    # dashboard copy: all four indices for all items; Composite sections and COICOP divisions; from 2015, the Composite
+    # groups the page charts over time (DASH_GROUPS). The latest month of every Composite group goes to hk_cpi_groups.csv.
     dash = [r for r in rows if r["level"] == "all"
             or (r["index_type"] == "composite" and r["level"] in ("section", "subsection", "coicop"))
-            or (r["index_type"] == "composite" and r["date"] >= "2015-01-01")]
+            or (r["index_type"] == "composite" and r["series"] in DASH_GROUPS and r["date"] >= "2015-01-01")]
     _write_csv(OUT / "hk_cpi_dash.csv", cols, dash)
+    glatest = [r for r in rows if r["index_type"] == "composite" and r["basis"] == "headline"
+               and r["level"] == "group" and r["date"] == latest]
+    _write_csv(OUT / "hk_cpi_groups.csv", cols, glatest)
     sa.sort(key=lambda r: (r["measure"], r["index_type"], r["basis"], r["series"], r["date"]))
     _write_csv(OUT / "hk_cpi_sa.csv", ["date", "index_type", "basis", "series", "measure", "value", "vintage", "table"], sa)
     contrib.sort(key=lambda r: (r["date"], order.get(r["series"], 99)))

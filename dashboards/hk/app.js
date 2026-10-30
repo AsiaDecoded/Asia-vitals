@@ -444,15 +444,13 @@
 
   function groups() {
     const box = document.getElementById('cpi-groups-chart');
-    if (!status(box, ['hk_cpi'])) return;
-    const last = latestDate(), wt = weights();
-    const c = rowsOf('hk_cpi');
+    if (!status(box, ['hk_cpi_groups', 'hk_cpi_weights'])) return;
+    const G = dash.data('hk_cpi_groups').data, wt = weights();
+    const last = G.reduce((m, r) => (r.date > m ? r.date : m), '');
     const all = [];
-    c.by.forEach((rs, k) => {
-      const [it, b, s] = k.split('|');
-      if (it !== 'composite' || b !== 'headline' || !/^g\d+$/.test(s)) return;
-      const r = rs.find((x) => x.date === last);
-      if (r && num(r.yoy) != null) all.push({ name: r.label, v: num(r.yoy), w: wt.has(s) ? wt.get(s) : null });
+    G.forEach((r) => {
+      if (r.date !== last || !/^g\d+$/.test(r.series)) return;
+      if (num(r.yoy) != null) all.push({ name: r.label, v: num(r.yoy), w: wt.has(r.series) ? wt.get(r.series) : null });
     });
     all.sort((a, b) => b.v - a.v);
     const n = Math.min(10, Math.floor(all.length / 2));
@@ -519,5 +517,14 @@
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
   if (location.hash.slice(1) === 'methodology') show('methodology');
 
-  dash.onData(() => { tiles(); takeaway(); divHeat(); ctab(); J.redrawCpi(); });
+  // Draw once every dataset has arrived (or failed), not once per arrival. Reading each one starts its load.
+  const DATASETS = ['hk_cpi_latest', 'hk_ppi_latest', 'hk_cpi', 'hk_cpi_weights', 'hk_cpi_groups', 'hk_cpi_contrib', 'hk_cpi_sa', 'hk_ppi'];
+  dash.onData(() => {
+    const st = DATASETS.map((id) => dash.data(id).status);
+    if (st.some((s) => s === 'loading')) {
+      document.querySelectorAll('#inflation .jg-chart').forEach((el) => { if (!el.firstChild) el.classList.add('dash-skeleton'); });
+      return;
+    }
+    tiles(); takeaway(); divHeat(); ctab(); J.redrawCpi();
+  });
 })();
