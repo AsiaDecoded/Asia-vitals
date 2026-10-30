@@ -23,7 +23,7 @@ from core.common import DATA, CheckFailed, read_json, write_long, write_release
 NAME = "id_fiscal_gdp"
 DESCRIPTION = "Indonesia budget revenue, expenditure and balance as % of GDP (calculated; current year to the latest quarter with GDP)"
 OUT = DATA / "id" / "fiscal_gdp"
-SOURCE = "Asia Decoded calculation from Ministry of Finance (SEKI, APBN KiTa) and BPS data"
+SOURCE = "Ministry of Finance (SEKI, APBN KiTa), BPS"
 LABELS = {"revenue": "Pendapatan Negara dan Hibah", "expenditure": "Belanja Negara", "balance": "Surplus / Defisit"}
 TABLE = {"revenue": "revenue", "expenditure": "expenditure", "balance": "financing"}
 
