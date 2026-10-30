@@ -188,11 +188,11 @@ dash.calc('sbn_latest', {
       f.svg.append('g').selectAll('circle').data(ytd).join('circle').attr('cx', cx).attr('cy', (r) => f.y(t(r[k])))
         .attr('r', 4).attr('fill', 'var(--color-panel)').attr('stroke', c).attr('stroke-width', 2);
     });
-    const items = [['ln', '#0C84FF', 'Revenue and grants'], ['ln', '#BD1B21', 'Expenditure'], ['sw', '#A6A6A6', 'Surplus / deficit']];
+    const items = [['ln', '#0C84FF', 'Revenue and grants'], ['ln', '#BD1B21', 'Expenditure'], ['sw', '#A6A6A6', 'Fiscal balance']];
     if (ytd.length) items.push(['dot', 'transparent', `${thru(ytd[ytd.length - 1])}, year to date (open markers)`]);
     legend('f-balance-legend', items);
     hover(f, rows, (r) => String(r.year), H, 'f-balance', thru,
-      (r) => [['#0C84FF', 'Revenue and grants', trn(r.rev)], ['#BD1B21', 'Expenditure', trn(r.exp)], ['#A6A6A6', 'Surplus / deficit', trn(r.balance)]]);
+      (r) => [['#0C84FF', 'Revenue and grants', trn(r.rev)], ['#BD1B21', 'Expenditure', trn(r.exp)], ['#A6A6A6', 'Fiscal balance', trn(r.balance)]]);
   }
 
   function gdpChart() {
@@ -219,13 +219,13 @@ dash.calc('sbn_latest', {
       f.svg.append('path').attr('d', d3.line().x(cx).y((r) => f.y(r[k]))(act.filter((r) => r[k] != null))).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
     });
     const ytd = rows.filter((r) => r.basis === 'ytd');
-    const items = [['ln', '#0C84FF', 'Revenue and grants'], ['ln', '#BD1B21', 'Expenditure'], ['sw', '#A6A6A6', 'Surplus / deficit']];
+    const items = [['ln', '#0C84FF', 'Revenue and grants'], ['ln', '#BD1B21', 'Expenditure'], ['sw', '#A6A6A6', 'Fiscal balance']];
     const lab = (r) => (r.basis === 'ytd' && r.through ? `${r.year}, Jan–${MON[Number(r.through.slice(5, 7)) - 1]} (Ministry of Finance)` : `${r.year}, actual (calculated)`);
     if (ytd.length) items.push(['dot', 'transparent', `${lab(ytd[ytd.length - 1])}: deficit only`]);
     legend('f-balance-gdp-legend', items);
     const pc = (v) => (v == null ? '—' : J.f1(v) + '%');
     hover(f, rows, (r) => String(r.year), H, 'f-balance-gdp', lab,
-      (r) => [['#0C84FF', 'Revenue and grants', pc(r.rev)], ['#BD1B21', 'Expenditure', pc(r.exp)], ['#A6A6A6', 'Surplus / deficit', pc(r.bal)]]);
+      (r) => [['#0C84FF', 'Revenue and grants', pc(r.rev)], ['#BD1B21', 'Expenditure', pc(r.exp)], ['#A6A6A6', 'Fiscal balance', pc(r.bal)]]);
   }
 
   function budgetChart() {
