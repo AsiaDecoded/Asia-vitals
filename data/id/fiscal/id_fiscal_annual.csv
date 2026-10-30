@@ -555,6 +555,7 @@ year,table,basis,item,label,label_id,value,through,released,note
 2004,financing,actual,122,Amortization,"Pembayaran cicilan, pokok hutang LN (amortisasi)",-46491.0,,,SEKI 2001-2007 sheet
 2004,financing,actual,123,Financing Surplus/Deficit,Sisa Lebih (Kurang )Pembiayaan Anggaran-SILPA (SIKPA),-3014.0,,,SEKI 2001-2007 sheet
 2004,financing,actual,124,Additional Debt Financing/Two Step Loan,Tambahan Pembiayaan Utang/Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2004,financing,budget,101,Surplus / Deficit,Surplus / Defisit,-26271.645512,,,"UU 35/2004 (APBN-P 2004), Pasal 12(1); SEKI shows +10,536"
 2005,revenue,actual,101,Government Revenues and Grants,Pendapatan Negara dan Hibah,495224.0,,,SEKI 2001-2007 sheet
 2005,revenue,actual,102,Domestic Revenues,Penerimaan Dalam Negeri,493919.0,,,SEKI 2001-2007 sheet
 2005,revenue,actual,103,Tax Revenues,Penerimaan Perpajakan,347031.0,,,SEKI 2001-2007 sheet

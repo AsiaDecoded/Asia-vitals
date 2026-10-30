@@ -10,18 +10,18 @@
   "4_4": "Tue, 06 Oct 2026 10:32:21 GMT"
  },
  "table": "Bank Indonesia SEKI IV.1-IV.4",
- "processed_at": "2026-10-30T14:24:54Z",
- "rows": 9565,
+ "processed_at": "2026-10-30T14:29:25Z",
+ "rows": 9566,
  "warnings": [
-  "2001-2007 sheet budget 2004: revenue - expenditure -26,271 vs published surplus/deficit 10,536; surplus/deficit left out for this year",
+  "2001-2007 sheet budget 2004: published surplus/deficit 10,536 replaced by -26,271.6 (UU 35/2004 (APBN-P 2004), Pasal 12(1); SEKI shows +10,536)",
   "2001-2007 sheet actual 2006: central + transfers 665,295 vs expenditure 667,129"
  ],
  "fingerprint": "8f9ed3da597ddbba",
- "long_rows": 9565,
+ "long_rows": 9566,
  "history": [
   {
    "code": "F2025-2026-09",
-   "processed_at": "2026-10-30T14:24:54Z"
+   "processed_at": "2026-10-30T14:29:25Z"
   }
  ]
 }
