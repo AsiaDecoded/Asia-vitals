@@ -402,7 +402,7 @@ dash.calc('sbn_latest', {
     let rows = Object.values(by).filter((r) => r.budget != null || r.actual != null).sort((a, b) => a.year - b.year);
     if (pct) rows = rows.filter((r) => gdp[r.year] || r.lawPct != null);
     if (!rows.length) { box.replaceChildren(); return; }
-    const H = 260;
+    const H = 300;
     const t = (v, r) => (!pct ? v / 1000 : gdp[r.year] ? v / gdp[r.year] * 100 : r.lawPct);
     const vals = rows.flatMap((r) => [r.budget, r.actual].filter((v) => v != null).map((v) => t(v, r)));
     const f = frame(box, rows.map((r) => String(r.year)), H, d3.min(vals), d3.max(vals), 0.2);
