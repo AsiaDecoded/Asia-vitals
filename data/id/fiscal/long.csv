@@ -1,4 +1,995 @@
 country,indicator,series,label,measure,area,freq,date,value,unit,source,release
+ID,fiscal,revenue101,Government Revenues and Grants,actual,central government,A,2001-01-01,301078.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue102,Domestic Revenues,actual,central government,A,2001-01-01,300600.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue103,Tax Revenues,actual,central government,A,2001-01-01,185541.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue104,Domestic Taxes,actual,central government,A,2001-01-01,175974.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue105,Income Tax,actual,central government,A,2001-01-01,94576.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue106,i. Non Oil and Gas,actual,central government,A,2001-01-01,71474.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue107,ii. Oil and Gas,actual,central government,A,2001-01-01,23102.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue108,Value Added Tax,actual,central government,A,2001-01-01,55957.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue109,Land and Building Tax,actual,central government,A,2001-01-01,5246.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue110,Duties on Land and Building Transfers,actual,central government,A,2001-01-01,1417.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue111,Exercise Duties,actual,central government,A,2001-01-01,17394.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue112,Others Domestic Taxes,actual,central government,A,2001-01-01,1384.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue113,International Trade Taxes,actual,central government,A,2001-01-01,9567.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue114,Import,actual,central government,A,2001-01-01,9026.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue115,Export,actual,central government,A,2001-01-01,541.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue116,Non Taxes Revenues,actual,central government,A,2001-01-01,115059.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue117,Natural Resources,actual,central government,A,2001-01-01,85672.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue118,Oil Revenues,actual,central government,A,2001-01-01,58950.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue119,Gas Revenues,actual,central government,A,2001-01-01,22091.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue120,Profit Transfers From SOE's,actual,central government,A,2001-01-01,8837.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue121,Bank Indonesia Surplus,actual,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue122,Revenue from Public Service Institution,actual,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue123,Other Non Tax Revenues,actual,central government,A,2001-01-01,20550.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue124,Grants,actual,central government,A,2001-01-01,478.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue101,Government Revenues and Grants,budget,central government,A,2001-01-01,299851.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue102,Domestic Revenues,budget,central government,A,2001-01-01,299842.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue103,Tax Revenues,budget,central government,A,2001-01-01,184737.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue104,Domestic Taxes,budget,central government,A,2001-01-01,174189.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue105,Income Tax,budget,central government,A,2001-01-01,92767.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue106,i. Non Oil and Gas,budget,central government,A,2001-01-01,69696.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue107,ii. Oil and Gas,budget,central government,A,2001-01-01,23071.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue108,Value Added Tax,budget,central government,A,2001-01-01,55841.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue109,Land and Building Tax,budget,central government,A,2001-01-01,4800.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue110,Duties on Land and Building Transfers,budget,central government,A,2001-01-01,1489.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue111,Exercise Duties,budget,central government,A,2001-01-01,17622.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue112,Others Domestic Taxes,budget,central government,A,2001-01-01,1670.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue113,International Trade Taxes,budget,central government,A,2001-01-01,10548.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue114,Import,budget,central government,A,2001-01-01,9828.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue115,Export,budget,central government,A,2001-01-01,720.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue116,Non Taxes Revenues,budget,central government,A,2001-01-01,115105.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue117,Natural Resources,budget,central government,A,2001-01-01,86658.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue118,Oil Revenues,budget,central government,A,2001-01-01,60038.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue119,Gas Revenues,budget,central government,A,2001-01-01,21847.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue120,Profit Transfers From SOE's,budget,central government,A,2001-01-01,10440.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue121,Bank Indonesia Surplus,budget,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue122,Revenue from Public Service Institution,budget,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue123,Other Non Tax Revenues,budget,central government,A,2001-01-01,18007.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue124,Grants,budget,central government,A,2001-01-01,10.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure101,Government Expenditures,actual,central government,A,2001-01-01,341563.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure102,Central Governement Expenditures,actual,central government,A,2001-01-01,260508.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure103,Current Expenditures,actual,central government,A,2001-01-01,218923.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure104,Personnel,actual,central government,A,2001-01-01,38713.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure105,Goods and Services,actual,central government,A,2001-01-01,9931.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure106,Capital,actual,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure107,Interest payment,actual,central government,A,2001-01-01,87142.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure108,Domestic Interest,actual,central government,A,2001-01-01,58197.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure109,External Interest,actual,central government,A,2001-01-01,28945.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure110,Additional Interest,actual,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure111,Subsidies,actual,central government,A,2001-01-01,77443.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure112,Oil Subsidies,actual,central government,A,2001-01-01,68381.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure113,Non Oil Subsidies,actual,central government,A,2001-01-01,9063.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure114,Social Assistance,actual,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure115,Others Current Expenditures/Others Expenditures,actual,central government,A,2001-01-01,5694.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure116,Development Expenditures1),actual,central government,A,2001-01-01,41585.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure117,Rupiah Financing,actual,central government,A,2001-01-01,21370.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure118,Project aid,actual,central government,A,2001-01-01,20214.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure119,Regional Budget Expenditures,actual,central government,A,2001-01-01,81054.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure120,Balance Budget,actual,central government,A,2001-01-01,81054.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure121,Revenue Sharing Funds,actual,central government,A,2001-01-01,20709.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure122,General Allocation Funds,actual,central government,A,2001-01-01,60346.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure123,Special Allocation Funds,actual,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure124,Special Autonomy,actual,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure125,Suspend,actual,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure101,Government Expenditures,budget,central government,A,2001-01-01,354578.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure102,Central Government Expenditures,budget,central government,A,2001-01-01,272178.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure103,Current Expenditures,budget,central government,A,2001-01-01,232796.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure104,Personnel,budget,central government,A,2001-01-01,39544.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure105,Goods and Services,budget,central government,A,2001-01-01,9604.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure106,Capital,budget,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure107,Interest payment,budget,central government,A,2001-01-01,95527.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure108,Domestic Interest,budget,central government,A,2001-01-01,66251.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure109,External Interest,budget,central government,A,2001-01-01,29277.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure110,Additional Interest,budget,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure111,Subsidies,budget,central government,A,2001-01-01,81575.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure112,Oil Subsidies,budget,central government,A,2001-01-01,68381.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure113,Non Oil Subsidies,budget,central government,A,2001-01-01,13194.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure114,Social Assistance,budget,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure115,Others Current Expenditures/Others Expenditures,budget,central government,A,2001-01-01,6546.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure116,Development Expenditures,budget,central government,A,2001-01-01,39382.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure117,Rupiah Financing,budget,central government,A,2001-01-01,19712.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure118,Project aid,budget,central government,A,2001-01-01,19670.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure119,Regional Budget Expenditures,budget,central government,A,2001-01-01,82400.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure120,Balance Budget,budget,central government,A,2001-01-01,82400.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure121,Revenue Sharing Funds,budget,central government,A,2001-01-01,21183.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure122,General Allocation Funds,budget,central government,A,2001-01-01,60517.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure123,Special Allocation Funds,budget,central government,A,2001-01-01,701.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure124,Special Autonomy,budget,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing101,Surplus / Deficit,actual,central government,A,2001-01-01,-40485.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing102,"Financing, Nett",actual,central government,A,2001-01-01,40485.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing103,Domestic Financing,actual,central government,A,2001-01-01,30218.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing104,Domestic Bank Financing,actual,central government,A,2001-01-01,-1228.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing105,Government Account,actual,central government,A,2001-01-01,-1228.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing106,Moratorium Funds,actual,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing107,Domestic Non Bank Financing,actual,central government,A,2001-01-01,31445.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing108,Privatization,actual,central government,A,2001-01-01,3465.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing109,Asset Management,actual,central government,A,2001-01-01,27980.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing110,"Government Bonds, Net",actual,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing111,Issuance of Government Bonds,actual,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing112,Bonds Redemption and buyback,actual,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing113,Capital,actual,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing114,Aid Chaneling,actual,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing115,Others,actual,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing116,Infrastructur Funds,actual,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing117,Investment Funds,actual,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing118,Foreign Financing (nett),actual,central government,A,2001-01-01,10267.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing119,Gross Drawing,actual,central government,A,2001-01-01,26152.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing120,Program Aid,actual,central government,A,2001-01-01,6416.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing121,Project Aid,actual,central government,A,2001-01-01,19736.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing122,Amortization,actual,central government,A,2001-01-01,-15885.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing123,Financing Surplus/Deficit,actual,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing124,Additional Debt Financing/Two Step Loan,actual,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing101,Surplus / Deficit,budget,central government,A,2001-01-01,-54727.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing102,"Financing, Nett",budget,central government,A,2001-01-01,54727.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing103,Domestic Financing,budget,central government,A,2001-01-01,44189.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing104,Domestic Bank Financing,budget,central government,A,2001-01-01,7551.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing105,Government Account,budget,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing106,Moratorium Funds,budget,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing107,Domestic Non Bank Financing,budget,central government,A,2001-01-01,36638.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing108,Privatization,budget,central government,A,2001-01-01,5000.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing109,Asset Management,budget,central government,A,2001-01-01,30980.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing110,"Government Bonds, Net",budget,central government,A,2001-01-01,658.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing111,Issuance of Government Bonds,budget,central government,A,2001-01-01,658.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing112,Bonds Redemption and buyback,budget,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing113,Capital,budget,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing114,Aid Chaneling,budget,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing115,Others,budget,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing116,Infrastructur Funds,budget,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing117,Investment Funds,budget,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing118,Foreign Financing (nett),budget,central government,A,2001-01-01,10538.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing119,Gross Drawing,budget,central government,A,2001-01-01,30284.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing120,Program Aid,budget,central government,A,2001-01-01,10624.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing121,Project Aid,budget,central government,A,2001-01-01,19660.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing122,Amortization,budget,central government,A,2001-01-01,-19746.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing123,Financing Surplus/Deficit,budget,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing124,Additional Debt Financing/Two Step Loan,budget,central government,A,2001-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue101,Government Revenues and Grants,actual,central government,A,2002-01-01,298528.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue102,Domestic Revenues,actual,central government,A,2002-01-01,298528.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue103,Tax Revenues,actual,central government,A,2002-01-01,210088.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue104,Domestic Taxes,actual,central government,A,2002-01-01,199512.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue105,Income Tax,actual,central government,A,2002-01-01,101874.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue106,i. Non Oil and Gas,actual,central government,A,2002-01-01,84404.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue107,ii. Oil and Gas,actual,central government,A,2002-01-01,17469.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue108,Value Added Tax,actual,central government,A,2002-01-01,65153.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue109,Land and Building Tax,actual,central government,A,2002-01-01,6228.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue110,Duties on Land and Building Transfers,actual,central government,A,2002-01-01,1600.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue111,Exercise Duties,actual,central government,A,2002-01-01,23189.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue112,Others Domestic Taxes,actual,central government,A,2002-01-01,1469.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue113,International Trade Taxes,actual,central government,A,2002-01-01,10575.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue114,Import,actual,central government,A,2002-01-01,10344.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue115,Export,actual,central government,A,2002-01-01,231.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue116,Non Taxes Revenues,actual,central government,A,2002-01-01,88440.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue117,Natural Resources,actual,central government,A,2002-01-01,64755.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue118,Oil Revenues,actual,central government,A,2002-01-01,47686.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue119,Gas Revenues,actual,central government,A,2002-01-01,12325.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue120,Profit Transfers From SOE's,actual,central government,A,2002-01-01,9760.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue121,Bank Indonesia Surplus,actual,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue122,Revenue from Public Service Institution,actual,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue123,Other Non Tax Revenues,actual,central government,A,2002-01-01,13925.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue124,Grants,actual,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue101,Government Revenues and Grants,budget,central government,A,2002-01-01,305151.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue102,Domestic Revenues,budget,central government,A,2002-01-01,304895.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue103,Tax Revenues,budget,central government,A,2002-01-01,214713.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue104,Domestic Taxes,budget,central government,A,2002-01-01,202569.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue105,Income Tax,budget,central government,A,2002-01-01,103314.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue106,i. Non Oil and Gas,budget,central government,A,2002-01-01,87200.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue107,ii. Oil and Gas,budget,central government,A,2002-01-01,16114.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue108,Value Added Tax,budget,central government,A,2002-01-01,67800.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue109,Land and Building Tax,budget,central government,A,2002-01-01,6031.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue110,Duties on Land and Building Transfers,budget,central government,A,2002-01-01,1500.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue111,Exercise Duties,budget,central government,A,2002-01-01,22469.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue112,Others Domestic Taxes,budget,central government,A,2002-01-01,1455.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue113,International Trade Taxes,budget,central government,A,2002-01-01,12145.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue114,Import,budget,central government,A,2002-01-01,11839.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue115,Export,budget,central government,A,2002-01-01,305.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue116,Non Taxes Revenues,budget,central government,A,2002-01-01,90182.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue117,Natural Resources,budget,central government,A,2002-01-01,68002.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue118,Oil Revenues,budget,central government,A,2002-01-01,47679.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue119,Gas Revenues,budget,central government,A,2002-01-01,16347.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue120,Profit Transfers From SOE's,budget,central government,A,2002-01-01,10907.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue121,Bank Indonesia Surplus,budget,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue122,Revenue from Public Service Institution,budget,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue123,Other Non Tax Revenues,budget,central government,A,2002-01-01,11273.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue124,Grants,budget,central government,A,2002-01-01,256.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure101,Government Expenditures,actual,central government,A,2002-01-01,322180.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure102,Central Governement Expenditures,actual,central government,A,2002-01-01,223976.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure103,Current Expenditures,actual,central government,A,2002-01-01,186651.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure104,Personnel,actual,central government,A,2002-01-01,39480.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure105,Goods and Services,actual,central government,A,2002-01-01,12777.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure106,Capital,actual,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure107,Interest payment,actual,central government,A,2002-01-01,87667.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure108,Domestic Interest,actual,central government,A,2002-01-01,62261.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure109,External Interest,actual,central government,A,2002-01-01,25406.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure110,Additional Interest,actual,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure111,Subsidies,actual,central government,A,2002-01-01,43628.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure112,Oil Subsidies,actual,central government,A,2002-01-01,31162.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure113,Non Oil Subsidies,actual,central government,A,2002-01-01,12466.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure114,Social Assistance,actual,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure115,Others Current Expenditures/Others Expenditures,actual,central government,A,2002-01-01,3099.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure116,Development Expenditures1),actual,central government,A,2002-01-01,37325.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure117,Rupiah Financing,actual,central government,A,2002-01-01,25608.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure118,Project aid,actual,central government,A,2002-01-01,11717.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure119,Regional Budget Expenditures,actual,central government,A,2002-01-01,98204.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure120,Balance Budget,actual,central government,A,2002-01-01,94657.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure121,Revenue Sharing Funds,actual,central government,A,2002-01-01,25497.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure122,General Allocation Funds,actual,central government,A,2002-01-01,69159.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure123,Special Allocation Funds,actual,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure124,Special Autonomy,actual,central government,A,2002-01-01,3548.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure125,Suspend,actual,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure101,Government Expenditures,budget,central government,A,2002-01-01,345605.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure102,Central Government Expenditures,budget,central government,A,2002-01-01,247796.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure103,Current Expenditures,budget,central government,A,2002-01-01,200382.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure104,Personnel,budget,central government,A,2002-01-01,42196.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure105,Goods and Services,budget,central government,A,2002-01-01,13899.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure106,Capital,budget,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure107,Interest payment,budget,central government,A,2002-01-01,91538.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure108,Domestic Interest,budget,central government,A,2002-01-01,63213.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure109,External Interest,budget,central government,A,2002-01-01,28325.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure110,Additional Interest,budget,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure111,Subsidies,budget,central government,A,2002-01-01,42636.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure112,Oil Subsidies,budget,central government,A,2002-01-01,31162.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure113,Non Oil Subsidies,budget,central government,A,2002-01-01,11474.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure114,Social Assistance,budget,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure115,Others Current Expenditures/Others Expenditures,budget,central government,A,2002-01-01,10114.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure116,Development Expenditures,budget,central government,A,2002-01-01,47414.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure117,Rupiah Financing,budget,central government,A,2002-01-01,27194.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure118,Project aid,budget,central government,A,2002-01-01,20220.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure119,Regional Budget Expenditures,budget,central government,A,2002-01-01,97809.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure120,Balance Budget,budget,central government,A,2002-01-01,94038.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure121,Revenue Sharing Funds,budget,central government,A,2002-01-01,24266.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure122,General Allocation Funds,budget,central government,A,2002-01-01,69114.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure123,Special Allocation Funds,budget,central government,A,2002-01-01,658.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure124,Special Autonomy,budget,central government,A,2002-01-01,3770.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing101,Surplus / Deficit,actual,central government,A,2002-01-01,-23652.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing102,"Financing, Nett",actual,central government,A,2002-01-01,17107.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing103,Domestic Financing,actual,central government,A,2002-01-01,17024.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing104,Domestic Bank Financing,actual,central government,A,2002-01-01,-8140.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing105,Government Account,actual,central government,A,2002-01-01,-8140.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing106,Moratorium Funds,actual,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing107,Domestic Non Bank Financing,actual,central government,A,2002-01-01,25164.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing108,Privatization,actual,central government,A,2002-01-01,7665.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing109,Asset Management,actual,central government,A,2002-01-01,19439.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing110,"Government Bonds, Net",actual,central government,A,2002-01-01,-1939.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing111,Issuance of Government Bonds,actual,central government,A,2002-01-01,1991.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing112,Bonds Redemption and buyback,actual,central government,A,2002-01-01,-3931.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing113,Capital,actual,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing114,Aid Chaneling,actual,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing115,Others,actual,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing116,Infrastructur Funds,actual,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing117,Investment Funds,actual,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing118,Foreign Financing (nett),actual,central government,A,2002-01-01,83.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing119,Gross Drawing,actual,central government,A,2002-01-01,18887.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing120,Program Aid,actual,central government,A,2002-01-01,7170.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing121,Project Aid,actual,central government,A,2002-01-01,11717.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing122,Amortization,actual,central government,A,2002-01-01,-18804.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing123,Financing Surplus/Deficit,actual,central government,A,2002-01-01,-6546.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing124,Additional Debt Financing/Two Step Loan,actual,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing101,Surplus / Deficit,budget,central government,A,2002-01-01,-40454.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing102,"Financing, Nett",budget,central government,A,2002-01-01,40454.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing103,Domestic Financing,budget,central government,A,2002-01-01,24190.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing104,Domestic Bank Financing,budget,central government,A,2002-01-01,197.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing105,Government Account,budget,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing106,Moratorium Funds,budget,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing107,Domestic Non Bank Financing,budget,central government,A,2002-01-01,23993.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing108,Privatization,budget,central government,A,2002-01-01,4444.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing109,Asset Management,budget,central government,A,2002-01-01,19549.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing110,"Government Bonds, Net",budget,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing111,Issuance of Government Bonds,budget,central government,A,2002-01-01,3931.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing112,Bonds Redemption and buyback,budget,central government,A,2002-01-01,-3931.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing113,Capital,budget,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing114,Aid Chaneling,budget,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing115,Others,budget,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing116,Infrastructur Funds,budget,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing117,Investment Funds,budget,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing118,Foreign Financing (nett),budget,central government,A,2002-01-01,16264.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing119,Gross Drawing,budget,central government,A,2002-01-01,29310.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing120,Program Aid,budget,central government,A,2002-01-01,9346.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing121,Project Aid,budget,central government,A,2002-01-01,19964.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing122,Amortization,budget,central government,A,2002-01-01,-13046.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing123,Financing Surplus/Deficit,budget,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing124,Additional Debt Financing/Two Step Loan,budget,central government,A,2002-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue101,Government Revenues and Grants,actual,central government,A,2003-01-01,341396.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue102,Domestic Revenues,actual,central government,A,2003-01-01,340928.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue103,Tax Revenues,actual,central government,A,2003-01-01,242048.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue104,Domestic Taxes,actual,central government,A,2003-01-01,230934.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue105,Income Tax,actual,central government,A,2003-01-01,115016.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue106,i. Non Oil and Gas,actual,central government,A,2003-01-01,96053.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue107,ii. Oil and Gas,actual,central government,A,2003-01-01,18963.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue108,Value Added Tax,actual,central government,A,2003-01-01,77082.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue109,Land and Building Tax,actual,central government,A,2003-01-01,8762.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue110,Duties on Land and Building Transfers,actual,central government,A,2003-01-01,2144.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue111,Exercise Duties,actual,central government,A,2003-01-01,26277.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue112,Others Domestic Taxes,actual,central government,A,2003-01-01,1654.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue113,International Trade Taxes,actual,central government,A,2003-01-01,11114.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue114,Import,actual,central government,A,2003-01-01,10885.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue115,Export,actual,central government,A,2003-01-01,230.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue116,Non Taxes Revenues,actual,central government,A,2003-01-01,98880.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue117,Natural Resources,actual,central government,A,2003-01-01,67510.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue118,Oil Revenues,actual,central government,A,2003-01-01,42969.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue119,Gas Revenues,actual,central government,A,2003-01-01,18533.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue120,Profit Transfers From SOE's,actual,central government,A,2003-01-01,12617.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue121,Bank Indonesia Surplus,actual,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue122,Revenue from Public Service Institution,actual,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue123,Other Non Tax Revenues,actual,central government,A,2003-01-01,18754.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue124,Grants,actual,central government,A,2003-01-01,468.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue101,Government Revenues and Grants,budget,central government,A,2003-01-01,342812.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue102,Domestic Revenues,budget,central government,A,2003-01-01,342472.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue103,Tax Revenues,budget,central government,A,2003-01-01,248470.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue104,Domestic Taxes,budget,central government,A,2003-01-01,236902.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue105,Income Tax,budget,central government,A,2003-01-01,122448.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue106,i. Non Oil and Gas,budget,central government,A,2003-01-01,104305.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue107,ii. Oil and Gas,budget,central government,A,2003-01-01,18144.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue108,Value Added Tax,budget,central government,A,2003-01-01,75863.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue109,Land and Building Tax,budget,central government,A,2003-01-01,8874.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue110,Duties on Land and Building Transfers,budget,central government,A,2003-01-01,1850.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue111,Exercise Duties,budget,central government,A,2003-01-01,26114.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue112,Others Domestic Taxes,budget,central government,A,2003-01-01,1753.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue113,International Trade Taxes,budget,central government,A,2003-01-01,11568.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue114,Import,budget,central government,A,2003-01-01,11333.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue115,Export,budget,central government,A,2003-01-01,236.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue116,Non Taxes Revenues,budget,central government,A,2003-01-01,94002.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue117,Natural Resources,budget,central government,A,2003-01-01,64991.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue118,Oil Revenues,budget,central government,A,2003-01-01,41679.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue119,Gas Revenues,budget,central government,A,2003-01-01,18685.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue120,Profit Transfers From SOE's,budget,central government,A,2003-01-01,12290.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue121,Bank Indonesia Surplus,budget,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue122,Revenue from Public Service Institution,budget,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue123,Other Non Tax Revenues,budget,central government,A,2003-01-01,16720.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue124,Grants,budget,central government,A,2003-01-01,340.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure101,Government Expenditures,actual,central government,A,2003-01-01,376505.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure102,Central Governement Expenditures,actual,central government,A,2003-01-01,256191.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure103,Current Expenditures,actual,central government,A,2003-01-01,186944.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure104,Personnel,actual,central government,A,2003-01-01,47662.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure105,Goods and Services,actual,central government,A,2003-01-01,14992.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure106,Capital,actual,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure107,Interest payment,actual,central government,A,2003-01-01,65351.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure108,Domestic Interest,actual,central government,A,2003-01-01,46356.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure109,External Interest,actual,central government,A,2003-01-01,18995.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure110,Additional Interest,actual,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure111,Subsidies,actual,central government,A,2003-01-01,43899.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure112,Oil Subsidies,actual,central government,A,2003-01-01,30038.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure113,Non Oil Subsidies,actual,central government,A,2003-01-01,13861.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure114,Social Assistance,actual,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure115,Others Current Expenditures/Others Expenditures,actual,central government,A,2003-01-01,15042.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure116,Development Expenditures1),actual,central government,A,2003-01-01,69247.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure117,Rupiah Financing,actual,central government,A,2003-01-01,50345.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure118,Project aid,actual,central government,A,2003-01-01,18902.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure119,Regional Budget Expenditures,actual,central government,A,2003-01-01,120314.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure120,Balance Budget,actual,central government,A,2003-01-01,111070.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure121,Revenue Sharing Funds,actual,central government,A,2003-01-01,31370.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure122,General Allocation Funds,actual,central government,A,2003-01-01,76978.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure123,Special Allocation Funds,actual,central government,A,2003-01-01,2723.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure124,Special Autonomy,actual,central government,A,2003-01-01,9244.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure125,Suspend,actual,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure101,Government Expenditures,budget,central government,A,2003-01-01,377248.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure102,Central Government Expenditures,budget,central government,A,2003-01-01,257934.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure103,Current Expenditures,budget,central government,A,2003-01-01,191788.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure104,Personnel,budget,central government,A,2003-01-01,50426.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure105,Goods and Services,budget,central government,A,2003-01-01,16151.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure106,Capital,budget,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure107,Interest payment,budget,central government,A,2003-01-01,72151.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure108,Domestic Interest,budget,central government,A,2003-01-01,48897.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure109,External Interest,budget,central government,A,2003-01-01,23255.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure110,Additional Interest,budget,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure111,Subsidies,budget,central government,A,2003-01-01,34726.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure112,Oil Subsidies,budget,central government,A,2003-01-01,24512.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure113,Non Oil Subsidies,budget,central government,A,2003-01-01,10214.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure114,Social Assistance,budget,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure115,Others Current Expenditures/Others Expenditures,budget,central government,A,2003-01-01,18334.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure116,Development Expenditures,budget,central government,A,2003-01-01,66146.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure117,Rupiah Financing,budget,central government,A,2003-01-01,51053.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure118,Project aid,budget,central government,A,2003-01-01,15094.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure119,Regional Budget Expenditures,budget,central government,A,2003-01-01,119314.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure120,Balance Budget,budget,central government,A,2003-01-01,109927.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure121,Revenue Sharing Funds,budget,central government,A,2003-01-01,29925.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure122,General Allocation Funds,budget,central government,A,2003-01-01,76978.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure123,Special Allocation Funds,budget,central government,A,2003-01-01,3024.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure124,Special Autonomy,budget,central government,A,2003-01-01,9387.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing101,Surplus / Deficit,actual,central government,A,2003-01-01,-35109.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing102,"Financing, Nett",actual,central government,A,2003-01-01,35109.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing103,Domestic Financing,actual,central government,A,2003-01-01,34562.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing104,Domestic Bank Financing,actual,central government,A,2003-01-01,10705.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing105,Government Account,actual,central government,A,2003-01-01,10705.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing106,Moratorium Funds,actual,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing107,Domestic Non Bank Financing,actual,central government,A,2003-01-01,23857.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing108,Privatization,actual,central government,A,2003-01-01,7301.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing109,Asset Management,actual,central government,A,2003-01-01,19661.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing110,"Government Bonds, Net",actual,central government,A,2003-01-01,-3105.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing111,Issuance of Government Bonds,actual,central government,A,2003-01-01,11319.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing112,Bonds Redemption and buyback,actual,central government,A,2003-01-01,-14424.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing113,Capital,actual,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing114,Aid Chaneling,actual,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing115,Others,actual,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing116,Infrastructur Funds,actual,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing117,Investment Funds,actual,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing118,Foreign Financing (nett),actual,central government,A,2003-01-01,548.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing119,Gross Drawing,actual,central government,A,2003-01-01,20360.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing120,Program Aid,actual,central government,A,2003-01-01,1792.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing121,Project Aid,actual,central government,A,2003-01-01,18568.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing122,Amortization,actual,central government,A,2003-01-01,-19812.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing123,Financing Surplus/Deficit,actual,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing124,Additional Debt Financing/Two Step Loan,actual,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing101,Surplus / Deficit,budget,central government,A,2003-01-01,-34436.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing102,"Financing, Nett",budget,central government,A,2003-01-01,34436.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing103,Domestic Financing,budget,central government,A,2003-01-01,31530.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing104,Domestic Bank Financing,budget,central government,A,2003-01-01,8500.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing105,Government Account,budget,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing106,Moratorium Funds,budget,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing107,Domestic Non Bank Financing,budget,central government,A,2003-01-01,23030.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing108,Privatization,budget,central government,A,2003-01-01,6440.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing109,Asset Management,budget,central government,A,2003-01-01,19561.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing110,"Government Bonds, Net",budget,central government,A,2003-01-01,-2971.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing111,Issuance of Government Bonds,budget,central government,A,2003-01-01,11670.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing112,Bonds Redemption and buyback,budget,central government,A,2003-01-01,-14641.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing113,Capital,budget,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing114,Aid Chaneling,budget,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing115,Others,budget,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing116,Infrastructur Funds,budget,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing117,Investment Funds,budget,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing118,Foreign Financing (nett),budget,central government,A,2003-01-01,2906.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing119,Gross Drawing,budget,central government,A,2003-01-01,20498.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing120,Program Aid,budget,central government,A,2003-01-01,5745.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing121,Project Aid,budget,central government,A,2003-01-01,14753.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing122,Amortization,budget,central government,A,2003-01-01,-17592.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing123,Financing Surplus/Deficit,budget,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing124,Additional Debt Financing/Two Step Loan,budget,central government,A,2003-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue101,Government Revenues and Grants,actual,central government,A,2004-01-01,403367.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue102,Domestic Revenues,actual,central government,A,2004-01-01,403105.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue103,Tax Revenues,actual,central government,A,2004-01-01,280559.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue104,Domestic Taxes,actual,central government,A,2004-01-01,267817.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue105,Income Tax,actual,central government,A,2004-01-01,119515.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue106,i. Non Oil and Gas,actual,central government,A,2004-01-01,96568.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue107,ii. Oil and Gas,actual,central government,A,2004-01-01,22947.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue108,Value Added Tax,actual,central government,A,2004-01-01,102573.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue109,Land and Building Tax,actual,central government,A,2004-01-01,11767.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue110,Duties on Land and Building Transfers,actual,central government,A,2004-01-01,2918.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue111,Exercise Duties,actual,central government,A,2004-01-01,29173.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue112,Others Domestic Taxes,actual,central government,A,2004-01-01,1872.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue113,International Trade Taxes,actual,central government,A,2004-01-01,12742.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue114,Import,actual,central government,A,2004-01-01,12444.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue115,Export,actual,central government,A,2004-01-01,298.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue116,Non Taxes Revenues,actual,central government,A,2004-01-01,122546.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue117,Natural Resources,actual,central government,A,2004-01-01,91543.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue118,Oil Revenues,actual,central government,A,2004-01-01,63060.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue119,Gas Revenues,actual,central government,A,2004-01-01,22199.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue120,Profit Transfers From SOE's,actual,central government,A,2004-01-01,9818.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue121,Bank Indonesia Surplus,actual,central government,A,2004-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue122,Revenue from Public Service Institution,actual,central government,A,2004-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue123,Other Non Tax Revenues,actual,central government,A,2004-01-01,21185.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue124,Grants,actual,central government,A,2004-01-01,262.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue101,Government Revenues and Grants,budget,central government,A,2004-01-01,400955.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue102,Domestic Revenues,budget,central government,A,2004-01-01,400217.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue103,Tax Revenues,budget,central government,A,2004-01-01,278208.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue104,Domestic Taxes,budget,central government,A,2004-01-01,266083.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue105,Income Tax,budget,central government,A,2004-01-01,135853.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue106,i. Non Oil and Gas,budget,central government,A,2004-01-01,112767.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue107,ii. Oil and Gas,budget,central government,A,2004-01-01,23086.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue108,Value Added Tax,budget,central government,A,2004-01-01,86706.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue109,Land and Building Tax,budget,central government,A,2004-01-01,10212.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue110,Duties on Land and Building Transfers,budget,central government,A,2004-01-01,3182.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue111,Exercise Duties,budget,central government,A,2004-01-01,28292.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue112,Others Domestic Taxes,budget,central government,A,2004-01-01,1838.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue113,International Trade Taxes,budget,central government,A,2004-01-01,12124.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue114,Import,budget,central government,A,2004-01-01,11788.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue115,Export,budget,central government,A,2004-01-01,337.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue116,Non Taxes Revenues,budget,central government,A,2004-01-01,122009.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue117,Natural Resources,budget,central government,A,2004-01-01,91963.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue118,Oil Revenues,budget,central government,A,2004-01-01,63864.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue119,Gas Revenues,budget,central government,A,2004-01-01,23784.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue120,Profit Transfers From SOE's,budget,central government,A,2004-01-01,7804.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue121,Bank Indonesia Surplus,budget,central government,A,2004-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue122,Revenue from Public Service Institution,budget,central government,A,2004-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue123,Other Non Tax Revenues,budget,central government,A,2004-01-01,22243.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue124,Grants,budget,central government,A,2004-01-01,738.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure101,Government Expenditures,actual,central government,A,2004-01-01,427177.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure102,Central Governement Expenditures,actual,central government,A,2004-01-01,297464.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure103,Current Expenditures,actual,central government,A,2004-01-01,236014.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure104,Personnel,actual,central government,A,2004-01-01,52743.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure105,Goods and Services,actual,central government,A,2004-01-01,15518.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure106,Capital,actual,central government,A,2004-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure107,Interest payment,actual,central government,A,2004-01-01,62486.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure108,Domestic Interest,actual,central government,A,2004-01-01,39639.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure109,External Interest,actual,central government,A,2004-01-01,22846.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure110,Additional Interest,actual,central government,A,2004-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure111,Subsidies,actual,central government,A,2004-01-01,91529.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure112,Oil Subsidies,actual,central government,A,2004-01-01,69025.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure113,Non Oil Subsidies,actual,central government,A,2004-01-01,22505.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure114,Social Assistance,actual,central government,A,2004-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure115,Others Current Expenditures/Others Expenditures,actual,central government,A,2004-01-01,13738.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure116,Development Expenditures1),actual,central government,A,2004-01-01,61450.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure117,Rupiah Financing,actual,central government,A,2004-01-01,48018.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure118,Project aid,actual,central government,A,2004-01-01,13432.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure119,Regional Budget Expenditures,actual,central government,A,2004-01-01,129723.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure120,Balance Budget,actual,central government,A,2004-01-01,122868.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure121,Revenue Sharing Funds,actual,central government,A,2004-01-01,37901.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure122,General Allocation Funds,actual,central government,A,2004-01-01,82131.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure123,Special Allocation Funds,actual,central government,A,2004-01-01,2836.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure124,Special Autonomy,actual,central government,A,2004-01-01,6855.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure125,Suspend,actual,central government,A,2004-01-01,-10.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure101,Government Expenditures,budget,central government,A,2004-01-01,427226.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure102,Central Government Expenditures,budget,central government,A,2004-01-01,297419.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure103,Current Expenditures,budget,central government,A,2004-01-01,227811.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure104,Personnel,budget,central government,A,2004-01-01,54217.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure105,Goods and Services,budget,central government,A,2004-01-01,16780.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure106,Capital,budget,central government,A,2004-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure107,Interest payment,budget,central government,A,2004-01-01,63557.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure108,Domestic Interest,budget,central government,A,2004-01-01,39848.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure109,External Interest,budget,central government,A,2004-01-01,23710.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure110,Additional Interest,budget,central government,A,2004-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure111,Subsidies,budget,central government,A,2004-01-01,73813.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure112,Oil Subsidies,budget,central government,A,2004-01-01,63083.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure113,Non Oil Subsidies,budget,central government,A,2004-01-01,10730.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure114,Social Assistance,budget,central government,A,2004-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure115,Others Current Expenditures/Others Expenditures,budget,central government,A,2004-01-01,19444.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure116,Development Expenditures,budget,central government,A,2004-01-01,69609.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure117,Rupiah Financing,budget,central government,A,2004-01-01,50370.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure118,Project aid,budget,central government,A,2004-01-01,19239.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure119,Regional Budget Expenditures,budget,central government,A,2004-01-01,129807.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure120,Balance Budget,budget,central government,A,2004-01-01,122951.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure121,Revenue Sharing Funds,budget,central government,A,2004-01-01,37328.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure122,General Allocation Funds,budget,central government,A,2004-01-01,82131.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure123,Special Allocation Funds,budget,central government,A,2004-01-01,3493.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure124,Special Autonomy,budget,central government,A,2004-01-01,6855.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing101,Surplus / Deficit,actual,central government,A,2004-01-01,-23810.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing102,"Financing, Nett",actual,central government,A,2004-01-01,20796.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing103,Domestic Financing,actual,central government,A,2004-01-01,48853.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing104,Domestic Bank Financing,actual,central government,A,2004-01-01,22713.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing105,Government Account,actual,central government,A,2004-01-01,22713.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing106,Moratorium Funds,actual,central government,A,2004-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing107,Domestic Non Bank Financing,actual,central government,A,2004-01-01,26141.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing108,Privatization,actual,central government,A,2004-01-01,3520.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing109,Asset Management,actual,central government,A,2004-01-01,15751.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing110,"Government Bonds, Net",actual,central government,A,2004-01-01,6870.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing111,Issuance of Government Bonds,actual,central government,A,2004-01-01,32327.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing112,Bonds Redemption and buyback,actual,central government,A,2004-01-01,-25456.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing113,Capital,actual,central government,A,2004-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing114,Aid Chaneling,actual,central government,A,2004-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing115,Others,actual,central government,A,2004-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing116,Infrastructur Funds,actual,central government,A,2004-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing117,Investment Funds,actual,central government,A,2004-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing118,Foreign Financing (nett),actual,central government,A,2004-01-01,-28057.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing119,Gross Drawing,actual,central government,A,2004-01-01,18434.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing120,Program Aid,actual,central government,A,2004-01-01,5059.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing121,Project Aid,actual,central government,A,2004-01-01,13375.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing122,Amortization,actual,central government,A,2004-01-01,-46491.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing123,Financing Surplus/Deficit,actual,central government,A,2004-01-01,-3014.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing124,Additional Debt Financing/Two Step Loan,actual,central government,A,2004-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue101,Government Revenues and Grants,actual,central government,A,2005-01-01,495224.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue102,Domestic Revenues,actual,central government,A,2005-01-01,493919.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue103,Tax Revenues,actual,central government,A,2005-01-01,347031.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue104,Domestic Taxes,actual,central government,A,2005-01-01,331792.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue105,Income Tax,actual,central government,A,2005-01-01,175541.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue106,i. Non Oil and Gas,actual,central government,A,2005-01-01,140398.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue107,ii. Oil and Gas,actual,central government,A,2005-01-01,35143.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue108,Value Added Tax,actual,central government,A,2005-01-01,101296.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue109,Land and Building Tax,actual,central government,A,2005-01-01,16217.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue110,Duties on Land and Building Transfers,actual,central government,A,2005-01-01,3432.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue111,Exercise Duties,actual,central government,A,2005-01-01,33256.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue112,Others Domestic Taxes,actual,central government,A,2005-01-01,2050.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue113,International Trade Taxes,actual,central government,A,2005-01-01,15239.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue114,Import,actual,central government,A,2005-01-01,14921.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue115,Export,actual,central government,A,2005-01-01,318.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue116,Non Taxes Revenues,actual,central government,A,2005-01-01,146888.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue117,Natural Resources,actual,central government,A,2005-01-01,110467.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue118,Oil Revenues,actual,central government,A,2005-01-01,72822.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue119,Gas Revenues,actual,central government,A,2005-01-01,30940.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue120,Profit Transfers From SOE's,actual,central government,A,2005-01-01,12835.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue121,Bank Indonesia Surplus,actual,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue122,Revenue from Public Service Institution,actual,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue123,Other Non Tax Revenues,actual,central government,A,2005-01-01,23586.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue124,Grants,actual,central government,A,2005-01-01,1305.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue101,Government Revenues and Grants,budget,central government,A,2005-01-01,540126.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue102,Domestic Revenues,budget,central government,A,2005-01-01,532671.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue103,Tax Revenues,budget,central government,A,2005-01-01,351974.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue104,Domestic Taxes,budget,central government,A,2005-01-01,334403.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue105,Income Tax,budget,central government,A,2005-01-01,180253.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue106,i. Non Oil and Gas,budget,central government,A,2005-01-01,143017.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue107,ii. Oil and Gas,budget,central government,A,2005-01-01,37236.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue108,Value Added Tax,budget,central government,A,2005-01-01,102671.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue109,Land and Building Tax,budget,central government,A,2005-01-01,13375.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue110,Duties on Land and Building Transfers,budget,central government,A,2005-01-01,3661.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue111,Exercise Duties,budget,central government,A,2005-01-01,32245.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue112,Others Domestic Taxes,budget,central government,A,2005-01-01,2198.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue113,International Trade Taxes,budget,central government,A,2005-01-01,17570.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue114,Import,budget,central government,A,2005-01-01,16591.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue115,Export,budget,central government,A,2005-01-01,980.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue116,Non Taxes Revenues,budget,central government,A,2005-01-01,180697.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue117,Natural Resources,budget,central government,A,2005-01-01,144361.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue118,Oil Revenues,budget,central government,A,2005-01-01,102196.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue119,Gas Revenues,budget,central government,A,2005-01-01,36364.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue120,Profit Transfers From SOE's,budget,central government,A,2005-01-01,12000.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue121,Bank Indonesia Surplus,budget,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue122,Revenue from Public Service Institution,budget,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue123,Other Non Tax Revenues,budget,central government,A,2005-01-01,24336.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue124,Grants,budget,central government,A,2005-01-01,7455.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure101,Government Expenditures,actual,central government,A,2005-01-01,509632.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure102,Central Governement Expenditures,actual,central government,A,2005-01-01,361155.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure103,Current Expenditures,actual,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure104,Personnel,actual,central government,A,2005-01-01,54254.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure105,Goods and Services,actual,central government,A,2005-01-01,29172.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure106,Capital,actual,central government,A,2005-01-01,32889.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure107,Interest payment,actual,central government,A,2005-01-01,65200.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure108,Domestic Interest,actual,central government,A,2005-01-01,42600.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure109,External Interest,actual,central government,A,2005-01-01,22600.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure110,Additional Interest,actual,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure111,Subsidies,actual,central government,A,2005-01-01,120765.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure112,Oil Subsidies,actual,central government,A,2005-01-01,95599.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure113,Non Oil Subsidies,actual,central government,A,2005-01-01,25167.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure114,Social Assistance,actual,central government,A,2005-01-01,24904.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure115,Others Current Expenditures/Others Expenditures,actual,central government,A,2005-01-01,33972.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure116,Development Expenditures1),actual,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure117,Rupiah Financing,actual,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure118,Project aid,actual,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure119,Regional Budget Expenditures,actual,central government,A,2005-01-01,150464.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure120,Balance Budget,actual,central government,A,2005-01-01,143221.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure121,Revenue Sharing Funds,actual,central government,A,2005-01-01,50479.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure122,General Allocation Funds,actual,central government,A,2005-01-01,88765.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure123,Special Allocation Funds,actual,central government,A,2005-01-01,3977.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure124,Special Autonomy,actual,central government,A,2005-01-01,7243.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure125,Suspend,actual,central government,A,2005-01-01,-1987.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure101,Government Expenditures,budget,central government,A,2005-01-01,565070.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure102,Central Government Expenditures,budget,central government,A,2005-01-01,411668.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure103,Current Expenditures,budget,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure104,Personnel,budget,central government,A,2005-01-01,61167.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure105,Goods and Services,budget,central government,A,2005-01-01,42312.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure106,Capital,budget,central government,A,2005-01-01,54747.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure107,Interest payment,budget,central government,A,2005-01-01,60982.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure108,Domestic Interest,budget,central government,A,2005-01-01,42307.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure109,External Interest,budget,central government,A,2005-01-01,18675.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure110,Additional Interest,budget,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure111,Subsidies,budget,central government,A,2005-01-01,119090.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure112,Oil Subsidies,budget,central government,A,2005-01-01,89194.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure113,Non Oil Subsidies,budget,central government,A,2005-01-01,29896.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure114,Social Assistance,budget,central government,A,2005-01-01,43374.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure115,Others Current Expenditures/Others Expenditures,budget,central government,A,2005-01-01,29997.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure116,Development Expenditures,budget,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure117,Rupiah Financing,budget,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure118,Project aid,budget,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure119,Regional Budget Expenditures,budget,central government,A,2005-01-01,153402.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure120,Balance Budget,budget,central government,A,2005-01-01,146160.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure121,Revenue Sharing Funds,budget,central government,A,2005-01-01,52567.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure122,General Allocation Funds,budget,central government,A,2005-01-01,88766.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure123,Special Allocation Funds,budget,central government,A,2005-01-01,4828.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure124,Special Autonomy,budget,central government,A,2005-01-01,7243.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing101,Surplus / Deficit,actual,central government,A,2005-01-01,-14408.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing102,"Financing, Nett",actual,central government,A,2005-01-01,8872.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing103,Domestic Financing,actual,central government,A,2005-01-01,19145.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing104,Domestic Bank Financing,actual,central government,A,2005-01-01,-2550.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing105,Government Account,actual,central government,A,2005-01-01,8901.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing106,Moratorium Funds,actual,central government,A,2005-01-01,-13700.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing107,Domestic Non Bank Financing,actual,central government,A,2005-01-01,23943.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing108,Privatization,actual,central government,A,2005-01-01,6563.53,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing109,Asset Management,actual,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing110,"Government Bonds, Net",actual,central government,A,2005-01-01,22575.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing111,Issuance of Government Bonds,actual,central government,A,2005-01-01,47373.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing112,Bonds Redemption and buyback,actual,central government,A,2005-01-01,-24798.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing113,Capital,actual,central government,A,2005-01-01,-5195.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing114,Aid Chaneling,actual,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing115,Others,actual,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing116,Infrastructur Funds,actual,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing117,Investment Funds,actual,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing118,Foreign Financing (nett),actual,central government,A,2005-01-01,-10272.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing119,Gross Drawing,actual,central government,A,2005-01-01,26840.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing120,Program Aid,actual,central government,A,2005-01-01,12265.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing121,Project Aid,actual,central government,A,2005-01-01,14576.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing122,Amortization,actual,central government,A,2005-01-01,-37112.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing123,Financing Surplus/Deficit,actual,central government,A,2005-01-01,-5535.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing124,Additional Debt Financing/Two Step Loan,actual,central government,A,2005-01-01,-2249.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing101,Surplus / Deficit,budget,central government,A,2005-01-01,-24944.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing102,"Financing, Nett",budget,central government,A,2005-01-01,24944.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing103,Domestic Financing,budget,central government,A,2005-01-01,29786.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing104,Domestic Bank Financing,budget,central government,A,2005-01-01,4271.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing105,Government Account,budget,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing106,Moratorium Funds,budget,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing107,Domestic Non Bank Financing,budget,central government,A,2005-01-01,25515.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing108,Privatization,budget,central government,A,2005-01-01,3500.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing109,Asset Management,budget,central government,A,2005-01-01,5125.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing110,"Government Bonds, Net",budget,central government,A,2005-01-01,22086.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing111,Issuance of Government Bonds,budget,central government,A,2005-01-01,43315.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing112,Bonds Redemption and buyback,budget,central government,A,2005-01-01,-21229.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing113,Capital,budget,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing114,Aid Chaneling,budget,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing115,Others,budget,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing116,Infrastructur Funds,budget,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing117,Investment Funds,budget,central government,A,2005-01-01,-5195.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing118,Foreign Financing (nett),budget,central government,A,2005-01-01,-4842.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing119,Gross Drawing,budget,central government,A,2005-01-01,35541.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing120,Program Aid,budget,central government,A,2005-01-01,11270.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing121,Project Aid,budget,central government,A,2005-01-01,24271.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing122,Amortization,budget,central government,A,2005-01-01,-40383.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing123,Financing Surplus/Deficit,budget,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing124,Additional Debt Financing/Two Step Loan,budget,central government,A,2005-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue101,Government Revenues and Grants,actual,central government,A,2006-01-01,637987.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue102,Domestic Revenues,actual,central government,A,2006-01-01,636153.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue103,Tax Revenues,actual,central government,A,2006-01-01,409203.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue104,Domestic Taxes,actual,central government,A,2006-01-01,395972.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue105,Income Tax,actual,central government,A,2006-01-01,208833.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue106,i. Non Oil and Gas,actual,central government,A,2006-01-01,165645.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue107,ii. Oil and Gas,actual,central government,A,2006-01-01,43188.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue108,Value Added Tax,actual,central government,A,2006-01-01,123036.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue109,Land and Building Tax,actual,central government,A,2006-01-01,20859.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue110,Duties on Land and Building Transfers,actual,central government,A,2006-01-01,3185.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue111,Exercise Duties,actual,central government,A,2006-01-01,37772.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue112,Others Domestic Taxes,actual,central government,A,2006-01-01,2287.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue113,International Trade Taxes,actual,central government,A,2006-01-01,13231.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue114,Import,actual,central government,A,2006-01-01,12140.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue115,Export,actual,central government,A,2006-01-01,1091.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue116,Non Taxes Revenues,actual,central government,A,2006-01-01,226950.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue117,Natural Resources,actual,central government,A,2006-01-01,167474.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue118,Oil Revenues,actual,central government,A,2006-01-01,125145.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue119,Gas Revenues,actual,central government,A,2006-01-01,32941.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue120,Profit Transfers From SOE's,actual,central government,A,2006-01-01,21451.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue121,Bank Indonesia Surplus,actual,central government,A,2006-01-01,1523.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue122,Revenue from Public Service Institution,actual,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue123,Other Non Tax Revenues,actual,central government,A,2006-01-01,36503.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue124,Grants,actual,central government,A,2006-01-01,1834.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue101,Government Revenues and Grants,budget,central government,A,2006-01-01,659115.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue102,Domestic Revenues,budget,central government,A,2006-01-01,654882.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue103,Tax Revenues,budget,central government,A,2006-01-01,425053.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue104,Domestic Taxes,budget,central government,A,2006-01-01,410226.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue105,Income Tax,budget,central government,A,2006-01-01,213698.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue106,i. Non Oil and Gas,budget,central government,A,2006-01-01,175012.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue107,ii. Oil and Gas,budget,central government,A,2006-01-01,38686.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue108,Value Added Tax,budget,central government,A,2006-01-01,132876.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue109,Land and Building Tax,budget,central government,A,2006-01-01,18154.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue110,Duties on Land and Building Transfers,budget,central government,A,2006-01-01,4386.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue111,Exercise Duties,budget,central government,A,2006-01-01,38523.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue112,Others Domestic Taxes,budget,central government,A,2006-01-01,2590.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue113,International Trade Taxes,budget,central government,A,2006-01-01,14827.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue114,Import,budget,central government,A,2006-01-01,13583.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue115,Export,budget,central government,A,2006-01-01,1244.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue116,Non Taxes Revenues,budget,central government,A,2006-01-01,229829.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue117,Natural Resources,budget,central government,A,2006-01-01,165695.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue118,Oil Revenues,budget,central government,A,2006-01-01,122964.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue119,Gas Revenues,budget,central government,A,2006-01-01,36825.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue120,Profit Transfers From SOE's,budget,central government,A,2006-01-01,20800.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue121,Bank Indonesia Surplus,budget,central government,A,2006-01-01,1523.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue122,Revenue from Public Service Institution,budget,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue123,Other Non Tax Revenues,budget,central government,A,2006-01-01,41812.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue124,Grants,budget,central government,A,2006-01-01,4233.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure101,Government Expenditures,actual,central government,A,2006-01-01,667129.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure102,Central Governement Expenditures,actual,central government,A,2006-01-01,440032.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure103,Current Expenditures,actual,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure104,Personnel,actual,central government,A,2006-01-01,73252.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure105,Goods and Services,actual,central government,A,2006-01-01,47182.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure106,Capital,actual,central government,A,2006-01-01,54952.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure107,Interest payment,actual,central government,A,2006-01-01,79083.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure108,Domestic Interest,actual,central government,A,2006-01-01,54908.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure109,External Interest,actual,central government,A,2006-01-01,24174.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure110,Additional Interest,actual,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure111,Subsidies,actual,central government,A,2006-01-01,107432.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure112,Oil Subsidies,actual,central government,A,2006-01-01,64212.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure113,Non Oil Subsidies,actual,central government,A,2006-01-01,43220.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure114,Social Assistance,actual,central government,A,2006-01-01,40708.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure115,Others Current Expenditures/Others Expenditures,actual,central government,A,2006-01-01,37423.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure116,Development Expenditures1),actual,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure117,Rupiah Financing,actual,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure118,Project aid,actual,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure119,Regional Budget Expenditures,actual,central government,A,2006-01-01,226180.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure120,Balance Budget,actual,central government,A,2006-01-01,222131.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure121,Revenue Sharing Funds,actual,central government,A,2006-01-01,64900.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure122,General Allocation Funds,actual,central government,A,2006-01-01,145664.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure123,Special Allocation Funds,actual,central government,A,2006-01-01,11566.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure124,Special Autonomy,actual,central government,A,2006-01-01,4049.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure125,Suspend,actual,central government,A,2006-01-01,-917.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure101,Government Expenditures,budget,central government,A,2006-01-01,699099.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure102,Central Government Expenditures,budget,central government,A,2006-01-01,478249.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure103,Current Expenditures,budget,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure104,Personnel,budget,central government,A,2006-01-01,78905.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure105,Goods and Services,budget,central government,A,2006-01-01,55507.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure106,Capital,budget,central government,A,2006-01-01,66724.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure107,Interest payment,budget,central government,A,2006-01-01,82495.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure108,Domestic Interest,budget,central government,A,2006-01-01,58155.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure109,External Interest,budget,central government,A,2006-01-01,24340.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure110,Additional Interest,budget,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure111,Subsidies,budget,central government,A,2006-01-01,107628.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure112,Oil Subsidies,budget,central government,A,2006-01-01,64212.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure113,Non Oil Subsidies,budget,central government,A,2006-01-01,43415.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure114,Social Assistance,budget,central government,A,2006-01-01,42401.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure115,Others Current Expenditures/Others Expenditures,budget,central government,A,2006-01-01,44594.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure116,Development Expenditures,budget,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure117,Rupiah Financing,budget,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure118,Project aid,budget,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure119,Regional Budget Expenditures,budget,central government,A,2006-01-01,220850.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure120,Balance Budget,budget,central government,A,2006-01-01,216798.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure121,Revenue Sharing Funds,budget,central government,A,2006-01-01,59564.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure122,General Allocation Funds,budget,central government,A,2006-01-01,145664.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure123,Special Allocation Funds,budget,central government,A,2006-01-01,11570.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure124,Special Autonomy,budget,central government,A,2006-01-01,4052.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing101,Surplus / Deficit,actual,central government,A,2006-01-01,-29142.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing102,"Financing, Nett",actual,central government,A,2006-01-01,29416.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing103,Domestic Financing,actual,central government,A,2006-01-01,55982.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing104,Domestic Bank Financing,actual,central government,A,2006-01-01,18913.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing105,Government Account,actual,central government,A,2006-01-01,11555.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing106,Moratorium Funds,actual,central government,A,2006-01-01,7357.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing107,Domestic Non Bank Financing,actual,central government,A,2006-01-01,37069.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing108,Privatization,actual,central government,A,2006-01-01,2372.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing109,Asset Management,actual,central government,A,2006-01-01,2684.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing110,"Government Bonds, Net",actual,central government,A,2006-01-01,35986.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing111,Issuance of Government Bonds,actual,central government,A,2006-01-01,94235.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing112,Bonds Redemption and buyback,actual,central government,A,2006-01-01,-58249.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing113,Capital,actual,central government,A,2006-01-01,-1972.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing114,Aid Chaneling,actual,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing115,Others,actual,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing116,Infrastructur Funds,actual,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing117,Investment Funds,actual,central government,A,2006-01-01,-2000.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing118,Foreign Financing (nett),actual,central government,A,2006-01-01,-26567.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing119,Gross Drawing,actual,central government,A,2006-01-01,-26115.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing120,Program Aid,actual,central government,A,2006-01-01,13580.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing121,Project Aid,actual,central government,A,2006-01-01,-12535.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing122,Amortization,actual,central government,A,2006-01-01,-52681.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing123,Financing Surplus/Deficit,actual,central government,A,2006-01-01,274.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing124,Additional Debt Financing/Two Step Loan,actual,central government,A,2006-01-01,-3558.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing101,Surplus / Deficit,budget,central government,A,2006-01-01,-39984.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing102,"Financing, Nett",budget,central government,A,2006-01-01,39984.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing103,Domestic Financing,budget,central government,A,2006-01-01,55258.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing104,Domestic Bank Financing,budget,central government,A,2006-01-01,17907.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing105,Government Account,budget,central government,A,2006-01-01,10549.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing106,Moratorium Funds,budget,central government,A,2006-01-01,7357.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing107,Domestic Non Bank Financing,budget,central government,A,2006-01-01,37352.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing108,Privatization,budget,central government,A,2006-01-01,3195.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing109,Asset Management,budget,central government,A,2006-01-01,2580.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing110,"Government Bonds, Net",budget,central government,A,2006-01-01,35772.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing111,Issuance of Government Bonds,budget,central government,A,2006-01-01,61242.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing112,Bonds Redemption and buyback,budget,central government,A,2006-01-01,-25470.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing113,Capital,budget,central government,A,2006-01-01,-4195.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing114,Aid Chaneling,budget,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing115,Others,budget,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing116,Infrastructur Funds,budget,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing117,Investment Funds,budget,central government,A,2006-01-01,-2000.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing118,Foreign Financing (nett),budget,central government,A,2006-01-01,-15274.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing119,Gross Drawing,budget,central government,A,2006-01-01,37550.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing120,Program Aid,budget,central government,A,2006-01-01,12075.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing121,Project Aid,budget,central government,A,2006-01-01,25475.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing122,Amortization,budget,central government,A,2006-01-01,-52824.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing123,Financing Surplus/Deficit,budget,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing124,Additional Debt Financing/Two Step Loan,budget,central government,A,2006-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue101,Government Revenues and Grants,actual,central government,A,2007-01-01,707806.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue102,Domestic Revenues,actual,central government,A,2007-01-01,706109.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue103,Tax Revenues,actual,central government,A,2007-01-01,490989.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue104,Domestic Taxes,actual,central government,A,2007-01-01,470052.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue105,Income Tax,actual,central government,A,2007-01-01,238431.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue106,i. Non Oil and Gas,actual,central government,A,2007-01-01,194431.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue107,ii. Oil and Gas,actual,central government,A,2007-01-01,44001.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue108,Value Added Tax,actual,central government,A,2007-01-01,154527.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue109,Land and Building Tax,actual,central government,A,2007-01-01,23724.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue110,Duties on Land and Building Transfers,actual,central government,A,2007-01-01,5953.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue111,Exercise Duties,actual,central government,A,2007-01-01,44680.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue112,Others Domestic Taxes,actual,central government,A,2007-01-01,2738.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue113,International Trade Taxes,actual,central government,A,2007-01-01,20937.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue114,Import,actual,central government,A,2007-01-01,16699.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue115,Export,actual,central government,A,2007-01-01,4237.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue116,Non Taxes Revenues,actual,central government,A,2007-01-01,215120.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue117,Natural Resources,actual,central government,A,2007-01-01,132893.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue118,Oil Revenues,actual,central government,A,2007-01-01,93605.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue119,Gas Revenues,actual,central government,A,2007-01-01,31179.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue120,Profit Transfers From SOE's,actual,central government,A,2007-01-01,23223.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue121,Bank Indonesia Surplus,actual,central government,A,2007-01-01,13669.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue122,Revenue from Public Service Institution,actual,central government,A,2007-01-01,2131.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue123,Other Non Tax Revenues,actual,central government,A,2007-01-01,56873.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue124,Grants,actual,central government,A,2007-01-01,1698.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue101,Government Revenues and Grants,budget,central government,A,2007-01-01,694088.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue102,Domestic Revenues,budget,central government,A,2007-01-01,690265.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue103,Tax Revenues,budget,central government,A,2007-01-01,492011.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue104,Domestic Taxes,budget,central government,A,2007-01-01,474551.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue105,Income Tax,budget,central government,A,2007-01-01,251748.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue106,i. Non Oil and Gas,budget,central government,A,2007-01-01,214481.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue107,ii. Oil and Gas,budget,central government,A,2007-01-01,37268.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue108,Value Added Tax,budget,central government,A,2007-01-01,152057.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue109,Land and Building Tax,budget,central government,A,2007-01-01,22026.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue110,Duties on Land and Building Transfers,budget,central government,A,2007-01-01,3966.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue111,Exercise Duties,budget,central government,A,2007-01-01,42035.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue112,Others Domestic Taxes,budget,central government,A,2007-01-01,2720.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue113,International Trade Taxes,budget,central government,A,2007-01-01,17460.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue114,Import,budget,central government,A,2007-01-01,14418.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue115,Export,budget,central government,A,2007-01-01,3042.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue116,Non Taxes Revenues,budget,central government,A,2007-01-01,198254.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue117,Natural Resources,budget,central government,A,2007-01-01,115053.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue118,Oil Revenues,budget,central government,A,2007-01-01,78235.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue119,Gas Revenues,budget,central government,A,2007-01-01,29484.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue120,Profit Transfers From SOE's,budget,central government,A,2007-01-01,21800.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue121,Bank Indonesia Surplus,budget,central government,A,2007-01-01,13669.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue122,Revenue from Public Service Institution,budget,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue123,Other Non Tax Revenues,budget,central government,A,2007-01-01,47731.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,revenue124,Grants,budget,central government,A,2007-01-01,3823.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure101,Government Expenditures,actual,central government,A,2007-01-01,757650.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure102,Central Governement Expenditures,actual,central government,A,2007-01-01,504623.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure103,Current Expenditures,actual,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure104,Personnel,actual,central government,A,2007-01-01,90425.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure105,Goods and Services,actual,central government,A,2007-01-01,54511.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure106,Capital,actual,central government,A,2007-01-01,64289.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure107,Interest payment,actual,central government,A,2007-01-01,79806.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure108,Domestic Interest,actual,central government,A,2007-01-01,54079.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure109,External Interest,actual,central government,A,2007-01-01,25727.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure110,Additional Interest,actual,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure111,Subsidies,actual,central government,A,2007-01-01,150215.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure112,Oil Subsidies,actual,central government,A,2007-01-01,83792.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure113,Non Oil Subsidies,actual,central government,A,2007-01-01,66422.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure114,Social Assistance,actual,central government,A,2007-01-01,49756.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure115,Others Current Expenditures/Others Expenditures,actual,central government,A,2007-01-01,15621.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure116,Development Expenditures1),actual,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure117,Rupiah Financing,actual,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure118,Project aid,actual,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure119,Regional Budget Expenditures,actual,central government,A,2007-01-01,253263.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure120,Balance Budget,actual,central government,A,2007-01-01,243967.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure121,Revenue Sharing Funds,actual,central government,A,2007-01-01,62942.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure122,General Allocation Funds,actual,central government,A,2007-01-01,164787.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure123,Special Allocation Funds,actual,central government,A,2007-01-01,16238.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure124,Special Autonomy,actual,central government,A,2007-01-01,9296.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure125,Suspend,actual,central government,A,2007-01-01,-237.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure101,Government Expenditures,budget,central government,A,2007-01-01,752373.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure102,Central Government Expenditures,budget,central government,A,2007-01-01,498172.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure103,Current Expenditures,budget,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure104,Personnel,budget,central government,A,2007-01-01,92844.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure105,Goods and Services,budget,central government,A,2007-01-01,65260.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure106,Capital,budget,central government,A,2007-01-01,75051.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure107,Interest payment,budget,central government,A,2007-01-01,83555.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure108,Domestic Interest,budget,central government,A,2007-01-01,58803.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure109,External Interest,budget,central government,A,2007-01-01,24752.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure110,Additional Interest,budget,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure111,Subsidies,budget,central government,A,2007-01-01,105073.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure112,Oil Subsidies,budget,central government,A,2007-01-01,55604.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure113,Non Oil Subsidies,budget,central government,A,2007-01-01,49469.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure114,Social Assistance,budget,central government,A,2007-01-01,25781.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure115,Others Current Expenditures/Others Expenditures,budget,central government,A,2007-01-01,50608.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure116,Development Expenditures,budget,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure117,Rupiah Financing,budget,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure118,Project aid,budget,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure119,Regional Budget Expenditures,budget,central government,A,2007-01-01,254201.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure120,Balance Budget,budget,central government,A,2007-01-01,244608.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure121,Revenue Sharing Funds,budget,central government,A,2007-01-01,62726.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure122,General Allocation Funds,budget,central government,A,2007-01-01,164787.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure123,Special Allocation Funds,budget,central government,A,2007-01-01,17094.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,expenditure124,Special Autonomy,budget,central government,A,2007-01-01,9593.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing101,Surplus / Deficit,actual,central government,A,2007-01-01,-49844.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing102,"Financing, Nett",actual,central government,A,2007-01-01,42457.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing103,Domestic Financing,actual,central government,A,2007-01-01,66309.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing104,Domestic Bank Financing,actual,central government,A,2007-01-01,11143.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing105,Government Account,actual,central government,A,2007-01-01,10652.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing106,Moratorium Funds,actual,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing107,Domestic Non Bank Financing,actual,central government,A,2007-01-01,57889.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing108,Privatization,actual,central government,A,2007-01-01,3004.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing109,Asset Management,actual,central government,A,2007-01-01,2413.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing110,"Government Bonds, Net",actual,central government,A,2007-01-01,57172.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing111,Issuance of Government Bonds,actual,central government,A,2007-01-01,116858.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing112,Bonds Redemption and buyback,actual,central government,A,2007-01-01,-59686.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing113,Capital,actual,central government,A,2007-01-01,-4700.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing114,Aid Chaneling,actual,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing115,Others,actual,central government,A,2007-01-01,491.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing116,Infrastructur Funds,actual,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing117,Investment Funds,actual,central government,A,2007-01-01,-2000.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing118,Foreign Financing (nett),actual,central government,A,2007-01-01,-23852.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing119,Gross Drawing,actual,central government,A,2007-01-01,34070.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing120,Program Aid,actual,central government,A,2007-01-01,19608.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing121,Project Aid,actual,central government,A,2007-01-01,14463.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing122,Amortization,actual,central government,A,2007-01-01,-57923.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing123,Financing Surplus/Deficit,actual,central government,A,2007-01-01,-7387.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing124,Additional Debt Financing/Two Step Loan,actual,central government,A,2007-01-01,-2723.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing101,Surplus / Deficit,budget,central government,A,2007-01-01,-58285.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing102,"Financing, Nett",budget,central government,A,2007-01-01,58285.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing103,Domestic Financing,budget,central government,A,2007-01-01,70826.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing104,Domestic Bank Financing,budget,central government,A,2007-01-01,10622.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing105,Government Account,budget,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing106,Moratorium Funds,budget,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing107,Domestic Non Bank Financing,budget,central government,A,2007-01-01,60204.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing108,Privatization,budget,central government,A,2007-01-01,4700.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing109,Asset Management,budget,central government,A,2007-01-01,1658.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing110,"Government Bonds, Net",budget,central government,A,2007-01-01,58546.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing111,Issuance of Government Bonds,budget,central government,A,2007-01-01,99266.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing112,Bonds Redemption and buyback,budget,central government,A,2007-01-01,-40720.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing113,Capital,budget,central government,A,2007-01-01,-4700.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing114,Aid Chaneling,budget,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing115,Others,budget,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing116,Infrastructur Funds,budget,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing117,Investment Funds,budget,central government,A,2007-01-01,-2000.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing118,Foreign Financing (nett),budget,central government,A,2007-01-01,-12540.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing119,Gross Drawing,budget,central government,A,2007-01-01,42210.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing120,Program Aid,budget,central government,A,2007-01-01,19005.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing121,Project Aid,budget,central government,A,2007-01-01,23205.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing122,Amortization,budget,central government,A,2007-01-01,-54751.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing123,Financing Surplus/Deficit,budget,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
+ID,fiscal,financing124,Additional Debt Financing/Two Step Loan,budget,central government,A,2007-01-01,0.0,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
 ID,fiscal,revenue01,Government Revenues and Grants,actual,central government,A,2008-01-01,981609.38,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
 ID,fiscal,revenue02,Domestic Revenues,actual,central government,A,2008-01-01,979305.37,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09
 ID,fiscal,revenue03,Tax Revenues,actual,central government,A,2008-01-01,658700.8,Rp billion,Bank Indonesia SEKI (Ministry of Finance data),F2025-2026-09

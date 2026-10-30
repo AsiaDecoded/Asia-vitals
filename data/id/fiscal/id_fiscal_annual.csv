@@ -1,4 +1,995 @@
 year,table,basis,item,label,label_id,value,through,released,note
+2001,revenue,actual,101,Government Revenues and Grants,Pendapatan Negara dan Hibah,301078.0,,,SEKI 2001-2007 sheet
+2001,revenue,actual,102,Domestic Revenues,Penerimaan Dalam Negeri,300600.0,,,SEKI 2001-2007 sheet
+2001,revenue,actual,103,Tax Revenues,Penerimaan Perpajakan,185541.0,,,SEKI 2001-2007 sheet
+2001,revenue,actual,104,Domestic Taxes,Pajak Dalam Negeri,175974.0,,,SEKI 2001-2007 sheet
+2001,revenue,actual,105,Income Tax,Pajak Penghasilan (PPh),94576.0,,,SEKI 2001-2007 sheet: PPH
+2001,revenue,actual,106,i. Non Oil and Gas,Non Migas,71474.0,,,SEKI 2001-2007 sheet
+2001,revenue,actual,107,ii. Oil and Gas,Migas,23102.0,,,SEKI 2001-2007 sheet
+2001,revenue,actual,108,Value Added Tax,Pajak Pertambahan Nilai (PPN),55957.0,,,SEKI 2001-2007 sheet: PPN
+2001,revenue,actual,109,Land and Building Tax,Pajak Bumi dan Bangunan (PBB),5246.0,,,SEKI 2001-2007 sheet: PBB
+2001,revenue,actual,110,Duties on Land and Building Transfers,Bea Perolehan Hak Atas Tanah dan Bangunan (BPHTB)1,1417.0,,,SEKI 2001-2007 sheet: BPHTB
+2001,revenue,actual,111,Exercise Duties,Cukai,17394.0,,,SEKI 2001-2007 sheet
+2001,revenue,actual,112,Others Domestic Taxes,Pajak Lainnya,1384.0,,,SEKI 2001-2007 sheet
+2001,revenue,actual,113,International Trade Taxes,Pajak Perdagangan Internasional,9567.0,,,SEKI 2001-2007 sheet
+2001,revenue,actual,114,Import,Bea Masuk,9026.0,,,SEKI 2001-2007 sheet
+2001,revenue,actual,115,Export,Pajak Ekspor,541.0,,,SEKI 2001-2007 sheet
+2001,revenue,actual,116,Non Taxes Revenues,Penerimaan Negara Bukan Pajak,115059.0,,,SEKI 2001-2007 sheet
+2001,revenue,actual,117,Natural Resources,Penerimaan Sumber Daya Alam,85672.0,,,SEKI 2001-2007 sheet
+2001,revenue,actual,118,Oil Revenues,Minyak Bumi,58950.0,,,SEKI 2001-2007 sheet
+2001,revenue,actual,119,Gas Revenues,Gas Alam,22091.0,,,SEKI 2001-2007 sheet
+2001,revenue,actual,120,Profit Transfers From SOE's,Bagian Laba BUMN,8837.0,,,SEKI 2001-2007 sheet
+2001,revenue,actual,121,Bank Indonesia Surplus,Surplus Bank Indonesia,0.0,,,SEKI 2001-2007 sheet
+2001,revenue,actual,122,Revenue from Public Service Institution,Pendapatan Badan Layanan Umum,0.0,,,SEKI 2001-2007 sheet
+2001,revenue,actual,123,Other Non Tax Revenues,PNBP lainnya,20550.0,,,SEKI 2001-2007 sheet
+2001,revenue,actual,124,Grants,Hibah,478.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,101,Government Revenues and Grants,Pendapatan Negara dan Hibah,299851.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,102,Domestic Revenues,Penerimaan Dalam Negeri,299842.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,103,Tax Revenues,Penerimaan Perpajakan,184737.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,104,Domestic Taxes,Pajak Dalam Negeri,174189.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,105,Income Tax,Pajak Penghasilan (PPh),92767.0,,,SEKI 2001-2007 sheet: PPH
+2001,revenue,budget,106,i. Non Oil and Gas,Non Migas,69696.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,107,ii. Oil and Gas,Migas,23071.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,108,Value Added Tax,Pajak Pertambahan Nilai (PPN),55841.0,,,SEKI 2001-2007 sheet: PPN
+2001,revenue,budget,109,Land and Building Tax,Pajak Bumi dan Bangunan (PBB),4800.0,,,SEKI 2001-2007 sheet: PBB
+2001,revenue,budget,110,Duties on Land and Building Transfers,Bea Perolehan Hak Atas Tanah dan Bangunan (BPHTB)1,1489.0,,,SEKI 2001-2007 sheet: BPHTB
+2001,revenue,budget,111,Exercise Duties,Cukai,17622.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,112,Others Domestic Taxes,Pajak Lainnya,1670.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,113,International Trade Taxes,Pajak Perdagangan Internasional,10548.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,114,Import,Bea Masuk,9828.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,115,Export,Pajak Ekspor,720.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,116,Non Taxes Revenues,Penerimaan Negara Bukan Pajak,115105.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,117,Natural Resources,Penerimaan Sumber Daya Alam,86658.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,118,Oil Revenues,Minyak Bumi,60038.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,119,Gas Revenues,Gas Alam,21847.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,120,Profit Transfers From SOE's,Bagian Laba BUMN,10440.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,121,Bank Indonesia Surplus,Surplus Bank Indonesia,0.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,122,Revenue from Public Service Institution,Pendapatan Badan Layanan Umum,0.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,123,Other Non Tax Revenues,PNBP lainnya,18007.0,,,SEKI 2001-2007 sheet
+2001,revenue,budget,124,Grants,Hibah,10.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,101,Government Expenditures,Belanja Negara,341563.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,102,Central Governement Expenditures,Belanja Pemerintah Pusat,260508.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,103,Current Expenditures,Pengeluaran Rutin,218923.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,104,Personnel,Belanja Pegawai,38713.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,105,Goods and Services,Belanja Barang,9931.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,106,Capital,Belanja Modal,0.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,107,Interest payment,Pembayaran Bunga Utang,87142.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,108,Domestic Interest,Utang Dalam Negeri,58197.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,109,External Interest,Utang Luar Negeri,28945.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,110,Additional Interest,Tambahan Bunga,0.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,111,Subsidies,Subsidi,77443.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,112,Oil Subsidies,Subsidi BBM,68381.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,113,Non Oil Subsidies,Subsidi Non BBM,9063.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,114,Social Assistance,Bantuan Sosial,0.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,115,Others Current Expenditures/Others Expenditures,Pengeluaran rutin lainnya /Belanja Lainnya 1),5694.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,116,Development Expenditures1),Pengeluaran Pembangunan,41585.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,117,Rupiah Financing,Pembiayaan Pembangunan Rupiah,21370.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,118,Project aid,Pembiayaan Proyek,20214.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,119,Regional Budget Expenditures,Transfer Ke Daerah dan Dana Desa,81054.0,,,SEKI 2001-2007 sheet: Anggaran Belanja untuk Daerah/ Transfer ke Daerah
+2001,expenditure,actual,120,Balance Budget,Dana Perimbangan,81054.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,121,Revenue Sharing Funds,Dana Bagi Hasil,20709.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,122,General Allocation Funds,Dana Alokasi Umum,60346.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,123,Special Allocation Funds,Dana Alokasi Khusus,0.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,124,Special Autonomy,Dana otonomi khusus dan penyeimbangan,0.0,,,SEKI 2001-2007 sheet
+2001,expenditure,actual,125,Suspend,Suspen,0.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,101,Government Expenditures,Belanja Negara,354578.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,102,Central Government Expenditures,Belanja Pemerintah Pusat,272178.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,103,Current Expenditures,Pengeluaran Rutin,232796.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,104,Personnel,Belanja Pegawai,39544.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,105,Goods and Services,Belanja Barang,9604.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,106,Capital,Belanja Modal,0.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,107,Interest payment,Pembayaran Bunga Utang,95527.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,108,Domestic Interest,Utang Dalam Negeri,66251.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,109,External Interest,Utang Luar Negeri,29277.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,110,Additional Interest,Tambahan Bunga,0.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,111,Subsidies,Subsidi,81575.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,112,Oil Subsidies,Subsidi BBM,68381.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,113,Non Oil Subsidies,Subsidi Non BBM,13194.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,114,Social Assistance,Bantuan Sosial,0.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,115,Others Current Expenditures/Others Expenditures,Belanja Lainnya,6546.0,,,SEKI 2001-2007 sheet: Pengeluaran rutin lainnya /Belanja Lainnya
+2001,expenditure,budget,116,Development Expenditures,Pengeluaran Pembangunan,39382.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,117,Rupiah Financing,Pembiayaan Pembangunan Rupiah,19712.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,118,Project aid,Pembiayaan Proyek,19670.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,119,Regional Budget Expenditures,Transfer Ke Daerah dan Dana Desa,82400.0,,,SEKI 2001-2007 sheet: Anggaran Belanja untuk Daerah/ Transfer ke Daerah
+2001,expenditure,budget,120,Balance Budget,Dana Perimbangan,82400.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,121,Revenue Sharing Funds,Dana Bagi Hasil,21183.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,122,General Allocation Funds,Dana Alokasi Umum,60517.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,123,Special Allocation Funds,Dana Alokasi Khusus,701.0,,,SEKI 2001-2007 sheet
+2001,expenditure,budget,124,Special Autonomy,Dana otonomi khusus dan penyeimbangan,0.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,101,Surplus / Deficit,Surplus / Defisit,-40485.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,102,"Financing, Nett",Pembiayaan Bersih,40485.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,103,Domestic Financing,Pembiayaan Dalam Negeri,30218.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,104,Domestic Bank Financing,Perbankan Dalam Negeri (SAL/SAK),-1228.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,105,Government Account,Rekening Pemerintah,-1228.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,106,Moratorium Funds,Dana Moratorium,0.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,107,Domestic Non Bank Financing,Non Perbankan Dalam Negeri,31445.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,108,Privatization,Penerimaan Privatisasi,3465.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,109,Asset Management,Pengelolaan Aset,27980.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,110,"Government Bonds, Net",Obligasi Negara,0.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,111,Issuance of Government Bonds,Penerbitan Obligasi Pemerintah,0.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,112,Bonds Redemption and buyback,Pembayaran cicilan pokok obligasi dan pembelian kembali,0.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,113,Capital,Penyertaan Modal Negara,0.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,114,Aid Chaneling,Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,115,Others,Lain-lain,0.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,116,Infrastructur Funds,Dana Infrastruktur,0.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,117,Investment Funds,Dana Investasi Pemerintah,0.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,118,Foreign Financing (nett),Pembiayaan Luar Negeri,10267.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,119,Gross Drawing,"Penarikan Pinjaman Luar Negeri, bruto",26152.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,120,Program Aid,Pinjaman Program,6416.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,121,Project Aid,Pinjaman Proyek,19736.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,122,Amortization,"Pembayaran cicilan, pokok hutang LN (amortisasi)",-15885.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,123,Financing Surplus/Deficit,Sisa Lebih (Kurang )Pembiayaan Anggaran-SILPA (SIKPA),0.0,,,SEKI 2001-2007 sheet
+2001,financing,actual,124,Additional Debt Financing/Two Step Loan,Tambahan Pembiayaan Utang/Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,101,Surplus / Deficit,Surplus / Defisit,-54727.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,102,"Financing, Nett",Pembiayaan Bersih,54727.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,103,Domestic Financing,Pembiayaan Dalam Negeri,44189.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,104,Domestic Bank Financing,Perbankan Dalam Negeri (SAL/SAK),7551.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,105,Government Account,Rekening Pemerintah,0.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,106,Moratorium Funds,Dana Moratorium,0.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,107,Domestic Non Bank Financing,Non Perbankan Dalam Negeri,36638.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,108,Privatization,Penerimaan Privatisasi,5000.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,109,Asset Management,Pengelolaan Aset,30980.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,110,"Government Bonds, Net",Obligasi Negara,658.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,111,Issuance of Government Bonds,Penerbitan Obligasi Pemerintah,658.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,112,Bonds Redemption and buyback,Pembayaran cicilan pokok obligasi dan pembelian kembali,0.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,113,Capital,Penyertaan Modal Negara,0.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,114,Aid Chaneling,Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,115,Others,Lain-lain,0.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,116,Infrastructur Funds,Dana Infrastruktur,0.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,117,Investment Funds,Dana Investasi Pemerintah,0.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,118,Foreign Financing (nett),Pembiayaan Luar Negeri,10538.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,119,Gross Drawing,"Penarikan Pinjaman Luar Negeri, bruto",30284.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,120,Program Aid,Pinjaman Program,10624.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,121,Project Aid,Pinjaman Proyek,19660.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,122,Amortization,"Pembayaran cicilan, pokok hutang LN (amortisasi)",-19746.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,123,Financing Surplus/Deficit,Sisa Lebih (Kurang )Pembiayaan Anggaran-SILPA (SIKPA),0.0,,,SEKI 2001-2007 sheet
+2001,financing,budget,124,Additional Debt Financing/Two Step Loan,Tambahan Pembiayaan Utang/Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,101,Government Revenues and Grants,Pendapatan Negara dan Hibah,298528.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,102,Domestic Revenues,Penerimaan Dalam Negeri,298528.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,103,Tax Revenues,Penerimaan Perpajakan,210088.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,104,Domestic Taxes,Pajak Dalam Negeri,199512.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,105,Income Tax,Pajak Penghasilan (PPh),101874.0,,,SEKI 2001-2007 sheet: PPH
+2002,revenue,actual,106,i. Non Oil and Gas,Non Migas,84404.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,107,ii. Oil and Gas,Migas,17469.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,108,Value Added Tax,Pajak Pertambahan Nilai (PPN),65153.0,,,SEKI 2001-2007 sheet: PPN
+2002,revenue,actual,109,Land and Building Tax,Pajak Bumi dan Bangunan (PBB),6228.0,,,SEKI 2001-2007 sheet: PBB
+2002,revenue,actual,110,Duties on Land and Building Transfers,Bea Perolehan Hak Atas Tanah dan Bangunan (BPHTB)1,1600.0,,,SEKI 2001-2007 sheet: BPHTB
+2002,revenue,actual,111,Exercise Duties,Cukai,23189.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,112,Others Domestic Taxes,Pajak Lainnya,1469.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,113,International Trade Taxes,Pajak Perdagangan Internasional,10575.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,114,Import,Bea Masuk,10344.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,115,Export,Pajak Ekspor,231.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,116,Non Taxes Revenues,Penerimaan Negara Bukan Pajak,88440.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,117,Natural Resources,Penerimaan Sumber Daya Alam,64755.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,118,Oil Revenues,Minyak Bumi,47686.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,119,Gas Revenues,Gas Alam,12325.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,120,Profit Transfers From SOE's,Bagian Laba BUMN,9760.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,121,Bank Indonesia Surplus,Surplus Bank Indonesia,0.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,122,Revenue from Public Service Institution,Pendapatan Badan Layanan Umum,0.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,123,Other Non Tax Revenues,PNBP lainnya,13925.0,,,SEKI 2001-2007 sheet
+2002,revenue,actual,124,Grants,Hibah,0.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,101,Government Revenues and Grants,Pendapatan Negara dan Hibah,305151.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,102,Domestic Revenues,Penerimaan Dalam Negeri,304895.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,103,Tax Revenues,Penerimaan Perpajakan,214713.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,104,Domestic Taxes,Pajak Dalam Negeri,202569.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,105,Income Tax,Pajak Penghasilan (PPh),103314.0,,,SEKI 2001-2007 sheet: PPH
+2002,revenue,budget,106,i. Non Oil and Gas,Non Migas,87200.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,107,ii. Oil and Gas,Migas,16114.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,108,Value Added Tax,Pajak Pertambahan Nilai (PPN),67800.0,,,SEKI 2001-2007 sheet: PPN
+2002,revenue,budget,109,Land and Building Tax,Pajak Bumi dan Bangunan (PBB),6031.0,,,SEKI 2001-2007 sheet: PBB
+2002,revenue,budget,110,Duties on Land and Building Transfers,Bea Perolehan Hak Atas Tanah dan Bangunan (BPHTB)1,1500.0,,,SEKI 2001-2007 sheet: BPHTB
+2002,revenue,budget,111,Exercise Duties,Cukai,22469.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,112,Others Domestic Taxes,Pajak Lainnya,1455.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,113,International Trade Taxes,Pajak Perdagangan Internasional,12145.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,114,Import,Bea Masuk,11839.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,115,Export,Pajak Ekspor,305.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,116,Non Taxes Revenues,Penerimaan Negara Bukan Pajak,90182.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,117,Natural Resources,Penerimaan Sumber Daya Alam,68002.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,118,Oil Revenues,Minyak Bumi,47679.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,119,Gas Revenues,Gas Alam,16347.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,120,Profit Transfers From SOE's,Bagian Laba BUMN,10907.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,121,Bank Indonesia Surplus,Surplus Bank Indonesia,0.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,122,Revenue from Public Service Institution,Pendapatan Badan Layanan Umum,0.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,123,Other Non Tax Revenues,PNBP lainnya,11273.0,,,SEKI 2001-2007 sheet
+2002,revenue,budget,124,Grants,Hibah,256.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,101,Government Expenditures,Belanja Negara,322180.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,102,Central Governement Expenditures,Belanja Pemerintah Pusat,223976.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,103,Current Expenditures,Pengeluaran Rutin,186651.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,104,Personnel,Belanja Pegawai,39480.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,105,Goods and Services,Belanja Barang,12777.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,106,Capital,Belanja Modal,0.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,107,Interest payment,Pembayaran Bunga Utang,87667.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,108,Domestic Interest,Utang Dalam Negeri,62261.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,109,External Interest,Utang Luar Negeri,25406.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,110,Additional Interest,Tambahan Bunga,0.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,111,Subsidies,Subsidi,43628.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,112,Oil Subsidies,Subsidi BBM,31162.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,113,Non Oil Subsidies,Subsidi Non BBM,12466.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,114,Social Assistance,Bantuan Sosial,0.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,115,Others Current Expenditures/Others Expenditures,Pengeluaran rutin lainnya /Belanja Lainnya 1),3099.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,116,Development Expenditures1),Pengeluaran Pembangunan,37325.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,117,Rupiah Financing,Pembiayaan Pembangunan Rupiah,25608.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,118,Project aid,Pembiayaan Proyek,11717.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,119,Regional Budget Expenditures,Transfer Ke Daerah dan Dana Desa,98204.0,,,SEKI 2001-2007 sheet: Anggaran Belanja untuk Daerah/ Transfer ke Daerah
+2002,expenditure,actual,120,Balance Budget,Dana Perimbangan,94657.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,121,Revenue Sharing Funds,Dana Bagi Hasil,25497.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,122,General Allocation Funds,Dana Alokasi Umum,69159.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,123,Special Allocation Funds,Dana Alokasi Khusus,0.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,124,Special Autonomy,Dana otonomi khusus dan penyeimbangan,3548.0,,,SEKI 2001-2007 sheet
+2002,expenditure,actual,125,Suspend,Suspen,0.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,101,Government Expenditures,Belanja Negara,345605.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,102,Central Government Expenditures,Belanja Pemerintah Pusat,247796.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,103,Current Expenditures,Pengeluaran Rutin,200382.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,104,Personnel,Belanja Pegawai,42196.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,105,Goods and Services,Belanja Barang,13899.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,106,Capital,Belanja Modal,0.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,107,Interest payment,Pembayaran Bunga Utang,91538.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,108,Domestic Interest,Utang Dalam Negeri,63213.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,109,External Interest,Utang Luar Negeri,28325.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,110,Additional Interest,Tambahan Bunga,0.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,111,Subsidies,Subsidi,42636.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,112,Oil Subsidies,Subsidi BBM,31162.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,113,Non Oil Subsidies,Subsidi Non BBM,11474.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,114,Social Assistance,Bantuan Sosial,0.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,115,Others Current Expenditures/Others Expenditures,Belanja Lainnya,10114.0,,,SEKI 2001-2007 sheet: Pengeluaran rutin lainnya /Belanja Lainnya
+2002,expenditure,budget,116,Development Expenditures,Pengeluaran Pembangunan,47414.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,117,Rupiah Financing,Pembiayaan Pembangunan Rupiah,27194.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,118,Project aid,Pembiayaan Proyek,20220.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,119,Regional Budget Expenditures,Transfer Ke Daerah dan Dana Desa,97809.0,,,SEKI 2001-2007 sheet: Anggaran Belanja untuk Daerah/ Transfer ke Daerah
+2002,expenditure,budget,120,Balance Budget,Dana Perimbangan,94038.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,121,Revenue Sharing Funds,Dana Bagi Hasil,24266.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,122,General Allocation Funds,Dana Alokasi Umum,69114.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,123,Special Allocation Funds,Dana Alokasi Khusus,658.0,,,SEKI 2001-2007 sheet
+2002,expenditure,budget,124,Special Autonomy,Dana otonomi khusus dan penyeimbangan,3770.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,101,Surplus / Deficit,Surplus / Defisit,-23652.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,102,"Financing, Nett",Pembiayaan Bersih,17107.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,103,Domestic Financing,Pembiayaan Dalam Negeri,17024.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,104,Domestic Bank Financing,Perbankan Dalam Negeri (SAL/SAK),-8140.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,105,Government Account,Rekening Pemerintah,-8140.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,106,Moratorium Funds,Dana Moratorium,0.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,107,Domestic Non Bank Financing,Non Perbankan Dalam Negeri,25164.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,108,Privatization,Penerimaan Privatisasi,7665.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,109,Asset Management,Pengelolaan Aset,19439.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,110,"Government Bonds, Net",Obligasi Negara,-1939.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,111,Issuance of Government Bonds,Penerbitan Obligasi Pemerintah,1991.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,112,Bonds Redemption and buyback,Pembayaran cicilan pokok obligasi dan pembelian kembali,-3931.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,113,Capital,Penyertaan Modal Negara,0.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,114,Aid Chaneling,Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,115,Others,Lain-lain,0.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,116,Infrastructur Funds,Dana Infrastruktur,0.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,117,Investment Funds,Dana Investasi Pemerintah,0.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,118,Foreign Financing (nett),Pembiayaan Luar Negeri,83.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,119,Gross Drawing,"Penarikan Pinjaman Luar Negeri, bruto",18887.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,120,Program Aid,Pinjaman Program,7170.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,121,Project Aid,Pinjaman Proyek,11717.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,122,Amortization,"Pembayaran cicilan, pokok hutang LN (amortisasi)",-18804.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,123,Financing Surplus/Deficit,Sisa Lebih (Kurang )Pembiayaan Anggaran-SILPA (SIKPA),-6546.0,,,SEKI 2001-2007 sheet
+2002,financing,actual,124,Additional Debt Financing/Two Step Loan,Tambahan Pembiayaan Utang/Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,101,Surplus / Deficit,Surplus / Defisit,-40454.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,102,"Financing, Nett",Pembiayaan Bersih,40454.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,103,Domestic Financing,Pembiayaan Dalam Negeri,24190.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,104,Domestic Bank Financing,Perbankan Dalam Negeri (SAL/SAK),197.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,105,Government Account,Rekening Pemerintah,0.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,106,Moratorium Funds,Dana Moratorium,0.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,107,Domestic Non Bank Financing,Non Perbankan Dalam Negeri,23993.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,108,Privatization,Penerimaan Privatisasi,4444.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,109,Asset Management,Pengelolaan Aset,19549.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,110,"Government Bonds, Net",Obligasi Negara,0.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,111,Issuance of Government Bonds,Penerbitan Obligasi Pemerintah,3931.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,112,Bonds Redemption and buyback,Pembayaran cicilan pokok obligasi dan pembelian kembali,-3931.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,113,Capital,Penyertaan Modal Negara,0.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,114,Aid Chaneling,Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,115,Others,Lain-lain,0.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,116,Infrastructur Funds,Dana Infrastruktur,0.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,117,Investment Funds,Dana Investasi Pemerintah,0.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,118,Foreign Financing (nett),Pembiayaan Luar Negeri,16264.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,119,Gross Drawing,"Penarikan Pinjaman Luar Negeri, bruto",29310.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,120,Program Aid,Pinjaman Program,9346.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,121,Project Aid,Pinjaman Proyek,19964.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,122,Amortization,"Pembayaran cicilan, pokok hutang LN (amortisasi)",-13046.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,123,Financing Surplus/Deficit,Sisa Lebih (Kurang )Pembiayaan Anggaran-SILPA (SIKPA),0.0,,,SEKI 2001-2007 sheet
+2002,financing,budget,124,Additional Debt Financing/Two Step Loan,Tambahan Pembiayaan Utang/Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,101,Government Revenues and Grants,Pendapatan Negara dan Hibah,341396.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,102,Domestic Revenues,Penerimaan Dalam Negeri,340928.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,103,Tax Revenues,Penerimaan Perpajakan,242048.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,104,Domestic Taxes,Pajak Dalam Negeri,230934.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,105,Income Tax,Pajak Penghasilan (PPh),115016.0,,,SEKI 2001-2007 sheet: PPH
+2003,revenue,actual,106,i. Non Oil and Gas,Non Migas,96053.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,107,ii. Oil and Gas,Migas,18963.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,108,Value Added Tax,Pajak Pertambahan Nilai (PPN),77082.0,,,SEKI 2001-2007 sheet: PPN
+2003,revenue,actual,109,Land and Building Tax,Pajak Bumi dan Bangunan (PBB),8762.0,,,SEKI 2001-2007 sheet: PBB
+2003,revenue,actual,110,Duties on Land and Building Transfers,Bea Perolehan Hak Atas Tanah dan Bangunan (BPHTB)1,2144.0,,,SEKI 2001-2007 sheet: BPHTB
+2003,revenue,actual,111,Exercise Duties,Cukai,26277.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,112,Others Domestic Taxes,Pajak Lainnya,1654.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,113,International Trade Taxes,Pajak Perdagangan Internasional,11114.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,114,Import,Bea Masuk,10885.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,115,Export,Pajak Ekspor,230.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,116,Non Taxes Revenues,Penerimaan Negara Bukan Pajak,98880.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,117,Natural Resources,Penerimaan Sumber Daya Alam,67510.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,118,Oil Revenues,Minyak Bumi,42969.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,119,Gas Revenues,Gas Alam,18533.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,120,Profit Transfers From SOE's,Bagian Laba BUMN,12617.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,121,Bank Indonesia Surplus,Surplus Bank Indonesia,0.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,122,Revenue from Public Service Institution,Pendapatan Badan Layanan Umum,0.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,123,Other Non Tax Revenues,PNBP lainnya,18754.0,,,SEKI 2001-2007 sheet
+2003,revenue,actual,124,Grants,Hibah,468.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,101,Government Revenues and Grants,Pendapatan Negara dan Hibah,342812.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,102,Domestic Revenues,Penerimaan Dalam Negeri,342472.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,103,Tax Revenues,Penerimaan Perpajakan,248470.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,104,Domestic Taxes,Pajak Dalam Negeri,236902.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,105,Income Tax,Pajak Penghasilan (PPh),122448.0,,,SEKI 2001-2007 sheet: PPH
+2003,revenue,budget,106,i. Non Oil and Gas,Non Migas,104305.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,107,ii. Oil and Gas,Migas,18144.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,108,Value Added Tax,Pajak Pertambahan Nilai (PPN),75863.0,,,SEKI 2001-2007 sheet: PPN
+2003,revenue,budget,109,Land and Building Tax,Pajak Bumi dan Bangunan (PBB),8874.0,,,SEKI 2001-2007 sheet: PBB
+2003,revenue,budget,110,Duties on Land and Building Transfers,Bea Perolehan Hak Atas Tanah dan Bangunan (BPHTB)1,1850.0,,,SEKI 2001-2007 sheet: BPHTB
+2003,revenue,budget,111,Exercise Duties,Cukai,26114.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,112,Others Domestic Taxes,Pajak Lainnya,1753.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,113,International Trade Taxes,Pajak Perdagangan Internasional,11568.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,114,Import,Bea Masuk,11333.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,115,Export,Pajak Ekspor,236.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,116,Non Taxes Revenues,Penerimaan Negara Bukan Pajak,94002.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,117,Natural Resources,Penerimaan Sumber Daya Alam,64991.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,118,Oil Revenues,Minyak Bumi,41679.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,119,Gas Revenues,Gas Alam,18685.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,120,Profit Transfers From SOE's,Bagian Laba BUMN,12290.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,121,Bank Indonesia Surplus,Surplus Bank Indonesia,0.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,122,Revenue from Public Service Institution,Pendapatan Badan Layanan Umum,0.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,123,Other Non Tax Revenues,PNBP lainnya,16720.0,,,SEKI 2001-2007 sheet
+2003,revenue,budget,124,Grants,Hibah,340.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,101,Government Expenditures,Belanja Negara,376505.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,102,Central Governement Expenditures,Belanja Pemerintah Pusat,256191.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,103,Current Expenditures,Pengeluaran Rutin,186944.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,104,Personnel,Belanja Pegawai,47662.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,105,Goods and Services,Belanja Barang,14992.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,106,Capital,Belanja Modal,0.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,107,Interest payment,Pembayaran Bunga Utang,65351.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,108,Domestic Interest,Utang Dalam Negeri,46356.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,109,External Interest,Utang Luar Negeri,18995.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,110,Additional Interest,Tambahan Bunga,0.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,111,Subsidies,Subsidi,43899.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,112,Oil Subsidies,Subsidi BBM,30038.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,113,Non Oil Subsidies,Subsidi Non BBM,13861.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,114,Social Assistance,Bantuan Sosial,0.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,115,Others Current Expenditures/Others Expenditures,Pengeluaran rutin lainnya /Belanja Lainnya 1),15042.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,116,Development Expenditures1),Pengeluaran Pembangunan,69247.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,117,Rupiah Financing,Pembiayaan Pembangunan Rupiah,50345.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,118,Project aid,Pembiayaan Proyek,18902.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,119,Regional Budget Expenditures,Transfer Ke Daerah dan Dana Desa,120314.0,,,SEKI 2001-2007 sheet: Anggaran Belanja untuk Daerah/ Transfer ke Daerah
+2003,expenditure,actual,120,Balance Budget,Dana Perimbangan,111070.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,121,Revenue Sharing Funds,Dana Bagi Hasil,31370.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,122,General Allocation Funds,Dana Alokasi Umum,76978.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,123,Special Allocation Funds,Dana Alokasi Khusus,2723.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,124,Special Autonomy,Dana otonomi khusus dan penyeimbangan,9244.0,,,SEKI 2001-2007 sheet
+2003,expenditure,actual,125,Suspend,Suspen,0.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,101,Government Expenditures,Belanja Negara,377248.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,102,Central Government Expenditures,Belanja Pemerintah Pusat,257934.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,103,Current Expenditures,Pengeluaran Rutin,191788.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,104,Personnel,Belanja Pegawai,50426.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,105,Goods and Services,Belanja Barang,16151.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,106,Capital,Belanja Modal,0.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,107,Interest payment,Pembayaran Bunga Utang,72151.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,108,Domestic Interest,Utang Dalam Negeri,48897.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,109,External Interest,Utang Luar Negeri,23255.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,110,Additional Interest,Tambahan Bunga,0.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,111,Subsidies,Subsidi,34726.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,112,Oil Subsidies,Subsidi BBM,24512.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,113,Non Oil Subsidies,Subsidi Non BBM,10214.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,114,Social Assistance,Bantuan Sosial,0.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,115,Others Current Expenditures/Others Expenditures,Belanja Lainnya,18334.0,,,SEKI 2001-2007 sheet: Pengeluaran rutin lainnya /Belanja Lainnya
+2003,expenditure,budget,116,Development Expenditures,Pengeluaran Pembangunan,66146.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,117,Rupiah Financing,Pembiayaan Pembangunan Rupiah,51053.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,118,Project aid,Pembiayaan Proyek,15094.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,119,Regional Budget Expenditures,Transfer Ke Daerah dan Dana Desa,119314.0,,,SEKI 2001-2007 sheet: Anggaran Belanja untuk Daerah/ Transfer ke Daerah
+2003,expenditure,budget,120,Balance Budget,Dana Perimbangan,109927.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,121,Revenue Sharing Funds,Dana Bagi Hasil,29925.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,122,General Allocation Funds,Dana Alokasi Umum,76978.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,123,Special Allocation Funds,Dana Alokasi Khusus,3024.0,,,SEKI 2001-2007 sheet
+2003,expenditure,budget,124,Special Autonomy,Dana otonomi khusus dan penyeimbangan,9387.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,101,Surplus / Deficit,Surplus / Defisit,-35109.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,102,"Financing, Nett",Pembiayaan Bersih,35109.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,103,Domestic Financing,Pembiayaan Dalam Negeri,34562.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,104,Domestic Bank Financing,Perbankan Dalam Negeri (SAL/SAK),10705.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,105,Government Account,Rekening Pemerintah,10705.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,106,Moratorium Funds,Dana Moratorium,0.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,107,Domestic Non Bank Financing,Non Perbankan Dalam Negeri,23857.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,108,Privatization,Penerimaan Privatisasi,7301.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,109,Asset Management,Pengelolaan Aset,19661.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,110,"Government Bonds, Net",Obligasi Negara,-3105.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,111,Issuance of Government Bonds,Penerbitan Obligasi Pemerintah,11319.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,112,Bonds Redemption and buyback,Pembayaran cicilan pokok obligasi dan pembelian kembali,-14424.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,113,Capital,Penyertaan Modal Negara,0.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,114,Aid Chaneling,Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,115,Others,Lain-lain,0.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,116,Infrastructur Funds,Dana Infrastruktur,0.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,117,Investment Funds,Dana Investasi Pemerintah,0.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,118,Foreign Financing (nett),Pembiayaan Luar Negeri,548.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,119,Gross Drawing,"Penarikan Pinjaman Luar Negeri, bruto",20360.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,120,Program Aid,Pinjaman Program,1792.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,121,Project Aid,Pinjaman Proyek,18568.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,122,Amortization,"Pembayaran cicilan, pokok hutang LN (amortisasi)",-19812.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,123,Financing Surplus/Deficit,Sisa Lebih (Kurang )Pembiayaan Anggaran-SILPA (SIKPA),0.0,,,SEKI 2001-2007 sheet
+2003,financing,actual,124,Additional Debt Financing/Two Step Loan,Tambahan Pembiayaan Utang/Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,101,Surplus / Deficit,Surplus / Defisit,-34436.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,102,"Financing, Nett",Pembiayaan Bersih,34436.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,103,Domestic Financing,Pembiayaan Dalam Negeri,31530.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,104,Domestic Bank Financing,Perbankan Dalam Negeri (SAL/SAK),8500.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,105,Government Account,Rekening Pemerintah,0.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,106,Moratorium Funds,Dana Moratorium,0.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,107,Domestic Non Bank Financing,Non Perbankan Dalam Negeri,23030.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,108,Privatization,Penerimaan Privatisasi,6440.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,109,Asset Management,Pengelolaan Aset,19561.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,110,"Government Bonds, Net",Obligasi Negara,-2971.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,111,Issuance of Government Bonds,Penerbitan Obligasi Pemerintah,11670.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,112,Bonds Redemption and buyback,Pembayaran cicilan pokok obligasi dan pembelian kembali,-14641.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,113,Capital,Penyertaan Modal Negara,0.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,114,Aid Chaneling,Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,115,Others,Lain-lain,0.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,116,Infrastructur Funds,Dana Infrastruktur,0.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,117,Investment Funds,Dana Investasi Pemerintah,0.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,118,Foreign Financing (nett),Pembiayaan Luar Negeri,2906.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,119,Gross Drawing,"Penarikan Pinjaman Luar Negeri, bruto",20498.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,120,Program Aid,Pinjaman Program,5745.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,121,Project Aid,Pinjaman Proyek,14753.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,122,Amortization,"Pembayaran cicilan, pokok hutang LN (amortisasi)",-17592.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,123,Financing Surplus/Deficit,Sisa Lebih (Kurang )Pembiayaan Anggaran-SILPA (SIKPA),0.0,,,SEKI 2001-2007 sheet
+2003,financing,budget,124,Additional Debt Financing/Two Step Loan,Tambahan Pembiayaan Utang/Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,101,Government Revenues and Grants,Pendapatan Negara dan Hibah,403367.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,102,Domestic Revenues,Penerimaan Dalam Negeri,403105.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,103,Tax Revenues,Penerimaan Perpajakan,280559.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,104,Domestic Taxes,Pajak Dalam Negeri,267817.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,105,Income Tax,Pajak Penghasilan (PPh),119515.0,,,SEKI 2001-2007 sheet: PPH
+2004,revenue,actual,106,i. Non Oil and Gas,Non Migas,96568.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,107,ii. Oil and Gas,Migas,22947.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,108,Value Added Tax,Pajak Pertambahan Nilai (PPN),102573.0,,,SEKI 2001-2007 sheet: PPN
+2004,revenue,actual,109,Land and Building Tax,Pajak Bumi dan Bangunan (PBB),11767.0,,,SEKI 2001-2007 sheet: PBB
+2004,revenue,actual,110,Duties on Land and Building Transfers,Bea Perolehan Hak Atas Tanah dan Bangunan (BPHTB)1,2918.0,,,SEKI 2001-2007 sheet: BPHTB
+2004,revenue,actual,111,Exercise Duties,Cukai,29173.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,112,Others Domestic Taxes,Pajak Lainnya,1872.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,113,International Trade Taxes,Pajak Perdagangan Internasional,12742.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,114,Import,Bea Masuk,12444.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,115,Export,Pajak Ekspor,298.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,116,Non Taxes Revenues,Penerimaan Negara Bukan Pajak,122546.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,117,Natural Resources,Penerimaan Sumber Daya Alam,91543.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,118,Oil Revenues,Minyak Bumi,63060.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,119,Gas Revenues,Gas Alam,22199.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,120,Profit Transfers From SOE's,Bagian Laba BUMN,9818.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,121,Bank Indonesia Surplus,Surplus Bank Indonesia,0.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,122,Revenue from Public Service Institution,Pendapatan Badan Layanan Umum,0.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,123,Other Non Tax Revenues,PNBP lainnya,21185.0,,,SEKI 2001-2007 sheet
+2004,revenue,actual,124,Grants,Hibah,262.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,101,Government Revenues and Grants,Pendapatan Negara dan Hibah,400955.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,102,Domestic Revenues,Penerimaan Dalam Negeri,400217.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,103,Tax Revenues,Penerimaan Perpajakan,278208.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,104,Domestic Taxes,Pajak Dalam Negeri,266083.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,105,Income Tax,Pajak Penghasilan (PPh),135853.0,,,SEKI 2001-2007 sheet: PPH
+2004,revenue,budget,106,i. Non Oil and Gas,Non Migas,112767.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,107,ii. Oil and Gas,Migas,23086.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,108,Value Added Tax,Pajak Pertambahan Nilai (PPN),86706.0,,,SEKI 2001-2007 sheet: PPN
+2004,revenue,budget,109,Land and Building Tax,Pajak Bumi dan Bangunan (PBB),10212.0,,,SEKI 2001-2007 sheet: PBB
+2004,revenue,budget,110,Duties on Land and Building Transfers,Bea Perolehan Hak Atas Tanah dan Bangunan (BPHTB)1,3182.0,,,SEKI 2001-2007 sheet: BPHTB
+2004,revenue,budget,111,Exercise Duties,Cukai,28292.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,112,Others Domestic Taxes,Pajak Lainnya,1838.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,113,International Trade Taxes,Pajak Perdagangan Internasional,12124.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,114,Import,Bea Masuk,11788.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,115,Export,Pajak Ekspor,337.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,116,Non Taxes Revenues,Penerimaan Negara Bukan Pajak,122009.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,117,Natural Resources,Penerimaan Sumber Daya Alam,91963.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,118,Oil Revenues,Minyak Bumi,63864.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,119,Gas Revenues,Gas Alam,23784.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,120,Profit Transfers From SOE's,Bagian Laba BUMN,7804.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,121,Bank Indonesia Surplus,Surplus Bank Indonesia,0.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,122,Revenue from Public Service Institution,Pendapatan Badan Layanan Umum,0.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,123,Other Non Tax Revenues,PNBP lainnya,22243.0,,,SEKI 2001-2007 sheet
+2004,revenue,budget,124,Grants,Hibah,738.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,101,Government Expenditures,Belanja Negara,427177.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,102,Central Governement Expenditures,Belanja Pemerintah Pusat,297464.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,103,Current Expenditures,Pengeluaran Rutin,236014.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,104,Personnel,Belanja Pegawai,52743.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,105,Goods and Services,Belanja Barang,15518.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,106,Capital,Belanja Modal,0.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,107,Interest payment,Pembayaran Bunga Utang,62486.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,108,Domestic Interest,Utang Dalam Negeri,39639.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,109,External Interest,Utang Luar Negeri,22846.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,110,Additional Interest,Tambahan Bunga,0.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,111,Subsidies,Subsidi,91529.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,112,Oil Subsidies,Subsidi BBM,69025.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,113,Non Oil Subsidies,Subsidi Non BBM,22505.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,114,Social Assistance,Bantuan Sosial,0.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,115,Others Current Expenditures/Others Expenditures,Pengeluaran rutin lainnya /Belanja Lainnya 1),13738.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,116,Development Expenditures1),Pengeluaran Pembangunan,61450.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,117,Rupiah Financing,Pembiayaan Pembangunan Rupiah,48018.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,118,Project aid,Pembiayaan Proyek,13432.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,119,Regional Budget Expenditures,Transfer Ke Daerah dan Dana Desa,129723.0,,,SEKI 2001-2007 sheet: Anggaran Belanja untuk Daerah/ Transfer ke Daerah
+2004,expenditure,actual,120,Balance Budget,Dana Perimbangan,122868.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,121,Revenue Sharing Funds,Dana Bagi Hasil,37901.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,122,General Allocation Funds,Dana Alokasi Umum,82131.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,123,Special Allocation Funds,Dana Alokasi Khusus,2836.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,124,Special Autonomy,Dana otonomi khusus dan penyeimbangan,6855.0,,,SEKI 2001-2007 sheet
+2004,expenditure,actual,125,Suspend,Suspen,-10.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,101,Government Expenditures,Belanja Negara,427226.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,102,Central Government Expenditures,Belanja Pemerintah Pusat,297419.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,103,Current Expenditures,Pengeluaran Rutin,227811.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,104,Personnel,Belanja Pegawai,54217.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,105,Goods and Services,Belanja Barang,16780.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,106,Capital,Belanja Modal,0.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,107,Interest payment,Pembayaran Bunga Utang,63557.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,108,Domestic Interest,Utang Dalam Negeri,39848.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,109,External Interest,Utang Luar Negeri,23710.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,110,Additional Interest,Tambahan Bunga,0.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,111,Subsidies,Subsidi,73813.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,112,Oil Subsidies,Subsidi BBM,63083.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,113,Non Oil Subsidies,Subsidi Non BBM,10730.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,114,Social Assistance,Bantuan Sosial,0.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,115,Others Current Expenditures/Others Expenditures,Belanja Lainnya,19444.0,,,SEKI 2001-2007 sheet: Pengeluaran rutin lainnya /Belanja Lainnya
+2004,expenditure,budget,116,Development Expenditures,Pengeluaran Pembangunan,69609.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,117,Rupiah Financing,Pembiayaan Pembangunan Rupiah,50370.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,118,Project aid,Pembiayaan Proyek,19239.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,119,Regional Budget Expenditures,Transfer Ke Daerah dan Dana Desa,129807.0,,,SEKI 2001-2007 sheet: Anggaran Belanja untuk Daerah/ Transfer ke Daerah
+2004,expenditure,budget,120,Balance Budget,Dana Perimbangan,122951.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,121,Revenue Sharing Funds,Dana Bagi Hasil,37328.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,122,General Allocation Funds,Dana Alokasi Umum,82131.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,123,Special Allocation Funds,Dana Alokasi Khusus,3493.0,,,SEKI 2001-2007 sheet
+2004,expenditure,budget,124,Special Autonomy,Dana otonomi khusus dan penyeimbangan,6855.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,101,Surplus / Deficit,Surplus / Defisit,-23810.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,102,"Financing, Nett",Pembiayaan Bersih,20796.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,103,Domestic Financing,Pembiayaan Dalam Negeri,48853.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,104,Domestic Bank Financing,Perbankan Dalam Negeri (SAL/SAK),22713.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,105,Government Account,Rekening Pemerintah,22713.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,106,Moratorium Funds,Dana Moratorium,0.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,107,Domestic Non Bank Financing,Non Perbankan Dalam Negeri,26141.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,108,Privatization,Penerimaan Privatisasi,3520.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,109,Asset Management,Pengelolaan Aset,15751.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,110,"Government Bonds, Net",Obligasi Negara,6870.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,111,Issuance of Government Bonds,Penerbitan Obligasi Pemerintah,32327.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,112,Bonds Redemption and buyback,Pembayaran cicilan pokok obligasi dan pembelian kembali,-25456.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,113,Capital,Penyertaan Modal Negara,0.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,114,Aid Chaneling,Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,115,Others,Lain-lain,0.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,116,Infrastructur Funds,Dana Infrastruktur,0.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,117,Investment Funds,Dana Investasi Pemerintah,0.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,118,Foreign Financing (nett),Pembiayaan Luar Negeri,-28057.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,119,Gross Drawing,"Penarikan Pinjaman Luar Negeri, bruto",18434.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,120,Program Aid,Pinjaman Program,5059.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,121,Project Aid,Pinjaman Proyek,13375.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,122,Amortization,"Pembayaran cicilan, pokok hutang LN (amortisasi)",-46491.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,123,Financing Surplus/Deficit,Sisa Lebih (Kurang )Pembiayaan Anggaran-SILPA (SIKPA),-3014.0,,,SEKI 2001-2007 sheet
+2004,financing,actual,124,Additional Debt Financing/Two Step Loan,Tambahan Pembiayaan Utang/Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,101,Government Revenues and Grants,Pendapatan Negara dan Hibah,495224.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,102,Domestic Revenues,Penerimaan Dalam Negeri,493919.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,103,Tax Revenues,Penerimaan Perpajakan,347031.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,104,Domestic Taxes,Pajak Dalam Negeri,331792.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,105,Income Tax,Pajak Penghasilan (PPh),175541.0,,,SEKI 2001-2007 sheet: PPH
+2005,revenue,actual,106,i. Non Oil and Gas,Non Migas,140398.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,107,ii. Oil and Gas,Migas,35143.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,108,Value Added Tax,Pajak Pertambahan Nilai (PPN),101296.0,,,SEKI 2001-2007 sheet: PPN
+2005,revenue,actual,109,Land and Building Tax,Pajak Bumi dan Bangunan (PBB),16217.0,,,SEKI 2001-2007 sheet: PBB
+2005,revenue,actual,110,Duties on Land and Building Transfers,Bea Perolehan Hak Atas Tanah dan Bangunan (BPHTB)1,3432.0,,,SEKI 2001-2007 sheet: BPHTB
+2005,revenue,actual,111,Exercise Duties,Cukai,33256.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,112,Others Domestic Taxes,Pajak Lainnya,2050.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,113,International Trade Taxes,Pajak Perdagangan Internasional,15239.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,114,Import,Bea Masuk,14921.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,115,Export,Pajak Ekspor,318.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,116,Non Taxes Revenues,Penerimaan Negara Bukan Pajak,146888.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,117,Natural Resources,Penerimaan Sumber Daya Alam,110467.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,118,Oil Revenues,Minyak Bumi,72822.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,119,Gas Revenues,Gas Alam,30940.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,120,Profit Transfers From SOE's,Bagian Laba BUMN,12835.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,121,Bank Indonesia Surplus,Surplus Bank Indonesia,0.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,122,Revenue from Public Service Institution,Pendapatan Badan Layanan Umum,0.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,123,Other Non Tax Revenues,PNBP lainnya,23586.0,,,SEKI 2001-2007 sheet
+2005,revenue,actual,124,Grants,Hibah,1305.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,101,Government Revenues and Grants,Pendapatan Negara dan Hibah,540126.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,102,Domestic Revenues,Penerimaan Dalam Negeri,532671.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,103,Tax Revenues,Penerimaan Perpajakan,351974.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,104,Domestic Taxes,Pajak Dalam Negeri,334403.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,105,Income Tax,Pajak Penghasilan (PPh),180253.0,,,SEKI 2001-2007 sheet: PPH
+2005,revenue,budget,106,i. Non Oil and Gas,Non Migas,143017.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,107,ii. Oil and Gas,Migas,37236.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,108,Value Added Tax,Pajak Pertambahan Nilai (PPN),102671.0,,,SEKI 2001-2007 sheet: PPN
+2005,revenue,budget,109,Land and Building Tax,Pajak Bumi dan Bangunan (PBB),13375.0,,,SEKI 2001-2007 sheet: PBB
+2005,revenue,budget,110,Duties on Land and Building Transfers,Bea Perolehan Hak Atas Tanah dan Bangunan (BPHTB)1,3661.0,,,SEKI 2001-2007 sheet: BPHTB
+2005,revenue,budget,111,Exercise Duties,Cukai,32245.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,112,Others Domestic Taxes,Pajak Lainnya,2198.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,113,International Trade Taxes,Pajak Perdagangan Internasional,17570.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,114,Import,Bea Masuk,16591.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,115,Export,Pajak Ekspor,980.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,116,Non Taxes Revenues,Penerimaan Negara Bukan Pajak,180697.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,117,Natural Resources,Penerimaan Sumber Daya Alam,144361.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,118,Oil Revenues,Minyak Bumi,102196.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,119,Gas Revenues,Gas Alam,36364.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,120,Profit Transfers From SOE's,Bagian Laba BUMN,12000.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,121,Bank Indonesia Surplus,Surplus Bank Indonesia,0.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,122,Revenue from Public Service Institution,Pendapatan Badan Layanan Umum,0.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,123,Other Non Tax Revenues,PNBP lainnya,24336.0,,,SEKI 2001-2007 sheet
+2005,revenue,budget,124,Grants,Hibah,7455.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,101,Government Expenditures,Belanja Negara,509632.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,102,Central Governement Expenditures,Belanja Pemerintah Pusat,361155.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,103,Current Expenditures,Pengeluaran Rutin,0.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,104,Personnel,Belanja Pegawai,54254.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,105,Goods and Services,Belanja Barang,29172.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,106,Capital,Belanja Modal,32889.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,107,Interest payment,Pembayaran Bunga Utang,65200.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,108,Domestic Interest,Utang Dalam Negeri,42600.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,109,External Interest,Utang Luar Negeri,22600.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,110,Additional Interest,Tambahan Bunga,0.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,111,Subsidies,Subsidi,120765.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,112,Oil Subsidies,Subsidi BBM,95599.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,113,Non Oil Subsidies,Subsidi Non BBM,25167.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,114,Social Assistance,Bantuan Sosial,24904.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,115,Others Current Expenditures/Others Expenditures,Pengeluaran rutin lainnya /Belanja Lainnya 1),33972.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,116,Development Expenditures1),Pengeluaran Pembangunan,0.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,117,Rupiah Financing,Pembiayaan Pembangunan Rupiah,0.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,118,Project aid,Pembiayaan Proyek,0.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,119,Regional Budget Expenditures,Transfer Ke Daerah dan Dana Desa,150464.0,,,SEKI 2001-2007 sheet: Anggaran Belanja untuk Daerah/ Transfer ke Daerah
+2005,expenditure,actual,120,Balance Budget,Dana Perimbangan,143221.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,121,Revenue Sharing Funds,Dana Bagi Hasil,50479.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,122,General Allocation Funds,Dana Alokasi Umum,88765.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,123,Special Allocation Funds,Dana Alokasi Khusus,3977.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,124,Special Autonomy,Dana otonomi khusus dan penyeimbangan,7243.0,,,SEKI 2001-2007 sheet
+2005,expenditure,actual,125,Suspend,Suspen,-1987.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,101,Government Expenditures,Belanja Negara,565070.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,102,Central Government Expenditures,Belanja Pemerintah Pusat,411668.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,103,Current Expenditures,Pengeluaran Rutin,0.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,104,Personnel,Belanja Pegawai,61167.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,105,Goods and Services,Belanja Barang,42312.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,106,Capital,Belanja Modal,54747.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,107,Interest payment,Pembayaran Bunga Utang,60982.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,108,Domestic Interest,Utang Dalam Negeri,42307.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,109,External Interest,Utang Luar Negeri,18675.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,110,Additional Interest,Tambahan Bunga,0.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,111,Subsidies,Subsidi,119090.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,112,Oil Subsidies,Subsidi BBM,89194.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,113,Non Oil Subsidies,Subsidi Non BBM,29896.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,114,Social Assistance,Bantuan Sosial,43374.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,115,Others Current Expenditures/Others Expenditures,Belanja Lainnya,29997.0,,,SEKI 2001-2007 sheet: Pengeluaran rutin lainnya /Belanja Lainnya
+2005,expenditure,budget,116,Development Expenditures,Pengeluaran Pembangunan,0.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,117,Rupiah Financing,Pembiayaan Pembangunan Rupiah,0.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,118,Project aid,Pembiayaan Proyek,0.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,119,Regional Budget Expenditures,Transfer Ke Daerah dan Dana Desa,153402.0,,,SEKI 2001-2007 sheet: Anggaran Belanja untuk Daerah/ Transfer ke Daerah
+2005,expenditure,budget,120,Balance Budget,Dana Perimbangan,146160.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,121,Revenue Sharing Funds,Dana Bagi Hasil,52567.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,122,General Allocation Funds,Dana Alokasi Umum,88766.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,123,Special Allocation Funds,Dana Alokasi Khusus,4828.0,,,SEKI 2001-2007 sheet
+2005,expenditure,budget,124,Special Autonomy,Dana otonomi khusus dan penyeimbangan,7243.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,101,Surplus / Deficit,Surplus / Defisit,-14408.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,102,"Financing, Nett",Pembiayaan Bersih,8872.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,103,Domestic Financing,Pembiayaan Dalam Negeri,19145.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,104,Domestic Bank Financing,Perbankan Dalam Negeri (SAL/SAK),-2550.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,105,Government Account,Rekening Pemerintah,8901.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,106,Moratorium Funds,Dana Moratorium,-13700.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,107,Domestic Non Bank Financing,Non Perbankan Dalam Negeri,23943.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,108,Privatization,Penerimaan Privatisasi,6563.53,,,SEKI 2001-2007 sheet
+2005,financing,actual,109,Asset Management,Pengelolaan Aset,0.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,110,"Government Bonds, Net",Obligasi Negara,22575.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,111,Issuance of Government Bonds,Penerbitan Obligasi Pemerintah,47373.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,112,Bonds Redemption and buyback,Pembayaran cicilan pokok obligasi dan pembelian kembali,-24798.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,113,Capital,Penyertaan Modal Negara,-5195.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,114,Aid Chaneling,Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,115,Others,Lain-lain,0.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,116,Infrastructur Funds,Dana Infrastruktur,0.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,117,Investment Funds,Dana Investasi Pemerintah,0.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,118,Foreign Financing (nett),Pembiayaan Luar Negeri,-10272.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,119,Gross Drawing,"Penarikan Pinjaman Luar Negeri, bruto",26840.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,120,Program Aid,Pinjaman Program,12265.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,121,Project Aid,Pinjaman Proyek,14576.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,122,Amortization,"Pembayaran cicilan, pokok hutang LN (amortisasi)",-37112.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,123,Financing Surplus/Deficit,Sisa Lebih (Kurang )Pembiayaan Anggaran-SILPA (SIKPA),-5535.0,,,SEKI 2001-2007 sheet
+2005,financing,actual,124,Additional Debt Financing/Two Step Loan,Tambahan Pembiayaan Utang/Penerusan Pinjaman,-2249.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,101,Surplus / Deficit,Surplus / Defisit,-24944.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,102,"Financing, Nett",Pembiayaan Bersih,24944.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,103,Domestic Financing,Pembiayaan Dalam Negeri,29786.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,104,Domestic Bank Financing,Perbankan Dalam Negeri (SAL/SAK),4271.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,105,Government Account,Rekening Pemerintah,0.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,106,Moratorium Funds,Dana Moratorium,0.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,107,Domestic Non Bank Financing,Non Perbankan Dalam Negeri,25515.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,108,Privatization,Penerimaan Privatisasi,3500.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,109,Asset Management,Pengelolaan Aset,5125.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,110,"Government Bonds, Net",Obligasi Negara,22086.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,111,Issuance of Government Bonds,Penerbitan Obligasi Pemerintah,43315.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,112,Bonds Redemption and buyback,Pembayaran cicilan pokok obligasi dan pembelian kembali,-21229.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,113,Capital,Penyertaan Modal Negara,0.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,114,Aid Chaneling,Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,115,Others,Lain-lain,0.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,116,Infrastructur Funds,Dana Infrastruktur,0.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,117,Investment Funds,Dana Investasi Pemerintah,-5195.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,118,Foreign Financing (nett),Pembiayaan Luar Negeri,-4842.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,119,Gross Drawing,"Penarikan Pinjaman Luar Negeri, bruto",35541.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,120,Program Aid,Pinjaman Program,11270.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,121,Project Aid,Pinjaman Proyek,24271.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,122,Amortization,"Pembayaran cicilan, pokok hutang LN (amortisasi)",-40383.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,123,Financing Surplus/Deficit,Sisa Lebih (Kurang )Pembiayaan Anggaran-SILPA (SIKPA),0.0,,,SEKI 2001-2007 sheet
+2005,financing,budget,124,Additional Debt Financing/Two Step Loan,Tambahan Pembiayaan Utang/Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,101,Government Revenues and Grants,Pendapatan Negara dan Hibah,637987.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,102,Domestic Revenues,Penerimaan Dalam Negeri,636153.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,103,Tax Revenues,Penerimaan Perpajakan,409203.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,104,Domestic Taxes,Pajak Dalam Negeri,395972.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,105,Income Tax,Pajak Penghasilan (PPh),208833.0,,,SEKI 2001-2007 sheet: PPH
+2006,revenue,actual,106,i. Non Oil and Gas,Non Migas,165645.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,107,ii. Oil and Gas,Migas,43188.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,108,Value Added Tax,Pajak Pertambahan Nilai (PPN),123036.0,,,SEKI 2001-2007 sheet: PPN
+2006,revenue,actual,109,Land and Building Tax,Pajak Bumi dan Bangunan (PBB),20859.0,,,SEKI 2001-2007 sheet: PBB
+2006,revenue,actual,110,Duties on Land and Building Transfers,Bea Perolehan Hak Atas Tanah dan Bangunan (BPHTB)1,3185.0,,,SEKI 2001-2007 sheet: BPHTB
+2006,revenue,actual,111,Exercise Duties,Cukai,37772.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,112,Others Domestic Taxes,Pajak Lainnya,2287.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,113,International Trade Taxes,Pajak Perdagangan Internasional,13231.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,114,Import,Bea Masuk,12140.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,115,Export,Pajak Ekspor,1091.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,116,Non Taxes Revenues,Penerimaan Negara Bukan Pajak,226950.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,117,Natural Resources,Penerimaan Sumber Daya Alam,167474.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,118,Oil Revenues,Minyak Bumi,125145.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,119,Gas Revenues,Gas Alam,32941.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,120,Profit Transfers From SOE's,Bagian Laba BUMN,21451.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,121,Bank Indonesia Surplus,Surplus Bank Indonesia,1523.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,122,Revenue from Public Service Institution,Pendapatan Badan Layanan Umum,0.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,123,Other Non Tax Revenues,PNBP lainnya,36503.0,,,SEKI 2001-2007 sheet
+2006,revenue,actual,124,Grants,Hibah,1834.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,101,Government Revenues and Grants,Pendapatan Negara dan Hibah,659115.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,102,Domestic Revenues,Penerimaan Dalam Negeri,654882.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,103,Tax Revenues,Penerimaan Perpajakan,425053.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,104,Domestic Taxes,Pajak Dalam Negeri,410226.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,105,Income Tax,Pajak Penghasilan (PPh),213698.0,,,SEKI 2001-2007 sheet: PPH
+2006,revenue,budget,106,i. Non Oil and Gas,Non Migas,175012.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,107,ii. Oil and Gas,Migas,38686.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,108,Value Added Tax,Pajak Pertambahan Nilai (PPN),132876.0,,,SEKI 2001-2007 sheet: PPN
+2006,revenue,budget,109,Land and Building Tax,Pajak Bumi dan Bangunan (PBB),18154.0,,,SEKI 2001-2007 sheet: PBB
+2006,revenue,budget,110,Duties on Land and Building Transfers,Bea Perolehan Hak Atas Tanah dan Bangunan (BPHTB)1,4386.0,,,SEKI 2001-2007 sheet: BPHTB
+2006,revenue,budget,111,Exercise Duties,Cukai,38523.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,112,Others Domestic Taxes,Pajak Lainnya,2590.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,113,International Trade Taxes,Pajak Perdagangan Internasional,14827.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,114,Import,Bea Masuk,13583.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,115,Export,Pajak Ekspor,1244.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,116,Non Taxes Revenues,Penerimaan Negara Bukan Pajak,229829.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,117,Natural Resources,Penerimaan Sumber Daya Alam,165695.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,118,Oil Revenues,Minyak Bumi,122964.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,119,Gas Revenues,Gas Alam,36825.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,120,Profit Transfers From SOE's,Bagian Laba BUMN,20800.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,121,Bank Indonesia Surplus,Surplus Bank Indonesia,1523.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,122,Revenue from Public Service Institution,Pendapatan Badan Layanan Umum,0.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,123,Other Non Tax Revenues,PNBP lainnya,41812.0,,,SEKI 2001-2007 sheet
+2006,revenue,budget,124,Grants,Hibah,4233.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,101,Government Expenditures,Belanja Negara,667129.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,102,Central Governement Expenditures,Belanja Pemerintah Pusat,440032.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,103,Current Expenditures,Pengeluaran Rutin,0.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,104,Personnel,Belanja Pegawai,73252.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,105,Goods and Services,Belanja Barang,47182.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,106,Capital,Belanja Modal,54952.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,107,Interest payment,Pembayaran Bunga Utang,79083.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,108,Domestic Interest,Utang Dalam Negeri,54908.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,109,External Interest,Utang Luar Negeri,24174.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,110,Additional Interest,Tambahan Bunga,0.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,111,Subsidies,Subsidi,107432.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,112,Oil Subsidies,Subsidi BBM,64212.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,113,Non Oil Subsidies,Subsidi Non BBM,43220.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,114,Social Assistance,Bantuan Sosial,40708.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,115,Others Current Expenditures/Others Expenditures,Pengeluaran rutin lainnya /Belanja Lainnya 1),37423.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,116,Development Expenditures1),Pengeluaran Pembangunan,0.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,117,Rupiah Financing,Pembiayaan Pembangunan Rupiah,0.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,118,Project aid,Pembiayaan Proyek,0.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,119,Regional Budget Expenditures,Transfer Ke Daerah dan Dana Desa,226180.0,,,SEKI 2001-2007 sheet: Anggaran Belanja untuk Daerah/ Transfer ke Daerah
+2006,expenditure,actual,120,Balance Budget,Dana Perimbangan,222131.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,121,Revenue Sharing Funds,Dana Bagi Hasil,64900.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,122,General Allocation Funds,Dana Alokasi Umum,145664.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,123,Special Allocation Funds,Dana Alokasi Khusus,11566.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,124,Special Autonomy,Dana otonomi khusus dan penyeimbangan,4049.0,,,SEKI 2001-2007 sheet
+2006,expenditure,actual,125,Suspend,Suspen,-917.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,101,Government Expenditures,Belanja Negara,699099.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,102,Central Government Expenditures,Belanja Pemerintah Pusat,478249.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,103,Current Expenditures,Pengeluaran Rutin,0.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,104,Personnel,Belanja Pegawai,78905.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,105,Goods and Services,Belanja Barang,55507.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,106,Capital,Belanja Modal,66724.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,107,Interest payment,Pembayaran Bunga Utang,82495.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,108,Domestic Interest,Utang Dalam Negeri,58155.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,109,External Interest,Utang Luar Negeri,24340.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,110,Additional Interest,Tambahan Bunga,0.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,111,Subsidies,Subsidi,107628.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,112,Oil Subsidies,Subsidi BBM,64212.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,113,Non Oil Subsidies,Subsidi Non BBM,43415.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,114,Social Assistance,Bantuan Sosial,42401.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,115,Others Current Expenditures/Others Expenditures,Belanja Lainnya,44594.0,,,SEKI 2001-2007 sheet: Pengeluaran rutin lainnya /Belanja Lainnya
+2006,expenditure,budget,116,Development Expenditures,Pengeluaran Pembangunan,0.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,117,Rupiah Financing,Pembiayaan Pembangunan Rupiah,0.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,118,Project aid,Pembiayaan Proyek,0.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,119,Regional Budget Expenditures,Transfer Ke Daerah dan Dana Desa,220850.0,,,SEKI 2001-2007 sheet: Anggaran Belanja untuk Daerah/ Transfer ke Daerah
+2006,expenditure,budget,120,Balance Budget,Dana Perimbangan,216798.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,121,Revenue Sharing Funds,Dana Bagi Hasil,59564.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,122,General Allocation Funds,Dana Alokasi Umum,145664.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,123,Special Allocation Funds,Dana Alokasi Khusus,11570.0,,,SEKI 2001-2007 sheet
+2006,expenditure,budget,124,Special Autonomy,Dana otonomi khusus dan penyeimbangan,4052.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,101,Surplus / Deficit,Surplus / Defisit,-29142.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,102,"Financing, Nett",Pembiayaan Bersih,29416.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,103,Domestic Financing,Pembiayaan Dalam Negeri,55982.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,104,Domestic Bank Financing,Perbankan Dalam Negeri (SAL/SAK),18913.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,105,Government Account,Rekening Pemerintah,11555.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,106,Moratorium Funds,Dana Moratorium,7357.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,107,Domestic Non Bank Financing,Non Perbankan Dalam Negeri,37069.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,108,Privatization,Penerimaan Privatisasi,2372.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,109,Asset Management,Pengelolaan Aset,2684.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,110,"Government Bonds, Net",Obligasi Negara,35986.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,111,Issuance of Government Bonds,Penerbitan Obligasi Pemerintah,94235.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,112,Bonds Redemption and buyback,Pembayaran cicilan pokok obligasi dan pembelian kembali,-58249.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,113,Capital,Penyertaan Modal Negara,-1972.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,114,Aid Chaneling,Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,115,Others,Lain-lain,0.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,116,Infrastructur Funds,Dana Infrastruktur,0.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,117,Investment Funds,Dana Investasi Pemerintah,-2000.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,118,Foreign Financing (nett),Pembiayaan Luar Negeri,-26567.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,119,Gross Drawing,"Penarikan Pinjaman Luar Negeri, bruto",-26115.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,120,Program Aid,Pinjaman Program,13580.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,121,Project Aid,Pinjaman Proyek,-12535.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,122,Amortization,"Pembayaran cicilan, pokok hutang LN (amortisasi)",-52681.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,123,Financing Surplus/Deficit,Sisa Lebih (Kurang )Pembiayaan Anggaran-SILPA (SIKPA),274.0,,,SEKI 2001-2007 sheet
+2006,financing,actual,124,Additional Debt Financing/Two Step Loan,Tambahan Pembiayaan Utang/Penerusan Pinjaman,-3558.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,101,Surplus / Deficit,Surplus / Defisit,-39984.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,102,"Financing, Nett",Pembiayaan Bersih,39984.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,103,Domestic Financing,Pembiayaan Dalam Negeri,55258.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,104,Domestic Bank Financing,Perbankan Dalam Negeri (SAL/SAK),17907.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,105,Government Account,Rekening Pemerintah,10549.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,106,Moratorium Funds,Dana Moratorium,7357.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,107,Domestic Non Bank Financing,Non Perbankan Dalam Negeri,37352.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,108,Privatization,Penerimaan Privatisasi,3195.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,109,Asset Management,Pengelolaan Aset,2580.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,110,"Government Bonds, Net",Obligasi Negara,35772.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,111,Issuance of Government Bonds,Penerbitan Obligasi Pemerintah,61242.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,112,Bonds Redemption and buyback,Pembayaran cicilan pokok obligasi dan pembelian kembali,-25470.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,113,Capital,Penyertaan Modal Negara,-4195.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,114,Aid Chaneling,Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,115,Others,Lain-lain,0.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,116,Infrastructur Funds,Dana Infrastruktur,0.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,117,Investment Funds,Dana Investasi Pemerintah,-2000.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,118,Foreign Financing (nett),Pembiayaan Luar Negeri,-15274.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,119,Gross Drawing,"Penarikan Pinjaman Luar Negeri, bruto",37550.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,120,Program Aid,Pinjaman Program,12075.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,121,Project Aid,Pinjaman Proyek,25475.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,122,Amortization,"Pembayaran cicilan, pokok hutang LN (amortisasi)",-52824.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,123,Financing Surplus/Deficit,Sisa Lebih (Kurang )Pembiayaan Anggaran-SILPA (SIKPA),0.0,,,SEKI 2001-2007 sheet
+2006,financing,budget,124,Additional Debt Financing/Two Step Loan,Tambahan Pembiayaan Utang/Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,101,Government Revenues and Grants,Pendapatan Negara dan Hibah,707806.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,102,Domestic Revenues,Penerimaan Dalam Negeri,706109.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,103,Tax Revenues,Penerimaan Perpajakan,490989.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,104,Domestic Taxes,Pajak Dalam Negeri,470052.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,105,Income Tax,Pajak Penghasilan (PPh),238431.0,,,SEKI 2001-2007 sheet: PPH
+2007,revenue,actual,106,i. Non Oil and Gas,Non Migas,194431.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,107,ii. Oil and Gas,Migas,44001.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,108,Value Added Tax,Pajak Pertambahan Nilai (PPN),154527.0,,,SEKI 2001-2007 sheet: PPN
+2007,revenue,actual,109,Land and Building Tax,Pajak Bumi dan Bangunan (PBB),23724.0,,,SEKI 2001-2007 sheet: PBB
+2007,revenue,actual,110,Duties on Land and Building Transfers,Bea Perolehan Hak Atas Tanah dan Bangunan (BPHTB)1,5953.0,,,SEKI 2001-2007 sheet: BPHTB
+2007,revenue,actual,111,Exercise Duties,Cukai,44680.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,112,Others Domestic Taxes,Pajak Lainnya,2738.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,113,International Trade Taxes,Pajak Perdagangan Internasional,20937.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,114,Import,Bea Masuk,16699.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,115,Export,Pajak Ekspor,4237.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,116,Non Taxes Revenues,Penerimaan Negara Bukan Pajak,215120.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,117,Natural Resources,Penerimaan Sumber Daya Alam,132893.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,118,Oil Revenues,Minyak Bumi,93605.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,119,Gas Revenues,Gas Alam,31179.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,120,Profit Transfers From SOE's,Bagian Laba BUMN,23223.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,121,Bank Indonesia Surplus,Surplus Bank Indonesia,13669.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,122,Revenue from Public Service Institution,Pendapatan Badan Layanan Umum,2131.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,123,Other Non Tax Revenues,PNBP lainnya,56873.0,,,SEKI 2001-2007 sheet
+2007,revenue,actual,124,Grants,Hibah,1698.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,101,Government Revenues and Grants,Pendapatan Negara dan Hibah,694088.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,102,Domestic Revenues,Penerimaan Dalam Negeri,690265.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,103,Tax Revenues,Penerimaan Perpajakan,492011.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,104,Domestic Taxes,Pajak Dalam Negeri,474551.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,105,Income Tax,Pajak Penghasilan (PPh),251748.0,,,SEKI 2001-2007 sheet: PPH
+2007,revenue,budget,106,i. Non Oil and Gas,Non Migas,214481.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,107,ii. Oil and Gas,Migas,37268.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,108,Value Added Tax,Pajak Pertambahan Nilai (PPN),152057.0,,,SEKI 2001-2007 sheet: PPN
+2007,revenue,budget,109,Land and Building Tax,Pajak Bumi dan Bangunan (PBB),22026.0,,,SEKI 2001-2007 sheet: PBB
+2007,revenue,budget,110,Duties on Land and Building Transfers,Bea Perolehan Hak Atas Tanah dan Bangunan (BPHTB)1,3966.0,,,SEKI 2001-2007 sheet: BPHTB
+2007,revenue,budget,111,Exercise Duties,Cukai,42035.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,112,Others Domestic Taxes,Pajak Lainnya,2720.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,113,International Trade Taxes,Pajak Perdagangan Internasional,17460.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,114,Import,Bea Masuk,14418.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,115,Export,Pajak Ekspor,3042.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,116,Non Taxes Revenues,Penerimaan Negara Bukan Pajak,198254.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,117,Natural Resources,Penerimaan Sumber Daya Alam,115053.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,118,Oil Revenues,Minyak Bumi,78235.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,119,Gas Revenues,Gas Alam,29484.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,120,Profit Transfers From SOE's,Bagian Laba BUMN,21800.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,121,Bank Indonesia Surplus,Surplus Bank Indonesia,13669.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,122,Revenue from Public Service Institution,Pendapatan Badan Layanan Umum,0.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,123,Other Non Tax Revenues,PNBP lainnya,47731.0,,,SEKI 2001-2007 sheet
+2007,revenue,budget,124,Grants,Hibah,3823.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,101,Government Expenditures,Belanja Negara,757650.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,102,Central Governement Expenditures,Belanja Pemerintah Pusat,504623.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,103,Current Expenditures,Pengeluaran Rutin,0.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,104,Personnel,Belanja Pegawai,90425.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,105,Goods and Services,Belanja Barang,54511.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,106,Capital,Belanja Modal,64289.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,107,Interest payment,Pembayaran Bunga Utang,79806.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,108,Domestic Interest,Utang Dalam Negeri,54079.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,109,External Interest,Utang Luar Negeri,25727.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,110,Additional Interest,Tambahan Bunga,0.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,111,Subsidies,Subsidi,150215.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,112,Oil Subsidies,Subsidi BBM,83792.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,113,Non Oil Subsidies,Subsidi Non BBM,66422.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,114,Social Assistance,Bantuan Sosial,49756.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,115,Others Current Expenditures/Others Expenditures,Pengeluaran rutin lainnya /Belanja Lainnya 1),15621.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,116,Development Expenditures1),Pengeluaran Pembangunan,0.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,117,Rupiah Financing,Pembiayaan Pembangunan Rupiah,0.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,118,Project aid,Pembiayaan Proyek,0.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,119,Regional Budget Expenditures,Transfer Ke Daerah dan Dana Desa,253263.0,,,SEKI 2001-2007 sheet: Anggaran Belanja untuk Daerah/ Transfer ke Daerah
+2007,expenditure,actual,120,Balance Budget,Dana Perimbangan,243967.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,121,Revenue Sharing Funds,Dana Bagi Hasil,62942.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,122,General Allocation Funds,Dana Alokasi Umum,164787.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,123,Special Allocation Funds,Dana Alokasi Khusus,16238.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,124,Special Autonomy,Dana otonomi khusus dan penyeimbangan,9296.0,,,SEKI 2001-2007 sheet
+2007,expenditure,actual,125,Suspend,Suspen,-237.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,101,Government Expenditures,Belanja Negara,752373.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,102,Central Government Expenditures,Belanja Pemerintah Pusat,498172.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,103,Current Expenditures,Pengeluaran Rutin,0.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,104,Personnel,Belanja Pegawai,92844.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,105,Goods and Services,Belanja Barang,65260.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,106,Capital,Belanja Modal,75051.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,107,Interest payment,Pembayaran Bunga Utang,83555.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,108,Domestic Interest,Utang Dalam Negeri,58803.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,109,External Interest,Utang Luar Negeri,24752.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,110,Additional Interest,Tambahan Bunga,0.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,111,Subsidies,Subsidi,105073.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,112,Oil Subsidies,Subsidi BBM,55604.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,113,Non Oil Subsidies,Subsidi Non BBM,49469.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,114,Social Assistance,Bantuan Sosial,25781.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,115,Others Current Expenditures/Others Expenditures,Belanja Lainnya,50608.0,,,SEKI 2001-2007 sheet: Pengeluaran rutin lainnya /Belanja Lainnya
+2007,expenditure,budget,116,Development Expenditures,Pengeluaran Pembangunan,0.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,117,Rupiah Financing,Pembiayaan Pembangunan Rupiah,0.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,118,Project aid,Pembiayaan Proyek,0.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,119,Regional Budget Expenditures,Transfer Ke Daerah dan Dana Desa,254201.0,,,SEKI 2001-2007 sheet: Anggaran Belanja untuk Daerah/ Transfer ke Daerah
+2007,expenditure,budget,120,Balance Budget,Dana Perimbangan,244608.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,121,Revenue Sharing Funds,Dana Bagi Hasil,62726.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,122,General Allocation Funds,Dana Alokasi Umum,164787.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,123,Special Allocation Funds,Dana Alokasi Khusus,17094.0,,,SEKI 2001-2007 sheet
+2007,expenditure,budget,124,Special Autonomy,Dana otonomi khusus dan penyeimbangan,9593.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,101,Surplus / Deficit,Surplus / Defisit,-49844.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,102,"Financing, Nett",Pembiayaan Bersih,42457.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,103,Domestic Financing,Pembiayaan Dalam Negeri,66309.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,104,Domestic Bank Financing,Perbankan Dalam Negeri (SAL/SAK),11143.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,105,Government Account,Rekening Pemerintah,10652.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,106,Moratorium Funds,Dana Moratorium,0.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,107,Domestic Non Bank Financing,Non Perbankan Dalam Negeri,57889.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,108,Privatization,Penerimaan Privatisasi,3004.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,109,Asset Management,Pengelolaan Aset,2413.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,110,"Government Bonds, Net",Obligasi Negara,57172.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,111,Issuance of Government Bonds,Penerbitan Obligasi Pemerintah,116858.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,112,Bonds Redemption and buyback,Pembayaran cicilan pokok obligasi dan pembelian kembali,-59686.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,113,Capital,Penyertaan Modal Negara,-4700.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,114,Aid Chaneling,Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,115,Others,Lain-lain,491.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,116,Infrastructur Funds,Dana Infrastruktur,0.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,117,Investment Funds,Dana Investasi Pemerintah,-2000.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,118,Foreign Financing (nett),Pembiayaan Luar Negeri,-23852.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,119,Gross Drawing,"Penarikan Pinjaman Luar Negeri, bruto",34070.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,120,Program Aid,Pinjaman Program,19608.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,121,Project Aid,Pinjaman Proyek,14463.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,122,Amortization,"Pembayaran cicilan, pokok hutang LN (amortisasi)",-57923.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,123,Financing Surplus/Deficit,Sisa Lebih (Kurang )Pembiayaan Anggaran-SILPA (SIKPA),-7387.0,,,SEKI 2001-2007 sheet
+2007,financing,actual,124,Additional Debt Financing/Two Step Loan,Tambahan Pembiayaan Utang/Penerusan Pinjaman,-2723.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,101,Surplus / Deficit,Surplus / Defisit,-58285.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,102,"Financing, Nett",Pembiayaan Bersih,58285.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,103,Domestic Financing,Pembiayaan Dalam Negeri,70826.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,104,Domestic Bank Financing,Perbankan Dalam Negeri (SAL/SAK),10622.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,105,Government Account,Rekening Pemerintah,0.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,106,Moratorium Funds,Dana Moratorium,0.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,107,Domestic Non Bank Financing,Non Perbankan Dalam Negeri,60204.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,108,Privatization,Penerimaan Privatisasi,4700.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,109,Asset Management,Pengelolaan Aset,1658.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,110,"Government Bonds, Net",Obligasi Negara,58546.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,111,Issuance of Government Bonds,Penerbitan Obligasi Pemerintah,99266.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,112,Bonds Redemption and buyback,Pembayaran cicilan pokok obligasi dan pembelian kembali,-40720.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,113,Capital,Penyertaan Modal Negara,-4700.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,114,Aid Chaneling,Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,115,Others,Lain-lain,0.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,116,Infrastructur Funds,Dana Infrastruktur,0.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,117,Investment Funds,Dana Investasi Pemerintah,-2000.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,118,Foreign Financing (nett),Pembiayaan Luar Negeri,-12540.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,119,Gross Drawing,"Penarikan Pinjaman Luar Negeri, bruto",42210.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,120,Program Aid,Pinjaman Program,19005.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,121,Project Aid,Pinjaman Proyek,23205.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,122,Amortization,"Pembayaran cicilan, pokok hutang LN (amortisasi)",-54751.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,123,Financing Surplus/Deficit,Sisa Lebih (Kurang )Pembiayaan Anggaran-SILPA (SIKPA),0.0,,,SEKI 2001-2007 sheet
+2007,financing,budget,124,Additional Debt Financing/Two Step Loan,Tambahan Pembiayaan Utang/Penerusan Pinjaman,0.0,,,SEKI 2001-2007 sheet
 2008,revenue,actual,1,Government Revenues and Grants,Pendapatan Negara dan Hibah,981609.38,,,
 2008,revenue,actual,2,Domestic Revenues,Penerimaan Dalam Negeri,979305.37,,,
 2008,revenue,actual,3,Tax Revenues,Penerimaan Perpajakan,658700.8,,,
