@@ -143,6 +143,7 @@ dash.calc('sbn_latest', {
     items.forEach(([cls, col, txt]) => {
       const sp = document.createElement('span'), m = document.createElement('span'); m.className = cls; m.style.background = col;
       if (cls === 'dot') { m.style.background = 'var(--color-panel)'; m.style.border = '2px solid var(--ad-ink, var(--color-fg-muted))'; m.style.boxSizing = 'border-box'; }
+      if (cls === 'lnd') { m.className = 'ln'; m.style.background = `repeating-linear-gradient(90deg, ${col} 0 5px, transparent 5px 8px)`; }
       if (cls === 'ol') { m.className = 'sw'; m.style.background = 'transparent'; m.style.border = `1.5px solid ${col}`; m.style.boxSizing = 'border-box'; }
       sp.append(m, document.createTextNode(txt)); lg.appendChild(sp);
     });
@@ -408,15 +409,13 @@ dash.calc('sbn_latest', {
     const vals = rows.flatMap((r) => [r.budget, r.actual].filter((v) => v != null).map((v) => t(v, r)));
     const f = frame(box, rows.map((r) => String(r.year)), H, d3.min(vals), d3.max(vals), 0.2);
     yearAxis(f, H, rows);
-    // budget: red outlined bars; actual: red line
-    f.svg.append('g').selectAll('rect').data(rows.filter((r) => r.budget != null)).join('rect')
-      .attr('x', (r) => f.x(String(r.year)) + 0.75).attr('width', f.x.bandwidth() - 1.5)
-      .attr('y', (r) => f.y(Math.max(0, t(r.budget, r)))).attr('height', (r) => Math.abs(f.y(t(r.budget, r)) - f.y(0)))
-      .attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 1.5);
+    // budget: red dashed line; actual: red line
     const cxb = (r) => f.x(String(r.year)) + f.x.bandwidth() / 2;
+    f.svg.append('path').attr('d', d3.line().defined((r) => r.budget != null).x(cxb).y((r) => f.y(t(r.budget, r)))(rows))
+      .attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 2).attr('stroke-dasharray', '5 4');
     f.svg.append('path').attr('d', d3.line().defined((r) => r.actual != null).x(cxb).y((r) => f.y(t(r.actual, r)))(rows))
       .attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
-    legend('f-bb-legend', [['ol', '#BD1B21', 'Budget (APBN)'], ['ln', '#BD1B21', 'Actual']]);
+    legend('f-bb-legend', [['lnd', '#BD1B21', 'Budget (APBN)'], ['ln', '#BD1B21', 'Actual']]);
     const fmt = (v, r) => (v == null ? '—' : pct ? t(v, r).toFixed(2) + '%' : trn(v));
     hover(f, rows, (r) => String(r.year), H, 'f-bb', (r) => String(r.year), (r) => [['#BD1B21', r.law && pct && !gdp[r.year] ? 'Budget (MoF ratio)' : 'Budget', fmt(r.budget, r)], ['#BD1B21', 'Actual', fmt(r.actual, r)]]);
   }
