@@ -255,14 +255,19 @@ dash.calc('sbn_latest', {
     const vals = rows.flatMap((r) => [r.rev, r.exp]);
     const f = frame(box, rows.map((r) => String(r.year)), H, d3.min(vals), d3.max(vals), 0.2);
     yearAxis(f, H, rows);
-    const bw = f.x.bandwidth() / 2;
-    [['rev', '#0C84FF', 0], ['exp', '#BD1B21', 1]].forEach(([k, c, j]) => {
-      f.svg.append('g').selectAll('rect').data(rows).join('rect')
-        .attr('x', (r) => f.x(String(r.year)) + j * bw + 0.75).attr('width', bw - 1.5)
-        .attr('y', (r) => f.y(Math.max(0, r[k]))).attr('height', (r) => Math.abs(f.y(r[k]) - f.y(0)))
-        .attr('fill', (r) => (r.basis === 'budget' ? 'none' : c)).attr('stroke', (r) => (r.basis === 'budget' ? c : 'none')).attr('stroke-width', 1.5);
+    const cx = (r) => f.x(String(r.year)) + f.x.bandwidth() / 2;
+    const act = rows.filter((r) => r.basis === 'actual');
+    const lastAct = act[act.length - 1];
+    const bud = (lastAct ? [lastAct] : []).concat(rows.filter((r) => r.basis === 'budget'));
+    f.svg.append('line').attr('x1', 0).attr('x2', f.x.range()[1]).attr('y1', f.y(0)).attr('y2', f.y(0)).attr('stroke', 'var(--color-border-line)');
+    [['rev', '#0C84FF'], ['exp', '#BD1B21']].forEach(([k, c]) => {
+      const line = d3.line().x(cx).y((r) => f.y(r[k]));
+      f.svg.append('path').attr('d', line(act)).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
+      if (bud.length > 1) f.svg.append('path').attr('d', line(bud)).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2.5).attr('stroke-dasharray', '5 4');
+      f.svg.append('g').selectAll('circle').data(rows.filter((r) => r.basis === 'budget')).join('circle').attr('cx', cx).attr('cy', (r) => f.y(r[k]))
+        .attr('r', 4).attr('fill', 'var(--color-panel)').attr('stroke', c).attr('stroke-width', 2);
     });
-    legend('f-budget-legend', [['sw', '#0C84FF', 'Revenue and grants'], ['sw', '#BD1B21', 'Expenditure']]);
+    legend('f-budget-legend', [['ln', '#0C84FF', 'Revenue and grants'], ['ln', '#BD1B21', 'Expenditure']]);
     const lab = (r) => (r.basis === 'budget' ? `${r.year}, budget vs ${r.year - 1} ${r.base === 'budget' ? 'budget' : 'actual'}` : `${r.year}, actual`);
     const pc = (v) => (v == null ? '—' : J.f1(v) + '%');
     hover(f, rows, (r) => String(r.year), H, 'f-budget', lab, (r) => [['#0C84FF', 'Revenue and grants', pc(r.rev)], ['#BD1B21', 'Expenditure', pc(r.exp)]]);
