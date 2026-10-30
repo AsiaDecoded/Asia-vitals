@@ -255,7 +255,7 @@ dash.calc('sbn_latest', {
   }
 
   function imfChart() {
-    // IMF WEO general government net lending/borrowing, % of GDP, as published; projections outlined
+    // IMF WEO general government net lending/borrowing, % of GDP, as published; projections dashed with open markers
     const box = document.getElementById('f-imf-chart');
     const D = dash.data('id_fiscal_imf');
     if (bad(D)) { J.fail(box); return; }
@@ -266,11 +266,17 @@ dash.calc('sbn_latest', {
     const H = 280;
     const f = frame(box, rows.map((r) => String(r.year)), H, d3.min(rows, (r) => r.v), d3.max(rows, (r) => r.v), 0.2);
     yearAxis(f, H, rows);
-    f.svg.append('g').selectAll('rect').data(rows).join('rect')
-      .attr('x', (r) => f.x(String(r.year))).attr('width', f.x.bandwidth())
-      .attr('y', (r) => f.y(Math.max(0, r.v))).attr('height', (r) => Math.abs(f.y(r.v) - f.y(0)))
-      .attr('fill', (r) => (r.proj ? 'none' : '#1F4E79')).attr('stroke', (r) => (r.proj ? '#1F4E79' : 'none')).attr('stroke-width', 1.5);
-    legend('f-imf-legend', [['sw', '#1F4E79', 'General government net lending/borrowing']]);
+    const cx = (r) => f.x(String(r.year)) + f.x.bandwidth() / 2;
+    const line = d3.line().x(cx).y((r) => f.y(r.v));
+    const act = rows.filter((r) => !r.proj);
+    const pr = rows.filter((r) => r.proj);
+    f.svg.append('path').attr('d', line(act)).attr('fill', 'none').attr('stroke', '#1F4E79').attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
+    if (pr.length) {
+      f.svg.append('path').attr('d', line(act.slice(-1).concat(pr))).attr('fill', 'none').attr('stroke', '#1F4E79').attr('stroke-width', 2.5).attr('stroke-dasharray', '5 4');
+      f.svg.append('g').selectAll('circle').data(pr).join('circle').attr('cx', cx).attr('cy', (r) => f.y(r.v)).attr('r', 3.5)
+        .attr('fill', 'var(--color-panel)').attr('stroke', '#1F4E79').attr('stroke-width', 2);
+    }
+    legend('f-imf-legend', [['ln', '#1F4E79', 'General government net lending/borrowing']]);
     hover(f, rows, (r) => String(r.year), H, 'f-imf', (r) => `${r.year}${r.proj ? ', IMF projection' : ''}`,
       (r) => [['#1F4E79', 'Fiscal balance', r.v.toFixed(2) + '%']]);
   }
