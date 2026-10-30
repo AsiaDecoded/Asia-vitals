@@ -1,27 +1,27 @@
-year,basis,through,revenue_pct,expenditure_pct,balance_pct,revenue,expenditure,balance,gdp,mof_through,mof_balance_pct,method
-2001,actual,,16.814,19.075,-2.261,301078.0,341563.0,-40485.0,1790590.7,,,calculated: SEKI actual / IMF WEO nominal GDP (linked to the 2010 base)
-2002,actual,,15.066,16.26,-1.194,298528.0,322180.0,-23652.0,1981482.2,,,calculated: SEKI actual / IMF WEO nominal GDP (linked to the 2010 base)
-2003,actual,,15.588,17.191,-1.603,341396.0,376505.0,-35109.0,2190134.7,,,calculated: SEKI actual / IMF WEO nominal GDP (linked to the 2010 base)
-2004,actual,,16.154,17.108,-0.954,403367.0,427177.0,-23810.0,2497011.5,,,calculated: SEKI actual / IMF WEO nominal GDP (linked to the 2010 base)
-2005,actual,,16.412,16.89,-0.477,495224.0,509632.0,-14408.0,3017393.8,,,calculated: SEKI actual / IMF WEO nominal GDP (linked to the 2010 base)
-2006,actual,,17.567,18.369,-0.802,637987.0,667129.0,-29142.0,3631835.3,,,calculated: SEKI actual / IMF WEO nominal GDP (linked to the 2010 base)
-2007,actual,,16.472,17.632,-1.16,707806.0,757650.0,-49844.0,4297113.4,,,calculated: SEKI actual / IMF WEO nominal GDP (linked to the 2010 base)
-2008,actual,,18.128,18.204,-0.076,981609.38,985730.75,-4121.32,5414841.9,,,calculated: SEKI actual / IMF WEO nominal GDP (linked to the 2010 base)
-2009,actual,,14.119,15.593,-1.474,848763.16,937382.07,-88618.78,6011375.0,,,calculated: SEKI actual / IMF WEO nominal GDP (linked to the 2010 base)
-2010,actual,,14.5,15.182,-0.682,995271.4,1042117.4,-46845.71,6864133.1,,,calculated: SEKI actual / BPS annual nominal GDP
-2011,actual,,15.458,16.535,-1.078,1210599.7,1294999.2,-84399.4,7831726.0,,,calculated: SEKI actual / BPS annual nominal GDP
-2012,actual,,15.531,17.31,-1.779,1338109.62,1491410.22,-153300.6,8615704.5,,,calculated: SEKI actual / BPS annual nominal GDP
-2013,actual,,15.073,17.29,-2.217,1438891.07,1650563.73,-211672.66,9546134.0,,,calculated: SEKI actual / BPS annual nominal GDP
-2014,actual,,14.669,16.814,-2.145,1550491.0,1777182.86,-226692.04,10569705.3,,,calculated: SEKI actual / BPS annual nominal GDP
-2015,actual,,13.083,15.673,-2.59,1508020.37,1806515.2,-298494.83,11526332.8,,,calculated: SEKI actual / BPS annual nominal GDP
-2016,actual,,12.546,15.032,-2.486,1555934.15,1864275.09,-308340.94,12401728.5,,,calculated: SEKI actual / BPS annual nominal GDP
-2017,actual,,12.262,14.771,-2.509,1666375.91,2007351.81,-340975.9,13589825.7,,,calculated: SEKI actual / BPS annual nominal GDP
-2018,actual,,13.099,14.914,-1.816,1943674.88,2213117.82,-269442.94,14838756.0,,,calculated: SEKI actual / BPS annual nominal GDP
-2019,actual,,12.383,14.586,-2.202,1960633.58,2309287.31,-348653.73,15832657.2,,,calculated: SEKI actual / BPS annual nominal GDP
-2020,actual,,10.67,16.806,-6.137,1647783.34,2595481.1,-947697.76,15443353.2,,,calculated: SEKI actual / BPS annual nominal GDP
-2021,actual,,11.848,16.413,-4.565,2011347.0724,2786411.35956281,-775064.287144883,16976751.4,,,calculated: SEKI actual / BPS annual nominal GDP
-2022,actual,,13.456,15.807,-2.35,2635843.0461,3096262.71910267,-460419.673038202,19588459.9,,,calculated: SEKI actual / BPS annual nominal GDP
-2023,actual,,13.325,14.94,-1.614,2783929.6769,3121217.2457,-337287.56878,20892312.3,,,calculated: SEKI actual / BPS annual nominal GDP
-2024,actual,,12.876,15.176,-2.3,2850605.2442,3359766.7081,-509161.46389,22138990.8,,,calculated: SEKI actual / BPS annual nominal GDP
-2025,actual,,11.608,14.422,-2.814,2765125.58444798,3435460.99880786,-670335.414359877,23821103.6,,,calculated: SEKI actual / BPS annual nominal GDP
-2026,ytd,2026-06,11.456,12.999,-1.542,1459400.0,1656000.0,-196500.0,12739666.6,2026-09,-1.24,calculated: Ministry of Finance outturn Jan-06 / BPS nominal GDP Q1-Q2
+year,basis,through,revenue_pct,expenditure_pct,balance_pct,revenue,expenditure,balance,gdp,mof_through,mof_balance_pct,interest,interest_pct,primary_pct,method
+2001,actual,,16.814,19.075,-2.261,301078.0,341563.0,-40485.0,1790590.7,,,87142.0,4.867,2.606,calculated: SEKI actual / IMF WEO nominal GDP (linked to the 2010 base)
+2002,actual,,15.066,16.26,-1.194,298528.0,322180.0,-23652.0,1981482.2,,,87667.0,4.424,3.231,calculated: SEKI actual / IMF WEO nominal GDP (linked to the 2010 base)
+2003,actual,,15.588,17.191,-1.603,341396.0,376505.0,-35109.0,2190134.7,,,65351.0,2.984,1.381,calculated: SEKI actual / IMF WEO nominal GDP (linked to the 2010 base)
+2004,actual,,16.154,17.108,-0.954,403367.0,427177.0,-23810.0,2497011.5,,,62486.0,2.502,1.549,calculated: SEKI actual / IMF WEO nominal GDP (linked to the 2010 base)
+2005,actual,,16.412,16.89,-0.477,495224.0,509632.0,-14408.0,3017393.8,,,65200.0,2.161,1.683,calculated: SEKI actual / IMF WEO nominal GDP (linked to the 2010 base)
+2006,actual,,17.567,18.369,-0.802,637987.0,667129.0,-29142.0,3631835.3,,,79083.0,2.177,1.375,calculated: SEKI actual / IMF WEO nominal GDP (linked to the 2010 base)
+2007,actual,,16.472,17.632,-1.16,707806.0,757650.0,-49844.0,4297113.4,,,79806.0,1.857,0.697,calculated: SEKI actual / IMF WEO nominal GDP (linked to the 2010 base)
+2008,actual,,18.128,18.204,-0.076,981609.38,985730.75,-4121.32,5414841.9,,,88429.81,1.633,1.557,calculated: SEKI actual / IMF WEO nominal GDP (linked to the 2010 base)
+2009,actual,,14.119,15.593,-1.474,848763.16,937382.07,-88618.78,6011375.0,,,93782.1,1.56,0.086,calculated: SEKI actual / IMF WEO nominal GDP (linked to the 2010 base)
+2010,actual,,14.5,15.182,-0.682,995271.4,1042117.4,-46845.71,6864133.1,,,88383.3,1.288,0.605,calculated: SEKI actual / BPS annual nominal GDP
+2011,actual,,15.458,16.535,-1.078,1210599.7,1294999.2,-84399.4,7831726.0,,,93262.0,1.191,0.113,calculated: SEKI actual / BPS annual nominal GDP
+2012,actual,,15.531,17.31,-1.779,1338109.62,1491410.22,-153300.6,8615704.5,,,100515.99,1.167,-0.613,calculated: SEKI actual / BPS annual nominal GDP
+2013,actual,,15.073,17.29,-2.217,1438891.07,1650563.73,-211672.66,9546134.0,,,113035.49,1.184,-1.033,calculated: SEKI actual / BPS annual nominal GDP
+2014,actual,,14.669,16.814,-2.145,1550491.0,1777182.86,-226692.04,10569705.3,,,133441.29,1.262,-0.882,calculated: SEKI actual / BPS annual nominal GDP
+2015,actual,,13.083,15.673,-2.59,1508020.37,1806515.2,-298494.83,11526332.8,,,156009.75,1.354,-1.236,calculated: SEKI actual / BPS annual nominal GDP
+2016,actual,,12.546,15.032,-2.486,1555934.15,1864275.09,-308340.94,12401728.5,,,182761.27,1.474,-1.013,calculated: SEKI actual / BPS annual nominal GDP
+2017,actual,,12.262,14.771,-2.509,1666375.91,2007351.81,-340975.9,13589825.7,,,216568.02,1.594,-0.915,calculated: SEKI actual / BPS annual nominal GDP
+2018,actual,,13.099,14.914,-1.816,1943674.88,2213117.82,-269442.94,14838756.0,,,257952.03,1.738,-0.077,calculated: SEKI actual / BPS annual nominal GDP
+2019,actual,,12.383,14.586,-2.202,1960633.58,2309287.31,-348653.73,15832657.2,,,275521.17,1.74,-0.462,calculated: SEKI actual / BPS annual nominal GDP
+2020,actual,,10.67,16.806,-6.137,1647783.34,2595481.1,-947697.76,15443353.2,,,314088.11,2.034,-4.103,calculated: SEKI actual / BPS annual nominal GDP
+2021,actual,,11.848,16.413,-4.565,2011347.0724,2786411.35956281,-775064.287144883,16976751.4,,,343495.383443849,2.023,-2.542,calculated: SEKI actual / BPS annual nominal GDP
+2022,actual,,13.456,15.807,-2.35,2635843.0461,3096262.71910267,-460419.673038202,19588459.9,,,386341.819789815,1.972,-0.378,calculated: SEKI actual / BPS annual nominal GDP
+2023,actual,,13.325,14.94,-1.614,2783929.6769,3121217.2457,-337287.56878,20892312.3,,,439882.58434,2.105,0.491,calculated: SEKI actual / BPS annual nominal GDP
+2024,actual,,12.876,15.176,-2.3,2850605.2442,3359766.7081,-509161.46389,22138990.8,,,488426.42214,2.206,-0.094,calculated: SEKI actual / BPS annual nominal GDP
+2025,actual,,11.608,14.422,-2.814,2765125.58444798,3435460.99880786,-670335.414359877,23821103.6,,,514394.982025629,2.159,-0.655,calculated: SEKI actual / BPS annual nominal GDP
+2026,ytd,2026-06,11.456,12.999,-1.542,1459400.0,1656000.0,-196500.0,12739666.6,2026-09,-1.24,,,,calculated: Ministry of Finance outturn Jan-06 / BPS nominal GDP Q1-Q2

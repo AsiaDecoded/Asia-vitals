@@ -3,12 +3,12 @@
  "label": "to 2025; 2026 deficit to 2026-06",
  "latest_year": 2025,
  "table": "calculated from data/id/fiscal/id_fiscal_annual.csv and data/id/gdp/id_gdp_annual.csv; current year from data/id/fiscal/id_fiscal_monthly.csv",
- "processed_at": "2026-10-30T13:33:45Z",
+ "processed_at": "2026-10-30T14:13:22Z",
  "rows": 26,
  "warnings": [
   "2026: outturn published to 2026-09, ratio stops at 2026-06 (quarterly GDP to Q2)"
  ],
- "fingerprint": "9baf1c54adea016f",
+ "fingerprint": "b892d7987021599a",
  "long_rows": 78,
  "history": [
   {
@@ -17,7 +17,7 @@
   },
   {
    "code": "R2025-2026-06",
-   "processed_at": "2026-10-30T13:33:45Z"
+   "processed_at": "2026-10-30T14:13:22Z"
   }
  ]
 }
