@@ -419,7 +419,7 @@ dash.calc('sbn_latest', {
       .attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 2).attr('stroke-dasharray', '5 4');
     f.svg.append('path').attr('d', d3.line().defined((r) => r.actual != null).x(cxb).y((r) => f.y(r.actual))(rows))
       .attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
-    legend('f-bb-legend', [['lnd', '#BD1B21', 'Budget law (APBN)'], ['ln', '#BD1B21', 'Actual']]);
+    legend('f-bb-legend', [['lnd', '#BD1B21', 'Budgeted (APBN)'], ['ln', '#BD1B21', 'Actual']]);
     const pc2 = (v) => (v == null ? '—' : v.toFixed(2) + '%');
     hover(f, rows, (r) => String(r.year), H, 'f-bb', (r) => String(r.year),
       (r) => [['#BD1B21', 'Budgeted', pc2(r.budget)], ['#BD1B21', 'Actual', pc2(r.actual)]]);
