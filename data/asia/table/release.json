@@ -1,10 +1,10 @@
 {
- "code": "A5a88536385",
+ "code": "A5fec4a43ee",
  "label": "Asia table",
  "economies": "JP KR TW HK CN IN ID TH MY SG PH VN",
  "latest_cpi_month": "2026-09-01",
- "processed_at": "2026-10-30T02:27:24Z",
- "rows": 6668,
+ "processed_at": "2026-10-30T02:30:30Z",
+ "rows": 6761,
  "warnings": [],
  "missing": [],
  "inputs": {
@@ -83,6 +83,10 @@
   {
    "code": "A5a88536385",
    "processed_at": "2026-10-30T02:27:24Z"
+  },
+  {
+   "code": "A5fec4a43ee",
+   "processed_at": "2026-10-30T02:30:30Z"
   }
  ]
 }

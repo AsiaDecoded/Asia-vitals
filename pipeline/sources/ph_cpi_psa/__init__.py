@@ -1,6 +1,6 @@
 """Philippines CPI: Philippine Statistics Authority, CPI for all income households (2018 = 100), OpenSTAT.
 
-Everything is as published by the PSA except energy (calculated; below).
+Everything is as published by the PSA except energy and CPI less food and energy (calculated; below).
   - CPI by commodity group (COICOP 2018, 354 groups to 4 digits), Jan 2018 on: index (0012M4ACP22) and
     y/y (0012M4ACP23, Jan 2019 on). PSA's backcast on the 2018 base: index Jan 1994-Dec 2017 by group
     (0012M4ACP28) and all items 1957-1993 (0012M4ACP26); y/y Jan 1995-Dec 2018 by group and region
@@ -15,6 +15,8 @@ Everything is as published by the PSA except energy (calculated; below).
   - Regions: all-items y/y for NCR, AONCR and the 17 regions.
   - Energy (calculated, the one series not as published): 04.5 + 07.2.2 at published 2018 weights,
     index Jan 2018 on, y/y Jan 2019 on (see ENERGY_PARTS).
+  - CPI less food and non-alcoholic beverages and energy (calculated): the 19 published parts outside 01, 04.5
+    and 07.2.2 at published 2018 weights, index Jan 2018 on, y/y Jan 2019 on (see CORE_PARTS).
   - Every commodity group (national): index and y/y for the latest 25 months (ph_cpi_items.csv).
 
 New data is detected from the folder listing's last-updated dates (one call); the tables are fetched only
@@ -116,7 +118,14 @@ YOY_TOL = 0.15
 ENERGY_PARTS = ["04.5", "07.2.2"]
 AGG_CHECKS = {"04.5": ["04.5.1", "04.5.2", "04.5.3", "04.5.4"], "07.2": ["07.2.1", "07.2.2", "07.2.3", "07.2.4"],
               "04": ["04.1", "04.3", "04.4", "04.5"], "07": ["07.1", "07.2", "07.3", "07.4"]}
-AGG_TOL = 0.2  # index points; published indices are rounded to one decimal  # published y/y vs the published index (indices are rounded to one decimal)
+AGG_TOL = 0.2  # index points; published indices are rounded to one decimal
+# CPI less food and non-alcoholic beverages and energy (calculated, Asia Decoded): the weighted average of every
+# published part outside division 01 and the energy groups, at the published 2018 weights. Checked every run
+# against the residual of the published all-items index after removing 01, 04.5 and 07.2.2 (CORE_TOL).
+CORE_PARTS = ["02", "03", "05", "06", "08", "09", "10", "11", "12", "13", "04.1", "04.3", "04.4",
+              "07.1", "07.3", "07.4", "07.2.1", "07.2.3", "07.2.4"]
+CORE_OUT = ["01"] + ENERGY_PARTS
+CORE_TOL = 0.3  # index points (the residual magnifies rounding in the published indices)  # published y/y vs the published index (indices are rounded to one decimal)
 
 
 def _code(t):
@@ -239,6 +248,24 @@ def build(t):
     e_yoy = {d: round((v / e_idx[f"{int(d[:4]) - 1}{d[4:]}"] - 1) * 100, 1)
              for d, v in e_idx.items() if f"{int(d[:4]) - 1}{d[4:]}" in e_idx}
     add("national", "energy", "Energy (calculated)", "drivers", e_idx, e_yoy, round(sum(ew), 4) if None not in ew else None)
+
+    def weighted(parts, start="2018-01-01"):
+        pw = [weights.get(("national", c)) for c in parts]
+        out = {}
+        if None in pw:
+            return out, None
+        for (a, c, d), v in idx.items():
+            if a == "national" and c == "0" and d >= start:
+                xs = [idx.get(("national", k, d)) for k in parts]
+                if None not in xs:
+                    out[d] = round(sum(x * y for x, y in zip(xs, pw)) / sum(pw), 3)
+        return out, round(sum(pw), 4)
+
+    c_idx, c_w = weighted(CORE_PARTS)
+    c_yoy = {d: round((v / c_idx[f"{int(d[:4]) - 1}{d[4:]}"] - 1) * 100, 1)
+             for d, v in c_idx.items() if f"{int(d[:4]) - 1}{d[4:]}" in c_idx}
+    add("national", "ex_food_energy", "CPI less food and non-alcoholic beverages and energy (calculated)", "headline",
+        c_idx, c_yoy, c_w)
     for area, lab in (("ncr", "NCR"), ("aoncr", "Areas outside NCR")):
         for key, com, label in (("all", "0", "All items"), ("food", "01.1", "Food")):
             ix = {d: v for (a, c, dd), v in idx.items() for d in [dd] if a == area and c == com}
@@ -372,6 +399,28 @@ def check(b, state):
                         worst = (gap, d)
         if worst[0] > AGG_TOL:
             errors.append(f"weighted parts miss published {parent} by {worst[0]:.3f} ({worst[1][:7]}): energy method fails")
+    # CPI less food and energy (calculated): parts add up to 100 with the excluded groups, and the index matches
+    # the residual of the published all-items index
+    cw = [w.get(("national", k)) for k in CORE_PARTS]
+    ow = [w.get(("national", k)) for k in CORE_OUT]
+    if None in cw or None in ow or abs(sum(cw) + sum(ow) - 100) > 0.01:
+        errors.append("CPI less food and energy: weights of its parts and the excluded groups do not sum to 100")
+    else:
+        core = {r["date"]: r["index"] for r in b["series"] if r["area"] == "national" and r["series"] == "ex_food_energy"}
+        worst = (0, None)
+        for d, v in core.items():
+            k = d
+            xs = [idx.get(("national", c, k)) for c in CORE_OUT]
+            tot = idx.get(("national", "0", k))
+            if v is None or tot is None or None in xs:
+                continue
+            resid = (100 * tot - sum(x * y for x, y in zip(xs, ow))) / sum(cw)
+            if abs(resid - v) > worst[0]:
+                worst = (abs(resid - v), d)
+        if worst[0] > CORE_TOL:
+            errors.append(f"CPI less food and energy misses the all-items residual by {worst[0]:.3f} ({worst[1][:7]})")
+    if ("national", "ex_food_energy") not in have:
+        errors.append(f"CPI less food and energy (calculated): no y/y for {latest}")
     if ("national", "energy") not in have:
         errors.append(f"energy (calculated): no y/y for {latest}")
     for r in b["series"]:

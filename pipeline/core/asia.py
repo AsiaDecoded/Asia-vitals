@@ -100,6 +100,7 @@ SPEC = [
     ("PH", "cpi", "ph/cpi/ph_cpi.csv", {"area": "national", "series": "all"}, "yoy", PUB, "All items"),
     ("PH", "food", "ph/cpi/ph_cpi.csv", {"area": "national", "series": "d01"}, "yoy", PUB, "Food and non-alcoholic beverages"),
     ("PH", "energy", "ph/cpi/ph_cpi.csv", {"area": "national", "series": "energy"}, "yoy", CALC, "Energy: electricity, gas and other fuels (04.5) and fuels for personal transport (07.2.2) at published weights (2019-)"),
+    ("PH", "core", "ph/cpi/ph_cpi.csv", {"area": "national", "series": "ex_food_energy"}, "yoy", CALC, "CPI less food and non-alcoholic beverages and energy (2019-)"),
     ("PH", "official_core", "ph/cpi/ph_cpi.csv", {"area": "national", "series": "core"}, "yoy", PUB, "Core (PSA definition)"),
     ("PH", "ppi", "ph/ppi/ph_ppi.csv", {"series": "manufacturing"}, "yoy", PUB, "PPI, manufacturing"),
     # Vietnam
