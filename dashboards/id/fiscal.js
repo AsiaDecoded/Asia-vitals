@@ -89,7 +89,7 @@ dash.calc('sbn_latest', {
     const pct = b.dataset.m === 'pct';
     const u = document.getElementById('f-balance-units'); if (u) u.textContent = pct ? '% of GDP' : 'Rp trillion';
     const src = document.getElementById('f-balance-src');
-    if (src) src.textContent = pct ? 'Source: Ministry of Finance (SEKI, APBN KiTa), BPS' : 'Source: Ministry of Finance, Bank Indonesia (SEKI)';
+    if (src) src.textContent = pct ? 'Source: Ministry of Finance (SEKI, APBN KiTa), BPS, IMF' : 'Source: Ministry of Finance, Bank Indonesia (SEKI)';
     J.redrawFiscal();
   });
   J.state.fBal = 'rp';
