@@ -390,12 +390,13 @@ dash.calc('sbn_latest', {
     if (bad(D)) { J.fail(box); return; }
     if (D.status !== 'ok') { box.replaceChildren(); return; }
     const by = {};
-    D.data.forEach((r) => { (by[r.year] = by[r.year] || { year: r.year })[r.basis] = r.balance; });
+    // actual from SEKI; budget = the original budget law (id_budget_law), not SEKI's budget column (the revised budget)
+    D.data.forEach((r) => { if (r.basis === 'actual') (by[r.year] = by[r.year] || { year: r.year }).actual = r.balance; });
     const pct = J.state.fBud === 'pct';
     const B = dash.data('id_budget_law');
     if (B.status === 'ok') B.data.forEach((r) => {
       const y = Number(r.year);
-      if (by[y] && by[y].budget != null) return;
+      if (r.balance === '') return;
       by[y] = { ...(by[y] || { year: y }), budget: Number(r.balance) * 1000, lawPct: r.balance_pct_gdp === '' ? null : Number(r.balance_pct_gdp), law: true };
     });
     const G = dash.data('id_fiscal_gdp');
@@ -415,9 +416,9 @@ dash.calc('sbn_latest', {
       .attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 2).attr('stroke-dasharray', '5 4');
     f.svg.append('path').attr('d', d3.line().defined((r) => r.actual != null).x(cxb).y((r) => f.y(t(r.actual, r)))(rows))
       .attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
-    legend('f-bb-legend', [['lnd', '#BD1B21', 'Budget (APBN)'], ['ln', '#BD1B21', 'Actual']]);
+    legend('f-bb-legend', [['lnd', '#BD1B21', 'Budget law (APBN)'], ['ln', '#BD1B21', 'Actual']]);
     const fmt = (v, r) => (v == null ? '—' : pct ? t(v, r).toFixed(2) + '%' : trn(v));
-    hover(f, rows, (r) => String(r.year), H, 'f-bb', (r) => String(r.year), (r) => [['#BD1B21', r.law && pct && !gdp[r.year] ? 'Budget (MoF ratio)' : 'Budget', fmt(r.budget, r)], ['#BD1B21', 'Actual', fmt(r.actual, r)]]);
+    hover(f, rows, (r) => String(r.year), H, 'f-bb', (r) => String(r.year), (r) => [['#BD1B21', r.law && pct && !gdp[r.year] ? 'Budget law (MoF ratio)' : 'Budget law', fmt(r.budget, r)], ['#BD1B21', 'Actual', fmt(r.actual, r)]]);
   }
 
   function mixChart() {
