@@ -408,15 +408,15 @@ dash.calc('sbn_latest', {
     const vals = rows.flatMap((r) => [r.budget, r.actual].filter((v) => v != null).map((v) => t(v, r)));
     const f = frame(box, rows.map((r) => String(r.year)), H, d3.min(vals), d3.max(vals), 0.2);
     yearAxis(f, H, rows);
-    const bw = f.x.bandwidth() / 2;
-    // budget: red outline; actual: red fill
-    [['budget', 0], ['actual', 1]].forEach(([k, j]) => {
-      f.svg.append('g').selectAll('rect').data(rows.filter((r) => r[k] != null)).join('rect')
-        .attr('x', (r) => f.x(String(r.year)) + j * bw + (k === 'budget' ? 0.75 : 0)).attr('width', bw - (k === 'budget' ? 1.5 : 0))
-        .attr('y', (r) => f.y(Math.max(0, t(r[k], r)))).attr('height', (r) => Math.abs(f.y(t(r[k], r)) - f.y(0)))
-        .attr('fill', k === 'budget' ? 'none' : '#BD1B21').attr('stroke', k === 'budget' ? '#BD1B21' : 'none').attr('stroke-width', 1.5);
-    });
-    legend('f-bb-legend', [['ol', '#BD1B21', 'Budget (APBN)'], ['sw', '#BD1B21', 'Actual']]);
+    // budget: red outlined bars; actual: red line
+    f.svg.append('g').selectAll('rect').data(rows.filter((r) => r.budget != null)).join('rect')
+      .attr('x', (r) => f.x(String(r.year)) + 0.75).attr('width', f.x.bandwidth() - 1.5)
+      .attr('y', (r) => f.y(Math.max(0, t(r.budget, r)))).attr('height', (r) => Math.abs(f.y(t(r.budget, r)) - f.y(0)))
+      .attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 1.5);
+    const cxb = (r) => f.x(String(r.year)) + f.x.bandwidth() / 2;
+    f.svg.append('path').attr('d', d3.line().defined((r) => r.actual != null).x(cxb).y((r) => f.y(t(r.actual, r)))(rows))
+      .attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
+    legend('f-bb-legend', [['ol', '#BD1B21', 'Budget (APBN)'], ['ln', '#BD1B21', 'Actual']]);
     const fmt = (v, r) => (v == null ? '—' : pct ? t(v, r).toFixed(2) + '%' : trn(v));
     hover(f, rows, (r) => String(r.year), H, 'f-bb', (r) => String(r.year), (r) => [['#BD1B21', r.law && pct && !gdp[r.year] ? 'Budget (MoF ratio)' : 'Budget', fmt(r.budget, r)], ['#BD1B21', 'Actual', fmt(r.actual, r)]]);
   }
