@@ -98,10 +98,9 @@ dash.calc('sbn_latest', {
     const b = e.target.closest('button'); if (!b) return;
     J.state.fBud = b.dataset.m;
     segB.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
-    const u = document.getElementById('f-bb-units'); if (u) u.textContent = b.dataset.m === 'pct' ? '% of GDP' : 'Rp trillion';
     J.redrawFiscal();
   });
-  J.state.fBud = 'rp';
+  J.state.fBud = 'balance';
   const bad = (D) => D.status === 'error' || D.status === 'connect' || D.status === 'declined';
   const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   const trn = (v) => (v == null ? '—' : 'Rp' + d3.format(',.1f')(v / 1000) + 'trn');
@@ -385,40 +384,39 @@ dash.calc('sbn_latest', {
   }
 
   function balBudgetChart() {
+    // budget law (id_budget_law) against actual (SEKI), % of GDP (calculated: both divided by actual nominal GDP,
+    // id_fiscal_gdp); toggle: fiscal balance, revenue and grants, expenditure. For years with no actual GDP yet the
+    // Ministry's own deficit ratio is used for the balance; revenue and expenditure are left out there.
     const box = document.getElementById('f-bb-chart');
-    const D = dash.data('fiscal_years');
-    if (bad(D)) { J.fail(box); return; }
-    if (D.status !== 'ok') { box.replaceChildren(); return; }
+    const G = dash.data('id_fiscal_gdp'), B = dash.data('id_budget_law');
+    if (bad(G) || bad(B)) { J.fail(box); return; }
+    if (G.status !== 'ok' || B.status !== 'ok') { box.replaceChildren(); return; }
+    const m = J.state.fBud || 'balance';
+    const col = { balance: ['balance_pct', 'balance'], revenue: ['revenue_pct', 'revenue'], expenditure: ['expenditure_pct', 'expenditure'] }[m];
+    const n = (v) => (v === '' || v == null ? null : Number(v));
     const by = {};
-    // actual from SEKI; budget = the original budget law (id_budget_law), not SEKI's budget column (the revised budget)
-    D.data.forEach((r) => { if (r.basis === 'actual') (by[r.year] = by[r.year] || { year: r.year }).actual = r.balance; });
-    const pct = J.state.fBud === 'pct';
-    const B = dash.data('id_budget_law');
-    if (B.status === 'ok') B.data.forEach((r) => {
-      const y = Number(r.year);
-      if (r.balance === '') return;
-      by[y] = { ...(by[y] || { year: y }), budget: Number(r.balance) * 1000, lawPct: r.balance_pct_gdp === '' ? null : Number(r.balance_pct_gdp), law: true };
+    G.data.filter((r) => r.basis === 'actual').forEach((r) => { by[r.year] = { year: Number(r.year), actual: n(r[col[0]]), gdp: n(r.gdp) }; });
+    B.data.forEach((r) => {
+      const y = Number(r.year), v = n(r[col[1]]);
+      const o = (by[y] = by[y] || { year: y, actual: null, gdp: null });
+      if (v != null && o.gdp) o.budget = v * 1000 / o.gdp * 100;
+      else if (m === 'balance' && n(r.balance_pct_gdp) != null) { o.budget = n(r.balance_pct_gdp); o.mof = true; }
     });
-    const G = dash.data('id_fiscal_gdp');
-    const gdp = {};
-    if (pct && G.status === 'ok') G.data.forEach((r) => { if (r.basis === 'actual' && r.gdp !== '') gdp[Number(r.year)] = Number(r.gdp); });
-    let rows = Object.values(by).filter((r) => r.budget != null || r.actual != null).sort((a, b) => a.year - b.year);
-    if (pct) rows = rows.filter((r) => gdp[r.year] || r.lawPct != null);
+    const rows = Object.values(by).filter((r) => r.actual != null || r.budget != null).sort((a, b) => a.year - b.year);
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 300;
-    const t = (v, r) => (!pct ? v / 1000 : gdp[r.year] ? v / gdp[r.year] * 100 : r.lawPct);
-    const vals = rows.flatMap((r) => [r.budget, r.actual].filter((v) => v != null).map((v) => t(v, r)));
-    const f = frame(box, rows.map((r) => String(r.year)), H, d3.min(vals), d3.max(vals), 0.2);
+    const vals = rows.flatMap((r) => [r.actual, r.budget]).filter((v) => v != null);
+    const f = frame(box, rows.map((r) => String(r.year)), H, Math.min(0, d3.min(vals)), Math.max(0, d3.max(vals)), 0.2);
     yearAxis(f, H, rows);
-    // budget: red dashed line; actual: red line
     const cxb = (r) => f.x(String(r.year)) + f.x.bandwidth() / 2;
-    f.svg.append('path').attr('d', d3.line().defined((r) => r.budget != null).x(cxb).y((r) => f.y(t(r.budget, r)))(rows))
+    f.svg.append('path').attr('d', d3.line().defined((r) => r.budget != null).x(cxb).y((r) => f.y(r.budget))(rows))
       .attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 2).attr('stroke-dasharray', '5 4');
-    f.svg.append('path').attr('d', d3.line().defined((r) => r.actual != null).x(cxb).y((r) => f.y(t(r.actual, r)))(rows))
+    f.svg.append('path').attr('d', d3.line().defined((r) => r.actual != null).x(cxb).y((r) => f.y(r.actual))(rows))
       .attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
     legend('f-bb-legend', [['lnd', '#BD1B21', 'Budget law (APBN)'], ['ln', '#BD1B21', 'Actual']]);
-    const fmt = (v, r) => (v == null ? '—' : pct ? t(v, r).toFixed(2) + '%' : trn(v));
-    hover(f, rows, (r) => String(r.year), H, 'f-bb', (r) => String(r.year), (r) => [['#BD1B21', r.law && pct && !gdp[r.year] ? 'Budget law (MoF ratio)' : 'Budget law', fmt(r.budget, r)], ['#BD1B21', 'Actual', fmt(r.actual, r)]]);
+    const pc2 = (v) => (v == null ? '—' : v.toFixed(2) + '%');
+    hover(f, rows, (r) => String(r.year), H, 'f-bb', (r) => String(r.year),
+      (r) => [['#BD1B21', r.mof ? 'Budget law (MoF ratio)' : 'Budget law', pc2(r.budget)], ['#BD1B21', 'Actual', pc2(r.actual)]]);
   }
 
   function mixChart() {

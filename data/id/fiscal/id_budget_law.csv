@@ -1,28 +1,28 @@
 year,revenue,expenditure,balance,balance_pct_gdp,unit,source,note
-2001,263.22658,315.756061,-52.529481,,Rp trillion,"Budget law UU 35/2000 (APBN 2001), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2002,301.874322,344.008801,-42.134479,,Rp trillion,"Budget law UU 19/2001 (APBN 2002), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2003,336.155527,370.59178,-34.436253,,Rp trillion,"Budget law UU 29/2002 (APBN 2003), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2004,349.933736,374.351263,-24.417527,,Rp trillion,"Budget law UU 28/2003 (APBN 2004), as passed; text via pasal.id",original budget law; deficit equals revenue - expenditure in the law
-2005,380.377131,397.76931,-17.392179,,Rp trillion,"Budget law UU 36/2004 (APBN 2005), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2006,625.237026,647.667816,-22.43079,,Rp trillion,"Budget law UU 13/2005 (APBN 2006), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2007,723.057923,763.570799,-40.512876,,Rp trillion,"Budget law UU 18/2006 (APBN 2007), as passed; text via pasal.id",original budget law; deficit equals revenue - expenditure in the law
-2008,781.354147,854.660142,-73.305995,,Rp trillion,"Budget law UU 45/2007 (APBN 2008), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2009,985.725329,1037.067338,-51.34201,,Rp trillion,"Budget law UU 41/2008 (APBN 2009), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2010,949.656115,1047.666043,-98.009928,,Rp trillion,"Budget law UU 47/2009 (APBN 2010), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2011,1104.901964,1229.558465,-124.656501,,Rp trillion,"Budget law UU 10/2010 (APBN 2011), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2012,,,-124.020041,,Rp trillion,"Budget law UU 22/2011 (APBN 2012), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2013,,,-153.337967,,Rp trillion,"Budget law UU 19/2012 (APBN 2013), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2014,1667.1408,1842.4953,-175.3545,,Rp trillion,"Budget law UU 23/2013 (APBN 2014), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2015,1793.588918,2039.483608,-245.89469,,Rp trillion,"Budget law UU 27/2014 (APBN 2015), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2016,1822.545849,2095.7247,-273.178851,,Rp trillion,"Budget law UU 14/2015 (APBN 2016), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2017,1750.28338,2080.451169,-330.167789,,Rp trillion,"Budget law UU 18/2016 (APBN 2017), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2018,,,-325.936639,,Rp trillion,"Budget law UU 15/2017 (APBN 2018), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2019,,,-296.000237,,Rp trillion,"Budget law UU 12/2018 (APBN 2019), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2020,2233.196702,2540.422501,-307.225799,,Rp trillion,"Budget law UU 20/2019 (APBN 2020), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2021,,,-1006.379471,,Rp trillion,"Budget law UU 9/2020 (APBN 2021), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2022,1846.13667,2714.15572,-868.01905,,Rp trillion,"Budget law UU 6/2021 (APBN 2022), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2023,2463.024911,3061.176344,-598.151433,,Rp trillion,"Budget law UU 28/2022 (APBN 2023), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2024,,,-522.825005,,Rp trillion,"Budget law UU 19/2023 (APBN 2024), as passed; text via pasal.id",original budget law; deficit read from digits and words
-2025,,,-616.18606,,Rp trillion,"Budget law UU 62/2024 (APBN 2025), as passed; text via pasal.id",original budget law; deficit read from digits and words
+2001,263.22658,315.756061,-52.529481,,Rp trillion,"Budget law UU 35/2000 (APBN 2001), as passed; text via pasal.id",original budget law; deficit read from digits and words; revenue and expenditure read; revenue - expenditure = deficit
+2002,301.874322,344.008801,-42.134479,,Rp trillion,"Budget law UU 19/2001 (APBN 2002), as passed; text via pasal.id",original budget law; deficit read from digits and words; revenue and expenditure read; revenue - expenditure = deficit
+2003,336.155527,370.59178,-34.436253,,Rp trillion,"Budget law UU 29/2002 (APBN 2003), as passed; text via pasal.id",original budget law; deficit read from digits and words; revenue and expenditure read; revenue - expenditure = deficit
+2004,349.933736,374.351263,-24.417527,,Rp trillion,"Budget law UU 28/2003 (APBN 2004), as passed; text via pasal.id",original budget law; deficit equal to revenue - expenditure in the law; revenue and expenditure read; revenue - expenditure = deficit
+2005,380.377131,397.76931,-17.392179,,Rp trillion,"Budget law UU 36/2004 (APBN 2005), as passed; text via pasal.id",original budget law; deficit read from digits and words; revenue and expenditure read; revenue - expenditure = deficit
+2006,625.237026,647.667816,-22.43079,,Rp trillion,"Budget law UU 13/2005 (APBN 2006), as passed; text via pasal.id",original budget law; deficit read from digits and words; revenue and expenditure read; revenue - expenditure = deficit
+2007,723.057923,763.570799,-40.512876,,Rp trillion,"Budget law UU 18/2006 (APBN 2007), as passed; text via pasal.id",original budget law; deficit equal to revenue - expenditure in the law; revenue and expenditure read; revenue - expenditure = deficit
+2008,781.354147,854.660142,-73.305995,,Rp trillion,"Budget law UU 45/2007 (APBN 2008), as passed; text via pasal.id",original budget law; deficit read from digits and words; revenue and expenditure read; revenue - expenditure = deficit
+2009,985.725329,1037.067338,-51.34201,,Rp trillion,"Budget law UU 41/2008 (APBN 2009), as passed; text via pasal.id",original budget law; deficit read from digits and words; revenue and expenditure read; revenue - expenditure = deficit
+2010,949.656115,1047.666043,-98.009928,,Rp trillion,"Budget law UU 47/2009 (APBN 2010), as passed; text via pasal.id",original budget law; deficit read from digits and words; revenue and expenditure read; revenue - expenditure = deficit
+2011,1104.901964,1229.558465,-124.656501,,Rp trillion,"Budget law UU 10/2010 (APBN 2011), as passed; text via pasal.id",original budget law; deficit read from digits and words; revenue and expenditure read; revenue - expenditure = deficit
+2012,1311.386679,1435.40672,-124.020041,,Rp trillion,"Budget law UU 22/2011 (APBN 2012), as passed; text via pasal.id","original budget law; deficit read from digits and words; expenditure read; revenue = expenditure - deficit, as the law sets"
+2013,1529.673136,1683.011104,-153.337967,,Rp trillion,"Budget law UU 19/2012 (APBN 2013), as passed; text via pasal.id","original budget law; deficit read from digits and words; expenditure read; revenue = expenditure - deficit, as the law sets"
+2014,1667.1408,1842.4953,-175.3545,,Rp trillion,"Budget law UU 23/2013 (APBN 2014), as passed; text via pasal.id",original budget law; deficit read from digits and words; revenue and expenditure read; revenue - expenditure = deficit
+2015,1793.588918,2039.483608,-245.89469,,Rp trillion,"Budget law UU 27/2014 (APBN 2015), as passed; text via pasal.id",original budget law; deficit read from digits and words; revenue and expenditure read; revenue - expenditure = deficit
+2016,1822.545849,2095.7247,-273.178851,,Rp trillion,"Budget law UU 14/2015 (APBN 2016), as passed; text via pasal.id",original budget law; deficit read from digits and words; revenue and expenditure read; revenue - expenditure = deficit
+2017,1750.28338,2080.451169,-330.167789,,Rp trillion,"Budget law UU 18/2016 (APBN 2017), as passed; text via pasal.id",original budget law; deficit read from digits and words; revenue and expenditure read; revenue - expenditure = deficit
+2018,1894.720328,2220.656967,-325.936639,,Rp trillion,"Budget law UU 15/2017 (APBN 2018), as passed; text via pasal.id","original budget law; deficit read from digits and words; expenditure read; revenue = expenditure - deficit, as the law sets"
+2019,2165.111816,2461.112052,-296.000237,,Rp trillion,"Budget law UU 12/2018 (APBN 2019), as passed; text via pasal.id",original budget law; deficit read from digits and words; revenue and expenditure read; revenue - expenditure = deficit
+2020,2233.196702,2540.422501,-307.225799,,Rp trillion,"Budget law UU 20/2019 (APBN 2020), as passed; text via pasal.id",original budget law; deficit read from digits and words; revenue and expenditure read; revenue - expenditure = deficit
+2021,1743.648547,2750.028018,-1006.379471,,Rp trillion,"Budget law UU 9/2020 (APBN 2021), as passed; text via pasal.id","original budget law; deficit read from digits and words; expenditure read; revenue = expenditure - deficit, as the law sets"
+2022,1846.13667,2714.15572,-868.01905,,Rp trillion,"Budget law UU 6/2021 (APBN 2022), as passed; text via pasal.id",original budget law; deficit read from digits and words; revenue and expenditure read; revenue - expenditure = deficit
+2023,2463.024911,3061.176344,-598.151433,,Rp trillion,"Budget law UU 28/2022 (APBN 2023), as passed; text via pasal.id",original budget law; deficit read from digits and words; revenue and expenditure read; revenue - expenditure = deficit
+2024,2802.294317,3325.119322,-522.825005,,Rp trillion,"Budget law UU 19/2023 (APBN 2024), as passed; text via pasal.id",original budget law; deficit read from digits and words; revenue and expenditure read; revenue - expenditure = deficit
+2025,3005.127683,3621.313743,-616.18606,,Rp trillion,"Budget law UU 62/2024 (APBN 2025), as passed; text via pasal.id",original budget law; deficit read from digits and words; revenue and expenditure read; revenue - expenditure = deficit
 2026,3153.6,3842.7,-689.1,-2.68,Rp trillion,"Ministry of Finance, APBN KiTa press conference 9 Oct 2026, slide 38 (APBN 2026)",budget law as passed
 2027,3435.1,4106.3,-671.2,-2.40,Rp trillion,"Ministry of Finance, APBN KiTa press conference 9 Oct 2026, slide 38 (revenue, expenditure, deficit % of GDP); deficit Rp 671.16 trn from DPR approval reported by Investor Trust, 29 Sep 2026",APBN 2027 passed by DPR 29 Sep 2026

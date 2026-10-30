@@ -14,7 +14,7 @@ def txt(p):
 UNITS = {'nol':0,'satu':1,'se':1,'dua':2,'tiga':3,'empat':4,'lima':5,'enam':6,'tujuh':7,'delapan':8,'sembilan':9}
 SCALE = {'kuadriliun':10**15,'triliun':10**12,'miliar':10**9,'milyar':10**9,'juta':10**6,'ribu':10**3}
 FIX = {'putuh':'puluh','pufuh':'puluh','enarn':'enam','rnilyar':'milyar','rniliar':'miliar','lirna':'lima','sernbilan':'sembilan',
-       'trilyun':'triliun','delapanbelas':'delapan belas','tuiuh':'tujuh','juia':'juta','ratrrs':'ratus','ratu s':'ratus'}
+       'trilyun':'triliun', 'trilliun':'triliun', 'tqjuh':'tujuh', 'enarn':'enam','delapanbelas':'delapan belas','tuiuh':'tujuh','juia':'juta','ratrrs':'ratus','ratu s':'ratus'}
 def words(w):
     w = w.lower()
     w = re.sub(r"(?<=[a-z]) (?=[a-z] )", "", w)  # 'tril i un' -> partly
@@ -47,11 +47,29 @@ def digits(d):
     d = d.replace(' ', '').replace('O', '0').replace('o', '0')
     d = d.split(',')[0].replace('.', '')
     return int(d) if d.isdigit() else None
+
+
+AMBIG = {"O": "0", "o": "0", "I": "1", "l": "1", "L": "1", "a": "8", "s": "5", "S": "35"}
+
+
+def digit_variants(d):
+    """All readings of an OCR'd amount, trying each ambiguous character's possible digits."""
+    d = d.replace(" ", "").split(",")[0].replace(".", "")
+    outs = [""]
+    for ch in d:
+        opts = ch if ch.isdigit() else AMBIG.get(ch, "")
+        if not opts:
+            return []
+        outs = [o + c for o in outs for c in opts][:256]
+    return [int(o) for o in outs if o]
 def find(t, pats):
     out = []
     for pat in pats:
         for m in re.finditer(pat + r"\s*Rp\s*([0-9OoSIl .]+(?:,[0-9Oo]{0,2})?)\s*\(([^)]{5,400})\)", t, re.I):
-            out.append((digits(m.group(1)), words(m.group(2)), m.group(0)[:120]))
+            head = m.group(0)[: m.group(0).lower().find(" rp")]
+            if pat is not P_DEF[0] and re.search(r"(?i)d[ae][fl][il1]sit", head):
+                continue   # a revenue/expenditure pattern that ran into the deficit sentence
+            out.append((digits(m.group(1)), words(m.group(2)), m.group(0)[:120], digit_variants(m.group(1))))
     return out
 P_REV = [r"pendapatan\s+negara(?:\s+dan\s+hibah)?[^.()]{0,160}?sebesar"]
 P_EXP = [r"belanja\s+negara[^.()]{0,160}?sebesar"]
@@ -66,27 +84,32 @@ rows = []
 for y in range(2001, 2026):
     t = txt(f"{S}/laws/{y}.html")
     r = {k: find(t, p) for k, p in (('rev', P_REV), ('exp', P_EXP), ('def', P_DEF))}
-    pick = {}
-    for k, c in r.items():
-        vals = [w for d, w, _ in c if w] or [d for d, w, _ in c if d]
-        pick[k] = vals[0] if vals else None
-        pick[k + '_n'] = len(c)
-        pick[k + '_agree'] = [ (d, w) for d, w, _ in c][:3]
-    if pick['rev'] and pick['exp'] and pick['def']:
-        pick['check'] = (pick['rev'] - pick['exp'] + pick['def']) / 1e9
-    res[y] = pick
     def best(c):
-        both = [d for d, w, _ in c if d and w and abs(d - w) < 1e9]
+        both = [d for d, w, _, _v in c if d and w and abs(d - w) < 1e9]
         if both:
             return both[0], "digits and words"
-        one = [d or w for d, w, _ in c if (d or w)]
+        one = [d or w for d, w, _, _v in c if (d or w)]
         return (one[0], "one reading") if one else (None, "")
+
+    def cands(c):
+        out = set()
+        for d, w, _, v in c:
+            out.update(x for x in [d, w] + v if x)
+        return out
     dv, dh = best(r["def"])
-    rv, _ = best(r["rev"])
-    ev, _ = best(r["exp"])
-    ok = dh == "digits and words" or (rv and ev and dv and abs(rv - ev + dv) < 1e9)
-    if rv and ev and dv and abs(rv - ev + dv) >= 1e9:
-        rv = ev = None   # revenue or expenditure misread; keep the deficit only if its own two readings agree
+    R, E_ = cands(r["rev"]), cands(r["exp"])
+    pair = [(a, b) for a in R for b in E_ if dv and abs(a - b + dv) < 1e6]
+    rv = ev = None
+    how = ""
+    if pair:
+        rv, ev = pair[0]
+        how = "revenue and expenditure read; revenue - expenditure = deficit"
+    elif dv and E_:
+        e_ok = [b for d, w, _, v in r["exp"] for b in [w] if w and d and abs(d - w) < 1e9] or [w for d, w, _, v in r["exp"] if w]
+        if e_ok:
+            ev = e_ok[0]; rv = ev - dv
+            how = "expenditure read; revenue = expenditure - deficit, as the law sets"
+    ok = dh == "digits and words" or bool(pair)
     rows.append({"year": y, "law": LAWS[y], "revenue": rv, "expenditure": ev, "balance": -dv if (dv and ok) else None,
-                 "check": dh if ok else "unconfirmed"})
+                 "check": dh if ok else "unconfirmed", "rev_exp": how})
 print(json.dumps(rows, indent=1))
