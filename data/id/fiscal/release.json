@@ -10,7 +10,7 @@
   "4_4": "Tue, 06 Oct 2026 10:32:21 GMT"
  },
  "table": "Bank Indonesia SEKI IV.1-IV.4",
- "processed_at": "2026-10-30T10:36:20Z",
+ "processed_at": "2026-10-30T14:24:54Z",
  "rows": 9565,
  "warnings": [
   "2001-2007 sheet budget 2004: revenue - expenditure -26,271 vs published surplus/deficit 10,536; surplus/deficit left out for this year",
@@ -21,7 +21,7 @@
  "history": [
   {
    "code": "F2025-2026-09",
-   "processed_at": "2026-10-30T10:36:20Z"
+   "processed_at": "2026-10-30T14:24:54Z"
   }
  ]
 }
