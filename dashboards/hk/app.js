@@ -290,7 +290,7 @@
   // Heat table: published y/y for the latest 13 months, each row on its own colour range; 2025 weights.
   const HEAT = [
     ['all', 'CPI', 'lead'], ['under', 'Underlying CPI', 'lead'],
-    ['food', 'Food', ''], ['meals_out', 'Meals out and takeaway food', 'sub'], ['basic_food', 'Basic food', 'sub'],
+    ['food', 'Food', ''], ['meals_out', 'Meals out and takeaway food', 'sub'], ['basic_food', 'Basic food', 'sub'], ['coicop_01', 'Food and non-alcoholic beverages (COICOP 01)', 'sub'],
     ['housing', 'Housing', ''], ['g23_1', 'Private housing rent', 'sub'], ['g23_2', 'Public housing rent', 'sub'],
     ['egw', 'Electricity, gas and water', ''], ['g25', 'Electricity', 'sub'], ['energy', 'Energy (calculated)', ''],
     ['alcohol_tobacco', 'Alcoholic drinks and tobacco', ''], ['clothing', 'Clothing and footwear', ''],
@@ -485,7 +485,7 @@
     lines('cpi-hh', [C('all', 'cc', 'CPI', 'var(--ad-c2)'), C('all', 'a', 'CPI(A)', 'var(--ad-c5)', { it: 'a', thin: true }),
       C('all', 'b', 'CPI(B)', 'var(--ad-c6)', { it: 'b', thin: true }), C('all', 'c', 'CPI(C)', 'var(--ad-c1)', { it: 'c', thin: true })]);
     lines('cpi-fe', [C('food', 'f', 'Food', 'var(--ad-c5)'), C('energy', 'en', 'Energy (calculated)', 'var(--ad-c2)'),
-      C('meals_out', 'mo', 'Meals out and takeaway food', CC.fbss, { thin: true }), C('basic_food', 'bf', 'Basic food', CC.grey, { thin: true }),
+      C('meals_out', 'mo', 'Meals out and takeaway food', CC.fbss, { thin: true }), C('coicop_01', 'c01', 'Food and non-alcoholic beverages (COICOP 01)', CC.grey, { thin: true }),
       C('g25', 'el', 'Electricity', CC.bright, { thin: true }), C('g57', 'mf', 'Fuels for personal transport', 'var(--ad-c3)', { dash: true })], { anyStart: true });
     lines('cpi-housing', [C('housing', 'h', 'Housing', 'var(--ad-c7)'), C('g23_1', 'pr', 'Private housing rent', 'var(--ad-c2)', { thin: true }),
       C('g23_2', 'pu', 'Public housing rent', 'var(--ad-c1)', { thin: true }), C('g24', 'mf', 'Management fees and other housing expenses', 'var(--ad-c8)', { dash: true })], { anyStart: true });
