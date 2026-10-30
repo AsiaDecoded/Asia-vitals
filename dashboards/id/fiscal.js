@@ -93,6 +93,15 @@ dash.calc('sbn_latest', {
     J.redrawFiscal();
   });
   J.state.fBal = 'rp';
+  const segD = document.getElementById('f-debt-seg');
+  if (segD) segD.addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    J.state.fDebt = b.dataset.m;
+    segD.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    const u = document.getElementById('f-debt-units'); if (u) u.textContent = b.dataset.m === 'pct' ? '% of GDP' : 'Rp trillion';
+    J.redrawFiscal();
+  });
+  J.state.fDebt = 'rp';
   const segB = document.getElementById('f-bb-seg');
   if (segB) segB.addEventListener('click', (e) => {
     const b = e.target.closest('button'); if (!b) return;
@@ -383,6 +392,28 @@ dash.calc('sbn_latest', {
     hover(f, rows, (r) => String(r.year), H, 'f-budget', lab, (r) => [['#0C84FF', 'Revenue and grants', pc(r.rev)], ['#BD1B21', 'Expenditure', pc(r.exp)]]);
   }
 
+  function debtChart() {
+    // IMF WEO general government gross debt, Rp trillion or % of GDP, as published; projections outlined
+    const box = document.getElementById('f-debt-chart');
+    const D = dash.data('id_debt_imf');
+    if (bad(D)) { J.fail(box); return; }
+    if (D.status !== 'ok') { box.replaceChildren(); return; }
+    const pct = J.state.fDebt === 'pct';
+    const rows = D.data.map((r) => ({ year: Number(r.year), v: pct ? Number(r.debt_pct_gdp) : Number(r.debt) / 1000,
+      rp: Number(r.debt) / 1000, pc: Number(r.debt_pct_gdp), proj: r.imf_projection === 'y' })).sort((a, b) => a.year - b.year);
+    if (!rows.length) { box.replaceChildren(); return; }
+    const H = 280;
+    const f = frame(box, rows.map((r) => String(r.year)), H, 0, d3.max(rows, (r) => r.v), 0.2);
+    yearAxis(f, H, rows);
+    f.svg.append('g').selectAll('rect').data(rows).join('rect')
+      .attr('x', (r) => f.x(String(r.year)) + (r.proj ? 0.75 : 0)).attr('width', f.x.bandwidth() - (r.proj ? 1.5 : 0))
+      .attr('y', (r) => f.y(r.v)).attr('height', (r) => f.y(0) - f.y(r.v))
+      .attr('fill', (r) => (r.proj ? 'none' : '#1F4E79')).attr('stroke', (r) => (r.proj ? '#1F4E79' : 'none')).attr('stroke-width', 1.5);
+    legend('f-debt-legend', [['sw', '#1F4E79', 'Government debt'], ['ol', '#1F4E79', 'IMF projection']]);
+    hover(f, rows, (r) => String(r.year), H, 'f-debt', (r) => `${r.year}${r.proj ? ', IMF projection' : ''}`,
+      (r) => [['#1F4E79', 'Debt', 'Rp' + d3.format(',.1f')(r.rp) + 'trn'], ['#1F4E79', '% of GDP', r.pc.toFixed(2) + '%']]);
+  }
+
   function balBudgetChart() {
     // budget law (id_budget_law) against actual (SEKI), % of GDP (calculated: both divided by actual nominal GDP,
     // id_fiscal_gdp); toggle: fiscal balance, revenue and grants, expenditure. For years with no actual GDP yet the
@@ -474,7 +505,7 @@ dash.calc('sbn_latest', {
     const pg = document.getElementById('fiscal');
     if (!pg || pg.hidden) return;
     if (J.state.fBal === 'pct') gdpChart(); else balanceChart();
-    imfChart(); primaryChart(); budgetChart(); mixChart(); balBudgetChart();
+    debtChart(); imfChart(); primaryChart(); budgetChart(); mixChart(); balBudgetChart();
     sbnStack('f-sbn-chart', 'f-sbn', 'f-sbn-legend', [['bonds', 'Government bonds (Obligasi Negara)', '#1F4E79'], ['spn', 'Treasury bills (SPN)', '#0C84FF'], ['sbsn', 'Islamic securities (SBSN)', '#92D050']]);
     sbnStack('f-hold-chart', 'f-hold', 'f-hold-legend', HOLD);
   };
