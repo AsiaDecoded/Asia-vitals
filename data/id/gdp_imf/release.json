@@ -1,0 +1,23 @@
+{
+ "code": "I-9/24/2026",
+ "label": "1980-2031 (IMF update 9/24/2026)",
+ "latest_year": 2031,
+ "table": "https://api.imf.org/external/sdmx/3.0/data/dataflow/IMF.RES/WEO/+/IDN.NGDP.A",
+ "attributes": {
+  "SCALE": "9",
+  "DECIMALS_DISPLAYED": "3",
+  "OVERLAP": "OL",
+  "COUNTRY_UPDATE_DATE": "9/24/2026"
+ },
+ "processed_at": "2026-10-30T13:33:45Z",
+ "rows": 52,
+ "warnings": [],
+ "fingerprint": "f10e231fce56b0bf",
+ "long_rows": 52,
+ "history": [
+  {
+   "code": "I-9/24/2026",
+   "processed_at": "2026-10-30T13:33:45Z"
+  }
+ ]
+}
