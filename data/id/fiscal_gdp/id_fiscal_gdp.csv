@@ -1,18 +1,18 @@
-year,basis,through,revenue_pct,expenditure_pct,balance_pct,revenue,expenditure,balance,gdp,method
-2010,actual,,14.5,15.182,-0.682,995271.4,1042117.4,-46845.71,6864133.1,calculated: SEKI actual / BPS annual nominal GDP
-2011,actual,,15.458,16.535,-1.078,1210599.7,1294999.2,-84399.4,7831726.0,calculated: SEKI actual / BPS annual nominal GDP
-2012,actual,,15.531,17.31,-1.779,1338109.62,1491410.22,-153300.6,8615704.5,calculated: SEKI actual / BPS annual nominal GDP
-2013,actual,,15.073,17.29,-2.217,1438891.07,1650563.73,-211672.66,9546134.0,calculated: SEKI actual / BPS annual nominal GDP
-2014,actual,,14.669,16.814,-2.145,1550491.0,1777182.86,-226692.04,10569705.3,calculated: SEKI actual / BPS annual nominal GDP
-2015,actual,,13.083,15.673,-2.59,1508020.37,1806515.2,-298494.83,11526332.8,calculated: SEKI actual / BPS annual nominal GDP
-2016,actual,,12.546,15.032,-2.486,1555934.15,1864275.09,-308340.94,12401728.5,calculated: SEKI actual / BPS annual nominal GDP
-2017,actual,,12.262,14.771,-2.509,1666375.91,2007351.81,-340975.9,13589825.7,calculated: SEKI actual / BPS annual nominal GDP
-2018,actual,,13.099,14.914,-1.816,1943674.88,2213117.82,-269442.94,14838756.0,calculated: SEKI actual / BPS annual nominal GDP
-2019,actual,,12.383,14.586,-2.202,1960633.58,2309287.31,-348653.73,15832657.2,calculated: SEKI actual / BPS annual nominal GDP
-2020,actual,,10.67,16.806,-6.137,1647783.34,2595481.1,-947697.76,15443353.2,calculated: SEKI actual / BPS annual nominal GDP
-2021,actual,,11.848,16.413,-4.565,2011347.0724,2786411.35956281,-775064.287144883,16976751.4,calculated: SEKI actual / BPS annual nominal GDP
-2022,actual,,13.456,15.807,-2.35,2635843.0461,3096262.71910267,-460419.673038202,19588459.9,calculated: SEKI actual / BPS annual nominal GDP
-2023,actual,,13.325,14.94,-1.614,2783929.6769,3121217.2457,-337287.56878,20892312.3,calculated: SEKI actual / BPS annual nominal GDP
-2024,actual,,12.876,15.176,-2.3,2850605.2442,3359766.7081,-509161.46389,22138990.8,calculated: SEKI actual / BPS annual nominal GDP
-2025,actual,,11.608,14.422,-2.814,2765125.58444798,3435460.99880786,-670335.414359877,23821103.6,calculated: SEKI actual / BPS annual nominal GDP
-2026,ytd,2026-09,,,-1.24,2341500.0,2660500.0,-319000.0,,"published: Ministry of Finance APBN KiTa, deficit % of GDP, year to date"
+year,basis,through,revenue_pct,expenditure_pct,balance_pct,revenue,expenditure,balance,gdp,mof_balance_pct,method
+2010,actual,,14.5,15.182,-0.682,995271.4,1042117.4,-46845.71,6864133.1,,calculated: SEKI actual / BPS annual nominal GDP
+2011,actual,,15.458,16.535,-1.078,1210599.7,1294999.2,-84399.4,7831726.0,,calculated: SEKI actual / BPS annual nominal GDP
+2012,actual,,15.531,17.31,-1.779,1338109.62,1491410.22,-153300.6,8615704.5,,calculated: SEKI actual / BPS annual nominal GDP
+2013,actual,,15.073,17.29,-2.217,1438891.07,1650563.73,-211672.66,9546134.0,,calculated: SEKI actual / BPS annual nominal GDP
+2014,actual,,14.669,16.814,-2.145,1550491.0,1777182.86,-226692.04,10569705.3,,calculated: SEKI actual / BPS annual nominal GDP
+2015,actual,,13.083,15.673,-2.59,1508020.37,1806515.2,-298494.83,11526332.8,,calculated: SEKI actual / BPS annual nominal GDP
+2016,actual,,12.546,15.032,-2.486,1555934.15,1864275.09,-308340.94,12401728.5,,calculated: SEKI actual / BPS annual nominal GDP
+2017,actual,,12.262,14.771,-2.509,1666375.91,2007351.81,-340975.9,13589825.7,,calculated: SEKI actual / BPS annual nominal GDP
+2018,actual,,13.099,14.914,-1.816,1943674.88,2213117.82,-269442.94,14838756.0,,calculated: SEKI actual / BPS annual nominal GDP
+2019,actual,,12.383,14.586,-2.202,1960633.58,2309287.31,-348653.73,15832657.2,,calculated: SEKI actual / BPS annual nominal GDP
+2020,actual,,10.67,16.806,-6.137,1647783.34,2595481.1,-947697.76,15443353.2,,calculated: SEKI actual / BPS annual nominal GDP
+2021,actual,,11.848,16.413,-4.565,2011347.0724,2786411.35956281,-775064.287144883,16976751.4,,calculated: SEKI actual / BPS annual nominal GDP
+2022,actual,,13.456,15.807,-2.35,2635843.0461,3096262.71910267,-460419.673038202,19588459.9,,calculated: SEKI actual / BPS annual nominal GDP
+2023,actual,,13.325,14.94,-1.614,2783929.6769,3121217.2457,-337287.56878,20892312.3,,calculated: SEKI actual / BPS annual nominal GDP
+2024,actual,,12.876,15.176,-2.3,2850605.2442,3359766.7081,-509161.46389,22138990.8,,calculated: SEKI actual / BPS annual nominal GDP
+2025,actual,,11.608,14.422,-2.814,2765125.58444798,3435460.99880786,-670335.414359877,23821103.6,,calculated: SEKI actual / BPS annual nominal GDP
+2026,ytd,2026-06,11.456,12.999,-1.542,1459400.0,1656000.0,-196500.0,12739666.6,-0.76,calculated: Ministry of Finance outturn Jan-06 / BPS nominal GDP Q1-Q2

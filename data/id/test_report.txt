@@ -1,5 +1,5 @@
 == id_fiscal_kemenkeu
-   year to date to end-Sep 2026: revenue Rp2341.5 T, expenditure Rp2660.5 T, balance Rp-319.0 T; 6 months, 18 decks read
+   year to date to end-Sep 2026: revenue Rp2341.5 T, expenditure Rp2660.5 T, balance Rp-319.0 T; 8 months, 18 decks read
    warning: APBN KiTa Maret 2025 (b6026682-cd60-48f9-9183-f03d51df9479): no outturn summary read
    warning: APBN KiTa April 2025 (9c212697-97e1-48ac-b664-275b99a702a0): no outturn summary read
    warning: APBN KiTa Mei 2025 (5cd6f040-dc25-42d6-a8e5-98b71a3e6760): no outturn summary read
@@ -12,4 +12,6 @@
    warning: APBN KITA Februari 2026 (89672833-8f45-4160-87fd-dbb441714b13): no outturn summary read
    warning: APBN KITA April 2026 (f1c0dbec-4b48-4ea9-bf05-3770d9fced4b): no outturn summary read
    warning: APBN KITA Juli 2026 (fd879869-f1e2-4475-b71f-cabff87a0c56): no outturn summary read
-   warning: months with no deck read: ['2026-03', '2026-06']
+== id_fiscal_gdp
+   2025: revenue 11.61%, expenditure 14.42%, balance -2.81% of GDP; 17 years
+   warning: 2026: outturn published to 2026-09, ratio stops at 2026-06 (quarterly GDP to Q2)
