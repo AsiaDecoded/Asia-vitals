@@ -1,4 +1,4 @@
-"""Indonesia: IMF fiscal series reachable from GitHub Actions? DataMapper API (v1, v2), SDMX 2.1/3.0 (api.imf.org),
+"""Indonesia: World Bank WDI nominal GDP and IMF fiscal series reachable from GitHub Actions? DataMapper API (v1, v2), SDMX 2.1/3.0 (api.imf.org),
 old dataservices endpoint; FRED (copy of WEO). Saves each response.
 
   python -I pipeline/tools/imf_probe.py OUTDIR
@@ -16,6 +16,13 @@ IND = ["GGXCNL_NGDP", "GGXONLB_NGDP", "GGR_NGDP", "GGX_NGDP", "GGXWDG_NGDP", "CG
 URLS = []
 for i in IND:
     URLS += [f"https://www.imf.org/external/datamapper/api/v1/{i}/IDN", f"https://www.imf.org/external/datamapper/api/v2/{i}/IDN"]
+WDI = ["https://api.worldbank.org/v2/country/IDN/indicator/NY.GDP.MKTP.CN?format=json&per_page=200",
+       "https://api.worldbank.org/v2/country/IDN/indicator/NY.GDP.MKTP.CN?format=json&per_page=200&source=2",
+       "https://api.worldbank.org/v2/country/IDN/indicator/GC.NLD.TOTL.GD.ZS?format=json&per_page=200",
+       "https://api.worldbank.org/v2/country/IDN/indicator/GC.REV.XGRT.GD.ZS?format=json&per_page=200",
+       "https://api.worldbank.org/v2/sources/2?format=json",
+       "https://api.imf.org/external/sdmx/3.0/data/dataflow/IMF.RES/WEO/+/IDN.NGDP.A"]
+URLS = WDI + URLS
 URLS += [
     "https://www.imf.org/external/datamapper/api/v1/indicators",
     "https://www.imf.org/external/datamapper/api/v2/indicators",
