@@ -404,7 +404,7 @@ dash.calc('sbn_latest', {
     });
     const rows = Object.values(by).filter((r) => r.actual != null || r.budget != null).sort((a, b) => a.year - b.year);
     if (!rows.length) { box.replaceChildren(); return; }
-    const H = 300;
+    const H = 280;
     const vals = rows.flatMap((r) => [r.actual, r.budget]).filter((v) => v != null);
     const f = frame(box, rows.map((r) => String(r.year)), H, Math.min(0, d3.min(vals)), Math.max(0, d3.max(vals)), 0.2);
     yearAxis(f, H, rows);
