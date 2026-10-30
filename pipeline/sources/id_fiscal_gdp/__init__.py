@@ -8,7 +8,9 @@
   (data/id/fiscal/id_fiscal_monthly.csv, from id_fiscal_kemenkeu) at the end of the latest quarter for which BPS has
   published quarterly nominal GDP, divided by the sum of that year's quarterly nominal GDP to that quarter
   (data/id/gdp/id_gdp.csv, code 800). So 2026 runs to June until Q3 GDP is published. This is not the Ministry's own
-  ratio, which divides the year-to-date deficit by its full-year GDP estimate (kept in the file as mof_balance_pct).
+  ratio, which divides the year-to-date deficit by its full-year GDP estimate; that published ratio for the latest month
+  is kept as mof_balance_pct (month in mof_through) and is what the dashboard shows for the current year's balance
+  (asked for 30 Oct 2026: deficit as published).
 
 Runs after id_gdp_bps, id_fiscal_seki and id_fiscal_kemenkeu; reads their files only (no downloads).
 """
@@ -80,11 +82,12 @@ def update(force=False, **_):
             continue
         q, end, g = best
         m = mon[end]
+        latest = max(x for x in mon if x.startswith(str(y)))
         rv, ex, bl = (float(m[k]) * 1000 for k in ("revenue", "expenditure", "balance"))
         row = {"year": y, "basis": "ytd", "through": end, "gdp": g, "revenue_pct": round(rv / g * 100, 3),
                "expenditure_pct": round(ex / g * 100, 3), "balance_pct": round(bl / g * 100, 3),
                "revenue": rv, "expenditure": ex, "balance": bl,
-               "mof_balance_pct": float(m["balance_pct_gdp"]) if m.get("balance_pct_gdp") else "",
+               "mof_through": latest, "mof_balance_pct": float(mon[latest]["balance_pct_gdp"]) if mon[latest].get("balance_pct_gdp") else "",
                "method": f"calculated: Ministry of Finance outturn Jan-{end[5:]} / BPS nominal GDP Q1-Q{q}"}
         if abs(row["revenue_pct"] - row["expenditure_pct"] - row["balance_pct"]) > 0.02:
             errors.append(f"{y} year to date: ratios do not add up")
@@ -96,7 +99,7 @@ def update(force=False, **_):
         raise CheckFailed(errors)
     rows.sort(key=lambda r: r["year"])
     cols = ["year", "basis", "through", "revenue_pct", "expenditure_pct", "balance_pct", "revenue", "expenditure", "balance", "gdp",
-            "mof_balance_pct", "method"]
+            "mof_through", "mof_balance_pct", "method"]
     fp = hashlib.sha256(json.dumps(rows, sort_keys=True).encode()).hexdigest()[:16]
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {state.get('label')})"}

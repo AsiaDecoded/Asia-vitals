@@ -201,7 +201,8 @@ dash.calc('sbn_latest', {
     if (bad(D)) { J.fail(box); return; }
     if (D.status !== 'ok') { box.replaceChildren(); return; }
     const n = (v) => (v === '' || v == null ? null : Number(v));
-    const rows = D.data.map((r) => ({ year: Number(r.year), basis: r.basis, through: r.through, rev: n(r.revenue_pct), exp: n(r.expenditure_pct), bal: n(r.balance_pct) }))
+    const rows = D.data.map((r) => ({ year: Number(r.year), basis: r.basis, through: r.through, rev: n(r.revenue_pct), exp: n(r.expenditure_pct), mof: r.mof_through,
+      bal: r.basis === 'ytd' && n(r.mof_balance_pct) != null ? n(r.mof_balance_pct) : n(r.balance_pct) }))
       .filter((r) => r.bal != null).sort((a, b) => a.year - b.year);
     if (!rows.length) { box.replaceChildren(); return; }
     const act = rows.filter((r) => r.basis === 'actual');
@@ -222,10 +223,13 @@ dash.calc('sbn_latest', {
         .attr('r', 4).attr('fill', 'var(--color-panel)').attr('stroke', c).attr('stroke-width', 2);
     });
     legend('f-balance-gdp-legend', [['ln', '#0C84FF', 'Revenue and grants'], ['ln', '#BD1B21', 'Expenditure'], ['sw', '#A6A6A6', 'Fiscal balance']]);
-    const lab = (r) => (r.basis === 'ytd' && r.through ? `${r.year}, Jan–${MON[Number(r.through.slice(5, 7)) - 1]} (% of GDP in the same months)` : `${r.year}`);
+    const mo = (d) => MON[Number(d.slice(5, 7)) - 1];
+    const lab = (r) => `${r.year}`;
     const pc = (v) => (v == null ? '—' : J.f1(v) + '%');
-    hover(f, rows, (r) => String(r.year), H, 'f-balance-gdp', lab,
-      (r) => [['#0C84FF', 'Revenue and grants', pc(r.rev)], ['#BD1B21', 'Expenditure', pc(r.exp)], ['#A6A6A6', 'Fiscal balance', pc(r.bal)]]);
+    hover(f, rows, (r) => String(r.year), H, 'f-balance-gdp', lab, (r) => (r.basis === 'ytd'
+      ? [['#0C84FF', `Revenue, Jan–${mo(r.through)} (calc.)`, pc(r.rev)], ['#BD1B21', `Expenditure, Jan–${mo(r.through)} (calc.)`, pc(r.exp)],
+         ['#A6A6A6', `Fiscal balance, Jan–${mo(r.mof || r.through)} (MoF)`, pc(r.bal)]]
+      : [['#0C84FF', 'Revenue and grants', pc(r.rev)], ['#BD1B21', 'Expenditure', pc(r.exp)], ['#A6A6A6', 'Fiscal balance', pc(r.bal)]]));
   }
 
   function budgetChart() {
