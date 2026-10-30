@@ -81,6 +81,18 @@ dash.calc('sbn_latest', {
     J.redrawFiscal();
   });
   J.state.fMix = 'revenue';
+  const segBal = document.getElementById('f-balance-seg');
+  if (segBal) segBal.addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    J.state.fBal = b.dataset.m;
+    segBal.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    const pct = b.dataset.m === 'pct';
+    const u = document.getElementById('f-balance-units'); if (u) u.textContent = pct ? '% of GDP' : 'Rp trillion';
+    const src = document.getElementById('f-balance-src');
+    if (src) src.textContent = pct ? 'Source: Ministry of Finance (SEKI, APBN KiTa), BPS' : 'Source: Ministry of Finance, Bank Indonesia (SEKI)';
+    J.redrawFiscal();
+  });
+  J.state.fBal = 'rp';
   const bad = (D) => D.status === 'error' || D.status === 'connect' || D.status === 'declined';
   const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   const trn = (v) => (v == null ? '—' : 'Rp' + d3.format(',.1f')(v / 1000) + 'trn');
@@ -196,7 +208,7 @@ dash.calc('sbn_latest', {
   }
 
   function gdpChart() {
-    const box = document.getElementById('f-balance-gdp-chart');
+    const box = document.getElementById('f-balance-chart');
     const D = dash.data('id_fiscal_gdp');
     if (bad(D)) { J.fail(box); return; }
     if (D.status !== 'ok') { box.replaceChildren(); return; }
@@ -222,12 +234,12 @@ dash.calc('sbn_latest', {
       f.svg.append('g').selectAll('circle').data(ytd.filter((r) => r[k] != null)).join('circle').attr('cx', cx).attr('cy', (r) => f.y(r[k]))
         .attr('r', 4).attr('fill', 'var(--color-panel)').attr('stroke', c).attr('stroke-width', 2);
     });
-    legend('f-balance-gdp-legend', [['ln', '#0C84FF', 'Revenue and grants'], ['ln', '#BD1B21', 'Expenditure'], ['sw', '#A6A6A6', 'Fiscal balance']]);
+    legend('f-balance-legend', [['ln', '#0C84FF', 'Revenue and grants'], ['ln', '#BD1B21', 'Expenditure'], ['sw', '#A6A6A6', 'Fiscal balance']]);
     const mo = (d) => MON[Number(d.slice(5, 7)) - 1];
     const lab = (r) => `${r.year}`;
     const pc = (v) => (v == null ? '—' : J.f1(v) + '%');
     const pc2 = (v) => (v == null ? '—' : v.toFixed(2) + '%');
-    hover(f, rows, (r) => String(r.year), H, 'f-balance-gdp', lab, (r) => (r.basis === 'ytd'
+    hover(f, rows, (r) => String(r.year), H, 'f-balance', lab, (r) => (r.basis === 'ytd'
       ? [['#0C84FF', `Revenue, Jan–${mo(r.through)} (calc.)`, pc(r.rev)], ['#BD1B21', `Expenditure, Jan–${mo(r.through)} (calc.)`, pc(r.exp)],
          ['#A6A6A6', `Fiscal balance, Jan–${mo(r.mof || r.through)} (MoF)`, pc2(r.bal)]]
       : [['#0C84FF', 'Revenue and grants', pc(r.rev)], ['#BD1B21', 'Expenditure', pc(r.exp)], ['#A6A6A6', 'Fiscal balance', pc2(r.bal)]]));
@@ -345,7 +357,8 @@ dash.calc('sbn_latest', {
   J.redrawFiscal = () => {
     const pg = document.getElementById('fiscal');
     if (!pg || pg.hidden) return;
-    balanceChart(); gdpChart(); budgetChart(); mixChart();
+    if (J.state.fBal === 'pct') gdpChart(); else balanceChart();
+    budgetChart(); mixChart();
     sbnStack('f-sbn-chart', 'f-sbn', 'f-sbn-legend', [['bonds', 'Government bonds (Obligasi Negara)', '#1F4E79'], ['spn', 'Treasury bills (SPN)', '#0C84FF'], ['sbsn', 'Islamic securities (SBSN)', '#92D050']]);
     sbnStack('f-hold-chart', 'f-hold', 'f-hold-legend', HOLD);
   };
