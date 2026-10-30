@@ -159,7 +159,11 @@ OLD_LABELS = {
     "Pengeluaran rutin lainnya /Belanja Lainnya": "Belanja Lainnya",
     "Anggaran Belanja untuk Daerah/ Transfer ke Daerah": "Transfer Ke Daerah dan Dana Desa",
 }
-OLD_ITEM0 = 100   # item numbers of older-sheet rows start here, apart from the current sheet's
+OLD_ITEM0 = 100
+# Published replacements for SEKI rows that fail their own identity (asked for 30 Oct 2026): 2004 budget
+# surplus/deficit. SEKI's 2001-2007 sheet shows +10,536 (revenue - expenditure there: -26,271); the revised 2004 budget
+# law, UU 35/2004 (APBN-P 2004), Pasal 12 ayat 1, sets the deficit at Rp 26,271,645,512,000.
+OLD_FIX = {("budget", 2004): (-26271.645512, "UU 35/2004 (APBN-P 2004), Pasal 12(1); SEKI shows +10,536")}   # item numbers of older-sheet rows start here, apart from the current sheet's
 
 
 def read_older(sh):
@@ -210,8 +214,12 @@ def check_older(old):
             if abs(rv - ex - bl) > 2:
                 # SEKI's own inconsistency (2004 budget: +10,536 against revenue - expenditure of -26,271): the
                 # surplus/deficit row for that year is left out of the file, revenue and expenditure kept
-                warnings.append(f"2001-2007 sheet {s_} {y}: revenue - expenditure {rv - ex:,.0f} vs published surplus/deficit "
-                                f"{bl:,.0f}; surplus/deficit left out for this year")
+                fix = OLD_FIX.get((s_, y))
+                if fix and abs(rv - ex - fix[0]) <= 2:
+                    warnings.append(f"2001-2007 sheet {s_} {y}: published surplus/deficit {bl:,.0f} replaced by {fix[0]:,.1f} ({fix[1]})")
+                else:
+                    warnings.append(f"2001-2007 sheet {s_} {y}: revenue - expenditure {rv - ex:,.0f} vs published surplus/deficit "
+                                    f"{bl:,.0f}; surplus/deficit left out for this year")
                 drop.add((s_, y))
             parts = [g("revenue", l) for l in OLD_REV_PARTS]
             tax = g("revenue", "Penerimaan Perpajakan")
@@ -344,6 +352,10 @@ def update(force=False, **_):
         for s_, it, l, e, v, note in rows:
             for y, val in sorted(v.items()):
                 if t == "financing" and (s_, y) in drop:
+                    fix = OLD_FIX.get((s_, y))
+                    if fix and l == "Surplus / Defisit":
+                        arows.append({"year": y, "table": t, "basis": s_, "item": it, "label": e or l, "label_id": l,
+                                      "value": fix[0], "note": fix[1]})
                     continue
                 arows.append({"year": y, "table": t, "basis": s_, "item": it, "label": e or l, "label_id": l, "value": val, "note": note})
     actual_years = {r["year"] for r in arows if r["basis"] == "actual"}
