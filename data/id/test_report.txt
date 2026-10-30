@@ -1,5 +1,3 @@
-== id_gdp_imf
-   1980-2031 (IMF update 9/24/2026)
-== id_fiscal_gdp
-   2025: revenue 11.61%, expenditure 14.42%, balance -2.81% of GDP; 26 years
-   warning: 2026: outturn published to 2026-09, ratio stops at 2026-06 (quarterly GDP to Q2)
+== id_fiscal_imf
+   1993-2031, projections from 2026 (IMF update 9/24/2026)
+   warning: no DERIVATION_TYPE in the response; years after 2025 marked as projections

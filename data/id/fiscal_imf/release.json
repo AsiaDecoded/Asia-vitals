@@ -1,0 +1,26 @@
+{
+ "code": "G-9/24/2026",
+ "label": "1993-2031, projections from 2026 (IMF update 9/24/2026)",
+ "latest_year": 2031,
+ "first_projection": 2026,
+ "table": "https://api.imf.org/external/sdmx/3.0/data/dataflow/IMF.RES/WEO/+/IDN.GGXCNL_NGDP.A?attributes=all",
+ "attributes": {
+  "SCALE": "0",
+  "DECIMALS_DISPLAYED": "3",
+  "OVERLAP": "OL",
+  "COUNTRY_UPDATE_DATE": "9/24/2026"
+ },
+ "processed_at": "2026-10-30T13:39:26Z",
+ "rows": 39,
+ "warnings": [
+  "no DERIVATION_TYPE in the response; years after 2025 marked as projections"
+ ],
+ "fingerprint": "dc8b60c1f0986bde",
+ "long_rows": 39,
+ "history": [
+  {
+   "code": "G-9/24/2026",
+   "processed_at": "2026-10-30T13:39:26Z"
+  }
+ ]
+}
