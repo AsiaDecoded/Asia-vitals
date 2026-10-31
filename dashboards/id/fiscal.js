@@ -406,7 +406,7 @@ dash.calc('sbn_latest', {
     const f = frame(box, rows.map((r) => String(r.year)), H, 0, d3.max(rows, (r) => r.v), 0.2);
     yearAxis(f, H, rows);
     f.svg.append('g').selectAll('rect').data(rows).join('rect')
-      .attr('x', (r) => f.x(String(r.year)) + (r.proj ? 0.75 : 0)).attr('width', f.x.bandwidth() - (r.proj ? 1.5 : 0))
+      .attr('x', (r) => f.x(String(r.year)) + (r.proj ? 0.75 : 0)).attr('width', (r) => f.x.bandwidth() - (r.proj ? 1.5 : 0))
       .attr('y', (r) => f.y(r.v)).attr('height', (r) => f.y(0) - f.y(r.v))
       .attr('fill', (r) => (r.proj ? 'none' : '#1F4E79')).attr('stroke', (r) => (r.proj ? '#1F4E79' : 'none')).attr('stroke-width', 1.5);
     legend('f-debt-legend', [['sw', '#1F4E79', 'Government debt'], ['ol', '#1F4E79', 'IMF projection']]);
