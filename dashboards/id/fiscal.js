@@ -396,7 +396,8 @@ dash.calc('sbn_latest', {
     // general government gross debt (id_debt_gg): IMF World Economic Outlook 2000-2013, SUSPI (Bank Indonesia and
     // Ministry of Finance, table 1) from 2014 at year-ends plus the latest quarter; Rp and US$ as published (US$ from
     // 2014 only), % of GDP as published by the IMF before 2014 and calculated for SUSPI (four-quarter BPS GDP).
-    // Line, % of GDP view: IMF Global Debt Database central government debt from 1972, as published.
+    // Line, % of GDP view: IMF Global Debt Database central government debt from 1972, as published, extended with
+    // SUSPI central government (calculated ratio) after the GDD's last year.
     const box = document.getElementById('f-debt-chart');
     const D = dash.data('id_debt_gg'), X = dash.data('id_debt_intl');
     if (bad(D)) { J.fail(box); return; }
@@ -410,7 +411,10 @@ dash.calc('sbn_latest', {
         rp: n(r.debt) / 1000, usd: n(r.debt_usd), pc: n(r.debt_pct_gdp) };
     });
     const gdd = {};
-    if (X.status === 'ok') X.data.forEach((r) => { if (r.series === 'gdd_cg_pct' && n(r.value) != null) gdd[Number(r.period)] = n(r.value); });
+    const gsrc = {};
+    if (X.status === 'ok') X.data.forEach((r) => {
+      if (r.series === 'cg_pct' && n(r.value) != null) { const y = Number(r.period.slice(0, 4)); gdd[y] = n(r.value); gsrc[y] = r.source; }
+    });
     const key = { pct: 'pc', usd: 'usd', rp: 'rp' }[mode];
     const years = new Set(Object.keys(gg).map(Number).filter((y) => gg[y][key] != null));
     if (mode === 'pct') Object.keys(gdd).forEach((y) => years.add(Number(y)));
@@ -430,12 +434,12 @@ dash.calc('sbn_latest', {
         .attr('fill', 'none').attr('stroke', '#954F72').attr('stroke-width', 2.2).attr('stroke-linejoin', 'round');
     }
     const items = [['sw', '#1F4E79', 'General government']];
-    if (mode === 'pct') items.push(['ln', '#954F72', 'Central government (IMF Global Debt Database)']);
+    if (mode === 'pct') items.push(['ln', '#954F72', 'Central government (IMF Global Debt Database, SUSPI)']);
     legend('f-debt-legend', items);
     const fmt = (v) => (v == null ? '—' : mode === 'pct' ? v.toFixed(2) + '%' : mode === 'usd' ? 'US$' + d3.format(',.1f')(v) + 'bn' : 'Rp' + d3.format(',.1f')(v) + 'trn');
     hover(f, rows, (r) => r.key, H, 'f-debt', (r) => (r.g && r.g.q !== 4 ? `End-${MON[r.g.q * 3 - 1]} ${r.year}` : `End of ${r.year}`), (r) => {
       const out = [['#1F4E79', r.g ? (r.g.src.startsWith('IMF') ? 'General govt (IMF)' : 'General govt (SUSPI)') : 'General govt', fmt(r.gv)]];
-      if (mode === 'pct') out.push(['#954F72', 'Central govt (IMF GDD)', fmt(r.cv)]);
+      if (mode === 'pct') out.push(['#954F72', gsrc[r.year] === 'SUSPI' ? 'Central govt (SUSPI)' : 'Central govt (IMF GDD)', fmt(r.cv)]);
       return out;
     });
   }
