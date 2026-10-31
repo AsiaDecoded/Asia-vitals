@@ -43,7 +43,13 @@ def main(out):
         st, b = fetch(f"{W}/sources/{sid}/country/IDN/series/all/time/all?format=json&per_page=20000")
         (out / f"idn_{sid}.json").write_bytes(b)
         log.append({"source": sid, "status": st, "bytes": len(b), "head": b[:300].decode("utf-8", "replace")})
-    for y in range(2010, 2015):
+    for sec in ("GG", "CG", "BC"):
+        for u in ("", ".CD", ".Z1"):
+            sid = f"DP.DOD.DECT.CR.{sec}{u}"
+            st, b = fetch(f"{W}/sources/20/country/IDN/series/{sid}/time/all?format=json&per_page=500")
+            (out / f"idn_{sid}.json").write_bytes(b)
+            log.append({"series": sid, "status": st, "bytes": len(b), "head": b[:200].decode("utf-8", "replace")})
+    for y in []:
         for qq in ("I", "II", "III", "IV"):
             u = f"https://www.bi.go.id/id/statistik/ekonomi-keuangan/suspi/Pages/SUSPI_TW{qq}_{y}.aspx"
             st, b = fetch(u)
