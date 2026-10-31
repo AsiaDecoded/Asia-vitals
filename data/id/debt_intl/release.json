@@ -1,0 +1,16 @@
+{
+ "code": "G2024-B2026-Q1",
+ "label": "GDD 1972-2024; BIS 2001-Q4..2026-Q1",
+ "table": "https://api.imf.org/external/sdmx/3.0/data/dataflow/IMF.FAD/GDD/+/IDN.FL_S1311MIXED_POGDP_PT.A; https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q.ID.G.A.N.*.A?format=csv",
+ "processed_at": "2026-10-31T07:50:47Z",
+ "rows": 347,
+ "warnings": [],
+ "fingerprint": "037ec60cfdd1fd16",
+ "long_rows": 347,
+ "history": [
+  {
+   "code": "G2024-B2026-Q1",
+   "processed_at": "2026-10-31T07:50:47Z"
+  }
+ ]
+}
