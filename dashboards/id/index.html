@@ -187,6 +187,7 @@
     <button role="tab" data-tab="gdp" aria-selected="true">GDP</button>
     <button role="tab" data-tab="inflation" aria-selected="false">Inflation</button>
     <button role="tab" data-tab="fiscal" aria-selected="false">Fiscal</button>
+    <button role="tab" data-tab="financial" aria-selected="false">Financial</button>
     <button role="tab" data-tab="trade" aria-selected="false">Trade</button>
     <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
   </nav>
@@ -596,6 +597,49 @@
     <p class="jg-foot">Source: Ministry of Finance of the Republic of Indonesia, as republished by Bank Indonesia, Indonesian Economic and Financial Statistics (SEKI), tables IV.1&ndash;IV.4 (<span data-source="fiscal_release" data-field="label" data-row="0">—</span>); year-to-date outturn from the Ministry&rsquo;s APBN KiTa (<span data-source="fiscal_monthly_release" data-field="label" data-row="0">—</span>).</p>
   </section>
 
+  <section class="jg-page" id="financial" role="tabpanel" hidden>
+    <div class="jg-pagehead">
+      <div class="jg-note" style="margin:0"><span data-source="fx_release" data-field="label" data-row="0" class="dash-skeleton" style="color: var(--color-fg)">—</span></div>
+    </div>
+
+    <section class="jg-tiles" id="x-headline" aria-label="Headline exchange rate figures">
+      <div class="jg-card jg-tile"><div class="lbl">Rupiah per US$, <span id="x-latest-date">latest</span></div>
+        <div class="val"><span id="x-latest" class="dash-skeleton">—</span></div>
+        <div class="sub">BIS, daily</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Change over 12 months, %</div>
+        <div class="val"><span id="x-yoy" class="dash-skeleton">—</span></div>
+        <div class="sub">positive = rupiah weaker</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Change since end of last year, %</div>
+        <div class="val"><span id="x-ytd" class="dash-skeleton">—</span></div>
+        <div class="sub">positive = rupiah weaker</div></div>
+    </section>
+
+    <section class="jg-card" id="x-daily">
+      <h2>Indonesia rupiah per US dollar, daily</h2>
+      <div class="ad-top"><span class="ad-units">Rupiah per US$</span><div class="jg-legend" id="x-daily-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="x-daily-chart" data-source="id_fx_daily"></div>
+      <div class="ad-foot"><span>Source: BIS (from national sources)</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <section class="jg-card" id="x-monthly">
+      <h2>Indonesia rupiah per US dollar, monthly</h2>
+      <div class="ad-top"><span class="ad-units">Rupiah per US$, monthly average</span><div class="jg-legend" id="x-monthly-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="x-monthly-chart" data-source="id_fx_monthly"></div>
+      <div class="ad-foot"><span>Source: BIS (from national sources)</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <section class="jg-card ad-notes" id="x-notes">
+      <h2>Chart notes</h2>
+      <ol>
+        <li><b>Chart 1, rupiah per US dollar, daily:</b> the BIS&rsquo;s daily series of the rupiah&rsquo;s exchange rate against the US dollar, from national sources (Bank Indonesia), from January 1988, as published. A higher number means a weaker rupiah. Shaded: the Asian financial crisis, July 1997 to December 1998 (the rupiah went from about 2,400 per dollar in June 1997 to over 15,000 in June 1998).</li>
+        <li><b>Chart 2, rupiah per US dollar, monthly:</b> the BIS&rsquo;s monthly average from January 1967, as published; the hover label also gives the end-of-month rate. Earlier devaluations (1971, 1978, 1983, 1986) show as steps.</li>
+        <li><b>Tiles:</b> the latest daily rate, and its change against the same date a year earlier and against the last rate of the previous year (calculated).</li>
+      </ol>
+    </section>
+
+    <p class="jg-foot">Source: Bank for International Settlements, bilateral exchange rates (WS_XRU), compiled from national sources (<span data-source="fx_release" data-field="label" data-row="0">—</span>). Bank Indonesia&rsquo;s own reference rate (JISDOR) starts in 2013.</p>
+  </section>
+
   <section class="jg-page" id="trade" role="tabpanel" hidden>
     <div class="jg-pagehead">
       <div class="jg-note" style="margin:0"><span data-source="trade_release" data-field="label" data-row="0" class="dash-skeleton" style="color: var(--color-fg)">—</span></div>
@@ -813,7 +857,7 @@ window.JG = {
     document.querySelectorAll('.jg-card').forEach((card) => {
       const chart = card.querySelector(':scope > .jg-chart'); if (!chart || !card.id) return;
       const page = card.closest('.jg-page'); const p = page ? page.id : 'inflation';
-      const redraw = () => { if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else if (p === 'gdp') JG.redrawGdp && JG.redrawGdp(); else if (p === 'trade') JG.redrawTrade && JG.redrawTrade(); else if (p === 'fiscal') JG.redrawFiscal && JG.redrawFiscal(); };
+      const redraw = () => { if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else if (p === 'gdp') JG.redrawGdp && JG.redrawGdp(); else if (p === 'trade') JG.redrawTrade && JG.redrawTrade(); else if (p === 'fiscal') JG.redrawFiscal && JG.redrawFiscal(); else if (p === 'financial') JG.redrawFinancial && JG.redrawFinancial(); };
       const wrap = document.createElement('div'); wrap.className = 'ad-slider';
       const track = document.createElement('div'); track.className = 'ad-slider-track';
       const sel = document.createElement('div'); sel.className = 'ad-slider-sel'; track.appendChild(sel);
@@ -947,16 +991,18 @@ window.JG = {
     if (id === 'gdp' && J.redrawGdp) J.redrawGdp();
     if (id === 'trade' && J.redrawTrade) J.redrawTrade();
     if (id === 'fiscal' && J.redrawFiscal) J.redrawFiscal();
+    if (id === 'financial' && J.redrawFinancial) J.redrawFinancial();
   };
   J.show = show;
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
   const linked = location.hash.slice(1);
-  if (['inflation', 'fiscal', 'trade', 'methodology'].includes(linked)) show(linked);
+  if (['inflation', 'fiscal', 'trade', 'financial', 'methodology'].includes(linked)) show(linked);
 })();
 </script>
 <script src="gdp.js"></script>
 <script src="cpi.js"></script>
 <script src="fiscal.js"></script>
+<script src="financial.js"></script>
 <script src="trade.js"></script>
 <script src="export.js"></script>
 
