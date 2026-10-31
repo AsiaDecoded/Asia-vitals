@@ -425,15 +425,14 @@ dash.calc('sbn_latest', {
     const H = 280;
     const f = frame(box, rows.map((r) => r.key), H, 0, d3.max(vals), 0.2);
     yearAxis(f, H, rows);
-    f.svg.append('g').selectAll('rect').data(rows.filter((r) => r.gv != null)).join('rect')
-      .attr('x', (r) => f.x(r.key)).attr('width', f.x.bandwidth())
-      .attr('y', (r) => f.y(r.gv)).attr('height', (r) => f.y(0) - f.y(r.gv)).attr('fill', '#1F4E79');
     const cx = (r) => f.x(r.key) + f.x.bandwidth() / 2;
+    f.svg.append('path').attr('d', d3.line().defined((r) => r.gv != null).x(cx).y((r) => f.y(r.gv))(rows))
+      .attr('fill', 'none').attr('stroke', '#1F4E79').attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
     if (rows.some((r) => r.cv != null)) {
       f.svg.append('path').attr('d', d3.line().defined((r) => r.cv != null).x(cx).y((r) => f.y(r.cv))(rows))
         .attr('fill', 'none').attr('stroke', '#954F72').attr('stroke-width', 2.2).attr('stroke-linejoin', 'round');
     }
-    const items = [['sw', '#1F4E79', 'General government']];
+    const items = [['ln', '#1F4E79', 'General government']];
     if (mode === 'pct') items.push(['ln', '#954F72', 'Central government (IMF Global Debt Database, SUSPI)']);
     legend('f-debt-legend', items);
     const fmt = (v) => (v == null ? '—' : mode === 'pct' ? v.toFixed(2) + '%' : mode === 'usd' ? 'US$' + d3.format(',.1f')(v) + 'bn' : 'Rp' + d3.format(',.1f')(v) + 'trn');
