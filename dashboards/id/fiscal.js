@@ -393,10 +393,12 @@ dash.calc('sbn_latest', {
   }
 
   function debtChart() {
-    // central government gross debt (SUSPI, Bank Indonesia and Ministry of Finance): year-end, plus the latest quarter
-    // when it is not a year-end (outlined); Rp trillion as published, % of GDP calculated (four-quarter BPS GDP)
+    // central government gross debt (SUSPI, Bank Indonesia and Ministry of Finance): year-end bars from 2014, plus the
+    // latest quarter (outlined); lines: BIS credit to general government at nominal value (year-end, from 2001) and, in
+    // the % of GDP view, the IMF Global Debt Database's central government debt (from 1972). All as published, except
+    // SUSPI's % of GDP (calculated, four-quarter BPS GDP).
     const box = document.getElementById('f-debt-chart');
-    const D = dash.data('id_debt');
+    const D = dash.data('id_debt'), X = dash.data('id_debt_intl');
     if (bad(D)) { J.fail(box); return; }
     if (D.status !== 'ok' || !D.data.length) { box.replaceChildren(); return; }
     const mode = J.state.fDebt || 'rp';
@@ -404,21 +406,51 @@ dash.calc('sbn_latest', {
     const all = D.data.map((r) => ({ q: r.quarter, year: Number(r.quarter.slice(0, 4)), qn: Number(r.quarter.slice(-1)),
       rp: Number(r.debt) / 1000, usd: n(r.debt_usd), pc: n(r.debt_pct_gdp) })).sort((a, b) => (a.q < b.q ? -1 : 1));
     const last = all[all.length - 1];
-    const rows = all.filter((r) => r.qn === 4).map((r) => ({ ...r, key: String(r.year), basis: 'actual' }));
-    if (last.qn !== 4) rows.push({ ...last, key: String(last.year), basis: 'latest', through: `${last.year}-${String(last.qn * 3).padStart(2, '0')}` });
-    rows.forEach((r) => { r.v = r[{ pct: 'pc', usd: 'usd', rp: 'rp' }[mode]]; });
+    const sus = {};
+    all.filter((r) => r.qn === 4).forEach((r) => { sus[r.year] = r; });
+    if (last.qn !== 4) sus[last.year] = { ...last, latest: true };
+    const bis = {}, gdd = {};
+    if (X.status === 'ok') X.data.forEach((r) => {
+      const v = n(r.value); if (v == null) return;
+      if (r.series === 'gdd_cg_pct') gdd[Number(r.period)] = v;
+      else if (r.period.endsWith('Q4')) {
+        const y = Number(r.period.slice(0, 4)); const o = (bis[y] = bis[y] || {});
+        o[{ bis_rp: 'rp', bis_usd: 'usd', bis_pct: 'pc' }[r.series]] = r.series === 'bis_rp' ? v / 1000 : v;
+      }
+    });
+    const key = { pct: 'pc', usd: 'usd', rp: 'rp' }[mode];
+    const years = new Set(Object.keys(sus).map(Number));
+    Object.keys(bis).forEach((y) => { if (bis[y][key] != null) years.add(Number(y)); });
+    if (mode === 'pct') Object.keys(gdd).forEach((y) => years.add(Number(y)));
+    const ys = [...years].sort((a, b) => a - b);
+    const rows = ys.map((y) => ({ year: y, key: String(y), s: sus[y], sv: sus[y] ? sus[y][key] : null,
+      bv: bis[y] ? bis[y][key] : null, gv: mode === 'pct' && gdd[y] != null ? gdd[y] : null }));
+    const vals = rows.flatMap((r) => [r.sv, r.bv, r.gv]).filter((v) => v != null);
     const H = 280;
-    const f = frame(box, rows.map((r) => r.key), H, 0, d3.max(rows, (r) => r.v || 0), 0.2);
+    const f = frame(box, rows.map((r) => r.key), H, 0, d3.max(vals), 0.2);
     yearAxis(f, H, rows);
-    const ok = rows.filter((r) => r.v != null);
-    f.svg.append('g').selectAll('rect').data(ok).join('rect')
-      .attr('x', (r) => f.x(r.key) + (r.basis === 'latest' ? 0.75 : 0)).attr('width', (r) => f.x.bandwidth() - (r.basis === 'latest' ? 1.5 : 0))
-      .attr('y', (r) => f.y(r.v)).attr('height', (r) => f.y(0) - f.y(r.v))
-      .attr('fill', (r) => (r.basis === 'latest' ? 'none' : '#1F4E79')).attr('stroke', (r) => (r.basis === 'latest' ? '#1F4E79' : 'none')).attr('stroke-width', 1.5);
-    legend('f-debt-legend', [['sw', '#1F4E79', 'End of year'], ['ol', '#1F4E79', `End of ${MON[last.qn * 3 - 1]} ${last.year}`]].slice(0, last.qn === 4 ? 1 : 2));
-    hover(f, rows, (r) => r.key, H, 'f-debt', (r) => (r.basis === 'latest' ? `End of ${MON[r.qn * 3 - 1]} ${r.year}` : `End of ${r.year}`),
-      (r) => [['#1F4E79', 'Debt, Rp', 'Rp' + d3.format(',.1f')(r.rp) + 'trn'], ['#1F4E79', 'Debt, US$', r.usd == null ? '—' : 'US$' + d3.format(',.1f')(r.usd) + 'bn'],
-        ['#1F4E79', '% of GDP', r.pc == null ? '—' : r.pc.toFixed(2) + '%']]);
+    const sb = rows.filter((r) => r.sv != null);
+    f.svg.append('g').selectAll('rect').data(sb).join('rect')
+      .attr('x', (r) => f.x(r.key) + (r.s.latest ? 0.75 : 0)).attr('width', (r) => f.x.bandwidth() - (r.s.latest ? 1.5 : 0))
+      .attr('y', (r) => f.y(r.sv)).attr('height', (r) => f.y(0) - f.y(r.sv))
+      .attr('fill', (r) => (r.s.latest ? 'none' : '#1F4E79')).attr('stroke', (r) => (r.s.latest ? '#1F4E79' : 'none')).attr('stroke-width', 1.5);
+    const cx = (r) => f.x(r.key) + f.x.bandwidth() / 2;
+    [['gv', '#954F72'], ['bv', '#EE6631']].forEach(([k, c]) => {
+      if (!rows.some((r) => r[k] != null)) return;
+      f.svg.append('path').attr('d', d3.line().defined((r) => r[k] != null).x(cx).y((r) => f.y(r[k]))(rows))
+        .attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2.2).attr('stroke-linejoin', 'round');
+    });
+    const items = [['sw', '#1F4E79', 'Central govt (SUSPI)']];
+    if (last.qn !== 4) items.push(['ol', '#1F4E79', `SUSPI, end-${MON[last.qn * 3 - 1]} ${last.year}`]);
+    items.push(['ln', '#EE6631', 'General govt (BIS)']);
+    if (mode === 'pct') items.push(['ln', '#954F72', 'Central govt (IMF Global Debt Database)']);
+    legend('f-debt-legend', items);
+    const fmt = (v) => (v == null ? '—' : mode === 'pct' ? v.toFixed(2) + '%' : mode === 'usd' ? 'US$' + d3.format(',.1f')(v) + 'bn' : 'Rp' + d3.format(',.1f')(v) + 'trn');
+    hover(f, rows, (r) => r.key, H, 'f-debt', (r) => (r.s && r.s.latest ? `${r.year} (SUSPI: end-${MON[r.s.qn * 3 - 1]})` : `End of ${r.year}`), (r) => {
+      const out = [['#1F4E79', 'SUSPI', fmt(r.sv)], ['#EE6631', 'BIS', fmt(r.bv)]];
+      if (mode === 'pct') out.push(['#954F72', 'IMF GDD', fmt(r.gv)]);
+      return out;
+    });
   }
 
   function balBudgetChart() {
