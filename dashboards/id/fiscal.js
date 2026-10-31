@@ -193,6 +193,17 @@ dash.calc('sbn_latest', {
         .tickFormat((y) => (rows.some((r) => String(r.year) === y && r.basis === 'ytd') ? 'YTD' : y))));
   }
 
+  // range slider for the annual charts: rows keyed by year; the whole range shows until the slider is moved
+  function yslice(rows, id) {
+    const card = document.getElementById(id);
+    if (card && !card.dataset.start) card.dataset.start = '1900-01-01';
+    rows.forEach((r) => { r.date = `${r.year}-01-01`; });
+    const out = J.slice(rows, id);
+    const lbl = card && card.querySelector('.ad-slider-lbl');
+    if (lbl && out.length) lbl.textContent = `${out[0].year} to ${out[out.length - 1].year}`;
+    return out;
+  }
+
   function balanceChart() {
     const box = document.getElementById('f-balance-chart');
     const D = dash.data('fiscal_years');
@@ -202,7 +213,8 @@ dash.calc('sbn_latest', {
     const done = new Set(act.map((r) => r.year));
     // The Ministry's announced year-to-date outturn for a year with no full-year actual yet: drawn apart, not joined.
     const ytd = D.data.filter((r) => r.basis === 'ytd' && r.rev != null && r.exp != null && !done.has(r.year));
-    const rows = act.concat(ytd).sort((a, b) => a.year - b.year);
+    let rows = act.concat(ytd).sort((a, b) => a.year - b.year);
+    rows = yslice(rows, 'f-balance');
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 280, t = (v) => v / 1000;
     const thru = (r) => (r.basis === 'ytd' && r.through ? `${r.year}, Jan–${MON[Number(r.through.slice(5, 7)) - 1]}` : `${r.year}, actual`);
@@ -232,9 +244,10 @@ dash.calc('sbn_latest', {
     if (bad(D)) { J.fail(box); return; }
     if (D.status !== 'ok') { box.replaceChildren(); return; }
     const n = (v) => (v === '' || v == null ? null : Number(v));
-    const rows = D.data.map((r) => ({ year: Number(r.year), basis: r.basis, through: r.through, rev: n(r.revenue_pct), exp: n(r.expenditure_pct), mof: r.mof_through,
+    let rows = D.data.map((r) => ({ year: Number(r.year), basis: r.basis, through: r.through, rev: n(r.revenue_pct), exp: n(r.expenditure_pct), mof: r.mof_through,
       bal: r.basis === 'ytd' && n(r.mof_balance_pct) != null ? n(r.mof_balance_pct) : n(r.balance_pct) }))
       .filter((r) => r.bal != null).sort((a, b) => a.year - b.year);
+    rows = yslice(rows, 'f-balance');
     if (!rows.length) { box.replaceChildren(); return; }
     const act = rows.filter((r) => r.basis === 'actual');
     const ytd = rows.filter((r) => r.basis === 'ytd');
@@ -272,9 +285,10 @@ dash.calc('sbn_latest', {
     if (bad(D)) { J.fail(box); return; }
     if (D.status !== 'ok') { box.replaceChildren(); return; }
     const n = (v) => (v === '' || v == null ? null : Number(v));
-    const rows = D.data.filter((r) => r.basis === 'actual' && n(r.interest_pct) != null && n(r.primary_pct) != null)
+    let rows = D.data.filter((r) => r.basis === 'actual' && n(r.interest_pct) != null && n(r.primary_pct) != null)
       .map((r) => ({ year: Number(r.year), int: -n(r.interest_pct), prim: n(r.primary_pct), bal: n(r.balance_pct) }))
       .sort((a, b) => a.year - b.year);
+    rows = yslice(rows, 'f-prim');
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 300;
     const stack = d3.stack().keys(['int', 'prim']).offset(d3.stackOffsetDiverging)(rows);
@@ -306,8 +320,9 @@ dash.calc('sbn_latest', {
     const D = dash.data('id_fiscal_imf');
     if (bad(D)) { J.fail(box); return; }
     if (D.status !== 'ok') { box.replaceChildren(); return; }
-    const rows = D.data.filter((r) => r.value !== '').map((r) => ({ year: Number(r.year), v: Number(r.value), proj: r.imf_projection === 'y' }))
+    let rows = D.data.filter((r) => r.value !== '').map((r) => ({ year: Number(r.year), v: Number(r.value), proj: r.imf_projection === 'y' }))
       .sort((a, b) => a.year - b.year);
+    rows = yslice(rows, 'f-imf');
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 280;
     const f = frame(box, rows.map((r) => String(r.year)), H, d3.min(rows, (r) => r.v), d3.max(rows, (r) => r.v), 0.2);
@@ -349,11 +364,12 @@ dash.calc('sbn_latest', {
     });
     const ys = Object.keys(lv).map(Number).sort((a, b) => a - b);
     const BREAK = new Set([2000, 2001]);
-    const rows = ys.filter((y) => lv[y - 1]).map((y) => {
+    let rows = ys.filter((y) => lv[y - 1]).map((y) => {
       const ok = !BREAK.has(y);
       return { year: y, basis: lv[y].basis, base: lv[y - 1].basis, period: lv[y].period, prev: lv[y - 1].period,
         rev: ok ? (lv[y].rev / lv[y - 1].rev - 1) * 100 : null, exp: ok ? (lv[y].exp / lv[y - 1].exp - 1) * 100 : null };
     });
+    rows = yslice(rows, 'f-budget');
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 280;
     const vals = rows.flatMap((r) => [r.rev, r.exp]).filter((v) => v != null);
@@ -419,8 +435,9 @@ dash.calc('sbn_latest', {
     const years = new Set(Object.keys(gg).map(Number).filter((y) => gg[y][key] != null));
     if (mode === 'pct') Object.keys(gdd).forEach((y) => years.add(Number(y)));
     const ys = [...years].sort((a, b) => a - b);
-    const rows = ys.map((y) => ({ year: y, key: String(y), g: gg[y], gv: gg[y] ? gg[y][key] : null,
+    let rows = ys.map((y) => ({ year: y, key: String(y), g: gg[y], gv: gg[y] ? gg[y][key] : null,
       cv: mode === 'pct' && gdd[y] != null ? gdd[y] : null }));
+    rows = yslice(rows, 'f-debt');
     const vals = rows.flatMap((r) => [r.gv, r.cv]).filter((v) => v != null);
     const H = 280;
     const f = frame(box, rows.map((r) => r.key), H, 0, d3.max(vals), 0.2);
@@ -468,7 +485,8 @@ dash.calc('sbn_latest', {
         o.mof = true;
       }
     });
-    const rows = Object.values(by).filter((r) => r.actual != null || r.budget != null).sort((a, b) => a.year - b.year);
+    let rows = Object.values(by).filter((r) => r.actual != null || r.budget != null).sort((a, b) => a.year - b.year);
+    rows = yslice(rows, 'f-bb');
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 280;
     const vals = rows.flatMap((r) => [r.actual, r.budget]).filter((v) => v != null);
@@ -493,7 +511,8 @@ dash.calc('sbn_latest', {
     const parts = J.state.fMix === 'revenue' ? REV : EXP;
     const total = J.state.fMix === 'revenue' ? 'rev' : 'exp';
     // expenditure by type from 2005: before that SEKI splits spending into routine and development spending
-    const rows = D.data.filter((r) => r.basis === 'actual' && r[total] != null && (total === 'rev' || r.year >= 2005));
+    let rows = D.data.filter((r) => r.basis === 'actual' && r[total] != null && (total === 'rev' || r.year >= 2005));
+    rows = yslice(rows, 'f-mix');
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 300;
     const stack = d3.stack().keys(parts.map((p) => p[0])).value((d, k) => (d[k] || 0) / 1000).offset(d3.stackOffsetDiverging)(rows);
