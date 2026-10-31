@@ -1,7 +1,7 @@
 name: BPS (Indonesia) discovery
 
 # One-off helper: probes BPS, Bank Indonesia SEKI and Satu Data for Indonesian price data
-# and saves the raw responses to the "discovery" branch, under discovery/bps22 (SUSPI files; official government debt; government debt; original budget laws; WDI metadata and GDP, IMF fiscal series; bps14 fiscal round 8, APBN KiTa list and PDFs; bps7-13 fiscal, bps6 GDP and trade).
+# and saves the raw responses to the "discovery" branch, under discovery/bps23 (DJPPR SUSPI page; SUSPI files; official government debt; government debt; original budget laws; WDI metadata and GDP, IMF fiscal series; bps14 fiscal round 8, APBN KiTa list and PDFs; bps7-13 fiscal, bps6 GDP and trade).
 on:
   workflow_dispatch:
   push:
@@ -23,6 +23,7 @@ on:
       - pipeline/tools/debt_probe.py
       - pipeline/tools/debt_probe2.py
       - pipeline/tools/debt_probe3.py
+      - pipeline/tools/djppr_probe.py
       - .github/workflows/bps-discover.yml
 
 permissions:
@@ -40,7 +41,7 @@ jobs:
       - name: Install tools
         run: sudo apt-get install -y -qq poppler-utils && pip install -q xlrd openpyxl
       - name: Probe the sources
-        run: timeout 40m python -I -u pipeline/tools/debt_probe3.py discovery/bps22 || true
+        run: timeout 40m python -I -u pipeline/tools/djppr_probe.py discovery/bps23 || true
         env:
           BPS_KEY: ${{ secrets.BPS_KEY }}
       - name: Push results to the discovery branch
@@ -54,7 +55,7 @@ jobs:
           else
             git checkout --orphan discovery && git rm -rf --quiet --cached .
           fi
-          mkdir -p discovery && rm -rf discovery/bps22 && cp -r /tmp/discovery/bps22 discovery/
-          git add discovery/bps22
+          mkdir -p discovery && rm -rf discovery/bps23 && cp -r /tmp/discovery/bps23 discovery/
+          git add discovery/bps23
           git commit -m "BPS discovery"
           git push origin discovery
