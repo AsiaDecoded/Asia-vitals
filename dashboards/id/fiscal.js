@@ -431,9 +431,8 @@ dash.calc('sbn_latest', {
     yearAxis(f, H, rows);
     const sb = rows.filter((r) => r.sv != null);
     f.svg.append('g').selectAll('rect').data(sb).join('rect')
-      .attr('x', (r) => f.x(r.key) + (r.s.latest ? 0.75 : 0)).attr('width', (r) => f.x.bandwidth() - (r.s.latest ? 1.5 : 0))
-      .attr('y', (r) => f.y(r.sv)).attr('height', (r) => f.y(0) - f.y(r.sv))
-      .attr('fill', (r) => (r.s.latest ? 'none' : '#1F4E79')).attr('stroke', (r) => (r.s.latest ? '#1F4E79' : 'none')).attr('stroke-width', 1.5);
+      .attr('x', (r) => f.x(r.key)).attr('width', f.x.bandwidth())
+      .attr('y', (r) => f.y(r.sv)).attr('height', (r) => f.y(0) - f.y(r.sv)).attr('fill', '#1F4E79');
     const cx = (r) => f.x(r.key) + f.x.bandwidth() / 2;
     [['gv', '#954F72'], ['bv', '#EE6631']].forEach(([k, c]) => {
       if (!rows.some((r) => r[k] != null)) return;
@@ -441,7 +440,6 @@ dash.calc('sbn_latest', {
         .attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2.2).attr('stroke-linejoin', 'round');
     });
     const items = [['sw', '#1F4E79', 'Central govt (SUSPI)']];
-    if (last.qn !== 4) items.push(['ol', '#1F4E79', `SUSPI, end-${MON[last.qn * 3 - 1]} ${last.year}`]);
     items.push(['ln', '#EE6631', 'General govt (BIS)']);
     if (mode === 'pct') items.push(['ln', '#954F72', 'Central govt (IMF Global Debt Database)']);
     legend('f-debt-legend', items);
