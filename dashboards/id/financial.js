@@ -90,6 +90,59 @@
       (r) => [['#BD1B21', 'Monthly average', d3.format(',.1f')(r.v)], [null, 'End of month', r.e ? d3.format(',.1f')(r.e) : '—']]);
   }
 
+  // Episodes: rupiah per US$ indexed to 100 on the first trading day of each episode (calculated), three years on;
+  // x = months since the start (calendar days / 30.44). Higher = weaker rupiah.
+  const EPIS = [['1997-07-02', 'AFC (2 Jul 1997 = 100)', '#BD1B21'], ['2024-10-20', 'Prabowo term (20 Oct 2024 = 100)', '#0C84FF']];
+  function episodeChart() {
+    const box = document.getElementById('x-epi-chart');
+    const D = dash.data('id_fx_daily');
+    if (bad(D)) { J.fail(box); return; }
+    if (D.status !== 'ok' || !D.data.length) { box.replaceChildren(); return; }
+    const all = D.data.map((r) => ({ date: r.date, v: Number(r.usd_idr) })).filter((r) => r.v > 0);
+    const ser = EPIS.map(([d0, name, col]) => {
+      const i0 = all.findIndex((r) => r.date >= d0); if (i0 < 0) return null;
+      const b = all[i0], t0 = dt(b.date), end = new Date(t0); end.setUTCFullYear(end.getUTCFullYear() + 3);
+      const pts = all.slice(i0).filter((r) => dt(r.date) <= end)
+        .map((r) => ({ date: r.date, v: r.v, idx: (r.v / b.v) * 100, m: (dt(r.date) - t0) / 864e5 / 30.44 }));
+      return { d0, base: b, name, col, pts };
+    }).filter(Boolean);
+    const H = 300, W = box.clientWidth;
+    box.replaceChildren();
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const hi = d3.max(ser, (s) => d3.max(s.pts, (p) => p.idx)), lo = d3.min(ser, (s) => d3.min(s.pts, (p) => p.idx));
+    const y = d3.scaleLinear([Math.min(90, lo), hi], [H - 24, 10]).nice();
+    const ticks = y.ticks(6), ml = J.textWidth(svg, ticks.map(fmt)) + 10;
+    svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', ml).attr('x2', W - 8).attr('y1', y).attr('y2', y)
+      .attr('stroke', (v) => (v === 100 ? 'var(--ad-axis)' : 'var(--ad-grid)'));
+    J.axisStyle(svg.append('g').attr('transform', `translate(${ml - 4},0)`).call(d3.axisLeft(y).tickValues(ticks).tickSize(0).tickFormat(fmt)));
+    const x = d3.scaleLinear([0, 36], [ml, W - 8]);
+    J.axisStyle(svg.append('g').attr('transform', `translate(0,${H - 20})`)
+      .call(d3.axisBottom(x).tickValues([0, 6, 12, 18, 24, 30, 36]).tickSize(0).tickFormat((m) => (m === 0 ? 't' : `t+${m}m`))));
+    ser.forEach((s) => svg.append('path').attr('d', d3.line().x((p) => x(p.m)).y((p) => y(p.idx))(s.pts))
+      .attr('fill', 'none').attr('stroke', s.col).attr('stroke-width', 1.8));
+    const lg = document.getElementById('x-epi-legend');
+    if (lg) {
+      lg.replaceChildren();
+      ser.forEach((s) => { const sp = document.createElement('span'), mk = document.createElement('span'); mk.className = 'ln'; mk.style.background = s.col; sp.append(mk, document.createTextNode(s.name)); lg.appendChild(sp); });
+    }
+    const card = document.getElementById('x-epi'), tip = J.tip(card);
+    const rule = svg.append('line').attr('y1', 10).attr('y2', H - 24).attr('stroke', 'var(--color-fg)').attr('opacity', 0.25).attr('display', 'none');
+    const bis = d3.bisector((p) => p.m).center;
+    const dd = (s) => `${Number(s.slice(8, 10))} ${MON[Number(s.slice(5, 7)) - 1]} ${s.slice(0, 4)}`;
+    svg.append('rect').attr('x', ml).attr('width', W - 8 - ml).attr('height', H).attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const [mx] = d3.pointer(ev), m = x.invert(mx);
+        rule.attr('display', null).attr('x1', x(m)).attr('x2', x(m));
+        const lines = ser.map((s) => {
+          const p = s.pts[bis(s.pts, m)];
+          return p && Math.abs(p.m - m) < 0.5 ? [s.col, `${s.name.split(' (')[0]}, ${dd(p.date)}`, `${p.idx.toFixed(1)} (Rp${fmt(p.v)})`] : [s.col, s.name.split(' (')[0], '—'];
+        });
+        const cr = card.getBoundingClientRect();
+        J.showTip(card, tip, `t + ${m.toFixed(1)} months`, lines, ev.clientX - cr.left, ev.clientY - cr.top);
+      })
+      .on('mouseleave', () => { rule.attr('display', 'none'); tip.style.display = 'none'; });
+  }
+
   function tiles() {
     const L = dash.data('fx_latest');
     if (L.status !== 'ok' || !L.data.length) return;
@@ -105,7 +158,7 @@
   J.redrawFinancial = () => {
     const pg = document.getElementById('financial');
     if (!pg || pg.hidden) return;
-    tiles(); dailyChart(); monthlyChart();
+    tiles(); dailyChart(); monthlyChart(); episodeChart();
   };
   dash.onData(() => { tiles(); J.redrawFinancial(); });
 })();
