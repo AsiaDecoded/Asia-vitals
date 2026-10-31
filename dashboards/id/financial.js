@@ -92,7 +92,7 @@
 
   // Episodes: rupiah per US$ indexed to 100 on the first trading day of each episode (calculated), three years on;
   // x = months since the start (calendar days / 30.44). Higher = weaker rupiah.
-  const EPIS = [['1997-07-02', 'AFC (2 Jul 1997 = 100)', '#BD1B21'], ['2024-10-20', 'Prabowo term (20 Oct 2024 = 100)', '#0C84FF']];
+  const EPIS = [['1997-07-02', 'AFC (2 Jul 1997 = 100)', '#BD1B21'], ['2025-08-28', 'August 2025 riots (28 Aug 2025 = 100)', '#0C84FF']];
   function episodeChart() {
     const box = document.getElementById('x-epi-chart');
     const D = dash.data('id_fx_daily');
