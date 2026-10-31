@@ -8,6 +8,9 @@ loans at nominal value plus accrued interest. The latest release is found on the
 come from each year's Q4 release. Where releases overlap, the later one wins (revisions; the latest quarters are
 marked provisional).
 
+US dollars (asked for 31 Oct 2026): the same table from the release's USD workbook (US$ million, as published;
+written as US$ billion).
+
 % of GDP (calculated, asked for 30 Oct 2026): debt at the end of a quarter / nominal GDP of the four quarters to it
 (BPS quarterly, data/id/gdp/id_gdp.csv code 800); for a year-end this is the annual GDP.
 """
@@ -94,7 +97,7 @@ def update(force=False, **_):
     ly, lq = rel[-1]
     latest = PAGE.format(q={v: k for k, v in ROMAN.items()}[lq], y=ly)
     pages = [PAGE.format(q="IV", y=y) for y in range(2017, ly)] + [latest]
-    series, used, errors, warnings = {}, [], [], []
+    series, usd, used, errors, warnings = {}, {}, [], [], []
     for p in pages:
         z = zip_of(p)
         if not z:
@@ -103,11 +106,13 @@ def update(force=False, **_):
         zb = get(z)
         name = re.sub(r"[^A-Za-z0-9._-]", "_", z.rsplit("/", 1)[-1])
         (RAWDIR / name).write_bytes(zb)
-        got = {}
+        got, gotu = {}, {}
         with zipfile.ZipFile(io.BytesIO(zb)) as zf:
             for n in zf.namelist():
-                if n.lower().endswith(".xlsx") and "usd" not in n.lower():
-                    got.update(read_book(zf.read(n)))
+                if n.lower().endswith(".xlsx"):
+                    (gotu if "usd" in n.lower() else got).update(read_book(zf.read(n)))
+        for q, v in gotu.items():
+            usd[q] = v   # later release wins
         if not got:
             warnings.append(f"{name}: table 1.1 not read")
             continue
@@ -126,6 +131,12 @@ def update(force=False, **_):
     jumps = [q for a, q in zip(qs, qs[1:]) if not 0.85 < series[q] / series[a] < 1.25]
     if jumps:
         errors.append(f"quarter-on-quarter change beyond -15%/+25%: {jumps[:5]}")
+    nousd = [q for q in qs if q not in usd]
+    if nousd:
+        errors.append(f"US$ figures missing for {nousd[:6]}")
+    odd = [q for q in qs if q in usd and not 8000 < series[q] * 1e9 / (usd[q] * 1e6) < 25000]
+    if odd:
+        errors.append(f"implied Rp/US$ rate outside 8,000-25,000 in {odd[:5]} (unit change?)")
     if errors:
         raise CheckFailed(errors)
     # GDP, four quarters to each quarter end (calculated)
@@ -145,6 +156,7 @@ def update(force=False, **_):
         four = [prev(q, k) for k in range(4)]
         g = sum(gq[x] for x in four) if all(x in gq for x in four) else None
         rows.append({"quarter": q, "date": f"{q[:4]}-{int(q[-1]) * 3:02d}-01", "debt": round(series[q], 3),
+                     "debt_usd": round(usd[q] / 1000, 3),
                      "gdp_4q": round(g, 3) if g else "", "debt_pct_gdp": round(series[q] / g * 100, 3) if g else ""})
     nogdp = [r["quarter"] for r in rows if r["debt_pct_gdp"] == ""]
     if nogdp:
@@ -152,7 +164,7 @@ def update(force=False, **_):
     fp = hashlib.sha256(json.dumps(rows, sort_keys=True).encode()).hexdigest()[:16]
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {state.get('label')})"}
-    cols = ["quarter", "date", "debt", "gdp_4q", "debt_pct_gdp"]
+    cols = ["quarter", "date", "debt", "debt_usd", "gdp_4q", "debt_pct_gdp"]
     with open(OUT / "id_debt.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh, lineterminator="\n")
         w.writerow(cols)
@@ -166,6 +178,9 @@ def update(force=False, **_):
             yield {"country": "ID", "indicator": "debt", "series": "cg_gross_debt", "label": "Central government gross debt",
                    "measure": "level", "area": "central government", "freq": "Q", "date": r["date"], "value": r["debt"],
                    "unit": "Rp billion", "source": SOURCE, "release": code}
+            yield {"country": "ID", "indicator": "debt", "series": "cg_gross_debt_usd", "label": "Central government gross debt",
+                   "measure": "level", "area": "central government", "freq": "Q", "date": r["date"], "value": r["debt_usd"],
+                   "unit": "US$ billion", "source": SOURCE, "release": code}
             if r["debt_pct_gdp"] != "":
                 yield {"country": "ID", "indicator": "debt", "series": "cg_gross_debt_pct_gdp", "label": "Central government gross debt, % of GDP (calculated)",
                        "measure": "calculated", "area": "central government", "freq": "Q", "date": r["date"], "value": r["debt_pct_gdp"],
