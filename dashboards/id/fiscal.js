@@ -393,25 +393,31 @@ dash.calc('sbn_latest', {
   }
 
   function debtChart() {
-    // IMF WEO general government gross debt, Rp trillion or % of GDP, as published; projections outlined
+    // central government gross debt (SUSPI, Bank Indonesia and Ministry of Finance): year-end, plus the latest quarter
+    // when it is not a year-end (outlined); Rp trillion as published, % of GDP calculated (four-quarter BPS GDP)
     const box = document.getElementById('f-debt-chart');
-    const D = dash.data('id_debt_imf');
+    const D = dash.data('id_debt');
     if (bad(D)) { J.fail(box); return; }
-    if (D.status !== 'ok') { box.replaceChildren(); return; }
+    if (D.status !== 'ok' || !D.data.length) { box.replaceChildren(); return; }
     const pct = J.state.fDebt === 'pct';
-    const rows = D.data.map((r) => ({ year: Number(r.year), v: pct ? Number(r.debt_pct_gdp) : Number(r.debt) / 1000,
-      rp: Number(r.debt) / 1000, pc: Number(r.debt_pct_gdp), proj: r.imf_projection === 'y' })).sort((a, b) => a.year - b.year);
-    if (!rows.length) { box.replaceChildren(); return; }
+    const n = (v) => (v === '' || v == null ? null : Number(v));
+    const all = D.data.map((r) => ({ q: r.quarter, year: Number(r.quarter.slice(0, 4)), qn: Number(r.quarter.slice(-1)),
+      rp: Number(r.debt) / 1000, pc: n(r.debt_pct_gdp) })).sort((a, b) => (a.q < b.q ? -1 : 1));
+    const last = all[all.length - 1];
+    const rows = all.filter((r) => r.qn === 4).map((r) => ({ ...r, key: String(r.year), basis: 'actual' }));
+    if (last.qn !== 4) rows.push({ ...last, key: String(last.year), basis: 'latest', through: `${last.year}-${String(last.qn * 3).padStart(2, '0')}` });
+    rows.forEach((r) => { r.v = pct ? r.pc : r.rp; });
     const H = 280;
-    const f = frame(box, rows.map((r) => String(r.year)), H, 0, d3.max(rows, (r) => r.v), 0.2);
+    const f = frame(box, rows.map((r) => r.key), H, 0, d3.max(rows, (r) => r.v || 0), 0.2);
     yearAxis(f, H, rows);
-    f.svg.append('g').selectAll('rect').data(rows).join('rect')
-      .attr('x', (r) => f.x(String(r.year)) + (r.proj ? 0.75 : 0)).attr('width', (r) => f.x.bandwidth() - (r.proj ? 1.5 : 0))
+    const ok = rows.filter((r) => r.v != null);
+    f.svg.append('g').selectAll('rect').data(ok).join('rect')
+      .attr('x', (r) => f.x(r.key) + (r.basis === 'latest' ? 0.75 : 0)).attr('width', (r) => f.x.bandwidth() - (r.basis === 'latest' ? 1.5 : 0))
       .attr('y', (r) => f.y(r.v)).attr('height', (r) => f.y(0) - f.y(r.v))
-      .attr('fill', (r) => (r.proj ? 'none' : '#1F4E79')).attr('stroke', (r) => (r.proj ? '#1F4E79' : 'none')).attr('stroke-width', 1.5);
-    legend('f-debt-legend', [['sw', '#1F4E79', 'Government debt'], ['ol', '#1F4E79', 'IMF projection']]);
-    hover(f, rows, (r) => String(r.year), H, 'f-debt', (r) => `${r.year}${r.proj ? ', IMF projection' : ''}`,
-      (r) => [['#1F4E79', 'Debt', 'Rp' + d3.format(',.1f')(r.rp) + 'trn'], ['#1F4E79', '% of GDP', r.pc.toFixed(2) + '%']]);
+      .attr('fill', (r) => (r.basis === 'latest' ? 'none' : '#1F4E79')).attr('stroke', (r) => (r.basis === 'latest' ? '#1F4E79' : 'none')).attr('stroke-width', 1.5);
+    legend('f-debt-legend', [['sw', '#1F4E79', 'End of year'], ['ol', '#1F4E79', `End of ${MON[last.qn * 3 - 1]} ${last.year}`]].slice(0, last.qn === 4 ? 1 : 2));
+    hover(f, rows, (r) => r.key, H, 'f-debt', (r) => (r.basis === 'latest' ? `End of ${MON[r.qn * 3 - 1]} ${r.year}` : `End of ${r.year}`),
+      (r) => [['#1F4E79', 'Debt', 'Rp' + d3.format(',.1f')(r.rp) + 'trn'], ['#1F4E79', '% of GDP', r.pc == null ? '—' : r.pc.toFixed(2) + '%']]);
   }
 
   function balBudgetChart() {
