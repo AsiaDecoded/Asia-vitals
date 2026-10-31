@@ -13,9 +13,8 @@ import urllib.request
 from pathlib import Path
 
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"}
-PAGES = ["https://www.bi.go.id/id/statistik/ekonomi-keuangan/suspi/Pages/SUSPI_TWII_2026.aspx",
-         "https://www.bi.go.id/en/statistik/ekonomi-keuangan/suspi/Pages/SUSPI_TWII_2026.aspx",
-         "https://www.bi.go.id/id/statistik/metadata/metadata-suspi/default.aspx"]
+PAGES = [f"https://www.bi.go.id/id/statistik/ekonomi-keuangan/suspi/Pages/SUSPI_TW{q}_{y}.aspx"
+         for y in range(2008, 2024) for q in ("IV",)]
 
 
 def fetch(url):
@@ -37,11 +36,11 @@ def main(out):
         st, b = fetch(u)
         (out / f"page{i}.html").write_bytes(b)
         t = b.decode("utf-8", "replace")
-        links = sorted(set(re.findall(r'href="([^"#]+\.(?:xlsx?|pdf|zip))"', t, re.I)))
+        links = sorted(set(l for l in re.findall(r'href="([^"#]+\.(?:xlsx?|pdf|zip))"', t, re.I) if "Metadata" not in l))
         log["pages"].append({"url": u, "status": st, "bytes": len(b), "links": links})
         for l in links:
             full = urllib.parse.urljoin(u, l)
-            if full in seen or len(seen) >= 30:
+            if full in seen or len(seen) >= 40:
                 continue
             seen.add(full)
             st2, fb = fetch(full.replace(" ", "%20"))
