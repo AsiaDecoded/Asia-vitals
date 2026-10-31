@@ -82,7 +82,10 @@ def update(force=False, **_):
            "yoy_pct": round((daily[last] / daily[prev_y] - 1) * 100, 2) if prev_y else "",
            "ytd_pct": round((daily[last] / daily[end_y] - 1) * 100, 2) if end_y else "",
            "label": f"BIS daily to {last}"}
-    (OUT / "release_row.json").write_text(json.dumps([row], indent=1))
+    with open(OUT / "id_fx_latest.csv", "w", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh, lineterminator="\n")
+        w.writerow(list(row))
+        w.writerow(list(row.values()))
     code = f"X{last}"
 
     def long_rows():
