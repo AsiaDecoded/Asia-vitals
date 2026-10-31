@@ -55,15 +55,18 @@
   }
  ],
  "table": "https://www.bi.go.id/id/statistik/ekonomi-keuangan/suspi/default.aspx",
- "processed_at": "2026-10-31T02:31:27Z",
+ "processed_at": "2026-10-31T08:29:28Z",
  "rows": 50,
- "warnings": [],
- "fingerprint": "cb8589a5ad58d270",
+ "warnings": [
+  "2017: SUSPI general government 3,938,454 vs IMF 3,994,802 Rp bn",
+  "2018: SUSPI general government 4,461,747 vs IMF 4,514,354 Rp bn"
+ ],
+ "fingerprint": "2cea28ada83e3333",
  "long_rows": 150,
  "history": [
   {
    "code": "S2026-Q2",
-   "processed_at": "2026-10-31T02:31:27Z"
+   "processed_at": "2026-10-31T08:29:28Z"
   }
  ]
 }
