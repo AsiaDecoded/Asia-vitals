@@ -56,11 +56,15 @@ def zip_of(page_url):
     return urllib.parse.urljoin(page_url, z[0]) if z else None
 
 
-def read_book(b):
-    """{'YYYY-Qn': Rp billion} from table 1.1 of a SUSPI IDR workbook."""
+def read_book(b, table="1.1"):
+    """{'YYYY-Qn': value} from a SUSPI workbook's table 1.1 (central government) or 1 (general government)."""
     import openpyxl  # noqa: PLC0415
     wb = openpyxl.load_workbook(io.BytesIO(b), read_only=True, data_only=True)
-    ws = next((w for w in wb.worksheets if w.title.strip() in ("1.1",) or re.search(r"(?i)^1\.1\.?\s*central", w.title.strip())), None)
+    if table == "1.1":
+        pick = lambda t: t in ("1.1",) or re.search(r"(?i)^1\.1\.?\s*central", t)  # noqa: E731
+    else:
+        pick = lambda t: t in ("1",) or re.search(r"(?i)^1\.?\s*general", t)  # noqa: E731
+    ws = next((w for w in wb.worksheets if pick(w.title.strip())), None)
     if ws is None:
         return {}
     rows = [list(r) for r in ws.iter_rows(max_row=90, values_only=True)]
