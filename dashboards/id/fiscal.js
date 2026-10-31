@@ -92,7 +92,7 @@ dash.calc('sbn_latest', {
     if (src) src.textContent = pct ? 'Source: Ministry of Finance (SEKI, APBN KiTa), BPS, IMF' : 'Source: Ministry of Finance, Bank Indonesia (SEKI)';
     J.redrawFiscal();
   });
-  J.state.fBal = 'rp';
+  J.state.fBal = 'pct';
   const segD = document.getElementById('f-debt-seg');
   if (segD) segD.addEventListener('click', (e) => {
     const b = e.target.closest('button'); if (!b) return;
@@ -101,7 +101,7 @@ dash.calc('sbn_latest', {
     const u = document.getElementById('f-debt-units'); if (u) u.textContent = { pct: '% of GDP', usd: 'US$ billion', rp: 'Rp trillion' }[b.dataset.m];
     J.redrawFiscal();
   });
-  J.state.fDebt = 'rp';
+  J.state.fDebt = 'pct';
   const segB = document.getElementById('f-bb-seg');
   if (segB) segB.addEventListener('click', (e) => {
     const b = e.target.closest('button'); if (!b) return;
@@ -402,7 +402,7 @@ dash.calc('sbn_latest', {
     const D = dash.data('id_debt_gg'), X = dash.data('id_debt_intl');
     if (bad(D)) { J.fail(box); return; }
     if (D.status !== 'ok' || !D.data.length) { box.replaceChildren(); return; }
-    const mode = J.state.fDebt || 'rp';
+    const mode = J.state.fDebt || 'pct';
     const n = (v) => (v === '' || v == null ? null : Number(v));
     const gg = {};
     D.data.forEach((r) => {
