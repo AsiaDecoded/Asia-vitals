@@ -1,12 +1,2 @@
 == id_debt_suspi
-Traceback (most recent call last):
-  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/tools/id_run.py", line 21, in main
-    res = importlib.import_module(f"sources.{name}").update(force=True)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/sources/id_debt_suspi/__init__.py", line 110, in update
-    got.update(read_book(zf.read(n)))
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/sources/id_debt_suspi/__init__.py", line 58, in read_book
-    import openpyxl  # noqa: PLC0415
-    ^^^^^^^^^^^^^^^
-ModuleNotFoundError: No module named 'openpyxl'
+   2014-Q1..2026-Q2; 2026-Q2 Rp 10,293.7 trn (41.262% of GDP)
