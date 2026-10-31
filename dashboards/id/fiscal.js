@@ -427,18 +427,18 @@ dash.calc('sbn_latest', {
     yearAxis(f, H, rows);
     const cx = (r) => f.x(r.key) + f.x.bandwidth() / 2;
     f.svg.append('path').attr('d', d3.line().defined((r) => r.gv != null).x(cx).y((r) => f.y(r.gv))(rows))
-      .attr('fill', 'none').attr('stroke', '#1F4E79').attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
+      .attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
     if (rows.some((r) => r.cv != null)) {
       f.svg.append('path').attr('d', d3.line().defined((r) => r.cv != null).x(cx).y((r) => f.y(r.cv))(rows))
-        .attr('fill', 'none').attr('stroke', '#954F72').attr('stroke-width', 2.2).attr('stroke-linejoin', 'round');
+        .attr('fill', 'none').attr('stroke', '#0C84FF').attr('stroke-width', 2.2).attr('stroke-linejoin', 'round');
     }
-    const items = [['ln', '#1F4E79', 'General government']];
-    if (mode === 'pct') items.push(['ln', '#954F72', 'Central government (IMF Global Debt Database, SUSPI)']);
+    const items = [['ln', '#BD1B21', 'General government']];
+    if (mode === 'pct') items.push(['ln', '#0C84FF', 'Central government (IMF Global Debt Database, SUSPI)']);
     legend('f-debt-legend', items);
     const fmt = (v) => (v == null ? '—' : mode === 'pct' ? v.toFixed(2) + '%' : mode === 'usd' ? 'US$' + d3.format(',.1f')(v) + 'bn' : 'Rp' + d3.format(',.1f')(v) + 'trn');
     hover(f, rows, (r) => r.key, H, 'f-debt', (r) => (r.g && r.g.q !== 4 ? `End-${MON[r.g.q * 3 - 1]} ${r.year}` : `End of ${r.year}`), (r) => {
-      const out = [['#1F4E79', r.g ? (r.g.src.startsWith('IMF') ? 'General govt (IMF)' : 'General govt (SUSPI)') : 'General govt', fmt(r.gv)]];
-      if (mode === 'pct') out.push(['#954F72', gsrc[r.year] === 'SUSPI' ? 'Central govt (SUSPI)' : 'Central govt (IMF GDD)', fmt(r.cv)]);
+      const out = [['#BD1B21', r.g ? (r.g.src.startsWith('IMF') ? 'General govt (IMF)' : 'General govt (SUSPI)') : 'General govt', fmt(r.gv)]];
+      if (mode === 'pct') out.push(['#0C84FF', gsrc[r.year] === 'SUSPI' ? 'Central govt (SUSPI)' : 'Central govt (IMF GDD)', fmt(r.cv)]);
       return out;
     });
   }
