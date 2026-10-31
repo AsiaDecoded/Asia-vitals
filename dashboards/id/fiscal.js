@@ -433,7 +433,7 @@ dash.calc('sbn_latest', {
         .attr('fill', 'none').attr('stroke', '#0C84FF').attr('stroke-width', 2.2).attr('stroke-linejoin', 'round');
     }
     const items = [['ln', '#BD1B21', 'General government']];
-    if (mode === 'pct') items.push(['ln', '#0C84FF', 'Central government (IMF Global Debt Database, SUSPI)']);
+    if (mode === 'pct') items.push(['ln', '#0C84FF', 'Central government']);
     legend('f-debt-legend', items);
     const fmt = (v) => (v == null ? '—' : mode === 'pct' ? v.toFixed(2) + '%' : mode === 'usd' ? 'US$' + d3.format(',.1f')(v) + 'bn' : 'Rp' + d3.format(',.1f')(v) + 'trn');
     hover(f, rows, (r) => r.key, H, 'f-debt', (r) => (r.g && r.g.q !== 4 ? `End-${MON[r.g.q * 3 - 1]} ${r.year}` : `End of ${r.year}`), (r) => {
