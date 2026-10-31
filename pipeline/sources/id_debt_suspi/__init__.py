@@ -11,6 +11,12 @@ marked provisional).
 US dollars (asked for 31 Oct 2026): the same table from the release's USD workbook (US$ million, as published;
 written as US$ billion).
 
+General government (asked for 31 Oct 2026): table 1 of the same workbooks, Rp and US$ (gg_* columns). In releases
+up to 2018 it equals central government (local government debt appears from 2019). A combined annual general
+government series is written to id_debt_gg.csv: SUSPI at each year-end from 2014 and the latest quarter; before 2014,
+the IMF World Economic Outlook's general government gross debt (data/id/debt_imf/id_debt_imf.csv, from id_debt_imf;
+Rp and % of GDP as published, no US$), which equals SUSPI's general government from 2019 and from 2014 to 2017.
+
 % of GDP (calculated, asked for 30 Oct 2026): debt at the end of a quarter / nominal GDP of the four quarters to it
 (BPS quarterly, data/id/gdp/id_gdp.csv code 800); for a year-end this is the annual GDP.
 """
@@ -101,7 +107,7 @@ def update(force=False, **_):
     ly, lq = rel[-1]
     latest = PAGE.format(q={v: k for k, v in ROMAN.items()}[lq], y=ly)
     pages = [PAGE.format(q="IV", y=y) for y in range(2017, ly)] + [latest]
-    series, usd, used, errors, warnings = {}, {}, [], [], []
+    series, usd, gg, ggu, used, errors, warnings = {}, {}, {}, {}, [], [], []
     for p in pages:
         z = zip_of(p)
         if not z:
@@ -114,7 +120,9 @@ def update(force=False, **_):
         with zipfile.ZipFile(io.BytesIO(zb)) as zf:
             for n in zf.namelist():
                 if n.lower().endswith(".xlsx"):
-                    (gotu if "usd" in n.lower() else got).update(read_book(zf.read(n)))
+                    xb = zf.read(n)
+                    (gotu if "usd" in n.lower() else got).update(read_book(xb))
+                    (ggu if "usd" in n.lower() else gg).update(read_book(xb, "1"))   # later release wins
         for q, v in gotu.items():
             usd[q] = v   # later release wins
         if not got:
@@ -141,6 +149,12 @@ def update(force=False, **_):
     odd = [q for q in qs if q in usd and not 8000 < series[q] * 1e9 / (usd[q] * 1e6) < 25000]
     if odd:
         errors.append(f"implied Rp/US$ rate outside 8,000-25,000 in {odd[:5]} (unit change?)")
+    nogg = [q for q in qs if q not in gg or q not in ggu]
+    if nogg:
+        errors.append(f"general government missing for {nogg[:6]}")
+    below = [q for q in qs if q in gg and gg[q] < series[q] - 1]
+    if below:
+        errors.append(f"general government below central government in {below[:5]}")
     if errors:
         raise CheckFailed(errors)
     # GDP, four quarters to each quarter end (calculated)
@@ -161,19 +175,47 @@ def update(force=False, **_):
         g = sum(gq[x] for x in four) if all(x in gq for x in four) else None
         rows.append({"quarter": q, "date": f"{q[:4]}-{int(q[-1]) * 3:02d}-01", "debt": round(series[q], 3),
                      "debt_usd": round(usd[q] / 1000, 3),
-                     "gdp_4q": round(g, 3) if g else "", "debt_pct_gdp": round(series[q] / g * 100, 3) if g else ""})
+                     "gdp_4q": round(g, 3) if g else "", "debt_pct_gdp": round(series[q] / g * 100, 3) if g else "",
+                     "gg_debt": round(gg[q], 3), "gg_debt_usd": round(ggu[q] / 1000, 3),
+                     "gg_pct_gdp": round(gg[q] / g * 100, 3) if g else ""})
+    # combined annual general government: IMF before 2014, SUSPI from 2014 (year-ends) plus the latest quarter
+    imf = {}
+    pi = DATA / "id" / "debt_imf" / "id_debt_imf.csv"
+    if pi.exists():
+        for r in csv.DictReader(open(pi, encoding="utf-8")):
+            if not r["imf_projection"]:
+                imf[int(r["year"])] = (float(r["debt"]), float(r["debt_pct_gdp"]))
+    comb = [{"period": str(y), "date": f"{y}-12-01", "debt": round(imf[y][0], 3), "debt_usd": "", "debt_pct_gdp": round(imf[y][1], 3),
+             "source": "IMF WEO (GGXWDG, GGXWDG_NGDP)"} for y in sorted(imf) if 2000 <= y < 2014]
+    if not comb:
+        warnings.append("IMF general government debt not found; combined series starts in 2014")
+    for r in rows:
+        if r["quarter"].endswith("Q4") or r is rows[-1]:
+            comb.append({"period": r["quarter"][:4] if r["quarter"].endswith("Q4") else r["quarter"], "date": r["date"],
+                         "debt": r["gg_debt"], "debt_usd": r["gg_debt_usd"], "debt_pct_gdp": r["gg_pct_gdp"],
+                         "source": "SUSPI table 1" + ("; % of GDP calculated" if r["gg_pct_gdp"] != "" else "")})
+    for r in comb:
+        y = int(r["period"][:4])
+        if r["source"].startswith("SUSPI") and y in imf and r["period"] == str(y) and abs(r["debt"] / imf[y][0] - 1) > 0.005:
+            warnings.append(f"{y}: SUSPI general government {r['debt']:,.0f} vs IMF {imf[y][0]:,.0f} Rp bn")
     nogdp = [r["quarter"] for r in rows if r["debt_pct_gdp"] == ""]
     if nogdp:
         warnings.append(f"no four-quarter GDP yet for {nogdp}; ratio left blank")
-    fp = hashlib.sha256(json.dumps(rows, sort_keys=True).encode()).hexdigest()[:16]
+    fp = hashlib.sha256(json.dumps([rows, comb], sort_keys=True).encode()).hexdigest()[:16]
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {state.get('label')})"}
-    cols = ["quarter", "date", "debt", "debt_usd", "gdp_4q", "debt_pct_gdp"]
+    cols = ["quarter", "date", "debt", "debt_usd", "gdp_4q", "debt_pct_gdp", "gg_debt", "gg_debt_usd", "gg_pct_gdp"]
     with open(OUT / "id_debt.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh, lineterminator="\n")
         w.writerow(cols)
         for r in rows:
             w.writerow([r[c] for c in cols])
+    ccols = ["period", "date", "debt", "debt_usd", "debt_pct_gdp", "source"]
+    with open(OUT / "id_debt_gg.csv", "w", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh, lineterminator="\n")
+        w.writerow(ccols)
+        for r in comb:
+            w.writerow([r[c] for c in ccols])
     code = f"S{qs[-1]}"
     label = f"{qs[0]}..{qs[-1]}"
 
