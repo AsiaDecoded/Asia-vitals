@@ -1,2 +1,12 @@
-== id_debt_imf
-   2000-2031, projections from 2026 (IMF update 9/24/2026)
+== id_debt_suspi
+Traceback (most recent call last):
+  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/tools/id_run.py", line 21, in main
+    res = importlib.import_module(f"sources.{name}").update(force=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/sources/id_debt_suspi/__init__.py", line 110, in update
+    got.update(read_book(zf.read(n)))
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Asia-vitals/Asia-vitals/pipeline/sources/id_debt_suspi/__init__.py", line 58, in read_book
+    import openpyxl  # noqa: PLC0415
+    ^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'openpyxl'
