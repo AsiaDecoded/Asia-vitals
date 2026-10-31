@@ -1,348 +1,56 @@
 country,indicator,series,label,measure,area,freq,date,value,unit,source,release
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1972-01-01,33.678,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1973-01-01,26.378,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1974-01-01,18.872,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1975-01-01,17.234,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1976-01-01,16.338,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1977-01-01,15.763,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1978-01-01,24.032,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1979-01-01,17.489,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1980-01-01,13.56,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1981-01-01,14.046,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1982-01-01,23.227,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1983-01-01,23.671,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1984-01-01,20.985,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1985-01-01,26.247,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1986-01-01,35.04,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1987-01-01,45.879,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1988-01-01,41.405,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1989-01-01,38.648,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1990-01-01,37.103,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1991-01-01,35.717,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1992-01-01,35.247,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1993-01-01,33.192,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1994-01-01,32.145,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1995-01-01,28.346,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1996-01-01,23.417,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1997-01-01,23.341,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1998-01-01,62.54,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,1999-01-01,83.031,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2000-01-01,87.437,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2001-01-01,71.104,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2002-01-01,61.83,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2003-01-01,56.254,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2004-01-01,52.042,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2005-01-01,43.524,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2006-01-01,35.854,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2007-01-01,32.334,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2008-01-01,30.227,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2009-01-01,26.461,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2010-01-01,24.429,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2011-01-01,23.098,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2012-01-01,22.955,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2013-01-01,24.884,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2014-01-01,24.682,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2015-01-01,27.46,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2016-01-01,28.347,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2017-01-01,29.399,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2018-01-01,29.775,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2019-01-01,30.182,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2020-01-01,39.334,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2021-01-01,40.696,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2022-01-01,39.482,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2023-01-01,38.984,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,gdd_cg_pct,gdd_cg_pct,level,central government,A,2024-01-01,39.207,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2001-12-01,1252746.231,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2002-03-01,1240931.444,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2002-06-01,1229116.657,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2002-09-01,1217301.87,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2002-12-01,1205487.084,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2003-03-01,1207181.938,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2003-06-01,1208876.793,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2003-09-01,1210571.648,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2003-12-01,1212266.503,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2004-03-01,1228860.83,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2004-06-01,1245455.157,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2004-09-01,1262049.484,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2004-12-01,1278643.811,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2005-03-01,1282035.981,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2005-06-01,1285428.15,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2005-09-01,1288820.32,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2005-12-01,1292212.49,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2006-03-01,1289474.647,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2006-06-01,1286736.805,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2006-09-01,1283998.962,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2006-12-01,1281261.12,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2007-03-01,1302723.542,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2007-06-01,1324185.965,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2007-09-01,1345648.387,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2007-12-01,1367110.81,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2008-03-01,1427950.936,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2008-06-01,1488791.061,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2008-09-01,1549631.187,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2008-12-01,1610471.313,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2009-03-01,1599136.202,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2009-06-01,1587801.091,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2009-09-01,1576465.98,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2009-12-01,1565130.869,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2010-03-01,1586332.545,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2010-06-01,1609391.794,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2010-09-01,1652771.045,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2010-12-01,1680030.137,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2011-03-01,1693792.971,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2011-06-01,1720034.479,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2011-09-01,1805026.197,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2011-12-01,1808699.096,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2012-03-01,1857075.542,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2012-06-01,1929177.584,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2012-09-01,1972999.687,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2012-12-01,1970790.613,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2013-03-01,1991663.875,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2013-06-01,2035086.155,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2013-09-01,2236338.627,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2013-12-01,2369120.756,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2014-03-01,2413519.104,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2014-06-01,2492317.745,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2014-09-01,2601818.749,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2014-12-01,2604059.529,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2015-03-01,2791208.96,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2015-06-01,2868256.57,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2015-09-01,3077422.36,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2015-12-01,3118074.438,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2016-03-01,3217357.895,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2016-06-01,3355678.458,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2016-09-01,3458868.304,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2016-12-01,3469541.046,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2017-03-01,3648845.785,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2017-06-01,3708880.552,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2017-09-01,3856649.445,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2017-12-01,3992590.377,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2018-03-01,4132783.056,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2018-06-01,4192995.01,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2018-09-01,4408217.916,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2018-12-01,4444454.901,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2019-03-01,4566024.325,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2019-06-01,4567934.767,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2019-09-01,4707476.076,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2019-12-01,4780212.513,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2020-03-01,5174478.341,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2020-06-01,5320015.808,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2020-09-01,5768003.427,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2020-12-01,6055466.628,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2021-03-01,6424282.301,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2021-06-01,6555072.261,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2021-09-01,6707728.161,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2021-12-01,6883695.558,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2022-03-01,7056613.753,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2022-06-01,7206133.385,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2022-09-01,7468118.624,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2022-12-01,7725014.616,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2023-03-01,7885211.158,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2023-06-01,7891843.957,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2023-09-01,7888503.811,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2023-12-01,8200616.539,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2024-03-01,8260929.165,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2024-06-01,8490114.842,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2024-09-01,8540585.868,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2024-12-01,8831472.806,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2025-03-01,9146729.677,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2025-06-01,9137520.447,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2025-09-01,9399532.209,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2025-12-01,9655649.602,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_rp,bis_rp,level,general government,Q,2026-03-01,9900513.731,Rp billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2001-12-01,119.648,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2002-03-01,126.318,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2002-06-01,141.053,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2002-09-01,135.339,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2002-12-01,134.672,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2003-03-01,135.615,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2003-06-01,146.15,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2003-09-01,144.164,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2003-12-01,143.858,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2004-03-01,143.471,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2004-06-01,132.49,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2004-09-01,137.773,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2004-12-01,137.637,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2005-03-01,135.401,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2005-06-01,131.67,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2005-09-01,125.25,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2005-12-01,131.456,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2006-03-01,142.248,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2006-06-01,138.911,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2006-09-01,139.187,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2006-12-01,142.465,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2007-03-01,142.764,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2007-06-01,146.562,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2007-09-01,147.146,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2007-12-01,145.553,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2008-03-01,154.959,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2008-06-01,161.299,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2008-09-01,164.33,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2008-12-01,147.075,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2009-03-01,136.678,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2009-06-01,155.549,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2009-09-01,163.37,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2009-12-01,165.471,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2010-03-01,174.873,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2010-06-01,177.568,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2010-09-01,185.297,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2010-12-01,187.038,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2011-03-01,194.584,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2011-06-01,200.523,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2011-09-01,198.901,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2011-12-01,199.487,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2012-03-01,202.553,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2012-06-01,204.473,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2012-09-01,206.051,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2012-12-01,204.52,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2013-03-01,204.879,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2013-06-01,205.07,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2013-09-01,195.794,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2013-12-01,194.888,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2014-03-01,212.458,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2014-06-01,209.501,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2014-09-01,213.046,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2014-12-01,209.709,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2015-03-01,213.684,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2015-06-01,214.835,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2015-09-01,210.893,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2015-12-01,225.708,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2016-03-01,243.794,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2016-06-01,255.14,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2016-09-01,265.027,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2016-12-01,258.035,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2017-03-01,273.985,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2017-06-01,278.288,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2017-09-01,286.569,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2017-12-01,294.863,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2018-03-01,300.697,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2018-06-01,293.514,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2018-09-01,295.824,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2018-12-01,308.418,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2019-03-01,320.648,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2019-06-01,323.211,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2019-09-01,331.629,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2019-12-01,344.334,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2020-03-01,317.258,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2020-06-01,368.092,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2020-09-01,385.944,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2020-12-01,430.994,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2021-03-01,442.291,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2021-06-01,450.805,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2021-09-01,468.674,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2021-12-01,484.24,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2022-03-01,491.224,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2022-06-01,481.289,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2022-09-01,489.793,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2022-12-01,498.765,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2023-03-01,526.078,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2023-06-01,523.376,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2023-09-01,510.088,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2023-12-01,530.552,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2024-03-01,520.513,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2024-06-01,519.732,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2024-09-01,563.272,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2024-12-01,545.454,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2025-03-01,549.781,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2025-06-01,563.018,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2025-09-01,563.666,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2025-12-01,577.643,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_usd,bis_usd,level,general government,Q,2026-03-01,583.588,US$ billion,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2001-12-01,71.4,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2002-03-01,68.7,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2002-06-01,66.7,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2002-09-01,64.4,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2002-12-01,62.1,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2003-03-01,60.3,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2003-06-01,58.9,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2003-09-01,57.7,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2003-12-01,56.5,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2004-03-01,56.2,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2004-06-01,55.1,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2004-09-01,53.9,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2004-12-01,52.3,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2005-03-01,50.3,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2005-06-01,48.3,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2005-09-01,46.3,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2005-12-01,43.8,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2006-03-01,41.4,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2006-06-01,39.4,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2006-09-01,37.4,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2006-12-01,36.1,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2007-03-01,35.2,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2007-06-01,34.3,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2007-09-01,33.4,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2007-12-01,32.5,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2008-03-01,32.4,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2008-06-01,31.8,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2008-09-01,31.1,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2008-12-01,30.6,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2009-03-01,29.1,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2009-06-01,28.1,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2009-09-01,27.2,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2009-12-01,26.2,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2010-03-01,25.7,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2010-06-01,25.1,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2010-09-01,24.9,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2010-12-01,24.5,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2011-03-01,23.9,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2011-06-01,23.5,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2011-09-01,23.8,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2011-12-01,23.1,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2012-03-01,23.0,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2012-06-01,23.3,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2012-09-01,23.3,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2012-12-01,22.9,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2013-03-01,22.7,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2013-06-01,22.7,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2013-09-01,24.2,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2013-12-01,24.8,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2014-03-01,24.6,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2014-06-01,24.7,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2014-09-01,25.1,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2014-12-01,24.6,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2015-03-01,25.9,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2015-06-01,26.0,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2015-09-01,27.3,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2015-12-01,27.1,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2016-03-01,27.4,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2016-06-01,28.1,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2016-09-01,28.5,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2016-12-01,28.0,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2017-03-01,28.7,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2017-06-01,28.5,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2017-09-01,29.0,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2017-12-01,29.4,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2018-03-01,29.8,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2018-06-01,29.5,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2018-09-01,30.3,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2018-12-01,30.0,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2019-03-01,30.2,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2019-06-01,29.7,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2019-09-01,30.1,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2019-12-01,30.2,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2020-03-01,32.4,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2020-06-01,33.9,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2020-09-01,37.1,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2020-12-01,39.2,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2021-03-01,41.5,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2021-06-01,41.0,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2021-09-01,40.9,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2021-12-01,40.5,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2022-03-01,40.3,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2022-06-01,39.5,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2022-09-01,39.4,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2022-12-01,39.4,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2023-03-01,39.1,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2023-06-01,38.5,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2023-09-01,38.1,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2023-12-01,39.2,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2024-03-01,39.1,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2024-06-01,39.6,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2024-09-01,39.2,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2024-12-01,39.9,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2025-03-01,40.6,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2025-06-01,39.9,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2025-09-01,40.3,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2025-12-01,40.5,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
-ID,debt_intl,bis_pct,bis_pct,level,general government,Q,2026-03-01,40.7,% of GDP,"BIS, credit to the general government (nominal value)",G2024-B2026-Q1
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1972-12-01,33.678,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1973-12-01,26.378,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1974-12-01,18.872,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1975-12-01,17.234,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1976-12-01,16.338,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1977-12-01,15.763,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1978-12-01,24.032,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1979-12-01,17.489,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1980-12-01,13.56,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1981-12-01,14.046,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1982-12-01,23.227,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1983-12-01,23.671,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1984-12-01,20.985,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1985-12-01,26.247,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1986-12-01,35.04,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1987-12-01,45.879,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1988-12-01,41.405,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1989-12-01,38.648,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1990-12-01,37.103,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1991-12-01,35.717,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1992-12-01,35.247,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1993-12-01,33.192,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1994-12-01,32.145,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1995-12-01,28.346,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1996-12-01,23.417,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1997-12-01,23.341,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1998-12-01,62.54,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,1999-12-01,83.031,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2000-12-01,87.437,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2001-12-01,71.104,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2002-12-01,61.83,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2003-12-01,56.254,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2004-12-01,52.042,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2005-12-01,43.524,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2006-12-01,35.854,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2007-12-01,32.334,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2008-12-01,30.227,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2009-12-01,26.461,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2010-12-01,24.429,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2011-12-01,23.098,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2012-12-01,22.955,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2013-12-01,24.884,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2014-12-01,24.682,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2015-12-01,27.46,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2016-12-01,28.347,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2017-12-01,29.399,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2018-12-01,29.775,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2019-12-01,30.182,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2020-12-01,39.334,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2021-12-01,40.696,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2022-12-01,39.482,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2023-12-01,38.984,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",level,central government,A,2024-12-01,39.207,% of GDP,"IMF, Global Debt Database (central government debt)",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",calculated,central government,A,2025-12-01,40.545,% of GDP,"Bank Indonesia and Ministry of Finance, SUSPI table 1.1; % of GDP calculated with BPS GDP",G2024-2026-Q2
+ID,debt_long,cg_pct,"Central government debt, % of GDP",calculated,central government,Q,2026-06-01,41.262,% of GDP,"Bank Indonesia and Ministry of Finance, SUSPI table 1.1; % of GDP calculated with BPS GDP",G2024-2026-Q2
