@@ -98,7 +98,7 @@ dash.calc('sbn_latest', {
     const b = e.target.closest('button'); if (!b) return;
     J.state.fDebt = b.dataset.m;
     segD.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
-    const u = document.getElementById('f-debt-units'); if (u) u.textContent = b.dataset.m === 'pct' ? '% of GDP' : 'Rp trillion';
+    const u = document.getElementById('f-debt-units'); if (u) u.textContent = { pct: '% of GDP', usd: 'US$ billion', rp: 'Rp trillion' }[b.dataset.m];
     J.redrawFiscal();
   });
   J.state.fDebt = 'rp';
@@ -399,14 +399,14 @@ dash.calc('sbn_latest', {
     const D = dash.data('id_debt');
     if (bad(D)) { J.fail(box); return; }
     if (D.status !== 'ok' || !D.data.length) { box.replaceChildren(); return; }
-    const pct = J.state.fDebt === 'pct';
+    const mode = J.state.fDebt || 'rp';
     const n = (v) => (v === '' || v == null ? null : Number(v));
     const all = D.data.map((r) => ({ q: r.quarter, year: Number(r.quarter.slice(0, 4)), qn: Number(r.quarter.slice(-1)),
-      rp: Number(r.debt) / 1000, pc: n(r.debt_pct_gdp) })).sort((a, b) => (a.q < b.q ? -1 : 1));
+      rp: Number(r.debt) / 1000, usd: n(r.debt_usd), pc: n(r.debt_pct_gdp) })).sort((a, b) => (a.q < b.q ? -1 : 1));
     const last = all[all.length - 1];
     const rows = all.filter((r) => r.qn === 4).map((r) => ({ ...r, key: String(r.year), basis: 'actual' }));
     if (last.qn !== 4) rows.push({ ...last, key: String(last.year), basis: 'latest', through: `${last.year}-${String(last.qn * 3).padStart(2, '0')}` });
-    rows.forEach((r) => { r.v = pct ? r.pc : r.rp; });
+    rows.forEach((r) => { r.v = r[{ pct: 'pc', usd: 'usd', rp: 'rp' }[mode]]; });
     const H = 280;
     const f = frame(box, rows.map((r) => r.key), H, 0, d3.max(rows, (r) => r.v || 0), 0.2);
     yearAxis(f, H, rows);
@@ -417,7 +417,8 @@ dash.calc('sbn_latest', {
       .attr('fill', (r) => (r.basis === 'latest' ? 'none' : '#1F4E79')).attr('stroke', (r) => (r.basis === 'latest' ? '#1F4E79' : 'none')).attr('stroke-width', 1.5);
     legend('f-debt-legend', [['sw', '#1F4E79', 'End of year'], ['ol', '#1F4E79', `End of ${MON[last.qn * 3 - 1]} ${last.year}`]].slice(0, last.qn === 4 ? 1 : 2));
     hover(f, rows, (r) => r.key, H, 'f-debt', (r) => (r.basis === 'latest' ? `End of ${MON[r.qn * 3 - 1]} ${r.year}` : `End of ${r.year}`),
-      (r) => [['#1F4E79', 'Debt', 'Rp' + d3.format(',.1f')(r.rp) + 'trn'], ['#1F4E79', '% of GDP', r.pc == null ? '—' : r.pc.toFixed(2) + '%']]);
+      (r) => [['#1F4E79', 'Debt, Rp', 'Rp' + d3.format(',.1f')(r.rp) + 'trn'], ['#1F4E79', 'Debt, US$', r.usd == null ? '—' : 'US$' + d3.format(',.1f')(r.usd) + 'bn'],
+        ['#1F4E79', '% of GDP', r.pc == null ? '—' : r.pc.toFixed(2) + '%']]);
   }
 
   function balBudgetChart() {
