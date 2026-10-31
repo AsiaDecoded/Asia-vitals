@@ -36,7 +36,7 @@ def main(out):
     urls = sorted(set(re.findall(r'"url"\s*:\s*"([^"]+)"', t)))
     debt = [u for u in urls if re.search(r"(?i)suspi|utang|debt|profil|statist|data", u)]
     log["menu"] = {"status": st, "bytes": len(b), "debt_urls": debt[:200]}
-    want = sorted(set(["/en/suspi", "/suspi", "/id/suspi"] + debt[:30]))
+    want = ["suspi", "en/suspi", "/suspi?lang=en", "/sulni", "sulni", "/posisisbn", "/kepemilikansbndomestikyangdapatdiperdagangkan", "/beranda"]
     media = []
     for i, u in enumerate(want):
         st, ct, cd, b = fetch(API + "/page?url=" + urllib.parse.quote(u))
