@@ -61,6 +61,9 @@ def main():
     unknown = [n for n in names if n not in SOURCES]
     if unknown:
         raise SystemExit(f"unknown source(s): {unknown}; known: {SOURCES}")
+    # run in registry order, whatever order they were named in (the release calendar lists sources by group;
+    # sources that read other sources' files, e.g. id_fiscal_gdp, sit after them in the registry)
+    names = [n for n in SOURCES if n in names]
 
     updated, failed = [], []
     report = [f"run at {now()} UTC; sources: {' '.join(names)}"]
