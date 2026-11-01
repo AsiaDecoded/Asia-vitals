@@ -12,9 +12,9 @@ import urllib.request
 from pathlib import Path
 
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"}
-PAGES = ["https://asianbondsonline.adb.org/data-portal/js/data-portal-v4.1.js",
-         "https://asianbondsonline.adb.org/data-portal/js/data-portal-v4.js",
-         "https://asianbondsonline.adb.org/data-portal/"]
+PAGES = ["https://asianbondsonline.adb.org/xml/get-indicator.php?code=Int_rate_spread_2yrvs10yr",
+         "https://asianbondsonline.adb.org/xml/get-indicator.php?code=Yld_volatility",
+         "https://asianbondsonline.adb.org/data-portal/get-metadata.php?code=Int_rate_spread_2yrvs10yr"]
 
 
 def fetch(url):
@@ -50,6 +50,13 @@ def main(out):
             (out / "files" / name).write_bytes(fb[:5_000_000])
             log.append({"file": full, "status": st2, "type": ct2, "bytes": len(fb), "head": fb[:200].decode("utf-8", "replace")})
             got += 1
+        for prog in re.findall(r"<(?:table_program|chart_program)[^>]*>\s*(?:<!\[CDATA\[)?\s*([^<\]]+)", t) + re.findall(r'name="(?:table_program|chart_program)"[^>]*value="([^"]+)"', t):
+            for q in ("economy=ID&years=2000-2026&frequency=Daily&add_opts=&frequency_switch=0", "economy=ID&years=all&frequency=Daily"):
+                full = urllib.parse.urljoin(u, prog.strip()) + ("&" if "?" in prog else "?") + q
+                st3, ct3, pb = fetch(full)
+                name = re.sub(r"[^A-Za-z0-9._-]", "_", full.split("//", 1)[-1])[:150]
+                (out / "files" / name).write_bytes(pb[:10_000_000])
+                log.append({"program": full, "status": st3, "type": ct3, "bytes": len(pb), "head": pb[:400].decode("utf-8", "replace")})
         (out / "y2.json").write_text(json.dumps(log, ensure_ascii=False, indent=1))
         print(i, st, len(b), u, flush=True)
 
