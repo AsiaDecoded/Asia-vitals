@@ -1,3 +1,5 @@
-== id_jci_seki
-   1995-07..2026-08; latest 6,525.48
-   warning: 22 months not in SEKI III.3: 2004-01..2005-11
+== id_jci_yahoo
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/yfinance/utils.py:568: Pandas4Warning: The inplace keyword in DataFrame.sort_index is deprecated and will be removed in a future version (PDEP-8).
+See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+  quotes.sort_index(inplace=True)
+   1990-04-06..2026-10-30; 8902 days; latest 5,057.05
