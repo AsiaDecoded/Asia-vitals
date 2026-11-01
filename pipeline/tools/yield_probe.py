@@ -14,20 +14,7 @@ UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, 
       "Accept": "application/json,text/csv,*/*;q=0.8"}
 I = "https://api.imf.org/external/sdmx/3.0"
 O = "https://sdmx.oecd.org/public/rest"
-URLS = [
-    I + "/structure/dataflow/IMF.STA/MFS_FMP/+?references=datastructure",
-    I + "/data/dataflow/IMF.STA/MFS_FMP/+/IDN.*.*",
-    I + "/data/dataflow/IMF.STA/MFS_FMP/+/IDN.*.*.*",
-    O + "/data/OECD.SDD.STES,DSD_STES@DF_FINMARK,4.0/IDN.M.IRLT.PA.....?format=csvfilewithlabels",
-    O + "/data/OECD.SDD.STES,DSD_STES@DF_FINMARK,/IDN.M..PA.....?format=csvfilewithlabels",
-    "https://www.bi.go.id/id/statistik/ekonomi-keuangan/seki/Default.aspx",
-    "https://www.bi.go.id/SEKI/tabel/TABEL1_25.xls",
-    "https://www.bi.go.id/SEKI/tabel/TABEL1_26.xls",
-    "https://www.bi.go.id/SEKI/tabel/TABEL1_27.xls",
-    "https://www.bi.go.id/SEKI/tabel/TABEL1_28.xls",
-    "https://www.bi.go.id/SEKI/tabel/TABEL1_29.xls",
-    "https://www.bi.go.id/SEKI/tabel/TABEL1_30.xls",
-]
+URLS = [f"https://www.bi.go.id/SEKI/tabel/TABEL3_{n}.xls" for n in range(1, 12)] + ["https://www.idx.co.id/primary/StockData/GetIndexIC?indexCode=COMPOSITE", "https://www.idx.co.id/en/market-data/statistical-reports/"]
 
 
 def fetch(url, timeout=180):
