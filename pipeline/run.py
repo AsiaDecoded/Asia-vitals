@@ -31,12 +31,14 @@ def gh_output(**kv):
 
 
 def combine_long():
-    """data/all_long.csv.gz: every source's long.csv stacked, for cross-country views.
+    """data/all_long.csv.gz: every source's long file stacked, for cross-country views. A folder shared by two
+    sources holds long.csv for one and long_<name>.csv for the other (e.g. data/id/jci/long_daily.csv), so both
+    patterns are read.
 
     Gzipped: uncompressed it passes GitHub's 100 MB file limit with all 12 economies.
     """
     import gzip
-    files = sorted(p for p in DATA.glob("*/*/long.csv"))
+    files = sorted(set(DATA.glob("*/*/long.csv")) | set(DATA.glob("*/*/long_*.csv")))
     out = DATA / "all_long.csv.gz"
     (DATA / "all_long.csv").unlink(missing_ok=True)
     n = 0

@@ -68,7 +68,7 @@ The e-Stat API needs the repository secret `ESTAT_APP_ID`. ECOS uses the secret 
 | `pipeline/core/censtatd.py`, `pipeline/tools/censtatd_discover.py` | C&SD client: web-table API, Table E501 files, web report tables and annexes, product index, release schedule; probe of Hong Kong price sources (workflow `censtatd-discover.yml`) |
 | `raw/<country>/<source>/` | Original files for every release processed, unchanged (CPI: compressed API response) |
 | `data/<country>/<indicator>/` | `<country>_<indicator>.csv` (dashboard format), `long.csv` (common format), `json/` (per chart), `release.json`, `release_row.json` |
-| `data/all_long.csv.gz` | Every source's long file stacked: the input for cross-country views |
+| `data/all_long.csv.gz` | Every source's long file stacked (`long.csv`, and `long_<name>.csv` where two sources share a folder): the input for cross-country views |
 
 **Common long format:** `country, indicator, series, label, measure, area, freq, date, value, unit, source, release`.
 
