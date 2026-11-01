@@ -26,7 +26,7 @@
   "id_fiscal_monthly": "Ministry of Finance APBN KiTa press conference: no calendar found; it has fallen between the 9th and 22nd (Sep 2026 outturn 9 Oct, Aug 18 Sep), so the source runs daily from the 3rd to the 25th; nominal date the 15th",
   "id_debt_imf": "No fixed dates: SUSPI (Bank Indonesia and Ministry of Finance) is quarterly with no calendar found; IMF WEO in April and October, IMF Global Debt Database once a year. A short monthly window (15th-18th) picks each up within a month; every source exits unchanged when nothing is new",
   "id_jci_daily": "Yahoo Finance ^JKSE: daily closes; fetched every day, weekly windows Monday to Sunday, dashboard refresh on Mondays",
-  "id_fx": "BIS WS_XRU: daily data published with a lag of a few days; weekly windows Monday to Sunday, dashboard refresh on Mondays"
+  "id_fx": "BIS WS_XRU (id_fx_bis for Indonesia, fx_bis for the other 11): daily data published with a lag of a few days; weekly windows Monday to Sunday, dashboard refresh on Mondays"
  },
  "groups": {
   "jp_cpi": {"label": "Japan CPI (national) and CPI contributions", "sources": ["jp_cpi_estat", "jp_cpi_contrib_estat", "jp_cpi_food_estat", "jp_cpi_core3_estat"], "time_sgt": "07:30", "dates": [
@@ -232,7 +232,7 @@
    {"ref": "2027-W11", "date": "2027-03-15", "from": "2027-03-15", "to": "2027-03-21", "status": "expected"},
    {"ref": "2027-W12", "date": "2027-03-22", "from": "2027-03-22", "to": "2027-03-28", "status": "expected"},
    {"ref": "2027-W13", "date": "2027-03-29", "from": "2027-03-29", "to": "2027-04-04", "status": "expected"}]},
-  "id_fx": {"label": "Indonesia rupiah per US$ (BIS)", "sources": ["id_fx_bis"], "time_sgt": "08:00", "dates": [
+  "id_fx": {"label": "Exchange rates per US$ (BIS): Indonesia and 11 other economies", "sources": ["id_fx_bis", "fx_bis"], "time_sgt": "08:00", "dates": [
    {"ref": "2026-W45", "date": "2026-11-02", "from": "2026-11-02", "to": "2026-11-08", "status": "expected"},
    {"ref": "2026-W46", "date": "2026-11-09", "from": "2026-11-09", "to": "2026-11-15", "status": "expected"},
    {"ref": "2026-W47", "date": "2026-11-16", "from": "2026-11-16", "to": "2026-11-22", "status": "expected"},

@@ -50,4 +50,5 @@ SOURCES = [
     "cn_ppi_nbs",
     "vn_cpi_nso",
     "vn_ppi_nso",
+    "fx_bis",
 ]
