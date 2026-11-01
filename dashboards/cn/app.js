@@ -56,7 +56,7 @@ dash.calc('impacts_latest', {
     if (c.id && c.querySelector('.jg-chart') && c.dataset.periods !== 'none') J.period[c.id] = c.dataset.def != null ? Number(c.dataset.def) : 120;
   });
   J.addPeriods();
-  J.addSliders(() => J.redrawCpi());
+  J.addSliders(() => { J.redrawCpi(); if (J.redrawFx) J.redrawFx(); });
   dash.onData(() => J.theme());
 
   const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -408,6 +408,56 @@ dash.calc('impacts_latest', {
     hbars('ppi-ind', 'cn_ppi', (r) => r.group === 'industry' && r.measure === 'yoy', (r) => r.label, 'var(--ad-c3)', 'ppi-ind-units');
   };
 
+  // Financial tab: renminbi per US dollar, BIS daily (WS_XRU, from national sources), as published.
+  const dday = (s) => new Date(Date.UTC(Number(s.slice(0, 4)), Number(s.slice(5, 7)) - 1, Number(s.slice(8, 10)) || 1));
+  J.redrawFx = () => {
+    if (document.getElementById('financial').hidden) return;
+    const box = document.getElementById('fx-daily-chart'), card = document.getElementById('fx-daily');
+    if (!status(box, ['cn_fx_daily'])) return;
+    let rows = dash.data('cn_fx_daily').data.map((r) => ({ date: r.date, v: num(r.rate) })).filter((r) => r.v != null && r.v > 0);
+    rows = J.slice(rows, 'fx-daily');
+    if (!rows.length) { box.replaceChildren(); return; }
+    rows.forEach((r) => { r.t = dday(r.date); });
+    const H = 300, mr = 8, W = box.clientWidth, fmt = d3.format(',~f');
+    box.replaceChildren();
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const y = d3.scaleLinear([0, d3.max(rows, (r) => r.v)], [H - 24, 12]).nice();
+    const ticks = y.ticks(5);
+    const ml = J.textWidth(svg, ticks.map(fmt)) + 10;
+    const x = d3.scaleUtc([rows[0].t, rows[rows.length - 1].t], [ml, W - mr]);
+    svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', ml).attr('x2', W - mr).attr('y1', y).attr('y2', y)
+      .attr('stroke', (v) => (v === 0 ? 'var(--cds-chart-reference)' : 'var(--ad-grid)'));
+    J.axisStyle(svg.append('g').attr('transform', `translate(${ml - 4},0)`).call(d3.axisLeft(y).tickValues(ticks).tickSize(0).tickFormat(fmt)));
+    const days = (rows[rows.length - 1].t - rows[0].t) / 864e5;
+    if (days <= 730) {
+      const room = Math.max(1, Math.floor((W - ml - mr) / 52)), nm = Math.max(1, Math.round(days / 30.44));
+      const mstep = [1, 2, 3, 6, 12].find((s) => nm / s <= room) || 12;
+      J.axisStyle(svg.append('g').attr('transform', `translate(0,${H - 20})`).call(d3.axisBottom(x).ticks(d3.utcMonth.every(mstep)).tickSize(0).tickFormat(d3.utcFormat('%b %y'))));
+    } else {
+      const span = days / 365.25, nYears = Math.max(1, Math.round((W - ml - mr) / 56));
+      const step = [1, 2, 5, 10, 20, 25, 50].find((s) => span / s <= nYears) || 50;
+      J.axisStyle(svg.append('g').attr('transform', `translate(0,${H - 20})`).call(d3.axisBottom(x).ticks(d3.utcYear.every(step)).tickSize(0).tickFormat(d3.utcFormat('%Y'))));
+    }
+    svg.append('path').attr('d', d3.line().x((r) => x(r.t)).y((r) => y(r.v))(rows))
+      .attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 1.4).attr('stroke-linejoin', 'round');
+    const tip = J.tip(card);
+    const rule = svg.append('line').attr('y1', 8).attr('y2', H - 22).attr('stroke', 'var(--cds-chart-reference)').attr('display', 'none');
+    const dot = svg.append('circle').attr('r', 3.5).attr('fill', '#BD1B21').attr('display', 'none');
+    const bis = d3.bisector((r) => r.t).center, vf = d3.format('.4f');
+    svg.append('rect').attr('x', ml).attr('width', Math.max(0, W - mr - ml)).attr('height', H).attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const [mx] = d3.pointer(ev);
+        const r = rows[bis(rows, x.invert(mx))]; if (!r) return;
+        const px = x(r.t);
+        rule.attr('display', null).attr('x1', px).attr('x2', px);
+        dot.attr('display', null).attr('cx', px).attr('cy', y(r.v));
+        const cr = card.getBoundingClientRect();
+        J.showTip(card, tip, `${Number(r.date.slice(8, 10))} ${MON[Number(r.date.slice(5, 7)) - 1]} ${r.date.slice(0, 4)}`,
+          [['#BD1B21', 'Renminbi per US$', vf(r.v)]], ev.clientX - cr.left, ev.clientY - cr.top);
+      })
+      .on('mouseleave', () => { rule.attr('display', 'none'); dot.attr('display', 'none'); tip.style.display = 'none'; });
+  };
+
   const tabs = document.querySelectorAll('.jg-tabs [data-tab]');
   const show = (id) => {
     if (!document.getElementById(id)) return;
@@ -415,10 +465,11 @@ dash.calc('impacts_latest', {
     document.querySelectorAll('.jg-page').forEach((pg) => { pg.hidden = pg.id !== id; });
     dash.setLink(id);
     if (id === 'inflation') J.redrawCpi();
+    if (id === 'financial') J.redrawFx();
   };
   J.show = show;
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
-  if (location.hash.slice(1) === 'methodology') show('methodology');
+  if (['financial', 'methodology'].includes(location.hash.slice(1))) show(location.hash.slice(1));
 
-  dash.onData(() => { tiles(); takeaway(); impactsTable(); divHeat(); J.redrawCpi(); });
+  dash.onData(() => { tiles(); takeaway(); impactsTable(); divHeat(); J.redrawCpi(); J.redrawFx(); });
 })();

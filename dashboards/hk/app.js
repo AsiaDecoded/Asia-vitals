@@ -8,7 +8,7 @@
     if (c.id && c.querySelector('.jg-chart') && c.dataset.periods !== 'none') J.period[c.id] = c.dataset.def != null ? Number(c.dataset.def) : 120;
   });
   J.addPeriods();
-  J.addSliders(() => J.redrawCpi());
+  J.addSliders(() => { J.redrawCpi(); if (J.redrawFx) J.redrawFx(); });
   dash.onData(() => J.theme());
 
   const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -506,6 +506,83 @@
       C('all', 'cpi', 'CPI', 'var(--ad-c2)', { thin: true })]);
   };
 
+  // Financial tab: Hong Kong dollar per US dollar, daily (BIS, from national sources), as published. Nothing calculated.
+  {
+    const FX = { ds: 'hk_fx_daily', card: 'fx-daily', name: 'Hong Kong dollars per US$', zero: false, dec: d3.format(',.4f') };
+    const fxVisible = () => !document.getElementById('financial').hidden;
+    const fxDt = (s) => new Date(Date.UTC(Number(s.slice(0, 4)), Number(s.slice(5, 7)) - 1, Number(s.slice(8, 10)) || 1));
+    const fxDay = (d) => `${Number(d.slice(8, 10))} ${MON[Number(d.slice(5, 7)) - 1]} ${d.slice(0, 4)}`;
+    let fxSrc = null, fxAll = [];
+    J.redrawFx = () => {
+      if (!fxVisible()) return;
+      const box = document.getElementById(FX.card + '-chart');
+      const D = dash.data(FX.ds);
+      if (failed(D.status)) { box.classList.remove('dash-skeleton'); J.fail(box); return; }
+      if (D.status !== 'ok') { if (!box.firstChild) box.classList.add('dash-skeleton'); return; }
+      box.classList.remove('dash-skeleton');
+      if (fxSrc !== D.data) {
+        fxSrc = D.data;
+        fxAll = D.data.map((r) => ({ date: r.date, v: Number(r.rate) })).filter((r) => r.date && r.v > 0)
+          .sort((a, b) => (a.date < b.date ? -1 : 1));
+        fxAll.forEach((r) => { r.t = fxDt(r.date); });
+      }
+      const rows = J.slice(fxAll, FX.card);
+      if (!rows.length) { box.replaceChildren(); return; }
+      const H = 300, mr = 8, W = box.clientWidth;
+      box.replaceChildren();
+      const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+      let lo = d3.min(rows, (r) => r.v), hi = d3.max(rows, (r) => r.v);
+      if (FX.zero) lo = 0;
+      if (lo === hi) { lo -= lo * 0.01 || 1; hi += hi * 0.01 || 1; }
+      const y = d3.scaleLinear([lo, hi], [H - 24, 10]).nice();
+      const ticks = y.ticks(5);
+      const yf = d3.format(`,.${d3.precisionFixed(ticks.length > 1 ? ticks[1] - ticks[0] : 1)}f`);
+      const ml = J.textWidth(svg, ticks.map(yf)) + 10;
+      svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', ml).attr('x2', W - mr).attr('y1', y).attr('y2', y)
+        .attr('stroke', (v) => (v === 0 ? 'var(--cds-chart-reference)' : 'var(--ad-grid)'));
+      J.axisStyle(svg.append('g').attr('transform', `translate(${ml - 4},0)`).call(d3.axisLeft(y).tickValues(ticks).tickSize(0).tickFormat(yf)));
+      const t0 = rows[0].t, t1 = rows[rows.length - 1].t;
+      const x = d3.scaleUtc([t0, t1 > t0 ? t1 : new Date(+t0 + 864e5)], [ml, W - mr]);
+      const yrs = (t1 - t0) / (365.25 * 864e5), room = Math.max(1, Math.floor((W - ml - mr) / 56));
+      const xAxis = d3.axisBottom(x).tickSize(0);
+      if (yrs >= 2) {
+        const step = [1, 2, 5, 10, 20, 25, 50].find((s) => yrs / s <= room) || 50;
+        xAxis.ticks(d3.utcYear.every(step)).tickFormat(d3.utcFormat('%Y'));
+      } else {
+        const months = Math.max(1, yrs * 12);
+        const mstep = [1, 2, 3, 6, 12].find((s) => months / s <= room) || 12;
+        xAxis.ticks(d3.utcMonth.every(mstep)).tickFormat(d3.utcFormat('%b %y'));
+      }
+      const gx = svg.append('g').attr('transform', `translate(0,${H - 20})`).call(xAxis);
+      J.axisStyle(gx);
+      gx.selectAll('g.tick text').each(function () {
+        const m = /translate\(([-\d.]+)/.exec(this.parentNode.getAttribute('transform') || ''); if (!m) return;
+        const px = Number(m[1]), w = this.getComputedTextLength();
+        if (px + w / 2 > W - 2) this.setAttribute('text-anchor', 'end'); else if (px - w / 2 < 2) this.setAttribute('text-anchor', 'start');
+      });
+      svg.append('path').attr('d', d3.line().x((r) => x(r.t)).y((r) => y(r.v))(rows))
+        .attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 1.4).attr('stroke-linejoin', 'round');
+      const card = document.getElementById(FX.card), tip = J.tip(card);
+      const rule = svg.append('line').attr('y1', 8).attr('y2', H - 22).attr('stroke', 'var(--cds-chart-reference)').attr('display', 'none');
+      const dot = svg.append('circle').attr('r', 3.5).attr('fill', '#BD1B21').attr('display', 'none');
+      const bis = d3.bisector((r) => r.t).center;
+      svg.append('rect').attr('x', ml).attr('width', Math.max(0, W - mr - ml)).attr('height', H).attr('fill', 'transparent')
+        .on('mousemove', (ev) => {
+          const [mx] = d3.pointer(ev);
+          const r = rows[bis(rows, x.invert(mx))]; if (!r) return;
+          const px = x(r.t);
+          rule.attr('display', null).attr('x1', px).attr('x2', px);
+          dot.attr('display', null).attr('cx', px).attr('cy', y(r.v));
+          const cr = card.getBoundingClientRect();
+          J.showTip(card, tip, fxDay(r.date), [['#BD1B21', FX.name, FX.dec(r.v)]], ev.clientX - cr.left, ev.clientY - cr.top);
+        })
+        .on('mouseleave', () => { rule.attr('display', 'none'); dot.attr('display', 'none'); tip.style.display = 'none'; });
+    };
+    let fxRaf = 0;
+    window.addEventListener('resize', () => { cancelAnimationFrame(fxRaf); fxRaf = requestAnimationFrame(() => J.redrawFx()); });
+    dash.onData(() => J.redrawFx());
+  }
+
   const tabs = document.querySelectorAll('.jg-tabs [data-tab]');
   const show = (id) => {
     if (!document.getElementById(id)) return;
@@ -513,10 +590,11 @@
     document.querySelectorAll('.jg-page').forEach((pg) => { pg.hidden = pg.id !== id; });
     dash.setLink(id);
     if (id === 'inflation') J.redrawCpi();
+    if (id === 'financial') J.redrawFx();
   };
   J.show = show;
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
-  if (location.hash.slice(1) === 'methodology') show('methodology');
+  if (['financial', 'methodology'].includes(location.hash.slice(1))) show(location.hash.slice(1));
 
   // Draw once every dataset has arrived (or failed), not once per arrival. Reading each one starts its load.
   const DATASETS = ['hk_cpi_latest', 'hk_ppi_latest', 'hk_cpi', 'hk_cpi_weights', 'hk_cpi_groups', 'hk_cpi_contrib', 'hk_cpi_sa', 'hk_ppi'];

@@ -138,6 +138,7 @@
 
   <nav class="jg-tabs" role="tablist" aria-label="Sections">
     <button role="tab" data-tab="inflation" aria-selected="true">Inflation</button>
+    <button role="tab" data-tab="financial" aria-selected="false">Financial</button>
     <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
   </nav>
 
@@ -310,6 +311,22 @@
     </section>
   </section>
 
+  <section class="jg-page" id="financial" role="tabpanel" hidden>
+    <section class="jg-card" id="fx-daily" data-periods="none">
+      <h2>Hong Kong dollar per US dollar, daily</h2>
+      <div class="ad-top"><span class="ad-units">Hong Kong dollars per US$</span><div class="jg-legend" id="fx-daily-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="fx-daily-chart" data-source="hk_fx_daily"></div>
+      <div class="ad-foot"><span>Source: BIS (from national sources)</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <section class="jg-card ad-notes" id="fx-notes">
+      <h2>Chart notes</h2>
+      <ol>
+        <li><b>Chart 1, Hong Kong dollar per US dollar, daily:</b> Hong Kong dollar per US dollar, daily, from the BIS bilateral exchange rate series (WS_XRU), compiled from national sources, as published; full history from 1981. A higher number means a weaker Hong Kong dollar.</li>
+      </ol>
+    </section>
+  </section>
+
   <section class="jg-page" id="methodology" role="tabpanel" hidden>
     <article class="jg-card ad-method" id="method-cpi">
       <h2>Consumer and producer prices</h2>
@@ -351,6 +368,11 @@
       <p>C&amp;SD releases the CPI at 16:30 Hong Kong time (16:30 Singapore), around the 20th to 23rd of the following month, on the dates in its published schedule; the data tables and the Monthly Report are updated at the same time. Quarterly PPI is released about ten weeks after the quarter; trade unit value indices about six weeks after the month. The page is refreshed the day after each release.</p>
       <h3>Data</h3>
       <p>C&amp;SD web tables 510-60001, 510-60001A, 510-60002, 510-60002A, 510-60003, 510-60004, 520-62001, 520-63001 and 410-51001 to 410-51003 (web-table API, no key); Table E501 (CSV); the web Monthly Report on the CPI (data files behind its tables) and its Annex 1. Built by the AsiaDecoded/asia-vitals pipeline (data/hk/cpi, data/hk/ppi), which fetches only on C&amp;SD release days.</p>
+    </article>
+    <article class="jg-card ad-method" id="method-fx">
+      <h2>Exchange rate</h2>
+      <p>Hong Kong dollar per US dollar, daily, from the BIS bilateral exchange rate series (WS_XRU), compiled from national sources, as published; full history from 1981. A higher number means a weaker Hong Kong dollar. The Financial tab shows the full daily series; the slider below the chart selects a period.</p>
+      <p>Data: BIS data portal, dataset WS_XRU (bilateral exchange rates, daily). Built by the AsiaDecoded/asia-vitals pipeline (data/hk/fx/hk_fx_daily.csv).</p>
     </article>
   </section>
 </div>

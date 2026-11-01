@@ -428,3 +428,67 @@ dash.calc('ppi_latest', {
   dash.onData(() => { tiles(); takeaway(); divTable(); groupsTable(); J.redrawCpi(); });
   J.redrawCpi();
 })();
+
+// Financial tab: Baht per US$ (BIS bilateral exchange rates WS_XRU, from national sources), daily, full history, as
+// published. Nothing calculated.
+(() => {
+  const J = window.JG;
+  const bad = (D) => D.status === 'error' || D.status === 'connect' || D.status === 'declined';
+  const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const dt = (s) => new Date(Date.UTC(Number(s.slice(0, 4)), Number(s.slice(5, 7)) - 1, Number(s.slice(8, 10)) || 1));
+  const dLabel = (s) => `${Number(s.slice(8, 10))} ${MON[Number(s.slice(5, 7)) - 1]} ${s.slice(0, 4)}`;
+  const vis = () => { const p = document.getElementById('financial'); return p && !p.hidden; };
+
+  function dailyChart() {
+    const box = document.getElementById('fx-daily-chart');
+    const D = dash.data('th_fx_daily');
+    if (bad(D)) { J.fail(box); return; }
+    if (D.status !== 'ok' || !D.data.length) { box.replaceChildren(); return; }
+    let rows = D.data.map((r) => ({ date: String(r.date), v: Number(r.rate) })).filter((r) => r.v > 0 && r.date)
+      .sort((a, b) => (a.date < b.date ? -1 : 1));
+    rows = J.slice(rows, 'fx-daily');
+    if (!rows.length) { box.replaceChildren(); return; }
+    rows.forEach((r) => { r.t = dt(r.date); });
+    const H = 300, W = box.clientWidth;
+    box.replaceChildren();
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const y = d3.scaleLinear([0, d3.max(rows, (r) => r.v)], [H - 24, 10]).nice();
+    const ticks = y.ticks(5), tf = y.tickFormat(5);
+    const ml = J.textWidth(svg, ticks.map(tf)) + 10;
+    svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', ml).attr('x2', W - 8).attr('y1', y).attr('y2', y)
+      .attr('stroke', (v) => (v === 0 ? 'var(--ad-axis)' : 'var(--ad-grid)'));
+    J.axisStyle(svg.append('g').attr('transform', `translate(${ml - 4},0)`).call(d3.axisLeft(y).tickValues(ticks).tickSize(0).tickFormat(tf)));
+    const x = d3.scaleUtc([rows[0].t, rows[rows.length - 1].t], [ml, W - 8]);
+    const span = (rows[rows.length - 1].t - rows[0].t) / (365.25 * 864e5);
+    const room = Math.max(1, Math.floor((W - ml - 8) / 56));
+    if (span < 2) {
+      J.axisStyle(svg.append('g').attr('transform', `translate(0,${H - 20})`)
+        .call(d3.axisBottom(x).ticks(Math.max(2, room)).tickSize(0).tickFormat(d3.utcFormat('%b %y'))));
+    } else {
+      const step = [1, 2, 5, 10, 20].find((s) => span / s <= room) || 20;
+      J.axisStyle(svg.append('g').attr('transform', `translate(0,${H - 20})`)
+        .call(d3.axisBottom(x).ticks(d3.utcYear.every(step)).tickSize(0).tickFormat(d3.utcFormat('%Y'))));
+    }
+    svg.append('path').attr('d', d3.line().x((r) => x(r.t)).y((r) => y(r.v))(rows))
+      .attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 1.4).attr('stroke-linejoin', 'round');
+    const card = document.getElementById('fx-daily'), tip = J.tip(card);
+    const rule = svg.append('line').attr('y1', 10).attr('y2', H - 24).attr('stroke', 'var(--cds-chart-reference)').attr('display', 'none');
+    const dot = svg.append('circle').attr('r', 3.5).attr('fill', '#BD1B21').attr('display', 'none');
+    const bis = d3.bisector((r) => r.t).center;
+    const vf = d3.format(',.2f');
+    svg.append('rect').attr('x', ml).attr('width', Math.max(0, W - 8 - ml)).attr('height', H).attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const r = rows[bis(rows, x.invert(d3.pointer(ev)[0]))]; if (!r) return;
+        const px = x(r.t);
+        rule.attr('display', null).attr('x1', px).attr('x2', px);
+        dot.attr('display', null).attr('cx', px).attr('cy', y(r.v));
+        const cr = card.getBoundingClientRect();
+        J.showTip(card, tip, dLabel(r.date), [['#BD1B21', 'Baht per US$', vf(r.v)]], ev.clientX - cr.left, ev.clientY - cr.top);
+      })
+      .on('mouseleave', () => { rule.attr('display', 'none'); dot.attr('display', 'none'); tip.style.display = 'none'; });
+  }
+
+  J.redrawFx = () => { if (vis()) dailyChart(); };
+  dash.onData(() => J.redrawFx());
+  J.redrawFx();
+})();

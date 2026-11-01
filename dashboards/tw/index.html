@@ -135,6 +135,7 @@
 
   <nav class="jg-tabs" role="tablist" aria-label="Sections">
     <button role="tab" data-tab="inflation" aria-selected="true">Inflation</button>
+    <button role="tab" data-tab="financial" aria-selected="false">Financial</button>
     <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
   </nav>
 
@@ -302,6 +303,22 @@
     </section>
   </section>
 
+  <section class="jg-page" id="financial" role="tabpanel" hidden>
+    <section class="jg-card" id="fx-daily" data-periods="none">
+      <h2>Taiwan dollar per US dollar, daily</h2>
+      <div class="ad-top"><span class="ad-units">New Taiwan dollars per US$</span><div class="jg-legend" id="fx-daily-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="fx-daily-chart" data-source="tw_fx_daily"></div>
+      <div class="ad-foot"><span>Source: BIS (from national sources)</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <section class="jg-card ad-notes" id="fx-notes">
+      <h2>Chart notes</h2>
+      <ol>
+        <li><b>Chart 1, Taiwan dollar per US dollar:</b> New Taiwan dollars per US dollar, daily, from the BIS bilateral exchange rate series (WS_XRU), compiled from national sources, as published; full history from 1983. A higher number means a weaker New Taiwan dollar.</li>
+      </ol>
+    </section>
+  </section>
+
   <section class="jg-page" id="methodology" role="tabpanel" hidden>
     <article class="jg-card ad-method" id="method-cpi">
       <h2>Consumer and producer prices</h2>
@@ -323,6 +340,10 @@
       <p>DGBAS releases the CPI, PPI and import and export prices together at 16:00 Taipei time (16:00 Singapore) on the fifth working day after the month. The latest three months may be revised. Contributions and weights on this page are as first published.</p>
       <h3>Data</h3>
       <p>DGBAS Macro Database (nstatdb.dgbas.gov.tw), price tables; DGBAS&rsquo;s linked CPI file for the all-items index before 1981; monthly releases on stat.gov.tw (tables 1 and 14) for weights and contributions. Built by the AsiaDecoded/asia-vitals pipeline (data/tw/cpi, data/tw/ppi), which fetches only on DGBAS release days.</p>
+    </article>
+    <article class="jg-card ad-method" id="method-fx">
+      <h2>Exchange rate</h2>
+      <p>The Financial tab shows New Taiwan dollars per US dollar, daily (trading days), from the BIS bilateral exchange rate series (WS_XRU), compiled from national sources, as published; full history from 1983. Nothing is calculated. A higher number means a weaker New Taiwan dollar.</p>
     </article>
   </section>
 </div>

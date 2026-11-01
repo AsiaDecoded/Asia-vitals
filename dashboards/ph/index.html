@@ -115,6 +115,7 @@
 
   <nav class="jg-tabs" role="tablist" aria-label="Sections">
     <button role="tab" data-tab="inflation" aria-selected="true">Inflation</button>
+    <button role="tab" data-tab="financial" aria-selected="false">Financial</button>
     <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
   </nav>
 
@@ -254,6 +255,15 @@
     <p class="jg-foot">Source: Philippine Statistics Authority (PSA), Consumer Price Index for all income households (2018 = 100), OpenSTAT database: <span data-source="cpi_release" data-field="label" data-row="0">—</span>. All figures are as published by the PSA except energy and CPI excluding food and energy, calculated by Asia Decoded from published indices and weights (see Methodology). Published figures include the PSA&rsquo;s backcast of the 2018-based series to 1957 and its seasonally adjusted CPI. Producer prices: PSA Producer Price Index for manufacturing (2018 = 100): <span data-source="ppi_release" data-field="label" data-row="0">—</span>.</p>
   </section>
 
+  <section class="jg-page" id="financial" role="tabpanel" hidden>
+      <section class="jg-card" id="fx-daily">
+        <h2>Philippines peso per US dollar, daily</h2>
+        <div class="ad-top"><span class="ad-units">Peso per US$</span><div class="jg-legend" id="fx-daily-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="fx-daily-chart" data-source="ph_fx_daily"></div>
+        <div class="ad-foot"><span>Source: BIS (from national sources)</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+  </section>
+
   <section class="jg-page" id="methodology" role="tabpanel" hidden>
     <article class="jg-card ad-method" id="method-data">
       <h2>Data</h2>
@@ -290,6 +300,11 @@
       <h3>Not on this page</h3>
       <p>Apart from energy and CPI excluding food and energy, the PSA publishes no goods and services split, no contributions to y/y in its database (only in the monthly press release) and no diffusion measure, so the page has none. Each could be calculated from the published indices and weights.</p>
       <div class="ad-foot"><span>Source: Philippine Statistics Authority</span><span class="ad-brand">Asia Decoded</span></div>
+    </article>
+    <article class="jg-card ad-method" id="method-fx">
+      <h2>Exchange rate</h2>
+      <p>The Financial tab shows peso per US dollar, daily, from the BIS bilateral exchange rate series (WS_XRU), compiled from national sources, as published, with nothing calculated. Full history from 1978. A higher number means a weaker peso.</p>
+      <div class="ad-foot"><span>Source: BIS (from national sources)</span><span class="ad-brand">Asia Decoded</span></div>
     </article>
   </section>
 </div>
@@ -334,7 +349,7 @@ window.JG = {
     document.querySelectorAll('.jg-card').forEach((card) => {
       const chart = card.querySelector(':scope > .jg-chart'); if (!chart || !card.id) return;
       const page = card.closest('.jg-page'); const p = page ? page.id : 'inflation';
-      const redraw = () => { if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); };
+      const redraw = () => { if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else if (p === 'financial') JG.redrawFx && JG.redrawFx(); };
       const wrap = document.createElement('div'); wrap.className = 'ad-slider';
       const track = document.createElement('div'); track.className = 'ad-slider-track';
       const sel = document.createElement('div'); sel.className = 'ad-slider-sel'; track.appendChild(sel);
@@ -464,10 +479,11 @@ window.JG = {
     document.querySelectorAll('.jg-page').forEach((p) => { p.hidden = p.id !== id; });
     dash.setLink(id);
     if (id === 'inflation' && J.redrawCpi) J.redrawCpi();
+    if (id === 'financial' && J.redrawFx) J.redrawFx();
   };
   J.show = show;
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
-  if (location.hash.slice(1) === 'methodology') show('methodology');
+  if (['methodology', 'financial'].includes(location.hash.slice(1))) show(location.hash.slice(1));
 })();
 </script>
 

@@ -455,3 +455,62 @@ dash.calc('ppi_latest', {
   dash.onData(() => { tiles(); takeaway(); divTable(); groupsTable(); J.redrawCpi(); });
   J.redrawCpi();
 })();
+
+// Financial tab: peso per US dollar, daily, BIS bilateral exchange rate series (WS_XRU), from national sources,
+// as published; full history. Nothing calculated.
+(() => {
+  const J = window.JG;
+  const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const failed = (st) => st === 'error' || st === 'connect' || st === 'declined';
+  const dt = (s) => new Date(Date.UTC(Number(s.slice(0, 4)), Number(s.slice(5, 7)) - 1, Number(s.slice(8, 10)) || 1));
+  const dLabel = (s) => `${Number(s.slice(8, 10))} ${MON[Number(s.slice(5, 7)) - 1]} ${s.slice(0, 4)}`;
+  const visible = () => { const p = document.getElementById('financial'); return p && !p.hidden; };
+  const ID = 'fx-daily', RED = '#BD1B21', H = 300;
+  const vfmt = d3.format(',.2f');
+
+  function fxChart() {
+    const box = document.getElementById(ID + '-chart');
+    if (!box) return;
+    const D = dash.data('ph_fx_daily');
+    if (failed(D.status)) { J.fail(box); return; }
+    if (D.status !== 'ok' || !D.data.length) { box.replaceChildren(); return; }
+    const all = D.data.map((r) => ({ date: String(r.date).slice(0, 10), v: Number(r.rate) }))
+      .filter((r) => r.date && r.v > 0).sort((a, b) => (a.date < b.date ? -1 : 1));
+    if (!J.range[ID]) J.range[ID] = [0, 1]; // full history by default
+    const rows = J.slice(all, ID);
+    if (!rows.length) { box.replaceChildren(); return; }
+    rows.forEach((r) => { r.t = dt(r.date); });
+    const W = box.clientWidth;
+    box.replaceChildren();
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const y = d3.scaleLinear([0, d3.max(rows, (r) => r.v)], [H - 24, 10]).nice();
+    const ticks = y.ticks(5);
+    const fmt = d3.format(`,.${d3.precisionFixed(ticks.length > 1 ? ticks[1] - ticks[0] : 1)}f`);
+    const ml = J.textWidth(svg, ticks.map(fmt)) + 10;
+    const x = d3.scaleUtc([rows[0].t, rows[rows.length - 1].t], [ml, W - 8]);
+    svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', ml).attr('x2', W - 8).attr('y1', y).attr('y2', y)
+      .attr('stroke', (v) => (v === 0 ? 'var(--ad-axis)' : 'var(--ad-grid)'));
+    J.axisStyle(svg.append('g').attr('transform', `translate(${ml - 4},0)`).call(d3.axisLeft(y).tickValues(ticks).tickSize(0).tickFormat(fmt)));
+    J.axisStyle(svg.append('g').attr('transform', `translate(0,${H - 20})`).call(d3.axisBottom(x).ticks(Math.max(2, Math.round((W - ml) / 70))).tickSize(0).tickFormat(d3.utcFormat('%Y'))));
+    svg.append('path').attr('d', d3.line().x((r) => x(r.t)).y((r) => y(r.v))(rows))
+      .attr('fill', 'none').attr('stroke', RED).attr('stroke-width', 1.4).attr('stroke-linejoin', 'round');
+    const card = document.getElementById(ID), tip = J.tip(card);
+    const rule = svg.append('line').attr('y1', 8).attr('y2', H - 22).attr('stroke', 'var(--cds-chart-reference)').attr('display', 'none');
+    const dot = svg.append('circle').attr('r', 3.5).attr('fill', RED).attr('display', 'none');
+    const bis = d3.bisector((r) => r.t).center;
+    svg.append('rect').attr('x', ml).attr('width', W - ml).attr('height', H).attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const r = rows[bis(rows, x.invert(d3.pointer(ev)[0]))]; if (!r) return;
+        const px = x(r.t);
+        rule.attr('display', null).attr('x1', px).attr('x2', px);
+        dot.attr('display', null).attr('cx', px).attr('cy', y(r.v));
+        const cr = card.getBoundingClientRect();
+        J.showTip(card, tip, dLabel(r.date), [[RED, 'Peso per US$', vfmt(r.v)]], ev.clientX - cr.left, ev.clientY - cr.top);
+      })
+      .on('mouseleave', () => { rule.attr('display', 'none'); dot.attr('display', 'none'); tip.style.display = 'none'; });
+  }
+
+  J.redrawFx = () => { if (visible()) fxChart(); };
+  dash.onData(() => J.redrawFx());
+  J.redrawFx();
+})();

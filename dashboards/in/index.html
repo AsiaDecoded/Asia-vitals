@@ -128,6 +128,7 @@
 
   <nav class="jg-tabs" role="tablist" aria-label="Sections">
     <button role="tab" data-tab="inflation" aria-selected="true">Inflation</button>
+    <button role="tab" data-tab="financial" aria-selected="false">Financial</button>
     <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
   </nav>
 
@@ -280,6 +281,22 @@
 
   </section>
 
+  <section class="jg-page" id="financial" role="tabpanel" hidden>
+    <section class="jg-card" id="fx-daily" data-periods="none">
+      <h2>India rupee per US dollar, daily</h2>
+      <div class="ad-top"><span class="ad-units">Rupees per US$</span><div class="jg-legend" id="fx-daily-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="fx-daily-chart" data-source="in_fx_daily"></div>
+      <div class="ad-foot"><span>Source: BIS (from national sources)</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <section class="jg-card ad-notes" id="fx-notes">
+      <h2>Chart notes</h2>
+      <ol>
+        <li><b>Chart 1, India rupee per US dollar, daily:</b> Rupee per US dollar, daily, from the BIS bilateral exchange rate series (WS_XRU), compiled from national sources, as published; full history from 1973. A higher number means a weaker rupee.</li>
+      </ol>
+    </section>
+  </section>
+
   <section class="jg-page" id="methodology" role="tabpanel" hidden>
     <article class="jg-card ad-method" id="method-cpi">
       <h2>Consumer price index</h2>
@@ -304,6 +321,11 @@
       <p>MoSPI publishes the CPI on the 12th of the following month (the next working day if the 12th is a holiday). The latest month is provisional and is final in the next release.</p>
       <h3>Data</h3>
       <p>All figures are as published by MoSPI, none is calculated. MoSPI API (api.mospi.gov.in): 2024-base series and back series (getCPIData), and 2012-base rates for 2025 (getCPIIndex). Long-term series: IMF data portal (api.imf.org), dataset IMF.STA:CPI. Built by the AsiaDecoded/asia-vitals pipeline (data/in/cpi/in_cpi.csv), which checks for new data twice a day.</p>
+    </article>
+    <article class="jg-card ad-method" id="method-fx">
+      <h2>Exchange rate</h2>
+      <p>Rupee per US dollar, daily, from the BIS bilateral exchange rate series (WS_XRU), compiled from national sources, as published; full history from 1973. A higher number means a weaker rupee. The Financial tab shows the full daily series; the slider below the chart selects a period.</p>
+      <p>Data: BIS data portal, dataset WS_XRU (bilateral exchange rates, daily). Built by the AsiaDecoded/asia-vitals pipeline (data/in/fx/in_fx_daily.csv).</p>
     </article>
   </section>
 </div>

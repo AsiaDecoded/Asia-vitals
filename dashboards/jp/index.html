@@ -183,6 +183,7 @@
     <button role="tab" data-tab="gdp" aria-selected="true">GDP</button>
     <button role="tab" data-tab="inflation" aria-selected="false">Inflation</button>
     <button role="tab" data-tab="trade" aria-selected="false">Trade</button>
+    <button role="tab" data-tab="financial" aria-selected="false">Financial</button>
     <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
   </nav>
 
@@ -515,6 +516,22 @@
     </section>
   </section>
 
+  <section class="jg-page" id="financial" role="tabpanel" hidden>
+    <section class="jg-card" id="fx-daily">
+      <h2>Japan yen per US dollar, daily</h2>
+      <div class="ad-top"><span class="ad-units">Yen per US$</span><div class="jg-legend" id="fx-daily-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="fx-daily-chart" data-source="jp_fx_daily"></div>
+      <div class="ad-foot"><span>Source: BIS (from national sources)</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <section class="jg-card ad-notes" id="fx-chart-notes">
+      <h2>Chart notes</h2>
+      <ol>
+        <li><b>Yen per US dollar, daily:</b> from the BIS bilateral exchange rate series (WS_XRU), compiled from national sources, as published; full history from 1969. A higher number means a weaker yen.</li>
+      </ol>
+    </section>
+  </section>
+
   <section class="jg-page" id="methodology" role="tabpanel" hidden>
     <article class="jg-card ad-method" id="method-core3">
       <h2>Core 2 (less food and energy)</h2>
@@ -578,6 +595,10 @@
       <h3>Production</h3>
       <p>The asia-vitals data pipeline finds each month&rsquo;s Table 5 file through the e-Stat file catalogue, keeps an unchanged copy, reads every item&rsquo;s weight and y/y, and computes the shares and the index. Older files use a different layout without item codes; there, items are identified as the lowest rows of the classification. The pipeline checks the result each month (at least 400 items counted) before the dashboard is updated.</p>
       <div class="ad-foot"><span>Source: Statistics Bureau of Japan</span><span class="ad-brand">Asia Decoded</span></div>
+    <article class="jg-card ad-method" id="method-fx">
+      <h2>Exchange rate</h2>
+      <p>Yen per US dollar, daily, from the BIS bilateral exchange rate series (WS_XRU), compiled from national sources, as published; nothing is calculated. Full history from 1969, trading days only. A higher number means a weaker yen.</p>
+      <div class="ad-foot"><span>Source: BIS (from national sources)</span><span class="ad-brand">Asia Decoded</span></div>
     </article>
   </section>
 </div>
@@ -684,7 +705,7 @@ window.JG = {
     document.querySelectorAll('.jg-card').forEach((card) => {
       const chart = card.querySelector(':scope > .jg-chart'); if (!chart || !card.id) return;
       const page = card.closest('.jg-page'); const p = page ? page.id : 'gdp';
-      const redraw = () => { if (p === 'gdp') JG.redraw && JG.redraw(); else if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else JG.redrawTrade && JG.redrawTrade(); };
+      const redraw = () => { if (p === 'gdp') JG.redraw && JG.redraw(); else if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else if (p === 'financial') JG.redrawFx && JG.redrawFx(); else JG.redrawTrade && JG.redrawTrade(); };
       const wrap = document.createElement('div'); wrap.className = 'ad-slider';
       const track = document.createElement('div'); track.className = 'ad-slider-track';
       const sel = document.createElement('div'); sel.className = 'ad-slider-sel'; track.appendChild(sel);
@@ -1103,6 +1124,7 @@ window.JG = {
     if (id === 'gdp') J.redraw();
     if (id === 'inflation' && J.redrawCpi) J.redrawCpi();
     if (id === 'trade' && J.redrawTrade) J.redrawTrade();
+    if (id === 'financial' && J.redrawFx) J.redrawFx();
   };
   J.show = show;
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
@@ -1116,6 +1138,76 @@ window.JG = {
   dash.onData(() => {
     headline(); takeaway(); table(); J.redraw();
   });
+})();
+</script>
+<script>
+// Financial tab: yen per US dollar, daily (BIS bilateral exchange rates, WS_XRU, from national sources), as published.
+(() => {
+  const J = window.JG;
+  const bad = (D) => D.status === 'error' || D.status === 'connect' || D.status === 'declined';
+  const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const fmt = d3.format(',.0f');
+  const dt = (s) => new Date(Date.UTC(Number(s.slice(0, 4)), Number(s.slice(5, 7)) - 1, Number(s.slice(8, 10)) || 1));
+
+  function frame(box, lo, hi, H, d0, d1) {
+    const W = box.clientWidth;
+    box.replaceChildren();
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const y = d3.scaleLinear([lo, hi], [H - 24, 10]).nice();
+    const ticks = y.ticks(5);
+    const ml = J.textWidth(svg, ticks.map(fmt)) + 10;
+    svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', ml).attr('x2', W - 8).attr('y1', y).attr('y2', y)
+      .attr('stroke', 'var(--ad-grid)');
+    J.axisStyle(svg.append('g').attr('transform', `translate(${ml - 4},0)`).call(d3.axisLeft(y).tickValues(ticks).tickSize(0).tickFormat(fmt)));
+    const x = d3.scaleUtc([dt(d0), dt(d1)], [ml, W - 8]);
+    const span = (dt(d1) - dt(d0)) / (365.25 * 864e5);
+    const step = span > 30 ? 10 : span > 12 ? 5 : span > 5 ? 2 : 1;
+    J.axisStyle(svg.append('g').attr('transform', `translate(0,${H - 20})`)
+      .call(d3.axisBottom(x).ticks(d3.utcYear.every(step)).tickSize(0).tickFormat(d3.utcFormat('%Y'))));
+    return { svg, x, y, W, ml };
+  }
+
+  function hover(f, rows, H, cardId, title, lines) {
+    const card = document.getElementById(cardId), tip = J.tip(card);
+    const rule = f.svg.append('line').attr('y1', 10).attr('y2', H - 24).attr('stroke', 'var(--color-fg)').attr('opacity', 0.25).attr('display', 'none');
+    const bis = d3.bisector((r) => r.t).center;
+    f.svg.append('rect').attr('x', f.ml).attr('width', f.W - f.ml).attr('height', H).attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const [mx] = d3.pointer(ev);
+        const r = rows[bis(rows, f.x.invert(mx))]; if (!r) return;
+        rule.attr('display', null).attr('x1', f.x(r.t)).attr('x2', f.x(r.t));
+        const cr = card.getBoundingClientRect();
+        J.showTip(card, tip, title(r), lines(r), ev.clientX - cr.left, ev.clientY - cr.top);
+      })
+      .on('mouseleave', () => { rule.attr('display', 'none'); tip.style.display = 'none'; });
+  }
+
+  function dailyChart() {
+    const box = document.getElementById('fx-daily-chart');
+    const D = dash.data('jp_fx_daily');
+    if (bad(D)) { J.fail(box); return; }
+    if (D.status !== 'ok' || !D.data.length) { box.replaceChildren(); return; }
+    let rows = D.data.map((r) => ({ date: r.date, v: Number(r.rate) })).filter((r) => r.v > 0)
+      .sort((a, b) => (a.date < b.date ? -1 : 1));
+    if (!J.range['fx-daily']) J.range['fx-daily'] = [0, 1];  // full history until the reader moves the slider
+    rows = J.slice(rows, 'fx-daily');
+    if (!rows.length) { box.replaceChildren(); return; }
+    rows.forEach((r) => { r.t = dt(r.date); });
+    const H = 300;
+    const f = frame(box, 0, d3.max(rows, (r) => r.v), H, rows[0].date, rows[rows.length - 1].date);
+    f.svg.append('path').attr('d', d3.line().x((r) => f.x(r.t)).y((r) => f.y(r.v))(rows))
+      .attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 1.4);
+    hover(f, rows, H, 'fx-daily', (r) => `${Number(r.date.slice(8, 10))} ${MON[Number(r.date.slice(5, 7)) - 1]} ${r.date.slice(0, 4)}`,
+      (r) => [['#BD1B21', 'Yen per US$', d3.format(',.2f')(r.v)]]);
+  }
+
+  J.redrawFx = () => {
+    const pg = document.getElementById('financial');
+    if (!pg || pg.hidden) return;
+    dailyChart();
+  };
+  dash.onData(() => J.redrawFx());
+  if (location.hash.slice(1) === 'financial') J.show('financial');
 })();
 </script>
 <script src="cpi.js"></script>
