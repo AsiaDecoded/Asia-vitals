@@ -621,27 +621,20 @@
         <div class="jg-chart" id="x-daily-chart" data-source="id_fx_daily"></div>
         <div class="ad-foot"><span>Source: BIS (from national sources)</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
-      <section class="jg-card" id="x-monthly">
-        <h2>Indonesia rupiah per US dollar, monthly</h2>
-        <div class="ad-top"><span class="ad-units">Rupiah per US$, monthly average</span><div class="jg-legend" id="x-monthly-legend"></div><span class="ad-units r"></span></div>
-        <div class="jg-chart" id="x-monthly-chart" data-source="id_fx_monthly"></div>
-        <div class="ad-foot"><span>Source: BIS (from national sources)</span><span class="ad-brand">Asia Decoded</span></div>
-      </section>
-    </div>
-
-    <section class="jg-card" id="x-epi">
-      <h2>Indonesia rupiah per US dollar: AFC and the August 2025 protests</h2>
-      <div class="ad-top"><span class="ad-units">Index, start = 100 (higher = weaker rupiah)</span><div class="jg-legend" id="x-epi-legend"></div><span class="ad-units r"></span></div>
-      <div class="jg-chart" id="x-epi-chart" data-source="id_fx_daily"></div>
-      <div class="ad-foot"><span>Source: BIS (from national sources); index calculated</span><span class="ad-brand">Asia Decoded</span></div>
-    </section>
-
-    <div class="jg-grid">
       <section class="jg-card" id="x-jcid">
         <h2>Indonesia stock market: Jakarta Composite Index, daily</h2>
         <div class="ad-top"><span class="ad-units">Index points, daily close</span><div class="jg-legend" id="x-jcid-legend"></div><span class="ad-units r"></span></div>
         <div class="jg-chart" id="x-jcid-chart" data-source="id_jci_daily"></div>
         <div class="ad-foot"><span>Source: Yahoo Finance (^JKSE)</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="x-monthly">
+        <h2>Indonesia rupiah per US dollar, monthly</h2>
+        <div class="ad-top"><span class="ad-units">Rupiah per US$, monthly average</span><div class="jg-legend" id="x-monthly-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="x-monthly-chart" data-source="id_fx_monthly"></div>
+        <div class="ad-foot"><span>Source: BIS (from national sources)</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
       <section class="jg-card" id="x-jci">
         <h2>Indonesia stock market: Jakarta Composite Index, monthly</h2>
@@ -651,22 +644,30 @@
       </section>
     </div>
 
-    <section class="jg-card" id="x-jepi">
+    <div class="jg-grid">
+      <section class="jg-card" id="x-epi">
+        <h2>Indonesia rupiah per US dollar: AFC and the August 2025 protests</h2>
+        <div class="ad-top"><span class="ad-units">Index, start = 100 (higher = weaker rupiah)</span><div class="jg-legend" id="x-epi-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="x-epi-chart" data-source="id_fx_daily"></div>
+        <div class="ad-foot"><span>Source: BIS (from national sources); index calculated</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="x-jepi">
         <h2>Jakarta Composite Index: AFC and the August 2025 protests</h2>
         <div class="ad-top"><span class="ad-units">Index, start = 100</span><div class="jg-legend" id="x-jepi-legend"></div><span class="ad-units r"></span></div>
         <div class="jg-chart" id="x-jepi-chart" data-source="id_jci_daily"></div>
         <div class="ad-foot"><span>Source: Yahoo Finance (^JKSE); index calculated</span><span class="ad-brand">Asia Decoded</span></div>
-    </section>
+      </section>
+    </div>
 
     <section class="jg-card ad-notes" id="x-notes">
       <h2>Chart notes</h2>
       <ol>
         <li><b>Chart 1, rupiah per US dollar, daily:</b> the BIS&rsquo;s daily series of the rupiah&rsquo;s exchange rate against the US dollar, from national sources (Bank Indonesia), from January 1988, as published. A higher number means a weaker rupiah. Shaded: the Asian financial crisis, July 1997 to December 1998 (the rupiah went from about 2,400 per dollar in June 1997 to over 15,000 in June 1998).</li>
-        <li><b>Chart 2, rupiah per US dollar, monthly:</b> the BIS&rsquo;s monthly average from January 1967, as published; the hover label also gives the end-of-month rate. Earlier devaluations (1971, 1978, 1983, 1986) show as steps.</li>
-        <li><b>Chart 3, AFC and the August 2025 protests (calculated):</b> the daily rupiah per US dollar rate indexed to 100 on the first trading day of each episode, from 12 months before to three years after: the Asian financial crisis from 2 July 1997 (the day Thailand floated the baht; Rp 2,451), and the August 2025 protests from 25 August 2025, the first day of the protests against parliamentary allowances that spread nationwide after 28 August (Rp 16,244.8). The horizontal axis is months from the start (dashed line); the 2025 line ends at the latest data. A reading of 150 means the dollar costs 50% more rupiah than at the start.</li>
-        <li><b>Chart 4, Jakarta Composite Index, daily:</b> daily close from 6 April 1990, from Yahoo Finance (^JKSE), as downloaded. Not an official source: against Bank Indonesia&rsquo;s month-end figures (chart 5), 339 of 352 months agree within 0.5%, but 13 months between 1999 and 2009 differ by 0.5&ndash;4% (January 2002 by 15%), so the older daily history should be read with care. Runs past the latest SEKI month. Shaded: the Asian financial crisis.</li>
-        <li><b>Chart 5, Jakarta Composite Index (JCI, IHSG), monthly:</b> end-of-month closing level, from July 1995 to the latest month in Bank Indonesia&rsquo;s SEKI table III.3 (data from the Indonesia Stock Exchange), as published; months marked * are provisional. SEKI III.3 has no months between December 2003 and January 2006 except December 2004 and December 2005, so the line breaks there (those two months are dots). Shaded: the Asian financial crisis, July 1997 to December 1998.</li>
-        <li><b>Chart 6, JCI in the AFC and the August 2025 protests (calculated):</b> the daily JCI close from Yahoo Finance (chart 4) indexed to 100 on the first trading day of each episode, from 12 months before to three years after: the Asian financial crisis from 2 July 1997 (the day Thailand floated the baht; 730.16) and the August 2025 protests from 25 August 2025 (7,926.91). The horizontal axis is months from the start (dashed line); the 2025 line ends at the latest data. Below 100 means the index is lower than at the start. Not an official source; see note 4.</li>
+        <li><b>Chart 2, Jakarta Composite Index, daily:</b> daily close from 6 April 1990, from Yahoo Finance (^JKSE), as downloaded. Not an official source: against Bank Indonesia&rsquo;s month-end figures (chart 4), 339 of 352 months agree within 0.5%, but 13 months between 1999 and 2009 differ by 0.5&ndash;4% (January 2002 by 15%), so the older daily history should be read with care. Runs past the latest SEKI month. Shaded: the Asian financial crisis.</li>
+        <li><b>Chart 3, rupiah per US dollar, monthly:</b> the BIS&rsquo;s monthly average from January 1967, as published; the hover label also gives the end-of-month rate. Earlier devaluations (1971, 1978, 1983, 1986) show as steps.</li>
+        <li><b>Chart 4, Jakarta Composite Index (JCI, IHSG), monthly:</b> end-of-month closing level, from July 1995 to the latest month in Bank Indonesia&rsquo;s SEKI table III.3 (data from the Indonesia Stock Exchange), as published; months marked * are provisional. SEKI III.3 has no months between December 2003 and January 2006 except December 2004 and December 2005, so the line breaks there (those two months are dots). Shaded: the Asian financial crisis, July 1997 to December 1998.</li>
+        <li><b>Chart 5, AFC and the August 2025 protests (calculated):</b> the daily rupiah per US dollar rate indexed to 100 on the first trading day of each episode, from 12 months before to three years after: the Asian financial crisis from 2 July 1997 (the day Thailand floated the baht; Rp 2,451), and the August 2025 protests from 25 August 2025, the first day of the protests against parliamentary allowances that spread nationwide after 28 August (Rp 16,244.8). The horizontal axis is months from the start (dashed line); the 2025 line ends at the latest data. A reading of 150 means the dollar costs 50% more rupiah than at the start.</li>
+        <li><b>Chart 6, JCI in the AFC and the August 2025 protests (calculated):</b> the daily JCI close from Yahoo Finance (chart 2) indexed to 100 on the first trading day of each episode, from 12 months before to three years after: the Asian financial crisis from 2 July 1997 (the day Thailand floated the baht; 730.16) and the August 2025 protests from 25 August 2025 (7,926.91). The horizontal axis is months from the start (dashed line); the 2025 line ends at the latest data. Below 100 means the index is lower than at the start. Not an official source; see note 2.</li>
         <li><b>Tiles:</b> the latest daily rate, and its change against the same date a year earlier and against the last rate of the previous year (calculated).</li>
       </ol>
     </section>
