@@ -95,7 +95,7 @@
   // x = months since the start (calendar days / 30.44), from 12 months before to 36 after. Higher = weaker rupiah.
   const TK = [-12, -6, 0, 6, 12, 18, 24, 30, 36];
   const tlab = (m) => (m === 0 ? 't' : m < 0 ? `t${m}m` : `t+${m}m`);
-  const EPIS = [['1997-07-02', 'AFC (2 Jul 1997 = 100)', '#BD1B21'], ['2024-10-20', 'Prabowo presidency (20 Oct 2024 = 100)', '#0C84FF']];
+  const EPIS = [['1997-07-02', 'AFC (2 Jul 1997 = 100)', '#BD1B21'], ['2025-08-25', 'August 2025 protests (25 Aug 2025 = 100)', '#0C84FF']];
   function episodeChart() {
     const box = document.getElementById('x-epi-chart');
     const D = dash.data('id_fx_daily');
@@ -181,8 +181,8 @@
   }
 
   // JCI in the two episodes, indexed to 100 at the last month-end before each start (calculated): end-June 1997 (the
-  // baht floated 2 July) and end-September 2024 (Prabowo inaugurated 20 October). x = months from the base, -12 to 36.
-  const JEPIS = [['1997-06-01', 'AFC (end-Jun 1997 = 100)', '#BD1B21'], ['2024-09-01', 'Prabowo presidency (end-Sep 2024 = 100)', '#0C84FF']];
+  // baht floated 2 July) and end-July 2025 (protests began 25 August 2025). x = months from the base, -12 to 36.
+  const JEPIS = [['1997-06-01', 'AFC (end-Jun 1997 = 100)', '#BD1B21'], ['2025-07-01', 'August 2025 protests (end-Jul 2025 = 100)', '#0C84FF']];
   function jciEpiChart() {
     const box = document.getElementById('x-jepi-chart');
     const R = jciRows();
