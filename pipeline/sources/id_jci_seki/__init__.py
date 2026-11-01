@@ -4,7 +4,8 @@ SEKI table III.3 (Transaksi dan Indeks Harga Saham di Bursa Efek Indonesia), fro
 in the same month and is not used.
 
 The workbook has three sheets (1990-2003, 2004-2009 extended, current from 2010); each has a year row and a month row
-over the columns and an "IHSG" row. Later sheets win where they overlap. Months with 0 are blank.
+over the columns and an "IHSG" row. Later sheets win where they overlap. Months with 0 or "-" are blank. SEKI III.3 has no months between Dec 2003 and Jan 2006 other than Dec 2004 and Dec 2005;
+those months are left out (warning), not filled.
 """
 import csv
 import hashlib
@@ -31,17 +32,36 @@ def read_sheet(sh):
     mrow = next((r for r in range(min(15, sh.nrows)) if sum(str(sh.cell_value(r, c)).strip()[:3].lower() in MON for c in range(sh.ncols)) >= 6), None)
     if mrow is None or mrow == 0:
         return {}
-    out, y = {}, None
+    # The year label sits at the start of a year's run of months in older sheets and at its end in the current one, so
+    # split the month columns into runs (a new run when the month does not increase) and give each run the year label
+    # found inside it.
+    runs, cur, last = [], [], 0
     for c in range(2, sh.ncols):
-        yv = sh.cell_value(mrow - 1, c)
-        if isinstance(yv, float) and 1980 < yv < 2100:
-            y = int(yv)
-        elif isinstance(yv, str) and re.fullmatch(r"(19|20)\d\d", yv.strip()):
-            y = int(yv.strip())
         m = str(sh.cell_value(mrow, c)).strip().rstrip("*").lower()[:3]
-        v = sh.cell_value(row, c)
-        if y and m in MON and isinstance(v, float) and v > 0:
-            out[f"{y}-{MON[m]:02d}"] = v
+        if m not in MON:
+            continue
+        if MON[m] <= last:
+            runs.append(cur)
+            cur = []
+        cur.append((c, MON[m]))
+        last = MON[m]
+    runs.append(cur)
+    out = {}
+    for run in runs:
+        ys = set()
+        for c, _ in run:
+            yv = sh.cell_value(mrow - 1, c)
+            if isinstance(yv, float) and 1980 < yv < 2100:
+                ys.add(int(yv))
+            elif isinstance(yv, str) and re.fullmatch(r"(19|20)\d\d", yv.strip()):
+                ys.add(int(yv.strip()))
+        if len(ys) != 1:
+            continue
+        y = ys.pop()
+        for c, m in run:
+            v = sh.cell_value(row, c)
+            if isinstance(v, float) and v > 0:
+                out[f"{y}-{m:02d}"] = v
     return out
 
 
@@ -66,8 +86,10 @@ def update(force=False, **_):
             want.append(f"{y}-{m:02d}")
             y, m = (y + 1, 1) if m == 12 else (y, m + 1)
     gaps = [k for k in want if k not in s]
-    if gaps:
-        errors.append(f"months missing: {gaps[:6]}")
+    if [g for g in gaps if g >= "2006-01"]:
+        errors.append(f"months missing: {[g for g in gaps if g >= '2006-01'][:6]}")
+    if gaps:   # SEKI III.3 shows only Dec 2004 and Dec 2005 between Dec 2003 and Jan 2006
+        warnings.append(f"{len(gaps)} months not in SEKI III.3: {gaps[0]}..{gaps[-1]}")
     if not (200 < s.get("1998-09", 0) < 400):
         errors.append(f"Sep 1998 value {s.get('1998-09')} outside 200-400 (layout?)")
     jumps = [b2 for a, b2 in zip(ms, ms[1:]) if not 0.6 < s[b2] / s[a] < 1.6]
