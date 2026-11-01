@@ -107,6 +107,15 @@ def main():
         except Exception:  # noqa: BLE001 - the Asia table must not fail the country sources
             say("   ERROR building the Asia table:")
             say(traceback.format_exc().rstrip())
+        try:
+            from core.asia_fx import build as build_asia_fx
+            res = build_asia_fx()
+            say(f"== Asia FX: {'UPDATED' if res['updated'] else 'unchanged'}: {res['summary']}")
+            for w in res["warnings"]:
+                say(f"   WARNING: {w}")
+        except Exception:  # noqa: BLE001 - nor the Asia FX file
+            say("   ERROR building the Asia FX file:")
+            say(traceback.format_exc().rstrip())
     say(f"result: updated={updated or '-'} failed={failed or '-'}")
     (Path(__file__).resolve().parent.parent / "run_report.txt").write_text("\n".join(report) + "\n")
     gh_output(updated=str(bool(updated)).lower(), updated_sources=" ".join(updated),

@@ -1,0 +1,12 @@
+economy,name,currency,base_date,base_rate,latest_date,latest_rate,ytd_pct,file
+JP,Japan,JPY,2025-12-31,156.67234,2026-10-27,157.820628,-0.73,data/jp/fx/jp_fx_daily.csv
+KR,South Korea,KRW,2025-12-31,1444.204255,2026-10-27,1327.748879,8.77,data/kr/fx/kr_fx_daily.csv
+TW,Taiwan,TWD,2025-12-31,31.37,2026-10-27,32.48,-3.42,data/tw/fx/tw_fx_daily.csv
+HK,Hong Kong,HKD,2025-12-31,7.78417,2026-10-27,7.844484,-0.77,data/hk/fx/hk_fx_daily.csv
+CN,China,CNY,2025-12-31,7.001021,2026-10-27,6.667534,5.0,data/cn/fx/cn_fx_daily.csv
+IN,India,INR,2025-12-31,89.869362,2026-10-27,95.124215,-5.52,data/in/fx/in_fx_daily.csv
+ID,Indonesia,IDR,2025-12-31,16715.6,2026-10-27,18138.6009,-7.85,data/id/fx/id_fx_daily.csv
+TH,Thailand,THB,2025-12-31,31.674894,2026-10-27,33.770404,-6.21,data/th/fx/th_fx_daily.csv
+MY,Malaysia,MYR,2025-12-31,4.058043,2026-10-27,4.088969,-0.76,data/my/fx/my_fx_daily.csv
+SG,Singapore,SGD,2025-12-31,1.285532,2026-10-27,1.281166,0.34,data/sg/fx/sg_fx_daily.csv
+PH,Philippines,PHP,2025-12-31,58.949787,2026-10-27,63.993722,-7.88,data/ph/fx/ph_fx_daily.csv
