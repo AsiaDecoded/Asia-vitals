@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install Excel and PDF readers
-        run: pip install xlrd openpyxl && sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+        run: pip install xlrd openpyxl yfinance && sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
       - name: Run the Indonesia sources
         run: python -I pipeline/tools/id_run.py ${{ inputs.sources }} 2>&1 | tee /tmp/report.txt; exit ${PIPESTATUS[0]}
         env:
