@@ -1,0 +1,408 @@
+<meta name="dash-one-writer">
+<style>
+#dash-root .ax { font-family: var(--font-anthropic-sans); display: flex; flex-direction: column; gap: var(--cds-gap-lg); max-width: 1400px; margin-inline: auto; }
+.ax-head { display: flex; flex-direction: column; gap: var(--cds-gap-xs); }
+.ax-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; }
+.ax-sub { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); }
+.ax .ax-sub b { font-weight: var(--cds-font-weight-medium); color: var(--color-fg); font-variant-numeric: tabular-nums; }
+.ax-tabs { display: flex; gap: var(--cds-gap-xs); border-bottom: 1px solid var(--color-border-line); }
+.ax-tabs button { font: inherit; font-size: var(--cds-font-size-body); background: transparent; border: 0; border-bottom: 2px solid transparent; padding: var(--cds-pad-sm) var(--cds-pad-md); color: var(--color-fg-muted); cursor: pointer; min-height: 44px; }
+.ax-tabs button[aria-selected="true"] { color: var(--color-fg); border-bottom-color: #BD1B21; font-weight: var(--cds-font-weight-medium); }
+.ax-page { display: flex; flex-direction: column; gap: var(--cds-gap-lg); }
+.ax-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+.ax-card h3 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+.ax-cardhead { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--cds-gap-sm); }
+.ax-note { margin: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.45; }
+.ax-sec { display: flex; flex-direction: column; gap: var(--cds-gap-md); }
+.ax-sec > h2 { margin: 0; font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); }
+.ax-sec > .ax-lede { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); max-width: 62rem; line-height: 1.5; }
+.ax-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr)); gap: var(--cds-gap-md); }
+.ax-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); gap: var(--cds-gap-md); }
+.ax-tile { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-xs); }
+.ax-tile .lbl, .ax-tile .tsub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.ax-tile .val { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); color: var(--color-fg-muted); }
+.ax-seg { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); overflow: hidden; }
+.ax-seg button { font: inherit; font-size: var(--cds-font-size-caption); background: transparent; color: var(--color-fg-muted); border: 0; border-right: 1px solid var(--color-border-line); padding: var(--cds-pad-xs) var(--cds-pad-sm); min-height: 32px; cursor: pointer; }
+.ax-seg button:last-child { border-right: 0; }
+.ax-seg button[aria-pressed="true"] { background: var(--color-bg); color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.ax-seg button:disabled { cursor: default; opacity: .6; }
+.ax-controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-md); }
+.ax-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-right: var(--cds-gap-xs); }
+.ax-ph { border: 1px dashed var(--color-border-line); border-radius: var(--cds-radius); min-height: 260px; display: flex; align-items: center; justify-content: center; text-align: center; padding: var(--cds-pad-md); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); line-height: 1.5; }
+.ax-ph.small { min-height: 140px; }
+.ax-wrap { overflow-x: auto; }
+.ax-table { border-collapse: collapse; width: 100%; min-width: 1060px; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.ax-table th { text-align: center; font-weight: var(--cds-font-weight-medium); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: bottom; white-space: nowrap; }
+.ax-table th .u { display: block; font-weight: 400; color: var(--color-fg-muted); }
+.ax-table td { text-align: center; padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+.ax-table th:first-child, .ax-table td:first-child { text-align: right; color: var(--color-fg-muted); width: 2.5em; }
+.ax-table th:nth-child(2), .ax-table td:nth-child(2) { text-align: left; }
+.ax-table th:nth-child(3), .ax-table td:nth-child(3) { text-align: right; }
+.ax-meth th:first-child, .ax-meth td:first-child { text-align: left; color: inherit; width: auto; }
+.ax-table td.m { color: var(--color-fg-muted); }
+.ax-table .mo { color: var(--color-fg-muted); font-size: .9em; }
+.ax-table .sp { display: inline-flex; align-items: center; gap: 6px; }
+.ax-table .sp .a { color: var(--color-fg-muted); }
+.ax-table .sp .b { font-weight: var(--cds-font-weight-medium); }
+.ax-meth td, .ax-meth th { text-align: left; white-space: normal; }
+.ax-meth td:nth-child(2), .ax-meth th:nth-child(2) { text-align: left; }
+.ax-meth { min-width: 760px; }
+.ax-fxbars { width: 100%; }
+.ax-fxbars svg { display: block; width: 100%; height: auto; font-family: var(--font-anthropic-sans); }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+</style>
+
+<div class="ax">
+  <header class="ax-head">
+    <h1>Asia</h1>
+    <p class="ax-sub">Latest CPI month <b data-draw="latestMonth" data-source="asia_latest">—</b> · <b data-draw="nReported" data-source="asia_latest">—</b> of 12 economies reported for it</p>
+  </header>
+
+  <nav class="ax-tabs" role="tablist" aria-label="Sections">
+    <button role="tab" data-tab="inflation" aria-selected="true">Inflation</button>
+    <button role="tab" data-tab="financial" aria-selected="false">Financial</button>
+    <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
+  </nav>
+
+  <section class="ax-page" id="inflation" role="tabpanel">
+    <section class="ax-sec" id="overview">
+      <h2>Regional overview</h2>
+      <p class="ax-lede">GDP-weighted Asia-12 aggregate. Not built yet.</p>
+      <div class="ax-tiles">
+        <div class="ax-tile"><span class="lbl">CPI</span><span class="val">—</span><span class="tsub">% y/y</span></div>
+        <div class="ax-tile"><span class="lbl">Food &amp; bev</span><span class="val">—</span><span class="tsub">% y/y</span></div>
+        <div class="ax-tile"><span class="lbl">Energy</span><span class="val">—</span><span class="tsub">% y/y</span></div>
+        <div class="ax-tile"><span class="lbl">Core</span><span class="val">—</span><span class="tsub">% y/y</span></div>
+        <div class="ax-tile"><span class="lbl">PPI</span><span class="val">—</span><span class="tsub">% y/y</span></div>
+      </div>
+    </section>
+
+    <section class="ax-sec" id="stands">
+      <h2>Where each economy stands</h2>
+      <p class="ax-lede">Latest month for each economy against its own history.</p>
+      <div class="ax-card">
+        <div class="ax-cardhead">
+          <div class="ax-seg" role="group" aria-label="Sort">
+            <button data-sort="order" aria-pressed="true">Sort: #</button><button data-sort="cpi" aria-pressed="false">CPI</button><button data-sort="food" aria-pressed="false">Food &amp; bev</button><button data-sort="core" aria-pressed="false">Core</button>
+          </div>
+        </div>
+        <div class="ax-wrap">
+          <table class="ax-table" data-source="asia_latest" data-row-key="economy">
+            <thead>
+              <tr>
+                <th data-field="order">#</th>
+                <th data-field="name">Economy</th>
+                <th data-field="month">Month</th>
+                <th data-field="cpi">CPI<span class="u">% y/y</span></th>
+                <th data-field="food">Food &amp; bev<span class="u">% y/y</span></th>
+                <th data-field="energy">Energy<span class="u">% y/y</span></th>
+                <th data-field="core">Core<span class="u">% y/y</span></th>
+                <th data-field="official_core">Official core<span class="u">% y/y</span></th>
+                <th data-field="ppi">PPI<span class="u">% y/y</span></th>
+                <th data-source="asia_history" data-field="pre_covid">Pre-Covid avg<span class="u">2015–19, %</span></th>
+                <th data-source="asia_history" data-field="low">Post-Covid low<span class="u">since 2021, %</span></th>
+                <th data-source="asia_history" data-field="high">Post-Covid high<span class="u">since 2021, %</span></th>
+                <th data-source="asia_history" data-field="last24">Last 24m CPI</th>
+              </tr>
+            </thead>
+            <tbody data-draw="rows" data-source="asia_latest asia_history"></tbody>
+          </table>
+        </div>
+        <p class="ax-note">Food &amp; bev is food and non-alcoholic beverages (COICOP 01). Core is CPI excluding food and non-alcoholic beverages and energy. Official core is the measure the statistics office or central bank publishes. Blank where an economy publishes no such series or its build is not merged yet. Series by economy: Methodology.</p>
+        <p class="ax-note">Official core by economy. Japan: CPI less fresh food (Statistics Bureau). South Korea: CPI excluding food and energy (Bank of Korea's core measure). Taiwan: CPI excluding fruit, vegetables and energy (DGBAS). Hong Kong: underlying Composite CPI, netting out one-off government relief measures (C&amp;SD). China: CPI excluding food and energy (NBS). India: none published. Indonesia: core, excluding volatile food and administered prices (BPS). Thailand: core, excluding fresh food and energy (TPSO). Malaysia: core, excluding the most volatile items and administered prices (DOSM). Singapore: MAS core, CPI excluding accommodation and private transport. Philippines: core, excluding rice, corn, fresh meat, fresh fish, fruit, vegetables, electricity, LPG, diesel and gasoline (PSA). Vietnam: core, excluding food and foodstuffs, energy and state-managed prices including health and education services (NSO).</p>
+        <p class="ax-note">Source: national statistics offices, via each economy's dashboard.</p>
+      </div>
+
+      <div class="ax-grid">
+        <div class="ax-card"><div class="ax-cardhead"><h3>Asia consumer inflation</h3></div><p class="ax-note">% y/y. Latest month (bars) against central bank targets and the pre-Covid five-year average (markers). HKMA and MAS do not target inflation.</p><div class="ax-ph">Column chart, 12 economies. Not built yet.</div></div>
+        <div class="ax-card"><div class="ax-cardhead"><h3>Distance from target</h3></div><p class="ax-note">pp. Latest CPI minus the target or range mid-point, and minus the upper bound. The 10 economies with a target.</p><div class="ax-ph">Horizontal bar chart. Not built yet.</div></div>
+        <div class="ax-card"><div class="ax-cardhead"><h3>Asia consumer inflation breakdown</h3></div><p class="ax-note">% y/y. Food &amp; bev and core, latest month against each one's pre-Covid five-year average.</p><div class="ax-ph">Grouped column chart. Not built yet.</div></div>
+        <div class="ax-card"><div class="ax-cardhead"><h3>Change since January</h3></div><p class="ax-note">% y/y. January of the current year and the latest month.</p><div class="ax-ph">Dumbbell chart. Not built yet.</div></div>
+        <div class="ax-card"><div class="ax-cardhead"><h3>Asia food inflation</h3></div><p class="ax-note">% y/y. Latest month against the pre-Covid five-year average and last year's average.</p><div class="ax-ph">Grouped column chart. Not built yet.</div></div>
+        <div class="ax-card"><div class="ax-cardhead"><h3>Asia producer inflation</h3></div><p class="ax-note">% y/y. Latest month against the pre-Covid five-year average and last year's average.</p><div class="ax-ph">Grouped column chart. Not built yet.</div></div>
+      </div>
+    </section>
+
+    <section class="ax-sec" id="trends">
+      <h2>Regional trends</h2>
+      <p class="ax-lede">The Asia-12 aggregate over time, against producer prices, commodities and other regions.</p>
+      <div class="ax-grid">
+        <div class="ax-card"><div class="ax-cardhead"><h3>Asia inflation</h3></div><p class="ax-note">% y/y. Consumer and producer prices for the Asia-12 aggregate.</p><div class="ax-ph">Line chart. Not built yet.</div></div>
+        <div class="ax-card"><div class="ax-cardhead"><h3>Consumer inflation by economy</h3></div><p class="ax-note">% y/y, last 24 months.</p><div class="ax-ph">Heatmap, 12 rows × 24 months. Not built yet.</div></div>
+        <div class="ax-card"><div class="ax-cardhead"><h3>Asia producer prices and commodities</h3></div><p class="ax-note">% y/y. Aggregate PPI against World Bank energy and non-energy price indices.</p><div class="ax-ph">Dual-axis line chart. Not built yet.</div></div>
+        <div class="ax-card"><div class="ax-cardhead"><h3>Global consumer inflation</h3></div><p class="ax-note">% y/y. US, euro area and UK against the Asia-12 aggregate.</p><div class="ax-ph">Line chart. Not built yet.</div></div>
+        <div class="ax-card"><div class="ax-cardhead"><h3>Asia food inflation over time</h3></div><p class="ax-note">% y/y. Food &amp; bev for Asia and Asia ex-China and India.</p><div class="ax-ph">Line chart. Not built yet.</div></div>
+        <div class="ax-card"><div class="ax-cardhead"><h3>Food and fuel in the CPI basket</h3></div><p class="ax-note">% of CPI, as each statistics office publishes its weights.</p><div class="ax-ph">Stacked horizontal bars. Not built yet.</div></div>
+      </div>
+    </section>
+
+    <section class="ax-sec" id="economies">
+      <h2>Economy by economy</h2>
+      <p class="ax-lede">Small multiples on a shared time axis, each linking to that economy's dashboard. Not built yet.</p>
+      <div class="ax-ph small">12 small line charts: CPI, food &amp; bev and core, % y/y.</div>
+    </section>
+  </section>
+
+  <section class="ax-page" id="financial" role="tabpanel" hidden>
+    <section class="ax-sec">
+      <h2>Currencies</h2>
+      <div class="ax-card" id="fx-ytd-card">
+        <div class="ax-cardhead"><h3>Asian currencies against the US dollar, year to date</h3></div>
+        <p class="ax-note">% change in each currency&rsquo;s US-dollar value from the last BIS rate of <span data-draw="fxBase" data-source="asia_fx_ytd">—</span> to <span data-draw="fxLatest" data-source="asia_fx_ytd">—</span>. Above zero: the currency has gained against the dollar.</p>
+        <div class="ax-fxbars" data-draw="fxBars" data-source="asia_fx_ytd"></div>
+        <p class="ax-note">Calculated by Asia Decoded from the BIS daily rates on each economy&rsquo;s dashboard: (year-end rate &divide; latest rate &minus; 1) &times; 100. Vietnam not shown: the BIS publishes no daily dong series.</p>
+        <p class="ax-note">Source: BIS bilateral exchange rates (WS_XRU), from national sources.</p>
+      </div>
+    </section>
+  </section>
+
+  <section class="ax-page" id="methodology" role="tabpanel" hidden>
+    <section class="ax-sec">
+      <h2>What the table shows</h2>
+      <p class="ax-lede">Each figure is copied from the economy's own dashboard data. This page calculates nothing new from it, apart from the summary columns you asked for: the 2015–19 average, the lowest and highest y/y since January 2021 (the first month when a value repeats) and the last 24 months of CPI y/y. "Calculated" below means the series is calculated in that economy's own pipeline (set out on its dashboard's Methodology tab).</p>
+      <div class="ax-card">
+        <div class="ax-wrap">
+          <table class="ax-table ax-meth" data-source="asia_series" data-row-key="key">
+            <thead><tr><th data-field="name">Economy</th><th data-field="column_name">Column</th><th data-field="label">Series</th><th data-field="basis">Basis</th><th data-field="first">From</th><th data-field="last">Latest</th></tr></thead>
+            <tbody data-draw="meth" data-source="asia_series"></tbody>
+          </table>
+        </div>
+        <p class="ax-note">Financial tab: each currency&rsquo;s year-to-date change is calculated on this page&rsquo;s data, at your request: the BIS daily rate (national currency per US dollar, from national sources) on the last trading day of the previous year divided by the latest rate, minus 1, in %. That is the change in the currency&rsquo;s US-dollar value, so a positive figure means the currency has strengthened. Each economy uses its own latest date. Vietnam is left out: the BIS has no daily series for the dong.</p>
+        <p class="ax-note">Food &amp; bev is left blank for China (NBS food excludes beverages), Indonesia (the BPS group includes tobacco) and Thailand (TPSO food includes prepared food). Korea's official core is the Bank of Korea's measure, CPI excluding food and energy, the same series as its core.</p>
+      </div>
+    </section>
+  </section>
+</div>
+
+<script>
+(() => {
+  const ORDER = ['JP', 'KR', 'TW', 'HK', 'CN', 'IN', 'ID', 'TH', 'MY', 'SG', 'PH', 'VN'];
+  const NAMES = {JP: 'Japan', KR: 'South Korea', TW: 'Taiwan', HK: 'Hong Kong', CN: 'China', IN: 'India', ID: 'Indonesia', TH: 'Thailand', MY: 'Malaysia', SG: 'Singapore', PH: 'Philippines', VN: 'Vietnam'};
+  const COLS = ['cpi', 'food', 'energy', 'core', 'official_core', 'ppi'];
+
+  dash.calc('asia_latest', {
+    inputs: ['asia_table'],
+    title: 'Latest figures by economy',
+    description: 'For each economy and column, the value for the latest month in the Asia table (no arithmetic).',
+    fn: (asia_table) => ['JP', 'KR', 'TW', 'HK', 'CN', 'IN', 'ID', 'TH', 'MY', 'SG', 'PH', 'VN'].map((e) => {
+      const row = {economy: e, order: ['JP', 'KR', 'TW', 'HK', 'CN', 'IN', 'ID', 'TH', 'MY', 'SG', 'PH', 'VN'].indexOf(e) + 1};
+      for (const c of ['cpi', 'food', 'energy', 'core', 'official_core', 'ppi']) {
+        const rs = asia_table.filter((r) => r.economy === e && r.column === c);
+        const last = rs.reduce((a, r) => (!a || r.date > a.date ? r : a), null);
+        row[c] = last ? Number(last.value) : null;
+        row[c + '_date'] = last ? last.date.slice(0, 10) : null;
+        row[c + '_q'] = !!(last && /quarterly/i.test(last.label || ''));
+      }
+      row.month = row.cpi_date;
+      return row;
+    }),
+  });
+
+  dash.calc('asia_history', {
+    inputs: ['asia_table'],
+    title: 'CPI history summaries',
+    description: 'From monthly CPI y/y: the 2015-19 average, the lowest and highest since Jan 2021 (first month on a tie, compared at one decimal) and the last 24 months.',
+    fn: (asia_table) => ['JP', 'KR', 'TW', 'HK', 'CN', 'IN', 'ID', 'TH', 'MY', 'SG', 'PH', 'VN'].map((e) => {
+      const s = asia_table.filter((r) => r.economy === e && r.column === 'cpi')
+        .map((r) => ({d: r.date.slice(0, 10), v: Number(r.value)})).sort((a, b) => (a.d < b.d ? -1 : 1));
+      const pre = s.filter((p) => p.d >= '2015-01-01' && p.d <= '2019-12-01');
+      const post = s.filter((p) => p.d >= '2021-01-01');
+      const r1 = (v) => Math.round(v * 10) / 10;
+      const pick = (better) => post.reduce((a, p) => (!a || better(r1(p.v), r1(a.v)) ? p : a), null);
+      const lo = pick((x, y) => x < y), hi = pick((x, y) => x > y);
+      const last24 = s.slice(-24);
+      return {
+        economy: e,
+        pre_covid: pre.length === 60 ? pre.reduce((t, p) => t + p.v, 0) / 60 : null,
+        low: lo ? lo.v : null, low_date: lo ? lo.d : null,
+        high: hi ? hi.v : null, high_date: hi ? hi.d : null,
+        last24: last24.length === 24 ? last24.map((p) => p.v) : null,
+        last24_end: last24.length === 24 ? last24[23].d : null,
+      };
+    }),
+  });
+
+  dash.calc('asia_series', {
+    inputs: ['asia_table'],
+    title: 'Series behind each column',
+    description: 'For each economy and column, the series label, its basis and the months it covers in the Asia table.',
+    fn: (asia_table) => {
+      const m = new Map();
+      for (const r of asia_table) {
+        const k = r.economy + '|' + r.column;
+        const d = r.date.slice(0, 10);
+        const o = m.get(k) || {key: k, economy: r.economy, name: r.name, column: r.column, label: r.label, basis: r.basis, first: d, last: d};
+        if (d < o.first) o.first = d;
+        if (d > o.last) o.last = d;
+        m.set(k, o);
+      }
+      const names = {cpi: 'CPI', food: 'Food & bev', energy: 'Energy', core: 'Core', official_core: 'Official core', ppi: 'PPI'};
+      const eo = ['JP', 'KR', 'TW', 'HK', 'CN', 'IN', 'ID', 'TH', 'MY', 'SG', 'PH', 'VN'];
+      const co = ['cpi', 'food', 'energy', 'core', 'official_core', 'ppi'];
+      return [...m.values()].map((o) => ({...o, column_name: names[o.column]}))
+        .sort((a, b) => eo.indexOf(a.economy) - eo.indexOf(b.economy) || co.indexOf(a.column) - co.indexOf(b.column));
+    },
+  });
+
+  const LINKS = {
+    JP: 'https://claude.ai/artifact/9v3qVxzW45CeiV1oaB1f25', KR: 'https://claude.ai/artifact/S4pjmR7Ys4dMV5vLZBhJd5',
+    TW: 'https://claude.ai/artifact/S4LAusirGDx6EKgiyGNscW', HK: 'https://claude.ai/artifact/2vqSwgK2mngF2xTtpykU48',
+    CN: 'https://claude.ai/artifact/2omuUUQJvzqPtfvnHrBMeF', IN: 'https://claude.ai/artifact/5br5ud715W2635wrPTWrrd',
+    ID: 'https://claude.ai/artifact/279ZZrERmgvboCEW5No14e', TH: 'https://claude.ai/artifact/PW44KETSq6qDxwY13hjkFb',
+    MY: 'https://claude.ai/artifact/BrbMCGRT2K83r5LCjLSP1T', SG: 'https://claude.ai/artifact/4mAnFwrSK9gG1VF7RsEwo8',
+    PH: 'https://claude.ai/artifact/YS5Qj6cwWmovEVBZokaXxa', VN: 'https://claude.ai/artifact/CHsgTik5Lm8qexMf83RjXW',
+  };
+  const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const monthLong = (d) => (d ? MON[Number(d.slice(5, 7)) - 1] + ' ' + d.slice(0, 4) : '—');
+  const monthShort = (d) => MON[Number(d.slice(5, 7)) - 1] + '-' + d.slice(2, 4);
+  const f1 = (v) => (v == null || Number.isNaN(v) ? '—' : (Math.round(v * 10) / 10).toFixed(1).replace('-', '−'));
+  const SVG = 'http://www.w3.org/2000/svg';
+  let sortKey = 'order';
+
+  const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+
+  dash.draw('rows', (tbody) => {
+    const L = dash.data('asia_latest'), H = dash.data('asia_history');
+    tbody.replaceChildren();
+    if (L.status !== 'ok') return;
+    const hist = new Map((H.status === 'ok' ? H.data : []).map((h) => [h.economy, h]));
+    const rows = L.data.slice().sort((a, b) => {
+      if (sortKey === 'order') return a.order - b.order;
+      const x = a[sortKey], y = b[sortKey];
+      if (x == null && y == null) return ORDER.indexOf(a.economy) - ORDER.indexOf(b.economy);
+      if (x == null) return 1;
+      if (y == null) return -1;
+      return y - x;
+    });
+    for (const r of rows) {
+      const h = hist.get(r.economy) || {};
+      const tr = document.createElement('tr');
+      tr.dataset.key = r.economy;
+      tr.append(el('td', null, String(r.order)));
+      const name = el('td');
+      if (LINKS[r.economy]) { const a = el('a', null, NAMES[r.economy]); a.href = LINKS[r.economy]; a.target = '_blank'; a.rel = 'noopener'; name.append(a); }
+      else name.textContent = NAMES[r.economy];
+      tr.append(name, el('td', 'm', monthLong(r.month)));
+      for (const c of COLS) {
+        const td = el('td', null, f1(r[c]));
+        if (r[c] != null && r[c + '_q']) td.append(' ', el('span', 'mo', '(Q' + Math.ceil(Number(r[c + '_date'].slice(5, 7)) / 3) + '-' + r[c + '_date'].slice(2, 4) + ')'));
+        else if (r[c] != null && r[c + '_date'] && r.month && r[c + '_date'] !== r.month) td.append(' ', el('span', 'mo', '(' + MON[Number(r[c + '_date'].slice(5, 7)) - 1] + ')'));
+        tr.append(td);
+      }
+      tr.append(el('td', null, f1(h.pre_covid)));
+      for (const k of ['low', 'high']) {
+        const td = el('td', null, f1(h[k]));
+        if (h[k] != null) td.append(' ', el('span', 'mo', '(' + monthShort(h[k + '_date']) + ')'));
+        tr.append(td);
+      }
+      const sp = el('td');
+      if (h.last24) {
+        const v = h.last24, lo = Math.min(...v), hi = Math.max(...v), W = 90, Hh = 18, p = 2;
+        const x = (i) => p + i * (W - 2 * p) / (v.length - 1);
+        const y = (u) => (hi === lo ? Hh / 2 : Hh - p - (u - lo) / (hi - lo) * (Hh - 2 * p));
+        const svg = document.createElementNS(SVG, 'svg');
+        svg.setAttribute('width', W); svg.setAttribute('height', Hh); svg.setAttribute('viewBox', `0 0 ${W} ${Hh}`);
+        svg.setAttribute('role', 'img');
+        svg.setAttribute('aria-label', `${NAMES[r.economy]} CPI y/y, last 24 months, ${f1(v[0])} to ${f1(v[v.length - 1])}%`);
+        const pl = document.createElementNS(SVG, 'polyline');
+        pl.setAttribute('points', v.map((u, i) => `${x(i).toFixed(1)},${y(u).toFixed(1)}`).join(' '));
+        pl.setAttribute('fill', 'none'); pl.setAttribute('stroke', '#BD1B21'); pl.setAttribute('stroke-width', '1.5');
+        pl.setAttribute('stroke-linejoin', 'round'); pl.setAttribute('stroke-linecap', 'round');
+        const dot = document.createElementNS(SVG, 'circle');
+        dot.setAttribute('cx', x(v.length - 1).toFixed(1)); dot.setAttribute('cy', y(v[v.length - 1]).toFixed(1)); dot.setAttribute('r', '2'); dot.setAttribute('fill', '#BD1B21');
+        svg.append(pl, dot);
+        const box = el('span', 'sp');
+        box.append(el('span', 'a', f1(v[0])), svg, el('span', 'b', f1(v[v.length - 1])));
+        sp.append(box);
+      } else sp.textContent = '—';
+      tr.append(sp);
+      tbody.append(tr);
+    }
+  });
+
+  dash.draw('latestMonth', (b) => {
+    const L = dash.data('asia_latest');
+    if (L.status !== 'ok') { b.textContent = '—'; return; }
+    const m = L.data.map((r) => r.month).filter(Boolean).sort().pop();
+    b.textContent = monthLong(m);
+  });
+
+  dash.draw('nReported', (b) => {
+    const L = dash.data('asia_latest');
+    if (L.status !== 'ok') { b.textContent = '—'; return; }
+    const m = L.data.map((r) => r.month).filter(Boolean).sort().pop();
+    b.textContent = String(L.data.filter((r) => r.month === m).length);
+  });
+
+  dash.draw('meth', (tbody) => {
+    const S = dash.data('asia_series');
+    tbody.replaceChildren();
+    if (S.status !== 'ok') return;
+    for (const r of S.data) {
+      const tr = document.createElement('tr');
+      tr.dataset.key = r.key;
+      tr.append(el('td', null, r.name), el('td', null, r.column_name), el('td', null, r.label),
+        el('td', 'm', r.basis === 'calculated' ? 'Calculated' : 'Published'), el('td', 'm', monthLong(r.first)), el('td', 'm', monthLong(r.last)));
+      tbody.append(tr);
+    }
+  });
+
+  const dmy = (d) => (d ? Number(d.slice(8, 10)) + ' ' + MON[Number(d.slice(5, 7)) - 1] + ' ' + d.slice(0, 4) : '—');
+  dash.draw('fxBase', (n) => {
+    const D = dash.data('asia_fx_ytd');
+    n.textContent = D.status === 'ok' && D.data.length ? dmy(D.data.map((r) => r.base_date).sort().pop()) : '—';
+  });
+  dash.draw('fxLatest', (n) => {
+    const D = dash.data('asia_fx_ytd');
+    n.textContent = D.status === 'ok' && D.data.length ? dmy(D.data.map((r) => r.latest_date).sort().pop()) : '—';
+  });
+  dash.draw('fxBars', (box) => {
+    const D = dash.data('asia_fx_ytd');
+    box.replaceChildren();
+    if (D.status !== 'ok' || !D.data.length) return;
+    const rows = D.data.map((r) => ({...r, v: Number(r.ytd_pct)})).filter((r) => !Number.isNaN(r.v)).sort((a, b) => b.v - a.v);
+    const W = Math.max(320, box.clientWidth || 640), rowH = 28, top = 8, H = top + rows.length * rowH + 22;
+    const lab = Math.min(170, Math.round(W * 0.3)), right = 52;
+    const lo = Math.min(0, ...rows.map((r) => r.v)), hi = Math.max(0, ...rows.map((r) => r.v));
+    const step = ((hi - lo) > 24 ? 5 : (hi - lo) > 8 ? 2 : 1) * (W < 600 ? 2 : 1);
+    const a = Math.floor(lo / step) * step, b = Math.ceil(hi / step) * step;
+    const pad = 44;
+    const x = (v) => lab + pad + (v - a) / (b - a || 1) * (W - lab - pad - right);
+    const svg = document.createElementNS(SVG, 'svg');
+    svg.setAttribute('viewBox', `0 0 ${W} ${H}`); svg.setAttribute('role', 'img');
+    svg.setAttribute('aria-label', 'Asian currencies against the US dollar, year to date, % change: ' + rows.map((r) => `${r.name} ${f1(r.v)}`).join(', '));
+    const add = (tag, attrs, text) => { const n = document.createElementNS(SVG, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); if (text != null) n.textContent = text; svg.append(n); return n; };
+    for (let t = a; t <= b + 1e-9; t += step) {
+      add('line', {x1: x(t), x2: x(t), y1: top, y2: H - 20, stroke: 'var(--color-border-line)', 'stroke-width': t === 0 ? 1.2 : 0.6, opacity: t === 0 ? 1 : 0.7});
+      add('text', {x: x(t), y: H - 6, 'text-anchor': 'middle', 'font-size': 11, fill: 'var(--color-fg-muted)'}, f1(t).replace('.0', ''));
+    }
+    rows.forEach((r, i) => {
+      const y = top + i * rowH, h = rowH - 10;
+      add('text', {x: lab - 8, y: y + h / 2 + 4, 'text-anchor': 'end', 'font-size': 12, fill: 'var(--color-fg)'}, `${r.name} (${r.currency})`);
+      const x0 = x(Math.min(0, r.v)), x1 = x(Math.max(0, r.v));
+      const bar = add('rect', {x: x0, y, width: Math.max(1, x1 - x0), height: h, fill: r.v >= 0 ? '#1F4E79' : '#BD1B21'});
+      const tt = document.createElementNS(SVG, 'title');
+      tt.textContent = `${r.name}: ${f1(r.v)}% since ${dmy(r.base_date)} (${r.currency} ${Number(r.base_rate).toLocaleString('en', {maximumSignificantDigits: 6})} to ${Number(r.latest_rate).toLocaleString('en', {maximumSignificantDigits: 6})} per US$ on ${dmy(r.latest_date)})`;
+      bar.append(tt);
+      add('text', {x: r.v >= 0 ? x1 + 5 : x0 - 5, y: y + h / 2 + 4, 'text-anchor': r.v >= 0 ? 'start' : 'end', 'font-size': 12, 'font-weight': 500, fill: 'var(--color-fg)'}, f1(r.v));
+    });
+    box.append(svg);
+  });
+  let fxW = 0;
+  new ResizeObserver(() => { const b = document.querySelector('.ax-fxbars'); if (b && b.clientWidth && b.clientWidth !== fxW) { fxW = b.clientWidth; dash.draw('fxBars'); } }).observe(document.querySelector('.ax-fxbars'));
+
+  document.querySelectorAll('.ax [data-sort]').forEach((btn) => btn.addEventListener('click', () => {
+    sortKey = btn.dataset.sort;
+    document.querySelectorAll('.ax [data-sort]').forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+    dash.draw('rows');
+  }));
+
+  const show = (id) => {
+    document.querySelectorAll('.ax [role=tab]').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === id)));
+    document.querySelectorAll('.ax [role=tabpanel]').forEach((p) => { p.hidden = p.id !== id; });
+    if (id === 'financial') dash.draw('fxBars');
+  };
+  document.querySelectorAll('.ax [role=tab]').forEach((t) => t.addEventListener('click', () => { show(t.dataset.tab); dash.setLink(t.dataset.tab); }));
+  if (['methodology', 'financial'].includes(location.hash.slice(1))) show(location.hash.slice(1));
+})();
+</script>
