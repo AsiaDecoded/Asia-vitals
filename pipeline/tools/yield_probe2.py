@@ -12,10 +12,9 @@ import urllib.request
 from pathlib import Path
 
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"}
-PAGES = ["https://asianbondsonline.adb.org/indonesia/data/", "https://asianbondsonline.adb.org/indonesia/data.php",
-         "https://asianbondsonline.adb.org/data-portal/", "https://asianbondsonline.adb.org/economy/?economy=ID",
-         "https://www.bi.go.id/id/statistik/informasi-kurs/suku-bunga-obligasi/default.aspx",
-         "https://www.bi.go.id/en/statistik/indikator/suku-bunga-obligasi-pemerintah-ri.aspx"]
+PAGES = ["https://asianbondsonline.adb.org/data-portal/js/data-portal-v4.1.js",
+         "https://asianbondsonline.adb.org/data-portal/js/data-portal-v4.js",
+         "https://asianbondsonline.adb.org/data-portal/"]
 
 
 def fetch(url):
@@ -38,7 +37,8 @@ def main(out):
         (out / f"page{i}.html").write_bytes(b)
         t = b.decode("utf-8", "replace")
         links = sorted(set(re.findall(r'(?:href|src|data-url|url)\s*[=:]\s*["\']([^"\']+)["\']', t)))
-        data = [l for l in links if re.search(r"(?i)\.(csv|xlsx?|json)(\?|$)|download|export|api|data-portal|chart", l)]
+        data = [l for l in links if re.search(r"(?i)\.(csv|xlsx?|json|php)(\?|$)|download|export|api|data-portal|chart", l)]
+        data += sorted(set(re.findall(r"(?:url|href)\s*[:=]\s*['\"]([^'\"]+\.php[^'\"]*)", t)))
         log.append({"url": u, "status": st, "type": ct, "bytes": len(b), "data_links": data[:120],
                     "yield_hits": [t[max(0, m.start() - 100): m.end() + 100] for m in re.finditer(r"(?i)10[- ]?year|yield", t)][:6]})
         for l in data:
