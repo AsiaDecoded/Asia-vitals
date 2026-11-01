@@ -1,5 +1,5 @@
 // Financial tab: rupiah per US dollar (BIS, from national sources), daily from 1988 and monthly from 1967; Jakarta
-// Composite Index, end of month from July 1995 (Bank Indonesia SEKI III.3); the Asian financial crisis (July 1997 to
+// Composite Index, daily from April 1990 (Yahoo Finance, not official) and end of month from July 1995 (Bank Indonesia SEKI III.3); the Asian financial crisis (July 1997 to
 // December 1998) shaded. Levels as published; episode indices calculated.
 (() => {
   const J = window.JG;
@@ -158,6 +158,23 @@
     return { rows: D.data.map((r) => ({ date: r.date, v: Number(r.jci) })).filter((r) => r.v > 0) };
   }
 
+  function jciDailyChart() {
+    const box = document.getElementById('x-jcid-chart');
+    const D = dash.data('id_jci_daily');
+    if (bad(D)) { J.fail(box); return; }
+    if (D.status !== 'ok' || !D.data.length) { box.replaceChildren(); return; }
+    let rows = D.data.map((r) => ({ date: r.date, v: Number(r.close) })).filter((r) => r.v > 0);
+    rows = slice(rows, 'x-jcid');
+    rows.forEach((r) => { r.t = dt(r.date); });
+    const H = 300;
+    const f = frame(box, 0, d3.max(rows, (r) => r.v), H, rows[0].date, rows[rows.length - 1].date);
+    afc(f, H);
+    f.svg.append('path').attr('d', d3.line().x((r) => f.x(r.t)).y((r) => f.y(r.v))(rows))
+      .attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 1.4);
+    hover(f, rows, H, 'x-jcid', (r) => `${Number(r.date.slice(8, 10))} ${MON[Number(r.date.slice(5, 7)) - 1]} ${r.date.slice(0, 4)}`,
+      (r) => [['#BD1B21', 'JCI, close', d3.format(',.2f')(r.v)]]);
+  }
+
   function jciChart() {
     const box = document.getElementById('x-jci-chart');
     const R = jciRows();
@@ -250,7 +267,7 @@
   J.redrawFinancial = () => {
     const pg = document.getElementById('financial');
     if (!pg || pg.hidden) return;
-    tiles(); dailyChart(); monthlyChart(); episodeChart(); jciChart(); jciEpiChart();
+    tiles(); dailyChart(); monthlyChart(); episodeChart(); jciDailyChart(); jciChart(); jciEpiChart();
   };
   dash.onData(() => { tiles(); J.redrawFinancial(); });
 })();
