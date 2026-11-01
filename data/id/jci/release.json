@@ -1,0 +1,20 @@
+{
+ "code": "J2026-08",
+ "label": "JCI to Aug 2026 (SEKI III.3)",
+ "latest_month": "2026-08",
+ "last_modified": "Mon, 05 Oct 2026 03:11:28 GMT",
+ "table": "SEKI III.3",
+ "processed_at": "2026-11-01T00:53:50Z",
+ "rows": 352,
+ "warnings": [
+  "22 months not in SEKI III.3: 2004-01..2005-11"
+ ],
+ "fingerprint": "d3ee4901b4cb67bf",
+ "long_rows": 352,
+ "history": [
+  {
+   "code": "J2026-08",
+   "processed_at": "2026-11-01T00:53:50Z"
+  }
+ ]
+}
