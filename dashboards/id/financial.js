@@ -96,13 +96,13 @@
   const TK = [-12, -6, 0, 6, 12, 18, 24, 30, 36];
   const tlab = (m) => (m === 0 ? 't' : m < 0 ? `t${m}m` : `t+${m}m`);
   const EPIS = [['1997-07-02', 'AFC (2 Jul 1997 = 100)', '#BD1B21'], ['2025-08-25', 'August 2025 protests (25 Aug 2025 = 100)', '#0C84FF']];
-  function episodeChart() {
-    const box = document.getElementById('x-epi-chart');
-    const D = dash.data('id_fx_daily');
+  function episodeChart(id = 'x-epi', ds = 'id_fx_daily', field = 'usd_idr', EP = EPIS, vfmt = (v) => `Rp${fmt(v)}`) {
+    const box = document.getElementById(`${id}-chart`);
+    const D = dash.data(ds);
     if (bad(D)) { J.fail(box); return; }
     if (D.status !== 'ok' || !D.data.length) { box.replaceChildren(); return; }
-    const all = D.data.map((r) => ({ date: r.date, v: Number(r.usd_idr) })).filter((r) => r.v > 0);
-    const ser = EPIS.map(([d0, name, col]) => {
+    const all = D.data.map((r) => ({ date: r.date, v: Number(r[field]) })).filter((r) => r.v > 0);
+    const ser = EP.map(([d0, name, col]) => {
       const i0 = all.findIndex((r) => r.date >= d0); if (i0 < 0) return null;
       const b = all[i0], t0 = dt(b.date), end = new Date(t0), beg = new Date(t0);
       end.setUTCFullYear(end.getUTCFullYear() + 3); beg.setUTCFullYear(beg.getUTCFullYear() - 1);
@@ -125,12 +125,12 @@
     svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', 10).attr('y2', H - 24).attr('stroke', 'var(--ad-axis)').attr('stroke-dasharray', '3 3');
     ser.forEach((s) => svg.append('path').attr('d', d3.line().x((p) => x(p.m)).y((p) => y(p.idx))(s.pts))
       .attr('fill', 'none').attr('stroke', s.col).attr('stroke-width', 1.8));
-    const lg = document.getElementById('x-epi-legend');
+    const lg = document.getElementById(`${id}-legend`);
     if (lg) {
       lg.replaceChildren();
       ser.forEach((s) => { const sp = document.createElement('span'), mk = document.createElement('span'); mk.className = 'ln'; mk.style.background = s.col; sp.append(mk, document.createTextNode(s.name)); lg.appendChild(sp); });
     }
-    const card = document.getElementById('x-epi'), tip = J.tip(card);
+    const card = document.getElementById(id), tip = J.tip(card);
     const rule = svg.append('line').attr('y1', 10).attr('y2', H - 24).attr('stroke', 'var(--color-fg)').attr('opacity', 0.25).attr('display', 'none');
     const bis = d3.bisector((p) => p.m).center;
     const dd = (s) => `${Number(s.slice(8, 10))} ${MON[Number(s.slice(5, 7)) - 1]} ${s.slice(0, 4)}`;
@@ -140,7 +140,7 @@
         rule.attr('display', null).attr('x1', x(m)).attr('x2', x(m));
         const lines = ser.map((s) => {
           const p = s.pts[bis(s.pts, m)];
-          return p && Math.abs(p.m - m) < 0.5 ? [s.col, `${s.name.split(' (')[0]}, ${dd(p.date)}`, `${p.idx.toFixed(1)} (Rp${fmt(p.v)})`] : [s.col, s.name.split(' (')[0], '—'];
+          return p && Math.abs(p.m - m) < 0.5 ? [s.col, `${s.name.split(' (')[0]}, ${dd(p.date)}`, `${p.idx.toFixed(1)} (${vfmt(p.v)})`] : [s.col, s.name.split(' (')[0], '—'];
         });
         const cr = card.getBoundingClientRect();
         J.showTip(card, tip, m < 0 ? `t − ${(-m).toFixed(1)} months` : `t + ${m.toFixed(1)} months`, lines, ev.clientX - cr.left, ev.clientY - cr.top);
@@ -197,60 +197,11 @@
       (r) => [['#BD1B21', 'JCI, end of month', d3.format(',.2f')(r.v)]]);
   }
 
-  // JCI in the two episodes, indexed to 100 at the last month-end before each start (calculated): end-June 1997 (the
-  // baht floated 2 July) and end-July 2025 (protests began 25 August 2025). x = months from the base, -12 to 36.
-  const JEPIS = [['1997-06-01', 'AFC (end-Jun 1997 = 100)', '#BD1B21'], ['2025-07-01', 'August 2025 protests (end-Jul 2025 = 100)', '#0C84FF']];
-  function jciEpiChart() {
-    const box = document.getElementById('x-jepi-chart');
-    const R = jciRows();
-    if (R.err) { J.fail(box); return; }
-    if (!R.rows) { box.replaceChildren(); return; }
-    const by = new Map(R.rows.map((r) => [r.date.slice(0, 7), r.v]));
-    const ser = JEPIS.map(([d0, name, col]) => {
-      const b = by.get(d0.slice(0, 7)); if (!b) return null;
-      const m0 = mnum(d0), pts = [];
-      for (let k = -12; k <= 36; k++) {
-        const n = m0 + k, key = `${Math.floor(n / 12)}-${String((n % 12) + 1).padStart(2, '0')}`;
-        if (by.has(key)) pts.push({ date: key, m: k, v: by.get(key), idx: (by.get(key) / b) * 100 });
-      }
-      return { name, col, b, pts };
-    }).filter(Boolean);
-    const H = 300, W = box.clientWidth;
-    box.replaceChildren();
-    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
-    const lo = d3.min(ser, (s) => d3.min(s.pts, (p) => p.idx)), hi = d3.max(ser, (s) => d3.max(s.pts, (p) => p.idx));
-    const y = d3.scaleLinear([Math.min(lo, 90), Math.max(hi, 110)], [H - 24, 10]).nice();
-    const ticks = y.ticks(6), ml = J.textWidth(svg, ticks.map(fmt)) + 10;
-    svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', ml).attr('x2', W - 8).attr('y1', y).attr('y2', y)
-      .attr('stroke', (v) => (v === 100 ? 'var(--ad-axis)' : 'var(--ad-grid)'));
-    J.axisStyle(svg.append('g').attr('transform', `translate(${ml - 4},0)`).call(d3.axisLeft(y).tickValues(ticks).tickSize(0).tickFormat(fmt)));
-    const x = d3.scaleLinear([-12, 36], [ml, W - 8]);
-    J.axisStyle(svg.append('g').attr('transform', `translate(0,${H - 20})`)
-      .call(d3.axisBottom(x).tickValues(TK).tickSize(0).tickFormat(tlab)));
-    svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', 10).attr('y2', H - 24).attr('stroke', 'var(--ad-axis)').attr('stroke-dasharray', '3 3');
-    ser.forEach((s) => svg.append('path').attr('d', d3.line().x((p) => x(p.m)).y((p) => y(p.idx))(s.pts))
-      .attr('fill', 'none').attr('stroke', s.col).attr('stroke-width', 1.8));
-    const lg = document.getElementById('x-jepi-legend');
-    if (lg) {
-      lg.replaceChildren();
-      ser.forEach((s) => { const sp = document.createElement('span'), mk = document.createElement('span'); mk.className = 'ln'; mk.style.background = s.col; sp.append(mk, document.createTextNode(s.name)); lg.appendChild(sp); });
-    }
-    const card = document.getElementById('x-jepi'), tip = J.tip(card);
-    const rule = svg.append('line').attr('y1', 10).attr('y2', H - 24).attr('stroke', 'var(--color-fg)').attr('opacity', 0.25).attr('display', 'none');
-    const mm = (k) => `${MON[Number(k.slice(5, 7)) - 1]} ${k.slice(0, 4)}`;
-    svg.append('rect').attr('x', ml).attr('width', W - 8 - ml).attr('height', H).attr('fill', 'transparent')
-      .on('mousemove', (ev) => {
-        const [mx] = d3.pointer(ev), m = Math.max(-12, Math.min(36, Math.round(x.invert(mx))));
-        rule.attr('display', null).attr('x1', x(m)).attr('x2', x(m));
-        const lines = ser.map((s) => {
-          const p = s.pts.find((q) => q.m === m);
-          return p ? [s.col, `${s.name.split(' (')[0]}, ${mm(p.date)}`, `${p.idx.toFixed(1)} (${d3.format(',.0f')(p.v)})`] : [s.col, s.name.split(' (')[0], '—'];
-        });
-        const cr = card.getBoundingClientRect();
-        J.showTip(card, tip, m === 0 ? 't (base month)' : m < 0 ? `t − ${-m} months` : `t + ${m} months`, lines, ev.clientX - cr.left, ev.clientY - cr.top);
-      })
-      .on('mouseleave', () => { rule.attr('display', 'none'); tip.style.display = 'none'; });
-  }
+  // JCI in the two episodes, daily close (Yahoo Finance) indexed to 100 on the first trading day of each episode
+  // (calculated), as chart 3. Higher = stronger market.
+  const JEPIS = [['1997-07-02', 'AFC (2 Jul 1997 = 100)', '#BD1B21'], ['2025-08-25', 'August 2025 protests (25 Aug 2025 = 100)', '#0C84FF']];
+  const jciEpiChart = () => episodeChart('x-jepi', 'id_jci_daily', 'close', JEPIS, (v) => d3.format(',.0f')(v));
+
 
   function tiles() {
     const L = dash.data('fx_latest');
