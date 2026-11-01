@@ -1,0 +1,12 @@
+[
+ {
+  "code": "X2026-10-27",
+  "label": "BIS daily to 2026-10-27",
+  "latest_date": "2026-10-27",
+  "currency": "JPY",
+  "unit": "Japanese yen per US dollar",
+  "first_date": "1969-12-01",
+  "table": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/D.JP.JPY.A?format=csv",
+  "processed_at": "2026-11-01T22:59:17Z"
+ }
+]
