@@ -1,5 +1,6 @@
-// Financial tab: rupiah per US dollar (BIS, from national sources), daily from 1988 and monthly from 1967; the Asian
-// financial crisis (July 1997 to December 1998) shaded. All as published.
+// Financial tab: rupiah per US dollar (BIS, from national sources), daily from 1988 and monthly from 1967; Jakarta
+// Composite Index, end of month from July 1995 (Bank Indonesia SEKI III.3); the Asian financial crisis (July 1997 to
+// December 1998) shaded. Levels as published; episode indices calculated.
 (() => {
   const J = window.JG;
   const bad = (D) => D.status === 'error' || D.status === 'connect' || D.status === 'declined';
@@ -143,6 +144,92 @@
       .on('mouseleave', () => { rule.attr('display', 'none'); tip.style.display = 'none'; });
   }
 
+  // Jakarta Composite Index, end of month (SEKI III.3, from July 1995). SEKI has no months between Dec 2003 and Jan
+  // 2006 other than Dec 2004 and Dec 2005, so the line breaks there.
+  const mnum = (d) => Number(d.slice(0, 4)) * 12 + Number(d.slice(5, 7)) - 1;
+  function jciRows() {
+    const D = dash.data('id_jci');
+    if (bad(D)) return { err: true };
+    if (D.status !== 'ok' || !D.data.length) return { rows: null };
+    return { rows: D.data.map((r) => ({ date: r.date, v: Number(r.jci) })).filter((r) => r.v > 0) };
+  }
+
+  function jciChart() {
+    const box = document.getElementById('x-jci-chart');
+    const R = jciRows();
+    if (R.err) { J.fail(box); return; }
+    if (!R.rows) { box.replaceChildren(); return; }
+    const rows = slice(R.rows, 'x-jci');
+    rows.forEach((r, i) => { r.t = dt(r.date); r.brk = i > 0 && mnum(r.date) - mnum(rows[i - 1].date) > 1; });
+    const H = 300;
+    const f = frame(box, 0, d3.max(rows, (r) => r.v), H, rows[0].date, rows[rows.length - 1].date);
+    afc(f, H);
+    // split into runs of consecutive months
+    const runs = [];
+    rows.forEach((r) => { if (!runs.length || r.brk) runs.push([]); runs[runs.length - 1].push(r); });
+    runs.forEach((run) => {
+      if (run.length > 1) f.svg.append('path').attr('d', d3.line().x((r) => f.x(r.t)).y((r) => f.y(r.v))(run))
+        .attr('fill', 'none').attr('stroke', '#BD1B21').attr('stroke-width', 1.8);
+      else f.svg.append('circle').attr('cx', f.x(run[0].t)).attr('cy', f.y(run[0].v)).attr('r', 2.2).attr('fill', '#BD1B21');
+    });
+    hover(f, rows, H, 'x-jci', (r) => `${MON[Number(r.date.slice(5, 7)) - 1]} ${r.date.slice(0, 4)}`,
+      (r) => [['#BD1B21', 'JCI, end of month', d3.format(',.2f')(r.v)]]);
+  }
+
+  // JCI in the two episodes, indexed to 100 at the last month-end before each start (calculated): end-June 1997 (the
+  // baht floated 2 July) and end-September 2024 (Prabowo inaugurated 20 October). x = months after the base, to 36.
+  const JEPIS = [['1997-06-01', 'AFC (end-Jun 1997 = 100)', '#BD1B21'], ['2024-09-01', 'Prabowo presidency (end-Sep 2024 = 100)', '#0C84FF']];
+  function jciEpiChart() {
+    const box = document.getElementById('x-jepi-chart');
+    const R = jciRows();
+    if (R.err) { J.fail(box); return; }
+    if (!R.rows) { box.replaceChildren(); return; }
+    const by = new Map(R.rows.map((r) => [r.date.slice(0, 7), r.v]));
+    const ser = JEPIS.map(([d0, name, col]) => {
+      const b = by.get(d0.slice(0, 7)); if (!b) return null;
+      const m0 = mnum(d0), pts = [];
+      for (let k = 0; k <= 36; k++) {
+        const n = m0 + k, key = `${Math.floor(n / 12)}-${String((n % 12) + 1).padStart(2, '0')}`;
+        if (by.has(key)) pts.push({ date: key, m: k, v: by.get(key), idx: (by.get(key) / b) * 100 });
+      }
+      return { name, col, b, pts };
+    }).filter(Boolean);
+    const H = 300, W = box.clientWidth;
+    box.replaceChildren();
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const lo = d3.min(ser, (s) => d3.min(s.pts, (p) => p.idx)), hi = d3.max(ser, (s) => d3.max(s.pts, (p) => p.idx));
+    const y = d3.scaleLinear([Math.min(lo, 90), Math.max(hi, 110)], [H - 24, 10]).nice();
+    const ticks = y.ticks(6), ml = J.textWidth(svg, ticks.map(fmt)) + 10;
+    svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', ml).attr('x2', W - 8).attr('y1', y).attr('y2', y)
+      .attr('stroke', (v) => (v === 100 ? 'var(--ad-axis)' : 'var(--ad-grid)'));
+    J.axisStyle(svg.append('g').attr('transform', `translate(${ml - 4},0)`).call(d3.axisLeft(y).tickValues(ticks).tickSize(0).tickFormat(fmt)));
+    const x = d3.scaleLinear([0, 36], [ml, W - 8]);
+    J.axisStyle(svg.append('g').attr('transform', `translate(0,${H - 20})`)
+      .call(d3.axisBottom(x).tickValues([0, 6, 12, 18, 24, 30, 36]).tickSize(0).tickFormat((m) => (m === 0 ? 't' : `t+${m}m`))));
+    ser.forEach((s) => svg.append('path').attr('d', d3.line().x((p) => x(p.m)).y((p) => y(p.idx))(s.pts))
+      .attr('fill', 'none').attr('stroke', s.col).attr('stroke-width', 1.8));
+    const lg = document.getElementById('x-jepi-legend');
+    if (lg) {
+      lg.replaceChildren();
+      ser.forEach((s) => { const sp = document.createElement('span'), mk = document.createElement('span'); mk.className = 'ln'; mk.style.background = s.col; sp.append(mk, document.createTextNode(s.name)); lg.appendChild(sp); });
+    }
+    const card = document.getElementById('x-jepi'), tip = J.tip(card);
+    const rule = svg.append('line').attr('y1', 10).attr('y2', H - 24).attr('stroke', 'var(--color-fg)').attr('opacity', 0.25).attr('display', 'none');
+    const mm = (k) => `${MON[Number(k.slice(5, 7)) - 1]} ${k.slice(0, 4)}`;
+    svg.append('rect').attr('x', ml).attr('width', W - 8 - ml).attr('height', H).attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const [mx] = d3.pointer(ev), m = Math.max(0, Math.min(36, Math.round(x.invert(mx))));
+        rule.attr('display', null).attr('x1', x(m)).attr('x2', x(m));
+        const lines = ser.map((s) => {
+          const p = s.pts.find((q) => q.m === m);
+          return p ? [s.col, `${s.name.split(' (')[0]}, ${mm(p.date)}`, `${p.idx.toFixed(1)} (${d3.format(',.0f')(p.v)})`] : [s.col, s.name.split(' (')[0], '—'];
+        });
+        const cr = card.getBoundingClientRect();
+        J.showTip(card, tip, m === 0 ? 't (base month)' : `t + ${m} months`, lines, ev.clientX - cr.left, ev.clientY - cr.top);
+      })
+      .on('mouseleave', () => { rule.attr('display', 'none'); tip.style.display = 'none'; });
+  }
+
   function tiles() {
     const L = dash.data('fx_latest');
     if (L.status !== 'ok' || !L.data.length) return;
@@ -158,7 +245,7 @@
   J.redrawFinancial = () => {
     const pg = document.getElementById('financial');
     if (!pg || pg.hidden) return;
-    tiles(); dailyChart(); monthlyChart(); episodeChart();
+    tiles(); dailyChart(); monthlyChart(); episodeChart(); jciChart(); jciEpiChart();
   };
   dash.onData(() => { tiles(); J.redrawFinancial(); });
 })();
