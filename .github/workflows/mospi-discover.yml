@@ -5,9 +5,9 @@ name: MoSPI discovery (manual)
 on:
   workflow_dispatch:
   push:
-    branches: [dev-india]
+    branches: [dev-india, main]
     paths:
-      - pipeline/tools/mospi_discover.py
+      - pipeline/tools/mospi_nas_probe.py
       - .github/workflows/mospi-discover.yml
 
 permissions:
@@ -16,14 +16,14 @@ permissions:
 jobs:
   discover:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Query the MoSPI API
-        run: python -I pipeline/tools/mospi_discover.py discovery/mospi
+      - name: Query MoSPI's NAS API and WDI (India GDP page)
+        run: python -I pipeline/tools/mospi_nas_probe.py discovery/mospi_nas
       - name: Push results to the discovery branch
         run: |
           git config user.name "asia-vitals bot"
@@ -34,7 +34,7 @@ jobs:
           else
             git checkout --orphan discovery && git rm -rf --quiet --cached .
           fi
-          mkdir -p discovery && rm -rf discovery/mospi && cp -r /tmp/discovery/mospi discovery/
-          git add discovery/mospi
-          git commit -m "MoSPI discovery"
+          mkdir -p discovery && rm -rf discovery/mospi_nas && cp -r /tmp/discovery/mospi_nas discovery/
+          git add discovery/mospi_nas
+          git commit -m "MoSPI NAS discovery"
           git push origin discovery
