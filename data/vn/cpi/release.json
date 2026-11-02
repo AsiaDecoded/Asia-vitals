@@ -34,7 +34,7 @@
    "last_updated": "20260821 09:00"
   }
  },
- "processed_at": "2026-11-02T06:31:28Z",
+ "processed_at": "2026-11-02T07:04:57Z",
  "rows": 26974,
  "warnings": [
   "YTD average differs from the base-period indices by more than 0.06pp in 53 group cases (NSO aggregates these from lower levels), e.g. 2021-12-01 transport: YTD average 110.524 vs base indices 0.178pp",
@@ -47,11 +47,11 @@
   "ytd_checks": 871,
   "px_overlap": 5224
  },
- "processed": "2026-11-02T06:31:28Z",
+ "processed": "2026-11-02T07:04:57Z",
  "history": [
   {
    "code": "C2026-09",
-   "processed_at": "2026-11-02T06:31:28Z"
+   "processed_at": "2026-11-02T07:04:57Z"
   }
  ]
 }
