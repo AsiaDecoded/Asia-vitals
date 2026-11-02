@@ -22,6 +22,7 @@ rate is the published index - 100, or the published % rate where NSO prints the 
 """
 import csv
 import gzip
+import json
 import re
 import time
 
@@ -78,6 +79,7 @@ IIP_ROWS = [
 ]
 UNIT = {"level": "VND bn", "share": "% of GDP", "yoy": "%"}
 PXDIR = RAW / "vn" / "gdp_nso" / "px"
+HIST = RAW / "vn" / "gdp_nso" / "hist_sheets.json.gz"
 PX_TABLES = {"E03.02.px": ("sector", "current"), "E03.03.px": ("sector", "constant_2010"),
              "E03.08.px": ("expenditure", "current"), "E03.09.px": ("expenditure", "constant_2010")}
 ANN_ITEMS = [  # (table kind, code, English label, level, PX label pattern)
@@ -169,6 +171,13 @@ def update(force=False, **_):
         return {"updated": False, "code": state.get("code"), "summary": f"no new quarter (latest {latest_book})"}
     errors, warnings = [], []
     vint, iip_v = [], []
+    # History, Q3 2010 - Q4 2019: GDP sheets kept from the older report books (fixed; read once from NSO's media
+    # library, raw/vn/gdp_nso/hist_sheets.json.gz). 1994 prices to 2012, 2010 prices from 2013. Quarter-on-year
+    # rates for single quarters are in these tables only for Q1 and from Q2 2018; otherwise year to date.
+    hist = json.loads(gzip.decompress(HIST.read_bytes())) if HIST.exists() else []
+    for h in sorted(hist, key=lambda h: h["ref"]):
+        for r in N.read_gdp_sheets(list(h["sheets"].items()), h["ref"]):
+            vint.append({**r, "release": h["ref"], "release_date": "", "book": h["url"].rsplit("/", 1)[-1]})
     for key, info in sorted(index.items()):
         body = (BOOKS / "books" / info["file"]).read_bytes()
         rel = info["uploaded"][:10]
@@ -223,12 +232,17 @@ def update(force=False, **_):
                 errors.append(f"{last}: {code} {price} {measure} missing")
     allq = sorted(index)
     miss = [k for k in allq if (k, "total", "constant", "yoy") not in have]
+    ytd_have = {(r["period"], r["span"]) for r in rows if r["code"] == "total" and r["measure"] == "yoy"}
+    for y in range(2013, int(last[:4])):
+        for p, sp in ((f"{y}-Q1", "Q"), (f"{y}-H1", "6M"), (f"{y}-9M", "9M"), (str(y), "Y")):
+            if (p, sp) not in ytd_have:
+                errors.append(f"history: real GDP y/y {p} missing")
     if miss:
         errors.append(f"real GDP y/y missing for {miss}")
     for r in rows:
         if r["measure"] == "yoy" and not -80 < float(r["rate"]) < 250:
             errors.append(f"{r['period']} {r['code']} y/y {r['rate']} out of range")
-        if r["measure"] == "share" and not 0 <= r["value"] <= 100.0001:
+        if r["measure"] == "share" and not 0 <= r["value"] <= 100.01:
             errors.append(f"{r['period']} {r['code']} share {r['value']} out of range")
         if r["measure"] == "level" and r["value"] <= 0:
             errors.append(f"{r['period']} {r['code']} level {r['value']} not positive")

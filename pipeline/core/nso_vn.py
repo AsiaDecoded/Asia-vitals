@@ -593,8 +593,18 @@ GDP_ROWS = [  # (code, ISIC section, English label, level, Vietnamese label patt
 ]
 
 
+# Legacy TCVN3 (ABC) font encoding in some 2010-2011 report tables: the tokens the GDP reader needs
+TCVN3 = [("gi¸ so s¸nh", "giá so sánh"), ("gi¸ thùc tÕ", "giá thực tế"), ("thùc tÕ", "thực tế"), ("C¬ cÊu", "Cơ cấu"),
+         ("Tèc ®é ph¸t triÓn", "Tốc độ phát triển"), ("ph¸t triÓn", "phát triển"), ("th¸ng", "tháng"), ("n¨m", "năm"),
+         ("so víi", "so với"), ("Tæng sè", "TỔNG SỐ"), ("Tû ®ång", "Tỷ đồng"), ("quý", "quý")]
+
+
 def _norm(s):
-    return re.sub(r"\s+", " ", str(s or "")).strip()
+    t = re.sub(r"\s+", " ", str(s or "")).strip()
+    if re.search(r"[¸¬Ê®ÕÐ¨æ]", t):
+        for a, b in TCVN3:
+            t = t.replace(a, b)
+    return t
 
 
 def _period(t, year, ref_q):
@@ -616,13 +626,18 @@ def read_gdp_book(data, name, ref):
     Rows {period, span, code, price, measure, status, value, as_published} with price current|constant_2010|constant_2020,
     measure level (VND bn) | share (% of GDP at current prices) | yoy (same period last year = 100, or % growth where
     NSO prints the growth rate). Nothing is calculated; as_published is 'index' or 'pct'."""
+    return read_gdp_sheets(_sheets(data, name), ref)
+
+
+def read_gdp_sheets(sheets, ref):
+    """read_gdp_book on (sheet name, rows) pairs already read (e.g. the GDP sheets kept from older books)."""
     year, ref_q = int(ref[:4]), int(ref[-1])
     out = []
-    for sname, rows in _sheets(data, name):
+    for sname, rows in sheets:
         title = _norm(" ".join(str(c) for r in rows[:3] for c in r if isinstance(c, str)))
         if not re.search(r"Tổng sản phẩm trong nước", title) or re.search(r"địa bàn|GRDP", title):
             continue
-        first = next((i for i, r in enumerate(rows) if any(isinstance(c, str) and re.match(r"\s*(TỔNG SỐ|TỔNG SẢN PHẨM)", c) for c in r[:2])), None)
+        first = next((i for i, r in enumerate(rows) if any(isinstance(c, str) and re.match(r"(TỔNG SỐ|TỔNG SẢN PHẨM)", _norm(c)) for c in r[:2])), None)
         if first is None:
             continue
         ncol = max(len(r) for r in rows[:first + 1])
@@ -640,7 +655,7 @@ def read_gdp_book(data, name, ref):
         title0 = _norm(" ".join(str(c) for c in rows[0] if isinstance(c, str)))
         combined = not re.search(r"giá hiện hành|giá so sánh", title0)   # Q1: one table, both price bases
         cols = {}
-        hdr_all = " ".join(" ".join(h) for h in raw_hdr).lower()
+        hdr_all = (title + " " + " ".join(" ".join(h) for h in raw_hdr)).lower().replace("sáu tháng", "6 tháng").replace("chín tháng", "9 tháng")
         if re.search(r"so với\s+6\s*tháng|6\s*tháng", hdr_all):
             combined_period = (f"{year}-H1", "6M")
         elif re.search(r"so với\s+9\s*tháng|9\s*tháng", hdr_all):
@@ -654,9 +669,11 @@ def read_gdp_book(data, name, ref):
                 continue
             own = " ".join(h[j] for h in raw_hdr)
             carried = " ".join(h[j] for h in filled)
+            if not re.search(r"[^\W\d_]", own):   # a column with no header text of its own lies outside the table
+                continue
             if combined:
                 bm = re.search(r"giá so sánh (\d{4})", carried)
-                price = f"constant_{bm.group(1)}" if bm else "current" if "hiện hành" in carried else None
+                price = f"constant_{bm.group(1)}" if bm else "current" if re.search(r"hiện hành|thực tế", carried) else None
                 period, span = combined_period
                 status = "estimate"
             else:
@@ -681,7 +698,7 @@ def read_gdp_book(data, name, ref):
         lev = {(p, per): st for p, per, _, m, st, _ in cols.values() if m == "level"}
         seen = set()
         for r in rows[first:]:
-            lab = _norm(next((c for c in r[:2] if isinstance(c, str) and c.strip()), ""))
+            lab = _norm(next((c for c in r[:2] if isinstance(c, str) and c.strip() and _cell(c) is None), ""))
             code = next((c for c, _, _, _, pat in GDP_ROWS if re.search(pat, lab)), None)
             if not code or code in seen:
                 continue
