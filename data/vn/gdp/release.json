@@ -5,7 +5,7 @@
  "latest_book": "2026-Q3",
  "table": "NSO socio-economic report tables 1-2 (GDP) and quarterly IIP; PX-Web E03.02, E03.03, E03.08, E03.09 (annual)",
  "books": 27,
- "processed_at": "2026-11-02T10:10:31Z",
+ "processed_at": "2026-11-02T11:51:45Z",
  "rows": 10347,
  "warnings": [
   "2011 nominal GDP: report 2536631 vs yearbook 3539881 (revised)",
@@ -29,7 +29,7 @@
  "history": [
   {
    "code": "G2026-Q3",
-   "processed_at": "2026-11-02T10:10:31Z"
+   "processed_at": "2026-11-02T11:51:45Z"
   }
  ]
 }

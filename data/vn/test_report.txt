@@ -1,11 +1,11 @@
 == vn_cpi_nso
-   UPDATED: September 2026: 26974 rows, 58 workbooks (82s)
+   UPDATED: September 2026: 26974 rows, 58 workbooks (106s)
    WARNING: YTD average differs from the base-period indices by more than 0.06pp in 53 group cases (NSO aggregates these from lower levels), e.g. 2021-12-01 transport: YTD average 110.524 vs base indices 0.178pp
    WARNING: PX-Web and the workbooks differ in 30 cases (workbook kept): 2025-01 national transport prev_month: PX-Web 99.878 vs workbook 100.946; 2025-02 national transport prev_month: PX-Web 99.969 vs workbook 100.626; 2025-03 national transport prev_month: PX-Web 100.017 vs workbook 98.595; 2025-04 national transport prev_month: PX-Web 99.852 vs workbook 98.954; 2025-05 national transport prev_month: PX-Web 100.215 vs workbook 99.575; 2025-06 national transport prev_month: PX-Web 99.982 vs workbook 101.655; 2024-01 national gold base_period: PX-Web 146.480 vs workbook 169.080; 2024-02 national gold base_period: PX-Web 147.824 vs workbook 172.473
 == vn_ppi_nso
-   UPDATED: 2026-Q3: 4871 rows, 27 quarterly workbooks (208s)
+   UPDATED: 2026-Q3: 4871 rows, 27 quarterly workbooks (292s)
 == vn_gdp_nso
-   UPDATED: 2026-Q3: 10347 quarterly GDP rows, 1445 annual, 999 IIP rows, 27 books (40s)
+   UPDATED: 2026-Q3: 10347 quarterly GDP rows, 1445 annual, 999 IIP rows, 27 books (71s)
    WARNING: 2011 nominal GDP: report 2536631 vs yearbook 3539881 (revised)
    WARNING: 2012 nominal GDP: report 3245419 vs yearbook 4073762 (revised)
    WARNING: 2013 nominal GDP: report 3584262 vs yearbook 4473656 (revised)
@@ -20,8 +20,5 @@
    WARNING: 2022 nominal GDP: report 9513327 vs yearbook 9621372 (revised)
    WARNING: 2023 nominal GDP: report 10221815 vs yearbook 10319059 (revised)
 == vn_gdp_intl
-   UPDATED: IMF WEO 1980-2031 (update 9/24/2026); WDI 1985-2025 (updated 2026-10-08) (1s)
-   WARNING: 2023: IMF WEO 5.07 vs NSO yearbook 4.98
-   WARNING: 2024: IMF WEO 6.95 vs NSO yearbook 7.04
-September 2026 vs NSO release: 27/27 match
-Q3 2026 GDP vs NSO release: 12/12 match
+   CHECKS FAILED (1):
+   - World Bank NY.GNP.PCAP.CD: years [1989, 1990]..[2024, 2025] (need every year from 1985 to 2025)
