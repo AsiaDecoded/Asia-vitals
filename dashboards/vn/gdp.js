@@ -361,7 +361,7 @@ dash.calc('gdp_table', {
     const YTD_LABEL = { Q1: 'Jan–Mar', H1: 'Jan–Jun', '9M': 'Jan–Sep' };
     if (ytdRow) put(`${ytdRow.date.slice(0, 4)}-12-01`, 'ytd', ytdRow.v);
     const ytdName = ytdRow ? `NSO, ${YTD_LABEL[ytdRow.period.slice(5)] || 'year to date'} ${ytdRow.date.slice(0, 4)}` : '';
-    legend(id + '-legend', [{ name: S[0].name, color: S[0].color }].concat(ytdRow ? [{ name: ytdName, color: 'var(--ad-c2)', bar: true }] : []));
+    legend(id + '-legend', []);
     const rows = Array.from(by.values()).filter((r) => r[srcPick] != null || r.ytd != null).sort((a, b) => (a.date < b.date ? -1 : 1));
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 290, mr = 8;
@@ -373,6 +373,8 @@ dash.calc('gdp_table', {
     rows.filter((r) => r.ytd != null).forEach((r) => {
       svg.append('circle').attr('cx', x(J.date(r.date))).attr('cy', y(r.ytd)).attr('r', 4.5).attr('fill', 'var(--color-panel)')
         .attr('stroke', 'var(--ad-c2)').attr('stroke-width', 2);
+      svg.append('text').attr('x', x(J.date(r.date))).attr('y', y(r.ytd) - 9).attr('text-anchor', 'end').attr('font-size', 11)
+        .attr('fill', 'var(--ad-ink)').text('YTD');
     });
     const card = document.getElementById(id), tip = J.tip(card);
     const rule = svg.append('line').attr('y1', 8).attr('y2', H - 22).attr('stroke', 'var(--cds-chart-reference)').attr('display', 'none');
@@ -383,7 +385,7 @@ dash.calc('gdp_table', {
         rule.attr('display', null).attr('x1', px).attr('x2', px);
         const cr = card.getBoundingClientRect();
         const lines = S.filter((s) => r[s.key] != null).map((s) => [s.color, s.name, r[s.key].toFixed(2) + '%'])
-          .concat(r.ytd != null ? [['var(--ad-c2)', ytdName + ' (2020 prices)', r.ytd.toFixed(2) + '%']] : []);
+          .concat(r.ytd != null ? [['var(--ad-c2)', `YTD (${ytdName.replace('NSO, ', '')}, 2020 prices)`, r.ytd.toFixed(2) + '%']] : []);
         J.showTip(card, tip, r.date.slice(0, 4), lines, ev.clientX - cr.left, ev.clientY - cr.top);
       })
       .on('mouseleave', () => { rule.attr('display', 'none'); tip.style.display = 'none'; });
