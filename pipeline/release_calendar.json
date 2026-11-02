@@ -27,6 +27,7 @@
   "id_debt_imf": "No fixed dates: SUSPI (Bank Indonesia and Ministry of Finance) is quarterly with no calendar found; IMF WEO in April and October, IMF Global Debt Database once a year. A short monthly window (15th-18th) picks each up within a month; every source exits unchanged when nothing is new",
   "id_jci_daily": "Yahoo Finance (^JKSE, id_jci_yahoo; benchmark indices, eq_yahoo): daily closes, fetched once a week, Friday 08:15 SGT (to Thursday's close; both sources keep completed sessions only), with the dashboard refresh that Friday",
   "wb_gni": "World Bank: GNI per capita (WDI) updated each July with the new income classifications, revised at other WDI updates; no calendar used, one check a month (15th); exits unchanged when nothing is new",
+  "in_gdp": "MoSPI: expected from its pattern (quarterly estimates on the last working day of Feb, Aug and Nov; First Advance Estimates around 7 Jan; Q4 and Provisional Estimates on 7 June from 2026, MoSPI press note May 2026), 16:00 IST. The Advance Release Calendar 2026-27 PDF could not be fetched; check these against it. in_gdp_intl (WDI) runs on the same dates and exits unchanged when nothing is new",
   "id_fx": "BIS WS_XRU (id_fx_bis for Indonesia, fx_bis for 10 others): the BIS releases weekly, on Thursdays (data.bis.org: last release 29 Oct 2026, next 5 Nov; data to the Tuesday before), after the Asian runs; so one run a week, Friday 08:15 SGT, and the dashboard refresh that Friday"
  },
  "groups": {
@@ -61,6 +62,11 @@
    {"ref": "2027-01", "date": "2027-02-15", "status": "official"},
    {"ref": "2027-02", "date": "2027-03-15", "status": "official"},
    {"ref": "2027-03", "date": "2027-04-16", "status": "official"}]},
+  "in_gdp": {"label": "India GDP (MoSPI) and World Bank WDI", "sources": ["in_gdp_mospi", "in_gdp_intl"], "time_sgt": "18:30", "dates": [
+   {"ref": "2026-Q3", "date": "2026-11-30", "from": "2026-11-27", "to": "2026-12-04", "status": "expected", "note": "Q2 2026-27 (Jul-Sep)"},
+   {"ref": "2026-FAE", "date": "2027-01-07", "from": "2027-01-06", "to": "2027-01-12", "status": "expected", "note": "First Advance Estimates 2026-27"},
+   {"ref": "2026-Q4", "date": "2027-02-26", "from": "2027-02-26", "to": "2027-03-05", "status": "expected", "note": "Q3 2026-27 (Oct-Dec) and Second Advance Estimates"},
+   {"ref": "2027-Q1", "date": "2027-06-07", "from": "2027-06-04", "to": "2027-06-11", "status": "expected", "note": "Q4 2026-27 and Provisional Estimates"}]},
   "sg_cpi": {"label": "Singapore CPI", "sources": ["sg_cpi_singstat"], "time_sgt": "13:00", "dates": [
    {"ref": "2026-10", "date": "2026-11-23", "from": "2026-11-23", "to": "2026-11-27", "status": "expected"},
    {"ref": "2026-11", "date": "2026-12-23", "from": "2026-12-23", "to": "2026-12-29", "status": "expected"},

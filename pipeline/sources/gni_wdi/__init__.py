@@ -4,6 +4,8 @@ became middle income); country dashboards can read the same files.
 
 Sources (no key; GitHub's runners only, the workspace cannot reach the World Bank):
   WDI NY.GNP.PCAP.CD via api.worldbank.org/v2, as published. Taiwan is not in the World Bank's data.
+  WDI NY.GNP.ATLS.CD (GNI, Atlas method, current US$, total), as published: added 3 Nov 2026 for the India GDP tab
+  (Chart 1, GNI beside GDP); any dashboard can read it. If it fails, the other files still update (warning).
   World Bank historical income classifications (OGHIST.xlsx, "Country Analytical History"): the group each economy was
   assigned for each data year (L, LM, UM, H), from data year 1987 (fiscal year 1989).
 
@@ -20,6 +22,7 @@ Writes data/asia/gni/:
   asia_gni_index.csv     economy, name, t_year, t_rule, year, k (= year - t), gni_pc, index (= 100 at t; calculated)
   asia_gni_latest.csv    economy, name, year, gni_pc, income_group (for that data year), group_fiscal_year
   asia_gni_thresholds.csv data_year, low_max, lm_min, um_min, h_min (US$, as published in OGHIST "Thresholds", from 1987)
+  asia_gni_atlas.csv     economy, name, year, gni_atlas (US$, total, as published)
   long.csv, release.json, release_row.json (code W<latest year>-<hash>)
 The classification file used is the newest (by last data year) of the download and any OGHIST*.xlsx in raw/asia/gni/.
 """
@@ -38,7 +41,7 @@ OUT = DATA / "asia" / "gni"
 ECON = {"JP": ("JPN", "Japan"), "KR": ("KOR", "South Korea"), "HK": ("HKG", "Hong Kong"), "CN": ("CHN", "China"),
         "IN": ("IND", "India"), "ID": ("IDN", "Indonesia"), "TH": ("THA", "Thailand"), "MY": ("MYS", "Malaysia"),
         "SG": ("SGP", "Singapore"), "PH": ("PHL", "Philippines"), "VN": ("VNM", "Vietnam")}
-WDI = "https://api.worldbank.org/v2/country/{}/indicator/NY.GNP.PCAP.CD?format=json&per_page=5000&date=1960:2100"
+WDI = "https://api.worldbank.org/v2/country/{}/indicator/{}?format=json&per_page=5000&date=1960:2100"
 OGHIST = [
     "https://datacatalogfiles.worldbank.org/ddh-published/0037712/DR0090754/OGHIST.xlsx",
     "https://datacatalogfiles.worldbank.org/ddh-published/0037712/DR0090755/OGHIST.xlsx",
@@ -60,8 +63,8 @@ def get(url, tries=3):
     raise last
 
 
-def wdi():
-    js = json.loads(get(WDI.format(";".join(v[0] for v in ECON.values()))))
+def wdi(code="NY.GNP.PCAP.CD"):
+    js = json.loads(get(WDI.format(";".join(v[0] for v in ECON.values()), code)))
     out = {}
     iso = {v[0]: k for k, v in ECON.items()}
     for r in js[1] or []:
@@ -131,6 +134,12 @@ def update(force=False, **_):
     OUT.mkdir(parents=True, exist_ok=True)
     state = read_json(OUT / "release.json", {}) or {}
     gni, wdi_updated = wdi()
+    try:
+        atlas, _ = wdi("NY.GNP.ATLS.CD")
+    except Exception as e:  # noqa: BLE001
+        atlas, atlas_err = {}, f"NY.GNP.ATLS.CD: {type(e).__name__}: {e}"
+    else:
+        atlas_err = ""
     cls, thr, cls_last, cls_src, cls_errs = oghist()
     errors, warnings = [], []
     for k in ECON:
@@ -162,6 +171,15 @@ def update(force=False, **_):
         rows_latest.append({"economy": k, "name": ECON[k][1], "year": y, "gni_pc": round(gni[k][y]), "income_group": g,
                             "group_fiscal_year": cls.get(k, {}).get(y, ("", ""))[1]})
     rows_thr = [{"data_year": y, **v} for y, v in sorted(thr.items())]
+    if atlas_err:
+        warnings.append(f"GNI (Atlas) not updated: {atlas_err}")
+    missing = [k for k in ECON if k not in atlas]
+    if atlas and missing:
+        warnings.append(f"GNI (Atlas): no data for {', '.join(missing)}")
+    if any(v <= 0 for a in atlas.values() for v in a.values()):
+        warnings.append("GNI (Atlas): non-positive values; not updated")
+        atlas = {}
+    rows_atlas = [{"economy": k, "name": ECON[k][1], "year": y, "gni_atlas": round(v)} for k in ECON for y, v in sorted(atlas.get(k, {}).items())]
     rows_pc = [{"economy": k, "name": ECON[k][1], "year": y, "gni_pc": round(v)} for k in ECON for y, v in sorted(gni[k].items())]
     rows_cls = [{"economy": k, "name": ECON[k][1], "data_year": y, "fiscal_year": f, "income_group": g}
                 for k in ECON for y, (g, f) in sorted(cls[k].items())]
@@ -173,13 +191,14 @@ def update(force=False, **_):
         for y, v in sorted(gni[k].items()):
             rows_ix.append({"economy": k, "name": ECON[k][1], "t_year": ty, "t_rule": rule[k], "year": y, "k": y - ty,
                             "gni_pc": round(v), "index": round(v / gni[k][ty] * 100, 1)})
-    fp = hashlib.sha256(json.dumps([rows_pc, rows_cls, rows_ix, rows_latest, rows_thr], sort_keys=True).encode()).hexdigest()[:16]
+    fp = hashlib.sha256(json.dumps([rows_pc, rows_cls, rows_ix, rows_latest, rows_thr] + ([rows_atlas] if rows_atlas else []), sort_keys=True).encode()).hexdigest()[:16]
     summary = "t: " + ", ".join(f"{k} {t[k]}" for k in ECON if k in t) + "; no t (upper-middle or high income from the start): " + \
               ", ".join(f"{k} ({cls[k][min(cls[k])][0]} in {min(cls[k])})" for k in ECON if k not in t)
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change; {summary}", "warnings": warnings}
     for name, rows in (("asia_gni_pc.csv", rows_pc), ("asia_income_class.csv", rows_cls), ("asia_gni_index.csv", rows_ix),
-                       ("asia_gni_latest.csv", rows_latest), ("asia_gni_thresholds.csv", rows_thr)):
+                       ("asia_gni_latest.csv", rows_latest), ("asia_gni_thresholds.csv", rows_thr)) + \
+                      ((("asia_gni_atlas.csv", rows_atlas),) if rows_atlas else ()):
         with open(OUT / name, "w", newline="", encoding="utf-8") as fh:
             w = csv.DictWriter(fh, fieldnames=list(rows[0]), lineterminator="\n")
             w.writeheader()
@@ -188,6 +207,10 @@ def update(force=False, **_):
     nlong = write_long(({"country": r["economy"], "indicator": "gni_pc", "series": "NY.GNP.PCAP.CD", "label": "GNI per capita, Atlas method",
                          "measure": "level", "area": "", "freq": "A", "date": f"{r['year']}-01-01", "value": r["gni_pc"], "unit": "US$",
                          "source": SOURCE, "release": code} for r in rows_pc), OUT / "long.csv")
+    if rows_atlas:
+        write_long(({"country": r["economy"], "indicator": "gni", "series": "NY.GNP.ATLS.CD", "label": "GNI, Atlas method",
+                     "measure": "level", "area": "", "freq": "A", "date": f"{r['year']}-01-01", "value": r["gni_atlas"], "unit": "US$",
+                     "source": "World Bank, WDI (NY.GNP.ATLS.CD, Atlas method)", "release": code} for r in rows_atlas), OUT / "long_atlas.csv")
     write_release(OUT, {"code": code, "label": f"WDI GNI per capita to {latest}", "latest_year": latest, "wdi_updated": wdi_updated,
                         "t_years": t, "classifications": cls_src, "classifications_last_year": cls_last}, warnings, len(rows_pc), {"fingerprint": fp, "long_rows": nlong})
     return {"updated": True, "code": code, "summary": summary, "warnings": warnings}

@@ -14,6 +14,8 @@ SOURCES = [
     "in_cpi_imf",
     "in_cpi_core",
     "in_ppi_oea",
+    "in_gdp_mospi",
+    "in_gdp_intl",
     "sg_cpi_singstat",
     "sg_mas_forecast",
     "sg_cpi_hh_singstat",
