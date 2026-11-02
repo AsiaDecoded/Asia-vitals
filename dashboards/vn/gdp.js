@@ -73,7 +73,7 @@ dash.calc('gdp_table', {
   const SPAN_YTD = { 3: 'Q', 6: '6M', 9: '9M', 12: 'Y' };
   const SEC = [['agri', 'Agriculture, forestry and fishing', 'var(--ad-c6)'], ['ind_constr', 'Industry and construction', 'var(--ad-c1)'],
     ['services', 'Services', 'var(--ad-c5)'], ['taxes', 'Taxes on products less subsidies', 'var(--ad-c4)']];
-  let growthSpan = 'Q', levelBasis = 'current';
+  let growthSpan = 'Q', levelBasis = 'current', srcPick = 'nso';
   ['gdp-sectors', 'gdp-level', 'gdp-structure', 'gdp-mfg', 'gdp-mfg-share', 'gdp-annual', 'gdp-exp', 'gdp-exp-share'].forEach((id) => { J.period[id] = 0; });
 
   const G = () => dash.data('vn_gdp');
@@ -361,14 +361,14 @@ dash.calc('gdp_table', {
   // Chart 2: real GDP growth, annual: NSO's yearbook and the World Bank's WDI.
   function sources() {
     const id = 'gdp-src', box = document.getElementById(id + '-chart');
-    const S = [{ key: 'nso', name: 'NSO', color: 'var(--ad-c2)' }, { key: 'wb', name: 'World Bank', color: 'var(--ad-c8)', thin: true }];
-    legend(id + '-legend', S);
+    const S = [{ key: 'nso', name: 'NSO', color: 'var(--ad-c2)' }, { key: 'wb', name: 'World Bank', color: 'var(--ad-c2)' }].filter((s) => s.key === srcPick);
+    legend(id + '-legend', []);
     if (!status(box, ['vn_gdp_annual', 'vn_gdp_intl'])) return;
     const by = new Map();
     const put = (date, k, v) => { if (v == null) return; if (!by.has(date)) by.set(date, { date }); by.get(date)[k] = v; };
     annual('sector', 'total', 'constant_2010', 'yoy').forEach((r) => put(r.date, 'nso', r.v));
     dash.data('vn_gdp_intl').data.filter((r) => r.source === 'wb_wdi').forEach((r) => put(r.date, 'wb', num(r.value)));
-    const rows = Array.from(by.values()).sort((a, b) => (a.date < b.date ? -1 : 1));
+    const rows = Array.from(by.values()).filter((r) => r[srcPick] != null).sort((a, b) => (a.date < b.date ? -1 : 1));
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 290, mr = 8;
     const { svg, x, y, W, ml } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), fmt0, true, mr);
@@ -466,6 +466,7 @@ dash.calc('gdp_table', {
   };
   seg('gdp-growth-seg', 's', (v) => { growthSpan = v; });
   seg('gdp-level-seg', 'b', (v) => { levelBasis = v; });
+  seg('gdp-src-seg', 'src', (v) => { srcPick = v; });
 
   dash.onData(() => { tiles(); takeaway(); indTable(); gdpHeat(); iipHeat(); J.redrawGdp(); });
 })();
