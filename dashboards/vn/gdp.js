@@ -453,7 +453,7 @@ dash.calc('gdp_table', {
     if (cagr.length) {
       // Top of the plot, just left of where the line passes below the block (the line rises to the right).
       const lh = 16, n = cagr.length, ty = 18, bottom = ty + (n - 1) * lh + 6;
-      const t = svg.append('text').attr('font-size', 12).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'end');
+      const t = svg.append('text').attr('font-size', 12).attr('font-weight', 700).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'end');
       cagr.forEach((c, k) => t.append('tspan').attr('dy', k ? lh : 0).text(`${c.s}–${END} CAGR: ${c.v.toFixed(1)}% p.a.`));
       const bw = t.node().getBBox().width;
       const clear = rows.filter((r) => y(r.v) > bottom + 6).pop() || rows[0];
