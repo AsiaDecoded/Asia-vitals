@@ -297,6 +297,113 @@ def step_misc():
         fetch("pxvi", u)
 
 
+# --- GDP round (g1): national accounts on PX-Web, GDP posts and attachments, older report workbooks
+
+NA_KEY = re.compile(r"t[aà]i\s*kho[aả]n\s*qu[oố]c\s*gia|national\s*account|E\s*0?3\b|V\s*0?3\b|GDP|t[oổ]ng\s*s[aả]n\s*ph[aẩ]m", re.I)
+
+
+def _links(html_text, base):
+    out = []
+    for m in re.finditer(r"""<a\b[^>]*href=["']([^"'#]+)["'][^>]*>(.*?)</a>""", html_text, re.I | re.S):
+        u = urllib.parse.urljoin(base, _html.unescape(m.group(1)))
+        out.append((u, re.sub(r"<[^>]+>|\s+", " ", _html.unescape(m.group(2))).strip()))
+    return out
+
+
+def step_gdp_px():
+    """List every PX-Web database (web and API, en and vi); for national-accounts ones, list and export every table."""
+    found = {}
+    for lang in ("en", "vi"):
+        jget(f"pxapi_root_{lang}", f"{PX}/{lang}/")
+        s, h, b = fetch(f"pxweb_root_{lang}", f"{PXWEB}/{lang}/")
+        if s != 200:
+            continue
+        page = b.decode("utf-8", "replace")
+        dbs = sorted({u for u, t in _links(page, f"{PXWEB}/{lang}/") if f"/pxweb/{lang}/" in u})
+        (OUT / f"px_databases_{lang}.json").write_text(json.dumps(_links(page, f"{PXWEB}/{lang}/"), ensure_ascii=False, indent=1))
+        for u in dbs:
+            name = urllib.parse.unquote(u.split(f"/pxweb/{lang}/", 1)[1])
+            if not NA_KEY.search(name):
+                continue
+            s2, _, b2 = fetch(f"pxdb_{lang}", u.rstrip("/") + "/?tablelist=true")
+            if s2 != 200:
+                continue
+            for t_url, text in _links(b2.decode("utf-8", "replace"), u):
+                if re.search(r"\.px/?$", t_url, re.I):
+                    found[t_url] = {"lang": lang, "db_url": u, "text": text}
+    (OUT / "px_na_tables.json").write_text(json.dumps(found, ensure_ascii=False, indent=1))
+    for t_url, info in found.items():
+        rest = urllib.parse.unquote(t_url.split(f"/pxweb/{info['lang']}/", 1)[1]).strip("/").split("/")
+        if len(rest) < 3:
+            continue
+        db, folder, table = rest[0], rest[1], rest[-1]
+        try:
+            st, body, ext = px_export(info["lang"], db, folder, table, "FileTypePX")
+            info["export"] = SUMMARY[-1]["file"]
+            if ext != "px":
+                px_export(info["lang"], db, folder, table, "FileTypeCsvWithHeadingAndComma")
+                info["export"] = SUMMARY[-1]["file"]
+        except Exception as e:  # noqa: BLE001
+            info["error"] = f"{type(e).__name__}: {e}"
+        (OUT / "px_na_tables.json").write_text(json.dumps(found, ensure_ascii=False, indent=1))
+
+
+GDP_SEARCH = ["Tổng sản phẩm trong nước", "giá so sánh 2020", "quy mô GDP", "đánh giá lại quy mô", "GDP quý",
+              "gross domestic product", "GDP growth", "2020 constant prices", "revised GDP", "tài khoản quốc gia"]
+
+
+def step_gdp_wp():
+    """GDP posts (titles, dates, text) and GDP spreadsheet attachments."""
+    posts = {}
+    for term in GDP_SEARCH:
+        for page in (1, 2, 3):
+            items, h = jget("wpposts_gdp", f"{WP}/posts?search={urllib.parse.quote(term)}&per_page=100&page={page}"
+                            "&_fields=id,date,link,title,categories", save=False)
+            for x in items or []:
+                posts[x["id"]] = {"date": x["date"], "link": x["link"], "title": x["title"]["rendered"], "term": term}
+            if not items or page >= int(h.get("X-WP-TotalPages", 1) or 1):
+                break
+    (OUT / "wp_gdp_posts.json").write_text(json.dumps(posts, ensure_ascii=False, indent=1))
+    media = {}
+    for term in ("GDP", "Tong-san-pham", "tai-khoan-quoc-gia", "GDP-gia-so-sanh", "Bieu-GDP", "So-lieu-GDP"):
+        for page in (1, 2, 3):
+            items, h = jget("wpmedia_gdp", f"{WP}/media?search={urllib.parse.quote(term)}&per_page=100&page={page}"
+                            "&_fields=id,date,source_url,post,mime_type,title", save=False)
+            for x in items or []:
+                media[x["id"]] = {"date": x["date"], "url": x["source_url"], "post": x["post"], "mime": x["mime_type"],
+                                  "title": x["title"]["rendered"]}
+            if not items or page >= int(h.get("X-WP-TotalPages", 1) or 1):
+                break
+    (OUT / "wp_gdp_media.json").write_text(json.dumps(media, ensure_ascii=False, indent=1))
+    for x in media.values():
+        if x["url"].lower().endswith((".xlsx", ".xls", ".csv")):
+            fetch("gdpfile", x["url"])
+    # Full text of GDP-titled posts since 2025 (press releases: expenditure side, revisions, the 2020 rebase)
+    for pid, x in sorted(posts.items(), key=lambda kv: kv[1]["date"], reverse=True):
+        if x["date"] >= "2025-01-01" and re.search(r"GDP|tổng sản phẩm|kinh tế - xã hội|socio-economic|quy mô", x["title"], re.I):
+            fetch("post_gdp", f"{WP}/posts/{pid}?_fields=id,date,modified,link,title,content")
+
+
+def step_gdp_old():
+    """Report workbooks at quarter ends 2010-2019 (GDP tables before the stored 2020- series)."""
+    import datetime as _dt
+    found = []
+    for y in range(2010, 2020):
+        for m in (3, 6, 9, 12):
+            a = _dt.date(y, m, 15)
+            b = _dt.date(y + (m == 12), (m % 12) + 1, 12)
+            items, _ = jget("wpmedia_old", f"{WP}/media?after={a}T00:00:00&before={b}T00:00:00&per_page=100"
+                            "&_fields=id,date,source_url,post,mime_type", save=False)
+            for x in items or []:
+                u = x["source_url"]
+                if u.lower().endswith((".xlsx", ".xls")):
+                    found.append({"quarter": f"{y}Q{m // 3}", **x})
+    (OUT / "old_workbooks.json").write_text(json.dumps(found, ensure_ascii=False, indent=1))
+    for x in found:
+        if re.search(r"Bieu|bieu|So-lieu|so-lieu|GDP|KTXH|ktxh", x["source_url"]):
+            fetch("oldbook_" + x["quarter"], x["source_url"])
+
+
 def main(out, steps="px,wp,files"):
     global OUT
     OUT = Path(out)
@@ -305,7 +412,8 @@ def main(out, steps="px,wp,files"):
         try:
             {"px": step_px, "wp": step_wp, "files": step_files, "pxweb": step_pxweb,
              "posts": step_posts, "files2": step_files2,
-             "quarters": step_quarters, "misc": step_misc}[s]()
+             "quarters": step_quarters, "misc": step_misc,
+             "gdp_px": step_gdp_px, "gdp_wp": step_gdp_wp, "gdp_old": step_gdp_old}[s]()
         except Exception as e:  # noqa: BLE001
             SUMMARY.append({"name": f"step_{s}", "error": f"{type(e).__name__}: {e}"})
             print("step failed", s, e, flush=True)
