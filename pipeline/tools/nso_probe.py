@@ -683,6 +683,7 @@ def step_g8():
     st, h, b = fetch("g8", "https://api.worldbank.org/v2/country/VNM/indicator/NY.GNP.PCAP.CD?format=json&date=2005:2012", save=False)
     out["wdi_gni_pc_atlas"] = {"status": st, "body": b.decode("utf-8", "replace")[:6000] if st == 200 else ""}
     (OUT / "g8_income_class.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
+    print("G8JSON " + json.dumps(out, ensure_ascii=False), flush=True)   # also in the log (discovery branch push can collide)
 
 
 def main(out, steps="px,wp,files"):
