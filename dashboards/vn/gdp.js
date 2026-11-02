@@ -346,7 +346,7 @@ dash.calc('gdp_table', {
   }
 
 
-  // Chart 2: real GDP growth, annual: NSO's yearbook and the World Bank's WDI.
+  // Chart 3: real GDP growth, annual: NSO's yearbook and the World Bank's WDI.
   function sources() {
     const id = 'gdp-src', box = document.getElementById(id + '-chart');
     const S = [{ key: 'nso', name: 'NSO', color: 'var(--ad-c2)' }, { key: 'wb', name: 'World Bank', color: 'var(--ad-c2)' }].filter((s) => s.key === srcPick);
