@@ -74,7 +74,7 @@ dash.calc('gdp_table', {
   const SEC = [['agri', 'Agriculture, forestry and fishing', 'var(--ad-c6)'], ['ind_constr', 'Industry and construction', 'var(--ad-c1)'],
     ['services', 'Services', 'var(--ad-c5)'], ['taxes', 'Taxes on products less subsidies', 'var(--ad-c4)']];
   let growthBasis = 'real', levelBasis = 'current', srcPick = 'nso', usdPick = 'NY.GDP.MKTP.CD';
-  ['gdp-sectors', 'gdp-level', 'gdp-structure', 'gdp-mfg', 'gdp-mfg-share', 'gdp-annual', 'gdp-exp', 'gdp-exp-share'].forEach((id) => { J.period[id] = 0; });
+  ['gdp-sectors', 'gdp-structure', 'gdp-mfg', 'gdp-mfg-share', 'gdp-annual', 'gdp-exp', 'gdp-exp-share'].forEach((id) => { J.period[id] = 0; });
 
   const G = () => dash.data('vn_gdp');
   // Published quarterly rows for one industry: [{date, v, price, status, period}], sorted.
@@ -166,18 +166,6 @@ dash.calc('gdp_table', {
     hover(svg, card, x, rows, H, ml, W - mr, (r) => (growthBasis === 'real'
       ? [[col, 'Real GDP, y/y', r.v.toFixed(2) + '%'], [null, 'Prices of', BASE_LABEL(r.price).replace(' prices', '')]]
       : [[col, 'Nominal GDP, y/y (calculated)', r.v.toFixed(2) + '%']]));
-  }
-
-  // Chart 3: level, nominal (one series) or real (2010-price and 2020-price series apart).
-  function level() {
-    const id = 'gdp-level';
-    document.getElementById(id + '-units').textContent = levelBasis === 'current' ? 'VND trillion per quarter, current prices' : 'VND trillion per quarter, constant prices';
-    const trn = (rows) => rows.map((r) => ({ ...r, v: r.v / 1000 }));
-    const S = levelBasis === 'current'
-      ? [{ key: 'n', name: 'Nominal GDP', color: 'var(--ad-c1)', rows: trn(series('total', 'current', 'level')) }]
-      : [{ key: 'r10', name: 'Real GDP, 2010 prices', color: 'var(--ad-c2)', rows: trn(series('total', 'constant_2010', 'level')), hideNull: true },
-        { key: 'r20', name: 'Real GDP, 2020 prices', color: 'var(--ad-c3)', rows: trn(series('total', 'constant_2020', 'level')), hideNull: true }];
-    qLines(id, S, { zero: false, levels: levelBasis === 'current' ? 'nominal' : true, fmt: (v) => d3.format(',.0f')(v), tipFmt: (v) => d3.format(',.0f')(v) });
   }
 
   // Chart 4: published shares of GDP at current prices, stacked.
@@ -464,7 +452,6 @@ dash.calc('gdp_table', {
     sources();
     qLines('gdp-sectors', [{ key: 'gdp', name: 'GDP', color: 'var(--ad-c2)', rows: series('total', 'constant', 'yoy') }]
       .concat(SEC.slice(0, 3).map(([code, name, color]) => ({ key: code, name, color, thin: true, rows: series(code, 'constant', 'yoy') }))));
-    level();
     usd();
     structure();
     aLines('gdp-annual', [{ key: 'gdp', name: 'Real GDP', color: 'var(--ad-c2)', bar: true, rows: annual('sector', 'total', 'constant_2010', 'yoy') }]
@@ -493,7 +480,6 @@ dash.calc('gdp_table', {
     });
   };
   seg('gdp-growth-seg', 's', (v) => { growthBasis = v; });
-  seg('gdp-level-seg', 'b', (v) => { levelBasis = v; });
   seg('gdp-src-seg', 'src', (v) => { srcPick = v; });
   seg('gdp-usd-seg', 'u', (v) => { usdPick = v; });
 
