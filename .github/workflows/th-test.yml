@@ -1,35 +1,90 @@
-name: Thailand sources test (dev-th)
+name: Thailand GDP test
 
-# Runs the Thailand sources live on the dev-th branch and commits their output there.
+# Runs the Thailand GDP sources (th_gdp_nesdc, th_gdp_intl) on main with their checks, whether or not they are in the
+# shared registry yet; checks Q2 2026 against NESDC's release of 17 Aug 2026 and pushes data/th/gdp and raw/th/gdp_nesdc
+# back to main. (Until 2 Nov 2026 this workflow ran the TPSO price sources on dev-th, now merged.)
 on:
   workflow_dispatch:
   push:
-    branches: [dev-th]
+    branches: [main]
     paths:
-      - pipeline/sources/th_*/**
-      - pipeline/core/tpso*.py
+      - pipeline/sources/th_gdp_nesdc/**
+      - pipeline/sources/th_gdp_intl/**
       - .github/workflows/th-test.yml
 
 permissions:
   contents: write
 
+concurrency:
+  group: th-test
+  cancel-in-progress: true
+
 jobs:
-  run:
+  test:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Run the Thailand sources
-        run: python -I pipeline/run.py th_cpi_tpso th_ppi_tpso th_xmpi_tpso | tee /tmp/report.txt
-      - name: Commit output to dev-th
+      - name: Excel reader
+        run: pip install -q openpyxl==3.1.5
+
+      - name: Run the Thailand GDP sources with their checks
+        run: |
+          python -I - <<'PY'
+          import sys, traceback, importlib, time
+          sys.path.insert(0, "pipeline")
+          from core.common import CheckFailed
+          rc, lines = 0, []
+          for name in ("th_gdp_nesdc", "th_gdp_intl"):
+              t0 = time.time()
+              lines.append(f"== {name}")
+              try:
+                  res = importlib.import_module(f"sources.{name}").update(force=True)
+                  lines.append(f"   {'UPDATED' if res['updated'] else 'unchanged'}: {res['summary']} ({time.time() - t0:.0f}s)")
+                  for w in res.get("warnings", []):
+                      lines.append(f"   WARNING: {w}"[:1500])
+              except CheckFailed as e:
+                  rc = 1
+                  lines.append(f"   CHECKS FAILED ({len(e.errors)}):")
+                  lines += [f"   - {x}"[:600] for x in e.errors[:40]]
+              except Exception:
+                  rc = 1
+                  lines.append(traceback.format_exc())
+          open("th_report.txt", "w").write("\n".join(lines) + "\n")
+          print("\n".join(lines))
+          sys.exit(rc)
+          PY
+
+      - name: Q2 2026 GDP against the NESDC release
+        run: |
+          python -I - <<'PY'
+          import csv, sys
+          # NESDC, Gross Domestic Product: Q2/2026 (17 Aug 2026): real y/y, %, one decimal. H1 2026 2.4% is in the
+          # report text; here it is calculated from the chain volume levels (flagged calculated).
+          REL = {("2026-Q2", "total"): 1.9, ("2026-Q1", "total"): 2.8, ("2026-Q2", "agri"): 1.5, ("2026-Q1", "agri"): 2.0,
+                 ("2026-Q2", "nonagri"): 2.0, ("2026-Q1", "nonagri"): 2.9, ("2026-6M", "total"): 2.4, ("2025", "total"): 2.4}
+          rows = {(r["period"], r["code"]): float(r["rate"]) for r in csv.DictReader(open("data/th/gdp/th_gdp.csv"))
+                  if r["measure"] == "yoy" and r["price"] == "cvm_2002"}
+          bad = []
+          for k, v in REL.items():
+              x = rows.get(k)
+              if x is None: bad.append(f"GDP {k}: missing")
+              elif abs(round(x, 1) - v) > 0.051: bad.append(f"GDP {k}: {x:.3f} vs release {v}")
+          msg = f"Q2 2026 GDP vs NESDC release: {len(REL) - len(bad)}/{len(REL)} match"
+          print(msg); [print("  -", b) for b in bad]
+          open("th_report.txt", "a").write(msg + "\n" + "".join(f"  - {b}\n" for b in bad))
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: Push data and report to main
         if: always()
         run: |
           git config user.name "asia-vitals bot"
           git config user.email "actions@users.noreply.github.com"
-          mkdir -p data/th && cp /tmp/report.txt data/th/test_report.txt
-          git add data/th raw/th
-          git commit -m "TH test run" || exit 0
-          git checkout -- . && git pull --rebase origin dev-th && git push origin HEAD:dev-th
+          mkdir -p data/th/gdp && cp th_report.txt data/th/gdp/test_report.txt 2>/dev/null || true
+          git add data/th/gdp; if [ -d raw/th/gdp_nesdc ]; then git add raw/th/gdp_nesdc; fi
+          git commit -qm "Thailand GDP test run ${{ github.run_id }}" || exit 0
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
