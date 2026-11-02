@@ -8,6 +8,8 @@ Development Indicators (NY.GDP.MKTP.KD.ZG), as published. Both are % change on t
   annual average exchange rates) and constant 2015 US$ (NY.GDP.MKTP.KD), as published, in US$.
 - World Bank WDI, GDP per capita in US dollars (asked for 2 Nov 2026): current US$ (NY.GDP.PCAP.CD) and constant 2015 US$
   (NY.GDP.PCAP.KD), as published, in US$ per person.
+- World Bank WDI, GNI per capita, Atlas method (NY.GNP.PCAP.CD; the series the World Bank's income classification uses),
+  as published, in US$ per person (asked for 2 Nov 2026).
 
 APIs: IMF SDMX 3.0 (api.imf.org, no key) and api.worldbank.org/v2 (no key). A few seconds.
 """
@@ -25,7 +27,8 @@ OUT = DATA / "vn" / "gdp"
 WEO = "https://api.imf.org/external/sdmx/3.0/data/dataflow/IMF.RES/WEO/+/VNM.NGDP_RPCH.A"
 WDI = "https://api.worldbank.org/v2/country/VNM/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=200"
 WDI_USD = {"NY.GDP.MKTP.CD": "GDP, current US$", "NY.GDP.MKTP.KD": "GDP, constant 2015 US$",
-           "NY.GDP.PCAP.CD": "GDP per capita, current US$", "NY.GDP.PCAP.KD": "GDP per capita, constant 2015 US$"}
+           "NY.GDP.PCAP.CD": "GDP per capita, current US$", "NY.GDP.PCAP.KD": "GDP per capita, constant 2015 US$",
+           "NY.GNP.PCAP.CD": "GNI per capita, Atlas method, current US$"}
 WDI_URL = "https://api.worldbank.org/v2/country/VNM/indicator/{}?format=json&per_page=200"
 SRC = {"imf_weo": "IMF, World Economic Outlook (NGDP_RPCH)", "wb_wdi": "World Bank, World Development Indicators (NY.GDP.MKTP.KD.ZG)",
        "wb_wdi_usd": "World Bank, World Development Indicators"}
