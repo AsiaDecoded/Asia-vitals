@@ -8,7 +8,7 @@
   const failed = (st) => st === 'error' || st === 'connect' || st === 'declined';
   const N = (v) => (v === '' || v == null ? null : Number(v));
   const fyLab = (d) => { const y = Number(d.slice(0, 4)); return `${y}-${String((y + 1) % 100).padStart(2, '0')}`; };
-  // Charts 1-2: FY and the two-digit year the fiscal year ends in (WDI 2025 = 2025-26 = FY26), at the user's request.
+  // Charts 1-2, 5-6: FY and the two-digit year the fiscal year ends in (WDI 2025 = 2025-26 = FY26), at the user's request.
   const fyShort = (d) => `FY${String((Number(d.slice(0, 4)) + 1) % 100).padStart(2, '0')}`;
   const BASE_SWITCH = '2023-04-01';   // annual: MoSPI's 2022-23 base from 2023-24 (2011-12 base before)
   const LMI = 2007;                   // lower-middle income on 2007 GNI per capita (World Bank FY09; data/asia/gni)
@@ -220,7 +220,7 @@
     yt.forEach((t, i) => { if (t) rows[rows.length - 1][S[i].key + '_ytd'] = t.v; });
     const H = 280;
     const vals = rows.flatMap((r) => S.flatMap((s) => [r[s.key], r[s.key + '_ytd']])).filter((v) => v != null);
-    const { svg, x, y, W, ml, mr } = frame(box, rows, H, vals, true, (r) => (r.ytd ? 'YTD' : fyLab(r.date)), { labelWidth: 60, top: opt.base ? 24 : 12 });
+    const { svg, x, y, W, ml, mr } = frame(box, rows, H, vals, true, (r) => (r.ytd ? 'YTD' : fyShort(r.date)), { labelWidth: 44, top: opt.base ? 24 : 12 });
     if (opt.base && rows[0].date < BASE_SWITCH && rows[rows.length - 1].date >= BASE_SWITCH) {
       const k = rows.findIndex((r) => r.date >= BASE_SWITCH);
       const sx = (x(J.date(rows[k - 1].date)) + x(J.date(rows[k].date))) / 2;
@@ -231,7 +231,7 @@
     S.forEach((s) => rows.filter((r) => r[s.key + '_ytd'] != null).forEach((r) => svg.append('circle').attr('cx', x(J.date(r.date))).attr('cy', y(r[s.key + '_ytd']))
       .attr('r', s.thin ? 3.5 : 4.5).attr('fill', 'var(--color-panel)').attr('stroke', s.color).attr('stroke-width', 2)));
     const extras = hover(svg, document.getElementById(id), x, rows, H, ml, W - mr,
-      (r) => (r.ytd ? `${fyLab(r.date)} so far (${yd.label})` : fyLab(r.date) + (opt.headExtra ? opt.headExtra(r) : '')), (r, px) => {
+      (r) => (r.ytd ? `${fyShort(r.date)} so far (${yd.label})` : `${fyShort(r.date)} (${fyLab(r.date)}${opt.headExtra ? opt.headExtra(r) : ''})`), (r, px) => {
         dots.forEach((d, i) => { const v = r.ytd ? r[S[i].key + '_ytd'] : r[S[i].key]; d.attr('display', v == null ? 'none' : null).attr('cx', px).attr('cy', v == null ? 0 : y(v)); });
         return S.map((s) => [s.color, s.name, pct(r.ytd ? r[s.key + '_ytd'] : r[s.key])]);
       });
@@ -246,7 +246,7 @@
       ? [{ key: 'gdp', name: 'MoSPI', color: 'var(--ad-c2)', ytd: 'gdp', rows: () => series('A', 'gdp') }]
       : [{ key: 'wb', name: 'World Bank', color: 'var(--ad-c2)',
         rows: () => dash.data('in_gdp_intl').data.filter((r) => r.series === 'NY.GDP.MKTP.KD.ZG').map((r) => ({ date: r.date, v: N(r.value) })) }];
-    annualChart('gdp-src', S, { ds: ['in_gdp', 'in_gdp_intl'], base: srcPick === 'mospi', headExtra: srcPick === 'mospi' ? baseOf : (r) => ` (WDI ${r.date.slice(0, 4)})` });
+    annualChart('gdp-src', S, { ds: ['in_gdp', 'in_gdp_intl'], base: srcPick === 'mospi', headExtra: srcPick === 'mospi' ? baseOf : null });
   }
   // Chart 6: real growth by sector, annual, MoSPI.
   function sectorsA() {
