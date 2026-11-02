@@ -137,7 +137,7 @@ def update(force=False, **_):
         for y, v in sorted(gni[k].items()):
             rows_ix.append({"economy": k, "name": ECON[k][1], "t_year": ty, "t_rule": rule[k], "year": y, "k": y - ty,
                             "gni_pc": round(v), "index": round(v / gni[k][ty] * 100, 1)})
-    fp = hashlib.sha256(json.dumps([rows_pc, rows_cls], sort_keys=True).encode()).hexdigest()[:16]
+    fp = hashlib.sha256(json.dumps([rows_pc, rows_cls, rows_ix], sort_keys=True).encode()).hexdigest()[:16]
     summary = "t: " + ", ".join(f"{k} {t[k]}" for k in ECON if k in t) + "; no t (upper-middle or high income from the start): " + \
               ", ".join(f"{k} ({cls[k][min(cls[k])][0]} in {min(cls[k])})" for k in ECON if k not in t)
     if state.get("fingerprint") == fp and not force:
