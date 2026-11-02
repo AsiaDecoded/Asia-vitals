@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 env:
-  ROUND: r1
+  ROUND: r2
 
 jobs:
   discover:
@@ -25,6 +25,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Redirect chain (curl, cookie jar)
+        continue-on-error: true
+        run: |
+          D=discovery/nesdc/$ROUND; mkdir -p $D
+          for u in https://www.nesdc.go.th/ https://www.nesdc.go.th/en/info/quarterly-gross-domestic-product-qgdp-en/ "https://www.nesdc.go.th/main.php?filename=qgdp_page"; do
+            echo "== $u" >> $D/curl.txt
+            curl -sS -L -m 60 --max-redirs 10 -c /tmp/cj -b /tmp/cj -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36" -D - -o /dev/null -w "final %{http_code} %{url_effective} %{size_download}b\n" "$u" >> $D/curl.txt 2>&1
+          done
+          cat $D/curl.txt
       - name: Probe
         continue-on-error: true
         run: timeout 30m python -I -u pipeline/tools/nesdc_probe.py discovery/nesdc/$ROUND 80

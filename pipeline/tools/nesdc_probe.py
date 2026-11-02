@@ -15,10 +15,14 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import http.cookiejar
 from pathlib import Path
 
-UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) asia-vitals/0.1 (+https://github.com/AsiaDecoded/asia-vitals)",
-      "Accept": "*/*", "Accept-Language": "en;q=0.9,th;q=0.8"}
+UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36",
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "Accept-Language": "en;q=0.9,th;q=0.8"}
+# NESDC answered every request with a bare 302 in round r1 (urllib gave up): keep cookies across requests.
+JAR = http.cookiejar.CookieJar()
+OPENER = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(JAR))
 SEEDS = [
     "https://www.nesdc.go.th/en/info/national-accounts/",
     "https://www.nesdc.go.th/en/info/quarterly-gross-domestic-product-qgdp-en/",
@@ -26,8 +30,11 @@ SEEDS = [
     "https://www.nesdc.go.th/en/download/gross-domestic-product-q1-2026-report/",
     "https://www.nesdc.go.th/en/",
     "https://www.nesdc.go.th/",
+    "https://www.nesdc.go.th/nesdb_en/main.php?filename=national_account",
+    "https://www.nesdc.go.th/main.php?filename=qgdp_page",
+    "https://www.nesdc.go.th/nesdb_en/main.php?filename=index",
 ]
-FOLLOW = re.compile(r"nesdc\.go\.th/.*(national-account|gdp|qgdp|gross-domestic|download|wp-content/uploads|"
+FOLLOW = re.compile(r"nesdc\.go\.th/.*(national.account|nid=|ewt_dl|gdp|qgdp|gross-domestic|download|wp-content/uploads|"
                     r"%e0%b8%9a%e0%b8%b1%e0%b8%8d%e0%b8%8a%e0%b8%b5|calendar|release)", re.I)
 FILE = re.compile(r"\.(xlsx?|zip|csv)(\?|$)", re.I)
 WP_TERMS = ["qgdp", "gross domestic product", "national income", "chain volume", "all tables", "GDP time series",
@@ -41,7 +48,7 @@ def fetch(url, save=True, timeout=90):
     status, headers, body, err = None, {}, b"", None
     for attempt in range(3):
         try:
-            with urllib.request.urlopen(req, timeout=timeout) as r:
+            with OPENER.open(req, timeout=timeout) as r:
                 status, headers, body = r.status, dict(r.headers), r.read()
             err = None
             break
@@ -63,7 +70,8 @@ def fetch(url, save=True, timeout=90):
             fn = f"pages/{h}_{base or 'index'}.{'json' if 'json' in ct else 'html'}"
         (OUT / fn).parent.mkdir(parents=True, exist_ok=True)
         (OUT / fn).write_bytes(body)
-    SUMMARY.append({"url": url, "status": status, "error": err, "bytes": len(body), "ctype": ct, "file": fn,
+    SUMMARY.append({"url": url, "final": getattr(locals().get("r"), "url", None), "location": headers.get("Location", ""),
+                    "set_cookie": headers.get("Set-Cookie", "")[:300], "status": status, "error": err, "bytes": len(body), "ctype": ct, "file": fn,
                     "disposition": headers.get("Content-Disposition", "")})
     return status, ct, body
 
