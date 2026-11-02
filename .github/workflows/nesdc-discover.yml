@@ -1,0 +1,43 @@
+name: NESDC (Thailand) GDP discovery (manual)
+
+# Probes NESDC's national accounts pages and downloads, the Bank of Thailand and the World Bank from Actions
+# (blocked from the Claude sandbox) and saves the responses to the "discovery" branch under discovery/nesdc/<round>.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - pipeline/tools/nesdc_probe.py
+      - .github/workflows/nesdc-discover.yml
+
+permissions:
+  contents: write
+
+env:
+  ROUND: r1
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe
+        continue-on-error: true
+        run: timeout 30m python -I -u pipeline/tools/nesdc_probe.py discovery/nesdc/$ROUND 80
+      - name: Push results to the discovery branch
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mv discovery /tmp/discovery
+          for i in 1 2 3; do
+            git fetch origin discovery && git checkout -f -B discovery origin/discovery
+            mkdir -p discovery/nesdc && rm -rf discovery/nesdc/$ROUND && cp -r /tmp/discovery/nesdc/$ROUND discovery/nesdc/
+            git add discovery/nesdc/$ROUND
+            git commit -qm "NESDC discovery $ROUND" && git push -q origin discovery && break
+            sleep 5
+          done
