@@ -114,12 +114,102 @@
   </header>
 
   <nav class="jg-tabs" role="tablist" aria-label="Sections">
-    <button role="tab" data-tab="inflation" aria-selected="true">Inflation</button>
+    <button role="tab" data-tab="gdp" aria-selected="true">GDP</button>
+    <button role="tab" data-tab="inflation" aria-selected="false">Inflation</button>
     <button role="tab" data-tab="financial" aria-selected="false">Financial</button>
     <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
   </nav>
 
-  <section class="jg-page" id="inflation" role="tabpanel">
+  <section class="jg-page" id="gdp" role="tabpanel">
+    <div class="jg-pagehead">
+      <div class="jg-note" style="margin:0"><span id="gdp-q" class="dash-skeleton" style="color: var(--color-fg)" data-source="gdp_latest" data-field="label" data-row="0">—</span></div>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="gdp-usd" data-periods="a">
+        <div class="jg-cardhead">
+          <div><h2>Philippines GDP</h2></div>
+          <div class="jg-seg" id="gdp-usd-seg" role="group" aria-label="View">
+            <button data-u="NY.GDP.MKTP.KD" aria-pressed="true">Real</button><button data-u="NY.GDP.MKTP.CD" aria-pressed="false">Nominal</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units" id="gdp-usd-units">US$ billion, constant 2015 prices</span><div class="jg-legend" id="gdp-usd-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-usd-chart" data-source="ph_gdp_intl"></div>
+        <div class="ad-foot"><span>Source: WDI</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="gdp-pc" data-periods="a">
+        <div class="jg-cardhead">
+          <div><h2>Philippines GDP per capita</h2></div>
+          <div class="jg-seg" id="gdp-pc-seg" role="group" aria-label="View">
+            <button data-u="NY.GDP.PCAP.KD" aria-pressed="true">Real</button><button data-u="NY.GDP.PCAP.CD" aria-pressed="false">Nominal</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units" id="gdp-pc-units">US$, constant 2015 prices</span><div class="jg-legend" id="gdp-pc-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-pc-chart" data-source="ph_gdp_intl asia_gni_pc"></div>
+        <div class="ad-foot"><span>Source: WDI</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="gdp-growth">
+        <div class="jg-cardhead">
+          <div><h2>Philippines GDP growth</h2></div>
+          <div class="jg-seg" id="gdp-growth-seg" role="group" aria-label="View">
+            <button data-s="real" aria-pressed="true">Real</button><button data-s="nominal" aria-pressed="false">Nominal</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="gdp-growth-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-growth-chart" data-source="ph_gdp"></div>
+        <div class="ad-foot"><span>Source: PSA</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="gdp-sectors">
+        <div class="jg-cardhead">
+          <div><h2>Philippines real GDP growth by sector</h2></div>
+        </div>
+        <div class="ad-top"><span class="ad-units">% y/y, constant 2018 prices</span><div class="jg-legend" id="gdp-sectors-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-sectors-chart" data-source="ph_gdp"></div>
+        <div class="ad-foot"><span>Source: PSA</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="gdp-src" data-periods="a">
+        <div class="jg-cardhead">
+          <div><h2>Philippines real GDP growth</h2></div>
+          <div class="jg-seg" id="gdp-src-seg" role="group" aria-label="View">
+            <button data-src="psa" aria-pressed="true">PSA</button><button data-src="wb" aria-pressed="false">World Bank</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="gdp-src-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-src-chart" data-source="ph_gdp ph_gdp_intl"></div>
+        <div class="ad-foot"><span>Source: PSA, WDI</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="gdp-annual" data-periods="a">
+        <div class="jg-cardhead">
+          <div><h2>Philippines real GDP growth by sector</h2></div>
+        </div>
+        <div class="ad-top"><span class="ad-units">% y/y, constant 2018 prices</span><div class="jg-legend" id="gdp-annual-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-annual-chart" data-source="ph_gdp"></div>
+        <div class="ad-foot"><span>Source: PSA</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card ad-method" id="gdp-notes">
+      <h2>Chart notes</h2>
+      <ul>
+        <li><b>Chart 1, GDP in US dollars:</b> annual, from 1960, as published by the World Bank (World Development Indicators). Real: GDP at constant 2015 US dollars (NY.GDP.MKTP.KD). Nominal: GDP at current US dollars (NY.GDP.MKTP.CD), converted at the World Bank&rsquo;s annual average exchange rates, so it moves with the peso as well as with output; with gross national income, Atlas method, current US$ (NY.GNP.ATLS.CD), the total behind Chart 2&rsquo;s GNI per capita. US$ billion (the World Bank&rsquo;s US$ divided by 10<sup>9</sup>). <b>Income groups</b> (dashed lines): the Philippines was lower-middle income when the World Bank&rsquo;s classifications began (1987 data, FY89) and became upper-middle income on its 2025 GNI per capita (FY27, announced July 2026). <b>CAGR</b> (Charts 1 and 2): compound annual growth from the World Bank figures, (latest-year value / 1987 value)<sup>1/years</sup> &minus; 1, 1987 to the latest WDI year; calculated on this page.</li>
+        <li><b>Chart 2, GDP per capita in US dollars:</b> as Chart 1, in US$ per person: constant 2015 US$ (NY.GDP.PCAP.KD) and current US$ (NY.GDP.PCAP.CD). <i>Nominal</i> also shows GNI per capita, Atlas method (NY.GNP.PCAP.CD), the series behind the World Bank&rsquo;s income classification, from the Asia dashboard&rsquo;s central GNI dataset; it converts at a three-year average of exchange rates adjusted for inflation.</li>
+        <li><b>Chart 3, GDP growth:</b> against the same quarter a year earlier, from the first quarter of 1982, as published by the PSA. Real: constant 2018 prices. Nominal: current prices. The PSA&rsquo;s quarterly series is on one base throughout (its 2018-based series, carried back to 1981), so there are no breaks.</li>
+        <li><b>Chart 4, by sector:</b> the PSA&rsquo;s three major sectors, real, y/y, from 1982: agriculture, forestry and fishing; industry (mining and quarrying, manufacturing, electricity, steam, water and waste management, and construction); and services. The three sum to GDP; the PSA&rsquo;s GDP has no separate taxes line.</li>
+        <li><b>Chart 5, annual growth by source:</b> real GDP, % change on the previous year. PSA: its annual series at constant 2018 prices, from 1947. World Bank: World Development Indicators, from 1961 (equal to the PSA&rsquo;s rates where both exist, to one decimal). The open circle labelled YTD is the current year so far, <b>calculated</b> by Asia Decoded from the PSA&rsquo;s published quarterly levels at 2018 prices (the year&rsquo;s quarters to date against the same quarters a year earlier); the PSA states the figure in its release text, not in its tables. Shown until the PSA publishes the full year.</li>
+        <li><b>Chart 6, annual growth by sector:</b> the PSA&rsquo;s annual real growth for GDP and the three major sectors, constant 2018 prices, from 1947 (agriculture from 1948); YTD as in Chart 5.</li>
+      </ul>
+      <div class="ad-foot"><span>Source: Philippine Statistics Authority; World Bank</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+    <p class="jg-foot">Source: Philippine Statistics Authority (PSA), National Accounts of the Philippines, OpenSTAT database: <span data-source="gdp_release" data-field="label" data-row="0">—</span>. World Bank, World Development Indicators. Figures as published, except the year-to-date growth on Charts 5 and 6 and the CAGR on Charts 1 and 2 (calculated).</p>
+  </section>
+
+  <section class="jg-page" id="inflation" role="tabpanel" hidden>
     <div class="jg-pagehead">
       <div class="jg-note" style="margin:0"><span id="cpi-month" class="dash-skeleton" style="color: var(--color-fg)">—</span></div>
       <p class="jg-take" id="cpi-takeaway"><span class="dash-skeleton">—</span></p>
@@ -340,7 +430,7 @@ window.JG = {
     if (lbl && out.length) {
       const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
       const q = card.closest('.jg-page') && card.closest('.jg-page').id === 'gdp';
-      const f = (d) => (q ? `Q${Math.floor((Number(d.slice(5, 7)) - 1) / 3) + 1} ${d.slice(0, 4)}` : MON[Number(d.slice(5, 7)) - 1] + ' ' + d.slice(0, 4));
+      const f = (d) => (card.dataset.periods === 'a' ? d.slice(0, 4) : q ? `Q${Math.floor((Number(d.slice(5, 7)) - 1) / 3) + 1} ${d.slice(0, 4)}` : MON[Number(d.slice(5, 7)) - 1] + ' ' + d.slice(0, 4));
       lbl.textContent = `${f(out[0].date)} to ${f(out[out.length - 1].date)}`;
     }
     return out;
@@ -349,7 +439,7 @@ window.JG = {
     document.querySelectorAll('.jg-card').forEach((card) => {
       const chart = card.querySelector(':scope > .jg-chart'); if (!chart || !card.id) return;
       const page = card.closest('.jg-page'); const p = page ? page.id : 'inflation';
-      const redraw = () => { if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else if (p === 'financial') JG.redrawFx && JG.redrawFx(); };
+      const redraw = () => { if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else if (p === 'financial') JG.redrawFx && JG.redrawFx(); else if (p === 'gdp') JG.redrawGdp && JG.redrawGdp(); };
       const wrap = document.createElement('div'); wrap.className = 'ad-slider';
       const track = document.createElement('div'); track.className = 'ad-slider-track';
       const sel = document.createElement('div'); sel.className = 'ad-slider-sel'; track.appendChild(sel);
@@ -478,14 +568,16 @@ window.JG = {
     tabs.forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === id)));
     document.querySelectorAll('.jg-page').forEach((p) => { p.hidden = p.id !== id; });
     dash.setLink(id);
+    if (id === 'gdp' && J.redrawGdp) J.redrawGdp();
     if (id === 'inflation' && J.redrawCpi) J.redrawCpi();
     if (id === 'financial' && J.redrawFx) J.redrawFx();
   };
   J.show = show;
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
-  if (['methodology', 'financial'].includes(location.hash.slice(1))) show(location.hash.slice(1));
+  if (['inflation', 'methodology', 'financial'].includes(location.hash.slice(1))) show(location.hash.slice(1));
 })();
 </script>
 
 <script src="cpi.js"></script>
+<script src="gdp.js"></script>
 <script src="export.js"></script>

@@ -90,7 +90,7 @@ def update(force=False, **_):
         for r in rows:
             wr.writerow({"date": f"{r['year']}-12-01", **r, "source": SOURCE})
     code = f"W-{upd}"
-    label = f"WDI {FIRST}-{last} (updated {upd})"
+    label = f"WDI {min(data['NY.GDP.MKTP.CD'])}-{last} (updated {upd})"
     nlong = write_long(({"country": "PH", "indicator": "gdp_intl", "series": r["series"], "label": r["label"],
                          "measure": r["measure"], "area": "national", "freq": "A", "date": f"{r['year']}-12-01",
                          "value": r["value"], "unit": r["unit"], "source": SOURCE, "release": code} for r in rows),
