@@ -19,8 +19,11 @@ MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "No
 
 def fetch():
     import yfinance as yf  # noqa: PLC0415
+    import datetime as dt  # noqa: PLC0415
     df = yf.Ticker("^JKSE").history(period="max", interval="1d", auto_adjust=False)
-    return {ix.strftime("%Y-%m-%d"): float(v) for ix, v in df["Close"].items() if v == v and v > 0}
+    # completed sessions only: Yahoo fills today's bar with the live price while Jakarta trades (Singapore date)
+    today = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=8)).date().isoformat()
+    return {ix.strftime("%Y-%m-%d"): float(v) for ix, v in df["Close"].items() if v == v and v > 0 and ix.strftime("%Y-%m-%d") < today}
 
 
 def update(force=False, **_):
