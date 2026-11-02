@@ -1,6 +1,6 @@
 [
  {
-  "code": "W2025-9a28e6",
+  "code": "W2025-205df5",
   "label": "WDI GNI per capita to 2025",
   "latest_year": 2025,
   "wdi_updated": "2026-10-08",
@@ -15,6 +15,6 @@
   },
   "classifications": "raw/asia/gni/OGHIST_2026_10_08.xlsx",
   "classifications_last_year": 2025,
-  "processed_at": "2026-11-02T12:44:11Z"
+  "processed_at": "2026-11-02T23:49:25Z"
  }
 ]
