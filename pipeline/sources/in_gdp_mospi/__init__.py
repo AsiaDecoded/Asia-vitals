@@ -118,9 +118,14 @@ def tidy(raw):
     return rows
 
 
-def shown(rows):
-    """Rows the page shows: quarterly 2022-23 base; annual latest vintage, 2011-12 base to 2022-23, then 2022-23 base."""
-    out, best = [], {}
+def shown(rows, warnings=None):
+    """Rows the page shows: quarterly 2022-23 base; annual latest vintage, 2011-12 base to 2022-23, then 2022-23 base.
+
+    Where the latest vintage of a year holds more than one differing value (MoSPI's API returns three "Additional
+    Revision" rows for 2012-13 and 2013-14, with no field telling them apart), the year is left out for that row and
+    listed in warnings, rather than one value being picked.
+    """
+    out, best, clash = [], {}, set()
     for r in rows:
         if r["freq"] == "Q":
             out.append(r)
@@ -133,6 +138,15 @@ def shown(rows):
         k = (r["fy"], r["code"], r["measure"], r["price"])
         if k not in best or r["rev_rank"] > best[k]["rev_rank"]:
             best[k] = r
+            clash.discard(k)
+        elif r["rev_rank"] == best[k]["rev_rank"] and r["value"] != best[k]["value"]:
+            clash.add(k)
+    for k in sorted(clash):
+        if warnings is not None:
+            vals = sorted({x["value"] for x in rows if x["freq"] == "A" and (x["fy"], x["code"], x["measure"], x["price"]) == k
+                           and x["rev_rank"] == best[k]["rev_rank"] and x["base_year"] == best[k]["base_year"]})
+            warnings.append(f"{k[0]} {k[1]} {k[3]} {k[2]}: {best[k]['revision']} has {len(vals)} values {vals}; left out")
+        del best[k]
     return out + sorted(best.values(), key=lambda r: (r["date"], r["code"], r["measure"], r["price"]))
 
 
@@ -181,8 +195,9 @@ def update(force=False, **_):
     OUT.mkdir(parents=True, exist_ok=True)
     state = read_json(OUT / "release.json", {}) or {}
     rows = tidy(fetch())
-    sh = shown(rows)
-    warnings = check(rows, sh)
+    clashes = []
+    sh = shown(rows, clashes)
+    warnings = clashes + check(rows, sh)
     fp = hashlib.sha256(json.dumps(rows, sort_keys=True).encode()).hexdigest()[:16]
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change ({state.get('label')})"}
