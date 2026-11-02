@@ -391,11 +391,11 @@ dash.calc('weights_wide', {
     document.querySelectorAll('.jg-page').forEach((pg) => { pg.hidden = pg.id !== id; });
     dash.setLink(id);
     if (id === 'inflation') J.redrawCpi();
-    if (id === 'gdp' && J.redrawGdp) J.redrawGdp();
+    if ((id === 'gdp' || id === 'manufacturing') && J.redrawGdp) J.redrawGdp();
   };
   J.show = show;
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
-  if (['methodology', 'inflation'].includes(location.hash.slice(1))) show(location.hash.slice(1));
+  if (['manufacturing', 'methodology', 'inflation'].includes(location.hash.slice(1))) show(location.hash.slice(1));
 
   dash.onData(() => { tiles(); takeaway(); divHeat(); weightsTable(); J.redrawCpi(); });
 })();

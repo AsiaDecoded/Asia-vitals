@@ -5,6 +5,7 @@
 
   <nav class="jg-tabs" role="tablist" aria-label="Sections">
     <button role="tab" data-tab="gdp" aria-selected="true">GDP</button>
+    <button role="tab" data-tab="manufacturing" aria-selected="false">Manufacturing</button>
     <button role="tab" data-tab="inflation" aria-selected="false">Inflation</button>
     <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
   </nav>
@@ -126,6 +127,29 @@
       <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
     </section>
 
+    <section class="jg-card ad-notes" id="gdp-notes">
+      <h2>Chart notes</h2>
+      <ol>
+        <li><b>All figures are as published by the National Statistics Office of Viet Nam (NSO); none is calculated.</b> Quarterly figures are from NSO&rsquo;s socio-economic report tables, annual figures from its statistical yearbook database. Real growth is NSO&rsquo;s index against the same period a year earlier (= 100) less 100, or the rate itself where NSO prints a rate (first-quarter tables from 2024). Levels are shown in VND trillion: NSO&rsquo;s VND billion divided by 1,000. NSO publishes no seasonally adjusted series and no quarter-on-quarter growth.</li>
+        <li><b>Vintages:</b> each quarterly report gives the reference quarter (estimate), the previous quarter (preliminary) and the year to date. The page shows the latest published figure for each period. The yearbook&rsquo;s last two years are preliminary and estimated.</li>
+        <li><b>Breaks (dashed lines):</b> 2020 quarterly levels are on the scale before NSO&rsquo;s 2021 revaluation of GDP (the yearbook puts 2020 nominal GDP at VND 8,044 trillion; the 2020 quarterly tables sum to VND 6,293 trillion). Constant prices are 2010 prices up to the fourth quarter of 2025 and 2020 prices from the first quarter of 2026, when NSO also revised the current-price scale; earlier quarters have not been restated in these tables. Levels are therefore not comparable across either break; NSO&rsquo;s growth rates are its own on each basis.</li>
+        <li><b>Chart 1, real GDP growth:</b> quarterly y/y (bars), or the year-to-date figure (three, six, nine and twelve months against the same period a year earlier).</li>
+        <li><b>Chart 2, by sector:</b> agriculture, forestry and fishing; industry and construction; services; and taxes on products less subsidies, the four parts NSO sums to GDP.</li>
+        <li><b>Chart 3, level:</b> GDP per quarter at current prices (nominal), or at constant prices (real), with the 2010-price and 2020-price series shown separately.</li>
+        <li><b>Chart 4, structure:</b> NSO&rsquo;s published shares of GDP at current prices. The four parts sum to 100.</li>
+        <li><b>Chart 5, annual growth:</b> the yearbook&rsquo;s real GDP and sector growth (previous year = 100, less 100), 2010 prices, from 2006.</li>
+        <li><b>Charts 6 and 7, expenditure:</b> annual only; NSO&rsquo;s quarterly expenditure figures are growth rates in the release text, not in its tables. Real growth from 2006; shares of GDP at current prices from 1995. Household and government final consumption, gross fixed capital formation, and the balance of trade in goods and services; changes in inventories and the statistical discrepancy are in the data but not drawn.</li>
+        <li><b>Table, GDP by industry:</b> NSO&rsquo;s 28 rows, ISIC Rev. 4 sections (VSIC 2018). Manufacturing (section C) is a single row: NSO publishes no value added by manufacturing industry in its quarterly or annual GDP tables. Manufacturing charts are on the Manufacturing tab.</li>
+        <li><b>Heat table, real growth by industry:</b> each row is coloured on its own range, from green at its lowest rate in the window to red at its highest.</li>
+      </ol>
+    </section>
+  </section>
+
+  <section class="jg-page" id="manufacturing" role="tabpanel" hidden>
+    <div class="jg-pagehead">
+      <div class="jg-note" style="margin:0"><span id="mfg-q" class="dash-skeleton" style="color: var(--color-fg)" data-source="gdp_latest" data-field="label" data-row="0">—</span></div>
+    </div>
+
     <div class="jg-grid">
       <section class="jg-card" id="gdp-mfg" data-periods="q" data-def="0">
         <h2>Vietnam manufacturing</h2>
@@ -157,23 +181,13 @@
       <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
     </section>
 
-    <section class="jg-card ad-notes" id="gdp-notes">
+    <section class="jg-card ad-notes" id="mfg-notes">
       <h2>Chart notes</h2>
       <ol>
-        <li><b>All figures are as published by the National Statistics Office of Viet Nam (NSO); none is calculated.</b> Quarterly figures are from NSO&rsquo;s socio-economic report tables, annual figures from its statistical yearbook database. Real growth is NSO&rsquo;s index against the same period a year earlier (= 100) less 100, or the rate itself where NSO prints a rate (first-quarter tables from 2024). Levels are shown in VND trillion: NSO&rsquo;s VND billion divided by 1,000. NSO publishes no seasonally adjusted series and no quarter-on-quarter growth.</li>
-        <li><b>Vintages:</b> each quarterly report gives the reference quarter (estimate), the previous quarter (preliminary) and the year to date. The page shows the latest published figure for each period. The yearbook&rsquo;s last two years are preliminary and estimated.</li>
-        <li><b>Breaks (dashed lines):</b> 2020 quarterly levels are on the scale before NSO&rsquo;s 2021 revaluation of GDP (the yearbook puts 2020 nominal GDP at VND 8,044 trillion; the 2020 quarterly tables sum to VND 6,293 trillion). Constant prices are 2010 prices up to the fourth quarter of 2025 and 2020 prices from the first quarter of 2026, when NSO also revised the current-price scale; earlier quarters have not been restated in these tables. Levels are therefore not comparable across either break; NSO&rsquo;s growth rates are its own on each basis.</li>
-        <li><b>Chart 1, real GDP growth:</b> quarterly y/y (bars), or the year-to-date figure (three, six, nine and twelve months against the same period a year earlier).</li>
-        <li><b>Chart 2, by sector:</b> agriculture, forestry and fishing; industry and construction; services; and taxes on products less subsidies, the four parts NSO sums to GDP.</li>
-        <li><b>Chart 3, level:</b> GDP per quarter at current prices (nominal), or at constant prices (real), with the 2010-price and 2020-price series shown separately.</li>
-        <li><b>Chart 4, structure:</b> NSO&rsquo;s published shares of GDP at current prices. The four parts sum to 100.</li>
-        <li><b>Chart 5, annual growth:</b> the yearbook&rsquo;s real GDP and sector growth (previous year = 100, less 100), 2010 prices, from 2006.</li>
-        <li><b>Charts 6 and 7, expenditure:</b> annual only; NSO&rsquo;s quarterly expenditure figures are growth rates in the release text, not in its tables. Real growth from 2006; shares of GDP at current prices from 1995. Household and government final consumption, gross fixed capital formation, and the balance of trade in goods and services; changes in inventories and the statistical discrepancy are in the data but not drawn.</li>
-        <li><b>Table, GDP by industry:</b> NSO&rsquo;s 28 rows, ISIC Rev. 4 sections (VSIC 2018). Manufacturing (section C) is a single row: NSO publishes no value added by manufacturing industry in its quarterly or annual GDP tables.</li>
-        <li><b>Heat tables:</b> each row is coloured on its own range, from green at its lowest rate in the window to red at its highest.</li>
-        <li><b>Chart 8, manufacturing:</b> manufacturing value added at constant prices, y/y (GDP tables), and manufacturing output from the industrial production index (IIP), y/y. The IIP measures output volume, not value added.</li>
-        <li><b>Chart 9, shares:</b> manufacturing and industry (mining, manufacturing, electricity, water supply) as published shares of GDP at current prices.</li>
-        <li><b>Chart 10 and the IIP heat table, manufacturing by industry:</b> the most granular official breakdown of manufacturing: the IIP for the 24 VSIC two-digit manufacturing divisions (10 to 33), against the same quarter a year earlier. The dashed line in Chart 10 is all manufacturing. The first quarter of each year is the first-quarter column of NSO&rsquo;s March IIP table.</li>
+        <li><b>All figures are as published by the National Statistics Office of Viet Nam (NSO) in its quarterly socio-economic report tables; none is calculated.</b> Growth is NSO&rsquo;s index against the same period a year earlier (= 100) less 100. Manufacturing value added is ISIC section C in NSO&rsquo;s GDP tables; NSO publishes no value added by manufacturing industry, quarterly or annual.</li>
+        <li><b>Chart 1, manufacturing:</b> manufacturing value added at constant prices, y/y (GDP tables; 2010 prices to 2025, 2020 prices from 2026, dashed line), and manufacturing output from the industrial production index (IIP), y/y. The IIP measures output volume, not value added.</li>
+        <li><b>Chart 2, shares:</b> manufacturing and industry (mining, manufacturing, electricity, water supply) as published shares of GDP at current prices.</li>
+        <li><b>Chart 3 and the heat table, manufacturing by industry:</b> the most granular official breakdown of manufacturing: the IIP for the 24 VSIC two-digit manufacturing divisions (10 to 33), against the same quarter a year earlier. The dashed line in Chart 3 is all manufacturing. The first quarter of each year is the first-quarter column of NSO&rsquo;s March IIP table. In the heat table each row is coloured on its own range, from green at its lowest rate in the window to red at its highest.</li>
       </ol>
     </section>
   </section>

@@ -67,6 +67,7 @@ dash.calc('gdp_table', {
   const V = J.vn;
   const { legend, frame, hover, status, failed, win, qLab, f2, num, fmt0 } = V;
   const visible = () => !document.getElementById('gdp').hidden;
+  const mfgVisible = () => !document.getElementById('manufacturing').hidden;
   const REBASE = '2026-03-01';   // first quarter on 2020 constant prices (and the revised current-price scale)
   const REVAL = '2021-03-01';    // first quarter on the scale after NSO's 2021 revaluation (levels only)
   const SPAN_YTD = { 3: 'Q', 6: '6M', 9: '9M', 12: 'Y' };
@@ -348,11 +349,11 @@ dash.calc('gdp_table', {
 
   function tiles() {
     const L = dash.data('gdp_latest');
-    document.querySelectorAll('#gdp-headline [data-source], #gdp-q').forEach((el) => {
+    document.querySelectorAll('#gdp-headline [data-source], #gdp-q, #mfg-q').forEach((el) => {
       if (L.status !== 'ok' || !L.data.length) { el.textContent = '—'; return; }
       el.classList.remove('dash-skeleton');
       const v = L.data[0][el.dataset.field];
-      if (el.id === 'gdp-q' || el.dataset.kind === 'text') el.textContent = v || '';
+      if (el.id === 'gdp-q' || el.id === 'mfg-q' || el.dataset.kind === 'text') el.textContent = v || '';
       else if (/_trn$/.test(el.dataset.field)) el.textContent = v == null ? '—' : d3.format(',.0f')(v);
       else el.textContent = f2(num(v));
     });
@@ -373,13 +374,8 @@ dash.calc('gdp_table', {
     t(' in real terms and manufacturing output '); p.append(mk('iip_mfg', a.iip_mfg)); t('.');
   }
 
-  J.redrawGdp = () => {
-    if (!visible()) return;
-    growth();
-    qLines('gdp-sectors', [{ key: 'gdp', name: 'GDP', color: 'var(--ad-c2)', rows: series('total', 'constant', 'yoy') }]
-      .concat(SEC.map(([code, name, color]) => ({ key: code, name, color, thin: true, dash: code === 'taxes', rows: series(code, 'constant', 'yoy') }))));
-    level();
-    structure();
+  function redrawMfg() {
+    if (!mfgVisible()) return;
     qLines('gdp-mfg', [
       { key: 'va', name: 'Manufacturing value added, real', color: 'var(--ad-c1)', rows: series('manufacturing', 'constant', 'yoy') },
       { key: 'iip', name: 'Manufacturing output (IIP)', color: 'var(--ad-c8)', dash: true, rows: (dash.data('vn_iip').status === 'ok' ? dash.data('vn_iip').data : []).filter((r) => r.code === 'c').map((r) => ({ date: r.date, v: num(r.rate) })) },
@@ -390,6 +386,16 @@ dash.calc('gdp_table', {
       { key: 'mfg', name: 'Manufacturing (C)', color: 'var(--ad-c1)', rows: series('manufacturing', 'current', 'share') },
     ], { zero: false });
     iipBars();
+  }
+
+  J.redrawGdp = () => {
+    redrawMfg();
+    if (!visible()) return;
+    growth();
+    qLines('gdp-sectors', [{ key: 'gdp', name: 'GDP', color: 'var(--ad-c2)', rows: series('total', 'constant', 'yoy') }]
+      .concat(SEC.map(([code, name, color]) => ({ key: code, name, color, thin: true, dash: code === 'taxes', rows: series(code, 'constant', 'yoy') }))));
+    level();
+    structure();
     aLines('gdp-annual', [{ key: 'gdp', name: 'Real GDP', color: 'var(--ad-c2)', bar: true, rows: annual('sector', 'total', 'constant_2010', 'yoy') }]
       .concat(SEC.slice(0, 3).map(([code, name, color]) => ({ key: code, name, color, thin: true, rows: annual('sector', code, 'constant_2010', 'yoy') }))));
     aLines('gdp-exp', [
