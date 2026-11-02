@@ -89,13 +89,44 @@
   </header>
 
   <nav class="ax-tabs" role="tablist" aria-label="Sections">
-    <button role="tab" data-tab="inflation" aria-selected="true">Inflation</button>
-    <button role="tab" data-tab="gdp" aria-selected="false">GDP</button>
+    <button role="tab" data-tab="gdp" aria-selected="true">GDP</button>
+    <button role="tab" data-tab="inflation" aria-selected="false">Inflation</button>
     <button role="tab" data-tab="financial" aria-selected="false">Financial</button>
     <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
   </nav>
 
-  <section class="ax-page" id="inflation" role="tabpanel">
+  <section class="ax-page" id="gdp" role="tabpanel">
+    <section class="ax-sec">
+      <h2>Income</h2>
+      <div class="ax-card" id="gni-card">
+        <div class="ax-cardhead">
+          <h3>GNI per capita since becoming middle income</h3>
+          <details class="ax-pick" id="gni-pick">
+            <summary>Economies <span class="n" id="gni-pick-n"></span></summary>
+            <div class="ax-pick-list" id="gni-pick-list"></div>
+          </details>
+        </div>
+        <p class="ax-note">Index, GNI per capita (Atlas method, US$) = 100 in year t, the year each economy became lower-middle income. Horizontal axis: years from t.</p>
+        <div class="ax-gni" data-draw="gniChart" data-source="asia_gni_index"></div>
+        <div class="ad-slider" id="gni-range"><div class="ad-slider-track"><div class="ad-slider-sel" id="gni-fill"></div></div><input type="range" id="gni-a" aria-label="First year shown, years from t" step="1"><input type="range" id="gni-b" aria-label="Last year shown, years from t" step="1"></div>
+        <div class="ad-slider-lbl" id="gni-range-lbl"></div>
+        <div class="ax-legend" id="gni-legend"></div>
+        <p class="ax-note">t is the first data year the World Bank classified the economy lower-middle income after low income (China 1997, India 2007, Indonesia 1993, the first of two crossings, Vietnam 2009). Thailand, Malaysia and the Philippines were already lower-middle income when the classifications began, so t = 1987, the first year. Index calculated by Asia Decoded. Taiwan is not in the World Bank&rsquo;s data; Japan, South Korea, Hong Kong and Singapore were upper-middle or high income from 1987.</p>
+        <p class="ax-note">Source: World Bank, World Development Indicators (NY.GNP.PCAP.CD) and historical income classifications.</p>
+      <div class="ax-card" id="gnil-card">
+        <div class="ax-cardhead">
+          <h3>GNI per capita, <span data-draw="gnilYear" data-source="asia_gni_latest">latest year</span></h3>
+        </div>
+        <p class="ax-note">US$, Atlas method. Bars coloured by World Bank income group; dashed lines are the group thresholds for the same year.</p>
+        <div class="ax-fxbars" data-draw="gnilBars" data-source="asia_gni_latest asia_gni_thresholds"></div>
+        <div class="ax-legend" id="gnil-legend"></div>
+        <p class="ax-note">Income groups and thresholds from the World Bank&rsquo;s historical classifications (the July classification of each data year; <span data-draw="gnilFy" data-source="asia_gni_latest">—</span>). Taiwan is not in the World Bank&rsquo;s data.</p>
+        <p class="ax-note">Source: World Bank, World Development Indicators (NY.GNP.PCAP.CD) and historical income classifications.</p>
+      </div>
+    </section>
+  </section>
+
+  <section class="ax-page" id="inflation" role="tabpanel" hidden>
     <section class="ax-sec" id="overview">
       <h2>Regional overview</h2>
       <p class="ax-lede">GDP-weighted Asia-12 aggregate. Not built yet.</p>
@@ -171,47 +202,6 @@
       <h2>Economy by economy</h2>
       <p class="ax-lede">Small multiples on a shared time axis, each linking to that economy's dashboard. Not built yet.</p>
       <div class="ax-ph small">12 small line charts: CPI, food &amp; bev and core, % y/y.</div>
-    </section>
-  </section>
-
-  <section class="ax-page" id="gdp" role="tabpanel" hidden>
-    <section class="ax-sec">
-      <h2>Income</h2>
-      <div class="ax-grid">
-      <div class="ax-card" id="gni-card">
-        <div class="ax-cardhead">
-          <h3>GNI per capita since becoming middle income</h3>
-          <details class="ax-pick" id="gni-pick">
-            <summary>Economies <span class="n" id="gni-pick-n"></span></summary>
-            <div class="ax-pick-list" id="gni-pick-list"></div>
-          </details>
-        </div>
-        <p class="ax-note">Index, GNI per capita (Atlas method, US$) = 100 in year t, the year each economy became lower-middle income. Horizontal axis: years from t.</p>
-        <div class="ax-gni" data-draw="gniChart" data-source="asia_gni_index"></div>
-        <div class="ad-slider" id="gni-range"><div class="ad-slider-track"><div class="ad-slider-sel" id="gni-fill"></div></div><input type="range" id="gni-a" aria-label="First year shown, years from t" step="1"><input type="range" id="gni-b" aria-label="Last year shown, years from t" step="1"></div>
-        <div class="ad-slider-lbl" id="gni-range-lbl"></div>
-        <div class="ax-legend" id="gni-legend"></div>
-        <p class="ax-note">t is the first data year the World Bank classified the economy lower-middle income after low income (China 1997, India 2007, Indonesia 1993, the first of two crossings, Vietnam 2009). Thailand, Malaysia and the Philippines were already lower-middle income when the classifications began, so t = 1987, the first year. Index calculated by Asia Decoded. Taiwan is not in the World Bank&rsquo;s data; Japan, South Korea, Hong Kong and Singapore were upper-middle or high income from 1987.</p>
-        <p class="ax-note">Source: World Bank, World Development Indicators (NY.GNP.PCAP.CD) and historical income classifications.</p>
-      </div>
-      <div class="ax-card" id="gnilog-card">
-        <div class="ax-cardhead"><h3>GNI per capita since becoming middle income, log scale</h3></div>
-        <p class="ax-note">The same index on a logarithmic axis: equal vertical distances are equal percentage changes, so the slope of a line is its growth rate and lines growing at the same pace run parallel. Economies and years follow the linear chart (set them there).</p>
-        <div class="ax-gni ax-gni-log" data-draw="gniLogChart" data-source="asia_gni_index"></div>
-        <div class="ax-legend" id="gnilog-legend"></div>
-        <p class="ax-note">Source: World Bank, World Development Indicators (NY.GNP.PCAP.CD) and historical income classifications; index calculated by Asia Decoded.</p>
-      </div>
-      </div>
-      <div class="ax-card" id="gnil-card">
-        <div class="ax-cardhead">
-          <h3>GNI per capita, <span data-draw="gnilYear" data-source="asia_gni_latest">latest year</span></h3>
-        </div>
-        <p class="ax-note">US$, Atlas method. Bars coloured by World Bank income group; dashed lines are the group thresholds for the same year.</p>
-        <div class="ax-fxbars" data-draw="gnilBars" data-source="asia_gni_latest asia_gni_thresholds"></div>
-        <div class="ax-legend" id="gnil-legend"></div>
-        <p class="ax-note">Income groups and thresholds from the World Bank&rsquo;s historical classifications (the July classification of each data year; <span data-draw="gnilFy" data-source="asia_gni_latest">—</span>). Taiwan is not in the World Bank&rsquo;s data.</p>
-        <p class="ax-note">Source: World Bank, World Development Indicators (NY.GNP.PCAP.CD) and historical income classifications.</p>
-      </div>
     </section>
   </section>
 
@@ -533,7 +523,7 @@
     acts.append(b1, b2); list.append(acts);
   };
   document.addEventListener('click', (ev) => { const d = document.getElementById('gni-pick'); if (d && d.open && !d.contains(ev.target)) d.open = false; });
-  // draws the indexed chart; log = true for the log-scale copy, which follows the first chart's picker and slider
+  // draws the indexed chart (log = true draws it on a log axis; not used on the page)
   const gniDraw = (box, log) => {
     const D = dash.data('asia_gni_index');
     box.replaceChildren();
@@ -617,8 +607,7 @@
     hit.addEventListener('mouseleave', () => { rule.setAttribute('display', 'none'); tip.style.display = 'none'; });
     if (leg) for (const a of ser) { const it = el('span'); const sw = el('span', 'sw'); sw.style.background = GNI_COL[a.economy] || '#666'; it.append(sw, `${a.name} (t = ${a.t})`); leg.append(it); }
   };
-  dash.draw('gniLogChart', (box) => gniDraw(box, true));
-  dash.draw('gniChart', (box) => { gniDraw(box, false); const lb = document.querySelector('.ax-gni-log'); if (lb) gniDraw(lb, true); });
+  dash.draw('gniChart', (box) => gniDraw(box, false));
   // GNI per capita, latest year, bars coloured by income group, with that year's thresholds
   const GRP = {H: ['High income', '#1F4E79'], UM: ['Upper-middle income', '#0C84FF'], LM: ['Lower-middle income', '#FFC000'], L: ['Low income', '#BD1B21']};
   dash.draw('gnilYear', (n) => { const D = dash.data('asia_gni_latest'); n.textContent = D.status === 'ok' && D.data.length ? String(Math.max(...D.data.map((r) => Number(r.year)))) : 'latest year'; });
@@ -684,6 +673,6 @@
     if (id === 'gdp') { dash.draw('gniChart'); dash.draw('gnilBars'); }
   };
   document.querySelectorAll('.ax [role=tab]').forEach((t) => t.addEventListener('click', () => { show(t.dataset.tab); dash.setLink(t.dataset.tab); }));
-  if (['methodology', 'financial', 'gdp'].includes(location.hash.slice(1))) show(location.hash.slice(1));
+  if (['methodology', 'financial', 'gdp', 'inflation'].includes(location.hash.slice(1))) show(location.hash.slice(1));
 })();
 </script>
