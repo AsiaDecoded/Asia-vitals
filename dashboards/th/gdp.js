@@ -29,7 +29,8 @@ dash.calc('gdp_cagr', {
   const failed = (st) => st === 'error' || st === 'connect' || st === 'declined';
   const qLab = (d) => `Q${Math.ceil(+d.slice(5, 7) / 3)} ${d.slice(0, 4)}`;
   const fmt0 = (v) => d3.format('.0f')(v);
-  const LMI = 1987;          // lower-middle income from 1987 (data year): dashed line on Charts 1 and 2, CAGR start
+  const LMI = 1987;          // lower-middle income from 1987 (data year): dashed line on Charts 1 and 2, x-axis label anchor
+  const INCOME = [[LMI, 'Lower-middle income'], [2010, 'Upper-middle income']];   // dashed lines on Charts 1 and 2
   const START = '1994-01-01';  // NESDC y/y from Q1 1994
   const SEC = [['agri', 'Agriculture', 'var(--ad-c6)'], ['industrial', 'Industrial (B–E)', 'var(--ad-c1)'],
     ['services', 'Services (incl. construction)', 'var(--ad-c5)']];
@@ -230,11 +231,21 @@ dash.calc('gdp_cagr', {
     const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null).concat([0]),
       (v) => d3.format(',.0f')(v), true, { annual: true, anchor: LMI });
     S.forEach((s) => line(svg, x, y, rows, s.key, s.color));
-    if (rows[0].date.slice(0, 4) < String(LMI) && rows[rows.length - 1].date.slice(0, 4) > String(LMI)) {
-      const lx = x(J.date(`${LMI}-12-01`));
-      svg.append('line').attr('x1', lx).attr('x2', lx).attr('y1', 18).attr('y2', H - 24).attr('stroke', 'var(--ad-axis)').attr('stroke-dasharray', '3 3');
-      svg.append('text').attr('x', lx).attr('y', 12).attr('font-size', 12).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'middle').text('Lower-middle income');
-    }
+    // Income-group lines (data years, World Bank classification history as in the central dataset): lower-middle
+    // from 1987, upper-middle from 2010 (FY12). Labels kept inside the plot; the second drops a row if they would touch.
+    let prev = null;
+    INCOME.forEach(([yr, label]) => {
+      if (!(rows[0].date.slice(0, 4) < String(yr) && rows[rows.length - 1].date.slice(0, 4) > String(yr))) return;
+      const lx = x(J.date(`${yr}-12-01`));
+      const t = svg.append('text').attr('y', 12).attr('font-size', 12).attr('fill', 'var(--ad-ink)').text(label);
+      const w = t.node().getComputedTextLength();
+      const left = Math.max(ml, Math.min(W - mr - w, lx - w / 2));
+      let ty = 12;
+      if (prev && left < prev.right + 8 && prev.y === 12) ty = 27;
+      t.attr('x', left).attr('y', ty);
+      svg.append('line').attr('x1', lx).attr('x2', lx).attr('y1', ty + 6).attr('y2', H - 24).attr('stroke', 'var(--ad-axis)').attr('stroke-dasharray', '3 3');
+      prev = { right: left + w, y: ty };
+    });
     const G = dash.data('gdp_cagr');
     // one line per series and period, earlier period first
     const cagr = G.status === 'ok' ? G.data.filter((r) => S.some((s) => s.key === r.series)).sort((p, q) => p.start - q.start || S.findIndex((s) => s.key === p.series) - S.findIndex((s) => s.key === q.series))
