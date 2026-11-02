@@ -74,7 +74,7 @@ dash.calc('gdp_table', {
   const SEC = [['agri', 'Agriculture, forestry and fishing', 'var(--ad-c6)'], ['ind_constr', 'Industry and construction', 'var(--ad-c1)'],
     ['services', 'Services', 'var(--ad-c5)'], ['taxes', 'Taxes on products less subsidies', 'var(--ad-c4)']];
   let growthSpan = 'Q', levelBasis = 'current';
-  ['gdp-growth', 'gdp-sectors', 'gdp-level', 'gdp-structure', 'gdp-mfg', 'gdp-mfg-share', 'gdp-annual', 'gdp-exp', 'gdp-exp-share'].forEach((id) => { J.period[id] = 0; });
+  ['gdp-sectors', 'gdp-level', 'gdp-structure', 'gdp-mfg', 'gdp-mfg-share', 'gdp-annual', 'gdp-exp', 'gdp-exp-share'].forEach((id) => { J.period[id] = 0; });
 
   const G = () => dash.data('vn_gdp');
   // Published quarterly rows for one industry: [{date, v, price, status, period}], sorted.
@@ -88,7 +88,7 @@ dash.calc('gdp_table', {
   function ytdSeries(code) {
     const D = G(); if (D.status !== 'ok') return [];
     return D.data.filter((r) => r.code === code && String(r.price).startsWith('constant') && r.measure === 'yoy' && SPAN_YTD[Number(r.date.slice(5, 7))] === r.span)
-      .map((r) => ({ date: r.date, v: num(r.rate), period: r.period })).filter((r) => r.v != null).sort((a, b) => (a.date < b.date ? -1 : 1));
+      .map((r) => ({ date: r.date, v: num(r.rate), period: r.period, price: r.price })).filter((r) => r.v != null).sort((a, b) => (a.date < b.date ? -1 : 1));
   }
   function merge(list) {   // [{key, rows}] -> [{date, q: true, <key>: v}]
     const by = new Map();
@@ -130,31 +130,39 @@ dash.calc('gdp_table', {
   }
 
   // Chart 1: quarterly real growth (bars), or the year-to-date figure.
+  // Base periods of NSO's constant prices: a dashed line where the base changes, labelled with the new base.
+  const BASE_LABEL = (price) => (/constant_(\d{4})/.exec(price) || [])[1] ? `${/constant_(\d{4})/.exec(price)[1]} prices` : '';
+  function baseMarks(svg, x, rows, H) {
+    for (let k = 1; k < rows.length; k += 1) {
+      if (!rows[k].price || !rows[k - 1].price || rows[k].price === rows[k - 1].price) continue;
+      const sx = (x(J.date(rows[k - 1].date)) + x(J.date(rows[k].date))) / 2;
+      svg.append('line').attr('x1', sx).attr('x2', sx).attr('y1', 14).attr('y2', H - 24).attr('stroke', 'var(--ad-axis)').attr('stroke-dasharray', '3 3');
+      svg.append('text').attr('x', sx).attr('y', 10).attr('text-anchor', 'middle').attr('font-size', 11)
+        .attr('fill', 'var(--ad-ink)').text(BASE_LABEL(rows[k].price));
+    }
+  }
+
+  // Chart 1: real growth, quarter or year to date, as published on each base (no linking across bases).
   function growth() {
     const id = 'gdp-growth', box = document.getElementById(id + '-chart');
-    const S = growthSpan === 'Q'
-      ? [{ key: 'v', name: 'Real GDP, quarter, y/y', color: 'var(--ad-c2)', bar: true }]
-      : [{ key: 'v', name: 'Real GDP, year to date, y/y', color: 'var(--ad-c2)', bar: true }];
-    legend(id + '-legend', S);
     if (!status(box, ['vn_gdp'])) return;
     const src = growthSpan === 'Q' ? series('total', 'constant', 'yoy') : ytdSeries('total');
-    const lab = new Map(src.map((r) => [r.date, r.period]));
-    const rows = win(src.map((r) => ({ date: r.date, q: true, v: r.v })), id);
+    const rows = J.slice(src.map((r) => ({ date: r.date, q: true, v: r.v, price: r.price, period: r.period })), id);
     if (!rows.length) { box.replaceChildren(); return; }
-    const H = 280, mr = 8;
+    const H = 290, mr = 8;
     const { svg, x, y, W, ml } = frame(box, rows, H, rows.map((r) => r.v), (v) => d3.format('.0f')(v), true, mr);
-    rebaseLine(svg, x, rows, H);
+    baseMarks(svg, x, rows, H);
     const step = (W - ml - mr) / Math.max(1, rows.length);
-    const bw = Math.max(2, Math.min(22, step * 0.62));
+    const bw = Math.max(1.5, Math.min(22, step * 0.62));
     rows.forEach((r) => {
       svg.append('rect').attr('x', x(J.date(r.date)) - bw / 2).attr('width', bw).attr('y', y(Math.max(0, r.v))).attr('height', Math.abs(y(r.v) - y(0)))
         .attr('fill', r.v < 0 ? 'var(--ad-c1)' : 'var(--ad-c2)');
     });
     const card = document.getElementById(id);
     hover(svg, card, x, rows, H, ml, W - mr, (r) => {
-      const p = lab.get(r.date) || '';
-      const name = growthSpan === 'Q' ? 'Real GDP, y/y' : ({ Q1: 'first quarter', H1: 'first half', '9M': 'nine months' }[p.slice(5)] || 'full year');
-      return [['var(--ad-c2)', name, r.v.toFixed(2) + '%']];
+      const p = r.period || '';
+      const name = growthSpan === 'Q' ? 'Real GDP, y/y' : ({ Q1: 'First quarter', H1: 'First half', '9M': 'Nine months' }[p.slice(5)] || 'Full year');
+      return [['var(--ad-c2)', name, r.v.toFixed(2) + '%'], [null, 'Prices of', BASE_LABEL(r.price).replace(' prices', '')]];
     });
   }
 

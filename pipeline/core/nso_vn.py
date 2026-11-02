@@ -489,7 +489,12 @@ INPUT_ROWS = [("all", "All items", r"^CHỈ SỐ CHUNG|^Chỉ số chung|^GENERA
 
 def _sheets(data, name):
     if name.lower().endswith(".xls"):
+        import importlib  # noqa: PLC0415
         import xlrd  # noqa: PLC0415
+        for m in ("xlrd.biffh", "xlrd.book", "xlrd.sheet"):   # some NSO .xls files carry broken UTF-16 strings
+            mod = importlib.import_module(m)
+            if hasattr(mod, "unicode"):
+                mod.unicode = lambda b, enc: b.decode(enc, "replace")
         wb = xlrd.open_workbook(file_contents=data)
         for sh in wb.sheets():
             yield sh.name, [sh.row_values(i) for i in range(sh.nrows)]
@@ -556,7 +561,7 @@ def read_quarter_book(data, name):
 # --- GDP by industry (report tables 1 and 2, or the combined Q1 table) and industrial production by VSIC division
 
 GDP_ROWS = [  # (code, ISIC section, English label, level, Vietnamese label pattern)
-    ("total", "", "GDP", 0, r"^TỔNG SỐ"),
+    ("total", "", "GDP", 0, r"^TỔNG SỐ|^TỔNG SẢN PHẨM|^Tổng số$"),
     ("agri", "A", "Agriculture, forestry and fishing", 1, r"^Nông,? lâm nghiệp và th[uủ]y sản"),
     ("agriculture", "A01", "Agriculture", 2, r"^Nông nghiệp\s*$"),
     ("forestry", "A02", "Forestry", 2, r"^Lâm nghiệp\s*$"),
@@ -617,7 +622,7 @@ def read_gdp_book(data, name, ref):
         title = _norm(" ".join(str(c) for r in rows[:3] for c in r if isinstance(c, str)))
         if not re.search(r"Tổng sản phẩm trong nước", title) or re.search(r"địa bàn|GRDP", title):
             continue
-        first = next((i for i, r in enumerate(rows) if any(isinstance(c, str) and re.match(r"\s*TỔNG SỐ", c) for c in r[:2])), None)
+        first = next((i for i, r in enumerate(rows) if any(isinstance(c, str) and re.match(r"\s*(TỔNG SỐ|TỔNG SẢN PHẨM)", c) for c in r[:2])), None)
         if first is None:
             continue
         ncol = max(len(r) for r in rows[:first + 1])
@@ -635,25 +640,38 @@ def read_gdp_book(data, name, ref):
         title0 = _norm(" ".join(str(c) for c in rows[0] if isinstance(c, str)))
         combined = not re.search(r"giá hiện hành|giá so sánh", title0)   # Q1: one table, both price bases
         cols = {}
+        hdr_all = " ".join(" ".join(h) for h in raw_hdr).lower()
+        if re.search(r"so với\s+6\s*tháng|6\s*tháng", hdr_all):
+            combined_period = (f"{year}-H1", "6M")
+        elif re.search(r"so với\s+9\s*tháng|9\s*tháng", hdr_all):
+            combined_period = (f"{year}-9M", "9M")
+        elif re.search(r"quý\s+i\b", hdr_all) or ref_q == 1:
+            combined_period = (f"{year}-Q1", "Q")
+        else:
+            combined_period = (str(year), "Y")
         for j in range(2, ncol):
-            if rows[first][j] is None or _cell(rows[first][j]) is None:
+            if j >= len(rows[first]) or rows[first][j] in (None, "") or _cell(rows[first][j]) is None:
                 continue
             own = " ".join(h[j] for h in raw_hdr)
             carried = " ".join(h[j] for h in filled)
             if combined:
                 bm = re.search(r"giá so sánh (\d{4})", carried)
                 price = f"constant_{bm.group(1)}" if bm else "current" if "hiện hành" in carried else None
-                period, span = f"{year}-Q1", "Q"
+                period, span = combined_period
                 status = "estimate"
             else:
                 price = f"constant_{base_m.group(1)}" if base_m else "current"
                 period, span = _period(own, year, ref_q)
+                if not period and ref_q == 4 and own.strip() and re.search(r"năm|thực hiện|tỷ đồng|cơ cấu", (own + " " + carried).lower()):
+                    ym = re.search(r"(\d{4})", own) or re.search(r"(\d{4})", carried)
+                    yy = int(ym.group(1)) if ym and int(ym.group(1)) in (year - 1, year) else year
+                    period, span = str(yy), "Y"
                 status = "preliminary" if "Sơ bộ" in carried else "estimate" if "Ước tính" in carried else ""
             if not price or not period:
                 continue
             if re.search(r"Cơ cấu", carried):
                 measure, pub = "share", "pct"
-            elif re.search(r"So với cùng kỳ|phát triển|Tốc độ", carried, re.I):
+            elif re.search(r"So với cùng kỳ|so với năm|phát triển|Tốc độ", carried, re.I):
                 measure = "yoy"
                 pub = "pct" if re.search(r"Tốc độ tăng", carried, re.I) else "index"
             else:
