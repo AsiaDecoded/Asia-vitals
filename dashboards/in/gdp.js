@@ -118,8 +118,8 @@
       nominal: [{ key: 'NY.GDP.MKTP.CD', name: 'GDP', color: 'var(--ad-c1)' }] },
     'gdp-pc': { div: 1, unit: 'US$', tipUnit: '', fmt: ',.0f',
       real: [{ key: 'NY.GDP.PCAP.KD', name: 'GDP per capita', color: 'var(--ad-c2)' }],
-      nominal: [{ key: 'NY.GDP.PCAP.CD', name: 'GDP per capita', color: 'var(--ad-c1)' },
-        { key: 'gni_pc', name: 'GNI per capita, Atlas method', color: 'var(--ad-c2)', ds: 'asia_gni_pc' }] },
+      nominal: [{ key: 'NY.GDP.PCAP.CD', name: 'GDP per capita', color: 'var(--ad-c2)' },
+        { key: 'gni_pc', name: 'GNI per capita, Atlas method', color: 'var(--ad-c1)', ds: 'asia_gni_pc' }] },
   };
   function usd(id, pick) {
     const C = USD[id], box = document.getElementById(id + '-chart'), nominal = /\.CD$/.test(pick), S = nominal ? C.nominal : C.real;
