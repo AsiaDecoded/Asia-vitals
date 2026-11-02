@@ -487,8 +487,8 @@ dash.calc('gdp_table', {
       // Bottom right of the plot, under the lines (they rise to the right, so this corner is clear).
       const lh = 16;
       const t = svg.append('text').attr('font-size', 12).attr('font-weight', 700).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'end');
-      cagr.forEach((c, k) => t.append('tspan').attr('dy', k ? lh : 0)
-        .text(`${S.length > 1 ? (c.s.short || c.s.name) + ', ' : ''}${START}–${c.END} CAGR: ${c.v.toFixed(1)}% p.a.`));
+      cagr.forEach((c, k) => t.append('tspan').attr('dy', k ? lh : 0).attr('fill', S.length > 1 ? c.s.color : null)
+        .text(`${START}–${c.END} CAGR: ${c.v.toFixed(1)}% p.a.`));
       const tx = W - mr - 8, ty = H - 40 - (cagr.length - 1) * lh;
       t.attr('x', tx).attr('y', ty); t.selectAll('tspan').attr('x', tx);
     }
