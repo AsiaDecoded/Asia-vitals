@@ -68,15 +68,17 @@
 .ax-tip .sw { display: inline-block; width: 10px; height: 3px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
 .ax-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: var(--cds-font-size-caption); color: var(--color-fg); }
 .ax-legend span.sw { display: inline-block; width: 14px; height: 3px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
-.ax-range { display: flex; align-items: center; gap: var(--cds-gap-md); flex-wrap: wrap; }
-.ax-range .trk { position: relative; flex: 1 1 14rem; height: 28px; min-width: 12rem; }
-.ax-range .trk::before { content: ''; position: absolute; left: 0; right: 0; top: 13px; height: 3px; border-radius: 2px; background: var(--color-border-line); }
-.ax-range .fill { position: absolute; top: 13px; height: 3px; border-radius: 2px; background: #BD1B21; }
-.ax-range input[type=range] { position: absolute; left: 0; top: 0; width: 100%; height: 28px; margin: 0; background: none; pointer-events: none; -webkit-appearance: none; appearance: none; }
-.ax-range input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; pointer-events: auto; width: 16px; height: 16px; border-radius: 50%; background: var(--color-panel); border: 2px solid #BD1B21; cursor: grab; }
-.ax-range input[type=range]::-moz-range-thumb { pointer-events: auto; width: 14px; height: 14px; border-radius: 50%; background: var(--color-panel); border: 2px solid #BD1B21; cursor: grab; }
-.ax-range input[type=range]::-moz-range-track { background: none; }
-.ax-range .lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+/* range slider: same as the country dashboards (.ad-slider) */
+.ad-slider { position: relative; height: 22px; margin: 2px 8px 0; }
+.ad-slider-track { position: absolute; left: 0; right: 0; top: 9px; height: 4px; border-radius: 2px; background: var(--color-border-line); }
+.ad-slider-sel { position: absolute; top: 0; bottom: 0; background: #0C84FF; border-radius: 2px; opacity: 0.6; }
+.ad-slider input[type=range] { position: absolute; left: -8px; right: -8px; width: calc(100% + 16px); top: 0; height: 22px; margin: 0; background: none; pointer-events: none; -webkit-appearance: none; appearance: none; }
+.ad-slider input[type=range]::-webkit-slider-runnable-track { background: none; height: 22px; }
+.ad-slider input[type=range]::-moz-range-track { background: none; }
+.ad-slider input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; pointer-events: auto; width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: var(--color-bg); border: 2px solid #0C84FF; cursor: ew-resize; }
+.ad-slider input[type=range]::-moz-range-thumb { pointer-events: auto; width: 12px; height: 12px; border-radius: 50%; background: var(--color-bg); border: 2px solid #0C84FF; cursor: ew-resize; }
+.ad-slider input[type=range]:focus-visible::-webkit-slider-thumb { outline: 2px solid #0C84FF; outline-offset: 2px; }
+.ad-slider-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-align: right; margin: 0 8px 4px; font-variant-numeric: tabular-nums; }
 [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
 </style>
 
@@ -185,10 +187,8 @@
         </div>
         <p class="ax-note">Index, GNI per capita (Atlas method, US$) = 100 in year t, the year each economy became lower-middle income. Horizontal axis: years from t.</p>
         <div class="ax-gni" data-draw="gniChart" data-source="asia_gni_index"></div>
-        <div class="ax-range" id="gni-range">
-          <div class="trk"><div class="fill" id="gni-fill"></div><input type="range" id="gni-a" aria-label="First year shown, years from t" step="1"><input type="range" id="gni-b" aria-label="Last year shown, years from t" step="1"></div>
-          <span class="lbl" id="gni-range-lbl"></span>
-        </div>
+        <div class="ad-slider" id="gni-range"><div class="ad-slider-track"><div class="ad-slider-sel" id="gni-fill"></div></div><input type="range" id="gni-a" aria-label="First year shown, years from t" step="1"><input type="range" id="gni-b" aria-label="Last year shown, years from t" step="1"></div>
+        <div class="ad-slider-lbl" id="gni-range-lbl"></div>
         <div class="ax-legend" id="gni-legend"></div>
         <p class="ax-note">t is the first data year the World Bank classified the economy lower-middle income after low income (China 1997, India 2007, Indonesia 1993, the first of two crossings, Vietnam 2009). Thailand, Malaysia and the Philippines were already lower-middle income when the classifications began, so t = 1987, the first year. Index calculated by Asia Decoded. Taiwan is not in the World Bank&rsquo;s data; Japan, South Korea, Hong Kong and Singapore were upper-middle or high income from 1987.</p>
         <p class="ax-note">Source: World Bank, World Development Indicators (NY.GNP.PCAP.CD) and historical income classifications.</p>
