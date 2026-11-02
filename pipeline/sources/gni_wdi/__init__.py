@@ -10,12 +10,14 @@ Sources (no key; GitHub's runners only, the workspace cannot reach the World Ban
 t (calculated rule, asked for): the first data year an economy is classified lower-middle income or above after being
 low income ("first crossing", so Indonesia's first, before it fell back to low income after the Asian financial crisis).
 Data year, not the year the classification was announced (the World Bank reclassifies each July on the previous year's GNI).
-Economies never classified low income since 1987 have no t.
+Economies already lower-middle income when the classifications began (data year 1987: Thailand, Malaysia, the Philippines)
+take that first year as t (asked for, 2 Nov 2026: "start of the series is correct"); column t_rule says which rule applied.
+Economies upper-middle or high income from the start have no t.
 
 Writes data/asia/gni/:
   asia_gni_pc.csv        economy, name, year, gni_pc (US$, as published)
   asia_income_class.csv  economy, name, data_year, fiscal_year, income_group (as published)
-  asia_gni_index.csv     economy, name, t_year, year, k (= year - t), gni_pc, index (= 100 at t; calculated)
+  asia_gni_index.csv     economy, name, t_year, t_rule, year, k (= year - t), gni_pc, index (= 100 at t; calculated)
   long.csv, release.json, release_row.json (code W<latest year>-<hash>)
 """
 import csv
@@ -113,12 +115,15 @@ def update(force=False, **_):
         warnings.append(f"classifications start {min(min(v) for v in cls.values())}")
     if errors:
         raise CheckFailed(errors)
-    t = {}
+    t, rule = {}, {}
     for k, c in cls.items():
         ys = sorted(c)
+        if c[ys[0]][0] == "LM":      # lower-middle income when the classifications began (asked for, 2 Nov 2026: Thailand)
+            t[k], rule[k] = ys[0], "lower-middle income when the classifications began"
+            continue
         for a, b in zip(ys, ys[1:]):
             if c[a][0] == "L" and c[b][0] in ("LM", "UM", "H"):
-                t[k] = b
+                t[k], rule[k] = b, "first year classified lower-middle income after low income"
                 break
     latest = max(max(v) for v in gni.values())
     rows_pc = [{"economy": k, "name": ECON[k][1], "year": y, "gni_pc": round(v)} for k in ECON for y, v in sorted(gni[k].items())]
@@ -130,10 +135,10 @@ def update(force=False, **_):
             warnings.append(f"{k}: no GNI per capita for t = {ty}")
             continue
         for y, v in sorted(gni[k].items()):
-            rows_ix.append({"economy": k, "name": ECON[k][1], "t_year": ty, "year": y, "k": y - ty, "gni_pc": round(v),
-                            "index": round(v / gni[k][ty] * 100, 1)})
+            rows_ix.append({"economy": k, "name": ECON[k][1], "t_year": ty, "t_rule": rule[k], "year": y, "k": y - ty,
+                            "gni_pc": round(v), "index": round(v / gni[k][ty] * 100, 1)})
     fp = hashlib.sha256(json.dumps([rows_pc, rows_cls], sort_keys=True).encode()).hexdigest()[:16]
-    summary = "t: " + ", ".join(f"{k} {t[k]}" for k in ECON if k in t) + "; no crossing since 1987: " + \
+    summary = "t: " + ", ".join(f"{k} {t[k]}" for k in ECON if k in t) + "; no t (upper-middle or high income from the start): " + \
               ", ".join(f"{k} ({cls[k][min(cls[k])][0]} in {min(cls[k])})" for k in ECON if k not in t)
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change; {summary}", "warnings": warnings}
