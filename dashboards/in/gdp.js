@@ -35,7 +35,7 @@
     const det = document.createElement('details'); det.className = 'ad-pick';
     const sum = document.createElement('summary');
     const list = document.createElement('div'); list.className = 'ad-pick-list';
-    const label = () => { sum.textContent = `Sectors (${picked[id].size} of ${PICKS.length})`; };
+    const label = () => { sum.textContent = 'Sectors'; };
     PICKS.forEach((s) => {
       const row = document.createElement('label'); const cb = document.createElement('input'); cb.type = 'checkbox';
       cb.checked = picked[id].has(s.code);
