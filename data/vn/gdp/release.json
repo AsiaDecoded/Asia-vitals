@@ -1,0 +1,20 @@
+{
+ "code": "G2026-Q3",
+ "label": "2026 Q3",
+ "latest_quarter": "2026-Q3",
+ "latest_book": "2026-Q3",
+ "table": "NSO socio-economic report tables 1-2 (GDP) and quarterly IIP",
+ "books": 27,
+ "processed_at": "2026-11-02T01:53:43Z",
+ "rows": 5264,
+ "warnings": [],
+ "long_rows": 4695,
+ "iip_rows": 999,
+ "vintage_rows": 7616,
+ "history": [
+  {
+   "code": "G2026-Q3",
+   "processed_at": "2026-11-02T01:53:43Z"
+  }
+ ]
+}
