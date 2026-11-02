@@ -1,0 +1,408 @@
+economy,name,data_year,fiscal_year,income_group
+JP,Japan,1987,FY89,H
+JP,Japan,1988,FY90,H
+JP,Japan,1989,FY91,H
+JP,Japan,1990,FY92,H
+JP,Japan,1991,FY93,H
+JP,Japan,1992,FY94,H
+JP,Japan,1993,FY95,H
+JP,Japan,1994,FY96,H
+JP,Japan,1995,FY97,H
+JP,Japan,1996,FY98,H
+JP,Japan,1997,FY99,H
+JP,Japan,1998,FY00,H
+JP,Japan,1999,FY01,H
+JP,Japan,2000,FY02,H
+JP,Japan,2001,FY03,H
+JP,Japan,2002,FY04,H
+JP,Japan,2003,FY05,H
+JP,Japan,2004,FY06,H
+JP,Japan,2005,FY07,H
+JP,Japan,2006,FY08,H
+JP,Japan,2007,FY09,H
+JP,Japan,2008,FY10,H
+JP,Japan,2009,FY11,H
+JP,Japan,2010,FY12,H
+JP,Japan,2011,FY13,H
+JP,Japan,2012,FY14,H
+JP,Japan,2013,FY15,H
+JP,Japan,2014,FY16,H
+JP,Japan,2015,FY17,H
+JP,Japan,2016,FY18,H
+JP,Japan,2017,FY19,H
+JP,Japan,2018,FY20,H
+JP,Japan,2019,FY21,H
+JP,Japan,2020,FY22,H
+JP,Japan,2021,FY23,H
+JP,Japan,2022,FY24,H
+JP,Japan,2023,FY25,H
+KR,South Korea,1987,FY89,UM
+KR,South Korea,1988,FY90,UM
+KR,South Korea,1989,FY91,UM
+KR,South Korea,1990,FY92,UM
+KR,South Korea,1991,FY93,UM
+KR,South Korea,1992,FY94,UM
+KR,South Korea,1993,FY95,UM
+KR,South Korea,1994,FY96,UM
+KR,South Korea,1995,FY97,H
+KR,South Korea,1996,FY98,H
+KR,South Korea,1997,FY99,H
+KR,South Korea,1998,FY00,UM
+KR,South Korea,1999,FY01,UM
+KR,South Korea,2000,FY02,UM
+KR,South Korea,2001,FY03,H
+KR,South Korea,2002,FY04,H
+KR,South Korea,2003,FY05,H
+KR,South Korea,2004,FY06,H
+KR,South Korea,2005,FY07,H
+KR,South Korea,2006,FY08,H
+KR,South Korea,2007,FY09,H
+KR,South Korea,2008,FY10,H
+KR,South Korea,2009,FY11,H
+KR,South Korea,2010,FY12,H
+KR,South Korea,2011,FY13,H
+KR,South Korea,2012,FY14,H
+KR,South Korea,2013,FY15,H
+KR,South Korea,2014,FY16,H
+KR,South Korea,2015,FY17,H
+KR,South Korea,2016,FY18,H
+KR,South Korea,2017,FY19,H
+KR,South Korea,2018,FY20,H
+KR,South Korea,2019,FY21,H
+KR,South Korea,2020,FY22,H
+KR,South Korea,2021,FY23,H
+KR,South Korea,2022,FY24,H
+KR,South Korea,2023,FY25,H
+HK,Hong Kong,1987,FY89,H
+HK,Hong Kong,1988,FY90,H
+HK,Hong Kong,1989,FY91,H
+HK,Hong Kong,1990,FY92,H
+HK,Hong Kong,1991,FY93,H
+HK,Hong Kong,1992,FY94,H
+HK,Hong Kong,1993,FY95,H
+HK,Hong Kong,1994,FY96,H
+HK,Hong Kong,1995,FY97,H
+HK,Hong Kong,1996,FY98,H
+HK,Hong Kong,1997,FY99,H
+HK,Hong Kong,1998,FY00,H
+HK,Hong Kong,1999,FY01,H
+HK,Hong Kong,2000,FY02,H
+HK,Hong Kong,2001,FY03,H
+HK,Hong Kong,2002,FY04,H
+HK,Hong Kong,2003,FY05,H
+HK,Hong Kong,2004,FY06,H
+HK,Hong Kong,2005,FY07,H
+HK,Hong Kong,2006,FY08,H
+HK,Hong Kong,2007,FY09,H
+HK,Hong Kong,2008,FY10,H
+HK,Hong Kong,2009,FY11,H
+HK,Hong Kong,2010,FY12,H
+HK,Hong Kong,2011,FY13,H
+HK,Hong Kong,2012,FY14,H
+HK,Hong Kong,2013,FY15,H
+HK,Hong Kong,2014,FY16,H
+HK,Hong Kong,2015,FY17,H
+HK,Hong Kong,2016,FY18,H
+HK,Hong Kong,2017,FY19,H
+HK,Hong Kong,2018,FY20,H
+HK,Hong Kong,2019,FY21,H
+HK,Hong Kong,2020,FY22,H
+HK,Hong Kong,2021,FY23,H
+HK,Hong Kong,2022,FY24,H
+HK,Hong Kong,2023,FY25,H
+CN,China,1987,FY89,L
+CN,China,1988,FY90,L
+CN,China,1989,FY91,L
+CN,China,1990,FY92,L
+CN,China,1991,FY93,L
+CN,China,1992,FY94,L
+CN,China,1993,FY95,L
+CN,China,1994,FY96,L
+CN,China,1995,FY97,L
+CN,China,1996,FY98,L
+CN,China,1997,FY99,LM
+CN,China,1998,FY00,L
+CN,China,1999,FY01,LM
+CN,China,2000,FY02,LM
+CN,China,2001,FY03,LM
+CN,China,2002,FY04,LM
+CN,China,2003,FY05,LM
+CN,China,2004,FY06,LM
+CN,China,2005,FY07,LM
+CN,China,2006,FY08,LM
+CN,China,2007,FY09,LM
+CN,China,2008,FY10,LM
+CN,China,2009,FY11,LM
+CN,China,2010,FY12,UM
+CN,China,2011,FY13,UM
+CN,China,2012,FY14,UM
+CN,China,2013,FY15,UM
+CN,China,2014,FY16,UM
+CN,China,2015,FY17,UM
+CN,China,2016,FY18,UM
+CN,China,2017,FY19,UM
+CN,China,2018,FY20,UM
+CN,China,2019,FY21,UM
+CN,China,2020,FY22,UM
+CN,China,2021,FY23,UM
+CN,China,2022,FY24,UM
+CN,China,2023,FY25,UM
+IN,India,1987,FY89,L
+IN,India,1988,FY90,L
+IN,India,1989,FY91,L
+IN,India,1990,FY92,L
+IN,India,1991,FY93,L
+IN,India,1992,FY94,L
+IN,India,1993,FY95,L
+IN,India,1994,FY96,L
+IN,India,1995,FY97,L
+IN,India,1996,FY98,L
+IN,India,1997,FY99,L
+IN,India,1998,FY00,L
+IN,India,1999,FY01,L
+IN,India,2000,FY02,L
+IN,India,2001,FY03,L
+IN,India,2002,FY04,L
+IN,India,2003,FY05,L
+IN,India,2004,FY06,L
+IN,India,2005,FY07,L
+IN,India,2006,FY08,L
+IN,India,2007,FY09,LM
+IN,India,2008,FY10,LM
+IN,India,2009,FY11,LM
+IN,India,2010,FY12,LM
+IN,India,2011,FY13,LM
+IN,India,2012,FY14,LM
+IN,India,2013,FY15,LM
+IN,India,2014,FY16,LM
+IN,India,2015,FY17,LM
+IN,India,2016,FY18,LM
+IN,India,2017,FY19,LM
+IN,India,2018,FY20,LM
+IN,India,2019,FY21,LM
+IN,India,2020,FY22,LM
+IN,India,2021,FY23,LM
+IN,India,2022,FY24,LM
+IN,India,2023,FY25,LM
+ID,Indonesia,1987,FY89,L
+ID,Indonesia,1988,FY90,L
+ID,Indonesia,1989,FY91,L
+ID,Indonesia,1990,FY92,L
+ID,Indonesia,1991,FY93,L
+ID,Indonesia,1992,FY94,L
+ID,Indonesia,1993,FY95,LM
+ID,Indonesia,1994,FY96,LM
+ID,Indonesia,1995,FY97,LM
+ID,Indonesia,1996,FY98,LM
+ID,Indonesia,1997,FY99,LM
+ID,Indonesia,1998,FY00,L
+ID,Indonesia,1999,FY01,L
+ID,Indonesia,2000,FY02,L
+ID,Indonesia,2001,FY03,L
+ID,Indonesia,2002,FY04,L
+ID,Indonesia,2003,FY05,LM
+ID,Indonesia,2004,FY06,LM
+ID,Indonesia,2005,FY07,LM
+ID,Indonesia,2006,FY08,LM
+ID,Indonesia,2007,FY09,LM
+ID,Indonesia,2008,FY10,LM
+ID,Indonesia,2009,FY11,LM
+ID,Indonesia,2010,FY12,LM
+ID,Indonesia,2011,FY13,LM
+ID,Indonesia,2012,FY14,LM
+ID,Indonesia,2013,FY15,LM
+ID,Indonesia,2014,FY16,LM
+ID,Indonesia,2015,FY17,LM
+ID,Indonesia,2016,FY18,LM
+ID,Indonesia,2017,FY19,LM
+ID,Indonesia,2018,FY20,LM
+ID,Indonesia,2019,FY21,UM
+ID,Indonesia,2020,FY22,LM
+ID,Indonesia,2021,FY23,LM
+ID,Indonesia,2022,FY24,UM
+ID,Indonesia,2023,FY25,UM
+TH,Thailand,1987,FY89,LM
+TH,Thailand,1988,FY90,LM
+TH,Thailand,1989,FY91,LM
+TH,Thailand,1990,FY92,LM
+TH,Thailand,1991,FY93,LM
+TH,Thailand,1992,FY94,LM
+TH,Thailand,1993,FY95,LM
+TH,Thailand,1994,FY96,LM
+TH,Thailand,1995,FY97,LM
+TH,Thailand,1996,FY98,LM
+TH,Thailand,1997,FY99,LM
+TH,Thailand,1998,FY00,LM
+TH,Thailand,1999,FY01,LM
+TH,Thailand,2000,FY02,LM
+TH,Thailand,2001,FY03,LM
+TH,Thailand,2002,FY04,LM
+TH,Thailand,2003,FY05,LM
+TH,Thailand,2004,FY06,LM
+TH,Thailand,2005,FY07,LM
+TH,Thailand,2006,FY08,LM
+TH,Thailand,2007,FY09,LM
+TH,Thailand,2008,FY10,LM
+TH,Thailand,2009,FY11,LM
+TH,Thailand,2010,FY12,UM
+TH,Thailand,2011,FY13,UM
+TH,Thailand,2012,FY14,UM
+TH,Thailand,2013,FY15,UM
+TH,Thailand,2014,FY16,UM
+TH,Thailand,2015,FY17,UM
+TH,Thailand,2016,FY18,UM
+TH,Thailand,2017,FY19,UM
+TH,Thailand,2018,FY20,UM
+TH,Thailand,2019,FY21,UM
+TH,Thailand,2020,FY22,UM
+TH,Thailand,2021,FY23,UM
+TH,Thailand,2022,FY24,UM
+TH,Thailand,2023,FY25,UM
+MY,Malaysia,1987,FY89,LM
+MY,Malaysia,1988,FY90,LM
+MY,Malaysia,1989,FY91,LM
+MY,Malaysia,1990,FY92,LM
+MY,Malaysia,1991,FY93,LM
+MY,Malaysia,1992,FY94,UM
+MY,Malaysia,1993,FY95,UM
+MY,Malaysia,1994,FY96,UM
+MY,Malaysia,1995,FY97,UM
+MY,Malaysia,1996,FY98,UM
+MY,Malaysia,1997,FY99,UM
+MY,Malaysia,1998,FY00,UM
+MY,Malaysia,1999,FY01,UM
+MY,Malaysia,2000,FY02,UM
+MY,Malaysia,2001,FY03,UM
+MY,Malaysia,2002,FY04,UM
+MY,Malaysia,2003,FY05,UM
+MY,Malaysia,2004,FY06,UM
+MY,Malaysia,2005,FY07,UM
+MY,Malaysia,2006,FY08,UM
+MY,Malaysia,2007,FY09,UM
+MY,Malaysia,2008,FY10,UM
+MY,Malaysia,2009,FY11,UM
+MY,Malaysia,2010,FY12,UM
+MY,Malaysia,2011,FY13,UM
+MY,Malaysia,2012,FY14,UM
+MY,Malaysia,2013,FY15,UM
+MY,Malaysia,2014,FY16,UM
+MY,Malaysia,2015,FY17,UM
+MY,Malaysia,2016,FY18,UM
+MY,Malaysia,2017,FY19,UM
+MY,Malaysia,2018,FY20,UM
+MY,Malaysia,2019,FY21,UM
+MY,Malaysia,2020,FY22,UM
+MY,Malaysia,2021,FY23,UM
+MY,Malaysia,2022,FY24,UM
+MY,Malaysia,2023,FY25,UM
+SG,Singapore,1987,FY89,H
+SG,Singapore,1988,FY90,H
+SG,Singapore,1989,FY91,H
+SG,Singapore,1990,FY92,H
+SG,Singapore,1991,FY93,H
+SG,Singapore,1992,FY94,H
+SG,Singapore,1993,FY95,H
+SG,Singapore,1994,FY96,H
+SG,Singapore,1995,FY97,H
+SG,Singapore,1996,FY98,H
+SG,Singapore,1997,FY99,H
+SG,Singapore,1998,FY00,H
+SG,Singapore,1999,FY01,H
+SG,Singapore,2000,FY02,H
+SG,Singapore,2001,FY03,H
+SG,Singapore,2002,FY04,H
+SG,Singapore,2003,FY05,H
+SG,Singapore,2004,FY06,H
+SG,Singapore,2005,FY07,H
+SG,Singapore,2006,FY08,H
+SG,Singapore,2007,FY09,H
+SG,Singapore,2008,FY10,H
+SG,Singapore,2009,FY11,H
+SG,Singapore,2010,FY12,H
+SG,Singapore,2011,FY13,H
+SG,Singapore,2012,FY14,H
+SG,Singapore,2013,FY15,H
+SG,Singapore,2014,FY16,H
+SG,Singapore,2015,FY17,H
+SG,Singapore,2016,FY18,H
+SG,Singapore,2017,FY19,H
+SG,Singapore,2018,FY20,H
+SG,Singapore,2019,FY21,H
+SG,Singapore,2020,FY22,H
+SG,Singapore,2021,FY23,H
+SG,Singapore,2022,FY24,H
+SG,Singapore,2023,FY25,H
+PH,Philippines,1987,FY89,LM
+PH,Philippines,1988,FY90,LM
+PH,Philippines,1989,FY91,LM
+PH,Philippines,1990,FY92,LM
+PH,Philippines,1991,FY93,LM
+PH,Philippines,1992,FY94,LM
+PH,Philippines,1993,FY95,LM
+PH,Philippines,1994,FY96,LM
+PH,Philippines,1995,FY97,LM
+PH,Philippines,1996,FY98,LM
+PH,Philippines,1997,FY99,LM
+PH,Philippines,1998,FY00,LM
+PH,Philippines,1999,FY01,LM
+PH,Philippines,2000,FY02,LM
+PH,Philippines,2001,FY03,LM
+PH,Philippines,2002,FY04,LM
+PH,Philippines,2003,FY05,LM
+PH,Philippines,2004,FY06,LM
+PH,Philippines,2005,FY07,LM
+PH,Philippines,2006,FY08,LM
+PH,Philippines,2007,FY09,LM
+PH,Philippines,2008,FY10,LM
+PH,Philippines,2009,FY11,LM
+PH,Philippines,2010,FY12,LM
+PH,Philippines,2011,FY13,LM
+PH,Philippines,2012,FY14,LM
+PH,Philippines,2013,FY15,LM
+PH,Philippines,2014,FY16,LM
+PH,Philippines,2015,FY17,LM
+PH,Philippines,2016,FY18,LM
+PH,Philippines,2017,FY19,LM
+PH,Philippines,2018,FY20,LM
+PH,Philippines,2019,FY21,LM
+PH,Philippines,2020,FY22,LM
+PH,Philippines,2021,FY23,LM
+PH,Philippines,2022,FY24,LM
+PH,Philippines,2023,FY25,LM
+VN,Vietnam,1987,FY89,L
+VN,Vietnam,1988,FY90,L
+VN,Vietnam,1989,FY91,L
+VN,Vietnam,1990,FY92,L
+VN,Vietnam,1991,FY93,L
+VN,Vietnam,1992,FY94,L
+VN,Vietnam,1993,FY95,L
+VN,Vietnam,1994,FY96,L
+VN,Vietnam,1995,FY97,L
+VN,Vietnam,1996,FY98,L
+VN,Vietnam,1997,FY99,L
+VN,Vietnam,1998,FY00,L
+VN,Vietnam,1999,FY01,L
+VN,Vietnam,2000,FY02,L
+VN,Vietnam,2001,FY03,L
+VN,Vietnam,2002,FY04,L
+VN,Vietnam,2003,FY05,L
+VN,Vietnam,2004,FY06,L
+VN,Vietnam,2005,FY07,L
+VN,Vietnam,2006,FY08,L
+VN,Vietnam,2007,FY09,L
+VN,Vietnam,2008,FY10,L
+VN,Vietnam,2009,FY11,LM
+VN,Vietnam,2010,FY12,LM
+VN,Vietnam,2011,FY13,LM
+VN,Vietnam,2012,FY14,LM
+VN,Vietnam,2013,FY15,LM
+VN,Vietnam,2014,FY16,LM
+VN,Vietnam,2015,FY17,LM
+VN,Vietnam,2016,FY18,LM
+VN,Vietnam,2017,FY19,LM
+VN,Vietnam,2018,FY20,LM
+VN,Vietnam,2019,FY21,LM
+VN,Vietnam,2020,FY22,LM
+VN,Vietnam,2021,FY23,LM
+VN,Vietnam,2022,FY24,LM
+VN,Vietnam,2023,FY25,LM
