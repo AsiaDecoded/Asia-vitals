@@ -52,4 +52,5 @@ SOURCES = [
     "vn_ppi_nso",
     "fx_bis",
     "eq_yahoo",
+    "gni_wdi",
 ]
