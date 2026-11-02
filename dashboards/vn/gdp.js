@@ -373,7 +373,13 @@ dash.calc('gdp_table', {
     rows.filter((r) => r.ytd != null).forEach((r) => {
       svg.append('circle').attr('cx', x(J.date(r.date))).attr('cy', y(r.ytd)).attr('r', 4.5).attr('fill', 'var(--color-panel)')
         .attr('stroke', 'var(--ad-c2)').attr('stroke-width', 2);
-      svg.append('text').attr('x', x(J.date(r.date))).attr('y', y(r.ytd) - 9).attr('text-anchor', 'end').attr('font-size', 11)
+      // x-axis label for the year-to-date point; year labels too close to it are hidden
+      const px = x(J.date(r.date));
+      svg.selectAll(`g[transform="translate(0,${H - 20})"] g.tick`).each(function () {
+        const m = /translate\(([-\d.]+)/.exec(this.getAttribute('transform') || '');
+        if (m && Math.abs(Number(m[1]) - px) < 34) d3.select(this).select('text').attr('display', 'none');
+      });
+      svg.append('text').attr('x', px).attr('y', H - 20).attr('dy', '0.71em').attr('text-anchor', px > W - mr - 14 ? 'end' : 'middle').attr('font-size', 12)
         .attr('fill', 'var(--ad-ink)').text('YTD');
     });
     const card = document.getElementById(id), tip = J.tip(card);
