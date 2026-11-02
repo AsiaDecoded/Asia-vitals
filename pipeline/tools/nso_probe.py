@@ -586,6 +586,35 @@ def step_g5():
         fetch(f"g5_pxfolder_{lang}", f"{PXWEB}/{lang}/{db}/{folder}/?tablelist=true")
 
 
+def step_intl():
+    """International sources for a long Vietnam GDP series: World Bank WDI (series and country notes), IMF WEO,
+    IMF quarterly and annual national accounts (structure first, then Vietnam data), UN, DBnomics."""
+    WB = "https://api.worldbank.org/v2"
+    for ind in ("NY.GDP.MKTP.KN", "NY.GDP.MKTP.KD", "NY.GDP.MKTP.KD.ZG", "NY.GDP.MKTP.CN", "NY.GDP.DEFL.ZS",
+                "NV.IND.MANF.KN", "NV.IND.MANF.CN", "NV.IND.MANF.ZS", "NV.IND.MANF.KD.ZG", "NE.CON.PRVT.KN", "NE.GDI.FTOT.KN"):
+        fetch("wb_" + ind, f"{WB}/country/VNM/indicator/{ind}?format=json&per_page=200")
+        fetch("wbmeta_" + ind, f"{WB}/sources/2/country/VNM/series/{ind}/metadata?format=json")
+    fetch("wb_country_meta", f"{WB}/sources/2/country/VNM/metadata?format=json")
+    fetch("wb_country", f"{WB}/country/VNM?format=json")
+    IMF = "https://api.imf.org/external/sdmx/3.0"
+    for ind in ("NGDP_R", "NGDP_RPCH", "NGDP", "NGDP_D"):
+        fetch("weo_" + ind, f"{IMF}/data/dataflow/IMF.RES/WEO/+/VNM.{ind}.A")
+    fetch("weo_struct", f"{IMF}/structure/dataflow/IMF.RES/WEO/+?detail=full&references=none")
+    for flow in ("QNEA", "ANEA", "NEA"):
+        fetch(f"imf_{flow}_struct", f"{IMF}/structure/dataflow/IMF.STA/{flow}/+?references=datastructure")
+        fetch(f"imf_{flow}_vnm", f"{IMF}/data/dataflow/IMF.STA/{flow}/+/*?c%5BCOUNTRY%5D=VNM&dimensionAtObservation=TIME_PERIOD&detail=serieskeysonly")
+        fetch(f"imf_{flow}_vnm_full", f"{IMF}/data/dataflow/IMF.STA/{flow}/+/*?c%5BCOUNTRY%5D=VNM")
+    fetch("imf_dataflows", f"{IMF}/structure/dataflow/*/*/+?detail=allstubs")
+    DB = "https://api.db.nomics.world/v22"
+    for path in ("series/WB/WDI/A-NY.GDP.MKTP.KN-VNM", "series/IMF/WEO:latest/VNM.NGDP_R.national_currency",
+                 "search?q=viet%20nam%20gross%20domestic%20product%20quarterly&limit=50",
+                 "search?q=vietnam%20GDP%20constant%20prices&limit=50", "providers"):
+        fetch("dbn", f"{DB}/{path}{'&' if '?' in path else '?'}observations=1")
+    fetch("un_ama", "https://unstats.un.org/unsd/amaapi/api/file/6")
+    fetch("un_ama_list", "https://unstats.un.org/unsd/amaapi/api/file")
+    fetch("asean", "https://data.aseanstats.org/api/indicators")
+
+
 def main(out, steps="px,wp,files"):
     global OUT
     OUT = Path(out)
@@ -597,7 +626,7 @@ def main(out, steps="px,wp,files"):
              "quarters": step_quarters, "misc": step_misc,
              "gdp_px": step_gdp_px, "gdp_wp": step_gdp_wp, "gdp_old": step_gdp_old,
              "gdp_px2": step_gdp_px2, "gdp_bieu": step_gdp_bieu,
-             "gdp_posts": step_gdp_posts, "rebase": step_rebase, "g5": step_g5}[s]()
+             "gdp_posts": step_gdp_posts, "rebase": step_rebase, "g5": step_g5, "intl": step_intl}[s]()
         except Exception as e:  # noqa: BLE001
             SUMMARY.append({"name": f"step_{s}", "error": f"{type(e).__name__}: {e}"})
             print("step failed", s, e, flush=True)
