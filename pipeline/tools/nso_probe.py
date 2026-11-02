@@ -615,6 +615,46 @@ def step_intl():
     fetch("asean", "https://data.aseanstats.org/api/indicators")
 
 
+def _xlrd_lenient():
+    import importlib
+    uni = lambda b, enc: b.decode(enc, "replace")  # noqa: E731 - some NSO .xls files carry broken UTF-16 strings
+    for m in ("xlrd.biffh", "xlrd.book", "xlrd.sheet"):
+        mod = importlib.import_module(m)
+        if hasattr(mod, "unicode"):
+            mod.unicode = uni
+
+
+def step_g7():
+    """Older socio-economic report books (2006-2019) and NSO's 2014 official series file: keep only the GDP sheets
+    (first 60 rows as text), not the binaries."""
+    import io
+    _xlrd_lenient()
+    import xlrd, openpyxl  # noqa: E401
+    urls = [u.strip() for u in Path("pipeline/tools/nso_g7_urls.txt").read_text().splitlines() if u.strip()]
+    out = {}
+    rx = re.compile(r"Tổng sản phẩm trong nước|TỔNG SẢN PHẨM TRONG NƯỚC|Gross domestic product|GROSS DOMESTIC PRODUCT|\bGDP\b")
+    for u in urls:
+        st, h, b = fetch("g7", u, save=False)
+        if st != 200:
+            out[u] = {"error": st}
+            continue
+        try:
+            if u.lower().endswith(".xls"):
+                wb = xlrd.open_workbook(file_contents=b)
+                sheets = [(sh.name, [[str(c) for c in sh.row_values(i)] for i in range(min(sh.nrows, 60))]) for sh in wb.sheets()]
+            else:
+                wb = openpyxl.load_workbook(io.BytesIO(b), read_only=True, data_only=True)
+                sheets = [(ws.title, [["" if c is None else str(c) for c in r] for _, r in zip(range(60), ws.iter_rows(values_only=True))]) for ws in wb.worksheets]
+        except Exception as e:  # noqa: BLE001
+            out[u] = {"error": f"{type(e).__name__}: {e}"[:200]}
+            continue
+        g = {n: rows for n, rows in sheets if rx.search(" ".join(c for r in rows[:4] for c in r))}
+        out[u] = {"sheets": [n for n, _ in sheets], "gdp": g}
+        if "Day-so-lieu" in u:
+            (OUT / "files" / (re.sub(r"[^A-Za-z0-9.-]", "_", u.rsplit("/", 1)[-1]))).write_bytes(b)
+        (OUT / "g7_gdp_sheets.json").write_text(json.dumps(out, ensure_ascii=False))
+
+
 def main(out, steps="px,wp,files"):
     global OUT
     OUT = Path(out)
@@ -626,7 +666,7 @@ def main(out, steps="px,wp,files"):
              "quarters": step_quarters, "misc": step_misc,
              "gdp_px": step_gdp_px, "gdp_wp": step_gdp_wp, "gdp_old": step_gdp_old,
              "gdp_px2": step_gdp_px2, "gdp_bieu": step_gdp_bieu,
-             "gdp_posts": step_gdp_posts, "rebase": step_rebase, "g5": step_g5, "intl": step_intl}[s]()
+             "gdp_posts": step_gdp_posts, "rebase": step_rebase, "g5": step_g5, "intl": step_intl, "g7": step_g7}[s]()
         except Exception as e:  # noqa: BLE001
             SUMMARY.append({"name": f"step_{s}", "error": f"{type(e).__name__}: {e}"})
             print("step failed", s, e, flush=True)
