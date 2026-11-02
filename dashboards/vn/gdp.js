@@ -433,16 +433,17 @@ dash.calc('gdp_table', {
   // the World Bank's US$ / 1e9; per capita in US$).
   const USD = {
     'gdp-usd': { div: 1e9, unit: 'US$ billion', tipUnit: ' bn', fmt: ',.1f', names: { 'NY.GDP.MKTP.CD': 'GDP, current US$', 'NY.GDP.MKTP.KD': 'GDP, constant 2015 US$' } },
-    'gdp-pc': { div: 1, unit: 'US$', tipUnit: '', fmt: ',.0f', names: { 'NY.GDP.PCAP.CD': 'GDP per capita, current US$', 'NY.GDP.PCAP.KD': 'GDP per capita, constant 2015 US$' } },
+    'gdp-pc': { div: 1, unit: 'US$', tipUnit: '', fmt: ',.0f', names: { 'NY.GDP.PCAP.CD': 'GDP per capita, current US$', 'NY.GDP.PCAP.KD': 'GDP per capita, constant 2015 US$', 'NY.GNP.PCAP.CD': 'GNI per capita, Atlas method, US$' },
+      units: { 'NY.GNP.PCAP.CD': 'US$, Atlas method' }, colors: { 'NY.GNP.PCAP.CD': 'var(--ad-c8)' } },
   };
   function usd(id, pick) {
     const C = USD[id], box = document.getElementById(id + '-chart'), nominal = /\.CD$/.test(pick);
-    document.getElementById(id + '-units').textContent = `${C.unit}, ${nominal ? 'current prices' : 'constant 2015 prices'}`;
+    document.getElementById(id + '-units').textContent = (C.units || {})[pick] || `${C.unit}, ${nominal ? 'current prices' : 'constant 2015 prices'}`;
     if (!status(box, ['vn_gdp_intl'])) return;
     const rows = dash.data('vn_gdp_intl').data.filter((r) => r.series === pick && num(r.value) != null)
       .map((r) => ({ date: r.date, v: num(r.value) / C.div })).sort((a, b) => (a.date < b.date ? -1 : 1));
     if (!rows.length) { box.replaceChildren(); return; }
-    const H = 280, mr = 8, col = nominal ? 'var(--ad-c1)' : 'var(--ad-c2)';
+    const H = 280, mr = 8, col = (C.colors || {})[pick] || (nominal ? 'var(--ad-c1)' : 'var(--ad-c2)');
     const { svg, x, y, W, ml } = frame(box, rows, H, rows.map((r) => r.v).concat([0]), (v) => d3.format(',.0f')(v), true, mr);
     svg.append('path').attr('d', d3.line().x((r) => x(J.date(r.date))).y((r) => y(r.v))(rows))
       .attr('fill', 'none').attr('stroke', col).attr('stroke-width', 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
