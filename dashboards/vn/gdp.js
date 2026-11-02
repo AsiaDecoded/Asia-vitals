@@ -358,29 +358,23 @@ dash.calc('gdp_table', {
   }
 
 
-  // Chart 2: real GDP growth, annual: NSO's yearbook, the IMF's WEO (projections dashed) and the World Bank's WDI.
+  // Chart 2: real GDP growth, annual: NSO's yearbook and the World Bank's WDI.
   function sources() {
     const id = 'gdp-src', box = document.getElementById(id + '-chart');
-    const S = [{ key: 'nso', name: 'NSO', color: 'var(--ad-c2)' }, { key: 'imf', name: 'IMF', color: 'var(--ad-c1)', thin: true },
-      { key: 'imfp', name: 'IMF projection', color: 'var(--ad-c1)', dash: true, thin: true }, { key: 'wb', name: 'World Bank', color: 'var(--ad-c8)', thin: true }];
+    const S = [{ key: 'nso', name: 'NSO', color: 'var(--ad-c2)' }, { key: 'wb', name: 'World Bank', color: 'var(--ad-c8)', thin: true }];
     legend(id + '-legend', S);
     if (!status(box, ['vn_gdp_annual', 'vn_gdp_intl'])) return;
     const by = new Map();
     const put = (date, k, v) => { if (v == null) return; if (!by.has(date)) by.set(date, { date }); by.get(date)[k] = v; };
     annual('sector', 'total', 'constant_2010', 'yoy').forEach((r) => put(r.date, 'nso', r.v));
-    const X = dash.data('vn_gdp_intl').data;
-    X.filter((r) => r.source === 'wb_wdi').forEach((r) => put(r.date, 'wb', num(r.value)));
-    X.filter((r) => r.source === 'imf_weo').forEach((r) => put(r.date, r.projection ? 'imfp' : 'imf', num(r.value)));
-    const lastActual = X.filter((r) => r.source === 'imf_weo' && !r.projection).reduce((m, r) => (r.date > m ? r.date : m), '');
-    if (by.has(lastActual)) by.get(lastActual).imfp = by.get(lastActual).imf;   // join the projection to the last actual year
+    dash.data('vn_gdp_intl').data.filter((r) => r.source === 'wb_wdi').forEach((r) => put(r.date, 'wb', num(r.value)));
     const rows = Array.from(by.values()).sort((a, b) => (a.date < b.date ? -1 : 1));
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 290, mr = 8;
     const { svg, x, y, W, ml } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), fmt0, true, mr);
     S.forEach((s) => {
       svg.append('path').attr('d', d3.line().defined((r) => r[s.key] != null).x((r) => x(J.date(r.date))).y((r) => y(r[s.key]))(rows))
-        .attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', s.thin ? 1.75 : 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round')
-        .attr('stroke-dasharray', s.dash ? '6 4' : null);
+        .attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', s.thin ? 1.75 : 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
     });
     const card = document.getElementById(id), tip = J.tip(card);
     const rule = svg.append('line').attr('y1', 8).attr('y2', H - 22).attr('stroke', 'var(--cds-chart-reference)').attr('display', 'none');
@@ -390,8 +384,7 @@ dash.calc('gdp_table', {
         const [mx] = d3.pointer(ev); const r = rows[bis(rows, x.invert(mx))]; const px = x(J.date(r.date));
         rule.attr('display', null).attr('x1', px).attr('x2', px);
         const cr = card.getBoundingClientRect();
-        const lines = S.filter((s) => r[s.key] != null && !(s.key === 'imfp' && r.date === lastActual)).map((s) => [s.color, s.name, r[s.key].toFixed(2) + '%']);
-        J.showTip(card, tip, r.date.slice(0, 4), lines.length ? lines : [[null, 'No data', '']], ev.clientX - cr.left, ev.clientY - cr.top);
+        J.showTip(card, tip, r.date.slice(0, 4), S.filter((s) => r[s.key] != null).map((s) => [s.color, s.name, r[s.key].toFixed(2) + '%']), ev.clientX - cr.left, ev.clientY - cr.top);
       })
       .on('mouseleave', () => { rule.attr('display', 'none'); tip.style.display = 'none'; });
   }
