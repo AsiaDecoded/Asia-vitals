@@ -350,19 +350,29 @@ dash.calc('gdp_table', {
   function sources() {
     const id = 'gdp-src', box = document.getElementById(id + '-chart');
     const S = [{ key: 'nso', name: 'NSO', color: 'var(--ad-c2)' }, { key: 'wb', name: 'World Bank', color: 'var(--ad-c2)' }].filter((s) => s.key === srcPick);
-    legend(id + '-legend', []);
-    if (!status(box, ['vn_gdp_annual', 'vn_gdp_intl'])) return;
+    if (!status(box, ['vn_gdp_annual', 'vn_gdp_intl', 'vn_gdp'])) { legend(id + '-legend', []); return; }
     const by = new Map();
     const put = (date, k, v) => { if (v == null) return; if (!by.has(date)) by.set(date, { date }); by.get(date)[k] = v; };
     annual('sector', 'total', 'constant_2010', 'yoy').forEach((r) => put(r.date, 'nso', r.v));
     dash.data('vn_gdp_intl').data.filter((r) => r.source === 'wb_wdi').forEach((r) => put(r.date, 'wb', num(r.value)));
-    const rows = Array.from(by.values()).filter((r) => r[srcPick] != null).sort((a, b) => (a.date < b.date ? -1 : 1));
+    // The current year so far: NSO's latest year-to-date real growth (quarterly tables), for a year with no annual figure yet.
+    const lastYear = Math.max(...Array.from(by.values()).filter((r) => r[srcPick] != null).map((r) => Number(r.date.slice(0, 4))));
+    const ytdRow = ytdSeries('total').filter((r) => Number(r.date.slice(0, 4)) > lastYear && r.period.slice(5) !== '').pop();
+    const YTD_LABEL = { Q1: 'Jan–Mar', H1: 'Jan–Jun', '9M': 'Jan–Sep' };
+    if (ytdRow) put(`${ytdRow.date.slice(0, 4)}-12-01`, 'ytd', ytdRow.v);
+    const ytdName = ytdRow ? `NSO, ${YTD_LABEL[ytdRow.period.slice(5)] || 'year to date'} ${ytdRow.date.slice(0, 4)}` : '';
+    legend(id + '-legend', [{ name: S[0].name, color: S[0].color }].concat(ytdRow ? [{ name: ytdName, color: 'var(--ad-c2)', bar: true }] : []));
+    const rows = Array.from(by.values()).filter((r) => r[srcPick] != null || r.ytd != null).sort((a, b) => (a.date < b.date ? -1 : 1));
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 290, mr = 8;
-    const { svg, x, y, W, ml } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), fmt0, true, mr);
+    const { svg, x, y, W, ml } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key]).concat([r.ytd])).filter((v) => v != null), fmt0, true, mr);
     S.forEach((s) => {
       svg.append('path').attr('d', d3.line().defined((r) => r[s.key] != null).x((r) => x(J.date(r.date))).y((r) => y(r[s.key]))(rows))
         .attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', s.thin ? 1.75 : 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
+    });
+    rows.filter((r) => r.ytd != null).forEach((r) => {
+      svg.append('circle').attr('cx', x(J.date(r.date))).attr('cy', y(r.ytd)).attr('r', 4.5).attr('fill', 'var(--color-panel)')
+        .attr('stroke', 'var(--ad-c2)').attr('stroke-width', 2);
     });
     const card = document.getElementById(id), tip = J.tip(card);
     const rule = svg.append('line').attr('y1', 8).attr('y2', H - 22).attr('stroke', 'var(--cds-chart-reference)').attr('display', 'none');
@@ -372,7 +382,9 @@ dash.calc('gdp_table', {
         const [mx] = d3.pointer(ev); const r = rows[bis(rows, x.invert(mx))]; const px = x(J.date(r.date));
         rule.attr('display', null).attr('x1', px).attr('x2', px);
         const cr = card.getBoundingClientRect();
-        J.showTip(card, tip, r.date.slice(0, 4), S.filter((s) => r[s.key] != null).map((s) => [s.color, s.name, r[s.key].toFixed(2) + '%']), ev.clientX - cr.left, ev.clientY - cr.top);
+        const lines = S.filter((s) => r[s.key] != null).map((s) => [s.color, s.name, r[s.key].toFixed(2) + '%'])
+          .concat(r.ytd != null ? [['var(--ad-c2)', ytdName + ' (2020 prices)', r.ytd.toFixed(2) + '%']] : []);
+        J.showTip(card, tip, r.date.slice(0, 4), lines, ev.clientX - cr.left, ev.clientY - cr.top);
       })
       .on('mouseleave', () => { rule.attr('display', 'none'); tip.style.display = 'none'; });
   }
