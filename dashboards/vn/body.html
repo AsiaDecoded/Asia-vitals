@@ -4,11 +4,181 @@
   </header>
 
   <nav class="jg-tabs" role="tablist" aria-label="Sections">
-    <button role="tab" data-tab="inflation" aria-selected="true">Inflation</button>
+    <button role="tab" data-tab="gdp" aria-selected="true">GDP</button>
+    <button role="tab" data-tab="inflation" aria-selected="false">Inflation</button>
     <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
   </nav>
 
-  <section class="jg-page" id="inflation" role="tabpanel">
+  <section class="jg-page" id="gdp" role="tabpanel">
+    <div class="jg-pagehead">
+      <div class="jg-note" style="margin:0"><span id="gdp-q" class="dash-skeleton" style="color: var(--color-fg)" data-source="gdp_latest" data-field="label" data-row="0">—</span></div>
+      <p class="jg-take" id="gdp-takeaway"><span class="dash-skeleton">—</span></p>
+    </div>
+
+    <section class="jg-tiles" id="gdp-headline" aria-label="Headline GDP figures">
+      <div class="jg-card jg-tile"><div class="lbl">Real GDP, y/y</div>
+        <div class="val"><span data-source="gdp_latest" data-field="real_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior quarter <span data-source="gdp_latest" data-field="real_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Real GDP, year to date, y/y</div>
+        <div class="val"><span data-source="gdp_latest" data-field="real_ytd" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub"><span data-source="gdp_latest" data-field="ytd_label" data-row="0" data-kind="text">—</span></div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Manufacturing value added, real, y/y</div>
+        <div class="val"><span data-source="gdp_latest" data-field="mfg_yoy" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior quarter <span data-source="gdp_latest" data-field="mfg_yoy_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Manufacturing, % of GDP (current prices)</div>
+        <div class="val"><span data-source="gdp_latest" data-field="mfg_share" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior quarter <span data-source="gdp_latest" data-field="mfg_share_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Manufacturing output (IIP), y/y</div>
+        <div class="val"><span data-source="gdp_latest" data-field="iip_mfg" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub">prior quarter <span data-source="gdp_latest" data-field="iip_mfg_prev" data-row="0">—</span>%</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">Nominal GDP, VND trillion</div>
+        <div class="val"><span data-source="gdp_latest" data-field="nominal_trn" data-row="0" class="dash-skeleton">—</span></div>
+        <div class="sub">year to date <span data-source="gdp_latest" data-field="nominal_ytd_trn" data-row="0">—</span></div></div>
+    </section>
+
+    <section class="jg-card" id="gdp-growth" data-periods="q" data-def="0">
+      <div class="jg-cardhead">
+        <div><h2>Vietnam real GDP growth</h2></div>
+        <div class="jg-seg" id="gdp-growth-seg" role="group" aria-label="Period covered">
+          <button data-s="Q" aria-pressed="true">Quarter</button><button data-s="YTD">Year to date</button>
+        </div>
+      </div>
+      <div class="ad-top"><span class="ad-units">% y/y, constant prices</span><div class="jg-legend" id="gdp-growth-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="gdp-growth-chart" data-source="vn_gdp"></div>
+      <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="gdp-sectors" data-periods="q" data-def="0">
+        <h2>Vietnam real GDP growth by sector</h2>
+        <div class="ad-top"><span class="ad-units">% y/y, constant prices</span><div class="jg-legend" id="gdp-sectors-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-sectors-chart" data-source="vn_gdp"></div>
+        <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="gdp-level" data-periods="q" data-def="0">
+        <div class="jg-cardhead">
+          <div><h2>Vietnam GDP level</h2></div>
+          <div class="jg-seg" id="gdp-level-seg" role="group" aria-label="Price basis">
+            <button data-b="current" aria-pressed="true">Nominal</button><button data-b="constant">Real</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units" id="gdp-level-units">VND trillion per quarter, current prices</span><div class="jg-legend" id="gdp-level-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-level-chart" data-source="vn_gdp"></div>
+        <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card" id="gdp-structure" data-periods="q" data-def="0">
+      <h2>Vietnam GDP by sector, current prices</h2>
+      <div class="ad-top"><span class="ad-units">% of GDP</span><div class="jg-legend" id="gdp-structure-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="gdp-structure-chart" data-source="vn_gdp"></div>
+      <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <section class="jg-card" id="gdp-annual" data-periods="a" data-def="0">
+      <h2>Vietnam real GDP growth, annual</h2>
+      <div class="ad-top"><span class="ad-units">% y/y, constant 2010 prices</span><div class="jg-legend" id="gdp-annual-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="gdp-annual-chart" data-source="vn_gdp_annual"></div>
+      <div class="ad-foot"><span>Source: NSO statistical yearbook database</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="gdp-exp" data-periods="a" data-def="0">
+        <h2>Vietnam real GDP growth by expenditure</h2>
+        <div class="ad-top"><span class="ad-units">% y/y, constant 2010 prices</span><div class="jg-legend" id="gdp-exp-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-exp-chart" data-source="vn_gdp_annual"></div>
+        <div class="ad-foot"><span>Source: NSO statistical yearbook database</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="gdp-exp-share" data-periods="a" data-def="0">
+        <h2>Vietnam GDP by expenditure, current prices</h2>
+        <div class="ad-top"><span class="ad-units">% of GDP</span><div class="jg-legend" id="gdp-exp-share-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-exp-share-chart" data-source="vn_gdp_annual"></div>
+        <div class="ad-foot"><span>Source: NSO statistical yearbook database</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card" id="gdp-ind">
+      <h2>Vietnam GDP by industry, <span id="gdp-ind-q">latest quarter</span></h2>
+      <div class="ad-top"><span class="ad-units">VND trillion; % of GDP at current prices; real growth, % y/y</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-tablewrap">
+        <table id="gdp-ind-table" data-source="gdp_table" data-row-key="code">
+          <thead><tr>
+            <th data-field="industry">Industry</th>
+            <th data-field="isic" class="hide-narrow">ISIC</th>
+            <th data-field="nominal_trn">Nominal, VND trn</th>
+            <th data-field="share">% of GDP</th>
+            <th data-field="real_yoy">Real y/y</th>
+            <th data-field="real_yoy_prev" class="hide-narrow">Prior quarter</th>
+            <th data-field="real_ytd">Year to date</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <section class="jg-card" id="gdp-heat">
+      <h2>Vietnam real GDP growth by industry</h2>
+      <div class="ad-top"><span class="ad-units">% y/y, constant prices, last 12 quarters</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-tablewrap">
+        <table id="gdp-heat-table" class="vn-heat" data-source="vn_gdp"></table>
+      </div>
+      <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="gdp-mfg" data-periods="q" data-def="0">
+        <h2>Vietnam manufacturing</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="gdp-mfg-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-mfg-chart" data-source="vn_gdp vn_iip"></div>
+        <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="gdp-mfg-share" data-periods="q" data-def="0">
+        <h2>Vietnam manufacturing and industry, share of GDP</h2>
+        <div class="ad-top"><span class="ad-units">% of GDP, current prices</span><div class="jg-legend" id="gdp-mfg-share-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-mfg-share-chart" data-source="vn_gdp"></div>
+        <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card" id="iip-div" data-periods="none">
+      <h2>Vietnam manufacturing output by industry</h2>
+      <div class="ad-top"><span class="ad-units" id="iip-div-units">industrial production index, % y/y</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="iip-div-chart" data-source="vn_iip"></div>
+      <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <section class="jg-card" id="iip-heat">
+      <h2>Vietnam industrial production by industry</h2>
+      <div class="ad-top"><span class="ad-units">% y/y, last 12 quarters</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-tablewrap">
+        <table id="iip-heat-table" class="vn-heat" data-source="vn_iip"></table>
+      </div>
+      <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <section class="jg-card ad-notes" id="gdp-notes">
+      <h2>Chart notes</h2>
+      <ol>
+        <li><b>All figures are as published by the National Statistics Office of Viet Nam (NSO); none is calculated.</b> Quarterly figures are from NSO&rsquo;s socio-economic report tables, annual figures from its statistical yearbook database. Real growth is NSO&rsquo;s index against the same period a year earlier (= 100) less 100, or the rate itself where NSO prints a rate (first-quarter tables from 2024). Levels are shown in VND trillion: NSO&rsquo;s VND billion divided by 1,000. NSO publishes no seasonally adjusted series and no quarter-on-quarter growth.</li>
+        <li><b>Vintages:</b> each quarterly report gives the reference quarter (estimate), the previous quarter (preliminary) and the year to date. The page shows the latest published figure for each period. The yearbook&rsquo;s last two years are preliminary and estimated.</li>
+        <li><b>Breaks (dashed lines):</b> 2020 quarterly levels are on the scale before NSO&rsquo;s 2021 revaluation of GDP (the yearbook puts 2020 nominal GDP at VND 8,044 trillion; the 2020 quarterly tables sum to VND 6,293 trillion). Constant prices are 2010 prices up to the fourth quarter of 2025 and 2020 prices from the first quarter of 2026, when NSO also revised the current-price scale; earlier quarters have not been restated in these tables. Levels are therefore not comparable across either break; NSO&rsquo;s growth rates are its own on each basis.</li>
+        <li><b>Chart 1, real GDP growth:</b> quarterly y/y (bars), or the year-to-date figure (three, six, nine and twelve months against the same period a year earlier).</li>
+        <li><b>Chart 2, by sector:</b> agriculture, forestry and fishing; industry and construction; services; and taxes on products less subsidies, the four parts NSO sums to GDP.</li>
+        <li><b>Chart 3, level:</b> GDP per quarter at current prices (nominal), or at constant prices (real), with the 2010-price and 2020-price series shown separately.</li>
+        <li><b>Chart 4, structure:</b> NSO&rsquo;s published shares of GDP at current prices. The four parts sum to 100.</li>
+        <li><b>Chart 5, annual growth:</b> the yearbook&rsquo;s real GDP and sector growth (previous year = 100, less 100), 2010 prices, from 2006.</li>
+        <li><b>Charts 6 and 7, expenditure:</b> annual only; NSO&rsquo;s quarterly expenditure figures are growth rates in the release text, not in its tables. Real growth from 2006; shares of GDP at current prices from 1995. Household and government final consumption, gross fixed capital formation, and the balance of trade in goods and services; changes in inventories and the statistical discrepancy are in the data but not drawn.</li>
+        <li><b>Table, GDP by industry:</b> NSO&rsquo;s 28 rows, ISIC Rev. 4 sections (VSIC 2018). Manufacturing (section C) is a single row: NSO publishes no value added by manufacturing industry in its quarterly or annual GDP tables.</li>
+        <li><b>Heat tables:</b> each row is coloured on its own range, from green at its lowest rate in the window to red at its highest.</li>
+        <li><b>Chart 8, manufacturing:</b> manufacturing value added at constant prices, y/y (GDP tables), and manufacturing output from the industrial production index (IIP), y/y. The IIP measures output volume, not value added.</li>
+        <li><b>Chart 9, shares:</b> manufacturing and industry (mining, manufacturing, electricity, water supply) as published shares of GDP at current prices.</li>
+        <li><b>Chart 10 and the IIP heat table, manufacturing by industry:</b> the most granular official breakdown of manufacturing: the IIP for the 24 VSIC two-digit manufacturing divisions (10 to 33), against the same quarter a year earlier. The dashed line in Chart 10 is all manufacturing. The first quarter of each year is the first-quarter column of NSO&rsquo;s March IIP table.</li>
+      </ol>
+    </section>
+  </section>
+
+  <section class="jg-page" id="inflation" role="tabpanel" hidden>
     <div class="jg-pagehead">
       <div class="jg-note" style="margin:0"><span id="cpi-month" class="dash-skeleton" style="color: var(--color-fg)" data-source="cpi_month" data-field="month" data-row="0">—</span></div>
       <p class="jg-take" id="cpi-takeaway"><span class="dash-skeleton">—</span></p>
@@ -151,6 +321,22 @@
   </section>
 
   <section class="jg-page" id="methodology" role="tabpanel" hidden>
+    <article class="jg-card ad-method" id="method-gdp">
+      <h2>GDP</h2>
+      <p>NSO compiles quarterly GDP by the production approach under the 2008 System of National Accounts, and publishes it with its socio-economic press conference in the month after each quarter, as an estimate for the latest quarter and a preliminary figure for the quarter before. Expenditure-side growth (final consumption, accumulation, exports and imports) appears only as rates in the release text, not in the tables.</p>
+      <h3>What NSO publishes each quarter</h3>
+      <ul>
+        <li><b>GDP at current prices:</b> VND billion and % of GDP, for the quarter and the year to date, by 28 rows: total; agriculture, forestry and fishing (with agriculture, forestry, fishing); industry and construction (mining, manufacturing, electricity, water supply, construction); services (14 ISIC sections, G to T); taxes on products less subsidies.</li>
+        <li><b>GDP at constant prices:</b> the same rows in VND billion, with growth against the same period a year earlier.</li>
+        <li><b>Industrial production index (IIP):</b> monthly and quarterly, against the same period a year earlier, for industry, its four sections and the VSIC two-digit divisions, including the 24 manufacturing divisions. This is the deepest official breakdown of manufacturing; the GDP tables show manufacturing as one row.</li>
+        <li><b>Annual (statistical yearbook database):</b> GDP by sector at current prices from 1986 and at constant 2010 prices from 2005; GDP by expenditure (final consumption of households and government, gross capital formation, trade balance) at current prices from 1995 and constant 2010 prices from 2005.</li>
+        <li><b>Not published:</b> seasonally adjusted GDP, quarter-on-quarter growth, a GDP deflator, nominal growth rates, quarterly expenditure tables (growth rates appear in the release text), contributions to growth as data (the release text gives each sector&rsquo;s share of value-added growth), value added by manufacturing industry.</li>
+      </ul>
+      <h3>Bases and breaks</h3>
+      <p>Constant prices are 2010 prices up to the fourth quarter of 2025 and 2020 prices from the first quarter of 2026 (&ldquo;Gross domestic product at constant prices was calculated using the base year 2020&rdquo;, NSO, second-quarter 2026 release). Current-price levels from 2026 are on the revised scale. An earlier revaluation, published in 2021, raised the level of GDP for 2011&ndash;2020; the 2020 quarterly report tables are on the old scale, the yearbook on the new. NSO&rsquo;s report tables do not restate earlier quarters on the new basis, so levels across the change are not comparable; this page does not link them.</p>
+      <h3>Data</h3>
+      <p>NSO&rsquo;s quarterly socio-economic report tables (&ldquo;Biểu&rdquo;, tables 1 and 2 and the quarterly IIP table), first quarter of 2020 to date, the latest published figure for each period; NSO&rsquo;s PX-Web yearbook database (tables E03.02, E03.03, E03.08, E03.09) for annual figures. Built by the AsiaDecoded/asia-vitals pipeline (data/vn/gdp), which reads the report workbooks on NSO release days.</p>
+    </article>
     <article class="jg-card ad-method" id="method-cpi">
       <h2>Consumer and producer prices</h2>
       <p>Vietnam&rsquo;s consumer price index (CPI) is compiled monthly by the National Statistics Office (NSO) under the Ministry of Finance, formerly the General Statistics Office. The 2024 basket, in use from the November 2025 index, has 775 representative goods and services in 11 groups, weighted from the 2024 household living standards survey (about 62,000 households, four rounds). Earlier bases: 2019 (754 items, used for 2020 to October 2025), 2014 (654), 2009 (572), 2005 (494), 2000 (396), 1995 (300). NSO computes a geometric-mean Laspeyres index with fixed base-year weights (as stated for the 2014 basket).</p>

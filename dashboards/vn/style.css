@@ -123,3 +123,12 @@
 #div-heat-table td.wt { color: var(--ad-ink, var(--color-fg-muted)); padding-right: 12px; }
 #div-heat-table th:nth-child(2) { font-weight: 400; }
 .jg .jg-chart { min-height: 280px; }
+
+/* GDP tab heat tables (same style as the CPI heat table) */
+.vn-heat { font-size: 0.8125rem; }
+.vn-heat th, .vn-heat td { padding: 3px 6px; border-bottom: 0; }
+.vn-heat th:nth-child(n+2), .vn-heat td:nth-child(n+2) { text-align: center; }
+.vn-heat th:first-child, .vn-heat td:first-child { text-align: left; }
+.vn-heat td.heat { font-variant-numeric: tabular-nums; border: 2px solid var(--color-bg); }
+.vn-heat tr.lead td, .vn-heat tr.grp1 td:first-child { font-weight: 700; }
+#gdp-ind-table tr.sep td:first-child { font-weight: 700; }

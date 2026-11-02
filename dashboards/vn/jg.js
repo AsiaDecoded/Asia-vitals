@@ -70,7 +70,7 @@ window.JG = {
         JG.period[card.id] = Number(b.dataset.n);
         seg.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
         const p = page ? page.id : 'gdp';
-        if (p === 'gdp') JG.redraw && JG.redraw(); else if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else JG.redrawTrade && JG.redrawTrade();
+        if (p === 'gdp') (JG.redrawGdp || JG.redraw) && (JG.redrawGdp || JG.redraw)(); else if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else JG.redrawTrade && JG.redrawTrade();
       });
       let head = card.querySelector(':scope > .jg-cardhead');
       if (!head) {

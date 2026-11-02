@@ -45,7 +45,7 @@ dash.calc('weights_wide', {
     if (c.id && c.querySelector('.jg-chart') && c.dataset.periods !== 'none') J.period[c.id] = c.dataset.def != null ? Number(c.dataset.def) : 120;
   });
   J.addPeriods();
-  J.addSliders(() => J.redrawCpi());
+  J.addSliders(() => { J.redrawCpi(); if (J.redrawGdp) J.redrawGdp(); });
   dash.onData(() => J.theme());
 
   const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -381,6 +381,9 @@ dash.calc('weights_wide', {
     hbars('province', 'vn_cpi_regions', (r) => r.kind === 'province' && r.series === 'all', (r) => r.name, 'var(--ad-c2)', 'province-units', 'all items', mom, 'm/m');
   };
 
+  // Shared with gdp.js (GDP tab): drawing helpers only.
+  J.vn = { legend, frame, hover, status, failed, fill, win, qLab, f2, num, fmt0 };
+
   const tabs = document.querySelectorAll('.jg-tabs [data-tab]');
   const show = (id) => {
     if (!document.getElementById(id)) return;
@@ -388,10 +391,11 @@ dash.calc('weights_wide', {
     document.querySelectorAll('.jg-page').forEach((pg) => { pg.hidden = pg.id !== id; });
     dash.setLink(id);
     if (id === 'inflation') J.redrawCpi();
+    if (id === 'gdp' && J.redrawGdp) J.redrawGdp();
   };
   J.show = show;
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
-  if (location.hash.slice(1) === 'methodology') show('methodology');
+  if (['methodology', 'inflation'].includes(location.hash.slice(1))) show(location.hash.slice(1));
 
   dash.onData(() => { tiles(); takeaway(); divHeat(); weightsTable(); J.redrawCpi(); });
 })();
