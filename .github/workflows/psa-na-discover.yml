@@ -1,0 +1,42 @@
+name: PSA national accounts discovery (manual)
+
+# One-off helper for the Philippines GDP tab: walks PSA OpenSTAT for national accounts tables, fetches them, and
+# reads the World Bank WDI for the Philippines; saves to the "discovery" branch under discovery/psa_na.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - pipeline/tools/psa_na_discover.py
+      - .github/workflows/psa-na-discover.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: psa-na-discover
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Query OpenSTAT and WDI
+        run: python -I pipeline/tools/psa_na_discover.py discovery/psa_na
+      - name: Push results to the discovery branch
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mv discovery /tmp/discovery
+          git fetch origin discovery
+          git checkout -B discovery origin/discovery
+          mkdir -p discovery && rm -rf discovery/psa_na && cp -r /tmp/discovery/psa_na discovery/
+          git add discovery/psa_na
+          git commit -m "PSA national accounts discovery" || exit 0
+          for i in 1 2 3; do git push origin discovery && break; git pull --rebase origin discovery; done
