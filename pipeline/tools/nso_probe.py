@@ -686,6 +686,27 @@ def step_g8():
     print("G8JSON " + json.dumps(out, ensure_ascii=False), flush=True)   # also in the log (discovery branch push can collide)
 
 
+def step_g9():
+    """WDI Database Archives (source 57): Vietnam GNI per capita (Atlas) and GDP per capita, current US$, for 2007-2010
+    in the vintages around July 2010, i.e. as published when the lower-middle-income classification was announced."""
+    out = {}
+    st, h, b = fetch("g9", "https://api.worldbank.org/v2/sources/57/version?format=json&per_page=500", save=False)
+    out["versions"] = {"status": st, "body": b.decode("utf-8", "replace")[:20000] if st == 200 else ""}
+    vers = []
+    try:
+        j = json.loads(b)
+        txt = json.dumps(j)
+        vers = sorted(set(re.findall(r'"(20(?:09|10|11)\d{2})"', txt)))
+    except Exception as e:  # noqa: BLE001
+        out["versions"]["error"] = str(e)[:200]
+    for v in vers or ["201007", "201009", "201104"]:
+        for ser in ("NY.GNP.PCAP.CD", "NY.GDP.PCAP.CD", "NY.GDP.MKTP.CD"):
+            u = f"https://api.worldbank.org/v2/sources/57/country/VNM/series/{ser}/version/{v}/time/YR2007;YR2008;YR2009;YR2010?format=json"
+            st, h, b = fetch("g9", u, save=False)
+            out[f"{v} {ser}"] = {"status": st, "body": b.decode("utf-8", "replace")[:3000] if st == 200 else ""}
+    print("G9JSON " + json.dumps(out, ensure_ascii=False), flush=True)
+
+
 def main(out, steps="px,wp,files"):
     global OUT
     OUT = Path(out)
@@ -697,7 +718,7 @@ def main(out, steps="px,wp,files"):
              "quarters": step_quarters, "misc": step_misc,
              "gdp_px": step_gdp_px, "gdp_wp": step_gdp_wp, "gdp_old": step_gdp_old,
              "gdp_px2": step_gdp_px2, "gdp_bieu": step_gdp_bieu,
-             "gdp_posts": step_gdp_posts, "rebase": step_rebase, "g5": step_g5, "intl": step_intl, "g7": step_g7, "g8": step_g8}[s]()
+             "gdp_posts": step_gdp_posts, "rebase": step_rebase, "g5": step_g5, "intl": step_intl, "g7": step_g7, "g8": step_g8, "g9": step_g9}[s]()
         except Exception as e:  # noqa: BLE001
             SUMMARY.append({"name": f"step_{s}", "error": f"{type(e).__name__}: {e}"})
             print("step failed", s, e, flush=True)
