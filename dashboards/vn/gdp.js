@@ -462,21 +462,19 @@ dash.calc('gdp_table', {
       });
     }
     if (rows[0].date.slice(0, 4) < String(LMI)) {
-      svg.append('line').attr('x1', lx).attr('x2', lx).attr('y1', 12).attr('y2', H - 24).attr('stroke', 'var(--ad-axis)').attr('stroke-dasharray', '3 3');
-      svg.append('text').attr('x', lx - 5).attr('y', 18).attr('font-size', 12).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'end').text('Lower-middle income');
+      svg.append('line').attr('x1', lx).attr('x2', lx).attr('y1', 18).attr('y2', H - 24).attr('stroke', 'var(--ad-axis)').attr('stroke-dasharray', '3 3');
+      svg.append('text').attr('x', lx).attr('y', 12).attr('font-size', 12).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'middle').text('Lower-middle income');
     }
     // CAGR, calculated on this page (asked for 2 Nov 2026): (value in the latest year / value in 2009)^(1 / years) - 1,
     // from the World Bank figures drawn, for the series shown; the end year moves on as WDI adds years.
     const at = (yr) => rows.find((r) => r.date.slice(0, 4) === String(yr));
     const END = Number(rows[rows.length - 1].date.slice(0, 4)), cagr = [START].map((s) => { const a0 = at(s), a1 = at(END); return a0 && a1 && a0.v > 0 ? { s, v: (Math.pow(a1.v / a0.v, 1 / (END - s)) - 1) * 100 } : null; }).filter(Boolean);
     if (cagr.length) {
-      // Top of the plot, just left of where the line passes below the block (the line rises to the right).
-      const lh = 16, n = cagr.length, ty = 18, bottom = ty + (n - 1) * lh + 6;
+      // Bottom right of the plot, under the line (the line rises to the right, so this corner is clear).
+      const lh = 16;
       const t = svg.append('text').attr('font-size', 12).attr('font-weight', 700).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'end');
       cagr.forEach((c, k) => t.append('tspan').attr('dy', k ? lh : 0).text(`${c.s}–${END} CAGR: ${c.v.toFixed(1)}% p.a.`));
-      const bw = t.node().getBBox().width;
-      const clear = rows.filter((r) => y(r.v) > bottom + 6).pop() || rows[0];
-      const tx = Math.max(ml + 8 + bw, x(J.date(clear.date)) - 10);
+      const tx = W - mr - 8, ty = H - 40 - (cagr.length - 1) * lh;
       t.attr('x', tx).attr('y', ty); t.selectAll('tspan').attr('x', tx);
     }
     const card = document.getElementById(id), tip = J.tip(card);
