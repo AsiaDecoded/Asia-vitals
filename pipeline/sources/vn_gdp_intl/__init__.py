@@ -10,6 +10,7 @@ Development Indicators (NY.GDP.MKTP.KD.ZG), as published. Both are % change on t
   (NY.GDP.PCAP.KD), as published, in US$ per person.
 - World Bank WDI, GNI per capita, Atlas method (NY.GNP.PCAP.CD; the series the World Bank's income classification uses),
   as published, in US$ per person (asked for 2 Nov 2026).
+- World Bank WDI, GNI, Atlas method (NY.GNP.ATLS.CD; the total behind the per capita series), as published, in US$.
 
 APIs: IMF SDMX 3.0 (api.imf.org, no key) and api.worldbank.org/v2 (no key). A few seconds.
 """
@@ -28,7 +29,8 @@ WEO = "https://api.imf.org/external/sdmx/3.0/data/dataflow/IMF.RES/WEO/+/VNM.NGD
 WDI = "https://api.worldbank.org/v2/country/VNM/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=200"
 WDI_USD = {"NY.GDP.MKTP.CD": "GDP, current US$", "NY.GDP.MKTP.KD": "GDP, constant 2015 US$",
            "NY.GDP.PCAP.CD": "GDP per capita, current US$", "NY.GDP.PCAP.KD": "GDP per capita, constant 2015 US$",
-           "NY.GNP.PCAP.CD": "GNI per capita, Atlas method, current US$"}
+           "NY.GNP.PCAP.CD": "GNI per capita, Atlas method, current US$",
+           "NY.GNP.ATLS.CD": "GNI, Atlas method, current US$"}
 WDI_URL = "https://api.worldbank.org/v2/country/VNM/indicator/{}?format=json&per_page=200"
 SRC = {"imf_weo": "IMF, World Economic Outlook (NGDP_RPCH)", "wb_wdi": "World Bank, World Development Indicators (NY.GDP.MKTP.KD.ZG)",
        "wb_wdi_usd": "World Bank, World Development Indicators"}
@@ -94,7 +96,7 @@ def update(force=False, **_):
                 errors.append(f"{name} {y}: {v} out of range")
     for code, vals in usd.items():
         yrs = sorted(vals)
-        first = 1989 if code == "NY.GNP.PCAP.CD" else 1985   # WDI's Atlas GNI per capita for Vietnam starts in 1989
+        first = 1989 if code in ("NY.GNP.PCAP.CD", "NY.GNP.ATLS.CD") else 1985   # WDI's Atlas GNI for Vietnam starts in 1989
         if not yrs or yrs[0] > first or yrs != list(range(yrs[0], yrs[-1] + 1)) or last_nso not in vals:
             errors.append(f"World Bank {code}: years {yrs[:2]}..{yrs[-2:]} (need every year from {first} to {last_nso})")
         if any(v <= 0 for v in vals.values()):
