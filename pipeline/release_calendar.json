@@ -26,7 +26,7 @@
   "id_fiscal_monthly": "Ministry of Finance APBN KiTa press conference: no calendar found; it has fallen between the 9th and 22nd (Sep 2026 outturn 9 Oct, Aug 18 Sep), so the source runs daily from the 3rd to the 25th; nominal date the 15th",
   "id_debt_imf": "No fixed dates: SUSPI (Bank Indonesia and Ministry of Finance) is quarterly with no calendar found; IMF WEO in April and October, IMF Global Debt Database once a year. A short monthly window (15th-18th) picks each up within a month; every source exits unchanged when nothing is new",
   "id_jci_daily": "Yahoo Finance (^JKSE, id_jci_yahoo; 12 benchmark indices, eq_yahoo): daily closes; fetched every day, weekly windows Monday to Sunday, dashboard refresh on Mondays",
-  "id_fx": "BIS WS_XRU (id_fx_bis for Indonesia, fx_bis for the other 11): daily data published with a lag of a few days; weekly windows Monday to Sunday, dashboard refresh on Mondays"
+  "id_fx": "BIS WS_XRU (id_fx_bis for Indonesia, fx_bis for 10 others): the BIS releases weekly, on Thursdays (data.bis.org: last release 29 Oct 2026, next 5 Nov; data to the Tuesday before), after the Asian runs; so one run a week, Friday 08:15 SGT, and the dashboard refresh that Friday"
  },
  "groups": {
   "jp_cpi": {"label": "Japan CPI (national) and CPI contributions", "sources": ["jp_cpi_estat", "jp_cpi_contrib_estat", "jp_cpi_food_estat", "jp_cpi_core3_estat"], "time_sgt": "07:30", "dates": [
@@ -233,27 +233,26 @@
    {"ref": "2027-W12", "date": "2027-03-22", "from": "2027-03-22", "to": "2027-03-28", "status": "expected"},
    {"ref": "2027-W13", "date": "2027-03-29", "from": "2027-03-29", "to": "2027-04-04", "status": "expected"}]},
   "id_fx": {"label": "Exchange rates per US$ (BIS): Indonesia and 11 other economies", "sources": ["id_fx_bis", "fx_bis"], "time_sgt": "08:00", "dates": [
-   {"ref": "2026-W45", "date": "2026-11-02", "from": "2026-11-02", "to": "2026-11-08", "status": "expected"},
-   {"ref": "2026-W46", "date": "2026-11-09", "from": "2026-11-09", "to": "2026-11-15", "status": "expected"},
-   {"ref": "2026-W47", "date": "2026-11-16", "from": "2026-11-16", "to": "2026-11-22", "status": "expected"},
-   {"ref": "2026-W48", "date": "2026-11-23", "from": "2026-11-23", "to": "2026-11-29", "status": "expected"},
-   {"ref": "2026-W49", "date": "2026-11-30", "from": "2026-11-30", "to": "2026-12-06", "status": "expected"},
-   {"ref": "2026-W50", "date": "2026-12-07", "from": "2026-12-07", "to": "2026-12-13", "status": "expected"},
-   {"ref": "2026-W51", "date": "2026-12-14", "from": "2026-12-14", "to": "2026-12-20", "status": "expected"},
-   {"ref": "2026-W52", "date": "2026-12-21", "from": "2026-12-21", "to": "2026-12-27", "status": "expected"},
-   {"ref": "2026-W53", "date": "2026-12-28", "from": "2026-12-28", "to": "2027-01-03", "status": "expected"},
-   {"ref": "2027-W01", "date": "2027-01-04", "from": "2027-01-04", "to": "2027-01-10", "status": "expected"},
-   {"ref": "2027-W02", "date": "2027-01-11", "from": "2027-01-11", "to": "2027-01-17", "status": "expected"},
-   {"ref": "2027-W03", "date": "2027-01-18", "from": "2027-01-18", "to": "2027-01-24", "status": "expected"},
-   {"ref": "2027-W04", "date": "2027-01-25", "from": "2027-01-25", "to": "2027-01-31", "status": "expected"},
-   {"ref": "2027-W05", "date": "2027-02-01", "from": "2027-02-01", "to": "2027-02-07", "status": "expected"},
-   {"ref": "2027-W06", "date": "2027-02-08", "from": "2027-02-08", "to": "2027-02-14", "status": "expected"},
-   {"ref": "2027-W07", "date": "2027-02-15", "from": "2027-02-15", "to": "2027-02-21", "status": "expected"},
-   {"ref": "2027-W08", "date": "2027-02-22", "from": "2027-02-22", "to": "2027-02-28", "status": "expected"},
-   {"ref": "2027-W09", "date": "2027-03-01", "from": "2027-03-01", "to": "2027-03-07", "status": "expected"},
-   {"ref": "2027-W10", "date": "2027-03-08", "from": "2027-03-08", "to": "2027-03-14", "status": "expected"},
-   {"ref": "2027-W11", "date": "2027-03-15", "from": "2027-03-15", "to": "2027-03-21", "status": "expected"},
-   {"ref": "2027-W12", "date": "2027-03-22", "from": "2027-03-22", "to": "2027-03-28", "status": "expected"},
-   {"ref": "2027-W13", "date": "2027-03-29", "from": "2027-03-29", "to": "2027-04-04", "status": "expected"}]}
+   {"ref": "2026-W45", "date": "2026-11-06", "from": "2026-11-06", "to": "2026-11-06", "status": "expected"},
+   {"ref": "2026-W46", "date": "2026-11-13", "from": "2026-11-13", "to": "2026-11-13", "status": "expected"},
+   {"ref": "2026-W47", "date": "2026-11-20", "from": "2026-11-20", "to": "2026-11-20", "status": "expected"},
+   {"ref": "2026-W48", "date": "2026-11-27", "from": "2026-11-27", "to": "2026-11-27", "status": "expected"},
+   {"ref": "2026-W49", "date": "2026-12-04", "from": "2026-12-04", "to": "2026-12-04", "status": "expected"},
+   {"ref": "2026-W50", "date": "2026-12-11", "from": "2026-12-11", "to": "2026-12-11", "status": "expected"},
+   {"ref": "2026-W51", "date": "2026-12-18", "from": "2026-12-18", "to": "2026-12-18", "status": "expected"},
+   {"ref": "2026-W52", "date": "2026-12-25", "from": "2026-12-25", "to": "2026-12-25", "status": "expected"},
+   {"ref": "2026-W53", "date": "2027-01-01", "from": "2027-01-01", "to": "2027-01-01", "status": "expected"},
+   {"ref": "2027-W01", "date": "2027-01-08", "from": "2027-01-08", "to": "2027-01-08", "status": "expected"},
+   {"ref": "2027-W02", "date": "2027-01-15", "from": "2027-01-15", "to": "2027-01-15", "status": "expected"},
+   {"ref": "2027-W03", "date": "2027-01-22", "from": "2027-01-22", "to": "2027-01-22", "status": "expected"},
+   {"ref": "2027-W04", "date": "2027-01-29", "from": "2027-01-29", "to": "2027-01-29", "status": "expected"},
+   {"ref": "2027-W05", "date": "2027-02-05", "from": "2027-02-05", "to": "2027-02-05", "status": "expected"},
+   {"ref": "2027-W06", "date": "2027-02-12", "from": "2027-02-12", "to": "2027-02-12", "status": "expected"},
+   {"ref": "2027-W07", "date": "2027-02-19", "from": "2027-02-19", "to": "2027-02-19", "status": "expected"},
+   {"ref": "2027-W08", "date": "2027-02-26", "from": "2027-02-26", "to": "2027-02-26", "status": "expected"},
+   {"ref": "2027-W09", "date": "2027-03-05", "from": "2027-03-05", "to": "2027-03-05", "status": "expected"},
+   {"ref": "2027-W10", "date": "2027-03-12", "from": "2027-03-12", "to": "2027-03-12", "status": "expected"},
+   {"ref": "2027-W11", "date": "2027-03-19", "from": "2027-03-19", "to": "2027-03-19", "status": "expected"},
+   {"ref": "2027-W12", "date": "2027-03-26", "from": "2027-03-26", "to": "2027-03-26", "status": "expected"}]}
  }
 }
