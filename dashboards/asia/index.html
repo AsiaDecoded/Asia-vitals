@@ -196,7 +196,6 @@
       <div class="ax-card" id="gnil-card">
         <div class="ax-cardhead">
           <h3>GNI per capita, <span data-draw="gnilYear" data-source="asia_gni_latest">latest year</span></h3>
-          <div class="ax-seg" role="group" aria-label="Scale"><button data-gscale="lin" aria-pressed="true">Linear</button><button data-gscale="log" aria-pressed="false">Log</button></div>
         </div>
         <p class="ax-note">US$, Atlas method. Bars coloured by World Bank income group; dashed lines are the group thresholds for the same year.</p>
         <div class="ax-fxbars" data-draw="gnilBars" data-source="asia_gni_latest asia_gni_thresholds"></div>
@@ -606,7 +605,6 @@
   });
   // GNI per capita, latest year, bars coloured by income group, with that year's thresholds
   const GRP = {H: ['High income', '#1F4E79'], UM: ['Upper-middle income', '#0C84FF'], LM: ['Lower-middle income', '#FFC000'], L: ['Low income', '#BD1B21']};
-  let gScale = 'lin';
   dash.draw('gnilYear', (n) => { const D = dash.data('asia_gni_latest'); n.textContent = D.status === 'ok' && D.data.length ? String(Math.max(...D.data.map((r) => Number(r.year)))) : 'latest year'; });
   dash.draw('gnilFy', (n) => { const D = dash.data('asia_gni_latest'); const f = D.status === 'ok' ? [...new Set(D.data.map((r) => r.group_fiscal_year).filter(Boolean))] : []; n.textContent = f.length ? 'fiscal year ' + f.join(', ').replace('FY', '20') : '—'; });
   dash.draw('gnilBars', (box) => {
@@ -621,15 +619,14 @@
     const W = Math.max(320, box.clientWidth || 640), rowH = 28, top = 18, H = top + rows.length * rowH + 22;
     const lab = Math.min(150, Math.round(W * 0.3)), right = 64;
     const vmax = Math.max(...rows.map((r) => r.v));
-    const lg = gScale === 'log', lo = 500;
-    const hi = lg ? Math.pow(10, Math.ceil(Math.log10(vmax))) : Math.ceil(vmax / 20000) * 20000;
-    const x = (v) => lab + (lg ? (Math.log10(Math.max(v, lo)) - Math.log10(lo)) / (Math.log10(hi) - Math.log10(lo)) : v / hi) * (W - lab - right);
+    const hi = Math.ceil(vmax / 20000) * 20000;
+    const x = (v) => lab + v / hi * (W - lab - right);
     const svg = document.createElementNS(SVG, 'svg');
     svg.setAttribute('viewBox', `0 0 ${W} ${H}`); svg.setAttribute('role', 'img');
     svg.setAttribute('aria-label', `GNI per capita ${yr}, US$: ` + rows.map((r) => `${r.name} ${r.v.toLocaleString('en')}`).join(', '));
     const add = (tag, attrs, text) => { const nd = document.createElementNS(SVG, tag); for (const k in attrs) nd.setAttribute(k, attrs[k]); if (text != null) nd.textContent = text; svg.append(nd); return nd; };
     const vals = [];
-    const ticks = lg ? [500, 1000, 2000, 5000, 10000, 20000, 50000, 100000].filter((t) => t <= hi) : Array.from({length: hi / 20000 + 1}, (_, i) => i * 20000);
+    const ticks = Array.from({length: hi / 20000 + 1}, (_, i) => i * 20000);
     const kf = (t) => (t >= 1000 ? (t / 1000) + 'k' : String(t));
     for (const t of ticks) {
       add('line', {x1: x(t), x2: x(t), y1: top, y2: H - 20, stroke: 'var(--color-border-line)', 'stroke-width': 0.6, opacity: 0.7});
@@ -646,17 +643,12 @@
       if (x(v) <= lab + 2) continue;
       add('line', {x1: x(v), x2: x(v), y1: top - 4, y2: H - 20, stroke: GRP[k][1], 'stroke-width': 1.2, 'stroke-dasharray': '4 3'});
       const t = add('text', {x: x(v) + 3, y: top - 6, 'font-size': 10, fill: 'var(--color-fg-muted)'}, (k === 'H' ? 'High ' : k + ' ') + v.toLocaleString('en'));
-      if (!lg && k === 'LM') t.setAttribute('display', 'none');
+      if (k === 'LM') t.setAttribute('display', 'none');
     }
     for (const [vx, vy, tx] of vals) add('text', {x: vx, y: vy, 'font-size': 12, 'font-weight': 500, fill: 'var(--color-fg)', stroke: 'var(--color-panel)', 'stroke-width': 3, 'paint-order': 'stroke'}, tx);
     box.append(svg);
     if (leg) for (const k of ['H', 'UM', 'LM', 'L']) { if (!rows.some((r) => r.income_group === k)) continue; const it = el('span'); const sw = el('span', 'sw'); sw.style.background = GRP[k][1]; sw.style.height = '10px'; sw.style.width = '10px'; it.append(sw, GRP[k][0]); leg.append(it); }
   });
-  document.querySelectorAll('.ax [data-gscale]').forEach((b) => b.addEventListener('click', () => {
-    gScale = b.dataset.gscale;
-    document.querySelectorAll('.ax [data-gscale]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
-    dash.draw('gnilBars');
-  }));
   let gniW = 0;
   new ResizeObserver(() => { const b = document.querySelector('.ax-gni'); if (b && b.clientWidth && b.clientWidth !== gniW) { gniW = b.clientWidth; dash.draw('gniChart'); dash.draw('gnilBars'); } }).observe(document.querySelector('.ax-gni'));
 
