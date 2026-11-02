@@ -1,20 +1,26 @@
-name: Philippines sources test (dev-ph)
+name: Philippines GDP test
 
-# Runs the Philippines sources live on the dev-ph branch and commits their output there.
+# Runs the Philippines GDP sources (ph_gdp_psa, then ph_gdp_intl, which reads its annual file) on main with their
+# checks, whether or not they are in the shared registry yet; checks Q2 2026 against PSA's release (7 Aug 2026), and
+# pushes data/ph/gdp and raw/ph/gdp_psa back to main. The CPI and PPI sources run in the scheduled pipeline, not here.
 on:
   workflow_dispatch:
   push:
-    branches: [dev-ph]
+    branches: [main]
     paths:
-      - pipeline/sources/ph_*/**
-      - pipeline/core/psa.py
+      - pipeline/sources/ph_gdp_psa/**
+      - pipeline/sources/ph_gdp_intl/**
       - .github/workflows/ph-test.yml
 
 permissions:
   contents: write
 
+concurrency:
+  group: ph-test
+  cancel-in-progress: true
+
 jobs:
-  run:
+  test:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -22,14 +28,65 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Run the Philippines sources
-        run: python -I pipeline/run.py ph_cpi_psa ph_ppi_psa | tee /tmp/report.txt
-      - name: Commit output to dev-ph
+
+      - name: Run the Philippines GDP sources with their checks
+        run: |
+          python -I - <<'PY'
+          import sys, traceback, importlib, time
+          sys.path.insert(0, "pipeline")
+          from core.common import CheckFailed
+          rc, lines = 0, []
+          for name in ("ph_gdp_psa", "ph_gdp_intl"):
+              t0 = time.time()
+              lines.append(f"== {name}")
+              try:
+                  res = importlib.import_module(f"sources.{name}").update(force=True)
+                  lines.append(f"   {'UPDATED' if res['updated'] else 'unchanged'}: {res['summary']} ({time.time() - t0:.0f}s)")
+                  for w in res.get("warnings", []):
+                      lines.append(f"   WARNING: {w}"[:1500])
+              except CheckFailed as e:
+                  rc = 1
+                  lines.append(f"   CHECKS FAILED ({len(e.errors)}):")
+                  lines += [f"   - {x}"[:600] for x in e.errors[:40]]
+              except Exception:
+                  rc = 1
+                  lines.append(traceback.format_exc())
+          open("ph_report.txt", "w").write("\n".join(lines) + "\n")
+          print("\n".join(lines))
+          sys.exit(rc)
+          PY
+
+      - name: Q2 2026 GDP against the PSA release
+        run: |
+          python -I - <<'PY'
+          import csv, sys
+          # PSA release of 7 Aug 2026 as reported (GMA News): real growth y/y, % (2018 prices).
+          REL = {("2026-Q2", "gdp"): 2.3, ("2026-Q1", "gdp"): 2.8, ("2026-Q2", "agri"): 2.7,
+                 ("2026-Q2", "industry"): -2.4, ("2026-Q2", "services"): 4.5}
+          rows = {(r["period"], r["code"]): float(r["value"]) for r in csv.DictReader(open("data/ph/gdp/ph_gdp.csv"))
+                  if r["measure"] == "yoy" and r["price"] == "constant_2018"}
+          bad = [f"{k}: {rows.get(k)} vs release {v}" for k, v in REL.items() if rows.get(k) is None or abs(rows[k] - v) > 0.001]
+          # H1 2026 (calculated here from levels) against the release's first-half figure, 2.6% (one decimal)
+          h1 = [float(r["value"]) for r in csv.DictReader(open("data/ph/gdp/ph_gdp_annual.csv"))
+                if r["year"] == "2026" and r["span"] == "H1" and r["code"] == "gdp"]
+          if not h1 or round(h1[0], 1) != 2.6:
+              bad.append(f"H1 2026 calculated {h1} vs release 2.6")
+          wdi = {(r["series"], r["year"]) for r in csv.DictReader(open("data/ph/gdp/ph_gdp_intl.csv"))}
+          for s in ("NY.GDP.MKTP.CD", "NY.GDP.MKTP.KD", "NY.GDP.PCAP.CD", "NY.GDP.PCAP.KD", "NY.GNP.ATLS.CD", "NY.GDP.MKTP.KD.ZG"):
+              if (s, "2025") not in wdi or (s, "1987") not in wdi:
+                  bad.append(f"WDI {s}: 1987 or 2025 missing")
+          msg = f"Q2 2026 vs PSA release and WDI: {12 - len(bad)}/12 match"
+          print(msg); [print("  -", b) for b in bad]
+          open("ph_report.txt", "a").write(msg + "\n" + "".join(f"  - {b}\n" for b in bad))
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: Commit output to main
         if: always()
         run: |
           git config user.name "asia-vitals bot"
           git config user.email "actions@users.noreply.github.com"
-          mkdir -p data/ph && cp /tmp/report.txt data/ph/test_report.txt
-          git add data/ph raw/ph
-          git commit -m "PH test run" || exit 0
-          git checkout -- . && git pull --rebase origin dev-ph && git push origin HEAD:dev-ph
+          mkdir -p data/ph && cp ph_report.txt data/ph/test_report.txt || true
+          git add data/ph/gdp data/ph/test_report.txt raw/ph/gdp_psa || true
+          git commit -m "PH GDP test run" || exit 0
+          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 5; done
