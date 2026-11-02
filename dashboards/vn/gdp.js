@@ -435,10 +435,10 @@ dash.calc('gdp_table', {
   const USD = {
     'gdp-usd': { div: 1e9, unit: 'US$ billion', tipUnit: ' bn', fmt: ',.1f',
       real: [{ key: 'NY.GDP.MKTP.KD', name: 'GDP', color: 'var(--ad-c2)' }],
-      nominal: [{ key: 'NY.GDP.MKTP.CD', name: 'GDP', color: 'var(--ad-c1)' }, { key: 'NY.GNP.ATLS.CD', name: 'GNI', color: 'var(--ad-c2)' }] },
+      nominal: [{ key: 'NY.GDP.MKTP.CD', name: 'GDP', color: 'var(--ad-c1)' }, { key: 'NY.GNP.ATLS.CD', name: 'GNI, Atlas method', short: 'GNI', color: 'var(--ad-c2)' }] },
     'gdp-pc': { div: 1, unit: 'US$', tipUnit: '', fmt: ',.0f',
       real: [{ key: 'NY.GDP.PCAP.KD', name: 'GDP per capita', color: 'var(--ad-c2)' }],
-      nominal: [{ key: 'NY.GDP.PCAP.CD', name: 'GDP per capita', color: 'var(--ad-c1)' }, { key: 'NY.GNP.PCAP.CD', name: 'GNI', color: 'var(--ad-c2)' }] },
+      nominal: [{ key: 'NY.GDP.PCAP.CD', name: 'GDP per capita', short: 'GDP', color: 'var(--ad-c1)' }, { key: 'NY.GNP.PCAP.CD', name: 'GNI per capita, Atlas method', short: 'GNI', color: 'var(--ad-c2)' }] },
   };
   function usd(id, pick) {
     const C = USD[id], box = document.getElementById(id + '-chart'), nominal = /\.CD$/.test(pick), S = nominal ? C.nominal : C.real;
@@ -488,7 +488,7 @@ dash.calc('gdp_table', {
       const lh = 16;
       const t = svg.append('text').attr('font-size', 12).attr('font-weight', 700).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'end');
       cagr.forEach((c, k) => t.append('tspan').attr('dy', k ? lh : 0)
-        .text(`${S.length > 1 ? c.s.name + ', ' : ''}${START}–${c.END} CAGR: ${c.v.toFixed(1)}% p.a.`));
+        .text(`${S.length > 1 ? (c.s.short || c.s.name) + ', ' : ''}${START}–${c.END} CAGR: ${c.v.toFixed(1)}% p.a.`));
       const tx = W - mr - 8, ty = H - 40 - (cagr.length - 1) * lh;
       t.attr('x', tx).attr('y', ty); t.selectAll('tspan').attr('x', tx);
     }
