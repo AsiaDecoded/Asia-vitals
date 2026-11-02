@@ -446,9 +446,9 @@ dash.calc('gdp_table', {
     const { svg, x, y, W, ml } = frame(box, rows, H, rows.map((r) => r.v).concat([0]), (v) => d3.format(',.0f')(v), true, mr);
     svg.append('path').attr('d', d3.line().x((r) => x(J.date(r.date))).y((r) => y(r.v))(rows))
       .attr('fill', 'none').attr('stroke', col).attr('stroke-width', 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
-    // Lower-middle income: the World Bank moved Vietnam from low to lower-middle income on 1 July 2009 (its FY2010
-    // classification). Dashed line at 2009.
-    const LMI = 2009, lx = x(J.date(`${LMI}-12-01`));
+    // Lower-middle income: World Bank classification history (OGHIST): low income to FY10, lower-middle income from FY11
+    // (1 July 2010, on 2009 GNI per capita). Dashed line at 2010. CAGR starts in 2009 (user).
+    const LMI = 2010, START = 2009, lx = x(J.date(`${LMI}-12-01`));
     if (rows[0].date.slice(0, 4) < String(LMI)) {
       svg.append('line').attr('x1', lx).attr('x2', lx).attr('y1', 12).attr('y2', H - 24).attr('stroke', 'var(--ad-axis)').attr('stroke-dasharray', '3 3');
       svg.append('text').attr('x', lx - 5).attr('y', 18).attr('font-size', 12).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'end').text('Lower-middle income');
@@ -456,7 +456,7 @@ dash.calc('gdp_table', {
     // CAGR, calculated on this page (asked for 2 Nov 2026): (value in the latest year / value in 2009)^(1 / years) - 1,
     // from the World Bank figures drawn, for the series shown; the end year moves on as WDI adds years.
     const at = (yr) => rows.find((r) => r.date.slice(0, 4) === String(yr));
-    const END = Number(rows[rows.length - 1].date.slice(0, 4)), cagr = [LMI].map((s) => { const a0 = at(s), a1 = at(END); return a0 && a1 && a0.v > 0 ? { s, v: (Math.pow(a1.v / a0.v, 1 / (END - s)) - 1) * 100 } : null; }).filter(Boolean);
+    const END = Number(rows[rows.length - 1].date.slice(0, 4)), cagr = [START].map((s) => { const a0 = at(s), a1 = at(END); return a0 && a1 && a0.v > 0 ? { s, v: (Math.pow(a1.v / a0.v, 1 / (END - s)) - 1) * 100 } : null; }).filter(Boolean);
     if (cagr.length) {
       // Top of the plot, just left of where the line passes below the block (the line rises to the right).
       const lh = 16, n = cagr.length, ty = 18, bottom = ty + (n - 1) * lh + 6;
