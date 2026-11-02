@@ -123,7 +123,7 @@
   };
   function usd(id, pick) {
     const C = USD[id], box = document.getElementById(id + '-chart'), nominal = /\.CD$/.test(pick), S = nominal ? C.nominal : C.real;
-    document.getElementById(id + '-units').textContent = `${C.unit}, ${nominal ? 'current prices' : 'constant 2015 prices'}; fiscal years`;
+    document.getElementById(id + '-units').textContent = `${C.unit}, ${nominal ? 'current prices' : 'constant 2015 prices'}`;
     legend(id + '-legend', S.length > 1 ? S : []);
     const ids = ['in_gdp_intl'].concat(S.filter((s) => s.ds).map((s) => s.ds));
     if (!status(box, ids)) return;

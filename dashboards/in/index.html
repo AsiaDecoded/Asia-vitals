@@ -117,6 +117,10 @@
 #div-heat-table th:first-child, #div-heat-table td:first-child { text-align: left; }
 #div-heat-table td, #div-heat-table th { border-bottom: 0; }
 #div-heat-table tr.lead td { font-weight: 700; }
+/* India GDP tab, Chart 2: legend on one row (user, 3 Nov 2026); wraps only on a phone-width card. */
+#gdp-pc .ad-top { gap: 0 0.75rem; }
+#gdp-pc .ad-top .jg-legend { flex-wrap: nowrap; white-space: nowrap; gap: 0 0.75rem; min-width: 0; }
+@media (max-width: 520px) { #gdp-pc .ad-top { height: auto; } #gdp-pc .ad-top .jg-legend { flex-wrap: wrap; white-space: normal; } }
 </style>
 
 
