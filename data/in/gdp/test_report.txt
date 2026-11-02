@@ -1,12 +1,16 @@
 == in_gdp_mospi
-   CHECKS FAILED (8):
-   - 2017-18 transport_comm.storage constant growth 112.7 out of range
-   - 2020-21 trade_hotels.hotels_restaurants constant growth -53.7 out of range
-   - 2020-21 transport_comm.air_transport constant growth -62.5 out of range
-   - 2022-23 trade_hotels.hotels_restaurants constant growth 75.7 out of range
-   - 2022-23 trade_hotels.hotels_restaurants current growth 90.7 out of range
-   - 2022-23 transport_comm.air_transport constant growth 60.7 out of range
-   - 2022-23 transport_comm.air_transport current growth 63.2 out of range
-   - 2023-24 transport_comm.air_transport current growth 77.8 out of range
+   UPDATED: 2026-27 Q1 (2022-23 base): real GDP 7.8%, nominal 10.3% y/y (52s)
 == in_gdp_intl
    UPDATED: WDI updated 2026-10-08, to 2025 (2025-26) (1s)
+   WARNING: 2012-13: World Bank 5.46 vs MoSPI 5.4
+   WARNING: 2013-14: World Bank 6.39 vs MoSPI 6.3
+   WARNING: 2015-16: World Bank 8.00 vs MoSPI 7.9
+   WARNING: 2017-18: World Bank 6.80 vs MoSPI 6.7
+   WARNING: 2018-19: World Bank 6.45 vs MoSPI 6.4
+   WARNING: 2019-20: World Bank 3.87 vs MoSPI 3.8
+   WARNING: 2020-21: World Bank -5.78 vs MoSPI -5.7
+   WARNING: 2021-22: World Bank 9.69 vs MoSPI 9.6
+   WARNING: 2023-24: World Bank 7.21 vs MoSPI 7.3
+   WARNING: 2024-25: World Bank 7.10 vs MoSPI 7.2
+   WARNING: 2025-26: World Bank 7.57 vs MoSPI 7.8
+Q1 2026-27 vs MoSPI release: 8/8 match

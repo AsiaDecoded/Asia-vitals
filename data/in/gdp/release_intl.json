@@ -5,5 +5,17 @@
  "fingerprint": "c893fd22169beef6",
  "rows": 329,
  "long_rows": 329,
- "warnings": []
+ "warnings": [
+  "2012-13: World Bank 5.46 vs MoSPI 5.4",
+  "2013-14: World Bank 6.39 vs MoSPI 6.3",
+  "2015-16: World Bank 8.00 vs MoSPI 7.9",
+  "2017-18: World Bank 6.80 vs MoSPI 6.7",
+  "2018-19: World Bank 6.45 vs MoSPI 6.4",
+  "2019-20: World Bank 3.87 vs MoSPI 3.8",
+  "2020-21: World Bank -5.78 vs MoSPI -5.7",
+  "2021-22: World Bank 9.69 vs MoSPI 9.6",
+  "2023-24: World Bank 7.21 vs MoSPI 7.3",
+  "2024-25: World Bank 7.10 vs MoSPI 7.2",
+  "2025-26: World Bank 7.57 vs MoSPI 7.8"
+ ]
 }
