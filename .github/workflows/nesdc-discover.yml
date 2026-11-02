@@ -8,13 +8,14 @@ on:
     branches: [main]
     paths:
       - pipeline/tools/nesdc_probe.py
+      - pipeline/tools/nesdc_probe3.py
       - .github/workflows/nesdc-discover.yml
 
 permissions:
   contents: write
 
 env:
-  ROUND: r2
+  ROUND: r3
 
 jobs:
   discover:
@@ -36,7 +37,7 @@ jobs:
           cat $D/curl.txt
       - name: Probe
         continue-on-error: true
-        run: timeout 30m python -I -u pipeline/tools/nesdc_probe.py discovery/nesdc/$ROUND 80
+        run: timeout 30m python -I -u pipeline/tools/nesdc_probe3.py discovery/nesdc/$ROUND 40
       - name: Push results to the discovery branch
         if: always()
         run: |
