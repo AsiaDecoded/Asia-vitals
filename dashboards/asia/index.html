@@ -193,6 +193,17 @@
         <p class="ax-note">t is the first data year the World Bank classified the economy lower-middle income after low income (China 1997, India 2007, Indonesia 1993, the first of two crossings, Vietnam 2009). Thailand, Malaysia and the Philippines were already lower-middle income when the classifications began, so t = 1987, the first year. Index calculated by Asia Decoded. Taiwan is not in the World Bank&rsquo;s data; Japan, South Korea, Hong Kong and Singapore were upper-middle or high income from 1987.</p>
         <p class="ax-note">Source: World Bank, World Development Indicators (NY.GNP.PCAP.CD) and historical income classifications.</p>
       </div>
+      <div class="ax-card" id="gnil-card">
+        <div class="ax-cardhead">
+          <h3>GNI per capita, <span data-draw="gnilYear" data-source="asia_gni_latest">latest year</span></h3>
+          <div class="ax-seg" role="group" aria-label="Scale"><button data-gscale="lin" aria-pressed="true">Linear</button><button data-gscale="log" aria-pressed="false">Log</button></div>
+        </div>
+        <p class="ax-note">US$, Atlas method. Bars coloured by World Bank income group; dashed lines are the group thresholds for the same year.</p>
+        <div class="ax-fxbars" data-draw="gnilBars" data-source="asia_gni_latest asia_gni_thresholds"></div>
+        <div class="ax-legend" id="gnil-legend"></div>
+        <p class="ax-note">Income groups and thresholds from the World Bank&rsquo;s historical classifications (the July classification of each data year; <span data-draw="gnilFy" data-source="asia_gni_latest">—</span>). Taiwan is not in the World Bank&rsquo;s data.</p>
+        <p class="ax-note">Source: World Bank, World Development Indicators (NY.GNP.PCAP.CD) and historical income classifications.</p>
+      </div>
     </section>
   </section>
 
@@ -230,6 +241,7 @@
             <tbody data-draw="meth" data-source="asia_series"></tbody>
           </table>
         </div>
+        <p class="ax-note">GDP tab, latest GNI per capita: the latest year in WDI for each economy, with the World Bank income group the historical classifications assign for that data year and that year&rsquo;s thresholds (lower-middle, upper-middle and high income floors), as published.</p>
         <p class="ax-note">GDP tab: GNI per capita, Atlas method, current US$, from the World Bank&rsquo;s World Development Indicators, as published, indexed to 100 in year t (calculated). t is the first data year the World Bank&rsquo;s historical classifications put the economy in the lower-middle income group after the low income group (the data year, not the July in which the classification was announced; Indonesia&rsquo;s first crossing, 1993, before it fell back to low income after the Asian financial crisis). Economies already lower-middle income when the classifications began take that first year, 1987.</p>
         <p class="ax-note">Financial tab: each currency&rsquo;s year-to-date change is calculated on this page&rsquo;s data, at your request: the BIS daily rate (national currency per US dollar, from national sources) on the last trading day of the previous year divided by the latest rate, minus 1, in %. That is the change in the currency&rsquo;s US-dollar value, so a positive figure means the currency has strengthened. Each economy uses its own latest date. Vietnam is left out: the BIS has no daily series for the dong.</p>
         <p class="ax-note">Financial tab, stock markets: the benchmark index of each economy, daily closes from Yahoo Finance (not an official source), completed sessions only. Year-to-date change, calculated: latest close divided by the last close on or before 31 December of the previous year, minus 1, in %. Price index in local currency, so neither dividends nor currency moves are included. Thailand, the Philippines and Vietnam are left out because Yahoo Finance returns only the latest quote for their indices, with no history.</p>
@@ -592,8 +604,61 @@
     hit.addEventListener('mouseleave', () => { rule.setAttribute('display', 'none'); tip.style.display = 'none'; });
     if (leg) for (const a of ser) { const it = el('span'); const sw = el('span', 'sw'); sw.style.background = GNI_COL[a.economy] || '#666'; it.append(sw, `${a.name} (t = ${a.t})`); leg.append(it); }
   });
+  // GNI per capita, latest year, bars coloured by income group, with that year's thresholds
+  const GRP = {H: ['High income', '#1F4E79'], UM: ['Upper-middle income', '#0C84FF'], LM: ['Lower-middle income', '#FFC000'], L: ['Low income', '#BD1B21']};
+  let gScale = 'lin';
+  dash.draw('gnilYear', (n) => { const D = dash.data('asia_gni_latest'); n.textContent = D.status === 'ok' && D.data.length ? String(Math.max(...D.data.map((r) => Number(r.year)))) : 'latest year'; });
+  dash.draw('gnilFy', (n) => { const D = dash.data('asia_gni_latest'); const f = D.status === 'ok' ? [...new Set(D.data.map((r) => r.group_fiscal_year).filter(Boolean))] : []; n.textContent = f.length ? 'fiscal year ' + f.join(', ').replace('FY', '20') : '—'; });
+  dash.draw('gnilBars', (box) => {
+    const D = dash.data('asia_gni_latest'), T = dash.data('asia_gni_thresholds');
+    box.replaceChildren();
+    const leg = document.getElementById('gnil-legend'); if (leg) leg.replaceChildren();
+    if (D.status !== 'ok' || !D.data.length) return;
+    const rows = D.data.map((r) => ({...r, v: Number(r.gni_pc)})).filter((r) => r.v > 0).sort((a, b) => b.v - a.v);
+    const yr = Math.max(...rows.map((r) => Number(r.year)));
+    const th = T.status === 'ok' ? T.data.find((r) => Number(r.data_year) === yr) : null;
+    const lines = th ? [['LM', Number(th.lm_min)], ['UM', Number(th.um_min)], ['H', Number(th.h_min)]] : [];
+    const W = Math.max(320, box.clientWidth || 640), rowH = 28, top = 18, H = top + rows.length * rowH + 22;
+    const lab = Math.min(150, Math.round(W * 0.3)), right = 64;
+    const vmax = Math.max(...rows.map((r) => r.v));
+    const lg = gScale === 'log', lo = 500;
+    const hi = lg ? Math.pow(10, Math.ceil(Math.log10(vmax))) : Math.ceil(vmax / 20000) * 20000;
+    const x = (v) => lab + (lg ? (Math.log10(Math.max(v, lo)) - Math.log10(lo)) / (Math.log10(hi) - Math.log10(lo)) : v / hi) * (W - lab - right);
+    const svg = document.createElementNS(SVG, 'svg');
+    svg.setAttribute('viewBox', `0 0 ${W} ${H}`); svg.setAttribute('role', 'img');
+    svg.setAttribute('aria-label', `GNI per capita ${yr}, US$: ` + rows.map((r) => `${r.name} ${r.v.toLocaleString('en')}`).join(', '));
+    const add = (tag, attrs, text) => { const nd = document.createElementNS(SVG, tag); for (const k in attrs) nd.setAttribute(k, attrs[k]); if (text != null) nd.textContent = text; svg.append(nd); return nd; };
+    const vals = [];
+    const ticks = lg ? [500, 1000, 2000, 5000, 10000, 20000, 50000, 100000].filter((t) => t <= hi) : Array.from({length: hi / 20000 + 1}, (_, i) => i * 20000);
+    const kf = (t) => (t >= 1000 ? (t / 1000) + 'k' : String(t));
+    for (const t of ticks) {
+      add('line', {x1: x(t), x2: x(t), y1: top, y2: H - 20, stroke: 'var(--color-border-line)', 'stroke-width': 0.6, opacity: 0.7});
+      add('text', {x: x(t), y: H - 6, 'text-anchor': 'middle', 'font-size': 11, fill: 'var(--color-fg-muted)'}, kf(t));
+    }
+    rows.forEach((r, i) => {
+      const y = top + i * rowH, h = rowH - 10, g = GRP[r.income_group] || ['', '#A6A6A6'];
+      add('text', {x: lab - 8, y: y + h / 2 + 4, 'text-anchor': 'end', 'font-size': 12, fill: 'var(--color-fg)'}, r.name);
+      const bar = add('rect', {x: lab, y, width: Math.max(1, x(r.v) - lab), height: h, fill: g[1]});
+      const tt = document.createElementNS(SVG, 'title'); tt.textContent = `${r.name}: US$${r.v.toLocaleString('en')} (${r.year}), ${g[0] || 'not classified'}`; bar.append(tt);
+      vals.push([x(r.v) + 5, y + h / 2 + 4, r.v.toLocaleString('en')]);
+    });
+    for (const [k, v] of lines) {
+      if (x(v) <= lab + 2) continue;
+      add('line', {x1: x(v), x2: x(v), y1: top - 4, y2: H - 20, stroke: GRP[k][1], 'stroke-width': 1.2, 'stroke-dasharray': '4 3'});
+      const t = add('text', {x: x(v) + 3, y: top - 6, 'font-size': 10, fill: 'var(--color-fg-muted)'}, (k === 'H' ? 'High ' : k + ' ') + v.toLocaleString('en'));
+      if (!lg && k === 'LM') t.setAttribute('display', 'none');
+    }
+    for (const [vx, vy, tx] of vals) add('text', {x: vx, y: vy, 'font-size': 12, 'font-weight': 500, fill: 'var(--color-fg)', stroke: 'var(--color-panel)', 'stroke-width': 3, 'paint-order': 'stroke'}, tx);
+    box.append(svg);
+    if (leg) for (const k of ['H', 'UM', 'LM', 'L']) { if (!rows.some((r) => r.income_group === k)) continue; const it = el('span'); const sw = el('span', 'sw'); sw.style.background = GRP[k][1]; sw.style.height = '10px'; sw.style.width = '10px'; it.append(sw, GRP[k][0]); leg.append(it); }
+  });
+  document.querySelectorAll('.ax [data-gscale]').forEach((b) => b.addEventListener('click', () => {
+    gScale = b.dataset.gscale;
+    document.querySelectorAll('.ax [data-gscale]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    dash.draw('gnilBars');
+  }));
   let gniW = 0;
-  new ResizeObserver(() => { const b = document.querySelector('.ax-gni'); if (b && b.clientWidth && b.clientWidth !== gniW) { gniW = b.clientWidth; dash.draw('gniChart'); } }).observe(document.querySelector('.ax-gni'));
+  new ResizeObserver(() => { const b = document.querySelector('.ax-gni'); if (b && b.clientWidth && b.clientWidth !== gniW) { gniW = b.clientWidth; dash.draw('gniChart'); dash.draw('gnilBars'); } }).observe(document.querySelector('.ax-gni'));
 
   let fxW = 0;
   new ResizeObserver(() => { const b = document.querySelector('.ax-fxbars'); if (b && b.clientWidth && b.clientWidth !== fxW) { fxW = b.clientWidth; dash.draw('fxBars'); dash.draw('eqBars'); } }).observe(document.querySelector('.ax-fxbars'));
@@ -608,7 +673,7 @@
     document.querySelectorAll('.ax [role=tab]').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === id)));
     document.querySelectorAll('.ax [role=tabpanel]').forEach((p) => { p.hidden = p.id !== id; });
     if (id === 'financial') { dash.draw('fxBars'); dash.draw('eqBars'); }
-    if (id === 'gdp') dash.draw('gniChart');
+    if (id === 'gdp') { dash.draw('gniChart'); dash.draw('gnilBars'); }
   };
   document.querySelectorAll('.ax [role=tab]').forEach((t) => t.addEventListener('click', () => { show(t.dataset.tab); dash.setLink(t.dataset.tab); }));
   if (['methodology', 'financial', 'gdp'].includes(location.hash.slice(1))) show(location.hash.slice(1));
