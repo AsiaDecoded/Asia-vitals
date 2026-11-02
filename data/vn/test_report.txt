@@ -1,11 +1,20 @@
 == vn_cpi_nso
-   UPDATED: September 2026: 26974 rows, 58 workbooks (97s)
+   UPDATED: September 2026: 26974 rows, 58 workbooks (100s)
    WARNING: YTD average differs from the base-period indices by more than 0.06pp in 53 group cases (NSO aggregates these from lower levels), e.g. 2021-12-01 transport: YTD average 110.524 vs base indices 0.178pp
    WARNING: PX-Web and the workbooks differ in 30 cases (workbook kept): 2025-01 national transport prev_month: PX-Web 99.878 vs workbook 100.946; 2025-02 national transport prev_month: PX-Web 99.969 vs workbook 100.626; 2025-03 national transport prev_month: PX-Web 100.017 vs workbook 98.595; 2025-04 national transport prev_month: PX-Web 99.852 vs workbook 98.954; 2025-05 national transport prev_month: PX-Web 100.215 vs workbook 99.575; 2025-06 national transport prev_month: PX-Web 99.982 vs workbook 101.655; 2024-01 national gold base_period: PX-Web 146.480 vs workbook 169.080; 2024-02 national gold base_period: PX-Web 147.824 vs workbook 172.473
 == vn_ppi_nso
-   UPDATED: 2026-Q3: 4871 rows, 27 quarterly workbooks (238s)
+   UPDATED: 2026-Q3: 4871 rows, 27 quarterly workbooks (283s)
 == vn_gdp_nso
-   UPDATED: 2026-Q3: 5264 quarterly GDP rows, 1445 annual, 999 IIP rows, 27 books (42s)
+   UPDATED: 2026-Q3: 9443 quarterly GDP rows, 1445 annual, 999 IIP rows, 27 books (61s)
+   WARNING: 2011 nominal GDP: report 2536631 vs yearbook 3539881 (revised)
+   WARNING: 2012 nominal GDP: report 3245419 vs yearbook 4073762 (revised)
+   WARNING: 2013 nominal GDP: report 3584262 vs yearbook 4473656 (revised)
+   WARNING: 2014 nominal GDP: report 3937856 vs yearbook 4937032 (revised)
+   WARNING: 2015 nominal GDP: report 4192862 vs yearbook 5191324 (revised)
+   WARNING: 2016 nominal GDP: report 4502733 vs yearbook 5639401 (revised)
+   WARNING: 2017 nominal GDP: report 5007857 vs yearbook 6293905 (revised)
+   WARNING: 2018 nominal GDP: report 5535267 vs yearbook 7009042 (revised)
+   WARNING: 2019 nominal GDP: report 6037348 vs yearbook 7707200 (revised)
    WARNING: 2020 nominal GDP: report 6293145 vs yearbook 8044386 (revised)
    WARNING: 2021 nominal GDP: report 8398606 vs yearbook 8487476 (revised)
    WARNING: 2022 nominal GDP: report 9513327 vs yearbook 9621372 (revised)
