@@ -655,6 +655,36 @@ def step_g7():
         (OUT / "g7_gdp_sheets.json").write_text(json.dumps(out, ensure_ascii=False))
 
 
+def step_g8():
+    """World Bank income classification history for Vietnam: OGHIST (fiscal-year groups and thresholds) and WDI GNI per
+    capita, Atlas method (NY.GNP.PCAP.CD), 2005-2012."""
+    import io
+    import openpyxl
+    out = {}
+    for u in ["https://datacatalogfiles.worldbank.org/ddh-published/0037712/DR0090754/OGHIST.xlsx",
+              "https://ddh-openapi.worldbank.org/resources/DR0090754/download",
+              "https://databankfiles.worldbank.org/public/ddpext_download/site-content/OGHIST.xlsx",
+              "https://databankfiles.worldbank.org/data/download/site-content/OGHIST.xlsx"]:
+        st, h, b = fetch("g8", u, save=False)
+        out[u] = {"status": st}
+        if st != 200:
+            continue
+        try:
+            wb = openpyxl.load_workbook(io.BytesIO(b), read_only=True, data_only=True)
+            keep = {}
+            for ws in wb.worksheets:
+                rows = [["" if c is None else str(c) for c in r] for r in ws.iter_rows(values_only=True)]
+                keep[ws.title] = [r for r in rows[:15]] + [r for r in rows if any(c in ("VNM", "Vietnam", "Viet Nam") for c in r[:3])]
+                keep[ws.title] += [r for r in rows if r and any("threshold" in c.lower() or "Low income" in c for c in r[:2])][:20]
+            out[u]["sheets"] = keep
+            break
+        except Exception as e:  # noqa: BLE001
+            out[u]["error"] = f"{type(e).__name__}: {e}"[:200]
+    st, h, b = fetch("g8", "https://api.worldbank.org/v2/country/VNM/indicator/NY.GNP.PCAP.CD?format=json&date=2005:2012", save=False)
+    out["wdi_gni_pc_atlas"] = {"status": st, "body": b.decode("utf-8", "replace")[:6000] if st == 200 else ""}
+    (OUT / "g8_income_class.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
+
+
 def main(out, steps="px,wp,files"):
     global OUT
     OUT = Path(out)
@@ -666,7 +696,7 @@ def main(out, steps="px,wp,files"):
              "quarters": step_quarters, "misc": step_misc,
              "gdp_px": step_gdp_px, "gdp_wp": step_gdp_wp, "gdp_old": step_gdp_old,
              "gdp_px2": step_gdp_px2, "gdp_bieu": step_gdp_bieu,
-             "gdp_posts": step_gdp_posts, "rebase": step_rebase, "g5": step_g5, "intl": step_intl, "g7": step_g7}[s]()
+             "gdp_posts": step_gdp_posts, "rebase": step_rebase, "g5": step_g5, "intl": step_intl, "g7": step_g7, "g8": step_g8}[s]()
         except Exception as e:  # noqa: BLE001
             SUMMARY.append({"name": f"step_{s}", "error": f"{type(e).__name__}: {e}"})
             print("step failed", s, e, flush=True)
