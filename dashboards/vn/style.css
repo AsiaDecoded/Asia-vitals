@@ -132,3 +132,8 @@
 .vn-heat td.heat { font-variant-numeric: tabular-nums; border: 2px solid var(--color-bg); }
 .vn-heat tr.lead td, .vn-heat tr.grp1 td:first-child { font-weight: 700; }
 #gdp-ind-table tr.sep td:first-child { font-weight: 700; }
+/* Chart 2 (GDP per capita): keep the two-series legend on the units row. */
+#gdp-pc .ad-top { gap: 0 0.75rem; }
+#gdp-pc-legend { flex-wrap: nowrap; white-space: nowrap; gap: 0 0.75rem; min-width: 0; }
+#gdp-pc-legend span.ln { width: 1.1rem; margin-right: 0.3rem; }
+@media (max-width: 40rem) { #gdp-pc-legend { flex-wrap: wrap; white-space: normal; } }
