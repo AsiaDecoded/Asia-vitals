@@ -26,6 +26,7 @@
   "id_fiscal_monthly": "Ministry of Finance APBN KiTa press conference: no calendar found; it has fallen between the 9th and 22nd (Sep 2026 outturn 9 Oct, Aug 18 Sep), so the source runs daily from the 3rd to the 25th; nominal date the 15th",
   "id_debt_imf": "No fixed dates: SUSPI (Bank Indonesia and Ministry of Finance) is quarterly with no calendar found; IMF WEO in April and October, IMF Global Debt Database once a year. A short monthly window (15th-18th) picks each up within a month; every source exits unchanged when nothing is new",
   "id_jci_daily": "Yahoo Finance (^JKSE, id_jci_yahoo; benchmark indices, eq_yahoo): daily closes, fetched once a week, Friday 08:15 SGT (to Thursday's close; both sources keep completed sessions only), with the dashboard refresh that Friday",
+  "wb_gni": "World Bank: GNI per capita (WDI) updated each July with the new income classifications, revised at other WDI updates; no calendar used, one check a month (15th); exits unchanged when nothing is new",
   "id_fx": "BIS WS_XRU (id_fx_bis for Indonesia, fx_bis for 10 others): the BIS releases weekly, on Thursdays (data.bis.org: last release 29 Oct 2026, next 5 Nov; data to the Tuesday before), after the Asian runs; so one run a week, Friday 08:15 SGT, and the dashboard refresh that Friday"
  },
  "groups": {
@@ -252,6 +253,12 @@
    {"ref": "2027-W09", "date": "2027-03-05", "from": "2027-03-05", "to": "2027-03-05", "status": "expected"},
    {"ref": "2027-W10", "date": "2027-03-12", "from": "2027-03-12", "to": "2027-03-12", "status": "expected"},
    {"ref": "2027-W11", "date": "2027-03-19", "from": "2027-03-19", "to": "2027-03-19", "status": "expected"},
-   {"ref": "2027-W12", "date": "2027-03-26", "from": "2027-03-26", "to": "2027-03-26", "status": "expected"}]}
+   {"ref": "2027-W12", "date": "2027-03-26", "from": "2027-03-26", "to": "2027-03-26", "status": "expected"}]},
+  "wb_gni": {"label": "World Bank GNI per capita and income groups", "sources": ["gni_wdi"], "time_sgt": "08:00", "dates": [
+   {"ref": "2026-11", "date": "2026-11-15", "from": "2026-11-15", "to": "2026-11-15", "status": "expected"},
+   {"ref": "2026-12", "date": "2026-12-15", "from": "2026-12-15", "to": "2026-12-15", "status": "expected"},
+   {"ref": "2027-01", "date": "2027-01-15", "from": "2027-01-15", "to": "2027-01-15", "status": "expected"},
+   {"ref": "2027-02", "date": "2027-02-15", "from": "2027-02-15", "to": "2027-02-15", "status": "expected"},
+   {"ref": "2027-03", "date": "2027-03-15", "from": "2027-03-15", "to": "2027-03-15", "status": "expected"}]}
  }
 }
