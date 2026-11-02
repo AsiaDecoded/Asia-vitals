@@ -168,7 +168,7 @@ dash.calc('gdp_table', {
       : [[col, 'Nominal GDP, y/y (calculated)', r.v.toFixed(2) + '%']]));
   }
 
-  // Chart 4: published shares of GDP at current prices, stacked.
+  // Chart 5: published shares of GDP at current prices, stacked.
   function structure() {
     const id = 'gdp-structure', box = document.getElementById(id + '-chart');
     const S = SEC.map(([code, name, color]) => ({ code, name, color, bar: true }));
@@ -401,7 +401,7 @@ dash.calc('gdp_table', {
   }
 
 
-  // Chart 5: GDP in US dollars, annual, World Bank WDI (US$ billion = the World Bank's US$ / 1e9).
+  // Chart 6: GDP in US dollars, annual, World Bank WDI (US$ billion = the World Bank's US$ / 1e9).
   function usd() {
     const id = 'gdp-usd', box = document.getElementById(id + '-chart');
     document.getElementById(id + '-units').textContent = usdPick === 'NY.GDP.MKTP.CD' ? 'US$ billion, current prices' : 'US$ billion, constant 2015 prices';
