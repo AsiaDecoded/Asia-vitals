@@ -11,15 +11,16 @@ on:
       - pipeline/tools/nso_discover.py
       - pipeline/tools/nso_seeds.txt
       - pipeline/tools/nso_probe.py
+      - pipeline/tools/nso_g5_urls.txt
       - .github/workflows/nso-discover.yml
 
 permissions:
   contents: write
 
 env:
-  NSO_ROUND: g4
+  NSO_ROUND: g5
   NSO_MODE: probe            # crawl (nso_discover.py + seeds) or probe (nso_probe.py)
-  NSO_STEPS: rebase
+  NSO_STEPS: g5
   NSO_MAX: "700"
   NSO_DEPTH: "2"
   NSO_FOLLOW: "wp-content/uploads|\\.px|tablelist|E%2011|Px_E_11|Ch%e1%bb%89%20s%e1%bb%91%20gi|PLV11|PLE11|sq/|savequery|nien-giam|yearbook"
@@ -33,6 +34,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Document readers
+        run: |
+          pip install -q pypdf==5.1.0 python-docx==1.1.2
+          sudo apt-get -qq install -y antiword >/dev/null 2>&1 || true
       - name: Runner IP
         run: curl -s https://ipinfo.io/json || true
       - name: DNS and TLS for the NSO hosts

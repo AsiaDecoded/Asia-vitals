@@ -533,6 +533,59 @@ def step_rebase():
         fetch(f"rb_pxfolder_{lang}", f"{PXWEB}/{lang}/{db}/{folder}/?tablelist=true")
 
 
+def _doc_text(path):
+    """Text of a PDF, .docx or .doc saved by fetch(), for grepping on the runner (binaries are not pushed if large)."""
+    import subprocess
+    p = str(path)
+    try:
+        if p.endswith(".pdf"):
+            from pypdf import PdfReader  # noqa: PLC0415
+            return "\n".join(f"[page {i + 1}] " + (pg.extract_text() or "") for i, pg in enumerate(PdfReader(p).pages))
+        if p.endswith(".docx") or p.endswith(".bin"):
+            import docx  # noqa: PLC0415
+            return "\n".join(x.text for x in docx.Document(p).paragraphs) + "\n" + "\n".join(
+                " | ".join(c.text for c in r.cells) for t in docx.Document(p).tables for r in t.rows)
+        return subprocess.run(["antiword", p], capture_output=True, text=True, timeout=120).stdout
+    except Exception as e:  # noqa: BLE001
+        return f"(text extraction failed: {e})"
+
+
+def step_g5():
+    """Final round: yearbook 2025 versions, SNA methodology book, national accounts metadata (as text, grepped for
+    2020 prices); the 9 Apr 2026 chart post and its images; spreadsheets g4 did not reach; PX-Web roots."""
+    rx = re.compile(r"giá so sánh (năm )?2020|năm gốc 2020|năm cơ sở 2020|2020 constant|constant 2020|base year 2020|chuyển đổi năm gốc", re.I)
+    urls = [u.strip() for u in Path("pipeline/tools/nso_g5_urls.txt").read_text().splitlines() if u.strip() and not u.startswith("#")]
+    found = {}
+    for u in urls:
+        low = u.lower()
+        if low.endswith((".pdf", ".docx", ".doc")):
+            st, h, b = fetch("g5_doc", u, timeout=300)
+            fn = OUT / "files" / SUMMARY[-1]["file"]
+            if low.endswith(".docx"):
+                fn = fn.rename(fn.with_suffix(".docx"))
+            elif low.endswith(".doc"):
+                fn = fn.rename(fn.with_suffix(".doc"))
+            txt = _doc_text(fn) if st == 200 else ""
+            (OUT / "files" / (fn.stem + ".txt")).write_text(txt)
+            found[u] = [m.group(0) for m in re.finditer(r".{0,300}(" + rx.pattern + r").{0,300}", txt, re.I | re.S)][:40]
+            if fn.stat().st_size > 15_000_000:
+                fn.unlink()
+        else:
+            fetch("g5_file", u)
+        (OUT / "g5_doc_hits.json").write_text(json.dumps(found, ensure_ascii=False, indent=1))
+    st, h, b = fetch("g5_post", f"{WP}/posts/60735?_fields=id,date,link,title,content")
+    try:
+        raw = json.loads(b)["content"]["rendered"]
+        for u in re.findall(r'(?:src|data-src|href)="(https://www\.nso\.gov\.vn/wp-content/uploads/[^"]+\.(?:png|jpe?g|webp))"', raw):
+            fetch("g5_img", u)
+    except Exception:  # noqa: BLE001
+        pass
+    for lang in ("en", "vi"):
+        fetch(f"g5_pxroot_{lang}", f"{PXWEB}/{lang}/")
+    for lang, db, folder in PX_FOLDERS:
+        fetch(f"g5_pxfolder_{lang}", f"{PXWEB}/{lang}/{db}/{folder}/?tablelist=true")
+
+
 def main(out, steps="px,wp,files"):
     global OUT
     OUT = Path(out)
@@ -544,7 +597,7 @@ def main(out, steps="px,wp,files"):
              "quarters": step_quarters, "misc": step_misc,
              "gdp_px": step_gdp_px, "gdp_wp": step_gdp_wp, "gdp_old": step_gdp_old,
              "gdp_px2": step_gdp_px2, "gdp_bieu": step_gdp_bieu,
-             "gdp_posts": step_gdp_posts, "rebase": step_rebase}[s]()
+             "gdp_posts": step_gdp_posts, "rebase": step_rebase, "g5": step_g5}[s]()
         except Exception as e:  # noqa: BLE001
             SUMMARY.append({"name": f"step_{s}", "error": f"{type(e).__name__}: {e}"})
             print("step failed", s, e, flush=True)
