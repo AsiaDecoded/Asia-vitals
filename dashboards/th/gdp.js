@@ -3,14 +3,14 @@
 // flagged calculated = y in th_gdp (nominal y/y; the year to date for the latest year) and the CAGRs below.
 
 // CAGR on Charts 1 and 2, calculated on this page: (value in the end year / value in the start year) ^ (1 / years) - 1,
-// for each World Bank series drawn. Two periods (asked for 2 Nov 2026): 1986 to 1996, fixed, and 1997 to the
-// latest WDI year. The dashed line stays at 1987, the year Thailand became lower-middle income (data year).
+// for each World Bank series drawn. Two periods (asked for 2 Nov 2026): 1986 to 1996, fixed, and 1996 to the
+// latest WDI year (changed from 1997 at the user's request, 2 Nov 2026). The dashed line stays at 1987, the year Thailand became lower-middle income (data year).
 dash.calc('gdp_cagr', {
   title: 'GDP compound annual growth (CAGR)',
-  description: 'Compound annual growth, 1986 to 1996 and 1997 to the latest World Bank year, for each GDP, GDP per capita and GNI per capita series shown in Charts 1 and 2.',
+  description: 'Compound annual growth, 1986 to 1996 and 1996 to the latest World Bank year, for each GDP, GDP per capita and GNI per capita series shown in Charts 1 and 2.',
   inputs: ['th_gdp_intl', 'asia_gni_pc'],
   fn: (th_gdp_intl, asia_gni_pc) => {
-    const PERIODS = [[1986, 1996], [1997, null]];   // null: the latest year of the series
+    const PERIODS = [[1986, 1996], [1996, null]];   // null: the latest year of the series
     const by = {};
     th_gdp_intl.forEach((r) => { if (r.measure === 'level') (by[r.series] = by[r.series] || {})[Number(r.year)] = Number(r.value); });
     asia_gni_pc.forEach((r) => { if (r.economy === 'TH') (by['NY.GNP.PCAP.CD'] = by['NY.GNP.PCAP.CD'] || {})[Number(r.year)] = Number(r.gni_pc); });
