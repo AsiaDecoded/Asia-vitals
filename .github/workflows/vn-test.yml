@@ -1,6 +1,6 @@
 name: Vietnam test
 
-# Runs the Vietnam sources (vn_cpi_nso, vn_ppi_nso, vn_gdp_nso) on main with their checks, whether or not they
+# Runs the Vietnam sources (vn_cpi_nso, vn_ppi_nso, vn_gdp_nso, vn_gdp_intl) on main with their checks, whether or not they
 # are in the shared registry yet; then checks the September 2026 / Q3 2026 figures against NSO's release
 # (3 Oct 2026) and pushes data/vn and raw/vn back to main. vn_gdp_nso reads the workbooks vn_ppi_nso stores.
 on:
@@ -12,6 +12,7 @@ on:
       - pipeline/sources/vn_cpi_nso/**
       - pipeline/sources/vn_ppi_nso/**
       - pipeline/sources/vn_gdp_nso/**
+      - pipeline/sources/vn_gdp_intl/**
       - .github/workflows/vn-test.yml
 
 permissions:
@@ -40,7 +41,7 @@ jobs:
           sys.path.insert(0, "pipeline")
           from core.common import CheckFailed
           rc, lines = 0, []
-          for name in ("vn_cpi_nso", "vn_ppi_nso", "vn_gdp_nso"):
+          for name in ("vn_cpi_nso", "vn_ppi_nso", "vn_gdp_nso", "vn_gdp_intl"):
               t0 = time.time()
               lines.append(f"== {name}")
               try:

@@ -142,11 +142,13 @@ dash.calc('gdp_table', {
     }
   }
 
+  const START = '2018-01-01';   // Chart 1 from 2018 (single quarters in NSO's tables from Q2 2018)
+
   // Chart 1: real growth, quarter or year to date, as published on each base (no linking across bases).
   function growth() {
     const id = 'gdp-growth', box = document.getElementById(id + '-chart');
     if (!status(box, ['vn_gdp'])) return;
-    const src = growthSpan === 'Q' ? series('total', 'constant', 'yoy') : ytdSeries('total');
+    const src = (growthSpan === 'Q' ? series('total', 'constant', 'yoy') : ytdSeries('total')).filter((r) => r.date >= START);
     const rows = J.slice(src.map((r) => ({ date: r.date, q: true, v: r.v, price: r.price, period: r.period })), id);
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 290, mr = 8;
@@ -355,6 +357,45 @@ dash.calc('gdp_table', {
       .on('mouseleave', () => { rule.attr('display', 'none'); tip.style.display = 'none'; });
   }
 
+
+  // Chart 2: real GDP growth, annual: NSO's yearbook, the IMF's WEO (projections dashed) and the World Bank's WDI.
+  function sources() {
+    const id = 'gdp-src', box = document.getElementById(id + '-chart');
+    const S = [{ key: 'nso', name: 'NSO', color: 'var(--ad-c2)' }, { key: 'imf', name: 'IMF', color: 'var(--ad-c1)', thin: true },
+      { key: 'imfp', name: 'IMF projection', color: 'var(--ad-c1)', dash: true, thin: true }, { key: 'wb', name: 'World Bank', color: 'var(--ad-c8)', thin: true }];
+    legend(id + '-legend', S);
+    if (!status(box, ['vn_gdp_annual', 'vn_gdp_intl'])) return;
+    const by = new Map();
+    const put = (date, k, v) => { if (v == null) return; if (!by.has(date)) by.set(date, { date }); by.get(date)[k] = v; };
+    annual('sector', 'total', 'constant_2010', 'yoy').forEach((r) => put(r.date, 'nso', r.v));
+    const X = dash.data('vn_gdp_intl').data;
+    X.filter((r) => r.source === 'wb_wdi').forEach((r) => put(r.date, 'wb', num(r.value)));
+    X.filter((r) => r.source === 'imf_weo').forEach((r) => put(r.date, r.projection ? 'imfp' : 'imf', num(r.value)));
+    const lastActual = X.filter((r) => r.source === 'imf_weo' && !r.projection).reduce((m, r) => (r.date > m ? r.date : m), '');
+    if (by.has(lastActual)) by.get(lastActual).imfp = by.get(lastActual).imf;   // join the projection to the last actual year
+    const rows = Array.from(by.values()).sort((a, b) => (a.date < b.date ? -1 : 1));
+    if (!rows.length) { box.replaceChildren(); return; }
+    const H = 290, mr = 8;
+    const { svg, x, y, W, ml } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), fmt0, true, mr);
+    S.forEach((s) => {
+      svg.append('path').attr('d', d3.line().defined((r) => r[s.key] != null).x((r) => x(J.date(r.date))).y((r) => y(r[s.key]))(rows))
+        .attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', s.thin ? 1.75 : 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round')
+        .attr('stroke-dasharray', s.dash ? '6 4' : null);
+    });
+    const card = document.getElementById(id), tip = J.tip(card);
+    const rule = svg.append('line').attr('y1', 8).attr('y2', H - 22).attr('stroke', 'var(--cds-chart-reference)').attr('display', 'none');
+    const bis = d3.bisector((r) => J.date(r.date)).center;
+    svg.append('rect').attr('x', ml).attr('width', Math.max(0, W - mr - ml)).attr('height', H).attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const [mx] = d3.pointer(ev); const r = rows[bis(rows, x.invert(mx))]; const px = x(J.date(r.date));
+        rule.attr('display', null).attr('x1', px).attr('x2', px);
+        const cr = card.getBoundingClientRect();
+        const lines = S.filter((s) => r[s.key] != null && !(s.key === 'imfp' && r.date === lastActual)).map((s) => [s.color, s.name, r[s.key].toFixed(2) + '%']);
+        J.showTip(card, tip, r.date.slice(0, 4), lines.length ? lines : [[null, 'No data', '']], ev.clientX - cr.left, ev.clientY - cr.top);
+      })
+      .on('mouseleave', () => { rule.attr('display', 'none'); tip.style.display = 'none'; });
+  }
+
   function tiles() {
     const L = dash.data('gdp_latest');
     document.querySelectorAll('#gdp-headline [data-source], #gdp-q, #mfg-q').forEach((el) => {
@@ -400,6 +441,7 @@ dash.calc('gdp_table', {
     redrawMfg();
     if (!visible()) return;
     growth();
+    sources();
     qLines('gdp-sectors', [{ key: 'gdp', name: 'GDP', color: 'var(--ad-c2)', rows: series('total', 'constant', 'yoy') }]
       .concat(SEC.map(([code, name, color]) => ({ key: code, name, color, thin: true, dash: code === 'taxes', rows: series(code, 'constant', 'yoy') }))));
     level();

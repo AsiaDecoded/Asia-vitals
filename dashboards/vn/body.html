@@ -37,17 +37,25 @@
         <div class="sub">year to date <span data-source="gdp_latest" data-field="nominal_ytd_trn" data-row="0">—</span></div></div>
     </section>
 
-    <section class="jg-card" id="gdp-growth" data-periods="none">
-      <div class="jg-cardhead">
-        <div><h2>Vietnam real GDP growth</h2></div>
-        <div class="jg-seg" id="gdp-growth-seg" role="group" aria-label="Period covered">
-          <button data-s="Q" aria-pressed="true">Quarter</button><button data-s="YTD">Year to date</button>
+    <div class="jg-grid">
+      <section class="jg-card" id="gdp-growth" data-periods="none">
+        <div class="jg-cardhead">
+          <div><h2>Vietnam real GDP growth</h2></div>
+          <div class="jg-seg" id="gdp-growth-seg" role="group" aria-label="Period covered">
+            <button data-s="Q" aria-pressed="true">Quarter</button><button data-s="YTD">Year to date</button>
+          </div>
         </div>
-      </div>
-      <div class="ad-top"><span class="ad-units">% y/y</span><span></span><span class="ad-units r"></span></div>
-      <div class="jg-chart" id="gdp-growth-chart" data-source="vn_gdp"></div>
-      <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
-    </section>
+        <div class="ad-top"><span class="ad-units">% y/y</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-growth-chart" data-source="vn_gdp"></div>
+        <div class="ad-foot"><span>Source: NSO</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="gdp-src" data-periods="none">
+        <h2>Vietnam real GDP growth, annual</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="gdp-src-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-src-chart" data-source="vn_gdp_annual vn_gdp_intl"></div>
+        <div class="ad-foot"><span>Source: NSO; IMF World Economic Outlook; World Bank WDI</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
 
     <div class="jg-grid">
       <section class="jg-card" id="gdp-sectors" data-periods="q" data-def="0">
@@ -77,7 +85,7 @@
     </section>
 
     <section class="jg-card" id="gdp-annual" data-periods="a" data-def="0">
-      <h2>Vietnam real GDP growth, annual</h2>
+      <h2>Vietnam real GDP growth by sector, annual</h2>
       <div class="ad-top"><span class="ad-units">% y/y, constant 2010 prices</span><div class="jg-legend" id="gdp-annual-legend"></div><span class="ad-units r"></span></div>
       <div class="jg-chart" id="gdp-annual-chart" data-source="vn_gdp_annual"></div>
       <div class="ad-foot"><span>Source: NSO statistical yearbook database</span><span class="ad-brand">Asia Decoded</span></div>
@@ -133,12 +141,13 @@
         <li><b>All figures are as published by the National Statistics Office of Viet Nam (NSO); none is calculated.</b> Quarterly figures are from NSO&rsquo;s socio-economic report tables, annual figures from its statistical yearbook database. Real growth is NSO&rsquo;s index against the same period a year earlier (= 100) less 100, or the rate itself where NSO prints a rate (first-quarter tables from 2024). Levels are shown in VND trillion: NSO&rsquo;s VND billion divided by 1,000. NSO publishes no seasonally adjusted series and no quarter-on-quarter growth.</li>
         <li><b>Vintages:</b> each quarterly report gives the reference quarter (estimate), the previous quarter (preliminary) and the year to date. The page shows the latest published figure for each period. The yearbook&rsquo;s last two years are preliminary and estimated.</li>
         <li><b>Breaks (dashed lines):</b> 2020 quarterly levels are on the scale before NSO&rsquo;s 2021 revaluation of GDP (the yearbook puts 2020 nominal GDP at VND 8,044 trillion; the 2020 quarterly tables sum to VND 6,293 trillion). Constant prices are 2010 prices up to the fourth quarter of 2025 and 2020 prices from the first quarter of 2026, when NSO also revised the current-price scale; earlier quarters have not been restated in these tables. Levels are therefore not comparable across either break; NSO&rsquo;s growth rates are its own on each basis.</li>
-        <li><b>Chart 1, real GDP growth:</b> NSO&rsquo;s growth against the same period a year earlier, as published on each constant-price base: 1994 prices to 2012, 2010 prices from 2013 to 2025, 2020 prices from 2026. Dashed lines mark the base changes, labelled with the new base. Rates are not linked across bases. <i>Quarter</i>: single quarters; before the second quarter of 2018 NSO&rsquo;s tables give a single quarter only for the first quarter (the other reports give the year to date), so earlier years show the first quarter alone. <i>Year to date</i>: three, six, nine and twelve months against the same period a year earlier, from the nine months of 2010 (the nine months of 2012 and the first half of 2010 are missing from the report files NSO still hosts). Quarterly report tables from 2010 to 2019 are the archived files on NSO&rsquo;s website; levels in them are on the scale before the 2021 revaluation.</li>
-        <li><b>Chart 2, by sector:</b> agriculture, forestry and fishing; industry and construction; services; and taxes on products less subsidies, the four parts NSO sums to GDP.</li>
-        <li><b>Chart 3, level:</b> GDP per quarter at current prices (nominal), or at constant prices (real), with the 2010-price and 2020-price series shown separately.</li>
-        <li><b>Chart 4, structure:</b> NSO&rsquo;s published shares of GDP at current prices. The four parts sum to 100.</li>
-        <li><b>Chart 5, annual growth:</b> the yearbook&rsquo;s real GDP and sector growth (previous year = 100, less 100), 2010 prices, from 2006.</li>
-        <li><b>Charts 6 and 7, expenditure:</b> annual only; NSO&rsquo;s quarterly expenditure figures are growth rates in the release text, not in its tables. Real growth from 2006; shares of GDP at current prices from 1995. Household and government final consumption, gross fixed capital formation, and the balance of trade in goods and services; changes in inventories and the statistical discrepancy are in the data but not drawn.</li>
+        <li><b>Chart 1, real GDP growth:</b> NSO&rsquo;s growth against the same period a year earlier, from 2018. <i>Quarter</i>: single quarters (in NSO&rsquo;s tables from the second quarter of 2018; before that its quarterly reports give the year to date, with single quarters only in the release text). <i>Year to date</i>: three, six, nine and twelve months against the same period a year earlier. 2010 prices to 2025, 2020 prices from 2026 (dashed line, labelled with the new base); rates are not linked across bases.</li>
+        <li><b>Chart 2, annual growth by source:</b> real GDP, % change on the previous year. NSO: the yearbook database, 2010 prices, from 2006 (2025 an estimate). IMF: World Economic Outlook, from 1980, with the IMF&rsquo;s projections dashed (years after NSO&rsquo;s latest yearbook year). World Bank: World Development Indicators, from 1985. From 2006 the World Bank&rsquo;s rates equal NSO&rsquo;s; the IMF&rsquo;s differ in some recent years where it holds an earlier NSO vintage (2023, 2024). Before 2006 both rest on NSO&rsquo;s earlier bases as the IMF and World Bank publish them.</li>
+        <li><b>Chart 3, by sector:</b> agriculture, forestry and fishing; industry and construction; services; and taxes on products less subsidies, the four parts NSO sums to GDP.</li>
+        <li><b>Chart 4, level:</b> GDP per quarter at current prices (nominal), or at constant prices (real), with the 2010-price and 2020-price series shown separately.</li>
+        <li><b>Chart 5, structure:</b> NSO&rsquo;s published shares of GDP at current prices. The four parts sum to 100.</li>
+        <li><b>Chart 6, annual growth by sector:</b> the yearbook&rsquo;s real GDP and sector growth (previous year = 100, less 100), 2010 prices, from 2006.</li>
+        <li><b>Charts 7 and 8, expenditure:</b> annual only; NSO&rsquo;s quarterly expenditure figures are growth rates in the release text, not in its tables. Real growth from 2006; shares of GDP at current prices from 1995. Household and government final consumption, gross fixed capital formation, and the balance of trade in goods and services; changes in inventories and the statistical discrepancy are in the data but not drawn.</li>
         <li><b>Table, GDP by industry:</b> NSO&rsquo;s 28 rows, ISIC Rev. 4 sections (VSIC 2018). Manufacturing (section C) is a single row: NSO publishes no value added by manufacturing industry in its quarterly or annual GDP tables. Manufacturing charts are on the Manufacturing tab.</li>
         <li><b>Heat table, real growth by industry:</b> each row is coloured on its own range, from green at its lowest rate in the window to red at its highest.</li>
       </ol>
