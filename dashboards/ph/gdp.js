@@ -107,7 +107,9 @@ dash.calc('gdp_latest', {
       real: [{ key: 'NY.GDP.PCAP.KD', name: 'GDP per capita', color: 'var(--ad-c2)' }],
       nominal: [{ key: 'NY.GDP.PCAP.CD', name: 'GDP per capita', color: 'var(--ad-c1)' }, { key: 'gni_pc', name: 'GNI per capita, Atlas method', color: 'var(--ad-c2)' }] },
   };
-  const LMI = 1987, UMI = 2025, CAGR_START = 1987;   // income-group lines and CAGR start (user, 2 Nov 2026)
+  const LMI = 1987, UMI = 2025;   // income-group lines (user, 2 Nov 2026)
+  // CAGR periods (user, 2 Nov 2026): 1986 to the latest WDI year (moves on), and 1986-2019 (fixed). null = latest.
+  const CAGR = [[1986, null], [1986, 2019]];
   function usd(id) {
     const C = USD[id], p = pick[id === 'gdp-usd' ? 'usd' : 'pc'], nominal = /\.CD$/.test(p), S = nominal ? C.nominal : C.real;
     const box = document.getElementById(id + '-chart');
@@ -138,20 +140,21 @@ dash.calc('gdp_latest', {
       svg.append('text').attr('x', lx + (ax === 'start' ? 3 : ax === 'end' ? -3 : 0)).attr('y', 12).attr('font-size', 12).attr('fill', 'var(--ad-ink)')
         .attr('text-anchor', ax).text(lab);
     });
-    // CAGR (calculated on this page): (latest-year value / 1987 value)^(1 / years) - 1, per series drawn, from the full data
-    // (not the slider window); the end year moves on as WDI adds years.
-    const full = Array.from(by.values());
-    const cagr = S.map((s) => {
-      const have = full.filter((r) => r[s.key] != null).sort((a, b) => (a.date < b.date ? -1 : 1)); if (!have.length) return null;
-      const end = have[have.length - 1], a0 = have.find((r) => r.date.slice(0, 4) === String(CAGR_START));
-      const yrs = Number(end.date.slice(0, 4)) - CAGR_START;
-      return a0 && yrs > 0 && a0[s.key] > 0 ? { s, END: end.date.slice(0, 4), v: (Math.pow(end[s.key] / a0[s.key], 1 / yrs) - 1) * 100 } : null;
-    }).filter(Boolean);
+    // CAGR (calculated on this page): (end-year value / start-year value)^(1 / years) - 1, per series drawn and per period,
+    // from the full data (not the slider window).
+    const full = Array.from(by.values()).sort((a, b) => (a.date < b.date ? -1 : 1));
+    const at = (k, yr) => full.find((r) => r.date.slice(0, 4) === String(yr) && r[k] != null);
+    const cagr = [];
+    CAGR.forEach(([y0, y1]) => S.forEach((s) => {
+      const have = full.filter((r) => r[s.key] != null); if (!have.length) return;
+      const end = y1 == null ? Number(have[have.length - 1].date.slice(0, 4)) : y1, a0 = at(s.key, y0), a1 = at(s.key, end);
+      if (a0 && a1 && end > y0 && a0[s.key] > 0) cagr.push({ s, y0, end, v: (Math.pow(a1[s.key] / a0[s.key], 1 / (end - y0)) - 1) * 100 });
+    }));
     if (cagr.length) {
       const lh = 16, tx = (umX != null ? umX : W - mr) - 8, ty = H - 40 - (cagr.length - 1) * lh;
       const t = svg.append('text').attr('font-size', 12).attr('font-weight', 700).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'end');
       cagr.forEach((c, k) => t.append('tspan').attr('x', tx).attr('y', ty + k * lh).attr('fill', S.length > 1 ? c.s.color : null)
-        .text(`${CAGR_START}–${c.END} CAGR: ${c.v.toFixed(1)}% p.a.`));
+        .text(`${S.length > 1 ? c.s.name.split(',')[0].replace(' per capita', '') + ' ' : ''}${c.y0}–${c.end} CAGR: ${c.v.toFixed(1)}% p.a.`));
     }
     const card = document.getElementById(id);
     const dots = S.map((s) => svg.append('circle').attr('r', 3.5).attr('fill', s.color).attr('display', 'none'));
