@@ -467,6 +467,72 @@ def step_gdp_posts():
         fetch("post_q3_en", f"{WP}/posts/{x['id']}?_fields=id,date,modified,link,title,content")
 
 
+REBASE_TERMS = ["năm gốc 2020", "năm cơ sở 2020", "giá so sánh 2020", "giá so sánh năm 2020", "chuyển đổi năm gốc",
+                "đổi năm gốc", "đánh giá lại quy mô", "điều chỉnh quy mô", "quy mô GDP", "biên soạn lại", "chuỗi số liệu",
+                "số liệu GDP giai đoạn", "GDP giai đoạn 2021", "tổng sản phẩm trong nước giai đoạn", "tài khoản quốc gia",
+                "base year 2020", "2020 constant prices", "constant 2020 prices", "rebasing", "rebase", "revised GDP",
+                "GDP revision", "GDP series", "back series", "revaluation", "national accounts"]
+REBASE_RX = re.compile(r"năm gốc|năm cơ sở|giá so sánh (năm )?2020|đánh giá lại|điều chỉnh quy mô|biên soạn lại|chuỗi số liệu|"
+                       r"base year|2020 (constant )?prices|constant 2020|rebas|revis|revaluat|back.?series", re.I)
+
+
+def step_rebase():
+    """Exhaustive look for a 2020-price back series: post searches (titles and full text), every post since
+    Jun 2025, every media file since Jun 2025 (spreadsheets fetched, PDFs listed), PX-Web database roots."""
+    posts = {}
+    for term in REBASE_TERMS:
+        for page in range(1, 6):
+            items, h = jget("rb_search", f"{WP}/posts?search={urllib.parse.quote(term)}&per_page=100&page={page}"
+                            "&_fields=id,date,link,title", save=False)
+            for x in items or []:
+                posts.setdefault(x["id"], {"date": x["date"], "link": x["link"], "title": x["title"]["rendered"], "terms": []})
+                posts[x["id"]]["terms"].append(term)
+            if not items or page >= int(h.get("X-WP-TotalPages", 1) or 1):
+                break
+    # every post since Jun 2025 (titles), all pages
+    allp = {}
+    for page in range(1, 40):
+        items, h = jget("rb_all", f"{WP}/posts?after=2025-06-01T00:00:00&per_page=100&page={page}&_fields=id,date,link,title,content",
+                        save=False, timeout=180)
+        for x in items or []:
+            t = _html.unescape(re.sub(r"<[^>]+>", " ", x["content"]["rendered"]))
+            hits = [m.group(0)[:300] for m in re.finditer(r"[^.]{0,200}(" + REBASE_RX.pattern + r")[^.]{0,200}", t, re.I)]
+            allp[x["id"]] = {"date": x["date"], "link": x["link"], "title": _html.unescape(x["title"]["rendered"]), "hits": hits[:8],
+                             "links": [u for u in re.findall(r'href="([^"]+)"', x["content"]["rendered"]) if "wp-content/uploads" in u]}
+        if not items or page >= int(h.get("X-WP-TotalPages", 1) or 1):
+            break
+    (OUT / "rb_posts_search.json").write_text(json.dumps(posts, ensure_ascii=False, indent=1))
+    (OUT / "rb_posts_all.json").write_text(json.dumps(allp, ensure_ascii=False, indent=1))
+    # full text of every search hit not already covered
+    for pid in posts:
+        if pid not in allp:
+            fetch("rb_post", f"{WP}/posts/{pid}?_fields=id,date,modified,link,title,content")
+    # every media item since Jun 2025
+    media = {}
+    for page in range(1, 60):
+        items, h = jget("rb_media", f"{WP}/media?after=2025-06-01T00:00:00&per_page=100&page={page}"
+                        "&_fields=id,date,source_url,post,mime_type,title", save=False, timeout=180)
+        for x in items or []:
+            media[x["id"]] = {"date": x["date"], "url": x["source_url"], "post": x["post"], "mime": x["mime_type"],
+                              "title": _html.unescape(x["title"]["rendered"])}
+        if not items or page >= int(h.get("X-WP-TotalPages", 1) or 1):
+            break
+    (OUT / "rb_media.json").write_text(json.dumps(media, ensure_ascii=False, indent=1))
+    skip = re.compile(r"CPI|IIP|Lao-dong|XNK|NK-|XK-|Gia-vang|Bieu-thang|Bieu-T\d|So-lieu-CPI", re.I)
+    for x in media.values():
+        u = x["url"]
+        if u.lower().endswith((".xlsx", ".xls", ".csv", ".zip")) and not skip.search(u):
+            fetch("rb_file", u)
+        elif u.lower().endswith(".pdf") and REBASE_RX.search(urllib.parse.unquote(u) + " " + x["title"]):
+            fetch("rb_pdf", u)
+    # PX-Web roots again (any new national-accounts database or 2020-price table)
+    for lang in ("en", "vi"):
+        fetch(f"rb_pxroot_{lang}", f"{PXWEB}/{lang}/")
+        jget(f"rb_pxapi_{lang}", f"{PX}/{lang}/")
+    for lang, db, folder in PX_FOLDERS:
+        fetch(f"rb_pxfolder_{lang}", f"{PXWEB}/{lang}/{db}/{folder}/?tablelist=true")
+
+
 def main(out, steps="px,wp,files"):
     global OUT
     OUT = Path(out)
@@ -478,7 +544,7 @@ def main(out, steps="px,wp,files"):
              "quarters": step_quarters, "misc": step_misc,
              "gdp_px": step_gdp_px, "gdp_wp": step_gdp_wp, "gdp_old": step_gdp_old,
              "gdp_px2": step_gdp_px2, "gdp_bieu": step_gdp_bieu,
-             "gdp_posts": step_gdp_posts}[s]()
+             "gdp_posts": step_gdp_posts, "rebase": step_rebase}[s]()
         except Exception as e:  # noqa: BLE001
             SUMMARY.append({"name": f"step_{s}", "error": f"{type(e).__name__}: {e}"})
             print("step failed", s, e, flush=True)
