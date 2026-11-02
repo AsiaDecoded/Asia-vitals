@@ -451,14 +451,14 @@ dash.calc('gdp_table', {
     const at = (yr) => rows.find((r) => r.date.slice(0, 4) === String(yr));
     const END = 2025, cagr = [2010, 2015].map((s) => { const a0 = at(s), a1 = at(END); return a0 && a1 && a0.v > 0 ? { s, v: (Math.pow(a1.v / a0.v, 1 / (END - s)) - 1) * 100 } : null; }).filter(Boolean);
     if (cagr.length) {
-      // Placed just above and left of the line at 2015: the line rises to the right, so the block clears it.
-      const p = at(2015) || at(END), lh = 16, n = cagr.length + 1;
+      // Top of the plot, just left of where the line passes below the block (the line rises to the right).
+      const lh = 16, n = cagr.length + 1, ty = 18, bottom = ty + (n - 1) * lh + 6;
       const t = svg.append('text').attr('font-size', 12).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'end');
       t.append('tspan').attr('font-weight', 700).text('CAGR');
       cagr.forEach((c) => t.append('tspan').attr('dy', lh).text(`${c.s}–${String(END).slice(2)}: ${c.v.toFixed(1)}% a year`));
       const bw = t.node().getBBox().width;
-      const tx = Math.max(ml + 8 + bw, x(J.date(p.date)) - 10);
-      const ty = Math.max(16, y(p.v) - 12 - (n - 1) * lh);
+      const clear = rows.filter((r) => y(r.v) > bottom + 6).pop() || rows[0];
+      const tx = Math.max(ml + 8 + bw, x(J.date(clear.date)) - 10);
       t.attr('x', tx).attr('y', ty); t.selectAll('tspan').attr('x', tx);
     }
     const card = document.getElementById(id), tip = J.tip(card);
