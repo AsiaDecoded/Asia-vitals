@@ -1,0 +1,394 @@
+country,indicator,series,label,measure,area,freq,date,value,unit,source,release
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1961-12-01,5.695471,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1962-12-01,4.846294,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1963-12-01,7.016265,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1964-12-01,3.402494,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1965-12-01,5.345089,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1966-12-01,4.441159,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1967-12-01,5.222688,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1968-12-01,5.038159,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1969-12-01,4.689473,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1970-12-01,3.692487,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1971-12-01,5.389008,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1972-12-01,5.430387,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1973-12-01,8.782009,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1974-12-01,3.394606,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1975-12-01,5.451103,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1976-12-01,8.778403,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1977-12-01,5.56297,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1978-12-01,5.192385,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1979-12-01,5.595571,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1980-12-01,5.200711,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1981-12-01,3.422209,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1982-12-01,3.698406,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1983-12-01,1.896952,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1984-12-01,-7.039378,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1985-12-01,-6.858377,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1986-12-01,3.510684,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1987-12-01,4.36181,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1988-12-01,6.696931,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1989-12-01,6.183918,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1990-12-01,3.082673,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1991-12-01,-0.43639,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1992-12-01,0.417629,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1993-12-01,2.18189,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1994-12-01,4.373666,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1995-12-01,4.625225,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1996-12-01,5.860348,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1997-12-01,5.186412,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1998-12-01,-0.514091,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,1999-12-01,3.346451,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2000-12-01,4.382505,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2001-12-01,3.049231,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2002-12-01,3.716255,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2003-12-01,5.086911,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2004-12-01,6.569229,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2005-12-01,4.942505,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2006-12-01,5.316417,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2007-12-01,6.519292,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2008-12-01,4.344487,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2009-12-01,1.448323,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2010-12-01,7.3345,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2011-12-01,3.858233,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2012-12-01,6.896952,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2013-12-01,6.750531,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2014-12-01,6.347987,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2015-12-01,6.34831,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2016-12-01,7.149457,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2017-12-01,6.930988,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2018-12-01,6.341486,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2019-12-01,6.118526,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2020-12-01,-9.518295,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2021-12-01,5.714733,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2022-12-01,7.580982,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2023-12-01,5.51895,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2024-12-01,5.714745,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD.ZG,Real GDP growth,yoy,national,A,2025-12-01,4.402402,%,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1960-12-01,7515894110.56,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1961-12-01,8171194424.94,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1962-12-01,4954593071.83,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1963-12-01,5505023238.41,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1964-12-01,5953756194.81,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1965-12-01,6517349771.93,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1966-12-01,7189017887.69,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1967-12-01,7724873935.13,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1968-12-01,8632749269.49,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1969-12-01,9571800652.56,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1970-12-01,7559115516.7,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1971-12-01,8375075629.83,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1972-12-01,9067815521.33,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1973-12-01,11412449735.31,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1974-12-01,15607882555.29,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1975-12-01,16875240683.51,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1976-12-01,19381055197.28,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1977-12-01,22283109803.35,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1978-12-01,25762224562.63,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1979-12-01,31218296292.13,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1980-12-01,36848080898.81,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1981-12-01,40499388869.13,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1982-12-01,42206011275.18,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1983-12-01,37759179894.53,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1984-12-01,35730185633.52,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1985-12-01,34961486348.24,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1986-12-01,33987207294.94,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1987-12-01,37791488666.07,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1988-12-01,43152128958.61,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1989-12-01,48513773720.67,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1990-12-01,50508286641.57,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1991-12-01,51784144942.73,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1992-12-01,60422328242.18,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1993-12-01,62036529147.18,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1994-12-01,73159336915.27,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1995-12-01,84644328727.48,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1996-12-01,94648084429.03,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1997-12-01,94106317565.08,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1998-12-01,74492416329.91,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,1999-12-01,85640171045.13,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2000-12-01,83669788376.92,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2001-12-01,78921234457.55,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2002-12-01,84307345887.54,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2003-12-01,87039092974.23,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2004-12-01,95001999685.33,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2005-12-01,107419977318.17,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2006-12-01,127652926368.07,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2007-12-01,155980408673.4,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2008-12-01,181624626327.36,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2009-12-01,175974755881.37,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2010-12-01,208368893151.14,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2011-12-01,234216730291.32,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2012-12-01,261920540962.63,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2013-12-01,283902828588.72,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2014-12-01,297483555338.04,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2015-12-01,306445871242.32,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2016-12-01,318627003016.73,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2017-12-01,328480736802.76,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2018-12-01,346841896587.31,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2019-12-01,376823402239.14,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2020-12-01,361751145451.6,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2021-12-01,394087359848.11,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2022-12-01,404353369604.63,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2023-12-01,437055627245.14,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2024-12-01,461671157904.74,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.CD,"GDP, current US$",level,national,A,2025-12-01,487086123720.42,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1960-12-01,31344414578.2,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1961-12-01,33129626605.04,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1962-12-01,34735185774.09,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1963-12-01,37172298520.22,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1964-12-01,38437083908.99,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1965-12-01,40491580379.52,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1966-12-01,42289875657.1,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1967-12-01,44498543744.55,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1968-12-01,46740451307.71,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1969-12-01,48932332357.99,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1970-12-01,50739152607.18,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1971-12-01,53473489811.5,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1972-12-01,56377307514.79,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1973-12-01,61328367803.69,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1974-12-01,63410224488.98,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1975-12-01,66866781055.75,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1976-12-01,72736616790.96,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1977-12-01,76782933145.0,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1978-12-01,80769798287.51,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1979-12-01,85289329758.56,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1980-12-01,89724981380.61,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1981-12-01,92795557533.17,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1982-12-01,96227514092.13,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1983-12-01,98052903642.78,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1984-12-01,91150588918.08,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1985-12-01,84899137702.17,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1986-12-01,87879678171.14,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1987-12-01,91712822474.01,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1988-12-01,97854767009.26,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1989-12-01,103906025758.68,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1990-12-01,107109108270.26,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1991-12-01,106641694746.42,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1992-12-01,107087061460.26,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1993-12-01,109423583330.15,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1994-12-01,114209405300.73,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1995-12-01,119491847401.12,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1996-12-01,126494485337.08,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1997-12-01,133055010091.64,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1998-12-01,132370986792.54,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,1999-12-01,136800717247.31,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2000-12-01,142796015521.85,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2001-12-01,147150196386.03,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2002-12-01,152618672919.07,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2003-12-01,160382249186.08,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2004-12-01,170918125627.49,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2005-12-01,179365762735.54,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2006-12-01,188901594317.39,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2007-12-01,201216639993.9,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2008-12-01,209958471374.17,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2009-12-01,212999348337.29,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2010-12-01,228621785456.62,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2011-12-01,237442546234.97,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2012-12-01,253818843989.0,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2013-12-01,270952964501.39,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2014-12-01,288153024771.7,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2015-12-01,306445871242.32,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2016-12-01,328355086268.98,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2017-12-01,351113338965.58,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2018-12-01,373379140695.82,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2019-12-01,396224439236.64,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2020-12-01,358510629276.39,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2021-12-01,378998554988.86,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2022-12-01,407730367707.39,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2023-12-01,430232801525.37,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2024-12-01,454819510163.04,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.MKTP.KD,"GDP, constant 2015 US$",level,national,A,2025-12-01,474842491496.93,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1960-12-01,269.47,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1961-12-01,283.79,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1962-12-01,166.69,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1963-12-01,179.46,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1964-12-01,188.15,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1965-12-01,199.76,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1966-12-01,213.85,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1967-12-01,223.12,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1968-12-01,242.23,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1969-12-01,261.09,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1970-12-01,200.92,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1971-12-01,217.43,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1972-12-01,230.1,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1973-12-01,283.23,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1974-12-01,379.07,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1975-12-01,400.64,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1976-12-01,448.62,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1977-12-01,502.23,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1978-12-01,565.27,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1979-12-01,666.96,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1980-12-01,766.97,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1981-12-01,821.29,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1982-12-01,832.54,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1983-12-01,723.43,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1984-12-01,665.04,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1985-12-01,633.21,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1986-12-01,600.0,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1987-12-01,649.81,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1988-12-01,722.34,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1989-12-01,791.86,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1990-12-01,803.57,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1991-12-01,804.32,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1992-12-01,916.52,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1993-12-01,918.64,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1994-12-01,1059.98,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1995-12-01,1199.84,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1996-12-01,1311.09,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1997-12-01,1273.28,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1998-12-01,982.87,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,1999-12-01,1101.44,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2000-12-01,1050.79,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2001-12-01,969.53,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2002-12-01,1014.91,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2003-12-01,1027.23,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2004-12-01,1099.63,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2005-12-01,1220.46,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2006-12-01,1426.15,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2007-12-01,1712.66,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2008-12-01,1959.29,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2009-12-01,1864.45,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2010-12-01,2162.91,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2011-12-01,2383.92,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2012-12-01,2614.62,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2013-12-01,2781.28,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2014-12-01,2866.84,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2015-12-01,2909.86,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2016-12-01,2985.2,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2017-12-01,3038.12,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2018-12-01,3168.51,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2019-12-01,3400.79,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2020-12-01,3227.58,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2021-12-01,3484.39,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2022-12-01,3548.07,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2023-12-01,3804.08,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2024-12-01,3985.29,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.CD,"GDP per capita, current US$",level,national,A,2025-12-01,4170.72,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1960-12-01,1123.78,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1961-12-01,1150.63,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1962-12-01,1168.61,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1963-12-01,1211.82,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1964-12-01,1214.71,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1965-12-01,1241.11,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1966-12-01,1257.98,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1967-12-01,1285.29,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1968-12-01,1311.52,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1969-12-01,1334.73,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1970-12-01,1348.65,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1971-12-01,1388.25,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1972-12-01,1430.59,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1973-12-01,1522.02,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1974-12-01,1540.04,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1975-12-01,1587.5,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1976-12-01,1683.66,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1977-12-01,1730.59,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1978-12-01,1772.23,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1979-12-01,1822.15,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1980-12-01,1867.57,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1981-12-01,1881.82,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1982-12-01,1898.14,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1983-12-01,1878.6,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1984-12-01,1696.58,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1985-12-01,1537.67,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1986-12-01,1551.41,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1987-12-01,1576.97,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1988-12-01,1638.04,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1989-12-01,1696.0,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1990-12-01,1704.08,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1991-12-01,1656.38,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1992-12-01,1624.35,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1993-12-01,1620.36,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1994-12-01,1654.75,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1995-12-01,1693.81,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1996-12-01,1752.24,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1997-12-01,1800.26,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1998-12-01,1746.53,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,1999-12-01,1759.42,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2000-12-01,1793.35,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2001-12-01,1807.71,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2002-12-01,1837.25,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2003-12-01,1892.82,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2004-12-01,1978.34,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2005-12-01,2037.88,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2006-12-01,2110.42,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2007-12-01,2209.35,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2008-12-01,2264.95,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2009-12-01,2256.73,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2010-12-01,2373.14,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2011-12-01,2416.75,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2012-12-01,2533.74,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2013-12-01,2654.42,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2014-12-01,2776.92,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2015-12-01,2909.86,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2016-12-01,3076.34,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2017-12-01,3247.45,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2018-12-01,3410.94,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2019-12-01,3575.88,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2020-12-01,3198.67,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2021-12-01,3350.98,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2022-12-01,3577.7,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2023-12-01,3744.7,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2024-12-01,3926.15,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GDP.PCAP.KD,"GDP per capita, constant 2015 US$",level,national,A,2025-12-01,4065.89,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1962-12-01,6917102323.26,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1963-12-01,6323494814.07,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1964-12-01,5775483568.39,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1965-12-01,6375030303.83,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1966-12-01,7032480552.18,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1967-12-01,7695706072.76,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1968-12-01,8485091491.03,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1969-12-01,9393700085.41,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1970-12-01,9086321314.1,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1971-12-01,9153357980.71,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1972-12-01,9292780478.8,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1973-12-01,11534666048.09,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1974-12-01,14603932273.3,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1975-12-01,17888454883.23,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1976-12-01,20373422982.34,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1977-12-01,22085719133.97,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1978-12-01,25455611202.32,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1979-12-01,31065815017.72,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1980-12-01,37476003806.5,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1981-12-01,41569232453.27,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1982-12-01,42122667725.53,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1983-12-01,39612267989.84,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1984-12-01,34755686409.92,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1985-12-01,32230319264.46,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1986-12-01,34814287626.96,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1987-12-01,39272686191.67,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1988-12-01,44330643163.31,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1989-12-01,48173498972.56,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1990-12-01,51230095371.97,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1991-12-01,52541638456.49,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1992-12-01,57385250805.73,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1993-12-01,62187458479.04,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1994-12-01,71572075303.22,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1995-12-01,81264039788.68,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1996-12-01,94261500410.77,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1997-12-01,101713640851.66,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1998-12-01,98150790987.09,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,1999-12-01,95614803295.29,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2000-12-01,91937754095.78,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2001-12-01,93185152652.3,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2002-12-01,92132148099.27,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2003-12-01,97137343963.48,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2004-12-01,108902658023.29,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2005-12-01,118828482595.87,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2006-12-01,131139704921.86,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2007-12-01,153391029231.74,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2008-12-01,182337456375.43,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2009-12-01,200666103587.89,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2010-12-01,222925833807.18,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2011-12-01,240843274548.34,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2012-12-01,278222997754.04,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2013-12-01,312617236531.94,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2014-12-01,334247023019.72,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2015-12-01,345550557691.08,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2016-12-01,357904546274.48,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2017-12-01,371432741923.54,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2018-12-01,395267673130.33,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2019-12-01,416217284047.38,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2020-12-01,375814681915.26,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2021-12-01,404198052830.18,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2022-12-01,456996881689.53,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2023-12-01,495945375219.27,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2024-12-01,518012454956.5,US$,"World Bank, World Development Indicators",W-2026-10-08
+PH,gdp_intl,NY.GNP.ATLS.CD,"GNI, Atlas method, current US$",level,national,A,2025-12-01,566821516470.65,US$,"World Bank, World Development Indicators",W-2026-10-08
