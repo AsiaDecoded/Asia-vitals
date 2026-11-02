@@ -449,6 +449,18 @@ dash.calc('gdp_table', {
     // Lower-middle income: on 2009 GNI per capita, announced by the World Bank in July 2010 (FY11 in its classification
     // history, OGHIST). Dashed line at 2009, the data year (user). CAGR starts in 2009.
     const LMI = 2009, START = 2009, lx = x(J.date(`${LMI}-12-01`));
+    // x-axis: annual points are dated 1 December, so the default January ticks sit a month after each point and 2009
+    // reads as 2010. Label the points themselves instead, every few years counted from the 2009 line.
+    svg.selectAll(`g[transform="translate(0,${H - 20})"]`).remove();
+    {
+      const room = Math.max(1, Math.floor((W - ml - mr) / 44)), stepY = [1, 2, 5, 10].find((k) => rows.length / k <= room) || 10;
+      rows.forEach((r) => {
+        const yr = Number(r.date.slice(0, 4)); if (((yr - LMI) % stepY + stepY) % stepY !== 0) return;
+        const px = x(J.date(r.date));
+        svg.append('text').attr('x', px).attr('y', H - 20).attr('dy', '0.71em').attr('font-size', 12).attr('fill', 'var(--ad-ink)')
+          .attr('text-anchor', px > W - mr - 16 ? 'end' : px < ml + 16 ? 'start' : 'middle').text(yr);
+      });
+    }
     if (rows[0].date.slice(0, 4) < String(LMI)) {
       svg.append('line').attr('x1', lx).attr('x2', lx).attr('y1', 12).attr('y2', H - 24).attr('stroke', 'var(--ad-axis)').attr('stroke-dasharray', '3 3');
       svg.append('text').attr('x', lx - 5).attr('y', 18).attr('font-size', 12).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'end').text('Lower-middle income');
