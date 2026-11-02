@@ -404,6 +404,60 @@ def step_gdp_old():
             fetch("oldbook_" + x["quarter"], x["source_url"])
 
 
+PX_FOLDERS = [("en", "E 03. National Accounts and State budget", "E 03. National Accounts and State budget__Px_E_03"),
+              ("en", "E 07. Industry", "E 07. Industry__Px_E_07"),
+              ("vi", "Tài khoản quốc gia", "Tài khoản quốc gia__Px_V_03")]
+
+
+def step_gdp_px2():
+    """Table lists of the national accounts and industry folders on PX-Web; export every table (PC-Axis)."""
+    found = []
+    for lang, db, folder in PX_FOLDERS:
+        url = f"{PXWEB}/{lang}/{db}/{folder}/"
+        s, h, b = fetch(f"pxfolder_{lang}", url + "?tablelist=true")
+        if s != 200:
+            continue
+        for t_url, text in _links(b.decode("utf-8", "replace"), url):
+            m = re.search(r"/([^/]+\.px)/?(?:\?|$)", urllib.parse.unquote(t_url), re.I)
+            if m and folder in urllib.parse.unquote(t_url):
+                found.append({"lang": lang, "db": db, "folder": folder, "table": m.group(1), "text": text})
+    seen, uniq = set(), []
+    for x in found:
+        k = (x["lang"], x["table"])
+        if k not in seen:
+            seen.add(k); uniq.append(x)
+    (OUT / "px_folder_tables.json").write_text(json.dumps(uniq, ensure_ascii=False, indent=1))
+    for x in uniq:
+        if x["lang"] == "vi":
+            continue
+        try:
+            st, body, ext = px_export(x["lang"], x["db"], x["folder"], x["table"], "FileTypePX")
+            x["export"], x["ext"] = SUMMARY[-1]["file"], ext
+        except Exception as e:  # noqa: BLE001
+            x["error"] = f"{type(e).__name__}: {e}"
+        (OUT / "px_folder_tables.json").write_text(json.dumps(uniq, ensure_ascii=False, indent=1))
+
+
+def step_gdp_bieu():
+    """Every 'Bieu'/'So-lieu' spreadsheet in the media library (listing); fetch the quarter-end ones for 2013-2019."""
+    media = {}
+    for term in ("Bieu", "So-lieu", "Tong-hop-bieu", "Bieu-TH"):
+        for page in range(1, 15):
+            items, h = jget("wpmedia_bieu", f"{WP}/media?search={urllib.parse.quote(term)}&per_page=100&page={page}"
+                            "&_fields=id,date,source_url,post,mime_type", save=False)
+            for x in items or []:
+                if x["source_url"].lower().endswith((".xls", ".xlsx")):
+                    media[x["id"]] = {"date": x["date"], "url": x["source_url"], "post": x["post"]}
+            if not items or page >= int(h.get("X-WP-TotalPages", 1) or 1):
+                break
+    (OUT / "wp_bieu_media.json").write_text(json.dumps(media, ensure_ascii=False, indent=1))
+    for x in media.values():
+        u = urllib.parse.unquote(x["url"].rsplit("/", 1)[-1])
+        m = re.search(r"(?<!\d)(0?3|0?6|0?9|12)[-._ ]+(201[3-9])", u) or re.search(r"T(0?3|0?6|0?9|12)[-._]?(201[3-9])", u)
+        if m:
+            fetch(f"bieu_{m.group(2)}_{int(m.group(1)):02d}", x["url"])
+
+
 def main(out, steps="px,wp,files"):
     global OUT
     OUT = Path(out)
@@ -413,7 +467,8 @@ def main(out, steps="px,wp,files"):
             {"px": step_px, "wp": step_wp, "files": step_files, "pxweb": step_pxweb,
              "posts": step_posts, "files2": step_files2,
              "quarters": step_quarters, "misc": step_misc,
-             "gdp_px": step_gdp_px, "gdp_wp": step_gdp_wp, "gdp_old": step_gdp_old}[s]()
+             "gdp_px": step_gdp_px, "gdp_wp": step_gdp_wp, "gdp_old": step_gdp_old,
+             "gdp_px2": step_gdp_px2, "gdp_bieu": step_gdp_bieu}[s]()
         except Exception as e:  # noqa: BLE001
             SUMMARY.append({"name": f"step_{s}", "error": f"{type(e).__name__}: {e}"})
             print("step failed", s, e, flush=True)
