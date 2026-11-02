@@ -108,7 +108,7 @@ dash.calc('gdp_table', {
     const box = document.getElementById(cardId + '-chart');
     legend(cardId + '-legend', S);
     if (!status(box, opt.ds || ['vn_gdp'])) return;
-    const all = merge(S.map((s) => ({ key: s.key, rows: s.rows })));
+    const all = merge(S.map((s) => ({ key: s.key, rows: s.rows }))).filter((r) => !opt.start || r.date >= opt.start);
     const rows = win(all, cardId);
     if (!rows.length) { box.replaceChildren(); return; }
     const H = opt.H || 280, mr = 8;
@@ -474,7 +474,7 @@ dash.calc('gdp_table', {
     growth();
     sources();
     qLines('gdp-sectors', [{ key: 'gdp', name: 'GDP', color: 'var(--ad-c2)', rows: series('total', 'constant', 'yoy') }]
-      .concat(SEC.slice(0, 3).map(([code, name, color]) => ({ key: code, name, color, thin: true, rows: series(code, 'constant', 'yoy') }))));
+      .concat(SEC.slice(0, 3).map(([code, name, color]) => ({ key: code, name, color, thin: true, rows: series(code, 'constant', 'yoy') }))), { start: START });
     usd();
     structure();
     aLines('gdp-annual', [{ key: 'gdp', name: 'Real GDP', color: 'var(--ad-c2)', bar: true, rows: annual('sector', 'total', 'constant_2010', 'yoy') }]
