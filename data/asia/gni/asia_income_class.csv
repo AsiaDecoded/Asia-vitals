@@ -36,6 +36,8 @@ JP,Japan,2020,FY22,H
 JP,Japan,2021,FY23,H
 JP,Japan,2022,FY24,H
 JP,Japan,2023,FY25,H
+JP,Japan,2024,FY26,H
+JP,Japan,2025,FY27,H
 KR,South Korea,1987,FY89,UM
 KR,South Korea,1988,FY90,UM
 KR,South Korea,1989,FY91,UM
@@ -73,6 +75,8 @@ KR,South Korea,2020,FY22,H
 KR,South Korea,2021,FY23,H
 KR,South Korea,2022,FY24,H
 KR,South Korea,2023,FY25,H
+KR,South Korea,2024,FY26,H
+KR,South Korea,2025,FY27,H
 HK,Hong Kong,1987,FY89,H
 HK,Hong Kong,1988,FY90,H
 HK,Hong Kong,1989,FY91,H
@@ -110,6 +114,8 @@ HK,Hong Kong,2020,FY22,H
 HK,Hong Kong,2021,FY23,H
 HK,Hong Kong,2022,FY24,H
 HK,Hong Kong,2023,FY25,H
+HK,Hong Kong,2024,FY26,H
+HK,Hong Kong,2025,FY27,H
 CN,China,1987,FY89,L
 CN,China,1988,FY90,L
 CN,China,1989,FY91,L
@@ -147,6 +153,8 @@ CN,China,2020,FY22,UM
 CN,China,2021,FY23,UM
 CN,China,2022,FY24,UM
 CN,China,2023,FY25,UM
+CN,China,2024,FY26,UM
+CN,China,2025,FY27,UM
 IN,India,1987,FY89,L
 IN,India,1988,FY90,L
 IN,India,1989,FY91,L
@@ -184,6 +192,8 @@ IN,India,2020,FY22,LM
 IN,India,2021,FY23,LM
 IN,India,2022,FY24,LM
 IN,India,2023,FY25,LM
+IN,India,2024,FY26,LM
+IN,India,2025,FY27,LM
 ID,Indonesia,1987,FY89,L
 ID,Indonesia,1988,FY90,L
 ID,Indonesia,1989,FY91,L
@@ -221,6 +231,8 @@ ID,Indonesia,2020,FY22,LM
 ID,Indonesia,2021,FY23,LM
 ID,Indonesia,2022,FY24,UM
 ID,Indonesia,2023,FY25,UM
+ID,Indonesia,2024,FY26,UM
+ID,Indonesia,2025,FY27,UM
 TH,Thailand,1987,FY89,LM
 TH,Thailand,1988,FY90,LM
 TH,Thailand,1989,FY91,LM
@@ -258,6 +270,8 @@ TH,Thailand,2020,FY22,UM
 TH,Thailand,2021,FY23,UM
 TH,Thailand,2022,FY24,UM
 TH,Thailand,2023,FY25,UM
+TH,Thailand,2024,FY26,UM
+TH,Thailand,2025,FY27,UM
 MY,Malaysia,1987,FY89,LM
 MY,Malaysia,1988,FY90,LM
 MY,Malaysia,1989,FY91,LM
@@ -295,6 +309,8 @@ MY,Malaysia,2020,FY22,UM
 MY,Malaysia,2021,FY23,UM
 MY,Malaysia,2022,FY24,UM
 MY,Malaysia,2023,FY25,UM
+MY,Malaysia,2024,FY26,UM
+MY,Malaysia,2025,FY27,UM
 SG,Singapore,1987,FY89,H
 SG,Singapore,1988,FY90,H
 SG,Singapore,1989,FY91,H
@@ -332,6 +348,8 @@ SG,Singapore,2020,FY22,H
 SG,Singapore,2021,FY23,H
 SG,Singapore,2022,FY24,H
 SG,Singapore,2023,FY25,H
+SG,Singapore,2024,FY26,H
+SG,Singapore,2025,FY27,H
 PH,Philippines,1987,FY89,LM
 PH,Philippines,1988,FY90,LM
 PH,Philippines,1989,FY91,LM
@@ -369,6 +387,8 @@ PH,Philippines,2020,FY22,LM
 PH,Philippines,2021,FY23,LM
 PH,Philippines,2022,FY24,LM
 PH,Philippines,2023,FY25,LM
+PH,Philippines,2024,FY26,LM
+PH,Philippines,2025,FY27,UM
 VN,Vietnam,1987,FY89,L
 VN,Vietnam,1988,FY90,L
 VN,Vietnam,1989,FY91,L
@@ -406,3 +426,5 @@ VN,Vietnam,2020,FY22,LM
 VN,Vietnam,2021,FY23,LM
 VN,Vietnam,2022,FY24,LM
 VN,Vietnam,2023,FY25,LM
+VN,Vietnam,2024,FY26,LM
+VN,Vietnam,2025,FY27,UM
