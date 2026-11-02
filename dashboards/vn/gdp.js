@@ -446,6 +446,17 @@ dash.calc('gdp_table', {
     const { svg, x, y, W, ml } = frame(box, rows, H, rows.map((r) => r.v).concat([0]), (v) => d3.format(',.0f')(v), true, mr);
     svg.append('path').attr('d', d3.line().x((r) => x(J.date(r.date))).y((r) => y(r.v))(rows))
       .attr('fill', 'none').attr('stroke', col).attr('stroke-width', 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
+    // CAGR, calculated on this page (asked for 2 Nov 2026): (value in 2025 / value in the start year)^(1 / years) - 1,
+    // from the World Bank figures drawn, for the series shown. Start and end years are marked on the line.
+    const at = (yr) => rows.find((r) => r.date.slice(0, 4) === String(yr));
+    const END = 2025, cagr = [2010, 2015].map((s) => { const a0 = at(s), a1 = at(END); return a0 && a1 && a0.v > 0 ? { s, v: (Math.pow(a1.v / a0.v, 1 / (END - s)) - 1) * 100 } : null; }).filter(Boolean);
+    if (cagr.length) {
+      [2010, 2015, END].map(at).filter(Boolean).forEach((r) => svg.append('circle').attr('cx', x(J.date(r.date))).attr('cy', y(r.v)).attr('r', 3.5)
+        .attr('fill', 'var(--color-panel)').attr('stroke', col).attr('stroke-width', 2));
+      const t = svg.append('text').attr('x', ml + 8).attr('y', 22).attr('font-size', 12).attr('fill', 'var(--ad-ink)');
+      t.append('tspan').attr('x', ml + 8).attr('font-weight', 700).text('CAGR (calculated)');
+      cagr.forEach((c) => t.append('tspan').attr('x', ml + 8).attr('dy', '1.35em').text(`${c.s}–${String(END).slice(2)}: ${c.v.toFixed(1)}% a year`));
+    }
     const card = document.getElementById(id), tip = J.tip(card);
     const rule = svg.append('line').attr('y1', 8).attr('y2', H - 22).attr('stroke', 'var(--cds-chart-reference)').attr('display', 'none');
     const dot = svg.append('circle').attr('r', 3.5).attr('fill', col).attr('display', 'none');
