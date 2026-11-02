@@ -1,24 +1,24 @@
 // Thailand GDP tab, Charts 1-6: GDP and GDP per capita in US dollars (World Bank WDI), quarterly growth (NESDC),
 // annual growth by source and by sector. Figures are as published, except three calculated in the pipeline and
-// flagged calculated = y in th_gdp (nominal y/y; the year to date for the latest year) and the CAGR below.
+// flagged calculated = y in th_gdp (nominal y/y; the year to date for the latest year) and the CAGRs below.
 
-// CAGR on Charts 1 and 2 (asked for 2 Nov 2026, as on the Vietnam page): (value in the latest year / value in 1987)
-// ^ (1 / years) - 1, for each World Bank series drawn. 1987: the year Thailand became lower-middle income (data year,
-// World Bank classification history, as in the central GNI dataset).
+// CAGR on Charts 1 and 2, calculated on this page: (value in the end year / value in the start year) ^ (1 / years) - 1,
+// for each World Bank series drawn. Two periods (asked for 2 Nov 2026): 1986 to 1996, fixed, and 1997 to the
+// latest WDI year. The dashed line stays at 1987, the year Thailand became lower-middle income (data year).
 dash.calc('gdp_cagr', {
-  title: 'GDP growth rate since 1987 (CAGR)',
-  description: 'Compound annual growth from 1987 to the latest World Bank year, for each GDP, GDP per capita and GNI per capita series shown in Charts 1 and 2.',
+  title: 'GDP compound annual growth (CAGR)',
+  description: 'Compound annual growth, 1986 to 1996 and 1997 to the latest World Bank year, for each GDP, GDP per capita and GNI per capita series shown in Charts 1 and 2.',
   inputs: ['th_gdp_intl', 'asia_gni_pc'],
   fn: (th_gdp_intl, asia_gni_pc) => {
-    const START = 1987;
+    const PERIODS = [[1986, 1996], [1997, null]];   // null: the latest year of the series
     const by = {};
     th_gdp_intl.forEach((r) => { if (r.measure === 'level') (by[r.series] = by[r.series] || {})[Number(r.year)] = Number(r.value); });
     asia_gni_pc.forEach((r) => { if (r.economy === 'TH') (by['NY.GNP.PCAP.CD'] = by['NY.GNP.PCAP.CD'] || {})[Number(r.year)] = Number(r.gni_pc); });
-    return Object.entries(by).map(([series, v]) => {
-      const end = Math.max(...Object.keys(v).map(Number));
-      if (!(v[START] > 0) || !(v[end] > 0) || end <= START) return null;
-      return { series, start: START, end, cagr: (Math.pow(v[end] / v[START], 1 / (end - START)) - 1) * 100 };
-    }).filter(Boolean);
+    return Object.entries(by).flatMap(([series, v]) => PERIODS.map(([start, e]) => {
+      const end = e == null ? Math.max(...Object.keys(v).map(Number)) : e;
+      if (!(v[start] > 0) || !(v[end] > 0) || end <= start) return null;
+      return { key: `${series}|${start}`, series, start, end, cagr: (Math.pow(v[end] / v[start], 1 / (end - start)) - 1) * 100 };
+    })).filter(Boolean);
   },
 });
 
@@ -184,7 +184,7 @@ dash.calc('gdp_cagr', {
     const isY = (r) => S.every((s) => r[s.key] == null) && S.some((s) => r[s.key + '_ytd'] != null);
     const H = 280;
     const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.flatMap((s) => [r[s.key], r[s.key + '_ytd']])).filter((v) => v != null),
-      fmt0, true, { annual: true, ytd: isY, anchor: Number((rows.filter((r) => !isY(r)).pop() || rows[rows.length - 1]).date.slice(0, 4)) });
+      fmt0, true, { annual: true, ytd: isY });   // labels counted back from the last point (YTD when shown)
     S.slice().reverse().forEach((s) => line(svg, x, y, rows, s.key, s.color, s.thin));
     S.forEach((s) => rows.filter((r) => r[s.key + '_ytd'] != null).forEach((r) => svg.append('circle').attr('cx', x(J.date(r.date))).attr('cy', y(r[s.key + '_ytd']))
       .attr('r', s.thin ? 3.5 : 4.5).attr('fill', 'var(--color-panel)').attr('stroke', s.color).attr('stroke-width', 2)));
@@ -236,7 +236,9 @@ dash.calc('gdp_cagr', {
       svg.append('text').attr('x', lx).attr('y', 12).attr('font-size', 12).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'middle').text('Lower-middle income');
     }
     const G = dash.data('gdp_cagr');
-    const cagr = G.status === 'ok' ? S.map((s) => ({ s, c: G.data.find((r) => r.series === s.key) })).filter((o) => o.c) : [];
+    // one line per series and period, earlier period first
+    const cagr = G.status === 'ok' ? G.data.filter((r) => S.some((s) => s.key === r.series)).sort((p, q) => p.start - q.start || S.findIndex((s) => s.key === p.series) - S.findIndex((s) => s.key === q.series))
+      .map((c) => ({ s: S.find((s) => s.key === c.series), c })) : [];
     if (cagr.length) {
       const lh = 16, tx = W - mr - 8, ty = H - 40 - (cagr.length - 1) * lh;
       const t = svg.append('text').attr('font-size', 12).attr('font-weight', 700).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'end').attr('x', tx).attr('y', ty);
