@@ -1,0 +1,12 @@
+== in_gdp_mospi
+   CHECKS FAILED (8):
+   - 2017-18 transport_comm.storage constant growth 112.7 out of range
+   - 2020-21 trade_hotels.hotels_restaurants constant growth -53.7 out of range
+   - 2020-21 transport_comm.air_transport constant growth -62.5 out of range
+   - 2022-23 trade_hotels.hotels_restaurants constant growth 75.7 out of range
+   - 2022-23 trade_hotels.hotels_restaurants current growth 90.7 out of range
+   - 2022-23 transport_comm.air_transport constant growth 60.7 out of range
+   - 2022-23 transport_comm.air_transport current growth 63.2 out of range
+   - 2023-24 transport_comm.air_transport current growth 77.8 out of range
+== in_gdp_intl
+   UPDATED: WDI updated 2026-10-08, to 2025 (2025-26) (1s)
