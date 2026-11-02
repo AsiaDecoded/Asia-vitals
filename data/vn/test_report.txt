@@ -1,11 +1,11 @@
 == vn_cpi_nso
-   UPDATED: September 2026: 26974 rows, 58 workbooks (100s)
+   UPDATED: September 2026: 26974 rows, 58 workbooks (104s)
    WARNING: YTD average differs from the base-period indices by more than 0.06pp in 53 group cases (NSO aggregates these from lower levels), e.g. 2021-12-01 transport: YTD average 110.524 vs base indices 0.178pp
    WARNING: PX-Web and the workbooks differ in 30 cases (workbook kept): 2025-01 national transport prev_month: PX-Web 99.878 vs workbook 100.946; 2025-02 national transport prev_month: PX-Web 99.969 vs workbook 100.626; 2025-03 national transport prev_month: PX-Web 100.017 vs workbook 98.595; 2025-04 national transport prev_month: PX-Web 99.852 vs workbook 98.954; 2025-05 national transport prev_month: PX-Web 100.215 vs workbook 99.575; 2025-06 national transport prev_month: PX-Web 99.982 vs workbook 101.655; 2024-01 national gold base_period: PX-Web 146.480 vs workbook 169.080; 2024-02 national gold base_period: PX-Web 147.824 vs workbook 172.473
 == vn_ppi_nso
-   UPDATED: 2026-Q3: 4871 rows, 27 quarterly workbooks (276s)
+   UPDATED: 2026-Q3: 4871 rows, 27 quarterly workbooks (283s)
 == vn_gdp_nso
-   UPDATED: 2026-Q3: 10347 quarterly GDP rows, 1445 annual, 999 IIP rows, 27 books (65s)
+   UPDATED: 2026-Q3: 10347 quarterly GDP rows, 1445 annual, 999 IIP rows, 27 books (54s)
    WARNING: 2011 nominal GDP: report 2536631 vs yearbook 3539881 (revised)
    WARNING: 2012 nominal GDP: report 3245419 vs yearbook 4073762 (revised)
    WARNING: 2013 nominal GDP: report 3584262 vs yearbook 4473656 (revised)
