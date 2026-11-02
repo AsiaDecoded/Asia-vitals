@@ -80,7 +80,16 @@ jobs:
           git add data raw
           git commit -m "Data: ${{ steps.run.outputs.updated_sources }}"
           branch="${{ inputs.push_branch || 'main' }}"
-          if [ "$branch" = "main" ]; then git push; else git push -f origin "HEAD:refs/heads/$branch"; fi
+          if [ "$branch" = "main" ]; then
+            # other sessions push code to main while a run is going: catch up and retry. Only generated combined files
+            # (all_long.csv.gz, Asia tables) can conflict; this run's version wins and the next run rebuilds them.
+            for i in 1 2 3 4; do
+              git pull -q --rebase -X theirs origin main && git push && exit 0
+              git rebase --abort 2>/dev/null || true
+              sleep $((i * 5))
+            done
+            echo "push failed after 4 attempts"; exit 1
+          else git push -f origin "HEAD:refs/heads/$branch"; fi
 
       - name: Publish run report to the run-reports branch
         if: always()
