@@ -74,7 +74,7 @@ dash.calc('gdp_table', {
   const SEC = [['agri', 'Agriculture, forestry and fishing', 'var(--ad-c6)'], ['ind_constr', 'Industry and construction', 'var(--ad-c1)'],
     ['services', 'Services', 'var(--ad-c5)'], ['taxes', 'Taxes on products less subsidies', 'var(--ad-c4)']];
   let growthBasis = 'real', levelBasis = 'current', srcPick = 'nso', usdPick = 'NY.GDP.MKTP.CD';
-  ['gdp-sectors', 'gdp-structure', 'gdp-mfg', 'gdp-mfg-share', 'gdp-annual', 'gdp-exp', 'gdp-exp-share'].forEach((id) => { J.period[id] = 0; });
+  ['gdp-sectors', 'gdp-structure', 'gdp-mfg', 'gdp-mfg-share', 'gdp-exp', 'gdp-exp-share'].forEach((id) => { J.period[id] = 0; });
 
   const G = () => dash.data('vn_gdp');
   // Published quarterly rows for one industry: [{date, v, price, status, period}], sorted.
@@ -317,10 +317,32 @@ dash.calc('gdp_table', {
     if (!status(box, ['vn_gdp_annual'])) return;
     const by = new Map();
     S.forEach((s) => s.rows.forEach((r) => { if (!by.has(r.date)) by.set(r.date, { date: r.date }); by.get(r.date)[s.key] = r.v; }));
-    const rows = win(Array.from(by.values()).sort((a, b) => (a.date < b.date ? -1 : 1)), cardId);
+    // opt.ytd: each series' latest year-to-date real growth (NSO's quarterly tables, s.code) for the year after its last
+    // annual figure, an open circle at that year; the x-axis runs on to it and labels it YTD (as in Charts 1 and 3).
+    const ytd = {};
+    if (opt.ytd) S.forEach((s) => {
+      const last = Math.max(...s.rows.map((r) => Number(r.date.slice(0, 4))));
+      const y = ytdSeries(s.code).filter((r) => Number(r.date.slice(0, 4)) > last && r.period.slice(5) !== '').pop();
+      if (!y) return; const d = `${y.date.slice(0, 4)}-12-01`; ytd[s.key] = y;
+      if (!by.has(d)) by.set(d, { date: d }); by.get(d)[s.key + '_ytd'] = y.v;
+    });
+    const sorted = Array.from(by.values()).sort((a, b) => (a.date < b.date ? -1 : 1));
+    const rows = opt.ytd ? sorted : win(sorted, cardId);
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 280, mr = 8;
-    const { svg, x, y, W, ml } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), fmt0, opt.zero !== false, mr);
+    const { svg, x, y, W, ml } = frame(box, rows, H, rows.flatMap((r) => S.flatMap((s) => [r[s.key], r[s.key + '_ytd']])).filter((v) => v != null), fmt0, opt.zero !== false, mr);
+    const isYtd = (r) => S.every((s) => r[s.key] == null) && S.some((s) => r[s.key + '_ytd'] != null);
+    if (opt.ytd) {
+      svg.selectAll(`g[transform="translate(0,${H - 20})"]`).remove();
+      const n = rows.length, room = Math.max(1, Math.floor((W - ml - mr) / 44));
+      const stepY = [1, 2, 5, 10].find((k) => n / k <= room) || 10;
+      rows.forEach((r, k) => {
+        if ((n - 1 - k) % stepY !== 0) return;
+        const px = x(J.date(r.date));
+        svg.append('text').attr('x', px).attr('y', H - 20).attr('dy', '0.71em').attr('font-size', 12).attr('fill', 'var(--ad-ink)')
+          .attr('text-anchor', px > W - mr - 16 ? 'end' : px < ml + 16 ? 'start' : 'middle').text(isYtd(r) ? 'YTD' : r.date.slice(0, 4));
+      });
+    }
     const bar = S.find((s) => s.bar);
     if (bar) {
       const step = (W - ml - mr) / Math.max(1, rows.length), bw = Math.max(2, Math.min(22, step * 0.62));
@@ -331,6 +353,11 @@ dash.calc('gdp_table', {
         .attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', s.thin ? 1.75 : 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round')
         .attr('stroke-dasharray', s.dash ? '6 4' : null);
     });
+    S.forEach((s) => rows.filter((r) => r[s.key + '_ytd'] != null).forEach((r) => {
+      svg.append('circle').attr('cx', x(J.date(r.date))).attr('cy', y(r[s.key + '_ytd'])).attr('r', s.thin ? 3.5 : 4.5)
+        .attr('fill', 'var(--color-panel)').attr('stroke', s.color).attr('stroke-width', 2);
+    }));
+    const YTD_LABEL = { Q1: 'Jan–Mar', H1: 'Jan–Jun', '9M': 'Jan–Sep' };
     const card = document.getElementById(cardId);
     const tip = J.tip(card);
     const rule = svg.append('line').attr('y1', 8).attr('y2', H - 22).attr('stroke', 'var(--cds-chart-reference)').attr('display', 'none');
@@ -340,7 +367,8 @@ dash.calc('gdp_table', {
         const [mx] = d3.pointer(ev); const r = rows[bis(rows, x.invert(mx))]; const px = x(J.date(r.date));
         rule.attr('display', null).attr('x1', px).attr('x2', px);
         const cr = card.getBoundingClientRect();
-        J.showTip(card, tip, r.date.slice(0, 4), S.map((s) => [s.color, s.name, r[s.key] == null ? 'n/a' : r[s.key].toFixed(2) + '%']), ev.clientX - cr.left, ev.clientY - cr.top);
+        const head = isYtd(r) ? (() => { const y0 = Object.values(ytd)[0]; return `YTD (${YTD_LABEL[y0.period.slice(5)] || 'year to date'} ${r.date.slice(0, 4)}, ${String(y0.price).replace('constant_', '')} prices)`; })() : r.date.slice(0, 4);
+        J.showTip(card, tip, head, S.map((s) => { const v = isYtd(r) ? r[s.key + '_ytd'] : r[s.key]; return [s.color, s.name, v == null ? 'n/a' : v.toFixed(2) + '%']; }), ev.clientX - cr.left, ev.clientY - cr.top);
       })
       .on('mouseleave', () => { rule.attr('display', 'none'); tip.style.display = 'none'; });
   }
@@ -477,8 +505,8 @@ dash.calc('gdp_table', {
       .concat(SEC.slice(0, 3).map(([code, name, color]) => ({ key: code, name, color, thin: true, rows: series(code, 'constant', 'yoy') }))), { start: START });
     usd();
     structure();
-    aLines('gdp-annual', [{ key: 'gdp', name: 'Real GDP', color: 'var(--ad-c2)', bar: true, rows: annual('sector', 'total', 'constant_2010', 'yoy') }]
-      .concat(SEC.slice(0, 3).map(([code, name, color]) => ({ key: code, name, color, thin: true, rows: annual('sector', code, 'constant_2010', 'yoy') }))));
+    aLines('gdp-annual', [{ key: 'gdp', code: 'total', name: 'Real GDP', color: 'var(--ad-c2)', rows: annual('sector', 'total', 'constant_2010', 'yoy') }]
+      .concat(SEC.slice(0, 3).map(([code, name, color]) => ({ key: code, code, name, color, thin: true, rows: annual('sector', code, 'constant_2010', 'yoy') }))), { ytd: true });
     aLines('gdp-exp', [
       { key: 'gdp', name: 'GDP', color: 'var(--ad-c2)', rows: annual('expenditure', 'total', 'constant_2010', 'yoy') },
       { key: 'hh', name: 'Household final consumption', color: 'var(--ad-c5)', rows: annual('expenditure', 'fc_household', 'constant_2010', 'yoy') },
