@@ -160,7 +160,7 @@ dash.calc('gdp_table', {
     const col = growthBasis === 'real' ? 'var(--ad-c2)' : 'var(--ad-c1)';
     rows.forEach((r) => {
       svg.append('rect').attr('x', x(J.date(r.date)) - bw / 2).attr('width', bw).attr('y', y(Math.max(0, r.v))).attr('height', Math.abs(y(r.v) - y(0)))
-        .attr('fill', r.v < 0 ? 'var(--ad-c4)' : col);
+        .attr('fill', col);
     });
     const card = document.getElementById(id);
     hover(svg, card, x, rows, H, ml, W - mr, (r) => (growthBasis === 'real'
