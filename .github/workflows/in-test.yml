@@ -1,0 +1,94 @@
+name: India test
+
+# Runs the India GDP sources (in_gdp_mospi, in_gdp_intl) on main with their checks, whether or not they are in the shared
+# registry yet; checks Q1 2026-27 against MoSPI's release of 31 Aug 2026 (PIB, 1 Sep 2026); pushes
+# data/in/gdp back to main.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - pipeline/sources/in_gdp_mospi/**
+      - pipeline/sources/in_gdp_intl/**
+      - .github/workflows/in-test.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: in-test
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run the India GDP sources with their checks
+        run: |
+          python -I - <<'PY'
+          import sys, traceback, importlib, time
+          sys.path.insert(0, "pipeline")
+          from core.common import CheckFailed
+          rc, lines = 0, []
+          for name in ("in_gdp_mospi", "in_gdp_intl"):
+              t0 = time.time()
+              lines.append(f"== {name}")
+              try:
+                  res = importlib.import_module(f"sources.{name}").update(force=True)
+                  lines.append(f"   {'UPDATED' if res['updated'] else 'unchanged'}: {res['summary']} ({time.time() - t0:.0f}s)")
+                  for w in res.get("warnings", []):
+                      lines.append(f"   WARNING: {w}"[:1500])
+              except CheckFailed as e:
+                  rc = 1
+                  lines.append(f"   CHECKS FAILED ({len(e.errors)}):")
+                  lines += [f"   - {x}"[:600] for x in e.errors[:40]]
+              except Exception:
+                  rc = 1
+                  lines.append(traceback.format_exc())
+          open("in_report.txt", "w").write("\n".join(lines) + "\n")
+          print("\n".join(lines))
+          sys.exit(rc)
+          PY
+
+      - name: Q1 2026-27 against MoSPI's release
+        run: |
+          python -I - <<'PY'
+          import csv, sys
+          # MoSPI, Q1 2026-27 estimates (2022-23 base), % y/y: GDP real 7.8, nominal 10.3; GVA real 8.2, nominal 11.5;
+          # manufacturing real 9.2. Annual real GDP: 2023-24 7.3, 2024-25 7.2, 2025-26 7.8.
+          Q = {("gdp", "constant"): 7.8, ("gdp", "current"): 10.3, ("gva", "constant"): 8.2, ("gva", "current"): 11.5,
+               ("manufacturing", "constant"): 9.2}
+          A = {"2023-24": 7.3, "2024-25": 7.2, "2025-26": 7.8}
+          rows = list(csv.DictReader(open("data/in/gdp/in_gdp.csv")))
+          bad, n = [], 0
+          for (c, p), v in Q.items():
+              n += 1
+              x = [r for r in rows if r["freq"] == "Q" and r["fq"] == "2026-27 Q1" and r["code"] == c and r["price"] == p and r["measure"] == "yoy"]
+              if len(x) != 1: bad.append(f"Q1 2026-27 {c} {p}: {len(x)} rows")
+              elif abs(float(x[0]["value"]) - v) > 0.001: bad.append(f"Q1 2026-27 {c} {p}: {x[0]['value']} vs release {v}")
+          for fy, v in A.items():
+              n += 1
+              x = [r for r in rows if r["freq"] == "A" and r["fy"] == fy and r["code"] == "gdp" and r["price"] == "constant" and r["measure"] == "yoy"]
+              if len(x) != 1: bad.append(f"{fy}: {len(x)} rows")
+              elif abs(float(x[0]["value"]) - v) > 0.001: bad.append(f"{fy}: {x[0]['value']} vs release {v}")
+          msg = f"Q1 2026-27 vs MoSPI release: {n - len(bad)}/{n} match"
+          print(msg); [print("  -", b) for b in bad]
+          open("in_report.txt", "a").write(msg + "\n" + "".join(f"  - {b}\n" for b in bad))
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: Push data and report to main
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mkdir -p data/in/gdp && cp in_report.txt data/in/gdp/test_report.txt 2>/dev/null || true
+          git add data/in/gdp
+          git commit -qm "India test run ${{ github.run_id }}" || exit 0
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
