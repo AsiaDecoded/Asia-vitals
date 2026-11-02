@@ -1,0 +1,22 @@
+{
+ "code": "G2026-Q2",
+ "label": "Q2 2026",
+ "latest_quarter": "2026-Q2",
+ "latest_year": 2025,
+ "file": "Statistical Tables (Excel Files)",
+ "ddl": "116119",
+ "url": "https://www.nesdc.go.th/en/?p=47533&ddl=116119",
+ "nesdc_last_updated": "17 Aug. 2026",
+ "table": "NESDC QGDP statistical tables 3, 4, 4.1",
+ "processed_at": "2026-11-02T14:24:13Z",
+ "rows": 16139,
+ "warnings": [],
+ "fingerprint": "b8b7e42c2cafdc8f",
+ "long_rows": 16139,
+ "history": [
+  {
+   "code": "G2026-Q2",
+   "processed_at": "2026-11-02T14:24:13Z"
+  }
+ ]
+}
