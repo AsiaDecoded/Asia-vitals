@@ -154,6 +154,16 @@
         <p class="ax-note">Source: BIS bilateral exchange rates (WS_XRU), from national sources.</p>
       </div>
     </section>
+    <section class="ax-sec">
+      <h2>Stock markets</h2>
+      <div class="ax-card" id="eq-ytd-card">
+        <div class="ax-cardhead"><h3>Asian benchmark stock indices, year to date</h3></div>
+        <p class="ax-note">% change in each benchmark index from its last close of <span data-draw="eqBase" data-source="asia_eq_ytd">—</span> to <span data-draw="eqLatest" data-source="asia_eq_ytd">—</span>. Price index in local currency; dividends not included.</p>
+        <div class="ax-fxbars" data-draw="eqBars" data-source="asia_eq_ytd"></div>
+        <p class="ax-note">Calculated by Asia Decoded: (latest close &divide; last close of the previous year &minus; 1) &times; 100. Indices: Nikkei 225, KOSPI, TAIEX, Hang Seng, Shanghai (SSE) Composite, Nifty 50, Jakarta Composite (JCI), FTSE Bursa Malaysia KLCI, Straits Times Index (STI). Thailand (SET), the Philippines (PSEi) and Vietnam (VN-Index) not shown: Yahoo Finance has no price history for them.</p>
+        <p class="ax-note">Source: Yahoo Finance (not an official source).</p>
+      </div>
+    </section>
   </section>
 
   <section class="ax-page" id="methodology" role="tabpanel" hidden>
@@ -168,6 +178,7 @@
           </table>
         </div>
         <p class="ax-note">Financial tab: each currency&rsquo;s year-to-date change is calculated on this page&rsquo;s data, at your request: the BIS daily rate (national currency per US dollar, from national sources) on the last trading day of the previous year divided by the latest rate, minus 1, in %. That is the change in the currency&rsquo;s US-dollar value, so a positive figure means the currency has strengthened. Each economy uses its own latest date. Vietnam is left out: the BIS has no daily series for the dong.</p>
+        <p class="ax-note">Financial tab, stock markets: the benchmark index of each economy, daily closes from Yahoo Finance (not an official source), completed sessions only. Year-to-date change, calculated: latest close divided by the last close on or before 31 December of the previous year, minus 1, in %. Price index in local currency, so neither dividends nor currency moves are included. Thailand, the Philippines and Vietnam are left out because Yahoo Finance returns only the latest quote for their indices, with no history.</p>
         <p class="ax-note">Food &amp; bev is left blank for China (NBS food excludes beverages), Indonesia (the BPS group includes tobacco) and Thailand (TPSO food includes prepared food). Korea's official core is the Bank of Korea's measure, CPI excluding food and energy, the same series as its core.</p>
       </div>
     </section>
@@ -356,21 +367,21 @@
     const D = dash.data('asia_fx_ytd');
     n.textContent = D.status === 'ok' && D.data.length ? dmy(D.data.map((r) => r.latest_date).sort().pop()) : '—';
   });
-  dash.draw('fxBars', (box) => {
-    const D = dash.data('asia_fx_ytd');
+  const bars = (box, rows, label, tip, aria) => {
     box.replaceChildren();
-    if (D.status !== 'ok' || !D.data.length) return;
-    const rows = D.data.map((r) => ({...r, v: Number(r.ytd_pct)})).filter((r) => !Number.isNaN(r.v)).sort((a, b) => b.v - a.v);
+    rows = rows.filter((r) => !Number.isNaN(r.v)).sort((a, b) => b.v - a.v);
+    if (!rows.length) return;
     const W = Math.max(320, box.clientWidth || 640), rowH = 28, top = 8, H = top + rows.length * rowH + 22;
-    const lab = Math.min(170, Math.round(W * 0.3)), right = 52;
+    const lab = Math.min(190, Math.round(W * 0.38)), right = 52;
     const lo = Math.min(0, ...rows.map((r) => r.v)), hi = Math.max(0, ...rows.map((r) => r.v));
-    const step = ((hi - lo) > 24 ? 5 : (hi - lo) > 8 ? 2 : 1) * (W < 600 ? 2 : 1);
+    const range = hi - lo;
+    const step = (range > 60 ? 20 : range > 24 ? 10 : range > 8 ? 2 : 1) * (W < 600 ? 2 : 1);
     const a = Math.floor(lo / step) * step, b = Math.ceil(hi / step) * step;
     const pad = 44;
     const x = (v) => lab + pad + (v - a) / (b - a || 1) * (W - lab - pad - right);
     const svg = document.createElementNS(SVG, 'svg');
     svg.setAttribute('viewBox', `0 0 ${W} ${H}`); svg.setAttribute('role', 'img');
-    svg.setAttribute('aria-label', 'Asian currencies against the US dollar, year to date, % change: ' + rows.map((r) => `${r.name} ${f1(r.v)}`).join(', '));
+    svg.setAttribute('aria-label', aria + ': ' + rows.map((r) => `${r.name} ${f1(r.v)}`).join(', '));
     const add = (tag, attrs, text) => { const n = document.createElementNS(SVG, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); if (text != null) n.textContent = text; svg.append(n); return n; };
     for (let t = a; t <= b + 1e-9; t += step) {
       add('line', {x1: x(t), x2: x(t), y1: top, y2: H - 20, stroke: 'var(--color-border-line)', 'stroke-width': t === 0 ? 1.2 : 0.6, opacity: t === 0 ? 1 : 0.7});
@@ -378,18 +389,40 @@
     }
     rows.forEach((r, i) => {
       const y = top + i * rowH, h = rowH - 10;
-      add('text', {x: lab - 8, y: y + h / 2 + 4, 'text-anchor': 'end', 'font-size': 12, fill: 'var(--color-fg)'}, `${r.name} (${r.currency})`);
+      add('text', {x: lab - 8, y: y + h / 2 + 4, 'text-anchor': 'end', 'font-size': 12, fill: 'var(--color-fg)'}, label(r));
       const x0 = x(Math.min(0, r.v)), x1 = x(Math.max(0, r.v));
       const bar = add('rect', {x: x0, y, width: Math.max(1, x1 - x0), height: h, fill: r.v >= 0 ? '#1F4E79' : '#BD1B21'});
-      const tt = document.createElementNS(SVG, 'title');
-      tt.textContent = `${r.name}: ${f1(r.v)}% since ${dmy(r.base_date)} (${r.currency} ${Number(r.base_rate).toLocaleString('en', {maximumSignificantDigits: 6})} to ${Number(r.latest_rate).toLocaleString('en', {maximumSignificantDigits: 6})} per US$ on ${dmy(r.latest_date)})`;
-      bar.append(tt);
+      const tt = document.createElementNS(SVG, 'title'); tt.textContent = tip(r); bar.append(tt);
       add('text', {x: r.v >= 0 ? x1 + 5 : x0 - 5, y: y + h / 2 + 4, 'text-anchor': r.v >= 0 ? 'start' : 'end', 'font-size': 12, 'font-weight': 500, fill: 'var(--color-fg)'}, f1(r.v));
     });
     box.append(svg);
+  };
+  const num = (v) => Number(v).toLocaleString('en', {maximumSignificantDigits: 6});
+  dash.draw('fxBars', (box) => {
+    const D = dash.data('asia_fx_ytd');
+    if (D.status !== 'ok' || !D.data.length) { box.replaceChildren(); return; }
+    bars(box, D.data.map((r) => ({...r, v: Number(r.ytd_pct)})), (r) => `${r.name} (${r.currency})`,
+      (r) => `${r.name}: ${f1(r.v)}% since ${dmy(r.base_date)} (${r.currency} ${num(r.base_rate)} to ${num(r.latest_rate)} per US$ on ${dmy(r.latest_date)})`,
+      'Asian currencies against the US dollar, year to date, % change');
+  });
+  dash.draw('eqBase', (n) => {
+    const D = dash.data('asia_eq_ytd');
+    n.textContent = D.status === 'ok' && D.data.length ? D.data.map((r) => r.base_date).sort().pop().slice(0, 4) : '—';
+  });
+  dash.draw('eqLatest', (n) => {
+    const D = dash.data('asia_eq_ytd');
+    n.textContent = D.status === 'ok' && D.data.length ? dmy(D.data.map((r) => r.latest_date).sort().pop()) : '—';
+  });
+  dash.draw('eqBars', (box) => {
+    const D = dash.data('asia_eq_ytd');
+    if (D.status !== 'ok' || !D.data.length) { box.replaceChildren(); return; }
+    const SHORT = {'Straits Times Index': 'STI', 'FTSE Bursa Malaysia KLCI': 'KLCI', 'Shanghai Composite': 'SSE Composite', 'Jakarta Composite': 'JCI'};
+    bars(box, D.data.map((r) => ({...r, v: Number(r.ytd_pct)})), (r) => `${r.name} (${SHORT[r.index] || r.index})`,
+      (r) => `${r.index}: ${f1(r.v)}%, from ${num(r.base_close)} on ${dmy(r.base_date)} to ${num(r.latest_close)} on ${dmy(r.latest_date)}`,
+      'Asian benchmark stock indices, year to date, % change');
   });
   let fxW = 0;
-  new ResizeObserver(() => { const b = document.querySelector('.ax-fxbars'); if (b && b.clientWidth && b.clientWidth !== fxW) { fxW = b.clientWidth; dash.draw('fxBars'); } }).observe(document.querySelector('.ax-fxbars'));
+  new ResizeObserver(() => { const b = document.querySelector('.ax-fxbars'); if (b && b.clientWidth && b.clientWidth !== fxW) { fxW = b.clientWidth; dash.draw('fxBars'); dash.draw('eqBars'); } }).observe(document.querySelector('.ax-fxbars'));
 
   document.querySelectorAll('.ax [data-sort]').forEach((btn) => btn.addEventListener('click', () => {
     sortKey = btn.dataset.sort;
@@ -400,7 +433,7 @@
   const show = (id) => {
     document.querySelectorAll('.ax [role=tab]').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === id)));
     document.querySelectorAll('.ax [role=tabpanel]').forEach((p) => { p.hidden = p.id !== id; });
-    if (id === 'financial') dash.draw('fxBars');
+    if (id === 'financial') { dash.draw('fxBars'); dash.draw('eqBars'); }
   };
   document.querySelectorAll('.ax [role=tab]').forEach((t) => t.addEventListener('click', () => { show(t.dataset.tab); dash.setLink(t.dataset.tab); }));
   if (['methodology', 'financial'].includes(location.hash.slice(1))) show(location.hash.slice(1));
