@@ -458,6 +458,15 @@ def step_gdp_bieu():
             fetch(f"bieu_{m.group(2)}_{int(m.group(1)):02d}", x["url"])
 
 
+def step_gdp_posts():
+    """Full text of the Q3 2026 socio-economic releases (Vietnamese and English) and the IIP annual table in full."""
+    for pid in (62550, 62589, 62545, 62592, 62505, 62518):
+        fetch("post_q3", f"{WP}/posts/{pid}?_fields=id,date,modified,link,title,content")
+    items, _ = jget("wpposts_en_q3", f"{WP}/posts?search={urllib.parse.quote('third quarter 2026')}&per_page=20&_fields=id,date,link,title", save=True)
+    for x in items or []:
+        fetch("post_q3_en", f"{WP}/posts/{x['id']}?_fields=id,date,modified,link,title,content")
+
+
 def main(out, steps="px,wp,files"):
     global OUT
     OUT = Path(out)
@@ -468,7 +477,8 @@ def main(out, steps="px,wp,files"):
              "posts": step_posts, "files2": step_files2,
              "quarters": step_quarters, "misc": step_misc,
              "gdp_px": step_gdp_px, "gdp_wp": step_gdp_wp, "gdp_old": step_gdp_old,
-             "gdp_px2": step_gdp_px2, "gdp_bieu": step_gdp_bieu}[s]()
+             "gdp_px2": step_gdp_px2, "gdp_bieu": step_gdp_bieu,
+             "gdp_posts": step_gdp_posts}[s]()
         except Exception as e:  # noqa: BLE001
             SUMMARY.append({"name": f"step_{s}", "error": f"{type(e).__name__}: {e}"})
             print("step failed", s, e, flush=True)

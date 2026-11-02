@@ -17,9 +17,9 @@ permissions:
   contents: write
 
 env:
-  NSO_ROUND: g2
+  NSO_ROUND: g3
   NSO_MODE: probe            # crawl (nso_discover.py + seeds) or probe (nso_probe.py)
-  NSO_STEPS: gdp_px2,gdp_bieu
+  NSO_STEPS: gdp_posts
   NSO_MAX: "700"
   NSO_DEPTH: "2"
   NSO_FOLLOW: "wp-content/uploads|\\.px|tablelist|E%2011|Px_E_11|Ch%e1%bb%89%20s%e1%bb%91%20gi|PLV11|PLE11|sq/|savequery|nien-giam|yearbook"
