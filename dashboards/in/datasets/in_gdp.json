@@ -3,12 +3,12 @@
  "schedule": "Replaced after each quarterly GDP release by a scheduled task that reads AsiaDecoded/asia-vitals.",
  "source": {
   "kind": "file",
-  "name": "in_gdp_Q2026-27Q1.csv",
-  "url": "/_blob/40caf4f83d530cc89924a581af687bae"
+  "name": "in_gdp_Q2026-27Q1_r2.csv",
+  "url": "/_blob/8cd28bcba4d32c72c94cb3a87524ea54"
  },
  "title": "India GDP and GVA (MoSPI)",
  "updated": {
-  "at": "2026-11-02T14:32:00Z",
+  "at": "2026-11-02T23:54:00Z",
   "by": "Claude"
  }
 }

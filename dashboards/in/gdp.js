@@ -12,13 +12,52 @@
   const fyShort = (d) => `FY${String((Number(d.slice(0, 4)) + 1) % 100).padStart(2, '0')}`;
   const BASE_SWITCH = '2023-04-01';   // annual: MoSPI's 2022-23 base from 2023-24 (2011-12 base before)
   const LMI = 2007;                   // lower-middle income on 2007 GNI per capita (World Bank FY09; data/asia/gni)
-  const SEC = [
-    { code: 'gdp', name: 'GDP', color: 'var(--ad-c2)' },
-    { code: 'gva', name: 'GVA', color: 'var(--ad-c8)', dash: true, thin: true },
-    { code: 'agri', name: 'Agriculture', color: 'var(--ad-c6)', thin: true },
-    { code: 'manufacturing', name: 'Manufacturing', color: 'var(--ad-c1)', thin: true },
-    { code: 'construction', name: 'Construction', color: 'var(--ad-c5)', thin: true },
-  ];
+  // Charts 4 and 6: GDP always drawn; total GVA and MoSPI's eight published industries picked from a dropdown
+  // (user, 3 Nov 2026). Default picks: GVA, agriculture, manufacturing, construction.
+  const GDP_LINE = { code: 'gdp', name: 'GDP', color: 'var(--ad-c2)' };
+  const PICKS = [
+    { code: 'gva', name: 'Total GVA', color: '#A6A6A6', dash: true },
+    { code: 'agri', name: 'Agriculture', color: 'var(--ad-c6)' },
+    { code: 'mining', name: 'Mining', color: 'var(--ad-c4)' },
+    { code: 'manufacturing', name: 'Manufacturing', color: 'var(--ad-c1)' },
+    { code: 'utilities', name: 'Electricity, gas, water', color: 'var(--ad-c7)' },
+    { code: 'construction', name: 'Construction', color: 'var(--ad-c5)' },
+    { code: 'trade_transport', name: 'Trade, hotels, transport, communication', color: 'var(--ad-c3)' },
+    { code: 'finance_re', name: 'Financial, real estate, professional', color: 'var(--ad-c8)' },
+    { code: 'public_other', name: 'Public administration, defence, other', color: '#1F4E79' },
+  ].map((s) => ({ ...s, thin: true }));
+  const picked = { 'gdp-sectors': new Set(['gva', 'agri', 'manufacturing', 'construction']),
+    'gdp-annual': new Set(['gva', 'agri', 'manufacturing', 'construction']) };
+  const SEC = (id) => [GDP_LINE].concat(PICKS.filter((s) => picked[id].has(s.code)));
+  function picker(id) {
+    const host = document.getElementById(id + '-pick'); if (!host || host.dataset.built) return;
+    host.dataset.built = '1';
+    const det = document.createElement('details'); det.className = 'ad-pick';
+    const sum = document.createElement('summary');
+    const list = document.createElement('div'); list.className = 'ad-pick-list';
+    const label = () => { sum.textContent = `Sectors (${picked[id].size} of ${PICKS.length})`; };
+    PICKS.forEach((s) => {
+      const row = document.createElement('label'); const cb = document.createElement('input'); cb.type = 'checkbox';
+      cb.checked = picked[id].has(s.code);
+      cb.addEventListener('change', () => { if (cb.checked) picked[id].add(s.code); else picked[id].delete(s.code); label(); J.redrawGdp(); });
+      const sw = document.createElement('span'); sw.className = 'ln';
+      sw.style.background = s.dash ? `repeating-linear-gradient(90deg, ${s.color} 0 5px, transparent 5px 8px)` : s.color;
+      row.append(cb, sw, document.createTextNode(s.name)); list.appendChild(row);
+    });
+    const btns = document.createElement('div'); btns.className = 'ad-pick-btns';
+    [['All', true], ['None', false]].forEach(([t, on]) => {
+      const b = document.createElement('button'); b.type = 'button'; b.textContent = t;
+      b.addEventListener('click', () => {
+        PICKS.forEach((s) => (on ? picked[id].add(s.code) : picked[id].delete(s.code)));
+        list.querySelectorAll('input').forEach((cb) => { cb.checked = on; }); label(); J.redrawGdp();
+      });
+      btns.appendChild(b);
+    });
+    const panel = document.createElement('div'); panel.className = 'ad-pick-panel'; panel.append(btns, list);
+    label(); det.append(sum, panel); host.appendChild(det);
+    document.addEventListener('click', (e) => { if (det.open && !det.contains(e.target)) det.open = false; });
+  }
+  ['gdp-sectors', 'gdp-annual'].forEach(picker);
   let growthPrice = 'constant', srcPick = 'mospi', usdPick = 'NY.GDP.MKTP.KD', pcPick = 'NY.GDP.PCAP.KD';
 
   function legend(id, series) {
@@ -186,7 +225,7 @@
   // Chart 4: real growth by sector, quarterly, MoSPI (GDP; GVA and three of its industries), 2022-23 base.
   function sectorsQ() {
     const id = 'gdp-sectors', box = document.getElementById(id + '-chart');
-    const S = SEC.map((s) => ({ ...s, key: s.code }));
+    const S = SEC(id).map((s) => ({ ...s, key: s.code }));
     legend(id + '-legend', S);
     if (!status(box, ['in_gdp'])) return;
     const rows = J.slice(merge(S.map((s) => ({ key: s.key, rows: series('Q', s.code) }))), id);
@@ -250,7 +289,7 @@
   }
   // Chart 6: real growth by sector, annual, MoSPI.
   function sectorsA() {
-    annualChart('gdp-annual', SEC.map((s) => ({ ...s, key: s.code, ytd: s.code, rows: () => series('A', s.code) })), { base: true, headExtra: baseOf });
+    annualChart('gdp-annual', SEC('gdp-annual').map((s) => ({ ...s, key: s.code, ytd: s.code, rows: () => series('A', s.code) })), { base: true, headExtra: baseOf });
   }
 
   function quarterNote() {
