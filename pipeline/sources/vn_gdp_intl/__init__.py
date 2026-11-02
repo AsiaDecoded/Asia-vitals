@@ -94,8 +94,9 @@ def update(force=False, **_):
                 errors.append(f"{name} {y}: {v} out of range")
     for code, vals in usd.items():
         yrs = sorted(vals)
-        if not yrs or yrs[0] > 1985 or yrs != list(range(yrs[0], yrs[-1] + 1)) or last_nso not in vals:
-            errors.append(f"World Bank {code}: years {yrs[:2]}..{yrs[-2:]} (need every year from 1985 to {last_nso})")
+        first = 1989 if code == "NY.GNP.PCAP.CD" else 1985   # WDI's Atlas GNI per capita for Vietnam starts in 1989
+        if not yrs or yrs[0] > first or yrs != list(range(yrs[0], yrs[-1] + 1)) or last_nso not in vals:
+            errors.append(f"World Bank {code}: years {yrs[:2]}..{yrs[-2:]} (need every year from {first} to {last_nso})")
         if any(v <= 0 for v in vals.values()):
             errors.append(f"World Bank {code}: non-positive values")
     for y in sorted(set(nso) & set(b)):
