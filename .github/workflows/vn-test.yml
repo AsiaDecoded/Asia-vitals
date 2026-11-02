@@ -108,9 +108,10 @@ jobs:
         run: |
           python -I - <<'PY'
           import csv, sys
-          # NSO, 3 Oct 2026 release and its 12 Oct 2026 article: real growth y/y, % (2020 prices).
+          # NSO press release of 3 Oct 2026 (post 62550): real growth y/y, % (2020 prices). NSO's 12 Oct article
+          # prints services Q3 as 9.45%; the release and the table say 9.54%.
           REL = {("2026-Q3", "total"): 9.95, ("2026-9M", "total"): 9.01,
-                 ("2026-Q3", "agri"): 4.21, ("2026-Q3", "ind_constr"): 12.50, ("2026-Q3", "services"): 9.45,
+                 ("2026-Q3", "agri"): 4.21, ("2026-Q3", "ind_constr"): 12.50, ("2026-Q3", "services"): 9.54,
                  ("2026-9M", "agri"): 4.02, ("2026-9M", "ind_constr"): 11.21, ("2026-9M", "services"): 8.69,
                  ("2026-9M", "manufacturing"): 11.36, ("2026-9M", "construction"): 12.22}
           rows = {(r["period"], r["code"]): float(r["rate"]) for r in csv.DictReader(open("data/vn/gdp/vn_gdp.csv"))
@@ -120,6 +121,12 @@ jobs:
               x = rows.get(k)
               if x is None: bad.append(f"GDP {k}: missing")
               elif abs(round(x, 2) - v) > 0.0051: bad.append(f"GDP {k}: {x:.3f} vs release {v}")
+          ann = {(r["year"], r["table"], r["code"], r["price"], r["measure"]): float(r["value"]) for r in csv.DictReader(open("data/vn/gdp/vn_gdp_annual.csv"))}
+          # yearbook (PX-Web E03.02/E03.03, updated 15 Aug 2026): 2025 estimate; Q4 2025 report gives the same full-year figures
+          for k, v in {("2025", "sector", "total", "current", "level"): 12847571.2, ("2025", "sector", "total", "constant_2010", "yoy"): 108.02}.items():
+              x = ann.get(k)
+              if x is None or abs(x - v) > max(0.01, 1e-6 * v): bad.append(f"annual {k}: {x} vs {v}")
+          REL[("annual", "2025")] = None
           iip = {r["code"] for r in csv.DictReader(open("data/vn/gdp/vn_iip.csv")) if r["period"] == "2026-Q3"}
           if len([c for c in iip if c.startswith("c") and len(c) == 3]) != 24: bad.append("IIP Q3 2026: not 24 manufacturing divisions")
           msg = f"Q3 2026 GDP vs NSO release: {len(REL) + 1 - len(bad)}/{len(REL) + 1} match"

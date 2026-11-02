@@ -12,12 +12,18 @@ Manufacturing below ISIC section C is not in the GDP tables. The deepest officia
 production index (IIP) by VSIC 2-digit division (24 manufacturing divisions, 10-33), same quarter last year = 100,
 from the quarterly IIP table in the same books (Q1 books: the 'Quý I' column of the monthly IIP table).
 
+Annual, from NSO's PX-Web yearbook database (updated once a year with the yearbook; re-exported at most monthly):
+GDP by sector at current prices from 1986 (E03.02, VND bn and % structure) and at constant 2010 prices from 2005
+(E03.03, VND bn and previous year = 100); GDP by expenditure at current prices from 1995 (E03.08) and constant
+2010 prices from 2005 (E03.09). The last two years are NSO's preliminary and estimated figures.
+
 Reads the workbooks that vn_ppi_nso downloads (raw/vn/ppi_nso/books); runs after it. Nothing is calculated:
 rate is the published index - 100, or the published % rate where NSO prints the rate.
 """
 import csv
-import datetime as dt
-import json
+import gzip
+import re
+import time
 
 from core import nso_vn as N
 from core.common import DATA, RAW, CheckFailed, read_json, write_long, write_release
@@ -71,6 +77,74 @@ IIP_ROWS = [
     ("e38", "38", "Waste collection, treatment and disposal; recycling", 2, r"^Hoạt động thu gom"),
 ]
 UNIT = {"level": "VND bn", "share": "% of GDP", "yoy": "%"}
+PXDIR = RAW / "vn" / "gdp_nso" / "px"
+PX_TABLES = {"E03.02.px": ("sector", "current"), "E03.03.px": ("sector", "constant_2010"),
+             "E03.08.px": ("expenditure", "current"), "E03.09.px": ("expenditure", "constant_2010")}
+ANN_ITEMS = [  # (table kind, code, English label, level, PX label pattern)
+    ("sector", "total", "GDP", 0, r"^Total$"), ("sector", "agri", "Agriculture, forestry and fishing", 1, r"^Agriculture"),
+    ("sector", "ind_constr", "Industry and construction", 1, r"^Industry and construction"), ("sector", "services", "Services", 1, r"^Services"),
+    ("sector", "taxes", "Taxes on products less subsidies on products", 1, r"^Taxes"),
+    ("expenditure", "total", "GDP", 0, r"^TOTAL$"), ("expenditure", "final_consumption", "Final consumption", 1, r"^Final consumption(\(\*\))?$"),
+    ("expenditure", "fc_household", "Household final consumption", 2, r"^Final consumption- Household"),
+    ("expenditure", "fc_state", "Government final consumption", 2, r"^Final consumption- State"),
+    ("expenditure", "gcf", "Gross capital formation", 1, r"^Gross capital formation$"),
+    ("expenditure", "gfcf", "Gross fixed capital formation", 2, r"^Gross capital formation- Gross\s+fixed"),
+    ("expenditure", "inventories", "Changes in inventories", 2, r"^Gross capital formation- Changes"),
+    ("expenditure", "trade_balance", "Balance of trade (goods and services)", 1, r"^Balance of Trade"),
+    ("expenditure", "discrepancy", "Statistical discrepancy", 1, r"^Statistical discrepancy"),
+]
+
+
+def _px_tables(force):
+    PXDIR.mkdir(parents=True, exist_ok=True)
+    out = {}
+    for t in PX_TABLES:
+        p = PXDIR / f"{t}.gz"
+        if force or not p.exists() or (time.time() - p.stat().st_mtime) > 31 * 86400:
+            try:
+                p.write_bytes(gzip.compress(N.px_export(t, db=N.PX_DB_NA)))
+            except Exception as e:  # noqa: BLE001
+                if not p.exists():
+                    raise
+                print(f"   PX-Web {t}: export failed ({e}); using stored copy")
+        out[t] = gzip.decompress(p.read_bytes())
+    return out
+
+
+def _annual(force, warnings):
+    rows = []
+    for t, body in _px_tables(force).items():
+        kind, price = PX_TABLES[t]
+        meta, dims, cells = N.parse_px(body)
+        upd = meta.get("LAST-UPDATED", "")
+        item_dim = next(d for d in dims if d not in ("Year", "Items"))
+        merged = {}
+        for c in cells:
+            if c["value"] is None:
+                continue
+            m = re.search(r"(\d{4})", c["Year"])
+            if not m:
+                continue
+            year = m.group(1)
+            status = "preliminary" if re.search(r"Prel", c["Year"]) else "estimate" if re.search(r"Est", c["Year"]) else ""
+            item = re.sub(r"\s+", " ", c[item_dim]).strip()
+            hit = next(((code, en, lvl) for k, code, en, lvl, pat in ANN_ITEMS if k == kind and re.search(pat, item)), None)
+            if not hit:
+                warnings.append(f"PX-Web {t}: item not recognised: {item}")
+                continue
+            it = c["Items"]
+            measure = "level" if re.search(r"Bill", it) else "share" if re.search(r"Structure", it) else "yoy" if re.search(r"Index", it) else None
+            if not measure:
+                continue
+            code, en, lvl = hit
+            merged[(year, code, measure)] = {
+                "date": f"{year}-12-01", "year": year, "table": kind, "code": code, "item": en, "level": lvl, "price": price,
+                "measure": measure, "value": round(c["value"], 6), "rate": round(c["value"] - 100, 6) if measure == "yoy" else "",
+                "unit": {"level": "VND bn", "share": "% of GDP", "yoy": "%"}[measure], "status": status,
+                "px_table": t, "release_date": f"{upd[:4]}-{upd[4:6]}-{upd[6:8]}" if upd else "", "source": "nso_pxweb"}
+        rows += list(merged.values())
+    return rows
+
 SPAN_LABEL = {"Q": "quarter", "6M": "first half", "9M": "nine months", "Y": "year"}
 
 
@@ -133,6 +207,8 @@ def update(force=False, **_):
                     "value": round(r["value"], 6), "rate": round(r["value"] - 100, 6), "release": r["release"],
                     "release_date": r["release_date"], "label_vi": r["label_vi"], "source": "nso_report"})
 
+    ann = _annual(force, warnings)
+
     # --- checks
     q = [r for r in rows if r["span"] == "Q"]
     last = max(r["period"] for r in q)
@@ -183,6 +259,17 @@ def update(force=False, **_):
     for r in iip:
         if not 30 < r["value"] < 300:
             errors.append(f"IIP {r['period']} {r['code']} {r['value']} out of range")
+    have_a = {(r["table"], r["code"], r["price"], r["measure"]) for r in ann}
+    for need in (("sector", "total", "current", "level"), ("sector", "total", "constant_2010", "yoy"),
+                 ("expenditure", "fc_household", "current", "level"), ("expenditure", "gfcf", "constant_2010", "yoy")):
+        if need not in have_a:
+            errors.append(f"annual {need} missing")
+    # the Q4 report's full-year current-price GDP and the yearbook's agree for years in both (warning only: revisions)
+    yb = {r["year"]: r["value"] for r in ann if r["table"] == "sector" and r["code"] == "total" and r["price"] == "current" and r["measure"] == "level"}
+    for r in rows:
+        if r["span"] == "Y" and r["code"] == "total" and r["price"] == "current" and r["measure"] == "level" and r["period"] in yb:
+            if abs(r["value"] - yb[r["period"]]) > 0.001 * yb[r["period"]]:
+                warnings.append(f"{r['period']} nominal GDP: report {r['value']:.0f} vs yearbook {yb[r['period']]:.0f} (revised)")
     if errors:
         raise CheckFailed(errors)
 
@@ -216,6 +303,13 @@ def update(force=False, **_):
                            extrasaction="ignore")
         w.writeheader()
         w.writerows(iip)
+    ann.sort(key=lambda r: (r["table"], r["date"], r["code"], r["price"], r["measure"]))
+    acols = ["date", "year", "table", "code", "item", "level", "price", "measure", "value", "rate", "unit", "status", "px_table",
+             "release_date", "source"]
+    with open(OUT / "vn_gdp_annual.csv", "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=acols, lineterminator="\n")
+        w.writeheader()
+        w.writerows(ann)
     code = f"G{last}"
 
     def long_rows():
@@ -226,13 +320,18 @@ def update(force=False, **_):
                    "measure": r["measure"], "area": "national", "freq": "Q" if r["span"] == "Q" else "A", "date": r["date"],
                    "value": r["rate"] if r["measure"] == "yoy" else r["value"], "unit": r["unit"], "source": N.SOURCE,
                    "release": code}
+        for r in ann:
+            yield {"country": "VN", "indicator": "gdp_annual", "series": f"{r['table']}_{r['code']}_{r['price']}", "label": r["item"],
+                   "measure": r["measure"], "area": "national", "freq": "A", "date": r["date"],
+                   "value": r["rate"] if r["measure"] == "yoy" else r["value"], "unit": r["unit"], "source": N.SOURCE, "release": code}
         for r in iip:
             yield {"country": "VN", "indicator": "iip", "series": f"iip_{r['code']}", "label": f"Industrial production: {r['industry']}",
                    "measure": "yoy", "area": "national", "freq": "Q", "date": r["date"], "value": r["rate"], "unit": "%",
                    "source": N.SOURCE, "release": code}
     nlong = write_long(long_rows(), OUT / "long.csv")
     release = {"code": code, "label": last.replace("-", " "), "latest_quarter": last, "latest_book": latest_book,
-               "table": "NSO socio-economic report tables 1-2 (GDP) and quarterly IIP", "books": len(index)}
-    write_release(OUT, release, warnings, len(rows), {"long_rows": nlong, "iip_rows": len(iip), "vintage_rows": len(vint)})
-    return {"updated": True, "code": code, "summary": f"{last}: {len(rows)} GDP rows, {len(iip)} IIP rows, {len(index)} books",
+               "table": "NSO socio-economic report tables 1-2 (GDP) and quarterly IIP; PX-Web E03.02, E03.03, E03.08, E03.09 (annual)",
+               "books": len(index)}
+    write_release(OUT, release, warnings, len(rows), {"long_rows": nlong, "iip_rows": len(iip), "vintage_rows": len(vint), "annual_rows": len(ann)})
+    return {"updated": True, "code": code, "summary": f"{last}: {len(rows)} quarterly GDP rows, {len(ann)} annual, {len(iip)} IIP rows, {len(index)} books",
             "warnings": warnings}

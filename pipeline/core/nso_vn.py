@@ -361,9 +361,13 @@ def parse_px(b):
     return meta, dims, [dict(zip(dims, c), value=v) for c, v in zip(combos, nums)]
 
 
-def px_export(table, fmt="FileTypePX"):
-    """Every value of every variable of one PX-Web table, through the web form (the API does not serve it)."""
-    lang, db, folder = PX_DB
+PX_DB_NA = ("en", "E 03. National Accounts and State budget", "E 03. National Accounts and State budget__Px_E_03")
+
+
+def px_export(table, fmt="FileTypePX", db=None):
+    """Every value of every variable of one PX-Web table, through the web form (the API does not serve it).
+    db: (lang, database, folder); default the price database."""
+    lang, db, folder = db or PX_DB
     op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
     url = f"{PXWEB}/{lang}/{db}/{folder}/{table}/"
     page = get(url, opener=op)[0].decode("utf-8", "replace")
