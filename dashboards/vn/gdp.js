@@ -430,24 +430,32 @@ dash.calc('gdp_table', {
 
 
   // Charts 1 and 2: GDP and GDP per capita in US dollars, annual, World Bank WDI, as published (GDP shown in US$ billion,
-  // the World Bank's US$ / 1e9; per capita in US$).
+  // the World Bank's US$ / 1e9; per capita in US$). Real: constant 2015 US$. Nominal: current US$, with GNI on the Atlas
+  // method (the classification series) drawn beside it so the two can be compared.
   const USD = {
-    'gdp-usd': { div: 1e9, unit: 'US$ billion', tipUnit: ' bn', fmt: ',.1f', names: { 'NY.GDP.MKTP.CD': 'GDP, current US$', 'NY.GDP.MKTP.KD': 'GDP, constant 2015 US$', 'NY.GNP.ATLS.CD': 'GNI, Atlas method, US$' },
-      colors: { 'NY.GNP.ATLS.CD': 'var(--ad-c2)' } },
-    'gdp-pc': { div: 1, unit: 'US$', tipUnit: '', fmt: ',.0f', names: { 'NY.GDP.PCAP.CD': 'GDP per capita, current US$', 'NY.GDP.PCAP.KD': 'GDP per capita, constant 2015 US$', 'NY.GNP.PCAP.CD': 'GNI per capita, Atlas method, US$' },
-      colors: { 'NY.GNP.PCAP.CD': 'var(--ad-c2)' } },
+    'gdp-usd': { div: 1e9, unit: 'US$ billion', tipUnit: ' bn', fmt: ',.1f',
+      real: [{ key: 'NY.GDP.MKTP.KD', name: 'GDP', color: 'var(--ad-c2)' }],
+      nominal: [{ key: 'NY.GDP.MKTP.CD', name: 'GDP', color: 'var(--ad-c1)' }, { key: 'NY.GNP.ATLS.CD', name: 'GNI, Atlas method', color: 'var(--ad-c2)' }] },
+    'gdp-pc': { div: 1, unit: 'US$', tipUnit: '', fmt: ',.0f',
+      real: [{ key: 'NY.GDP.PCAP.KD', name: 'GDP per capita', color: 'var(--ad-c2)' }],
+      nominal: [{ key: 'NY.GDP.PCAP.CD', name: 'GDP per capita', color: 'var(--ad-c1)' }, { key: 'NY.GNP.PCAP.CD', name: 'GNI per capita, Atlas method', color: 'var(--ad-c2)' }] },
   };
   function usd(id, pick) {
-    const C = USD[id], box = document.getElementById(id + '-chart'), nominal = /\.CD$/.test(pick);
-    document.getElementById(id + '-units').textContent = (C.units || {})[pick] || `${C.unit}, ${nominal ? 'current prices' : 'constant 2015 prices'}`;
+    const C = USD[id], box = document.getElementById(id + '-chart'), nominal = /\.CD$/.test(pick), S = nominal ? C.nominal : C.real;
+    document.getElementById(id + '-units').textContent = `${C.unit}, ${nominal ? 'current prices' : 'constant 2015 prices'}`;
+    legend(id + '-legend', S.length > 1 ? S : []);
     if (!status(box, ['vn_gdp_intl'])) return;
-    const rows = dash.data('vn_gdp_intl').data.filter((r) => r.series === pick && num(r.value) != null)
-      .map((r) => ({ date: r.date, v: num(r.value) / C.div })).sort((a, b) => (a.date < b.date ? -1 : 1));
+    const by = new Map();
+    dash.data('vn_gdp_intl').data.forEach((r) => {
+      if (!S.some((s) => s.key === r.series) || num(r.value) == null) return;
+      if (!by.has(r.date)) by.set(r.date, { date: r.date }); by.get(r.date)[r.series] = num(r.value) / C.div;
+    });
+    const rows = Array.from(by.values()).sort((a, b) => (a.date < b.date ? -1 : 1));
     if (!rows.length) { box.replaceChildren(); return; }
-    const H = 280, mr = 8, col = (C.colors || {})[pick] || (nominal ? 'var(--ad-c1)' : 'var(--ad-c2)');
-    const { svg, x, y, W, ml } = frame(box, rows, H, rows.map((r) => r.v).concat([0]), (v) => d3.format(',.0f')(v), true, mr);
-    svg.append('path').attr('d', d3.line().x((r) => x(J.date(r.date))).y((r) => y(r.v))(rows))
-      .attr('fill', 'none').attr('stroke', col).attr('stroke-width', 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
+    const H = 280, mr = 8;
+    const { svg, x, y, W, ml } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null).concat([0]), (v) => d3.format(',.0f')(v), true, mr);
+    S.forEach((s) => svg.append('path').attr('d', d3.line().defined((r) => r[s.key] != null).x((r) => x(J.date(r.date))).y((r) => y(r[s.key]))(rows))
+      .attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round'));
     // Lower-middle income: on 2009 GNI per capita, announced by the World Bank in July 2010 (FY11 in its classification
     // history, OGHIST). Dashed line at 2009, the data year (user). CAGR starts in 2009.
     const LMI = 2009, START = 2009, lx = x(J.date(`${LMI}-12-01`));
@@ -468,29 +476,35 @@ dash.calc('gdp_table', {
       svg.append('text').attr('x', lx).attr('y', 12).attr('font-size', 12).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'middle').text('Lower-middle income');
     }
     // CAGR, calculated on this page (asked for 2 Nov 2026): (value in the latest year / value in 2009)^(1 / years) - 1,
-    // from the World Bank figures drawn, for the series shown; the end year moves on as WDI adds years.
+    // from the World Bank figures drawn, one line per series shown; the end year moves on as WDI adds years.
     const at = (yr) => rows.find((r) => r.date.slice(0, 4) === String(yr));
-    const END = Number(rows[rows.length - 1].date.slice(0, 4)), cagr = [START].map((s) => { const a0 = at(s), a1 = at(END); return a0 && a1 && a0.v > 0 ? { s, v: (Math.pow(a1.v / a0.v, 1 / (END - s)) - 1) * 100 } : null; }).filter(Boolean);
+    const cagr = S.map((s) => {
+      const have = rows.filter((r) => r[s.key] != null); if (!have.length) return null;
+      const END = Number(have[have.length - 1].date.slice(0, 4)), a0 = at(START), a1 = at(END);
+      return a0 && a1 && a0[s.key] > 0 ? { s, END, v: (Math.pow(a1[s.key] / a0[s.key], 1 / (END - START)) - 1) * 100 } : null;
+    }).filter(Boolean);
     if (cagr.length) {
-      // Bottom right of the plot, under the line (the line rises to the right, so this corner is clear).
+      // Bottom right of the plot, under the lines (they rise to the right, so this corner is clear).
       const lh = 16;
       const t = svg.append('text').attr('font-size', 12).attr('font-weight', 700).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'end');
-      cagr.forEach((c, k) => t.append('tspan').attr('dy', k ? lh : 0).text(`${c.s}–${END} CAGR: ${c.v.toFixed(1)}% p.a.`));
+      cagr.forEach((c, k) => t.append('tspan').attr('dy', k ? lh : 0).attr('fill', S.length > 1 ? c.s.color : null)
+        .text(`${S.length > 1 ? c.s.name + ', ' : ''}${START}–${c.END} CAGR: ${c.v.toFixed(1)}% p.a.`));
       const tx = W - mr - 8, ty = H - 40 - (cagr.length - 1) * lh;
       t.attr('x', tx).attr('y', ty); t.selectAll('tspan').attr('x', tx);
     }
     const card = document.getElementById(id), tip = J.tip(card);
     const rule = svg.append('line').attr('y1', 8).attr('y2', H - 22).attr('stroke', 'var(--cds-chart-reference)').attr('display', 'none');
-    const dot = svg.append('circle').attr('r', 3.5).attr('fill', col).attr('display', 'none');
+    const dots = S.map((s) => svg.append('circle').attr('r', 3.5).attr('fill', s.color).attr('display', 'none'));
     const bis = d3.bisector((r) => J.date(r.date)).center;
     svg.append('rect').attr('x', ml).attr('width', Math.max(0, W - mr - ml)).attr('height', H).attr('fill', 'transparent')
       .on('mousemove', (ev) => {
         const [mx] = d3.pointer(ev); const r = rows[bis(rows, x.invert(mx))]; const px = x(J.date(r.date));
-        rule.attr('display', null).attr('x1', px).attr('x2', px); dot.attr('display', null).attr('cx', px).attr('cy', y(r.v));
+        rule.attr('display', null).attr('x1', px).attr('x2', px);
+        S.forEach((s, k) => (r[s.key] == null ? dots[k].attr('display', 'none') : dots[k].attr('display', null).attr('cx', px).attr('cy', y(r[s.key]))));
         const cr = card.getBoundingClientRect();
-        J.showTip(card, tip, r.date.slice(0, 4), [[col, C.names[pick], d3.format(C.fmt)(r.v) + C.tipUnit]], ev.clientX - cr.left, ev.clientY - cr.top);
+        J.showTip(card, tip, r.date.slice(0, 4), S.map((s) => [s.color, s.name, r[s.key] == null ? 'n/a' : d3.format(C.fmt)(r[s.key]) + C.tipUnit]), ev.clientX - cr.left, ev.clientY - cr.top);
       })
-      .on('mouseleave', () => { rule.attr('display', 'none'); dot.attr('display', 'none'); tip.style.display = 'none'; });
+      .on('mouseleave', () => { rule.attr('display', 'none'); dots.forEach((d) => d.attr('display', 'none')); tip.style.display = 'none'; });
   }
 
   function tiles() {
