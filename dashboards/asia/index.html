@@ -49,6 +49,25 @@
 .ax-meth { min-width: 760px; }
 .ax-fxbars { width: 100%; }
 .ax-fxbars svg { display: block; width: 100%; height: auto; font-family: var(--font-anthropic-sans); }
+.ax-pick { position: relative; }
+.ax-pick summary { list-style: none; cursor: pointer; font-size: var(--cds-font-size-caption); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); min-height: 32px; display: inline-flex; align-items: center; gap: 6px; color: var(--color-fg); background: var(--color-panel); }
+.ax-pick summary::-webkit-details-marker { display: none; }
+.ax-pick summary::after { content: '\25BE'; color: var(--color-fg-muted); }
+.ax-pick summary .n { color: var(--color-fg-muted); }
+.ax-pick-list { position: absolute; right: 0; z-index: 5; margin-top: 4px; background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-sm); display: flex; flex-direction: column; gap: 6px; min-width: 13rem; box-shadow: 0 4px 16px rgba(0,0,0,.12); }
+.ax-pick-list label { display: flex; align-items: center; gap: 8px; font-size: var(--cds-font-size-caption); cursor: pointer; min-height: 28px; }
+@media (max-width: 600px) { .ax-pick-list { left: 0; right: auto; } }
+.ax-pick-list .sw { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
+.ax-pick-list .t { color: var(--color-fg-muted); margin-left: auto; }
+.ax-pick-list .acts { display: flex; gap: 12px; border-top: 1px solid var(--color-border-line); padding-top: 6px; }
+.ax-pick-list .acts button { font: inherit; font-size: var(--cds-font-size-caption); background: none; border: 0; padding: 0; color: var(--color-fg-muted); cursor: pointer; text-decoration: underline; }
+.ax-gni { position: relative; width: 100%; }
+.ax-gni svg { display: block; width: 100%; height: auto; font-family: var(--font-anthropic-sans); }
+.ax-tip { position: absolute; pointer-events: none; background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: 6px 8px; font-size: 12px; line-height: 1.4; white-space: nowrap; box-shadow: 0 2px 8px rgba(0,0,0,.12); display: none; z-index: 4; }
+.ax-tip b { font-weight: var(--cds-font-weight-medium); }
+.ax-tip .sw { display: inline-block; width: 10px; height: 3px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
+.ax-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: var(--cds-font-size-caption); color: var(--color-fg); }
+.ax-legend span.sw { display: inline-block; width: 14px; height: 3px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
 [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
 </style>
 
@@ -60,6 +79,7 @@
 
   <nav class="ax-tabs" role="tablist" aria-label="Sections">
     <button role="tab" data-tab="inflation" aria-selected="true">Inflation</button>
+    <button role="tab" data-tab="gdp" aria-selected="false">GDP</button>
     <button role="tab" data-tab="financial" aria-selected="false">Financial</button>
     <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
   </nav>
@@ -143,6 +163,26 @@
     </section>
   </section>
 
+  <section class="ax-page" id="gdp" role="tabpanel" hidden>
+    <section class="ax-sec">
+      <h2>Income</h2>
+      <div class="ax-card" id="gni-card">
+        <div class="ax-cardhead">
+          <h3>GNI per capita since becoming middle income</h3>
+          <details class="ax-pick" id="gni-pick">
+            <summary>Economies <span class="n" id="gni-pick-n"></span></summary>
+            <div class="ax-pick-list" id="gni-pick-list"></div>
+          </details>
+        </div>
+        <p class="ax-note">Index, GNI per capita (Atlas method, US$) = 100 in year t, the year each economy became lower-middle income. Horizontal axis: years from t.</p>
+        <div class="ax-gni" data-draw="gniChart" data-source="asia_gni_index"></div>
+        <div class="ax-legend" id="gni-legend"></div>
+        <p class="ax-note">t is the first data year the World Bank classified the economy lower-middle income after low income (China 1997, India 2007, Indonesia 1993, the first of two crossings, Vietnam 2009). Thailand, Malaysia and the Philippines were already lower-middle income when the classifications began, so t = 1987, the first year. Index calculated by Asia Decoded. Taiwan is not in the World Bank&rsquo;s data; Japan, South Korea, Hong Kong and Singapore were upper-middle or high income from 1987.</p>
+        <p class="ax-note">Source: World Bank, World Development Indicators (NY.GNP.PCAP.CD) and historical income classifications.</p>
+      </div>
+    </section>
+  </section>
+
   <section class="ax-page" id="financial" role="tabpanel" hidden>
     <section class="ax-sec">
       <h2>Currencies</h2>
@@ -177,6 +217,7 @@
             <tbody data-draw="meth" data-source="asia_series"></tbody>
           </table>
         </div>
+        <p class="ax-note">GDP tab: GNI per capita, Atlas method, current US$, from the World Bank&rsquo;s World Development Indicators, as published, indexed to 100 in year t (calculated). t is the first data year the World Bank&rsquo;s historical classifications put the economy in the lower-middle income group after the low income group (the data year, not the July in which the classification was announced; Indonesia&rsquo;s first crossing, 1993, before it fell back to low income after the Asian financial crisis). Economies already lower-middle income when the classifications began take that first year, 1987.</p>
         <p class="ax-note">Financial tab: each currency&rsquo;s year-to-date change is calculated on this page&rsquo;s data, at your request: the BIS daily rate (national currency per US dollar, from national sources) on the last trading day of the previous year divided by the latest rate, minus 1, in %. That is the change in the currency&rsquo;s US-dollar value, so a positive figure means the currency has strengthened. Each economy uses its own latest date. Vietnam is left out: the BIS has no daily series for the dong.</p>
         <p class="ax-note">Financial tab, stock markets: the benchmark index of each economy, daily closes from Yahoo Finance (not an official source), completed sessions only. Year-to-date change, calculated: latest close divided by the last close on or before 31 December of the previous year, minus 1, in %. Price index in local currency, so neither dividends nor currency moves are included. Thailand, the Philippines and Vietnam are left out because Yahoo Finance returns only the latest quote for their indices, with no history.</p>
         <p class="ax-note">Food &amp; bev is left blank for China (NBS food excludes beverages), Indonesia (the BPS group includes tobacco) and Thailand (TPSO food includes prepared food). Korea's official core is the Bank of Korea's measure, CPI excluding food and energy, the same series as its core.</p>
@@ -421,6 +462,102 @@
       (r) => `${r.index}: ${f1(r.v)}%, from ${num(r.base_close)} on ${dmy(r.base_date)} to ${num(r.latest_close)} on ${dmy(r.latest_date)}`,
       'Asian benchmark stock indices, year to date, % change');
   });
+  // GDP tab: GNI per capita indexed to 100 in the year each economy became middle income; economies picked in a dropdown
+  const GNI_COL = {ID: '#BD1B21', IN: '#FFC000', VN: '#1F4E79', TH: '#92D050', CN: '#0C84FF', MY: '#A6A6A6', PH: '#ED7D31'};
+  const GNI_ORDER = ['CN', 'IN', 'ID', 'TH', 'MY', 'PH', 'VN'];
+  let gniSel = new Set(['ID', 'IN', 'VN', 'TH']);
+  try { const v = JSON.parse(localStorage.getItem('ax-gni-sel') || 'null'); if (Array.isArray(v) && v.length) gniSel = new Set(v); } catch (e) { /* storage unavailable */ }
+  const gniSave = () => { try { localStorage.setItem('ax-gni-sel', JSON.stringify([...gniSel])); } catch (e) { /* ignore */ } };
+  const gniPicker = (all) => {
+    const list = document.getElementById('gni-pick-list');
+    if (!list || list.dataset.built === all.map((a) => a.economy + a.t).join()) return;
+    list.dataset.built = all.map((a) => a.economy + a.t).join();
+    list.replaceChildren();
+    for (const a of all) {
+      const lab = el('label'); const cb = el('input'); cb.type = 'checkbox'; cb.value = a.economy; cb.checked = gniSel.has(a.economy);
+      cb.addEventListener('change', () => { if (cb.checked) gniSel.add(a.economy); else gniSel.delete(a.economy); gniSave(); dash.draw('gniChart'); });
+      const sw = el('span', 'sw'); sw.style.background = GNI_COL[a.economy] || '#666';
+      lab.append(cb, sw, el('span', null, a.name), el('span', 't', 't = ' + a.t));
+      list.append(lab);
+    }
+    const acts = el('div', 'acts');
+    const b1 = el('button', null, 'All'), b2 = el('button', null, 'None');
+    b1.type = b2.type = 'button';
+    b1.addEventListener('click', () => { gniSel = new Set(all.map((a) => a.economy)); gniSave(); list.querySelectorAll('input').forEach((c) => { c.checked = true; }); dash.draw('gniChart'); });
+    b2.addEventListener('click', () => { gniSel = new Set(); gniSave(); list.querySelectorAll('input').forEach((c) => { c.checked = false; }); dash.draw('gniChart'); });
+    acts.append(b1, b2); list.append(acts);
+  };
+  document.addEventListener('click', (ev) => { const d = document.getElementById('gni-pick'); if (d && d.open && !d.contains(ev.target)) d.open = false; });
+  dash.draw('gniChart', (box) => {
+    const D = dash.data('asia_gni_index');
+    box.replaceChildren();
+    const leg = document.getElementById('gni-legend'); if (leg) leg.replaceChildren();
+    if (D.status !== 'ok' || !D.data.length) return;
+    const by = new Map();
+    for (const r of D.data) {
+      const o = by.get(r.economy) || {economy: r.economy, name: r.name, t: Number(r.t_year), pts: []};
+      o.pts.push({k: Number(r.k), year: Number(r.year), v: Number(r.gni_pc), ix: Number(r.index)});
+      by.set(r.economy, o);
+    }
+    const all = GNI_ORDER.filter((e) => by.has(e)).map((e) => by.get(e)).concat([...by.values()].filter((o) => !GNI_ORDER.includes(o.economy)));
+    gniPicker(all);
+    const n = document.getElementById('gni-pick-n'); if (n) n.textContent = `(${all.filter((a) => gniSel.has(a.economy)).length} of ${all.length})`;
+    const sel = all.filter((a) => gniSel.has(a.economy));
+    if (!sel.length) { box.append(el('div', 'ax-ph small', 'Pick one or more economies.')); return; }
+    const K0 = -5;
+    const ser = sel.map((a) => ({...a, pts: a.pts.filter((p) => p.k >= K0).sort((x, y) => x.k - y.k)}));
+    const k1 = Math.max(...ser.map((a) => a.pts[a.pts.length - 1].k));
+    const vmax = Math.max(100, ...ser.flatMap((a) => a.pts.map((p) => p.ix)));
+    const W = Math.max(320, box.clientWidth || 640), H = W < 600 ? 260 : 320, top = 10, bot = 26;
+    const ystep = vmax > 1200 ? 400 : vmax > 600 ? 200 : vmax > 300 ? 100 : 50;
+    const ymax = Math.ceil(vmax / ystep) * ystep;
+    const ml = String(ymax).length * 7 + 14, mr = 12;
+    const x = (k) => ml + (k - K0) / (k1 - K0 || 1) * (W - ml - mr);
+    const y = (v) => top + (1 - v / ymax) * (H - top - bot);
+    const svg = document.createElementNS(SVG, 'svg');
+    svg.setAttribute('viewBox', `0 0 ${W} ${H}`); svg.setAttribute('role', 'img');
+    svg.setAttribute('aria-label', 'GNI per capita indexed to 100 at t: ' + ser.map((a) => `${a.name} ${f1(a.pts[a.pts.length - 1].ix)} after ${a.pts[a.pts.length - 1].k} years`).join(', '));
+    const add = (tag, attrs, text) => { const nd = document.createElementNS(SVG, tag); for (const k in attrs) nd.setAttribute(k, attrs[k]); if (text != null) nd.textContent = text; svg.append(nd); return nd; };
+    for (let v = 0; v <= ymax; v += ystep) {
+      add('line', {x1: ml, x2: W - mr, y1: y(v), y2: y(v), stroke: 'var(--color-border-line)', 'stroke-width': v === 100 ? 1.2 : 0.6, opacity: v === 100 ? 1 : 0.7});
+      add('text', {x: ml - 6, y: y(v) + 4, 'text-anchor': 'end', 'font-size': 11, fill: 'var(--color-fg-muted)'}, String(v));
+    }
+    const xstep = (k1 - K0) > 30 ? (W < 600 ? 10 : 5) : (W < 600 ? 5 : 2);
+    for (let k = Math.ceil(K0 / xstep) * xstep; k <= k1; k += xstep) {
+      add('text', {x: x(k), y: H - 8, 'text-anchor': 'middle', 'font-size': 11, fill: 'var(--color-fg-muted)'}, k === 0 ? 't' : (k > 0 ? 't+' + k : 't' + k));
+    }
+    add('line', {x1: x(0), x2: x(0), y1: top, y2: H - bot, stroke: 'var(--color-fg-muted)', 'stroke-dasharray': '4 3', 'stroke-width': 1});
+    for (const a of ser) {
+      add('path', {d: a.pts.map((p, i) => (i ? 'L' : 'M') + x(p.k).toFixed(1) + ',' + y(p.ix).toFixed(1)).join(''), fill: 'none', stroke: GNI_COL[a.economy] || '#666', 'stroke-width': 2, 'stroke-linejoin': 'round'});
+    }
+    const rule = add('line', {x1: 0, x2: 0, y1: top, y2: H - bot, stroke: 'var(--color-fg)', opacity: 0.25, display: 'none'});
+    const hit = add('rect', {x: ml, y: top, width: W - ml - mr, height: H - top - bot, fill: 'transparent'});
+    box.append(svg);
+    const tip = el('div', 'ax-tip'); box.append(tip);
+    const move = (ev) => {
+      const r = svg.getBoundingClientRect(), sx = (ev.clientX - r.left) * W / r.width;
+      const k = Math.max(K0, Math.min(k1, Math.round(K0 + (sx - ml) / (W - ml - mr) * (k1 - K0))));
+      rule.setAttribute('x1', x(k)); rule.setAttribute('x2', x(k)); rule.setAttribute('display', null);
+      tip.replaceChildren(el('div', null, k === 0 ? 't' : (k > 0 ? 't+' + k : 't' + k)));
+      for (const a of ser) {
+        const p = a.pts.find((q) => q.k === k); if (!p) continue;
+        const line = el('div'); const sw = el('span', 'sw'); sw.style.background = GNI_COL[a.economy] || '#666';
+        line.append(sw, `${a.name} ${p.year}: `, el('b', null, f1(p.ix)), ` (US$${p.v.toLocaleString('en')})`);
+        tip.append(line);
+      }
+      tip.style.display = 'block';
+      const br = box.getBoundingClientRect(); let lx = ev.clientX - br.left + 12;
+      if (lx + tip.offsetWidth > br.width) lx = ev.clientX - br.left - tip.offsetWidth - 12;
+      tip.style.left = Math.max(0, lx) + 'px'; tip.style.top = Math.max(0, ev.clientY - br.top - 10) + 'px';
+    };
+    hit.addEventListener('mousemove', move);
+    hit.addEventListener('touchstart', (ev) => move(ev.touches[0]), {passive: true});
+    hit.addEventListener('mouseleave', () => { rule.setAttribute('display', 'none'); tip.style.display = 'none'; });
+    if (leg) for (const a of ser) { const it = el('span'); const sw = el('span', 'sw'); sw.style.background = GNI_COL[a.economy] || '#666'; it.append(sw, `${a.name} (t = ${a.t})`); leg.append(it); }
+  });
+  let gniW = 0;
+  new ResizeObserver(() => { const b = document.querySelector('.ax-gni'); if (b && b.clientWidth && b.clientWidth !== gniW) { gniW = b.clientWidth; dash.draw('gniChart'); } }).observe(document.querySelector('.ax-gni'));
+
   let fxW = 0;
   new ResizeObserver(() => { const b = document.querySelector('.ax-fxbars'); if (b && b.clientWidth && b.clientWidth !== fxW) { fxW = b.clientWidth; dash.draw('fxBars'); dash.draw('eqBars'); } }).observe(document.querySelector('.ax-fxbars'));
 
@@ -434,8 +571,9 @@
     document.querySelectorAll('.ax [role=tab]').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === id)));
     document.querySelectorAll('.ax [role=tabpanel]').forEach((p) => { p.hidden = p.id !== id; });
     if (id === 'financial') { dash.draw('fxBars'); dash.draw('eqBars'); }
+    if (id === 'gdp') dash.draw('gniChart');
   };
   document.querySelectorAll('.ax [role=tab]').forEach((t) => t.addEventListener('click', () => { show(t.dataset.tab); dash.setLink(t.dataset.tab); }));
-  if (['methodology', 'financial'].includes(location.hash.slice(1))) show(location.hash.slice(1));
+  if (['methodology', 'financial', 'gdp'].includes(location.hash.slice(1))) show(location.hash.slice(1));
 })();
 </script>
