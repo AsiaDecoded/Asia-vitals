@@ -73,7 +73,7 @@ dash.calc('gdp_table', {
   const SPAN_YTD = { 3: 'Q', 6: '6M', 9: '9M', 12: 'Y' };
   const SEC = [['agri', 'Agriculture, forestry and fishing', 'var(--ad-c6)'], ['ind_constr', 'Industry and construction', 'var(--ad-c1)'],
     ['services', 'Services', 'var(--ad-c5)'], ['taxes', 'Taxes on products less subsidies', 'var(--ad-c4)']];
-  let growthSpan = 'Q', levelBasis = 'current', srcPick = 'nso';
+  let growthBasis = 'real', levelBasis = 'current', srcPick = 'nso';
   ['gdp-sectors', 'gdp-level', 'gdp-structure', 'gdp-mfg', 'gdp-mfg-share', 'gdp-annual', 'gdp-exp', 'gdp-exp-share'].forEach((id) => { J.period[id] = 0; });
 
   const G = () => dash.data('vn_gdp');
@@ -96,7 +96,7 @@ dash.calc('gdp_table', {
     return Array.from(by.values()).sort((a, b) => (a.date < b.date ? -1 : 1));
   }
   function rebaseLine(svg, x, rows, H, levels) {
-    (levels ? [REVAL, REBASE] : [REBASE]).forEach((b) => {
+    (levels === 'nominal' ? [REVAL] : levels ? [REVAL, REBASE] : [REBASE]).forEach((b) => {
       if (rows[0].date < b && rows[rows.length - 1].date >= b) {
         const sx = x(J.date(b.slice(0, 5) + '01-01'));
         svg.append('line').attr('x1', sx).attr('x2', sx).attr('y1', 12).attr('y2', H - 24).attr('stroke', 'var(--ad-axis)').attr('stroke-dasharray', '3 3');
@@ -144,28 +144,28 @@ dash.calc('gdp_table', {
 
   const START = '2018-01-01';   // Chart 1 from 2018 (single quarters in NSO's tables from Q2 2018)
 
-  // Chart 1: real growth, quarter or year to date, as published on each base (no linking across bases).
+  // Chart 1: GDP growth on the same quarter a year earlier, single quarters from 2018. Real: NSO's, as published on
+  // each base (dashed line at a base change). Nominal: calculated in the pipeline from NSO's current-price levels.
   function growth() {
     const id = 'gdp-growth', box = document.getElementById(id + '-chart');
     if (!status(box, ['vn_gdp'])) return;
-    const src = (growthSpan === 'Q' ? series('total', 'constant', 'yoy') : ytdSeries('total')).filter((r) => r.date >= START);
+    const src = series('total', growthBasis === 'real' ? 'constant' : 'current', 'yoy').filter((r) => r.date >= START);
     const rows = J.slice(src.map((r) => ({ date: r.date, q: true, v: r.v, price: r.price, period: r.period })), id);
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 290, mr = 8;
     const { svg, x, y, W, ml } = frame(box, rows, H, rows.map((r) => r.v), (v) => d3.format('.0f')(v), true, mr);
-    baseMarks(svg, x, rows, H);
+    if (growthBasis === 'real') baseMarks(svg, x, rows, H);
     const step = (W - ml - mr) / Math.max(1, rows.length);
     const bw = Math.max(1.5, Math.min(22, step * 0.62));
+    const col = growthBasis === 'real' ? 'var(--ad-c2)' : 'var(--ad-c1)';
     rows.forEach((r) => {
       svg.append('rect').attr('x', x(J.date(r.date)) - bw / 2).attr('width', bw).attr('y', y(Math.max(0, r.v))).attr('height', Math.abs(y(r.v) - y(0)))
-        .attr('fill', r.v < 0 ? 'var(--ad-c1)' : 'var(--ad-c2)');
+        .attr('fill', r.v < 0 ? 'var(--ad-c4)' : col);
     });
     const card = document.getElementById(id);
-    hover(svg, card, x, rows, H, ml, W - mr, (r) => {
-      const p = r.period || '';
-      const name = growthSpan === 'Q' ? 'Real GDP, y/y' : ({ Q1: 'First quarter', H1: 'First half', '9M': 'Nine months' }[p.slice(5)] || 'Full year');
-      return [['var(--ad-c2)', name, r.v.toFixed(2) + '%'], [null, 'Prices of', BASE_LABEL(r.price).replace(' prices', '')]];
-    });
+    hover(svg, card, x, rows, H, ml, W - mr, (r) => (growthBasis === 'real'
+      ? [[col, 'Real GDP, y/y', r.v.toFixed(2) + '%'], [null, 'Prices of', BASE_LABEL(r.price).replace(' prices', '')]]
+      : [[col, 'Nominal GDP, y/y (calculated)', r.v.toFixed(2) + '%']]));
   }
 
   // Chart 3: level, nominal (one series) or real (2010-price and 2020-price series apart).
@@ -177,7 +177,7 @@ dash.calc('gdp_table', {
       ? [{ key: 'n', name: 'Nominal GDP', color: 'var(--ad-c1)', rows: trn(series('total', 'current', 'level')) }]
       : [{ key: 'r10', name: 'Real GDP, 2010 prices', color: 'var(--ad-c2)', rows: trn(series('total', 'constant_2010', 'level')), hideNull: true },
         { key: 'r20', name: 'Real GDP, 2020 prices', color: 'var(--ad-c3)', rows: trn(series('total', 'constant_2020', 'level')), hideNull: true }];
-    qLines(id, S, { zero: false, levels: true, fmt: (v) => d3.format(',.0f')(v), tipFmt: (v) => d3.format(',.0f')(v) });
+    qLines(id, S, { zero: false, levels: levelBasis === 'current' ? 'nominal' : true, fmt: (v) => d3.format(',.0f')(v), tipFmt: (v) => d3.format(',.0f')(v) });
   }
 
   // Chart 4: published shares of GDP at current prices, stacked.
@@ -464,7 +464,7 @@ dash.calc('gdp_table', {
       J.redrawGdp();
     });
   };
-  seg('gdp-growth-seg', 's', (v) => { growthSpan = v; });
+  seg('gdp-growth-seg', 's', (v) => { growthBasis = v; });
   seg('gdp-level-seg', 'b', (v) => { levelBasis = v; });
   seg('gdp-src-seg', 'src', (v) => { srcPick = v; });
 

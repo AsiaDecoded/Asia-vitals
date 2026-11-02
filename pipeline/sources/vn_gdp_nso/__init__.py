@@ -5,7 +5,8 @@ Quarterly GDP from the socio-economic report tables ("Biểu") released with the
 same period last year = 100; in Q1 books one combined table, with growth printed as a % rate from 2024).
 28 rows: total, three sectors, product taxes less subsidies, and 23 sub-sectors (ISIC sections A01-A03, B-T).
 Constant prices are 2010 prices to the Q4 2025 book and 2020 prices from the Q1 2026 book; current-price levels
-from 2026 are on the rebased scale. Each book gives the reference quarter (estimate), the previous quarter
+continue on the same scale (implied deflators of 3.7-3.9% in 2026). Current-price levels change scale at the 2010-base
+switch (2013 books) and NSO's 2021 revaluation (2021 books). Each book gives the reference quarter (estimate), the previous quarter
 (preliminary) and the year to date; the latest book's figure for each period is kept, every vintage is stored.
 
 Manufacturing below ISIC section C is not in the GDP tables. The deepest official split is the industrial
@@ -18,7 +19,8 @@ GDP by sector at current prices from 1986 (E03.02, VND bn and % structure) and a
 2010 prices from 2005 (E03.09). The last two years are NSO's preliminary and estimated figures.
 
 Reads the workbooks that vn_ppi_nso downloads (raw/vn/ppi_nso/books); runs after it. Nothing is calculated:
-rate is the published index - 100, or the published % rate where NSO prints the rate.
+rate is the published index - 100, or the published % rate where NSO prints the rate. One calculated series
+(asked for 2 Nov 2026, flagged calculated = y): nominal y/y for single quarters from the current-price levels.
 """
 import csv
 import gzip
@@ -33,7 +35,8 @@ NAME = "vn_gdp_nso"
 DESCRIPTION = "Vietnam quarterly GDP by industry (current and constant prices) and IIP by VSIC division (NSO report tables)"
 OUT = DATA / "vn" / "gdp"
 BOOKS = RAW / "vn" / "ppi_nso"
-REBASE_BOOK = "2026-Q1"   # first book on 2020 constant prices (and the revised current-price scale)
+REBASE_BOOK = "2026-Q1"   # first book on 2020 constant prices (current-price levels continue on the same scale)
+NOMINAL_SCALE_BREAKS = {2013, 2021}   # no calculated y/y across NSO's 2010-base switch (2013) or 2021 revaluation
 CODES = {c: (isic, en, lvl) for c, isic, en, lvl, _ in N.GDP_ROWS}
 ORDER = {c: i for i, (c, *_rest) in enumerate(N.GDP_ROWS)}
 
@@ -202,6 +205,18 @@ def update(force=False, **_):
                      "status": r["status"], "release": r["release"], "release_date": r["release_date"],
                      "base_break": 1 if period.startswith(REBASE_BOOK[:4]) and span == "Q" and period.endswith("Q1") else 0,
                      "label_vi": r["label_vi"], "source": "nso_report"})
+    # Calculated (asked for 2 Nov 2026): nominal GDP y/y for single quarters, from NSO's current-price levels:
+    # level / level in the same quarter a year earlier x 100. NSO publishes no nominal growth. Not across the 2021
+    # revaluation (2021 against 2020) or the 2010-base switch (2013 against 2012). The 2026 rebase changed constant prices only.
+    lev = {(r["period"], r["code"]): r for r in rows if r["span"] == "Q" and r["price"] == "current" and r["measure"] == "level"}
+    for (period, code), r in sorted(lev.items()):
+        y, q = int(period[:4]), period[-2:]
+        prev = lev.get((f"{y - 1}-{q}", code))
+        if not prev or y in NOMINAL_SCALE_BREAKS or prev["value"] <= 0:
+            continue
+        v = r["value"] / prev["value"] * 100
+        rows.append({**r, "measure": "yoy", "value": round(v, 6), "rate": round(v - 100, 6), "as_published": "calculated",
+                     "unit": "%", "status": r["status"], "base_break": 0, "source": "calculated", "calculated": "y"})
     # IIP: latest vintage per period and row
     il = {}
     for r in iip_v:
@@ -290,9 +305,9 @@ def update(force=False, **_):
     # --- outputs
     rows.sort(key=lambda r: (r["date"], r["span"], ORDER[r["code"]], r["price"], r["measure"]))
     cols = ["date", "period", "span", "code", "isic", "industry", "level", "price", "measure", "value", "rate", "as_published",
-            "unit", "status", "release", "release_date", "base_break", "label_vi", "source"]
+            "unit", "status", "release", "release_date", "base_break", "label_vi", "source", "calculated"]
     with open(OUT / "vn_gdp.csv", "w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=cols, lineterminator="\n")
+        w = csv.DictWriter(f, fieldnames=cols, lineterminator="\n", restval="")
         w.writeheader()
         w.writerows(rows)
     vint.sort(key=lambda r: (r["release"], r["period"], r["span"], ORDER[r["code"]], r["price"], r["measure"]))
@@ -303,7 +318,8 @@ def update(force=False, **_):
         w.writerows(vint)
     with open(OUT / "vn_gdp_dash.csv", "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=["date", "period", "span", "code", "isic", "industry", "level", "price", "measure",
-                                          "value", "rate", "status", "base_break"], lineterminator="\n", extrasaction="ignore")
+                                          "value", "rate", "status", "base_break", "calculated"], lineterminator="\n",
+                           extrasaction="ignore", restval="")
         w.writeheader()
         w.writerows(rows)
     iip.sort(key=lambda r: (r["date"], [c for c, *_ in IIP_ROWS].index(r["code"])))
