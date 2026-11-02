@@ -155,7 +155,8 @@ def check(rows, sh):
         if miss:
             errors.append(f"{last} {price} growth missing for {miss}")
     for r in sh:
-        if r["measure"] == "yoy" and not -40 < r["value"] < 60:
+        lim = (-90, 200) if "." in r["code"] else (-40, 60)   # sub-rows (e.g. air transport) swing far more
+        if r["measure"] == "yoy" and not lim[0] < r["value"] < lim[1]:
             errors.append(f"{r['fq'] or r['fy']} {r['code']} {r['price']} growth {r['value']} out of range")
         if r["measure"] == "level" and r["value"] <= 0 and r["code"] in ("gdp", "gva"):
             errors.append(f"{r['fq'] or r['fy']} {r['code']} level {r['value']}")
