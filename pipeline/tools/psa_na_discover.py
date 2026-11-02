@@ -55,9 +55,39 @@ def is_na(rec, tree):
     return False
 
 
+TARGETS = [
+    "2B/NA/QT/1SUM/0052B5BPRQ1.px", "2B/NA/QT/1SUM/0062B5BPRQ2.px", "2B/NA/QT/1SUM/0082B5BPRQ4.px",
+    "2B/NA/QT/23QNAP/PRD/0982B5BQPQ1.px", "2B/NA/QT/23QNAP/PRD/0992B5BQPQ2.px",
+    "2B/NA/AN/1SUM/0052B5BPRA1.px", "2B/NA/AN/1SUM/0062B5BPRA2.px",
+    "2B/NA/AN/23ANAP/0942B5BANA1.px", "2B/NA/AN/23ANAP/0952B5BANA2.px",
+    "2B/SANA/1SUM/042B5BPRS2.px", "2B/NA/QT/1SUM/0122B5BPCQ1.px",
+]
+
+
+def targets(out):
+    """Round na2: the GDP tables the Philippines GDP tab needs, metadata and full data."""
+    summary = {}
+    for path in TARGETS:
+        name = path.replace("/", "__")
+        try:
+            m = psa.meta(path)
+            (out / f"{name}.meta.json").write_text(json.dumps(m, ensure_ascii=False))
+            rows = psa.get(path, {}, m)
+            with gzip.open(out / f"{name}.json.gz", "wt", encoding="utf-8") as f:
+                json.dump(rows, f, ensure_ascii=False)
+            summary[path] = {"title": m.get("title"), "vars": {v["code"]: v["valueTexts"][:60] for v in m["variables"]},
+                             "rows": len(rows), "nonnull": sum(x["value"] is not None for x in rows)}
+            print(path, len(rows))
+        except Exception as e:  # noqa: BLE001
+            summary[path] = {"error": repr(e)[:300]}
+    (out / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=1))
+
+
 def main(out):
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
+    if len(sys.argv) > 2 and sys.argv[2] == "targets":
+        return targets(out)
     start = time.time()
     tree = []
     walk("", 0, tree, start)
