@@ -370,17 +370,20 @@ dash.calc('gdp_table', {
       svg.append('path').attr('d', d3.line().defined((r) => r[s.key] != null).x((r) => x(J.date(r.date))).y((r) => y(r[s.key]))(rows))
         .attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', s.thin ? 1.75 : 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
     });
+    // x-axis: one label per point at a regular step counted back from the last point, which reads YTD when it is
+    // the year to date (as in Chart 1, the axis simply runs on to it).
+    svg.selectAll(`g[transform="translate(0,${H - 20})"]`).remove();
+    const n = rows.length, room = Math.max(1, Math.floor((W - ml - mr) / 44));
+    const stepY = [1, 2, 5, 10].find((k) => n / k <= room) || 10;
+    rows.forEach((r, k) => {
+      if ((n - 1 - k) % stepY !== 0) return;
+      const px = x(J.date(r.date)), lab = r.ytd != null && r[srcPick] == null ? 'YTD' : r.date.slice(0, 4);
+      svg.append('text').attr('x', px).attr('y', H - 20).attr('dy', '0.71em').attr('font-size', 12).attr('fill', 'var(--ad-ink)')
+        .attr('text-anchor', px > W - mr - 16 ? 'end' : px < ml + 16 ? 'start' : 'middle').text(lab);
+    });
     rows.filter((r) => r.ytd != null).forEach((r) => {
       svg.append('circle').attr('cx', x(J.date(r.date))).attr('cy', y(r.ytd)).attr('r', 4.5).attr('fill', 'var(--color-panel)')
         .attr('stroke', 'var(--ad-c2)').attr('stroke-width', 2);
-      // x-axis label for the year-to-date point; year labels too close to it are hidden
-      const px = x(J.date(r.date));
-      svg.selectAll(`g[transform="translate(0,${H - 20})"] g.tick`).each(function () {
-        const m = /translate\(([-\d.]+)/.exec(this.getAttribute('transform') || '');
-        if (m && Math.abs(Number(m[1]) - px) < 34) d3.select(this).select('text').attr('display', 'none');
-      });
-      svg.append('text').attr('x', px).attr('y', H - 20).attr('dy', '0.71em').attr('text-anchor', px > W - mr - 14 ? 'end' : 'middle').attr('font-size', 12)
-        .attr('fill', 'var(--ad-ink)').text('YTD');
     });
     const card = document.getElementById(id), tip = J.tip(card);
     const rule = svg.append('line').attr('y1', 8).attr('y2', H - 22).attr('stroke', 'var(--cds-chart-reference)').attr('display', 'none');
