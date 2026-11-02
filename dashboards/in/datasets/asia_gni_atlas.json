@@ -1,0 +1,10 @@
+{
+  "title": "GNI, Atlas method (WDI)",
+  "description": "GNI, Atlas method, current US$ (total), World Bank WDI NY.GNP.ATLS.CD, as published; the central dataset for all dashboards (data/asia/gni/asia_gni_atlas.csv). The India page reads India's rows (Chart 1, Nominal).",
+  "schedule": "Replaced after the monthly WDI check by a scheduled task that reads AsiaDecoded/asia-vitals.",
+  "source": {
+    "kind": "file",
+    "name": "asia_gni_atlas_W2025-205df5.csv",
+    "url": "/_blob/78d9fe37d5d1a0073ea76e545ac2c4de"
+  }
+}
