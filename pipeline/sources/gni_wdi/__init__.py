@@ -18,7 +18,10 @@ Writes data/asia/gni/:
   asia_gni_pc.csv        economy, name, year, gni_pc (US$, as published)
   asia_income_class.csv  economy, name, data_year, fiscal_year, income_group (as published)
   asia_gni_index.csv     economy, name, t_year, t_rule, year, k (= year - t), gni_pc, index (= 100 at t; calculated)
+  asia_gni_latest.csv    economy, name, year, gni_pc, income_group (for that data year), group_fiscal_year
+  asia_gni_thresholds.csv data_year, low_max, lm_min, um_min, h_min (US$, as published in OGHIST "Thresholds", from 1987)
   long.csv, release.json, release_row.json (code W<latest year>-<hash>)
+The classification file used is the newest (by last data year) of the download and any OGHIST*.xlsx in raw/asia/gni/.
 """
 import csv
 import hashlib
@@ -68,24 +71,14 @@ def wdi():
     return out, js[0].get("lastupdated")
 
 
-def oghist():
-    import openpyxl  # noqa: PLC0415
-    errs = []
-    for u in OGHIST:
-        try:
-            raw = get(u)
-            wb = openpyxl.load_workbook(io.BytesIO(raw), read_only=True, data_only=True)
-            break
-        except Exception as e:  # noqa: BLE001
-            errs.append(f"{u}: {type(e).__name__}: {str(e)[:100]}")
-    else:
-        raise CheckFailed(["historical classifications not reachable"] + errs)
+def _parse(wb):
+    """(classes {econ: {data_year: (group, fiscal_year)}}, thresholds {data_year: {...}}, latest data year)."""
     ws = next((wb[n] for n in wb.sheetnames if "analytical" in n.lower()), wb[wb.sheetnames[0]])
     rows = [list(r) for r in ws.iter_rows(values_only=True)]
     yr_row = next((r for r in rows if any(isinstance(c, str) and "calendar year" in c.lower() for c in r if c)), None)
     fy_row = next((r for r in rows if any(isinstance(c, str) and c.strip().upper().startswith("FY") for c in r if c)), None)
     if not yr_row:
-        raise CheckFailed(["OGHIST: no 'Data for calendar year' row"])
+        raise ValueError("no 'Data for calendar year' row")
     cols = {i: int(c) for i, c in enumerate(yr_row) if isinstance(c, (int, float)) or (isinstance(c, str) and c.strip().isdigit())}
     fys = {i: str(fy_row[i]).strip() for i in cols} if fy_row else {}
     iso = {v[0]: k for k, v in ECON.items()}
@@ -97,14 +90,48 @@ def oghist():
                 v = str(r[i]).strip() if i < len(r) and r[i] is not None else ""
                 if v in ("L", "LM", "LM*", "UM", "H"):
                     out.setdefault(iso[code], {})[y] = (v.rstrip("*"), fys.get(i, ""))
-    return out
+    thr = {}
+    if "Thresholds" in wb.sheetnames:
+        trows = [list(r) for r in wb["Thresholds"].iter_rows(values_only=True)]
+        ty = next((r for r in trows if r and isinstance(r[0], str) and "calendar year" in r[0].lower()), None)
+        lab = {str(r[0]).strip(): r for r in trows if r and isinstance(r[0], str)}
+        num = lambda x: int("".join(ch for ch in str(x) if ch.isdigit())) if x is not None and any(ch.isdigit() for ch in str(x)) else None  # noqa: E731
+        if ty and "Low income" in lab and "High income" in lab:
+            for i, y in enumerate(ty):
+                if isinstance(y, (int, float)) and lab["Low income"][i] is not None:
+                    lm = str(lab["Lower middle income"][i]).replace(" ", "").split("-")
+                    um = str(lab["Upper middle income"][i]).replace(" ", "").split("-")
+                    thr[int(y)] = {"low_max": num(lab["Low income"][i]), "lm_min": num(lm[0]), "um_min": num(um[0]), "h_min": num(lab["High income"][i])}
+    return out, thr, max(cols.values())
+
+
+def oghist():
+    """Historical classifications: the newest of the World Bank download and the copy kept in raw/asia/gni/ (a copy of
+    OGHIST supplied on 2 Nov 2026, July 2026 release, data to 2025; the download URLs serve an older release)."""
+    import openpyxl  # noqa: PLC0415
+    errs, got = [], []
+    for u in OGHIST:
+        try:
+            got.append((u, _parse(openpyxl.load_workbook(io.BytesIO(get(u)), read_only=True, data_only=True))))
+            break
+        except Exception as e:  # noqa: BLE001
+            errs.append(f"{u}: {type(e).__name__}: {str(e)[:100]}")
+    for f in sorted((DATA.parent / "raw" / "asia" / "gni").glob("OGHIST*.xlsx")):
+        try:
+            got.append((f"raw/asia/gni/{f.name}", _parse(openpyxl.load_workbook(f, read_only=True, data_only=True))))
+        except Exception as e:  # noqa: BLE001
+            errs.append(f"{f.name}: {type(e).__name__}: {str(e)[:100]}")
+    if not got:
+        raise CheckFailed(["historical classifications not reachable"] + errs)
+    src, (cls, thr, last) = max(got, key=lambda g: g[1][2])
+    return cls, thr, last, src, errs
 
 
 def update(force=False, **_):
     OUT.mkdir(parents=True, exist_ok=True)
     state = read_json(OUT / "release.json", {}) or {}
     gni, wdi_updated = wdi()
-    cls = oghist()
+    cls, thr, cls_last, cls_src, cls_errs = oghist()
     errors, warnings = [], []
     for k in ECON:
         if k not in gni:
@@ -126,6 +153,15 @@ def update(force=False, **_):
                 t[k], rule[k] = b, "first year classified lower-middle income after low income"
                 break
     latest = max(max(v) for v in gni.values())
+    if cls_last < latest:
+        warnings.append(f"classifications end at data year {cls_last} ({cls_src}); WDI has {latest}: add the newer OGHIST to raw/asia/gni/")
+    rows_latest = []
+    for k in ECON:
+        y = max(gni[k])
+        g = cls.get(k, {}).get(y, ("", ""))[0]
+        rows_latest.append({"economy": k, "name": ECON[k][1], "year": y, "gni_pc": round(gni[k][y]), "income_group": g,
+                            "group_fiscal_year": cls.get(k, {}).get(y, ("", ""))[1]})
+    rows_thr = [{"data_year": y, **v} for y, v in sorted(thr.items())]
     rows_pc = [{"economy": k, "name": ECON[k][1], "year": y, "gni_pc": round(v)} for k in ECON for y, v in sorted(gni[k].items())]
     rows_cls = [{"economy": k, "name": ECON[k][1], "data_year": y, "fiscal_year": f, "income_group": g}
                 for k in ECON for y, (g, f) in sorted(cls[k].items())]
@@ -137,12 +173,13 @@ def update(force=False, **_):
         for y, v in sorted(gni[k].items()):
             rows_ix.append({"economy": k, "name": ECON[k][1], "t_year": ty, "t_rule": rule[k], "year": y, "k": y - ty,
                             "gni_pc": round(v), "index": round(v / gni[k][ty] * 100, 1)})
-    fp = hashlib.sha256(json.dumps([rows_pc, rows_cls, rows_ix], sort_keys=True).encode()).hexdigest()[:16]
+    fp = hashlib.sha256(json.dumps([rows_pc, rows_cls, rows_ix, rows_latest, rows_thr], sort_keys=True).encode()).hexdigest()[:16]
     summary = "t: " + ", ".join(f"{k} {t[k]}" for k in ECON if k in t) + "; no t (upper-middle or high income from the start): " + \
               ", ".join(f"{k} ({cls[k][min(cls[k])][0]} in {min(cls[k])})" for k in ECON if k not in t)
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change; {summary}", "warnings": warnings}
-    for name, rows in (("asia_gni_pc.csv", rows_pc), ("asia_income_class.csv", rows_cls), ("asia_gni_index.csv", rows_ix)):
+    for name, rows in (("asia_gni_pc.csv", rows_pc), ("asia_income_class.csv", rows_cls), ("asia_gni_index.csv", rows_ix),
+                       ("asia_gni_latest.csv", rows_latest), ("asia_gni_thresholds.csv", rows_thr)):
         with open(OUT / name, "w", newline="", encoding="utf-8") as fh:
             w = csv.DictWriter(fh, fieldnames=list(rows[0]), lineterminator="\n")
             w.writeheader()
@@ -152,5 +189,5 @@ def update(force=False, **_):
                          "measure": "level", "area": "", "freq": "A", "date": f"{r['year']}-01-01", "value": r["gni_pc"], "unit": "US$",
                          "source": SOURCE, "release": code} for r in rows_pc), OUT / "long.csv")
     write_release(OUT, {"code": code, "label": f"WDI GNI per capita to {latest}", "latest_year": latest, "wdi_updated": wdi_updated,
-                        "t_years": t}, warnings, len(rows_pc), {"fingerprint": fp, "long_rows": nlong})
+                        "t_years": t, "classifications": cls_src, "classifications_last_year": cls_last}, warnings, len(rows_pc), {"fingerprint": fp, "long_rows": nlong})
     return {"updated": True, "code": code, "summary": summary, "warnings": warnings}
