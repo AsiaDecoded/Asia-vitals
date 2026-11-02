@@ -114,12 +114,92 @@
   </header>
 
   <nav class="jg-tabs" role="tablist" aria-label="Sections">
-    <button role="tab" data-tab="inflation" aria-selected="true">Inflation</button>
+    <button role="tab" data-tab="gdp" aria-selected="true">GDP</button>
+    <button role="tab" data-tab="inflation" aria-selected="false">Inflation</button>
     <button role="tab" data-tab="financial" aria-selected="false">Financial</button>
     <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
   </nav>
 
-  <section class="jg-page" id="inflation" role="tabpanel">
+  <section class="jg-page" id="gdp" role="tabpanel">
+    <section class="jg-tiles" id="gdp-headline" aria-label="Headline GDP figures (to come)">
+      <div class="jg-card jg-tile"><div class="lbl">&nbsp;</div><div class="val">—</div><div class="sub">&nbsp;</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">&nbsp;</div><div class="val">—</div><div class="sub">&nbsp;</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">&nbsp;</div><div class="val">—</div><div class="sub">&nbsp;</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">&nbsp;</div><div class="val">—</div><div class="sub">&nbsp;</div></div>
+      <div class="jg-card jg-tile"><div class="lbl">&nbsp;</div><div class="val">—</div><div class="sub">&nbsp;</div></div>
+    </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="gdp-usd" data-freq="a">
+        <div class="jg-cardhead">
+          <div><h2>Thailand GDP</h2></div>
+          <div class="jg-seg" id="gdp-usd-seg" role="group" aria-label="Price basis">
+            <button data-u="NY.GDP.MKTP.KD" aria-pressed="true">Real</button><button data-u="NY.GDP.MKTP.CD" aria-pressed="false">Nominal</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units" id="gdp-usd-units">US$ billion, constant 2015 prices</span><div class="jg-legend" id="gdp-usd-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-usd-chart" data-source="th_gdp_intl gdp_cagr"></div>
+        <div class="ad-foot"><span>Source: WDI</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="gdp-pc" data-freq="a">
+        <div class="jg-cardhead">
+          <div><h2>Thailand GDP per capita</h2></div>
+          <div class="jg-seg" id="gdp-pc-seg" role="group" aria-label="Price basis">
+            <button data-u="NY.GDP.PCAP.KD" aria-pressed="true">Real</button><button data-u="NY.GDP.PCAP.CD" aria-pressed="false">Nominal</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units" id="gdp-pc-units">US$, constant 2015 prices</span><div class="jg-legend" id="gdp-pc-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-pc-chart" data-source="th_gdp_intl asia_gni_pc gdp_cagr"></div>
+        <div class="ad-foot"><span>Source: WDI</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="gdp-growth">
+        <div class="jg-cardhead">
+          <div><h2>Thailand GDP growth</h2></div>
+          <div class="jg-seg" id="gdp-growth-seg" role="group" aria-label="Price basis">
+            <button data-s="real" aria-pressed="true">Real</button><button data-s="nominal" aria-pressed="false">Nominal</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units" id="gdp-growth-units">% y/y</span><div class="jg-legend" id="gdp-growth-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-growth-chart" data-source="th_gdp"></div>
+        <div class="ad-foot"><span>Source: NESDC</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="gdp-sectors">
+        <div class="jg-cardhead">
+          <div><h2>Thailand real GDP growth by sector</h2></div>
+        </div>
+        <div class="ad-top"><span class="ad-units" id="gdp-sectors-units">% y/y</span><div class="jg-legend" id="gdp-sectors-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-sectors-chart" data-source="th_gdp"></div>
+        <div class="ad-foot"><span>Source: NESDC</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="gdp-src" data-freq="a">
+        <div class="jg-cardhead">
+          <div><h2>Thailand real GDP growth</h2></div>
+          <div class="jg-seg" id="gdp-src-seg" role="group" aria-label="Source">
+            <button data-src="nesdc" aria-pressed="true">NESDC</button><button data-src="wb" aria-pressed="false">World Bank</button>
+          </div>
+        </div>
+        <div class="ad-top"><span class="ad-units" id="gdp-src-units">% y/y</span><div class="jg-legend" id="gdp-src-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-src-chart" data-source="th_gdp th_gdp_intl"></div>
+        <div class="ad-foot"><span>Source: NESDC, WDI</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="gdp-annual" data-freq="a">
+        <div class="jg-cardhead">
+          <div><h2>Thailand real GDP growth by sector</h2></div>
+        </div>
+        <div class="ad-top"><span class="ad-units" id="gdp-annual-units">% y/y</span><div class="jg-legend" id="gdp-annual-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="gdp-annual-chart" data-source="th_gdp"></div>
+        <div class="ad-foot"><span>Source: NESDC</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+  </section>
+
+  <section class="jg-page" id="inflation" role="tabpanel" hidden>
     <div class="jg-pagehead">
       <div class="jg-note" style="margin:0"><span id="cpi-month" class="dash-skeleton" style="color: var(--color-fg)">—</span></div>
       <p class="jg-take" id="cpi-takeaway"><span class="dash-skeleton">—</span></p>
@@ -263,9 +343,21 @@
   </section>
 
   <section class="jg-page" id="methodology" role="tabpanel" hidden>
+    <article class="jg-card ad-method" id="method-gdp">
+      <h2>GDP</h2>
+      <ul>
+        <li><b>Source:</b> the Office of the National Economic and Social Development Council (NESDC), Quarterly Gross Domestic Product, statistical tables (Excel), as published: GDP at current market prices (Table 3), chain volume measures with reference year 2002 (Table 4) and their y/y growth (Table 4.1, one decimal). Quarters from Q1 1993, y/y from Q1 1994; full years from 1993. NESDC marks preliminary years (p1) and revised quarters (r). Released about seven weeks after the quarter, at 09:30 Bangkok time.</li>
+        <li><b>Sectors:</b> NESDC&rsquo;s own grouping: agriculture (ISIC A); industrial (B to E: mining, manufacturing, electricity and gas, water and waste); services (F to U), which in NESDC&rsquo;s tables include construction.</li>
+        <li><b>Chain volume measures are not additive:</b> sectors do not sum to GDP in real terms. At current prices they do.</li>
+        <li><b>Calculated here (flagged in the tooltips):</b> nominal GDP growth (Chart 3, Nominal), each quarter&rsquo;s current-price level on the same quarter a year earlier; and the year to date (open circles on Charts 5 and 6), the chain volume levels of the quarters published so far on the same quarters a year earlier. NESDC&rsquo;s annual chain volume level is the sum of its four quarters, so this is its own annual method; for the first half of 2026 it gives 2.4%, the figure in NESDC&rsquo;s release.</li>
+        <li><b>US dollar levels (Charts 1 and 2):</b> World Bank, World Development Indicators, as published: GDP and GDP per capita in current US$ and in constant 2015 US$; GNI per capita on the Atlas method, the series behind the World Bank&rsquo;s income groups. The dashed line marks 1987, the year Thailand became lower-middle income (data year). CAGR: compound annual growth from 1987 to the latest World Bank year, calculated on this page.</li>
+        <li><b>Annual growth, World Bank (Chart 5):</b> WDI real GDP growth (NY.GDP.MKTP.KD.ZG) from 1961; from 1994 it matches NESDC&rsquo;s annual figures.</li>
+      </ul>
+      <div class="ad-foot"><span>Source: NESDC; World Bank, WDI</span><span class="ad-brand">Asia Decoded</span></div>
+    </article>
     <article class="jg-card ad-method" id="method-data">
       <h2>Data</h2>
-      <p>Every figure on this page is published by Thailand&rsquo;s Trade Policy and Strategy Office (TPSO), Ministry of Commerce, and taken from its Open API (index-api.tpso.go.th). Nothing is calculated, linked or seasonally adjusted here.</p>
+      <p>Every price figure on this page is published by Thailand&rsquo;s Trade Policy and Strategy Office (TPSO), Ministry of Commerce, and taken from its Open API (index-api.tpso.go.th). Nothing is calculated, linked or seasonally adjusted here.</p>
       <h3>Consumer prices</h3>
       <ul>
         <li><b>Index:</b> general CPI, 2023 = 100. The 2023 basket (464 items) has been used since January 2025. TPSO links the 2023-based index back to January 1976; the page shows that series as published.</li>
@@ -325,7 +417,8 @@ window.JG = {
     if (lbl && out.length) {
       const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
       const q = card.closest('.jg-page') && card.closest('.jg-page').id === 'gdp';
-      const f = (d) => (q ? `Q${Math.floor((Number(d.slice(5, 7)) - 1) / 3) + 1} ${d.slice(0, 4)}` : MON[Number(d.slice(5, 7)) - 1] + ' ' + d.slice(0, 4));
+      const a = card.dataset.freq === 'a';
+      const f = (d) => (a ? d.slice(0, 4) : q ? `Q${Math.floor((Number(d.slice(5, 7)) - 1) / 3) + 1} ${d.slice(0, 4)}` : MON[Number(d.slice(5, 7)) - 1] + ' ' + d.slice(0, 4));
       lbl.textContent = `${f(out[0].date)} to ${f(out[out.length - 1].date)}`;
     }
     return out;
@@ -334,7 +427,7 @@ window.JG = {
     document.querySelectorAll('.jg-card').forEach((card) => {
       const chart = card.querySelector(':scope > .jg-chart'); if (!chart || !card.id) return;
       const page = card.closest('.jg-page'); const p = page ? page.id : 'inflation';
-      const redraw = () => { if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else if (p === 'financial') JG.redrawFx && JG.redrawFx(); };
+      const redraw = () => { if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else if (p === 'financial') JG.redrawFx && JG.redrawFx(); else if (p === 'gdp') JG.redrawGdp && JG.redrawGdp(); };
       const wrap = document.createElement('div'); wrap.className = 'ad-slider';
       const track = document.createElement('div'); track.className = 'ad-slider-track';
       const sel = document.createElement('div'); sel.className = 'ad-slider-sel'; track.appendChild(sel);
@@ -465,12 +558,14 @@ window.JG = {
     dash.setLink(id);
     if (id === 'inflation' && J.redrawCpi) J.redrawCpi();
     if (id === 'financial' && J.redrawFx) J.redrawFx();
+    if (id === 'gdp' && J.redrawGdp) J.redrawGdp();
   };
   J.show = show;
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
-  if (['methodology', 'financial'].includes(location.hash.slice(1))) show(location.hash.slice(1));
+  if (['methodology', 'financial', 'inflation'].includes(location.hash.slice(1))) show(location.hash.slice(1));
 })();
 </script>
 
 <script src="cpi.js"></script>
+<script src="gdp.js"></script>
 <script src="export.js"></script>
