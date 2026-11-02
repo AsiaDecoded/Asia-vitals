@@ -193,6 +193,13 @@
         <p class="ax-note">t is the first data year the World Bank classified the economy lower-middle income after low income (China 1997, India 2007, Indonesia 1993, the first of two crossings, Vietnam 2009). Thailand, Malaysia and the Philippines were already lower-middle income when the classifications began, so t = 1987, the first year. Index calculated by Asia Decoded. Taiwan is not in the World Bank&rsquo;s data; Japan, South Korea, Hong Kong and Singapore were upper-middle or high income from 1987.</p>
         <p class="ax-note">Source: World Bank, World Development Indicators (NY.GNP.PCAP.CD) and historical income classifications.</p>
       </div>
+      <div class="ax-card" id="gnilog-card">
+        <div class="ax-cardhead"><h3>GNI per capita since becoming middle income, log scale</h3></div>
+        <p class="ax-note">The chart above on a logarithmic axis: equal vertical distances are equal percentage changes, so the slope of a line is its growth rate and lines growing at the same pace run parallel. Same economies and years as the chart above (set them there).</p>
+        <div class="ax-gni ax-gni-log" data-draw="gniLogChart" data-source="asia_gni_index"></div>
+        <div class="ax-legend" id="gnilog-legend"></div>
+        <p class="ax-note">Source: World Bank, World Development Indicators (NY.GNP.PCAP.CD) and historical income classifications; index calculated by Asia Decoded.</p>
+      </div>
       <div class="ax-card" id="gnil-card">
         <div class="ax-cardhead">
           <h3>GNI per capita, <span data-draw="gnilYear" data-source="asia_gni_latest">latest year</span></h3>
@@ -524,10 +531,11 @@
     acts.append(b1, b2); list.append(acts);
   };
   document.addEventListener('click', (ev) => { const d = document.getElementById('gni-pick'); if (d && d.open && !d.contains(ev.target)) d.open = false; });
-  dash.draw('gniChart', (box) => {
+  // draws the indexed chart; log = true for the log-scale copy, which follows the first chart's picker and slider
+  const gniDraw = (box, log) => {
     const D = dash.data('asia_gni_index');
     box.replaceChildren();
-    const leg = document.getElementById('gni-legend'); if (leg) leg.replaceChildren();
+    const leg = document.getElementById(log ? 'gnilog-legend' : 'gni-legend'); if (leg) leg.replaceChildren();
     if (D.status !== 'ok' || !D.data.length) return;
     const by = new Map();
     for (const r of D.data) {
@@ -536,7 +544,7 @@
       by.set(r.economy, o);
     }
     const all = GNI_ORDER.filter((e) => by.has(e)).map((e) => by.get(e)).concat([...by.values()].filter((o) => !GNI_ORDER.includes(o.economy)));
-    gniPicker(all);
+    if (!log) gniPicker(all);
     const n = document.getElementById('gni-pick-n'); if (n) n.textContent = `(${all.filter((a) => gniSel.has(a.economy)).length} of ${all.length})`;
     const sel = all.filter((a) => gniSel.has(a.economy));
     if (!sel.length) { box.append(el('div', 'ax-ph small', 'Pick one or more economies.')); return; }
@@ -545,7 +553,7 @@
     const K0 = Math.max(kmin, Math.min(gniRange.a, kmax - 1));
     const k1 = gniRange.b == null ? kmax : Math.max(K0 + 1, Math.min(gniRange.b, kmax));
     const ia = document.getElementById('gni-a'), ib = document.getElementById('gni-b');
-    if (ia && ib) {
+    if (ia && ib && !log) {
       for (const inp of [ia, ib]) { inp.min = kmin; inp.max = kmax; }
       ia.value = K0; ib.value = k1;
       const fl = document.getElementById('gni-fill');
@@ -557,15 +565,19 @@
     const vmax = Math.max(...ser.flatMap((a) => a.pts.map((p) => p.ix)), K0 <= 0 && k1 >= 0 ? 100 : 0);
     const W = Math.max(320, box.clientWidth || 640), H = W < 600 ? 260 : 320, top = 10, bot = 26;
     const ystep = vmax > 1200 ? 400 : vmax > 600 ? 200 : vmax > 300 ? 100 : 50;
-    const ymax = Math.ceil(vmax / ystep) * ystep;
+    const LT = [12.5, 25, 50, 100, 200, 400, 800, 1600, 3200, 6400];
+    const vmin = Math.min(...ser.flatMap((a) => a.pts.map((p) => p.ix)), K0 <= 0 && k1 >= 0 ? 100 : Infinity);
+    const ylo = log ? ([...LT].reverse().find((t) => t <= vmin) || 6.25) : 0;
+    const ymax = log ? (LT.find((t) => t >= vmax) || vmax) : Math.ceil(vmax / ystep) * ystep;
+    const yticks = log ? LT.filter((t) => t >= ylo && t <= ymax) : Array.from({length: ymax / ystep + 1}, (_, i) => i * ystep);
     const ml = String(ymax).length * 7 + 14, mr = 12;
     const x = (k) => ml + (k - K0) / (k1 - K0 || 1) * (W - ml - mr);
-    const y = (v) => top + (1 - v / ymax) * (H - top - bot);
+    const y = (v) => top + (1 - (log ? (Math.log(Math.max(v, ylo)) - Math.log(ylo)) / (Math.log(ymax) - Math.log(ylo)) : v / ymax)) * (H - top - bot);
     const svg = document.createElementNS(SVG, 'svg');
     svg.setAttribute('viewBox', `0 0 ${W} ${H}`); svg.setAttribute('role', 'img');
     svg.setAttribute('aria-label', 'GNI per capita indexed to 100 at t: ' + ser.map((a) => `${a.name} ${f1(a.pts[a.pts.length - 1].ix)} after ${a.pts[a.pts.length - 1].k} years`).join(', '));
     const add = (tag, attrs, text) => { const nd = document.createElementNS(SVG, tag); for (const k in attrs) nd.setAttribute(k, attrs[k]); if (text != null) nd.textContent = text; svg.append(nd); return nd; };
-    for (let v = 0; v <= ymax; v += ystep) {
+    for (const v of yticks) {
       add('line', {x1: ml, x2: W - mr, y1: y(v), y2: y(v), stroke: 'var(--color-border-line)', 'stroke-width': v === 100 ? 1.2 : 0.6, opacity: v === 100 ? 1 : 0.7});
       add('text', {x: ml - 6, y: y(v) + 4, 'text-anchor': 'end', 'font-size': 11, fill: 'var(--color-fg-muted)'}, String(v));
     }
@@ -602,7 +614,9 @@
     hit.addEventListener('touchstart', (ev) => move(ev.touches[0]), {passive: true});
     hit.addEventListener('mouseleave', () => { rule.setAttribute('display', 'none'); tip.style.display = 'none'; });
     if (leg) for (const a of ser) { const it = el('span'); const sw = el('span', 'sw'); sw.style.background = GNI_COL[a.economy] || '#666'; it.append(sw, `${a.name} (t = ${a.t})`); leg.append(it); }
-  });
+  };
+  dash.draw('gniLogChart', (box) => gniDraw(box, true));
+  dash.draw('gniChart', (box) => { gniDraw(box, false); const lb = document.querySelector('.ax-gni-log'); if (lb) gniDraw(lb, true); });
   // GNI per capita, latest year, bars coloured by income group, with that year's thresholds
   const GRP = {H: ['High income', '#1F4E79'], UM: ['Upper-middle income', '#0C84FF'], LM: ['Lower-middle income', '#FFC000'], L: ['Low income', '#BD1B21']};
   dash.draw('gnilYear', (n) => { const D = dash.data('asia_gni_latest'); n.textContent = D.status === 'ok' && D.data.length ? String(Math.max(...D.data.map((r) => Number(r.year)))) : 'latest year'; });
