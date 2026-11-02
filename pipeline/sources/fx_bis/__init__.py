@@ -1,5 +1,5 @@
 """Exchange rates, national currency per US dollar, daily, as published by the BIS (bilateral exchange rates, WS_XRU,
-compiled from national sources), for the eleven economies other than Indonesia (Indonesia's rupiah is id_fx_bis,
+compiled from national sources), for the ten economies other than Indonesia and Vietnam (Indonesia's rupiah is id_fx_bis,
 with monthly series too). Asked for 2 Nov 2026: a Financial tab on every dashboard with the BIS daily chart only.
 Vietnam is not fetched: the BIS has no daily dong series (D.VN.VND.A returns nothing). The source fails only if every
 economy fails; one that fails its checks is reported as a warning and left as it was.
