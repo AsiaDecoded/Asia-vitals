@@ -549,6 +549,178 @@ def read_quarter_book(data, name):
     return out
 
 
+# --- GDP by industry (report tables 1 and 2, or the combined Q1 table) and industrial production by VSIC division
+
+GDP_ROWS = [  # (code, ISIC section, English label, level, Vietnamese label pattern)
+    ("total", "", "GDP", 0, r"^TỔNG SỐ"),
+    ("agri", "A", "Agriculture, forestry and fishing", 1, r"^Nông,? lâm nghiệp và th[uủ]y sản"),
+    ("agriculture", "A01", "Agriculture", 2, r"^Nông nghiệp\s*$"),
+    ("forestry", "A02", "Forestry", 2, r"^Lâm nghiệp\s*$"),
+    ("fishery", "A03", "Fishing and aquaculture", 2, r"^Th[uủ]y sản\s*$"),
+    ("ind_constr", "B-F", "Industry and construction", 1, r"^Công nghiệp và xây dựng"),
+    ("industry", "B-E", "Industry", 2, r"^Công nghiệp\s*$"),
+    ("mining", "B", "Mining and quarrying", 3, r"^Khai khoáng"),
+    ("manufacturing", "C", "Manufacturing", 3, r"^Công nghiệp chế biến,? chế tạo"),
+    ("electricity", "D", "Electricity, gas, steam and air conditioning", 3, r"^Sản xuất và phân phối điện"),
+    ("water", "E", "Water supply, sewerage and waste management", 3, r"^Cung cấp nước"),
+    ("construction", "F", "Construction", 2, r"^Xây dựng"),
+    ("services", "G-T", "Services", 1, r"^Dịch vụ\s*$"),
+    ("trade", "G", "Wholesale and retail trade; repair of motor vehicles", 2, r"^Bán buôn và bán lẻ"),
+    ("transport", "H", "Transport and storage", 2, r"^Vận tải,? kho bãi"),
+    ("accommodation", "I", "Accommodation and food services", 2, r"^Dịch vụ lưu trú và ăn uống"),
+    ("info_comm", "J", "Information and communication", 2, r"^Thông tin và truyền thông"),
+    ("finance", "K", "Financial, banking and insurance activities", 2, r"^Hoạt động tài chính"),
+    ("real_estate", "L", "Real estate activities", 2, r"^Hoạt động kinh doanh bất động sản"),
+    ("professional", "M", "Professional, scientific and technical activities", 2, r"^Hoạt động chuyên môn"),
+    ("admin_support", "N", "Administrative and support services", 2, r"^Hoạt động hành chính"),
+    ("public_admin", "O", "Communist Party, socio-political organisations, public administration and defence; "
+                          "compulsory social security", 2, r"^Hoạt động của Đảng"),
+    ("education", "P", "Education and training", 2, r"^Giáo dục"),
+    ("health", "Q", "Health and social work", 2, r"^Y tế"),
+    ("arts", "R", "Arts, entertainment and recreation", 2, r"^Nghệ thuật"),
+    ("other_services", "S", "Other service activities", 2, r"^Hoạt động dịch vụ khác"),
+    ("households", "T", "Activities of households as employers and own-use production", 2, r"^Hoạt động làm thuê"),
+    ("taxes", "", "Taxes on products less subsidies on products", 1, r"^Thuế sản phẩm"),
+]
+
+
+def _norm(s):
+    return re.sub(r"\s+", " ", str(s or "")).strip()
+
+
+def _period(t, year, ref_q):
+    t = t.lower()
+    m = re.search(r"quý\s+(iv|i{1,3})\b", t)
+    if m:
+        return f"{year}-Q{ROMAN[m.group(1).upper()]}", "Q"
+    if re.search(r"6\s*tháng", t):
+        return f"{year}-H1", "6M"
+    if re.search(r"9\s*tháng", t):
+        return f"{year}-9M", "9M"
+    if re.search(r"cả\s*năm|\bcả\b", t):
+        return str(year), "Y"
+    return None, None
+
+
+def read_gdp_book(data, name, ref):
+    """GDP by industry from one quarter-end report workbook. ref = 'YYYY-Qn' (the reference quarter).
+    Rows {period, span, code, price, measure, status, value, as_published} with price current|constant_2010|constant_2020,
+    measure level (VND bn) | share (% of GDP at current prices) | yoy (same period last year = 100, or % growth where
+    NSO prints the growth rate). Nothing is calculated; as_published is 'index' or 'pct'."""
+    year, ref_q = int(ref[:4]), int(ref[-1])
+    out = []
+    for sname, rows in _sheets(data, name):
+        title = _norm(" ".join(str(c) for r in rows[:3] for c in r if isinstance(c, str)))
+        if not re.search(r"Tổng sản phẩm trong nước", title) or re.search(r"địa bàn|GRDP", title):
+            continue
+        first = next((i for i, r in enumerate(rows) if any(isinstance(c, str) and re.match(r"\s*TỔNG SỐ", c) for c in r[:2])), None)
+        if first is None:
+            continue
+        ncol = max(len(r) for r in rows[:first + 1])
+        filled = []   # header rows, merged labels carried right
+        for r in rows[1:first]:
+            row, last = [], ""
+            for j in range(ncol):
+                c = r[j] if j < len(r) else None
+                if isinstance(c, str) and c.strip():
+                    last = _norm(c)
+                row.append(last if j >= 2 else "")
+            filled.append(row)
+        raw_hdr = [[_norm(r[j]) if j < len(r) and isinstance(r[j], str) else "" for j in range(ncol)] for r in rows[1:first]]
+        base_m = re.search(r"giá so sánh (\d{4})", title)
+        title0 = _norm(" ".join(str(c) for c in rows[0] if isinstance(c, str)))
+        combined = not re.search(r"giá hiện hành|giá so sánh", title0)   # Q1: one table, both price bases
+        cols = {}
+        for j in range(2, ncol):
+            if rows[first][j] is None or _cell(rows[first][j]) is None:
+                continue
+            own = " ".join(h[j] for h in raw_hdr)
+            carried = " ".join(h[j] for h in filled)
+            if combined:
+                bm = re.search(r"giá so sánh (\d{4})", carried)
+                price = f"constant_{bm.group(1)}" if bm else "current" if "hiện hành" in carried else None
+                period, span = f"{year}-Q1", "Q"
+                status = "estimate"
+            else:
+                price = f"constant_{base_m.group(1)}" if base_m else "current"
+                period, span = _period(own, year, ref_q)
+                status = "preliminary" if "Sơ bộ" in carried else "estimate" if "Ước tính" in carried else ""
+            if not price or not period:
+                continue
+            if re.search(r"Cơ cấu", carried):
+                measure, pub = "share", "pct"
+            elif re.search(r"So với cùng kỳ|phát triển|Tốc độ", carried, re.I):
+                measure = "yoy"
+                pub = "pct" if re.search(r"Tốc độ tăng", carried, re.I) else "index"
+            else:
+                measure, pub = "level", "level"
+            cols[j] = (price, period, span, measure, status, pub)
+        # status of a share or growth column = that of the level column for the same period
+        lev = {(p, per): st for p, per, _, m, st, _ in cols.values() if m == "level"}
+        seen = set()
+        for r in rows[first:]:
+            lab = _norm(next((c for c in r[:2] if isinstance(c, str) and c.strip()), ""))
+            code = next((c for c, _, _, _, pat in GDP_ROWS if re.search(pat, lab)), None)
+            if not code or code in seen:
+                continue
+            seen.add(code)
+            for j, (price, period, span, measure, status, pub) in cols.items():
+                v = _cell(r[j]) if j < len(r) else None
+                if v is None:
+                    continue
+                st = status if measure == "level" else lev.get(("current" if measure == "share" else price, period), status)
+                out.append({"period": period, "span": span, "code": code, "price": price, "measure": measure,
+                            "status": st, "value": v, "as_published": pub, "label_vi": lab})
+    return out
+
+
+IIP_ROWS_SKIP = re.compile(r"^%$|^Đơn vị|^Ngành", re.I)
+
+
+def read_iip_book(data, name, ref):
+    """Quarterly industrial production index by VSIC section and division (same quarter last year = 100) from one
+    quarter-end report workbook: the quarterly IIP table (Q2-Q4 books), or the Q1 book's single IIP table (its
+    'Quý I ... so với cùng kỳ' column). Rows {period, label_vi, order, value}."""
+    year = int(ref[:4])
+    out = []
+    for sname, rows in _sheets(data, name):
+        title = _norm(" ".join(str(c) for r in rows[:2] for c in r if isinstance(c, str)))
+        if not re.search(r"Chỉ số sản xuất công nghiệp", title) or re.search(r"lao động|địa phương", title, re.I):
+            continue
+        quarterly = re.search(r"các quý", title)
+        first = next((i for i, r in enumerate(rows) if r and isinstance(r[0], str) and re.match(r"\s*Toàn ngành", r[0])), None)
+        if first is None:
+            continue
+        ncol = max(len(r) for r in rows[:first + 1])
+        hdr = [" ".join(_norm(r[j]) for r in rows[1:first] if j < len(r) and isinstance(r[j], str)) for j in range(ncol)]
+        cols = {}
+        for j in range(1, ncol):
+            m = re.search(r"Quý\s+(IV|I{1,3})\b", hdr[j], re.I)
+            if not m:
+                continue
+            if quarterly or re.search(r"cùng kỳ", hdr[j]):
+                cols[j] = f"{year}-Q{ROMAN[m.group(1)]}"
+        if not quarterly and not cols:
+            continue
+        if not quarterly and ref.endswith("Q1"):
+            cols = {j: p for j, p in cols.items() if p.endswith("Q1")}
+        elif not quarterly:
+            continue   # monthly table in a Q2-Q4 book: the quarterly table is used
+        prev = ""
+        for k, r in enumerate(rows[first:]):
+            lab = _norm(r[0]) if r and isinstance(r[0], str) else ""
+            if not lab or IIP_ROWS_SKIP.search(lab):
+                continue
+            if lab[0].islower() and prev:   # a label wrapped onto the next row (values on the second row)
+                lab = f"{prev} {lab}"
+            prev = lab
+            for j, p in cols.items():
+                v = _cell(r[j]) if j < len(r) else None
+                if v is not None:
+                    out.append({"period": p, "label_vi": lab, "order": k, "value": v})
+    return out
+
+
 def labels_for(kind):
     rows = PPI_ROWS if kind == "ppi" else INPUT_ROWS if kind == "input" else TRADE_ROWS if kind in ("export", "import") else [("all", "All items", "")]
     return {s: lab for s, lab, _ in rows}

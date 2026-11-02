@@ -1,17 +1,17 @@
-name: Vietnam test (dev-vn)
+name: Vietnam test
 
-# Runs the Vietnam sources (vn_cpi_nso, vn_ppi_nso) on the dev-vn branch, which are not yet in the shared
-# registry (pipeline/sources/__init__.py), with their checks; then checks the September 2026 figures against
-# NSO's release (3 Oct 2026) and pushes data/vn and raw/vn back to dev-vn. Not part of the scheduled update
-# until merged.
+# Runs the Vietnam sources (vn_cpi_nso, vn_ppi_nso, vn_gdp_nso) on main with their checks, whether or not they
+# are in the shared registry yet; then checks the September 2026 / Q3 2026 figures against NSO's release
+# (3 Oct 2026) and pushes data/vn and raw/vn back to main. vn_gdp_nso reads the workbooks vn_ppi_nso stores.
 on:
   workflow_dispatch:
   push:
-    branches: [dev-vn]
+    branches: [main]
     paths:
       - pipeline/core/nso_vn.py
       - pipeline/sources/vn_cpi_nso/**
       - pipeline/sources/vn_ppi_nso/**
+      - pipeline/sources/vn_gdp_nso/**
       - .github/workflows/vn-test.yml
 
 permissions:
@@ -40,7 +40,7 @@ jobs:
           sys.path.insert(0, "pipeline")
           from core.common import CheckFailed
           rc, lines = 0, []
-          for name in ("vn_cpi_nso", "vn_ppi_nso"):
+          for name in ("vn_cpi_nso", "vn_ppi_nso", "vn_gdp_nso"):
               t0 = time.time()
               lines.append(f"== {name}")
               try:
@@ -104,7 +104,31 @@ jobs:
           sys.exit(1 if bad else 0)
           PY
 
-      - name: Push data and report to dev-vn
+      - name: Q3 2026 GDP against the NSO release
+        run: |
+          python -I - <<'PY'
+          import csv, sys
+          # NSO, 3 Oct 2026 release and its 12 Oct 2026 article: real growth y/y, % (2020 prices).
+          REL = {("2026-Q3", "total"): 9.95, ("2026-9M", "total"): 9.01,
+                 ("2026-Q3", "agri"): 4.21, ("2026-Q3", "ind_constr"): 12.50, ("2026-Q3", "services"): 9.45,
+                 ("2026-9M", "agri"): 4.02, ("2026-9M", "ind_constr"): 11.21, ("2026-9M", "services"): 8.69,
+                 ("2026-9M", "manufacturing"): 11.36, ("2026-9M", "construction"): 12.22}
+          rows = {(r["period"], r["code"]): float(r["rate"]) for r in csv.DictReader(open("data/vn/gdp/vn_gdp.csv"))
+                  if r["measure"] == "yoy" and r["price"] == "constant_2020"}
+          bad = []
+          for k, v in REL.items():
+              x = rows.get(k)
+              if x is None: bad.append(f"GDP {k}: missing")
+              elif abs(round(x, 2) - v) > 0.0051: bad.append(f"GDP {k}: {x:.3f} vs release {v}")
+          iip = {r["code"] for r in csv.DictReader(open("data/vn/gdp/vn_iip.csv")) if r["period"] == "2026-Q3"}
+          if len([c for c in iip if c.startswith("c") and len(c) == 3]) != 24: bad.append("IIP Q3 2026: not 24 manufacturing divisions")
+          msg = f"Q3 2026 GDP vs NSO release: {len(REL) + 1 - len(bad)}/{len(REL) + 1} match"
+          print(msg); [print("  -", b) for b in bad]
+          open("vn_report.txt", "a").write(msg + "\n" + "".join(f"  - {b}\n" for b in bad))
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: Push data and report to main
         if: always()
         run: |
           git config user.name "asia-vitals bot"
@@ -112,4 +136,4 @@ jobs:
           mkdir -p data/vn && cp vn_report.txt data/vn/test_report.txt 2>/dev/null || true
           git add data/vn; if [ -d raw/vn ]; then git add raw/vn; fi
           git commit -qm "Vietnam test run ${{ github.run_id }}" || exit 0
-          for i in 1 2 3; do git pull -q --rebase origin dev-vn && git push -q origin HEAD:dev-vn && break; sleep 5; done
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
