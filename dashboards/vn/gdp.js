@@ -436,7 +436,7 @@ dash.calc('gdp_table', {
     growth();
     sources();
     qLines('gdp-sectors', [{ key: 'gdp', name: 'GDP', color: 'var(--ad-c2)', rows: series('total', 'constant', 'yoy') }]
-      .concat(SEC.map(([code, name, color]) => ({ key: code, name, color, thin: true, dash: code === 'taxes', rows: series(code, 'constant', 'yoy') }))));
+      .concat(SEC.slice(0, 3).map(([code, name, color]) => ({ key: code, name, color, thin: true, rows: series(code, 'constant', 'yoy') }))));
     level();
     structure();
     aLines('gdp-annual', [{ key: 'gdp', name: 'Real GDP', color: 'var(--ad-c2)', bar: true, rows: annual('sector', 'total', 'constant_2010', 'yoy') }]
