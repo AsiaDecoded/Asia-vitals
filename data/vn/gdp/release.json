@@ -3,18 +3,24 @@
  "label": "2026 Q3",
  "latest_quarter": "2026-Q3",
  "latest_book": "2026-Q3",
- "table": "NSO socio-economic report tables 1-2 (GDP) and quarterly IIP",
+ "table": "NSO socio-economic report tables 1-2 (GDP) and quarterly IIP; PX-Web E03.02, E03.03, E03.08, E03.09 (annual)",
  "books": 27,
- "processed_at": "2026-11-02T01:53:43Z",
+ "processed_at": "2026-11-02T02:05:10Z",
  "rows": 5264,
- "warnings": [],
- "long_rows": 4695,
+ "warnings": [
+  "2020 nominal GDP: report 6293145 vs yearbook 8044386 (revised)",
+  "2021 nominal GDP: report 8398606 vs yearbook 8487476 (revised)",
+  "2022 nominal GDP: report 9513327 vs yearbook 9621372 (revised)",
+  "2023 nominal GDP: report 10221815 vs yearbook 10319059 (revised)"
+ ],
+ "long_rows": 6140,
  "iip_rows": 999,
  "vintage_rows": 7616,
+ "annual_rows": 1445,
  "history": [
   {
    "code": "G2026-Q3",
-   "processed_at": "2026-11-02T01:53:43Z"
+   "processed_at": "2026-11-02T02:05:10Z"
   }
  ]
 }
