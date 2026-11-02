@@ -115,14 +115,19 @@
   const USD = {
     'gdp-usd': { div: 1e9, unit: 'US$ billion', tipUnit: ' bn', fmt: ',.1f',
       real: [{ key: 'NY.GDP.MKTP.KD', name: 'GDP', color: 'var(--ad-c2)' }],
-      nominal: [{ key: 'NY.GDP.MKTP.CD', name: 'GDP', color: 'var(--ad-c1)' }] },
+      // GNI, Atlas method (total): from the central dataset asia_gni_atlas (data/asia/gni/asia_gni_atlas.csv: economy,
+      // name, year, gni_atlas in US$), once the main chat adds it; until then Chart 1 Nominal shows GDP only.
+      nominal: [{ key: 'NY.GDP.MKTP.CD', name: 'GDP', color: 'var(--ad-c2)' },
+        { key: 'gni_atlas', name: 'GNI, Atlas method', color: 'var(--ad-c1)', ds: 'asia_gni_atlas', field: 'gni_atlas', optional: true }] },
     'gdp-pc': { div: 1, unit: 'US$', tipUnit: '', fmt: ',.0f',
       real: [{ key: 'NY.GDP.PCAP.KD', name: 'GDP per capita', color: 'var(--ad-c2)' }],
       nominal: [{ key: 'NY.GDP.PCAP.CD', name: 'GDP per capita', color: 'var(--ad-c2)' },
-        { key: 'gni_pc', name: 'GNI per capita, Atlas method', color: 'var(--ad-c1)', ds: 'asia_gni_pc' }] },
+        { key: 'gni_pc', name: 'GNI per capita, Atlas method', color: 'var(--ad-c1)', ds: 'asia_gni_pc', field: 'gni_pc' }] },
   };
   function usd(id, pick) {
-    const C = USD[id], box = document.getElementById(id + '-chart'), nominal = /\.CD$/.test(pick), S = nominal ? C.nominal : C.real;
+    const C = USD[id], box = document.getElementById(id + '-chart'), nominal = /\.CD$/.test(pick);
+    // An optional series is drawn only once its dataset exists and has loaded.
+    const S = (nominal ? C.nominal : C.real).filter((s) => !s.optional || dash.data(s.ds).status === 'ok');
     document.getElementById(id + '-units').textContent = `${C.unit}, ${nominal ? 'current prices' : 'constant 2015 prices'}`;
     legend(id + '-legend', S.length > 1 ? S : []);
     const ids = ['in_gdp_intl'].concat(S.filter((s) => s.ds).map((s) => s.ds));
@@ -130,9 +135,8 @@
     const by = new Map();
     const put = (date, k, v) => { if (v == null) return; if (!by.has(date)) by.set(date, { date }); by.get(date)[k] = v; };
     dash.data('in_gdp_intl').data.forEach((r) => { if (S.some((s) => s.key === r.series)) put(r.date, r.series, N(r.value) / C.div); });
-    if (S.some((s) => s.ds === 'asia_gni_pc')) {
-      dash.data('asia_gni_pc').data.filter((r) => r.economy === 'IN').forEach((r) => put(`${r.year}-04-01`, 'gni_pc', N(r.gni_pc)));
-    }
+    S.filter((s) => s.ds).forEach((s) => dash.data(s.ds).data.filter((r) => r.economy === 'IN')
+      .forEach((r) => put(`${r.year}-04-01`, s.key, N(r[s.field]) == null ? null : N(r[s.field]) / C.div)));
     const rows = Array.from(by.values()).sort((a, b) => (a.date < b.date ? -1 : 1));
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 280;
