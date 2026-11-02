@@ -8,6 +8,8 @@
   const failed = (st) => st === 'error' || st === 'connect' || st === 'declined';
   const N = (v) => (v === '' || v == null ? null : Number(v));
   const fyLab = (d) => { const y = Number(d.slice(0, 4)); return `${y}-${String((y + 1) % 100).padStart(2, '0')}`; };
+  // Charts 1-2: FY and the two-digit year the fiscal year ends in (WDI 2025 = 2025-26 = FY26), at the user's request.
+  const fyShort = (d) => `FY${String((Number(d.slice(0, 4)) + 1) % 100).padStart(2, '0')}`;
   const BASE_SWITCH = '2023-04-01';   // annual: MoSPI's 2022-23 base from 2023-24 (2011-12 base before)
   const LMI = 2007;                   // lower-middle income on 2007 GNI per capita (World Bank FY09; data/asia/gni)
   const SEC = [
@@ -136,7 +138,7 @@
     const H = 280;
     const yr = (r) => Number(r.date.slice(0, 4));
     const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null).concat([0]), true,
-      (r) => fyLab(r.date), { anchorEvery: (r, k) => ((yr(r) - LMI) % k + k) % k === 0, labelWidth: 62, top: 24 });
+      (r) => fyShort(r.date), { anchorEvery: (r, k) => ((yr(r) - LMI) % k + k) % k === 0, labelWidth: 44, top: 24 });
     if (yr(rows[0]) < LMI) vline(svg, x, `${LMI}-04-01`, H, 'Lower-middle income');
     // CAGR, calculated on this page: (latest value / value in the lower-middle-income year)^(1 / years) - 1, per series shown.
     const at = (k) => rows.find((r) => yr(r) === k);
@@ -149,11 +151,11 @@
       const lh = 16, tx = W - mr - 8, ty = H - 40 - (cagr.length - 1) * lh;
       const t = svg.append('text').attr('font-size', 12).attr('font-weight', 700).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'end');
       cagr.forEach((c, k) => t.append('tspan').attr('x', tx).attr('dy', k ? lh : 0).attr('fill', S.length > 1 ? c.s.color : null)
-        .text(`${fyLab(`${LMI}-04-01`)} to ${fyLab(`${c.END}-04-01`)} CAGR: ${c.v.toFixed(1)}% p.a.`));
+        .text(`${fyShort(`${LMI}-04-01`)}–${fyShort(`${c.END}-04-01`)} CAGR: ${c.v.toFixed(1)}% p.a.`));
       t.attr('x', tx).attr('y', ty);
     }
     const dots = drawLines(svg, x, y, rows, S);
-    const extras = hover(svg, document.getElementById(id), x, rows, H, ml, W - mr, (r) => `${fyLab(r.date)} (WDI ${yr(r)})`, (r, px) => {
+    const extras = hover(svg, document.getElementById(id), x, rows, H, ml, W - mr, (r) => `${fyShort(r.date)} (${fyLab(r.date)})`, (r, px) => {
       dots.forEach((d, i) => { const v = r[S[i].key]; d.attr('display', v == null ? 'none' : null).attr('cx', px).attr('cy', v == null ? 0 : y(v)); });
       return S.map((s) => [s.color, s.name, r[s.key] == null ? 'n/a' : d3.format(C.fmt)(r[s.key]) + C.tipUnit]);
     });
