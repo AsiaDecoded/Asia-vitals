@@ -51,4 +51,5 @@ SOURCES = [
     "vn_cpi_nso",
     "vn_ppi_nso",
     "fx_bis",
+    "eq_yahoo",
 ]
