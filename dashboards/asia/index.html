@@ -177,6 +177,7 @@
   <section class="ax-page" id="gdp" role="tabpanel" hidden>
     <section class="ax-sec">
       <h2>Income</h2>
+      <div class="ax-grid">
       <div class="ax-card" id="gni-card">
         <div class="ax-cardhead">
           <h3>GNI per capita since becoming middle income</h3>
@@ -195,10 +196,11 @@
       </div>
       <div class="ax-card" id="gnilog-card">
         <div class="ax-cardhead"><h3>GNI per capita since becoming middle income, log scale</h3></div>
-        <p class="ax-note">The chart above on a logarithmic axis: equal vertical distances are equal percentage changes, so the slope of a line is its growth rate and lines growing at the same pace run parallel. Same economies and years as the chart above (set them there).</p>
+        <p class="ax-note">The same index on a logarithmic axis: equal vertical distances are equal percentage changes, so the slope of a line is its growth rate and lines growing at the same pace run parallel. Economies and years follow the linear chart (set them there).</p>
         <div class="ax-gni ax-gni-log" data-draw="gniLogChart" data-source="asia_gni_index"></div>
         <div class="ax-legend" id="gnilog-legend"></div>
         <p class="ax-note">Source: World Bank, World Development Indicators (NY.GNP.PCAP.CD) and historical income classifications; index calculated by Asia Decoded.</p>
+      </div>
       </div>
       <div class="ax-card" id="gnil-card">
         <div class="ax-cardhead">
