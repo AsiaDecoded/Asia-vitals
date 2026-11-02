@@ -446,9 +446,9 @@ dash.calc('gdp_table', {
     const { svg, x, y, W, ml } = frame(box, rows, H, rows.map((r) => r.v).concat([0]), (v) => d3.format(',.0f')(v), true, mr);
     svg.append('path').attr('d', d3.line().x((r) => x(J.date(r.date))).y((r) => y(r.v))(rows))
       .attr('fill', 'none').attr('stroke', col).attr('stroke-width', 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
-    // Lower-middle income: World Bank classification history (OGHIST): low income to FY10, lower-middle income from FY11
-    // (1 July 2010, on 2009 GNI per capita). Dashed line at 2010. CAGR starts in 2009 (user).
-    const LMI = 2010, START = 2009, lx = x(J.date(`${LMI}-12-01`));
+    // Lower-middle income: on 2009 GNI per capita, announced by the World Bank in July 2010 (FY11 in its classification
+    // history, OGHIST). Dashed line at 2009, the data year (user). CAGR starts in 2009.
+    const LMI = 2009, START = 2009, lx = x(J.date(`${LMI}-12-01`));
     if (rows[0].date.slice(0, 4) < String(LMI)) {
       svg.append('line').attr('x1', lx).attr('x2', lx).attr('y1', 12).attr('y2', H - 24).attr('stroke', 'var(--ad-axis)').attr('stroke-dasharray', '3 3');
       svg.append('text').attr('x', lx - 5).attr('y', 18).attr('font-size', 12).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'end').text('Lower-middle income');
