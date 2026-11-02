@@ -73,7 +73,7 @@ dash.calc('gdp_table', {
   const SPAN_YTD = { 3: 'Q', 6: '6M', 9: '9M', 12: 'Y' };
   const SEC = [['agri', 'Agriculture, forestry and fishing', 'var(--ad-c6)'], ['ind_constr', 'Industry and construction', 'var(--ad-c1)'],
     ['services', 'Services', 'var(--ad-c5)'], ['taxes', 'Taxes on products less subsidies', 'var(--ad-c4)']];
-  let growthBasis = 'real', levelBasis = 'current', srcPick = 'nso', usdPick = 'NY.GDP.MKTP.CD';
+  let growthBasis = 'real', levelBasis = 'current', srcPick = 'nso', usdPick = 'NY.GDP.MKTP.CD', pcPick = 'NY.GDP.PCAP.CD';
   ['gdp-sectors', 'gdp-structure', 'gdp-mfg', 'gdp-mfg-share', 'gdp-exp', 'gdp-exp-share'].forEach((id) => { J.period[id] = 0; });
 
   const G = () => dash.data('vn_gdp');
@@ -129,7 +129,7 @@ dash.calc('gdp_table', {
     extras.push(...dots);
   }
 
-  // Chart 1: quarterly real growth (bars), or the year-to-date figure.
+  // Chart 3: quarterly real growth (bars), or the year-to-date figure.
   // Base periods of NSO's constant prices: a dashed line where the base changes, labelled with the new base.
   const BASE_LABEL = (price) => (/constant_(\d{4})/.exec(price) || [])[1] ? `${/constant_(\d{4})/.exec(price)[1]} prices` : '';
   function baseMarks(svg, x, rows, H) {
@@ -142,9 +142,9 @@ dash.calc('gdp_table', {
     }
   }
 
-  const START = '2018-01-01';   // Chart 1 from 2018 (single quarters in NSO's tables from Q2 2018)
+  const START = '2018-01-01';   // Chart 3 from 2018 (single quarters in NSO's tables from Q2 2018)
 
-  // Chart 1: GDP growth on the same quarter a year earlier, single quarters from 2018. Real: NSO's, as published on
+  // Chart 3: GDP growth on the same quarter a year earlier, single quarters from 2018. Real: NSO's, as published on
   // each base (dashed line at a base change). Nominal: calculated in the pipeline from NSO's current-price levels.
   function growth() {
     const id = 'gdp-growth', box = document.getElementById(id + '-chart');
@@ -168,7 +168,7 @@ dash.calc('gdp_table', {
       : [[col, 'Nominal GDP, y/y (calculated)', r.v.toFixed(2) + '%']]));
   }
 
-  // Chart 5: published shares of GDP at current prices, stacked.
+  // Chart 7: published shares of GDP at current prices, stacked.
   function structure() {
     const id = 'gdp-structure', box = document.getElementById(id + '-chart');
     const S = SEC.map(([code, name, color]) => ({ code, name, color, bar: true }));
@@ -374,7 +374,7 @@ dash.calc('gdp_table', {
   }
 
 
-  // Chart 3: real GDP growth, annual: NSO's yearbook and the World Bank's WDI.
+  // Chart 5: real GDP growth, annual: NSO's yearbook and the World Bank's WDI.
   function sources() {
     const id = 'gdp-src', box = document.getElementById(id + '-chart');
     const S = [{ key: 'nso', name: 'NSO', color: 'var(--ad-c2)' }, { key: 'wb', name: 'World Bank', color: 'var(--ad-c2)' }].filter((s) => s.key === srcPick);
@@ -399,7 +399,7 @@ dash.calc('gdp_table', {
         .attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', s.thin ? 1.75 : 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
     });
     // x-axis: one label per point at a regular step counted back from the last point, which reads YTD when it is
-    // the year to date (as in Chart 1, the axis simply runs on to it).
+    // the year to date (as in Chart 3, the axis simply runs on to it).
     svg.selectAll(`g[transform="translate(0,${H - 20})"]`).remove();
     const n = rows.length, room = Math.max(1, Math.floor((W - ml - mr) / 44));
     const stepY = [1, 2, 5, 10].find((k) => n / k <= room) || 10;
@@ -429,15 +429,20 @@ dash.calc('gdp_table', {
   }
 
 
-  // Chart 6: GDP in US dollars, annual, World Bank WDI (US$ billion = the World Bank's US$ / 1e9).
-  function usd() {
-    const id = 'gdp-usd', box = document.getElementById(id + '-chart');
-    document.getElementById(id + '-units').textContent = usdPick === 'NY.GDP.MKTP.CD' ? 'US$ billion, current prices' : 'US$ billion, constant 2015 prices';
+  // Charts 1 and 2: GDP and GDP per capita in US dollars, annual, World Bank WDI, as published (GDP shown in US$ billion,
+  // the World Bank's US$ / 1e9; per capita in US$).
+  const USD = {
+    'gdp-usd': { div: 1e9, unit: 'US$ billion', tipUnit: ' bn', fmt: ',.1f', names: { 'NY.GDP.MKTP.CD': 'GDP, current US$', 'NY.GDP.MKTP.KD': 'GDP, constant 2015 US$' } },
+    'gdp-pc': { div: 1, unit: 'US$', tipUnit: '', fmt: ',.0f', names: { 'NY.GDP.PCAP.CD': 'GDP per capita, current US$', 'NY.GDP.PCAP.KD': 'GDP per capita, constant 2015 US$' } },
+  };
+  function usd(id, pick) {
+    const C = USD[id], box = document.getElementById(id + '-chart'), nominal = /\.CD$/.test(pick);
+    document.getElementById(id + '-units').textContent = `${C.unit}, ${nominal ? 'current prices' : 'constant 2015 prices'}`;
     if (!status(box, ['vn_gdp_intl'])) return;
-    const rows = dash.data('vn_gdp_intl').data.filter((r) => r.series === usdPick && num(r.value) != null)
-      .map((r) => ({ date: r.date, v: num(r.value) / 1e9 })).sort((a, b) => (a.date < b.date ? -1 : 1));
+    const rows = dash.data('vn_gdp_intl').data.filter((r) => r.series === pick && num(r.value) != null)
+      .map((r) => ({ date: r.date, v: num(r.value) / C.div })).sort((a, b) => (a.date < b.date ? -1 : 1));
     if (!rows.length) { box.replaceChildren(); return; }
-    const H = 280, mr = 8, col = usdPick === 'NY.GDP.MKTP.CD' ? 'var(--ad-c1)' : 'var(--ad-c2)';
+    const H = 280, mr = 8, col = nominal ? 'var(--ad-c1)' : 'var(--ad-c2)';
     const { svg, x, y, W, ml } = frame(box, rows, H, rows.map((r) => r.v).concat([0]), (v) => d3.format(',.0f')(v), true, mr);
     svg.append('path').attr('d', d3.line().x((r) => x(J.date(r.date))).y((r) => y(r.v))(rows))
       .attr('fill', 'none').attr('stroke', col).attr('stroke-width', 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
@@ -450,7 +455,7 @@ dash.calc('gdp_table', {
         const [mx] = d3.pointer(ev); const r = rows[bis(rows, x.invert(mx))]; const px = x(J.date(r.date));
         rule.attr('display', null).attr('x1', px).attr('x2', px); dot.attr('display', null).attr('cx', px).attr('cy', y(r.v));
         const cr = card.getBoundingClientRect();
-        J.showTip(card, tip, r.date.slice(0, 4), [[col, usdPick === 'NY.GDP.MKTP.CD' ? 'GDP, current US$' : 'GDP, constant 2015 US$', d3.format(',.1f')(r.v) + ' bn']], ev.clientX - cr.left, ev.clientY - cr.top);
+        J.showTip(card, tip, r.date.slice(0, 4), [[col, C.names[pick], d3.format(C.fmt)(r.v) + C.tipUnit]], ev.clientX - cr.left, ev.clientY - cr.top);
       })
       .on('mouseleave', () => { rule.attr('display', 'none'); dot.attr('display', 'none'); tip.style.display = 'none'; });
   }
@@ -503,7 +508,8 @@ dash.calc('gdp_table', {
     sources();
     qLines('gdp-sectors', [{ key: 'gdp', name: 'GDP', color: 'var(--ad-c2)', rows: series('total', 'constant', 'yoy') }]
       .concat(SEC.slice(0, 3).map(([code, name, color]) => ({ key: code, name, color, thin: true, rows: series(code, 'constant', 'yoy') }))), { start: START });
-    usd();
+    usd('gdp-usd', usdPick);
+    usd('gdp-pc', pcPick);
     structure();
     aLines('gdp-annual', [{ key: 'gdp', code: 'total', name: 'Real GDP', color: 'var(--ad-c2)', rows: annual('sector', 'total', 'constant_2010', 'yoy') }]
       .concat(SEC.slice(0, 3).map(([code, name, color]) => ({ key: code, code, name, color, thin: true, rows: annual('sector', code, 'constant_2010', 'yoy') }))), { ytd: true });
@@ -533,6 +539,7 @@ dash.calc('gdp_table', {
   seg('gdp-growth-seg', 's', (v) => { growthBasis = v; });
   seg('gdp-src-seg', 'src', (v) => { srcPick = v; });
   seg('gdp-usd-seg', 'u', (v) => { usdPick = v; });
+  seg('gdp-pc-seg', 'u', (v) => { pcPick = v; });
 
   dash.onData(() => { tiles(); takeaway(); indTable(); gdpHeat(); iipHeat(); J.redrawGdp(); });
 })();
