@@ -1,6 +1,8 @@
 """Exchange rates, national currency per US dollar, daily, as published by the BIS (bilateral exchange rates, WS_XRU,
 compiled from national sources), for the eleven economies other than Indonesia (Indonesia's rupiah is id_fx_bis,
 with monthly series too). Asked for 2 Nov 2026: a Financial tab on every dashboard with the BIS daily chart only.
+Vietnam is not fetched: the BIS has no daily dong series (D.VN.VND.A returns nothing). The source fails only if every
+economy fails; one that fails its checks is reported as a warning and left as it was.
 
 API: BIS SDMX v2 (stats.bis.org), CSV, no key; one call per economy (series D.<area>.<currency>.A, full history).
 Writes data/<cc>/fx/: <cc>_fx_daily.csv (date, rate), long.csv (daily rows), release.json, release_row.json
@@ -18,7 +20,7 @@ import urllib.request
 from core.common import DATA, CheckFailed, read_json, write_long, write_release
 
 NAME = "fx_bis"
-DESCRIPTION = "Currency per US dollar, BIS daily (11 economies; Indonesia is id_fx_bis)"
+DESCRIPTION = "Currency per US dollar, BIS daily (10 economies; Indonesia is id_fx_bis; no Vietnam)"
 SOURCE = "BIS, bilateral exchange rates (WS_XRU), from national sources"
 URL = "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/{key}?format=csv"
 
@@ -34,7 +36,6 @@ ECONOMIES = {
     "my": ("MY", "MYR", "Malaysian ringgit", 2, 7),
     "sg": ("SG", "SGD", "Singapore dollar", 1, 2.5),
     "ph": ("PH", "PHP", "Philippine peso", 10, 100),
-    "vn": ("VN", "VND", "Vietnamese dong", 5000, 40000),
 }
 
 
@@ -97,7 +98,7 @@ def one(cc, force):
 
 
 def update(force=False, **_):
-    done, errors, warnings = [], [], []
+    done, errors, warnings, unchanged = [], [], [], 0
     for cc in ECONOMIES:
         try:
             res, err, warn = one(cc, force)
@@ -108,7 +109,9 @@ def update(force=False, **_):
             errors += err
         elif res:
             done.append(res)
-    if errors and not done:
+        else:
+            unchanged += 1
+    if errors and not done and not unchanged:
         raise CheckFailed(errors)
     warnings += [f"not updated: {e}" for e in errors]
     if not done:
