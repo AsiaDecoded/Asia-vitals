@@ -4,7 +4,7 @@ returns on the Asia Financial tab, "use Yahoo Finance". Not an official source.
 
 For each economy the first ticker that returns data is used (a list of candidates where Yahoo's symbol is uncertain).
 Writes data/asia/eq/:
-  asia_eq_daily.csv  economy, ticker, date, close (local-currency index points, from 2015)
+  asia_eq_daily.csv  economy, ticker, date, close (local-currency index points, from 2015; completed sessions only)
   asia_eq_ytd.csv    economy, name, index, ticker, base_date, base_close, latest_date, latest_close, ytd_pct
                      ytd_pct = (latest close / last close on or before 31 Dec of the previous year - 1) x 100 (calculated):
                      price index, local currency, dividends not included
@@ -35,16 +35,25 @@ INDICES = {
     "MY": ("Malaysia", "FTSE Bursa Malaysia KLCI", ["^KLSE"]),
     "SG": ("Singapore", "Straits Times Index", ["^STI"]),
     "PH": ("Philippines", "PSEi", ["PSEI.PS", "^PSEI"]),
-    "VN": ("Vietnam", "VN-Index", ["^VNINDEX.VN", "^VNINDEX", "VNINDEX.VN", "E1VFVN30.VN"]),
+    "VN": ("Vietnam", "VN-Index", ["^VNINDEX.VN", "^VNINDEX", "VNINDEX.VN"]),
 }
 
 
 def fetch(ticker):
+    """Daily closes from START, completed sessions only (today's bar, which Yahoo fills with the live price during the
+    session, is dropped: Singapore date). Some symbols return only the latest quote for a dated range; then period=max."""
+    import datetime as dt  # noqa: PLC0415
     import yfinance as yf  # noqa: PLC0415
-    df = yf.Ticker(ticker).history(start=START, interval="1d", auto_adjust=False)
-    if df is None or df.empty:
-        return {}
-    return {ix.strftime("%Y-%m-%d"): float(v) for ix, v in df["Close"].items() if v == v and v > 0}
+    today = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=8)).date().isoformat()
+    out = {}
+    for kw in ({"start": START}, {"period": "max"}):
+        df = yf.Ticker(ticker).history(interval="1d", auto_adjust=False, **kw)
+        if df is not None and not df.empty:
+            out = {ix.strftime("%Y-%m-%d"): float(v) for ix, v in df["Close"].items() if v == v and v > 0}
+            out = {d: v for d, v in out.items() if START <= d < today}
+        if len(out) >= 500:
+            break
+    return out
 
 
 def update(force=False, **_):
