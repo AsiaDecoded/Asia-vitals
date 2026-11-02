@@ -170,7 +170,7 @@ dash.calc('tiles_extra', {
 (() => {
   const J = window.JG;
   J.theme();
-  J.addSliders(() => { J.redrawCpi(); if (J.redrawFx) J.redrawFx(); });
+  J.addSliders(() => { J.redrawCpi(); if (J.redrawFx) J.redrawFx(); if (J.redrawGdp) J.redrawGdp(); });
   dash.onData(() => J.theme());
 
   const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -638,10 +638,11 @@ dash.calc('tiles_extra', {
     dash.setLink(id);
     if (id === 'inflation') J.redrawCpi();
     if (id === 'financial') J.redrawFx();
+    if (id === 'gdp' && J.redrawGdp) J.redrawGdp();
   };
   J.show = show;
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
-  if (['financial', 'methodology'].includes(location.hash.slice(1))) show(location.hash.slice(1));
+  if (['inflation', 'financial', 'methodology'].includes(location.hash.slice(1))) show(location.hash.slice(1));
 
   dash.onData(() => { tiles(); takeaway(); moversTable(); divHeat(); J.redrawCpi(); });
 })();

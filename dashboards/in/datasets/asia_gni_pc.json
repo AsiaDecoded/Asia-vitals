@@ -1,0 +1,14 @@
+{
+ "description": "GNI per capita, Atlas method, US$, World Bank WDI, as published; the central dataset for all dashboards (data/asia/gni/asia_gni_pc.csv). The India page reads India's rows.",
+ "schedule": "Replaced after the monthly WDI check by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "asia_gni_pc.csv",
+  "url": "/_blob/a81604bf50affb8401d6ca889c393d20"
+ },
+ "title": "GNI per capita, Atlas (WDI)",
+ "updated": {
+  "at": "2026-11-02T14:32:00Z",
+  "by": "Claude"
+ }
+}

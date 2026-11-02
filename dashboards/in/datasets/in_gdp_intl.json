@@ -1,0 +1,14 @@
+{
+ "description": "GDP and GDP per capita in current and constant 2015 US$, and real GDP growth, annual by fiscal year, as published in the World Bank's World Development Indicators. Built by the AsiaDecoded/asia-vitals pipeline (data/in/gdp/in_gdp_intl.csv).",
+ "schedule": "Replaced when the World Bank updates WDI, by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "in_gdp_intl_W2026-10-08.csv",
+  "url": "/_blob/5b92e4606b2c7c3556177cdd887b7353"
+ },
+ "title": "India GDP in US$ (World Bank)",
+ "updated": {
+  "at": "2026-11-02T14:32:00Z",
+  "by": "Claude"
+ }
+}
