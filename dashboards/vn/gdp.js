@@ -152,7 +152,7 @@ dash.calc('gdp_table', {
     const src = series('total', growthBasis === 'real' ? 'constant' : 'current', 'yoy').filter((r) => r.date >= START);
     const rows = J.slice(src.map((r) => ({ date: r.date, q: true, v: r.v, price: r.price, period: r.period })), id);
     if (!rows.length) { box.replaceChildren(); return; }
-    const H = 290, mr = 8;
+    const H = 280, mr = 8;
     const { svg, x, y, W, ml } = frame(box, rows, H, rows.map((r) => r.v), (v) => d3.format('.0f')(v), true, mr);
     if (growthBasis === 'real') baseMarks(svg, x, rows, H);
     const step = (W - ml - mr) / Math.max(1, rows.length);
@@ -392,7 +392,7 @@ dash.calc('gdp_table', {
     legend(id + '-legend', []);
     const rows = Array.from(by.values()).filter((r) => r[srcPick] != null || r.ytd != null).sort((a, b) => (a.date < b.date ? -1 : 1));
     if (!rows.length) { box.replaceChildren(); return; }
-    const H = 290, mr = 8;
+    const H = 280, mr = 8;
     const { svg, x, y, W, ml } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key]).concat([r.ytd])).filter((v) => v != null), fmt0, true, mr);
     S.forEach((s) => {
       svg.append('path').attr('d', d3.line().defined((r) => r[s.key] != null).x((r) => x(J.date(r.date))).y((r) => y(r[s.key]))(rows))
