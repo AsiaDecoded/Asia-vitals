@@ -4,6 +4,8 @@ Development Indicators (NY.GDP.MKTP.KD.ZG), as published. Both are % change on t
 
 - IMF WEO: 1980 on, including the IMF's projections; years after NSO's latest yearbook year are flagged as projections.
 - World Bank WDI: 1985 on. From 2006 the World Bank's rates equal NSO's yearbook (checked as warnings).
+- World Bank WDI, GDP in US dollars (asked for 2 Nov 2026): current US$ (NY.GDP.MKTP.CD, the World Bank's conversion at
+  annual average exchange rates) and constant 2015 US$ (NY.GDP.MKTP.KD), as published, in US$.
 
 APIs: IMF SDMX 3.0 (api.imf.org, no key) and api.worldbank.org/v2 (no key). A few seconds.
 """
@@ -20,7 +22,10 @@ DESCRIPTION = "Vietnam real GDP growth, annual, IMF WEO (NGDP_RPCH) and World Ba
 OUT = DATA / "vn" / "gdp"
 WEO = "https://api.imf.org/external/sdmx/3.0/data/dataflow/IMF.RES/WEO/+/VNM.NGDP_RPCH.A"
 WDI = "https://api.worldbank.org/v2/country/VNM/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=200"
-SRC = {"imf_weo": "IMF, World Economic Outlook (NGDP_RPCH)", "wb_wdi": "World Bank, World Development Indicators (NY.GDP.MKTP.KD.ZG)"}
+WDI_USD = {"NY.GDP.MKTP.CD": "GDP, current US$", "NY.GDP.MKTP.KD": "GDP, constant 2015 US$"}
+WDI_URL = "https://api.worldbank.org/v2/country/VNM/indicator/{}?format=json&per_page=200"
+SRC = {"imf_weo": "IMF, World Economic Outlook (NGDP_RPCH)", "wb_wdi": "World Bank, World Development Indicators (NY.GDP.MKTP.KD.ZG)",
+       "wb_wdi_usd": "World Bank, World Development Indicators"}
 
 
 def get(url, tries=4):
@@ -63,6 +68,7 @@ def update(force=False, **_):
     state = read_json(OUT / "release_intl.json", {}) or {}
     w, attrs = weo(get(WEO))
     b, wb_upd = wdi(get(WDI))
+    usd = {code: wdi(get(WDI_URL.format(code)))[0] for code in WDI_USD}   # US$, as published (units)
     nso = {}
     p = OUT / "vn_gdp_annual.csv"
     if p.exists():
@@ -80,6 +86,12 @@ def update(force=False, **_):
         for y, v in vals.items():
             if not -30 < v < 40:
                 errors.append(f"{name} {y}: {v} out of range")
+    for code, vals in usd.items():
+        yrs = sorted(vals)
+        if not yrs or yrs[0] > 1985 or yrs != list(range(yrs[0], yrs[-1] + 1)) or last_nso not in vals:
+            errors.append(f"World Bank {code}: years {yrs[:2]}..{yrs[-2:]} (need every year from 1985 to {last_nso})")
+        if any(v <= 0 for v in vals.values()):
+            errors.append(f"World Bank {code}: non-positive values")
     for y in sorted(set(nso) & set(b)):
         if abs(b[y] - nso[y]) > 0.01:
             warnings.append(f"{y}: World Bank {b[y]:.2f} vs NSO yearbook {nso[y]:.2f}")
@@ -88,15 +100,19 @@ def update(force=False, **_):
             warnings.append(f"{y}: IMF WEO {w[y]:.2f} vs NSO yearbook {nso[y]:.2f}")
     if errors:
         raise CheckFailed(errors)
-    rows = [{"year": y, "source": "imf_weo", "series": "NGDP_RPCH", "value": round(v, 6),
+    rows = [{"year": y, "source": "imf_weo", "series": "NGDP_RPCH", "measure": "yoy", "unit": "%", "value": round(v, 6),
              "projection": "y" if y > last_nso else "", "release": attrs.get("COUNTRY_UPDATE_DATE", "")} for y, v in sorted(w.items())]
-    rows += [{"year": y, "source": "wb_wdi", "series": "NY.GDP.MKTP.KD.ZG", "value": round(v, 6), "projection": "",
-              "release": wb_upd} for y, v in sorted(b.items())]
+    rows += [{"year": y, "source": "wb_wdi", "series": "NY.GDP.MKTP.KD.ZG", "measure": "yoy", "unit": "%", "value": round(v, 6),
+              "projection": "", "release": wb_upd} for y, v in sorted(b.items())]
+    for code, vals in usd.items():
+        rows += [{"year": y, "source": "wb_wdi_usd", "series": code, "measure": "level", "unit": "US$", "value": round(v, 2),
+                  "projection": "", "release": wb_upd} for y, v in sorted(vals.items())]
     fp = hashlib.sha256(json.dumps(rows, sort_keys=True).encode()).hexdigest()[:16]
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change ({state.get('label')})"}
     with open(OUT / "vn_gdp_intl.csv", "w", newline="", encoding="utf-8") as fh:
-        wr = csv.DictWriter(fh, fieldnames=["date", "year", "source", "series", "value", "projection", "release", "source_name"],
+        wr = csv.DictWriter(fh, fieldnames=["date", "year", "source", "series", "measure", "unit", "value", "projection", "release",
+                                             "source_name"],
                             lineterminator="\n")
         wr.writeheader()
         for r in rows:
@@ -104,9 +120,10 @@ def update(force=False, **_):
     upd = attrs.get("COUNTRY_UPDATE_DATE", "")
     code = f"X-{upd}-{wb_upd}"
     label = f"IMF WEO {min(w)}-{max(w)} (update {upd}); WDI {min(b)}-{max(b)} (updated {wb_upd})"
-    nlong = write_long(({"country": "VN", "indicator": "gdp_intl", "series": r["series"], "label": f"Real GDP growth, {SRC[r['source']]}",
-                         "measure": "projection" if r["projection"] else "yoy", "area": "national", "freq": "A",
-                         "date": f"{r['year']}-12-01", "value": r["value"], "unit": "%", "source": SRC[r["source"]],
+    nlong = write_long(({"country": "VN", "indicator": "gdp_intl", "series": r["series"],
+                         "label": WDI_USD.get(r["series"], f"Real GDP growth, {SRC[r['source']]}"),
+                         "measure": "projection" if r["projection"] else r["measure"], "area": "national", "freq": "A",
+                         "date": f"{r['year']}-12-01", "value": r["value"], "unit": r["unit"], "source": SRC[r["source"]],
                          "release": code} for r in rows), OUT / "long_intl.csv")
     # release_intl.json, so this source's record sits beside vn_gdp_nso's release.json in data/vn/gdp
     rec = {"code": code, "label": label, "latest_nso_year": last_nso, "weo_attributes": attrs, "wdi_lastupdated": wb_upd,

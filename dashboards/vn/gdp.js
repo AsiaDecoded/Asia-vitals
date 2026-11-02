@@ -73,7 +73,7 @@ dash.calc('gdp_table', {
   const SPAN_YTD = { 3: 'Q', 6: '6M', 9: '9M', 12: 'Y' };
   const SEC = [['agri', 'Agriculture, forestry and fishing', 'var(--ad-c6)'], ['ind_constr', 'Industry and construction', 'var(--ad-c1)'],
     ['services', 'Services', 'var(--ad-c5)'], ['taxes', 'Taxes on products less subsidies', 'var(--ad-c4)']];
-  let growthBasis = 'real', levelBasis = 'current', srcPick = 'nso';
+  let growthBasis = 'real', levelBasis = 'current', srcPick = 'nso', usdPick = 'NY.GDP.MKTP.CD';
   ['gdp-sectors', 'gdp-level', 'gdp-structure', 'gdp-mfg', 'gdp-mfg-share', 'gdp-annual', 'gdp-exp', 'gdp-exp-share'].forEach((id) => { J.period[id] = 0; });
 
   const G = () => dash.data('vn_gdp');
@@ -389,6 +389,33 @@ dash.calc('gdp_table', {
       .on('mouseleave', () => { rule.attr('display', 'none'); tip.style.display = 'none'; });
   }
 
+
+  // Chart 5: GDP in US dollars, annual, World Bank WDI (US$ billion = the World Bank's US$ / 1e9).
+  function usd() {
+    const id = 'gdp-usd', box = document.getElementById(id + '-chart');
+    document.getElementById(id + '-units').textContent = usdPick === 'NY.GDP.MKTP.CD' ? 'US$ billion, current prices' : 'US$ billion, constant 2015 prices';
+    if (!status(box, ['vn_gdp_intl'])) return;
+    const rows = dash.data('vn_gdp_intl').data.filter((r) => r.series === usdPick && num(r.value) != null)
+      .map((r) => ({ date: r.date, v: num(r.value) / 1e9 })).sort((a, b) => (a.date < b.date ? -1 : 1));
+    if (!rows.length) { box.replaceChildren(); return; }
+    const H = 280, mr = 8, col = usdPick === 'NY.GDP.MKTP.CD' ? 'var(--ad-c1)' : 'var(--ad-c2)';
+    const { svg, x, y, W, ml } = frame(box, rows, H, rows.map((r) => r.v).concat([0]), (v) => d3.format(',.0f')(v), true, mr);
+    svg.append('path').attr('d', d3.line().x((r) => x(J.date(r.date))).y((r) => y(r.v))(rows))
+      .attr('fill', 'none').attr('stroke', col).attr('stroke-width', 2.5).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
+    const card = document.getElementById(id), tip = J.tip(card);
+    const rule = svg.append('line').attr('y1', 8).attr('y2', H - 22).attr('stroke', 'var(--cds-chart-reference)').attr('display', 'none');
+    const dot = svg.append('circle').attr('r', 3.5).attr('fill', col).attr('display', 'none');
+    const bis = d3.bisector((r) => J.date(r.date)).center;
+    svg.append('rect').attr('x', ml).attr('width', Math.max(0, W - mr - ml)).attr('height', H).attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const [mx] = d3.pointer(ev); const r = rows[bis(rows, x.invert(mx))]; const px = x(J.date(r.date));
+        rule.attr('display', null).attr('x1', px).attr('x2', px); dot.attr('display', null).attr('cx', px).attr('cy', y(r.v));
+        const cr = card.getBoundingClientRect();
+        J.showTip(card, tip, r.date.slice(0, 4), [[col, usdPick === 'NY.GDP.MKTP.CD' ? 'GDP, current US$' : 'GDP, constant 2015 US$', d3.format(',.1f')(r.v) + ' bn']], ev.clientX - cr.left, ev.clientY - cr.top);
+      })
+      .on('mouseleave', () => { rule.attr('display', 'none'); dot.attr('display', 'none'); tip.style.display = 'none'; });
+  }
+
   function tiles() {
     const L = dash.data('gdp_latest');
     document.querySelectorAll('#gdp-headline [data-source], #gdp-q, #mfg-q').forEach((el) => {
@@ -438,6 +465,7 @@ dash.calc('gdp_table', {
     qLines('gdp-sectors', [{ key: 'gdp', name: 'GDP', color: 'var(--ad-c2)', rows: series('total', 'constant', 'yoy') }]
       .concat(SEC.slice(0, 3).map(([code, name, color]) => ({ key: code, name, color, thin: true, rows: series(code, 'constant', 'yoy') }))));
     level();
+    usd();
     structure();
     aLines('gdp-annual', [{ key: 'gdp', name: 'Real GDP', color: 'var(--ad-c2)', bar: true, rows: annual('sector', 'total', 'constant_2010', 'yoy') }]
       .concat(SEC.slice(0, 3).map(([code, name, color]) => ({ key: code, name, color, thin: true, rows: annual('sector', code, 'constant_2010', 'yoy') }))));
@@ -467,6 +495,7 @@ dash.calc('gdp_table', {
   seg('gdp-growth-seg', 's', (v) => { growthBasis = v; });
   seg('gdp-level-seg', 'b', (v) => { levelBasis = v; });
   seg('gdp-src-seg', 'src', (v) => { srcPick = v; });
+  seg('gdp-usd-seg', 'u', (v) => { usdPick = v; });
 
   dash.onData(() => { tiles(); takeaway(); indTable(); gdpHeat(); iipHeat(); J.redrawGdp(); });
 })();
