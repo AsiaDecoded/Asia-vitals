@@ -433,7 +433,7 @@ dash.calc('gdp_table', {
   // the World Bank's US$ / 1e9; per capita in US$).
   const USD = {
     'gdp-usd': { div: 1e9, unit: 'US$ billion', tipUnit: ' bn', fmt: ',.1f', names: { 'NY.GDP.MKTP.CD': 'GDP, current US$', 'NY.GDP.MKTP.KD': 'GDP, constant 2015 US$', 'NY.GNP.ATLS.CD': 'GNI, Atlas method, US$' },
-      units: { 'NY.GNP.ATLS.CD': 'US$ billion, Atlas method' }, colors: { 'NY.GNP.ATLS.CD': 'var(--ad-c2)' } },
+      colors: { 'NY.GNP.ATLS.CD': 'var(--ad-c2)' } },
     'gdp-pc': { div: 1, unit: 'US$', tipUnit: '', fmt: ',.0f', names: { 'NY.GDP.PCAP.CD': 'GDP per capita, current US$', 'NY.GDP.PCAP.KD': 'GDP per capita, constant 2015 US$', 'NY.GNP.PCAP.CD': 'GNI per capita, Atlas method, US$' },
       units: { 'NY.GNP.PCAP.CD': 'US$, Atlas method' }, colors: { 'NY.GNP.PCAP.CD': 'var(--ad-c2)' } },
   };
