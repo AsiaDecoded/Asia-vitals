@@ -241,6 +241,47 @@ def contributions(rows):
     return out
 
 
+def contributions_items(rows):
+    """Contributions to general IIP y/y by part, pp, monthly from April 2024 (user, 3 Nov 2026, for a biggest-contributors
+    table like the CPI one): the 23 NIC 2-digit manufacturing divisions plus mining, electricity and gas, and water and
+    waste, which together make up the general index; same method as contributions(). Also the part's weight and MoSPI's
+    published y/y. Check: parts sum to the published general y/y within 0.15pp."""
+    code = {k: v for k, v in NIC.items()}
+    I, Y = {}, {}
+    for r in rows:
+        if r["base_year"] != "2022-23" or r["index"] is None:
+            continue
+        if r["category"] == "Manufacturing" and r["sub_category"]:
+            k = code[r["sub_category"]][0]
+        elif r["sub_category"] == "" and (r["category"] in SECTOR_W or r["category"] == "General"):
+            k = r["category"]
+        else:
+            continue
+        I.setdefault(r["date"], {})[k] = r["index"]
+        Y.setdefault(r["date"], {})[k] = r["growth_rate"]
+    W = {**WEIGHTS, **SECTOR_W}
+    names = {**{v[0]: v[1] for v in NIC.values()}, "Mining & Quarrying": "Mining", "Electricity & Gas Supply": "Electricity and gas",
+             "Water Supply, Sewerage & Waste Management": "Water supply, sewerage and waste"}
+    out, errors = [], []
+    for d in sorted(I):
+        if d < "2024-04-01":
+            continue
+        p = f"{int(d[:4]) - 1}{d[4:]}"
+        a, b = I[d], I.get(p, {})
+        if any(k not in a or k not in b for k in list(W) + ["General"]):
+            errors.append(f"IIP item contributions {d[:7]}: series missing"); continue
+        cs = {k: w * (a[k] - b[k]) / b["General"] for k, w in W.items()}
+        if Y[d]["General"] is None or abs(sum(cs.values()) - Y[d]["General"]) > 0.15:
+            errors.append(f"IIP item contributions {d[:7]}: sum {sum(cs.values()):.2f} vs MoSPI {Y[d]['General']}")
+        for k, v in cs.items():
+            out.append({"date": d, "code": k if k.isdigit() else {"Mining & Quarrying": "B", "Electricity & Gas Supply": "D",
+                        "Water Supply, Sewerage & Waste Management": "E"}[k], "name": names[k], "weight": W[k],
+                        "yoy": Y[d][k], "contribution": round(v, 4), "calculated": "y"})
+    if errors:
+        raise CheckFailed(errors[:20])
+    return out
+
+
 _MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 
@@ -328,6 +369,11 @@ def update(force=False, **_):
         w = csv.DictWriter(fh, fieldnames=list(dv[0]), lineterminator="\n")
         w.writeheader()
         w.writerows(dv)
+    ci = contributions_items(rows)
+    with open(OUT / "in_iip_contrib_items.csv", "w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=list(ci[0]), lineterminator="\n")
+        w.writeheader()
+        w.writerows(ci)
     ct = contributions(rows)
     with open(OUT / "in_iip_contrib.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=list(ct[0]), lineterminator="\n")
