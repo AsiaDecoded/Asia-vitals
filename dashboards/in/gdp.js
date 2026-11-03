@@ -309,14 +309,12 @@
     const S = [
       { key: 'gva', name: 'Manufacturing GVA, real', color: 'var(--ad-c2)' },
       { key: 'iipm', name: 'IIP, manufacturing', color: 'var(--ad-c1)', thin: true },
-      { key: 'iipg', name: 'IIP, general', color: '#A6A6A6', thin: true, dash: true },
     ];
     legend(id + '-legend', S);
     if (!status(box, ['in_iip_linked', 'in_gdp'])) return;
     const lk = (ser) => dash.data('in_iip_linked').data.filter((r) => r.freq === 'Q' && r.series === ser && N(r.yoy) != null)
       .map((r) => ({ date: r.date, v: N(r.yoy) }));
-    const rows = J.slice(merge([{ key: 'gva', rows: series('Q', 'manufacturing') }, { key: 'iipm', rows: lk('manufacturing') },
-      { key: 'iipg', rows: lk('general') }]), id);
+    const rows = J.slice(merge([{ key: 'gva', rows: series('Q', 'manufacturing') }, { key: 'iipm', rows: lk('manufacturing') }]), id);
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 300;
     const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), true,
