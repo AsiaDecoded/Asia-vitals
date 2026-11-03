@@ -3,8 +3,8 @@
  "label": "2026-27 Q1 (2022-23 base): real GDP 7.8%, nominal 10.3% y/y",
  "latest_quarter": "2026-27 Q1",
  "latest_date": "2026-04-01",
- "processed_at": "2026-11-02T23:53:40Z",
- "rows": 1368,
+ "processed_at": "2026-11-03T00:59:05Z",
+ "rows": 2190,
  "warnings": [
   "2012-13 agri constant yoy: Additional Revision has 2 values [1.4, 1.5]; left out",
   "2012-13 agri.crops constant yoy: Additional Revision has 2 values [0.1, 0.2]; left out",
@@ -61,13 +61,13 @@
   "2013-14 transport_comm.water_transport constant yoy: Additional Revision has 2 values [4.1, 4.2]; left out",
   "2013-14 utilities constant yoy: Additional Revision has 3 values [4.0, 4.1, 4.7]; left out"
  ],
- "fingerprint": "9953ed97deafcf8e",
- "long_rows": 1368,
- "vintage_rows": 2866,
+ "fingerprint": "cb1f89c98902a4ec",
+ "long_rows": 2190,
+ "vintage_rows": 5482,
  "history": [
   {
    "code": "Q2026-27Q1",
-   "processed_at": "2026-11-02T23:53:40Z"
+   "processed_at": "2026-11-03T00:59:05Z"
   }
  ]
 }
