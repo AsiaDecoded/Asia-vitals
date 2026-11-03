@@ -409,15 +409,15 @@
   function mfgIipM() {
     const id = 'mfg-iipm', box = document.getElementById(id + '-chart');
     const S = [
-      { key: 'spl', name: 'Spliced series', color: 'var(--ad-c2)', dash: true },
-      { key: 'mos', name: 'MoSPI, 2022-23 base', color: 'var(--ad-c2)' },
+      { key: 'mos', name: 'MoSPI', color: 'var(--ad-c2)' },
+      { key: 'spl', name: 'Spliced', color: 'var(--ad-c2)', dash: true },
     ];
     legend(id + '-legend', S);
     if (!status(box, ['in_iip_linked'])) return;
     const L = dash.data('in_iip_linked').data.filter((r) => r.freq === 'M' && r.series === iipKey);
     const rows = J.slice(merge([
-      { key: 'spl', rows: L.filter((r) => N(r.yoy) != null).map((r) => ({ date: r.date, v: N(r.yoy) })) },
       { key: 'mos', rows: L.filter((r) => N(r.yoy_mospi) != null).map((r) => ({ date: r.date, v: N(r.yoy_mospi) })) },
+      { key: 'spl', rows: L.filter((r) => N(r.yoy) != null).map((r) => ({ date: r.date, v: N(r.yoy) })) },
     ]), id);
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 300;
