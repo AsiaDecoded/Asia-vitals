@@ -64,6 +64,14 @@ TARGETS = [
 ]
 
 
+DOCS = [
+    "https://psa.gov.ph/system/files/technical-notes/Technotes-MISSI.pdf",
+    "https://psa.gov.ph/system/files/isd/3_Technical%20Notes%20MISSI_v1_JPCS_3.pdf",
+    "https://openstat.psa.gov.ph/Portals/0/Method%20of%20Computation_MISSI%20and%20Capacity%20Utilization%20Rate_Updated%20rev1.pdf?ver=2020-06-17-163903-663",
+    "https://psa.gov.ph/statistics/manufacturing/missi/stat-tables",
+    "https://psa.gov.ph/statistics/manufacturing/missi/technical-notes",
+    "https://psa.gov.ph/statistics/manufacturing/missi",
+]
 TARGETS_MFG = [
     "2G/MNFG/MISSI/2018/0012G4CMCU2.px", "2G/MNFG/MISSI/2018/0022G4CMPA2.px", "2G/MNFG/MISSI/2018/0032G4CMPO2.px",
     "2G/MNFG/MISSI/2018/0042G4CMSA2.px", "2G/MNFG/MISSI/2018/0052G4CMSO2.px",
@@ -99,6 +107,16 @@ def main(out):
     out.mkdir(parents=True, exist_ok=True)
     if len(sys.argv) > 2 and sys.argv[2] == "targets":
         return targets(out)
+    if len(sys.argv) > 2 and sys.argv[2] == "docs":
+        for i, u in enumerate(DOCS):
+            try:
+                req = urllib.request.Request(u, headers=psa.HEADERS)
+                with urllib.request.urlopen(req, timeout=90) as r:
+                    (out / f"doc{i}{Path(u.split('?')[0]).suffix or '.html'}").write_bytes(r.read())
+                print("ok", u)
+            except Exception as e:  # noqa: BLE001
+                print("fail", u, repr(e)[:200])
+        return
     if len(sys.argv) > 2 and sys.argv[2] == "mfg":
         return targets(out, TARGETS_MFG)
     start = time.time()
