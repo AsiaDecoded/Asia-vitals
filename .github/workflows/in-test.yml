@@ -95,7 +95,7 @@ jobs:
               elif abs(float(x[0]["yoy"]) - v) > 0.001: bad.append(f"IIP {ser} Sep 2026: {x[0]['yoy']} vs release {v}")
           dv = {r["nic"]: r for r in csv.DictReader(open("data/in/iip/in_iip_divisions.csv"))}
           n += 1
-          if len(dv) != 24 or dv.get("C", {}).get("yoy") != "7.6": bad.append(f"IIP divisions: {len(dv)} rows, manufacturing {dv.get('C', {}).get('yoy')}")
+          if len(dv) != 28 or dv.get("C", {}).get("yoy") != "7.6": bad.append(f"IIP divisions: {len(dv)} rows, manufacturing {dv.get('C', {}).get('yoy')}")
           msg = f"Q1 2026-27 GDP and Sep 2026 IIP vs MoSPI releases: {n - len(bad)}/{n} match"
           print(msg); [print("  -", b) for b in bad]
           open("in_report.txt", "a").write(msg + "\n" + "".join(f"  - {b}\n" for b in bad))

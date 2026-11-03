@@ -123,6 +123,47 @@ NIC = {"Manufacture of Food Products": ("10", "Food products"), "Manufacture of 
        "Manufacture of Furniture": ("31", "Furniture"), "Other Manufacturing": ("32", "Other manufacturing")}
 
 
+# MoSPI's IIP weights, 2022-23 base, NIC 2-digit manufacturing divisions (Statement II A of the monthly IIP release,
+# e.g. August 2026, released 28 Sep 2026; manufacturing 76.062 of the general index). They reproduce the published
+# manufacturing index within 0.05 points every month from April 2023 (checked in groups()).
+WEIGHTS = {"10": 5.679, "11": 1.113, "12": 0.774, "13": 3.275, "14": 1.970, "15": 0.607, "16": 0.239, "17": 1.375,
+           "18": 0.506, "19": 7.721, "20": 7.813, "21": 5.833, "22": 3.384, "23": 3.519, "24": 9.198, "25": 2.481,
+           "26": 2.085, "27": 3.175, "28": 5.020, "29": 6.417, "30": 2.089, "31": 0.283, "32": 1.509}
+# Electronics groups (user, 3 Nov 2026): two definitions, each with its complement in manufacturing.
+GROUPS = {"E26": ("Electronics (26)", {"26"}), "X26": ("Non-electronics (ex 26)", None),
+          "E2627": ("Electronics and electrical (26, 27)", {"26", "27"}), "X2627": ("Non-electronics (ex 26, 27)", None)}
+GROUP_START = "2023-04-01"   # 2022-23 base only (user: from April 2024 for y/y)
+
+
+def groups(rows):
+    """Electronics and non-electronics manufacturing IIP, 2022-23 base, calculated: weighted average of the published
+    NIC 2-digit indices at MoSPI's weights (WEIGHTS) over each group's divisions; y/y from the group index (from April
+    2024). Returns monthly rows {date, code, name, index, yoy}."""
+    code = {k: v[0] for k, v in NIC.items()}
+    by = {}
+    for r in rows:
+        if r["base_year"] == "2022-23" and r["category"] == "Manufacturing" and r["index"] is not None and r["date"] >= GROUP_START:
+            by.setdefault(r["date"], {})[code.get(r["sub_category"], "C")] = r["index"]
+    errors, out, idx = [], [], {}
+    for d, v in sorted(by.items()):
+        miss = [c for c in WEIGHTS if c not in v]
+        if miss or "C" not in v:
+            errors.append(f"IIP groups {d[:7]}: divisions missing {miss[:4]}"); continue
+        calc = sum(WEIGHTS[c] * v[c] for c in WEIGHTS) / sum(WEIGHTS.values())
+        if abs(calc - v["C"]) > 0.15:
+            errors.append(f"IIP weights {d[:7]}: weighted divisions {calc:.2f} vs published manufacturing {v['C']}")
+        for g, (name, members) in GROUPS.items():
+            mem = members if members is not None else set(WEIGHTS) - GROUPS["E" + g[1:]][1]
+            idx[(g, d)] = sum(WEIGHTS[c] * v[c] for c in mem) / sum(WEIGHTS[c] for c in mem)
+    if errors:
+        raise CheckFailed(errors[:20])
+    for (g, d), x in sorted(idx.items(), key=lambda t: (t[0][0], t[0][1])):
+        p = idx.get((g, f"{int(d[:4]) - 1}{d[4:]}"))
+        out.append({"date": d, "code": g, "name": GROUPS[g][0], "index": round(x, 3),
+                    "yoy": round((x / p - 1) * 100, 1) if p else None, "calculated": "y"})
+    return out
+
+
 _MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 
@@ -159,9 +200,26 @@ def divisions(rows):
                     "m3": m3, "m3_months": f"{_MON[int(last3[0][5:7]) - 1]}-{_MON[int(last3[-1][5:7]) - 1]} {last3[-1][:4]}", "ytd": ytd,
                     "ytd_months": f"Jan-{['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][m - 1]} {y}",
                     "ytd_calculated": "y"})
+    # electronics groups: same 3mma and YTD method, on the group indices
+    gi = {}
+    for r in groups(rows):
+        gi.setdefault(r["code"], {})[r["date"]] = r["index"]
+    for g, (name, _) in GROUPS.items():
+        s = gi.get(g, {})
+        cur = [s.get(f"{y}-{k:02d}-01") for k in range(1, m + 1)]
+        prev = [s.get(f"{y - 1}-{k:02d}-01") for k in range(1, m + 1)]
+        last3 = [d for d in sorted(s) if d <= last][-3:]
+        p3 = [s.get(f"{int(d[:4]) - 1}{d[4:]}") for d in last3]
+        if any(x is None for x in cur + prev + p3) or len(last3) < 3:
+            errors.append(f"IIP group {g}: months missing"); continue
+        out.append({"date": last, "nic": g, "name": name, "industry": name,
+                    "yoy": round((s[last] / s[f"{y - 1}{last[4:]}"] - 1) * 100, 1),
+                    "m3": round((sum(s[d] for d in last3) / sum(p3) - 1) * 100, 1),
+                    "m3_months": f"{_MON[int(last3[0][5:7]) - 1]}-{_MON[int(last3[-1][5:7]) - 1]} {last3[-1][:4]}",
+                    "ytd": round((sum(cur) / sum(prev) - 1) * 100, 1), "ytd_months": out[0]["ytd_months"], "ytd_calculated": "y"})
     missing = [k for k in NIC if k not in {r["sub_category"] for r in new}]
-    if missing or len(out) != 24:
-        errors.append(f"IIP divisions: {len(out)} of 24 rows; not in the data: {missing[:3]}")
+    if missing or len(out) != 28:
+        errors.append(f"IIP divisions: {len(out)} of 28 rows; not in the data: {missing[:3]}")
     if errors:
         raise CheckFailed(errors)
     return out
@@ -191,6 +249,11 @@ def update(force=False, **_):
         w = csv.DictWriter(fh, fieldnames=list(dv[0]), lineterminator="\n")
         w.writeheader()
         w.writerows(dv)
+    gr = groups(rows)
+    with open(OUT / "in_iip_groups.csv", "w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=list(gr[0]), lineterminator="\n")
+        w.writeheader()
+        w.writerows(gr)
     last = max(r["date"] for r in rows if r["base_year"] == "2022-23")
     g = next(r for r in lk if r["freq"] == "M" and r["series"] == "general" and r["date"] == last)
     m = next(r for r in lk if r["freq"] == "M" and r["series"] == "manufacturing" and r["date"] == last)
