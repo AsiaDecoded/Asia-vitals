@@ -207,6 +207,35 @@ def services(rows, sh, warnings):
     return out
 
 
+def mfg_share(rows):
+    """Manufacturing share of GVA, % at current prices, annual, calculated (user, 3 Nov 2026): manufacturing GVA / total
+    GVA, MoSPI's published current-price levels, latest vintage of each year, on each base separately: 2011-12 base
+    (2011-12 to its latest year) and 2022-23 base (from 2022-23). Years whose latest vintage has conflicting values are
+    skipped."""
+    out = []
+    for base in ("2011-12", "2022-23"):
+        best, clash = {}, set()
+        for r in rows:
+            if r["freq"] != "A" or r["measure"] != "level" or r["price"] != "current" or r["base_year"] != base \
+                    or r["code"] not in ("manufacturing", "gva") or r["approach"] not in ("", "Production Approach", "Production"):
+                continue
+            k = (r["fy"], r["code"])
+            if k not in best or r["rev_rank"] > best[k]["rev_rank"]:
+                best[k] = r; clash.discard(k)
+            elif r["rev_rank"] == best[k]["rev_rank"] and r["value"] != best[k]["value"]:
+                clash.add(k)
+        for k in clash:
+            best.pop(k, None)
+        for fy in sorted({k[0] for k in best}):
+            m, g = best.get((fy, "manufacturing")), best.get((fy, "gva"))
+            if m and g and g["value"] > 0:
+                out.append({"date": m["date"], "freq": "A", "period": fy, "fy": fy, "fq": "", "base_year": base,
+                            "code": "manufacturing", "industry": "Manufacturing", "subindustry": "", "approach": "",
+                            "measure": "share", "price": "current", "value": round(m["value"] / g["value"] * 100, 2),
+                            "unit": "% of GVA", "revision": m["revision"], "rev_rank": m["rev_rank"], "calculated": "y"})
+    return out
+
+
 def check(rows, sh):
     errors, warnings = [], []
     q = [r for r in sh if r["freq"] == "Q"]
@@ -258,6 +287,7 @@ def update(force=False, **_):
     for r in rows + sh:
         r.setdefault("calculated", "")
     sh = sh + services(rows, sh, warnings)
+    sh = sh + mfg_share(rows)
     fp = hashlib.sha256(json.dumps(rows, sort_keys=True).encode()).hexdigest()[:16]
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change ({state.get('label')})"}
