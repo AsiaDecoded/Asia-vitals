@@ -2227,3 +2227,17 @@ IN,gdp,manufacturing_share_current,"Manufacturing, level, current prices (2022-2
 IN,gdp,manufacturing_share_gdp_current,"Manufacturing, level, current prices (2022-23 base)",share_gdp,national,A,2024-04-01,13.16,% of GDP,"MoSPI, National Accounts Statistics",Q2026-27Q1
 IN,gdp,manufacturing_share_current,"Manufacturing, level, current prices (2022-23 base)",share,national,A,2025-04-01,14.88,% of GVA,"MoSPI, National Accounts Statistics",Q2026-27Q1
 IN,gdp,manufacturing_share_gdp_current,"Manufacturing, level, current prices (2022-23 base)",share_gdp,national,A,2025-04-01,13.52,% of GDP,"MoSPI, National Accounts Statistics",Q2026-27Q1
+IN,gdp,gdp_2011base_yoy_constant,"Gross Domestic Product (2011-12 base, all years), growth, constant prices (2011-12 base)",yoy,national,A,2012-04-01,5.4,%,"MoSPI, National Accounts Statistics",Q2026-27Q1
+IN,gdp,gdp_2011base_yoy_constant,"Gross Domestic Product (2011-12 base, all years), growth, constant prices (2011-12 base)",yoy,national,A,2013-04-01,6.3,%,"MoSPI, National Accounts Statistics",Q2026-27Q1
+IN,gdp,gdp_2011base_yoy_constant,"Gross Domestic Product (2011-12 base, all years), growth, constant prices (2011-12 base)",yoy,national,A,2014-04-01,7.4,%,"MoSPI, National Accounts Statistics",Q2026-27Q1
+IN,gdp,gdp_2011base_yoy_constant,"Gross Domestic Product (2011-12 base, all years), growth, constant prices (2011-12 base)",yoy,national,A,2015-04-01,7.9,%,"MoSPI, National Accounts Statistics",Q2026-27Q1
+IN,gdp,gdp_2011base_yoy_constant,"Gross Domestic Product (2011-12 base, all years), growth, constant prices (2011-12 base)",yoy,national,A,2016-04-01,8.3,%,"MoSPI, National Accounts Statistics",Q2026-27Q1
+IN,gdp,gdp_2011base_yoy_constant,"Gross Domestic Product (2011-12 base, all years), growth, constant prices (2011-12 base)",yoy,national,A,2017-04-01,6.7,%,"MoSPI, National Accounts Statistics",Q2026-27Q1
+IN,gdp,gdp_2011base_yoy_constant,"Gross Domestic Product (2011-12 base, all years), growth, constant prices (2011-12 base)",yoy,national,A,2018-04-01,6.4,%,"MoSPI, National Accounts Statistics",Q2026-27Q1
+IN,gdp,gdp_2011base_yoy_constant,"Gross Domestic Product (2011-12 base, all years), growth, constant prices (2011-12 base)",yoy,national,A,2019-04-01,3.8,%,"MoSPI, National Accounts Statistics",Q2026-27Q1
+IN,gdp,gdp_2011base_yoy_constant,"Gross Domestic Product (2011-12 base, all years), growth, constant prices (2011-12 base)",yoy,national,A,2020-04-01,-5.7,%,"MoSPI, National Accounts Statistics",Q2026-27Q1
+IN,gdp,gdp_2011base_yoy_constant,"Gross Domestic Product (2011-12 base, all years), growth, constant prices (2011-12 base)",yoy,national,A,2021-04-01,9.6,%,"MoSPI, National Accounts Statistics",Q2026-27Q1
+IN,gdp,gdp_2011base_yoy_constant,"Gross Domestic Product (2011-12 base, all years), growth, constant prices (2011-12 base)",yoy,national,A,2022-04-01,7.6,%,"MoSPI, National Accounts Statistics",Q2026-27Q1
+IN,gdp,gdp_2011base_yoy_constant,"Gross Domestic Product (2011-12 base, all years), growth, constant prices (2011-12 base)",yoy,national,A,2023-04-01,9.1,%,"MoSPI, National Accounts Statistics",Q2026-27Q1
+IN,gdp,gdp_2011base_yoy_constant,"Gross Domestic Product (2011-12 base, all years), growth, constant prices (2011-12 base)",yoy,national,A,2024-04-01,6.4,%,"MoSPI, National Accounts Statistics",Q2026-27Q1
+IN,gdp,gdp_2011base_yoy_constant,"Gross Domestic Product (2011-12 base, all years), growth, constant prices (2011-12 base)",yoy,national,A,2025-04-01,7.4,%,"MoSPI, National Accounts Statistics",Q2026-27Q1
