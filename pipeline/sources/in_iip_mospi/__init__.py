@@ -280,10 +280,10 @@ def divisions(rows):
                     "ytd_calculated": "y"})
     # electronics groups: 3mma = plain average of the group's monthly y/y; YTD as for the divisions
     gi, gy = {}, {}
-    for r in groups(rows):
+    for r in groups(rows) + other_group(rows):
         gi.setdefault(r["code"], {})[r["date"]] = r["index"]
         gy.setdefault(r["code"], {})[r["date"]] = r["yoy"]
-    for g, (name, _) in GROUPS.items():
+    for g, name in [(k, v[0]) for k, v in GROUPS.items()] + [("OTH", "Other industries")]:
         s = gi.get(g, {})
         cur = [s.get(f"{y}-{k:02d}-01") for k in range(1, m + 1)]
         prev = [s.get(f"{y - 1}-{k:02d}-01") for k in range(1, m + 1)]
@@ -297,8 +297,8 @@ def divisions(rows):
                     "m3_months": f"{_MON[int(last3[0][5:7]) - 1]}-{_MON[int(last3[-1][5:7]) - 1]} {last3[-1][:4]}",
                     "ytd": round((sum(cur) / sum(prev) - 1) * 100, 1), "ytd_months": out[0]["ytd_months"], "ytd_calculated": "y"})
     missing = [k for k in NIC if k not in {r["sub_category"] for r in new}]
-    if missing or len(out) != 26:
-        errors.append(f"IIP divisions: {len(out)} of 26 rows; not in the data: {missing[:3]}")
+    if missing or len(out) != 27:
+        errors.append(f"IIP divisions: {len(out)} of 27 rows; not in the data: {missing[:3]}")
     if errors:
         raise CheckFailed(errors)
     return out
