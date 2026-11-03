@@ -90,7 +90,7 @@ dash.calc('iip_movers', {
     document.addEventListener('click', (e) => { if (det.open && !det.contains(e.target)) det.open = false; });
   }
   ['gdp-sectors', 'gdp-annual'].forEach(picker);
-  let growthPrice = 'constant', srcPick = 'mospi', usdPick = 'NY.GDP.MKTP.KD', pcPick = 'NY.GDP.PCAP.KD';
+  let growthPrice = 'constant', srcPick = 'mospi', srcPrice = 'constant', usdPick = 'NY.GDP.MKTP.KD', pcPick = 'NY.GDP.PCAP.KD';
 
   function legend(id, series) {
     const el = document.getElementById(id); if (!el) return;
@@ -276,8 +276,8 @@ dash.calc('iip_movers', {
 
   // Year to date for the current fiscal year, for charts 5 and 6: shown only when MoSPI has published it as a growth
   // rate, which (in its quarterly table) is the case for the first quarter only (Q1 = April to June, the year so far).
-  function ytd(code, lastAnnual) {
-    const q = series('Q', code).filter((r) => r.date >= `${lastAnnual + 1}-04-01`);
+  function ytd(code, lastAnnual, price = 'constant') {
+    const q = series('Q', code, price).filter((r) => r.date >= `${lastAnnual + 1}-04-01`);
     return q.length === 1 && q[0].fq.endsWith('Q1') ? { date: `${q[0].date.slice(0, 4)}-04-01`, v: q[0].v, label: J.qLabel(q[0].date) } : null;
   }
   function annualChart(id, S, opt = {}) {
@@ -287,7 +287,7 @@ dash.calc('iip_movers', {
     const all = merge(S.map((s) => ({ key: s.key, rows: s.rows() })));
     if (!all.length) { box.replaceChildren(); return; }
     const lastAnnual = Math.max(...all.map((r) => Number(r.date.slice(0, 4))));
-    const yt = S.map((s) => (s.ytd ? ytd(s.ytd, lastAnnual) : null));
+    const yt = S.map((s) => (s.ytd ? ytd(s.ytd, lastAnnual, s.price) : null));
     const yd = yt.find(Boolean);
     const rows = yd ? all.concat([{ date: yd.date, ytd: true }]) : all;
     yt.forEach((t, i) => { if (t) rows[rows.length - 1][S[i].key + '_ytd'] = t.v; });
@@ -325,9 +325,16 @@ dash.calc('iip_movers', {
   function sources() {
     // MoSPI (user, 3 Nov 2026): 2022-23 base solid from FY24; 2011-12 base dashed for every year it was published
     // (to FY26), so the overlapping years FY24-FY26 show both.
+    // Real / Nominal toggle (user, 3 Nov 2026): nominal on MoSPI only; WDI publishes no nominal growth rate, so the
+    // World Bank view is real only (Nominal disabled there).
+    const p = srcPick === 'mospi' ? srcPrice : 'constant', c = p === 'constant' ? 'var(--ad-c2)' : 'var(--ad-c1)';
+    document.querySelectorAll('#gdp-src-pseg button').forEach((b) => {
+      b.disabled = srcPick !== 'mospi' && b.dataset.p === 'current';
+      b.setAttribute('aria-pressed', String(b.dataset.p === p));
+    });
     const S = srcPick === 'mospi'
-      ? [{ key: 'gdp', name: '2022-23 base', color: 'var(--ad-c2)', ytd: 'gdp', rows: () => series('A', 'gdp').filter((r) => r.base === '2022-23') },
-        { key: 'old', name: '2011-12 base', color: 'var(--ad-c2)', dash: true, rows: () => series('A', 'gdp_2011base') }]
+      ? [{ key: 'gdp', name: '2022-23 base', color: c, ytd: 'gdp', price: p, rows: () => series('A', 'gdp', p).filter((r) => r.base === '2022-23') },
+        { key: 'old', name: '2011-12 base', color: c, dash: true, rows: () => series('A', 'gdp_2011base', p) }]
       : [{ key: 'wb', name: 'World Bank', color: 'var(--ad-c2)',
         rows: () => dash.data('in_gdp_intl').data.filter((r) => r.series === 'NY.GDP.MKTP.KD.ZG').map((r) => ({ date: r.date, v: N(r.value) })) }];
     annualChart('gdp-src', S, { ds: ['in_gdp', 'in_gdp_intl'], base: srcPick === 'mospi' });
@@ -732,6 +739,7 @@ dash.calc('iip_movers', {
   };
   seg('gdp-growth-seg', 's', (v) => { growthPrice = v; });
   seg('gdp-src-seg', 'src', (v) => { srcPick = v; });
+  seg('gdp-src-pseg', 'p', (v) => { srcPrice = v; });
   seg('gdp-usd-seg', 'u', (v) => { usdPick = v; });
   seg('gdp-pc-seg', 'u', (v) => { pcPick = v; });
   let raf = 0;

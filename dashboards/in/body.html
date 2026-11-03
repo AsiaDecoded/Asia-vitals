@@ -69,9 +69,14 @@
     <div class="jg-grid">
       <section class="jg-card" id="gdp-src" data-periods="none">
         <div class="jg-cardhead">
-          <div><h2>India real GDP growth</h2></div>
-          <div class="jg-seg" id="gdp-src-seg" role="group" aria-label="Source">
-            <button data-src="mospi" aria-pressed="true">MoSPI</button><button data-src="wb">World Bank</button>
+          <div><h2>India GDP growth</h2></div>
+          <div style="display:flex;gap:var(--cds-gap-sm);flex-wrap:wrap">
+            <div class="jg-seg" id="gdp-src-pseg" role="group" aria-label="Price basis">
+              <button data-p="constant" aria-pressed="true">Real</button><button data-p="current">Nominal</button>
+            </div>
+            <div class="jg-seg" id="gdp-src-seg" role="group" aria-label="Source">
+              <button data-src="mospi" aria-pressed="true">MoSPI</button><button data-src="wb">World Bank</button>
+            </div>
           </div>
         </div>
         <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="gdp-src-legend"></div><span class="ad-units r"></span></div>

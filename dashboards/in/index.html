@@ -12,6 +12,7 @@
 .jg-seg { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); overflow: hidden; }
 .jg-seg button { font: inherit; font-size: var(--cds-font-size-caption); background: transparent; color: var(--color-fg-muted); border: 0; padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; }
 .jg-seg button[aria-pressed="true"] { background: var(--color-bg); color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.jg-seg button:disabled { opacity: .4; cursor: default; }
 .jg-seg-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
 .jg-card h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
 .jg-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-xs) 0 var(--cds-gap-md); line-height: 1.45; }
@@ -223,9 +224,14 @@
     <div class="jg-grid">
       <section class="jg-card" id="gdp-src" data-periods="none">
         <div class="jg-cardhead">
-          <div><h2>India real GDP growth</h2></div>
-          <div class="jg-seg" id="gdp-src-seg" role="group" aria-label="Source">
-            <button data-src="mospi" aria-pressed="true">MoSPI</button><button data-src="wb">World Bank</button>
+          <div><h2>India GDP growth</h2></div>
+          <div style="display:flex;gap:var(--cds-gap-sm);flex-wrap:wrap">
+            <div class="jg-seg" id="gdp-src-pseg" role="group" aria-label="Price basis">
+              <button data-p="constant" aria-pressed="true">Real</button><button data-p="current">Nominal</button>
+            </div>
+            <div class="jg-seg" id="gdp-src-seg" role="group" aria-label="Source">
+              <button data-src="mospi" aria-pressed="true">MoSPI</button><button data-src="wb">World Bank</button>
+            </div>
           </div>
         </div>
         <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="gdp-src-legend"></div><span class="ad-units r"></span></div>

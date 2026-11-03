@@ -240,11 +240,11 @@ def mfg_share(rows):
 
 def gdp_2011base(rows):
     """Growth on the 2011-12 base for every year MoSPI published it (to its last year, 2025-26), latest vintage of each
-    year, as published: real GDP (code gdp_2011base; user, 3 Nov 2026: dashed beside the 2022-23 base on the GDP tab's
-    Chart 5) and manufacturing GVA, real and nominal (code manufacturing_2011base; user, 3 Nov 2026: the same on the
+    year, as published: GDP, real and nominal (code gdp_2011base; user, 3 Nov 2026: dashed beside the 2022-23 base on
+    the GDP tab's Chart 5) and manufacturing GVA, real and nominal (code manufacturing_2011base; user, 3 Nov 2026: the same on the
     Manufacturing tab's Chart 1, annual). Conflicting latest vintages are skipped."""
     out = []
-    for code, prices, name in (("gdp", ("constant",), "Gross Domestic Product"),
+    for code, prices, name in (("gdp", ("constant", "current"), "Gross Domestic Product"),
                                ("manufacturing", ("constant", "current"), "Manufacturing")):
         best, clash = {}, set()
         for r in rows:
