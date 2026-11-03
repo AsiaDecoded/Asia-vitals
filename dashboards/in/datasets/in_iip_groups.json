@@ -1,14 +1,14 @@
 {
- "description": "Electronics and electrical manufacturing (NIC 26 computer, electronic and optical; 27 electrical equipment) and non-electronics manufacturing (the other 21 NIC 2-digit divisions): IIP, 2022-23 base, weighted average of MoSPI's published division indices at MoSPI's weights, monthly from April 2023, y/y from April 2024; calculated by Asia Decoded. Built by the AsiaDecoded/asia-vitals pipeline (data/in/iip/in_iip_groups.csv).",
+ "description": "Electronics and electrical manufacturing (NIC 26 computer, electronic and optical; 27 electrical equipment) and non-electronics manufacturing (the other 21 NIC 2-digit divisions): IIP, 2022-23 base, weighted average of MoSPI's published division indices at MoSPI's weights, monthly from April 2023, y/y from April 2024 Also other industries (OTH: mining, electricity and gas, water and waste) at MoSPI's sector weights. Calculated by Asia Decoded. Built by the AsiaDecoded/asia-vitals pipeline (data/in/iip/in_iip_groups.csv).",
  "schedule": "Replaced after each monthly IIP release by a scheduled task that reads AsiaDecoded/asia-vitals.",
  "source": {
   "kind": "file",
-  "name": "in_iip_groups_M2026-09.csv",
-  "url": "/_blob/bd214bc6dad2085cd2976c80c47e87b7"
+  "name": "in_iip_groups_M2026-09_r2.csv",
+  "url": "/_blob/352f56a2fc6a592c80cf922e3cbed437"
  },
- "title": "India electronics IIP (calc.)",
+ "title": "India IIP groups (calc.)",
  "updated": {
-  "at": "2026-11-03T02:09:00Z",
+  "at": "2026-11-03T04:17:00Z",
   "by": "Claude"
  }
 }

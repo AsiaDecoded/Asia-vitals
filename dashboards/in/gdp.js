@@ -383,6 +383,7 @@
     const S = [
       { key: 'E2627', name: 'Electronics manufacturing', color: 'var(--ad-c1)' },
       { key: 'X2627', name: 'Non-electronics manufacturing', color: 'var(--ad-c2)' },
+      { key: 'OTH', name: 'Other industries', color: '#A6A6A6' },
     ];
     legend(id + '-legend', S);
     if (!status(box, ['in_iip_groups'])) return;
