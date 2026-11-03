@@ -1,6 +1,6 @@
-name: Thailand GDP test
+name: Thailand GDP and manufacturing test
 
-# Runs the Thailand GDP sources (th_gdp_nesdc, th_gdp_intl) on main with their checks, whether or not they are in the
+# Runs the Thailand GDP and manufacturing sources (th_gdp_nesdc, th_gdp_intl, th_mpi_oie) on main with their checks, whether or not they are in the
 # shared registry yet; checks Q2 2026 against NESDC's release of 17 Aug 2026 and pushes data/th/gdp and raw/th/gdp_nesdc
 # back to main. (Until 2 Nov 2026 this workflow ran the TPSO price sources on dev-th, now merged.)
 on:
@@ -10,6 +10,7 @@ on:
     paths:
       - pipeline/sources/th_gdp_nesdc/**
       - pipeline/sources/th_gdp_intl/**
+      - pipeline/sources/th_mpi_oie/**
       - .github/workflows/th-test.yml
 
 permissions:
@@ -38,7 +39,7 @@ jobs:
           sys.path.insert(0, "pipeline")
           from core.common import CheckFailed
           rc, lines = 0, []
-          for name in ("th_gdp_nesdc", "th_gdp_intl"):
+          for name in ("th_gdp_nesdc", "th_gdp_intl", "th_mpi_oie"):
               t0 = time.time()
               lines.append(f"== {name}")
               try:
@@ -79,12 +80,38 @@ jobs:
           sys.exit(1 if bad else 0)
           PY
 
+      - name: September 2026 MPI against the OIE release
+        run: |
+          python -I - <<'PY'
+          import csv, sys
+          # OIE press release of 30 Oct 2026: MPI Sep 2026 101.37, +2.05% y/y; Q3 2026 100.30, +3.40%; capacity
+          # utilisation 60.58% (Sep), Q3 average 59.98%.
+          R = list(csv.DictReader(open("data/th/mpi/th_mpi.csv")))
+          get = lambda m, f, p: next((float(r["value"]) for r in R if r["code"] == "all" and r["base"] == "2021" and r["measure"] == m and r["freq"] == f and r["period"] == p), None)
+          REL = {("index", "M", "2026-09"): 101.37, ("yoy", "M", "2026-09"): 2.05, ("index", "Q", "2026-Q3"): 100.30,
+                 ("yoy", "Q", "2026-Q3"): 3.40, ("capu", "M", "2026-09"): 60.58}
+          bad = []
+          for k, v in REL.items():
+              x = get(*k)
+              if x is None: bad.append(f"MPI {k}: missing")
+              elif abs(round(x, 2) - v) > 0.0051: bad.append(f"MPI {k}: {x:.3f} vs release {v}")
+          q = [get("capu", "M", f"2026-0{m}") for m in (7, 8, 9)]
+          if None in q or abs(round(sum(q) / 3, 2) - 59.98) > 0.0051: bad.append(f"capacity utilisation Q3 average: {q}")
+          divs = {r["code"] for r in R if r["base"] == "2021" and r["period"] == "2026-09" and r["measure"] == "yoy" and r["code"].isdigit()}
+          if len(divs) != 22: bad.append(f"Sep 2026: {len(divs)} industries with y/y (expected 22)")
+          n = len(REL) + 2
+          msg = f"September 2026 MPI vs OIE release: {n - len(bad)}/{n} match"
+          print(msg); [print("  -", b) for b in bad]
+          open("th_report.txt", "a").write(msg + "\n" + "".join(f"  - {b}\n" for b in bad))
+          sys.exit(1 if bad else 0)
+          PY
+
       - name: Push data and report to main
         if: always()
         run: |
           git config user.name "asia-vitals bot"
           git config user.email "actions@users.noreply.github.com"
           mkdir -p data/th/gdp && cp th_report.txt data/th/gdp/test_report.txt 2>/dev/null || true
-          git add data/th/gdp; if [ -d raw/th/gdp_nesdc ]; then git add raw/th/gdp_nesdc; fi
-          git commit -qm "Thailand GDP test run ${{ github.run_id }}" || exit 0
+          git add data/th/gdp data/th/mpi; for d in raw/th/gdp_nesdc raw/th/mpi_oie; do if [ -d $d ]; then git add $d; fi; done
+          git commit -qm "Thailand GDP and manufacturing test run ${{ github.run_id }}" || exit 0
           for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
