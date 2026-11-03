@@ -340,7 +340,7 @@
     // Manufacturing, then the electronics groups (calculated at MoSPI's weights), then the divisions by 3mma.
     // Only the electronics and electrical row under Manufacturing (user, 3 Nov 2026); non-electronics stays in Chart 4.
     const GR = ['E2627', 'X2627'];
-    const head = ['C', 'E2627'].map((c) => D.find((r) => r.nic === c)).filter(Boolean);
+    const head = ['C'].concat(GR).map((c) => D.find((r) => r.nic === c)).filter(Boolean);
     const rows = head.concat(D.filter((r) => r.nic !== 'C' && !GR.includes(r.nic)).sort((a, b) => b.m3 - a.m3));
     const W = box.clientWidth, rowH = 26, top = 6, H = top + rows.length * rowH + 22;
     box.replaceChildren();
