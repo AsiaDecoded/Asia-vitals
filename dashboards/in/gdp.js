@@ -625,22 +625,22 @@ dash.calc('iip_movers', {
     mfgGva();
   });
 
-  // Manufacturing tab: capacity utilisation in manufacturing, %, quarterly, RBI OBICUS as published (not seasonally
-  // adjusted), from Apr-Jun 2008; quarters labelled by calendar months.
+  // Manufacturing tab: capacity utilisation in manufacturing, %, quarterly, RBI OBICUS: as published (red) and RBI's
+  // seasonally adjusted series (blue, X-13ARIMA-SEATS), from Apr-Jun 2008; quarters labelled by calendar months.
   function mfgCu() {
     const id = 'mfg-cu', box = document.getElementById(id + '-chart');
-    const S = [{ key: 'cu', name: 'Capacity utilisation', color: 'var(--ad-c2)' }];
-    legend(id + '-legend', []);
+    const S = [{ key: 'cu', name: 'As published', color: 'var(--ad-c2)' }, { key: 'sa', name: 'Seasonally adjusted', color: 'var(--ad-c1)' }];
+    legend(id + '-legend', S);
     if (!status(box, ['in_cu'])) return;
-    const rows = J.slice(dash.data('in_cu').data.map((r) => ({ date: r.date, cu: N(r.cu), q: r.quarter })).filter((r) => r.cu != null)
+    const rows = J.slice(dash.data('in_cu').data.map((r) => ({ date: r.date, cu: N(r.cu), sa: N(r.cu_sa), q: r.quarter })).filter((r) => r.cu != null)
       .sort((a, b) => (a.date < b.date ? -1 : 1)), id);
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 300;
-    const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.map((r) => r.cu), false, qAxis, { anchorEvery: (r, k) => r.date.slice(5, 7) === '01' && Number(r.date.slice(0, 4)) % (k > 2 ? 4 : 2) === 0 });
+    const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => [r.cu, r.sa]).filter((v) => v != null), false, qAxis, { anchorEvery: (r, k) => r.date.slice(5, 7) === '01' && Number(r.date.slice(0, 4)) % (k > 2 ? 4 : 2) === 0 });
     const dots = drawLines(svg, x, y, rows, S);
     const extras = hover(svg, document.getElementById(id), x, rows, H, ml, W - mr, (r) => `${J.qLabel(r.date)} (RBI ${r.q})`, (r, px) => {
-      dots[0].attr('display', null).attr('cx', px).attr('cy', y(r.cu));
-      return [[S[0].color, S[0].name, r.cu.toFixed(1) + '%']];
+      dots.forEach((d, i) => { const v = r[S[i].key]; d.attr('display', v == null ? 'none' : null).attr('cx', px).attr('cy', v == null ? 0 : y(v)); });
+      return S.map((s) => [s.color, s.name, r[s.key] == null ? 'n/a' : r[s.key].toFixed(1) + '%']);
     });
     extras.push(...dots);
   }

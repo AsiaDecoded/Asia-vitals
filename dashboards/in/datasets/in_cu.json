@@ -1,5 +1,5 @@
 {
- "description": "Capacity utilisation in manufacturing, %, quarterly from Q1 2008-09, RBI Order Books, Inventories and Capacity Utilisation Survey (OBICUS), as published (cu; seasonally adjusted figure in cu_sa, not shown). From the RBI's OBICUS workbook (release of 7 Oct 2026), supplied by hand: RBI's servers are not reachable by the pipeline. Built by the AsiaDecoded/asia-vitals pipeline (data/in/cu/in_cu.csv).",
+ "description": "Capacity utilisation in manufacturing, %, quarterly from Q1 2008-09, RBI Order Books, Inventories and Capacity Utilisation Survey (OBICUS), as published (cu) and RBI's seasonally adjusted series (cu_sa, X-13ARIMA-SEATS). From the RBI's OBICUS workbook (release of 7 Oct 2026), supplied by hand: RBI's servers are not reachable by the pipeline. Built by the AsiaDecoded/asia-vitals pipeline (data/in/cu/in_cu.csv).",
  "schedule": "Replaced by hand after each quarterly OBICUS release (RBI workbook added to raw/in/obicus).",
  "source": {
   "kind": "file",
