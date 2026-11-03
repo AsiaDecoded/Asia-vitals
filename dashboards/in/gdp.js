@@ -389,7 +389,14 @@ dash.calc('iip_movers', {
       svg.append('line').attr('x1', sx).attr('x2', sx).attr('y1', 18).attr('y2', H - 24).attr('stroke', 'var(--ad-axis)').attr('stroke-dasharray', '3 3');
       svg.append('text').attr('x', sx).attr('y', 12).attr('font-size', 11).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'middle').text(ann ? '2022-23 base' : 'IIP 2022-23 base');
     }
-    const dots = drawLines(svg, x, y, rows, S);
+    // Annual (user, 3 Nov 2026): no line joining FY23 (2011-12 base) to FY24 (2022-23 base).
+    let dots;
+    if (ann) {
+      drawLines(svg, x, y, rows.filter((r) => r.date < BASE_SWITCH), S).forEach((d) => d.remove());
+      dots = drawLines(svg, x, y, rows.filter((r) => r.date >= BASE_SWITCH), S);
+    } else {
+      dots = drawLines(svg, x, y, rows, S);
+    }
     const extras = hover(svg, document.getElementById(id), x, rows, H, ml, W - mr,
       (r) => (ann ? `${fyShort(r.date)} (${fyLab(r.date)})` : J.qLabel(r.date)), (r, px) => {
         dots.forEach((d, i) => { const v = r[S[i].key]; d.attr('display', v == null ? 'none' : null).attr('cx', px).attr('cy', v == null ? 0 : y(v)); });
