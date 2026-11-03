@@ -15,7 +15,7 @@
   // Charts 4 and 6: series picked from a dropdown (user, 3 Nov 2026), in her order (GDP dropped, user 3 Nov 2026): GVA, agriculture,
   // manufacturing, electricity etc., construction, services (calculated), then the other published industries.
   const PICKS = [
-    { code: 'gva', name: 'GVA', color: '#A6A6A6', dash: true, thin: true },
+    { code: 'gva', name: 'GVA', color: 'var(--ad-c2)' },
     { code: 'agri', name: 'Agriculture', color: 'var(--ad-c6)', thin: true },
     { code: 'manufacturing', name: 'Manufacturing', color: 'var(--ad-c1)', thin: true },
     { code: 'utilities', name: 'Electricity, gas, water', color: 'var(--ad-c7)', thin: true },
