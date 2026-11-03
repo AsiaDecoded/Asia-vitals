@@ -8,15 +8,15 @@
  "url": "https://www.nesdc.go.th/en/?p=47533&ddl=116119",
  "nesdc_last_updated": "17 Aug. 2026",
  "table": "NESDC QGDP statistical tables 3, 4, 4.1",
- "processed_at": "2026-11-03T03:52:15Z",
- "rows": 16139,
+ "processed_at": "2026-11-03T03:54:16Z",
+ "rows": 20147,
  "warnings": [],
  "fingerprint": "b8b7e42c2cafdc8f",
- "long_rows": 16139,
+ "long_rows": 20147,
  "history": [
   {
    "code": "G2026-Q2",
-   "processed_at": "2026-11-03T03:52:15Z"
+   "processed_at": "2026-11-03T03:54:16Z"
   }
  ]
 }
