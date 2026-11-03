@@ -338,7 +338,8 @@ dash.calc('iip_movers', {
   // manufacturing, linked across the 2011-12 and 2022-23 bases with MoSPI's factors, quarterly averages, y/y (calculated
   // in in_iip_mospi). Dashed line at the IIP base change (April 2023).
   // Annual / Quarterly toggle (user, 3 Nov 2026). Annual: MoSPI's published growth for both, fiscal years from FY15
-  // (where the annual real GVA series starts), 2011-12 base to FY23 and 2022-23 base from FY24. Quarterly: from 2023.
+  // (where the annual real GVA series starts), 2011-12 base to FY23 and 2022-23 base from FY24. Quarterly: from
+  // Apr-Jun 2023, IIP = 3mma of MoSPI's published monthly y/y (not the spliced series).
   let mioFreq = 'A';
   function mfgIip() {
     const id = 'mfg-iip', box = document.getElementById(id + '-chart'), ann = mioFreq === 'A';
@@ -349,17 +350,28 @@ dash.calc('iip_movers', {
     ];
     legend(id + '-legend', S);
     if (!status(box, ['in_iip_linked', 'in_gdp'])) return;
-    const lk = (ser) => dash.data('in_iip_linked').data.filter((r) => r.freq === mioFreq && r.series === ser && N(r.yoy) != null)
-      .map((r) => ({ date: r.date, v: N(r.yoy) }));
+    // Annual: MoSPI's published annual growth (freq A rows). Quarterly (user, 3 Nov 2026): plain average of MoSPI's
+    // published monthly y/y (yoy_mospi, 2022-23 base, from April 2023) over the quarter's three months.
+    const lk = (ser) => {
+      const L = dash.data('in_iip_linked').data;
+      if (ann) return L.filter((r) => r.freq === 'A' && r.series === ser && N(r.yoy) != null).map((r) => ({ date: r.date, v: N(r.yoy) }));
+      const by = new Map();
+      L.filter((r) => r.freq === 'M' && r.series === ser && N(r.yoy_mospi) != null).forEach((r) => {
+        const m = Number(r.date.slice(5, 7)), q = `${r.date.slice(0, 4)}-${String((m - 1) - ((m - 1) % 3) + 1).padStart(2, '0')}-01`;
+        if (!by.has(q)) by.set(q, []); by.get(q).push(N(r.yoy_mospi));
+      });
+      return Array.from(by, ([date, v]) => ({ date, v: v.length === 3 ? Math.round((v[0] + v[1] + v[2]) / 3 * 10) / 10 : null }))
+        .filter((r) => r.v != null);
+    };
     const gva = series(mioFreq, 'manufacturing');
-    const start = ann ? (gva.length ? gva[0].date : '9999') : '2023-01-01';
+    const start = ann ? (gva.length ? gva[0].date : '9999') : '2023-04-01';
     const rows = J.slice(merge([{ key: 'gva', rows: gva }, { key: 'iipm', rows: lk('manufacturing') }])
       .filter((r) => r.date >= start), id);
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 300;
     const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), true,
       ann ? (r) => fyShort(r.date) : qAxis, ann ? { labelWidth: 44, top: 24, pad: 6 } : { anchorEvery: qAnchor, top: 24 });
-    const sw = ann ? BASE_SWITCH : '2023-04-01';
+    const sw = ann ? BASE_SWITCH : '9999';   // quarterly: all on the 2022-23 base, no base-change line
     if (rows[0].date < sw && rows[rows.length - 1].date >= sw) {
       const k = rows.findIndex((r) => r.date >= sw);
       const sx = ann ? (x(J.date(rows[k - 1].date)) + x(J.date(rows[k].date))) / 2 : x(J.date(sw));
