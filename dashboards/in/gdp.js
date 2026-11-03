@@ -296,7 +296,7 @@ dash.calc('iip_movers', {
     const { svg, x, y, W, ml, mr } = frame(box, rows, H, vals, true, (r) => (r.ytd ? 'YTD' : fyShort(r.date)), { labelWidth: 44, top: opt.base ? 24 : 12 });
     if (opt.base && rows[0].date < BASE_SWITCH && rows[rows.length - 1].date >= BASE_SWITCH) {
       const k = rows.findIndex((r) => r.date >= BASE_SWITCH);
-      const sx = (x(J.date(rows[k - 1].date)) + x(J.date(rows[k].date))) / 2;
+      const sx = x(J.date(rows[k].date));   // on FY24, the first year on the 2022-23 base (user, 3 Nov 2026)
       svg.append('line').attr('x1', sx).attr('x2', sx).attr('y1', 18).attr('y2', H - 24).attr('stroke', 'var(--ad-axis)').attr('stroke-dasharray', '3 3');
       svg.append('text').attr('x', sx).attr('y', 12).attr('font-size', 11).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'middle').text('2022-23 base');
     }
@@ -374,7 +374,7 @@ dash.calc('iip_movers', {
     const sw = ann ? BASE_SWITCH : '9999';   // quarterly: all on the 2022-23 base, no base-change line
     if (rows[0].date < sw && rows[rows.length - 1].date >= sw) {
       const k = rows.findIndex((r) => r.date >= sw);
-      const sx = ann ? (x(J.date(rows[k - 1].date)) + x(J.date(rows[k].date))) / 2 : x(J.date(sw));
+      const sx = x(J.date(ann ? rows[k].date : sw));   // annual: on FY24 (user, 3 Nov 2026)
       svg.append('line').attr('x1', sx).attr('x2', sx).attr('y1', 18).attr('y2', H - 24).attr('stroke', 'var(--ad-axis)').attr('stroke-dasharray', '3 3');
       svg.append('text').attr('x', sx).attr('y', 12).attr('font-size', 11).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'middle').text(ann ? '2022-23 base' : 'IIP 2022-23 base');
     }
@@ -640,7 +640,7 @@ dash.calc('iip_movers', {
       ann ? (r) => fyShort(r.date) : qAxis, ann ? { labelWidth: 44, top: 24, pad: 6 } : { anchorEvery: qAnchor, top: 24 });
     if (ann && rows[0].date < BASE_SWITCH && rows[rows.length - 1].date >= BASE_SWITCH) {
       const k = rows.findIndex((r) => r.date >= BASE_SWITCH);
-      const sx = (x(J.date(rows[k - 1].date)) + x(J.date(rows[k].date))) / 2;
+      const sx = x(J.date(rows[k].date));   // on FY24, the first year on the 2022-23 base (user, 3 Nov 2026)
       svg.append('line').attr('x1', sx).attr('x2', sx).attr('y1', 18).attr('y2', H - 24).attr('stroke', 'var(--ad-axis)').attr('stroke-dasharray', '3 3');
       svg.append('text').attr('x', sx).attr('y', 12).attr('font-size', 11).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'middle').text('2022-23 base');
     }
