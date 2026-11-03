@@ -12,25 +12,25 @@
   const fyShort = (d) => `FY${String((Number(d.slice(0, 4)) + 1) % 100).padStart(2, '0')}`;
   const BASE_SWITCH = '2023-04-01';   // annual: MoSPI's 2022-23 base from 2023-24 (2011-12 base before)
   const LMI = 2007;                   // lower-middle income on 2007 GNI per capita (World Bank FY09; data/asia/gni)
-  // Charts 4 and 6: GDP always drawn; total GVA and MoSPI's eight published industries picked from a dropdown
-  // (user, 3 Nov 2026), plus services (calculated). Default picks: GVA, agriculture, manufacturing, construction, services.
-  const GDP_LINE = { code: 'gdp', name: 'GDP', color: 'var(--ad-c2)' };
+  // Charts 4 and 6: series picked from a dropdown (user, 3 Nov 2026), in her order: GDP, GVA, agriculture,
+  // manufacturing, electricity etc., construction, services (calculated), then the other published industries.
   const PICKS = [
-    { code: 'gva', name: 'GVA', color: '#A6A6A6', dash: true },
+    { code: 'gdp', name: 'GDP', color: 'var(--ad-c2)' },
+    { code: 'gva', name: 'GVA', color: '#A6A6A6', dash: true, thin: true },
+    { code: 'agri', name: 'Agriculture', color: 'var(--ad-c6)', thin: true },
+    { code: 'manufacturing', name: 'Manufacturing', color: 'var(--ad-c1)', thin: true },
+    { code: 'utilities', name: 'Electricity, gas, water', color: 'var(--ad-c7)', thin: true },
+    { code: 'construction', name: 'Construction', color: 'var(--ad-c5)', thin: true },
     // Services (tertiary sector): calculated in the pipeline (in_gdp_mospi) from the three service industries' levels.
-    { code: 'services', name: 'Services', color: '#00A3A3' },
-    { code: 'agri', name: 'Agriculture', color: 'var(--ad-c6)' },
-    { code: 'mining', name: 'Mining', color: 'var(--ad-c4)' },
-    { code: 'manufacturing', name: 'Manufacturing', color: 'var(--ad-c1)' },
-    { code: 'utilities', name: 'Electricity, gas, water', color: 'var(--ad-c7)' },
-    { code: 'construction', name: 'Construction', color: 'var(--ad-c5)' },
-    { code: 'trade_transport', name: 'Trade, hotels, transport, communication', color: 'var(--ad-c3)' },
-    { code: 'finance_re', name: 'Financial, real estate, professional', color: 'var(--ad-c8)' },
-    { code: 'public_other', name: 'Public administration, defence, other', color: '#1F4E79' },
-  ].map((s) => ({ ...s, thin: true }));
-  const picked = { 'gdp-sectors': new Set(['gva', 'agri', 'manufacturing', 'construction', 'services']),
-    'gdp-annual': new Set(['gva', 'agri', 'manufacturing', 'construction', 'services']) };
-  const SEC = (id) => [GDP_LINE].concat(PICKS.filter((s) => picked[id].has(s.code)));
+    { code: 'services', name: 'Services', color: '#00A3A3', thin: true },
+    { code: 'mining', name: 'Mining', color: 'var(--ad-c4)', thin: true },
+    { code: 'trade_transport', name: 'Trade, hotels, transport, communication', color: 'var(--ad-c3)', thin: true },
+    { code: 'finance_re', name: 'Financial, real estate, professional', color: 'var(--ad-c8)', thin: true },
+    { code: 'public_other', name: 'Public administration, defence, other', color: '#1F4E79', thin: true },
+  ];
+  const DEFAULT = ['gdp', 'gva', 'agri', 'manufacturing', 'construction', 'services'];
+  const picked = { 'gdp-sectors': new Set(DEFAULT), 'gdp-annual': new Set(DEFAULT) };
+  const SEC = (id) => PICKS.filter((s) => picked[id].has(s.code));
   function picker(id) {
     const host = document.getElementById(id + '-pick'); if (!host || host.dataset.built) return;
     host.dataset.built = '1';
