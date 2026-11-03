@@ -16,9 +16,9 @@
   // (user, 3 Nov 2026), plus services (calculated). Default picks: GVA, agriculture, manufacturing, construction, services.
   const GDP_LINE = { code: 'gdp', name: 'GDP', color: 'var(--ad-c2)' };
   const PICKS = [
-    { code: 'gva', name: 'Total GVA', color: '#A6A6A6', dash: true },
+    { code: 'gva', name: 'GVA', color: '#A6A6A6', dash: true },
     // Services (tertiary sector): calculated in the pipeline (in_gdp_mospi) from the three service industries' levels.
-    { code: 'services', name: 'Services (calculated)', color: '#00A3A3' },
+    { code: 'services', name: 'Services', color: '#00A3A3' },
     { code: 'agri', name: 'Agriculture', color: 'var(--ad-c6)' },
     { code: 'mining', name: 'Mining', color: 'var(--ad-c4)' },
     { code: 'manufacturing', name: 'Manufacturing', color: 'var(--ad-c1)' },
