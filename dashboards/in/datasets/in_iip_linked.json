@@ -1,14 +1,14 @@
 {
- "description": "Index of Industrial Production, general and manufacturing, MoSPI: 2011-12-base index divided by MoSPI's linking factors (general 1.3834, manufacturing 1.3700) to March 2023, 2022-23-base index from April 2023; monthly and quarterly-average index and y/y, calculated by Asia Decoded (calculated = y). Also MoSPI's own y/y on the 2022-23 base as published (yoy_mospi, monthly from April 2023; to March 2024 against the 2022-23 months normalised to 100, MoSPI's method). Built by the AsiaDecoded/asia-vitals pipeline (data/in/iip/in_iip_linked.csv).",
+ "description": "Index of Industrial Production, general and manufacturing, MoSPI: 2011-12-base index divided by MoSPI's linking factors (general 1.3834, manufacturing 1.3700) to March 2023, 2022-23-base index from April 2023; monthly and quarterly-average index and y/y, calculated by Asia Decoded (calculated = y). Also MoSPI's own y/y on the 2022-23 base as published (yoy_mospi, monthly from April 2023; to March 2024 against the 2022-23 months normalised to 100, MoSPI's method). Annual rows (freq A): MoSPI's published annual growth, 2011-12 base to 2022-23, 2022-23 base from 2023-24. Built by the AsiaDecoded/asia-vitals pipeline (data/in/iip/in_iip_linked.csv).",
  "schedule": "Replaced after each monthly IIP release by a scheduled task that reads AsiaDecoded/asia-vitals.",
  "source": {
   "kind": "file",
-  "name": "in_iip_linked_M2026-09_r2.csv",
-  "url": "/_blob/728051b34fa58b5c3ebdb1e617d64b57"
+  "name": "in_iip_linked_M2026-09_r3.csv",
+  "url": "/_blob/52641fd5eef023b1a418653ea9ec6b19"
  },
  "title": "India IIP, linked (MoSPI)",
  "updated": {
-  "at": "2026-11-03T02:25:00Z",
+  "at": "2026-11-03T05:37:00Z",
   "by": "Claude"
  }
 }
