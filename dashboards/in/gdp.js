@@ -445,8 +445,8 @@
     const id = 'mfg-contrib', box = document.getElementById(id + '-chart');
     const P = [   // bottom of the stack first
       { key: 'X2627', name: 'Non-electronics manufacturing', color: '#1F4E79', bar: true },
-      { key: 'other', name: 'Other industries', color: '#A6A6A6', bar: true },
       { key: 'E2627', name: 'Electronics manufacturing', color: '#0C84FF', bar: true },
+      { key: 'other', name: 'Other industries', color: '#A6A6A6', bar: true },
     ];
     const LINE = { key: 'g', name: 'General IIP, y/y', color: '#BD1B21' };
     legend(id + '-legend', [LINE].concat(P.slice().reverse()));
