@@ -55,9 +55,10 @@ QUERIES = [  # (base_year, frequency, indicator, measure)
     ("2022-23", "Annually", 22, "yoy"), ("2022-23", "Annually", 21, "yoy"),
     ("2022-23", "Annually", 5, "level"), ("2022-23", "Annually", 1, "level"),
     ("2011-12", "Annually", 22, "yoy"), ("2011-12", "Annually", 21, "yoy"), ("2011-12", "Annually", 5, "level"),
+    ("2011-12", "Annually", 1, "level"),   # GVA levels by industry, for the calculated services series
 ]
 COLS = ["date", "freq", "period", "fy", "fq", "base_year", "code", "industry", "subindustry", "approach", "measure",
-        "price", "value", "unit", "revision", "rev_rank"]
+        "price", "value", "unit", "revision", "rev_rank", "calculated"]
 
 
 def slug(s):
@@ -150,6 +151,62 @@ def shown(rows, warnings=None):
     return out + sorted(best.values(), key=lambda r: (r["date"], r["code"], r["measure"], r["price"]))
 
 
+SERVICES = ["trade_transport", "finance_re", "public_other"]
+
+
+def services(rows, sh, warnings):
+    """Services (tertiary sector), calculated (user, 3 Nov 2026): the sum of MoSPI's published GVA levels for trade,
+    hotels, transport, communication and broadcasting; financial, real estate and professional services; and public
+    administration, defence and other services, at constant and current prices. Growth = sum / sum a year earlier - 1,
+    in %, rounded to one decimal as MoSPI publishes; always within one base. Quarterly: the 2022-23 base, levels as
+    shown. Annual: each base's latest-vintage level for each year (years whose latest vintage has conflicting values
+    are skipped); 2011-12 base for 2012-13 to 2022-23, 2022-23 base from 2023-24, as for the published series.
+    """
+    out = []
+
+    def add(levels, freq, prev_of, pick):
+        for (d, price), tot in sorted(levels.items()):
+            p = levels.get((prev_of(d), price))
+            if p is None or not pick(d):
+                continue
+            ref = tot["row"]
+            out.append({**{k: ref[k] for k in ("date", "freq", "period", "fy", "fq", "base_year")}, "code": "services",
+                        "industry": "Services (tertiary sector, calculated)", "subindustry": "", "approach": "",
+                        "measure": "yoy", "price": price, "value": round((tot["v"] / p["v"] - 1) * 100, 1), "unit": "%",
+                        "revision": ref["revision"], "rev_rank": ref["rev_rank"], "calculated": "y"})
+
+    # quarterly
+    lv = {}
+    for r in sh:
+        if r["freq"] == "Q" and r["measure"] == "level" and r["code"] in SERVICES:
+            lv.setdefault((r["date"], r["price"]), {})[r["code"]] = r
+    q = {k: {"v": sum(x["value"] for x in v.values()), "row": next(iter(v.values()))} for k, v in lv.items() if len(v) == 3}
+    add(q, "Q", lambda d: f"{int(d[:4]) - 1}{d[4:]}", lambda d: True)
+    # annual, per base
+    for base, pick in (("2011-12", lambda d: d < "2023-04-01"), ("2022-23", lambda d: d >= "2023-04-01")):
+        best, clash = {}, set()
+        for r in rows:
+            if r["freq"] != "A" or r["measure"] != "level" or r["code"] not in SERVICES or r["base_year"] != base:
+                continue
+            if r["approach"] not in ("", "Production Approach", "Production"):
+                continue
+            k = (r["date"], r["price"], r["code"])
+            if k not in best or r["rev_rank"] > best[k]["rev_rank"]:
+                best[k] = r; clash.discard(k)
+            elif r["rev_rank"] == best[k]["rev_rank"] and r["value"] != best[k]["value"]:
+                clash.add(k)
+        for k in clash:
+            del best[k]
+        lv = {}
+        for (d, price, code), r in best.items():
+            lv.setdefault((d, price), {})[code] = r
+        a = {k: {"v": sum(x["value"] for x in v.values()), "row": next(iter(v.values()))} for k, v in lv.items() if len(v) == 3}
+        add(a, "A", lambda d: f"{int(d[:4]) - 1}{d[4:]}", pick)
+    if not any(r["freq"] == "Q" for r in out):
+        raise CheckFailed(["services: no quarterly growth calculated"])
+    return out
+
+
 def check(rows, sh):
     errors, warnings = [], []
     q = [r for r in sh if r["freq"] == "Q"]
@@ -198,6 +255,9 @@ def update(force=False, **_):
     clashes = []
     sh = shown(rows, clashes)
     warnings = clashes + check(rows, sh)
+    for r in rows + sh:
+        r.setdefault("calculated", "")
+    sh = sh + services(rows, sh, warnings)
     fp = hashlib.sha256(json.dumps(rows, sort_keys=True).encode()).hexdigest()[:16]
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change ({state.get('label')})"}

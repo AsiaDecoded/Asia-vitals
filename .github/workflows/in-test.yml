@@ -65,6 +65,9 @@ jobs:
           Q = {("gdp", "constant"): 7.8, ("gdp", "current"): 10.3, ("gva", "constant"): 8.2, ("gva", "current"): 11.5,
                ("manufacturing", "constant"): 9.2}
           A = {"2023-24": 7.3, "2024-25": 7.2, "2025-26": 7.8}
+          # Services (tertiary), calculated from the three service industries' levels: MoSPI/PIB report tertiary real
+          # growth of 10.0% in Q1 2026-27 and 8.0% in Q1 2025-26.
+          S = {"2026-27 Q1": 10.0, "2025-26 Q1": 8.0}
           rows = list(csv.DictReader(open("data/in/gdp/in_gdp.csv")))
           bad, n = [], 0
           for (c, p), v in Q.items():
@@ -77,6 +80,11 @@ jobs:
               x = [r for r in rows if r["freq"] == "A" and r["fy"] == fy and r["code"] == "gdp" and r["price"] == "constant" and r["measure"] == "yoy"]
               if len(x) != 1: bad.append(f"{fy}: {len(x)} rows")
               elif abs(float(x[0]["value"]) - v) > 0.001: bad.append(f"{fy}: {x[0]['value']} vs release {v}")
+          for fq, v in S.items():
+              n += 1
+              x = [r for r in rows if r["freq"] == "Q" and r["fq"] == fq and r["code"] == "services" and r["price"] == "constant" and r["measure"] == "yoy"]
+              if len(x) != 1: bad.append(f"services {fq}: {len(x)} rows")
+              elif abs(float(x[0]["value"]) - v) > 0.001: bad.append(f"services {fq}: {x[0]['value']} vs release {v}")
           msg = f"Q1 2026-27 vs MoSPI release: {n - len(bad)}/{n} match"
           print(msg); [print("  -", b) for b in bad]
           open("in_report.txt", "a").write(msg + "\n" + "".join(f"  - {b}\n" for b in bad))
