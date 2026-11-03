@@ -315,11 +315,14 @@ dash.calc('iip_movers', {
   // Chart 5: real GDP growth, annual: MoSPI (2011-12 base to 2022-23, 2022-23 base from 2023-24, latest estimate of
   // each year) or the World Bank's WDI (from 1961; its year 2025 is fiscal 2025-26).
   function sources() {
+    // MoSPI (user, 3 Nov 2026): 2022-23 base solid from FY24; 2011-12 base dashed for every year it was published
+    // (to FY26), so the overlapping years FY24-FY26 show both.
     const S = srcPick === 'mospi'
-      ? [{ key: 'gdp', name: 'MoSPI', color: 'var(--ad-c2)', ytd: 'gdp', rows: () => series('A', 'gdp') }]
+      ? [{ key: 'gdp', name: '2022-23 base', color: 'var(--ad-c2)', ytd: 'gdp', rows: () => series('A', 'gdp').filter((r) => r.base === '2022-23') },
+        { key: 'old', name: '2011-12 base', color: 'var(--ad-c2)', dash: true, rows: () => series('A', 'gdp_2011base') }]
       : [{ key: 'wb', name: 'World Bank', color: 'var(--ad-c2)',
         rows: () => dash.data('in_gdp_intl').data.filter((r) => r.series === 'NY.GDP.MKTP.KD.ZG').map((r) => ({ date: r.date, v: N(r.value) })) }];
-    annualChart('gdp-src', S, { ds: ['in_gdp', 'in_gdp_intl'], base: srcPick === 'mospi', headExtra: srcPick === 'mospi' ? baseOf : null });
+    annualChart('gdp-src', S, { ds: ['in_gdp', 'in_gdp_intl'], base: srcPick === 'mospi' });
   }
   // Chart 6: real growth by sector, annual, MoSPI.
   function sectorsA() {
