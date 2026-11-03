@@ -339,13 +339,13 @@
     legend(id + '-legend', S);
     // Manufacturing, then the electronics groups (calculated at MoSPI's weights), then the divisions by 3mma.
     // Only the electronics and electrical row under Manufacturing (user, 3 Nov 2026); non-electronics stays in Chart 4.
-    const GR = ['E2627', 'X2627'];
+    const GR = ['E2627', 'X2627', 'OTH'];
     const head = ['C'].concat(GR).map((c) => D.find((r) => r.nic === c)).filter(Boolean);
     const rows = head.concat(D.filter((r) => r.nic !== 'C' && !GR.includes(r.nic)).sort((a, b) => b.m3 - a.m3));
     const W = box.clientWidth, rowH = 26, top = 6, H = top + rows.length * rowH + 22;
     box.replaceChildren();
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
-    const GLAB = { E2627: 'Electronics', X2627: 'Non-electronics' };   // short labels (user, 3 Nov 2026)
+    const GLAB = { E2627: 'Electronics', X2627: 'Non-electronics', OTH: 'Other industries' };   // short labels (user, 3 Nov 2026)
     const lab = (r) => (r.nic === 'C' ? 'Manufacturing' : GLAB[r.nic] || `${r.name} (${r.nic})`);
     const lw = Math.min(W * 0.42, J.textWidth(svg, rows.map(lab)) + 12);
     const vals = rows.flatMap((r) => [r.yoy, r.ytd]).filter((v) => v != null);
@@ -358,7 +358,7 @@
     rows.forEach((r, i) => {
       const y0 = top + i * rowH + 4;
       svg.append('text').attr('x', lw - 8).attr('y', y0 + bh).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 12)
-        .attr('font-weight', r.nic === 'C' || /^[EX]/.test(r.nic) ? 700 : null).attr('fill', 'var(--ad-ink)').text(lab(r));
+        .attr('font-weight', r.nic === 'C' || GR.includes(r.nic) ? 700 : null).attr('fill', 'var(--ad-ink)').text(lab(r));
       S.forEach((s, k) => {
         const v = r[s.key]; if (v == null) return;
         svg.append('rect').attr('x', x(Math.min(0, v))).attr('width', Math.abs(x(v) - x(0))).attr('y', y0 + k * bh).attr('height', bh - 1).attr('fill', s.color);
@@ -372,7 +372,7 @@
         const [, my] = d3.pointer(ev); const i = Math.max(0, Math.min(rows.length - 1, Math.floor((my - top) / rowH))); const r = rows[i];
         hl.attr('display', null).attr('y', top + i * rowH);
         const cr = card.getBoundingClientRect();
-        J.showTip(card, tip, r.nic === 'C' || /^[EX]/.test(r.nic) ? lab(r) : `NIC ${r.nic}: ${r.industry}`, S.map((s) => [s.color, s.name, pct(r[s.key])]), ev.clientX - cr.left, ev.clientY - cr.top);
+        J.showTip(card, tip, r.nic === 'C' || GR.includes(r.nic) ? lab(r) : `NIC ${r.nic}: ${r.industry}`, S.map((s) => [s.color, s.name, pct(r[s.key])]), ev.clientX - cr.left, ev.clientY - cr.top);
       })
       .on('mouseleave', () => { hl.attr('display', 'none'); tip.style.display = 'none'; });
   }
