@@ -1,14 +1,14 @@
 {
- "description": "Index of Industrial Production, manufacturing and its 23 NIC 2-digit divisions, 2022-23 base: latest month y/y as published by MoSPI; the latest three months (m3, 3mma) and the calendar year to date (January to the latest month) against the same months a year earlier, calculated by Asia Decoded as ratios of summed indices. Also two groups calculated at MoSPI's 2022-23 weights: electronics and electrical (NIC 26, 27) and non-electronics (the other 21 divisions). Built by the AsiaDecoded/asia-vitals pipeline (data/in/iip/in_iip_divisions.csv).",
+ "description": "Index of Industrial Production, manufacturing and its 23 NIC 2-digit divisions, 2022-23 base: latest month y/y as published by MoSPI; 3mma (m3): plain average of the latest three months' y/y; and the calendar year to date (January to the latest month) against the same months a year earlier, ratio of summed indices; both calculated by Asia Decoded. Also two groups calculated at MoSPI's 2022-23 weights: electronics and electrical (NIC 26, 27) and non-electronics (the other 21 divisions). Built by the AsiaDecoded/asia-vitals pipeline (data/in/iip/in_iip_divisions.csv).",
  "schedule": "Replaced after each monthly IIP release by a scheduled task that reads AsiaDecoded/asia-vitals.",
  "source": {
   "kind": "file",
-  "name": "in_iip_divisions_M2026-09_r3.csv",
-  "url": "/_blob/13032af5564f6c8f8a507be40d1ef885"
+  "name": "in_iip_divisions_M2026-09_r4.csv",
+  "url": "/_blob/b7ec111bb90456607613cb8e197b95a1"
  },
  "title": "India IIP by industry (MoSPI)",
  "updated": {
-  "at": "2026-11-03T02:09:00Z",
+  "at": "2026-11-03T02:42:00Z",
   "by": "Claude"
  }
 }

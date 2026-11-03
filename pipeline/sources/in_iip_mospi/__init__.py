@@ -174,7 +174,8 @@ def divisions(rows):
     """Manufacturing by NIC 2-digit division, 2022-23 base, latest month: MoSPI's y/y as published, and the calendar
     year to date (January to the latest month) against the same months a year earlier, calculated as the ratio of the
     summed indices (MoSPI's method for its cumulative growth, on calendar rather than fiscal months; user, 3 Nov 2026);
-    and the three months to the latest against the same three months a year earlier (m3, "3mma y/y"), same method."""
+    and m3 ("3mma"): the plain average of the latest three months' y/y (MoSPI's published rates; for the groups, their
+    calculated monthly y/y)."""
     new = [r for r in rows if r["base_year"] == "2022-23" and r["category"] == "Manufacturing" and r["index"] is not None]
     last = max(r["date"] for r in new)
     y, m = int(last[:4]), int(last[5:7])
@@ -188,12 +189,11 @@ def divisions(rows):
         if any(x is None for x in cur + prev):
             errors.append(f"IIP division {sub or 'Manufacturing'}: months missing for the year to date"); continue
         ytd = round((sum(x["index"] for x in cur) / sum(x["index"] for x in prev) - 1) * 100, 1)
-        # three months to the latest, against the same three months a year earlier (3mma y/y; user, 3 Nov 2026)
+        # 3mma: plain average of MoSPI's published y/y for the latest three months (user, 3 Nov 2026)
         last3 = [d for d in sorted(s) if d <= last][-3:]
-        p3 = [s.get(f"{int(d[:4]) - 1}{d[4:]}") for d in last3]
-        if len(last3) < 3 or any(x is None for x in p3):
-            errors.append(f"IIP division {sub or 'Manufacturing'}: no 3-month comparison"); continue
-        m3 = round((sum(s[d]["index"] for d in last3) / sum(x["index"] for x in p3) - 1) * 100, 1)
+        if len(last3) < 3 or any(s[d]["growth_rate"] is None for d in last3):
+            errors.append(f"IIP division {sub or 'Manufacturing'}: no y/y for the latest three months"); continue
+        m3 = round(sum(s[d]["growth_rate"] for d in last3) / 3, 1)
         one = round((s[last]["index"] / s[f"{y - 1}{last[4:]}"]["index"] - 1) * 100, 1)
         pub = s[last]["growth_rate"]
         if pub is None or abs(one - pub) > 0.15:
@@ -203,21 +203,22 @@ def divisions(rows):
                     "m3": m3, "m3_months": f"{_MON[int(last3[0][5:7]) - 1]}-{_MON[int(last3[-1][5:7]) - 1]} {last3[-1][:4]}", "ytd": ytd,
                     "ytd_months": f"Jan-{['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][m - 1]} {y}",
                     "ytd_calculated": "y"})
-    # electronics groups: same 3mma and YTD method, on the group indices
-    gi = {}
+    # electronics groups: 3mma = plain average of the group's monthly y/y; YTD as for the divisions
+    gi, gy = {}, {}
     for r in groups(rows):
         gi.setdefault(r["code"], {})[r["date"]] = r["index"]
+        gy.setdefault(r["code"], {})[r["date"]] = r["yoy"]
     for g, (name, _) in GROUPS.items():
         s = gi.get(g, {})
         cur = [s.get(f"{y}-{k:02d}-01") for k in range(1, m + 1)]
         prev = [s.get(f"{y - 1}-{k:02d}-01") for k in range(1, m + 1)]
         last3 = [d for d in sorted(s) if d <= last][-3:]
-        p3 = [s.get(f"{int(d[:4]) - 1}{d[4:]}") for d in last3]
-        if any(x is None for x in cur + prev + p3) or len(last3) < 3:
+        y3 = [gy.get(g, {}).get(d) for d in last3]
+        if any(x is None for x in cur + prev + y3) or len(last3) < 3:
             errors.append(f"IIP group {g}: months missing"); continue
         out.append({"date": last, "nic": g, "name": name, "industry": name,
                     "yoy": round((s[last] / s[f"{y - 1}{last[4:]}"] - 1) * 100, 1),
-                    "m3": round((sum(s[d] for d in last3) / sum(p3) - 1) * 100, 1),
+                    "m3": round(sum(y3) / 3, 1),
                     "m3_months": f"{_MON[int(last3[0][5:7]) - 1]}-{_MON[int(last3[-1][5:7]) - 1]} {last3[-1][:4]}",
                     "ytd": round((sum(cur) / sum(prev) - 1) * 100, 1), "ytd_months": out[0]["ytd_months"], "ytd_calculated": "y"})
     missing = [k for k in NIC if k not in {r["sub_category"] for r in new}]
