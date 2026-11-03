@@ -12,7 +12,7 @@ from April 2023. Monthly y/y from the linked index; quarterly: the linked index 
 Jul-Sep, Oct-Dec, Jan-Mar), y/y from the averages. Rates rounded to one decimal, as MoSPI publishes. MoSPI says it
 prescribes no linking method and growth rates across the two series are not strictly comparable.
 
-Checks (errors stop it): every month present on each base; linked y/y equals MoSPI's published y/y within 0.15pp
+Divisions (in_iip_divisions.csv): see divisions().\nChecks (errors stop it): every month present on each base; linked y/y equals MoSPI's published y/y within 0.15pp
 wherever both indices are on one base (to March 2023 on the old base, from April 2024 on the new base).
 Dates: first day of the month; quarters at their first month (Apr-Jun 2026 = 2026-04-01). About 80 calls, ~1 minute.
 """
@@ -103,11 +103,65 @@ def linked(rows):
     return out
 
 
+NIC = {"Manufacture of Food Products": ("10", "Food products"), "Manufacture of Beverages": ("11", "Beverages"),
+       "Manufacture of Tobacco Products": ("12", "Tobacco products"), "Manufacture of Textiles": ("13", "Textiles"),
+       "Manufacture of Wearing Apparel": ("14", "Wearing apparel"), "Manufacture of Leather and Related Products": ("15", "Leather"),
+       "Manufacture of Wood and Products of Wood and Cork, Except Furniture; Manufacture of Articles of Straw and Plaiting Materials": ("16", "Wood and wood products"),
+       "Manufacture of Paper and Paper Products": ("17", "Paper"), "Printing and Reproduction of Recorded Media": ("18", "Printing and recorded media"),
+       "Manufacture of Coke and Refined Petroleum Products": ("19", "Coke and refined petroleum"),
+       "Manufacture of Chemicals and Chemical Products": ("20", "Chemicals"),
+       "Manufacture of basic pharmaceutical products and pharmaceutical preparations": ("21", "Pharmaceuticals"),
+       "Manufacture of Rubber and Plastics Products": ("22", "Rubber and plastics"),
+       "Manufacture of Other Non-metallic Mineral Products": ("23", "Non-metallic minerals"),
+       "Manufacture of Basic Metals": ("24", "Basic metals"),
+       "Manufacture of Fabricated Metal Products, Except Machinery and Equipment": ("25", "Fabricated metal products"),
+       "Manufacture of Computer, Electronic and Optical Products": ("26", "Computer, electronic and optical"),
+       "Manufacture of Electrical Equipment": ("27", "Electrical equipment"),
+       "Manufacture of Machinery and Equipment n.e.c.": ("28", "Machinery and equipment n.e.c."),
+       "Manufacture of Motor Vehicles, Trailers and Semi-trailers": ("29", "Motor vehicles"),
+       "Manufacture of Other Transport Equipment": ("30", "Other transport equipment"),
+       "Manufacture of Furniture": ("31", "Furniture"), "Other Manufacturing": ("32", "Other manufacturing")}
+
+
+def divisions(rows):
+    """Manufacturing by NIC 2-digit division, 2022-23 base, latest month: MoSPI's y/y as published, and the calendar
+    year to date (January to the latest month) against the same months a year earlier, calculated as the ratio of the
+    summed indices (MoSPI's method for its cumulative growth, on calendar rather than fiscal months; user, 3 Nov 2026)."""
+    new = [r for r in rows if r["base_year"] == "2022-23" and r["category"] == "Manufacturing" and r["index"] is not None]
+    last = max(r["date"] for r in new)
+    y, m = int(last[:4]), int(last[5:7])
+    out, errors = [], []
+    for sub in [""] + sorted(NIC, key=lambda k: NIC[k][0]):
+        s = {r["date"]: r for r in new if r["sub_category"] == sub}
+        if last not in s:
+            errors.append(f"IIP division {sub or 'Manufacturing'}: no {last[:7]}"); continue
+        cur = [s.get(f"{y}-{k:02d}-01") for k in range(1, m + 1)]
+        prev = [s.get(f"{y - 1}-{k:02d}-01") for k in range(1, m + 1)]
+        if any(x is None for x in cur + prev):
+            errors.append(f"IIP division {sub or 'Manufacturing'}: months missing for the year to date"); continue
+        ytd = round((sum(x["index"] for x in cur) / sum(x["index"] for x in prev) - 1) * 100, 1)
+        one = round((s[last]["index"] / s[f"{y - 1}{last[4:]}"]["index"] - 1) * 100, 1)
+        pub = s[last]["growth_rate"]
+        if pub is None or abs(one - pub) > 0.15:
+            errors.append(f"IIP division {sub or 'Manufacturing'} {last[:7]}: index ratio {one} vs MoSPI y/y {pub}")
+        code, short = NIC.get(sub, ("C", "Manufacturing"))
+        out.append({"date": last, "nic": code, "name": short, "industry": sub or "Manufacturing", "yoy": pub, "ytd": ytd,
+                    "ytd_months": f"Jan-{['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][m - 1]} {y}",
+                    "ytd_calculated": "y"})
+    missing = [k for k in NIC if k not in {r["sub_category"] for r in new}]
+    if missing or len(out) != 24:
+        errors.append(f"IIP divisions: {len(out)} of 24 rows; not in the data: {missing[:3]}")
+    if errors:
+        raise CheckFailed(errors)
+    return out
+
+
 def update(force=False, **_):
     OUT.mkdir(parents=True, exist_ok=True)
     state = read_json(OUT / "release.json", {}) or {}
     rows = fetch()
     lk = linked(rows)
+    dv = divisions(rows)
     fp = hashlib.sha256(json.dumps(rows, sort_keys=True).encode()).hexdigest()[:16]
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change ({state.get('label')})"}
@@ -122,6 +176,10 @@ def update(force=False, **_):
         w.writeheader()
         for r in sorted(lk, key=lambda r: (r["freq"], r["series"], r["date"])):
             w.writerow(r)
+    with open(OUT / "in_iip_divisions.csv", "w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=list(dv[0]), lineterminator="\n")
+        w.writeheader()
+        w.writerows(dv)
     last = max(r["date"] for r in rows if r["base_year"] == "2022-23")
     g = next(r for r in lk if r["freq"] == "M" and r["series"] == "general" and r["date"] == last)
     m = next(r for r in lk if r["freq"] == "M" and r["series"] == "manufacturing" and r["date"] == last)
