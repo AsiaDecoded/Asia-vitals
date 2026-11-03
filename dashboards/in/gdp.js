@@ -337,7 +337,7 @@
     if (!status(box, ['in_iip_divisions'])) { legend(id + '-legend', []); return; }
     const D = dash.data('in_iip_divisions').data.map((r) => ({ ...r, yoy: N(r.yoy), m3: N(r.m3), ytd: N(r.ytd) }));
     if (!D.length) { box.replaceChildren(); return; }
-    const S = [{ key: 'm3', name: `${D[0].m3_months.replace('-', '–')} (3mma)`, color: 'var(--ad-c2)', bar: true }, { key: 'ytd', name: `${D[0].ytd_months.replace('-', '–')} (YTD)`, color: 'var(--ad-c1)', bar: true }];
+    const S = [{ key: 'm3', name: '3mma', color: 'var(--ad-c2)', bar: true }, { key: 'ytd', name: 'YTD', color: 'var(--ad-c1)', bar: true }];
     legend(id + '-legend', S);
     const rows = D.filter((r) => r.nic === 'C').concat(D.filter((r) => r.nic !== 'C').sort((a, b) => b.m3 - a.m3));
     const W = box.clientWidth, rowH = 26, top = 6, H = top + rows.length * rowH + 22;
