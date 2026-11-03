@@ -300,7 +300,15 @@ dash.calc('iip_movers', {
       svg.append('line').attr('x1', sx).attr('x2', sx).attr('y1', 18).attr('y2', H - 24).attr('stroke', 'var(--ad-axis)').attr('stroke-dasharray', '3 3');
       svg.append('text').attr('x', sx).attr('y', 12).attr('font-size', 11).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'middle').text('2022-23 base');
     }
-    const dots = drawLines(svg, x, y, rows.filter((r) => !r.ytd), S);
+    // opt.breakBase (Chart 6, user 3 Nov 2026): no line joining FY23 (2011-12 base) to FY24 (2022-23 base), so the two
+    // bases don't read as one continuous series.
+    let dots;
+    if (opt.breakBase) {
+      drawLines(svg, x, y, rows.filter((r) => !r.ytd && r.date < BASE_SWITCH), S).forEach((d) => d.remove());
+      dots = drawLines(svg, x, y, rows.filter((r) => !r.ytd && r.date >= BASE_SWITCH), S);
+    } else {
+      dots = drawLines(svg, x, y, rows.filter((r) => !r.ytd), S);
+    }
     S.forEach((s) => rows.filter((r) => r[s.key + '_ytd'] != null).forEach((r) => svg.append('circle').attr('cx', x(J.date(r.date))).attr('cy', y(r[s.key + '_ytd']))
       .attr('r', s.thin ? 3.5 : 4.5).attr('fill', 'var(--color-panel)').attr('stroke', s.color).attr('stroke-width', 2)));
     const extras = hover(svg, document.getElementById(id), x, rows, H, ml, W - mr,
@@ -326,7 +334,7 @@ dash.calc('iip_movers', {
   }
   // Chart 6: real growth by sector, annual, MoSPI.
   function sectorsA() {
-    annualChart('gdp-annual', SEC('gdp-annual').map((s) => ({ ...s, key: s.code, ytd: s.code, rows: () => series('A', s.code) })), { base: true, headExtra: baseOf });
+    annualChart('gdp-annual', SEC('gdp-annual').map((s) => ({ ...s, key: s.code, ytd: s.code, rows: () => series('A', s.code) })), { base: true, headExtra: baseOf, breakBase: true });
   }
 
   function quarterNote() {
