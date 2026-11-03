@@ -558,17 +558,16 @@ dash.calc('iip_movers', {
   });
   dash.onData(() => iipMovers());
 
-  // Manufacturing tab: manufacturing share of GVA, %, annual (fiscal years), Real (constant prices, each base at its own
-  // prices) or Nominal (current prices), calculated in in_gdp_mospi from MoSPI's levels on each base: 2011-12 base
-  // (dashed) and 2022-23 base (solid).
-  let sharePrice = 'constant';
+  // Manufacturing tab: manufacturing share, % of GDP or % of GVA (toggle), current prices, annual (fiscal years),
+  // calculated in in_gdp_mospi from MoSPI's levels on each base: 2011-12 base (dashed) and 2022-23 base (solid).
+  let shareMeasure = 'share_gdp';
   function mfgShare() {
     const id = 'mfg-share', box = document.getElementById(id + '-chart');
-    document.getElementById(id + '-units').textContent = `% of GVA, ${sharePrice === 'constant' ? 'constant' : 'current'} prices`;
+    document.getElementById(id + '-units').textContent = `% of ${shareMeasure === 'share_gdp' ? 'GDP' : 'GVA'}, current prices`;
     const S = [{ key: 'new', name: '2022-23 base', color: 'var(--ad-c2)' }, { key: 'old', name: '2011-12 base', color: 'var(--ad-c2)', dash: true }];
     legend(id + '-legend', S);
     if (!status(box, ['in_gdp'])) return;
-    const sh = (b) => gdp().filter((r) => r.freq === 'A' && r.code === 'manufacturing' && r.measure === 'share' && r.base_year === b && r.price === sharePrice)
+    const sh = (b) => gdp().filter((r) => r.freq === 'A' && r.code === 'manufacturing' && r.measure === shareMeasure && r.base_year === b && r.price === 'current')
       .map((r) => ({ date: r.date, v: N(r.value) }));
     const rows = J.slice(merge([{ key: 'new', rows: sh('2022-23') }, { key: 'old', rows: sh('2011-12') }]), id);
     if (!rows.length) { box.replaceChildren(); return; }
@@ -585,12 +584,48 @@ dash.calc('iip_movers', {
 
   document.getElementById('mfg-share-seg').addEventListener('click', (e) => {
     const b = e.target.closest('button'); if (!b) return;
-    sharePrice = b.dataset.p;
+    shareMeasure = b.dataset.p;
     document.querySelectorAll('#mfg-share-seg button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
     mfgShare();
   });
 
-  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgIipM(); mfgIip(); mfgDiv(); mfgElec(); mfgContrib(); mfgShare(); } };
+  // Manufacturing tab: manufacturing GVA growth, real and nominal, % y/y, MoSPI's published rates. Annual: 2011-12 base
+  // to FY23, 2022-23 base from FY24 (dashed line at the base change), latest estimate of each year. Quarterly: 2022-23
+  // base from Apr-Jun 2023.
+  let mgFreq = 'A';
+  function mfgGva() {
+    const id = 'mfg-gva', box = document.getElementById(id + '-chart');
+    const S = [{ key: 'real', name: 'Real', color: 'var(--ad-c2)' }, { key: 'nom', name: 'Nominal', color: 'var(--ad-c1)' }];
+    legend(id + '-legend', S);
+    if (!status(box, ['in_gdp'])) return;
+    const rows = J.slice(merge([{ key: 'real', rows: series(mgFreq, 'manufacturing', 'constant') },
+      { key: 'nom', rows: series(mgFreq, 'manufacturing', 'current') }]), id);
+    if (!rows.length) { box.replaceChildren(); return; }
+    const H = 300, ann = mgFreq === 'A';
+    const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => [r.real, r.nom]).filter((v) => v != null), true,
+      ann ? (r) => fyShort(r.date) : qAxis, ann ? { labelWidth: 44, top: 24, pad: 6 } : { anchorEvery: qAnchor, top: 24 });
+    if (ann && rows[0].date < BASE_SWITCH && rows[rows.length - 1].date >= BASE_SWITCH) {
+      const k = rows.findIndex((r) => r.date >= BASE_SWITCH);
+      const sx = (x(J.date(rows[k - 1].date)) + x(J.date(rows[k].date))) / 2;
+      svg.append('line').attr('x1', sx).attr('x2', sx).attr('y1', 18).attr('y2', H - 24).attr('stroke', 'var(--ad-axis)').attr('stroke-dasharray', '3 3');
+      svg.append('text').attr('x', sx).attr('y', 12).attr('font-size', 11).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'middle').text('2022-23 base');
+    }
+    const dots = drawLines(svg, x, y, rows, S);
+    const extras = hover(svg, document.getElementById(id), x, rows, H, ml, W - mr,
+      (r) => (ann ? `${fyShort(r.date)} (${fyLab(r.date)}${baseOf(r)})` : J.qLabel(r.date)), (r, px) => {
+        dots.forEach((d, i) => { const v = r[S[i].key]; d.attr('display', v == null ? 'none' : null).attr('cx', px).attr('cy', v == null ? 0 : y(v)); });
+        return S.map((s) => [s.color, s.name, pct(r[s.key])]);
+      });
+    extras.push(...dots);
+  }
+  document.getElementById('mfg-gva-seg').addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    mgFreq = b.dataset.f;
+    document.querySelectorAll('#mfg-gva-seg button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    mfgGva();
+  });
+
+  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgIipM(); mfgIip(); mfgDiv(); mfgElec(); mfgContrib(); mfgShare(); mfgGva(); } };
 
   J.redrawGdp = () => {
     J.redrawMfg();

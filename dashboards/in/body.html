@@ -129,12 +129,24 @@
     <section class="jg-card" id="mfg-share" data-periods="none">
       <div class="jg-cardhead">
         <div><h2>India manufacturing share of GVA</h2></div>
-        <div class="jg-seg" id="mfg-share-seg" role="group" aria-label="Price basis">
-          <button data-p="constant" aria-pressed="true">Real</button><button data-p="current">Nominal</button>
+        <div class="jg-seg" id="mfg-share-seg" role="group" aria-label="Denominator">
+          <button data-p="share_gdp" aria-pressed="true">% of GDP</button><button data-p="share">% of GVA</button>
         </div>
       </div>
-      <div class="ad-top"><span class="ad-units" id="mfg-share-units">% of GVA, constant prices</span><div class="jg-legend" id="mfg-share-legend"></div><span class="ad-units r"></span></div>
+      <div class="ad-top"><span class="ad-units" id="mfg-share-units">% of GDP, current prices</span><div class="jg-legend" id="mfg-share-legend"></div><span class="ad-units r"></span></div>
       <div class="jg-chart" id="mfg-share-chart" data-source="in_gdp"></div>
+      <div class="ad-foot"><span>Source: MoSPI</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <section class="jg-card" id="mfg-gva" data-periods="none">
+      <div class="jg-cardhead">
+        <div><h2>India manufacturing GVA growth</h2></div>
+        <div class="jg-seg" id="mfg-gva-seg" role="group" aria-label="Frequency">
+          <button data-f="A" aria-pressed="true">Annual</button><button data-f="Q">Quarterly</button>
+        </div>
+      </div>
+      <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="mfg-gva-legend"></div><span class="ad-units r"></span></div>
+      <div class="jg-chart" id="mfg-gva-chart" data-source="in_gdp"></div>
       <div class="ad-foot"><span>Source: MoSPI</span><span class="ad-brand">Asia Decoded</span></div>
     </section>
 
