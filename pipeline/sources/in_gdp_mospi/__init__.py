@@ -208,17 +208,16 @@ def services(rows, sh, warnings):
 
 
 def mfg_share(rows):
-    """Manufacturing share of GVA, %, annual, calculated (user, 3 Nov 2026): manufacturing GVA / total GVA, MoSPI's
-    published levels at current prices (nominal) and at constant prices (real, each base at its own base-year prices),
-    latest vintage of each year, on each base separately: 2011-12 base
-    (2011-12 to its latest year) and 2022-23 base (from 2022-23). Years whose latest vintage has conflicting values are
-    skipped."""
+    """Manufacturing share of GVA and of GDP, % at current prices, annual, calculated (user, 3 Nov 2026): manufacturing
+    GVA / total GVA (measure "share") and / GDP (measure "share_gdp"), MoSPI's published current-price levels, latest
+    vintage of each year, on each base separately: 2011-12 base (2011-12 to its latest year) and 2022-23 base (from
+    2022-23). Years whose latest vintage has conflicting values are skipped."""
     out = []
-    for base, price in [(b, p) for b in ("2011-12", "2022-23") for p in ("current", "constant")]:
+    for base in ("2011-12", "2022-23"):
         best, clash = {}, set()
         for r in rows:
-            if r["freq"] != "A" or r["measure"] != "level" or r["price"] != price or r["base_year"] != base \
-                    or r["code"] not in ("manufacturing", "gva") or r["approach"] not in ("", "Production Approach", "Production"):
+            if r["freq"] != "A" or r["measure"] != "level" or r["price"] != "current" or r["base_year"] != base \
+                    or r["code"] not in ("manufacturing", "gva", "gdp") or r["approach"] not in ("", "Production Approach", "Production"):
                 continue
             k = (r["fy"], r["code"])
             if k not in best or r["rev_rank"] > best[k]["rev_rank"]:
@@ -228,12 +227,14 @@ def mfg_share(rows):
         for k in clash:
             best.pop(k, None)
         for fy in sorted({k[0] for k in best}):
-            m, g = best.get((fy, "manufacturing")), best.get((fy, "gva"))
-            if m and g and g["value"] > 0:
-                out.append({"date": m["date"], "freq": "A", "period": fy, "fy": fy, "fq": "", "base_year": base,
-                            "code": "manufacturing", "industry": "Manufacturing", "subindustry": "", "approach": "",
-                            "measure": "share", "price": price, "value": round(m["value"] / g["value"] * 100, 2),
-                            "unit": "% of GVA", "revision": m["revision"], "rev_rank": m["rev_rank"], "calculated": "y"})
+            m = best.get((fy, "manufacturing"))
+            for den, measure, unit in (("gva", "share", "% of GVA"), ("gdp", "share_gdp", "% of GDP")):
+                d = best.get((fy, den))
+                if m and d and d["value"] > 0:
+                    out.append({"date": m["date"], "freq": "A", "period": fy, "fy": fy, "fq": "", "base_year": base,
+                                "code": "manufacturing", "industry": "Manufacturing", "subindustry": "", "approach": "",
+                                "measure": measure, "price": "current", "value": round(m["value"] / d["value"] * 100, 2),
+                                "unit": unit, "revision": m["revision"], "rev_rank": m["rev_rank"], "calculated": "y"})
     return out
 
 
