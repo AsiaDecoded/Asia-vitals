@@ -2,6 +2,37 @@
 // (growth rates, % y/y) and the World Bank's WDI (US$ levels and real growth). The page calculates only the CAGR on
 // charts 1 and 2. Quarters are dated at their first calendar month and labelled by calendar months (Apr–Jun 2026 is
 // MoSPI's Q1 2026-27); fiscal years (April to March) are dated at April and labelled 2025-26.
+// IIP biggest contributors (Manufacturing tab): for each part of the general index (23 NIC 2-digit manufacturing
+// divisions, mining, electricity and gas, water and waste), its weight and MoSPI's y/y in the latest month, and the
+// average of its contribution to general IIP y/y over the latest 3 and 6 months (contributions calculated in
+// in_iip_mospi at MoSPI's 2022-23 weights). As the CPI table.
+dash.calc('iip_movers', {
+  title: 'IIP contributions, 3- and 6-month averages',
+  description: 'For each part of the general IIP (2022-23 base): its weight and MoSPI published y/y in the latest month, and the average of its contribution to general IIP y/y over the latest 3 and 6 months.',
+  inputs: ['in_iip_contrib_items'],
+  fn: (in_iip_contrib_items) => {
+    const n = (v) => (v === '' || v == null ? null : Number(v));
+    const months = Array.from(new Set(in_iip_contrib_items.map((r) => r.date))).sort();
+    const latest = months[months.length - 1];
+    const by = new Map();
+    in_iip_contrib_items.forEach((r) => {
+      if (!by.has(r.code)) by.set(r.code, {});
+      by.get(r.code)[r.date] = { name: r.name, weight: n(r.weight), yoy: n(r.yoy), c: n(r.contribution) };
+    });
+    const avg = (m, k) => {
+      const ms = months.slice(-k);
+      if (ms.length < k || ms.some((d) => !m[d] || m[d].c == null)) return null;
+      return ms.reduce((a, d) => a + m[d].c, 0) / k;
+    };
+    const out = [];
+    by.forEach((m) => {
+      const cur = m[latest]; if (!cur) return;
+      out.push({ name: cur.name, date: latest, weight: cur.weight, yoy: cur.yoy, avg3: avg(m, 3), avg6: avg(m, 6) });
+    });
+    return out;
+  },
+});
+
 (() => {
   const J = window.JG;
   const visible = () => !document.getElementById('gdp').hidden;
@@ -487,6 +518,46 @@
     });
     extras.push(dot);
   }
+  // IIP biggest contributors table: largest positive and negative 3m (or 6m) average contributions, five each.
+  let iipMoversN = 3;
+  const MONS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  function iipMovers() {
+    const tb = document.querySelector('#iip-movers-table tbody');
+    const M = dash.data('iip_movers');
+    if (failed(M.status)) { tb.replaceChildren(); const td = tb.insertRow().insertCell(); td.colSpan = 4; J.fail(td); return; }
+    if (M.status !== 'ok') return;
+    const k = iipMoversN === 6 ? 'avg6' : 'avg3';
+    const rows = M.data.filter((r) => r[k] != null);
+    const up = rows.slice().sort((a, b) => b[k] - a[k] || b.yoy - a.yoy).slice(0, 5);
+    const down = rows.slice().sort((a, b) => a[k] - b[k] || a.yoy - b.yoy).slice(0, 5);
+    const date = M.data.length ? M.data[0].date : null;
+    document.getElementById('iip-movers-units').textContent = date
+      ? `%, ppt, ${iipMoversN}-month average to ${MONS[Number(date.slice(5, 7)) - 1]} ${date.slice(0, 4)}` : '%, ppt';
+    document.getElementById('iip-movers-avg').textContent = `Contrib., ${iipMoversN}m`;
+    tb.replaceChildren();
+    [['Largest positive contributions', up], ['Largest negative contributions', down]].forEach(([g, list], gi) => {
+      const gr = tb.insertRow(); gr.className = 'grp' + (gi ? ' sep' : '');
+      const gtd = gr.insertCell(); gtd.colSpan = 4; gtd.textContent = g;
+      list.forEach((r) => {
+        const tr = tb.insertRow(); tr.dataset.key = r.name;
+        [['name', r.name], ['weight', r.weight], ['yoy', r.yoy], [k, r[k]]].forEach(([f, v]) => {
+          const td = tr.insertCell();
+          if (f === 'name') { td.textContent = v; return; }
+          td.textContent = v == null ? '' : (f === 'yoy' ? d3.format('.1f')(v) : d3.format('.2f')(v));
+          if (v != null && v < 0 && f !== 'weight') td.classList.add('neg');
+        });
+      });
+    });
+  }
+  const iseg = document.getElementById('iip-movers-seg');
+  iseg.addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    iipMoversN = Number(b.dataset.n);
+    iseg.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    iipMovers();
+  });
+  dash.onData(() => iipMovers());
+
   J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgIipM(); mfgIip(); mfgDiv(); mfgElec(); mfgContrib(); } };
 
   J.redrawGdp = () => {
