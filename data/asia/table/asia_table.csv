@@ -3940,6 +3940,7 @@ ID,Indonesia,cpi,"CPI, all items (BPS, via Bank Indonesia SEKI)",2026-06-01,3.34
 ID,Indonesia,cpi,"CPI, all items (BPS, via Bank Indonesia SEKI)",2026-07-01,2.88,published,data/id/cpi/id_cpi.csv
 ID,Indonesia,cpi,"CPI, all items (BPS, via Bank Indonesia SEKI)",2026-08-01,3.19,published,data/id/cpi/id_cpi.csv
 ID,Indonesia,cpi,"CPI, all items (BPS, via Bank Indonesia SEKI)",2026-09-01,3.28,published,data/id/cpi/id_cpi.csv
+ID,Indonesia,cpi,"CPI, all items (BPS, via Bank Indonesia SEKI)",2026-10-01,3.23,published,data/id/cpi/id_cpi.csv
 ID,Indonesia,energy,Energy,2022-10-01,16.88,published,data/id/cpi_bps/id_cpi_bps.csv
 ID,Indonesia,energy,Energy,2022-11-01,16.85,published,data/id/cpi_bps/id_cpi_bps.csv
 ID,Indonesia,energy,Energy,2022-12-01,16.88,published,data/id/cpi_bps/id_cpi_bps.csv
@@ -3988,6 +3989,7 @@ ID,Indonesia,energy,Energy,2026-06-01,2.87,published,data/id/cpi_bps/id_cpi_bps.
 ID,Indonesia,energy,Energy,2026-07-01,3.26,published,data/id/cpi_bps/id_cpi_bps.csv
 ID,Indonesia,energy,Energy,2026-08-01,3.18,published,data/id/cpi_bps/id_cpi_bps.csv
 ID,Indonesia,energy,Energy,2026-09-01,3.28,published,data/id/cpi_bps/id_cpi_bps.csv
+ID,Indonesia,energy,Energy,2026-10-01,3.27,published,data/id/cpi_bps/id_cpi_bps.csv
 ID,Indonesia,official_core,Core,2022-10-01,3.31,published,data/id/cpi_bps/id_cpi_bps.csv
 ID,Indonesia,official_core,Core,2022-11-01,3.3,published,data/id/cpi_bps/id_cpi_bps.csv
 ID,Indonesia,official_core,Core,2022-12-01,3.36,published,data/id/cpi_bps/id_cpi_bps.csv
@@ -4036,6 +4038,7 @@ ID,Indonesia,official_core,Core,2026-06-01,2.76,published,data/id/cpi_bps/id_cpi
 ID,Indonesia,official_core,Core,2026-07-01,2.76,published,data/id/cpi_bps/id_cpi_bps.csv
 ID,Indonesia,official_core,Core,2026-08-01,2.92,published,data/id/cpi_bps/id_cpi_bps.csv
 ID,Indonesia,official_core,Core,2026-09-01,2.84,published,data/id/cpi_bps/id_cpi_bps.csv
+ID,Indonesia,official_core,Core,2026-10-01,2.56,published,data/id/cpi_bps/id_cpi_bps.csv
 ID,Indonesia,ppi,"WPI, general",2025-01-01,2.11,published,data/id/ppi/id_ppi.csv
 ID,Indonesia,ppi,"WPI, general",2025-02-01,1.3,published,data/id/ppi/id_ppi.csv
 ID,Indonesia,ppi,"WPI, general",2025-03-01,1.58,published,data/id/ppi/id_ppi.csv
@@ -4057,6 +4060,7 @@ ID,Indonesia,ppi,"WPI, general",2026-06-01,6.51,published,data/id/ppi/id_ppi.csv
 ID,Indonesia,ppi,"WPI, general",2026-07-01,5.66,published,data/id/ppi/id_ppi.csv
 ID,Indonesia,ppi,"WPI, general",2026-08-01,6.18,published,data/id/ppi/id_ppi.csv
 ID,Indonesia,ppi,"WPI, general",2026-09-01,6.76,published,data/id/ppi/id_ppi.csv
+ID,Indonesia,ppi,"WPI, general",2026-10-01,7.0,published,data/id/ppi/id_ppi.csv
 TH,Thailand,cpi,All items,2015-01-01,-0.41,published,data/th/cpi/th_cpi.csv
 TH,Thailand,cpi,All items,2015-02-01,-0.52,published,data/th/cpi/th_cpi.csv
 TH,Thailand,cpi,All items,2015-03-01,-0.57,published,data/th/cpi/th_cpi.csv

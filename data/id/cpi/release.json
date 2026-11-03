@@ -1,18 +1,22 @@
 {
- "code": "C2026-09",
- "label": "Sep 2026",
- "latest_month": "2026-09-01",
- "seki_modified": "Thu, 01 Oct 2026 07:49:50 GMT",
+ "code": "C2026-10",
+ "label": "Oct 2026",
+ "latest_month": "2026-10-01",
+ "seki_modified": "Mon, 02 Nov 2026 07:37:05 GMT",
  "table": "Bank Indonesia SEKI VIII.1 (TABEL8_1.xls), BPS CPI",
- "processed_at": "2026-10-28T07:29:52Z",
- "rows": 1620,
+ "processed_at": "2026-11-03T01:18:22Z",
+ "rows": 1632,
  "warnings": [],
- "fingerprint": "dd06b88b9fc547e9",
- "long_rows": 4639,
+ "fingerprint": "1e7cb3c4c5e0bc80",
+ "long_rows": 4665,
  "history": [
   {
    "code": "C2026-09",
    "processed_at": "2026-10-28T07:29:52Z"
+  },
+  {
+   "code": "C2026-10",
+   "processed_at": "2026-11-03T01:18:22Z"
   }
  ]
 }
