@@ -238,6 +238,23 @@ def mfg_share(rows):
     return out
 
 
+def gdp_2011base(rows):
+    """Real GDP growth on the 2011-12 base for every year MoSPI published it (2012-13 to its last year, 2025-26),
+    latest vintage of each year, as published (code gdp_2011base; user, 3 Nov 2026: shown dashed beside the 2022-23
+    base on the GDP tab's Chart 5 so the overlapping years can be compared). Conflicting latest vintages are skipped."""
+    best, clash = {}, set()
+    for r in rows:
+        if r["freq"] != "A" or r["code"] != "gdp" or r["measure"] != "yoy" or r["price"] != "constant" or r["base_year"] != "2011-12":
+            continue
+        k = r["fy"]
+        if k not in best or r["rev_rank"] > best[k]["rev_rank"]:
+            best[k] = r; clash.discard(k)
+        elif r["rev_rank"] == best[k]["rev_rank"] and r["value"] != best[k]["value"]:
+            clash.add(k)
+    return [{**best[k], "code": "gdp_2011base", "industry": "Gross Domestic Product (2011-12 base, all years)", "calculated": ""}
+            for k in sorted(best) if k not in clash]
+
+
 def check(rows, sh):
     errors, warnings = [], []
     q = [r for r in sh if r["freq"] == "Q"]
@@ -290,6 +307,7 @@ def update(force=False, **_):
         r.setdefault("calculated", "")
     sh = sh + services(rows, sh, warnings)
     sh = sh + mfg_share(rows)
+    sh = sh + gdp_2011base(rows)
     fp = hashlib.sha256(json.dumps(rows, sort_keys=True).encode()).hexdigest()[:16]
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change ({state.get('label')})"}
