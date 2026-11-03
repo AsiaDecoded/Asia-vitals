@@ -123,10 +123,14 @@ NIC = {"Manufacture of Food Products": ("10", "Food products"), "Manufacture of 
        "Manufacture of Furniture": ("31", "Furniture"), "Other Manufacturing": ("32", "Other manufacturing")}
 
 
+_MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+
 def divisions(rows):
     """Manufacturing by NIC 2-digit division, 2022-23 base, latest month: MoSPI's y/y as published, and the calendar
     year to date (January to the latest month) against the same months a year earlier, calculated as the ratio of the
-    summed indices (MoSPI's method for its cumulative growth, on calendar rather than fiscal months; user, 3 Nov 2026)."""
+    summed indices (MoSPI's method for its cumulative growth, on calendar rather than fiscal months; user, 3 Nov 2026);
+    and the three months to the latest against the same three months a year earlier (m3, "3mma y/y"), same method."""
     new = [r for r in rows if r["base_year"] == "2022-23" and r["category"] == "Manufacturing" and r["index"] is not None]
     last = max(r["date"] for r in new)
     y, m = int(last[:4]), int(last[5:7])
@@ -140,12 +144,19 @@ def divisions(rows):
         if any(x is None for x in cur + prev):
             errors.append(f"IIP division {sub or 'Manufacturing'}: months missing for the year to date"); continue
         ytd = round((sum(x["index"] for x in cur) / sum(x["index"] for x in prev) - 1) * 100, 1)
+        # three months to the latest, against the same three months a year earlier (3mma y/y; user, 3 Nov 2026)
+        last3 = [d for d in sorted(s) if d <= last][-3:]
+        p3 = [s.get(f"{int(d[:4]) - 1}{d[4:]}") for d in last3]
+        if len(last3) < 3 or any(x is None for x in p3):
+            errors.append(f"IIP division {sub or 'Manufacturing'}: no 3-month comparison"); continue
+        m3 = round((sum(s[d]["index"] for d in last3) / sum(x["index"] for x in p3) - 1) * 100, 1)
         one = round((s[last]["index"] / s[f"{y - 1}{last[4:]}"]["index"] - 1) * 100, 1)
         pub = s[last]["growth_rate"]
         if pub is None or abs(one - pub) > 0.15:
             errors.append(f"IIP division {sub or 'Manufacturing'} {last[:7]}: index ratio {one} vs MoSPI y/y {pub}")
         code, short = NIC.get(sub, ("C", "Manufacturing"))
-        out.append({"date": last, "nic": code, "name": short, "industry": sub or "Manufacturing", "yoy": pub, "ytd": ytd,
+        out.append({"date": last, "nic": code, "name": short, "industry": sub or "Manufacturing", "yoy": pub,
+                    "m3": m3, "m3_months": f"{_MON[int(last3[0][5:7]) - 1]}-{_MON[int(last3[-1][5:7]) - 1]} {last3[-1][:4]}", "ytd": ytd,
                     "ytd_months": f"Jan-{['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][m - 1]} {y}",
                     "ytd_calculated": "y"})
     missing = [k for k in NIC if k not in {r["sub_category"] for r in new}]
