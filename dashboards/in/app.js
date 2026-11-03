@@ -639,6 +639,7 @@ dash.calc('tiles_extra', {
     if (id === 'inflation') J.redrawCpi();
     if (id === 'financial') J.redrawFx();
     if (id === 'gdp' && J.redrawGdp) J.redrawGdp();
+    if (id === 'manufacturing' && J.redrawMfg) J.redrawMfg();
   };
   J.show = show;
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));

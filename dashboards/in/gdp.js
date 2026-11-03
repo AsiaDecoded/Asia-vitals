@@ -301,7 +301,38 @@
     el.textContent = `${J.qLabel(r.date)} (MoSPI ${r.fq})`;
   }
 
+  // Manufacturing tab, Chart 1: manufacturing GVA, real (MoSPI, 2022-23 base, as published) and the IIP, general and
+  // manufacturing, linked across the 2011-12 and 2022-23 bases with MoSPI's factors, quarterly averages, y/y (calculated
+  // in in_iip_mospi). Dashed line at the IIP base change (April 2023).
+  function mfgIip() {
+    const id = 'mfg-iip', box = document.getElementById(id + '-chart');
+    const S = [
+      { key: 'gva', name: 'Manufacturing GVA, real', color: 'var(--ad-c2)' },
+      { key: 'iipm', name: 'IIP, manufacturing', color: 'var(--ad-c1)', thin: true },
+      { key: 'iipg', name: 'IIP, general', color: '#A6A6A6', thin: true, dash: true },
+    ];
+    legend(id + '-legend', S);
+    if (!status(box, ['in_iip_linked', 'in_gdp'])) return;
+    const lk = (ser) => dash.data('in_iip_linked').data.filter((r) => r.freq === 'Q' && r.series === ser && N(r.yoy) != null)
+      .map((r) => ({ date: r.date, v: N(r.yoy) }));
+    const rows = J.slice(merge([{ key: 'gva', rows: series('Q', 'manufacturing') }, { key: 'iipm', rows: lk('manufacturing') },
+      { key: 'iipg', rows: lk('general') }]), id);
+    if (!rows.length) { box.replaceChildren(); return; }
+    const H = 300;
+    const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), true,
+      qAxis, { anchorEvery: qAnchor, top: 24 });
+    if (rows[0].date < '2023-04-01' && rows[rows.length - 1].date >= '2023-04-01') vline(svg, x, '2023-04-01', H, 'IIP 2022-23 base');
+    const dots = drawLines(svg, x, y, rows, S);
+    const extras = hover(svg, document.getElementById(id), x, rows, H, ml, W - mr, (r) => J.qLabel(r.date), (r, px) => {
+      dots.forEach((d, i) => { const v = r[S[i].key]; d.attr('display', v == null ? 'none' : null).attr('cx', px).attr('cy', v == null ? 0 : y(v)); });
+      return S.map((s) => [s.color, s.name, pct(r[s.key])]);
+    });
+    extras.push(...dots);
+  }
+  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) mfgIip(); };
+
   J.redrawGdp = () => {
+    J.redrawMfg();
     if (!visible()) return;
     quarterNote();
     usd('gdp-usd', usdPick);
