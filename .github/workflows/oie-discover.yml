@@ -1,0 +1,43 @@
+name: OIE (Thailand) industrial indices discovery (manual)
+
+# Probes the Office of Industrial Economics (oie.go.th): manufacturing production index and related files.
+# Blocked from the Claude sandbox; saves the responses to the "discovery" branch under discovery/oie/<round>.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - pipeline/tools/oie_probe.py
+      - .github/workflows/oie-discover.yml
+
+permissions:
+  contents: write
+
+env:
+  ROUND: o1
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe
+        continue-on-error: true
+        run: timeout 30m python -I -u pipeline/tools/oie_probe.py discovery/oie/$ROUND 40
+      - name: Push results to the discovery branch
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mv discovery /tmp/discovery
+          for i in 1 2 3; do
+            git fetch origin discovery && git checkout -f -B discovery origin/discovery
+            mkdir -p discovery/oie && rm -rf discovery/oie/$ROUND && cp -r /tmp/discovery/oie/$ROUND discovery/oie/
+            git add discovery/oie/$ROUND
+            git commit -qm "OIE discovery $ROUND" && git push -q origin discovery && break
+            sleep 5
+          done
