@@ -291,6 +291,11 @@ def update(from_dir=None, force=False, **_):
     _write_csv(OUT / "ph_vopi_dash.csv", [r for r in b["vopi"] if r["level"] <= 1], ["date", "code", "name", "level", "order", "yoy", "base"])
     _write_csv(OUT / "ph_vopi_div.csv", b["divs"], ["date", "code", "name", "level", "order", "yoy", "yoy_prev", "m3", "ytd", "ytd_months"])
     _write_csv(OUT / "ph_capu.csv", b["capu"], ["date", "code", "name", "rate"])
+    # page file: manufacturing GVA real y/y, manufacturing and industry % of GDP, industry shares of manufacturing GVA (current prices)
+    _write_csv(OUT / "ph_mfg_gva_dash.csv",
+               [r for r in b["gva"] if (r["code"] == "C" and r["measure"] == "yoy" and r["price"] == "constant_2018")
+                or (r["measure"] == "share_gdp" and r["price"] == "current") or (r["measure"] == "share" and r["price"] == "current" and r["code"] != "C")],
+               ["date", "period", "code", "industry", "measure", "value"])
     _write_csv(OUT / "ph_mfg_gva.csv", b["gva"], ["date", "period", "code", "industry", "price", "measure", "value", "unit"])
     SRC = "PSA, Monthly Integrated Survey of Selected Industries (OpenSTAT)"
 
