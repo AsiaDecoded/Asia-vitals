@@ -241,27 +241,43 @@ def contributions(rows):
     return out
 
 
+# Sub-series of the three non-manufacturing sectors, 2022-23 weights (MoSPI; user's file, sheet Sectoral Weights).
+SUB_W = {("Mining & Quarrying", "Fuel Minerals"): ("B1", "Fuel minerals (mining)", 5.647),
+         ("Mining & Quarrying", "Metallic Minerals incl. Rare Earth Minerals"): ("B2", "Metallic minerals (mining)", 1.995),
+         ("Mining & Quarrying", "Non-Metallic Minerals incl. Minor Minerals"): ("B3", "Non-metallic minerals (mining)", 3.411),
+         # Electricity as one part: MoSPI's renewable (1.629) and non-renewable (8.542) indices do not add up to its
+         # electricity index at those weights (gaps up to 5.5 points), unlike every other split (within 0.05).
+         ("Electricity & Gas Supply", "Electricity"): ("D1", "Electricity", 10.171),
+         ("Electricity & Gas Supply", "Gas Supply"): ("D3", "Gas supply", 0.694),
+         ("Water Supply, Sewerage & Waste Management", "Water Supply"): ("E1", "Water supply", 1.059),
+         ("Water Supply, Sewerage & Waste Management", "Sewerage & Waste Management"): ("E2", "Sewerage and waste", 0.961)}
+
+
 def contributions_items(rows):
     """Contributions to general IIP y/y by part, pp, monthly from April 2024 (user, 3 Nov 2026, for a biggest-contributors
-    table like the CPI one): the 23 NIC 2-digit manufacturing divisions plus mining, electricity and gas, and water and
-    waste, which together make up the general index; same method as contributions(). Also the part's weight and MoSPI's
-    published y/y. Check: parts sum to the published general y/y within 0.15pp."""
+    table like the CPI one), at the most granular level MoSPI publishes: the 23 NIC 2-digit manufacturing divisions,
+    mining (fuel, metallic, non-metallic minerals), electricity, gas supply, water supply, sewerage and waste: 30 parts,
+    weights summing to 100. Same method as contributions(). Also each part's weight and
+    MoSPI's published y/y. Check: parts sum to the published general y/y within 0.15pp."""
     code = {k: v for k, v in NIC.items()}
-    I, Y = {}, {}
+    I, Y, W, names = {}, {}, {}, {}
     for r in rows:
         if r["base_year"] != "2022-23" or r["index"] is None:
             continue
         if r["category"] == "Manufacturing" and r["sub_category"]:
-            k = code[r["sub_category"]][0]
-        elif r["sub_category"] == "" and (r["category"] in SECTOR_W or r["category"] == "General"):
-            k = r["category"]
+            k, nm, w = code[r["sub_category"]][0], code[r["sub_category"]][1], WEIGHTS[code[r["sub_category"]][0]]
+        elif (r["category"], r["sub_category"]) in SUB_W:
+            k, nm, w = SUB_W[(r["category"], r["sub_category"])]
+        elif r["category"] == "General" and r["sub_category"] == "":
+            k, nm, w = "General", "General", None
         else:
             continue
         I.setdefault(r["date"], {})[k] = r["index"]
         Y.setdefault(r["date"], {})[k] = r["growth_rate"]
-    W = {**WEIGHTS, **SECTOR_W}
-    names = {**{v[0]: v[1] for v in NIC.values()}, "Mining & Quarrying": "Mining", "Electricity & Gas Supply": "Electricity and gas",
-             "Water Supply, Sewerage & Waste Management": "Water supply, sewerage and waste"}
+        if w is not None:
+            W[k], names[k] = w, nm
+    if len(W) != 30 or abs(sum(W.values()) - 100) > 0.01:
+        raise CheckFailed([f"IIP item contributions: {len(W)} parts, weights sum {sum(W.values()):.3f}"])
     out, errors = [], []
     for d in sorted(I):
         if d < "2024-04-01":
@@ -274,9 +290,8 @@ def contributions_items(rows):
         if Y[d]["General"] is None or abs(sum(cs.values()) - Y[d]["General"]) > 0.15:
             errors.append(f"IIP item contributions {d[:7]}: sum {sum(cs.values()):.2f} vs MoSPI {Y[d]['General']}")
         for k, v in cs.items():
-            out.append({"date": d, "code": k if k.isdigit() else {"Mining & Quarrying": "B", "Electricity & Gas Supply": "D",
-                        "Water Supply, Sewerage & Waste Management": "E"}[k], "name": names[k], "weight": W[k],
-                        "yoy": Y[d][k], "contribution": round(v, 4), "calculated": "y"})
+            out.append({"date": d, "code": k, "name": names[k], "weight": W[k], "yoy": Y[d][k],
+                        "contribution": round(v, 4), "calculated": "y"})
     if errors:
         raise CheckFailed(errors[:20])
     return out
