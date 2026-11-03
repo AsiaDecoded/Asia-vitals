@@ -1,0 +1,21 @@
+{
+ "code": "Q1:2026-27",
+ "label": "Q1:2026-27: capacity utilisation 74.6% (SA 76.3%), OBICUS07102026.xlsx",
+ "latest_quarter": "Q1:2026-27",
+ "book": "OBICUS07102026.xlsx",
+ "processed_at": "2026-11-03T05:19:36Z",
+ "rows": 73,
+ "warnings": [],
+ "fingerprint": "4f3b8f735873d305",
+ "long_rows": 73,
+ "history": [
+  {
+   "code": "QQ1:2026-27",
+   "processed_at": "2026-11-03T05:19:27Z"
+  },
+  {
+   "code": "Q1:2026-27",
+   "processed_at": "2026-11-03T05:19:36Z"
+  }
+ ]
+}
