@@ -337,8 +337,8 @@
     if (!D.length) { box.replaceChildren(); return; }
     const S = [{ key: 'm3', name: '3mma', color: 'var(--ad-c2)', bar: true }, { key: 'ytd', name: 'YTD', color: 'var(--ad-c1)', bar: true }];
     legend(id + '-legend', S);
-    // Manufacturing, then the electronics groups (calculated at MoSPI's weights), then the divisions by 3mma.
-    // Only the electronics and electrical row under Manufacturing (user, 3 Nov 2026); non-electronics stays in Chart 4.
+    // Manufacturing with electronics and non-electronics indented under it as its subsets (user, 3 Nov 2026), other
+    // industries (calculated at MoSPI's weights), then the divisions by 3mma. Labels left-aligned so the indent shows.
     const GR = ['E2627', 'X2627', 'OTH'];
     const head = ['C'].concat(GR).map((c) => D.find((r) => r.nic === c)).filter(Boolean);
     const rows = head.concat(D.filter((r) => r.nic !== 'C' && !GR.includes(r.nic)).sort((a, b) => b.m3 - a.m3));
@@ -347,8 +347,9 @@
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
     const GLAB = { E2627: 'Electronics', X2627: 'Non-electronics', OTH: 'Other industries' };   // short labels (user, 3 Nov 2026)
     const lab = (r) => (r.nic === 'C' ? 'Manufacturing' : GLAB[r.nic] || `${r.name} (${r.nic})`);
-    const lw = Math.min(W * 0.42, J.textWidth(svg, rows.map(lab)) + 12);
-    const vals = rows.flatMap((r) => [r.yoy, r.ytd]).filter((v) => v != null);
+    const SUB = ['E2627', 'X2627'], IND = 16;   // subsets of manufacturing, indented
+    const lw = Math.min(W * 0.42, J.textWidth(svg, rows.map(lab)) + IND + 14);
+    const vals = rows.flatMap((r) => [r.m3, r.ytd]).filter((v) => v != null);
     const x = d3.scaleLinear([Math.min(0, d3.min(vals)), Math.max(0, d3.max(vals))], [lw, W - 8]).nice();
     const ticks = x.ticks(Math.max(2, Math.floor((W - lw) / 70)));
     svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', x).attr('x2', x).attr('y1', top).attr('y2', H - 20)
@@ -357,7 +358,7 @@
     const bh = (rowH - 8) / 2;
     rows.forEach((r, i) => {
       const y0 = top + i * rowH + 4;
-      svg.append('text').attr('x', lw - 8).attr('y', y0 + bh).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 12)
+      svg.append('text').attr('x', 2 + (SUB.includes(r.nic) ? IND : 0)).attr('y', y0 + bh).attr('dy', '0.35em').attr('text-anchor', 'start').attr('font-size', 12)
         .attr('font-weight', r.nic === 'C' || GR.includes(r.nic) ? 700 : null).attr('fill', 'var(--ad-ink)').text(lab(r));
       S.forEach((s, k) => {
         const v = r[s.key]; if (v == null) return;
