@@ -11,6 +11,7 @@ os.makedirs(OUT, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36",
       "Accept": "*/*"}
 URLS = {
+    "data_rbi_main_js": "https://data.rbi.org.in/main.3d843aa6360772f1.js",
     "dbie_home": "https://dbie.rbihub.in/",
     "dbie_app": "https://dbie.rbihub.in/DBIE/dbie.rbi?site=home",
     "dbie_api_cat": "https://dbie.rbihub.in/DBIE/api/catalogue",
@@ -28,7 +29,7 @@ for k, u in URLS.items():
         b = e.read(); st = e.code; ct = e.headers.get("Content-Type")
     except Exception as e:  # noqa: BLE001
         log.append(f"FAIL {k} {e!r}"); continue
-    open(os.path.join(OUT, k + ".bin"), "wb").write(b[:200000])
+    open(os.path.join(OUT, k + ".bin"), "wb").write(b if k.endswith("_js") else b[:200000])
     txt = b[:3000].decode("utf-8", "replace")
     challenge = "TSPD" in txt or "bobcmn" in txt or "captcha" in txt.lower()
     log.append(f"{st} {k} {ct} {len(b)} bytes challenge={challenge} | {txt[:120]!r}")
