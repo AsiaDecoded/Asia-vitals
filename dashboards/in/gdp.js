@@ -391,7 +391,7 @@ dash.calc('iip_movers', {
     }
     const dots = drawLines(svg, x, y, rows, S);
     const extras = hover(svg, document.getElementById(id), x, rows, H, ml, W - mr,
-      (r) => (ann ? `${fyShort(r.date)} (${fyLab(r.date)}${baseOf(r)})` : J.qLabel(r.date)), (r, px) => {
+      (r) => (ann ? `${fyShort(r.date)} (${fyLab(r.date)})` : J.qLabel(r.date)), (r, px) => {
         dots.forEach((d, i) => { const v = r[S[i].key]; d.attr('display', v == null ? 'none' : null).attr('cx', px).attr('cy', v == null ? 0 : y(v)); });
         return S.map((s) => [s.color, s.name, pct(r[s.key])]);
       });
@@ -640,14 +640,23 @@ dash.calc('iip_movers', {
   let mgFreq = 'A';
   function mfgGva() {
     const id = 'mfg-gva', box = document.getElementById(id + '-chart');
-    const S = [{ key: 'real', name: 'Real', color: 'var(--ad-c2)' }, { key: 'nom', name: 'Nominal', color: 'var(--ad-c1)' }];
+    // Annual (user, 3 Nov 2026, as the GDP tab's Chart 5): 2022-23 base solid from FY24; 2011-12 base dashed for every
+    // year it was published (to FY26), so the overlapping years FY24-FY26 show both.
+    const ann0 = mgFreq === 'A';
+    const S = ann0
+      ? [{ key: 'real', name: 'Real, 2022-23 base', color: 'var(--ad-c2)' }, { key: 'realo', name: 'Real, 2011-12 base', color: 'var(--ad-c2)', dash: true },
+        { key: 'nom', name: 'Nominal, 2022-23 base', color: 'var(--ad-c1)' }, { key: 'nomo', name: 'Nominal, 2011-12 base', color: 'var(--ad-c1)', dash: true }]
+      : [{ key: 'real', name: 'Real', color: 'var(--ad-c2)' }, { key: 'nom', name: 'Nominal', color: 'var(--ad-c1)' }];
     legend(id + '-legend', S);
     if (!status(box, ['in_gdp'])) return;
-    const rows = J.slice(merge([{ key: 'real', rows: series(mgFreq, 'manufacturing', 'constant') },
-      { key: 'nom', rows: series(mgFreq, 'manufacturing', 'current') }]), id);
+    const nb = (r) => !ann0 || r.base === '2022-23';
+    const rows = J.slice(merge([{ key: 'real', rows: series(mgFreq, 'manufacturing', 'constant').filter(nb) },
+      { key: 'nom', rows: series(mgFreq, 'manufacturing', 'current').filter(nb) }].concat(ann0
+      ? [{ key: 'realo', rows: series('A', 'manufacturing_2011base', 'constant') }, { key: 'nomo', rows: series('A', 'manufacturing_2011base', 'current') }]
+      : [])), id);
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 300, ann = mgFreq === 'A';
-    const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => [r.real, r.nom]).filter((v) => v != null), true,
+    const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), true,
       ann ? (r) => fyShort(r.date) : qAxis, ann ? { labelWidth: 44, top: 24, pad: 6 } : { anchorEvery: qAnchor, top: 24 });
     if (ann && rows[0].date < BASE_SWITCH && rows[rows.length - 1].date >= BASE_SWITCH) {
       const k = rows.findIndex((r) => r.date >= BASE_SWITCH);
@@ -657,7 +666,7 @@ dash.calc('iip_movers', {
     }
     const dots = drawLines(svg, x, y, rows, S);
     const extras = hover(svg, document.getElementById(id), x, rows, H, ml, W - mr,
-      (r) => (ann ? `${fyShort(r.date)} (${fyLab(r.date)}${baseOf(r)})` : J.qLabel(r.date)), (r, px) => {
+      (r) => (ann ? `${fyShort(r.date)} (${fyLab(r.date)})` : J.qLabel(r.date)), (r, px) => {
         dots.forEach((d, i) => { const v = r[S[i].key]; d.attr('display', v == null ? 'none' : null).attr('cx', px).attr('cy', v == null ? 0 : y(v)); });
         return S.map((s) => [s.color, s.name, pct(r[s.key])]);
       });

@@ -239,20 +239,25 @@ def mfg_share(rows):
 
 
 def gdp_2011base(rows):
-    """Real GDP growth on the 2011-12 base for every year MoSPI published it (2012-13 to its last year, 2025-26),
-    latest vintage of each year, as published (code gdp_2011base; user, 3 Nov 2026: shown dashed beside the 2022-23
-    base on the GDP tab's Chart 5 so the overlapping years can be compared). Conflicting latest vintages are skipped."""
-    best, clash = {}, set()
-    for r in rows:
-        if r["freq"] != "A" or r["code"] != "gdp" or r["measure"] != "yoy" or r["price"] != "constant" or r["base_year"] != "2011-12":
-            continue
-        k = r["fy"]
-        if k not in best or r["rev_rank"] > best[k]["rev_rank"]:
-            best[k] = r; clash.discard(k)
-        elif r["rev_rank"] == best[k]["rev_rank"] and r["value"] != best[k]["value"]:
-            clash.add(k)
-    return [{**best[k], "code": "gdp_2011base", "industry": "Gross Domestic Product (2011-12 base, all years)", "calculated": ""}
-            for k in sorted(best) if k not in clash]
+    """Growth on the 2011-12 base for every year MoSPI published it (to its last year, 2025-26), latest vintage of each
+    year, as published: real GDP (code gdp_2011base; user, 3 Nov 2026: dashed beside the 2022-23 base on the GDP tab's
+    Chart 5) and manufacturing GVA, real and nominal (code manufacturing_2011base; user, 3 Nov 2026: the same on the
+    Manufacturing tab's Chart 1, annual). Conflicting latest vintages are skipped."""
+    out = []
+    for code, prices, name in (("gdp", ("constant",), "Gross Domestic Product"),
+                               ("manufacturing", ("constant", "current"), "Manufacturing")):
+        best, clash = {}, set()
+        for r in rows:
+            if r["freq"] != "A" or r["code"] != code or r["measure"] != "yoy" or r["price"] not in prices or r["base_year"] != "2011-12":
+                continue
+            k = (r["price"], r["fy"])
+            if k not in best or r["rev_rank"] > best[k]["rev_rank"]:
+                best[k] = r; clash.discard(k)
+            elif r["rev_rank"] == best[k]["rev_rank"] and r["value"] != best[k]["value"]:
+                clash.add(k)
+        out += [{**best[k], "code": f"{code}_2011base", "industry": f"{name} (2011-12 base, all years)", "calculated": ""}
+                for k in sorted(best) if k not in clash]
+    return out
 
 
 def check(rows, sh):
