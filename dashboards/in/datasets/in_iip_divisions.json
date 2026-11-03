@@ -1,0 +1,14 @@
+{
+ "description": "Index of Industrial Production, manufacturing and its 23 NIC 2-digit divisions, 2022-23 base: latest month y/y as published by MoSPI, and the calendar year to date (January to the latest month) y/y, calculated by Asia Decoded as the ratio of summed indices (ytd_calculated = y). Built by the AsiaDecoded/asia-vitals pipeline (data/in/iip/in_iip_divisions.csv).",
+ "schedule": "Replaced after each monthly IIP release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "in_iip_divisions_M2026-09.csv",
+  "url": "/_blob/6d0f0da6765d5981105a02bb5f7058dc"
+ },
+ "title": "India IIP by industry (MoSPI)",
+ "updated": {
+  "at": "2026-11-03T01:50:00Z",
+  "by": "Claude"
+ }
+}

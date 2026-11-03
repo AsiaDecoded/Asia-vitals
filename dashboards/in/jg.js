@@ -32,7 +32,7 @@ window.JG = {
   },
   addSliders(redraw) {
     document.querySelectorAll('.jg-card').forEach((card) => {
-      const chart = card.querySelector(':scope > .jg-chart'); if (!chart || !card.id) return;
+      const chart = card.querySelector(':scope > .jg-chart'); if (!chart || !card.id || card.dataset.slider === 'none') return;
       const wrap = document.createElement('div'); wrap.className = 'ad-slider';
       const track = document.createElement('div'); track.className = 'ad-slider-track';
       const sel = document.createElement('div'); sel.className = 'ad-slider-sel'; track.appendChild(sel);

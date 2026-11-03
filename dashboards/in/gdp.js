@@ -329,7 +329,53 @@
     });
     extras.push(...dots);
   }
-  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) mfgIip(); };
+  // Manufacturing tab, Chart 2: IIP by NIC 2-digit manufacturing division, latest month y/y (MoSPI, as published) and
+  // the calendar year to date y/y (ratio of summed indices, calculated in in_iip_mospi). Sorted by the latest month;
+  // manufacturing as a whole on top.
+  function mfgDiv() {
+    const id = 'mfg-div', box = document.getElementById(id + '-chart');
+    if (!status(box, ['in_iip_divisions'])) { legend(id + '-legend', []); return; }
+    const D = dash.data('in_iip_divisions').data.map((r) => ({ ...r, yoy: N(r.yoy), ytd: N(r.ytd) }));
+    if (!D.length) { box.replaceChildren(); return; }
+    const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const latest = `${MON[Number(D[0].date.slice(5, 7)) - 1]} ${D[0].date.slice(0, 4)}`;
+    const S = [{ key: 'yoy', name: latest, color: 'var(--ad-c2)', bar: true }, { key: 'ytd', name: D[0].ytd_months.replace('-', '–'), color: 'var(--ad-c1)', bar: true }];
+    legend(id + '-legend', S);
+    const rows = D.filter((r) => r.nic === 'C').concat(D.filter((r) => r.nic !== 'C').sort((a, b) => b.yoy - a.yoy));
+    const W = box.clientWidth, rowH = 26, top = 6, H = top + rows.length * rowH + 22;
+    box.replaceChildren();
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const lab = (r) => (r.nic === 'C' ? 'Manufacturing' : `${r.name} (${r.nic})`);
+    const lw = Math.min(W * 0.42, J.textWidth(svg, rows.map(lab)) + 12);
+    const vals = rows.flatMap((r) => [r.yoy, r.ytd]).filter((v) => v != null);
+    const x = d3.scaleLinear([Math.min(0, d3.min(vals)), Math.max(0, d3.max(vals))], [lw, W - 8]).nice();
+    const ticks = x.ticks(Math.max(2, Math.floor((W - lw) / 70)));
+    svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', x).attr('x2', x).attr('y1', top).attr('y2', H - 20)
+      .attr('stroke', (v) => (v === 0 ? 'var(--cds-chart-reference)' : 'var(--ad-grid)'));
+    J.axisStyle(svg.append('g').attr('transform', `translate(0,${H - 18})`).call(d3.axisBottom(x).tickValues(ticks).tickSize(0).tickFormat(d3.format('.0f'))));
+    const bh = (rowH - 8) / 2;
+    rows.forEach((r, i) => {
+      const y0 = top + i * rowH + 4;
+      svg.append('text').attr('x', lw - 8).attr('y', y0 + bh).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 12)
+        .attr('font-weight', r.nic === 'C' ? 700 : null).attr('fill', 'var(--ad-ink)').text(lab(r));
+      S.forEach((s, k) => {
+        const v = r[s.key]; if (v == null) return;
+        svg.append('rect').attr('x', x(Math.min(0, v))).attr('width', Math.abs(x(v) - x(0))).attr('y', y0 + k * bh).attr('height', bh - 1).attr('fill', s.color);
+      });
+    });
+    if (rows.length > 1) svg.append('line').attr('x1', 0).attr('x2', W - 8).attr('y1', top + rowH).attr('y2', top + rowH).attr('stroke', 'var(--ad-grid)');
+    const card = document.getElementById(id), tip = J.tip(card);
+    const hl = svg.append('rect').attr('x', 0).attr('width', W).attr('height', rowH).attr('fill', 'var(--cds-chart-reference)').attr('opacity', 0.12).attr('display', 'none');
+    svg.append('rect').attr('x', 0).attr('y', top).attr('width', W).attr('height', rows.length * rowH).attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const [, my] = d3.pointer(ev); const i = Math.max(0, Math.min(rows.length - 1, Math.floor((my - top) / rowH))); const r = rows[i];
+        hl.attr('display', null).attr('y', top + i * rowH);
+        const cr = card.getBoundingClientRect();
+        J.showTip(card, tip, r.nic === 'C' ? 'Manufacturing' : `NIC ${r.nic}: ${r.industry}`, S.map((s) => [s.color, s.name, pct(r[s.key])]), ev.clientX - cr.left, ev.clientY - cr.top);
+      })
+      .on('mouseleave', () => { hl.attr('display', 'none'); tip.style.display = 'none'; });
+  }
+  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgIip(); mfgDiv(); } };
 
   J.redrawGdp = () => {
     J.redrawMfg();
