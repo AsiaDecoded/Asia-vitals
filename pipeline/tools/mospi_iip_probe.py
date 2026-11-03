@@ -1,4 +1,5 @@
-"""Probe MoSPI's IIP and ASI APIs for India's Manufacturing tab. Raw responses under <out>/, summary.txt.
+"""Probe MoSPI's IIP API (api.mospi.gov.in/api/iip/...) for India's Manufacturing tab: base years, filters, and the
+first pages of monthly General and Sectoral data on each base. Saves raw responses under <out>/ and a summary.txt.
 Usage: python -I pipeline/tools/mospi_iip_probe.py discovery/mospi_iip
 """
 import json
@@ -23,7 +24,7 @@ def save(name, path, **params):
     url = BASE + path + ("?" + urllib.parse.urlencode(params) if params else "")
     try:
         with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=90, context=CTX) as r:
-            status, body = r.status, r.read()
+            body = r.read(); status = r.status
         try:
             res = json.loads(body)
         except ValueError:
@@ -36,35 +37,30 @@ def save(name, path, **params):
         json.dump({"url": url, "status": status, "response": res}, f, ensure_ascii=False, indent=1)
     n = ""
     if isinstance(res, dict):
-        d, meta = res.get("data"), res.get("meta_data") or {}
-        n = f"rows={len(d) if isinstance(d, list) else type(d).__name__} total={meta.get('totalRecords')} pages={meta.get('totalPages')}"
+        d = res.get("data"); m = res.get("meta_data") or {}
+        n = f"rows={len(d) if isinstance(d, list) else type(d).__name__} total={m.get('totalRecords')} pages={m.get('totalPages')} msg={str(res.get('msg'))[:60]}"
     summary.append(f"{status}\t{name}\t{n}\t{url}")
     time.sleep(0.6)
+    return res
 
 
-save("iip_base_years", "/api/iip/getIipBaseYear")
-for by in ("2022-23", "2011-12", "2004-05"):
+save("base_years", "/api/iip/getIipBaseYear")
+BASES = ["2022-23", "2011-12", "2004-05", "1993-94"]
+for by in BASES:
     for fr in ("Monthly", "Annually"):
-        save(f"iip_filter_{by}_{fr}", "/api/iip/getIipFilter", base_year=by, frequency=fr)
-for by in ("2022-23", "2011-12"):
-    for t in ("General", "Sectoral", "Use-based category", "All"):
-        save(f"iip_m_{by}_{t.replace(' ', '_')}_2026", "/api/iip/getIipData", base_year=by, frequency="Monthly", year="2026",
-             type=t, limit="1000", page="1", Format="JSON")
-        save(f"iip_a_{by}_{t.replace(' ', '_')}", "/api/iip/getIipData", base_year=by, frequency="Annually", type=t,
-             limit="1000", page="1", Format="JSON")
-    for path in ("/api/iip/getIIPMonthly", "/api/iip/getIIPAnnual"):
-        save(f"iip_alt_{by}_{path.rsplit('/', 1)[1]}", path, base_year=by, type="All", limit="100", page="1", Format="JSON")
-save("iip_m_2011-12_All_2012", "/api/iip/getIipData", base_year="2011-12", frequency="Monthly", year="2012", type="All",
-     limit="1000", page="1", Format="JSON")
-save("iip_m_2004-05_General", "/api/iip/getIipData", base_year="2004-05", frequency="Monthly", type="General",
-     limit="1000", page="1", Format="JSON")
-
-save("asi_classification_years", "/api/asi/getNicClassificationYear")
-save("asi_filter", "/api/asi/getAsiFilter")
-save("asi_filter_2008", "/api/asi/getAsiFilter", classification_year="2008")
-save("asi_2digit_allindia", "/api/asi/getASIData", classification_year="2008", sector_code="Combined", state_code="99",
-     nic_type="2-digit", limit="1000", page="1", Format="JSON")
-
+        save(f"filter_{by}_{fr}", "/api/iip/getIipFilter", base_year=by, frequency=fr)
+for by in BASES:
+    for typ in ("General", "Sectoral"):
+        for yr in ("2012", "2013", "2022", "2023", "2025", "2026", "1995", "2006"):
+            save(f"data_{by}_{typ}_{yr}", "/api/iip/getIipData", base_year=by, frequency="Monthly", type=typ, year=yr,
+                 limit="100", page="1", Format="JSON")
+        save(f"data_{by}_{typ}_all_p1", "/api/iip/getIipData", base_year=by, frequency="Monthly", type=typ,
+             limit="100", page="1", Format="JSON")
+        save(f"data_{by}_{typ}_annual", "/api/iip/getIipData", base_year=by, frequency="Annually", type=typ,
+             limit="100", page="1", Format="JSON")
+# 2-digit manufacturing (NIC divisions) on the new base, one year
+save("data_2022-23_All_2026", "/api/iip/getIipData", base_year="2022-23", frequency="Monthly", type="All", year="2026",
+     limit="100", page="1", Format="JSON")
 with open(os.path.join(OUT, "summary.txt"), "w") as f:
     f.write("\n".join(summary) + "\n")
 print("\n".join(summary))
