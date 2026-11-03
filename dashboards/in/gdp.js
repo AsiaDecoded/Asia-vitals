@@ -558,7 +558,29 @@ dash.calc('iip_movers', {
   });
   dash.onData(() => iipMovers());
 
-  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgIipM(); mfgIip(); mfgDiv(); mfgElec(); mfgContrib(); } };
+  // Manufacturing tab: manufacturing share of GVA, % at current prices, annual (fiscal years), calculated in
+  // in_gdp_mospi from MoSPI's levels on each base: 2011-12 base (dashed) and 2022-23 base (solid).
+  function mfgShare() {
+    const id = 'mfg-share', box = document.getElementById(id + '-chart');
+    const S = [{ key: 'new', name: '2022-23 base', color: 'var(--ad-c2)' }, { key: 'old', name: '2011-12 base', color: 'var(--ad-c2)', dash: true }];
+    legend(id + '-legend', S);
+    if (!status(box, ['in_gdp'])) return;
+    const sh = (b) => gdp().filter((r) => r.freq === 'A' && r.code === 'manufacturing' && r.measure === 'share' && r.base_year === b)
+      .map((r) => ({ date: r.date, v: N(r.value) }));
+    const rows = J.slice(merge([{ key: 'new', rows: sh('2022-23') }, { key: 'old', rows: sh('2011-12') }]), id);
+    if (!rows.length) { box.replaceChildren(); return; }
+    const H = 300;
+    const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => [r.new, r.old]).filter((v) => v != null), false,
+      (r) => fyShort(r.date), { labelWidth: 44, pad: 6 });
+    const dots = drawLines(svg, x, y, rows, S);
+    const extras = hover(svg, document.getElementById(id), x, rows, H, ml, W - mr, (r) => `${fyShort(r.date)} (${fyLab(r.date)})`, (r, px) => {
+      dots.forEach((d, i) => { const v = r[S[i].key]; d.attr('display', v == null ? 'none' : null).attr('cx', px).attr('cy', v == null ? 0 : y(v)); });
+      return S.filter((s) => r[s.key] != null).map((s) => [s.color, s.name, r[s.key].toFixed(1) + '%']);
+    });
+    extras.push(...dots);
+  }
+
+  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgIipM(); mfgIip(); mfgDiv(); mfgElec(); mfgContrib(); mfgShare(); } };
 
   J.redrawGdp = () => {
     J.redrawMfg();
