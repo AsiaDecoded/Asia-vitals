@@ -12,10 +12,9 @@
   const fyShort = (d) => `FY${String((Number(d.slice(0, 4)) + 1) % 100).padStart(2, '0')}`;
   const BASE_SWITCH = '2023-04-01';   // annual: MoSPI's 2022-23 base from 2023-24 (2011-12 base before)
   const LMI = 2007;                   // lower-middle income on 2007 GNI per capita (World Bank FY09; data/asia/gni)
-  // Charts 4 and 6: series picked from a dropdown (user, 3 Nov 2026), in her order: GDP, GVA, agriculture,
+  // Charts 4 and 6: series picked from a dropdown (user, 3 Nov 2026), in her order (GDP dropped, user 3 Nov 2026): GVA, agriculture,
   // manufacturing, electricity etc., construction, services (calculated), then the other published industries.
   const PICKS = [
-    { code: 'gdp', name: 'GDP', color: 'var(--ad-c2)' },
     { code: 'gva', name: 'GVA', color: '#A6A6A6', dash: true, thin: true },
     { code: 'agri', name: 'Agriculture', color: 'var(--ad-c6)', thin: true },
     { code: 'manufacturing', name: 'Manufacturing', color: 'var(--ad-c1)', thin: true },
@@ -28,7 +27,7 @@
     { code: 'finance_re', name: 'Financial, real estate, professional', color: 'var(--ad-c8)', thin: true },
     { code: 'public_other', name: 'Public administration, defence, other', color: '#1F4E79', thin: true },
   ];
-  const DEFAULT = ['gdp', 'gva', 'agri', 'manufacturing', 'construction', 'services'];
+  const DEFAULT = ['gva', 'agri', 'manufacturing', 'construction', 'services'];
   const picked = { 'gdp-sectors': new Set(DEFAULT), 'gdp-annual': new Set(DEFAULT) };
   const SEC = (id) => PICKS.filter((s) => picked[id].has(s.code));
   function picker(id) {
