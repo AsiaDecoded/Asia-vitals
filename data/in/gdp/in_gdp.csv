@@ -84,6 +84,7 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2012-04-01,A,2012-13,2012-13,,2011-12,gdp,Gross Domestic Product,,,yoy,constant,5.4,%,Additional Revision,7,
 2012-04-01,A,2012-13,2012-13,,2011-12,gdp,Gross Domestic Product,,,yoy,current,13.8,%,Additional Revision,7,
 2012-04-01,A,2012-13,2012-13,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,constant,5.4,%,Additional Revision,7,
+2012-04-01,A,2012-13,2012-13,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,current,13.8,%,Additional Revision,7,
 2012-04-01,A,2012-13,2012-13,,2011-12,gva,Total Gross Value Added,,,level,constant,8546275.0,Rs crore,Additional Revision,7,
 2012-04-01,A,2012-13,2012-13,,2011-12,gva,Total Gross Value Added,,,level,current,9202692.0,Rs crore,Additional Revision,7,
 2012-04-01,A,2012-13,2012-13,,2011-12,gva,Total Gross Value Added,,,yoy,constant,5.4,%,Additional Revision,7,
@@ -156,6 +157,7 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2013-04-01,A,2013-14,2013-14,,2011-12,gdp,Gross Domestic Product,,,yoy,constant,6.3,%,Additional Revision,7,
 2013-04-01,A,2013-14,2013-14,,2011-12,gdp,Gross Domestic Product,,,yoy,current,12.9,%,Additional Revision,7,
 2013-04-01,A,2013-14,2013-14,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,constant,6.3,%,Additional Revision,7,
+2013-04-01,A,2013-14,2013-14,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,current,12.9,%,Additional Revision,7,
 2013-04-01,A,2013-14,2013-14,,2011-12,gva,Total Gross Value Added,,,level,constant,9063648.0,Rs crore,Additional Revision,7,
 2013-04-01,A,2013-14,2013-14,,2011-12,gva,Total Gross Value Added,,,level,current,10363152.0,Rs crore,Additional Revision,7,
 2013-04-01,A,2013-14,2013-14,,2011-12,manufacturing,Manufacturing,,,level,constant,1560709.0,Rs crore,Additional Revision,7,
@@ -237,6 +239,7 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2014-04-01,A,2014-15,2014-15,,2011-12,gdp,Gross Domestic Product,,,yoy,constant,7.4,%,Third Revised Estimates,5,
 2014-04-01,A,2014-15,2014-15,,2011-12,gdp,Gross Domestic Product,,,yoy,current,10.9,%,Third Revised Estimates,5,
 2014-04-01,A,2014-15,2014-15,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,constant,7.4,%,Third Revised Estimates,5,
+2014-04-01,A,2014-15,2014-15,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,current,10.9,%,Third Revised Estimates,5,
 2014-04-01,A,2014-15,2014-15,,2011-12,gva,Total Gross Value Added,,,level,constant,9712132.0,Rs crore,Third Revised Estimates,5,
 2014-04-01,A,2014-15,2014-15,,2011-12,gva,Total Gross Value Added,,,level,current,11504279.0,Rs crore,Third Revised Estimates,5,
 2014-04-01,A,2014-15,2014-15,,2011-12,gva,Total Gross Value Added,,,yoy,constant,7.1,%,Third Revised Estimates,5,
@@ -354,6 +357,7 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2015-04-01,A,2015-16,2015-16,,2011-12,gdp,Gross Domestic Product,,,yoy,constant,7.9,%,Third Revised Estimates,5,
 2015-04-01,A,2015-16,2015-16,,2011-12,gdp,Gross Domestic Product,,,yoy,current,10.4,%,Third Revised Estimates,5,
 2015-04-01,A,2015-16,2015-16,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,constant,7.9,%,Third Revised Estimates,5,
+2015-04-01,A,2015-16,2015-16,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,current,10.4,%,Third Revised Estimates,5,
 2015-04-01,A,2015-16,2015-16,,2011-12,gva,Total Gross Value Added,,,level,constant,10491870.0,Rs crore,Third Revised Estimates,5,
 2015-04-01,A,2015-16,2015-16,,2011-12,gva,Total Gross Value Added,,,level,current,12574498.0,Rs crore,Third Revised Estimates,5,
 2015-04-01,A,2015-16,2015-16,,2011-12,gva,Total Gross Value Added,,,yoy,constant,8.0,%,Third Revised Estimates,5,
@@ -473,6 +477,7 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2016-04-01,A,2016-17,2016-17,,2011-12,gdp,Gross Domestic Product,,,yoy,constant,8.3,%,Third Revised Estimates,5,
 2016-04-01,A,2016-17,2016-17,,2011-12,gdp,Gross Domestic Product,,,yoy,current,11.8,%,Third Revised Estimates,5,
 2016-04-01,A,2016-17,2016-17,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,constant,8.3,%,Third Revised Estimates,5,
+2016-04-01,A,2016-17,2016-17,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,current,11.8,%,Third Revised Estimates,5,
 2016-04-01,A,2016-17,2016-17,,2011-12,gva,Total Gross Value Added,,,level,constant,11328285.0,Rs crore,Third Revised Estimates,5,
 2016-04-01,A,2016-17,2016-17,,2011-12,gva,Total Gross Value Added,,,level,current,13965200.0,Rs crore,Third Revised Estimates,5,
 2016-04-01,A,2016-17,2016-17,,2011-12,gva,Total Gross Value Added,,,yoy,constant,8.0,%,Third Revised Estimates,5,
@@ -592,6 +597,7 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2017-04-01,A,2017-18,2017-18,,2011-12,gdp,Gross Domestic Product,,,yoy,constant,6.7,%,Third Revised Estimates,5,
 2017-04-01,A,2017-18,2017-18,,2011-12,gdp,Gross Domestic Product,,,yoy,current,11.0,%,Third Revised Estimates,5,
 2017-04-01,A,2017-18,2017-18,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,constant,6.7,%,Third Revised Estimates,5,
+2017-04-01,A,2017-18,2017-18,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,current,11.0,%,Third Revised Estimates,5,
 2017-04-01,A,2017-18,2017-18,,2011-12,gva,Total Gross Value Added,,,level,constant,12034170.0,Rs crore,Third Revised Estimates,5,
 2017-04-01,A,2017-18,2017-18,,2011-12,gva,Total Gross Value Added,,,level,current,15505665.0,Rs crore,Third Revised Estimates,5,
 2017-04-01,A,2017-18,2017-18,,2011-12,gva,Total Gross Value Added,,,yoy,constant,6.2,%,Third Revised Estimates,5,
@@ -711,6 +717,7 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2018-04-01,A,2018-19,2018-19,,2011-12,gdp,Gross Domestic Product,,,yoy,constant,6.4,%,Third Revised Estimates,5,
 2018-04-01,A,2018-19,2018-19,,2011-12,gdp,Gross Domestic Product,,,yoy,current,10.5,%,Third Revised Estimates,5,
 2018-04-01,A,2018-19,2018-19,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,constant,6.4,%,Third Revised Estimates,5,
+2018-04-01,A,2018-19,2018-19,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,current,10.5,%,Third Revised Estimates,5,
 2018-04-01,A,2018-19,2018-19,,2011-12,gva,Total Gross Value Added,,,level,constant,12733797.0,Rs crore,Third Revised Estimates,5,
 2018-04-01,A,2018-19,2018-19,,2011-12,gva,Total Gross Value Added,,,level,current,17175128.0,Rs crore,Third Revised Estimates,5,
 2018-04-01,A,2018-19,2018-19,,2011-12,gva,Total Gross Value Added,,,yoy,constant,5.8,%,Third Revised Estimates,5,
@@ -830,6 +837,7 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2019-04-01,A,2019-20,2019-20,,2011-12,gdp,Gross Domestic Product,,,yoy,constant,3.8,%,Third Revised Estimates,5,
 2019-04-01,A,2019-20,2019-20,,2011-12,gdp,Gross Domestic Product,,,yoy,current,6.3,%,Third Revised Estimates,5,
 2019-04-01,A,2019-20,2019-20,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,constant,3.8,%,Third Revised Estimates,5,
+2019-04-01,A,2019-20,2019-20,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,current,6.3,%,Third Revised Estimates,5,
 2019-04-01,A,2019-20,2019-20,,2011-12,gva,Total Gross Value Added,,,level,constant,13236100.0,Rs crore,Third Revised Estimates,5,
 2019-04-01,A,2019-20,2019-20,,2011-12,gva,Total Gross Value Added,,,level,current,18381117.0,Rs crore,Third Revised Estimates,5,
 2019-04-01,A,2019-20,2019-20,,2011-12,gva,Total Gross Value Added,,,yoy,constant,3.9,%,Third Revised Estimates,5,
@@ -949,6 +957,7 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2020-04-01,A,2020-21,2020-21,,2011-12,gdp,Gross Domestic Product,,,yoy,constant,-5.7,%,Third Revised Estimates,5,
 2020-04-01,A,2020-21,2020-21,,2011-12,gdp,Gross Domestic Product,,,yoy,current,-1.2,%,Third Revised Estimates,5,
 2020-04-01,A,2020-21,2020-21,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,constant,-5.7,%,Third Revised Estimates,5,
+2020-04-01,A,2020-21,2020-21,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,current,-1.2,%,Third Revised Estimates,5,
 2020-04-01,A,2020-21,2020-21,,2011-12,gva,Total Gross Value Added,,,level,constant,12687344.0,Rs crore,Third Revised Estimates,5,
 2020-04-01,A,2020-21,2020-21,,2011-12,gva,Total Gross Value Added,,,level,current,18210997.0,Rs crore,Third Revised Estimates,5,
 2020-04-01,A,2020-21,2020-21,,2011-12,gva,Total Gross Value Added,,,yoy,constant,-4.1,%,Third Revised Estimates,5,
@@ -1068,6 +1077,7 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2021-04-01,A,2021-22,2021-22,,2011-12,gdp,Gross Domestic Product,,,yoy,constant,9.6,%,Second Revised Estimates,4,
 2021-04-01,A,2021-22,2021-22,,2011-12,gdp,Gross Domestic Product,,,yoy,current,18.8,%,Second Revised Estimates,4,
 2021-04-01,A,2021-22,2021-22,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,constant,9.6,%,Second Revised Estimates,4,
+2021-04-01,A,2021-22,2021-22,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,current,18.8,%,Second Revised Estimates,4,
 2021-04-01,A,2021-22,2021-22,,2011-12,gva,Total Gross Value Added,,,level,constant,13876840.0,Rs crore,Second Revised Estimates,4,
 2021-04-01,A,2021-22,2021-22,,2011-12,gva,Total Gross Value Added,,,level,current,21635583.0,Rs crore,Second Revised Estimates,4,
 2021-04-01,A,2021-22,2021-22,,2011-12,gva,Total Gross Value Added,,,yoy,constant,9.3,%,Second Revised Estimates,4,
@@ -1192,6 +1202,7 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2022-04-01,A,2022-23,2022-23,,2011-12,gdp,Gross Domestic Product,,,yoy,constant,7.6,%,Final Estimates,6,
 2022-04-01,A,2022-23,2022-23,,2011-12,gdp,Gross Domestic Product,,,yoy,current,13.9,%,Final Estimates,6,
 2022-04-01,A,2022-23,2022-23,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,constant,7.6,%,Final Estimates,6,
+2022-04-01,A,2022-23,2022-23,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,current,13.9,%,Final Estimates,6,
 2022-04-01,A,2022-23,2022-23,,2011-12,gva,Total Gross Value Added,,,level,constant,14878028.0,Rs crore,Final Estimates,6,
 2022-04-01,A,2022-23,2022-23,,2011-12,gva,Total Gross Value Added,,,level,current,24646697.0,Rs crore,Final Estimates,6,
 2022-04-01,A,2022-23,2022-23,,2011-12,gva,Total Gross Value Added,,,yoy,constant,7.2,%,Final Estimates,6,
@@ -1301,6 +1312,7 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2022-04-01,A,2022-23,2022-23,,2022-23,manufacturing,Manufacturing,,,share,current,14.62,% of GVA,Final Estimates,6,y
 2022-04-01,A,2022-23,2022-23,,2022-23,manufacturing,Manufacturing,,,share_gdp,current,13.3,% of GDP,Final Estimates,6,y
 2023-04-01,A,2023-24,2023-24,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,constant,9.1,%,First Revised Estimates,3,
+2023-04-01,A,2023-24,2023-24,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,current,12.0,%,First Revised Estimates,3,
 2023-04-01,A,2023-24,2023-24,,2011-12,manufacturing,Manufacturing,,,share,current,14.31,% of GVA,First Revised Estimates,3,y
 2023-04-01,A,2023-24,2023-24,,2011-12,manufacturing,Manufacturing,,,share_gdp,current,13.02,% of GDP,First Revised Estimates,3,y
 2023-04-01,A,2023-24,2023-24,,2011-12,manufacturing_2011base,"Manufacturing (2011-12 base, all years)",,,yoy,constant,12.3,%,First Revised Estimates,3,
@@ -1446,6 +1458,7 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2023-04-01,A,2023-24,2023-24,,2022-23,utilities,"Electricity, Gas, Water Supply & Other Utility Services",,,yoy,constant,11.7,%,Final Estimates,6,
 2023-04-01,A,2023-24,2023-24,,2022-23,utilities,"Electricity, Gas, Water Supply & Other Utility Services",,,yoy,current,23.9,%,Final Estimates,6,
 2024-04-01,A,2024-25,2024-25,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,constant,6.4,%,Provisional Estimates,2,
+2024-04-01,A,2024-25,2024-25,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,current,9.7,%,Provisional Estimates,2,
 2024-04-01,A,2024-25,2024-25,,2011-12,manufacturing,Manufacturing,,,share,current,13.89,% of GVA,Provisional Estimates,2,y
 2024-04-01,A,2024-25,2024-25,,2011-12,manufacturing,Manufacturing,,,share_gdp,current,12.61,% of GDP,Provisional Estimates,2,y
 2024-04-01,A,2024-25,2024-25,,2011-12,manufacturing_2011base,"Manufacturing (2011-12 base, all years)",,,yoy,constant,4.5,%,Provisional Estimates,2,
@@ -1591,6 +1604,7 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2024-04-01,A,2024-25,2024-25,,2022-23,utilities,"Electricity, Gas, Water Supply & Other Utility Services",,,yoy,constant,2.8,%,First Revised Estimates,3,
 2024-04-01,A,2024-25,2024-25,,2022-23,utilities,"Electricity, Gas, Water Supply & Other Utility Services",,,yoy,current,9.9,%,First Revised Estimates,3,
 2025-04-01,A,2025-26,2025-26,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,constant,7.4,%,First Advance Estimates,0,
+2025-04-01,A,2025-26,2025-26,,2011-12,gdp_2011base,"Gross Domestic Product (2011-12 base, all years)",,,yoy,current,8.0,%,First Advance Estimates,0,
 2025-04-01,A,2025-26,2025-26,,2011-12,manufacturing,Manufacturing,,,share,current,14.08,% of GVA,First Advance Estimates,0,y
 2025-04-01,A,2025-26,2025-26,,2011-12,manufacturing,Manufacturing,,,share_gdp,current,12.75,% of GDP,First Advance Estimates,0,y
 2025-04-01,A,2025-26,2025-26,,2011-12,manufacturing_2011base,"Manufacturing (2011-12 base, all years)",,,yoy,constant,7.0,%,First Advance Estimates,0,
