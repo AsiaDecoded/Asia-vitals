@@ -1,14 +1,14 @@
 {
- "description": "GDP and GVA by industry, % y/y and Rs crore, constant and current prices, as published by MoSPI (National Accounts Statistics): quarterly on the 2022-23 base from Apr–Jun 2022; annual on the 2011-12 base to 2022-23 and the 2022-23 base from 2023-24 (latest estimate of each year). Built by the AsiaDecoded/asia-vitals pipeline (data/in/gdp/in_gdp.csv).",
+ "description": "GDP and GVA by industry, % y/y and Rs crore, constant and current prices, as published by MoSPI (National Accounts Statistics): quarterly on the 2022-23 base from Apr–Jun 2022; annual on the 2011-12 base to 2022-23 and the 2022-23 base from 2023-24 (latest estimate of each year). Also services (tertiary sector) growth, calculated (calculated = y): sum of the levels of trade, hotels, transport, communication and broadcasting; financial, real estate and professional services; public administration, defence and other services. Built by the AsiaDecoded/asia-vitals pipeline (data/in/gdp/in_gdp.csv).",
  "schedule": "Replaced after each quarterly GDP release by a scheduled task that reads AsiaDecoded/asia-vitals.",
  "source": {
   "kind": "file",
-  "name": "in_gdp_Q2026-27Q1_r2.csv",
-  "url": "/_blob/8cd28bcba4d32c72c94cb3a87524ea54"
+  "name": "in_gdp_Q2026-27Q1_r3.csv",
+  "url": "/_blob/bc82872670fcfc45241a00cc3e820fcd"
  },
  "title": "India GDP and GVA (MoSPI)",
  "updated": {
-  "at": "2026-11-02T23:54:00Z",
+  "at": "2026-11-03T01:00:00Z",
   "by": "Claude"
  }
 }

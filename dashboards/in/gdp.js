@@ -13,10 +13,12 @@
   const BASE_SWITCH = '2023-04-01';   // annual: MoSPI's 2022-23 base from 2023-24 (2011-12 base before)
   const LMI = 2007;                   // lower-middle income on 2007 GNI per capita (World Bank FY09; data/asia/gni)
   // Charts 4 and 6: GDP always drawn; total GVA and MoSPI's eight published industries picked from a dropdown
-  // (user, 3 Nov 2026). Default picks: GVA, agriculture, manufacturing, construction.
+  // (user, 3 Nov 2026), plus services (calculated). Default picks: GVA, agriculture, manufacturing, construction, services.
   const GDP_LINE = { code: 'gdp', name: 'GDP', color: 'var(--ad-c2)' };
   const PICKS = [
     { code: 'gva', name: 'Total GVA', color: '#A6A6A6', dash: true },
+    // Services (tertiary sector): calculated in the pipeline (in_gdp_mospi) from the three service industries' levels.
+    { code: 'services', name: 'Services (calculated)', color: '#00A3A3' },
     { code: 'agri', name: 'Agriculture', color: 'var(--ad-c6)' },
     { code: 'mining', name: 'Mining', color: 'var(--ad-c4)' },
     { code: 'manufacturing', name: 'Manufacturing', color: 'var(--ad-c1)' },
@@ -26,8 +28,8 @@
     { code: 'finance_re', name: 'Financial, real estate, professional', color: 'var(--ad-c8)' },
     { code: 'public_other', name: 'Public administration, defence, other', color: '#1F4E79' },
   ].map((s) => ({ ...s, thin: true }));
-  const picked = { 'gdp-sectors': new Set(['gva', 'agri', 'manufacturing', 'construction']),
-    'gdp-annual': new Set(['gva', 'agri', 'manufacturing', 'construction']) };
+  const picked = { 'gdp-sectors': new Set(['gva', 'agri', 'manufacturing', 'construction', 'services']),
+    'gdp-annual': new Set(['gva', 'agri', 'manufacturing', 'construction', 'services']) };
   const SEC = (id) => [GDP_LINE].concat(PICKS.filter((s) => picked[id].has(s.code)));
   function picker(id) {
     const host = document.getElementById(id + '-pick'); if (!host || host.dataset.built) return;
