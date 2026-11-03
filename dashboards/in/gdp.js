@@ -409,7 +409,7 @@
   function mfgIipM() {
     const id = 'mfg-iipm', box = document.getElementById(id + '-chart');
     const S = [
-      { key: 'spl', name: 'Spliced series', color: 'var(--ad-c1)', thin: true },
+      { key: 'spl', name: 'Spliced series', color: 'var(--ad-c2)', dash: true },
       { key: 'mos', name: 'MoSPI, 2022-23 base', color: 'var(--ad-c2)' },
     ];
     legend(id + '-legend', S);
