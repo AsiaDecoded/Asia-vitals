@@ -1,5 +1,5 @@
 == in_gdp_mospi
-   UPDATED: 2026-27 Q1 (2022-23 base): real GDP 7.8%, nominal 10.3% y/y (88s)
+   UPDATED: 2026-27 Q1 (2022-23 base): real GDP 7.8%, nominal 10.3% y/y (94s)
    WARNING: 2012-13 agri constant yoy: Additional Revision has 2 values [1.4, 1.5]; left out
    WARNING: 2012-13 agri.crops constant yoy: Additional Revision has 2 values [0.1, 0.2]; left out
    WARNING: 2012-13 agri.forestry_and_logging constant yoy: Additional Revision has 2 values [0.2, 0.3]; left out
@@ -55,7 +55,7 @@
    WARNING: 2013-14 transport_comm.water_transport constant yoy: Additional Revision has 2 values [4.1, 4.2]; left out
    WARNING: 2013-14 utilities constant yoy: Additional Revision has 3 values [4.0, 4.1, 4.7]; left out
 == in_gdp_intl
-   UPDATED: WDI updated 2026-10-08, to 2025 (2025-26) (0s)
+   UPDATED: WDI updated 2026-10-08, to 2025 (2025-26) (1s)
    WARNING: 2012-13: World Bank 5.46 vs MoSPI 5.4
    WARNING: 2013-14: World Bank 6.39 vs MoSPI 6.3
    WARNING: 2015-16: World Bank 8.00 vs MoSPI 7.9
@@ -68,5 +68,5 @@
    WARNING: 2024-25: World Bank 7.10 vs MoSPI 7.2
    WARNING: 2025-26: World Bank 7.57 vs MoSPI 7.8
 == in_iip_mospi
-   UPDATED: 2026-09: IIP 6.7%, manufacturing 7.6% y/y (2022-23 base) (152s)
+   UPDATED: 2026-09: IIP 6.7%, manufacturing 7.6% y/y (2022-23 base) (153s)
 Q1 2026-27 GDP and Sep 2026 IIP vs MoSPI releases: 13/13 match

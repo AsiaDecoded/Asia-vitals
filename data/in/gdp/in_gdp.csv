@@ -19,6 +19,8 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2011-04-01,A,2011-12,2011-12,,2011-12,gva,Total Gross Value Added,,,level,current,8106945.0,Rs crore,Additional Revision,7,
 2011-04-01,A,2011-12,2011-12,,2011-12,manufacturing,Manufacturing,,,level,constant,1409985.0,Rs crore,Additional Revision,7,
 2011-04-01,A,2011-12,2011-12,,2011-12,manufacturing,Manufacturing,,,level,current,1409985.0,Rs crore,Additional Revision,7,
+2011-04-01,A,2011-12,2011-12,,2011-12,manufacturing,Manufacturing,,,share,constant,17.39,% of GVA,Additional Revision,7,y
+2011-04-01,A,2011-12,2011-12,,2011-12,manufacturing,Manufacturing,,,share,current,17.39,% of GVA,Additional Revision,7,y
 2011-04-01,A,2011-12,2011-12,,2011-12,manufacturing.food_products_beverages_and_tobacco,Manufacturing,"Food Products, Beverages and Tobacco",,level,constant,167524.0,Rs crore,Additional Revision,7,
 2011-04-01,A,2011-12,2011-12,,2011-12,manufacturing.food_products_beverages_and_tobacco,Manufacturing,"Food Products, Beverages and Tobacco",,level,current,167524.0,Rs crore,Additional Revision,7,
 2011-04-01,A,2011-12,2011-12,,2011-12,manufacturing.machinery_and_equipment,Manufacturing,Machinery and Equipment,,level,constant,334669.0,Rs crore,Additional Revision,7,
@@ -86,6 +88,8 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2012-04-01,A,2012-13,2012-13,,2011-12,gva,Total Gross Value Added,,,yoy,constant,5.4,%,Additional Revision,7,
 2012-04-01,A,2012-13,2012-13,,2011-12,manufacturing,Manufacturing,,,level,constant,1486873.0,Rs crore,Additional Revision,7,
 2012-04-01,A,2012-13,2012-13,,2011-12,manufacturing,Manufacturing,,,level,current,1572836.0,Rs crore,Additional Revision,7,
+2012-04-01,A,2012-13,2012-13,,2011-12,manufacturing,Manufacturing,,,share,constant,17.4,% of GVA,Additional Revision,7,y
+2012-04-01,A,2012-13,2012-13,,2011-12,manufacturing,Manufacturing,,,share,current,17.09,% of GVA,Additional Revision,7,y
 2012-04-01,A,2012-13,2012-13,,2011-12,manufacturing.food_products_beverages_and_tobacco,Manufacturing,"Food Products, Beverages and Tobacco",,level,constant,154539.0,Rs crore,Additional Revision,7,
 2012-04-01,A,2012-13,2012-13,,2011-12,manufacturing.food_products_beverages_and_tobacco,Manufacturing,"Food Products, Beverages and Tobacco",,level,current,168227.0,Rs crore,Additional Revision,7,
 2012-04-01,A,2012-13,2012-13,,2011-12,manufacturing.machinery_and_equipment,Manufacturing,Machinery and Equipment,,level,constant,345731.0,Rs crore,Additional Revision,7,
@@ -154,6 +158,8 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2013-04-01,A,2013-14,2013-14,,2011-12,gva,Total Gross Value Added,,,level,current,10363152.0,Rs crore,Additional Revision,7,
 2013-04-01,A,2013-14,2013-14,,2011-12,manufacturing,Manufacturing,,,level,constant,1560709.0,Rs crore,Additional Revision,7,
 2013-04-01,A,2013-14,2013-14,,2011-12,manufacturing,Manufacturing,,,level,current,1713451.0,Rs crore,Additional Revision,7,
+2013-04-01,A,2013-14,2013-14,,2011-12,manufacturing,Manufacturing,,,share,constant,17.22,% of GVA,Additional Revision,7,y
+2013-04-01,A,2013-14,2013-14,,2011-12,manufacturing,Manufacturing,,,share,current,16.53,% of GVA,Additional Revision,7,y
 2013-04-01,A,2013-14,2013-14,,2011-12,manufacturing.food_products_beverages_and_tobacco,Manufacturing,"Food Products, Beverages and Tobacco",,level,constant,153560.0,Rs crore,Additional Revision,7,
 2013-04-01,A,2013-14,2013-14,,2011-12,manufacturing.food_products_beverages_and_tobacco,Manufacturing,"Food Products, Beverages and Tobacco",,level,current,175673.0,Rs crore,Additional Revision,7,
 2013-04-01,A,2013-14,2013-14,,2011-12,manufacturing.machinery_and_equipment,Manufacturing,Machinery and Equipment,,level,constant,324994.0,Rs crore,Additional Revision,7,
@@ -234,6 +240,8 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2014-04-01,A,2014-15,2014-15,,2011-12,gva,Total Gross Value Added,,,yoy,current,11.0,%,Third Revised Estimates,5,
 2014-04-01,A,2014-15,2014-15,,2011-12,manufacturing,Manufacturing,,,level,constant,1683937.0,Rs crore,Third Revised Estimates,5,
 2014-04-01,A,2014-15,2014-15,,2011-12,manufacturing,Manufacturing,,,level,current,1878369.0,Rs crore,Third Revised Estimates,5,
+2014-04-01,A,2014-15,2014-15,,2011-12,manufacturing,Manufacturing,,,share,constant,17.34,% of GVA,Third Revised Estimates,5,y
+2014-04-01,A,2014-15,2014-15,,2011-12,manufacturing,Manufacturing,,,share,current,16.33,% of GVA,Third Revised Estimates,5,y
 2014-04-01,A,2014-15,2014-15,,2011-12,manufacturing,Manufacturing,,,yoy,constant,7.8,%,Third Revised Estimates,5,
 2014-04-01,A,2014-15,2014-15,,2011-12,manufacturing,Manufacturing,,,yoy,current,9.7,%,Provisional Estimates,2,
 2014-04-01,A,2014-15,2014-15,,2011-12,manufacturing.food_products_beverages_and_tobacco,Manufacturing,"Food Products, Beverages and Tobacco",,level,constant,157637.0,Rs crore,Third Revised Estimates,5,
@@ -346,6 +354,8 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2015-04-01,A,2015-16,2015-16,,2011-12,gva,Total Gross Value Added,,,yoy,current,9.3,%,Third Revised Estimates,5,
 2015-04-01,A,2015-16,2015-16,,2011-12,manufacturing,Manufacturing,,,level,constant,1903849.0,Rs crore,Third Revised Estimates,5,
 2015-04-01,A,2015-16,2015-16,,2011-12,manufacturing,Manufacturing,,,level,current,2146188.0,Rs crore,Third Revised Estimates,5,
+2015-04-01,A,2015-16,2015-16,,2011-12,manufacturing,Manufacturing,,,share,constant,18.15,% of GVA,Third Revised Estimates,5,y
+2015-04-01,A,2015-16,2015-16,,2011-12,manufacturing,Manufacturing,,,share,current,17.07,% of GVA,Third Revised Estimates,5,y
 2015-04-01,A,2015-16,2015-16,,2011-12,manufacturing,Manufacturing,,,yoy,constant,13.0,%,Third Revised Estimates,5,
 2015-04-01,A,2015-16,2015-16,,2011-12,manufacturing,Manufacturing,,,yoy,current,8.1,%,Provisional Estimates,2,
 2015-04-01,A,2015-16,2015-16,,2011-12,manufacturing.food_products_beverages_and_tobacco,Manufacturing,"Food Products, Beverages and Tobacco",,level,constant,183149.0,Rs crore,Third Revised Estimates,5,
@@ -460,6 +470,8 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2016-04-01,A,2016-17,2016-17,,2011-12,gva,Total Gross Value Added,,,yoy,current,11.1,%,Third Revised Estimates,5,
 2016-04-01,A,2016-17,2016-17,,2011-12,manufacturing,Manufacturing,,,level,constant,2054764.0,Rs crore,Third Revised Estimates,5,
 2016-04-01,A,2016-17,2016-17,,2011-12,manufacturing,Manufacturing,,,level,current,2333721.0,Rs crore,Third Revised Estimates,5,
+2016-04-01,A,2016-17,2016-17,,2011-12,manufacturing,Manufacturing,,,share,constant,18.14,% of GVA,Third Revised Estimates,5,y
+2016-04-01,A,2016-17,2016-17,,2011-12,manufacturing,Manufacturing,,,share,current,16.71,% of GVA,Third Revised Estimates,5,y
 2016-04-01,A,2016-17,2016-17,,2011-12,manufacturing,Manufacturing,,,yoy,constant,7.9,%,Third Revised Estimates,5,
 2016-04-01,A,2016-17,2016-17,,2011-12,manufacturing,Manufacturing,,,yoy,current,9.3,%,Provisional Estimates,2,
 2016-04-01,A,2016-17,2016-17,,2011-12,manufacturing.food_products_beverages_and_tobacco,Manufacturing,"Food Products, Beverages and Tobacco",,level,constant,202964.0,Rs crore,Third Revised Estimates,5,
@@ -574,6 +586,8 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2017-04-01,A,2017-18,2017-18,,2011-12,gva,Total Gross Value Added,,,yoy,current,11.0,%,Third Revised Estimates,5,
 2017-04-01,A,2017-18,2017-18,,2011-12,manufacturing,Manufacturing,,,level,constant,2209427.0,Rs crore,Third Revised Estimates,5,
 2017-04-01,A,2017-18,2017-18,,2011-12,manufacturing,Manufacturing,,,level,current,2566623.0,Rs crore,Third Revised Estimates,5,
+2017-04-01,A,2017-18,2017-18,,2011-12,manufacturing,Manufacturing,,,share,constant,18.36,% of GVA,Third Revised Estimates,5,y
+2017-04-01,A,2017-18,2017-18,,2011-12,manufacturing,Manufacturing,,,share,current,16.55,% of GVA,Third Revised Estimates,5,y
 2017-04-01,A,2017-18,2017-18,,2011-12,manufacturing,Manufacturing,,,yoy,constant,7.5,%,Third Revised Estimates,5,
 2017-04-01,A,2017-18,2017-18,,2011-12,manufacturing,Manufacturing,,,yoy,current,8.6,%,Provisional Estimates,2,
 2017-04-01,A,2017-18,2017-18,,2011-12,manufacturing.food_products_beverages_and_tobacco,Manufacturing,"Food Products, Beverages and Tobacco",,level,constant,214366.0,Rs crore,Third Revised Estimates,5,
@@ -688,6 +702,8 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2018-04-01,A,2018-19,2018-19,,2011-12,gva,Total Gross Value Added,,,yoy,current,10.7,%,Third Revised Estimates,5,
 2018-04-01,A,2018-19,2018-19,,2011-12,manufacturing,Manufacturing,,,level,constant,2328992.0,Rs crore,Third Revised Estimates,5,
 2018-04-01,A,2018-19,2018-19,,2011-12,manufacturing,Manufacturing,,,level,current,2812559.0,Rs crore,Third Revised Estimates,5,
+2018-04-01,A,2018-19,2018-19,,2011-12,manufacturing,Manufacturing,,,share,constant,18.29,% of GVA,Third Revised Estimates,5,y
+2018-04-01,A,2018-19,2018-19,,2011-12,manufacturing,Manufacturing,,,share,current,16.38,% of GVA,Third Revised Estimates,5,y
 2018-04-01,A,2018-19,2018-19,,2011-12,manufacturing,Manufacturing,,,yoy,constant,5.4,%,Third Revised Estimates,5,
 2018-04-01,A,2018-19,2018-19,,2011-12,manufacturing,Manufacturing,,,yoy,current,10.9,%,Provisional Estimates,2,
 2018-04-01,A,2018-19,2018-19,,2011-12,manufacturing.food_products_beverages_and_tobacco,Manufacturing,"Food Products, Beverages and Tobacco",,level,constant,258682.0,Rs crore,Third Revised Estimates,5,
@@ -802,6 +818,8 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2019-04-01,A,2019-20,2019-20,,2011-12,gva,Total Gross Value Added,,,yoy,current,7.0,%,Third Revised Estimates,5,
 2019-04-01,A,2019-20,2019-20,,2011-12,manufacturing,Manufacturing,,,level,constant,2259705.0,Rs crore,Third Revised Estimates,5,
 2019-04-01,A,2019-20,2019-20,,2011-12,manufacturing,Manufacturing,,,level,current,2705100.0,Rs crore,Third Revised Estimates,5,
+2019-04-01,A,2019-20,2019-20,,2011-12,manufacturing,Manufacturing,,,share,constant,17.07,% of GVA,Third Revised Estimates,5,y
+2019-04-01,A,2019-20,2019-20,,2011-12,manufacturing,Manufacturing,,,share,current,14.72,% of GVA,Third Revised Estimates,5,y
 2019-04-01,A,2019-20,2019-20,,2011-12,manufacturing,Manufacturing,,,yoy,constant,-2.9,%,Third Revised Estimates,5,
 2019-04-01,A,2019-20,2019-20,,2011-12,manufacturing,Manufacturing,,,yoy,current,0.3,%,Provisional Estimates,2,
 2019-04-01,A,2019-20,2019-20,,2011-12,manufacturing.food_products_beverages_and_tobacco,Manufacturing,"Food Products, Beverages and Tobacco",,level,constant,217690.0,Rs crore,Third Revised Estimates,5,
@@ -916,6 +934,8 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2020-04-01,A,2020-21,2020-21,,2011-12,gva,Total Gross Value Added,,,yoy,current,-0.9,%,Third Revised Estimates,5,
 2020-04-01,A,2020-21,2020-21,,2011-12,manufacturing,Manufacturing,,,level,constant,2329160.0,Rs crore,Third Revised Estimates,5,
 2020-04-01,A,2020-21,2020-21,,2011-12,manufacturing,Manufacturing,,,level,current,2803494.0,Rs crore,Third Revised Estimates,5,
+2020-04-01,A,2020-21,2020-21,,2011-12,manufacturing,Manufacturing,,,share,constant,18.36,% of GVA,Third Revised Estimates,5,y
+2020-04-01,A,2020-21,2020-21,,2011-12,manufacturing,Manufacturing,,,share,current,15.39,% of GVA,Third Revised Estimates,5,y
 2020-04-01,A,2020-21,2020-21,,2011-12,manufacturing,Manufacturing,,,yoy,constant,3.0,%,Third Revised Estimates,5,
 2020-04-01,A,2020-21,2020-21,,2011-12,manufacturing,Manufacturing,,,yoy,current,-4.6,%,Provisional Estimates,2,
 2020-04-01,A,2020-21,2020-21,,2011-12,manufacturing.food_products_beverages_and_tobacco,Manufacturing,"Food Products, Beverages and Tobacco",,level,constant,217309.0,Rs crore,Third Revised Estimates,5,
@@ -1030,6 +1050,8 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2021-04-01,A,2021-22,2021-22,,2011-12,gva,Total Gross Value Added,,,yoy,current,18.8,%,Second Revised Estimates,4,
 2021-04-01,A,2021-22,2021-22,,2011-12,manufacturing,Manufacturing,,,level,constant,2561033.0,Rs crore,Second Revised Estimates,4,
 2021-04-01,A,2021-22,2021-22,,2011-12,manufacturing,Manufacturing,,,level,current,3392604.0,Rs crore,Second Revised Estimates,4,
+2021-04-01,A,2021-22,2021-22,,2011-12,manufacturing,Manufacturing,,,share,constant,18.46,% of GVA,Second Revised Estimates,4,y
+2021-04-01,A,2021-22,2021-22,,2011-12,manufacturing,Manufacturing,,,share,current,15.68,% of GVA,Second Revised Estimates,4,y
 2021-04-01,A,2021-22,2021-22,,2011-12,manufacturing,Manufacturing,,,yoy,constant,9.9,%,Second Revised Estimates,4,
 2021-04-01,A,2021-22,2021-22,,2011-12,manufacturing,Manufacturing,,,yoy,current,22.0,%,Provisional Estimates,2,
 2021-04-01,A,2021-22,2021-22,,2011-12,manufacturing.food_products_beverages_and_tobacco,Manufacturing,"Food Products, Beverages and Tobacco",,level,constant,208076.0,Rs crore,Second Revised Estimates,4,
@@ -1149,6 +1171,8 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2022-04-01,A,2022-23,2022-23,,2011-12,gva,Total Gross Value Added,,,yoy,current,13.9,%,Final Estimates,6,
 2022-04-01,A,2022-23,2022-23,,2011-12,manufacturing,Manufacturing,,,level,constant,2516363.0,Rs crore,Final Estimates,6,
 2022-04-01,A,2022-23,2022-23,,2011-12,manufacturing,Manufacturing,,,level,current,3534866.0,Rs crore,Final Estimates,6,
+2022-04-01,A,2022-23,2022-23,,2011-12,manufacturing,Manufacturing,,,share,constant,16.91,% of GVA,Final Estimates,6,y
+2022-04-01,A,2022-23,2022-23,,2011-12,manufacturing,Manufacturing,,,share,current,14.34,% of GVA,Final Estimates,6,y
 2022-04-01,A,2022-23,2022-23,,2011-12,manufacturing,Manufacturing,,,yoy,constant,-1.7,%,Final Estimates,6,
 2022-04-01,A,2022-23,2022-23,,2011-12,manufacturing,Manufacturing,,,yoy,current,4.1,%,Final Estimates,6,
 2022-04-01,A,2022-23,2022-23,,2011-12,manufacturing.food_products_beverages_and_tobacco,Manufacturing,"Food Products, Beverages and Tobacco",,level,constant,228437.0,Rs crore,Final Estimates,6,
@@ -1245,6 +1269,10 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2022-04-01,A,2022-23,2022-23,,2011-12,utilities,"Electricity, Gas, Water Supply & Other Utility Services",,,level,current,609067.0,Rs crore,Final Estimates,6,
 2022-04-01,A,2022-23,2022-23,,2011-12,utilities,"Electricity, Gas, Water Supply & Other Utility Services",,,yoy,constant,10.8,%,Final Estimates,6,
 2022-04-01,A,2022-23,2022-23,,2011-12,utilities,"Electricity, Gas, Water Supply & Other Utility Services",,,yoy,current,5.4,%,Final Estimates,6,
+2022-04-01,A,2022-23,2022-23,,2022-23,manufacturing,Manufacturing,,,share,constant,14.62,% of GVA,Final Estimates,6,y
+2022-04-01,A,2022-23,2022-23,,2022-23,manufacturing,Manufacturing,,,share,current,14.62,% of GVA,Final Estimates,6,y
+2023-04-01,A,2023-24,2023-24,,2011-12,manufacturing,Manufacturing,,,share,constant,17.5,% of GVA,First Revised Estimates,3,y
+2023-04-01,A,2023-24,2023-24,,2011-12,manufacturing,Manufacturing,,,share,current,14.31,% of GVA,First Revised Estimates,3,y
 2023-04-01,A,2023-24,2023-24,,2022-23,agri,"Agriculture, Livestock, Forestry and Fishing",,,level,constant,4872239.0,Rs crore,Final Estimates,6,
 2023-04-01,A,2023-24,2023-24,,2022-23,agri,"Agriculture, Livestock, Forestry and Fishing",,,level,current,5105553.0,Rs crore,Final Estimates,6,
 2023-04-01,A,2023-24,2023-24,,2022-23,agri,"Agriculture, Livestock, Forestry and Fishing",,,yoy,constant,2.7,%,Final Estimates,6,
@@ -1287,6 +1315,8 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2023-04-01,A,2023-24,2023-24,,2022-23,gva,Total Gross Value Added,,,yoy,current,10.8,%,Final Estimates,6,
 2023-04-01,A,2023-24,2023-24,,2022-23,manufacturing,Manufacturing,,,level,constant,3854479.0,Rs crore,Final Estimates,6,
 2023-04-01,A,2023-24,2023-24,,2022-23,manufacturing,Manufacturing,,,level,current,3859133.0,Rs crore,Final Estimates,6,
+2023-04-01,A,2023-24,2023-24,,2022-23,manufacturing,Manufacturing,,,share,constant,15.06,% of GVA,Final Estimates,6,y
+2023-04-01,A,2023-24,2023-24,,2022-23,manufacturing,Manufacturing,,,share,current,14.61,% of GVA,Final Estimates,6,y
 2023-04-01,A,2023-24,2023-24,,2022-23,manufacturing,Manufacturing,,,yoy,constant,10.7,%,Final Estimates,6,
 2023-04-01,A,2023-24,2023-24,,2022-23,manufacturing,Manufacturing,,,yoy,current,10.8,%,Final Estimates,6,
 2023-04-01,A,2023-24,2023-24,,2022-23,manufacturing.food_products_beverages_and_tobacco,Manufacturing,"Food Products, Beverages and Tobacco",,level,constant,450120.0,Rs crore,Final Estimates,6,
@@ -1383,6 +1413,8 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2023-04-01,A,2023-24,2023-24,,2022-23,utilities,"Electricity, Gas, Water Supply & Other Utility Services",,,level,current,732148.0,Rs crore,Final Estimates,6,
 2023-04-01,A,2023-24,2023-24,,2022-23,utilities,"Electricity, Gas, Water Supply & Other Utility Services",,,yoy,constant,11.7,%,Final Estimates,6,
 2023-04-01,A,2023-24,2023-24,,2022-23,utilities,"Electricity, Gas, Water Supply & Other Utility Services",,,yoy,current,23.9,%,Final Estimates,6,
+2024-04-01,A,2024-25,2024-25,,2011-12,manufacturing,Manufacturing,,,share,constant,17.18,% of GVA,Provisional Estimates,2,y
+2024-04-01,A,2024-25,2024-25,,2011-12,manufacturing,Manufacturing,,,share,current,13.89,% of GVA,Provisional Estimates,2,y
 2024-04-01,A,2024-25,2024-25,,2022-23,agri,"Agriculture, Livestock, Forestry and Fishing",,,level,constant,5074193.0,Rs crore,First Revised Estimates,3,
 2024-04-01,A,2024-25,2024-25,,2022-23,agri,"Agriculture, Livestock, Forestry and Fishing",,,level,current,5576710.0,Rs crore,First Revised Estimates,3,
 2024-04-01,A,2024-25,2024-25,,2022-23,agri,"Agriculture, Livestock, Forestry and Fishing",,,yoy,constant,4.1,%,First Revised Estimates,3,
@@ -1425,6 +1457,8 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2024-04-01,A,2024-25,2024-25,,2022-23,gva,Total Gross Value Added,,,yoy,current,9.2,%,First Revised Estimates,3,
 2024-04-01,A,2024-25,2024-25,,2022-23,manufacturing,Manufacturing,,,level,constant,4239607.0,Rs crore,First Revised Estimates,3,
 2024-04-01,A,2024-25,2024-25,,2022-23,manufacturing,Manufacturing,,,level,current,4184702.0,Rs crore,First Revised Estimates,3,
+2024-04-01,A,2024-25,2024-25,,2022-23,manufacturing,Manufacturing,,,share,constant,15.46,% of GVA,First Revised Estimates,3,y
+2024-04-01,A,2024-25,2024-25,,2022-23,manufacturing,Manufacturing,,,share,current,14.51,% of GVA,First Revised Estimates,3,y
 2024-04-01,A,2024-25,2024-25,,2022-23,manufacturing,Manufacturing,,,yoy,constant,10.0,%,First Revised Estimates,3,
 2024-04-01,A,2024-25,2024-25,,2022-23,manufacturing,Manufacturing,,,yoy,current,8.4,%,First Revised Estimates,3,
 2024-04-01,A,2024-25,2024-25,,2022-23,manufacturing.food_products_beverages_and_tobacco,Manufacturing,"Food Products, Beverages and Tobacco",,level,constant,506203.0,Rs crore,First Revised Estimates,3,
@@ -1521,6 +1555,8 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2024-04-01,A,2024-25,2024-25,,2022-23,utilities,"Electricity, Gas, Water Supply & Other Utility Services",,,level,current,804842.0,Rs crore,First Revised Estimates,3,
 2024-04-01,A,2024-25,2024-25,,2022-23,utilities,"Electricity, Gas, Water Supply & Other Utility Services",,,yoy,constant,2.8,%,First Revised Estimates,3,
 2024-04-01,A,2024-25,2024-25,,2022-23,utilities,"Electricity, Gas, Water Supply & Other Utility Services",,,yoy,current,9.9,%,First Revised Estimates,3,
+2025-04-01,A,2025-26,2025-26,,2011-12,manufacturing,Manufacturing,,,share,constant,17.13,% of GVA,First Advance Estimates,0,y
+2025-04-01,A,2025-26,2025-26,,2011-12,manufacturing,Manufacturing,,,share,current,14.08,% of GVA,First Advance Estimates,0,y
 2025-04-01,A,2025-26,2025-26,,2022-23,agri,"Agriculture, Livestock, Forestry and Fishing",,,level,constant,5240222.0,Rs crore,Provisional Estimates,2,
 2025-04-01,A,2025-26,2025-26,,2022-23,agri,"Agriculture, Livestock, Forestry and Fishing",,,level,current,5713629.0,Rs crore,Provisional Estimates,2,
 2025-04-01,A,2025-26,2025-26,,2022-23,agri,"Agriculture, Livestock, Forestry and Fishing",,,yoy,constant,3.3,%,Provisional Estimates,2,
@@ -1543,6 +1579,8 @@ date,freq,period,fy,fq,base_year,code,industry,subindustry,approach,measure,pric
 2025-04-01,A,2025-26,2025-26,,2022-23,gva,Total Gross Value Added,,,yoy,current,8.8,%,Provisional Estimates,2,
 2025-04-01,A,2025-26,2025-26,,2022-23,manufacturing,Manufacturing,,,level,constant,4612111.0,Rs crore,Provisional Estimates,2,
 2025-04-01,A,2025-26,2025-26,,2022-23,manufacturing,Manufacturing,,,level,current,4670561.0,Rs crore,Provisional Estimates,2,
+2025-04-01,A,2025-26,2025-26,,2022-23,manufacturing,Manufacturing,,,share,constant,15.59,% of GVA,Provisional Estimates,2,y
+2025-04-01,A,2025-26,2025-26,,2022-23,manufacturing,Manufacturing,,,share,current,14.88,% of GVA,Provisional Estimates,2,y
 2025-04-01,A,2025-26,2025-26,,2022-23,manufacturing,Manufacturing,,,yoy,constant,8.8,%,Provisional Estimates,2,
 2025-04-01,A,2025-26,2025-26,,2022-23,manufacturing,Manufacturing,,,yoy,current,11.6,%,Provisional Estimates,2,
 2025-04-01,A,2025-26,2025-26,,2022-23,mining,Mining and Quarrying,,,level,constant,620560.0,Rs crore,Provisional Estimates,2,
