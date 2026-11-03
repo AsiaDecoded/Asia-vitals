@@ -644,25 +644,21 @@ dash.calc('iip_movers', {
   // Manufacturing tab: manufacturing GVA growth, real and nominal, % y/y, MoSPI's published rates. Annual: 2011-12 base
   // to FY23, 2022-23 base from FY24 (dashed line at the base change), latest estimate of each year. Quarterly: 2022-23
   // base from Apr-Jun 2023.
-  let mgFreq = 'A';
+  let mgFreq = 'A', mgPrice = 'constant';
   function mfgGva() {
     const id = 'mfg-gva', box = document.getElementById(id + '-chart');
-    // Annual (user, 3 Nov 2026, as the GDP tab's Chart 5): 2022-23 base solid from FY24; 2011-12 base dashed for every
-    // year it was published (to FY26), so the overlapping years FY24-FY26 show both.
-    const ann0 = mgFreq === 'A';
-    const S = ann0
-      ? [{ key: 'real', name: 'Real, 2022-23 base', color: 'var(--ad-c2)' }, { key: 'realo', name: 'Real, 2011-12 base', color: 'var(--ad-c2)', dash: true },
-        { key: 'nom', name: 'Nominal, 2022-23 base', color: 'var(--ad-c1)' }, { key: 'nomo', name: 'Nominal, 2011-12 base', color: 'var(--ad-c1)', dash: true }]
-      : [{ key: 'real', name: 'Real', color: 'var(--ad-c2)' }, { key: 'nom', name: 'Nominal', color: 'var(--ad-c1)' }];
-    legend(id + '-legend', S);
+    // Real / Nominal toggle (user, 3 Nov 2026). Annual (as the GDP tab's Chart 5): 2022-23 base solid from FY24;
+    // 2011-12 base dashed for every year it was published (to FY26), so the overlapping years FY24-FY26 show both.
+    const ann = mgFreq === 'A', c = mgPrice === 'constant' ? 'var(--ad-c2)' : 'var(--ad-c1)';
+    const S = ann
+      ? [{ key: 'v', name: '2022-23 base', color: c }, { key: 'o', name: '2011-12 base', color: c, dash: true }]
+      : [{ key: 'v', name: mgPrice === 'constant' ? 'Real' : 'Nominal', color: c }];
+    legend(id + '-legend', ann ? S : []);
     if (!status(box, ['in_gdp'])) return;
-    const nb = (r) => !ann0 || r.base === '2022-23';
-    const rows = J.slice(merge([{ key: 'real', rows: series(mgFreq, 'manufacturing', 'constant').filter(nb) },
-      { key: 'nom', rows: series(mgFreq, 'manufacturing', 'current').filter(nb) }].concat(ann0
-      ? [{ key: 'realo', rows: series('A', 'manufacturing_2011base', 'constant') }, { key: 'nomo', rows: series('A', 'manufacturing_2011base', 'current') }]
-      : [])), id);
+    const rows = J.slice(merge([{ key: 'v', rows: series(mgFreq, 'manufacturing', mgPrice).filter((r) => !ann || r.base === '2022-23') }]
+      .concat(ann ? [{ key: 'o', rows: series('A', 'manufacturing_2011base', mgPrice) }] : [])), id);
     if (!rows.length) { box.replaceChildren(); return; }
-    const H = 300, ann = mgFreq === 'A';
+    const H = 300;
     const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), true,
       ann ? (r) => fyShort(r.date) : qAxis, ann ? { labelWidth: 44, top: 24, pad: 6 } : { anchorEvery: qAnchor, top: 24 });
     if (ann && rows[0].date < BASE_SWITCH && rows[rows.length - 1].date >= BASE_SWITCH) {
@@ -679,6 +675,12 @@ dash.calc('iip_movers', {
       });
     extras.push(...dots);
   }
+  document.getElementById('mfg-gva-pseg').addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    mgPrice = b.dataset.p;
+    document.querySelectorAll('#mfg-gva-pseg button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    mfgGva();
+  });
   document.getElementById('mfg-gva-seg').addEventListener('click', (e) => {
     const b = e.target.closest('button'); if (!b) return;
     mgFreq = b.dataset.f;

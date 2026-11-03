@@ -249,8 +249,13 @@
       <section class="jg-card" id="mfg-gva" data-periods="none">
         <div class="jg-cardhead">
           <div><h2>India manufacturing GVA growth</h2></div>
-          <div class="jg-seg" id="mfg-gva-seg" role="group" aria-label="Frequency">
-            <button data-f="A" aria-pressed="true">Annual</button><button data-f="Q">Quarterly</button>
+          <div style="display:flex;gap:var(--cds-gap-sm);flex-wrap:wrap">
+            <div class="jg-seg" id="mfg-gva-pseg" role="group" aria-label="Price basis">
+              <button data-p="constant" aria-pressed="true">Real</button><button data-p="current">Nominal</button>
+            </div>
+            <div class="jg-seg" id="mfg-gva-seg" role="group" aria-label="Frequency">
+              <button data-f="A" aria-pressed="true">Annual</button><button data-f="Q">Quarterly</button>
+            </div>
           </div>
         </div>
         <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="mfg-gva-legend"></div><span class="ad-units r"></span></div>
