@@ -1,4 +1,4 @@
-name: Philippines GDP test
+name: Philippines GDP and manufacturing test
 
 # Runs the Philippines GDP sources (ph_gdp_psa, then ph_gdp_intl, which reads its annual file) on main with their
 # checks, whether or not they are in the shared registry yet; checks Q2 2026 against PSA's release (7 Aug 2026), and
@@ -10,6 +10,7 @@ on:
     paths:
       - pipeline/sources/ph_gdp_psa/**
       - pipeline/sources/ph_gdp_intl/**
+      - pipeline/sources/ph_mfg_psa/**
       - .github/workflows/ph-test.yml
 
 permissions:
@@ -36,7 +37,7 @@ jobs:
           sys.path.insert(0, "pipeline")
           from core.common import CheckFailed
           rc, lines = 0, []
-          for name in ("ph_gdp_psa", "ph_gdp_intl"):
+          for name in ("ph_gdp_psa", "ph_gdp_intl", "ph_mfg_psa"):
               t0 = time.time()
               lines.append(f"== {name}")
               try:
@@ -81,12 +82,31 @@ jobs:
           sys.exit(1 if bad else 0)
           PY
 
+      - name: July 2026 manufacturing against the PSA release
+        run: |
+          python -I - <<'PY'
+          import csv, sys
+          # PSA MISSI release for July 2026 as reported (PortCalls): VoPI y/y and capacity utilisation, one decimal.
+          VOPI = {("2026-07-01", "C"): 6.4, ("2026-06-01", "C"): 10.6}
+          CAPU = {("2026-07-01", "C"): 78.8, ("2026-06-01", "C"): 78.9, ("2026-07-01", "C12"): 85.6,
+                  ("2026-07-01", "C19"): 83.5, ("2026-07-01", "C15"): 83.5}
+          v = {(r["date"], r["code"]): float(r["yoy"]) for r in csv.DictReader(open("data/ph/mfg/ph_vopi.csv")) if r["yoy"]}
+          c = {(r["date"], r["code"]): float(r["rate"]) for r in csv.DictReader(open("data/ph/mfg/ph_capu.csv"))}
+          bad = [f"VoPI {k}: {v.get(k)} vs {x}" for k, x in VOPI.items() if k not in v or abs(v[k] - x) > 0.051]
+          bad += [f"capacity {k}: {c.get(k)} vs {x}" for k, x in CAPU.items() if k not in c or abs(c[k] - x) > 0.051]
+          n = len(VOPI) + len(CAPU)
+          msg = f"July 2026 manufacturing vs PSA release: {n - len(bad)}/{n} match"
+          print(msg); [print("  -", b) for b in bad]
+          open("ph_report.txt", "a").write(msg + "\n" + "".join(f"  - {b}\n" for b in bad))
+          sys.exit(1 if bad else 0)
+          PY
+
       - name: Commit output to main
         if: always()
         run: |
           git config user.name "asia-vitals bot"
           git config user.email "actions@users.noreply.github.com"
           mkdir -p data/ph && cp ph_report.txt data/ph/test_report.txt || true
-          git add data/ph/gdp data/ph/test_report.txt raw/ph/gdp_psa || true
+          git add data/ph/gdp data/ph/mfg data/ph/test_report.txt raw/ph/gdp_psa raw/ph/mfg_psa || true
           git commit -m "PH GDP test run" || exit 0
           for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 5; done
