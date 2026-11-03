@@ -133,7 +133,9 @@ dash.calc('iip_movers', {
     const y = d3.scaleLinear([lo, hi], [H - 24, opt.top || 12]).nice();
     const ticks = y.ticks(5);
     const ml = J.textWidth(svg, ticks.map(fmt)) + 10;
-    const pad = opt.pad || 0;
+    // End padding: half a label width at least, so the first and last labels can be centred under their points like
+    // the rest (user, 3 Nov 2026: labels looked unevenly spaced when the end ones were left/right aligned).
+    const pad = Math.max(opt.pad || 0, opt.labels === false ? 0 : 18);
     const x = d3.scaleUtc([J.date(rows[0].date), J.date(rows[rows.length - 1].date)], [ml + pad, W - mr - pad]);
     svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', ml).attr('x2', W - mr).attr('y1', y).attr('y2', y)
       .attr('stroke', (v) => (zero && v === 0 ? 'var(--cds-chart-reference)' : 'var(--ad-grid)'));
@@ -145,7 +147,7 @@ dash.calc('iip_movers', {
       if (opt.anchorEvery ? !opt.anchorEvery(r, step) : (rows.length - 1 - k) % step !== 0) return;
       const px = x(J.date(r.date));
       svg.append('text').attr('x', px).attr('y', H - 20).attr('dy', '0.71em').attr('font-size', 12).attr('fill', 'var(--ad-ink)')
-        .attr('text-anchor', px > W - mr - 20 ? 'end' : px < ml + 20 ? 'start' : 'middle').text(lab);
+        .attr('text-anchor', 'middle').text(lab);
     });
     return { svg, x, y, W, ml, mr };
   }
