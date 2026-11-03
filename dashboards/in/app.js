@@ -642,7 +642,7 @@ dash.calc('tiles_extra', {
   };
   J.show = show;
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
-  if (['inflation', 'financial', 'methodology'].includes(location.hash.slice(1))) show(location.hash.slice(1));
+  if (['manufacturing', 'inflation', 'financial', 'methodology'].includes(location.hash.slice(1))) show(location.hash.slice(1));
 
   dash.onData(() => { tiles(); takeaway(); moversTable(); divHeat(); J.redrawCpi(); });
 })();
