@@ -17137,3 +17137,307 @@ date,kind,name,series,label,value,mom,release_date
 2026-09-01,region,Vùng Đồng bằng sông Hồng,other,Other goods and services,100.0967,0.0967,2026-10-03
 2026-09-01,region,Vùng Đồng bằng sông Hồng,gold,Gold price index (not in the CPI),102.1806,2.1806,2026-10-03
 2026-09-01,region,Vùng Đồng bằng sông Hồng,usd,US dollar price index (not in the CPI),99.2606,-0.7394,2026-10-03
+2026-10-01,province,Cần Thơ,all,All items,100.6419,0.6419,2026-11-03
+2026-10-01,province,Cần Thơ,food_catering,Food and catering services,100.0636,0.0636,2026-11-03
+2026-10-01,province,Cần Thơ,cereals,Cereals (lương thực),99.3812,-0.6188,2026-11-03
+2026-10-01,province,Cần Thơ,foodstuff,Foodstuff (thực phẩm),100.1721,0.1721,2026-11-03
+2026-10-01,province,Cần Thơ,eating_out,Eating out,100.2119,0.2119,2026-11-03
+2026-10-01,province,Cần Thơ,beverages_tobacco,Beverages and tobacco,100.2415,0.2415,2026-11-03
+2026-10-01,province,Cần Thơ,clothing,"Garments, hats and footwear",100.2175,0.2175,2026-11-03
+2026-10-01,province,Cần Thơ,housing,"Housing, electricity, water, fuel and construction materials",100.791,0.791,2026-11-03
+2026-10-01,province,Cần Thơ,household,Household equipment and goods,100.3445,0.3445,2026-11-03
+2026-10-01,province,Cần Thơ,health,Medicine and health care,100.0035,0.0035,2026-11-03
+2026-10-01,province,Cần Thơ,health_services,of which: health care services,99.9994,-0.0006,2026-11-03
+2026-10-01,province,Cần Thơ,transport,Transport,104.5072,4.5072,2026-11-03
+2026-10-01,province,Cần Thơ,communication,Information and communication (post and telecommunications before Nov 2025),100.1468,0.1468,2026-11-03
+2026-10-01,province,Cần Thơ,education,Education,99.9237,-0.0763,2026-11-03
+2026-10-01,province,Cần Thơ,education_services,of which: education services,99.9119,-0.0881,2026-11-03
+2026-10-01,province,Cần Thơ,culture,"Culture, entertainment and tourism",99.9944,-0.0056,2026-11-03
+2026-10-01,province,Cần Thơ,other,Other goods and services,100.5628,0.5628,2026-11-03
+2026-10-01,province,Cần Thơ,gold,Gold price index (not in the CPI),97.3388,-2.6612,2026-11-03
+2026-10-01,province,Cần Thơ,usd,US dollar price index (not in the CPI),99.7071,-0.2929,2026-11-03
+2026-10-01,province,Gia Lai,all,All items,98.261,-1.739,2026-11-03
+2026-10-01,province,Gia Lai,food_catering,Food and catering services,96.4593,-3.5407,2026-11-03
+2026-10-01,province,Gia Lai,cereals,Cereals (lương thực),89.7152,-10.2848,2026-11-03
+2026-10-01,province,Gia Lai,foodstuff,Foodstuff (thực phẩm),96.3943,-3.6057,2026-11-03
+2026-10-01,province,Gia Lai,eating_out,Eating out,99.9997,-0.0003,2026-11-03
+2026-10-01,province,Gia Lai,beverages_tobacco,Beverages and tobacco,98.7771,-1.2229,2026-11-03
+2026-10-01,province,Gia Lai,clothing,"Garments, hats and footwear",99.7405,-0.2595,2026-11-03
+2026-10-01,province,Gia Lai,housing,"Housing, electricity, water, fuel and construction materials",98.9896,-1.0104,2026-11-03
+2026-10-01,province,Gia Lai,household,Household equipment and goods,99.2237,-0.7763,2026-11-03
+2026-10-01,province,Gia Lai,health,Medicine and health care,99.9963,-0.0037,2026-11-03
+2026-10-01,province,Gia Lai,health_services,of which: health care services,100.0,0.0,2026-11-03
+2026-10-01,province,Gia Lai,transport,Transport,103.1362,3.1362,2026-11-03
+2026-10-01,province,Gia Lai,communication,Information and communication (post and telecommunications before Nov 2025),99.3471,-0.6529,2026-11-03
+2026-10-01,province,Gia Lai,education,Education,100.0,0.0,2026-11-03
+2026-10-01,province,Gia Lai,education_services,of which: education services,100.0,0.0,2026-11-03
+2026-10-01,province,Gia Lai,culture,"Culture, entertainment and tourism",85.7726,-14.2274,2026-11-03
+2026-10-01,province,Gia Lai,other,Other goods and services,99.8738,-0.1262,2026-11-03
+2026-10-01,province,Gia Lai,gold,Gold price index (not in the CPI),97.0704,-2.9296,2026-11-03
+2026-10-01,province,Gia Lai,usd,US dollar price index (not in the CPI),99.7441,-0.2559,2026-11-03
+2026-10-01,province,Huế,all,All items,99.1398,-0.8602,2026-11-03
+2026-10-01,province,Huế,food_catering,Food and catering services,98.1899,-1.8101,2026-11-03
+2026-10-01,province,Huế,cereals,Cereals (lương thực),99.5009,-0.4991,2026-11-03
+2026-10-01,province,Huế,foodstuff,Foodstuff (thực phẩm),97.1186,-2.8814,2026-11-03
+2026-10-01,province,Huế,eating_out,Eating out,99.9796,-0.0204,2026-11-03
+2026-10-01,province,Huế,beverages_tobacco,Beverages and tobacco,100.0,0.0,2026-11-03
+2026-10-01,province,Huế,clothing,"Garments, hats and footwear",99.5109,-0.4891,2026-11-03
+2026-10-01,province,Huế,housing,"Housing, electricity, water, fuel and construction materials",98.8825,-1.1175,2026-11-03
+2026-10-01,province,Huế,household,Household equipment and goods,99.8912,-0.1088,2026-11-03
+2026-10-01,province,Huế,health,Medicine and health care,99.9967,-0.0033,2026-11-03
+2026-10-01,province,Huế,health_services,of which: health care services,100.0,0.0,2026-11-03
+2026-10-01,province,Huế,transport,Transport,102.2576,2.2576,2026-11-03
+2026-10-01,province,Huế,communication,Information and communication (post and telecommunications before Nov 2025),98.9705,-1.0295,2026-11-03
+2026-10-01,province,Huế,education,Education,99.9996,-0.0004,2026-11-03
+2026-10-01,province,Huế,education_services,of which: education services,100.0,0.0,2026-11-03
+2026-10-01,province,Huế,culture,"Culture, entertainment and tourism",99.9926,-0.0074,2026-11-03
+2026-10-01,province,Huế,other,Other goods and services,99.9258,-0.0742,2026-11-03
+2026-10-01,province,Huế,gold,Gold price index (not in the CPI),97.0104,-2.9896,2026-11-03
+2026-10-01,province,Huế,usd,US dollar price index (not in the CPI),99.7091,-0.2909,2026-11-03
+2026-10-01,province,Hà Nội,all,All items,100.1487,0.1487,2026-11-03
+2026-10-01,province,Hà Nội,food_catering,Food and catering services,99.7665,-0.2335,2026-11-03
+2026-10-01,province,Hà Nội,cereals,Cereals (lương thực),99.7445,-0.2555,2026-11-03
+2026-10-01,province,Hà Nội,foodstuff,Foodstuff (thực phẩm),99.5745,-0.4255,2026-11-03
+2026-10-01,province,Hà Nội,eating_out,Eating out,100.2812,0.2812,2026-11-03
+2026-10-01,province,Hà Nội,beverages_tobacco,Beverages and tobacco,100.1634,0.1634,2026-11-03
+2026-10-01,province,Hà Nội,clothing,"Garments, hats and footwear",100.0687,0.0687,2026-11-03
+2026-10-01,province,Hà Nội,housing,"Housing, electricity, water, fuel and construction materials",100.3144,0.3144,2026-11-03
+2026-10-01,province,Hà Nội,household,Household equipment and goods,99.8113,-0.1887,2026-11-03
+2026-10-01,province,Hà Nội,health,Medicine and health care,100.0069,0.0069,2026-11-03
+2026-10-01,province,Hà Nội,health_services,of which: health care services,100.0187,0.0187,2026-11-03
+2026-10-01,province,Hà Nội,transport,Transport,101.933,1.933,2026-11-03
+2026-10-01,province,Hà Nội,communication,Information and communication (post and telecommunications before Nov 2025),99.5722,-0.4278,2026-11-03
+2026-10-01,province,Hà Nội,education,Education,100.0039,0.0039,2026-11-03
+2026-10-01,province,Hà Nội,education_services,of which: education services,100.0,0.0,2026-11-03
+2026-10-01,province,Hà Nội,culture,"Culture, entertainment and tourism",99.4846,-0.5154,2026-11-03
+2026-10-01,province,Hà Nội,other,Other goods and services,100.0184,0.0184,2026-11-03
+2026-10-01,province,Hà Nội,gold,Gold price index (not in the CPI),96.7041,-3.2959,2026-11-03
+2026-10-01,province,Hà Nội,usd,US dollar price index (not in the CPI),99.7064,-0.2936,2026-11-03
+2026-10-01,province,Hải Phòng,all,All items,100.0115,0.0115,2026-11-03
+2026-10-01,province,Hải Phòng,food_catering,Food and catering services,99.2689,-0.7311,2026-11-03
+2026-10-01,province,Hải Phòng,cereals,Cereals (lương thực),99.1722,-0.8278,2026-11-03
+2026-10-01,province,Hải Phòng,foodstuff,Foodstuff (thực phẩm),98.8751,-1.1249,2026-11-03
+2026-10-01,province,Hải Phòng,eating_out,Eating out,100.3219,0.3219,2026-11-03
+2026-10-01,province,Hải Phòng,beverages_tobacco,Beverages and tobacco,99.776,-0.224,2026-11-03
+2026-10-01,province,Hải Phòng,clothing,"Garments, hats and footwear",100.0929,0.0929,2026-11-03
+2026-10-01,province,Hải Phòng,housing,"Housing, electricity, water, fuel and construction materials",100.1575,0.1575,2026-11-03
+2026-10-01,province,Hải Phòng,household,Household equipment and goods,100.1286,0.1286,2026-11-03
+2026-10-01,province,Hải Phòng,health,Medicine and health care,101.7917,1.7917,2026-11-03
+2026-10-01,province,Hải Phòng,health_services,of which: health care services,102.5796,2.5796,2026-11-03
+2026-10-01,province,Hải Phòng,transport,Transport,102.5452,2.5452,2026-11-03
+2026-10-01,province,Hải Phòng,communication,Information and communication (post and telecommunications before Nov 2025),99.619,-0.381,2026-11-03
+2026-10-01,province,Hải Phòng,education,Education,100.477,0.477,2026-11-03
+2026-10-01,province,Hải Phòng,education_services,of which: education services,100.5295,0.5295,2026-11-03
+2026-10-01,province,Hải Phòng,culture,"Culture, entertainment and tourism",95.4388,-4.5612,2026-11-03
+2026-10-01,province,Hải Phòng,other,Other goods and services,100.2161,0.2161,2026-11-03
+2026-10-01,province,Hải Phòng,gold,Gold price index (not in the CPI),96.5783,-3.4217,2026-11-03
+2026-10-01,province,Hải Phòng,usd,US dollar price index (not in the CPI),99.7036,-0.2964,2026-11-03
+2026-10-01,province,Khánh Hoà,all,All items,99.9639,-0.0361,2026-11-03
+2026-10-01,province,Khánh Hoà,food_catering,Food and catering services,99.6522,-0.3478,2026-11-03
+2026-10-01,province,Khánh Hoà,cereals,Cereals (lương thực),99.9205,-0.0795,2026-11-03
+2026-10-01,province,Khánh Hoà,foodstuff,Foodstuff (thực phẩm),99.7314,-0.2686,2026-11-03
+2026-10-01,province,Khánh Hoà,eating_out,Eating out,99.4319,-0.5681,2026-11-03
+2026-10-01,province,Khánh Hoà,beverages_tobacco,Beverages and tobacco,99.3627,-0.6373,2026-11-03
+2026-10-01,province,Khánh Hoà,clothing,"Garments, hats and footwear",98.7641,-1.2359,2026-11-03
+2026-10-01,province,Khánh Hoà,housing,"Housing, electricity, water, fuel and construction materials",100.4431,0.4431,2026-11-03
+2026-10-01,province,Khánh Hoà,household,Household equipment and goods,99.0433,-0.9567,2026-11-03
+2026-10-01,province,Khánh Hoà,health,Medicine and health care,100.0914,0.0914,2026-11-03
+2026-10-01,province,Khánh Hoà,health_services,of which: health care services,100.0,0.0,2026-11-03
+2026-10-01,province,Khánh Hoà,transport,Transport,102.6345,2.6345,2026-11-03
+2026-10-01,province,Khánh Hoà,communication,Information and communication (post and telecommunications before Nov 2025),99.6719,-0.3281,2026-11-03
+2026-10-01,province,Khánh Hoà,education,Education,100.3073,0.3073,2026-11-03
+2026-10-01,province,Khánh Hoà,education_services,of which: education services,100.2953,0.2953,2026-11-03
+2026-10-01,province,Khánh Hoà,culture,"Culture, entertainment and tourism",96.9376,-3.0624,2026-11-03
+2026-10-01,province,Khánh Hoà,other,Other goods and services,98.8762,-1.1238,2026-11-03
+2026-10-01,province,Khánh Hoà,gold,Gold price index (not in the CPI),97.4097,-2.5903,2026-11-03
+2026-10-01,province,Khánh Hoà,usd,US dollar price index (not in the CPI),99.9911,-0.0089,2026-11-03
+2026-10-01,province,TP. Hồ Chí Minh,all,All items,100.3032,0.3032,2026-11-03
+2026-10-01,province,TP. Hồ Chí Minh,food_catering,Food and catering services,100.3691,0.3691,2026-11-03
+2026-10-01,province,TP. Hồ Chí Minh,cereals,Cereals (lương thực),100.3913,0.3913,2026-11-03
+2026-10-01,province,TP. Hồ Chí Minh,foodstuff,Foodstuff (thực phẩm),100.6231,0.6231,2026-11-03
+2026-10-01,province,TP. Hồ Chí Minh,eating_out,Eating out,99.9925,-0.0075,2026-11-03
+2026-10-01,province,TP. Hồ Chí Minh,beverages_tobacco,Beverages and tobacco,100.94,0.94,2026-11-03
+2026-10-01,province,TP. Hồ Chí Minh,clothing,"Garments, hats and footwear",100.0533,0.0533,2026-11-03
+2026-10-01,province,TP. Hồ Chí Minh,housing,"Housing, electricity, water, fuel and construction materials",99.4433,-0.5567,2026-11-03
+2026-10-01,province,TP. Hồ Chí Minh,household,Household equipment and goods,100.3863,0.3863,2026-11-03
+2026-10-01,province,TP. Hồ Chí Minh,health,Medicine and health care,100.1133,0.1133,2026-11-03
+2026-10-01,province,TP. Hồ Chí Minh,health_services,of which: health care services,100.0,0.0,2026-11-03
+2026-10-01,province,TP. Hồ Chí Minh,transport,Transport,103.2158,3.2158,2026-11-03
+2026-10-01,province,TP. Hồ Chí Minh,communication,Information and communication (post and telecommunications before Nov 2025),99.6987,-0.3013,2026-11-03
+2026-10-01,province,TP. Hồ Chí Minh,education,Education,100.3651,0.3651,2026-11-03
+2026-10-01,province,TP. Hồ Chí Minh,education_services,of which: education services,100.38,0.38,2026-11-03
+2026-10-01,province,TP. Hồ Chí Minh,culture,"Culture, entertainment and tourism",99.3859,-0.6141,2026-11-03
+2026-10-01,province,TP. Hồ Chí Minh,other,Other goods and services,100.7934,0.7934,2026-11-03
+2026-10-01,province,TP. Hồ Chí Minh,gold,Gold price index (not in the CPI),97.1297,-2.8703,2026-11-03
+2026-10-01,province,TP. Hồ Chí Minh,usd,US dollar price index (not in the CPI),99.6914,-0.3086,2026-11-03
+2026-10-01,province,Thái Nguyên,all,All items,100.0386,0.0386,2026-11-03
+2026-10-01,province,Thái Nguyên,food_catering,Food and catering services,99.4333,-0.5667,2026-11-03
+2026-10-01,province,Thái Nguyên,cereals,Cereals (lương thực),100.8266,0.8266,2026-11-03
+2026-10-01,province,Thái Nguyên,foodstuff,Foodstuff (thực phẩm),99.0478,-0.9522,2026-11-03
+2026-10-01,province,Thái Nguyên,eating_out,Eating out,100.1695,0.1695,2026-11-03
+2026-10-01,province,Thái Nguyên,beverages_tobacco,Beverages and tobacco,100.5737,0.5737,2026-11-03
+2026-10-01,province,Thái Nguyên,clothing,"Garments, hats and footwear",99.1851,-0.8149,2026-11-03
+2026-10-01,province,Thái Nguyên,housing,"Housing, electricity, water, fuel and construction materials",99.7843,-0.2157,2026-11-03
+2026-10-01,province,Thái Nguyên,household,Household equipment and goods,99.8947,-0.1053,2026-11-03
+2026-10-01,province,Thái Nguyên,health,Medicine and health care,100.0619,0.0619,2026-11-03
+2026-10-01,province,Thái Nguyên,health_services,of which: health care services,100.0192,0.0192,2026-11-03
+2026-10-01,province,Thái Nguyên,transport,Transport,101.9862,1.9862,2026-11-03
+2026-10-01,province,Thái Nguyên,communication,Information and communication (post and telecommunications before Nov 2025),99.8082,-0.1918,2026-11-03
+2026-10-01,province,Thái Nguyên,education,Education,100.0602,0.0602,2026-11-03
+2026-10-01,province,Thái Nguyên,education_services,of which: education services,100.0,0.0,2026-11-03
+2026-10-01,province,Thái Nguyên,culture,"Culture, entertainment and tourism",100.1025,0.1025,2026-11-03
+2026-10-01,province,Thái Nguyên,other,Other goods and services,99.9976,-0.0024,2026-11-03
+2026-10-01,province,Thái Nguyên,gold,Gold price index (not in the CPI),96.4108,-3.5892,2026-11-03
+2026-10-01,province,Thái Nguyên,usd,US dollar price index (not in the CPI),99.6875,-0.3125,2026-11-03
+2026-10-01,province,Vĩnh Long,all,All items,100.3472,0.3472,2026-11-03
+2026-10-01,province,Vĩnh Long,food_catering,Food and catering services,99.8825,-0.1175,2026-11-03
+2026-10-01,province,Vĩnh Long,cereals,Cereals (lương thực),98.7114,-1.2886,2026-11-03
+2026-10-01,province,Vĩnh Long,foodstuff,Foodstuff (thực phẩm),99.9546,-0.0454,2026-11-03
+2026-10-01,province,Vĩnh Long,eating_out,Eating out,100.5643,0.5643,2026-11-03
+2026-10-01,province,Vĩnh Long,beverages_tobacco,Beverages and tobacco,100.2393,0.2393,2026-11-03
+2026-10-01,province,Vĩnh Long,clothing,"Garments, hats and footwear",100.234,0.234,2026-11-03
+2026-10-01,province,Vĩnh Long,housing,"Housing, electricity, water, fuel and construction materials",100.3062,0.3062,2026-11-03
+2026-10-01,province,Vĩnh Long,household,Household equipment and goods,100.3903,0.3903,2026-11-03
+2026-10-01,province,Vĩnh Long,health,Medicine and health care,100.0771,0.0771,2026-11-03
+2026-10-01,province,Vĩnh Long,health_services,of which: health care services,100.074,0.074,2026-11-03
+2026-10-01,province,Vĩnh Long,transport,Transport,103.4423,3.4423,2026-11-03
+2026-10-01,province,Vĩnh Long,communication,Information and communication (post and telecommunications before Nov 2025),99.9611,-0.0389,2026-11-03
+2026-10-01,province,Vĩnh Long,education,Education,100.0,0.0,2026-11-03
+2026-10-01,province,Vĩnh Long,education_services,of which: education services,100.0,0.0,2026-11-03
+2026-10-01,province,Vĩnh Long,culture,"Culture, entertainment and tourism",99.9739,-0.0261,2026-11-03
+2026-10-01,province,Vĩnh Long,other,Other goods and services,100.0521,0.0521,2026-11-03
+2026-10-01,province,Vĩnh Long,gold,Gold price index (not in the CPI),96.9706,-3.0294,2026-11-03
+2026-10-01,province,Vĩnh Long,usd,US dollar price index (not in the CPI),99.6943,-0.3057,2026-11-03
+2026-10-01,province,Đà Nẵng,all,All items,100.023,0.023,2026-11-03
+2026-10-01,province,Đà Nẵng,food_catering,Food and catering services,99.7608,-0.2392,2026-11-03
+2026-10-01,province,Đà Nẵng,cereals,Cereals (lương thực),99.0111,-0.9889,2026-11-03
+2026-10-01,province,Đà Nẵng,foodstuff,Foodstuff (thực phẩm),99.8053,-0.1947,2026-11-03
+2026-10-01,province,Đà Nẵng,eating_out,Eating out,99.8665,-0.1335,2026-11-03
+2026-10-01,province,Đà Nẵng,beverages_tobacco,Beverages and tobacco,100.2819,0.2819,2026-11-03
+2026-10-01,province,Đà Nẵng,clothing,"Garments, hats and footwear",99.8543,-0.1457,2026-11-03
+2026-10-01,province,Đà Nẵng,housing,"Housing, electricity, water, fuel and construction materials",99.4709,-0.5291,2026-11-03
+2026-10-01,province,Đà Nẵng,household,Household equipment and goods,99.5008,-0.4992,2026-11-03
+2026-10-01,province,Đà Nẵng,health,Medicine and health care,100.0843,0.0843,2026-11-03
+2026-10-01,province,Đà Nẵng,health_services,of which: health care services,100.0,0.0,2026-11-03
+2026-10-01,province,Đà Nẵng,transport,Transport,102.7987,2.7987,2026-11-03
+2026-10-01,province,Đà Nẵng,communication,Information and communication (post and telecommunications before Nov 2025),99.8487,-0.1513,2026-11-03
+2026-10-01,province,Đà Nẵng,education,Education,100.138,0.138,2026-11-03
+2026-10-01,province,Đà Nẵng,education_services,of which: education services,100.1548,0.1548,2026-11-03
+2026-10-01,province,Đà Nẵng,culture,"Culture, entertainment and tourism",98.9832,-1.0168,2026-11-03
+2026-10-01,province,Đà Nẵng,other,Other goods and services,99.9567,-0.0433,2026-11-03
+2026-10-01,province,Đà Nẵng,gold,Gold price index (not in the CPI),96.7745,-3.2255,2026-11-03
+2026-10-01,province,Đà Nẵng,usd,US dollar price index (not in the CPI),99.6928,-0.3072,2026-11-03
+2026-10-01,region,Bắc Trung Bộ,all,All items,99.8663,-0.1337,2026-11-03
+2026-10-01,region,Bắc Trung Bộ,food_catering,Food and catering services,99.4413,-0.5587,2026-11-03
+2026-10-01,region,Bắc Trung Bộ,cereals,Cereals (lương thực),99.9569,-0.0431,2026-11-03
+2026-10-01,region,Bắc Trung Bộ,foodstuff,Foodstuff (thực phẩm),99.215,-0.785,2026-11-03
+2026-10-01,region,Bắc Trung Bộ,eating_out,Eating out,99.871,-0.129,2026-11-03
+2026-10-01,region,Bắc Trung Bộ,beverages_tobacco,Beverages and tobacco,100.016,0.016,2026-11-03
+2026-10-01,region,Bắc Trung Bộ,clothing,"Garments, hats and footwear",99.4615,-0.5385,2026-11-03
+2026-10-01,region,Bắc Trung Bộ,housing,"Housing, electricity, water, fuel and construction materials",98.8797,-1.1203,2026-11-03
+2026-10-01,region,Bắc Trung Bộ,household,Household equipment and goods,100.0232,0.0232,2026-11-03
+2026-10-01,region,Bắc Trung Bộ,health,Medicine and health care,100.0393,0.0393,2026-11-03
+2026-10-01,region,Bắc Trung Bộ,health_services,of which: health care services,100.0004,0.0004,2026-11-03
+2026-10-01,region,Bắc Trung Bộ,transport,Transport,102.7276,2.7276,2026-11-03
+2026-10-01,region,Bắc Trung Bộ,communication,Information and communication (post and telecommunications before Nov 2025),99.7753,-0.2247,2026-11-03
+2026-10-01,region,Bắc Trung Bộ,education,Education,100.0537,0.0537,2026-11-03
+2026-10-01,region,Bắc Trung Bộ,education_services,of which: education services,100.0455,0.0455,2026-11-03
+2026-10-01,region,Bắc Trung Bộ,culture,"Culture, entertainment and tourism",100.0082,0.0082,2026-11-03
+2026-10-01,region,Bắc Trung Bộ,other,Other goods and services,99.948,-0.052,2026-11-03
+2026-10-01,region,Bắc Trung Bộ,gold,Gold price index (not in the CPI),96.9714,-3.0286,2026-11-03
+2026-10-01,region,Bắc Trung Bộ,usd,US dollar price index (not in the CPI),99.7699,-0.2301,2026-11-03
+2026-10-01,region,Vùng Duyên hải Nam Trung Bộ và Tây Nguyên,all,All items,99.8935,-0.1065,2026-11-03
+2026-10-01,region,Vùng Duyên hải Nam Trung Bộ và Tây Nguyên,food_catering,Food and catering services,99.4007,-0.5993,2026-11-03
+2026-10-01,region,Vùng Duyên hải Nam Trung Bộ và Tây Nguyên,cereals,Cereals (lương thực),97.9058,-2.0942,2026-11-03
+2026-10-01,region,Vùng Duyên hải Nam Trung Bộ và Tây Nguyên,foodstuff,Foodstuff (thực phẩm),99.4742,-0.5258,2026-11-03
+2026-10-01,region,Vùng Duyên hải Nam Trung Bộ và Tây Nguyên,eating_out,Eating out,99.863,-0.137,2026-11-03
+2026-10-01,region,Vùng Duyên hải Nam Trung Bộ và Tây Nguyên,beverages_tobacco,Beverages and tobacco,99.8085,-0.1915,2026-11-03
+2026-10-01,region,Vùng Duyên hải Nam Trung Bộ và Tây Nguyên,clothing,"Garments, hats and footwear",99.7204,-0.2796,2026-11-03
+2026-10-01,region,Vùng Duyên hải Nam Trung Bộ và Tây Nguyên,housing,"Housing, electricity, water, fuel and construction materials",99.9293,-0.0707,2026-11-03
+2026-10-01,region,Vùng Duyên hải Nam Trung Bộ và Tây Nguyên,household,Household equipment and goods,99.7875,-0.2125,2026-11-03
+2026-10-01,region,Vùng Duyên hải Nam Trung Bộ và Tây Nguyên,health,Medicine and health care,100.1541,0.1541,2026-11-03
+2026-10-01,region,Vùng Duyên hải Nam Trung Bộ và Tây Nguyên,health_services,of which: health care services,100.0882,0.0882,2026-11-03
+2026-10-01,region,Vùng Duyên hải Nam Trung Bộ và Tây Nguyên,transport,Transport,102.6772,2.6772,2026-11-03
+2026-10-01,region,Vùng Duyên hải Nam Trung Bộ và Tây Nguyên,communication,Information and communication (post and telecommunications before Nov 2025),99.7184,-0.2816,2026-11-03
+2026-10-01,region,Vùng Duyên hải Nam Trung Bộ và Tây Nguyên,education,Education,100.1083,0.1083,2026-11-03
+2026-10-01,region,Vùng Duyên hải Nam Trung Bộ và Tây Nguyên,education_services,of which: education services,100.1019,0.1019,2026-11-03
+2026-10-01,region,Vùng Duyên hải Nam Trung Bộ và Tây Nguyên,culture,"Culture, entertainment and tourism",96.2992,-3.7008,2026-11-03
+2026-10-01,region,Vùng Duyên hải Nam Trung Bộ và Tây Nguyên,other,Other goods and services,99.9261,-0.0739,2026-11-03
+2026-10-01,region,Vùng Duyên hải Nam Trung Bộ và Tây Nguyên,gold,Gold price index (not in the CPI),97.2062,-2.7938,2026-11-03
+2026-10-01,region,Vùng Duyên hải Nam Trung Bộ và Tây Nguyên,usd,US dollar price index (not in the CPI),99.7682,-0.2318,2026-11-03
+2026-10-01,region,Vùng Trung du và miền núi phía Bắc,all,All items,99.8806,-0.1194,2026-11-03
+2026-10-01,region,Vùng Trung du và miền núi phía Bắc,food_catering,Food and catering services,99.0091,-0.9909,2026-11-03
+2026-10-01,region,Vùng Trung du và miền núi phía Bắc,cereals,Cereals (lương thực),98.7873,-1.2127,2026-11-03
+2026-10-01,region,Vùng Trung du và miền núi phía Bắc,foodstuff,Foodstuff (thực phẩm),98.8399,-1.1601,2026-11-03
+2026-10-01,region,Vùng Trung du và miền núi phía Bắc,eating_out,Eating out,100.028,0.028,2026-11-03
+2026-10-01,region,Vùng Trung du và miền núi phía Bắc,beverages_tobacco,Beverages and tobacco,99.6947,-0.3053,2026-11-03
+2026-10-01,region,Vùng Trung du và miền núi phía Bắc,clothing,"Garments, hats and footwear",99.5625,-0.4375,2026-11-03
+2026-10-01,region,Vùng Trung du và miền núi phía Bắc,housing,"Housing, electricity, water, fuel and construction materials",100.2366,0.2366,2026-11-03
+2026-10-01,region,Vùng Trung du và miền núi phía Bắc,household,Household equipment and goods,99.986,-0.014,2026-11-03
+2026-10-01,region,Vùng Trung du và miền núi phía Bắc,health,Medicine and health care,100.0755,0.0755,2026-11-03
+2026-10-01,region,Vùng Trung du và miền núi phía Bắc,health_services,of which: health care services,100.0071,0.0071,2026-11-03
+2026-10-01,region,Vùng Trung du và miền núi phía Bắc,transport,Transport,101.5987,1.5987,2026-11-03
+2026-10-01,region,Vùng Trung du và miền núi phía Bắc,communication,Information and communication (post and telecommunications before Nov 2025),99.8039,-0.1961,2026-11-03
+2026-10-01,region,Vùng Trung du và miền núi phía Bắc,education,Education,100.4785,0.4785,2026-11-03
+2026-10-01,region,Vùng Trung du và miền núi phía Bắc,education_services,of which: education services,100.5661,0.5661,2026-11-03
+2026-10-01,region,Vùng Trung du và miền núi phía Bắc,culture,"Culture, entertainment and tourism",99.7874,-0.2126,2026-11-03
+2026-10-01,region,Vùng Trung du và miền núi phía Bắc,other,Other goods and services,100.0209,0.0209,2026-11-03
+2026-10-01,region,Vùng Trung du và miền núi phía Bắc,gold,Gold price index (not in the CPI),97.061,-2.939,2026-11-03
+2026-10-01,region,Vùng Trung du và miền núi phía Bắc,usd,US dollar price index (not in the CPI),99.6969,-0.3031,2026-11-03
+2026-10-01,region,Vùng Đông Nam Bộ,all,All items,100.3445,0.3445,2026-11-03
+2026-10-01,region,Vùng Đông Nam Bộ,food_catering,Food and catering services,100.2786,0.2786,2026-11-03
+2026-10-01,region,Vùng Đông Nam Bộ,cereals,Cereals (lương thực),100.114,0.114,2026-11-03
+2026-10-01,region,Vùng Đông Nam Bộ,foodstuff,Foodstuff (thực phẩm),100.4484,0.4484,2026-11-03
+2026-10-01,region,Vùng Đông Nam Bộ,eating_out,Eating out,100.0501,0.0501,2026-11-03
+2026-10-01,region,Vùng Đông Nam Bộ,beverages_tobacco,Beverages and tobacco,100.6957,0.6957,2026-11-03
+2026-10-01,region,Vùng Đông Nam Bộ,clothing,"Garments, hats and footwear",100.0294,0.0294,2026-11-03
+2026-10-01,region,Vùng Đông Nam Bộ,housing,"Housing, electricity, water, fuel and construction materials",99.623,-0.377,2026-11-03
+2026-10-01,region,Vùng Đông Nam Bộ,household,Household equipment and goods,100.412,0.412,2026-11-03
+2026-10-01,region,Vùng Đông Nam Bộ,health,Medicine and health care,100.5922,0.5922,2026-11-03
+2026-10-01,region,Vùng Đông Nam Bộ,health_services,of which: health care services,100.6442,0.6442,2026-11-03
+2026-10-01,region,Vùng Đông Nam Bộ,transport,Transport,102.9768,2.9768,2026-11-03
+2026-10-01,region,Vùng Đông Nam Bộ,communication,Information and communication (post and telecommunications before Nov 2025),99.7408,-0.2592,2026-11-03
+2026-10-01,region,Vùng Đông Nam Bộ,education,Education,100.328,0.328,2026-11-03
+2026-10-01,region,Vùng Đông Nam Bộ,education_services,of which: education services,100.338,0.338,2026-11-03
+2026-10-01,region,Vùng Đông Nam Bộ,culture,"Culture, entertainment and tourism",99.5663,-0.4337,2026-11-03
+2026-10-01,region,Vùng Đông Nam Bộ,other,Other goods and services,100.5459,0.5459,2026-11-03
+2026-10-01,region,Vùng Đông Nam Bộ,gold,Gold price index (not in the CPI),97.236,-2.764,2026-11-03
+2026-10-01,region,Vùng Đông Nam Bộ,usd,US dollar price index (not in the CPI),99.7174,-0.2826,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Cửu Long,all,All items,100.608,0.608,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Cửu Long,food_catering,Food and catering services,100.1357,0.1357,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Cửu Long,cereals,Cereals (lương thực),99.8296,-0.1704,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Cửu Long,foodstuff,Foodstuff (thực phẩm),100.1161,0.1161,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Cửu Long,eating_out,Eating out,100.366,0.366,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Cửu Long,beverages_tobacco,Beverages and tobacco,100.305,0.305,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Cửu Long,clothing,"Garments, hats and footwear",100.5143,0.5143,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Cửu Long,housing,"Housing, electricity, water, fuel and construction materials",100.5957,0.5957,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Cửu Long,household,Household equipment and goods,100.3987,0.3987,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Cửu Long,health,Medicine and health care,100.1631,0.1631,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Cửu Long,health_services,of which: health care services,100.174,0.174,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Cửu Long,transport,Transport,103.8501,3.8501,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Cửu Long,communication,Information and communication (post and telecommunications before Nov 2025),100.0546,0.0546,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Cửu Long,education,Education,100.99,0.99,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Cửu Long,education_services,of which: education services,101.1347,1.1347,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Cửu Long,culture,"Culture, entertainment and tourism",100.079,0.079,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Cửu Long,other,Other goods and services,100.3038,0.3038,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Cửu Long,gold,Gold price index (not in the CPI),97.0681,-2.9319,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Cửu Long,usd,US dollar price index (not in the CPI),99.8229,-0.1771,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Hồng,all,All items,100.2361,0.2361,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Hồng,food_catering,Food and catering services,99.6206,-0.3794,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Hồng,cereals,Cereals (lương thực),99.5218,-0.4782,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Hồng,foodstuff,Foodstuff (thực phẩm),99.3967,-0.6033,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Hồng,eating_out,Eating out,100.3268,0.3268,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Hồng,beverages_tobacco,Beverages and tobacco,100.0743,0.0743,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Hồng,clothing,"Garments, hats and footwear",99.9973,-0.0027,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Hồng,housing,"Housing, electricity, water, fuel and construction materials",100.5457,0.5457,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Hồng,household,Household equipment and goods,100.1538,0.1538,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Hồng,health,Medicine and health care,100.4626,0.4626,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Hồng,health_services,of which: health care services,100.6116,0.6116,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Hồng,transport,Transport,102.277,2.277,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Hồng,communication,Information and communication (post and telecommunications before Nov 2025),99.8364,-0.1636,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Hồng,education,Education,100.2284,0.2284,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Hồng,education_services,of which: education services,100.2335,0.2335,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Hồng,culture,"Culture, entertainment and tourism",99.0741,-0.9259,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Hồng,other,Other goods and services,100.3536,0.3536,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Hồng,gold,Gold price index (not in the CPI),97.4142,-2.5858,2026-11-03
+2026-10-01,region,Vùng Đồng bằng sông Hồng,usd,US dollar price index (not in the CPI),99.7064,-0.2936,2026-11-03

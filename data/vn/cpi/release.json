@@ -1,9 +1,9 @@
 {
- "code": "C2026-09",
- "label": "September 2026",
- "latest_month": "2026-09-01",
+ "code": "C2026-10",
+ "label": "October 2026",
+ "latest_month": "2026-10-01",
  "table": "NSO monthly CPI workbooks (Vietnamese), PX-Web E11.01-E11.08, IMF.STA,CPI VNM",
- "workbooks": 58,
+ "workbooks": 59,
  "px": {
   "E11.01.px": {
    "title": "Monthly consumer price index by Months and Year",
@@ -34,24 +34,28 @@
    "last_updated": "20260821 09:00"
   }
  },
- "processed_at": "2026-11-02T12:31:25Z",
- "rows": 26974,
+ "processed_at": "2026-11-03T04:05:05Z",
+ "rows": 27252,
  "warnings": [
-  "YTD average differs from the base-period indices by more than 0.06pp in 53 group cases (NSO aggregates these from lower levels), e.g. 2021-12-01 transport: YTD average 110.524 vs base indices 0.178pp",
+  "YTD average differs from the base-period indices by more than 0.06pp in 55 group cases (NSO aggregates these from lower levels), e.g. 2021-12-01 transport: YTD average 110.524 vs base indices 0.178pp",
   "PX-Web and the workbooks differ in 30 cases (workbook kept): 2025-01 national transport prev_month: PX-Web 99.878 vs workbook 100.946; 2025-02 national transport prev_month: PX-Web 99.969 vs workbook 100.626; 2025-03 national transport prev_month: PX-Web 100.017 vs workbook 98.595; 2025-04 national transport prev_month: PX-Web 99.852 vs workbook 98.954; 2025-05 national transport prev_month: PX-Web 100.215 vs workbook 99.575; 2025-06 national transport prev_month: PX-Web 99.982 vs workbook 101.655; 2024-01 national gold base_period: PX-Web 146.480 vs workbook 169.080; 2024-02 national gold base_period: PX-Web 147.824 vs workbook 172.473"
  ],
- "long_rows": 27260,
+ "long_rows": 27538,
  "checks": {
-  "base_vs_yoy": 2497,
+  "base_vs_yoy": 2516,
   "base_vs_yoy_worst_pp": 0.0084,
-  "ytd_checks": 871,
+  "ytd_checks": 890,
   "px_overlap": 5224
  },
- "processed": "2026-11-02T12:31:25Z",
+ "processed": "2026-11-03T04:05:05Z",
  "history": [
   {
    "code": "C2026-09",
    "processed_at": "2026-11-02T12:31:25Z"
+  },
+  {
+   "code": "C2026-10",
+   "processed_at": "2026-11-03T04:05:05Z"
   }
  ]
 }

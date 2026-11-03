@@ -1,10 +1,10 @@
 {
- "code": "A6a7fbbd16d",
+ "code": "A1333a243f1",
  "label": "Asia table",
  "economies": "JP KR TW HK CN IN ID TH MY SG PH VN",
  "latest_cpi_month": "2026-10-01",
- "processed_at": "2026-11-03T01:20:58Z",
- "rows": 6765,
+ "processed_at": "2026-11-03T04:05:24Z",
+ "rows": 6767,
  "warnings": [],
  "missing": [],
  "inputs": {
@@ -35,7 +35,7 @@
   "data/sg/ppi/sg_ppi.csv": "P2026-09",
   "data/ph/cpi/ph_cpi.csv": "C2026-09",
   "data/ph/ppi/ph_ppi.csv": "P2026-07",
-  "data/vn/cpi/vn_cpi.csv": "C2026-09"
+  "data/vn/cpi/vn_cpi.csv": "C2026-10"
  },
  "latest_cpi": {
   "JP": "2026-09-01",
@@ -49,7 +49,7 @@
   "MY": "2026-09-01",
   "SG": "2026-09-01",
   "PH": "2026-09-01",
-  "VN": "2026-09-01"
+  "VN": "2026-10-01"
  },
  "history": [
   {
@@ -91,6 +91,10 @@
   {
    "code": "A6a7fbbd16d",
    "processed_at": "2026-11-03T01:20:58Z"
+  },
+  {
+   "code": "A1333a243f1",
+   "processed_at": "2026-11-03T04:05:24Z"
   }
  ]
 }

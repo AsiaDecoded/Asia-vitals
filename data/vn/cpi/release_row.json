@@ -1,10 +1,10 @@
 [
  {
-  "code": "C2026-09",
-  "label": "September 2026",
-  "latest_month": "2026-09-01",
+  "code": "C2026-10",
+  "label": "October 2026",
+  "latest_month": "2026-10-01",
   "table": "NSO monthly CPI workbooks (Vietnamese), PX-Web E11.01-E11.08, IMF.STA,CPI VNM",
-  "workbooks": 58,
+  "workbooks": 59,
   "px": {
    "E11.01.px": {
     "title": "Monthly consumer price index by Months and Year",
@@ -35,6 +35,6 @@
     "last_updated": "20260821 09:00"
    }
   },
-  "processed_at": "2026-11-02T12:31:25Z"
+  "processed_at": "2026-11-03T04:05:05Z"
  }
 ]
