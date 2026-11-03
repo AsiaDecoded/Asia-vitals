@@ -10,6 +10,7 @@ counts construction in services), GDP; Table 3 also net primary income from abro
 
 Calculated here (asked for 2 Nov 2026), flagged calculated = y:
 - nominal y/y: single quarters, current-price level / level a year earlier - 1, every industry;
+- share of GDP at current prices (asked for 3 Nov 2026): industry level / GDP x 100, quarters and years;
 - year to date for the latest year while it has no annual figure: chain volume levels summed over the quarters
   published so far, on the same quarters a year earlier (span 6M for Q1-Q2, 9M for Q1-Q3; Q1 is the quarter itself).
   The checks confirm NESDC's annual chain volume level is the sum of its quarters, so this is NESDC's own annual method.
@@ -270,7 +271,7 @@ def update(force=False, **_):
         rows.append({"date": qdate(period) if span in ("Q", "Y") else f"{period[:4]}-{QMON[int(YTD_Q[span])]:02d}-01",
                      "period": period, "span": span, "code": c, "isic": i, "industry": l, "level": lv, "price": price,
                      "measure": measure, "value": round(value, 4) if measure == "level" else "",
-                     "rate": round(value, 4) if measure == "yoy" else "", "status": status, "calculated": calc, "release": code})
+                     "rate": round(value, 4) if measure in ("yoy", "share") else "", "status": status, "calculated": calc, "release": code})
 
     for (s, c, p), (v, st) in sorted(P.items(), key=lambda kv: (kv[0][1], kv[0][2], kv[0][0])):
         if s == "Table 3":
@@ -285,6 +286,12 @@ def update(force=False, **_):
             b = P.get((s, c, prev_year(p)))
             if b and b[0] > 0 and v > 0:
                 add(p, c, "current", "yoy", (v / b[0] - 1) * 100, st, "y")
+    # calculated (asked for 3 Nov 2026): share of GDP at current prices, every industry, quarters and years
+    for (s3, c, p), (v, st) in P.items():
+        if s3 == "Table 3" and c not in ("total", "nfi", "gni"):
+            g = P.get(("Table 3", "total", p))
+            if g and g[0] > 0:
+                add(p, c, "current", "share", v / g[0] * 100, st, "y")
     # calculated: real year to date for the latest year while it has no annual figure
     if ly > last_year and lq < 4:
         span = YTD_SPAN[lq]
@@ -306,17 +313,17 @@ def update(force=False, **_):
         w = csv.DictWriter(fh, fieldnames=cols, lineterminator="\n")
         w.writeheader()
         w.writerows(rows)
-    # dashboard file: growth rows only (published real y/y, calculated nominal y/y and year to date)
+    # dashboard file: growth and share rows (published real y/y; calculated nominal y/y, year to date, shares)
     with open(OUT / "th_gdp_dash.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=cols, lineterminator="\n")
         w.writeheader()
-        w.writerows(r for r in rows if r["measure"] == "yoy")
+        w.writerows(r for r in rows if r["measure"] in ("yoy", "share"))
     nlong = write_long(({"country": "TH", "indicator": "gdp", "series": f"{r['code']}_{r['price']}_{r['measure']}_{r['span']}",
                          "label": f"{r['industry']}, {'current prices' if r['price'] == 'current' else 'chain volume (2002)'}"
-                                  f"{', y/y' if r['measure'] == 'yoy' else ''}{' (calculated)' if r['calculated'] else ''}",
+                                  f"{', y/y' if r['measure'] == 'yoy' else ', % of GDP' if r['measure'] == 'share' else ''}{' (calculated)' if r['calculated'] else ''}",
                          "measure": r["measure"], "area": "national", "freq": "Q" if r["span"] == "Q" else "A" if r["span"] == "Y" else r["span"],
                          "date": r["date"], "value": r["value"] if r["measure"] == "level" else r["rate"],
-                         "unit": "THB mn" if r["measure"] == "level" else "%", "source": SRC, "release": code} for r in rows),
+                         "unit": "THB mn" if r["measure"] == "level" else "% of GDP" if r["measure"] == "share" else "%", "source": SRC, "release": code} for r in rows),
                        OUT / "long.csv")
     release = {"code": code, "label": label, "latest_quarter": latest, "latest_year": last_year, "file": item["name"],
                "ddl": item["ddl"], "url": item["url"], "nesdc_last_updated": item["last_updated"],
