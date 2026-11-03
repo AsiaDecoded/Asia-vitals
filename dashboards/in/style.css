@@ -137,3 +137,6 @@
 /* Manufacturing tab, Charts 1-2 side by side: let the legend wrap under the units at half width. */
 #mfg-iip .ad-top, #mfg-iipm .ad-top { height: auto; }
 #mfg-iip .ad-top .jg-legend, #mfg-iipm .ad-top .jg-legend { flex-wrap: wrap; }
+/* Manufacturing tab, Charts 4-5 side by side: legends may wrap at half width. */
+#mfg-elec .ad-top, #mfg-contrib .ad-top { height: auto; }
+#mfg-elec .ad-top .jg-legend, #mfg-contrib .ad-top .jg-legend { flex-wrap: wrap; }
