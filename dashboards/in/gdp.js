@@ -382,7 +382,7 @@
     const id = 'mfg-elec', box = document.getElementById(id + '-chart');
     const S = [
       { key: 'E2627', name: 'Electronics manufacturing', color: 'var(--ad-c1)' },
-      { key: 'X2627', name: 'Non-electronics (ex 26, 27)', color: 'var(--ad-c2)' },
+      { key: 'X2627', name: 'Non-electronics manufacturing', color: 'var(--ad-c2)' },
     ];
     legend(id + '-legend', S);
     if (!status(box, ['in_iip_groups'])) return;
