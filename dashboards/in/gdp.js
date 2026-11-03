@@ -339,11 +339,14 @@
     if (!D.length) { box.replaceChildren(); return; }
     const S = [{ key: 'm3', name: '3mma', color: 'var(--ad-c2)', bar: true }, { key: 'ytd', name: 'YTD', color: 'var(--ad-c1)', bar: true }];
     legend(id + '-legend', S);
-    const rows = D.filter((r) => r.nic === 'C').concat(D.filter((r) => r.nic !== 'C').sort((a, b) => b.m3 - a.m3));
+    // Manufacturing, then the electronics groups (calculated at MoSPI's weights), then the divisions by 3mma.
+    const GR = ['E2627', 'X2627'];
+    const head = ['C'].concat(GR).map((c) => D.find((r) => r.nic === c)).filter(Boolean);
+    const rows = head.concat(D.filter((r) => r.nic !== 'C' && !GR.includes(r.nic)).sort((a, b) => b.m3 - a.m3));
     const W = box.clientWidth, rowH = 26, top = 6, H = top + rows.length * rowH + 22;
     box.replaceChildren();
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
-    const lab = (r) => (r.nic === 'C' ? 'Manufacturing' : `${r.name} (${r.nic})`);
+    const lab = (r) => (r.nic === 'C' ? 'Manufacturing' : /^[EX]/.test(r.nic) ? r.name : `${r.name} (${r.nic})`);
     const lw = Math.min(W * 0.42, J.textWidth(svg, rows.map(lab)) + 12);
     const vals = rows.flatMap((r) => [r.yoy, r.ytd]).filter((v) => v != null);
     const x = d3.scaleLinear([Math.min(0, d3.min(vals)), Math.max(0, d3.max(vals))], [lw, W - 8]).nice();
@@ -355,13 +358,13 @@
     rows.forEach((r, i) => {
       const y0 = top + i * rowH + 4;
       svg.append('text').attr('x', lw - 8).attr('y', y0 + bh).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 12)
-        .attr('font-weight', r.nic === 'C' ? 700 : null).attr('fill', 'var(--ad-ink)').text(lab(r));
+        .attr('font-weight', r.nic === 'C' ? 700 : null).attr('font-style', /^[EX]/.test(r.nic) ? 'italic' : null).attr('fill', 'var(--ad-ink)').text(lab(r));
       S.forEach((s, k) => {
         const v = r[s.key]; if (v == null) return;
         svg.append('rect').attr('x', x(Math.min(0, v))).attr('width', Math.abs(x(v) - x(0))).attr('y', y0 + k * bh).attr('height', bh - 1).attr('fill', s.color);
       });
     });
-    if (rows.length > 1) svg.append('line').attr('x1', 0).attr('x2', W - 8).attr('y1', top + rowH).attr('y2', top + rowH).attr('stroke', 'var(--ad-grid)');
+    if (rows.length > head.length) svg.append('line').attr('x1', 0).attr('x2', W - 8).attr('y1', top + head.length * rowH).attr('y2', top + head.length * rowH).attr('stroke', 'var(--ad-axis)');
     const card = document.getElementById(id), tip = J.tip(card);
     const hl = svg.append('rect').attr('x', 0).attr('width', W).attr('height', rowH).attr('fill', 'var(--cds-chart-reference)').attr('opacity', 0.12).attr('display', 'none');
     svg.append('rect').attr('x', 0).attr('y', top).attr('width', W).attr('height', rows.length * rowH).attr('fill', 'transparent')
@@ -369,11 +372,36 @@
         const [, my] = d3.pointer(ev); const i = Math.max(0, Math.min(rows.length - 1, Math.floor((my - top) / rowH))); const r = rows[i];
         hl.attr('display', null).attr('y', top + i * rowH);
         const cr = card.getBoundingClientRect();
-        J.showTip(card, tip, r.nic === 'C' ? 'Manufacturing' : `NIC ${r.nic}: ${r.industry}`, S.map((s) => [s.color, s.name, pct(r[s.key])]), ev.clientX - cr.left, ev.clientY - cr.top);
+        J.showTip(card, tip, r.nic === 'C' || /^[EX]/.test(r.nic) ? lab(r) : `NIC ${r.nic}: ${r.industry}`, S.map((s) => [s.color, s.name, pct(r[s.key])]), ev.clientX - cr.left, ev.clientY - cr.top);
       })
       .on('mouseleave', () => { hl.attr('display', 'none'); tip.style.display = 'none'; });
   }
-  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgIip(); mfgDiv(); } };
+  // Manufacturing tab, Chart 3: electronics and non-electronics manufacturing IIP, y/y, monthly from April 2024
+  // (2022-23 base; groups calculated in in_iip_mospi at MoSPI's weights).
+  function mfgElec() {
+    const id = 'mfg-elec', box = document.getElementById(id + '-chart');
+    const S = [
+      { key: 'E2627', name: 'Electronics and electrical (26, 27)', color: 'var(--ad-c1)' },
+      { key: 'X2627', name: 'Non-electronics (ex 26, 27)', color: 'var(--ad-c2)' },
+    ];
+    legend(id + '-legend', S);
+    if (!status(box, ['in_iip_groups'])) return;
+    const G = dash.data('in_iip_groups').data;
+    const rows = J.slice(merge(S.map((s) => ({ key: s.key, rows: G.filter((r) => r.code === s.key && N(r.yoy) != null && r.date >= '2024-04-01').map((r) => ({ date: r.date, v: N(r.yoy) })) }))), id);
+    if (!rows.length) { box.replaceChildren(); return; }
+    const H = 300;
+    const mAxis = (r) => (r.date.slice(5, 7) === '01' ? r.date.slice(0, 4) : null);
+    const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), true, mAxis,
+      { anchorEvery: (r) => r.date.slice(5, 7) === '01' });
+    const dots = drawLines(svg, x, y, rows, S);
+    const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const extras = hover(svg, document.getElementById(id), x, rows, H, ml, W - mr, (r) => `${MON[Number(r.date.slice(5, 7)) - 1]} ${r.date.slice(0, 4)}`, (r, px) => {
+      dots.forEach((d, i) => { const v = r[S[i].key]; d.attr('display', v == null ? 'none' : null).attr('cx', px).attr('cy', v == null ? 0 : y(v)); });
+      return S.map((s) => [s.color, s.name, pct(r[s.key])]);
+    });
+    extras.push(...dots);
+  }
+  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgIip(); mfgDiv(); mfgElec(); } };
 
   J.redrawGdp = () => {
     J.redrawMfg();
