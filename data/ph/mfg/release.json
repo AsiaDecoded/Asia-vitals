@@ -1,0 +1,38 @@
+{
+ "code": "M2026-07",
+ "label": "Jul 2026",
+ "source": "ph_mfg_psa",
+ "processed_at": "2026-11-03T03:59:52Z",
+ "rows": 8568,
+ "warnings": [
+  "total VoPI y/y 2022-06 left blank by PSA (known)",
+  "VoPI C14 2021-04-01: published y/y 502.66 vs index 502.92",
+  "VoPI C251 2021-04-01: published y/y 1183.73 vs index 1183.52",
+  "VoPI C275 2021-04-01: published y/y 625.73 vs index 625.52",
+  "VoPI C19 2021-06-01: published y/y 2945.54 vs index 2950.50",
+  "VoPI C19 2021-07-01: published y/y 3598.2 vs index 3595.09",
+  "VoPI C19 2021-08-01: published y/y 3799.06 vs index 3804.94",
+  "VoPI C19 2022-02-01: published y/y 480.74 vs index 480.51",
+  "VoPI C19 2022-03-01: published y/y 2225.05 vs index 2224.70",
+  "VoPI C 2024-12-01: published y/y 0.45 vs index 0.19",
+  "VoPI C27 2024-12-01: published y/y 18.62 vs index 6.61",
+  "... 24 VoPI y/y vs index differences in all"
+ ],
+ "fingerprint": "c1d34766c84cdec1",
+ "long_rows": 33542,
+ "stamps": {
+  "2B/NA/QT/10MFG/0462B5BMFQ1.px": "2026-08-07T18:59:17",
+  "2B/NA/QT/10MFG/0472B5BMFQ2.px": "2026-08-07T18:59:47",
+  "2B/NA/QT/10MFG/0492B5BMFQ4.px": "2026-08-07T19:00:46",
+  "2G/MNFG/MISSI/2018/0012G4CMCU2.px": "2026-09-09T09:11:24",
+  "2G/MNFG/MISSI/2018/0032G4CMPO2.px": "2026-09-09T09:22:30",
+  "2G/MNFG/MISSI/BAC/0012G4CMPO1.px": "2026-06-24T11:27:25"
+ },
+ "latest": "2026-07-01",
+ "history": [
+  {
+   "code": "M2026-07",
+   "processed_at": "2026-11-03T03:59:52Z"
+  }
+ ]
+}

@@ -1,5 +1,20 @@
 == ph_gdp_psa
-   UPDATED: Q2 2026: 14616 quarterly rows, 3009 annual (30s)
+   UPDATED: Q2 2026: 14616 quarterly rows, 3009 annual (26s)
 == ph_gdp_intl
-   UPDATED: WDI 1960-2025 (updated 2026-10-08) (1s)
+   UPDATED: WDI 1960-2025 (updated 2026-10-08) (2s)
+== ph_mfg_psa
+   UPDATED: Jul 2026: 8568 VoPI rows, 14868 GVA rows (21s)
+   WARNING: total VoPI y/y 2022-06 left blank by PSA (known)
+   WARNING: VoPI C14 2021-04-01: published y/y 502.66 vs index 502.92
+   WARNING: VoPI C251 2021-04-01: published y/y 1183.73 vs index 1183.52
+   WARNING: VoPI C275 2021-04-01: published y/y 625.73 vs index 625.52
+   WARNING: VoPI C19 2021-06-01: published y/y 2945.54 vs index 2950.50
+   WARNING: VoPI C19 2021-07-01: published y/y 3598.2 vs index 3595.09
+   WARNING: VoPI C19 2021-08-01: published y/y 3799.06 vs index 3804.94
+   WARNING: VoPI C19 2022-02-01: published y/y 480.74 vs index 480.51
+   WARNING: VoPI C19 2022-03-01: published y/y 2225.05 vs index 2224.70
+   WARNING: VoPI C 2024-12-01: published y/y 0.45 vs index 0.19
+   WARNING: VoPI C27 2024-12-01: published y/y 18.62 vs index 6.61
+   WARNING: ... 24 VoPI y/y vs index differences in all
 Q2 2026 vs PSA release and WDI: 12/12 match
+July 2026 manufacturing vs PSA release: 7/7 match
