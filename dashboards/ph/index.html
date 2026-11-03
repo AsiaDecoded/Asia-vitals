@@ -115,6 +115,7 @@
 
   <nav class="jg-tabs" role="tablist" aria-label="Sections">
     <button role="tab" data-tab="gdp" aria-selected="true">GDP</button>
+    <button role="tab" data-tab="manufacturing" aria-selected="false">Manufacturing</button>
     <button role="tab" data-tab="inflation" aria-selected="false">Inflation</button>
     <button role="tab" data-tab="financial" aria-selected="false">Financial</button>
     <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
@@ -207,6 +208,79 @@
       <div class="ad-foot"><span>Source: Philippine Statistics Authority; World Bank</span><span class="ad-brand">Asia Decoded</span></div>
     </section>
     <p class="jg-foot">Source: Philippine Statistics Authority (PSA), National Accounts of the Philippines, OpenSTAT database: <span data-source="gdp_release" data-field="label" data-row="0">—</span>. World Bank, World Development Indicators. Figures as published, except the year-to-date growth on Charts 5 and 6 and the CAGR on Charts 1 and 2 (calculated).</p>
+  </section>
+
+  <section class="jg-page" id="manufacturing" role="tabpanel" hidden>
+    <div class="jg-pagehead">
+      <div class="jg-note" style="margin:0"><span id="mfg-month" class="dash-skeleton" style="color: var(--color-fg)" data-source="mfg_latest" data-field="label" data-row="0">—</span></div>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="mfg-va">
+        <h2>Philippines manufacturing output and value added</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="mfg-va-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="mfg-va-chart" data-source="ph_vopi ph_mfg_gva"></div>
+        <div class="ad-foot"><span>Source: PSA</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="mfg-share">
+        <h2>Philippines manufacturing and industry, share of GDP</h2>
+        <div class="ad-top"><span class="ad-units">% of GDP, current prices</span><div class="jg-legend" id="mfg-share-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="mfg-share-chart" data-source="ph_mfg_gva"></div>
+        <div class="ad-foot"><span>Source: PSA</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card" id="mfg-div" data-slider="none">
+        <h2>Philippines manufacturing output by industry</h2>
+        <div class="ad-top"><span class="ad-units">% y/y, volume of production index</span><div class="jg-legend" id="mfg-div-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="mfg-div-chart" data-source="ph_vopi_div"></div>
+        <div class="ad-foot"><span>Source: PSA, Asia Decoded calculations</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="mfg-elec">
+        <h2>Philippines electronics and electrical output</h2>
+        <div class="ad-top"><span class="ad-units">% y/y, volume of production index</span><div class="jg-legend" id="mfg-elec-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="mfg-elec-chart" data-source="ph_vopi"></div>
+        <div class="ad-foot"><span>Source: PSA</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="mfg-capu">
+        <h2>Philippines manufacturing capacity utilisation</h2>
+        <div class="ad-top"><span class="ad-units">% of capacity</span><div class="jg-legend" id="mfg-capu-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="mfg-capu-chart" data-source="ph_capu"></div>
+        <div class="ad-foot"><span>Source: PSA</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+      <section class="jg-card" id="mfg-gvash">
+        <h2>Philippines manufacturing value added by industry</h2>
+        <div class="ad-top"><span class="ad-units">% of manufacturing GVA, current prices</span><div class="jg-legend" id="mfg-gvash-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="mfg-gvash-chart" data-source="ph_mfg_gva"></div>
+        <div class="ad-foot"><span>Source: PSA</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+
+    <section class="jg-card" id="mfg-heat">
+      <h2>Philippines manufacturing output by industry, last 12 months</h2>
+      <div class="ad-top"><span class="ad-units">% y/y, volume of production index</span><span></span><span class="ad-units r"></span></div>
+      <div class="ph-groupwrap"><table id="mfg-heat-table" data-source="ph_vopi"></table></div>
+      <div class="ad-foot"><span>Source: PSA</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <section class="jg-card ad-method" id="mfg-notes">
+      <h2>Chart notes</h2>
+      <ul>
+        <li><b>Volume of production index (VoPI):</b> the PSA&rsquo;s Monthly Integrated Survey of Selected Industries (MISSI), 2018 = 100, by PSIC 2009 division. The PSA derives it from the value of production index deflated by the PPI; it is a chained Paasche-type index with weights updated each year from the Annual Survey of Philippine Business and Industry. y/y rates are the PSA&rsquo;s, as published; in a few months (e.g. December 2024) they differ from the ratio of the published indices, presumably from the annual weight updates. From January 2019 on the 2018 base; 2002&ndash;2017 from the PSA&rsquo;s backcast on the same base (total and 11 divisions only); the PSA publishes no y/y for 2018, so the lines break there. June 2022 total y/y is blank in the PSA&rsquo;s table (index 92.22 to 92.18) and is left blank. The OpenSTAT tables can lag the PSA&rsquo;s press release by a month.</li>
+        <li><b>Chart 1, output and value added:</b> VoPI y/y, all manufacturing, monthly; and manufacturing gross value added at constant 2018 prices, y/y, quarterly, from the national accounts (dated at the quarter&rsquo;s last month). The VoPI measures output volume, not value added. The chart opens on 2022: the 2018-based VoPI swings from &minus;82% to +534% y/y in 2020&ndash;21; drag the slider to see it.</li>
+        <li><b>Chart 2, share of GDP:</b> manufacturing and industry (mining, manufacturing, electricity, steam, water and waste management, construction) as published shares of GDP at current prices, quarterly, from 2000.</li>
+        <li><b>Chart 3, by industry:</b> the VoPI for the 22 PSIC divisions, all manufacturing on top, the divisions sorted by the 3mma. <b>Calculated</b> by Asia Decoded from the PSA&rsquo;s published figures: 3mma is the plain average of the latest three monthly y/y rates; YTD is the calendar year to date, the sum of the year&rsquo;s monthly indices to the latest month against the same months a year earlier. The tooltip also shows the published y/y for the latest month.</li>
+        <li><b>Chart 4, electronics:</b> VoPI y/y for computer, electronic and optical products (C26) and electrical equipment (C27), as published, with all manufacturing, from 2019 (the backcast does not cover them). The PSA publishes no combined electronics index. Opens on 2022, as Chart 1.</li>
+        <li><b>Chart 5, capacity utilisation:</b> the PSA&rsquo;s average capacity utilisation rate, all manufacturing, monthly from January 2018, as published.</li>
+        <li><b>Chart 6, by industry:</b> published shares of manufacturing gross value added at current prices, quarterly from 2000, for the six largest industries in the latest quarter.</li>
+        <li><b>Heat table:</b> VoPI y/y by division, the latest 12 months, as published. Each row is coloured on its own range, from green at its lowest rate in the window to red at its highest.</li>
+      </ul>
+      <div class="ad-foot"><span>Source: Philippine Statistics Authority</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+    <p class="jg-foot">Source: Philippine Statistics Authority (PSA), Monthly Integrated Survey of Selected Industries (2018 = 100) and National Accounts of the Philippines, OpenSTAT database: <span data-source="mfg_release" data-field="label" data-row="0">—</span>. Figures as published, except the 3mma and YTD on Chart 3 (calculated).</p>
   </section>
 
   <section class="jg-page" id="inflation" role="tabpanel" hidden>
@@ -437,9 +511,9 @@ window.JG = {
   },
   addSliders() {
     document.querySelectorAll('.jg-card').forEach((card) => {
-      const chart = card.querySelector(':scope > .jg-chart'); if (!chart || !card.id) return;
+      const chart = card.querySelector(':scope > .jg-chart'); if (!chart || !card.id || card.dataset.slider === 'none') return;
       const page = card.closest('.jg-page'); const p = page ? page.id : 'inflation';
-      const redraw = () => { if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else if (p === 'financial') JG.redrawFx && JG.redrawFx(); else if (p === 'gdp') JG.redrawGdp && JG.redrawGdp(); };
+      const redraw = () => { if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else if (p === 'financial') JG.redrawFx && JG.redrawFx(); else if (p === 'gdp') JG.redrawGdp && JG.redrawGdp(); else if (p === 'manufacturing') JG.redrawMfg && JG.redrawMfg(); };
       const wrap = document.createElement('div'); wrap.className = 'ad-slider';
       const track = document.createElement('div'); track.className = 'ad-slider-track';
       const sel = document.createElement('div'); sel.className = 'ad-slider-sel'; track.appendChild(sel);
@@ -569,15 +643,17 @@ window.JG = {
     document.querySelectorAll('.jg-page').forEach((p) => { p.hidden = p.id !== id; });
     dash.setLink(id);
     if (id === 'gdp' && J.redrawGdp) J.redrawGdp();
+    if (id === 'manufacturing' && J.redrawMfg) J.redrawMfg();
     if (id === 'inflation' && J.redrawCpi) J.redrawCpi();
     if (id === 'financial' && J.redrawFx) J.redrawFx();
   };
   J.show = show;
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
-  if (['inflation', 'methodology', 'financial'].includes(location.hash.slice(1))) show(location.hash.slice(1));
+  if (['manufacturing', 'inflation', 'methodology', 'financial'].includes(location.hash.slice(1))) show(location.hash.slice(1));
 })();
 </script>
 
 <script src="cpi.js"></script>
 <script src="gdp.js"></script>
+<script src="mfg.js"></script>
 <script src="export.js"></script>
