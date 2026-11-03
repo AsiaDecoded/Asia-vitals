@@ -3,7 +3,7 @@
  "label": "2026-27 Q1 (2022-23 base): real GDP 7.8%, nominal 10.3% y/y",
  "latest_quarter": "2026-27 Q1",
  "latest_date": "2026-04-01",
- "processed_at": "2026-11-03T02:27:35Z",
+ "processed_at": "2026-11-03T02:45:16Z",
  "rows": 2190,
  "warnings": [
   "2012-13 agri constant yoy: Additional Revision has 2 values [1.4, 1.5]; left out",
@@ -67,7 +67,7 @@
  "history": [
   {
    "code": "Q2026-27Q1",
-   "processed_at": "2026-11-03T02:27:35Z"
+   "processed_at": "2026-11-03T02:45:16Z"
   }
  ]
 }
