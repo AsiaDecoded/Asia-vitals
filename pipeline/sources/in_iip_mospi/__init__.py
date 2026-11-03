@@ -49,6 +49,37 @@ def fetch():
     return out
 
 
+def fetch_annual():
+    """MoSPI's annual IIP (fiscal years), General and Sectoral, both bases, as published (index and growth rate)."""
+    out = []
+    for by in BASES:
+        for t in ("General", "Sectoral"):
+            rows, total = mospi.paged(PATH, {"base_year": by, "frequency": "Annually", "type": t}, max_pages=20)
+            if not rows or (total is not None and len(rows) != int(total)):
+                raise CheckFailed([f"IIP annual {by} {t}: {len(rows)} rows of {total}"])
+            for r in rows:
+                out.append({"fy": r["year"], "base_year": by, "category": r["category"], "sub_category": r.get("sub_category") or "",
+                            "index": float(r["index"]) if r.get("index") not in (None, "") else None,
+                            "growth_rate": float(r["growth_rate"]) if r.get("growth_rate") not in (None, "") else None})
+    return out
+
+
+def annual_rows(ann):
+    """Annual IIP growth for the linked file (user, 3 Nov 2026), MoSPI's published rates: 2011-12 base to 2022-23,
+    2022-23 base from 2023-24 (its first year with growth on the base year), as for annual GDP. Dated at April."""
+    out = []
+    for key, cat in (("general", "General"), ("manufacturing", "Manufacturing")):
+        for r in ann:
+            if r["category"] != cat or r["sub_category"] or r["growth_rate"] is None:
+                continue
+            start = int(r["fy"][:4])
+            if (r["base_year"] == "2011-12") != (start <= 2022):
+                continue
+            out.append({"date": f"{start}-04-01", "freq": "A", "series": key, "index_linked": "", "yoy": r["growth_rate"],
+                        "base_year": r["base_year"], "calculated": "", "yoy_mospi": r["growth_rate"]})
+    return out
+
+
 def pick(rows, by, key):
     cat = {"general": "General", "manufacturing": "Manufacturing"}[key]
     return {r["date"]: r for r in rows if r["base_year"] == by and r["category"] == cat and r["sub_category"] == ""
@@ -364,7 +395,7 @@ def update(force=False, **_):
     OUT.mkdir(parents=True, exist_ok=True)
     state = read_json(OUT / "release.json", {}) or {}
     rows = fetch()
-    lk = linked(rows)
+    lk = linked(rows) + annual_rows(fetch_annual())
     dv = divisions(rows)
     fp = hashlib.sha256(json.dumps(rows, sort_keys=True).encode()).hexdigest()[:16]
     if state.get("fingerprint") == fp and not force:
