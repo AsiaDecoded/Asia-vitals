@@ -327,7 +327,7 @@
     });
     extras.push(...dots);
   }
-  // Manufacturing tab, Chart 3 (was Chart 2): IIP by NIC 2-digit manufacturing division, the latest three months y/y (3mma) and the
+  // Manufacturing tab, Chart 5 (bar chart, below Charts 3-4): IIP by NIC 2-digit manufacturing division, the latest three months y/y (3mma) and the
   // calendar year to date y/y (both ratios of summed indices, calculated in in_iip_mospi). Sorted by the 3mma;
   // manufacturing as a whole on top.
   function mfgDiv() {
@@ -376,7 +376,7 @@
       })
       .on('mouseleave', () => { hl.attr('display', 'none'); tip.style.display = 'none'; });
   }
-  // Manufacturing tab, Chart 4 (was Chart 3): electronics and non-electronics manufacturing IIP, y/y, monthly from April 2024
+  // Manufacturing tab, Chart 3: electronics and non-electronics manufacturing IIP, y/y, monthly from April 2024
   // (2022-23 base; groups calculated in in_iip_mospi at MoSPI's weights).
   function mfgElec() {
     const id = 'mfg-elec', box = document.getElementById(id + '-chart');
@@ -438,7 +438,7 @@
     document.querySelectorAll('#mfg-iipm-seg button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
     J.redrawMfg();
   });
-  // Manufacturing tab, Chart 5 (added 3 Nov 2026): contributions to general IIP y/y, pp, monthly from April 2024:
+  // Manufacturing tab, Chart 4 (added 3 Nov 2026): contributions to general IIP y/y, pp, monthly from April 2024:
   // weight x change in index / general index a year earlier, at MoSPI's 2022-23 weights (calculated in in_iip_mospi);
   // stacked bars, general IIP y/y (MoSPI, published) as the line. Colours: user's contribution-chart scheme.
   function mfgContrib() {
