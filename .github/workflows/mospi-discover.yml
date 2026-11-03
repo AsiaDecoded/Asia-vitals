@@ -7,7 +7,7 @@ on:
   push:
     branches: [dev-india, main]
     paths:
-      - pipeline/tools/mospi_iip_weights_probe.py
+      - pipeline/tools/rbi_obicus_probe.py
       - .github/workflows/mospi-discover.yml
 
 permissions:
@@ -24,8 +24,8 @@ jobs:
           python-version: "3.12"
       - name: PDF reader
         run: pip install -q pdfplumber==0.11.4
-      - name: Read MoSPI IIP release weights (India Manufacturing tab)
-        run: python -I pipeline/tools/mospi_iip_weights_probe.py discovery/mospi_iip_weights
+      - name: Read RBI OBICUS releases (India Manufacturing tab)
+        run: python -I pipeline/tools/rbi_obicus_probe.py discovery/rbi_obicus
       - name: Push results to the discovery branch
         run: |
           git config user.name "asia-vitals bot"
@@ -36,7 +36,7 @@ jobs:
           else
             git checkout --orphan discovery && git rm -rf --quiet --cached .
           fi
-          mkdir -p discovery && rm -rf discovery/mospi_iip_weights && cp -r /tmp/discovery/mospi_iip_weights discovery/
-          git add discovery/mospi_iip_weights
+          mkdir -p discovery && rm -rf discovery/rbi_obicus && cp -r /tmp/discovery/rbi_obicus discovery/
+          git add discovery/rbi_obicus
           git commit -m "MoSPI IIP and ASI discovery"
           git push origin discovery
