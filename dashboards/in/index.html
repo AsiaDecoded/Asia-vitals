@@ -133,6 +133,8 @@
 .ad-pick-list span.ln { display: inline-block; flex: 0 0 1.2rem; height: 3px; }
 #gdp-sectors .ad-top, #gdp-annual .ad-top { height: auto; }
 #gdp-sectors .ad-top .jg-legend, #gdp-annual .ad-top .jg-legend { flex-wrap: wrap; }
+/* Tabs stay at the top while the page scrolls under them (user, 3 Nov 2026). */
+.jg-tabs { position: sticky; top: 0; z-index: 10; background: var(--color-bg); }
 </style>
 
 
