@@ -1,14 +1,14 @@
 {
- "description": "GDP and GVA by industry, % y/y and Rs crore, constant and current prices, as published by MoSPI (National Accounts Statistics): quarterly on the 2022-23 base from Apr–Jun 2022; annual on the 2011-12 base to 2022-23 and the 2022-23 base from 2023-24 (latest estimate of each year). Also services (tertiary sector) growth, calculated (calculated = y): sum of the levels of trade, hotels, transport, communication and broadcasting; financial, real estate and professional services; public administration, defence and other services. And manufacturing share at current prices, annual, on each base: % of GVA (measure share) and % of GDP (share_gdp), calculated. Also real GDP growth on the 2011-12 base for all its published years (code gdp_2011base), as published. Built by the AsiaDecoded/asia-vitals pipeline (data/in/gdp/in_gdp.csv).",
+ "description": "GDP and GVA by industry, % y/y and Rs crore, constant and current prices, as published by MoSPI (National Accounts Statistics): quarterly on the 2022-23 base from Apr–Jun 2022; annual on the 2011-12 base to 2022-23 and the 2022-23 base from 2023-24 (latest estimate of each year). Also services (tertiary sector) growth, calculated (calculated = y): sum of the levels of trade, hotels, transport, communication and broadcasting; financial, real estate and professional services; public administration, defence and other services. And manufacturing share at current prices, annual, on each base: % of GVA (measure share) and % of GDP (share_gdp), calculated. Also growth on the 2011-12 base for all its published years, as published: real GDP (code gdp_2011base) and manufacturing GVA, real and nominal (code manufacturing_2011base). Built by the AsiaDecoded/asia-vitals pipeline (data/in/gdp/in_gdp.csv).",
  "schedule": "Replaced after each quarterly GDP release by a scheduled task that reads AsiaDecoded/asia-vitals.",
  "source": {
   "kind": "file",
-  "name": "in_gdp_Q2026-27Q1_r7.csv",
-  "url": "/_blob/1b9af4f8ca6e5d2347f9dd4a922b0eaf"
+  "name": "in_gdp_Q2026-27Q1_r8.csv",
+  "url": "/_blob/42b22a1e08a411916bc0d022f7527af6"
  },
  "title": "India GDP and GVA (MoSPI)",
  "updated": {
-  "at": "2026-11-03T05:53:00Z",
+  "at": "2026-11-03T06:30:00Z",
   "by": "Claude"
  }
 }
