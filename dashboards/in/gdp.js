@@ -381,7 +381,7 @@
   function mfgElec() {
     const id = 'mfg-elec', box = document.getElementById(id + '-chart');
     const S = [
-      { key: 'E2627', name: 'Electronics and electrical (26, 27)', color: 'var(--ad-c1)' },
+      { key: 'E2627', name: 'Electronics', color: 'var(--ad-c1)' },
       { key: 'X2627', name: 'Non-electronics (ex 26, 27)', color: 'var(--ad-c2)' },
     ];
     legend(id + '-legend', S);
@@ -446,7 +446,7 @@
     const P = [   // bottom of the stack first
       { key: 'X2627', name: 'Non-electronics manufacturing', color: '#1F4E79', bar: true },
       { key: 'other', name: 'Mining, electricity, gas, water and waste', color: '#A6A6A6', bar: true },
-      { key: 'E2627', name: 'Electronics and electrical', color: '#0C84FF', bar: true },
+      { key: 'E2627', name: 'Electronics', color: '#0C84FF', bar: true },
     ];
     const LINE = { key: 'g', name: 'General IIP, y/y', color: '#BD1B21' };
     legend(id + '-legend', [LINE].concat(P.slice().reverse()));
