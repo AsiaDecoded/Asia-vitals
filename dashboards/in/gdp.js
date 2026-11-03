@@ -305,7 +305,7 @@ dash.calc('iip_movers', {
     yt.forEach((t, i) => { if (t) rows[rows.length - 1][S[i].key + '_ytd'] = t.v; });
     const H = 280;
     const vals = rows.flatMap((r) => S.flatMap((s) => [r[s.key], r[s.key + '_ytd']])).filter((v) => v != null);
-    const { svg, x, y, W, ml, mr } = frame(box, rows, H, vals, true, (r) => (r.ytd ? 'YTD' : fyShort(r.date)), { labelWidth: 44, top: opt.base ? 24 : 12 });
+    const { svg, x, y, W, ml, mr } = frame(box, rows, H, vals, true, (r) => (r.ytd ? 'FYTD' : fyShort(r.date)), { labelWidth: 44, top: opt.base ? 24 : 12 });
     if (opt.base && rows[0].date < BASE_SWITCH && rows[rows.length - 1].date >= BASE_SWITCH) {
       const k = rows.findIndex((r) => r.date >= BASE_SWITCH);
       const sx = x(J.date(rows[k].date));   // on FY24, the first year on the 2022-23 base (user, 3 Nov 2026)
@@ -416,7 +416,7 @@ dash.calc('iip_movers', {
     }
     const H = 300;
     const { svg, x, y, W, ml, mr } = frame(box, R, H, R.flatMap((r) => S.map((s) => ytdV(r, s))).filter((v) => v != null), true,
-      ann ? (r) => (r.ytd ? 'YTD' : fyShort(r.date)) : qAxis, ann ? { labelWidth: 44, top: 24, pad: 6 } : { anchorEvery: qAnchor, top: 24 });
+      ann ? (r) => (r.ytd ? 'FYTD' : fyShort(r.date)) : qAxis, ann ? { labelWidth: 44, top: 24, pad: 6 } : { anchorEvery: qAnchor, top: 24 });
     const sw = ann ? BASE_SWITCH : '9999';   // quarterly: all on the 2022-23 base, no base-change line
     if (R[0].date < sw && R[R.length - 1].date >= sw) {
       const k = rows.findIndex((r) => r.date >= sw);
@@ -699,7 +699,7 @@ dash.calc('iip_movers', {
     const R = ytdRows(rows, yd, { v: yd ? yd.v : null });
     const H = 300;
     const { svg, x, y, W, ml, mr } = frame(box, R, H, R.flatMap((r) => S.map((s) => ytdV(r, s))).filter((v) => v != null), true,
-      ann ? (r) => (r.ytd ? 'YTD' : fyShort(r.date)) : qAxis, ann ? { labelWidth: 44, top: 24, pad: 6 } : { anchorEvery: qAnchor, top: 24 });
+      ann ? (r) => (r.ytd ? 'FYTD' : fyShort(r.date)) : qAxis, ann ? { labelWidth: 44, top: 24, pad: 6 } : { anchorEvery: qAnchor, top: 24 });
     if (ann && rows[0].date < BASE_SWITCH && rows[rows.length - 1].date >= BASE_SWITCH) {
       const k = rows.findIndex((r) => r.date >= BASE_SWITCH);
       const sx = x(J.date(rows[k].date));   // on FY24, the first year on the 2022-23 base (user, 3 Nov 2026)
