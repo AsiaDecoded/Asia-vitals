@@ -438,7 +438,55 @@
     document.querySelectorAll('#mfg-iipm-seg button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
     J.redrawMfg();
   });
-  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgIipM(); mfgIip(); mfgDiv(); mfgElec(); } };
+  // Manufacturing tab, Chart 5 (added 3 Nov 2026): contributions to general IIP y/y, pp, monthly from April 2024:
+  // weight x change in index / general index a year earlier, at MoSPI's 2022-23 weights (calculated in in_iip_mospi);
+  // stacked bars, general IIP y/y (MoSPI, published) as the line. Colours: user's contribution-chart scheme.
+  function mfgContrib() {
+    const id = 'mfg-contrib', box = document.getElementById(id + '-chart');
+    const P = [   // bottom of the stack first
+      { key: 'X2627', name: 'Non-electronics manufacturing', color: '#1F4E79', bar: true },
+      { key: 'other', name: 'Mining, electricity, gas, water and waste', color: '#A6A6A6', bar: true },
+      { key: 'E2627', name: 'Electronics and electrical', color: '#0C84FF', bar: true },
+    ];
+    const LINE = { key: 'g', name: 'General IIP, y/y', color: '#BD1B21' };
+    legend(id + '-legend', [LINE].concat(P.slice().reverse()));
+    if (!status(box, ['in_iip_contrib'])) return;
+    const by = new Map();
+    dash.data('in_iip_contrib').data.forEach((r) => {
+      if (!by.has(r.date)) by.set(r.date, { date: r.date, g: N(r.general_yoy) });
+      by.get(r.date)[r.part] = N(r.contribution);
+    });
+    const rows = J.slice(Array.from(by.values()).sort((a, b) => (a.date < b.date ? -1 : 1)), id);
+    if (!rows.length) { box.replaceChildren(); return; }
+    const H = 300;
+    const ext = rows.flatMap((r) => {
+      let pos = 0, neg = 0; P.forEach((p) => { const v = r[p.key] || 0; if (v >= 0) pos += v; else neg += v; });
+      return [pos, neg, r.g];
+    }).filter((v) => v != null);
+    const { svg, x, y, W, ml, mr } = frame(box, rows, H, ext, true,
+      (r) => (r.date.slice(5, 7) === '01' ? r.date.slice(0, 4) : null), { anchorEvery: (r) => r.date.slice(5, 7) === '01', pad: 10 });
+    const step = (W - ml - mr - 20) / Math.max(1, rows.length - 1);
+    const bw = Math.max(2, Math.min(22, step * 0.7));
+    rows.forEach((r) => {
+      let pos = 0, neg = 0;
+      P.forEach((p) => {
+        const v = r[p.key]; if (v == null) return;
+        const y0 = v >= 0 ? pos : neg, y1 = y0 + v;
+        svg.append('rect').attr('x', x(J.date(r.date)) - bw / 2).attr('width', bw).attr('y', y(Math.max(y0, y1))).attr('height', Math.abs(y(y0) - y(y1))).attr('fill', p.color);
+        if (v >= 0) pos = y1; else neg = y1;
+      });
+    });
+    svg.append('path').attr('d', d3.line().defined((r) => r.g != null).x((r) => x(J.date(r.date))).y((r) => y(r.g))(rows))
+      .attr('fill', 'none').attr('stroke', LINE.color).attr('stroke-width', 2.5).attr('stroke-linejoin', 'round');
+    const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const dot = svg.append('circle').attr('r', 3.5).attr('fill', LINE.color).attr('display', 'none');
+    const extras = hover(svg, document.getElementById(id), x, rows, H, ml, W - mr, (r) => `${MON[Number(r.date.slice(5, 7)) - 1]} ${r.date.slice(0, 4)}`, (r, px) => {
+      if (r.g != null) dot.attr('display', null).attr('cx', px).attr('cy', y(r.g));
+      return [[LINE.color, LINE.name, pct(r.g)]].concat(P.slice().reverse().map((p) => [p.color, p.name, r[p.key] == null ? 'n/a' : r[p.key].toFixed(2) + ' pp']));
+    });
+    extras.push(dot);
+  }
+  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgIipM(); mfgIip(); mfgDiv(); mfgElec(); mfgContrib(); } };
 
   J.redrawGdp = () => {
     J.redrawMfg();

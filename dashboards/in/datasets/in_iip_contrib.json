@@ -1,0 +1,14 @@
+{
+ "description": "Contributions to general IIP y/y, percentage points, monthly from April 2024: weight × (index − index a year earlier) ÷ general index a year earlier, at MoSPI's 2022-23 weights; parts: electronics and electrical (NIC 26, 27), non-electronics manufacturing (other 21 divisions), and mining, electricity and gas, water and waste; general_yoy is MoSPI's published rate. Calculated by Asia Decoded. Built by the AsiaDecoded/asia-vitals pipeline (data/in/iip/in_iip_contrib.csv).",
+ "schedule": "Replaced after each monthly IIP release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "in_iip_contrib_M2026-09.csv",
+  "url": "/_blob/8d252fee2faaf7d7f07416c56953704b"
+ },
+ "title": "India IIP contributions (calc.)",
+ "updated": {
+  "at": "2026-11-03T04:06:00Z",
+  "by": "Claude"
+ }
+}
