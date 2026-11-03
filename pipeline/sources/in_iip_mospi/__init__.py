@@ -173,7 +173,7 @@ _MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "N
 def divisions(rows):
     """Manufacturing by NIC 2-digit division, 2022-23 base, latest month: MoSPI's y/y as published, and the calendar
     year to date (January to the latest month) against the same months a year earlier, calculated as the ratio of the
-    summed indices (MoSPI's method for its cumulative growth, on calendar rather than fiscal months; user, 3 Nov 2026);
+    average indices (MoSPI's method for its cumulative growth, on calendar rather than fiscal months; user, 3 Nov 2026);
     and m3 ("3mma"): the plain average of the latest three months' y/y (MoSPI's published rates; for the groups, their
     calculated monthly y/y)."""
     new = [r for r in rows if r["base_year"] == "2022-23" and r["category"] == "Manufacturing" and r["index"] is not None]
@@ -188,7 +188,8 @@ def divisions(rows):
         prev = [s.get(f"{y - 1}-{k:02d}-01") for k in range(1, m + 1)]
         if any(x is None for x in cur + prev):
             errors.append(f"IIP division {sub or 'Manufacturing'}: months missing for the year to date"); continue
-        ytd = round((sum(x["index"] for x in cur) / sum(x["index"] for x in prev) - 1) * 100, 1)
+        # average index over the months to date against the same months a year earlier (same months, so = ratio of sums)
+        ytd = round((sum(x["index"] for x in cur) / len(cur) / (sum(x["index"] for x in prev) / len(prev)) - 1) * 100, 1)
         # 3mma: plain average of MoSPI's published y/y for the latest three months (user, 3 Nov 2026)
         last3 = [d for d in sorted(s) if d <= last][-3:]
         if len(last3) < 3 or any(s[d]["growth_rate"] is None for d in last3):
