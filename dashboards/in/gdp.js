@@ -358,7 +358,7 @@
     rows.forEach((r, i) => {
       const y0 = top + i * rowH + 4;
       svg.append('text').attr('x', lw - 8).attr('y', y0 + bh).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 12)
-        .attr('font-weight', r.nic === 'C' ? 700 : null).attr('font-style', /^[EX]/.test(r.nic) ? 'italic' : null).attr('fill', 'var(--ad-ink)').text(lab(r));
+        .attr('font-weight', r.nic === 'C' || /^[EX]/.test(r.nic) ? 700 : null).attr('fill', 'var(--ad-ink)').text(lab(r));
       S.forEach((s, k) => {
         const v = r[s.key]; if (v == null) return;
         svg.append('rect').attr('x', x(Math.min(0, v))).attr('width', Math.abs(x(v) - x(0))).attr('y', y0 + k * bh).attr('height', bh - 1).attr('fill', s.color);
