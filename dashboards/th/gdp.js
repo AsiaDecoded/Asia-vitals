@@ -264,6 +264,9 @@ dash.calc('gdp_cagr', {
     ex.push(...dots);
   }
 
+  // Shared with the Manufacturing tab (mfg.js).
+  J.th = { legend, status, frame, tipLayer, line, qLab, failed, fmt0 };
+
   J.redrawGdp = () => {
     if (!visible()) return;
     usd('gdp-usd', usdPick);

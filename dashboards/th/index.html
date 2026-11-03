@@ -106,6 +106,15 @@
 .th-groupwrap th { position: sticky; top: 0; background: var(--color-panel); z-index: 1; }
 .th-search { font: inherit; font-size: var(--cds-font-size-caption); background: transparent; color: var(--color-fg); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); min-width: 10rem; }
 .jg-chart.tall { min-height: 460px; }
+/* Manufacturing tab heat table (as Vietnam's) */
+.th-heat { font-size: 0.8125rem; }
+.th-heat th, .th-heat td { padding: 3px 6px; border-bottom: 0; }
+.th-heat th:nth-child(n+2), .th-heat td:nth-child(n+2) { text-align: center; }
+.th-heat th:first-child, .th-heat td:first-child { text-align: left; white-space: nowrap; }
+.th-heat td.heat { font-variant-numeric: tabular-nums; border: 2px solid var(--color-bg); }
+.th-heat td.wt { color: var(--ad-ink, var(--color-fg-muted)); padding-right: 12px; }
+.th-heat th:nth-child(2) { font-weight: 400; }
+.th-heat tr.lead td { font-weight: 700; }
 </style>
 
 <div class="jg">
@@ -115,6 +124,7 @@
 
   <nav class="jg-tabs" role="tablist" aria-label="Sections">
     <button role="tab" data-tab="gdp" aria-selected="true">GDP</button>
+    <button role="tab" data-tab="manufacturing" aria-selected="false">Manufacturing</button>
     <button role="tab" data-tab="inflation" aria-selected="false">Inflation</button>
     <button role="tab" data-tab="financial" aria-selected="false">Financial</button>
     <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
@@ -197,6 +207,71 @@
         <div class="ad-foot"><span>Source: NESDC</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
     </div>
+  </section>
+
+  <section class="jg-page" id="manufacturing" role="tabpanel" hidden>
+    <div class="jg-grid">
+      <section class="jg-card" id="mfg-mpi" data-freq="m">
+        <h2>Thailand manufacturing production</h2>
+        <div class="ad-top"><span class="ad-units" id="mfg-mpi-units">% y/y</span><div class="jg-legend" id="mfg-mpi-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="mfg-mpi-chart" data-source="th_mpi"></div>
+        <div class="ad-foot"><span>Source: OIE</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="mfg-va" data-freq="q">
+        <h2>Thailand manufacturing output and value added</h2>
+        <div class="ad-top"><span class="ad-units" id="mfg-va-units">% y/y, quarterly</span><div class="jg-legend" id="mfg-va-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="mfg-va-chart" data-source="th_gdp th_mpi"></div>
+        <div class="ad-foot"><span>Source: NESDC, OIE</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="mfg-div">
+        <h2>Thailand manufacturing production by industry</h2>
+        <div class="ad-top"><span class="ad-units" id="mfg-div-units">% y/y</span><div class="jg-legend" id="mfg-div-legend"></div><span class="ad-units r"></span></div>
+        <div><div class="jg-chart" id="mfg-div-chart" data-source="th_mpi"></div></div>
+        <div class="ad-foot"><span>Source: OIE</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="mfg-big" data-freq="m">
+        <h2>Thailand manufacturing production, largest industries</h2>
+        <div class="ad-top"><span class="ad-units" id="mfg-big-units">% y/y</span><div class="jg-legend" id="mfg-big-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="mfg-big-chart" data-source="th_mpi"></div>
+        <div class="ad-foot"><span>Source: OIE</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <div class="jg-grid">
+      <section class="jg-card" id="mfg-share" data-freq="q">
+        <h2>Thailand manufacturing and industry, share of GDP</h2>
+        <div class="ad-top"><span class="ad-units" id="mfg-share-units">% of GDP, current prices, quarterly</span><div class="jg-legend" id="mfg-share-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="mfg-share-chart" data-source="th_gdp"></div>
+        <div class="ad-foot"><span>Source: NESDC</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <section class="jg-card" id="mfg-capu" data-freq="m">
+        <h2>Thailand manufacturing capacity utilisation</h2>
+        <div class="ad-top"><span class="ad-units" id="mfg-capu-units">%</span><div class="jg-legend" id="mfg-capu-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="mfg-capu-chart" data-source="th_mpi"></div>
+        <div class="ad-foot"><span>Source: OIE</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+    </div>
+
+    <section class="jg-card" id="mfg-heat">
+      <h2>Thailand manufacturing production by industry</h2>
+      <div class="ad-top"><span class="ad-units">% y/y; weight, % of the index</span><span></span><span class="ad-units r"></span></div>
+      <div class="jg-tablewrap"><table id="mfg-heat-table" class="th-heat" data-source="th_mpi"></table></div>
+      <div class="ad-foot"><span>Source: OIE</span><span class="ad-brand">Asia Decoded</span></div>
+    </section>
+
+    <article class="jg-card ad-method" id="mfg-notes">
+      <h2>Chart notes</h2>
+      <ul>
+        <li><b>Charts 1, 2, 4:</b> OIE&rsquo;s manufacturing production index (MPI), value-added weights, not seasonally adjusted. OIE switched to a chain-linked index (2021 = 100) with the September 2026 release; the charts show the previous index (2016 = 100) to December 2021 and the chain-linked one from January 2022 (dashed line), not linked. OIE publishes y/y only for the latest month and quarter; the rest is calculated from its index.</li>
+        <li><b>Chart 2:</b> NESDC&rsquo;s manufacturing value added, chain volume measures, y/y as published; the MPI&rsquo;s quarterly index is OIE&rsquo;s.</li>
+        <li><b>Charts 3, 7:</b> the 22 TSIC 2-digit industries of the chain-linked index, with OIE&rsquo;s weights (% of the index).</li>
+        <li><b>Chart 5:</b> shares calculated from NESDC&rsquo;s current-price levels. Industrial is ISIC B to E (mining, manufacturing, electricity, water), as NESDC groups it.</li>
+        <li><b>Chart 6:</b> OIE&rsquo;s capacity utilisation, % of capacity, all manufacturing, as published. OIE&rsquo;s files cover 2016&ndash;2023 and January 2025 on; 2024 is not in them.</li>
+      </ul>
+    </article>
   </section>
 
   <section class="jg-page" id="inflation" role="tabpanel" hidden>
@@ -355,6 +430,15 @@
       </ul>
       <div class="ad-foot"><span>Source: NESDC; World Bank, WDI</span><span class="ad-brand">Asia Decoded</span></div>
     </article>
+    <article class="jg-card ad-method" id="method-mfg">
+      <h2>Manufacturing</h2>
+      <ul>
+        <li><b>Source:</b> the Office of Industrial Economics (OIE), Ministry of Industry: manufacturing production index (MPI), value-added weights, and capacity utilisation, from its English index workbooks. Monthly, released around the end of the following month.</li>
+        <li><b>Index:</b> chain-linked, reference year 2021 = 100, from the September 2026 release, monthly from January 2021; the previous index (2016 = 100, 2016&ndash;2023) is shown to December 2021. The two are not linked. The chain-linked index is not seasonally adjusted (OIE publishes no seasonally adjusted series for it).</li>
+        <li><b>Calculated here:</b> y/y for every month and quarter, from OIE&rsquo;s index on each base (OIE publishes the rate for the latest month and quarter only; the calculation reproduces them); shares of GDP, from NESDC&rsquo;s current-price levels.</li>
+      </ul>
+      <div class="ad-foot"><span>Source: OIE, NESDC</span><span class="ad-brand">Asia Decoded</span></div>
+    </article>
     <article class="jg-card ad-method" id="method-data">
       <h2>Data</h2>
       <p>Every price figure on this page is published by Thailand&rsquo;s Trade Policy and Strategy Office (TPSO), Ministry of Commerce, and taken from its Open API (index-api.tpso.go.th). Nothing is calculated, linked or seasonally adjusted here.</p>
@@ -416,7 +500,7 @@ window.JG = {
     const card = document.getElementById(id), lbl = card && card.querySelector('.ad-slider-lbl');
     if (lbl && out.length) {
       const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-      const q = card.closest('.jg-page') && card.closest('.jg-page').id === 'gdp';
+      const q = card.dataset.freq === 'q' || (card.closest('.jg-page') && card.closest('.jg-page').id === 'gdp' && card.dataset.freq !== 'm');
       const a = card.dataset.freq === 'a';
       const f = (d) => (a ? d.slice(0, 4) : q ? `Q${Math.floor((Number(d.slice(5, 7)) - 1) / 3) + 1} ${d.slice(0, 4)}` : MON[Number(d.slice(5, 7)) - 1] + ' ' + d.slice(0, 4));
       lbl.textContent = `${f(out[0].date)} to ${f(out[out.length - 1].date)}`;
@@ -427,7 +511,7 @@ window.JG = {
     document.querySelectorAll('.jg-card').forEach((card) => {
       const chart = card.querySelector(':scope > .jg-chart'); if (!chart || !card.id) return;
       const page = card.closest('.jg-page'); const p = page ? page.id : 'inflation';
-      const redraw = () => { if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else if (p === 'financial') JG.redrawFx && JG.redrawFx(); else if (p === 'gdp') JG.redrawGdp && JG.redrawGdp(); };
+      const redraw = () => { if (p === 'inflation') JG.redrawCpi && JG.redrawCpi(); else if (p === 'financial') JG.redrawFx && JG.redrawFx(); else if (p === 'gdp') JG.redrawGdp && JG.redrawGdp(); else if (p === 'manufacturing') JG.redrawMfg && JG.redrawMfg(); };
       const wrap = document.createElement('div'); wrap.className = 'ad-slider';
       const track = document.createElement('div'); track.className = 'ad-slider-track';
       const sel = document.createElement('div'); sel.className = 'ad-slider-sel'; track.appendChild(sel);
@@ -559,13 +643,15 @@ window.JG = {
     if (id === 'inflation' && J.redrawCpi) J.redrawCpi();
     if (id === 'financial' && J.redrawFx) J.redrawFx();
     if (id === 'gdp' && J.redrawGdp) J.redrawGdp();
+    if (id === 'manufacturing' && J.redrawMfg) J.redrawMfg();
   };
   J.show = show;
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
-  if (['methodology', 'financial', 'inflation'].includes(location.hash.slice(1))) show(location.hash.slice(1));
+  if (['methodology', 'financial', 'inflation', 'manufacturing'].includes(location.hash.slice(1))) show(location.hash.slice(1));
 })();
 </script>
 
 <script src="cpi.js"></script>
 <script src="gdp.js"></script>
+<script src="mfg.js"></script>
 <script src="export.js"></script>
