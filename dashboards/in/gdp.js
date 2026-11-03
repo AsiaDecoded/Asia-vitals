@@ -558,14 +558,17 @@ dash.calc('iip_movers', {
   });
   dash.onData(() => iipMovers());
 
-  // Manufacturing tab: manufacturing share of GVA, % at current prices, annual (fiscal years), calculated in
-  // in_gdp_mospi from MoSPI's levels on each base: 2011-12 base (dashed) and 2022-23 base (solid).
+  // Manufacturing tab: manufacturing share of GVA, %, annual (fiscal years), Real (constant prices, each base at its own
+  // prices) or Nominal (current prices), calculated in in_gdp_mospi from MoSPI's levels on each base: 2011-12 base
+  // (dashed) and 2022-23 base (solid).
+  let sharePrice = 'constant';
   function mfgShare() {
     const id = 'mfg-share', box = document.getElementById(id + '-chart');
+    document.getElementById(id + '-units').textContent = `% of GVA, ${sharePrice === 'constant' ? 'constant' : 'current'} prices`;
     const S = [{ key: 'new', name: '2022-23 base', color: 'var(--ad-c2)' }, { key: 'old', name: '2011-12 base', color: 'var(--ad-c2)', dash: true }];
     legend(id + '-legend', S);
     if (!status(box, ['in_gdp'])) return;
-    const sh = (b) => gdp().filter((r) => r.freq === 'A' && r.code === 'manufacturing' && r.measure === 'share' && r.base_year === b)
+    const sh = (b) => gdp().filter((r) => r.freq === 'A' && r.code === 'manufacturing' && r.measure === 'share' && r.base_year === b && r.price === sharePrice)
       .map((r) => ({ date: r.date, v: N(r.value) }));
     const rows = J.slice(merge([{ key: 'new', rows: sh('2022-23') }, { key: 'old', rows: sh('2011-12') }]), id);
     if (!rows.length) { box.replaceChildren(); return; }
@@ -579,6 +582,13 @@ dash.calc('iip_movers', {
     });
     extras.push(...dots);
   }
+
+  document.getElementById('mfg-share-seg').addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    sharePrice = b.dataset.p;
+    document.querySelectorAll('#mfg-share-seg button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    mfgShare();
+  });
 
   J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgIipM(); mfgIip(); mfgDiv(); mfgElec(); mfgContrib(); mfgShare(); } };
 
