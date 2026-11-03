@@ -10,6 +10,7 @@ on:
     paths:
       - pipeline/sources/in_gdp_mospi/**
       - pipeline/sources/in_gdp_intl/**
+      - pipeline/sources/in_iip_mospi/**
       - .github/workflows/in-test.yml
 
 permissions:
@@ -36,7 +37,7 @@ jobs:
           sys.path.insert(0, "pipeline")
           from core.common import CheckFailed
           rc, lines = 0, []
-          for name in ("in_gdp_mospi", "in_gdp_intl"):
+          for name in ("in_gdp_mospi", "in_gdp_intl", "in_iip_mospi"):
               t0 = time.time()
               lines.append(f"== {name}")
               try:
@@ -85,7 +86,14 @@ jobs:
               x = [r for r in rows if r["freq"] == "Q" and r["fq"] == fq and r["code"] == "services" and r["price"] == "constant" and r["measure"] == "yoy"]
               if len(x) != 1: bad.append(f"services {fq}: {len(x)} rows")
               elif abs(float(x[0]["value"]) - v) > 0.001: bad.append(f"services {fq}: {x[0]['value']} vs release {v}")
-          msg = f"Q1 2026-27 vs MoSPI release: {n - len(bad)}/{n} match"
+          # IIP, September 2026 (PIB, 28 Oct 2026): general 6.7, manufacturing 7.6 (linked y/y equals the new-base rate)
+          lk = list(csv.DictReader(open("data/in/iip/in_iip_linked.csv")))
+          for ser, v in (("general", 6.7), ("manufacturing", 7.6)):
+              n += 1
+              x = [r for r in lk if r["freq"] == "M" and r["series"] == ser and r["date"] == "2026-09-01"]
+              if len(x) != 1: bad.append(f"IIP {ser} Sep 2026: {len(x)} rows")
+              elif abs(float(x[0]["yoy"]) - v) > 0.001: bad.append(f"IIP {ser} Sep 2026: {x[0]['yoy']} vs release {v}")
+          msg = f"Q1 2026-27 GDP and Sep 2026 IIP vs MoSPI releases: {n - len(bad)}/{n} match"
           print(msg); [print("  -", b) for b in bad]
           open("in_report.txt", "a").write(msg + "\n" + "".join(f"  - {b}\n" for b in bad))
           sys.exit(1 if bad else 0)
@@ -97,6 +105,6 @@ jobs:
           git config user.name "asia-vitals bot"
           git config user.email "actions@users.noreply.github.com"
           mkdir -p data/in/gdp && cp in_report.txt data/in/gdp/test_report.txt 2>/dev/null || true
-          git add data/in/gdp
+          git add data/in/gdp; if [ -d data/in/iip ]; then git add data/in/iip; fi
           git commit -qm "India test run ${{ github.run_id }}" || exit 0
           for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
