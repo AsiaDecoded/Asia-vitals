@@ -345,7 +345,8 @@ dash.calc('iip_movers', {
     if (!status(box, ['in_iip_linked', 'in_gdp'])) return;
     const lk = (ser) => dash.data('in_iip_linked').data.filter((r) => r.freq === 'Q' && r.series === ser && N(r.yoy) != null)
       .map((r) => ({ date: r.date, v: N(r.yoy) }));
-    const rows = J.slice(merge([{ key: 'gva', rows: series('Q', 'manufacturing') }, { key: 'iipm', rows: lk('manufacturing') }]), id);
+    const rows = J.slice(merge([{ key: 'gva', rows: series('Q', 'manufacturing') }, { key: 'iipm', rows: lk('manufacturing') }])
+      .filter((r) => r.date >= '2023-01-01'), id);   // from 2023 (user, 3 Nov 2026)
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 300;
     const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), true,
