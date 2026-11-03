@@ -167,6 +167,54 @@ def groups(rows):
     return out
 
 
+# Sector weights, 2022-23 base (MoSPI; user's file IIP_Dashboard_Data_Sept2026, sheet Sectoral Weights).
+SECTOR_W = {"Mining & Quarrying": 11.053, "Electricity & Gas Supply": 10.865,
+            "Water Supply, Sewerage & Waste Management": 2.02}
+
+
+def contributions(rows):
+    """Contributions to general IIP y/y, pp (user, 3 Nov 2026): weight x (index - index a year earlier) / general index
+    a year earlier, at MoSPI's 2022-23 weights; parts: electronics and electrical (NIC 26, 27), non-electronics
+    manufacturing (other 21 divisions), other industry (mining, electricity and gas, water and waste). From April 2024.
+    Check: parts sum to MoSPI's published general y/y within 0.15pp."""
+    code = {k: v[0] for k, v in NIC.items()}
+    I = {}
+    for r in rows:
+        if r["base_year"] != "2022-23" or r["index"] is None:
+            continue
+        if r["category"] == "Manufacturing" and r["sub_category"]:
+            I.setdefault(r["date"], {})[code[r["sub_category"]]] = r["index"]
+        elif r["sub_category"] == "" and (r["category"] in SECTOR_W or r["category"] == "General"):
+            I.setdefault(r["date"], {})[r["category"]] = r["index"]
+            if r["category"] == "General":
+                I[r["date"]]["_gyoy"] = r["growth_rate"]
+    E = GROUPS["E2627"][1]
+    out, errors = [], []
+    for d in sorted(I):
+        if d < "2024-04-01":
+            continue
+        p = f"{int(d[:4]) - 1}{d[4:]}"
+        a, b = I[d], I.get(p, {})
+        need = list(WEIGHTS) + list(SECTOR_W) + ["General"]
+        if any(k not in a or k not in b for k in need):
+            errors.append(f"IIP contributions {d[:7]}: series missing"); continue
+        g0 = b["General"]
+        parts = {"E2627": sum(WEIGHTS[c] * (a[c] - b[c]) for c in E) / g0,
+                 "X2627": sum(WEIGHTS[c] * (a[c] - b[c]) for c in WEIGHTS if c not in E) / g0,
+                 "other": sum(w * (a[k] - b[k]) for k, w in SECTOR_W.items()) / g0}
+        tot = sum(parts.values())
+        if a["_gyoy"] is None or abs(tot - a["_gyoy"]) > 0.15:
+            errors.append(f"IIP contributions {d[:7]}: parts sum to {tot:.2f}, MoSPI general y/y {a['_gyoy']}")
+        names = {"E2627": "Electronics and electrical (26, 27)", "X2627": "Non-electronics manufacturing",
+                 "other": "Mining, electricity, gas, water and waste"}
+        for k, v in parts.items():
+            out.append({"date": d, "part": k, "name": names[k], "contribution": round(v, 2),
+                        "general_yoy": a["_gyoy"], "calculated": "y"})
+    if errors:
+        raise CheckFailed(errors[:20])
+    return out
+
+
 _MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 
@@ -254,6 +302,11 @@ def update(force=False, **_):
         w = csv.DictWriter(fh, fieldnames=list(dv[0]), lineterminator="\n")
         w.writeheader()
         w.writerows(dv)
+    ct = contributions(rows)
+    with open(OUT / "in_iip_contrib.csv", "w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=list(ct[0]), lineterminator="\n")
+        w.writeheader()
+        w.writerows(ct)
     gr = groups(rows)
     with open(OUT / "in_iip_groups.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=list(gr[0]), lineterminator="\n")
