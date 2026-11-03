@@ -134,3 +134,6 @@
 #gdp-sectors .ad-top .jg-legend, #gdp-annual .ad-top .jg-legend { flex-wrap: wrap; }
 /* Tabs stay at the top while the page scrolls under them (user, 3 Nov 2026). */
 .jg-tabs { position: sticky; top: 0; z-index: 10; background: var(--color-bg); }
+/* Manufacturing tab, Charts 1-2 side by side: let the legend wrap under the units at half width. */
+#mfg-iip .ad-top, #mfg-iipm .ad-top { height: auto; }
+#mfg-iip .ad-top .jg-legend, #mfg-iipm .ad-top .jg-legend { flex-wrap: wrap; }
