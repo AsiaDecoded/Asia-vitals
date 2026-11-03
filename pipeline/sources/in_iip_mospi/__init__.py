@@ -79,8 +79,12 @@ def linked(rows):
         for d in sorted(idx):
             p = idx.get(prev_year(d))
             yoy = round((idx[d][0] / p[0] - 1) * 100, 1) if p else None
+            # MoSPI's own y/y on the 2022-23 base, as published (from April 2023; to March 2024 against the 2022-23
+            # months normalised to 100, MoSPI's stated method), kept beside the linked y/y (user, 3 Nov 2026).
+            mp = new.get(d)
             out.append({"date": d, "freq": "M", "series": key, "index_linked": round(idx[d][0], 3), "yoy": yoy,
-                        "base_year": idx[d][1], "calculated": "y"})
+                        "base_year": idx[d][1], "calculated": "y",
+                        "yoy_mospi": mp["growth_rate"] if mp is not None and mp["growth_rate"] is not None else ""})
             # published y/y on one base: the old base before the splice, the new base a year after it
             new_yoy_from = f"{int(SPLICE[:4]) + 1}{SPLICE[4:]}"   # MoSPI's new-base y/y is genuine from April 2024
             pub = old.get(d) if d < SPLICE else (new.get(d) if d >= new_yoy_from else None)
@@ -97,7 +101,7 @@ def linked(rows):
             p = qa.get(prev_year(d))
             out.append({"date": d, "freq": "Q", "series": key, "index_linked": round(qa[d], 3),
                         "yoy": round((qa[d] / p - 1) * 100, 1) if p else None,
-                        "base_year": "2011-12" if d < SPLICE else "2022-23", "calculated": "y"})
+                        "base_year": "2011-12" if d < SPLICE else "2022-23", "calculated": "y", "yoy_mospi": ""})
     if errors:
         raise CheckFailed(errors[:40])
     return out
@@ -239,7 +243,7 @@ def update(force=False, **_):
         for r in sorted(rows, key=lambda r: (r["base_year"], r["type"], r["category"], r["sub_category"], r["date"])):
             w.writerow(r)
     with open(OUT / "in_iip_linked.csv", "w", newline="", encoding="utf-8") as fh:
-        w = csv.DictWriter(fh, fieldnames=["date", "freq", "series", "index_linked", "yoy", "base_year", "calculated"],
+        w = csv.DictWriter(fh, fieldnames=["date", "freq", "series", "index_linked", "yoy", "base_year", "calculated", "yoy_mospi"],
                            lineterminator="\n")
         w.writeheader()
         for r in sorted(lk, key=lambda r: (r["freq"], r["series"], r["date"])):
