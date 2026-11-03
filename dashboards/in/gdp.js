@@ -280,6 +280,18 @@ dash.calc('iip_movers', {
     const q = series('Q', code, price).filter((r) => r.date >= `${lastAnnual + 1}-04-01`);
     return q.length === 1 && q[0].fq.endsWith('Q1') ? { date: `${q[0].date.slice(0, 4)}-04-01`, v: q[0].v, label: J.qLabel(q[0].date) } : null;
   }
+  // Manufacturing tab, Charts 1 and 2, annual (user, 3 Nov 2026): append a YTD point (r.ytd) holding <key>_ytd values.
+  const ytdV = (r, s) => (r.ytd ? r[s.key + '_ytd'] : r[s.key]);
+  function ytdRows(rows, yd, vals) {
+    if (!yd || Object.values(vals).every((v) => v == null)) return rows;
+    const r = { date: yd.date, ytd: true, label: yd.label };
+    Object.entries(vals).forEach(([k, v]) => { r[k + '_ytd'] = v; });
+    return rows.concat([r]);
+  }
+  function ytdDots(svg, x, y, R, S) {
+    S.forEach((s) => R.filter((r) => r.ytd && r[s.key + '_ytd'] != null).forEach((r) => svg.append('circle').attr('cx', x(J.date(r.date))).attr('cy', y(r[s.key + '_ytd']))
+      .attr('r', s.thin ? 3.5 : 4.5).attr('fill', 'var(--color-panel)').attr('stroke', s.color).attr('stroke-width', 2)));
+  }
   function annualChart(id, S, opt = {}) {
     const box = document.getElementById(id + '-chart');
     legend(id + '-legend', S.length > 1 ? S : []);
@@ -386,11 +398,27 @@ dash.calc('iip_movers', {
     const rows = J.slice(merge([{ key: 'gva', rows: gva }, { key: 'iipm', rows: lk('manufacturing') }])
       .filter((r) => r.date >= start), id);
     if (!rows.length) { box.replaceChildren(); return; }
+    // YTD (annual): GVA as MoSPI publishes it (Q1 only); IIP over the same months, average index vs a year earlier
+    // (user, 3 Nov 2026: Apr-Jun 2026, the GVA YTD period).
+    let R = rows;
+    if (ann) {
+      const lastA = Math.max(...rows.map((r) => Number(r.date.slice(0, 4))));
+      const yd = ytd('manufacturing', lastA);
+      let iy = null;
+      if (yd) {
+        const L = dash.data('in_iip_linked').data.filter((r) => r.freq === 'M' && r.series === 'manufacturing');
+        const months = [4, 5, 6].map((m) => `${lastA + 1}-${String(m).padStart(2, '0')}-01`);
+        const ix = (d) => { const r = L.find((q) => q.date === d); return r ? N(r.index_linked) : null; };
+        const cur = months.map(ix), prev = months.map((d) => ix(`${Number(d.slice(0, 4)) - 1}${d.slice(4)}`));
+        if (cur.concat(prev).every((v) => v != null)) iy = Math.round((cur.reduce((a, b) => a + b) / prev.reduce((a, b) => a + b) - 1) * 1000) / 10;
+      }
+      R = ytdRows(rows, yd, { gva: yd ? yd.v : null, iipm: iy });
+    }
     const H = 300;
-    const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), true,
-      ann ? (r) => fyShort(r.date) : qAxis, ann ? { labelWidth: 44, top: 24, pad: 6 } : { anchorEvery: qAnchor, top: 24 });
+    const { svg, x, y, W, ml, mr } = frame(box, R, H, R.flatMap((r) => S.map((s) => ytdV(r, s))).filter((v) => v != null), true,
+      ann ? (r) => (r.ytd ? 'YTD' : fyShort(r.date)) : qAxis, ann ? { labelWidth: 44, top: 24, pad: 6 } : { anchorEvery: qAnchor, top: 24 });
     const sw = ann ? BASE_SWITCH : '9999';   // quarterly: all on the 2022-23 base, no base-change line
-    if (rows[0].date < sw && rows[rows.length - 1].date >= sw) {
+    if (R[0].date < sw && R[R.length - 1].date >= sw) {
       const k = rows.findIndex((r) => r.date >= sw);
       const sx = x(J.date(ann ? rows[k].date : sw));   // annual: on FY24 (user, 3 Nov 2026)
       svg.append('line').attr('x1', sx).attr('x2', sx).attr('y1', 18).attr('y2', H - 24).attr('stroke', 'var(--ad-axis)').attr('stroke-dasharray', '3 3');
@@ -404,10 +432,11 @@ dash.calc('iip_movers', {
     } else {
       dots = drawLines(svg, x, y, rows, S);
     }
-    const extras = hover(svg, document.getElementById(id), x, rows, H, ml, W - mr,
-      (r) => (ann ? `${fyShort(r.date)} (${fyLab(r.date)})` : J.qLabel(r.date)), (r, px) => {
-        dots.forEach((d, i) => { const v = r[S[i].key]; d.attr('display', v == null ? 'none' : null).attr('cx', px).attr('cy', v == null ? 0 : y(v)); });
-        return S.map((s) => [s.color, s.name, pct(r[s.key])]);
+    ytdDots(svg, x, y, R, S);
+    const extras = hover(svg, document.getElementById(id), x, R, H, ml, W - mr,
+      (r) => (r.ytd ? `${fyShort(r.date)} so far (${r.label})` : ann ? `${fyShort(r.date)} (${fyLab(r.date)})` : J.qLabel(r.date)), (r, px) => {
+        dots.forEach((d, i) => { const v = ytdV(r, S[i]); d.attr('display', v == null ? 'none' : null).attr('cx', px).attr('cy', v == null ? 0 : y(v)); });
+        return S.map((s) => [s.color, s.name, pct(ytdV(r, s))]);
       });
     extras.push(...dots);
   }
@@ -665,9 +694,12 @@ dash.calc('iip_movers', {
     const rows = J.slice(merge([{ key: 'v', rows: series(mgFreq, 'manufacturing', mgPrice).filter((r) => !ann || r.base === '2022-23') }]
       .concat(ann ? [{ key: 'o', rows: series('A', 'manufacturing_2011base', mgPrice) }] : [])), id);
     if (!rows.length) { box.replaceChildren(); return; }
+    // YTD (annual, user, 3 Nov 2026): MoSPI's published growth for the fiscal year so far (Q1 only), 2022-23 base.
+    const yd = ann ? ytd('manufacturing', Math.max(...rows.map((r) => Number(r.date.slice(0, 4)))), mgPrice) : null;
+    const R = ytdRows(rows, yd, { v: yd ? yd.v : null });
     const H = 300;
-    const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), true,
-      ann ? (r) => fyShort(r.date) : qAxis, ann ? { labelWidth: 44, top: 24, pad: 6 } : { anchorEvery: qAnchor, top: 24 });
+    const { svg, x, y, W, ml, mr } = frame(box, R, H, R.flatMap((r) => S.map((s) => ytdV(r, s))).filter((v) => v != null), true,
+      ann ? (r) => (r.ytd ? 'YTD' : fyShort(r.date)) : qAxis, ann ? { labelWidth: 44, top: 24, pad: 6 } : { anchorEvery: qAnchor, top: 24 });
     if (ann && rows[0].date < BASE_SWITCH && rows[rows.length - 1].date >= BASE_SWITCH) {
       const k = rows.findIndex((r) => r.date >= BASE_SWITCH);
       const sx = x(J.date(rows[k].date));   // on FY24, the first year on the 2022-23 base (user, 3 Nov 2026)
@@ -675,10 +707,11 @@ dash.calc('iip_movers', {
       svg.append('text').attr('x', sx).attr('y', 12).attr('font-size', 11).attr('fill', 'var(--ad-ink)').attr('text-anchor', 'middle').text('2022-23 base');
     }
     const dots = drawLines(svg, x, y, rows, S);
-    const extras = hover(svg, document.getElementById(id), x, rows, H, ml, W - mr,
-      (r) => (ann ? `${fyShort(r.date)} (${fyLab(r.date)})` : J.qLabel(r.date)), (r, px) => {
-        dots.forEach((d, i) => { const v = r[S[i].key]; d.attr('display', v == null ? 'none' : null).attr('cx', px).attr('cy', v == null ? 0 : y(v)); });
-        return S.map((s) => [s.color, s.name, pct(r[s.key])]);
+    ytdDots(svg, x, y, R, S);
+    const extras = hover(svg, document.getElementById(id), x, R, H, ml, W - mr,
+      (r) => (r.ytd ? `${fyShort(r.date)} so far (${r.label})` : ann ? `${fyShort(r.date)} (${fyLab(r.date)})` : J.qLabel(r.date)), (r, px) => {
+        dots.forEach((d, i) => { const v = ytdV(r, S[i]); d.attr('display', v == null ? 'none' : null).attr('cx', px).attr('cy', v == null ? 0 : y(v)); });
+        return S.map((s) => [s.color, s.name, pct(ytdV(r, s))]);
       });
     extras.push(...dots);
   }
