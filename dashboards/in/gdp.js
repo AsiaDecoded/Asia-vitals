@@ -301,7 +301,7 @@
     el.textContent = `${J.qLabel(r.date)} (MoSPI ${r.fq})`;
   }
 
-  // Manufacturing tab, Chart 1: manufacturing GVA, real (MoSPI, 2022-23 base, as published) and the IIP, general and
+  // Manufacturing tab, Chart 2 (was Chart 1): manufacturing GVA, real (MoSPI, 2022-23 base, as published) and the IIP, general and
   // manufacturing, linked across the 2011-12 and 2022-23 bases with MoSPI's factors, quarterly averages, y/y (calculated
   // in in_iip_mospi). Dashed line at the IIP base change (April 2023).
   function mfgIip() {
@@ -329,7 +329,7 @@
     });
     extras.push(...dots);
   }
-  // Manufacturing tab, Chart 2: IIP by NIC 2-digit manufacturing division, the latest three months y/y (3mma) and the
+  // Manufacturing tab, Chart 3 (was Chart 2): IIP by NIC 2-digit manufacturing division, the latest three months y/y (3mma) and the
   // calendar year to date y/y (both ratios of summed indices, calculated in in_iip_mospi). Sorted by the 3mma;
   // manufacturing as a whole on top.
   function mfgDiv() {
@@ -376,7 +376,7 @@
       })
       .on('mouseleave', () => { hl.attr('display', 'none'); tip.style.display = 'none'; });
   }
-  // Manufacturing tab, Chart 3: electronics and non-electronics manufacturing IIP, y/y, monthly from April 2024
+  // Manufacturing tab, Chart 4 (was Chart 3): electronics and non-electronics manufacturing IIP, y/y, monthly from April 2024
   // (2022-23 base; groups calculated in in_iip_mospi at MoSPI's weights).
   function mfgElec() {
     const id = 'mfg-elec', box = document.getElementById(id + '-chart');
@@ -401,7 +401,44 @@
     });
     extras.push(...dots);
   }
-  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgIip(); mfgDiv(); mfgElec(); } };
+  // Manufacturing tab, Chart 1 (added 3 Nov 2026; the earlier charts renumbered 2-4): IIP y/y, monthly, General or
+  // Manufacturing. MoSPI's y/y as published on the 2022-23 base from April 2023 (to March 2024 against the 2022-23
+  // months normalised to 100, MoSPI's method), and the spliced series (2011-12 index / MoSPI's factor to March 2023,
+  // 2022-23 base after; y/y calculated) from April 2013.
+  let iipKey = 'general';
+  function mfgIipM() {
+    const id = 'mfg-iipm', box = document.getElementById(id + '-chart');
+    const S = [
+      { key: 'spl', name: 'Spliced series', color: 'var(--ad-c1)', thin: true },
+      { key: 'mos', name: 'MoSPI, 2022-23 base', color: 'var(--ad-c2)' },
+    ];
+    legend(id + '-legend', S);
+    if (!status(box, ['in_iip_linked'])) return;
+    const L = dash.data('in_iip_linked').data.filter((r) => r.freq === 'M' && r.series === iipKey);
+    const rows = J.slice(merge([
+      { key: 'spl', rows: L.filter((r) => N(r.yoy) != null).map((r) => ({ date: r.date, v: N(r.yoy) })) },
+      { key: 'mos', rows: L.filter((r) => N(r.yoy_mospi) != null).map((r) => ({ date: r.date, v: N(r.yoy_mospi) })) },
+    ]), id);
+    if (!rows.length) { box.replaceChildren(); return; }
+    const H = 300;
+    const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), true,
+      (r) => (r.date.slice(5, 7) === '01' ? r.date.slice(0, 4) : null), { anchorEvery: (r) => r.date.slice(5, 7) === '01', top: 24 });
+    if (rows[0].date < '2023-04-01' && rows[rows.length - 1].date >= '2023-04-01') vline(svg, x, '2023-04-01', H, '2022-23 base');
+    const dots = drawLines(svg, x, y, rows, S);
+    const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const extras = hover(svg, document.getElementById(id), x, rows, H, ml, W - mr, (r) => `${MON[Number(r.date.slice(5, 7)) - 1]} ${r.date.slice(0, 4)}`, (r, px) => {
+      dots.forEach((d, i) => { const v = r[S[i].key]; d.attr('display', v == null ? 'none' : null).attr('cx', px).attr('cy', v == null ? 0 : y(v)); });
+      return S.filter((s) => r[s.key] != null).map((s) => [s.color, s.name, pct(r[s.key])]);
+    });
+    extras.push(...dots);
+  }
+  document.getElementById('mfg-iipm-seg').addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    iipKey = b.dataset.k;
+    document.querySelectorAll('#mfg-iipm-seg button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    J.redrawMfg();
+  });
+  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgIipM(); mfgIip(); mfgDiv(); mfgElec(); } };
 
   J.redrawGdp = () => {
     J.redrawMfg();
