@@ -208,15 +208,16 @@ def services(rows, sh, warnings):
 
 
 def mfg_share(rows):
-    """Manufacturing share of GVA, % at current prices, annual, calculated (user, 3 Nov 2026): manufacturing GVA / total
-    GVA, MoSPI's published current-price levels, latest vintage of each year, on each base separately: 2011-12 base
+    """Manufacturing share of GVA, %, annual, calculated (user, 3 Nov 2026): manufacturing GVA / total GVA, MoSPI's
+    published levels at current prices (nominal) and at constant prices (real, each base at its own base-year prices),
+    latest vintage of each year, on each base separately: 2011-12 base
     (2011-12 to its latest year) and 2022-23 base (from 2022-23). Years whose latest vintage has conflicting values are
     skipped."""
     out = []
-    for base in ("2011-12", "2022-23"):
+    for base, price in [(b, p) for b in ("2011-12", "2022-23") for p in ("current", "constant")]:
         best, clash = {}, set()
         for r in rows:
-            if r["freq"] != "A" or r["measure"] != "level" or r["price"] != "current" or r["base_year"] != base \
+            if r["freq"] != "A" or r["measure"] != "level" or r["price"] != price or r["base_year"] != base \
                     or r["code"] not in ("manufacturing", "gva") or r["approach"] not in ("", "Production Approach", "Production"):
                 continue
             k = (r["fy"], r["code"])
@@ -231,7 +232,7 @@ def mfg_share(rows):
             if m and g and g["value"] > 0:
                 out.append({"date": m["date"], "freq": "A", "period": fy, "fy": fy, "fq": "", "base_year": base,
                             "code": "manufacturing", "industry": "Manufacturing", "subindustry": "", "approach": "",
-                            "measure": "share", "price": "current", "value": round(m["value"] / g["value"] * 100, 2),
+                            "measure": "share", "price": price, "value": round(m["value"] / g["value"] * 100, 2),
                             "unit": "% of GVA", "revision": m["revision"], "rev_rank": m["rev_rank"], "calculated": "y"})
     return out
 
