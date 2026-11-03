@@ -345,7 +345,8 @@
     const W = box.clientWidth, rowH = 26, top = 6, H = top + rows.length * rowH + 22;
     box.replaceChildren();
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
-    const lab = (r) => (r.nic === 'C' ? 'Manufacturing' : /^[EX]/.test(r.nic) ? r.name : `${r.name} (${r.nic})`);
+    const GLAB = { E2627: 'Electronics', X2627: 'Non-electronics' };   // short labels (user, 3 Nov 2026)
+    const lab = (r) => (r.nic === 'C' ? 'Manufacturing' : GLAB[r.nic] || `${r.name} (${r.nic})`);
     const lw = Math.min(W * 0.42, J.textWidth(svg, rows.map(lab)) + 12);
     const vals = rows.flatMap((r) => [r.yoy, r.ytd]).filter((v) => v != null);
     const x = d3.scaleLinear([Math.min(0, d3.min(vals)), Math.max(0, d3.max(vals))], [lw, W - 8]).nice();
