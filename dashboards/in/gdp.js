@@ -329,19 +329,17 @@
     });
     extras.push(...dots);
   }
-  // Manufacturing tab, Chart 2: IIP by NIC 2-digit manufacturing division, latest month y/y (MoSPI, as published) and
-  // the calendar year to date y/y (ratio of summed indices, calculated in in_iip_mospi). Sorted by the latest month;
+  // Manufacturing tab, Chart 2: IIP by NIC 2-digit manufacturing division, the latest three months y/y (3mma) and the
+  // calendar year to date y/y (both ratios of summed indices, calculated in in_iip_mospi). Sorted by the 3mma;
   // manufacturing as a whole on top.
   function mfgDiv() {
     const id = 'mfg-div', box = document.getElementById(id + '-chart');
     if (!status(box, ['in_iip_divisions'])) { legend(id + '-legend', []); return; }
-    const D = dash.data('in_iip_divisions').data.map((r) => ({ ...r, yoy: N(r.yoy), ytd: N(r.ytd) }));
+    const D = dash.data('in_iip_divisions').data.map((r) => ({ ...r, yoy: N(r.yoy), m3: N(r.m3), ytd: N(r.ytd) }));
     if (!D.length) { box.replaceChildren(); return; }
-    const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    const latest = `${MON[Number(D[0].date.slice(5, 7)) - 1]} ${D[0].date.slice(0, 4)}`;
-    const S = [{ key: 'yoy', name: latest, color: 'var(--ad-c2)', bar: true }, { key: 'ytd', name: D[0].ytd_months.replace('-', '–'), color: 'var(--ad-c1)', bar: true }];
+    const S = [{ key: 'm3', name: `${D[0].m3_months.replace('-', '–')} (3mma)`, color: 'var(--ad-c2)', bar: true }, { key: 'ytd', name: `${D[0].ytd_months.replace('-', '–')} (YTD)`, color: 'var(--ad-c1)', bar: true }];
     legend(id + '-legend', S);
-    const rows = D.filter((r) => r.nic === 'C').concat(D.filter((r) => r.nic !== 'C').sort((a, b) => b.yoy - a.yoy));
+    const rows = D.filter((r) => r.nic === 'C').concat(D.filter((r) => r.nic !== 'C').sort((a, b) => b.m3 - a.m3));
     const W = box.clientWidth, rowH = 26, top = 6, H = top + rows.length * rowH + 22;
     box.replaceChildren();
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
