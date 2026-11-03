@@ -1,5 +1,10 @@
 == th_gdp_nesdc
-   UPDATED: Q2 2026: GDP +1.9% y/y; years to 2025; 16139 rows (11s)
+   UPDATED: Q2 2026: GDP +1.9% y/y; years to 2025; 16139 rows (10s)
 == th_gdp_intl
-   UPDATED: WDI to 2025 (updated 2026-10-08) (63s)
+   UPDATED: WDI to 2025 (updated 2026-10-08) (2s)
+== th_mpi_oie
+   UPDATED: Sep 2026: MPI +2.05% y/y (OIE +2.05); 11931 rows (27s)
+   WARNING: capacity utilisation 2016 12 2017-03: 105.438713489253 out of range
+   WARNING: capacity utilisation 2016 12 2017-08: 118.866238139691 out of range
 Q2 2026 GDP vs NESDC release: 8/8 match
+September 2026 MPI vs OIE release: 7/7 match

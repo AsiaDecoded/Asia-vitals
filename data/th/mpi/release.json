@@ -1,0 +1,24 @@
+{
+ "code": "M2026-09",
+ "label": "Sep 2026",
+ "latest_month": "2026-09",
+ "latest_quarter": "2026-Q3",
+ "published_yoy_month": 2.049277725392735,
+ "published_yoy_quarter": 3.3978040161948537,
+ "last_modified": "Fri, 30 Oct 2026 07:06:23 GMT",
+ "table": "OIE Prodidx1_E.xlsx (MPI, value-added weights, chain-linked 2021 = 100), capidx_E.xlsx; archive index2016_2023.zip",
+ "processed_at": "2026-11-03T03:52:44Z",
+ "rows": 11931,
+ "warnings": [
+  "capacity utilisation 2016 12 2017-03: 105.438713489253 out of range",
+  "capacity utilisation 2016 12 2017-08: 118.866238139691 out of range"
+ ],
+ "fingerprint": "9f1daf342d9c1fa9",
+ "long_rows": 11931,
+ "history": [
+  {
+   "code": "M2026-09",
+   "processed_at": "2026-11-03T03:52:44Z"
+  }
+ ]
+}
