@@ -172,6 +172,32 @@ SECTOR_W = {"Mining & Quarrying": 11.053, "Electricity & Gas Supply": 10.865,
             "Water Supply, Sewerage & Waste Management": 2.02}
 
 
+def other_group(rows):
+    """Other industries (mining, electricity and gas, water and waste), 2022-23 base, calculated (user, 3 Nov 2026):
+    weighted average of MoSPI's published sector indices at its weights (SECTOR_W); y/y from April 2024. Check: with
+    manufacturing (76.062) the sectors reproduce the published general index within 0.15 points."""
+    I = {}
+    for r in rows:
+        if r["base_year"] == "2022-23" and r["sub_category"] == "" and r["index"] is not None and r["date"] >= GROUP_START \
+                and (r["category"] in SECTOR_W or r["category"] in ("Manufacturing", "General")):
+            I.setdefault(r["date"], {})[r["category"]] = r["index"]
+    out, errors, idx = [], [], {}
+    for d, v in sorted(I.items()):
+        if any(k not in v for k in list(SECTOR_W) + ["Manufacturing", "General"]):
+            errors.append(f"IIP other industries {d[:7]}: sector missing"); continue
+        gen = (76.062 * v["Manufacturing"] + sum(w * v[k] for k, w in SECTOR_W.items())) / 100
+        if abs(gen - v["General"]) > 0.15:
+            errors.append(f"IIP sector weights {d[:7]}: weighted {gen:.2f} vs published general {v['General']}")
+        idx[d] = sum(w * v[k] for k, w in SECTOR_W.items()) / sum(SECTOR_W.values())
+    if errors:
+        raise CheckFailed(errors[:20])
+    for d, x in sorted(idx.items()):
+        p = idx.get(f"{int(d[:4]) - 1}{d[4:]}")
+        out.append({"date": d, "code": "OTH", "name": "Other industries", "index": round(x, 3),
+                    "yoy": round((x / p - 1) * 100, 1) if p else None, "calculated": "y"})
+    return out
+
+
 def contributions(rows):
     """Contributions to general IIP y/y, pp (user, 3 Nov 2026): weight x (index - index a year earlier) / general index
     a year earlier, at MoSPI's 2022-23 weights; parts: electronics and electrical (NIC 26, 27), non-electronics
@@ -307,7 +333,7 @@ def update(force=False, **_):
         w = csv.DictWriter(fh, fieldnames=list(ct[0]), lineterminator="\n")
         w.writeheader()
         w.writerows(ct)
-    gr = groups(rows)
+    gr = groups(rows) + other_group(rows)
     with open(OUT / "in_iip_groups.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=list(gr[0]), lineterminator="\n")
         w.writeheader()
