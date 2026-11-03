@@ -13,6 +13,7 @@ os.makedirs(OUT, exist_ok=True)
 CTX = ssl.create_default_context()
 CTX.options |= getattr(ssl, "OP_LEGACY_SERVER_CONNECT", 0x4)
 URLS = {
+    "first_release_2022_23": "https://mospi.gov.in/uploads/latestReleases/latest_release_1780371708887_52b83604-666c-443a-82c6-4411103e2ede_Press_Release_IIP_2022-23f.pdf",
     "aug2026": "https://www.mospi.gov.in/uploads/latestReleases/latest_release_1790590696008_1b346687-0a5f-445a-83a2-28283c586094_IIP_Press_Release_August_2026.pdf",
     "jul2026": "https://www.mospi.gov.in/uploads/latestReleases/latest_release_1787912132242_3d2fc197-d8a9-48a0-840f-d0cdc12c6835_IIP_Press_Release_July_2026.pdf",
 }
