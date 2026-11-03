@@ -129,9 +129,8 @@ NIC = {"Manufacture of Food Products": ("10", "Food products"), "Manufacture of 
 WEIGHTS = {"10": 5.679, "11": 1.113, "12": 0.774, "13": 3.275, "14": 1.970, "15": 0.607, "16": 0.239, "17": 1.375,
            "18": 0.506, "19": 7.721, "20": 7.813, "21": 5.833, "22": 3.384, "23": 3.519, "24": 9.198, "25": 2.481,
            "26": 2.085, "27": 3.175, "28": 5.020, "29": 6.417, "30": 2.089, "31": 0.283, "32": 1.509}
-# Electronics groups (user, 3 Nov 2026): two definitions, each with its complement in manufacturing.
-GROUPS = {"E26": ("Electronics (26)", {"26"}), "X26": ("Non-electronics (ex 26)", None),
-          "E2627": ("Electronics and electrical (26, 27)", {"26", "27"}), "X2627": ("Non-electronics (ex 26, 27)", None)}
+# Electronics groups (user, 3 Nov 2026): electronics and electrical (NIC 26 + 27) and the rest of manufacturing.
+GROUPS = {"E2627": ("Electronics and electrical (26, 27)", {"26", "27"}), "X2627": ("Non-electronics (ex 26, 27)", None)}
 GROUP_START = "2023-04-01"   # 2022-23 base only (user: from April 2024 for y/y)
 
 
@@ -218,8 +217,8 @@ def divisions(rows):
                     "m3_months": f"{_MON[int(last3[0][5:7]) - 1]}-{_MON[int(last3[-1][5:7]) - 1]} {last3[-1][:4]}",
                     "ytd": round((sum(cur) / sum(prev) - 1) * 100, 1), "ytd_months": out[0]["ytd_months"], "ytd_calculated": "y"})
     missing = [k for k in NIC if k not in {r["sub_category"] for r in new}]
-    if missing or len(out) != 28:
-        errors.append(f"IIP divisions: {len(out)} of 28 rows; not in the data: {missing[:3]}")
+    if missing or len(out) != 26:
+        errors.append(f"IIP divisions: {len(out)} of 26 rows; not in the data: {missing[:3]}")
     if errors:
         raise CheckFailed(errors)
     return out
