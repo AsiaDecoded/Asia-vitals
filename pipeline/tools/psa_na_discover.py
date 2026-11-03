@@ -64,10 +64,21 @@ TARGETS = [
 ]
 
 
-def targets(out):
+TARGETS_MFG = [
+    "2G/MNFG/MISSI/2018/0012G4CMCU2.px", "2G/MNFG/MISSI/2018/0022G4CMPA2.px", "2G/MNFG/MISSI/2018/0032G4CMPO2.px",
+    "2G/MNFG/MISSI/2018/0042G4CMSA2.px", "2G/MNFG/MISSI/2018/0052G4CMSO2.px",
+    "2G/MNFG/MISSI/BAC/0012G4CMPO1.px", "2G/MNFG/MISSI/BAC/0022G4CMPA1.px",
+    "2G/MNFG/MISSI/2000/0032G4CMPO0.px", "2G/MNFG/MISSI/2000/0012G4CMCU0.px",
+    "2B/NA/QT/10MFG/0462B5BMFQ1.px", "2B/NA/QT/10MFG/0472B5BMFQ2.px", "2B/NA/QT/10MFG/0492B5BMFQ4.px",
+    "2B/NA/AN/10MFG/0462B5BMFA1.px", "2B/NA/AN/10MFG/0472B5BMFA2.px",
+    "2B/NA/QT/1SUM/0082B5BPRQ4.px",
+]
+
+
+def targets(out, which=None):
     """Round na2: the GDP tables the Philippines GDP tab needs, metadata and full data."""
     summary = {}
-    for path in TARGETS:
+    for path in (which or TARGETS):
         name = path.replace("/", "__")
         try:
             m = psa.meta(path)
@@ -88,6 +99,8 @@ def main(out):
     out.mkdir(parents=True, exist_ok=True)
     if len(sys.argv) > 2 and sys.argv[2] == "targets":
         return targets(out)
+    if len(sys.argv) > 2 and sys.argv[2] == "mfg":
+        return targets(out, TARGETS_MFG)
     start = time.time()
     tree = []
     walk("", 0, tree, start)

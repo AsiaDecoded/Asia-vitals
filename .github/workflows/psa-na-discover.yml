@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Query OpenSTAT and WDI
-        run: python -I pipeline/tools/psa_na_discover.py discovery/psa_na2 targets
+        run: python -I pipeline/tools/psa_na_discover.py discovery/psa_na3 mfg
       - name: Push results to the discovery branch
         if: always()
         run: |
@@ -36,7 +36,7 @@ jobs:
           mv discovery /tmp/discovery
           git fetch origin discovery
           git checkout -B discovery origin/discovery
-          mkdir -p discovery && rm -rf discovery/psa_na2 && cp -r /tmp/discovery/psa_na2 discovery/
-          git add discovery/psa_na2
+          mkdir -p discovery && rm -rf discovery/psa_na3 && cp -r /tmp/discovery/psa_na3 discovery/
+          git add discovery/psa_na3
           git commit -m "PSA national accounts discovery" || exit 0
           for i in 1 2 3; do git push origin discovery && break; git pull --rebase origin discovery; done
