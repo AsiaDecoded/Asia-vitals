@@ -8,7 +8,7 @@ on:
   push:
     branches: [main]
     paths:
-      - pipeline/tools/kr_mfg_probe.py
+      - pipeline/tools/kr_mfg_probe*
       - .github/workflows/kr-mfg-probe.yml
 
 permissions:
@@ -31,7 +31,7 @@ jobs:
       - name: Probe sources
         env:
           ECOS_KEY: ${{ secrets.ECOS_KEY }}
-        run: python -I pipeline/tools/kr_mfg_probe.py discovery/kr_mfg
+        run: python -I pipeline/tools/kr_mfg_probe.py discovery/kr_mfg 2
       - name: Push results to the discovery branch
         if: always()
         run: |
@@ -40,7 +40,7 @@ jobs:
           mv discovery /tmp/discovery
           git fetch origin discovery
           git checkout -B discovery origin/discovery
-          mkdir -p discovery && rm -rf discovery/kr_mfg && cp -r /tmp/discovery/kr_mfg discovery/
+          mkdir -p discovery/kr_mfg && cp -r /tmp/discovery/kr_mfg/. discovery/kr_mfg/
           git add discovery/kr_mfg
           git commit -m "Korea manufacturing source probe" || exit 0
           for i in 1 2 3; do git push origin discovery && break; git pull --rebase origin discovery; done

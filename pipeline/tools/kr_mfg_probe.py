@@ -133,7 +133,75 @@ def extract(path, i):
         say(f"  {len(pdf.pages)} pages")
 
 
-for fn in (tables, samples, release):
+CODES = ["I11A", "I11AA", "I11AB", "I11AC", "I11AD"] + [f"I11AC{c}" for c in "ABCDEFGHIJKLMNOPQRSTUVWX"]
+
+
+def series2():
+    """Round 2: every 901Y032 production index, monthly 2019-, plus use-based, operating ratio, inventory ratio."""
+    out = {}
+    for c in CODES:
+        rs = ecos._paged("StatisticSearch", ["901Y032", "M", "201901", "203012", c, "1"])
+        out[c] = {r["TIME"]: r["DATA_VALUE"] for r in rs}
+    save("r2_901Y032_prod.json", out)
+    say(f"  901Y032 production: {len(out)} items, " + ", ".join(f"{k}:{len(v)}" for k, v in out.items()))
+    extra = {}
+    for t, c, g in [("901Y034", "I31AA", "I10A"), ("901Y034", "I31AC", "I10A"), ("901Y035", "I32A", "I11B"),
+                    ("901Y035", "I32AO1", "I11B"), ("901Y035", "I32A", "I11A"), ("901Y025", "I31A", None),
+                    ("901Y026", "I33A", None)]:
+        args = [t, "M", "202501", "203012", c] + ([g] if g else [])
+        try:
+            rs = ecos._paged("StatisticSearch", args)
+            extra[f"{t}_{c}_{g}"] = [(r["TIME"], r["DATA_VALUE"], r.get("UNIT_NAME"), r.get("ITEM_NAME2")) for r in rs]
+            say(f"  {t} {c} {g}: " + ", ".join(f"{r['TIME']}={r['DATA_VALUE']}" for r in rs[-4:]) + f" unit {rs[-1].get('UNIT_NAME') if rs else ''}")
+        except Exception as e:  # noqa: BLE001
+            say(f"  {t} {c} {g}: {e!r}"[:300])
+    save("r2_extra.json", extra)
+
+
+def archive():
+    """Round 2: earlier monthly releases on KDI EIEC (for each year's weights)."""
+    for q in ["산업활동동향", "1월 산업활동동향"]:
+        for pg in (1, 2, 3, 4, 5):
+            u = ("https://eiec.kdi.re.kr/policy/materialList.do?pp=50&pg=%d&search_txt=" % pg) + urllib.parse.quote(q)
+            try:
+                html, _ = fetch(u)
+                html = html.decode("utf-8", "replace")
+                save(f"r2_eiec_list_{q[:2]}_{pg}.html", html)
+                hits = re.findall(r"materialView\.do\?num=(\d+)[^>]*>\s*([^<]*산업활동동향[^<]*)<", html)
+                say(f"  {u}: {len(hits)} hits: " + "; ".join(f"{n} {t.strip()}" for n, t in hits[:50]))
+            except Exception as e:  # noqa: BLE001
+                say(f"  {u}: {e!r}"[:300])
+
+
+def weights_years():
+    """Fetch releases listed in r2_nums.txt (num per year) and keep page text that prints 가중치."""
+    f = Path(__file__).with_name("kr_mfg_probe_nums.txt")
+    if not f.exists():
+        return
+    for line in f.read_text().split():
+        num = line.strip()
+        u = f"https://eiec.kdi.re.kr/policy/materialView.do?num={num}"
+        html, _ = fetch(u)
+        html = html.decode("utf-8", "replace")
+        ls = [urllib.parse.urljoin(u, m.replace("&amp;", "&")) for m in re.findall(r"callDownload\.do\?[^\"'\s<>]+", html)]
+        for i, l in enumerate(ls[:2]):
+            b, _ = fetch(l, 180)
+            if b[:4] != b"%PDF":
+                continue
+            p = OUT / f"r2_rel_{num}_{i}.pdf"
+            p.write_bytes(b)
+            import pdfplumber
+            with pdfplumber.open(p) as pdf:
+                for n, pg in enumerate(pdf.pages, 1):
+                    t = pg.extract_text() or ""
+                    if "업종별 생산" in t and "가중치" in t:
+                        save(f"r2_w_{num}_p{n:03d}.txt", t)
+                        say(f"  {num}: weights on page {n}: " + t[:120].replace(chr(10), " "))
+            p.unlink()
+
+
+ROUND = sys.argv[2] if len(sys.argv) > 2 else "1"
+for fn in ((tables, samples, release) if ROUND == "1" else (series2, archive, weights_years)):
     step(fn)
 say(f"\nECOS key: {'sample' if ecos.KEY == 'sample' else 'secret'}; calls {ecos.CALLS['n']}")
 save("summary.txt", "\n".join(LOG))
