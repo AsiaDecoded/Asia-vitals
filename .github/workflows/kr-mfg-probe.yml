@@ -1,0 +1,46 @@
+name: Korea manufacturing source probe (manual)
+
+# One-off helper for the Korea Manufacturing tab (Korea chat, 5 Nov 2026): ECOS tables for production, shipments,
+# inventories, capacity and operating ratio; Statistics Korea's industrial activity release (weights). Saves to the
+# "discovery" branch under discovery/kr_mfg.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - pipeline/tools/kr_mfg_probe.py
+      - .github/workflows/kr-mfg-probe.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kr-mfg-probe
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pdfplumber
+      - name: Probe sources
+        env:
+          ECOS_KEY: ${{ secrets.ECOS_KEY }}
+        run: python -I pipeline/tools/kr_mfg_probe.py discovery/kr_mfg
+      - name: Push results to the discovery branch
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mv discovery /tmp/discovery
+          git fetch origin discovery
+          git checkout -B discovery origin/discovery
+          mkdir -p discovery && rm -rf discovery/kr_mfg && cp -r /tmp/discovery/kr_mfg discovery/
+          git add discovery/kr_mfg
+          git commit -m "Korea manufacturing source probe" || exit 0
+          for i in 1 2 3; do git push origin discovery && break; git pull --rebase origin discovery; done
