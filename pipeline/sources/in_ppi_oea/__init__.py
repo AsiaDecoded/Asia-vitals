@@ -314,6 +314,29 @@ def update(from_file=None, **_):
                                   "yoy": round((c["values"][d] / c["values"][p_] - 1) * 100, 1), "contribution": round(con, 3), "calculated": "y"})
             if abs(tot - (vm[d] / vm[p_] - 1) * 100) > 0.15:   # indices published to one decimal
                 errors.append(f"output PPI contributions {d[:7]}: categories sum to {tot:.2f}, manufactured products y/y {(vm[d] / vm[p_] - 1) * 100:.2f}")
+    # Electricity and the rest of the output PPI (user, 4 Nov 2026), rows below ex-refined petroleum on the bar chart:
+    # electricity is its major group as published; rest = all commodities less manufactured products and electricity
+    # (agriculture, forestry and fishing, and mining), at the published weights. y/y, 3mma and YTD as above.
+    def _stats(v):
+        yy = lambda d: (v[d] / v[_prev_year(d)] - 1) * 100 if d in v and _prev_year(d) in v else None
+        last3 = [d for d in sorted(v) if d <= latest][-3:]
+        cur = [v.get(f"{y0}-{k:02d}-01") for k in range(1, m0 + 1)]
+        prev = [v.get(f"{y0 - 1}-{k:02d}-01") for k in range(1, m0 + 1)]
+        if len(last3) < 3 or None in [yy(d) for d in last3] + cur + prev:
+            return None
+        return {"yoy": round(yy(latest), 1), "m3": round(sum(yy(d) for d in last3) / 3, 1),
+                "ytd": round((sum(cur) / sum(prev) - 1) * 100, 1)}
+    al, el = tidy.get("oppi"), tidy.get("oppi_1400000000")
+    if al and el and mp:
+        rw = al["weight"] - mp["weight"] - el["weight"]
+        rest = {d: (al["weight"] * al["values"][d] - mp["weight"] * mp["values"][d] - el["weight"] * el["values"][d]) / rw
+                for d in al["values"] if d in mp["values"] and d in el["values"]}
+        pos = 1 + sum(1 for g in ppi_groups if g["code"] == "XPET")
+        for code_, name_, w_, v_ in (("REST", "Rest of PPI", rw, rest), ("ELEC", "Electricity", el["weight"], el["values"])):
+            st_ = _stats(v_)
+            if st_ is None:
+                errors.append(f"output PPI {name_}: months missing"); continue
+            ppi_groups.insert(pos, {"date": latest, "code": code_, "name": name_, "weight": round(w_, 5), **st_, "calculated": "y"})
     if errors:
         raise CheckFailed(errors)
     with open(OUT / "in_ppi_contrib_items.csv", "w", newline="") as f:

@@ -557,7 +557,7 @@ dash.calc('ppi_movers', {
     const all = dash.data('in_ppi_mfg_groups').data.map((r) => ({ ...r, yoy: N(r.yoy), m3: N(r.m3), ytd: N(r.ytd) }));
     if (!all.length) { box.replaceChildren(); return; }
     // Manufactured products (bold) and excluding refined petroleum on top, then the 23 groups sorted by 3mma
-    const head = ['1300000000', 'XPET'].map((c) => all.find((r) => r.code === c)).filter(Boolean);
+    const head = ['1300000000', 'XPET', 'ELEC', 'REST'].map((c) => all.find((r) => r.code === c)).filter(Boolean);   // + electricity and rest of PPI (user, 4 Nov 2026)
     const rows = head.concat(all.filter((r) => !head.includes(r)).sort((a, b) => b.m3 - a.m3));
     const S = [{ key: 'm3', name: '3mma', color: 'var(--ad-c2)', bar: true }, { key: 'ytd', name: 'YTD', color: 'var(--ad-c1)', bar: true }];
     legend(id + '-legend', S);
@@ -575,7 +575,7 @@ dash.calc('ppi_movers', {
     rows.forEach((r, i) => {
       const y0 = top + i * rowH + 4;
       svg.append('text').attr('x', lw - 8).attr('y', y0 + bh).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 12)
-        .attr('font-weight', r.code === '1300000000' ? 700 : null).attr('fill', 'var(--ad-ink)').text(r.name);
+        .attr('font-weight', ['1300000000', 'ELEC', 'REST'].includes(r.code) ? 700 : null).attr('fill', 'var(--ad-ink)').text(r.name);
       S.forEach((s, k) => {
         const v = r[s.key]; if (v == null) return;
         svg.append('rect').attr('x', x(Math.min(0, v))).attr('width', Math.abs(x(v) - x(0))).attr('y', y0 + k * bh).attr('height', bh - 1).attr('fill', s.color);
