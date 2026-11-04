@@ -1,0 +1,18 @@
+{
+ "title": "India output PPI by manufacturing group",
+ "description": "Output PPI, manufactured products and its 23 groups (NIC 2-digit), 2022-23 base, latest month: y/y, 3mma (plain average of the latest three months' y/y) and calendar YTD (average index January to the latest month against the same months a year earlier), all calculated from the Office of the Economic Adviser's indices; also manufactured products excluding coke and refined petroleum (code XPET), at the published weights. Built by the AsiaDecoded/asia-vitals pipeline (in_ppi_oea, data/in/ppi/in_ppi_mfg_groups.csv).",
+ "schedule": "Replaced after each monthly release (14th) by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "in_ppi_mfg_groups_M2026-09.csv",
+  "url": "/_blob/cdb05eb2a28755ac11809e0ce7a0b3af"
+ },
+ "updated": {
+  "at": "2026-11-04T03:00:00Z",
+  "by": "Claude"
+ },
+ "edit": {
+  "via": "claude",
+  "at": "2026-11-04T03:00:00Z"
+ }
+}

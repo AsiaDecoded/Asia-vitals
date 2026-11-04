@@ -167,6 +167,384 @@ date,series,label,weight,index
 2026-07-01,oppi_1300000000,Manufactured products,69.9357,108.7
 2026-08-01,oppi_1300000000,Manufactured products,69.9357,109.7
 2026-09-01,oppi_1300000000,Manufactured products,69.9357,111.0
+2023-04-01,oppi_1301000000,(a). manufacture of food products,8.472,97.8
+2023-05-01,oppi_1301000000,(a). manufacture of food products,8.472,96.8
+2023-06-01,oppi_1301000000,(a). manufacture of food products,8.472,96.7
+2023-07-01,oppi_1301000000,(a). manufacture of food products,8.472,97.4
+2023-08-01,oppi_1301000000,(a). manufacture of food products,8.472,98.2
+2023-09-01,oppi_1301000000,(a). manufacture of food products,8.472,98.5
+2023-10-01,oppi_1301000000,(a). manufacture of food products,8.472,98.5
+2023-11-01,oppi_1301000000,(a). manufacture of food products,8.472,99.1
+2023-12-01,oppi_1301000000,(a). manufacture of food products,8.472,98.6
+2024-01-01,oppi_1301000000,(a). manufacture of food products,8.472,97.4
+2024-02-01,oppi_1301000000,(a). manufacture of food products,8.472,97.1
+2024-03-01,oppi_1301000000,(a). manufacture of food products,8.472,97.9
+2024-04-01,oppi_1301000000,(a). manufacture of food products,8.472,98.9
+2024-05-01,oppi_1301000000,(a). manufacture of food products,8.472,99.4
+2024-06-01,oppi_1301000000,(a). manufacture of food products,8.472,100.2
+2024-07-01,oppi_1301000000,(a). manufacture of food products,8.472,100.5
+2024-08-01,oppi_1301000000,(a). manufacture of food products,8.472,101.3
+2024-09-01,oppi_1301000000,(a). manufacture of food products,8.472,103.0
+2024-10-01,oppi_1301000000,(a). manufacture of food products,8.472,105.5
+2024-11-01,oppi_1301000000,(a). manufacture of food products,8.472,106.1
+2024-12-01,oppi_1301000000,(a). manufacture of food products,8.472,105.7
+2025-01-01,oppi_1301000000,(a). manufacture of food products,8.472,105.8
+2025-02-01,oppi_1301000000,(a). manufacture of food products,8.472,106.3
+2025-03-01,oppi_1301000000,(a). manufacture of food products,8.472,106.6
+2025-04-01,oppi_1301000000,(a). manufacture of food products,8.472,106.0
+2025-05-01,oppi_1301000000,(a). manufacture of food products,8.472,105.6
+2025-06-01,oppi_1301000000,(a). manufacture of food products,8.472,105.4
+2025-07-01,oppi_1301000000,(a). manufacture of food products,8.472,105.9
+2025-08-01,oppi_1301000000,(a). manufacture of food products,8.472,107.2
+2025-09-01,oppi_1301000000,(a). manufacture of food products,8.472,107.5
+2025-10-01,oppi_1301000000,(a). manufacture of food products,8.472,107.7
+2025-11-01,oppi_1301000000,(a). manufacture of food products,8.472,107.5
+2025-12-01,oppi_1301000000,(a). manufacture of food products,8.472,107.1
+2026-01-01,oppi_1301000000,(a). manufacture of food products,8.472,107.5
+2026-02-01,oppi_1301000000,(a). manufacture of food products,8.472,108.3
+2026-03-01,oppi_1301000000,(a). manufacture of food products,8.472,109.2
+2026-04-01,oppi_1301000000,(a). manufacture of food products,8.472,111.0
+2026-05-01,oppi_1301000000,(a). manufacture of food products,8.472,112.5
+2026-06-01,oppi_1301000000,(a). manufacture of food products,8.472,113.7
+2026-07-01,oppi_1301000000,(a). manufacture of food products,8.472,115.4
+2026-08-01,oppi_1301000000,(a). manufacture of food products,8.472,117.6
+2026-09-01,oppi_1301000000,(a). manufacture of food products,8.472,117.7
+2023-04-01,oppi_1302000000,(b). manufacture of beverages,0.8417,102.4
+2023-05-01,oppi_1302000000,(b). manufacture of beverages,0.8417,102.8
+2023-06-01,oppi_1302000000,(b). manufacture of beverages,0.8417,102.4
+2023-07-01,oppi_1302000000,(b). manufacture of beverages,0.8417,102.2
+2023-08-01,oppi_1302000000,(b). manufacture of beverages,0.8417,102.3
+2023-09-01,oppi_1302000000,(b). manufacture of beverages,0.8417,102.4
+2023-10-01,oppi_1302000000,(b). manufacture of beverages,0.8417,102.6
+2023-11-01,oppi_1302000000,(b). manufacture of beverages,0.8417,103.2
+2023-12-01,oppi_1302000000,(b). manufacture of beverages,0.8417,103.0
+2024-01-01,oppi_1302000000,(b). manufacture of beverages,0.8417,102.4
+2024-02-01,oppi_1302000000,(b). manufacture of beverages,0.8417,103.5
+2024-03-01,oppi_1302000000,(b). manufacture of beverages,0.8417,104.0
+2024-04-01,oppi_1302000000,(b). manufacture of beverages,0.8417,103.5
+2024-05-01,oppi_1302000000,(b). manufacture of beverages,0.8417,104.2
+2024-06-01,oppi_1302000000,(b). manufacture of beverages,0.8417,104.0
+2024-07-01,oppi_1302000000,(b). manufacture of beverages,0.8417,104.3
+2024-08-01,oppi_1302000000,(b). manufacture of beverages,0.8417,103.9
+2024-09-01,oppi_1302000000,(b). manufacture of beverages,0.8417,104.1
+2024-10-01,oppi_1302000000,(b). manufacture of beverages,0.8417,104.3
+2024-11-01,oppi_1302000000,(b). manufacture of beverages,0.8417,104.4
+2024-12-01,oppi_1302000000,(b). manufacture of beverages,0.8417,104.3
+2025-01-01,oppi_1302000000,(b). manufacture of beverages,0.8417,104.2
+2025-02-01,oppi_1302000000,(b). manufacture of beverages,0.8417,103.5
+2025-03-01,oppi_1302000000,(b). manufacture of beverages,0.8417,103.6
+2025-04-01,oppi_1302000000,(b). manufacture of beverages,0.8417,104.1
+2025-05-01,oppi_1302000000,(b). manufacture of beverages,0.8417,103.7
+2025-06-01,oppi_1302000000,(b). manufacture of beverages,0.8417,104.1
+2025-07-01,oppi_1302000000,(b). manufacture of beverages,0.8417,104.3
+2025-08-01,oppi_1302000000,(b). manufacture of beverages,0.8417,103.9
+2025-09-01,oppi_1302000000,(b). manufacture of beverages,0.8417,104.6
+2025-10-01,oppi_1302000000,(b). manufacture of beverages,0.8417,104.0
+2025-11-01,oppi_1302000000,(b). manufacture of beverages,0.8417,102.8
+2025-12-01,oppi_1302000000,(b). manufacture of beverages,0.8417,102.7
+2026-01-01,oppi_1302000000,(b). manufacture of beverages,0.8417,103.1
+2026-02-01,oppi_1302000000,(b). manufacture of beverages,0.8417,102.7
+2026-03-01,oppi_1302000000,(b). manufacture of beverages,0.8417,102.8
+2026-04-01,oppi_1302000000,(b). manufacture of beverages,0.8417,104.6
+2026-05-01,oppi_1302000000,(b). manufacture of beverages,0.8417,105.0
+2026-06-01,oppi_1302000000,(b). manufacture of beverages,0.8417,105.2
+2026-07-01,oppi_1302000000,(b). manufacture of beverages,0.8417,104.7
+2026-08-01,oppi_1302000000,(b). manufacture of beverages,0.8417,105.8
+2026-09-01,oppi_1302000000,(b). manufacture of beverages,0.8417,106.0
+2023-04-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,103.8
+2023-05-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,103.8
+2023-06-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,103.9
+2023-07-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,104.4
+2023-08-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,104.6
+2023-09-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,104.7
+2023-10-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,104.9
+2023-11-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,104.9
+2023-12-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,104.4
+2024-01-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,104.5
+2024-02-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,104.9
+2024-03-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,105.3
+2024-04-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,106.8
+2024-05-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,106.8
+2024-06-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,106.8
+2024-07-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,106.8
+2024-08-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,107.0
+2024-09-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,107.1
+2024-10-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,106.7
+2024-11-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,107.7
+2024-12-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,107.9
+2025-01-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,108.2
+2025-02-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,109.4
+2025-03-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,110.1
+2025-04-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,109.7
+2025-05-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,109.0
+2025-06-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,109.1
+2025-07-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,110.0
+2025-08-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,110.1
+2025-09-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,110.2
+2025-10-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,110.8
+2025-11-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,112.1
+2025-12-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,112.0
+2026-01-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,111.9
+2026-02-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,125.9
+2026-03-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,125.9
+2026-04-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,125.4
+2026-05-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,125.6
+2026-06-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,128.3
+2026-07-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,128.4
+2026-08-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,127.2
+2026-09-01,oppi_1303000000,(c). manufacture of tobacco products,0.2571,127.1
+2023-04-01,oppi_1304000000,(d). manufacture of textiles,4.3877,94.5
+2023-05-01,oppi_1304000000,(d). manufacture of textiles,4.3877,93.8
+2023-06-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.8
+2023-07-01,oppi_1304000000,(d). manufacture of textiles,4.3877,91.6
+2023-08-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.1
+2023-09-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.8
+2023-10-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.6
+2023-11-01,oppi_1304000000,(d). manufacture of textiles,4.3877,91.8
+2023-12-01,oppi_1304000000,(d). manufacture of textiles,4.3877,91.2
+2024-01-01,oppi_1304000000,(d). manufacture of textiles,4.3877,91.3
+2024-02-01,oppi_1304000000,(d). manufacture of textiles,4.3877,91.5
+2024-03-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.2
+2024-04-01,oppi_1304000000,(d). manufacture of textiles,4.3877,93.1
+2024-05-01,oppi_1304000000,(d). manufacture of textiles,4.3877,93.0
+2024-06-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.9
+2024-07-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.9
+2024-08-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.7
+2024-09-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.7
+2024-10-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.6
+2024-11-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.3
+2024-12-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.4
+2025-01-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.5
+2025-02-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.9
+2025-03-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.2
+2025-04-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.5
+2025-05-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.1
+2025-06-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.5
+2025-07-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.6
+2025-08-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.9
+2025-09-01,oppi_1304000000,(d). manufacture of textiles,4.3877,93.0
+2025-10-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.6
+2025-11-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.6
+2025-12-01,oppi_1304000000,(d). manufacture of textiles,4.3877,92.9
+2026-01-01,oppi_1304000000,(d). manufacture of textiles,4.3877,93.7
+2026-02-01,oppi_1304000000,(d). manufacture of textiles,4.3877,95.0
+2026-03-01,oppi_1304000000,(d). manufacture of textiles,4.3877,97.8
+2026-04-01,oppi_1304000000,(d). manufacture of textiles,4.3877,100.9
+2026-05-01,oppi_1304000000,(d). manufacture of textiles,4.3877,103.9
+2026-06-01,oppi_1304000000,(d). manufacture of textiles,4.3877,105.3
+2026-07-01,oppi_1304000000,(d). manufacture of textiles,4.3877,105.7
+2026-08-01,oppi_1304000000,(d). manufacture of textiles,4.3877,106.3
+2026-09-01,oppi_1304000000,(d). manufacture of textiles,4.3877,108.0
+2023-04-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,101.9
+2023-05-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,101.9
+2023-06-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,102.0
+2023-07-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,102.0
+2023-08-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,102.0
+2023-09-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,102.6
+2023-10-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,102.6
+2023-11-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,102.7
+2023-12-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,102.1
+2024-01-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,102.1
+2024-02-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,102.4
+2024-03-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,101.9
+2024-04-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,103.4
+2024-05-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,103.1
+2024-06-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,103.5
+2024-07-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,103.9
+2024-08-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,104.2
+2024-09-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,104.8
+2024-10-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,105.5
+2024-11-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,105.5
+2024-12-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,105.5
+2025-01-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,105.2
+2025-02-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,105.5
+2025-03-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,106.0
+2025-04-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,107.1
+2025-05-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,106.8
+2025-06-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,108.0
+2025-07-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,107.4
+2025-08-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,108.1
+2025-09-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,107.7
+2025-10-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,107.9
+2025-11-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,109.1
+2025-12-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,109.4
+2026-01-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,108.8
+2026-02-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,108.7
+2026-03-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,108.7
+2026-04-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,109.9
+2026-05-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,110.8
+2026-06-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,111.0
+2026-07-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,110.9
+2026-08-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,111.2
+2026-09-01,oppi_1305000000,(e). manufacture of wearing apparel,1.2049,112.0
+2023-04-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,100.4
+2023-05-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,101.1
+2023-06-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,101.0
+2023-07-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,101.8
+2023-08-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,102.5
+2023-09-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,100.5
+2023-10-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,100.0
+2023-11-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,99.9
+2023-12-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,99.6
+2024-01-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,99.9
+2024-02-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,100.2
+2024-03-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,99.7
+2024-04-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,99.7
+2024-05-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,100.5
+2024-06-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,100.7
+2024-07-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,101.6
+2024-08-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,102.1
+2024-09-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,102.7
+2024-10-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,100.7
+2024-11-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,100.4
+2024-12-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,101.4
+2025-01-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,101.9
+2025-02-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,101.8
+2025-03-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,101.5
+2025-04-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,102.2
+2025-05-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,102.5
+2025-06-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,103.0
+2025-07-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,103.2
+2025-08-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,103.5
+2025-09-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,103.7
+2025-10-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,102.9
+2025-11-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,102.6
+2025-12-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,103.2
+2026-01-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,103.1
+2026-02-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,103.6
+2026-03-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,104.2
+2026-04-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,105.9
+2026-05-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,107.1
+2026-06-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,107.4
+2026-07-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,107.1
+2026-08-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,107.9
+2026-09-01,oppi_1306000000,(f). manufacture of leather and related products,0.4999,107.4
+2023-04-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,102.1
+2023-05-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,102.3
+2023-06-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,101.5
+2023-07-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,101.8
+2023-08-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,101.2
+2023-09-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,102.3
+2023-10-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,102.5
+2023-11-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,102.5
+2023-12-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,103.4
+2024-01-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,103.0
+2024-02-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,102.7
+2024-03-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,102.8
+2024-04-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,102.8
+2024-05-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,102.5
+2024-06-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,102.6
+2024-07-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,103.2
+2024-08-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,102.8
+2024-09-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,104.3
+2024-10-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,104.0
+2024-11-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,104.3
+2024-12-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,104.7
+2025-01-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,105.4
+2025-02-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,105.4
+2025-03-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,105.5
+2025-04-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,105.4
+2025-05-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,106.8
+2025-06-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,106.2
+2025-07-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,107.0
+2025-08-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,106.5
+2025-09-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,107.6
+2025-10-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,107.6
+2025-11-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,108.3
+2025-12-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,107.6
+2026-01-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,108.1
+2026-02-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,108.3
+2026-03-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,110.3
+2026-04-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,113.3
+2026-05-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,113.2
+2026-06-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,113.6
+2026-07-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,113.9
+2026-08-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,113.4
+2026-09-01,oppi_1307000000,"(g). manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",1.0895,113.6
+2023-04-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,94.4
+2023-05-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,93.2
+2023-06-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,90.2
+2023-07-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,88.0
+2023-08-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,88.6
+2023-09-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,89.0
+2023-10-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,88.5
+2023-11-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,87.7
+2023-12-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,87.5
+2024-01-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,88.0
+2024-02-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,89.3
+2024-03-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,88.4
+2024-04-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,88.9
+2024-05-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,89.4
+2024-06-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,89.6
+2024-07-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,90.2
+2024-08-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,91.1
+2024-09-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,91.3
+2024-10-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,91.4
+2024-11-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,90.9
+2024-12-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,90.1
+2025-01-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,91.0
+2025-02-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,91.2
+2025-03-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,91.3
+2025-04-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,91.8
+2025-05-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,91.6
+2025-06-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,91.0
+2025-07-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,91.4
+2025-08-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,91.1
+2025-09-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,91.5
+2025-10-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,91.0
+2025-11-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,90.6
+2025-12-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,90.2
+2026-01-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,90.3
+2026-02-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,90.7
+2026-03-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,91.6
+2026-04-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,93.9
+2026-05-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,94.5
+2026-06-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,94.1
+2026-07-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,94.8
+2026-08-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,95.4
+2026-09-01,oppi_1308000000,(h). manufacture of paper and paper products,1.0313,96.4
+2023-04-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,103.6
+2023-05-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,103.9
+2023-06-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,103.9
+2023-07-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,104.2
+2023-08-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,104.6
+2023-09-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,104.9
+2023-10-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,105.0
+2023-11-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,104.4
+2023-12-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,104.0
+2024-01-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,104.6
+2024-02-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,104.2
+2024-03-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,104.6
+2024-04-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,105.1
+2024-05-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,105.4
+2024-06-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,104.4
+2024-07-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,104.4
+2024-08-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,103.8
+2024-09-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,104.8
+2024-10-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,105.4
+2024-11-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,104.7
+2024-12-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,104.2
+2025-01-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,104.4
+2025-02-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,104.5
+2025-03-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,104.7
+2025-04-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,105.1
+2025-05-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,105.2
+2025-06-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,105.6
+2025-07-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,105.6
+2025-08-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,105.9
+2025-09-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,106.4
+2025-10-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,105.8
+2025-11-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,105.6
+2025-12-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,105.7
+2026-01-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,105.6
+2026-02-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,106.1
+2026-03-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,107.1
+2026-04-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,109.3
+2026-05-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,109.5
+2026-06-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,109.5
+2026-07-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,109.6
+2026-08-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,110.1
+2026-09-01,oppi_1309000000,(i). printing and reproduction of recorded media,0.3093,110.6
 2023-04-01,oppi_1310000000,(j).manufacture of coke and refined petroleum products,7.1482,92.1
 2023-05-01,oppi_1310000000,(j).manufacture of coke and refined petroleum products,7.1482,90.0
 2023-06-01,oppi_1310000000,(j).manufacture of coke and refined petroleum products,7.1482,88.0
@@ -209,6 +587,552 @@ date,series,label,weight,index
 2026-07-01,oppi_1310000000,(j).manufacture of coke and refined petroleum products,7.1482,112.7
 2026-08-01,oppi_1310000000,(j).manufacture of coke and refined petroleum products,7.1482,117.8
 2026-09-01,oppi_1310000000,(j).manufacture of coke and refined petroleum products,7.1482,118.8
+2023-04-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,95.2
+2023-05-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,94.3
+2023-06-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,92.7
+2023-07-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,91.8
+2023-08-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,92.4
+2023-09-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,92.3
+2023-10-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,92.1
+2023-11-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,91.5
+2023-12-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,91.2
+2024-01-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,91.2
+2024-02-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,90.9
+2024-03-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,90.9
+2024-04-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,90.7
+2024-05-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,91.1
+2024-06-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,91.7
+2024-07-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,92.5
+2024-08-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,92.0
+2024-09-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,90.8
+2024-10-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,90.7
+2024-11-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,90.9
+2024-12-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,91.1
+2025-01-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,91.7
+2025-02-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,91.9
+2025-03-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,91.8
+2025-04-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,91.2
+2025-05-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,90.8
+2025-06-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,91.3
+2025-07-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,91.1
+2025-08-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,91.3
+2025-09-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,91.1
+2025-10-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,91.0
+2025-11-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,90.8
+2025-12-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,90.7
+2026-01-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,91.5
+2026-02-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,92.2
+2026-03-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,97.3
+2026-04-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,103.3
+2026-05-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,104.1
+2026-06-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,104.3
+2026-07-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,103.1
+2026-08-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,104.3
+2026-09-01,oppi_1311000000,(k). manufacture of chemicals and chemical products,5.7479,106.3
+2023-04-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,100.8
+2023-05-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,102.3
+2023-06-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,102.0
+2023-07-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,102.1
+2023-08-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,103.1
+2023-09-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,100.9
+2023-10-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,99.4
+2023-11-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,100.6
+2023-12-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,100.0
+2024-01-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,100.3
+2024-02-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,100.9
+2024-03-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,101.2
+2024-04-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,99.8
+2024-05-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,98.3
+2024-06-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,99.4
+2024-07-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,99.7
+2024-08-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,99.5
+2024-09-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,99.0
+2024-10-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,99.1
+2024-11-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,99.2
+2024-12-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,99.9
+2025-01-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,99.1
+2025-02-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,99.1
+2025-03-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,99.2
+2025-04-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,99.3
+2025-05-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,98.5
+2025-06-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,100.4
+2025-07-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,100.0
+2025-08-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,101.0
+2025-09-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,101.0
+2025-10-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,101.2
+2025-11-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,101.1
+2025-12-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,100.8
+2026-01-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,100.7
+2026-02-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,100.6
+2026-03-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,101.8
+2026-04-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,103.2
+2026-05-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,103.6
+2026-06-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,103.7
+2026-07-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,104.2
+2026-08-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,104.2
+2026-09-01,oppi_1312000000,(l). manufacture of basic pharmaceutical products and pharmaceutical preparations,1.9281,104.7
+2023-04-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,96.7
+2023-05-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,96.1
+2023-06-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,95.8
+2023-07-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,94.4
+2023-08-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,94.9
+2023-09-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,95.1
+2023-10-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,94.8
+2023-11-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,94.3
+2023-12-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,93.8
+2024-01-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,94.0
+2024-02-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,94.2
+2024-03-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,94.3
+2024-04-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,95.1
+2024-05-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,95.3
+2024-06-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,96.2
+2024-07-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,97.3
+2024-08-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,97.0
+2024-09-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,96.7
+2024-10-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,96.8
+2024-11-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,96.8
+2024-12-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,96.6
+2025-01-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,96.8
+2025-02-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,97.1
+2025-03-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,96.8
+2025-04-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,96.4
+2025-05-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,96.0
+2025-06-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,96.6
+2025-07-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,96.4
+2025-08-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,96.7
+2025-09-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,96.0
+2025-10-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,96.0
+2025-11-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,95.9
+2025-12-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,95.7
+2026-01-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,95.9
+2026-02-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,96.9
+2026-03-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,102.5
+2026-04-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,106.7
+2026-05-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,107.0
+2026-06-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,107.4
+2026-07-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,107.3
+2026-08-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,108.1
+2026-09-01,oppi_1313000000,(m). manufacture of rubber and plastics products,2.5725,109.5
+2023-04-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,99.4
+2023-05-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,99.2
+2023-06-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,98.6
+2023-07-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,98.7
+2023-08-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,98.9
+2023-09-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,99.1
+2023-10-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,100.6
+2023-11-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,100.2
+2023-12-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,99.1
+2024-01-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,98.2
+2024-02-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,98.0
+2024-03-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,96.9
+2024-04-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,97.0
+2024-05-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,96.1
+2024-06-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,95.5
+2024-07-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,94.7
+2024-08-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,94.3
+2024-09-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,95.7
+2024-10-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,95.2
+2024-11-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,95.0
+2024-12-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,95.9
+2025-01-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,96.1
+2025-02-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,96.6
+2025-03-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,96.4
+2025-04-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,96.7
+2025-05-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,97.3
+2025-06-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,97.2
+2025-07-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,96.7
+2025-08-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,96.7
+2025-09-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,96.2
+2025-10-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,96.0
+2025-11-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,95.9
+2025-12-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,95.6
+2026-01-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,96.0
+2026-02-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,95.8
+2026-03-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,96.4
+2026-04-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,99.0
+2026-05-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,99.1
+2026-06-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,99.8
+2026-07-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,100.1
+2026-08-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,99.7
+2026-09-01,oppi_1314000000,(n). manufacture of other non-metallic mineral products,2.5044,100.4
+2023-04-01,oppi_1315000000,(o). manufacture of basic metals,7.465,98.1
+2023-05-01,oppi_1315000000,(o). manufacture of basic metals,7.465,96.3
+2023-06-01,oppi_1315000000,(o). manufacture of basic metals,7.465,94.1
+2023-07-01,oppi_1315000000,(o). manufacture of basic metals,7.465,93.4
+2023-08-01,oppi_1315000000,(o). manufacture of basic metals,7.465,92.3
+2023-09-01,oppi_1315000000,(o). manufacture of basic metals,7.465,94.1
+2023-10-01,oppi_1315000000,(o). manufacture of basic metals,7.465,94.1
+2023-11-01,oppi_1315000000,(o). manufacture of basic metals,7.465,92.7
+2023-12-01,oppi_1315000000,(o). manufacture of basic metals,7.465,91.8
+2024-01-01,oppi_1315000000,(o). manufacture of basic metals,7.465,91.8
+2024-02-01,oppi_1315000000,(o). manufacture of basic metals,7.465,90.8
+2024-03-01,oppi_1315000000,(o). manufacture of basic metals,7.465,90.5
+2024-04-01,oppi_1315000000,(o). manufacture of basic metals,7.465,92.8
+2024-05-01,oppi_1315000000,(o). manufacture of basic metals,7.465,95.5
+2024-06-01,oppi_1315000000,(o). manufacture of basic metals,7.465,95.5
+2024-07-01,oppi_1315000000,(o). manufacture of basic metals,7.465,92.9
+2024-08-01,oppi_1315000000,(o). manufacture of basic metals,7.465,91.1
+2024-09-01,oppi_1315000000,(o). manufacture of basic metals,7.465,90.3
+2024-10-01,oppi_1315000000,(o). manufacture of basic metals,7.465,92.1
+2024-11-01,oppi_1315000000,(o). manufacture of basic metals,7.465,91.5
+2024-12-01,oppi_1315000000,(o). manufacture of basic metals,7.465,90.3
+2025-01-01,oppi_1315000000,(o). manufacture of basic metals,7.465,90.4
+2025-02-01,oppi_1315000000,(o). manufacture of basic metals,7.465,91.0
+2025-03-01,oppi_1315000000,(o). manufacture of basic metals,7.465,91.9
+2025-04-01,oppi_1315000000,(o). manufacture of basic metals,7.465,92.8
+2025-05-01,oppi_1315000000,(o). manufacture of basic metals,7.465,92.0
+2025-06-01,oppi_1315000000,(o). manufacture of basic metals,7.465,91.2
+2025-07-01,oppi_1315000000,(o). manufacture of basic metals,7.465,90.4
+2025-08-01,oppi_1315000000,(o). manufacture of basic metals,7.465,90.6
+2025-09-01,oppi_1315000000,(o). manufacture of basic metals,7.465,90.1
+2025-10-01,oppi_1315000000,(o). manufacture of basic metals,7.465,90.2
+2025-11-01,oppi_1315000000,(o). manufacture of basic metals,7.465,90.0
+2025-12-01,oppi_1315000000,(o). manufacture of basic metals,7.465,90.8
+2026-01-01,oppi_1315000000,(o). manufacture of basic metals,7.465,94.3
+2026-02-01,oppi_1315000000,(o). manufacture of basic metals,7.465,96.6
+2026-03-01,oppi_1315000000,(o). manufacture of basic metals,7.465,99.0
+2026-04-01,oppi_1315000000,(o). manufacture of basic metals,7.465,102.7
+2026-05-01,oppi_1315000000,(o). manufacture of basic metals,7.465,104.3
+2026-06-01,oppi_1315000000,(o). manufacture of basic metals,7.465,101.0
+2026-07-01,oppi_1315000000,(o). manufacture of basic metals,7.465,101.8
+2026-08-01,oppi_1315000000,(o). manufacture of basic metals,7.465,100.6
+2026-09-01,oppi_1315000000,(o). manufacture of basic metals,7.465,105.7
+2023-04-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,99.8
+2023-05-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,99.4
+2023-06-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,99.2
+2023-07-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.4
+2023-08-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,97.9
+2023-09-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.2
+2023-10-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.7
+2023-11-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.3
+2023-12-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,97.8
+2024-01-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,97.8
+2024-02-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,97.2
+2024-03-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,97.8
+2024-04-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.8
+2024-05-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,99.7
+2024-06-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,100.0
+2024-07-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,99.3
+2024-08-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,99.1
+2024-09-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.5
+2024-10-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.6
+2024-11-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.5
+2024-12-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.9
+2025-01-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.5
+2025-02-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.9
+2025-03-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.8
+2025-04-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.5
+2025-05-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.4
+2025-06-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.4
+2025-07-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.1
+2025-08-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.0
+2025-09-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.3
+2025-10-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.1
+2025-11-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.1
+2025-12-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,98.5
+2026-01-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,99.3
+2026-02-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,100.4
+2026-03-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,101.1
+2026-04-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,102.3
+2026-05-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,103.3
+2026-06-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,103.3
+2026-07-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,103.9
+2026-08-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,103.7
+2026-09-01,oppi_1316000000,"(p). manufacture of fabricated metal products, except machinery and equipment",3.152,104.9
+2023-04-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,93.9
+2023-05-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,102.0
+2023-06-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,99.3
+2023-07-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,98.8
+2023-08-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,99.0
+2023-09-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,98.6
+2023-10-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,95.7
+2023-11-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,87.9
+2023-12-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,96.8
+2024-01-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,95.6
+2024-02-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,96.4
+2024-03-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,95.5
+2024-04-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,97.0
+2024-05-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,94.9
+2024-06-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,95.2
+2024-07-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,98.2
+2024-08-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,97.3
+2024-09-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,98.6
+2024-10-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,98.4
+2024-11-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,98.5
+2024-12-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,98.4
+2025-01-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,103.6
+2025-02-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,104.3
+2025-03-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,106.4
+2025-04-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,106.5
+2025-05-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,107.1
+2025-06-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,107.8
+2025-07-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,109.5
+2025-08-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,109.4
+2025-09-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,101.7
+2025-10-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,102.6
+2025-11-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,101.9
+2025-12-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,103.9
+2026-01-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,104.4
+2026-02-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,104.6
+2026-03-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,104.6
+2026-04-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,104.3
+2026-05-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,104.9
+2026-06-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,104.7
+2026-07-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,105.0
+2026-08-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,106.1
+2026-09-01,oppi_1317000000,"(q). manufacture of computer, electronic and optical products",1.7748,105.8
+2023-04-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,99.8
+2023-05-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,100.0
+2023-06-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,99.6
+2023-07-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,99.6
+2023-08-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,99.2
+2023-09-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,98.5
+2023-10-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,99.3
+2023-11-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,99.1
+2023-12-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,99.0
+2024-01-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,99.1
+2024-02-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,98.7
+2024-03-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,99.1
+2024-04-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,99.0
+2024-05-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,99.2
+2024-06-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,99.7
+2024-07-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,99.9
+2024-08-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,100.0
+2024-09-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,99.9
+2024-10-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,99.8
+2024-11-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,99.3
+2024-12-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,99.4
+2025-01-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,99.3
+2025-02-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,100.4
+2025-03-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,100.7
+2025-04-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,100.8
+2025-05-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,100.5
+2025-06-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,100.6
+2025-07-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,100.7
+2025-08-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,101.4
+2025-09-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,101.4
+2025-10-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,101.7
+2025-11-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,102.3
+2025-12-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,102.7
+2026-01-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,103.1
+2026-02-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,104.0
+2026-03-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,104.4
+2026-04-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,105.7
+2026-05-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,107.2
+2026-06-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,107.9
+2026-07-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,108.3
+2026-08-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,109.0
+2026-09-01,oppi_1318000000,(r). manufacture of electrical equipment,3.8145,109.6
+2023-04-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.1
+2023-05-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.2
+2023-06-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.4
+2023-07-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,101.4
+2023-08-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.0
+2023-09-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.5
+2023-10-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.3
+2023-11-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.2
+2023-12-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.5
+2024-01-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.5
+2024-02-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.9
+2024-03-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.8
+2024-04-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.9
+2024-05-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.7
+2024-06-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.6
+2024-07-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.6
+2024-08-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.3
+2024-09-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.6
+2024-10-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.8
+2024-11-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.6
+2024-12-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,103.0
+2025-01-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,103.3
+2025-02-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.9
+2025-03-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,103.2
+2025-04-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,103.1
+2025-05-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,102.8
+2025-06-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,103.6
+2025-07-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,103.5
+2025-08-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,103.8
+2025-09-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,103.9
+2025-10-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,104.0
+2025-11-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,103.8
+2025-12-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,104.1
+2026-01-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,104.1
+2026-02-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,104.7
+2026-03-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,104.8
+2026-04-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,105.7
+2026-05-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,105.7
+2026-06-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,105.6
+2026-07-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,106.4
+2026-08-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,106.9
+2026-09-01,oppi_1319000000,(s). manufacture of machinery and equipment n.e.c.,2.4616,106.9
+2023-04-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,102.2
+2023-05-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,102.6
+2023-06-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,105.2
+2023-07-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,104.6
+2023-08-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,105.2
+2023-09-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,105.3
+2023-10-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,105.7
+2023-11-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,106.5
+2023-12-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,106.2
+2024-01-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,105.8
+2024-02-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,105.9
+2024-03-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,105.9
+2024-04-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,106.4
+2024-05-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,106.7
+2024-06-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,106.4
+2024-07-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,106.3
+2024-08-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,106.0
+2024-09-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,105.3
+2024-10-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,105.4
+2024-11-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,105.1
+2024-12-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,104.6
+2025-01-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,105.4
+2025-02-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,104.7
+2025-03-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,105.0
+2025-04-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,106.0
+2025-05-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,106.4
+2025-06-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,105.6
+2025-07-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,105.9
+2025-08-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,105.8
+2025-09-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,105.5
+2025-10-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,106.2
+2025-11-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,106.1
+2025-12-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,105.9
+2026-01-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,106.4
+2026-02-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,106.9
+2026-03-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,106.6
+2026-04-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,107.4
+2026-05-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,107.2
+2026-06-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,108.5
+2026-07-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,108.9
+2026-08-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,109.1
+2026-09-01,oppi_1320000000,"(t). manufacture of motor vehicles, trailers and semi-trailers",4.3932,109.9
+2023-04-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,101.3
+2023-05-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,101.3
+2023-06-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,101.6
+2023-07-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,101.9
+2023-08-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,101.5
+2023-09-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,102.6
+2023-10-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,102.6
+2023-11-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,102.6
+2023-12-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,102.6
+2024-01-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,102.5
+2024-02-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,102.0
+2024-03-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,102.1
+2024-04-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,102.0
+2024-05-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,101.9
+2024-06-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,101.0
+2024-07-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,101.3
+2024-08-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,101.4
+2024-09-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,101.3
+2024-10-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,101.5
+2024-11-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,101.8
+2024-12-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,102.1
+2025-01-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,103.0
+2025-02-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,103.5
+2025-03-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,103.6
+2025-04-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,103.6
+2025-05-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,103.3
+2025-06-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,103.3
+2025-07-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,104.0
+2025-08-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,104.4
+2025-09-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,105.0
+2025-10-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,105.0
+2025-11-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,105.1
+2025-12-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,105.4
+2026-01-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,106.0
+2026-02-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,106.1
+2026-03-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,106.4
+2026-04-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,107.2
+2026-05-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,107.6
+2026-06-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,108.5
+2026-07-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,109.3
+2026-08-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,110.4
+2026-09-01,oppi_1321000000,(u). manufacture of other transport equipment,1.3439,110.2
+2023-04-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.7
+2023-05-01,oppi_1322000000,(v). manufacture of furniture,0.7357,102.0
+2023-06-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.9
+2023-07-01,oppi_1322000000,(v). manufacture of furniture,0.7357,100.9
+2023-08-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.6
+2023-09-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.5
+2023-10-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.2
+2023-11-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.2
+2023-12-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.7
+2024-01-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.5
+2024-02-01,oppi_1322000000,(v). manufacture of furniture,0.7357,100.9
+2024-03-01,oppi_1322000000,(v). manufacture of furniture,0.7357,100.8
+2024-04-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.2
+2024-05-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.7
+2024-06-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.2
+2024-07-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.4
+2024-08-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.0
+2024-09-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.7
+2024-10-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.2
+2024-11-01,oppi_1322000000,(v). manufacture of furniture,0.7357,102.2
+2024-12-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.9
+2025-01-01,oppi_1322000000,(v). manufacture of furniture,0.7357,102.6
+2025-02-01,oppi_1322000000,(v). manufacture of furniture,0.7357,102.7
+2025-03-01,oppi_1322000000,(v). manufacture of furniture,0.7357,102.6
+2025-04-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.9
+2025-05-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.1
+2025-06-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.6
+2025-07-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.9
+2025-08-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.0
+2025-09-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.1
+2025-10-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.2
+2025-11-01,oppi_1322000000,(v). manufacture of furniture,0.7357,101.5
+2025-12-01,oppi_1322000000,(v). manufacture of furniture,0.7357,103.1
+2026-01-01,oppi_1322000000,(v). manufacture of furniture,0.7357,102.9
+2026-02-01,oppi_1322000000,(v). manufacture of furniture,0.7357,103.2
+2026-03-01,oppi_1322000000,(v). manufacture of furniture,0.7357,103.7
+2026-04-01,oppi_1322000000,(v). manufacture of furniture,0.7357,105.3
+2026-05-01,oppi_1322000000,(v). manufacture of furniture,0.7357,104.9
+2026-06-01,oppi_1322000000,(v). manufacture of furniture,0.7357,104.7
+2026-07-01,oppi_1322000000,(v). manufacture of furniture,0.7357,104.8
+2026-08-01,oppi_1322000000,(v). manufacture of furniture,0.7357,104.6
+2026-09-01,oppi_1322000000,(v). manufacture of furniture,0.7357,105.0
+2023-04-01,oppi_1323000000,(w). other manufacturing,6.8006,101.9
+2023-05-01,oppi_1323000000,(w). other manufacturing,6.8006,102.4
+2023-06-01,oppi_1323000000,(w). other manufacturing,6.8006,100.4
+2023-07-01,oppi_1323000000,(w). other manufacturing,6.8006,101.5
+2023-08-01,oppi_1323000000,(w). other manufacturing,6.8006,101.6
+2023-09-01,oppi_1323000000,(w). other manufacturing,6.8006,100.4
+2023-10-01,oppi_1323000000,(w). other manufacturing,6.8006,101.0
+2023-11-01,oppi_1323000000,(w). other manufacturing,6.8006,102.1
+2023-12-01,oppi_1323000000,(w). other manufacturing,6.8006,100.6
+2024-01-01,oppi_1323000000,(w). other manufacturing,6.8006,101.1
+2024-02-01,oppi_1323000000,(w). other manufacturing,6.8006,100.9
+2024-03-01,oppi_1323000000,(w). other manufacturing,6.8006,101.3
+2024-04-01,oppi_1323000000,(w). other manufacturing,6.8006,103.3
+2024-05-01,oppi_1323000000,(w). other manufacturing,6.8006,103.0
+2024-06-01,oppi_1323000000,(w). other manufacturing,6.8006,103.1
+2024-07-01,oppi_1323000000,(w). other manufacturing,6.8006,102.5
+2024-08-01,oppi_1323000000,(w). other manufacturing,6.8006,101.4
+2024-09-01,oppi_1323000000,(w). other manufacturing,6.8006,102.1
+2024-10-01,oppi_1323000000,(w). other manufacturing,6.8006,102.8
+2024-11-01,oppi_1323000000,(w). other manufacturing,6.8006,104.1
+2024-12-01,oppi_1323000000,(w). other manufacturing,6.8006,102.9
+2025-01-01,oppi_1323000000,(w). other manufacturing,6.8006,104.0
+2025-02-01,oppi_1323000000,(w). other manufacturing,6.8006,105.4
+2025-03-01,oppi_1323000000,(w). other manufacturing,6.8006,105.4
+2025-04-01,oppi_1323000000,(w). other manufacturing,6.8006,107.2
+2025-05-01,oppi_1323000000,(w). other manufacturing,6.8006,108.8
+2025-06-01,oppi_1323000000,(w). other manufacturing,6.8006,108.4
+2025-07-01,oppi_1323000000,(w). other manufacturing,6.8006,107.7
+2025-08-01,oppi_1323000000,(w). other manufacturing,6.8006,107.5
+2025-09-01,oppi_1323000000,(w). other manufacturing,6.8006,108.4
+2025-10-01,oppi_1323000000,(w). other manufacturing,6.8006,109.7
+2025-11-01,oppi_1323000000,(w). other manufacturing,6.8006,111.1
+2025-12-01,oppi_1323000000,(w). other manufacturing,6.8006,114.1
+2026-01-01,oppi_1323000000,(w). other manufacturing,6.8006,115.9
+2026-02-01,oppi_1323000000,(w). other manufacturing,6.8006,118.3
+2026-03-01,oppi_1323000000,(w). other manufacturing,6.8006,119.9
+2026-04-01,oppi_1323000000,(w). other manufacturing,6.8006,120.9
+2026-05-01,oppi_1323000000,(w). other manufacturing,6.8006,122.2
+2026-06-01,oppi_1323000000,(w). other manufacturing,6.8006,121.5
+2026-07-01,oppi_1323000000,(w). other manufacturing,6.8006,120.7
+2026-08-01,oppi_1323000000,(w). other manufacturing,6.8006,120.6
+2026-09-01,oppi_1323000000,(w). other manufacturing,6.8006,122.8
 2023-04-01,oppi_1400000000,Electricity,4.4872,96.8
 2023-05-01,oppi_1400000000,Electricity,4.4872,94.0
 2023-06-01,oppi_1400000000,Electricity,4.4872,94.9

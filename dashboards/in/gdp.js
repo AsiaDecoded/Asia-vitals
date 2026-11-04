@@ -521,6 +521,50 @@ dash.calc('iip_movers', {
         J.showTip(card, tip, r.name, S.map((s) => [s.color, s.name, pct(r[s.key])]), ev.clientX - cr.left, ev.clientY - cr.top);
       })
       .on('mouseleave', () => { hl.attr('display', 'none'); tip.style.display = 'none'; });
+  }  // Output PPI, manufactured products by group (user, 4 Nov 2026), as the IIP bar charts: 3mma = plain average of the
+  // latest three months' y/y, YTD = calendar year to date (average index vs the same months a year earlier); y/y
+  // calculated from the OEA's indices (in_ppi_oea, in_ppi_mfg_groups.csv).
+  function mfgPpiDiv() {
+    const id = 'mfg-ppidiv', box = document.getElementById(id + '-chart');
+    if (!status(box, ['in_ppi_mfg_groups'])) { legend(id + '-legend', []); return; }
+    const all = dash.data('in_ppi_mfg_groups').data.map((r) => ({ ...r, yoy: N(r.yoy), m3: N(r.m3), ytd: N(r.ytd) }));
+    if (!all.length) { box.replaceChildren(); return; }
+    // Manufactured products (bold) and excluding refined petroleum on top, then the 23 groups sorted by 3mma
+    const head = ['1300000000', 'XPET'].map((c) => all.find((r) => r.code === c)).filter(Boolean);
+    const rows = head.concat(all.filter((r) => !head.includes(r)).sort((a, b) => b.m3 - a.m3));
+    const S = [{ key: 'm3', name: '3mma', color: 'var(--ad-c2)', bar: true }, { key: 'ytd', name: 'YTD', color: 'var(--ad-c1)', bar: true }];
+    legend(id + '-legend', S);
+    const top = 6, rowH = 26, H = top + rows.length * rowH + 22, W = box.clientWidth;
+    box.replaceChildren();
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const lw = Math.min(W * 0.42, J.textWidth(svg, rows.map((r) => r.name)) + 12);
+    const vals = rows.flatMap((r) => [r.m3, r.ytd]).filter((v) => v != null);
+    const x = d3.scaleLinear([Math.min(0, d3.min(vals)), Math.max(0, d3.max(vals))], [lw, W - 8]).nice();
+    const ticks = x.ticks(Math.max(2, Math.floor((W - lw) / 70)));
+    svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', x).attr('x2', x).attr('y1', top).attr('y2', H - 20)
+      .attr('stroke', (v) => (v === 0 ? 'var(--cds-chart-reference)' : 'var(--ad-grid)'));
+    J.axisStyle(svg.append('g').attr('transform', `translate(0,${H - 18})`).call(d3.axisBottom(x).tickValues(ticks).tickSize(0).tickFormat(d3.format('.0f'))));
+    const bh = (rowH - 8) / 2;
+    rows.forEach((r, i) => {
+      const y0 = top + i * rowH + 4;
+      svg.append('text').attr('x', lw - 8).attr('y', y0 + bh).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 12)
+        .attr('font-weight', r.code === '1300000000' ? 700 : null).attr('fill', 'var(--ad-ink)').text(r.name);
+      S.forEach((s, k) => {
+        const v = r[s.key]; if (v == null) return;
+        svg.append('rect').attr('x', x(Math.min(0, v))).attr('width', Math.abs(x(v) - x(0))).attr('y', y0 + k * bh).attr('height', bh - 1).attr('fill', s.color);
+      });
+    });
+    svg.append('line').attr('x1', 0).attr('x2', W - 8).attr('y1', top + head.length * rowH).attr('y2', top + head.length * rowH).attr('stroke', 'var(--ad-axis)');
+    const card = document.getElementById(id), tip = J.tip(card);
+    const hl = svg.append('rect').attr('x', 0).attr('width', W).attr('height', rowH).attr('fill', 'var(--cds-chart-reference)').attr('opacity', 0.12).attr('display', 'none');
+    svg.append('rect').attr('x', 0).attr('y', top).attr('width', W).attr('height', rows.length * rowH).attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const [, my] = d3.pointer(ev); const i = Math.max(0, Math.min(rows.length - 1, Math.floor((my - top) / rowH))); const r = rows[i];
+        hl.attr('display', null).attr('y', top + i * rowH);
+        const cr = card.getBoundingClientRect();
+        J.showTip(card, tip, r.name, S.map((s) => [s.color, s.name, pct(r[s.key])]), ev.clientX - cr.left, ev.clientY - cr.top);
+      })
+      .on('mouseleave', () => { hl.attr('display', 'none'); tip.style.display = 'none'; });
   }
   function mfgDiv() {
     const id = 'mfg-div', box = document.getElementById(id + '-chart');
@@ -896,7 +940,7 @@ dash.calc('iip_movers', {
       el.textContent = el.id === 'mfg-month' ? (v || '') : (v == null ? '—' : Number(v).toFixed(1));
     });
   }
-  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgTiles(); mfgIipM(); mfgIip(); mfgDiv(); mfgUse(); mfgUseContrib(); mfgElec(); mfgContrib(); mfgShare(); mfgGva(); mfgCu(); mfgPrices(); } };
+  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgTiles(); mfgIipM(); mfgIip(); mfgDiv(); mfgUse(); mfgUseContrib(); mfgElec(); mfgContrib(); mfgShare(); mfgGva(); mfgCu(); mfgPrices(); mfgPpiDiv(); } };
 
   J.redrawGdp = () => {
     J.redrawMfg();

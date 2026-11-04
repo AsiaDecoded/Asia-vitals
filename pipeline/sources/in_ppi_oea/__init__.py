@@ -41,6 +41,16 @@ FILES = {"wpi": r"indx_download_2223/wpi_monthly_index_\d{6}\.xlsx",
 LINK_FY = 2024  # financial year 2024-25 (Apr 2024 - Mar 2025), as the OEA's WPI linking factor
 OEA_WPI_LINK = 1.53
 OEA_WPI_MFG_LINK = 1.44   # OEA, linking factor 2011-12 to 2022-23, manufactured products (linking_factor2223.asp)
+# Short names for the output PPI groups of manufactured products (NIC 2-digit divisions), as on the IIP charts
+PPI_SHORT = {"1300000000": "Manufactured products", "1301000000": "Food products", "1302000000": "Beverages",
+             "1303000000": "Tobacco products", "1304000000": "Textiles", "1305000000": "Wearing apparel",
+             "1306000000": "Leather", "1307000000": "Wood and wood products", "1308000000": "Paper",
+             "1309000000": "Printing and recorded media", "1310000000": "Coke and refined petroleum",
+             "1311000000": "Chemicals", "1312000000": "Pharmaceuticals", "1313000000": "Rubber and plastics",
+             "1314000000": "Non-metallic minerals", "1315000000": "Basic metals", "1316000000": "Fabricated metal products",
+             "1317000000": "Computer, electronic and optical", "1318000000": "Electrical equipment",
+             "1319000000": "Machinery and equipment n.e.c.", "1320000000": "Motor vehicles", "1321000000": "Other transport equipment",
+             "1322000000": "Furniture", "1323000000": "Other manufacturing"}
 RELEASE_DAY = 14
 MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
@@ -89,13 +99,14 @@ def _sheet(xbytes):
 def _tidy(raw):
     """{series key: {"label", "weight", "values": {YYYY-MM-01: index}}}."""
     out = {}
-    # Output PPI: All commodities, the four major groups and coke and refined petroleum products.
+    # Output PPI: All commodities, the four major groups and the 23 groups of manufactured products (for the
+    # Manufacturing tab: PPI excluding refined petroleum, and the bar chart by group; user, 4 Nov 2026).
     rows = _sheet(raw["oppi"]["bytes"])
     hdr = rows[0]
     for r in rows[1:]:
         # plus coke and refined petroleum products (group 1310000000), for the output PPI for manufactured products
         # excluding refined petroleum on the Manufacturing tab (user, 4 Nov 2026)
-        if r[0] in ("All", "Major Group") or (r[0] == "Group" and str(r[1]).strip() == "1310000000"):
+        if r[0] in ("All", "Major Group") or (r[0] == "Group" and str(r[1]).strip().startswith("13")):
             key = "oppi" if r[0] == "All" else f"oppi_{int(r[1])}"
             out[key] = {"label": str(r[2]).strip().capitalize(), "weight": _num(r[3]),
                         "values": {_month(h): _num(v) for h, v in zip(hdr[4:], r[4:]) if _month(h) and _num(v) is not None}}
@@ -243,6 +254,46 @@ def update(from_file=None, **_):
             p = _prev_year(m)
             yoy = "" if p not in wpi_mfg else round((wpi_mfg[m] / wpi_mfg[p] - 1) * 100, 1)
             w.writerow([m, round(wpi_mfg[m], 3), yoy, "WPI 2022-23" if m >= mfg_first else "WPI 2011-12 / 1.44"])
+
+    # Output PPI, manufactured products by group (user, 4 Nov 2026), as the IIP bar charts: 3mma = plain average of
+    # the latest three months' y/y (calculated from the published indices; the OEA publishes no PPI growth rates),
+    # YTD = average index January to the latest month against the same months a year earlier.
+    ppi_groups = []
+    y0, m0 = int(latest[:4]), int(latest[5:7])
+    for key, s_ in tidy.items():
+        if not (key == "oppi_1300000000" or (key.startswith("oppi_13") and key != "oppi_1300000000")):
+            continue
+        v = s_["values"]
+        yy = lambda d: (v[d] / v[_prev_year(d)] - 1) * 100 if d in v and _prev_year(d) in v else None
+        last3 = [d for d in sorted(v) if d <= latest][-3:]
+        y3 = [yy(d) for d in last3]
+        cur = [v.get(f"{y0}-{k:02d}-01") for k in range(1, m0 + 1)]
+        prev = [v.get(f"{y0 - 1}-{k:02d}-01") for k in range(1, m0 + 1)]
+        if len(last3) < 3 or None in y3 or None in cur or None in prev:
+            errors.append(f"output PPI {key}: months missing"); continue
+        gcode = key.replace("oppi_", "")
+        ppi_groups.append({"date": latest, "code": gcode, "name": PPI_SHORT.get(gcode, s_["label"]),
+                           "weight": s_["weight"], "yoy": round(yy(latest), 1), "m3": round(sum(y3) / 3, 1),
+                           "ytd": round((sum(cur) / sum(prev) - 1) * 100, 1), "calculated": "y"})
+    # PPI excluding refined petroleum: manufactured products less coke and refined petroleum, at the published weights
+    mp, ck = tidy.get("oppi_1300000000"), tidy.get("oppi_1310000000")
+    if mp and ck:
+        W, Wc = mp["weight"], ck["weight"]
+        v = {d: (W * mp["values"][d] - Wc * ck["values"][d]) / (W - Wc) for d in mp["values"] if d in ck["values"]}
+        yy = lambda d: (v[d] / v[_prev_year(d)] - 1) * 100 if d in v and _prev_year(d) in v else None
+        last3 = [d for d in sorted(v) if d <= latest][-3:]
+        cur = [v.get(f"{y0}-{k:02d}-01") for k in range(1, m0 + 1)]
+        prev = [v.get(f"{y0 - 1}-{k:02d}-01") for k in range(1, m0 + 1)]
+        if len(last3) == 3 and None not in [yy(d) for d in last3] + cur + prev:
+            ppi_groups.insert(1, {"date": latest, "code": "XPET", "name": "Excluding refined petroleum", "weight": round(W - Wc, 5),
+                                  "yoy": round(yy(latest), 1), "m3": round(sum(yy(d) for d in last3) / 3, 1),
+                                  "ytd": round((sum(cur) / sum(prev) - 1) * 100, 1), "calculated": "y"})
+    if errors:
+        raise CheckFailed(errors)
+    with open(OUT / "in_ppi_mfg_groups.csv", "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(ppi_groups[0]), lineterminator="\n")
+        w.writeheader()
+        w.writerows(ppi_groups)
 
     def long_rows():
         for key, s in tidy.items():

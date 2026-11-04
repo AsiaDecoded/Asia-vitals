@@ -1,14 +1,14 @@
 {
- "description": "Output PPI (All commodities, major groups, and coke and refined petroleum products, Apr 2023 on), trial Input PPI for manufacturing (sector and 22 industry groups, Mar 2026 on) and WPI (All commodities and major groups), index 2022-23 = 100, as published by the Office of the Economic Adviser, DPIIT. Built by the AsiaDecoded/asia-vitals pipeline (data/in/ppi/in_ppi.csv).",
+ "description": "Output PPI (All commodities, major groups, and the 23 groups of manufactured products, Apr 2023 on), trial Input PPI for manufacturing (sector and 22 industry groups, Mar 2026 on) and WPI (All commodities and major groups), index 2022-23 = 100, as published by the Office of the Economic Adviser, DPIIT. Built by the AsiaDecoded/asia-vitals pipeline (data/in/ppi/in_ppi.csv).",
  "schedule": "Replaced after each release by a scheduled task that reads AsiaDecoded/asia-vitals.",
  "source": {
   "kind": "file",
-  "name": "in_ppi_M2026-09_r2.csv",
-  "url": "/_blob/58ca0138537ccf20e3a9038ee1f16c29"
+  "name": "in_ppi_M2026-09_r3.csv",
+  "url": "/_blob/95b2da010e28ba34c92cf9238b69c3c6"
  },
  "title": "India producer prices (2022-23 base)",
  "updated": {
-  "at": "2026-11-04T02:40:00Z",
+  "at": "2026-11-04T03:00:00Z",
   "by": "Claude"
  }
 }
