@@ -286,7 +286,7 @@ def update(from_file=None, **_):
         cur = [v.get(f"{y0}-{k:02d}-01") for k in range(1, m0 + 1)]
         prev = [v.get(f"{y0 - 1}-{k:02d}-01") for k in range(1, m0 + 1)]
         if len(last3) == 3 and None not in [yy(d) for d in last3] + cur + prev:
-            ppi_groups.insert(1, {"date": latest, "code": "XPET", "name": "Excluding refined petroleum", "weight": round(W - Wc, 5),
+            ppi_groups.insert(1, {"date": latest, "code": "XPET", "name": "Ex-refined petroleum", "weight": round(W - Wc, 5),
                                   "yoy": round(yy(latest), 1), "m3": round(sum(yy(d) for d in last3) / 3, 1),
                                   "ytd": round((sum(cur) / sum(prev) - 1) * 100, 1), "calculated": "y"})
     if errors:

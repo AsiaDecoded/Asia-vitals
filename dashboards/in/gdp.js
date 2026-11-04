@@ -646,7 +646,7 @@ dash.calc('ppi_movers', {
   function mfgPrices() {
     const id = 'mfg-ppi', box = document.getElementById(id + '-chart');
     const S = [{ key: 'oppi_1300000000', name: 'PPI', color: 'var(--ad-c2)' },
-      { key: 'xpet', name: 'PPI excluding refined petroleum', color: 'var(--ad-c2)', dash: true },
+      { key: 'xpet', name: 'PPI ex-refined petroleum', color: 'var(--ad-c2)', dash: true },
       { key: 'wpi_1300000000', name: 'WPI', color: 'var(--ad-c1)' }];   // legend: PPI first, WPI last (user, 4 Nov 2026)
     legend(id + '-legend', S);
     if (!status(box, ['in_ppi', 'in_wpi_mfg_linked'])) return;
