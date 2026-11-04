@@ -290,7 +290,7 @@ dash.calc('iip_movers', {
   }
   function ytdDots(svg, x, y, R, S) {
     S.forEach((s) => R.filter((r) => r.ytd && r[s.key + '_ytd'] != null).forEach((r) => svg.append('circle').attr('cx', x(J.date(r.date))).attr('cy', y(r[s.key + '_ytd']))
-      .attr('r', s.thin ? 3.5 : 4.5).attr('fill', 'var(--color-panel)').attr('stroke', s.color).attr('stroke-width', 2)));
+      .attr('r', 4.5).attr('fill', 'var(--color-panel)').attr('stroke', s.color).attr('stroke-width', 2)));
   }
   function annualChart(id, S, opt = {}) {
     const box = document.getElementById(id + '-chart');
