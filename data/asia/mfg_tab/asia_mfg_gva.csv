@@ -1,4 +1,131 @@
 economy,name,freq,period,real_yoy,share,share_4q
+HK,Hong Kong,A,2000,,4.8,4.8
+HK,Hong Kong,A,2001,,4.2,4.2
+HK,Hong Kong,A,2002,,3.7,3.7
+HK,Hong Kong,A,2003,,3.2,3.2
+HK,Hong Kong,A,2004,,3.1,3.1
+HK,Hong Kong,A,2005,,2.9,2.9
+HK,Hong Kong,A,2006,,2.7,2.7
+HK,Hong Kong,A,2007,,2.0,2.0
+HK,Hong Kong,A,2008,,1.9,1.9
+HK,Hong Kong,A,2009,,1.8,1.8
+HK,Hong Kong,A,2010,,1.8,1.8
+HK,Hong Kong,A,2011,,1.6,1.6
+HK,Hong Kong,A,2012,,1.5,1.5
+HK,Hong Kong,A,2013,,1.4,1.4
+HK,Hong Kong,A,2014,,1.3,1.3
+HK,Hong Kong,A,2015,,1.1,1.1
+HK,Hong Kong,A,2016,,1.1,1.1
+HK,Hong Kong,A,2017,,1.1,1.1
+HK,Hong Kong,A,2018,,1.0,1.0
+HK,Hong Kong,A,2019,,1.1,1.1
+HK,Hong Kong,A,2020,,1.0,1.0
+HK,Hong Kong,A,2021,,1.0,1.0
+HK,Hong Kong,A,2022,,1.0,1.0
+HK,Hong Kong,A,2023,,1.0,1.0
+HK,Hong Kong,A,2024,,1.0,1.0
+HK,Hong Kong,Q,2001-Q1,-4.2,,
+HK,Hong Kong,Q,2001-Q2,-4.4,,
+HK,Hong Kong,Q,2001-Q3,-12.0,,
+HK,Hong Kong,Q,2001-Q4,-14.2,,
+HK,Hong Kong,Q,2002-Q1,-11.6,,
+HK,Hong Kong,Q,2002-Q2,-11.1,,
+HK,Hong Kong,Q,2002-Q3,-7.0,,
+HK,Hong Kong,Q,2002-Q4,-9.2,,
+HK,Hong Kong,Q,2003-Q1,-9.9,,
+HK,Hong Kong,Q,2003-Q2,-14.0,,
+HK,Hong Kong,Q,2003-Q3,-10.4,,
+HK,Hong Kong,Q,2003-Q4,-7.4,,
+HK,Hong Kong,Q,2004-Q1,1.1,,
+HK,Hong Kong,Q,2004-Q2,0.6,,
+HK,Hong Kong,Q,2004-Q3,3.0,,
+HK,Hong Kong,Q,2004-Q4,4.4,,
+HK,Hong Kong,Q,2005-Q1,-2.9,,
+HK,Hong Kong,Q,2005-Q2,-0.9,,
+HK,Hong Kong,Q,2005-Q3,3.9,,
+HK,Hong Kong,Q,2005-Q4,5.5,,
+HK,Hong Kong,Q,2006-Q1,6.7,,
+HK,Hong Kong,Q,2006-Q2,5.1,,
+HK,Hong Kong,Q,2006-Q3,-1.3,,
+HK,Hong Kong,Q,2006-Q4,-2.0,,
+HK,Hong Kong,Q,2007-Q1,-0.7,,
+HK,Hong Kong,Q,2007-Q2,-1.6,,
+HK,Hong Kong,Q,2007-Q3,-1.4,,
+HK,Hong Kong,Q,2007-Q4,0.4,,
+HK,Hong Kong,Q,2008-Q1,-4.9,,
+HK,Hong Kong,Q,2008-Q2,-4.5,,
+HK,Hong Kong,Q,2008-Q3,-7.4,,
+HK,Hong Kong,Q,2008-Q4,-11.0,,
+HK,Hong Kong,Q,2009-Q1,-10.0,,
+HK,Hong Kong,Q,2009-Q2,-9.4,,
+HK,Hong Kong,Q,2009-Q3,-8.5,,
+HK,Hong Kong,Q,2009-Q4,-4.8,,
+HK,Hong Kong,Q,2010-Q1,0.2,,
+HK,Hong Kong,Q,2010-Q2,2.0,,
+HK,Hong Kong,Q,2010-Q3,5.2,,
+HK,Hong Kong,Q,2010-Q4,5.5,,
+HK,Hong Kong,Q,2011-Q1,3.5,,
+HK,Hong Kong,Q,2011-Q2,2.0,,
+HK,Hong Kong,Q,2011-Q3,0.2,,
+HK,Hong Kong,Q,2011-Q4,-2.2,,
+HK,Hong Kong,Q,2012-Q1,-1.6,,
+HK,Hong Kong,Q,2012-Q2,-2.9,,
+HK,Hong Kong,Q,2012-Q3,-0.1,,
+HK,Hong Kong,Q,2012-Q4,1.3,,
+HK,Hong Kong,Q,2013-Q1,0.5,,
+HK,Hong Kong,Q,2013-Q2,0.3,,
+HK,Hong Kong,Q,2013-Q3,-0.9,,
+HK,Hong Kong,Q,2013-Q4,0.5,,
+HK,Hong Kong,Q,2014-Q1,2.1,,
+HK,Hong Kong,Q,2014-Q2,2.2,,
+HK,Hong Kong,Q,2014-Q3,-1.7,,
+HK,Hong Kong,Q,2014-Q4,-3.6,,
+HK,Hong Kong,Q,2015-Q1,-1.5,,
+HK,Hong Kong,Q,2015-Q2,-1.2,,
+HK,Hong Kong,Q,2015-Q3,-2.1,,
+HK,Hong Kong,Q,2015-Q4,-1.3,,
+HK,Hong Kong,Q,2016-Q1,-0.3,,
+HK,Hong Kong,Q,2016-Q2,-0.4,,
+HK,Hong Kong,Q,2016-Q3,-0.1,,
+HK,Hong Kong,Q,2016-Q4,-1.0,,
+HK,Hong Kong,Q,2017-Q1,0.2,,
+HK,Hong Kong,Q,2017-Q2,0.4,,
+HK,Hong Kong,Q,2017-Q3,0.3,,
+HK,Hong Kong,Q,2017-Q4,0.8,,
+HK,Hong Kong,Q,2018-Q1,1.1,,
+HK,Hong Kong,Q,2018-Q2,1.6,,
+HK,Hong Kong,Q,2018-Q3,1.2,,
+HK,Hong Kong,Q,2018-Q4,1.2,,
+HK,Hong Kong,Q,2019-Q1,1.4,,
+HK,Hong Kong,Q,2019-Q2,0.4,,
+HK,Hong Kong,Q,2019-Q3,0.5,,
+HK,Hong Kong,Q,2019-Q4,-0.5,,
+HK,Hong Kong,Q,2020-Q1,-4.6,,
+HK,Hong Kong,Q,2020-Q2,-5.1,,
+HK,Hong Kong,Q,2020-Q3,-7.4,,
+HK,Hong Kong,Q,2020-Q4,-6.1,,
+HK,Hong Kong,Q,2021-Q1,2.6,,
+HK,Hong Kong,Q,2021-Q2,5.6,,
+HK,Hong Kong,Q,2021-Q3,7.6,,
+HK,Hong Kong,Q,2021-Q4,5.8,,
+HK,Hong Kong,Q,2022-Q1,-1.3,,
+HK,Hong Kong,Q,2022-Q2,2.7,,
+HK,Hong Kong,Q,2022-Q3,-0.5,,
+HK,Hong Kong,Q,2022-Q4,-0.1,,
+HK,Hong Kong,Q,2023-Q1,3.8,,
+HK,Hong Kong,Q,2023-Q2,2.7,,
+HK,Hong Kong,Q,2023-Q3,4.3,,
+HK,Hong Kong,Q,2023-Q4,4.1,,
+HK,Hong Kong,Q,2024-Q1,1.8,,
+HK,Hong Kong,Q,2024-Q2,0.7,,
+HK,Hong Kong,Q,2024-Q3,-0.1,,
+HK,Hong Kong,Q,2024-Q4,1.0,,
+HK,Hong Kong,Q,2025-Q1,0.7,,
+HK,Hong Kong,Q,2025-Q2,0.9,,
+HK,Hong Kong,Q,2025-Q3,5.3,,
+HK,Hong Kong,Q,2025-Q4,5.8,,
+HK,Hong Kong,Q,2026-Q1,3.1,,
+HK,Hong Kong,Q,2026-Q2,2.3,,
 ID,Indonesia,Q,2010-Q1,,23.03,
 ID,Indonesia,Q,2010-Q2,,22.16,
 ID,Indonesia,Q,2010-Q3,,21.27,
@@ -82,6 +209,103 @@ IN,India,Q,2025-Q3,10.0,14.57,13.34
 IN,India,Q,2025-Q4,9.0,13.14,13.48
 IN,India,Q,2026-Q1,7.9,14.28,13.5
 IN,India,Q,2026-Q2,9.2,11.73,13.43
+KR,South Korea,Q,2014-Q1,,28.7,
+KR,South Korea,Q,2014-Q2,,29.91,
+KR,South Korea,Q,2014-Q3,,27.42,
+KR,South Korea,Q,2014-Q4,,27.15,28.3
+KR,South Korea,Q,2015-Q1,1.73,28.13,28.15
+KR,South Korea,Q,2015-Q2,-0.04,29.02,27.93
+KR,South Korea,Q,2015-Q3,2.59,27.37,27.92
+KR,South Korea,Q,2015-Q4,2.81,26.84,27.84
+KR,South Korea,Q,2016-Q1,1.11,27.58,27.7
+KR,South Korea,Q,2016-Q2,2.62,28.68,27.62
+KR,South Korea,Q,2016-Q3,1.33,26.65,27.44
+KR,South Korea,Q,2016-Q4,3.12,27.17,27.52
+KR,South Korea,Q,2017-Q1,4.7,28.22,27.68
+KR,South Korea,Q,2017-Q2,2.68,28.68,27.68
+KR,South Korea,Q,2017-Q3,6.64,28.22,28.07
+KR,South Korea,Q,2017-Q4,3.14,27.06,28.04
+KR,South Korea,Q,2018-Q1,1.35,27.23,27.8
+KR,South Korea,Q,2018-Q2,3.17,28.8,27.83
+KR,South Korea,Q,2018-Q3,3.2,28.33,27.86
+KR,South Korea,Q,2018-Q4,5.63,26.71,27.77
+KR,South Korea,Q,2019-Q1,0.39,26.56,27.6
+KR,South Korea,Q,2019-Q2,0.2,27.31,27.23
+KR,South Korea,Q,2019-Q3,0.54,26.49,26.77
+KR,South Korea,Q,2019-Q4,0.82,25.18,26.38
+KR,South Korea,Q,2020-Q1,0.78,25.46,26.11
+KR,South Korea,Q,2020-Q2,-7.4,25.91,25.76
+KR,South Korea,Q,2020-Q3,-1.86,26.12,25.67
+KR,South Korea,Q,2020-Q4,0.48,25.31,25.7
+KR,South Korea,Q,2021-Q1,5.41,26.06,25.85
+KR,South Korea,Q,2021-Q2,13.67,26.23,25.93
+KR,South Korea,Q,2021-Q3,6.13,27.2,26.2
+KR,South Korea,Q,2021-Q4,2.73,25.73,26.3
+KR,South Korea,Q,2022-Q1,5.25,27.46,26.66
+KR,South Korea,Q,2022-Q2,4.61,27.13,26.88
+KR,South Korea,Q,2022-Q3,4.95,26.98,26.82
+KR,South Korea,Q,2022-Q4,-1.75,25.06,26.66
+KR,South Korea,Q,2023-Q1,-3.67,24.96,26.03
+KR,South Korea,Q,2023-Q2,-1.04,25.2,25.55
+KR,South Korea,Q,2023-Q3,1.37,25.86,25.27
+KR,South Korea,Q,2023-Q4,7.51,25.61,25.41
+KR,South Korea,Q,2024-Q1,6.98,26.27,25.73
+KR,South Korea,Q,2024-Q2,6.07,27.32,26.27
+KR,South Korea,Q,2024-Q3,4.2,26.96,26.54
+KR,South Korea,Q,2024-Q4,2.54,26.28,26.71
+KR,South Korea,Q,2025-Q1,0.41,26.91,26.87
+KR,South Korea,Q,2025-Q2,2.55,28.09,27.06
+KR,South Korea,Q,2025-Q3,3.9,27.98,27.32
+KR,South Korea,Q,2025-Q4,2.39,28.13,27.78
+KR,South Korea,Q,2026-Q1,7.2,33.93,29.53
+KR,South Korea,Q,2026-Q2,6.67,40.42,32.62
+KR,South Korea,Q,2026-Q3,7.04,,
+MY,Malaysia,Q,2015-Q1,,22.09,
+MY,Malaysia,Q,2015-Q2,,22.57,
+MY,Malaysia,Q,2015-Q3,,22.33,
+MY,Malaysia,Q,2015-Q4,,22.18,22.29
+MY,Malaysia,Q,2016-Q1,4.5,21.82,22.23
+MY,Malaysia,Q,2016-Q2,3.8,22.19,22.13
+MY,Malaysia,Q,2016-Q3,4.2,21.59,21.95
+MY,Malaysia,Q,2016-Q4,5.1,21.62,21.8
+MY,Malaysia,Q,2017-Q1,5.9,21.57,21.74
+MY,Malaysia,Q,2017-Q2,6.0,22.39,21.79
+MY,Malaysia,Q,2017-Q3,7.0,21.87,21.86
+MY,Malaysia,Q,2017-Q4,5.3,21.57,21.85
+MY,Malaysia,Q,2018-Q1,5.2,21.31,21.79
+MY,Malaysia,Q,2018-Q2,4.8,21.95,21.68
+MY,Malaysia,Q,2018-Q3,5.0,21.56,21.6
+MY,Malaysia,Q,2018-Q4,4.7,21.3,21.53
+MY,Malaysia,Q,2019-Q1,4.1,21.13,21.48
+MY,Malaysia,Q,2019-Q2,4.3,21.82,21.45
+MY,Malaysia,Q,2019-Q3,3.6,21.47,21.43
+MY,Malaysia,Q,2019-Q4,3.0,21.22,21.41
+MY,Malaysia,Q,2020-Q1,1.3,21.58,21.52
+MY,Malaysia,Q,2020-Q2,-18.6,21.77,21.51
+MY,Malaysia,Q,2020-Q3,3.2,22.76,21.83
+MY,Malaysia,Q,2020-Q4,3.0,22.72,22.21
+MY,Malaysia,Q,2021-Q1,6.6,22.97,22.55
+MY,Malaysia,Q,2021-Q2,26.7,23.15,22.9
+MY,Malaysia,Q,2021-Q3,-0.9,23.52,23.09
+MY,Malaysia,Q,2021-Q4,9.1,23.75,23.35
+MY,Malaysia,Q,2022-Q1,6.7,23.07,23.37
+MY,Malaysia,Q,2022-Q2,9.3,22.85,23.3
+MY,Malaysia,Q,2022-Q3,13.2,23.63,23.32
+MY,Malaysia,Q,2022-Q4,4.0,23.76,23.33
+MY,Malaysia,Q,2023-Q1,3.2,23.37,23.4
+MY,Malaysia,Q,2023-Q2,0.1,22.96,23.43
+MY,Malaysia,Q,2023-Q3,-0.1,22.85,23.23
+MY,Malaysia,Q,2023-Q4,-0.3,22.87,23.01
+MY,Malaysia,Q,2024-Q1,2.1,22.51,22.8
+MY,Malaysia,Q,2024-Q2,4.7,22.44,22.67
+MY,Malaysia,Q,2024-Q3,5.6,22.75,22.64
+MY,Malaysia,Q,2024-Q4,4.2,22.28,22.5
+MY,Malaysia,Q,2025-Q1,4.2,22.18,22.41
+MY,Malaysia,Q,2025-Q2,3.7,21.96,22.29
+MY,Malaysia,Q,2025-Q3,4.1,22.04,22.12
+MY,Malaysia,Q,2025-Q4,6.0,22.13,22.08
+MY,Malaysia,Q,2026-Q1,5.9,22.02,22.04
+MY,Malaysia,Q,2026-Q2,7.3,21.98,22.04
 PH,Philippines,Q,2000-Q1,,25.0,
 PH,Philippines,Q,2000-Q2,,24.4,
 PH,Philippines,Q,2000-Q3,,26.6,
@@ -188,6 +412,212 @@ PH,Philippines,Q,2025-Q3,1.3,12.5,15.32
 PH,Philippines,Q,2025-Q4,1.8,17.6,15.23
 PH,Philippines,Q,2026-Q1,0.7,17.0,15.1
 PH,Philippines,Q,2026-Q2,2.6,13.3,15.1
+SG,Singapore,Q,1975-Q1,,20.41,
+SG,Singapore,Q,1975-Q2,,20.95,
+SG,Singapore,Q,1975-Q3,,22.31,
+SG,Singapore,Q,1975-Q4,,21.94,21.4
+SG,Singapore,Q,1976-Q1,15.98,21.01,21.55
+SG,Singapore,Q,1976-Q2,15.62,21.92,21.8
+SG,Singapore,Q,1976-Q3,8.5,22.82,21.92
+SG,Singapore,Q,1976-Q4,8.16,22.47,22.05
+SG,Singapore,Q,1977-Q1,7.26,21.78,22.25
+SG,Singapore,Q,1977-Q2,12.77,23.06,22.53
+SG,Singapore,Q,1977-Q3,7.69,23.21,22.63
+SG,Singapore,Q,1977-Q4,9.56,22.32,22.59
+SG,Singapore,Q,1978-Q1,6.18,22.38,22.74
+SG,Singapore,Q,1978-Q2,8.4,23.46,22.84
+SG,Singapore,Q,1978-Q3,14.01,23.71,22.97
+SG,Singapore,Q,1978-Q4,15.82,23.7,23.31
+SG,Singapore,Q,1979-Q1,17.79,23.14,23.5
+SG,Singapore,Q,1979-Q2,16.04,25.63,24.05
+SG,Singapore,Q,1979-Q3,10.6,25.99,24.61
+SG,Singapore,Q,1979-Q4,11.78,25.95,25.18
+SG,Singapore,Q,1980-Q1,11.29,26.42,26.0
+SG,Singapore,Q,1980-Q2,11.53,27.33,26.42
+SG,Singapore,Q,1980-Q3,10.51,26.57,26.57
+SG,Singapore,Q,1980-Q4,7.09,25.86,26.55
+SG,Singapore,Q,1981-Q1,10.09,25.21,26.24
+SG,Singapore,Q,1981-Q2,12.18,26.52,26.04
+SG,Singapore,Q,1981-Q3,9.8,26.33,25.98
+SG,Singapore,Q,1981-Q4,5.44,25.01,25.77
+SG,Singapore,Q,1982-Q1,5.06,23.57,25.36
+SG,Singapore,Q,1982-Q2,-3.09,22.91,24.45
+SG,Singapore,Q,1982-Q3,-5.73,22.5,23.5
+SG,Singapore,Q,1982-Q4,-9.28,20.41,22.35
+SG,Singapore,Q,1983-Q1,-3.92,20.93,21.69
+SG,Singapore,Q,1983-Q2,-2.28,22.01,21.46
+SG,Singapore,Q,1983-Q3,5.31,21.94,21.32
+SG,Singapore,Q,1983-Q4,12.51,20.96,21.46
+SG,Singapore,Q,1984-Q1,10.48,20.53,21.36
+SG,Singapore,Q,1984-Q2,11.47,22.23,21.41
+SG,Singapore,Q,1984-Q3,6.71,21.48,21.3
+SG,Singapore,Q,1984-Q4,1.97,21.34,21.39
+SG,Singapore,Q,1985-Q1,-2.87,19.83,21.22
+SG,Singapore,Q,1985-Q2,-7.32,20.72,20.84
+SG,Singapore,Q,1985-Q3,-8.48,20.22,20.53
+SG,Singapore,Q,1985-Q4,-10.28,19.69,20.11
+SG,Singapore,Q,1986-Q1,-5.54,20.2,20.21
+SG,Singapore,Q,1986-Q2,4.96,22.87,20.75
+SG,Singapore,Q,1986-Q3,12.98,23.84,21.65
+SG,Singapore,Q,1986-Q4,21.59,23.39,22.57
+SG,Singapore,Q,1987-Q1,17.11,22.14,23.06
+SG,Singapore,Q,1987-Q2,15.72,24.2,23.39
+SG,Singapore,Q,1987-Q3,16.06,25.03,23.69
+SG,Singapore,Q,1987-Q4,20.64,24.75,24.03
+SG,Singapore,Q,1988-Q1,21.47,24.64,24.66
+SG,Singapore,Q,1988-Q2,21.91,26.9,25.33
+SG,Singapore,Q,1988-Q3,18.59,27.52,25.95
+SG,Singapore,Q,1988-Q4,12.55,25.19,26.06
+SG,Singapore,Q,1989-Q1,9.87,24.47,26.02
+SG,Singapore,Q,1989-Q2,9.71,26.21,25.85
+SG,Singapore,Q,1989-Q3,9.29,25.99,25.46
+SG,Singapore,Q,1989-Q4,10.33,24.54,25.3
+SG,Singapore,Q,1990-Q1,11.51,22.77,24.88
+SG,Singapore,Q,1990-Q2,8.45,24.71,24.5
+SG,Singapore,Q,1990-Q3,9.95,25.53,24.39
+SG,Singapore,Q,1990-Q4,8.36,24.5,24.38
+SG,Singapore,Q,1991-Q1,10.36,26.06,25.2
+SG,Singapore,Q,1991-Q2,6.27,26.01,25.52
+SG,Singapore,Q,1991-Q3,3.85,25.66,25.56
+SG,Singapore,Q,1991-Q4,2.02,24.22,25.49
+SG,Singapore,Q,1992-Q1,-1.13,23.29,24.8
+SG,Singapore,Q,1992-Q2,-0.0,24.48,24.41
+SG,Singapore,Q,1992-Q3,3.01,24.7,24.17
+SG,Singapore,Q,1992-Q4,7.0,24.82,24.32
+SG,Singapore,Q,1993-Q1,8.04,24.41,24.6
+SG,Singapore,Q,1993-Q2,11.66,25.01,24.73
+SG,Singapore,Q,1993-Q3,10.59,25.0,24.81
+SG,Singapore,Q,1993-Q4,8.35,23.56,24.5
+SG,Singapore,Q,1994-Q1,11.85,22.65,24.05
+SG,Singapore,Q,1994-Q2,12.83,24.81,24.0
+SG,Singapore,Q,1994-Q3,13.77,23.81,23.71
+SG,Singapore,Q,1994-Q4,12.23,23.24,23.63
+SG,Singapore,Q,1995-Q1,8.11,22.65,23.63
+SG,Singapore,Q,1995-Q2,7.91,24.49,23.55
+SG,Singapore,Q,1995-Q3,12.29,24.45,23.71
+SG,Singapore,Q,1995-Q4,11.45,24.24,23.96
+SG,Singapore,Q,1996-Q1,13.59,23.78,24.24
+SG,Singapore,Q,1996-Q2,5.31,23.59,24.02
+SG,Singapore,Q,1996-Q3,-4.16,22.54,23.54
+SG,Singapore,Q,1996-Q4,-1.54,22.81,23.18
+SG,Singapore,Q,1997-Q1,-5.21,21.19,22.53
+SG,Singapore,Q,1997-Q2,4.11,21.87,22.1
+SG,Singapore,Q,1997-Q3,9.49,22.56,22.11
+SG,Singapore,Q,1997-Q4,8.47,22.87,22.12
+SG,Singapore,Q,1998-Q1,6.13,22.57,22.47
+SG,Singapore,Q,1998-Q2,-0.44,22.48,22.62
+SG,Singapore,Q,1998-Q3,-4.43,22.91,22.71
+SG,Singapore,Q,1998-Q4,-3.07,22.78,22.69
+SG,Singapore,Q,1999-Q1,9.77,22.34,22.63
+SG,Singapore,Q,1999-Q2,10.98,22.77,22.7
+SG,Singapore,Q,1999-Q3,17.59,23.1,22.75
+SG,Singapore,Q,1999-Q4,13.55,23.13,22.84
+SG,Singapore,Q,2000-Q1,12.93,24.1,23.27
+SG,Singapore,Q,2000-Q2,13.46,25.21,23.89
+SG,Singapore,Q,2000-Q3,15.23,26.67,24.78
+SG,Singapore,Q,2000-Q4,18.6,27.18,25.79
+SG,Singapore,Q,2001-Q1,2.86,24.09,25.79
+SG,Singapore,Q,2001-Q2,-9.02,23.39,25.33
+SG,Singapore,Q,2001-Q3,-19.23,22.9,24.39
+SG,Singapore,Q,2001-Q4,-18.61,23.16,23.38
+SG,Singapore,Q,2002-Q1,-4.5,23.42,23.22
+SG,Singapore,Q,2002-Q2,13.54,25.58,23.77
+SG,Singapore,Q,2002-Q3,15.69,25.3,24.37
+SG,Singapore,Q,2002-Q4,10.11,24.62,24.73
+SG,Singapore,Q,2003-Q1,6.63,24.34,24.96
+SG,Singapore,Q,2003-Q2,-7.15,24.68,24.73
+SG,Singapore,Q,2003-Q3,2.74,24.7,24.59
+SG,Singapore,Q,2003-Q4,10.45,25.3,24.75
+SG,Singapore,Q,2004-Q1,10.21,25.33,25.0
+SG,Singapore,Q,2004-Q2,20.04,27.43,25.69
+SG,Singapore,Q,2004-Q3,11.06,27.81,26.47
+SG,Singapore,Q,2004-Q4,14.31,27.8,27.09
+SG,Singapore,Q,2005-Q1,3.25,26.06,27.27
+SG,Singapore,Q,2005-Q2,5.82,27.08,27.19
+SG,Singapore,Q,2005-Q3,13.63,27.54,27.12
+SG,Singapore,Q,2005-Q4,14.45,27.54,27.05
+SG,Singapore,Q,2006-Q1,18.53,26.02,27.04
+SG,Singapore,Q,2006-Q2,11.92,27.66,27.19
+SG,Singapore,Q,2006-Q3,10.21,27.07,27.07
+SG,Singapore,Q,2006-Q4,8.39,25.63,26.59
+SG,Singapore,Q,2007-Q1,6.45,24.17,26.13
+SG,Singapore,Q,2007-Q2,7.45,24.28,25.29
+SG,Singapore,Q,2007-Q3,11.78,24.2,24.57
+SG,Singapore,Q,2007-Q4,-1.25,22.72,23.84
+SG,Singapore,Q,2008-Q1,12.25,21.08,23.07
+SG,Singapore,Q,2008-Q2,-5.57,20.86,22.21
+SG,Singapore,Q,2008-Q3,-10.95,21.16,21.45
+SG,Singapore,Q,2008-Q4,-10.73,19.19,20.57
+SG,Singapore,Q,2009-Q1,-23.79,17.69,19.73
+SG,Singapore,Q,2009-Q2,-0.55,20.1,19.54
+SG,Singapore,Q,2009-Q3,7.53,22.08,19.77
+SG,Singapore,Q,2009-Q4,2.44,20.89,20.19
+SG,Singapore,Q,2010-Q1,37.18,20.56,20.91
+SG,Singapore,Q,2010-Q2,45.25,21.55,21.27
+SG,Singapore,Q,2010-Q3,13.71,20.83,20.96
+SG,Singapore,Q,2010-Q4,25.68,20.18,20.78
+SG,Singapore,Q,2011-Q1,19.07,20.09,20.66
+SG,Singapore,Q,2011-Q2,-3.79,19.84,20.23
+SG,Singapore,Q,2011-Q3,8.91,19.49,19.9
+SG,Singapore,Q,2011-Q4,9.33,18.94,19.59
+SG,Singapore,Q,2012-Q1,-1.11,19.47,19.43
+SG,Singapore,Q,2012-Q2,4.08,19.79,19.42
+SG,Singapore,Q,2012-Q3,-1.44,19.04,19.31
+SG,Singapore,Q,2012-Q4,-0.22,18.2,19.12
+SG,Singapore,Q,2013-Q1,-6.34,17.01,18.51
+SG,Singapore,Q,2013-Q2,0.78,17.67,17.98
+SG,Singapore,Q,2013-Q3,5.23,18.16,17.76
+SG,Singapore,Q,2013-Q4,7.14,17.7,17.64
+SG,Singapore,Q,2014-Q1,9.6,17.75,17.82
+SG,Singapore,Q,2014-Q2,1.37,18.3,17.98
+SG,Singapore,Q,2014-Q3,1.7,18.53,18.07
+SG,Singapore,Q,2014-Q4,-1.16,17.43,18.0
+SG,Singapore,Q,2015-Q1,-4.3,17.88,18.04
+SG,Singapore,Q,2015-Q2,-4.28,18.76,18.15
+SG,Singapore,Q,2015-Q3,-5.7,18.24,18.08
+SG,Singapore,Q,2015-Q4,-6.21,17.51,18.1
+SG,Singapore,Q,2016-Q1,-0.37,16.4,17.73
+SG,Singapore,Q,2016-Q2,1.58,17.49,17.41
+SG,Singapore,Q,2016-Q3,1.84,17.47,17.22
+SG,Singapore,Q,2016-Q4,11.76,18.05,17.35
+SG,Singapore,Q,2017-Q1,8.43,17.78,17.7
+SG,Singapore,Q,2017-Q2,8.56,17.96,17.82
+SG,Singapore,Q,2017-Q3,19.31,18.75,18.14
+SG,Singapore,Q,2017-Q4,5.76,19.33,18.45
+SG,Singapore,Q,2018-Q1,10.02,18.7,18.68
+SG,Singapore,Q,2018-Q2,10.59,20.27,19.26
+SG,Singapore,Q,2018-Q3,3.47,21.7,20.0
+SG,Singapore,Q,2018-Q4,4.58,21.63,20.57
+SG,Singapore,Q,2019-Q1,-0.02,19.82,20.86
+SG,Singapore,Q,2019-Q2,-0.48,19.89,20.76
+SG,Singapore,Q,2019-Q3,-1.24,19.94,20.32
+SG,Singapore,Q,2019-Q4,-4.02,17.63,19.32
+SG,Singapore,Q,2020-Q1,8.32,19.16,19.16
+SG,Singapore,Q,2020-Q2,-0.44,20.55,19.32
+SG,Singapore,Q,2020-Q3,11.01,21.22,19.64
+SG,Singapore,Q,2020-Q4,11.43,17.94,19.72
+SG,Singapore,Q,2021-Q1,11.53,20.39,20.02
+SG,Singapore,Q,2021-Q2,18.2,21.63,20.3
+SG,Singapore,Q,2021-Q3,7.94,21.89,20.46
+SG,Singapore,Q,2021-Q4,16.04,18.69,20.65
+SG,Singapore,Q,2022-Q1,6.06,21.25,20.87
+SG,Singapore,Q,2022-Q2,6.45,20.85,20.67
+SG,Singapore,Q,2022-Q3,1.3,19.53,20.08
+SG,Singapore,Q,2022-Q4,-2.63,17.16,19.7
+SG,Singapore,Q,2023-Q1,-5.42,17.79,18.83
+SG,Singapore,Q,2023-Q2,-8.22,17.02,17.88
+SG,Singapore,Q,2023-Q3,-4.86,16.7,17.17
+SG,Singapore,Q,2023-Q4,1.75,15.51,16.75
+SG,Singapore,Q,2024-Q1,-1.12,16.95,16.54
+SG,Singapore,Q,2024-Q2,-0.61,16.74,16.47
+SG,Singapore,Q,2024-Q3,11.2,16.44,16.41
+SG,Singapore,Q,2024-Q4,5.51,15.03,16.29
+SG,Singapore,Q,2025-Q1,8.58,17.47,16.42
+SG,Singapore,Q,2025-Q2,10.48,17.93,16.72
+SG,Singapore,Q,2025-Q3,4.55,18.15,17.14
+SG,Singapore,Q,2025-Q4,11.4,16.25,17.45
+SG,Singapore,Q,2026-Q1,7.28,18.64,17.74
+SG,Singapore,Q,2026-Q2,12.48,20.47,18.38
 TH,Thailand,Q,1993-Q1,,27.3866,
 TH,Thailand,Q,1993-Q2,,27.3867,
 TH,Thailand,Q,1993-Q3,,25.8547,

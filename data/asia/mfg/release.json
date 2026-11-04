@@ -1,0 +1,16 @@
+{
+ "code": "Fcae665a5",
+ "label": "Manufacturing sources: JP to 2026-08-01; KR to 2026-09-01; MY to 2026-08-01; SG to 2026-09-01; HK to 2026-04-01",
+ "economies": "HK JP KR MY SG",
+ "processed_at": "2026-11-04T07:15:29Z",
+ "rows": 5575,
+ "warnings": [],
+ "fingerprint": "cae665a573a8ddd6",
+ "long_rows": 5575,
+ "history": [
+  {
+   "code": "Fcae665a5",
+   "processed_at": "2026-11-04T07:15:29Z"
+  }
+ ]
+}
