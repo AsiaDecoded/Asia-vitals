@@ -669,7 +669,7 @@ dash.calc('ppi_movers', {
     const xpy = Array.from(xp, ([d, v]) => { const p = xp.get(`${Number(d.slice(0, 4)) - 1}${d.slice(4)}`); return p ? { date: d, v: Math.round((v / p - 1) * 1000) / 10 } : null; }).filter(Boolean);
     const rows = J.slice(merge([{ key: 'oppi_1300000000', rows: yoy('oppi_1300000000') }, { key: 'wpi_1300000000', rows: wl }, { key: 'xpet', rows: xpy }]), id);
     if (!rows.length) { box.replaceChildren(); return; }
-    const H = fitH(id, 300);   // taller: the price chart and the top-contributors table fill the height of the PPI by group bars (user, 4 Nov 2026: looked squished)
+    const H = 300;   // same proportions as the other half-width charts (user, 4 Nov 2026)
     const mAxis = (r) => (r.date.slice(5, 7) === '01' ? r.date.slice(0, 4) : null);
     const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), true, mAxis,
       { anchorEvery: (r) => r.date.slice(5, 7) === '01', top: 24 });
@@ -995,7 +995,6 @@ dash.calc('ppi_movers', {
     }).observe(el); };
     watch(document.getElementById('mfg-col-r'), () => mfgDiv());
     watch(document.getElementById('mfg-usec'), () => mfgUse());
-    watch(document.getElementById('mfg-ppidiv'), () => mfgPrices());
   }
   // Manufacturing tab tiles (user, 4 Nov 2026), from calc iip_latest.
   function mfgTiles() {
