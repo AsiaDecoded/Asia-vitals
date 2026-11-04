@@ -1,0 +1,46 @@
+name: Asia manufacturing source probe (manual)
+
+# One-off helper for the Asia Manufacturing tab: tests manufacturing GVA and production-index sources for
+# 11 economies from the runners; saves to the "discovery" branch under discovery/mfg.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - pipeline/tools/mfg_probe.py
+      - .github/workflows/mfg-probe.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mfg-probe
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe sources
+        env:
+          ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
+          ECOS_KEY: ${{ secrets.ECOS_KEY }}
+          BPS_KEY: ${{ secrets.BPS_KEY }}
+        run: python -I pipeline/tools/mfg_probe.py discovery/mfg
+      - name: Push results to the discovery branch
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mv discovery /tmp/discovery
+          git fetch origin discovery
+          git checkout -B discovery origin/discovery
+          mkdir -p discovery && rm -rf discovery/mfg && cp -r /tmp/discovery/mfg discovery/
+          git add discovery/mfg
+          git commit -m "Asia manufacturing source probe" || exit 0
+          for i in 1 2 3; do git push origin discovery && break; git pull --rebase origin discovery; done
