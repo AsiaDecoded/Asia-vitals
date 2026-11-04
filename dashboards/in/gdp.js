@@ -461,13 +461,15 @@ dash.calc('iip_movers', {
   // Manufacturing tab, Chart 5 (bar chart, below Charts 3-4): IIP by NIC 2-digit manufacturing division, the latest three months y/y (3mma) and the
   // calendar year to date y/y (both ratios of summed indices, calculated in in_iip_mospi). Sorted by the 3mma;
   // manufacturing as a whole on top.
-  // Manufacturing tab: IIP by use-based category (user, 4 Nov 2026): General IIP (bold) and the six categories in
-  // MoSPI's order; 3mma (plain average of the latest three published y/y) and calendar YTD, calculated in in_iip_mospi.
+  // Manufacturing tab: IIP by use-based category (user, 4 Nov 2026): General IIP (bold) and the six categories sorted
+  // by 3mma; 3mma (plain average of the latest three published y/y) and calendar YTD, calculated in in_iip_mospi.
   function mfgUse() {
     const id = 'mfg-use', box = document.getElementById(id + '-chart');
     if (!status(box, ['in_iip_usebased'])) { legend(id + '-legend', []); return; }
-    const rows = dash.data('in_iip_usebased').data.map((r) => ({ ...r, yoy: N(r.yoy), m3: N(r.m3), ytd: N(r.ytd) }));
-    if (!rows.length) { box.replaceChildren(); return; }
+    const all = dash.data('in_iip_usebased').data.map((r) => ({ ...r, yoy: N(r.yoy), m3: N(r.m3), ytd: N(r.ytd) }));
+    if (!all.length) { box.replaceChildren(); return; }
+    // General IIP first, then the categories sorted by 3mma (user, 4 Nov 2026)
+    const rows = all.filter((r) => r.code === 'GEN').concat(all.filter((r) => r.code !== 'GEN').sort((a, b) => b.m3 - a.m3));
     const S = [{ key: 'm3', name: '3mma', color: 'var(--ad-c2)', bar: true }, { key: 'ytd', name: 'YTD', color: 'var(--ad-c1)', bar: true }];
     legend(id + '-legend', S);
     const top = 6, rowH = 30, H = top + rows.length * rowH + 22, W = box.clientWidth;
