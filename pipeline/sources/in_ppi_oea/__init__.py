@@ -89,11 +89,13 @@ def _sheet(xbytes):
 def _tidy(raw):
     """{series key: {"label", "weight", "values": {YYYY-MM-01: index}}}."""
     out = {}
-    # Output PPI: All commodities and the four major groups.
+    # Output PPI: All commodities, the four major groups and coke and refined petroleum products.
     rows = _sheet(raw["oppi"]["bytes"])
     hdr = rows[0]
     for r in rows[1:]:
-        if r[0] in ("All", "Major Group"):
+        # plus coke and refined petroleum products (group 1310000000), for the output PPI for manufactured products
+        # excluding refined petroleum on the Manufacturing tab (user, 4 Nov 2026)
+        if r[0] in ("All", "Major Group") or (r[0] == "Group" and str(r[1]).strip() == "1310000000"):
             key = "oppi" if r[0] == "All" else f"oppi_{int(r[1])}"
             out[key] = {"label": str(r[2]).strip().capitalize(), "weight": _num(r[3]),
                         "values": {_month(h): _num(v) for h, v in zip(hdr[4:], r[4:]) if _month(h) and _num(v) is not None}}
