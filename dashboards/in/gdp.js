@@ -574,8 +574,9 @@ dash.calc('iip_movers', {
   // indices from April 2023), % y/y calculated from the published indices, from April 2024.
   function mfgPrices() {
     const id = 'mfg-ppi', box = document.getElementById(id + '-chart');
-    const S = [{ key: 'oppi_1300000000', name: 'Output PPI', color: 'var(--ad-c2)' }, { key: 'wpi_1300000000', name: 'WPI', color: 'var(--ad-c1)' },
-      { key: 'xpet', name: 'Output PPI excluding refined petroleum', color: 'var(--ad-c2)', dash: true }];
+    const S = [{ key: 'oppi_1300000000', name: 'PPI', color: 'var(--ad-c2)' },
+      { key: 'xpet', name: 'PPI excluding refined petroleum', color: 'var(--ad-c2)', dash: true },
+      { key: 'wpi_1300000000', name: 'WPI', color: 'var(--ad-c1)' }];   // legend: PPI first, WPI last (user, 4 Nov 2026)
     legend(id + '-legend', S);
     if (!status(box, ['in_ppi', 'in_wpi_mfg_linked'])) return;
     const P = dash.data('in_ppi').data;
@@ -595,7 +596,7 @@ dash.calc('iip_movers', {
       return [r.date, (W * N(r.index) - Wc * N(c.index)) / (W - Wc)];
     }));
     const xpy = Array.from(xp, ([d, v]) => { const p = xp.get(`${Number(d.slice(0, 4)) - 1}${d.slice(4)}`); return p ? { date: d, v: Math.round((v / p - 1) * 1000) / 10 } : null; }).filter(Boolean);
-    const rows = J.slice(merge([{ key: S[0].key, rows: yoy(S[0].key) }, { key: S[1].key, rows: wl }, { key: 'xpet', rows: xpy }]), id);
+    const rows = J.slice(merge([{ key: 'oppi_1300000000', rows: yoy('oppi_1300000000') }, { key: 'wpi_1300000000', rows: wl }, { key: 'xpet', rows: xpy }]), id);
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 300;
     const mAxis = (r) => (r.date.slice(5, 7) === '01' ? r.date.slice(0, 4) : null);
