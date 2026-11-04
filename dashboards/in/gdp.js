@@ -24,6 +24,21 @@ dash.calc('iip_latest', {
       el: at(e, date, 'yoy'), el_prev: at(e, prev, 'yoy'), nel: at(x, date, 'yoy'), nel_prev: at(x, prev, 'yoy') }];
   },
 });
+dash.calc('mfg_gva_latest', {
+  title: 'Mfg GVA, latest quarter',
+  description: 'Manufacturing tab tile: MoSPI published real manufacturing GVA growth, % y/y, latest quarter (2022-23 base) and the quarter before.',
+  inputs: ['in_gdp'],
+  fn: (in_gdp) => {
+    const q = in_gdp.filter((r) => r.freq === 'Q' && r.code === 'manufacturing' && r.measure === 'yoy' && r.price === 'constant' && r.value !== '')
+      .sort((a, b) => (a.date < b.date ? -1 : 1));
+    if (!q.length) return [];
+    const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const lab = (d) => { const m = Number(d.slice(5, 7)); return `${MON[m - 1]}\u2013${MON[m + 1]} ${d.slice(0, 4)}`; };
+    const a = q[q.length - 1], b = q.length > 1 ? q[q.length - 2] : null;
+    return [{ gva: Number(a.value), gva_prev: b ? Number(b.value) : null, gva_quarter: lab(a.date) }];
+  },
+});
+
 dash.calc('ppi_latest', {
   title: 'Mfg PPI and WPI, latest month',
   description: 'Manufacturing tab tiles: output PPI for manufactured products, y/y calculated from the published index, and the WPI for manufactured products, y/y calculated from the linked index (2022-23 base), latest month and the month before.',

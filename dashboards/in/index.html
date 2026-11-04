@@ -167,6 +167,8 @@
 #ppi-movers-table th, #ppi-movers-table td { padding: 1px 6px; line-height: 1.3; }
 #ppi-movers-table tr.grp td { padding-top: 6px; }
 #ppi-movers-table th:not(:first-child), #ppi-movers-table td:not(:first-child) { text-align: center; }
+/* Manufacturing tab: seven tiles on one row where there is room (user, 4 Nov 2026) */
+#mfg-headline { grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); }
 </style>
 
 
@@ -274,6 +276,9 @@
     </div>
 
     <section class="jg-tiles" id="mfg-headline" aria-label="Headline industrial production">
+      <div class="jg-card jg-tile"><div class="lbl">Mfg GVA, real, y/y</div>
+        <div class="val"><span data-source="mfg_gva_latest" data-field="gva" data-row="0" class="dash-skeleton">—</span>%</div>
+        <div class="sub"><span data-source="mfg_gva_latest" data-field="gva_quarter" data-row="0" data-text="1">—</span>, prior quarter <span data-source="mfg_gva_latest" data-field="gva_prev" data-row="0">—</span>%</div></div>
       <div class="jg-card jg-tile"><div class="lbl">IIP, y/y</div>
         <div class="val"><span data-source="iip_latest" data-field="gen" data-row="0" class="dash-skeleton">—</span>%</div>
         <div class="sub">prior month <span data-source="iip_latest" data-field="gen_prev" data-row="0">—</span>%</div></div>
