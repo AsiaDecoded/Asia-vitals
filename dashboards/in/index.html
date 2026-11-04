@@ -149,6 +149,10 @@
 #iip-movers-table th:not(:first-child), #iip-movers-table td:not(:first-child) { text-align: center; }
 #mfg-gva .ad-top { height: auto; }
 #mfg-gva .ad-top .jg-legend { flex-wrap: wrap; }
+/* IIP biggest contributors: the table fills its card to the height of India IIP beside it (user, 4 Nov 2026). */
+#iip-movers { display: flex; flex-direction: column; }
+#iip-movers > .jg-tablewrap { flex: 1 1 auto; }
+#iip-movers-table { height: 100%; }
 </style>
 
 
@@ -281,7 +285,7 @@
       </section>
     </div>
 
-    <div class="jg-grid" style="align-items:start">
+    <div class="jg-grid">
       <section class="jg-card" id="mfg-iipm" data-periods="none">
         <div class="jg-cardhead">
           <div><h2>India IIP</h2></div>
