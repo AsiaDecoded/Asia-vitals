@@ -24,6 +24,25 @@ dash.calc('iip_latest', {
       el: at(e, date, 'yoy'), el_prev: at(e, prev, 'yoy'), nel: at(x, date, 'yoy'), nel_prev: at(x, prev, 'yoy') }];
   },
 });
+dash.calc('ppi_latest', {
+  title: 'Mfg PPI and WPI, latest month',
+  description: 'Manufacturing tab tiles: output PPI for manufactured products, y/y calculated from the published index, and the WPI for manufactured products, y/y calculated from the linked index (2022-23 base), latest month and the month before.',
+  inputs: ['in_ppi', 'in_wpi_mfg_linked'],
+  fn: (in_ppi, in_wpi_mfg_linked) => {
+    const n = (v) => (v === '' || v == null ? null : Number(v));
+    const ix = new Map(in_ppi.filter((r) => r.series === 'oppi_1300000000' && n(r.index) != null).map((r) => [r.date, n(r.index)]));
+    const prevYear = (d) => `${Number(d.slice(0, 4)) - 1}${d.slice(4)}`;
+    const ppi = Array.from(ix.keys()).sort().filter((d) => ix.has(prevYear(d))).map((d) => ({ date: d, v: Math.round((ix.get(d) / ix.get(prevYear(d)) - 1) * 1000) / 10 }));
+    const wpi = in_wpi_mfg_linked.filter((r) => n(r.yoy) != null).map((r) => ({ date: r.date, v: n(r.yoy) })).sort((a, b) => (a.date < b.date ? -1 : 1));
+    if (!ppi.length) return [];
+    const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const lab = (d) => (d ? `${MON[Number(d.slice(5, 7)) - 1]} ${d.slice(0, 4)}` : '');
+    const last = (a, k) => (a.length > k ? a[a.length - 1 - k] : { date: null, v: null });
+    return [{ ppi: last(ppi, 0).v, ppi_prev: last(ppi, 1).v, ppi_month: lab(last(ppi, 0).date),
+      wpi: last(wpi, 0).v, wpi_prev: last(wpi, 1).v, wpi_month: lab(last(wpi, 0).date) }];
+  },
+});
+
 dash.calc('iip_movers', {
   title: 'IIP contributions, 3- and 6-month averages',
   description: 'For each part of the general IIP (2022-23 base): its weight and MoSPI published y/y in the latest month, and the average of its contribution to general IIP y/y over the latest 3 and 6 months.',
@@ -1006,7 +1025,7 @@ dash.calc('ppi_movers', {
       if (L.status !== 'ok' || !L.data.length) { el.textContent = '—'; return; }
       el.classList.remove('dash-skeleton');
       const v = L.data[0][el.dataset.field];
-      el.textContent = el.id === 'mfg-month' ? (v || '') : (v == null ? '—' : Number(v).toFixed(1));
+      el.textContent = el.id === 'mfg-month' || el.dataset.text ? (v || '') : (v == null ? '—' : Number(v).toFixed(1));
     });
   }
   J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgTiles(); mfgIipM(); mfgIip(); mfgDiv(); mfgUse(); mfgUseContrib(); mfgElec(); mfgContrib(); mfgShare(); mfgGva(); mfgCu(); mfgPrices(); mfgPpiDiv(); } };
