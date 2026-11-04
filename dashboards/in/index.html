@@ -293,27 +293,49 @@
         <div class="jg-chart" id="mfg-iipm-chart" data-source="in_iip_linked"></div>
         <div class="ad-foot"><span>Source: MoSPI</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
-      <section class="jg-card" id="mfg-elec" data-periods="none">
-        <h2>India electronics and non-electronics manufacturing IIP</h2>
-        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="mfg-elec-legend"></div><span class="ad-units r"></span></div>
-        <div class="jg-chart" id="mfg-elec-chart" data-source="in_iip_groups"></div>
+      <section class="jg-card" id="iip-movers">
+        <div class="jg-cardhead">
+          <div><h2>India IIP biggest contributors</h2></div>
+          <div class="jg-seg" id="iip-movers-seg" role="group" aria-label="Averaging window"><button data-n="3" aria-pressed="true">3m avg.</button><button data-n="6">6m avg.</button></div>
+        </div>
+        <div class="ad-top"><span class="ad-units" id="iip-movers-units">%, ppt</span><span></span><span class="ad-units r"></span></div>
+        <div class="jg-tablewrap">
+          <table id="iip-movers-table" data-source="iip_movers" data-row-key="name">
+            <thead><tr>
+              <th data-field="name">Industry</th>
+              <th data-field="weight">Weight</th>
+              <th data-field="yoy">y/y</th>
+              <th data-field="avg3" id="iip-movers-avg">Contribution, 3m avg.</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
         <div class="ad-foot"><span>Source: MoSPI</span><span class="ad-brand">Asia Decoded</span></div>
       </section>
     </div>
 
-    <section class="jg-card" id="mfg-div" data-slider="none">
-      <h2>India manufacturing IIP by industry</h2>
-      <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="mfg-div-legend"></div><span class="ad-units r"></span></div>
-      <div class="jg-chart" id="mfg-div-chart" data-source="in_iip_divisions"></div>
-      <div class="ad-foot"><span>Source: MoSPI</span><span class="ad-brand">Asia Decoded</span></div>
-    </section>
-
-    <section class="jg-card" id="mfg-contrib" data-periods="none">
-      <h2>Contributions to India IIP growth</h2>
-      <div class="ad-top"><span class="ad-units">% y/y, pp</span><div class="jg-legend" id="mfg-contrib-legend"></div><span class="ad-units r"></span></div>
-      <div class="jg-chart" id="mfg-contrib-chart" data-source="in_iip_contrib"></div>
-      <div class="ad-foot"><span>Source: MoSPI</span><span class="ad-brand">Asia Decoded</span></div>
-    </section>
+    <div class="jg-grid">
+      <section class="jg-card" id="mfg-div" data-slider="none">
+        <h2>India manufacturing IIP by industry</h2>
+        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="mfg-div-legend"></div><span class="ad-units r"></span></div>
+        <div class="jg-chart" id="mfg-div-chart" data-source="in_iip_divisions"></div>
+        <div class="ad-foot"><span>Source: MoSPI</span><span class="ad-brand">Asia Decoded</span></div>
+      </section>
+      <div style="display:flex;flex-direction:column;gap:var(--cds-gap-md);min-width:0">
+        <section class="jg-card" id="mfg-elec" data-periods="none">
+          <h2>India electronics and non-electronics manufacturing IIP</h2>
+          <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="mfg-elec-legend"></div><span class="ad-units r"></span></div>
+          <div class="jg-chart" id="mfg-elec-chart" data-source="in_iip_groups"></div>
+          <div class="ad-foot"><span>Source: MoSPI</span><span class="ad-brand">Asia Decoded</span></div>
+        </section>
+        <section class="jg-card" id="mfg-contrib" data-periods="none">
+          <h2>Contributions to India IIP growth</h2>
+          <div class="ad-top"><span class="ad-units">% y/y, pp</span><div class="jg-legend" id="mfg-contrib-legend"></div><span class="ad-units r"></span></div>
+          <div class="jg-chart" id="mfg-contrib-chart" data-source="in_iip_contrib"></div>
+          <div class="ad-foot"><span>Source: MoSPI</span><span class="ad-brand">Asia Decoded</span></div>
+        </section>
+      </div>
+    </div>
 
     <section class="jg-card" id="mfg-share" data-periods="none">
       <div class="jg-cardhead">
@@ -334,25 +356,6 @@
       <div class="ad-foot"><span>Source: RBI</span><span class="ad-brand">Asia Decoded</span></div>
     </section>
 
-    <section class="jg-card" id="iip-movers">
-      <div class="jg-cardhead">
-        <div><h2>India IIP biggest contributors</h2></div>
-        <div class="jg-seg" id="iip-movers-seg" role="group" aria-label="Averaging window"><button data-n="3" aria-pressed="true">3m avg.</button><button data-n="6">6m avg.</button></div>
-      </div>
-      <div class="ad-top"><span class="ad-units" id="iip-movers-units">%, ppt</span><span></span><span class="ad-units r"></span></div>
-      <div class="jg-tablewrap">
-        <table id="iip-movers-table" data-source="iip_movers" data-row-key="name">
-          <thead><tr>
-            <th data-field="name">Industry</th>
-            <th data-field="weight">Weight</th>
-            <th data-field="yoy">y/y</th>
-            <th data-field="avg3" id="iip-movers-avg">Contribution, 3m avg.</th>
-          </tr></thead>
-          <tbody></tbody>
-        </table>
-      </div>
-      <div class="ad-foot"><span>Source: MoSPI</span><span class="ad-brand">Asia Decoded</span></div>
-    </section>
   </section>
 
   <section class="jg-page" id="inflation" role="tabpanel" hidden>
