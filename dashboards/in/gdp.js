@@ -670,9 +670,12 @@ dash.calc('ppi_movers', {
     const rows = J.slice(merge([{ key: 'oppi_1300000000', rows: yoy('oppi_1300000000') }, { key: 'wpi_1300000000', rows: wl }, { key: 'xpet', rows: xpy }]), id);
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 300;   // same proportions as the other half-width charts (user, 4 Nov 2026)
+    // x labels: every year, or every 2nd / 5th year when there is no room (user, 4 Nov 2026: labels too crowded)
+    const yrs = rows.filter((r) => r.date.slice(5, 7) === '01').length, room = Math.max(1, Math.floor(box.clientWidth / 64));
+    const yk = [1, 2, 5].find((k) => yrs / k <= room) || 10;
     const mAxis = (r) => (r.date.slice(5, 7) === '01' ? r.date.slice(0, 4) : null);
     const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), true, mAxis,
-      { anchorEvery: (r) => r.date.slice(5, 7) === '01', top: 24 });
+      { anchorEvery: (r) => r.date.slice(5, 7) === '01' && Number(r.date.slice(0, 4)) % yk === 0, top: 24 });
     // on Apr 2024, the first y/y with both months on the 2022-23 base (user, 4 Nov 2026)
     if (rows[0].date < '2024-04-01' && rows[rows.length - 1].date >= '2024-04-01') vline(svg, x, '2024-04-01', H, '2022-23 base');
     const dots = drawLines(svg, x, y, rows, S);
