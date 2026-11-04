@@ -986,6 +986,7 @@ KR,South Korea,cpi,All items,2026-06-01,3.2,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,cpi,All items,2026-07-01,2.8,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,cpi,All items,2026-08-01,3.1,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,cpi,All items,2026-09-01,2.9,calculated,data/kr/cpi/kr_cpi.csv
+KR,South Korea,cpi,All items,2026-10-01,2.8,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,food,Food and non-alcoholic beverages,2015-01-01,2.4,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,food,Food and non-alcoholic beverages,2015-02-01,2.1,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,food,Food and non-alcoholic beverages,2015-03-01,0.9,calculated,data/kr/cpi/kr_cpi.csv
@@ -1127,6 +1128,7 @@ KR,South Korea,food,Food and non-alcoholic beverages,2026-06-01,2.0,calculated,d
 KR,South Korea,food,Food and non-alcoholic beverages,2026-07-01,0.9,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,food,Food and non-alcoholic beverages,2026-08-01,-0.5,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,food,Food and non-alcoholic beverages,2026-09-01,1.0,calculated,data/kr/cpi/kr_cpi.csv
+KR,South Korea,food,Food and non-alcoholic beverages,2026-10-01,0.5,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,energy,Energy: the ministry's nine energy items at published weights (Dec 2023-),2023-12-01,1.7,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,energy,Energy: the ministry's nine energy items at published weights (Dec 2023-),2024-01-01,-0.1,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,energy,Energy: the ministry's nine energy items at published weights (Dec 2023-),2024-02-01,1.8,calculated,data/kr/cpi/kr_cpi.csv
@@ -1161,6 +1163,7 @@ KR,South Korea,energy,Energy: the ministry's nine energy items at published weig
 KR,South Korea,energy,Energy: the ministry's nine energy items at published weights (Dec 2023-),2026-07-01,8.4,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,energy,Energy: the ministry's nine energy items at published weights (Dec 2023-),2026-08-01,7.7,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,energy,Energy: the ministry's nine energy items at published weights (Dec 2023-),2026-09-01,7.8,calculated,data/kr/cpi/kr_cpi.csv
+KR,South Korea,energy,Energy: the ministry's nine energy items at published weights (Dec 2023-),2026-10-01,7.8,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,core,Excl. food and energy,2015-01-01,2.4,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,core,Excl. food and energy,2015-02-01,2.4,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,core,Excl. food and energy,2015-03-01,2.4,calculated,data/kr/cpi/kr_cpi.csv
@@ -1302,6 +1305,7 @@ KR,South Korea,core,Excl. food and energy,2026-06-01,2.5,calculated,data/kr/cpi/
 KR,South Korea,core,Excl. food and energy,2026-07-01,2.6,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,core,Excl. food and energy,2026-08-01,3.4,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,core,Excl. food and energy,2026-09-01,2.8,calculated,data/kr/cpi/kr_cpi.csv
+KR,South Korea,core,Excl. food and energy,2026-10-01,2.8,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,official_core,Excl. food and energy (Bank of Korea's core),2015-01-01,2.4,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,official_core,Excl. food and energy (Bank of Korea's core),2015-02-01,2.4,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,official_core,Excl. food and energy (Bank of Korea's core),2015-03-01,2.4,calculated,data/kr/cpi/kr_cpi.csv
@@ -1443,6 +1447,7 @@ KR,South Korea,official_core,Excl. food and energy (Bank of Korea's core),2026-0
 KR,South Korea,official_core,Excl. food and energy (Bank of Korea's core),2026-07-01,2.6,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,official_core,Excl. food and energy (Bank of Korea's core),2026-08-01,3.4,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,official_core,Excl. food and energy (Bank of Korea's core),2026-09-01,2.8,calculated,data/kr/cpi/kr_cpi.csv
+KR,South Korea,official_core,Excl. food and energy (Bank of Korea's core),2026-10-01,2.8,calculated,data/kr/cpi/kr_cpi.csv
 KR,South Korea,ppi,PPI,2015-01-01,-3.6,calculated,data/kr/ppi/kr_ppi.csv
 KR,South Korea,ppi,PPI,2015-02-01,-3.6,calculated,data/kr/ppi/kr_ppi.csv
 KR,South Korea,ppi,PPI,2015-03-01,-3.7,calculated,data/kr/ppi/kr_ppi.csv

@@ -1,25 +1,33 @@
 {
- "code": "C2026-09",
- "label": "Sep 2026",
- "latest_month": "2026-09-01",
+ "code": "C2026-10",
+ "label": "Oct 2026",
+ "latest_month": "2026-10-01",
  "table": "ECOS 901Y009, 901Y010 (Ministry of Data and Statistics CPI, 2020 = 100, 2022 weights)",
- "processed_at": "2026-10-29T08:24:12Z",
- "rows": 15643,
+ "processed_at": "2026-11-04T01:22:22Z",
+ "rows": 15681,
  "warnings": [],
- "fingerprint": "3f7e5d6856e3b707",
- "long_rows": 31034,
- "contrib_rows": 204,
+ "fingerprint": "7d0fecf968d3d25a",
+ "long_rows": 31116,
+ "contrib_rows": 210,
  "diffusion_items": 458,
  "fit_max_gap": {
   "parts": 0.0139,
   "items": 0.0091
  },
- "ecos_calls": 1,
- "refetched": [],
+ "ecos_calls": 190,
+ "refetched": [
+  "202608",
+  "202609",
+  "202610"
+ ],
  "history": [
   {
    "code": "C2026-09",
    "processed_at": "2026-10-29T08:24:12Z"
+  },
+  {
+   "code": "C2026-10",
+   "processed_at": "2026-11-04T01:22:22Z"
   }
  ]
 }

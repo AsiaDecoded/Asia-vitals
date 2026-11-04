@@ -203,3 +203,9 @@ date,series,label,order,contrib_yoy
 2026-09-01,petroleum,Petroleum products,3,0.56
 2026-09-01,utilities,"Electricity, gas and water",4,0.02
 2026-09-01,services,Services,5,1.51
+2026-10-01,all,All items,0,2.82
+2026-10-01,agri,"Agricultural, livestock and fishery products",1,-0.14
+2026-10-01,industrial_ex_oil,Industrial products excl. petroleum,2,0.9
+2026-10-01,petroleum,Petroleum products,3,0.56
+2026-10-01,utilities,"Electricity, gas and water",4,0.02
+2026-10-01,services,Services,5,1.47

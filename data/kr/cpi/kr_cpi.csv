@@ -15642,3 +15642,41 @@ date,area,series,label,group,order,index,yoy
 2026-09-01,national,diesel,Diesel,items,35,153.26,20.0
 2026-09-01,national,district_heating,District heating,items,36,163.15,-0.2
 2026-09-01,national,energy,Energy (calculated),headline,37,112.037,7.8
+2026-10-01,national,all,All items,headline,0,120.73,2.8
+2026-10-01,national,ex_food_energy,Excl. food and energy,headline,1,116.98,2.8
+2026-10-01,national,ex_agri_oil,Excl. agricultural products and oil,headline,2,119.22,2.8
+2026-10-01,national,living,Living cost index,headline,3,123.53,2.6
+2026-10-01,national,goods,Goods,goods_services,4,123.97,3.0
+2026-10-01,national,agri,"Agricultural, livestock and fishery products",goods_services,5,126.98,-1.7
+2026-10-01,national,industrial,Industrial products,goods_services,6,121.52,4.4
+2026-10-01,national,processed_food,Processed food,drivers,7,128.41,2.9
+2026-10-01,national,petroleum,Petroleum products,drivers,8,143.49,14.9
+2026-10-01,national,utilities,"Electricity, gas and water",drivers,9,141.41,0.4
+2026-10-01,national,services,Services,goods_services,10,117.95,2.7
+2026-10-01,national,rent,Housing rent,goods_services,11,106.56,1.4
+2026-10-01,national,public,Public services,goods_services,12,107.75,1.7
+2026-10-01,national,personal,Personal services,goods_services,13,125.55,3.3
+2026-10-01,national,eating_out,Eating out,goods_services,14,129.15,2.9
+2026-10-01,national,personal_ex_eating_out,Personal services excl. eating out,goods_services,15,123.05,3.6
+2026-10-01,national,fresh,Fresh food,drivers,16,123.61,-6.2
+2026-10-01,national,ex_fresh,Excl. fresh food,headline,17,120.58,3.2
+2026-10-01,national,div_A,Food and non-alcoholic beverages,divisions,18,129.49,0.5
+2026-10-01,national,div_B,Alcoholic beverages and tobacco,divisions,19,105.07,-0.0
+2026-10-01,national,div_C,Clothing and footwear,divisions,20,120.01,2.4
+2026-10-01,national,div_D,"Housing, water, electricity and fuels",divisions,21,119.27,2.0
+2026-10-01,national,div_E,Furnishings and household goods,divisions,22,122.76,4.0
+2026-10-01,national,div_F,Health,divisions,23,107.78,2.1
+2026-10-01,national,div_G,Transport,divisions,24,124.32,6.8
+2026-10-01,national,div_H,Communication,divisions,25,104.43,2.7
+2026-10-01,national,div_I,Recreation and culture,divisions,26,116.63,5.1
+2026-10-01,national,div_J,Education,divisions,27,110.36,1.7
+2026-10-01,national,div_K,Restaurants and hotels,divisions,28,129.28,3.0
+2026-10-01,national,div_L,Miscellaneous goods and services,divisions,29,130.48,4.2
+2026-10-01,national,jeonse,Jeonse (lump-sum deposit rent),items,30,106.69,1.4
+2026-10-01,national,monthly_rent,Monthly rent,items,31,106.34,1.5
+2026-10-01,national,electricity,Electricity,items,32,142.16,0.0
+2026-10-01,national,city_gas,City gas,items,33,146.54,0.3
+2026-10-01,national,petrol,Petrol,items,34,133.25,11.6
+2026-10-01,national,diesel,Diesel,items,35,153.19,19.7
+2026-10-01,national,district_heating,District heating,items,36,163.15,-0.2
+2026-10-01,national,energy,Energy (calculated),headline,37,112.18,7.8
