@@ -6,6 +6,24 @@
 // divisions, mining, electricity and gas, water and waste), its weight and MoSPI's y/y in the latest month, and the
 // average of its contribution to general IIP y/y over the latest 3 and 6 months (contributions calculated in
 // in_iip_mospi at MoSPI's 2022-23 weights). As the CPI table.
+dash.calc('iip_latest', {
+  title: 'IIP, latest month',
+  description: 'Manufacturing tab tiles: MoSPI published y/y for the general and manufacturing IIP (2022-23 base), and the calculated y/y of the electronics (NIC 26, 27) and non-electronics manufacturing groups, latest month and the month before.',
+  inputs: ['in_iip_linked', 'in_iip_groups'],
+  fn: (in_iip_linked, in_iip_groups) => {
+    const n = (v) => (v === '' || v == null ? null : Number(v));
+    const L = (ser) => in_iip_linked.filter((r) => r.freq === 'M' && r.series === ser && n(r.yoy_mospi) != null).sort((a, b) => (a.date < b.date ? -1 : 1));
+    const G = (code) => in_iip_groups.filter((r) => r.code === code && n(r.yoy) != null).sort((a, b) => (a.date < b.date ? -1 : 1));
+    const g = L('general'), m = L('manufacturing'), e = G('E2627'), x = G('X2627');
+    if (!g.length) return [];
+    const date = g[g.length - 1].date, prev = g.length > 1 ? g[g.length - 2].date : null;
+    const at = (rows, d, k) => { const r = rows.find((q) => q.date === d); return r ? n(r[k]) : null; };
+    const MON = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    return [{ date, month: `${MON[Number(date.slice(5, 7)) - 1]} ${date.slice(0, 4)}`, prev_date: prev,
+      gen: at(g, date, 'yoy_mospi'), gen_prev: at(g, prev, 'yoy_mospi'), mfg: at(m, date, 'yoy_mospi'), mfg_prev: at(m, prev, 'yoy_mospi'),
+      el: at(e, date, 'yoy'), el_prev: at(e, prev, 'yoy'), nel: at(x, date, 'yoy'), nel_prev: at(x, prev, 'yoy') }];
+  },
+});
 dash.calc('iip_movers', {
   title: 'IIP contributions, 3- and 6-month averages',
   description: 'For each part of the general IIP (2022-23 base): its weight and MoSPI published y/y in the latest month, and the average of its contribution to general IIP y/y over the latest 3 and 6 months.',
@@ -826,7 +844,17 @@ dash.calc('iip_movers', {
     watch(document.getElementById('mfg-col-r'), () => mfgDiv());
     watch(document.getElementById('mfg-usec'), () => mfgUse());
   }
-  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgIipM(); mfgIip(); mfgDiv(); mfgUse(); mfgUseContrib(); mfgElec(); mfgContrib(); mfgShare(); mfgGva(); mfgCu(); } };
+  // Manufacturing tab tiles (user, 4 Nov 2026), from calc iip_latest.
+  function mfgTiles() {
+    document.querySelectorAll('#mfg-headline [data-source], #mfg-month').forEach((el) => {
+      const L = dash.data(el.dataset.source);
+      if (L.status !== 'ok' || !L.data.length) { el.textContent = '—'; return; }
+      el.classList.remove('dash-skeleton');
+      const v = L.data[0][el.dataset.field];
+      el.textContent = el.id === 'mfg-month' ? (v || '') : (v == null ? '—' : Number(v).toFixed(1));
+    });
+  }
+  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgTiles(); mfgIipM(); mfgIip(); mfgDiv(); mfgUse(); mfgUseContrib(); mfgElec(); mfgContrib(); mfgShare(); mfgGva(); mfgCu(); } };
 
   J.redrawGdp = () => {
     J.redrawMfg();
