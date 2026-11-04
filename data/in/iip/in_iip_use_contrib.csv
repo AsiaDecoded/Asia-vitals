@@ -1,0 +1,181 @@
+date,part,name,contribution,general_yoy,calculated
+2024-04-01,PRI,Primary goods,3.16,7.1,y
+2024-04-01,CAP,Capital goods,0.16,7.1,y
+2024-04-01,INT,Intermediate goods,0.92,7.1,y
+2024-04-01,INF,Infrastructure and construction goods,0.89,7.1,y
+2024-04-01,CD,Consumer durables,1.15,7.1,y
+2024-04-01,CND,Consumer non-durables,0.82,7.1,y
+2024-05-01,PRI,Primary goods,2.96,7.3,y
+2024-05-01,CAP,Capital goods,0.6,7.3,y
+2024-05-01,INT,Intermediate goods,1.17,7.3,y
+2024-05-01,INF,Infrastructure and construction goods,0.92,7.3,y
+2024-05-01,CD,Consumer durables,1.23,7.3,y
+2024-05-01,CND,Consumer non-durables,0.34,7.3,y
+2024-06-01,PRI,Primary goods,1.85,7.3,y
+2024-06-01,CAP,Capital goods,0.78,7.3,y
+2024-06-01,INT,Intermediate goods,1.82,7.3,y
+2024-06-01,INF,Infrastructure and construction goods,0.89,7.3,y
+2024-06-01,CD,Consumer durables,1.18,7.3,y
+2024-06-01,CND,Consumer non-durables,0.83,7.3,y
+2024-07-01,PRI,Primary goods,2.15,7.8,y
+2024-07-01,CAP,Capital goods,0.88,7.8,y
+2024-07-01,INT,Intermediate goods,2.22,7.8,y
+2024-07-01,INF,Infrastructure and construction goods,0.77,7.8,y
+2024-07-01,CD,Consumer durables,1.19,7.8,y
+2024-07-01,CND,Consumer non-durables,0.56,7.8,y
+2024-08-01,PRI,Primary goods,-0.26,2.1,y
+2024-08-01,CAP,Capital goods,0.06,2.1,y
+2024-08-01,INT,Intermediate goods,0.84,2.1,y
+2024-08-01,INF,Infrastructure and construction goods,0.22,2.1,y
+2024-08-01,CD,Consumer durables,0.8,2.1,y
+2024-08-01,CND,Consumer non-durables,0.48,2.1,y
+2024-09-01,PRI,Primary goods,0.77,4.7,y
+2024-09-01,CAP,Capital goods,0.5,4.7,y
+2024-09-01,INT,Intermediate goods,1.0,4.7,y
+2024-09-01,INF,Infrastructure and construction goods,0.41,4.7,y
+2024-09-01,CD,Consumer durables,1.27,4.7,y
+2024-09-01,CND,Consumer non-durables,0.68,4.7,y
+2024-10-01,PRI,Primary goods,1.17,5.6,y
+2024-10-01,CAP,Capital goods,0.24,5.6,y
+2024-10-01,INT,Intermediate goods,1.11,5.6,y
+2024-10-01,INF,Infrastructure and construction goods,0.62,5.6,y
+2024-10-01,CD,Consumer durables,1.0,5.6,y
+2024-10-01,CND,Consumer non-durables,1.38,5.6,y
+2024-11-01,PRI,Primary goods,1.36,5.9,y
+2024-11-01,CAP,Capital goods,0.62,5.9,y
+2024-11-01,INT,Intermediate goods,1.49,5.9,y
+2024-11-01,INF,Infrastructure and construction goods,0.88,5.9,y
+2024-11-01,CD,Consumer durables,0.93,5.9,y
+2024-11-01,CND,Consumer non-durables,0.65,5.9,y
+2024-12-01,PRI,Primary goods,1.57,6.1,y
+2024-12-01,CAP,Capital goods,1.21,6.1,y
+2024-12-01,INT,Intermediate goods,1.69,6.1,y
+2024-12-01,INF,Infrastructure and construction goods,0.85,6.1,y
+2024-12-01,CD,Consumer durables,0.9,6.1,y
+2024-12-01,CND,Consumer non-durables,-0.09,6.1,y
+2025-01-01,PRI,Primary goods,1.49,6.3,y
+2025-01-01,CAP,Capital goods,0.66,6.3,y
+2025-01-01,INT,Intermediate goods,1.59,6.3,y
+2025-01-01,INF,Infrastructure and construction goods,0.93,6.3,y
+2025-01-01,CD,Consumer durables,0.9,6.3,y
+2025-01-01,CND,Consumer non-durables,0.76,6.3,y
+2025-02-01,PRI,Primary goods,0.74,2.9,y
+2025-02-01,CAP,Capital goods,0.69,2.9,y
+2025-02-01,INT,Intermediate goods,0.8,2.9,y
+2025-02-01,INF,Infrastructure and construction goods,0.69,2.9,y
+2025-02-01,CD,Consumer durables,0.14,2.9,y
+2025-02-01,CND,Consumer non-durables,-0.09,2.9,y
+2025-03-01,PRI,Primary goods,0.73,5.8,y
+2025-03-01,CAP,Capital goods,1.37,5.8,y
+2025-03-01,INT,Intermediate goods,1.36,5.8,y
+2025-03-01,INF,Infrastructure and construction goods,1.08,5.8,y
+2025-03-01,CD,Consumer durables,0.57,5.8,y
+2025-03-01,CND,Consumer non-durables,0.75,5.8,y
+2025-04-01,PRI,Primary goods,0.38,4.8,y
+2025-04-01,CAP,Capital goods,1.06,4.8,y
+2025-04-01,INT,Intermediate goods,1.54,4.8,y
+2025-04-01,INF,Infrastructure and construction goods,0.69,4.8,y
+2025-04-01,CD,Consumer durables,0.58,4.8,y
+2025-04-01,CND,Consumer non-durables,0.53,4.8,y
+2025-05-01,PRI,Primary goods,0.22,3.4,y
+2025-05-01,CAP,Capital goods,0.74,3.4,y
+2025-05-01,INT,Intermediate goods,1.05,3.4,y
+2025-05-01,INF,Infrastructure and construction goods,0.65,3.4,y
+2025-05-01,CD,Consumer durables,0.21,3.4,y
+2025-05-01,CND,Consumer non-durables,0.53,3.4,y
+2025-06-01,PRI,Primary goods,0.64,2.2,y
+2025-06-01,CAP,Capital goods,0.3,2.2,y
+2025-06-01,INT,Intermediate goods,0.68,2.2,y
+2025-06-01,INF,Infrastructure and construction goods,0.75,2.2,y
+2025-06-01,CD,Consumer durables,0.15,2.2,y
+2025-06-01,CND,Consumer non-durables,-0.33,2.2,y
+2025-07-01,PRI,Primary goods,1.43,5.4,y
+2025-07-01,CAP,Capital goods,0.5,5.4,y
+2025-07-01,INT,Intermediate goods,0.81,5.4,y
+2025-07-01,INF,Infrastructure and construction goods,1.26,5.4,y
+2025-07-01,CD,Consumer durables,0.45,5.4,y
+2025-07-01,CND,Consumer non-durables,0.92,5.4,y
+2025-08-01,PRI,Primary goods,2.17,4.7,y
+2025-08-01,CAP,Capital goods,0.5,4.7,y
+2025-08-01,INT,Intermediate goods,0.76,4.7,y
+2025-08-01,INF,Infrastructure and construction goods,1.05,4.7,y
+2025-08-01,CD,Consumer durables,0.1,4.7,y
+2025-08-01,CND,Consumer non-durables,0.01,4.7,y
+2025-09-01,PRI,Primary goods,1.87,6.1,y
+2025-09-01,CAP,Capital goods,1.19,6.1,y
+2025-09-01,INT,Intermediate goods,1.45,6.1,y
+2025-09-01,INF,Infrastructure and construction goods,1.1,6.1,y
+2025-09-01,CD,Consumer durables,0.57,6.1,y
+2025-09-01,CND,Consumer non-durables,-0.07,6.1,y
+2025-10-01,PRI,Primary goods,0.11,-0.9,y
+2025-10-01,CAP,Capital goods,0.43,-0.9,y
+2025-10-01,INT,Intermediate goods,0.26,-0.9,y
+2025-10-01,INF,Infrastructure and construction goods,0.57,-0.9,y
+2025-10-01,CD,Consumer durables,-0.73,-0.9,y
+2025-10-01,CND,Consumer non-durables,-1.52,-0.9,y
+2025-11-01,PRI,Primary goods,0.35,7.0,y
+2025-11-01,CAP,Capital goods,1.37,7.0,y
+2025-11-01,INT,Intermediate goods,1.84,7.0,y
+2025-11-01,INF,Infrastructure and construction goods,1.36,7.0,y
+2025-11-01,CD,Consumer durables,1.45,7.0,y
+2025-11-01,CND,Consumer non-durables,0.63,7.0,y
+2025-12-01,PRI,Primary goods,0.73,6.7,y
+2025-12-01,CAP,Capital goods,1.12,6.7,y
+2025-12-01,INT,Intermediate goods,1.74,6.7,y
+2025-12-01,INF,Infrastructure and construction goods,1.4,6.7,y
+2025-12-01,CD,Consumer durables,0.79,6.7,y
+2025-12-01,CND,Consumer non-durables,0.95,6.7,y
+2026-01-01,PRI,Primary goods,0.58,4.1,y
+2026-01-01,CAP,Capital goods,1.01,4.1,y
+2026-01-01,INT,Intermediate goods,1.25,4.1,y
+2026-01-01,INF,Infrastructure and construction goods,1.48,4.1,y
+2026-01-01,CD,Consumer durables,-0.03,4.1,y
+2026-01-01,CND,Consumer non-durables,-0.19,4.1,y
+2026-02-01,PRI,Primary goods,0.0,4.4,y
+2026-02-01,CAP,Capital goods,1.45,4.4,y
+2026-02-01,INT,Intermediate goods,1.03,4.4,y
+2026-02-01,INF,Infrastructure and construction goods,1.17,4.4,y
+2026-02-01,CD,Consumer durables,0.48,4.4,y
+2026-02-01,CND,Consumer non-durables,0.24,4.4,y
+2026-03-01,PRI,Primary goods,0.07,3.0,y
+2026-03-01,CAP,Capital goods,0.89,3.0,y
+2026-03-01,INT,Intermediate goods,1.3,3.0,y
+2026-03-01,INF,Infrastructure and construction goods,0.6,3.0,y
+2026-03-01,CD,Consumer durables,0.26,3.0,y
+2026-03-01,CND,Consumer non-durables,-0.09,3.0,y
+2026-04-01,PRI,Primary goods,0.25,4.9,y
+2026-04-01,CAP,Capital goods,0.96,4.9,y
+2026-04-01,INT,Intermediate goods,2.31,4.9,y
+2026-04-01,INF,Infrastructure and construction goods,0.71,4.9,y
+2026-04-01,CD,Consumer durables,0.63,4.9,y
+2026-04-01,CND,Consumer non-durables,0.03,4.9,y
+2026-05-01,PRI,Primary goods,0.85,5.0,y
+2026-05-01,CAP,Capital goods,1.29,5.0,y
+2026-05-01,INT,Intermediate goods,1.31,5.0,y
+2026-05-01,INF,Infrastructure and construction goods,0.77,5.0,y
+2026-05-01,CD,Consumer durables,0.87,5.0,y
+2026-05-01,CND,Consumer non-durables,-0.07,5.0,y
+2026-06-01,PRI,Primary goods,1.66,8.8,y
+2026-06-01,CAP,Capital goods,1.55,8.8,y
+2026-06-01,INT,Intermediate goods,2.56,8.8,y
+2026-06-01,INF,Infrastructure and construction goods,1.04,8.8,y
+2026-06-01,CD,Consumer durables,1.12,8.8,y
+2026-06-01,CND,Consumer non-durables,0.87,8.8,y
+2026-07-01,PRI,Primary goods,1.25,7.4,y
+2026-07-01,CAP,Capital goods,1.6,7.4,y
+2026-07-01,INT,Intermediate goods,2.38,7.4,y
+2026-07-01,INF,Infrastructure and construction goods,0.95,7.4,y
+2026-07-01,CD,Consumer durables,1.36,7.4,y
+2026-07-01,CND,Consumer non-durables,-0.12,7.4,y
+2026-08-01,PRI,Primary goods,1.23,7.8,y
+2026-08-01,CAP,Capital goods,1.35,7.8,y
+2026-08-01,INT,Intermediate goods,3.24,7.8,y
+2026-08-01,INF,Infrastructure and construction goods,0.95,7.8,y
+2026-08-01,CD,Consumer durables,1.21,7.8,y
+2026-08-01,CND,Consumer non-durables,-0.17,7.8,y
+2026-09-01,PRI,Primary goods,1.15,6.7,y
+2026-09-01,CAP,Capital goods,1.0,6.7,y
+2026-09-01,INT,Intermediate goods,2.75,6.7,y
+2026-09-01,INF,Infrastructure and construction goods,0.83,6.7,y
+2026-09-01,CD,Consumer durables,0.73,6.7,y
+2026-09-01,CND,Consumer non-durables,0.21,6.7,y

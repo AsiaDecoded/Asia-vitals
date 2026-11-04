@@ -397,6 +397,44 @@ USE_BASED = [("Primary Goods", "PRI", "Primary goods"), ("Capital Goods", "CAP",
              ("Consumer Durables", "CD", "Consumer durables"), ("Consumer Non-durables", "CND", "Consumer non-durables")]
 
 
+# MoSPI's 2022-23 use-based weights (the user's file IIP_Dashboard_Data_Sept2026, sheet UBC-Annual; sum 100.000)
+USE_W = {"Primary Goods": 31.136, "Capital Goods": 8.082, "Intermediate Goods": 22.416,
+         "Infrastructure/ Construction Goods": 10.908, "Consumer Durables": 11.311, "Consumer Non-durables": 16.147}
+
+
+def contributions_use(rows):
+    """Contributions of the six use-based categories to general IIP y/y, pp (user, 4 Nov 2026): weight x (index -
+    index a year earlier) / general index a year earlier, MoSPI 2022-23 weights. From April 2024. Check: parts sum
+    to MoSPI's published general y/y within 0.15pp."""
+    I = {}
+    for r in rows:
+        if r["base_year"] != "2022-23" or r["index"] is None or r["sub_category"]:
+            continue
+        if r["type"] == "Use-based category" or r["category"] == "General":
+            I.setdefault(r["date"], {})[r["category"]] = r["index"]
+            if r["category"] == "General":
+                I[r["date"]]["_gyoy"] = r["growth_rate"]
+    code = {c: k for c, k, _ in USE_BASED}
+    name = {c: n for c, _, n in USE_BASED}
+    out, errors = [], []
+    for d in sorted(I):
+        if d < "2024-04-01":
+            continue
+        a, b = I[d], I.get(f"{int(d[:4]) - 1}{d[4:]}", {})
+        if any(k not in a or k not in b for k in list(USE_W) + ["General"]):
+            errors.append(f"IIP use-based contributions {d[:7]}: series missing"); continue
+        parts = {c: w * (a[c] - b[c]) / b["General"] for c, w in USE_W.items()}
+        tot = sum(parts.values())
+        if a["_gyoy"] is None or abs(tot - a["_gyoy"]) > 0.15:
+            errors.append(f"IIP use-based contributions {d[:7]}: parts sum to {tot:.2f}, MoSPI general y/y {a['_gyoy']}")
+        for c, v in parts.items():
+            out.append({"date": d, "part": code[c], "name": name[c], "contribution": round(v, 2),
+                        "general_yoy": a["_gyoy"], "calculated": "y"})
+    if errors:
+        raise CheckFailed(errors[:20])
+    return out
+
+
 def use_based(rows):
     """General IIP and the six use-based categories, 2022-23 base, latest month (user, 4 Nov 2026, Manufacturing tab
     bar chart): MoSPI's y/y as published; m3 ("3mma"), the plain average of the latest three months' published y/y;
@@ -456,6 +494,11 @@ def update(force=False, **_):
         w = csv.DictWriter(fh, fieldnames=list(ub[0]), lineterminator="\n")
         w.writeheader()
         w.writerows(ub)
+    uc = contributions_use(rows)
+    with open(OUT / "in_iip_use_contrib.csv", "w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=list(uc[0]), lineterminator="\n")
+        w.writeheader()
+        w.writerows(uc)
     ci = contributions_items(rows)
     with open(OUT / "in_iip_contrib_items.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=list(ci[0]), lineterminator="\n")

@@ -472,7 +472,7 @@ dash.calc('iip_movers', {
     const rows = all.filter((r) => r.code === 'GEN').concat(all.filter((r) => r.code !== 'GEN').sort((a, b) => b.m3 - a.m3));
     const S = [{ key: 'm3', name: '3mma', color: 'var(--ad-c2)', bar: true }, { key: 'ytd', name: 'YTD', color: 'var(--ad-c1)', bar: true }];
     legend(id + '-legend', S);
-    const top = 6, rowH = 30, H = top + rows.length * rowH + 22, W = box.clientWidth;
+    const top = 6, H = fitH(id, top + rows.length * 30 + 22), rowH = (H - top - 22) / rows.length, W = box.clientWidth;   // height of the contributions chart beside it
     box.replaceChildren();
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
     const lw = Math.min(W * 0.42, J.textWidth(svg, rows.map((r) => r.name)) + 12);
@@ -617,17 +617,31 @@ dash.calc('iip_movers', {
   // weight x change in index / general index a year earlier, at MoSPI's 2022-23 weights (calculated in in_iip_mospi);
   // stacked bars, general IIP y/y (MoSPI, published) as the line. Colours: user's contribution-chart scheme.
   function mfgContrib() {
-    const id = 'mfg-contrib', box = document.getElementById(id + '-chart');
-    const P = [   // bottom of the stack first
+    contribChart('mfg-contrib', 'in_iip_contrib', [   // bottom of the stack first
       { key: 'X2627', name: 'Non-electronics manufacturing', color: '#1F4E79', bar: true },
       { key: 'E2627', name: 'Electronics manufacturing', color: '#0C84FF', bar: true },
       { key: 'other', name: 'Other industries', color: '#A6A6A6', bar: true },
-    ];
+    ]);
+  }
+  // Contributions of the use-based categories to general IIP y/y (user, 4 Nov 2026), MoSPI 2022-23 use-based weights,
+  // calculated in in_iip_mospi; largest weight at the bottom of the stack.
+  function mfgUseContrib() {
+    contribChart('mfg-usec', 'in_iip_use_contrib', [
+      { key: 'PRI', name: 'Primary goods', color: '#1F4E79', bar: true },
+      { key: 'INT', name: 'Intermediate goods', color: '#0C84FF', bar: true },
+      { key: 'CND', name: 'Consumer non-durables', color: '#92D050', bar: true },
+      { key: 'CD', name: 'Consumer durables', color: '#FFC000', bar: true },
+      { key: 'INF', name: 'Infrastructure and construction goods', color: '#EE6631', bar: true },
+      { key: 'CAP', name: 'Capital goods', color: '#A6A6A6', bar: true },
+    ]);
+  }
+  function contribChart(id, ds, P) {
+    const box = document.getElementById(id + '-chart');
     const LINE = { key: 'g', name: 'General IIP, y/y', color: '#BD1B21' };
     legend(id + '-legend', [LINE].concat(P.slice().reverse()));
-    if (!status(box, ['in_iip_contrib'])) return;
+    if (!status(box, [ds])) return;
     const by = new Map();
-    dash.data('in_iip_contrib').data.forEach((r) => {
+    dash.data(ds).data.forEach((r) => {
       if (!by.has(r.date)) by.set(r.date, { date: r.date, g: N(r.general_yoy) });
       by.get(r.date)[r.part] = N(r.contribution);
     });
@@ -810,8 +824,9 @@ dash.calc('iip_movers', {
       cancelAnimationFrame(raf); raf = requestAnimationFrame(() => { if (!document.getElementById('manufacturing').hidden) f(); });
     }).observe(el); };
     watch(document.getElementById('mfg-col-r'), () => mfgDiv());
+    watch(document.getElementById('mfg-usec'), () => mfgUse());
   }
-  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgIipM(); mfgIip(); mfgDiv(); mfgUse(); mfgElec(); mfgContrib(); mfgShare(); mfgGva(); mfgCu(); } };
+  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgIipM(); mfgIip(); mfgDiv(); mfgUse(); mfgUseContrib(); mfgElec(); mfgContrib(); mfgShare(); mfgGva(); mfgCu(); } };
 
   J.redrawGdp = () => {
     J.redrawMfg();

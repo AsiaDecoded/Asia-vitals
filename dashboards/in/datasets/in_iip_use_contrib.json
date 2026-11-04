@@ -1,0 +1,18 @@
+{
+ "title": "India IIP contributions by use-based category",
+ "description": "Contributions of the six use-based categories to general IIP y/y, pp, 2022-23 base, monthly from April 2024: weight x (index - index a year earlier) / general index a year earlier, MoSPI's 2022-23 use-based weights, calculated; general_yoy is MoSPI's published rate. Built by the AsiaDecoded/asia-vitals pipeline (data/in/iip/in_iip_use_contrib.csv).",
+ "schedule": "Replaced after each monthly IIP release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "in_iip_use_contrib_M2026-09.csv",
+  "url": "/_blob/6b8af6a870781ba977a88f487c8d286f"
+ },
+ "updated": {
+  "at": "2026-11-04T01:20:00Z",
+  "by": "Claude"
+ },
+ "edit": {
+  "via": "claude",
+  "at": "2026-11-04T01:20:00Z"
+ }
+}
