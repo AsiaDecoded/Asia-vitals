@@ -80,6 +80,16 @@
 .ad-slider input[type=range]:focus-visible::-webkit-slider-thumb { outline: 2px solid #0C84FF; outline-offset: 2px; }
 .ad-slider-lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-align: right; margin: 0 8px 4px; font-variant-numeric: tabular-nums; }
 [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+.ax-mfgt { min-width: 900px; }
+.ax-table.ax-mfgt th:first-child, .ax-table.ax-mfgt td:first-child { text-align: left; color: var(--color-fg); width: auto; }
+.ax-table.ax-mfgt th:nth-child(2), .ax-table.ax-mfgt td:nth-child(2) { text-align: left; color: var(--color-fg-muted); }
+.ax-table.ax-mfgt th:nth-child(n+3), .ax-table.ax-mfgt td:nth-child(n+3) { text-align: center; }
+.ax-table.ax-mfgt td.h { font-weight: var(--cds-font-weight-medium); }
+.ax-table.ax-mfgt td.na { color: var(--color-fg-muted); }
+.ax-table.ax-mfgt th.g { border-left: 1px solid var(--color-border-line); }
+.ax-table.ax-mfgt td.g { border-left: 1px solid var(--color-border-line); }
+.ax-mfgline { position: relative; width: 100%; }
+.ax-mfgline svg { display: block; width: 100%; height: auto; font-family: var(--font-anthropic-sans); }
 </style>
 
 <div class="ax">
@@ -90,6 +100,7 @@
 
   <nav class="ax-tabs" role="tablist" aria-label="Sections">
     <button role="tab" data-tab="gdp" aria-selected="true">GDP</button>
+    <button role="tab" data-tab="mfg" aria-selected="false">Manufacturing</button>
     <button role="tab" data-tab="inflation" aria-selected="false">Inflation</button>
     <button role="tab" data-tab="financial" aria-selected="false">Financial</button>
     <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
@@ -113,6 +124,7 @@
         <div class="ax-legend" id="gni-legend"></div>
         <p class="ax-note">t is the first data year the World Bank classified the economy lower-middle income after low income (China 1997, India 2007, Indonesia 1993, the first of two crossings, Vietnam 2009). Thailand, Malaysia and the Philippines were already lower-middle income when the classifications began, so t = 1987, the first year. Index calculated by Asia Decoded. Taiwan is not in the World Bank&rsquo;s data; Japan, South Korea, Hong Kong and Singapore were upper-middle or high income from 1987.</p>
         <p class="ax-note">Source: World Bank, World Development Indicators (NY.GNP.PCAP.CD) and historical income classifications.</p>
+      </div>
       <div class="ax-card" id="gnil-card">
         <div class="ax-cardhead">
           <h3>GNI per capita, <span data-draw="gnilYear" data-source="asia_gni_latest">latest year</span></h3>
@@ -122,6 +134,64 @@
         <div class="ax-legend" id="gnil-legend"></div>
         <p class="ax-note">Income groups and thresholds from the World Bank&rsquo;s historical classifications (the July classification of each data year; <span data-draw="gnilFy" data-source="asia_gni_latest">—</span>). Taiwan is not in the World Bank&rsquo;s data.</p>
         <p class="ax-note">Source: World Bank, World Development Indicators (NY.GNP.PCAP.CD) and historical income classifications.</p>
+      </div>
+    </section>
+  </section>
+
+  <section class="ax-page" id="mfg" role="tabpanel" hidden>
+    <section class="ax-sec">
+      <h2>Manufacturing</h2>
+      <div class="ax-card" id="mfgheat-card">
+        <div class="ax-cardhead">
+          <h3>Manufacturing production, % y/y</h3>
+          <div class="ax-seg" id="mfg-meas" role="group" aria-label="Measure">
+            <button type="button" data-m="yoy" aria-pressed="false">Latest month</button>
+            <button type="button" data-m="m3" aria-pressed="true">3-month average</button>
+            <button type="button" data-m="ytd" aria-pressed="false">Year to date</button>
+          </div>
+        </div>
+        <div class="ax-wrap">
+          <table class="ax-table ax-mfgt">
+            <thead><tr><th>Economy</th><th>Latest</th><th>Manufacturing</th><th class="g">Electronics<span class="u">ISIC 26&ndash;27</span></th><th>Non-electronics</th><th class="g">Refined petroleum<span class="u">19</span></th><th>Chemicals<span class="u">20</span></th><th>Pharma<span class="u">21</span></th><th>Non-metallic minerals<span class="u">23</span></th><th>Basic metals<span class="u">24</span></th></tr></thead>
+            <tbody data-draw="mfgHeat" data-source="asia_mfg_latest"></tbody>
+          </table>
+        </div>
+        <p class="ax-note" id="mfg-heat-note">Each economy&rsquo;s own manufacturing production index, by ISIC Rev. 4 division (or the nearest national equivalent), not seasonally adjusted; y/y as published or calculated from the index. 3-month average: plain average of the latest three months&rsquo; y/y (Vietnam and Hong Kong: latest quarter). Year to date: January to the latest month against the same months a year earlier (calculated). Electronics (ISIC 26 and 27) and non-electronics are built at the agency&rsquo;s own published weights (India, Thailand, Japan) or taken as published (Singapore&rsquo;s Electronics cluster); blank where no weights are published. Singapore: EDB segments, not ISIC (19 = Petroleum, 20 = Petrochemicals, 21 = Pharmaceuticals). Japan: pharma = chemicals less chemicals excluding pharma, at METI&rsquo;s weights. Korea: electrical equipment is KSIC 28. Philippines: deflated value of production. Hong Kong: quarterly, manufacturing only. Not yet in the table: Taiwan, China, Indonesia.</p>
+        <p class="ax-note">Source: METI (Japan), Statistics Korea via Bank of Korea ECOS, C&amp;SD (Hong Kong), EDB via SingStat (Singapore), DOSM (Malaysia), OIE (Thailand), PSA (Philippines), NSO (Vietnam), MoSPI (India); national accounts from each economy&rsquo;s statistics office or central bank.</p>
+      </div>
+      <div class="ax-grid">
+        <div class="ax-card">
+          <h3>Manufacturing share of GDP, %</h3>
+          <div class="ax-fxbars ax-mfgbars" data-draw="mfgShare" data-source="asia_mfg_gva"></div>
+          <p class="ax-note">Nominal manufacturing GVA &divide; nominal GDP, each economy&rsquo;s national accounts on its own definitions; average of the latest four quarters (quarterly shares are seasonal), calculated. Hong Kong: annual, % of GDP at basic prices, as published.</p>
+        </div>
+        <div class="ax-card">
+          <h3>Manufacturing GVA, real % y/y</h3>
+          <div class="ax-fxbars ax-mfgbars" data-draw="mfgGva" data-source="asia_mfg_gva"></div>
+          <p class="ax-note">Latest quarter in each economy&rsquo;s national accounts; growth as published or calculated from published real (chained or constant-price) levels.</p>
+        </div>
+      </div>
+      <div class="ax-card" id="mfgline-card">
+        <div class="ax-cardhead">
+          <h3>Production over time, % y/y</h3>
+          <details class="ax-pick" id="mfg-pick">
+            <summary>Economies <span class="n" id="mfg-pick-n"></span></summary>
+            <div class="ax-pick-list" id="mfg-pick-list"></div>
+          </details>
+        </div>
+        <div class="ax-seg" id="mfg-ind" role="group" aria-label="Industry">
+          <button type="button" data-i="mfg" aria-pressed="true">Manufacturing</button>
+          <button type="button" data-i="elec" aria-pressed="false">Electronics</button>
+          <button type="button" data-i="nonelec" aria-pressed="false">Non-electronics</button>
+          <button type="button" data-i="19" aria-pressed="false">Refined petroleum</button>
+          <button type="button" data-i="20" aria-pressed="false">Chemicals</button>
+          <button type="button" data-i="21" aria-pressed="false">Pharma</button>
+          <button type="button" data-i="23" aria-pressed="false">Non-metallic minerals</button>
+          <button type="button" data-i="24" aria-pressed="false">Basic metals</button>
+        </div>
+        <div class="ax-mfgline" data-draw="mfgLine" data-source="asia_mfg_iip"></div>
+        <div class="ax-legend" id="mfg-legend"></div>
+        <p class="ax-note">3-month average of y/y for monthly indices; quarterly y/y for Vietnam and Hong Kong. Same sources and definitions as the table above.</p>
       </div>
     </section>
   </section>
@@ -654,6 +724,161 @@
     box.append(svg);
     if (leg) for (const k of ['H', 'UM', 'LM', 'L']) { if (!rows.some((r) => r.income_group === k)) continue; const it = el('span'); const sw = el('span', 'sw'); sw.style.background = GRP[k][1]; sw.style.height = '10px'; sw.style.width = '10px'; it.append(sw, GRP[k][0]); leg.append(it); }
   });
+
+  // Manufacturing tab (first draft 4 Nov 2026): heat table, share and GVA bars, production over time
+  const MFG_ORDER = ['JP', 'KR', 'TW', 'CN', 'HK', 'SG', 'MY', 'TH', 'ID', 'PH', 'VN', 'IN'];
+  const MFG_NAME = {JP: 'Japan', KR: 'South Korea', TW: 'Taiwan', CN: 'China', HK: 'Hong Kong', SG: 'Singapore', MY: 'Malaysia', TH: 'Thailand', ID: 'Indonesia', PH: 'Philippines', VN: 'Vietnam', IN: 'India'};
+  const MFG_IND = [['mfg', 'Manufacturing'], ['elec', 'Electronics'], ['nonelec', 'Non-electronics'], ['19', 'Refined petroleum'], ['20', 'Chemicals'], ['21', 'Pharma'], ['23', 'Non-metallic minerals'], ['24', 'Basic metals']];
+  const MFG_COL = {JP: '#595959', KR: '#7030A0', TW: '#FF66CC', CN: '#0C84FF', HK: '#C55A11', SG: '#00A3A1', MY: '#A6A6A6', TH: '#92D050', ID: '#BD1B21', PH: '#ED7D31', VN: '#1F4E79', IN: '#FFC000'};
+  let mfgMeas = 'm3', mfgInd = 'mfg';
+  let mfgSel = new Set(['IN', 'TH', 'KR', 'JP', 'MY', 'SG']);
+  try { const v = JSON.parse(localStorage.getItem('ax-mfg-sel') || 'null'); if (Array.isArray(v) && v.length) mfgSel = new Set(v); } catch (e) { /* storage unavailable */ }
+  const mfgSave = () => { try { localStorage.setItem('ax-mfg-sel', JSON.stringify([...mfgSel])); } catch (e) { /* ignore */ } };
+  const qlab = (d) => 'Q' + (Math.floor((Number(d.slice(5, 7)) - 1) / 3) + 1) + '-' + d.slice(2, 4);
+  const per = (r) => (r.freq === 'Q' ? qlab(r.date) : monthShort(r.date));
+  const heat = (v) => {
+    if (v == null || Number.isNaN(v)) return '';
+    const a = 0.08 + Math.min(Math.abs(v) / 20, 1) * 0.5;
+    return v >= 0 ? `rgba(31, 78, 121, ${a.toFixed(2)})` : `rgba(189, 27, 33, ${a.toFixed(2)})`;
+  };
+  dash.draw('mfgHeat', (tbody) => {
+    const D = dash.data('asia_mfg_latest');
+    tbody.replaceChildren();
+    if (D.status !== 'ok') return;
+    for (const e of MFG_ORDER) {
+      const rs = D.data.filter((r) => r.economy === e);
+      const by = Object.fromEntries(rs.map((r) => [r.industry, r]));
+      const tr = document.createElement('tr');
+      const m = by.mfg || rs[0];
+      tr.append(el('td', null, MFG_NAME[e]), el('td', null, m ? per(m) + (m.freq === 'Q' ? '' : '') : 'not yet'));
+      MFG_IND.forEach(([k, nm], i) => {
+        const r = by[k];
+        let v = r ? r[mfgMeas] : '';
+        v = v === '' || v == null ? null : Number(v);
+        const td = el('td', (v == null ? 'na' : 'h') + (i === 1 || i === 3 ? ' g' : ''), v == null ? '—' : f1(v));
+        if (v != null) {
+          td.style.background = heat(v);
+          const extra = mfgMeas === 'ytd' && r.ytd_months ? `, Jan–${MON[Number(r.date.slice(5, 7)) - 1]} ${r.date.slice(0, 4)}` : mfgMeas === 'm3' && r.freq === 'M' ? `, 3 months to ${monthShort(r.date)}` : `, ${per(r)}`;
+          td.title = `${MFG_NAME[e]}, ${nm}: ${f1(v)}% y/y${extra}`;
+        }
+        tr.append(td);
+      });
+      tbody.append(tr);
+    }
+  });
+  document.querySelectorAll('#mfg-meas button').forEach((b) => b.addEventListener('click', () => {
+    mfgMeas = b.dataset.m;
+    document.querySelectorAll('#mfg-meas button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    dash.draw('mfgHeat');
+  }));
+  const mfgLatestGva = (key) => {
+    const D = dash.data('asia_mfg_gva');
+    if (D.status !== 'ok') return [];
+    const out = [];
+    for (const e of MFG_ORDER) {
+      const rs = D.data.filter((r) => r.economy === e && r[key] !== '' && r[key] != null && (key !== 'real_yoy' || r.freq === 'Q'));
+      if (!rs.length) continue;
+      const q = rs.filter((r) => r.freq === 'Q');
+      const r = (q.length ? q : rs)[(q.length ? q : rs).length - 1];
+      out.push({...r, name: MFG_NAME[e], v: Number(r[key])});
+    }
+    return out;
+  };
+  const plab = (p) => (p.includes('-Q') ? 'Q' + p.slice(-1) + '-' + p.slice(2, 4) : p);
+  dash.draw('mfgShare', (box) => {
+    const rows = mfgLatestGva('share_4q');
+    if (!rows.length) { box.replaceChildren(); return; }
+    bars(box, rows, (r) => `${r.name} (${plab(r.period)})`, (r) => `${r.name}: ${f1(r.v)}% of GDP` + (r.freq === 'Q' ? `, four quarters to ${plab(r.period)}` : `, ${r.period}`), 'Manufacturing share of GDP, %');
+  });
+  dash.draw('mfgGva', (box) => {
+    const rows = mfgLatestGva('real_yoy');
+    if (!rows.length) { box.replaceChildren(); return; }
+    bars(box, rows, (r) => `${r.name} (${plab(r.period)})`, (r) => `${r.name}: real manufacturing GVA ${f1(r.v)}% y/y, ${plab(r.period)}`, 'Manufacturing GVA, real % y/y, latest quarter');
+  });
+  const mfgPicker = (avail) => {
+    const list = document.getElementById('mfg-pick-list');
+    const n = document.getElementById('mfg-pick-n');
+    if (n) n.textContent = `(${avail.filter((e) => mfgSel.has(e)).length} of ${avail.length})`;
+    if (!list || list.dataset.built === avail.join()) return;
+    list.dataset.built = avail.join();
+    list.replaceChildren();
+    for (const e of avail) {
+      const lab = el('label'); const cb = el('input'); cb.type = 'checkbox'; cb.value = e; cb.checked = mfgSel.has(e);
+      cb.addEventListener('change', () => { if (cb.checked) mfgSel.add(e); else mfgSel.delete(e); mfgSave(); dash.draw('mfgLine'); });
+      const sw = el('span', 'sw'); sw.style.background = MFG_COL[e];
+      lab.append(cb, sw, el('span', null, MFG_NAME[e]));
+      list.append(lab);
+    }
+    const acts = el('div', 'acts');
+    const b1 = el('button', null, 'All'), b2 = el('button', null, 'None');
+    b1.type = b2.type = 'button';
+    b1.addEventListener('click', () => { mfgSel = new Set(avail); mfgSave(); list.querySelectorAll('input').forEach((c) => { c.checked = true; }); dash.draw('mfgLine'); });
+    b2.addEventListener('click', () => { mfgSel = new Set(); mfgSave(); list.querySelectorAll('input').forEach((c) => { c.checked = false; }); dash.draw('mfgLine'); });
+    acts.append(b1, b2); list.append(acts);
+  };
+  document.addEventListener('click', (ev) => { const d = document.getElementById('mfg-pick'); if (d && d.open && !d.contains(ev.target)) d.open = false; });
+  document.querySelectorAll('#mfg-ind button').forEach((b) => b.addEventListener('click', () => {
+    mfgInd = b.dataset.i;
+    document.querySelectorAll('#mfg-ind button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    dash.draw('mfgLine');
+  }));
+  const mi = (d) => Number(d.slice(0, 4)) * 12 + Number(d.slice(5, 7)) - 1;
+  dash.draw('mfgLine', (box) => {
+    const D = dash.data('asia_mfg_iip');
+    box.replaceChildren();
+    const leg = document.getElementById('mfg-legend'); if (leg) leg.replaceChildren();
+    if (D.status !== 'ok') return;
+    const start = '2019-01-01';
+    const rows = D.data.filter((r) => r.industry === mfgInd && r.yoy !== '' && r.yoy != null);
+    const avail = MFG_ORDER.filter((e) => rows.some((r) => r.economy === e));
+    mfgPicker(avail);
+    const series = [];
+    for (const e of avail) {
+      if (!mfgSel.has(e)) continue;
+      const rs = rows.filter((r) => r.economy === e).sort((a, b) => (a.date < b.date ? -1 : 1));
+      const pts = [];
+      if (rs.length && rs[0].freq === 'Q') {
+        for (const r of rs) if (r.date >= start) pts.push([mi(r.date) + 1, Number(r.yoy), qlab(r.date)]);
+      } else {
+        for (let i = 2; i < rs.length; i++) {
+          if (rs[i].date < start || mi(rs[i].date) - mi(rs[i - 2].date) !== 2) continue;
+          pts.push([mi(rs[i].date), (Number(rs[i].yoy) + Number(rs[i - 1].yoy) + Number(rs[i - 2].yoy)) / 3, monthShort(rs[i].date)]);
+        }
+      }
+      if (pts.length) series.push({e, pts});
+    }
+    if (!series.length) return;
+    const W = Math.max(320, box.clientWidth || 800), H = Math.round(Math.min(420, Math.max(260, W * 0.42)));
+    const L = 40, R = 16, T = 12, B = 26;
+    const xs = series.flatMap((s) => s.pts.map((p) => p[0])), ys = series.flatMap((s) => s.pts.map((p) => p[1]));
+    const x0 = mi(start), x1 = Math.max(...xs);
+    let lo = Math.min(0, ...ys), hi = Math.max(0, ...ys);
+    const span = hi - lo, step = span > 120 ? 40 : span > 60 ? 20 : span > 30 ? 10 : 5;
+    lo = Math.floor(lo / step) * step; hi = Math.ceil(hi / step) * step;
+    const X = (m) => L + (m - x0) / (x1 - x0 || 1) * (W - L - R), Y = (v) => T + (hi - v) / (hi - lo || 1) * (H - T - B);
+    const svg = document.createElementNS(SVG, 'svg');
+    svg.setAttribute('viewBox', `0 0 ${W} ${H}`); svg.setAttribute('role', 'img');
+    const indName = (MFG_IND.find((i) => i[0] === mfgInd) || [0, mfgInd])[1];
+    svg.setAttribute('aria-label', `${indName} production, % y/y: ` + series.map((s) => `${MFG_NAME[s.e]} ${f1(s.pts[s.pts.length - 1][1])} (${s.pts[s.pts.length - 1][2]})`).join(', '));
+    const add = (tag, attrs, text) => { const nd = document.createElementNS(SVG, tag); for (const k in attrs) nd.setAttribute(k, attrs[k]); if (text != null) nd.textContent = text; svg.append(nd); return nd; };
+    for (let v = lo; v <= hi + 1e-9; v += step) {
+      add('line', {x1: L, x2: W - R, y1: Y(v), y2: Y(v), stroke: 'var(--color-border-line)', 'stroke-width': v === 0 ? 1.2 : 0.6, opacity: v === 0 ? 1 : 0.7});
+      add('text', {x: L - 6, y: Y(v) + 4, 'text-anchor': 'end', 'font-size': 11, fill: 'var(--color-fg-muted)'}, f1(v).replace('.0', ''));
+    }
+    const y0 = Number(start.slice(0, 4)), y1 = Math.floor(x1 / 12), every = W < 600 ? 2 : 1;
+    for (let y = y0; y <= y1; y += every) add('text', {x: X(y * 12), y: H - 8, 'text-anchor': 'start', 'font-size': 11, fill: 'var(--color-fg-muted)'}, String(y));
+    for (const s of series) {
+      let d = '', prev = null;
+      for (const p of s.pts) { d += (prev != null && p[0] - prev <= 3 ? 'L' : 'M') + X(p[0]).toFixed(1) + ',' + Y(p[1]).toFixed(1); prev = p[0]; }
+      const path = add('path', {d, fill: 'none', stroke: MFG_COL[s.e], 'stroke-width': 1.8, 'stroke-linejoin': 'round'});
+      const last = s.pts[s.pts.length - 1];
+      const tt = document.createElementNS(SVG, 'title'); tt.textContent = `${MFG_NAME[s.e]}: ${f1(last[1])}% (${last[2]})`; path.append(tt);
+      if (leg) { const it = el('span'); const sw = el('span', 'sw'); sw.style.background = MFG_COL[s.e]; it.append(sw, `${MFG_NAME[s.e]} ${f1(last[1])} (${last[2]})`); leg.append(it); }
+    }
+    box.append(svg);
+  });
+  let mfgW = 0;
+  new ResizeObserver(() => { const b = document.querySelector('.ax-mfgline'); if (b && b.clientWidth && b.clientWidth !== mfgW) { mfgW = b.clientWidth; dash.draw('mfgLine'); dash.draw('mfgShare'); dash.draw('mfgGva'); } }).observe(document.querySelector('.ax-mfgline'));
   let gniW = 0;
   new ResizeObserver(() => { const b = document.querySelector('.ax-gni'); if (b && b.clientWidth && b.clientWidth !== gniW) { gniW = b.clientWidth; dash.draw('gniChart'); dash.draw('gnilBars'); } }).observe(document.querySelector('.ax-gni'));
 
@@ -671,8 +896,9 @@
     document.querySelectorAll('.ax [role=tabpanel]').forEach((p) => { p.hidden = p.id !== id; });
     if (id === 'financial') { dash.draw('fxBars'); dash.draw('eqBars'); }
     if (id === 'gdp') { dash.draw('gniChart'); dash.draw('gnilBars'); }
+    if (id === 'mfg') { dash.draw('mfgHeat'); dash.draw('mfgShare'); dash.draw('mfgGva'); dash.draw('mfgLine'); }
   };
   document.querySelectorAll('.ax [role=tab]').forEach((t) => t.addEventListener('click', () => { show(t.dataset.tab); dash.setLink(t.dataset.tab); }));
-  if (['methodology', 'financial', 'gdp', 'inflation'].includes(location.hash.slice(1))) show(location.hash.slice(1));
+  if (['methodology', 'financial', 'gdp', 'mfg', 'inflation'].includes(location.hash.slice(1))) show(location.hash.slice(1));
 })();
 </script>
