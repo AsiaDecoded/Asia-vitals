@@ -591,7 +591,8 @@ dash.calc('iip_movers', {
     const mAxis = (r) => (r.date.slice(5, 7) === '01' ? r.date.slice(0, 4) : null);
     const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), true, mAxis,
       { anchorEvery: (r) => r.date.slice(5, 7) === '01', top: 24 });
-    if (rows[0].date < '2023-04-01' && rows[rows.length - 1].date >= '2023-04-01') vline(svg, x, '2023-04-01', H, 'WPI 2022-23 base');
+    // on Apr 2024, the first y/y with both months on the 2022-23 base (user, 4 Nov 2026)
+    if (rows[0].date < '2024-04-01' && rows[rows.length - 1].date >= '2024-04-01') vline(svg, x, '2024-04-01', H, 'WPI 2022-23 base');
     const dots = drawLines(svg, x, y, rows, S);
     const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     const extras = hover(svg, document.getElementById(id), x, rows, H, ml, W - mr, (r) => `${MON[Number(r.date.slice(5, 7)) - 1]} ${r.date.slice(0, 4)}`, (r, px) => {
