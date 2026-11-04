@@ -1,14 +1,14 @@
 {
  "title": "India output PPI by manufacturing group",
- "description": "Output PPI, manufactured products and its 23 groups (NIC 2-digit), 2022-23 base, latest month: y/y, 3mma (plain average of the latest three months' y/y) and calendar YTD (average index January to the latest month against the same months a year earlier), all calculated from the Office of the Economic Adviser's indices; also manufactured products excluding coke and refined petroleum (XPET), electricity (ELEC) and the rest of the output PPI (REST: all commodities less manufactured products and electricity), at the published weights. Built by the AsiaDecoded/asia-vitals pipeline (in_ppi_oea, data/in/ppi/in_ppi_mfg_groups.csv).",
+ "description": "Output PPI, manufactured products and its 23 groups (NIC 2-digit), 2022-23 base, latest month: y/y, 3mma (plain average of the latest three months' y/y) and calendar YTD (average index January to the latest month against the same months a year earlier), all calculated from the Office of the Economic Adviser's indices; also the headline output PPI (ALL), manufactured products excluding coke and refined petroleum (XPET), electricity (ELEC) and the rest of the output PPI (REST: all commodities less manufactured products and electricity), at the published weights. Built by the AsiaDecoded/asia-vitals pipeline (in_ppi_oea, data/in/ppi/in_ppi_mfg_groups.csv).",
  "schedule": "Replaced after each monthly release (14th) by a scheduled task that reads AsiaDecoded/asia-vitals.",
  "source": {
   "kind": "file",
-  "name": "in_ppi_mfg_groups_M2026-09_r5.csv",
-  "url": "/_blob/d00752f40e08af39f864a62d377c8281"
+  "name": "in_ppi_mfg_groups_M2026-09_r6.csv",
+  "url": "/_blob/8cf82ea7045693cecd72b7b4e8a5c8ce"
  },
  "updated": {
-  "at": "2026-11-04T03:45:00Z",
+  "at": "2026-11-04T04:20:00Z",
   "by": "Claude"
  },
  "edit": {

@@ -337,6 +337,11 @@ def update(from_file=None, **_):
             if st_ is None:
                 errors.append(f"output PPI {name_}: months missing"); continue
             ppi_groups.insert(pos, {"date": latest, "code": code_, "name": name_, "weight": round(w_, 5), **st_, "calculated": "y"})
+        st_ = _stats(al["values"])   # headline output PPI, all commodities, first row (user, 4 Nov 2026)
+        if st_ is None:
+            errors.append("output PPI all commodities: months missing")
+        else:
+            ppi_groups.insert(0, {"date": latest, "code": "ALL", "name": "PPI", "weight": round(al["weight"], 5), **st_, "calculated": "y"})
     if errors:
         raise CheckFailed(errors)
     with open(OUT / "in_ppi_contrib_items.csv", "w", newline="") as f:
