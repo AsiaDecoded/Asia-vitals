@@ -570,6 +570,33 @@ dash.calc('iip_movers', {
   }
   // Manufacturing tab, Chart 3: electronics and non-electronics manufacturing IIP, y/y, monthly from April 2024
   // (2022-23 base; groups calculated in in_iip_mospi at MoSPI's weights).
+  // Manufactured products prices (user, 4 Nov 2026): output PPI and WPI, manufactured products, 2022-23 base (OEA
+  // indices from April 2023), % y/y calculated from the published indices, from April 2024.
+  function mfgPrices() {
+    const id = 'mfg-ppi', box = document.getElementById(id + '-chart');
+    const S = [{ key: 'oppi_1300000000', name: 'Output PPI', color: 'var(--ad-c2)' }, { key: 'wpi_1300000000', name: 'WPI', color: 'var(--ad-c1)' }];
+    legend(id + '-legend', S);
+    if (!status(box, ['in_ppi'])) return;
+    const P = dash.data('in_ppi').data;
+    const yoy = (ser) => {
+      const ix = new Map(P.filter((r) => r.series === ser && N(r.index) != null).map((r) => [r.date, N(r.index)]));
+      return Array.from(ix, ([d, v]) => { const p = ix.get(`${Number(d.slice(0, 4)) - 1}${d.slice(4)}`); return p ? { date: d, v: Math.round((v / p - 1) * 1000) / 10 } : null; })
+        .filter(Boolean);
+    };
+    const rows = J.slice(merge(S.map((s) => ({ key: s.key, rows: yoy(s.key) }))), id);
+    if (!rows.length) { box.replaceChildren(); return; }
+    const H = 300;
+    const mAxis = (r) => (r.date.slice(5, 7) === '01' ? r.date.slice(0, 4) : null);
+    const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), true, mAxis,
+      { anchorEvery: (r) => r.date.slice(5, 7) === '01' });
+    const dots = drawLines(svg, x, y, rows, S);
+    const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const extras = hover(svg, document.getElementById(id), x, rows, H, ml, W - mr, (r) => `${MON[Number(r.date.slice(5, 7)) - 1]} ${r.date.slice(0, 4)}`, (r, px) => {
+      dots.forEach((d, i) => { const v = r[S[i].key]; d.attr('display', v == null ? 'none' : null).attr('cx', px).attr('cy', v == null ? 0 : y(v)); });
+      return S.map((s) => [s.color, s.name, pct(r[s.key])]);
+    });
+    extras.push(...dots);
+  }
   function mfgElec() {
     const id = 'mfg-elec', box = document.getElementById(id + '-chart');
     const S = [
@@ -854,7 +881,7 @@ dash.calc('iip_movers', {
       el.textContent = el.id === 'mfg-month' ? (v || '') : (v == null ? '—' : Number(v).toFixed(1));
     });
   }
-  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgTiles(); mfgIipM(); mfgIip(); mfgDiv(); mfgUse(); mfgUseContrib(); mfgElec(); mfgContrib(); mfgShare(); mfgGva(); mfgCu(); } };
+  J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgTiles(); mfgIipM(); mfgIip(); mfgDiv(); mfgUse(); mfgUseContrib(); mfgElec(); mfgContrib(); mfgShare(); mfgGva(); mfgCu(); mfgPrices(); } };
 
   J.redrawGdp = () => {
     J.redrawMfg();
