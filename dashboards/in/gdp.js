@@ -51,6 +51,33 @@ dash.calc('iip_movers', {
   },
 });
 
+dash.calc('ppi_movers', {
+  title: 'Output PPI contributions, 3- and 6-month averages',
+  description: 'For each of the 74 product categories of manufactured products in the output PPI (2022-23 base): its weight (share of manufactured products, %) and y/y in the latest month, and the average of its contribution to manufactured products PPI y/y over the latest 3 and 6 months.',
+  inputs: ['in_ppi_contrib_items'],
+  fn: (in_ppi_contrib_items) => {
+    const n = (v) => (v === '' || v == null ? null : Number(v));
+    const months = Array.from(new Set(in_ppi_contrib_items.map((r) => r.date))).sort();
+    const latest = months[months.length - 1];
+    const by = new Map();
+    in_ppi_contrib_items.forEach((r) => {
+      if (!by.has(r.code)) by.set(r.code, {});
+      by.get(r.code)[r.date] = { name: r.name, weight: n(r.weight), yoy: n(r.yoy), c: n(r.contribution) };
+    });
+    const avg = (m, k) => {
+      const ms = months.slice(-k);
+      if (ms.length < k || ms.some((d) => !m[d] || m[d].c == null)) return null;
+      return ms.reduce((a, d) => a + m[d].c, 0) / k;
+    };
+    const out = [];
+    by.forEach((m) => {
+      const cur = m[latest]; if (!cur) return;
+      out.push({ name: cur.name, date: latest, weight: cur.weight, yoy: cur.yoy, avg3: avg(m, 3), avg6: avg(m, 6) });
+    });
+    return out;
+  },
+});
+
 (() => {
   const J = window.JG;
   const visible = () => !document.getElementById('gdp').hidden;
@@ -818,6 +845,45 @@ dash.calc('iip_movers', {
     iipMovers();
   });
   dash.onData(() => iipMovers());
+  let ppiMoversN = 3;
+  // Output PPI biggest contributors (user, 4 Nov 2026): as the IIP table, over the 74 product categories of
+  // manufactured products; contribution to manufactured products PPI y/y.
+  function ppiMovers() {
+    const tb = document.querySelector('#ppi-movers-table tbody');
+    const M = dash.data('ppi_movers');
+    if (failed(M.status)) { tb.replaceChildren(); const td = tb.insertRow().insertCell(); td.colSpan = 4; J.fail(td); return; }
+    if (M.status !== 'ok') return;
+    const k = ppiMoversN === 6 ? 'avg6' : 'avg3';
+    const rows = M.data.filter((r) => r[k] != null);
+    const up = rows.slice().sort((a, b) => b[k] - a[k] || b.yoy - a.yoy).slice(0, 5);
+    const down = rows.slice().sort((a, b) => a[k] - b[k] || a.yoy - b.yoy).slice(0, 5);
+    const date = M.data.length ? M.data[0].date : null;
+    document.getElementById('ppi-movers-units').textContent = date
+      ? `%, ppt, ${ppiMoversN}-month average to ${MONS[Number(date.slice(5, 7)) - 1]} ${date.slice(0, 4)}` : '%, ppt';
+    document.getElementById('ppi-movers-avg').textContent = `Contrib., ${ppiMoversN}m`;
+    tb.replaceChildren();
+    [['Largest positive contributions', up], ['Largest negative contributions', down]].forEach(([g, list], gi) => {
+      const gr = tb.insertRow(); gr.className = 'grp' + (gi ? ' sep' : '');
+      const gtd = gr.insertCell(); gtd.colSpan = 4; gtd.textContent = g;
+      list.forEach((r) => {
+        const tr = tb.insertRow(); tr.dataset.key = r.name;
+        [['name', r.name], ['weight', r.weight], ['yoy', r.yoy], [k, r[k]]].forEach(([f, v]) => {
+          const td = tr.insertCell();
+          if (f === 'name') { td.textContent = v; return; }
+          td.textContent = v == null ? '' : (f === 'yoy' ? d3.format('.1f')(v) : d3.format('.2f')(v));
+          if (v != null && v < 0 && f !== 'weight') td.classList.add('neg');
+        });
+      });
+    });
+  }
+  const pseg = document.getElementById('ppi-movers-seg');
+  pseg.addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    ppiMoversN = Number(b.dataset.n);
+    pseg.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    ppiMovers();
+  });
+  dash.onData(() => ppiMovers());
 
   // Manufacturing tab: manufacturing share, % of GDP or % of GVA (toggle), current prices, annual (fiscal years),
   // calculated in in_gdp_mospi from MoSPI's levels on each base: 2011-12 base (dashed) and 2022-23 base (solid).

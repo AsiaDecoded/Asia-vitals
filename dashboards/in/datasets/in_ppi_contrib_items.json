@@ -1,0 +1,18 @@
+{
+ "title": "India output PPI contributions by product",
+ "description": "Contributions of the 74 product categories of manufactured products in the output PPI (2022-23 base) to manufactured products PPI y/y, pp, monthly from April 2024: weight x (index - index a year earlier) / (manufactured products weight x its index a year earlier); weight as a share of manufactured products (%); y/y and contributions calculated from the Office of the Economic Adviser's indices. Built by the AsiaDecoded/asia-vitals pipeline (in_ppi_oea, data/in/ppi/in_ppi_contrib_items.csv).",
+ "schedule": "Replaced after each monthly release (14th) by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "in_ppi_contrib_items_M2026-09.csv",
+  "url": "/_blob/13b4202b6daa37d5b591f218da3f8937"
+ },
+ "updated": {
+  "at": "2026-11-04T03:20:00Z",
+  "by": "Claude"
+ },
+ "edit": {
+  "via": "claude",
+  "at": "2026-11-04T03:20:00Z"
+ }
+}

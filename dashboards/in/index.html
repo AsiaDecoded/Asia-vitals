@@ -162,6 +162,11 @@
 .ad-stack { display: flex; flex-direction: column; gap: var(--cds-gap-md); min-width: 0; }
 .jg-card.ad-full > .ad-x { display: none; }
 .jg-card.ad-full.ad-hasx > h2, .jg-card.ad-full.ad-hasx > .jg-cardhead { padding-right: 0; }
+/* Output PPI biggest contributors: as the IIP table */
+#ppi-movers-table { font-size: 0.8125rem; }
+#ppi-movers-table th, #ppi-movers-table td { padding: 1px 6px; line-height: 1.3; }
+#ppi-movers-table tr.grp td { padding-top: 6px; }
+#ppi-movers-table th:not(:first-child), #ppi-movers-table td:not(:first-child) { text-align: center; }
 </style>
 
 
@@ -406,12 +411,33 @@
 
 
     <div class="jg-grid" style="align-items:start">
-      <section class="jg-card" id="mfg-ppi" data-periods="none">
-        <h2>India manufactured products producer and wholesale prices</h2>
-        <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="mfg-ppi-legend"></div><span class="ad-units r"></span></div>
-        <div class="jg-chart" id="mfg-ppi-chart" data-source="in_ppi in_wpi_mfg_linked"></div>
-        <div class="ad-foot"><span>Source: Office of the Economic Adviser, DPIIT</span><span class="ad-brand">Asia Decoded</span></div>
-      </section>
+      <div class="ad-stack">
+        <section class="jg-card" id="mfg-ppi" data-periods="none">
+          <h2>India manufactured products producer and wholesale prices</h2>
+          <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="mfg-ppi-legend"></div><span class="ad-units r"></span></div>
+          <div class="jg-chart" id="mfg-ppi-chart" data-source="in_ppi in_wpi_mfg_linked"></div>
+          <div class="ad-foot"><span>Source: Office of the Economic Adviser, DPIIT</span><span class="ad-brand">Asia Decoded</span></div>
+        </section>
+        <section class="jg-card" id="ppi-movers">
+          <div class="jg-cardhead">
+            <div><h2>India manufactured products PPI biggest contributors</h2></div>
+            <div class="jg-seg" id="ppi-movers-seg" role="group" aria-label="Averaging window"><button data-n="3" aria-pressed="true">3m avg.</button><button data-n="6">6m avg.</button></div>
+          </div>
+          <div class="ad-top"><span class="ad-units" id="ppi-movers-units">%, ppt</span><span></span><span class="ad-units r"></span></div>
+          <div class="jg-tablewrap">
+            <table id="ppi-movers-table" data-source="ppi_movers" data-row-key="name">
+              <thead><tr>
+                <th data-field="name">Product category</th>
+                <th data-field="weight">Weight</th>
+                <th data-field="yoy">y/y</th>
+                <th data-field="avg3" id="ppi-movers-avg">Contribution, 3m avg.</th>
+              </tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="ad-foot"><span>Source: Office of the Economic Adviser, DPIIT</span><span class="ad-brand">Asia Decoded</span></div>
+        </section>
+      </div>
       <section class="jg-card" id="mfg-ppidiv" data-slider="none">
         <h2>India manufactured products PPI by group</h2>
         <div class="ad-top"><span class="ad-units">% y/y</span><div class="jg-legend" id="mfg-ppidiv-legend"></div><span class="ad-units r"></span></div>
@@ -434,6 +460,7 @@
         <li><b>Contributions to India IIP growth by use-based category:</b> calculated as the contributions above, with MoSPI&rsquo;s 2022-23 use-based weights: primary goods 31.136, intermediate goods 22.416, consumer non-durables 16.147, consumer durables 11.311, infrastructure and construction goods 10.908, capital goods 8.082. The bars add up to the published general IIP y/y within 0.11pp.</li>
         <li><b>India manufacturing share of GVA:</b> manufacturing GVA at current prices divided by GDP or total GVA at current prices, MoSPI&rsquo;s levels, latest estimate of each year, calculated on each base separately: 2011-12 base (dashed) and 2022-23 base (solid).</li>
         <li><b>India manufactured products producer and wholesale prices:</b> the output Producer Price Index and the Wholesale Price Index for manufactured products, Office of the Economic Adviser, % y/y calculated from the published indices. Output PPI: 2022-23 base, indices from April 2023, so y/y from April 2024. WPI: linked, the 2011-12 base index divided by the office&rsquo;s published linking factor for manufactured products (1.44) to March 2023, the 2022-23 base index from April 2023, y/y from April 2013. PPI excluding refined petroleum: the output PPI for manufactured products less coke and refined petroleum products, calculated from the published indices and weights. The output PPI counts refined petroleum as manufacturing, the WPI puts it under fuel and power. The two also use different weights.</li>
+        <li><b>India manufactured products PPI biggest contributors:</b> the five of the 74 product categories of manufactured products in the output PPI (2022-23 base), the most detailed level the office publishes, with the largest positive and negative contributions to manufactured products PPI y/y, averaged over the latest 3 or 6 months. Contribution = the category&rsquo;s weight &times; the change in its index over 12 months &divide; (the weight of manufactured products &times; its index a year earlier). Weight is the category&rsquo;s share of manufactured products, %. y/y is calculated from the published indices for the latest month.</li>
         <li><b>India manufactured products PPI by group:</b> output PPI, 2022-23 base, the 23 groups of manufactured products (NIC 2-digit divisions). The office publishes indices only, so y/y is calculated from them. 3mma: the plain average of the latest three months&rsquo; y/y. YTD: the calendar year to date, the average index from January to the latest month against the same months a year earlier. Excluding refined petroleum: manufactured products less coke and refined petroleum products, at the published weights.</li>
         <li><b>India manufacturing capacity utilisation:</b> RBI, Order Books, Inventories and Capacity Utilisation Survey (OBICUS), quarterly, as published and seasonally adjusted by the RBI.</li>
       </ol>

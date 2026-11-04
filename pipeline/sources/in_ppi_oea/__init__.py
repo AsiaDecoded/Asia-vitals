@@ -99,14 +99,15 @@ def _sheet(xbytes):
 def _tidy(raw):
     """{series key: {"label", "weight", "values": {YYYY-MM-01: index}}}."""
     out = {}
-    # Output PPI: All commodities, the four major groups and the 23 groups of manufactured products (for the
-    # Manufacturing tab: PPI excluding refined petroleum, and the bar chart by group; user, 4 Nov 2026).
+    # Output PPI: All commodities, the four major groups, and the 23 groups and 74 product categories of manufactured
+    # products (Manufacturing tab: PPI excluding refined petroleum, bar chart by group, contributors table; user,
+    # 4 Nov 2026).
     rows = _sheet(raw["oppi"]["bytes"])
     hdr = rows[0]
     for r in rows[1:]:
         # plus coke and refined petroleum products (group 1310000000), for the output PPI for manufactured products
         # excluding refined petroleum on the Manufacturing tab (user, 4 Nov 2026)
-        if r[0] in ("All", "Major Group") or (r[0] == "Group" and str(r[1]).strip().startswith("13")):
+        if r[0] in ("All", "Major Group") or (r[0] in ("Group", "SUT Product Category") and str(r[1]).strip().startswith("13")):
             key = "oppi" if r[0] == "All" else f"oppi_{int(r[1])}"
             out[key] = {"label": str(r[2]).strip().capitalize(), "weight": _num(r[3]),
                         "values": {_month(h): _num(v) for h, v in zip(hdr[4:], r[4:]) if _month(h) and _num(v) is not None}}
@@ -261,7 +262,7 @@ def update(from_file=None, **_):
     ppi_groups = []
     y0, m0 = int(latest[:4]), int(latest[5:7])
     for key, s_ in tidy.items():
-        if not (key == "oppi_1300000000" or (key.startswith("oppi_13") and key != "oppi_1300000000")):
+        if not re.fullmatch(r"oppi_13\d\d000000", key):
             continue
         v = s_["values"]
         yy = lambda d: (v[d] / v[_prev_year(d)] - 1) * 100 if d in v and _prev_year(d) in v else None
@@ -290,6 +291,35 @@ def update(from_file=None, **_):
                                   "ytd": round((sum(cur) / sum(prev) - 1) * 100, 1), "calculated": "y"})
     if errors:
         raise CheckFailed(errors)
+    # Contributions of the 74 product categories of manufactured products to its y/y, pp (user, 4 Nov 2026):
+    # weight x (index - index a year earlier) / (manufactured products weight x its index a year earlier) x 100;
+    # weight shown as a share of manufactured products (%). Check: the categories add up to the y/y within 0.15pp (they do within 0.11pp).
+    ppi_items = []
+    if mp:
+        Wm, vm = mp["weight"], mp["values"]
+        cats = {k: v for k, v in tidy.items() if re.fullmatch(r"oppi_13\d{8}", k) and not k.endswith("000000")}
+        if len(cats) < 70:
+            errors.append(f"output PPI: {len(cats)} product categories of manufactured products, expected 74")
+        for d in sorted(vm):
+            p_ = _prev_year(d)
+            if p_ not in vm or d < "2024-04-01":
+                continue
+            tot = 0.0
+            for k, c in cats.items():
+                if d not in c["values"] or p_ not in c["values"]:
+                    continue
+                con = c["weight"] * (c["values"][d] - c["values"][p_]) / (Wm * vm[p_]) * 100
+                tot += con
+                ppi_items.append({"date": d, "code": k.replace("oppi_", ""), "name": c["label"], "weight": round(c["weight"] / Wm * 100, 3),
+                                  "yoy": round((c["values"][d] / c["values"][p_] - 1) * 100, 1), "contribution": round(con, 3), "calculated": "y"})
+            if abs(tot - (vm[d] / vm[p_] - 1) * 100) > 0.15:   # indices published to one decimal
+                errors.append(f"output PPI contributions {d[:7]}: categories sum to {tot:.2f}, manufactured products y/y {(vm[d] / vm[p_] - 1) * 100:.2f}")
+    if errors:
+        raise CheckFailed(errors)
+    with open(OUT / "in_ppi_contrib_items.csv", "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(ppi_items[0]), lineterminator="\n")
+        w.writeheader()
+        w.writerows(ppi_items)
     with open(OUT / "in_ppi_mfg_groups.csv", "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(ppi_groups[0]), lineterminator="\n")
         w.writeheader()
