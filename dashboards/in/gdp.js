@@ -576,19 +576,22 @@ dash.calc('iip_movers', {
     const id = 'mfg-ppi', box = document.getElementById(id + '-chart');
     const S = [{ key: 'oppi_1300000000', name: 'Output PPI', color: 'var(--ad-c2)' }, { key: 'wpi_1300000000', name: 'WPI', color: 'var(--ad-c1)' }];
     legend(id + '-legend', S);
-    if (!status(box, ['in_ppi'])) return;
+    if (!status(box, ['in_ppi', 'in_wpi_mfg_linked'])) return;
     const P = dash.data('in_ppi').data;
     const yoy = (ser) => {
       const ix = new Map(P.filter((r) => r.series === ser && N(r.index) != null).map((r) => [r.date, N(r.index)]));
       return Array.from(ix, ([d, v]) => { const p = ix.get(`${Number(d.slice(0, 4)) - 1}${d.slice(4)}`); return p ? { date: d, v: Math.round((v / p - 1) * 1000) / 10 } : null; })
         .filter(Boolean);
     };
-    const rows = J.slice(merge(S.map((s) => ({ key: s.key, rows: yoy(s.key) }))), id);
+    // WPI: linked series (user, 4 Nov 2026): 2011-12 base / OEA factor 1.44 to Mar 2023, y/y from Apr 2013 (in_ppi_oea)
+    const wl = dash.data('in_wpi_mfg_linked').data.filter((r) => N(r.yoy) != null).map((r) => ({ date: r.date, v: N(r.yoy) }));
+    const rows = J.slice(merge([{ key: S[0].key, rows: yoy(S[0].key) }, { key: S[1].key, rows: wl }]), id);
     if (!rows.length) { box.replaceChildren(); return; }
     const H = 300;
     const mAxis = (r) => (r.date.slice(5, 7) === '01' ? r.date.slice(0, 4) : null);
     const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), true, mAxis,
-      { anchorEvery: (r) => r.date.slice(5, 7) === '01' });
+      { anchorEvery: (r) => r.date.slice(5, 7) === '01', top: 24 });
+    if (rows[0].date < '2023-04-01' && rows[rows.length - 1].date >= '2023-04-01') vline(svg, x, '2023-04-01', H, 'WPI 2022-23 base');
     const dots = drawLines(svg, x, y, rows, S);
     const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     const extras = hover(svg, document.getElementById(id), x, rows, H, ml, W - mr, (r) => `${MON[Number(r.date.slice(5, 7)) - 1]} ${r.date.slice(0, 4)}`, (r, px) => {

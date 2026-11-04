@@ -10,6 +10,9 @@ by the ratio of geometric means over 2024-25, the year and method the OEA uses f
 factor (published: 1.53 for All commodities). y/y is calculated from the linked index. Before Apr 2023 the
 series moves with the WPI, which differs in concept (taxes included, traded-value weights).
 
+Linked WPI, manufactured products (in_wpi_mfg_linked.csv): WPI 2011-12 manufactured products divided by the OEA's
+published linking factor, 1.44, to Mar 2023, the 2022-23 index from Apr 2023; y/y calculated.
+
 The OEA publishes on the 14th of each month; the source checks only once a new month is due.
 """
 import csv
@@ -37,6 +40,7 @@ FILES = {"wpi": r"indx_download_2223/wpi_monthly_index_\d{6}\.xlsx",
          "ippi": r"indx_download_2223/trial_ippi_monthly_index_\d{6}\.xlsx"}
 LINK_FY = 2024  # financial year 2024-25 (Apr 2024 - Mar 2025), as the OEA's WPI linking factor
 OEA_WPI_LINK = 1.53
+OEA_WPI_MFG_LINK = 1.44   # OEA, linking factor 2011-12 to 2022-23, manufactured products (linking_factor2223.asp)
 RELEASE_DAY = 14
 MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
@@ -113,20 +117,20 @@ def _tidy(raw):
     return out
 
 
-def _old_wpi():
+def _old_wpi(comm="1000000000"):
     import xlrd
     sh = xlrd.open_workbook(file_contents=OLD_WPI.read_bytes()).sheet_by_index(0)
     hdr = sh.row_values(0)
     for i in range(1, sh.nrows):
         r = sh.row_values(i)
-        if str(r[1]).strip() == "1000000000":
+        if str(r[1]).strip() == comm:
             vals = {}
             for h, v in zip(hdr[3:], r[3:]):
                 m = re.fullmatch(r"INDX(\d{2})(\d{4})", str(h))
                 if m and _num(v) is not None:
                     vals[f"{m.group(2)}-{m.group(1)}-01"] = float(v)
             return vals
-    raise CheckFailed(["WPI 2011-12 file: no All commodities row"])
+    raise CheckFailed([f"WPI 2011-12 file: no row {comm}"])
 
 
 def _gm(vals):
@@ -188,9 +192,22 @@ def update(from_file=None, **_):
     if abs(wpi_link - OEA_WPI_LINK) > 0.006:
         errors.append(f"WPI linking factor {wpi_link:.4f}, OEA published {OEA_WPI_LINK}")
     factor = _gm([tidy["oppi"]["values"][m] for m in fy]) / _gm([old[m] for m in fy])
+    # Linked WPI, manufactured products (user, 4 Nov 2026): WPI 2011-12 manufactured products divided by the OEA's
+    # published linking factor (1.44) to Mar 2023, WPI 2022-23 manufactured products from Apr 2023; y/y calculated.
+    # Check: the geometric-mean ratio over 2024-25 reproduces the published factor.
+    old_m, new_m = _old_wpi("1300000000"), tidy.get("wpi_1300000000", {}).get("values", {})
+    if not all(m in old_m and m in new_m for m in fy):
+        errors.append("WPI manufactured products: no full overlap in the link year")
+    else:
+        mfg_link = _gm([old_m[m] for m in fy]) / _gm([new_m[m] for m in fy])
+        if abs(mfg_link - OEA_WPI_MFG_LINK) > 0.006:
+            errors.append(f"WPI manufactured products linking factor {mfg_link:.4f}, OEA published {OEA_WPI_MFG_LINK}")
     if errors:
         raise CheckFailed(errors)
     first_new = min(tidy["oppi"]["values"])
+    mfg_first = min(new_m)
+    wpi_mfg = {m: v / OEA_WPI_MFG_LINK for m, v in old_m.items() if m < mfg_first}
+    wpi_mfg.update(new_m)
     spliced = {m: v * factor for m, v in old.items() if m < first_new}
     spliced.update(tidy["oppi"]["values"])
 
@@ -216,6 +233,14 @@ def update(from_file=None, **_):
             p = _prev_year(m)
             yoy = "" if p not in spliced else round((spliced[m] / spliced[p] - 1) * 100, 2)
             w.writerow([m, round(spliced[m], 3), yoy, "Output PPI 2022-23" if m >= first_new else "WPI 2011-12, linked"])
+
+    with open(OUT / "in_wpi_mfg_linked.csv", "w", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["date", "index", "yoy", "basis"])
+        for m in sorted(wpi_mfg):
+            p = _prev_year(m)
+            yoy = "" if p not in wpi_mfg else round((wpi_mfg[m] / wpi_mfg[p] - 1) * 100, 1)
+            w.writerow([m, round(wpi_mfg[m], 3), yoy, "WPI 2022-23" if m >= mfg_first else "WPI 2011-12 / 1.44"])
 
     def long_rows():
         for key, s in tidy.items():

@@ -1,0 +1,18 @@
+{
+ "title": "India WPI manufactured products, linked",
+ "description": "Wholesale Price Index, manufactured products, monthly from April 2012: the 2011-12 base index divided by the Office of the Economic Adviser's published linking factor (1.44) to March 2023, the 2022-23 base index from April 2023; y/y calculated. Built by the AsiaDecoded/asia-vitals pipeline (in_ppi_oea, data/in/ppi/in_wpi_mfg_linked.csv).",
+ "schedule": "Replaced after each monthly WPI release (14th) by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "in_wpi_mfg_linked_M2026-09.csv",
+  "url": "/_blob/eda716e6398b5845c1e82a8b17fea57c"
+ },
+ "updated": {
+  "at": "2026-11-04T02:15:00Z",
+  "by": "Claude"
+ },
+ "edit": {
+  "via": "claude",
+  "at": "2026-11-04T02:15:00Z"
+ }
+}
