@@ -1,0 +1,306 @@
+"""Manufacturing production indices and manufacturing GVA for the Asia dashboard's Manufacturing tab, for the economies
+with no manufacturing source of their own in the repo: Japan, South Korea, Malaysia, Singapore, Hong Kong (asked for
+4 Nov 2026; definitions in the project doc claude/asia-mfg-definitions.md). India, Thailand, Vietnam, the Philippines
+and Indonesia are read from their own sources' files by pipeline/core/asia_mfg.py, not fetched here.
+
+Agencies' sites are reachable from GitHub's runners only. Each economy is fetched and checked on its own; one that
+fails keeps its previous rows and is reported as a warning.
+
+Writes data/asia/mfg/:
+  src_iip.csv  economy, freq (M/Q), date (first day of the period), industry, index, yoy, yoy_calculated, note
+               industry: mfg, 19, 20, 21, 23, 24, 26, 27, elec, nonelec (codes are ISIC Rev. 4 divisions; the national
+               industry each maps to is in `note`). index as published; yoy as published where the agency publishes
+               it, otherwise index / index a year earlier - 1 (yoy_calculated = y). elec / nonelec only where the
+               agency publishes weights (Japan) or the aggregate (Singapore's Electronics cluster).
+  src_gva.csv  economy, freq (Q/A), period (YYYY-Qn or YYYY), real_yoy (%), share (% of GDP, current prices),
+               real_yoy_calculated, share_calculated, note
+  long.csv, release.json, release_row.json (code F<hash>)
+
+Sources:
+  Japan     METI Indices of Industrial Production, 2020 = 100, original index, value-added weights (b2020_gom1j.xlsx).
+            Pharma (21) = 化学工業 less 化学工業（除．医薬品） at METI's weights; elec = 電子部品・デバイス + 電気・情報通信機械;
+            nonelec = 製造工業 less elec, at METI's weights (calculated). GVA: not yet (ESRI production-side QNA).
+  Korea     Statistics Korea mining and manufacturing production index (2020 = 100, original), Bank of Korea ECOS
+            901Y032 by KSIC division (ISIC 27 = KSIC 28 전기장비). GVA: ECOS 200Y106 (real, original) and 200Y105
+            (nominal), manufacturing and GDP. No weights in ECOS: no elec / nonelec.
+  Malaysia  DOSM Industrial Production Index, 2015 = 100 (OpenDOSM ipi_2d by MSIC division, ipi_1d section C).
+            GVA: OpenDOSM gdp_qtr_real_supply and gdp_qtr_nominal_supply, sector p3. No weights online: no elec.
+  Singapore EDB IIP by industry cluster, 2025 = 100, NSA (SingStat M355381): mfg = Total, elec = Electronics cluster,
+            19 = Petroleum segment, 20 = Petrochemicals segment, 21 = Pharmaceuticals segment (clusters, not ISIC).
+            GVA: SingStat M015661 (chained 2015 dollars) and M015651 (current prices).
+  Hong Kong C&SD Index of Industrial Production, 2015 = 100, quarterly (610-65001), manufacturing only.
+            GVA: 310-34501 real y/y (quarterly), 310-34101 % contribution to GDP (annual, basic prices).
+"""
+import csv
+import hashlib
+import io
+import json
+import re
+import urllib.request
+
+from core.common import DATA, CheckFailed, read_json, write_long, write_release
+
+NAME = "mfg_asia"
+DESCRIPTION = "Manufacturing production indices and GVA for the Asia Manufacturing tab: JP, KR, MY, SG, HK"
+OUT = DATA / "asia" / "mfg"
+IIP_COLS = ["economy", "freq", "date", "industry", "index", "yoy", "yoy_calculated", "note"]
+GVA_COLS = ["economy", "freq", "period", "real_yoy", "share", "real_yoy_calculated", "share_calculated", "note"]
+UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"}
+
+
+def fetch(url, timeout=120):
+    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout) as r:
+        return r.read()
+
+
+def f(x):
+    try:
+        v = float(str(x).replace(",", ""))
+        return v if v == v else None
+    except (TypeError, ValueError):
+        return None
+
+
+def calc_yoy(rows):
+    """Fill yoy from index a year earlier where the agency publishes none (same freq, industry)."""
+    ix = {(r["economy"], r["freq"], r["industry"], r["date"]): r["index"] for r in rows if r["index"] is not None}
+    for r in rows:
+        if r.get("yoy") is None and r["index"] is not None:
+            p = f"{int(r['date'][:4]) - 1}{r['date'][4:]}"
+            b = ix.get((r["economy"], r["freq"], r["industry"], p))
+            if b:
+                r["yoy"], r["yoy_calculated"] = round((r["index"] / b - 1) * 100, 2), "y"
+    return rows
+
+
+def row(economy, freq, date, industry, index, yoy=None, note=""):
+    return {"economy": economy, "freq": freq, "date": date, "industry": industry, "index": index, "yoy": yoy,
+            "yoy_calculated": "", "note": note}
+
+
+# ---------- Japan ----------
+JP_URL = "https://www.meti.go.jp/statistics/tyo/iip/xls/b2020_gom1j.xlsx"
+JP_ROWS = {"mfg": "製造工業", "19": "石油・石炭製品工業", "20": "化学工業（除．医薬品）", "23": "窯業・土石製品工業",
+           "24": "鉄鋼・非鉄金属工業", "26a": "電子部品・デバイス工業", "e2": "電気・情報通信機械工業", "chem": "化学工業"}
+
+
+def japan():
+    import openpyxl
+    wb = openpyxl.load_workbook(io.BytesIO(fetch(JP_URL)), read_only=True, data_only=True)
+    ws = [w for w in wb.worksheets if w.title == "生産"] or wb.worksheets[1:2]
+    rows = list(ws[0].iter_rows(values_only=True))
+    hdr = next(r for r in rows if r and r[0] == "品目番号")
+    periods = [re.sub(r"\D", "", str(h)) for h in hdr]
+    by = {r[1]: r for r in rows if r and r[1] in JP_ROWS.values()}
+    miss = [n for n in JP_ROWS.values() if n not in by]
+    if miss:
+        raise CheckFailed([f"JP: rows not found {miss}"])
+    w = {k: float(by[n][2]) for k, n in JP_ROWS.items()}
+    series = {}
+    for k, n in JP_ROWS.items():
+        series[k] = {f"{p[:4]}-{p[4:6]}-01": float(v) for p, v in zip(periods, by[n]) if len(p) == 6 and isinstance(v, (int, float))}
+    out = []
+    note = {"mfg": "製造工業", "19": "石油・石炭製品工業", "20": "化学工業（除．医薬品）", "23": "窯業・土石製品工業",
+            "24": "鉄鋼・非鉄金属工業 (ISIC 24)", "21": "医薬品 = 化学工業 less 化学工業（除．医薬品）, METI weights (calculated)",
+            "elec": "電子部品・デバイス + 電気・情報通信機械, METI weights (calculated)",
+            "nonelec": "製造工業 less electronics, METI weights (calculated)"}
+    for d in sorted(series["mfg"]):
+        s = {k: series[k].get(d) for k in series}
+        if None in s.values():
+            continue
+        for k in ("mfg", "19", "20", "23", "24"):
+            out.append(row("JP", "M", d, k, s[k], note=note[k]))
+        out.append(row("JP", "M", d, "21", round((w["chem"] * s["chem"] - w["20"] * s["20"]) / (w["chem"] - w["20"]), 3), note=note["21"]))
+        we = w["26a"] + w["e2"]
+        el = (w["26a"] * s["26a"] + w["e2"] * s["e2"]) / we
+        out.append(row("JP", "M", d, "elec", round(el, 3), note=note["elec"]))
+        out.append(row("JP", "M", d, "nonelec", round((w["mfg"] * s["mfg"] - we * el) / (w["mfg"] - we), 3), note=note["nonelec"]))
+    if len(out) < 500:
+        raise CheckFailed([f"JP: only {len(out)} rows"])
+    return out, []
+
+
+# ---------- Korea ----------
+KR_ITEMS = {"mfg": ("I11AC", "제조업"), "19": ("I11ACJ", "코크스, 연탄 및 석유정제품"), "20": ("I11ACK", "화학물질 및 화학제품; 의약품 제외"),
+            "21": ("I11ACL", "의료용 물질 및 의약품"), "23": ("I11ACN", "비금속 광물제품"), "24": ("I11ACO", "1차 금속"),
+            "26": ("I11ACQ", "전자부품, 컴퓨터, 영상 음향 및 통신장비 (KSIC 26)"), "27": ("I11ACS", "전기장비 (KSIC 28)")}
+
+
+def korea():
+    from core import ecos
+    out = []
+    for k, (code, name) in KR_ITEMS.items():
+        rs = ecos._paged("StatisticSearch", ["901Y032", "M", "201501", "203012", code, "1"])
+        for r in rs:
+            v = f(r.get("DATA_VALUE"))
+            t = r.get("TIME", "")
+            if v is not None and len(t) == 6:
+                out.append(row("KR", "M", f"{t[:4]}-{t[4:]}-01", k, v, note=name))
+    gva = []
+    real = {r["TIME"]: f(r["DATA_VALUE"]) for r in ecos._paged("StatisticSearch", ["200Y106", "Q", "2014Q1", "2030Q4", "1103"])}
+    nom = {r["TIME"]: f(r["DATA_VALUE"]) for r in ecos._paged("StatisticSearch", ["200Y105", "Q", "2014Q1", "2030Q4", "1103"])}
+    gdp = {r["TIME"]: f(r["DATA_VALUE"]) for r in ecos._paged("StatisticSearch", ["200Y105", "Q", "2014Q1", "2030Q4", "1400"])}
+    for t in sorted(real):
+        p = f"{int(t[:4]) - 1}{t[4:]}"
+        ry = round((real[t] / real[p] - 1) * 100, 2) if real.get(p) and real.get(t) else None
+        sh = round(nom[t] / gdp[t] * 100, 2) if nom.get(t) and gdp.get(t) else None
+        gva.append({"economy": "KR", "freq": "Q", "period": f"{t[:4]}-{t[4:]}", "real_yoy": ry, "share": sh,
+                    "real_yoy_calculated": "y", "share_calculated": "y",
+                    "note": "BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"})
+    if len(out) < 500:
+        raise CheckFailed([f"KR: only {len(out)} index rows"])
+    return out, gva
+
+
+# ---------- Malaysia ----------
+def malaysia():
+    from core import dosm
+    out = []
+    names = {"19": "MSIC 19", "20": "MSIC 20", "21": "MSIC 21", "23": "MSIC 23", "24": "MSIC 24", "26": "MSIC 26", "27": "MSIC 27"}
+    rows2 = dosm.rows(dosm.raw_csv("ipi/ipi_2d.csv"))
+    for r in rows2:
+        if r["series"] == "abs" and r["division"] in names:
+            out.append(row("MY", "M", r["date"], r["division"], f(r["index"]), note=names[r["division"]]))
+    for r in dosm.rows(dosm.raw_csv("ipi/ipi_1d.csv")):
+        if r["series"] == "abs" and r["section"] == "C":
+            out.append(row("MY", "M", r["date"], "mfg", f(r["index"]), note="Section C, manufacturing"))
+    gva = []
+    real = {r["date"]: f(r["value"]) for r in dosm.rows(dosm.raw_csv("gdp/gdp_qtr_real_supply.csv")) if r["series"] == "abs" and r["sector"] == "p3"}
+    ry = {r["date"]: f(r["value"]) for r in dosm.rows(dosm.raw_csv("gdp/gdp_qtr_real_supply.csv")) if r["series"] == "growth_yoy" and r["sector"] == "p3"}
+    nom = {}
+    for r in dosm.rows(dosm.raw_csv("gdp/gdp_qtr_nominal_supply.csv")):
+        if r["series"] == "abs" and r["sector"] in ("p0", "p3"):
+            nom.setdefault(r["date"], {})[r["sector"]] = f(r["value"])
+    for d in sorted(real):
+        q = (int(d[5:7]) - 1) // 3 + 1
+        n = nom.get(d, {})
+        gva.append({"economy": "MY", "freq": "Q", "period": f"{d[:4]}-Q{q}", "real_yoy": ry.get(d),
+                    "share": round(n["p3"] / n["p0"] * 100, 2) if n.get("p3") and n.get("p0") else None,
+                    "real_yoy_calculated": "", "share_calculated": "y",
+                    "note": "DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"})
+    if len(out) < 500:
+        raise CheckFailed([f"MY: only {len(out)} index rows"])
+    return out, gva
+
+
+# ---------- Singapore ----------
+MON = {m: i + 1 for i, m in enumerate(["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"])}
+SG_ROWS = {"Total": "mfg", "Electronics Cluster": "elec", "Petroleum": "19", "Petrochemicals": "20", "Pharmaceuticals": "21"}
+
+
+def singapore():
+    from core import singstat
+    out = []
+    t = singstat.table("M355381")
+    for r in t["rows"]:
+        k = SG_ROWS.get((r["rowText"] or "").strip())
+        if not k:
+            continue
+        for c in r["columns"]:
+            y, m = c["key"].split()
+            out.append(row("SG", "M", f"{y}-{MON[m]:02d}-01", k, f(c["value"]),
+                           note=f"EDB cluster/segment: {r['rowText'].strip()} (not ISIC)"))
+    def q(tid, text):
+        for r in singstat.table(tid)["rows"]:
+            if (r["rowText"] or "").strip() == text:
+                return {c["key"]: f(c["value"]) for c in r["columns"]}
+        raise CheckFailed([f"SG: {text} not in {tid}"])
+    real, nom, gdp = q("M015661", "Manufacturing"), q("M015651", "Manufacturing"), q("M015651", "GDP At Current Market Prices")
+    gva = []
+    for k in sorted(real, key=lambda s: (s[:4], s[5])):
+        y, qq = k.split()
+        p = f"{int(y) - 1} {qq}"
+        gva.append({"economy": "SG", "freq": "Q", "period": f"{y}-Q{qq[0]}",
+                    "real_yoy": round((real[k] / real[p] - 1) * 100, 2) if real.get(p) and real.get(k) else None,
+                    "share": round(nom[k] / gdp[k] * 100, 2) if nom.get(k) and gdp.get(k) else None,
+                    "real_yoy_calculated": "y", "share_calculated": "y",
+                    "note": "SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"})
+    if len(out) < 500:
+        raise CheckFailed([f"SG: only {len(out)} index rows"])
+    return out, gva
+
+
+# ---------- Hong Kong ----------
+def hongkong():
+    from core import censtatd
+    out = []
+    _, rows = censtatd.table("610-65001")
+    ix = {r["period"]: f(r["figure"]) for r in rows if r.get("IND") == "ind_QSIP_C" and r["freq"] == "Q" and r["sv"] == "IP_INDEX" and r["svDesc"] == "Index"}
+    yy = {r["period"]: f(r["figure"]) for r in rows if r.get("IND") == "ind_QSIP_C" and r["freq"] == "Q" and r["sv"] == "IP_INDEX" and r["svDesc"].startswith("Year-on-year")}
+    for p, v in sorted(ix.items()):
+        m = int(p[4:6]) - 2
+        out.append(row("HK", "Q", f"{p[:4]}-{m:02d}-01", "mfg", v, yy.get(p), note="C&SD 610-65001, manufacturing, quarterly"))
+    _, g = censtatd.table("310-34501")
+    gva = []
+    for r in g:
+        if r.get("ACTIVITY") == "SECT_C" and r["freq"] == "Q" and r["svDesc"].startswith("Year-on-year"):
+            gva.append({"economy": "HK", "freq": "Q", "period": f"{r['period'][:4]}-Q{int(r['period'][4:6]) // 3}", "real_yoy": f(r["figure"]),
+                        "share": None, "real_yoy_calculated": "", "share_calculated": "",
+                        "note": "C&SD 310-34501, chained (2024) dollars, y/y as published"})
+    _, s = censtatd.table("310-34101")
+    for r in s:
+        if r.get("ACTIVITY") == "SECT_C" and r["freq"] == "Y" and r["svDesc"].startswith("% contribution"):
+            gva.append({"economy": "HK", "freq": "A", "period": r["period"], "real_yoy": None, "share": f(r["figure"]),
+                        "real_yoy_calculated": "", "share_calculated": "",
+                        "note": "C&SD 310-34101, % contribution to GDP at basic prices, annual"})
+    if len(out) < 40:
+        raise CheckFailed([f"HK: only {len(out)} index rows"])
+    return out, gva
+
+
+ECONOMIES = {"JP": japan, "KR": korea, "MY": malaysia, "SG": singapore, "HK": hongkong}
+
+
+def read(path):
+    if not path.exists():
+        return []
+    with open(path, encoding="utf-8") as fh:
+        rs = list(csv.DictReader(fh))
+    for r in rs:
+        for k in ("index", "yoy", "real_yoy", "share"):
+            if k in r:
+                r[k] = f(r[k])
+    return rs
+
+
+def write(path, cols, rows):
+    with open(path, "w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=cols, lineterminator="\n", extrasaction="ignore")
+        w.writeheader()
+        w.writerows(rows)
+
+
+def update(force=False, only=None, **_):
+    OUT.mkdir(parents=True, exist_ok=True)
+    state = read_json(OUT / "release.json", {}) or {}
+    iip, gva = read(OUT / "src_iip.csv"), read(OUT / "src_gva.csv")
+    done, warnings, errors = [], [], []
+    for cc, fn in ECONOMIES.items():
+        try:
+            a, b = fn()
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"{cc}: {type(e).__name__}: {str(e)[:200]}")
+            continue
+        a = calc_yoy(a)
+        iip = [r for r in iip if r["economy"] != cc] + a
+        if b:
+            gva = [r for r in gva if r["economy"] != cc] + b
+        last = max(r["date"] for r in a)
+        done.append(f"{cc} to {last}")
+    if not done:
+        raise CheckFailed(errors)
+    warnings += [f"not updated: {e}" for e in errors]
+    iip.sort(key=lambda r: (r["economy"], r["industry"], r["freq"], r["date"]))
+    gva.sort(key=lambda r: (r["economy"], r["freq"], r["period"]))
+    fp = hashlib.sha256(json.dumps([iip, gva], sort_keys=True, default=str).encode()).hexdigest()[:16]
+    if state.get("fingerprint") == fp and not force:
+        return {"updated": False, "code": state.get("code"), "summary": "no change; " + "; ".join(done), "warnings": warnings}
+    write(OUT / "src_iip.csv", IIP_COLS, iip)
+    write(OUT / "src_gva.csv", GVA_COLS, gva)
+    code = f"F{fp[:8]}"
+    nlong = write_long(({"country": r["economy"], "indicator": "mfg_iip", "series": f"{r['industry']}_{r['freq']}", "label": r["note"],
+                         "measure": "index", "area": "", "freq": r["freq"], "date": r["date"], "value": r["index"], "unit": "index",
+                         "source": "mfg_asia", "release": code} for r in iip if r["index"] is not None), OUT / "long.csv")
+    write_release(OUT, {"code": code, "label": "Manufacturing sources: " + "; ".join(done), "economies": " ".join(sorted({r['economy'] for r in iip}))},
+                  warnings, len(iip), {"fingerprint": fp, "long_rows": nlong})
+    return {"updated": True, "code": code, "summary": "; ".join(done), "warnings": warnings}

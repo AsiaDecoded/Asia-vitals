@@ -116,6 +116,15 @@ def main():
         except Exception:  # noqa: BLE001 - nor the Asia FX file
             say("   ERROR building the Asia FX file:")
             say(traceback.format_exc().rstrip())
+        try:
+            from core.asia_mfg import build as build_asia_mfg
+            res = build_asia_mfg()
+            say(f"== Asia manufacturing: {'UPDATED' if res['updated'] else 'unchanged'}: {res['summary']}")
+            for w in res["warnings"]:
+                say(f"   WARNING: {w}")
+        except Exception:  # noqa: BLE001 - nor the Asia manufacturing files
+            say("   ERROR building the Asia manufacturing files:")
+            say(traceback.format_exc().rstrip())
     say(f"result: updated={updated or '-'} failed={failed or '-'}")
     (Path(__file__).resolve().parent.parent / "run_report.txt").write_text("\n".join(report) + "\n")
     gh_output(updated=str(bool(updated)).lower(), updated_sources=" ".join(updated),

@@ -57,4 +57,5 @@ SOURCES = [
     "fx_bis",
     "eq_yahoo",
     "gni_wdi",
+    "mfg_asia",
 ]
