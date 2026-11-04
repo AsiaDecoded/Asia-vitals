@@ -280,6 +280,19 @@ dash.calc('iip_movers', {
     const q = series('Q', code, price).filter((r) => r.date >= `${lastAnnual + 1}-04-01`);
     return q.length === 1 && q[0].fq.endsWith('Q1') ? { date: `${q[0].date.slice(0, 4)}-04-01`, v: q[0].v, label: J.qLabel(q[0].date) } : null;
   }
+  // Chart height to match the neighbouring column in a two-column row (user, 4 Nov 2026: India IIP beside the
+  // contributors table; the by-industry bars beside the electronics and contributions charts). Rows are
+  // align-items:start, so each column keeps its natural height; one column on narrow screens: default height.
+  function fitH(id, H0) {
+    const card = document.getElementById(id), box = document.getElementById(id + '-chart');
+    const row = card.closest('.jg-grid'); if (!row) return H0;
+    const col = card.parentElement === row ? card : card.parentElement;
+    const others = [...row.children].filter((c) => c !== col);
+    if (!others.length || others.some((c) => Math.abs(c.getBoundingClientRect().top - col.getBoundingClientRect().top) > 2)) return H0;
+    const target = Math.max(...others.map((c) => c.getBoundingClientRect().height));
+    const extra = col.getBoundingClientRect().height - box.getBoundingClientRect().height;
+    return Math.max(H0, Math.floor(target - extra));
+  }
   // Manufacturing tab, Charts 1 and 2, annual (user, 3 Nov 2026): append a YTD point (r.ytd) holding <key>_ytd values.
   const ytdV = (r, s) => (r.ytd ? r[s.key + '_ytd'] : r[s.key]);
   function ytdRows(rows, yd, vals) {
@@ -461,7 +474,7 @@ dash.calc('iip_movers', {
     const GR = ['E2627', 'X2627', 'OTH'];
     const head = ['C'].concat(GR).map((c) => D.find((r) => r.nic === c)).filter(Boolean);
     const rows = head.concat(D.filter((r) => r.nic !== 'C' && !GR.includes(r.nic)).sort((a, b) => b.m3 - a.m3));
-    const W = box.clientWidth, rowH = 26, top = 6, H = top + rows.length * rowH + 22;
+    const top = 6, H = fitH(id, top + rows.length * 26 + 22), W = box.clientWidth, rowH = (H - top - 22) / rows.length;
     box.replaceChildren();
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
     const GLAB = { E2627: 'Electronics', X2627: 'Non-electronics', OTH: 'Other industries' };   // short labels (user, 3 Nov 2026)
@@ -540,7 +553,7 @@ dash.calc('iip_movers', {
       { key: 'spl', rows: L.filter((r) => N(r.yoy) != null).map((r) => ({ date: r.date, v: N(r.yoy) })) },
     ]), id);
     if (!rows.length) { box.replaceChildren(); return; }
-    const H = 300;
+    const H = fitH(id, 300);
     const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), true,
       (r) => (r.date.slice(5, 7) === '01' ? r.date.slice(0, 4) : null), { anchorEvery: (r) => r.date.slice(5, 7) === '01', top: 24 });
     if (rows[0].date < '2023-04-01' && rows[rows.length - 1].date >= '2023-04-01') vline(svg, x, '2023-04-01', H, '2022-23 base');
@@ -748,6 +761,15 @@ dash.calc('iip_movers', {
     extras.push(...dots);
   }
 
+  // Redraw the stretched charts when their neighbouring column changes height (e.g. the contributors table fills).
+  if (window.ResizeObserver) {
+    const watch = (el, f) => { if (!el) return; let h = 0, raf = 0; new ResizeObserver(() => {
+      const nh = Math.round(el.getBoundingClientRect().height); if (nh === h) return; h = nh;
+      cancelAnimationFrame(raf); raf = requestAnimationFrame(() => { if (!document.getElementById('manufacturing').hidden) f(); });
+    }).observe(el); };
+    watch(document.getElementById('iip-movers'), () => mfgIipM());
+    watch(document.getElementById('mfg-col-r'), () => mfgDiv());
+  }
   J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgIipM(); mfgIip(); mfgDiv(); mfgElec(); mfgContrib(); mfgShare(); mfgGva(); mfgCu(); } };
 
   J.redrawGdp = () => {
