@@ -16,6 +16,8 @@ SOURCES = [
     "in_ppi_oea",
     "in_gdp_mospi",
     "in_gdp_intl",
+    "in_iip_mospi",
+    "in_cu_rbi",
     "sg_cpi_singstat",
     "sg_mas_forecast",
     "sg_cpi_hh_singstat",
