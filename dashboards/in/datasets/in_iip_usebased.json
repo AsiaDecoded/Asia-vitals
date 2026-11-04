@@ -1,0 +1,18 @@
+{
+ "title": "India IIP by use-based category (MoSPI)",
+ "description": "Index of Industrial Production, general and the six use-based categories (primary, capital, intermediate, infrastructure and construction goods, consumer durables, consumer non-durables), 2022-23 base: latest month y/y as published by MoSPI; 3mma (m3): plain average of the latest three months' published y/y; and the calendar year to date (January to the latest month) average index against the same months a year earlier, calculated. Built by the AsiaDecoded/asia-vitals pipeline (data/in/iip/in_iip_usebased.csv).",
+ "schedule": "Replaced after each monthly IIP release by a scheduled task that reads AsiaDecoded/asia-vitals.",
+ "source": {
+  "kind": "file",
+  "name": "in_iip_usebased_M2026-09.csv",
+  "url": "/_blob/af69df199a5f58901b98f1cf07638a63"
+ },
+ "updated": {
+  "at": "2026-11-04T01:05:00Z",
+  "by": "Claude"
+ },
+ "edit": {
+  "via": "claude",
+  "at": "2026-11-04T01:05:00Z"
+ }
+}

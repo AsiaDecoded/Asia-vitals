@@ -391,12 +391,49 @@ def divisions(rows):
     return out
 
 
+USE_BASED = [("Primary Goods", "PRI", "Primary goods"), ("Capital Goods", "CAP", "Capital goods"),
+             ("Intermediate Goods", "INT", "Intermediate goods"),
+             ("Infrastructure/ Construction Goods", "INF", "Infrastructure and construction goods"),
+             ("Consumer Durables", "CD", "Consumer durables"), ("Consumer Non-durables", "CND", "Consumer non-durables")]
+
+
+def use_based(rows):
+    """General IIP and the six use-based categories, 2022-23 base, latest month (user, 4 Nov 2026, Manufacturing tab
+    bar chart): MoSPI's y/y as published; m3 ("3mma"), the plain average of the latest three months' published y/y;
+    and the calendar year to date, the average index January to the latest month against the same months a year
+    earlier, as for the divisions."""
+    new = [r for r in rows if r["base_year"] == "2022-23" and r["index"] is not None]
+    last = max(r["date"] for r in new if r["type"] == "General")
+    y, m = int(last[:4]), int(last[5:7])
+    out, errors = [], []
+    for typ, cat, code, name in [("General", "General", "GEN", "General IIP")] + [("Use-based category", c, k, n) for c, k, n in USE_BASED]:
+        s = {r["date"]: r for r in new if r["type"] == typ and r["category"] == cat and not r["sub_category"]}
+        cur = [s.get(f"{y}-{k:02d}-01") for k in range(1, m + 1)]
+        prev = [s.get(f"{y - 1}-{k:02d}-01") for k in range(1, m + 1)]
+        last3 = [d for d in sorted(s) if d <= last][-3:]
+        if last not in s or any(x is None for x in cur + prev) or len(last3) < 3 or any(s[d]["growth_rate"] is None for d in last3):
+            errors.append(f"IIP use-based {cat}: months missing to {last[:7]}"); continue
+        one = round((s[last]["index"] / s[f"{y - 1}{last[4:]}"]["index"] - 1) * 100, 1)
+        pub = s[last]["growth_rate"]
+        if abs(one - pub) > 0.15:
+            errors.append(f"IIP use-based {cat} {last[:7]}: index ratio {one} vs MoSPI y/y {pub}")
+        out.append({"date": last, "code": code, "name": name, "category": cat, "yoy": pub,
+                    "m3": round(sum(s[d]["growth_rate"] for d in last3) / 3, 1),
+                    "m3_months": f"{_MON[int(last3[0][5:7]) - 1]}-{_MON[int(last3[-1][5:7]) - 1]} {last3[-1][:4]}",
+                    "ytd": round((sum(x["index"] for x in cur) / sum(x["index"] for x in prev) - 1) * 100, 1),
+                    "ytd_months": f"Jan-{_MON[m - 1]} {y}", "ytd_calculated": "y"})
+    if errors:
+        raise CheckFailed(errors)
+    return out
+
+
 def update(force=False, **_):
     OUT.mkdir(parents=True, exist_ok=True)
     state = read_json(OUT / "release.json", {}) or {}
     rows = fetch()
     lk = linked(rows) + annual_rows(fetch_annual())
     dv = divisions(rows)
+    ub = use_based(rows)
     fp = hashlib.sha256(json.dumps(rows, sort_keys=True).encode()).hexdigest()[:16]
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change ({state.get('label')})"}
@@ -415,6 +452,10 @@ def update(force=False, **_):
         w = csv.DictWriter(fh, fieldnames=list(dv[0]), lineterminator="\n")
         w.writeheader()
         w.writerows(dv)
+    with open(OUT / "in_iip_usebased.csv", "w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=list(ub[0]), lineterminator="\n")
+        w.writeheader()
+        w.writerows(ub)
     ci = contributions_items(rows)
     with open(OUT / "in_iip_contrib_items.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=list(ci[0]), lineterminator="\n")
