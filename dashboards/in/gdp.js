@@ -280,8 +280,7 @@ dash.calc('iip_movers', {
     const q = series('Q', code, price).filter((r) => r.date >= `${lastAnnual + 1}-04-01`);
     return q.length === 1 && q[0].fq.endsWith('Q1') ? { date: `${q[0].date.slice(0, 4)}-04-01`, v: q[0].v, label: J.qLabel(q[0].date) } : null;
   }
-  // Chart height to match the neighbouring column in a two-column row (user, 4 Nov 2026: India IIP beside the
-  // contributors table; the by-industry bars beside the electronics and contributions charts). Rows are
+  // Chart height to match the neighbouring column in a two-column row (user, 4 Nov 2026: the by-industry bars beside the electronics and contributions charts). Rows are
   // align-items:start, so each column keeps its natural height; one column on narrow screens: default height.
   function fitH(id, H0) {
     const card = document.getElementById(id), box = document.getElementById(id + '-chart');
@@ -553,7 +552,7 @@ dash.calc('iip_movers', {
       { key: 'spl', rows: L.filter((r) => N(r.yoy) != null).map((r) => ({ date: r.date, v: N(r.yoy) })) },
     ]), id);
     if (!rows.length) { box.replaceChildren(); return; }
-    const H = fitH(id, 300);
+    const H = 300;
     const { svg, x, y, W, ml, mr } = frame(box, rows, H, rows.flatMap((r) => S.map((s) => r[s.key])).filter((v) => v != null), true,
       (r) => (r.date.slice(5, 7) === '01' ? r.date.slice(0, 4) : null), { anchorEvery: (r) => r.date.slice(5, 7) === '01', top: 24 });
     if (rows[0].date < '2023-04-01' && rows[rows.length - 1].date >= '2023-04-01') vline(svg, x, '2023-04-01', H, '2022-23 base');
@@ -767,7 +766,6 @@ dash.calc('iip_movers', {
       const nh = Math.round(el.getBoundingClientRect().height); if (nh === h) return; h = nh;
       cancelAnimationFrame(raf); raf = requestAnimationFrame(() => { if (!document.getElementById('manufacturing').hidden) f(); });
     }).observe(el); };
-    watch(document.getElementById('iip-movers'), () => mfgIipM());
     watch(document.getElementById('mfg-col-r'), () => mfgDiv());
   }
   J.redrawMfg = () => { if (!document.getElementById('manufacturing').hidden) { mfgIipM(); mfgIip(); mfgDiv(); mfgElec(); mfgContrib(); mfgShare(); mfgGva(); mfgCu(); } };
