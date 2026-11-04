@@ -4,11 +4,11 @@
  "schedule": "Replaced after each monthly release (14th) by a scheduled task that reads AsiaDecoded/asia-vitals.",
  "source": {
   "kind": "file",
-  "name": "in_ppi_mfg_groups_M2026-09.csv",
-  "url": "/_blob/cdb05eb2a28755ac11809e0ce7a0b3af"
+  "name": "in_ppi_mfg_groups_M2026-09_r2.csv",
+  "url": "/_blob/ffb69a3bd8a9b03665e07c89dfdf0860"
  },
  "updated": {
-  "at": "2026-11-04T03:00:00Z",
+  "at": "2026-11-04T03:25:00Z",
   "by": "Claude"
  },
  "edit": {

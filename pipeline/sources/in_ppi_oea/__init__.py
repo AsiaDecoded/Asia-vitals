@@ -42,7 +42,7 @@ LINK_FY = 2024  # financial year 2024-25 (Apr 2024 - Mar 2025), as the OEA's WPI
 OEA_WPI_LINK = 1.53
 OEA_WPI_MFG_LINK = 1.44   # OEA, linking factor 2011-12 to 2022-23, manufactured products (linking_factor2223.asp)
 # Short names for the output PPI groups of manufactured products (NIC 2-digit divisions), as on the IIP charts
-PPI_SHORT = {"1300000000": "Manufactured products", "1301000000": "Food products", "1302000000": "Beverages",
+PPI_SHORT = {"1300000000": "Manufacturing", "1301000000": "Food products", "1302000000": "Beverages",
              "1303000000": "Tobacco products", "1304000000": "Textiles", "1305000000": "Wearing apparel",
              "1306000000": "Leather", "1307000000": "Wood and wood products", "1308000000": "Paper",
              "1309000000": "Printing and recorded media", "1310000000": "Coke and refined petroleum",
