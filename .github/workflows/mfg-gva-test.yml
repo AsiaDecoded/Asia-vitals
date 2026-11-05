@@ -1,0 +1,68 @@
+name: Manufacturing GVA test (dev-mfg-gva)
+
+# Runs mfg_asia with force (adds real GVA levels for Korea, Taiwan, Malaysia, Singapore, Hong Kong), then rebuilds the
+# Asia Manufacturing tab files (core/asia_mfg.py, incl. asia_mfg_gva_annual.csv) and pushes data/asia back to the branch.
+# Push trigger only on dev-mfg-gva; manual elsewhere.
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-mfg-gva]
+    paths:
+      - pipeline/sources/mfg_asia/**
+      - pipeline/core/asia_mfg.py
+      - .github/workflows/mfg-gva-test.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mfg-gva-test
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Excel and PDF readers and numpy
+        run: pip install --quiet openpyxl==3.1.5 xlrd==2.0.1 numpy==2.2.6 pypdf==5.1.0
+      - name: Run mfg_asia and rebuild the Asia Manufacturing tab
+        env:
+          ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
+          ECOS_KEY: ${{ secrets.ECOS_KEY }}
+        run: |
+          python -I - <<'EOF'
+          import sys, csv, traceback, importlib
+          sys.path.insert(0, "pipeline")
+          lines = []
+          try:
+              res = importlib.import_module("sources.mfg_asia").update(force=True)
+              lines.append(f"mfg_asia: {res['summary']}")
+              lines += [f"   WARNING: {w}" for w in res.get("warnings", [])]
+          except Exception:
+              lines.append(traceback.format_exc())
+          from core.asia_mfg import build
+          res = build(force=True)
+          lines.append(f"asia_mfg: {res['summary']}")
+          lines += [f"   WARNING: {w}" for w in res.get("warnings", [])]
+          g = list(csv.DictReader(open("data/asia/mfg/src_gva.csv")))
+          for e in sorted({r["economy"] for r in g}):
+              n = sum(1 for r in g if r["economy"] == e and r.get("real_level"))
+              lines.append(f"   src_gva {e}: {n} rows with real levels")
+          for r in csv.DictReader(open("data/asia/mfg_tab/asia_mfg_gva_annual.csv")):
+              if int(r["year"]) >= 2024:
+                  lines.append(f"   annual {r['economy']} {r['year']} {r['quarters']} {r['real_yoy']} {r['basis']}")
+          open("mfg_gva_report.txt", "w").write("\n".join(lines) + "\n")
+          print("\n".join(lines))
+          EOF
+      - name: Push data back to the branch
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/asia mfg_gva_report.txt
+          git commit -m "Manufacturing GVA test run ${{ github.run_id }}" || exit 0
+          git push origin HEAD:${{ github.ref_name }}

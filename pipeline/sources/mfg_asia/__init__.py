@@ -58,7 +58,7 @@ NAME = "mfg_asia"
 DESCRIPTION = "Manufacturing production indices and GVA for the Asia Manufacturing tab: JP, KR, TW, MY, SG, HK"
 OUT = DATA / "asia" / "mfg"
 IIP_COLS = ["economy", "freq", "date", "industry", "index", "yoy", "yoy_calculated", "note"]
-GVA_COLS = ["economy", "freq", "period", "real_yoy", "share", "real_yoy_calculated", "share_calculated", "note"]
+GVA_COLS = ["economy", "freq", "period", "real_yoy", "share", "real_yoy_calculated", "share_calculated", "note", "real_level"]
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"}
 
 
@@ -175,7 +175,7 @@ def korea():
         p = f"{int(t[:4]) - 1}{t[4:]}"
         ry = round((real[t] / real[p] - 1) * 100, 2) if real.get(p) and real.get(t) else None
         sh = round(nom[t] / gdp[t] * 100, 2) if nom.get(t) and gdp.get(t) else None
-        gva.append({"economy": "KR", "freq": "Q", "period": f"{t[:4]}-{t[4:]}", "real_yoy": ry, "share": sh,
+        gva.append({"economy": "KR", "freq": "Q", "period": f"{t[:4]}-{t[4:]}", "real_yoy": ry, "share": sh, "real_level": real.get(t),
                     "real_yoy_calculated": "y", "share_calculated": "y",
                     "note": "BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"})
     if len(out) < 500:
@@ -215,7 +215,7 @@ def malaysia():
     for d in sorted(real):
         q = (int(d[5:7]) - 1) // 3 + 1
         n = nom.get(d, {})
-        gva.append({"economy": "MY", "freq": "Q", "period": f"{d[:4]}-Q{q}", "real_yoy": ry.get(d),
+        gva.append({"economy": "MY", "freq": "Q", "period": f"{d[:4]}-Q{q}", "real_yoy": ry.get(d), "real_level": real.get(d),
                     "share": round(n["p3"] / n["p0"] * 100, 2) if n.get("p3") and n.get("p0") else None,
                     "real_yoy_calculated": "", "share_calculated": "y",
                     "note": "DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"})
@@ -263,7 +263,7 @@ def singapore():
     for k in sorted(real, key=lambda s: (s[:4], s[5])):
         y, qq = k.split()
         p = f"{int(y) - 1} {qq}"
-        gva.append({"economy": "SG", "freq": "Q", "period": f"{y}-Q{qq[0]}",
+        gva.append({"economy": "SG", "freq": "Q", "period": f"{y}-Q{qq[0]}", "real_level": real.get(k),
                     "real_yoy": round((real[k] / real[p] - 1) * 100, 2) if real.get(p) and real.get(k) else None,
                     "share": round(nom[k] / gdp[k] * 100, 2) if nom.get(k) and gdp.get(k) else None,
                     "real_yoy_calculated": "y", "share_calculated": "y",
@@ -285,9 +285,17 @@ def hongkong():
         out.append(row("HK", "Q", f"{p[:4]}-{m:02d}-01", "mfg", v, yy.get(p), note="C&SD 610-65001, manufacturing, quarterly"))
     _, g = censtatd.table("310-34501")
     gva = []
+    # Real levels (chained dollars), if the table carries exactly one non-percentage series besides the y/y: used for
+    # annual and year-to-date growth on the Asia tab. Left empty otherwise.
+    lv = {}
+    for r in g:
+        if r.get("ACTIVITY") == "SECT_C" and r["freq"] == "Q" and not r["svDesc"].startswith("Year-on-year") and "%" not in r["svDesc"]:
+            lv.setdefault(r["svDesc"], {})[r["period"]] = f(r["figure"])
+    lv = next(iter(lv.values())) if len(lv) == 1 else {}
     for r in g:
         if r.get("ACTIVITY") == "SECT_C" and r["freq"] == "Q" and r["svDesc"].startswith("Year-on-year"):
             gva.append({"economy": "HK", "freq": "Q", "period": f"{r['period'][:4]}-Q{int(r['period'][4:6]) // 3}", "real_yoy": f(r["figure"]),
+                        "real_level": lv.get(r["period"]),
                         "share": None, "real_yoy_calculated": "", "share_calculated": "",
                         "note": "C&SD 310-34501, chained (2024) dollars, y/y as published"})
     _, s = censtatd.table("310-34101")
@@ -407,7 +415,7 @@ def taiwan():
     gva = []
     for q in sorted(k for k in real if re.fullmatch(r"\d{4}Q\d", k)):
         pq = f"{int(q[:4]) - 1}{q[4:]}"
-        gva.append({"economy": "TW", "freq": "Q", "period": q.replace("Q", "-Q"),
+        gva.append({"economy": "TW", "freq": "Q", "period": q.replace("Q", "-Q"), "real_level": real.get(q),
                     "real_yoy": round((real[q] / real[pq] - 1) * 100, 2) if real.get(q) and real.get(pq) else None,
                     "share": round(nom[q] / gdp[q] * 100, 2) if nom.get(q) and gdp.get(q) else None,
                     "real_yoy_calculated": "y", "share_calculated": "y",
@@ -426,7 +434,7 @@ def read(path):
     with open(path, encoding="utf-8") as fh:
         rs = list(csv.DictReader(fh))
     for r in rs:
-        for k in ("index", "yoy", "real_yoy", "share"):
+        for k in ("index", "yoy", "real_yoy", "share", "real_level"):
             if k in r:
                 r[k] = f(r[k])
     return rs
