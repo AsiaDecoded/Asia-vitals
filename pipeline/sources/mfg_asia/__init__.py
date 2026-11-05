@@ -21,7 +21,7 @@ Sources:
   Japan     METI Indices of Industrial Production, 2020 = 100, original index, value-added weights (b2020_gom1j.xlsx).
             Pharma (21) = 化学工業 less 化学工業（除．医薬品） at METI's weights; elec (ISIC 26) = 電子部品・デバイス + 情報通信機械
             (electrical machinery, ISIC 27, left out: decision 5 Nov 2026);
-            27 = 電気機械工業; nonelec = 製造工業 less elec, at METI's weights (calculated). GVA: not yet (ESRI production-side QNA).
+            27 = 電気機械工業; nonelec = 製造工業 less elec, at METI's weights (calculated). GVA: ESRI production-side QNA (生産QNA, reference series), real (chained 2020 yen) and nominal, original series.
   Korea     Statistics Korea mining and manufacturing production index (2020 = 100, original), Bank of Korea ECOS
             901Y032 by KSIC division (ISIC 27 = KSIC 28 전기장비). GVA: ECOS 200Y106 (real, original) and 200Y105
             (nominal), manufacturing and GDP. nonelec = 제조업 less KSIC 26 at implied weights (24 divisions,
@@ -132,7 +132,46 @@ def japan():
         out.append(row("JP", "M", d, "nonelec", round((w["mfg"] * s["mfg"] - we * el - w["27"] * s["27"]) / (w["mfg"] - we - w["27"]), 3), note=note["nonelec"]))
     if len(out) < 500:
         raise CheckFailed([f"JP: only {len(out)} rows"])
-    return out, []
+    return out, japan_gva()
+
+
+def japan_gva():
+    """ESRI production-side QNA (生産QNA, reference series): value added by activity, original series, real (chained
+    2020 yen) and nominal; latest release found on seisanqna_top.html. Real y/y and share = nominal 製造業 / nominal GDP
+    (expenditure approach) calculated."""
+    import io
+    base = "https://www.esri.cao.go.jp"
+    top = fetch(base + "/jp/sna/sonota/seisanqna/seisanqna_top.html").decode("utf-8", "replace")
+    m = re.search(r'(/jp/sna/data/data_list/seisanqna/files/tables/[^"]+/)gaku-jkf(\d\dq\d)\.csv', top)
+    if not m:
+        raise CheckFailed(["JP GVA: no CSV link on seisanqna_top.html"])
+    folder, tag = m.group(1), m.group(2)
+
+    def table(kind):
+        rows = list(csv.reader(io.StringIO(fetch(f"{base}{folder}gaku-{kind}gf{tag}.csv").decode("cp932"))))
+        hdr = next(r for r in rows if "３．製造業" in r)
+        cm, cg = hdr.index("３．製造業"), next(k for k, c in enumerate(hdr) if c.startswith("国内総生産(支出側)"))
+        out = {}
+        for r in rows:
+            if len(r) > cg and re.fullmatch(r"\d{4}Q\d", r[2] or ""):
+                out[r[2]] = (f(r[cm]), f(r[cg]))
+        return out
+    real, nom = table("j"), table("m")
+    if len(real) < 100:
+        raise CheckFailed([f"JP GVA: only {len(real)} quarters"])
+    gva = []
+    for q in sorted(real):
+        pq = f"{int(q[:4]) - 1}{q[4:]}"
+        rv, pv = real[q][0], real.get(pq, (None,))[0]
+        n = nom.get(q, (None, None))
+        gva.append({"economy": "JP", "freq": "Q", "period": q.replace("Q", "-Q"), "real_level": rv,
+                    "real_yoy": round((rv / pv - 1) * 100, 2) if rv and pv else None,
+                    "share": round(n[0] / n[1] * 100, 2) if n[0] and n[1] else None,
+                    "real_yoy_calculated": "y", "share_calculated": "y",
+                    "note": f"ESRI production-side QNA (生産QNA, reference series) {tag}: 製造業, chained 2020 yen, original series; "
+                            "share of GDP (expenditure approach), current prices"})
+    return gva
+
 
 
 # ---------- Korea ----------

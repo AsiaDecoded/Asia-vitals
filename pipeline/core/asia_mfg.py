@@ -2,7 +2,7 @@
 (asked for 4 Nov 2026; definitions and decisions in the project doc claude/asia-mfg-definitions.md).
 
 Reads files already in the repo, calculates the same rates the same way for every economy, fetches nothing:
-  - data/asia/mfg/src_iip.csv, src_gva.csv (source mfg_asia: Japan, Korea, Malaysia, Singapore, Hong Kong)
+  - data/asia/mfg/src_iip.csv, src_gva.csv (source mfg_asia: Japan, Korea, Taiwan, Malaysia, Singapore, Hong Kong)
   - India      data/in/iip/in_iip.csv (2022-23 base), in_iip_contrib_items.csv (weights); data/in/gdp/in_gdp.csv
   - Thailand   data/th/mpi/th_mpi.csv (2021 base, OIE weights); data/th/gdp/th_gdp.csv
   - Vietnam    data/vn/gdp/vn_iip.csv (quarterly y/y as published); data/vn/gdp/vn_gdp.csv
