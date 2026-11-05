@@ -1,0 +1,38 @@
+name: Taiwan IPI probe (manual)
+
+# One-off: tests access to the MOEA industrial production index (data.gov.tw) from the runners; saves to the
+# "discovery" branch under discovery/tw_ipi.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - pipeline/tools/tw_ipi_probe.py
+      - .github/workflows/tw-ipi-probe.yml
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe
+        run: python -I pipeline/tools/tw_ipi_probe.py discovery/tw_ipi
+      - name: Push results to the discovery branch
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mv discovery /tmp/discovery
+          git fetch origin discovery
+          git checkout -B discovery origin/discovery
+          mkdir -p discovery && rm -rf discovery/tw_ipi && cp -r /tmp/discovery/tw_ipi discovery/
+          git add discovery/tw_ipi
+          git commit -m "Taiwan IPI probe" || exit 0
+          for i in 1 2 3; do git push origin discovery && break; git pull --rebase origin discovery; done
