@@ -45,6 +45,7 @@ Sources:
             GVA: 310-34501 real y/y (quarterly), 310-34101 % contribution to GDP (annual, basic prices).
 """
 import csv
+import datetime
 import hashlib
 import io
 import json
@@ -58,7 +59,7 @@ NAME = "mfg_asia"
 DESCRIPTION = "Manufacturing production indices and GVA for the Asia Manufacturing tab: JP, KR, TW, MY, SG, HK"
 OUT = DATA / "asia" / "mfg"
 IIP_COLS = ["economy", "freq", "date", "industry", "index", "yoy", "yoy_calculated", "note"]
-GVA_COLS = ["economy", "freq", "period", "real_yoy", "share", "real_yoy_calculated", "share_calculated", "note", "real_level"]
+GVA_COLS = ["economy", "freq", "period", "real_yoy", "share", "real_yoy_calculated", "share_calculated", "note", "real_level", "cum_yoy"]
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"}
 
 
@@ -464,6 +465,49 @@ def taiwan():
     return out, gva
 
 
+def china_gva():
+    """NBS quarterly national accounts (data.stats.gov.cn, quarterly tree): 制造业增加值指数 (same period last year = 100),
+    当季值 (quarter) and 累计值 (year to date), as published (y/y = index - 100); share = 制造业增加值当季值 /
+    国内生产总值当季值, current prices (calculated). NBS publishes no real levels."""
+    from core import nbs
+    rid = nbs.tree("2")[0]["_id"]
+    end = f"{datetime.date.today().year}04SS"
+
+    def get(cid, ids):
+        body = {"cid": cid, "indicatorIds": list(ids.values()), "daCatalogId": "", "das": [{"text": "全国", "value": nbs.NATIONAL}],
+                "showType": 1, "dts": [f"199201SS-{end}"], "rootId": rid}
+        out = {}
+        for per in nbs._call("stream/esData", body=body) or []:
+            code = per.get("code") or ""
+            if not code.endswith("SS"):
+                continue
+            q = f"{code[:4]}-Q{int(code[4:6])}"
+            for v in per.get("values") or []:
+                k = next((k for k, i in ids.items() if i == v.get("_id") or v.get("i_showname", "").startswith(k)), None)
+                if k and f(v.get("value")) is not None:
+                    out.setdefault(q, {})[k] = f(v["value"])
+        return out
+    ix = get("f9b694c9b79e4ce5958bc88c6410fa67", {"制造业增加值指数 (上年同期=100) 当季值": "1a9c5f486ee848138ddf4189b46f1830",
+                                                 "制造业增加值指数 (上年同期=100) 累计值": "74dc0a5a68a14acd92d332d734d40e88"})
+    nom = get("28d936104e304aa191e338eb82b6dc09", {"制造业增加值当季值": "ee1888d32d84452e871760589bd27b05",
+                                                  "国内生产总值当季值": "d22612f09aeb4241bc557ef0ac61b3ba"})
+    if len(ix) < 20:
+        raise CheckFailed([f"CN GVA: only {len(ix)} quarters of the manufacturing value-added index"])
+    gva = []
+    for q in sorted(set(ix) | set(nom)):
+        a, n = ix.get(q, {}), nom.get(q, {})
+        qq, qc = a.get("制造业增加值指数 (上年同期=100) 当季值"), a.get("制造业增加值指数 (上年同期=100) 累计值")
+        m, g = n.get("制造业增加值当季值"), n.get("国内生产总值当季值")
+        gva.append({"economy": "CN", "freq": "Q", "period": q,
+                    "real_yoy": round(qq - 100, 2) if qq is not None else None,
+                    "cum_yoy": round(qc - 100, 2) if qc is not None else None,
+                    "share": round(m / g * 100, 2) if m and g else None,
+                    "real_yoy_calculated": "", "share_calculated": "y",
+                    "note": "NBS quarterly national accounts: 制造业增加值指数 (same period last year = 100), quarter and year to date, "
+                            "as published; share = 制造业增加值 / 国内生产总值, current prices"})
+    return gva
+
+
 ECONOMIES = {"JP": japan, "KR": korea, "TW": taiwan, "MY": malaysia, "SG": singapore, "HK": hongkong}
 
 
@@ -473,7 +517,7 @@ def read(path):
     with open(path, encoding="utf-8") as fh:
         rs = list(csv.DictReader(fh))
     for r in rs:
-        for k in ("index", "yoy", "real_yoy", "share", "real_level"):
+        for k in ("index", "yoy", "real_yoy", "share", "real_level", "cum_yoy"):
             if k in r:
                 r[k] = f(r[k])
     return rs
@@ -503,6 +547,12 @@ def update(force=False, only=None, **_):
             gva = [r for r in gva if r["economy"] != cc] + b
         last = max(r["date"] for r in a)
         done.append(f"{cc} to {last}")
+    try:
+        b = china_gva()
+        gva = [r for r in gva if r["economy"] != "CN"] + b
+        done.append(f"CN GVA to {max(r['period'] for r in b if r['real_yoy'] is not None)}")
+    except Exception as e:  # noqa: BLE001
+        errors.append(f"CN GVA: {type(e).__name__}: {str(e)[:200]}")
     if not done:
         raise CheckFailed(errors)
     warnings += [f"not updated: {e}" for e in errors]
