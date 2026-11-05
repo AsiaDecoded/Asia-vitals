@@ -167,6 +167,7 @@ WEIGHTS = {"10": 5.679, "11": 1.113, "12": 0.774, "13": 3.275, "14": 1.970, "15"
 # Electronics groups: electronics = NIC 26, computer, electronic and optical products (user, 5 Nov 2026: "use only 26", the
 # usual international definition; was 26 + 27 from 3 Nov), and the rest of manufacturing (electrical equipment, 27, included).
 GROUPS = {"E26": ("Electronics (26)", {"26"}), "X26": ("Non-electronics (ex 26)", None)}
+METHOD = "electronics NIC 26 (5 Nov 2026)"
 GROUP_START = "2023-04-01"   # 2022-23 base only (user: from April 2024 for y/y)
 
 
@@ -473,7 +474,8 @@ def update(force=False, **_):
     lk = linked(rows) + annual_rows(fetch_annual())
     dv = divisions(rows)
     ub = use_based(rows)
-    fp = hashlib.sha256(json.dumps(rows, sort_keys=True).encode()).hexdigest()[:16]
+    # METHOD in the fingerprint: a change to the calculated files (groups, contributions) rewrites them without new data
+    fp = hashlib.sha256(json.dumps([rows, METHOD], sort_keys=True).encode()).hexdigest()[:16]
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change ({state.get('label')})"}
     with open(OUT / "in_iip.csv", "w", newline="", encoding="utf-8") as fh:
