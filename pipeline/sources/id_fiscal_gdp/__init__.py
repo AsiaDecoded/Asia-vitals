@@ -29,6 +29,7 @@ import json
 
 from core.common import DATA, CheckFailed, read_json, write_long, write_release
 
+MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 NAME = "id_fiscal_gdp"
 DESCRIPTION = "Indonesia budget revenue, expenditure and balance as % of GDP (calculated; 2001-2009 on IMF WEO GDP; current year to the latest quarter with GDP)"
 OUT = DATA / "id" / "fiscal_gdp"
@@ -116,7 +117,7 @@ def update(force=False, **_):
                "expenditure_pct": round(ex / g * 100, 3), "balance_pct": round(bl / g * 100, 3),
                "revenue": rv, "expenditure": ex, "balance": bl,
                "mof_through": latest, "mof_balance_pct": float(mon[latest]["balance_pct_gdp"]) if mon[latest].get("balance_pct_gdp") else "",
-               "method": f"calculated: Ministry of Finance outturn Jan-{end[5:]} / BPS nominal GDP Q1-Q{q}"}
+               "method": f"calculated: Ministry of Finance outturn Jan-{MONTHS[int(end[5:7]) - 1]} / BPS nominal GDP Q1-Q{q}"}
         if abs(row["revenue_pct"] - row["expenditure_pct"] - row["balance_pct"]) > 0.02:
             errors.append(f"{y} year to date: ratios do not add up")
         rows.append(row)
