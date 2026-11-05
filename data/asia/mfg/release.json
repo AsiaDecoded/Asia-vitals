@@ -1,11 +1,11 @@
 {
- "code": "Fb8c2318d",
+ "code": "F48939004",
  "label": "Manufacturing sources: JP to 2026-08-01; KR to 2026-09-01; TW to 2026-09-01; MY to 2026-08-01; SG to 2026-09-01; HK to 2026-04-01",
  "economies": "HK JP KR MY SG TW",
- "processed_at": "2026-11-05T10:56:09Z",
+ "processed_at": "2026-11-05T11:08:23Z",
  "rows": 10334,
  "warnings": [],
- "fingerprint": "b8c2318dcd38bb79",
+ "fingerprint": "48939004d6a7df94",
  "long_rows": 10334,
  "history": [
   {
@@ -31,6 +31,10 @@
   {
    "code": "Fb8c2318d",
    "processed_at": "2026-11-05T10:56:09Z"
+  },
+  {
+   "code": "F48939004",
+   "processed_at": "2026-11-05T11:08:23Z"
   }
  ]
 }
