@@ -27,6 +27,13 @@ with open(OUT / "kr_901Y032.csv", "w", newline="") as fh:
         for r in rs:
             w.writerow([c, r.get("ITEM_NAME1"), r.get("TIME"), r.get("DATA_VALUE")])
         print(c, len(rs), rs[0].get("ITEM_NAME1") if rs else "")
+with open(OUT / "kr_200Y105.csv", "w", newline="") as fh:
+    w = csv.writer(fh)
+    w.writerow(["code", "name", "time", "value"])
+    for c in ["1103"] + [f"1103{i:02d}" for i in range(1, 14)]:
+        for r in ecos._paged("StatisticSearch", ["200Y105", "A", "2010", "2030", c]):
+            w.writerow([c, r.get("ITEM_NAME1"), r.get("TIME"), r.get("DATA_VALUE")])
+        print(c, "NA ok")
 t = singstat.table("M355381")
 with open(OUT / "sg_M355381.csv", "w", newline="") as fh:
     w = csv.writer(fh)
