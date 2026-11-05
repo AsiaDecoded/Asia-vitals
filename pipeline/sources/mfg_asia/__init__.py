@@ -24,7 +24,7 @@ Sources:
             nonelec = 製造工業 less elec, at METI's weights (calculated). GVA: not yet (ESRI production-side QNA).
   Korea     Statistics Korea mining and manufacturing production index (2020 = 100, original), Bank of Korea ECOS
             901Y032 by KSIC division (ISIC 27 = KSIC 28 전기장비). GVA: ECOS 200Y106 (real, original) and 200Y105
-            (nominal), manufacturing and GDP. nonelec = 제조업 less KSIC 26 + 27 at implied weights (24 divisions,
+            (nominal), manufacturing and GDP. nonelec = 제조업 less KSIC 26 at implied weights (24 divisions,
             three-year windows; weights re-set yearly).
   Taiwan    MOEA industrial production index, 2021 = 100, chain-linked, NSA (data.gov.tw 6607, d.csv, by TSIC):
             mfg = 製造業; elec = 資訊電子工業 (TSIC 26 + 27 = ISIC 26, published); 19 = TSIC 17; 21 = TSIC 20; 23; 24;
@@ -152,7 +152,7 @@ def korea():
             t = r.get("TIME", "")
             if v is not None and len(t) == 6:
                 out.append(row("KR", "M", f"{t[:4]}-{t[4:]}-01", k, v, note=name))
-    # non-electronics: manufacturing less KSIC 26 and 27 (= ISIC 26) at Statistics Korea's implied weights. Weights are
+    # non-electronics: manufacturing less KSIC 26 (the electronics column) at Statistics Korea's implied weights. Weights are
     # re-set each year and ECOS has one decimal, so each year is fitted on that year and its neighbours (24 divisions);
     # check 5 Nov 2026: manufacturing rebuilt this way is within 0.1 pp of the published y/y (median), 0.6 pp at most.
     S = {"MFG": {(int(x["date"][:4]), int(x["date"][5:7])): x["index"] for x in out if x["industry"] == "mfg"}}
@@ -164,8 +164,8 @@ def korea():
     if len(S) < 25:
         raise CheckFailed([f"KR: only {len(S) - 1} of 24 divisions"])
     coef = implied_weights(S, "MFG", KR_DIVS, 2015, win=1, min_months=1, tol=1.5, label="KR")
-    out += implied_rows("KR", S, coef, [c for c in KR_DIVS if c not in ("I11ACQ", "I11ACR")], "nonelec",
-                        "제조업 less KSIC 26 and 27 (= ISIC 26), implied weights fitted over three years, chain-linked (calculated)", 2020)
+    out += implied_rows("KR", S, coef, [c for c in KR_DIVS if c != "I11ACQ"], "nonelec",
+                        "제조업 less KSIC 26, implied weights fitted over three years, chain-linked (calculated)", 2020)
     gva = []
     real = {r["TIME"]: f(r["DATA_VALUE"]) for r in ecos._paged("StatisticSearch", ["200Y106", "Q", "2014Q1", "2030Q4", "1103"])}
     nom = {r["TIME"]: f(r["DATA_VALUE"]) for r in ecos._paged("StatisticSearch", ["200Y105", "Q", "2014Q1", "2030Q4", "1103"])}
