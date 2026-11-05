@@ -1,9 +1,0 @@
-latest: {"dt_all": "202603SS", "dt_name": "2026年03季度"}
-['2019A-2026D']: failed NBS request failed: https://data.stats.gov.cn/dg/website/publicrelease/web/external/stream/esData: <HTTPError 500: 'Internal Server Error'>
-['2019AQ-2026DQ']: failed NBS request failed: https://data.stats.gov.cn/dg/website/publicrelease/web/external/stream/esData: <HTTPError 500: 'Internal Server Error'>
-['201901SS-202604SS']: 32 periods; codes ['202604SS', '202603SS', '202602SS', '202601SS', '202504SS', '202503SS', '202502SS', '202501SS', '202404SS', '202403SS', '202402SS', '202401SS']
-['2019SS-2026SS']: failed NBS request failed: https://data.stats.gov.cn/dg/website/publicrelease/web/external/stream/esData: <HTTPError 500: 'Internal Server Error'>
-['201901QQ-202604QQ']: failed NBS request failed: https://data.stats.gov.cn/dg/website/publicrelease/web/external/stream/esData: <HTTPError 500: 'Internal Server Error'>
-['2019Q1-2026Q4']: failed NBS request failed: https://data.stats.gov.cn/dg/website/publicrelease/web/external/stream/esData: <HTTPError 500: 'Internal Server Error'>
-['201901MM-202612MM']: 96 periods; codes ['202612MM', '202611MM', '202610MM', '202609MM', '202608MM', '202607MM', '202606MM', '202605MM', '202604MM', '202603MM', '202602MM', '202601MM']
-['2019-2026']: failed NBS request failed: https://data.stats.gov.cn/dg/website/publicrelease/web/external/stream/esData: <HTTPError 500: 'Internal Server Error'>

@@ -28,7 +28,8 @@ Writes data/asia/mfg_tab/:
                        manufacturing GVA, sum of the year's real quarterly levels / the same quarters a year earlier - 1
                        (calculated; asked for 5 Nov 2026), within one price base only; the latest year with fewer than four
                        quarters is year to date (ytd = y, quarters e.g. Q1-Q3). Vietnam: NSO's annual and cumulative
-                       y/y as published (its real levels are not one consistent series; basis published).
+                       y/y as published (its real levels are not one consistent series; basis published). China: NBS's
+                       cumulative y/y as published (no real levels published).
   release.json, release_row.json (code T<hash>)
 """
 import csv
@@ -222,7 +223,7 @@ def gva():
                         "real_level": f(x["real_level"]), "price": "constant_2010"})
     for x in rd("asia/mfg/src_gva.csv"):
         out.append({"economy": x["economy"], "freq": x["freq"], "period": x["period"], "real_yoy": f(x["real_yoy"]), "share": f(x["share"]),
-                    "real_level": f(x.get("real_level")), "price": "source"})
+                    "real_level": f(x.get("real_level")), "price": "source", "cum_yoy": f(x.get("cum_yoy"))})
     for x in out:
         x["name"] = NAMES[x["economy"]]
     out.sort(key=lambda x: (x["economy"], x["freq"], x["period"]))
@@ -241,7 +242,8 @@ def gva_annual(g, warnings):
     """Calendar-year (and year-to-date) real growth from the quarterly real levels in g; see the module docstring."""
     out = []
     for e in sorted({x["economy"] for x in g}):
-        q = [x for x in g if x["economy"] == e and x["freq"] == "Q" and x.get("real_level")]
+        q0 = [x for x in g if x["economy"] == e and x["freq"] == "Q"]
+        q = [x for x in q0 if x.get("real_level")]
         lv = {}
         for x in q:
             lv.setdefault(x["price"], {}).setdefault(int(x["period"][:4]), {})[int(x["period"][-1])] = x["real_level"]
@@ -263,6 +265,17 @@ def gva_annual(g, warnings):
                         ytd = len(have) < 4
                         rows[y] = {"economy": e, "name": NAMES[e], "year": y, "quarters": f"Q1-Q{len(have)}" if ytd else "",
                                    "ytd": "y" if ytd else "", "real_yoy": round(g_, 2), "basis": "calculated"}
+        if e == "CN":
+            # NBS publishes no real levels: its cumulative (year-to-date) growth as published; Q4 = the full year
+            rows = {}
+            cq = [x for x in q0 if x.get("cum_yoy") is not None]
+            for y in sorted({int(x["period"][:4]) for x in cq}):
+                c = max((x for x in cq if int(x["period"][:4]) == y), key=lambda x: x["period"])
+                n = int(c["period"][-1])
+                if n < 4 and y != max(int(x["period"][:4]) for x in cq):
+                    continue
+                rows[y] = {"economy": e, "name": NAMES[e], "year": y, "quarters": "" if n == 4 else f"Q1-Q{n}",
+                           "ytd": "" if n == 4 else "y", "real_yoy": c["cum_yoy"], "basis": "published"}
         if e == "VN":
             # NSO's real levels are not one consistent series (each quarter and year in its own vintage and units: the
             # level-based growth jumps, e.g. -18% in 2014, +62% in 2021), so Vietnam uses NSO's growth rates as
