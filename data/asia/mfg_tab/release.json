@@ -1,11 +1,11 @@
 {
- "code": "Tcf72a23f",
- "label": "Asia manufacturing: production HK IN JP KR MY PH SG TH TW VN; GVA HK ID IN KR MY PH SG TH TW VN",
+ "code": "T0215bf91",
+ "label": "Asia manufacturing: production HK IN JP KR MY PH SG TH TW VN; GVA HK ID IN JP KR MY PH SG TH TW VN",
  "economies": "HK IN JP KR MY PH SG TH TW VN",
- "processed_at": "2026-11-05T13:02:28Z",
+ "processed_at": "2026-11-05T13:26:08Z",
  "rows": 12895,
  "warnings": [],
- "fingerprint": "cf72a23f7374339d",
+ "fingerprint": "0215bf918923fa3e",
  "history": [
   {
    "code": "Tee5fc706",
@@ -50,6 +50,10 @@
   {
    "code": "Tcf72a23f",
    "processed_at": "2026-11-05T13:02:28Z"
+  },
+  {
+   "code": "T0215bf91",
+   "processed_at": "2026-11-05T13:26:08Z"
   }
  ]
 }
