@@ -1,0 +1,20 @@
+name: NBS quarterly probe (dev-mfg-gva)
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-mfg-gva]
+    paths: [pipeline/tools/nbs_q_probe.py, .github/workflows/nbs-q-probe.yml]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python -I pipeline/tools/nbs_q_probe.py || true
+      - run: |
+          git config user.name "asia-vitals bot"; git config user.email "actions@users.noreply.github.com"
+          git add discovery/nbs_q && git commit -m "NBS quarterly probe ${{ github.run_id }}" && git push origin HEAD:${{ github.ref_name }}
