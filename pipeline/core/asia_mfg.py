@@ -10,9 +10,11 @@ Reads files already in the repo, calculates the same rates the same way for ever
   - Indonesia  data/id/gdp/id_gdp_industry.csv (GVA only; its production index has no source yet)
 
 Industries (ISIC Rev. 4): mfg, 19 refined petroleum, 20 chemicals, 21 pharmaceuticals, 23 non-metallic minerals,
-24 basic metals, 26, 27, elec (26 + 27), nonelec (manufacturing less 26 + 27). elec / nonelec are constructed at the
-agency's own published weights where it publishes them (India: MoSPI's; Thailand: OIE's; Japan: METI's), or taken as
-published (Singapore: Electronics cluster); otherwise blank (decision, 4 Nov 2026).
+24 basic metals, 26, 27, elec, nonelec. Electronics = ISIC 26, computer, electronic and optical products, the usual
+international definition (decision 5 Nov 2026; electrical equipment, 27, is not electronics): division 26 as published
+(Japan: 電子部品・デバイス + 情報通信機械 at METI's weights; Singapore: EDB's Electronics cluster). Non-electronics =
+manufacturing less 26, at the agency's published weights (India: MoSPI's; Thailand: OIE's; Japan: METI's); blank where
+no weights are published.
 
 Calculated (all flagged): y/y = index / index a year earlier - 1 where not published; m3 = plain average of the latest
 three monthly y/y (latest quarter's y/y for quarterly economies); ytd = calendar year to date, average index January to
@@ -67,10 +69,15 @@ def india():
     for x in rd("in/iip/in_iip.csv"):
         if x["base_year"] == "2022-23" and x["category"] == "Manufacturing" and x["sub_category"] in names:
             out.append(r("IN", "M", x["date"], names[x["sub_category"]], f(x["index"])))
-    for x in rd("in/iip/in_iip_groups.csv"):
-        k = {"E2627": "elec", "X2627": "nonelec"}.get(x["code"])
-        if k:
-            out.append(r("IN", "M", x["date"], k, f(x["index"])))
+    # non-electronics = manufacturing less division 26 at MoSPI's 2022-23 weights (% of the general index)
+    w = {}
+    for x in rd("in/iip/in_iip_contrib_items.csv"):
+        w[x["code"]] = f(x["weight"])
+    wm = sum(v for k, v in w.items() if k.isdigit() and 10 <= int(k) <= 33)
+    ix = {(x["industry"], x["date"]): x["index"] for x in out}
+    for (k, d), v in list(ix.items()):
+        if k == "mfg" and ix.get(("26", d)) is not None and v is not None:
+            out.append(r("IN", "M", d, "nonelec", round((wm * v - w["26"] * ix[("26", d)]) / (wm - w["26"]), 3)))
     return out
 
 
@@ -86,14 +93,11 @@ def thailand():
     for c, k in m.items():
         for d, v in ix.get(c, {}).items():
             out.append(r("TH", "M", d, k, v))
-    we = w["26"] + w["27"]
     for d in ix.get("all", {}):
-        a, b, t = ix["26"].get(d), ix["27"].get(d), ix["all"][d]
-        if None in (a, b, t):
+        a, t = ix["26"].get(d), ix["all"][d]
+        if None in (a, t):
             continue
-        el = (w["26"] * a + w["27"] * b) / we
-        out.append(r("TH", "M", d, "elec", round(el, 3), calc=""))
-        out.append(r("TH", "M", d, "nonelec", round((w["all"] * t - we * el) / (w["all"] - we), 3)))
+        out.append(r("TH", "M", d, "nonelec", round((w["all"] * t - w["26"] * a) / (w["all"] - w["26"]), 3)))
     return out
 
 
@@ -237,6 +241,9 @@ def build(force=False):
             iip += fn()
         except Exception as e:  # noqa: BLE001 - one economy must not stop the others
             warnings.append(f"{fn.__name__}: {type(e).__name__}: {e}")
+    # electronics = division 26 where the economy has no electronics series of its own (Japan and Singapore do)
+    have = {x["economy"] for x in iip if x["industry"] == "elec"}
+    iip += [{**x, "industry": "elec"} for x in iip if x["industry"] == "26" and x["economy"] not in have]
     iip = fill_yoy([x for x in iip if x["index"] is not None or x["yoy"] is not None])
     for x in iip:
         x["name"] = NAMES[x["economy"]]

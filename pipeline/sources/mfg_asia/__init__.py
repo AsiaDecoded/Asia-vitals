@@ -8,7 +8,7 @@ fails keeps its previous rows and is reported as a warning.
 
 Writes data/asia/mfg/:
   src_iip.csv  economy, freq (M/Q), date (first day of the period), industry, index, yoy, yoy_calculated, note
-               industry: mfg, 19, 20, 21, 23, 24, 26, 27, elec, nonelec (codes are ISIC Rev. 4 divisions; the national
+               industry: mfg, 19, 20, 21, 23, 24, 26, 27, elec (ISIC 26), nonelec (manufacturing less 26) (codes are ISIC Rev. 4 divisions; the national
                industry each maps to is in `note`). index as published; yoy as published where the agency publishes
                it, otherwise index / index a year earlier - 1 (yoy_calculated = y). elec / nonelec only where the
                agency publishes weights (Japan) or the aggregate (Singapore's Electronics cluster).
@@ -18,7 +18,8 @@ Writes data/asia/mfg/:
 
 Sources:
   Japan     METI Indices of Industrial Production, 2020 = 100, original index, value-added weights (b2020_gom1j.xlsx).
-            Pharma (21) = 化学工業 less 化学工業（除．医薬品） at METI's weights; elec = 電子部品・デバイス + 電気・情報通信機械;
+            Pharma (21) = 化学工業 less 化学工業（除．医薬品） at METI's weights; elec (ISIC 26) = 電子部品・デバイス + 情報通信機械
+            (electrical machinery, ISIC 27, left out: decision 5 Nov 2026);
             nonelec = 製造工業 less elec, at METI's weights (calculated). GVA: not yet (ESRI production-side QNA).
   Korea     Statistics Korea mining and manufacturing production index (2020 = 100, original), Bank of Korea ECOS
             901Y032 by KSIC division (ISIC 27 = KSIC 28 전기장비). GVA: ECOS 200Y106 (real, original) and 200Y105
@@ -81,7 +82,7 @@ def row(economy, freq, date, industry, index, yoy=None, note=""):
 # ---------- Japan ----------
 JP_URL = "https://www.meti.go.jp/statistics/tyo/iip/xls/b2020_gom1j.xlsx"
 JP_ROWS = {"mfg": "製造工業", "19": "石油・石炭製品工業", "20": "化学工業（除．医薬品）", "23": "窯業・土石製品工業",
-           "24": "鉄鋼・非鉄金属工業", "26a": "電子部品・デバイス工業", "e2": "電気・情報通信機械工業", "chem": "化学工業"}
+           "24": "鉄鋼・非鉄金属工業", "26a": "電子部品・デバイス工業", "e2": "情報通信機械工業", "chem": "化学工業"}
 
 
 def japan():
@@ -102,8 +103,8 @@ def japan():
     out = []
     note = {"mfg": "製造工業", "19": "石油・石炭製品工業", "20": "化学工業（除．医薬品）", "23": "窯業・土石製品工業",
             "24": "鉄鋼・非鉄金属工業 (ISIC 24)", "21": "医薬品 = 化学工業 less 化学工業（除．医薬品）, METI weights (calculated)",
-            "elec": "電子部品・デバイス + 電気・情報通信機械, METI weights (calculated)",
-            "nonelec": "製造工業 less electronics, METI weights (calculated)"}
+            "elec": "ISIC 26: 電子部品・デバイス + 情報通信機械, METI weights (calculated)",
+            "nonelec": "製造工業 less ISIC 26 electronics, METI weights (calculated)"}
     for d in sorted(series["mfg"]):
         s = {k: series[k].get(d) for k in series}
         if None in s.values():
