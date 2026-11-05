@@ -355,16 +355,16 @@ def hongkong():
             for k_, v_ in r.items():
                 if k_ not in ("figure", "period"):
                     dims.setdefault(k_, set()).add(str(v_))
-        DIAG.append("HK 310-31001 dims: " + "; ".join(f"{k_}={sorted(v_)[:8]}" for k_, v_ in dims.items()))
-        sel = [r for r in gt if r["freq"] == "Q" and any(str(v_).upper() == "GDP" for k_, v_ in r.items() if k_ not in ("figure", "period", "freq", "sv", "svDesc"))]
+        # the table is GDP only: sv CON = chained (2024) dollars (HK$ million level, and its y/y % change)
+        sel = [r for r in gt if r["freq"] == "Q" and r.get("sv") == "CON"]
         lv_desc = sorted({r["svDesc"] for r in sel if not r["svDesc"].startswith("Year-on-year") and "%" not in r["svDesc"]})
-        lv_pick = next((s for s in lv_desc if "chained" in s.lower()), None)
+        lv_pick = "HK$ million" if "HK$ million" in lv_desc else None
         yy_ = {r["period"]: f(r["figure"]) for r in sel if r["svDesc"].startswith("Year-on-year")}
         lv_ = {r["period"]: f(r["figure"]) for r in sel if r["svDesc"] == lv_pick}
         DIAG.append(f"HK GDP: level series {lv_desc}, picked {lv_pick}; {len(lv_)} levels, {len(yy_)} y/y")
         for per in sorted(set(lv_) | set(yy_)):
             GDP.append({"economy": "HK", "freq": "Q", "period": f"{per[:4]}-Q{int(per[4:6]) // 3}", "real_level": lv_.get(per),
-                        "real_yoy": yy_.get(per), "note": f"C&SD 310-31001 GDP: {lv_pick}; y/y as published"})
+                        "real_yoy": yy_.get(per), "note": "C&SD 310-31001 GDP at chained (2024) dollars, HK$ million; y/y as published"})
     except Exception as e:  # noqa: BLE001
         DIAG.append(f"HK GDP failed: {type(e).__name__}: {str(e)[:200]}")
     _, g = censtatd.table("310-34501")
