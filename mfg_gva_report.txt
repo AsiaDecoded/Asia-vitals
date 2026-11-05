@@ -1,0 +1,81 @@
+mfg_asia: JP to 2026-08-01; KR to 2026-09-01; TW to 2026-09-01; MY to 2026-08-01; SG to 2026-09-01; HK to 2026-04-01; CN GVA to 2026-Q3
+asia_mfg: Asia manufacturing rebuilt (HK IN JP KR MY PH SG TH TW VN)
+   src_gva CN: 0 rows with real levels
+   src_gva HK: 102 rows with real levels
+   src_gva JP: 130 rows with real levels
+   src_gva KR: 51 rows with real levels
+   src_gva MY: 46 rows with real levels
+   src_gva SG: 206 rows with real levels
+   src_gva TW: 182 rows with real levels
+   annual CN 2024  5.8 published
+   annual CN 2025  6.1 published
+   annual CN 2026 Q1-Q3 5.6 published
+   annual HK 2024  0.81 calculated
+   annual HK 2025  3.23 calculated
+   annual HK 2026 Q1-Q2 2.7 calculated
+   annual ID 2024  4.43 calculated
+   annual ID 2025  5.3 calculated
+   annual ID 2026 Q1-Q3 5.15 calculated
+   annual IN 2024  8.65 calculated
+   annual IN 2025  9.45 calculated
+   annual IN 2026 Q1-Q2 8.47 calculated
+   annual JP 2024  -5.78 calculated
+   annual JP 2025  -0.98 calculated
+   annual JP 2026 Q1-Q2 1.01 calculated
+   annual KR 2024  4.85 calculated
+   annual KR 2025  2.35 calculated
+   annual KR 2026 Q1-Q3 6.96 calculated
+   annual MY 2024  4.16 calculated
+   annual MY 2025  4.53 calculated
+   annual MY 2026 Q1-Q2 6.61 calculated
+   annual PH 2024  3.69 calculated
+   annual PH 2025  2.53 calculated
+   annual PH 2026 Q1-Q2 1.6 calculated
+   annual SG 2024  3.78 calculated
+   annual SG 2025  8.71 calculated
+   annual SG 2026 Q1-Q2 9.9 calculated
+   annual TH 2024  -0.3 calculated
+   annual TH 2025  0.45 calculated
+   annual TH 2026 Q1-Q2 0.56 calculated
+   annual TW 2024  10.39 calculated
+   annual TW 2025  17.02 calculated
+   annual TW 2026 Q1-Q2 21.93 calculated
+   annual VN 2024  9.83 published
+   annual VN 2025  9.97 published
+   annual VN 2026 Q1-Q3 11.36 published
+   GDP annual CN 2024  5.0 published
+   GDP annual CN 2025  5.0 published
+   GDP annual CN 2026 Q1-Q3 4.6 published
+   GDP annual HK 2024  2.64 calculated
+   GDP annual HK 2025  3.61 calculated
+   GDP annual HK 2026 Q1-Q2 5.1 calculated
+   GDP annual ID 2024  5.03 calculated
+   GDP annual ID 2025  5.11 calculated
+   GDP annual ID 2026 Q1-Q3 5.45 calculated
+   GDP annual IN 2024  7.42 calculated
+   GDP annual IN 2025  7.3 calculated
+   GDP annual IN 2026 Q1-Q2 8.2 calculated
+   GDP annual JP 2024  0.07 calculated
+   GDP annual JP 2025  1.16 calculated
+   GDP annual JP 2026 Q1-Q2 0.72 calculated
+   GDP annual KR 2024  2.19 calculated
+   GDP annual KR 2025  1.14 calculated
+   GDP annual KR 2026 Q1-Q3 3.63 calculated
+   GDP annual MY 2024  5.16 calculated
+   GDP annual MY 2025  5.15 calculated
+   GDP annual MY 2026 Q1-Q2 5.69 calculated
+   GDP annual PH 2024  5.71 calculated
+   GDP annual PH 2025  4.4 calculated
+   GDP annual PH 2026 Q1-Q2 2.57 calculated
+   GDP annual SG 2024  5.34 calculated
+   GDP annual SG 2025  5.03 calculated
+   GDP annual SG 2026 Q1-Q2 6.1 calculated
+   GDP annual TH 2024  2.95 calculated
+   GDP annual TH 2025  2.44 calculated
+   GDP annual TH 2026 Q1-Q2 2.4 calculated
+   GDP annual TW 2024  5.27 calculated
+   GDP annual TW 2025  8.76 calculated
+   GDP annual TW 2026 Q1-Q2 14.15 calculated
+   GDP annual VN 2024  7.09 published
+   GDP annual VN 2025  8.02 published
+   GDP annual VN 2026 Q1-Q3 9.01 published

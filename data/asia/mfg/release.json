@@ -2,11 +2,9 @@
  "code": "F4f957871",
  "label": "Manufacturing sources: JP to 2026-08-01; KR to 2026-09-01; TW to 2026-09-01; MY to 2026-08-01; SG to 2026-09-01; HK to 2026-04-01; CN GVA to 2026-Q3",
  "economies": "HK JP KR MY SG TW",
- "processed_at": "2026-11-05T22:32:18Z",
+ "processed_at": "2026-11-05T22:40:54Z",
  "rows": 10334,
- "warnings": [
-  "HK GDP: level series ['HK$ million'], picked HK$ million; 214 levels, 214 y/y"
- ],
+ "warnings": [],
  "fingerprint": "4f957871caa722ca",
  "long_rows": 10334,
  "history": [
@@ -56,7 +54,7 @@
   },
   {
    "code": "F4f957871",
-   "processed_at": "2026-11-05T22:32:18Z"
+   "processed_at": "2026-11-05T22:40:54Z"
   }
  ]
 }
