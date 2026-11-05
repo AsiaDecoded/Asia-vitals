@@ -136,6 +136,8 @@ KR_ITEMS = {"mfg": ("I11AC", "제조업"), "19": ("I11ACJ", "코크스, 연탄 �
             "21": ("I11ACL", "의료용 물질 및 의약품"), "23": ("I11ACN", "비금속 광물제품"), "24": ("I11ACO", "1차 금속"),
             "26": ("I11ACQ", "전자부품, 컴퓨터, 영상 음향 및 통신장비 (KSIC 26)"), "27": ("I11ACS", "전기장비 (KSIC 28)")}
 
+KR_DIVS = [f"I11AC{c}" for c in "ABCDEFGHIJKLMNOPQRSTUVWX"]   # the 24 KSIC manufacturing divisions (10-33)
+
 
 def korea():
     from core import ecos
@@ -147,6 +149,20 @@ def korea():
             t = r.get("TIME", "")
             if v is not None and len(t) == 6:
                 out.append(row("KR", "M", f"{t[:4]}-{t[4:]}-01", k, v, note=name))
+    # non-electronics: manufacturing less KSIC 26 and 27 (= ISIC 26) at Statistics Korea's implied weights. Weights are
+    # re-set each year and ECOS has one decimal, so each year is fitted on that year and its neighbours (24 divisions);
+    # check 5 Nov 2026: manufacturing rebuilt this way is within 0.1 pp of the published y/y (median), 0.6 pp at most.
+    S = {"MFG": {(int(x["date"][:4]), int(x["date"][5:7])): x["index"] for x in out if x["industry"] == "mfg"}}
+    for c in KR_DIVS:
+        for r in ecos._paged("StatisticSearch", ["901Y032", "M", "201501", "203012", c, "1"]):
+            v, t = f(r.get("DATA_VALUE")), r.get("TIME", "")
+            if v is not None and len(t) == 6:
+                S.setdefault(c, {})[(int(t[:4]), int(t[4:]))] = v
+    if len(S) < 25:
+        raise CheckFailed([f"KR: only {len(S) - 1} of 24 divisions"])
+    coef = implied_weights(S, "MFG", KR_DIVS, 2015, win=1, min_months=1, tol=1.5, label="KR")
+    out += implied_rows("KR", S, coef, [c for c in KR_DIVS if c not in ("I11ACQ", "I11ACR")], "nonelec",
+                        "제조업 less KSIC 26 and 27 (= ISIC 26), implied weights fitted over three years, chain-linked (calculated)", 2020)
     gva = []
     real = {r["TIME"]: f(r["DATA_VALUE"]) for r in ecos._paged("StatisticSearch", ["200Y106", "Q", "2014Q1", "2030Q4", "1103"])}
     nom = {r["TIME"]: f(r["DATA_VALUE"]) for r in ecos._paged("StatisticSearch", ["200Y105", "Q", "2014Q1", "2030Q4", "1103"])}
@@ -175,6 +191,16 @@ def malaysia():
     for r in dosm.rows(dosm.raw_csv("ipi/ipi_1d.csv")):
         if r["series"] == "abs" and r["section"] == "C":
             out.append(row("MY", "M", r["date"], "mfg", f(r["index"]), note="Section C, manufacturing"))
+    # non-electronics: section C less MSIC 26 at DOSM's implied weights (fixed 2015 weights: one fit over all years)
+    S = {}
+    for r in rows2:
+        if r["series"] == "abs" and r["division"].isdigit() and 10 <= int(r["division"]) <= 33 and f(r["index"]) is not None:
+            S.setdefault(r["division"], {})[(int(r["date"][:4]), int(r["date"][5:7]))] = f(r["index"])
+    S["C"] = {(int(x["date"][:4]), int(x["date"][5:7])): x["index"] for x in out if x["industry"] == "mfg"}
+    divs = sorted(k for k in S if k != "C")
+    coef = implied_weights(S, "C", divs, 2015, win=50, min_months=1, tol=0.05, label="MY")
+    out += implied_rows("MY", S, coef, [d_ for d_ in divs if d_ != "26"], "nonelec",
+                        "Section C less MSIC 26, DOSM implied weights (calculated)", 2015)
     gva = []
     real = {r["date"]: f(r["value"]) for r in dosm.rows(dosm.raw_csv("gdp/gdp_qtr_real_supply.csv")) if r["series"] == "abs" and r["sector"] == "p3"}
     ry = {r["date"]: f(r["value"]) for r in dosm.rows(dosm.raw_csv("gdp/gdp_qtr_real_supply.csv")) if r["series"] == "growth_yoy" and r["sector"] == "p3"}
@@ -211,6 +237,18 @@ def singapore():
             y, m = c["key"].split()
             out.append(row("SG", "M", f"{y}-{MON[m]:02d}-01", k, f(c["value"]),
                            note=f"EDB cluster/segment: {r['rowText'].strip()} (not ISIC)"))
+    # non-electronics: Total less Electronics cluster, at EDB's implied cluster weights (re-set each year)
+    S = {}
+    for r in t["rows"]:
+        if r.get("seriesNo") in ("1", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6"):
+            for c in r["columns"]:
+                y, m = c["key"].split()
+                if f(c["value"]) is not None:
+                    S.setdefault(r["seriesNo"], {})[(int(y), MON[m])] = f(c["value"])
+    cl = ["1.1", "1.2", "1.3", "1.4", "1.5", "1.6"]
+    coef = implied_weights(S, "1", cl, 2011, min_months=6, tol=0.1, label="SG")
+    out += implied_rows("SG", S, coef, cl[1:], "nonelec", "Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)", 2025)
+
     def q(tid, text):
         for r in singstat.table(tid)["rows"]:
             if (r["rowText"] or "").strip() == text:
@@ -269,47 +307,59 @@ TW_PUBLISHED = {"mfg": ("C", "製造業"), "elec": ("I2", "資訊電子工業 = 
 TW_I3 = ["13", "15", "16", "17", "18", "19", "20", "21", "22"]   # TSIC divisions in MOEA's 化學工業 group (I3)
 
 
-def tw_coef(S, target, parts, min_months, start=2009):
-    """Implicit weights of `parts` in `target` for each calendar year: MOEA's indices are chain-linked yearly, so within
-    a year the group index is a fixed linear combination of its divisions' indices (fit exact to rounding, checked
-    5 Nov 2026, from 2009; earlier years fit less well and are left out). Least squares per year; a year with fewer than min_months months takes the previous year's weights."""
+def implied_weights(S, target, parts, start, win=0, min_months=12, tol=0.1, label=""):
+    """Implied weights of `parts` in `target` for each calendar year from `start`, for agencies that publish no
+    weights (checked 5 Nov 2026): within a year (chain-linked yearly) or over the whole base (fixed weights) the
+    manufacturing index is a linear combination of its divisions' indices. Least squares on the months of years
+    y - win .. y + win, non-negative (the most negative division is dropped and the fit repeated). A year with fewer
+    than min_months months takes the previous year's weights. Fails if the fit misses by more than tol index points."""
     import numpy as np
     out, last = {}, None
     for y in sorted({k[0] for k in S[target] if k[0] >= start}):
-        ks = [(y, m) for m in range(1, 13) if all((y, m) in S[c] for c in [target] + parts)]
-        if len(ks) >= min_months:
-            A = np.array([[S[c][k] for c in parts] for k in ks])
-            b = np.array([S[target][k] for k in ks])
-            w = np.linalg.lstsq(A, b, rcond=None)[0]
-            if float(np.abs(A @ w - b).max()) > 0.1:
-                raise CheckFailed([f"TW: {target} is not a fixed combination of {parts} in {y}"])
-            last = dict(zip(parts, w))
+        n_y = sum(1 for m in range(1, 13) if (y, m) in S[target] and all((y, m) in S[c] for c in parts))
+        if n_y >= min_months:
+            ks = [k for k in S[target] if y - win <= k[0] <= y + win and all(k in S[c] for c in parts)]
+            use = list(parts)
+            while True:
+                A = np.array([[S[c][k] for c in use] for k in ks])
+                b = np.array([S[target][k] for k in ks])
+                w = np.linalg.lstsq(A, b, rcond=None)[0]
+                if (w >= 0).all():
+                    break
+                use.pop(int(np.argmin(w)))
+            if float(np.abs(A @ w - b).max()) > tol:
+                raise CheckFailed([f"{label}: {target} is not a fixed combination of its parts around {y} (miss {float(np.abs(A @ w - b).max()):.2f})"])
+            last = {c: 0.0 for c in parts}
+            last.update(dict(zip(use, (float(x) for x in w))))
         if last:
             out[y] = last
     return out
 
 
-def tw_chain(S, coef, use):
-    """Chain-linked index of the divisions in `use`, at each year's implicit weights, linked at December, 2021 = 100."""
-    ix, prev = {}, None
+def implied_chain(S, coef, use, base_year=None):
+    """Index of the divisions in `use` at each year's implied weights, chain-linked at December; base_year = 100."""
+    ix, first = {}, True
     for y in sorted(coef):
         w = coef[y]
         raw = lambda k: sum(w[c] * S[c][k] for c in use) if all(k in S[c] for c in use) else None  # noqa: E731
-        months = [(y, m) for m in range(1, 13) if raw((y, m)) is not None]
+        months = [(y, m) for m in range(1, 13) if raw((y, m))]
         if not months:
             continue
-        if prev is None:
-            for k in months:
-                ix[k] = raw(k)
+        if first:
+            ix.update({k: raw(k) for k in months})
+            first = False
         else:
             dec = (y - 1, 12)
             if dec not in ix or not raw(dec):
                 break
-            for k in months:
-                ix[k] = ix[dec] * raw(k) / raw(dec)
-        prev = y
-    base = [v for k, v in ix.items() if k[0] == 2021]
-    return {k: v / (sum(base) / len(base)) * 100 for k, v in ix.items()} if len(base) == 12 else {}
+            ix.update({k: ix[dec] * raw(k) / raw(dec) for k in months})
+    base = [v for k, v in ix.items() if k[0] == base_year]
+    return {k: v / (sum(base) / len(base)) * 100 for k, v in ix.items()} if len(base) == 12 else ix
+
+
+def implied_rows(eco, S, coef, use, ind, note, base_year=None):
+    return [row(eco, "M", f"{k[0]}-{k[1]:02d}-01", ind, round(v, 3), note=note)
+            for k, v in sorted(implied_chain(S, coef, use, base_year).items())]
 
 
 def taiwan():
@@ -327,12 +377,10 @@ def taiwan():
     for k, (code, note) in TW_PUBLISHED.items():
         out += [row("TW", "M", d(p), k, v, note=f"MOEA IPI 2021 = 100: {note}") for p, v in sorted(S[code].items())]
     # non-electronics = 製造業 less 資訊電子工業 (I1 + I3 + I4); chemicals (ISIC 20) = TSIC 18 + 19; both at implicit weights
-    g = tw_coef(S, "C", ["I1", "I2", "I3", "I4"], 4)
-    out += [row("TW", "M", d(p), "nonelec", round(v, 3), note="製造業 less 資訊電子工業 (ISIC 26), MOEA implicit weights, chain-linked (calculated)")
-            for p, v in sorted(tw_chain(S, g, ["I1", "I3", "I4"]).items())]
-    c = tw_coef(S, "I3", TW_I3, 12)
-    out += [row("TW", "M", d(p), "20", round(v, 3), note="TSIC 18 化學材料及肥料 + 19 其他化學製品 (= ISIC 20), MOEA implicit weights, chain-linked (calculated)")
-            for p, v in sorted(tw_chain(S, c, ["18", "19"]).items())]
+    g = implied_weights(S, "C", ["I1", "I2", "I3", "I4"], 2009, min_months=4, label="TW")
+    out += implied_rows("TW", S, g, ["I1", "I3", "I4"], "nonelec", "製造業 less 資訊電子工業 (ISIC 26), MOEA implied weights, chain-linked (calculated)", 2021)
+    c = implied_weights(S, "I3", TW_I3, 2009, min_months=12, label="TW")
+    out += implied_rows("TW", S, c, ["18", "19"], "20", "TSIC 18 化學材料及肥料 + 19 其他化學製品 (= ISIC 20), MOEA implied weights, chain-linked (calculated)", 2021)
     # GVA: DGBAS production-side national accounts, quarterly (file name changes with each release: found on the page)
     from core import dgbas
     page = dgbas.get(TW_GDP_PAGE).decode("utf-8", "replace")
