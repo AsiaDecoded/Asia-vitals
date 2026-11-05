@@ -21,7 +21,7 @@ Sources:
   Japan     METI Indices of Industrial Production, 2020 = 100, original index, value-added weights (b2020_gom1j.xlsx).
             Pharma (21) = 化学工業 less 化学工業（除．医薬品） at METI's weights; elec (ISIC 26) = 電子部品・デバイス + 情報通信機械
             (electrical machinery, ISIC 27, left out: decision 5 Nov 2026);
-            nonelec = 製造工業 less elec, at METI's weights (calculated). GVA: not yet (ESRI production-side QNA).
+            27 = 電気機械工業; nonelec = 製造工業 less elec, at METI's weights (calculated). GVA: not yet (ESRI production-side QNA).
   Korea     Statistics Korea mining and manufacturing production index (2020 = 100, original), Bank of Korea ECOS
             901Y032 by KSIC division (ISIC 27 = KSIC 28 전기장비). GVA: ECOS 200Y106 (real, original) and 200Y105
             (nominal), manufacturing and GDP. nonelec = 제조업 less KSIC 26 at implied weights (24 divisions,
@@ -95,7 +95,8 @@ def row(economy, freq, date, industry, index, yoy=None, note=""):
 # ---------- Japan ----------
 JP_URL = "https://www.meti.go.jp/statistics/tyo/iip/xls/b2020_gom1j.xlsx"
 JP_ROWS = {"mfg": "製造工業", "19": "石油・石炭製品工業", "20": "化学工業（除．医薬品）", "23": "窯業・土石製品工業",
-           "24": "鉄鋼・非鉄金属工業", "26a": "電子部品・デバイス工業", "e2": "情報通信機械工業", "chem": "化学工業"}
+           "24": "鉄鋼・非鉄金属工業", "26a": "電子部品・デバイス工業", "e2": "情報通信機械工業", "chem": "化学工業",
+           "27": "電気機械工業"}
 
 
 def japan():
@@ -115,14 +116,14 @@ def japan():
         series[k] = {f"{p[:4]}-{p[4:6]}-01": float(v) for p, v in zip(periods, by[n]) if len(p) == 6 and isinstance(v, (int, float))}
     out = []
     note = {"mfg": "製造工業", "19": "石油・石炭製品工業", "20": "化学工業（除．医薬品）", "23": "窯業・土石製品工業",
-            "24": "鉄鋼・非鉄金属工業 (ISIC 24)", "21": "医薬品 = 化学工業 less 化学工業（除．医薬品）, METI weights (calculated)",
+            "24": "鉄鋼・非鉄金属工業 (ISIC 24)", "27": "電気機械工業 (JSIC 29; ~ISIC 27, includes electrical measuring instruments)", "21": "医薬品 = 化学工業 less 化学工業（除．医薬品）, METI weights (calculated)",
             "elec": "ISIC 26: 電子部品・デバイス + 情報通信機械, METI weights (calculated)",
             "nonelec": "製造工業 less ISIC 26 electronics, METI weights (calculated)"}
     for d in sorted(series["mfg"]):
         s = {k: series[k].get(d) for k in series}
         if None in s.values():
             continue
-        for k in ("mfg", "19", "20", "23", "24"):
+        for k in ("mfg", "19", "20", "23", "24", "27"):
             out.append(row("JP", "M", d, k, s[k], note=note[k]))
         out.append(row("JP", "M", d, "21", round((w["chem"] * s["chem"] - w["20"] * s["20"]) / (w["chem"] - w["20"]), 3), note=note["21"]))
         we = w["26a"] + w["e2"]
