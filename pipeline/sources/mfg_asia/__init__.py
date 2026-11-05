@@ -118,7 +118,7 @@ def japan():
     note = {"mfg": "製造工業", "19": "石油・石炭製品工業", "20": "化学工業（除．医薬品）", "23": "窯業・土石製品工業",
             "24": "鉄鋼・非鉄金属工業 (ISIC 24)", "27": "電気機械工業 (JSIC 29; ~ISIC 27, includes electrical measuring instruments)", "21": "医薬品 = 化学工業 less 化学工業（除．医薬品）, METI weights (calculated)",
             "elec": "ISIC 26: 電子部品・デバイス + 情報通信機械, METI weights (calculated)",
-            "nonelec": "製造工業 less ISIC 26 electronics, METI weights (calculated)"}
+            "nonelec": "製造工業 less ISIC 26 electronics and 電気機械工業 (27), METI weights (calculated)"}
     for d in sorted(series["mfg"]):
         s = {k: series[k].get(d) for k in series}
         if None in s.values():
@@ -129,7 +129,7 @@ def japan():
         we = w["26a"] + w["e2"]
         el = (w["26a"] * s["26a"] + w["e2"] * s["e2"]) / we
         out.append(row("JP", "M", d, "elec", round(el, 3), note=note["elec"]))
-        out.append(row("JP", "M", d, "nonelec", round((w["mfg"] * s["mfg"] - we * el) / (w["mfg"] - we), 3), note=note["nonelec"]))
+        out.append(row("JP", "M", d, "nonelec", round((w["mfg"] * s["mfg"] - we * el - w["27"] * s["27"]) / (w["mfg"] - we - w["27"]), 3), note=note["nonelec"]))
     if len(out) < 500:
         raise CheckFailed([f"JP: only {len(out)} rows"])
     return out, []
@@ -153,7 +153,7 @@ def korea():
             t = r.get("TIME", "")
             if v is not None and len(t) == 6:
                 out.append(row("KR", "M", f"{t[:4]}-{t[4:]}-01", k, v, note=name))
-    # non-electronics: manufacturing less KSIC 26 (the electronics column) at Statistics Korea's implied weights. Weights are
+    # rest: manufacturing less KSIC 26 (electronics column) and 28 (= ISIC 27) at Statistics Korea's implied weights. Weights are
     # re-set each year and ECOS has one decimal, so each year is fitted on that year and its neighbours (24 divisions);
     # check 5 Nov 2026: manufacturing rebuilt this way is within 0.1 pp of the published y/y (median), 0.6 pp at most.
     S = {"MFG": {(int(x["date"][:4]), int(x["date"][5:7])): x["index"] for x in out if x["industry"] == "mfg"}}
@@ -165,8 +165,8 @@ def korea():
     if len(S) < 25:
         raise CheckFailed([f"KR: only {len(S) - 1} of 24 divisions"])
     coef = implied_weights(S, "MFG", KR_DIVS, 2015, win=1, min_months=1, tol=1.5, label="KR")
-    out += implied_rows("KR", S, coef, [c for c in KR_DIVS if c != "I11ACQ"], "nonelec",
-                        "제조업 less KSIC 26, implied weights fitted over three years, chain-linked (calculated)", 2020)
+    out += implied_rows("KR", S, coef, [c for c in KR_DIVS if c not in ("I11ACQ", "I11ACS")], "nonelec",
+                        "제조업 less KSIC 26 and 28 (ISIC 26, 27), implied weights fitted over three years, chain-linked (calculated)", 2020)
     gva = []
     real = {r["TIME"]: f(r["DATA_VALUE"]) for r in ecos._paged("StatisticSearch", ["200Y106", "Q", "2014Q1", "2030Q4", "1103"])}
     nom = {r["TIME"]: f(r["DATA_VALUE"]) for r in ecos._paged("StatisticSearch", ["200Y105", "Q", "2014Q1", "2030Q4", "1103"])}
@@ -195,7 +195,7 @@ def malaysia():
     for r in dosm.rows(dosm.raw_csv("ipi/ipi_1d.csv")):
         if r["series"] == "abs" and r["section"] == "C":
             out.append(row("MY", "M", r["date"], "mfg", f(r["index"]), note="Section C, manufacturing"))
-    # non-electronics: section C less MSIC 26 at DOSM's implied weights (fixed 2015 weights: one fit over all years)
+    # rest: section C less MSIC 26 and 27 at DOSM's implied weights (fixed 2015 weights: one fit over all years)
     S = {}
     for r in rows2:
         if r["series"] == "abs" and r["division"].isdigit() and 10 <= int(r["division"]) <= 33 and f(r["index"]) is not None:
@@ -203,8 +203,8 @@ def malaysia():
     S["C"] = {(int(x["date"][:4]), int(x["date"][5:7])): x["index"] for x in out if x["industry"] == "mfg"}
     divs = sorted(k for k in S if k != "C")
     coef = implied_weights(S, "C", divs, 2015, win=50, min_months=1, tol=0.05, label="MY")
-    out += implied_rows("MY", S, coef, [d_ for d_ in divs if d_ != "26"], "nonelec",
-                        "Section C less MSIC 26, DOSM implied weights (calculated)", 2015)
+    out += implied_rows("MY", S, coef, [d_ for d_ in divs if d_ not in ("26", "27")], "nonelec",
+                        "Section C less MSIC 26 and 27, DOSM implied weights (calculated)", 2015)
     gva = []
     real = {r["date"]: f(r["value"]) for r in dosm.rows(dosm.raw_csv("gdp/gdp_qtr_real_supply.csv")) if r["series"] == "abs" and r["sector"] == "p3"}
     ry = {r["date"]: f(r["value"]) for r in dosm.rows(dosm.raw_csv("gdp/gdp_qtr_real_supply.csv")) if r["series"] == "growth_yoy" and r["sector"] == "p3"}
@@ -380,9 +380,11 @@ def taiwan():
     out = []
     for k, (code, note) in TW_PUBLISHED.items():
         out += [row("TW", "M", d(p), k, v, note=f"MOEA IPI 2021 = 100: {note}") for p, v in sorted(S[code].items())]
-    # non-electronics = 製造業 less 資訊電子工業 (I1 + I3 + I4); chemicals (ISIC 20) = TSIC 18 + 19; both at implicit weights
-    g = implied_weights(S, "C", ["I1", "I2", "I3", "I4"], 2009, min_months=4, label="TW")
-    out += implied_rows("TW", S, g, ["I1", "I3", "I4"], "nonelec", "製造業 less 資訊電子工業 (ISIC 26), MOEA implied weights, chain-linked (calculated)", 2021)
+    # rest = 製造業 less 資訊電子工業 and TSIC 28; chemicals (ISIC 20) = TSIC 18 + 19; both at implicit weights
+    i1 = ["24", "25", "28", "29", "30", "31", "34"]          # 金屬機電工業 (I1) divisions; TSIC 28 = ISIC 27
+    g = implied_weights(S, "C", ["I2", "I3", "I4"] + i1, 2009, min_months=12, label="TW")
+    out += implied_rows("TW", S, g, ["I3", "I4"] + [c_ for c_ in i1 if c_ != "28"], "nonelec",
+                        "製造業 less 資訊電子工業 (ISIC 26) and TSIC 28 電力設備 (ISIC 27), MOEA implied weights, chain-linked (calculated)", 2021)
     c = implied_weights(S, "I3", TW_I3, 2009, min_months=12, label="TW")
     out += implied_rows("TW", S, c, ["18", "19"], "20", "TSIC 18 化學材料及肥料 + 19 其他化學製品 (= ISIC 20), MOEA implied weights, chain-linked (calculated)", 2021)
     # GVA: DGBAS production-side national accounts, quarterly (file name changes with each release: found on the page)

@@ -69,15 +69,15 @@ def india():
     for x in rd("in/iip/in_iip.csv"):
         if x["base_year"] == "2022-23" and x["category"] == "Manufacturing" and x["sub_category"] in names:
             out.append(r("IN", "M", x["date"], names[x["sub_category"]], f(x["index"])))
-    # non-electronics = manufacturing less division 26 at MoSPI's 2022-23 weights (% of the general index)
+    # rest = manufacturing less divisions 26 and 27 at MoSPI's 2022-23 weights (% of the general index)
     w = {}
     for x in rd("in/iip/in_iip_contrib_items.csv"):
         w[x["code"]] = f(x["weight"])
     wm = sum(v for k, v in w.items() if k.isdigit() and 10 <= int(k) <= 33)
     ix = {(x["industry"], x["date"]): x["index"] for x in out}
     for (k, d), v in list(ix.items()):
-        if k == "mfg" and ix.get(("26", d)) is not None and v is not None:
-            out.append(r("IN", "M", d, "nonelec", round((wm * v - w["26"] * ix[("26", d)]) / (wm - w["26"]), 3)))
+        if k == "mfg" and ix.get(("26", d)) is not None and ix.get(("27", d)) is not None and v is not None:
+            out.append(r("IN", "M", d, "nonelec", round((wm * v - w["26"] * ix[("26", d)] - w["27"] * ix[("27", d)]) / (wm - w["26"] - w["27"]), 3)))
     return out
 
 
@@ -94,10 +94,10 @@ def thailand():
         for d, v in ix.get(c, {}).items():
             out.append(r("TH", "M", d, k, v))
     for d in ix.get("all", {}):
-        a, t = ix["26"].get(d), ix["all"][d]
-        if None in (a, t):
+        a, b, t = ix["26"].get(d), ix["27"].get(d), ix["all"][d]
+        if None in (a, b, t):
             continue
-        out.append(r("TH", "M", d, "nonelec", round((w["all"] * t - w["26"] * a) / (w["all"] - w["26"]), 3)))
+        out.append(r("TH", "M", d, "nonelec", round((w["all"] * t - w["26"] * a - w["27"] * b) / (w["all"] - w["26"] - w["27"]), 3)))
     return out
 
 
