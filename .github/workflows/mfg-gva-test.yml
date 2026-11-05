@@ -6,7 +6,7 @@ name: Manufacturing GVA test (dev-mfg-gva)
 on:
   workflow_dispatch:
   push:
-    branches: [dev-mfg-gva]
+    branches: [dev-mfg-gva, dev-asia-gdp]
     paths:
       - pipeline/sources/mfg_asia/**
       - pipeline/core/asia_mfg.py
@@ -56,6 +56,9 @@ jobs:
           for r in csv.DictReader(open("data/asia/mfg_tab/asia_mfg_gva_annual.csv")):
               if int(r["year"]) >= 2024:
                   lines.append(f"   annual {r['economy']} {r['year']} {r['quarters']} {r['real_yoy']} {r['basis']}")
+          for r in csv.DictReader(open("data/asia/mfg_tab/asia_gdp_annual.csv")):
+              if int(r["year"]) >= 2024:
+                  lines.append(f"   GDP annual {r['economy']} {r['year']} {r['quarters']} {r['real_yoy']} {r['basis']}")
           open("mfg_gva_report.txt", "w").write("\n".join(lines) + "\n")
           print("\n".join(lines))
           EOF

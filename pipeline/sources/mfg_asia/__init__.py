@@ -60,6 +60,10 @@ DESCRIPTION = "Manufacturing production indices and GVA for the Asia Manufacturi
 OUT = DATA / "asia" / "mfg"
 IIP_COLS = ["economy", "freq", "date", "industry", "index", "yoy", "yoy_calculated", "note"]
 GVA_COLS = ["economy", "freq", "period", "real_yoy", "share", "real_yoy_calculated", "share_calculated", "note", "real_level", "cum_yoy"]
+# Real GDP (total), quarterly, from the same national-accounts tables: for the Asia tab's GDP page (added 6 Nov 2026)
+GDP_COLS = ["economy", "freq", "period", "real_level", "real_yoy", "cum_yoy", "note"]
+GDP = []      # filled by the economy functions during update()
+DIAG = []     # notes for the run report
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"}
 
 
@@ -210,6 +214,10 @@ def korea():
     gva = []
     real = {r["TIME"]: f(r["DATA_VALUE"]) for r in ecos._paged("StatisticSearch", ["200Y106", "Q", "2014Q1", "2030Q4", "1103"])}
     nom = {r["TIME"]: f(r["DATA_VALUE"]) for r in ecos._paged("StatisticSearch", ["200Y105", "Q", "2014Q1", "2030Q4", "1103"])}
+    rg = {r["TIME"]: f(r["DATA_VALUE"]) for r in ecos._paged("StatisticSearch", ["200Y106", "Q", "1960Q1", "2030Q4", "1400"])}
+    for t_ in sorted(rg):
+        GDP.append({"economy": "KR", "freq": "Q", "period": f"{t_[:4]}-{t_[4:]}", "real_level": rg[t_],
+                    "note": "BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"})
     gdp = {r["TIME"]: f(r["DATA_VALUE"]) for r in ecos._paged("StatisticSearch", ["200Y105", "Q", "2014Q1", "2030Q4", "1400"])}
     for t in sorted(real):
         p = f"{int(t[:4]) - 1}{t[4:]}"
@@ -248,6 +256,15 @@ def malaysia():
     gva = []
     real = {r["date"]: f(r["value"]) for r in dosm.rows(dosm.raw_csv("gdp/gdp_qtr_real_supply.csv")) if r["series"] == "abs" and r["sector"] == "p3"}
     ry = {r["date"]: f(r["value"]) for r in dosm.rows(dosm.raw_csv("gdp/gdp_qtr_real_supply.csv")) if r["series"] == "growth_yoy" and r["sector"] == "p3"}
+    for r in dosm.rows(dosm.raw_csv("gdp/gdp_qtr_real_supply.csv")):
+        if r["sector"] == "p0" and r["series"] in ("abs", "growth_yoy"):
+            d_ = r["date"]
+            k = f"{d_[:4]}-Q{(int(d_[5:7]) - 1) // 3 + 1}"
+            g_ = next((x for x in GDP if x["economy"] == "MY" and x["period"] == k), None)
+            if not g_:
+                g_ = {"economy": "MY", "freq": "Q", "period": k, "note": "DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"}
+                GDP.append(g_)
+            g_["real_level" if r["series"] == "abs" else "real_yoy"] = f(r["value"])
     nom = {}
     for r in dosm.rows(dosm.raw_csv("gdp/gdp_qtr_nominal_supply.csv")):
         if r["series"] == "abs" and r["sector"] in ("p0", "p3"):
@@ -299,6 +316,14 @@ def singapore():
                 return {c["key"]: f(c["value"]) for c in r["columns"]}
         raise CheckFailed([f"SG: {text} not in {tid}"])
     real, nom, gdp = q("M015661", "Manufacturing"), q("M015651", "Manufacturing"), q("M015651", "GDP At Current Market Prices")
+    rg_row = next((r for r in singstat.table("M015661")["rows"] if (r["rowText"] or "").strip().upper().startswith("GDP")), None)
+    if rg_row:
+        for c in rg_row["columns"]:
+            y_, q_ = c["key"].split()
+            GDP.append({"economy": "SG", "freq": "Q", "period": f"{y_}-Q{q_[0]}", "real_level": f(c["value"]),
+                        "note": f"SingStat M015661 {rg_row['rowText'].strip()}"})
+    else:
+        DIAG.append("SG: no GDP row in M015661")
     gva = []
     for k in sorted(real, key=lambda s: (s[:4], s[5])):
         y, qq = k.split()
@@ -323,6 +348,26 @@ def hongkong():
     for p, v in sorted(ix.items()):
         m = int(p[4:6]) - 2
         out.append(row("HK", "Q", f"{p[:4]}-{m:02d}-01", "mfg", v, yy.get(p), note="C&SD 610-65001, manufacturing, quarterly"))
+    try:
+        _, gt = censtatd.table("310-31001")
+        dims = {}
+        for r in gt[:4000]:
+            for k_, v_ in r.items():
+                if k_ not in ("figure", "period"):
+                    dims.setdefault(k_, set()).add(str(v_))
+        # the table is GDP only: sv CON = chained (2024) dollars (HK$ million level, and its y/y % change)
+        sel = [r for r in gt if r["freq"] == "Q" and r.get("sv") == "CON"]
+        lv_desc = sorted({r["svDesc"] for r in sel if not r["svDesc"].startswith("Year-on-year") and "%" not in r["svDesc"]})
+        lv_pick = "HK$ million" if "HK$ million" in lv_desc else None
+        yy_ = {r["period"]: f(r["figure"]) for r in sel if r["svDesc"].startswith("Year-on-year")}
+        lv_ = {r["period"]: f(r["figure"]) for r in sel if r["svDesc"] == lv_pick}
+        if not lv_:
+            DIAG.append(f"HK GDP: no chained-dollar levels in 310-31001 (level series {lv_desc})")
+        for per in sorted(set(lv_) | set(yy_)):
+            GDP.append({"economy": "HK", "freq": "Q", "period": f"{per[:4]}-Q{int(per[4:6]) // 3}", "real_level": lv_.get(per),
+                        "real_yoy": yy_.get(per), "note": "C&SD 310-31001 GDP at chained (2024) dollars, HK$ million; y/y as published"})
+    except Exception as e:  # noqa: BLE001
+        DIAG.append(f"HK GDP failed: {type(e).__name__}: {str(e)[:200]}")
     _, g = censtatd.table("310-34501")
     gva = []
     # Real levels (chained dollars), if the table carries exactly one non-percentage series besides the y/y: used for
@@ -450,7 +495,10 @@ def taiwan():
         hdr = next(r for r in rows if r and r[1] == 1981)
         lab = {str(r[0]).replace("　", "").strip(): r for r in rows if r and r[0]}
         return {str(h): f(v) for h, v in zip(hdr, lab["C 製造業"])}, {str(h): f(v) for h, v in zip(hdr, lab["GDP"])}
-    real, _ = sheet("實質1981~")
+    real, rgdp = sheet("實質1981~")
+    for q_ in sorted(k for k in rgdp if re.fullmatch(r"\d{4}Q\d", k)):
+        GDP.append({"economy": "TW", "freq": "Q", "period": q_.replace("Q", "-Q"), "real_level": rgdp[q_],
+                    "note": "DGBAS production-side national accounts: GDP, chained 2021 dollars"})
     nom, gdp = sheet("名目1981~")
     gva = []
     for q in sorted(k for k in real if re.fullmatch(r"\d{4}Q\d", k)):
@@ -489,6 +537,13 @@ def china_gva():
         return out
     ix = get("f9b694c9b79e4ce5958bc88c6410fa67", {"制造业增加值指数 (上年同期=100) 当季值": "1a9c5f486ee848138ddf4189b46f1830",
                                                  "制造业增加值指数 (上年同期=100) 累计值": "74dc0a5a68a14acd92d332d734d40e88"})
+    gix = get("f9b694c9b79e4ce5958bc88c6410fa67", {"国内生产总值指数 (上年同期=100) 当季值": "170e7f00f8c24ede863c0526b42ae81f",
+                                                  "国内生产总值指数 (上年同期=100) 累计值": "f5b82b2b6ad345a29a337d256a9d5ded"})
+    for q_, a_ in sorted(gix.items()):
+        qq_, qc_ = a_.get("国内生产总值指数 (上年同期=100) 当季值"), a_.get("国内生产总值指数 (上年同期=100) 累计值")
+        GDP.append({"economy": "CN", "freq": "Q", "period": q_, "real_yoy": round(qq_ - 100, 2) if qq_ is not None else None,
+                    "cum_yoy": round(qc_ - 100, 2) if qc_ is not None else None,
+                    "note": "NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"})
     nom = get("28d936104e304aa191e338eb82b6dc09", {"制造业增加值当季值": "ee1888d32d84452e871760589bd27b05",
                                                   "国内生产总值当季值": "d22612f09aeb4241bc557ef0ac61b3ba"})
     if len(ix) < 20:
@@ -534,6 +589,9 @@ def update(force=False, only=None, **_):
     OUT.mkdir(parents=True, exist_ok=True)
     state = read_json(OUT / "release.json", {}) or {}
     iip, gva = read(OUT / "src_iip.csv"), read(OUT / "src_gva.csv")
+    gdp_old = read(OUT / "src_gdp.csv") if (OUT / "src_gdp.csv").exists() else []
+    GDP.clear()
+    DIAG.clear()
     done, warnings, errors = [], [], []
     for cc, fn in ECONOMIES.items():
         try:
@@ -555,14 +613,18 @@ def update(force=False, only=None, **_):
         errors.append(f"CN GVA: {type(e).__name__}: {str(e)[:200]}")
     if not done:
         raise CheckFailed(errors)
-    warnings += [f"not updated: {e}" for e in errors]
+    warnings += [f"not updated: {e}" for e in errors] + DIAG
+    new = {r["economy"] for r in GDP}
+    gdp = [r for r in gdp_old if r["economy"] not in new] + [r for r in GDP if r.get("real_level") is not None or r.get("real_yoy") is not None or r.get("cum_yoy") is not None]
+    gdp.sort(key=lambda r: (r["economy"], r["freq"], r["period"]))
     iip.sort(key=lambda r: (r["economy"], r["industry"], r["freq"], r["date"]))
     gva.sort(key=lambda r: (r["economy"], r["freq"], r["period"]))
-    fp = hashlib.sha256(json.dumps([iip, gva], sort_keys=True, default=str).encode()).hexdigest()[:16]
+    fp = hashlib.sha256(json.dumps([iip, gva, gdp], sort_keys=True, default=str).encode()).hexdigest()[:16]
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "code": state.get("code"), "summary": "no change; " + "; ".join(done), "warnings": warnings}
     write(OUT / "src_iip.csv", IIP_COLS, iip)
     write(OUT / "src_gva.csv", GVA_COLS, gva)
+    write(OUT / "src_gdp.csv", GDP_COLS, gdp)
     code = f"F{fp[:8]}"
     nlong = write_long(({"country": r["economy"], "indicator": "mfg_iip", "series": f"{r['industry']}_{r['freq']}", "label": r["note"],
                          "measure": "index", "area": "", "freq": r["freq"], "date": r["date"], "value": r["index"], "unit": "index",

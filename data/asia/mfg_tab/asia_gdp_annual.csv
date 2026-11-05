@@ -1,0 +1,184 @@
+economy,name,year,quarters,ytd,real_yoy,basis
+CN,China,2010,,,10.6,published
+CN,China,2011,,,9.5,published
+CN,China,2012,,,7.9,published
+CN,China,2013,,,7.8,published
+CN,China,2014,,,7.5,published
+CN,China,2015,,,7.0,published
+CN,China,2016,,,6.8,published
+CN,China,2017,,,6.9,published
+CN,China,2018,,,6.8,published
+CN,China,2019,,,6.1,published
+CN,China,2020,,,2.3,published
+CN,China,2021,,,8.6,published
+CN,China,2022,,,3.1,published
+CN,China,2023,,,5.4,published
+CN,China,2024,,,5.0,published
+CN,China,2025,,,5.0,published
+CN,China,2026,Q1-Q3,y,4.6,published
+HK,Hong Kong,2010,,,6.77,calculated
+HK,Hong Kong,2011,,,4.81,calculated
+HK,Hong Kong,2012,,,1.7,calculated
+HK,Hong Kong,2013,,,3.1,calculated
+HK,Hong Kong,2014,,,2.76,calculated
+HK,Hong Kong,2015,,,2.39,calculated
+HK,Hong Kong,2016,,,2.18,calculated
+HK,Hong Kong,2017,,,3.8,calculated
+HK,Hong Kong,2018,,,2.85,calculated
+HK,Hong Kong,2019,,,-1.67,calculated
+HK,Hong Kong,2020,,,-6.54,calculated
+HK,Hong Kong,2021,,,6.45,calculated
+HK,Hong Kong,2022,,,-3.69,calculated
+HK,Hong Kong,2023,,,3.15,calculated
+HK,Hong Kong,2024,,,2.64,calculated
+HK,Hong Kong,2025,,,3.61,calculated
+HK,Hong Kong,2026,Q1-Q2,y,5.1,calculated
+ID,Indonesia,2011,,,6.17,calculated
+ID,Indonesia,2012,,,6.03,calculated
+ID,Indonesia,2013,,,5.56,calculated
+ID,Indonesia,2014,,,5.01,calculated
+ID,Indonesia,2015,,,4.88,calculated
+ID,Indonesia,2016,,,5.03,calculated
+ID,Indonesia,2017,,,5.07,calculated
+ID,Indonesia,2018,,,5.17,calculated
+ID,Indonesia,2019,,,5.02,calculated
+ID,Indonesia,2020,,,-2.07,calculated
+ID,Indonesia,2021,,,3.7,calculated
+ID,Indonesia,2022,,,5.31,calculated
+ID,Indonesia,2023,,,5.05,calculated
+ID,Indonesia,2024,,,5.03,calculated
+ID,Indonesia,2025,,,5.11,calculated
+ID,Indonesia,2026,Q1-Q3,y,5.45,calculated
+IN,India,2024,,,7.42,calculated
+IN,India,2025,,,7.3,calculated
+IN,India,2026,Q1-Q2,y,8.2,calculated
+JP,Japan,2010,,,4.14,calculated
+JP,Japan,2011,,,-0.2,calculated
+JP,Japan,2012,,,1.65,calculated
+JP,Japan,2013,,,2.0,calculated
+JP,Japan,2014,,,0.91,calculated
+JP,Japan,2015,,,1.8,calculated
+JP,Japan,2016,,,0.7,calculated
+JP,Japan,2017,,,1.62,calculated
+JP,Japan,2018,,,0.83,calculated
+JP,Japan,2019,,,-0.31,calculated
+JP,Japan,2020,,,-4.28,calculated
+JP,Japan,2021,,,3.59,calculated
+JP,Japan,2022,,,1.24,calculated
+JP,Japan,2023,,,0.9,calculated
+JP,Japan,2024,,,0.07,calculated
+JP,Japan,2025,,,1.16,calculated
+JP,Japan,2026,Q1-Q2,y,0.72,calculated
+KR,South Korea,2010,,,6.98,calculated
+KR,South Korea,2011,,,3.69,calculated
+KR,South Korea,2012,,,2.55,calculated
+KR,South Korea,2013,,,3.29,calculated
+KR,South Korea,2014,,,3.21,calculated
+KR,South Korea,2015,,,2.92,calculated
+KR,South Korea,2016,,,3.17,calculated
+KR,South Korea,2017,,,3.43,calculated
+KR,South Korea,2018,,,3.18,calculated
+KR,South Korea,2019,,,2.31,calculated
+KR,South Korea,2020,,,-0.7,calculated
+KR,South Korea,2021,,,4.7,calculated
+KR,South Korea,2022,,,2.91,calculated
+KR,South Korea,2023,,,1.48,calculated
+KR,South Korea,2024,,,2.19,calculated
+KR,South Korea,2025,,,1.14,calculated
+KR,South Korea,2026,Q1-Q3,y,3.63,calculated
+MY,Malaysia,2016,,,4.45,calculated
+MY,Malaysia,2017,,,5.81,calculated
+MY,Malaysia,2018,,,4.84,calculated
+MY,Malaysia,2019,,,4.41,calculated
+MY,Malaysia,2020,,,-5.46,calculated
+MY,Malaysia,2021,,,3.32,calculated
+MY,Malaysia,2022,,,9.03,calculated
+MY,Malaysia,2023,,,3.58,calculated
+MY,Malaysia,2024,,,5.16,calculated
+MY,Malaysia,2025,,,5.15,calculated
+MY,Malaysia,2026,Q1-Q2,y,5.69,calculated
+PH,Philippines,2010,,,7.33,calculated
+PH,Philippines,2011,,,3.86,calculated
+PH,Philippines,2012,,,6.9,calculated
+PH,Philippines,2013,,,6.75,calculated
+PH,Philippines,2014,,,6.35,calculated
+PH,Philippines,2015,,,6.35,calculated
+PH,Philippines,2016,,,7.15,calculated
+PH,Philippines,2017,,,6.93,calculated
+PH,Philippines,2018,,,6.34,calculated
+PH,Philippines,2019,,,6.12,calculated
+PH,Philippines,2020,,,-9.52,calculated
+PH,Philippines,2021,,,5.71,calculated
+PH,Philippines,2022,,,7.58,calculated
+PH,Philippines,2023,,,5.52,calculated
+PH,Philippines,2024,,,5.71,calculated
+PH,Philippines,2025,,,4.4,calculated
+PH,Philippines,2026,Q1-Q2,y,2.57,calculated
+SG,Singapore,2010,,,14.52,calculated
+SG,Singapore,2011,,,6.21,calculated
+SG,Singapore,2012,,,4.44,calculated
+SG,Singapore,2013,,,4.82,calculated
+SG,Singapore,2014,,,3.94,calculated
+SG,Singapore,2015,,,2.98,calculated
+SG,Singapore,2016,,,3.91,calculated
+SG,Singapore,2017,,,4.33,calculated
+SG,Singapore,2018,,,3.19,calculated
+SG,Singapore,2019,,,1.16,calculated
+SG,Singapore,2020,,,-3.61,calculated
+SG,Singapore,2021,,,10.14,calculated
+SG,Singapore,2022,,,4.01,calculated
+SG,Singapore,2023,,,1.45,calculated
+SG,Singapore,2024,,,5.34,calculated
+SG,Singapore,2025,,,5.03,calculated
+SG,Singapore,2026,Q1-Q2,y,6.1,calculated
+TH,Thailand,2010,,,7.51,calculated
+TH,Thailand,2011,,,0.84,calculated
+TH,Thailand,2012,,,7.24,calculated
+TH,Thailand,2013,,,2.69,calculated
+TH,Thailand,2014,,,0.98,calculated
+TH,Thailand,2015,,,3.13,calculated
+TH,Thailand,2016,,,3.44,calculated
+TH,Thailand,2017,,,4.18,calculated
+TH,Thailand,2018,,,4.22,calculated
+TH,Thailand,2019,,,2.11,calculated
+TH,Thailand,2020,,,-6.09,calculated
+TH,Thailand,2021,,,1.56,calculated
+TH,Thailand,2022,,,2.64,calculated
+TH,Thailand,2023,,,2.25,calculated
+TH,Thailand,2024,,,2.95,calculated
+TH,Thailand,2025,,,2.44,calculated
+TH,Thailand,2026,Q1-Q2,y,2.4,calculated
+TW,Taiwan,2010,,,10.25,calculated
+TW,Taiwan,2011,,,3.67,calculated
+TW,Taiwan,2012,,,2.22,calculated
+TW,Taiwan,2013,,,2.48,calculated
+TW,Taiwan,2014,,,4.72,calculated
+TW,Taiwan,2015,,,1.47,calculated
+TW,Taiwan,2016,,,2.17,calculated
+TW,Taiwan,2017,,,3.66,calculated
+TW,Taiwan,2018,,,2.91,calculated
+TW,Taiwan,2019,,,3.06,calculated
+TW,Taiwan,2020,,,3.42,calculated
+TW,Taiwan,2021,,,6.72,calculated
+TW,Taiwan,2022,,,2.68,calculated
+TW,Taiwan,2023,,,1.08,calculated
+TW,Taiwan,2024,,,5.27,calculated
+TW,Taiwan,2025,,,8.76,calculated
+TW,Taiwan,2026,Q1-Q2,y,14.15,calculated
+VN,Vietnam,2010,,,6.78,published
+VN,Vietnam,2011,,,5.89,published
+VN,Vietnam,2012,,,5.03,published
+VN,Vietnam,2013,,,5.42,published
+VN,Vietnam,2014,,,5.98,published
+VN,Vietnam,2015,,,6.68,published
+VN,Vietnam,2016,,,6.21,published
+VN,Vietnam,2017,,,6.81,published
+VN,Vietnam,2018,,,7.08,published
+VN,Vietnam,2019,,,7.02,published
+VN,Vietnam,2020,,,2.91,published
+VN,Vietnam,2021,,,2.58,published
+VN,Vietnam,2022,,,8.02,published
+VN,Vietnam,2023,,,5.05,published
+VN,Vietnam,2024,,,7.09,published
+VN,Vietnam,2025,,,8.02,published
+VN,Vietnam,2026,Q1-Q3,y,9.01,published
