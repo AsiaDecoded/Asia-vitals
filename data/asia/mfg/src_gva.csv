@@ -1,613 +1,613 @@
-economy,freq,period,real_yoy,share,real_yoy_calculated,share_calculated,note
-HK,A,2000,,4.8,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2001,,4.2,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2002,,3.7,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2003,,3.2,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2004,,3.1,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2005,,2.9,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2006,,2.7,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2007,,2.0,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2008,,1.9,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2009,,1.8,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2010,,1.8,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2011,,1.6,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2012,,1.5,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2013,,1.4,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2014,,1.3,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2015,,1.1,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2016,,1.1,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2017,,1.1,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2018,,1.0,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2019,,1.1,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2020,,1.0,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2021,,1.0,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2022,,1.0,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2023,,1.0,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,A,2024,,1.0,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual"
-HK,Q,2001-Q1,-4.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2001-Q2,-4.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2001-Q3,-12.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2001-Q4,-14.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2002-Q1,-11.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2002-Q2,-11.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2002-Q3,-7.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2002-Q4,-9.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2003-Q1,-9.9,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2003-Q2,-14.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2003-Q3,-10.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2003-Q4,-7.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2004-Q1,1.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2004-Q2,0.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2004-Q3,3.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2004-Q4,4.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2005-Q1,-2.9,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2005-Q2,-0.9,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2005-Q3,3.9,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2005-Q4,5.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2006-Q1,6.7,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2006-Q2,5.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2006-Q3,-1.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2006-Q4,-2.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2007-Q1,-0.7,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2007-Q2,-1.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2007-Q3,-1.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2007-Q4,0.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2008-Q1,-4.9,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2008-Q2,-4.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2008-Q3,-7.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2008-Q4,-11.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2009-Q1,-10.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2009-Q2,-9.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2009-Q3,-8.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2009-Q4,-4.8,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2010-Q1,0.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2010-Q2,2.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2010-Q3,5.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2010-Q4,5.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2011-Q1,3.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2011-Q2,2.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2011-Q3,0.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2011-Q4,-2.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2012-Q1,-1.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2012-Q2,-2.9,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2012-Q3,-0.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2012-Q4,1.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2013-Q1,0.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2013-Q2,0.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2013-Q3,-0.9,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2013-Q4,0.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2014-Q1,2.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2014-Q2,2.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2014-Q3,-1.7,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2014-Q4,-3.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2015-Q1,-1.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2015-Q2,-1.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2015-Q3,-2.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2015-Q4,-1.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2016-Q1,-0.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2016-Q2,-0.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2016-Q3,-0.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2016-Q4,-1.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2017-Q1,0.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2017-Q2,0.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2017-Q3,0.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2017-Q4,0.8,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2018-Q1,1.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2018-Q2,1.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2018-Q3,1.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2018-Q4,1.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2019-Q1,1.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2019-Q2,0.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2019-Q3,0.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2019-Q4,-0.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2020-Q1,-4.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2020-Q2,-5.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2020-Q3,-7.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2020-Q4,-6.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2021-Q1,2.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2021-Q2,5.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2021-Q3,7.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2021-Q4,5.8,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2022-Q1,-1.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2022-Q2,2.7,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2022-Q3,-0.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2022-Q4,-0.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2023-Q1,3.8,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2023-Q2,2.7,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2023-Q3,4.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2023-Q4,4.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2024-Q1,1.8,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2024-Q2,0.7,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2024-Q3,-0.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2024-Q4,1.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2025-Q1,0.7,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2025-Q2,0.9,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2025-Q3,5.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2025-Q4,5.8,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2026-Q1,3.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-HK,Q,2026-Q2,2.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published"
-KR,Q,2014-Q1,,28.7,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2014-Q2,,29.91,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2014-Q3,,27.42,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2014-Q4,,27.15,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2015-Q1,1.73,28.13,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2015-Q2,-0.04,29.02,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2015-Q3,2.59,27.37,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2015-Q4,2.81,26.84,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2016-Q1,1.11,27.58,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2016-Q2,2.62,28.68,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2016-Q3,1.33,26.65,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2016-Q4,3.12,27.17,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2017-Q1,4.7,28.22,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2017-Q2,2.68,28.68,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2017-Q3,6.64,28.22,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2017-Q4,3.14,27.06,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2018-Q1,1.35,27.23,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2018-Q2,3.17,28.8,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2018-Q3,3.2,28.33,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2018-Q4,5.63,26.71,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2019-Q1,0.39,26.56,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2019-Q2,0.2,27.31,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2019-Q3,0.54,26.49,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2019-Q4,0.82,25.18,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2020-Q1,0.78,25.46,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2020-Q2,-7.4,25.91,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2020-Q3,-1.86,26.12,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2020-Q4,0.48,25.31,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2021-Q1,5.41,26.06,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2021-Q2,13.67,26.23,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2021-Q3,6.13,27.2,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2021-Q4,2.73,25.73,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2022-Q1,5.25,27.46,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2022-Q2,4.61,27.13,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2022-Q3,4.95,26.98,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2022-Q4,-1.75,25.06,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2023-Q1,-3.67,24.96,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2023-Q2,-1.04,25.2,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2023-Q3,1.37,25.86,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2023-Q4,7.51,25.61,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2024-Q1,6.98,26.27,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2024-Q2,6.07,27.32,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2024-Q3,4.2,26.96,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2024-Q4,2.54,26.28,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2025-Q1,0.41,26.91,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2025-Q2,2.55,28.09,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2025-Q3,3.9,27.98,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2025-Q4,2.39,28.13,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2026-Q1,7.2,33.93,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2026-Q2,6.67,40.42,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-KR,Q,2026-Q3,7.04,,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP"
-MY,Q,2015-Q1,,22.09,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2015-Q2,,22.57,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2015-Q3,,22.33,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2015-Q4,,22.18,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2016-Q1,4.5,21.82,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2016-Q2,3.8,22.19,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2016-Q3,4.2,21.59,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2016-Q4,5.1,21.62,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2017-Q1,5.9,21.57,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2017-Q2,6.0,22.39,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2017-Q3,7.0,21.87,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2017-Q4,5.3,21.57,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2018-Q1,5.2,21.31,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2018-Q2,4.8,21.95,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2018-Q3,5.0,21.56,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2018-Q4,4.7,21.3,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2019-Q1,4.1,21.13,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2019-Q2,4.3,21.82,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2019-Q3,3.6,21.47,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2019-Q4,3.0,21.22,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2020-Q1,1.3,21.58,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2020-Q2,-18.6,21.77,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2020-Q3,3.2,22.76,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2020-Q4,3.0,22.72,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2021-Q1,6.6,22.97,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2021-Q2,26.7,23.15,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2021-Q3,-0.9,23.52,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2021-Q4,9.1,23.75,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2022-Q1,6.7,23.07,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2022-Q2,9.3,22.85,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2022-Q3,13.2,23.63,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2022-Q4,4.0,23.76,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2023-Q1,3.2,23.37,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2023-Q2,0.1,22.96,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2023-Q3,-0.1,22.85,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2023-Q4,-0.3,22.87,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2024-Q1,2.1,22.51,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2024-Q2,4.7,22.44,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2024-Q3,5.6,22.75,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2024-Q4,4.2,22.28,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2025-Q1,4.2,22.18,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2025-Q2,3.7,21.96,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2025-Q3,4.1,22.04,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2025-Q4,6.0,22.13,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2026-Q1,5.9,22.02,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-MY,Q,2026-Q2,7.3,21.98,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3"
-SG,Q,1975-Q1,,20.41,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1975-Q2,,20.95,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1975-Q3,,22.31,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1975-Q4,,21.94,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1976-Q1,15.98,21.01,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1976-Q2,15.62,21.92,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1976-Q3,8.5,22.82,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1976-Q4,8.16,22.47,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1977-Q1,7.26,21.78,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1977-Q2,12.77,23.06,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1977-Q3,7.69,23.21,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1977-Q4,9.56,22.32,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1978-Q1,6.18,22.38,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1978-Q2,8.4,23.46,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1978-Q3,14.01,23.71,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1978-Q4,15.82,23.7,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1979-Q1,17.79,23.14,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1979-Q2,16.04,25.63,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1979-Q3,10.6,25.99,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1979-Q4,11.78,25.95,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1980-Q1,11.29,26.42,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1980-Q2,11.53,27.33,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1980-Q3,10.51,26.57,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1980-Q4,7.09,25.86,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1981-Q1,10.09,25.21,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1981-Q2,12.18,26.52,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1981-Q3,9.8,26.33,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1981-Q4,5.44,25.01,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1982-Q1,5.06,23.57,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1982-Q2,-3.09,22.91,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1982-Q3,-5.73,22.5,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1982-Q4,-9.28,20.41,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1983-Q1,-3.92,20.93,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1983-Q2,-2.28,22.01,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1983-Q3,5.31,21.94,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1983-Q4,12.51,20.96,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1984-Q1,10.48,20.53,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1984-Q2,11.47,22.23,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1984-Q3,6.71,21.48,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1984-Q4,1.97,21.34,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1985-Q1,-2.87,19.83,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1985-Q2,-7.32,20.72,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1985-Q3,-8.48,20.22,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1985-Q4,-10.28,19.69,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1986-Q1,-5.54,20.2,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1986-Q2,4.96,22.87,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1986-Q3,12.98,23.84,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1986-Q4,21.59,23.39,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1987-Q1,17.11,22.14,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1987-Q2,15.72,24.2,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1987-Q3,16.06,25.03,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1987-Q4,20.64,24.75,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1988-Q1,21.47,24.64,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1988-Q2,21.91,26.9,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1988-Q3,18.59,27.52,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1988-Q4,12.55,25.19,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1989-Q1,9.87,24.47,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1989-Q2,9.71,26.21,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1989-Q3,9.29,25.99,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1989-Q4,10.33,24.54,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1990-Q1,11.51,22.77,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1990-Q2,8.45,24.71,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1990-Q3,9.95,25.53,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1990-Q4,8.36,24.5,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1991-Q1,10.36,26.06,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1991-Q2,6.27,26.01,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1991-Q3,3.85,25.66,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1991-Q4,2.02,24.22,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1992-Q1,-1.13,23.29,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1992-Q2,-0.0,24.48,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1992-Q3,3.01,24.7,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1992-Q4,7.0,24.82,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1993-Q1,8.04,24.41,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1993-Q2,11.66,25.01,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1993-Q3,10.59,25.0,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1993-Q4,8.35,23.56,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1994-Q1,11.85,22.65,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1994-Q2,12.83,24.81,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1994-Q3,13.77,23.81,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1994-Q4,12.23,23.24,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1995-Q1,8.11,22.65,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1995-Q2,7.91,24.49,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1995-Q3,12.29,24.45,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1995-Q4,11.45,24.24,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1996-Q1,13.59,23.78,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1996-Q2,5.31,23.59,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1996-Q3,-4.16,22.54,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1996-Q4,-1.54,22.81,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1997-Q1,-5.21,21.19,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1997-Q2,4.11,21.87,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1997-Q3,9.49,22.56,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1997-Q4,8.47,22.87,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1998-Q1,6.13,22.57,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1998-Q2,-0.44,22.48,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1998-Q3,-4.43,22.91,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1998-Q4,-3.07,22.78,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1999-Q1,9.77,22.34,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1999-Q2,10.98,22.77,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1999-Q3,17.59,23.1,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,1999-Q4,13.55,23.13,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2000-Q1,12.93,24.1,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2000-Q2,13.46,25.21,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2000-Q3,15.23,26.67,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2000-Q4,18.6,27.18,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2001-Q1,2.86,24.09,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2001-Q2,-9.02,23.39,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2001-Q3,-19.23,22.9,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2001-Q4,-18.61,23.16,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2002-Q1,-4.5,23.42,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2002-Q2,13.54,25.58,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2002-Q3,15.69,25.3,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2002-Q4,10.11,24.62,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2003-Q1,6.63,24.34,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2003-Q2,-7.15,24.68,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2003-Q3,2.74,24.7,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2003-Q4,10.45,25.3,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2004-Q1,10.21,25.33,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2004-Q2,20.04,27.43,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2004-Q3,11.06,27.81,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2004-Q4,14.31,27.8,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2005-Q1,3.25,26.06,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2005-Q2,5.82,27.08,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2005-Q3,13.63,27.54,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2005-Q4,14.45,27.54,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2006-Q1,18.53,26.02,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2006-Q2,11.92,27.66,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2006-Q3,10.21,27.07,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2006-Q4,8.39,25.63,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2007-Q1,6.45,24.17,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2007-Q2,7.45,24.28,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2007-Q3,11.78,24.2,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2007-Q4,-1.25,22.72,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2008-Q1,12.25,21.08,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2008-Q2,-5.57,20.86,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2008-Q3,-10.95,21.16,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2008-Q4,-10.73,19.19,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2009-Q1,-23.79,17.69,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2009-Q2,-0.55,20.1,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2009-Q3,7.53,22.08,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2009-Q4,2.44,20.89,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2010-Q1,37.18,20.56,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2010-Q2,45.25,21.55,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2010-Q3,13.71,20.83,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2010-Q4,25.68,20.18,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2011-Q1,19.07,20.09,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2011-Q2,-3.79,19.84,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2011-Q3,8.91,19.49,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2011-Q4,9.33,18.94,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2012-Q1,-1.11,19.47,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2012-Q2,4.08,19.79,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2012-Q3,-1.44,19.04,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2012-Q4,-0.22,18.2,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2013-Q1,-6.34,17.01,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2013-Q2,0.78,17.67,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2013-Q3,5.23,18.16,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2013-Q4,7.14,17.7,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2014-Q1,9.6,17.75,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2014-Q2,1.37,18.3,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2014-Q3,1.7,18.53,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2014-Q4,-1.16,17.43,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2015-Q1,-4.3,17.88,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2015-Q2,-4.28,18.76,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2015-Q3,-5.7,18.24,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2015-Q4,-6.21,17.51,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2016-Q1,-0.37,16.4,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2016-Q2,1.58,17.49,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2016-Q3,1.84,17.47,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2016-Q4,11.76,18.05,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2017-Q1,8.43,17.78,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2017-Q2,8.56,17.96,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2017-Q3,19.31,18.75,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2017-Q4,5.76,19.33,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2018-Q1,10.02,18.7,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2018-Q2,10.59,20.27,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2018-Q3,3.47,21.7,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2018-Q4,4.58,21.63,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2019-Q1,-0.02,19.82,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2019-Q2,-0.48,19.89,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2019-Q3,-1.24,19.94,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2019-Q4,-4.02,17.63,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2020-Q1,8.32,19.16,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2020-Q2,-0.44,20.55,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2020-Q3,11.01,21.22,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2020-Q4,11.43,17.94,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2021-Q1,11.53,20.39,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2021-Q2,18.2,21.63,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2021-Q3,7.94,21.89,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2021-Q4,16.04,18.69,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2022-Q1,6.06,21.25,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2022-Q2,6.45,20.85,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2022-Q3,1.3,19.53,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2022-Q4,-2.63,17.16,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2023-Q1,-5.42,17.79,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2023-Q2,-8.22,17.02,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2023-Q3,-4.86,16.7,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2023-Q4,1.75,15.51,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2024-Q1,-1.12,16.95,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2024-Q2,-0.61,16.74,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2024-Q3,11.2,16.44,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2024-Q4,5.51,15.03,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2025-Q1,8.58,17.47,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2025-Q2,10.48,17.93,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2025-Q3,4.55,18.15,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2025-Q4,11.4,16.25,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2026-Q1,7.28,18.64,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-SG,Q,2026-Q2,12.48,20.47,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing"
-TW,Q,1981-Q1,,31.99,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1981-Q2,,31.8,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1981-Q3,,34.35,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1981-Q4,,32.48,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1982-Q1,2.89,31.08,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1982-Q2,4.21,32.55,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1982-Q3,2.4,34.7,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1982-Q4,2.87,32.82,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1983-Q1,6.85,32.45,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1983-Q2,15.13,33.18,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1983-Q3,20.38,35.48,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1983-Q4,19.4,33.95,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1984-Q1,21.11,34.83,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1984-Q2,18.87,35.55,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1984-Q3,12.95,37.17,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1984-Q4,6.5,34.19,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1985-Q1,2.06,34.47,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1985-Q2,-0.53,34.18,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1985-Q3,-0.89,36.94,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1985-Q4,3.82,34.68,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1986-Q1,14.45,37.13,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1986-Q2,12.53,35.95,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1986-Q3,19.33,39.85,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1986-Q4,24.42,37.88,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1987-Q1,12.7,36.58,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1987-Q2,15.48,36.02,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1987-Q3,11.79,38.06,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1987-Q4,3.32,35.87,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1988-Q1,4.08,34.76,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1988-Q2,1.31,35.13,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1988-Q3,2.58,35.58,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1988-Q4,4.75,33.83,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1989-Q1,6.54,32.18,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1989-Q2,6.82,32.67,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1989-Q3,2.92,33.35,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1989-Q4,2.19,32.2,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1990-Q1,-3.39,30.0,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1990-Q2,-5.28,30.79,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1990-Q3,-0.84,32.27,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1990-Q4,4.47,31.5,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1991-Q1,4.08,29.96,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1991-Q2,4.29,29.88,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1991-Q3,6.82,31.17,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1991-Q4,7.88,31.96,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1992-Q1,5.76,28.74,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1992-Q2,9.91,29.39,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1992-Q3,1.88,28.84,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1992-Q4,4.08,28.98,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1993-Q1,2.86,26.44,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1993-Q2,2.98,27.87,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1993-Q3,5.2,28.59,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1993-Q4,5.36,28.69,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1994-Q1,1.17,25.29,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1994-Q2,7.97,26.49,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1994-Q3,4.99,27.15,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1994-Q4,11.33,27.15,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1995-Q1,10.08,24.12,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1995-Q2,5.59,24.66,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1995-Q3,7.31,26.28,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1995-Q4,2.44,27.03,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1996-Q1,2.84,24.02,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1996-Q2,4.4,25.09,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1996-Q3,6.53,25.96,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1996-Q4,10.72,26.64,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1997-Q1,4.94,23.78,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1997-Q2,6.55,24.94,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1997-Q3,7.14,25.1,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1997-Q4,9.3,27.64,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1998-Q1,5.33,24.01,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1998-Q2,3.31,25.71,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1998-Q3,3.16,25.19,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1998-Q4,-2.04,25.68,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1999-Q1,4.9,22.84,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1999-Q2,10.58,24.99,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1999-Q3,8.26,24.69,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,1999-Q4,9.35,26.02,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2000-Q1,9.2,21.94,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2000-Q2,7.6,24.66,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2000-Q3,13.68,26.18,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2000-Q4,6.18,27.98,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2001-Q1,-1.34,22.15,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2001-Q2,-8.73,22.97,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2001-Q3,-14.04,23.78,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2001-Q4,-2.34,25.34,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2002-Q1,5.09,22.45,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2002-Q2,14.85,25.69,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2002-Q3,16.8,26.02,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2002-Q4,10.71,27.43,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2003-Q1,11.03,24.67,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2003-Q2,4.58,26.81,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2003-Q3,9.83,26.49,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2003-Q4,19.29,29.22,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2004-Q1,14.81,25.93,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2004-Q2,15.77,27.29,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2004-Q3,12.8,28.04,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2004-Q4,5.33,29.12,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2005-Q1,5.47,25.03,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2005-Q2,7.58,26.73,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2005-Q3,8.01,27.82,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2005-Q4,13.05,29.36,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2006-Q1,9.52,24.87,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2006-Q2,9.88,26.63,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2006-Q3,11.55,28.4,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2006-Q4,2.3,28.47,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2007-Q1,10.14,24.62,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2007-Q2,13.69,27.17,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2007-Q3,16.67,28.91,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2007-Q4,17.13,29.48,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2008-Q1,16.44,25.77,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2008-Q2,9.46,27.22,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2008-Q3,-0.01,27.63,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2008-Q4,-15.18,25.98,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2009-Q1,-16.37,23.56,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2009-Q2,-9.42,25.38,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2009-Q3,-1.98,26.79,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2009-Q4,19.85,27.86,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2010-Q1,31.87,27.38,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2010-Q2,28.45,29.45,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2010-Q3,21.82,29.29,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2010-Q4,14.75,28.25,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2011-Q1,16.01,29.21,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2011-Q2,7.71,28.78,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2011-Q3,4.08,28.24,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2011-Q4,0.73,26.87,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2012-Q1,3.62,27.19,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2012-Q2,4.07,28.55,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2012-Q3,6.49,29.37,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2012-Q4,7.01,27.17,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2013-Q1,2.04,28.01,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2013-Q2,3.1,29.6,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2013-Q3,4.42,30.83,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2013-Q4,3.79,27.99,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2014-Q1,8.05,29.21,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2014-Q2,11.15,31.57,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2014-Q3,11.42,32.52,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2014-Q4,11.15,31.0,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2015-Q1,8.29,31.43,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2015-Q2,2.27,31.68,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2015-Q3,-0.97,32.13,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2015-Q4,-2.97,30.25,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2016-Q1,-0.81,30.27,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2016-Q2,1.63,31.97,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2016-Q3,6.37,33.86,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2016-Q4,8.54,32.71,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2017-Q1,9.66,32.47,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2017-Q2,4.76,32.35,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2017-Q3,7.7,34.62,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2017-Q4,7.49,32.68,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2018-Q1,3.57,31.76,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2018-Q2,5.71,32.75,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2018-Q3,3.41,35.31,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2018-Q4,2.75,32.38,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2019-Q1,-0.41,30.71,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2019-Q2,2.49,32.14,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2019-Q3,3.42,34.29,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2019-Q4,2.83,30.94,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2020-Q1,9.14,31.61,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2020-Q2,5.74,33.72,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2020-Q3,8.17,36.0,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2020-Q4,12.3,33.76,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2021-Q1,19.37,34.79,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2021-Q2,20.13,37.4,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2021-Q3,15.72,38.52,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2021-Q4,11.79,34.88,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2022-Q1,7.83,35.9,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2022-Q2,3.64,37.61,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2022-Q3,2.56,38.58,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2022-Q4,-4.22,34.21,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2023-Q1,-12.28,33.12,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2023-Q2,-9.15,34.27,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2023-Q3,-6.3,36.63,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2023-Q4,-1.57,32.48,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2024-Q1,8.36,33.39,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2024-Q2,11.81,36.82,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2024-Q3,10.26,37.95,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2024-Q4,11.0,34.1,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2025-Q1,10.32,34.81,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2025-Q2,17.22,39.77,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2025-Q3,13.01,39.31,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2025-Q4,26.75,38.25,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2026-Q1,26.17,37.66,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
-TW,Q,2026-Q2,18.27,43.67,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"
+economy,freq,period,real_yoy,share,real_yoy_calculated,share_calculated,note,real_level
+HK,A,2000,,4.8,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2001,,4.2,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2002,,3.7,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2003,,3.2,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2004,,3.1,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2005,,2.9,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2006,,2.7,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2007,,2.0,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2008,,1.9,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2009,,1.8,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2010,,1.8,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2011,,1.6,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2012,,1.5,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2013,,1.4,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2014,,1.3,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2015,,1.1,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2016,,1.1,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2017,,1.1,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2018,,1.0,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2019,,1.1,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2020,,1.0,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2021,,1.0,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2022,,1.0,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2023,,1.0,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,A,2024,,1.0,,,"C&SD 310-34101, % contribution to GDP at basic prices, annual",
+HK,Q,2001-Q1,-4.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",8988.0
+HK,Q,2001-Q2,-4.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",10119.0
+HK,Q,2001-Q3,-12.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",9934.0
+HK,Q,2001-Q4,-14.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",9293.0
+HK,Q,2002-Q1,-11.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7944.0
+HK,Q,2002-Q2,-11.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",8993.0
+HK,Q,2002-Q3,-7.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",9243.0
+HK,Q,2002-Q4,-9.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",8442.0
+HK,Q,2003-Q1,-9.9,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7156.0
+HK,Q,2003-Q2,-14.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7736.0
+HK,Q,2003-Q3,-10.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",8278.0
+HK,Q,2003-Q4,-7.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7815.0
+HK,Q,2004-Q1,1.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7233.0
+HK,Q,2004-Q2,0.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7780.0
+HK,Q,2004-Q3,3.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",8530.0
+HK,Q,2004-Q4,4.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",8163.0
+HK,Q,2005-Q1,-2.9,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7020.0
+HK,Q,2005-Q2,-0.9,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7709.0
+HK,Q,2005-Q3,3.9,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",8862.0
+HK,Q,2005-Q4,5.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",8614.0
+HK,Q,2006-Q1,6.7,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7487.0
+HK,Q,2006-Q2,5.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",8098.0
+HK,Q,2006-Q3,-1.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",8751.0
+HK,Q,2006-Q4,-2.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",8443.0
+HK,Q,2007-Q1,-0.7,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7431.0
+HK,Q,2007-Q2,-1.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7968.0
+HK,Q,2007-Q3,-1.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",8626.0
+HK,Q,2007-Q4,0.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",8475.0
+HK,Q,2008-Q1,-4.9,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7069.0
+HK,Q,2008-Q2,-4.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7606.0
+HK,Q,2008-Q3,-7.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7990.0
+HK,Q,2008-Q4,-11.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7545.0
+HK,Q,2009-Q1,-10.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6361.0
+HK,Q,2009-Q2,-9.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6889.0
+HK,Q,2009-Q3,-8.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7309.0
+HK,Q,2009-Q4,-4.8,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7181.0
+HK,Q,2010-Q1,0.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6371.0
+HK,Q,2010-Q2,2.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7028.0
+HK,Q,2010-Q3,5.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7691.0
+HK,Q,2010-Q4,5.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7578.0
+HK,Q,2011-Q1,3.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6594.0
+HK,Q,2011-Q2,2.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7165.0
+HK,Q,2011-Q3,0.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7707.0
+HK,Q,2011-Q4,-2.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7413.0
+HK,Q,2012-Q1,-1.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6486.0
+HK,Q,2012-Q2,-2.9,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6954.0
+HK,Q,2012-Q3,-0.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7699.0
+HK,Q,2012-Q4,1.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7512.0
+HK,Q,2013-Q1,0.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6517.0
+HK,Q,2013-Q2,0.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6976.0
+HK,Q,2013-Q3,-0.9,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7630.0
+HK,Q,2013-Q4,0.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7553.0
+HK,Q,2014-Q1,2.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6653.0
+HK,Q,2014-Q2,2.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7128.0
+HK,Q,2014-Q3,-1.7,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7500.0
+HK,Q,2014-Q4,-3.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7279.0
+HK,Q,2015-Q1,-1.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6552.0
+HK,Q,2015-Q2,-1.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7040.0
+HK,Q,2015-Q3,-2.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7346.0
+HK,Q,2015-Q4,-1.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7184.0
+HK,Q,2016-Q1,-0.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6534.0
+HK,Q,2016-Q2,-0.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7010.0
+HK,Q,2016-Q3,-0.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7342.0
+HK,Q,2016-Q4,-1.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7112.0
+HK,Q,2017-Q1,0.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6545.0
+HK,Q,2017-Q2,0.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7041.0
+HK,Q,2017-Q3,0.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7368.0
+HK,Q,2017-Q4,0.8,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7167.0
+HK,Q,2018-Q1,1.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6616.0
+HK,Q,2018-Q2,1.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7155.0
+HK,Q,2018-Q3,1.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7456.0
+HK,Q,2018-Q4,1.2,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7251.0
+HK,Q,2019-Q1,1.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6710.0
+HK,Q,2019-Q2,0.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7182.0
+HK,Q,2019-Q3,0.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7490.0
+HK,Q,2019-Q4,-0.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7216.0
+HK,Q,2020-Q1,-4.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6402.0
+HK,Q,2020-Q2,-5.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6817.0
+HK,Q,2020-Q3,-7.4,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6933.0
+HK,Q,2020-Q4,-6.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6778.0
+HK,Q,2021-Q1,2.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6570.0
+HK,Q,2021-Q2,5.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7200.0
+HK,Q,2021-Q3,7.6,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7463.0
+HK,Q,2021-Q4,5.8,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7170.0
+HK,Q,2022-Q1,-1.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6486.0
+HK,Q,2022-Q2,2.7,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7392.0
+HK,Q,2022-Q3,-0.5,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7423.0
+HK,Q,2022-Q4,-0.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7161.0
+HK,Q,2023-Q1,3.8,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6735.0
+HK,Q,2023-Q2,2.7,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7592.0
+HK,Q,2023-Q3,4.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7745.0
+HK,Q,2023-Q4,4.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7455.0
+HK,Q,2024-Q1,1.8,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6856.0
+HK,Q,2024-Q2,0.7,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7643.0
+HK,Q,2024-Q3,-0.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7741.0
+HK,Q,2024-Q4,1.0,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7527.0
+HK,Q,2025-Q1,0.7,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",6903.0
+HK,Q,2025-Q2,0.9,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7715.0
+HK,Q,2025-Q3,5.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",8151.0
+HK,Q,2025-Q4,5.8,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7960.0
+HK,Q,2026-Q1,3.1,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7119.0
+HK,Q,2026-Q2,2.3,,,,"C&SD 310-34501, chained (2024) dollars, y/y as published",7893.0
+KR,Q,2014-Q1,,28.7,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",113709.1
+KR,Q,2014-Q2,,29.91,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",123537.4
+KR,Q,2014-Q3,,27.42,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",118315.6
+KR,Q,2014-Q4,,27.15,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",124206.6
+KR,Q,2015-Q1,1.73,28.13,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",115675.2
+KR,Q,2015-Q2,-0.04,29.02,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",123487.4
+KR,Q,2015-Q3,2.59,27.37,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",121379.1
+KR,Q,2015-Q4,2.81,26.84,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",127699.4
+KR,Q,2016-Q1,1.11,27.58,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",116957.5
+KR,Q,2016-Q2,2.62,28.68,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",126728.5
+KR,Q,2016-Q3,1.33,26.65,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",122996.1
+KR,Q,2016-Q4,3.12,27.17,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",131686.5
+KR,Q,2017-Q1,4.7,28.22,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",122459.3
+KR,Q,2017-Q2,2.68,28.68,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",130126.5
+KR,Q,2017-Q3,6.64,28.22,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",131161.8
+KR,Q,2017-Q4,3.14,27.06,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",135826.7
+KR,Q,2018-Q1,1.35,27.23,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",124107.0
+KR,Q,2018-Q2,3.17,28.8,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",134251.7
+KR,Q,2018-Q3,3.2,28.33,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",135355.0
+KR,Q,2018-Q4,5.63,26.71,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",143467.2
+KR,Q,2019-Q1,0.39,26.56,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",124587.6
+KR,Q,2019-Q2,0.2,27.31,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",134524.7
+KR,Q,2019-Q3,0.54,26.49,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",136089.9
+KR,Q,2019-Q4,0.82,25.18,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",144640.9
+KR,Q,2020-Q1,0.78,25.46,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",125558.9
+KR,Q,2020-Q2,-7.4,25.91,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",124575.0
+KR,Q,2020-Q3,-1.86,26.12,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",133558.7
+KR,Q,2020-Q4,0.48,25.31,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",145338.4
+KR,Q,2021-Q1,5.41,26.06,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",132352.9
+KR,Q,2021-Q2,13.67,26.23,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",141608.8
+KR,Q,2021-Q3,6.13,27.2,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",141745.5
+KR,Q,2021-Q4,2.73,25.73,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",149304.9
+KR,Q,2022-Q1,5.25,27.46,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",139303.5
+KR,Q,2022-Q2,4.61,27.13,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",148136.1
+KR,Q,2022-Q3,4.95,26.98,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",148758.4
+KR,Q,2022-Q4,-1.75,25.06,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",146686.8
+KR,Q,2023-Q1,-3.67,24.96,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",134196.6
+KR,Q,2023-Q2,-1.04,25.2,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",146602.5
+KR,Q,2023-Q3,1.37,25.86,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",150799.0
+KR,Q,2023-Q4,7.51,25.61,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",157695.7
+KR,Q,2024-Q1,6.98,26.27,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",143557.2
+KR,Q,2024-Q2,6.07,27.32,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",155506.1
+KR,Q,2024-Q3,4.2,26.96,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",157130.0
+KR,Q,2024-Q4,2.54,26.28,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",161702.0
+KR,Q,2025-Q1,0.41,26.91,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",144139.1
+KR,Q,2025-Q2,2.55,28.09,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",159479.2
+KR,Q,2025-Q3,3.9,27.98,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",163258.2
+KR,Q,2025-Q4,2.39,28.13,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",165569.8
+KR,Q,2026-Q1,7.2,33.93,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",154520.5
+KR,Q,2026-Q2,6.67,40.42,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",170116.4
+KR,Q,2026-Q3,7.04,,y,y,"BoK ECOS 200Y106 (real, chained 2020, original) and 200Y105 (nominal), item 1103 manufacturing, 1400 GDP",174747.8
+MY,Q,2015-Q1,,22.09,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",62333.0
+MY,Q,2015-Q2,,22.57,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",65695.0
+MY,Q,2015-Q3,,22.33,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",65851.0
+MY,Q,2015-Q4,,22.18,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",68500.0
+MY,Q,2016-Q1,4.5,21.82,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",65146.0
+MY,Q,2016-Q2,3.8,22.19,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",68160.0
+MY,Q,2016-Q3,4.2,21.59,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",68630.0
+MY,Q,2016-Q4,5.1,21.62,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",71962.0
+MY,Q,2017-Q1,5.9,21.57,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",69022.0
+MY,Q,2017-Q2,6.0,22.39,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",72242.0
+MY,Q,2017-Q3,7.0,21.87,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",73442.0
+MY,Q,2017-Q4,5.3,21.57,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",75758.0
+MY,Q,2018-Q1,5.2,21.31,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",72643.0
+MY,Q,2018-Q2,4.8,21.95,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",75745.0
+MY,Q,2018-Q3,5.0,21.56,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",77131.0
+MY,Q,2018-Q4,4.7,21.3,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",79324.0
+MY,Q,2019-Q1,4.1,21.13,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",75627.0
+MY,Q,2019-Q2,4.3,21.82,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",79005.0
+MY,Q,2019-Q3,3.6,21.47,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",79922.0
+MY,Q,2019-Q4,3.0,21.22,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",81729.0
+MY,Q,2020-Q1,1.3,21.58,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",76635.0
+MY,Q,2020-Q2,-18.6,21.77,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",64343.0
+MY,Q,2020-Q3,3.2,22.76,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",82446.0
+MY,Q,2020-Q4,3.0,22.72,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",84182.0
+MY,Q,2021-Q1,6.6,22.97,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",81681.707
+MY,Q,2021-Q2,26.7,23.15,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",81515.941
+MY,Q,2021-Q3,-0.9,23.52,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",81670.066
+MY,Q,2021-Q4,9.1,23.75,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",91856.647
+MY,Q,2022-Q1,6.7,23.07,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",87195.1
+MY,Q,2022-Q2,9.3,22.85,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",89063.314
+MY,Q,2022-Q3,13.2,23.63,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",92430.813
+MY,Q,2022-Q4,4.0,23.76,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",95536.365
+MY,Q,2023-Q1,3.2,23.37,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",90015.107
+MY,Q,2023-Q2,0.1,22.96,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",89177.157
+MY,Q,2023-Q3,-0.1,22.85,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",92330.325
+MY,Q,2023-Q4,-0.3,22.87,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",95294.526
+MY,Q,2024-Q1,2.1,22.51,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",91868.07
+MY,Q,2024-Q2,4.7,22.44,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",93392.61
+MY,Q,2024-Q3,5.6,22.75,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",97463.085
+MY,Q,2024-Q4,4.2,22.28,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",99335.866
+MY,Q,2025-Q1,4.2,22.18,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",95681.554
+MY,Q,2025-Q2,3.7,21.96,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",96893.161
+MY,Q,2025-Q3,4.1,22.04,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",101444.381
+MY,Q,2025-Q4,6.0,22.13,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",105343.539
+MY,Q,2026-Q1,5.9,22.02,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",101295.163
+MY,Q,2026-Q2,7.3,21.98,,y,"DOSM gdp_qtr_real_supply (constant 2015 prices) and gdp_qtr_nominal_supply, sector p3",104007.463
+SG,Q,1975-Q1,,20.41,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",1353.0
+SG,Q,1975-Q2,,20.95,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",1417.9
+SG,Q,1975-Q3,,22.31,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",1627.7
+SG,Q,1975-Q4,,21.94,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",1679.2
+SG,Q,1976-Q1,15.98,21.01,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",1569.2
+SG,Q,1976-Q2,15.62,21.92,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",1639.4
+SG,Q,1976-Q3,8.5,22.82,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",1766.1
+SG,Q,1976-Q4,8.16,22.47,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",1816.2
+SG,Q,1977-Q1,7.26,21.78,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",1683.2
+SG,Q,1977-Q2,12.77,23.06,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",1848.7
+SG,Q,1977-Q3,7.69,23.21,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",1902.0
+SG,Q,1977-Q4,9.56,22.32,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",1989.8
+SG,Q,1978-Q1,6.18,22.38,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",1787.3
+SG,Q,1978-Q2,8.4,23.46,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2003.9
+SG,Q,1978-Q3,14.01,23.71,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2168.4
+SG,Q,1978-Q4,15.82,23.7,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2304.6
+SG,Q,1979-Q1,17.79,23.14,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2105.2
+SG,Q,1979-Q2,16.04,25.63,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2325.3
+SG,Q,1979-Q3,10.6,25.99,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2398.3
+SG,Q,1979-Q4,11.78,25.95,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2576.1
+SG,Q,1980-Q1,11.29,26.42,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2342.8
+SG,Q,1980-Q2,11.53,27.33,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2593.5
+SG,Q,1980-Q3,10.51,26.57,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2650.3
+SG,Q,1980-Q4,7.09,25.86,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2758.8
+SG,Q,1981-Q1,10.09,25.21,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2579.2
+SG,Q,1981-Q2,12.18,26.52,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2909.3
+SG,Q,1981-Q3,9.8,26.33,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2910.0
+SG,Q,1981-Q4,5.44,25.01,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2909.0
+SG,Q,1982-Q1,5.06,23.57,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2709.7
+SG,Q,1982-Q2,-3.09,22.91,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2819.4
+SG,Q,1982-Q3,-5.73,22.5,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2743.4
+SG,Q,1982-Q4,-9.28,20.41,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2639.1
+SG,Q,1983-Q1,-3.92,20.93,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2603.5
+SG,Q,1983-Q2,-2.28,22.01,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2755.1
+SG,Q,1983-Q3,5.31,21.94,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2889.1
+SG,Q,1983-Q4,12.51,20.96,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2969.3
+SG,Q,1984-Q1,10.48,20.53,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2876.3
+SG,Q,1984-Q2,11.47,22.23,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",3071.2
+SG,Q,1984-Q3,6.71,21.48,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",3082.9
+SG,Q,1984-Q4,1.97,21.34,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",3027.8
+SG,Q,1985-Q1,-2.87,19.83,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2793.8
+SG,Q,1985-Q2,-7.32,20.72,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2846.3
+SG,Q,1985-Q3,-8.48,20.22,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2821.5
+SG,Q,1985-Q4,-10.28,19.69,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2716.4
+SG,Q,1986-Q1,-5.54,20.2,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2639.1
+SG,Q,1986-Q2,4.96,22.87,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",2987.6
+SG,Q,1986-Q3,12.98,23.84,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",3187.7
+SG,Q,1986-Q4,21.59,23.39,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",3302.8
+SG,Q,1987-Q1,17.11,22.14,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",3090.6
+SG,Q,1987-Q2,15.72,24.2,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",3457.3
+SG,Q,1987-Q3,16.06,25.03,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",3699.7
+SG,Q,1987-Q4,20.64,24.75,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",3984.5
+SG,Q,1988-Q1,21.47,24.64,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",3754.2
+SG,Q,1988-Q2,21.91,26.9,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",4214.8
+SG,Q,1988-Q3,18.59,27.52,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",4387.5
+SG,Q,1988-Q4,12.55,25.19,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",4484.4
+SG,Q,1989-Q1,9.87,24.47,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",4124.7
+SG,Q,1989-Q2,9.71,26.21,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",4624.1
+SG,Q,1989-Q3,9.29,25.99,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",4795.0
+SG,Q,1989-Q4,10.33,24.54,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",4947.7
+SG,Q,1990-Q1,11.51,22.77,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",4599.3
+SG,Q,1990-Q2,8.45,24.71,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",5014.7
+SG,Q,1990-Q3,9.95,25.53,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",5272.0
+SG,Q,1990-Q4,8.36,24.5,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",5361.5
+SG,Q,1991-Q1,10.36,26.06,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",5075.7
+SG,Q,1991-Q2,6.27,26.01,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",5328.9
+SG,Q,1991-Q3,3.85,25.66,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",5475.2
+SG,Q,1991-Q4,2.02,24.22,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",5469.6
+SG,Q,1992-Q1,-1.13,23.29,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",5018.2
+SG,Q,1992-Q2,-0.0,24.48,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",5328.8
+SG,Q,1992-Q3,3.01,24.7,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",5639.8
+SG,Q,1992-Q4,7.0,24.82,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",5852.7
+SG,Q,1993-Q1,8.04,24.41,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",5421.9
+SG,Q,1993-Q2,11.66,25.01,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",5950.2
+SG,Q,1993-Q3,10.59,25.0,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",6237.2
+SG,Q,1993-Q4,8.35,23.56,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",6341.2
+SG,Q,1994-Q1,11.85,22.65,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",6064.4
+SG,Q,1994-Q2,12.83,24.81,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",6713.7
+SG,Q,1994-Q3,13.77,23.81,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",7095.8
+SG,Q,1994-Q4,12.23,23.24,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",7116.8
+SG,Q,1995-Q1,8.11,22.65,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",6556.3
+SG,Q,1995-Q2,7.91,24.49,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",7244.8
+SG,Q,1995-Q3,12.29,24.45,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",7967.6
+SG,Q,1995-Q4,11.45,24.24,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",7931.8
+SG,Q,1996-Q1,13.59,23.78,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",7447.5
+SG,Q,1996-Q2,5.31,23.59,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",7629.7
+SG,Q,1996-Q3,-4.16,22.54,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",7636.3
+SG,Q,1996-Q4,-1.54,22.81,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",7809.6
+SG,Q,1997-Q1,-5.21,21.19,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",7059.5
+SG,Q,1997-Q2,4.11,21.87,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",7943.6
+SG,Q,1997-Q3,9.49,22.56,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",8361.0
+SG,Q,1997-Q4,8.47,22.87,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",8471.1
+SG,Q,1998-Q1,6.13,22.57,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",7492.6
+SG,Q,1998-Q2,-0.44,22.48,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",7908.7
+SG,Q,1998-Q3,-4.43,22.91,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",7990.6
+SG,Q,1998-Q4,-3.07,22.78,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",8211.3
+SG,Q,1999-Q1,9.77,22.34,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",8224.7
+SG,Q,1999-Q2,10.98,22.77,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",8777.3
+SG,Q,1999-Q3,17.59,23.1,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",9395.9
+SG,Q,1999-Q4,13.55,23.13,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",9323.7
+SG,Q,2000-Q1,12.93,24.1,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",9288.4
+SG,Q,2000-Q2,13.46,25.21,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",9958.3
+SG,Q,2000-Q3,15.23,26.67,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",10827.2
+SG,Q,2000-Q4,18.6,27.18,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",11058.2
+SG,Q,2001-Q1,2.86,24.09,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",9553.6
+SG,Q,2001-Q2,-9.02,23.39,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",9059.8
+SG,Q,2001-Q3,-19.23,22.9,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",8744.7
+SG,Q,2001-Q4,-18.61,23.16,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",9000.6
+SG,Q,2002-Q1,-4.5,23.42,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",9123.4
+SG,Q,2002-Q2,13.54,25.58,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",10286.8
+SG,Q,2002-Q3,15.69,25.3,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",10117.0
+SG,Q,2002-Q4,10.11,24.62,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",9910.6
+SG,Q,2003-Q1,6.63,24.34,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",9728.2
+SG,Q,2003-Q2,-7.15,24.68,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",9550.8
+SG,Q,2003-Q3,2.74,24.7,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",10394.5
+SG,Q,2003-Q4,10.45,25.3,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",10946.0
+SG,Q,2004-Q1,10.21,25.33,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",10721.6
+SG,Q,2004-Q2,20.04,27.43,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",11464.9
+SG,Q,2004-Q3,11.06,27.81,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",11544.3
+SG,Q,2004-Q4,14.31,27.8,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",12512.8
+SG,Q,2005-Q1,3.25,26.06,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",11070.5
+SG,Q,2005-Q2,5.82,27.08,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",12131.9
+SG,Q,2005-Q3,13.63,27.54,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",13118.1
+SG,Q,2005-Q4,14.45,27.54,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",14320.7
+SG,Q,2006-Q1,18.53,26.02,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",13121.4
+SG,Q,2006-Q2,11.92,27.66,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",13578.5
+SG,Q,2006-Q3,10.21,27.07,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",14457.2
+SG,Q,2006-Q4,8.39,25.63,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",15521.5
+SG,Q,2007-Q1,6.45,24.17,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",13967.6
+SG,Q,2007-Q2,7.45,24.28,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",14589.9
+SG,Q,2007-Q3,11.78,24.2,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",16160.9
+SG,Q,2007-Q4,-1.25,22.72,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",15327.4
+SG,Q,2008-Q1,12.25,21.08,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",15678.6
+SG,Q,2008-Q2,-5.57,20.86,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",13777.5
+SG,Q,2008-Q3,-10.95,21.16,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",14391.2
+SG,Q,2008-Q4,-10.73,19.19,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",13683.5
+SG,Q,2009-Q1,-23.79,17.69,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",11948.5
+SG,Q,2009-Q2,-0.55,20.1,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",13701.8
+SG,Q,2009-Q3,7.53,22.08,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",15475.5
+SG,Q,2009-Q4,2.44,20.89,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",14017.3
+SG,Q,2010-Q1,37.18,20.56,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",16391.2
+SG,Q,2010-Q2,45.25,21.55,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",19901.8
+SG,Q,2010-Q3,13.71,20.83,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",17597.0
+SG,Q,2010-Q4,25.68,20.18,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",17617.0
+SG,Q,2011-Q1,19.07,20.09,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",19516.9
+SG,Q,2011-Q2,-3.79,19.84,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",19147.1
+SG,Q,2011-Q3,8.91,19.49,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",19164.7
+SG,Q,2011-Q4,9.33,18.94,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",19261.4
+SG,Q,2012-Q1,-1.11,19.47,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",19301.1
+SG,Q,2012-Q2,4.08,19.79,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",19927.6
+SG,Q,2012-Q3,-1.44,19.04,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",18888.6
+SG,Q,2012-Q4,-0.22,18.2,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",19218.8
+SG,Q,2013-Q1,-6.34,17.01,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",18076.5
+SG,Q,2013-Q2,0.78,17.67,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",20083.7
+SG,Q,2013-Q3,5.23,18.16,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",19876.5
+SG,Q,2013-Q4,7.14,17.7,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",20591.9
+SG,Q,2014-Q1,9.6,17.75,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",19811.0
+SG,Q,2014-Q2,1.37,18.3,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",20359.3
+SG,Q,2014-Q3,1.7,18.53,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",20214.3
+SG,Q,2014-Q4,-1.16,17.43,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",20353.7
+SG,Q,2015-Q1,-4.3,17.88,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",18958.2
+SG,Q,2015-Q2,-4.28,18.76,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",19487.7
+SG,Q,2015-Q3,-5.7,18.24,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",19062.5
+SG,Q,2015-Q4,-6.21,17.51,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",19089.8
+SG,Q,2016-Q1,-0.37,16.4,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",18888.4
+SG,Q,2016-Q2,1.58,17.49,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",19795.1
+SG,Q,2016-Q3,1.84,17.47,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",19414.0
+SG,Q,2016-Q4,11.76,18.05,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",21335.6
+SG,Q,2017-Q1,8.43,17.78,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",20481.6
+SG,Q,2017-Q2,8.56,17.96,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",21489.4
+SG,Q,2017-Q3,19.31,18.75,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",23163.1
+SG,Q,2017-Q4,5.76,19.33,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",22564.9
+SG,Q,2018-Q1,10.02,18.7,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",22533.9
+SG,Q,2018-Q2,10.59,20.27,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",23764.6
+SG,Q,2018-Q3,3.47,21.7,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",23965.8
+SG,Q,2018-Q4,4.58,21.63,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",23598.8
+SG,Q,2019-Q1,-0.02,19.82,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",22529.7
+SG,Q,2019-Q2,-0.48,19.89,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",23650.6
+SG,Q,2019-Q3,-1.24,19.94,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",23667.5
+SG,Q,2019-Q4,-4.02,17.63,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",22649.5
+SG,Q,2020-Q1,8.32,19.16,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",24403.5
+SG,Q,2020-Q2,-0.44,20.55,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",23547.7
+SG,Q,2020-Q3,11.01,21.22,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",26274.0
+SG,Q,2020-Q4,11.43,17.94,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",25237.8
+SG,Q,2021-Q1,11.53,20.39,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",27217.0
+SG,Q,2021-Q2,18.2,21.63,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",27833.5
+SG,Q,2021-Q3,7.94,21.89,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",28359.8
+SG,Q,2021-Q4,16.04,18.69,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",29284.8
+SG,Q,2022-Q1,6.06,21.25,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",28866.9
+SG,Q,2022-Q2,6.45,20.85,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",29627.5
+SG,Q,2022-Q3,1.3,19.53,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",28729.1
+SG,Q,2022-Q4,-2.63,17.16,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",28514.1
+SG,Q,2023-Q1,-5.42,17.79,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",27303.5
+SG,Q,2023-Q2,-8.22,17.02,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",27192.3
+SG,Q,2023-Q3,-4.86,16.7,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",27332.2
+SG,Q,2023-Q4,1.75,15.51,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",29013.6
+SG,Q,2024-Q1,-1.12,16.95,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",26999.0
+SG,Q,2024-Q2,-0.61,16.74,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",27025.3
+SG,Q,2024-Q3,11.2,16.44,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",30394.1
+SG,Q,2024-Q4,5.51,15.03,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",30611.2
+SG,Q,2025-Q1,8.58,17.47,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",29315.3
+SG,Q,2025-Q2,10.48,17.93,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",29857.4
+SG,Q,2025-Q3,4.55,18.15,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",31777.1
+SG,Q,2025-Q4,11.4,16.25,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",34100.4
+SG,Q,2026-Q1,7.28,18.64,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",31448.3
+SG,Q,2026-Q2,12.48,20.47,y,y,"SingStat M015661 (chained 2015 dollars) and M015651 (current prices), Manufacturing",33583.4
+TW,Q,1981-Q1,,31.99,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",130114.0
+TW,Q,1981-Q2,,31.8,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",132290.0
+TW,Q,1981-Q3,,34.35,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",143328.0
+TW,Q,1981-Q4,,32.48,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",142325.0
+TW,Q,1982-Q1,2.89,31.08,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",133876.0
+TW,Q,1982-Q2,4.21,32.55,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",137858.0
+TW,Q,1982-Q3,2.4,34.7,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",146774.0
+TW,Q,1982-Q4,2.87,32.82,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",146409.0
+TW,Q,1983-Q1,6.85,32.45,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",143041.0
+TW,Q,1983-Q2,15.13,33.18,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",158720.0
+TW,Q,1983-Q3,20.38,35.48,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",176682.0
+TW,Q,1983-Q4,19.4,33.95,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",174807.0
+TW,Q,1984-Q1,21.11,34.83,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",173237.0
+TW,Q,1984-Q2,18.87,35.55,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",188664.0
+TW,Q,1984-Q3,12.95,37.17,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",199558.0
+TW,Q,1984-Q4,6.5,34.19,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",186167.0
+TW,Q,1985-Q1,2.06,34.47,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",176811.0
+TW,Q,1985-Q2,-0.53,34.18,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",187664.0
+TW,Q,1985-Q3,-0.89,36.94,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",197782.0
+TW,Q,1985-Q4,3.82,34.68,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",193285.0
+TW,Q,1986-Q1,14.45,37.13,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",202366.0
+TW,Q,1986-Q2,12.53,35.95,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",211177.0
+TW,Q,1986-Q3,19.33,39.85,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",236010.0
+TW,Q,1986-Q4,24.42,37.88,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",240480.0
+TW,Q,1987-Q1,12.7,36.58,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",228072.0
+TW,Q,1987-Q2,15.48,36.02,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",243865.0
+TW,Q,1987-Q3,11.79,38.06,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",263827.0
+TW,Q,1987-Q4,3.32,35.87,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",248467.0
+TW,Q,1988-Q1,4.08,34.76,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",237376.0
+TW,Q,1988-Q2,1.31,35.13,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",247048.0
+TW,Q,1988-Q3,2.58,35.58,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",270642.0
+TW,Q,1988-Q4,4.75,33.83,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",260276.0
+TW,Q,1989-Q1,6.54,32.18,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",252906.0
+TW,Q,1989-Q2,6.82,32.67,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",263899.0
+TW,Q,1989-Q3,2.92,33.35,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",278536.0
+TW,Q,1989-Q4,2.19,32.2,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",265974.0
+TW,Q,1990-Q1,-3.39,30.0,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",244327.0
+TW,Q,1990-Q2,-5.28,30.79,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",249963.0
+TW,Q,1990-Q3,-0.84,32.27,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",276192.0
+TW,Q,1990-Q4,4.47,31.5,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",277859.0
+TW,Q,1991-Q1,4.08,29.96,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",254289.0
+TW,Q,1991-Q2,4.29,29.88,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",260685.0
+TW,Q,1991-Q3,6.82,31.17,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",295023.0
+TW,Q,1991-Q4,7.88,31.96,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",299766.0
+TW,Q,1992-Q1,5.76,28.74,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",268931.0
+TW,Q,1992-Q2,9.91,29.39,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",286514.0
+TW,Q,1992-Q3,1.88,28.84,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",300568.0
+TW,Q,1992-Q4,4.08,28.98,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",311982.0
+TW,Q,1993-Q1,2.86,26.44,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",276631.0
+TW,Q,1993-Q2,2.98,27.87,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",295057.0
+TW,Q,1993-Q3,5.2,28.59,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",316188.0
+TW,Q,1993-Q4,5.36,28.69,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",328689.0
+TW,Q,1994-Q1,1.17,25.29,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",279875.0
+TW,Q,1994-Q2,7.97,26.49,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",318571.0
+TW,Q,1994-Q3,4.99,27.15,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",331980.0
+TW,Q,1994-Q4,11.33,27.15,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",365933.0
+TW,Q,1995-Q1,10.08,24.12,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",308080.0
+TW,Q,1995-Q2,5.59,24.66,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",336367.0
+TW,Q,1995-Q3,7.31,26.28,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",356245.0
+TW,Q,1995-Q4,2.44,27.03,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",374870.0
+TW,Q,1996-Q1,2.84,24.02,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",316828.0
+TW,Q,1996-Q2,4.4,25.09,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",351158.0
+TW,Q,1996-Q3,6.53,25.96,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",379496.0
+TW,Q,1996-Q4,10.72,26.64,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",415043.0
+TW,Q,1997-Q1,4.94,23.78,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",332489.0
+TW,Q,1997-Q2,6.55,24.94,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",374151.0
+TW,Q,1997-Q3,7.14,25.1,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",406581.0
+TW,Q,1997-Q4,9.3,27.64,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",453626.0
+TW,Q,1998-Q1,5.33,24.01,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",350220.0
+TW,Q,1998-Q2,3.31,25.71,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",386520.0
+TW,Q,1998-Q3,3.16,25.19,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",419413.0
+TW,Q,1998-Q4,-2.04,25.68,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",444370.0
+TW,Q,1999-Q1,4.9,22.84,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",367377.0
+TW,Q,1999-Q2,10.58,24.99,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",427400.0
+TW,Q,1999-Q3,8.26,24.69,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",454036.0
+TW,Q,1999-Q4,9.35,26.02,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",485900.0
+TW,Q,2000-Q1,9.2,21.94,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",401168.0
+TW,Q,2000-Q2,7.6,24.66,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",459900.0
+TW,Q,2000-Q3,13.68,26.18,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",516153.0
+TW,Q,2000-Q4,6.18,27.98,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",515918.0
+TW,Q,2001-Q1,-1.34,22.15,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",395791.0
+TW,Q,2001-Q2,-8.73,22.97,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",419769.0
+TW,Q,2001-Q3,-14.04,23.78,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",443682.0
+TW,Q,2001-Q4,-2.34,25.34,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",503843.0
+TW,Q,2002-Q1,5.09,22.45,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",415935.0
+TW,Q,2002-Q2,14.85,25.69,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",482107.0
+TW,Q,2002-Q3,16.8,26.02,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",518201.0
+TW,Q,2002-Q4,10.71,27.43,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",557829.0
+TW,Q,2003-Q1,11.03,24.67,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",461802.0
+TW,Q,2003-Q2,4.58,26.81,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",504205.0
+TW,Q,2003-Q3,9.83,26.49,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",569162.0
+TW,Q,2003-Q4,19.29,29.22,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",665457.0
+TW,Q,2004-Q1,14.81,25.93,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",530176.0
+TW,Q,2004-Q2,15.77,27.29,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",583718.0
+TW,Q,2004-Q3,12.8,28.04,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",642005.0
+TW,Q,2004-Q4,5.33,29.12,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",700913.0
+TW,Q,2005-Q1,5.47,25.03,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",559176.0
+TW,Q,2005-Q2,7.58,26.73,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",627953.0
+TW,Q,2005-Q3,8.01,27.82,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",693432.0
+TW,Q,2005-Q4,13.05,29.36,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",792386.0
+TW,Q,2006-Q1,9.52,24.87,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",612402.0
+TW,Q,2006-Q2,9.88,26.63,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",689994.0
+TW,Q,2006-Q3,11.55,28.4,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",773499.0
+TW,Q,2006-Q4,2.3,28.47,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",810643.0
+TW,Q,2007-Q1,10.14,24.62,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",674495.0
+TW,Q,2007-Q2,13.69,27.17,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",784452.0
+TW,Q,2007-Q3,16.67,28.91,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",902435.0
+TW,Q,2007-Q4,17.13,29.48,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",949544.0
+TW,Q,2008-Q1,16.44,25.77,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",785388.0
+TW,Q,2008-Q2,9.46,27.22,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",858640.0
+TW,Q,2008-Q3,-0.01,27.63,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",902332.0
+TW,Q,2008-Q4,-15.18,25.98,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",805428.0
+TW,Q,2009-Q1,-16.37,23.56,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",656838.0
+TW,Q,2009-Q2,-9.42,25.38,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",777794.0
+TW,Q,2009-Q3,-1.98,26.79,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",884482.0
+TW,Q,2009-Q4,19.85,27.86,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",965342.0
+TW,Q,2010-Q1,31.87,27.38,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",866148.0
+TW,Q,2010-Q2,28.45,29.45,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",999084.0
+TW,Q,2010-Q3,21.82,29.29,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1077465.0
+TW,Q,2010-Q4,14.75,28.25,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1107708.0
+TW,Q,2011-Q1,16.01,29.21,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1004815.0
+TW,Q,2011-Q2,7.71,28.78,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1076065.0
+TW,Q,2011-Q3,4.08,28.24,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1121445.0
+TW,Q,2011-Q4,0.73,26.87,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1115823.0
+TW,Q,2012-Q1,3.62,27.19,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1041161.0
+TW,Q,2012-Q2,4.07,28.55,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1119871.0
+TW,Q,2012-Q3,6.49,29.37,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1194232.0
+TW,Q,2012-Q4,7.01,27.17,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1194038.0
+TW,Q,2013-Q1,2.04,28.01,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1062445.0
+TW,Q,2013-Q2,3.1,29.6,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1154607.0
+TW,Q,2013-Q3,4.42,30.83,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1247065.0
+TW,Q,2013-Q4,3.79,27.99,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1239344.0
+TW,Q,2014-Q1,8.05,29.21,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1147954.0
+TW,Q,2014-Q2,11.15,31.57,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1283391.0
+TW,Q,2014-Q3,11.42,32.52,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1389460.0
+TW,Q,2014-Q4,11.15,31.0,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1377517.0
+TW,Q,2015-Q1,8.29,31.43,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1243069.0
+TW,Q,2015-Q2,2.27,31.68,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1312523.0
+TW,Q,2015-Q3,-0.97,32.13,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1375940.0
+TW,Q,2015-Q4,-2.97,30.25,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1336627.0
+TW,Q,2016-Q1,-0.81,30.27,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1233030.0
+TW,Q,2016-Q2,1.63,31.97,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1333875.0
+TW,Q,2016-Q3,6.37,33.86,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1463523.0
+TW,Q,2016-Q4,8.54,32.71,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1450795.0
+TW,Q,2017-Q1,9.66,32.47,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1352165.0
+TW,Q,2017-Q2,4.76,32.35,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1397355.0
+TW,Q,2017-Q3,7.7,34.62,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1576250.0
+TW,Q,2017-Q4,7.49,32.68,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1559441.0
+TW,Q,2018-Q1,3.57,31.76,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1400378.0
+TW,Q,2018-Q2,5.71,32.75,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1477146.0
+TW,Q,2018-Q3,3.41,35.31,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1630060.0
+TW,Q,2018-Q4,2.75,32.38,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1602347.0
+TW,Q,2019-Q1,-0.41,30.71,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1394589.0
+TW,Q,2019-Q2,2.49,32.14,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1513871.0
+TW,Q,2019-Q3,3.42,34.29,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1685737.0
+TW,Q,2019-Q4,2.83,30.94,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1647677.0
+TW,Q,2020-Q1,9.14,31.61,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1522104.0
+TW,Q,2020-Q2,5.74,33.72,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1600747.0
+TW,Q,2020-Q3,8.17,36.0,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1823439.0
+TW,Q,2020-Q4,12.3,33.76,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1850358.0
+TW,Q,2021-Q1,19.37,34.79,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1816880.0
+TW,Q,2021-Q2,20.13,37.4,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1923056.0
+TW,Q,2021-Q3,15.72,38.52,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",2110005.0
+TW,Q,2021-Q4,11.79,34.88,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",2068601.0
+TW,Q,2022-Q1,7.83,35.9,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1959202.0
+TW,Q,2022-Q2,3.64,37.61,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1993096.0
+TW,Q,2022-Q3,2.56,38.58,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",2163935.0
+TW,Q,2022-Q4,-4.22,34.21,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1981336.0
+TW,Q,2023-Q1,-12.28,33.12,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1718676.0
+TW,Q,2023-Q2,-9.15,34.27,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1810685.0
+TW,Q,2023-Q3,-6.3,36.63,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",2027660.0
+TW,Q,2023-Q4,-1.57,32.48,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1950159.0
+TW,Q,2024-Q1,8.36,33.39,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",1862353.0
+TW,Q,2024-Q2,11.81,36.82,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",2024505.0
+TW,Q,2024-Q3,10.26,37.95,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",2235676.0
+TW,Q,2024-Q4,11.0,34.1,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",2164596.0
+TW,Q,2025-Q1,10.32,34.81,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",2054638.0
+TW,Q,2025-Q2,17.22,39.77,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",2373053.0
+TW,Q,2025-Q3,13.01,39.31,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",2526555.0
+TW,Q,2025-Q4,26.75,38.25,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",2743550.0
+TW,Q,2026-Q1,26.17,37.66,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",2592252.0
+TW,Q,2026-Q2,18.27,43.67,y,y,"DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices",2806652.0

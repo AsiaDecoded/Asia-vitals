@@ -24,6 +24,11 @@ Writes data/asia/mfg_tab/:
   asia_mfg_iip.csv     economy, name, freq, date, industry, index, yoy, yoy_calculated
   asia_mfg_latest.csv  economy, name, industry, freq, date, yoy, yoy_prev, m3, ytd, ytd_months, note
   asia_mfg_gva.csv     economy, name, freq, period, real_yoy, share, share_4q (average of the latest four quarters)
+  asia_mfg_gva_annual.csv  economy, name, year, quarters, ytd, real_yoy, basis: calendar-year real growth of
+                       manufacturing GVA, sum of the year's real quarterly levels / the same quarters a year earlier - 1
+                       (calculated; asked for 5 Nov 2026), within one price base only; the latest year with fewer than four
+                       quarters is year to date (ytd = y, quarters e.g. Q1-Q3). Vietnam: NSO's annual and cumulative
+                       y/y as published (its real levels are not one consistent series; basis published).
   release.json, release_row.json (code T<hash>)
 """
 import csv
@@ -180,14 +185,16 @@ def gva():
     for d, v in sorted(q.items()):
         sh = v.get(("manufacturing", "level", "current")), v.get(("gdp", "level", "current"))
         out.append({"economy": "IN", "freq": "Q", "period": qlabel(d), "real_yoy": v.get(("manufacturing", "yoy", "constant")),
-                    "share": round(sh[0] / sh[1] * 100, 2) if all(sh) else None})
+                    "share": round(sh[0] / sh[1] * 100, 2) if all(sh) else None,
+                    "real_level": v.get(("manufacturing", "level", "constant")), "price": "2022-23"})
     # Thailand: quarterly, NESDC (cvm 2002), share as calculated by th_gdp_nesdc
     q = {}
     for x in rd("th/gdp/th_gdp.csv"):
         if x["code"] == "manufacturing" and x["span"] == "Q":
-            q.setdefault(x["period"], {})[(x["measure"], x["price"])] = f(x["rate"])
+            q.setdefault(x["period"], {})[(x["measure"], x["price"])] = f(x["value"] if x["measure"] == "level" else x["rate"])
     for p, v in sorted(q.items()):
-        out.append({"economy": "TH", "freq": "Q", "period": p, "real_yoy": v.get(("yoy", "cvm_2002")), "share": v.get(("share", "current"))})
+        out.append({"economy": "TH", "freq": "Q", "period": p, "real_yoy": v.get(("yoy", "cvm_2002")), "share": v.get(("share", "current")),
+                    "real_level": v.get(("level", "cvm_2002")), "price": "cvm_2002"})
     # Vietnam
     q = {}
     for x in rd("vn/gdp/vn_gdp.csv"):
@@ -196,21 +203,26 @@ def gva():
     for p, v in sorted(q.items()):
         ry = v.get(("yoy", "constant_2020"))
         sh = v.get(("share", "current"))
+        lv = v.get(("level", "constant_2020")) or v.get(("level", "constant_2010"))
         out.append({"economy": "VN", "freq": "Q", "period": p, "real_yoy": f(ry["rate"]) if ry else None,
-                    "share": f(sh["value"]) if sh else None})
+                    "share": f(sh["value"]) if sh else None,
+                    "real_level": f(lv["value"]) if lv else None, "price": lv["price"] if lv else None})
     # Philippines
     q = {}
     for x in rd("ph/gdp/ph_gdp.csv"):
         if x["code"] == "manufacturing" and x["period"][5:6] == "Q":
             q.setdefault(x["period"], {})[(x["measure"], x["price"])] = f(x["value"])
     for p, v in sorted(q.items()):
-        out.append({"economy": "PH", "freq": "Q", "period": p, "real_yoy": v.get(("yoy", "constant_2018")), "share": v.get(("share", "current"))})
+        out.append({"economy": "PH", "freq": "Q", "period": p, "real_yoy": v.get(("yoy", "constant_2018")), "share": v.get(("share", "current")),
+                    "real_level": v.get(("level", "constant_2018")), "price": "constant_2018"})
     # Indonesia
     for x in rd("id/gdp/id_gdp_industry.csv"):
         if x["code"] == "13000":
-            out.append({"economy": "ID", "freq": "Q", "period": qlabel(x["date"]), "real_yoy": f(x["real_yoy"]), "share": f(x["share_nominal"])})
+            out.append({"economy": "ID", "freq": "Q", "period": qlabel(x["date"]), "real_yoy": f(x["real_yoy"]), "share": f(x["share_nominal"]),
+                        "real_level": f(x["real_level"]), "price": "constant_2010"})
     for x in rd("asia/mfg/src_gva.csv"):
-        out.append({"economy": x["economy"], "freq": x["freq"], "period": x["period"], "real_yoy": f(x["real_yoy"]), "share": f(x["share"])})
+        out.append({"economy": x["economy"], "freq": x["freq"], "period": x["period"], "real_yoy": f(x["real_yoy"]), "share": f(x["share"]),
+                    "real_level": f(x.get("real_level")), "price": "source"})
     for x in out:
         x["name"] = NAMES[x["economy"]]
     out.sort(key=lambda x: (x["economy"], x["freq"], x["period"]))
@@ -222,6 +234,51 @@ def gva():
             w = out[i - 3:i + 1]
             if all(y["economy"] == x["economy"] and y["freq"] == "Q" and y["share"] is not None for y in w):
                 x["share_4q"] = round(sum(y["share"] for y in w) / 4, 2)
+    return out
+
+
+def gva_annual(g, warnings):
+    """Calendar-year (and year-to-date) real growth from the quarterly real levels in g; see the module docstring."""
+    out = []
+    for e in sorted({x["economy"] for x in g}):
+        q = [x for x in g if x["economy"] == e and x["freq"] == "Q" and x.get("real_level")]
+        lv = {}
+        for x in q:
+            lv.setdefault(x["price"], {}).setdefault(int(x["period"][:4]), {})[int(x["period"][-1])] = x["real_level"]
+            # check: level-based y/y against the published (or source) quarterly y/y
+            prev = lv[x["price"]].get(int(x["period"][:4]) - 1, {}).get(int(x["period"][-1]))
+            if prev and x["real_yoy"] is not None and x["period"] >= "2015":
+                d = (x["real_level"] / prev - 1) * 100 - x["real_yoy"]
+                if abs(d) > 0.3:
+                    warnings.append(f"GVA {e} {x['period']}: y/y from real levels differs from the quarterly y/y by {d:.2f} pp")
+        latest = max((y for p in lv.values() for y in p), default=None)
+        rows = {}
+        for price, by in lv.items():
+            for y, qs in by.items():
+                pq = by.get(y - 1, {})
+                have = sorted(qs)
+                if len(have) == 4 or (y == latest and have == list(range(1, len(have) + 1))):
+                    if all(k in pq for k in have):
+                        g_ = (sum(qs[k] for k in have) / sum(pq[k] for k in have) - 1) * 100
+                        ytd = len(have) < 4
+                        rows[y] = {"economy": e, "name": NAMES[e], "year": y, "quarters": f"Q1-Q{len(have)}" if ytd else "",
+                                   "ytd": "y" if ytd else "", "real_yoy": round(g_, 2), "basis": "calculated"}
+        if e == "VN":
+            # NSO's real levels are not one consistent series (each quarter and year in its own vintage and units: the
+            # level-based growth jumps, e.g. -18% in 2014, +62% in 2021), so Vietnam uses NSO's growth rates as
+            # published: annual y/y for full years, the latest cumulative y/y (6, 9 months) for the year to date
+            rows = {}
+            pub = [x for x in rd("vn/gdp/vn_gdp.csv") if x["code"] == "manufacturing" and x["measure"] == "yoy"
+                   and x["span"] in ("6M", "9M", "Y") and x["price"].startswith("constant") and f(x["rate"]) is not None]
+            for y in sorted({int(x["period"][:4]) for x in pub}):
+                ys = [x for x in pub if int(x["period"][:4]) == y]
+                c = max(ys, key=lambda x: (x["date"], x["price"]))
+                n = {"6M": 2, "9M": 3, "Y": 4}[c["span"]]
+                if n < 4 and y != max(int(x["period"][:4]) for x in pub):
+                    continue
+                rows[y] = {"economy": e, "name": NAMES[e], "year": y, "quarters": "" if n == 4 else f"Q1-Q{n}",
+                           "ytd": "" if n == 4 else "y", "real_yoy": round(f(c["rate"]), 2), "basis": "published"}
+        out += [rows[y] for y in sorted(rows) if y >= 2010]
     return out
 
 
@@ -250,7 +307,8 @@ def build(force=False):
     iip.sort(key=lambda x: (x["economy"], x["industry"], x["freq"], x["date"]))
     lat = latest(iip)
     g = gva()
-    fp = hashlib.sha256(json.dumps([iip, g], sort_keys=True, default=str).encode()).hexdigest()[:16]
+    ga = gva_annual(g, warnings)
+    fp = hashlib.sha256(json.dumps([iip, g, ga], sort_keys=True, default=str).encode()).hexdigest()[:16]
     covered = " ".join(sorted({x["economy"] for x in lat}))
     if state.get("fingerprint") == fp and not force:
         return {"updated": False, "summary": f"Asia manufacturing unchanged ({covered})", "warnings": warnings}
@@ -258,6 +316,7 @@ def build(force=False):
           [x for x in iip if x["date"] >= "2015-01-01"])
     write("asia_mfg_latest.csv", ["economy", "name", "industry", "freq", "date", "yoy", "yoy_prev", "m3", "ytd", "ytd_months", "note"], lat)
     write("asia_mfg_gva.csv", ["economy", "name", "freq", "period", "real_yoy", "share", "share_4q"], g)
+    write("asia_mfg_gva_annual.csv", ["economy", "name", "year", "quarters", "ytd", "real_yoy", "basis"], ga)
     code = f"T{fp[:8]}"
     write_release(OUT, {"code": code, "label": f"Asia manufacturing: production {covered}; GVA {' '.join(sorted({x['economy'] for x in g}))}",
                         "economies": covered}, warnings, len(iip), {"fingerprint": fp})
