@@ -1,18 +1,22 @@
 {
- "code": "G2026Q2",
- "label": "Q2 2026",
- "latest_quarter": "2026-04-01",
- "last_update": "2026-08-05 12:32:10",
+ "code": "G2026Q3",
+ "label": "Q3 2026",
+ "latest_quarter": "2026-07-01",
+ "last_update": "2026-11-05 11:41:36",
  "table": "BPS WebAPI: 2010-series GDP by expenditure (1955, 1956, 108, 109, 110, 2128-2130) and industry (65, 104, 105, 106, 554)",
- "processed_at": "2026-10-30T04:38:08Z",
- "rows": 2112,
+ "processed_at": "2026-11-05T11:20:15Z",
+ "rows": 2144,
  "warnings": [],
- "fingerprint": "5c34749c52a70505",
- "long_rows": 21934,
+ "fingerprint": "7090425e51f6b0b1",
+ "long_rows": 22274,
  "history": [
   {
    "code": "G2026Q2",
    "processed_at": "2026-10-30T04:38:08Z"
+  },
+  {
+   "code": "G2026Q3",
+   "processed_at": "2026-11-05T11:20:15Z"
   }
  ]
 }
