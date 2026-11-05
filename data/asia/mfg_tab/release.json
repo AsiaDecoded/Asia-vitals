@@ -1,11 +1,11 @@
 {
- "code": "Ta5f48d47",
+ "code": "Tc401a6d8",
  "label": "Asia manufacturing: production HK IN JP KR MY PH SG TH TW VN; GVA CN HK ID IN JP KR MY PH SG TH TW VN",
  "economies": "HK IN JP KR MY PH SG TH TW VN",
- "processed_at": "2026-11-05T22:22:49Z",
+ "processed_at": "2026-11-05T22:32:19Z",
  "rows": 12895,
  "warnings": [],
- "fingerprint": "a5f48d474816ff71",
+ "fingerprint": "c401a6d8df76c664",
  "history": [
   {
    "code": "Tee5fc706",
@@ -62,6 +62,10 @@
   {
    "code": "Ta5f48d47",
    "processed_at": "2026-11-05T22:22:49Z"
+  },
+  {
+   "code": "Tc401a6d8",
+   "processed_at": "2026-11-05T22:32:19Z"
   }
  ]
 }
