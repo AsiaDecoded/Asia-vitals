@@ -7542,7 +7542,7 @@ date,region,order,yoy
 2026-06-01,Philippines,0,6.4
 2026-06-01,NCR,1,4.9
 2026-06-01,Areas outside NCR,2,6.8
-2026-06-01,Cordillera (CAR),3,6.5
+2026-06-01,Cordillera (CAR),3,6.6
 2026-06-01,Ilocos (I),4,5.1
 2026-06-01,Cagayan Valley (II),5,5.7
 2026-06-01,Central Luzon (III),6,5.9
@@ -7562,7 +7562,7 @@ date,region,order,yoy
 2026-07-01,Philippines,0,6.2
 2026-07-01,NCR,1,4.4
 2026-07-01,Areas outside NCR,2,6.7
-2026-07-01,Cordillera (CAR),3,6.8
+2026-07-01,Cordillera (CAR),3,6.9
 2026-07-01,Ilocos (I),4,5.2
 2026-07-01,Cagayan Valley (II),5,6.6
 2026-07-01,Central Luzon (III),6,6.2
@@ -7600,10 +7600,10 @@ date,region,order,yoy
 2026-08-01,Caraga (XIII),18,8.9
 2026-08-01,Negros Island (NIR),19,5.8
 2026-09-01,Philippines,0,7.2
-2026-09-01,NCR,1,5.4
+2026-09-01,NCR,1,5.3
 2026-09-01,Areas outside NCR,2,7.6
-2026-09-01,Cordillera (CAR),3,8.2
-2026-09-01,Ilocos (I),4,6.4
+2026-09-01,Cordillera (CAR),3,8.3
+2026-09-01,Ilocos (I),4,6.5
 2026-09-01,Cagayan Valley (II),5,7.2
 2026-09-01,Central Luzon (III),6,7.6
 2026-09-01,CALABARZON (IV-A),7,7.2
@@ -7619,3 +7619,23 @@ date,region,order,yoy
 2026-09-01,BARMM,17,9.7
 2026-09-01,Caraga (XIII),18,9.0
 2026-09-01,Negros Island (NIR),19,6.9
+2026-10-01,Philippines,0,7.8
+2026-10-01,NCR,1,5.9
+2026-10-01,Areas outside NCR,2,8.2
+2026-10-01,Cordillera (CAR),3,9.2
+2026-10-01,Ilocos (I),4,7.7
+2026-10-01,Cagayan Valley (II),5,7.7
+2026-10-01,Central Luzon (III),6,8.2
+2026-10-01,CALABARZON (IV-A),7,7.6
+2026-10-01,MIMAROPA,8,6.7
+2026-10-01,Bicol (V),9,9.1
+2026-10-01,Western Visayas (VI),10,9.7
+2026-10-01,Central Visayas (VII),11,9.5
+2026-10-01,Eastern Visayas (VIII),12,8.4
+2026-10-01,Zamboanga Peninsula (IX),13,8.1
+2026-10-01,Northern Mindanao (X),14,7.1
+2026-10-01,Davao (XI),15,9.7
+2026-10-01,SOCCSKSARGEN (XII),16,8.3
+2026-10-01,BARMM,17,9.9
+2026-10-01,Caraga (XIII),18,8.9
+2026-10-01,Negros Island (NIR),19,7.2

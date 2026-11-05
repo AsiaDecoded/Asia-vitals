@@ -5989,6 +5989,7 @@ PH,Philippines,cpi,All items,2026-06-01,6.4,published,data/ph/cpi/ph_cpi.csv
 PH,Philippines,cpi,All items,2026-07-01,6.2,published,data/ph/cpi/ph_cpi.csv
 PH,Philippines,cpi,All items,2026-08-01,6.1,published,data/ph/cpi/ph_cpi.csv
 PH,Philippines,cpi,All items,2026-09-01,7.2,published,data/ph/cpi/ph_cpi.csv
+PH,Philippines,cpi,All items,2026-10-01,7.8,published,data/ph/cpi/ph_cpi.csv
 PH,Philippines,food,Food and non-alcoholic beverages,2015-01-01,4.5,published,data/ph/cpi/ph_cpi.csv
 PH,Philippines,food,Food and non-alcoholic beverages,2015-02-01,4.0,published,data/ph/cpi/ph_cpi.csv
 PH,Philippines,food,Food and non-alcoholic beverages,2015-03-01,3.5,published,data/ph/cpi/ph_cpi.csv
@@ -6130,6 +6131,7 @@ PH,Philippines,food,Food and non-alcoholic beverages,2026-06-01,5.2,published,da
 PH,Philippines,food,Food and non-alcoholic beverages,2026-07-01,5.2,published,data/ph/cpi/ph_cpi.csv
 PH,Philippines,food,Food and non-alcoholic beverages,2026-08-01,4.6,published,data/ph/cpi/ph_cpi.csv
 PH,Philippines,food,Food and non-alcoholic beverages,2026-09-01,6.7,published,data/ph/cpi/ph_cpi.csv
+PH,Philippines,food,Food and non-alcoholic beverages,2026-10-01,6.1,published,data/ph/cpi/ph_cpi.csv
 PH,Philippines,energy,"Energy: electricity, gas and other fuels (04.5) and fuels for personal transport (07.2.2) at published weights (2019-)",2019-01-01,3.5,calculated,data/ph/cpi/ph_cpi.csv
 PH,Philippines,energy,"Energy: electricity, gas and other fuels (04.5) and fuels for personal transport (07.2.2) at published weights (2019-)",2019-02-01,3.5,calculated,data/ph/cpi/ph_cpi.csv
 PH,Philippines,energy,"Energy: electricity, gas and other fuels (04.5) and fuels for personal transport (07.2.2) at published weights (2019-)",2019-03-01,4.7,calculated,data/ph/cpi/ph_cpi.csv
@@ -6223,6 +6225,7 @@ PH,Philippines,energy,"Energy: electricity, gas and other fuels (04.5) and fuels
 PH,Philippines,energy,"Energy: electricity, gas and other fuels (04.5) and fuels for personal transport (07.2.2) at published weights (2019-)",2026-07-01,22.1,calculated,data/ph/cpi/ph_cpi.csv
 PH,Philippines,energy,"Energy: electricity, gas and other fuels (04.5) and fuels for personal transport (07.2.2) at published weights (2019-)",2026-08-01,23.0,calculated,data/ph/cpi/ph_cpi.csv
 PH,Philippines,energy,"Energy: electricity, gas and other fuels (04.5) and fuels for personal transport (07.2.2) at published weights (2019-)",2026-09-01,24.4,calculated,data/ph/cpi/ph_cpi.csv
+PH,Philippines,energy,"Energy: electricity, gas and other fuels (04.5) and fuels for personal transport (07.2.2) at published weights (2019-)",2026-10-01,28.2,calculated,data/ph/cpi/ph_cpi.csv
 PH,Philippines,core,CPI less food and non-alcoholic beverages and energy (2019-),2019-01-01,4.0,calculated,data/ph/cpi/ph_cpi.csv
 PH,Philippines,core,CPI less food and non-alcoholic beverages and energy (2019-),2019-02-01,3.5,calculated,data/ph/cpi/ph_cpi.csv
 PH,Philippines,core,CPI less food and non-alcoholic beverages and energy (2019-),2019-03-01,3.2,calculated,data/ph/cpi/ph_cpi.csv
@@ -6316,6 +6319,7 @@ PH,Philippines,core,CPI less food and non-alcoholic beverages and energy (2019-)
 PH,Philippines,core,CPI less food and non-alcoholic beverages and energy (2019-),2026-07-01,4.4,calculated,data/ph/cpi/ph_cpi.csv
 PH,Philippines,core,CPI less food and non-alcoholic beverages and energy (2019-),2026-08-01,4.5,calculated,data/ph/cpi/ph_cpi.csv
 PH,Philippines,core,CPI less food and non-alcoholic beverages and energy (2019-),2026-09-01,4.7,calculated,data/ph/cpi/ph_cpi.csv
+PH,Philippines,core,CPI less food and non-alcoholic beverages and energy (2019-),2026-10-01,5.6,calculated,data/ph/cpi/ph_cpi.csv
 PH,Philippines,official_core,Core (PSA definition),2015-01-01,1.1,published,data/ph/cpi/ph_cpi.csv
 PH,Philippines,official_core,Core (PSA definition),2015-02-01,1.3,published,data/ph/cpi/ph_cpi.csv
 PH,Philippines,official_core,Core (PSA definition),2015-03-01,1.6,published,data/ph/cpi/ph_cpi.csv
@@ -6444,7 +6448,8 @@ PH,Philippines,official_core,Core (PSA definition),2026-05-01,4.1,published,data
 PH,Philippines,official_core,Core (PSA definition),2026-06-01,4.4,published,data/ph/cpi/ph_cpi.csv
 PH,Philippines,official_core,Core (PSA definition),2026-07-01,4.2,published,data/ph/cpi/ph_cpi.csv
 PH,Philippines,official_core,Core (PSA definition),2026-08-01,4.1,published,data/ph/cpi/ph_cpi.csv
-PH,Philippines,official_core,Core (PSA definition),2026-09-01,4.7,published,data/ph/cpi/ph_cpi.csv
+PH,Philippines,official_core,Core (PSA definition),2026-09-01,4.8,published,data/ph/cpi/ph_cpi.csv
+PH,Philippines,official_core,Core (PSA definition),2026-10-01,5.4,published,data/ph/cpi/ph_cpi.csv
 PH,Philippines,ppi,"PPI, manufacturing",2015-01-01,-3.5,published,data/ph/ppi/ph_ppi.csv
 PH,Philippines,ppi,"PPI, manufacturing",2015-02-01,-5.5,published,data/ph/ppi/ph_ppi.csv
 PH,Philippines,ppi,"PPI, manufacturing",2015-03-01,-5.4,published,data/ph/ppi/ph_ppi.csv

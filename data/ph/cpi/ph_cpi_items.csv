@@ -1,358 +1,4 @@
 date,code,name,order,index,yoy
-2024-09-01,0,ALL ITEMS,0,126.3,1.9
-2024-09-01,01,FOOD AND NON-ALCOHOLIC BEVERAGES,1,129.8,1.4
-2024-09-01,01.1,FOOD,2,130.6,1.4
-2024-09-01,01.1.1,Cereals and cereal products,3,121.9,4.9
-2024-09-01,01.1.1.1,Cereals,4,118.953811885348,5.8
-2024-09-01,01.1.1.2,Flour of cereals,5,127.991229808817,3.2
-2024-09-01,01.1.1.3,Bread and bakery products,6,131.404872327911,2.1
-2024-09-01,01.1.1.4,Breakfast cereals,7,122.606647803698,1.6
-2024-09-01,01.1.1.5,"Macaroni, noodles, couscous and similar pasta products",8,129.240670890138,2.1
-2024-09-01,01.1.1.9,Other cereal and grain mill products,9,136.131708913429,3.9
-2024-09-01,01.1.1.12,Rice,10,117.402726854051,5.7
-2024-09-01,01.1.1.16,Corn,11,147.458152668393,6.9
-2024-09-01,01.1.1.20,"Flour, Bread and Other Bakery Products, Pasta Products,  and Other Cereals",12,131.298099481378,2.3
-2024-09-01,01.1.2,Meat and other parts of slaughtered land animals,13,137.1,3.6
-2024-09-01,01.1.2.2,"Meat, fresh, chilled or frozen",14,140.308556386792,4.2
-2024-09-01,01.1.2.3,"Meat, dried, salted, in brine or smoked",15,131.008454933604,1.3
-2024-09-01,01.1.2.4,"Offal, blood and other parts of slaughtered animals, fresh, chilled or frozen, dried, salted, in brine or smoked",16,147.466378402193,4.3
-2024-09-01,01.1.2.5,"Meat, offal, blood and other parts of slaughtered animals' preparations",17,125.483435185111,1.8
-2024-09-01,01.1.3,Fish and other seafood,18,132.1,-1.2
-2024-09-01,01.1.3.1,"Fish, live, fresh, chilled or frozen",19,130.732415037313,-1.9
-2024-09-01,01.1.3.2,"Fish, dried, salted, in brine or smoked",20,149.805154138313,0.4
-2024-09-01,01.1.3.3,Fish preparations,21,129.23049928556,0.6
-2024-09-01,01.1.3.4,"Other seafood, live, fresh, chilled or frozen",22,130.396963155171,1.0
-2024-09-01,01.1.3.6,Other seafood preparations,23,144.078857615234,3.7
-2024-09-01,01.1.4,"Milk, other dairy products and eggs",24,128.8,4.0
-2024-09-01,01.1.4.1,Raw and whole milk,25,139.546058614394,1.5
-2024-09-01,01.1.4.3,Other milk and cream,26,115.52701733031,1.4
-2024-09-01,01.1.4.4,Non-animal milk,27,120.76233610689,3.9
-2024-09-01,01.1.4.5,Cheese,28,122.000626343552,0.1
-2024-09-01,01.1.4.6,Yoghurt and similar products,29,125.647590990326,2.0
-2024-09-01,01.1.4.7,Milk-based dessert and beverages,30,120.768114250536,2.2
-2024-09-01,01.1.4.8,Eggs,31,146.629866460946,7.4
-2024-09-01,01.1.5,Oils and fats,32,129.8,-1.4
-2024-09-01,01.1.5.1,Vegetable oils,33,134.938400496152,-1.4
-2024-09-01,01.1.5.2,Butter and other fats and oils derived from milk,34,125.452354081304,0.1
-2024-09-01,01.1.5.3,Margarine and similar preparations,35,110.800152799234,-1.7
-2024-09-01,01.1.5.9,Other animal oils and fats,36,112.896081391305,-0.6
-2024-09-01,01.1.6,Fruits and nuts,37,150.2,11.9
-2024-09-01,01.1.6.1,"Dates, figs and tropical fruits, fresh",38,150.745443107729,12.3
-2024-09-01,01.1.6.2,"Citrus fruits, fresh",39,155.333177476116,11.1
-2024-09-01,01.1.6.3,"Stone fruits and pome fruits, fresh",40,146.232267493083,7.9
-2024-09-01,01.1.6.5,"Other fruits, fresh",41,167.723828490853,16.6
-2024-09-01,01.1.6.7,"Fruit, dried and dehydrated",42,141.51590560794,4.3
-2024-09-01,01.1.6.8,"Nuts, in shell or shelled",43,143.054018186636,9.6
-2024-09-01,01.1.6.9,Fruit and nuts ground and other preparations,44,132.447578535599,3.3
-2024-09-01,01.1.7,"Vegetables, tubers, plantains, cooking bananas and pulses",45,136.4,-15.8
-2024-09-01,01.1.7.1,"Leafy or stem vegetables, fresh or chilled",46,135.856227160106,-9.8
-2024-09-01,01.1.7.2,"Fruit-bearing vegetables, fresh or chilled",47,135.228398908759,-20.5
-2024-09-01,01.1.7.3,"Green leguminous vegetables, fresh or chilled",48,134.856282268742,-11.4
-2024-09-01,01.1.7.4,"Other vegetables, fresh or chilled",49,131.459561689354,-18.2
-2024-09-01,01.1.7.5,"Tubers, plantains and cooking bananas",50,153.135598457413,-11.1
-2024-09-01,01.1.7.9,"Vegetables, tubers, plantains, cooking bananas and pulses ground and other preparations",51,141.968511025009,4.4
-2024-09-01,01.1.8,"Sugar, confectionery and desserts",52,142.3,-3.8
-2024-09-01,01.1.8.1,Cane and beet sugar,53,162.737373030293,-9.2
-2024-09-01,01.1.8.3,"Jams, fruit jellies, marmalades, fruit purée and pastes, honey",54,129.523936318944,2.8
-2024-09-01,01.1.8.4,"Nut purée, nut butter and nut pastes",55,138.17457701196,3.2
-2024-09-01,01.1.8.5,"Chocolate, cocoa, and cocoa-based food products",56,128.387956974975,2.8
-2024-09-01,01.1.8.6,"Ice, ice cream and sorbet",57,119.994808792004,1.5
-2024-09-01,01.1.8.9,Other sugar confectionery and desserts n.e.c.,58,129.974186103177,4.4
-2024-09-01,01.1.9,Ready-made food and other food products n.e.c.,59,133.1,5.1
-2024-09-01,01.1.9.2,Baby food,60,121.265111881648,2.5
-2024-09-01,01.1.9.3,"Salt, condiments and sauces",61,134.867193672253,2.6
-2024-09-01,01.1.9.4,"Spices, culinary herbs and seeds",62,149.767573826472,15.8
-2024-09-01,01.1.9.9,Other food products n.e.c.,63,132.890158695395,2.8
-2024-09-01,01.2,NON-ALCOHOLIC BEVERAGES,64,120.8,2.0
-2024-09-01,01.2.1,Fruit and vegetable juices,65,135.2,3.2
-2024-09-01,01.2.1.0,Fruit and vegetable juices,66,135.136188884205,3.1
-2024-09-01,01.2.2,Coffee and coffee substitutes,67,116.8,2.3
-2024-09-01,01.2.2.0,Coffee and coffee substitutes,68,116.813102385322,2.3
-2024-09-01,01.2.3,"Tea, maté and other plant products for infusion",69,125.5,5.6
-2024-09-01,01.2.3.0,"Tea, maté and other plant products for infusion",70,125.49555108142,5.5
-2024-09-01,01.2.4,Cocoa drinks,71,129.0,2.2
-2024-09-01,01.2.4.0,Cocoa drinks,72,128.983306318904,2.2
-2024-09-01,01.2.5,Water,73,111.8,0.9
-2024-09-01,01.2.5.0,Water,74,111.797761063266,0.9
-2024-09-01,01.2.6,Soft drinks,75,126.8,1.8
-2024-09-01,01.2.6.0,Soft drinks,76,126.796207789742,1.7
-2024-09-01,01.2.9,Other non-alcoholic beverages,77,132.4,2.5
-2024-09-01,01.2.9.0,Other non-alcoholic beverages,78,132.406621444036,2.4
-2024-09-01,02,ALCOHOLIC BEVERAGES AND TOBACCO,79,177.5,3.1
-2024-09-01,02.1,ALCOHOLIC BEVERAGES,80,141.9,3.6
-2024-09-01,02.1.1,Spirits and liquors,81,145.8,4.4
-2024-09-01,02.1.1.0,Spirits and liquors,82,145.767304420046,4.4
-2024-09-01,02.1.2,Wine,83,131.7,4.4
-2024-09-01,02.1.2.1,Wine from grapes,84,126.20593275561,1.7
-2024-09-01,02.1.2.2,Wine from other sources,85,133.030913963393,5.1
-2024-09-01,02.1.3,Beer,86,138.3,2.3
-2024-09-01,02.1.3.0,Beer,87,138.316194754842,2.3
-2024-09-01,02.3,TOBACCO,88,202.1,2.8
-2024-09-01,02.3.0,Tobacco,89,202.1,2.8
-2024-09-01,02.3.0.1,Cigarettes,90,202.741100044744,2.8
-2024-09-01,02.3.0.2,Cigars,91,207.589446481799,12.3
-2024-09-01,02.3.0.9,Other tobacco products,92,150.626161587609,4.9
-2024-09-01,02.4,OTHER VEGETABLE-BASED TOBACCO PRODUCTS,93,159.0,2.6
-2024-09-01,02.4.0,Other vegetable-based tobacco products,94,159.0,2.6
-2024-09-01,02.4.0.0,Other vegetable-based tobacco products,95,159.020317026881,2.6
-2024-09-01,02.900,NON-FOOD,96,122.3,2.3
-2024-09-01,03,CLOTHING AND FOOTWEAR,97,119.1,2.9
-2024-09-01,03.1,CLOTHING,98,119.2,3.2
-2024-09-01,03.1.1,Clothing materials,99,114.0,2.0
-2024-09-01,03.1.1.0,Clothing materials,100,114.051096193664,2.0
-2024-09-01,03.1.2,Garments,101,118.9,3.2
-2024-09-01,03.1.2.1,Garments for men or boys,102,118.794379934484,3.0
-2024-09-01,03.1.2.2,Garments for women or girls,103,118.905387779084,3.5
-2024-09-01,03.1.2.3,Garments for infants (0 to under 2 years),104,120.608909464543,3.0
-2024-09-01,03.1.2.4,School uniforms,105,127.208831954056,3.2
-2024-09-01,03.1.3,Other articles of clothing and clothing accessories,106,118.2,3.2
-2024-09-01,03.1.3.1,Other articles of clothing,107,117.742556298921,3.4
-2024-09-01,03.1.3.2,Clothing accessories,108,121.401967022873,2.6
-2024-09-01,03.1.4,"Cleaning, repair, tailoring and hire of clothing",109,133.0,4.2
-2024-09-01,03.1.4.1,Cleaning of clothing,110,130.471253238099,2.8
-2024-09-01,03.1.4.2,"Repair, tailoring and hire of clothing",111,139.935989559802,7.7
-2024-09-01,03.2,FOOTWEAR,112,118.6,2.2
-2024-09-01,03.2.1,Shoes and other footwear,113,118.6,2.2
-2024-09-01,03.2.1.1,Footwear for men,114,118.762069947856,2.1
-2024-09-01,03.2.1.2,Footwear for women,115,117.932345702393,2.5
-2024-09-01,03.2.1.3,Footwear for infants and children,116,119.09045095225,2.0
-2024-09-01,03.2.2,"Cleaning, repair, and hire of footwear",117,124.5,3.1
-2024-09-01,03.2.2.0,"Cleaning, repair, and hire of footwear",118,124.523747973884,3.1
-2024-09-01,04,"HOUSING, WATER, ELECTRICITY, GAS, AND OTHER FUELS",119,121.2,3.3
-2024-09-01,04.1,ACTUAL RENTALS FOR HOUSING,120,118.5,2.3
-2024-09-01,04.1.1,Actual rentals paid by tenants for main residence,121,118.5,2.3
-2024-09-01,04.1.1.0,Actual rentals paid by tenants for main residence,122,118.502609770284,2.4
-2024-09-01,04.3,"MAINTENANCE, REPAIR AND SECURITY OF THE DWELLING",123,121.6,2.4
-2024-09-01,04.3.1,Security equipment and materials for the maintenance and repair of the dwelling,124,119.1,2.1
-2024-09-01,04.3.1.1,Materials for the maintenance and repair of the dwelling,125,119.026239110058,2.1
-2024-09-01,04.3.2,"Services for the maintenance, repair and security of the dwelling",126,130.5,3.5
-2024-09-01,04.3.2.0,"Services for the maintenance, repair and security of the dwelling",127,130.467604684816,3.4
-2024-09-01,04.4,WATER SUPPLY AND MISCELLANEOUS SERVICES RELATING TO THE DWELLING,128,126.2,7.3
-2024-09-01,04.4.1,Water supply,129,126.2,7.3
-2024-09-01,04.4.1.1,Water supply through network systems,130,126.206167254519,7.3
-2024-09-01,04.5,"ELECTRICITY, GAS AND OTHER FUELS",131,125.2,4.2
-2024-09-01,04.5.1,Electricity,132,117.5,2.6
-2024-09-01,04.5.1.0,Electricity,133,117.467770337944,2.6
-2024-09-01,04.5.2,Gas,134,144.0,10.0
-2024-09-01,04.5.2.2,Liquefied hydrocarbons,135,143.987216346805,10.0
-2024-09-01,04.5.3,Liquid fuels,136,145.9,-9.6
-2024-09-01,04.5.3.0,Liquid fuels,137,145.910611464849,-9.6
-2024-09-01,04.5.4,Solid fuels,138,136.7,3.8
-2024-09-01,04.5.4.2,"Wood fuel, including pellets and briquettes",139,135.683879925471,3.6
-2024-09-01,04.5.4.3,Charcoal,140,139.502389819089,4.7
-2024-09-01,05,"FURNISHINGS, HOUSEHOLD EQUIPMENT AND ROUTINE HOUSEHOLD MAINTENANCE",141,122.1,2.6
-2024-09-01,05.1,"FURNITURE, FURNISHINGS, AND LOOSE CARPETS",142,112.6,1.4
-2024-09-01,05.1.1,"Furniture, furnishings and loose carpets",143,112.6,1.4
-2024-09-01,05.1.1.1,Household furniture,144,112.360518566436,1.4
-2024-09-01,05.1.1.3,Lighting equipment,145,114.266568176693,0.0
-2024-09-01,05.1.1.4,"Furnishings, loose carpets and rugs",146,114.677257246009,1.9
-2024-09-01,05.2,HOUSEHOLD TEXTILES,147,112.6,2.3
-2024-09-01,05.2.1,Household textiles,148,112.6,2.3
-2024-09-01,05.2.1.1,Furnishing fabrics and curtains,149,112.134307706361,2.8
-2024-09-01,05.2.1.2,Bed linen and bedding,150,112.609961357195,2.0
-2024-09-01,05.2.1.3,Table linen and bathroom linen,151,115.963825353175,3.5
-2024-09-01,05.2.1.9,Other household textiles,152,113.385960369136,1.4
-2024-09-01,05.3,HOUSEHOLD APPLIANCES,153,113.1,1.6
-2024-09-01,05.3.1,"Major household appliances, whether electric or not",154,111.9,1.5
-2024-09-01,05.3.1.1,Major kitchen appliances,155,113.285214469797,1.1
-2024-09-01,05.3.1.2,Major laundry appliances,156,110.440101136514,1.9
-2024-09-01,05.3.1.3,"Heaters, air conditioners",157,109.769905421623,1.7
-2024-09-01,05.3.2,Small household appliances,158,119.7,3.4
-2024-09-01,05.3.2.1,Small appliances for cooking and processing of food,159,119.622899074404,4.0
-2024-09-01,05.3.2.9,Other small household appliances,160,119.746139254813,3.2
-2024-09-01,05.3.3,"Repair, installation and hire of household appliances",161,112.3,1.3
-2024-09-01,05.3.3.0,"Repair, installation and hire of household appliances",162,112.323453447442,1.4
-2024-09-01,05.4,"GLASSWARE, TABLEWARE AND HOUSEHOLD UTENSILS",163,118.8,2.9
-2024-09-01,05.4.0,"Glassware, tableware and household utensils",164,118.8,2.9
-2024-09-01,05.4.0.1,"Glassware, crystal-ware, ceramic ware and chinaware",165,121.524351541956,3.2
-2024-09-01,05.4.0.2,"Cutlery, flatware and silverware",166,113.875895528288,2.0
-2024-09-01,05.4.0.3,Kitchen utensils and articles,167,116.263020364344,2.7
-2024-09-01,05.5,TOOLS AND EQUIPMENT FOR HOUSE AND GARDEN,168,112.3,2.3
-2024-09-01,05.5.1,Motorized tools and equipment,169,99.4,1.7
-2024-09-01,05.5.1.0,Motorized tools and equipment,170,99.381559321563,1.8
-2024-09-01,05.5.2,Non-motorized tools and miscellaneous accessories,171,116.3,2.4
-2024-09-01,05.5.2.1,Non-motorized tools,172,117.576838393548,2.4
-2024-09-01,05.5.2.2,Miscellaneous accessories,173,115.360366609703,2.5
-2024-09-01,05.6,GOODS AND SERVICES FOR ROUTINE HOUSEHOLD MAINTENANCE,174,126.2,2.9
-2024-09-01,05.6.1,Non-durable household goods,175,122.4,2.6
-2024-09-01,05.6.1.1,Household cleaning and maintenance products,176,123.39423110228,3.0
-2024-09-01,05.6.1.9,Other non-durable household goods,177,122.059297931416,2.5
-2024-09-01,05.6.2,Domestic services and household services,178,133.2,3.3
-2024-09-01,05.6.2.1,Domestic services by paid staff,179,133.246730431061,3.3
-2024-09-01,06,HEALTH,180,123.5,2.6
-2024-09-01,06.1,MEDICINES AND HEALTH PRODUCTS,181,121.0,2.5
-2024-09-01,06.1.1,Medicines,182,121.4,2.4
-2024-09-01,06.1.1.1,"Medicines, vaccines and other pharmaceutical preparations",183,121.40883130087,2.4
-2024-09-01,06.1.2,Medical products,184,107.6,1.1
-2024-09-01,06.1.2.1,Medical diagnostic products,185,120.688577720644,3.0
-2024-09-01,06.1.2.2,Prevention and protective devices,186,86.8723640830831,-1.6
-2024-09-01,06.1.2.3,Treatment devices for personal use,187,117.1080223256,1.2
-2024-09-01,06.1.3,Assistive products,188,114.4,1.0
-2024-09-01,06.1.3.1,Assistive products for vision,189,114.415452117478,0.9
-2024-09-01,06.2,OUTPATIENT CARE SERVICES,190,133.1,2.8
-2024-09-01,06.2.1,Preventive care services,191,123.7,2.1
-2024-09-01,06.2.1.9,Other preventive services,192,123.688652240202,2.1
-2024-09-01,06.2.2,Outpatient dental services,193,151.1,3.7
-2024-09-01,06.2.2.1,Dental preventive services,194,151.091742245397,3.7
-2024-09-01,06.2.3,Other outpatient care services,195,128.6,0.0
-2024-09-01,06.2.3.1,Outpatient curative and rehabilitative services,196,128.573265332362,0.0
-2024-09-01,06.3,INPATIENT CARE SERVICES,197,123.6,3.5
-2024-09-01,06.3.1,Inpatient curative and rehabilitative services,198,123.6,3.5
-2024-09-01,06.3.1.0,Inpatient curative and rehabilitative services,199,123.659485009787,3.5
-2024-09-01,06.4,OTHER HEALTH SERVICES,200,132.5,3.0
-2024-09-01,06.4.1,Diagnostic imaging services and medical laboratory services,201,132.5,3.0
-2024-09-01,06.4.1.0,Diagnostic imaging services and medical laboratory services,202,132.467604877718,3.0
-2024-09-01,07,TRANSPORT,203,127.9,-2.4
-2024-09-01,07.1,PURCHASE OF VEHICLES,204,114.0,1.1
-2024-09-01,07.1.1,Motor cars,205,103.8,0.7
-2024-09-01,07.1.1.1,New motor cars,206,103.873039410308,0.7
-2024-09-01,07.1.2,Motorcycles,207,113.6,1.3
-2024-09-01,07.1.2.0,Motorcycles,208,113.61470681298,1.3
-2024-09-01,07.1.3,Bicycles,209,132.0,0.8
-2024-09-01,07.1.3.0,Bicycles,210,132.011752816276,0.8
-2024-09-01,07.2,OPERATION OF PERSONAL TRANSPORT EQUIPMENT,211,118.5,-13.1
-2024-09-01,07.2.1,Parts and accessories for personal transport equipment,212,114.6,1.1
-2024-09-01,07.2.1.1,Tires,213,112.437101306654,0.8
-2024-09-01,07.2.1.2,Parts for personal transport equipment,214,116.592123826402,1.3
-2024-09-01,07.2.1.3,Accessories for personal transport equipment,215,100.213500280921,1.8
-2024-09-01,07.2.2,Fuels and lubricants for personal transport equipment,216,119.2,-15.2
-2024-09-01,07.2.2.1,Diesel,217,127.055291787469,-19.6
-2024-09-01,07.2.2.2,Gasoline,218,116.543956158098,-13.8
-2024-09-01,07.2.2.3,Other fuels for personal transport equipment,219,134.540019926935,9.9
-2024-09-01,07.2.2.4,Lubricants,220,115.771766372262,2.4
-2024-09-01,07.2.3,Maintenance and repair of personal transport equipment,221,114.2,1.3
-2024-09-01,07.2.3.0,Maintenance and repair of personal transport equipment,222,114.232564832422,1.4
-2024-09-01,07.2.4,Other services in respect of personal transport equipment,223,115.0,7.5
-2024-09-01,07.2.4.2,Toll facilities,224,116.440513589502,8.2
-2024-09-01,07.2.4.3,"Driving lessons, tests, licences, and road worthiness tests",225,101.755229822853,-0.2
-2024-09-01,07.3,PASSENGER TRANSPORT SERVICES,226,138.7,2.8
-2024-09-01,07.3.1,Passenger transport by railway,227,100.0,0.0
-2024-09-01,07.3.1.1,Passenger transport by train,228,100.0,0.0
-2024-09-01,07.3.1.2,Passenger transport by rapid transit and tram,229,100.0,0.0
-2024-09-01,07.3.2,Passenger transport by road,230,140.9,3.2
-2024-09-01,07.3.2.1,Passenger transport by bus and coach,231,122.697792379851,1.5
-2024-09-01,07.3.2.2,Passenger transport by taxi and hired car with driver,232,113.182737603547,1.0
-2024-09-01,07.3.2.9,Other passenger transport by road,233,145.548639911812,3.6
-2024-09-01,07.3.3,Passenger transport by air,234,113.1,-2.0
-2024-09-01,07.3.3.1,"Passenger transport by air, domestic",235,113.050520232966,-2.1
-2024-09-01,07.3.4,Passenger transport by sea and inland waterway,236,91.0,-11.4
-2024-09-01,07.3.4.0,Passenger transport by sea and inland waterway,237,90.9490128513687,-11.4
-2024-09-01,07.4,TRANSPORT SERVICES OF GOODS,238,106.1,1.0
-2024-09-01,07.4.1,Postal and courier services,239,106.1,1.0
-2024-09-01,07.4.1.1,Letter handling services,240,105.278981742696,0.0
-2024-09-01,07.4.1.2,Courier and parcel delivery services,241,107.783337197955,3.1
-2024-09-01,08,INFORMATION AND COMMUNICATION,242,103.2,0.4
-2024-09-01,08.1,INFORMATION AND COMMUNICATION EQUIPMENT,243,104.1,0.5
-2024-09-01,08.1.1,Fixed telephone equipment,244,100.0,0.0
-2024-09-01,08.1.1.0,Fixed telephone equipment,245,100.015701397111,0.0
-2024-09-01,08.1.2,Mobile telephone equipment,246,101.9,-0.1
-2024-09-01,08.1.2.0,Mobile telephone equipment,247,101.870251065859,-0.1
-2024-09-01,08.1.3,Information processing equipment,248,104.6,0.6
-2024-09-01,08.1.3.1,"Computers, laptops and tablets",249,103.666868622574,0.5
-2024-09-01,08.1.3.2,Peripheral equipment and its consumable components,250,109.780023814136,0.5
-2024-09-01,08.1.4,"Equipment for the reception, recording and reproduction of sound and vision",251,105.0,0.7
-2024-09-01,08.1.4.0,"Equipment for the reception, recording and reproduction of sound and vision",252,105.052967857206,0.7
-2024-09-01,08.1.5,Unrecorded recording media,253,104.7,0.2
-2024-09-01,08.1.5.0,Unrecorded recording media,254,104.722216694897,0.3
-2024-09-01,08.3,INFORMATION AND COMMUNICATION SERVICES,255,102.9,0.4
-2024-09-01,08.3.1,Fixed communication services,256,107.1,1.4
-2024-09-01,08.3.1.0,Fixed communication services,257,107.106904915519,1.4
-2024-09-01,08.3.2,Mobile communication services,258,102.1,0.4
-2024-09-01,08.3.2.0,Mobile communication services,259,102.066136887187,0.4
-2024-09-01,08.3.3,Internet access provision services and net storage services,260,107.3,0.2
-2024-09-01,08.3.3.0,Internet access provision services and net storage services,261,107.252620676638,0.2
-2024-09-01,08.3.5,Repair and rental of information and communication equipment,262,117.3,2.8
-2024-09-01,08.3.5.0,Repair and rental of information and communication equipment,263,117.27311640853,2.8
-2024-09-01,09,"RECREATION, SPORT AND CULTURE",264,116.7,2.8
-2024-09-01,09.1,RECREATIONAL DURABLES,265,101.3,0.0
-2024-09-01,09.1.1,Photographic and cinematographic equipment and optical instruments,266,101.3,0.0
-2024-09-01,09.1.1.1,Cameras,267,101.343491797333,0.1
-2024-09-01,09.2,OTHER RECREATIONAL GOODS,268,111.0,1.6
-2024-09-01,09.2.1,"Games, toys and hobbies",269,111.0,1.5
-2024-09-01,09.2.1.2,"Other games, toys and hobbies",270,111.024548353848,1.5
-2024-09-01,09.2.2,"Equipment for sport, camping and open-air recreation",271,109.7,1.8
-2024-09-01,09.2.2.1,Equipment for sport,272,109.779964453977,1.8
-2024-09-01,09.2.2.2,Equipment for camping and open-air recreation,273,95.1559222781075,0.0
-2024-09-01,09.3,GARDEN PRODUCTS AND PETS,274,123.4,2.7
-2024-09-01,09.3.1,"Garden products, plants and flowers",275,124.4,1.7
-2024-09-01,09.3.1.1,Garden products,276,116.072870508025,0.2
-2024-09-01,09.3.1.2,"Plants, seeds and flowers",277,133.407813344092,3.3
-2024-09-01,09.3.2,Pets and products for pets,278,122.3,3.5
-2024-09-01,09.3.2.2,Products for pets and other household animals,279,122.314322552438,3.5
-2024-09-01,09.4,RECREATIONAL SERVICES,280,95.4,0.0
-2024-09-01,09.4.6,Recreational and sporting services,281,114.5,1.1
-2024-09-01,09.4.6.2,Sporting services - practice,282,114.526643125497,1.0
-2024-09-01,09.4.7,Games of chance,283,95.1,-0.1
-2024-09-01,09.4.7.0,Games of chance,284,95.0939731906241,0.0
-2024-09-01,09.5,CULTURAL GOODS,285,108.6,1.1
-2024-09-01,09.5.1,Musical instruments,286,108.6,1.1
-2024-09-01,09.5.1.0,Musical instruments,287,108.546898888469,1.1
-2024-09-01,09.6,CULTURAL SERVICES,288,113.3,2.1
-2024-09-01,09.6.1,"Services provided by cinemas, theatres and concert venues",289,121.5,3.1
-2024-09-01,09.6.1.0,"Services provided by cinemas, theatres and concert venues",290,121.453207336462,3.0
-2024-09-01,09.6.3,Photographic services,291,150.0,0.0
-2024-09-01,09.6.3.0,Photographic services,292,150.0,0.0
-2024-09-01,09.6.9,Other cultural services,293,107.4,1.2
-2024-09-01,09.6.9.0,Other cultural services,294,107.371284381269,1.2
-2024-09-01,09.7,"NEWSPAPERS, BOOKS AND STATIONERY",295,127.2,4.7
-2024-09-01,09.7.1,Books,296,109.5,1.5
-2024-09-01,09.7.1.1,Educational and textbooks in printed or electronic copy,297,109.414464529127,1.4
-2024-09-01,09.7.1.9,Other books (SD) in printed or electronic copy,298,109.70813063992,1.7
-2024-09-01,09.7.2,Newspapers and periodicals,299,105.8,0.9
-2024-09-01,09.7.2.1,Newspapers,300,108.872146517936,1.2
-2024-09-01,09.7.2.2,Magazines and periodicals,301,101.624350787556,0.2
-2024-09-01,09.7.4,Stationery and drawing materials,302,133.7,5.7
-2024-09-01,09.7.4.0,Stationery and drawing materials,303,133.628975204475,5.6
-2024-09-01,09.8,PACKAGE HOLIDAYS,304,102.9,0.3
-2024-09-01,09.8.0,Package holidays,305,102.9,0.3
-2024-09-01,09.8.0.0,Package holidays,306,102.918781776422,0.3
-2024-09-01,10,EDUCATION SERVICES,307,120.1,4.3
-2024-09-01,10.1,EARLY CHILDHOOD AND PRIMARY EDUCATION,308,123.5,5.3
-2024-09-01,10.1.0,Early chilhood and primary education,309,123.5,5.3
-2024-09-01,10.1.0.1,Early childhood education services,310,122.077140772406,3.3
-2024-09-01,10.1.0.2,Primary education,311,124.128397465225,6.1
-2024-09-01,10.2,SECONDARY EDUCATION,312,119.6,4.6
-2024-09-01,10.2.0,Secondary education,313,119.6,4.6
-2024-09-01,10.2.0.1,Lower secondary general education services,314,122.829824943165,5.2
-2024-09-01,10.2.0.2,Lower secondary technical-vocational livelihood programs services,315,111.958464524832,3.0
-2024-09-01,10.4,TERTIARY EDUCATION,316,117.9,3.3
-2024-09-01,10.4.0,Tertiary education,317,117.9,3.3
-2024-09-01,10.4.0.0,Tertiary education,318,117.829784758935,3.2
-2024-09-01,10.5,EDUCATION NOT DEFINED BY LEVEL,319,124.5,11.2
-2024-09-01,10.5.0,Education not defined by level,320,124.5,11.2
-2024-09-01,10.5.0.2,Review classes for professional and licensure examination,321,127.928631262428,12.9
-2024-09-01,10.5.0.9,Other education not defined by level,322,103.789142542716,-0.3
-2024-09-01,11,RESTAURANTS AND ACCOMMODATION SERVICES,323,128.7,4.1
-2024-09-01,11.1,FOOD AND BEVERAGE SERVING SERVICES,324,129.0,4.1
-2024-09-01,11.1.1,"Restaurants, café and the like",325,129.0,4.1
-2024-09-01,11.1.1.1,"Restaurants, café and the like - with full service",326,129.04210502014,4.2
-2024-09-01,11.2,ACCOMMODATION SERVICES,327,108.6,2.0
-2024-09-01,11.2.0,Accommodation services,328,108.6,2.0
-2024-09-01,11.2.0.1,"Hotels, motels, inns and similar accommodation services",329,108.649537727187,2.0
-2024-09-01,12,FINANCIAL SERVICES,330,142.4,-0.6
-2024-09-01,12.2,FINANCIAL SERVICES,331,142.4,-0.6
-2024-09-01,12.2.1,Financial intermediation services indirectly measured,332,146.9,0.0
-2024-09-01,12.2.1.0,Financial intermediation services indirectly measured,333,146.898060013309,0.0
-2024-09-01,12.2.9,Other financial services,334,87.9,-12.1
-2024-09-01,12.2.9.1,Remittances fees,335,87.8743649574498,-12.1
-2024-09-01,13,"PERSONAL CARE, AND MISCELLANEOUS GOODS AND SERVICES",336,120.7,2.9
-2024-09-01,13.1,PERSONAL CARE,337,121.8,3.1
-2024-09-01,13.1.1,Electric appliances for personal care,338,102.7,2.4
-2024-09-01,13.1.1.1,Electric appliances for personal care,339,102.719926380082,2.4
-2024-09-01,13.1.2,"Other appliances, articles and products for personal care",340,118.6,2.8
-2024-09-01,13.1.2.0,"Other appliances, articles and products for personal care",341,118.52979732119,2.8
-2024-09-01,13.1.3,Hairdressing salons and personal grooming establishments,342,142.3,5.3
-2024-09-01,13.1.3.1,Hairdressing,343,138.609948335954,5.6
-2024-09-01,13.1.3.2,Personal grooming treatments,344,146.116973456823,4.9
-2024-09-01,13.2,OTHER PERSONAL EFFECTS,345,113.6,1.9
-2024-09-01,13.2.1,Jewellery and watches,346,109.4,1.6
-2024-09-01,13.2.1.1,Jewellery and watches,347,108.120527947095,1.2
-2024-09-01,13.2.1.2,"Repair and hire of jewellery, clocks and watches",348,112.332683894767,2.5
-2024-09-01,13.2.9,Other personal effects n.e.c.,349,114.7,1.9
-2024-09-01,13.2.9.1,Travel goods and articles for babies and other personal effects n.e.c.,350,114.727129573997,1.9
-2024-09-01,13.9,OTHER SERVICES,351,108.3,1.3
-2024-09-01,13.9.0,Other services,352,108.3,1.3
-2024-09-01,13.9.0.9,Other services n.e.c.,353,108.304021837361,1.3
 2024-10-01,0,ALL ITEMS,0,126.5,2.3
 2024-10-01,01,FOOD AND NON-ALCOHOLIC BEVERAGES,1,130.4,2.9
 2024-10-01,01.1,FOOD,2,131.2,3.0
@@ -7740,18 +7386,18 @@ date,code,name,order,index,yoy
 2026-06-01,09.8,PACKAGE HOLIDAYS,304,101.3,-1.5
 2026-06-01,09.8.0,Package holidays,305,101.3,-1.5
 2026-06-01,09.8.0.0,Package holidays,306,101.304260592108,-1.4
-2026-06-01,10,EDUCATION SERVICES,307,125.4,3.2
-2026-06-01,10.1,EARLY CHILDHOOD AND PRIMARY EDUCATION,308,129.3,3.2
-2026-06-01,10.1.0,Early chilhood and primary education,309,129.3,3.2
-2026-06-01,10.1.0.1,Early childhood education services,310,129.832927960875,4.9
-2026-06-01,10.1.0.2,Primary education,311,129.058802897136,2.5
-2026-06-01,10.2,SECONDARY EDUCATION,312,125.0,2.5
-2026-06-01,10.2.0,Secondary education,313,125.0,2.5
-2026-06-01,10.2.0.1,Lower secondary general education services,314,128.159811792777,2.5
+2026-06-01,10,EDUCATION SERVICES,307,125.5,3.3
+2026-06-01,10.1,EARLY CHILDHOOD AND PRIMARY EDUCATION,308,129.4,3.3
+2026-06-01,10.1.0,Early chilhood and primary education,309,129.4,3.3
+2026-06-01,10.1.0.1,Early childhood education services,310,129.904329299128,5.0
+2026-06-01,10.1.0.2,Primary education,311,129.202006897946,2.6
+2026-06-01,10.2,SECONDARY EDUCATION,312,125.1,2.6
+2026-06-01,10.2.0,Secondary education,313,125.1,2.6
+2026-06-01,10.2.0.1,Lower secondary general education services,314,128.248490319912,2.5
 2026-06-01,10.2.0.2,Lower secondary technical-vocational livelihood programs services,315,117.525988273661,2.7
-2026-06-01,10.4,TERTIARY EDUCATION,316,122.8,3.9
-2026-06-01,10.4.0,Tertiary education,317,122.8,3.9
-2026-06-01,10.4.0.0,Tertiary education,318,122.776105224017,3.8
+2026-06-01,10.4,TERTIARY EDUCATION,316,122.9,4.0
+2026-06-01,10.4.0,Tertiary education,317,122.9,4.0
+2026-06-01,10.4.0.0,Tertiary education,318,122.906018311506,3.9
 2026-06-01,10.5,EDUCATION NOT DEFINED BY LEVEL,319,134.8,2.2
 2026-06-01,10.5.0,Education not defined by level,320,134.8,2.2
 2026-06-01,10.5.0.2,Review classes for professional and licensure examination,321,139.643082835934,2.3
@@ -8095,17 +7741,17 @@ date,code,name,order,index,yoy
 2026-07-01,09.8.0,Package holidays,305,101.3,-1.5
 2026-07-01,09.8.0.0,Package holidays,306,101.310203688987,-1.4
 2026-07-01,10,EDUCATION SERVICES,307,125.7,2.0
-2026-07-01,10.1,EARLY CHILDHOOD AND PRIMARY EDUCATION,308,130.2,2.4
-2026-07-01,10.1.0,Early chilhood and primary education,309,130.2,2.4
-2026-07-01,10.1.0.1,Early childhood education services,310,130.659461921937,3.8
-2026-07-01,10.1.0.2,Primary education,311,130.065489715794,2.0
+2026-07-01,10.1,EARLY CHILDHOOD AND PRIMARY EDUCATION,308,130.4,2.6
+2026-07-01,10.1.0,Early chilhood and primary education,309,130.4,2.6
+2026-07-01,10.1.0.1,Early childhood education services,310,130.73086326019,3.8
+2026-07-01,10.1.0.2,Primary education,311,130.208693716604,2.1
 2026-07-01,10.2,SECONDARY EDUCATION,312,124.8,1.7
 2026-07-01,10.2.0,Secondary education,313,124.8,1.7
-2026-07-01,10.2.0.1,Lower secondary general education services,314,127.96771835634,1.8
+2026-07-01,10.2.0.1,Lower secondary general education services,314,128.056396883475,1.9
 2026-07-01,10.2.0.2,Lower secondary technical-vocational livelihood programs services,315,117.465926277053,1.4
-2026-07-01,10.4,TERTIARY EDUCATION,316,122.8,1.9
-2026-07-01,10.4.0,Tertiary education,317,122.8,1.9
-2026-07-01,10.4.0.0,Tertiary education,318,122.779884394794,1.9
+2026-07-01,10.4,TERTIARY EDUCATION,316,122.9,2.0
+2026-07-01,10.4.0,Tertiary education,317,122.9,2.0
+2026-07-01,10.4.0.0,Tertiary education,318,122.873652107576,2.0
 2026-07-01,10.5,EDUCATION NOT DEFINED BY LEVEL,319,134.8,2.0
 2026-07-01,10.5.0,Education not defined by level,320,134.8,2.0
 2026-07-01,10.5.0.2,Review classes for professional and licensure examination,321,139.643082835934,2.3
@@ -8448,18 +8094,18 @@ date,code,name,order,index,yoy
 2026-08-01,09.8,PACKAGE HOLIDAYS,304,101.3,-1.6
 2026-08-01,09.8.0,Package holidays,305,101.3,-1.6
 2026-08-01,09.8.0.0,Package holidays,306,101.316146785866,-1.5
-2026-08-01,10,EDUCATION SERVICES,307,125.6,1.5
-2026-08-01,10.1,EARLY CHILDHOOD AND PRIMARY EDUCATION,308,130.3,1.8
-2026-08-01,10.1.0,Early chilhood and primary education,309,130.3,1.8
-2026-08-01,10.1.0.1,Early childhood education services,310,130.693793182487,3.2
-2026-08-01,10.1.0.2,Primary education,311,130.108146744179,1.2
-2026-08-01,10.2,SECONDARY EDUCATION,312,124.8,1.1
-2026-08-01,10.2.0,Secondary education,313,124.8,1.1
-2026-08-01,10.2.0.1,Lower secondary general education services,314,128.023593059837,1.1
+2026-08-01,10,EDUCATION SERVICES,307,125.7,1.6
+2026-08-01,10.1,EARLY CHILDHOOD AND PRIMARY EDUCATION,308,130.4,1.9
+2026-08-01,10.1.0,Early chilhood and primary education,309,130.4,1.9
+2026-08-01,10.1.0.1,Early childhood education services,310,130.76519452074,3.2
+2026-08-01,10.1.0.2,Primary education,311,130.251350744989,1.3
+2026-08-01,10.2,SECONDARY EDUCATION,312,124.9,1.2
+2026-08-01,10.2.0,Secondary education,313,124.9,1.2
+2026-08-01,10.2.0.1,Lower secondary general education services,314,128.112271586972,1.2
 2026-08-01,10.2.0.2,Lower secondary technical-vocational livelihood programs services,315,117.465926277053,1.4
-2026-08-01,10.4,TERTIARY EDUCATION,316,122.5,1.7
-2026-08-01,10.4.0,Tertiary education,317,122.5,1.7
-2026-08-01,10.4.0.0,Tertiary education,318,122.495955488461,1.7
+2026-08-01,10.4,TERTIARY EDUCATION,316,122.6,1.8
+2026-08-01,10.4.0,Tertiary education,317,122.6,1.8
+2026-08-01,10.4.0.0,Tertiary education,318,122.589723201243,1.8
 2026-08-01,10.5,EDUCATION NOT DEFINED BY LEVEL,319,137.8,4.2
 2026-08-01,10.5.0,Education not defined by level,320,137.8,4.2
 2026-08-01,10.5.0.2,Review classes for professional and licensure examination,321,143.173016826388,4.8
@@ -8499,56 +8145,56 @@ date,code,name,order,index,yoy
 2026-09-01,01,FOOD AND NON-ALCOHOLIC BEVERAGES,1,139.9,6.7
 2026-09-01,01.1,FOOD,2,140.6,6.8
 2026-09-01,01.1.1,Cereals and cereal products,3,124.5,15.4
-2026-09-01,01.1.1.1,Cereals,4,119.825157921844,20.1
+2026-09-01,01.1.1.1,Cereals,4,119.828607891739,20.1
 2026-09-01,01.1.1.2,Flour of cereals,5,130.179995449362,0.9
 2026-09-01,01.1.1.3,Bread and bakery products,6,139.734310861605,4.8
 2026-09-01,01.1.1.4,Breakfast cereals,7,127.127254217134,2.3
 2026-09-01,01.1.1.5,"Macaroni, noodles, couscous and similar pasta products",8,135.951899408606,3.6
 2026-09-01,01.1.1.9,Other cereal and grain mill products,9,145.914525540457,4.9
-2026-09-01,01.1.1.12,Rice,10,117.358771171911,20.3
-2026-09-01,01.1.1.16,Corn,11,165.150028579725,17.3
+2026-09-01,01.1.1.12,Rice,10,117.364029195709,20.3
+2026-09-01,01.1.1.16,Corn,11,165.120251883397,17.3
 2026-09-01,01.1.1.20,"Flour, Bread and Other Bakery Products, Pasta Products,  and Other Cereals",12,139.268273718047,4.5
-2026-09-01,01.1.2,Meat and other parts of slaughtered land animals,13,141.4,-2.7
-2026-09-01,01.1.2.2,"Meat, fresh, chilled or frozen",14,144.165187947259,-4.2
+2026-09-01,01.1.2,Meat and other parts of slaughtered land animals,13,141.3,-2.8
+2026-09-01,01.1.2.2,"Meat, fresh, chilled or frozen",14,144.124820838075,-4.2
 2026-09-01,01.1.2.3,"Meat, dried, salted, in brine or smoked",15,138.086837911321,4.3
-2026-09-01,01.1.2.4,"Offal, blood and other parts of slaughtered animals, fresh, chilled or frozen, dried, salted, in brine or smoked",16,149.638929217424,-1.9
+2026-09-01,01.1.2.4,"Offal, blood and other parts of slaughtered animals, fresh, chilled or frozen, dried, salted, in brine or smoked",16,149.597841941671,-1.9
 2026-09-01,01.1.2.5,"Meat, offal, blood and other parts of slaughtered animals' preparations",17,131.063265032436,2.6
 2026-09-01,01.1.3,Fish and other seafood,18,153.1,7.4
-2026-09-01,01.1.3.1,"Fish, live, fresh, chilled or frozen",19,153.455095554645,7.4
+2026-09-01,01.1.3.1,"Fish, live, fresh, chilled or frozen",19,153.463300454185,7.4
 2026-09-01,01.1.3.2,"Fish, dried, salted, in brine or smoked",20,172.440415417898,7.7
 2026-09-01,01.1.3.3,Fish preparations,21,137.047602530763,5.8
-2026-09-01,01.1.3.4,"Other seafood, live, fresh, chilled or frozen",22,148.711243495553,8.0
+2026-09-01,01.1.3.4,"Other seafood, live, fresh, chilled or frozen",22,148.740949050297,8.0
 2026-09-01,01.1.3.6,Other seafood preparations,23,159.192160944273,8.9
-2026-09-01,01.1.4,"Milk, other dairy products and eggs",24,131.0,-0.8
+2026-09-01,01.1.4,"Milk, other dairy products and eggs",24,131.1,-0.7
 2026-09-01,01.1.4.1,Raw and whole milk,25,149.175187532693,1.6
 2026-09-01,01.1.4.3,Other milk and cream,26,118.365144752855,1.2
 2026-09-01,01.1.4.4,Non-animal milk,27,128.535763581533,3.8
 2026-09-01,01.1.4.5,Cheese,28,123.836103261994,1.0
 2026-09-01,01.1.4.6,Yoghurt and similar products,29,137.27474762452,7.1
 2026-09-01,01.1.4.7,Milk-based dessert and beverages,30,119.567987394424,0.1
-2026-09-01,01.1.4.8,Eggs,31,148.011955092879,-2.9
+2026-09-01,01.1.4.8,Eggs,31,148.034563331692,-2.9
 2026-09-01,01.1.5,Oils and fats,32,151.0,6.4
 2026-09-01,01.1.5.1,Vegetable oils,33,159.562394639971,6.6
 2026-09-01,01.1.5.2,Butter and other fats and oils derived from milk,34,139.494225515175,6.3
 2026-09-01,01.1.5.3,Margarine and similar preparations,35,120.336594794877,5.8
 2026-09-01,01.1.5.9,Other animal oils and fats,36,128.607688763904,0.3
 2026-09-01,01.1.6,Fruits and nuts,37,164.1,8.7
-2026-09-01,01.1.6.1,"Dates, figs and tropical fruits, fresh",38,164.724837686443,8.8
-2026-09-01,01.1.6.2,"Citrus fruits, fresh",39,177.996592009611,13.7
-2026-09-01,01.1.6.3,"Stone fruits and pome fruits, fresh",40,158.702775439281,10.9
+2026-09-01,01.1.6.1,"Dates, figs and tropical fruits, fresh",38,164.768634579791,8.9
+2026-09-01,01.1.6.2,"Citrus fruits, fresh",39,177.97745415579,13.7
+2026-09-01,01.1.6.3,"Stone fruits and pome fruits, fresh",40,158.693453931817,10.8
 2026-09-01,01.1.6.5,"Other fruits, fresh",41,162.025561470872,-10.4
 2026-09-01,01.1.6.7,"Fruit, dried and dehydrated",42,153.933984878061,5.7
-2026-09-01,01.1.6.8,"Nuts, in shell or shelled",43,154.629187390444,5.8
+2026-09-01,01.1.6.8,"Nuts, in shell or shelled",43,154.66837030588,5.8
 2026-09-01,01.1.6.9,Fruit and nuts ground and other preparations,44,143.842891067694,5.9
-2026-09-01,01.1.7,"Vegetables, tubers, plantains, cooking bananas and pulses",45,180.2,10.7
-2026-09-01,01.1.7.1,"Leafy or stem vegetables, fresh or chilled",46,196.384531755005,23.8
-2026-09-01,01.1.7.2,"Fruit-bearing vegetables, fresh or chilled",47,193.304878387953,14.8
-2026-09-01,01.1.7.3,"Green leguminous vegetables, fresh or chilled",48,178.747222654213,18.2
-2026-09-01,01.1.7.4,"Other vegetables, fresh or chilled",49,142.890267412867,-13.4
-2026-09-01,01.1.7.5,"Tubers, plantains and cooking bananas",50,190.478588372371,24.1
+2026-09-01,01.1.7,"Vegetables, tubers, plantains, cooking bananas and pulses",45,179.9,10.5
+2026-09-01,01.1.7.1,"Leafy or stem vegetables, fresh or chilled",46,196.206346512231,23.6
+2026-09-01,01.1.7.2,"Fruit-bearing vegetables, fresh or chilled",47,192.811903586268,14.5
+2026-09-01,01.1.7.3,"Green leguminous vegetables, fresh or chilled",48,178.567514996379,18.1
+2026-09-01,01.1.7.4,"Other vegetables, fresh or chilled",49,142.854614501795,-13.5
+2026-09-01,01.1.7.5,"Tubers, plantains and cooking bananas",50,190.516833451802,24.1
 2026-09-01,01.1.7.9,"Vegetables, tubers, plantains, cooking bananas and pulses ground and other preparations",51,150.860860718403,4.1
 2026-09-01,01.1.8,"Sugar, confectionery and desserts",52,142.5,0.3
-2026-09-01,01.1.8.1,Cane and beet sugar,53,157.154634530336,-2.0
+2026-09-01,01.1.8.1,Cane and beet sugar,53,157.163400153794,-2.0
 2026-09-01,01.1.8.3,"Jams, fruit jellies, marmalades, fruit purée and pastes, honey",54,137.271600951058,4.2
 2026-09-01,01.1.8.4,"Nut purée, nut butter and nut pastes",55,146.053557971404,3.1
 2026-09-01,01.1.8.5,"Chocolate, cocoa, and cocoa-based food products",56,142.82290178154,8.0
@@ -8556,8 +8202,8 @@ date,code,name,order,index,yoy
 2026-09-01,01.1.8.9,Other sugar confectionery and desserts n.e.c.,58,137.438670536519,3.8
 2026-09-01,01.1.9,Ready-made food and other food products n.e.c.,59,140.8,3.4
 2026-09-01,01.1.9.2,Baby food,60,130.205160673122,3.4
-2026-09-01,01.1.9.3,"Salt, condiments and sauces",61,142.404042926442,3.5
-2026-09-01,01.1.9.4,"Spices, culinary herbs and seeds",62,155.40884500101,2.8
+2026-09-01,01.1.9.3,"Salt, condiments and sauces",61,142.406728412607,3.5
+2026-09-01,01.1.9.4,"Spices, culinary herbs and seeds",62,155.409077678132,2.8
 2026-09-01,01.1.9.9,Other food products n.e.c.,63,141.861154487779,4.5
 2026-09-01,01.2,NON-ALCOHOLIC BEVERAGES,64,130.5,3.6
 2026-09-01,01.2.1,Fruit and vegetable juices,65,142.1,2.7
@@ -8565,7 +8211,7 @@ date,code,name,order,index,yoy
 2026-09-01,01.2.2,Coffee and coffee substitutes,67,134.5,5.7
 2026-09-01,01.2.2.0,Coffee and coffee substitutes,68,134.554740680744,5.7
 2026-09-01,01.2.3,"Tea, maté and other plant products for infusion",69,136.3,3.6
-2026-09-01,01.2.3.0,"Tea, maté and other plant products for infusion",70,136.258289412607,3.6
+2026-09-01,01.2.3.0,"Tea, maté and other plant products for infusion",70,136.264991575315,3.6
 2026-09-01,01.2.4,Cocoa drinks,71,134.1,2.1
 2026-09-01,01.2.4.0,Cocoa drinks,72,134.111234822785,2.1
 2026-09-01,01.2.5,Water,73,113.2,1.2
@@ -8615,9 +8261,9 @@ date,code,name,order,index,yoy
 2026-09-01,03.2.2,"Cleaning, repair, and hire of footwear",117,140.3,7.3
 2026-09-01,03.2.2.0,"Cleaning, repair, and hire of footwear",118,140.299903873576,7.3
 2026-09-01,04,"HOUSING, WATER, ELECTRICITY, GAS, AND OTHER FUELS",119,134.2,8.4
-2026-09-01,04.1,ACTUAL RENTALS FOR HOUSING,120,126.4,3.9
-2026-09-01,04.1.1,Actual rentals paid by tenants for main residence,121,126.4,3.9
-2026-09-01,04.1.1.0,Actual rentals paid by tenants for main residence,122,126.434964934389,4.0
+2026-09-01,04.1,ACTUAL RENTALS FOR HOUSING,120,126.5,4.0
+2026-09-01,04.1.1,Actual rentals paid by tenants for main residence,121,126.5,4.0
+2026-09-01,04.1.1.0,Actual rentals paid by tenants for main residence,122,126.504236893659,4.0
 2026-09-01,04.3,"MAINTENANCE, REPAIR AND SECURITY OF THE DWELLING",123,132.0,6.4
 2026-09-01,04.3.1,Security equipment and materials for the maintenance and repair of the dwelling,124,127.3,5.5
 2026-09-01,04.3.1.1,Materials for the maintenance and repair of the dwelling,125,127.309448018606,5.5
@@ -8628,7 +8274,7 @@ date,code,name,order,index,yoy
 2026-09-01,04.4.1.1,Water supply through network systems,130,141.711315720038,6.6
 2026-09-01,04.5,"ELECTRICITY, GAS AND OTHER FUELS",131,147.8,17.0
 2026-09-01,04.5.1,Electricity,132,136.2,14.6
-2026-09-01,04.5.1.0,Electricity,133,136.184928941271,14.6
+2026-09-01,04.5.1.0,Electricity,133,136.235115694419,14.6
 2026-09-01,04.5.2,Gas,134,183.4,30.0
 2026-09-01,04.5.2.2,Liquefied hydrocarbons,135,183.435867064177,30.0
 2026-09-01,04.5.3,Liquid fuels,136,221.6,47.2
@@ -8728,7 +8374,7 @@ date,code,name,order,index,yoy
 2026-09-01,07.3.2,Passenger transport by road,230,148.4,4.9
 2026-09-01,07.3.2.1,Passenger transport by bus and coach,231,125.317215899509,1.9
 2026-09-01,07.3.2.2,Passenger transport by taxi and hired car with driver,232,114.645517861652,1.3
-2026-09-01,07.3.2.9,Other passenger transport by road,233,154.119662135631,5.4
+2026-09-01,07.3.2.9,Other passenger transport by road,233,154.110435637227,5.4
 2026-09-01,07.3.3,Passenger transport by air,234,129.9,22.7
 2026-09-01,07.3.3.1,"Passenger transport by air, domestic",235,129.981358959176,22.7
 2026-09-01,07.3.4,Passenger transport by sea and inland waterway,236,165.2,18.5
@@ -8802,18 +8448,18 @@ date,code,name,order,index,yoy
 2026-09-01,09.8,PACKAGE HOLIDAYS,304,101.3,-1.6
 2026-09-01,09.8.0,Package holidays,305,101.3,-1.6
 2026-09-01,09.8.0.0,Package holidays,306,101.316146785866,-1.5
-2026-09-01,10,EDUCATION SERVICES,307,125.8,1.7
-2026-09-01,10.1,EARLY CHILDHOOD AND PRIMARY EDUCATION,308,130.3,1.8
-2026-09-01,10.1.0,Early chilhood and primary education,309,130.3,1.8
-2026-09-01,10.1.0.1,Early childhood education services,310,130.713153573228,3.2
-2026-09-01,10.1.0.2,Primary education,311,130.154797218146,1.3
-2026-09-01,10.2,SECONDARY EDUCATION,312,124.8,1.1
-2026-09-01,10.2.0,Secondary education,313,124.8,1.1
-2026-09-01,10.2.0.1,Lower secondary general education services,314,128.036733665389,1.1
+2026-09-01,10,EDUCATION SERVICES,307,125.9,1.8
+2026-09-01,10.1,EARLY CHILDHOOD AND PRIMARY EDUCATION,308,130.5,2.0
+2026-09-01,10.1.0,Early chilhood and primary education,309,130.5,2.0
+2026-09-01,10.1.0.1,Early childhood education services,310,130.784559272401,3.3
+2026-09-01,10.1.0.2,Primary education,311,130.298004418013,1.4
+2026-09-01,10.2,SECONDARY EDUCATION,312,124.9,1.2
+2026-09-01,10.2.0,Secondary education,313,124.9,1.2
+2026-09-01,10.2.0.1,Lower secondary general education services,314,128.125412192524,1.2
 2026-09-01,10.2.0.2,Lower secondary technical-vocational livelihood programs services,315,117.415874480103,1.4
-2026-09-01,10.4,TERTIARY EDUCATION,316,123.1,2.2
-2026-09-01,10.4.0,Tertiary education,317,123.1,2.2
-2026-09-01,10.4.0.0,Tertiary education,318,123.078929316405,2.2
+2026-09-01,10.4,TERTIARY EDUCATION,316,123.2,2.3
+2026-09-01,10.4.0,Tertiary education,317,123.2,2.3
+2026-09-01,10.4.0.0,Tertiary education,318,123.172697051918,2.3
 2026-09-01,10.5,EDUCATION NOT DEFINED BY LEVEL,319,137.8,4.2
 2026-09-01,10.5.0,Education not defined by level,320,137.8,4.2
 2026-09-01,10.5.0.2,Review classes for professional and licensure examination,321,143.173016826388,4.8
@@ -8841,11 +8487,365 @@ date,code,name,order,index,yoy
 2026-09-01,13.1.3.1,Hairdressing,343,163.45579050523,11.3
 2026-09-01,13.1.3.2,Personal grooming treatments,344,180.375033206166,16.2
 2026-09-01,13.2,OTHER PERSONAL EFFECTS,345,117.5,2.5
-2026-09-01,13.2.1,Jewellery and watches,346,114.2,3.4
-2026-09-01,13.2.1.1,Jewellery and watches,347,112.547965217603,3.2
+2026-09-01,13.2.1,Jewellery and watches,346,114.0,3.3
+2026-09-01,13.2.1.1,Jewellery and watches,347,112.36051514163,3.0
 2026-09-01,13.2.1.2,"Repair and hire of jewellery, clocks and watches",348,117.694359836693,3.7
 2026-09-01,13.2.9,Other personal effects n.e.c.,349,118.5,2.3
 2026-09-01,13.2.9.1,Travel goods and articles for babies and other personal effects n.e.c.,350,118.473449146143,2.3
 2026-09-01,13.9,OTHER SERVICES,351,112.3,2.1
 2026-09-01,13.9.0,Other services,352,112.3,2.1
 2026-09-01,13.9.0.9,Other services n.e.c.,353,112.315441260652,2.1
+2026-10-01,0,ALL ITEMS,0,138.6,7.8
+2026-10-01,01,FOOD AND NON-ALCOHOLIC BEVERAGES,1,139.1,6.1
+2026-10-01,01.1,FOOD,2,139.9,6.4
+2026-10-01,01.1.1,Cereals and cereal products,3,124.4,15.9
+2026-10-01,01.1.1.1,Cereals,4,119.460512987558,20.6
+2026-10-01,01.1.1.2,Flour of cereals,5,130.489499989293,1.2
+2026-10-01,01.1.1.3,Bread and bakery products,6,140.377672258722,5.1
+2026-10-01,01.1.1.4,Breakfast cereals,7,127.126930041551,2.2
+2026-10-01,01.1.1.5,"Macaroni, noodles, couscous and similar pasta products",8,136.392384037075,3.9
+2026-10-01,01.1.1.9,Other cereal and grain mill products,9,146.384117699839,5.2
+2026-10-01,01.1.1.12,Rice,10,117.049658722165,20.7
+2026-10-01,01.1.1.16,Corn,11,163.76486134529,19.3
+2026-10-01,01.1.1.20,"Flour, Bread and Other Bakery Products, Pasta Products,  and Other Cereals",12,139.830696978168,4.7
+2026-10-01,01.1.2,Meat and other parts of slaughtered land animals,13,139.7,-2.6
+2026-10-01,01.1.2.2,"Meat, fresh, chilled or frozen",14,142.081592760709,-4.1
+2026-10-01,01.1.2.3,"Meat, dried, salted, in brine or smoked",15,139.783570177429,5.5
+2026-10-01,01.1.2.4,"Offal, blood and other parts of slaughtered animals, fresh, chilled or frozen, dried, salted, in brine or smoked",16,148.401726091487,-1.8
+2026-10-01,01.1.2.5,"Meat, offal, blood and other parts of slaughtered animals' preparations",17,131.154054057533,2.6
+2026-10-01,01.1.3,Fish and other seafood,18,151.1,5.0
+2026-10-01,01.1.3.1,"Fish, live, fresh, chilled or frozen",19,150.801973804954,4.4
+2026-10-01,01.1.3.2,"Fish, dried, salted, in brine or smoked",20,172.490200509741,7.1
+2026-10-01,01.1.3.3,Fish preparations,21,137.172072433784,5.8
+2026-10-01,01.1.3.4,"Other seafood, live, fresh, chilled or frozen",22,148.585399751422,7.3
+2026-10-01,01.1.3.6,Other seafood preparations,23,160.076809693666,9.4
+2026-10-01,01.1.4,"Milk, other dairy products and eggs",24,131.6,-0.2
+2026-10-01,01.1.4.1,Raw and whole milk,25,150.042690357653,1.9
+2026-10-01,01.1.4.3,Other milk and cream,26,118.662209807191,1.4
+2026-10-01,01.1.4.4,Non-animal milk,27,129.648623937512,4.6
+2026-10-01,01.1.4.5,Cheese,28,124.021003781149,1.1
+2026-10-01,01.1.4.6,Yoghurt and similar products,29,137.764085786638,7.4
+2026-10-01,01.1.4.7,Milk-based dessert and beverages,30,119.677929337183,0.2
+2026-10-01,01.1.4.8,Eggs,31,148.84771390136,-2.1
+2026-10-01,01.1.5,Oils and fats,32,151.7,6.4
+2026-10-01,01.1.5.1,Vegetable oils,33,160.353706477514,6.7
+2026-10-01,01.1.5.2,Butter and other fats and oils derived from milk,34,140.157255753783,6.3
+2026-10-01,01.1.5.3,Margarine and similar preparations,35,120.469602753244,5.2
+2026-10-01,01.1.5.9,Other animal oils and fats,36,129.890959426416,2.0
+2026-10-01,01.1.6,Fruits and nuts,37,166.6,10.8
+2026-10-01,01.1.6.1,"Dates, figs and tropical fruits, fresh",38,167.568551605738,11.0
+2026-10-01,01.1.6.2,"Citrus fruits, fresh",39,176.246950928538,16.8
+2026-10-01,01.1.6.3,"Stone fruits and pome fruits, fresh",40,158.930151896954,11.0
+2026-10-01,01.1.6.5,"Other fruits, fresh",41,161.803405531667,-9.5
+2026-10-01,01.1.6.7,"Fruit, dried and dehydrated",42,154.747151096533,6.2
+2026-10-01,01.1.6.8,"Nuts, in shell or shelled",43,154.017464205253,4.6
+2026-10-01,01.1.6.9,Fruit and nuts ground and other preparations,44,144.580171275027,6.2
+2026-10-01,01.1.7,"Vegetables, tubers, plantains, cooking bananas and pulses",45,175.3,5.7
+2026-10-01,01.1.7.1,"Leafy or stem vegetables, fresh or chilled",46,193.782512406239,23.6
+2026-10-01,01.1.7.2,"Fruit-bearing vegetables, fresh or chilled",47,178.912779056196,0.9
+2026-10-01,01.1.7.3,"Green leguminous vegetables, fresh or chilled",48,174.347765040233,16.1
+2026-10-01,01.1.7.4,"Other vegetables, fresh or chilled",49,146.397648992858,-9.7
+2026-10-01,01.1.7.5,"Tubers, plantains and cooking bananas",50,191.044984178925,15.8
+2026-10-01,01.1.7.9,"Vegetables, tubers, plantains, cooking bananas and pulses ground and other preparations",51,151.439779265486,4.4
+2026-10-01,01.1.8,"Sugar, confectionery and desserts",52,142.5,0.3
+2026-10-01,01.1.8.1,Cane and beet sugar,53,156.907604926296,-1.9
+2026-10-01,01.1.8.3,"Jams, fruit jellies, marmalades, fruit purée and pastes, honey",54,137.473491883532,4.4
+2026-10-01,01.1.8.4,"Nut purée, nut butter and nut pastes",55,146.288227695759,3.1
+2026-10-01,01.1.8.5,"Chocolate, cocoa, and cocoa-based food products",56,143.558658007293,8.5
+2026-10-01,01.1.8.6,"Ice, ice cream and sorbet",57,121.691720299564,1.0
+2026-10-01,01.1.8.9,Other sugar confectionery and desserts n.e.c.,58,137.869543815467,3.9
+2026-10-01,01.1.9,Ready-made food and other food products n.e.c.,59,141.3,3.9
+2026-10-01,01.1.9.2,Baby food,60,130.81918590851,3.8
+2026-10-01,01.1.9.3,"Salt, condiments and sauces",61,142.826185510973,3.7
+2026-10-01,01.1.9.4,"Spices, culinary herbs and seeds",62,155.766137679701,4.0
+2026-10-01,01.1.9.9,Other food products n.e.c.,63,142.226710382456,4.4
+2026-10-01,01.2,NON-ALCOHOLIC BEVERAGES,64,131.0,3.7
+2026-10-01,01.2.1,Fruit and vegetable juices,65,142.6,2.8
+2026-10-01,01.2.1.0,Fruit and vegetable juices,66,142.586108515912,2.8
+2026-10-01,01.2.2,Coffee and coffee substitutes,67,135.1,5.9
+2026-10-01,01.2.2.0,Coffee and coffee substitutes,68,135.059180747183,5.8
+2026-10-01,01.2.3,"Tea, maté and other plant products for infusion",69,136.7,3.6
+2026-10-01,01.2.3.0,"Tea, maté and other plant products for infusion",70,136.707253244982,3.7
+2026-10-01,01.2.4,Cocoa drinks,71,135.0,2.7
+2026-10-01,01.2.4.0,Cocoa drinks,72,135.013808776384,2.7
+2026-10-01,01.2.5,Water,73,113.2,0.9
+2026-10-01,01.2.5.0,Water,74,113.220054693227,0.9
+2026-10-01,01.2.6,Soft drinks,75,132.7,3.0
+2026-10-01,01.2.6.0,Soft drinks,76,132.640655612772,2.9
+2026-10-01,01.2.9,Other non-alcoholic beverages,77,138.1,2.2
+2026-10-01,01.2.9.0,Other non-alcoholic beverages,78,138.103538162167,2.3
+2026-10-01,02,ALCOHOLIC BEVERAGES AND TOBACCO,79,197.3,6.6
+2026-10-01,02.1,ALCOHOLIC BEVERAGES,80,154.1,4.6
+2026-10-01,02.1.1,Spirits and liquors,81,157.5,4.4
+2026-10-01,02.1.1.0,Spirits and liquors,82,157.463208453876,4.4
+2026-10-01,02.1.2,Wine,83,140.1,3.5
+2026-10-01,02.1.2.1,Wine from grapes,84,132.361347713525,4.1
+2026-10-01,02.1.2.2,Wine from other sources,85,141.968978275836,3.3
+2026-10-01,02.1.3,Beer,86,151.6,5.1
+2026-10-01,02.1.3.0,Beer,87,151.643318563363,5.1
+2026-10-01,02.3,TOBACCO,88,227.1,7.6
+2026-10-01,02.3.0,Tobacco,89,227.1,7.6
+2026-10-01,02.3.0.1,Cigarettes,90,228.116433982436,7.7
+2026-10-01,02.3.0.2,Cigars,91,214.082841988078,1.7
+2026-10-01,02.3.0.9,Other tobacco products,92,157.942797931826,4.3
+2026-10-01,02.4,OTHER VEGETABLE-BASED TOBACCO PRODUCTS,93,157.1,6.7
+2026-10-01,02.4.0,Other vegetable-based tobacco products,94,157.1,6.7
+2026-10-01,02.4.0.0,Other vegetable-based tobacco products,95,157.154347855079,6.6
+2026-10-01,02.900,NON-FOOD,96,136.2,9.0
+2026-10-01,03,CLOTHING AND FOOTWEAR,97,125.4,3.4
+2026-10-01,03.1,CLOTHING,98,125.6,3.5
+2026-10-01,03.1.1,Clothing materials,99,116.6,1.7
+2026-10-01,03.1.1.0,Clothing materials,100,116.619340126518,1.7
+2026-10-01,03.1.2,Garments,101,125.1,3.4
+2026-10-01,03.1.2.1,Garments for men or boys,102,124.821054299395,3.2
+2026-10-01,03.1.2.2,Garments for women or girls,103,125.33501624433,3.6
+2026-10-01,03.1.2.3,Garments for infants (0 to under 2 years),104,128.083904048902,4.1
+2026-10-01,03.1.2.4,School uniforms,105,141.017236560588,6.8
+2026-10-01,03.1.3,Other articles of clothing and clothing accessories,106,124.3,3.0
+2026-10-01,03.1.3.1,Other articles of clothing,107,124.068419165816,3.2
+2026-10-01,03.1.3.2,Clothing accessories,108,125.852588025165,1.4
+2026-10-01,03.1.4,"Cleaning, repair, tailoring and hire of clothing",109,144.2,4.6
+2026-10-01,03.1.4.1,Cleaning of clothing,110,139.971172923992,4.7
+2026-10-01,03.1.4.2,"Repair, tailoring and hire of clothing",111,155.7878554519,4.4
+2026-10-01,03.2,FOOTWEAR,112,124.8,3.1
+2026-10-01,03.2.1,Shoes and other footwear,113,124.8,3.1
+2026-10-01,03.2.1.1,Footwear for men,114,124.248374196742,2.7
+2026-10-01,03.2.1.2,Footwear for women,115,123.669412671376,3.3
+2026-10-01,03.2.1.3,Footwear for infants and children,116,126.534898442702,3.4
+2026-10-01,03.2.2,"Cleaning, repair, and hire of footwear",117,141.8,8.0
+2026-10-01,03.2.2.0,"Cleaning, repair, and hire of footwear",118,141.727952115708,8.0
+2026-10-01,04,"HOUSING, WATER, ELECTRICITY, GAS, AND OTHER FUELS",119,135.8,9.3
+2026-10-01,04.1,ACTUAL RENTALS FOR HOUSING,120,126.7,4.2
+2026-10-01,04.1.1,Actual rentals paid by tenants for main residence,121,126.7,4.2
+2026-10-01,04.1.1.0,Actual rentals paid by tenants for main residence,122,126.737747700957,4.2
+2026-10-01,04.3,"MAINTENANCE, REPAIR AND SECURITY OF THE DWELLING",123,132.6,6.6
+2026-10-01,04.3.1,Security equipment and materials for the maintenance and repair of the dwelling,124,127.9,5.8
+2026-10-01,04.3.1.1,Materials for the maintenance and repair of the dwelling,125,127.881144010191,5.8
+2026-10-01,04.3.2,"Services for the maintenance, repair and security of the dwelling",126,149.0,9.0
+2026-10-01,04.3.2.0,"Services for the maintenance, repair and security of the dwelling",127,148.942548482355,8.9
+2026-10-01,04.4,WATER SUPPLY AND MISCELLANEOUS SERVICES RELATING TO THE DWELLING,128,141.9,6.3
+2026-10-01,04.4.1,Water supply,129,141.9,6.3
+2026-10-01,04.4.1.1,Water supply through network systems,130,141.877021978017,6.3
+2026-10-01,04.5,"ELECTRICITY, GAS AND OTHER FUELS",131,152.5,19.7
+2026-10-01,04.5.1,Electricity,132,138.0,14.5
+2026-10-01,04.5.1.0,Electricity,133,137.982242239864,14.5
+2026-10-01,04.5.2,Gas,134,201.1,43.4
+2026-10-01,04.5.2.2,Liquefied hydrocarbons,135,201.060751460189,43.4
+2026-10-01,04.5.3,Liquid fuels,136,228.8,50.0
+2026-10-01,04.5.3.0,Liquid fuels,137,228.754617833429,50.0
+2026-10-01,04.5.4,Solid fuels,138,153.8,7.2
+2026-10-01,04.5.4.2,"Wood fuel, including pellets and briquettes",139,148.615551629902,5.1
+2026-10-01,04.5.4.3,Charcoal,140,167.544842964172,12.2
+2026-10-01,05,"FURNISHINGS, HOUSEHOLD EQUIPMENT AND ROUTINE HOUSEHOLD MAINTENANCE",141,131.4,5.0
+2026-10-01,05.1,"FURNITURE, FURNISHINGS, AND LOOSE CARPETS",142,116.9,2.6
+2026-10-01,05.1.1,"Furniture, furnishings and loose carpets",143,116.9,2.6
+2026-10-01,05.1.1.1,Household furniture,144,116.480062595689,2.5
+2026-10-01,05.1.1.3,Lighting equipment,145,123.46081227767,4.0
+2026-10-01,05.1.1.4,"Furnishings, loose carpets and rugs",146,118.678006050975,2.1
+2026-10-01,05.2,HOUSEHOLD TEXTILES,147,116.7,2.5
+2026-10-01,05.2.1,Household textiles,148,116.7,2.5
+2026-10-01,05.2.1.1,Furnishing fabrics and curtains,149,116.952996278934,2.5
+2026-10-01,05.2.1.2,Bed linen and bedding,150,116.235514257034,2.4
+2026-10-01,05.2.1.3,Table linen and bathroom linen,151,119.617000842638,2.1
+2026-10-01,05.2.1.9,Other household textiles,152,118.442564495216,3.3
+2026-10-01,05.3,HOUSEHOLD APPLIANCES,153,117.2,2.4
+2026-10-01,05.3.1,"Major household appliances, whether electric or not",154,115.3,2.0
+2026-10-01,05.3.1.1,Major kitchen appliances,155,117.210042757959,2.1
+2026-10-01,05.3.1.2,Major laundry appliances,156,112.845246414393,2.2
+2026-10-01,05.3.1.3,"Heaters, air conditioners",157,113.202506927251,1.9
+2026-10-01,05.3.2,Small household appliances,158,126.7,3.9
+2026-10-01,05.3.2.1,Small appliances for cooking and processing of food,159,126.072425082204,3.4
+2026-10-01,05.3.2.9,Other small household appliances,160,126.926629533052,4.2
+2026-10-01,05.3.3,"Repair, installation and hire of household appliances",161,118.1,4.2
+2026-10-01,05.3.3.0,"Repair, installation and hire of household appliances",162,118.119357760457,4.2
+2026-10-01,05.4,"GLASSWARE, TABLEWARE AND HOUSEHOLD UTENSILS",163,126.1,3.7
+2026-10-01,05.4.0,"Glassware, tableware and household utensils",164,126.1,3.7
+2026-10-01,05.4.0.1,"Glassware, crystal-ware, ceramic ware and chinaware",165,130.227476247554,4.4
+2026-10-01,05.4.0.2,"Cutlery, flatware and silverware",166,120.076539413539,3.3
+2026-10-01,05.4.0.3,Kitchen utensils and articles,167,121.528494237093,2.6
+2026-10-01,05.5,TOOLS AND EQUIPMENT FOR HOUSE AND GARDEN,168,117.0,3.0
+2026-10-01,05.5.1,Motorized tools and equipment,169,103.1,2.8
+2026-10-01,05.5.1.0,Motorized tools and equipment,170,103.154488316968,2.9
+2026-10-01,05.5.2,Non-motorized tools and miscellaneous accessories,171,121.4,3.1
+2026-10-01,05.5.2.1,Non-motorized tools,172,123.720835185838,3.2
+2026-10-01,05.5.2.2,Miscellaneous accessories,173,119.62478423439,3.0
+2026-10-01,05.6,GOODS AND SERVICES FOR ROUTINE HOUSEHOLD MAINTENANCE,174,137.9,6.0
+2026-10-01,05.6.1,Non-durable household goods,175,129.0,3.2
+2026-10-01,05.6.1.1,Household cleaning and maintenance products,176,132.690348479951,4.5
+2026-10-01,05.6.1.9,Other non-durable household goods,177,127.749825224989,2.8
+2026-10-01,05.6.2,Domestic services and household services,178,154.5,10.7
+2026-10-01,05.6.2.1,Domestic services by paid staff,179,154.525051016076,10.7
+2026-10-01,06,HEALTH,180,134.6,5.9
+2026-10-01,06.1,MEDICINES AND HEALTH PRODUCTS,181,132.3,6.3
+2026-10-01,06.1.1,Medicines,182,133.1,6.4
+2026-10-01,06.1.1.1,"Medicines, vaccines and other pharmaceutical preparations",183,133.126181289412,6.5
+2026-10-01,06.1.2,Medical products,184,112.2,2.5
+2026-10-01,06.1.2.1,Medical diagnostic products,185,124.946099977484,2.0
+2026-10-01,06.1.2.2,Prevention and protective devices,186,87.183385034021,0.0
+2026-10-01,06.1.2.3,Treatment devices for personal use,187,126.508062775837,4.5
+2026-10-01,06.1.3,Assistive products,188,117.3,0.6
+2026-10-01,06.1.3.1,Assistive products for vision,189,117.260563016802,0.6
+2026-10-01,06.2,OUTPATIENT CARE SERVICES,190,146.3,6.2
+2026-10-01,06.2.1,Preventive care services,191,133.5,4.7
+2026-10-01,06.2.1.9,Other preventive services,192,133.4979061024,4.8
+2026-10-01,06.2.2,Outpatient dental services,193,170.9,8.5
+2026-10-01,06.2.2.1,Dental preventive services,194,170.87951422456,8.5
+2026-10-01,06.2.3,Other outpatient care services,195,145.7,0.0
+2026-10-01,06.2.3.1,Outpatient curative and rehabilitative services,196,145.716367376677,0.0
+2026-10-01,06.3,INPATIENT CARE SERVICES,197,132.0,4.2
+2026-10-01,06.3.1,Inpatient curative and rehabilitative services,198,132.0,4.2
+2026-10-01,06.3.1.0,Inpatient curative and rehabilitative services,199,132.005811006432,4.2
+2026-10-01,06.4,OTHER HEALTH SERVICES,200,140.9,4.7
+2026-10-01,06.4.1,Diagnostic imaging services and medical laboratory services,201,140.9,4.7
+2026-10-01,06.4.1.0,Diagnostic imaging services and medical laboratory services,202,140.8363810225,4.6
+2026-10-01,07,TRANSPORT,203,155.2,20.1
+2026-10-01,07.1,PURCHASE OF VEHICLES,204,116.4,1.2
+2026-10-01,07.1.1,Motor cars,205,106.2,0.4
+2026-10-01,07.1.1.1,New motor cars,206,106.12105278927,0.3
+2026-10-01,07.1.2,Motorcycles,207,116.6,1.7
+2026-10-01,07.1.2.0,Motorcycles,208,116.605415988819,1.7
+2026-10-01,07.1.3,Bicycles,209,132.6,0.8
+2026-10-01,07.1.3.0,Bicycles,210,132.555566754771,0.7
+2026-10-01,07.2,OPERATION OF PERSONAL TRANSPORT EQUIPMENT,211,175.4,46.5
+2026-10-01,07.2.1,Parts and accessories for personal transport equipment,212,117.5,1.5
+2026-10-01,07.2.1.1,Tires,213,114.581451743697,1.5
+2026-10-01,07.2.1.2,Parts for personal transport equipment,214,120.32773707702,1.5
+2026-10-01,07.2.1.3,Accessories for personal transport equipment,215,100.801027369773,1.3
+2026-10-01,07.2.2,Fuels and lubricants for personal transport equipment,216,184.8,53.7
+2026-10-01,07.2.2.1,Diesel,217,219.293554877267,62.4
+2026-10-01,07.2.2.2,Gasoline,218,173.904578461539,51.1
+2026-10-01,07.2.2.3,Other fuels for personal transport equipment,219,194.553304549984,50.2
+2026-10-01,07.2.2.4,Lubricants,220,125.308862399323,6.3
+2026-10-01,07.2.3,Maintenance and repair of personal transport equipment,221,124.7,4.3
+2026-10-01,07.2.3.0,Maintenance and repair of personal transport equipment,222,124.676704669698,4.2
+2026-10-01,07.2.4,Other services in respect of personal transport equipment,223,130.0,10.9
+2026-10-01,07.2.4.2,Toll facilities,224,132.266623378725,11.4
+2026-10-01,07.2.4.3,"Driving lessons, tests, licences, and road worthiness tests",225,109.167715783845,6.1
+2026-10-01,07.3,PASSENGER TRANSPORT SERVICES,226,157.0,11.8
+2026-10-01,07.3.1,Passenger transport by railway,227,74.8,-30.5
+2026-10-01,07.3.1.1,Passenger transport by train,228,100.0,0.0
+2026-10-01,07.3.1.2,Passenger transport by rapid transit and tram,229,49.6138938356834,-57.0
+2026-10-01,07.3.2,Passenger transport by road,230,157.6,11.4
+2026-10-01,07.3.2.1,Passenger transport by bus and coach,231,135.495697563584,10.2
+2026-10-01,07.3.2.2,Passenger transport by taxi and hired car with driver,232,122.897476134881,8.6
+2026-10-01,07.3.2.9,Other passenger transport by road,233,163.236601525789,11.6
+2026-10-01,07.3.3,Passenger transport by air,234,125.2,9.7
+2026-10-01,07.3.3.1,"Passenger transport by air, domestic",235,125.18176505239,9.7
+2026-10-01,07.3.4,Passenger transport by sea and inland waterway,236,189.2,44.0
+2026-10-01,07.3.4.0,Passenger transport by sea and inland waterway,237,189.259862393317,44.0
+2026-10-01,07.4,TRANSPORT SERVICES OF GOODS,238,106.3,0.3
+2026-10-01,07.4.1,Postal and courier services,239,106.3,0.3
+2026-10-01,07.4.1.1,Letter handling services,240,105.278981742696,0.0
+2026-10-01,07.4.1.2,Courier and parcel delivery services,241,108.453517692173,0.8
+2026-10-01,08,INFORMATION AND COMMUNICATION,242,104.8,0.9
+2026-10-01,08.1,INFORMATION AND COMMUNICATION EQUIPMENT,243,105.5,1.0
+2026-10-01,08.1.1,Fixed telephone equipment,244,100.0,0.0
+2026-10-01,08.1.1.0,Fixed telephone equipment,245,100.015701397111,0.0
+2026-10-01,08.1.2,Mobile telephone equipment,246,102.5,0.5
+2026-10-01,08.1.2.0,Mobile telephone equipment,247,102.524965132659,0.5
+2026-10-01,08.1.3,Information processing equipment,248,106.2,1.7
+2026-10-01,08.1.3.1,"Computers, laptops and tablets",249,104.63752349993,1.2
+2026-10-01,08.1.3.2,Peripheral equipment and its consumable components,250,115.127880427377,4.3
+2026-10-01,08.1.4,"Equipment for the reception, recording and reproduction of sound and vision",251,106.8,0.9
+2026-10-01,08.1.4.0,"Equipment for the reception, recording and reproduction of sound and vision",252,106.755813454278,0.9
+2026-10-01,08.1.5,Unrecorded recording media,253,108.2,1.8
+2026-10-01,08.1.5.0,Unrecorded recording media,254,108.133420011542,1.7
+2026-10-01,08.3,INFORMATION AND COMMUNICATION SERVICES,255,104.5,1.0
+2026-10-01,08.3.1,Fixed communication services,256,109.5,1.8
+2026-10-01,08.3.1.0,Fixed communication services,257,109.532851843907,1.8
+2026-10-01,08.3.2,Mobile communication services,258,103.3,0.7
+2026-10-01,08.3.2.0,Mobile communication services,259,103.323397030746,0.7
+2026-10-01,08.3.3,Internet access provision services and net storage services,260,111.0,2.1
+2026-10-01,08.3.3.0,Internet access provision services and net storage services,261,110.943235362622,2.1
+2026-10-01,08.3.5,Repair and rental of information and communication equipment,262,131.2,10.1
+2026-10-01,08.3.5.0,Repair and rental of information and communication equipment,263,131.252913523594,10.1
+2026-10-01,09,"RECREATION, SPORT AND CULTURE",264,125.5,5.4
+2026-10-01,09.1,RECREATIONAL DURABLES,265,109.3,7.8
+2026-10-01,09.1.1,Photographic and cinematographic equipment and optical instruments,266,109.3,7.8
+2026-10-01,09.1.1.1,Cameras,267,109.251389235525,7.7
+2026-10-01,09.2,OTHER RECREATIONAL GOODS,268,116.9,3.6
+2026-10-01,09.2.1,"Games, toys and hobbies",269,117.1,3.7
+2026-10-01,09.2.1.2,"Other games, toys and hobbies",270,117.048104093886,3.7
+2026-10-01,09.2.2,"Equipment for sport, camping and open-air recreation",271,113.8,2.6
+2026-10-01,09.2.2.1,Equipment for sport,272,113.895424874631,2.6
+2026-10-01,09.2.2.2,Equipment for camping and open-air recreation,273,93.6399637736875,-1.6
+2026-10-01,09.3,GARDEN PRODUCTS AND PETS,274,131.9,4.9
+2026-10-01,09.3.1,"Garden products, plants and flowers",275,136.5,7.3
+2026-10-01,09.3.1.1,Garden products,276,126.963923698472,7.9
+2026-10-01,09.3.1.2,"Plants, seeds and flowers",277,146.643354510613,6.8
+2026-10-01,09.3.2,Pets and products for pets,278,127.6,2.7
+2026-10-01,09.3.2.2,Products for pets and other household animals,279,127.533196967428,2.7
+2026-10-01,09.4,RECREATIONAL SERVICES,280,114.5,20.0
+2026-10-01,09.4.6,Recreational and sporting services,281,122.4,5.1
+2026-10-01,09.4.6.2,Sporting services - practice,282,122.36882017058,5.1
+2026-10-01,09.4.7,Games of chance,283,114.3,20.1
+2026-10-01,09.4.7.0,Games of chance,284,114.278192572927,20.1
+2026-10-01,09.5,CULTURAL GOODS,285,110.7,1.7
+2026-10-01,09.5.1,Musical instruments,286,110.7,1.7
+2026-10-01,09.5.1.0,Musical instruments,287,110.69841811367,1.6
+2026-10-01,09.6,CULTURAL SERVICES,288,116.3,1.7
+2026-10-01,09.6.1,"Services provided by cinemas, theatres and concert venues",289,126.4,2.5
+2026-10-01,09.6.1.0,"Services provided by cinemas, theatres and concert venues",290,126.436148030289,2.6
+2026-10-01,09.6.3,Photographic services,291,164.6,9.7
+2026-10-01,09.6.3.0,Photographic services,292,164.634146341463,9.8
+2026-10-01,09.6.9,Other cultural services,293,108.9,0.9
+2026-10-01,09.6.9.0,Other cultural services,294,108.924449601634,0.9
+2026-10-01,09.7,"NEWSPAPERS, BOOKS AND STATIONERY",295,136.5,3.9
+2026-10-01,09.7.1,Books,296,112.4,2.1
+2026-10-01,09.7.1.1,Educational and textbooks in printed or electronic copy,297,111.428235884052,1.8
+2026-10-01,09.7.1.9,Other books (SD) in printed or electronic copy,298,114.505972569371,2.6
+2026-10-01,09.7.2,Newspapers and periodicals,299,108.5,2.3
+2026-10-01,09.7.2.1,Newspapers,300,113.902614342236,3.2
+2026-10-01,09.7.2.2,Magazines and periodicals,301,101.385949301528,0.9
+2026-10-01,09.7.4,Stationery and drawing materials,302,145.2,4.2
+2026-10-01,09.7.4.0,Stationery and drawing materials,303,145.217500739891,4.3
+2026-10-01,09.8,PACKAGE HOLIDAYS,304,101.3,-1.6
+2026-10-01,09.8.0,Package holidays,305,101.3,-1.6
+2026-10-01,09.8.0.0,Package holidays,306,101.325812705136,-1.5
+2026-10-01,10,EDUCATION SERVICES,307,125.9,1.8
+2026-10-01,10.1,EARLY CHILDHOOD AND PRIMARY EDUCATION,308,130.5,2.0
+2026-10-01,10.1.0,Early chilhood and primary education,309,130.5,2.0
+2026-10-01,10.1.0.1,Early childhood education services,310,130.784559272401,3.3
+2026-10-01,10.1.0.2,Primary education,311,130.298001983325,1.4
+2026-10-01,10.2,SECONDARY EDUCATION,312,124.9,1.2
+2026-10-01,10.2.0,Secondary education,313,124.9,1.2
+2026-10-01,10.2.0.1,Lower secondary general education services,314,128.125412192524,1.2
+2026-10-01,10.2.0.2,Lower secondary technical-vocational livelihood programs services,315,117.415874480103,1.4
+2026-10-01,10.4,TERTIARY EDUCATION,316,123.2,2.3
+2026-10-01,10.4.0,Tertiary education,317,123.2,2.3
+2026-10-01,10.4.0.0,Tertiary education,318,123.172697051918,2.3
+2026-10-01,10.5,EDUCATION NOT DEFINED BY LEVEL,319,137.8,4.2
+2026-10-01,10.5.0,Education not defined by level,320,137.8,4.2
+2026-10-01,10.5.0.2,Review classes for professional and licensure examination,321,143.173016826388,4.8
+2026-10-01,10.5.0.9,Other education not defined by level,322,105.386599859174,0.0
+2026-10-01,11,RESTAURANTS AND ACCOMMODATION SERVICES,323,142.0,7.7
+2026-10-01,11.1,FOOD AND BEVERAGE SERVING SERVICES,324,142.4,7.7
+2026-10-01,11.1.1,"Restaurants, café and the like",325,142.4,7.7
+2026-10-01,11.1.1.1,"Restaurants, café and the like - with full service",326,142.388369849139,7.6
+2026-10-01,11.2,ACCOMMODATION SERVICES,327,115.1,4.0
+2026-10-01,11.2.0,Accommodation services,328,115.1,4.0
+2026-10-01,11.2.0.1,"Hotels, motels, inns and similar accommodation services",329,115.166378430127,4.0
+2026-10-01,12,FINANCIAL SERVICES,330,142.4,0.0
+2026-10-01,12.2,FINANCIAL SERVICES,331,142.4,0.0
+2026-10-01,12.2.1,Financial intermediation services indirectly measured,332,146.9,0.0
+2026-10-01,12.2.1.0,Financial intermediation services indirectly measured,333,146.898060013309,0.0
+2026-10-01,12.2.9,Other financial services,334,87.9,0.0
+2026-10-01,12.2.9.1,Remittances fees,335,87.8743649574498,0.0
+2026-10-01,13,"PERSONAL CARE, AND MISCELLANEOUS GOODS AND SERVICES",336,129.2,4.3
+2026-10-01,13.1,PERSONAL CARE,337,130.9,4.6
+2026-10-01,13.1.1,Electric appliances for personal care,338,94.6,5.9
+2026-10-01,13.1.1.1,Electric appliances for personal care,339,94.5691990868512,5.9
+2026-10-01,13.1.2,"Other appliances, articles and products for personal care",340,124.2,2.7
+2026-10-01,13.1.2.0,"Other appliances, articles and products for personal care",341,124.142306532984,2.6
+2026-10-01,13.1.3,Hairdressing salons and personal grooming establishments,342,172.7,13.8
+2026-10-01,13.1.3.1,Hairdressing,343,164.616884723068,11.4
+2026-10-01,13.1.3.2,Personal grooming treatments,344,181.07719906291,16.1
+2026-10-01,13.2,OTHER PERSONAL EFFECTS,345,117.6,2.6
+2026-10-01,13.2.1,Jewellery and watches,346,114.1,3.3
+2026-10-01,13.2.1.1,Jewellery and watches,347,112.382617837539,3.0
+2026-10-01,13.2.1.2,"Repair and hire of jewellery, clocks and watches",348,117.675025950843,3.6
+2026-10-01,13.2.9,Other personal effects n.e.c.,349,118.7,2.5
+2026-10-01,13.2.9.1,Travel goods and articles for babies and other personal effects n.e.c.,350,118.620412940881,2.4
+2026-10-01,13.9,OTHER SERVICES,351,112.6,2.3
+2026-10-01,13.9.0,Other services,352,112.6,2.3
+2026-10-01,13.9.0.9,Other services n.e.c.,353,112.575875213751,2.3
