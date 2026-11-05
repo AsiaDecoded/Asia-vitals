@@ -1,13 +1,11 @@
 {
- "code": "F80201036",
- "label": "Manufacturing sources: JP to 2026-08-01; TW to 2026-09-01; MY to 2026-08-01; SG to 2026-09-01; HK to 2026-04-01",
+ "code": "Fb8c2318d",
+ "label": "Manufacturing sources: JP to 2026-08-01; KR to 2026-09-01; TW to 2026-09-01; MY to 2026-08-01; SG to 2026-09-01; HK to 2026-04-01",
  "economies": "HK JP KR MY SG TW",
- "processed_at": "2026-11-05T10:47:46Z",
+ "processed_at": "2026-11-05T10:56:09Z",
  "rows": 10334,
- "warnings": [
-  "not updated: KR: RuntimeError: ECOS request failed: https://ecos.bok.or.kr/api/StatisticSearch/<key>/json/kr/1/10/901Y032/M/201501/203012/I11AC/1: URLError(TimeoutError('timed out'))"
- ],
- "fingerprint": "80201036b73e53db",
+ "warnings": [],
+ "fingerprint": "b8c2318dcd38bb79",
  "long_rows": 10334,
  "history": [
   {
@@ -29,6 +27,10 @@
   {
    "code": "F80201036",
    "processed_at": "2026-11-05T10:47:46Z"
+  },
+  {
+   "code": "Fb8c2318d",
+   "processed_at": "2026-11-05T10:56:09Z"
   }
  ]
 }
