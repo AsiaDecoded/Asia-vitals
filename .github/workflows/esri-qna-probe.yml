@@ -1,0 +1,32 @@
+name: ESRI production-side QNA probe (dev-mfg-gva)
+# Downloads the production-side QNA (生産QNA) value-added CSVs (real and nominal, original series) and saves them
+# under discovery/esri_qna/ on this branch, to write Japan's manufacturing GVA reader.
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-mfg-gva]
+    paths: [.github/workflows/esri-qna-probe.yml]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download
+        run: |
+          mkdir -p discovery/esri_qna
+          cd discovery/esri_qna
+          B=https://www.esri.cao.go.jp
+          curl -sSL -A "Mozilla/5.0" "$B/jp/sna/sonota/seisanqna/seisanqna_top.html" -o top.html || true
+          curl -sSL -A "Mozilla/5.0" "$B/jp/sna/sonota/seisanqna/seisanqna_2026q2.html" -o page_2026q2.html || true
+          for f in gaku-jgf26q2 gaku-mgf26q2 gaku-jkf26q2; do
+            curl -sSL -A "Mozilla/5.0" "$B/jp/sna/data/data_list/seisanqna/files/tables/b2020/2026q2/$f.csv" -o $f.csv || true
+            iconv -f SHIFT_JIS -t UTF-8 $f.csv > $f.utf8.csv 2>/dev/null || cp $f.csv $f.utf8.csv
+          done
+          ls -la
+      - name: Push
+        run: |
+          git config user.name "asia-vitals bot"; git config user.email "actions@users.noreply.github.com"
+          git add discovery/esri_qna && git commit -m "ESRI QNA probe ${{ github.run_id }}" && git push origin HEAD:${{ github.ref_name }}
