@@ -8,13 +8,13 @@
 // in_iip_mospi at MoSPI's 2022-23 weights). As the CPI table.
 dash.calc('iip_latest', {
   title: 'IIP, latest month',
-  description: 'Manufacturing tab tiles: MoSPI published y/y for the general and manufacturing IIP (2022-23 base), and the calculated y/y of the electronics (NIC 26, 27) and non-electronics manufacturing groups, latest month and the month before.',
+  description: 'Manufacturing tab tiles: MoSPI published y/y for the general and manufacturing IIP (2022-23 base), and the calculated y/y of the electronics (NIC 26) and non-electronics manufacturing groups, latest month and the month before.',
   inputs: ['in_iip_linked', 'in_iip_groups'],
   fn: (in_iip_linked, in_iip_groups) => {
     const n = (v) => (v === '' || v == null ? null : Number(v));
     const L = (ser) => in_iip_linked.filter((r) => r.freq === 'M' && r.series === ser && n(r.yoy_mospi) != null).sort((a, b) => (a.date < b.date ? -1 : 1));
     const G = (code) => in_iip_groups.filter((r) => r.code === code && n(r.yoy) != null).sort((a, b) => (a.date < b.date ? -1 : 1));
-    const g = L('general'), m = L('manufacturing'), e = G('E2627'), x = G('X2627');
+    const g = L('general'), m = L('manufacturing'), e = G('E26'), x = G('X26');
     if (!g.length) return [];
     const date = g[g.length - 1].date, prev = g.length > 1 ? g[g.length - 2].date : null;
     const at = (rows, d, k) => { const r = rows.find((q) => q.date === d); return r ? n(r[k]) : null; };
@@ -636,13 +636,13 @@ dash.calc('ppi_movers', {
     legend(id + '-legend', S);
     // Manufacturing, electronics and non-electronics (not bold; user, 3 Nov 2026), other industries (bold), all
     // calculated at MoSPI's weights, then the divisions by 3mma.
-    const GR = ['E2627', 'X2627', 'OTH'];
+    const GR = ['E26', 'X26', 'OTH'];
     const head = ['C'].concat(GR).map((c) => D.find((r) => r.nic === c)).filter(Boolean);
     const rows = head.concat(D.filter((r) => r.nic !== 'C' && !GR.includes(r.nic)).sort((a, b) => b.m3 - a.m3));
     const top = 6, H = fitH(id, top + rows.length * 26 + 22), W = box.clientWidth, rowH = (H - top - 22) / rows.length;
     box.replaceChildren();
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
-    const GLAB = { E2627: 'Electronics', X2627: 'Non-electronics', OTH: 'Other industries' };   // short labels (user, 3 Nov 2026)
+    const GLAB = { E26: 'Electronics', X26: 'Non-electronics', OTH: 'Other industries' };   // short labels (user, 3 Nov 2026)
     const lab = (r) => (r.nic === 'C' ? 'Manufacturing' : GLAB[r.nic] || `${r.name} (${r.nic})`);
     const lw = Math.min(W * 0.42, J.textWidth(svg, rows.map(lab)) + 12);
     const vals = rows.flatMap((r) => [r.m3, r.ytd]).filter((v) => v != null);
@@ -723,8 +723,8 @@ dash.calc('ppi_movers', {
   function mfgElec() {
     const id = 'mfg-elec', box = document.getElementById(id + '-chart');
     const S = [
-      { key: 'E2627', name: 'Electronics manufacturing', color: 'var(--ad-c1)' },
-      { key: 'X2627', name: 'Non-electronics manufacturing', color: 'var(--ad-c2)' },
+      { key: 'E26', name: 'Electronics manufacturing', color: 'var(--ad-c1)' },
+      { key: 'X26', name: 'Non-electronics manufacturing', color: 'var(--ad-c2)' },
       { key: 'OTH', name: 'Other industries', color: '#A6A6A6' },
     ];
     legend(id + '-legend', S);
@@ -786,8 +786,8 @@ dash.calc('ppi_movers', {
   // stacked bars, general IIP y/y (MoSPI, published) as the line. Colours: user's contribution-chart scheme.
   function mfgContrib() {
     contribChart('mfg-contrib', 'in_iip_contrib', [   // bottom of the stack first
-      { key: 'X2627', name: 'Non-electronics manufacturing', color: '#1F4E79', bar: true },
-      { key: 'E2627', name: 'Electronics manufacturing', color: '#0C84FF', bar: true },
+      { key: 'X26', name: 'Non-electronics manufacturing', color: '#1F4E79', bar: true },
+      { key: 'E26', name: 'Electronics manufacturing', color: '#0C84FF', bar: true },
       { key: 'other', name: 'Other industries', color: '#A6A6A6', bar: true },
     ]);
   }

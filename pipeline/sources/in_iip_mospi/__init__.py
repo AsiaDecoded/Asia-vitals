@@ -164,8 +164,9 @@ NIC = {"Manufacture of Food Products": ("10", "Food products"), "Manufacture of 
 WEIGHTS = {"10": 5.679, "11": 1.113, "12": 0.774, "13": 3.275, "14": 1.970, "15": 0.607, "16": 0.239, "17": 1.375,
            "18": 0.506, "19": 7.721, "20": 7.813, "21": 5.833, "22": 3.384, "23": 3.519, "24": 9.198, "25": 2.481,
            "26": 2.085, "27": 3.175, "28": 5.020, "29": 6.417, "30": 2.089, "31": 0.283, "32": 1.509}
-# Electronics groups (user, 3 Nov 2026): electronics and electrical (NIC 26 + 27) and the rest of manufacturing.
-GROUPS = {"E2627": ("Electronics and electrical (26, 27)", {"26", "27"}), "X2627": ("Non-electronics (ex 26, 27)", None)}
+# Electronics groups: electronics = NIC 26, computer, electronic and optical products (user, 5 Nov 2026: "use only 26", the
+# usual international definition; was 26 + 27 from 3 Nov), and the rest of manufacturing (electrical equipment, 27, included).
+GROUPS = {"E26": ("Electronics (26)", {"26"}), "X26": ("Non-electronics (ex 26)", None)}
 GROUP_START = "2023-04-01"   # 2022-23 base only (user: from April 2024 for y/y)
 
 
@@ -231,8 +232,8 @@ def other_group(rows):
 
 def contributions(rows):
     """Contributions to general IIP y/y, pp (user, 3 Nov 2026): weight x (index - index a year earlier) / general index
-    a year earlier, at MoSPI's 2022-23 weights; parts: electronics and electrical (NIC 26, 27), non-electronics
-    manufacturing (other 21 divisions), other industry (mining, electricity and gas, water and waste). From April 2024.
+    a year earlier, at MoSPI's 2022-23 weights; parts: electronics (NIC 26), non-electronics
+    manufacturing (the other 22 divisions), other industry (mining, electricity and gas, water and waste). From April 2024.
     Check: parts sum to MoSPI's published general y/y within 0.15pp."""
     code = {k: v[0] for k, v in NIC.items()}
     I = {}
@@ -245,7 +246,7 @@ def contributions(rows):
             I.setdefault(r["date"], {})[r["category"]] = r["index"]
             if r["category"] == "General":
                 I[r["date"]]["_gyoy"] = r["growth_rate"]
-    E = GROUPS["E2627"][1]
+    E = GROUPS["E26"][1]
     out, errors = [], []
     for d in sorted(I):
         if d < "2024-04-01":
@@ -256,13 +257,13 @@ def contributions(rows):
         if any(k not in a or k not in b for k in need):
             errors.append(f"IIP contributions {d[:7]}: series missing"); continue
         g0 = b["General"]
-        parts = {"E2627": sum(WEIGHTS[c] * (a[c] - b[c]) for c in E) / g0,
-                 "X2627": sum(WEIGHTS[c] * (a[c] - b[c]) for c in WEIGHTS if c not in E) / g0,
+        parts = {"E26": sum(WEIGHTS[c] * (a[c] - b[c]) for c in E) / g0,
+                 "X26": sum(WEIGHTS[c] * (a[c] - b[c]) for c in WEIGHTS if c not in E) / g0,
                  "other": sum(w * (a[k] - b[k]) for k, w in SECTOR_W.items()) / g0}
         tot = sum(parts.values())
         if a["_gyoy"] is None or abs(tot - a["_gyoy"]) > 0.15:
             errors.append(f"IIP contributions {d[:7]}: parts sum to {tot:.2f}, MoSPI general y/y {a['_gyoy']}")
-        names = {"E2627": "Electronics and electrical (26, 27)", "X2627": "Non-electronics manufacturing",
+        names = {"E26": "Electronics (26)", "X26": "Non-electronics manufacturing",
                  "other": "Mining, electricity, gas, water and waste"}
         for k, v in parts.items():
             out.append({"date": d, "part": k, "name": names[k], "contribution": round(v, 2),
