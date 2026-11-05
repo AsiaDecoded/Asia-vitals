@@ -1,0 +1,1375 @@
+economy,name,freq,period,real_yoy
+CN,China,Q,1993-Q1,15.3
+CN,China,Q,1993-Q2,13.5
+CN,China,Q,1993-Q3,13.0
+CN,China,Q,1993-Q4,14.2
+CN,China,Q,1994-Q1,14.2
+CN,China,Q,1994-Q2,13.4
+CN,China,Q,1994-Q3,13.1
+CN,China,Q,1994-Q4,12.1
+CN,China,Q,1995-Q1,12.0
+CN,China,Q,1995-Q2,11.0
+CN,China,Q,1995-Q3,10.5
+CN,China,Q,1995-Q4,10.8
+CN,China,Q,1996-Q1,11.0
+CN,China,Q,1996-Q2,9.4
+CN,China,Q,1996-Q3,9.3
+CN,China,Q,1996-Q4,10.3
+CN,China,Q,1997-Q1,10.2
+CN,China,Q,1997-Q2,10.1
+CN,China,Q,1997-Q3,8.7
+CN,China,Q,1997-Q4,8.6
+CN,China,Q,1998-Q1,7.3
+CN,China,Q,1998-Q2,7.0
+CN,China,Q,1998-Q3,7.9
+CN,China,Q,1998-Q4,9.2
+CN,China,Q,1999-Q1,9.0
+CN,China,Q,1999-Q2,7.9
+CN,China,Q,1999-Q3,7.7
+CN,China,Q,1999-Q4,6.8
+CN,China,Q,2000-Q1,8.8
+CN,China,Q,2000-Q2,9.2
+CN,China,Q,2000-Q3,8.9
+CN,China,Q,2000-Q4,7.6
+CN,China,Q,2001-Q1,9.5
+CN,China,Q,2001-Q2,8.6
+CN,China,Q,2001-Q3,8.0
+CN,China,Q,2001-Q4,7.5
+CN,China,Q,2002-Q1,9.0
+CN,China,Q,2002-Q2,8.9
+CN,China,Q,2002-Q3,9.7
+CN,China,Q,2002-Q4,9.2
+CN,China,Q,2003-Q1,11.2
+CN,China,Q,2003-Q2,9.2
+CN,China,Q,2003-Q3,10.1
+CN,China,Q,2003-Q4,10.1
+CN,China,Q,2004-Q1,10.6
+CN,China,Q,2004-Q2,11.6
+CN,China,Q,2004-Q3,9.8
+CN,China,Q,2004-Q4,8.8
+CN,China,Q,2005-Q1,11.2
+CN,China,Q,2005-Q2,11.1
+CN,China,Q,2005-Q3,10.9
+CN,China,Q,2005-Q4,12.4
+CN,China,Q,2006-Q1,12.4
+CN,China,Q,2006-Q2,13.6
+CN,China,Q,2006-Q3,12.2
+CN,China,Q,2006-Q4,12.5
+CN,China,Q,2007-Q1,13.6
+CN,China,Q,2007-Q2,14.9
+CN,China,Q,2007-Q3,14.2
+CN,China,Q,2007-Q4,13.9
+CN,China,Q,2008-Q1,11.6
+CN,China,Q,2008-Q2,11.0
+CN,China,Q,2008-Q3,9.5
+CN,China,Q,2008-Q4,7.1
+CN,China,Q,2009-Q1,6.4
+CN,China,Q,2009-Q2,8.2
+CN,China,Q,2009-Q3,10.6
+CN,China,Q,2009-Q4,11.9
+CN,China,Q,2010-Q1,12.2
+CN,China,Q,2010-Q2,10.7
+CN,China,Q,2010-Q3,9.9
+CN,China,Q,2010-Q4,9.9
+CN,China,Q,2011-Q1,10.1
+CN,China,Q,2011-Q2,9.9
+CN,China,Q,2011-Q3,9.3
+CN,China,Q,2011-Q4,8.7
+CN,China,Q,2012-Q1,8.1
+CN,China,Q,2012-Q2,7.7
+CN,China,Q,2012-Q3,7.5
+CN,China,Q,2012-Q4,8.1
+CN,China,Q,2013-Q1,7.9
+CN,China,Q,2013-Q2,7.6
+CN,China,Q,2013-Q3,7.9
+CN,China,Q,2013-Q4,7.7
+CN,China,Q,2014-Q1,7.6
+CN,China,Q,2014-Q2,7.7
+CN,China,Q,2014-Q3,7.3
+CN,China,Q,2014-Q4,7.4
+CN,China,Q,2015-Q1,7.1
+CN,China,Q,2015-Q2,7.1
+CN,China,Q,2015-Q3,7.0
+CN,China,Q,2015-Q4,6.9
+CN,China,Q,2016-Q1,6.8
+CN,China,Q,2016-Q2,6.7
+CN,China,Q,2016-Q3,6.7
+CN,China,Q,2016-Q4,6.8
+CN,China,Q,2017-Q1,7.0
+CN,China,Q,2017-Q2,7.0
+CN,China,Q,2017-Q3,6.9
+CN,China,Q,2017-Q4,6.8
+CN,China,Q,2018-Q1,6.9
+CN,China,Q,2018-Q2,6.9
+CN,China,Q,2018-Q3,6.7
+CN,China,Q,2018-Q4,6.5
+CN,China,Q,2019-Q1,6.4
+CN,China,Q,2019-Q2,6.1
+CN,China,Q,2019-Q3,6.0
+CN,China,Q,2019-Q4,5.9
+CN,China,Q,2020-Q1,-6.8
+CN,China,Q,2020-Q2,3.2
+CN,China,Q,2020-Q3,4.9
+CN,China,Q,2020-Q4,6.5
+CN,China,Q,2021-Q1,18.9
+CN,China,Q,2021-Q2,8.1
+CN,China,Q,2021-Q3,5.5
+CN,China,Q,2021-Q4,4.5
+CN,China,Q,2022-Q1,4.8
+CN,China,Q,2022-Q2,0.8
+CN,China,Q,2022-Q3,4.0
+CN,China,Q,2022-Q4,3.0
+CN,China,Q,2023-Q1,4.7
+CN,China,Q,2023-Q2,6.5
+CN,China,Q,2023-Q3,5.0
+CN,China,Q,2023-Q4,5.3
+CN,China,Q,2024-Q1,5.3
+CN,China,Q,2024-Q2,4.7
+CN,China,Q,2024-Q3,4.6
+CN,China,Q,2024-Q4,5.4
+CN,China,Q,2025-Q1,5.4
+CN,China,Q,2025-Q2,5.2
+CN,China,Q,2025-Q3,4.8
+CN,China,Q,2025-Q4,4.5
+CN,China,Q,2026-Q1,5.0
+CN,China,Q,2026-Q2,4.3
+CN,China,Q,2026-Q3,4.5
+ID,Indonesia,Q,2010-Q1,6.08
+ID,Indonesia,Q,2010-Q2,6.76
+ID,Indonesia,Q,2010-Q3,6.18
+ID,Indonesia,Q,2010-Q4,6.49
+ID,Indonesia,Q,2011-Q1,6.48
+ID,Indonesia,Q,2011-Q2,6.27
+ID,Indonesia,Q,2011-Q3,6.01
+ID,Indonesia,Q,2011-Q4,5.94
+ID,Indonesia,Q,2012-Q1,6.11
+ID,Indonesia,Q,2012-Q2,6.21
+ID,Indonesia,Q,2012-Q3,5.94
+ID,Indonesia,Q,2012-Q4,5.87
+ID,Indonesia,Q,2013-Q1,5.54
+ID,Indonesia,Q,2013-Q2,5.59
+ID,Indonesia,Q,2013-Q3,5.52
+ID,Indonesia,Q,2013-Q4,5.58
+ID,Indonesia,Q,2014-Q1,5.12
+ID,Indonesia,Q,2014-Q2,4.94
+ID,Indonesia,Q,2014-Q3,4.93
+ID,Indonesia,Q,2014-Q4,5.05
+ID,Indonesia,Q,2015-Q1,4.83
+ID,Indonesia,Q,2015-Q2,4.74
+ID,Indonesia,Q,2015-Q3,4.78
+ID,Indonesia,Q,2015-Q4,5.15
+ID,Indonesia,Q,2016-Q1,4.94
+ID,Indonesia,Q,2016-Q2,5.21
+ID,Indonesia,Q,2016-Q3,5.03
+ID,Indonesia,Q,2016-Q4,4.94
+ID,Indonesia,Q,2017-Q1,5.01
+ID,Indonesia,Q,2017-Q2,5.01
+ID,Indonesia,Q,2017-Q3,5.06
+ID,Indonesia,Q,2017-Q4,5.19
+ID,Indonesia,Q,2018-Q1,5.07
+ID,Indonesia,Q,2018-Q2,5.27
+ID,Indonesia,Q,2018-Q3,5.17
+ID,Indonesia,Q,2018-Q4,5.18
+ID,Indonesia,Q,2019-Q1,5.06
+ID,Indonesia,Q,2019-Q2,5.05
+ID,Indonesia,Q,2019-Q3,5.01
+ID,Indonesia,Q,2019-Q4,4.96
+ID,Indonesia,Q,2020-Q1,2.97
+ID,Indonesia,Q,2020-Q2,-5.32
+ID,Indonesia,Q,2020-Q3,-3.49
+ID,Indonesia,Q,2020-Q4,-2.17
+ID,Indonesia,Q,2021-Q1,-0.69
+ID,Indonesia,Q,2021-Q2,7.08
+ID,Indonesia,Q,2021-Q3,3.53
+ID,Indonesia,Q,2021-Q4,5.03
+ID,Indonesia,Q,2022-Q1,5.02
+ID,Indonesia,Q,2022-Q2,5.46
+ID,Indonesia,Q,2022-Q3,5.73
+ID,Indonesia,Q,2022-Q4,5.01
+ID,Indonesia,Q,2023-Q1,5.04
+ID,Indonesia,Q,2023-Q2,5.17
+ID,Indonesia,Q,2023-Q3,4.94
+ID,Indonesia,Q,2023-Q4,5.04
+ID,Indonesia,Q,2024-Q1,5.11
+ID,Indonesia,Q,2024-Q2,5.05
+ID,Indonesia,Q,2024-Q3,4.95
+ID,Indonesia,Q,2024-Q4,5.02
+ID,Indonesia,Q,2025-Q1,4.87
+ID,Indonesia,Q,2025-Q2,5.12
+ID,Indonesia,Q,2025-Q3,5.04
+ID,Indonesia,Q,2025-Q4,5.39
+ID,Indonesia,Q,2026-Q1,5.61
+ID,Indonesia,Q,2026-Q2,5.29
+ID,Indonesia,Q,2026-Q3,5.47
+IN,India,Q,2023-Q2,6.6
+IN,India,Q,2023-Q3,7.5
+IN,India,Q,2023-Q4,7.7
+IN,India,Q,2024-Q1,7.4
+IN,India,Q,2024-Q2,7.5
+IN,India,Q,2024-Q3,7.3
+IN,India,Q,2024-Q4,7.4
+IN,India,Q,2025-Q1,6.6
+IN,India,Q,2025-Q2,6.9
+IN,India,Q,2025-Q3,8.1
+IN,India,Q,2025-Q4,7.7
+IN,India,Q,2026-Q1,8.6
+IN,India,Q,2026-Q2,7.8
+JP,Japan,Q,1995-Q1,0.8
+JP,Japan,Q,1995-Q2,2.6
+JP,Japan,Q,1995-Q3,2.7
+JP,Japan,Q,1995-Q4,3.3
+JP,Japan,Q,1996-Q1,3.5
+JP,Japan,Q,1996-Q2,3.3
+JP,Japan,Q,1996-Q3,2.6
+JP,Japan,Q,1996-Q4,3.0
+JP,Japan,Q,1997-Q1,3.2
+JP,Japan,Q,1997-Q2,1.3
+JP,Japan,Q,1997-Q3,1.2
+JP,Japan,Q,1997-Q4,-0.1
+JP,Japan,Q,1998-Q1,-2.2
+JP,Japan,Q,1998-Q2,-1.7
+JP,Japan,Q,1998-Q3,-2.1
+JP,Japan,Q,1998-Q4,-1.2
+JP,Japan,Q,1999-Q1,-0.8
+JP,Japan,Q,1999-Q2,-0.1
+JP,Japan,Q,1999-Q3,0.3
+JP,Japan,Q,1999-Q4,-0.8
+JP,Japan,Q,2000-Q1,3.4
+JP,Japan,Q,2000-Q2,3.1
+JP,Japan,Q,2000-Q3,2.5
+JP,Japan,Q,2000-Q4,2.9
+JP,Japan,Q,2001-Q1,2.7
+JP,Japan,Q,2001-Q2,0.8
+JP,Japan,Q,2001-Q3,-0.4
+JP,Japan,Q,2001-Q4,-1.8
+JP,Japan,Q,2002-Q1,-1.8
+JP,Japan,Q,2002-Q2,-0.3
+JP,Japan,Q,2002-Q3,1.0
+JP,Japan,Q,2002-Q4,1.4
+JP,Japan,Q,2003-Q1,1.2
+JP,Japan,Q,2003-Q2,1.3
+JP,Japan,Q,2003-Q3,1.2
+JP,Japan,Q,2003-Q4,1.8
+JP,Japan,Q,2004-Q1,3.2
+JP,Japan,Q,2004-Q2,2.2
+JP,Japan,Q,2004-Q3,2.3
+JP,Japan,Q,2004-Q4,0.9
+JP,Japan,Q,2005-Q1,1.0
+JP,Japan,Q,2005-Q2,1.7
+JP,Japan,Q,2005-Q3,2.0
+JP,Japan,Q,2005-Q4,2.7
+JP,Japan,Q,2006-Q1,2.6
+JP,Japan,Q,2006-Q2,1.4
+JP,Japan,Q,2006-Q3,0.5
+JP,Japan,Q,2006-Q4,1.7
+JP,Japan,Q,2007-Q1,2.6
+JP,Japan,Q,2007-Q2,2.1
+JP,Japan,Q,2007-Q3,1.5
+JP,Japan,Q,2007-Q4,0.8
+JP,Japan,Q,2008-Q1,0.3
+JP,Japan,Q,2008-Q2,-0.4
+JP,Japan,Q,2008-Q3,-0.8
+JP,Japan,Q,2008-Q4,-3.7
+JP,Japan,Q,2009-Q1,-8.3
+JP,Japan,Q,2009-Q2,-6.7
+JP,Japan,Q,2009-Q3,-6.3
+JP,Japan,Q,2009-Q4,-2.4
+JP,Japan,Q,2010-Q1,3.5
+JP,Japan,Q,2010-Q2,3.7
+JP,Japan,Q,2010-Q3,6.2
+JP,Japan,Q,2010-Q4,3.2
+JP,Japan,Q,2011-Q1,0.7
+JP,Japan,Q,2011-Q2,-1.1
+JP,Japan,Q,2011-Q3,-0.5
+JP,Japan,Q,2011-Q4,0.2
+JP,Japan,Q,2012-Q1,3.5
+JP,Japan,Q,2012-Q2,3.1
+JP,Japan,Q,2012-Q3,0.1
+JP,Japan,Q,2012-Q4,0.0
+JP,Japan,Q,2013-Q1,-0.0
+JP,Japan,Q,2013-Q2,1.9
+JP,Japan,Q,2013-Q3,3.1
+JP,Japan,Q,2013-Q4,3.0
+JP,Japan,Q,2014-Q1,3.3
+JP,Japan,Q,2014-Q2,0.4
+JP,Japan,Q,2014-Q3,-0.4
+JP,Japan,Q,2014-Q4,0.3
+JP,Japan,Q,2015-Q1,1.0
+JP,Japan,Q,2015-Q2,2.4
+JP,Japan,Q,2015-Q3,2.3
+JP,Japan,Q,2015-Q4,1.5
+JP,Japan,Q,2016-Q1,1.0
+JP,Japan,Q,2016-Q2,0.4
+JP,Japan,Q,2016-Q3,0.5
+JP,Japan,Q,2016-Q4,0.9
+JP,Japan,Q,2017-Q1,0.7
+JP,Japan,Q,2017-Q2,1.2
+JP,Japan,Q,2017-Q3,2.2
+JP,Japan,Q,2017-Q4,2.4
+JP,Japan,Q,2018-Q1,1.4
+JP,Japan,Q,2018-Q2,1.7
+JP,Japan,Q,2018-Q3,0.1
+JP,Japan,Q,2018-Q4,0.2
+JP,Japan,Q,2019-Q1,0.4
+JP,Japan,Q,2019-Q2,0.1
+JP,Japan,Q,2019-Q3,0.6
+JP,Japan,Q,2019-Q4,-2.3
+JP,Japan,Q,2020-Q1,-2.1
+JP,Japan,Q,2020-Q2,-9.5
+JP,Japan,Q,2020-Q3,-5.1
+JP,Japan,Q,2020-Q4,-0.6
+JP,Japan,Q,2021-Q1,0.2
+JP,Japan,Q,2021-Q2,8.6
+JP,Japan,Q,2021-Q3,3.4
+JP,Japan,Q,2021-Q4,2.7
+JP,Japan,Q,2022-Q1,1.1
+JP,Japan,Q,2022-Q2,1.8
+JP,Japan,Q,2022-Q3,1.5
+JP,Japan,Q,2022-Q4,0.6
+JP,Japan,Q,2023-Q1,2.1
+JP,Japan,Q,2023-Q2,1.2
+JP,Japan,Q,2023-Q3,0.2
+JP,Japan,Q,2023-Q4,0.1
+JP,Japan,Q,2024-Q1,-0.9
+JP,Japan,Q,2024-Q2,-0.9
+JP,Japan,Q,2024-Q3,1.1
+JP,Japan,Q,2024-Q4,0.9
+JP,Japan,Q,2025-Q1,1.6
+JP,Japan,Q,2025-Q2,2.0
+JP,Japan,Q,2025-Q3,0.6
+JP,Japan,Q,2025-Q4,0.4
+JP,Japan,Q,2026-Q1,0.6
+JP,Japan,Q,2026-Q2,0.9
+KR,South Korea,Q,1961-Q1,6.32
+KR,South Korea,Q,1961-Q2,7.15
+KR,South Korea,Q,1961-Q3,4.75
+KR,South Korea,Q,1961-Q4,8.95
+KR,South Korea,Q,1962-Q1,6.31
+KR,South Korea,Q,1962-Q2,-1.56
+KR,South Korea,Q,1962-Q3,7.19
+KR,South Korea,Q,1962-Q4,4.49
+KR,South Korea,Q,1963-Q1,10.14
+KR,South Korea,Q,1963-Q2,8.69
+KR,South Korea,Q,1963-Q3,9.69
+KR,South Korea,Q,1963-Q4,7.85
+KR,South Korea,Q,1964-Q1,4.66
+KR,South Korea,Q,1964-Q2,5.7
+KR,South Korea,Q,1964-Q3,8.09
+KR,South Korea,Q,1964-Q4,17.59
+KR,South Korea,Q,1965-Q1,8.25
+KR,South Korea,Q,1965-Q2,13.69
+KR,South Korea,Q,1965-Q3,7.41
+KR,South Korea,Q,1965-Q4,1.63
+KR,South Korea,Q,1966-Q1,8.15
+KR,South Korea,Q,1966-Q2,13.82
+KR,South Korea,Q,1966-Q3,15.85
+KR,South Korea,Q,1966-Q4,10.38
+KR,South Korea,Q,1967-Q1,9.52
+KR,South Korea,Q,1967-Q2,5.14
+KR,South Korea,Q,1967-Q3,14.07
+KR,South Korea,Q,1967-Q4,8.38
+KR,South Korea,Q,1968-Q1,13.53
+KR,South Korea,Q,1968-Q2,13.61
+KR,South Korea,Q,1968-Q3,15.85
+KR,South Korea,Q,1968-Q4,10.37
+KR,South Korea,Q,1969-Q1,9.13
+KR,South Korea,Q,1969-Q2,12.68
+KR,South Korea,Q,1969-Q3,14.26
+KR,South Korea,Q,1969-Q4,20.87
+KR,South Korea,Q,1970-Q1,10.63
+KR,South Korea,Q,1970-Q2,13.86
+KR,South Korea,Q,1970-Q3,4.91
+KR,South Korea,Q,1970-Q4,11.3
+KR,South Korea,Q,1971-Q1,12.91
+KR,South Korea,Q,1971-Q2,13.32
+KR,South Korea,Q,1971-Q3,11.46
+KR,South Korea,Q,1971-Q4,6.14
+KR,South Korea,Q,1972-Q1,5.63
+KR,South Korea,Q,1972-Q2,5.33
+KR,South Korea,Q,1972-Q3,6.5
+KR,South Korea,Q,1972-Q4,11.15
+KR,South Korea,Q,1973-Q1,12.81
+KR,South Korea,Q,1973-Q2,13.61
+KR,South Korea,Q,1973-Q3,18.31
+KR,South Korea,Q,1973-Q4,14.96
+KR,South Korea,Q,1974-Q1,15.66
+KR,South Korea,Q,1974-Q2,10.94
+KR,South Korea,Q,1974-Q3,7.84
+KR,South Korea,Q,1974-Q4,5.88
+KR,South Korea,Q,1975-Q1,2.24
+KR,South Korea,Q,1975-Q2,6.66
+KR,South Korea,Q,1975-Q3,8.28
+KR,South Korea,Q,1975-Q4,13.1
+KR,South Korea,Q,1976-Q1,12.38
+KR,South Korea,Q,1976-Q2,14.58
+KR,South Korea,Q,1976-Q3,13.61
+KR,South Korea,Q,1976-Q4,12.47
+KR,South Korea,Q,1977-Q1,9.26
+KR,South Korea,Q,1977-Q2,8.98
+KR,South Korea,Q,1977-Q3,13.53
+KR,South Korea,Q,1977-Q4,16.47
+KR,South Korea,Q,1978-Q1,15.19
+KR,South Korea,Q,1978-Q2,13.14
+KR,South Korea,Q,1978-Q3,9.9
+KR,South Korea,Q,1978-Q4,7.7
+KR,South Korea,Q,1979-Q1,14.87
+KR,South Korea,Q,1979-Q2,11.61
+KR,South Korea,Q,1979-Q3,7.72
+KR,South Korea,Q,1979-Q4,2.92
+KR,South Korea,Q,1980-Q1,0.21
+KR,South Korea,Q,1980-Q2,-3.42
+KR,South Korea,Q,1980-Q3,2.43
+KR,South Korea,Q,1980-Q4,-4.55
+KR,South Korea,Q,1981-Q1,3.93
+KR,South Korea,Q,1981-Q2,4.11
+KR,South Korea,Q,1981-Q3,8.06
+KR,South Korea,Q,1981-Q4,12.65
+KR,South Korea,Q,1982-Q1,9.18
+KR,South Korea,Q,1982-Q2,8.77
+KR,South Korea,Q,1982-Q3,8.28
+KR,South Korea,Q,1982-Q4,7.84
+KR,South Korea,Q,1983-Q1,13.79
+KR,South Korea,Q,1983-Q2,13.44
+KR,South Korea,Q,1983-Q3,16.11
+KR,South Korea,Q,1983-Q4,10.88
+KR,South Korea,Q,1984-Q1,13.9
+KR,South Korea,Q,1984-Q2,12.31
+KR,South Korea,Q,1984-Q3,9.62
+KR,South Korea,Q,1984-Q4,7.59
+KR,South Korea,Q,1985-Q1,7.6
+KR,South Korea,Q,1985-Q2,6.82
+KR,South Korea,Q,1985-Q3,7.36
+KR,South Korea,Q,1985-Q4,9.79
+KR,South Korea,Q,1986-Q1,9.23
+KR,South Korea,Q,1986-Q2,10.28
+KR,South Korea,Q,1986-Q3,14.13
+KR,South Korea,Q,1986-Q4,11.98
+KR,South Korea,Q,1987-Q1,15.12
+KR,South Korea,Q,1987-Q2,15.44
+KR,South Korea,Q,1987-Q3,10.92
+KR,South Korea,Q,1987-Q4,10.77
+KR,South Korea,Q,1988-Q1,16.78
+KR,South Korea,Q,1988-Q2,8.5
+KR,South Korea,Q,1988-Q3,10.71
+KR,South Korea,Q,1988-Q4,13.04
+KR,South Korea,Q,1989-Q1,5.09
+KR,South Korea,Q,1989-Q2,7.95
+KR,South Korea,Q,1989-Q3,7.01
+KR,South Korea,Q,1989-Q4,8.37
+KR,South Korea,Q,1990-Q1,10.2
+KR,South Korea,Q,1990-Q2,11.02
+KR,South Korea,Q,1990-Q3,10.67
+KR,South Korea,Q,1990-Q4,8.41
+KR,South Korea,Q,1991-Q1,11.46
+KR,South Korea,Q,1991-Q2,11.91
+KR,South Korea,Q,1991-Q3,9.81
+KR,South Korea,Q,1991-Q4,10.47
+KR,South Korea,Q,1992-Q1,8.77
+KR,South Korea,Q,1992-Q2,7.86
+KR,South Korea,Q,1992-Q3,5.06
+KR,South Korea,Q,1992-Q4,4.16
+KR,South Korea,Q,1993-Q1,5.18
+KR,South Korea,Q,1993-Q2,6.6
+KR,South Korea,Q,1993-Q3,8.0
+KR,South Korea,Q,1993-Q4,8.02
+KR,South Korea,Q,1994-Q1,9.8
+KR,South Korea,Q,1994-Q2,8.74
+KR,South Korea,Q,1994-Q3,8.44
+KR,South Korea,Q,1994-Q4,10.47
+KR,South Korea,Q,1995-Q1,9.78
+KR,South Korea,Q,1995-Q2,10.15
+KR,South Korea,Q,1995-Q3,10.81
+KR,South Korea,Q,1995-Q4,8.33
+KR,South Korea,Q,1996-Q1,8.17
+KR,South Korea,Q,1996-Q2,8.18
+KR,South Korea,Q,1996-Q3,8.01
+KR,South Korea,Q,1996-Q4,7.65
+KR,South Korea,Q,1997-Q1,6.08
+KR,South Korea,Q,1997-Q2,7.78
+KR,South Korea,Q,1997-Q3,7.0
+KR,South Korea,Q,1997-Q4,4.38
+KR,South Korea,Q,1998-Q1,-2.87
+KR,South Korea,Q,1998-Q2,-7.11
+KR,South Korea,Q,1998-Q3,-6.16
+KR,South Korea,Q,1998-Q4,-3.47
+KR,South Korea,Q,1999-Q1,7.29
+KR,South Korea,Q,1999-Q2,12.4
+KR,South Korea,Q,1999-Q3,13.0
+KR,South Korea,Q,1999-Q4,13.39
+KR,South Korea,Q,2000-Q1,12.65
+KR,South Korea,Q,2000-Q2,9.23
+KR,South Korea,Q,2000-Q3,9.32
+KR,South Korea,Q,2000-Q4,6.19
+KR,South Korea,Q,2001-Q1,5.01
+KR,South Korea,Q,2001-Q2,4.9
+KR,South Korea,Q,2001-Q3,3.4
+KR,South Korea,Q,2001-Q4,5.6
+KR,South Korea,Q,2002-Q1,7.36
+KR,South Korea,Q,2002-Q2,7.52
+KR,South Korea,Q,2002-Q3,8.09
+KR,South Korea,Q,2002-Q4,7.96
+KR,South Korea,Q,2003-Q1,4.09
+KR,South Korea,Q,2003-Q2,2.26
+KR,South Korea,Q,2003-Q3,1.96
+KR,South Korea,Q,2003-Q4,4.01
+KR,South Korea,Q,2004-Q1,5.72
+KR,South Korea,Q,2004-Q2,6.63
+KR,South Korea,Q,2004-Q3,5.19
+KR,South Korea,Q,2004-Q4,3.38
+KR,South Korea,Q,2005-Q1,3.11
+KR,South Korea,Q,2005-Q2,3.94
+KR,South Korea,Q,2005-Q3,5.01
+KR,South Korea,Q,2005-Q4,5.26
+KR,South Korea,Q,2006-Q1,6.33
+KR,South Korea,Q,2006-Q2,4.93
+KR,South Korea,Q,2006-Q3,5.06
+KR,South Korea,Q,2006-Q4,4.77
+KR,South Korea,Q,2007-Q1,4.99
+KR,South Korea,Q,2007-Q2,5.9
+KR,South Korea,Q,2007-Q3,5.53
+KR,South Korea,Q,2007-Q4,6.84
+KR,South Korea,Q,2008-Q1,5.85
+KR,South Korea,Q,2008-Q2,4.42
+KR,South Korea,Q,2008-Q3,3.96
+KR,South Korea,Q,2008-Q4,-1.7
+KR,South Korea,Q,2009-Q1,-2.08
+KR,South Korea,Q,2009-Q2,-1.28
+KR,South Korea,Q,2009-Q3,1.06
+KR,South Korea,Q,2009-Q4,5.39
+KR,South Korea,Q,2010-Q1,7.86
+KR,South Korea,Q,2010-Q2,8.11
+KR,South Korea,Q,2010-Q3,5.77
+KR,South Korea,Q,2010-Q4,6.32
+KR,South Korea,Q,2011-Q1,5.4
+KR,South Korea,Q,2011-Q2,3.84
+KR,South Korea,Q,2011-Q3,3.11
+KR,South Korea,Q,2011-Q4,2.57
+KR,South Korea,Q,2012-Q1,2.53
+KR,South Korea,Q,2012-Q2,2.56
+KR,South Korea,Q,2012-Q3,2.45
+KR,South Korea,Q,2012-Q4,2.65
+KR,South Korea,Q,2013-Q1,2.33
+KR,South Korea,Q,2013-Q2,3.05
+KR,South Korea,Q,2013-Q3,3.69
+KR,South Korea,Q,2013-Q4,4.02
+KR,South Korea,Q,2014-Q1,3.78
+KR,South Korea,Q,2014-Q2,3.58
+KR,South Korea,Q,2014-Q3,2.97
+KR,South Korea,Q,2014-Q4,2.59
+KR,South Korea,Q,2015-Q1,2.66
+KR,South Korea,Q,2015-Q2,1.93
+KR,South Korea,Q,2015-Q3,3.46
+KR,South Korea,Q,2015-Q4,3.59
+KR,South Korea,Q,2016-Q1,3.0
+KR,South Korea,Q,2016-Q2,3.85
+KR,South Korea,Q,2016-Q3,3.0
+KR,South Korea,Q,2016-Q4,2.85
+KR,South Korea,Q,2017-Q1,3.46
+KR,South Korea,Q,2017-Q2,3.01
+KR,South Korea,Q,2017-Q3,4.1
+KR,South Korea,Q,2017-Q4,3.17
+KR,South Korea,Q,2018-Q1,3.2
+KR,South Korea,Q,2018-Q2,3.34
+KR,South Korea,Q,2018-Q3,2.6
+KR,South Korea,Q,2018-Q4,3.55
+KR,South Korea,Q,2019-Q1,1.87
+KR,South Korea,Q,2019-Q2,2.38
+KR,South Korea,Q,2019-Q3,2.22
+KR,South Korea,Q,2019-Q4,2.74
+KR,South Korea,Q,2020-Q1,1.19
+KR,South Korea,Q,2020-Q2,-2.64
+KR,South Korea,Q,2020-Q3,-0.82
+KR,South Korea,Q,2020-Q4,-0.45
+KR,South Korea,Q,2021-Q1,2.72
+KR,South Korea,Q,2021-Q2,6.95
+KR,South Korea,Q,2021-Q3,4.61
+KR,South Korea,Q,2021-Q4,4.49
+KR,South Korea,Q,2022-Q1,3.62
+KR,South Korea,Q,2022-Q2,3.28
+KR,South Korea,Q,2022-Q3,3.66
+KR,South Korea,Q,2022-Q4,1.22
+KR,South Korea,Q,2023-Q1,1.06
+KR,South Korea,Q,2023-Q2,0.69
+KR,South Korea,Q,2023-Q3,1.59
+KR,South Korea,Q,2023-Q4,2.53
+KR,South Korea,Q,2024-Q1,3.65
+KR,South Korea,Q,2024-Q2,2.55
+KR,South Korea,Q,2024-Q3,1.65
+KR,South Korea,Q,2024-Q4,1.06
+KR,South Korea,Q,2025-Q1,0.16
+KR,South Korea,Q,2025-Q2,0.7
+KR,South Korea,Q,2025-Q3,2.09
+KR,South Korea,Q,2025-Q4,1.55
+KR,South Korea,Q,2026-Q1,3.78
+KR,South Korea,Q,2026-Q2,3.74
+KR,South Korea,Q,2026-Q3,3.38
+MY,Malaysia,Q,2016-Q1,4.3
+MY,Malaysia,Q,2016-Q2,4.2
+MY,Malaysia,Q,2016-Q3,4.5
+MY,Malaysia,Q,2016-Q4,4.8
+MY,Malaysia,Q,2017-Q1,5.6
+MY,Malaysia,Q,2017-Q2,5.7
+MY,Malaysia,Q,2017-Q3,6.1
+MY,Malaysia,Q,2017-Q4,5.8
+MY,Malaysia,Q,2018-Q1,5.3
+MY,Malaysia,Q,2018-Q2,4.8
+MY,Malaysia,Q,2018-Q3,4.5
+MY,Malaysia,Q,2018-Q4,4.8
+MY,Malaysia,Q,2019-Q1,4.7
+MY,Malaysia,Q,2019-Q2,4.9
+MY,Malaysia,Q,2019-Q3,4.5
+MY,Malaysia,Q,2019-Q4,3.6
+MY,Malaysia,Q,2020-Q1,0.7
+MY,Malaysia,Q,2020-Q2,-16.9
+MY,Malaysia,Q,2020-Q3,-2.5
+MY,Malaysia,Q,2020-Q4,-3.2
+MY,Malaysia,Q,2021-Q1,-0.2
+MY,Malaysia,Q,2021-Q2,16.3
+MY,Malaysia,Q,2021-Q3,-4.2
+MY,Malaysia,Q,2021-Q4,3.5
+MY,Malaysia,Q,2022-Q1,5.1
+MY,Malaysia,Q,2022-Q2,9.2
+MY,Malaysia,Q,2022-Q3,14.6
+MY,Malaysia,Q,2022-Q4,7.4
+MY,Malaysia,Q,2023-Q1,5.7
+MY,Malaysia,Q,2023-Q2,2.7
+MY,Malaysia,Q,2023-Q3,3.1
+MY,Malaysia,Q,2023-Q4,2.9
+MY,Malaysia,Q,2024-Q1,4.2
+MY,Malaysia,Q,2024-Q2,6.0
+MY,Malaysia,Q,2024-Q3,5.5
+MY,Malaysia,Q,2024-Q4,5.0
+MY,Malaysia,Q,2025-Q1,4.4
+MY,Malaysia,Q,2025-Q2,4.6
+MY,Malaysia,Q,2025-Q3,5.3
+MY,Malaysia,Q,2025-Q4,6.2
+MY,Malaysia,Q,2026-Q1,5.4
+MY,Malaysia,Q,2026-Q2,6.0
+PH,Philippines,Q,1982-Q1,3.0
+PH,Philippines,Q,1982-Q2,3.8
+PH,Philippines,Q,1982-Q3,2.2
+PH,Philippines,Q,1982-Q4,5.5
+PH,Philippines,Q,1983-Q1,3.6
+PH,Philippines,Q,1983-Q2,5.6
+PH,Philippines,Q,1983-Q3,2.0
+PH,Philippines,Q,1983-Q4,-3.2
+PH,Philippines,Q,1984-Q1,-4.4
+PH,Philippines,Q,1984-Q2,-6.0
+PH,Philippines,Q,1984-Q3,-10.7
+PH,Philippines,Q,1984-Q4,-7.3
+PH,Philippines,Q,1985-Q1,-10.5
+PH,Philippines,Q,1985-Q2,-9.4
+PH,Philippines,Q,1985-Q3,-5.2
+PH,Philippines,Q,1985-Q4,-2.1
+PH,Philippines,Q,1986-Q1,0.1
+PH,Philippines,Q,1986-Q2,2.8
+PH,Philippines,Q,1986-Q3,7.8
+PH,Philippines,Q,1986-Q4,3.7
+PH,Philippines,Q,1987-Q1,3.3
+PH,Philippines,Q,1987-Q2,3.8
+PH,Philippines,Q,1987-Q3,6.6
+PH,Philippines,Q,1987-Q4,4.0
+PH,Philippines,Q,1988-Q1,5.8
+PH,Philippines,Q,1988-Q2,2.3
+PH,Philippines,Q,1988-Q3,6.3
+PH,Philippines,Q,1988-Q4,12.0
+PH,Philippines,Q,1989-Q1,6.4
+PH,Philippines,Q,1989-Q2,5.3
+PH,Philippines,Q,1989-Q3,5.5
+PH,Philippines,Q,1989-Q4,7.3
+PH,Philippines,Q,1990-Q1,5.1
+PH,Philippines,Q,1990-Q2,3.5
+PH,Philippines,Q,1990-Q3,3.7
+PH,Philippines,Q,1990-Q4,0.5
+PH,Philippines,Q,1991-Q1,0.1
+PH,Philippines,Q,1991-Q2,-1.1
+PH,Philippines,Q,1991-Q3,-1.9
+PH,Philippines,Q,1991-Q4,1.0
+PH,Philippines,Q,1992-Q1,2.2
+PH,Philippines,Q,1992-Q2,-0.2
+PH,Philippines,Q,1992-Q3,0.4
+PH,Philippines,Q,1992-Q4,-0.5
+PH,Philippines,Q,1993-Q1,0.9
+PH,Philippines,Q,1993-Q2,2.6
+PH,Philippines,Q,1993-Q3,2.6
+PH,Philippines,Q,1993-Q4,2.6
+PH,Philippines,Q,1994-Q1,3.6
+PH,Philippines,Q,1994-Q2,4.7
+PH,Philippines,Q,1994-Q3,5.2
+PH,Philippines,Q,1994-Q4,4.1
+PH,Philippines,Q,1995-Q1,4.8
+PH,Philippines,Q,1995-Q2,4.2
+PH,Philippines,Q,1995-Q3,6.0
+PH,Philippines,Q,1995-Q4,3.7
+PH,Philippines,Q,1996-Q1,5.2
+PH,Philippines,Q,1996-Q2,6.6
+PH,Philippines,Q,1996-Q3,6.1
+PH,Philippines,Q,1996-Q4,5.6
+PH,Philippines,Q,1997-Q1,5.1
+PH,Philippines,Q,1997-Q2,6.0
+PH,Philippines,Q,1997-Q3,4.7
+PH,Philippines,Q,1997-Q4,4.9
+PH,Philippines,Q,1998-Q1,1.8
+PH,Philippines,Q,1998-Q2,-0.9
+PH,Philippines,Q,1998-Q3,0.4
+PH,Philippines,Q,1998-Q4,-3.0
+PH,Philippines,Q,1999-Q1,0.9
+PH,Philippines,Q,1999-Q2,3.4
+PH,Philippines,Q,1999-Q3,3.8
+PH,Philippines,Q,1999-Q4,5.1
+PH,Philippines,Q,2000-Q1,4.6
+PH,Philippines,Q,2000-Q2,5.8
+PH,Philippines,Q,2000-Q3,4.2
+PH,Philippines,Q,2000-Q4,3.1
+PH,Philippines,Q,2001-Q1,2.4
+PH,Philippines,Q,2001-Q2,3.3
+PH,Philippines,Q,2001-Q3,3.1
+PH,Philippines,Q,2001-Q4,3.3
+PH,Philippines,Q,2002-Q1,3.9
+PH,Philippines,Q,2002-Q2,3.7
+PH,Philippines,Q,2002-Q3,2.7
+PH,Philippines,Q,2002-Q4,4.6
+PH,Philippines,Q,2003-Q1,4.6
+PH,Philippines,Q,2003-Q2,4.4
+PH,Philippines,Q,2003-Q3,5.5
+PH,Philippines,Q,2003-Q4,5.7
+PH,Philippines,Q,2004-Q1,7.2
+PH,Philippines,Q,2004-Q2,7.5
+PH,Philippines,Q,2004-Q3,6.3
+PH,Philippines,Q,2004-Q4,5.5
+PH,Philippines,Q,2005-Q1,5.0
+PH,Philippines,Q,2005-Q2,5.7
+PH,Philippines,Q,2005-Q3,4.4
+PH,Philippines,Q,2005-Q4,4.7
+PH,Philippines,Q,2006-Q1,4.5
+PH,Philippines,Q,2006-Q2,5.9
+PH,Philippines,Q,2006-Q3,4.7
+PH,Philippines,Q,2006-Q4,6.0
+PH,Philippines,Q,2007-Q1,6.2
+PH,Philippines,Q,2007-Q2,6.8
+PH,Philippines,Q,2007-Q3,6.5
+PH,Philippines,Q,2007-Q4,6.5
+PH,Philippines,Q,2008-Q1,4.2
+PH,Philippines,Q,2008-Q2,4.8
+PH,Philippines,Q,2008-Q3,5.4
+PH,Philippines,Q,2008-Q4,3.1
+PH,Philippines,Q,2009-Q1,1.1
+PH,Philippines,Q,2009-Q2,1.9
+PH,Philippines,Q,2009-Q3,0.9
+PH,Philippines,Q,2009-Q4,1.8
+PH,Philippines,Q,2010-Q1,8.1
+PH,Philippines,Q,2010-Q2,8.0
+PH,Philippines,Q,2010-Q3,7.1
+PH,Philippines,Q,2010-Q4,6.3
+PH,Philippines,Q,2011-Q1,4.8
+PH,Philippines,Q,2011-Q2,3.6
+PH,Philippines,Q,2011-Q3,3.0
+PH,Philippines,Q,2011-Q4,4.0
+PH,Philippines,Q,2012-Q1,6.0
+PH,Philippines,Q,2012-Q2,6.2
+PH,Philippines,Q,2012-Q3,7.4
+PH,Philippines,Q,2012-Q4,7.8
+PH,Philippines,Q,2013-Q1,7.6
+PH,Philippines,Q,2013-Q2,7.5
+PH,Philippines,Q,2013-Q3,6.7
+PH,Philippines,Q,2013-Q4,5.4
+PH,Philippines,Q,2014-Q1,5.7
+PH,Philippines,Q,2014-Q2,6.9
+PH,Philippines,Q,2014-Q3,5.9
+PH,Philippines,Q,2014-Q4,6.7
+PH,Philippines,Q,2015-Q1,5.2
+PH,Philippines,Q,2015-Q2,6.4
+PH,Philippines,Q,2015-Q3,6.6
+PH,Philippines,Q,2015-Q4,7.0
+PH,Philippines,Q,2016-Q1,6.9
+PH,Philippines,Q,2016-Q2,7.4
+PH,Philippines,Q,2016-Q3,7.3
+PH,Philippines,Q,2016-Q4,6.9
+PH,Philippines,Q,2017-Q1,6.4
+PH,Philippines,Q,2017-Q2,7.2
+PH,Philippines,Q,2017-Q3,7.5
+PH,Philippines,Q,2017-Q4,6.6
+PH,Philippines,Q,2018-Q1,6.5
+PH,Philippines,Q,2018-Q2,6.4
+PH,Philippines,Q,2018-Q3,6.1
+PH,Philippines,Q,2018-Q4,6.4
+PH,Philippines,Q,2019-Q1,5.9
+PH,Philippines,Q,2019-Q2,5.6
+PH,Philippines,Q,2019-Q3,6.3
+PH,Philippines,Q,2019-Q4,6.6
+PH,Philippines,Q,2020-Q1,-0.7
+PH,Philippines,Q,2020-Q2,-16.9
+PH,Philippines,Q,2020-Q3,-11.6
+PH,Philippines,Q,2020-Q4,-8.2
+PH,Philippines,Q,2021-Q1,-3.8
+PH,Philippines,Q,2021-Q2,12.0
+PH,Philippines,Q,2021-Q3,7.0
+PH,Philippines,Q,2021-Q4,7.9
+PH,Philippines,Q,2022-Q1,8.1
+PH,Philippines,Q,2022-Q2,7.5
+PH,Philippines,Q,2022-Q3,7.7
+PH,Philippines,Q,2022-Q4,7.1
+PH,Philippines,Q,2023-Q1,6.4
+PH,Philippines,Q,2023-Q2,4.3
+PH,Philippines,Q,2023-Q3,6.0
+PH,Philippines,Q,2023-Q4,5.5
+PH,Philippines,Q,2024-Q1,5.9
+PH,Philippines,Q,2024-Q2,6.5
+PH,Philippines,Q,2024-Q3,5.3
+PH,Philippines,Q,2024-Q4,5.3
+PH,Philippines,Q,2025-Q1,5.4
+PH,Philippines,Q,2025-Q2,5.4
+PH,Philippines,Q,2025-Q3,4.0
+PH,Philippines,Q,2025-Q4,3.0
+PH,Philippines,Q,2026-Q1,2.8
+PH,Philippines,Q,2026-Q2,2.3
+SG,Singapore,Q,1976-Q1,8.21
+SG,Singapore,Q,1976-Q2,7.41
+SG,Singapore,Q,1976-Q3,7.24
+SG,Singapore,Q,1976-Q4,6.96
+SG,Singapore,Q,1977-Q1,6.22
+SG,Singapore,Q,1977-Q2,7.57
+SG,Singapore,Q,1977-Q3,6.38
+SG,Singapore,Q,1977-Q4,7.23
+SG,Singapore,Q,1978-Q1,5.6
+SG,Singapore,Q,1978-Q2,6.19
+SG,Singapore,Q,1978-Q3,8.84
+SG,Singapore,Q,1978-Q4,10.2
+SG,Singapore,Q,1979-Q1,9.52
+SG,Singapore,Q,1979-Q2,10.71
+SG,Singapore,Q,1979-Q3,8.17
+SG,Singapore,Q,1979-Q4,9.88
+SG,Singapore,Q,1980-Q1,11.53
+SG,Singapore,Q,1980-Q2,10.32
+SG,Singapore,Q,1980-Q3,10.34
+SG,Singapore,Q,1980-Q4,8.49
+SG,Singapore,Q,1981-Q1,10.29
+SG,Singapore,Q,1981-Q2,11.46
+SG,Singapore,Q,1981-Q3,11.16
+SG,Singapore,Q,1981-Q4,10.37
+SG,Singapore,Q,1982-Q1,9.09
+SG,Singapore,Q,1982-Q2,7.37
+SG,Singapore,Q,1982-Q3,6.44
+SG,Singapore,Q,1982-Q4,5.73
+SG,Singapore,Q,1983-Q1,7.56
+SG,Singapore,Q,1983-Q2,8.0
+SG,Singapore,Q,1983-Q3,8.55
+SG,Singapore,Q,1983-Q4,9.99
+SG,Singapore,Q,1984-Q1,10.9
+SG,Singapore,Q,1984-Q2,9.8
+SG,Singapore,Q,1984-Q3,8.82
+SG,Singapore,Q,1984-Q4,5.93
+SG,Singapore,Q,1985-Q1,3.92
+SG,Singapore,Q,1985-Q2,-0.06
+SG,Singapore,Q,1985-Q3,-2.32
+SG,Singapore,Q,1985-Q4,-3.76
+SG,Singapore,Q,1986-Q1,-4.03
+SG,Singapore,Q,1986-Q2,0.08
+SG,Singapore,Q,1986-Q3,2.87
+SG,Singapore,Q,1986-Q4,6.53
+SG,Singapore,Q,1987-Q1,8.06
+SG,Singapore,Q,1987-Q2,10.17
+SG,Singapore,Q,1987-Q3,12.25
+SG,Singapore,Q,1987-Q4,12.49
+SG,Singapore,Q,1988-Q1,11.14
+SG,Singapore,Q,1988-Q2,12.0
+SG,Singapore,Q,1988-Q3,11.21
+SG,Singapore,Q,1988-Q4,10.74
+SG,Singapore,Q,1989-Q1,9.89
+SG,Singapore,Q,1989-Q2,11.42
+SG,Singapore,Q,1989-Q3,9.92
+SG,Singapore,Q,1989-Q4,9.46
+SG,Singapore,Q,1990-Q1,14.01
+SG,Singapore,Q,1990-Q2,8.75
+SG,Singapore,Q,1990-Q3,8.85
+SG,Singapore,Q,1990-Q4,8.07
+SG,Singapore,Q,1991-Q1,6.41
+SG,Singapore,Q,1991-Q2,6.53
+SG,Singapore,Q,1991-Q3,7.27
+SG,Singapore,Q,1991-Q4,6.52
+SG,Singapore,Q,1992-Q1,5.68
+SG,Singapore,Q,1992-Q2,5.39
+SG,Singapore,Q,1992-Q3,6.69
+SG,Singapore,Q,1992-Q4,8.68
+SG,Singapore,Q,1993-Q1,8.96
+SG,Singapore,Q,1993-Q2,12.33
+SG,Singapore,Q,1993-Q3,11.5
+SG,Singapore,Q,1993-Q4,12.88
+SG,Singapore,Q,1994-Q1,13.49
+SG,Singapore,Q,1994-Q2,10.33
+SG,Singapore,Q,1994-Q3,11.8
+SG,Singapore,Q,1994-Q4,9.03
+SG,Singapore,Q,1995-Q1,5.26
+SG,Singapore,Q,1995-Q2,7.41
+SG,Singapore,Q,1995-Q3,8.24
+SG,Singapore,Q,1995-Q4,7.65
+SG,Singapore,Q,1996-Q1,11.7
+SG,Singapore,Q,1996-Q2,8.62
+SG,Singapore,Q,1996-Q3,4.23
+SG,Singapore,Q,1996-Q4,5.84
+SG,Singapore,Q,1997-Q1,5.74
+SG,Singapore,Q,1997-Q2,9.47
+SG,Singapore,Q,1997-Q3,10.94
+SG,Singapore,Q,1997-Q4,7.08
+SG,Singapore,Q,1998-Q1,1.51
+SG,Singapore,Q,1998-Q2,-2.42
+SG,Singapore,Q,1998-Q3,-5.02
+SG,Singapore,Q,1998-Q4,-2.56
+SG,Singapore,Q,1999-Q1,2.19
+SG,Singapore,Q,1999-Q2,5.43
+SG,Singapore,Q,1999-Q3,8.04
+SG,Singapore,Q,1999-Q4,7.14
+SG,Singapore,Q,2000-Q1,9.04
+SG,Singapore,Q,2000-Q2,8.21
+SG,Singapore,Q,2000-Q3,9.53
+SG,Singapore,Q,2000-Q4,9.35
+SG,Singapore,Q,2001-Q1,5.43
+SG,Singapore,Q,2001-Q2,0.51
+SG,Singapore,Q,2001-Q3,-4.95
+SG,Singapore,Q,2001-Q4,-4.71
+SG,Singapore,Q,2002-Q1,-1.11
+SG,Singapore,Q,2002-Q2,4.22
+SG,Singapore,Q,2002-Q3,6.61
+SG,Singapore,Q,2002-Q4,6.08
+SG,Singapore,Q,2003-Q1,4.17
+SG,Singapore,Q,2003-Q2,-0.26
+SG,Singapore,Q,2003-Q3,5.33
+SG,Singapore,Q,2003-Q4,8.88
+SG,Singapore,Q,2004-Q1,10.34
+SG,Singapore,Q,2004-Q2,13.51
+SG,Singapore,Q,2004-Q3,8.43
+SG,Singapore,Q,2004-Q4,7.81
+SG,Singapore,Q,2005-Q1,5.42
+SG,Singapore,Q,2005-Q2,6.25
+SG,Singapore,Q,2005-Q3,8.49
+SG,Singapore,Q,2005-Q4,9.15
+SG,Singapore,Q,2006-Q1,10.2
+SG,Singapore,Q,2006-Q2,8.77
+SG,Singapore,Q,2006-Q3,8.61
+SG,Singapore,Q,2006-Q4,8.53
+SG,Singapore,Q,2007-Q1,8.56
+SG,Singapore,Q,2007-Q2,10.04
+SG,Singapore,Q,2007-Q3,10.97
+SG,Singapore,Q,2007-Q4,6.61
+SG,Singapore,Q,2008-Q1,8.16
+SG,Singapore,Q,2008-Q2,3.32
+SG,Singapore,Q,2008-Q3,-0.08
+SG,Singapore,Q,2008-Q4,-3.43
+SG,Singapore,Q,2009-Q1,-7.71
+SG,Singapore,Q,2009-Q2,-1.17
+SG,Singapore,Q,2009-Q3,2.84
+SG,Singapore,Q,2009-Q4,6.8
+SG,Singapore,Q,2010-Q1,16.29
+SG,Singapore,Q,2010-Q2,18.62
+SG,Singapore,Q,2010-Q3,10.29
+SG,Singapore,Q,2010-Q4,13.27
+SG,Singapore,Q,2011-Q1,9.15
+SG,Singapore,Q,2011-Q2,2.92
+SG,Singapore,Q,2011-Q3,7.75
+SG,Singapore,Q,2011-Q4,5.28
+SG,Singapore,Q,2012-Q1,4.85
+SG,Singapore,Q,2012-Q2,6.17
+SG,Singapore,Q,2012-Q3,2.04
+SG,Singapore,Q,2012-Q4,4.75
+SG,Singapore,Q,2013-Q1,3.43
+SG,Singapore,Q,2013-Q2,4.61
+SG,Singapore,Q,2013-Q3,6.12
+SG,Singapore,Q,2013-Q4,5.09
+SG,Singapore,Q,2014-Q1,4.28
+SG,Singapore,Q,2014-Q2,3.31
+SG,Singapore,Q,2014-Q3,3.66
+SG,Singapore,Q,2014-Q4,4.5
+SG,Singapore,Q,2015-Q1,2.97
+SG,Singapore,Q,2015-Q2,3.12
+SG,Singapore,Q,2015-Q3,3.66
+SG,Singapore,Q,2015-Q4,2.18
+SG,Singapore,Q,2016-Q1,3.53
+SG,Singapore,Q,2016-Q2,3.38
+SG,Singapore,Q,2016-Q3,3.5
+SG,Singapore,Q,2016-Q4,5.19
+SG,Singapore,Q,2017-Q1,4.58
+SG,Singapore,Q,2017-Q2,3.5
+SG,Singapore,Q,2017-Q3,5.03
+SG,Singapore,Q,2017-Q4,4.2
+SG,Singapore,Q,2018-Q1,4.41
+SG,Singapore,Q,2018-Q2,4.54
+SG,Singapore,Q,2018-Q3,2.8
+SG,Singapore,Q,2018-Q4,1.13
+SG,Singapore,Q,2019-Q1,1.3
+SG,Singapore,Q,2019-Q2,1.07
+SG,Singapore,Q,2019-Q3,0.61
+SG,Singapore,Q,2019-Q4,1.64
+SG,Singapore,Q,2020-Q1,1.37
+SG,Singapore,Q,2020-Q2,-11.74
+SG,Singapore,Q,2020-Q3,-3.94
+SG,Singapore,Q,2020-Q4,-0.11
+SG,Singapore,Q,2021-Q1,4.9
+SG,Singapore,Q,2021-Q2,18.92
+SG,Singapore,Q,2021-Q3,9.73
+SG,Singapore,Q,2021-Q4,8.05
+SG,Singapore,Q,2022-Q1,4.37
+SG,Singapore,Q,2022-Q2,5.01
+SG,Singapore,Q,2022-Q3,4.35
+SG,Singapore,Q,2022-Q4,2.38
+SG,Singapore,Q,2023-Q1,0.46
+SG,Singapore,Q,2023-Q2,0.59
+SG,Singapore,Q,2023-Q3,1.61
+SG,Singapore,Q,2023-Q4,3.11
+SG,Singapore,Q,2024-Q1,4.3
+SG,Singapore,Q,2024-Q2,4.81
+SG,Singapore,Q,2024-Q3,6.99
+SG,Singapore,Q,2024-Q4,5.25
+SG,Singapore,Q,2025-Q1,4.5
+SG,Singapore,Q,2025-Q2,5.4
+SG,Singapore,Q,2025-Q3,4.47
+SG,Singapore,Q,2025-Q4,5.71
+SG,Singapore,Q,2026-Q1,6.27
+SG,Singapore,Q,2026-Q2,5.94
+TH,Thailand,Q,1994-Q1,10.5
+TH,Thailand,Q,1994-Q2,10.2
+TH,Thailand,Q,1994-Q3,4.5
+TH,Thailand,Q,1994-Q4,6.9
+TH,Thailand,Q,1995-Q1,7.3
+TH,Thailand,Q,1995-Q2,9.6
+TH,Thailand,Q,1995-Q3,8.5
+TH,Thailand,Q,1995-Q4,7.2
+TH,Thailand,Q,1996-Q1,3.8
+TH,Thailand,Q,1996-Q2,6.4
+TH,Thailand,Q,1996-Q3,7.4
+TH,Thailand,Q,1996-Q4,5.1
+TH,Thailand,Q,1997-Q1,0.4
+TH,Thailand,Q,1997-Q2,-2.0
+TH,Thailand,Q,1997-Q3,-3.0
+TH,Thailand,Q,1997-Q4,-6.2
+TH,Thailand,Q,1998-Q1,-5.7
+TH,Thailand,Q,1998-Q2,-12.5
+TH,Thailand,Q,1998-Q3,-9.9
+TH,Thailand,Q,1998-Q4,-2.5
+TH,Thailand,Q,1999-Q1,1.2
+TH,Thailand,Q,1999-Q2,5.4
+TH,Thailand,Q,1999-Q3,7.8
+TH,Thailand,Q,1999-Q4,4.1
+TH,Thailand,Q,2000-Q1,6.9
+TH,Thailand,Q,2000-Q2,6.0
+TH,Thailand,Q,2000-Q3,2.4
+TH,Thailand,Q,2000-Q4,2.6
+TH,Thailand,Q,2001-Q1,2.3
+TH,Thailand,Q,2001-Q2,3.7
+TH,Thailand,Q,2001-Q3,3.6
+TH,Thailand,Q,2001-Q4,4.1
+TH,Thailand,Q,2002-Q1,4.6
+TH,Thailand,Q,2002-Q2,6.4
+TH,Thailand,Q,2002-Q3,6.9
+TH,Thailand,Q,2002-Q4,6.8
+TH,Thailand,Q,2003-Q1,7.6
+TH,Thailand,Q,2003-Q2,6.3
+TH,Thailand,Q,2003-Q3,6.8
+TH,Thailand,Q,2003-Q4,7.9
+TH,Thailand,Q,2004-Q1,6.5
+TH,Thailand,Q,2004-Q2,6.3
+TH,Thailand,Q,2004-Q3,5.6
+TH,Thailand,Q,2004-Q4,6.6
+TH,Thailand,Q,2005-Q1,3.9
+TH,Thailand,Q,2005-Q2,4.3
+TH,Thailand,Q,2005-Q3,4.7
+TH,Thailand,Q,2005-Q4,3.9
+TH,Thailand,Q,2006-Q1,5.5
+TH,Thailand,Q,2006-Q2,4.5
+TH,Thailand,Q,2006-Q3,4.5
+TH,Thailand,Q,2006-Q4,5.4
+TH,Thailand,Q,2007-Q1,6.6
+TH,Thailand,Q,2007-Q2,5.2
+TH,Thailand,Q,2007-Q3,5.5
+TH,Thailand,Q,2007-Q4,4.5
+TH,Thailand,Q,2008-Q1,3.3
+TH,Thailand,Q,2008-Q2,3.5
+TH,Thailand,Q,2008-Q3,2.2
+TH,Thailand,Q,2008-Q4,-2.0
+TH,Thailand,Q,2009-Q1,-4.3
+TH,Thailand,Q,2009-Q2,-3.1
+TH,Thailand,Q,2009-Q3,-0.5
+TH,Thailand,Q,2009-Q4,5.1
+TH,Thailand,Q,2010-Q1,12.2
+TH,Thailand,Q,2010-Q2,9.0
+TH,Thailand,Q,2010-Q3,5.8
+TH,Thailand,Q,2010-Q4,3.4
+TH,Thailand,Q,2011-Q1,3.3
+TH,Thailand,Q,2011-Q2,1.8
+TH,Thailand,Q,2011-Q3,2.4
+TH,Thailand,Q,2011-Q4,-4.0
+TH,Thailand,Q,2012-Q1,2.9
+TH,Thailand,Q,2012-Q2,6.0
+TH,Thailand,Q,2012-Q3,5.0
+TH,Thailand,Q,2012-Q4,15.5
+TH,Thailand,Q,2013-Q1,5.4
+TH,Thailand,Q,2013-Q2,2.7
+TH,Thailand,Q,2013-Q3,2.5
+TH,Thailand,Q,2013-Q4,0.2
+TH,Thailand,Q,2014-Q1,-0.4
+TH,Thailand,Q,2014-Q2,0.8
+TH,Thailand,Q,2014-Q3,1.1
+TH,Thailand,Q,2014-Q4,2.4
+TH,Thailand,Q,2015-Q1,3.1
+TH,Thailand,Q,2015-Q2,2.9
+TH,Thailand,Q,2015-Q3,3.4
+TH,Thailand,Q,2015-Q4,3.1
+TH,Thailand,Q,2016-Q1,3.3
+TH,Thailand,Q,2016-Q2,3.8
+TH,Thailand,Q,2016-Q3,3.2
+TH,Thailand,Q,2016-Q4,3.4
+TH,Thailand,Q,2017-Q1,3.8
+TH,Thailand,Q,2017-Q2,4.3
+TH,Thailand,Q,2017-Q3,4.5
+TH,Thailand,Q,2017-Q4,4.1
+TH,Thailand,Q,2018-Q1,5.1
+TH,Thailand,Q,2018-Q2,4.6
+TH,Thailand,Q,2018-Q3,3.2
+TH,Thailand,Q,2018-Q4,3.9
+TH,Thailand,Q,2019-Q1,2.6
+TH,Thailand,Q,2019-Q2,2.2
+TH,Thailand,Q,2019-Q3,2.5
+TH,Thailand,Q,2019-Q4,1.2
+TH,Thailand,Q,2020-Q1,-2.1
+TH,Thailand,Q,2020-Q2,-12.2
+TH,Thailand,Q,2020-Q3,-6.3
+TH,Thailand,Q,2020-Q4,-4.1
+TH,Thailand,Q,2021-Q1,-2.5
+TH,Thailand,Q,2021-Q2,7.7
+TH,Thailand,Q,2021-Q3,-0.1
+TH,Thailand,Q,2021-Q4,2.0
+TH,Thailand,Q,2022-Q1,2.3
+TH,Thailand,Q,2022-Q2,2.4
+TH,Thailand,Q,2022-Q3,4.6
+TH,Thailand,Q,2022-Q4,1.5
+TH,Thailand,Q,2023-Q1,2.9
+TH,Thailand,Q,2023-Q2,2.2
+TH,Thailand,Q,2023-Q3,1.8
+TH,Thailand,Q,2023-Q4,2.0
+TH,Thailand,Q,2024-Q1,2.1
+TH,Thailand,Q,2024-Q2,2.7
+TH,Thailand,Q,2024-Q3,3.3
+TH,Thailand,Q,2024-Q4,3.7
+TH,Thailand,Q,2025-Q1,3.1
+TH,Thailand,Q,2025-Q2,2.8
+TH,Thailand,Q,2025-Q3,1.2
+TH,Thailand,Q,2025-Q4,2.5
+TH,Thailand,Q,2026-Q1,2.8
+TH,Thailand,Q,2026-Q2,1.9
+TW,Taiwan,Q,1982-Q1,4.52
+TW,Taiwan,Q,1982-Q2,5.2
+TW,Taiwan,Q,1982-Q3,4.72
+TW,Taiwan,Q,1982-Q4,4.79
+TW,Taiwan,Q,1983-Q1,4.27
+TW,Taiwan,Q,1983-Q2,8.39
+TW,Taiwan,Q,1983-Q3,11.29
+TW,Taiwan,Q,1983-Q4,11.78
+TW,Taiwan,Q,1984-Q1,11.89
+TW,Taiwan,Q,1984-Q2,11.68
+TW,Taiwan,Q,1984-Q3,9.75
+TW,Taiwan,Q,1984-Q4,7.26
+TW,Taiwan,Q,1985-Q1,5.67
+TW,Taiwan,Q,1985-Q2,4.24
+TW,Taiwan,Q,1985-Q3,3.57
+TW,Taiwan,Q,1985-Q4,5.81
+TW,Taiwan,Q,1986-Q1,10.18
+TW,Taiwan,Q,1986-Q2,9.55
+TW,Taiwan,Q,1986-Q3,12.32
+TW,Taiwan,Q,1986-Q4,13.79
+TW,Taiwan,Q,1987-Q1,13.12
+TW,Taiwan,Q,1987-Q2,14.25
+TW,Taiwan,Q,1987-Q3,13.61
+TW,Taiwan,Q,1987-Q4,10.24
+TW,Taiwan,Q,1988-Q1,8.71
+TW,Taiwan,Q,1988-Q2,7.19
+TW,Taiwan,Q,1988-Q3,7.9
+TW,Taiwan,Q,1988-Q4,8.34
+TW,Taiwan,Q,1989-Q1,9.09
+TW,Taiwan,Q,1989-Q2,9.21
+TW,Taiwan,Q,1989-Q3,8.72
+TW,Taiwan,Q,1989-Q4,7.94
+TW,Taiwan,Q,1990-Q1,7.42
+TW,Taiwan,Q,1990-Q2,4.05
+TW,Taiwan,Q,1990-Q3,4.16
+TW,Taiwan,Q,1990-Q4,6.64
+TW,Taiwan,Q,1991-Q1,7.02
+TW,Taiwan,Q,1991-Q2,8.64
+TW,Taiwan,Q,1991-Q3,9.21
+TW,Taiwan,Q,1991-Q4,8.53
+TW,Taiwan,Q,1992-Q1,10.53
+TW,Taiwan,Q,1992-Q2,8.51
+TW,Taiwan,Q,1992-Q3,7.94
+TW,Taiwan,Q,1992-Q4,6.52
+TW,Taiwan,Q,1993-Q1,6.77
+TW,Taiwan,Q,1993-Q2,7.09
+TW,Taiwan,Q,1993-Q3,6.58
+TW,Taiwan,Q,1993-Q4,6.82
+TW,Taiwan,Q,1994-Q1,5.99
+TW,Taiwan,Q,1994-Q2,7.7
+TW,Taiwan,Q,1994-Q3,7.0
+TW,Taiwan,Q,1994-Q4,9.2
+TW,Taiwan,Q,1995-Q1,7.54
+TW,Taiwan,Q,1995-Q2,6.47
+TW,Taiwan,Q,1995-Q3,6.97
+TW,Taiwan,Q,1995-Q4,5.15
+TW,Taiwan,Q,1996-Q1,5.77
+TW,Taiwan,Q,1996-Q2,5.75
+TW,Taiwan,Q,1996-Q3,6.2
+TW,Taiwan,Q,1996-Q4,6.93
+TW,Taiwan,Q,1997-Q1,5.69
+TW,Taiwan,Q,1997-Q2,5.53
+TW,Taiwan,Q,1997-Q3,6.18
+TW,Taiwan,Q,1997-Q4,6.74
+TW,Taiwan,Q,1998-Q1,4.73
+TW,Taiwan,Q,1998-Q2,4.27
+TW,Taiwan,Q,1998-Q3,4.75
+TW,Taiwan,Q,1998-Q4,3.16
+TW,Taiwan,Q,1999-Q1,6.26
+TW,Taiwan,Q,1999-Q2,7.24
+TW,Taiwan,Q,1999-Q3,5.86
+TW,Taiwan,Q,1999-Q4,7.53
+TW,Taiwan,Q,2000-Q1,6.02
+TW,Taiwan,Q,2000-Q2,6.27
+TW,Taiwan,Q,2000-Q3,7.19
+TW,Taiwan,Q,2000-Q4,5.78
+TW,Taiwan,Q,2001-Q1,1.45
+TW,Taiwan,Q,2001-Q2,-2.55
+TW,Taiwan,Q,2001-Q3,-4.06
+TW,Taiwan,Q,2001-Q4,-0.3
+TW,Taiwan,Q,2002-Q1,1.82
+TW,Taiwan,Q,2002-Q2,6.75
+TW,Taiwan,Q,2002-Q3,7.02
+TW,Taiwan,Q,2002-Q4,6.22
+TW,Taiwan,Q,2003-Q1,5.17
+TW,Taiwan,Q,2003-Q2,-1.15
+TW,Taiwan,Q,2003-Q3,5.41
+TW,Taiwan,Q,2003-Q4,7.26
+TW,Taiwan,Q,2004-Q1,6.93
+TW,Taiwan,Q,2004-Q2,10.8
+TW,Taiwan,Q,2004-Q3,7.05
+TW,Taiwan,Q,2004-Q4,3.6
+TW,Taiwan,Q,2005-Q1,3.76
+TW,Taiwan,Q,2005-Q2,4.82
+TW,Taiwan,Q,2005-Q3,5.07
+TW,Taiwan,Q,2005-Q4,7.63
+TW,Taiwan,Q,2006-Q1,6.05
+TW,Taiwan,Q,2006-Q2,5.64
+TW,Taiwan,Q,2006-Q3,7.19
+TW,Taiwan,Q,2006-Q4,4.33
+TW,Taiwan,Q,2007-Q1,5.64
+TW,Taiwan,Q,2007-Q2,7.12
+TW,Taiwan,Q,2007-Q3,7.97
+TW,Taiwan,Q,2007-Q4,6.58
+TW,Taiwan,Q,2008-Q1,7.66
+TW,Taiwan,Q,2008-Q2,5.66
+TW,Taiwan,Q,2008-Q3,-1.39
+TW,Taiwan,Q,2008-Q4,-7.36
+TW,Taiwan,Q,2009-Q1,-7.87
+TW,Taiwan,Q,2009-Q2,-5.92
+TW,Taiwan,Q,2009-Q3,-1.14
+TW,Taiwan,Q,2009-Q4,8.58
+TW,Taiwan,Q,2010-Q1,11.55
+TW,Taiwan,Q,2010-Q2,12.02
+TW,Taiwan,Q,2010-Q3,11.54
+TW,Taiwan,Q,2010-Q4,6.34
+TW,Taiwan,Q,2011-Q1,6.72
+TW,Taiwan,Q,2011-Q2,4.16
+TW,Taiwan,Q,2011-Q3,3.28
+TW,Taiwan,Q,2011-Q4,0.89
+TW,Taiwan,Q,2012-Q1,1.09
+TW,Taiwan,Q,2012-Q2,1.04
+TW,Taiwan,Q,2012-Q3,2.18
+TW,Taiwan,Q,2012-Q4,4.48
+TW,Taiwan,Q,2013-Q1,1.5
+TW,Taiwan,Q,2013-Q2,2.68
+TW,Taiwan,Q,2013-Q3,1.95
+TW,Taiwan,Q,2013-Q4,3.73
+TW,Taiwan,Q,2014-Q1,4.69
+TW,Taiwan,Q,2014-Q2,4.92
+TW,Taiwan,Q,2014-Q3,4.9
+TW,Taiwan,Q,2014-Q4,4.38
+TW,Taiwan,Q,2015-Q1,4.79
+TW,Taiwan,Q,2015-Q2,1.89
+TW,Taiwan,Q,2015-Q3,-0.28
+TW,Taiwan,Q,2015-Q4,-0.2
+TW,Taiwan,Q,2016-Q1,-0.09
+TW,Taiwan,Q,2016-Q2,1.69
+TW,Taiwan,Q,2016-Q3,3.0
+TW,Taiwan,Q,2016-Q4,3.92
+TW,Taiwan,Q,2017-Q1,3.72
+TW,Taiwan,Q,2017-Q2,2.79
+TW,Taiwan,Q,2017-Q3,3.98
+TW,Taiwan,Q,2017-Q4,4.12
+TW,Taiwan,Q,2018-Q1,3.43
+TW,Taiwan,Q,2018-Q2,3.43
+TW,Taiwan,Q,2018-Q3,2.52
+TW,Taiwan,Q,2018-Q4,2.33
+TW,Taiwan,Q,2019-Q1,2.08
+TW,Taiwan,Q,2019-Q2,2.96
+TW,Taiwan,Q,2019-Q3,3.41
+TW,Taiwan,Q,2019-Q4,3.68
+TW,Taiwan,Q,2020-Q1,3.21
+TW,Taiwan,Q,2020-Q2,0.55
+TW,Taiwan,Q,2020-Q3,4.23
+TW,Taiwan,Q,2020-Q4,5.48
+TW,Taiwan,Q,2021-Q1,9.62
+TW,Taiwan,Q,2021-Q2,8.28
+TW,Taiwan,Q,2021-Q3,4.32
+TW,Taiwan,Q,2021-Q4,5.1
+TW,Taiwan,Q,2022-Q1,3.85
+TW,Taiwan,Q,2022-Q2,3.51
+TW,Taiwan,Q,2022-Q3,4.06
+TW,Taiwan,Q,2022-Q4,-0.43
+TW,Taiwan,Q,2023-Q1,-3.58
+TW,Taiwan,Q,2023-Q2,1.42
+TW,Taiwan,Q,2023-Q3,1.56
+TW,Taiwan,Q,2023-Q4,4.74
+TW,Taiwan,Q,2024-Q1,7.16
+TW,Taiwan,Q,2024-Q2,5.33
+TW,Taiwan,Q,2024-Q3,4.66
+TW,Taiwan,Q,2024-Q4,4.13
+TW,Taiwan,Q,2025-Q1,5.54
+TW,Taiwan,Q,2025-Q2,7.71
+TW,Taiwan,Q,2025-Q3,8.42
+TW,Taiwan,Q,2025-Q4,12.95
+TW,Taiwan,Q,2026-Q1,15.43
+TW,Taiwan,Q,2026-Q2,12.93
+VN,Vietnam,Q,2013-Q1,4.885827
+VN,Vietnam,Q,2014-Q1,4.960356
+VN,Vietnam,Q,2015-Q1,6.02802
+VN,Vietnam,Q,2016-Q1,5.459407
+VN,Vietnam,Q,2017-Q1,5.102766
+VN,Vietnam,Q,2018-Q1,7.378208
+VN,Vietnam,Q,2018-Q2,6.733073
+VN,Vietnam,Q,2018-Q3,6.82303
+VN,Vietnam,Q,2018-Q4,7.313674
+VN,Vietnam,Q,2019-Q1,6.821605
+VN,Vietnam,Q,2019-Q2,6.733522
+VN,Vietnam,Q,2019-Q3,7.483672
+VN,Vietnam,Q,2019-Q4,6.968432
+VN,Vietnam,Q,2020-Q1,3.68211
+VN,Vietnam,Q,2020-Q2,0.387376
+VN,Vietnam,Q,2020-Q3,2.690682
+VN,Vietnam,Q,2020-Q4,4.475367
+VN,Vietnam,Q,2021-Q1,4.650437
+VN,Vietnam,Q,2021-Q2,6.570692
+VN,Vietnam,Q,2021-Q3,-6.024775
+VN,Vietnam,Q,2021-Q4,5.221668
+VN,Vietnam,Q,2022-Q1,5.052648
+VN,Vietnam,Q,2022-Q2,7.828583
+VN,Vietnam,Q,2022-Q3,13.714433
+VN,Vietnam,Q,2022-Q4,5.919097
+VN,Vietnam,Q,2023-Q1,3.275457
+VN,Vietnam,Q,2023-Q2,4.0511
+VN,Vietnam,Q,2023-Q3,5.469892
+VN,Vietnam,Q,2023-Q4,6.723794
+VN,Vietnam,Q,2024-Q1,5.873694
+VN,Vietnam,Q,2024-Q2,7.093235
+VN,Vietnam,Q,2024-Q3,7.429238
+VN,Vietnam,Q,2024-Q4,7.550167
+VN,Vietnam,Q,2025-Q1,7.049388
+VN,Vietnam,Q,2025-Q2,8.191408
+VN,Vietnam,Q,2025-Q3,8.252142
+VN,Vietnam,Q,2025-Q4,8.459521
+VN,Vietnam,Q,2026-Q1,7.939563
+VN,Vietnam,Q,2026-Q2,8.811996
+VN,Vietnam,Q,2026-Q3,9.947988

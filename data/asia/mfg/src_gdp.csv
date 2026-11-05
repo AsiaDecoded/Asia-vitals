@@ -1,0 +1,837 @@
+economy,freq,period,real_level,real_yoy,cum_yoy,note
+CN,Q,1993-Q1,,15.3,15.3,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1993-Q2,,13.5,14.3,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1993-Q3,,13.0,13.8,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1993-Q4,,14.2,13.9,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1994-Q1,,14.2,14.2,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1994-Q2,,13.4,13.7,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1994-Q3,,13.1,13.5,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1994-Q4,,12.1,13.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1995-Q1,,12.0,12.0,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1995-Q2,,11.0,11.5,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1995-Q3,,10.5,11.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1995-Q4,,10.8,11.0,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1996-Q1,,11.0,11.0,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1996-Q2,,9.4,10.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1996-Q3,,9.3,9.8,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1996-Q4,,10.3,10.0,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1997-Q1,,10.2,10.2,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1997-Q2,,10.1,10.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1997-Q3,,8.7,9.6,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1997-Q4,,8.6,9.3,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1998-Q1,,7.3,7.3,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1998-Q2,,7.0,7.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1998-Q3,,7.9,7.4,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1998-Q4,,9.2,7.9,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1999-Q1,,9.0,9.0,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1999-Q2,,7.9,8.4,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1999-Q3,,7.7,8.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,1999-Q4,,6.8,7.7,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2000-Q1,,8.8,8.8,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2000-Q2,,9.2,9.0,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2000-Q3,,8.9,9.0,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2000-Q4,,7.6,8.6,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2001-Q1,,9.5,9.5,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2001-Q2,,8.6,9.0,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2001-Q3,,8.0,8.6,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2001-Q4,,7.5,8.3,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2002-Q1,,9.0,9.0,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2002-Q2,,8.9,8.9,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2002-Q3,,9.7,9.2,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2002-Q4,,9.2,9.2,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2003-Q1,,11.2,11.2,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2003-Q2,,9.2,10.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2003-Q3,,10.1,10.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2003-Q4,,10.1,10.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2004-Q1,,10.6,10.6,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2004-Q2,,11.6,11.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2004-Q3,,9.8,10.7,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2004-Q4,,8.8,10.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2005-Q1,,11.2,11.2,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2005-Q2,,11.1,11.2,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2005-Q3,,10.9,11.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2005-Q4,,12.4,11.5,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2006-Q1,,12.4,12.4,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2006-Q2,,13.6,13.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2006-Q3,,12.2,12.7,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2006-Q4,,12.5,12.7,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2007-Q1,,13.6,13.6,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2007-Q2,,14.9,14.3,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2007-Q3,,14.2,14.3,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2007-Q4,,13.9,14.2,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2008-Q1,,11.6,11.6,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2008-Q2,,11.0,11.3,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2008-Q3,,9.5,10.7,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2008-Q4,,7.1,9.7,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2009-Q1,,6.4,6.4,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2009-Q2,,8.2,7.3,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2009-Q3,,10.6,8.5,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2009-Q4,,11.9,9.4,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2010-Q1,,12.2,12.2,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2010-Q2,,10.7,11.4,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2010-Q3,,9.9,10.8,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2010-Q4,,9.9,10.6,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2011-Q1,,10.1,10.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2011-Q2,,9.9,10.0,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2011-Q3,,9.3,9.8,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2011-Q4,,8.7,9.5,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2012-Q1,,8.1,8.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2012-Q2,,7.7,7.9,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2012-Q3,,7.5,7.7,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2012-Q4,,8.1,7.9,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2013-Q1,,7.9,7.9,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2013-Q2,,7.6,7.7,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2013-Q3,,7.9,7.8,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2013-Q4,,7.7,7.8,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2014-Q1,,7.6,7.6,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2014-Q2,,7.7,7.6,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2014-Q3,,7.3,7.5,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2014-Q4,,7.4,7.5,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2015-Q1,,7.1,7.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2015-Q2,,7.1,7.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2015-Q3,,7.0,7.0,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2015-Q4,,6.9,7.0,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2016-Q1,,6.8,6.8,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2016-Q2,,6.7,6.8,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2016-Q3,,6.7,6.8,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2016-Q4,,6.8,6.8,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2017-Q1,,7.0,7.0,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2017-Q2,,7.0,7.0,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2017-Q3,,6.9,6.9,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2017-Q4,,6.8,6.9,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2018-Q1,,6.9,6.9,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2018-Q2,,6.9,6.9,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2018-Q3,,6.7,6.8,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2018-Q4,,6.5,6.8,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2019-Q1,,6.4,6.4,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2019-Q2,,6.1,6.2,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2019-Q3,,6.0,6.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2019-Q4,,5.9,6.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2020-Q1,,-6.8,-6.8,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2020-Q2,,3.2,-1.6,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2020-Q3,,4.9,0.7,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2020-Q4,,6.5,2.3,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2021-Q1,,18.9,18.9,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2021-Q2,,8.1,13.0,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2021-Q3,,5.5,10.2,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2021-Q4,,4.5,8.6,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2022-Q1,,4.8,4.8,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2022-Q2,,0.8,2.7,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2022-Q3,,4.0,3.2,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2022-Q4,,3.0,3.1,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2023-Q1,,4.7,4.7,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2023-Q2,,6.5,5.7,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2023-Q3,,5.0,5.4,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2023-Q4,,5.3,5.4,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2024-Q1,,5.3,5.3,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2024-Q2,,4.7,4.9,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2024-Q3,,4.6,4.8,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2024-Q4,,5.4,5.0,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2025-Q1,,5.4,5.4,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2025-Q2,,5.2,5.3,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2025-Q3,,4.8,5.2,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2025-Q4,,4.5,5.0,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2026-Q1,,5.0,5.0,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2026-Q2,,4.3,4.7,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+CN,Q,2026-Q3,,4.5,4.6,"NBS 国内生产总值指数 (same period last year = 100), quarter and year to date, as published"
+KR,Q,1960-Q1,7031.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1960-Q2,8108.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1960-Q3,7104.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1960-Q4,8787.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1961-Q1,7475.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1961-Q2,8687.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1961-Q3,7442.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1961-Q4,9573.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1962-Q1,7947.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1962-Q2,8552.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1962-Q3,7977.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1962-Q4,10003.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1963-Q1,8753.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1963-Q2,9295.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1963-Q3,8749.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1963-Q4,10788.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1964-Q1,9161.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1964-Q2,9824.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1964-Q3,9457.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1964-Q4,12686.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1965-Q1,9917.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1965-Q2,11169.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1965-Q3,10158.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1965-Q4,12892.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1966-Q1,10725.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1966-Q2,12713.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1966-Q3,11768.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1966-Q4,14230.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1967-Q1,11747.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1967-Q2,13367.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1967-Q3,13424.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1967-Q4,15423.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1968-Q1,13336.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1968-Q2,15186.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1968-Q3,15552.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1968-Q4,17022.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1969-Q1,14555.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1969-Q2,17112.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1969-Q3,17769.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1969-Q4,20575.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1970-Q1,16102.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1970-Q2,19484.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1970-Q3,18642.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1970-Q4,22901.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1971-Q1,18180.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1971-Q2,22079.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1971-Q3,20778.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1971-Q4,24308.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1972-Q1,19204.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1972-Q2,23254.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1972-Q3,22129.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1972-Q4,27019.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1973-Q1,21665.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1973-Q2,26418.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1973-Q3,26180.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1973-Q4,31061.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1974-Q1,25057.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1974-Q2,29309.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1974-Q3,28231.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1974-Q4,32889.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1975-Q1,25619.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1975-Q2,31262.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1975-Q3,30567.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1975-Q4,37199.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1976-Q1,28792.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1976-Q2,35821.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1976-Q3,34729.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1976-Q4,41839.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1977-Q1,31458.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1977-Q2,39037.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1977-Q3,39428.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1977-Q4,48730.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1978-Q1,36238.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1978-Q2,44168.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1978-Q3,43331.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1978-Q4,52480.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1979-Q1,41627.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1979-Q2,49295.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1979-Q3,46678.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1979-Q4,54012.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1980-Q1,41715.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1980-Q2,47611.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1980-Q3,47812.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1980-Q4,51553.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1981-Q1,43354.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1981-Q2,49569.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1981-Q3,51666.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1981-Q4,58073.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1982-Q1,47335.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1982-Q2,53918.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1982-Q3,55942.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1982-Q4,62629.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1983-Q1,53862.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1983-Q2,61165.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1983-Q3,64956.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1983-Q4,69443.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1984-Q1,61348.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1984-Q2,68693.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1984-Q3,71206.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1984-Q4,74711.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1985-Q1,66009.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1985-Q2,73381.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1985-Q3,76450.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1985-Q4,82027.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1986-Q1,72098.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1986-Q2,80923.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1986-Q3,87253.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1986-Q4,91856.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1987-Q1,82999.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1987-Q2,93419.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1987-Q3,96779.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1987-Q4,101752.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1988-Q1,96924.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1988-Q2,101359.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1988-Q3,107142.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1988-Q4,115018.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1989-Q1,101854.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1989-Q2,109414.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1989-Q3,114649.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1989-Q4,124650.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1990-Q1,112243.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1990-Q2,121470.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1990-Q3,126884.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1990-Q4,135140.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1991-Q1,125104.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1991-Q2,135935.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1991-Q3,139327.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1991-Q4,149282.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1992-Q1,136078.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1992-Q2,146617.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1992-Q3,146377.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1992-Q4,155487.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1993-Q1,143120.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1993-Q2,156289.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1993-Q3,158081.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1993-Q4,167958.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1994-Q1,157141.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1994-Q2,169952.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1994-Q3,171421.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1994-Q4,185549.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1995-Q1,172503.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1995-Q2,187202.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1995-Q3,189956.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1995-Q4,201003.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1996-Q1,186589.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1996-Q2,202506.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1996-Q3,205166.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1996-Q4,216384.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1997-Q1,197924.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1997-Q2,218266.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1997-Q3,219523.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1997-Q4,225858.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1998-Q1,192244.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1998-Q2,202747.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1998-Q3,206007.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1998-Q4,218021.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1999-Q1,206261.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1999-Q2,227898.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1999-Q3,232786.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,1999-Q4,247222.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2000-Q1,232345.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2000-Q2,248927.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2000-Q3,254491.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2000-Q4,262525.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2001-Q1,243975.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2001-Q2,261120.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2001-Q3,263155.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2001-Q4,277216.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2002-Q1,261922.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2002-Q2,280767.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2002-Q3,284457.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2002-Q4,299281.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2003-Q1,272637.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2003-Q2,287112.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2003-Q3,290040.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2003-Q4,311272.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2004-Q1,288233.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2004-Q2,306141.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2004-Q3,305087.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2004-Q4,321785.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2005-Q1,297182.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2005-Q2,318189.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2005-Q3,320383.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2005-Q4,338717.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2006-Q1,315998.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2006-Q2,333862.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2006-Q3,336588.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2006-Q4,354869.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2007-Q1,331764.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2007-Q2,353570.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2007-Q3,355215.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2007-Q4,379128.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2008-Q1,351165.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2008-Q2,369200.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2008-Q3,369270.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2008-Q4,372695.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2009-Q1,343864.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2009-Q2,364474.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2009-Q3,373199.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2009-Q4,392783.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2010-Q1,370886.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2010-Q2,394033.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2010-Q3,394719.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2010-Q4,417613.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2011-Q1,390919.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2011-Q2,409156.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2011-Q3,407006.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2011-Q4,428339.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2012-Q1,400808.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2012-Q2,419611.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2012-Q3,416978.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2012-Q4,439689.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2013-Q1,410139.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2013-Q2,432418.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2013-Q3,432356.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2013-Q4,457371.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2014-Q1,425653.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2014-Q2,447905.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2014-Q3,445193.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2014-Q4,469222.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2015-Q1,436985.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2015-Q2,456539.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2015-Q3,460592.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2015-Q4,486072.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2016-Q1,450098.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2016-Q2,474126.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2016-Q3,474405.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2016-Q4,499920.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2017-Q1,465693.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2017-Q2,488383.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2017-Q3,493865.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2017-Q4,515789.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2018-Q1,480607.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2018-Q2,504711.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2018-Q3,506697.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2018-Q4,534085.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2019-Q1,489586.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2019-Q2,516735.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2019-Q3,517949.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2019-Q4,548710.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2020-Q1,495398.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2020-Q2,503114.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2020-Q3,513715.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2020-Q4,546238.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2021-Q1,508887.0,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2021-Q2,538099.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2021-Q3,537417.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2021-Q4,570739.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2022-Q1,527311.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2022-Q2,555732.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2022-Q3,557079.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2022-Q4,577704.9,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2023-Q1,532895.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2023-Q2,559555.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2023-Q3,565923.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2023-Q4,592332.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2024-Q1,552333.4,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2024-Q2,573842.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2024-Q3,575259.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2024-Q4,598632.7,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2025-Q1,553206.6,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2025-Q2,577871.2,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2025-Q3,587254.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2025-Q4,607935.1,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2026-Q1,574115.5,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2026-Q2,599493.3,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+KR,Q,2026-Q3,607130.8,,,"BoK ECOS 200Y106 item 1400 GDP, chained 2020 won, original series"
+MY,Q,2015-Q1,282255.0,,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2015-Q2,288975.0,,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2015-Q3,297965.0,,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2015-Q4,307745.0,,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2016-Q1,294329.0,4.3,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2016-Q2,301015.0,4.2,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2016-Q3,311510.0,4.5,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2016-Q4,322458.0,4.8,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2017-Q1,310744.0,5.6,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2017-Q2,318231.0,5.7,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2017-Q3,330664.0,6.1,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2017-Q4,341129.0,5.8,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2018-Q1,327096.0,5.3,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2018-Q2,333438.0,4.8,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2018-Q3,345685.0,4.5,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2018-Q4,357547.0,4.8,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2019-Q1,342373.0,4.7,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2019-Q2,349910.0,4.9,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2019-Q3,361117.0,4.5,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2019-Q4,370552.0,3.6,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2020-Q1,344690.0,0.7,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2020-Q2,290686.0,-16.9,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2020-Q3,352137.0,-2.5,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2020-Q4,358736.0,-3.2,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2021-Q1,343912.379,-0.2,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2021-Q2,338160.18,16.3,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2021-Q3,337421.281,-4.2,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2021-Q4,371388.111,3.5,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2022-Q1,361334.789,5.1,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2022-Q2,369428.932,9.2,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2022-Q3,386819.905,14.6,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2022-Q4,398919.128,7.4,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2023-Q1,381841.342,5.7,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2023-Q2,379442.821,2.7,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2023-Q3,398974.95,3.1,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2023-Q4,410515.067,2.9,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2024-Q1,397764.525,4.2,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2024-Q2,402102.247,6.0,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2024-Q3,420853.777,5.5,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2024-Q4,431152.239,5.0,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2025-Q1,415440.954,4.4,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2025-Q2,420534.085,4.6,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2025-Q3,443119.629,5.3,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2025-Q4,457858.602,6.2,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2026-Q1,437670.264,5.4,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+MY,Q,2026-Q2,445896.454,6.0,,"DOSM gdp_qtr_real_supply, sector p0 GDP, constant 2015 prices"
+SG,Q,1975-Q1,7367.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1975-Q2,7564.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1975-Q3,7960.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1975-Q4,8134.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1976-Q1,7972.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1976-Q2,8124.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1976-Q3,8537.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1976-Q4,8700.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1977-Q1,8467.8,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1977-Q2,8739.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1977-Q3,9081.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1977-Q4,9329.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1978-Q1,8942.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1978-Q2,9280.1,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1978-Q3,9884.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1978-Q4,10281.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1979-Q1,9793.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1979-Q2,10274.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1979-Q3,10692.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1979-Q4,11296.8,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1980-Q1,10922.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1980-Q2,11334.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1980-Q3,11797.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1980-Q4,12255.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1981-Q1,12045.8,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1981-Q2,12633.1,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1981-Q3,13113.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1981-Q4,13526.1,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1982-Q1,13140.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1982-Q2,13563.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1982-Q3,13957.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1982-Q4,14301.1,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1983-Q1,14134.1,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1983-Q2,14649.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1983-Q3,15151.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1983-Q4,15730.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1984-Q1,15675.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1984-Q2,16084.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1984-Q3,16488.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1984-Q4,16662.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1985-Q1,16289.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1985-Q2,16074.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1985-Q3,16106.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1985-Q4,16035.8,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1986-Q1,15634.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1986-Q2,16087.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1986-Q3,16567.8,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1986-Q4,17083.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1987-Q1,16893.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1987-Q2,17723.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1987-Q3,18597.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1987-Q4,19217.1,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1988-Q1,18775.8,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1988-Q2,19850.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1988-Q3,20682.9,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1988-Q4,21281.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1989-Q1,20632.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1989-Q2,22117.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1989-Q3,22733.8,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1989-Q4,23293.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1990-Q1,23523.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1990-Q2,24053.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1990-Q3,24745.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1990-Q4,25173.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1991-Q1,25032.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1991-Q2,25624.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1991-Q3,26545.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1991-Q4,26814.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1992-Q1,26453.9,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1992-Q2,27004.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1992-Q3,28322.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1992-Q4,29142.8,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1993-Q1,28824.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1993-Q2,30333.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1993-Q3,31580.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1993-Q4,32896.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1994-Q1,32712.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1994-Q2,33467.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1994-Q3,35306.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1994-Q4,35866.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1995-Q1,34431.9,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1995-Q2,35948.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1995-Q3,38217.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1995-Q4,38610.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1996-Q1,38460.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1996-Q2,39047.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1996-Q3,39833.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1996-Q4,40865.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1997-Q1,40669.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1997-Q2,42743.9,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1997-Q3,44192.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1997-Q4,43758.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1998-Q1,41282.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1998-Q2,41711.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1998-Q3,41975.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1998-Q4,42639.9,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1999-Q1,42185.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1999-Q2,43975.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1999-Q3,45349.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,1999-Q4,45683.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2000-Q1,45997.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2000-Q2,47584.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2000-Q3,49671.1,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2000-Q4,49955.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2001-Q1,48495.8,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2001-Q2,47825.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2001-Q3,47214.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2001-Q4,47604.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2002-Q1,47959.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2002-Q2,49845.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2002-Q3,50336.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2002-Q4,50497.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2003-Q1,49958.8,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2003-Q2,49717.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2003-Q3,53017.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2003-Q4,54979.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2004-Q1,55124.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2004-Q2,56432.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2004-Q3,57486.8,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2004-Q4,59272.8,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2005-Q1,58110.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2005-Q2,59959.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2005-Q3,62367.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2005-Q4,64698.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2006-Q1,64039.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2006-Q2,65220.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2006-Q3,67735.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2006-Q4,70218.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2007-Q1,69521.8,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2007-Q2,71768.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2007-Q3,75167.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2007-Q4,74862.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2008-Q1,75196.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2008-Q2,74147.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2008-Q3,75107.9,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2008-Q4,72296.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2009-Q1,69395.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2009-Q2,73277.9,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2009-Q3,77238.8,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2009-Q4,77216.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2010-Q1,80698.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2010-Q2,86924.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2010-Q3,85183.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2010-Q4,87464.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2011-Q1,88086.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2011-Q2,89460.8,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2011-Q3,91787.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2011-Q4,92084.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2012-Q1,92354.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2012-Q2,94982.9,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2012-Q3,93656.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2012-Q4,96455.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2013-Q1,95523.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2013-Q2,99358.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2013-Q3,99385.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2013-Q4,101366.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2014-Q1,99610.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2014-Q2,102643.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2014-Q3,103017.9,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2014-Q4,105931.8,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2015-Q1,102572.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2015-Q2,105849.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2015-Q3,106783.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2015-Q4,108238.9,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2016-Q1,106190.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2016-Q2,109432.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2016-Q3,110520.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2016-Q4,113861.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2017-Q1,111053.1,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2017-Q2,113261.8,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2017-Q3,116081.1,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2017-Q4,118646.9,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2018-Q1,115945.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2018-Q2,118401.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2018-Q3,119333.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2018-Q4,119990.1,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2019-Q1,117458.1,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2019-Q2,119672.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2019-Q3,120066.1,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2019-Q4,121963.1,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2020-Q1,119069.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2020-Q2,105617.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2020-Q3,115340.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2020-Q4,121830.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2021-Q1,124900.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2021-Q2,125600.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2021-Q3,126558.1,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2021-Q4,131636.8,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2022-Q1,130363.9,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2022-Q2,131892.4,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2022-Q3,132068.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2022-Q4,134770.5,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2023-Q1,130957.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2023-Q2,132664.3,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2023-Q3,134191.1,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2023-Q4,138956.1,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2024-Q1,136585.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2024-Q2,139040.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2024-Q3,143573.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2024-Q4,146252.1,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2025-Q1,142732.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2025-Q2,146542.1,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2025-Q3,149989.0,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2025-Q4,154606.6,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2026-Q1,151682.7,,,SingStat M015661 GDP In Chained (2015) Dollars
+SG,Q,2026-Q2,155247.2,,,SingStat M015661 GDP In Chained (2015) Dollars
+TW,Q,1981-Q1,611214.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1981-Q2,641808.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1981-Q3,644062.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1981-Q4,671171.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1982-Q1,638856.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1982-Q2,675168.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1982-Q3,674436.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1982-Q4,703351.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1983-Q1,666149.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1983-Q2,731790.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1983-Q3,750589.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1983-Q4,786192.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1984-Q1,745335.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1984-Q2,817238.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1984-Q3,823797.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1984-Q4,843283.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1985-Q1,787602.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1985-Q2,851894.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1985-Q3,853206.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1985-Q4,892238.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1986-Q1,867755.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1986-Q2,933271.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1986-Q3,958361.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1986-Q4,1015253.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1987-Q1,981567.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1987-Q2,1066297.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1987-Q3,1088839.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1987-Q4,1119256.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1988-Q1,1067060.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1988-Q2,1142993.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1988-Q3,1174867.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1988-Q4,1212549.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1989-Q1,1164074.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1989-Q2,1248316.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1989-Q3,1277289.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1989-Q4,1308796.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1990-Q1,1250486.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1990-Q2,1298852.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1990-Q3,1330478.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1990-Q4,1395642.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1991-Q1,1338309.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1991-Q2,1411063.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1991-Q3,1452988.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1991-Q4,1514759.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1992-Q1,1479222.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1992-Q2,1531149.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1992-Q3,1568387.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1992-Q4,1613495.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1993-Q1,1579372.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1993-Q2,1639717.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1993-Q3,1671615.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1993-Q4,1723531.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1994-Q1,1673970.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1994-Q2,1766003.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1994-Q3,1788546.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1994-Q4,1882054.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1995-Q1,1800176.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1995-Q2,1880297.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1995-Q3,1913157.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1995-Q4,1979057.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1996-Q1,1904066.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1996-Q2,1988410.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1996-Q3,2031775.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1996-Q4,2116170.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1997-Q1,2012377.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1997-Q2,2098381.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1997-Q3,2157387.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1997-Q4,2258836.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1998-Q1,2107543.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1998-Q2,2187994.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1998-Q3,2259781.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1998-Q4,2330206.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1999-Q1,2239449.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1999-Q2,2346452.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1999-Q3,2392158.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,1999-Q4,2505637.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2000-Q1,2374283.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2000-Q2,2493571.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2000-Q3,2564135.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2000-Q4,2650533.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2001-Q1,2408776.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2001-Q2,2429938.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2001-Q3,2459926.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2001-Q4,2642539.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2002-Q1,2452692.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2002-Q2,2593990.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2002-Q3,2632731.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2002-Q4,2806908.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2003-Q1,2579571.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2003-Q2,2564142.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2003-Q3,2775041.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2003-Q4,3010566.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2004-Q1,2758356.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2004-Q2,2841039.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2004-Q3,2970757.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2004-Q4,3118966.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2005-Q1,2862069.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2005-Q2,2978015.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2005-Q3,3121290.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2005-Q4,3356995.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2006-Q1,3035307.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2006-Q2,3145989.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2006-Q3,3345640.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2006-Q4,3502256.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2007-Q1,3206535.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2007-Q2,3370111.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2007-Q3,3612443.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2007-Q4,3732614.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2008-Q1,3452062.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2008-Q2,3560700.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2008-Q3,3562165.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2008-Q4,3457973.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2009-Q1,3180321.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2009-Q2,3349833.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2009-Q3,3521695.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2009-Q4,3754610.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2010-Q1,3547553.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2010-Q2,3752527.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2010-Q3,3928226.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2010-Q4,3992665.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2011-Q1,3785911.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2011-Q2,3908611.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2011-Q3,4057171.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2011-Q4,4028357.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2012-Q1,3827157.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2012-Q2,3949182.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2012-Q3,4145543.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2012-Q4,4208628.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2013-Q1,3884427.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2013-Q2,4054850.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2013-Q3,4226362.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2013-Q4,4365409.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2014-Q1,4066535.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2014-Q2,4254501.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2014-Q3,4433643.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2014-Q4,4556426.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2015-Q1,4261437.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2015-Q2,4335073.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2015-Q3,4421066.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2015-Q4,4547170.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2016-Q1,4257718.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2016-Q2,4408372.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2016-Q3,4553697.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2016-Q4,4725237.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2017-Q1,4416192.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2017-Q2,4531203.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2017-Q3,4734735.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2017-Q4,4919988.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2018-Q1,4567529.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2018-Q2,4686703.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2018-Q3,4853829.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2018-Q4,5034539.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2019-Q1,4662494.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2019-Q2,4825597.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2019-Q3,5019506.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2019-Q4,5219868.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2020-Q1,4812035.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2020-Q2,4852275.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2020-Q3,5232072.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2020-Q4,5505815.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2021-Q1,5274763.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2021-Q2,5254028.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2021-Q3,5457973.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2021-Q4,5786527.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2022-Q1,5477739.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2022-Q2,5438609.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2022-Q3,5679593.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2022-Q4,5761643.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2023-Q1,5281408.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2023-Q2,5515910.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2023-Q3,5768242.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2023-Q4,6034596.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2024-Q1,5659551.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2024-Q2,5810151.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2024-Q3,6036872.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2024-Q4,6283952.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2025-Q1,5972877.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2025-Q2,6257841.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2025-Q3,6544970.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2025-Q4,7097849.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2026-Q1,6894264.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"
+TW,Q,2026-Q2,7066942.0,,,"DGBAS production-side national accounts: GDP, chained 2021 dollars"

@@ -1,11 +1,14 @@
 {
- "code": "Faa41c1a2",
+ "code": "F46921a02",
  "label": "Manufacturing sources: JP to 2026-08-01; KR to 2026-09-01; TW to 2026-09-01; MY to 2026-08-01; SG to 2026-09-01; HK to 2026-04-01; CN GVA to 2026-Q3",
  "economies": "HK JP KR MY SG TW",
- "processed_at": "2026-11-05T13:59:08Z",
+ "processed_at": "2026-11-05T22:22:48Z",
  "rows": 10334,
- "warnings": [],
- "fingerprint": "aa41c1a271ae4f6a",
+ "warnings": [
+  "HK 310-31001 dims: freq=['Q', 'Y']; sv=['CON', 'CONPGDP', 'CUR', 'CURPGDP', 'DEF', 'SA1']; svDesc=['HK$', 'HK$ million', 'Index (Year 2024=100)', 'Quarter-to-quarter % change', 'Year-on-year % change']; sd_value=['', '-', '-,r', 'N.A.', '[φ3]', 'r']",
+  "HK GDP: level series [], picked None; 0 levels, 0 y/y"
+ ],
+ "fingerprint": "46921a02459509ed",
  "long_rows": 10334,
  "history": [
   {
@@ -47,6 +50,10 @@
   {
    "code": "Faa41c1a2",
    "processed_at": "2026-11-05T13:59:08Z"
+  },
+  {
+   "code": "F46921a02",
+   "processed_at": "2026-11-05T22:22:48Z"
   }
  ]
 }
