@@ -361,7 +361,8 @@ def hongkong():
         lv_pick = "HK$ million" if "HK$ million" in lv_desc else None
         yy_ = {r["period"]: f(r["figure"]) for r in sel if r["svDesc"].startswith("Year-on-year")}
         lv_ = {r["period"]: f(r["figure"]) for r in sel if r["svDesc"] == lv_pick}
-        DIAG.append(f"HK GDP: level series {lv_desc}, picked {lv_pick}; {len(lv_)} levels, {len(yy_)} y/y")
+        if not lv_:
+            DIAG.append(f"HK GDP: no chained-dollar levels in 310-31001 (level series {lv_desc})")
         for per in sorted(set(lv_) | set(yy_)):
             GDP.append({"economy": "HK", "freq": "Q", "period": f"{per[:4]}-Q{int(per[4:6]) // 3}", "real_level": lv_.get(per),
                         "real_yoy": yy_.get(per), "note": "C&SD 310-31001 GDP at chained (2024) dollars, HK$ million; y/y as published"})
