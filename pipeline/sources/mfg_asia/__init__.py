@@ -1,6 +1,6 @@
 """Manufacturing production indices and manufacturing GVA for the Asia dashboard's Manufacturing tab, for the economies
-with no manufacturing source of their own in the repo: Japan, South Korea, Malaysia, Singapore, Hong Kong (asked for
-4 Nov 2026; definitions in the project doc claude/asia-mfg-definitions.md). India, Thailand, Vietnam, the Philippines
+with no manufacturing source of their own in the repo: Japan, South Korea, Taiwan, Malaysia, Singapore, Hong Kong (asked for
+4 Nov 2026, Taiwan 5 Nov; definitions in the project doc claude/asia-mfg-definitions.md). India, Thailand, Vietnam, the Philippines
 and Indonesia are read from their own sources' files by pipeline/core/asia_mfg.py, not fetched here.
 
 Agencies' sites are reachable from GitHub's runners only. Each economy is fetched and checked on its own; one that
@@ -11,7 +11,8 @@ Writes data/asia/mfg/:
                industry: mfg, 19, 20, 21, 23, 24, 26, 27, elec (ISIC 26), nonelec (manufacturing less 26) (codes are ISIC Rev. 4 divisions; the national
                industry each maps to is in `note`). index as published; yoy as published where the agency publishes
                it, otherwise index / index a year earlier - 1 (yoy_calculated = y). elec / nonelec only where the
-               agency publishes weights (Japan) or the aggregate (Singapore's Electronics cluster).
+               agency publishes weights (Japan), implicit weights can be recovered (Taiwan) or the aggregate
+               (Singapore's Electronics cluster).
   src_gva.csv  economy, freq (Q/A), period (YYYY-Qn or YYYY), real_yoy (%), share (% of GDP, current prices),
                real_yoy_calculated, share_calculated, note
   long.csv, release.json, release_row.json (code F<hash>)
@@ -24,6 +25,14 @@ Sources:
   Korea     Statistics Korea mining and manufacturing production index (2020 = 100, original), Bank of Korea ECOS
             901Y032 by KSIC division (ISIC 27 = KSIC 28 전기장비). GVA: ECOS 200Y106 (real, original) and 200Y105
             (nominal), manufacturing and GDP. No weights in ECOS: no elec / nonelec.
+  Taiwan    MOEA industrial production index, 2021 = 100, chain-linked, NSA (data.gov.tw 6607, d.csv, by TSIC):
+            mfg = 製造業; elec = 資訊電子工業 (TSIC 26 + 27 = ISIC 26, published); 19 = TSIC 17; 21 = TSIC 20; 23; 24;
+            27 = TSIC 28. Constructed at MOEA's implicit weights (each year's group index is an exact linear combination
+            of its divisions; weights recovered by least squares per year from 2009, chain-linked at December):
+            nonelec = 製造業 less 資訊電子工業; 20 = TSIC 18 + 19 (check: rebuilding 化學工業 this way is within 0.24 pp of
+            the published y/y on average, 0.9 pp at most; 製造業 within 0.05 pp). GVA: DGBAS production-side
+            quarterly national accounts (生產帳_季 xlsx, linked from stat.gov.tw cp.aspx?n=2674): C 製造業 chained
+            2021 dollars (y/y calculated); share = nominal C / GDP.
   Malaysia  DOSM Industrial Production Index, 2015 = 100 (OpenDOSM ipi_2d by MSIC division, ipi_1d section C).
             GVA: OpenDOSM gdp_qtr_real_supply and gdp_qtr_nominal_supply, sector p3. No weights online: no elec.
   Singapore EDB IIP by industry cluster, 2025 = 100, NSA (SingStat M355381): mfg = Total, elec = Electronics cluster,
@@ -37,12 +46,13 @@ import hashlib
 import io
 import json
 import re
+import urllib.parse
 import urllib.request
 
 from core.common import DATA, CheckFailed, read_json, write_long, write_release
 
 NAME = "mfg_asia"
-DESCRIPTION = "Manufacturing production indices and GVA for the Asia Manufacturing tab: JP, KR, MY, SG, HK"
+DESCRIPTION = "Manufacturing production indices and GVA for the Asia Manufacturing tab: JP, KR, TW, MY, SG, HK"
 OUT = DATA / "asia" / "mfg"
 IIP_COLS = ["economy", "freq", "date", "industry", "index", "yoy", "yoy_calculated", "note"]
 GVA_COLS = ["economy", "freq", "period", "real_yoy", "share", "real_yoy_calculated", "share_calculated", "note"]
@@ -249,7 +259,111 @@ def hongkong():
     return out, gva
 
 
-ECONOMIES = {"JP": japan, "KR": korea, "MY": malaysia, "SG": singapore, "HK": hongkong}
+# ---------- Taiwan ----------
+TW_IPI = "https://service.moea.gov.tw/EE520/opendata/d.csv"      # data.gov.tw 6607 工業生產 (MOEA), 生產指數, 110年=100
+TW_GDP_PAGE = "https://www.stat.gov.tw/cp.aspx?n=2674"           # DGBAS national accounts tables (生產帳_季 xlsx)
+TW_PUBLISHED = {"mfg": ("C", "製造業"), "elec": ("I2", "資訊電子工業 = TSIC 26 電子零組件 + 27 電腦、電子產品及光學製品 (= ISIC 26)"),
+                "19": ("17", "石油及煤製品製造業 (TSIC 17)"), "21": ("20", "藥品及醫用化學製品製造業 (TSIC 20)"),
+                "23": ("23", "非金屬礦物製品製造業 (TSIC 23)"), "24": ("24", "基本金屬製造業 (TSIC 24)"),
+                "27": ("28", "電力設備及配備製造業 (TSIC 28)")}
+TW_I3 = ["13", "15", "16", "17", "18", "19", "20", "21", "22"]   # TSIC divisions in MOEA's 化學工業 group (I3)
+
+
+def tw_coef(S, target, parts, min_months, start=2009):
+    """Implicit weights of `parts` in `target` for each calendar year: MOEA's indices are chain-linked yearly, so within
+    a year the group index is a fixed linear combination of its divisions' indices (fit exact to rounding, checked
+    5 Nov 2026, from 2009; earlier years fit less well and are left out). Least squares per year; a year with fewer than min_months months takes the previous year's weights."""
+    import numpy as np
+    out, last = {}, None
+    for y in sorted({k[0] for k in S[target] if k[0] >= start}):
+        ks = [(y, m) for m in range(1, 13) if all((y, m) in S[c] for c in [target] + parts)]
+        if len(ks) >= min_months:
+            A = np.array([[S[c][k] for c in parts] for k in ks])
+            b = np.array([S[target][k] for k in ks])
+            w = np.linalg.lstsq(A, b, rcond=None)[0]
+            if float(np.abs(A @ w - b).max()) > 0.1:
+                raise CheckFailed([f"TW: {target} is not a fixed combination of {parts} in {y}"])
+            last = dict(zip(parts, w))
+        if last:
+            out[y] = last
+    return out
+
+
+def tw_chain(S, coef, use):
+    """Chain-linked index of the divisions in `use`, at each year's implicit weights, linked at December, 2021 = 100."""
+    ix, prev = {}, None
+    for y in sorted(coef):
+        w = coef[y]
+        raw = lambda k: sum(w[c] * S[c][k] for c in use) if all(k in S[c] for c in use) else None  # noqa: E731
+        months = [(y, m) for m in range(1, 13) if raw((y, m)) is not None]
+        if not months:
+            continue
+        if prev is None:
+            for k in months:
+                ix[k] = raw(k)
+        else:
+            dec = (y - 1, 12)
+            if dec not in ix or not raw(dec):
+                break
+            for k in months:
+                ix[k] = ix[dec] * raw(k) / raw(dec)
+        prev = y
+    base = [v for k, v in ix.items() if k[0] == 2021]
+    return {k: v / (sum(base) / len(base)) * 100 for k, v in ix.items()} if len(base) == 12 else {}
+
+
+def taiwan():
+    import collections
+    import openpyxl
+    S = collections.defaultdict(dict)
+    for x in list(csv.reader(io.StringIO(fetch(TW_IPI, 180).decode("utf-8-sig"))))[1:]:
+        if len(x) >= 5 and x[0] == "生產指數" and f(x[4]) is not None and re.fullmatch(r"\d{5}", x[3]):
+            S[x[1].strip()][(int(x[3][:3]) + 1911, int(x[3][3:]))] = f(x[4])
+    miss = [c for c in ["C", "I1", "I2", "I3", "I4", "18", "19"] + [v[0] for v in TW_PUBLISHED.values()] + TW_I3 if not S.get(c)]
+    if miss:
+        raise CheckFailed([f"TW: industries not found {miss}"])
+    d = lambda k: f"{k[0]}-{k[1]:02d}-01"  # noqa: E731
+    out = []
+    for k, (code, note) in TW_PUBLISHED.items():
+        out += [row("TW", "M", d(p), k, v, note=f"MOEA IPI 2021 = 100: {note}") for p, v in sorted(S[code].items())]
+    # non-electronics = 製造業 less 資訊電子工業 (I1 + I3 + I4); chemicals (ISIC 20) = TSIC 18 + 19; both at implicit weights
+    g = tw_coef(S, "C", ["I1", "I2", "I3", "I4"], 4)
+    out += [row("TW", "M", d(p), "nonelec", round(v, 3), note="製造業 less 資訊電子工業 (ISIC 26), MOEA implicit weights, chain-linked (calculated)")
+            for p, v in sorted(tw_chain(S, g, ["I1", "I3", "I4"]).items())]
+    c = tw_coef(S, "I3", TW_I3, 12)
+    out += [row("TW", "M", d(p), "20", round(v, 3), note="TSIC 18 化學材料及肥料 + 19 其他化學製品 (= ISIC 20), MOEA implicit weights, chain-linked (calculated)")
+            for p, v in sorted(tw_chain(S, c, ["18", "19"]).items())]
+    # GVA: DGBAS production-side national accounts, quarterly (file name changes with each release: found on the page)
+    from core import dgbas
+    page = dgbas.get(TW_GDP_PAGE).decode("utf-8", "replace")
+    link = next((l for l in re.findall(r'href="([^"]+\.xlsx)"', page) if "生產帳_季" in urllib.parse.unquote(l)), None)
+    if not link:
+        raise CheckFailed(["TW: 生產帳_季 xlsx not linked on the DGBAS page"])
+    p = urllib.parse.urlsplit(urllib.parse.unquote(link))
+    wb = openpyxl.load_workbook(io.BytesIO(dgbas.get(urllib.parse.urlunsplit((p.scheme, p.netloc, urllib.parse.quote(p.path), "", "")))),
+                                read_only=True, data_only=True)
+
+    def sheet(name):
+        rows = list(wb[name].iter_rows(values_only=True))
+        hdr = next(r for r in rows if r and r[1] == 1981)
+        lab = {str(r[0]).replace("　", "").strip(): r for r in rows if r and r[0]}
+        return {str(h): f(v) for h, v in zip(hdr, lab["C 製造業"])}, {str(h): f(v) for h, v in zip(hdr, lab["GDP"])}
+    real, _ = sheet("實質1981~")
+    nom, gdp = sheet("名目1981~")
+    gva = []
+    for q in sorted(k for k in real if re.fullmatch(r"\d{4}Q\d", k)):
+        pq = f"{int(q[:4]) - 1}{q[4:]}"
+        gva.append({"economy": "TW", "freq": "Q", "period": q.replace("Q", "-Q"),
+                    "real_yoy": round((real[q] / real[pq] - 1) * 100, 2) if real.get(q) and real.get(pq) else None,
+                    "share": round(nom[q] / gdp[q] * 100, 2) if nom.get(q) and gdp.get(q) else None,
+                    "real_yoy_calculated": "y", "share_calculated": "y",
+                    "note": "DGBAS production-side national accounts (2008 SNA): C 製造業, chained 2021 dollars; share of GDP, current prices"})
+    if len(out) < 3000:
+        raise CheckFailed([f"TW: only {len(out)} index rows"])
+    return out, gva
+
+
+ECONOMIES = {"JP": japan, "KR": korea, "TW": taiwan, "MY": malaysia, "SG": singapore, "HK": hongkong}
 
 
 def read(path):
