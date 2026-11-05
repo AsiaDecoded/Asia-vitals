@@ -10,9 +10,9 @@ Writes data/asia/mfg/:
   src_iip.csv  economy, freq (M/Q), date (first day of the period), industry, index, yoy, yoy_calculated, note
                industry: mfg, 19, 20, 21, 23, 24, 26, 27, elec (ISIC 26), nonelec (manufacturing less 26) (codes are ISIC Rev. 4 divisions; the national
                industry each maps to is in `note`). index as published; yoy as published where the agency publishes
-               it, otherwise index / index a year earlier - 1 (yoy_calculated = y). elec / nonelec only where the
-               agency publishes weights (Japan), implicit weights can be recovered (Taiwan) or the aggregate
-               (Singapore's Electronics cluster).
+               it, otherwise index / index a year earlier - 1 (yoy_calculated = y). elec where published or
+               constructed (Japan, Taiwan, Singapore cluster); nonelec where the agency publishes weights (Japan) or
+               implied weights can be recovered from the published divisions (Taiwan, Korea, Malaysia, Singapore).
   src_gva.csv  economy, freq (Q/A), period (YYYY-Qn or YYYY), real_yoy (%), share (% of GDP, current prices),
                real_yoy_calculated, share_calculated, note
   long.csv, release.json, release_row.json (code F<hash>)
@@ -24,7 +24,8 @@ Sources:
             nonelec = 製造工業 less elec, at METI's weights (calculated). GVA: not yet (ESRI production-side QNA).
   Korea     Statistics Korea mining and manufacturing production index (2020 = 100, original), Bank of Korea ECOS
             901Y032 by KSIC division (ISIC 27 = KSIC 28 전기장비). GVA: ECOS 200Y106 (real, original) and 200Y105
-            (nominal), manufacturing and GDP. No weights in ECOS: no elec / nonelec.
+            (nominal), manufacturing and GDP. nonelec = 제조업 less KSIC 26 + 27 at implied weights (24 divisions,
+            three-year windows; weights re-set yearly).
   Taiwan    MOEA industrial production index, 2021 = 100, chain-linked, NSA (data.gov.tw 6607, d.csv, by TSIC):
             mfg = 製造業; elec = 資訊電子工業 (TSIC 26 + 27 = ISIC 26, published); 19 = TSIC 17; 21 = TSIC 20; 23; 24;
             27 = TSIC 28. Constructed at MOEA's implicit weights (each year's group index is an exact linear combination
@@ -34,9 +35,11 @@ Sources:
             quarterly national accounts (生產帳_季 xlsx, linked from stat.gov.tw cp.aspx?n=2674): C 製造業 chained
             2021 dollars (y/y calculated); share = nominal C / GDP.
   Malaysia  DOSM Industrial Production Index, 2015 = 100 (OpenDOSM ipi_2d by MSIC division, ipi_1d section C).
-            GVA: OpenDOSM gdp_qtr_real_supply and gdp_qtr_nominal_supply, sector p3. No weights online: no elec.
+            GVA: OpenDOSM gdp_qtr_real_supply and gdp_qtr_nominal_supply, sector p3. nonelec = section C less MSIC 26 at implied
+            fixed (2015) weights (exact fit).
   Singapore EDB IIP by industry cluster, 2025 = 100, NSA (SingStat M355381): mfg = Total, elec = Electronics cluster,
-            19 = Petroleum segment, 20 = Petrochemicals segment, 21 = Pharmaceuticals segment (clusters, not ISIC).
+            19 = Petroleum segment, 20 = Petrochemicals segment, 21 = Pharmaceuticals segment (clusters, not ISIC);
+            nonelec = Total less Electronics cluster at implied cluster weights (exact per year from 2011).
             GVA: SingStat M015661 (chained 2015 dollars) and M015651 (current prices).
   Hong Kong C&SD Index of Industrial Production, 2015 = 100, quarterly (610-65001), manufacturing only.
             GVA: 310-34501 real y/y (quarterly), 310-34101 % contribution to GDP (annual, basic prices).
