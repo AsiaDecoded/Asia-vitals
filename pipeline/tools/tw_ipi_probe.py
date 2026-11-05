@@ -7,6 +7,7 @@ data.gov.tw datasets from the Ministry of Economic Affairs (6607 工業生產, 9
 failed on the Chinese characters), plus the MOEA statistics pages. Saves files and summary.txt.
 """
 import csv
+import re
 import io
 import json
 import sys
@@ -36,40 +37,19 @@ def get(u, timeout=120):
         return r.read()
 
 
-for ds in ("6607", "95137", "146531", "16366", "16367"):
-    try:
-        d = json.loads(get(f"https://data.gov.tw/api/v2/rest/dataset/{ds}"))
-        res = (d.get("result") or {})
-        say(f"== data.gov.tw {ds}: {res.get('title')} | {res.get('updateFrequency') or res.get('updateFreq')} | {len(res.get('distribution') or [])} files")
-        (OUT / f"ds_{ds}.json").write_text(json.dumps(d, ensure_ascii=False, indent=1))
-        for i, r in enumerate((res.get("distribution") or [])[:6]):
-            u = r.get("resourceDownloadUrl")
-            say(f"   {r.get('resourceDescription')} | {r.get('resourceFormat')} | {u}")
-            try:
-                b = get(u)
-                (OUT / f"ds_{ds}_{i}.{(r.get('resourceFormat') or 'bin').lower()}").write_bytes(b)
-                txt = b.decode("utf-8-sig", "replace")
-                rows = list(csv.reader(io.StringIO(txt)))
-                say(f"     ok {len(b)} bytes, {len(rows)} rows; header {rows[0] if rows else ''}")
-                for row in rows[1:4] + rows[-3:]:
-                    say(f"       {row}")
-                if rows and len(rows[0]) >= 3:
-                    for j, h in enumerate(rows[0]):
-                        vals = sorted({x[j] for x in rows[1:] if len(x) > j})
-                        if len(vals) < 120:
-                            say(f"     col {h}: {len(vals)} values, e.g. {vals[:60]}")
-            except Exception as e:  # noqa: BLE001
-                say(f"     failed {e}")
-    except Exception as e:  # noqa: BLE001
-        say(f"== data.gov.tw {ds} failed {e}")
+import ssl
+sys.path.insert(0, "pipeline")
+from core import dgbas  # noqa: E402
 
-for u in ("https://www.moea.gov.tw/MNS/dos/content/ContentDesc.aspx?menu_id=23004",
-          "https://www.moea.gov.tw/Mns/dos/content/Content.aspx?menu_id=6730",
-          "https://service.moea.gov.tw/EE520/opendata/"):
+for u in ("https://www.stat.gov.tw/cp.aspx?n=2711", "https://www.stat.gov.tw/cp.aspx?n=2674", "https://www.stat.gov.tw/Point.aspx?sid=t.1&n=3581&sms=11480"):
     try:
-        b = get(u)
-        (OUT / ("moea_" + str(abs(hash(u)))[:8] + ".html")).write_bytes(b)
-        say(f"== {u}: ok {len(b)}")
+        b = dgbas.get(u)
+        t = b.decode("utf-8", "replace")
+        (OUT / ("page_" + re.sub(r"\W", "_", u[-20:]) + ".html")).write_text(t)
+        links = sorted(set(re.findall(r'href="([^"]+\.(?:xlsx|xls|ods|csv)[^"]*)"', t)))
+        say(f"== {u}: ok {len(b)}; {len(links)} file links")
+        for l in links[:80]:
+            say("   ", urllib.parse.unquote(l))
     except Exception as e:  # noqa: BLE001
         say(f"== {u}: failed {e}")
 
