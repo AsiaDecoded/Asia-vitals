@@ -4,7 +4,7 @@ returns on the Asia Financial tab, "use Yahoo Finance". Not an official source.
 
 For each economy the first ticker that returns data is used (a list of candidates where Yahoo's symbol is uncertain).
 Writes data/asia/eq/:
-  asia_eq_daily.csv  economy, ticker, date, close (local-currency index points, from 2015; completed sessions only)
+  asia_eq_daily.csv  economy, ticker, date, close (local-currency index points, from 1990 where Yahoo has it; completed sessions only)
   asia_eq_ytd.csv    economy, name, index, ticker, base_date, base_close, latest_date, latest_close, ytd_pct
                      ytd_pct = (latest close / last close on or before 31 Dec of the previous year - 1) x 100 (calculated):
                      price index, local currency, dividends not included
@@ -21,7 +21,7 @@ NAME = "eq_yahoo"
 DESCRIPTION = "Benchmark stock indices, 12 Asian economies, daily close, Yahoo Finance"
 OUT = DATA / "asia" / "eq"
 SOURCE = "Yahoo Finance, not an official source"
-START = "2015-01-01"
+START = "1990-01-01"
 # economy: (name, index name, candidate tickers)
 INDICES = {
     "JP": ("Japan", "Nikkei 225", ["^N225"]),
