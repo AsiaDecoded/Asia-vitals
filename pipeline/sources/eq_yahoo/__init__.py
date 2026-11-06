@@ -1,6 +1,9 @@
 """Benchmark stock indices for the 12 Asia-dashboard economies, daily close, from Yahoo Finance via yfinance (cookie and
 crumb; GitHub's runners only, the workspace cannot reach Yahoo). Asked for 2 Nov 2026: a bar chart of year-to-date
 returns on the Asia Financial tab, "use Yahoo Finance". Not an official source.
+Thailand (SET), the Philippines (PSEi) and Vietnam (VN-Index): Yahoo returns no history, so CNBC's daily bars
+(ts-api.cnbc.com, symbols .SETI, .PSI, .VNI; not an official source either) are used instead (asked for 6 Nov 2026:
+"try other sites like yahoo finance for set and psei"). Ticker column "cnbc:<symbol>".
 
 For each economy the first ticker that returns data is used (a list of candidates where Yahoo's symbol is uncertain).
 Writes data/asia/eq/:
@@ -20,7 +23,7 @@ from core.common import DATA, CheckFailed, read_json, write_long, write_release
 NAME = "eq_yahoo"
 DESCRIPTION = "Benchmark stock indices, 12 Asian economies, daily close, Yahoo Finance"
 OUT = DATA / "asia" / "eq"
-SOURCE = "Yahoo Finance, not an official source"
+SOURCE = "Yahoo Finance (CNBC for Thailand, the Philippines, Vietnam), not an official source"
 START = "1990-01-01"
 # economy: (name, index name, candidate tickers)
 INDICES = {
@@ -31,17 +34,42 @@ INDICES = {
     "CN": ("China", "Shanghai Composite", ["000001.SS"]),
     "IN": ("India", "Nifty 50", ["^NSEI"]),
     "ID": ("Indonesia", "Jakarta Composite", ["^JKSE"]),
-    "TH": ("Thailand", "SET", ["^SET.BK"]),
+    "TH": ("Thailand", "SET", ["^SET.BK", "cnbc:.SETI"]),
     "MY": ("Malaysia", "FTSE Bursa Malaysia KLCI", ["^KLSE"]),
     "SG": ("Singapore", "Straits Times Index", ["^STI"]),
-    "PH": ("Philippines", "PSEi", ["PSEI.PS", "^PSEI"]),
-    "VN": ("Vietnam", "VN-Index", ["^VNINDEX.VN", "^VNINDEX", "VNINDEX.VN"]),
+    "PH": ("Philippines", "PSEi", ["PSEI.PS", "^PSEI", "cnbc:.PSI"]),
+    "VN": ("Vietnam", "VN-Index", ["^VNINDEX.VN", "^VNINDEX", "VNINDEX.VN", "cnbc:.VNI"]),
 }
+
+
+def fetch_cnbc(symbol):
+    """CNBC daily bars (close) from START, completed sessions only (today's bar dropped: Singapore date)."""
+    import datetime as dt  # noqa: PLC0415
+    import urllib.request  # noqa: PLC0415
+    now = dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=8)
+    today = now.date().isoformat()
+    end = (now + dt.timedelta(days=2)).strftime("%Y%m%d000000")
+    url = f"https://ts-api.cnbc.com/harmony/app/bars/{symbol}/1D/{START.replace('-', '')}000000/{end}/adjusted/EST5EDT.json"
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                                                             "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        bars = (json.loads(r.read()).get("barData") or {}).get("priceBars") or []
+    out = {}
+    for b in bars:
+        d, v = str(b.get("tradeTime", ""))[:8], float(b.get("close") or 0)
+        if len(d) == 8 and v > 0:
+            d = f"{d[:4]}-{d[4:6]}-{d[6:]}"
+            if START <= d < today:
+                out[d] = v
+    return out
 
 
 def fetch(ticker):
     """Daily closes from START, completed sessions only (today's bar, which Yahoo fills with the live price during the
-    session, is dropped: Singapore date). Some symbols return only the latest quote for a dated range; then period=max."""
+    session, is dropped: Singapore date). Some symbols return only the latest quote for a dated range; then period=max.
+    A "cnbc:" ticker is read from CNBC instead."""
+    if ticker.startswith("cnbc:"):
+        return fetch_cnbc(ticker[5:])
     import datetime as dt  # noqa: PLC0415
     import yfinance as yf  # noqa: PLC0415
     today = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=8)).date().isoformat()
@@ -120,7 +148,7 @@ def update(force=False, **_):
                          "measure": "level", "area": "", "freq": "D", "date": d, "value": round(s[d], 2), "unit": "index points",
                          "source": SOURCE, "release": code}
                         for econ, (t, s) in series.items() for d in sorted(s)), OUT / "long.csv")
-    write_release(OUT, {"code": code, "label": f"Yahoo Finance daily closes to {latest}", "latest_date": latest,
+    write_release(OUT, {"code": code, "label": f"Yahoo Finance and CNBC daily closes to {latest}", "latest_date": latest,
                         "economies": " ".join(r["economy"] for r in rows)},
                   warnings, len(rows), {"fingerprint": fp, "long_rows": nlong, "tickers": {e: t for e, (t, s) in series.items()}})
     return {"updated": True, "code": code, "warnings": warnings,
