@@ -1,25 +1,29 @@
 {
- "code": "P2026-09",
- "label": "Sep 2026",
- "latest_month": "2026-09-01",
+ "code": "P2026-10",
+ "label": "Oct 2026",
+ "latest_month": "2026-10-01",
  "latest": {
-  "CPA": "2026-09",
-  "SOP": "2026-09"
+  "CPA": "2026-10",
+  "SOP": "2026-10"
  },
  "published_at": {
-  "CPA": "2026-10-06T04:46:35.495584Z",
-  "SOP": "2026-10-06T04:46:35.495584Z"
+  "CPA": "2026-11-06T03:43:22.22053Z",
+  "SOP": "2026-11-06T03:43:22.22053Z"
  },
  "table": "TPSO Open API: Ppi, types CPA and SOP, base 2021 (BE 2564)",
- "processed_at": "2026-10-28T06:48:02Z",
- "rows": 8082,
+ "processed_at": "2026-11-06T04:05:06Z",
+ "rows": 8124,
  "warnings": [],
- "fingerprint": "5783f11c06418071",
- "long_rows": 23700,
+ "fingerprint": "849fbbdda04ecb2f",
+ "long_rows": 23826,
  "history": [
   {
    "code": "P2026-09",
    "processed_at": "2026-10-28T06:48:02Z"
+  },
+  {
+   "code": "P2026-10",
+   "processed_at": "2026-11-06T04:05:06Z"
   }
  ]
 }

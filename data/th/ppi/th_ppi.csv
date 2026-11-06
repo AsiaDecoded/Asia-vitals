@@ -8081,3 +8081,45 @@ date,type,series,code,label,order,index,yoy,mom
 2026-09-01,SOP,raw,3000,Raw materials,39,120.7,15.6,0.1
 2026-09-01,SOP,raw_food,3100,Raw materials for food,40,112.2,8.8,0.7
 2026-09-01,SOP,raw_nonfood,3200,"Raw materials, non-food",41,133.3,25.6,-0.6
+2026-10-01,CPA,ppi,0000,"PPI, all items",0,117.7,10.2,0.8
+2026-10-01,CPA,agri,1000,Agriculture and fishery products,1,116.8,13.5,2.2
+2026-10-01,CPA,agri_crops,1010,Agricultural products,2,116.7,14.5,2.4
+2026-10-01,CPA,fishery,1030,Fishery products,3,114.4,3.6,0.5
+2026-10-01,CPA,mining,2000,Mining products,4,145.0,37.8,14.2
+2026-10-01,CPA,coal,2050,Coal and lignite,5,100.0,0.0,0.0
+2026-10-01,CPA,crude_gas,2060,Crude petroleum and natural gas,6,162.0,52.1,18.6
+2026-10-01,CPA,metal_ores,2070,Metal ores,7,108.0,3.4,-11.5
+2026-10-01,CPA,other_mining,2080,Other mining products,8,103.6,3.0,0.0
+2026-10-01,CPA,manufacturing,3000,Manufactured products,9,117.0,8.9,0.1
+2026-10-01,CPA,m_food,3100,Food products,10,110.8,5.7,1.0
+2026-10-01,CPA,m_beverages,3110,Beverages,11,107.0,0.2,0.0
+2026-10-01,CPA,m_tobacco,3120,Tobacco products,12,105.4,0.0,0.0
+2026-10-01,CPA,m_textiles,3130,Textiles,13,105.3,2.0,0.0
+2026-10-01,CPA,m_apparel,3140,Wearing apparel,14,103.0,0.3,0.0
+2026-10-01,CPA,m_leather,3150,Leather and related products,15,103.4,1.6,0.1
+2026-10-01,CPA,m_wood,3160,Wood and wood products,16,105.5,2.6,0.1
+2026-10-01,CPA,m_paper,3170,Paper and paper products,17,106.7,2.2,0.4
+2026-10-01,CPA,m_printing,3180,Printing and recorded media,18,85.3,-17.0,0.0
+2026-10-01,CPA,m_refined,3190,Refined petroleum products,19,186.1,74.9,0.6
+2026-10-01,CPA,m_chemicals,3200,Chemicals and chemical products,20,101.5,6.6,0.8
+2026-10-01,CPA,m_pharma,3210,Pharmaceutical products,21,96.1,0.0,0.0
+2026-10-01,CPA,m_rubber_plastic,3220,Rubber and plastic products,22,113.4,11.9,0.8
+2026-10-01,CPA,m_nonmetallic,3230,Other non-metallic mineral products,23,109.2,2.3,-0.1
+2026-10-01,CPA,m_basic_metals,3240,Basic metals,24,95.1,3.0,2.7
+2026-10-01,CPA,m_fabricated_metal,3250,Fabricated metal products,25,104.5,1.0,0.1
+2026-10-01,CPA,m_electronics,3260,Computer and electronic products,26,104.7,6.8,1.0
+2026-10-01,CPA,m_electrical,3270,Electrical equipment,27,100.5,0.5,0.0
+2026-10-01,CPA,m_machinery,3280,Machinery and equipment,28,107.3,-0.4,0.0
+2026-10-01,CPA,m_vehicles,3290,"Motor vehicles, parts and accessories",29,103.3,0.0,0.0
+2026-10-01,CPA,m_motorcycles,3300,"Motorcycles, bicycles and parts",30,100.0,0.0,0.0
+2026-10-01,CPA,m_furniture,3310,Furniture,31,105.2,0.3,0.0
+2026-10-01,CPA,m_other,3320,Other manufactured products,32,176.6,4.0,-2.9
+2026-10-01,SOP,finished,1000,Finished goods,33,116.1,5.5,0.3
+2026-10-01,SOP,consumer,1100,Consumer goods,34,118.6,5.7,0.2
+2026-10-01,SOP,capital,1200,Capital goods,35,107.8,5.0,0.6
+2026-10-01,SOP,intermediate,2000,Intermediate (processed) goods,36,118.3,16.7,0.4
+2026-10-01,SOP,intermediate_industry,2100,Intermediate goods for industry,37,121.7,19.8,0.3
+2026-10-01,SOP,intermediate_construction,2200,Intermediate goods for construction,38,103.7,2.8,0.6
+2026-10-01,SOP,raw,3000,Raw materials,39,127.1,23.2,5.3
+2026-10-01,SOP,raw_food,3100,Raw materials for food,40,112.0,9.8,-0.2
+2026-10-01,SOP,raw_nonfood,3200,"Raw materials, non-food",41,149.6,42.6,12.2

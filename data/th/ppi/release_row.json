@@ -1,17 +1,17 @@
 [
  {
-  "code": "P2026-09",
-  "label": "Sep 2026",
-  "latest_month": "2026-09-01",
+  "code": "P2026-10",
+  "label": "Oct 2026",
+  "latest_month": "2026-10-01",
   "latest": {
-   "CPA": "2026-09",
-   "SOP": "2026-09"
+   "CPA": "2026-10",
+   "SOP": "2026-10"
   },
   "published_at": {
-   "CPA": "2026-10-06T04:46:35.495584Z",
-   "SOP": "2026-10-06T04:46:35.495584Z"
+   "CPA": "2026-11-06T03:43:22.22053Z",
+   "SOP": "2026-11-06T03:43:22.22053Z"
   },
   "table": "TPSO Open API: Ppi, types CPA and SOP, base 2021 (BE 2564)",
-  "processed_at": "2026-10-28T06:48:02Z"
+  "processed_at": "2026-11-06T04:05:06Z"
  }
 ]

@@ -1,27 +1,31 @@
 {
- "code": "F2025-2026-09",
- "label": "budget and actual to 2025; SBN to Sep 2026",
+ "code": "F2025-2026-10",
+ "label": "budget and actual to 2025; SBN to Oct 2026",
  "latest_year": 2025,
- "latest_month": "2026-09-01",
+ "latest_month": "2026-10-01",
  "last_modified": {
   "4_1": "Tue, 13 Oct 2026 09:27:53 GMT",
   "4_2": "Tue, 13 Oct 2026 09:29:07 GMT",
   "4_3": "Tue, 13 Oct 2026 09:30:21 GMT",
-  "4_4": "Tue, 06 Oct 2026 10:32:21 GMT"
+  "4_4": "Thu, 05 Nov 2026 05:22:23 GMT"
  },
  "table": "Bank Indonesia SEKI IV.1-IV.4",
- "processed_at": "2026-10-30T14:29:25Z",
- "rows": 9566,
+ "processed_at": "2026-11-06T04:06:48Z",
+ "rows": 9598,
  "warnings": [
   "2001-2007 sheet budget 2004: published surplus/deficit 10,536 replaced by -26,271.6 (UU 35/2004 (APBN-P 2004), Pasal 12(1); SEKI shows +10,536)",
   "2001-2007 sheet actual 2006: central + transfers 665,295 vs expenditure 667,129"
  ],
- "fingerprint": "8f9ed3da597ddbba",
- "long_rows": 9566,
+ "fingerprint": "80f0f9bfbbb9e152",
+ "long_rows": 9598,
  "history": [
   {
    "code": "F2025-2026-09",
    "processed_at": "2026-10-30T14:29:25Z"
+  },
+  {
+   "code": "F2025-2026-10",
+   "processed_at": "2026-11-06T04:06:48Z"
   }
  ]
 }

@@ -1,20 +1,24 @@
 {
- "code": "J2026-08",
- "label": "JCI to Aug 2026 (SEKI III.3)",
- "latest_month": "2026-08",
- "last_modified": "Mon, 05 Oct 2026 03:11:28 GMT",
+ "code": "J2026-09",
+ "label": "JCI to Sep 2026 (SEKI III.3)",
+ "latest_month": "2026-09",
+ "last_modified": "Tue, 03 Nov 2026 10:51:47 GMT",
  "table": "SEKI III.3",
- "processed_at": "2026-11-01T00:53:50Z",
- "rows": 352,
+ "processed_at": "2026-11-06T04:06:41Z",
+ "rows": 353,
  "warnings": [
   "22 months not in SEKI III.3: 2004-01..2005-11"
  ],
- "fingerprint": "d3ee4901b4cb67bf",
- "long_rows": 352,
+ "fingerprint": "f68c938ea9e2c887",
+ "long_rows": 353,
  "history": [
   {
    "code": "J2026-08",
    "processed_at": "2026-11-01T00:53:50Z"
+  },
+  {
+   "code": "J2026-09",
+   "processed_at": "2026-11-06T04:06:41Z"
   }
  ]
 }

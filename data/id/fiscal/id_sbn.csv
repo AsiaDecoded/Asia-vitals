@@ -6071,3 +6071,35 @@ date,item,label,label_id,value
 2026-09-01,31,Retail SBSN,SBSN Ritel,151750.144
 2026-09-01,32,SPN,SPN Syariah,84126.65
 2026-09-01,33,Savings Sukuk,Sukuk Tabungan (ST),95250.567
+2026-10-01,1,GOVERNMENT DEBT SECURITIES,SURAT UTANG NEGARA (SUN),5770289.986
+2026-10-01,2,Government Bonds,Obligasi Negara,5659689.986
+2026-10-01,3,By Type,Menurut Jenis,5659689.986
+2026-10-01,4,Fixed Rate,Suku Bunga Tetap,4798947.388
+2026-10-01,5,Variable rate,Suku Bunga Variabel,698621.628
+2026-10-01,6,Hedge Bond,Lindung Nilai,0.0
+2026-10-01,7,Retail Bond,ORI,162120.97
+2026-10-01,8,Zero Coupon Bond,Zero Coupon Bond,0.0
+2026-10-01,9,By Ownership,Menurut Kepemilikan,5659689.986
+2026-10-01,10,Government Banks,Bank Pemerintah,358425.551
+2026-10-01,11,Private National Banks,Bank Swasta Nasional,468435.503
+2026-10-01,12,Joint Banks,Bank Campuran,25946.74
+2026-10-01,13,Foreign Banks,Bank Asing,57086.407
+2026-10-01,14,Regional Development Bank,Bank Pembangunan Daerah,77665.996
+2026-10-01,15,Central Bank *),Bank Indonesia *),1478008.14
+2026-10-01,16,Customers,Nasabah,3184454.223
+2026-10-01,17,Other Institutions,Institusi Lainnya,9667.426
+2026-10-01,18,Treasury Bills,Surat Perbendaharaan Negara (SPN),110600.0
+2026-10-01,19,By Ownership,Menurut Kepemilikan,110600.0
+2026-10-01,20,Government Banks,Bank Pemerintah,19123.984
+2026-10-01,21,Private National Banks,Bank Swasta Nasional,6992.344
+2026-10-01,22,Joint Banks,Bank Campuran,268.478
+2026-10-01,23,Foreign Banks,Bank Asing,2763.273
+2026-10-01,24,Regional Development Bank,Bank Pembangunan Daerah,850.874
+2026-10-01,25,Central Bank,Bank Indonesia,72373.143
+2026-10-01,26,Customers,Nasabah,8227.904
+2026-10-01,27,GOVERNMENT ISLAMIC SECURITIES,SURAT BERHARGA SYARIAH NEGARA (SBSN),1429243.937
+2026-10-01,28,By Type,Menurut Jenis,1429243.937
+2026-10-01,30,Fixed Rate,Fixed Rate,1095175.489
+2026-10-01,31,Retail SBSN,SBSN Ritel,151750.144
+2026-10-01,32,SPN,SPN Syariah,86826.65
+2026-10-01,33,Savings Sukuk,Sukuk Tabungan (ST),95491.654
