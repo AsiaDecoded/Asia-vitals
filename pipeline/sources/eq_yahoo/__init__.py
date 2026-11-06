@@ -34,11 +34,11 @@ INDICES = {
     "CN": ("China", "Shanghai Composite", ["000001.SS"]),
     "IN": ("India", "Nifty 50", ["^NSEI"]),
     "ID": ("Indonesia", "Jakarta Composite", ["^JKSE"]),
-    "TH": ("Thailand", "SET", ["^SET.BK", "cnbc:.SETI"]),
+    "TH": ("Thailand", "SET", ["cnbc:.SETI"]),
     "MY": ("Malaysia", "FTSE Bursa Malaysia KLCI", ["^KLSE"]),
     "SG": ("Singapore", "Straits Times Index", ["^STI"]),
-    "PH": ("Philippines", "PSEi", ["PSEI.PS", "^PSEI", "cnbc:.PSI"]),
-    "VN": ("Vietnam", "VN-Index", ["^VNINDEX.VN", "^VNINDEX", "VNINDEX.VN", "cnbc:.VNI"]),
+    "PH": ("Philippines", "PSEi", ["cnbc:.PSI"]),
+    "VN": ("Vietnam", "VN-Index", ["cnbc:.VNI"]),
 }
 
 
