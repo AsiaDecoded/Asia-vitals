@@ -1,29 +1,21 @@
-"""Probe: daily history for the SET (Thailand) and PSEi (Philippines) from sites other than Yahoo Finance.
-Writes discovery/eq_probe/report.txt and the first bytes of each response."""
-import json, urllib.request, urllib.error, ssl, time
+"""Probe 3: CNBC daily bars for the other nine benchmark indices: first and last date, number of days."""
+import json, urllib.request, time
 from pathlib import Path
-
 OUT = Path("discovery/eq_probe"); OUT.mkdir(parents=True, exist_ok=True)
-UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-      "Accept": "text/csv,application/json,text/html;q=0.9,*/*;q=0.8"}
-C = [
-  ("cnbc_bars_set", "https://ts-api.cnbc.com/harmony/app/bars/.SETI/1D/19900101000000/20261106000000/adjusted/EST5EDT.json"),
-  ("cnbc_bars_psei", "https://ts-api.cnbc.com/harmony/app/bars/.PSI/1D/19900101000000/20261106000000/adjusted/EST5EDT.json"),
-  ("cnbc_bars_vni", "https://ts-api.cnbc.com/harmony/app/bars/.VNI/1D/19900101000000/20261106000000/adjusted/EST5EDT.json"),
-  ("cnbc_5y_set", "https://ts-api.cnbc.com/harmony/app/charts/5Y.json?symbol=.SETI"),
-]
+UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"}
+SYM = {"JP": [".N225"], "KR": [".KS11", ".KOSPI"], "TW": [".TWII"], "HK": [".HSI"], "CN": [".SSEC"], "IN": [".NSEI", ".NIFTY"],
+       "ID": [".JKSE"], "MY": [".KLSE"], "SG": [".STI", ".FTSTI"]}
 lines = []
-for name, url in C:
-    try:
-        req = urllib.request.Request(url, headers=UA)
-        with urllib.request.urlopen(req, timeout=40) as r:
-            body = r.read()
-            lines.append(f"{name}: HTTP {r.status} {len(body)} bytes {r.headers.get('Content-Type')}")
-            (OUT / f"{name}.txt").write_bytes(body[:4000])
-    except urllib.error.HTTPError as e:
-        lines.append(f"{name}: HTTP {e.code}")
-    except Exception as e:  # noqa: BLE001
-        lines.append(f"{name}: {type(e).__name__}: {str(e)[:150]}")
-    time.sleep(1)
-(OUT / "report.txt").write_text("\n".join(lines) + "\n")
+for e, syms in SYM.items():
+    for s in syms:
+        url = f"https://ts-api.cnbc.com/harmony/app/bars/{s}/1D/19700101000000/20261107000000/adjusted/EST5EDT.json"
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
+                b = (json.loads(r.read()).get("barData") or {}).get("priceBars") or []
+            b = [x for x in b if float(x.get("close") or 0) > 0]
+            lines.append(f"{e} {s}: {len(b)} days, {b[0]['tradeTime'][:8] if b else '-'} to {b[-1]['tradeTime'][:8] if b else '-'}, last close {b[-1]['close'] if b else '-'}")
+        except Exception as ex:  # noqa: BLE001
+            lines.append(f"{e} {s}: {type(ex).__name__} {str(ex)[:100]}")
+        time.sleep(1)
+(OUT / "report3.txt").write_text("\n".join(lines) + "\n")
 print("\n".join(lines))
