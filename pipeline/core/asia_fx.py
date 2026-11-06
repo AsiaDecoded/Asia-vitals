@@ -10,7 +10,9 @@ This is the change in the US-dollar value of the currency: positive means the cu
 (The rate itself moves the other way: fewer units per dollar.) Each economy uses its own latest date. Vietnam has no
 BIS daily series and is left out.
 
-Output: data/asia/fx/asia_fx_ytd.csv, release.json, release_row.json (code F<latest date>-<hash>).
+Output: data/asia/fx/asia_fx_ytd.csv, release.json, release_row.json (code F<latest date>-<hash>); and
+asia_fx_daily.csv (economy, currency, date, rate: the same BIS daily rates from 2015, as published, for the
+Financial tab's line chart, added 6 Nov 2026).
 """
 import csv
 import hashlib
@@ -36,7 +38,7 @@ COLUMNS = ["economy", "name", "currency", "base_date", "base_rate", "latest_date
 
 
 def build():
-    rows, warnings = [], []
+    rows, warnings, daily = [], [], []
     for econ, name, ccy, rel, col in SPEC:
         path = DATA / rel
         if not path.exists():
@@ -47,6 +49,7 @@ def build():
         if not obs:
             warnings.append(f"{econ}: no rates in data/{rel}")
             continue
+        daily += [{"economy": econ, "currency": ccy, "date": d, "rate": v} for d, v in obs if d >= "2015-01-01"]
         last_d, last_v = obs[-1]
         cut = f"{int(last_d[:4]) - 1}-12-31"
         before = [o for o in obs if o[0] <= cut]
@@ -67,13 +70,17 @@ def build():
     content = "".join(f"{r['economy']}{r['base_date']}{r['latest_date']}{r['ytd_pct']}" for r in rows)
     code = f"F{dates[-1]}-" + hashlib.sha1(content.encode()).hexdigest()[:6]
     old = read_json(OUT / "release_row.json", [{}]) or [{}]
-    if old and old[0].get("code") == code:
+    if old and old[0].get("code") == code and (OUT / "asia_fx_daily.csv").exists():
         return {"updated": False, "code": code, "summary": "Asia FX unchanged", "warnings": warnings}
     OUT.mkdir(parents=True, exist_ok=True)
     with open(OUT / "asia_fx_ytd.csv", "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=COLUMNS, lineterminator="\n")
         w.writeheader()
         w.writerows(rows)
+    with open(OUT / "asia_fx_daily.csv", "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["economy", "currency", "date", "rate"], lineterminator="\n")
+        w.writeheader()
+        w.writerows(daily)
     label = f"BIS daily to {dates[-1]}"
     write_release(OUT, {"code": code, "label": label, "latest_date": dates[-1], "economies": " ".join(r["economy"] for r in rows)},
                   warnings, len(rows))
