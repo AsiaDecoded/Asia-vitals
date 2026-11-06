@@ -1,9 +1,9 @@
 {
- "code": "E2026-11-05-a05aa1",
+ "code": "E2026-11-05-dc3cef",
  "label": "Yahoo Finance daily closes to 2026-11-05",
  "latest_date": "2026-11-05",
  "economies": "JP KR TW HK CN IN ID MY SG",
- "processed_at": "2026-11-06T04:07:44Z",
+ "processed_at": "2026-11-06T07:05:43Z",
  "rows": 9,
  "warnings": [
   "TH ^SET.BK: 0 days",
@@ -16,8 +16,8 @@
   "left out: PH: no ticker returned data (PSEI.PS, ^PSEI)",
   "left out: VN: no ticker returned data (^VNINDEX.VN, ^VNINDEX, VNINDEX.VN)"
  ],
- "fingerprint": "a05aa1c653db0a49",
- "long_rows": 26106,
+ "fingerprint": "dc3cef9046474c22",
+ "long_rows": 70694,
  "tickers": {
   "JP": "^N225",
   "KR": "^KS11",
@@ -45,6 +45,10 @@
   {
    "code": "E2026-11-05-a05aa1",
    "processed_at": "2026-11-06T04:07:44Z"
+  },
+  {
+   "code": "E2026-11-05-dc3cef",
+   "processed_at": "2026-11-06T07:05:43Z"
   }
  ]
 }
