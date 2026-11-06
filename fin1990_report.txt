@@ -1,0 +1,9 @@
+eq_yahoo: JP ^N225 +21.3%; KR ^KS11 +27.8%; TW ^TWII +43.5%; HK ^HSI -3.2%; CN 000001.SS -7.0%; IN ^NSEI -6.1%; ID ^JKSE -41.8%; TH cnbc:.SETI +18.9%; MY ^KLSE -2.6%; SG ^STI +14.0%; PH cnbc:.PSI -4.5%; VN cnbc:.VNI -2.5%
+  WARNING: TH ^SET.BK: 0 days
+  WARNING: PH PSEI.PS: 0 days
+  WARNING: PH ^PSEI: 0 days
+  WARNING: VN ^VNINDEX.VN: 0 days
+  WARNING: VN ^VNINDEX: 0 days
+  WARNING: VN VNINDEX.VN: 0 days
+asia_fx: Asia FX unchanged
+eq first dates: {'JP': '1990-01-04', 'KR': '1996-12-11', 'TW': '1997-07-02', 'HK': '1990-01-02', 'CN': '1997-07-02', 'IN': '2007-09-17', 'ID': '1990-04-06', 'TH': '1990-01-02', 'MY': '1993-12-03', 'SG': '1990-01-02', 'PH': '1990-01-02', 'VN': '2000-07-28'}
