@@ -1,9 +1,10 @@
 """Benchmark stock indices for the 12 Asia-dashboard economies, daily close, from Yahoo Finance via yfinance (cookie and
 crumb; GitHub's runners only, the workspace cannot reach Yahoo). Asked for 2 Nov 2026: a bar chart of year-to-date
 returns on the Asia Financial tab, "use Yahoo Finance". Not an official source.
-Thailand (SET), the Philippines (PSEi) and Vietnam (VN-Index): Yahoo returns no history, so CNBC's daily bars
-(ts-api.cnbc.com, symbols .SETI, .PSI, .VNI; not an official source either) are used instead (asked for 6 Nov 2026:
-"try other sites like yahoo finance for set and psei"). Ticker column "cnbc:<symbol>".
+Since 6 Nov 2026 all 12 come from CNBC's daily bars (ts-api.cnbc.com; not an official source either), one source for
+every index ("isn't it better to switch all to one source"): CNBC has the SET, PSEi and VN-Index, which Yahoo lacks, and
+longer histories for KOSPI, TAIEX, KLCI, Shanghai and Nifty. Yahoo stays as a fallback, used only if CNBC fails for an
+index (reported as a warning). Ticker column "cnbc:<symbol>" (or the Yahoo symbol when the fallback was used).
 
 For each economy the first ticker that returns data is used (a list of candidates where Yahoo's symbol is uncertain).
 Writes data/asia/eq/:
@@ -23,20 +24,20 @@ from core.common import DATA, CheckFailed, read_json, write_long, write_release
 NAME = "eq_yahoo"
 DESCRIPTION = "Benchmark stock indices, 12 Asian economies, daily close, Yahoo Finance"
 OUT = DATA / "asia" / "eq"
-SOURCE = "Yahoo Finance (CNBC for Thailand, the Philippines, Vietnam), not an official source"
+SOURCE = "CNBC (Yahoo Finance as fallback), not an official source"
 START = "1990-01-01"
 # economy: (name, index name, candidate tickers)
 INDICES = {
-    "JP": ("Japan", "Nikkei 225", ["^N225"]),
-    "KR": ("South Korea", "KOSPI", ["^KS11"]),
-    "TW": ("Taiwan", "TAIEX", ["^TWII"]),
-    "HK": ("Hong Kong", "Hang Seng", ["^HSI"]),
-    "CN": ("China", "Shanghai Composite", ["000001.SS"]),
-    "IN": ("India", "Nifty 50", ["^NSEI"]),
-    "ID": ("Indonesia", "Jakarta Composite", ["^JKSE"]),
+    "JP": ("Japan", "Nikkei 225", ["cnbc:.N225", "^N225"]),
+    "KR": ("South Korea", "KOSPI", ["cnbc:.KS11", "^KS11"]),
+    "TW": ("Taiwan", "TAIEX", ["cnbc:.TWII", "^TWII"]),
+    "HK": ("Hong Kong", "Hang Seng", ["cnbc:.HSI", "^HSI"]),
+    "CN": ("China", "Shanghai Composite", ["cnbc:.SSEC", "000001.SS"]),
+    "IN": ("India", "Nifty 50", ["cnbc:.NSEI", "^NSEI"]),
+    "ID": ("Indonesia", "Jakarta Composite", ["cnbc:.JKSE", "^JKSE"]),
     "TH": ("Thailand", "SET", ["cnbc:.SETI"]),
-    "MY": ("Malaysia", "FTSE Bursa Malaysia KLCI", ["^KLSE"]),
-    "SG": ("Singapore", "Straits Times Index", ["^STI"]),
+    "MY": ("Malaysia", "FTSE Bursa Malaysia KLCI", ["cnbc:.KLSE", "^KLSE"]),
+    "SG": ("Singapore", "Straits Times Index", ["cnbc:.STI", "^STI"]),
     "PH": ("Philippines", "PSEi", ["cnbc:.PSI"]),
     "VN": ("Vietnam", "VN-Index", ["cnbc:.VNI"]),
 }
@@ -104,8 +105,12 @@ def update(force=False, **_):
             errors.append(f"{econ}: no ticker returned data ({', '.join(tickers)})")
             continue
         t, s = got
+        if not t.startswith("cnbc:"):
+            warnings.append(f"{econ}: CNBC failed, Yahoo Finance fallback used ({t})")
         ds = sorted(s)
-        jumps = [b for a, b in zip(ds, ds[1:]) if not 0.7 < s[b] / s[a] < 1.4]
+        # check from 2000 only: earlier history has real one-day moves beyond the band (Shanghai +105% on 21 May 1992,
+        # when price limits were lifted; the 1997-98 crisis)
+        jumps = [b for a, b in zip(ds, ds[1:]) if b >= "2000-01-01" and not 0.7 < s[b] / s[a] < 1.4]
         if jumps:
             errors.append(f"{econ} {t}: daily moves beyond -30%/+40%: {jumps[:5]}")
             continue
@@ -148,7 +153,7 @@ def update(force=False, **_):
                          "measure": "level", "area": "", "freq": "D", "date": d, "value": round(s[d], 2), "unit": "index points",
                          "source": SOURCE, "release": code}
                         for econ, (t, s) in series.items() for d in sorted(s)), OUT / "long.csv")
-    write_release(OUT, {"code": code, "label": f"Yahoo Finance and CNBC daily closes to {latest}", "latest_date": latest,
+    write_release(OUT, {"code": code, "label": f"CNBC daily closes to {latest}", "latest_date": latest,
                         "economies": " ".join(r["economy"] for r in rows)},
                   warnings, len(rows), {"fingerprint": fp, "long_rows": nlong, "tickers": {e: t for e, (t, s) in series.items()}})
     return {"updated": True, "code": code, "warnings": warnings,
