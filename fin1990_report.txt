@@ -1,3 +1,0 @@
-eq_yahoo: JP cnbc:.N225 +21.3%; KR cnbc:.KS11 +27.8%; TW cnbc:.TWII +43.5%; HK cnbc:.HSI -3.2%; CN cnbc:.SSEC -7.0%; IN cnbc:.NSEI -6.1%; ID cnbc:.JKSE -41.8%; TH cnbc:.SETI +18.9%; MY cnbc:.KLSE -2.6%; SG cnbc:.STI +14.0%; PH cnbc:.PSI -4.5%; VN cnbc:.VNI -2.5%
-asia_fx: Asia FX unchanged
-eq first dates: {'JP': '1990-01-04', 'KR': '1990-01-03', 'TW': '1990-01-04', 'HK': '1990-01-02', 'CN': '1990-12-19', 'IN': '1995-11-03', 'ID': '1990-04-06', 'TH': '1990-01-02', 'MY': '1990-01-02', 'SG': '1999-08-31', 'PH': '1990-01-02', 'VN': '2000-07-28'}
