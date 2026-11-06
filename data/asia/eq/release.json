@@ -1,23 +1,20 @@
 {
- "code": "E2026-11-05-dc3cef",
- "label": "Yahoo Finance daily closes to 2026-11-05",
+ "code": "E2026-11-05-55cd6c",
+ "label": "Yahoo Finance and CNBC daily closes to 2026-11-05",
  "latest_date": "2026-11-05",
- "economies": "JP KR TW HK CN IN ID MY SG",
- "processed_at": "2026-11-06T07:05:43Z",
- "rows": 9,
+ "economies": "JP KR TW HK CN IN ID TH MY SG PH VN",
+ "processed_at": "2026-11-06T08:13:16Z",
+ "rows": 12,
  "warnings": [
   "TH ^SET.BK: 0 days",
   "PH PSEI.PS: 0 days",
   "PH ^PSEI: 0 days",
   "VN ^VNINDEX.VN: 0 days",
   "VN ^VNINDEX: 0 days",
-  "VN VNINDEX.VN: 0 days",
-  "left out: TH: no ticker returned data (^SET.BK)",
-  "left out: PH: no ticker returned data (PSEI.PS, ^PSEI)",
-  "left out: VN: no ticker returned data (^VNINDEX.VN, ^VNINDEX, VNINDEX.VN)"
+  "VN VNINDEX.VN: 0 days"
  ],
- "fingerprint": "dc3cef9046474c22",
- "long_rows": 70694,
+ "fingerprint": "55cd6c0d1b9b830e",
+ "long_rows": 95167,
  "tickers": {
   "JP": "^N225",
   "KR": "^KS11",
@@ -26,8 +23,11 @@
   "CN": "000001.SS",
   "IN": "^NSEI",
   "ID": "^JKSE",
+  "TH": "cnbc:.SETI",
   "MY": "^KLSE",
-  "SG": "^STI"
+  "SG": "^STI",
+  "PH": "cnbc:.PSI",
+  "VN": "cnbc:.VNI"
  },
  "history": [
   {
@@ -49,6 +49,10 @@
   {
    "code": "E2026-11-05-dc3cef",
    "processed_at": "2026-11-06T07:05:43Z"
+  },
+  {
+   "code": "E2026-11-05-55cd6c",
+   "processed_at": "2026-11-06T08:13:16Z"
   }
  ]
 }
