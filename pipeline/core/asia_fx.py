@@ -11,7 +11,7 @@ This is the change in the US-dollar value of the currency: positive means the cu
 BIS daily series and is left out.
 
 Output: data/asia/fx/asia_fx_ytd.csv, release.json, release_row.json (code F<latest date>-<hash>); and
-asia_fx_daily.csv (economy, currency, date, rate: the same BIS daily rates from 2000, as published, for the
+asia_fx_daily.csv (economy, currency, date, rate: the same BIS daily rates from 1990, as published, for the
 Financial tab's line chart, added 6 Nov 2026).
 """
 import csv
@@ -49,7 +49,7 @@ def build():
         if not obs:
             warnings.append(f"{econ}: no rates in data/{rel}")
             continue
-        daily += [{"economy": econ, "currency": ccy, "date": d, "rate": v} for d, v in obs if d >= "2000-01-01"]
+        daily += [{"economy": econ, "currency": ccy, "date": d, "rate": v} for d, v in obs if d >= "1990-01-01"]
         last_d, last_v = obs[-1]
         cut = f"{int(last_d[:4]) - 1}-12-31"
         before = [o for o in obs if o[0] <= cut]
