@@ -1,19 +1,19 @@
 {
- "code": "C2026-09",
- "label": "September 2026",
- "latest_month": "2026-09-01",
- "release_date": "2026-10-07",
+ "code": "C2026-10",
+ "label": "October 2026",
+ "latest_month": "2026-10-01",
+ "release_date": "2026-11-05",
  "table": "DGBAS Macro Database (nstatdb) price tables; monthly releases on stat.gov.tw",
- "processed_at": "2026-10-29T08:08:52Z",
- "rows": 215177,
+ "processed_at": "2026-11-06T01:28:52Z",
+ "rows": 209880,
  "warnings": [
   "COICOP 01 food: food rebuilt from its 18 subgroups at table-14 weights misses the published food index by up to 0.553 index points (fruit's month-varying weights; not used)"
  ],
- "long_rows": 55017,
+ "long_rows": 53567,
  "items": 368,
- "release_months": 45,
+ "release_months": 46,
  "rate_checks": {
-  "tested": 141293,
+  "tested": 135836,
   "outside": 0,
   "max": 0.005000000000006555
  },
@@ -22,6 +22,10 @@
   {
    "code": "C2026-09",
    "processed_at": "2026-10-29T08:08:52Z"
+  },
+  {
+   "code": "C2026-10",
+   "processed_at": "2026-11-06T01:28:52Z"
   }
  ]
 }

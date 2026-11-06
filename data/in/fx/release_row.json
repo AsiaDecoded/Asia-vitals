@@ -1,12 +1,12 @@
 [
  {
-  "code": "X2026-10-27",
-  "label": "BIS daily to 2026-10-27",
-  "latest_date": "2026-10-27",
+  "code": "X2026-11-03",
+  "label": "BIS daily to 2026-11-03",
+  "latest_date": "2026-11-03",
   "currency": "INR",
   "unit": "Indian rupee per US dollar",
   "first_date": "1973-01-02",
   "table": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/D.IN.INR.A?format=csv",
-  "processed_at": "2026-11-01T22:59:30Z"
+  "processed_at": "2026-11-06T01:30:34Z"
  }
 ]

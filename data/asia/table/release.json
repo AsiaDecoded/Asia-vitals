@@ -1,10 +1,10 @@
 {
- "code": "A49884ae587",
+ "code": "A6ea8dbd99e",
  "label": "Asia table",
  "economies": "JP KR TW HK CN IN ID TH MY SG PH VN",
  "latest_cpi_month": "2026-10-01",
- "processed_at": "2026-11-05T01:30:21Z",
- "rows": 6777,
+ "processed_at": "2026-11-06T01:40:36Z",
+ "rows": 6783,
  "warnings": [],
  "missing": [],
  "inputs": {
@@ -14,8 +14,8 @@
   "data/jp/ppi/jp_ppi.csv": "M2026-09",
   "data/kr/cpi/kr_cpi.csv": "C2026-10",
   "data/kr/ppi/kr_ppi.csv": "P2026-09",
-  "data/tw/cpi/tw_cpi.csv": "C2026-09",
-  "data/tw/ppi/tw_ppi.csv": "P2026-09",
+  "data/tw/cpi/tw_cpi.csv": "C2026-10",
+  "data/tw/ppi/tw_ppi.csv": "P2026-10",
   "data/hk/cpi/hk_cpi.csv": "C2026-09",
   "data/hk/ppi/hk_ppi.csv": "P2026Q2-T2026-08",
   "data/cn/cpi/cn_cpi.csv": "C2026-09",
@@ -40,7 +40,7 @@
  "latest_cpi": {
   "JP": "2026-09-01",
   "KR": "2026-10-01",
-  "TW": "2026-09-01",
+  "TW": "2026-10-01",
   "HK": "2026-09-01",
   "CN": "2026-09-01",
   "IN": "2026-09-01",
@@ -103,6 +103,10 @@
   {
    "code": "A49884ae587",
    "processed_at": "2026-11-05T01:30:21Z"
+  },
+  {
+   "code": "A6ea8dbd99e",
+   "processed_at": "2026-11-06T01:40:36Z"
   }
  ]
 }

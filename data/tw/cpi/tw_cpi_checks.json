@@ -1,6 +1,6 @@
 {
  "rates_vs_index": {
-  "tested": 141293,
+  "tested": 135836,
   "outside": 0,
   "max": 0.005000000000006555
  },
@@ -319,6 +319,13 @@
    "from_weights": 112.834,
    "diff": 0.014,
    "weight_sum_pm": 1000.0
+  },
+  {
+   "month": "2026-10",
+   "published": 112.9,
+   "from_weights": 112.921,
+   "diff": 0.021,
+   "weight_sum_pm": 1000.0
   }
  ],
  "item_weight_sums": {
@@ -366,13 +373,14 @@
   "2026-06": 99.592,
   "2026-07": 99.676,
   "2026-08": 99.683,
-  "2026-09": 99.62
+  "2026-09": 99.62,
+  "2026-10": 99.601
  },
  "food_coicop01": {
   "identity_max_gap": 0.0,
   "sensitivity_max_pp": 0.0461,
   "subgroups_max_gap": 0.553,
-  "months": 45
+  "months": 46
  },
  "food_coicop01_months": [
   {
@@ -593,12 +601,17 @@
   {
    "month": "2026-08",
    "identity_gap": -0.0,
-   "subgroups_gap": 0.174
+   "subgroups_gap": 0.173
   },
   {
    "month": "2026-09",
    "identity_gap": 0.0,
-   "subgroups_gap": 0.234
+   "subgroups_gap": 0.236
+  },
+  {
+   "month": "2026-10",
+   "identity_gap": 0.0,
+   "subgroups_gap": 0.203
   }
  ],
  "core1": {
@@ -606,8 +619,8 @@
   "sensitivity_max_pp": 0.017,
   "energy_index_vs_subgroups_max_pp": 0.0243,
   "energy_weight_check_max": 0.0003,
-  "energy_weight_checked_months": 25,
-  "months": 45
+  "energy_weight_checked_months": 26,
+  "months": 46
  },
  "core1_months": [
   {
@@ -877,6 +890,12 @@
   {
    "month": "2026-09",
    "identity_gap": 0.0,
+   "energy_weight_t14": 3.7019,
+   "energy_weight_from_t1": 3.702
+  },
+  {
+   "month": "2026-10",
+   "identity_gap": -0.0,
    "energy_weight_t14": 3.7019,
    "energy_weight_from_t1": 3.702
   }

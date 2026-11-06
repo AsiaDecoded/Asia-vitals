@@ -1,21 +1,25 @@
 {
- "code": "P2026-09",
- "label": "September 2026",
- "latest_month": "2026-09-01",
- "release_date": "2026-10-07",
+ "code": "P2026-10",
+ "label": "October 2026",
+ "latest_month": "2026-10-01",
+ "release_date": "2026-11-05",
  "table": "DGBAS Macro Database (nstatdb): PPI, domestic sales, import and export price tables",
- "processed_at": "2026-10-29T08:09:57Z",
- "rows": 369050,
+ "processed_at": "2026-11-06T01:30:11Z",
+ "rows": 370256,
  "warnings": [],
- "long_rows": 25930,
+ "long_rows": 26079,
  "rate_checks": {
-  "tested": 241374,
+  "tested": 242172,
   "max": 0.005000000000013327
  },
  "history": [
   {
    "code": "P2026-09",
    "processed_at": "2026-10-29T08:09:57Z"
+  },
+  {
+   "code": "P2026-10",
+   "processed_at": "2026-11-06T01:30:11Z"
   }
  ]
 }
