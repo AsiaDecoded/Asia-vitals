@@ -1,0 +1,80 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-us" class="no-js core o-hoverable-on">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Search companies, ETFs and Managed Funds for latest share prices, M&A, institutional ownership, analyst reports and stock quotes - FT.com." />
+    <meta name="keywords" content="Company research, company data, companies data, companies research, institutional ownership, M&A" />
+    <meta name="permutive-api-key" content="b2b3b748-e1f6-4bd5-b2f2-26debc8075a3" />
+
+    <link rel="shortcut icon" href="//im.ft-static.com/m/icons/favicon.ico" type="image/x-icon" />
+    
+    <title>Equities, ETF and Funds prices, indices and stock quotes - FT.com</title>
+    <!--[if lt IE 9]>
+        <script src="/data/content/scripts/vendor/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/data/content/styles/origami/origami.css?v=2" />
+    <link href="/data/bundles/styles/common?v=1coG1OW3x3y_WMspjERi5e4jubQPL3KRrNJEcNnRP1M1" rel="stylesheet"/>
+<link href="/data/bundles/styles/search?v=dZtEkA-YskjGWZi9gVJ7518dfIMzC7OhP5hZwPQ0FrQ1" rel="stylesheet"/>
+
+    
+    <!--[if IE 9]>
+        <link rel="stylesheet" href="/data/content/styles/Conditional/IE9.css" />
+    <![endif]-->
+    <script type="application/json" data-o-gtm-config>
+    {
+    "gtm_auth": "FxDn3NxkLnLIhNez_Wei4A",
+    "gtm_preview": "env-1",
+    "gtm_id": "GTM-KS3JVCG",
+    "base_url": "//markets.ft.com/data/",
+    "origami_ad_target": "https://markets.ft.com/data/miscapi/origami-ad-targeting"
+    }
+    </script>
+    <script defer src="https://cdn.adsafeprotected.com/iasPET.1.js" id="ads-script-ias"></script>
+    <script src="/data/content/scripts/apps/shared/gtmft.js"></script>
+</head>
+<body>
+    
+
+
+
+
+
+	<div class="mod-header-ad">
+		<div class="o-ads mod-ui-ad o-ads--center" data-o-ads-name="Leaderboard" data-o-ads-targeting="pos=top" data-o-ads-formats-extra="Billboard,SuperLeaderboard,Leaderboard,Responsive" data-o-ads-formats-large="SuperLeaderboard,Leaderboard,Responsive" data-o-ads-formats-medium="Leaderboard,Responsive" data-o-ads-formats-small="false" data-o-ads-formats-ftxl="Billboard,SuperLeaderboard,Leaderboard,Responsive"></div>
+	</div>
+
+<header class="o-header" data-o-component="o-header" data-o-header--no-js>
+		<div class="o-header__row o-header__anon">
+			<ul class="o-header__anon-list">
+				<li class="o-header__anon-item">
+					<a class="o-header__anon-link" href="//www.ft.com/products">Subscribe</a>
+				</li>
+				<li class="o-header__anon-item">
+					<a class="o-header__anon-link" href="//www.ft.com/login?location=http%3a%2f%2fmarkets.ft.com%2fdata%2fsearch%3fquery%3dSET%3aSET%26assetClass%3dIndex">Sign In</a>
+				</li>
+			</ul>
+		</div>
+
+	<div class="o-header__row o-header__top" data-trackable="header-top">
+		<div class="o-header__container">
+			<div class="o-header__top-wrapper">
+				<div class="o-header__top-column o-header__top-column--left">
+					<a href="#o-header-drawer" class="o-header__top-link o-header__top-link--menu" aria-controls="o-header-drawer">
+						<span class="o-header__top-link-label">Menu</span>
+					</a>
+					<a href="#o-header-search" class="o-header__top-link o-header__top-link--search" aria-controls="o-header-search-js">
+						<span class="o-header__top-link-label">Search</span>
+					</a>
+				</div>
+				<div class="o-header__top-column o-header__top-column--center">
+					<a class="o-header__top-logo" href="//www.ft.com" title="Go to Financial Times homepage">
+						<span class="o-header__visually-hidden">Financial Times</span>
+					</a>
+				</div>
+				<div class="o-header__top-column o-header__top-column--right" role="navigation" aria-label="Account and personalisation links">
+					<a class="o-header__top-link o-header__top-link--myft" href="//www.ft.com/myft" aria-label

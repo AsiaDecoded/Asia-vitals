@@ -1,0 +1,16 @@
+wsj_set: HTTP 401
+wsj_psei: HTTP 401
+mw_set: HTTP 401
+mw_psei: HTTP 401
+stooq_set: HTTP 200 796 bytes text/html; charset=utf-8
+stooq_psei: HTTP 200 796 bytes text/html; charset=utf-8
+stooq_set_th: HTTP 200 796 bytes text/html; charset=utf-8
+inv_set: HTTP 403
+inv_psei: HTTP 403
+set_or_th: HTTP 403
+pse_chart: HTTP 415
+yahoo_chart_set: HTTP 200 1114 bytes application/json;charset=utf-8
+yahoo_chart_psei: HTTP 200 1109 bytes application/json;charset=utf-8
+cnbc_set: HTTP 200 28192 bytes application/json
+cnbc_psei: HTTP 200 24371 bytes application/json
+ft_set: HTTP 200 102080 bytes text/html; charset=utf-8
