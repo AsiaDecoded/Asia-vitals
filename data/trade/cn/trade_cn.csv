@@ -1,4 +1,22 @@
 economy,flow,partner,product,date,value,unit,usd_mn,usd_calculated,series
+CN,exports,WLD,HS85,2023-06-01,71416.223,USD million,71416.223,,bulletin (4) chapter 85
+CN,exports,WLD,HS85,2023-07-01,71071.887,USD million,71071.887,,bulletin (4) chapter 85
+CN,exports,WLD,HS85,2023-08-01,72351.466,USD million,72351.466,,bulletin (4) chapter 85
+CN,exports,WLD,HS85,2023-09-01,85470.291,USD million,85470.291,,bulletin (4) chapter 85
+CN,exports,WLD,HS85,2023-10-01,78835.371,USD million,78835.371,,bulletin (4) chapter 85
+CN,exports,WLD,HS85,2023-11-01,81195.47,USD million,81195.47,,bulletin (4) chapter 85
+CN,exports,WLD,HS85,2023-12-01,80954.389,USD million,80954.389,,bulletin (4) chapter 85
+CN,exports,WLD,HS85,2024-01-01,77759.531,USD million,77759.531,,bulletin (4) chapter 85
+CN,exports,WLD,HS85,2024-02-01,57389.978,USD million,57389.978,,bulletin (4) chapter 85
+CN,exports,WLD,HS85,2024-03-01,72991.787,USD million,72991.787,,bulletin (4) chapter 85
+CN,exports,WLD,HS85,2024-04-01,73401.652,USD million,73401.652,,bulletin (4) chapter 85
+CN,exports,WLD,HS85,2024-05-01,74387.075,USD million,74387.075,,bulletin (4) chapter 85
+CN,exports,WLD,HS85,2024-06-01,76561.39,USD million,76561.39,,bulletin (4) chapter 85
+CN,exports,WLD,HS85,2024-07-01,78214.227,USD million,78214.227,,bulletin (4) chapter 85
+CN,exports,WLD,HS85,2024-08-01,78368.132,USD million,78368.132,,bulletin (4) chapter 85
+CN,exports,WLD,HS85,2024-11-01,85569.408,USD million,85569.408,,bulletin (4) chapter 85
+CN,exports,WLD,HS85,2024-12-01,84433.262,USD million,84433.262,,bulletin (4) chapter 85
+CN,exports,WLD,HS85,2025-01-01,79360.017,USD million,79360.017,,bulletin (4) chapter 85
 CN,exports,WLD,HS85,2025-02-01,60088.187,USD million,60088.187,,bulletin (4) chapter 85
 CN,exports,WLD,HS85,2025-03-01,81847.82,USD million,81847.82,,bulletin (4) chapter 85
 CN,exports,WLD,HS85,2025-04-01,81349.723,USD million,81349.723,,bulletin (4) chapter 85
@@ -19,6 +37,23 @@ CN,exports,WLD,HS85,2026-06-01,119467.661,USD million,119467.661,,bulletin (4) c
 CN,exports,WLD,HS85,2026-07-01,119740.126,USD million,119740.126,,bulletin (4) chapter 85
 CN,exports,WLD,HS85,2026-08-01,123181.813,USD million,123181.813,,bulletin (4) chapter 85
 CN,exports,WLD,HS85,2026-09-01,145461.984,USD million,145461.984,,bulletin (4) chapter 85
+CN,exports,WLD,TOTAL,2023-06-01,285321.639,USD million,285321.639,,bulletin (2) TOTAL
+CN,exports,WLD,TOTAL,2023-07-01,281755.999,USD million,281755.999,,bulletin (2) TOTAL
+CN,exports,WLD,TOTAL,2023-08-01,284790.965,USD million,284790.965,,bulletin (2) TOTAL
+CN,exports,WLD,TOTAL,2023-09-01,299129.677,USD million,299129.677,,bulletin (2) TOTAL
+CN,exports,WLD,TOTAL,2023-10-01,274827.04,USD million,274827.04,,bulletin (2) TOTAL
+CN,exports,WLD,TOTAL,2023-11-01,291934.53,USD million,291934.53,,bulletin (2) TOTAL
+CN,exports,WLD,TOTAL,2023-12-01,303618.345,USD million,303618.345,,bulletin (2) TOTAL
+CN,exports,WLD,TOTAL,2024-01-01,307734.618,USD million,307734.618,,bulletin (2) TOTAL
+CN,exports,WLD,TOTAL,2024-02-01,220279.326,USD million,220279.326,,bulletin (2) TOTAL
+CN,exports,WLD,TOTAL,2024-03-01,279681.675,USD million,279681.675,,bulletin (2) TOTAL
+CN,exports,WLD,TOTAL,2024-04-01,292453.498,USD million,292453.498,,bulletin (2) TOTAL
+CN,exports,WLD,TOTAL,2024-05-01,302348.019,USD million,302348.019,,bulletin (2) TOTAL
+CN,exports,WLD,TOTAL,2024-06-01,307854.505,USD million,307854.505,,bulletin (2) TOTAL
+CN,exports,WLD,TOTAL,2024-07-01,300556.525,USD million,300556.525,,bulletin (2) TOTAL
+CN,exports,WLD,TOTAL,2024-08-01,308647.262,USD million,308647.262,,bulletin (2) TOTAL
+CN,exports,WLD,TOTAL,2024-11-01,312310.466,USD million,312310.466,,bulletin (2) TOTAL
+CN,exports,WLD,TOTAL,2024-12-01,335627.038,USD million,335627.038,,bulletin (2) TOTAL
 CN,exports,WLD,TOTAL,2025-03-01,313911.793,USD million,313911.793,,bulletin (2) TOTAL
 CN,exports,WLD,TOTAL,2025-04-01,315692.375,USD million,315692.375,,bulletin (2) TOTAL
 CN,exports,WLD,TOTAL,2025-06-01,325232.738,USD million,325232.738,,bulletin (2) TOTAL
@@ -35,22 +70,56 @@ CN,exports,WLD,TOTAL,2026-06-01,412387.125,USD million,412387.125,,bulletin (2) 
 CN,exports,WLD,TOTAL,2026-07-01,397851.708,USD million,397851.708,,bulletin (2) TOTAL
 CN,exports,WLD,TOTAL,2026-08-01,401440.957,USD million,401440.957,,bulletin (2) TOTAL
 CN,exports,WLD,TOTAL,2026-09-01,447184.26,USD million,447184.26,,bulletin (2) TOTAL
-CN,exports,US,TOTAL,2025-03-01,1.798,USD million,1.798,,bulletin (2) United States Virgin Islands
-CN,exports,US,TOTAL,2025-04-01,0.701,USD million,0.701,,bulletin (2) United States Virgin Islands
-CN,exports,US,TOTAL,2025-06-01,0.472,USD million,0.472,,bulletin (2) United States Virgin Islands
-CN,exports,US,TOTAL,2025-09-01,1.355,USD million,1.355,,bulletin (2) United States Virgin Islands
-CN,exports,US,TOTAL,2025-10-01,0.656,USD million,0.656,,bulletin (2) United States Virgin Islands
-CN,exports,US,TOTAL,2025-11-01,0.865,USD million,0.865,,bulletin (2) United States Virgin Islands
-CN,exports,US,TOTAL,2025-12-01,1.96,USD million,1.96,,bulletin (2) United States Virgin Islands
-CN,exports,US,TOTAL,2026-01-01,0.435,USD million,0.435,,bulletin (2) United States Virgin Islands
-CN,exports,US,TOTAL,2026-02-01,1.031,USD million,1.031,,bulletin (2) United States Virgin Islands
-CN,exports,US,TOTAL,2026-03-01,1.339,USD million,1.339,,bulletin (2) United States Virgin Islands
-CN,exports,US,TOTAL,2026-04-01,0.427,USD million,0.427,,bulletin (2) United States Virgin Islands
-CN,exports,US,TOTAL,2026-05-01,0.523,USD million,0.523,,bulletin (2) United States Virgin Islands
-CN,exports,US,TOTAL,2026-06-01,2.274,USD million,2.274,,bulletin (2) United States Virgin Islands
-CN,exports,US,TOTAL,2026-07-01,0.83,USD million,0.83,,bulletin (2) United States Virgin Islands
-CN,exports,US,TOTAL,2026-08-01,1.178,USD million,1.178,,bulletin (2) United States Virgin Islands
-CN,exports,US,TOTAL,2026-09-01,2.136,USD million,2.136,,bulletin (2) United States Virgin Islands
+CN,exports,US,TOTAL,2023-06-01,42694.216,USD million,42694.216,,bulletin (2) United States
+CN,exports,US,TOTAL,2023-07-01,42312.85,USD million,42312.85,,bulletin (2) United States
+CN,exports,US,TOTAL,2023-08-01,45031.699,USD million,45031.699,,bulletin (2) United States
+CN,exports,US,TOTAL,2023-09-01,46019.7,USD million,46019.7,,bulletin (2) United States
+CN,exports,US,TOTAL,2023-10-01,43165.776,USD million,43165.776,,bulletin (2) United States
+CN,exports,US,TOTAL,2023-11-01,43803.439,USD million,43803.439,,bulletin (2) United States
+CN,exports,US,TOTAL,2023-12-01,42243.658,USD million,42243.658,,bulletin (2) United States
+CN,exports,US,TOTAL,2024-01-01,42633.059,USD million,42633.059,,bulletin (2) United States
+CN,exports,US,TOTAL,2024-02-01,30786.817,USD million,30786.817,,bulletin (2) United States
+CN,exports,US,TOTAL,2024-03-01,36723.78,USD million,36723.78,,bulletin (2) United States
+CN,exports,US,TOTAL,2024-04-01,41819.625,USD million,41819.625,,bulletin (2) United States
+CN,exports,US,TOTAL,2024-05-01,44015.614,USD million,44015.614,,bulletin (2) United States
+CN,exports,US,TOTAL,2024-06-01,45512.519,USD million,45512.519,,bulletin (2) United States
+CN,exports,US,TOTAL,2024-07-01,45739.021,USD million,45739.021,,bulletin (2) United States
+CN,exports,US,TOTAL,2024-08-01,47254.287,USD million,47254.287,,bulletin (2) United States
+CN,exports,US,TOTAL,2024-11-01,47309.393,USD million,47309.393,,bulletin (2) United States
+CN,exports,US,TOTAL,2024-12-01,48829.728,USD million,48829.728,,bulletin (2) United States
+CN,exports,US,TOTAL,2025-03-01,40061.119,USD million,40061.119,,bulletin (2) United States
+CN,exports,US,TOTAL,2025-04-01,33023.952,USD million,33023.952,,bulletin (2) United States
+CN,exports,US,TOTAL,2025-06-01,38169.685,USD million,38169.685,,bulletin (2) United States
+CN,exports,US,TOTAL,2025-09-01,34307.637,USD million,34307.637,,bulletin (2) United States
+CN,exports,US,TOTAL,2025-10-01,34920.324,USD million,34920.324,,bulletin (2) United States
+CN,exports,US,TOTAL,2025-11-01,33789.104,USD million,33789.104,,bulletin (2) United States
+CN,exports,US,TOTAL,2025-12-01,34175.398,USD million,34175.398,,bulletin (2) United States
+CN,exports,US,TOTAL,2026-01-01,36790.55,USD million,36790.55,,bulletin (2) United States
+CN,exports,US,TOTAL,2026-02-01,30450.572,USD million,30450.572,,bulletin (2) United States
+CN,exports,US,TOTAL,2026-03-01,29447.695,USD million,29447.695,,bulletin (2) United States
+CN,exports,US,TOTAL,2026-04-01,36760.552,USD million,36760.552,,bulletin (2) United States
+CN,exports,US,TOTAL,2026-05-01,39025.521,USD million,39025.521,,bulletin (2) United States
+CN,exports,US,TOTAL,2026-06-01,43463.832,USD million,43463.832,,bulletin (2) United States
+CN,exports,US,TOTAL,2026-07-01,41934.444,USD million,41934.444,,bulletin (2) United States
+CN,exports,US,TOTAL,2026-08-01,42475.276,USD million,42475.276,,bulletin (2) United States
+CN,exports,US,TOTAL,2026-09-01,47880.946,USD million,47880.946,,bulletin (2) United States
+CN,exports,HK,TOTAL,2023-06-01,22118.186,USD million,22118.186,,"bulletin (2) Hong Kong, China"
+CN,exports,HK,TOTAL,2023-07-01,21641.466,USD million,21641.466,,"bulletin (2) Hong Kong, China"
+CN,exports,HK,TOTAL,2023-08-01,21500.958,USD million,21500.958,,"bulletin (2) Hong Kong, China"
+CN,exports,HK,TOTAL,2023-09-01,27556.634,USD million,27556.634,,"bulletin (2) Hong Kong, China"
+CN,exports,HK,TOTAL,2023-10-01,24905.198,USD million,24905.198,,"bulletin (2) Hong Kong, China"
+CN,exports,HK,TOTAL,2023-11-01,26941.1,USD million,26941.1,,"bulletin (2) Hong Kong, China"
+CN,exports,HK,TOTAL,2023-12-01,29240.582,USD million,29240.582,,"bulletin (2) Hong Kong, China"
+CN,exports,HK,TOTAL,2024-01-01,25386.815,USD million,25386.815,,"bulletin (2) Hong Kong, China"
+CN,exports,HK,TOTAL,2024-02-01,15127.553,USD million,15127.553,,"bulletin (2) Hong Kong, China"
+CN,exports,HK,TOTAL,2024-03-01,25868.835,USD million,25868.835,,"bulletin (2) Hong Kong, China"
+CN,exports,HK,TOTAL,2024-04-01,24267.422,USD million,24267.422,,"bulletin (2) Hong Kong, China"
+CN,exports,HK,TOTAL,2024-05-01,22518.947,USD million,22518.947,,"bulletin (2) Hong Kong, China"
+CN,exports,HK,TOTAL,2024-06-01,24099.932,USD million,24099.932,,"bulletin (2) Hong Kong, China"
+CN,exports,HK,TOTAL,2024-07-01,24379.23,USD million,24379.23,,"bulletin (2) Hong Kong, China"
+CN,exports,HK,TOTAL,2024-08-01,23188.85,USD million,23188.85,,"bulletin (2) Hong Kong, China"
+CN,exports,HK,TOTAL,2024-11-01,26226.287,USD million,26226.287,,"bulletin (2) Hong Kong, China"
+CN,exports,HK,TOTAL,2024-12-01,27022.231,USD million,27022.231,,"bulletin (2) Hong Kong, China"
 CN,exports,HK,TOTAL,2025-03-01,27898.516,USD million,27898.516,,"bulletin (2) Hong Kong, China"
 CN,exports,HK,TOTAL,2025-04-01,26406.153,USD million,26406.153,,"bulletin (2) Hong Kong, China"
 CN,exports,HK,TOTAL,2025-06-01,28133.342,USD million,28133.342,,"bulletin (2) Hong Kong, China"
@@ -67,6 +136,23 @@ CN,exports,HK,TOTAL,2026-06-01,44439.978,USD million,44439.978,,"bulletin (2) Ho
 CN,exports,HK,TOTAL,2026-07-01,40159.477,USD million,40159.477,,"bulletin (2) Hong Kong, China"
 CN,exports,HK,TOTAL,2026-08-01,44493.128,USD million,44493.128,,"bulletin (2) Hong Kong, China"
 CN,exports,HK,TOTAL,2026-09-01,52534.087,USD million,52534.087,,"bulletin (2) Hong Kong, China"
+CN,exports,JP,TOTAL,2023-06-01,12491.116,USD million,12491.116,,bulletin (2) Japan
+CN,exports,JP,TOTAL,2023-07-01,12952.797,USD million,12952.797,,bulletin (2) Japan
+CN,exports,JP,TOTAL,2023-08-01,11971.144,USD million,11971.144,,bulletin (2) Japan
+CN,exports,JP,TOTAL,2023-09-01,14265.56,USD million,14265.56,,bulletin (2) Japan
+CN,exports,JP,TOTAL,2023-10-01,12917.0,USD million,12917.0,,bulletin (2) Japan
+CN,exports,JP,TOTAL,2023-11-01,13264.629,USD million,13264.629,,bulletin (2) Japan
+CN,exports,JP,TOTAL,2023-12-01,13081.284,USD million,13081.284,,bulletin (2) Japan
+CN,exports,JP,TOTAL,2024-01-01,14292.414,USD million,14292.414,,bulletin (2) Japan
+CN,exports,JP,TOTAL,2024-02-01,9571.03,USD million,9571.03,,bulletin (2) Japan
+CN,exports,JP,TOTAL,2024-03-01,13033.753,USD million,13033.753,,bulletin (2) Japan
+CN,exports,JP,TOTAL,2024-04-01,12344.601,USD million,12344.601,,bulletin (2) Japan
+CN,exports,JP,TOTAL,2024-05-01,12317.93,USD million,12317.93,,bulletin (2) Japan
+CN,exports,JP,TOTAL,2024-06-01,12601.596,USD million,12601.596,,bulletin (2) Japan
+CN,exports,JP,TOTAL,2024-07-01,12178.663,USD million,12178.663,,bulletin (2) Japan
+CN,exports,JP,TOTAL,2024-08-01,12033.414,USD million,12033.414,,bulletin (2) Japan
+CN,exports,JP,TOTAL,2024-11-01,14106.916,USD million,14106.916,,bulletin (2) Japan
+CN,exports,JP,TOTAL,2024-12-01,12528.191,USD million,12528.191,,bulletin (2) Japan
 CN,exports,JP,TOTAL,2025-03-01,13910.554,USD million,13910.554,,bulletin (2) Japan
 CN,exports,JP,TOTAL,2025-04-01,13303.219,USD million,13303.219,,bulletin (2) Japan
 CN,exports,JP,TOTAL,2025-06-01,13434.613,USD million,13434.613,,bulletin (2) Japan
@@ -83,6 +169,56 @@ CN,exports,JP,TOTAL,2026-06-01,14358.702,USD million,14358.702,,bulletin (2) Jap
 CN,exports,JP,TOTAL,2026-07-01,14224.249,USD million,14224.249,,bulletin (2) Japan
 CN,exports,JP,TOTAL,2026-08-01,13902.311,USD million,13902.311,,bulletin (2) Japan
 CN,exports,JP,TOTAL,2026-09-01,15623.313,USD million,15623.313,,bulletin (2) Japan
+CN,exports,EU,TOTAL,2023-06-01,43955.455,USD million,43955.455,,bulletin (2) EU
+CN,exports,EU,TOTAL,2023-07-01,42380.041,USD million,42380.041,,bulletin (2) EU
+CN,exports,EU,TOTAL,2023-08-01,41294.493,USD million,41294.493,,bulletin (2) EU
+CN,exports,EU,TOTAL,2023-09-01,41512.085,USD million,41512.085,,bulletin (2) EU
+CN,exports,EU,TOTAL,2023-10-01,38583.055,USD million,38583.055,,bulletin (2) EU
+CN,exports,EU,TOTAL,2023-11-01,38289.251,USD million,38289.251,,bulletin (2) EU
+CN,exports,EU,TOTAL,2023-12-01,42756.821,USD million,42756.821,,bulletin (2) EU
+CN,exports,EU,TOTAL,2024-01-01,43898.331,USD million,43898.331,,bulletin (2) EU
+CN,exports,EU,TOTAL,2024-02-01,34357.778,USD million,34357.778,,bulletin (2) EU
+CN,exports,EU,TOTAL,2024-03-01,39036.489,USD million,39036.489,,bulletin (2) EU
+CN,exports,EU,TOTAL,2024-04-01,43146.738,USD million,43146.738,,bulletin (2) EU
+CN,exports,EU,TOTAL,2024-05-01,44189.37,USD million,44189.37,,bulletin (2) EU
+CN,exports,EU,TOTAL,2024-06-01,45747.762,USD million,45747.762,,bulletin (2) EU
+CN,exports,EU,TOTAL,2024-07-01,45770.157,USD million,45770.157,,bulletin (2) EU
+CN,exports,EU,TOTAL,2024-08-01,46826.811,USD million,46826.811,,bulletin (2) EU
+CN,exports,EU,TOTAL,2024-11-01,41058.574,USD million,41058.574,,bulletin (2) EU
+CN,exports,EU,TOTAL,2024-12-01,46503.25,USD million,46503.25,,bulletin (2) EU
+CN,exports,EU,TOTAL,2025-03-01,43056.641,USD million,43056.641,,bulletin (2) EU
+CN,exports,EU,TOTAL,2025-04-01,46714.536,USD million,46714.536,,bulletin (2) EU
+CN,exports,EU,TOTAL,2025-06-01,49220.015,USD million,49220.015,,bulletin (2) EU
+CN,exports,EU,TOTAL,2025-09-01,48023.846,USD million,48023.846,,bulletin (2) EU
+CN,exports,EU,TOTAL,2025-10-01,43895.104,USD million,43895.104,,bulletin (2) EU
+CN,exports,EU,TOTAL,2025-11-01,47147.152,USD million,47147.152,,bulletin (2) EU
+CN,exports,EU,TOTAL,2025-12-01,51913.073,USD million,51913.073,,bulletin (2) EU
+CN,exports,EU,TOTAL,2026-01-01,53917.808,USD million,53917.808,,bulletin (2) EU
+CN,exports,EU,TOTAL,2026-02-01,47078.703,USD million,47078.703,,bulletin (2) EU
+CN,exports,EU,TOTAL,2026-03-01,46771.874,USD million,46771.874,,bulletin (2) EU
+CN,exports,EU,TOTAL,2026-04-01,52988.198,USD million,52988.198,,bulletin (2) EU
+CN,exports,EU,TOTAL,2026-05-01,53242.09,USD million,53242.09,,bulletin (2) EU
+CN,exports,EU,TOTAL,2026-06-01,58305.969,USD million,58305.969,,bulletin (2) EU
+CN,exports,EU,TOTAL,2026-07-01,57976.379,USD million,57976.379,,bulletin (2) EU
+CN,exports,EU,TOTAL,2026-08-01,55106.328,USD million,55106.328,,bulletin (2) EU
+CN,exports,EU,TOTAL,2026-09-01,60151.148,USD million,60151.148,,bulletin (2) EU
+CN,exports,TW,TOTAL,2023-06-01,5281.037,USD million,5281.037,,bulletin (2) Taiwan，China
+CN,exports,TW,TOTAL,2023-07-01,5609.217,USD million,5609.217,,bulletin (2) Taiwan，China
+CN,exports,TW,TOTAL,2023-08-01,5991.658,USD million,5991.658,,bulletin (2) Taiwan，China
+CN,exports,TW,TOTAL,2023-09-01,6469.062,USD million,6469.062,,bulletin (2) Taiwan，China
+CN,exports,TW,TOTAL,2023-10-01,5949.136,USD million,5949.136,,bulletin (2) Taiwan，China
+CN,exports,TW,TOTAL,2023-11-01,6191.295,USD million,6191.295,,bulletin (2) Taiwan，China
+CN,exports,TW,TOTAL,2023-12-01,5984.871,USD million,5984.871,,bulletin (2) Taiwan，China
+CN,exports,TW,TOTAL,2024-01-01,6593.707,USD million,6593.707,,bulletin (2) Taiwan，China
+CN,exports,TW,TOTAL,2024-02-01,3802.777,USD million,3802.777,,bulletin (2) Taiwan，China
+CN,exports,TW,TOTAL,2024-03-01,6223.582,USD million,6223.582,,bulletin (2) Taiwan，China
+CN,exports,TW,TOTAL,2024-04-01,6157.701,USD million,6157.701,,bulletin (2) Taiwan，China
+CN,exports,TW,TOTAL,2024-05-01,6547.211,USD million,6547.211,,bulletin (2) Taiwan，China
+CN,exports,TW,TOTAL,2024-06-01,6740.172,USD million,6740.172,,bulletin (2) Taiwan，China
+CN,exports,TW,TOTAL,2024-07-01,6904.78,USD million,6904.78,,bulletin (2) Taiwan，China
+CN,exports,TW,TOTAL,2024-08-01,6398.049,USD million,6398.049,,bulletin (2) Taiwan，China
+CN,exports,TW,TOTAL,2024-11-01,6586.54,USD million,6586.54,,bulletin (2) Taiwan，China
+CN,exports,TW,TOTAL,2024-12-01,6831.63,USD million,6831.63,,bulletin (2) Taiwan，China
 CN,exports,TW,TOTAL,2025-03-01,6714.195,USD million,6714.195,,bulletin (2) Taiwan，China
 CN,exports,TW,TOTAL,2025-04-01,7113.434,USD million,7113.434,,bulletin (2) Taiwan，China
 CN,exports,TW,TOTAL,2025-06-01,6966.989,USD million,6966.989,,bulletin (2) Taiwan，China
@@ -99,22 +235,56 @@ CN,exports,TW,TOTAL,2026-06-01,10014.777,USD million,10014.777,,"bulletin (2) Ta
 CN,exports,TW,TOTAL,2026-07-01,10293.685,USD million,10293.685,,"bulletin (2) Taiwan, China"
 CN,exports,TW,TOTAL,2026-08-01,10802.754,USD million,10802.754,,"bulletin (2) Taiwan, China"
 CN,exports,TW,TOTAL,2026-09-01,11930.168,USD million,11930.168,,"bulletin (2) Taiwan, China"
-CN,exports,KR,TOTAL,2025-03-01,204.424,USD million,204.424,,bulletin (2) Democratic People's Republic of Korea
-CN,exports,KR,TOTAL,2025-04-01,186.404,USD million,186.404,,bulletin (2) Democratic People's Republic of Korea
-CN,exports,KR,TOTAL,2025-06-01,189.405,USD million,189.405,,bulletin (2) Democratic People's Republic of Korea
-CN,exports,KR,TOTAL,2025-09-01,228.115,USD million,228.115,,bulletin (2) Democratic People's Republic of Korea
-CN,exports,KR,TOTAL,2025-10-01,198.089,USD million,198.089,,bulletin (2) Democratic People's Republic of Korea
-CN,exports,KR,TOTAL,2025-11-01,243.592,USD million,243.592,,bulletin (2) Democratic People's Republic of Korea
-CN,exports,KR,TOTAL,2025-12-01,257.431,USD million,257.431,,bulletin (2) Democratic People's Republic of Korea
-CN,exports,KR,TOTAL,2026-01-01,192.174,USD million,192.174,,bulletin (2) Democratic People's Republic of Korea
-CN,exports,KR,TOTAL,2026-02-01,137.32,USD million,137.32,,bulletin (2) Democratic People's Republic of Korea
-CN,exports,KR,TOTAL,2026-03-01,170.578,USD million,170.578,,bulletin (2) Democratic People's Republic of Korea
-CN,exports,KR,TOTAL,2026-04-01,252.298,USD million,252.298,,bulletin (2) Democratic People's Republic of Korea
-CN,exports,KR,TOTAL,2026-05-01,215.7,USD million,215.7,,bulletin (2) Democratic People's Republic of Korea
-CN,exports,KR,TOTAL,2026-06-01,214.875,USD million,214.875,,bulletin (2) Democratic People's Republic of Korea
-CN,exports,KR,TOTAL,2026-07-01,184.987,USD million,184.987,,bulletin (2) Democratic People's Republic of Korea
-CN,exports,KR,TOTAL,2026-08-01,182.853,USD million,182.853,,bulletin (2) Democratic People's Republic of Korea
-CN,exports,KR,TOTAL,2026-09-01,238.484,USD million,238.484,,bulletin (2) Democratic People's Republic of Korea
+CN,exports,KR,TOTAL,2023-06-01,12620.504,USD million,12620.504,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2023-07-01,11713.168,USD million,11713.168,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2023-08-01,11844.22,USD million,11844.22,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2023-09-01,12612.487,USD million,12612.487,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2023-10-01,11815.877,USD million,11815.877,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2023-11-01,12518.988,USD million,12518.988,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2023-12-01,13084.05,USD million,13084.05,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2024-01-01,12121.008,USD million,12121.008,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2024-02-01,9049.78,USD million,9049.78,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2024-03-01,13022.268,USD million,13022.268,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2024-04-01,12745.695,USD million,12745.695,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2024-05-01,12786.443,USD million,12786.443,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2024-06-01,13138.699,USD million,13138.699,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2024-07-01,11809.642,USD million,11809.642,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2024-08-01,12242.893,USD million,12242.893,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2024-11-01,12198.751,USD million,12198.751,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2024-12-01,13607.491,USD million,13607.491,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2025-03-01,12901.847,USD million,12901.847,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2025-04-01,12706.867,USD million,12706.867,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2025-06-01,12263.706,USD million,12263.706,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2025-09-01,12251.642,USD million,12251.642,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2025-10-01,10786.391,USD million,10786.391,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2025-11-01,12432.555,USD million,12432.555,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2025-12-01,13523.216,USD million,13523.216,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2026-01-01,13655.764,USD million,13655.764,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2026-02-01,12380.907,USD million,12380.907,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2026-03-01,15427.031,USD million,15427.031,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2026-04-01,15829.945,USD million,15829.945,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2026-05-01,17960.431,USD million,17960.431,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2026-06-01,17485.104,USD million,17485.104,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2026-07-01,18119.507,USD million,18119.507,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2026-08-01,18011.38,USD million,18011.38,,bulletin (2) Republic of Korea
+CN,exports,KR,TOTAL,2026-09-01,20602.142,USD million,20602.142,,bulletin (2) Republic of Korea
+CN,exports,IN,TOTAL,2023-06-01,9774.229,USD million,9774.229,,bulletin (2) India
+CN,exports,IN,TOTAL,2023-07-01,10151.676,USD million,10151.676,,bulletin (2) India
+CN,exports,IN,TOTAL,2023-08-01,10028.094,USD million,10028.094,,bulletin (2) India
+CN,exports,IN,TOTAL,2023-09-01,11330.935,USD million,11330.935,,bulletin (2) India
+CN,exports,IN,TOTAL,2023-10-01,9484.532,USD million,9484.532,,bulletin (2) India
+CN,exports,IN,TOTAL,2023-11-01,10032.176,USD million,10032.176,,bulletin (2) India
+CN,exports,IN,TOTAL,2023-12-01,10462.862,USD million,10462.862,,bulletin (2) India
+CN,exports,IN,TOTAL,2024-01-01,11472.713,USD million,11472.713,,bulletin (2) India
+CN,exports,IN,TOTAL,2024-02-01,8021.974,USD million,8021.974,,bulletin (2) India
+CN,exports,IN,TOTAL,2024-03-01,8487.092,USD million,8487.092,,bulletin (2) India
+CN,exports,IN,TOTAL,2024-04-01,9189.907,USD million,9189.907,,bulletin (2) India
+CN,exports,IN,TOTAL,2024-05-01,9899.319,USD million,9899.319,,bulletin (2) India
+CN,exports,IN,TOTAL,2024-06-01,10230.509,USD million,10230.509,,bulletin (2) India
+CN,exports,IN,TOTAL,2024-07-01,11022.324,USD million,11022.324,,bulletin (2) India
+CN,exports,IN,TOTAL,2024-08-01,11429.835,USD million,11429.835,,bulletin (2) India
+CN,exports,IN,TOTAL,2024-11-01,10246.824,USD million,10246.824,,bulletin (2) India
+CN,exports,IN,TOTAL,2024-12-01,10462.15,USD million,10462.15,,bulletin (2) India
 CN,exports,IN,TOTAL,2025-03-01,10805.054,USD million,10805.054,,bulletin (2) India
 CN,exports,IN,TOTAL,2025-04-01,11184.749,USD million,11184.749,,bulletin (2) India
 CN,exports,IN,TOTAL,2025-06-01,11190.63,USD million,11190.63,,bulletin (2) India
@@ -131,6 +301,23 @@ CN,exports,IN,TOTAL,2026-06-01,15602.926,USD million,15602.926,,bulletin (2) Ind
 CN,exports,IN,TOTAL,2026-07-01,13844.472,USD million,13844.472,,bulletin (2) India
 CN,exports,IN,TOTAL,2026-08-01,14572.871,USD million,14572.871,,bulletin (2) India
 CN,exports,IN,TOTAL,2026-09-01,17378.71,USD million,17378.71,,bulletin (2) India
+CN,exports,ID,TOTAL,2023-06-01,5287.274,USD million,5287.274,,bulletin (2) Indonesia
+CN,exports,ID,TOTAL,2023-07-01,5327.635,USD million,5327.635,,bulletin (2) Indonesia
+CN,exports,ID,TOTAL,2023-08-01,5649.388,USD million,5649.388,,bulletin (2) Indonesia
+CN,exports,ID,TOTAL,2023-09-01,5369.751,USD million,5369.751,,bulletin (2) Indonesia
+CN,exports,ID,TOTAL,2023-10-01,5067.488,USD million,5067.488,,bulletin (2) Indonesia
+CN,exports,ID,TOTAL,2023-11-01,6156.104,USD million,6156.104,,bulletin (2) Indonesia
+CN,exports,ID,TOTAL,2023-12-01,5883.488,USD million,5883.488,,bulletin (2) Indonesia
+CN,exports,ID,TOTAL,2024-01-01,6739.554,USD million,6739.554,,bulletin (2) Indonesia
+CN,exports,ID,TOTAL,2024-02-01,4904.863,USD million,4904.863,,bulletin (2) Indonesia
+CN,exports,ID,TOTAL,2024-03-01,4979.098,USD million,4979.098,,bulletin (2) Indonesia
+CN,exports,ID,TOTAL,2024-04-01,5713.118,USD million,5713.118,,bulletin (2) Indonesia
+CN,exports,ID,TOTAL,2024-05-01,6389.312,USD million,6389.312,,bulletin (2) Indonesia
+CN,exports,ID,TOTAL,2024-06-01,6555.094,USD million,6555.094,,bulletin (2) Indonesia
+CN,exports,ID,TOTAL,2024-07-01,6288.175,USD million,6288.175,,bulletin (2) Indonesia
+CN,exports,ID,TOTAL,2024-08-01,6447.39,USD million,6447.39,,bulletin (2) Indonesia
+CN,exports,ID,TOTAL,2024-11-01,7403.292,USD million,7403.292,,bulletin (2) Indonesia
+CN,exports,ID,TOTAL,2024-12-01,8881.214,USD million,8881.214,,bulletin (2) Indonesia
 CN,exports,ID,TOTAL,2025-03-01,6202.769,USD million,6202.769,,bulletin (2) Indonesia
 CN,exports,ID,TOTAL,2025-04-01,7818.17,USD million,7818.17,,bulletin (2) Indonesia
 CN,exports,ID,TOTAL,2025-06-01,7132.095,USD million,7132.095,,bulletin (2) Indonesia
@@ -147,6 +334,23 @@ CN,exports,ID,TOTAL,2026-06-01,9585.608,USD million,9585.608,,bulletin (2) Indon
 CN,exports,ID,TOTAL,2026-07-01,8662.661,USD million,8662.661,,bulletin (2) Indonesia
 CN,exports,ID,TOTAL,2026-08-01,8423.165,USD million,8423.165,,bulletin (2) Indonesia
 CN,exports,ID,TOTAL,2026-09-01,9003.165,USD million,9003.165,,bulletin (2) Indonesia
+CN,exports,MY,TOTAL,2023-06-01,7580.547,USD million,7580.547,,bulletin (2) Malaysia
+CN,exports,MY,TOTAL,2023-07-01,7130.495,USD million,7130.495,,bulletin (2) Malaysia
+CN,exports,MY,TOTAL,2023-08-01,7024.488,USD million,7024.488,,bulletin (2) Malaysia
+CN,exports,MY,TOTAL,2023-09-01,7349.467,USD million,7349.467,,bulletin (2) Malaysia
+CN,exports,MY,TOTAL,2023-10-01,6773.569,USD million,6773.569,,bulletin (2) Malaysia
+CN,exports,MY,TOTAL,2023-11-01,7459.343,USD million,7459.343,,bulletin (2) Malaysia
+CN,exports,MY,TOTAL,2023-12-01,8994.822,USD million,8994.822,,bulletin (2) Malaysia
+CN,exports,MY,TOTAL,2024-01-01,7951.001,USD million,7951.001,,bulletin (2) Malaysia
+CN,exports,MY,TOTAL,2024-02-01,5240.492,USD million,5240.492,,bulletin (2) Malaysia
+CN,exports,MY,TOTAL,2024-03-01,9726.087,USD million,9726.087,,bulletin (2) Malaysia
+CN,exports,MY,TOTAL,2024-04-01,8164.746,USD million,8164.746,,bulletin (2) Malaysia
+CN,exports,MY,TOTAL,2024-05-01,8536.435,USD million,8536.435,,bulletin (2) Malaysia
+CN,exports,MY,TOTAL,2024-06-01,8954.12,USD million,8954.12,,bulletin (2) Malaysia
+CN,exports,MY,TOTAL,2024-07-01,8077.806,USD million,8077.806,,bulletin (2) Malaysia
+CN,exports,MY,TOTAL,2024-08-01,7651.061,USD million,7651.061,,bulletin (2) Malaysia
+CN,exports,MY,TOTAL,2024-11-01,9569.235,USD million,9569.235,,bulletin (2) Malaysia
+CN,exports,MY,TOTAL,2024-12-01,10732.233,USD million,10732.233,,bulletin (2) Malaysia
 CN,exports,MY,TOTAL,2025-03-01,9466.044,USD million,9466.044,,bulletin (2) Malaysia
 CN,exports,MY,TOTAL,2025-04-01,9382.417,USD million,9382.417,,bulletin (2) Malaysia
 CN,exports,MY,TOTAL,2025-06-01,9839.848,USD million,9839.848,,bulletin (2) Malaysia
@@ -163,6 +367,23 @@ CN,exports,MY,TOTAL,2026-06-01,13537.454,USD million,13537.454,,bulletin (2) Mal
 CN,exports,MY,TOTAL,2026-07-01,12172.776,USD million,12172.776,,bulletin (2) Malaysia
 CN,exports,MY,TOTAL,2026-08-01,13745.978,USD million,13745.978,,bulletin (2) Malaysia
 CN,exports,MY,TOTAL,2026-09-01,14641.815,USD million,14641.815,,bulletin (2) Malaysia
+CN,exports,PH,TOTAL,2023-06-01,3844.823,USD million,3844.823,,bulletin (2) Philippines
+CN,exports,PH,TOTAL,2023-07-01,4116.036,USD million,4116.036,,bulletin (2) Philippines
+CN,exports,PH,TOTAL,2023-08-01,4208.061,USD million,4208.061,,bulletin (2) Philippines
+CN,exports,PH,TOTAL,2023-09-01,4233.017,USD million,4233.017,,bulletin (2) Philippines
+CN,exports,PH,TOTAL,2023-10-01,4195.319,USD million,4195.319,,bulletin (2) Philippines
+CN,exports,PH,TOTAL,2023-11-01,4507.324,USD million,4507.324,,bulletin (2) Philippines
+CN,exports,PH,TOTAL,2023-12-01,4356.033,USD million,4356.033,,bulletin (2) Philippines
+CN,exports,PH,TOTAL,2024-01-01,4620.157,USD million,4620.157,,bulletin (2) Philippines
+CN,exports,PH,TOTAL,2024-02-01,2913.008,USD million,2913.008,,bulletin (2) Philippines
+CN,exports,PH,TOTAL,2024-03-01,4571.121,USD million,4571.121,,bulletin (2) Philippines
+CN,exports,PH,TOTAL,2024-04-01,4742.129,USD million,4742.129,,bulletin (2) Philippines
+CN,exports,PH,TOTAL,2024-05-01,4800.148,USD million,4800.148,,bulletin (2) Philippines
+CN,exports,PH,TOTAL,2024-06-01,4618.77,USD million,4618.77,,bulletin (2) Philippines
+CN,exports,PH,TOTAL,2024-07-01,4334.184,USD million,4334.184,,bulletin (2) Philippines
+CN,exports,PH,TOTAL,2024-08-01,4233.888,USD million,4233.888,,bulletin (2) Philippines
+CN,exports,PH,TOTAL,2024-11-01,4635.689,USD million,4635.689,,bulletin (2) Philippines
+CN,exports,PH,TOTAL,2024-12-01,4704.138,USD million,4704.138,,bulletin (2) Philippines
 CN,exports,PH,TOTAL,2025-03-01,4996.102,USD million,4996.102,,bulletin (2) Philippines
 CN,exports,PH,TOTAL,2025-04-01,5074.883,USD million,5074.883,,bulletin (2) Philippines
 CN,exports,PH,TOTAL,2025-06-01,5090.678,USD million,5090.678,,bulletin (2) Philippines
@@ -179,6 +400,23 @@ CN,exports,PH,TOTAL,2026-06-01,6385.395,USD million,6385.395,,bulletin (2) Phili
 CN,exports,PH,TOTAL,2026-07-01,6059.476,USD million,6059.476,,bulletin (2) Philippines
 CN,exports,PH,TOTAL,2026-08-01,5248.061,USD million,5248.061,,bulletin (2) Philippines
 CN,exports,PH,TOTAL,2026-09-01,6204.432,USD million,6204.432,,bulletin (2) Philippines
+CN,exports,SG,TOTAL,2023-06-01,7153.284,USD million,7153.284,,bulletin (2) Singapore
+CN,exports,SG,TOTAL,2023-07-01,5861.658,USD million,5861.658,,bulletin (2) Singapore
+CN,exports,SG,TOTAL,2023-08-01,5521.141,USD million,5521.141,,bulletin (2) Singapore
+CN,exports,SG,TOTAL,2023-09-01,6074.673,USD million,6074.673,,bulletin (2) Singapore
+CN,exports,SG,TOTAL,2023-10-01,5353.451,USD million,5353.451,,bulletin (2) Singapore
+CN,exports,SG,TOTAL,2023-11-01,6739.079,USD million,6739.079,,bulletin (2) Singapore
+CN,exports,SG,TOTAL,2023-12-01,7934.444,USD million,7934.444,,bulletin (2) Singapore
+CN,exports,SG,TOTAL,2024-01-01,6491.514,USD million,6491.514,,bulletin (2) Singapore
+CN,exports,SG,TOTAL,2024-02-01,4927.426,USD million,4927.426,,bulletin (2) Singapore
+CN,exports,SG,TOTAL,2024-03-01,8319.709,USD million,8319.709,,bulletin (2) Singapore
+CN,exports,SG,TOTAL,2024-04-01,7239.307,USD million,7239.307,,bulletin (2) Singapore
+CN,exports,SG,TOTAL,2024-05-01,6860.201,USD million,6860.201,,bulletin (2) Singapore
+CN,exports,SG,TOTAL,2024-06-01,7038.48,USD million,7038.48,,bulletin (2) Singapore
+CN,exports,SG,TOTAL,2024-07-01,5563.594,USD million,5563.594,,bulletin (2) Singapore
+CN,exports,SG,TOTAL,2024-08-01,5942.373,USD million,5942.373,,bulletin (2) Singapore
+CN,exports,SG,TOTAL,2024-11-01,7122.101,USD million,7122.101,,bulletin (2) Singapore
+CN,exports,SG,TOTAL,2024-12-01,8442.56,USD million,8442.56,,bulletin (2) Singapore
 CN,exports,SG,TOTAL,2025-03-01,7787.079,USD million,7787.079,,bulletin (2) Singapore
 CN,exports,SG,TOTAL,2025-04-01,8317.282,USD million,8317.282,,bulletin (2) Singapore
 CN,exports,SG,TOTAL,2025-06-01,7763.009,USD million,7763.009,,bulletin (2) Singapore
@@ -195,6 +433,23 @@ CN,exports,SG,TOTAL,2026-06-01,10312.998,USD million,10312.998,,bulletin (2) Sin
 CN,exports,SG,TOTAL,2026-07-01,10282.707,USD million,10282.707,,bulletin (2) Singapore
 CN,exports,SG,TOTAL,2026-08-01,9296.264,USD million,9296.264,,bulletin (2) Singapore
 CN,exports,SG,TOTAL,2026-09-01,9392.348,USD million,9392.348,,bulletin (2) Singapore
+CN,exports,TH,TOTAL,2023-06-01,6016.246,USD million,6016.246,,bulletin (2) Thailand
+CN,exports,TH,TOTAL,2023-07-01,6032.793,USD million,6032.793,,bulletin (2) Thailand
+CN,exports,TH,TOTAL,2023-08-01,5863.385,USD million,5863.385,,bulletin (2) Thailand
+CN,exports,TH,TOTAL,2023-09-01,6302.434,USD million,6302.434,,bulletin (2) Thailand
+CN,exports,TH,TOTAL,2023-10-01,6261.646,USD million,6261.646,,bulletin (2) Thailand
+CN,exports,TH,TOTAL,2023-11-01,6673.14,USD million,6673.14,,bulletin (2) Thailand
+CN,exports,TH,TOTAL,2023-12-01,6718.729,USD million,6718.729,,bulletin (2) Thailand
+CN,exports,TH,TOTAL,2024-01-01,7223.718,USD million,7223.718,,bulletin (2) Thailand
+CN,exports,TH,TOTAL,2024-02-01,5223.719,USD million,5223.719,,bulletin (2) Thailand
+CN,exports,TH,TOTAL,2024-03-01,7559.182,USD million,7559.182,,bulletin (2) Thailand
+CN,exports,TH,TOTAL,2024-04-01,7264.754,USD million,7264.754,,bulletin (2) Thailand
+CN,exports,TH,TOTAL,2024-05-01,7206.821,USD million,7206.821,,bulletin (2) Thailand
+CN,exports,TH,TOTAL,2024-06-01,7005.162,USD million,7005.162,,bulletin (2) Thailand
+CN,exports,TH,TOTAL,2024-07-01,6877.081,USD million,6877.081,,bulletin (2) Thailand
+CN,exports,TH,TOTAL,2024-08-01,6794.385,USD million,6794.385,,bulletin (2) Thailand
+CN,exports,TH,TOTAL,2024-11-01,8143.211,USD million,8143.211,,bulletin (2) Thailand
+CN,exports,TH,TOTAL,2024-12-01,8630.659,USD million,8630.659,,bulletin (2) Thailand
 CN,exports,TH,TOTAL,2025-03-01,9659.474,USD million,9659.474,,bulletin (2) Thailand
 CN,exports,TH,TOTAL,2025-04-01,9288.285,USD million,9288.285,,bulletin (2) Thailand
 CN,exports,TH,TOTAL,2025-06-01,8957.283,USD million,8957.283,,bulletin (2) Thailand
@@ -211,6 +466,23 @@ CN,exports,TH,TOTAL,2026-06-01,12177.298,USD million,12177.298,,bulletin (2) Tha
 CN,exports,TH,TOTAL,2026-07-01,12142.898,USD million,12142.898,,bulletin (2) Thailand
 CN,exports,TH,TOTAL,2026-08-01,11319.606,USD million,11319.606,,bulletin (2) Thailand
 CN,exports,TH,TOTAL,2026-09-01,13511.866,USD million,13511.866,,bulletin (2) Thailand
+CN,exports,VN,TOTAL,2023-06-01,10953.247,USD million,10953.247,,bulletin (2) Viet Nam
+CN,exports,VN,TOTAL,2023-07-01,11044.635,USD million,11044.635,,bulletin (2) Viet Nam
+CN,exports,VN,TOTAL,2023-08-01,12267.834,USD million,12267.834,,bulletin (2) Viet Nam
+CN,exports,VN,TOTAL,2023-09-01,12414.022,USD million,12414.022,,bulletin (2) Viet Nam
+CN,exports,VN,TOTAL,2023-10-01,11766.907,USD million,11766.907,,bulletin (2) Viet Nam
+CN,exports,VN,TOTAL,2023-11-01,12888.343,USD million,12888.343,,bulletin (2) Viet Nam
+CN,exports,VN,TOTAL,2023-12-01,13808.353,USD million,13808.353,,bulletin (2) Viet Nam
+CN,exports,VN,TOTAL,2024-01-01,13713.577,USD million,13713.577,,bulletin (2) Viet Nam
+CN,exports,VN,TOTAL,2024-02-01,8231.694,USD million,8231.694,,bulletin (2) Viet Nam
+CN,exports,VN,TOTAL,2024-03-01,14870.236,USD million,14870.236,,bulletin (2) Viet Nam
+CN,exports,VN,TOTAL,2024-04-01,14029.63,USD million,14029.63,,bulletin (2) Viet Nam
+CN,exports,VN,TOTAL,2024-05-01,14197.461,USD million,14197.461,,bulletin (2) Viet Nam
+CN,exports,VN,TOTAL,2024-06-01,13152.4,USD million,13152.4,,bulletin (2) Viet Nam
+CN,exports,VN,TOTAL,2024-07-01,13357.588,USD million,13357.588,,bulletin (2) Viet Nam
+CN,exports,VN,TOTAL,2024-08-01,13441.242,USD million,13441.242,,bulletin (2) Viet Nam
+CN,exports,VN,TOTAL,2024-11-01,14539.375,USD million,14539.375,,bulletin (2) Viet Nam
+CN,exports,VN,TOTAL,2024-12-01,15721.312,USD million,15721.312,,bulletin (2) Viet Nam
 CN,exports,VN,TOTAL,2025-03-01,17681.945,USD million,17681.945,,bulletin (2) Viet Nam
 CN,exports,VN,TOTAL,2025-04-01,17187.749,USD million,17187.749,,bulletin (2) Viet Nam
 CN,exports,VN,TOTAL,2025-06-01,16283.874,USD million,16283.874,,bulletin (2) Viet Nam
@@ -227,6 +499,23 @@ CN,exports,VN,TOTAL,2026-06-01,22706.954,USD million,22706.954,,bulletin (2) Vie
 CN,exports,VN,TOTAL,2026-07-01,23146.151,USD million,23146.151,,bulletin (2) Viet Nam
 CN,exports,VN,TOTAL,2026-08-01,23404.394,USD million,23404.394,,bulletin (2) Viet Nam
 CN,exports,VN,TOTAL,2026-09-01,25623.114,USD million,25623.114,,bulletin (2) Viet Nam
+CN,imports,WLD,TOTAL,2023-06-01,214702.169,USD million,214702.169,,bulletin (2) TOTAL
+CN,imports,WLD,TOTAL,2023-07-01,201159.403,USD million,201159.403,,bulletin (2) TOTAL
+CN,imports,WLD,TOTAL,2023-08-01,216592.727,USD million,216592.727,,bulletin (2) TOTAL
+CN,imports,WLD,TOTAL,2023-09-01,221298.188,USD million,221298.188,,bulletin (2) TOTAL
+CN,imports,WLD,TOTAL,2023-10-01,218298.927,USD million,218298.927,,bulletin (2) TOTAL
+CN,imports,WLD,TOTAL,2023-11-01,223539.32,USD million,223539.32,,bulletin (2) TOTAL
+CN,imports,WLD,TOTAL,2023-12-01,228277.992,USD million,228277.992,,bulletin (2) TOTAL
+CN,imports,WLD,TOTAL,2024-01-01,222276.794,USD million,222276.794,,bulletin (2) TOTAL
+CN,imports,WLD,TOTAL,2024-02-01,180573.806,USD million,180573.806,,bulletin (2) TOTAL
+CN,imports,WLD,TOTAL,2024-03-01,221130.611,USD million,221130.611,,bulletin (2) TOTAL
+CN,imports,WLD,TOTAL,2024-04-01,220101.81,USD million,220101.81,,bulletin (2) TOTAL
+CN,imports,WLD,TOTAL,2024-05-01,219725.898,USD million,219725.898,,bulletin (2) TOTAL
+CN,imports,WLD,TOTAL,2024-06-01,208807.983,USD million,208807.983,,bulletin (2) TOTAL
+CN,imports,WLD,TOTAL,2024-07-01,215909.6,USD million,215909.6,,bulletin (2) TOTAL
+CN,imports,WLD,TOTAL,2024-08-01,217625.707,USD million,217625.707,,bulletin (2) TOTAL
+CN,imports,WLD,TOTAL,2024-11-01,214867.327,USD million,214867.327,,bulletin (2) TOTAL
+CN,imports,WLD,TOTAL,2024-12-01,230789.126,USD million,230789.126,,bulletin (2) TOTAL
 CN,imports,WLD,TOTAL,2025-03-01,211269.329,USD million,211269.329,,bulletin (2) TOTAL
 CN,imports,WLD,TOTAL,2025-04-01,219512.228,USD million,219512.228,,bulletin (2) TOTAL
 CN,imports,WLD,TOTAL,2025-06-01,210481.474,USD million,210481.474,,bulletin (2) TOTAL
@@ -243,22 +532,56 @@ CN,imports,WLD,TOTAL,2026-06-01,286764.038,USD million,286764.038,,bulletin (2) 
 CN,imports,WLD,TOTAL,2026-07-01,285514.272,USD million,285514.272,,bulletin (2) TOTAL
 CN,imports,WLD,TOTAL,2026-08-01,282355.763,USD million,282355.763,,bulletin (2) TOTAL
 CN,imports,WLD,TOTAL,2026-09-01,313652.171,USD million,313652.171,,bulletin (2) TOTAL
+CN,imports,US,TOTAL,2023-06-01,13972.853,USD million,13972.853,,bulletin (2) United States
+CN,imports,US,TOTAL,2023-07-01,12008.756,USD million,12008.756,,bulletin (2) United States
+CN,imports,US,TOTAL,2023-08-01,11976.162,USD million,11976.162,,bulletin (2) United States
+CN,imports,US,TOTAL,2023-09-01,12833.24,USD million,12833.24,,bulletin (2) United States
+CN,imports,US,TOTAL,2023-10-01,12345.5,USD million,12345.5,,bulletin (2) United States
+CN,imports,US,TOTAL,2023-11-01,13995.033,USD million,13995.033,,bulletin (2) United States
+CN,imports,US,TOTAL,2023-12-01,14937.852,USD million,14937.852,,bulletin (2) United States
+CN,imports,US,TOTAL,2024-01-01,14271.016,USD million,14271.016,,bulletin (2) United States
+CN,imports,US,TOTAL,2024-02-01,11862.668,USD million,11862.668,,bulletin (2) United States
+CN,imports,US,TOTAL,2024-03-01,13783.675,USD million,13783.675,,bulletin (2) United States
+CN,imports,US,TOTAL,2024-04-01,14583.69,USD million,14583.69,,bulletin (2) United States
+CN,imports,US,TOTAL,2024-05-01,13200.852,USD million,13200.852,,bulletin (2) United States
+CN,imports,US,TOTAL,2024-06-01,13734.991,USD million,13734.991,,bulletin (2) United States
+CN,imports,US,TOTAL,2024-07-01,14901.675,USD million,14901.675,,bulletin (2) United States
+CN,imports,US,TOTAL,2024-08-01,13441.322,USD million,13441.322,,bulletin (2) United States
+CN,imports,US,TOTAL,2024-11-01,12424.222,USD million,12424.222,,bulletin (2) United States
+CN,imports,US,TOTAL,2024-12-01,15325.825,USD million,15325.825,,bulletin (2) United States
 CN,imports,US,TOTAL,2025-03-01,12480.724,USD million,12480.724,,bulletin (2) United States
-CN,imports,US,TOTAL,2025-04-01,0.0,USD million,0.0,,bulletin (2) United States Virgin Islands
+CN,imports,US,TOTAL,2025-04-01,12566.389,USD million,12566.389,,bulletin (2) United States
 CN,imports,US,TOTAL,2025-06-01,11602.9,USD million,11602.9,,bulletin (2) United States
 CN,imports,US,TOTAL,2025-09-01,11484.701,USD million,11484.701,,bulletin (2) United States
-CN,imports,US,TOTAL,2025-10-01,0.0,USD million,0.0,,bulletin (2) United States Virgin Islands
-CN,imports,US,TOTAL,2025-11-01,0.0,USD million,0.0,,bulletin (2) United States Virgin Islands
+CN,imports,US,TOTAL,2025-10-01,10155.637,USD million,10155.637,,bulletin (2) United States
+CN,imports,US,TOTAL,2025-11-01,10053.321,USD million,10053.321,,bulletin (2) United States
 CN,imports,US,TOTAL,2025-12-01,10928.744,USD million,10928.744,,bulletin (2) United States
 CN,imports,US,TOTAL,2026-01-01,9814.306,USD million,9814.306,,bulletin (2) United States
-CN,imports,US,TOTAL,2026-02-01,0.0,USD million,0.0,,bulletin (2) United States Virgin Islands
-CN,imports,US,TOTAL,2026-03-01,0.001,USD million,0.001,,bulletin (2) United States Virgin Islands
-CN,imports,US,TOTAL,2026-04-01,0.0,USD million,0.0,,bulletin (2) United States Virgin Islands
-CN,imports,US,TOTAL,2026-05-01,0.0,USD million,0.0,,bulletin (2) United States Virgin Islands
-CN,imports,US,TOTAL,2026-06-01,0.0,USD million,0.0,,bulletin (2) United States Virgin Islands
-CN,imports,US,TOTAL,2026-07-01,0.0,USD million,0.0,,bulletin (2) United States Virgin Islands
-CN,imports,US,TOTAL,2026-08-01,0.0,USD million,0.0,,bulletin (2) United States Virgin Islands
-CN,imports,US,TOTAL,2026-09-01,0.0,USD million,0.0,,bulletin (2) United States Virgin Islands
+CN,imports,US,TOTAL,2026-02-01,9588.214,USD million,9588.214,,bulletin (2) United States
+CN,imports,US,TOTAL,2026-03-01,12611.156,USD million,12611.156,,bulletin (2) United States
+CN,imports,US,TOTAL,2026-04-01,13694.207,USD million,13694.207,,bulletin (2) United States
+CN,imports,US,TOTAL,2026-05-01,13008.62,USD million,13008.62,,bulletin (2) United States
+CN,imports,US,TOTAL,2026-06-01,14602.465,USD million,14602.465,,bulletin (2) United States
+CN,imports,US,TOTAL,2026-07-01,13997.025,USD million,13997.025,,bulletin (2) United States
+CN,imports,US,TOTAL,2026-08-01,13292.698,USD million,13292.698,,bulletin (2) United States
+CN,imports,US,TOTAL,2026-09-01,13867.198,USD million,13867.198,,bulletin (2) United States
+CN,imports,HK,TOTAL,2023-06-01,918.711,USD million,918.711,,"bulletin (2) Hong Kong, China"
+CN,imports,HK,TOTAL,2023-07-01,1067.654,USD million,1067.654,,"bulletin (2) Hong Kong, China"
+CN,imports,HK,TOTAL,2023-08-01,1357.585,USD million,1357.585,,"bulletin (2) Hong Kong, China"
+CN,imports,HK,TOTAL,2023-09-01,1211.85,USD million,1211.85,,"bulletin (2) Hong Kong, China"
+CN,imports,HK,TOTAL,2023-10-01,758.692,USD million,758.692,,"bulletin (2) Hong Kong, China"
+CN,imports,HK,TOTAL,2023-11-01,1031.19,USD million,1031.19,,"bulletin (2) Hong Kong, China"
+CN,imports,HK,TOTAL,2023-12-01,931.453,USD million,931.453,,"bulletin (2) Hong Kong, China"
+CN,imports,HK,TOTAL,2024-01-01,1278.436,USD million,1278.436,,"bulletin (2) Hong Kong, China"
+CN,imports,HK,TOTAL,2024-02-01,694.87,USD million,694.87,,"bulletin (2) Hong Kong, China"
+CN,imports,HK,TOTAL,2024-03-01,1443.862,USD million,1443.862,,"bulletin (2) Hong Kong, China"
+CN,imports,HK,TOTAL,2024-04-01,2044.985,USD million,2044.985,,"bulletin (2) Hong Kong, China"
+CN,imports,HK,TOTAL,2024-05-01,1736.81,USD million,1736.81,,"bulletin (2) Hong Kong, China"
+CN,imports,HK,TOTAL,2024-06-01,1452.049,USD million,1452.049,,"bulletin (2) Hong Kong, China"
+CN,imports,HK,TOTAL,2024-07-01,1502.001,USD million,1502.001,,"bulletin (2) Hong Kong, China"
+CN,imports,HK,TOTAL,2024-08-01,1209.915,USD million,1209.915,,"bulletin (2) Hong Kong, China"
+CN,imports,HK,TOTAL,2024-11-01,2595.771,USD million,2595.771,,"bulletin (2) Hong Kong, China"
+CN,imports,HK,TOTAL,2024-12-01,1615.093,USD million,1615.093,,"bulletin (2) Hong Kong, China"
 CN,imports,HK,TOTAL,2025-03-01,1477.104,USD million,1477.104,,"bulletin (2) Hong Kong, China"
 CN,imports,HK,TOTAL,2025-04-01,2888.949,USD million,2888.949,,"bulletin (2) Hong Kong, China"
 CN,imports,HK,TOTAL,2025-06-01,1985.769,USD million,1985.769,,"bulletin (2) Hong Kong, China"
@@ -275,6 +598,23 @@ CN,imports,HK,TOTAL,2026-06-01,5834.042,USD million,5834.042,,"bulletin (2) Hong
 CN,imports,HK,TOTAL,2026-07-01,5017.715,USD million,5017.715,,"bulletin (2) Hong Kong, China"
 CN,imports,HK,TOTAL,2026-08-01,5614.905,USD million,5614.905,,"bulletin (2) Hong Kong, China"
 CN,imports,HK,TOTAL,2026-09-01,8437.763,USD million,8437.763,,"bulletin (2) Hong Kong, China"
+CN,imports,JP,TOTAL,2023-06-01,13605.254,USD million,13605.254,,bulletin (2) Japan
+CN,imports,JP,TOTAL,2023-07-01,13405.28,USD million,13405.28,,bulletin (2) Japan
+CN,imports,JP,TOTAL,2023-08-01,12836.029,USD million,12836.029,,bulletin (2) Japan
+CN,imports,JP,TOTAL,2023-09-01,14256.619,USD million,14256.619,,bulletin (2) Japan
+CN,imports,JP,TOTAL,2023-10-01,13456.288,USD million,13456.288,,bulletin (2) Japan
+CN,imports,JP,TOTAL,2023-11-01,14114.327,USD million,14114.327,,bulletin (2) Japan
+CN,imports,JP,TOTAL,2023-12-01,14973.387,USD million,14973.387,,bulletin (2) Japan
+CN,imports,JP,TOTAL,2024-01-01,11810.922,USD million,11810.922,,bulletin (2) Japan
+CN,imports,JP,TOTAL,2024-02-01,10344.983,USD million,10344.983,,bulletin (2) Japan
+CN,imports,JP,TOTAL,2024-03-01,13942.384,USD million,13942.384,,bulletin (2) Japan
+CN,imports,JP,TOTAL,2024-04-01,13692.687,USD million,13692.687,,bulletin (2) Japan
+CN,imports,JP,TOTAL,2024-05-01,12604.522,USD million,12604.522,,bulletin (2) Japan
+CN,imports,JP,TOTAL,2024-06-01,12158.577,USD million,12158.577,,bulletin (2) Japan
+CN,imports,JP,TOTAL,2024-07-01,12742.441,USD million,12742.441,,bulletin (2) Japan
+CN,imports,JP,TOTAL,2024-08-01,12674.51,USD million,12674.51,,bulletin (2) Japan
+CN,imports,JP,TOTAL,2024-11-01,13762.777,USD million,13762.777,,bulletin (2) Japan
+CN,imports,JP,TOTAL,2024-12-01,15920.7,USD million,15920.7,,bulletin (2) Japan
 CN,imports,JP,TOTAL,2025-03-01,13514.997,USD million,13514.997,,bulletin (2) Japan
 CN,imports,JP,TOTAL,2025-04-01,14030.805,USD million,14030.805,,bulletin (2) Japan
 CN,imports,JP,TOTAL,2025-06-01,13478.914,USD million,13478.914,,bulletin (2) Japan
@@ -291,6 +631,56 @@ CN,imports,JP,TOTAL,2026-06-01,18053.869,USD million,18053.869,,bulletin (2) Jap
 CN,imports,JP,TOTAL,2026-07-01,19294.433,USD million,19294.433,,bulletin (2) Japan
 CN,imports,JP,TOTAL,2026-08-01,16876.641,USD million,16876.641,,bulletin (2) Japan
 CN,imports,JP,TOTAL,2026-09-01,18468.452,USD million,18468.452,,bulletin (2) Japan
+CN,imports,EU,TOTAL,2023-06-01,24868.92,USD million,24868.92,,bulletin (2) EU
+CN,imports,EU,TOTAL,2023-07-01,23283.656,USD million,23283.656,,bulletin (2) EU
+CN,imports,EU,TOTAL,2023-08-01,24561.238,USD million,24561.238,,bulletin (2) EU
+CN,imports,EU,TOTAL,2023-09-01,23832.252,USD million,23832.252,,bulletin (2) EU
+CN,imports,EU,TOTAL,2023-10-01,22681.534,USD million,22681.534,,bulletin (2) EU
+CN,imports,EU,TOTAL,2023-11-01,23217.498,USD million,23217.498,,bulletin (2) EU
+CN,imports,EU,TOTAL,2023-12-01,24048.046,USD million,24048.046,,bulletin (2) EU
+CN,imports,EU,TOTAL,2024-01-01,21402.726,USD million,21402.726,,bulletin (2) EU
+CN,imports,EU,TOTAL,2024-02-01,17589.64,USD million,17589.64,,bulletin (2) EU
+CN,imports,EU,TOTAL,2024-03-01,23311.094,USD million,23311.094,,bulletin (2) EU
+CN,imports,EU,TOTAL,2024-04-01,23987.583,USD million,23987.583,,bulletin (2) EU
+CN,imports,EU,TOTAL,2024-05-01,22888.299,USD million,22888.299,,bulletin (2) EU
+CN,imports,EU,TOTAL,2024-06-01,23188.331,USD million,23188.331,,bulletin (2) EU
+CN,imports,EU,TOTAL,2024-07-01,24939.431,USD million,24939.431,,bulletin (2) EU
+CN,imports,EU,TOTAL,2024-08-01,23259.401,USD million,23259.401,,bulletin (2) EU
+CN,imports,EU,TOTAL,2024-11-01,21696.67,USD million,21696.67,,bulletin (2) EU
+CN,imports,EU,TOTAL,2024-12-01,22864.736,USD million,22864.736,,bulletin (2) EU
+CN,imports,EU,TOTAL,2025-03-01,21554.815,USD million,21554.815,,bulletin (2) EU
+CN,imports,EU,TOTAL,2025-04-01,20039.872,USD million,20039.872,,bulletin (2) EU
+CN,imports,EU,TOTAL,2025-06-01,23282.695,USD million,23282.695,,bulletin (2) EU
+CN,imports,EU,TOTAL,2025-09-01,25170.765,USD million,25170.765,,bulletin (2) EU
+CN,imports,EU,TOTAL,2025-10-01,22136.66,USD million,22136.66,,bulletin (2) EU
+CN,imports,EU,TOTAL,2025-11-01,22039.63,USD million,22039.63,,bulletin (2) EU
+CN,imports,EU,TOTAL,2025-12-01,26922.223,USD million,26922.223,,bulletin (2) EU
+CN,imports,EU,TOTAL,2026-01-01,22817.995,USD million,22817.995,,bulletin (2) EU
+CN,imports,EU,TOTAL,2026-02-01,18426.772,USD million,18426.772,,bulletin (2) EU
+CN,imports,EU,TOTAL,2026-03-01,23396.045,USD million,23396.045,,bulletin (2) EU
+CN,imports,EU,TOTAL,2026-04-01,22952.845,USD million,22952.845,,bulletin (2) EU
+CN,imports,EU,TOTAL,2026-05-01,22584.98,USD million,22584.98,,bulletin (2) EU
+CN,imports,EU,TOTAL,2026-06-01,25432.254,USD million,25432.254,,bulletin (2) EU
+CN,imports,EU,TOTAL,2026-07-01,24207.197,USD million,24207.197,,bulletin (2) EU
+CN,imports,EU,TOTAL,2026-08-01,22983.616,USD million,22983.616,,bulletin (2) EU
+CN,imports,EU,TOTAL,2026-09-01,25352.444,USD million,25352.444,,bulletin (2) EU
+CN,imports,TW,TOTAL,2023-06-01,17067.629,USD million,17067.629,,bulletin (2) Taiwan，China
+CN,imports,TW,TOTAL,2023-07-01,16872.02,USD million,16872.02,,bulletin (2) Taiwan，China
+CN,imports,TW,TOTAL,2023-08-01,18217.7,USD million,18217.7,,bulletin (2) Taiwan，China
+CN,imports,TW,TOTAL,2023-09-01,18610.371,USD million,18610.371,,bulletin (2) Taiwan，China
+CN,imports,TW,TOTAL,2023-10-01,18892.905,USD million,18892.905,,bulletin (2) Taiwan，China
+CN,imports,TW,TOTAL,2023-11-01,18424.716,USD million,18424.716,,bulletin (2) Taiwan，China
+CN,imports,TW,TOTAL,2023-12-01,17503.151,USD million,17503.151,,bulletin (2) Taiwan，China
+CN,imports,TW,TOTAL,2024-01-01,16729.066,USD million,16729.066,,bulletin (2) Taiwan，China
+CN,imports,TW,TOTAL,2024-02-01,12642.478,USD million,12642.478,,bulletin (2) Taiwan，China
+CN,imports,TW,TOTAL,2024-03-01,15365.968,USD million,15365.968,,bulletin (2) Taiwan，China
+CN,imports,TW,TOTAL,2024-04-01,17486.422,USD million,17486.422,,bulletin (2) Taiwan，China
+CN,imports,TW,TOTAL,2024-05-01,17721.693,USD million,17721.693,,bulletin (2) Taiwan，China
+CN,imports,TW,TOTAL,2024-06-01,16741.536,USD million,16741.536,,bulletin (2) Taiwan，China
+CN,imports,TW,TOTAL,2024-07-01,19302.308,USD million,19302.308,,bulletin (2) Taiwan，China
+CN,imports,TW,TOTAL,2024-08-01,20175.158,USD million,20175.158,,bulletin (2) Taiwan，China
+CN,imports,TW,TOTAL,2024-11-01,19251.497,USD million,19251.497,,bulletin (2) Taiwan，China
+CN,imports,TW,TOTAL,2024-12-01,20026.182,USD million,20026.182,,bulletin (2) Taiwan，China
 CN,imports,TW,TOTAL,2025-03-01,20666.788,USD million,20666.788,,bulletin (2) Taiwan，China
 CN,imports,TW,TOTAL,2025-04-01,19711.671,USD million,19711.671,,bulletin (2) Taiwan，China
 CN,imports,TW,TOTAL,2025-06-01,17148.528,USD million,17148.528,,bulletin (2) Taiwan，China
@@ -307,22 +697,56 @@ CN,imports,TW,TOTAL,2026-06-01,24193.229,USD million,24193.229,,"bulletin (2) Ta
 CN,imports,TW,TOTAL,2026-07-01,26481.009,USD million,26481.009,,"bulletin (2) Taiwan, China"
 CN,imports,TW,TOTAL,2026-08-01,26896.162,USD million,26896.162,,"bulletin (2) Taiwan, China"
 CN,imports,TW,TOTAL,2026-09-01,29844.351,USD million,29844.351,,"bulletin (2) Taiwan, China"
-CN,imports,KR,TOTAL,2025-03-01,33.745,USD million,33.745,,bulletin (2) Democratic People's Republic of Korea
-CN,imports,KR,TOTAL,2025-04-01,35.726,USD million,35.726,,bulletin (2) Democratic People's Republic of Korea
-CN,imports,KR,TOTAL,2025-06-01,39.507,USD million,39.507,,bulletin (2) Democratic People's Republic of Korea
-CN,imports,KR,TOTAL,2025-09-01,43.109,USD million,43.109,,bulletin (2) Democratic People's Republic of Korea
-CN,imports,KR,TOTAL,2025-10-01,28.925,USD million,28.925,,bulletin (2) Democratic People's Republic of Korea
-CN,imports,KR,TOTAL,2025-11-01,37.143,USD million,37.143,,bulletin (2) Democratic People's Republic of Korea
-CN,imports,KR,TOTAL,2025-12-01,52.698,USD million,52.698,,bulletin (2) Democratic People's Republic of Korea
-CN,imports,KR,TOTAL,2026-01-01,48.333,USD million,48.333,,bulletin (2) Democratic People's Republic of Korea
-CN,imports,KR,TOTAL,2026-02-01,40.851,USD million,40.851,,bulletin (2) Democratic People's Republic of Korea
-CN,imports,KR,TOTAL,2026-03-01,73.259,USD million,73.259,,bulletin (2) Democratic People's Republic of Korea
-CN,imports,KR,TOTAL,2026-04-01,73.464,USD million,73.464,,bulletin (2) Democratic People's Republic of Korea
-CN,imports,KR,TOTAL,2026-05-01,52.062,USD million,52.062,,bulletin (2) Democratic People's Republic of Korea
-CN,imports,KR,TOTAL,2026-06-01,37.035,USD million,37.035,,bulletin (2) Democratic People's Republic of Korea
-CN,imports,KR,TOTAL,2026-07-01,44.373,USD million,44.373,,bulletin (2) Democratic People's Republic of Korea
-CN,imports,KR,TOTAL,2026-08-01,55.025,USD million,55.025,,bulletin (2) Democratic People's Republic of Korea
-CN,imports,KR,TOTAL,2026-09-01,60.316,USD million,60.316,,bulletin (2) Democratic People's Republic of Korea
+CN,imports,KR,TOTAL,2023-06-01,13955.506,USD million,13955.506,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2023-07-01,12906.854,USD million,12906.854,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2023-08-01,13299.271,USD million,13299.271,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2023-09-01,15372.384,USD million,15372.384,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2023-10-01,14264.634,USD million,14264.634,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2023-11-01,15017.497,USD million,15017.497,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2023-12-01,14478.609,USD million,14478.609,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2024-01-01,14503.695,USD million,14503.695,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2024-02-01,11739.174,USD million,11739.174,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2024-03-01,15046.539,USD million,15046.539,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2024-04-01,14485.504,USD million,14485.504,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2024-05-01,15233.267,USD million,15233.267,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2024-06-01,14838.674,USD million,14838.674,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2024-07-01,15616.82,USD million,15616.82,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2024-08-01,14926.605,USD million,14926.605,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2024-11-01,16085.795,USD million,16085.795,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2024-12-01,17330.326,USD million,17330.326,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2025-03-01,14774.017,USD million,14774.017,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2025-04-01,15540.565,USD million,15540.565,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2025-06-01,14988.251,USD million,14988.251,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2025-09-01,17825.201,USD million,17825.201,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2025-10-01,16330.926,USD million,16330.926,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2025-11-01,17086.745,USD million,17086.745,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2025-12-01,18851.338,USD million,18851.338,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2026-01-01,18597.549,USD million,18597.549,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2026-02-01,16743.446,USD million,16743.446,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2026-03-01,23455.285,USD million,23455.285,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2026-04-01,25222.177,USD million,25222.177,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2026-05-01,26708.477,USD million,26708.477,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2026-06-01,27725.557,USD million,27725.557,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2026-07-01,31046.028,USD million,31046.028,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2026-08-01,32157.529,USD million,32157.529,,bulletin (2) Republic of Korea
+CN,imports,KR,TOTAL,2026-09-01,34636.717,USD million,34636.717,,bulletin (2) Republic of Korea
+CN,imports,IN,TOTAL,2023-06-01,1431.019,USD million,1431.019,,bulletin (2) India
+CN,imports,IN,TOTAL,2023-07-01,1412.557,USD million,1412.557,,bulletin (2) India
+CN,imports,IN,TOTAL,2023-08-01,1590.527,USD million,1590.527,,bulletin (2) India
+CN,imports,IN,TOTAL,2023-09-01,1419.139,USD million,1419.139,,bulletin (2) India
+CN,imports,IN,TOTAL,2023-10-01,1513.747,USD million,1513.747,,bulletin (2) India
+CN,imports,IN,TOTAL,2023-11-01,1599.327,USD million,1599.327,,bulletin (2) India
+CN,imports,IN,TOTAL,2023-12-01,1537.549,USD million,1537.549,,bulletin (2) India
+CN,imports,IN,TOTAL,2024-01-01,2012.717,USD million,2012.717,,bulletin (2) India
+CN,imports,IN,TOTAL,2024-02-01,1692.313,USD million,1692.313,,bulletin (2) India
+CN,imports,IN,TOTAL,2024-03-01,2014.674,USD million,2014.674,,bulletin (2) India
+CN,imports,IN,TOTAL,2024-04-01,1709.146,USD million,1709.146,,bulletin (2) India
+CN,imports,IN,TOTAL,2024-05-01,1507.733,USD million,1507.733,,bulletin (2) India
+CN,imports,IN,TOTAL,2024-06-01,1320.95,USD million,1320.95,,bulletin (2) India
+CN,imports,IN,TOTAL,2024-07-01,1364.786,USD million,1364.786,,bulletin (2) India
+CN,imports,IN,TOTAL,2024-08-01,1300.205,USD million,1300.205,,bulletin (2) India
+CN,imports,IN,TOTAL,2024-11-01,1353.318,USD million,1353.318,,bulletin (2) India
+CN,imports,IN,TOTAL,2024-12-01,1431.377,USD million,1431.377,,bulletin (2) India
 CN,imports,IN,TOTAL,2025-03-01,1603.829,USD million,1603.829,,bulletin (2) India
 CN,imports,IN,TOTAL,2025-04-01,1732.178,USD million,1732.178,,bulletin (2) India
 CN,imports,IN,TOTAL,2025-06-01,1514.586,USD million,1514.586,,bulletin (2) India
@@ -339,6 +763,23 @@ CN,imports,IN,TOTAL,2026-06-01,2195.032,USD million,2195.032,,bulletin (2) India
 CN,imports,IN,TOTAL,2026-07-01,2672.394,USD million,2672.394,,bulletin (2) India
 CN,imports,IN,TOTAL,2026-08-01,2241.931,USD million,2241.931,,bulletin (2) India
 CN,imports,IN,TOTAL,2026-09-01,2034.488,USD million,2034.488,,bulletin (2) India
+CN,imports,ID,TOTAL,2023-06-01,5502.779,USD million,5502.779,,bulletin (2) Indonesia
+CN,imports,ID,TOTAL,2023-07-01,5227.878,USD million,5227.878,,bulletin (2) Indonesia
+CN,imports,ID,TOTAL,2023-08-01,6395.576,USD million,6395.576,,bulletin (2) Indonesia
+CN,imports,ID,TOTAL,2023-09-01,6336.829,USD million,6336.829,,bulletin (2) Indonesia
+CN,imports,ID,TOTAL,2023-10-01,6292.939,USD million,6292.939,,bulletin (2) Indonesia
+CN,imports,ID,TOTAL,2023-11-01,6274.129,USD million,6274.129,,bulletin (2) Indonesia
+CN,imports,ID,TOTAL,2023-12-01,6763.849,USD million,6763.849,,bulletin (2) Indonesia
+CN,imports,ID,TOTAL,2024-01-01,6545.265,USD million,6545.265,,bulletin (2) Indonesia
+CN,imports,ID,TOTAL,2024-02-01,4963.422,USD million,4963.422,,bulletin (2) Indonesia
+CN,imports,ID,TOTAL,2024-03-01,5442.301,USD million,5442.301,,bulletin (2) Indonesia
+CN,imports,ID,TOTAL,2024-04-01,5594.523,USD million,5594.523,,bulletin (2) Indonesia
+CN,imports,ID,TOTAL,2024-05-01,5423.397,USD million,5423.397,,bulletin (2) Indonesia
+CN,imports,ID,TOTAL,2024-06-01,5199.378,USD million,5199.378,,bulletin (2) Indonesia
+CN,imports,ID,TOTAL,2024-07-01,5784.738,USD million,5784.738,,bulletin (2) Indonesia
+CN,imports,ID,TOTAL,2024-08-01,5825.3,USD million,5825.3,,bulletin (2) Indonesia
+CN,imports,ID,TOTAL,2024-11-01,6714.903,USD million,6714.903,,bulletin (2) Indonesia
+CN,imports,ID,TOTAL,2024-12-01,6875.216,USD million,6875.216,,bulletin (2) Indonesia
 CN,imports,ID,TOTAL,2025-03-01,6019.316,USD million,6019.316,,bulletin (2) Indonesia
 CN,imports,ID,TOTAL,2025-04-01,5872.272,USD million,5872.272,,bulletin (2) Indonesia
 CN,imports,ID,TOTAL,2025-06-01,6422.754,USD million,6422.754,,bulletin (2) Indonesia
@@ -355,6 +796,23 @@ CN,imports,ID,TOTAL,2026-06-01,8307.622,USD million,8307.622,,bulletin (2) Indon
 CN,imports,ID,TOTAL,2026-07-01,8647.949,USD million,8647.949,,bulletin (2) Indonesia
 CN,imports,ID,TOTAL,2026-08-01,8804.779,USD million,8804.779,,bulletin (2) Indonesia
 CN,imports,ID,TOTAL,2026-09-01,9290.594,USD million,9290.594,,bulletin (2) Indonesia
+CN,imports,MY,TOTAL,2023-06-01,9084.441,USD million,9084.441,,bulletin (2) Malaysia
+CN,imports,MY,TOTAL,2023-07-01,8222.505,USD million,8222.505,,bulletin (2) Malaysia
+CN,imports,MY,TOTAL,2023-08-01,8679.362,USD million,8679.362,,bulletin (2) Malaysia
+CN,imports,MY,TOTAL,2023-09-01,9729.529,USD million,9729.529,,bulletin (2) Malaysia
+CN,imports,MY,TOTAL,2023-10-01,9954.341,USD million,9954.341,,bulletin (2) Malaysia
+CN,imports,MY,TOTAL,2023-11-01,9112.81,USD million,9112.81,,bulletin (2) Malaysia
+CN,imports,MY,TOTAL,2023-12-01,9347.429,USD million,9347.429,,bulletin (2) Malaysia
+CN,imports,MY,TOTAL,2024-01-01,7792.011,USD million,7792.011,,bulletin (2) Malaysia
+CN,imports,MY,TOTAL,2024-02-01,7630.258,USD million,7630.258,,bulletin (2) Malaysia
+CN,imports,MY,TOTAL,2024-03-01,8722.852,USD million,8722.852,,bulletin (2) Malaysia
+CN,imports,MY,TOTAL,2024-04-01,8734.087,USD million,8734.087,,bulletin (2) Malaysia
+CN,imports,MY,TOTAL,2024-05-01,9677.969,USD million,9677.969,,bulletin (2) Malaysia
+CN,imports,MY,TOTAL,2024-06-01,8921.061,USD million,8921.061,,bulletin (2) Malaysia
+CN,imports,MY,TOTAL,2024-07-01,9337.227,USD million,9337.227,,bulletin (2) Malaysia
+CN,imports,MY,TOTAL,2024-08-01,10095.444,USD million,10095.444,,bulletin (2) Malaysia
+CN,imports,MY,TOTAL,2024-11-01,9514.778,USD million,9514.778,,bulletin (2) Malaysia
+CN,imports,MY,TOTAL,2024-12-01,10472.034,USD million,10472.034,,bulletin (2) Malaysia
 CN,imports,MY,TOTAL,2025-03-01,10656.575,USD million,10656.575,,bulletin (2) Malaysia
 CN,imports,MY,TOTAL,2025-04-01,9163.816,USD million,9163.816,,bulletin (2) Malaysia
 CN,imports,MY,TOTAL,2025-06-01,7712.071,USD million,7712.071,,bulletin (2) Malaysia
@@ -371,6 +829,23 @@ CN,imports,MY,TOTAL,2026-06-01,5602.294,USD million,5602.294,,bulletin (2) Malay
 CN,imports,MY,TOTAL,2026-07-01,5592.367,USD million,5592.367,,bulletin (2) Malaysia
 CN,imports,MY,TOTAL,2026-08-01,6955.001,USD million,6955.001,,bulletin (2) Malaysia
 CN,imports,MY,TOTAL,2026-09-01,6760.789,USD million,6760.789,,bulletin (2) Malaysia
+CN,imports,PH,TOTAL,2023-06-01,1637.305,USD million,1637.305,,bulletin (2) Philippines
+CN,imports,PH,TOTAL,2023-07-01,1544.33,USD million,1544.33,,bulletin (2) Philippines
+CN,imports,PH,TOTAL,2023-08-01,1646.246,USD million,1646.246,,bulletin (2) Philippines
+CN,imports,PH,TOTAL,2023-09-01,1800.461,USD million,1800.461,,bulletin (2) Philippines
+CN,imports,PH,TOTAL,2023-10-01,1844.499,USD million,1844.499,,bulletin (2) Philippines
+CN,imports,PH,TOTAL,2023-11-01,1682.229,USD million,1682.229,,bulletin (2) Philippines
+CN,imports,PH,TOTAL,2023-12-01,1627.63,USD million,1627.63,,bulletin (2) Philippines
+CN,imports,PH,TOTAL,2024-01-01,1385.461,USD million,1385.461,,bulletin (2) Philippines
+CN,imports,PH,TOTAL,2024-02-01,1157.359,USD million,1157.359,,bulletin (2) Philippines
+CN,imports,PH,TOTAL,2024-03-01,1499.536,USD million,1499.536,,bulletin (2) Philippines
+CN,imports,PH,TOTAL,2024-04-01,1593.674,USD million,1593.674,,bulletin (2) Philippines
+CN,imports,PH,TOTAL,2024-05-01,1564.002,USD million,1564.002,,bulletin (2) Philippines
+CN,imports,PH,TOTAL,2024-06-01,1589.037,USD million,1589.037,,bulletin (2) Philippines
+CN,imports,PH,TOTAL,2024-07-01,1864.995,USD million,1864.995,,bulletin (2) Philippines
+CN,imports,PH,TOTAL,2024-08-01,1715.026,USD million,1715.026,,bulletin (2) Philippines
+CN,imports,PH,TOTAL,2024-11-01,1674.21,USD million,1674.21,,bulletin (2) Philippines
+CN,imports,PH,TOTAL,2024-12-01,1735.939,USD million,1735.939,,bulletin (2) Philippines
 CN,imports,PH,TOTAL,2025-03-01,1676.973,USD million,1676.973,,bulletin (2) Philippines
 CN,imports,PH,TOTAL,2025-04-01,1605.159,USD million,1605.159,,bulletin (2) Philippines
 CN,imports,PH,TOTAL,2025-06-01,1255.866,USD million,1255.866,,bulletin (2) Philippines
@@ -387,6 +862,23 @@ CN,imports,PH,TOTAL,2026-06-01,2701.353,USD million,2701.353,,bulletin (2) Phili
 CN,imports,PH,TOTAL,2026-07-01,2695.754,USD million,2695.754,,bulletin (2) Philippines
 CN,imports,PH,TOTAL,2026-08-01,2665.103,USD million,2665.103,,bulletin (2) Philippines
 CN,imports,PH,TOTAL,2026-09-01,3093.959,USD million,3093.959,,bulletin (2) Philippines
+CN,imports,SG,TOTAL,2023-06-01,2829.449,USD million,2829.449,,bulletin (2) Singapore
+CN,imports,SG,TOTAL,2023-07-01,2767.043,USD million,2767.043,,bulletin (2) Singapore
+CN,imports,SG,TOTAL,2023-08-01,2265.452,USD million,2265.452,,bulletin (2) Singapore
+CN,imports,SG,TOTAL,2023-09-01,2589.348,USD million,2589.348,,bulletin (2) Singapore
+CN,imports,SG,TOTAL,2023-10-01,2881.709,USD million,2881.709,,bulletin (2) Singapore
+CN,imports,SG,TOTAL,2023-11-01,2780.901,USD million,2780.901,,bulletin (2) Singapore
+CN,imports,SG,TOTAL,2023-12-01,2786.872,USD million,2786.872,,bulletin (2) Singapore
+CN,imports,SG,TOTAL,2024-01-01,2959.893,USD million,2959.893,,bulletin (2) Singapore
+CN,imports,SG,TOTAL,2024-02-01,2090.489,USD million,2090.489,,bulletin (2) Singapore
+CN,imports,SG,TOTAL,2024-03-01,2725.603,USD million,2725.603,,bulletin (2) Singapore
+CN,imports,SG,TOTAL,2024-04-01,2996.724,USD million,2996.724,,bulletin (2) Singapore
+CN,imports,SG,TOTAL,2024-05-01,2262.939,USD million,2262.939,,bulletin (2) Singapore
+CN,imports,SG,TOTAL,2024-06-01,2546.061,USD million,2546.061,,bulletin (2) Singapore
+CN,imports,SG,TOTAL,2024-07-01,2815.688,USD million,2815.688,,bulletin (2) Singapore
+CN,imports,SG,TOTAL,2024-08-01,2616.529,USD million,2616.529,,bulletin (2) Singapore
+CN,imports,SG,TOTAL,2024-11-01,2486.153,USD million,2486.153,,bulletin (2) Singapore
+CN,imports,SG,TOTAL,2024-12-01,3224.15,USD million,3224.15,,bulletin (2) Singapore
 CN,imports,SG,TOTAL,2025-03-01,2652.69,USD million,2652.69,,bulletin (2) Singapore
 CN,imports,SG,TOTAL,2025-04-01,2971.583,USD million,2971.583,,bulletin (2) Singapore
 CN,imports,SG,TOTAL,2025-06-01,3218.519,USD million,3218.519,,bulletin (2) Singapore
@@ -403,6 +895,23 @@ CN,imports,SG,TOTAL,2026-06-01,4360.032,USD million,4360.032,,bulletin (2) Singa
 CN,imports,SG,TOTAL,2026-07-01,4503.928,USD million,4503.928,,bulletin (2) Singapore
 CN,imports,SG,TOTAL,2026-08-01,4692.424,USD million,4692.424,,bulletin (2) Singapore
 CN,imports,SG,TOTAL,2026-09-01,5195.355,USD million,5195.355,,bulletin (2) Singapore
+CN,imports,TH,TOTAL,2023-06-01,4801.312,USD million,4801.312,,bulletin (2) Thailand
+CN,imports,TH,TOTAL,2023-07-01,4490.914,USD million,4490.914,,bulletin (2) Thailand
+CN,imports,TH,TOTAL,2023-08-01,4097.447,USD million,4097.447,,bulletin (2) Thailand
+CN,imports,TH,TOTAL,2023-09-01,4269.588,USD million,4269.588,,bulletin (2) Thailand
+CN,imports,TH,TOTAL,2023-10-01,4185.242,USD million,4185.242,,bulletin (2) Thailand
+CN,imports,TH,TOTAL,2023-11-01,3855.252,USD million,3855.252,,bulletin (2) Thailand
+CN,imports,TH,TOTAL,2023-12-01,4317.366,USD million,4317.366,,bulletin (2) Thailand
+CN,imports,TH,TOTAL,2024-01-01,3521.18,USD million,3521.18,,bulletin (2) Thailand
+CN,imports,TH,TOTAL,2024-02-01,2778.499,USD million,2778.499,,bulletin (2) Thailand
+CN,imports,TH,TOTAL,2024-03-01,3803.099,USD million,3803.099,,bulletin (2) Thailand
+CN,imports,TH,TOTAL,2024-04-01,4336.857,USD million,4336.857,,bulletin (2) Thailand
+CN,imports,TH,TOTAL,2024-05-01,5021.215,USD million,5021.215,,bulletin (2) Thailand
+CN,imports,TH,TOTAL,2024-06-01,4153.099,USD million,4153.099,,bulletin (2) Thailand
+CN,imports,TH,TOTAL,2024-07-01,4213.996,USD million,4213.996,,bulletin (2) Thailand
+CN,imports,TH,TOTAL,2024-08-01,4098.664,USD million,4098.664,,bulletin (2) Thailand
+CN,imports,TH,TOTAL,2024-11-01,3827.19,USD million,3827.19,,bulletin (2) Thailand
+CN,imports,TH,TOTAL,2024-12-01,4449.083,USD million,4449.083,,bulletin (2) Thailand
 CN,imports,TH,TOTAL,2025-03-01,4282.103,USD million,4282.103,,bulletin (2) Thailand
 CN,imports,TH,TOTAL,2025-04-01,4424.051,USD million,4424.051,,bulletin (2) Thailand
 CN,imports,TH,TOTAL,2025-06-01,4982.94,USD million,4982.94,,bulletin (2) Thailand
@@ -419,6 +928,23 @@ CN,imports,TH,TOTAL,2026-06-01,5661.555,USD million,5661.555,,bulletin (2) Thail
 CN,imports,TH,TOTAL,2026-07-01,5631.267,USD million,5631.267,,bulletin (2) Thailand
 CN,imports,TH,TOTAL,2026-08-01,4956.659,USD million,4956.659,,bulletin (2) Thailand
 CN,imports,TH,TOTAL,2026-09-01,5627.373,USD million,5627.373,,bulletin (2) Thailand
+CN,imports,VN,TOTAL,2023-06-01,8535.751,USD million,8535.751,,bulletin (2) Viet Nam
+CN,imports,VN,TOTAL,2023-07-01,6382.854,USD million,6382.854,,bulletin (2) Viet Nam
+CN,imports,VN,TOTAL,2023-08-01,7996.11,USD million,7996.11,,bulletin (2) Viet Nam
+CN,imports,VN,TOTAL,2023-09-01,9473.597,USD million,9473.597,,bulletin (2) Viet Nam
+CN,imports,VN,TOTAL,2023-10-01,10361.671,USD million,10361.671,,bulletin (2) Viet Nam
+CN,imports,VN,TOTAL,2023-11-01,9667.098,USD million,9667.098,,bulletin (2) Viet Nam
+CN,imports,VN,TOTAL,2023-12-01,9477.502,USD million,9477.502,,bulletin (2) Viet Nam
+CN,imports,VN,TOTAL,2024-01-01,7807.655,USD million,7807.655,,bulletin (2) Viet Nam
+CN,imports,VN,TOTAL,2024-02-01,5736.504,USD million,5736.504,,bulletin (2) Viet Nam
+CN,imports,VN,TOTAL,2024-03-01,8327.398,USD million,8327.398,,bulletin (2) Viet Nam
+CN,imports,VN,TOTAL,2024-04-01,7637.943,USD million,7637.943,,bulletin (2) Viet Nam
+CN,imports,VN,TOTAL,2024-05-01,7672.078,USD million,7672.078,,bulletin (2) Viet Nam
+CN,imports,VN,TOTAL,2024-06-01,8800.447,USD million,8800.447,,bulletin (2) Viet Nam
+CN,imports,VN,TOTAL,2024-07-01,7962.821,USD million,7962.821,,bulletin (2) Viet Nam
+CN,imports,VN,TOTAL,2024-08-01,8527.459,USD million,8527.459,,bulletin (2) Viet Nam
+CN,imports,VN,TOTAL,2024-11-01,7981.365,USD million,7981.365,,bulletin (2) Viet Nam
+CN,imports,VN,TOTAL,2024-12-01,9537.578,USD million,9537.578,,bulletin (2) Viet Nam
 CN,imports,VN,TOTAL,2025-03-01,8290.931,USD million,8290.931,,bulletin (2) Viet Nam
 CN,imports,VN,TOTAL,2025-04-01,7610.685,USD million,7610.685,,bulletin (2) Viet Nam
 CN,imports,VN,TOTAL,2025-06-01,7616.5,USD million,7616.5,,bulletin (2) Viet Nam
@@ -435,6 +961,24 @@ CN,imports,VN,TOTAL,2026-06-01,12572.988,USD million,12572.988,,bulletin (2) Vie
 CN,imports,VN,TOTAL,2026-07-01,13973.008,USD million,13973.008,,bulletin (2) Viet Nam
 CN,imports,VN,TOTAL,2026-08-01,14201.93,USD million,14201.93,,bulletin (2) Viet Nam
 CN,imports,VN,TOTAL,2026-09-01,17893.665,USD million,17893.665,,bulletin (2) Viet Nam
+CN,imports,WLD,petroleum_products,2023-06-01,2326.722,USD million,2326.722,,bulletin (14) Refined petroleum products
+CN,imports,WLD,petroleum_products,2023-07-01,2225.399,USD million,2225.399,,bulletin (14) Refined petroleum products
+CN,imports,WLD,petroleum_products,2023-08-01,2130.094,USD million,2130.094,,bulletin (14) Refined petroleum products
+CN,imports,WLD,petroleum_products,2023-09-01,2601.793,USD million,2601.793,,bulletin (14) Refined petroleum products
+CN,imports,WLD,petroleum_products,2023-10-01,2500.834,USD million,2500.834,,bulletin (14) Refined petroleum products
+CN,imports,WLD,petroleum_products,2023-11-01,2498.172,USD million,2498.172,,bulletin (14) Refined petroleum products
+CN,imports,WLD,petroleum_products,2023-12-01,2639.407,USD million,2639.407,,bulletin (14) Refined petroleum products
+CN,imports,WLD,petroleum_products,2024-01-01,2342.987,USD million,2342.987,,bulletin (14) Refined petroleum products
+CN,imports,WLD,petroleum_products,2024-02-01,2105.881,USD million,2105.881,,bulletin (14) Refined petroleum products
+CN,imports,WLD,petroleum_products,2024-03-01,2685.62,USD million,2685.62,,bulletin (14) Refined petroleum products
+CN,imports,WLD,petroleum_products,2024-04-01,3433.373,USD million,3433.373,,bulletin (14) Refined petroleum products
+CN,imports,WLD,petroleum_products,2024-05-01,2737.959,USD million,2737.959,,bulletin (14) Refined petroleum products
+CN,imports,WLD,petroleum_products,2024-06-01,1938.568,USD million,1938.568,,bulletin (14) Refined petroleum products
+CN,imports,WLD,petroleum_products,2024-07-01,2148.842,USD million,2148.842,,bulletin (14) Refined petroleum products
+CN,imports,WLD,petroleum_products,2024-08-01,2697.577,USD million,2697.577,,bulletin (14) Refined petroleum products
+CN,imports,WLD,petroleum_products,2024-11-01,2318.981,USD million,2318.981,,bulletin (14) Refined petroleum products
+CN,imports,WLD,petroleum_products,2024-12-01,1968.917,USD million,1968.917,,bulletin (14) Refined petroleum products
+CN,imports,WLD,petroleum_products,2025-01-01,1908.818,USD million,1908.818,,bulletin (14) Refined petroleum products
 CN,imports,WLD,petroleum_products,2025-02-01,1940.319,USD million,1940.319,,bulletin (14) Refined petroleum products
 CN,imports,WLD,petroleum_products,2025-03-01,1952.182,USD million,1952.182,,bulletin (14) Refined petroleum products
 CN,imports,WLD,petroleum_products,2025-04-01,2087.932,USD million,2087.932,,bulletin (14) Refined petroleum products

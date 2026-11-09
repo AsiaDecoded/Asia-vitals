@@ -1,17 +1,21 @@
 {
- "code": "T2026-09h60",
+ "code": "T2026-09h114",
  "label": "2026-09",
  "latest_month": "2026-09-01",
  "source": "trade_cn",
  "table": "GACC monthly bulletin tables (2), (4), (14)",
- "processed_at": "2026-11-09T08:44:38Z",
- "rows": 456,
+ "processed_at": "2026-11-09T09:45:19Z",
+ "rows": 1000,
  "warnings": [],
  "fetched": 60,
  "history": [
   {
    "code": "T2026-09h60",
    "processed_at": "2026-11-09T08:44:38Z"
+  },
+  {
+   "code": "T2026-09h114",
+   "processed_at": "2026-11-09T09:45:19Z"
   }
  ]
 }

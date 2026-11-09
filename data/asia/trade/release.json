@@ -1,9 +1,9 @@
 {
- "code": "R443bafd541",
- "label": "371 of 627 CEIC series filled",
+ "code": "R1f52a9b62f",
+ "label": "411 of 627 CEIC series filled",
  "source": "core.asia_trade",
- "processed_at": "2026-11-09T09:07:19Z",
- "rows": 184865,
+ "processed_at": "2026-11-09T10:02:07Z",
+ "rows": 189970,
  "warnings": [],
  "history": [
   {
@@ -13,6 +13,10 @@
   {
    "code": "R443bafd541",
    "processed_at": "2026-11-09T09:07:19Z"
+  },
+  {
+   "code": "R1f52a9b62f",
+   "processed_at": "2026-11-09T10:02:07Z"
   }
  ]
 }

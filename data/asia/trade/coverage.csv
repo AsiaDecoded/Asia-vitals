@@ -1,18 +1,18 @@
 ceic_series,economy,flow,partner,product,note,national_series,first,last,months
-Exports fob,CN,exports,WLD,TOTAL,,bulletin (2) TOTAL,2025-03,2026-09,16
-Exports: USA,CN,exports,US,TOTAL,,bulletin (2) United States Virgin Islands,2025-03,2026-09,16
-Exports: Hong Kong SAR (China),CN,exports,HK,TOTAL,,"bulletin (2) Hong Kong, China",2025-03,2026-09,16
-Exports: Japan,CN,exports,JP,TOTAL,,bulletin (2) Japan,2025-03,2026-09,16
-Exports: EU,CN,exports,EU,TOTAL,,no national series collected,,,0
-Exports: Taiwan,CN,exports,TW,TOTAL,,bulletin (2) Taiwan，China,2025-03,2026-09,16
-Exports: South Korea,CN,exports,KR,TOTAL,,bulletin (2) Democratic People's Republic of Korea,2025-03,2026-09,16
-Exports: India,CN,exports,IN,TOTAL,,bulletin (2) India,2025-03,2026-09,16
-Exports: Indonesia,CN,exports,ID,TOTAL,,bulletin (2) Indonesia,2025-03,2026-09,16
-Exports: Malaysia,CN,exports,MY,TOTAL,,bulletin (2) Malaysia,2025-03,2026-09,16
-Exports: Philippines,CN,exports,PH,TOTAL,,bulletin (2) Philippines,2025-03,2026-09,16
-Exports: Singapore,CN,exports,SG,TOTAL,,bulletin (2) Singapore,2025-03,2026-09,16
-Exports: Thailand,CN,exports,TH,TOTAL,,bulletin (2) Thailand,2025-03,2026-09,16
-Exports: Vietnam,CN,exports,VN,TOTAL,,bulletin (2) Viet Nam,2025-03,2026-09,16
+Exports fob,CN,exports,WLD,TOTAL,,bulletin (2) TOTAL,2023-06,2026-09,33
+Exports: USA,CN,exports,US,TOTAL,,bulletin (2) United States,2023-06,2026-09,33
+Exports: Hong Kong SAR (China),CN,exports,HK,TOTAL,,"bulletin (2) Hong Kong, China",2023-06,2026-09,33
+Exports: Japan,CN,exports,JP,TOTAL,,bulletin (2) Japan,2023-06,2026-09,33
+Exports: EU,CN,exports,EU,TOTAL,,bulletin (2) EU,2023-06,2026-09,33
+Exports: Taiwan,CN,exports,TW,TOTAL,,bulletin (2) Taiwan，China,2023-06,2026-09,33
+Exports: South Korea,CN,exports,KR,TOTAL,,bulletin (2) Republic of Korea,2023-06,2026-09,33
+Exports: India,CN,exports,IN,TOTAL,,bulletin (2) India,2023-06,2026-09,33
+Exports: Indonesia,CN,exports,ID,TOTAL,,bulletin (2) Indonesia,2023-06,2026-09,33
+Exports: Malaysia,CN,exports,MY,TOTAL,,bulletin (2) Malaysia,2023-06,2026-09,33
+Exports: Philippines,CN,exports,PH,TOTAL,,bulletin (2) Philippines,2023-06,2026-09,33
+Exports: Singapore,CN,exports,SG,TOTAL,,bulletin (2) Singapore,2023-06,2026-09,33
+Exports: Thailand,CN,exports,TH,TOTAL,,bulletin (2) Thailand,2023-06,2026-09,33
+Exports: Vietnam,CN,exports,VN,TOTAL,,bulletin (2) Viet Nam,2023-06,2026-09,33
 Exports: World: Total (f302),HK,exports,WLD,TOTAL,,IDDS ttype 4,2012-01,2025-12,168
 Exports (f301),HK,exports,WLD,TOTAL,,IDDS ttype 4,2012-01,2025-12,168
 Total Exports: USA (f2),HK,exports,US,TOTAL,,IDDS ttype 4 US,2012-01,2025-12,168
@@ -110,20 +110,20 @@ Exports: Asia: Philippines (f87),KR,exports,PH,TOTAL,,901Y121 수출금액 필�
 Exports: Asia: Singapore (f88),KR,exports,SG,TOTAL,,901Y121 수출금액 싱가포르,2024-06,2026-09,28
 Exports: Asia: Thailand (f89),KR,exports,TH,TOTAL,,901Y121 수출금액 태국,2024-06,2026-09,28
 Exports: Asia: Vietnam (f90),KR,exports,VN,TOTAL,,901Y121 수출금액 베트남,2024-06,2026-09,28
-Exports: USD,IN,exports,WLD,TOTAL,,no national series collected,,,0
-Exports: USD: United States,IN,exports,US,TOTAL,,TradeStat country_wise_all_commodities US,2026-06,2026-09,4
-Exports: USD: China,IN,exports,CN,TOTAL,,TradeStat country_wise_all_commodities CN,2026-06,2026-09,4
-Exports: USD: Hong Kong SAR (China),IN,exports,HK,TOTAL,,TradeStat country_wise_all_commodities HK,2026-06,2026-09,4
-Exports: USD: Japan,IN,exports,JP,TOTAL,,TradeStat country_wise_all_commodities JP,2026-06,2026-09,4
+Exports: USD,IN,exports,WLD,TOTAL,,TradeStat commoditywise HS2 total India's Total Export,2026-05,2026-08,4
+Exports: USD: United States,IN,exports,US,TOTAL,,TradeStat country_wise_all_commodities US,2026-05,2026-08,4
+Exports: USD: China,IN,exports,CN,TOTAL,,TradeStat country_wise_all_commodities CN,2026-06,2026-08,3
+Exports: USD: Hong Kong SAR (China),IN,exports,HK,TOTAL,,TradeStat country_wise_all_commodities HK,2026-06,2026-08,3
+Exports: USD: Japan,IN,exports,JP,TOTAL,,TradeStat country_wise_all_commodities JP,2026-06,2026-08,3
 Exports: USD: European Union,IN,exports,EU,TOTAL,,no national series collected,,,0
-Exports: USD: Taiwan,IN,exports,TW,TOTAL,,TradeStat country_wise_all_commodities TW,2026-06,2026-09,4
-Exports: USD: South Korea,IN,exports,KR,TOTAL,,TradeStat country_wise_all_commodities KR,2026-07,2026-09,3
-Exports: USD: Indonesia,IN,exports,ID,TOTAL,,TradeStat country_wise_all_commodities ID,2026-07,2026-09,3
-Exports: USD: Malaysia,IN,exports,MY,TOTAL,,TradeStat country_wise_all_commodities MY,2026-07,2026-09,3
-Exports: USD: Philippines,IN,exports,PH,TOTAL,,TradeStat country_wise_all_commodities PH,2026-07,2026-09,3
-Exports: USD: Singapore,IN,exports,SG,TOTAL,,TradeStat country_wise_all_commodities SG,2026-07,2026-09,3
-Exports: USD: Thailand,IN,exports,TH,TOTAL,,TradeStat country_wise_all_commodities TH,2026-07,2026-09,3
-Exports: USD: Vietnam,IN,exports,VN,TOTAL,,TradeStat country_wise_all_commodities VN,2026-07,2026-09,3
+Exports: USD: Taiwan,IN,exports,TW,TOTAL,,TradeStat country_wise_all_commodities TW,2026-06,2026-08,3
+Exports: USD: South Korea,IN,exports,KR,TOTAL,,TradeStat country_wise_all_commodities KR,2026-06,2026-08,3
+Exports: USD: Indonesia,IN,exports,ID,TOTAL,,TradeStat country_wise_all_commodities ID,2026-06,2026-08,3
+Exports: USD: Malaysia,IN,exports,MY,TOTAL,,TradeStat country_wise_all_commodities MY,2026-06,2026-08,3
+Exports: USD: Philippines,IN,exports,PH,TOTAL,,TradeStat country_wise_all_commodities PH,2026-06,2026-08,3
+Exports: USD: Singapore,IN,exports,SG,TOTAL,,TradeStat country_wise_all_commodities SG,2026-06,2026-08,3
+Exports: USD: Thailand,IN,exports,TH,TOTAL,,TradeStat country_wise_all_commodities TH,2026-06,2026-08,3
+Exports: USD: Vietnam,IN,exports,VN,TOTAL,,TradeStat country_wise_all_commodities VN,2026-06,2026-08,3
 Export: fob,ID,exports,WLD,TOTAL,,"SEKI V.11 Jumlah, fob",2005-01,2026-08,260
 Export: United States,ID,exports,US,TOTAL,,SEKI V.11 Amerika Serikat,2005-01,2026-08,260
 Export: China,ID,exports,CN,TOTAL,,SEKI V.11 Republik Rakyat Cina,2005-01,2026-08,260
@@ -179,20 +179,20 @@ Exports: Philippines (f165),MY,exports,PH,TOTAL,,no national series collected,,,
 Exports: Singapore (f166),MY,exports,SG,TOTAL,,no national series collected,,,0
 Exports: Thailand (f167),MY,exports,TH,TOTAL,,no national series collected,,,0
 Exports: Vietnam (f168),MY,exports,VN,TOTAL,,no national series collected,,,0
-Exports: fob,PH,exports,WLD,TOTAL,,no national series collected,,,0
-Exports: United States (f143),PH,exports,US,TOTAL,,no national series collected,,,0
-Exports: China (f144),PH,exports,CN,TOTAL,,no national series collected,,,0
-Exports: Hong Kong SAR (China) (f146),PH,exports,HK,TOTAL,,no national series collected,,,0
-Exports: Japan (f148),PH,exports,JP,TOTAL,,no national series collected,,,0
-Exports: European Union (f145),PH,exports,EU,TOTAL,,no national series collected,,,0
-Exports: Taiwan (f147),PH,exports,TW,TOTAL,,no national series collected,,,0
-Exports: South Korea (f149),PH,exports,KR,TOTAL,,no national series collected,,,0
-Exports: India (f150),PH,exports,IN,TOTAL,,no national series collected,,,0
-Exports: Indonesia (f151),PH,exports,ID,TOTAL,,no national series collected,,,0
-Exports: Malaysia (f152),PH,exports,MY,TOTAL,,no national series collected,,,0
-Exports: Singapore (f153),PH,exports,SG,TOTAL,,no national series collected,,,0
-Exports: Thailand (f154),PH,exports,TH,TOTAL,,no national series collected,,,0
-Exports: Vietnam (f155),PH,exports,VN,TOTAL,,no national series collected,,,0
+Exports: fob,PH,exports,WLD,TOTAL,,OpenSTAT SUM/0012L4DFTS0 Exports,1991-01,2026-09,429
+Exports: United States (f143),PH,exports,US,TOTAL,,OpenSTAT FOB 2026: sum over commodities,2022-01,2026-09,45
+Exports: China (f144),PH,exports,CN,TOTAL,,OpenSTAT FOB 2026: sum over commodities,2022-01,2026-09,45
+Exports: Hong Kong SAR (China) (f146),PH,exports,HK,TOTAL,,OpenSTAT FOB 2026: sum over commodities,2022-01,2026-09,45
+Exports: Japan (f148),PH,exports,JP,TOTAL,,OpenSTAT FOB 2026: sum over commodities,2022-01,2026-09,45
+Exports: European Union (f145),PH,exports,EU,TOTAL,,sum of the 27 current EU members (calculated),2022-01,2026-09,44
+Exports: Taiwan (f147),PH,exports,TW,TOTAL,,OpenSTAT FOB 2026: sum over commodities,2022-01,2026-09,45
+Exports: South Korea (f149),PH,exports,KR,TOTAL,,OpenSTAT FOB 2026: sum over commodities,2022-01,2026-09,45
+Exports: India (f150),PH,exports,IN,TOTAL,,OpenSTAT FOB 2026: sum over commodities,2022-01,2026-09,45
+Exports: Indonesia (f151),PH,exports,ID,TOTAL,,OpenSTAT FOB 2026: sum over commodities,2022-01,2026-09,45
+Exports: Malaysia (f152),PH,exports,MY,TOTAL,,OpenSTAT FOB 2026: sum over commodities,2022-01,2026-09,45
+Exports: Singapore (f153),PH,exports,SG,TOTAL,,OpenSTAT FOB 2026: sum over commodities,2022-01,2026-09,45
+Exports: Thailand (f154),PH,exports,TH,TOTAL,,OpenSTAT FOB 2026: sum over commodities,2022-01,2026-09,45
+Exports: Vietnam (f155),PH,exports,VN,TOTAL,,OpenSTAT FOB 2026: sum over commodities,2022-01,2026-09,45
 Exports (f287),SG,exports,WLD,TOTAL,,"M451001 Total Merchandise Exports, (At Current Prices)",1981-01,2026-09,549
 Exports: USA (f288),SG,exports,US,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-09,285
 Exports: China (f289),SG,exports,CN,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-09,285
@@ -275,20 +275,20 @@ Exports: Malaysia (f244),VN,exports,MY,TOTAL,Vietnam Customs not reachable from 
 Exports: Philippines (f245),VN,exports,PH,TOTAL,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,,,0
 Exports: Singapore (f246),VN,exports,SG,TOTAL,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,,,0
 Exports: Thailand (f247),VN,exports,TH,TOTAL,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,,,0
-Imports cif,CN,imports,WLD,TOTAL,,bulletin (2) TOTAL,2025-03,2026-09,16
-Imports: North America: United States,CN,imports,US,TOTAL,,bulletin (2) United States Virgin Islands,2025-03,2026-09,16
-Imports: Asia: Hong Kong SAR (China),CN,imports,HK,TOTAL,,"bulletin (2) Hong Kong, China",2025-03,2026-09,16
-Imports: Asia: Japan,CN,imports,JP,TOTAL,,bulletin (2) Japan,2025-03,2026-09,16
-Imports: EU,CN,imports,EU,TOTAL,,no national series collected,,,0
-Imports: Asia: Taiwan,CN,imports,TW,TOTAL,,bulletin (2) Taiwan，China,2025-03,2026-09,16
-Imports: Asia: South Korea,CN,imports,KR,TOTAL,,bulletin (2) Democratic People's Republic of Korea,2025-03,2026-09,16
-Imports: India,CN,imports,IN,TOTAL,,bulletin (2) India,2025-03,2026-09,16
-Imports: Asia: Indonesia,CN,imports,ID,TOTAL,,bulletin (2) Indonesia,2025-03,2026-09,16
-Imports: Asia: Malaysia,CN,imports,MY,TOTAL,,bulletin (2) Malaysia,2025-03,2026-09,16
-Imports: Asia: Philippines,CN,imports,PH,TOTAL,,bulletin (2) Philippines,2025-03,2026-09,16
-Imports: Asia: Singapore,CN,imports,SG,TOTAL,,bulletin (2) Singapore,2025-03,2026-09,16
-Imports: Asia: Thailand,CN,imports,TH,TOTAL,,bulletin (2) Thailand,2025-03,2026-09,16
-Imports: Vietnam,CN,imports,VN,TOTAL,,bulletin (2) Viet Nam,2025-03,2026-09,16
+Imports cif,CN,imports,WLD,TOTAL,,bulletin (2) TOTAL,2023-06,2026-09,33
+Imports: North America: United States,CN,imports,US,TOTAL,,bulletin (2) United States,2023-06,2026-09,33
+Imports: Asia: Hong Kong SAR (China),CN,imports,HK,TOTAL,,"bulletin (2) Hong Kong, China",2023-06,2026-09,33
+Imports: Asia: Japan,CN,imports,JP,TOTAL,,bulletin (2) Japan,2023-06,2026-09,33
+Imports: EU,CN,imports,EU,TOTAL,,bulletin (2) EU,2023-06,2026-09,33
+Imports: Asia: Taiwan,CN,imports,TW,TOTAL,,bulletin (2) Taiwan，China,2023-06,2026-09,33
+Imports: Asia: South Korea,CN,imports,KR,TOTAL,,bulletin (2) Republic of Korea,2023-06,2026-09,33
+Imports: India,CN,imports,IN,TOTAL,,bulletin (2) India,2023-06,2026-09,33
+Imports: Asia: Indonesia,CN,imports,ID,TOTAL,,bulletin (2) Indonesia,2023-06,2026-09,33
+Imports: Asia: Malaysia,CN,imports,MY,TOTAL,,bulletin (2) Malaysia,2023-06,2026-09,33
+Imports: Asia: Philippines,CN,imports,PH,TOTAL,,bulletin (2) Philippines,2023-06,2026-09,33
+Imports: Asia: Singapore,CN,imports,SG,TOTAL,,bulletin (2) Singapore,2023-06,2026-09,33
+Imports: Asia: Thailand,CN,imports,TH,TOTAL,,bulletin (2) Thailand,2023-06,2026-09,33
+Imports: Vietnam,CN,imports,VN,TOTAL,,bulletin (2) Viet Nam,2023-06,2026-09,33
 Imports (f1),HK,imports,WLD,TOTAL,,IDDS ttype 1,2012-01,2025-12,168
 Imports: USA (f2),HK,imports,US,TOTAL,,IDDS ttype 1 US,2012-01,2025-12,168
 Imports: Chinese Mainland (f3),HK,imports,CN,TOTAL,,IDDS ttype 1 CN,2012-01,2025-12,168
@@ -371,20 +371,20 @@ Imports: Asia: Philippines (f89),KR,imports,PH,TOTAL,,901Y121 수입금액 필�
 Imports: Asia: Singapore (f90),KR,imports,SG,TOTAL,,901Y121 수입금액 싱가포르,2024-06,2026-09,28
 Imports: Asia: Thailand (f91),KR,imports,TH,TOTAL,,901Y121 수입금액 태국,2024-06,2026-09,28
 Imports: Asia: Vietnam (f92),KR,imports,VN,TOTAL,,901Y121 수입금액 베트남,2024-06,2026-09,28
-Imports: USD,IN,imports,WLD,TOTAL,,no national series collected,,,0
-Imports: USD: United States,IN,imports,US,TOTAL,,TradeStat country_wise_all_commodities US,2026-06,2026-09,4
-Imports: USD: China,IN,imports,CN,TOTAL,,TradeStat country_wise_all_commodities CN,2026-06,2026-09,4
-Imports: USD: Hong Kong SAR (China),IN,imports,HK,TOTAL,,TradeStat country_wise_all_commodities HK,2026-06,2026-09,4
-Imports: USD: Japan,IN,imports,JP,TOTAL,,TradeStat country_wise_all_commodities JP,2026-06,2026-09,4
+Imports: USD,IN,imports,WLD,TOTAL,,TradeStat commoditywise HS2 total India's Total Import,2026-05,2026-08,4
+Imports: USD: United States,IN,imports,US,TOTAL,,TradeStat country_wise_all_commodities US,2026-06,2026-08,3
+Imports: USD: China,IN,imports,CN,TOTAL,,TradeStat country_wise_all_commodities CN,2026-06,2026-08,3
+Imports: USD: Hong Kong SAR (China),IN,imports,HK,TOTAL,,TradeStat country_wise_all_commodities HK,2026-06,2026-08,3
+Imports: USD: Japan,IN,imports,JP,TOTAL,,TradeStat country_wise_all_commodities JP,2026-06,2026-08,3
 Imports: USD: European Union,IN,imports,EU,TOTAL,,no national series collected,,,0
-Imports: USD: Taiwan,IN,imports,TW,TOTAL,,TradeStat country_wise_all_commodities TW,2026-07,2026-09,3
-Imports: USD: South Korea,IN,imports,KR,TOTAL,,TradeStat country_wise_all_commodities KR,2026-07,2026-09,3
-Imports: USD: Indonesia,IN,imports,ID,TOTAL,,TradeStat country_wise_all_commodities ID,2026-07,2026-09,3
-Imports: USD: Malaysia,IN,imports,MY,TOTAL,,TradeStat country_wise_all_commodities MY,2026-07,2026-09,3
-Imports: USD: Philippines,IN,imports,PH,TOTAL,,TradeStat country_wise_all_commodities PH,2026-07,2026-09,3
-Imports: USD: Singapore,IN,imports,SG,TOTAL,,TradeStat country_wise_all_commodities SG,2026-07,2026-09,3
-Imports: USD: Thailand,IN,imports,TH,TOTAL,,TradeStat country_wise_all_commodities TH,2026-07,2026-09,3
-Imports: USD: Vietnam,IN,imports,VN,TOTAL,,TradeStat country_wise_all_commodities VN,2026-07,2026-09,3
+Imports: USD: Taiwan,IN,imports,TW,TOTAL,,TradeStat country_wise_all_commodities TW,2026-06,2026-08,3
+Imports: USD: South Korea,IN,imports,KR,TOTAL,,TradeStat country_wise_all_commodities KR,2026-06,2026-08,3
+Imports: USD: Indonesia,IN,imports,ID,TOTAL,,TradeStat country_wise_all_commodities ID,2026-06,2026-08,3
+Imports: USD: Malaysia,IN,imports,MY,TOTAL,,TradeStat country_wise_all_commodities MY,2026-06,2026-08,3
+Imports: USD: Philippines,IN,imports,PH,TOTAL,,TradeStat country_wise_all_commodities PH,2026-06,2026-08,3
+Imports: USD: Singapore,IN,imports,SG,TOTAL,,TradeStat country_wise_all_commodities SG,2026-06,2026-08,3
+Imports: USD: Thailand,IN,imports,TH,TOTAL,,TradeStat country_wise_all_commodities TH,2026-06,2026-08,3
+Imports: USD: Vietnam,IN,imports,VN,TOTAL,,TradeStat country_wise_all_commodities VN,2026-06,2026-08,3
 Import: cif,ID,imports,WLD,TOTAL,,"SEKI V.20 Jumlah, fob",2005-01,2026-08,260
 Import: Value: USA,ID,imports,US,TOTAL,,SEKI V.20 Amerika Serikat,2005-01,2026-08,260
 Import: Value: China,ID,imports,CN,TOTAL,,SEKI V.20 Republik Rakyat Cina,2005-01,2026-08,260
@@ -440,7 +440,7 @@ Imports: Philippines (f11),MY,imports,PH,TOTAL,,no national series collected,,,0
 Imports: Singapore (f13),MY,imports,SG,TOTAL,,no national series collected,,,0
 Imports: Thailand (f14),MY,imports,TH,TOTAL,,no national series collected,,,0
 Imports: Vietnam (f15),MY,imports,VN,TOTAL,,no national series collected,,,0
-Imports: fob,PH,imports,WLD,TOTAL,,no national series collected,,,0
+Imports: fob,PH,imports,WLD,TOTAL,,OpenSTAT SUM/0012L4DFTS0 Imports,1991-01,2026-09,429
 Imports: United States,PH,imports,US,TOTAL,,no national series collected,,,0
 Imports: China,PH,imports,CN,TOTAL,,no national series collected,,,0
 Imports: Hong Kong SAR (China),PH,imports,HK,TOTAL,,no national series collected,,,0
@@ -522,7 +522,7 @@ Imports: Malaysia (f70),VN,imports,MY,TOTAL,Vietnam Customs not reachable from G
 Imports: Philippines (f71),VN,imports,PH,TOTAL,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,,,0
 Imports: Singapore (f72),VN,imports,SG,TOTAL,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,,,0
 Imports: Thailand (f73),VN,imports,TH,TOTAL,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,,,0
-"Exports: HS 2: Electrical Machinery and Equipment and Parts Thereof; Sound Recorders and Reproducers, Television Image and Sound Recorders and Reproducers, and Parts",CN,exports,WLD,HS85,,bulletin (4) chapter 85,2025-02,2026-09,20
+"Exports: HS 2: Electrical Machinery and Equipment and Parts Thereof; Sound Recorders and Reproducers, Television Image and Sound Recorders and Reproducers, and Parts",CN,exports,WLD,HS85,,bulletin (4) chapter 85,2023-06,2026-09,38
 "CN: Export: HS 4: Machinery,Plant or Laboratory Equip,Whether or Not ElectricallyHeated(Excl Furnaces, Ovens and Otr Equip of Heading 85.14), for the Treatment of Materials by A Process Involving A Change of Temperature Such As Heat, Cook, Roasting, Distill, Rectify, Sterilising, Pasteurising, OT Mach or Plant Used for Dom Purposes; Instantaneous or Storage Water Heaters, Nonelectric.",CN,exports,WLD,HS8419,GACC 4-digit data only in stats.customs.gov.cn (refuses requests from outside China),GACC 4-digit data only in stats.customs.gov.cn (refuses requests from outside China),,,0
 "CN: Export: HS 4: Calculating Machines and Pocketsize Data Recording, Reproducing and Displaying Machines With Calculating Functions; Accounting Machines, Postagefranking Machines, Ticketissuing Machines and Similar Machines, Incorporating A Calculating Device; Cash Registers.",CN,exports,WLD,HS8470,GACC 4-digit data only in stats.customs.gov.cn (refuses requests from outside China),GACC 4-digit data only in stats.customs.gov.cn (refuses requests from outside China),,,0
 "CN: Export: HS 4: Automatic Data Processing Machines and Units Thereof; Magnetic or Optical Readers, Machines for Transcribing Data Onto Data Media in D Form and Machines for Processing Such Data, Not Elsewhere Specified or Included.",CN,exports,WLD,HS8471,GACC 4-digit data only in stats.customs.gov.cn (refuses requests from outside China),GACC 4-digit data only in stats.customs.gov.cn (refuses requests from outside China),,,0
@@ -558,29 +558,29 @@ Exports: World: Office Machines; Not Elsewhere Classified (f16),KR,exports,WLD,H
 "Exports: World: Calculating Machines and Pocket-Size Data Recording, Reproducing and Displaying Machines With Calculating Functions; Accounting Machines, Postage-Franking Machines, Ticket-Issuing Machines and Similar, Incorporating A Calculating Device; Cash Registers (f21)",KR,exports,WLD,HS8470,KCS item API: needs a data.go.kr key,KCS item API: needs a data.go.kr key,,,0
 Exports: KCS: Heavy IP: Electronic and Electronic Pdts (EEP),KR,exports,WLD,kcs_electronic_products,KCS grouping: needs a data.go.kr key,KCS grouping: needs a data.go.kr key,,,0
 "Export: USD: Pumps For Liquids, Whether Or Not Fitted With A",IN,exports,WLD,HS8413,,no national series collected,,,0
-"Export: USD: Electrical Machinery And Equipment And Parts Thereof: Sound Recorders And Reproducers, Television Image And Sound Recorders And Reproducers,And Parts",IN,exports,WLD,HS85,,no national series collected,,,0
-Export: USD: Automatic Data Processing Machines And Units,IN,exports,WLD,HS8471,,no national series collected,,,0
-"Export: USD: Other Office Machines (For Example, Hectograph Or Stencil Duplicating Machines, Addressing Machines, Autom",IN,exports,WLD,HS8472,,no national series collected,,,0
-"Export: USD: Calcultng And Pockt-Size Data Recrdng, Reprducng And Displayng Machns Wth Calcultngfunctns: Postg Frankng",IN,exports,WLD,HS8470,,no national series collected,,,0
-"Export: USD: Mchnry,Plnt/Laboratory Eqpmnt,W/N Elctrclyheatd,Fr Heatng,Cookng,Etc,Excl Mchnry Fr Domstc Purps:Storg Wtr Heatrs,Non-El",IN,exports,WLD,HS8419,,no national series collected,,,0
+"Export: USD: Electrical Machinery And Equipment And Parts Thereof: Sound Recorders And Reproducers, Television Image And Sound Recorders And Reproducers,And Parts",IN,exports,WLD,HS85,,TradeStat commoditywise HS2 85 ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THERE,2026-05,2026-08,4
+Export: USD: Automatic Data Processing Machines And Units,IN,exports,WLD,HS8471,,TradeStat commoditywise HS4 8471 AUTOMATIC DATA PROCESSING MACHINES AND UNITS,2026-05,2026-08,4
+"Export: USD: Other Office Machines (For Example, Hectograph Or Stencil Duplicating Machines, Addressing Machines, Autom",IN,exports,WLD,HS8472,,"TradeStat commoditywise HS4 8472 OTHER OFFICE MACHINES (FOR EXAMPLE, HECTOGRAPH OR ",2026-05,2026-08,4
+"Export: USD: Calcultng And Pockt-Size Data Recrdng, Reprducng And Displayng Machns Wth Calcultngfunctns: Postg Frankng",IN,exports,WLD,HS8470,,"TradeStat commoditywise HS4 8470 CALCULTNG AND POCKT-SIZE DATA RECRDNG, REPRDUCNG A",2026-05,2026-08,4
+"Export: USD: Mchnry,Plnt/Laboratory Eqpmnt,W/N Elctrclyheatd,Fr Heatng,Cookng,Etc,Excl Mchnry Fr Domstc Purps:Storg Wtr Heatrs,Non-El",IN,exports,WLD,HS8419,,"TradeStat commoditywise HS4 8419 MCHNRY,PLNT/LABORATORY EQPMNT,W/N ELCTRCLYHEATD,FR",2026-05,2026-08,4
 Export: Electrical Machinery and Equipments; Sound Recorders,ID,exports,WLD,HS85,,BPS dataexim HS85: sum over ports and countries,2023-01,2026-09,45
 "Export: Value: Other office Machines (For Example, Hectograph or Stencil Duplicating Machines, Addressing Machines, Automatic Banknote Dispensers (f36)",ID,exports,WLD,HS8472,,no national series collected,,,0
 "Export: Value: Parts and Accessories (Other Than Covers, Carrying Cases and The Like) Suitable For Use Solely or Principally With Machines of Headings 84.70 To 84.72",ID,exports,WLD,HS8473,,no national series collected,,,0
 "Export: Value: Automatic Data Processing Machines and Units Thereof; Magnetic or Optical Readers, Machines For Transcribing Data Onto Data Media in Coded Form",ID,exports,WLD,HS8471,,no national series collected,,,0
 "Export: Value: Machinery, Plant or Laboratory Equipment, Whether or Not Electrically Heated (Excluding Furnaces, Ovens and Other Equipment of Heading 85.14)",ID,exports,WLD,HS8419,,no national series collected,,,0
 "Export: Value: Calculating Machines and Pocket-Size Data Recording, Reproducing and Displaying Machines With Calculating Functions; Accounting Machines, Postage-Franking Machines",ID,exports,WLD,HS8470,,no national series collected,,,0
-Exports: World: Office Machines; Not Elsewhere Classified (f45),MY,exports,WLD,HS8472,,no national series collected,,,0
-"Exports: World: Electrical Machinery and Equipment and Parts Thereof; Sound Recorders and Reproducers; Television Image and Sound Recorders and Reproducers, Parts and Accessories of Such Articles (f46)",MY,exports,WLD,HS85,,no national series collected,,,0
-"Exports: World: Machinery; Parts and Accessories (Other Than Covers, Carrying Cases and The Like) Suitable For Use Solely or Principally With Machines of Headings 84.70 To 84.72 (f47)",MY,exports,WLD,HS8473,,no national series collected,,,0
-"Exports: World: Automatic Data Processing Machines and Units Thereof, Magnetic or Optical Readers, Machines For Transcribing Data Onto Data Media In Coded Form and Machines For Processing Such Data, Not Elsewhere Specified or Included (f48)",MY,exports,WLD,HS8471,,no national series collected,,,0
-"Exports: World: Machinery, Plant (Not Domestic), or Laboratory Equipment; Electrically Heated or Not, (Excluding Items In 85.14) For The Treatment of Materials By A Process Involving Change of Temperature; Including Instantaneous or Non Electric Storage Water Heaters (f49)",MY,exports,WLD,HS8419,,no national series collected,,,0
-"Exports: World: Calculating Machines and Pocket-Size Data Recording, Reproducing and Displaying Machines With Calculating Functions; Accounting Machines, Postage-Franking Machines, Ticket-Issuing Machines and Similar, Incorporating A Calculating Device; Cash Registers (f50)",MY,exports,WLD,HS8470,,no national series collected,,,0
-"Exports: Parts & Accessories (Other than Covers, Carrying Cases & the Like) Suitable for Use Solely",PH,exports,WLD,HS8473,,no national series collected,,,0
-"Exports: Electrical Machinery & Equipment & Parts Thereof; Sound Recorders & Reproducers, Television Image & Sound Recorders & Reproducers, & Parts & Accessories of Such Articles",PH,exports,WLD,HS85,,no national series collected,,,0
-"Exports: Automatic Data Processing Machines & Units Thereof; Magnetic or Optical Readers, Machines for Transcribing Data Onto Data Media in Coded Form & Machines for Processing Such Data, Not Elsewhere Specified or Included",PH,exports,WLD,HS8471,,no national series collected,,,0
-"Exports: Other Office Machines (For Example, Hectograph or Stencil Duplicating Machines, Addressing Machines, Automatic Banknote Dispensers, Coin-Sorting Machines, Coin-Counting or Wrapping Machines, Pencil-Sharpening Machines, Perforating or Stapling Machines) (f37)",PH,exports,WLD,HS8472,,no national series collected,,,0
-"Exports: Calculating Machines & Pocket-Size Data Recording, Reproducing & Displaying Machines With Calculating Functions; Accounting Machines, Postage-Franking Machines, Ticket-Issuing Machines & Similar Machines, Incorporating a Calculating Device; Cash Registers (f38)",PH,exports,WLD,HS8470,,no national series collected,,,0
-"Exports: Machinery, Plant or Laboratory Equipment, Whether or Not Electrically Heated, for the Treatment of Materials by a Process Involving a Change of Temperature Such As Heating, Cooking, Roasting, Distilling, Rectifying, Sterilising, Pasteurising, Steaming, Drying, Evaporating, Vaporising, Condensing or Cooling, Other than Machinery or Plant of a Kind Used for Domestic Purposes; Instantaneous ",PH,exports,WLD,HS8419,,no national series collected,,,0
+Exports: World: Office Machines; Not Elsewhere Classified (f45),MY,exports,WLD,HS8472,,METS HS4_digit 8472 exports,2012-01,2026-09,177
+"Exports: World: Electrical Machinery and Equipment and Parts Thereof; Sound Recorders and Reproducers; Television Image and Sound Recorders and Reproducers, Parts and Accessories of Such Articles (f46)",MY,exports,WLD,HS85,,METS HS2_digit 85 exports,2012-01,2026-09,177
+"Exports: World: Machinery; Parts and Accessories (Other Than Covers, Carrying Cases and The Like) Suitable For Use Solely or Principally With Machines of Headings 84.70 To 84.72 (f47)",MY,exports,WLD,HS8473,,METS HS4_digit 8473 exports,2012-01,2026-09,177
+"Exports: World: Automatic Data Processing Machines and Units Thereof, Magnetic or Optical Readers, Machines For Transcribing Data Onto Data Media In Coded Form and Machines For Processing Such Data, Not Elsewhere Specified or Included (f48)",MY,exports,WLD,HS8471,,METS HS4_digit 8471 exports,2012-01,2026-09,177
+"Exports: World: Machinery, Plant (Not Domestic), or Laboratory Equipment; Electrically Heated or Not, (Excluding Items In 85.14) For The Treatment of Materials By A Process Involving Change of Temperature; Including Instantaneous or Non Electric Storage Water Heaters (f49)",MY,exports,WLD,HS8419,,METS HS4_digit 8419 exports,2012-01,2026-09,177
+"Exports: World: Calculating Machines and Pocket-Size Data Recording, Reproducing and Displaying Machines With Calculating Functions; Accounting Machines, Postage-Franking Machines, Ticket-Issuing Machines and Similar, Incorporating A Calculating Device; Cash Registers (f50)",MY,exports,WLD,HS8470,,METS HS4_digit 8470 exports,2012-01,2026-09,177
+"Exports: Parts & Accessories (Other than Covers, Carrying Cases & the Like) Suitable for Use Solely",PH,exports,WLD,HS8473,,"OpenSTAT FOB 2026: codes 8473*, all countries (calculated)",2022-01,2026-09,45
+"Exports: Electrical Machinery & Equipment & Parts Thereof; Sound Recorders & Reproducers, Television Image & Sound Recorders & Reproducers, & Parts & Accessories of Such Articles",PH,exports,WLD,HS85,,"OpenSTAT FOB 2026: codes 85*, all countries (calculated)",2022-01,2026-09,45
+"Exports: Automatic Data Processing Machines & Units Thereof; Magnetic or Optical Readers, Machines for Transcribing Data Onto Data Media in Coded Form & Machines for Processing Such Data, Not Elsewhere Specified or Included",PH,exports,WLD,HS8471,,"OpenSTAT FOB 2026: codes 8471*, all countries (calculated)",2022-01,2026-09,45
+"Exports: Other Office Machines (For Example, Hectograph or Stencil Duplicating Machines, Addressing Machines, Automatic Banknote Dispensers, Coin-Sorting Machines, Coin-Counting or Wrapping Machines, Pencil-Sharpening Machines, Perforating or Stapling Machines) (f37)",PH,exports,WLD,HS8472,,"OpenSTAT FOB 2026: codes 8472*, all countries (calculated)",2022-01,2026-09,45
+"Exports: Calculating Machines & Pocket-Size Data Recording, Reproducing & Displaying Machines With Calculating Functions; Accounting Machines, Postage-Franking Machines, Ticket-Issuing Machines & Similar Machines, Incorporating a Calculating Device; Cash Registers (f38)",PH,exports,WLD,HS8470,,"OpenSTAT FOB 2026: codes 8470*, all countries (calculated)",2022-01,2026-09,45
+"Exports: Machinery, Plant or Laboratory Equipment, Whether or Not Electrically Heated, for the Treatment of Materials by a Process Involving a Change of Temperature Such As Heating, Cooking, Roasting, Distilling, Rectifying, Sterilising, Pasteurising, Steaming, Drying, Evaporating, Vaporising, Condensing or Cooling, Other than Machinery or Plant of a Kind Used for Domestic Purposes; Instantaneous ",PH,exports,WLD,HS8419,,"OpenSTAT FOB 2026: codes 8419*, all countries (calculated)",2022-01,2026-09,45
 Domestic Exports: Non Oil: Electronic Products (EP) (f34),SG,domestic_exports,WLD,electronic_products,,M450981 Total Electronic Products,1997-01,2026-09,357
 Re-Exports: Electronic Products (EP): Total (f35),SG,re_exports,WLD,electronic_products,,M451131 Total Electronic Products,1999-01,2026-09,333
 "HS2022 Exports: USD: Electrical Machinery and Equipment and Parts Thereof; Sound Recorders and Reproducers, Television Image and Sound Recorders and Reproducers, and Parts and Accessories of Such Articles",TH,exports,WLD,HS85,,exportharmonizecountries hs_code=85: sum of all countries,2018-08,2026-09,98
@@ -603,26 +603,26 @@ Exports: World: Office Machines; Not Elsewhere Classified (f28),VN,exports,WLD,H
 Import: RI: USD: Mineral Products: Petroleum,TW,imports,WLD,mineral_products,,i9122 5.礦產品,2001-01,2026-09,309
 "Imports: World: Oils; Petroleum Oils and Oils Obtained From Bituminous Minerals, Crude (f4)",JP,imports,WLD,crude_oil,,d61ma 原油及び粗油 (30301),1988-01,2026-09,465
 Energy Imports Value: Crude Petroleum,KR,imports,WLD,crude_oil,KCS energy imports: needs a data.go.kr key,KCS energy imports: needs a data.go.kr key,,,0
-"Import: USD: Petroleum Oils And Oils Obtained From Bituminous Minerals, Crude",IN,imports,WLD,HS2709,,no national series collected,,,0
+"Import: USD: Petroleum Oils And Oils Obtained From Bituminous Minerals, Crude",IN,imports,WLD,HS2709,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M,2026-05,2026-08,4
 Import: cif: OG: Crude Oil,ID,imports,WLD,HS2709,,no national series collected,,,0
-"Imports: Petroleum Oils And Oils Obtained From Bituminous Minerals, Crude (f5) (f6)",MY,imports,WLD,HS2709,,no national series collected,,,0
+"Imports: Petroleum Oils And Oils Obtained From Bituminous Minerals, Crude (f5) (f6)",MY,imports,WLD,HS2709,,METS HS4_digit 2709 imports,2010-01,2026-09,201
 "Imports: Petroleum Oils & Oils Obtained from Bituminous Minerals, Crude (f9)",PH,imports,WLD,HS2709,,no national series collected,,,0
-Imports: Petroleum Oils & Oils From Bituminous Minerals Crude (f1) (f2),SG,imports,WLD,HS2709,,T010001 IMPORTS WORLD HS 2709,2023-08,2026-09,38
-Imports: World: Petroleum Oils and Oils Obtained From Bituminous Minerals; Crude (f8),SG,imports,WLD,HS2709,,T010001 IMPORTS WORLD HS 2709,2023-08,2026-09,38
+Imports: Petroleum Oils & Oils From Bituminous Minerals Crude (f1) (f2),SG,imports,WLD,HS2709,,T010001 IMPORTS WORLD HS 2709,2023-01,2026-09,45
+Imports: World: Petroleum Oils and Oils Obtained From Bituminous Minerals; Crude (f8),SG,imports,WLD,HS2709,,T010001 IMPORTS WORLD HS 2709,2023-01,2026-09,45
 "HS2022 Imports: Petroleum Oils and Oils Obtained from Bituminous Minerals, Crude (f3)",TH,imports,WLD,HS2709,,importharmonizecountries hs_code=2709: sum of all countries,2018-08,2026-09,98
 Imports: Crude Oil (f11),VN,imports,WLD,crude_oil,,NSO report 28.NK tháng Dầu thô,2025-01,2026-10,7
-"CN: Import: HS 4: Petroleum Oils and Oils Obtained from Bituminous Minerals, Other Than Crude; Preparations Not Elsewhere Specified or Included, Containing by Weight 70% or More of Petroleum Oils or of Oils Obtained from Bituminous Minerals, These Oils Being the Basic Constituents of the Preparations; Waste Oils.",CN,imports,WLD,petroleum_products,,bulletin (14) Refined petroleum products,2025-02,2026-09,20
+"CN: Import: HS 4: Petroleum Oils and Oils Obtained from Bituminous Minerals, Other Than Crude; Preparations Not Elsewhere Specified or Included, Containing by Weight 70% or More of Petroleum Oils or of Oils Obtained from Bituminous Minerals, These Oils Being the Basic Constituents of the Preparations; Waste Oils.",CN,imports,WLD,petroleum_products,,bulletin (14) Refined petroleum products,2023-06,2026-09,38
 "Imports: World: Petroleum Oils and Oils From Bituminous Minerals, Not Crude; Preparations N.E.C, Containing By Weight 70% or More of Petroleum Oils or Oils From Bituminous Minerals; These Being The Basic Constituents of The Preparations; Waste Oils (f7)",HK,imports,WLD,HS2710,,"IDDS ttype 1 HS4 2710 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS MINERALS, O",2012-01,2025-12,168
 Import: RI: USD: Diesel Fuel,TW,imports,WLD,diesel,,i9162 柴油,2001-01,2026-09,269
 "Import: RI: USD: Naphtha, Mineral",TW,imports,WLD,naphtha,,no national series collected,,,0
 Import: RI: USD: Liquefied Natural Gas,TW,imports,WLD,lng,,i9162 液化天然氣,2001-01,2026-09,309
 "Imports: World: Petroleum Oils and Oils From Bituminous Minerals, Not Crude; Preparations N.E.C, Containing By Weight 70% or More of Petroleum Oils or Oils From Bituminous Minerals; These Being The Basic Constituents of The Preparations; Waste Oils (f2)",JP,imports,WLD,petroleum_products,,d61ma 石油製品 (30303),1988-01,2026-09,465
 Imports: KCS: Ind Materials and Fuels: Fuels,KR,imports,WLD,kcs_fuels,KCS grouping: needs a data.go.kr key,KCS grouping: needs a data.go.kr key,,,0
-Import: USD: Petroleum Oilsand Oils Obtnd Frm Bitmns Mnrlother Than Crude Prpn Nes:Cntng70% Or Moreby Weight Of These Oils,IN,imports,WLD,HS2710,,no national series collected,,,0
+Import: USD: Petroleum Oilsand Oils Obtnd Frm Bitmns Mnrlother Than Crude Prpn Nes:Cntng70% Or Moreby Weight Of These Oils,IN,imports,WLD,HS2710,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER ,2026-05,2026-08,4
 Import: cif: Oil and Gas: Oil Products,ID,imports,WLD,HS2710,,no national series collected,,,0
-"Imports: Petroleum Oils and Oils Obtained From Bituminous Minerals, Other Than Crude: Minerals, These Oils Being The Basic Constituents of The Preparations: Waste Oils (f3)",MY,imports,WLD,HS2710,,no national series collected,,,0
+"Imports: Petroleum Oils and Oils Obtained From Bituminous Minerals, Other Than Crude: Minerals, These Oils Being The Basic Constituents of The Preparations: Waste Oils (f3)",MY,imports,WLD,HS2710,,METS HS4_digit 2710 imports,2010-01,2026-09,201
 "Imports: Petroleum Oils & Oils Obtained from Bituminous Minerals, Other than Crude; Preparations Not Elsewhere Specified or Included, Containing by Weight 70 % or More of Petroleum Oils or of Oils Obtained from Bituminous Minerals, these Oils Being the Basic Constituents of the Preparations; Waste Oils",PH,imports,WLD,HS2710,,no national series collected,,,0
-Imports: Petroleum Oils & Oils From Bituminous Minerals Not Crude & Preparations Nes Containing by Weight 70% or More of Petroleum Oils or of Oils From Bituminous Minerals & Waste Oils (f4),SG,imports,WLD,HS2710,,T010001 IMPORTS WORLD HS 2710,2023-08,2026-09,38
-"Imports: World: Petroleum Oils and Oils From Bituminous Minerals, Not Crude; Preparations N.E.C, Containing By Weight 70% or More of Petroleum Oils or Oils From Bituminous Minerals; These Being The Basic Constituents of The Preparations; Waste Oils (f5)",SG,imports,WLD,HS2710,,T010001 IMPORTS WORLD HS 2710,2023-08,2026-09,38
+Imports: Petroleum Oils & Oils From Bituminous Minerals Not Crude & Preparations Nes Containing by Weight 70% or More of Petroleum Oils or of Oils From Bituminous Minerals & Waste Oils (f4),SG,imports,WLD,HS2710,,T010001 IMPORTS WORLD HS 2710,2023-01,2026-09,45
+"Imports: World: Petroleum Oils and Oils From Bituminous Minerals, Not Crude; Preparations N.E.C, Containing By Weight 70% or More of Petroleum Oils or Oils From Bituminous Minerals; These Being The Basic Constituents of The Preparations; Waste Oils (f5)",SG,imports,WLD,HS2710,,T010001 IMPORTS WORLD HS 2710,2023-01,2026-09,45
 "HS2022 Imports: Petroleum Oils and Oils Obtained from Bituminous Minerals, Other Than Crude; Preparations Not Elsewhere Specified or Included, Containing by Weight 70% or More of Petroleum Oils or of Oils Obtained from Bituminous Minerals, These Oils Being the Basic Con (f6)",TH,imports,WLD,HS2710,,importharmonizecountries hs_code=2710: sum of all countries,2018-08,2026-09,98
 Imports: Petroleum Products,VN,imports,WLD,petroleum_products,,NSO report 28.NK tháng Xăng dầu,2025-01,2026-10,7
