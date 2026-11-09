@@ -115,7 +115,7 @@ class Store:
     """Raw responses kept between runs: raw/trade/<cc>/store.json.gz, {key: response}. Sources fetch only keys that are
     missing or recent, up to a per-run budget, so a long history is backfilled over several runs."""
 
-    def __init__(self, cc, seconds=600):
+    def __init__(self, cc, seconds=240):
         import time as _t  # noqa: PLC0415
         self.path = RAW / "trade" / cc / "store.json.gz"
         self.data = json.load(gzip.open(self.path, "rt", encoding="utf-8")) if self.path.exists() else {}
