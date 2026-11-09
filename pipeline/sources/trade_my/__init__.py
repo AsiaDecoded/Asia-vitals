@@ -3,7 +3,9 @@ published, RM: exports (gross, FOB), domestic exports, re-exports, imports (CIF)
 US$: BIS monthly average ringgit rate (calculated).
 HS lines (world): DOSM METS Online back-end API (metsonline.dosm.gov.my/api/Trade/classification-query), RM, monthly:
 exports HS 85 (HS2) and 8419, 8470, 8471, 8472, 8473 (HS4) from 2012; imports 2709, 2710 (HS4) from 2010.
-Partners: METS query format for the partner dimension still being worked out (to add).
+Partners: METS, HS2 x every partner country x month, one query per flow and year, summed over chapters (calculated);
+partner names mapped to ISO codes (DOSM uses several spellings over time); EU from METS's own economic grouping "EU".
+Partner years are backfilled over runs in raw/trade/my/store.json.gz; the current and previous year are re-fetched.
 """
 import csv
 import hashlib
@@ -25,13 +27,18 @@ HS_EXP = (("HS2_digit", ["85"]), ("HS4_digit", ["8419", "8470", "8471", "8472", 
 HS_IMP = (("HS4_digit", ["2709", "2710"]),)
 MON = {m: i + 1 for i, m in enumerate(["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"])}
 WARN = []
+PARTNERS = {"UNITED STATES": "US", "UNITED STATES OF AMERICA": "US", "CHINA": "CN", "CHINA, PEOPLE'S REPUBLIC OF": "CN",
+            "HONG KONG": "HK", "HONG KONG, SAR": "HK", "JAPAN": "JP", "TAIWAN": "TW", "TAIWAN, PROVINCE OF CHINA": "TW",
+            "KOREA, REPUBLIC OF": "KR", "INDIA": "IN", "INDONESIA": "ID", "PHILIPPINES": "PH", "SINGAPORE": "SG",
+            "THAILAND": "TH", "VIET NAM": "VN", "VIETNAM, SOCIALIST REP. OF": "VN"}
+BUDGET = 30
 FIELDS = {"exports": "exports", "exports_domestic": "domestic_exports", "re_exports": "re_exports", "imports": "imports"}
 
 
-def mets(flow, hs, codes, years):
+def mets(flow, hs, codes, years, **extra):
     body = {"tradeClass": "classification", "hsType": hs, "flowTypes": [flow], "frequencyType": "MONTHLY",
             "years": [str(y) for y in years], "months": [f"{m:02d}" for m in range(1, 13)],
-            "products": [{"codeValue": c, "codeName": ""} for c in codes]}
+            "products": [{"codeValue": c, "codeName": ""} for c in codes], **extra}
     err = None
     for i in range(3):
         try:
@@ -71,6 +78,30 @@ def hs_rows(last_year):
     return rows
 
 
+def partner_year(flow, y):
+    """{iso or EU: {yyyy-mm: RM}} for one flow and year."""
+    out = {}
+    for extra, col in (({}, "partner_country_name"), ({"partnerCountry": ["EU"], "PGEGrouping": "ECONOMICGROUPING"}, "economic_grouping")):
+        js = mets(flow.capitalize(), "HS2_digit", [], [y], **extra)
+        cols = js.get("columns") or []
+        if not js.get("items"):
+            continue
+        if col not in cols:
+            raise RuntimeError(f"METS partners {flow} {y}: no column {col} in {cols[:4]}")
+        pc = cols.index(col)
+        for it in js.get("items") or []:
+            iso = "EU" if col == "economic_grouping" and it[pc] == "EU" else PARTNERS.get(str(it[pc]).strip().upper())
+            if not iso:
+                continue
+            acc = out.setdefault(iso, {})
+            for j, c in enumerate(cols):
+                m = re.match(r"([A-Z][a-z]{2})_(\d{4})_", c)
+                if m and j < len(it) and it[j] not in (None, ""):
+                    ym = f"{m.group(2)}-{MON[m.group(1)]:02d}"
+                    acc[ym] = acc.get(ym, 0.0) + float(it[j])
+    return out
+
+
 def update(force=False, **_):
     folder = trade.OUT / "my"
     state = read_json(folder / "release.json", {}) or {}
@@ -93,11 +124,29 @@ def update(force=False, **_):
     if not rows:
         raise CheckFailed(["trade_headline: no rows"])
     WARN.clear()
-    rows += hs_rows(int(trade.latest(rows)[:4]))
+    last_year = int(trade.latest(rows)[:4])
+    rows += hs_rows(last_year)
+    st = trade.Store("my")
+    for y in range(last_year, 1999, -1):
+        for flow in ("exports", "imports"):
+            try:
+                st.get(f"P:{flow}:{y}", lambda: partner_year(flow, y), refresh=y >= last_year - 1, budget=BUDGET)
+            except Exception as e:  # noqa: BLE001
+                WARN.append(str(e))
+    st.save()
+    have = {(r["date"][:7], r["flow"]) for r in rows if r["partner"] == "WLD" and r["product"] == "TOTAL"}
+    for key, agg in st.data.items():
+        _, flow, y = key.split(":")
+        for iso, s_ in (agg or {}).items():
+            for ym, v in s_.items():
+                if v and (ym, flow) in have:      # METS fills unpublished months with 0
+                    rows.append({"economy": "MY", "flow": flow, "partner": iso, "product": "TOTAL", "date": ym + "-01",
+                                 "value": v, "unit": "MYR", "usd_mn": None, "usd_calculated": "",
+                                 "series": "METS EU economic grouping" if iso == "EU" else "METS HS2 x partner, sum over chapters (calculated)"})
     trade.to_usd(rows, "my", 1)
     last = trade.latest(rows)
     folder = trade.write("my", rows)
     code = f"T{last[:7]}"
     write_release(folder, {"code": code, "label": last[:7], "latest_month": last, "source": NAME, "table": "OpenDOSM trade_headline"},
-                  WARN[:10], len(rows), {"fingerprint": fp, "hs": 1})
+                  WARN[:10], len(rows), {"fingerprint": fp, "hs": 1, "fetched": st.fetched})
     return {"updated": True, "code": code, "summary": f"{last[:7]}: {len(rows)} rows", "warnings": WARN[:5]}
