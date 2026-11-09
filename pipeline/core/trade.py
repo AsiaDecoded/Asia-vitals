@@ -115,10 +115,13 @@ class Store:
     """Raw responses kept between runs: raw/trade/<cc>/store.json.gz, {key: response}. Sources fetch only keys that are
     missing or recent, up to a per-run budget, so a long history is backfilled over several runs."""
 
-    def __init__(self, cc):
+    def __init__(self, cc, seconds=600):
+        import time as _t  # noqa: PLC0415
         self.path = RAW / "trade" / cc / "store.json.gz"
         self.data = json.load(gzip.open(self.path, "rt", encoding="utf-8")) if self.path.exists() else {}
         self.fetched = 0
+        self.deadline = _t.time() + seconds        # each source stops fetching after this many seconds
+        self._t = _t
 
     def save(self):
         self.path.parent.mkdir(parents=True, exist_ok=True)
@@ -129,7 +132,7 @@ class Store:
         """Stored response for key, fetching it with fn() when missing or refresh is set (and the budget allows)."""
         if key in self.data and not refresh:
             return self.data[key]
-        if budget is not None and self.fetched >= budget:
+        if (budget is not None and self.fetched >= budget) or self._t.time() > self.deadline:
             return self.data.get(key)
         self.data[key] = fn()
         self.fetched += 1
