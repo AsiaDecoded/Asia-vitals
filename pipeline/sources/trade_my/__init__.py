@@ -81,7 +81,7 @@ def hs_rows(last_year):
 def partner_year(flow, y):
     """{iso or EU: {yyyy-mm: RM}} for one flow and year."""
     out = {}
-    for extra, col in (({}, "partner_country_name"), ({"partnerCountry": ["EU"], "PGEGrouping": "ECONOMICGROUPING"}, "economic_grouping")):
+    for extra, col in (({"partnerCountry": sorted(PARTNERS)}, "partner_country_name"), ({"partnerCountry": ["EU"], "PGEGrouping": "ECONOMICGROUPING"}, "economic_grouping")):
         js = mets(flow.capitalize(), "HS2_digit", [], [y], **extra)
         cols = js.get("columns") or []
         if not js.get("items"):

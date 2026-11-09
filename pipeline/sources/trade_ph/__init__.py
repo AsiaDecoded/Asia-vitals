@@ -27,6 +27,7 @@ UA = {"User-Agent": "Mozilla/5.0 (asia-vitals data pipeline; github.com/AsiaDeco
 HS_EXP = ["85", "8419", "8470", "8471", "8472", "8473"]
 HS_IMP = ["2709", "2710"]
 BUDGET = 40
+CHUNK = 7        # countries per all-commodity query (14 is over the cell limit for the larger import tables)
 PATTERNS = [("US", r"^united states"), ("CN", r"^people'?s republic of china"), ("TW", r"taiwan"), ("KR", r"^republic of korea"),
             ("HK", r"^hong kong"), ("JP", r"^japan"), ("TH", r"^thailand"), ("SG", r"^singapore"), ("ID", r"^indonesia"),
             ("MY", r"^malaysia"), ("IN", r"^india$"), ("VN", r"^viet ?nam"),
@@ -46,12 +47,16 @@ def req(url, body=None, tries=4, raw=False):
         try:
             data = json.dumps(body).encode() if body is not None else None
             with urllib.request.urlopen(urllib.request.Request(url, data=data, headers=UA), timeout=300) as r:
-                t = r.read().decode("utf-8-sig")
+                b = r.read()
+                try:
+                    t = b.decode("utf-8-sig")
+                except UnicodeDecodeError:
+                    t = b.decode("cp1252", "replace")
                 return t if raw else json.loads(t)
         except Exception as e:  # noqa: BLE001
             err = e
             time.sleep(4 * (i + 1))
-    raise RuntimeError(f"OpenSTAT {url}: {err!r}")
+    raise RuntimeError(f"OpenSTAT {url}: {repr(err)[:200]}")
 
 
 def csv_query(path, query):
@@ -101,9 +106,9 @@ def year_aggregates(flow, year, path):
     partners, order = {}, []
     codes = list(iso_of)
     name_iso = {re.sub(r"\s+", " ", t).strip(): iso_of[c] for c, t in zip(cv["values"], cv["valueTexts"]) if c in iso_of}
-    for k in range(0, len(codes), 14):
+    for k in range(0, len(codes), CHUNK):
         hdr, rows, cols = csv_query(path, [{"code": com, "selection": {"filter": "all", "values": ["*"]}},
-                                           {"code": "Country", "selection": {"filter": "item", "values": codes[k:k + 14]}}] + base_q)
+                                           {"code": "Country", "selection": {"filter": "item", "values": codes[k:k + CHUNK]}}] + base_q)
         for x in rows:
             if len(x) < 2:
                 continue
@@ -172,7 +177,7 @@ def update(force=False, **_):
         except CheckFailed:
             raise
         except Exception as e:  # noqa: BLE001
-            WARN.append(f"{flow} {y}: {e}")
+            WARN.append(f"{flow} {y}: {str(e)[:250]}")
     st.save()
     for key, agg in st.data.items():
         flow, y = key.split(":")
