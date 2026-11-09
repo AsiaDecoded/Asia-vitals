@@ -1,10 +1,4 @@
 date,region,type,order,index,yoy
-2024-09-01,Thailand,TG,0,100.84,0.61
-2024-09-01,Bangkok and vicinity,10,1,101.02,0.67
-2024-09-01,Central,CC,2,100.79,0.66
-2024-09-01,North,NN,3,100.82,0.64
-2024-09-01,Northeast,EE,4,100.99,0.78
-2024-09-01,South,SS,5,100.36,0.12
 2024-10-01,Thailand,TG,0,100.77,0.83
 2024-10-01,Bangkok and vicinity,10,1,100.94,0.77
 2024-10-01,Central,CC,2,100.69,0.88
@@ -149,3 +143,9 @@ date,region,type,order,index,yoy
 2026-09-01,North,NN,3,102.72,2.67
 2026-09-01,Northeast,EE,4,102.66,2.72
 2026-09-01,South,SS,5,103.74,3.32
+2026-10-01,Thailand,TG,0,103.9,3.9
+2026-10-01,Bangkok and vicinity,10,1,103.98,3.6
+2026-10-01,Central,CC,2,103.88,4.21
+2026-10-01,North,NN,3,103.49,3.66
+2026-10-01,Northeast,EE,4,103.58,3.77
+2026-10-01,South,SS,5,104.76,4.5
