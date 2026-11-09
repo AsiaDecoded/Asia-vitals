@@ -3004,7 +3004,7 @@ date,year,span,code,industry,level,order,price,measure,value,unit,calculated,tab
 2025-12-01,2025,Y,gni,Gross national income,0,20,constant_2018,yoy,6.1,%,,detail
 2025-12-01,2025,Y,gni,Gross national income,0,20,current,level,32198834.0,PHP mn,,detail
 2025-12-01,2025,Y,gni,Gross national income,0,20,current,yoy,7.8,%,,detail
-2026-12-01,2026,H1,agri,"Agriculture, forestry and fishing",1,0,constant_2018,yoy,1.16,%,y,"calculated from quarterly levels, Q1-Q2 2026 on Q1-Q2 2025"
-2026-12-01,2026,H1,industry,Industry,1,1,constant_2018,yoy,-1.21,%,y,"calculated from quarterly levels, Q1-Q2 2026 on Q1-Q2 2025"
-2026-12-01,2026,H1,services,Services,1,6,constant_2018,yoy,4.53,%,y,"calculated from quarterly levels, Q1-Q2 2026 on Q1-Q2 2025"
-2026-12-01,2026,H1,gdp,Gross domestic product,0,18,constant_2018,yoy,2.57,%,y,"calculated from quarterly levels, Q1-Q2 2026 on Q1-Q2 2025"
+2026-12-01,2026,9M,agri,"Agriculture, forestry and fishing",1,0,constant_2018,yoy,-0.65,%,y,"calculated from quarterly levels, Q1-Q3 2026 on Q1-Q3 2025"
+2026-12-01,2026,9M,industry,Industry,1,1,constant_2018,yoy,-0.84,%,y,"calculated from quarterly levels, Q1-Q3 2026 on Q1-Q3 2025"
+2026-12-01,2026,9M,services,Services,1,6,constant_2018,yoy,4.28,%,y,"calculated from quarterly levels, Q1-Q3 2026 on Q1-Q3 2025"
+2026-12-01,2026,9M,gdp,Gross domestic product,0,18,constant_2018,yoy,2.45,%,y,"calculated from quarterly levels, Q1-Q3 2026 on Q1-Q3 2025"

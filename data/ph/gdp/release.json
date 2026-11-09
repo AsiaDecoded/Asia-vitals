@@ -1,50 +1,54 @@
 {
- "code": "G2026Q2",
- "label": "Q2 2026",
+ "code": "G2026Q3",
+ "label": "Q3 2026",
  "source": "ph_gdp_psa",
- "processed_at": "2026-11-03T03:59:29Z",
- "rows": 14616,
+ "processed_at": "2026-11-09T10:03:27Z",
+ "rows": 14744,
  "warnings": [],
- "fingerprint": "e1c76a8be74a513c",
- "long_rows": 17625,
+ "fingerprint": "0edb612180f29d34",
+ "long_rows": 17753,
  "stamps": {
   "2B/NA/AN/1SUM/0052B5BPRA1.px": "2026-06-23T09:29:25",
   "2B/NA/AN/1SUM/0062B5BPRA2.px": "2026-06-23T09:29:11",
   "2B/NA/AN/23ANAP/0942B5BANA1.px": "2026-06-23T10:14:34",
   "2B/NA/AN/23ANAP/0952B5BANA2.px": "2026-06-23T10:14:47",
-  "2B/NA/QT/1SUM/0052B5BPRQ1.px": "2026-08-07T16:58:02",
-  "2B/NA/QT/1SUM/0062B5BPRQ2.px": "2026-08-07T16:58:39",
-  "2B/NA/QT/1SUM/0082B5BPRQ4.px": "2026-08-07T16:59:58",
-  "2B/NA/QT/23QNAP/PRD/0982B5BQPQ1.px": "2026-08-07T17:43:32",
-  "2B/NA/QT/23QNAP/PRD/0992B5BQPQ2.px": "2026-08-07T17:43:28"
+  "2B/NA/QT/1SUM/0052B5BPRQ1.px": "2026-11-09T14:35:20",
+  "2B/NA/QT/1SUM/0062B5BPRQ2.px": "2026-11-09T14:35:20",
+  "2B/NA/QT/1SUM/0082B5BPRQ4.px": "2026-11-09T14:35:20",
+  "2B/NA/QT/23QNAP/PRD/0982B5BQPQ1.px": "2026-11-09T14:35:20",
+  "2B/NA/QT/23QNAP/PRD/0992B5BQPQ2.px": "2026-11-09T14:35:20"
  },
- "latest": 20262,
+ "latest": 20263,
  "ytd": [
   {
    "code": "gdp",
-   "span": "H1",
-   "value": 2.57
+   "span": "9M",
+   "value": 2.45
   },
   {
    "code": "agri",
-   "span": "H1",
-   "value": 1.16
+   "span": "9M",
+   "value": -0.65
   },
   {
    "code": "industry",
-   "span": "H1",
-   "value": -1.21
+   "span": "9M",
+   "value": -0.84
   },
   {
    "code": "services",
-   "span": "H1",
-   "value": 4.53
+   "span": "9M",
+   "value": 4.28
   }
  ],
  "history": [
   {
    "code": "G2026Q2",
    "processed_at": "2026-11-03T03:59:29Z"
+  },
+  {
+   "code": "G2026Q3",
+   "processed_at": "2026-11-09T10:03:27Z"
   }
  ]
 }

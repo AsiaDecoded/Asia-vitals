@@ -33399,145 +33399,287 @@ PH,mfg_gva,C32_current_share,"Other manufacturing, current, share",share,nationa
 PH,mfg_gva,C32_current_yoy,"Other manufacturing, current, yoy",yoy,national,Q,2026-03-01,8.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,industry_constant_2018_share_gdp,"Industry, constant 2018, share_gdp",share_gdp,national,Q,2026-03-01,28.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,industry_current_share_gdp,"Industry, current, share_gdp",share_gdp,national,Q,2026-03-01,27.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C_constant_2018_level,"Manufacturing, constant 2018, level",level,national,Q,2026-06-01,999198.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C_constant_2018_level,"Manufacturing, constant 2018, level",level,national,Q,2026-06-01,999249.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C_constant_2018_share,"Manufacturing, constant 2018, share",share,national,Q,2026-06-01,100.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C_constant_2018_share_gdp,"Manufacturing, constant 2018, share_gdp",share_gdp,national,Q,2026-06-01,16.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C_constant_2018_yoy,"Manufacturing, constant 2018, yoy",yoy,national,Q,2026-06-01,2.6,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C_current_level,"Manufacturing, current, level",level,national,Q,2026-06-01,998078.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C_current_level,"Manufacturing, current, level",level,national,Q,2026-06-01,1000081.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C_current_share,"Manufacturing, current, share",share,national,Q,2026-06-01,100.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C_current_share_gdp,"Manufacturing, current, share_gdp",share_gdp,national,Q,2026-06-01,13.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C_current_yoy,"Manufacturing, current, yoy",yoy,national,Q,2026-06-01,7.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C10_constant_2018_level,"Manufacture of food products, constant 2018, level",level,national,Q,2026-06-01,514185.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C10_constant_2018_share,"Manufacture of food products, constant 2018, share",share,national,Q,2026-06-01,51.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C10_constant_2018_yoy,"Manufacture of food products, constant 2018, yoy",yoy,national,Q,2026-06-01,2.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C10_current_level,"Manufacture of food products, current, level",level,national,Q,2026-06-01,533519.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C10_current_share,"Manufacture of food products, current, share",share,national,Q,2026-06-01,53.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C_current_share_gdp,"Manufacturing, current, share_gdp",share_gdp,national,Q,2026-06-01,13.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C_current_yoy,"Manufacturing, current, yoy",yoy,national,Q,2026-06-01,7.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C10_constant_2018_level,"Manufacture of food products, constant 2018, level",level,national,Q,2026-06-01,513328.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C10_constant_2018_share,"Manufacture of food products, constant 2018, share",share,national,Q,2026-06-01,51.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C10_constant_2018_yoy,"Manufacture of food products, constant 2018, yoy",yoy,national,Q,2026-06-01,1.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C10_current_level,"Manufacture of food products, current, level",level,national,Q,2026-06-01,533727.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C10_current_share,"Manufacture of food products, current, share",share,national,Q,2026-06-01,53.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C10_current_yoy,"Manufacture of food products, current, yoy",yoy,national,Q,2026-06-01,3.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C11_constant_2018_level,"Manufacture of beverages, constant 2018, level",level,national,Q,2026-06-01,33138.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C11_constant_2018_level,"Manufacture of beverages, constant 2018, level",level,national,Q,2026-06-01,32970.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C11_constant_2018_share,"Manufacture of beverages, constant 2018, share",share,national,Q,2026-06-01,3.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C11_constant_2018_yoy,"Manufacture of beverages, constant 2018, yoy",yoy,national,Q,2026-06-01,-6.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C11_current_level,"Manufacture of beverages, current, level",level,national,Q,2026-06-01,36166.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C11_constant_2018_yoy,"Manufacture of beverages, constant 2018, yoy",yoy,national,Q,2026-06-01,-6.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C11_current_level,"Manufacture of beverages, current, level",level,national,Q,2026-06-01,36095.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C11_current_share,"Manufacture of beverages, current, share",share,national,Q,2026-06-01,3.6,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C11_current_yoy,"Manufacture of beverages, current, yoy",yoy,national,Q,2026-06-01,-3.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C12_constant_2018_level,"Manufacture of tobacco products, constant 2018, level",level,national,Q,2026-06-01,3223.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C11_current_yoy,"Manufacture of beverages, current, yoy",yoy,national,Q,2026-06-01,-3.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C12_constant_2018_level,"Manufacture of tobacco products, constant 2018, level",level,national,Q,2026-06-01,3198.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C12_constant_2018_share,"Manufacture of tobacco products, constant 2018, share",share,national,Q,2026-06-01,0.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C12_constant_2018_yoy,"Manufacture of tobacco products, constant 2018, yoy",yoy,national,Q,2026-06-01,3.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C12_constant_2018_yoy,"Manufacture of tobacco products, constant 2018, yoy",yoy,national,Q,2026-06-01,2.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C12_current_level,"Manufacture of tobacco products, current, level",level,national,Q,2026-06-01,3312.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C12_current_share,"Manufacture of tobacco products, current, share",share,national,Q,2026-06-01,0.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C12_current_yoy,"Manufacture of tobacco products, current, yoy",yoy,national,Q,2026-06-01,7.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C13_constant_2018_level,"Manufacture of textiles, constant 2018, level",level,national,Q,2026-06-01,11798.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C13_constant_2018_level,"Manufacture of textiles, constant 2018, level",level,national,Q,2026-06-01,11653.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C13_constant_2018_share,"Manufacture of textiles, constant 2018, share",share,national,Q,2026-06-01,1.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C13_constant_2018_yoy,"Manufacture of textiles, constant 2018, yoy",yoy,national,Q,2026-06-01,10.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C13_current_level,"Manufacture of textiles, current, level",level,national,Q,2026-06-01,10447.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C13_constant_2018_yoy,"Manufacture of textiles, constant 2018, yoy",yoy,national,Q,2026-06-01,9.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C13_current_level,"Manufacture of textiles, current, level",level,national,Q,2026-06-01,10320.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C13_current_share,"Manufacture of textiles, current, share",share,national,Q,2026-06-01,1.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C13_current_yoy,"Manufacture of textiles, current, yoy",yoy,national,Q,2026-06-01,10.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C14_constant_2018_level,"Manufacture of wearing apparel, constant 2018, level",level,national,Q,2026-06-01,12829.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C13_current_yoy,"Manufacture of textiles, current, yoy",yoy,national,Q,2026-06-01,9.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C14_constant_2018_level,"Manufacture of wearing apparel, constant 2018, level",level,national,Q,2026-06-01,12529.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C14_constant_2018_share,"Manufacture of wearing apparel, constant 2018, share",share,national,Q,2026-06-01,1.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C14_constant_2018_yoy,"Manufacture of wearing apparel, constant 2018, yoy",yoy,national,Q,2026-06-01,11.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C14_current_level,"Manufacture of wearing apparel, current, level",level,national,Q,2026-06-01,11116.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C14_constant_2018_yoy,"Manufacture of wearing apparel, constant 2018, yoy",yoy,national,Q,2026-06-01,9.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C14_current_level,"Manufacture of wearing apparel, current, level",level,national,Q,2026-06-01,10857.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C14_current_share,"Manufacture of wearing apparel, current, share",share,national,Q,2026-06-01,1.1,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C14_current_yoy,"Manufacture of wearing apparel, current, yoy",yoy,national,Q,2026-06-01,12.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C15_constant_2018_level,"Manufacture of leather and related products, including footwear, constant 2018, level",level,national,Q,2026-06-01,1863.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C14_current_yoy,"Manufacture of wearing apparel, current, yoy",yoy,national,Q,2026-06-01,9.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C15_constant_2018_level,"Manufacture of leather and related products, including footwear, constant 2018, level",level,national,Q,2026-06-01,1843.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C15_constant_2018_share,"Manufacture of leather and related products, including footwear, constant 2018, share",share,national,Q,2026-06-01,0.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C15_constant_2018_yoy,"Manufacture of leather and related products, including footwear, constant 2018, yoy",yoy,national,Q,2026-06-01,20.1,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C15_current_level,"Manufacture of leather and related products, including footwear, current, level",level,national,Q,2026-06-01,2296.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C15_constant_2018_yoy,"Manufacture of leather and related products, including footwear, constant 2018, yoy",yoy,national,Q,2026-06-01,18.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C15_current_level,"Manufacture of leather and related products, including footwear, current, level",level,national,Q,2026-06-01,2307.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C15_current_share,"Manufacture of leather and related products, including footwear, current, share",share,national,Q,2026-06-01,0.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C15_current_yoy,"Manufacture of leather and related products, including footwear, current, yoy",yoy,national,Q,2026-06-01,21.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C16_constant_2018_level,"Manufacture of wood, bamboo, cane, rattan articles and related products, constant 2018, level",level,national,Q,2026-06-01,11335.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C15_current_yoy,"Manufacture of leather and related products, including footwear, current, yoy",yoy,national,Q,2026-06-01,22.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C16_constant_2018_level,"Manufacture of wood, bamboo, cane, rattan articles and related products, constant 2018, level",level,national,Q,2026-06-01,11475.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C16_constant_2018_share,"Manufacture of wood, bamboo, cane, rattan articles and related products, constant 2018, share",share,national,Q,2026-06-01,1.1,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C16_constant_2018_yoy,"Manufacture of wood, bamboo, cane, rattan articles and related products, constant 2018, yoy",yoy,national,Q,2026-06-01,-1.6,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C16_current_level,"Manufacture of wood, bamboo, cane, rattan articles and related products, current, level",level,national,Q,2026-06-01,6267.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C16_constant_2018_yoy,"Manufacture of wood, bamboo, cane, rattan articles and related products, constant 2018, yoy",yoy,national,Q,2026-06-01,-0.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C16_current_level,"Manufacture of wood, bamboo, cane, rattan articles and related products, current, level",level,national,Q,2026-06-01,6345.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C16_current_share,"Manufacture of wood, bamboo, cane, rattan articles and related products, current, share",share,national,Q,2026-06-01,0.6,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C16_current_yoy,"Manufacture of wood, bamboo, cane, rattan articles and related products, current, yoy",yoy,national,Q,2026-06-01,0.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C17_constant_2018_level,"Manufacture of paper and paper products, constant 2018, level",level,national,Q,2026-06-01,8539.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C16_current_yoy,"Manufacture of wood, bamboo, cane, rattan articles and related products, current, yoy",yoy,national,Q,2026-06-01,1.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C17_constant_2018_level,"Manufacture of paper and paper products, constant 2018, level",level,national,Q,2026-06-01,8840.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C17_constant_2018_share,"Manufacture of paper and paper products, constant 2018, share",share,national,Q,2026-06-01,0.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C17_constant_2018_yoy,"Manufacture of paper and paper products, constant 2018, yoy",yoy,national,Q,2026-06-01,0.6,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C17_current_level,"Manufacture of paper and paper products, current, level",level,national,Q,2026-06-01,6434.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C17_current_share,"Manufacture of paper and paper products, current, share",share,national,Q,2026-06-01,0.6,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C17_current_yoy,"Manufacture of paper and paper products, current, yoy",yoy,national,Q,2026-06-01,-0.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C18_constant_2018_level,"Printing and reproduction of recorded media, constant 2018, level",level,national,Q,2026-06-01,12577.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C17_constant_2018_yoy,"Manufacture of paper and paper products, constant 2018, yoy",yoy,national,Q,2026-06-01,4.1,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C17_current_level,"Manufacture of paper and paper products, current, level",level,national,Q,2026-06-01,6628.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C17_current_share,"Manufacture of paper and paper products, current, share",share,national,Q,2026-06-01,0.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C17_current_yoy,"Manufacture of paper and paper products, current, yoy",yoy,national,Q,2026-06-01,2.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C18_constant_2018_level,"Printing and reproduction of recorded media, constant 2018, level",level,national,Q,2026-06-01,12974.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C18_constant_2018_share,"Printing and reproduction of recorded media, constant 2018, share",share,national,Q,2026-06-01,1.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C18_constant_2018_yoy,"Printing and reproduction of recorded media, constant 2018, yoy",yoy,national,Q,2026-06-01,2.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C18_current_level,"Printing and reproduction of recorded media, current, level",level,national,Q,2026-06-01,13798.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C18_constant_2018_yoy,"Printing and reproduction of recorded media, constant 2018, yoy",yoy,national,Q,2026-06-01,5.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C18_current_level,"Printing and reproduction of recorded media, current, level",level,national,Q,2026-06-01,14212.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C18_current_share,"Printing and reproduction of recorded media, current, share",share,national,Q,2026-06-01,1.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C18_current_yoy,"Printing and reproduction of recorded media, current, yoy",yoy,national,Q,2026-06-01,3.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C19_constant_2018_level,"Manufacture of coke and refined petroleum products, constant 2018, level",level,national,Q,2026-06-01,60770.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C18_current_yoy,"Printing and reproduction of recorded media, current, yoy",yoy,national,Q,2026-06-01,6.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C19_constant_2018_level,"Manufacture of coke and refined petroleum products, constant 2018, level",level,national,Q,2026-06-01,60847.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C19_constant_2018_share,"Manufacture of coke and refined petroleum products, constant 2018, share",share,national,Q,2026-06-01,6.1,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C19_constant_2018_yoy,"Manufacture of coke and refined petroleum products, constant 2018, yoy",yoy,national,Q,2026-06-01,20.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C19_current_level,"Manufacture of coke and refined petroleum products, current, level",level,national,Q,2026-06-01,86948.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C19_constant_2018_yoy,"Manufacture of coke and refined petroleum products, constant 2018, yoy",yoy,national,Q,2026-06-01,20.6,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C19_current_level,"Manufacture of coke and refined petroleum products, current, level",level,national,Q,2026-06-01,87059.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C19_current_share,"Manufacture of coke and refined petroleum products, current, share",share,national,Q,2026-06-01,8.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C19_current_yoy,"Manufacture of coke and refined petroleum products, current, yoy",yoy,national,Q,2026-06-01,74.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C20_constant_2018_level,"Manufacture of chemical and chemical products, constant 2018, level",level,national,Q,2026-06-01,74794.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C19_current_yoy,"Manufacture of coke and refined petroleum products, current, yoy",yoy,national,Q,2026-06-01,74.6,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C20_constant_2018_level,"Manufacture of chemical and chemical products, constant 2018, level",level,national,Q,2026-06-01,74896.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C20_constant_2018_share,"Manufacture of chemical and chemical products, constant 2018, share",share,national,Q,2026-06-01,7.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C20_constant_2018_yoy,"Manufacture of chemical and chemical products, constant 2018, yoy",yoy,national,Q,2026-06-01,-15.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C20_current_level,"Manufacture of chemical and chemical products, current, level",level,national,Q,2026-06-01,61683.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C20_constant_2018_yoy,"Manufacture of chemical and chemical products, constant 2018, yoy",yoy,national,Q,2026-06-01,-15.1,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C20_current_level,"Manufacture of chemical and chemical products, current, level",level,national,Q,2026-06-01,62278.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C20_current_share,"Manufacture of chemical and chemical products, current, share",share,national,Q,2026-06-01,6.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C20_current_yoy,"Manufacture of chemical and chemical products, current, yoy",yoy,national,Q,2026-06-01,-12.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C21_constant_2018_level,"Manufacture of basic pharmaceutical products and pharmaceutical preparations, constant 2018, level",level,national,Q,2026-06-01,13376.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C20_current_yoy,"Manufacture of chemical and chemical products, current, yoy",yoy,national,Q,2026-06-01,-11.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C21_constant_2018_level,"Manufacture of basic pharmaceutical products and pharmaceutical preparations, constant 2018, level",level,national,Q,2026-06-01,13366.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C21_constant_2018_share,"Manufacture of basic pharmaceutical products and pharmaceutical preparations, constant 2018, share",share,national,Q,2026-06-01,1.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C21_constant_2018_yoy,"Manufacture of basic pharmaceutical products and pharmaceutical preparations, constant 2018, yoy",yoy,national,Q,2026-06-01,6.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C21_current_level,"Manufacture of basic pharmaceutical products and pharmaceutical preparations, current, level",level,national,Q,2026-06-01,8029.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C21_constant_2018_yoy,"Manufacture of basic pharmaceutical products and pharmaceutical preparations, constant 2018, yoy",yoy,national,Q,2026-06-01,6.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C21_current_level,"Manufacture of basic pharmaceutical products and pharmaceutical preparations, current, level",level,national,Q,2026-06-01,8042.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C21_current_share,"Manufacture of basic pharmaceutical products and pharmaceutical preparations, current, share",share,national,Q,2026-06-01,0.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C21_current_yoy,"Manufacture of basic pharmaceutical products and pharmaceutical preparations, current, yoy",yoy,national,Q,2026-06-01,8.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C22_constant_2018_level,"Manufacture of rubber and plastic products, constant 2018, level",level,national,Q,2026-06-01,10052.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C21_current_yoy,"Manufacture of basic pharmaceutical products and pharmaceutical preparations, current, yoy",yoy,national,Q,2026-06-01,8.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C22_constant_2018_level,"Manufacture of rubber and plastic products, constant 2018, level",level,national,Q,2026-06-01,9925.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C22_constant_2018_share,"Manufacture of rubber and plastic products, constant 2018, share",share,national,Q,2026-06-01,1.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C22_constant_2018_yoy,"Manufacture of rubber and plastic products, constant 2018, yoy",yoy,national,Q,2026-06-01,5.1,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C22_current_level,"Manufacture of rubber and plastic products, current, level",level,national,Q,2026-06-01,9654.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C22_constant_2018_yoy,"Manufacture of rubber and plastic products, constant 2018, yoy",yoy,national,Q,2026-06-01,3.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C22_current_level,"Manufacture of rubber and plastic products, current, level",level,national,Q,2026-06-01,9579.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C22_current_share,"Manufacture of rubber and plastic products, current, share",share,national,Q,2026-06-01,1.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C22_current_yoy,"Manufacture of rubber and plastic products, current, yoy",yoy,national,Q,2026-06-01,5.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C23_constant_2018_level,"Manufacture of other non-metallic mineral products, constant 2018, level",level,national,Q,2026-06-01,19748.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C22_current_yoy,"Manufacture of rubber and plastic products, current, yoy",yoy,national,Q,2026-06-01,4.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C23_constant_2018_level,"Manufacture of other non-metallic mineral products, constant 2018, level",level,national,Q,2026-06-01,19738.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C23_constant_2018_share,"Manufacture of other non-metallic mineral products, constant 2018, share",share,national,Q,2026-06-01,2.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C23_constant_2018_yoy,"Manufacture of other non-metallic mineral products, constant 2018, yoy",yoy,national,Q,2026-06-01,-1.1,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C23_current_level,"Manufacture of other non-metallic mineral products, current, level",level,national,Q,2026-06-01,18398.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C23_constant_2018_yoy,"Manufacture of other non-metallic mineral products, constant 2018, yoy",yoy,national,Q,2026-06-01,-1.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C23_current_level,"Manufacture of other non-metallic mineral products, current, level",level,national,Q,2026-06-01,18405.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C23_current_share,"Manufacture of other non-metallic mineral products, current, share",share,national,Q,2026-06-01,1.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C23_current_yoy,"Manufacture of other non-metallic mineral products, current, yoy",yoy,national,Q,2026-06-01,1.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C24_constant_2018_level,"Manufacture of basic metals, constant 2018, level",level,national,Q,2026-06-01,14441.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C24_constant_2018_share,"Manufacture of basic metals, constant 2018, share",share,national,Q,2026-06-01,1.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C24_constant_2018_yoy,"Manufacture of basic metals, constant 2018, yoy",yoy,national,Q,2026-06-01,17.1,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C24_current_level,"Manufacture of basic metals, current, level",level,national,Q,2026-06-01,7715.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C24_constant_2018_level,"Manufacture of basic metals, constant 2018, level",level,national,Q,2026-06-01,14513.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C24_constant_2018_share,"Manufacture of basic metals, constant 2018, share",share,national,Q,2026-06-01,1.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C24_constant_2018_yoy,"Manufacture of basic metals, constant 2018, yoy",yoy,national,Q,2026-06-01,17.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C24_current_level,"Manufacture of basic metals, current, level",level,national,Q,2026-06-01,7808.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C24_current_share,"Manufacture of basic metals, current, share",share,national,Q,2026-06-01,0.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C24_current_yoy,"Manufacture of basic metals, current, yoy",yoy,national,Q,2026-06-01,22.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C25_constant_2018_level,"Manufacture of fabricated metal products, except machinery and equipment, constant 2018, level",level,national,Q,2026-06-01,11265.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C25_constant_2018_share,"Manufacture of fabricated metal products, except machinery and equipment, constant 2018, share",share,national,Q,2026-06-01,1.1,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C25_constant_2018_yoy,"Manufacture of fabricated metal products, except machinery and equipment, constant 2018, yoy",yoy,national,Q,2026-06-01,-11.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C25_current_level,"Manufacture of fabricated metal products, except machinery and equipment, current, level",level,national,Q,2026-06-01,8995.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C24_current_yoy,"Manufacture of basic metals, current, yoy",yoy,national,Q,2026-06-01,23.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C25_constant_2018_level,"Manufacture of fabricated metal products, except machinery and equipment, constant 2018, level",level,national,Q,2026-06-01,11731.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C25_constant_2018_share,"Manufacture of fabricated metal products, except machinery and equipment, constant 2018, share",share,national,Q,2026-06-01,1.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C25_constant_2018_yoy,"Manufacture of fabricated metal products, except machinery and equipment, constant 2018, yoy",yoy,national,Q,2026-06-01,-7.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C25_current_level,"Manufacture of fabricated metal products, except machinery and equipment, current, level",level,national,Q,2026-06-01,9367.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C25_current_share,"Manufacture of fabricated metal products, except machinery and equipment, current, share",share,national,Q,2026-06-01,0.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C25_current_yoy,"Manufacture of fabricated metal products, except machinery and equipment, current, yoy",yoy,national,Q,2026-06-01,-10.1,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C26_constant_2018_level,"Manufacture of computer, electronic and optical products, constant 2018, level",level,national,Q,2026-06-01,114049.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C25_current_yoy,"Manufacture of fabricated metal products, except machinery and equipment, current, yoy",yoy,national,Q,2026-06-01,-6.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C26_constant_2018_level,"Manufacture of computer, electronic and optical products, constant 2018, level",level,national,Q,2026-06-01,114381.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C26_constant_2018_share,"Manufacture of computer, electronic and optical products, constant 2018, share",share,national,Q,2026-06-01,11.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C26_constant_2018_yoy,"Manufacture of computer, electronic and optical products, constant 2018, yoy",yoy,national,Q,2026-06-01,15.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C26_current_level,"Manufacture of computer, electronic and optical products, current, level",level,national,Q,2026-06-01,115666.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C26_constant_2018_yoy,"Manufacture of computer, electronic and optical products, constant 2018, yoy",yoy,national,Q,2026-06-01,15.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C26_current_level,"Manufacture of computer, electronic and optical products, current, level",level,national,Q,2026-06-01,116212.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C26_current_share,"Manufacture of computer, electronic and optical products, current, share",share,national,Q,2026-06-01,11.6,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C26_current_yoy,"Manufacture of computer, electronic and optical products, current, yoy",yoy,national,Q,2026-06-01,21.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C27_constant_2018_level,"Manufacture of electrical equipment, constant 2018, level",level,national,Q,2026-06-01,22723.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C26_current_yoy,"Manufacture of computer, electronic and optical products, current, yoy",yoy,national,Q,2026-06-01,22.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C27_constant_2018_level,"Manufacture of electrical equipment, constant 2018, level",level,national,Q,2026-06-01,22761.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C27_constant_2018_share,"Manufacture of electrical equipment, constant 2018, share",share,national,Q,2026-06-01,2.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C27_constant_2018_yoy,"Manufacture of electrical equipment, constant 2018, yoy",yoy,national,Q,2026-06-01,1.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C27_current_level,"Manufacture of electrical equipment, current, level",level,national,Q,2026-06-01,16863.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C27_constant_2018_yoy,"Manufacture of electrical equipment, constant 2018, yoy",yoy,national,Q,2026-06-01,2.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C27_current_level,"Manufacture of electrical equipment, current, level",level,national,Q,2026-06-01,16942.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C27_current_share,"Manufacture of electrical equipment, current, share",share,national,Q,2026-06-01,1.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C27_current_yoy,"Manufacture of electrical equipment, current, yoy",yoy,national,Q,2026-06-01,0.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C28_constant_2018_level,"Manufacture of machinery and equipment except electrical, constant 2018, level",level,national,Q,2026-06-01,3966.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C27_current_yoy,"Manufacture of electrical equipment, current, yoy",yoy,national,Q,2026-06-01,1.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C28_constant_2018_level,"Manufacture of machinery and equipment except electrical, constant 2018, level",level,national,Q,2026-06-01,3923.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C28_constant_2018_share,"Manufacture of machinery and equipment except electrical, constant 2018, share",share,national,Q,2026-06-01,0.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C28_constant_2018_yoy,"Manufacture of machinery and equipment except electrical, constant 2018, yoy",yoy,national,Q,2026-06-01,-22.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C28_current_level,"Manufacture of machinery and equipment except electrical, current, level",level,national,Q,2026-06-01,3770.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C28_constant_2018_yoy,"Manufacture of machinery and equipment except electrical, constant 2018, yoy",yoy,national,Q,2026-06-01,-22.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C28_current_level,"Manufacture of machinery and equipment except electrical, current, level",level,national,Q,2026-06-01,3730.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C28_current_share,"Manufacture of machinery and equipment except electrical, current, share",share,national,Q,2026-06-01,0.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C28_current_yoy,"Manufacture of machinery and equipment except electrical, current, yoy",yoy,national,Q,2026-06-01,-19.6,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C29-C30_constant_2018_level,"Manufacture of transport equipment, constant 2018, level",level,national,Q,2026-06-01,13490.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C28_current_yoy,"Manufacture of machinery and equipment except electrical, current, yoy",yoy,national,Q,2026-06-01,-20.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C29-C30_constant_2018_level,"Manufacture of transport equipment, constant 2018, level",level,national,Q,2026-06-01,13554.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C29-C30_constant_2018_share,"Manufacture of transport equipment, constant 2018, share",share,national,Q,2026-06-01,1.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C29-C30_constant_2018_yoy,"Manufacture of transport equipment, constant 2018, yoy",yoy,national,Q,2026-06-01,-1.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C29-C30_current_level,"Manufacture of transport equipment, current, level",level,national,Q,2026-06-01,10340.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C29-C30_constant_2018_yoy,"Manufacture of transport equipment, constant 2018, yoy",yoy,national,Q,2026-06-01,-1.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C29-C30_current_level,"Manufacture of transport equipment, current, level",level,national,Q,2026-06-01,10405.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C29-C30_current_share,"Manufacture of transport equipment, current, share",share,national,Q,2026-06-01,1.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C29-C30_current_yoy,"Manufacture of transport equipment, current, yoy",yoy,national,Q,2026-06-01,0.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C29-C30_current_yoy,"Manufacture of transport equipment, current, yoy",yoy,national,Q,2026-06-01,1.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C31_constant_2018_level,"Manufacture of furniture, constant 2018, level",level,national,Q,2026-06-01,4665.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C31_constant_2018_share,"Manufacture of furniture, constant 2018, share",share,national,Q,2026-06-01,0.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C31_constant_2018_yoy,"Manufacture of furniture, constant 2018, yoy",yoy,national,Q,2026-06-01,22.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C31_current_level,"Manufacture of furniture, current, level",level,national,Q,2026-06-01,4551.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C31_current_level,"Manufacture of furniture, current, level",level,national,Q,2026-06-01,4558.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C31_current_share,"Manufacture of furniture, current, share",share,national,Q,2026-06-01,0.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C31_current_yoy,"Manufacture of furniture, current, yoy",yoy,national,Q,2026-06-01,24.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C32_constant_2018_level,"Other manufacturing, constant 2018, level",level,national,Q,2026-06-01,26372.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C31_current_yoy,"Manufacture of furniture, current, yoy",yoy,national,Q,2026-06-01,24.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C32_constant_2018_level,"Other manufacturing, constant 2018, level",level,national,Q,2026-06-01,26138.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C32_constant_2018_share,"Other manufacturing, constant 2018, share",share,national,Q,2026-06-01,2.6,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C32_constant_2018_yoy,"Other manufacturing, constant 2018, yoy",yoy,national,Q,2026-06-01,1.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C32_current_level,"Other manufacturing, current, level",level,national,Q,2026-06-01,22109.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C32_constant_2018_yoy,"Other manufacturing, constant 2018, yoy",yoy,national,Q,2026-06-01,0.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C32_current_level,"Other manufacturing, current, level",level,national,Q,2026-06-01,21895.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,C32_current_share,"Other manufacturing, current, share",share,national,Q,2026-06-01,2.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,C32_current_yoy,"Other manufacturing, current, yoy",yoy,national,Q,2026-06-01,4.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C32_current_yoy,"Other manufacturing, current, yoy",yoy,national,Q,2026-06-01,3.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
 PH,mfg_gva,industry_constant_2018_share_gdp,"Industry, constant 2018, share_gdp",share_gdp,national,Q,2026-06-01,27.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
-PH,mfg_gva,industry_current_share_gdp,"Industry, current, share_gdp",share_gdp,national,Q,2026-06-01,27.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,industry_current_share_gdp,"Industry, current, share_gdp",share_gdp,national,Q,2026-06-01,27.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C_constant_2018_level,"Manufacturing, constant 2018, level",level,national,Q,2026-09-01,815277.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C_constant_2018_share,"Manufacturing, constant 2018, share",share,national,Q,2026-09-01,100.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C_constant_2018_share_gdp,"Manufacturing, constant 2018, share_gdp",share_gdp,national,Q,2026-09-01,14.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C_constant_2018_yoy,"Manufacturing, constant 2018, yoy",yoy,national,Q,2026-09-01,0.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C_current_level,"Manufacturing, current, level",level,national,Q,2026-09-01,854349.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C_current_share,"Manufacturing, current, share",share,national,Q,2026-09-01,100.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C_current_share_gdp,"Manufacturing, current, share_gdp",share_gdp,national,Q,2026-09-01,12.1,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C_current_yoy,"Manufacturing, current, yoy",yoy,national,Q,2026-09-01,4.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C10_constant_2018_level,"Manufacture of food products, constant 2018, level",level,national,Q,2026-09-01,336415.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C10_constant_2018_share,"Manufacture of food products, constant 2018, share",share,national,Q,2026-09-01,41.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C10_constant_2018_yoy,"Manufacture of food products, constant 2018, yoy",yoy,national,Q,2026-09-01,-0.1,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C10_current_level,"Manufacture of food products, current, level",level,national,Q,2026-09-01,359178.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C10_current_share,"Manufacture of food products, current, share",share,national,Q,2026-09-01,42.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C10_current_yoy,"Manufacture of food products, current, yoy",yoy,national,Q,2026-09-01,1.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C11_constant_2018_level,"Manufacture of beverages, constant 2018, level",level,national,Q,2026-09-01,46779.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C11_constant_2018_share,"Manufacture of beverages, constant 2018, share",share,national,Q,2026-09-01,5.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C11_constant_2018_yoy,"Manufacture of beverages, constant 2018, yoy",yoy,national,Q,2026-09-01,-2.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C11_current_level,"Manufacture of beverages, current, level",level,national,Q,2026-09-01,64598.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C11_current_share,"Manufacture of beverages, current, share",share,national,Q,2026-09-01,7.6,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C11_current_yoy,"Manufacture of beverages, current, yoy",yoy,national,Q,2026-09-01,0.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C12_constant_2018_level,"Manufacture of tobacco products, constant 2018, level",level,national,Q,2026-09-01,6317.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C12_constant_2018_share,"Manufacture of tobacco products, constant 2018, share",share,national,Q,2026-09-01,0.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C12_constant_2018_yoy,"Manufacture of tobacco products, constant 2018, yoy",yoy,national,Q,2026-09-01,-4.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C12_current_level,"Manufacture of tobacco products, current, level",level,national,Q,2026-09-01,6632.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C12_current_share,"Manufacture of tobacco products, current, share",share,national,Q,2026-09-01,0.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C12_current_yoy,"Manufacture of tobacco products, current, yoy",yoy,national,Q,2026-09-01,1.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C13_constant_2018_level,"Manufacture of textiles, constant 2018, level",level,national,Q,2026-09-01,10737.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C13_constant_2018_share,"Manufacture of textiles, constant 2018, share",share,national,Q,2026-09-01,1.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C13_constant_2018_yoy,"Manufacture of textiles, constant 2018, yoy",yoy,national,Q,2026-09-01,2.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C13_current_level,"Manufacture of textiles, current, level",level,national,Q,2026-09-01,12252.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C13_current_share,"Manufacture of textiles, current, share",share,national,Q,2026-09-01,1.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C13_current_yoy,"Manufacture of textiles, current, yoy",yoy,national,Q,2026-09-01,2.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C14_constant_2018_level,"Manufacture of wearing apparel, constant 2018, level",level,national,Q,2026-09-01,17403.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C14_constant_2018_share,"Manufacture of wearing apparel, constant 2018, share",share,national,Q,2026-09-01,2.1,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C14_constant_2018_yoy,"Manufacture of wearing apparel, constant 2018, yoy",yoy,national,Q,2026-09-01,18.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C14_current_level,"Manufacture of wearing apparel, current, level",level,national,Q,2026-09-01,14954.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C14_current_share,"Manufacture of wearing apparel, current, share",share,national,Q,2026-09-01,1.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C14_current_yoy,"Manufacture of wearing apparel, current, yoy",yoy,national,Q,2026-09-01,18.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C15_constant_2018_level,"Manufacture of leather and related products, including footwear, constant 2018, level",level,national,Q,2026-09-01,2578.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C15_constant_2018_share,"Manufacture of leather and related products, including footwear, constant 2018, share",share,national,Q,2026-09-01,0.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C15_constant_2018_yoy,"Manufacture of leather and related products, including footwear, constant 2018, yoy",yoy,national,Q,2026-09-01,30.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C15_current_level,"Manufacture of leather and related products, including footwear, current, level",level,national,Q,2026-09-01,3197.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C15_current_share,"Manufacture of leather and related products, including footwear, current, share",share,national,Q,2026-09-01,0.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C15_current_yoy,"Manufacture of leather and related products, including footwear, current, yoy",yoy,national,Q,2026-09-01,37.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C16_constant_2018_level,"Manufacture of wood, bamboo, cane, rattan articles and related products, constant 2018, level",level,national,Q,2026-09-01,6804.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C16_constant_2018_share,"Manufacture of wood, bamboo, cane, rattan articles and related products, constant 2018, share",share,national,Q,2026-09-01,0.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C16_constant_2018_yoy,"Manufacture of wood, bamboo, cane, rattan articles and related products, constant 2018, yoy",yoy,national,Q,2026-09-01,12.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C16_current_level,"Manufacture of wood, bamboo, cane, rattan articles and related products, current, level",level,national,Q,2026-09-01,4584.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C16_current_share,"Manufacture of wood, bamboo, cane, rattan articles and related products, current, share",share,national,Q,2026-09-01,0.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C16_current_yoy,"Manufacture of wood, bamboo, cane, rattan articles and related products, current, yoy",yoy,national,Q,2026-09-01,14.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C17_constant_2018_level,"Manufacture of paper and paper products, constant 2018, level",level,national,Q,2026-09-01,11711.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C17_constant_2018_share,"Manufacture of paper and paper products, constant 2018, share",share,national,Q,2026-09-01,1.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C17_constant_2018_yoy,"Manufacture of paper and paper products, constant 2018, yoy",yoy,national,Q,2026-09-01,6.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C17_current_level,"Manufacture of paper and paper products, current, level",level,national,Q,2026-09-01,9711.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C17_current_share,"Manufacture of paper and paper products, current, share",share,national,Q,2026-09-01,1.1,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C17_current_yoy,"Manufacture of paper and paper products, current, yoy",yoy,national,Q,2026-09-01,5.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C18_constant_2018_level,"Printing and reproduction of recorded media, constant 2018, level",level,national,Q,2026-09-01,3469.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C18_constant_2018_share,"Printing and reproduction of recorded media, constant 2018, share",share,national,Q,2026-09-01,0.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C18_constant_2018_yoy,"Printing and reproduction of recorded media, constant 2018, yoy",yoy,national,Q,2026-09-01,1.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C18_current_level,"Printing and reproduction of recorded media, current, level",level,national,Q,2026-09-01,3869.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C18_current_share,"Printing and reproduction of recorded media, current, share",share,national,Q,2026-09-01,0.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C18_current_yoy,"Printing and reproduction of recorded media, current, yoy",yoy,national,Q,2026-09-01,2.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C19_constant_2018_level,"Manufacture of coke and refined petroleum products, constant 2018, level",level,national,Q,2026-09-01,25422.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C19_constant_2018_share,"Manufacture of coke and refined petroleum products, constant 2018, share",share,national,Q,2026-09-01,3.1,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C19_constant_2018_yoy,"Manufacture of coke and refined petroleum products, constant 2018, yoy",yoy,national,Q,2026-09-01,12.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C19_current_level,"Manufacture of coke and refined petroleum products, current, level",level,national,Q,2026-09-01,16795.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C19_current_share,"Manufacture of coke and refined petroleum products, current, share",share,national,Q,2026-09-01,2.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C19_current_yoy,"Manufacture of coke and refined petroleum products, current, yoy",yoy,national,Q,2026-09-01,37.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C20_constant_2018_level,"Manufacture of chemical and chemical products, constant 2018, level",level,national,Q,2026-09-01,87309.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C20_constant_2018_share,"Manufacture of chemical and chemical products, constant 2018, share",share,national,Q,2026-09-01,10.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C20_constant_2018_yoy,"Manufacture of chemical and chemical products, constant 2018, yoy",yoy,national,Q,2026-09-01,-13.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C20_current_level,"Manufacture of chemical and chemical products, current, level",level,national,Q,2026-09-01,88478.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C20_current_share,"Manufacture of chemical and chemical products, current, share",share,national,Q,2026-09-01,10.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C20_current_yoy,"Manufacture of chemical and chemical products, current, yoy",yoy,national,Q,2026-09-01,-8.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C21_constant_2018_level,"Manufacture of basic pharmaceutical products and pharmaceutical preparations, constant 2018, level",level,national,Q,2026-09-01,17673.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C21_constant_2018_share,"Manufacture of basic pharmaceutical products and pharmaceutical preparations, constant 2018, share",share,national,Q,2026-09-01,2.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C21_constant_2018_yoy,"Manufacture of basic pharmaceutical products and pharmaceutical preparations, constant 2018, yoy",yoy,national,Q,2026-09-01,-4.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C21_current_level,"Manufacture of basic pharmaceutical products and pharmaceutical preparations, current, level",level,national,Q,2026-09-01,11274.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C21_current_share,"Manufacture of basic pharmaceutical products and pharmaceutical preparations, current, share",share,national,Q,2026-09-01,1.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C21_current_yoy,"Manufacture of basic pharmaceutical products and pharmaceutical preparations, current, yoy",yoy,national,Q,2026-09-01,-2.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C22_constant_2018_level,"Manufacture of rubber and plastic products, constant 2018, level",level,national,Q,2026-09-01,11841.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C22_constant_2018_share,"Manufacture of rubber and plastic products, constant 2018, share",share,national,Q,2026-09-01,1.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C22_constant_2018_yoy,"Manufacture of rubber and plastic products, constant 2018, yoy",yoy,national,Q,2026-09-01,3.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C22_current_level,"Manufacture of rubber and plastic products, current, level",level,national,Q,2026-09-01,13851.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C22_current_share,"Manufacture of rubber and plastic products, current, share",share,national,Q,2026-09-01,1.6,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C22_current_yoy,"Manufacture of rubber and plastic products, current, yoy",yoy,national,Q,2026-09-01,4.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C23_constant_2018_level,"Manufacture of other non-metallic mineral products, constant 2018, level",level,national,Q,2026-09-01,24220.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C23_constant_2018_share,"Manufacture of other non-metallic mineral products, constant 2018, share",share,national,Q,2026-09-01,3.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C23_constant_2018_yoy,"Manufacture of other non-metallic mineral products, constant 2018, yoy",yoy,national,Q,2026-09-01,-7.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C23_current_level,"Manufacture of other non-metallic mineral products, current, level",level,national,Q,2026-09-01,24465.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C23_current_share,"Manufacture of other non-metallic mineral products, current, share",share,national,Q,2026-09-01,2.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C23_current_yoy,"Manufacture of other non-metallic mineral products, current, yoy",yoy,national,Q,2026-09-01,-4.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C24_constant_2018_level,"Manufacture of basic metals, constant 2018, level",level,national,Q,2026-09-01,26414.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C24_constant_2018_share,"Manufacture of basic metals, constant 2018, share",share,national,Q,2026-09-01,3.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C24_constant_2018_yoy,"Manufacture of basic metals, constant 2018, yoy",yoy,national,Q,2026-09-01,19.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C24_current_level,"Manufacture of basic metals, current, level",level,national,Q,2026-09-01,25034.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C24_current_share,"Manufacture of basic metals, current, share",share,national,Q,2026-09-01,2.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C24_current_yoy,"Manufacture of basic metals, current, yoy",yoy,national,Q,2026-09-01,25.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C25_constant_2018_level,"Manufacture of fabricated metal products, except machinery and equipment, constant 2018, level",level,national,Q,2026-09-01,4068.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C25_constant_2018_share,"Manufacture of fabricated metal products, except machinery and equipment, constant 2018, share",share,national,Q,2026-09-01,0.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C25_constant_2018_yoy,"Manufacture of fabricated metal products, except machinery and equipment, constant 2018, yoy",yoy,national,Q,2026-09-01,-6.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C25_current_level,"Manufacture of fabricated metal products, except machinery and equipment, current, level",level,national,Q,2026-09-01,3824.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C25_current_share,"Manufacture of fabricated metal products, except machinery and equipment, current, share",share,national,Q,2026-09-01,0.4,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C25_current_yoy,"Manufacture of fabricated metal products, except machinery and equipment, current, yoy",yoy,national,Q,2026-09-01,-4.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C26_constant_2018_level,"Manufacture of computer, electronic and optical products, constant 2018, level",level,national,Q,2026-09-01,109676.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C26_constant_2018_share,"Manufacture of computer, electronic and optical products, constant 2018, share",share,national,Q,2026-09-01,13.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C26_constant_2018_yoy,"Manufacture of computer, electronic and optical products, constant 2018, yoy",yoy,national,Q,2026-09-01,13.1,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C26_current_level,"Manufacture of computer, electronic and optical products, current, level",level,national,Q,2026-09-01,134016.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C26_current_share,"Manufacture of computer, electronic and optical products, current, share",share,national,Q,2026-09-01,15.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C26_current_yoy,"Manufacture of computer, electronic and optical products, current, yoy",yoy,national,Q,2026-09-01,19.6,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C27_constant_2018_level,"Manufacture of electrical equipment, constant 2018, level",level,national,Q,2026-09-01,11963.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C27_constant_2018_share,"Manufacture of electrical equipment, constant 2018, share",share,national,Q,2026-09-01,1.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C27_constant_2018_yoy,"Manufacture of electrical equipment, constant 2018, yoy",yoy,national,Q,2026-09-01,2.8,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C27_current_level,"Manufacture of electrical equipment, current, level",level,national,Q,2026-09-01,10845.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C27_current_share,"Manufacture of electrical equipment, current, share",share,national,Q,2026-09-01,1.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C27_current_yoy,"Manufacture of electrical equipment, current, yoy",yoy,national,Q,2026-09-01,2.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C28_constant_2018_level,"Manufacture of machinery and equipment except electrical, constant 2018, level",level,national,Q,2026-09-01,10115.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C28_constant_2018_share,"Manufacture of machinery and equipment except electrical, constant 2018, share",share,national,Q,2026-09-01,1.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C28_constant_2018_yoy,"Manufacture of machinery and equipment except electrical, constant 2018, yoy",yoy,national,Q,2026-09-01,-22.1,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C28_current_level,"Manufacture of machinery and equipment except electrical, current, level",level,national,Q,2026-09-01,8021.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C28_current_share,"Manufacture of machinery and equipment except electrical, current, share",share,national,Q,2026-09-01,0.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C28_current_yoy,"Manufacture of machinery and equipment except electrical, current, yoy",yoy,national,Q,2026-09-01,-19.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C29-C30_constant_2018_level,"Manufacture of transport equipment, constant 2018, level",level,national,Q,2026-09-01,22196.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C29-C30_constant_2018_share,"Manufacture of transport equipment, constant 2018, share",share,national,Q,2026-09-01,2.7,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C29-C30_constant_2018_yoy,"Manufacture of transport equipment, constant 2018, yoy",yoy,national,Q,2026-09-01,5.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C29-C30_current_level,"Manufacture of transport equipment, current, level",level,national,Q,2026-09-01,18391.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C29-C30_current_share,"Manufacture of transport equipment, current, share",share,national,Q,2026-09-01,2.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C29-C30_current_yoy,"Manufacture of transport equipment, current, yoy",yoy,national,Q,2026-09-01,9.0,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C31_constant_2018_level,"Manufacture of furniture, constant 2018, level",level,national,Q,2026-09-01,4201.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C31_constant_2018_share,"Manufacture of furniture, constant 2018, share",share,national,Q,2026-09-01,0.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C31_constant_2018_yoy,"Manufacture of furniture, constant 2018, yoy",yoy,national,Q,2026-09-01,-0.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C31_current_level,"Manufacture of furniture, current, level",level,national,Q,2026-09-01,3845.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C31_current_share,"Manufacture of furniture, current, share",share,national,Q,2026-09-01,0.5,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C31_current_yoy,"Manufacture of furniture, current, yoy",yoy,national,Q,2026-09-01,1.6,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C32_constant_2018_level,"Other manufacturing, constant 2018, level",level,national,Q,2026-09-01,17968.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C32_constant_2018_share,"Other manufacturing, constant 2018, share",share,national,Q,2026-09-01,2.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C32_constant_2018_yoy,"Other manufacturing, constant 2018, yoy",yoy,national,Q,2026-09-01,-1.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C32_current_level,"Other manufacturing, current, level",level,national,Q,2026-09-01,16535.0,PHP mn,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C32_current_share,"Other manufacturing, current, share",share,national,Q,2026-09-01,1.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,C32_current_yoy,"Other manufacturing, current, yoy",yoy,national,Q,2026-09-01,1.9,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,industry_constant_2018_share_gdp,"Industry, constant 2018, share_gdp",share_gdp,national,Q,2026-09-01,25.3,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07
+PH,mfg_gva,industry_current_share_gdp,"Industry, current, share_gdp",share_gdp,national,Q,2026-09-01,23.2,%,"PSA, National Accounts of the Philippines (OpenSTAT)",M2026-07

@@ -2,7 +2,7 @@
  "code": "M2026-07",
  "label": "Jul 2026",
  "source": "ph_mfg_psa",
- "processed_at": "2026-11-03T03:59:52Z",
+ "processed_at": "2026-11-09T10:03:46Z",
  "rows": 8568,
  "warnings": [
   "total VoPI y/y 2022-06 left blank by PSA (known)",
@@ -19,11 +19,11 @@
   "... 24 VoPI y/y vs index differences in all"
  ],
  "fingerprint": "c1d34766c84cdec1",
- "long_rows": 33542,
+ "long_rows": 33684,
  "stamps": {
-  "2B/NA/QT/10MFG/0462B5BMFQ1.px": "2026-08-07T18:59:17",
-  "2B/NA/QT/10MFG/0472B5BMFQ2.px": "2026-08-07T18:59:47",
-  "2B/NA/QT/10MFG/0492B5BMFQ4.px": "2026-08-07T19:00:46",
+  "2B/NA/QT/10MFG/0462B5BMFQ1.px": "2026-11-09T14:35:20",
+  "2B/NA/QT/10MFG/0472B5BMFQ2.px": "2026-11-09T14:35:20",
+  "2B/NA/QT/10MFG/0492B5BMFQ4.px": "2026-11-09T14:35:20",
   "2G/MNFG/MISSI/2018/0012G4CMCU2.px": "2026-09-09T09:11:24",
   "2G/MNFG/MISSI/2018/0032G4CMPO2.px": "2026-09-09T09:22:30",
   "2G/MNFG/MISSI/BAC/0012G4CMPO1.px": "2026-06-24T11:27:25"
@@ -32,7 +32,7 @@
  "history": [
   {
    "code": "M2026-07",
-   "processed_at": "2026-11-03T03:59:52Z"
+   "processed_at": "2026-11-09T10:03:46Z"
   }
  ]
 }

@@ -14487,131 +14487,259 @@ date,period,code,industry,level,order,price,measure,value,unit,table
 2026-03-01,2026-Q1,gni,Gross national income,0,20,current,yoy,5.4,%,detail
 2026-03-01,2026-Q1,gdp_share_gni,"GDP, % of GNI",0,21,constant_2018,share,87.3,%,detail
 2026-03-01,2026-Q1,gdp_share_gni,"GDP, % of GNI",0,21,current,share,87.3,%,detail
-2026-06-01,2026-Q2,agri,"Agriculture, forestry and fishing",1,0,constant_2018,level,448278.0,PHP mn,detail
+2026-06-01,2026-Q2,agri,"Agriculture, forestry and fishing",1,0,constant_2018,level,449266.0,PHP mn,detail
 2026-06-01,2026-Q2,agri,"Agriculture, forestry and fishing",1,0,constant_2018,share,7.5,%,detail
-2026-06-01,2026-Q2,agri,"Agriculture, forestry and fishing",1,0,constant_2018,yoy,2.7,%,detail
-2026-06-01,2026-Q2,agri,"Agriculture, forestry and fishing",1,0,current,level,573757.0,PHP mn,detail
+2026-06-01,2026-Q2,agri,"Agriculture, forestry and fishing",1,0,constant_2018,yoy,2.9,%,detail
+2026-06-01,2026-Q2,agri,"Agriculture, forestry and fishing",1,0,current,level,574989.0,PHP mn,detail
 2026-06-01,2026-Q2,agri,"Agriculture, forestry and fishing",1,0,current,share,7.7,%,detail
-2026-06-01,2026-Q2,agri,"Agriculture, forestry and fishing",1,0,current,yoy,1.8,%,detail
-2026-06-01,2026-Q2,industry,Industry,1,1,constant_2018,level,1668522.0,PHP mn,detail
+2026-06-01,2026-Q2,agri,"Agriculture, forestry and fishing",1,0,current,yoy,2.0,%,detail
+2026-06-01,2026-Q2,industry,Industry,1,1,constant_2018,level,1668712.0,PHP mn,detail
 2026-06-01,2026-Q2,industry,Industry,1,1,constant_2018,share,27.9,%,detail
 2026-06-01,2026-Q2,industry,Industry,1,1,constant_2018,yoy,-2.4,%,detail
-2026-06-01,2026-Q2,industry,Industry,1,1,current,level,2039325.0,PHP mn,detail
-2026-06-01,2026-Q2,industry,Industry,1,1,current,share,27.3,%,detail
+2026-06-01,2026-Q2,industry,Industry,1,1,current,level,2038554.0,PHP mn,detail
+2026-06-01,2026-Q2,industry,Industry,1,1,current,share,27.2,%,detail
 2026-06-01,2026-Q2,industry,Industry,1,1,current,yoy,3.0,%,detail
-2026-06-01,2026-Q2,mining,Mining and quarrying,2,2,constant_2018,level,39915.0,PHP mn,detail
+2026-06-01,2026-Q2,mining,Mining and quarrying,2,2,constant_2018,level,39984.0,PHP mn,detail
 2026-06-01,2026-Q2,mining,Mining and quarrying,2,2,constant_2018,share,0.7,%,detail
-2026-06-01,2026-Q2,mining,Mining and quarrying,2,2,constant_2018,yoy,-9.8,%,detail
-2026-06-01,2026-Q2,mining,Mining and quarrying,2,2,current,level,86415.0,PHP mn,detail
-2026-06-01,2026-Q2,mining,Mining and quarrying,2,2,current,share,1.2,%,detail
-2026-06-01,2026-Q2,mining,Mining and quarrying,2,2,current,yoy,31.9,%,detail
-2026-06-01,2026-Q2,manufacturing,Manufacturing,2,3,constant_2018,level,999198.0,PHP mn,detail
+2026-06-01,2026-Q2,mining,Mining and quarrying,2,2,constant_2018,yoy,-9.7,%,detail
+2026-06-01,2026-Q2,mining,Mining and quarrying,2,2,current,level,84394.0,PHP mn,detail
+2026-06-01,2026-Q2,mining,Mining and quarrying,2,2,current,share,1.1,%,detail
+2026-06-01,2026-Q2,mining,Mining and quarrying,2,2,current,yoy,28.8,%,detail
+2026-06-01,2026-Q2,manufacturing,Manufacturing,2,3,constant_2018,level,999249.0,PHP mn,detail
 2026-06-01,2026-Q2,manufacturing,Manufacturing,2,3,constant_2018,share,16.7,%,detail
 2026-06-01,2026-Q2,manufacturing,Manufacturing,2,3,constant_2018,yoy,2.6,%,detail
-2026-06-01,2026-Q2,manufacturing,Manufacturing,2,3,current,level,998078.0,PHP mn,detail
-2026-06-01,2026-Q2,manufacturing,Manufacturing,2,3,current,share,13.3,%,detail
-2026-06-01,2026-Q2,manufacturing,Manufacturing,2,3,current,yoy,7.7,%,detail
-2026-06-01,2026-Q2,utilities,"Electricity, steam, water and waste management",2,4,constant_2018,level,196991.0,PHP mn,detail
+2026-06-01,2026-Q2,manufacturing,Manufacturing,2,3,current,level,1000081.0,PHP mn,detail
+2026-06-01,2026-Q2,manufacturing,Manufacturing,2,3,current,share,13.4,%,detail
+2026-06-01,2026-Q2,manufacturing,Manufacturing,2,3,current,yoy,7.9,%,detail
+2026-06-01,2026-Q2,utilities,"Electricity, steam, water and waste management",2,4,constant_2018,level,197551.0,PHP mn,detail
 2026-06-01,2026-Q2,utilities,"Electricity, steam, water and waste management",2,4,constant_2018,share,3.3,%,detail
-2026-06-01,2026-Q2,utilities,"Electricity, steam, water and waste management",2,4,constant_2018,yoy,4.0,%,detail
-2026-06-01,2026-Q2,utilities,"Electricity, steam, water and waste management",2,4,current,level,346595.0,PHP mn,detail
+2026-06-01,2026-Q2,utilities,"Electricity, steam, water and waste management",2,4,constant_2018,yoy,4.3,%,detail
+2026-06-01,2026-Q2,utilities,"Electricity, steam, water and waste management",2,4,current,level,347510.0,PHP mn,detail
 2026-06-01,2026-Q2,utilities,"Electricity, steam, water and waste management",2,4,current,share,4.6,%,detail
-2026-06-01,2026-Q2,utilities,"Electricity, steam, water and waste management",2,4,current,yoy,13.4,%,detail
-2026-06-01,2026-Q2,construction,Construction,2,5,constant_2018,level,432419.0,PHP mn,detail
+2026-06-01,2026-Q2,utilities,"Electricity, steam, water and waste management",2,4,current,yoy,13.7,%,detail
+2026-06-01,2026-Q2,construction,Construction,2,5,constant_2018,level,431929.0,PHP mn,detail
 2026-06-01,2026-Q2,construction,Construction,2,5,constant_2018,share,7.2,%,detail
-2026-06-01,2026-Q2,construction,Construction,2,5,constant_2018,yoy,-13.9,%,detail
-2026-06-01,2026-Q2,construction,Construction,2,5,current,level,608236.0,PHP mn,detail
+2026-06-01,2026-Q2,construction,Construction,2,5,constant_2018,yoy,-14.0,%,detail
+2026-06-01,2026-Q2,construction,Construction,2,5,current,level,606569.0,PHP mn,detail
 2026-06-01,2026-Q2,construction,Construction,2,5,current,share,8.1,%,detail
-2026-06-01,2026-Q2,construction,Construction,2,5,current,yoy,-10.7,%,detail
-2026-06-01,2026-Q2,services,Services,1,6,constant_2018,level,3861422.0,PHP mn,detail
+2026-06-01,2026-Q2,construction,Construction,2,5,current,yoy,-11.0,%,detail
+2026-06-01,2026-Q2,services,Services,1,6,constant_2018,level,3863719.0,PHP mn,detail
 2026-06-01,2026-Q2,services,Services,1,6,constant_2018,share,64.6,%,detail
 2026-06-01,2026-Q2,services,Services,1,6,constant_2018,yoy,4.5,%,detail
-2026-06-01,2026-Q2,services,Services,1,6,current,level,4870375.0,PHP mn,detail
+2026-06-01,2026-Q2,services,Services,1,6,current,level,4873089.0,PHP mn,detail
 2026-06-01,2026-Q2,services,Services,1,6,current,share,65.1,%,detail
 2026-06-01,2026-Q2,services,Services,1,6,current,yoy,10.2,%,detail
-2026-06-01,2026-Q2,trade,Wholesale and retail trade; repair of motor vehicles and motorcycles,2,7,constant_2018,level,1053664.0,PHP mn,detail
+2026-06-01,2026-Q2,trade,Wholesale and retail trade; repair of motor vehicles and motorcycles,2,7,constant_2018,level,1055526.0,PHP mn,detail
 2026-06-01,2026-Q2,trade,Wholesale and retail trade; repair of motor vehicles and motorcycles,2,7,constant_2018,share,17.6,%,detail
-2026-06-01,2026-Q2,trade,Wholesale and retail trade; repair of motor vehicles and motorcycles,2,7,constant_2018,yoy,4.6,%,detail
-2026-06-01,2026-Q2,trade,Wholesale and retail trade; repair of motor vehicles and motorcycles,2,7,current,level,1367634.0,PHP mn,detail
+2026-06-01,2026-Q2,trade,Wholesale and retail trade; repair of motor vehicles and motorcycles,2,7,constant_2018,yoy,4.7,%,detail
+2026-06-01,2026-Q2,trade,Wholesale and retail trade; repair of motor vehicles and motorcycles,2,7,current,level,1370319.0,PHP mn,detail
 2026-06-01,2026-Q2,trade,Wholesale and retail trade; repair of motor vehicles and motorcycles,2,7,current,share,18.3,%,detail
-2026-06-01,2026-Q2,trade,Wholesale and retail trade; repair of motor vehicles and motorcycles,2,7,current,yoy,12.5,%,detail
-2026-06-01,2026-Q2,transport,Transportation and storage,2,8,constant_2018,level,214419.0,PHP mn,detail
+2026-06-01,2026-Q2,trade,Wholesale and retail trade; repair of motor vehicles and motorcycles,2,7,current,yoy,12.7,%,detail
+2026-06-01,2026-Q2,transport,Transportation and storage,2,8,constant_2018,level,215076.0,PHP mn,detail
 2026-06-01,2026-Q2,transport,Transportation and storage,2,8,constant_2018,share,3.6,%,detail
-2026-06-01,2026-Q2,transport,Transportation and storage,2,8,constant_2018,yoy,3.8,%,detail
-2026-06-01,2026-Q2,transport,Transportation and storage,2,8,current,level,302512.0,PHP mn,detail
-2026-06-01,2026-Q2,transport,Transportation and storage,2,8,current,share,4.0,%,detail
-2026-06-01,2026-Q2,transport,Transportation and storage,2,8,current,yoy,8.0,%,detail
-2026-06-01,2026-Q2,accommodation,Accommodation and food service activities,2,9,constant_2018,level,103541.0,PHP mn,detail
+2026-06-01,2026-Q2,transport,Transportation and storage,2,8,constant_2018,yoy,4.1,%,detail
+2026-06-01,2026-Q2,transport,Transportation and storage,2,8,current,level,303288.0,PHP mn,detail
+2026-06-01,2026-Q2,transport,Transportation and storage,2,8,current,share,4.1,%,detail
+2026-06-01,2026-Q2,transport,Transportation and storage,2,8,current,yoy,8.3,%,detail
+2026-06-01,2026-Q2,accommodation,Accommodation and food service activities,2,9,constant_2018,level,102897.0,PHP mn,detail
 2026-06-01,2026-Q2,accommodation,Accommodation and food service activities,2,9,constant_2018,share,1.7,%,detail
-2026-06-01,2026-Q2,accommodation,Accommodation and food service activities,2,9,constant_2018,yoy,1.7,%,detail
-2026-06-01,2026-Q2,accommodation,Accommodation and food service activities,2,9,current,level,146704.0,PHP mn,detail
-2026-06-01,2026-Q2,accommodation,Accommodation and food service activities,2,9,current,share,2.0,%,detail
-2026-06-01,2026-Q2,accommodation,Accommodation and food service activities,2,9,current,yoy,7.5,%,detail
-2026-06-01,2026-Q2,ict,Information and communication,2,10,constant_2018,level,230394.0,PHP mn,detail
+2026-06-01,2026-Q2,accommodation,Accommodation and food service activities,2,9,constant_2018,yoy,1.0,%,detail
+2026-06-01,2026-Q2,accommodation,Accommodation and food service activities,2,9,current,level,145785.0,PHP mn,detail
+2026-06-01,2026-Q2,accommodation,Accommodation and food service activities,2,9,current,share,1.9,%,detail
+2026-06-01,2026-Q2,accommodation,Accommodation and food service activities,2,9,current,yoy,6.8,%,detail
+2026-06-01,2026-Q2,ict,Information and communication,2,10,constant_2018,level,230980.0,PHP mn,detail
 2026-06-01,2026-Q2,ict,Information and communication,2,10,constant_2018,share,3.9,%,detail
-2026-06-01,2026-Q2,ict,Information and communication,2,10,constant_2018,yoy,3.3,%,detail
-2026-06-01,2026-Q2,ict,Information and communication,2,10,current,level,233710.0,PHP mn,detail
+2026-06-01,2026-Q2,ict,Information and communication,2,10,constant_2018,yoy,3.5,%,detail
+2026-06-01,2026-Q2,ict,Information and communication,2,10,current,level,234278.0,PHP mn,detail
 2026-06-01,2026-Q2,ict,Information and communication,2,10,current,share,3.1,%,detail
-2026-06-01,2026-Q2,ict,Information and communication,2,10,current,yoy,4.4,%,detail
-2026-06-01,2026-Q2,finance,Financial and insurance activities,2,11,constant_2018,level,626928.0,PHP mn,detail
+2026-06-01,2026-Q2,ict,Information and communication,2,10,current,yoy,4.6,%,detail
+2026-06-01,2026-Q2,finance,Financial and insurance activities,2,11,constant_2018,level,626691.0,PHP mn,detail
 2026-06-01,2026-Q2,finance,Financial and insurance activities,2,11,constant_2018,share,10.5,%,detail
 2026-06-01,2026-Q2,finance,Financial and insurance activities,2,11,constant_2018,yoy,3.3,%,detail
-2026-06-01,2026-Q2,finance,Financial and insurance activities,2,11,current,level,840441.0,PHP mn,detail
+2026-06-01,2026-Q2,finance,Financial and insurance activities,2,11,current,level,840016.0,PHP mn,detail
 2026-06-01,2026-Q2,finance,Financial and insurance activities,2,11,current,share,11.2,%,detail
 2026-06-01,2026-Q2,finance,Financial and insurance activities,2,11,current,yoy,10.3,%,detail
-2026-06-01,2026-Q2,real_estate,Real estate and ownership of dwellings,2,12,constant_2018,level,321618.0,PHP mn,detail
+2026-06-01,2026-Q2,real_estate,Real estate and ownership of dwellings,2,12,constant_2018,level,322131.0,PHP mn,detail
 2026-06-01,2026-Q2,real_estate,Real estate and ownership of dwellings,2,12,constant_2018,share,5.4,%,detail
-2026-06-01,2026-Q2,real_estate,Real estate and ownership of dwellings,2,12,constant_2018,yoy,1.3,%,detail
-2026-06-01,2026-Q2,real_estate,Real estate and ownership of dwellings,2,12,current,level,422359.0,PHP mn,detail
-2026-06-01,2026-Q2,real_estate,Real estate and ownership of dwellings,2,12,current,share,5.6,%,detail
-2026-06-01,2026-Q2,real_estate,Real estate and ownership of dwellings,2,12,current,yoy,7.0,%,detail
-2026-06-01,2026-Q2,business,Professional and business services,2,13,constant_2018,level,410700.0,PHP mn,detail
+2026-06-01,2026-Q2,real_estate,Real estate and ownership of dwellings,2,12,constant_2018,yoy,1.4,%,detail
+2026-06-01,2026-Q2,real_estate,Real estate and ownership of dwellings,2,12,current,level,423064.0,PHP mn,detail
+2026-06-01,2026-Q2,real_estate,Real estate and ownership of dwellings,2,12,current,share,5.7,%,detail
+2026-06-01,2026-Q2,real_estate,Real estate and ownership of dwellings,2,12,current,yoy,7.1,%,detail
+2026-06-01,2026-Q2,business,Professional and business services,2,13,constant_2018,level,410143.0,PHP mn,detail
 2026-06-01,2026-Q2,business,Professional and business services,2,13,constant_2018,share,6.9,%,detail
-2026-06-01,2026-Q2,business,Professional and business services,2,13,constant_2018,yoy,3.9,%,detail
-2026-06-01,2026-Q2,business,Professional and business services,2,13,current,level,457772.0,PHP mn,detail
+2026-06-01,2026-Q2,business,Professional and business services,2,13,constant_2018,yoy,3.8,%,detail
+2026-06-01,2026-Q2,business,Professional and business services,2,13,current,level,457010.0,PHP mn,detail
 2026-06-01,2026-Q2,business,Professional and business services,2,13,current,share,6.1,%,detail
-2026-06-01,2026-Q2,business,Professional and business services,2,13,current,yoy,8.2,%,detail
-2026-06-01,2026-Q2,public_admin,Public administration and defense; compulsory social activities,2,14,constant_2018,level,347047.0,PHP mn,detail
+2026-06-01,2026-Q2,business,Professional and business services,2,13,current,yoy,8.0,%,detail
+2026-06-01,2026-Q2,public_admin,Public administration and defense; compulsory social activities,2,14,constant_2018,level,347002.0,PHP mn,detail
 2026-06-01,2026-Q2,public_admin,Public administration and defense; compulsory social activities,2,14,constant_2018,share,5.8,%,detail
 2026-06-01,2026-Q2,public_admin,Public administration and defense; compulsory social activities,2,14,constant_2018,yoy,4.5,%,detail
-2026-06-01,2026-Q2,public_admin,Public administration and defense; compulsory social activities,2,14,current,level,418009.0,PHP mn,detail
+2026-06-01,2026-Q2,public_admin,Public administration and defense; compulsory social activities,2,14,current,level,417955.0,PHP mn,detail
 2026-06-01,2026-Q2,public_admin,Public administration and defense; compulsory social activities,2,14,current,share,5.6,%,detail
 2026-06-01,2026-Q2,public_admin,Public administration and defense; compulsory social activities,2,14,current,yoy,8.4,%,detail
-2026-06-01,2026-Q2,education,Education,2,15,constant_2018,level,312776.0,PHP mn,detail
+2026-06-01,2026-Q2,education,Education,2,15,constant_2018,level,313348.0,PHP mn,detail
 2026-06-01,2026-Q2,education,Education,2,15,constant_2018,share,5.2,%,detail
-2026-06-01,2026-Q2,education,Education,2,15,constant_2018,yoy,12.7,%,detail
-2026-06-01,2026-Q2,education,Education,2,15,current,level,381969.0,PHP mn,detail
+2026-06-01,2026-Q2,education,Education,2,15,constant_2018,yoy,12.9,%,detail
+2026-06-01,2026-Q2,education,Education,2,15,current,level,382637.0,PHP mn,detail
 2026-06-01,2026-Q2,education,Education,2,15,current,share,5.1,%,detail
-2026-06-01,2026-Q2,education,Education,2,15,current,yoy,16.9,%,detail
-2026-06-01,2026-Q2,health,Human health and social work activities,2,16,constant_2018,level,122025.0,PHP mn,detail
+2026-06-01,2026-Q2,education,Education,2,15,current,yoy,17.1,%,detail
+2026-06-01,2026-Q2,health,Human health and social work activities,2,16,constant_2018,level,122018.0,PHP mn,detail
 2026-06-01,2026-Q2,health,Human health and social work activities,2,16,constant_2018,share,2.0,%,detail
 2026-06-01,2026-Q2,health,Human health and social work activities,2,16,constant_2018,yoy,10.4,%,detail
-2026-06-01,2026-Q2,health,Human health and social work activities,2,16,current,level,151945.0,PHP mn,detail
+2026-06-01,2026-Q2,health,Human health and social work activities,2,16,current,level,151937.0,PHP mn,detail
 2026-06-01,2026-Q2,health,Human health and social work activities,2,16,current,share,2.0,%,detail
 2026-06-01,2026-Q2,health,Human health and social work activities,2,16,current,yoy,14.7,%,detail
-2026-06-01,2026-Q2,other_services,Other services,2,17,constant_2018,level,118311.0,PHP mn,detail
+2026-06-01,2026-Q2,other_services,Other services,2,17,constant_2018,level,117908.0,PHP mn,detail
 2026-06-01,2026-Q2,other_services,Other services,2,17,constant_2018,share,2.0,%,detail
-2026-06-01,2026-Q2,other_services,Other services,2,17,constant_2018,yoy,1.4,%,detail
-2026-06-01,2026-Q2,other_services,Other services,2,17,current,level,147320.0,PHP mn,detail
+2026-06-01,2026-Q2,other_services,Other services,2,17,constant_2018,yoy,1.0,%,detail
+2026-06-01,2026-Q2,other_services,Other services,2,17,current,level,146800.0,PHP mn,detail
 2026-06-01,2026-Q2,other_services,Other services,2,17,current,share,2.0,%,detail
-2026-06-01,2026-Q2,other_services,Other services,2,17,current,yoy,6.0,%,detail
-2026-06-01,2026-Q2,gdp,Gross domestic product,0,18,constant_2018,level,5978223.0,PHP mn,detail
+2026-06-01,2026-Q2,other_services,Other services,2,17,current,yoy,5.6,%,detail
+2026-06-01,2026-Q2,gdp,Gross domestic product,0,18,constant_2018,level,5981697.0,PHP mn,detail
 2026-06-01,2026-Q2,gdp,Gross domestic product,0,18,constant_2018,share,100.0,%,detail
-2026-06-01,2026-Q2,gdp,Gross domestic product,0,18,constant_2018,yoy,2.3,%,detail
-2026-06-01,2026-Q2,gdp,Gross domestic product,0,18,current,level,7483456.0,PHP mn,detail
+2026-06-01,2026-Q2,gdp,Gross domestic product,0,18,constant_2018,yoy,2.4,%,detail
+2026-06-01,2026-Q2,gdp,Gross domestic product,0,18,current,level,7486631.0,PHP mn,detail
 2026-06-01,2026-Q2,gdp,Gross domestic product,0,18,current,share,100.0,%,detail
 2026-06-01,2026-Q2,gdp,Gross domestic product,0,18,current,yoy,7.5,%,detail
-2026-06-01,2026-Q2,npi,Net primary income from the rest of the world,0,19,constant_2018,level,821623.0,PHP mn,detail
-2026-06-01,2026-Q2,npi,Net primary income from the rest of the world,0,19,constant_2018,share,12.1,%,detail
-2026-06-01,2026-Q2,npi,Net primary income from the rest of the world,0,19,constant_2018,yoy,1.0,%,detail
-2026-06-01,2026-Q2,npi,Net primary income from the rest of the world,0,19,current,level,1040455.0,PHP mn,detail
+2026-06-01,2026-Q2,npi,Net primary income from the rest of the world,0,19,constant_2018,level,819379.0,PHP mn,detail
+2026-06-01,2026-Q2,npi,Net primary income from the rest of the world,0,19,constant_2018,share,12.0,%,detail
+2026-06-01,2026-Q2,npi,Net primary income from the rest of the world,0,19,constant_2018,yoy,0.8,%,detail
+2026-06-01,2026-Q2,npi,Net primary income from the rest of the world,0,19,current,level,1036691.0,PHP mn,detail
 2026-06-01,2026-Q2,npi,Net primary income from the rest of the world,0,19,current,share,12.2,%,detail
-2026-06-01,2026-Q2,npi,Net primary income from the rest of the world,0,19,current,yoy,2.4,%,detail
-2026-06-01,2026-Q2,gni,Gross national income,0,20,constant_2018,level,6799846.0,PHP mn,detail
+2026-06-01,2026-Q2,npi,Net primary income from the rest of the world,0,19,current,yoy,2.0,%,detail
+2026-06-01,2026-Q2,gni,Gross national income,0,20,constant_2018,level,6801076.0,PHP mn,detail
 2026-06-01,2026-Q2,gni,Gross national income,0,20,constant_2018,share,100.0,%,detail
 2026-06-01,2026-Q2,gni,Gross national income,0,20,constant_2018,yoy,2.2,%,detail
-2026-06-01,2026-Q2,gni,Gross national income,0,20,current,level,8523912.0,PHP mn,detail
+2026-06-01,2026-Q2,gni,Gross national income,0,20,current,level,8523322.0,PHP mn,detail
 2026-06-01,2026-Q2,gni,Gross national income,0,20,current,share,100.0,%,detail
 2026-06-01,2026-Q2,gni,Gross national income,0,20,current,yoy,6.8,%,detail
-2026-06-01,2026-Q2,gdp_share_gni,"GDP, % of GNI",0,21,constant_2018,share,87.9,%,detail
+2026-06-01,2026-Q2,gdp_share_gni,"GDP, % of GNI",0,21,constant_2018,share,88.0,%,detail
 2026-06-01,2026-Q2,gdp_share_gni,"GDP, % of GNI",0,21,current,share,87.8,%,detail
+2026-09-01,2026-Q3,agri,"Agriculture, forestry and fishing",1,0,constant_2018,level,391048.0,PHP mn,detail
+2026-09-01,2026-Q3,agri,"Agriculture, forestry and fishing",1,0,constant_2018,share,6.9,%,detail
+2026-09-01,2026-Q3,agri,"Agriculture, forestry and fishing",1,0,constant_2018,yoy,-4.8,%,detail
+2026-09-01,2026-Q3,agri,"Agriculture, forestry and fishing",1,0,current,level,523814.0,PHP mn,detail
+2026-09-01,2026-Q3,agri,"Agriculture, forestry and fishing",1,0,current,share,7.4,%,detail
+2026-09-01,2026-Q3,agri,"Agriculture, forestry and fishing",1,0,current,yoy,-0.4,%,detail
+2026-09-01,2026-Q3,industry,Industry,1,1,constant_2018,level,1429884.0,PHP mn,detail
+2026-09-01,2026-Q3,industry,Industry,1,1,constant_2018,share,25.3,%,detail
+2026-09-01,2026-Q3,industry,Industry,1,1,constant_2018,yoy,0.0,%,detail
+2026-09-01,2026-Q3,industry,Industry,1,1,current,level,1632670.0,PHP mn,detail
+2026-09-01,2026-Q3,industry,Industry,1,1,current,share,23.2,%,detail
+2026-09-01,2026-Q3,industry,Industry,1,1,current,yoy,5.4,%,detail
+2026-09-01,2026-Q3,mining,Mining and quarrying,2,2,constant_2018,level,33718.0,PHP mn,detail
+2026-09-01,2026-Q3,mining,Mining and quarrying,2,2,constant_2018,share,0.6,%,detail
+2026-09-01,2026-Q3,mining,Mining and quarrying,2,2,constant_2018,yoy,1.4,%,detail
+2026-09-01,2026-Q3,mining,Mining and quarrying,2,2,current,level,84609.0,PHP mn,detail
+2026-09-01,2026-Q3,mining,Mining and quarrying,2,2,current,share,1.2,%,detail
+2026-09-01,2026-Q3,mining,Mining and quarrying,2,2,current,yoy,23.2,%,detail
+2026-09-01,2026-Q3,manufacturing,Manufacturing,2,3,constant_2018,level,815277.0,PHP mn,detail
+2026-09-01,2026-Q3,manufacturing,Manufacturing,2,3,constant_2018,share,14.4,%,detail
+2026-09-01,2026-Q3,manufacturing,Manufacturing,2,3,constant_2018,yoy,0.7,%,detail
+2026-09-01,2026-Q3,manufacturing,Manufacturing,2,3,current,level,854349.0,PHP mn,detail
+2026-09-01,2026-Q3,manufacturing,Manufacturing,2,3,current,share,12.1,%,detail
+2026-09-01,2026-Q3,manufacturing,Manufacturing,2,3,current,yoy,4.0,%,detail
+2026-09-01,2026-Q3,utilities,"Electricity, steam, water and waste management",2,4,constant_2018,level,212675.0,PHP mn,detail
+2026-09-01,2026-Q3,utilities,"Electricity, steam, water and waste management",2,4,constant_2018,share,3.8,%,detail
+2026-09-01,2026-Q3,utilities,"Electricity, steam, water and waste management",2,4,constant_2018,yoy,4.7,%,detail
+2026-09-01,2026-Q3,utilities,"Electricity, steam, water and waste management",2,4,current,level,224717.0,PHP mn,detail
+2026-09-01,2026-Q3,utilities,"Electricity, steam, water and waste management",2,4,current,share,3.2,%,detail
+2026-09-01,2026-Q3,utilities,"Electricity, steam, water and waste management",2,4,current,yoy,18.5,%,detail
+2026-09-01,2026-Q3,construction,Construction,2,5,constant_2018,level,368213.0,PHP mn,detail
+2026-09-01,2026-Q3,construction,Construction,2,5,constant_2018,share,6.5,%,detail
+2026-09-01,2026-Q3,construction,Construction,2,5,constant_2018,yoy,-4.0,%,detail
+2026-09-01,2026-Q3,construction,Construction,2,5,current,level,468995.0,PHP mn,detail
+2026-09-01,2026-Q3,construction,Construction,2,5,current,share,6.7,%,detail
+2026-09-01,2026-Q3,construction,Construction,2,5,current,yoy,0.0,%,detail
+2026-09-01,2026-Q3,services,Services,1,6,constant_2018,level,3826135.0,PHP mn,detail
+2026-09-01,2026-Q3,services,Services,1,6,constant_2018,share,67.8,%,detail
+2026-09-01,2026-Q3,services,Services,1,6,constant_2018,yoy,3.7,%,detail
+2026-09-01,2026-Q3,services,Services,1,6,current,level,4885369.0,PHP mn,detail
+2026-09-01,2026-Q3,services,Services,1,6,current,share,69.4,%,detail
+2026-09-01,2026-Q3,services,Services,1,6,current,yoy,9.0,%,detail
+2026-09-01,2026-Q3,trade,Wholesale and retail trade; repair of motor vehicles and motorcycles,2,7,constant_2018,level,1218522.0,PHP mn,detail
+2026-09-01,2026-Q3,trade,Wholesale and retail trade; repair of motor vehicles and motorcycles,2,7,constant_2018,share,21.6,%,detail
+2026-09-01,2026-Q3,trade,Wholesale and retail trade; repair of motor vehicles and motorcycles,2,7,constant_2018,yoy,3.5,%,detail
+2026-09-01,2026-Q3,trade,Wholesale and retail trade; repair of motor vehicles and motorcycles,2,7,current,level,1533492.0,PHP mn,detail
+2026-09-01,2026-Q3,trade,Wholesale and retail trade; repair of motor vehicles and motorcycles,2,7,current,share,21.8,%,detail
+2026-09-01,2026-Q3,trade,Wholesale and retail trade; repair of motor vehicles and motorcycles,2,7,current,yoy,10.2,%,detail
+2026-09-01,2026-Q3,transport,Transportation and storage,2,8,constant_2018,level,219375.0,PHP mn,detail
+2026-09-01,2026-Q3,transport,Transportation and storage,2,8,constant_2018,share,3.9,%,detail
+2026-09-01,2026-Q3,transport,Transportation and storage,2,8,constant_2018,yoy,4.0,%,detail
+2026-09-01,2026-Q3,transport,Transportation and storage,2,8,current,level,307386.0,PHP mn,detail
+2026-09-01,2026-Q3,transport,Transportation and storage,2,8,current,share,4.4,%,detail
+2026-09-01,2026-Q3,transport,Transportation and storage,2,8,current,yoy,7.5,%,detail
+2026-09-01,2026-Q3,accommodation,Accommodation and food service activities,2,9,constant_2018,level,109694.0,PHP mn,detail
+2026-09-01,2026-Q3,accommodation,Accommodation and food service activities,2,9,constant_2018,share,1.9,%,detail
+2026-09-01,2026-Q3,accommodation,Accommodation and food service activities,2,9,constant_2018,yoy,1.0,%,detail
+2026-09-01,2026-Q3,accommodation,Accommodation and food service activities,2,9,current,level,153118.0,PHP mn,detail
+2026-09-01,2026-Q3,accommodation,Accommodation and food service activities,2,9,current,share,2.2,%,detail
+2026-09-01,2026-Q3,accommodation,Accommodation and food service activities,2,9,current,yoy,7.2,%,detail
+2026-09-01,2026-Q3,ict,Information and communication,2,10,constant_2018,level,166711.0,PHP mn,detail
+2026-09-01,2026-Q3,ict,Information and communication,2,10,constant_2018,share,3.0,%,detail
+2026-09-01,2026-Q3,ict,Information and communication,2,10,constant_2018,yoy,2.5,%,detail
+2026-09-01,2026-Q3,ict,Information and communication,2,10,current,level,180717.0,PHP mn,detail
+2026-09-01,2026-Q3,ict,Information and communication,2,10,current,share,2.6,%,detail
+2026-09-01,2026-Q3,ict,Information and communication,2,10,current,yoy,3.6,%,detail
+2026-09-01,2026-Q3,finance,Financial and insurance activities,2,11,constant_2018,level,626510.0,PHP mn,detail
+2026-09-01,2026-Q3,finance,Financial and insurance activities,2,11,constant_2018,share,11.1,%,detail
+2026-09-01,2026-Q3,finance,Financial and insurance activities,2,11,constant_2018,yoy,3.5,%,detail
+2026-09-01,2026-Q3,finance,Financial and insurance activities,2,11,current,level,815907.0,PHP mn,detail
+2026-09-01,2026-Q3,finance,Financial and insurance activities,2,11,current,share,11.6,%,detail
+2026-09-01,2026-Q3,finance,Financial and insurance activities,2,11,current,yoy,10.2,%,detail
+2026-09-01,2026-Q3,real_estate,Real estate and ownership of dwellings,2,12,constant_2018,level,332451.0,PHP mn,detail
+2026-09-01,2026-Q3,real_estate,Real estate and ownership of dwellings,2,12,constant_2018,share,5.9,%,detail
+2026-09-01,2026-Q3,real_estate,Real estate and ownership of dwellings,2,12,constant_2018,yoy,1.1,%,detail
+2026-09-01,2026-Q3,real_estate,Real estate and ownership of dwellings,2,12,current,level,434586.0,PHP mn,detail
+2026-09-01,2026-Q3,real_estate,Real estate and ownership of dwellings,2,12,current,share,6.2,%,detail
+2026-09-01,2026-Q3,real_estate,Real estate and ownership of dwellings,2,12,current,yoy,6.5,%,detail
+2026-09-01,2026-Q3,business,Professional and business services,2,13,constant_2018,level,417309.0,PHP mn,detail
+2026-09-01,2026-Q3,business,Professional and business services,2,13,constant_2018,share,7.4,%,detail
+2026-09-01,2026-Q3,business,Professional and business services,2,13,constant_2018,yoy,4.6,%,detail
+2026-09-01,2026-Q3,business,Professional and business services,2,13,current,level,514445.0,PHP mn,detail
+2026-09-01,2026-Q3,business,Professional and business services,2,13,current,share,7.3,%,detail
+2026-09-01,2026-Q3,business,Professional and business services,2,13,current,yoy,8.0,%,detail
+2026-09-01,2026-Q3,public_admin,Public administration and defense; compulsory social activities,2,14,constant_2018,level,286417.0,PHP mn,detail
+2026-09-01,2026-Q3,public_admin,Public administration and defense; compulsory social activities,2,14,constant_2018,share,5.1,%,detail
+2026-09-01,2026-Q3,public_admin,Public administration and defense; compulsory social activities,2,14,constant_2018,yoy,9.9,%,detail
+2026-09-01,2026-Q3,public_admin,Public administration and defense; compulsory social activities,2,14,current,level,362989.0,PHP mn,detail
+2026-09-01,2026-Q3,public_admin,Public administration and defense; compulsory social activities,2,14,current,share,5.2,%,detail
+2026-09-01,2026-Q3,public_admin,Public administration and defense; compulsory social activities,2,14,current,yoy,14.0,%,detail
+2026-09-01,2026-Q3,education,Education,2,15,constant_2018,level,221318.0,PHP mn,detail
+2026-09-01,2026-Q3,education,Education,2,15,constant_2018,share,3.9,%,detail
+2026-09-01,2026-Q3,education,Education,2,15,constant_2018,yoy,2.9,%,detail
+2026-09-01,2026-Q3,education,Education,2,15,current,level,285065.0,PHP mn,detail
+2026-09-01,2026-Q3,education,Education,2,15,current,share,4.0,%,detail
+2026-09-01,2026-Q3,education,Education,2,15,current,yoy,5.8,%,detail
+2026-09-01,2026-Q3,health,Human health and social work activities,2,16,constant_2018,level,130167.0,PHP mn,detail
+2026-09-01,2026-Q3,health,Human health and social work activities,2,16,constant_2018,share,2.3,%,detail
+2026-09-01,2026-Q3,health,Human health and social work activities,2,16,constant_2018,yoy,5.1,%,detail
+2026-09-01,2026-Q3,health,Human health and social work activities,2,16,current,level,174982.0,PHP mn,detail
+2026-09-01,2026-Q3,health,Human health and social work activities,2,16,current,share,2.5,%,detail
+2026-09-01,2026-Q3,health,Human health and social work activities,2,16,current,yoy,10.0,%,detail
+2026-09-01,2026-Q3,other_services,Other services,2,17,constant_2018,level,97662.0,PHP mn,detail
+2026-09-01,2026-Q3,other_services,Other services,2,17,constant_2018,share,1.7,%,detail
+2026-09-01,2026-Q3,other_services,Other services,2,17,constant_2018,yoy,1.9,%,detail
+2026-09-01,2026-Q3,other_services,Other services,2,17,current,level,122682.0,PHP mn,detail
+2026-09-01,2026-Q3,other_services,Other services,2,17,current,share,1.7,%,detail
+2026-09-01,2026-Q3,other_services,Other services,2,17,current,yoy,6.6,%,detail
+2026-09-01,2026-Q3,gdp,Gross domestic product,0,18,constant_2018,level,5647067.0,PHP mn,detail
+2026-09-01,2026-Q3,gdp,Gross domestic product,0,18,constant_2018,share,100.0,%,detail
+2026-09-01,2026-Q3,gdp,Gross domestic product,0,18,constant_2018,yoy,2.1,%,detail
+2026-09-01,2026-Q3,gdp,Gross domestic product,0,18,current,level,7041853.0,PHP mn,detail
+2026-09-01,2026-Q3,gdp,Gross domestic product,0,18,current,share,100.0,%,detail
+2026-09-01,2026-Q3,gdp,Gross domestic product,0,18,current,yoy,7.4,%,detail
+2026-09-01,2026-Q3,npi,Net primary income from the rest of the world,0,19,constant_2018,level,904724.0,PHP mn,detail
+2026-09-01,2026-Q3,npi,Net primary income from the rest of the world,0,19,constant_2018,share,13.8,%,detail
+2026-09-01,2026-Q3,npi,Net primary income from the rest of the world,0,19,constant_2018,yoy,6.6,%,detail
+2026-09-01,2026-Q3,npi,Net primary income from the rest of the world,0,19,current,level,1165344.0,PHP mn,detail
+2026-09-01,2026-Q3,npi,Net primary income from the rest of the world,0,19,current,share,14.2,%,detail
+2026-09-01,2026-Q3,npi,Net primary income from the rest of the world,0,19,current,yoy,8.1,%,detail
+2026-09-01,2026-Q3,gni,Gross national income,0,20,constant_2018,level,6551792.0,PHP mn,detail
+2026-09-01,2026-Q3,gni,Gross national income,0,20,constant_2018,share,100.0,%,detail
+2026-09-01,2026-Q3,gni,Gross national income,0,20,constant_2018,yoy,2.7,%,detail
+2026-09-01,2026-Q3,gni,Gross national income,0,20,current,level,8207197.0,PHP mn,detail
+2026-09-01,2026-Q3,gni,Gross national income,0,20,current,share,100.0,%,detail
+2026-09-01,2026-Q3,gni,Gross national income,0,20,current,yoy,7.5,%,detail
+2026-09-01,2026-Q3,gdp_share_gni,"GDP, % of GNI",0,21,constant_2018,share,86.2,%,detail
+2026-09-01,2026-Q3,gdp_share_gni,"GDP, % of GNI",0,21,current,share,85.8,%,detail

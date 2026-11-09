@@ -14725,145 +14725,287 @@ date,period,code,industry,price,measure,value,unit
 2026-03-01,2026-Q1,C32,Other manufacturing,current,yoy,8.7,%
 2026-03-01,2026-Q1,industry,Industry,constant_2018,share_gdp,28.7,%
 2026-03-01,2026-Q1,industry,Industry,current,share_gdp,27.7,%
-2026-06-01,2026-Q2,C,Manufacturing,constant_2018,level,999198.0,PHP mn
+2026-06-01,2026-Q2,C,Manufacturing,constant_2018,level,999249.0,PHP mn
 2026-06-01,2026-Q2,C,Manufacturing,constant_2018,share,100.0,%
 2026-06-01,2026-Q2,C,Manufacturing,constant_2018,share_gdp,16.7,%
 2026-06-01,2026-Q2,C,Manufacturing,constant_2018,yoy,2.6,%
-2026-06-01,2026-Q2,C,Manufacturing,current,level,998078.0,PHP mn
+2026-06-01,2026-Q2,C,Manufacturing,current,level,1000081.0,PHP mn
 2026-06-01,2026-Q2,C,Manufacturing,current,share,100.0,%
-2026-06-01,2026-Q2,C,Manufacturing,current,share_gdp,13.3,%
-2026-06-01,2026-Q2,C,Manufacturing,current,yoy,7.7,%
-2026-06-01,2026-Q2,C10,Manufacture of food products,constant_2018,level,514185.0,PHP mn
-2026-06-01,2026-Q2,C10,Manufacture of food products,constant_2018,share,51.5,%
-2026-06-01,2026-Q2,C10,Manufacture of food products,constant_2018,yoy,2.0,%
-2026-06-01,2026-Q2,C10,Manufacture of food products,current,level,533519.0,PHP mn
-2026-06-01,2026-Q2,C10,Manufacture of food products,current,share,53.5,%
+2026-06-01,2026-Q2,C,Manufacturing,current,share_gdp,13.4,%
+2026-06-01,2026-Q2,C,Manufacturing,current,yoy,7.9,%
+2026-06-01,2026-Q2,C10,Manufacture of food products,constant_2018,level,513328.0,PHP mn
+2026-06-01,2026-Q2,C10,Manufacture of food products,constant_2018,share,51.4,%
+2026-06-01,2026-Q2,C10,Manufacture of food products,constant_2018,yoy,1.8,%
+2026-06-01,2026-Q2,C10,Manufacture of food products,current,level,533727.0,PHP mn
+2026-06-01,2026-Q2,C10,Manufacture of food products,current,share,53.4,%
 2026-06-01,2026-Q2,C10,Manufacture of food products,current,yoy,3.4,%
-2026-06-01,2026-Q2,C11,Manufacture of beverages,constant_2018,level,33138.0,PHP mn
+2026-06-01,2026-Q2,C11,Manufacture of beverages,constant_2018,level,32970.0,PHP mn
 2026-06-01,2026-Q2,C11,Manufacture of beverages,constant_2018,share,3.3,%
-2026-06-01,2026-Q2,C11,Manufacture of beverages,constant_2018,yoy,-6.0,%
-2026-06-01,2026-Q2,C11,Manufacture of beverages,current,level,36166.0,PHP mn
+2026-06-01,2026-Q2,C11,Manufacture of beverages,constant_2018,yoy,-6.5,%
+2026-06-01,2026-Q2,C11,Manufacture of beverages,current,level,36095.0,PHP mn
 2026-06-01,2026-Q2,C11,Manufacture of beverages,current,share,3.6,%
-2026-06-01,2026-Q2,C11,Manufacture of beverages,current,yoy,-3.2,%
-2026-06-01,2026-Q2,C12,Manufacture of tobacco products,constant_2018,level,3223.0,PHP mn
+2026-06-01,2026-Q2,C11,Manufacture of beverages,current,yoy,-3.3,%
+2026-06-01,2026-Q2,C12,Manufacture of tobacco products,constant_2018,level,3198.0,PHP mn
 2026-06-01,2026-Q2,C12,Manufacture of tobacco products,constant_2018,share,0.3,%
-2026-06-01,2026-Q2,C12,Manufacture of tobacco products,constant_2018,yoy,3.5,%
+2026-06-01,2026-Q2,C12,Manufacture of tobacco products,constant_2018,yoy,2.7,%
 2026-06-01,2026-Q2,C12,Manufacture of tobacco products,current,level,3312.0,PHP mn
 2026-06-01,2026-Q2,C12,Manufacture of tobacco products,current,share,0.3,%
 2026-06-01,2026-Q2,C12,Manufacture of tobacco products,current,yoy,7.9,%
-2026-06-01,2026-Q2,C13,Manufacture of textiles,constant_2018,level,11798.0,PHP mn
+2026-06-01,2026-Q2,C13,Manufacture of textiles,constant_2018,level,11653.0,PHP mn
 2026-06-01,2026-Q2,C13,Manufacture of textiles,constant_2018,share,1.2,%
-2026-06-01,2026-Q2,C13,Manufacture of textiles,constant_2018,yoy,10.4,%
-2026-06-01,2026-Q2,C13,Manufacture of textiles,current,level,10447.0,PHP mn
+2026-06-01,2026-Q2,C13,Manufacture of textiles,constant_2018,yoy,9.0,%
+2026-06-01,2026-Q2,C13,Manufacture of textiles,current,level,10320.0,PHP mn
 2026-06-01,2026-Q2,C13,Manufacture of textiles,current,share,1.0,%
-2026-06-01,2026-Q2,C13,Manufacture of textiles,current,yoy,10.3,%
-2026-06-01,2026-Q2,C14,Manufacture of wearing apparel,constant_2018,level,12829.0,PHP mn
+2026-06-01,2026-Q2,C13,Manufacture of textiles,current,yoy,9.0,%
+2026-06-01,2026-Q2,C14,Manufacture of wearing apparel,constant_2018,level,12529.0,PHP mn
 2026-06-01,2026-Q2,C14,Manufacture of wearing apparel,constant_2018,share,1.3,%
-2026-06-01,2026-Q2,C14,Manufacture of wearing apparel,constant_2018,yoy,11.9,%
-2026-06-01,2026-Q2,C14,Manufacture of wearing apparel,current,level,11116.0,PHP mn
+2026-06-01,2026-Q2,C14,Manufacture of wearing apparel,constant_2018,yoy,9.3,%
+2026-06-01,2026-Q2,C14,Manufacture of wearing apparel,current,level,10857.0,PHP mn
 2026-06-01,2026-Q2,C14,Manufacture of wearing apparel,current,share,1.1,%
-2026-06-01,2026-Q2,C14,Manufacture of wearing apparel,current,yoy,12.4,%
-2026-06-01,2026-Q2,C15,"Manufacture of leather and related products, including footwear",constant_2018,level,1863.0,PHP mn
+2026-06-01,2026-Q2,C14,Manufacture of wearing apparel,current,yoy,9.8,%
+2026-06-01,2026-Q2,C15,"Manufacture of leather and related products, including footwear",constant_2018,level,1843.0,PHP mn
 2026-06-01,2026-Q2,C15,"Manufacture of leather and related products, including footwear",constant_2018,share,0.2,%
-2026-06-01,2026-Q2,C15,"Manufacture of leather and related products, including footwear",constant_2018,yoy,20.1,%
-2026-06-01,2026-Q2,C15,"Manufacture of leather and related products, including footwear",current,level,2296.0,PHP mn
+2026-06-01,2026-Q2,C15,"Manufacture of leather and related products, including footwear",constant_2018,yoy,18.8,%
+2026-06-01,2026-Q2,C15,"Manufacture of leather and related products, including footwear",current,level,2307.0,PHP mn
 2026-06-01,2026-Q2,C15,"Manufacture of leather and related products, including footwear",current,share,0.2,%
-2026-06-01,2026-Q2,C15,"Manufacture of leather and related products, including footwear",current,yoy,21.7,%
-2026-06-01,2026-Q2,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",constant_2018,level,11335.0,PHP mn
+2026-06-01,2026-Q2,C15,"Manufacture of leather and related products, including footwear",current,yoy,22.3,%
+2026-06-01,2026-Q2,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",constant_2018,level,11475.0,PHP mn
 2026-06-01,2026-Q2,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",constant_2018,share,1.1,%
-2026-06-01,2026-Q2,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",constant_2018,yoy,-1.6,%
-2026-06-01,2026-Q2,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",current,level,6267.0,PHP mn
+2026-06-01,2026-Q2,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",constant_2018,yoy,-0.4,%
+2026-06-01,2026-Q2,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",current,level,6345.0,PHP mn
 2026-06-01,2026-Q2,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",current,share,0.6,%
-2026-06-01,2026-Q2,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",current,yoy,0.3,%
-2026-06-01,2026-Q2,C17,Manufacture of paper and paper products,constant_2018,level,8539.0,PHP mn
+2026-06-01,2026-Q2,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",current,yoy,1.5,%
+2026-06-01,2026-Q2,C17,Manufacture of paper and paper products,constant_2018,level,8840.0,PHP mn
 2026-06-01,2026-Q2,C17,Manufacture of paper and paper products,constant_2018,share,0.9,%
-2026-06-01,2026-Q2,C17,Manufacture of paper and paper products,constant_2018,yoy,0.6,%
-2026-06-01,2026-Q2,C17,Manufacture of paper and paper products,current,level,6434.0,PHP mn
-2026-06-01,2026-Q2,C17,Manufacture of paper and paper products,current,share,0.6,%
-2026-06-01,2026-Q2,C17,Manufacture of paper and paper products,current,yoy,-0.5,%
-2026-06-01,2026-Q2,C18,Printing and reproduction of recorded media,constant_2018,level,12577.0,PHP mn
+2026-06-01,2026-Q2,C17,Manufacture of paper and paper products,constant_2018,yoy,4.1,%
+2026-06-01,2026-Q2,C17,Manufacture of paper and paper products,current,level,6628.0,PHP mn
+2026-06-01,2026-Q2,C17,Manufacture of paper and paper products,current,share,0.7,%
+2026-06-01,2026-Q2,C17,Manufacture of paper and paper products,current,yoy,2.5,%
+2026-06-01,2026-Q2,C18,Printing and reproduction of recorded media,constant_2018,level,12974.0,PHP mn
 2026-06-01,2026-Q2,C18,Printing and reproduction of recorded media,constant_2018,share,1.3,%
-2026-06-01,2026-Q2,C18,Printing and reproduction of recorded media,constant_2018,yoy,2.3,%
-2026-06-01,2026-Q2,C18,Printing and reproduction of recorded media,current,level,13798.0,PHP mn
+2026-06-01,2026-Q2,C18,Printing and reproduction of recorded media,constant_2018,yoy,5.5,%
+2026-06-01,2026-Q2,C18,Printing and reproduction of recorded media,current,level,14212.0,PHP mn
 2026-06-01,2026-Q2,C18,Printing and reproduction of recorded media,current,share,1.4,%
-2026-06-01,2026-Q2,C18,Printing and reproduction of recorded media,current,yoy,3.8,%
-2026-06-01,2026-Q2,C19,Manufacture of coke and refined petroleum products,constant_2018,level,60770.0,PHP mn
+2026-06-01,2026-Q2,C18,Printing and reproduction of recorded media,current,yoy,6.9,%
+2026-06-01,2026-Q2,C19,Manufacture of coke and refined petroleum products,constant_2018,level,60847.0,PHP mn
 2026-06-01,2026-Q2,C19,Manufacture of coke and refined petroleum products,constant_2018,share,6.1,%
-2026-06-01,2026-Q2,C19,Manufacture of coke and refined petroleum products,constant_2018,yoy,20.5,%
-2026-06-01,2026-Q2,C19,Manufacture of coke and refined petroleum products,current,level,86948.0,PHP mn
+2026-06-01,2026-Q2,C19,Manufacture of coke and refined petroleum products,constant_2018,yoy,20.6,%
+2026-06-01,2026-Q2,C19,Manufacture of coke and refined petroleum products,current,level,87059.0,PHP mn
 2026-06-01,2026-Q2,C19,Manufacture of coke and refined petroleum products,current,share,8.7,%
-2026-06-01,2026-Q2,C19,Manufacture of coke and refined petroleum products,current,yoy,74.3,%
-2026-06-01,2026-Q2,C20,Manufacture of chemical and chemical products,constant_2018,level,74794.0,PHP mn
+2026-06-01,2026-Q2,C19,Manufacture of coke and refined petroleum products,current,yoy,74.6,%
+2026-06-01,2026-Q2,C20,Manufacture of chemical and chemical products,constant_2018,level,74896.0,PHP mn
 2026-06-01,2026-Q2,C20,Manufacture of chemical and chemical products,constant_2018,share,7.5,%
-2026-06-01,2026-Q2,C20,Manufacture of chemical and chemical products,constant_2018,yoy,-15.2,%
-2026-06-01,2026-Q2,C20,Manufacture of chemical and chemical products,current,level,61683.0,PHP mn
+2026-06-01,2026-Q2,C20,Manufacture of chemical and chemical products,constant_2018,yoy,-15.1,%
+2026-06-01,2026-Q2,C20,Manufacture of chemical and chemical products,current,level,62278.0,PHP mn
 2026-06-01,2026-Q2,C20,Manufacture of chemical and chemical products,current,share,6.2,%
-2026-06-01,2026-Q2,C20,Manufacture of chemical and chemical products,current,yoy,-12.4,%
-2026-06-01,2026-Q2,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,constant_2018,level,13376.0,PHP mn
+2026-06-01,2026-Q2,C20,Manufacture of chemical and chemical products,current,yoy,-11.5,%
+2026-06-01,2026-Q2,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,constant_2018,level,13366.0,PHP mn
 2026-06-01,2026-Q2,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,constant_2018,share,1.3,%
-2026-06-01,2026-Q2,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,constant_2018,yoy,6.9,%
-2026-06-01,2026-Q2,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,current,level,8029.0,PHP mn
+2026-06-01,2026-Q2,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,constant_2018,yoy,6.8,%
+2026-06-01,2026-Q2,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,current,level,8042.0,PHP mn
 2026-06-01,2026-Q2,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,current,share,0.8,%
-2026-06-01,2026-Q2,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,current,yoy,8.2,%
-2026-06-01,2026-Q2,C22,Manufacture of rubber and plastic products,constant_2018,level,10052.0,PHP mn
+2026-06-01,2026-Q2,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,current,yoy,8.4,%
+2026-06-01,2026-Q2,C22,Manufacture of rubber and plastic products,constant_2018,level,9925.0,PHP mn
 2026-06-01,2026-Q2,C22,Manufacture of rubber and plastic products,constant_2018,share,1.0,%
-2026-06-01,2026-Q2,C22,Manufacture of rubber and plastic products,constant_2018,yoy,5.1,%
-2026-06-01,2026-Q2,C22,Manufacture of rubber and plastic products,current,level,9654.0,PHP mn
+2026-06-01,2026-Q2,C22,Manufacture of rubber and plastic products,constant_2018,yoy,3.8,%
+2026-06-01,2026-Q2,C22,Manufacture of rubber and plastic products,current,level,9579.0,PHP mn
 2026-06-01,2026-Q2,C22,Manufacture of rubber and plastic products,current,share,1.0,%
-2026-06-01,2026-Q2,C22,Manufacture of rubber and plastic products,current,yoy,5.8,%
-2026-06-01,2026-Q2,C23,Manufacture of other non-metallic mineral products,constant_2018,level,19748.0,PHP mn
+2026-06-01,2026-Q2,C22,Manufacture of rubber and plastic products,current,yoy,4.9,%
+2026-06-01,2026-Q2,C23,Manufacture of other non-metallic mineral products,constant_2018,level,19738.0,PHP mn
 2026-06-01,2026-Q2,C23,Manufacture of other non-metallic mineral products,constant_2018,share,2.0,%
-2026-06-01,2026-Q2,C23,Manufacture of other non-metallic mineral products,constant_2018,yoy,-1.1,%
-2026-06-01,2026-Q2,C23,Manufacture of other non-metallic mineral products,current,level,18398.0,PHP mn
+2026-06-01,2026-Q2,C23,Manufacture of other non-metallic mineral products,constant_2018,yoy,-1.2,%
+2026-06-01,2026-Q2,C23,Manufacture of other non-metallic mineral products,current,level,18405.0,PHP mn
 2026-06-01,2026-Q2,C23,Manufacture of other non-metallic mineral products,current,share,1.8,%
 2026-06-01,2026-Q2,C23,Manufacture of other non-metallic mineral products,current,yoy,1.3,%
-2026-06-01,2026-Q2,C24,Manufacture of basic metals,constant_2018,level,14441.0,PHP mn
-2026-06-01,2026-Q2,C24,Manufacture of basic metals,constant_2018,share,1.4,%
-2026-06-01,2026-Q2,C24,Manufacture of basic metals,constant_2018,yoy,17.1,%
-2026-06-01,2026-Q2,C24,Manufacture of basic metals,current,level,7715.0,PHP mn
+2026-06-01,2026-Q2,C24,Manufacture of basic metals,constant_2018,level,14513.0,PHP mn
+2026-06-01,2026-Q2,C24,Manufacture of basic metals,constant_2018,share,1.5,%
+2026-06-01,2026-Q2,C24,Manufacture of basic metals,constant_2018,yoy,17.7,%
+2026-06-01,2026-Q2,C24,Manufacture of basic metals,current,level,7808.0,PHP mn
 2026-06-01,2026-Q2,C24,Manufacture of basic metals,current,share,0.8,%
-2026-06-01,2026-Q2,C24,Manufacture of basic metals,current,yoy,22.4,%
-2026-06-01,2026-Q2,C25,"Manufacture of fabricated metal products, except machinery and equipment",constant_2018,level,11265.0,PHP mn
-2026-06-01,2026-Q2,C25,"Manufacture of fabricated metal products, except machinery and equipment",constant_2018,share,1.1,%
-2026-06-01,2026-Q2,C25,"Manufacture of fabricated metal products, except machinery and equipment",constant_2018,yoy,-11.5,%
-2026-06-01,2026-Q2,C25,"Manufacture of fabricated metal products, except machinery and equipment",current,level,8995.0,PHP mn
+2026-06-01,2026-Q2,C24,Manufacture of basic metals,current,yoy,23.8,%
+2026-06-01,2026-Q2,C25,"Manufacture of fabricated metal products, except machinery and equipment",constant_2018,level,11731.0,PHP mn
+2026-06-01,2026-Q2,C25,"Manufacture of fabricated metal products, except machinery and equipment",constant_2018,share,1.2,%
+2026-06-01,2026-Q2,C25,"Manufacture of fabricated metal products, except machinery and equipment",constant_2018,yoy,-7.9,%
+2026-06-01,2026-Q2,C25,"Manufacture of fabricated metal products, except machinery and equipment",current,level,9367.0,PHP mn
 2026-06-01,2026-Q2,C25,"Manufacture of fabricated metal products, except machinery and equipment",current,share,0.9,%
-2026-06-01,2026-Q2,C25,"Manufacture of fabricated metal products, except machinery and equipment",current,yoy,-10.1,%
-2026-06-01,2026-Q2,C26,"Manufacture of computer, electronic and optical products",constant_2018,level,114049.0,PHP mn
+2026-06-01,2026-Q2,C25,"Manufacture of fabricated metal products, except machinery and equipment",current,yoy,-6.3,%
+2026-06-01,2026-Q2,C26,"Manufacture of computer, electronic and optical products",constant_2018,level,114381.0,PHP mn
 2026-06-01,2026-Q2,C26,"Manufacture of computer, electronic and optical products",constant_2018,share,11.4,%
-2026-06-01,2026-Q2,C26,"Manufacture of computer, electronic and optical products",constant_2018,yoy,15.5,%
-2026-06-01,2026-Q2,C26,"Manufacture of computer, electronic and optical products",current,level,115666.0,PHP mn
+2026-06-01,2026-Q2,C26,"Manufacture of computer, electronic and optical products",constant_2018,yoy,15.8,%
+2026-06-01,2026-Q2,C26,"Manufacture of computer, electronic and optical products",current,level,116212.0,PHP mn
 2026-06-01,2026-Q2,C26,"Manufacture of computer, electronic and optical products",current,share,11.6,%
-2026-06-01,2026-Q2,C26,"Manufacture of computer, electronic and optical products",current,yoy,21.4,%
-2026-06-01,2026-Q2,C27,Manufacture of electrical equipment,constant_2018,level,22723.0,PHP mn
+2026-06-01,2026-Q2,C26,"Manufacture of computer, electronic and optical products",current,yoy,22.0,%
+2026-06-01,2026-Q2,C27,Manufacture of electrical equipment,constant_2018,level,22761.0,PHP mn
 2026-06-01,2026-Q2,C27,Manufacture of electrical equipment,constant_2018,share,2.3,%
-2026-06-01,2026-Q2,C27,Manufacture of electrical equipment,constant_2018,yoy,1.8,%
-2026-06-01,2026-Q2,C27,Manufacture of electrical equipment,current,level,16863.0,PHP mn
+2026-06-01,2026-Q2,C27,Manufacture of electrical equipment,constant_2018,yoy,2.0,%
+2026-06-01,2026-Q2,C27,Manufacture of electrical equipment,current,level,16942.0,PHP mn
 2026-06-01,2026-Q2,C27,Manufacture of electrical equipment,current,share,1.7,%
-2026-06-01,2026-Q2,C27,Manufacture of electrical equipment,current,yoy,0.9,%
-2026-06-01,2026-Q2,C28,Manufacture of machinery and equipment except electrical,constant_2018,level,3966.0,PHP mn
+2026-06-01,2026-Q2,C27,Manufacture of electrical equipment,current,yoy,1.4,%
+2026-06-01,2026-Q2,C28,Manufacture of machinery and equipment except electrical,constant_2018,level,3923.0,PHP mn
 2026-06-01,2026-Q2,C28,Manufacture of machinery and equipment except electrical,constant_2018,share,0.4,%
-2026-06-01,2026-Q2,C28,Manufacture of machinery and equipment except electrical,constant_2018,yoy,-22.0,%
-2026-06-01,2026-Q2,C28,Manufacture of machinery and equipment except electrical,current,level,3770.0,PHP mn
+2026-06-01,2026-Q2,C28,Manufacture of machinery and equipment except electrical,constant_2018,yoy,-22.8,%
+2026-06-01,2026-Q2,C28,Manufacture of machinery and equipment except electrical,current,level,3730.0,PHP mn
 2026-06-01,2026-Q2,C28,Manufacture of machinery and equipment except electrical,current,share,0.4,%
-2026-06-01,2026-Q2,C28,Manufacture of machinery and equipment except electrical,current,yoy,-19.6,%
-2026-06-01,2026-Q2,C29-C30,Manufacture of transport equipment,constant_2018,level,13490.0,PHP mn
+2026-06-01,2026-Q2,C28,Manufacture of machinery and equipment except electrical,current,yoy,-20.4,%
+2026-06-01,2026-Q2,C29-C30,Manufacture of transport equipment,constant_2018,level,13554.0,PHP mn
 2026-06-01,2026-Q2,C29-C30,Manufacture of transport equipment,constant_2018,share,1.4,%
-2026-06-01,2026-Q2,C29-C30,Manufacture of transport equipment,constant_2018,yoy,-1.8,%
-2026-06-01,2026-Q2,C29-C30,Manufacture of transport equipment,current,level,10340.0,PHP mn
+2026-06-01,2026-Q2,C29-C30,Manufacture of transport equipment,constant_2018,yoy,-1.4,%
+2026-06-01,2026-Q2,C29-C30,Manufacture of transport equipment,current,level,10405.0,PHP mn
 2026-06-01,2026-Q2,C29-C30,Manufacture of transport equipment,current,share,1.0,%
-2026-06-01,2026-Q2,C29-C30,Manufacture of transport equipment,current,yoy,0.7,%
+2026-06-01,2026-Q2,C29-C30,Manufacture of transport equipment,current,yoy,1.3,%
 2026-06-01,2026-Q2,C31,Manufacture of furniture,constant_2018,level,4665.0,PHP mn
 2026-06-01,2026-Q2,C31,Manufacture of furniture,constant_2018,share,0.5,%
 2026-06-01,2026-Q2,C31,Manufacture of furniture,constant_2018,yoy,22.3,%
-2026-06-01,2026-Q2,C31,Manufacture of furniture,current,level,4551.0,PHP mn
+2026-06-01,2026-Q2,C31,Manufacture of furniture,current,level,4558.0,PHP mn
 2026-06-01,2026-Q2,C31,Manufacture of furniture,current,share,0.5,%
-2026-06-01,2026-Q2,C31,Manufacture of furniture,current,yoy,24.7,%
-2026-06-01,2026-Q2,C32,Other manufacturing,constant_2018,level,26372.0,PHP mn
+2026-06-01,2026-Q2,C31,Manufacture of furniture,current,yoy,24.8,%
+2026-06-01,2026-Q2,C32,Other manufacturing,constant_2018,level,26138.0,PHP mn
 2026-06-01,2026-Q2,C32,Other manufacturing,constant_2018,share,2.6,%
-2026-06-01,2026-Q2,C32,Other manufacturing,constant_2018,yoy,1.7,%
-2026-06-01,2026-Q2,C32,Other manufacturing,current,level,22109.0,PHP mn
+2026-06-01,2026-Q2,C32,Other manufacturing,constant_2018,yoy,0.7,%
+2026-06-01,2026-Q2,C32,Other manufacturing,current,level,21895.0,PHP mn
 2026-06-01,2026-Q2,C32,Other manufacturing,current,share,2.2,%
-2026-06-01,2026-Q2,C32,Other manufacturing,current,yoy,4.2,%
+2026-06-01,2026-Q2,C32,Other manufacturing,current,yoy,3.2,%
 2026-06-01,2026-Q2,industry,Industry,constant_2018,share_gdp,27.9,%
-2026-06-01,2026-Q2,industry,Industry,current,share_gdp,27.3,%
+2026-06-01,2026-Q2,industry,Industry,current,share_gdp,27.2,%
+2026-09-01,2026-Q3,C,Manufacturing,constant_2018,level,815277.0,PHP mn
+2026-09-01,2026-Q3,C,Manufacturing,constant_2018,share,100.0,%
+2026-09-01,2026-Q3,C,Manufacturing,constant_2018,share_gdp,14.4,%
+2026-09-01,2026-Q3,C,Manufacturing,constant_2018,yoy,0.7,%
+2026-09-01,2026-Q3,C,Manufacturing,current,level,854349.0,PHP mn
+2026-09-01,2026-Q3,C,Manufacturing,current,share,100.0,%
+2026-09-01,2026-Q3,C,Manufacturing,current,share_gdp,12.1,%
+2026-09-01,2026-Q3,C,Manufacturing,current,yoy,4.0,%
+2026-09-01,2026-Q3,C10,Manufacture of food products,constant_2018,level,336415.0,PHP mn
+2026-09-01,2026-Q3,C10,Manufacture of food products,constant_2018,share,41.3,%
+2026-09-01,2026-Q3,C10,Manufacture of food products,constant_2018,yoy,-0.1,%
+2026-09-01,2026-Q3,C10,Manufacture of food products,current,level,359178.0,PHP mn
+2026-09-01,2026-Q3,C10,Manufacture of food products,current,share,42.0,%
+2026-09-01,2026-Q3,C10,Manufacture of food products,current,yoy,1.5,%
+2026-09-01,2026-Q3,C11,Manufacture of beverages,constant_2018,level,46779.0,PHP mn
+2026-09-01,2026-Q3,C11,Manufacture of beverages,constant_2018,share,5.7,%
+2026-09-01,2026-Q3,C11,Manufacture of beverages,constant_2018,yoy,-2.4,%
+2026-09-01,2026-Q3,C11,Manufacture of beverages,current,level,64598.0,PHP mn
+2026-09-01,2026-Q3,C11,Manufacture of beverages,current,share,7.6,%
+2026-09-01,2026-Q3,C11,Manufacture of beverages,current,yoy,0.7,%
+2026-09-01,2026-Q3,C12,Manufacture of tobacco products,constant_2018,level,6317.0,PHP mn
+2026-09-01,2026-Q3,C12,Manufacture of tobacco products,constant_2018,share,0.8,%
+2026-09-01,2026-Q3,C12,Manufacture of tobacco products,constant_2018,yoy,-4.7,%
+2026-09-01,2026-Q3,C12,Manufacture of tobacco products,current,level,6632.0,PHP mn
+2026-09-01,2026-Q3,C12,Manufacture of tobacco products,current,share,0.8,%
+2026-09-01,2026-Q3,C12,Manufacture of tobacco products,current,yoy,1.9,%
+2026-09-01,2026-Q3,C13,Manufacture of textiles,constant_2018,level,10737.0,PHP mn
+2026-09-01,2026-Q3,C13,Manufacture of textiles,constant_2018,share,1.3,%
+2026-09-01,2026-Q3,C13,Manufacture of textiles,constant_2018,yoy,2.2,%
+2026-09-01,2026-Q3,C13,Manufacture of textiles,current,level,12252.0,PHP mn
+2026-09-01,2026-Q3,C13,Manufacture of textiles,current,share,1.4,%
+2026-09-01,2026-Q3,C13,Manufacture of textiles,current,yoy,2.9,%
+2026-09-01,2026-Q3,C14,Manufacture of wearing apparel,constant_2018,level,17403.0,PHP mn
+2026-09-01,2026-Q3,C14,Manufacture of wearing apparel,constant_2018,share,2.1,%
+2026-09-01,2026-Q3,C14,Manufacture of wearing apparel,constant_2018,yoy,18.7,%
+2026-09-01,2026-Q3,C14,Manufacture of wearing apparel,current,level,14954.0,PHP mn
+2026-09-01,2026-Q3,C14,Manufacture of wearing apparel,current,share,1.8,%
+2026-09-01,2026-Q3,C14,Manufacture of wearing apparel,current,yoy,18.9,%
+2026-09-01,2026-Q3,C15,"Manufacture of leather and related products, including footwear",constant_2018,level,2578.0,PHP mn
+2026-09-01,2026-Q3,C15,"Manufacture of leather and related products, including footwear",constant_2018,share,0.3,%
+2026-09-01,2026-Q3,C15,"Manufacture of leather and related products, including footwear",constant_2018,yoy,30.0,%
+2026-09-01,2026-Q3,C15,"Manufacture of leather and related products, including footwear",current,level,3197.0,PHP mn
+2026-09-01,2026-Q3,C15,"Manufacture of leather and related products, including footwear",current,share,0.4,%
+2026-09-01,2026-Q3,C15,"Manufacture of leather and related products, including footwear",current,yoy,37.4,%
+2026-09-01,2026-Q3,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",constant_2018,level,6804.0,PHP mn
+2026-09-01,2026-Q3,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",constant_2018,share,0.8,%
+2026-09-01,2026-Q3,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",constant_2018,yoy,12.7,%
+2026-09-01,2026-Q3,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",current,level,4584.0,PHP mn
+2026-09-01,2026-Q3,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",current,share,0.5,%
+2026-09-01,2026-Q3,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",current,yoy,14.3,%
+2026-09-01,2026-Q3,C17,Manufacture of paper and paper products,constant_2018,level,11711.0,PHP mn
+2026-09-01,2026-Q3,C17,Manufacture of paper and paper products,constant_2018,share,1.4,%
+2026-09-01,2026-Q3,C17,Manufacture of paper and paper products,constant_2018,yoy,6.5,%
+2026-09-01,2026-Q3,C17,Manufacture of paper and paper products,current,level,9711.0,PHP mn
+2026-09-01,2026-Q3,C17,Manufacture of paper and paper products,current,share,1.1,%
+2026-09-01,2026-Q3,C17,Manufacture of paper and paper products,current,yoy,5.7,%
+2026-09-01,2026-Q3,C18,Printing and reproduction of recorded media,constant_2018,level,3469.0,PHP mn
+2026-09-01,2026-Q3,C18,Printing and reproduction of recorded media,constant_2018,share,0.4,%
+2026-09-01,2026-Q3,C18,Printing and reproduction of recorded media,constant_2018,yoy,1.7,%
+2026-09-01,2026-Q3,C18,Printing and reproduction of recorded media,current,level,3869.0,PHP mn
+2026-09-01,2026-Q3,C18,Printing and reproduction of recorded media,current,share,0.5,%
+2026-09-01,2026-Q3,C18,Printing and reproduction of recorded media,current,yoy,2.3,%
+2026-09-01,2026-Q3,C19,Manufacture of coke and refined petroleum products,constant_2018,level,25422.0,PHP mn
+2026-09-01,2026-Q3,C19,Manufacture of coke and refined petroleum products,constant_2018,share,3.1,%
+2026-09-01,2026-Q3,C19,Manufacture of coke and refined petroleum products,constant_2018,yoy,12.4,%
+2026-09-01,2026-Q3,C19,Manufacture of coke and refined petroleum products,current,level,16795.0,PHP mn
+2026-09-01,2026-Q3,C19,Manufacture of coke and refined petroleum products,current,share,2.0,%
+2026-09-01,2026-Q3,C19,Manufacture of coke and refined petroleum products,current,yoy,37.0,%
+2026-09-01,2026-Q3,C20,Manufacture of chemical and chemical products,constant_2018,level,87309.0,PHP mn
+2026-09-01,2026-Q3,C20,Manufacture of chemical and chemical products,constant_2018,share,10.7,%
+2026-09-01,2026-Q3,C20,Manufacture of chemical and chemical products,constant_2018,yoy,-13.4,%
+2026-09-01,2026-Q3,C20,Manufacture of chemical and chemical products,current,level,88478.0,PHP mn
+2026-09-01,2026-Q3,C20,Manufacture of chemical and chemical products,current,share,10.4,%
+2026-09-01,2026-Q3,C20,Manufacture of chemical and chemical products,current,yoy,-8.9,%
+2026-09-01,2026-Q3,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,constant_2018,level,17673.0,PHP mn
+2026-09-01,2026-Q3,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,constant_2018,share,2.2,%
+2026-09-01,2026-Q3,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,constant_2018,yoy,-4.9,%
+2026-09-01,2026-Q3,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,current,level,11274.0,PHP mn
+2026-09-01,2026-Q3,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,current,share,1.3,%
+2026-09-01,2026-Q3,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,current,yoy,-2.8,%
+2026-09-01,2026-Q3,C22,Manufacture of rubber and plastic products,constant_2018,level,11841.0,PHP mn
+2026-09-01,2026-Q3,C22,Manufacture of rubber and plastic products,constant_2018,share,1.5,%
+2026-09-01,2026-Q3,C22,Manufacture of rubber and plastic products,constant_2018,yoy,3.0,%
+2026-09-01,2026-Q3,C22,Manufacture of rubber and plastic products,current,level,13851.0,PHP mn
+2026-09-01,2026-Q3,C22,Manufacture of rubber and plastic products,current,share,1.6,%
+2026-09-01,2026-Q3,C22,Manufacture of rubber and plastic products,current,yoy,4.8,%
+2026-09-01,2026-Q3,C23,Manufacture of other non-metallic mineral products,constant_2018,level,24220.0,PHP mn
+2026-09-01,2026-Q3,C23,Manufacture of other non-metallic mineral products,constant_2018,share,3.0,%
+2026-09-01,2026-Q3,C23,Manufacture of other non-metallic mineral products,constant_2018,yoy,-7.0,%
+2026-09-01,2026-Q3,C23,Manufacture of other non-metallic mineral products,current,level,24465.0,PHP mn
+2026-09-01,2026-Q3,C23,Manufacture of other non-metallic mineral products,current,share,2.9,%
+2026-09-01,2026-Q3,C23,Manufacture of other non-metallic mineral products,current,yoy,-4.2,%
+2026-09-01,2026-Q3,C24,Manufacture of basic metals,constant_2018,level,26414.0,PHP mn
+2026-09-01,2026-Q3,C24,Manufacture of basic metals,constant_2018,share,3.2,%
+2026-09-01,2026-Q3,C24,Manufacture of basic metals,constant_2018,yoy,19.2,%
+2026-09-01,2026-Q3,C24,Manufacture of basic metals,current,level,25034.0,PHP mn
+2026-09-01,2026-Q3,C24,Manufacture of basic metals,current,share,2.9,%
+2026-09-01,2026-Q3,C24,Manufacture of basic metals,current,yoy,25.5,%
+2026-09-01,2026-Q3,C25,"Manufacture of fabricated metal products, except machinery and equipment",constant_2018,level,4068.0,PHP mn
+2026-09-01,2026-Q3,C25,"Manufacture of fabricated metal products, except machinery and equipment",constant_2018,share,0.5,%
+2026-09-01,2026-Q3,C25,"Manufacture of fabricated metal products, except machinery and equipment",constant_2018,yoy,-6.4,%
+2026-09-01,2026-Q3,C25,"Manufacture of fabricated metal products, except machinery and equipment",current,level,3824.0,PHP mn
+2026-09-01,2026-Q3,C25,"Manufacture of fabricated metal products, except machinery and equipment",current,share,0.4,%
+2026-09-01,2026-Q3,C25,"Manufacture of fabricated metal products, except machinery and equipment",current,yoy,-4.9,%
+2026-09-01,2026-Q3,C26,"Manufacture of computer, electronic and optical products",constant_2018,level,109676.0,PHP mn
+2026-09-01,2026-Q3,C26,"Manufacture of computer, electronic and optical products",constant_2018,share,13.5,%
+2026-09-01,2026-Q3,C26,"Manufacture of computer, electronic and optical products",constant_2018,yoy,13.1,%
+2026-09-01,2026-Q3,C26,"Manufacture of computer, electronic and optical products",current,level,134016.0,PHP mn
+2026-09-01,2026-Q3,C26,"Manufacture of computer, electronic and optical products",current,share,15.7,%
+2026-09-01,2026-Q3,C26,"Manufacture of computer, electronic and optical products",current,yoy,19.6,%
+2026-09-01,2026-Q3,C27,Manufacture of electrical equipment,constant_2018,level,11963.0,PHP mn
+2026-09-01,2026-Q3,C27,Manufacture of electrical equipment,constant_2018,share,1.5,%
+2026-09-01,2026-Q3,C27,Manufacture of electrical equipment,constant_2018,yoy,2.8,%
+2026-09-01,2026-Q3,C27,Manufacture of electrical equipment,current,level,10845.0,PHP mn
+2026-09-01,2026-Q3,C27,Manufacture of electrical equipment,current,share,1.3,%
+2026-09-01,2026-Q3,C27,Manufacture of electrical equipment,current,yoy,2.7,%
+2026-09-01,2026-Q3,C28,Manufacture of machinery and equipment except electrical,constant_2018,level,10115.0,PHP mn
+2026-09-01,2026-Q3,C28,Manufacture of machinery and equipment except electrical,constant_2018,share,1.2,%
+2026-09-01,2026-Q3,C28,Manufacture of machinery and equipment except electrical,constant_2018,yoy,-22.1,%
+2026-09-01,2026-Q3,C28,Manufacture of machinery and equipment except electrical,current,level,8021.0,PHP mn
+2026-09-01,2026-Q3,C28,Manufacture of machinery and equipment except electrical,current,share,0.9,%
+2026-09-01,2026-Q3,C28,Manufacture of machinery and equipment except electrical,current,yoy,-19.7,%
+2026-09-01,2026-Q3,C29-C30,Manufacture of transport equipment,constant_2018,level,22196.0,PHP mn
+2026-09-01,2026-Q3,C29-C30,Manufacture of transport equipment,constant_2018,share,2.7,%
+2026-09-01,2026-Q3,C29-C30,Manufacture of transport equipment,constant_2018,yoy,5.9,%
+2026-09-01,2026-Q3,C29-C30,Manufacture of transport equipment,current,level,18391.0,PHP mn
+2026-09-01,2026-Q3,C29-C30,Manufacture of transport equipment,current,share,2.2,%
+2026-09-01,2026-Q3,C29-C30,Manufacture of transport equipment,current,yoy,9.0,%
+2026-09-01,2026-Q3,C31,Manufacture of furniture,constant_2018,level,4201.0,PHP mn
+2026-09-01,2026-Q3,C31,Manufacture of furniture,constant_2018,share,0.5,%
+2026-09-01,2026-Q3,C31,Manufacture of furniture,constant_2018,yoy,-0.5,%
+2026-09-01,2026-Q3,C31,Manufacture of furniture,current,level,3845.0,PHP mn
+2026-09-01,2026-Q3,C31,Manufacture of furniture,current,share,0.5,%
+2026-09-01,2026-Q3,C31,Manufacture of furniture,current,yoy,1.6,%
+2026-09-01,2026-Q3,C32,Other manufacturing,constant_2018,level,17968.0,PHP mn
+2026-09-01,2026-Q3,C32,Other manufacturing,constant_2018,share,2.2,%
+2026-09-01,2026-Q3,C32,Other manufacturing,constant_2018,yoy,-1.2,%
+2026-09-01,2026-Q3,C32,Other manufacturing,current,level,16535.0,PHP mn
+2026-09-01,2026-Q3,C32,Other manufacturing,current,share,1.9,%
+2026-09-01,2026-Q3,C32,Other manufacturing,current,yoy,1.9,%
+2026-09-01,2026-Q3,industry,Industry,constant_2018,share_gdp,25.3,%
+2026-09-01,2026-Q3,industry,Industry,current,share_gdp,23.2,%
