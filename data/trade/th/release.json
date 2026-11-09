@@ -1,0 +1,20 @@
+{
+ "code": "T2026-09b900",
+ "label": "2026-09",
+ "latest_month": "2026-09-01",
+ "source": "trade_th",
+ "backfill_complete": false,
+ "table": "MOC tradereport API: summarycountries, exportharmonizecountries, importharmonizecountries",
+ "processed_at": "2026-11-09T06:27:13Z",
+ "rows": 9016,
+ "warnings": [
+  "total missing for 1995-01"
+ ],
+ "fetched": 900,
+ "history": [
+  {
+   "code": "T2026-09b900",
+   "processed_at": "2026-11-09T06:27:13Z"
+  }
+ ]
+}
