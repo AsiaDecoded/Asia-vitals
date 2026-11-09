@@ -30,7 +30,8 @@ MARKETS = {"Total All Markets": "WLD", "United States Of America": "US", "Mainla
            "Czechia": "CZ", "Denmark": "DK", "Estonia": "EE", "Finland": "FI", "France": "FR", "Germany": "DE", "Greece": "GR",
            "Hungary": "HU", "Republic Of Ireland": "IE", "Ireland": "IE", "Italy": "IT", "Latvia": "LV", "Lithuania": "LT",
            "Luxembourg": "LU", "Malta": "MT", "Netherlands": "NL", "Poland": "PL", "Portugal": "PT", "Romania": "RO",
-           "Slovak Republic": "SK", "Slovakia": "SK", "Slovenia": "SI", "Spain": "ES", "Sweden": "SE"}
+           "Slovak Republic": "SK", "Slovakia": "SK", "Slovenia": "SI", "Spain": "ES", "Sweden": "SE",
+           "European Union": "EU", "European Union (EU)": "EU"}
 BY_MARKET = {"M451491": "imports", "M451501": "domestic_exports", "M451511": "re_exports"}
 HS_EXP = ["85", "8419", "8470", "8471", "8472", "8473"]
 HS_IMP = ["2709", "2710"]
@@ -57,8 +58,8 @@ def series(tid):
     return out
 
 
-def row(flow, partner, product, d, v, s):
-    return {"economy": "SG", "flow": flow, "partner": partner, "product": product, "date": d, "value": v, "unit": "SGD thousand",
+def row(flow, partner, product, d, v, s, unit="SGD thousand"):
+    return {"economy": "SG", "flow": flow, "partner": partner, "product": product, "date": d, "value": v, "unit": unit,
             "usd_mn": None, "usd_calculated": "", "series": s}
 
 
@@ -111,12 +112,13 @@ def update(force=False, **_):
             if not iso or iso == "WLD":
                 continue
             for d, v in s.items():
-                rows.append(row(flow, iso, "TOTAL", d, v, f"{tid} {text}"))
+                # by-market tables are published in S$ million (M451001 and T010001 are S$ thousand)
+                rows.append(row(flow, iso, "TOTAL", d, v, f"{tid} {text}", "SGD million"))
                 if flow != "imports":
                     by.setdefault((iso, d), {})[flow] = v
     for (iso, d), x in by.items():
         if "domestic_exports" in x and "re_exports" in x:
-            rows.append(row("exports", iso, "TOTAL", d, x["domestic_exports"] + x["re_exports"], "M451501 + M451511 (calculated)"))
+            rows.append(row("exports", iso, "TOTAL", d, x["domestic_exports"] + x["re_exports"], "M451501 + M451511 (calculated)", "SGD million"))
     for tid, flow in (("M450981", "domestic_exports"), ("M451131", "re_exports")):
         for (no, text), s in series(tid).items():
             if text == "Total Electronic Products":
@@ -137,8 +139,10 @@ def update(force=False, **_):
             if (r["hs"] in HS_IMP and flow == "imports") or (r["hs"] in HS_EXP and flow in ("exports", "domestic_exports", "re_exports")):
                 rows.append(row(flow, "WLD", f"HS{r['hs']}", d, r["v"], f"T010001 {r['tt']} WORLD HS {r['hs']}"))
     rows = [r for r in rows if r["value"] is not None]
+    trade.to_usd([r for r in rows if r["unit"] == "SGD million"], "sg", 1e6)
     trade.to_usd(rows, "sg", 1000)
-    rows += trade.eu_sum(rows, [])
+    have_eu = {(r["flow"], r["date"]) for r in rows if r["partner"] == "EU"}
+    rows += [r for r in trade.eu_sum(rows, sorted(trade.EU27)) if (r["flow"], r["date"]) not in have_eu]
     last = trade.latest(rows)
     folder = trade.write("sg", rows)
     code = f"T{last[:7]}h{len(st.data)}"

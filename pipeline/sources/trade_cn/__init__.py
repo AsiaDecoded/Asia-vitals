@@ -21,9 +21,10 @@ NAME = "trade_cn"
 DESCRIPTION = "China merchandise trade (GACC monthly bulletin, US$, 2018-): totals, partners, HS 85, oil imports"
 SITE = "http://english.customs.gov.cn"
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"}
-COUNTRY = [(r"^total", "WLD"), (r"european union", "EU"), (r"^united states", "US"), (r"hong kong", "HK"), (r"^japan", "JP"),
-           (r"taiwan", "TW"), (r"korea, ?rep|republic of korea|^korea$", "KR"), (r"^india$", "IN"), (r"^indonesia", "ID"),
-           (r"^malaysia", "MY"), (r"^philippines", "PH"), (r"^singapore", "SG"), (r"^thailand", "TH"), (r"viet ?nam", "VN")]
+COUNTRY = [(r"^total$", "WLD"), (r"^(eu|european union)$", "EU"), (r"^united states( of america)?$", "US"),
+           (r"^hong kong(, ?china)?$", "HK"), (r"^japan$", "JP"), (r"^taiwan(, ?china)?$", "TW"),
+           (r"^(republic of korea|korea, ?rep\.?)$", "KR"), (r"^india$", "IN"), (r"^indonesia$", "ID"), (r"^malaysia$", "MY"),
+           (r"^philippines$", "PH"), (r"^singapore$", "SG"), (r"^thailand$", "TH"), (r"^viet ?nam$", "VN")]
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 BUDGET = 60
 DIAG = []
@@ -119,7 +120,7 @@ def update(force=False, **_):
         if tab == "2":
             cols = pick_cols(rows, m, ["Exports", "Imports"])
             for r in rows:
-                name = (r[0] or "").replace("，", ",").lower()
+                name = re.sub(r"\s+", " ", (r[0] or "").replace("，", ",")).strip().lower()
                 iso = next((c for pat, c in COUNTRY if re.search(pat, name)), None)
                 if not iso:
                     continue
@@ -145,7 +146,7 @@ def update(force=False, **_):
     for (flow, p, prod, y, m), (v, is_month, s) in vals.items():
         if not is_month and m > 1:
             prev = vals.get((flow, p, prod, y, m - 1))
-            if not prev:
+            if not prev or prev[1]:     # need the previous month's year to date too
                 continue
             v, s = v - prev[0], s + " (year to date less previous month, calculated)"
         rows_out.append({"economy": "CN", "flow": flow, "partner": p, "product": prod, "date": f"{y}-{m:02d}-01",
