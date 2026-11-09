@@ -1,0 +1,17 @@
+{
+ "code": "T2026-09",
+ "label": "2026-09",
+ "latest_month": "2026-09-01",
+ "source": "trade_jp",
+ "table": "MOF customs suii CSVs d41ma, d42ma001-010, d61ma",
+ "processed_at": "2026-11-09T06:02:51Z",
+ "rows": 47916,
+ "warnings": [],
+ "fingerprint": "924287894bab8412",
+ "history": [
+  {
+   "code": "T2026-09",
+   "processed_at": "2026-11-09T06:02:51Z"
+  }
+ ]
+}
