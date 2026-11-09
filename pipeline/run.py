@@ -125,6 +125,13 @@ def main():
         except Exception:  # noqa: BLE001 - nor the Asia manufacturing files
             say("   ERROR building the Asia manufacturing files:")
             say(traceback.format_exc().rstrip())
+        try:
+            from core.asia_trade import build as build_asia_trade
+            res = build_asia_trade()
+            say(f"== Asia trade: {'UPDATED' if res['updated'] else 'unchanged'}: {res['summary']}")
+        except Exception:  # noqa: BLE001 - nor the Asia trade files
+            say("   ERROR building the Asia trade files:")
+            say(traceback.format_exc().rstrip())
     say(f"result: updated={updated or '-'} failed={failed or '-'}")
     (Path(__file__).resolve().parent.parent / "run_report.txt").write_text("\n".join(report) + "\n")
     gh_output(updated=str(bool(updated)).lower(), updated_sources=" ".join(updated),
