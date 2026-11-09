@@ -1,0 +1,42 @@
+name: Trade probe 2 (manual)
+
+# One-off: national trade data endpoints for the 12 economies (9 Nov 2026); saves to the
+# "discovery" branch under discovery/trade2.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - pipeline/tools/trade_probe2.py
+      - .github/workflows/trade-probe2.yml
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe
+        env:
+          ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
+          ECOS_KEY: ${{ secrets.ECOS_KEY }}
+          BPS_KEY: ${{ secrets.BPS_KEY }}
+        run: python -I pipeline/tools/trade_probe2.py discovery/trade2
+      - name: Push results to the discovery branch
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mv discovery /tmp/discovery
+          git fetch origin discovery
+          git checkout -B discovery origin/discovery
+          mkdir -p discovery && rm -rf discovery/trade2 && cp -r /tmp/discovery/trade2 discovery/
+          git add discovery/trade2
+          git commit -m "Trade probe 2" || exit 0
+          for i in 1 2 3; do git push origin discovery && break; git pull --rebase origin discovery; done
