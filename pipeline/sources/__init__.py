@@ -74,4 +74,6 @@ SOURCES = [
     "trade_id",
     "trade_in",
     "trade_sg",
+    "trade_kr",
+    "trade_cn",
 ]

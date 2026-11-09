@@ -83,11 +83,10 @@ def table(html):
 def queries(ym):
     y, m = ym[:4], str(int(ym[5:7]))
     out = []
-    for flow, page in (("exports", "commoditywise_export"), ("imports", "commoditywise_import")):
+    for flow, page, px in (("exports", "commoditywise_export", "dd"), ("imports", "commoditywise_import", "imdd")):
         for lev in ("2", "4"):
-            out.append((f"{flow}:HS{lev}:{ym}", page, {"ddMonth": m, "ddYear": y, "ddCommodityLevel": lev, "ddReportVal": "1",
-                                                        "ddReportYear": "2", "comlev": lev, "comval": "all", "hscode_value": "",
-                                                        "description_value": ""}))
+            out.append((f"{flow}:HS{lev}:{ym}", page, {f"{px}Month": m, f"{px}Year": y, f"{px}CommodityLevel": lev,
+                                                        f"{px}ReportVal": "1", f"{px}ReportYear": "2", "comlev": "all"}))
     for iso, c in COUNTRIES.items():
         out.append((f"exports:{iso}:{ym}", "country_wise_all_commodities_export",
                     {"cwcexddMonth": m, "cwcexddYear": y, "cwcexallcount": c, "cwcexddCommodityLevel": "2",
@@ -104,9 +103,15 @@ def update(force=False, **_):
     today = time.strftime("%Y-%m")
     last_avail = trade.shift(today, -2)
     recent = set(trade.months(trade.shift(last_avail, -3), last_avail))
+    fails = []
     for ym in reversed(trade.months(FIRST, last_avail)):
         for key, page, fields in queries(ym):
-            st.get(key, lambda: table(post(page, fields)), refresh=ym in recent, budget=BUDGET)
+            if len(fails) >= 15:
+                break
+            try:
+                st.get(key, lambda: table(post(page, fields)), refresh=ym in recent, budget=BUDGET)
+            except Exception as e:  # noqa: BLE001
+                fails.append(f"{key}: {str(e)[:120]}")
     st.save()
     rows = []
     for key, tab in st.data.items():
@@ -126,11 +131,11 @@ def update(force=False, **_):
                 rows.append({"economy": "IN", "flow": flow, "partner": kind, "product": "TOTAL", "date": d, "value": v,
                              "unit": "USD million", "usd_mn": v, "usd_calculated": "", "series": f"TradeStat country_wise_all_commodities {kind}"})
     if not rows:
-        raise CheckFailed(["TradeStat: nothing read"])
+        raise CheckFailed(["TradeStat: nothing read"] + fails[:5])
     last = trade.latest(rows)
     complete = all(k in st.data for ym in trade.months(FIRST, last_avail) for k, _, _ in queries(ym))
     folder = trade.write("in", rows)
     code = f"T{last[:7]}" + ("" if complete else f"b{len(st.data)}")
     write_release(folder, {"code": code, "label": last[:7], "latest_month": last, "source": NAME, "backfill_complete": complete,
-                           "table": "Commerce TradeStat MEIDB"}, [], len(rows), {"fetched": st.fetched})
+                           "table": "Commerce TradeStat MEIDB"}, fails[:10], len(rows), {"fetched": st.fetched})
     return {"updated": True, "code": code, "summary": f"{last[:7]}: {len(rows)} rows, {st.fetched} queries" + ("" if complete else " (backfill continuing)")}

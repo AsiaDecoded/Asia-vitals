@@ -86,15 +86,24 @@ def update(force=False, **_):
     folder = trade.OUT / "sg"
     state = read_json(folder / "release.json", {}) or {}
     rows = []
-    for (no, text), s in series("M451001").items():
-        k = {"Total Exports": ("exports", "M451001 Total Exports"), "Domestic Exports": ("domestic_exports", "M451001 Domestic Exports"),
-             "Re-Exports": ("re_exports", "M451001 Re-Exports"), "Imports": ("imports", "M451001 Imports"),
-             "Total Merchandise Imports": ("imports", "M451001 Total Merchandise Imports"),
-             "Total Merchandise Exports": ("exports", "M451001 Total Merchandise Exports")}.get(text)
-        if k:
-            rows += [row(k[0], "WLD", "TOTAL", d, v, k[1]) for d, v in s.items()]
-    if not rows:
-        raise CheckFailed(["M451001: total rows not found"])
+    agg = series("M451001")
+    names = [t for (_n, t) in agg]
+    for (no, text), s in agg.items():
+        t = text.lower()
+        flow = None
+        if "." not in (no or "") or no.count(".") == 0:
+            if "re-export" in t:
+                flow = "re_exports"
+            elif "domestic export" in t and "non-oil" not in t and "oil" not in t:
+                flow = "domestic_exports"
+            elif "export" in t and "domestic" not in t:
+                flow = "exports"
+            elif "import" in t:
+                flow = "imports"
+        if flow and not any(r["flow"] == flow for r in rows):
+            rows += [row(flow, "WLD", "TOTAL", d, v, f"M451001 {text}") for d, v in s.items()]
+    if len({r["flow"] for r in rows}) < 4:
+        raise CheckFailed([f"M451001: total rows not all found; rows are {names[:20]}"])
     by = {}
     for tid, flow in BY_MARKET.items():
         for (no, text), s in series(tid).items():

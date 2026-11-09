@@ -60,7 +60,8 @@ def call(params, tries=4):
 
 
 def requests(y):
-    p = {"period": f"{y}01,{y}12"}
+    end = 12 if y < int(time.strftime("%Y")) else max(1, int(time.strftime("%m")) - 2)
+    p = {"period": f"{y}01,{y}{end:02d}"}
     out = []
     for t in FLOWS:
         side = ("coclass", "co") if t == 1 else ("ccclass", "cc")
