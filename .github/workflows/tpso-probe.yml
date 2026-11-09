@@ -1,0 +1,38 @@
+name: TPSO probe (manual)
+
+# One-off: TPSO Open API contents for Oct 2026 (Thailand CPI check failing); saves to the
+# "discovery" branch under discovery/tpso.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - pipeline/tools/tpso_probe.py
+      - .github/workflows/tpso-probe.yml
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe
+        run: python -I pipeline/tools/tpso_probe.py discovery/tpso
+      - name: Push results to the discovery branch
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          mv discovery /tmp/discovery
+          git fetch origin discovery
+          git checkout -B discovery origin/discovery
+          mkdir -p discovery && rm -rf discovery/tpso && cp -r /tmp/discovery/tpso discovery/
+          git add discovery/tpso
+          git commit -m "TPSO probe" || exit 0
+          for i in 1 2 3; do git push origin discovery && break; git pull --rebase origin discovery; done
