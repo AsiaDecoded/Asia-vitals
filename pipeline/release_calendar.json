@@ -21,7 +21,9 @@
   "id_cpi": "BPS: CPI on the first working day of the following month, 11:00 Jakarta (12:00 SGT); dates from that pattern. Bank Indonesia's SEKI table VIII.1 carries the data some days later (lag not published), so each window runs three weeks from the BPS release. The BPS WebAPI sources (id_bps) carry the release the same day. The same three-week windows serve Bank Indonesia's SEKI III.3 (JCI month-end, id_jci_seki) and IV.1-IV.4 (fiscal, id_fiscal_seki; id_fiscal_gdp recomputes from it): SEKI stamped III.3 on 5 Oct and IV.1-IV.4 on 6-13 Oct 2026 for the September data",
   "tw_prices": "DGBAS: each monthly release names the next date (Oct 2026 data on 5 Nov 2026, 16:00 Taipei); later dates expected on the pattern (5th working day after the month); the dated calendar page is script-only",
   "cn_prices": "NBS 2026 release calendar (to Dec 2026, 09:30 Beijing); 2027 expected from the pattern until NBS publishes its calendar in late December",
-  "vn_prices": "NSO: Decree 13/2026/ND-CP, CPI on the 3rd of the following month (weekends included), about 09:00 Hanoi; no dated calendar found. Quarterly PPI and trade prices come with the quarter-end CPI release",
+  "th_gdp": "NESDC: quarterly GDP on its announced dates, 09:30 Bangkok (10:30 SGT, so the 11:15 run): Q3 2026 on 16 Nov 2026, Q4 on 15 Feb 2027; Q1 and Q2 2027 expected (~18 May, ~17 Aug) until NESDC announces them. th_gdp_nesdc exits unchanged with one page request when the attachment id has not moved; th_gdp_intl (WDI) runs on the same dates",
+  "th_mpi": "OIE: MPI workbooks updated about 15:00 SGT on the 27th-30th of the following month (Sep 2026 on 30 Oct), after the 11:15 run, so in practice the next morning; no calendar found. th_mpi_oie exits unchanged when the workbooks' content has not changed",
+  "vn_prices": "NSO: Decree 13/2026/ND-CP, CPI on the 3rd of the following month (weekends included), about 09:00 Hanoi; no dated calendar found. Quarterly PPI and trade prices, GDP and the quarterly IIP come with the quarter-end CPI release (vn_gdp_nso finds a new quarter only in Jan, Apr, Jul, Oct); vn_gdp_intl (IMF WEO, WDI) runs on every date and exits unchanged otherwise",
   "id_gdp": "BPS: no dated calendar fetched; pattern: about the 5th of the second month after the quarter, 11:00 Jakarta (Q2 2026 on 5 Aug 2026); windows +/-3 days",
   "id_fiscal_monthly": "Ministry of Finance APBN KiTa press conference: no calendar found; it has fallen between the 9th and 22nd (Sep 2026 outturn 9 Oct, Aug 18 Sep), so the source runs daily from the 3rd to the 25th; nominal date the 15th",
   "id_debt_imf": "No fixed dates: SUSPI (Bank Indonesia and Ministry of Finance) is quarterly with no calendar found; IMF WEO in April and October, IMF Global Debt Database once a year. A short monthly window (15th-18th) picks each up within a month; every source exits unchanged when nothing is new",
@@ -183,6 +185,17 @@
    {"ref": "2027-01", "date": "2027-02-05", "from": "2027-02-02", "to": "2027-02-10", "status": "expected"},
    {"ref": "2027-02", "date": "2027-03-05", "from": "2027-03-02", "to": "2027-03-10", "status": "expected"},
    {"ref": "2027-03", "date": "2027-04-07", "from": "2027-04-01", "to": "2027-04-10", "status": "expected"}]},
+  "th_gdp": {"label": "Thailand GDP (NESDC) and World Bank WDI", "sources": ["th_gdp_nesdc", "th_gdp_intl"], "time_sgt": "10:30", "dates": [
+   {"ref": "2026-Q3", "date": "2026-11-16", "from": "2026-11-16", "to": "2026-11-20", "status": "official"},
+   {"ref": "2026-Q4", "date": "2027-02-15", "from": "2027-02-15", "to": "2027-02-19", "status": "official"},
+   {"ref": "2027-Q1", "date": "2027-05-18", "from": "2027-05-17", "to": "2027-05-24", "status": "expected"},
+   {"ref": "2027-Q2", "date": "2027-08-17", "from": "2027-08-16", "to": "2027-08-23", "status": "expected"}]},
+  "th_mpi": {"label": "Thailand manufacturing production index (OIE)", "sources": ["th_mpi_oie"], "time_sgt": "15:00", "dates": [
+   {"ref": "2026-10", "date": "2026-11-27", "from": "2026-11-27", "to": "2026-12-03", "status": "expected"},
+   {"ref": "2026-11", "date": "2026-12-28", "from": "2026-12-27", "to": "2027-01-05", "status": "expected"},
+   {"ref": "2026-12", "date": "2027-01-28", "from": "2027-01-27", "to": "2027-02-03", "status": "expected"},
+   {"ref": "2027-01", "date": "2027-02-27", "from": "2027-02-26", "to": "2027-03-04", "status": "expected"},
+   {"ref": "2027-02", "date": "2027-03-29", "from": "2027-03-27", "to": "2027-04-02", "status": "expected"}]},
   "th_xmpi": {"label": "Thailand export and import prices", "sources": ["th_xmpi_tpso"], "time_sgt": "12:30", "dates": [
    {"ref": "2026-10", "date": "2026-11-27", "from": "2026-11-24", "to": "2026-12-02", "status": "expected"},
    {"ref": "2026-11", "date": "2026-12-28", "from": "2026-12-23", "to": "2027-01-04", "status": "expected"},
@@ -215,7 +228,7 @@
    {"ref": "2026-12", "date": "2027-01-09", "from": "2027-01-08", "to": "2027-01-16", "status": "expected"},
    {"ref": "2027-01", "date": "2027-02-10", "from": "2027-02-08", "to": "2027-02-17", "status": "expected"},
    {"ref": "2027-02", "date": "2027-03-09", "from": "2027-03-08", "to": "2027-03-16", "status": "expected"}]},
-  "vn_prices": {"label": "Vietnam CPI (and quarterly producer and trade prices)", "sources": ["vn_cpi_nso", "vn_ppi_nso"], "time_sgt": "10:00", "dates": [
+  "vn_prices": {"label": "Vietnam CPI (and quarterly producer and trade prices, GDP and IIP)", "sources": ["vn_cpi_nso", "vn_ppi_nso", "vn_gdp_nso", "vn_gdp_intl"], "time_sgt": "10:00", "dates": [
    {"ref": "2026-10", "date": "2026-11-03", "from": "2026-11-02", "to": "2026-11-07", "status": "expected"},
    {"ref": "2026-11", "date": "2026-12-03", "from": "2026-12-02", "to": "2026-12-07", "status": "expected"},
    {"ref": "2026-12", "date": "2027-01-03", "from": "2027-01-02", "to": "2027-01-07", "status": "expected"},
