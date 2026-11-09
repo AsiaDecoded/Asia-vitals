@@ -111,25 +111,25 @@ Exports: Asia: Singapore (f88),KR,exports,SG,TOTAL,,901Y121 수출금액 싱가�
 Exports: Asia: Thailand (f89),KR,exports,TH,TOTAL,,901Y121 수출금액 태국,2024-06,2026-09,28
 Exports: Asia: Vietnam (f90),KR,exports,VN,TOTAL,,901Y121 수출금액 베트남,2024-06,2026-09,28
 Exports: USD,IN,exports,WLD,TOTAL,,no national series collected,,,0
-Exports: USD: United States,IN,exports,US,TOTAL,,no national series collected,,,0
-Exports: USD: China,IN,exports,CN,TOTAL,,no national series collected,,,0
-Exports: USD: Hong Kong SAR (China),IN,exports,HK,TOTAL,,no national series collected,,,0
-Exports: USD: Japan,IN,exports,JP,TOTAL,,no national series collected,,,0
+Exports: USD: United States,IN,exports,US,TOTAL,,TradeStat country_wise_all_commodities US,2026-06,2026-09,4
+Exports: USD: China,IN,exports,CN,TOTAL,,TradeStat country_wise_all_commodities CN,2026-06,2026-09,4
+Exports: USD: Hong Kong SAR (China),IN,exports,HK,TOTAL,,TradeStat country_wise_all_commodities HK,2026-06,2026-09,4
+Exports: USD: Japan,IN,exports,JP,TOTAL,,TradeStat country_wise_all_commodities JP,2026-06,2026-09,4
 Exports: USD: European Union,IN,exports,EU,TOTAL,,no national series collected,,,0
-Exports: USD: Taiwan,IN,exports,TW,TOTAL,,no national series collected,,,0
-Exports: USD: South Korea,IN,exports,KR,TOTAL,,no national series collected,,,0
-Exports: USD: Indonesia,IN,exports,ID,TOTAL,,no national series collected,,,0
-Exports: USD: Malaysia,IN,exports,MY,TOTAL,,no national series collected,,,0
-Exports: USD: Philippines,IN,exports,PH,TOTAL,,no national series collected,,,0
-Exports: USD: Singapore,IN,exports,SG,TOTAL,,no national series collected,,,0
-Exports: USD: Thailand,IN,exports,TH,TOTAL,,no national series collected,,,0
-Exports: USD: Vietnam,IN,exports,VN,TOTAL,,no national series collected,,,0
-Export: fob,ID,exports,WLD,TOTAL,,no national series collected,,,0
-Export: United States,ID,exports,US,TOTAL,,no national series collected,,,0
-Export: China,ID,exports,CN,TOTAL,,no national series collected,,,0
-Export: Hong Kong SAR (China),ID,exports,HK,TOTAL,,no national series collected,,,0
-Export: Japan,ID,exports,JP,TOTAL,,no national series collected,,,0
-Export: European Union,ID,exports,EU,TOTAL,,no national series collected,,,0
+Exports: USD: Taiwan,IN,exports,TW,TOTAL,,TradeStat country_wise_all_commodities TW,2026-06,2026-09,4
+Exports: USD: South Korea,IN,exports,KR,TOTAL,,TradeStat country_wise_all_commodities KR,2026-07,2026-09,3
+Exports: USD: Indonesia,IN,exports,ID,TOTAL,,TradeStat country_wise_all_commodities ID,2026-07,2026-09,3
+Exports: USD: Malaysia,IN,exports,MY,TOTAL,,TradeStat country_wise_all_commodities MY,2026-07,2026-09,3
+Exports: USD: Philippines,IN,exports,PH,TOTAL,,TradeStat country_wise_all_commodities PH,2026-07,2026-09,3
+Exports: USD: Singapore,IN,exports,SG,TOTAL,,TradeStat country_wise_all_commodities SG,2026-07,2026-09,3
+Exports: USD: Thailand,IN,exports,TH,TOTAL,,TradeStat country_wise_all_commodities TH,2026-07,2026-09,3
+Exports: USD: Vietnam,IN,exports,VN,TOTAL,,TradeStat country_wise_all_commodities VN,2026-07,2026-09,3
+Export: fob,ID,exports,WLD,TOTAL,,"SEKI V.11 Jumlah, fob",2005-01,2026-08,260
+Export: United States,ID,exports,US,TOTAL,,SEKI V.11 Amerika Serikat,2005-01,2026-08,260
+Export: China,ID,exports,CN,TOTAL,,SEKI V.11 Republik Rakyat Cina,2005-01,2026-08,260
+Export: Hong Kong SAR (China),ID,exports,HK,TOTAL,,SEKI V.11 Hong Kong SAR,2005-01,2026-08,260
+Export: Japan,ID,exports,JP,TOTAL,,SEKI V.11 Jepang,2005-01,2026-08,260
+Export: European Union,ID,exports,EU,TOTAL,,SEKI V.11 Uni Eropa,2005-01,2026-08,260
 Export: Denmark,ID,exports,DK,TOTAL,,no national series collected,,,0
 Export: Spain,ID,exports,ES,TOTAL,,no national series collected,,,0
 Export: Sweden,ID,exports,SE,TOTAL,,no national series collected,,,0
@@ -157,15 +157,15 @@ Export: Cyprus,ID,exports,CY,TOTAL,,no national series collected,,,0
 Export: Netherlands,ID,exports,NL,TOTAL,,no national series collected,,,0
 Export: France,ID,exports,FR,TOTAL,,no national series collected,,,0
 Export: Luxembourg,ID,exports,LU,TOTAL,,no national series collected,,,0
-Export: Taiwan,ID,exports,TW,TOTAL,,no national series collected,,,0
-Export: South Korea,ID,exports,KR,TOTAL,,no national series collected,,,0
-Export: India,ID,exports,IN,TOTAL,,no national series collected,,,0
-Export: Malaysia,ID,exports,MY,TOTAL,,no national series collected,,,0
-Export: Philippines,ID,exports,PH,TOTAL,,no national series collected,,,0
-Export: Singapore,ID,exports,SG,TOTAL,,no national series collected,,,0
-Export: Thailand,ID,exports,TH,TOTAL,,no national series collected,,,0
-Export: Vietnam,ID,exports,VN,TOTAL,,no national series collected,,,0
-Exports: fob (f208),MY,exports,WLD,TOTAL,,no national series collected,,,0
+Export: Taiwan,ID,exports,TW,TOTAL,,"SEKI V.11 Taiwan, Provinsi China",2005-01,2026-08,260
+Export: South Korea,ID,exports,KR,TOTAL,,SEKI V.11 Korea Selatan,2005-01,2026-08,260
+Export: India,ID,exports,IN,TOTAL,,SEKI V.11 India,2005-01,2026-08,260
+Export: Malaysia,ID,exports,MY,TOTAL,,SEKI V.11 Malaysia,2005-01,2026-08,260
+Export: Philippines,ID,exports,PH,TOTAL,,SEKI V.11 Filipina,2005-01,2026-08,260
+Export: Singapore,ID,exports,SG,TOTAL,,SEKI V.11 Singapura,2005-01,2026-08,260
+Export: Thailand,ID,exports,TH,TOTAL,,SEKI V.11 Thailand,2005-01,2026-08,260
+Export: Vietnam,ID,exports,VN,TOTAL,,SEKI V.11 Vietnam,2005-01,2026-08,260
+Exports: fob (f208),MY,exports,WLD,TOTAL,,OpenDOSM trade_headline exports,1990-01,2026-09,441
 Exports: United States (f156),MY,exports,US,TOTAL,,no national series collected,,,0
 Exports: China (f157),MY,exports,CN,TOTAL,,no national series collected,,,0
 Exports: Hong Kong SAR (China) (f159),MY,exports,HK,TOTAL,,no national series collected,,,0
@@ -235,7 +235,7 @@ Exports: USD: Malaysia,TH,exports,MY,TOTAL,,summarycountries MY MALAYSIA,2018-08
 Exports: USD: Philippines,TH,exports,PH,TOTAL,,summarycountries PH PHILIPPINES,2018-08,2026-09,98
 Exports: USD: Singapore,TH,exports,SG,TOTAL,,summarycountries SG SINGAPORE,2018-08,2026-09,98
 Exports: USD: Vietnam,TH,exports,VN,TOTAL,,summarycountries VN VIETNAM,2018-08,2026-09,98
-Exports,VN,exports,WLD,TOTAL,,no national series collected,,,0
+Exports,VN,exports,WLD,TOTAL,,NSO report 27.XK tháng TỔNG TRỊ GIÁ,2025-01,2026-10,7
 Exports: United States (f209),VN,exports,US,TOTAL,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,,,0
 Exports: China (f210),VN,exports,CN,TOTAL,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,,,0
 Exports: Hong Kong SAR (China) (f211),VN,exports,HK,TOTAL,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,,,0
@@ -372,25 +372,25 @@ Imports: Asia: Singapore (f90),KR,imports,SG,TOTAL,,901Y121 수입금액 싱가�
 Imports: Asia: Thailand (f91),KR,imports,TH,TOTAL,,901Y121 수입금액 태국,2024-06,2026-09,28
 Imports: Asia: Vietnam (f92),KR,imports,VN,TOTAL,,901Y121 수입금액 베트남,2024-06,2026-09,28
 Imports: USD,IN,imports,WLD,TOTAL,,no national series collected,,,0
-Imports: USD: United States,IN,imports,US,TOTAL,,no national series collected,,,0
-Imports: USD: China,IN,imports,CN,TOTAL,,no national series collected,,,0
-Imports: USD: Hong Kong SAR (China),IN,imports,HK,TOTAL,,no national series collected,,,0
-Imports: USD: Japan,IN,imports,JP,TOTAL,,no national series collected,,,0
+Imports: USD: United States,IN,imports,US,TOTAL,,TradeStat country_wise_all_commodities US,2026-06,2026-09,4
+Imports: USD: China,IN,imports,CN,TOTAL,,TradeStat country_wise_all_commodities CN,2026-06,2026-09,4
+Imports: USD: Hong Kong SAR (China),IN,imports,HK,TOTAL,,TradeStat country_wise_all_commodities HK,2026-06,2026-09,4
+Imports: USD: Japan,IN,imports,JP,TOTAL,,TradeStat country_wise_all_commodities JP,2026-06,2026-09,4
 Imports: USD: European Union,IN,imports,EU,TOTAL,,no national series collected,,,0
-Imports: USD: Taiwan,IN,imports,TW,TOTAL,,no national series collected,,,0
-Imports: USD: South Korea,IN,imports,KR,TOTAL,,no national series collected,,,0
-Imports: USD: Indonesia,IN,imports,ID,TOTAL,,no national series collected,,,0
-Imports: USD: Malaysia,IN,imports,MY,TOTAL,,no national series collected,,,0
-Imports: USD: Philippines,IN,imports,PH,TOTAL,,no national series collected,,,0
-Imports: USD: Singapore,IN,imports,SG,TOTAL,,no national series collected,,,0
-Imports: USD: Thailand,IN,imports,TH,TOTAL,,no national series collected,,,0
-Imports: USD: Vietnam,IN,imports,VN,TOTAL,,no national series collected,,,0
-Import: cif,ID,imports,WLD,TOTAL,,no national series collected,,,0
-Import: Value: USA,ID,imports,US,TOTAL,,no national series collected,,,0
-Import: Value: China,ID,imports,CN,TOTAL,,no national series collected,,,0
-Import: Value: Hong Kong SAR (China),ID,imports,HK,TOTAL,,no national series collected,,,0
-Import: Value: Japan,ID,imports,JP,TOTAL,,no national series collected,,,0
-Import: European Union,ID,imports,EU,TOTAL,,no national series collected,,,0
+Imports: USD: Taiwan,IN,imports,TW,TOTAL,,TradeStat country_wise_all_commodities TW,2026-07,2026-09,3
+Imports: USD: South Korea,IN,imports,KR,TOTAL,,TradeStat country_wise_all_commodities KR,2026-07,2026-09,3
+Imports: USD: Indonesia,IN,imports,ID,TOTAL,,TradeStat country_wise_all_commodities ID,2026-07,2026-09,3
+Imports: USD: Malaysia,IN,imports,MY,TOTAL,,TradeStat country_wise_all_commodities MY,2026-07,2026-09,3
+Imports: USD: Philippines,IN,imports,PH,TOTAL,,TradeStat country_wise_all_commodities PH,2026-07,2026-09,3
+Imports: USD: Singapore,IN,imports,SG,TOTAL,,TradeStat country_wise_all_commodities SG,2026-07,2026-09,3
+Imports: USD: Thailand,IN,imports,TH,TOTAL,,TradeStat country_wise_all_commodities TH,2026-07,2026-09,3
+Imports: USD: Vietnam,IN,imports,VN,TOTAL,,TradeStat country_wise_all_commodities VN,2026-07,2026-09,3
+Import: cif,ID,imports,WLD,TOTAL,,"SEKI V.20 Jumlah, fob",2005-01,2026-08,260
+Import: Value: USA,ID,imports,US,TOTAL,,SEKI V.20 Amerika Serikat,2005-01,2026-08,260
+Import: Value: China,ID,imports,CN,TOTAL,,SEKI V.20 Republik Rakyat Cina,2005-01,2026-08,260
+Import: Value: Hong Kong SAR (China),ID,imports,HK,TOTAL,,SEKI V.20 Hong Kong SAR,2005-01,2026-08,260
+Import: Value: Japan,ID,imports,JP,TOTAL,,SEKI V.20 Jepang,2005-01,2026-08,260
+Import: European Union,ID,imports,EU,TOTAL,,SEKI V.20 Uni Eropa,2005-01,2026-08,260
 Import: Value: Austria,ID,imports,AT,TOTAL,,no national series collected,,,0
 Import: Value: Belgium,ID,imports,BE,TOTAL,,no national series collected,,,0
 Import: Value: Bulgaria,ID,imports,BG,TOTAL,,no national series collected,,,0
@@ -418,15 +418,15 @@ Import: Value: Slovakia,ID,imports,SK,TOTAL,,no national series collected,,,0
 Import: Value: Slovenia,ID,imports,SI,TOTAL,,no national series collected,,,0
 Import: Value: Spain,ID,imports,ES,TOTAL,,no national series collected,,,0
 Import: Value: Sweden,ID,imports,SE,TOTAL,,no national series collected,,,0
-Import: Value: Taiwan,ID,imports,TW,TOTAL,,no national series collected,,,0
-Import: Value: South Korea,ID,imports,KR,TOTAL,,no national series collected,,,0
-Import: Value: India,ID,imports,IN,TOTAL,,no national series collected,,,0
-Import: Value: Malaysia,ID,imports,MY,TOTAL,,no national series collected,,,0
-Import: Value: Philippines,ID,imports,PH,TOTAL,,no national series collected,,,0
-Import: Value: Singapore,ID,imports,SG,TOTAL,,no national series collected,,,0
-Import: Value: Thailand,ID,imports,TH,TOTAL,,no national series collected,,,0
-Import: Value: Vietnam,ID,imports,VN,TOTAL,,no national series collected,,,0
-Imports cif (f1),MY,imports,WLD,TOTAL,,no national series collected,,,0
+Import: Value: Taiwan,ID,imports,TW,TOTAL,,"SEKI V.20 Taiwan, Provinsi China",2005-01,2026-08,260
+Import: Value: South Korea,ID,imports,KR,TOTAL,,SEKI V.20 Korea Selatan,2005-01,2026-08,260
+Import: Value: India,ID,imports,IN,TOTAL,,SEKI V.20 India,2005-01,2026-08,260
+Import: Value: Malaysia,ID,imports,MY,TOTAL,,SEKI V.20 Malaysia,2005-01,2026-08,260
+Import: Value: Philippines,ID,imports,PH,TOTAL,,SEKI V.20 Filipina,2005-01,2026-08,260
+Import: Value: Singapore,ID,imports,SG,TOTAL,,SEKI V.20 Singapura,2005-01,2026-08,260
+Import: Value: Thailand,ID,imports,TH,TOTAL,,SEKI V.20 Thailand,2005-01,2026-08,260
+Import: Value: Vietnam,ID,imports,VN,TOTAL,,SEKI V.20 Vietnam,2005-01,2026-08,260
+Imports cif (f1),MY,imports,WLD,TOTAL,,OpenDOSM trade_headline imports,1990-01,2026-09,441
 Imports: United States (f2),MY,imports,US,TOTAL,,no national series collected,,,0
 Imports: China (f3),MY,imports,CN,TOTAL,,no national series collected,,,0
 Imports: Hong Kong SAR (China) (f4),MY,imports,HK,TOTAL,,no national series collected,,,0
@@ -482,7 +482,7 @@ Imports: USD: Malaysia,TH,imports,MY,TOTAL,,summarycountries MY MALAYSIA,2018-08
 Imports: USD: Philippines,TH,imports,PH,TOTAL,,summarycountries PH PHILIPPINES,2018-08,2026-09,98
 Imports: USD: Singapore,TH,imports,SG,TOTAL,,summarycountries SG SINGAPORE,2018-08,2026-09,98
 Imports: USD: Vietnam,TH,imports,VN,TOTAL,,summarycountries VN VIETNAM,2018-08,2026-09,98
-Imports,VN,imports,WLD,TOTAL,,no national series collected,,,0
+Imports,VN,imports,WLD,TOTAL,,NSO report 28.NK tháng TỔNG TRỊ GIÁ,2025-01,2026-10,7
 Imports: United States of America (f34),VN,imports,US,TOTAL,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,,,0
 Imports: China (f35),VN,imports,CN,TOTAL,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,,,0
 Imports: Hong Kong SAR (China) (f36),VN,imports,HK,TOTAL,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,Vietnam Customs not reachable from GitHub runners; NSO publishes no monthly partner table,,,0
@@ -563,7 +563,7 @@ Export: USD: Automatic Data Processing Machines And Units,IN,exports,WLD,HS8471,
 "Export: USD: Other Office Machines (For Example, Hectograph Or Stencil Duplicating Machines, Addressing Machines, Autom",IN,exports,WLD,HS8472,,no national series collected,,,0
 "Export: USD: Calcultng And Pockt-Size Data Recrdng, Reprducng And Displayng Machns Wth Calcultngfunctns: Postg Frankng",IN,exports,WLD,HS8470,,no national series collected,,,0
 "Export: USD: Mchnry,Plnt/Laboratory Eqpmnt,W/N Elctrclyheatd,Fr Heatng,Cookng,Etc,Excl Mchnry Fr Domstc Purps:Storg Wtr Heatrs,Non-El",IN,exports,WLD,HS8419,,no national series collected,,,0
-Export: Electrical Machinery and Equipments; Sound Recorders,ID,exports,WLD,HS85,,no national series collected,,,0
+Export: Electrical Machinery and Equipments; Sound Recorders,ID,exports,WLD,HS85,,BPS dataexim HS85: sum over ports and countries,2023-01,2026-09,45
 "Export: Value: Other office Machines (For Example, Hectograph or Stencil Duplicating Machines, Addressing Machines, Automatic Banknote Dispensers (f36)",ID,exports,WLD,HS8472,,no national series collected,,,0
 "Export: Value: Parts and Accessories (Other Than Covers, Carrying Cases and The Like) Suitable For Use Solely or Principally With Machines of Headings 84.70 To 84.72",ID,exports,WLD,HS8473,,no national series collected,,,0
 "Export: Value: Automatic Data Processing Machines and Units Thereof; Magnetic or Optical Readers, Machines For Transcribing Data Onto Data Media in Coded Form",ID,exports,WLD,HS8471,,no national series collected,,,0
@@ -589,10 +589,10 @@ Re-Exports: Electronic Products (EP): Total (f35),SG,re_exports,WLD,electronic_p
 "HS2022 Exports: USD: Other Office Machines (For Example, Hectograph or Stencil Duplicating Machines, Addressing Machines, Automatic Banknote Dispensers, Coin-Sorting Machines, Coin-Counting or Wrapping Machines, Pencil-Sharpening Machines, Perforating or Stapling Machines).",TH,exports,WLD,HS8472,,exportharmonizecountries hs_code=8472: sum of all countries,2018-08,2026-09,98
 "HS2022 Exports: USD: Machinery, Plant or Laboratory Equipment, Whether or Not Electrically Heated (Excluding Furnaces, Ovens and Other Equipment of Heading 85.14), for the Treatment of Materials by A Process Involving A Change of Temperature Such As Heating, Cooking, Roasting,",TH,exports,WLD,HS8419,,exportharmonizecountries hs_code=8419: sum of all countries,2018-08,2026-09,98
 "HS2022 Exports: USD: Calculating Machines and Pocket-Size Data Recording, Reproducing and Displaying Machines With Calculating Functions ; Accounting Machines, Postage-Franking Machines, Ticket-Issuing Machines and Similar Machines, Incorporating A Calculating Device ; Cash",TH,exports,WLD,HS8470,,exportharmonizecountries hs_code=8470: sum of all countries,2018-08,2026-09,98
-Exports: Insulated Wires and Cables,VN,exports,WLD,wires_cables,,no national series collected,,,0
-"Exports: Still Image, Video Cameras and Parts Thereof",VN,exports,WLD,cameras,,no national series collected,,,0
-Exports: Computer & Electronic Components,VN,exports,WLD,computers_electronics,,no national series collected,,,0
-Exports: Telephones & Spare Parts,VN,exports,WLD,phones,,no national series collected,,,0
+Exports: Insulated Wires and Cables,VN,exports,WLD,wires_cables,,NSO report 27.XK tháng Dây điện và cáp điện,2025-01,2026-10,7
+"Exports: Still Image, Video Cameras and Parts Thereof",VN,exports,WLD,cameras,,"NSO report 27.XK tháng Máy ảnh, máy quay phim và linh kiện",2025-01,2026-10,7
+Exports: Computer & Electronic Components,VN,exports,WLD,computers_electronics,,"NSO report 27.XK tháng Điện tử, máy tính và linh kiện",2025-01,2026-10,7
+Exports: Telephones & Spare Parts,VN,exports,WLD,phones,,NSO report 27.XK tháng Điện thoại các loại và linh kiện,2025-01,2026-10,7
 Exports: World: Office Machines; Not Elsewhere Classified (f28),VN,exports,WLD,HS8472,no monthly HS table from Vietnam Customs reachable,no monthly HS table from Vietnam Customs reachable,,,0
 "Exports: World: Electrical Machinery and Equipment and Parts Thereof; Sound Recorders and Reproducers; Television Image and Sound Recorders and Reproducers, Parts and Accessories of Such Articles (f29)",VN,exports,WLD,HS85,no monthly HS table from Vietnam Customs reachable,no monthly HS table from Vietnam Customs reachable,,,0
 "Exports: World: Machinery; Parts and Accessories (Other Than Covers, Carrying Cases and The Like) Suitable For Use Solely or Principally With Machines of Headings 84.70 To 84.72 (f30)",VN,exports,WLD,HS8473,no monthly HS table from Vietnam Customs reachable,no monthly HS table from Vietnam Customs reachable,,,0
@@ -610,7 +610,7 @@ Import: cif: OG: Crude Oil,ID,imports,WLD,HS2709,,no national series collected,,
 Imports: Petroleum Oils & Oils From Bituminous Minerals Crude (f1) (f2),SG,imports,WLD,HS2709,,T010001 IMPORTS WORLD HS 2709,2023-08,2026-09,38
 Imports: World: Petroleum Oils and Oils Obtained From Bituminous Minerals; Crude (f8),SG,imports,WLD,HS2709,,T010001 IMPORTS WORLD HS 2709,2023-08,2026-09,38
 "HS2022 Imports: Petroleum Oils and Oils Obtained from Bituminous Minerals, Crude (f3)",TH,imports,WLD,HS2709,,importharmonizecountries hs_code=2709: sum of all countries,2018-08,2026-09,98
-Imports: Crude Oil (f11),VN,imports,WLD,crude_oil,,no national series collected,,,0
+Imports: Crude Oil (f11),VN,imports,WLD,crude_oil,,NSO report 28.NK tháng Dầu thô,2025-01,2026-10,7
 "CN: Import: HS 4: Petroleum Oils and Oils Obtained from Bituminous Minerals, Other Than Crude; Preparations Not Elsewhere Specified or Included, Containing by Weight 70% or More of Petroleum Oils or of Oils Obtained from Bituminous Minerals, These Oils Being the Basic Constituents of the Preparations; Waste Oils.",CN,imports,WLD,petroleum_products,,bulletin (14) Refined petroleum products,2025-02,2026-09,20
 "Imports: World: Petroleum Oils and Oils From Bituminous Minerals, Not Crude; Preparations N.E.C, Containing By Weight 70% or More of Petroleum Oils or Oils From Bituminous Minerals; These Being The Basic Constituents of The Preparations; Waste Oils (f7)",HK,imports,WLD,HS2710,,"IDDS ttype 1 HS4 2710 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS MINERALS, O",2012-01,2025-12,168
 Import: RI: USD: Diesel Fuel,TW,imports,WLD,diesel,,i9162 柴油,2001-01,2026-09,269
@@ -625,4 +625,4 @@ Import: cif: Oil and Gas: Oil Products,ID,imports,WLD,HS2710,,no national series
 Imports: Petroleum Oils & Oils From Bituminous Minerals Not Crude & Preparations Nes Containing by Weight 70% or More of Petroleum Oils or of Oils From Bituminous Minerals & Waste Oils (f4),SG,imports,WLD,HS2710,,T010001 IMPORTS WORLD HS 2710,2023-08,2026-09,38
 "Imports: World: Petroleum Oils and Oils From Bituminous Minerals, Not Crude; Preparations N.E.C, Containing By Weight 70% or More of Petroleum Oils or Oils From Bituminous Minerals; These Being The Basic Constituents of The Preparations; Waste Oils (f5)",SG,imports,WLD,HS2710,,T010001 IMPORTS WORLD HS 2710,2023-08,2026-09,38
 "HS2022 Imports: Petroleum Oils and Oils Obtained from Bituminous Minerals, Other Than Crude; Preparations Not Elsewhere Specified or Included, Containing by Weight 70% or More of Petroleum Oils or of Oils Obtained from Bituminous Minerals, These Oils Being the Basic Con (f6)",TH,imports,WLD,HS2710,,importharmonizecountries hs_code=2710: sum of all countries,2018-08,2026-09,98
-Imports: Petroleum Products,VN,imports,WLD,petroleum_products,,no national series collected,,,0
+Imports: Petroleum Products,VN,imports,WLD,petroleum_products,,NSO report 28.NK tháng Xăng dầu,2025-01,2026-10,7

@@ -1,0 +1,17 @@
+{
+ "code": "T2026-09",
+ "label": "2026-09",
+ "latest_month": "2026-09-01",
+ "source": "trade_my",
+ "table": "OpenDOSM trade_headline",
+ "processed_at": "2026-11-09T09:04:15Z",
+ "rows": 1764,
+ "warnings": [],
+ "fingerprint": "14036fbbd64e0b2d",
+ "history": [
+  {
+   "code": "T2026-09",
+   "processed_at": "2026-11-09T09:04:15Z"
+  }
+ ]
+}
