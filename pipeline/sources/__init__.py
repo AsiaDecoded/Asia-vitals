@@ -66,4 +66,5 @@ SOURCES = [
     "eq_yahoo",
     "gni_wdi",
     "mfg_asia",
+    "trade_jp",
 ]
