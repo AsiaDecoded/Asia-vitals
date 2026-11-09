@@ -29,7 +29,7 @@
   "wb_gni": "World Bank: GNI per capita (WDI) updated each July with the new income classifications, revised at other WDI updates; no calendar used, one check a month (15th); exits unchanged when nothing is new",
   "in_gdp": "MoSPI: expected from its pattern (quarterly estimates on the last working day of Feb, Aug and Nov; First Advance Estimates around 7 Jan; Q4 and Provisional Estimates on 7 June from 2026, MoSPI press note May 2026), 16:00 IST. The Advance Release Calendar 2026-27 PDF could not be fetched; check these against it. in_gdp_intl (WDI) runs on the same dates and exits unchanged when nothing is new",
   "in_iip": "MoSPI: IIP on the 28th of the second month after the reference month, 16:00 IST (October 2026 on 30 Nov 2026, the 28th being a Saturday); later dates expected from that pattern, next working day when the 28th falls on a weekend. Check against MoSPI's Advance Release Calendar 2026-27",
-  "ph_gdp": "PSA: quarterly national accounts about five weeks after the quarter (Q3 2026 on 6 Nov 2026), 10:00 Manila; later dates expected from that pattern (late Jan, early May, early Aug, early Nov). ph_gdp_psa exits unchanged when PSA's OpenSTAT folder dates have not moved; ph_gdp_intl (WDI) runs on the same dates",
+  "ph_gdp": "PSA: quarterly national accounts about five weeks after the quarter (Q3 2026 on 9 Nov 2026), 10:00 Manila; OpenSTAT tables can follow the press release by a day or more; later dates expected from that pattern (late Jan, early May, early Aug, early Nov). ph_gdp_psa exits unchanged when PSA's OpenSTAT folder dates have not moved; ph_gdp_intl (WDI) runs on the same dates",
   "ph_mfg": "PSA MISSI on OpenSTAT: about 40 days after the month (Jul 2026 on ~10 Sep), and OpenSTAT can lag PSA's website; a window from the 3rd to the 15th each month. ph_mfg_psa reads the GDP file and exits unchanged when the folder dates have not moved",
   "mfg_asia": "Manufacturing production indices and GVA for Japan, Korea, Malaysia, Singapore and Hong Kong (Asia Manufacturing tab): releases spread over the month, so the source runs weekly with the Friday group id_fx and exits unchanged when nothing is new",
   "id_fx": "BIS WS_XRU (id_fx_bis for Indonesia, fx_bis for 10 others): the BIS releases weekly, on Thursdays (data.bis.org: last release 29 Oct 2026, next 5 Nov; data to the Tuesday before), after the Asian runs; so one run a week, Friday 08:15 SGT, and the dashboard refresh that Friday"
@@ -160,7 +160,7 @@
    {"ref": "2027-01", "date": "2027-02-05", "from": "2027-02-04", "to": "2027-02-10", "status": "expected"},
    {"ref": "2027-02", "date": "2027-03-05", "from": "2027-03-04", "to": "2027-03-10", "status": "expected"}]},
   "ph_gdp": {"label": "Philippines GDP (PSA) and World Bank WDI", "sources": ["ph_gdp_psa", "ph_gdp_intl", "ph_mfg_psa"], "time_sgt": "10:00", "dates": [
-   {"ref": "2026-Q3", "date": "2026-11-06", "from": "2026-11-05", "to": "2026-11-13", "status": "expected"},
+   {"ref": "2026-Q3", "date": "2026-11-09", "from": "2026-11-09", "to": "2026-11-16", "status": "official", "note": "PSA release Monday 9 Nov 2026 (Daily Tribune, 5 Nov); OpenSTAT tables can follow later"},
    {"ref": "2026-Q4", "date": "2027-01-28", "from": "2027-01-26", "to": "2027-02-05", "status": "expected"},
    {"ref": "2027-Q1", "date": "2027-05-06", "from": "2027-05-04", "to": "2027-05-13", "status": "expected"},
    {"ref": "2027-Q2", "date": "2027-08-05", "from": "2027-08-03", "to": "2027-08-12", "status": "expected"}]},
