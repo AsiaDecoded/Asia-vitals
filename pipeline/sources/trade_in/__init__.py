@@ -4,7 +4,7 @@ data bank's first year; national monthly partner and HS data before 2018 are not
 
 Each query is a form post (a page token and session cookie first), answered as an HTML table for one month:
   commoditywise_export / commoditywise_import, HS 2-digit level: total, and chapter 85 (exports)
-  commoditywise_export, HS 4-digit level: 8413, 8419, 8470, 8471, 8472, 8473
+  commoditywise_export, HS 4-digit level: 8419, 8470, 8471, 8472, 8473
   commoditywise_import, HS 4-digit level: 2709 (crude oil), 2710 (petroleum products)
   country_wise_all_commodities_export / _import, for each of the 12 partners: the "Total" row
 Backfill by month, stored in raw/trade/in/store.json.gz; each run fetches up to BUDGET missing queries and re-fetches
@@ -27,7 +27,7 @@ UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, 
 FIRST = "2018-01"
 COUNTRIES = {"US": "423", "CN": "77", "HK": "179", "JP": "205", "TW": "75", "KR": "217", "ID": "187", "MY": "245",
              "PH": "323", "SG": "359", "TH": "397", "VN": "437"}
-HS4_EXP = ["8413", "8419", "8470", "8471", "8472", "8473"]
+HS4_EXP = ["8419", "8470", "8471", "8472", "8473"]
 HS4_IMP = ["2709", "2710"]
 BUDGET = 150
 _S = {}
@@ -118,6 +118,10 @@ def update(force=False, **_):
         flow, kind, ym = key.split(":")
         d = ym + "-01"
         for code, label, v in tab or []:
+            if re.fullmatch(r"\d+(\.0)?", code):
+                code = code.split(".")[0].zfill(4 if kind == "HS4" else 2)
+            if label.lower().startswith("india's total"):
+                code = "total"
             if kind in ("HS2", "HS4"):
                 if code.lower() == "total" and kind == "HS2":
                     prod = "TOTAL"
@@ -130,6 +134,9 @@ def update(force=False, **_):
             elif code.lower() == "total":
                 rows.append({"economy": "IN", "flow": flow, "partner": kind, "product": "TOTAL", "date": d, "value": v,
                              "unit": "USD million", "usd_mn": v, "usd_calculated": "", "series": f"TradeStat country_wise_all_commodities {kind}"})
+    # months not yet published come back as zeros: keep a month only where the flow's world total is non-zero
+    live = {(r["flow"], r["date"]) for r in rows if r["partner"] == "WLD" and r["product"] == "TOTAL" and r["value"]}
+    rows = [r for r in rows if (r["flow"], r["date"]) in live and (r["value"] or r["product"] != "TOTAL")]
     if not rows:
         raise CheckFailed(["TradeStat: nothing read"] + fails[:5])
     last = trade.latest(rows)

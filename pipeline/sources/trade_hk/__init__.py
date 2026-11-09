@@ -40,6 +40,10 @@ def opener():
     return _OP
 
 
+class UsageLimit(Exception):
+    pass
+
+
 def call(params, tries=4):
     url = API + urllib.parse.urlencode({"lang": "EN", "sv": "VCm", "freq": "M", **params})
     err = None
@@ -52,7 +56,11 @@ def call(params, tries=4):
                 return js.get("dataSet") or []
             if code == 1:                          # validation error, e.g. period before the series starts
                 return []
+            if code == 2:                          # usage limit for the day: stop and keep what is stored
+                raise UsageLimit(str(js.get("header", {}).get("status")))
             err = js.get("header", {}).get("status")
+        except UsageLimit:
+            raise
         except Exception as e:  # noqa: BLE001
             err = e
         time.sleep(5 * (i + 1))
@@ -81,9 +89,13 @@ def update(force=False, **_):
     state = read_json(folder / "release.json", {}) or {}
     st = trade.Store("hk")
     this = int(time.strftime("%Y"))
-    for y in range(this, FIRST - 1, -1):
-        for key, params in requests(y):
-            st.get(key, lambda: call(params), refresh=y >= this - 1, budget=BUDGET)
+    warn = []
+    try:
+        for y in range(this, FIRST - 1, -1):
+            for key, params in requests(y):
+                st.get(key, lambda: call(params), refresh=y >= this - 1, budget=BUDGET)
+    except UsageLimit as e:
+        warn.append(f"IDDS usage limit reached after {st.fetched} calls; backfill continues next run ({e})")
     st.save()
     rows = []
     for key, data in st.data.items():
@@ -125,5 +137,5 @@ def update(force=False, **_):
     folder = trade.write("hk", rows)
     code = f"T{last[:7]}" + ("" if complete else f"b{len(st.data)}")
     write_release(folder, {"code": code, "label": last[:7], "latest_month": last, "source": NAME, "backfill_complete": complete,
-                           "table": "C&SD Trade-IDDS API"}, [], len(rows), {"fetched": st.fetched})
-    return {"updated": True, "code": code, "summary": f"{last[:7]}: {len(rows)} rows, {st.fetched} calls" + ("" if complete else " (backfill continuing)")}
+                           "table": "C&SD Trade-IDDS API"}, warn, len(rows), {"fetched": st.fetched})
+    return {"updated": True, "code": code, "summary": f"{last[:7]}: {len(rows)} rows, {st.fetched} calls" + ("" if complete else " (backfill continuing)"), "warnings": warn}
