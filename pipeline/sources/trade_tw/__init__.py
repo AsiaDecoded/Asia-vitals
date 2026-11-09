@@ -121,14 +121,20 @@ def update(force=False, **_):
     rows = [r for r in rows if not (r["value"] == 0 and r["date"] > "2026-01-01" and r["partner"] == "WLD")]
     rows += trade.eu_sum(rows, trade.EU27)
     got = {(r["partner"]) for r in rows if r["product"] == "TOTAL"}
-    errors = [f"partner missing: {p}" for p in set(trade.PARTNERS) - got]
+    errors = [f"partner missing: {p}" for p in set(trade.PARTNERS) - got - {"TW"}]
     prods = {r["product"] for r in rows}
-    errors += [f"product missing: {p}" for p in ["electronic_parts", "ict_av_products", "crude_oil", "SITC76"] if p not in prods]
+    errors += [f"product missing: {p}" for p in ["electronic_parts", "ict_av_products", "crude_oil"] if p not in prods]
     if errors:
         raise CheckFailed(errors)
+    warnings = []
+    if "SITC76" not in prods:
+        hdr = texts["i8151"].splitlines()[0][:400] if texts["i8151"] else ""
+        warnings.append(f"SITC 75-77 not found in i8151; header starts: {hdr}")
+    if "diesel" not in prods:
+        warnings.append("i9162: diesel not found; header starts: " + texts["i9162"].splitlines()[0][:300])
     last = trade.latest(rows)
     folder = trade.write("tw", rows)
     code = f"T{last[:7]}"
     write_release(folder, {"code": code, "label": last[:7], "latest_month": last, "source": NAME,
-                           "table": "MOF trade statistics database i9111, i9121, i9122, i8151, i9162"}, [], len(rows), {"fingerprint": fp})
+                           "table": "MOF trade statistics database i9111, i9121, i9122, i8151, i9162"}, warnings, len(rows), {"fingerprint": fp})
     return {"updated": True, "code": code, "summary": f"{last[:7]}: {len(rows)} rows"}

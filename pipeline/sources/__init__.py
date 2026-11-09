@@ -72,4 +72,6 @@ SOURCES = [
     "trade_hk",
     "trade_ph",
     "trade_id",
+    "trade_in",
+    "trade_sg",
 ]
