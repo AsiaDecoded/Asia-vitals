@@ -67,4 +67,6 @@ SOURCES = [
     "gni_wdi",
     "mfg_asia",
     "trade_jp",
+    "trade_tw",
+    "trade_th",
 ]

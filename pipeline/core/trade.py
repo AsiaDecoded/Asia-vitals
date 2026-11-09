@@ -102,3 +102,54 @@ def read(cc):
 def latest(rows, flow="exports", partner="WLD", product="TOTAL"):
     ds = [r["date"] for r in rows if r["flow"] == flow and r["partner"] == partner and r["product"] == product and r["value"] != ""]
     return max(ds) if ds else None
+
+
+# ---------------------------------------------------------------- incremental raw store (per source)
+import gzip  # noqa: E402
+import json  # noqa: E402
+
+from .common import RAW  # noqa: E402
+
+
+class Store:
+    """Raw responses kept between runs: raw/trade/<cc>/store.json.gz, {key: response}. Sources fetch only keys that are
+    missing or recent, up to a per-run budget, so a long history is backfilled over several runs."""
+
+    def __init__(self, cc):
+        self.path = RAW / "trade" / cc / "store.json.gz"
+        self.data = json.load(gzip.open(self.path, "rt", encoding="utf-8")) if self.path.exists() else {}
+        self.fetched = 0
+
+    def save(self):
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        with gzip.open(self.path, "wt", encoding="utf-8") as f:
+            json.dump(self.data, f, ensure_ascii=False, separators=(",", ":"))
+
+    def get(self, key, fn, refresh=False, budget=None):
+        """Stored response for key, fetching it with fn() when missing or refresh is set (and the budget allows)."""
+        if key in self.data and not refresh:
+            return self.data[key]
+        if budget is not None and self.fetched >= budget:
+            return self.data.get(key)
+        self.data[key] = fn()
+        self.fetched += 1
+        return self.data[key]
+
+
+def months(first, last):
+    """['YYYY-MM', ...] from first to last inclusive."""
+    y, m = int(first[:4]), int(first[5:7])
+    out = []
+    while f"{y}-{m:02d}" <= last[:7]:
+        out.append(f"{y}-{m:02d}")
+        y, m = (y + 1, 1) if m == 12 else (y, m + 1)
+    return out
+
+
+def shift(ym, k):
+    y, m = int(ym[:4]), int(ym[5:7]) + k
+    while m < 1:
+        y, m = y - 1, m + 12
+    while m > 12:
+        y, m = y + 1, m - 12
+    return f"{y}-{m:02d}"
