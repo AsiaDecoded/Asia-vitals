@@ -24,7 +24,7 @@ UA = {"User-Agent": "Mozilla/5.0 (asia-vitals data pipeline; github.com/AsiaDeco
 FIRST, HS_FIRST, OIL_FIRST = "1990-01", "2012-01", "2010-01"
 HS_EXP = ["85", "8419", "8470", "8471", "8472", "8473"]
 HS_IMP = ["2709", "2710"]
-BUDGET = 450
+BUDGET = 250
 
 
 def call(path, tries=4):

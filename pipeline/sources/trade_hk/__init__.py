@@ -27,7 +27,7 @@ UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, 
 FIRST, HS_FIRST = 1990, 2012
 FLOWS = {1: "imports", 2: "domestic_exports", 3: "re_exports", 4: "exports"}
 PARTNERS = ["US", "CN", "JP", "TW", "KR", "IN", "ID", "MY", "PH", "SG", "TH", "VN"]
-BUDGET = 400
+BUDGET = 150
 _OP = None
 
 

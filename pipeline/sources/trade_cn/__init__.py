@@ -25,7 +25,7 @@ COUNTRY = [(r"^total", "WLD"), (r"european union", "EU"), (r"^united states", "U
            (r"taiwan", "TW"), (r"korea, ?rep|republic of korea|^korea$", "KR"), (r"^india$", "IN"), (r"^indonesia", "ID"),
            (r"^malaysia", "MY"), (r"^philippines", "PH"), (r"^singapore", "SG"), (r"^thailand", "TH"), (r"viet ?nam", "VN")]
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-BUDGET = 120
+BUDGET = 60
 DIAG = []
 
 

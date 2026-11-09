@@ -34,7 +34,7 @@ MARKETS = {"Total All Markets": "WLD", "United States Of America": "US", "Mainla
 BY_MARKET = {"M451491": "imports", "M451501": "domestic_exports", "M451511": "re_exports"}
 HS_EXP = ["85", "8419", "8470", "8471", "8472", "8473"]
 HS_IMP = ["2709", "2710"]
-BUDGET = 80
+BUDGET = 40
 
 
 def f(v):

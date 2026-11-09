@@ -19,7 +19,7 @@ DESCRIPTION = "South Korea merchandise trade (KCS via BoK ECOS, US$): totals, pa
 FIRST = "1990-01"
 PARTNERS = {"US", "CN", "JP", "TW", "HK", "SG", "IN", "MY", "ID", "TH", "PH", "VN"}
 FLOW = {"T002": "exports", "T004": "imports"}
-BUDGET = 120
+BUDGET = 60
 
 
 def update(force=False, **_):
