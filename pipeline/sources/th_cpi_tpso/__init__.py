@@ -166,7 +166,9 @@ def build(store, latest):
 
     # every published series, whole country, latest 25 months
     tg = store.get("Cpig:TG", {})
-    codes = sorted({r["commodityCode"] for r in tg.get(latest, [])})
+    # series of the latest two months: TPSO sometimes loads a month in parts (Oct 2026: 175 of 194 series on 6 Nov)
+    codes = sorted({r["commodityCode"] for ym in (_shift(latest, 1), latest) for r in tg.get(ym, [])})
+    latest_codes = {r["commodityCode"] for r in tg.get(latest, [])}
     first = _shift(latest, 24)
     items = []
     for ym in sorted(tg):
@@ -192,7 +194,7 @@ def build(store, latest):
     items.sort(key=lambda r: (r["date"], r["order"]))
     reg.sort(key=lambda r: (r["date"], r["order"]))
     return {"series": series, "items": items, "weights": weight_rows, "regions": reg, "by": by,
-            "created": created, "codes": codes, "weights_map": weights}
+            "created": created, "codes": codes, "latest_codes": latest_codes, "weights_map": weights}
 
 
 def check(b, state, latest):
@@ -202,12 +204,19 @@ def check(b, state, latest):
     have = {(r["area"], r["series"]) for r in b["series"] if r["date"] == latest + "-01" and r["yoy"] is not None}
     need = [("national", k) for k, _c, g in SERIES if g in ("headline", "group")] + \
         [("national", "fresh_food"), ("national", "energy"), ("national", "ex_food_energy")] + \
-        [("bangkok", "all"), ("bangkok", "core"), ("lowincome", "all")]
+        [("bangkok", "all"), ("bangkok", "core")]
     for a, k in need:
         if (a, k) not in have:
             errors.append(f"{a} {k}: no y/y for {latest}")
-    if len(b["codes"]) < 190:
-        errors.append(f"only {len(b['codes'])} series for {latest} (194 expected)")
+    # TPSO may load a month in parts: written as far as published, flagged, and re-fetched on every run until complete
+    if ("lowincome", "all") not in have:
+        warnings.append(f"PARTIAL: low-income CPI not yet published for {latest}")
+    n = len(b["latest_codes"])
+    if n < 150:
+        errors.append(f"only {n} series for {latest} (194 expected)")
+    elif n < 190:
+        missing = sorted(set(b["codes"]) - b["latest_codes"])
+        warnings.append(f"PARTIAL: {n} of {len(b['codes'])} series published for {latest}; missing {missing}")
     if {r["region"] for r in b["regions"] if r["date"] == latest + "-01"} != {lab for _t, lab in REGIONS}:
         errors.append(f"regions missing for {latest}")
     # no gaps in headline y/y from its first month
@@ -271,7 +280,7 @@ def update(force=False, **_):
         raise CheckFailed([f"MasterData lists no months on base {BASE_BE}"])
     store = load_store()
     complete = all(f"{f}:{t}" in store for f, t in SETS)
-    if latest + "-01" == state.get("latest_month") and complete and not force:
+    if latest + "-01" == state.get("latest_month") and complete and not state.get("partial") and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {state.get('label')})"}
     new = fetch(store, latest, masters, force=force)
     save_store(store)  # raw responses kept even if the checks below fail, so a rerun does not refetch them
@@ -286,7 +295,8 @@ def update(force=False, **_):
         if recent:
             with gzip.open(dest / f"{key.replace(':', '_')}.json.gz", "wt", encoding="utf-8") as f:
                 json.dump(recent, f, ensure_ascii=False)
-    code = f"C{latest}"
+    partial = any(w.startswith("PARTIAL") for w in warnings)
+    code = f"C{latest}" + ("p" if partial else "")
     _write_csv(OUT / "th_cpi.csv", b["series"],
                ["date", "area", "series", "code", "label", "group", "order", "index", "yoy", "mom", "weight"])
     _write_csv(OUT / "th_cpi_items.csv", b["items"], ["date", "code", "name", "level", "order", "index", "yoy", "mom"])
@@ -302,10 +312,11 @@ def update(force=False, **_):
                        "source": "Trade Policy and Strategy Office, Ministry of Commerce", "release": code}
     nlong = write_long(long_rows(), OUT / "long.csv")
     fingerprint = hashlib.sha256(json.dumps(b["series"][-600:], sort_keys=True).encode()).hexdigest()[:16]
-    if state.get("code") == code:
+    if state.get("code") == code and not partial:
         warnings.append("same month re-fetched (forced run or revision)")
     release = {"code": code, "label": label, "latest_month": latest + "-01", "published_at": b["created"].get(latest),
-               "table": "TPSO Open API: Cpig (types TG, 10, CC, NN, EE, SS) and Cpil (TL), base 2023 (BE 2566)"}
+               "table": "TPSO Open API: Cpig (types TG, 10, CC, NN, EE, SS) and Cpil (TL), base 2023 (BE 2566)",
+               "partial": partial}
     write_release(OUT, release, warnings, len(b["series"]), {"fingerprint": fingerprint, "long_rows": nlong})
     return {"updated": True, "code": code, "summary": f"{label}: {len(b['series'])} rows, "
             f"{sum(len(v) for v in new.values())} months fetched", "warnings": warnings}
