@@ -69,4 +69,7 @@ SOURCES = [
     "trade_jp",
     "trade_tw",
     "trade_th",
+    "trade_hk",
+    "trade_ph",
+    "trade_id",
 ]
