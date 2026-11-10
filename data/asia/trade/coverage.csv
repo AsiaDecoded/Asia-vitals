@@ -96,20 +96,20 @@ Exports: Philippines (f74),JP,exports,PH,TOTAL,,d42ma001 117 PHILPIN,1979-01,202
 Exports: Singapore (f75),JP,exports,SG,TOTAL,,d42ma001 112 SNGAPOR,1979-01,2026-09,573
 Exports: Thailand (f76),JP,exports,TH,TOTAL,,d42ma001 111 THAILND,1979-01,2026-09,573
 Exports: Vietnam (f77),JP,exports,VN,TOTAL,,d42ma001 110 VIETNAM,1979-01,2026-09,573
-Exports fob,KR,exports,WLD,TOTAL,,901Y118 수출금액,2022-04,2026-09,54
-Exports: North America: USA (f78),KR,exports,US,TOTAL,,901Y121 수출금액 미국,2022-04,2026-09,54
-Exports: Asia: China (f79),KR,exports,CN,TOTAL,,901Y121 수출금액 중국,2022-04,2026-09,54
-Exports: Asia: Hong Kong SAR (China) (f81),KR,exports,HK,TOTAL,,901Y121 수출금액 홍콩,2022-04,2026-09,54
-Exports: Asia: Japan (f83),KR,exports,JP,TOTAL,,901Y121 수출금액 일본,2022-04,2026-09,54
+Exports fob,KR,exports,WLD,TOTAL,,KCS 국가별 총계,2021-11,2026-09,59
+Exports: North America: USA (f78),KR,exports,US,TOTAL,,KCS 국가별 미국,2021-11,2026-09,59
+Exports: Asia: China (f79),KR,exports,CN,TOTAL,,KCS 국가별 중국,2021-11,2026-09,59
+Exports: Asia: Hong Kong SAR (China) (f81),KR,exports,HK,TOTAL,,KCS 국가별 홍콩,2021-11,2026-09,59
+Exports: Asia: Japan (f83),KR,exports,JP,TOTAL,,KCS 국가별 일본,2021-11,2026-09,59
 Exports: Europe: EU (27) (f80),KR,exports,EU,TOTAL,,no national series collected,,,0
-Exports: Asia: Taiwan (f82),KR,exports,TW,TOTAL,,901Y121 수출금액 대만,2022-04,2026-09,54
-Exports: Asia: India (f84),KR,exports,IN,TOTAL,,901Y121 수출금액 인도,2022-04,2026-09,54
-Exports: Asia: Indonesia (f85),KR,exports,ID,TOTAL,,901Y121 수출금액 인도네시아,2022-04,2026-09,54
-Exports: Asia: Malaysia (f86),KR,exports,MY,TOTAL,,901Y121 수출금액 말레이시아,2022-04,2026-09,54
-Exports: Asia: Philippines (f87),KR,exports,PH,TOTAL,,901Y121 수출금액 필리핀,2022-04,2026-09,54
-Exports: Asia: Singapore (f88),KR,exports,SG,TOTAL,,901Y121 수출금액 싱가포르,2022-04,2026-09,54
-Exports: Asia: Thailand (f89),KR,exports,TH,TOTAL,,901Y121 수출금액 태국,2022-04,2026-09,54
-Exports: Asia: Vietnam (f90),KR,exports,VN,TOTAL,,901Y121 수출금액 베트남,2022-04,2026-09,54
+Exports: Asia: Taiwan (f82),KR,exports,TW,TOTAL,,KCS 국가별 대만,2021-11,2026-09,59
+Exports: Asia: India (f84),KR,exports,IN,TOTAL,,KCS 국가별 인도,2021-11,2026-09,59
+Exports: Asia: Indonesia (f85),KR,exports,ID,TOTAL,,KCS 국가별 인도네시아,2021-11,2026-09,59
+Exports: Asia: Malaysia (f86),KR,exports,MY,TOTAL,,KCS 국가별 말레이시아,2021-11,2026-09,59
+Exports: Asia: Philippines (f87),KR,exports,PH,TOTAL,,KCS 국가별 필리핀,2021-11,2026-09,59
+Exports: Asia: Singapore (f88),KR,exports,SG,TOTAL,,KCS 국가별 싱가포르,2021-11,2026-09,59
+Exports: Asia: Thailand (f89),KR,exports,TH,TOTAL,,KCS 국가별 태국,2021-11,2026-09,59
+Exports: Asia: Vietnam (f90),KR,exports,VN,TOTAL,,KCS 국가별 베트남,2021-11,2026-09,59
 Exports: USD,IN,exports,WLD,TOTAL,,TradeStat commoditywise HS2 total India's Total Export,2026-05,2026-08,4
 Exports: USD: United States,IN,exports,US,TOTAL,,TradeStat country_wise_all_commodities US,2026-05,2026-08,4
 Exports: USD: China,IN,exports,CN,TOTAL,,TradeStat country_wise_all_commodities CN,2026-06,2026-08,3
@@ -357,20 +357,20 @@ Imports: Philippines (f11),JP,imports,PH,TOTAL,,d42ma001 117 PHILPIN,1979-01,202
 Imports: Singapore (f12),JP,imports,SG,TOTAL,,d42ma001 112 SNGAPOR,1979-01,2026-09,573
 Imports: Thailand (f13),JP,imports,TH,TOTAL,,d42ma001 111 THAILND,1979-01,2026-09,573
 Imports: Vietnam (f14),JP,imports,VN,TOTAL,,d42ma001 110 VIETNAM,1979-01,2026-09,573
-Imports cif,KR,imports,WLD,TOTAL,,901Y118 수입금액,2022-04,2026-09,54
-Imports: North America: USA (f80),KR,imports,US,TOTAL,,901Y121 수입금액 미국,2022-04,2026-09,54
-Imports: Asia: China (f81),KR,imports,CN,TOTAL,,901Y121 수입금액 중국,2022-04,2026-09,54
-Imports: Asia: Hong Kong SAR (China) (f82),KR,imports,HK,TOTAL,,901Y121 수입금액 홍콩,2022-04,2026-09,54
-Imports: Asia: Japan (f85),KR,imports,JP,TOTAL,,901Y121 수입금액 일본,2022-04,2026-09,54
+Imports cif,KR,imports,WLD,TOTAL,,KCS 국가별 총계,2021-11,2026-09,59
+Imports: North America: USA (f80),KR,imports,US,TOTAL,,KCS 국가별 미국,2021-11,2026-09,59
+Imports: Asia: China (f81),KR,imports,CN,TOTAL,,KCS 국가별 중국,2021-11,2026-09,59
+Imports: Asia: Hong Kong SAR (China) (f82),KR,imports,HK,TOTAL,,KCS 국가별 홍콩,2021-11,2026-09,59
+Imports: Asia: Japan (f85),KR,imports,JP,TOTAL,,KCS 국가별 일본,2021-11,2026-09,59
 Imports: Europe: EU (27) (f83),KR,imports,EU,TOTAL,,no national series collected,,,0
-Imports: Asia: Taiwan (f84),KR,imports,TW,TOTAL,,901Y121 수입금액 대만,2022-04,2026-09,54
-Imports: Asia: India (f86),KR,imports,IN,TOTAL,,901Y121 수입금액 인도,2022-04,2026-09,54
-Imports: Asia: Indonesia (f87),KR,imports,ID,TOTAL,,901Y121 수입금액 인도네시아,2022-04,2026-09,54
-Imports: Asia: Malaysia (f88),KR,imports,MY,TOTAL,,901Y121 수입금액 말레이시아,2022-04,2026-09,54
-Imports: Asia: Philippines (f89),KR,imports,PH,TOTAL,,901Y121 수입금액 필리핀,2022-04,2026-09,54
-Imports: Asia: Singapore (f90),KR,imports,SG,TOTAL,,901Y121 수입금액 싱가포르,2022-04,2026-09,54
-Imports: Asia: Thailand (f91),KR,imports,TH,TOTAL,,901Y121 수입금액 태국,2022-04,2026-09,54
-Imports: Asia: Vietnam (f92),KR,imports,VN,TOTAL,,901Y121 수입금액 베트남,2022-04,2026-09,54
+Imports: Asia: Taiwan (f84),KR,imports,TW,TOTAL,,KCS 국가별 대만,2021-11,2026-09,59
+Imports: Asia: India (f86),KR,imports,IN,TOTAL,,KCS 국가별 인도,2021-11,2026-09,59
+Imports: Asia: Indonesia (f87),KR,imports,ID,TOTAL,,KCS 국가별 인도네시아,2021-11,2026-09,59
+Imports: Asia: Malaysia (f88),KR,imports,MY,TOTAL,,KCS 국가별 말레이시아,2021-11,2026-09,59
+Imports: Asia: Philippines (f89),KR,imports,PH,TOTAL,,KCS 국가별 필리핀,2021-11,2026-09,59
+Imports: Asia: Singapore (f90),KR,imports,SG,TOTAL,,KCS 국가별 싱가포르,2021-11,2026-09,59
+Imports: Asia: Thailand (f91),KR,imports,TH,TOTAL,,KCS 국가별 태국,2021-11,2026-09,59
+Imports: Asia: Vietnam (f92),KR,imports,VN,TOTAL,,KCS 국가별 베트남,2021-11,2026-09,59
 Imports: USD,IN,imports,WLD,TOTAL,,TradeStat commoditywise HS2 total India's Total Import,2026-05,2026-08,4
 Imports: USD: United States,IN,imports,US,TOTAL,,TradeStat country_wise_all_commodities US,2026-06,2026-08,3
 Imports: USD: China,IN,imports,CN,TOTAL,,TradeStat country_wise_all_commodities CN,2026-06,2026-08,3
