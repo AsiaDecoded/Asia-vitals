@@ -1,0 +1,35 @@
+name: Comtrade probe
+on:
+  push:
+    branches: [main]
+    paths: [pipeline/tools/comtrade_probe.py, .github/workflows/comtrade-probe.yml]
+  workflow_dispatch:
+    inputs:
+      economy: {description: "ISO2 reporter", default: "CN"}
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Probe
+        env:
+          COMTRADE_KEY: ${{ secrets.COMTRADE_KEY }}
+          ECON: ${{ github.event.inputs.economy || 'CN' }}
+        run: python -I pipeline/tools/comtrade_probe.py "$ECON" "/tmp/out/comtrade/${ECON,,}"
+      - name: Push results to the discovery branch
+        if: always()
+        env: {ECON: "${{ github.event.inputs.economy || 'CN' }}"}
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          git fetch origin discovery
+          git checkout -B discovery origin/discovery
+          mkdir -p discovery/comtrade && rm -rf "discovery/comtrade/${ECON,,}" && cp -r "/tmp/out/comtrade/${ECON,,}" discovery/comtrade/
+          git add discovery/comtrade
+          git commit -m "Comtrade probe ${ECON}" || exit 0
+          for i in 1 2 3; do git push origin discovery && break; git pull --rebase origin discovery; done
