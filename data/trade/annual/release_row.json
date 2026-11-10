@@ -29,7 +29,88 @@
    "VN": "2025-04-15T21:22:10.3166667"
   },
   "source": "trade_comtrade",
+  "version": 2,
   "table": "UN Comtrade data/v1/get/C/A/HS",
-  "processed_at": "2026-11-10T02:30:32Z"
+  "eu_missing_latest_year": {
+   "JP X": [
+    "IT"
+   ],
+   "JP M": [
+    "IT"
+   ],
+   "KR X": [
+    "IT"
+   ],
+   "KR M": [
+    "IT"
+   ],
+   "HK X": [
+    "IT"
+   ],
+   "HK M": [
+    "IT"
+   ],
+   "CN X": [
+    "IT"
+   ],
+   "CN M": [
+    "IT"
+   ],
+   "IN X": [
+    "IT"
+   ],
+   "IN M": [
+    "IT"
+   ],
+   "ID X": [
+    "IT"
+   ],
+   "ID M": [
+    "IT"
+   ],
+   "TH X": [
+    "IT"
+   ],
+   "TH M": [
+    "IT"
+   ],
+   "TH DX": [
+    "IT"
+   ],
+   "TH RX": [
+    "CY",
+    "IT",
+    "LU",
+    "MT"
+   ],
+   "MY X": [
+    "IT"
+   ],
+   "MY M": [
+    "IT"
+   ],
+   "MY RX": [
+    "IT"
+   ],
+   "SG X": [
+    "IT"
+   ],
+   "SG M": [
+    "IT"
+   ],
+   "PH X": [
+    "IT"
+   ],
+   "PH M": [
+    "IT"
+   ],
+   "VN X": [
+    "IT"
+   ],
+   "VN M": [
+    "IT"
+   ]
+  },
+  "processed_at": "2026-11-10T02:41:10Z"
  }
 ]
