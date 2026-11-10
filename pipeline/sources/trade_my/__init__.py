@@ -108,7 +108,7 @@ def update(force=False, **_):
     with urllib.request.urlopen(urllib.request.Request(URL, headers=UA), timeout=120) as r:
         text = r.read().decode("utf-8")
     fp = hashlib.sha256(text.encode()).hexdigest()[:16]
-    if fp == state.get("fingerprint") and state.get("hs") and not force:
+    if fp == state.get("fingerprint") and state.get("hs") == 2 and not force:
         return {"updated": False, "code": state.get("code"), "summary": f"no change (latest {state.get('label')})"}
     rows = []
     for x in csv.DictReader(io.StringIO(text)):
@@ -148,5 +148,5 @@ def update(force=False, **_):
     folder = trade.write("my", rows)
     code = f"T{last[:7]}"
     write_release(folder, {"code": code, "label": last[:7], "latest_month": last, "source": NAME, "table": "OpenDOSM trade_headline"},
-                  WARN[:10], len(rows), {"fingerprint": fp, "hs": 1, "fetched": st.fetched})
+                  WARN[:10], len(rows), {"fingerprint": fp, "hs": 2, "fetched": st.fetched})
     return {"updated": True, "code": code, "summary": f"{last[:7]}: {len(rows)} rows", "warnings": WARN[:5]}

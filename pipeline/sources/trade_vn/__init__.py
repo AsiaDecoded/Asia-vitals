@@ -48,6 +48,7 @@ def parse(blob, ym_hint):
 
 def update(force=False, **_):
     st = trade.Store("vn")
+    warn = []
     today = time.strftime("%Y-%m")
     for ym in reversed(trade.months("2020-01", today)):
         y, m = int(ym[:4]), int(ym[5:7])
@@ -56,7 +57,11 @@ def update(force=False, **_):
         def fetch():
             books = [b for b in nso_vn.report_workbooks(after, before) if not b["en"]]
             for b in books[:3]:
-                rows = parse(nso_vn.get(b["url"])[0], ym)
+                try:
+                    rows = parse(nso_vn.get(b["url"])[0], ym)
+                except Exception as e:  # noqa: BLE001  (some uploads are not .xlsx)
+                    warn.append(f"{ym}: {b.get('url', '')[-60:]}: {repr(e)[:120]}")
+                    continue
                 if any(r["date"][:7] == ym for r in rows):
                     return [r for r in rows if r["date"][:7] == ym]
             return []
@@ -69,5 +74,5 @@ def update(force=False, **_):
     folder = trade.write("vn", rows)
     code = f"T{last[:7]}h{len(st.data)}"
     write_release(folder, {"code": code, "label": last[:7], "latest_month": last, "source": NAME, "table": "NSO monthly report tables 26, 27"},
-                  [], len(rows), {"fetched": st.fetched})
-    return {"updated": True, "code": code, "summary": f"{last[:7]}: {len(rows)} rows"}
+                  warn[:20], len(rows), {"fetched": st.fetched})
+    return {"updated": True, "code": code, "summary": f"{last[:7]}: {len(rows)} rows", "warnings": warn[:5]}
