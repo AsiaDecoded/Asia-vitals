@@ -20,6 +20,7 @@ jobs:
         env:
           COMTRADE_KEY: ${{ secrets.COMTRADE_KEY }}
           ECON: ${{ github.event.inputs.economy || 'CN' }}
+          ANNUAL_ONLY: "1"
         run: python -I pipeline/tools/comtrade_probe.py "$ECON" "/tmp/out/comtrade/${ECON,,}"
       - name: Push results to the discovery branch
         if: always()

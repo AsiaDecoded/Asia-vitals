@@ -58,14 +58,12 @@ for freq in ("A", "M"):
     get(f"da_{freq}", f"getDA/C/{freq}/HS", reporterCode=rep)
 # annual sample: all years in one call per flow
 partners = ",".join(str(v) for k, v in M49.items() if k != ISO)
-years = ",".join(str(y) for y in range(1992, 2026))
-for flow in ("X", "M"):
-    get(f"A_{flow}_totals", "get/C/A/HS", reporterCode=rep, period=years, partnerCode=partners, cmdCode="TOTAL",
-        flowCode=flow, partner2Code=0, customsCode="C00", motCode=0, includeDesc="true")
-    get(f"A_{flow}_hs", "get/C/A/HS", reporterCode=rep, period=years, partnerCode=0, cmdCode=CMDS,
-        flowCode=flow, partner2Code=0, customsCode="C00", motCode=0, includeDesc="true")
+for y0 in range(1992, 2026, 12):
+    years = ",".join(str(y) for y in range(y0, min(y0 + 12, 2026)))
+    get(f"A_{y0}", "get/C/A/HS", reporterCode=rep, period=years, partnerCode=partners, cmdCode=CMDS,
+        flowCode="X,M", partner2Code=0, customsCode="C00", motCode=0, includeDesc="true")
 # monthly sample: 12 periods per call
-for y in range(2000, 2027):
+for y in ([] if os.environ.get("ANNUAL_ONLY") else range(2000, 2027)):
     per = ",".join(f"{y}{m:02d}" for m in range(1, 13))
     get(f"M_{y}", "get/C/M/HS", reporterCode=rep, period=per, partnerCode=partners, cmdCode=CMDS, flowCode="X,M",
         partner2Code=0, customsCode="C00", motCode=0, includeDesc="true")
