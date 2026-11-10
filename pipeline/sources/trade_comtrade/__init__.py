@@ -31,7 +31,7 @@ REPORTERS = {"JP": 392, "KR": 410, "HK": 344, "CN": 156, "IN": 699, "ID": 360, "
 PARTNERS = {0: "WLD", 842: "US", 156: "CN", 344: "HK", 392: "JP", 410: "KR", 699: "IN", 360: "ID", 458: "MY", 608: "PH",
             702: "SG", 764: "TH", 704: "VN"}
 EU = {40: "AT", 56: "BE", 100: "BG", 191: "HR", 196: "CY", 203: "CZ", 208: "DK", 233: "EE", 246: "FI", 251: "FR",
-      276: "DE", 300: "GR", 348: "HU", 372: "IE", 381: "IT", 428: "LV", 440: "LT", 442: "LU", 470: "MT", 528: "NL",
+      276: "DE", 300: "GR", 348: "HU", 372: "IE", 380: "IT", 428: "LV", 440: "LT", 442: "LU", 470: "MT", 528: "NL",
       616: "PL", 620: "PT", 642: "RO", 703: "SK", 705: "SI", 724: "ES", 752: "SE"}
 BELLUX = 58
 HS = ["85", "8419", "8470", "8471", "8472", "8473", "2709", "2710"]
@@ -66,7 +66,7 @@ def get(path, **params):
     raise RuntimeError(f"Comtrade {path} {params.get('reporterCode')} {params.get('period', '')[:9]}: {err}")
 
 
-VERSION = 2
+VERSION = 3
 MISSING = {}
 
 
