@@ -148,10 +148,10 @@ def update(force=False, **_):
     recent = set(trade.months(trade.shift(today, -4), last_pub))
     warn = []
     try:
-        for ym in reversed(trade.months(KCS_FIRST, last_pub)):
+        for ym in sorted(recent, reverse=True):
             p = ym.replace("-", "")
             st.get(f"D:{ym}", lambda: site.query(tradeKind="ETS_MNK_1020000D", priodFr=p, priodTo=p, cntyNm=""),
-                   refresh=ym in recent, budget=BUDGET)
+                   refresh=True, budget=BUDGET)
         for y in range(int(last_pub[:4]), int(KCS_FIRST[:4]) - 1, -1):
             fr, to = f"{y}01", min(f"{y}12", last_pub.replace("-", ""))
             this = y >= int(last_pub[:4]) - (1 if last_pub[5:] <= "04" else 0)
@@ -162,6 +162,10 @@ def update(force=False, **_):
             st.get(f"HS4:{y}", lambda: site.query(tradeKind="ETS_MNK_1020000A", priodFr=fr, priodTo=to, hsSgnGrpCol="HS4_SGN",
                                                   hsSgnWhrCol="HS4_SGN", hsSgn=",".join(HS_EXP + HS_IMP), subHsSgn=""),
                    refresh=this, budget=BUDGET)
+        for ym in reversed(trade.months(KCS_FIRST, last_pub)):
+            p = ym.replace("-", "")
+            st.get(f"D:{ym}", lambda: site.query(tradeKind="ETS_MNK_1020000D", priodFr=p, priodTo=p, cntyNm=""),
+                   refresh=ym in recent, budget=BUDGET)
     except Exception as e:  # noqa: BLE001
         warn.append(str(e)[:300])
     for ym in reversed(trade.months(ECOS_FIRST, trade.shift(KCS_FIRST, -1))):
