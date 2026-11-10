@@ -66,6 +66,10 @@ def get(path, **params):
     raise RuntimeError(f"Comtrade {path} {params.get('reporterCode')} {params.get('period', '')[:9]}: {err}")
 
 
+VERSION = 2
+MISSING = {}
+
+
 def reporter_rows(cc, code, last_year):
     partners = ",".join(str(p) for p in list(PARTNERS) + list(EU) + [BELLUX] if p != code)
     raw = {}
@@ -90,6 +94,8 @@ def reporter_rows(cc, code, last_year):
             members = {p: v for p, v in got.items() if p in EU}
             if 56 not in members and 442 not in members and BELLUX in got:
                 members[56], members[442] = got[BELLUX], 0.0
+            if len(members) < len(EU) and y == last_year:
+                MISSING[(cc, fl)] = sorted(EU[p] for p in EU if p not in members)
             if len(members) == len(EU) and all(v is not None for v in members.values()):
                 rows.append({"economy": cc, "flow": FLOWS[fl], "partner": "EU", "product": "TOTAL", "year": y,
                              "usd_mn": round(sum(members.values()) / 1e6, 6), "calculated": "y", "classification": "",
@@ -101,7 +107,8 @@ def update(force=False, **_):
     OUT.mkdir(parents=True, exist_ok=True)
     path = OUT / "trade_annual.csv"
     old = list(csv.DictReader(path.open())) if path.exists() else []
-    state = (read_json(OUT / "release.json", {}) or {}).get("released", {})
+    rel = read_json(OUT / "release.json", {}) or {}
+    state = rel.get("released", {}) if rel.get("version") == VERSION else {}
     warns, released, keep, fresh = [], {}, [], []
     for cc, code in REPORTERS.items():
         try:
@@ -139,6 +146,7 @@ def update(force=False, **_):
               for cc in have}
     code = "A" + max(released.values() or [""])[:10]
     write_release(OUT, {"code": code, "label": "UN Comtrade annual", "latest_year": latest, "released": released,
-                        "source": NAME, "table": "UN Comtrade data/v1/get/C/A/HS"}, warns[:20], len(rows))
+                        "source": NAME, "version": VERSION, "table": "UN Comtrade data/v1/get/C/A/HS",
+                        "eu_missing_latest_year": {f"{k[0]} {k[1]}": v for k, v in MISSING.items()}}, warns[:20], len(rows))
     return {"updated": True, "code": code, "warnings": warns[:5],
             "summary": f"{len(rows)} rows; refreshed {sorted({r['economy'] for r in fresh})}; latest years {latest}"}
