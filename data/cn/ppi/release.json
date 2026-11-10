@@ -3,7 +3,7 @@
  "label": "September 2026",
  "latest_month": "2026-09-01",
  "table": "NBS data portal (data.stats.gov.cn), monthly industrial producer price catalogs",
- "processed_at": "2026-11-09T04:30:46Z",
+ "processed_at": "2026-11-10T01:39:50Z",
  "rows": 59293,
  "warnings": [
   "7 values of 0 left out as missing: ['ind_other_mining yoy 2008-12', 'ind_other_mining yoy 2008-11', 'ind_other_mining yoy 2008-10', 'ind_other_mining yoy 2008-09', 'ind_other_mining yoy 2008-08']",
@@ -17,7 +17,7 @@
  "history": [
   {
    "code": "P2026-09",
-   "processed_at": "2026-11-09T04:30:46Z"
+   "processed_at": "2026-11-10T01:39:50Z"
   }
  ]
 }

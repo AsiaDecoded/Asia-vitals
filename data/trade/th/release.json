@@ -1,20 +1,24 @@
 {
- "code": "T2026-09b900",
+ "code": "T2026-09b1096",
  "label": "2026-09",
  "latest_month": "2026-09-01",
  "source": "trade_th",
  "backfill_complete": false,
  "table": "MOC tradereport API: summarycountries, exportharmonizecountries, importharmonizecountries",
- "processed_at": "2026-11-09T06:27:13Z",
- "rows": 9016,
+ "processed_at": "2026-11-10T01:46:32Z",
+ "rows": 11038,
  "warnings": [
   "total missing for 1995-01"
  ],
- "fetched": 900,
+ "fetched": 241,
  "history": [
   {
    "code": "T2026-09b900",
    "processed_at": "2026-11-09T06:27:13Z"
+  },
+  {
+   "code": "T2026-09b1096",
+   "processed_at": "2026-11-10T01:46:32Z"
   }
  ]
 }
