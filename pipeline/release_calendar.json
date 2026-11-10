@@ -251,7 +251,7 @@
    {"ref": "2026-12", "date": "2027-01-15", "from": "2027-01-15", "to": "2027-01-18", "status": "expected"},
    {"ref": "2027-01", "date": "2027-02-15", "from": "2027-02-15", "to": "2027-02-18", "status": "expected"},
    {"ref": "2027-02", "date": "2027-03-15", "from": "2027-03-15", "to": "2027-03-18", "status": "expected"}]},
-  "trade_backfill": {"label": "Asia trade dump (national sources): daily backfill runs", "sources": ["trade_jp", "trade_tw", "trade_th", "trade_hk", "trade_ph", "trade_id", "trade_in", "trade_sg", "trade_kr", "trade_cn", "trade_my", "trade_vn"], "time_sgt": "08:00", "dates": [
+  "trade_backfill": {"label": "Asia trade dump (national sources): daily backfill runs", "sources": ["trade_jp", "trade_tw", "trade_th", "trade_hk", "trade_ph", "trade_id", "trade_in", "trade_sg", "trade_kr", "trade_cn", "trade_my", "trade_vn", "trade_comtrade"], "time_sgt": "08:00", "dates": [
    {"ref": "backfill", "date": "2026-12-31", "from": "2026-11-10", "to": "2026-12-31", "status": "expected"}]},
   "id_jci_daily": {"label": "Stock indices daily (Yahoo): Indonesia JCI and the 12 Asian benchmarks", "sources": ["id_jci_yahoo", "eq_yahoo"], "time_sgt": "08:00", "dates": [
    {"ref": "2026-W45", "date": "2026-11-06", "from": "2026-11-06", "to": "2026-11-06", "status": "expected"},
