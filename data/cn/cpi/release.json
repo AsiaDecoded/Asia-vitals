@@ -4,7 +4,7 @@
  "latest_month": "2026-09-01",
  "release_date": "2026-10-14",
  "table": "NBS data portal (data.stats.gov.cn), monthly CPI catalogs; releases on stats.gov.cn",
- "processed_at": "2026-11-10T01:35:37Z",
+ "processed_at": "2026-11-10T04:24:04Z",
  "rows": 174183,
  "warnings": [
   "YTD vs average y/y beyond 0.15 in 23 of 8070 cases: ['national transport_telecom 2021-08: YTD 103.0 vs average y/y 103.15', 'national transport_telecom 2021-07: YTD 102.6 vs average y/y 102.76', 'national transport_telecom 2021-06: YTD 101.9 vs average y/y 102.07']",
@@ -19,7 +19,7 @@
  "history": [
   {
    "code": "C2026-09",
-   "processed_at": "2026-11-10T01:35:37Z"
+   "processed_at": "2026-11-10T04:24:04Z"
   }
  ]
 }

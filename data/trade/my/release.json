@@ -4,27 +4,16 @@
  "latest_month": "2026-09-01",
  "source": "trade_my",
  "table": "OpenDOSM trade_headline",
- "processed_at": "2026-11-09T10:01:38Z",
- "rows": 3228,
- "warnings": [
-  "METS partners exports 2026: no column partner_country_name in ['chapter', 'chapter_description', 'Jan_2026_EXPORTS Value (MYR)', 'Feb_2026_EXPORTS Value (MYR)']",
-  "METS partners imports 2026: no column partner_country_name in ['chapter', 'chapter_description', 'Jan_2026_IMPORTS Value (MYR)', 'Feb_2026_IMPORTS Value (MYR)']",
-  "METS partners exports 2025: no column partner_country_name in ['chapter', 'chapter_description', 'Jan_2025_EXPORTS Value (MYR)', 'Feb_2025_EXPORTS Value (MYR)']",
-  "METS partners imports 2025: no column partner_country_name in ['chapter', 'chapter_description', 'Jan_2025_IMPORTS Value (MYR)', 'Feb_2025_IMPORTS Value (MYR)']",
-  "METS partners exports 2024: no column partner_country_name in ['chapter', 'chapter_description', 'Jan_2024_EXPORTS Value (MYR)', 'Feb_2024_EXPORTS Value (MYR)']",
-  "METS partners imports 2024: no column partner_country_name in ['chapter', 'chapter_description', 'Jan_2024_IMPORTS Value (MYR)', 'Feb_2024_IMPORTS Value (MYR)']",
-  "METS partners exports 2023: no column partner_country_name in ['chapter', 'chapter_description', 'Jan_2023_EXPORTS Value (MYR)', 'Feb_2023_EXPORTS Value (MYR)']",
-  "METS partners imports 2023: no column partner_country_name in ['chapter', 'chapter_description', 'Jan_2023_IMPORTS Value (MYR)', 'Feb_2023_IMPORTS Value (MYR)']",
-  "METS partners exports 2022: no column partner_country_name in ['chapter', 'chapter_description', 'Jan_2022_EXPORTS Value (MYR)', 'Feb_2022_EXPORTS Value (MYR)']",
-  "METS partners imports 2022: no column partner_country_name in ['chapter', 'chapter_description', 'Jan_2022_IMPORTS Value (MYR)', 'Feb_2022_IMPORTS Value (MYR)']"
- ],
+ "processed_at": "2026-11-10T05:12:22Z",
+ "rows": 4086,
+ "warnings": [],
  "fingerprint": "14036fbbd64e0b2d",
- "hs": 1,
- "fetched": 0,
+ "hs": 2,
+ "fetched": 6,
  "history": [
   {
    "code": "T2026-09",
-   "processed_at": "2026-11-09T10:01:38Z"
+   "processed_at": "2026-11-10T05:12:22Z"
   }
  ]
 }

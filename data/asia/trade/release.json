@@ -1,9 +1,9 @@
 {
- "code": "R51d9c85c0e",
- "label": "434 of 627 CEIC series filled",
+ "code": "R9d66f345cd",
+ "label": "460 of 627 CEIC series filled",
  "source": "core.asia_trade",
- "processed_at": "2026-11-10T03:45:44Z",
- "rows": 198527,
+ "processed_at": "2026-11-10T05:17:18Z",
+ "rows": 202373,
  "warnings": [],
  "history": [
   {
@@ -29,6 +29,10 @@
   {
    "code": "R51d9c85c0e",
    "processed_at": "2026-11-10T03:45:44Z"
+  },
+  {
+   "code": "R9d66f345cd",
+   "processed_at": "2026-11-10T05:17:18Z"
   }
  ]
 }
