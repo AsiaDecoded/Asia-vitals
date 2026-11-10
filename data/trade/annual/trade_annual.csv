@@ -1,4 +1,37 @@
 economy,flow,partner,product,year,usd_mn,calculated,classification,series
+CN,exports,EU,TOTAL,1993,11045.238564,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,1994,13986.839127,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,1995,17576.670958,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,1996,17933.585126,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,1997,21614.840348,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,1998,25485.560658,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,1999,27431.187616,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2000,34823.340783,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2001,37921.443292,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2002,45021.335678,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2003,68390.549449,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2004,94026.960262,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2005,127209.906907,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2006,166693.580654,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2007,215437.757014,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2008,259029.225608,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2009,206282.996299,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2010,274006.3958,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2011,313643.530041,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2012,289272.655044,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2013,288248.803232,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2014,313979.925432,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2015,296555.269281,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2016,283658.731803,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2017,315619.210823,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2018,352382.371072,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2019,366724.616336,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2020,391263.864025,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2021,513263.830604,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2022,562453.020997,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2023,501718.001968,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2024,517012.603963,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,exports,EU,TOTAL,2025,560758.410923,y,,UN Comtrade: sum of the 27 EU members (calculated)
 CN,exports,HK,TOTAL,1992,37512.215393,,H0,UN Comtrade C/A/HS reporter 156 partner 344 cmd TOTAL flow X
 CN,exports,HK,TOTAL,1993,22049.692564,,H0,UN Comtrade C/A/HS reporter 156 partner 344 cmd TOTAL flow X
 CN,exports,HK,TOTAL,1994,32360.951334,,H0,UN Comtrade C/A/HS reporter 156 partner 344 cmd TOTAL flow X
@@ -679,6 +712,39 @@ CN,exports,WLD,TOTAL,2022,3593601.435602,,H6,UN Comtrade C/A/HS reporter 156 par
 CN,exports,WLD,TOTAL,2023,3379747.834884,,H6,UN Comtrade C/A/HS reporter 156 partner 0 cmd TOTAL flow X
 CN,exports,WLD,TOTAL,2024,3576543.293842,,H6,UN Comtrade C/A/HS reporter 156 partner 0 cmd TOTAL flow X
 CN,exports,WLD,TOTAL,2025,3776380.766122,,H6,UN Comtrade C/A/HS reporter 156 partner 0 cmd TOTAL flow X
+CN,imports,EU,TOTAL,1993,15244.935204,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,1994,17488.780499,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,1995,19779.110395,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,1996,18376.912445,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,1997,17426.439124,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,1998,18939.513772,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,1999,22856.621915,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2000,27726.675034,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2001,32891.732318,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2002,36457.242434,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2003,51394.397906,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2004,65757.443495,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2005,68491.76464,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2006,84189.589211,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2007,103257.650581,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2008,123171.668108,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2009,119966.115788,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2010,157114.791555,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2011,196683.921387,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2012,195344.346087,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2013,200868.671463,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2014,220449.124152,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2015,189842.486818,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2016,189461.948542,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2017,222649.583747,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2018,249621.012311,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2019,252718.294976,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2020,258516.256102,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2021,308898.227416,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2022,285368.379005,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2023,281747.96442,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2024,269376.110255,y,,UN Comtrade: sum of the 27 EU members (calculated)
+CN,imports,EU,TOTAL,2025,268309.764668,y,,UN Comtrade: sum of the 27 EU members (calculated)
 CN,imports,HK,TOTAL,1992,20533.558367,,H0,UN Comtrade C/A/HS reporter 156 partner 344 cmd TOTAL flow M
 CN,imports,HK,TOTAL,1993,10446.425194,,H0,UN Comtrade C/A/HS reporter 156 partner 344 cmd TOTAL flow M
 CN,imports,HK,TOTAL,1994,9441.674391,,H0,UN Comtrade C/A/HS reporter 156 partner 344 cmd TOTAL flow M
@@ -1392,6 +1458,29 @@ HK,exports,CN,TOTAL,2022,350384.934436,,H6,UN Comtrade C/A/HS reporter 344 partn
 HK,exports,CN,TOTAL,2023,329897.390109,,H6,UN Comtrade C/A/HS reporter 344 partner 156 cmd TOTAL flow X
 HK,exports,CN,TOTAL,2024,377803.72468,,H6,UN Comtrade C/A/HS reporter 344 partner 156 cmd TOTAL flow X
 HK,exports,CN,TOTAL,2025,448304.412971,,H6,UN Comtrade C/A/HS reporter 344 partner 156 cmd TOTAL flow X
+HK,exports,EU,TOTAL,2003,23469.960459,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2004,27940.946065,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2005,33295.204239,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2006,34928.309212,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2007,37116.494305,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2008,40079.136272,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2009,32144.463502,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2010,35927.342777,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2011,38894.73551,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2012,35844.7719,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2013,36168.627387,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2014,37299.802684,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2015,36228.343332,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2016,36219.478971,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2017,38299.272003,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2018,42267.222981,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2019,39102.094851,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2020,36558.727232,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2021,43681.887346,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2022,39919.75706,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2023,34963.992586,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2024,35326.06389,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,exports,EU,TOTAL,2025,35113.342,y,,UN Comtrade: sum of the 27 EU members (calculated)
 HK,exports,ID,TOTAL,1993,844.791651,,H0,UN Comtrade C/A/HS reporter 344 partner 360 cmd TOTAL flow X
 HK,exports,ID,TOTAL,1994,920.6096,,H0,UN Comtrade C/A/HS reporter 344 partner 360 cmd TOTAL flow X
 HK,exports,ID,TOTAL,1995,1061.911365,,H0,UN Comtrade C/A/HS reporter 344 partner 360 cmd TOTAL flow X
@@ -2020,6 +2109,29 @@ HK,imports,CN,TOTAL,2022,268033.736221,,H6,UN Comtrade C/A/HS reporter 344 partn
 HK,imports,CN,TOTAL,2023,261936.191242,,H6,UN Comtrade C/A/HS reporter 344 partner 156 cmd TOTAL flow M
 HK,imports,CN,TOTAL,2024,285645.307184,,H6,UN Comtrade C/A/HS reporter 344 partner 156 cmd TOTAL flow M
 HK,imports,CN,TOTAL,2025,343622.274383,,H6,UN Comtrade C/A/HS reporter 344 partner 156 cmd TOTAL flow M
+HK,imports,EU,TOTAL,2003,16763.962693,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2004,18209.176634,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2005,18787.167032,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2006,20356.622821,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2007,22397.503009,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2008,24562.160316,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2009,22286.993249,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2010,26772.488008,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2011,32835.273083,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2012,32512.193991,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2013,34113.370364,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2014,33384.402048,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2015,29873.51435,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2016,28705.280918,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2017,30104.924286,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2018,31711.148854,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2019,30037.144682,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2020,25296.5864,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2021,27535.143069,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2022,27016.689196,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2023,30583.440532,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2024,27989.89107,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,imports,EU,TOTAL,2025,28005.080203,y,,UN Comtrade: sum of the 27 EU members (calculated)
 HK,imports,ID,TOTAL,1993,943.277298,,H0,UN Comtrade C/A/HS reporter 344 partner 360 cmd TOTAL flow M
 HK,imports,ID,TOTAL,1994,1288.877952,,H0,UN Comtrade C/A/HS reporter 344 partner 360 cmd TOTAL flow M
 HK,imports,ID,TOTAL,1995,1633.432043,,H0,UN Comtrade C/A/HS reporter 344 partner 360 cmd TOTAL flow M
@@ -2638,6 +2750,20 @@ HK,re_exports,CN,TOTAL,2013,307356.54633,,H4,UN Comtrade C/A/HS reporter 344 par
 HK,re_exports,CN,TOTAL,2014,290287.273096,,H4,UN Comtrade C/A/HS reporter 344 partner 156 cmd TOTAL flow RX
 HK,re_exports,CN,TOTAL,2015,280615.083423,,H4,UN Comtrade C/A/HS reporter 344 partner 156 cmd TOTAL flow RX
 HK,re_exports,CN,TOTAL,2016,270838.239812,,H4,UN Comtrade C/A/HS reporter 344 partner 156 cmd TOTAL flow RX
+HK,re_exports,EU,TOTAL,2003,21755.147845,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,re_exports,EU,TOTAL,2004,26155.416291,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,re_exports,EU,TOTAL,2005,31312.595514,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,re_exports,EU,TOTAL,2006,32382.023355,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,re_exports,EU,TOTAL,2007,35640.557843,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,re_exports,EU,TOTAL,2008,39066.889199,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,re_exports,EU,TOTAL,2009,31625.595066,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,re_exports,EU,TOTAL,2010,35227.06087,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,re_exports,EU,TOTAL,2011,38341.458165,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,re_exports,EU,TOTAL,2012,35607.819877,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,re_exports,EU,TOTAL,2013,35925.362629,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,re_exports,EU,TOTAL,2014,37044.636751,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,re_exports,EU,TOTAL,2015,36028.272358,y,,UN Comtrade: sum of the 27 EU members (calculated)
+HK,re_exports,EU,TOTAL,2016,36000.975426,y,,UN Comtrade: sum of the 27 EU members (calculated)
 HK,re_exports,ID,TOTAL,1993,676.682699,,H0,UN Comtrade C/A/HS reporter 344 partner 360 cmd TOTAL flow RX
 HK,re_exports,ID,TOTAL,1994,758.483008,,H0,UN Comtrade C/A/HS reporter 344 partner 360 cmd TOTAL flow RX
 HK,re_exports,ID,TOTAL,1995,855.745223,,H0,UN Comtrade C/A/HS reporter 344 partner 360 cmd TOTAL flow RX
@@ -3108,6 +3234,35 @@ ID,exports,CN,TOTAL,2022,65929.733632,,H6,UN Comtrade C/A/HS reporter 360 partne
 ID,exports,CN,TOTAL,2023,65036.643203,,H6,UN Comtrade C/A/HS reporter 360 partner 156 cmd TOTAL flow X
 ID,exports,CN,TOTAL,2024,62739.517134,,H6,UN Comtrade C/A/HS reporter 360 partner 156 cmd TOTAL flow X
 ID,exports,CN,TOTAL,2025,67037.765314,,H6,UN Comtrade C/A/HS reporter 360 partner 156 cmd TOTAL flow X
+ID,exports,EU,TOTAL,1997,7073.400025,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,1998,6932.082936,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,1999,6182.011911,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2000,7444.148293,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2001,6656.170782,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2002,7013.535915,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2003,7243.325078,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2004,7839.335698,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2005,9078.482887,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2006,10646.923333,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2007,11973.079702,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2008,14031.963259,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2009,12212.691179,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2010,15552.955582,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2011,18879.00092,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2012,16376.654941,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2013,15170.452305,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2014,15288.436276,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2015,13345.696798,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2016,12883.239099,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2017,14957.505249,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2018,15654.558859,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2019,13303.003835,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2020,13109.24183,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2021,18028.801434,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2022,21515.552729,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2023,16703.096347,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2024,17442.987846,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,exports,EU,TOTAL,2025,19451.243195,y,,UN Comtrade: sum of the 27 EU members (calculated)
 ID,exports,HK,TOTAL,1989,543.227008,,H0,UN Comtrade C/A/HS reporter 360 partner 344 cmd TOTAL flow X
 ID,exports,HK,TOTAL,1990,617.745088,,H0,UN Comtrade C/A/HS reporter 360 partner 344 cmd TOTAL flow X
 ID,exports,HK,TOTAL,1991,703.17792,,H0,UN Comtrade C/A/HS reporter 360 partner 344 cmd TOTAL flow X
@@ -3846,6 +4001,34 @@ ID,imports,CN,TOTAL,2022,68041.790651,,H6,UN Comtrade C/A/HS reporter 360 partne
 ID,imports,CN,TOTAL,2023,63386.612864,,H6,UN Comtrade C/A/HS reporter 360 partner 156 cmd TOTAL flow M
 ID,imports,CN,TOTAL,2024,73750.851773,,H6,UN Comtrade C/A/HS reporter 360 partner 156 cmd TOTAL flow M
 ID,imports,CN,TOTAL,2025,87535.512267,,H6,UN Comtrade C/A/HS reporter 360 partner 156 cmd TOTAL flow M
+ID,imports,EU,TOTAL,1997,7402.725362,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,1998,5019.00212,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,1999,3338.499144,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2000,3660.629058,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2002,3300.209069,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2003,3172.109013,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2004,4664.570424,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2005,5215.06023,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2006,5505.668306,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2007,7031.595291,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2008,9500.685861,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2009,7840.202043,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2010,8937.523635,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2011,11333.298164,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2012,12778.700494,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2013,12638.036039,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2014,11810.236814,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2015,10482.467588,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2016,9848.743285,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2017,11461.099236,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2018,12943.104621,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2019,11462.14768,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2020,10186.451542,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2021,11097.289499,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2022,11735.74051,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2023,14446.93923,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2024,12982.058706,y,,UN Comtrade: sum of the 27 EU members (calculated)
+ID,imports,EU,TOTAL,2025,12434.732235,y,,UN Comtrade: sum of the 27 EU members (calculated)
 ID,imports,HK,TOTAL,1989,179.084048,,H0,UN Comtrade C/A/HS reporter 360 partner 344 cmd TOTAL flow M
 ID,imports,HK,TOTAL,1990,273.228256,,H0,UN Comtrade C/A/HS reporter 360 partner 344 cmd TOTAL flow M
 ID,imports,HK,TOTAL,1991,231.91624,,H0,UN Comtrade C/A/HS reporter 360 partner 344 cmd TOTAL flow M
@@ -4587,6 +4770,39 @@ IN,exports,CN,TOTAL,2022,15084.400601,,H6,UN Comtrade C/A/HS reporter 699 partne
 IN,exports,CN,TOTAL,2023,16245.421867,,H6,UN Comtrade C/A/HS reporter 699 partner 156 cmd TOTAL flow X
 IN,exports,CN,TOTAL,2024,14899.42745,,H6,UN Comtrade C/A/HS reporter 699 partner 156 cmd TOTAL flow X
 IN,exports,CN,TOTAL,2025,18085.971449,,H6,UN Comtrade C/A/HS reporter 699 partner 156 cmd TOTAL flow X
+IN,exports,EU,TOTAL,1993,4883.038144,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,1994,5847.114225,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,1995,6929.28371,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,1996,6853.733648,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,1997,7275.910053,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,1998,7372.058799,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,1999,7654.150647,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2000,8060.103203,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2001,8147.946022,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2002,8934.839382,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2003,10752.067349,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2004,13346.008938,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2005,17686.14376,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2006,20597.149078,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2007,25400.230264,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2008,32694.673486,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2009,29860.040415,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2010,35158.824425,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2011,45853.443604,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2012,40542.367455,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2013,45724.86123,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2014,41904.02269,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2015,35814.535325,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2016,37182.181471,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2017,42217.770155,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2018,47603.646788,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2019,47207.271439,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2020,38435.476429,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2021,58995.11216,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2022,73457.375059,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2023,75244.553103,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2024,77464.358426,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,exports,EU,TOTAL,2025,73715.242929,y,,UN Comtrade: sum of the 27 EU members (calculated)
 IN,exports,HK,TOTAL,1988,560.549568,,H0,UN Comtrade C/A/HS reporter 699 partner 344 cmd TOTAL flow X
 IN,exports,HK,TOTAL,1989,551.248128,,H0,UN Comtrade C/A/HS reporter 699 partner 344 cmd TOTAL flow X
 IN,exports,HK,TOTAL,1990,589.85984,,H0,UN Comtrade C/A/HS reporter 699 partner 344 cmd TOTAL flow X
@@ -5325,6 +5541,39 @@ IN,imports,CN,TOTAL,2022,102249.179658,,H6,UN Comtrade C/A/HS reporter 699 partn
 IN,imports,CN,TOTAL,2023,121967.409567,,H6,UN Comtrade C/A/HS reporter 699 partner 156 cmd TOTAL flow M
 IN,imports,CN,TOTAL,2024,126963.489319,,H6,UN Comtrade C/A/HS reporter 699 partner 156 cmd TOTAL flow M
 IN,imports,CN,TOTAL,2025,149494.920196,,H6,UN Comtrade C/A/HS reporter 699 partner 156 cmd TOTAL flow M
+IN,imports,EU,TOTAL,1993,5715.217909,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,1994,6182.285203,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,1995,8454.263696,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,1996,8489.62608,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,1997,8426.457423,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,1998,8272.415542,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,1999,8494.730041,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2000,7825.63931,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2001,7588.357796,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2002,9700.330408,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2003,11241.482921,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2004,14020.038909,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2005,19548.240993,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2006,24688.320231,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2007,27643.353621,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2008,37811.589525,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2009,34266.246196,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2010,37220.357304,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2011,47702.2049,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2012,47519.526502,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2013,42918.936654,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2014,43587.285692,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2015,38517.970598,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2016,36269.131046,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2017,39889.806022,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2018,45073.155976,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2019,42723.352594,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2020,33393.726719,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2021,45897.751229,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2022,54687.994853,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2023,52822.965745,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2024,48316.797095,y,,UN Comtrade: sum of the 27 EU members (calculated)
+IN,imports,EU,TOTAL,2025,56509.928785,y,,UN Comtrade: sum of the 27 EU members (calculated)
 IN,imports,HK,TOTAL,1988,120.05928,,H0,UN Comtrade C/A/HS reporter 699 partner 344 cmd TOTAL flow M
 IN,imports,HK,TOTAL,1989,152.648192,,H0,UN Comtrade C/A/HS reporter 699 partner 344 cmd TOTAL flow M
 IN,imports,HK,TOTAL,1990,163.556368,,H0,UN Comtrade C/A/HS reporter 699 partner 344 cmd TOTAL flow M
@@ -6239,6 +6488,39 @@ JP,exports,CN,TOTAL,2022,144539.09595,,H6,UN Comtrade C/A/HS reporter 392 partne
 JP,exports,CN,TOTAL,2023,126133.117979,,H6,UN Comtrade C/A/HS reporter 392 partner 156 cmd TOTAL flow X
 JP,exports,CN,TOTAL,2024,124626.302946,,H6,UN Comtrade C/A/HS reporter 392 partner 156 cmd TOTAL flow X
 JP,exports,CN,TOTAL,2025,125574.561905,,H6,UN Comtrade C/A/HS reporter 392 partner 156 cmd TOTAL flow X
+JP,exports,EU,TOTAL,1993,49189.876098,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,1994,49502.113931,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,1995,57520.820632,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,1996,51834.843525,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,1997,53672.810096,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,1998,58800.162345,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,1999,62328.973248,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2000,65711.161868,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2001,54526.98353,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2002,51939.304941,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2003,62450.608154,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2004,74302.707816,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2005,72775.478283,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2006,79030.56411,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2007,89387.063701,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2008,94043.091621,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2009,60638.801846,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2010,72909.286512,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2011,79562.802708,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2012,68168.751756,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2013,60690.448386,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2014,60485.49812,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2015,55282.533419,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2016,60117.064197,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2017,63516.368056,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2018,69830.834293,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2019,68319.477525,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2020,59240.205243,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2021,69908.557388,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2022,71223.068009,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2023,73868.72327,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2024,65906.976646,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,exports,EU,TOTAL,2025,67544.513958,y,,UN Comtrade: sum of the 27 EU members (calculated)
 JP,exports,HK,TOTAL,1988,11708.649687,,H0,UN Comtrade C/A/HS reporter 392 partner 344 cmd TOTAL flow X
 JP,exports,HK,TOTAL,1989,11508.420348,,H0,UN Comtrade C/A/HS reporter 392 partner 344 cmd TOTAL flow X
 JP,exports,HK,TOTAL,1990,13064.779877,,H0,UN Comtrade C/A/HS reporter 392 partner 344 cmd TOTAL flow X
@@ -6980,6 +7262,39 @@ JP,imports,CN,TOTAL,2022,188857.701314,,H6,UN Comtrade C/A/HS reporter 392 partn
 JP,imports,CN,TOTAL,2023,173927.505378,,H6,UN Comtrade C/A/HS reporter 392 partner 156 cmd TOTAL flow M
 JP,imports,CN,TOTAL,2024,167119.668417,,H6,UN Comtrade C/A/HS reporter 392 partner 156 cmd TOTAL flow M
 JP,imports,CN,TOTAL,2025,178244.992405,,H6,UN Comtrade C/A/HS reporter 392 partner 156 cmd TOTAL flow M
+JP,imports,EU,TOTAL,1993,28493.505623,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,1994,33423.276559,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,1995,42290.278322,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,1996,42790.153028,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,1997,38543.97646,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,1998,33895.862395,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,1999,37502.471707,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2000,41149.653293,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2001,39613.997502,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2002,39507.498125,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2003,44351.600555,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2004,51430.942791,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2005,52197.126754,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2006,53457.133596,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2007,57763.19512,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2008,63029.40776,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2009,53569.135282,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2010,60162.325028,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2011,73348.364971,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2012,76045.809684,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2013,71917.574277,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2014,70847.767167,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2015,64764.517669,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2016,68596.07314,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2017,70992.674548,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2018,79733.208988,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2019,81053.639467,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2020,72313.439682,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2021,85847.742085,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2022,86509.877049,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2023,81377.107578,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2024,78328.251183,y,,UN Comtrade: sum of the 27 EU members (calculated)
+JP,imports,EU,TOTAL,2025,85073.271587,y,,UN Comtrade: sum of the 27 EU members (calculated)
 JP,imports,HK,TOTAL,1988,2110.795707,,H0,UN Comtrade C/A/HS reporter 392 partner 344 cmd TOTAL flow M
 JP,imports,HK,TOTAL,1989,2225.090894,,H0,UN Comtrade C/A/HS reporter 392 partner 344 cmd TOTAL flow M
 JP,imports,HK,TOTAL,1990,2181.820531,,H0,UN Comtrade C/A/HS reporter 392 partner 344 cmd TOTAL flow M
@@ -7739,6 +8054,39 @@ KR,exports,CN,TOTAL,2022,155789.384747,,H6,UN Comtrade C/A/HS reporter 410 partn
 KR,exports,CN,TOTAL,2023,124655.567747,,H6,UN Comtrade C/A/HS reporter 410 partner 156 cmd TOTAL flow X
 KR,exports,CN,TOTAL,2024,132902.972287,,H6,UN Comtrade C/A/HS reporter 410 partner 156 cmd TOTAL flow X
 KR,exports,CN,TOTAL,2025,130646.977538,,H6,UN Comtrade C/A/HS reporter 410 partner 156 cmd TOTAL flow X
+KR,exports,EU,TOTAL,1993,9101.675535,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,1994,10406.686929,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,1995,14978.868567,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,1996,14385.590808,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,1997,15290.898764,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,1998,16587.670705,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,1999,17443.548235,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2000,19547.099291,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2001,17841.49175,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2002,19762.285416,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2003,23215.141982,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2004,32985.663135,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2005,39097.438971,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2006,43775.755009,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2007,49383.010233,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2008,52733.510588,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2009,42906.449117,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2010,48107.089887,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2011,50888.169524,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2012,44751.523395,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2013,44243.014942,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2014,46183.290631,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2015,40727.784596,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2016,40357.97845,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2017,45981.828626,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2018,51410.711849,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2019,47317.745362,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2020,47571.086982,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2021,63708.733543,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2022,68137.117012,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2023,68249.250531,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2024,68089.238548,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,exports,EU,TOTAL,2025,70160.367233,y,,UN Comtrade: sum of the 27 EU members (calculated)
 KR,exports,HK,TOTAL,1988,3559.857152,,H0,UN Comtrade C/A/HS reporter 410 partner 344 cmd TOTAL flow X
 KR,exports,HK,TOTAL,1989,3374.585995,,H0,UN Comtrade C/A/HS reporter 410 partner 344 cmd TOTAL flow X
 KR,exports,HK,TOTAL,1990,3779.946607,,H0,UN Comtrade C/A/HS reporter 410 partner 344 cmd TOTAL flow X
@@ -8483,6 +8831,39 @@ KR,imports,CN,TOTAL,2022,154576.138174,,H6,UN Comtrade C/A/HS reporter 410 partn
 KR,imports,CN,TOTAL,2023,142853.875178,,H6,UN Comtrade C/A/HS reporter 410 partner 156 cmd TOTAL flow M
 KR,imports,CN,TOTAL,2024,139874.969811,,H6,UN Comtrade C/A/HS reporter 410 partner 156 cmd TOTAL flow M
 KR,imports,CN,TOTAL,2025,141887.335178,,H6,UN Comtrade C/A/HS reporter 410 partner 156 cmd TOTAL flow M
+KR,imports,EU,TOTAL,1993,9870.82055,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,1994,13152.419229,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,1995,16178.646519,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,1996,18622.148573,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,1997,15967.05981,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,1998,9345.653254,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,1999,10830.543008,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2000,13634.258036,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2001,12966.744815,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2002,15132.364487,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2003,17194.530624,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2004,20573.629647,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2005,24268.184226,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2006,27231.597274,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2007,33272.771159,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2008,36361.081374,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2009,29355.70074,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2010,35479.698732,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2011,43630.52066,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2012,44031.372477,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2013,50036.19432,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2014,54899.44816,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2015,51074.358164,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2016,46694.002309,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2017,50964.216727,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2018,55487.74596,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2019,51628.83496,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2020,55142.685398,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2021,65927.722752,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2022,68189.947504,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2023,67863.098445,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2024,64751.553009,y,,UN Comtrade: sum of the 27 EU members (calculated)
+KR,imports,EU,TOTAL,2025,66760.474502,y,,UN Comtrade: sum of the 27 EU members (calculated)
 KR,imports,HK,TOTAL,1988,555.752896,,H0,UN Comtrade C/A/HS reporter 410 partner 344 cmd TOTAL flow M
 KR,imports,HK,TOTAL,1989,581.550863,,H0,UN Comtrade C/A/HS reporter 410 partner 344 cmd TOTAL flow M
 KR,imports,HK,TOTAL,1990,613.863872,,H0,UN Comtrade C/A/HS reporter 410 partner 344 cmd TOTAL flow M
@@ -9239,6 +9620,36 @@ MY,exports,CN,TOTAL,2022,47843.004759,,H6,UN Comtrade C/A/HS reporter 458 partne
 MY,exports,CN,TOTAL,2023,42145.127267,,H6,UN Comtrade C/A/HS reporter 458 partner 156 cmd TOTAL flow X
 MY,exports,CN,TOTAL,2024,41008.240379,,H6,UN Comtrade C/A/HS reporter 458 partner 156 cmd TOTAL flow X
 MY,exports,CN,TOTAL,2025,52294.36244,,H6,UN Comtrade C/A/HS reporter 458 partner 156 cmd TOTAL flow X
+MY,exports,EU,TOTAL,1996,8219.447793,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,1997,8943.947067,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,1998,9522.065575,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,1999,10409.722906,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2000,10706.813869,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2001,10167.223484,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2002,9776.498719,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2003,10897.603857,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2004,13210.312528,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2005,14250.97328,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2006,17617.077131,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2007,19799.646282,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2008,19653.950411,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2009,15068.909178,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2010,19166.360731,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2011,21231.171029,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2012,17955.79002,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2013,18565.183256,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2014,19868.868857,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2015,17893.454367,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2016,17165.687001,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2017,19961.847711,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2018,22326.203981,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2019,21216.680025,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2020,20087.201054,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2021,25159.11785,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2022,29241.483696,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2023,24881.739036,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2024,25324.47126,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,exports,EU,TOTAL,2025,34203.378322,y,,UN Comtrade: sum of the 27 EU members (calculated)
 MY,exports,HK,TOTAL,1989,769.901261,,H0,UN Comtrade C/A/HS reporter 458 partner 344 cmd TOTAL flow X
 MY,exports,HK,TOTAL,1990,933.617559,,H0,UN Comtrade C/A/HS reporter 458 partner 344 cmd TOTAL flow X
 MY,exports,HK,TOTAL,1991,1153.011476,,H0,UN Comtrade C/A/HS reporter 458 partner 344 cmd TOTAL flow X
@@ -9979,6 +10390,36 @@ MY,imports,CN,TOTAL,2022,62674.085248,,H6,UN Comtrade C/A/HS reporter 458 partne
 MY,imports,CN,TOTAL,2023,56708.86876,,H6,UN Comtrade C/A/HS reporter 458 partner 156 cmd TOTAL flow M
 MY,imports,CN,TOTAL,2024,64777.833654,,H6,UN Comtrade C/A/HS reporter 458 partner 156 cmd TOTAL flow M
 MY,imports,CN,TOTAL,2025,82624.501133,,H6,UN Comtrade C/A/HS reporter 458 partner 156 cmd TOTAL flow M
+MY,imports,EU,TOTAL,1996,9462.131421,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,1997,9318.503291,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,1998,5767.129177,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,1999,6321.438108,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2000,7423.711944,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2001,7833.573253,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2002,7733.674927,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2003,8400.372179,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2004,10859.034989,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2005,11614.627505,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2006,13080.829223,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2007,15334.121753,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2008,16194.364264,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2009,12731.335006,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2010,15045.283881,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2011,17595.118698,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2012,18979.894508,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2013,19985.892506,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2014,19581.616166,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2015,16046.897779,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2016,15097.389433,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2017,17119.097406,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2018,19287.72356,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2019,17271.141635,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2020,14013.496437,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2021,18497.420414,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2022,20490.283149,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2023,20571.163727,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2024,22524.541079,y,,UN Comtrade: sum of the 27 EU members (calculated)
+MY,imports,EU,TOTAL,2025,23133.186477,y,,UN Comtrade: sum of the 27 EU members (calculated)
 MY,imports,HK,TOTAL,1989,462.71652,,H0,UN Comtrade C/A/HS reporter 458 partner 344 cmd TOTAL flow M
 MY,imports,HK,TOTAL,1990,557.871506,,H0,UN Comtrade C/A/HS reporter 458 partner 344 cmd TOTAL flow M
 MY,imports,HK,TOTAL,1991,749.053882,,H0,UN Comtrade C/A/HS reporter 458 partner 344 cmd TOTAL flow M
@@ -10683,6 +11124,7 @@ MY,imports,WLD,TOTAL,2023,265637.832626,,H6,UN Comtrade C/A/HS reporter 458 part
 MY,imports,WLD,TOTAL,2024,299513.574447,,H6,UN Comtrade C/A/HS reporter 458 partner 0 cmd TOTAL flow M
 MY,imports,WLD,TOTAL,2025,339574.135944,,H6,UN Comtrade C/A/HS reporter 458 partner 0 cmd TOTAL flow M
 MY,re_exports,CN,TOTAL,2025,7945.326814,,H6,UN Comtrade C/A/HS reporter 458 partner 156 cmd TOTAL flow RX
+MY,re_exports,EU,TOTAL,2025,3832.078709,y,,UN Comtrade: sum of the 27 EU members (calculated)
 MY,re_exports,HK,TOTAL,2025,8793.711467,,H6,UN Comtrade C/A/HS reporter 458 partner 344 cmd TOTAL flow RX
 MY,re_exports,ID,TOTAL,2025,5401.978658,,H6,UN Comtrade C/A/HS reporter 458 partner 360 cmd TOTAL flow RX
 MY,re_exports,IN,TOTAL,2025,1658.091852,,H6,UN Comtrade C/A/HS reporter 458 partner 699 cmd TOTAL flow RX
@@ -10732,6 +11174,34 @@ PH,exports,CN,TOTAL,2022,10965.840327,,H5,UN Comtrade C/A/HS reporter 608 partne
 PH,exports,CN,TOTAL,2023,10925.4177,,H6,UN Comtrade C/A/HS reporter 608 partner 156 cmd TOTAL flow X
 PH,exports,CN,TOTAL,2024,9444.743061,,H6,UN Comtrade C/A/HS reporter 608 partner 156 cmd TOTAL flow X
 PH,exports,CN,TOTAL,2025,9309.603508,,H6,UN Comtrade C/A/HS reporter 608 partner 156 cmd TOTAL flow X
+PH,exports,EU,TOTAL,1998,4312.438586,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,1999,5131.334388,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2000,5408.45043,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2001,5280.836426,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2002,5558.409873,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2003,5334.610915,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2004,6269.549342,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2005,6578.199169,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2006,8254.712483,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2007,8115.4988,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2008,8042.973296,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2009,7674.95311,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2010,7030.460304,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2011,5554.434539,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2012,5271.959531,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2013,5976.923056,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2014,6263.518252,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2015,6695.133449,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2016,6315.883256,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2017,9085.108076,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2018,8304.299988,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2019,7779.733656,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2020,6536.812731,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2021,8059.72302,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2022,8701.087205,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2023,8377.831672,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2024,8073.736495,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,exports,EU,TOTAL,2025,9766.929143,y,,UN Comtrade: sum of the 27 EU members (calculated)
 PH,exports,HK,TOTAL,1996,868.225536,,H0,UN Comtrade C/A/HS reporter 608 partner 344 cmd TOTAL flow X
 PH,exports,HK,TOTAL,1997,1171.52384,,H0,UN Comtrade C/A/HS reporter 608 partner 344 cmd TOTAL flow X
 PH,exports,HK,TOTAL,1998,1325.909248,,H0,UN Comtrade C/A/HS reporter 608 partner 344 cmd TOTAL flow X
@@ -11330,6 +11800,30 @@ PH,imports,CN,TOTAL,2022,29796.347043,,H5,UN Comtrade C/A/HS reporter 608 partne
 PH,imports,CN,TOTAL,2023,30942.921448,,H6,UN Comtrade C/A/HS reporter 608 partner 156 cmd TOTAL flow M
 PH,imports,CN,TOTAL,2024,34511.706612,,H6,UN Comtrade C/A/HS reporter 608 partner 156 cmd TOTAL flow M
 PH,imports,CN,TOTAL,2025,40269.248003,,H6,UN Comtrade C/A/HS reporter 608 partner 156 cmd TOTAL flow M
+PH,imports,EU,TOTAL,1996,3478.333754,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2003,2999.380597,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2004,3354.814804,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2005,3475.400042,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2006,4257.325829,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2007,5165.164894,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2008,4417.488185,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2009,3243.333553,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2010,3980.725207,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2011,4434.492794,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2012,4602.172755,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2013,6205.505636,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2014,7450.893803,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2015,6195.193017,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2016,6285.291461,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2017,6534.169294,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2018,8164.621339,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2019,9023.017578,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2020,6407.297737,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2021,8164.192535,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2022,8296.439945,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2023,8295.9826,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2024,7951.069451,y,,UN Comtrade: sum of the 27 EU members (calculated)
+PH,imports,EU,TOTAL,2025,8813.158009,y,,UN Comtrade: sum of the 27 EU members (calculated)
 PH,imports,HK,TOTAL,1996,1458.977152,,H0,UN Comtrade C/A/HS reporter 608 partner 344 cmd TOTAL flow M
 PH,imports,HK,TOTAL,1997,1636.328576,,H0,UN Comtrade C/A/HS reporter 608 partner 344 cmd TOTAL flow M
 PH,imports,HK,TOTAL,1998,1360.320768,,H0,UN Comtrade C/A/HS reporter 608 partner 344 cmd TOTAL flow M
@@ -11937,6 +12431,26 @@ SG,exports,CN,TOTAL,2022,63968.86936,,H6,UN Comtrade C/A/HS reporter 702 partner
 SG,exports,CN,TOTAL,2023,65585.113403,,H6,UN Comtrade C/A/HS reporter 702 partner 156 cmd TOTAL flow X
 SG,exports,CN,TOTAL,2024,70678.294064,,H6,UN Comtrade C/A/HS reporter 702 partner 156 cmd TOTAL flow X
 SG,exports,CN,TOTAL,2025,61970.890184,,H6,UN Comtrade C/A/HS reporter 702 partner 156 cmd TOTAL flow X
+SG,exports,EU,TOTAL,1999,13868.766102,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,exports,EU,TOTAL,2000,15791.019089,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,exports,EU,TOTAL,2001,14302.961044,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,exports,EU,TOTAL,2002,14146.741572,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,exports,EU,TOTAL,2010,29008.72246,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,exports,EU,TOTAL,2011,32335.42743,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,exports,EU,TOTAL,2012,31021.595814,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,exports,EU,TOTAL,2013,28232.987493,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,exports,EU,TOTAL,2014,28937.310464,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,exports,EU,TOTAL,2015,25410.037074,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,exports,EU,TOTAL,2016,26385.26631,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,exports,EU,TOTAL,2017,28821.546757,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,exports,EU,TOTAL,2018,32892.996351,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,exports,EU,TOTAL,2019,30538.179543,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,exports,EU,TOTAL,2020,31702.569825,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,exports,EU,TOTAL,2021,34413.6347,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,exports,EU,TOTAL,2022,39822.020296,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,exports,EU,TOTAL,2023,34996.620467,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,exports,EU,TOTAL,2024,31434.64591,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,exports,EU,TOTAL,2025,36123.752106,y,,UN Comtrade: sum of the 27 EU members (calculated)
 SG,exports,HK,TOTAL,1989,2824.077824,,H0,UN Comtrade C/A/HS reporter 702 partner 344 cmd TOTAL flow X
 SG,exports,HK,TOTAL,1990,3426.164224,,H0,UN Comtrade C/A/HS reporter 702 partner 344 cmd TOTAL flow X
 SG,exports,HK,TOTAL,1991,4251.881728,,H0,UN Comtrade C/A/HS reporter 702 partner 344 cmd TOTAL flow X
@@ -12654,6 +13168,26 @@ SG,imports,CN,TOTAL,2022,62983.931769,,H6,UN Comtrade C/A/HS reporter 702 partne
 SG,imports,CN,TOTAL,2023,58787.854636,,H6,UN Comtrade C/A/HS reporter 702 partner 156 cmd TOTAL flow M
 SG,imports,CN,TOTAL,2024,56681.452235,,H6,UN Comtrade C/A/HS reporter 702 partner 156 cmd TOTAL flow M
 SG,imports,CN,TOTAL,2025,62788.44505,,H6,UN Comtrade C/A/HS reporter 702 partner 156 cmd TOTAL flow M
+SG,imports,EU,TOTAL,1999,12170.862008,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,imports,EU,TOTAL,2000,13412.993126,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,imports,EU,TOTAL,2001,11906.452896,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,imports,EU,TOTAL,2002,12280.327372,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,imports,EU,TOTAL,2010,32774.688362,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,imports,EU,TOTAL,2011,40043.45325,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,imports,EU,TOTAL,2012,40760.023552,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,imports,EU,TOTAL,2013,38190.765913,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,imports,EU,TOTAL,2014,37591.316496,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,imports,EU,TOTAL,2015,32217.583552,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,imports,EU,TOTAL,2016,33032.51887,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,imports,EU,TOTAL,2017,34576.225171,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,imports,EU,TOTAL,2018,40513.791979,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,imports,EU,TOTAL,2019,38070.398544,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,imports,EU,TOTAL,2020,33768.42555,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,imports,EU,TOTAL,2021,41585.671698,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,imports,EU,TOTAL,2022,42841.627415,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,imports,EU,TOTAL,2023,43748.764504,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,imports,EU,TOTAL,2024,44569.754514,y,,UN Comtrade: sum of the 27 EU members (calculated)
+SG,imports,EU,TOTAL,2025,44208.795108,y,,UN Comtrade: sum of the 27 EU members (calculated)
 SG,imports,HK,TOTAL,1989,1404.284288,,H0,UN Comtrade C/A/HS reporter 702 partner 344 cmd TOTAL flow M
 SG,imports,HK,TOTAL,1990,1863.052928,,H0,UN Comtrade C/A/HS reporter 702 partner 344 cmd TOTAL flow M
 SG,imports,HK,TOTAL,1991,1987.27488,,H0,UN Comtrade C/A/HS reporter 702 partner 344 cmd TOTAL flow M
@@ -13351,6 +13885,17 @@ TH,domestic_exports,CN,TOTAL,2022,34422.514126,,H6,UN Comtrade C/A/HS reporter 7
 TH,domestic_exports,CN,TOTAL,2023,34165.475719,,H6,UN Comtrade C/A/HS reporter 764 partner 156 cmd TOTAL flow DX
 TH,domestic_exports,CN,TOTAL,2024,35225.642132,,H6,UN Comtrade C/A/HS reporter 764 partner 156 cmd TOTAL flow DX
 TH,domestic_exports,CN,TOTAL,2025,39586.812798,,H6,UN Comtrade C/A/HS reporter 764 partner 156 cmd TOTAL flow DX
+TH,domestic_exports,EU,TOTAL,2015,18184.208561,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,domestic_exports,EU,TOTAL,2016,18231.162543,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,domestic_exports,EU,TOTAL,2017,19761.520596,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,domestic_exports,EU,TOTAL,2018,21007.170875,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,domestic_exports,EU,TOTAL,2019,19760.062999,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,domestic_exports,EU,TOTAL,2020,17681.197255,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,domestic_exports,EU,TOTAL,2021,21683.548321,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,domestic_exports,EU,TOTAL,2022,22827.18275,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,domestic_exports,EU,TOTAL,2023,21974.996207,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,domestic_exports,EU,TOTAL,2024,24229.210674,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,domestic_exports,EU,TOTAL,2025,26504.511998,y,,UN Comtrade: sum of the 27 EU members (calculated)
 TH,domestic_exports,HK,TOTAL,2015,11819.023053,,H4,UN Comtrade C/A/HS reporter 764 partner 344 cmd TOTAL flow DX
 TH,domestic_exports,HK,TOTAL,2016,11461.699915,,H4,UN Comtrade C/A/HS reporter 764 partner 344 cmd TOTAL flow DX
 TH,domestic_exports,HK,TOTAL,2017,12290.514875,,H5,UN Comtrade C/A/HS reporter 764 partner 344 cmd TOTAL flow DX
@@ -13597,6 +14142,37 @@ TH,exports,CN,TOTAL,2022,34430.098705,,H6,UN Comtrade C/A/HS reporter 764 partne
 TH,exports,CN,TOTAL,2023,34173.311558,,H6,UN Comtrade C/A/HS reporter 764 partner 156 cmd TOTAL flow X
 TH,exports,CN,TOTAL,2024,35277.083279,,H6,UN Comtrade C/A/HS reporter 764 partner 156 cmd TOTAL flow X
 TH,exports,CN,TOTAL,2025,39834.991865,,H6,UN Comtrade C/A/HS reporter 764 partner 156 cmd TOTAL flow X
+TH,exports,EU,TOTAL,1995,7699.559119,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,1996,7439.32066,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,1997,7629.208851,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,1998,7891.844685,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,1999,8035.950662,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2000,8904.399307,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2001,8554.788105,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2002,8222.960329,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2003,9718.850491,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2004,11423.264004,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2005,12248.222367,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2006,14772.673737,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2007,17939.226491,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2008,19319.77963,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2009,15010.407592,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2010,18246.236338,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2011,20381.415401,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2012,18132.246435,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2013,18704.007819,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2014,19432.18155,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2015,18196.362502,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2016,18248.348456,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2017,19781.65459,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2018,21022.739078,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2019,19782.573626,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2020,17688.337895,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2021,21709.209672,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2022,22837.651633,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2023,21991.567271,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2024,24239.319886,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,exports,EU,TOTAL,2025,26529.341625,y,,UN Comtrade: sum of the 27 EU members (calculated)
 TH,exports,HK,TOTAL,1989,792.548338,,H0,UN Comtrade C/A/HS reporter 764 partner 344 cmd TOTAL flow X
 TH,exports,HK,TOTAL,1990,1037.801977,,H0,UN Comtrade C/A/HS reporter 764 partner 344 cmd TOTAL flow X
 TH,exports,HK,TOTAL,1991,1347.894892,,H0,UN Comtrade C/A/HS reporter 764 partner 344 cmd TOTAL flow X
@@ -14334,6 +14910,36 @@ TH,imports,CN,TOTAL,2022,70766.687538,,H6,UN Comtrade C/A/HS reporter 764 partne
 TH,imports,CN,TOTAL,2023,70826.519916,,H6,UN Comtrade C/A/HS reporter 764 partner 156 cmd TOTAL flow M
 TH,imports,CN,TOTAL,2024,80614.458465,,H6,UN Comtrade C/A/HS reporter 764 partner 156 cmd TOTAL flow M
 TH,imports,CN,TOTAL,2025,107631.993623,,H6,UN Comtrade C/A/HS reporter 764 partner 156 cmd TOTAL flow M
+TH,imports,EU,TOTAL,1996,9706.153947,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,1997,7731.629125,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,1998,4776.127971,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,1999,5289.737805,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2000,5565.049584,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2001,6864.920235,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2002,6447.706488,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2003,6916.357205,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2004,8179.812979,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2005,9545.372532,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2006,9968.483667,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2007,10507.97598,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2008,12473.591111,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2009,10367.651649,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2010,11974.327779,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2011,15905.866981,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2012,17176.520641,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2013,19550.719169,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2014,16693.266201,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2015,15537.536332,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2016,16074.52709,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2017,17667.063472,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2018,19298.154342,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2019,18495.892741,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2020,15504.891737,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2021,18271.78921,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2022,18201.180449,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2023,19754.092732,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2024,19337.059554,y,,UN Comtrade: sum of the 27 EU members (calculated)
+TH,imports,EU,TOTAL,2025,18592.105222,y,,UN Comtrade: sum of the 27 EU members (calculated)
 TH,imports,HK,TOTAL,1988,251.719018,,H0,UN Comtrade C/A/HS reporter 764 partner 344 cmd TOTAL flow M
 TH,imports,HK,TOTAL,1989,343.573164,,H0,UN Comtrade C/A/HS reporter 764 partner 344 cmd TOTAL flow M
 TH,imports,HK,TOTAL,1990,415.73002,,H0,UN Comtrade C/A/HS reporter 764 partner 344 cmd TOTAL flow M
@@ -15514,6 +16120,27 @@ VN,exports,CN,TOTAL,2020,48879.761897,,H5,UN Comtrade C/A/HS reporter 704 partne
 VN,exports,CN,TOTAL,2021,55922.822934,,H5,UN Comtrade C/A/HS reporter 704 partner 156 cmd TOTAL flow X
 VN,exports,CN,TOTAL,2022,57677.796762,,H6,UN Comtrade C/A/HS reporter 704 partner 156 cmd TOTAL flow X
 VN,exports,CN,TOTAL,2023,60574.277766,,H6,UN Comtrade C/A/HS reporter 704 partner 156 cmd TOTAL flow X
+VN,exports,EU,TOTAL,2000,2507.327,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2001,2663.609581,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2002,2760.772148,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2003,3283.985889,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2004,3986.477764,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2005,4536.118331,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2006,5964.894004,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2007,7681.621571,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2009,8122.873619,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2010,9725.677657,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2012,17283.899116,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2013,20642.692148,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2014,24329.257474,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2016,29130.958741,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2017,32898.655027,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2018,36132.035812,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2019,35732.164407,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2020,35075.370865,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2021,40053.338877,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2022,46701.155471,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,exports,EU,TOTAL,2023,43565.370568,y,,UN Comtrade: sum of the 27 EU members (calculated)
 VN,exports,HK,TOTAL,2000,315.896,,H1,UN Comtrade C/A/HS reporter 704 partner 344 cmd TOTAL flow X
 VN,exports,HK,TOTAL,2001,317.237692,,H1,UN Comtrade C/A/HS reporter 704 partner 344 cmd TOTAL flow X
 VN,exports,HK,TOTAL,2002,340.168123,,H1,UN Comtrade C/A/HS reporter 704 partner 344 cmd TOTAL flow X
@@ -15991,6 +16618,23 @@ VN,imports,CN,TOTAL,2020,84197.786488,,H5,UN Comtrade C/A/HS reporter 704 partne
 VN,imports,CN,TOTAL,2021,109850.665774,,H5,UN Comtrade C/A/HS reporter 704 partner 156 cmd TOTAL flow M
 VN,imports,CN,TOTAL,2022,117651.130331,,H6,UN Comtrade C/A/HS reporter 704 partner 156 cmd TOTAL flow M
 VN,imports,CN,TOTAL,2023,110654.552125,,H6,UN Comtrade C/A/HS reporter 704 partner 156 cmd TOTAL flow M
+VN,imports,EU,TOTAL,2000,1222.771,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,imports,EU,TOTAL,2001,1401.571414,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,imports,EU,TOTAL,2002,1722.822901,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,imports,EU,TOTAL,2003,2376.281943,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,imports,EU,TOTAL,2004,2471.111161,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,imports,EU,TOTAL,2006,2946.992442,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,imports,EU,TOTAL,2012,8254.307112,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,imports,EU,TOTAL,2013,8862.397466,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,imports,EU,TOTAL,2014,8199.740516,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,imports,EU,TOTAL,2016,10434.102057,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,imports,EU,TOTAL,2017,11455.173722,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,imports,EU,TOTAL,2018,12924.199492,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,imports,EU,TOTAL,2019,14071.727469,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,imports,EU,TOTAL,2020,14652.539861,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,imports,EU,TOTAL,2021,16877.185875,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,imports,EU,TOTAL,2022,15368.562713,y,,UN Comtrade: sum of the 27 EU members (calculated)
+VN,imports,EU,TOTAL,2023,14946.437196,y,,UN Comtrade: sum of the 27 EU members (calculated)
 VN,imports,HK,TOTAL,2000,597.32,,H1,UN Comtrade C/A/HS reporter 704 partner 344 cmd TOTAL flow M
 VN,imports,HK,TOTAL,2001,537.604724,,H1,UN Comtrade C/A/HS reporter 704 partner 344 cmd TOTAL flow M
 VN,imports,HK,TOTAL,2002,804.765955,,H1,UN Comtrade C/A/HS reporter 704 partner 344 cmd TOTAL flow M
