@@ -1,15 +1,19 @@
 {
- "code": "T2026-10h57",
+ "code": "T2026-10h83",
  "label": "2026-10",
  "latest_month": "2026-10-01",
  "source": "trade_vn",
  "table": "NSO monthly report tables 26, 27",
- "processed_at": "2026-11-10T05:16:15Z",
+ "processed_at": "2026-11-11T02:21:50Z",
  "rows": 56,
  "warnings": [
-  "2023-04: ww.nso.gov.vn/wp-content/uploads/2019/10/Bieu-6-2019.En_.xls: BadZipFile('File is not a zip file')"
+  "2020-10: nso.gov.vn/wp-content/uploads/2019/05/Bieu-12-2018.En_-1.xls: BadZipFile('File is not a zip file')",
+  "2020-10: //www.nso.gov.vn/wp-content/uploads/2020/11/Bieu-thang-2.xls: BadZipFile('File is not a zip file')",
+  "2020-04: w.nso.gov.vn/wp-content/uploads/2020/05/Bieu-04-2020.En_.xls: BadZipFile('File is not a zip file')",
+  "2020-02: nso.gov.vn/wp-content/uploads/2020/01/Bieu-12-2019.En_-1.xls: BadZipFile('File is not a zip file')",
+  "2020-02: w.nso.gov.vn/wp-content/uploads/2020/03/Bieu-02-2020.En_.xls: BadZipFile('File is not a zip file')"
  ],
- "fetched": 30,
+ "fetched": 29,
  "history": [
   {
    "code": "T2026-10h30",
@@ -18,6 +22,10 @@
   {
    "code": "T2026-10h57",
    "processed_at": "2026-11-10T05:16:15Z"
+  },
+  {
+   "code": "T2026-10h83",
+   "processed_at": "2026-11-11T02:21:50Z"
   }
  ]
 }

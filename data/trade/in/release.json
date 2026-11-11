@@ -5,14 +5,14 @@
  "source": "trade_in",
  "backfill_complete": false,
  "table": "Commerce TradeStat MEIDB",
- "processed_at": "2026-11-10T04:45:52Z",
+ "processed_at": "2026-11-11T02:04:02Z",
  "rows": 113,
  "warnings": [],
- "fetched": 34,
+ "fetched": 36,
  "history": [
   {
    "code": "T2026-08b117",
-   "processed_at": "2026-11-10T04:45:52Z"
+   "processed_at": "2026-11-11T02:04:02Z"
   }
  ]
 }
