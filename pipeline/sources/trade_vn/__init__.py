@@ -23,15 +23,26 @@ ROWS = {"exports": {"TỔNG TRỊ GIÁ": "TOTAL", "Điện tử, máy tính và 
 BUDGET = 30
 
 
-def parse(blob, ym_hint):
+def sheets(blob):
+    """(title, rows) for each sheet of an .xlsx or an old .xls workbook."""
+    if blob[:4] == b"\xd0\xcf\x11\xe0":
+        import xlrd  # noqa: PLC0415
+        wb = xlrd.open_workbook(file_contents=blob)
+        for sh in wb.sheets():
+            yield sh.name, [tuple(sh.row_values(i)) for i in range(sh.nrows)]
+        return
     import openpyxl  # noqa: PLC0415
     wb = openpyxl.load_workbook(io.BytesIO(blob), read_only=True, data_only=True)
-    out = []
     for ws in wb.worksheets:
-        flow = "exports" if re.search(r"XK\s*tháng|^2\d\.\s*XK", ws.title) else "imports" if re.search(r"NK\s*tháng", ws.title) else None
+        yield ws.title, list(ws.iter_rows(values_only=True))
+
+
+def parse(blob, ym_hint):
+    out = []
+    for title, rows in sheets(blob):
+        flow = "exports" if re.search(r"XK\s*tháng|^2\d\.\s*XK", title) else "imports" if re.search(r"NK\s*tháng", title) else None
         if not flow:
             continue
-        rows = list(ws.iter_rows(values_only=True))
         head = " ".join(str(c) for r in rows[:6] for c in r if c)
         m = re.search(r"Tháng\s*(\d{1,2}).*?năm\s*(20\d\d)", head, re.S)
         if not m:
@@ -42,7 +53,7 @@ def parse(blob, ym_hint):
             prod = next((p for k, p in ROWS[flow].items() if label.startswith(k)), None)
             if prod and len(r) > 3 and isinstance(r[3], (int, float)):
                 out.append({"economy": "VN", "flow": flow, "partner": "WLD", "product": prod, "date": d, "value": float(r[3]),
-                            "unit": "USD million", "usd_mn": float(r[3]), "usd_calculated": "", "series": f"NSO report {ws.title.strip()} {label}"})
+                            "unit": "USD million", "usd_mn": float(r[3]), "usd_calculated": "", "series": f"NSO report {title.strip()} {label}"})
     return out
 
 
@@ -56,7 +67,7 @@ def update(force=False, **_):
         before = f"{trade.shift(ym, 2)}-01T00:00:00"
         def fetch():
             books = [b for b in nso_vn.report_workbooks(after, before) if not b["en"]]
-            for b in books[:3]:
+            for b in [b for b in books if ".En" not in b.get("url", "")][:3]:   # English editions use other labels
                 try:
                     rows = parse(nso_vn.get(b["url"])[0], ym)
                 except Exception as e:  # noqa: BLE001  (some uploads are not .xlsx)

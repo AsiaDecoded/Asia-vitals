@@ -102,7 +102,12 @@ def update(force=False, **_):
     st = trade.Store("in")
     today = time.strftime("%Y-%m")
     last_avail = trade.shift(today, -2)
-    recent = set(trade.months(trade.shift(last_avail, -3), last_avail))
+    # re-fetch only the latest month and months stored as unpublished (zero world total); refreshing four months of
+    # 28 queries each used the whole fetch window and stopped the backfill
+    def unpublished(ym):
+        tab = st.data.get(f"exports:HS2:{ym}") or []
+        return not any(lbl.lower().startswith("india's total") and v for _c, lbl, v in tab)
+    recent = {last_avail} | {ym for ym in trade.months(trade.shift(last_avail, -3), last_avail) if unpublished(ym)}
     fails = []
     for ym in reversed(trade.months(FIRST, last_avail)):
         for key, page, fields in queries(ym):
