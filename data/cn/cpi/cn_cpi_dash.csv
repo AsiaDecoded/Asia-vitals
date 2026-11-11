@@ -49680,3 +49680,225 @@ date,area,series,label,group,measure,pct,base_break
 2026-09-01,urban,other,Miscellaneous goods and services,category,mom,-0.9,0
 2026-09-01,urban,other,Miscellaneous goods and services,category,yoy,5.9,0
 2026-09-01,urban,other,Miscellaneous goods and services,category,ytd,9.9,0
+2026-10-01,national,all,CPI,headline,mom,0.0,0
+2026-10-01,national,all,CPI,headline,yoy,0.7,0
+2026-10-01,national,all,CPI,headline,ytd,0.9,0
+2026-10-01,national,core,CPI excluding food and energy,headline,mom,0.0,0
+2026-10-01,national,core,CPI excluding food and energy,headline,yoy,0.8,0
+2026-10-01,national,core,CPI excluding food and energy,headline,ytd,1.1,0
+2026-10-01,national,food,Food,headline,mom,-1.0,0
+2026-10-01,national,food,Food,headline,yoy,-2.9,0
+2026-10-01,national,food,Food,headline,ytd,-1.1,0
+2026-10-01,national,non_food,Non-food,headline,mom,0.2,0
+2026-10-01,national,non_food,Non-food,headline,yoy,1.5,0
+2026-10-01,national,non_food,Non-food,headline,ytd,1.3,0
+2026-10-01,national,goods,Consumer goods,headline,mom,-0.1,0
+2026-10-01,national,goods,Consumer goods,headline,yoy,0.8,0
+2026-10-01,national,goods,Consumer goods,headline,ytd,1.0,0
+2026-10-01,national,services,Services,headline,mom,0.1,0
+2026-10-01,national,services,Services,headline,yoy,0.7,0
+2026-10-01,national,services,Services,headline,ytd,0.8,0
+2026-10-01,national,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,mom,-0.5,0
+2026-10-01,national,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,yoy,-1.6,0
+2026-10-01,national,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,ytd,-0.5,0
+2026-10-01,national,grain,Grain,food,mom,0.1,0
+2026-10-01,national,grain,Grain,food,yoy,-0.5,0
+2026-10-01,national,grain,Grain,food,ytd,-0.4,0
+2026-10-01,national,edible_oil,Edible oil and fats,food,mom,0.3,0
+2026-10-01,national,edible_oil,Edible oil and fats,food,yoy,-1.1,0
+2026-10-01,national,edible_oil,Edible oil and fats,food,ytd,-1.0,0
+2026-10-01,national,fresh_vegetables,Fresh vegetables,food,mom,-5.8,0
+2026-10-01,national,fresh_vegetables,Fresh vegetables,food,yoy,-16.9,0
+2026-10-01,national,fresh_vegetables,Fresh vegetables,food,ytd,-0.7,0
+2026-10-01,national,livestock_meat,Meat of livestock,food,mom,0.0,0
+2026-10-01,national,livestock_meat,Meat of livestock,food,yoy,-2.7,0
+2026-10-01,national,livestock_meat,Meat of livestock,food,ytd,-5.2,0
+2026-10-01,national,pork,Pork,food,mom,-1.0,0
+2026-10-01,national,pork,Pork,food,yoy,-8.6,0
+2026-10-01,national,pork,Pork,food,ytd,-12.5,0
+2026-10-01,national,beef,Beef,food,mom,1.6,0
+2026-10-01,national,beef,Beef,food,yoy,8.7,0
+2026-10-01,national,beef,Beef,food,ytd,6.3,0
+2026-10-01,national,mutton,Mutton,food,mom,0.8,0
+2026-10-01,national,mutton,Mutton,food,yoy,5.8,0
+2026-10-01,national,mutton,Mutton,food,ytd,6.1,0
+2026-10-01,national,aquatic,Aquatic products,food,mom,-1.3,0
+2026-10-01,national,aquatic,Aquatic products,food,yoy,-0.3,0
+2026-10-01,national,aquatic,Aquatic products,food,ytd,1.1,0
+2026-10-01,national,eggs,Eggs,food,mom,-5.2,0
+2026-10-01,national,eggs,Eggs,food,yoy,10.1,0
+2026-10-01,national,eggs,Eggs,food,ytd,5.9,0
+2026-10-01,national,dairy,Milk and other dairy products,food,mom,0.1,0
+2026-10-01,national,dairy,Milk and other dairy products,food,yoy,-1.2,0
+2026-10-01,national,dairy,Milk and other dairy products,food,ytd,-1.2,0
+2026-10-01,national,fresh_fruit,Fresh fruits,food,mom,-0.6,0
+2026-10-01,national,fresh_fruit,Fresh fruits,food,yoy,-3.8,0
+2026-10-01,national,fresh_fruit,Fresh fruits,food,ytd,0.2,0
+2026-10-01,national,cigarettes,Cigarettes,food,mom,-0.1,0
+2026-10-01,national,cigarettes,Cigarettes,food,yoy,-0.7,0
+2026-10-01,national,cigarettes,Cigarettes,food,ytd,-0.5,0
+2026-10-01,national,liquor,Liquor,food,mom,-0.1,0
+2026-10-01,national,liquor,Liquor,food,yoy,-3.1,0
+2026-10-01,national,liquor,Liquor,food,ytd,-2.8,0
+2026-10-01,national,clothing,Clothing,category,mom,0.0,0
+2026-10-01,national,clothing,Clothing,category,yoy,1.1,0
+2026-10-01,national,clothing,Clothing,category,ytd,1.5,0
+2026-10-01,national,garments,Garments,clothing,mom,0.0,0
+2026-10-01,national,garments,Garments,clothing,yoy,1.3,0
+2026-10-01,national,garments,Garments,clothing,ytd,1.6,0
+2026-10-01,national,footwear,Footwear,clothing,mom,-0.1,0
+2026-10-01,national,footwear,Footwear,clothing,yoy,0.4,0
+2026-10-01,national,footwear,Footwear,clothing,ytd,0.9,0
+2026-10-01,national,residence,Residence,category,mom,0.0,0
+2026-10-01,national,residence,Residence,category,yoy,-0.3,0
+2026-10-01,national,residence,Residence,category,ytd,-0.2,0
+2026-10-01,national,rent,Rent of rental housing,residence,mom,-0.1,0
+2026-10-01,national,rent,Rent of rental housing,residence,yoy,-0.6,0
+2026-10-01,national,rent,Rent of rental housing,residence,ytd,-0.6,0
+2026-10-01,national,water_power_fuel,"Water, electricity and fuels",residence,mom,0.1,0
+2026-10-01,national,water_power_fuel,"Water, electricity and fuels",residence,yoy,0.7,0
+2026-10-01,national,water_power_fuel,"Water, electricity and fuels",residence,ytd,0.5,0
+2026-10-01,national,household,"Household facilities, articles and services",category,mom,-0.2,0
+2026-10-01,national,household,"Household facilities, articles and services",category,yoy,0.2,0
+2026-10-01,national,household,"Household facilities, articles and services",category,ytd,1.3,0
+2026-10-01,national,home_appliances,Home appliances,household,mom,-1.1,0
+2026-10-01,national,home_appliances,Home appliances,household,yoy,-2.2,0
+2026-10-01,national,home_appliances,Home appliances,household,ytd,1.7,0
+2026-10-01,national,household_services,Household services,household,mom,0.0,0
+2026-10-01,national,household_services,Household services,household,yoy,1.0,0
+2026-10-01,national,household_services,Household services,household,ytd,1.0,0
+2026-10-01,national,transport_telecom,Transportation and telecommunication,category,mom,1.0,0
+2026-10-01,national,transport_telecom,Transportation and telecommunication,category,yoy,5.5,0
+2026-10-01,national,transport_telecom,Transportation and telecommunication,category,ytd,2.3,0
+2026-10-01,national,automobiles,Automobiles,transport_telecom,mom,-0.2,0
+2026-10-01,national,automobiles,Automobiles,transport_telecom,yoy,-1.9,0
+2026-10-01,national,automobiles,Automobiles,transport_telecom,ytd,-1.4,0
+2026-10-01,national,vehicle_fuel,Energy for transport facilities,transport_telecom,mom,3.8,0
+2026-10-01,national,vehicle_fuel,Energy for transport facilities,transport_telecom,yoy,20.2,0
+2026-10-01,national,vehicle_fuel,Energy for transport facilities,transport_telecom,ytd,7.9,0
+2026-10-01,national,vehicle_use,Use and maintenance of transport facilities,transport_telecom,mom,0.0,0
+2026-10-01,national,vehicle_use,Use and maintenance of transport facilities,transport_telecom,yoy,0.5,0
+2026-10-01,national,vehicle_use,Use and maintenance of transport facilities,transport_telecom,ytd,0.7,0
+2026-10-01,national,comm_equipment,Communication facilities,transport_telecom,mom,1.7,0
+2026-10-01,national,comm_equipment,Communication facilities,transport_telecom,yoy,16.1,0
+2026-10-01,national,comm_equipment,Communication facilities,transport_telecom,ytd,7.3,0
+2026-10-01,national,telecom_services,Telecommunication services,transport_telecom,mom,0.0,0
+2026-10-01,national,telecom_services,Telecommunication services,transport_telecom,yoy,0.2,0
+2026-10-01,national,telecom_services,Telecommunication services,transport_telecom,ytd,0.1,0
+2026-10-01,national,postal,Postal services,transport_telecom,mom,-0.1,0
+2026-10-01,national,postal,Postal services,transport_telecom,yoy,-0.6,0
+2026-10-01,national,postal,Postal services,transport_telecom,ytd,-0.5,0
+2026-10-01,national,education_culture,"Education, culture and recreation",category,mom,0.3,0
+2026-10-01,national,education_culture,"Education, culture and recreation",category,yoy,1.5,0
+2026-10-01,national,education_culture,"Education, culture and recreation",category,ytd,1.3,0
+2026-10-01,national,education_services,Education services,education_culture,mom,0.0,0
+2026-10-01,national,education_services,Education services,education_culture,yoy,0.5,0
+2026-10-01,national,education_services,Education services,education_culture,ytd,0.5,0
+2026-10-01,national,travel_services,Travel agencies and other touring services,education_culture,mom,2.1,0
+2026-10-01,national,travel_services,Travel agencies and other touring services,education_culture,yoy,3.0,0
+2026-10-01,national,travel_services,Travel agencies and other touring services,education_culture,ytd,3.2,0
+2026-10-01,national,health_care,Health care and medical services,category,mom,0.1,0
+2026-10-01,national,health_care,Health care and medical services,category,yoy,2.4,0
+2026-10-01,national,health_care,Health care and medical services,category,ytd,2.3,0
+2026-10-01,national,tcm,Traditional Chinese medicines,health_care,mom,0.0,0
+2026-10-01,national,tcm,Traditional Chinese medicines,health_care,yoy,-0.4,0
+2026-10-01,national,tcm,Traditional Chinese medicines,health_care,ytd,-1.1,0
+2026-10-01,national,western_medicines,Western medicines,health_care,mom,-0.1,0
+2026-10-01,national,western_medicines,Western medicines,health_care,yoy,-1.6,0
+2026-10-01,national,western_medicines,Western medicines,health_care,ytd,-1.4,0
+2026-10-01,national,medical_services,Medical services,health_care,mom,0.1,0
+2026-10-01,national,medical_services,Medical services,health_care,yoy,3.6,0
+2026-10-01,national,medical_services,Medical services,health_care,ytd,3.4,0
+2026-10-01,national,other,Miscellaneous goods and services,category,mom,-1.1,0
+2026-10-01,national,other,Miscellaneous goods and services,category,yoy,1.8,0
+2026-10-01,national,other,Miscellaneous goods and services,category,ytd,9.0,0
+2026-10-01,rural,all,CPI,headline,mom,-0.1,0
+2026-10-01,rural,all,CPI,headline,yoy,0.7,0
+2026-10-01,rural,all,CPI,headline,ytd,0.7,0
+2026-10-01,rural,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,mom,-0.7,0
+2026-10-01,rural,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,yoy,-1.7,0
+2026-10-01,rural,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,ytd,-0.8,0
+2026-10-01,rural,grain,Grain,food,mom,0.1,0
+2026-10-01,rural,grain,Grain,food,yoy,0.1,0
+2026-10-01,rural,grain,Grain,food,ytd,-0.1,0
+2026-10-01,rural,fresh_vegetables,Fresh vegetables,food,mom,-6.3,0
+2026-10-01,rural,fresh_vegetables,Fresh vegetables,food,yoy,-17.3,0
+2026-10-01,rural,fresh_vegetables,Fresh vegetables,food,ytd,-0.7,0
+2026-10-01,rural,livestock_meat,Meat of livestock,food,mom,0.0,0
+2026-10-01,rural,livestock_meat,Meat of livestock,food,yoy,-3.3,0
+2026-10-01,rural,livestock_meat,Meat of livestock,food,ytd,-6.1,0
+2026-10-01,rural,aquatic,Aquatic products,food,mom,-0.9,0
+2026-10-01,rural,aquatic,Aquatic products,food,yoy,-0.2,0
+2026-10-01,rural,aquatic,Aquatic products,food,ytd,1.2,0
+2026-10-01,rural,eggs,Eggs,food,mom,-5.9,0
+2026-10-01,rural,eggs,Eggs,food,yoy,12.0,0
+2026-10-01,rural,eggs,Eggs,food,ytd,6.9,0
+2026-10-01,rural,fresh_fruit,Fresh fruits,food,mom,-0.8,0
+2026-10-01,rural,fresh_fruit,Fresh fruits,food,yoy,-3.2,0
+2026-10-01,rural,fresh_fruit,Fresh fruits,food,ytd,0.3,0
+2026-10-01,rural,clothing,Clothing,category,mom,0.0,0
+2026-10-01,rural,clothing,Clothing,category,yoy,1.2,0
+2026-10-01,rural,clothing,Clothing,category,ytd,1.5,0
+2026-10-01,rural,residence,Residence,category,mom,0.0,0
+2026-10-01,rural,residence,Residence,category,yoy,-0.2,0
+2026-10-01,rural,residence,Residence,category,ytd,-0.2,0
+2026-10-01,rural,household,"Household facilities, articles and services",category,mom,-0.3,0
+2026-10-01,rural,household,"Household facilities, articles and services",category,yoy,0.0,0
+2026-10-01,rural,household,"Household facilities, articles and services",category,ytd,1.4,0
+2026-10-01,rural,transport_telecom,Transportation and telecommunication,category,mom,1.0,0
+2026-10-01,rural,transport_telecom,Transportation and telecommunication,category,yoy,5.8,0
+2026-10-01,rural,transport_telecom,Transportation and telecommunication,category,ytd,2.3,0
+2026-10-01,rural,education_culture,"Education, culture and recreation",category,mom,0.1,0
+2026-10-01,rural,education_culture,"Education, culture and recreation",category,yoy,1.1,0
+2026-10-01,rural,education_culture,"Education, culture and recreation",category,ytd,1.0,0
+2026-10-01,rural,health_care,Health care and medical services,category,mom,0.1,0
+2026-10-01,rural,health_care,Health care and medical services,category,yoy,2.5,0
+2026-10-01,rural,health_care,Health care and medical services,category,ytd,2.5,0
+2026-10-01,rural,other,Miscellaneous goods and services,category,mom,-1.3,0
+2026-10-01,rural,other,Miscellaneous goods and services,category,yoy,2.1,0
+2026-10-01,rural,other,Miscellaneous goods and services,category,ytd,8.7,0
+2026-10-01,urban,all,CPI,headline,mom,0.0,0
+2026-10-01,urban,all,CPI,headline,yoy,0.7,0
+2026-10-01,urban,all,CPI,headline,ytd,0.9,0
+2026-10-01,urban,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,mom,-0.5,0
+2026-10-01,urban,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,yoy,-1.6,0
+2026-10-01,urban,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,ytd,-0.4,0
+2026-10-01,urban,grain,Grain,food,mom,0.1,0
+2026-10-01,urban,grain,Grain,food,yoy,-0.7,0
+2026-10-01,urban,grain,Grain,food,ytd,-0.6,0
+2026-10-01,urban,fresh_vegetables,Fresh vegetables,food,mom,-5.7,0
+2026-10-01,urban,fresh_vegetables,Fresh vegetables,food,yoy,-16.8,0
+2026-10-01,urban,fresh_vegetables,Fresh vegetables,food,ytd,-0.7,0
+2026-10-01,urban,livestock_meat,Meat of livestock,food,mom,0.0,0
+2026-10-01,urban,livestock_meat,Meat of livestock,food,yoy,-2.5,0
+2026-10-01,urban,livestock_meat,Meat of livestock,food,ytd,-4.8,0
+2026-10-01,urban,aquatic,Aquatic products,food,mom,-1.4,0
+2026-10-01,urban,aquatic,Aquatic products,food,yoy,-0.4,0
+2026-10-01,urban,aquatic,Aquatic products,food,ytd,1.0,0
+2026-10-01,urban,eggs,Eggs,food,mom,-5.0,0
+2026-10-01,urban,eggs,Eggs,food,yoy,9.4,0
+2026-10-01,urban,eggs,Eggs,food,ytd,5.5,0
+2026-10-01,urban,fresh_fruit,Fresh fruits,food,mom,-0.5,0
+2026-10-01,urban,fresh_fruit,Fresh fruits,food,yoy,-4.0,0
+2026-10-01,urban,fresh_fruit,Fresh fruits,food,ytd,0.2,0
+2026-10-01,urban,clothing,Clothing,category,mom,0.0,0
+2026-10-01,urban,clothing,Clothing,category,yoy,1.1,0
+2026-10-01,urban,clothing,Clothing,category,ytd,1.5,0
+2026-10-01,urban,residence,Residence,category,mom,-0.1,0
+2026-10-01,urban,residence,Residence,category,yoy,-0.3,0
+2026-10-01,urban,residence,Residence,category,ytd,-0.3,0
+2026-10-01,urban,household,"Household facilities, articles and services",category,mom,-0.2,0
+2026-10-01,urban,household,"Household facilities, articles and services",category,yoy,0.3,0
+2026-10-01,urban,household,"Household facilities, articles and services",category,ytd,1.3,0
+2026-10-01,urban,transport_telecom,Transportation and telecommunication,category,mom,1.0,0
+2026-10-01,urban,transport_telecom,Transportation and telecommunication,category,yoy,5.5,0
+2026-10-01,urban,transport_telecom,Transportation and telecommunication,category,ytd,2.3,0
+2026-10-01,urban,education_culture,"Education, culture and recreation",category,mom,0.3,0
+2026-10-01,urban,education_culture,"Education, culture and recreation",category,yoy,1.6,0
+2026-10-01,urban,education_culture,"Education, culture and recreation",category,ytd,1.3,0
+2026-10-01,urban,health_care,Health care and medical services,category,mom,0.1,0
+2026-10-01,urban,health_care,Health care and medical services,category,yoy,2.4,0
+2026-10-01,urban,health_care,Health care and medical services,category,ytd,2.2,0
+2026-10-01,urban,other,Miscellaneous goods and services,category,mom,-1.0,0
+2026-10-01,urban,other,Miscellaneous goods and services,category,yoy,1.7,0
+2026-10-01,urban,other,Miscellaneous goods and services,category,ytd,9.0,0

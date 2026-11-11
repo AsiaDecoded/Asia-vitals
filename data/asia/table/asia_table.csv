@@ -2895,6 +2895,7 @@ CN,China,cpi,CPI,2026-06-01,1.0,published,data/cn/cpi/cn_cpi.csv
 CN,China,cpi,CPI,2026-07-01,0.5,published,data/cn/cpi/cn_cpi.csv
 CN,China,cpi,CPI,2026-08-01,0.8,published,data/cn/cpi/cn_cpi.csv
 CN,China,cpi,CPI,2026-09-01,0.9,published,data/cn/cpi/cn_cpi.csv
+CN,China,cpi,CPI,2026-10-01,0.7,published,data/cn/cpi/cn_cpi.csv
 CN,China,official_core,CPI excluding food and energy,2021-01-01,-0.3,published,data/cn/cpi/cn_cpi.csv
 CN,China,official_core,CPI excluding food and energy,2021-02-01,0.0,published,data/cn/cpi/cn_cpi.csv
 CN,China,official_core,CPI excluding food and energy,2021-03-01,0.3,published,data/cn/cpi/cn_cpi.csv
@@ -2964,6 +2965,7 @@ CN,China,official_core,CPI excluding food and energy,2026-06-01,1.0,published,da
 CN,China,official_core,CPI excluding food and energy,2026-07-01,0.9,published,data/cn/cpi/cn_cpi.csv
 CN,China,official_core,CPI excluding food and energy,2026-08-01,1.0,published,data/cn/cpi/cn_cpi.csv
 CN,China,official_core,CPI excluding food and energy,2026-09-01,1.0,published,data/cn/cpi/cn_cpi.csv
+CN,China,official_core,CPI excluding food and energy,2026-10-01,0.8,published,data/cn/cpi/cn_cpi.csv
 CN,China,ppi,PPI (ex-factory prices),2015-01-01,-4.3,published,data/cn/ppi/cn_ppi.csv
 CN,China,ppi,PPI (ex-factory prices),2015-02-01,-4.8,published,data/cn/ppi/cn_ppi.csv
 CN,China,ppi,PPI (ex-factory prices),2015-03-01,-4.6,published,data/cn/ppi/cn_ppi.csv
@@ -3105,6 +3107,7 @@ CN,China,ppi,PPI (ex-factory prices),2026-06-01,4.1,published,data/cn/ppi/cn_ppi
 CN,China,ppi,PPI (ex-factory prices),2026-07-01,3.5,published,data/cn/ppi/cn_ppi.csv
 CN,China,ppi,PPI (ex-factory prices),2026-08-01,3.8,published,data/cn/ppi/cn_ppi.csv
 CN,China,ppi,PPI (ex-factory prices),2026-09-01,5.0,published,data/cn/ppi/cn_ppi.csv
+CN,China,ppi,PPI (ex-factory prices),2026-10-01,5.7,published,data/cn/ppi/cn_ppi.csv
 IN,India,cpi,"CPI, combined",2015-01-01,5.19,published,data/in/cpi/in_cpi.csv
 IN,India,cpi,"CPI, combined",2015-02-01,5.37,published,data/in/cpi/in_cpi.csv
 IN,India,cpi,"CPI, combined",2015-03-01,5.25,published,data/in/cpi/in_cpi.csv

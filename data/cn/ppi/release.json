@@ -1,23 +1,27 @@
 {
- "code": "P2026-09",
- "label": "September 2026",
- "latest_month": "2026-09-01",
+ "code": "P2026-10",
+ "label": "October 2026",
+ "latest_month": "2026-10-01",
  "table": "NBS data portal (data.stats.gov.cn), monthly industrial producer price catalogs",
- "processed_at": "2026-11-11T01:45:00Z",
- "rows": 59293,
+ "processed_at": "2026-11-11T04:33:06Z",
+ "rows": 59659,
  "warnings": [
   "7 values of 0 left out as missing: ['ind_other_mining yoy 2008-12', 'ind_other_mining yoy 2008-11', 'ind_other_mining yoy 2008-10', 'ind_other_mining yoy 2008-09', 'ind_other_mining yoy 2008-08']",
   "4 values of 0 left out as missing: ['purchasing yoy 2020-02', 'purchasing yoy 2010-07', 'purchasing yoy 2009-12', 'purchasing yoy 2006-05']",
-  "YTD vs y/y average beyond 0.15 in 4 of 756: ['purchasing 2022-12: YTD 106.1 vs y/y average 106.31', 'purchasing 2022-11: YTD 106.7 vs y/y average 106.85', 'ppi_production 2022-12: YTD 104.9 vs y/y average 105.13']",
-  "m/m compounded over 12 months differs from y/y by more than 0.4pp in 7 of 712 months: ['purchasing 2021-05: y/y 112.5 vs m/m compounded 113.00', 'purchasing 2021-04: y/y 109.0 vs m/m compounded 109.56', 'purchasing 2021-03: y/y 105.2 vs m/m compounded 105.67']"
+  "YTD vs y/y average beyond 0.15 in 4 of 760: ['purchasing 2022-12: YTD 106.1 vs y/y average 106.31', 'purchasing 2022-11: YTD 106.7 vs y/y average 106.85', 'ppi_production 2022-12: YTD 104.9 vs y/y average 105.13']",
+  "m/m compounded over 12 months differs from y/y by more than 0.4pp in 7 of 716 months: ['purchasing 2021-05: y/y 112.5 vs m/m compounded 113.00', 'purchasing 2021-04: y/y 109.0 vs m/m compounded 109.56', 'purchasing 2021-03: y/y 105.2 vs m/m compounded 105.67']"
  ],
- "long_rows": 59293,
+ "long_rows": 59659,
  "catalogs": 20,
  "province_catalogs": 1,
  "history": [
   {
    "code": "P2026-09",
    "processed_at": "2026-11-11T01:45:00Z"
+  },
+  {
+   "code": "P2026-10",
+   "processed_at": "2026-11-11T04:33:06Z"
   }
  ]
 }

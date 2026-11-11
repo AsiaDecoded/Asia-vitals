@@ -4,16 +4,10 @@
  "latest_month": "2026-10-01",
  "source": "trade_vn",
  "table": "NSO monthly report tables 26, 27",
- "processed_at": "2026-11-11T02:21:50Z",
+ "processed_at": "2026-11-11T05:04:51Z",
  "rows": 56,
- "warnings": [
-  "2020-10: nso.gov.vn/wp-content/uploads/2019/05/Bieu-12-2018.En_-1.xls: BadZipFile('File is not a zip file')",
-  "2020-10: //www.nso.gov.vn/wp-content/uploads/2020/11/Bieu-thang-2.xls: BadZipFile('File is not a zip file')",
-  "2020-04: w.nso.gov.vn/wp-content/uploads/2020/05/Bieu-04-2020.En_.xls: BadZipFile('File is not a zip file')",
-  "2020-02: nso.gov.vn/wp-content/uploads/2020/01/Bieu-12-2019.En_-1.xls: BadZipFile('File is not a zip file')",
-  "2020-02: w.nso.gov.vn/wp-content/uploads/2020/03/Bieu-02-2020.En_.xls: BadZipFile('File is not a zip file')"
- ],
- "fetched": 29,
+ "warnings": [],
+ "fetched": 3,
  "history": [
   {
    "code": "T2026-10h30",
@@ -25,7 +19,7 @@
   },
   {
    "code": "T2026-10h83",
-   "processed_at": "2026-11-11T02:21:50Z"
+   "processed_at": "2026-11-11T05:04:51Z"
   }
  ]
 }

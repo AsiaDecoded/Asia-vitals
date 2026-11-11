@@ -124501,3 +124501,1026 @@ date,area,area_name,series,label,group,order,measure,value,pct,base,base_break,r
 2026-09-01,65,Xinjiang,other,Miscellaneous goods and services,category,80,mom,98.1,-1.9,2025,0,2026-10-14,6021702000023-6039802100342
 2026-09-01,65,Xinjiang,other,Miscellaneous goods and services,category,80,yoy,106.0,6.0,2025,0,2026-10-14,6021702000021-6039802100342
 2026-09-01,65,Xinjiang,other,Miscellaneous goods and services,category,80,ytd,110.1,10.1,2025,0,2026-10-14,6021702000022-6039802100342
+2026-10-01,11,Beijing,all,CPI,headline,0,mom,100.0,0.0,2025,0,2026-11-09,6021702000023
+2026-10-01,11,Beijing,all,CPI,headline,0,yoy,100.2,0.2,2025,0,2026-11-09,6021702000021
+2026-10-01,11,Beijing,all,CPI,headline,0,ytd,100.6,0.6,2025,0,2026-11-09,6021702000022
+2026-10-01,11,Beijing,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,11,Beijing,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,96.9,-3.1,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,11,Beijing,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,98.7,-1.3,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,11,Beijing,grain,Grain,food,11,yoy,99.1,-0.9,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,11,Beijing,fresh_vegetables,Fresh vegetables,food,13,yoy,77.5,-22.5,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,11,Beijing,livestock_meat,Meat of livestock,food,14,yoy,97.9,-2.1,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,11,Beijing,aquatic,Aquatic products,food,19,yoy,97.7,-2.3,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,11,Beijing,eggs,Eggs,food,19.1,yoy,110.5,10.5,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,11,Beijing,fresh_fruit,Fresh fruits,food,19.3,yoy,87.2,-12.8,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,11,Beijing,clothing,Clothing,category,20,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,11,Beijing,clothing,Clothing,category,20,yoy,100.5,0.5,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,11,Beijing,clothing,Clothing,category,20,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,11,Beijing,residence,Residence,category,30,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,11,Beijing,residence,Residence,category,30,yoy,99.9,-0.1,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,11,Beijing,residence,Residence,category,30,ytd,99.7,-0.3,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,11,Beijing,household,"Household facilities, articles and services",category,40,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,11,Beijing,household,"Household facilities, articles and services",category,40,yoy,100.5,0.5,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,11,Beijing,household,"Household facilities, articles and services",category,40,ytd,101.6,1.6,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,11,Beijing,transport_telecom,Transportation and telecommunication,category,50,mom,100.3,0.3,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,11,Beijing,transport_telecom,Transportation and telecommunication,category,50,yoy,102.9,2.9,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,11,Beijing,transport_telecom,Transportation and telecommunication,category,50,ytd,101.8,1.8,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,11,Beijing,education_culture,"Education, culture and recreation",category,60,mom,100.4,0.4,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,11,Beijing,education_culture,"Education, culture and recreation",category,60,yoy,102.1,2.1,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,11,Beijing,education_culture,"Education, culture and recreation",category,60,ytd,102.0,2.0,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,11,Beijing,health_care,Health care and medical services,category,70,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,11,Beijing,health_care,Health care and medical services,category,70,yoy,103.5,3.5,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,11,Beijing,health_care,Health care and medical services,category,70,ytd,101.7,1.7,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,11,Beijing,other,Miscellaneous goods and services,category,80,mom,98.7,-1.3,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,11,Beijing,other,Miscellaneous goods and services,category,80,yoy,100.5,0.5,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,11,Beijing,other,Miscellaneous goods and services,category,80,ytd,108.2,8.2,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,12,Tianjin,all,CPI,headline,0,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023
+2026-10-01,12,Tianjin,all,CPI,headline,0,yoy,100.7,0.7,2025,0,2026-11-09,6021702000021
+2026-10-01,12,Tianjin,all,CPI,headline,0,ytd,100.7,0.7,2025,0,2026-11-09,6021702000022
+2026-10-01,12,Tianjin,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.1,-0.9,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,12,Tianjin,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,98.5,-1.5,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,12,Tianjin,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.8,-0.2,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,12,Tianjin,grain,Grain,food,11,yoy,99.6,-0.4,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,12,Tianjin,fresh_vegetables,Fresh vegetables,food,13,yoy,78.4,-21.6,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,12,Tianjin,livestock_meat,Meat of livestock,food,14,yoy,98.5,-1.5,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,12,Tianjin,aquatic,Aquatic products,food,19,yoy,100.5,0.5,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,12,Tianjin,eggs,Eggs,food,19.1,yoy,113.2,13.2,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,12,Tianjin,fresh_fruit,Fresh fruits,food,19.3,yoy,94.0,-6.0,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,12,Tianjin,clothing,Clothing,category,20,mom,100.2,0.2,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,12,Tianjin,clothing,Clothing,category,20,yoy,101.6,1.6,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,12,Tianjin,clothing,Clothing,category,20,ytd,101.9,1.9,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,12,Tianjin,residence,Residence,category,30,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,12,Tianjin,residence,Residence,category,30,yoy,99.8,-0.2,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,12,Tianjin,residence,Residence,category,30,ytd,99.9,-0.1,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,12,Tianjin,household,"Household facilities, articles and services",category,40,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,12,Tianjin,household,"Household facilities, articles and services",category,40,yoy,100.0,0.0,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,12,Tianjin,household,"Household facilities, articles and services",category,40,ytd,100.0,0.0,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,12,Tianjin,transport_telecom,Transportation and telecommunication,category,50,mom,101.5,1.5,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,12,Tianjin,transport_telecom,Transportation and telecommunication,category,50,yoy,105.7,5.7,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,12,Tianjin,transport_telecom,Transportation and telecommunication,category,50,ytd,101.7,1.7,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,12,Tianjin,education_culture,"Education, culture and recreation",category,60,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,12,Tianjin,education_culture,"Education, culture and recreation",category,60,yoy,101.4,1.4,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,12,Tianjin,education_culture,"Education, culture and recreation",category,60,ytd,101.7,1.7,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,12,Tianjin,health_care,Health care and medical services,category,70,mom,100.4,0.4,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,12,Tianjin,health_care,Health care and medical services,category,70,yoy,100.7,0.7,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,12,Tianjin,health_care,Health care and medical services,category,70,ytd,100.0,0.0,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,12,Tianjin,other,Miscellaneous goods and services,category,80,mom,98.9,-1.1,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,12,Tianjin,other,Miscellaneous goods and services,category,80,yoy,101.0,1.0,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,12,Tianjin,other,Miscellaneous goods and services,category,80,ytd,107.7,7.7,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,13,Hebei,all,CPI,headline,0,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023
+2026-10-01,13,Hebei,all,CPI,headline,0,yoy,100.1,0.1,2025,0,2026-11-09,6021702000021
+2026-10-01,13,Hebei,all,CPI,headline,0,ytd,100.8,0.8,2025,0,2026-11-09,6021702000022
+2026-10-01,13,Hebei,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.5,-0.5,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,13,Hebei,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,97.6,-2.4,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,13,Hebei,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.5,-0.5,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,13,Hebei,grain,Grain,food,11,yoy,98.4,-1.6,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,13,Hebei,fresh_vegetables,Fresh vegetables,food,13,yoy,77.0,-23.0,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,13,Hebei,livestock_meat,Meat of livestock,food,14,yoy,98.6,-1.4,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,13,Hebei,aquatic,Aquatic products,food,19,yoy,101.1,1.1,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,13,Hebei,eggs,Eggs,food,19.1,yoy,109.1,9.1,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,13,Hebei,fresh_fruit,Fresh fruits,food,19.3,yoy,90.5,-9.5,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,13,Hebei,clothing,Clothing,category,20,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,13,Hebei,clothing,Clothing,category,20,yoy,99.5,-0.5,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,13,Hebei,clothing,Clothing,category,20,ytd,100.9,0.9,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,13,Hebei,residence,Residence,category,30,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,13,Hebei,residence,Residence,category,30,yoy,99.2,-0.8,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,13,Hebei,residence,Residence,category,30,ytd,99.5,-0.5,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,13,Hebei,household,"Household facilities, articles and services",category,40,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,13,Hebei,household,"Household facilities, articles and services",category,40,yoy,100.6,0.6,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,13,Hebei,household,"Household facilities, articles and services",category,40,ytd,101.4,1.4,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,13,Hebei,transport_telecom,Transportation and telecommunication,category,50,mom,100.8,0.8,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,13,Hebei,transport_telecom,Transportation and telecommunication,category,50,yoy,105.0,5.0,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,13,Hebei,transport_telecom,Transportation and telecommunication,category,50,ytd,102.4,2.4,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,13,Hebei,education_culture,"Education, culture and recreation",category,60,mom,100.3,0.3,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,13,Hebei,education_culture,"Education, culture and recreation",category,60,yoy,100.6,0.6,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,13,Hebei,education_culture,"Education, culture and recreation",category,60,ytd,100.7,0.7,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,13,Hebei,health_care,Health care and medical services,category,70,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,13,Hebei,health_care,Health care and medical services,category,70,yoy,101.4,1.4,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,13,Hebei,health_care,Health care and medical services,category,70,ytd,102.1,2.1,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,13,Hebei,other,Miscellaneous goods and services,category,80,mom,98.4,-1.6,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,13,Hebei,other,Miscellaneous goods and services,category,80,yoy,102.4,2.4,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,13,Hebei,other,Miscellaneous goods and services,category,80,ytd,111.2,11.2,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,14,Shanxi,all,CPI,headline,0,mom,100.0,0.0,2025,0,2026-11-09,6021702000023
+2026-10-01,14,Shanxi,all,CPI,headline,0,yoy,100.4,0.4,2025,0,2026-11-09,6021702000021
+2026-10-01,14,Shanxi,all,CPI,headline,0,ytd,100.8,0.8,2025,0,2026-11-09,6021702000022
+2026-10-01,14,Shanxi,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.4,-0.6,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,14,Shanxi,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,97.5,-2.5,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,14,Shanxi,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,98.7,-1.3,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,14,Shanxi,grain,Grain,food,11,yoy,98.8,-1.2,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,14,Shanxi,fresh_vegetables,Fresh vegetables,food,13,yoy,76.9,-23.1,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,14,Shanxi,livestock_meat,Meat of livestock,food,14,yoy,95.6,-4.4,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,14,Shanxi,aquatic,Aquatic products,food,19,yoy,97.5,-2.5,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,14,Shanxi,eggs,Eggs,food,19.1,yoy,113.5,13.5,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,14,Shanxi,fresh_fruit,Fresh fruits,food,19.3,yoy,95.8,-4.2,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,14,Shanxi,clothing,Clothing,category,20,mom,99.0,-1.0,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,14,Shanxi,clothing,Clothing,category,20,yoy,99.2,-0.8,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,14,Shanxi,clothing,Clothing,category,20,ytd,100.4,0.4,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,14,Shanxi,residence,Residence,category,30,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,14,Shanxi,residence,Residence,category,30,yoy,99.5,-0.5,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,14,Shanxi,residence,Residence,category,30,ytd,99.8,-0.2,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,14,Shanxi,household,"Household facilities, articles and services",category,40,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,14,Shanxi,household,"Household facilities, articles and services",category,40,yoy,100.2,0.2,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,14,Shanxi,household,"Household facilities, articles and services",category,40,ytd,101.8,1.8,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,14,Shanxi,transport_telecom,Transportation and telecommunication,category,50,mom,101.4,1.4,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,14,Shanxi,transport_telecom,Transportation and telecommunication,category,50,yoy,106.3,6.3,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,14,Shanxi,transport_telecom,Transportation and telecommunication,category,50,ytd,102.3,2.3,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,14,Shanxi,education_culture,"Education, culture and recreation",category,60,mom,100.2,0.2,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,14,Shanxi,education_culture,"Education, culture and recreation",category,60,yoy,101.1,1.1,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,14,Shanxi,education_culture,"Education, culture and recreation",category,60,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,14,Shanxi,health_care,Health care and medical services,category,70,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,14,Shanxi,health_care,Health care and medical services,category,70,yoy,101.8,1.8,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,14,Shanxi,health_care,Health care and medical services,category,70,ytd,102.4,2.4,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,14,Shanxi,other,Miscellaneous goods and services,category,80,mom,99.2,-0.8,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,14,Shanxi,other,Miscellaneous goods and services,category,80,yoy,102.2,2.2,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,14,Shanxi,other,Miscellaneous goods and services,category,80,ytd,110.2,10.2,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,15,Inner Mongolia,all,CPI,headline,0,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023
+2026-10-01,15,Inner Mongolia,all,CPI,headline,0,yoy,101.0,1.0,2025,0,2026-11-09,6021702000021
+2026-10-01,15,Inner Mongolia,all,CPI,headline,0,ytd,101.2,1.2,2025,0,2026-11-09,6021702000022
+2026-10-01,15,Inner Mongolia,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.7,-0.3,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,15,Inner Mongolia,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,98.8,-1.2,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,15,Inner Mongolia,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.9,-0.1,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,15,Inner Mongolia,grain,Grain,food,11,yoy,99.5,-0.5,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,15,Inner Mongolia,fresh_vegetables,Fresh vegetables,food,13,yoy,81.5,-18.5,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,15,Inner Mongolia,livestock_meat,Meat of livestock,food,14,yoy,101.8,1.8,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,15,Inner Mongolia,aquatic,Aquatic products,food,19,yoy,99.6,-0.4,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,15,Inner Mongolia,eggs,Eggs,food,19.1,yoy,112.1,12.1,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,15,Inner Mongolia,fresh_fruit,Fresh fruits,food,19.3,yoy,94.4,-5.6,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,15,Inner Mongolia,clothing,Clothing,category,20,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,15,Inner Mongolia,clothing,Clothing,category,20,yoy,100.5,0.5,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,15,Inner Mongolia,clothing,Clothing,category,20,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,15,Inner Mongolia,residence,Residence,category,30,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,15,Inner Mongolia,residence,Residence,category,30,yoy,99.7,-0.3,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,15,Inner Mongolia,residence,Residence,category,30,ytd,100.1,0.1,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,15,Inner Mongolia,household,"Household facilities, articles and services",category,40,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,15,Inner Mongolia,household,"Household facilities, articles and services",category,40,yoy,100.5,0.5,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,15,Inner Mongolia,household,"Household facilities, articles and services",category,40,ytd,101.7,1.7,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,15,Inner Mongolia,transport_telecom,Transportation and telecommunication,category,50,mom,100.7,0.7,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,15,Inner Mongolia,transport_telecom,Transportation and telecommunication,category,50,yoy,104.8,4.8,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,15,Inner Mongolia,transport_telecom,Transportation and telecommunication,category,50,ytd,101.9,1.9,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,15,Inner Mongolia,education_culture,"Education, culture and recreation",category,60,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,15,Inner Mongolia,education_culture,"Education, culture and recreation",category,60,yoy,101.7,1.7,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,15,Inner Mongolia,education_culture,"Education, culture and recreation",category,60,ytd,101.3,1.3,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,15,Inner Mongolia,health_care,Health care and medical services,category,70,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,15,Inner Mongolia,health_care,Health care and medical services,category,70,yoy,102.1,2.1,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,15,Inner Mongolia,health_care,Health care and medical services,category,70,ytd,102.0,2.0,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,15,Inner Mongolia,other,Miscellaneous goods and services,category,80,mom,98.3,-1.7,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,15,Inner Mongolia,other,Miscellaneous goods and services,category,80,yoy,103.5,3.5,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,15,Inner Mongolia,other,Miscellaneous goods and services,category,80,ytd,110.6,10.6,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,21,Liaoning,all,CPI,headline,0,mom,100.1,0.1,2025,0,2026-11-09,6021702000023
+2026-10-01,21,Liaoning,all,CPI,headline,0,yoy,100.9,0.9,2025,0,2026-11-09,6021702000021
+2026-10-01,21,Liaoning,all,CPI,headline,0,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022
+2026-10-01,21,Liaoning,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.6,-0.4,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,21,Liaoning,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,97.8,-2.2,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,21,Liaoning,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.7,-0.3,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,21,Liaoning,grain,Grain,food,11,yoy,99.3,-0.7,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,21,Liaoning,fresh_vegetables,Fresh vegetables,food,13,yoy,84.9,-15.1,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,21,Liaoning,livestock_meat,Meat of livestock,food,14,yoy,97.0,-3.0,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,21,Liaoning,aquatic,Aquatic products,food,19,yoy,100.6,0.6,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,21,Liaoning,eggs,Eggs,food,19.1,yoy,108.3,8.3,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,21,Liaoning,fresh_fruit,Fresh fruits,food,19.3,yoy,98.6,-1.4,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,21,Liaoning,clothing,Clothing,category,20,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,21,Liaoning,clothing,Clothing,category,20,yoy,100.1,0.1,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,21,Liaoning,clothing,Clothing,category,20,ytd,100.4,0.4,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,21,Liaoning,residence,Residence,category,30,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,21,Liaoning,residence,Residence,category,30,yoy,100.0,0.0,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,21,Liaoning,residence,Residence,category,30,ytd,99.9,-0.1,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,21,Liaoning,household,"Household facilities, articles and services",category,40,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,21,Liaoning,household,"Household facilities, articles and services",category,40,yoy,99.3,-0.7,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,21,Liaoning,household,"Household facilities, articles and services",category,40,ytd,100.5,0.5,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,21,Liaoning,transport_telecom,Transportation and telecommunication,category,50,mom,102.0,2.0,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,21,Liaoning,transport_telecom,Transportation and telecommunication,category,50,yoy,108.1,8.1,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,21,Liaoning,transport_telecom,Transportation and telecommunication,category,50,ytd,103.0,3.0,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,21,Liaoning,education_culture,"Education, culture and recreation",category,60,mom,100.1,0.1,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,21,Liaoning,education_culture,"Education, culture and recreation",category,60,yoy,101.3,1.3,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,21,Liaoning,education_culture,"Education, culture and recreation",category,60,ytd,100.8,0.8,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,21,Liaoning,health_care,Health care and medical services,category,70,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,21,Liaoning,health_care,Health care and medical services,category,70,yoy,101.5,1.5,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,21,Liaoning,health_care,Health care and medical services,category,70,ytd,101.3,1.3,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,21,Liaoning,other,Miscellaneous goods and services,category,80,mom,99.0,-1.0,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,21,Liaoning,other,Miscellaneous goods and services,category,80,yoy,102.7,2.7,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,21,Liaoning,other,Miscellaneous goods and services,category,80,ytd,112.0,12.0,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,22,Jilin,all,CPI,headline,0,mom,100.0,0.0,2025,0,2026-11-09,6021702000023
+2026-10-01,22,Jilin,all,CPI,headline,0,yoy,100.9,0.9,2025,0,2026-11-09,6021702000021
+2026-10-01,22,Jilin,all,CPI,headline,0,ytd,101.2,1.2,2025,0,2026-11-09,6021702000022
+2026-10-01,22,Jilin,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.6,-0.4,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,22,Jilin,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,98.5,-1.5,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,22,Jilin,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.8,-0.2,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,22,Jilin,grain,Grain,food,11,yoy,97.4,-2.6,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,22,Jilin,fresh_vegetables,Fresh vegetables,food,13,yoy,84.2,-15.8,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,22,Jilin,livestock_meat,Meat of livestock,food,14,yoy,102.3,2.3,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,22,Jilin,aquatic,Aquatic products,food,19,yoy,102.9,2.9,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,22,Jilin,eggs,Eggs,food,19.1,yoy,109.3,9.3,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,22,Jilin,fresh_fruit,Fresh fruits,food,19.3,yoy,89.6,-10.4,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,22,Jilin,clothing,Clothing,category,20,mom,99.7,-0.3,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,22,Jilin,clothing,Clothing,category,20,yoy,100.2,0.2,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,22,Jilin,clothing,Clothing,category,20,ytd,101.7,1.7,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,22,Jilin,residence,Residence,category,30,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,22,Jilin,residence,Residence,category,30,yoy,99.8,-0.2,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,22,Jilin,residence,Residence,category,30,ytd,99.7,-0.3,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,22,Jilin,household,"Household facilities, articles and services",category,40,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,22,Jilin,household,"Household facilities, articles and services",category,40,yoy,100.3,0.3,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,22,Jilin,household,"Household facilities, articles and services",category,40,ytd,101.4,1.4,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,22,Jilin,transport_telecom,Transportation and telecommunication,category,50,mom,101.1,1.1,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,22,Jilin,transport_telecom,Transportation and telecommunication,category,50,yoy,106.0,6.0,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,22,Jilin,transport_telecom,Transportation and telecommunication,category,50,ytd,102.5,2.5,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,22,Jilin,education_culture,"Education, culture and recreation",category,60,mom,100.1,0.1,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,22,Jilin,education_culture,"Education, culture and recreation",category,60,yoy,100.4,0.4,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,22,Jilin,education_culture,"Education, culture and recreation",category,60,ytd,100.9,0.9,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,22,Jilin,health_care,Health care and medical services,category,70,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,22,Jilin,health_care,Health care and medical services,category,70,yoy,102.3,2.3,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,22,Jilin,health_care,Health care and medical services,category,70,ytd,102.6,2.6,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,22,Jilin,other,Miscellaneous goods and services,category,80,mom,98.5,-1.5,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,22,Jilin,other,Miscellaneous goods and services,category,80,yoy,102.0,2.0,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,22,Jilin,other,Miscellaneous goods and services,category,80,ytd,110.0,10.0,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,23,Heilongjiang,all,CPI,headline,0,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023
+2026-10-01,23,Heilongjiang,all,CPI,headline,0,yoy,101.1,1.1,2025,0,2026-11-09,6021702000021
+2026-10-01,23,Heilongjiang,all,CPI,headline,0,ytd,101.4,1.4,2025,0,2026-11-09,6021702000022
+2026-10-01,23,Heilongjiang,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.6,-0.4,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,23,Heilongjiang,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,97.9,-2.1,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,23,Heilongjiang,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.7,-0.3,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,23,Heilongjiang,grain,Grain,food,11,yoy,99.2,-0.8,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,23,Heilongjiang,fresh_vegetables,Fresh vegetables,food,13,yoy,79.9,-20.1,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,23,Heilongjiang,livestock_meat,Meat of livestock,food,14,yoy,98.0,-2.0,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,23,Heilongjiang,aquatic,Aquatic products,food,19,yoy,102.7,2.7,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,23,Heilongjiang,eggs,Eggs,food,19.1,yoy,112.5,12.5,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,23,Heilongjiang,fresh_fruit,Fresh fruits,food,19.3,yoy,92.7,-7.3,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,23,Heilongjiang,clothing,Clothing,category,20,mom,99.1,-0.9,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,23,Heilongjiang,clothing,Clothing,category,20,yoy,101.0,1.0,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,23,Heilongjiang,clothing,Clothing,category,20,ytd,101.2,1.2,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,23,Heilongjiang,residence,Residence,category,30,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,23,Heilongjiang,residence,Residence,category,30,yoy,100.1,0.1,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,23,Heilongjiang,residence,Residence,category,30,ytd,100.2,0.2,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,23,Heilongjiang,household,"Household facilities, articles and services",category,40,mom,99.7,-0.3,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,23,Heilongjiang,household,"Household facilities, articles and services",category,40,yoy,99.6,-0.4,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,23,Heilongjiang,household,"Household facilities, articles and services",category,40,ytd,101.2,1.2,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,23,Heilongjiang,transport_telecom,Transportation and telecommunication,category,50,mom,101.4,1.4,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,23,Heilongjiang,transport_telecom,Transportation and telecommunication,category,50,yoy,107.4,7.4,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,23,Heilongjiang,transport_telecom,Transportation and telecommunication,category,50,ytd,103.2,3.2,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,23,Heilongjiang,education_culture,"Education, culture and recreation",category,60,mom,100.1,0.1,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,23,Heilongjiang,education_culture,"Education, culture and recreation",category,60,yoy,101.3,1.3,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,23,Heilongjiang,education_culture,"Education, culture and recreation",category,60,ytd,101.1,1.1,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,23,Heilongjiang,health_care,Health care and medical services,category,70,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,23,Heilongjiang,health_care,Health care and medical services,category,70,yoy,103.2,3.2,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,23,Heilongjiang,health_care,Health care and medical services,category,70,ytd,103.3,3.3,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,23,Heilongjiang,other,Miscellaneous goods and services,category,80,mom,98.5,-1.5,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,23,Heilongjiang,other,Miscellaneous goods and services,category,80,yoy,102.9,2.9,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,23,Heilongjiang,other,Miscellaneous goods and services,category,80,ytd,110.7,10.7,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,31,Shanghai,all,CPI,headline,0,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023
+2026-10-01,31,Shanghai,all,CPI,headline,0,yoy,101.4,1.4,2025,0,2026-11-09,6021702000021
+2026-10-01,31,Shanghai,all,CPI,headline,0,ytd,101.1,1.1,2025,0,2026-11-09,6021702000022
+2026-10-01,31,Shanghai,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,31,Shanghai,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,99.4,-0.6,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,31,Shanghai,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.6,-0.4,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,31,Shanghai,grain,Grain,food,11,yoy,98.2,-1.8,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,31,Shanghai,fresh_vegetables,Fresh vegetables,food,13,yoy,87.5,-12.5,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,31,Shanghai,livestock_meat,Meat of livestock,food,14,yoy,100.6,0.6,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,31,Shanghai,aquatic,Aquatic products,food,19,yoy,99.5,-0.5,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,31,Shanghai,eggs,Eggs,food,19.1,yoy,110.6,10.6,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,31,Shanghai,fresh_fruit,Fresh fruits,food,19.3,yoy,98.1,-1.9,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,31,Shanghai,clothing,Clothing,category,20,mom,99.2,-0.8,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,31,Shanghai,clothing,Clothing,category,20,yoy,101.5,1.5,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,31,Shanghai,clothing,Clothing,category,20,ytd,101.6,1.6,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,31,Shanghai,residence,Residence,category,30,mom,99.7,-0.3,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,31,Shanghai,residence,Residence,category,30,yoy,100.1,0.1,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,31,Shanghai,residence,Residence,category,30,ytd,100.1,0.1,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,31,Shanghai,household,"Household facilities, articles and services",category,40,mom,99.6,-0.4,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,31,Shanghai,household,"Household facilities, articles and services",category,40,yoy,101.1,1.1,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,31,Shanghai,household,"Household facilities, articles and services",category,40,ytd,102.3,2.3,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,31,Shanghai,transport_telecom,Transportation and telecommunication,category,50,mom,100.3,0.3,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,31,Shanghai,transport_telecom,Transportation and telecommunication,category,50,yoy,105.2,5.2,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,31,Shanghai,transport_telecom,Transportation and telecommunication,category,50,ytd,102.5,2.5,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,31,Shanghai,education_culture,"Education, culture and recreation",category,60,mom,100.6,0.6,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,31,Shanghai,education_culture,"Education, culture and recreation",category,60,yoy,102.9,2.9,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,31,Shanghai,education_culture,"Education, culture and recreation",category,60,ytd,102.8,2.8,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,31,Shanghai,health_care,Health care and medical services,category,70,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,31,Shanghai,health_care,Health care and medical services,category,70,yoy,105.3,5.3,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,31,Shanghai,health_care,Health care and medical services,category,70,ytd,101.2,1.2,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,31,Shanghai,other,Miscellaneous goods and services,category,80,mom,99.4,-0.6,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,31,Shanghai,other,Miscellaneous goods and services,category,80,yoy,104.9,4.9,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,31,Shanghai,other,Miscellaneous goods and services,category,80,ytd,109.5,9.5,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,32,Jiangsu,all,CPI,headline,0,mom,100.0,0.0,2025,0,2026-11-09,6021702000023
+2026-10-01,32,Jiangsu,all,CPI,headline,0,yoy,100.7,0.7,2025,0,2026-11-09,6021702000021
+2026-10-01,32,Jiangsu,all,CPI,headline,0,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022
+2026-10-01,32,Jiangsu,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.4,-0.6,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,32,Jiangsu,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,98.0,-2.0,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,32,Jiangsu,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.2,-0.8,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,32,Jiangsu,grain,Grain,food,11,yoy,98.6,-1.4,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,32,Jiangsu,fresh_vegetables,Fresh vegetables,food,13,yoy,82.7,-17.3,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,32,Jiangsu,livestock_meat,Meat of livestock,food,14,yoy,95.9,-4.1,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,32,Jiangsu,aquatic,Aquatic products,food,19,yoy,100.0,0.0,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,32,Jiangsu,eggs,Eggs,food,19.1,yoy,111.1,11.1,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,32,Jiangsu,fresh_fruit,Fresh fruits,food,19.3,yoy,94.8,-5.2,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,32,Jiangsu,clothing,Clothing,category,20,mom,100.5,0.5,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,32,Jiangsu,clothing,Clothing,category,20,yoy,102.4,2.4,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,32,Jiangsu,clothing,Clothing,category,20,ytd,102.7,2.7,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,32,Jiangsu,residence,Residence,category,30,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,32,Jiangsu,residence,Residence,category,30,yoy,99.4,-0.6,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,32,Jiangsu,residence,Residence,category,30,ytd,99.3,-0.7,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,32,Jiangsu,household,"Household facilities, articles and services",category,40,mom,99.6,-0.4,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,32,Jiangsu,household,"Household facilities, articles and services",category,40,yoy,99.7,-0.3,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,32,Jiangsu,household,"Household facilities, articles and services",category,40,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,32,Jiangsu,transport_telecom,Transportation and telecommunication,category,50,mom,101.1,1.1,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,32,Jiangsu,transport_telecom,Transportation and telecommunication,category,50,yoy,105.8,5.8,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,32,Jiangsu,transport_telecom,Transportation and telecommunication,category,50,ytd,102.6,2.6,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,32,Jiangsu,education_culture,"Education, culture and recreation",category,60,mom,100.3,0.3,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,32,Jiangsu,education_culture,"Education, culture and recreation",category,60,yoy,101.2,1.2,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,32,Jiangsu,education_culture,"Education, culture and recreation",category,60,ytd,101.3,1.3,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,32,Jiangsu,health_care,Health care and medical services,category,70,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,32,Jiangsu,health_care,Health care and medical services,category,70,yoy,103.3,3.3,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,32,Jiangsu,health_care,Health care and medical services,category,70,ytd,104.2,4.2,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,32,Jiangsu,other,Miscellaneous goods and services,category,80,mom,98.9,-1.1,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,32,Jiangsu,other,Miscellaneous goods and services,category,80,yoy,100.8,0.8,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,32,Jiangsu,other,Miscellaneous goods and services,category,80,ytd,109.8,9.8,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,33,Zhejiang,all,CPI,headline,0,mom,100.0,0.0,2025,0,2026-11-09,6021702000023
+2026-10-01,33,Zhejiang,all,CPI,headline,0,yoy,100.7,0.7,2025,0,2026-11-09,6021702000021
+2026-10-01,33,Zhejiang,all,CPI,headline,0,ytd,100.9,0.9,2025,0,2026-11-09,6021702000022
+2026-10-01,33,Zhejiang,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.7,-0.3,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,33,Zhejiang,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,98.9,-1.1,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,33,Zhejiang,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,100.1,0.1,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,33,Zhejiang,grain,Grain,food,11,yoy,99.8,-0.2,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,33,Zhejiang,fresh_vegetables,Fresh vegetables,food,13,yoy,88.0,-12.0,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,33,Zhejiang,livestock_meat,Meat of livestock,food,14,yoy,96.8,-3.2,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,33,Zhejiang,aquatic,Aquatic products,food,19,yoy,100.8,0.8,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,33,Zhejiang,eggs,Eggs,food,19.1,yoy,106.5,6.5,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,33,Zhejiang,fresh_fruit,Fresh fruits,food,19.3,yoy,93.9,-6.1,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,33,Zhejiang,clothing,Clothing,category,20,mom,100.1,0.1,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,33,Zhejiang,clothing,Clothing,category,20,yoy,100.8,0.8,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,33,Zhejiang,clothing,Clothing,category,20,ytd,101.9,1.9,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,33,Zhejiang,residence,Residence,category,30,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,33,Zhejiang,residence,Residence,category,30,yoy,99.3,-0.7,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,33,Zhejiang,residence,Residence,category,30,ytd,99.6,-0.4,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,33,Zhejiang,household,"Household facilities, articles and services",category,40,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,33,Zhejiang,household,"Household facilities, articles and services",category,40,yoy,100.2,0.2,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,33,Zhejiang,household,"Household facilities, articles and services",category,40,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,33,Zhejiang,transport_telecom,Transportation and telecommunication,category,50,mom,100.9,0.9,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,33,Zhejiang,transport_telecom,Transportation and telecommunication,category,50,yoy,104.6,4.6,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,33,Zhejiang,transport_telecom,Transportation and telecommunication,category,50,ytd,101.8,1.8,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,33,Zhejiang,education_culture,"Education, culture and recreation",category,60,mom,100.4,0.4,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,33,Zhejiang,education_culture,"Education, culture and recreation",category,60,yoy,101.8,1.8,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,33,Zhejiang,education_culture,"Education, culture and recreation",category,60,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,33,Zhejiang,health_care,Health care and medical services,category,70,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,33,Zhejiang,health_care,Health care and medical services,category,70,yoy,101.6,1.6,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,33,Zhejiang,health_care,Health care and medical services,category,70,ytd,101.8,1.8,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,33,Zhejiang,other,Miscellaneous goods and services,category,80,mom,98.6,-1.4,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,33,Zhejiang,other,Miscellaneous goods and services,category,80,yoy,102.0,2.0,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,33,Zhejiang,other,Miscellaneous goods and services,category,80,ytd,110.9,10.9,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,34,Anhui,all,CPI,headline,0,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023
+2026-10-01,34,Anhui,all,CPI,headline,0,yoy,100.6,0.6,2025,0,2026-11-09,6021702000021
+2026-10-01,34,Anhui,all,CPI,headline,0,ytd,101.1,1.1,2025,0,2026-11-09,6021702000022
+2026-10-01,34,Anhui,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.1,-0.9,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,34,Anhui,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,98.5,-1.5,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,34,Anhui,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.2,-0.8,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,34,Anhui,grain,Grain,food,11,yoy,100.1,0.1,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,34,Anhui,fresh_vegetables,Fresh vegetables,food,13,yoy,78.9,-21.1,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,34,Anhui,livestock_meat,Meat of livestock,food,14,yoy,97.7,-2.3,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,34,Anhui,aquatic,Aquatic products,food,19,yoy,98.6,-1.4,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,34,Anhui,eggs,Eggs,food,19.1,yoy,113.4,13.4,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,34,Anhui,fresh_fruit,Fresh fruits,food,19.3,yoy,104.1,4.1,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,34,Anhui,clothing,Clothing,category,20,mom,101.5,1.5,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,34,Anhui,clothing,Clothing,category,20,yoy,101.3,1.3,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,34,Anhui,clothing,Clothing,category,20,ytd,101.2,1.2,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,34,Anhui,residence,Residence,category,30,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,34,Anhui,residence,Residence,category,30,yoy,99.8,-0.2,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,34,Anhui,residence,Residence,category,30,ytd,99.9,-0.1,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,34,Anhui,household,"Household facilities, articles and services",category,40,mom,99.7,-0.3,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,34,Anhui,household,"Household facilities, articles and services",category,40,yoy,100.0,0.0,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,34,Anhui,household,"Household facilities, articles and services",category,40,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,34,Anhui,transport_telecom,Transportation and telecommunication,category,50,mom,100.8,0.8,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,34,Anhui,transport_telecom,Transportation and telecommunication,category,50,yoy,105.4,5.4,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,34,Anhui,transport_telecom,Transportation and telecommunication,category,50,ytd,102.3,2.3,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,34,Anhui,education_culture,"Education, culture and recreation",category,60,mom,100.4,0.4,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,34,Anhui,education_culture,"Education, culture and recreation",category,60,yoy,102.6,2.6,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,34,Anhui,education_culture,"Education, culture and recreation",category,60,ytd,101.7,1.7,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,34,Anhui,health_care,Health care and medical services,category,70,mom,100.1,0.1,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,34,Anhui,health_care,Health care and medical services,category,70,yoy,100.6,0.6,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,34,Anhui,health_care,Health care and medical services,category,70,ytd,105.6,5.6,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,34,Anhui,other,Miscellaneous goods and services,category,80,mom,98.7,-1.3,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,34,Anhui,other,Miscellaneous goods and services,category,80,yoy,102.2,2.2,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,34,Anhui,other,Miscellaneous goods and services,category,80,ytd,109.1,9.1,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,35,Fujian,all,CPI,headline,0,mom,100.0,0.0,2025,0,2026-11-09,6021702000023
+2026-10-01,35,Fujian,all,CPI,headline,0,yoy,100.7,0.7,2025,0,2026-11-09,6021702000021
+2026-10-01,35,Fujian,all,CPI,headline,0,ytd,100.7,0.7,2025,0,2026-11-09,6021702000022
+2026-10-01,35,Fujian,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.4,-0.6,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,35,Fujian,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,98.7,-1.3,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,35,Fujian,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.5,-0.5,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,35,Fujian,grain,Grain,food,11,yoy,99.9,-0.1,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,35,Fujian,fresh_vegetables,Fresh vegetables,food,13,yoy,85.3,-14.7,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,35,Fujian,livestock_meat,Meat of livestock,food,14,yoy,96.4,-3.6,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,35,Fujian,aquatic,Aquatic products,food,19,yoy,100.4,0.4,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,35,Fujian,eggs,Eggs,food,19.1,yoy,113.4,13.4,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,35,Fujian,fresh_fruit,Fresh fruits,food,19.3,yoy,97.7,-2.3,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,35,Fujian,clothing,Clothing,category,20,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,35,Fujian,clothing,Clothing,category,20,yoy,101.7,1.7,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,35,Fujian,clothing,Clothing,category,20,ytd,101.8,1.8,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,35,Fujian,residence,Residence,category,30,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,35,Fujian,residence,Residence,category,30,yoy,99.8,-0.2,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,35,Fujian,residence,Residence,category,30,ytd,99.7,-0.3,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,35,Fujian,household,"Household facilities, articles and services",category,40,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,35,Fujian,household,"Household facilities, articles and services",category,40,yoy,100.8,0.8,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,35,Fujian,household,"Household facilities, articles and services",category,40,ytd,101.5,1.5,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,35,Fujian,transport_telecom,Transportation and telecommunication,category,50,mom,101.0,1.0,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,35,Fujian,transport_telecom,Transportation and telecommunication,category,50,yoy,105.6,5.6,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,35,Fujian,transport_telecom,Transportation and telecommunication,category,50,ytd,102.3,2.3,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,35,Fujian,education_culture,"Education, culture and recreation",category,60,mom,100.3,0.3,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,35,Fujian,education_culture,"Education, culture and recreation",category,60,yoy,101.5,1.5,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,35,Fujian,education_culture,"Education, culture and recreation",category,60,ytd,101.5,1.5,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,35,Fujian,health_care,Health care and medical services,category,70,mom,100.6,0.6,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,35,Fujian,health_care,Health care and medical services,category,70,yoy,103.2,3.2,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,35,Fujian,health_care,Health care and medical services,category,70,ytd,102.2,2.2,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,35,Fujian,other,Miscellaneous goods and services,category,80,mom,98.9,-1.1,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,35,Fujian,other,Miscellaneous goods and services,category,80,yoy,100.0,0.0,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,35,Fujian,other,Miscellaneous goods and services,category,80,ytd,107.4,7.4,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,36,Jiangxi,all,CPI,headline,0,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023
+2026-10-01,36,Jiangxi,all,CPI,headline,0,yoy,100.6,0.6,2025,0,2026-11-09,6021702000021
+2026-10-01,36,Jiangxi,all,CPI,headline,0,ytd,100.7,0.7,2025,0,2026-11-09,6021702000022
+2026-10-01,36,Jiangxi,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.2,-0.8,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,36,Jiangxi,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,98.2,-1.8,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,36,Jiangxi,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.5,-0.5,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,36,Jiangxi,grain,Grain,food,11,yoy,100.2,0.2,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,36,Jiangxi,fresh_vegetables,Fresh vegetables,food,13,yoy,84.6,-15.4,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,36,Jiangxi,livestock_meat,Meat of livestock,food,14,yoy,96.0,-4.0,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,36,Jiangxi,aquatic,Aquatic products,food,19,yoy,97.3,-2.7,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,36,Jiangxi,eggs,Eggs,food,19.1,yoy,107.3,7.3,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,36,Jiangxi,fresh_fruit,Fresh fruits,food,19.3,yoy,99.6,-0.4,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,36,Jiangxi,clothing,Clothing,category,20,mom,99.2,-0.8,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,36,Jiangxi,clothing,Clothing,category,20,yoy,103.0,3.0,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,36,Jiangxi,clothing,Clothing,category,20,ytd,102.0,2.0,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,36,Jiangxi,residence,Residence,category,30,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,36,Jiangxi,residence,Residence,category,30,yoy,99.7,-0.3,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,36,Jiangxi,residence,Residence,category,30,ytd,99.4,-0.6,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,36,Jiangxi,household,"Household facilities, articles and services",category,40,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,36,Jiangxi,household,"Household facilities, articles and services",category,40,yoy,100.6,0.6,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,36,Jiangxi,household,"Household facilities, articles and services",category,40,ytd,101.4,1.4,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,36,Jiangxi,transport_telecom,Transportation and telecommunication,category,50,mom,101.0,1.0,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,36,Jiangxi,transport_telecom,Transportation and telecommunication,category,50,yoy,105.6,5.6,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,36,Jiangxi,transport_telecom,Transportation and telecommunication,category,50,ytd,102.3,2.3,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,36,Jiangxi,education_culture,"Education, culture and recreation",category,60,mom,100.1,0.1,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,36,Jiangxi,education_culture,"Education, culture and recreation",category,60,yoy,101.0,1.0,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,36,Jiangxi,education_culture,"Education, culture and recreation",category,60,ytd,100.8,0.8,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,36,Jiangxi,health_care,Health care and medical services,category,70,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,36,Jiangxi,health_care,Health care and medical services,category,70,yoy,102.2,2.2,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,36,Jiangxi,health_care,Health care and medical services,category,70,ytd,102.0,2.0,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,36,Jiangxi,other,Miscellaneous goods and services,category,80,mom,99.1,-0.9,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,36,Jiangxi,other,Miscellaneous goods and services,category,80,yoy,102.5,2.5,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,36,Jiangxi,other,Miscellaneous goods and services,category,80,ytd,110.0,10.0,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,37,Shandong,all,CPI,headline,0,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023
+2026-10-01,37,Shandong,all,CPI,headline,0,yoy,100.3,0.3,2025,0,2026-11-09,6021702000021
+2026-10-01,37,Shandong,all,CPI,headline,0,ytd,100.5,0.5,2025,0,2026-11-09,6021702000022
+2026-10-01,37,Shandong,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,98.8,-1.2,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,37,Shandong,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,97.2,-2.8,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,37,Shandong,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.1,-0.9,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,37,Shandong,grain,Grain,food,11,yoy,99.9,-0.1,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,37,Shandong,fresh_vegetables,Fresh vegetables,food,13,yoy,76.6,-23.4,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,37,Shandong,livestock_meat,Meat of livestock,food,14,yoy,94.8,-5.2,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,37,Shandong,aquatic,Aquatic products,food,19,yoy,99.3,-0.7,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,37,Shandong,eggs,Eggs,food,19.1,yoy,110.5,10.5,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,37,Shandong,fresh_fruit,Fresh fruits,food,19.3,yoy,94.7,-5.3,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,37,Shandong,clothing,Clothing,category,20,mom,100.2,0.2,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,37,Shandong,clothing,Clothing,category,20,yoy,101.5,1.5,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,37,Shandong,clothing,Clothing,category,20,ytd,100.8,0.8,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,37,Shandong,residence,Residence,category,30,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,37,Shandong,residence,Residence,category,30,yoy,99.5,-0.5,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,37,Shandong,residence,Residence,category,30,ytd,100.0,0.0,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,37,Shandong,household,"Household facilities, articles and services",category,40,mom,99.7,-0.3,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,37,Shandong,household,"Household facilities, articles and services",category,40,yoy,100.2,0.2,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,37,Shandong,household,"Household facilities, articles and services",category,40,ytd,101.4,1.4,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,37,Shandong,transport_telecom,Transportation and telecommunication,category,50,mom,101.2,1.2,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,37,Shandong,transport_telecom,Transportation and telecommunication,category,50,yoy,105.5,5.5,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,37,Shandong,transport_telecom,Transportation and telecommunication,category,50,ytd,101.7,1.7,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,37,Shandong,education_culture,"Education, culture and recreation",category,60,mom,100.2,0.2,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,37,Shandong,education_culture,"Education, culture and recreation",category,60,yoy,100.8,0.8,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,37,Shandong,education_culture,"Education, culture and recreation",category,60,ytd,100.0,0.0,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,37,Shandong,health_care,Health care and medical services,category,70,mom,100.1,0.1,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,37,Shandong,health_care,Health care and medical services,category,70,yoy,100.4,0.4,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,37,Shandong,health_care,Health care and medical services,category,70,ytd,100.4,0.4,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,37,Shandong,other,Miscellaneous goods and services,category,80,mom,98.4,-1.6,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,37,Shandong,other,Miscellaneous goods and services,category,80,yoy,102.3,2.3,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,37,Shandong,other,Miscellaneous goods and services,category,80,ytd,110.6,10.6,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,41,Henan,all,CPI,headline,0,mom,99.7,-0.3,2025,0,2026-11-09,6021702000023
+2026-10-01,41,Henan,all,CPI,headline,0,yoy,100.5,0.5,2025,0,2026-11-09,6021702000021
+2026-10-01,41,Henan,all,CPI,headline,0,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022
+2026-10-01,41,Henan,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,98.8,-1.2,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,41,Henan,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,98.2,-1.8,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,41,Henan,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.7,-0.3,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,41,Henan,grain,Grain,food,11,yoy,100.4,0.4,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,41,Henan,fresh_vegetables,Fresh vegetables,food,13,yoy,73.9,-26.1,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,41,Henan,livestock_meat,Meat of livestock,food,14,yoy,98.3,-1.7,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,41,Henan,aquatic,Aquatic products,food,19,yoy,97.6,-2.4,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,41,Henan,eggs,Eggs,food,19.1,yoy,115.0,15.0,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,41,Henan,fresh_fruit,Fresh fruits,food,19.3,yoy,94.1,-5.9,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,41,Henan,clothing,Clothing,category,20,mom,99.6,-0.4,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,41,Henan,clothing,Clothing,category,20,yoy,100.9,0.9,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,41,Henan,clothing,Clothing,category,20,ytd,101.8,1.8,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,41,Henan,residence,Residence,category,30,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,41,Henan,residence,Residence,category,30,yoy,100.0,0.0,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,41,Henan,residence,Residence,category,30,ytd,100.1,0.1,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,41,Henan,household,"Household facilities, articles and services",category,40,mom,99.7,-0.3,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,41,Henan,household,"Household facilities, articles and services",category,40,yoy,100.1,0.1,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,41,Henan,household,"Household facilities, articles and services",category,40,ytd,101.3,1.3,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,41,Henan,transport_telecom,Transportation and telecommunication,category,50,mom,101.0,1.0,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,41,Henan,transport_telecom,Transportation and telecommunication,category,50,yoy,105.5,5.5,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,41,Henan,transport_telecom,Transportation and telecommunication,category,50,ytd,102.5,2.5,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,41,Henan,education_culture,"Education, culture and recreation",category,60,mom,100.2,0.2,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,41,Henan,education_culture,"Education, culture and recreation",category,60,yoy,101.3,1.3,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,41,Henan,education_culture,"Education, culture and recreation",category,60,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,41,Henan,health_care,Health care and medical services,category,70,mom,100.1,0.1,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,41,Henan,health_care,Health care and medical services,category,70,yoy,101.2,1.2,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,41,Henan,health_care,Health care and medical services,category,70,ytd,101.8,1.8,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,41,Henan,other,Miscellaneous goods and services,category,80,mom,98.8,-1.2,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,41,Henan,other,Miscellaneous goods and services,category,80,yoy,102.6,2.6,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,41,Henan,other,Miscellaneous goods and services,category,80,ytd,110.2,10.2,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,42,Hubei,all,CPI,headline,0,mom,100.0,0.0,2025,0,2026-11-09,6021702000023
+2026-10-01,42,Hubei,all,CPI,headline,0,yoy,101.0,1.0,2025,0,2026-11-09,6021702000021
+2026-10-01,42,Hubei,all,CPI,headline,0,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022
+2026-10-01,42,Hubei,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.7,-0.3,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,42,Hubei,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,98.9,-1.1,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,42,Hubei,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.6,-0.4,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,42,Hubei,grain,Grain,food,11,yoy,99.7,-0.3,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,42,Hubei,fresh_vegetables,Fresh vegetables,food,13,yoy,85.1,-14.9,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,42,Hubei,livestock_meat,Meat of livestock,food,14,yoy,98.0,-2.0,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,42,Hubei,aquatic,Aquatic products,food,19,yoy,98.4,-1.6,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,42,Hubei,eggs,Eggs,food,19.1,yoy,107.9,7.9,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,42,Hubei,fresh_fruit,Fresh fruits,food,19.3,yoy,99.5,-0.5,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,42,Hubei,clothing,Clothing,category,20,mom,99.5,-0.5,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,42,Hubei,clothing,Clothing,category,20,yoy,102.3,2.3,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,42,Hubei,clothing,Clothing,category,20,ytd,102.9,2.9,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,42,Hubei,residence,Residence,category,30,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,42,Hubei,residence,Residence,category,30,yoy,100.0,0.0,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,42,Hubei,residence,Residence,category,30,ytd,100.0,0.0,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,42,Hubei,household,"Household facilities, articles and services",category,40,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,42,Hubei,household,"Household facilities, articles and services",category,40,yoy,101.0,1.0,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,42,Hubei,household,"Household facilities, articles and services",category,40,ytd,102.1,2.1,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,42,Hubei,transport_telecom,Transportation and telecommunication,category,50,mom,101.1,1.1,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,42,Hubei,transport_telecom,Transportation and telecommunication,category,50,yoy,106.8,6.8,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,42,Hubei,transport_telecom,Transportation and telecommunication,category,50,ytd,103.3,3.3,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,42,Hubei,education_culture,"Education, culture and recreation",category,60,mom,100.2,0.2,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,42,Hubei,education_culture,"Education, culture and recreation",category,60,yoy,101.3,1.3,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,42,Hubei,education_culture,"Education, culture and recreation",category,60,ytd,101.3,1.3,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,42,Hubei,health_care,Health care and medical services,category,70,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,42,Hubei,health_care,Health care and medical services,category,70,yoy,100.2,0.2,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,42,Hubei,health_care,Health care and medical services,category,70,ytd,100.3,0.3,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,42,Hubei,other,Miscellaneous goods and services,category,80,mom,99.4,-0.6,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,42,Hubei,other,Miscellaneous goods and services,category,80,yoy,101.1,1.1,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,42,Hubei,other,Miscellaneous goods and services,category,80,ytd,106.6,6.6,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,43,Hunan,all,CPI,headline,0,mom,100.2,0.2,2025,0,2026-11-09,6021702000023
+2026-10-01,43,Hunan,all,CPI,headline,0,yoy,100.7,0.7,2025,0,2026-11-09,6021702000021
+2026-10-01,43,Hunan,all,CPI,headline,0,ytd,100.7,0.7,2025,0,2026-11-09,6021702000022
+2026-10-01,43,Hunan,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.7,-0.3,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,43,Hunan,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,98.4,-1.6,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,43,Hunan,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.5,-0.5,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,43,Hunan,grain,Grain,food,11,yoy,99.9,-0.1,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,43,Hunan,fresh_vegetables,Fresh vegetables,food,13,yoy,83.9,-16.1,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,43,Hunan,livestock_meat,Meat of livestock,food,14,yoy,96.3,-3.7,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,43,Hunan,aquatic,Aquatic products,food,19,yoy,99.0,-1.0,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,43,Hunan,eggs,Eggs,food,19.1,yoy,104.4,4.4,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,43,Hunan,fresh_fruit,Fresh fruits,food,19.3,yoy,98.7,-1.3,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,43,Hunan,clothing,Clothing,category,20,mom,100.3,0.3,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,43,Hunan,clothing,Clothing,category,20,yoy,101.1,1.1,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,43,Hunan,clothing,Clothing,category,20,ytd,101.2,1.2,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,43,Hunan,residence,Residence,category,30,mom,100.1,0.1,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,43,Hunan,residence,Residence,category,30,yoy,99.7,-0.3,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,43,Hunan,residence,Residence,category,30,ytd,99.8,-0.2,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,43,Hunan,household,"Household facilities, articles and services",category,40,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,43,Hunan,household,"Household facilities, articles and services",category,40,yoy,100.5,0.5,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,43,Hunan,household,"Household facilities, articles and services",category,40,ytd,101.6,1.6,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,43,Hunan,transport_telecom,Transportation and telecommunication,category,50,mom,101.1,1.1,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,43,Hunan,transport_telecom,Transportation and telecommunication,category,50,yoy,105.2,5.2,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,43,Hunan,transport_telecom,Transportation and telecommunication,category,50,ytd,102.1,2.1,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,43,Hunan,education_culture,"Education, culture and recreation",category,60,mom,100.3,0.3,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,43,Hunan,education_culture,"Education, culture and recreation",category,60,yoy,100.8,0.8,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,43,Hunan,education_culture,"Education, culture and recreation",category,60,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,43,Hunan,health_care,Health care and medical services,category,70,mom,101.3,1.3,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,43,Hunan,health_care,Health care and medical services,category,70,yoy,102.3,2.3,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,43,Hunan,health_care,Health care and medical services,category,70,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,43,Hunan,other,Miscellaneous goods and services,category,80,mom,98.7,-1.3,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,43,Hunan,other,Miscellaneous goods and services,category,80,yoy,101.1,1.1,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,43,Hunan,other,Miscellaneous goods and services,category,80,ytd,107.8,7.8,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,44,Guangdong,all,CPI,headline,0,mom,100.0,0.0,2025,0,2026-11-09,6021702000023
+2026-10-01,44,Guangdong,all,CPI,headline,0,yoy,100.9,0.9,2025,0,2026-11-09,6021702000021
+2026-10-01,44,Guangdong,all,CPI,headline,0,ytd,100.9,0.9,2025,0,2026-11-09,6021702000022
+2026-10-01,44,Guangdong,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.6,-0.4,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,44,Guangdong,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,98.3,-1.7,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,44,Guangdong,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.5,-0.5,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,44,Guangdong,grain,Grain,food,11,yoy,98.9,-1.1,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,44,Guangdong,fresh_vegetables,Fresh vegetables,food,13,yoy,85.2,-14.8,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,44,Guangdong,livestock_meat,Meat of livestock,food,14,yoy,96.2,-3.8,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,44,Guangdong,aquatic,Aquatic products,food,19,yoy,99.0,-1.0,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,44,Guangdong,eggs,Eggs,food,19.1,yoy,105.1,5.1,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,44,Guangdong,fresh_fruit,Fresh fruits,food,19.3,yoy,98.6,-1.4,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,44,Guangdong,clothing,Clothing,category,20,mom,99.7,-0.3,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,44,Guangdong,clothing,Clothing,category,20,yoy,101.4,1.4,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,44,Guangdong,clothing,Clothing,category,20,ytd,101.6,1.6,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,44,Guangdong,residence,Residence,category,30,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,44,Guangdong,residence,Residence,category,30,yoy,99.8,-0.2,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,44,Guangdong,residence,Residence,category,30,ytd,99.8,-0.2,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,44,Guangdong,household,"Household facilities, articles and services",category,40,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,44,Guangdong,household,"Household facilities, articles and services",category,40,yoy,100.4,0.4,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,44,Guangdong,household,"Household facilities, articles and services",category,40,ytd,101.6,1.6,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,44,Guangdong,transport_telecom,Transportation and telecommunication,category,50,mom,100.4,0.4,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,44,Guangdong,transport_telecom,Transportation and telecommunication,category,50,yoy,105.7,5.7,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,44,Guangdong,transport_telecom,Transportation and telecommunication,category,50,ytd,102.6,2.6,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,44,Guangdong,education_culture,"Education, culture and recreation",category,60,mom,100.5,0.5,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,44,Guangdong,education_culture,"Education, culture and recreation",category,60,yoy,101.8,1.8,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,44,Guangdong,education_culture,"Education, culture and recreation",category,60,ytd,101.5,1.5,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,44,Guangdong,health_care,Health care and medical services,category,70,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,44,Guangdong,health_care,Health care and medical services,category,70,yoy,105.8,5.8,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,44,Guangdong,health_care,Health care and medical services,category,70,ytd,103.5,3.5,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,44,Guangdong,other,Miscellaneous goods and services,category,80,mom,99.7,-0.3,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,44,Guangdong,other,Miscellaneous goods and services,category,80,yoy,101.7,1.7,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,44,Guangdong,other,Miscellaneous goods and services,category,80,ytd,106.9,6.9,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,45,Guangxi,all,CPI,headline,0,mom,100.0,0.0,2025,0,2026-11-09,6021702000023
+2026-10-01,45,Guangxi,all,CPI,headline,0,yoy,101.0,1.0,2025,0,2026-11-09,6021702000021
+2026-10-01,45,Guangxi,all,CPI,headline,0,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022
+2026-10-01,45,Guangxi,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.3,-0.7,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,45,Guangxi,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,98.3,-1.7,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,45,Guangxi,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.6,-0.4,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,45,Guangxi,grain,Grain,food,11,yoy,99.4,-0.6,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,45,Guangxi,fresh_vegetables,Fresh vegetables,food,13,yoy,82.5,-17.5,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,45,Guangxi,livestock_meat,Meat of livestock,food,14,yoy,96.9,-3.1,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,45,Guangxi,aquatic,Aquatic products,food,19,yoy,100.4,0.4,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,45,Guangxi,eggs,Eggs,food,19.1,yoy,106.1,6.1,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,45,Guangxi,fresh_fruit,Fresh fruits,food,19.3,yoy,97.4,-2.6,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,45,Guangxi,clothing,Clothing,category,20,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,45,Guangxi,clothing,Clothing,category,20,yoy,101.7,1.7,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,45,Guangxi,clothing,Clothing,category,20,ytd,102.4,2.4,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,45,Guangxi,residence,Residence,category,30,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,45,Guangxi,residence,Residence,category,30,yoy,100.1,0.1,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,45,Guangxi,residence,Residence,category,30,ytd,100.0,0.0,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,45,Guangxi,household,"Household facilities, articles and services",category,40,mom,99.6,-0.4,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,45,Guangxi,household,"Household facilities, articles and services",category,40,yoy,99.4,-0.6,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,45,Guangxi,household,"Household facilities, articles and services",category,40,ytd,100.6,0.6,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,45,Guangxi,transport_telecom,Transportation and telecommunication,category,50,mom,101.1,1.1,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,45,Guangxi,transport_telecom,Transportation and telecommunication,category,50,yoy,105.4,5.4,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,45,Guangxi,transport_telecom,Transportation and telecommunication,category,50,ytd,101.6,1.6,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,45,Guangxi,education_culture,"Education, culture and recreation",category,60,mom,100.2,0.2,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,45,Guangxi,education_culture,"Education, culture and recreation",category,60,yoy,100.8,0.8,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,45,Guangxi,education_culture,"Education, culture and recreation",category,60,ytd,100.9,0.9,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,45,Guangxi,health_care,Health care and medical services,category,70,mom,100.2,0.2,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,45,Guangxi,health_care,Health care and medical services,category,70,yoy,105.7,5.7,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,45,Guangxi,health_care,Health care and medical services,category,70,ytd,104.9,4.9,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,45,Guangxi,other,Miscellaneous goods and services,category,80,mom,99.5,-0.5,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,45,Guangxi,other,Miscellaneous goods and services,category,80,yoy,100.5,0.5,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,45,Guangxi,other,Miscellaneous goods and services,category,80,ytd,105.4,5.4,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,46,Hainan,all,CPI,headline,0,mom,100.2,0.2,2025,0,2026-11-09,6021702000023
+2026-10-01,46,Hainan,all,CPI,headline,0,yoy,100.3,0.3,2025,0,2026-11-09,6021702000021
+2026-10-01,46,Hainan,all,CPI,headline,0,ytd,100.5,0.5,2025,0,2026-11-09,6021702000022
+2026-10-01,46,Hainan,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.5,-0.5,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,46,Hainan,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,98.2,-1.8,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,46,Hainan,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.5,-0.5,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,46,Hainan,grain,Grain,food,11,yoy,98.3,-1.7,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,46,Hainan,fresh_vegetables,Fresh vegetables,food,13,yoy,86.4,-13.6,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,46,Hainan,livestock_meat,Meat of livestock,food,14,yoy,94.2,-5.8,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,46,Hainan,aquatic,Aquatic products,food,19,yoy,102.6,2.6,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,46,Hainan,eggs,Eggs,food,19.1,yoy,107.7,7.7,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,46,Hainan,fresh_fruit,Fresh fruits,food,19.3,yoy,97.4,-2.6,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,46,Hainan,clothing,Clothing,category,20,mom,100.9,0.9,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,46,Hainan,clothing,Clothing,category,20,yoy,100.2,0.2,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,46,Hainan,clothing,Clothing,category,20,ytd,101.3,1.3,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,46,Hainan,residence,Residence,category,30,mom,100.6,0.6,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,46,Hainan,residence,Residence,category,30,yoy,100.3,0.3,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,46,Hainan,residence,Residence,category,30,ytd,99.7,-0.3,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,46,Hainan,household,"Household facilities, articles and services",category,40,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,46,Hainan,household,"Household facilities, articles and services",category,40,yoy,99.6,-0.4,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,46,Hainan,household,"Household facilities, articles and services",category,40,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,46,Hainan,transport_telecom,Transportation and telecommunication,category,50,mom,101.0,1.0,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,46,Hainan,transport_telecom,Transportation and telecommunication,category,50,yoy,106.1,6.1,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,46,Hainan,transport_telecom,Transportation and telecommunication,category,50,ytd,103.4,3.4,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,46,Hainan,education_culture,"Education, culture and recreation",category,60,mom,100.4,0.4,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,46,Hainan,education_culture,"Education, culture and recreation",category,60,yoy,100.7,0.7,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,46,Hainan,education_culture,"Education, culture and recreation",category,60,ytd,101.2,1.2,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,46,Hainan,health_care,Health care and medical services,category,70,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,46,Hainan,health_care,Health care and medical services,category,70,yoy,99.8,-0.2,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,46,Hainan,health_care,Health care and medical services,category,70,ytd,99.4,-0.6,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,46,Hainan,other,Miscellaneous goods and services,category,80,mom,99.5,-0.5,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,46,Hainan,other,Miscellaneous goods and services,category,80,yoy,100.4,0.4,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,46,Hainan,other,Miscellaneous goods and services,category,80,ytd,104.4,4.4,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,50,Chongqing,all,CPI,headline,0,mom,100.1,0.1,2025,0,2026-11-09,6021702000023
+2026-10-01,50,Chongqing,all,CPI,headline,0,yoy,101.1,1.1,2025,0,2026-11-09,6021702000021
+2026-10-01,50,Chongqing,all,CPI,headline,0,ytd,101.2,1.2,2025,0,2026-11-09,6021702000022
+2026-10-01,50,Chongqing,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,50,Chongqing,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,99.2,-0.8,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,50,Chongqing,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.9,-0.1,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,50,Chongqing,grain,Grain,food,11,yoy,99.5,-0.5,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,50,Chongqing,fresh_vegetables,Fresh vegetables,food,13,yoy,83.4,-16.6,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,50,Chongqing,livestock_meat,Meat of livestock,food,14,yoy,99.6,-0.4,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,50,Chongqing,aquatic,Aquatic products,food,19,yoy,98.6,-1.4,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,50,Chongqing,eggs,Eggs,food,19.1,yoy,111.2,11.2,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,50,Chongqing,fresh_fruit,Fresh fruits,food,19.3,yoy,104.4,4.4,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,50,Chongqing,clothing,Clothing,category,20,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,50,Chongqing,clothing,Clothing,category,20,yoy,99.5,-0.5,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,50,Chongqing,clothing,Clothing,category,20,ytd,100.6,0.6,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,50,Chongqing,residence,Residence,category,30,mom,100.1,0.1,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,50,Chongqing,residence,Residence,category,30,yoy,98.6,-1.4,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,50,Chongqing,residence,Residence,category,30,ytd,98.6,-1.4,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,50,Chongqing,household,"Household facilities, articles and services",category,40,mom,99.7,-0.3,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,50,Chongqing,household,"Household facilities, articles and services",category,40,yoy,100.1,0.1,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,50,Chongqing,household,"Household facilities, articles and services",category,40,ytd,101.7,1.7,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,50,Chongqing,transport_telecom,Transportation and telecommunication,category,50,mom,101.1,1.1,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,50,Chongqing,transport_telecom,Transportation and telecommunication,category,50,yoy,106.1,6.1,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,50,Chongqing,transport_telecom,Transportation and telecommunication,category,50,ytd,103.1,3.1,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,50,Chongqing,education_culture,"Education, culture and recreation",category,60,mom,100.2,0.2,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,50,Chongqing,education_culture,"Education, culture and recreation",category,60,yoy,102.2,2.2,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,50,Chongqing,education_culture,"Education, culture and recreation",category,60,ytd,101.9,1.9,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,50,Chongqing,health_care,Health care and medical services,category,70,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,50,Chongqing,health_care,Health care and medical services,category,70,yoy,106.2,6.2,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,50,Chongqing,health_care,Health care and medical services,category,70,ytd,105.9,5.9,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,50,Chongqing,other,Miscellaneous goods and services,category,80,mom,99.5,-0.5,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,50,Chongqing,other,Miscellaneous goods and services,category,80,yoy,99.2,-0.8,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,50,Chongqing,other,Miscellaneous goods and services,category,80,ytd,105.5,5.5,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,51,Sichuan,all,CPI,headline,0,mom,100.2,0.2,2025,0,2026-11-09,6021702000023
+2026-10-01,51,Sichuan,all,CPI,headline,0,yoy,100.9,0.9,2025,0,2026-11-09,6021702000021
+2026-10-01,51,Sichuan,all,CPI,headline,0,ytd,100.9,0.9,2025,0,2026-11-09,6021702000022
+2026-10-01,51,Sichuan,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.7,-0.3,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,51,Sichuan,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,99.1,-0.9,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,51,Sichuan,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.1,-0.9,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,51,Sichuan,grain,Grain,food,11,yoy,101.0,1.0,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,51,Sichuan,fresh_vegetables,Fresh vegetables,food,13,yoy,86.7,-13.3,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,51,Sichuan,livestock_meat,Meat of livestock,food,14,yoy,98.0,-2.0,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,51,Sichuan,aquatic,Aquatic products,food,19,yoy,101.3,1.3,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,51,Sichuan,eggs,Eggs,food,19.1,yoy,107.7,7.7,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,51,Sichuan,fresh_fruit,Fresh fruits,food,19.3,yoy,97.5,-2.5,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,51,Sichuan,clothing,Clothing,category,20,mom,99.7,-0.3,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,51,Sichuan,clothing,Clothing,category,20,yoy,101.1,1.1,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,51,Sichuan,clothing,Clothing,category,20,ytd,101.7,1.7,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,51,Sichuan,residence,Residence,category,30,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,51,Sichuan,residence,Residence,category,30,yoy,99.4,-0.6,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,51,Sichuan,residence,Residence,category,30,ytd,99.5,-0.5,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,51,Sichuan,household,"Household facilities, articles and services",category,40,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,51,Sichuan,household,"Household facilities, articles and services",category,40,yoy,99.9,-0.1,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,51,Sichuan,household,"Household facilities, articles and services",category,40,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,51,Sichuan,transport_telecom,Transportation and telecommunication,category,50,mom,101.6,1.6,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,51,Sichuan,transport_telecom,Transportation and telecommunication,category,50,yoy,106.0,6.0,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,51,Sichuan,transport_telecom,Transportation and telecommunication,category,50,ytd,102.6,2.6,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,51,Sichuan,education_culture,"Education, culture and recreation",category,60,mom,100.6,0.6,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,51,Sichuan,education_culture,"Education, culture and recreation",category,60,yoy,101.9,1.9,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,51,Sichuan,education_culture,"Education, culture and recreation",category,60,ytd,101.9,1.9,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,51,Sichuan,health_care,Health care and medical services,category,70,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,51,Sichuan,health_care,Health care and medical services,category,70,yoy,101.0,1.0,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,51,Sichuan,health_care,Health care and medical services,category,70,ytd,102.9,2.9,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,51,Sichuan,other,Miscellaneous goods and services,category,80,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,51,Sichuan,other,Miscellaneous goods and services,category,80,yoy,103.4,3.4,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,51,Sichuan,other,Miscellaneous goods and services,category,80,ytd,108.3,8.3,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,52,Guizhou,all,CPI,headline,0,mom,100.0,0.0,2025,0,2026-11-09,6021702000023
+2026-10-01,52,Guizhou,all,CPI,headline,0,yoy,100.7,0.7,2025,0,2026-11-09,6021702000021
+2026-10-01,52,Guizhou,all,CPI,headline,0,ytd,100.6,0.6,2025,0,2026-11-09,6021702000022
+2026-10-01,52,Guizhou,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.5,-0.5,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,52,Guizhou,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,98.4,-1.6,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,52,Guizhou,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.0,-1.0,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,52,Guizhou,grain,Grain,food,11,yoy,99.6,-0.4,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,52,Guizhou,fresh_vegetables,Fresh vegetables,food,13,yoy,90.0,-10.0,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,52,Guizhou,livestock_meat,Meat of livestock,food,14,yoy,95.4,-4.6,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,52,Guizhou,aquatic,Aquatic products,food,19,yoy,97.9,-2.1,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,52,Guizhou,eggs,Eggs,food,19.1,yoy,105.1,5.1,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,52,Guizhou,fresh_fruit,Fresh fruits,food,19.3,yoy,94.9,-5.1,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,52,Guizhou,clothing,Clothing,category,20,mom,100.4,0.4,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,52,Guizhou,clothing,Clothing,category,20,yoy,101.4,1.4,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,52,Guizhou,clothing,Clothing,category,20,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,52,Guizhou,residence,Residence,category,30,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,52,Guizhou,residence,Residence,category,30,yoy,99.7,-0.3,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,52,Guizhou,residence,Residence,category,30,ytd,99.9,-0.1,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,52,Guizhou,household,"Household facilities, articles and services",category,40,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,52,Guizhou,household,"Household facilities, articles and services",category,40,yoy,100.3,0.3,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,52,Guizhou,household,"Household facilities, articles and services",category,40,ytd,101.1,1.1,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,52,Guizhou,transport_telecom,Transportation and telecommunication,category,50,mom,101.0,1.0,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,52,Guizhou,transport_telecom,Transportation and telecommunication,category,50,yoy,104.8,4.8,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,52,Guizhou,transport_telecom,Transportation and telecommunication,category,50,ytd,101.7,1.7,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,52,Guizhou,education_culture,"Education, culture and recreation",category,60,mom,100.2,0.2,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,52,Guizhou,education_culture,"Education, culture and recreation",category,60,yoy,101.3,1.3,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,52,Guizhou,education_culture,"Education, culture and recreation",category,60,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,52,Guizhou,health_care,Health care and medical services,category,70,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,52,Guizhou,health_care,Health care and medical services,category,70,yoy,100.8,0.8,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,52,Guizhou,health_care,Health care and medical services,category,70,ytd,100.9,0.9,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,52,Guizhou,other,Miscellaneous goods and services,category,80,mom,99.4,-0.6,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,52,Guizhou,other,Miscellaneous goods and services,category,80,yoy,101.6,1.6,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,52,Guizhou,other,Miscellaneous goods and services,category,80,ytd,108.5,8.5,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,53,Yunnan,all,CPI,headline,0,mom,100.0,0.0,2025,0,2026-11-09,6021702000023
+2026-10-01,53,Yunnan,all,CPI,headline,0,yoy,101.3,1.3,2025,0,2026-11-09,6021702000021
+2026-10-01,53,Yunnan,all,CPI,headline,0,ytd,101.2,1.2,2025,0,2026-11-09,6021702000022
+2026-10-01,53,Yunnan,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.7,-0.3,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,53,Yunnan,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,99.2,-0.8,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,53,Yunnan,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.4,-0.6,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,53,Yunnan,grain,Grain,food,11,yoy,100.3,0.3,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,53,Yunnan,fresh_vegetables,Fresh vegetables,food,13,yoy,92.1,-7.9,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,53,Yunnan,livestock_meat,Meat of livestock,food,14,yoy,95.9,-4.1,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,53,Yunnan,aquatic,Aquatic products,food,19,yoy,99.2,-0.8,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,53,Yunnan,eggs,Eggs,food,19.1,yoy,108.0,8.0,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,53,Yunnan,fresh_fruit,Fresh fruits,food,19.3,yoy,97.2,-2.8,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,53,Yunnan,clothing,Clothing,category,20,mom,100.1,0.1,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,53,Yunnan,clothing,Clothing,category,20,yoy,100.8,0.8,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,53,Yunnan,clothing,Clothing,category,20,ytd,101.1,1.1,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,53,Yunnan,residence,Residence,category,30,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,53,Yunnan,residence,Residence,category,30,yoy,99.8,-0.2,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,53,Yunnan,residence,Residence,category,30,ytd,99.9,-0.1,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,53,Yunnan,household,"Household facilities, articles and services",category,40,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,53,Yunnan,household,"Household facilities, articles and services",category,40,yoy,100.5,0.5,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,53,Yunnan,household,"Household facilities, articles and services",category,40,ytd,101.4,1.4,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,53,Yunnan,transport_telecom,Transportation and telecommunication,category,50,mom,101.0,1.0,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,53,Yunnan,transport_telecom,Transportation and telecommunication,category,50,yoy,106.2,6.2,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,53,Yunnan,transport_telecom,Transportation and telecommunication,category,50,ytd,103.2,3.2,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,53,Yunnan,education_culture,"Education, culture and recreation",category,60,mom,100.2,0.2,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,53,Yunnan,education_culture,"Education, culture and recreation",category,60,yoy,101.4,1.4,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,53,Yunnan,education_culture,"Education, culture and recreation",category,60,ytd,103.1,3.1,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,53,Yunnan,health_care,Health care and medical services,category,70,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,53,Yunnan,health_care,Health care and medical services,category,70,yoy,104.4,4.4,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,53,Yunnan,health_care,Health care and medical services,category,70,ytd,102.3,2.3,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,53,Yunnan,other,Miscellaneous goods and services,category,80,mom,99.1,-0.9,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,53,Yunnan,other,Miscellaneous goods and services,category,80,yoy,100.0,0.0,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,53,Yunnan,other,Miscellaneous goods and services,category,80,ytd,106.6,6.6,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,54,Tibet,all,CPI,headline,0,mom,100.2,0.2,2025,0,2026-11-09,6021702000023
+2026-10-01,54,Tibet,all,CPI,headline,0,yoy,101.0,1.0,2025,0,2026-11-09,6021702000021
+2026-10-01,54,Tibet,all,CPI,headline,0,ytd,100.6,0.6,2025,0,2026-11-09,6021702000022
+2026-10-01,54,Tibet,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,100.2,0.2,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,54,Tibet,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,100.0,0.0,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,54,Tibet,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.8,-0.2,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,54,Tibet,grain,Grain,food,11,yoy,99.4,-0.6,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,54,Tibet,fresh_vegetables,Fresh vegetables,food,13,yoy,103.9,3.9,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,54,Tibet,livestock_meat,Meat of livestock,food,14,yoy,96.9,-3.1,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,54,Tibet,aquatic,Aquatic products,food,19,yoy,102.9,2.9,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,54,Tibet,eggs,Eggs,food,19.1,yoy,106.3,6.3,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,54,Tibet,fresh_fruit,Fresh fruits,food,19.3,yoy,103.8,3.8,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,54,Tibet,clothing,Clothing,category,20,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,54,Tibet,clothing,Clothing,category,20,yoy,99.6,-0.4,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,54,Tibet,clothing,Clothing,category,20,ytd,100.0,0.0,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,54,Tibet,residence,Residence,category,30,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,54,Tibet,residence,Residence,category,30,yoy,99.9,-0.1,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,54,Tibet,residence,Residence,category,30,ytd,100.0,0.0,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,54,Tibet,household,"Household facilities, articles and services",category,40,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,54,Tibet,household,"Household facilities, articles and services",category,40,yoy,100.3,0.3,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,54,Tibet,household,"Household facilities, articles and services",category,40,ytd,101.2,1.2,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,54,Tibet,transport_telecom,Transportation and telecommunication,category,50,mom,101.0,1.0,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,54,Tibet,transport_telecom,Transportation and telecommunication,category,50,yoy,106.0,6.0,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,54,Tibet,transport_telecom,Transportation and telecommunication,category,50,ytd,102.2,2.2,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,54,Tibet,education_culture,"Education, culture and recreation",category,60,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,54,Tibet,education_culture,"Education, culture and recreation",category,60,yoy,100.8,0.8,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,54,Tibet,education_culture,"Education, culture and recreation",category,60,ytd,100.5,0.5,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,54,Tibet,health_care,Health care and medical services,category,70,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,54,Tibet,health_care,Health care and medical services,category,70,yoy,99.8,-0.2,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,54,Tibet,health_care,Health care and medical services,category,70,ytd,99.9,-0.1,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,54,Tibet,other,Miscellaneous goods and services,category,80,mom,98.3,-1.7,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,54,Tibet,other,Miscellaneous goods and services,category,80,yoy,102.0,2.0,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,54,Tibet,other,Miscellaneous goods and services,category,80,ytd,108.5,8.5,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,61,Shaanxi,all,CPI,headline,0,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023
+2026-10-01,61,Shaanxi,all,CPI,headline,0,yoy,100.4,0.4,2025,0,2026-11-09,6021702000021
+2026-10-01,61,Shaanxi,all,CPI,headline,0,ytd,100.5,0.5,2025,0,2026-11-09,6021702000022
+2026-10-01,61,Shaanxi,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.2,-0.8,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,61,Shaanxi,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,98.0,-2.0,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,61,Shaanxi,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,99.3,-0.7,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,61,Shaanxi,grain,Grain,food,11,yoy,100.0,0.0,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,61,Shaanxi,fresh_vegetables,Fresh vegetables,food,13,yoy,80.1,-19.9,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,61,Shaanxi,livestock_meat,Meat of livestock,food,14,yoy,95.4,-4.6,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,61,Shaanxi,aquatic,Aquatic products,food,19,yoy,96.4,-3.6,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,61,Shaanxi,eggs,Eggs,food,19.1,yoy,112.7,12.7,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,61,Shaanxi,fresh_fruit,Fresh fruits,food,19.3,yoy,95.0,-5.0,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,61,Shaanxi,clothing,Clothing,category,20,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,61,Shaanxi,clothing,Clothing,category,20,yoy,100.5,0.5,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,61,Shaanxi,clothing,Clothing,category,20,ytd,101.1,1.1,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,61,Shaanxi,residence,Residence,category,30,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,61,Shaanxi,residence,Residence,category,30,yoy,99.8,-0.2,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,61,Shaanxi,residence,Residence,category,30,ytd,99.8,-0.2,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,61,Shaanxi,household,"Household facilities, articles and services",category,40,mom,99.7,-0.3,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,61,Shaanxi,household,"Household facilities, articles and services",category,40,yoy,99.8,-0.2,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,61,Shaanxi,household,"Household facilities, articles and services",category,40,ytd,101.4,1.4,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,61,Shaanxi,transport_telecom,Transportation and telecommunication,category,50,mom,100.9,0.9,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,61,Shaanxi,transport_telecom,Transportation and telecommunication,category,50,yoy,103.0,3.0,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,61,Shaanxi,transport_telecom,Transportation and telecommunication,category,50,ytd,101.1,1.1,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,61,Shaanxi,education_culture,"Education, culture and recreation",category,60,mom,100.3,0.3,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,61,Shaanxi,education_culture,"Education, culture and recreation",category,60,yoy,102.1,2.1,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,61,Shaanxi,education_culture,"Education, culture and recreation",category,60,ytd,101.6,1.6,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,61,Shaanxi,health_care,Health care and medical services,category,70,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,61,Shaanxi,health_care,Health care and medical services,category,70,yoy,102.4,2.4,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,61,Shaanxi,health_care,Health care and medical services,category,70,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,61,Shaanxi,other,Miscellaneous goods and services,category,80,mom,98.7,-1.3,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,61,Shaanxi,other,Miscellaneous goods and services,category,80,yoy,99.5,-0.5,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,61,Shaanxi,other,Miscellaneous goods and services,category,80,ytd,107.7,7.7,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,62,Gansu,all,CPI,headline,0,mom,100.0,0.0,2025,0,2026-11-09,6021702000023
+2026-10-01,62,Gansu,all,CPI,headline,0,yoy,101.1,1.1,2025,0,2026-11-09,6021702000021
+2026-10-01,62,Gansu,all,CPI,headline,0,ytd,100.9,0.9,2025,0,2026-11-09,6021702000022
+2026-10-01,62,Gansu,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.7,-0.3,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,62,Gansu,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,99.3,-0.7,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,62,Gansu,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,100.1,0.1,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,62,Gansu,grain,Grain,food,11,yoy,100.1,0.1,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,62,Gansu,fresh_vegetables,Fresh vegetables,food,13,yoy,84.7,-15.3,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,62,Gansu,livestock_meat,Meat of livestock,food,14,yoy,99.1,-0.9,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,62,Gansu,aquatic,Aquatic products,food,19,yoy,98.8,-1.2,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,62,Gansu,eggs,Eggs,food,19.1,yoy,117.2,17.2,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,62,Gansu,fresh_fruit,Fresh fruits,food,19.3,yoy,97.5,-2.5,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,62,Gansu,clothing,Clothing,category,20,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,62,Gansu,clothing,Clothing,category,20,yoy,100.3,0.3,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,62,Gansu,clothing,Clothing,category,20,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,62,Gansu,residence,Residence,category,30,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,62,Gansu,residence,Residence,category,30,yoy,100.1,0.1,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,62,Gansu,residence,Residence,category,30,ytd,100.0,0.0,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,62,Gansu,household,"Household facilities, articles and services",category,40,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,62,Gansu,household,"Household facilities, articles and services",category,40,yoy,100.4,0.4,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,62,Gansu,household,"Household facilities, articles and services",category,40,ytd,101.2,1.2,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,62,Gansu,transport_telecom,Transportation and telecommunication,category,50,mom,100.9,0.9,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,62,Gansu,transport_telecom,Transportation and telecommunication,category,50,yoy,105.1,5.1,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,62,Gansu,transport_telecom,Transportation and telecommunication,category,50,ytd,102.0,2.0,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,62,Gansu,education_culture,"Education, culture and recreation",category,60,mom,100.1,0.1,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,62,Gansu,education_culture,"Education, culture and recreation",category,60,yoy,102.1,2.1,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,62,Gansu,education_culture,"Education, culture and recreation",category,60,ytd,101.1,1.1,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,62,Gansu,health_care,Health care and medical services,category,70,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,62,Gansu,health_care,Health care and medical services,category,70,yoy,102.7,2.7,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,62,Gansu,health_care,Health care and medical services,category,70,ytd,101.8,1.8,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,62,Gansu,other,Miscellaneous goods and services,category,80,mom,98.9,-1.1,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,62,Gansu,other,Miscellaneous goods and services,category,80,yoy,100.1,0.1,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,62,Gansu,other,Miscellaneous goods and services,category,80,ytd,106.8,6.8,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,63,Qinghai,all,CPI,headline,0,mom,100.0,0.0,2025,0,2026-11-09,6021702000023
+2026-10-01,63,Qinghai,all,CPI,headline,0,yoy,101.3,1.3,2025,0,2026-11-09,6021702000021
+2026-10-01,63,Qinghai,all,CPI,headline,0,ytd,100.9,0.9,2025,0,2026-11-09,6021702000022
+2026-10-01,63,Qinghai,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,63,Qinghai,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,100.1,0.1,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,63,Qinghai,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,100.3,0.3,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,63,Qinghai,grain,Grain,food,11,yoy,99.3,-0.7,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,63,Qinghai,fresh_vegetables,Fresh vegetables,food,13,yoy,88.9,-11.1,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,63,Qinghai,livestock_meat,Meat of livestock,food,14,yoy,102.6,2.6,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,63,Qinghai,aquatic,Aquatic products,food,19,yoy,101.4,1.4,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,63,Qinghai,eggs,Eggs,food,19.1,yoy,114.3,14.3,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,63,Qinghai,fresh_fruit,Fresh fruits,food,19.3,yoy,96.1,-3.9,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,63,Qinghai,clothing,Clothing,category,20,mom,100.6,0.6,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,63,Qinghai,clothing,Clothing,category,20,yoy,101.1,1.1,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,63,Qinghai,clothing,Clothing,category,20,ytd,100.6,0.6,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,63,Qinghai,residence,Residence,category,30,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,63,Qinghai,residence,Residence,category,30,yoy,99.9,-0.1,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,63,Qinghai,residence,Residence,category,30,ytd,100.0,0.0,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,63,Qinghai,household,"Household facilities, articles and services",category,40,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,63,Qinghai,household,"Household facilities, articles and services",category,40,yoy,100.8,0.8,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,63,Qinghai,household,"Household facilities, articles and services",category,40,ytd,101.4,1.4,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,63,Qinghai,transport_telecom,Transportation and telecommunication,category,50,mom,100.7,0.7,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,63,Qinghai,transport_telecom,Transportation and telecommunication,category,50,yoy,105.6,5.6,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,63,Qinghai,transport_telecom,Transportation and telecommunication,category,50,ytd,101.7,1.7,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,63,Qinghai,education_culture,"Education, culture and recreation",category,60,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,63,Qinghai,education_culture,"Education, culture and recreation",category,60,yoy,100.7,0.7,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,63,Qinghai,education_culture,"Education, culture and recreation",category,60,ytd,100.8,0.8,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,63,Qinghai,health_care,Health care and medical services,category,70,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,63,Qinghai,health_care,Health care and medical services,category,70,yoy,100.9,0.9,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,63,Qinghai,health_care,Health care and medical services,category,70,ytd,100.6,0.6,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,63,Qinghai,other,Miscellaneous goods and services,category,80,mom,97.7,-2.3,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,63,Qinghai,other,Miscellaneous goods and services,category,80,yoy,100.4,0.4,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,63,Qinghai,other,Miscellaneous goods and services,category,80,ytd,107.7,7.7,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,64,Ningxia,all,CPI,headline,0,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023
+2026-10-01,64,Ningxia,all,CPI,headline,0,yoy,101.4,1.4,2025,0,2026-11-09,6021702000021
+2026-10-01,64,Ningxia,all,CPI,headline,0,ytd,101.8,1.8,2025,0,2026-11-09,6021702000022
+2026-10-01,64,Ningxia,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.5,-0.5,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,64,Ningxia,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,100.2,0.2,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,64,Ningxia,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,101.5,1.5,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,64,Ningxia,grain,Grain,food,11,yoy,100.6,0.6,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,64,Ningxia,fresh_vegetables,Fresh vegetables,food,13,yoy,81.8,-18.2,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,64,Ningxia,livestock_meat,Meat of livestock,food,14,yoy,106.9,6.9,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,64,Ningxia,aquatic,Aquatic products,food,19,yoy,101.2,1.2,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,64,Ningxia,eggs,Eggs,food,19.1,yoy,113.5,13.5,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,64,Ningxia,fresh_fruit,Fresh fruits,food,19.3,yoy,93.8,-6.2,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,64,Ningxia,clothing,Clothing,category,20,mom,99.2,-0.8,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,64,Ningxia,clothing,Clothing,category,20,yoy,99.8,-0.2,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,64,Ningxia,clothing,Clothing,category,20,ytd,101.2,1.2,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,64,Ningxia,residence,Residence,category,30,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,64,Ningxia,residence,Residence,category,30,yoy,99.6,-0.4,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,64,Ningxia,residence,Residence,category,30,ytd,100.0,0.0,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,64,Ningxia,household,"Household facilities, articles and services",category,40,mom,99.6,-0.4,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,64,Ningxia,household,"Household facilities, articles and services",category,40,yoy,99.2,-0.8,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,64,Ningxia,household,"Household facilities, articles and services",category,40,ytd,101.1,1.1,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,64,Ningxia,transport_telecom,Transportation and telecommunication,category,50,mom,100.9,0.9,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,64,Ningxia,transport_telecom,Transportation and telecommunication,category,50,yoy,105.8,5.8,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,64,Ningxia,transport_telecom,Transportation and telecommunication,category,50,ytd,102.6,2.6,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,64,Ningxia,education_culture,"Education, culture and recreation",category,60,mom,100.1,0.1,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,64,Ningxia,education_culture,"Education, culture and recreation",category,60,yoy,101.2,1.2,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,64,Ningxia,education_culture,"Education, culture and recreation",category,60,ytd,101.0,1.0,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,64,Ningxia,health_care,Health care and medical services,category,70,mom,100.1,0.1,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,64,Ningxia,health_care,Health care and medical services,category,70,yoy,103.6,3.6,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,64,Ningxia,health_care,Health care and medical services,category,70,ytd,103.9,3.9,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,64,Ningxia,other,Miscellaneous goods and services,category,80,mom,99.2,-0.8,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,64,Ningxia,other,Miscellaneous goods and services,category,80,yoy,101.8,1.8,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,64,Ningxia,other,Miscellaneous goods and services,category,80,ytd,111.0,11.0,2025,0,2026-11-09,6021702000022-6039802100342
+2026-10-01,65,Xinjiang,all,CPI,headline,0,mom,99.9,-0.1,2025,0,2026-11-09,6021702000023
+2026-10-01,65,Xinjiang,all,CPI,headline,0,yoy,101.6,1.6,2025,0,2026-11-09,6021702000021
+2026-10-01,65,Xinjiang,all,CPI,headline,0,ytd,101.4,1.4,2025,0,2026-11-09,6021702000022
+2026-10-01,65,Xinjiang,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,mom,99.3,-0.7,2025,0,2026-11-09,6021702000023-6039802100001
+2026-10-01,65,Xinjiang,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,yoy,100.7,0.7,2025,0,2026-11-09,6021702000021-6039802100001
+2026-10-01,65,Xinjiang,food_tobacco_liquor,"Food, tobacco, liquor and dining out",category,10,ytd,101.2,1.2,2025,0,2026-11-09,6021702000022-6039802100001
+2026-10-01,65,Xinjiang,grain,Grain,food,11,yoy,99.2,-0.8,2025,0,2026-11-09,6021702000021-6039804100003
+2026-10-01,65,Xinjiang,fresh_vegetables,Fresh vegetables,food,13,yoy,91.5,-8.5,2025,0,2026-11-09,6021702000021-6039805100017
+2026-10-01,65,Xinjiang,livestock_meat,Meat of livestock,food,14,yoy,103.5,3.5,2025,0,2026-11-09,6021702000021-6039804100020
+2026-10-01,65,Xinjiang,aquatic,Aquatic products,food,19,yoy,98.2,-1.8,2025,0,2026-11-09,6021702000021-6039804100030
+2026-10-01,65,Xinjiang,eggs,Eggs,food,19.1,yoy,129.0,29.0,2025,0,2026-11-09,6021702000021-6039804100035
+2026-10-01,65,Xinjiang,fresh_fruit,Fresh fruits,food,19.3,yoy,95.9,-4.1,2025,0,2026-11-09,6021702000021-6039805100044
+2026-10-01,65,Xinjiang,clothing,Clothing,category,20,mom,100.2,0.2,2025,0,2026-11-09,6021702000023-6039802100082
+2026-10-01,65,Xinjiang,clothing,Clothing,category,20,yoy,101.2,1.2,2025,0,2026-11-09,6021702000021-6039802100082
+2026-10-01,65,Xinjiang,clothing,Clothing,category,20,ytd,100.3,0.3,2025,0,2026-11-09,6021702000022-6039802100082
+2026-10-01,65,Xinjiang,residence,Residence,category,30,mom,100.2,0.2,2025,0,2026-11-09,6021702000023-6039802100117
+2026-10-01,65,Xinjiang,residence,Residence,category,30,yoy,100.2,0.2,2025,0,2026-11-09,6021702000021-6039802100117
+2026-10-01,65,Xinjiang,residence,Residence,category,30,ytd,99.8,-0.2,2025,0,2026-11-09,6021702000022-6039802100117
+2026-10-01,65,Xinjiang,household,"Household facilities, articles and services",category,40,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100148
+2026-10-01,65,Xinjiang,household,"Household facilities, articles and services",category,40,yoy,100.9,0.9,2025,0,2026-11-09,6021702000021-6039802100148
+2026-10-01,65,Xinjiang,household,"Household facilities, articles and services",category,40,ytd,101.4,1.4,2025,0,2026-11-09,6021702000022-6039802100148
+2026-10-01,65,Xinjiang,transport_telecom,Transportation and telecommunication,category,50,mom,100.9,0.9,2025,0,2026-11-09,6021702000023-6039802100213
+2026-10-01,65,Xinjiang,transport_telecom,Transportation and telecommunication,category,50,yoy,104.7,4.7,2025,0,2026-11-09,6021702000021-6039802100213
+2026-10-01,65,Xinjiang,transport_telecom,Transportation and telecommunication,category,50,ytd,101.4,1.4,2025,0,2026-11-09,6021702000022-6039802100213
+2026-10-01,65,Xinjiang,education_culture,"Education, culture and recreation",category,60,mom,99.8,-0.2,2025,0,2026-11-09,6021702000023-6039802100249
+2026-10-01,65,Xinjiang,education_culture,"Education, culture and recreation",category,60,yoy,103.2,3.2,2025,0,2026-11-09,6021702000021-6039802100249
+2026-10-01,65,Xinjiang,education_culture,"Education, culture and recreation",category,60,ytd,101.9,1.9,2025,0,2026-11-09,6021702000022-6039802100249
+2026-10-01,65,Xinjiang,health_care,Health care and medical services,category,70,mom,100.0,0.0,2025,0,2026-11-09,6021702000023-6039802100296
+2026-10-01,65,Xinjiang,health_care,Health care and medical services,category,70,yoy,101.2,1.2,2025,0,2026-11-09,6021702000021-6039802100296
+2026-10-01,65,Xinjiang,health_care,Health care and medical services,category,70,ytd,102.9,2.9,2025,0,2026-11-09,6021702000022-6039802100296
+2026-10-01,65,Xinjiang,other,Miscellaneous goods and services,category,80,mom,97.4,-2.6,2025,0,2026-11-09,6021702000023-6039802100342
+2026-10-01,65,Xinjiang,other,Miscellaneous goods and services,category,80,yoy,101.7,1.7,2025,0,2026-11-09,6021702000021-6039802100342
+2026-10-01,65,Xinjiang,other,Miscellaneous goods and services,category,80,ytd,109.2,9.2,2025,0,2026-11-09,6021702000022-6039802100342

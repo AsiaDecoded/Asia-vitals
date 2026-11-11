@@ -30722,3 +30722,186 @@ date,series,label,group,measure,pct,base_break
 2026-09-01,ind_water,Production and supply of water,industry,mom,0.0,0
 2026-09-01,ind_water,Production and supply of water,industry,yoy,-0.1,0
 2026-09-01,ind_water,Production and supply of water,industry,ytd,1.0,0
+2026-10-01,ppi,PPI (ex-factory prices of industrial products),ppi,mom,0.7,0
+2026-10-01,ppi,PPI (ex-factory prices of industrial products),ppi,yoy,5.7,0
+2026-10-01,ppi,PPI (ex-factory prices of industrial products),ppi,ytd,2.7,0
+2026-10-01,ppi_production,Means of production,ppi,mom,0.9,0
+2026-10-01,ppi_production,Means of production,ppi,yoy,7.4,0
+2026-10-01,ppi_production,Means of production,ppi,ytd,3.7,0
+2026-10-01,ppi_consumer,Consumer goods,ppi,mom,-0.1,0
+2026-10-01,ppi_consumer,Consumer goods,ppi,yoy,-0.1,0
+2026-10-01,ppi_consumer,Consumer goods,ppi,ytd,-0.9,0
+2026-10-01,ppi_mining,Mining and quarrying,ppi,mom,2.8,0
+2026-10-01,ppi_mining,Mining and quarrying,ppi,yoy,27.9,0
+2026-10-01,ppi_mining,Mining and quarrying,ppi,ytd,11.5,0
+2026-10-01,ppi_raw,Raw materials,ppi,mom,2.0,0
+2026-10-01,ppi_raw,Raw materials,ppi,yoy,11.6,0
+2026-10-01,ppi_raw,Raw materials,ppi,ytd,5.5,0
+2026-10-01,ppi_processing,Processing,ppi,mom,0.2,0
+2026-10-01,ppi_processing,Processing,ppi,yoy,3.5,0
+2026-10-01,ppi_processing,Processing,ppi,ytd,2.1,0
+2026-10-01,ppi_food,Food,ppi,mom,0.0,0
+2026-10-01,ppi_food,Food,ppi,yoy,-1.6,0
+2026-10-01,ppi_food,Food,ppi,ytd,-1.9,0
+2026-10-01,ppi_clothing,Clothing,ppi,mom,-0.2,0
+2026-10-01,ppi_clothing,Clothing,ppi,yoy,-1.3,0
+2026-10-01,ppi_clothing,Clothing,ppi,ytd,-1.1,0
+2026-10-01,ppi_daily,Articles for daily use,ppi,mom,-0.1,0
+2026-10-01,ppi_daily,Articles for daily use,ppi,yoy,-0.7,0
+2026-10-01,ppi_daily,Articles for daily use,ppi,ytd,-1.1,0
+2026-10-01,ppi_durables,Durable consumer goods,ppi,mom,-0.1,0
+2026-10-01,ppi_durables,Durable consumer goods,ppi,yoy,1.4,0
+2026-10-01,ppi_durables,Durable consumer goods,ppi,ytd,0.0,0
+2026-10-01,purchasing,Purchasing prices of industrial producers,purchasing,mom,1.1,0
+2026-10-01,purchasing,Purchasing prices of industrial producers,purchasing,yoy,7.9,0
+2026-10-01,purchasing,Purchasing prices of industrial producers,purchasing,ytd,4.0,0
+2026-10-01,pur_fuel_power,Fuel and power,purchasing,mom,4.1,0
+2026-10-01,pur_fuel_power,Fuel and power,purchasing,yoy,18.6,0
+2026-10-01,pur_fuel_power,Fuel and power,purchasing,ytd,5.6,0
+2026-10-01,pur_ferrous,Ferrous metals,purchasing,mom,-0.6,0
+2026-10-01,pur_ferrous,Ferrous metals,purchasing,yoy,-1.1,0
+2026-10-01,pur_ferrous,Ferrous metals,purchasing,ytd,-0.8,0
+2026-10-01,pur_nonferrous,Nonferrous metals and cables,purchasing,mom,-0.3,0
+2026-10-01,pur_nonferrous,Nonferrous metals and cables,purchasing,yoy,16.7,0
+2026-10-01,pur_nonferrous,Nonferrous metals and cables,purchasing,ytd,20.0,0
+2026-10-01,pur_chemicals,Raw chemical materials,purchasing,mom,3.2,0
+2026-10-01,pur_chemicals,Raw chemical materials,purchasing,yoy,16.8,0
+2026-10-01,pur_chemicals,Raw chemical materials,purchasing,ytd,6.3,0
+2026-10-01,pur_timber_pulp,Timber and paper pulp,purchasing,mom,-0.2,0
+2026-10-01,pur_timber_pulp,Timber and paper pulp,purchasing,yoy,-0.5,0
+2026-10-01,pur_timber_pulp,Timber and paper pulp,purchasing,ytd,-1.4,0
+2026-10-01,pur_building,Building materials and non-metals,purchasing,mom,0.4,0
+2026-10-01,pur_building,Building materials and non-metals,purchasing,yoy,-1.9,0
+2026-10-01,pur_building,Building materials and non-metals,purchasing,ytd,-4.1,0
+2026-10-01,pur_other,Other industrial raw materials and semi-products,purchasing,mom,-0.1,0
+2026-10-01,pur_other,Other industrial raw materials and semi-products,purchasing,yoy,1.7,0
+2026-10-01,pur_other,Other industrial raw materials and semi-products,purchasing,ytd,0.9,0
+2026-10-01,pur_agri,Agricultural and sideline products,purchasing,mom,-0.3,0
+2026-10-01,pur_agri,Agricultural and sideline products,purchasing,yoy,0.5,0
+2026-10-01,pur_agri,Agricultural and sideline products,purchasing,ytd,-1.4,0
+2026-10-01,pur_textile,Textile materials,purchasing,mom,0.6,0
+2026-10-01,pur_textile,Textile materials,purchasing,yoy,5.3,0
+2026-10-01,pur_textile,Textile materials,purchasing,ytd,1.9,0
+2026-10-01,ind_coal,Mining and washing of coal,industry,mom,2.7,0
+2026-10-01,ind_coal,Mining and washing of coal,industry,yoy,36.6,0
+2026-10-01,ind_coal,Mining and washing of coal,industry,ytd,13.2,0
+2026-10-01,ind_oil_gas,Extraction of petroleum and natural gas,industry,mom,6.0,0
+2026-10-01,ind_oil_gas,Extraction of petroleum and natural gas,industry,yoy,35.0,0
+2026-10-01,ind_oil_gas,Extraction of petroleum and natural gas,industry,ytd,12.3,0
+2026-10-01,ind_ferrous_ore,Mining and processing of ferrous metal ores,industry,mom,-1.7,0
+2026-10-01,ind_ferrous_ore,Mining and processing of ferrous metal ores,industry,yoy,-6.4,0
+2026-10-01,ind_ferrous_ore,Mining and processing of ferrous metal ores,industry,ytd,0.9,0
+2026-10-01,ind_nonferrous_ore,Mining and processing of non-ferrous metal ores,industry,mom,0.3,0
+2026-10-01,ind_nonferrous_ore,Mining and processing of non-ferrous metal ores,industry,yoy,16.3,0
+2026-10-01,ind_nonferrous_ore,Mining and processing of non-ferrous metal ores,industry,ytd,27.0,0
+2026-10-01,ind_nonmetal_ore,Mining and processing of non-metal ores,industry,mom,0.2,0
+2026-10-01,ind_nonmetal_ore,Mining and processing of non-metal ores,industry,yoy,-1.5,0
+2026-10-01,ind_nonmetal_ore,Mining and processing of non-metal ores,industry,ytd,-3.3,0
+2026-10-01,ind_mining_support,Professional and support activities for mining,industry,mom,0.0,0
+2026-10-01,ind_mining_support,Professional and support activities for mining,industry,yoy,0.6,0
+2026-10-01,ind_mining_support,Professional and support activities for mining,industry,ytd,-1.1,0
+2026-10-01,ind_other_mining,Other mining,industry,mom,0.0,0
+2026-10-01,ind_other_mining,Other mining,industry,yoy,0.5,0
+2026-10-01,ind_other_mining,Other mining,industry,ytd,0.5,0
+2026-10-01,ind_agri_food,Processing of food from agricultural and sideline products,industry,mom,0.1,0
+2026-10-01,ind_agri_food,Processing of food from agricultural and sideline products,industry,yoy,-0.4,0
+2026-10-01,ind_agri_food,Processing of food from agricultural and sideline products,industry,ytd,-1.3,0
+2026-10-01,ind_food,Manufacture of foods,industry,mom,0.1,0
+2026-10-01,ind_food,Manufacture of foods,industry,yoy,-1.0,0
+2026-10-01,ind_food,Manufacture of foods,industry,ytd,-1.5,0
+2026-10-01,ind_beverages,"Manufacture of liquor, beverages and refined tea",industry,mom,-0.1,0
+2026-10-01,ind_beverages,"Manufacture of liquor, beverages and refined tea",industry,yoy,-5.2,0
+2026-10-01,ind_beverages,"Manufacture of liquor, beverages and refined tea",industry,ytd,-3.8,0
+2026-10-01,ind_tobacco,Manufacture of tobacco,industry,mom,0.0,0
+2026-10-01,ind_tobacco,Manufacture of tobacco,industry,yoy,0.1,0
+2026-10-01,ind_tobacco,Manufacture of tobacco,industry,ytd,0.2,0
+2026-10-01,ind_textiles,Textile industry,industry,mom,0.2,0
+2026-10-01,ind_textiles,Textile industry,industry,yoy,2.4,0
+2026-10-01,ind_textiles,Textile industry,industry,ytd,0.7,0
+2026-10-01,ind_apparel,"Manufacture of textiles, wearing apparel and accessories",industry,mom,0.0,0
+2026-10-01,ind_apparel,"Manufacture of textiles, wearing apparel and accessories",industry,yoy,-1.0,0
+2026-10-01,ind_apparel,"Manufacture of textiles, wearing apparel and accessories",industry,ytd,-1.3,0
+2026-10-01,ind_leather,"Leather, fur, feathers and footwear",industry,mom,-0.5,0
+2026-10-01,ind_leather,"Leather, fur, feathers and footwear",industry,yoy,-1.7,0
+2026-10-01,ind_leather,"Leather, fur, feathers and footwear",industry,ytd,-0.6,0
+2026-10-01,ind_wood,"Processing of timber; wood, bamboo, rattan, palm and straw products",industry,mom,-0.2,0
+2026-10-01,ind_wood,"Processing of timber; wood, bamboo, rattan, palm and straw products",industry,yoy,-1.5,0
+2026-10-01,ind_wood,"Processing of timber; wood, bamboo, rattan, palm and straw products",industry,ytd,-2.1,0
+2026-10-01,ind_furniture,Manufacture of furniture,industry,mom,0.0,0
+2026-10-01,ind_furniture,Manufacture of furniture,industry,yoy,-0.3,0
+2026-10-01,ind_furniture,Manufacture of furniture,industry,ytd,-0.4,0
+2026-10-01,ind_paper,Manufacture of paper and paper products,industry,mom,-0.4,0
+2026-10-01,ind_paper,Manufacture of paper and paper products,industry,yoy,-0.8,0
+2026-10-01,ind_paper,Manufacture of paper and paper products,industry,ytd,-0.8,0
+2026-10-01,ind_printing,Printing and reproduction of recording media,industry,mom,0.2,0
+2026-10-01,ind_printing,Printing and reproduction of recording media,industry,yoy,-1.5,0
+2026-10-01,ind_printing,Printing and reproduction of recording media,industry,ytd,-2.8,0
+2026-10-01,ind_culture_sports,"Articles for culture, education, arts and crafts, sport and entertainment",industry,mom,-2.2,0
+2026-10-01,ind_culture_sports,"Articles for culture, education, arts and crafts, sport and entertainment",industry,yoy,2.8,0
+2026-10-01,ind_culture_sports,"Articles for culture, education, arts and crafts, sport and entertainment",industry,ytd,14.1,0
+2026-10-01,ind_petroleum,"Processing of petroleum, coal and other fuels",industry,mom,6.1,0
+2026-10-01,ind_petroleum,"Processing of petroleum, coal and other fuels",industry,yoy,29.9,0
+2026-10-01,ind_petroleum,"Processing of petroleum, coal and other fuels",industry,ytd,8.8,0
+2026-10-01,ind_chemicals,Manufacture of raw chemical materials and chemical products,industry,mom,3.1,0
+2026-10-01,ind_chemicals,Manufacture of raw chemical materials and chemical products,industry,yoy,16.4,0
+2026-10-01,ind_chemicals,Manufacture of raw chemical materials and chemical products,industry,ytd,6.9,0
+2026-10-01,ind_medicines,Manufacture of medicines,industry,mom,-0.1,0
+2026-10-01,ind_medicines,Manufacture of medicines,industry,yoy,-3.2,0
+2026-10-01,ind_medicines,Manufacture of medicines,industry,ytd,-4.2,0
+2026-10-01,ind_chem_fibres,Manufacture of chemical fibres,industry,mom,2.4,0
+2026-10-01,ind_chem_fibres,Manufacture of chemical fibres,industry,yoy,16.0,0
+2026-10-01,ind_chem_fibres,Manufacture of chemical fibres,industry,ytd,5.1,0
+2026-10-01,ind_rubber_plastics,Manufacture of rubber and plastic products,industry,mom,0.7,0
+2026-10-01,ind_rubber_plastics,Manufacture of rubber and plastic products,industry,yoy,2.9,0
+2026-10-01,ind_rubber_plastics,Manufacture of rubber and plastic products,industry,ytd,-0.3,0
+2026-10-01,ind_nonmetal_products,Manufacture of non-metallic mineral products,industry,mom,0.8,0
+2026-10-01,ind_nonmetal_products,Manufacture of non-metallic mineral products,industry,yoy,-1.6,0
+2026-10-01,ind_nonmetal_products,Manufacture of non-metallic mineral products,industry,ytd,-4.2,0
+2026-10-01,ind_ferrous,Smelting and pressing of ferrous metals,industry,mom,0.0,0
+2026-10-01,ind_ferrous,Smelting and pressing of ferrous metals,industry,yoy,0.4,0
+2026-10-01,ind_ferrous,Smelting and pressing of ferrous metals,industry,ytd,-0.4,0
+2026-10-01,ind_nonferrous,Smelting and pressing of non-ferrous metals,industry,mom,-0.1,0
+2026-10-01,ind_nonferrous,Smelting and pressing of non-ferrous metals,industry,yoy,18.6,0
+2026-10-01,ind_nonferrous,Smelting and pressing of non-ferrous metals,industry,ytd,21.2,0
+2026-10-01,ind_metal_products,Manufacture of metal products,industry,mom,0.1,0
+2026-10-01,ind_metal_products,Manufacture of metal products,industry,yoy,1.7,0
+2026-10-01,ind_metal_products,Manufacture of metal products,industry,ytd,0.9,0
+2026-10-01,ind_general_machinery,Manufacture of general-purpose machinery,industry,mom,0.0,0
+2026-10-01,ind_general_machinery,Manufacture of general-purpose machinery,industry,yoy,-0.3,0
+2026-10-01,ind_general_machinery,Manufacture of general-purpose machinery,industry,ytd,-0.8,0
+2026-10-01,ind_special_machinery,Manufacture of special-purpose machinery,industry,mom,0.0,0
+2026-10-01,ind_special_machinery,Manufacture of special-purpose machinery,industry,yoy,-0.8,0
+2026-10-01,ind_special_machinery,Manufacture of special-purpose machinery,industry,ytd,-0.8,0
+2026-10-01,ind_autos,Manufacture of automobiles,industry,mom,0.0,0
+2026-10-01,ind_autos,Manufacture of automobiles,industry,yoy,-1.8,0
+2026-10-01,ind_autos,Manufacture of automobiles,industry,ytd,-2.2,0
+2026-10-01,ind_transport_equip,"Railway, ships, aerospace and other transport equipment",industry,mom,0.0,0
+2026-10-01,ind_transport_equip,"Railway, ships, aerospace and other transport equipment",industry,yoy,0.2,0
+2026-10-01,ind_transport_equip,"Railway, ships, aerospace and other transport equipment",industry,ytd,-0.1,0
+2026-10-01,ind_electrical,Manufacture of electrical machinery and apparatus,industry,mom,0.1,0
+2026-10-01,ind_electrical,Manufacture of electrical machinery and apparatus,industry,yoy,6.2,0
+2026-10-01,ind_electrical,Manufacture of electrical machinery and apparatus,industry,ytd,4.3,0
+2026-10-01,ind_electronics,"Computers, communication equipment and other electronic equipment",industry,mom,0.1,0
+2026-10-01,ind_electronics,"Computers, communication equipment and other electronic equipment",industry,yoy,5.9,0
+2026-10-01,ind_electronics,"Computers, communication equipment and other electronic equipment",industry,ytd,2.6,0
+2026-10-01,ind_instruments,Manufacture of measuring instruments,industry,mom,0.0,0
+2026-10-01,ind_instruments,Manufacture of measuring instruments,industry,yoy,-0.6,0
+2026-10-01,ind_instruments,Manufacture of measuring instruments,industry,ytd,-0.9,0
+2026-10-01,ind_other_mfg,Other manufacturing,industry,mom,-0.2,0
+2026-10-01,ind_other_mfg,Other manufacturing,industry,yoy,-1.8,0
+2026-10-01,ind_other_mfg,Other manufacturing,industry,ytd,-1.6,0
+2026-10-01,ind_waste,Utilisation of waste resources,industry,mom,-0.2,0
+2026-10-01,ind_waste,Utilisation of waste resources,industry,yoy,1.9,0
+2026-10-01,ind_waste,Utilisation of waste resources,industry,ytd,2.1,0
+2026-10-01,ind_repair,"Repair of metal products, machinery and equipment",industry,mom,-0.1,0
+2026-10-01,ind_repair,"Repair of metal products, machinery and equipment",industry,yoy,0.7,0
+2026-10-01,ind_repair,"Repair of metal products, machinery and equipment",industry,ytd,0.7,0
+2026-10-01,ind_power_heat,Production and supply of electricity and heat,industry,mom,-0.2,0
+2026-10-01,ind_power_heat,Production and supply of electricity and heat,industry,yoy,-3.8,0
+2026-10-01,ind_power_heat,Production and supply of electricity and heat,industry,ytd,-4.0,0
+2026-10-01,ind_gas,Production and supply of gas,industry,mom,1.5,0
+2026-10-01,ind_gas,Production and supply of gas,industry,yoy,7.9,0
+2026-10-01,ind_gas,Production and supply of gas,industry,ytd,2.0,0
+2026-10-01,ind_water,Production and supply of water,industry,mom,0.1,0
+2026-10-01,ind_water,Production and supply of water,industry,yoy,-0.1,0
+2026-10-01,ind_water,Production and supply of water,industry,ytd,0.9,0

@@ -30722,3 +30722,186 @@ date,area,area_name,series,label,group,order,measure,value,pct,base,base_break,e
 2026-09-01,national,China,ind_water,Production and supply of water,industry,62,mom,100.0,0.0,2025,0,124020206813-6021702000023
 2026-09-01,national,China,ind_water,Production and supply of water,industry,62,yoy,99.9,-0.1,2025,0,124020206813-6021702000021
 2026-09-01,national,China,ind_water,Production and supply of water,industry,62,ytd,101.0,1.0,2025,0,124020206813-6021702000022
+2026-10-01,national,China,ppi,PPI (ex-factory prices of industrial products),ppi,0,mom,100.7,0.7,2025,0,6021702000023
+2026-10-01,national,China,ppi,PPI (ex-factory prices of industrial products),ppi,0,yoy,105.7,5.7,2025,0,6021702000021
+2026-10-01,national,China,ppi,PPI (ex-factory prices of industrial products),ppi,0,ytd,102.7,2.7,2025,0,6021702000022
+2026-10-01,national,China,ppi_production,Means of production,ppi,1,mom,100.9,0.9,2025,0,106580100004-6021702000023
+2026-10-01,national,China,ppi_production,Means of production,ppi,1,yoy,107.4,7.4,2025,0,106580100004-6021702000021
+2026-10-01,national,China,ppi_production,Means of production,ppi,1,ytd,103.7,3.7,2025,0,106580100004-6021702000022
+2026-10-01,national,China,ppi_consumer,Consumer goods,ppi,2,mom,99.9,-0.1,2025,0,106580100001-6021702000023
+2026-10-01,national,China,ppi_consumer,Consumer goods,ppi,2,yoy,99.9,-0.1,2025,0,106580100001-6021702000021
+2026-10-01,national,China,ppi_consumer,Consumer goods,ppi,2,ytd,99.1,-0.9,2025,0,106580100001-6021702000022
+2026-10-01,national,China,ppi_mining,Mining and quarrying,ppi,3,mom,102.8,2.8,2025,0,106580200017-6021702000023
+2026-10-01,national,China,ppi_mining,Mining and quarrying,ppi,3,yoy,127.9,27.9,2025,0,106580200017-6021702000021
+2026-10-01,national,China,ppi_mining,Mining and quarrying,ppi,3,ytd,111.5,11.5,2025,0,106580200017-6021702000022
+2026-10-01,national,China,ppi_raw,Raw materials,ppi,4,mom,102.0,2.0,2025,0,106580200002-6021702000023
+2026-10-01,national,China,ppi_raw,Raw materials,ppi,4,yoy,111.6,11.6,2025,0,106580200002-6021702000021
+2026-10-01,national,China,ppi_raw,Raw materials,ppi,4,ytd,105.5,5.5,2025,0,106580200002-6021702000022
+2026-10-01,national,China,ppi_processing,Processing,ppi,5,mom,100.2,0.2,2025,0,106580200008-6021702000023
+2026-10-01,national,China,ppi_processing,Processing,ppi,5,yoy,103.5,3.5,2025,0,106580200008-6021702000021
+2026-10-01,national,China,ppi_processing,Processing,ppi,5,ytd,102.1,2.1,2025,0,106580200008-6021702000022
+2026-10-01,national,China,ppi_food,Food,ppi,6,mom,100.0,0.0,2025,0,106580200011-6021702000023
+2026-10-01,national,China,ppi_food,Food,ppi,6,yoy,98.4,-1.6,2025,0,106580200011-6021702000021
+2026-10-01,national,China,ppi_food,Food,ppi,6,ytd,98.1,-1.9,2025,0,106580200011-6021702000022
+2026-10-01,national,China,ppi_clothing,Clothing,ppi,7,mom,99.8,-0.2,2025,0,106580200009-6021702000023
+2026-10-01,national,China,ppi_clothing,Clothing,ppi,7,yoy,98.7,-1.3,2025,0,106580200009-6021702000021
+2026-10-01,national,China,ppi_clothing,Clothing,ppi,7,ytd,98.9,-1.1,2025,0,106580200009-6021702000022
+2026-10-01,national,China,ppi_daily,Articles for daily use,ppi,8,mom,99.9,-0.1,2025,0,106580200018-6021702000023
+2026-10-01,national,China,ppi_daily,Articles for daily use,ppi,8,yoy,99.3,-0.7,2025,0,106580200018-6021702000021
+2026-10-01,national,China,ppi_daily,Articles for daily use,ppi,8,ytd,98.9,-1.1,2025,0,106580200018-6021702000022
+2026-10-01,national,China,ppi_durables,Durable consumer goods,ppi,9,mom,99.9,-0.1,2025,0,106580200007-6021702000023
+2026-10-01,national,China,ppi_durables,Durable consumer goods,ppi,9,yoy,101.4,1.4,2025,0,106580200007-6021702000021
+2026-10-01,national,China,ppi_durables,Durable consumer goods,ppi,9,ytd,100.0,0.0,2025,0,106580200007-6021702000022
+2026-10-01,national,China,purchasing,Purchasing prices of industrial producers,purchasing,10,mom,101.1,1.1,2025,0,124870100002-6021702000023
+2026-10-01,national,China,purchasing,Purchasing prices of industrial producers,purchasing,10,yoy,107.9,7.9,2025,0,124870100002-6021702000021
+2026-10-01,national,China,purchasing,Purchasing prices of industrial producers,purchasing,10,ytd,104.0,4.0,2025,0,124870100002-6021702000022
+2026-10-01,national,China,pur_fuel_power,Fuel and power,purchasing,11,mom,104.1,4.1,2025,0,118470148667-124870100002-6021702000023
+2026-10-01,national,China,pur_fuel_power,Fuel and power,purchasing,11,yoy,118.6,18.6,2025,0,118470148667-124870100002-6021702000021
+2026-10-01,national,China,pur_fuel_power,Fuel and power,purchasing,11,ytd,105.6,5.6,2025,0,118470148667-124870100002-6021702000022
+2026-10-01,national,China,pur_ferrous,Ferrous metals,purchasing,12,mom,99.4,-0.6,2025,0,118470143772-124870100002-6021702000023
+2026-10-01,national,China,pur_ferrous,Ferrous metals,purchasing,12,yoy,98.9,-1.1,2025,0,118470143772-124870100002-6021702000021
+2026-10-01,national,China,pur_ferrous,Ferrous metals,purchasing,12,ytd,99.2,-0.8,2025,0,118470143772-124870100002-6021702000022
+2026-10-01,national,China,pur_nonferrous,Nonferrous metals and cables,purchasing,13,mom,99.7,-0.3,2025,0,118470116739-124870100002-6021702000023
+2026-10-01,national,China,pur_nonferrous,Nonferrous metals and cables,purchasing,13,yoy,116.7,16.7,2025,0,118470116739-124870100002-6021702000021
+2026-10-01,national,China,pur_nonferrous,Nonferrous metals and cables,purchasing,13,ytd,120.0,20.0,2025,0,118470116739-124870100002-6021702000022
+2026-10-01,national,China,pur_chemicals,Raw chemical materials,purchasing,14,mom,103.2,3.2,2025,0,118470175779-124870100002-6021702000023
+2026-10-01,national,China,pur_chemicals,Raw chemical materials,purchasing,14,yoy,116.8,16.8,2025,0,118470175779-124870100002-6021702000021
+2026-10-01,national,China,pur_chemicals,Raw chemical materials,purchasing,14,ytd,106.3,6.3,2025,0,118470175779-124870100002-6021702000022
+2026-10-01,national,China,pur_timber_pulp,Timber and paper pulp,purchasing,15,mom,99.8,-0.2,2025,0,118470143733-124870100002-6021702000023
+2026-10-01,national,China,pur_timber_pulp,Timber and paper pulp,purchasing,15,yoy,99.5,-0.5,2025,0,118470143733-124870100002-6021702000021
+2026-10-01,national,China,pur_timber_pulp,Timber and paper pulp,purchasing,15,ytd,98.6,-1.4,2025,0,118470143733-124870100002-6021702000022
+2026-10-01,national,China,pur_building,Building materials and non-metals,purchasing,16,mom,100.4,0.4,2025,0,118470116865-124870100002-6021702000023
+2026-10-01,national,China,pur_building,Building materials and non-metals,purchasing,16,yoy,98.1,-1.9,2025,0,118470116865-124870100002-6021702000021
+2026-10-01,national,China,pur_building,Building materials and non-metals,purchasing,16,ytd,95.9,-4.1,2025,0,118470116865-124870100002-6021702000022
+2026-10-01,national,China,pur_other,Other industrial raw materials and semi-products,purchasing,17,mom,99.9,-0.1,2025,0,118470132929-124870100002-6021702000023
+2026-10-01,national,China,pur_other,Other industrial raw materials and semi-products,purchasing,17,yoy,101.7,1.7,2025,0,118470132929-124870100002-6021702000021
+2026-10-01,national,China,pur_other,Other industrial raw materials and semi-products,purchasing,17,ytd,100.9,0.9,2025,0,118470132929-124870100002-6021702000022
+2026-10-01,national,China,pur_agri,Agricultural and sideline products,purchasing,18,mom,99.7,-0.3,2025,0,118470142339-124870100002-6021702000023
+2026-10-01,national,China,pur_agri,Agricultural and sideline products,purchasing,18,yoy,100.5,0.5,2025,0,118470142339-124870100002-6021702000021
+2026-10-01,national,China,pur_agri,Agricultural and sideline products,purchasing,18,ytd,98.6,-1.4,2025,0,118470142339-124870100002-6021702000022
+2026-10-01,national,China,pur_textile,Textile materials,purchasing,19,mom,100.6,0.6,2025,0,118470142417-124870100002-6021702000023
+2026-10-01,national,China,pur_textile,Textile materials,purchasing,19,yoy,105.3,5.3,2025,0,118470142417-124870100002-6021702000021
+2026-10-01,national,China,pur_textile,Textile materials,purchasing,19,ytd,101.9,1.9,2025,0,118470142417-124870100002-6021702000022
+2026-10-01,national,China,ind_coal,Mining and washing of coal,industry,20,mom,102.7,2.7,2025,0,124020206552-6021702000023
+2026-10-01,national,China,ind_coal,Mining and washing of coal,industry,20,yoy,136.6,36.6,2025,0,124020206552-6021702000021
+2026-10-01,national,China,ind_coal,Mining and washing of coal,industry,20,ytd,113.2,13.2,2025,0,124020206552-6021702000022
+2026-10-01,national,China,ind_oil_gas,Extraction of petroleum and natural gas,industry,21,mom,106.0,6.0,2025,0,124020206625-6021702000023
+2026-10-01,national,China,ind_oil_gas,Extraction of petroleum and natural gas,industry,21,yoy,135.0,35.0,2025,0,124020206625-6021702000021
+2026-10-01,national,China,ind_oil_gas,Extraction of petroleum and natural gas,industry,21,ytd,112.3,12.3,2025,0,124020206625-6021702000022
+2026-10-01,national,China,ind_ferrous_ore,Mining and processing of ferrous metal ores,industry,22,mom,98.3,-1.7,2025,0,124020206831-6021702000023
+2026-10-01,national,China,ind_ferrous_ore,Mining and processing of ferrous metal ores,industry,22,yoy,93.6,-6.4,2025,0,124020206831-6021702000021
+2026-10-01,national,China,ind_ferrous_ore,Mining and processing of ferrous metal ores,industry,22,ytd,100.9,0.9,2025,0,124020206831-6021702000022
+2026-10-01,national,China,ind_nonferrous_ore,Mining and processing of non-ferrous metal ores,industry,23,mom,100.3,0.3,2025,0,124020206823-6021702000023
+2026-10-01,national,China,ind_nonferrous_ore,Mining and processing of non-ferrous metal ores,industry,23,yoy,116.3,16.3,2025,0,124020206823-6021702000021
+2026-10-01,national,China,ind_nonferrous_ore,Mining and processing of non-ferrous metal ores,industry,23,ytd,127.0,27.0,2025,0,124020206823-6021702000022
+2026-10-01,national,China,ind_nonmetal_ore,Mining and processing of non-metal ores,industry,24,mom,100.2,0.2,2025,0,124020206808-6021702000023
+2026-10-01,national,China,ind_nonmetal_ore,Mining and processing of non-metal ores,industry,24,yoy,98.5,-1.5,2025,0,124020206808-6021702000021
+2026-10-01,national,China,ind_nonmetal_ore,Mining and processing of non-metal ores,industry,24,ytd,96.7,-3.3,2025,0,124020206808-6021702000022
+2026-10-01,national,China,ind_mining_support,Professional and support activities for mining,industry,25,mom,100.0,0.0,2025,0,124020206826-6021702000023
+2026-10-01,national,China,ind_mining_support,Professional and support activities for mining,industry,25,yoy,100.6,0.6,2025,0,124020206826-6021702000021
+2026-10-01,national,China,ind_mining_support,Professional and support activities for mining,industry,25,ytd,98.9,-1.1,2025,0,124020206826-6021702000022
+2026-10-01,national,China,ind_other_mining,Other mining,industry,26,mom,100.0,0.0,2025,0,124020206636-6021702000023
+2026-10-01,national,China,ind_other_mining,Other mining,industry,26,yoy,100.5,0.5,2025,0,124020206636-6021702000021
+2026-10-01,national,China,ind_other_mining,Other mining,industry,26,ytd,100.5,0.5,2025,0,124020206636-6021702000022
+2026-10-01,national,China,ind_agri_food,Processing of food from agricultural and sideline products,industry,27,mom,100.1,0.1,2025,0,124020206818-6021702000023
+2026-10-01,national,China,ind_agri_food,Processing of food from agricultural and sideline products,industry,27,yoy,99.6,-0.4,2025,0,124020206818-6021702000021
+2026-10-01,national,China,ind_agri_food,Processing of food from agricultural and sideline products,industry,27,ytd,98.7,-1.3,2025,0,124020206818-6021702000022
+2026-10-01,national,China,ind_food,Manufacture of foods,industry,28,mom,100.1,0.1,2025,0,124020206554-6021702000023
+2026-10-01,national,China,ind_food,Manufacture of foods,industry,28,yoy,99.0,-1.0,2025,0,124020206554-6021702000021
+2026-10-01,national,China,ind_food,Manufacture of foods,industry,28,ytd,98.5,-1.5,2025,0,124020206554-6021702000022
+2026-10-01,national,China,ind_beverages,"Manufacture of liquor, beverages and refined tea",industry,29,mom,99.9,-0.1,2025,0,124020206648-6021702000023
+2026-10-01,national,China,ind_beverages,"Manufacture of liquor, beverages and refined tea",industry,29,yoy,94.8,-5.2,2025,0,124020206648-6021702000021
+2026-10-01,national,China,ind_beverages,"Manufacture of liquor, beverages and refined tea",industry,29,ytd,96.2,-3.8,2025,0,124020206648-6021702000022
+2026-10-01,national,China,ind_tobacco,Manufacture of tobacco,industry,30,mom,100.0,0.0,2025,0,124020206810-6021702000023
+2026-10-01,national,China,ind_tobacco,Manufacture of tobacco,industry,30,yoy,100.1,0.1,2025,0,124020206810-6021702000021
+2026-10-01,national,China,ind_tobacco,Manufacture of tobacco,industry,30,ytd,100.2,0.2,2025,0,124020206810-6021702000022
+2026-10-01,national,China,ind_textiles,Textile industry,industry,31,mom,100.2,0.2,2025,0,124020206506-6021702000023
+2026-10-01,national,China,ind_textiles,Textile industry,industry,31,yoy,102.4,2.4,2025,0,124020206506-6021702000021
+2026-10-01,national,China,ind_textiles,Textile industry,industry,31,ytd,100.7,0.7,2025,0,124020206506-6021702000022
+2026-10-01,national,China,ind_apparel,"Manufacture of textiles, wearing apparel and accessories",industry,32,mom,100.0,0.0,2025,0,124020206628-6021702000023
+2026-10-01,national,China,ind_apparel,"Manufacture of textiles, wearing apparel and accessories",industry,32,yoy,99.0,-1.0,2025,0,124020206628-6021702000021
+2026-10-01,national,China,ind_apparel,"Manufacture of textiles, wearing apparel and accessories",industry,32,ytd,98.7,-1.3,2025,0,124020206628-6021702000022
+2026-10-01,national,China,ind_leather,"Leather, fur, feathers and footwear",industry,33,mom,99.5,-0.5,2025,0,124020201347-6021702000023
+2026-10-01,national,China,ind_leather,"Leather, fur, feathers and footwear",industry,33,yoy,98.3,-1.7,2025,0,124020201347-6021702000021
+2026-10-01,national,China,ind_leather,"Leather, fur, feathers and footwear",industry,33,ytd,99.4,-0.6,2025,0,124020201347-6021702000022
+2026-10-01,national,China,ind_wood,"Processing of timber; wood, bamboo, rattan, palm and straw products",industry,34,mom,99.8,-0.2,2025,0,124020206535-6021702000023
+2026-10-01,national,China,ind_wood,"Processing of timber; wood, bamboo, rattan, palm and straw products",industry,34,yoy,98.5,-1.5,2025,0,124020206535-6021702000021
+2026-10-01,national,China,ind_wood,"Processing of timber; wood, bamboo, rattan, palm and straw products",industry,34,ytd,97.9,-2.1,2025,0,124020206535-6021702000022
+2026-10-01,national,China,ind_furniture,Manufacture of furniture,industry,35,mom,100.0,0.0,2025,0,124020206839-6021702000023
+2026-10-01,national,China,ind_furniture,Manufacture of furniture,industry,35,yoy,99.7,-0.3,2025,0,124020206839-6021702000021
+2026-10-01,national,China,ind_furniture,Manufacture of furniture,industry,35,ytd,99.6,-0.4,2025,0,124020206839-6021702000022
+2026-10-01,national,China,ind_paper,Manufacture of paper and paper products,industry,36,mom,99.6,-0.4,2025,0,124020206566-6021702000023
+2026-10-01,national,China,ind_paper,Manufacture of paper and paper products,industry,36,yoy,99.2,-0.8,2025,0,124020206566-6021702000021
+2026-10-01,national,China,ind_paper,Manufacture of paper and paper products,industry,36,ytd,99.2,-0.8,2025,0,124020206566-6021702000022
+2026-10-01,national,China,ind_printing,Printing and reproduction of recording media,industry,37,mom,100.2,0.2,2025,0,124020206643-6021702000023
+2026-10-01,national,China,ind_printing,Printing and reproduction of recording media,industry,37,yoy,98.5,-1.5,2025,0,124020206643-6021702000021
+2026-10-01,national,China,ind_printing,Printing and reproduction of recording media,industry,37,ytd,97.2,-2.8,2025,0,124020206643-6021702000022
+2026-10-01,national,China,ind_culture_sports,"Articles for culture, education, arts and crafts, sport and entertainment",industry,38,mom,97.8,-2.2,2025,0,124020206536-6021702000023
+2026-10-01,national,China,ind_culture_sports,"Articles for culture, education, arts and crafts, sport and entertainment",industry,38,yoy,102.8,2.8,2025,0,124020206536-6021702000021
+2026-10-01,national,China,ind_culture_sports,"Articles for culture, education, arts and crafts, sport and entertainment",industry,38,ytd,114.1,14.1,2025,0,124020206536-6021702000022
+2026-10-01,national,China,ind_petroleum,"Processing of petroleum, coal and other fuels",industry,39,mom,106.1,6.1,2025,0,124020206824-6021702000023
+2026-10-01,national,China,ind_petroleum,"Processing of petroleum, coal and other fuels",industry,39,yoy,129.9,29.9,2025,0,124020206824-6021702000021
+2026-10-01,national,China,ind_petroleum,"Processing of petroleum, coal and other fuels",industry,39,ytd,108.8,8.8,2025,0,124020206824-6021702000022
+2026-10-01,national,China,ind_chemicals,Manufacture of raw chemical materials and chemical products,industry,40,mom,103.1,3.1,2025,0,124020206569-6021702000023
+2026-10-01,national,China,ind_chemicals,Manufacture of raw chemical materials and chemical products,industry,40,yoy,116.4,16.4,2025,0,124020206569-6021702000021
+2026-10-01,national,China,ind_chemicals,Manufacture of raw chemical materials and chemical products,industry,40,ytd,106.9,6.9,2025,0,124020206569-6021702000022
+2026-10-01,national,China,ind_medicines,Manufacture of medicines,industry,41,mom,99.9,-0.1,2025,0,124020201429-6021702000023
+2026-10-01,national,China,ind_medicines,Manufacture of medicines,industry,41,yoy,96.8,-3.2,2025,0,124020201429-6021702000021
+2026-10-01,national,China,ind_medicines,Manufacture of medicines,industry,41,ytd,95.8,-4.2,2025,0,124020201429-6021702000022
+2026-10-01,national,China,ind_chem_fibres,Manufacture of chemical fibres,industry,42,mom,102.4,2.4,2025,0,124020202032-6021702000023
+2026-10-01,national,China,ind_chem_fibres,Manufacture of chemical fibres,industry,42,yoy,116.0,16.0,2025,0,124020202032-6021702000021
+2026-10-01,national,China,ind_chem_fibres,Manufacture of chemical fibres,industry,42,ytd,105.1,5.1,2025,0,124020202032-6021702000022
+2026-10-01,national,China,ind_rubber_plastics,Manufacture of rubber and plastic products,industry,43,mom,100.7,0.7,2025,0,124020206629-6021702000023
+2026-10-01,national,China,ind_rubber_plastics,Manufacture of rubber and plastic products,industry,43,yoy,102.9,2.9,2025,0,124020206629-6021702000021
+2026-10-01,national,China,ind_rubber_plastics,Manufacture of rubber and plastic products,industry,43,ytd,99.7,-0.3,2025,0,124020206629-6021702000022
+2026-10-01,national,China,ind_nonmetal_products,Manufacture of non-metallic mineral products,industry,46,mom,100.8,0.8,2025,0,124020206809-6021702000023
+2026-10-01,national,China,ind_nonmetal_products,Manufacture of non-metallic mineral products,industry,46,yoy,98.4,-1.6,2025,0,124020206809-6021702000021
+2026-10-01,national,China,ind_nonmetal_products,Manufacture of non-metallic mineral products,industry,46,ytd,95.8,-4.2,2025,0,124020206809-6021702000022
+2026-10-01,national,China,ind_ferrous,Smelting and pressing of ferrous metals,industry,47,mom,100.0,0.0,2025,0,124020206532-6021702000023
+2026-10-01,national,China,ind_ferrous,Smelting and pressing of ferrous metals,industry,47,yoy,100.4,0.4,2025,0,124020206532-6021702000021
+2026-10-01,national,China,ind_ferrous,Smelting and pressing of ferrous metals,industry,47,ytd,99.6,-0.4,2025,0,124020206532-6021702000022
+2026-10-01,national,China,ind_nonferrous,Smelting and pressing of non-ferrous metals,industry,48,mom,99.9,-0.1,2025,0,124020206634-6021702000023
+2026-10-01,national,China,ind_nonferrous,Smelting and pressing of non-ferrous metals,industry,48,yoy,118.6,18.6,2025,0,124020206634-6021702000021
+2026-10-01,national,China,ind_nonferrous,Smelting and pressing of non-ferrous metals,industry,48,ytd,121.2,21.2,2025,0,124020206634-6021702000022
+2026-10-01,national,China,ind_metal_products,Manufacture of metal products,industry,49,mom,100.1,0.1,2025,0,124020206829-6021702000023
+2026-10-01,national,China,ind_metal_products,Manufacture of metal products,industry,49,yoy,101.7,1.7,2025,0,124020206829-6021702000021
+2026-10-01,national,China,ind_metal_products,Manufacture of metal products,industry,49,ytd,100.9,0.9,2025,0,124020206829-6021702000022
+2026-10-01,national,China,ind_general_machinery,Manufacture of general-purpose machinery,industry,50,mom,100.0,0.0,2025,0,124020206638-6021702000023
+2026-10-01,national,China,ind_general_machinery,Manufacture of general-purpose machinery,industry,50,yoy,99.7,-0.3,2025,0,124020206638-6021702000021
+2026-10-01,national,China,ind_general_machinery,Manufacture of general-purpose machinery,industry,50,ytd,99.2,-0.8,2025,0,124020206638-6021702000022
+2026-10-01,national,China,ind_special_machinery,Manufacture of special-purpose machinery,industry,51,mom,100.0,0.0,2025,0,124020206548-6021702000023
+2026-10-01,national,China,ind_special_machinery,Manufacture of special-purpose machinery,industry,51,yoy,99.2,-0.8,2025,0,124020206548-6021702000021
+2026-10-01,national,China,ind_special_machinery,Manufacture of special-purpose machinery,industry,51,ytd,99.2,-0.8,2025,0,124020206548-6021702000022
+2026-10-01,national,China,ind_autos,Manufacture of automobiles,industry,52,mom,100.0,0.0,2025,0,124020206539-6021702000023
+2026-10-01,national,China,ind_autos,Manufacture of automobiles,industry,52,yoy,98.2,-1.8,2025,0,124020206539-6021702000021
+2026-10-01,national,China,ind_autos,Manufacture of automobiles,industry,52,ytd,97.8,-2.2,2025,0,124020206539-6021702000022
+2026-10-01,national,China,ind_transport_equip,"Railway, ships, aerospace and other transport equipment",industry,53,mom,100.0,0.0,2025,0,124020206627-6021702000023
+2026-10-01,national,China,ind_transport_equip,"Railway, ships, aerospace and other transport equipment",industry,53,yoy,100.2,0.2,2025,0,124020206627-6021702000021
+2026-10-01,national,China,ind_transport_equip,"Railway, ships, aerospace and other transport equipment",industry,53,ytd,99.9,-0.1,2025,0,124020206627-6021702000022
+2026-10-01,national,China,ind_electrical,Manufacture of electrical machinery and apparatus,industry,54,mom,100.1,0.1,2025,0,124020206805-6021702000023
+2026-10-01,national,China,ind_electrical,Manufacture of electrical machinery and apparatus,industry,54,yoy,106.2,6.2,2025,0,124020206805-6021702000021
+2026-10-01,national,China,ind_electrical,Manufacture of electrical machinery and apparatus,industry,54,ytd,104.3,4.3,2025,0,124020206805-6021702000022
+2026-10-01,national,China,ind_electronics,"Computers, communication equipment and other electronic equipment",industry,55,mom,100.1,0.1,2025,0,124020206646-6021702000023
+2026-10-01,national,China,ind_electronics,"Computers, communication equipment and other electronic equipment",industry,55,yoy,105.9,5.9,2025,0,124020206646-6021702000021
+2026-10-01,national,China,ind_electronics,"Computers, communication equipment and other electronic equipment",industry,55,ytd,102.6,2.6,2025,0,124020206646-6021702000022
+2026-10-01,national,China,ind_instruments,Manufacture of measuring instruments,industry,56,mom,100.0,0.0,2025,0,124020206645-6021702000023
+2026-10-01,national,China,ind_instruments,Manufacture of measuring instruments,industry,56,yoy,99.4,-0.6,2025,0,124020206645-6021702000021
+2026-10-01,national,China,ind_instruments,Manufacture of measuring instruments,industry,56,ytd,99.1,-0.9,2025,0,124020206645-6021702000022
+2026-10-01,national,China,ind_other_mfg,Other manufacturing,industry,57,mom,99.8,-0.2,2025,0,124020206640-6021702000023
+2026-10-01,national,China,ind_other_mfg,Other manufacturing,industry,57,yoy,98.2,-1.8,2025,0,124020206640-6021702000021
+2026-10-01,national,China,ind_other_mfg,Other manufacturing,industry,57,ytd,98.4,-1.6,2025,0,124020206640-6021702000022
+2026-10-01,national,China,ind_waste,Utilisation of waste resources,industry,58,mom,99.8,-0.2,2025,0,124020206821-6021702000023
+2026-10-01,national,China,ind_waste,Utilisation of waste resources,industry,58,yoy,101.9,1.9,2025,0,124020206821-6021702000021
+2026-10-01,national,China,ind_waste,Utilisation of waste resources,industry,58,ytd,102.1,2.1,2025,0,124020206821-6021702000022
+2026-10-01,national,China,ind_repair,"Repair of metal products, machinery and equipment",industry,59,mom,99.9,-0.1,2025,0,124020206529-6021702000023
+2026-10-01,national,China,ind_repair,"Repair of metal products, machinery and equipment",industry,59,yoy,100.7,0.7,2025,0,124020206529-6021702000021
+2026-10-01,national,China,ind_repair,"Repair of metal products, machinery and equipment",industry,59,ytd,100.7,0.7,2025,0,124020206529-6021702000022
+2026-10-01,national,China,ind_power_heat,Production and supply of electricity and heat,industry,60,mom,99.8,-0.2,2025,0,124020206586-6021702000023
+2026-10-01,national,China,ind_power_heat,Production and supply of electricity and heat,industry,60,yoy,96.2,-3.8,2025,0,124020206586-6021702000021
+2026-10-01,national,China,ind_power_heat,Production and supply of electricity and heat,industry,60,ytd,96.0,-4.0,2025,0,124020206586-6021702000022
+2026-10-01,national,China,ind_gas,Production and supply of gas,industry,61,mom,101.5,1.5,2025,0,124020206637-6021702000023
+2026-10-01,national,China,ind_gas,Production and supply of gas,industry,61,yoy,107.9,7.9,2025,0,124020206637-6021702000021
+2026-10-01,national,China,ind_gas,Production and supply of gas,industry,61,ytd,102.0,2.0,2025,0,124020206637-6021702000022
+2026-10-01,national,China,ind_water,Production and supply of water,industry,62,mom,100.1,0.1,2025,0,124020206813-6021702000023
+2026-10-01,national,China,ind_water,Production and supply of water,industry,62,yoy,99.9,-0.1,2025,0,124020206813-6021702000021
+2026-10-01,national,China,ind_water,Production and supply of water,industry,62,ytd,100.9,0.9,2025,0,124020206813-6021702000022

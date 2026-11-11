@@ -1,17 +1,17 @@
 {
- "code": "C2026-09",
- "label": "September 2026",
- "latest_month": "2026-09-01",
- "release_date": "2026-10-14",
+ "code": "C2026-10",
+ "label": "October 2026",
+ "latest_month": "2026-10-01",
+ "release_date": "2026-11-09",
  "table": "NBS data portal (data.stats.gov.cn), monthly CPI catalogs; releases on stats.gov.cn",
- "processed_at": "2026-11-11T01:40:13Z",
- "rows": 174183,
+ "processed_at": "2026-11-11T04:28:05Z",
+ "rows": 175428,
  "warnings": [
-  "YTD vs average y/y beyond 0.15 in 23 of 8070 cases: ['national transport_telecom 2021-08: YTD 103.0 vs average y/y 103.15', 'national transport_telecom 2021-07: YTD 102.6 vs average y/y 102.76', 'national transport_telecom 2021-06: YTD 101.9 vs average y/y 102.07']",
-  "m/m compounded over 12 months differs from y/y by more than 0.4pp in 29 of 696 months (rounding and base changes): ['services 2026-01: y/y 100.1 vs m/m compounded 99.69', 'food 2011-01: y/y 110.3 vs m/m compounded 110.87', 'all 2006-07: y/y 101.0 vs m/m compounded 101.59']",
+  "YTD vs average y/y beyond 0.15 in 23 of 8101 cases: ['national transport_telecom 2021-08: YTD 103.0 vs average y/y 103.15', 'national transport_telecom 2021-07: YTD 102.6 vs average y/y 102.76', 'national transport_telecom 2021-06: YTD 101.9 vs average y/y 102.07']",
+  "m/m compounded over 12 months differs from y/y by more than 0.4pp in 29 of 702 months (rounding and base changes): ['services 2026-01: y/y 100.1 vs m/m compounded 99.69', 'food 2011-01: y/y 110.3 vs m/m compounded 110.87', 'all 2006-07: y/y 101.0 vs m/m compounded 101.59']",
   "published impacts: no month states all four parts (food, energy, industrial consumer goods ex energy, services), so the sum check could not run"
  ],
- "long_rows": 174183,
+ "long_rows": 175428,
  "catalogs": 63,
  "province_catalogs": 7,
  "impact_months": 22,
@@ -20,6 +20,10 @@
   {
    "code": "C2026-09",
    "processed_at": "2026-11-11T01:40:13Z"
+  },
+  {
+   "code": "C2026-10",
+   "processed_at": "2026-11-11T04:28:05Z"
   }
  ]
 }

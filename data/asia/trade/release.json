@@ -1,9 +1,9 @@
 {
- "code": "R24ece38684",
+ "code": "R9840f5a4bd",
  "label": "460 of 627 CEIC series filled",
  "source": "core.asia_trade",
- "processed_at": "2026-11-11T02:22:49Z",
- "rows": 206138,
+ "processed_at": "2026-11-11T05:05:44Z",
+ "rows": 209190,
  "warnings": [],
  "history": [
   {
@@ -37,6 +37,10 @@
   {
    "code": "R24ece38684",
    "processed_at": "2026-11-11T02:22:49Z"
+  },
+  {
+   "code": "R9840f5a4bd",
+   "processed_at": "2026-11-11T05:05:44Z"
   }
  ]
 }
