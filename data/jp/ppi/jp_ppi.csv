@@ -4566,23 +4566,30 @@ date,series,label,order,index,yoy
 2026-06-01,import_yen,"Import prices, yen basis",5,197.2,30.4
 2026-06-01,import_ccy,"Import prices, contract currency basis",6,142.8,
 2026-07-01,ppi,"Producer prices, all commodities",0,136.5,7.7
-2026-07-01,ppi_ex_summer_elec,Producer prices excl. summer electricity surcharge (reference),1,136.3,
+2026-07-01,ppi_ex_summer_elec,Producer prices excl. summer electricity surcharge (reference),1,136.4,
 2026-07-01,ppi_ex_tax,Producer prices excl. consumption tax,2,136.5,
-2026-07-01,export_yen,"Export prices, yen basis",3,163.4,19.4
-2026-07-01,export_ccy,"Export prices, contract currency basis",4,123.7,
+2026-07-01,export_yen,"Export prices, yen basis",3,163.6,19.5
+2026-07-01,export_ccy,"Export prices, contract currency basis",4,124,
 2026-07-01,import_yen,"Import prices, yen basis",5,199.9,29.4
 2026-07-01,import_ccy,"Import prices, contract currency basis",6,143.6,
 2026-08-01,ppi,"Producer prices, all commodities",0,136.1,7.6
-2026-08-01,ppi_ex_summer_elec,Producer prices excl. summer electricity surcharge (reference),1,135.9,
+2026-08-01,ppi_ex_summer_elec,Producer prices excl. summer electricity surcharge (reference),1,136,
 2026-08-01,ppi_ex_tax,Producer prices excl. consumption tax,2,136.1,
-2026-08-01,export_yen,"Export prices, yen basis",3,162.2,18
-2026-08-01,export_ccy,"Export prices, contract currency basis",4,124.6,
+2026-08-01,export_yen,"Export prices, yen basis",3,162.4,18.1
+2026-08-01,export_ccy,"Export prices, contract currency basis",4,124.8,
 2026-08-01,import_yen,"Import prices, yen basis",5,194.1,25.1
 2026-08-01,import_ccy,"Import prices, contract currency basis",6,142.2,
-2026-09-01,ppi,"Producer prices, all commodities",0,135.7,6.8
-2026-09-01,ppi_ex_summer_elec,Producer prices excl. summer electricity surcharge (reference),1,135.5,
-2026-09-01,ppi_ex_tax,Producer prices excl. consumption tax,2,135.7,
-2026-09-01,export_yen,"Export prices, yen basis",3,163,17.9
-2026-09-01,export_ccy,"Export prices, contract currency basis",4,126.3,
-2026-09-01,import_yen,"Import prices, yen basis",5,193.8,24.5
-2026-09-01,import_ccy,"Import prices, contract currency basis",6,143.6,
+2026-09-01,ppi,"Producer prices, all commodities",0,135.8,6.8
+2026-09-01,ppi_ex_summer_elec,Producer prices excl. summer electricity surcharge (reference),1,135.6,
+2026-09-01,ppi_ex_tax,Producer prices excl. consumption tax,2,135.8,
+2026-09-01,export_yen,"Export prices, yen basis",3,163.5,18.2
+2026-09-01,export_ccy,"Export prices, contract currency basis",4,126.8,
+2026-09-01,import_yen,"Import prices, yen basis",5,192.7,23.8
+2026-09-01,import_ccy,"Import prices, contract currency basis",6,142.9,
+2026-10-01,ppi,"Producer prices, all commodities",0,136.8,7.1
+2026-10-01,ppi_ex_summer_elec,Producer prices excl. summer electricity surcharge (reference),1,136.8,
+2026-10-01,ppi_ex_tax,Producer prices excl. consumption tax,2,136.8,
+2026-10-01,export_yen,"Export prices, yen basis",3,165.3,16.7
+2026-10-01,export_ccy,"Export prices, contract currency basis",4,127.5,
+2026-10-01,import_yen,"Import prices, yen basis",5,199,24.8
+2026-10-01,import_ccy,"Import prices, contract currency basis",6,146.2,

@@ -1,9 +1,9 @@
 {
- "code": "R9840f5a4bd",
- "label": "460 of 627 CEIC series filled",
+ "code": "R5d00a72d43",
+ "label": "452 of 627 CEIC series filled",
  "source": "core.asia_trade",
- "processed_at": "2026-11-11T05:05:44Z",
- "rows": 209190,
+ "processed_at": "2026-11-12T02:13:33Z",
+ "rows": 213312,
  "warnings": [],
  "history": [
   {
@@ -41,6 +41,10 @@
   {
    "code": "R9840f5a4bd",
    "processed_at": "2026-11-11T05:05:44Z"
+  },
+  {
+   "code": "R5d00a72d43",
+   "processed_at": "2026-11-12T02:13:33Z"
   }
  ]
 }

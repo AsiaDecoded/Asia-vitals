@@ -3,8 +3,8 @@
  "title": "Japan producer, export and import prices",
  "units": "% y/y",
  "freq": "monthly",
- "source": "Bank of Japan, Corporate Goods Price Index (2020 base), Sep 2026.",
- "release": "M2026-09",
+ "source": "Bank of Japan, Corporate Goods Price Index (2020 base), Oct 2026.",
+ "release": "M2026-10",
  "columns": [
   "ppi",
   "export_yen",
@@ -4802,20 +4802,26 @@
   {
    "date": "2026-07-01",
    "ppi": 7.7,
-   "export_yen": 19.4,
+   "export_yen": 19.5,
    "import_yen": 29.4
   },
   {
    "date": "2026-08-01",
    "ppi": 7.6,
-   "export_yen": 18,
+   "export_yen": 18.1,
    "import_yen": 25.1
   },
   {
    "date": "2026-09-01",
    "ppi": 6.8,
-   "export_yen": 17.9,
-   "import_yen": 24.5
+   "export_yen": 18.2,
+   "import_yen": 23.8
+  },
+  {
+   "date": "2026-10-01",
+   "ppi": 7.1,
+   "export_yen": 16.7,
+   "import_yen": 24.8
   }
  ]
 }

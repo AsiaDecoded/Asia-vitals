@@ -4,16 +4,28 @@
  "latest_month": "2026-09-01",
  "source": "trade_my",
  "table": "OpenDOSM trade_headline",
- "processed_at": "2026-11-10T05:12:22Z",
- "rows": 4086,
- "warnings": [],
+ "processed_at": "2026-11-12T02:12:16Z",
+ "rows": 2622,
+ "warnings": [
+  "METS Exports HS2_digit ['85'] 2012-2016: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
+  "METS Exports HS2_digit ['85'] 2017-2021: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
+  "METS Exports HS2_digit ['85'] 2022-2026: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
+  "METS Exports HS4_digit ['8419', '8470'] 2012-2016: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
+  "METS Exports HS4_digit ['8419', '8470'] 2017-2021: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
+  "METS Exports HS4_digit ['8419', '8470'] 2022-2026: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
+  "METS Imports HS4_digit ['2709', '2710'] 2010-2014: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
+  "METS Imports HS4_digit ['2709', '2710'] 2015-2019: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
+  "METS Imports HS4_digit ['2709', '2710'] 2020-2024: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
+  "METS Imports HS4_digit ['2709', '2710'] 2025-2026: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))"
+ ],
  "fingerprint": "14036fbbd64e0b2d",
  "hs": 2,
- "fetched": 6,
+ "fetched": 0,
+ "partners_done": false,
  "history": [
   {
    "code": "T2026-09",
-   "processed_at": "2026-11-10T05:12:22Z"
+   "processed_at": "2026-11-12T02:12:16Z"
   }
  ]
 }

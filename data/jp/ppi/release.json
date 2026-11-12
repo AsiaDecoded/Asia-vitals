@@ -1,17 +1,21 @@
 {
- "code": "M2026-09",
- "label": "Sep 2026",
- "latest_month": "2026-09-01",
+ "code": "M2026-10",
+ "label": "Oct 2026",
+ "latest_month": "2026-10-01",
  "table": "BoJ PR01 (CGPI, 2020 base)",
- "processed_at": "2026-10-25T07:39:54Z",
- "rows": 4587,
+ "processed_at": "2026-11-12T01:27:35Z",
+ "rows": 4594,
  "warnings": [],
- "fingerprint": "708f6ddebd6c1a73",
- "long_rows": 6954,
+ "fingerprint": "ad727b450263a458",
+ "long_rows": 6964,
  "history": [
   {
    "code": "M2026-09",
    "processed_at": "2026-10-25T07:39:54Z"
+  },
+  {
+   "code": "M2026-10",
+   "processed_at": "2026-11-12T01:27:35Z"
   }
  ]
 }
