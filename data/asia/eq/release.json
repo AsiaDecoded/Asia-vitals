@@ -1,13 +1,13 @@
 {
- "code": "E2026-11-12-a1ba09",
+ "code": "E2026-11-12-aa843e",
  "label": "CNBC daily closes to 2026-11-12",
  "latest_date": "2026-11-12",
  "economies": "JP KR TW HK CN IN ID TH MY SG PH VN",
- "processed_at": "2026-11-13T01:51:24Z",
+ "processed_at": "2026-11-13T04:09:29Z",
  "rows": 12,
  "warnings": [],
- "fingerprint": "a1ba0904d0cd9276",
- "long_rows": 102308,
+ "fingerprint": "aa843e7df65dbf99",
+ "long_rows": 102309,
  "tickers": {
   "JP": "cnbc:.N225",
   "KR": "cnbc:.KS11",
@@ -54,6 +54,10 @@
   {
    "code": "E2026-11-12-a1ba09",
    "processed_at": "2026-11-13T01:51:24Z"
+  },
+  {
+   "code": "E2026-11-12-aa843e",
+   "processed_at": "2026-11-13T04:09:29Z"
   }
  ]
 }
