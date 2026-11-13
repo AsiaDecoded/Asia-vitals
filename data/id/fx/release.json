@@ -1,12 +1,12 @@
 {
- "code": "X2026-11-03",
- "label": "BIS daily to 2026-11-03",
- "latest_date": "2026-11-03",
+ "code": "X2026-11-10",
+ "label": "BIS daily to 2026-11-10",
+ "latest_date": "2026-11-10",
  "table": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/D.ID.IDR.A?format=csv",
- "processed_at": "2026-11-06T01:26:35Z",
- "rows": 10685,
+ "processed_at": "2026-11-13T01:48:16Z",
+ "rows": 10690,
  "warnings": [],
- "fingerprint": "cf17f9e46601e743",
+ "fingerprint": "3e45d20265c3fa60",
  "long_rows": 1436,
  "history": [
   {
@@ -16,6 +16,10 @@
   {
    "code": "X2026-11-03",
    "processed_at": "2026-11-06T01:26:35Z"
+  },
+  {
+   "code": "X2026-11-10",
+   "processed_at": "2026-11-13T01:48:16Z"
   }
  ]
 }

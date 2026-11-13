@@ -1,8 +1,8 @@
 [
  {
-  "code": "M2026-09",
-  "label": "Sep 2026",
-  "latest_month": "2026-09-01",
+  "code": "M2026-10",
+  "label": "Oct 2026",
+  "latest_month": "2026-10-01",
   "table": "Calculated from MoSPI CPI 2024 item indices (all-India, combined) and Annex 5.3d item weights; 2012-base residual core linked over 2025",
   "weights": {
    "core1": 53.04,
@@ -17,6 +17,6 @@
    "core2": 0.53691
   },
   "link_year": "2025",
-  "processed_at": "2026-10-26T13:15:43Z"
+  "processed_at": "2026-11-13T01:33:21Z"
  }
 ]

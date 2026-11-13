@@ -3,8 +3,8 @@
  "title": "India consumer price index",
  "units": "index, 2024 = 100",
  "freq": "monthly",
- "source": "MoSPI, Consumer Price Index (2024 base; 2013-2024 back series; 2011-2012 2010 base, linked by Asia Decoded), Sep 2026.",
- "release": "M2026-09",
+ "source": "MoSPI, Consumer Price Index (2024 base; 2013-2024 back series; 2011-2012 2010 base, linked by Asia Decoded), Oct 2026.",
+ "release": "M2026-10",
  "columns": [
   "combined",
   "rural",
@@ -1144,6 +1144,12 @@
    "combined": 109.49,
    "rural": 110.11,
    "urban": 108.71
+  },
+  {
+   "date": "2026-10-01",
+   "combined": 110.05,
+   "rural": 110.73,
+   "urban": 109.22
   }
  ]
 }

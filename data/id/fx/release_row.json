@@ -1,9 +1,9 @@
 [
  {
-  "code": "X2026-11-03",
-  "label": "BIS daily to 2026-11-03",
-  "latest_date": "2026-11-03",
+  "code": "X2026-11-10",
+  "label": "BIS daily to 2026-11-10",
+  "latest_date": "2026-11-10",
   "table": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/D.ID.IDR.A?format=csv",
-  "processed_at": "2026-11-06T01:26:35Z"
+  "processed_at": "2026-11-13T01:48:16Z"
  }
 ]

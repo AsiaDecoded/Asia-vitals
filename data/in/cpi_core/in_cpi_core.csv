@@ -305,3 +305,5 @@ date,series,label,order,index,yoy,basis
 2026-08-01,core2,"Core 2 (CPI excluding food, fuel and precious metals)",1,106.456,2.91,2024 base
 2026-09-01,core1,Core 1 (CPI excluding food and fuel),0,108.64,4.33,2024 base
 2026-09-01,core2,"Core 2 (CPI excluding food, fuel and precious metals)",1,106.88,3.22,2024 base
+2026-10-01,core1,Core 1 (CPI excluding food and fuel),0,108.966,4.51,2024 base
+2026-10-01,core2,"Core 2 (CPI excluding food, fuel and precious metals)",1,107.324,3.78,2024 base

@@ -1,13 +1,13 @@
 {
- "code": "T2026-09h55",
+ "code": "T2026-09h56",
  "label": "2026-09",
  "latest_month": "2026-09-01",
  "source": "trade_sg",
  "table": "SingStat M451001, M451491, M451501, M451511, M450981, M451131, T010001",
- "processed_at": "2026-11-12T04:37:47Z",
- "rows": 50073,
+ "processed_at": "2026-11-13T02:22:33Z",
+ "rows": 50093,
  "warnings": [],
- "fetched": 6,
+ "fetched": 5,
  "history": [
   {
    "code": "T2026-09h40",
@@ -36,6 +36,10 @@
   {
    "code": "T2026-09h55",
    "processed_at": "2026-11-12T04:37:47Z"
+  },
+  {
+   "code": "T2026-09h56",
+   "processed_at": "2026-11-13T02:22:33Z"
   }
  ]
 }

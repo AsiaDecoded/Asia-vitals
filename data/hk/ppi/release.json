@@ -1,18 +1,22 @@
 {
- "code": "P2026Q2-T2026-08",
- "label": "PPI Q2 2026; trade prices August 2026",
+ "code": "P2026Q2-T2026-09",
+ "label": "PPI Q2 2026; trade prices September 2026",
  "latest_quarter": "2026-04-01",
- "latest_month": "2026-08-01",
+ "latest_month": "2026-09-01",
  "table": "C&SD web tables 520-62001, 520-63001, 410-51001, 410-51002, 410-51003",
- "processed_at": "2026-10-30T02:01:40Z",
- "rows": 3674,
+ "processed_at": "2026-11-13T01:33:28Z",
+ "rows": 3677,
  "warnings": [],
- "fingerprint": "3458dbb767ec8247",
- "long_rows": 7226,
+ "fingerprint": "b62e46adebe95fd7",
+ "long_rows": 7232,
  "history": [
   {
    "code": "P2026Q2-T2026-08",
    "processed_at": "2026-10-30T02:01:40Z"
+  },
+  {
+   "code": "P2026Q2-T2026-09",
+   "processed_at": "2026-11-13T01:33:28Z"
   }
  ]
 }

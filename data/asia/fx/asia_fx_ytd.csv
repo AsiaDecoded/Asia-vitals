@@ -1,12 +1,12 @@
 economy,name,currency,base_date,base_rate,latest_date,latest_rate,ytd_pct,file
-JP,Japan,JPY,2025-12-31,156.67234,2026-11-03,158.287861,-1.02,data/jp/fx/jp_fx_daily.csv
-KR,South Korea,KRW,2025-12-31,1444.204255,2026-11-03,1344.59254,7.41,data/kr/fx/kr_fx_daily.csv
-TW,Taiwan,TWD,2025-12-31,31.37,2026-11-03,32.79,-4.33,data/tw/fx/tw_fx_daily.csv
-HK,Hong Kong,HKD,2025-12-31,7.78417,2026-11-03,7.845961,-0.79,data/hk/fx/hk_fx_daily.csv
-CN,China,CNY,2025-12-31,7.001021,2026-11-03,6.672332,4.93,data/cn/fx/cn_fx_daily.csv
-IN,India,INR,2025-12-31,89.869362,2026-11-03,94.745058,-5.15,data/in/fx/in_fx_daily.csv
-ID,Indonesia,IDR,2025-12-31,16715.6,2026-11-03,18136.7027,-7.84,data/id/fx/id_fx_daily.csv
-TH,Thailand,THB,2025-12-31,31.674894,2026-11-03,33.755255,-6.16,data/th/fx/th_fx_daily.csv
-MY,Malaysia,MYR,2025-12-31,4.058043,2026-11-03,4.077019,-0.47,data/my/fx/my_fx_daily.csv
-SG,Singapore,SGD,2025-12-31,1.285532,2026-11-03,1.281152,0.34,data/sg/fx/sg_fx_daily.csv
-PH,Philippines,PHP,2025-12-31,58.949787,2026-11-03,63.460954,-7.11,data/ph/fx/ph_fx_daily.csv
+JP,Japan,JPY,2025-12-31,156.67234,2026-11-10,158.177278,-0.95,data/jp/fx/jp_fx_daily.csv
+KR,South Korea,KRW,2025-12-31,1444.204255,2026-11-10,1339.004815,7.86,data/kr/fx/kr_fx_daily.csv
+TW,Taiwan,TWD,2025-12-31,31.37,2026-11-10,32.86,-4.53,data/tw/fx/tw_fx_daily.csv
+HK,Hong Kong,HKD,2025-12-31,7.78417,2026-11-10,7.844926,-0.77,data/hk/fx/hk_fx_daily.csv
+CN,China,CNY,2025-12-31,7.001021,2026-11-10,6.670323,4.96,data/cn/fx/cn_fx_daily.csv
+IN,India,INR,2025-12-31,89.869362,2026-11-10,93.928571,-4.32,data/in/fx/in_fx_daily.csv
+ID,Indonesia,IDR,2025-12-31,16715.6,2026-11-10,18062.5468,-7.46,data/id/fx/id_fx_daily.csv
+TH,Thailand,THB,2025-12-31,31.674894,2026-11-10,33.459961,-5.33,data/th/fx/th_fx_daily.csv
+MY,Malaysia,MYR,2025-12-31,4.058043,2026-11-10,4.056001,0.05,data/my/fx/my_fx_daily.csv
+SG,Singapore,SGD,2025-12-31,1.285532,2026-11-10,1.278313,0.56,data/sg/fx/sg_fx_daily.csv
+PH,Philippines,PHP,2025-12-31,58.949787,2026-11-10,62.903513,-6.29,data/ph/fx/ph_fx_daily.csv

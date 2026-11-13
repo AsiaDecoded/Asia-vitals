@@ -2430,6 +2430,7 @@ MY,M,2026-05-01,19,112.25,7.77,y,MSIC 19
 MY,M,2026-06-01,19,132.098,2.88,y,MSIC 19
 MY,M,2026-07-01,19,129.983,1.07,y,MSIC 19
 MY,M,2026-08-01,19,125.369,5.42,y,MSIC 19
+MY,M,2026-09-01,19,118.101,6.04,y,MSIC 19
 MY,M,2015-01-01,20,96.922,,,MSIC 20
 MY,M,2015-02-01,20,93.28,,,MSIC 20
 MY,M,2015-03-01,20,101.995,,,MSIC 20
@@ -2570,6 +2571,7 @@ MY,M,2026-05-01,20,122.319,1.31,y,MSIC 20
 MY,M,2026-06-01,20,145.832,2.63,y,MSIC 20
 MY,M,2026-07-01,20,139.021,2.15,y,MSIC 20
 MY,M,2026-08-01,20,139.083,0.42,y,MSIC 20
+MY,M,2026-09-01,20,132.607,-1.74,y,MSIC 20
 MY,M,2015-01-01,21,83.828,,,MSIC 21
 MY,M,2015-02-01,21,91.99,,,MSIC 21
 MY,M,2015-03-01,21,93.494,,,MSIC 21
@@ -2710,6 +2712,7 @@ MY,M,2026-05-01,21,187.058,2.49,y,MSIC 21
 MY,M,2026-06-01,21,205.196,6.39,y,MSIC 21
 MY,M,2026-07-01,21,218.817,8.25,y,MSIC 21
 MY,M,2026-08-01,21,208.481,2.78,y,MSIC 21
+MY,M,2026-09-01,21,211.396,2.12,y,MSIC 21
 MY,M,2015-01-01,23,94.773,,,MSIC 23
 MY,M,2015-02-01,23,88.426,,,MSIC 23
 MY,M,2015-03-01,23,100.375,,,MSIC 23
@@ -2850,6 +2853,7 @@ MY,M,2026-05-01,23,109.929,2.95,y,MSIC 23
 MY,M,2026-06-01,23,113.665,6.13,y,MSIC 23
 MY,M,2026-07-01,23,116.165,6.36,y,MSIC 23
 MY,M,2026-08-01,23,130.552,5.34,y,MSIC 23
+MY,M,2026-09-01,23,134.708,7.85,y,MSIC 23
 MY,M,2015-01-01,24,92.777,,,MSIC 24
 MY,M,2015-02-01,24,96.418,,,MSIC 24
 MY,M,2015-03-01,24,102.016,,,MSIC 24
@@ -2990,6 +2994,7 @@ MY,M,2026-05-01,24,143.337,7.34,y,MSIC 24
 MY,M,2026-06-01,24,145.098,8.24,y,MSIC 24
 MY,M,2026-07-01,24,149.176,10.08,y,MSIC 24
 MY,M,2026-08-01,24,154.919,9.93,y,MSIC 24
+MY,M,2026-09-01,24,164.481,10.18,y,MSIC 24
 MY,M,2015-01-01,26,99.801,,,MSIC 26
 MY,M,2015-02-01,26,79.014,,,MSIC 26
 MY,M,2015-03-01,26,92.593,,,MSIC 26
@@ -3129,7 +3134,8 @@ MY,M,2026-04-01,26,192.84,14.58,y,MSIC 26
 MY,M,2026-05-01,26,220.955,19.32,y,MSIC 26
 MY,M,2026-06-01,26,243.101,14.92,y,MSIC 26
 MY,M,2026-07-01,26,226.024,13.97,y,MSIC 26
-MY,M,2026-08-01,26,251.341,18.84,y,MSIC 26
+MY,M,2026-08-01,26,251.576,18.95,y,MSIC 26
+MY,M,2026-09-01,26,264.512,19.3,y,MSIC 26
 MY,M,2015-01-01,27,99.135,,,MSIC 27
 MY,M,2015-02-01,27,84.616,,,MSIC 27
 MY,M,2015-03-01,27,100.028,,,MSIC 27
@@ -3270,6 +3276,7 @@ MY,M,2026-05-01,27,164.75,3.52,y,MSIC 27
 MY,M,2026-06-01,27,177.355,6.43,y,MSIC 27
 MY,M,2026-07-01,27,172.628,6.86,y,MSIC 27
 MY,M,2026-08-01,27,168.315,4.76,y,MSIC 27
+MY,M,2026-09-01,27,190.136,5.68,y,MSIC 27
 MY,M,2015-01-01,mfg,99.035,,,"Section C, manufacturing"
 MY,M,2015-02-01,mfg,89.005,,,"Section C, manufacturing"
 MY,M,2015-03-01,mfg,99.182,,,"Section C, manufacturing"
@@ -3409,13 +3416,14 @@ MY,M,2026-04-01,mfg,151.754,8.32,y,"Section C, manufacturing"
 MY,M,2026-05-01,mfg,155.014,6.55,y,"Section C, manufacturing"
 MY,M,2026-06-01,mfg,166.847,7.25,y,"Section C, manufacturing"
 MY,M,2026-07-01,mfg,163.442,6.4,y,"Section C, manufacturing"
-MY,M,2026-08-01,mfg,168.929,7.44,y,"Section C, manufacturing"
+MY,M,2026-08-01,mfg,168.921,7.44,y,"Section C, manufacturing"
+MY,M,2026-09-01,mfg,173.801,9.43,y,"Section C, manufacturing"
 MY,M,2015-01-01,nonelec,98.827,,,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
 MY,M,2015-02-01,nonelec,91.849,,,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
 MY,M,2015-03-01,nonelec,100.9,,,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
 MY,M,2015-04-01,nonelec,99.091,,,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
 MY,M,2015-05-01,nonelec,100.967,,,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
-MY,M,2015-06-01,nonelec,102.177,,,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
+MY,M,2015-06-01,nonelec,102.176,,,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
 MY,M,2015-07-01,nonelec,99.585,,,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
 MY,M,2015-08-01,nonelec,99.798,,,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
 MY,M,2015-09-01,nonelec,101.028,,,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
@@ -3457,7 +3465,7 @@ MY,M,2018-08-01,nonelec,115.319,3.99,y,"Section C less MSIC 26 and 27, DOSM impl
 MY,M,2018-09-01,nonelec,114.921,4.43,y,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
 MY,M,2018-10-01,nonelec,117.51,4.7,y,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
 MY,M,2018-11-01,nonelec,115.415,3.12,y,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
-MY,M,2018-12-01,nonelec,116.181,3.33,y,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
+MY,M,2018-12-01,nonelec,116.182,3.33,y,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
 MY,M,2019-01-01,nonelec,119.019,4.23,y,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
 MY,M,2019-02-01,nonelec,110.446,3.85,y,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
 MY,M,2019-03-01,nonelec,118.821,4.49,y,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
@@ -3549,7 +3557,8 @@ MY,M,2026-04-01,nonelec,140.774,6.34,y,"Section C less MSIC 26 and 27, DOSM impl
 MY,M,2026-05-01,nonelec,137.051,2.02,y,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
 MY,M,2026-06-01,nonelec,146.107,4.22,y,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
 MY,M,2026-07-01,nonelec,146.396,3.56,y,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
-MY,M,2026-08-01,nonelec,147.018,3.07,y,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
+MY,M,2026-08-01,nonelec,146.945,3.02,y,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
+MY,M,2026-09-01,nonelec,148.967,5.5,y,"Section C less MSIC 26 and 27, DOSM implied weights (calculated)"
 SG,M,1983-01-01,19,68.767,,,EDB cluster/segment: Petroleum (not ISIC)
 SG,M,1983-02-01,19,54.552,,,EDB cluster/segment: Petroleum (not ISIC)
 SG,M,1983-03-01,19,55.245,,,EDB cluster/segment: Petroleum (not ISIC)

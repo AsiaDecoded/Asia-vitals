@@ -1,9 +1,9 @@
 {
- "code": "F2026-11-03-a10012",
- "label": "BIS daily to 2026-11-03",
- "latest_date": "2026-11-03",
+ "code": "F2026-11-10-1c3572",
+ "label": "BIS daily to 2026-11-10",
+ "latest_date": "2026-11-10",
  "economies": "JP KR TW HK CN IN ID TH MY SG PH",
- "processed_at": "2026-11-06T01:40:36Z",
+ "processed_at": "2026-11-13T02:44:21Z",
  "rows": 11,
  "warnings": [],
  "history": [
@@ -14,6 +14,10 @@
   {
    "code": "F2026-11-03-a10012",
    "processed_at": "2026-11-06T01:40:36Z"
+  },
+  {
+   "code": "F2026-11-10-1c3572",
+   "processed_at": "2026-11-13T02:44:21Z"
   }
  ]
 }

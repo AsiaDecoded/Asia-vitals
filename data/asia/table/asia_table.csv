@@ -3250,6 +3250,7 @@ IN,India,cpi,"CPI, combined",2026-06-01,4.38,published,data/in/cpi/in_cpi.csv
 IN,India,cpi,"CPI, combined",2026-07-01,4.45,published,data/in/cpi/in_cpi.csv
 IN,India,cpi,"CPI, combined",2026-08-01,4.83,published,data/in/cpi/in_cpi.csv
 IN,India,cpi,"CPI, combined",2026-09-01,5.54,published,data/in/cpi/in_cpi.csv
+IN,India,cpi,"CPI, combined",2026-10-01,6.09,published,data/in/cpi/in_cpi.csv
 IN,India,food,Food and beverages (division 01),2015-01-01,6.3,calculated,data/in/cpi_core/in_cpi_food_energy.csv
 IN,India,food,Food and beverages (division 01),2015-02-01,6.76,calculated,data/in/cpi_core/in_cpi_food_energy.csv
 IN,India,food,Food and beverages (division 01),2015-03-01,6.29,calculated,data/in/cpi_core/in_cpi_food_energy.csv
@@ -3391,6 +3392,7 @@ IN,India,food,Food and beverages (division 01),2026-06-01,5.06,calculated,data/i
 IN,India,food,Food and beverages (division 01),2026-07-01,5.25,calculated,data/in/cpi_core/in_cpi_food_energy.csv
 IN,India,food,Food and beverages (division 01),2026-08-01,5.68,calculated,data/in/cpi_core/in_cpi_food_energy.csv
 IN,India,food,Food and beverages (division 01),2026-09-01,7.36,calculated,data/in/cpi_core/in_cpi_food_energy.csv
+IN,India,food,Food and beverages (division 01),2026-10-01,8.5,calculated,data/in/cpi_core/in_cpi_food_energy.csv
 IN,India,energy,Energy,2015-01-01,-0.6,calculated,data/in/cpi_core/in_cpi_food_energy.csv
 IN,India,energy,Energy,2015-02-01,-0.88,calculated,data/in/cpi_core/in_cpi_food_energy.csv
 IN,India,energy,Energy,2015-03-01,0.16,calculated,data/in/cpi_core/in_cpi_food_energy.csv
@@ -3531,7 +3533,8 @@ IN,India,energy,Energy,2026-05-01,1.9,calculated,data/in/cpi_core/in_cpi_food_en
 IN,India,energy,Energy,2026-06-01,4.48,calculated,data/in/cpi_core/in_cpi_food_energy.csv
 IN,India,energy,Energy,2026-07-01,4.62,calculated,data/in/cpi_core/in_cpi_food_energy.csv
 IN,India,energy,Energy,2026-08-01,5.21,calculated,data/in/cpi_core/in_cpi_food_energy.csv
-IN,India,energy,Energy,2026-09-01,5.29,calculated,data/in/cpi_core/in_cpi_food_energy.csv
+IN,India,energy,Energy,2026-09-01,5.3,calculated,data/in/cpi_core/in_cpi_food_energy.csv
+IN,India,energy,Energy,2026-10-01,5.54,calculated,data/in/cpi_core/in_cpi_food_energy.csv
 IN,India,core,Core 1 (excl. food and fuel),2015-01-01,5.2,calculated,data/in/cpi_core/in_cpi_core.csv
 IN,India,core,Core 1 (excl. food and fuel),2015-02-01,5.17,calculated,data/in/cpi_core/in_cpi_core.csv
 IN,India,core,Core 1 (excl. food and fuel),2015-03-01,5.2,calculated,data/in/cpi_core/in_cpi_core.csv
@@ -3673,6 +3676,7 @@ IN,India,core,Core 1 (excl. food and fuel),2026-06-01,3.9,calculated,data/in/cpi
 IN,India,core,Core 1 (excl. food and fuel),2026-07-01,3.87,calculated,data/in/cpi_core/in_cpi_core.csv
 IN,India,core,Core 1 (excl. food and fuel),2026-08-01,4.16,calculated,data/in/cpi_core/in_cpi_core.csv
 IN,India,core,Core 1 (excl. food and fuel),2026-09-01,4.33,calculated,data/in/cpi_core/in_cpi_core.csv
+IN,India,core,Core 1 (excl. food and fuel),2026-10-01,4.51,calculated,data/in/cpi_core/in_cpi_core.csv
 IN,India,ppi,"Output PPI, linked to WPI",2015-01-01,-2.46,calculated,data/in/ppi/in_ppi_spliced.csv
 IN,India,ppi,"Output PPI, linked to WPI",2015-02-01,-3.52,calculated,data/in/ppi/in_ppi_spliced.csv
 IN,India,ppi,"Output PPI, linked to WPI",2015-03-01,-3.85,calculated,data/in/ppi/in_ppi_spliced.csv

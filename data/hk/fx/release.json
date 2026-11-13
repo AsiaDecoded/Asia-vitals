@@ -1,16 +1,16 @@
 {
- "code": "X2026-11-03",
- "label": "BIS daily to 2026-11-03",
- "latest_date": "2026-11-03",
+ "code": "X2026-11-10",
+ "label": "BIS daily to 2026-11-10",
+ "latest_date": "2026-11-10",
  "currency": "HKD",
  "unit": "Hong Kong dollar per US dollar",
  "first_date": "1981-01-02",
  "table": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/D.HK.HKD.A?format=csv",
- "processed_at": "2026-11-06T01:30:32Z",
- "rows": 11649,
+ "processed_at": "2026-11-13T01:50:42Z",
+ "rows": 11654,
  "warnings": [],
- "fingerprint": "beb0b70fb71f6ef4",
- "long_rows": 11649,
+ "fingerprint": "f289aebd888fe943",
+ "long_rows": 11654,
  "history": [
   {
    "code": "X2026-10-27",
@@ -19,6 +19,10 @@
   {
    "code": "X2026-11-03",
    "processed_at": "2026-11-06T01:30:32Z"
+  },
+  {
+   "code": "X2026-11-10",
+   "processed_at": "2026-11-13T01:50:42Z"
   }
  ]
 }

@@ -2601,6 +2601,7 @@ date,freq,group,series,label,index,yoy,base,table
 2026-06-01,M,trade,export_uvi,"Export prices (unit value index, total exports)",115.1,13.6,2024 = 100,410-51002
 2026-07-01,M,trade,export_uvi,"Export prices (unit value index, total exports)",115.7,13.7,2024 = 100,410-51002
 2026-08-01,M,trade,export_uvi,"Export prices (unit value index, total exports)",120.8,18.7,2024 = 100,410-51002
+2026-09-01,M,trade,export_uvi,"Export prices (unit value index, total exports)",124.0,20.3,2024 = 100,410-51002
 1982-01-01,M,trade,import_uvi,Import prices (unit value index),42.4,,2024 = 100,410-51001
 1982-02-01,M,trade,import_uvi,Import prices (unit value index),42.5,,2024 = 100,410-51001
 1982-03-01,M,trade,import_uvi,Import prices (unit value index),42.4,,2024 = 100,410-51001
@@ -3137,6 +3138,7 @@ date,freq,group,series,label,index,yoy,base,table
 2026-06-01,M,trade,import_uvi,Import prices (unit value index),114.1,12.7,2024 = 100,410-51001
 2026-07-01,M,trade,import_uvi,Import prices (unit value index),115.1,13.6,2024 = 100,410-51001
 2026-08-01,M,trade,import_uvi,Import prices (unit value index),119.9,18.0,2024 = 100,410-51001
+2026-09-01,M,trade,import_uvi,Import prices (unit value index),123.1,19.7,2024 = 100,410-51001
 1982-01-01,M,trade,terms_of_trade,Terms of trade,99.4,,2024 = 100,410-51003
 1982-02-01,M,trade,terms_of_trade,Terms of trade,101.3,,2024 = 100,410-51003
 1982-03-01,M,trade,terms_of_trade,Terms of trade,101.4,,2024 = 100,410-51003
@@ -3673,3 +3675,4 @@ date,freq,group,series,label,index,yoy,base,table
 2026-06-01,M,trade,terms_of_trade,Terms of trade,100.9,0.8,2024 = 100,410-51003
 2026-07-01,M,trade,terms_of_trade,Terms of trade,100.5,0.1,2024 = 100,410-51003
 2026-08-01,M,trade,terms_of_trade,Terms of trade,100.8,0.6,2024 = 100,410-51003
+2026-09-01,M,trade,terms_of_trade,Terms of trade,100.7,0.5,2024 = 100,410-51003
