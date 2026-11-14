@@ -4,10 +4,10 @@
  "latest_month": "2026-09-01",
  "source": "trade_my",
  "table": "OpenDOSM trade_headline",
- "processed_at": "2026-11-14T01:50:58Z",
+ "processed_at": "2026-11-14T04:37:52Z",
  "rows": 2622,
  "warnings": [
-  "METS Exports HS2_digit ['85'] 2012-2016: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
+  "METS Exports HS2_digit ['85'] 2012-2016: URLError(ConnectionResetError(104, 'Connection reset by peer'))",
   "METS Exports HS2_digit ['85'] 2017-2021: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
   "METS Exports HS2_digit ['85'] 2022-2026: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
   "METS Exports HS4_digit ['8419', '8470'] 2012-2016: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
@@ -25,7 +25,7 @@
  "history": [
   {
    "code": "T2026-09",
-   "processed_at": "2026-11-14T01:50:58Z"
+   "processed_at": "2026-11-14T04:37:52Z"
   }
  ]
 }
