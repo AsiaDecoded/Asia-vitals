@@ -1,9 +1,9 @@
 {
- "code": "Rdf943c5fcc",
+ "code": "R261483a6da",
  "label": "452 of 627 CEIC series filled",
  "source": "core.asia_trade",
- "processed_at": "2026-11-13T04:52:22Z",
- "rows": 234028,
+ "processed_at": "2026-11-14T01:52:02Z",
+ "rows": 234743,
  "warnings": [],
  "history": [
   {
@@ -57,6 +57,10 @@
   {
    "code": "Rdf943c5fcc",
    "processed_at": "2026-11-13T04:52:22Z"
+  },
+  {
+   "code": "R261483a6da",
+   "processed_at": "2026-11-14T01:52:02Z"
   }
  ]
 }

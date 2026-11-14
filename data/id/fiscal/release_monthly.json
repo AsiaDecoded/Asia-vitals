@@ -1,11 +1,11 @@
 {
- "code": "K2026-09",
- "label": "year to date to end-Sep 2026",
- "latest_month": "2026-09",
- "file": "https://media.kemenkeu.go.id/getmedia/f0eff271-3eb8-43de-b2ac-a82ff4f48318/Publikasi-Web-Konpers-APBN-KiTa-(Oktober-2026)_1.pdf?ext=.pdf",
+ "code": "K2026-10",
+ "label": "year to date to end-Oct 2026",
+ "latest_month": "2026-10",
+ "file": "https://media.kemenkeu.go.id/getmedia/e15f6400-fc1e-4c21-aa7f-903cc971721d/Publikasi-Web-Konpers-APBN-KITA-Nov-2026.pdf?ext=.pdf",
  "table": "Ministry of Finance APBN KiTa press-conference deck, 'Realisasi APBN s.d.' page",
- "processed_at": "2026-11-01T02:41:44Z",
- "rows": 8,
+ "processed_at": "2026-11-14T01:20:57Z",
+ "rows": 9,
  "warnings": [
   "APBN KiTa Maret 2025 (b6026682-cd60-48f9-9183-f03d51df9479): no outturn summary read",
   "APBN KiTa April 2025 (9c212697-97e1-48ac-b664-275b99a702a0): no outturn summary read",
@@ -20,12 +20,16 @@
   "APBN KITA April 2026 (f1c0dbec-4b48-4ea9-bf05-3770d9fced4b): no outturn summary read",
   "APBN KITA Juli 2026 (fd879869-f1e2-4475-b71f-cabff87a0c56): no outturn summary read"
  ],
- "fingerprint": "f08f8904b5d213ee",
- "long_rows": 40,
+ "fingerprint": "8d3db10d1785a80a",
+ "long_rows": 45,
  "history": [
   {
    "code": "K2026-09",
    "processed_at": "2026-11-01T02:41:44Z"
+  },
+  {
+   "code": "K2026-10",
+   "processed_at": "2026-11-14T01:20:57Z"
   }
  ]
 }

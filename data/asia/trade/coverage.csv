@@ -97,24 +97,24 @@ Exports: Singapore (f75),JP,exports,SG,TOTAL,,d42ma001 112 SNGAPOR,1979-01,2026-
 Exports: Thailand (f76),JP,exports,TH,TOTAL,,d42ma001 111 THAILND,1979-01,2026-09,573
 Exports: Vietnam (f77),JP,exports,VN,TOTAL,,d42ma001 110 VIETNAM,1979-01,2026-09,573
 Exports fob,KR,exports,WLD,TOTAL,,KCS 국가별 총계,2000-01,2026-09,321
-Exports: North America: USA (f78),KR,exports,US,TOTAL,,KCS 국가별 미국,1997-02,2026-09,356
-Exports: Asia: China (f79),KR,exports,CN,TOTAL,,KCS 국가별 중국,1997-02,2026-09,356
-Exports: Asia: Hong Kong SAR (China) (f81),KR,exports,HK,TOTAL,,KCS 국가별 홍콩,1997-02,2026-09,356
-Exports: Asia: Japan (f83),KR,exports,JP,TOTAL,,KCS 국가별 일본,1997-02,2026-09,356
+Exports: North America: USA (f78),KR,exports,US,TOTAL,,KCS 국가별 미국,1994-09,2026-09,385
+Exports: Asia: China (f79),KR,exports,CN,TOTAL,,KCS 국가별 중국,1994-09,2026-09,385
+Exports: Asia: Hong Kong SAR (China) (f81),KR,exports,HK,TOTAL,,KCS 국가별 홍콩,1994-09,2026-09,385
+Exports: Asia: Japan (f83),KR,exports,JP,TOTAL,,KCS 국가별 일본,1994-09,2026-09,385
 Exports: Europe: EU (27) (f80),KR,exports,EU,TOTAL,,KCS 경제권별 EU,2000-01,2026-09,321
-Exports: Asia: Taiwan (f82),KR,exports,TW,TOTAL,,KCS 국가별 대만,1997-02,2026-09,356
-Exports: Asia: India (f84),KR,exports,IN,TOTAL,,KCS 국가별 인도,1997-02,2026-09,356
-Exports: Asia: Indonesia (f85),KR,exports,ID,TOTAL,,KCS 국가별 인도네시아,1997-02,2026-09,356
-Exports: Asia: Malaysia (f86),KR,exports,MY,TOTAL,,KCS 국가별 말레이시아,1997-02,2026-09,356
-Exports: Asia: Philippines (f87),KR,exports,PH,TOTAL,,KCS 국가별 필리핀,1997-02,2026-09,356
-Exports: Asia: Singapore (f88),KR,exports,SG,TOTAL,,KCS 국가별 싱가포르,1997-02,2026-09,356
-Exports: Asia: Thailand (f89),KR,exports,TH,TOTAL,,KCS 국가별 태국,1997-02,2026-09,356
-Exports: Asia: Vietnam (f90),KR,exports,VN,TOTAL,,KCS 국가별 베트남,1997-02,2026-09,356
-Exports: USD,IN,exports,WLD,TOTAL,,TradeStat commoditywise HS2 total India's Total Export,2026-04,2026-08,5
-Exports: USD: United States,IN,exports,US,TOTAL,,TradeStat country_wise_all_commodities US,2026-04,2026-08,5
-Exports: USD: China,IN,exports,CN,TOTAL,,TradeStat country_wise_all_commodities CN,2026-04,2026-08,5
-Exports: USD: Hong Kong SAR (China),IN,exports,HK,TOTAL,,TradeStat country_wise_all_commodities HK,2026-04,2026-08,5
-Exports: USD: Japan,IN,exports,JP,TOTAL,,TradeStat country_wise_all_commodities JP,2026-04,2026-08,5
+Exports: Asia: Taiwan (f82),KR,exports,TW,TOTAL,,KCS 국가별 대만,1994-09,2026-09,385
+Exports: Asia: India (f84),KR,exports,IN,TOTAL,,KCS 국가별 인도,1994-09,2026-09,385
+Exports: Asia: Indonesia (f85),KR,exports,ID,TOTAL,,KCS 국가별 인도네시아,1994-09,2026-09,385
+Exports: Asia: Malaysia (f86),KR,exports,MY,TOTAL,,KCS 국가별 말레이시아,1994-09,2026-09,385
+Exports: Asia: Philippines (f87),KR,exports,PH,TOTAL,,KCS 국가별 필리핀,1994-09,2026-09,385
+Exports: Asia: Singapore (f88),KR,exports,SG,TOTAL,,KCS 국가별 싱가포르,1994-09,2026-09,385
+Exports: Asia: Thailand (f89),KR,exports,TH,TOTAL,,KCS 국가별 태국,1994-09,2026-09,385
+Exports: Asia: Vietnam (f90),KR,exports,VN,TOTAL,,KCS 국가별 베트남,1994-09,2026-09,385
+Exports: USD,IN,exports,WLD,TOTAL,,TradeStat commoditywise HS2 total India's Total Export,2026-03,2026-08,6
+Exports: USD: United States,IN,exports,US,TOTAL,,TradeStat country_wise_all_commodities US,2026-03,2026-08,6
+Exports: USD: China,IN,exports,CN,TOTAL,,TradeStat country_wise_all_commodities CN,2026-03,2026-08,6
+Exports: USD: Hong Kong SAR (China),IN,exports,HK,TOTAL,,TradeStat country_wise_all_commodities HK,2026-03,2026-08,6
+Exports: USD: Japan,IN,exports,JP,TOTAL,,TradeStat country_wise_all_commodities JP,2026-03,2026-08,6
 Exports: USD: European Union,IN,exports,EU,TOTAL,,no national series collected,,,0
 Exports: USD: Taiwan,IN,exports,TW,TOTAL,,TradeStat country_wise_all_commodities TW,2026-04,2026-08,5
 Exports: USD: South Korea,IN,exports,KR,TOTAL,,TradeStat country_wise_all_commodities KR,2026-04,2026-08,5
@@ -358,24 +358,24 @@ Imports: Singapore (f12),JP,imports,SG,TOTAL,,d42ma001 112 SNGAPOR,1979-01,2026-
 Imports: Thailand (f13),JP,imports,TH,TOTAL,,d42ma001 111 THAILND,1979-01,2026-09,573
 Imports: Vietnam (f14),JP,imports,VN,TOTAL,,d42ma001 110 VIETNAM,1979-01,2026-09,573
 Imports cif,KR,imports,WLD,TOTAL,,KCS 국가별 총계,2000-01,2026-09,321
-Imports: North America: USA (f80),KR,imports,US,TOTAL,,KCS 국가별 미국,1997-02,2026-09,356
-Imports: Asia: China (f81),KR,imports,CN,TOTAL,,KCS 국가별 중국,1997-02,2026-09,356
-Imports: Asia: Hong Kong SAR (China) (f82),KR,imports,HK,TOTAL,,KCS 국가별 홍콩,1997-02,2026-09,356
-Imports: Asia: Japan (f85),KR,imports,JP,TOTAL,,KCS 국가별 일본,1997-02,2026-09,356
+Imports: North America: USA (f80),KR,imports,US,TOTAL,,KCS 국가별 미국,1994-09,2026-09,385
+Imports: Asia: China (f81),KR,imports,CN,TOTAL,,KCS 국가별 중국,1994-09,2026-09,385
+Imports: Asia: Hong Kong SAR (China) (f82),KR,imports,HK,TOTAL,,KCS 국가별 홍콩,1994-09,2026-09,385
+Imports: Asia: Japan (f85),KR,imports,JP,TOTAL,,KCS 국가별 일본,1994-09,2026-09,385
 Imports: Europe: EU (27) (f83),KR,imports,EU,TOTAL,,KCS 경제권별 EU,2000-01,2026-09,321
-Imports: Asia: Taiwan (f84),KR,imports,TW,TOTAL,,KCS 국가별 대만,1997-02,2026-09,356
-Imports: Asia: India (f86),KR,imports,IN,TOTAL,,KCS 국가별 인도,1997-02,2026-09,356
-Imports: Asia: Indonesia (f87),KR,imports,ID,TOTAL,,KCS 국가별 인도네시아,1997-02,2026-09,356
-Imports: Asia: Malaysia (f88),KR,imports,MY,TOTAL,,KCS 국가별 말레이시아,1997-02,2026-09,356
-Imports: Asia: Philippines (f89),KR,imports,PH,TOTAL,,KCS 국가별 필리핀,1997-02,2026-09,356
-Imports: Asia: Singapore (f90),KR,imports,SG,TOTAL,,KCS 국가별 싱가포르,1997-02,2026-09,356
-Imports: Asia: Thailand (f91),KR,imports,TH,TOTAL,,KCS 국가별 태국,1997-02,2026-09,356
-Imports: Asia: Vietnam (f92),KR,imports,VN,TOTAL,,KCS 국가별 베트남,1997-02,2026-09,356
-Imports: USD,IN,imports,WLD,TOTAL,,TradeStat commoditywise HS2 total India's Total Import,2026-04,2026-08,5
-Imports: USD: United States,IN,imports,US,TOTAL,,TradeStat country_wise_all_commodities US,2026-04,2026-08,5
-Imports: USD: China,IN,imports,CN,TOTAL,,TradeStat country_wise_all_commodities CN,2026-04,2026-08,5
-Imports: USD: Hong Kong SAR (China),IN,imports,HK,TOTAL,,TradeStat country_wise_all_commodities HK,2026-04,2026-08,5
-Imports: USD: Japan,IN,imports,JP,TOTAL,,TradeStat country_wise_all_commodities JP,2026-04,2026-08,5
+Imports: Asia: Taiwan (f84),KR,imports,TW,TOTAL,,KCS 국가별 대만,1994-09,2026-09,385
+Imports: Asia: India (f86),KR,imports,IN,TOTAL,,KCS 국가별 인도,1994-09,2026-09,385
+Imports: Asia: Indonesia (f87),KR,imports,ID,TOTAL,,KCS 국가별 인도네시아,1994-09,2026-09,385
+Imports: Asia: Malaysia (f88),KR,imports,MY,TOTAL,,KCS 국가별 말레이시아,1994-09,2026-09,385
+Imports: Asia: Philippines (f89),KR,imports,PH,TOTAL,,KCS 국가별 필리핀,1994-09,2026-09,385
+Imports: Asia: Singapore (f90),KR,imports,SG,TOTAL,,KCS 국가별 싱가포르,1994-09,2026-09,385
+Imports: Asia: Thailand (f91),KR,imports,TH,TOTAL,,KCS 국가별 태국,1994-09,2026-09,385
+Imports: Asia: Vietnam (f92),KR,imports,VN,TOTAL,,KCS 국가별 베트남,1994-09,2026-09,385
+Imports: USD,IN,imports,WLD,TOTAL,,TradeStat commoditywise HS2 total India's Total Import,2026-03,2026-08,6
+Imports: USD: United States,IN,imports,US,TOTAL,,TradeStat country_wise_all_commodities US,2026-03,2026-08,6
+Imports: USD: China,IN,imports,CN,TOTAL,,TradeStat country_wise_all_commodities CN,2026-03,2026-08,6
+Imports: USD: Hong Kong SAR (China),IN,imports,HK,TOTAL,,TradeStat country_wise_all_commodities HK,2026-03,2026-08,6
+Imports: USD: Japan,IN,imports,JP,TOTAL,,TradeStat country_wise_all_commodities JP,2026-03,2026-08,6
 Imports: USD: European Union,IN,imports,EU,TOTAL,,no national series collected,,,0
 Imports: USD: Taiwan,IN,imports,TW,TOTAL,,TradeStat country_wise_all_commodities TW,2026-04,2026-08,5
 Imports: USD: South Korea,IN,imports,KR,TOTAL,,TradeStat country_wise_all_commodities KR,2026-04,2026-08,5
@@ -384,7 +384,7 @@ Imports: USD: Malaysia,IN,imports,MY,TOTAL,,TradeStat country_wise_all_commoditi
 Imports: USD: Philippines,IN,imports,PH,TOTAL,,TradeStat country_wise_all_commodities PH,2026-04,2026-08,5
 Imports: USD: Singapore,IN,imports,SG,TOTAL,,TradeStat country_wise_all_commodities SG,2026-04,2026-08,5
 Imports: USD: Thailand,IN,imports,TH,TOTAL,,TradeStat country_wise_all_commodities TH,2026-04,2026-08,5
-Imports: USD: Vietnam,IN,imports,VN,TOTAL,,TradeStat country_wise_all_commodities VN,2026-05,2026-08,4
+Imports: USD: Vietnam,IN,imports,VN,TOTAL,,TradeStat country_wise_all_commodities VN,2026-04,2026-08,5
 Import: cif,ID,imports,WLD,TOTAL,,"SEKI V.20 Jumlah, fob",2005-01,2026-08,260
 Import: Value: USA,ID,imports,US,TOTAL,,SEKI V.20 Amerika Serikat,2005-01,2026-08,260
 Import: Value: China,ID,imports,CN,TOTAL,,SEKI V.20 Republik Rakyat Cina,2005-01,2026-08,260
@@ -558,11 +558,11 @@ Exports: World: Office Machines; Not Elsewhere Classified (f16),KR,exports,WLD,H
 "Exports: World: Calculating Machines and Pocket-Size Data Recording, Reproducing and Displaying Machines With Calculating Functions; Accounting Machines, Postage-Franking Machines, Ticket-Issuing Machines and Similar, Incorporating A Calculating Device; Cash Registers (f21)",KR,exports,WLD,HS8470,KCS item API: needs a data.go.kr key,"KCS 품목별 HS 8470 계산기와 계산 기능을 갖춘 포켓사이즈형 전자수첩, 회계기ㆍ우편요금계기ㆍ표권발행기와 그 밖에 이와 유사한 기계(계산 기구를 갖춘 것으로 한정한다), 금전등록기",2000-01,2026-09,321
 Exports: KCS: Heavy IP: Electronic and Electronic Pdts (EEP),KR,exports,WLD,kcs_electronic_products,KCS grouping: needs a data.go.kr key,KCS grouping: needs a data.go.kr key,,,0
 "Export: USD: Pumps For Liquids, Whether Or Not Fitted With A",IN,exports,WLD,HS8413,,no national series collected,,,0
-"Export: USD: Electrical Machinery And Equipment And Parts Thereof: Sound Recorders And Reproducers, Television Image And Sound Recorders And Reproducers,And Parts",IN,exports,WLD,HS85,,TradeStat commoditywise HS2 85 ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THERE,2026-04,2026-08,5
-Export: USD: Automatic Data Processing Machines And Units,IN,exports,WLD,HS8471,,TradeStat commoditywise HS4 8471 AUTOMATIC DATA PROCESSING MACHINES AND UNITS,2026-04,2026-08,5
-"Export: USD: Other Office Machines (For Example, Hectograph Or Stencil Duplicating Machines, Addressing Machines, Autom",IN,exports,WLD,HS8472,,"TradeStat commoditywise HS4 8472 OTHER OFFICE MACHINES (FOR EXAMPLE, HECTOGRAPH OR ",2026-04,2026-08,5
-"Export: USD: Calcultng And Pockt-Size Data Recrdng, Reprducng And Displayng Machns Wth Calcultngfunctns: Postg Frankng",IN,exports,WLD,HS8470,,"TradeStat commoditywise HS4 8470 CALCULTNG AND POCKT-SIZE DATA RECRDNG, REPRDUCNG A",2026-04,2026-08,5
-"Export: USD: Mchnry,Plnt/Laboratory Eqpmnt,W/N Elctrclyheatd,Fr Heatng,Cookng,Etc,Excl Mchnry Fr Domstc Purps:Storg Wtr Heatrs,Non-El",IN,exports,WLD,HS8419,,"TradeStat commoditywise HS4 8419 MCHNRY,PLNT/LABORATORY EQPMNT,W/N ELCTRCLYHEATD,FR",2026-04,2026-08,5
+"Export: USD: Electrical Machinery And Equipment And Parts Thereof: Sound Recorders And Reproducers, Television Image And Sound Recorders And Reproducers,And Parts",IN,exports,WLD,HS85,,TradeStat commoditywise HS2 85 ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THERE,2026-03,2026-08,6
+Export: USD: Automatic Data Processing Machines And Units,IN,exports,WLD,HS8471,,TradeStat commoditywise HS4 8471 AUTOMATIC DATA PROCESSING MACHINES AND UNITS,2026-03,2026-08,6
+"Export: USD: Other Office Machines (For Example, Hectograph Or Stencil Duplicating Machines, Addressing Machines, Autom",IN,exports,WLD,HS8472,,"TradeStat commoditywise HS4 8472 OTHER OFFICE MACHINES (FOR EXAMPLE, HECTOGRAPH OR ",2026-03,2026-08,6
+"Export: USD: Calcultng And Pockt-Size Data Recrdng, Reprducng And Displayng Machns Wth Calcultngfunctns: Postg Frankng",IN,exports,WLD,HS8470,,"TradeStat commoditywise HS4 8470 CALCULTNG AND POCKT-SIZE DATA RECRDNG, REPRDUCNG A",2026-03,2026-08,6
+"Export: USD: Mchnry,Plnt/Laboratory Eqpmnt,W/N Elctrclyheatd,Fr Heatng,Cookng,Etc,Excl Mchnry Fr Domstc Purps:Storg Wtr Heatrs,Non-El",IN,exports,WLD,HS8419,,"TradeStat commoditywise HS4 8419 MCHNRY,PLNT/LABORATORY EQPMNT,W/N ELCTRCLYHEATD,FR",2026-03,2026-08,6
 Export: Electrical Machinery and Equipments; Sound Recorders,ID,exports,WLD,HS85,,BPS dataexim HS85: sum over ports and countries,2023-01,2026-09,45
 "Export: Value: Other office Machines (For Example, Hectograph or Stencil Duplicating Machines, Addressing Machines, Automatic Banknote Dispensers (f36)",ID,exports,WLD,HS8472,,no national series collected,,,0
 "Export: Value: Parts and Accessories (Other Than Covers, Carrying Cases and The Like) Suitable For Use Solely or Principally With Machines of Headings 84.70 To 84.72",ID,exports,WLD,HS8473,,no national series collected,,,0
@@ -603,7 +603,7 @@ Exports: World: Office Machines; Not Elsewhere Classified (f28),VN,exports,WLD,H
 Import: RI: USD: Mineral Products: Petroleum,TW,imports,WLD,mineral_products,,i9122 5.礦產品,2001-01,2026-10,310
 "Imports: World: Oils; Petroleum Oils and Oils Obtained From Bituminous Minerals, Crude (f4)",JP,imports,WLD,crude_oil,,d61ma 原油及び粗油 (30301),1988-01,2026-09,465
 Energy Imports Value: Crude Petroleum,KR,imports,WLD,crude_oil,KCS energy imports: needs a data.go.kr key,KCS energy imports: needs a data.go.kr key,,,0
-"Import: USD: Petroleum Oils And Oils Obtained From Bituminous Minerals, Crude",IN,imports,WLD,HS2709,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M,2026-04,2026-08,5
+"Import: USD: Petroleum Oils And Oils Obtained From Bituminous Minerals, Crude",IN,imports,WLD,HS2709,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M,2026-03,2026-08,6
 Import: cif: OG: Crude Oil,ID,imports,WLD,HS2709,,no national series collected,,,0
 "Imports: Petroleum Oils And Oils Obtained From Bituminous Minerals, Crude (f5) (f6)",MY,imports,WLD,HS2709,,no national series collected,,,0
 "Imports: Petroleum Oils & Oils Obtained from Bituminous Minerals, Crude (f9)",PH,imports,WLD,HS2709,,"OpenSTAT CIF 2026: codes 2709*, all countries (calculated)",2026-01,2026-09,9
@@ -618,7 +618,7 @@ Import: RI: USD: Diesel Fuel,TW,imports,WLD,diesel,,i9162 柴油,2001-01,2026-10
 Import: RI: USD: Liquefied Natural Gas,TW,imports,WLD,lng,,i9162 液化天然氣,2001-01,2026-10,310
 "Imports: World: Petroleum Oils and Oils From Bituminous Minerals, Not Crude; Preparations N.E.C, Containing By Weight 70% or More of Petroleum Oils or Oils From Bituminous Minerals; These Being The Basic Constituents of The Preparations; Waste Oils (f2)",JP,imports,WLD,petroleum_products,,d61ma 石油製品 (30303),1988-01,2026-09,465
 Imports: KCS: Ind Materials and Fuels: Fuels,KR,imports,WLD,kcs_fuels,KCS grouping: needs a data.go.kr key,KCS grouping: needs a data.go.kr key,,,0
-Import: USD: Petroleum Oilsand Oils Obtnd Frm Bitmns Mnrlother Than Crude Prpn Nes:Cntng70% Or Moreby Weight Of These Oils,IN,imports,WLD,HS2710,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER ,2026-04,2026-08,5
+Import: USD: Petroleum Oilsand Oils Obtnd Frm Bitmns Mnrlother Than Crude Prpn Nes:Cntng70% Or Moreby Weight Of These Oils,IN,imports,WLD,HS2710,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER ,2026-03,2026-08,6
 Import: cif: Oil and Gas: Oil Products,ID,imports,WLD,HS2710,,no national series collected,,,0
 "Imports: Petroleum Oils and Oils Obtained From Bituminous Minerals, Other Than Crude: Minerals, These Oils Being The Basic Constituents of The Preparations: Waste Oils (f3)",MY,imports,WLD,HS2710,,no national series collected,,,0
 "Imports: Petroleum Oils & Oils Obtained from Bituminous Minerals, Other than Crude; Preparations Not Elsewhere Specified or Included, Containing by Weight 70 % or More of Petroleum Oils or of Oils Obtained from Bituminous Minerals, these Oils Being the Basic Constituents of the Preparations; Waste Oils",PH,imports,WLD,HS2710,,"OpenSTAT CIF 2026: codes 2710*, all countries (calculated)",2026-01,2026-09,9

@@ -1,14 +1,14 @@
 {
- "code": "T2026-09b438",
+ "code": "T2026-09b467",
  "label": "2026-09",
  "latest_month": "2026-09-01",
  "source": "trade_kr",
  "backfill_complete": false,
  "table": "KCS tradedata.go.kr retrieveTrade (국가별, 경제권별, 품목별); BoK ECOS 901Y121 for 1990-1999",
- "processed_at": "2026-11-13T04:41:10Z",
- "rows": 12396,
+ "processed_at": "2026-11-14T01:39:18Z",
+ "rows": 13092,
  "warnings": [],
- "fetched": 49,
+ "fetched": 40,
  "history": [
   {
    "code": "T2026-09b112",
@@ -49,6 +49,10 @@
   {
    "code": "T2026-09b438",
    "processed_at": "2026-11-13T04:41:10Z"
+  },
+  {
+   "code": "T2026-09b467",
+   "processed_at": "2026-11-14T01:39:18Z"
   }
  ]
 }
