@@ -96,23 +96,23 @@ Exports: Philippines (f74),JP,exports,PH,TOTAL,,d42ma001 117 PHILPIN,1979-01,202
 Exports: Singapore (f75),JP,exports,SG,TOTAL,,d42ma001 112 SNGAPOR,1979-01,2026-09,573
 Exports: Thailand (f76),JP,exports,TH,TOTAL,,d42ma001 111 THAILND,1979-01,2026-09,573
 Exports: Vietnam (f77),JP,exports,VN,TOTAL,,d42ma001 110 VIETNAM,1979-01,2026-09,573
-Exports fob,KR,exports,WLD,TOTAL,,KCS 국가별 총계,2000-01,2026-09,321
-Exports: North America: USA (f78),KR,exports,US,TOTAL,,KCS 국가별 미국,1991-10,2026-09,420
-Exports: Asia: China (f79),KR,exports,CN,TOTAL,,KCS 국가별 중국,1991-10,2026-09,420
-Exports: Asia: Hong Kong SAR (China) (f81),KR,exports,HK,TOTAL,,KCS 국가별 홍콩,1991-10,2026-09,420
-Exports: Asia: Japan (f83),KR,exports,JP,TOTAL,,KCS 국가별 일본,1991-10,2026-09,420
-Exports: Europe: EU (27) (f80),KR,exports,EU,TOTAL,,KCS 경제권별 EU,2000-01,2026-09,321
-Exports: Asia: Taiwan (f82),KR,exports,TW,TOTAL,,KCS 국가별 대만,1991-10,2026-09,420
-Exports: Asia: India (f84),KR,exports,IN,TOTAL,,KCS 국가별 인도,1991-10,2026-09,420
-Exports: Asia: Indonesia (f85),KR,exports,ID,TOTAL,,KCS 국가별 인도네시아,1991-10,2026-09,420
-Exports: Asia: Malaysia (f86),KR,exports,MY,TOTAL,,KCS 국가별 말레이시아,1991-10,2026-09,420
-Exports: Asia: Philippines (f87),KR,exports,PH,TOTAL,,KCS 국가별 필리핀,1991-10,2026-09,420
-Exports: Asia: Singapore (f88),KR,exports,SG,TOTAL,,KCS 국가별 싱가포르,1991-10,2026-09,420
-Exports: Asia: Thailand (f89),KR,exports,TH,TOTAL,,KCS 국가별 태국,1991-10,2026-09,420
-Exports: Asia: Vietnam (f90),KR,exports,VN,TOTAL,,KCS 국가별 베트남,1991-10,2026-09,420
+Exports fob,KR,exports,WLD,TOTAL,,KCS 국가별 총계,2000-01,2026-10,322
+Exports: North America: USA (f78),KR,exports,US,TOTAL,,KCS 국가별 미국,1990-01,2026-10,442
+Exports: Asia: China (f79),KR,exports,CN,TOTAL,,KCS 국가별 중국,1990-01,2026-10,442
+Exports: Asia: Hong Kong SAR (China) (f81),KR,exports,HK,TOTAL,,KCS 국가별 홍콩,1990-01,2026-10,442
+Exports: Asia: Japan (f83),KR,exports,JP,TOTAL,,KCS 국가별 일본,1990-01,2026-10,442
+Exports: Europe: EU (27) (f80),KR,exports,EU,TOTAL,,KCS 경제권별 EU,2000-01,2026-10,322
+Exports: Asia: Taiwan (f82),KR,exports,TW,TOTAL,,KCS 국가별 대만,1990-01,2026-10,442
+Exports: Asia: India (f84),KR,exports,IN,TOTAL,,KCS 국가별 인도,1990-01,2026-10,442
+Exports: Asia: Indonesia (f85),KR,exports,ID,TOTAL,,KCS 국가별 인도네시아,1990-01,2026-10,442
+Exports: Asia: Malaysia (f86),KR,exports,MY,TOTAL,,KCS 국가별 말레이시아,1990-01,2026-10,442
+Exports: Asia: Philippines (f87),KR,exports,PH,TOTAL,,KCS 국가별 필리핀,1990-01,2026-10,442
+Exports: Asia: Singapore (f88),KR,exports,SG,TOTAL,,KCS 국가별 싱가포르,1990-01,2026-10,442
+Exports: Asia: Thailand (f89),KR,exports,TH,TOTAL,,KCS 국가별 태국,1990-01,2026-10,442
+Exports: Asia: Vietnam (f90),KR,exports,VN,TOTAL,,KCS 국가별 베트남,1990-01,2026-10,442
 Exports: USD,IN,exports,WLD,TOTAL,,TradeStat commoditywise HS2 total India's Total Export,2026-02,2026-08,7
 Exports: USD: United States,IN,exports,US,TOTAL,,TradeStat country_wise_all_commodities US,2026-02,2026-08,7
-Exports: USD: China,IN,exports,CN,TOTAL,,TradeStat country_wise_all_commodities CN,2026-03,2026-08,6
+Exports: USD: China,IN,exports,CN,TOTAL,,TradeStat country_wise_all_commodities CN,2026-02,2026-08,7
 Exports: USD: Hong Kong SAR (China),IN,exports,HK,TOTAL,,TradeStat country_wise_all_commodities HK,2026-03,2026-08,6
 Exports: USD: Japan,IN,exports,JP,TOTAL,,TradeStat country_wise_all_commodities JP,2026-03,2026-08,6
 Exports: USD: European Union,IN,exports,EU,TOTAL,,no national series collected,,,0
@@ -357,22 +357,22 @@ Imports: Philippines (f11),JP,imports,PH,TOTAL,,d42ma001 117 PHILPIN,1979-01,202
 Imports: Singapore (f12),JP,imports,SG,TOTAL,,d42ma001 112 SNGAPOR,1979-01,2026-09,573
 Imports: Thailand (f13),JP,imports,TH,TOTAL,,d42ma001 111 THAILND,1979-01,2026-09,573
 Imports: Vietnam (f14),JP,imports,VN,TOTAL,,d42ma001 110 VIETNAM,1979-01,2026-09,573
-Imports cif,KR,imports,WLD,TOTAL,,KCS 국가별 총계,2000-01,2026-09,321
-Imports: North America: USA (f80),KR,imports,US,TOTAL,,KCS 국가별 미국,1991-10,2026-09,420
-Imports: Asia: China (f81),KR,imports,CN,TOTAL,,KCS 국가별 중국,1991-10,2026-09,420
-Imports: Asia: Hong Kong SAR (China) (f82),KR,imports,HK,TOTAL,,KCS 국가별 홍콩,1991-10,2026-09,420
-Imports: Asia: Japan (f85),KR,imports,JP,TOTAL,,KCS 국가별 일본,1991-10,2026-09,420
-Imports: Europe: EU (27) (f83),KR,imports,EU,TOTAL,,KCS 경제권별 EU,2000-01,2026-09,321
-Imports: Asia: Taiwan (f84),KR,imports,TW,TOTAL,,KCS 국가별 대만,1991-10,2026-09,420
-Imports: Asia: India (f86),KR,imports,IN,TOTAL,,KCS 국가별 인도,1991-10,2026-09,420
-Imports: Asia: Indonesia (f87),KR,imports,ID,TOTAL,,KCS 국가별 인도네시아,1991-10,2026-09,420
-Imports: Asia: Malaysia (f88),KR,imports,MY,TOTAL,,KCS 국가별 말레이시아,1991-10,2026-09,420
-Imports: Asia: Philippines (f89),KR,imports,PH,TOTAL,,KCS 국가별 필리핀,1991-10,2026-09,420
-Imports: Asia: Singapore (f90),KR,imports,SG,TOTAL,,KCS 국가별 싱가포르,1991-10,2026-09,420
-Imports: Asia: Thailand (f91),KR,imports,TH,TOTAL,,KCS 국가별 태국,1991-10,2026-09,420
-Imports: Asia: Vietnam (f92),KR,imports,VN,TOTAL,,KCS 국가별 베트남,1991-10,2026-09,420
+Imports cif,KR,imports,WLD,TOTAL,,KCS 국가별 총계,2000-01,2026-10,322
+Imports: North America: USA (f80),KR,imports,US,TOTAL,,KCS 국가별 미국,1990-01,2026-10,442
+Imports: Asia: China (f81),KR,imports,CN,TOTAL,,KCS 국가별 중국,1990-01,2026-10,442
+Imports: Asia: Hong Kong SAR (China) (f82),KR,imports,HK,TOTAL,,KCS 국가별 홍콩,1990-01,2026-10,442
+Imports: Asia: Japan (f85),KR,imports,JP,TOTAL,,KCS 국가별 일본,1990-01,2026-10,442
+Imports: Europe: EU (27) (f83),KR,imports,EU,TOTAL,,KCS 경제권별 EU,2000-01,2026-10,322
+Imports: Asia: Taiwan (f84),KR,imports,TW,TOTAL,,KCS 국가별 대만,1990-01,2026-10,442
+Imports: Asia: India (f86),KR,imports,IN,TOTAL,,KCS 국가별 인도,1990-01,2026-10,442
+Imports: Asia: Indonesia (f87),KR,imports,ID,TOTAL,,KCS 국가별 인도네시아,1990-01,2026-10,442
+Imports: Asia: Malaysia (f88),KR,imports,MY,TOTAL,,KCS 국가별 말레이시아,1990-01,2026-10,442
+Imports: Asia: Philippines (f89),KR,imports,PH,TOTAL,,KCS 국가별 필리핀,1990-01,2026-10,442
+Imports: Asia: Singapore (f90),KR,imports,SG,TOTAL,,KCS 국가별 싱가포르,1990-01,2026-10,442
+Imports: Asia: Thailand (f91),KR,imports,TH,TOTAL,,KCS 국가별 태국,1990-01,2026-10,442
+Imports: Asia: Vietnam (f92),KR,imports,VN,TOTAL,,KCS 국가별 베트남,1990-01,2026-10,442
 Imports: USD,IN,imports,WLD,TOTAL,,TradeStat commoditywise HS2 total India's Total Import,2026-02,2026-08,7
-Imports: USD: United States,IN,imports,US,TOTAL,,TradeStat country_wise_all_commodities US,2026-03,2026-08,6
+Imports: USD: United States,IN,imports,US,TOTAL,,TradeStat country_wise_all_commodities US,2026-02,2026-08,7
 Imports: USD: China,IN,imports,CN,TOTAL,,TradeStat country_wise_all_commodities CN,2026-03,2026-08,6
 Imports: USD: Hong Kong SAR (China),IN,imports,HK,TOTAL,,TradeStat country_wise_all_commodities HK,2026-03,2026-08,6
 Imports: USD: Japan,IN,imports,JP,TOTAL,,TradeStat country_wise_all_commodities JP,2026-03,2026-08,6
@@ -550,12 +550,12 @@ Exports: World: Office Machines; Not Elsewhere Classified (f10),JP,exports,WLD,H
 "Exports: World: Automatic Data Processing Machines and Units Thereof, Magnetic or Optical Readers, Machines For Transcribing Data Onto Data Media In Coded Form and Machines For Processing Such Data, Not Elsewhere Specified or Included (f13)",JP,exports,WLD,HS8471,,no national series collected,,,0
 "Exports: World: Machinery, Plant (Not Domestic), or Laboratory Equipment; Electrically Heated or Not, (Excluding Items In 85.14) For The Treatment of Materials By A Process Involving Change of Temperature; Including Instantaneous or Non Electric Storage Water Heaters (f14)",JP,exports,WLD,HS8419,,no national series collected,,,0
 "Exports: World: Calculating Machines and Pocket-Size Data Recording, Reproducing and Displaying Machines With Calculating Functions; Accounting Machines, Postage-Franking Machines, Ticket-Issuing Machines and Similar, Incorporating A Calculating Device; Cash Registers (f15)",JP,exports,WLD,HS8470,,no national series collected,,,0
-Exports: World: Office Machines; Not Elsewhere Classified (f16),KR,exports,WLD,HS8472,KCS item API: needs a data.go.kr key,KCS 품목별 HS 8472 그 밖의 사무용 기계[예: 헥토그래프(hectograph)ㆍ스텐실(stencil) 등사기ㆍ주소인쇄기ㆍ현금 자동지불기ㆍ주화분류기ㆍ주화계수기나 주화포장기ㆍ연필깎이ㆍ천공기ㆍ지철기(stapling machine)],2000-01,2026-09,321
-"Exports: World: Electrical Machinery and Equipment and Parts Thereof; Sound Recorders and Reproducers; Television Image and Sound Recorders and Reproducers, Parts and Accessories of Such Articles (f17)",KR,exports,WLD,HS85,KCS item API: needs a data.go.kr key,"KCS 품목별 HS 85 전기기기와 그 부분품, 녹음기ㆍ음성 재생기ㆍ텔레비전의 영상과 음성의 기록기ㆍ재생기와 이들의 부분품ㆍ부속품",2000-01,2026-09,321
-"Exports: World: Machinery; Parts and Accessories (Other Than Covers, Carrying Cases and The Like) Suitable For Use Solely or Principally With Machines of Headings 84.70 To 84.72 (f18)",KR,exports,WLD,HS8473,KCS item API: needs a data.go.kr key,KCS 품목별 HS 8473 제8470호부터 제8472호까지에 해당하는 기계에 전용되거나 주로 사용되는 부분품과 부속품(커버ㆍ휴대용 케이스와 이와 유사한 물품은 제외한다),2000-01,2026-09,321
-"Exports: World: Automatic Data Processing Machines and Units Thereof, Magnetic or Optical Readers, Machines For Transcribing Data Onto Data Media In Coded Form and Machines For Processing Such Data, Not Elsewhere Specified or Included (f19)",KR,exports,WLD,HS8471,KCS item API: needs a data.go.kr key,"KCS 품목별 HS 8471 자동자료처리기계와 그 단위기기, 자기식이나 광학식 판독기, 자료를 자료매체에 부호 형태로 전사하는 기계와 이러한 자료의 처리기계(따로 분류되지 않은 것으로 한정한다)",2000-01,2026-09,321
-"Exports: World: Machinery, Plant (Not Domestic), or Laboratory Equipment; Electrically Heated or Not, (Excluding Items In 85.14) For The Treatment of Materials By A Process Involving Change of Temperature; Including Instantaneous or Non Electric Storage Water Heaters (f20)",KR,exports,WLD,HS8419,KCS item API: needs a data.go.kr key,"KCS 품목별 HS 8419 가열ㆍ조리ㆍ배소(焙燒)ㆍ증류ㆍ정류ㆍ살균ㆍ저온살균ㆍ증기가열ㆍ건조ㆍ증발ㆍ응축ㆍ냉각과 그 밖의 온도 변화에 따른 방법으로 재료를 처리하는 기계ㆍ설비ㆍ실험실장치[전기가열식(제8514호의 노(爐)와 오븐과 그 밖의 장비는 제외한다), 실험실용을 포함하며 일반적으로 가정용으로 사용하는 것은 제외한다]와 전기가열식이 아닌 즉시식이나 저장식 물 가열기",2000-01,2026-09,321
-"Exports: World: Calculating Machines and Pocket-Size Data Recording, Reproducing and Displaying Machines With Calculating Functions; Accounting Machines, Postage-Franking Machines, Ticket-Issuing Machines and Similar, Incorporating A Calculating Device; Cash Registers (f21)",KR,exports,WLD,HS8470,KCS item API: needs a data.go.kr key,"KCS 품목별 HS 8470 계산기와 계산 기능을 갖춘 포켓사이즈형 전자수첩, 회계기ㆍ우편요금계기ㆍ표권발행기와 그 밖에 이와 유사한 기계(계산 기구를 갖춘 것으로 한정한다), 금전등록기",2000-01,2026-09,321
+Exports: World: Office Machines; Not Elsewhere Classified (f16),KR,exports,WLD,HS8472,KCS item API: needs a data.go.kr key,KCS 품목별 HS 8472 그 밖의 사무용 기계[예: 헥토그래프(hectograph)ㆍ스텐실(stencil) 등사기ㆍ주소인쇄기ㆍ현금 자동지불기ㆍ주화분류기ㆍ주화계수기나 주화포장기ㆍ연필깎이ㆍ천공기ㆍ지철기(stapling machine)],2000-01,2026-10,322
+"Exports: World: Electrical Machinery and Equipment and Parts Thereof; Sound Recorders and Reproducers; Television Image and Sound Recorders and Reproducers, Parts and Accessories of Such Articles (f17)",KR,exports,WLD,HS85,KCS item API: needs a data.go.kr key,"KCS 품목별 HS 85 전기기기와 그 부분품, 녹음기ㆍ음성 재생기ㆍ텔레비전의 영상과 음성의 기록기ㆍ재생기와 이들의 부분품ㆍ부속품",2000-01,2026-10,322
+"Exports: World: Machinery; Parts and Accessories (Other Than Covers, Carrying Cases and The Like) Suitable For Use Solely or Principally With Machines of Headings 84.70 To 84.72 (f18)",KR,exports,WLD,HS8473,KCS item API: needs a data.go.kr key,KCS 품목별 HS 8473 제8470호부터 제8472호까지에 해당하는 기계에 전용되거나 주로 사용되는 부분품과 부속품(커버ㆍ휴대용 케이스와 이와 유사한 물품은 제외한다),2000-01,2026-10,322
+"Exports: World: Automatic Data Processing Machines and Units Thereof, Magnetic or Optical Readers, Machines For Transcribing Data Onto Data Media In Coded Form and Machines For Processing Such Data, Not Elsewhere Specified or Included (f19)",KR,exports,WLD,HS8471,KCS item API: needs a data.go.kr key,"KCS 품목별 HS 8471 자동자료처리기계와 그 단위기기, 자기식이나 광학식 판독기, 자료를 자료매체에 부호 형태로 전사하는 기계와 이러한 자료의 처리기계(따로 분류되지 않은 것으로 한정한다)",2000-01,2026-10,322
+"Exports: World: Machinery, Plant (Not Domestic), or Laboratory Equipment; Electrically Heated or Not, (Excluding Items In 85.14) For The Treatment of Materials By A Process Involving Change of Temperature; Including Instantaneous or Non Electric Storage Water Heaters (f20)",KR,exports,WLD,HS8419,KCS item API: needs a data.go.kr key,"KCS 품목별 HS 8419 가열ㆍ조리ㆍ배소(焙燒)ㆍ증류ㆍ정류ㆍ살균ㆍ저온살균ㆍ증기가열ㆍ건조ㆍ증발ㆍ응축ㆍ냉각과 그 밖의 온도 변화에 따른 방법으로 재료를 처리하는 기계ㆍ설비ㆍ실험실장치[전기가열식(제8514호의 노(爐)와 오븐과 그 밖의 장비는 제외한다), 실험실용을 포함하며 일반적으로 가정용으로 사용하는 것은 제외한다]와 전기가열식이 아닌 즉시식이나 저장식 물 가열기",2000-01,2026-10,322
+"Exports: World: Calculating Machines and Pocket-Size Data Recording, Reproducing and Displaying Machines With Calculating Functions; Accounting Machines, Postage-Franking Machines, Ticket-Issuing Machines and Similar, Incorporating A Calculating Device; Cash Registers (f21)",KR,exports,WLD,HS8470,KCS item API: needs a data.go.kr key,"KCS 품목별 HS 8470 계산기와 계산 기능을 갖춘 포켓사이즈형 전자수첩, 회계기ㆍ우편요금계기ㆍ표권발행기와 그 밖에 이와 유사한 기계(계산 기구를 갖춘 것으로 한정한다), 금전등록기",2000-01,2026-10,322
 Exports: KCS: Heavy IP: Electronic and Electronic Pdts (EEP),KR,exports,WLD,kcs_electronic_products,KCS grouping: needs a data.go.kr key,KCS grouping: needs a data.go.kr key,,,0
 "Export: USD: Pumps For Liquids, Whether Or Not Fitted With A",IN,exports,WLD,HS8413,,no national series collected,,,0
 "Export: USD: Electrical Machinery And Equipment And Parts Thereof: Sound Recorders And Reproducers, Television Image And Sound Recorders And Reproducers,And Parts",IN,exports,WLD,HS85,,TradeStat commoditywise HS2 85 ELECTRICAL MACHINERY AND EQUIPMENT AND PARTS THERE,2026-02,2026-08,7
@@ -607,8 +607,8 @@ Energy Imports Value: Crude Petroleum,KR,imports,WLD,crude_oil,KCS energy import
 Import: cif: OG: Crude Oil,ID,imports,WLD,HS2709,,no national series collected,,,0
 "Imports: Petroleum Oils And Oils Obtained From Bituminous Minerals, Crude (f5) (f6)",MY,imports,WLD,HS2709,,no national series collected,,,0
 "Imports: Petroleum Oils & Oils Obtained from Bituminous Minerals, Crude (f9)",PH,imports,WLD,HS2709,,"OpenSTAT CIF 2026: codes 2709*, all countries (calculated)",2026-01,2026-09,9
-Imports: Petroleum Oils & Oils From Bituminous Minerals Crude (f1) (f2),SG,imports,WLD,HS2709,,T010001 IMPORTS WORLD HS 2709,2022-02,2026-09,56
-Imports: World: Petroleum Oils and Oils Obtained From Bituminous Minerals; Crude (f8),SG,imports,WLD,HS2709,,T010001 IMPORTS WORLD HS 2709,2022-02,2026-09,56
+Imports: Petroleum Oils & Oils From Bituminous Minerals Crude (f1) (f2),SG,imports,WLD,HS2709,,T010001 IMPORTS WORLD HS 2709,2021-12,2026-09,58
+Imports: World: Petroleum Oils and Oils Obtained From Bituminous Minerals; Crude (f8),SG,imports,WLD,HS2709,,T010001 IMPORTS WORLD HS 2709,2021-12,2026-09,58
 "HS2022 Imports: Petroleum Oils and Oils Obtained from Bituminous Minerals, Crude (f3)",TH,imports,WLD,HS2709,,importharmonizecountries hs_code=2709: sum of all countries,2010-01,2026-09,201
 Imports: Crude Oil (f11),VN,imports,WLD,crude_oil,,NSO report 28.NK tháng Dầu thô,2025-01,2026-10,7
 "CN: Import: HS 4: Petroleum Oils and Oils Obtained from Bituminous Minerals, Other Than Crude; Preparations Not Elsewhere Specified or Included, Containing by Weight 70% or More of Petroleum Oils or of Oils Obtained from Bituminous Minerals, These Oils Being the Basic Constituents of the Preparations; Waste Oils.",CN,imports,WLD,petroleum_products,,bulletin (14) Refined petroleum products,2018-01,2026-09,98
@@ -622,7 +622,7 @@ Import: USD: Petroleum Oilsand Oils Obtnd Frm Bitmns Mnrlother Than Crude Prpn N
 Import: cif: Oil and Gas: Oil Products,ID,imports,WLD,HS2710,,no national series collected,,,0
 "Imports: Petroleum Oils and Oils Obtained From Bituminous Minerals, Other Than Crude: Minerals, These Oils Being The Basic Constituents of The Preparations: Waste Oils (f3)",MY,imports,WLD,HS2710,,no national series collected,,,0
 "Imports: Petroleum Oils & Oils Obtained from Bituminous Minerals, Other than Crude; Preparations Not Elsewhere Specified or Included, Containing by Weight 70 % or More of Petroleum Oils or of Oils Obtained from Bituminous Minerals, these Oils Being the Basic Constituents of the Preparations; Waste Oils",PH,imports,WLD,HS2710,,"OpenSTAT CIF 2026: codes 2710*, all countries (calculated)",2026-01,2026-09,9
-Imports: Petroleum Oils & Oils From Bituminous Minerals Not Crude & Preparations Nes Containing by Weight 70% or More of Petroleum Oils or of Oils From Bituminous Minerals & Waste Oils (f4),SG,imports,WLD,HS2710,,T010001 IMPORTS WORLD HS 2710,2022-02,2026-09,56
-"Imports: World: Petroleum Oils and Oils From Bituminous Minerals, Not Crude; Preparations N.E.C, Containing By Weight 70% or More of Petroleum Oils or Oils From Bituminous Minerals; These Being The Basic Constituents of The Preparations; Waste Oils (f5)",SG,imports,WLD,HS2710,,T010001 IMPORTS WORLD HS 2710,2022-02,2026-09,56
+Imports: Petroleum Oils & Oils From Bituminous Minerals Not Crude & Preparations Nes Containing by Weight 70% or More of Petroleum Oils or of Oils From Bituminous Minerals & Waste Oils (f4),SG,imports,WLD,HS2710,,T010001 IMPORTS WORLD HS 2710,2021-12,2026-09,58
+"Imports: World: Petroleum Oils and Oils From Bituminous Minerals, Not Crude; Preparations N.E.C, Containing By Weight 70% or More of Petroleum Oils or Oils From Bituminous Minerals; These Being The Basic Constituents of The Preparations; Waste Oils (f5)",SG,imports,WLD,HS2710,,T010001 IMPORTS WORLD HS 2710,2021-12,2026-09,58
 "HS2022 Imports: Petroleum Oils and Oils Obtained from Bituminous Minerals, Other Than Crude; Preparations Not Elsewhere Specified or Included, Containing by Weight 70% or More of Petroleum Oils or of Oils Obtained from Bituminous Minerals, These Oils Being the Basic Con (f6)",TH,imports,WLD,HS2710,,importharmonizecountries hs_code=2710: sum of all countries,2010-01,2026-09,201
 Imports: Petroleum Products,VN,imports,WLD,petroleum_products,,NSO report 28.NK tháng Xăng dầu,2025-01,2026-10,7
