@@ -113,17 +113,17 @@ Exports: Asia: Vietnam (f90),KR,exports,VN,TOTAL,,KCS 국가별 베트남,1990-0
 Exports: USD,IN,exports,WLD,TOTAL,,TradeStat commoditywise HS2 total India's Total Export,2026-02,2026-08,7
 Exports: USD: United States,IN,exports,US,TOTAL,,TradeStat country_wise_all_commodities US,2026-02,2026-08,7
 Exports: USD: China,IN,exports,CN,TOTAL,,TradeStat country_wise_all_commodities CN,2026-02,2026-08,7
-Exports: USD: Hong Kong SAR (China),IN,exports,HK,TOTAL,,TradeStat country_wise_all_commodities HK,2026-03,2026-08,6
-Exports: USD: Japan,IN,exports,JP,TOTAL,,TradeStat country_wise_all_commodities JP,2026-03,2026-08,6
+Exports: USD: Hong Kong SAR (China),IN,exports,HK,TOTAL,,TradeStat country_wise_all_commodities HK,2026-02,2026-08,7
+Exports: USD: Japan,IN,exports,JP,TOTAL,,TradeStat country_wise_all_commodities JP,2026-02,2026-08,7
 Exports: USD: European Union,IN,exports,EU,TOTAL,,no national series collected,,,0
-Exports: USD: Taiwan,IN,exports,TW,TOTAL,,TradeStat country_wise_all_commodities TW,2026-03,2026-08,6
-Exports: USD: South Korea,IN,exports,KR,TOTAL,,TradeStat country_wise_all_commodities KR,2026-03,2026-08,6
-Exports: USD: Indonesia,IN,exports,ID,TOTAL,,TradeStat country_wise_all_commodities ID,2026-03,2026-08,6
-Exports: USD: Malaysia,IN,exports,MY,TOTAL,,TradeStat country_wise_all_commodities MY,2026-03,2026-08,6
-Exports: USD: Philippines,IN,exports,PH,TOTAL,,TradeStat country_wise_all_commodities PH,2026-03,2026-08,6
-Exports: USD: Singapore,IN,exports,SG,TOTAL,,TradeStat country_wise_all_commodities SG,2026-03,2026-08,6
-Exports: USD: Thailand,IN,exports,TH,TOTAL,,TradeStat country_wise_all_commodities TH,2026-03,2026-08,6
-Exports: USD: Vietnam,IN,exports,VN,TOTAL,,TradeStat country_wise_all_commodities VN,2026-03,2026-08,6
+Exports: USD: Taiwan,IN,exports,TW,TOTAL,,TradeStat country_wise_all_commodities TW,2026-02,2026-08,7
+Exports: USD: South Korea,IN,exports,KR,TOTAL,,TradeStat country_wise_all_commodities KR,2026-02,2026-08,7
+Exports: USD: Indonesia,IN,exports,ID,TOTAL,,TradeStat country_wise_all_commodities ID,2026-02,2026-08,7
+Exports: USD: Malaysia,IN,exports,MY,TOTAL,,TradeStat country_wise_all_commodities MY,2026-02,2026-08,7
+Exports: USD: Philippines,IN,exports,PH,TOTAL,,TradeStat country_wise_all_commodities PH,2026-02,2026-08,7
+Exports: USD: Singapore,IN,exports,SG,TOTAL,,TradeStat country_wise_all_commodities SG,2026-02,2026-08,7
+Exports: USD: Thailand,IN,exports,TH,TOTAL,,TradeStat country_wise_all_commodities TH,2026-02,2026-08,7
+Exports: USD: Vietnam,IN,exports,VN,TOTAL,,TradeStat country_wise_all_commodities VN,2026-02,2026-08,7
 Export: fob,ID,exports,WLD,TOTAL,,"SEKI V.11 Jumlah, fob",2005-01,2026-08,260
 Export: United States,ID,exports,US,TOTAL,,SEKI V.11 Amerika Serikat,2005-01,2026-08,260
 Export: China,ID,exports,CN,TOTAL,,SEKI V.11 Republik Rakyat Cina,2005-01,2026-08,260
@@ -373,17 +373,17 @@ Imports: Asia: Thailand (f91),KR,imports,TH,TOTAL,,KCS 국가별 태국,1990-01,
 Imports: Asia: Vietnam (f92),KR,imports,VN,TOTAL,,KCS 국가별 베트남,1990-01,2026-10,442
 Imports: USD,IN,imports,WLD,TOTAL,,TradeStat commoditywise HS2 total India's Total Import,2026-02,2026-08,7
 Imports: USD: United States,IN,imports,US,TOTAL,,TradeStat country_wise_all_commodities US,2026-02,2026-08,7
-Imports: USD: China,IN,imports,CN,TOTAL,,TradeStat country_wise_all_commodities CN,2026-03,2026-08,6
-Imports: USD: Hong Kong SAR (China),IN,imports,HK,TOTAL,,TradeStat country_wise_all_commodities HK,2026-03,2026-08,6
-Imports: USD: Japan,IN,imports,JP,TOTAL,,TradeStat country_wise_all_commodities JP,2026-03,2026-08,6
+Imports: USD: China,IN,imports,CN,TOTAL,,TradeStat country_wise_all_commodities CN,2026-02,2026-08,7
+Imports: USD: Hong Kong SAR (China),IN,imports,HK,TOTAL,,TradeStat country_wise_all_commodities HK,2026-02,2026-08,7
+Imports: USD: Japan,IN,imports,JP,TOTAL,,TradeStat country_wise_all_commodities JP,2026-02,2026-08,7
 Imports: USD: European Union,IN,imports,EU,TOTAL,,no national series collected,,,0
-Imports: USD: Taiwan,IN,imports,TW,TOTAL,,TradeStat country_wise_all_commodities TW,2026-03,2026-08,6
-Imports: USD: South Korea,IN,imports,KR,TOTAL,,TradeStat country_wise_all_commodities KR,2026-03,2026-08,6
-Imports: USD: Indonesia,IN,imports,ID,TOTAL,,TradeStat country_wise_all_commodities ID,2026-03,2026-08,6
-Imports: USD: Malaysia,IN,imports,MY,TOTAL,,TradeStat country_wise_all_commodities MY,2026-03,2026-08,6
-Imports: USD: Philippines,IN,imports,PH,TOTAL,,TradeStat country_wise_all_commodities PH,2026-03,2026-08,6
-Imports: USD: Singapore,IN,imports,SG,TOTAL,,TradeStat country_wise_all_commodities SG,2026-03,2026-08,6
-Imports: USD: Thailand,IN,imports,TH,TOTAL,,TradeStat country_wise_all_commodities TH,2026-03,2026-08,6
+Imports: USD: Taiwan,IN,imports,TW,TOTAL,,TradeStat country_wise_all_commodities TW,2026-02,2026-08,7
+Imports: USD: South Korea,IN,imports,KR,TOTAL,,TradeStat country_wise_all_commodities KR,2026-02,2026-08,7
+Imports: USD: Indonesia,IN,imports,ID,TOTAL,,TradeStat country_wise_all_commodities ID,2026-02,2026-08,7
+Imports: USD: Malaysia,IN,imports,MY,TOTAL,,TradeStat country_wise_all_commodities MY,2026-02,2026-08,7
+Imports: USD: Philippines,IN,imports,PH,TOTAL,,TradeStat country_wise_all_commodities PH,2026-02,2026-08,7
+Imports: USD: Singapore,IN,imports,SG,TOTAL,,TradeStat country_wise_all_commodities SG,2026-02,2026-08,7
+Imports: USD: Thailand,IN,imports,TH,TOTAL,,TradeStat country_wise_all_commodities TH,2026-02,2026-08,7
 Imports: USD: Vietnam,IN,imports,VN,TOTAL,,TradeStat country_wise_all_commodities VN,2026-03,2026-08,6
 Import: cif,ID,imports,WLD,TOTAL,,"SEKI V.20 Jumlah, fob",2005-01,2026-08,260
 Import: Value: USA,ID,imports,US,TOTAL,,SEKI V.20 Amerika Serikat,2005-01,2026-08,260
@@ -607,8 +607,8 @@ Energy Imports Value: Crude Petroleum,KR,imports,WLD,crude_oil,KCS energy import
 Import: cif: OG: Crude Oil,ID,imports,WLD,HS2709,,no national series collected,,,0
 "Imports: Petroleum Oils And Oils Obtained From Bituminous Minerals, Crude (f5) (f6)",MY,imports,WLD,HS2709,,no national series collected,,,0
 "Imports: Petroleum Oils & Oils Obtained from Bituminous Minerals, Crude (f9)",PH,imports,WLD,HS2709,,"OpenSTAT CIF 2026: codes 2709*, all countries (calculated)",2026-01,2026-09,9
-Imports: Petroleum Oils & Oils From Bituminous Minerals Crude (f1) (f2),SG,imports,WLD,HS2709,,T010001 IMPORTS WORLD HS 2709,2021-12,2026-09,58
-Imports: World: Petroleum Oils and Oils Obtained From Bituminous Minerals; Crude (f8),SG,imports,WLD,HS2709,,T010001 IMPORTS WORLD HS 2709,2021-12,2026-09,58
+Imports: Petroleum Oils & Oils From Bituminous Minerals Crude (f1) (f2),SG,imports,WLD,HS2709,,T010001 IMPORTS WORLD HS 2709,2021-10,2026-09,60
+Imports: World: Petroleum Oils and Oils Obtained From Bituminous Minerals; Crude (f8),SG,imports,WLD,HS2709,,T010001 IMPORTS WORLD HS 2709,2021-10,2026-09,60
 "HS2022 Imports: Petroleum Oils and Oils Obtained from Bituminous Minerals, Crude (f3)",TH,imports,WLD,HS2709,,importharmonizecountries hs_code=2709: sum of all countries,2010-01,2026-09,201
 Imports: Crude Oil (f11),VN,imports,WLD,crude_oil,,NSO report 28.NK tháng Dầu thô,2025-01,2026-10,7
 "CN: Import: HS 4: Petroleum Oils and Oils Obtained from Bituminous Minerals, Other Than Crude; Preparations Not Elsewhere Specified or Included, Containing by Weight 70% or More of Petroleum Oils or of Oils Obtained from Bituminous Minerals, These Oils Being the Basic Constituents of the Preparations; Waste Oils.",CN,imports,WLD,petroleum_products,,bulletin (14) Refined petroleum products,2018-01,2026-09,98
@@ -622,7 +622,7 @@ Import: USD: Petroleum Oilsand Oils Obtnd Frm Bitmns Mnrlother Than Crude Prpn N
 Import: cif: Oil and Gas: Oil Products,ID,imports,WLD,HS2710,,no national series collected,,,0
 "Imports: Petroleum Oils and Oils Obtained From Bituminous Minerals, Other Than Crude: Minerals, These Oils Being The Basic Constituents of The Preparations: Waste Oils (f3)",MY,imports,WLD,HS2710,,no national series collected,,,0
 "Imports: Petroleum Oils & Oils Obtained from Bituminous Minerals, Other than Crude; Preparations Not Elsewhere Specified or Included, Containing by Weight 70 % or More of Petroleum Oils or of Oils Obtained from Bituminous Minerals, these Oils Being the Basic Constituents of the Preparations; Waste Oils",PH,imports,WLD,HS2710,,"OpenSTAT CIF 2026: codes 2710*, all countries (calculated)",2026-01,2026-09,9
-Imports: Petroleum Oils & Oils From Bituminous Minerals Not Crude & Preparations Nes Containing by Weight 70% or More of Petroleum Oils or of Oils From Bituminous Minerals & Waste Oils (f4),SG,imports,WLD,HS2710,,T010001 IMPORTS WORLD HS 2710,2021-12,2026-09,58
-"Imports: World: Petroleum Oils and Oils From Bituminous Minerals, Not Crude; Preparations N.E.C, Containing By Weight 70% or More of Petroleum Oils or Oils From Bituminous Minerals; These Being The Basic Constituents of The Preparations; Waste Oils (f5)",SG,imports,WLD,HS2710,,T010001 IMPORTS WORLD HS 2710,2021-12,2026-09,58
+Imports: Petroleum Oils & Oils From Bituminous Minerals Not Crude & Preparations Nes Containing by Weight 70% or More of Petroleum Oils or of Oils From Bituminous Minerals & Waste Oils (f4),SG,imports,WLD,HS2710,,T010001 IMPORTS WORLD HS 2710,2021-10,2026-09,60
+"Imports: World: Petroleum Oils and Oils From Bituminous Minerals, Not Crude; Preparations N.E.C, Containing By Weight 70% or More of Petroleum Oils or Oils From Bituminous Minerals; These Being The Basic Constituents of The Preparations; Waste Oils (f5)",SG,imports,WLD,HS2710,,T010001 IMPORTS WORLD HS 2710,2021-10,2026-09,60
 "HS2022 Imports: Petroleum Oils and Oils Obtained from Bituminous Minerals, Other Than Crude; Preparations Not Elsewhere Specified or Included, Containing by Weight 70% or More of Petroleum Oils or of Oils Obtained from Bituminous Minerals, These Oils Being the Basic Con (f6)",TH,imports,WLD,HS2710,,importharmonizecountries hs_code=2710: sum of all countries,2010-01,2026-09,201
 Imports: Petroleum Products,VN,imports,WLD,petroleum_products,,NSO report 28.NK tháng Xăng dầu,2025-01,2026-10,7

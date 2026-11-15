@@ -5,7 +5,7 @@
  "source": "trade_ph",
  "backfill_complete": false,
  "table": "PSA OpenSTAT DB/2L/IMT SUM/0012L4DFTS0, FOB and CIF yearly tables",
- "processed_at": "2026-11-15T01:40:03Z",
+ "processed_at": "2026-11-15T04:15:06Z",
  "rows": 3844,
  "warnings": [],
  "fetched": 3,
@@ -16,7 +16,7 @@
   },
   {
    "code": "T2026-09b6",
-   "processed_at": "2026-11-15T01:40:03Z"
+   "processed_at": "2026-11-15T04:15:06Z"
   }
  ]
 }
