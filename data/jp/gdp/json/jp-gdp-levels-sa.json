@@ -3,8 +3,8 @@
  "title": "Japan GDP level, seasonally adjusted",
  "units": "¥ trillion, seasonally adjusted annual rate; real in chained 2020 yen",
  "freq": "quarterly",
- "source": "Cabinet Office of Japan, ESRI, Quarterly Estimates of GDP, Apr–Jun 2026, second preliminary estimate.",
- "release": "qe262_2",
+ "source": "Cabinet Office of Japan, ESRI, Quarterly Estimates of GDP, Jul–Sep 2026, first preliminary estimate.",
+ "release": "qe263",
  "columns": [
   "real",
   "nominal"
@@ -262,7 +262,7 @@
   },
   {
    "date": "2006-07-01",
-   "real": 536.4,
+   "real": 536.3,
    "nominal": 538.3
   },
   {
@@ -288,7 +288,7 @@
   {
    "date": "2007-10-01",
    "real": 547.8,
-   "nominal": 542.4
+   "nominal": 542.5
   },
   {
    "date": "2008-01-01",
@@ -297,18 +297,18 @@
   },
   {
    "date": "2008-04-01",
-   "real": 546.3,
+   "real": 546.4,
    "nominal": 539.2
   },
   {
    "date": "2008-07-01",
-   "real": 540.3,
-   "nominal": 528.9
+   "real": 540.2,
+   "nominal": 528.8
   },
   {
    "date": "2008-10-01",
    "real": 527.4,
-   "nominal": 523.1
+   "nominal": 523.2
   },
   {
    "date": "2009-01-01",
@@ -343,7 +343,7 @@
   {
    "date": "2010-07-01",
    "real": 537.2,
-   "nominal": 515.4
+   "nominal": 515.3
   },
   {
    "date": "2010-10-01",
@@ -352,12 +352,12 @@
   },
   {
    "date": "2011-01-01",
-   "real": 524.9,
+   "real": 524.8,
    "nominal": 501.6
   },
   {
    "date": "2011-04-01",
-   "real": 521.5,
+   "real": 521.6,
    "nominal": 494.3
   },
   {
@@ -372,18 +372,18 @@
   },
   {
    "date": "2012-01-01",
-   "real": 542.3,
+   "real": 542.2,
    "nominal": 512.1
   },
   {
    "date": "2012-04-01",
-   "real": 537.3,
+   "real": 537.4,
    "nominal": 504.9
   },
   {
    "date": "2012-07-01",
    "real": 535.2,
-   "nominal": 502.7
+   "nominal": 502.6
   },
   {
    "date": "2012-10-01",
@@ -392,32 +392,32 @@
   },
   {
    "date": "2013-01-01",
-   "real": 541.6,
+   "real": 541.5,
    "nominal": 508.3
   },
   {
    "date": "2013-04-01",
-   "real": 547.3,
-   "nominal": 513.1
+   "real": 547.5,
+   "nominal": 513.2
   },
   {
    "date": "2013-07-01",
    "real": 552.5,
-   "nominal": 519.0
-  },
-  {
-   "date": "2013-10-01",
-   "real": 551.8,
    "nominal": 518.9
   },
   {
+   "date": "2013-10-01",
+   "real": 551.7,
+   "nominal": 518.8
+  },
+  {
    "date": "2014-01-01",
-   "real": 557.3,
-   "nominal": 524.0
+   "real": 557.2,
+   "nominal": 524.1
   },
   {
    "date": "2014-04-01",
-   "real": 549.5,
+   "real": 549.7,
    "nominal": 527.2
   },
   {
@@ -427,22 +427,22 @@
   },
   {
    "date": "2014-10-01",
-   "real": 553.8,
-   "nominal": 533.1
+   "real": 553.7,
+   "nominal": 533.0
   },
   {
    "date": "2015-01-01",
-   "real": 562.4,
-   "nominal": 545.5
+   "real": 562.3,
+   "nominal": 545.6
   },
   {
    "date": "2015-04-01",
-   "real": 563.0,
+   "real": 563.2,
    "nominal": 548.8
   },
   {
    "date": "2015-07-01",
-   "real": 563.9,
+   "real": 563.8,
    "nominal": 550.6
   },
   {
@@ -452,7 +452,7 @@
   },
   {
    "date": "2016-01-01",
-   "real": 567.5,
+   "real": 567.4,
    "nominal": 557.4
   },
   {
@@ -477,13 +477,13 @@
   },
   {
    "date": "2017-04-01",
-   "real": 573.0,
+   "real": 572.9,
    "nominal": 561.5
   },
   {
    "date": "2017-07-01",
    "real": 579.6,
-   "nominal": 569.9
+   "nominal": 569.8
   },
   {
    "date": "2017-10-01",
@@ -492,17 +492,17 @@
   },
   {
    "date": "2018-01-01",
-   "real": 579.4,
-   "nominal": 569.5
+   "real": 579.5,
+   "nominal": 569.6
   },
   {
    "date": "2018-04-01",
-   "real": 583.1,
+   "real": 583.0,
    "nominal": 571.3
   },
   {
    "date": "2018-07-01",
-   "real": 580.4,
+   "real": 580.5,
    "nominal": 567.9
   },
   {
@@ -513,17 +513,17 @@
   {
    "date": "2019-01-01",
    "real": 581.3,
-   "nominal": 572.5
+   "nominal": 572.6
   },
   {
    "date": "2019-04-01",
-   "real": 583.7,
-   "nominal": 574.9
+   "real": 583.6,
+   "nominal": 574.8
   },
   {
    "date": "2019-07-01",
    "real": 584.2,
-   "nominal": 575.5
+   "nominal": 575.4
   },
   {
    "date": "2019-10-01",
@@ -533,7 +533,7 @@
   {
    "date": "2020-01-01",
    "real": 569.2,
-   "nominal": 567.6
+   "nominal": 567.7
   },
   {
    "date": "2020-04-01",
@@ -543,7 +543,7 @@
   {
    "date": "2020-07-01",
    "real": 554.8,
-   "nominal": 554.8
+   "nominal": 554.7
   },
   {
    "date": "2020-10-01",
@@ -553,7 +553,7 @@
   {
    "date": "2021-01-01",
    "real": 570.6,
-   "nominal": 569.5
+   "nominal": 569.6
   },
   {
    "date": "2021-04-01",
@@ -563,7 +563,7 @@
   {
    "date": "2021-07-01",
    "real": 573.0,
-   "nominal": 573.0
+   "nominal": 572.8
   },
   {
    "date": "2021-10-01",
@@ -573,7 +573,7 @@
   {
    "date": "2022-01-01",
    "real": 577.2,
-   "nominal": 579.2
+   "nominal": 579.5
   },
   {
    "date": "2022-04-01",
@@ -582,8 +582,8 @@
   },
   {
    "date": "2022-07-01",
-   "real": 581.1,
-   "nominal": 582.0
+   "real": 581.3,
+   "nominal": 581.7
   },
   {
    "date": "2022-10-01",
@@ -593,82 +593,87 @@
   {
    "date": "2023-01-01",
    "real": 589.1,
-   "nominal": 606.1
+   "nominal": 606.5
   },
   {
    "date": "2023-04-01",
    "real": 589.5,
-   "nominal": 617.6
+   "nominal": 617.4
   },
   {
    "date": "2023-07-01",
-   "real": 582.2,
-   "nominal": 618.3
+   "real": 582.4,
+   "nominal": 618.0
   },
   {
    "date": "2023-10-01",
-   "real": 584.9,
-   "nominal": 624.5
+   "real": 584.7,
+   "nominal": 624.6
   },
   {
    "date": "2024-01-01",
-   "real": 584.4,
-   "nominal": 621.9
+   "real": 584.2,
+   "nominal": 622.2
   },
   {
    "date": "2024-04-01",
-   "real": 583.7,
-   "nominal": 633.7
+   "real": 583.8,
+   "nominal": 633.6
   },
   {
    "date": "2024-07-01",
-   "real": 588.6,
-   "nominal": 642.1
+   "real": 588.9,
+   "nominal": 641.8
   },
   {
    "date": "2024-10-01",
-   "real": 590.9,
-   "nominal": 649.5
+   "real": 590.6,
+   "nominal": 649.6
   },
   {
    "date": "2025-01-01",
-   "real": 593.9,
-   "nominal": 655.1
+   "real": 593.7,
+   "nominal": 655.3
   },
   {
    "date": "2025-04-01",
-   "real": 594.6,
-   "nominal": 666.8
+   "real": 594.8,
+   "nominal": 666.9
   },
   {
    "date": "2025-07-01",
-   "real": 592.4,
-   "nominal": 668.9
+   "real": 592.6,
+   "nominal": 668.1
   },
   {
    "date": "2025-10-01",
-   "real": 594.0,
-   "nominal": 675.0
+   "real": 594.2,
+   "nominal": 675.4
   },
   {
    "date": "2026-01-01",
-   "real": 596.8,
-   "nominal": 680.1
+   "real": 597.0,
+   "nominal": 680.2
   },
   {
    "date": "2026-04-01",
-   "real": 599.0,
-   "nominal": 689.2
+   "real": 599.6,
+   "nominal": 690.0
+  },
+  {
+   "date": "2026-07-01",
+   "real": 599.5,
+   "nominal": 692.7
   }
  ],
  "latest": {
   "real": {
-   "date": "2026-04-01",
-   "value": 599.0
+   "date": "2026-07-01",
+   "value": 599.5
   },
   "nominal": {
-   "date": "2026-04-01",
-   "value": 689.2
+   "date": "2026-07-01",
+   "value": 692.7
   }
  }
 }

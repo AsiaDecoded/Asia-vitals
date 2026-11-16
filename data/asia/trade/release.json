@@ -1,9 +1,9 @@
 {
- "code": "R62e4a66a97",
+ "code": "R54dee3f226",
  "label": "452 of 627 CEIC series filled",
  "source": "core.asia_trade",
- "processed_at": "2026-11-15T04:44:06Z",
- "rows": 236252,
+ "processed_at": "2026-11-16T02:28:02Z",
+ "rows": 236270,
  "warnings": [],
  "history": [
   {
@@ -73,6 +73,10 @@
   {
    "code": "R62e4a66a97",
    "processed_at": "2026-11-15T04:44:06Z"
+  },
+  {
+   "code": "R54dee3f226",
+   "processed_at": "2026-11-16T02:28:02Z"
   }
  ]
 }

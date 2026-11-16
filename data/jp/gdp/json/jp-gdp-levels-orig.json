@@ -3,8 +3,8 @@
  "title": "Japan GDP level, original series",
  "units": "¥ trillion per quarter, not seasonally adjusted; real in chained 2020 yen",
  "freq": "quarterly",
- "source": "Cabinet Office of Japan, ESRI, Quarterly Estimates of GDP, Apr–Jun 2026, second preliminary estimate.",
- "release": "qe262_2",
+ "source": "Cabinet Office of Japan, ESRI, Quarterly Estimates of GDP, Jul–Sep 2026, first preliminary estimate.",
+ "release": "qe263",
  "columns": [
   "real",
   "nominal"
@@ -647,28 +647,33 @@
   },
   {
    "date": "2025-10-01",
-   "real": 151.6,
-   "nominal": 175.0
+   "real": 151.7,
+   "nominal": 175.1
   },
   {
    "date": "2026-01-01",
-   "real": 151.1,
+   "real": 151.3,
    "nominal": 170.3
   },
   {
    "date": "2026-04-01",
    "real": 146.5,
-   "nominal": 170.2
+   "nominal": 170.3
+  },
+  {
+   "date": "2026-07-01",
+   "real": 148.2,
+   "nominal": 168.7
   }
  ],
  "latest": {
   "real": {
-   "date": "2026-04-01",
-   "value": 146.5
+   "date": "2026-07-01",
+   "value": 148.2
   },
   "nominal": {
-   "date": "2026-04-01",
-   "value": 170.2
+   "date": "2026-07-01",
+   "value": 168.7
   }
  }
 }
