@@ -135045,6 +135045,7 @@ IN,exports,WLD,TOTAL,2026-05-01,44769.63,,TradeStat commoditywise HS2 total Indi
 IN,exports,WLD,TOTAL,2026-06-01,40014.06,,TradeStat commoditywise HS2 total India's Total Export,USD million,40014.06
 IN,exports,WLD,TOTAL,2026-07-01,44267.64,,TradeStat commoditywise HS2 total India's Total Export,USD million,44267.64
 IN,exports,WLD,TOTAL,2026-08-01,43722.55,,TradeStat commoditywise HS2 total India's Total Export,USD million,43722.55
+IN,exports,US,TOTAL,2025-12-01,6872.96,,TradeStat country_wise_all_commodities US,USD million,6872.96
 IN,exports,US,TOTAL,2026-01-01,6605.05,,TradeStat country_wise_all_commodities US,USD million,6605.05
 IN,exports,US,TOTAL,2026-02-01,6889.17,,TradeStat country_wise_all_commodities US,USD million,6889.17
 IN,exports,US,TOTAL,2026-03-01,8022.59,,TradeStat country_wise_all_commodities US,USD million,8022.59
@@ -135141,6 +135142,7 @@ IN,exports,VN,TOTAL,2026-05-01,648.49,,TradeStat country_wise_all_commodities VN
 IN,exports,VN,TOTAL,2026-06-01,646.02,,TradeStat country_wise_all_commodities VN,USD million,646.02
 IN,exports,VN,TOTAL,2026-07-01,629.82,,TradeStat country_wise_all_commodities VN,USD million,629.82
 IN,exports,VN,TOTAL,2026-08-01,602.29,,TradeStat country_wise_all_commodities VN,USD million,602.29
+IN,imports,WLD,HS2709,2025-12-01,11282.97,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M,USD million,11282.97
 IN,imports,WLD,HS2709,2026-01-01,10274.36,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M,USD million,10274.36
 IN,imports,WLD,HS2709,2026-02-01,9823.02,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M,USD million,9823.02
 IN,imports,WLD,HS2709,2026-03-01,9531.03,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M,USD million,9531.03
@@ -135149,6 +135151,7 @@ IN,imports,WLD,HS2709,2026-05-01,18975.77,,TradeStat commoditywise HS4 2709 PETR
 IN,imports,WLD,HS2709,2026-06-01,14765.1,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M,USD million,14765.1
 IN,imports,WLD,HS2709,2026-07-01,14212.43,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M,USD million,14212.43
 IN,imports,WLD,HS2709,2026-08-01,12239.58,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M,USD million,12239.58
+IN,imports,WLD,HS2710,2025-12-01,617.48,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER ,USD million,617.48
 IN,imports,WLD,HS2710,2026-01-01,606.71,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER ,USD million,606.71
 IN,imports,WLD,HS2710,2026-02-01,652.81,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER ,USD million,652.81
 IN,imports,WLD,HS2710,2026-03-01,864.78,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER ,USD million,864.78
@@ -149113,7 +149116,8 @@ SG,domestic_exports,WLD,HS8419,2026-05-01,10.5452,y,T010001 DOMESTIC EXPORTS WOR
 SG,domestic_exports,WLD,HS8419,2026-06-01,11.6616,y,T010001 DOMESTIC EXPORTS WORLD HS 8419,SGD thousand,15019.0
 SG,domestic_exports,WLD,HS8419,2026-07-01,12.3518,y,T010001 DOMESTIC EXPORTS WORLD HS 8419,SGD thousand,15953.0
 SG,domestic_exports,WLD,HS8419,2026-08-01,17.9968,y,T010001 DOMESTIC EXPORTS WORLD HS 8419,SGD thousand,22969.0
-SG,domestic_exports,WLD,HS8419,2026-09-01,17.5265,y,T010001 DOMESTIC EXPORTS WORLD HS 8419,SGD thousand,22305.0
+SG,domestic_exports,WLD,HS8419,2026-09-01,17.5147,y,T010001 DOMESTIC EXPORTS WORLD HS 8419,SGD thousand,22290.0
+SG,domestic_exports,WLD,HS8419,2026-10-01,12.1964,y,T010001 DOMESTIC EXPORTS WORLD HS 8419,SGD thousand,15611.0
 SG,domestic_exports,WLD,HS8470,2021-09-01,0.1944,y,T010001 DOMESTIC EXPORTS WORLD HS 8470,SGD thousand,262.0
 SG,domestic_exports,WLD,HS8470,2021-10-01,0.2731,y,T010001 DOMESTIC EXPORTS WORLD HS 8470,SGD thousand,369.0
 SG,domestic_exports,WLD,HS8470,2021-11-01,0.112,y,T010001 DOMESTIC EXPORTS WORLD HS 8470,SGD thousand,152.0
@@ -149175,6 +149179,7 @@ SG,domestic_exports,WLD,HS8470,2026-06-01,0.3657,y,T010001 DOMESTIC EXPORTS WORL
 SG,domestic_exports,WLD,HS8470,2026-07-01,0.0155,y,T010001 DOMESTIC EXPORTS WORLD HS 8470,SGD thousand,20.0
 SG,domestic_exports,WLD,HS8470,2026-08-01,0.0329,y,T010001 DOMESTIC EXPORTS WORLD HS 8470,SGD thousand,42.0
 SG,domestic_exports,WLD,HS8470,2026-09-01,0.3167,y,T010001 DOMESTIC EXPORTS WORLD HS 8470,SGD thousand,403.0
+SG,domestic_exports,WLD,HS8470,2026-10-01,0.0438,y,T010001 DOMESTIC EXPORTS WORLD HS 8470,SGD thousand,56.0
 SG,domestic_exports,WLD,HS8471,2021-09-01,320.0222,y,T010001 DOMESTIC EXPORTS WORLD HS 8471,SGD thousand,431345.0
 SG,domestic_exports,WLD,HS8471,2021-10-01,297.9985,y,T010001 DOMESTIC EXPORTS WORLD HS 8471,SGD thousand,402575.0
 SG,domestic_exports,WLD,HS8471,2021-11-01,254.0973,y,T010001 DOMESTIC EXPORTS WORLD HS 8471,SGD thousand,344795.0
@@ -149235,7 +149240,8 @@ SG,domestic_exports,WLD,HS8471,2026-05-01,948.3496,y,T010001 DOMESTIC EXPORTS WO
 SG,domestic_exports,WLD,HS8471,2026-06-01,1013.6582,y,T010001 DOMESTIC EXPORTS WORLD HS 8471,SGD thousand,1305493.0
 SG,domestic_exports,WLD,HS8471,2026-07-01,1170.1675,y,T010001 DOMESTIC EXPORTS WORLD HS 8471,SGD thousand,1511337.0
 SG,domestic_exports,WLD,HS8471,2026-08-01,1629.3845,y,T010001 DOMESTIC EXPORTS WORLD HS 8471,SGD thousand,2079555.0
-SG,domestic_exports,WLD,HS8471,2026-09-01,1274.6536,y,T010001 DOMESTIC EXPORTS WORLD HS 8471,SGD thousand,1622182.0
+SG,domestic_exports,WLD,HS8471,2026-09-01,1274.5781,y,T010001 DOMESTIC EXPORTS WORLD HS 8471,SGD thousand,1622086.0
+SG,domestic_exports,WLD,HS8471,2026-10-01,1289.0893,y,T010001 DOMESTIC EXPORTS WORLD HS 8471,SGD thousand,1649992.0
 SG,domestic_exports,WLD,HS8472,2021-09-01,4.2096,y,T010001 DOMESTIC EXPORTS WORLD HS 8472,SGD thousand,5674.0
 SG,domestic_exports,WLD,HS8472,2021-10-01,1.3946,y,T010001 DOMESTIC EXPORTS WORLD HS 8472,SGD thousand,1884.0
 SG,domestic_exports,WLD,HS8472,2021-11-01,0.3744,y,T010001 DOMESTIC EXPORTS WORLD HS 8472,SGD thousand,508.0
@@ -149294,8 +149300,9 @@ SG,domestic_exports,WLD,HS8472,2026-04-01,0.0196,y,T010001 DOMESTIC EXPORTS WORL
 SG,domestic_exports,WLD,HS8472,2026-05-01,0.0008,y,T010001 DOMESTIC EXPORTS WORLD HS 8472,SGD thousand,1.0
 SG,domestic_exports,WLD,HS8472,2026-06-01,0.0458,y,T010001 DOMESTIC EXPORTS WORLD HS 8472,SGD thousand,59.0
 SG,domestic_exports,WLD,HS8472,2026-07-01,0.0256,y,T010001 DOMESTIC EXPORTS WORLD HS 8472,SGD thousand,33.0
-SG,domestic_exports,WLD,HS8472,2026-08-01,0.0039,y,T010001 DOMESTIC EXPORTS WORLD HS 8472,SGD thousand,5.0
+SG,domestic_exports,WLD,HS8472,2026-08-01,0.0024,y,T010001 DOMESTIC EXPORTS WORLD HS 8472,SGD thousand,3.0
 SG,domestic_exports,WLD,HS8472,2026-09-01,0.0071,y,T010001 DOMESTIC EXPORTS WORLD HS 8472,SGD thousand,9.0
+SG,domestic_exports,WLD,HS8472,2026-10-01,0.0672,y,T010001 DOMESTIC EXPORTS WORLD HS 8472,SGD thousand,86.0
 SG,domestic_exports,WLD,HS8473,2021-09-01,55.2038,y,T010001 DOMESTIC EXPORTS WORLD HS 8473,SGD thousand,74407.0
 SG,domestic_exports,WLD,HS8473,2021-10-01,56.6669,y,T010001 DOMESTIC EXPORTS WORLD HS 8473,SGD thousand,76553.0
 SG,domestic_exports,WLD,HS8473,2021-11-01,52.0479,y,T010001 DOMESTIC EXPORTS WORLD HS 8473,SGD thousand,70626.0
@@ -149355,8 +149362,9 @@ SG,domestic_exports,WLD,HS8473,2026-04-01,17.3093,y,T010001 DOMESTIC EXPORTS WOR
 SG,domestic_exports,WLD,HS8473,2026-05-01,18.0386,y,T010001 DOMESTIC EXPORTS WORLD HS 8473,SGD thousand,23011.0
 SG,domestic_exports,WLD,HS8473,2026-06-01,25.3963,y,T010001 DOMESTIC EXPORTS WORLD HS 8473,SGD thousand,32708.0
 SG,domestic_exports,WLD,HS8473,2026-07-01,26.6431,y,T010001 DOMESTIC EXPORTS WORLD HS 8473,SGD thousand,34411.0
-SG,domestic_exports,WLD,HS8473,2026-08-01,28.8032,y,T010001 DOMESTIC EXPORTS WORLD HS 8473,SGD thousand,36761.0
+SG,domestic_exports,WLD,HS8473,2026-08-01,25.4928,y,T010001 DOMESTIC EXPORTS WORLD HS 8473,SGD thousand,32536.0
 SG,domestic_exports,WLD,HS8473,2026-09-01,34.1674,y,T010001 DOMESTIC EXPORTS WORLD HS 8473,SGD thousand,43483.0
+SG,domestic_exports,WLD,HS8473,2026-10-01,24.592,y,T010001 DOMESTIC EXPORTS WORLD HS 8473,SGD thousand,31477.0
 SG,domestic_exports,WLD,HS85,2021-09-01,2829.493,y,T010001 DOMESTIC EXPORTS WORLD HS 85,SGD thousand,3813759.0
 SG,domestic_exports,WLD,HS85,2021-10-01,2828.3682,y,T010001 DOMESTIC EXPORTS WORLD HS 85,SGD thousand,3820926.0
 SG,domestic_exports,WLD,HS85,2021-11-01,3121.0994,y,T010001 DOMESTIC EXPORTS WORLD HS 85,SGD thousand,4235148.0
@@ -149416,8 +149424,9 @@ SG,domestic_exports,WLD,HS85,2026-04-01,4389.4049,y,T010001 DOMESTIC EXPORTS WOR
 SG,domestic_exports,WLD,HS85,2026-05-01,4936.3132,y,T010001 DOMESTIC EXPORTS WORLD HS 85,SGD thousand,6297007.0
 SG,domestic_exports,WLD,HS85,2026-06-01,4624.9291,y,T010001 DOMESTIC EXPORTS WORLD HS 85,SGD thousand,5956458.0
 SG,domestic_exports,WLD,HS85,2026-07-01,5092.9471,y,T010001 DOMESTIC EXPORTS WORLD HS 85,SGD thousand,6577827.0
-SG,domestic_exports,WLD,HS85,2026-08-01,5538.3074,y,T010001 DOMESTIC EXPORTS WORLD HS 85,SGD thousand,7068445.0
-SG,domestic_exports,WLD,HS85,2026-09-01,5456.5458,y,T010001 DOMESTIC EXPORTS WORLD HS 85,SGD thousand,6944248.0
+SG,domestic_exports,WLD,HS85,2026-08-01,5538.3012,y,T010001 DOMESTIC EXPORTS WORLD HS 85,SGD thousand,7068437.0
+SG,domestic_exports,WLD,HS85,2026-09-01,5456.0422,y,T010001 DOMESTIC EXPORTS WORLD HS 85,SGD thousand,6943607.0
+SG,domestic_exports,WLD,HS85,2026-10-01,5179.4119,y,T010001 DOMESTIC EXPORTS WORLD HS 85,SGD thousand,6629477.0
 SG,domestic_exports,WLD,TOTAL,1981-01-01,1244.6669,y,"M451001 Total Domestic Exports, (At Current Prices)",SGD thousand,2590389.0
 SG,domestic_exports,WLD,TOTAL,1981-02-01,1015.9457,y,"M451001 Total Domestic Exports, (At Current Prices)",SGD thousand,2120194.0
 SG,domestic_exports,WLD,TOTAL,1981-03-01,1158.887,y,"M451001 Total Domestic Exports, (At Current Prices)",SGD thousand,2432214.0
@@ -149965,8 +149974,9 @@ SG,domestic_exports,WLD,TOTAL,2026-04-01,24516.2281,y,"M451001 Total Domestic Ex
 SG,domestic_exports,WLD,TOTAL,2026-05-01,22300.5562,y,"M451001 Total Domestic Exports, (At Current Prices)",SGD thousand,28447700.0
 SG,domestic_exports,WLD,TOTAL,2026-06-01,21825.5279,y,"M451001 Total Domestic Exports, (At Current Prices)",SGD thousand,28109153.0
 SG,domestic_exports,WLD,TOTAL,2026-07-01,21323.1855,y,"M451001 Total Domestic Exports, (At Current Prices)",SGD thousand,27540091.0
-SG,domestic_exports,WLD,TOTAL,2026-08-01,22156.6475,y,"M451001 Total Domestic Exports, (At Current Prices)",SGD thousand,28278142.0
-SG,domestic_exports,WLD,TOTAL,2026-09-01,26989.2491,y,"M451001 Total Domestic Exports, (At Current Prices)",SGD thousand,34347744.0
+SG,domestic_exports,WLD,TOTAL,2026-08-01,22152.8435,y,"M451001 Total Domestic Exports, (At Current Prices)",SGD thousand,28273287.0
+SG,domestic_exports,WLD,TOTAL,2026-09-01,26986.044,y,"M451001 Total Domestic Exports, (At Current Prices)",SGD thousand,34343665.0
+SG,domestic_exports,WLD,TOTAL,2026-10-01,32459.2365,y,"M451001 Total Domestic Exports, (At Current Prices)",SGD thousand,41546756.0
 SG,domestic_exports,US,TOTAL,2003-01-01,1121.8531,y,M451501 United States Of America,SGD million,1946.9
 SG,domestic_exports,US,TOTAL,2003-02-01,876.8272,y,M451501 United States Of America,SGD million,1530.4
 SG,domestic_exports,US,TOTAL,2003-03-01,1047.7584,y,M451501 United States Of America,SGD million,1837.9
@@ -150251,7 +150261,8 @@ SG,domestic_exports,US,TOTAL,2026-05-01,2600.8706,y,M451501 United States Of Ame
 SG,domestic_exports,US,TOTAL,2026-06-01,1905.7343,y,M451501 United States Of America,SGD million,2454.4
 SG,domestic_exports,US,TOTAL,2026-07-01,2604.61,y,M451501 United States Of America,SGD million,3364.0
 SG,domestic_exports,US,TOTAL,2026-08-01,2428.3808,y,M451501 United States Of America,SGD million,3099.3
-SG,domestic_exports,US,TOTAL,2026-09-01,2521.5979,y,M451501 United States Of America,SGD million,3209.1
+SG,domestic_exports,US,TOTAL,2026-09-01,2521.6765,y,M451501 United States Of America,SGD million,3209.2
+SG,domestic_exports,US,TOTAL,2026-10-01,4483.4745,y,M451501 United States Of America,SGD million,5738.7
 SG,domestic_exports,CN,TOTAL,2003-01-01,422.2579,y,M451501 Mainland China,SGD million,732.8
 SG,domestic_exports,CN,TOTAL,2003-02-01,357.5718,y,M451501 Mainland China,SGD million,624.1
 SG,domestic_exports,CN,TOTAL,2003-03-01,467.5264,y,M451501 Mainland China,SGD million,820.1
@@ -150536,7 +150547,8 @@ SG,domestic_exports,CN,TOTAL,2026-05-01,2262.69,y,M451501 Mainland China,SGD mil
 SG,domestic_exports,CN,TOTAL,2026-06-01,2455.31,y,M451501 Mainland China,SGD million,3162.2
 SG,domestic_exports,CN,TOTAL,2026-07-01,2627.6055,y,M451501 Mainland China,SGD million,3393.7
 SG,domestic_exports,CN,TOTAL,2026-08-01,2870.1325,y,M451501 Mainland China,SGD million,3663.1
-SG,domestic_exports,CN,TOTAL,2026-09-01,3051.2034,y,M451501 Mainland China,SGD million,3883.1
+SG,domestic_exports,CN,TOTAL,2026-09-01,3052.3035,y,M451501 Mainland China,SGD million,3884.5
+SG,domestic_exports,CN,TOTAL,2026-10-01,4614.6497,y,M451501 Mainland China,SGD million,5906.6
 SG,domestic_exports,HK,TOTAL,2003-01-01,789.8321,y,M451501 Hong Kong,SGD million,1370.7
 SG,domestic_exports,HK,TOTAL,2003-02-01,535.4696,y,M451501 Hong Kong,SGD million,934.6
 SG,domestic_exports,HK,TOTAL,2003-03-01,725.8317,y,M451501 Hong Kong,SGD million,1273.2
@@ -150821,7 +150833,8 @@ SG,domestic_exports,HK,TOTAL,2026-05-01,1405.6366,y,M451501 Hong Kong,SGD millio
 SG,domestic_exports,HK,TOTAL,2026-06-01,1164.6068,y,M451501 Hong Kong,SGD million,1499.9
 SG,domestic_exports,HK,TOTAL,2026-07-01,1144.2011,y,M451501 Hong Kong,SGD million,1477.8
 SG,domestic_exports,HK,TOTAL,2026-08-01,1411.8347,y,M451501 Hong Kong,SGD million,1801.9
-SG,domestic_exports,HK,TOTAL,2026-09-01,1963.2334,y,M451501 Hong Kong,SGD million,2498.5
+SG,domestic_exports,HK,TOTAL,2026-09-01,1963.1548,y,M451501 Hong Kong,SGD million,2498.4
+SG,domestic_exports,HK,TOTAL,2026-10-01,1593.244,y,M451501 Hong Kong,SGD million,2039.3
 SG,domestic_exports,JP,TOTAL,2003-01-01,555.7693,y,M451501 Japan,SGD million,964.5
 SG,domestic_exports,JP,TOTAL,2003-02-01,412.4021,y,M451501 Japan,SGD million,719.8
 SG,domestic_exports,JP,TOTAL,2003-03-01,508.4584,y,M451501 Japan,SGD million,891.9
@@ -151107,6 +151120,7 @@ SG,domestic_exports,JP,TOTAL,2026-06-01,695.3166,y,M451501 Japan,SGD million,895
 SG,domestic_exports,JP,TOTAL,2026-07-01,704.6539,y,M451501 Japan,SGD million,910.1
 SG,domestic_exports,JP,TOTAL,2026-08-01,667.2504,y,M451501 Japan,SGD million,851.6
 SG,domestic_exports,JP,TOTAL,2026-09-01,656.7422,y,M451501 Japan,SGD million,835.8
+SG,domestic_exports,JP,TOTAL,2026-10-01,814.0053,y,M451501 Japan,SGD million,1041.9
 SG,domestic_exports,EU,TOTAL,2003-01-01,828.1511,y,sum of the 27 current EU members (calculated),SGD million,1437.2
 SG,domestic_exports,EU,TOTAL,2003-02-01,741.327,y,sum of the 27 current EU members (calculated),SGD million,1293.9
 SG,domestic_exports,EU,TOTAL,2003-03-01,846.4047,y,sum of the 27 current EU members (calculated),SGD million,1484.7
@@ -151391,7 +151405,8 @@ SG,domestic_exports,EU,TOTAL,2026-05-01,1912.0451,y,sum of the 27 current EU mem
 SG,domestic_exports,EU,TOTAL,2026-06-01,1944.2464,y,sum of the 27 current EU members (calculated),SGD million,2504.0
 SG,domestic_exports,EU,TOTAL,2026-07-01,1758.4214,y,sum of the 27 current EU members (calculated),SGD million,2271.1
 SG,domestic_exports,EU,TOTAL,2026-08-01,2105.6465,y,sum of the 27 current EU members (calculated),SGD million,2687.4
-SG,domestic_exports,EU,TOTAL,2026-09-01,1977.2986,y,sum of the 27 current EU members (calculated),SGD million,2516.4
+SG,domestic_exports,EU,TOTAL,2026-09-01,1975.0985,y,sum of the 27 current EU members (calculated),SGD million,2513.6
+SG,domestic_exports,EU,TOTAL,2026-10-01,2745.6173,y,sum of the 27 current EU members (calculated),SGD million,3514.3
 SG,domestic_exports,TW,TOTAL,2003-01-01,309.2601,y,M451501 Taiwan,SGD million,536.7
 SG,domestic_exports,TW,TOTAL,2003-02-01,282.1729,y,M451501 Taiwan,SGD million,492.5
 SG,domestic_exports,TW,TOTAL,2003-03-01,304.6532,y,M451501 Taiwan,SGD million,534.4
@@ -151676,7 +151691,8 @@ SG,domestic_exports,TW,TOTAL,2026-05-01,1987.3009,y,M451501 Taiwan,SGD million,2
 SG,domestic_exports,TW,TOTAL,2026-06-01,2014.6711,y,M451501 Taiwan,SGD million,2594.7
 SG,domestic_exports,TW,TOTAL,2026-07-01,1808.1289,y,M451501 Taiwan,SGD million,2335.3
 SG,domestic_exports,TW,TOTAL,2026-08-01,1484.5459,y,M451501 Taiwan,SGD million,1894.7
-SG,domestic_exports,TW,TOTAL,2026-09-01,1862.4198,y,M451501 Taiwan,SGD million,2370.2
+SG,domestic_exports,TW,TOTAL,2026-09-01,1862.3412,y,M451501 Taiwan,SGD million,2370.1
+SG,domestic_exports,TW,TOTAL,2026-10-01,2325.7628,y,M451501 Taiwan,SGD million,2976.9
 SG,domestic_exports,KR,TOTAL,2003-01-01,235.849,y,M451501 Republic Of Korea,SGD million,409.3
 SG,domestic_exports,KR,TOTAL,2003-02-01,196.3465,y,M451501 Republic Of Korea,SGD million,342.7
 SG,domestic_exports,KR,TOTAL,2003-03-01,247.8158,y,M451501 Republic Of Korea,SGD million,434.7
@@ -151961,7 +151977,8 @@ SG,domestic_exports,KR,TOTAL,2026-05-01,1104.7703,y,M451501 Republic Of Korea,SG
 SG,domestic_exports,KR,TOTAL,2026-06-01,1258.8685,y,M451501 Republic Of Korea,SGD million,1621.3
 SG,domestic_exports,KR,TOTAL,2026-07-01,1108.1981,y,M451501 Republic Of Korea,SGD million,1431.3
 SG,domestic_exports,KR,TOTAL,2026-08-01,1288.116,y,M451501 Republic Of Korea,SGD million,1644.0
-SG,domestic_exports,KR,TOTAL,2026-09-01,1430.3277,y,M451501 Republic Of Korea,SGD million,1820.3
+SG,domestic_exports,KR,TOTAL,2026-09-01,1430.2491,y,M451501 Republic Of Korea,SGD million,1820.2
+SG,domestic_exports,KR,TOTAL,2026-10-01,1017.0574,y,M451501 Republic Of Korea,SGD million,1301.8
 SG,domestic_exports,IN,TOTAL,2003-01-01,111.442,y,M451501 India,SGD million,193.4
 SG,domestic_exports,IN,TOTAL,2003-02-01,99.2332,y,M451501 India,SGD million,173.2
 SG,domestic_exports,IN,TOTAL,2003-03-01,120.7439,y,M451501 India,SGD million,211.8
@@ -152246,7 +152263,8 @@ SG,domestic_exports,IN,TOTAL,2026-05-01,490.0248,y,M451501 India,SGD million,625
 SG,domestic_exports,IN,TOTAL,2026-06-01,565.3378,y,M451501 India,SGD million,728.1
 SG,domestic_exports,IN,TOTAL,2026-07-01,610.5039,y,M451501 India,SGD million,788.5
 SG,domestic_exports,IN,TOTAL,2026-08-01,688.0138,y,M451501 India,SGD million,878.1
-SG,domestic_exports,IN,TOTAL,2026-09-01,660.9854,y,M451501 India,SGD million,841.2
+SG,domestic_exports,IN,TOTAL,2026-09-01,660.7496,y,M451501 India,SGD million,840.9
+SG,domestic_exports,IN,TOTAL,2026-10-01,703.2993,y,M451501 India,SGD million,900.2
 SG,domestic_exports,ID,TOTAL,2003-01-01,583.7163,y,M451501 Indonesia,SGD million,1013.0
 SG,domestic_exports,ID,TOTAL,2003-02-01,487.0562,y,M451501 Indonesia,SGD million,850.1
 SG,domestic_exports,ID,TOTAL,2003-03-01,541.0103,y,M451501 Indonesia,SGD million,949.0
@@ -152530,8 +152548,9 @@ SG,domestic_exports,ID,TOTAL,2026-04-01,1686.3196,y,M451501 Indonesia,SGD millio
 SG,domestic_exports,ID,TOTAL,2026-05-01,1235.4488,y,M451501 Indonesia,SGD million,1576.0
 SG,domestic_exports,ID,TOTAL,2026-06-01,1407.094,y,M451501 Indonesia,SGD million,1812.2
 SG,domestic_exports,ID,TOTAL,2026-07-01,944.3647,y,M451501 Indonesia,SGD million,1219.7
-SG,domestic_exports,ID,TOTAL,2026-08-01,1134.7017,y,M451501 Indonesia,SGD million,1448.2
-SG,domestic_exports,ID,TOTAL,2026-09-01,1329.0426,y,M451501 Indonesia,SGD million,1691.4
+SG,domestic_exports,ID,TOTAL,2026-08-01,1134.6234,y,M451501 Indonesia,SGD million,1448.1
+SG,domestic_exports,ID,TOTAL,2026-09-01,1328.0211,y,M451501 Indonesia,SGD million,1690.1
+SG,domestic_exports,ID,TOTAL,2026-10-01,1510.0388,y,M451501 Indonesia,SGD million,1932.8
 SG,domestic_exports,MY,TOTAL,2003-01-01,709.7944,y,M451501 Malaysia,SGD million,1231.8
 SG,domestic_exports,MY,TOTAL,2003-02-01,630.4058,y,M451501 Malaysia,SGD million,1100.3
 SG,domestic_exports,MY,TOTAL,2003-03-01,679.0847,y,M451501 Malaysia,SGD million,1191.2
@@ -152816,7 +152835,8 @@ SG,domestic_exports,MY,TOTAL,2026-05-01,2284.7963,y,M451501 Malaysia,SGD million
 SG,domestic_exports,MY,TOTAL,2026-06-01,2205.9122,y,M451501 Malaysia,SGD million,2841.0
 SG,domestic_exports,MY,TOTAL,2026-07-01,2162.9722,y,M451501 Malaysia,SGD million,2793.6
 SG,domestic_exports,MY,TOTAL,2026-08-01,2002.1429,y,M451501 Malaysia,SGD million,2555.3
-SG,domestic_exports,MY,TOTAL,2026-09-01,2081.6482,y,M451501 Malaysia,SGD million,2649.2
+SG,domestic_exports,MY,TOTAL,2026-09-01,2080.8624,y,M451501 Malaysia,SGD million,2648.2
+SG,domestic_exports,MY,TOTAL,2026-10-01,2547.6435,y,M451501 Malaysia,SGD million,3260.9
 SG,domestic_exports,PH,TOTAL,2003-01-01,159.6144,y,M451501 Philippines,SGD million,277.0
 SG,domestic_exports,PH,TOTAL,2003-02-01,131.2032,y,M451501 Philippines,SGD million,229.0
 SG,domestic_exports,PH,TOTAL,2003-03-01,152.5546,y,M451501 Philippines,SGD million,267.6
@@ -153101,7 +153121,8 @@ SG,domestic_exports,PH,TOTAL,2026-05-01,594.9125,y,M451501 Philippines,SGD milli
 SG,domestic_exports,PH,TOTAL,2026-06-01,415.4041,y,M451501 Philippines,SGD million,535.0
 SG,domestic_exports,PH,TOTAL,2026-07-01,351.3591,y,M451501 Philippines,SGD million,453.8
 SG,domestic_exports,PH,TOTAL,2026-08-01,331.9014,y,M451501 Philippines,SGD million,423.6
-SG,domestic_exports,PH,TOTAL,2026-09-01,280.9109,y,M451501 Philippines,SGD million,357.5
+SG,domestic_exports,PH,TOTAL,2026-09-01,281.9324,y,M451501 Philippines,SGD million,358.8
+SG,domestic_exports,PH,TOTAL,2026-10-01,430.0892,y,M451501 Philippines,SGD million,550.5
 SG,domestic_exports,TH,TOTAL,2003-01-01,244.4348,y,M451501 Thailand,SGD million,424.2
 SG,domestic_exports,TH,TOTAL,2003-02-01,205.1698,y,M451501 Thailand,SGD million,358.1
 SG,domestic_exports,TH,TOTAL,2003-03-01,232.4805,y,M451501 Thailand,SGD million,407.8
@@ -153385,8 +153406,9 @@ SG,domestic_exports,TH,TOTAL,2026-04-01,650.4297,y,M451501 Thailand,SGD million,
 SG,domestic_exports,TH,TOTAL,2026-05-01,685.2194,y,M451501 Thailand,SGD million,874.1
 SG,domestic_exports,TH,TOTAL,2026-06-01,704.4011,y,M451501 Thailand,SGD million,907.2
 SG,domestic_exports,TH,TOTAL,2026-07-01,563.9708,y,M451501 Thailand,SGD million,728.4
-SG,domestic_exports,TH,TOTAL,2026-08-01,541.9646,y,M451501 Thailand,SGD million,691.7
-SG,domestic_exports,TH,TOTAL,2026-09-01,702.3166,y,M451501 Thailand,SGD million,893.8
+SG,domestic_exports,TH,TOTAL,2026-08-01,541.8863,y,M451501 Thailand,SGD million,691.6
+SG,domestic_exports,TH,TOTAL,2026-09-01,702.1594,y,M451501 Thailand,SGD million,893.6
+SG,domestic_exports,TH,TOTAL,2026-10-01,803.6925,y,M451501 Thailand,SGD million,1028.7
 SG,domestic_exports,VN,TOTAL,2003-01-01,86.0304,y,M451501 Viet Nam,SGD million,149.3
 SG,domestic_exports,VN,TOTAL,2003-02-01,87.3733,y,M451501 Viet Nam,SGD million,152.5
 SG,domestic_exports,VN,TOTAL,2003-03-01,109.0002,y,M451501 Viet Nam,SGD million,191.2
@@ -153670,8 +153692,9 @@ SG,domestic_exports,VN,TOTAL,2026-04-01,691.8214,y,M451501 Viet Nam,SGD million,
 SG,domestic_exports,VN,TOTAL,2026-05-01,443.6954,y,M451501 Viet Nam,SGD million,566.0
 SG,domestic_exports,VN,TOTAL,2026-06-01,572.3259,y,M451501 Viet Nam,SGD million,737.1
 SG,domestic_exports,VN,TOTAL,2026-07-01,512.7923,y,M451501 Viet Nam,SGD million,662.3
-SG,domestic_exports,VN,TOTAL,2026-08-01,511.3288,y,M451501 Viet Nam,SGD million,652.6
+SG,domestic_exports,VN,TOTAL,2026-08-01,507.8813,y,M451501 Viet Nam,SGD million,648.2
 SG,domestic_exports,VN,TOTAL,2026-09-01,516.5618,y,M451501 Viet Nam,SGD million,657.4
+SG,domestic_exports,VN,TOTAL,2026-10-01,458.0586,y,M451501 Viet Nam,SGD million,586.3
 SG,domestic_exports,AT,TOTAL,2003-01-01,2.9964,y,M451501 Austria,SGD million,5.2
 SG,domestic_exports,AT,TOTAL,2003-02-01,3.6668,y,M451501 Austria,SGD million,6.4
 SG,domestic_exports,AT,TOTAL,2003-03-01,3.8196,y,M451501 Austria,SGD million,6.7
@@ -153957,6 +153980,7 @@ SG,domestic_exports,AT,TOTAL,2026-06-01,14.908,y,M451501 Austria,SGD million,19.
 SG,domestic_exports,AT,TOTAL,2026-07-01,5.5747,y,M451501 Austria,SGD million,7.2
 SG,domestic_exports,AT,TOTAL,2026-08-01,19.7448,y,M451501 Austria,SGD million,25.2
 SG,domestic_exports,AT,TOTAL,2026-09-01,16.6582,y,M451501 Austria,SGD million,21.2
+SG,domestic_exports,AT,TOTAL,2026-10-01,5.0001,y,M451501 Austria,SGD million,6.4
 SG,domestic_exports,BE,TOTAL,2003-01-01,27.7741,y,M451501 Belgium,SGD million,48.2
 SG,domestic_exports,BE,TOTAL,2003-02-01,41.5954,y,M451501 Belgium,SGD million,72.6
 SG,domestic_exports,BE,TOTAL,2003-03-01,40.9321,y,M451501 Belgium,SGD million,71.8
@@ -154242,6 +154266,7 @@ SG,domestic_exports,BE,TOTAL,2026-06-01,110.7227,y,M451501 Belgium,SGD million,1
 SG,domestic_exports,BE,TOTAL,2026-07-01,96.8599,y,M451501 Belgium,SGD million,125.1
 SG,domestic_exports,BE,TOTAL,2026-08-01,104.2089,y,M451501 Belgium,SGD million,133.0
 SG,domestic_exports,BE,TOTAL,2026-09-01,115.9789,y,M451501 Belgium,SGD million,147.6
+SG,domestic_exports,BE,TOTAL,2026-10-01,277.8196,y,M451501 Belgium,SGD million,355.6
 SG,domestic_exports,BG,TOTAL,2003-01-01,0.3457,y,M451501 Bulgaria,SGD million,0.6
 SG,domestic_exports,BG,TOTAL,2003-02-01,0.6875,y,M451501 Bulgaria,SGD million,1.2
 SG,domestic_exports,BG,TOTAL,2003-03-01,0.3421,y,M451501 Bulgaria,SGD million,0.6
@@ -154527,6 +154552,7 @@ SG,domestic_exports,BG,TOTAL,2026-06-01,0.4659,y,M451501 Bulgaria,SGD million,0.
 SG,domestic_exports,BG,TOTAL,2026-07-01,0.3097,y,M451501 Bulgaria,SGD million,0.4
 SG,domestic_exports,BG,TOTAL,2026-08-01,10.4209,y,M451501 Bulgaria,SGD million,13.3
 SG,domestic_exports,BG,TOTAL,2026-09-01,0.3143,y,M451501 Bulgaria,SGD million,0.4
+SG,domestic_exports,BG,TOTAL,2026-10-01,0.625,y,M451501 Bulgaria,SGD million,0.8
 SG,domestic_exports,CY,TOTAL,2003-01-01,11.2364,y,M451501 Cyprus,SGD million,19.5
 SG,domestic_exports,CY,TOTAL,2003-02-01,11.0577,y,M451501 Cyprus,SGD million,19.3
 SG,domestic_exports,CY,TOTAL,2003-03-01,15.8484,y,M451501 Cyprus,SGD million,27.8
@@ -154812,6 +154838,7 @@ SG,domestic_exports,CY,TOTAL,2026-06-01,48.6838,y,M451501 Cyprus,SGD million,62.
 SG,domestic_exports,CY,TOTAL,2026-07-01,31.2801,y,M451501 Cyprus,SGD million,40.4
 SG,domestic_exports,CY,TOTAL,2026-08-01,56.8056,y,M451501 Cyprus,SGD million,72.5
 SG,domestic_exports,CY,TOTAL,2026-09-01,45.3386,y,M451501 Cyprus,SGD million,57.7
+SG,domestic_exports,CY,TOTAL,2026-10-01,43.9855,y,M451501 Cyprus,SGD million,56.3
 SG,domestic_exports,CZ,TOTAL,2003-01-01,7.4333,y,M451501 Czechia,SGD million,12.9
 SG,domestic_exports,CZ,TOTAL,2003-02-01,7.6201,y,M451501 Czechia,SGD million,13.3
 SG,domestic_exports,CZ,TOTAL,2003-03-01,8.8363,y,M451501 Czechia,SGD million,15.5
@@ -155097,6 +155124,7 @@ SG,domestic_exports,CZ,TOTAL,2026-06-01,9.3951,y,M451501 Czechia,SGD million,12.
 SG,domestic_exports,CZ,TOTAL,2026-07-01,14.0141,y,M451501 Czechia,SGD million,18.1
 SG,domestic_exports,CZ,TOTAL,2026-08-01,22.4088,y,M451501 Czechia,SGD million,28.6
 SG,domestic_exports,CZ,TOTAL,2026-09-01,11.5507,y,M451501 Czechia,SGD million,14.7
+SG,domestic_exports,CZ,TOTAL,2026-10-01,11.2503,y,M451501 Czechia,SGD million,14.4
 SG,domestic_exports,DE,TOTAL,2003-01-01,144.9783,y,M451501 Germany,SGD million,251.6
 SG,domestic_exports,DE,TOTAL,2003-02-01,121.7497,y,M451501 Germany,SGD million,212.5
 SG,domestic_exports,DE,TOTAL,2003-03-01,184.0233,y,M451501 Germany,SGD million,322.8
@@ -155382,6 +155410,7 @@ SG,domestic_exports,DE,TOTAL,2026-06-01,187.9024,y,M451501 Germany,SGD million,2
 SG,domestic_exports,DE,TOTAL,2026-07-01,208.663,y,M451501 Germany,SGD million,269.5
 SG,domestic_exports,DE,TOTAL,2026-08-01,245.7136,y,M451501 Germany,SGD million,313.6
 SG,domestic_exports,DE,TOTAL,2026-09-01,210.9779,y,M451501 Germany,SGD million,268.5
+SG,domestic_exports,DE,TOTAL,2026-10-01,770.3323,y,M451501 Germany,SGD million,986.0
 SG,domestic_exports,DK,TOTAL,2003-01-01,8.5281,y,M451501 Denmark,SGD million,14.8
 SG,domestic_exports,DK,TOTAL,2003-02-01,6.3023,y,M451501 Denmark,SGD million,11.0
 SG,domestic_exports,DK,TOTAL,2003-03-01,5.3018,y,M451501 Denmark,SGD million,9.3
@@ -155667,6 +155696,7 @@ SG,domestic_exports,DK,TOTAL,2026-06-01,23.0608,y,M451501 Denmark,SGD million,29
 SG,domestic_exports,DK,TOTAL,2026-07-01,12.3882,y,M451501 Denmark,SGD million,16.0
 SG,domestic_exports,DK,TOTAL,2026-08-01,14.4952,y,M451501 Denmark,SGD million,18.5
 SG,domestic_exports,DK,TOTAL,2026-09-01,21.7657,y,M451501 Denmark,SGD million,27.7
+SG,domestic_exports,DK,TOTAL,2026-10-01,27.9695,y,M451501 Denmark,SGD million,35.8
 SG,domestic_exports,EE,TOTAL,2003-01-01,0.2881,y,M451501 Estonia,SGD million,0.5
 SG,domestic_exports,EE,TOTAL,2003-02-01,0.2292,y,M451501 Estonia,SGD million,0.4
 SG,domestic_exports,EE,TOTAL,2003-03-01,0.057,y,M451501 Estonia,SGD million,0.1
@@ -155952,6 +155982,7 @@ SG,domestic_exports,EE,TOTAL,2026-06-01,1.7858,y,M451501 Estonia,SGD million,2.3
 SG,domestic_exports,EE,TOTAL,2026-07-01,3.097,y,M451501 Estonia,SGD million,4.0
 SG,domestic_exports,EE,TOTAL,2026-08-01,1.0186,y,M451501 Estonia,SGD million,1.3
 SG,domestic_exports,EE,TOTAL,2026-09-01,3.4574,y,M451501 Estonia,SGD million,4.4
+SG,domestic_exports,EE,TOTAL,2026-10-01,6.172,y,M451501 Estonia,SGD million,7.9
 SG,domestic_exports,ES,TOTAL,2003-01-01,42.8712,y,M451501 Spain,SGD million,74.4
 SG,domestic_exports,ES,TOTAL,2003-02-01,29.6783,y,M451501 Spain,SGD million,51.8
 SG,domestic_exports,ES,TOTAL,2003-03-01,20.8651,y,M451501 Spain,SGD million,36.6
@@ -156237,6 +156268,7 @@ SG,domestic_exports,ES,TOTAL,2026-06-01,21.5078,y,M451501 Spain,SGD million,27.7
 SG,domestic_exports,ES,TOTAL,2026-07-01,9.1363,y,M451501 Spain,SGD million,11.8
 SG,domestic_exports,ES,TOTAL,2026-08-01,7.992,y,M451501 Spain,SGD million,10.2
 SG,domestic_exports,ES,TOTAL,2026-09-01,72.4475,y,M451501 Spain,SGD million,92.2
+SG,domestic_exports,ES,TOTAL,2026-10-01,52.0326,y,M451501 Spain,SGD million,66.6
 SG,domestic_exports,FI,TOTAL,2003-01-01,8.0672,y,M451501 Finland,SGD million,14.0
 SG,domestic_exports,FI,TOTAL,2003-02-01,8.9952,y,M451501 Finland,SGD million,15.7
 SG,domestic_exports,FI,TOTAL,2003-03-01,12.6559,y,M451501 Finland,SGD million,22.2
@@ -156522,6 +156554,7 @@ SG,domestic_exports,FI,TOTAL,2026-06-01,3.3388,y,M451501 Finland,SGD million,4.3
 SG,domestic_exports,FI,TOTAL,2026-07-01,3.0196,y,M451501 Finland,SGD million,3.9
 SG,domestic_exports,FI,TOTAL,2026-08-01,2.9774,y,M451501 Finland,SGD million,3.8
 SG,domestic_exports,FI,TOTAL,2026-09-01,3.0645,y,M451501 Finland,SGD million,3.9
+SG,domestic_exports,FI,TOTAL,2026-10-01,3.5938,y,M451501 Finland,SGD million,4.6
 SG,domestic_exports,FR,TOTAL,2003-01-01,109.7709,y,M451501 France,SGD million,190.5
 SG,domestic_exports,FR,TOTAL,2003-02-01,113.9577,y,M451501 France,SGD million,198.9
 SG,domestic_exports,FR,TOTAL,2003-03-01,93.0378,y,M451501 France,SGD million,163.2
@@ -156806,7 +156839,8 @@ SG,domestic_exports,FR,TOTAL,2026-05-01,96.1863,y,M451501 France,SGD million,122
 SG,domestic_exports,FR,TOTAL,2026-06-01,135.6469,y,M451501 France,SGD million,174.7
 SG,domestic_exports,FR,TOTAL,2026-07-01,169.7177,y,M451501 France,SGD million,219.2
 SG,domestic_exports,FR,TOTAL,2026-08-01,137.5871,y,M451501 France,SGD million,175.6
-SG,domestic_exports,FR,TOTAL,2026-09-01,252.3877,y,M451501 France,SGD million,321.2
+SG,domestic_exports,FR,TOTAL,2026-09-01,252.6234,y,M451501 France,SGD million,321.5
+SG,domestic_exports,FR,TOTAL,2026-10-01,213.5992,y,M451501 France,SGD million,273.4
 SG,domestic_exports,GR,TOTAL,2003-01-01,13.7718,y,M451501 Greece,SGD million,23.9
 SG,domestic_exports,GR,TOTAL,2003-02-01,15.5267,y,M451501 Greece,SGD million,27.1
 SG,domestic_exports,GR,TOTAL,2003-03-01,10.4325,y,M451501 Greece,SGD million,18.3
@@ -157092,6 +157126,7 @@ SG,domestic_exports,GR,TOTAL,2026-06-01,63.98,y,M451501 Greece,SGD million,82.4
 SG,domestic_exports,GR,TOTAL,2026-07-01,47.6944,y,M451501 Greece,SGD million,61.6
 SG,domestic_exports,GR,TOTAL,2026-08-01,55.9437,y,M451501 Greece,SGD million,71.4
 SG,domestic_exports,GR,TOTAL,2026-09-01,48.0888,y,M451501 Greece,SGD million,61.2
+SG,domestic_exports,GR,TOTAL,2026-10-01,54.9233,y,M451501 Greece,SGD million,70.3
 SG,domestic_exports,HR,TOTAL,2003-01-01,0.2305,y,M451501 Croatia,SGD million,0.4
 SG,domestic_exports,HR,TOTAL,2003-02-01,1.0313,y,M451501 Croatia,SGD million,1.8
 SG,domestic_exports,HR,TOTAL,2003-03-01,0.171,y,M451501 Croatia,SGD million,0.3
@@ -157377,6 +157412,7 @@ SG,domestic_exports,HR,TOTAL,2026-06-01,0.5435,y,M451501 Croatia,SGD million,0.7
 SG,domestic_exports,HR,TOTAL,2026-07-01,0.3871,y,M451501 Croatia,SGD million,0.5
 SG,domestic_exports,HR,TOTAL,2026-08-01,0.3134,y,M451501 Croatia,SGD million,0.4
 SG,domestic_exports,HR,TOTAL,2026-09-01,1.1001,y,M451501 Croatia,SGD million,1.4
+SG,domestic_exports,HR,TOTAL,2026-10-01,0.3125,y,M451501 Croatia,SGD million,0.4
 SG,domestic_exports,HU,TOTAL,2003-01-01,23.3947,y,M451501 Hungary,SGD million,40.6
 SG,domestic_exports,HU,TOTAL,2003-02-01,20.0529,y,M451501 Hungary,SGD million,35.0
 SG,domestic_exports,HU,TOTAL,2003-03-01,12.5419,y,M451501 Hungary,SGD million,22.0
@@ -157662,6 +157698,7 @@ SG,domestic_exports,HU,TOTAL,2026-06-01,13.2774,y,M451501 Hungary,SGD million,17
 SG,domestic_exports,HU,TOTAL,2026-07-01,34.2223,y,M451501 Hungary,SGD million,44.2
 SG,domestic_exports,HU,TOTAL,2026-08-01,29.4606,y,M451501 Hungary,SGD million,37.6
 SG,domestic_exports,HU,TOTAL,2026-09-01,86.7484,y,M451501 Hungary,SGD million,110.4
+SG,domestic_exports,HU,TOTAL,2026-10-01,13.9066,y,M451501 Hungary,SGD million,17.8
 SG,domestic_exports,IE,TOTAL,2003-01-01,84.5899,y,M451501 Ireland,SGD million,146.8
 SG,domestic_exports,IE,TOTAL,2003-02-01,63.9974,y,M451501 Ireland,SGD million,111.7
 SG,domestic_exports,IE,TOTAL,2003-03-01,77.7595,y,M451501 Ireland,SGD million,136.4
@@ -157947,6 +157984,7 @@ SG,domestic_exports,IE,TOTAL,2026-06-01,86.8078,y,M451501 Ireland,SGD million,11
 SG,domestic_exports,IE,TOTAL,2026-07-01,114.8227,y,M451501 Ireland,SGD million,148.3
 SG,domestic_exports,IE,TOTAL,2026-08-01,73.5731,y,M451501 Ireland,SGD million,93.9
 SG,domestic_exports,IE,TOTAL,2026-09-01,51.6247,y,M451501 Ireland,SGD million,65.7
+SG,domestic_exports,IE,TOTAL,2026-10-01,77.5801,y,M451501 Ireland,SGD million,99.3
 SG,domestic_exports,IT,TOTAL,2003-01-01,20.3408,y,M451501 Italy,SGD million,35.3
 SG,domestic_exports,IT,TOTAL,2003-02-01,21.1988,y,M451501 Italy,SGD million,37.0
 SG,domestic_exports,IT,TOTAL,2003-03-01,14.0241,y,M451501 Italy,SGD million,24.6
@@ -158232,6 +158270,7 @@ SG,domestic_exports,IT,TOTAL,2026-06-01,38.6675,y,M451501 Italy,SGD million,49.8
 SG,domestic_exports,IT,TOTAL,2026-07-01,36.6999,y,M451501 Italy,SGD million,47.4
 SG,domestic_exports,IT,TOTAL,2026-08-01,33.3782,y,M451501 Italy,SGD million,42.6
 SG,domestic_exports,IT,TOTAL,2026-09-01,36.2238,y,M451501 Italy,SGD million,46.1
+SG,domestic_exports,IT,TOTAL,2026-10-01,30.0008,y,M451501 Italy,SGD million,38.4
 SG,domestic_exports,LT,TOTAL,2003-01-01,0.1729,y,M451501 Lithuania,SGD million,0.3
 SG,domestic_exports,LT,TOTAL,2003-02-01,0.4584,y,M451501 Lithuania,SGD million,0.8
 SG,domestic_exports,LT,TOTAL,2003-03-01,0.3421,y,M451501 Lithuania,SGD million,0.6
@@ -158517,6 +158556,7 @@ SG,domestic_exports,LT,TOTAL,2026-06-01,0.1553,y,M451501 Lithuania,SGD million,0
 SG,domestic_exports,LT,TOTAL,2026-07-01,0.2323,y,M451501 Lithuania,SGD million,0.3
 SG,domestic_exports,LT,TOTAL,2026-08-01,0.2351,y,M451501 Lithuania,SGD million,0.3
 SG,domestic_exports,LT,TOTAL,2026-09-01,0.0786,y,M451501 Lithuania,SGD million,0.1
+SG,domestic_exports,LT,TOTAL,2026-10-01,0.2344,y,M451501 Lithuania,SGD million,0.3
 SG,domestic_exports,LU,TOTAL,2003-01-01,1.2101,y,M451501 Luxembourg,SGD million,2.1
 SG,domestic_exports,LU,TOTAL,2003-02-01,0.9167,y,M451501 Luxembourg,SGD million,1.6
 SG,domestic_exports,LU,TOTAL,2003-03-01,2.5654,y,M451501 Luxembourg,SGD million,4.5
@@ -158802,6 +158842,7 @@ SG,domestic_exports,LU,TOTAL,2026-06-01,7.5316,y,M451501 Luxembourg,SGD million,
 SG,domestic_exports,LU,TOTAL,2026-07-01,18.8145,y,M451501 Luxembourg,SGD million,24.3
 SG,domestic_exports,LU,TOTAL,2026-08-01,21.3902,y,M451501 Luxembourg,SGD million,27.3
 SG,domestic_exports,LU,TOTAL,2026-09-01,39.4454,y,M451501 Luxembourg,SGD million,50.2
+SG,domestic_exports,LU,TOTAL,2026-10-01,7.6564,y,M451501 Luxembourg,SGD million,9.8
 SG,domestic_exports,LV,TOTAL,2003-01-01,0.0,y,M451501 Latvia,SGD million,0.0
 SG,domestic_exports,LV,TOTAL,2003-02-01,0.1146,y,M451501 Latvia,SGD million,0.2
 SG,domestic_exports,LV,TOTAL,2003-03-01,0.057,y,M451501 Latvia,SGD million,0.1
@@ -159087,6 +159128,7 @@ SG,domestic_exports,LV,TOTAL,2026-06-01,0.1553,y,M451501 Latvia,SGD million,0.2
 SG,domestic_exports,LV,TOTAL,2026-07-01,0.0774,y,M451501 Latvia,SGD million,0.1
 SG,domestic_exports,LV,TOTAL,2026-08-01,0.4701,y,M451501 Latvia,SGD million,0.6
 SG,domestic_exports,LV,TOTAL,2026-09-01,0.3143,y,M451501 Latvia,SGD million,0.4
+SG,domestic_exports,LV,TOTAL,2026-10-01,1.0157,y,M451501 Latvia,SGD million,1.3
 SG,domestic_exports,MT,TOTAL,2003-01-01,13.2532,y,M451501 Malta,SGD million,23.0
 SG,domestic_exports,MT,TOTAL,2003-02-01,12.4328,y,M451501 Malta,SGD million,21.7
 SG,domestic_exports,MT,TOTAL,2003-03-01,10.2615,y,M451501 Malta,SGD million,18.0
@@ -159372,6 +159414,7 @@ SG,domestic_exports,MT,TOTAL,2026-06-01,116.4684,y,M451501 Malta,SGD million,150
 SG,domestic_exports,MT,TOTAL,2026-07-01,128.14,y,M451501 Malta,SGD million,165.5
 SG,domestic_exports,MT,TOTAL,2026-08-01,116.5886,y,M451501 Malta,SGD million,148.8
 SG,domestic_exports,MT,TOTAL,2026-09-01,119.3577,y,M451501 Malta,SGD million,151.9
+SG,domestic_exports,MT,TOTAL,2026-10-01,118.9093,y,M451501 Malta,SGD million,152.2
 SG,domestic_exports,NL,TOTAL,2003-01-01,291.3971,y,M451501 Netherlands,SGD million,505.7
 SG,domestic_exports,NL,TOTAL,2003-02-01,252.8957,y,M451501 Netherlands,SGD million,441.4
 SG,domestic_exports,NL,TOTAL,2003-03-01,316.1689,y,M451501 Netherlands,SGD million,554.6
@@ -159656,7 +159699,8 @@ SG,domestic_exports,NL,TOTAL,2026-05-01,532.8265,y,M451501 Netherlands,SGD milli
 SG,domestic_exports,NL,TOTAL,2026-06-01,970.4927,y,M451501 Netherlands,SGD million,1249.9
 SG,domestic_exports,NL,TOTAL,2026-07-01,716.1129,y,M451501 Netherlands,SGD million,924.9
 SG,domestic_exports,NL,TOTAL,2026-08-01,1052.5099,y,M451501 Netherlands,SGD million,1343.3
-SG,domestic_exports,NL,TOTAL,2026-09-01,740.5833,y,M451501 Netherlands,SGD million,942.5
+SG,domestic_exports,NL,TOTAL,2026-09-01,738.1475,y,M451501 Netherlands,SGD million,939.4
+SG,domestic_exports,NL,TOTAL,2026-10-01,907.0545,y,M451501 Netherlands,SGD million,1161.0
 SG,domestic_exports,PL,TOTAL,2003-01-01,9.7382,y,M451501 Poland,SGD million,16.9
 SG,domestic_exports,PL,TOTAL,2003-02-01,3.4376,y,M451501 Poland,SGD million,6.0
 SG,domestic_exports,PL,TOTAL,2003-03-01,5.7579,y,M451501 Poland,SGD million,10.1
@@ -159942,6 +159986,7 @@ SG,domestic_exports,PL,TOTAL,2026-06-01,24.536,y,M451501 Poland,SGD million,31.6
 SG,domestic_exports,PL,TOTAL,2026-07-01,27.4862,y,M451501 Poland,SGD million,35.5
 SG,domestic_exports,PL,TOTAL,2026-08-01,26.8749,y,M451501 Poland,SGD million,34.3
 SG,domestic_exports,PL,TOTAL,2026-09-01,29.3876,y,M451501 Poland,SGD million,37.4
+SG,domestic_exports,PL,TOTAL,2026-10-01,23.6725,y,M451501 Poland,SGD million,30.3
 SG,domestic_exports,PT,TOTAL,2003-01-01,1.6134,y,M451501 Portugal,SGD million,2.8
 SG,domestic_exports,PT,TOTAL,2003-02-01,1.2032,y,M451501 Portugal,SGD million,2.1
 SG,domestic_exports,PT,TOTAL,2003-03-01,7.7532,y,M451501 Portugal,SGD million,13.6
@@ -160227,6 +160272,7 @@ SG,domestic_exports,PT,TOTAL,2026-06-01,54.6625,y,M451501 Portugal,SGD million,7
 SG,domestic_exports,PT,TOTAL,2026-07-01,68.522,y,M451501 Portugal,SGD million,88.5
 SG,domestic_exports,PT,TOTAL,2026-08-01,60.8799,y,M451501 Portugal,SGD million,77.7
 SG,domestic_exports,PT,TOTAL,2026-09-01,57.5966,y,M451501 Portugal,SGD million,73.3
+SG,domestic_exports,PT,TOTAL,2026-10-01,82.6584,y,M451501 Portugal,SGD million,105.8
 SG,domestic_exports,RO,TOTAL,2003-01-01,0.0576,y,M451501 Romania,SGD million,0.1
 SG,domestic_exports,RO,TOTAL,2003-02-01,0.0573,y,M451501 Romania,SGD million,0.1
 SG,domestic_exports,RO,TOTAL,2003-03-01,0.228,y,M451501 Romania,SGD million,0.4
@@ -160512,6 +160558,7 @@ SG,domestic_exports,RO,TOTAL,2026-06-01,3.4941,y,M451501 Romania,SGD million,4.5
 SG,domestic_exports,RO,TOTAL,2026-07-01,4.723,y,M451501 Romania,SGD million,6.1
 SG,domestic_exports,RO,TOTAL,2026-08-01,2.5856,y,M451501 Romania,SGD million,3.3
 SG,domestic_exports,RO,TOTAL,2026-09-01,4.2431,y,M451501 Romania,SGD million,5.4
+SG,domestic_exports,RO,TOTAL,2026-10-01,3.047,y,M451501 Romania,SGD million,3.9
 SG,domestic_exports,SE,TOTAL,2003-01-01,3.515,y,M451501 Sweden,SGD million,6.1
 SG,domestic_exports,SE,TOTAL,2003-02-01,2.3491,y,M451501 Sweden,SGD million,4.1
 SG,domestic_exports,SE,TOTAL,2003-03-01,2.2803,y,M451501 Sweden,SGD million,4.0
@@ -160797,6 +160844,7 @@ SG,domestic_exports,SE,TOTAL,2026-06-01,3.8046,y,M451501 Sweden,SGD million,4.9
 SG,domestic_exports,SE,TOTAL,2026-07-01,4.0262,y,M451501 Sweden,SGD million,5.2
 SG,domestic_exports,SE,TOTAL,2026-08-01,5.7197,y,M451501 Sweden,SGD million,7.3
 SG,domestic_exports,SE,TOTAL,2026-09-01,5.6575,y,M451501 Sweden,SGD million,7.2
+SG,domestic_exports,SE,TOTAL,2026-10-01,8.2033,y,M451501 Sweden,SGD million,10.5
 SG,domestic_exports,SI,TOTAL,2003-01-01,0.5186,y,M451501 Slovenia,SGD million,0.9
 SG,domestic_exports,SI,TOTAL,2003-02-01,0.0573,y,M451501 Slovenia,SGD million,0.1
 SG,domestic_exports,SI,TOTAL,2003-03-01,0.285,y,M451501 Slovenia,SGD million,0.5
@@ -161082,6 +161130,7 @@ SG,domestic_exports,SI,TOTAL,2026-06-01,1.7858,y,M451501 Slovenia,SGD million,2.
 SG,domestic_exports,SI,TOTAL,2026-07-01,1.7808,y,M451501 Slovenia,SGD million,2.3
 SG,domestic_exports,SI,TOTAL,2026-08-01,2.0372,y,M451501 Slovenia,SGD million,2.6
 SG,domestic_exports,SI,TOTAL,2026-09-01,2.2787,y,M451501 Slovenia,SGD million,2.9
+SG,domestic_exports,SI,TOTAL,2026-10-01,3.5938,y,M451501 Slovenia,SGD million,4.6
 SG,domestic_exports,SK,TOTAL,2003-01-01,0.0576,y,M451501 Slovakia,SGD million,0.1
 SG,domestic_exports,SK,TOTAL,2003-02-01,0.0573,y,M451501 Slovakia,SGD million,0.1
 SG,domestic_exports,SK,TOTAL,2003-03-01,0.057,y,M451501 Slovakia,SGD million,0.1
@@ -161367,6 +161416,7 @@ SG,domestic_exports,SK,TOTAL,2026-06-01,0.4659,y,M451501 Slovakia,SGD million,0.
 SG,domestic_exports,SK,TOTAL,2026-07-01,0.6194,y,M451501 Slovakia,SGD million,0.8
 SG,domestic_exports,SK,TOTAL,2026-08-01,0.3134,y,M451501 Slovakia,SGD million,0.4
 SG,domestic_exports,SK,TOTAL,2026-09-01,0.6286,y,M451501 Slovakia,SGD million,0.8
+SG,domestic_exports,SK,TOTAL,2026-10-01,0.4688,y,M451501 Slovakia,SGD million,0.6
 SG,domestic_exports,WLD,electronic_products,1997-01-01,3648.237,y,M450981 Total Electronic Products,SGD thousand,5129647.0
 SG,domestic_exports,WLD,electronic_products,1997-02-01,2706.7652,y,M450981 Total Electronic Products,SGD thousand,3841840.0
 SG,domestic_exports,WLD,electronic_products,1997-03-01,3768.3935,y,M450981 Total Electronic Products,SGD thousand,5418232.0
@@ -161722,8 +161772,9 @@ SG,domestic_exports,WLD,electronic_products,2026-04-01,4960.8394,y,M450981 Total
 SG,domestic_exports,WLD,electronic_products,2026-05-01,5585.4422,y,M450981 Total Electronic Products,SGD thousand,7125068.2
 SG,domestic_exports,WLD,electronic_products,2026-06-01,5339.8448,y,M450981 Total Electronic Products,SGD thousand,6877199.7
 SG,domestic_exports,WLD,electronic_products,2026-07-01,5939.0682,y,M450981 Total Electronic Products,SGD thousand,7670640.0
-SG,domestic_exports,WLD,electronic_products,2026-08-01,6873.2689,y,M450981 Total Electronic Products,SGD thousand,8772233.0
-SG,domestic_exports,WLD,electronic_products,2026-09-01,6442.3482,y,M450981 Total Electronic Products,SGD thousand,8198824.8
+SG,domestic_exports,WLD,electronic_products,2026-08-01,6869.9544,y,M450981 Total Electronic Products,SGD thousand,8768002.7
+SG,domestic_exports,WLD,electronic_products,2026-09-01,6442.4237,y,M450981 Total Electronic Products,SGD thousand,8198920.9
+SG,domestic_exports,WLD,electronic_products,2026-10-01,6102.6421,y,M450981 Total Electronic Products,SGD thousand,7811181.3
 SG,exports,WLD,HS8419,2021-09-01,40.0049,y,T010001 EXPORTS WORLD HS 8419,SGD thousand,53921.0
 SG,exports,WLD,HS8419,2021-10-01,49.6599,y,T010001 EXPORTS WORLD HS 8419,SGD thousand,67087.0
 SG,exports,WLD,HS8419,2021-11-01,46.2032,y,T010001 EXPORTS WORLD HS 8419,SGD thousand,62695.0
@@ -161783,8 +161834,6 @@ SG,exports,WLD,HS8419,2026-04-01,71.356,y,T010001 EXPORTS WORLD HS 8419,SGD thou
 SG,exports,WLD,HS8419,2026-05-01,57.9595,y,T010001 EXPORTS WORLD HS 8419,SGD thousand,73936.0
 SG,exports,WLD,HS8419,2026-06-01,61.6048,y,T010001 EXPORTS WORLD HS 8419,SGD thousand,79341.0
 SG,exports,WLD,HS8419,2026-07-01,76.2421,y,T010001 EXPORTS WORLD HS 8419,SGD thousand,98471.0
-SG,exports,WLD,HS8419,2026-08-01,67.4028,y,T010001 EXPORTS WORLD HS 8419,SGD thousand,86025.0
-SG,exports,WLD,HS8419,2026-09-01,70.9027,y,T010001 EXPORTS WORLD HS 8419,SGD thousand,90234.0
 SG,exports,WLD,HS8470,2021-09-01,5.7914,y,T010001 EXPORTS WORLD HS 8470,SGD thousand,7806.0
 SG,exports,WLD,HS8470,2021-10-01,5.5747,y,T010001 EXPORTS WORLD HS 8470,SGD thousand,7531.0
 SG,exports,WLD,HS8470,2021-11-01,6.2427,y,T010001 EXPORTS WORLD HS 8470,SGD thousand,8471.0
@@ -161844,8 +161893,6 @@ SG,exports,WLD,HS8470,2026-04-01,6.9112,y,T010001 EXPORTS WORLD HS 8470,SGD thou
 SG,exports,WLD,HS8470,2026-05-01,4.1892,y,T010001 EXPORTS WORLD HS 8470,SGD thousand,5344.0
 SG,exports,WLD,HS8470,2026-06-01,7.9074,y,T010001 EXPORTS WORLD HS 8470,SGD thousand,10184.0
 SG,exports,WLD,HS8470,2026-07-01,5.8611,y,T010001 EXPORTS WORLD HS 8470,SGD thousand,7570.0
-SG,exports,WLD,HS8470,2026-08-01,6.7657,y,T010001 EXPORTS WORLD HS 8470,SGD thousand,8635.0
-SG,exports,WLD,HS8470,2026-09-01,6.1573,y,T010001 EXPORTS WORLD HS 8470,SGD thousand,7836.0
 SG,exports,WLD,HS8471,2021-09-01,837.1459,y,T010001 EXPORTS WORLD HS 8471,SGD thousand,1128355.0
 SG,exports,WLD,HS8471,2021-10-01,861.7778,y,T010001 EXPORTS WORLD HS 8471,SGD thousand,1164201.0
 SG,exports,WLD,HS8471,2021-11-01,792.5429,y,T010001 EXPORTS WORLD HS 8471,SGD thousand,1075434.0
@@ -161905,8 +161952,6 @@ SG,exports,WLD,HS8471,2026-04-01,9509.1984,y,T010001 EXPORTS WORLD HS 8471,SGD t
 SG,exports,WLD,HS8471,2026-05-01,4647.3507,y,T010001 EXPORTS WORLD HS 8471,SGD thousand,5928392.0
 SG,exports,WLD,HS8471,2026-06-01,5901.0319,y,T010001 EXPORTS WORLD HS 8471,SGD thousand,7599954.0
 SG,exports,WLD,HS8471,2026-07-01,8563.7238,y,T010001 EXPORTS WORLD HS 8471,SGD thousand,11060530.0
-SG,exports,WLD,HS8471,2026-08-01,5027.4025,y,T010001 EXPORTS WORLD HS 8471,SGD thousand,6416386.0
-SG,exports,WLD,HS8471,2026-09-01,4970.6218,y,T010001 EXPORTS WORLD HS 8471,SGD thousand,6325839.0
 SG,exports,WLD,HS8472,2021-09-01,5.4167,y,T010001 EXPORTS WORLD HS 8472,SGD thousand,7301.0
 SG,exports,WLD,HS8472,2021-10-01,3.4169,y,T010001 EXPORTS WORLD HS 8472,SGD thousand,4616.0
 SG,exports,WLD,HS8472,2021-11-01,1.4813,y,T010001 EXPORTS WORLD HS 8472,SGD thousand,2010.0
@@ -161966,8 +162011,6 @@ SG,exports,WLD,HS8472,2026-04-01,1.5898,y,T010001 EXPORTS WORLD HS 8472,SGD thou
 SG,exports,WLD,HS8472,2026-05-01,3.7542,y,T010001 EXPORTS WORLD HS 8472,SGD thousand,4789.0
 SG,exports,WLD,HS8472,2026-06-01,4.887,y,T010001 EXPORTS WORLD HS 8472,SGD thousand,6294.0
 SG,exports,WLD,HS8472,2026-07-01,3.1187,y,T010001 EXPORTS WORLD HS 8472,SGD thousand,4028.0
-SG,exports,WLD,HS8472,2026-08-01,4.0681,y,T010001 EXPORTS WORLD HS 8472,SGD thousand,5192.0
-SG,exports,WLD,HS8472,2026-09-01,2.8924,y,T010001 EXPORTS WORLD HS 8472,SGD thousand,3681.0
 SG,exports,WLD,HS8473,2021-09-01,292.6588,y,T010001 EXPORTS WORLD HS 8473,SGD thousand,394463.0
 SG,exports,WLD,HS8473,2021-10-01,267.1316,y,T010001 EXPORTS WORLD HS 8473,SGD thousand,360876.0
 SG,exports,WLD,HS8473,2021-11-01,296.9827,y,T010001 EXPORTS WORLD HS 8473,SGD thousand,402988.0
@@ -162027,8 +162070,6 @@ SG,exports,WLD,HS8473,2026-04-01,2162.5028,y,T010001 EXPORTS WORLD HS 8473,SGD t
 SG,exports,WLD,HS8473,2026-05-01,1369.426,y,T010001 EXPORTS WORLD HS 8473,SGD thousand,1746908.0
 SG,exports,WLD,HS8473,2026-06-01,1753.1979,y,T010001 EXPORTS WORLD HS 8473,SGD thousand,2257948.0
 SG,exports,WLD,HS8473,2026-07-01,2320.8964,y,T010001 EXPORTS WORLD HS 8473,SGD thousand,2997568.0
-SG,exports,WLD,HS8473,2026-08-01,2464.1127,y,T010001 EXPORTS WORLD HS 8473,SGD thousand,3144904.0
-SG,exports,WLD,HS8473,2026-09-01,2664.8601,y,T010001 EXPORTS WORLD HS 8473,SGD thousand,3391422.0
 SG,exports,WLD,HS85,2021-09-01,14546.9776,y,T010001 EXPORTS WORLD HS 85,SGD thousand,19607282.0
 SG,exports,WLD,HS85,2021-10-01,14555.5304,y,T010001 EXPORTS WORLD HS 85,SGD thousand,19663495.0
 SG,exports,WLD,HS85,2021-11-01,15504.4947,y,T010001 EXPORTS WORLD HS 85,SGD thousand,21038686.0
@@ -162088,8 +162129,6 @@ SG,exports,WLD,HS85,2026-04-01,25413.3962,y,T010001 EXPORTS WORLD HS 85,SGD thou
 SG,exports,WLD,HS85,2026-05-01,25185.0649,y,T010001 EXPORTS WORLD HS 85,SGD thousand,32127323.0
 SG,exports,WLD,HS85,2026-06-01,27632.1397,y,T010001 EXPORTS WORLD HS 85,SGD thousand,35587503.0
 SG,exports,WLD,HS85,2026-07-01,27954.5768,y,T010001 EXPORTS WORLD HS 85,SGD thousand,36104905.0
-SG,exports,WLD,HS85,2026-08-01,27799.8902,y,T010001 EXPORTS WORLD HS 85,SGD thousand,35480514.0
-SG,exports,WLD,HS85,2026-09-01,30894.9034,y,T010001 EXPORTS WORLD HS 85,SGD thousand,39318257.0
 SG,exports,WLD,TOTAL,1981-01-01,1858.6088,y,"M451001 Total Merchandise Exports, (At Current Prices)",SGD thousand,3868119.0
 SG,exports,WLD,TOTAL,1981-02-01,1516.8061,y,"M451001 Total Merchandise Exports, (At Current Prices)",SGD thousand,3165448.0
 SG,exports,WLD,TOTAL,1981-03-01,1781.5142,y,"M451001 Total Merchandise Exports, (At Current Prices)",SGD thousand,3738953.0
@@ -162636,9 +162675,10 @@ SG,exports,WLD,TOTAL,2026-03-01,64261.2029,y,"M451001 Total Merchandise Exports,
 SG,exports,WLD,TOTAL,2026-04-01,70354.4277,y,"M451001 Total Merchandise Exports, (At Current Prices)",SGD thousand,89745392.0
 SG,exports,WLD,TOTAL,2026-05-01,62053.6451,y,"M451001 Total Merchandise Exports, (At Current Prices)",SGD thousand,79158720.0
 SG,exports,WLD,TOTAL,2026-06-01,66323.7683,y,"M451001 Total Merchandise Exports, (At Current Prices)",SGD thousand,85418550.0
-SG,exports,WLD,TOTAL,2026-07-01,69880.7515,y,"M451001 Total Merchandise Exports, (At Current Prices)",SGD thousand,90254913.0
-SG,exports,WLD,TOTAL,2026-08-01,66335.5358,y,"M451001 Total Merchandise Exports, (At Current Prices)",SGD thousand,84662885.0
-SG,exports,WLD,TOTAL,2026-09-01,74196.0921,y,"M451001 Total Merchandise Exports, (At Current Prices)",SGD thousand,94425316.0
+SG,exports,WLD,TOTAL,2026-07-01,69880.6191,y,"M451001 Total Merchandise Exports, (At Current Prices)",SGD thousand,90254742.0
+SG,exports,WLD,TOTAL,2026-08-01,66332.708,y,"M451001 Total Merchandise Exports, (At Current Prices)",SGD thousand,84659276.0
+SG,exports,WLD,TOTAL,2026-09-01,74191.4561,y,"M451001 Total Merchandise Exports, (At Current Prices)",SGD thousand,94419416.0
+SG,exports,WLD,TOTAL,2026-10-01,85298.0025,y,"M451001 Total Merchandise Exports, (At Current Prices)",SGD thousand,109178640.0
 SG,exports,US,TOTAL,2003-01-01,1600.4658,y,M451501 + M451511 (calculated),SGD million,2777.5
 SG,exports,US,TOTAL,2003-02-01,1386.8583,y,M451501 + M451511 (calculated),SGD million,2420.6000000000004
 SG,exports,US,TOTAL,2003-03-01,1542.4778,y,M451501 + M451511 (calculated),SGD million,2705.7
@@ -162923,7 +162963,8 @@ SG,exports,US,TOTAL,2026-05-01,5915.8869,y,M451501 + M451511 (calculated),SGD mi
 SG,exports,US,TOTAL,2026-06-01,5840.0382,y,M451501 + M451511 (calculated),SGD million,7521.4
 SG,exports,US,TOTAL,2026-07-01,7756.9219,y,M451501 + M451511 (calculated),SGD million,10018.5
 SG,exports,US,TOTAL,2026-08-01,6253.0826,y,M451501 + M451511 (calculated),SGD million,7980.7
-SG,exports,US,TOTAL,2026-09-01,6837.0183,y,M451501 + M451511 (calculated),SGD million,8701.1
+SG,exports,US,TOTAL,2026-09-01,6837.8827,y,M451501 + M451511 (calculated),SGD million,8702.2
+SG,exports,US,TOTAL,2026-10-01,9347.74,y,M451501 + M451511 (calculated),SGD million,11964.8
 SG,exports,CN,TOTAL,2003-01-01,725.4101,y,M451501 + M451511 (calculated),SGD million,1258.9
 SG,exports,CN,TOTAL,2003-02-01,591.675,y,M451501 + M451511 (calculated),SGD million,1032.7
 SG,exports,CN,TOTAL,2003-03-01,741.566,y,M451501 + M451511 (calculated),SGD million,1300.8
@@ -163208,7 +163249,8 @@ SG,exports,CN,TOTAL,2026-05-01,6062.2437,y,M451501 + M451511 (calculated),SGD mi
 SG,exports,CN,TOTAL,2026-06-01,6372.5319,y,M451501 + M451511 (calculated),SGD million,8207.2
 SG,exports,CN,TOTAL,2026-07-01,7100.6593,y,M451501 + M451511 (calculated),SGD million,9170.9
 SG,exports,CN,TOTAL,2026-08-01,7546.84,y,M451501 + M451511 (calculated),SGD million,9631.9
-SG,exports,CN,TOTAL,2026-09-01,7518.4336,y,M451501 + M451511 (calculated),SGD million,9568.3
+SG,exports,CN,TOTAL,2026-09-01,7508.1401,y,M451501 + M451511 (calculated),SGD million,9555.2
+SG,exports,CN,TOTAL,2026-10-01,11170.2087,y,M451501 + M451511 (calculated),SGD million,14297.5
 SG,exports,HK,TOTAL,2003-01-01,1312.526,y,M451501 + M451511 (calculated),SGD million,2277.8
 SG,exports,HK,TOTAL,2003-02-01,998.1759,y,M451501 + M451511 (calculated),SGD million,1742.2
 SG,exports,HK,TOTAL,2003-03-01,1330.0643,y,M451501 + M451511 (calculated),SGD million,2333.1000000000004
@@ -163492,8 +163534,9 @@ SG,exports,HK,TOTAL,2026-04-01,6559.8779,y,M451501 + M451511 (calculated),SGD mi
 SG,exports,HK,TOTAL,2026-05-01,6356.6035,y,M451501 + M451511 (calculated),SGD million,8108.799999999999
 SG,exports,HK,TOTAL,2026-06-01,7403.5105,y,M451501 + M451511 (calculated),SGD million,9535.0
 SG,exports,HK,TOTAL,2026-07-01,7406.879,y,M451501 + M451511 (calculated),SGD million,9566.4
-SG,exports,HK,TOTAL,2026-08-01,7520.2785,y,M451501 + M451511 (calculated),SGD million,9598.0
-SG,exports,HK,TOTAL,2026-09-01,9374.5673,y,M451501 + M451511 (calculated),SGD million,11930.5
+SG,exports,HK,TOTAL,2026-08-01,7520.3568,y,M451501 + M451511 (calculated),SGD million,9598.1
+SG,exports,HK,TOTAL,2026-09-01,9379.7533,y,M451501 + M451511 (calculated),SGD million,11937.1
+SG,exports,HK,TOTAL,2026-10-01,8242.5554,y,M451501 + M451511 (calculated),SGD million,10550.199999999999
 SG,exports,JP,TOTAL,2003-01-01,821.9854,y,M451501 + M451511 (calculated),SGD million,1426.5
 SG,exports,JP,TOTAL,2003-02-01,643.8699,y,M451501 + M451511 (calculated),SGD million,1123.8
 SG,exports,JP,TOTAL,2003-03-01,801.4819,y,M451501 + M451511 (calculated),SGD million,1405.9
@@ -163777,8 +163820,9 @@ SG,exports,JP,TOTAL,2026-04-01,1990.329,y,M451501 + M451511 (calculated),SGD mil
 SG,exports,JP,TOTAL,2026-05-01,1895.3478,y,M451501 + M451511 (calculated),SGD million,2417.8
 SG,exports,JP,TOTAL,2026-06-01,1957.4462,y,M451501 + M451511 (calculated),SGD million,2521.0
 SG,exports,JP,TOTAL,2026-07-01,1914.5122,y,M451501 + M451511 (calculated),SGD million,2472.7
-SG,exports,JP,TOTAL,2026-08-01,2077.1263,y,M451501 + M451511 (calculated),SGD million,2651.0
-SG,exports,JP,TOTAL,2026-09-01,2144.3522,y,M451501 + M451511 (calculated),SGD million,2729.0
+SG,exports,JP,TOTAL,2026-08-01,2076.8129,y,M451501 + M451511 (calculated),SGD million,2650.6
+SG,exports,JP,TOTAL,2026-09-01,2144.5094,y,M451501 + M451511 (calculated),SGD million,2729.2
+SG,exports,JP,TOTAL,2026-10-01,2185.8374,y,M451501 + M451511 (calculated),SGD million,2797.8
 SG,exports,EU,TOTAL,2003-01-01,1384.3812,y,sum of the 27 current EU members (calculated),SGD million,2402.5
 SG,exports,EU,TOTAL,2003-02-01,1173.4956,y,sum of the 27 current EU members (calculated),SGD million,2048.2
 SG,exports,EU,TOTAL,2003-03-01,1375.9562,y,sum of the 27 current EU members (calculated),SGD million,2413.6
@@ -164063,7 +164107,8 @@ SG,exports,EU,TOTAL,2026-05-01,3667.9345,y,sum of the 27 current EU members (cal
 SG,exports,EU,TOTAL,2026-06-01,3907.3611,y,sum of the 27 current EU members (calculated),SGD million,5032.3
 SG,exports,EU,TOTAL,2026-07-01,4117.2815,y,sum of the 27 current EU members (calculated),SGD million,5317.7
 SG,exports,EU,TOTAL,2026-08-01,4033.8248,y,sum of the 27 current EU members (calculated),SGD million,5148.3
-SG,exports,EU,TOTAL,2026-09-01,4475.1666,y,sum of the 27 current EU members (calculated),SGD million,5695.3
+SG,exports,EU,TOTAL,2026-09-01,4473.1236,y,sum of the 27 current EU members (calculated),SGD million,5692.7
+SG,exports,EU,TOTAL,2026-10-01,5353.575,y,sum of the 27 current EU members (calculated),SGD million,6852.4
 SG,exports,TW,TOTAL,2003-01-01,578.0116,y,M451501 + M451511 (calculated),SGD million,1003.1
 SG,exports,TW,TOTAL,2003-02-01,538.7927,y,M451501 + M451511 (calculated),SGD million,940.4
 SG,exports,TW,TOTAL,2003-03-01,585.5339,y,M451501 + M451511 (calculated),SGD million,1027.1
@@ -164348,7 +164393,8 @@ SG,exports,TW,TOTAL,2026-05-01,7208.7183,y,M451501 + M451511 (calculated),SGD mi
 SG,exports,TW,TOTAL,2026-06-01,8817.515,y,M451501 + M451511 (calculated),SGD million,11356.099999999999
 SG,exports,TW,TOTAL,2026-07-01,6961.6796,y,M451501 + M451511 (calculated),SGD million,8991.400000000001
 SG,exports,TW,TOTAL,2026-08-01,5397.1592,y,M451501 + M451511 (calculated),SGD million,6888.3
-SG,exports,TW,TOTAL,2026-09-01,6035.9311,y,M451501 + M451511 (calculated),SGD million,7681.599999999999
+SG,exports,TW,TOTAL,2026-09-01,6036.2454,y,M451501 + M451511 (calculated),SGD million,7682.0
+SG,exports,TW,TOTAL,2026-10-01,8123.0211,y,M451501 + M451511 (calculated),SGD million,10397.2
 SG,exports,KR,TOTAL,2003-01-01,583.601,y,M451501 + M451511 (calculated),SGD million,1012.8
 SG,exports,KR,TOTAL,2003-02-01,487.5719,y,M451501 + M451511 (calculated),SGD million,851.0
 SG,exports,KR,TOTAL,2003-03-01,546.4261,y,M451501 + M451511 (calculated),SGD million,958.5
@@ -164632,8 +164678,9 @@ SG,exports,KR,TOTAL,2026-04-01,3018.3011,y,M451501 + M451511 (calculated),SGD mi
 SG,exports,KR,TOTAL,2026-05-01,2721.3582,y,M451501 + M451511 (calculated),SGD million,3471.5
 SG,exports,KR,TOTAL,2026-06-01,3034.3134,y,M451501 + M451511 (calculated),SGD million,3907.8999999999996
 SG,exports,KR,TOTAL,2026-07-01,2899.6804,y,M451501 + M451511 (calculated),SGD million,3745.1000000000004
-SG,exports,KR,TOTAL,2026-08-01,2928.7403,y,M451501 + M451511 (calculated),SGD million,3737.9
-SG,exports,KR,TOTAL,2026-09-01,3185.4906,y,M451501 + M451511 (calculated),SGD million,4054.0
+SG,exports,KR,TOTAL,2026-08-01,2929.0537,y,M451501 + M451511 (calculated),SGD million,3738.3
+SG,exports,KR,TOTAL,2026-09-01,3185.3335,y,M451501 + M451511 (calculated),SGD million,4053.8
+SG,exports,KR,TOTAL,2026-10-01,2527.0961,y,M451501 + M451511 (calculated),SGD million,3234.6
 SG,exports,IN,TOTAL,2003-01-01,250.658,y,M451501 + M451511 (calculated),SGD million,435.0
 SG,exports,IN,TOTAL,2003-02-01,218.8057,y,M451501 + M451511 (calculated),SGD million,381.9
 SG,exports,IN,TOTAL,2003-03-01,258.0773,y,M451501 + M451511 (calculated),SGD million,452.70000000000005
@@ -164918,7 +164965,8 @@ SG,exports,IN,TOTAL,2026-05-01,1623.4863,y,M451501 + M451511 (calculated),SGD mi
 SG,exports,IN,TOTAL,2026-06-01,2067.703,y,M451501 + M451511 (calculated),SGD million,2663.0
 SG,exports,IN,TOTAL,2026-07-01,2106.6835,y,M451501 + M451511 (calculated),SGD million,2720.9
 SG,exports,IN,TOTAL,2026-08-01,1867.1414,y,M451501 + M451511 (calculated),SGD million,2383.0
-SG,exports,IN,TOTAL,2026-09-01,2174.5256,y,M451501 + M451511 (calculated),SGD million,2767.4
+SG,exports,IN,TOTAL,2026-09-01,2174.447,y,M451501 + M451511 (calculated),SGD million,2767.3
+SG,exports,IN,TOTAL,2026-10-01,2213.885,y,M451501 + M451511 (calculated),SGD million,2833.7
 SG,exports,ID,TOTAL,2003-01-01,1358.0478,y,M451501 + M451511 (calculated),SGD million,2356.8
 SG,exports,ID,TOTAL,2003-02-01,1241.1597,y,M451501 + M451511 (calculated),SGD million,2166.3
 SG,exports,ID,TOTAL,2003-03-01,1429.5441,y,M451501 + M451511 (calculated),SGD million,2507.6
@@ -165202,8 +165250,9 @@ SG,exports,ID,TOTAL,2026-04-01,3837.2766,y,M451501 + M451511 (calculated),SGD mi
 SG,exports,ID,TOTAL,2026-05-01,3380.0029,y,M451501 + M451511 (calculated),SGD million,4311.7
 SG,exports,ID,TOTAL,2026-06-01,3588.4703,y,M451501 + M451511 (calculated),SGD million,4621.6
 SG,exports,ID,TOTAL,2026-07-01,3221.9273,y,M451501 + M451511 (calculated),SGD million,4161.3
-SG,exports,ID,TOTAL,2026-08-01,3248.3403,y,M451501 + M451511 (calculated),SGD million,4145.8
-SG,exports,ID,TOTAL,2026-09-01,3676.7508,y,M451501 + M451511 (calculated),SGD million,4679.200000000001
+SG,exports,ID,TOTAL,2026-08-01,3248.4187,y,M451501 + M451511 (calculated),SGD million,4145.9
+SG,exports,ID,TOTAL,2026-09-01,3676.5151,y,M451501 + M451511 (calculated),SGD million,4678.9
+SG,exports,ID,TOTAL,2026-10-01,4118.7776,y,M451501 + M451511 (calculated),SGD million,5271.9
 SG,exports,MY,TOTAL,2003-01-01,1859.3063,y,M451501 + M451511 (calculated),SGD million,3226.7
 SG,exports,MY,TOTAL,2003-02-01,1594.549,y,M451501 + M451511 (calculated),SGD million,2783.1
 SG,exports,MY,TOTAL,2003-03-01,1822.9024,y,M451501 + M451511 (calculated),SGD million,3197.6000000000004
@@ -165488,7 +165537,8 @@ SG,exports,MY,TOTAL,2026-05-01,6219.3401,y,M451501 + M451511 (calculated),SGD mi
 SG,exports,MY,TOTAL,2026-06-01,6702.2152,y,M451501 + M451511 (calculated),SGD million,8631.8
 SG,exports,MY,TOTAL,2026-07-01,7177.311,y,M451501 + M451511 (calculated),SGD million,9269.9
 SG,exports,MY,TOTAL,2026-08-01,6809.6208,y,M451501 + M451511 (calculated),SGD million,8691.0
-SG,exports,MY,TOTAL,2026-09-01,7280.0325,y,M451501 + M451511 (calculated),SGD million,9264.9
+SG,exports,MY,TOTAL,2026-09-01,7280.1897,y,M451501 + M451511 (calculated),SGD million,9265.099999999999
+SG,exports,MY,TOTAL,2026-10-01,8417.7942,y,M451501 + M451511 (calculated),SGD million,10774.5
 SG,exports,PH,TOTAL,2003-01-01,273.707,y,M451501 + M451511 (calculated),SGD million,475.0
 SG,exports,PH,TOTAL,2003-02-01,231.0667,y,M451501 + M451511 (calculated),SGD million,403.3
 SG,exports,PH,TOTAL,2003-03-01,278.9424,y,M451501 + M451511 (calculated),SGD million,489.3
@@ -165773,7 +165823,8 @@ SG,exports,PH,TOTAL,2026-05-01,1172.3437,y,M451501 + M451511 (calculated),SGD mi
 SG,exports,PH,TOTAL,2026-06-01,1201.0226,y,M451501 + M451511 (calculated),SGD million,1546.8
 SG,exports,PH,TOTAL,2026-07-01,1126.6254,y,M451501 + M451511 (calculated),SGD million,1455.1
 SG,exports,PH,TOTAL,2026-08-01,1011.4532,y,M451501 + M451511 (calculated),SGD million,1290.9
-SG,exports,PH,TOTAL,2026-09-01,991.7138,y,M451501 + M451511 (calculated),SGD million,1262.1
+SG,exports,PH,TOTAL,2026-09-01,993.0496,y,M451501 + M451511 (calculated),SGD million,1263.8
+SG,exports,PH,TOTAL,2026-10-01,1440.3495,y,M451501 + M451511 (calculated),SGD million,1843.6
 SG,exports,TH,TOTAL,2003-01-01,524.826,y,M451501 + M451511 (calculated),SGD million,910.8
 SG,exports,TH,TOTAL,2003-02-01,427.8142,y,M451501 + M451511 (calculated),SGD million,746.7
 SG,exports,TH,TOTAL,2003-03-01,517.8078,y,M451501 + M451511 (calculated),SGD million,908.3
@@ -166057,8 +166108,9 @@ SG,exports,TH,TOTAL,2026-04-01,4759.888,y,M451501 + M451511 (calculated),SGD mil
 SG,exports,TH,TOTAL,2026-05-01,3511.2301,y,M451501 + M451511 (calculated),SGD million,4479.1
 SG,exports,TH,TOTAL,2026-06-01,3705.4046,y,M451501 + M451511 (calculated),SGD million,4772.2
 SG,exports,TH,TOTAL,2026-07-01,3127.0805,y,M451501 + M451511 (calculated),SGD million,4038.8
-SG,exports,TH,TOTAL,2026-08-01,3049.0114,y,M451501 + M451511 (calculated),SGD million,3891.3999999999996
-SG,exports,TH,TOTAL,2026-09-01,3801.2945,y,M451501 + M451511 (calculated),SGD million,4837.7
+SG,exports,TH,TOTAL,2026-08-01,3049.0114,y,M451501 + M451511 (calculated),SGD million,3891.4
+SG,exports,TH,TOTAL,2026-09-01,3801.9231,y,M451501 + M451511 (calculated),SGD million,4838.5
+SG,exports,TH,TOTAL,2026-10-01,4930.5953,y,M451501 + M451511 (calculated),SGD million,6311.0
 SG,exports,VN,TOTAL,2003-01-01,171.5999,y,M451501 + M451511 (calculated),SGD million,297.8
 SG,exports,VN,TOTAL,2003-02-01,165.5223,y,M451501 + M451511 (calculated),SGD million,288.9
 SG,exports,VN,TOTAL,2003-03-01,202.8931,y,M451501 + M451511 (calculated),SGD million,355.9
@@ -166342,8 +166394,9 @@ SG,exports,VN,TOTAL,2026-04-01,2030.0744,y,M451501 + M451511 (calculated),SGD mi
 SG,exports,VN,TOTAL,2026-05-01,1582.6444,y,M451501 + M451511 (calculated),SGD million,2018.9
 SG,exports,VN,TOTAL,2026-06-01,1995.2597,y,M451501 + M451511 (calculated),SGD million,2569.7
 SG,exports,VN,TOTAL,2026-07-01,2314.6497,y,M451501 + M451511 (calculated),SGD million,2989.5
-SG,exports,VN,TOTAL,2026-08-01,2071.2499,y,M451501 + M451511 (calculated),SGD million,2643.5
-SG,exports,VN,TOTAL,2026-09-01,2314.3917,y,M451501 + M451511 (calculated),SGD million,2945.4
+SG,exports,VN,TOTAL,2026-08-01,2071.1715,y,M451501 + M451511 (calculated),SGD million,2643.4
+SG,exports,VN,TOTAL,2026-09-01,2314.4703,y,M451501 + M451511 (calculated),SGD million,2945.5
+SG,exports,VN,TOTAL,2026-10-01,2418.109,y,M451501 + M451511 (calculated),SGD million,3095.1000000000004
 SG,exports,AT,TOTAL,2003-01-01,4.6674,y,M451501 + M451511 (calculated),SGD million,8.1
 SG,exports,AT,TOTAL,2003-02-01,5.271,y,M451501 + M451511 (calculated),SGD million,9.2
 SG,exports,AT,TOTAL,2003-03-01,6.0429,y,M451501 + M451511 (calculated),SGD million,10.6
@@ -166629,6 +166682,7 @@ SG,exports,AT,TOTAL,2026-06-01,27.7971,y,M451501 + M451511 (calculated),SGD mill
 SG,exports,AT,TOTAL,2026-07-01,33.99,y,M451501 + M451511 (calculated),SGD million,43.900000000000006
 SG,exports,AT,TOTAL,2026-08-01,47.6384,y,M451501 + M451511 (calculated),SGD million,60.8
 SG,exports,AT,TOTAL,2026-09-01,43.1385,y,M451501 + M451511 (calculated),SGD million,54.900000000000006
+SG,exports,AT,TOTAL,2026-10-01,21.4849,y,M451501 + M451511 (calculated),SGD million,27.5
 SG,exports,BE,TOTAL,2003-01-01,49.7859,y,M451501 + M451511 (calculated),SGD million,86.4
 SG,exports,BE,TOTAL,2003-02-01,62.0494,y,M451501 + M451511 (calculated),SGD million,108.3
 SG,exports,BE,TOTAL,2003-03-01,58.5477,y,M451501 + M451511 (calculated),SGD million,102.69999999999999
@@ -166914,6 +166968,7 @@ SG,exports,BE,TOTAL,2026-06-01,179.1285,y,M451501 + M451511 (calculated),SGD mil
 SG,exports,BE,TOTAL,2026-07-01,157.0973,y,M451501 + M451511 (calculated),SGD million,202.89999999999998
 SG,exports,BE,TOTAL,2026-08-01,155.1381,y,M451501 + M451511 (calculated),SGD million,198.0
 SG,exports,BE,TOTAL,2026-09-01,219.6213,y,M451501 + M451511 (calculated),SGD million,279.5
+SG,exports,BE,TOTAL,2026-10-01,385.9474,y,M451501 + M451511 (calculated),SGD million,494.0
 SG,exports,BG,TOTAL,2003-01-01,0.6338,y,M451501 + M451511 (calculated),SGD million,1.1
 SG,exports,BG,TOTAL,2003-02-01,0.9167,y,M451501 + M451511 (calculated),SGD million,1.6
 SG,exports,BG,TOTAL,2003-03-01,0.9691,y,M451501 + M451511 (calculated),SGD million,1.7000000000000002
@@ -167199,6 +167254,7 @@ SG,exports,BG,TOTAL,2026-06-01,1.8635,y,M451501 + M451511 (calculated),SGD milli
 SG,exports,BG,TOTAL,2026-07-01,13.3947,y,M451501 + M451511 (calculated),SGD million,17.299999999999997
 SG,exports,BG,TOTAL,2026-08-01,11.2044,y,M451501 + M451511 (calculated),SGD million,14.3
 SG,exports,BG,TOTAL,2026-09-01,1.9644,y,M451501 + M451511 (calculated),SGD million,2.5
+SG,exports,BG,TOTAL,2026-10-01,2.5782,y,M451501 + M451511 (calculated),SGD million,3.3
 SG,exports,CY,TOTAL,2003-01-01,12.4465,y,M451501 + M451511 (calculated),SGD million,21.6
 SG,exports,CY,TOTAL,2003-02-01,12.2036,y,M451501 + M451511 (calculated),SGD million,21.3
 SG,exports,CY,TOTAL,2003-03-01,18.1857,y,M451501 + M451511 (calculated),SGD million,31.9
@@ -167484,6 +167540,7 @@ SG,exports,CY,TOTAL,2026-06-01,50.0814,y,M451501 + M451511 (calculated),SGD mill
 SG,exports,CY,TOTAL,2026-07-01,31.7447,y,M451501 + M451511 (calculated),SGD million,41.0
 SG,exports,CY,TOTAL,2026-08-01,57.5108,y,M451501 + M451511 (calculated),SGD million,73.4
 SG,exports,CY,TOTAL,2026-09-01,47.303,y,M451501 + M451511 (calculated),SGD million,60.2
+SG,exports,CY,TOTAL,2026-10-01,46.1731,y,M451501 + M451511 (calculated),SGD million,59.099999999999994
 SG,exports,CZ,TOTAL,2003-01-01,8.4705,y,M451501 + M451511 (calculated),SGD million,14.700000000000001
 SG,exports,CZ,TOTAL,2003-02-01,8.9379,y,M451501 + M451511 (calculated),SGD million,15.600000000000001
 SG,exports,CZ,TOTAL,2003-03-01,10.1475,y,M451501 + M451511 (calculated),SGD million,17.8
@@ -167769,6 +167826,7 @@ SG,exports,CZ,TOTAL,2026-06-01,144.2656,y,M451501 + M451511 (calculated),SGD mil
 SG,exports,CZ,TOTAL,2026-07-01,201.8495,y,M451501 + M451511 (calculated),SGD million,260.7
 SG,exports,CZ,TOTAL,2026-08-01,122.23,y,M451501 + M451511 (calculated),SGD million,156.0
 SG,exports,CZ,TOTAL,2026-09-01,106.6283,y,M451501 + M451511 (calculated),SGD million,135.7
+SG,exports,CZ,TOTAL,2026-10-01,310.3986,y,M451501 + M451511 (calculated),SGD million,397.29999999999995
 SG,exports,DE,TOTAL,2003-01-01,425.5424,y,M451501 + M451511 (calculated),SGD million,738.5
 SG,exports,DE,TOTAL,2003-02-01,300.0486,y,M451501 + M451511 (calculated),SGD million,523.7
 SG,exports,DE,TOTAL,2003-03-01,415.3636,y,M451501 + M451511 (calculated),SGD million,728.6
@@ -168053,7 +168111,8 @@ SG,exports,DE,TOTAL,2026-05-01,685.6114,y,M451501 + M451511 (calculated),SGD mil
 SG,exports,DE,TOTAL,2026-06-01,719.1538,y,M451501 + M451511 (calculated),SGD million,926.2
 SG,exports,DE,TOTAL,2026-07-01,900.5416,y,M451501 + M451511 (calculated),SGD million,1163.1
 SG,exports,DE,TOTAL,2026-08-01,781.6451,y,M451501 + M451511 (calculated),SGD million,997.6
-SG,exports,DE,TOTAL,2026-09-01,802.8159,y,M451501 + M451511 (calculated),SGD million,1021.7
+SG,exports,DE,TOTAL,2026-09-01,802.8945,y,M451501 + M451511 (calculated),SGD million,1021.8
+SG,exports,DE,TOTAL,2026-10-01,1357.613,y,M451501 + M451511 (calculated),SGD million,1737.7
 SG,exports,DK,TOTAL,2003-01-01,19.4188,y,M451501 + M451511 (calculated),SGD million,33.7
 SG,exports,DK,TOTAL,2003-02-01,14.037,y,M451501 + M451511 (calculated),SGD million,24.5
 SG,exports,DK,TOTAL,2003-03-01,10.6606,y,M451501 + M451511 (calculated),SGD million,18.700000000000003
@@ -168339,6 +168398,7 @@ SG,exports,DK,TOTAL,2026-06-01,31.0583,y,M451501 + M451511 (calculated),SGD mill
 SG,exports,DK,TOTAL,2026-07-01,22.0664,y,M451501 + M451511 (calculated),SGD million,28.5
 SG,exports,DK,TOTAL,2026-08-01,20.5284,y,M451501 + M451511 (calculated),SGD million,26.2
 SG,exports,DK,TOTAL,2026-09-01,38.1096,y,M451501 + M451511 (calculated),SGD million,48.5
+SG,exports,DK,TOTAL,2026-10-01,42.1886,y,M451501 + M451511 (calculated),SGD million,54.0
 SG,exports,EE,TOTAL,2003-01-01,1.9592,y,M451501 + M451511 (calculated),SGD million,3.4
 SG,exports,EE,TOTAL,2003-02-01,1.8334,y,M451501 + M451511 (calculated),SGD million,3.1999999999999997
 SG,exports,EE,TOTAL,2003-03-01,3.3635,y,M451501 + M451511 (calculated),SGD million,5.8999999999999995
@@ -168624,6 +168684,7 @@ SG,exports,EE,TOTAL,2026-06-01,2.4847,y,M451501 + M451511 (calculated),SGD milli
 SG,exports,EE,TOTAL,2026-07-01,3.2519,y,M451501 + M451511 (calculated),SGD million,4.2
 SG,exports,EE,TOTAL,2026-08-01,1.6454,y,M451501 + M451511 (calculated),SGD million,2.1
 SG,exports,EE,TOTAL,2026-09-01,3.8502,y,M451501 + M451511 (calculated),SGD million,4.9
+SG,exports,EE,TOTAL,2026-10-01,6.6408,y,M451501 + M451511 (calculated),SGD million,8.5
 SG,exports,ES,TOTAL,2003-01-01,54.8567,y,M451501 + M451511 (calculated),SGD million,95.2
 SG,exports,ES,TOTAL,2003-02-01,39.9339,y,M451501 + M451511 (calculated),SGD million,69.69999999999999
 SG,exports,ES,TOTAL,2003-03-01,29.0173,y,M451501 + M451511 (calculated),SGD million,50.900000000000006
@@ -168908,7 +168969,8 @@ SG,exports,ES,TOTAL,2026-05-01,48.7595,y,M451501 + M451511 (calculated),SGD mill
 SG,exports,ES,TOTAL,2026-06-01,77.6456,y,M451501 + M451511 (calculated),SGD million,100.0
 SG,exports,ES,TOTAL,2026-07-01,35.5385,y,M451501 + M451511 (calculated),SGD million,45.900000000000006
 SG,exports,ES,TOTAL,2026-08-01,51.4776,y,M451501 + M451511 (calculated),SGD million,65.7
-SG,exports,ES,TOTAL,2026-09-01,140.7305,y,M451501 + M451511 (calculated),SGD million,179.10000000000002
+SG,exports,ES,TOTAL,2026-09-01,140.8091,y,M451501 + M451511 (calculated),SGD million,179.2
+SG,exports,ES,TOTAL,2026-10-01,97.815,y,M451501 + M451511 (calculated),SGD million,125.19999999999999
 SG,exports,FI,TOTAL,2003-01-01,32.0958,y,M451501 + M451511 (calculated),SGD million,55.7
 SG,exports,FI,TOTAL,2003-02-01,29.3345,y,M451501 + M451511 (calculated),SGD million,51.2
 SG,exports,FI,TOTAL,2003-03-01,33.977,y,M451501 + M451511 (calculated),SGD million,59.599999999999994
@@ -169194,6 +169256,7 @@ SG,exports,FI,TOTAL,2026-06-01,51.0908,y,M451501 + M451511 (calculated),SGD mill
 SG,exports,FI,TOTAL,2026-07-01,49.0881,y,M451501 + M451511 (calculated),SGD million,63.4
 SG,exports,FI,TOTAL,2026-08-01,45.4445,y,M451501 + M451511 (calculated),SGD million,58.0
 SG,exports,FI,TOTAL,2026-09-01,24.5944,y,M451501 + M451511 (calculated),SGD million,31.299999999999997
+SG,exports,FI,TOTAL,2026-10-01,60.4703,y,M451501 + M451511 (calculated),SGD million,77.39999999999999
 SG,exports,FR,TOTAL,2003-01-01,152.9878,y,M451501 + M451511 (calculated),SGD million,265.5
 SG,exports,FR,TOTAL,2003-02-01,153.4333,y,M451501 + M451511 (calculated),SGD million,267.8
 SG,exports,FR,TOTAL,2003-03-01,141.552,y,M451501 + M451511 (calculated),SGD million,248.29999999999998
@@ -169478,7 +169541,8 @@ SG,exports,FR,TOTAL,2026-05-01,270.0584,y,M451501 + M451511 (calculated),SGD mil
 SG,exports,FR,TOTAL,2026-06-01,433.7285,y,M451501 + M451511 (calculated),SGD million,558.5999999999999
 SG,exports,FR,TOTAL,2026-07-01,580.6174,y,M451501 + M451511 (calculated),SGD million,749.9000000000001
 SG,exports,FR,TOTAL,2026-08-01,391.6844,y,M451501 + M451511 (calculated),SGD million,499.9
-SG,exports,FR,TOTAL,2026-09-01,642.2842,y,M451501 + M451511 (calculated),SGD million,817.4
+SG,exports,FR,TOTAL,2026-09-01,642.5199,y,M451501 + M451511 (calculated),SGD million,817.7
+SG,exports,FR,TOTAL,2026-10-01,603.7655,y,M451501 + M451511 (calculated),SGD million,772.8
 SG,exports,GR,TOTAL,2003-01-01,15.1547,y,M451501 + M451511 (calculated),SGD million,26.299999999999997
 SG,exports,GR,TOTAL,2003-02-01,16.6726,y,M451501 + M451511 (calculated),SGD million,29.1
 SG,exports,GR,TOTAL,2003-03-01,12.4849,y,M451501 + M451511 (calculated),SGD million,21.900000000000002
@@ -169764,6 +169828,7 @@ SG,exports,GR,TOTAL,2026-06-01,77.8786,y,M451501 + M451511 (calculated),SGD mill
 SG,exports,GR,TOTAL,2026-07-01,63.1796,y,M451501 + M451511 (calculated),SGD million,81.6
 SG,exports,GR,TOTAL,2026-08-01,87.4415,y,M451501 + M451511 (calculated),SGD million,111.60000000000001
 SG,exports,GR,TOTAL,2026-09-01,54.5321,y,M451501 + M451511 (calculated),SGD million,69.4
+SG,exports,GR,TOTAL,2026-10-01,70.0018,y,M451501 + M451511 (calculated),SGD million,89.6
 SG,exports,HR,TOTAL,2003-01-01,0.2881,y,M451501 + M451511 (calculated),SGD million,0.5
 SG,exports,HR,TOTAL,2003-02-01,1.2605,y,M451501 + M451511 (calculated),SGD million,2.2
 SG,exports,HR,TOTAL,2003-03-01,0.3421,y,M451501 + M451511 (calculated),SGD million,0.6
@@ -170049,6 +170114,7 @@ SG,exports,HR,TOTAL,2026-06-01,0.7765,y,M451501 + M451511 (calculated),SGD milli
 SG,exports,HR,TOTAL,2026-07-01,0.8517,y,M451501 + M451511 (calculated),SGD million,1.1
 SG,exports,HR,TOTAL,2026-08-01,0.4701,y,M451501 + M451511 (calculated),SGD million,0.6000000000000001
 SG,exports,HR,TOTAL,2026-09-01,1.3358,y,M451501 + M451511 (calculated),SGD million,1.7
+SG,exports,HR,TOTAL,2026-10-01,0.4688,y,M451501 + M451511 (calculated),SGD million,0.6000000000000001
 SG,exports,HU,TOTAL,2003-01-01,35.0345,y,M451501 + M451511 (calculated),SGD million,60.8
 SG,exports,HU,TOTAL,2003-02-01,35.0639,y,M451501 + M451511 (calculated),SGD million,61.2
 SG,exports,HU,TOTAL,2003-03-01,28.1622,y,M451501 + M451511 (calculated),SGD million,49.4
@@ -170334,6 +170400,7 @@ SG,exports,HU,TOTAL,2026-06-01,33.5429,y,M451501 + M451511 (calculated),SGD mill
 SG,exports,HU,TOTAL,2026-07-01,60.0826,y,M451501 + M451511 (calculated),SGD million,77.6
 SG,exports,HU,TOTAL,2026-08-01,49.5972,y,M451501 + M451511 (calculated),SGD million,63.3
 SG,exports,HU,TOTAL,2026-09-01,127.6082,y,M451501 + M451511 (calculated),SGD million,162.4
+SG,exports,HU,TOTAL,2026-10-01,110.7841,y,M451501 + M451511 (calculated),SGD million,141.8
 SG,exports,IE,TOTAL,2003-01-01,97.3821,y,M451501 + M451511 (calculated),SGD million,169.0
 SG,exports,IE,TOTAL,2003-02-01,73.7947,y,M451501 + M451511 (calculated),SGD million,128.8
 SG,exports,IE,TOTAL,2003-03-01,91.3846,y,M451501 + M451511 (calculated),SGD million,160.3
@@ -170619,6 +170686,7 @@ SG,exports,IE,TOTAL,2026-06-01,141.4703,y,M451501 + M451511 (calculated),SGD mil
 SG,exports,IE,TOTAL,2026-07-01,188.9194,y,M451501 + M451511 (calculated),SGD million,244.0
 SG,exports,IE,TOTAL,2026-08-01,178.7222,y,M451501 + M451511 (calculated),SGD million,228.1
 SG,exports,IE,TOTAL,2026-09-01,183.1618,y,M451501 + M451511 (calculated),SGD million,233.10000000000002
+SG,exports,IE,TOTAL,2026-10-01,183.0516,y,M451501 + M451511 (calculated),SGD million,234.3
 SG,exports,IT,TOTAL,2003-01-01,33.1906,y,M451501 + M451511 (calculated),SGD million,57.599999999999994
 SG,exports,IT,TOTAL,2003-02-01,30.7096,y,M451501 + M451511 (calculated),SGD million,53.6
 SG,exports,IT,TOTAL,2003-03-01,23.0314,y,M451501 + M451511 (calculated),SGD million,40.400000000000006
@@ -170904,6 +170972,7 @@ SG,exports,IT,TOTAL,2026-06-01,127.6494,y,M451501 + M451511 (calculated),SGD mil
 SG,exports,IT,TOTAL,2026-07-01,114.5905,y,M451501 + M451511 (calculated),SGD million,148.0
 SG,exports,IT,TOTAL,2026-08-01,129.7518,y,M451501 + M451511 (calculated),SGD million,165.6
 SG,exports,IT,TOTAL,2026-09-01,114.0145,y,M451501 + M451511 (calculated),SGD million,145.1
+SG,exports,IT,TOTAL,2026-10-01,117.2686,y,M451501 + M451511 (calculated),SGD million,150.1
 SG,exports,LT,TOTAL,2003-01-01,0.7491,y,M451501 + M451511 (calculated),SGD million,1.3
 SG,exports,LT,TOTAL,2003-02-01,1.948,y,M451501 + M451511 (calculated),SGD million,3.4000000000000004
 SG,exports,LT,TOTAL,2003-03-01,0.6271,y,M451501 + M451511 (calculated),SGD million,1.1
@@ -171189,6 +171258,7 @@ SG,exports,LT,TOTAL,2026-06-01,3.4941,y,M451501 + M451511 (calculated),SGD milli
 SG,exports,LT,TOTAL,2026-07-01,3.097,y,M451501 + M451511 (calculated),SGD million,4.0
 SG,exports,LT,TOTAL,2026-08-01,1.332,y,M451501 + M451511 (calculated),SGD million,1.7
 SG,exports,LT,TOTAL,2026-09-01,4.1646,y,M451501 + M451511 (calculated),SGD million,5.3
+SG,exports,LT,TOTAL,2026-10-01,32.7352,y,M451501 + M451511 (calculated),SGD million,41.9
 SG,exports,LU,TOTAL,2003-01-01,1.3253,y,M451501 + M451511 (calculated),SGD million,2.3000000000000003
 SG,exports,LU,TOTAL,2003-02-01,1.1459,y,M451501 + M451511 (calculated),SGD million,2.0
 SG,exports,LU,TOTAL,2003-03-01,2.6794,y,M451501 + M451511 (calculated),SGD million,4.7
@@ -171474,6 +171544,7 @@ SG,exports,LU,TOTAL,2026-06-01,39.5993,y,M451501 + M451511 (calculated),SGD mill
 SG,exports,LU,TOTAL,2026-07-01,39.1001,y,M451501 + M451511 (calculated),SGD million,50.5
 SG,exports,LU,TOTAL,2026-08-01,56.4138,y,M451501 + M451511 (calculated),SGD million,72.0
 SG,exports,LU,TOTAL,2026-09-01,40.3883,y,M451501 + M451511 (calculated),SGD million,51.400000000000006
+SG,exports,LU,TOTAL,2026-10-01,9.3752,y,M451501 + M451511 (calculated),SGD million,12.0
 SG,exports,LV,TOTAL,2003-01-01,0.0576,y,M451501 + M451511 (calculated),SGD million,0.1
 SG,exports,LV,TOTAL,2003-02-01,0.1719,y,M451501 + M451511 (calculated),SGD million,0.30000000000000004
 SG,exports,LV,TOTAL,2003-03-01,0.228,y,M451501 + M451511 (calculated),SGD million,0.4
@@ -171759,6 +171830,7 @@ SG,exports,LV,TOTAL,2026-06-01,5.5905,y,M451501 + M451511 (calculated),SGD milli
 SG,exports,LV,TOTAL,2026-07-01,9.5234,y,M451501 + M451511 (calculated),SGD million,12.299999999999999
 SG,exports,LV,TOTAL,2026-08-01,4.3877,y,M451501 + M451511 (calculated),SGD million,5.6
 SG,exports,LV,TOTAL,2026-09-01,6.3647,y,M451501 + M451511 (calculated),SGD million,8.1
+SG,exports,LV,TOTAL,2026-10-01,5.4689,y,M451501 + M451511 (calculated),SGD million,7.0
 SG,exports,MT,TOTAL,2003-01-01,25.4115,y,M451501 + M451511 (calculated),SGD million,44.1
 SG,exports,MT,TOTAL,2003-02-01,24.8083,y,M451501 + M451511 (calculated),SGD million,43.3
 SG,exports,MT,TOTAL,2003-03-01,27.136,y,M451501 + M451511 (calculated),SGD million,47.6
@@ -172044,6 +172116,7 @@ SG,exports,MT,TOTAL,2026-06-01,125.1647,y,M451501 + M451511 (calculated),SGD mil
 SG,exports,MT,TOTAL,2026-07-01,137.4311,y,M451501 + M451511 (calculated),SGD million,177.5
 SG,exports,MT,TOTAL,2026-08-01,125.5991,y,M451501 + M451511 (calculated),SGD million,160.3
 SG,exports,MT,TOTAL,2026-09-01,129.4155,y,M451501 + M451511 (calculated),SGD million,164.70000000000002
+SG,exports,MT,TOTAL,2026-10-01,128.1283,y,M451501 + M451511 (calculated),SGD million,164.0
 SG,exports,NL,TOTAL,2003-01-01,391.9485,y,M451501 + M451511 (calculated),SGD million,680.2
 SG,exports,NL,TOTAL,2003-02-01,347.8318,y,M451501 + M451511 (calculated),SGD million,607.0999999999999
 SG,exports,NL,TOTAL,2003-03-01,441.0174,y,M451501 + M451511 (calculated),SGD million,773.6
@@ -172328,7 +172401,8 @@ SG,exports,NL,TOTAL,2026-05-01,950.4176,y,M451501 + M451511 (calculated),SGD mil
 SG,exports,NL,TOTAL,2026-06-01,1410.3552,y,M451501 + M451511 (calculated),SGD million,1816.4
 SG,exports,NL,TOTAL,2026-07-01,1222.0143,y,M451501 + M451511 (calculated),SGD million,1578.3
 SG,exports,NL,TOTAL,2026-08-01,1457.2792,y,M451501 + M451511 (calculated),SGD million,1859.9
-SG,exports,NL,TOTAL,2026-09-01,1492.9532,y,M451501 + M451511 (calculated),SGD million,1900.0
+SG,exports,NL,TOTAL,2026-09-01,1490.5173,y,M451501 + M451511 (calculated),SGD million,1896.9
+SG,exports,NL,TOTAL,2026-10-01,1500.6635,y,M451501 + M451511 (calculated),SGD million,1920.8
 SG,exports,PL,TOTAL,2003-01-01,11.1211,y,M451501 + M451511 (calculated),SGD million,19.299999999999997
 SG,exports,PL,TOTAL,2003-02-01,4.7554,y,M451501 + M451511 (calculated),SGD million,8.3
 SG,exports,PL,TOTAL,2003-03-01,7.7532,y,M451501 + M451511 (calculated),SGD million,13.6
@@ -172614,6 +172688,7 @@ SG,exports,PL,TOTAL,2026-06-01,104.744,y,M451501 + M451511 (calculated),SGD mill
 SG,exports,PL,TOTAL,2026-07-01,87.3365,y,M451501 + M451511 (calculated),SGD million,112.8
 SG,exports,PL,TOTAL,2026-08-01,112.5143,y,M451501 + M451511 (calculated),SGD million,143.6
 SG,exports,PL,TOTAL,2026-09-01,107.5712,y,M451501 + M451511 (calculated),SGD million,136.9
+SG,exports,PL,TOTAL,2026-10-01,73.2831,y,M451501 + M451511 (calculated),SGD million,93.8
 SG,exports,PT,TOTAL,2003-01-01,2.6506,y,M451501 + M451511 (calculated),SGD million,4.6
 SG,exports,PT,TOTAL,2003-02-01,2.1199,y,M451501 + M451511 (calculated),SGD million,3.7
 SG,exports,PT,TOTAL,2003-03-01,8.3232,y,M451501 + M451511 (calculated),SGD million,14.6
@@ -172899,6 +172974,7 @@ SG,exports,PT,TOTAL,2026-06-01,91.2336,y,M451501 + M451511 (calculated),SGD mill
 SG,exports,PT,TOTAL,2026-07-01,131.3145,y,M451501 + M451511 (calculated),SGD million,169.6
 SG,exports,PT,TOTAL,2026-08-01,109.9286,y,M451501 + M451511 (calculated),SGD million,140.3
 SG,exports,PT,TOTAL,2026-09-01,102.6995,y,M451501 + M451511 (calculated),SGD million,130.7
+SG,exports,PT,TOTAL,2026-10-01,143.6756,y,M451501 + M451511 (calculated),SGD million,183.89999999999998
 SG,exports,RO,TOTAL,2003-01-01,0.1152,y,M451501 + M451511 (calculated),SGD million,0.2
 SG,exports,RO,TOTAL,2003-02-01,0.2292,y,M451501 + M451511 (calculated),SGD million,0.4
 SG,exports,RO,TOTAL,2003-03-01,0.5131,y,M451501 + M451511 (calculated),SGD million,0.9
@@ -173184,6 +173260,7 @@ SG,exports,RO,TOTAL,2026-06-01,11.4916,y,M451501 + M451511 (calculated),SGD mill
 SG,exports,RO,TOTAL,2026-07-01,14.7884,y,M451501 + M451511 (calculated),SGD million,19.1
 SG,exports,RO,TOTAL,2026-08-01,12.7715,y,M451501 + M451511 (calculated),SGD million,16.3
 SG,exports,RO,TOTAL,2026-09-01,20.8228,y,M451501 + M451511 (calculated),SGD million,26.5
+SG,exports,RO,TOTAL,2026-10-01,10.7034,y,M451501 + M451511 (calculated),SGD million,13.700000000000001
 SG,exports,SE,TOTAL,2003-01-01,6.4537,y,M451501 + M451511 (calculated),SGD million,11.2
 SG,exports,SE,TOTAL,2003-02-01,4.6981,y,M451501 + M451511 (calculated),SGD million,8.2
 SG,exports,SE,TOTAL,2003-03-01,3.9336,y,M451501 + M451511 (calculated),SGD million,6.9
@@ -173469,6 +173546,7 @@ SG,exports,SE,TOTAL,2026-06-01,9.7833,y,M451501 + M451511 (calculated),SGD milli
 SG,exports,SE,TOTAL,2026-07-01,10.1428,y,M451501 + M451511 (calculated),SGD million,13.100000000000001
 SG,exports,SE,TOTAL,2026-08-01,15.7489,y,M451501 + M451511 (calculated),SGD million,20.1
 SG,exports,SE,TOTAL,2026-09-01,12.8865,y,M451501 + M451511 (calculated),SGD million,16.4
+SG,exports,SE,TOTAL,2026-10-01,25.5475,y,M451501 + M451511 (calculated),SGD million,32.7
 SG,exports,SI,TOTAL,2003-01-01,0.5762,y,M451501 + M451511 (calculated),SGD million,1.0
 SG,exports,SI,TOTAL,2003-02-01,0.2292,y,M451501 + M451511 (calculated),SGD million,0.4
 SG,exports,SI,TOTAL,2003-03-01,0.3991,y,M451501 + M451511 (calculated),SGD million,0.7
@@ -173754,6 +173832,7 @@ SG,exports,SI,TOTAL,2026-06-01,3.9599,y,M451501 + M451511 (calculated),SGD milli
 SG,exports,SI,TOTAL,2026-07-01,3.0196,y,M451501 + M451511 (calculated),SGD million,3.9
 SG,exports,SI,TOTAL,2026-08-01,3.2125,y,M451501 + M451511 (calculated),SGD million,4.1
 SG,exports,SI,TOTAL,2026-09-01,3.4574,y,M451501 + M451511 (calculated),SGD million,4.4
+SG,exports,SI,TOTAL,2026-10-01,4.5314,y,M451501 + M451511 (calculated),SGD million,5.8
 SG,exports,SK,TOTAL,2003-01-01,0.0576,y,M451501 + M451511 (calculated),SGD million,0.1
 SG,exports,SK,TOTAL,2003-02-01,0.0573,y,M451501 + M451511 (calculated),SGD million,0.1
 SG,exports,SK,TOTAL,2003-03-01,0.114,y,M451501 + M451511 (calculated),SGD million,0.2
@@ -174039,6 +174118,7 @@ SG,exports,SK,TOTAL,2026-06-01,2.3294,y,M451501 + M451511 (calculated),SGD milli
 SG,exports,SK,TOTAL,2026-07-01,2.7099,y,M451501 + M451511 (calculated),SGD million,3.5
 SG,exports,SK,TOTAL,2026-08-01,2.5073,y,M451501 + M451511 (calculated),SGD million,3.1999999999999997
 SG,exports,SK,TOTAL,2026-09-01,2.7502,y,M451501 + M451511 (calculated),SGD million,3.5
+SG,exports,SK,TOTAL,2026-10-01,2.8126,y,M451501 + M451511 (calculated),SGD million,3.6
 SG,imports,WLD,HS2709,2021-09-01,1832.7511,y,T010001 IMPORTS WORLD HS 2709,SGD thousand,2470291.0
 SG,imports,WLD,HS2709,2021-10-01,2102.1105,y,T010001 IMPORTS WORLD HS 2709,SGD thousand,2839803.0
 SG,imports,WLD,HS2709,2021-11-01,2017.697,y,T010001 IMPORTS WORLD HS 2709,SGD thousand,2737896.0
@@ -174098,8 +174178,6 @@ SG,imports,WLD,HS2709,2026-04-01,2309.6212,y,T010001 IMPORTS WORLD HS 2709,SGD t
 SG,imports,WLD,HS2709,2026-05-01,2348.2879,y,T010001 IMPORTS WORLD HS 2709,SGD thousand,2995593.0
 SG,imports,WLD,HS2709,2026-06-01,3495.1705,y,T010001 IMPORTS WORLD HS 2709,SGD thousand,4501439.0
 SG,imports,WLD,HS2709,2026-07-01,3066.5427,y,T010001 IMPORTS WORLD HS 2709,SGD thousand,3960612.0
-SG,imports,WLD,HS2709,2026-08-01,2055.3082,y,T010001 IMPORTS WORLD HS 2709,SGD thousand,2623154.0
-SG,imports,WLD,HS2709,2026-09-01,2784.3388,y,T010001 IMPORTS WORLD HS 2709,SGD thousand,3543476.0
 SG,imports,WLD,HS2710,2021-09-01,3809.2509,y,T010001 IMPORTS WORLD HS 2710,SGD thousand,5134335.0
 SG,imports,WLD,HS2710,2021-10-01,4094.3566,y,T010001 IMPORTS WORLD HS 2710,SGD thousand,5531187.0
 SG,imports,WLD,HS2710,2021-11-01,5290.9305,y,T010001 IMPORTS WORLD HS 2710,SGD thousand,7179481.0
@@ -174159,8 +174237,6 @@ SG,imports,WLD,HS2710,2026-04-01,6676.5751,y,T010001 IMPORTS WORLD HS 2710,SGD t
 SG,imports,WLD,HS2710,2026-05-01,5787.775,y,T010001 IMPORTS WORLD HS 2710,SGD thousand,7383174.0
 SG,imports,WLD,HS2710,2026-06-01,4807.269,y,T010001 IMPORTS WORLD HS 2710,SGD thousand,6191294.0
 SG,imports,WLD,HS2710,2026-07-01,4518.0568,y,T010001 IMPORTS WORLD HS 2710,SGD thousand,5835324.0
-SG,imports,WLD,HS2710,2026-08-01,4658.9175,y,T010001 IMPORTS WORLD HS 2710,SGD thousand,5946095.0
-SG,imports,WLD,HS2710,2026-09-01,5416.2754,y,T010001 IMPORTS WORLD HS 2710,SGD thousand,6892998.0
 SG,imports,WLD,TOTAL,1981-01-01,2620.0692,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,5452863.0
 SG,imports,WLD,TOTAL,1981-02-01,1753.7504,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,3659931.0
 SG,imports,WLD,TOTAL,1981-03-01,2336.689,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,4904126.0
@@ -174702,14 +174778,15 @@ SG,imports,WLD,TOTAL,2025-10-01,47930.774,y,"M451001 Total Merchandise Imports, 
 SG,imports,WLD,TOTAL,2025-11-01,42673.9649,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,55584973.0
 SG,imports,WLD,TOTAL,2025-12-01,49624.4298,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,64081411.0
 SG,imports,WLD,TOTAL,2026-01-01,49292.5848,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,63105259.0
-SG,imports,WLD,TOTAL,2026-02-01,42624.5177,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,53999955.0
-SG,imports,WLD,TOTAL,2026-03-01,56354.1773,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,72111625.0
-SG,imports,WLD,TOTAL,2026-04-01,59390.2416,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,75759276.0
-SG,imports,WLD,TOTAL,2026-05-01,58684.962,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,74861460.0
-SG,imports,WLD,TOTAL,2026-06-01,56312.4564,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,72524956.0
-SG,imports,WLD,TOTAL,2026-07-01,59982.3029,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,77470511.0
-SG,imports,WLD,TOTAL,2026-08-01,56570.7041,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,72200201.0
-SG,imports,WLD,TOTAL,2026-09-01,66277.7184,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,84348034.0
+SG,imports,WLD,TOTAL,2026-02-01,42618.4618,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,53992283.0
+SG,imports,WLD,TOTAL,2026-03-01,56353.8171,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,72111164.0
+SG,imports,WLD,TOTAL,2026-04-01,59328.9019,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,75681030.0
+SG,imports,WLD,TOTAL,2026-05-01,58653.9331,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,74821878.0
+SG,imports,WLD,TOTAL,2026-06-01,56295.7836,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,72503483.0
+SG,imports,WLD,TOTAL,2026-07-01,59917.1845,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,77386407.0
+SG,imports,WLD,TOTAL,2026-08-01,56564.5252,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,72192315.0
+SG,imports,WLD,TOTAL,2026-09-01,66283.6635,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,84355600.0
+SG,imports,WLD,TOTAL,2026-10-01,70315.96,y,"M451001 Total Merchandise Imports, (At Current Prices)",SGD thousand,90002118.0
 SG,imports,US,TOTAL,2003-01-01,1227.3023,y,M451491 United States Of America,SGD million,2129.9
 SG,imports,US,TOTAL,2003-02-01,1482.0237,y,M451491 United States Of America,SGD million,2586.7
 SG,imports,US,TOTAL,2003-03-01,1848.8983,y,M451491 United States Of America,SGD million,3243.2
@@ -174987,14 +175064,15 @@ SG,imports,US,TOTAL,2025-10-01,4356.4136,y,M451491 United States Of America,SGD 
 SG,imports,US,TOTAL,2025-11-01,4396.9905,y,M451491 United States Of America,SGD million,5727.3
 SG,imports,US,TOTAL,2025-12-01,4936.5463,y,M451491 United States Of America,SGD million,6374.7
 SG,imports,US,TOTAL,2026-01-01,5129.9072,y,M451491 United States Of America,SGD million,6567.4
-SG,imports,US,TOTAL,2026-02-01,4933.1606,y,M451491 United States Of America,SGD million,6249.7
+SG,imports,US,TOTAL,2026-02-01,4927.0826,y,M451491 United States Of America,SGD million,6242.0
 SG,imports,US,TOTAL,2026-03-01,5072.2306,y,M451491 United States Of America,SGD million,6490.5
 SG,imports,US,TOTAL,2026-04-01,4969.9822,y,M451491 United States Of America,SGD million,6339.8
-SG,imports,US,TOTAL,2026-05-01,4707.7184,y,M451491 United States Of America,SGD million,6005.4
-SG,imports,US,TOTAL,2026-06-01,6382.3929,y,M451491 United States Of America,SGD million,8219.9
-SG,imports,US,TOTAL,2026-07-01,6985.8365,y,M451491 United States Of America,SGD million,9022.6
-SG,imports,US,TOTAL,2026-08-01,5616.7814,y,M451491 United States Of America,SGD million,7168.6
-SG,imports,US,TOTAL,2026-09-01,5404.2548,y,M451491 United States Of America,SGD million,6877.7
+SG,imports,US,TOTAL,2026-05-01,4707.0912,y,M451491 United States Of America,SGD million,6004.6
+SG,imports,US,TOTAL,2026-06-01,6382.5481,y,M451491 United States Of America,SGD million,8220.1
+SG,imports,US,TOTAL,2026-07-01,6985.7591,y,M451491 United States Of America,SGD million,9022.5
+SG,imports,US,TOTAL,2026-08-01,5611.4535,y,M451491 United States Of America,SGD million,7161.8
+SG,imports,US,TOTAL,2026-09-01,5403.1547,y,M451491 United States Of America,SGD million,6876.3
+SG,imports,US,TOTAL,2026-10-01,5752.804,y,M451491 United States Of America,SGD million,7363.4
 SG,imports,CN,TOTAL,2003-01-01,886.8684,y,M451491 Mainland China,SGD million,1539.1
 SG,imports,CN,TOTAL,2003-02-01,611.3842,y,M451491 Mainland China,SGD million,1067.1
 SG,imports,CN,TOTAL,2003-03-01,825.9385,y,M451491 Mainland China,SGD million,1448.8
@@ -175278,8 +175356,9 @@ SG,imports,CN,TOTAL,2026-04-01,5837.9535,y,M451491 Mainland China,SGD million,74
 SG,imports,CN,TOTAL,2026-05-01,5730.648,y,M451491 Mainland China,SGD million,7310.3
 SG,imports,CN,TOTAL,2026-06-01,6640.0987,y,M451491 Mainland China,SGD million,8551.8
 SG,imports,CN,TOTAL,2026-07-01,6746.7451,y,M451491 Mainland China,SGD million,8713.8
-SG,imports,CN,TOTAL,2026-08-01,6863.3706,y,M451491 Mainland China,SGD million,8759.6
-SG,imports,CN,TOTAL,2026-09-01,7602.2747,y,M451491 Mainland China,SGD million,9675.0
+SG,imports,CN,TOTAL,2026-08-01,6862.7438,y,M451491 Mainland China,SGD million,8758.8
+SG,imports,CN,TOTAL,2026-09-01,7601.6461,y,M451491 Mainland China,SGD million,9674.2
+SG,imports,CN,TOTAL,2026-10-01,8855.7742,y,M451491 Mainland China,SGD million,11335.1
 SG,imports,HK,TOTAL,2003-01-01,246.0482,y,M451491 Hong Kong,SGD million,427.0
 SG,imports,HK,TOTAL,2003-02-01,155.0375,y,M451491 Hong Kong,SGD million,270.6
 SG,imports,HK,TOTAL,2003-03-01,245.7635,y,M451491 Hong Kong,SGD million,431.1
@@ -175565,6 +175644,7 @@ SG,imports,HK,TOTAL,2026-06-01,763.3342,y,M451491 Hong Kong,SGD million,983.1
 SG,imports,HK,TOTAL,2026-07-01,1039.8309,y,M451491 Hong Kong,SGD million,1343.0
 SG,imports,HK,TOTAL,2026-08-01,873.2393,y,M451491 Hong Kong,SGD million,1114.5
 SG,imports,HK,TOTAL,2026-09-01,1439.7569,y,M451491 Hong Kong,SGD million,1832.3
+SG,imports,HK,TOTAL,2026-10-01,960.4934,y,M451491 Hong Kong,SGD million,1229.4
 SG,imports,JP,TOTAL,2003-01-01,1096.2111,y,M451491 Japan,SGD million,1902.4
 SG,imports,JP,TOTAL,2003-02-01,1113.5087,y,M451491 Japan,SGD million,1943.5
 SG,imports,JP,TOTAL,2003-03-01,1266.2718,y,M451491 Japan,SGD million,2221.2
@@ -175849,7 +175929,8 @@ SG,imports,JP,TOTAL,2026-05-01,2020.9308,y,M451491 Japan,SGD million,2578.0
 SG,imports,JP,TOTAL,2026-06-01,2427.1246,y,M451491 Japan,SGD million,3125.9
 SG,imports,JP,TOTAL,2026-07-01,2800.4203,y,M451491 Japan,SGD million,3616.9
 SG,imports,JP,TOTAL,2026-08-01,2372.1237,y,M451491 Japan,SGD million,3027.5
-SG,imports,JP,TOTAL,2026-09-01,2752.8485,y,M451491 Japan,SGD million,3503.4
+SG,imports,JP,TOTAL,2026-09-01,2752.6128,y,M451491 Japan,SGD million,3503.1
+SG,imports,JP,TOTAL,2026-10-01,2641.0834,y,M451491 Japan,SGD million,3380.5
 SG,imports,EU,TOTAL,2003-01-01,1079.1548,y,sum of the 27 current EU members (calculated),SGD million,1872.8
 SG,imports,EU,TOTAL,2003-02-01,1078.3304,y,sum of the 27 current EU members (calculated),SGD million,1882.1
 SG,imports,EU,TOTAL,2003-03-01,1156.7588,y,sum of the 27 current EU members (calculated),SGD million,2029.1
@@ -176132,9 +176213,10 @@ SG,imports,EU,TOTAL,2026-03-01,4251.1238,y,sum of the 27 current EU members (cal
 SG,imports,EU,TOTAL,2026-04-01,4451.1751,y,sum of the 27 current EU members (calculated),SGD million,5678.0
 SG,imports,EU,TOTAL,2026-05-01,4507.7417,y,sum of the 27 current EU members (calculated),SGD million,5750.3
 SG,imports,EU,TOTAL,2026-06-01,4167.0077,y,sum of the 27 current EU members (calculated),SGD million,5366.7
-SG,imports,EU,TOTAL,2026-07-01,4408.7127,y,sum of the 27 current EU members (calculated),SGD million,5694.1
+SG,imports,EU,TOTAL,2026-07-01,4407.7836,y,sum of the 27 current EU members (calculated),SGD million,5692.9
 SG,imports,EU,TOTAL,2026-08-01,4284.3962,y,sum of the 27 current EU members (calculated),SGD million,5468.1
-SG,imports,EU,TOTAL,2026-09-01,4331.3713,y,sum of the 27 current EU members (calculated),SGD million,5512.3
+SG,imports,EU,TOTAL,2026-09-01,4322.5706,y,sum of the 27 current EU members (calculated),SGD million,5501.1
+SG,imports,EU,TOTAL,2026-10-01,4250.1093,y,sum of the 27 current EU members (calculated),SGD million,5440.0
 SG,imports,TW,TOTAL,2003-01-01,476.0774,y,M451491 Taiwan,SGD million,826.2
 SG,imports,TW,TOTAL,2003-02-01,390.9169,y,M451491 Taiwan,SGD million,682.3
 SG,imports,TW,TOTAL,2003-03-01,498.881,y,M451491 Taiwan,SGD million,875.1
@@ -176419,7 +176501,8 @@ SG,imports,TW,TOTAL,2026-05-01,15365.1888,y,M451491 Taiwan,SGD million,19600.6
 SG,imports,TW,TOTAL,2026-06-01,10219.2515,y,M451491 Taiwan,SGD million,13161.4
 SG,imports,TW,TOTAL,2026-07-01,10359.2091,y,M451491 Taiwan,SGD million,13379.5
 SG,imports,TW,TOTAL,2026-08-01,9456.2918,y,M451491 Taiwan,SGD million,12068.9
-SG,imports,TW,TOTAL,2026-09-01,14351.366,y,M451491 Taiwan,SGD million,18264.2
+SG,imports,TW,TOTAL,2026-09-01,14351.7588,y,M451491 Taiwan,SGD million,18264.7
+SG,imports,TW,TOTAL,2026-10-01,13676.3668,y,M451491 Taiwan,SGD million,17505.3
 SG,imports,KR,TOTAL,2003-01-01,389.7012,y,M451491 Republic Of Korea,SGD million,676.3
 SG,imports,KR,TOTAL,2003-02-01,309.3875,y,M451491 Republic Of Korea,SGD million,540.0
 SG,imports,KR,TOTAL,2003-03-01,386.7454,y,M451491 Republic Of Korea,SGD million,678.4
@@ -176704,7 +176787,8 @@ SG,imports,KR,TOTAL,2026-05-01,3383.2953,y,M451491 Republic Of Korea,SGD million
 SG,imports,KR,TOTAL,2026-06-01,3965.3621,y,M451491 Republic Of Korea,SGD million,5107.0
 SG,imports,KR,TOTAL,2026-07-01,3729.7643,y,M451491 Republic Of Korea,SGD million,4817.2
 SG,imports,KR,TOTAL,2026-08-01,3374.0178,y,M451491 Republic Of Korea,SGD million,4306.2
-SG,imports,KR,TOTAL,2026-09-01,4572.1298,y,M451491 Republic Of Korea,SGD million,5818.7
+SG,imports,KR,TOTAL,2026-09-01,4571.6583,y,M451491 Republic Of Korea,SGD million,5818.1
+SG,imports,KR,TOTAL,2026-10-01,4908.3291,y,M451491 Republic Of Korea,SGD million,6282.5
 SG,imports,IN,TOTAL,2003-01-01,99.5717,y,M451491 India,SGD million,172.8
 SG,imports,IN,TOTAL,2003-02-01,75.2843,y,M451491 India,SGD million,131.4
 SG,imports,IN,TOTAL,2003-03-01,86.9949,y,M451491 India,SGD million,152.6
@@ -176989,7 +177073,8 @@ SG,imports,IN,TOTAL,2026-05-01,960.7653,y,M451491 India,SGD million,1225.6
 SG,imports,IN,TOTAL,2026-06-01,1171.129,y,M451491 India,SGD million,1508.3
 SG,imports,IN,TOTAL,2026-07-01,1081.7958,y,M451491 India,SGD million,1397.2
 SG,imports,IN,TOTAL,2026-08-01,1761.7573,y,M451491 India,SGD million,2248.5
-SG,imports,IN,TOTAL,2026-09-01,1510.9472,y,M451491 India,SGD million,1922.9
+SG,imports,IN,TOTAL,2026-09-01,1510.6329,y,M451491 India,SGD million,1922.5
+SG,imports,IN,TOTAL,2026-10-01,1892.0798,y,M451491 India,SGD million,2421.8
 SG,imports,ID,TOTAL,2003-01-01,723.2204,y,M451491 Indonesia,SGD million,1255.1
 SG,imports,ID,TOTAL,2003-02-01,617.8011,y,M451491 Indonesia,SGD million,1078.3
 SG,imports,ID,TOTAL,2003-03-01,639.8059,y,M451491 Indonesia,SGD million,1122.3
@@ -177273,8 +177358,9 @@ SG,imports,ID,TOTAL,2026-04-01,1599.2245,y,M451491 Indonesia,SGD million,2040.0
 SG,imports,ID,TOTAL,2026-05-01,1580.763,y,M451491 Indonesia,SGD million,2016.5
 SG,imports,ID,TOTAL,2026-06-01,1627.297,y,M451491 Indonesia,SGD million,2095.8
 SG,imports,ID,TOTAL,2026-07-01,1530.2471,y,M451491 Indonesia,SGD million,1976.4
-SG,imports,ID,TOTAL,2026-08-01,1491.5976,y,M451491 Indonesia,SGD million,1903.7
-SG,imports,ID,TOTAL,2026-09-01,1592.2738,y,M451491 Indonesia,SGD million,2026.4
+SG,imports,ID,TOTAL,2026-08-01,1491.5193,y,M451491 Indonesia,SGD million,1903.6
+SG,imports,ID,TOTAL,2026-09-01,1592.1167,y,M451491 Indonesia,SGD million,2026.2
+SG,imports,ID,TOTAL,2026-10-01,1913.096,y,M451491 Indonesia,SGD million,2448.7
 SG,imports,MY,TOTAL,2003-01-01,1730.7504,y,M451491 Malaysia,SGD million,3003.6
 SG,imports,MY,TOTAL,2003-02-01,1484.7165,y,M451491 Malaysia,SGD million,2591.4
 SG,imports,MY,TOTAL,2003-03-01,1808.4793,y,M451491 Malaysia,SGD million,3172.3
@@ -177556,10 +177642,11 @@ SG,imports,MY,TOTAL,2026-02-01,4080.3538,y,M451491 Malaysia,SGD million,5169.3
 SG,imports,MY,TOTAL,2026-03-01,5078.4824,y,M451491 Malaysia,SGD million,6498.5
 SG,imports,MY,TOTAL,2026-04-01,6378.8677,y,M451491 Malaysia,SGD million,8137.0
 SG,imports,MY,TOTAL,2026-05-01,5984.5578,y,M451491 Malaysia,SGD million,7634.2
-SG,imports,MY,TOTAL,2026-06-01,6461.902,y,M451491 Malaysia,SGD million,8322.3
+SG,imports,MY,TOTAL,2026-06-01,6461.7467,y,M451491 Malaysia,SGD million,8322.1
 SG,imports,MY,TOTAL,2026-07-01,6624.8766,y,M451491 Malaysia,SGD million,8556.4
-SG,imports,MY,TOTAL,2026-08-01,7157.5061,y,M451491 Malaysia,SGD million,9135.0
+SG,imports,MY,TOTAL,2026-08-01,7157.4278,y,M451491 Malaysia,SGD million,9134.9
 SG,imports,MY,TOTAL,2026-09-01,8123.3939,y,M451491 Malaysia,SGD million,10338.2
+SG,imports,MY,TOTAL,2026-10-01,8591.0018,y,M451491 Malaysia,SGD million,10996.2
 SG,imports,PH,TOTAL,2003-01-01,163.8785,y,M451491 Philippines,SGD million,284.4
 SG,imports,PH,TOTAL,2003-02-01,162.4285,y,M451491 Philippines,SGD million,283.5
 SG,imports,PH,TOTAL,2003-03-01,239.0935,y,M451491 Philippines,SGD million,419.4
@@ -177845,6 +177932,7 @@ SG,imports,PH,TOTAL,2026-06-01,637.3929,y,M451491 Philippines,SGD million,820.9
 SG,imports,PH,TOTAL,2026-07-01,690.5623,y,M451491 Philippines,SGD million,891.9
 SG,imports,PH,TOTAL,2026-08-01,624.3915,y,M451491 Philippines,SGD million,796.9
 SG,imports,PH,TOTAL,2026-09-01,631.9907,y,M451491 Philippines,SGD million,804.3
+SG,imports,PH,TOTAL,2026-10-01,750.7224,y,M451491 Philippines,SGD million,960.9
 SG,imports,TH,TOTAL,2003-01-01,400.7071,y,M451491 Thailand,SGD million,695.4
 SG,imports,TH,TOTAL,2003-02-01,407.9905,y,M451491 Thailand,SGD million,712.1
 SG,imports,TH,TOTAL,2003-03-01,496.3726,y,M451491 Thailand,SGD million,870.7
@@ -178130,6 +178218,7 @@ SG,imports,TH,TOTAL,2026-06-01,2275.638,y,M451491 Thailand,SGD million,2930.8
 SG,imports,TH,TOTAL,2026-07-01,2233.4298,y,M451491 Thailand,SGD million,2884.6
 SG,imports,TH,TOTAL,2026-08-01,1878.816,y,M451491 Thailand,SGD million,2397.9
 SG,imports,TH,TOTAL,2026-09-01,3415.1697,y,M451491 Thailand,SGD million,4346.3
+SG,imports,TH,TOTAL,2026-10-01,3568.3729,y,M451491 Thailand,SGD million,4567.4
 SG,imports,VN,TOTAL,2003-01-01,84.7627,y,M451491 Viet Nam,SGD million,147.1
 SG,imports,VN,TOTAL,2003-02-01,85.941,y,M451491 Viet Nam,SGD million,150.0
 SG,imports,VN,TOTAL,2003-03-01,55.0702,y,M451491 Viet Nam,SGD million,96.6
@@ -178415,6 +178504,7 @@ SG,imports,VN,TOTAL,2026-06-01,1584.4367,y,M451491 Viet Nam,SGD million,2040.6
 SG,imports,VN,TOTAL,2026-07-01,1623.3131,y,M451491 Viet Nam,SGD million,2096.6
 SG,imports,VN,TOTAL,2026-08-01,1560.7829,y,M451491 Viet Nam,SGD million,1992.0
 SG,imports,VN,TOTAL,2026-09-01,1766.3208,y,M451491 Viet Nam,SGD million,2247.9
+SG,imports,VN,TOTAL,2026-10-01,2316.622,y,M451491 Viet Nam,SGD million,2965.2
 SG,imports,AT,TOTAL,2003-01-01,23.6829,y,M451491 Austria,SGD million,41.1
 SG,imports,AT,TOTAL,2003-02-01,21.5998,y,M451491 Austria,SGD million,37.7
 SG,imports,AT,TOTAL,2003-03-01,25.6538,y,M451491 Austria,SGD million,45.0
@@ -178700,6 +178790,7 @@ SG,imports,AT,TOTAL,2026-06-01,108.5486,y,M451491 Austria,SGD million,139.8
 SG,imports,AT,TOTAL,2026-07-01,119.3909,y,M451491 Austria,SGD million,154.2
 SG,imports,AT,TOTAL,2026-08-01,104.5223,y,M451491 Austria,SGD million,133.4
 SG,imports,AT,TOTAL,2026-09-01,125.3295,y,M451491 Austria,SGD million,159.5
+SG,imports,AT,TOTAL,2026-10-01,110.1591,y,M451491 Austria,SGD million,141.0
 SG,imports,BE,TOTAL,2003-01-01,46.6743,y,M451491 Belgium,SGD million,81.0
 SG,imports,BE,TOTAL,2003-02-01,37.413,y,M451491 Belgium,SGD million,65.3
 SG,imports,BE,TOTAL,2003-03-01,39.4499,y,M451491 Belgium,SGD million,69.2
@@ -178984,7 +179075,8 @@ SG,imports,BE,TOTAL,2026-05-01,77.2155,y,M451491 Belgium,SGD million,98.5
 SG,imports,BE,TOTAL,2026-06-01,90.5348,y,M451491 Belgium,SGD million,116.6
 SG,imports,BE,TOTAL,2026-07-01,147.6513,y,M451491 Belgium,SGD million,190.7
 SG,imports,BE,TOTAL,2026-08-01,116.1968,y,M451491 Belgium,SGD million,148.3
-SG,imports,BE,TOTAL,2026-09-01,90.913,y,M451491 Belgium,SGD million,115.7
+SG,imports,BE,TOTAL,2026-09-01,90.8344,y,M451491 Belgium,SGD million,115.6
+SG,imports,BE,TOTAL,2026-10-01,93.518,y,M451491 Belgium,SGD million,119.7
 SG,imports,BG,TOTAL,2003-01-01,0.2305,y,M451491 Bulgaria,SGD million,0.4
 SG,imports,BG,TOTAL,2003-02-01,4.9273,y,M451491 Bulgaria,SGD million,8.6
 SG,imports,BG,TOTAL,2003-03-01,0.4561,y,M451491 Bulgaria,SGD million,0.8
@@ -179270,6 +179362,7 @@ SG,imports,BG,TOTAL,2026-06-01,5.9011,y,M451491 Bulgaria,SGD million,7.6
 SG,imports,BG,TOTAL,2026-07-01,20.8276,y,M451491 Bulgaria,SGD million,26.9
 SG,imports,BG,TOTAL,2026-08-01,4.1527,y,M451491 Bulgaria,SGD million,5.3
 SG,imports,BG,TOTAL,2026-09-01,5.5004,y,M451491 Bulgaria,SGD million,7.0
+SG,imports,BG,TOTAL,2026-10-01,6.4064,y,M451491 Bulgaria,SGD million,8.2
 SG,imports,CY,TOTAL,2003-01-01,0.5762,y,M451491 Cyprus,SGD million,1.0
 SG,imports,CY,TOTAL,2003-02-01,0.2292,y,M451491 Cyprus,SGD million,0.4
 SG,imports,CY,TOTAL,2003-03-01,0.114,y,M451491 Cyprus,SGD million,0.2
@@ -179555,6 +179648,7 @@ SG,imports,CY,TOTAL,2026-06-01,1.1647,y,M451491 Cyprus,SGD million,1.5
 SG,imports,CY,TOTAL,2026-07-01,1.0065,y,M451491 Cyprus,SGD million,1.3
 SG,imports,CY,TOTAL,2026-08-01,1.332,y,M451491 Cyprus,SGD million,1.7
 SG,imports,CY,TOTAL,2026-09-01,1.6501,y,M451491 Cyprus,SGD million,2.1
+SG,imports,CY,TOTAL,2026-10-01,1.4844,y,M451491 Cyprus,SGD million,1.9
 SG,imports,CZ,TOTAL,2003-01-01,7.6638,y,M451491 Czechia,SGD million,13.3
 SG,imports,CZ,TOTAL,2003-02-01,5.6148,y,M451491 Czechia,SGD million,9.8
 SG,imports,CZ,TOTAL,2003-03-01,8.2662,y,M451491 Czechia,SGD million,14.5
@@ -179840,6 +179934,7 @@ SG,imports,CZ,TOTAL,2026-06-01,104.0451,y,M451491 Czechia,SGD million,134.0
 SG,imports,CZ,TOTAL,2026-07-01,154.852,y,M451491 Czechia,SGD million,200.0
 SG,imports,CZ,TOTAL,2026-08-01,93.788,y,M451491 Czechia,SGD million,119.7
 SG,imports,CZ,TOTAL,2026-09-01,231.9578,y,M451491 Czechia,SGD million,295.2
+SG,imports,CZ,TOTAL,2026-10-01,141.9568,y,M451491 Czechia,SGD million,181.7
 SG,imports,DE,TOTAL,2003-01-01,338.6476,y,M451491 Germany,SGD million,587.7
 SG,imports,DE,TOTAL,2003-02-01,354.1342,y,M451491 Germany,SGD million,618.1
 SG,imports,DE,TOTAL,2003-03-01,373.8615,y,M451491 Germany,SGD million,655.8
@@ -180124,7 +180219,8 @@ SG,imports,DE,TOTAL,2026-05-01,983.4204,y,M451491 Germany,SGD million,1254.5
 SG,imports,DE,TOTAL,2026-06-01,943.1614,y,M451491 Germany,SGD million,1214.7
 SG,imports,DE,TOTAL,2026-07-01,1095.0356,y,M451491 Germany,SGD million,1414.3
 SG,imports,DE,TOTAL,2026-08-01,1018.1131,y,M451491 Germany,SGD million,1299.4
-SG,imports,DE,TOTAL,2026-09-01,1080.5838,y,M451491 Germany,SGD million,1375.2
+SG,imports,DE,TOTAL,2026-09-01,1076.9693,y,M451491 Germany,SGD million,1370.6
+SG,imports,DE,TOTAL,2026-10-01,988.6973,y,M451491 Germany,SGD million,1265.5
 SG,imports,DK,TOTAL,2003-01-01,17.3444,y,M451491 Denmark,SGD million,30.1
 SG,imports,DK,TOTAL,2003-02-01,15.584,y,M451491 Denmark,SGD million,27.2
 SG,imports,DK,TOTAL,2003-03-01,17.7866,y,M451491 Denmark,SGD million,31.2
@@ -180410,6 +180506,7 @@ SG,imports,DK,TOTAL,2026-06-01,74.4622,y,M451491 Denmark,SGD million,95.9
 SG,imports,DK,TOTAL,2026-07-01,49.3978,y,M451491 Denmark,SGD million,63.8
 SG,imports,DK,TOTAL,2026-08-01,79.2144,y,M451491 Denmark,SGD million,101.1
 SG,imports,DK,TOTAL,2026-09-01,45.6529,y,M451491 Denmark,SGD million,58.1
+SG,imports,DK,TOTAL,2026-10-01,54.5327,y,M451491 Denmark,SGD million,69.8
 SG,imports,EE,TOTAL,2003-01-01,20.3408,y,M451491 Estonia,SGD million,35.3
 SG,imports,EE,TOTAL,2003-02-01,12.0317,y,M451491 Estonia,SGD million,21.0
 SG,imports,EE,TOTAL,2003-03-01,17.9007,y,M451491 Estonia,SGD million,31.4
@@ -180695,6 +180792,7 @@ SG,imports,EE,TOTAL,2026-06-01,7.6869,y,M451491 Estonia,SGD million,9.9
 SG,imports,EE,TOTAL,2026-07-01,9.6782,y,M451491 Estonia,SGD million,12.5
 SG,imports,EE,TOTAL,2026-08-01,45.0527,y,M451491 Estonia,SGD million,57.5
 SG,imports,EE,TOTAL,2026-09-01,41.6455,y,M451491 Estonia,SGD million,53.0
+SG,imports,EE,TOTAL,2026-10-01,6.9533,y,M451491 Estonia,SGD million,8.9
 SG,imports,ES,TOTAL,2003-01-01,21.5508,y,M451491 Spain,SGD million,37.4
 SG,imports,ES,TOTAL,2003-02-01,23.0322,y,M451491 Spain,SGD million,40.2
 SG,imports,ES,TOTAL,2003-03-01,32.7229,y,M451491 Spain,SGD million,57.4
@@ -180977,9 +181075,10 @@ SG,imports,ES,TOTAL,2026-03-01,176.6157,y,M451491 Spain,SGD million,226.0
 SG,imports,ES,TOTAL,2026-04-01,144.479,y,M451491 Spain,SGD million,184.3
 SG,imports,ES,TOTAL,2026-05-01,254.145,y,M451491 Spain,SGD million,324.2
 SG,imports,ES,TOTAL,2026-06-01,115.2261,y,M451491 Spain,SGD million,148.4
-SG,imports,ES,TOTAL,2026-07-01,163.3688,y,M451491 Spain,SGD million,211.0
+SG,imports,ES,TOTAL,2026-07-01,163.214,y,M451491 Spain,SGD million,210.8
 SG,imports,ES,TOTAL,2026-08-01,121.2898,y,M451491 Spain,SGD million,154.8
 SG,imports,ES,TOTAL,2026-09-01,101.4422,y,M451491 Spain,SGD million,129.1
+SG,imports,ES,TOTAL,2026-10-01,110.0028,y,M451491 Spain,SGD million,140.8
 SG,imports,FI,TOTAL,2003-01-01,33.1906,y,M451491 Finland,SGD million,57.6
 SG,imports,FI,TOTAL,2003-02-01,27.7303,y,M451491 Finland,SGD million,48.4
 SG,imports,FI,TOTAL,2003-03-01,33.863,y,M451491 Finland,SGD million,59.4
@@ -181265,6 +181364,7 @@ SG,imports,FI,TOTAL,2026-06-01,32.3782,y,M451491 Finland,SGD million,41.7
 SG,imports,FI,TOTAL,2026-07-01,33.6803,y,M451491 Finland,SGD million,43.5
 SG,imports,FI,TOTAL,2026-08-01,31.4194,y,M451491 Finland,SGD million,40.1
 SG,imports,FI,TOTAL,2026-09-01,37.0881,y,M451491 Finland,SGD million,47.2
+SG,imports,FI,TOTAL,2026-10-01,35.4697,y,M451491 Finland,SGD million,45.4
 SG,imports,FR,TOTAL,2003-01-01,179.6094,y,M451491 France,SGD million,311.7
 SG,imports,FR,TOTAL,2003-02-01,156.0115,y,M451491 France,SGD million,272.3
 SG,imports,FR,TOTAL,2003-03-01,181.5149,y,M451491 France,SGD million,318.4
@@ -181547,9 +181647,10 @@ SG,imports,FR,TOTAL,2026-03-01,1186.1384,y,M451491 France,SGD million,1517.8
 SG,imports,FR,TOTAL,2026-04-01,1249.355,y,M451491 France,SGD million,1593.7
 SG,imports,FR,TOTAL,2026-05-01,1190.2953,y,M451491 France,SGD million,1518.4
 SG,imports,FR,TOTAL,2026-06-01,1359.109,y,M451491 France,SGD million,1750.4
-SG,imports,FR,TOTAL,2026-07-01,1315.1577,y,M451491 France,SGD million,1698.6
+SG,imports,FR,TOTAL,2026-07-01,1314.3834,y,M451491 France,SGD million,1697.6
 SG,imports,FR,TOTAL,2026-08-01,1135.0151,y,M451491 France,SGD million,1448.6
-SG,imports,FR,TOTAL,2026-09-01,1369.6667,y,M451491 France,SGD million,1743.1
+SG,imports,FR,TOTAL,2026-09-01,1369.1952,y,M451491 France,SGD million,1742.5
+SG,imports,FR,TOTAL,2026-10-01,1304.6429,y,M451491 France,SGD million,1669.9
 SG,imports,GR,TOTAL,2003-01-01,1.9015,y,M451491 Greece,SGD million,3.3
 SG,imports,GR,TOTAL,2003-02-01,1.6042,y,M451491 Greece,SGD million,2.8
 SG,imports,GR,TOTAL,2003-03-01,1.3112,y,M451491 Greece,SGD million,2.3
@@ -181835,6 +181936,7 @@ SG,imports,GR,TOTAL,2026-06-01,8.774,y,M451491 Greece,SGD million,11.3
 SG,imports,GR,TOTAL,2026-07-01,9.6782,y,M451491 Greece,SGD million,12.5
 SG,imports,GR,TOTAL,2026-08-01,8.4621,y,M451491 Greece,SGD million,10.8
 SG,imports,GR,TOTAL,2026-09-01,7.6219,y,M451491 Greece,SGD million,9.7
+SG,imports,GR,TOTAL,2026-10-01,8.3596,y,M451491 Greece,SGD million,10.7
 SG,imports,HR,TOTAL,2003-01-01,0.0576,y,M451491 Croatia,SGD million,0.1
 SG,imports,HR,TOTAL,2003-02-01,0.0,y,M451491 Croatia,SGD million,0.0
 SG,imports,HR,TOTAL,2003-03-01,0.057,y,M451491 Croatia,SGD million,0.1
@@ -182120,6 +182222,7 @@ SG,imports,HR,TOTAL,2026-06-01,12.3457,y,M451491 Croatia,SGD million,15.9
 SG,imports,HR,TOTAL,2026-07-01,1.8582,y,M451491 Croatia,SGD million,2.4
 SG,imports,HR,TOTAL,2026-08-01,0.7052,y,M451491 Croatia,SGD million,0.9
 SG,imports,HR,TOTAL,2026-09-01,1.1786,y,M451491 Croatia,SGD million,1.5
+SG,imports,HR,TOTAL,2026-10-01,1.6407,y,M451491 Croatia,SGD million,2.1
 SG,imports,HU,TOTAL,2003-01-01,3.976,y,M451491 Hungary,SGD million,6.9
 SG,imports,HU,TOTAL,2003-02-01,3.0366,y,M451491 Hungary,SGD million,5.3
 SG,imports,HU,TOTAL,2003-03-01,6.898,y,M451491 Hungary,SGD million,12.1
@@ -182405,6 +182508,7 @@ SG,imports,HU,TOTAL,2026-06-01,55.6719,y,M451491 Hungary,SGD million,71.7
 SG,imports,HU,TOTAL,2026-07-01,59.3083,y,M451491 Hungary,SGD million,76.6
 SG,imports,HU,TOTAL,2026-08-01,71.3792,y,M451491 Hungary,SGD million,91.1
 SG,imports,HU,TOTAL,2026-09-01,66.0042,y,M451491 Hungary,SGD million,84.0
+SG,imports,HU,TOTAL,2026-10-01,62.1891,y,M451491 Hungary,SGD million,79.6
 SG,imports,IE,TOTAL,2003-01-01,30.079,y,M451491 Ireland,SGD million,52.2
 SG,imports,IE,TOTAL,2003-02-01,39.4756,y,M451491 Ireland,SGD million,68.9
 SG,imports,IE,TOTAL,2003-03-01,80.61,y,M451491 Ireland,SGD million,141.4
@@ -182689,7 +182793,8 @@ SG,imports,IE,TOTAL,2026-05-01,234.5471,y,M451491 Ireland,SGD million,299.2
 SG,imports,IE,TOTAL,2026-06-01,168.8016,y,M451491 Ireland,SGD million,217.4
 SG,imports,IE,TOTAL,2026-07-01,104.9122,y,M451491 Ireland,SGD million,135.5
 SG,imports,IE,TOTAL,2026-08-01,126.7744,y,M451491 Ireland,SGD million,161.8
-SG,imports,IE,TOTAL,2026-09-01,107.6498,y,M451491 Ireland,SGD million,137.0
+SG,imports,IE,TOTAL,2026-09-01,107.5712,y,M451491 Ireland,SGD million,136.9
+SG,imports,IE,TOTAL,2026-10-01,134.4566,y,M451491 Ireland,SGD million,172.1
 SG,imports,IT,TOTAL,2003-01-01,164.6276,y,M451491 Italy,SGD million,285.7
 SG,imports,IT,TOTAL,2003-02-01,142.4329,y,M451491 Italy,SGD million,248.6
 SG,imports,IT,TOTAL,2003-03-01,124.5065,y,M451491 Italy,SGD million,218.4
@@ -182974,7 +183079,8 @@ SG,imports,IT,TOTAL,2026-05-01,481.5585,y,M451491 Italy,SGD million,614.3
 SG,imports,IT,TOTAL,2026-06-01,475.5018,y,M451491 Italy,SGD million,612.4
 SG,imports,IT,TOTAL,2026-07-01,501.9526,y,M451491 Italy,SGD million,648.3
 SG,imports,IT,TOTAL,2026-08-01,434.0732,y,M451491 Italy,SGD million,554.0
-SG,imports,IT,TOTAL,2026-09-01,474.5234,y,M451491 Italy,SGD million,603.9
+SG,imports,IT,TOTAL,2026-09-01,470.4374,y,M451491 Italy,SGD million,598.7
+SG,imports,IT,TOTAL,2026-10-01,561.4207,y,M451491 Italy,SGD million,718.6
 SG,imports,LT,TOTAL,2003-01-01,0.0576,y,M451491 Lithuania,SGD million,0.1
 SG,imports,LT,TOTAL,2003-02-01,17.4174,y,M451491 Lithuania,SGD million,30.4
 SG,imports,LT,TOTAL,2003-03-01,0.0,y,M451491 Lithuania,SGD million,0.0
@@ -183260,6 +183366,7 @@ SG,imports,LT,TOTAL,2026-06-01,8.2304,y,M451491 Lithuania,SGD million,10.6
 SG,imports,LT,TOTAL,2026-07-01,5.265,y,M451491 Lithuania,SGD million,6.8
 SG,imports,LT,TOTAL,2026-08-01,5.6414,y,M451491 Lithuania,SGD million,7.2
 SG,imports,LT,TOTAL,2026-09-01,13.2008,y,M451491 Lithuania,SGD million,16.8
+SG,imports,LT,TOTAL,2026-10-01,7.3439,y,M451491 Lithuania,SGD million,9.4
 SG,imports,LU,TOTAL,2003-01-01,0.8643,y,M451491 Luxembourg,SGD million,1.5
 SG,imports,LU,TOTAL,2003-02-01,0.6875,y,M451491 Luxembourg,SGD million,1.2
 SG,imports,LU,TOTAL,2003-03-01,1.0832,y,M451491 Luxembourg,SGD million,1.9
@@ -183545,6 +183652,7 @@ SG,imports,LU,TOTAL,2026-06-01,2.0188,y,M451491 Luxembourg,SGD million,2.6
 SG,imports,LU,TOTAL,2026-07-01,3.4842,y,M451491 Luxembourg,SGD million,4.5
 SG,imports,LU,TOTAL,2026-08-01,2.1939,y,M451491 Luxembourg,SGD million,2.8
 SG,imports,LU,TOTAL,2026-09-01,1.7287,y,M451491 Luxembourg,SGD million,2.2
+SG,imports,LU,TOTAL,2026-10-01,2.7344,y,M451491 Luxembourg,SGD million,3.5
 SG,imports,LV,TOTAL,2003-01-01,0.0,y,M451491 Latvia,SGD million,0.0
 SG,imports,LV,TOTAL,2003-02-01,0.0,y,M451491 Latvia,SGD million,0.0
 SG,imports,LV,TOTAL,2003-03-01,0.0,y,M451491 Latvia,SGD million,0.0
@@ -183830,6 +183938,7 @@ SG,imports,LV,TOTAL,2026-06-01,1.7858,y,M451491 Latvia,SGD million,2.3
 SG,imports,LV,TOTAL,2026-07-01,2.0131,y,M451491 Latvia,SGD million,2.6
 SG,imports,LV,TOTAL,2026-08-01,2.3506,y,M451491 Latvia,SGD million,3.0
 SG,imports,LV,TOTAL,2026-09-01,2.5144,y,M451491 Latvia,SGD million,3.2
+SG,imports,LV,TOTAL,2026-10-01,2.9688,y,M451491 Latvia,SGD million,3.8
 SG,imports,MT,TOTAL,2003-01-01,41.1425,y,M451491 Malta,SGD million,71.4
 SG,imports,MT,TOTAL,2003-02-01,47.554,y,M451491 Malta,SGD million,83.0
 SG,imports,MT,TOTAL,2003-03-01,45.7778,y,M451491 Malta,SGD million,80.3
@@ -184115,6 +184224,7 @@ SG,imports,MT,TOTAL,2026-06-01,3.6493,y,M451491 Malta,SGD million,4.7
 SG,imports,MT,TOTAL,2026-07-01,3.4842,y,M451491 Malta,SGD million,4.5
 SG,imports,MT,TOTAL,2026-08-01,2.4289,y,M451491 Malta,SGD million,3.1
 SG,imports,MT,TOTAL,2026-09-01,23.1801,y,M451491 Malta,SGD million,29.5
+SG,imports,MT,TOTAL,2026-10-01,31.7977,y,M451491 Malta,SGD million,40.7
 SG,imports,NL,TOTAL,2003-01-01,79.7496,y,M451491 Netherlands,SGD million,138.4
 SG,imports,NL,TOTAL,2003-02-01,103.3011,y,M451491 Netherlands,SGD million,180.3
 SG,imports,NL,TOTAL,2003-03-01,94.8621,y,M451491 Netherlands,SGD million,166.4
@@ -184399,7 +184509,8 @@ SG,imports,NL,TOTAL,2026-05-01,382.6285,y,M451491 Netherlands,SGD million,488.1
 SG,imports,NL,TOTAL,2026-06-01,311.126,y,M451491 Netherlands,SGD million,400.7
 SG,imports,NL,TOTAL,2026-07-01,315.6657,y,M451491 Netherlands,SGD million,407.7
 SG,imports,NL,TOTAL,2026-08-01,423.5739,y,M451491 Netherlands,SGD million,540.6
-SG,imports,NL,TOTAL,2026-09-01,254.9807,y,M451491 Netherlands,SGD million,324.5
+SG,imports,NL,TOTAL,2026-09-01,254.5092,y,M451491 Netherlands,SGD million,323.9
+SG,imports,NL,TOTAL,2026-10-01,289.7731,y,M451491 Netherlands,SGD million,370.9
 SG,imports,PL,TOTAL,2003-01-01,2.4201,y,M451491 Poland,SGD million,4.2
 SG,imports,PL,TOTAL,2003-02-01,2.0626,y,M451491 Poland,SGD million,3.6
 SG,imports,PL,TOTAL,2003-03-01,2.6224,y,M451491 Poland,SGD million,4.6
@@ -184685,6 +184796,7 @@ SG,imports,PL,TOTAL,2026-06-01,91.0783,y,M451491 Poland,SGD million,117.3
 SG,imports,PL,TOTAL,2026-07-01,84.6266,y,M451491 Poland,SGD million,109.3
 SG,imports,PL,TOTAL,2026-08-01,86.7363,y,M451491 Poland,SGD million,110.7
 SG,imports,PL,TOTAL,2026-09-01,81.0909,y,M451491 Poland,SGD million,103.2
+SG,imports,PL,TOTAL,2026-10-01,97.1119,y,M451491 Poland,SGD million,124.3
 SG,imports,PT,TOTAL,2003-01-01,17.1139,y,M451491 Portugal,SGD million,29.7
 SG,imports,PT,TOTAL,2003-02-01,17.933,y,M451491 Portugal,SGD million,31.3
 SG,imports,PT,TOTAL,2003-03-01,12.9979,y,M451491 Portugal,SGD million,22.8
@@ -184970,6 +185082,7 @@ SG,imports,PT,TOTAL,2026-06-01,23.6043,y,M451491 Portugal,SGD million,30.4
 SG,imports,PT,TOTAL,2026-07-01,29.809,y,M451491 Portugal,SGD million,38.5
 SG,imports,PT,TOTAL,2026-08-01,18.1778,y,M451491 Portugal,SGD million,23.2
 SG,imports,PT,TOTAL,2026-09-01,18.7798,y,M451491 Portugal,SGD million,23.9
+SG,imports,PT,TOTAL,2026-10-01,19.688,y,M451491 Portugal,SGD million,25.2
 SG,imports,RO,TOTAL,2003-01-01,0.7491,y,M451491 Romania,SGD million,1.3
 SG,imports,RO,TOTAL,2003-02-01,1.3178,y,M451491 Romania,SGD million,2.3
 SG,imports,RO,TOTAL,2003-03-01,6.67,y,M451491 Romania,SGD million,11.7
@@ -185255,6 +185368,7 @@ SG,imports,RO,TOTAL,2026-06-01,19.5667,y,M451491 Romania,SGD million,25.2
 SG,imports,RO,TOTAL,2026-07-01,28.0282,y,M451491 Romania,SGD million,36.2
 SG,imports,RO,TOTAL,2026-08-01,18.7263,y,M451491 Romania,SGD million,23.9
 SG,imports,RO,TOTAL,2026-09-01,30.0162,y,M451491 Romania,SGD million,38.2
+SG,imports,RO,TOTAL,2026-10-01,29.2976,y,M451491 Romania,SGD million,37.5
 SG,imports,SE,TOTAL,2003-01-01,45.8099,y,M451491 Sweden,SGD million,79.5
 SG,imports,SE,TOTAL,2003-02-01,41.9965,y,M451491 Sweden,SGD million,73.3
 SG,imports,SE,TOTAL,2003-03-01,46.5189,y,M451491 Sweden,SGD million,81.6
@@ -185540,6 +185654,7 @@ SG,imports,SE,TOTAL,2026-06-01,125.1647,y,M451491 Sweden,SGD million,161.2
 SG,imports,SE,TOTAL,2026-07-01,132.7856,y,M451491 Sweden,SGD million,171.5
 SG,imports,SE,TOTAL,2026-08-01,318.1114,y,M451491 Sweden,SGD million,406.0
 SG,imports,SE,TOTAL,2026-09-01,100.5779,y,M451491 Sweden,SGD million,128.0
+SG,imports,SE,TOTAL,2026-10-01,128.2064,y,M451491 Sweden,SGD million,164.1
 SG,imports,SI,TOTAL,2003-01-01,0.5762,y,M451491 Slovenia,SGD million,1.0
 SG,imports,SI,TOTAL,2003-02-01,0.2292,y,M451491 Slovenia,SGD million,0.4
 SG,imports,SI,TOTAL,2003-03-01,0.3421,y,M451491 Slovenia,SGD million,0.6
@@ -185825,6 +185940,7 @@ SG,imports,SI,TOTAL,2026-06-01,8.4634,y,M451491 Slovenia,SGD million,10.9
 SG,imports,SI,TOTAL,2026-07-01,8.5169,y,M451491 Slovenia,SGD million,11.0
 SG,imports,SI,TOTAL,2026-08-01,6.895,y,M451491 Slovenia,SGD million,8.8
 SG,imports,SI,TOTAL,2026-09-01,8.0148,y,M451491 Slovenia,SGD million,10.2
+SG,imports,SI,TOTAL,2026-10-01,6.4064,y,M451491 Slovenia,SGD million,8.2
 SG,imports,SK,TOTAL,2003-01-01,0.5186,y,M451491 Slovakia,SGD million,0.9
 SG,imports,SK,TOTAL,2003-02-01,0.974,y,M451491 Slovakia,SGD million,1.7
 SG,imports,SK,TOTAL,2003-03-01,0.9121,y,M451491 Slovakia,SGD million,1.6
@@ -186110,6 +186226,7 @@ SG,imports,SK,TOTAL,2026-06-01,9.0069,y,M451491 Slovakia,SGD million,11.6
 SG,imports,SK,TOTAL,2026-07-01,7.278,y,M451491 Slovakia,SGD million,9.4
 SG,imports,SK,TOTAL,2026-08-01,8.0703,y,M451491 Slovakia,SGD million,10.3
 SG,imports,SK,TOTAL,2026-09-01,8.8791,y,M451491 Slovakia,SGD million,11.3
+SG,imports,SK,TOTAL,2026-10-01,12.891,y,M451491 Slovakia,SGD million,16.5
 SG,re_exports,WLD,HS8419,2021-09-01,22.1069,y,T010001 RE-EXPORTS WORLD HS 8419,SGD thousand,29797.0
 SG,re_exports,WLD,HS8419,2021-10-01,31.3606,y,T010001 RE-EXPORTS WORLD HS 8419,SGD thousand,42366.0
 SG,re_exports,WLD,HS8419,2021-11-01,22.816,y,T010001 RE-EXPORTS WORLD HS 8419,SGD thousand,30960.0
@@ -186170,7 +186287,8 @@ SG,re_exports,WLD,HS8419,2026-05-01,47.4143,y,T010001 RE-EXPORTS WORLD HS 8419,S
 SG,re_exports,WLD,HS8419,2026-06-01,49.9424,y,T010001 RE-EXPORTS WORLD HS 8419,SGD thousand,64321.0
 SG,re_exports,WLD,HS8419,2026-07-01,63.8896,y,T010001 RE-EXPORTS WORLD HS 8419,SGD thousand,82517.0
 SG,re_exports,WLD,HS8419,2026-08-01,49.406,y,T010001 RE-EXPORTS WORLD HS 8419,SGD thousand,63056.0
-SG,re_exports,WLD,HS8419,2026-09-01,53.3762,y,T010001 RE-EXPORTS WORLD HS 8419,SGD thousand,67929.0
+SG,re_exports,WLD,HS8419,2026-09-01,53.388,y,T010001 RE-EXPORTS WORLD HS 8419,SGD thousand,67944.0
+SG,re_exports,WLD,HS8419,2026-10-01,62.5071,y,T010001 RE-EXPORTS WORLD HS 8419,SGD thousand,80007.0
 SG,re_exports,WLD,HS8470,2021-09-01,5.597,y,T010001 RE-EXPORTS WORLD HS 8470,SGD thousand,7544.0
 SG,re_exports,WLD,HS8470,2021-10-01,5.3015,y,T010001 RE-EXPORTS WORLD HS 8470,SGD thousand,7162.0
 SG,re_exports,WLD,HS8470,2021-11-01,6.1314,y,T010001 RE-EXPORTS WORLD HS 8470,SGD thousand,8320.0
@@ -186232,6 +186350,7 @@ SG,re_exports,WLD,HS8470,2026-06-01,7.5417,y,T010001 RE-EXPORTS WORLD HS 8470,SG
 SG,re_exports,WLD,HS8470,2026-07-01,5.8457,y,T010001 RE-EXPORTS WORLD HS 8470,SGD thousand,7550.0
 SG,re_exports,WLD,HS8470,2026-08-01,6.7336,y,T010001 RE-EXPORTS WORLD HS 8470,SGD thousand,8594.0
 SG,re_exports,WLD,HS8470,2026-09-01,5.8406,y,T010001 RE-EXPORTS WORLD HS 8470,SGD thousand,7433.0
+SG,re_exports,WLD,HS8470,2026-10-01,9.6299,y,T010001 RE-EXPORTS WORLD HS 8470,SGD thousand,12326.0
 SG,re_exports,WLD,HS8471,2021-09-01,517.1244,y,T010001 RE-EXPORTS WORLD HS 8471,SGD thousand,697011.0
 SG,re_exports,WLD,HS8471,2021-10-01,563.7792,y,T010001 RE-EXPORTS WORLD HS 8471,SGD thousand,761626.0
 SG,re_exports,WLD,HS8471,2021-11-01,538.4456,y,T010001 RE-EXPORTS WORLD HS 8471,SGD thousand,730639.0
@@ -186292,7 +186411,8 @@ SG,re_exports,WLD,HS8471,2026-05-01,3699.0003,y,T010001 RE-EXPORTS WORLD HS 8471
 SG,re_exports,WLD,HS8471,2026-06-01,4887.3737,y,T010001 RE-EXPORTS WORLD HS 8471,SGD thousand,6294461.0
 SG,re_exports,WLD,HS8471,2026-07-01,7393.5563,y,T010001 RE-EXPORTS WORLD HS 8471,SGD thousand,9549193.0
 SG,re_exports,WLD,HS8471,2026-08-01,3398.018,y,T010001 RE-EXPORTS WORLD HS 8471,SGD thousand,4336831.0
-SG,re_exports,WLD,HS8471,2026-09-01,3695.9682,y,T010001 RE-EXPORTS WORLD HS 8471,SGD thousand,4703657.0
+SG,re_exports,WLD,HS8471,2026-09-01,3696.0444,y,T010001 RE-EXPORTS WORLD HS 8471,SGD thousand,4703754.0
+SG,re_exports,WLD,HS8471,2026-10-01,5642.4011,y,T010001 RE-EXPORTS WORLD HS 8471,SGD thousand,7222088.0
 SG,re_exports,WLD,HS8472,2021-09-01,1.2071,y,T010001 RE-EXPORTS WORLD HS 8472,SGD thousand,1627.0
 SG,re_exports,WLD,HS8472,2021-10-01,2.0223,y,T010001 RE-EXPORTS WORLD HS 8472,SGD thousand,2732.0
 SG,re_exports,WLD,HS8472,2021-11-01,1.1069,y,T010001 RE-EXPORTS WORLD HS 8472,SGD thousand,1502.0
@@ -186352,8 +186472,9 @@ SG,re_exports,WLD,HS8472,2026-04-01,1.5702,y,T010001 RE-EXPORTS WORLD HS 8472,SG
 SG,re_exports,WLD,HS8472,2026-05-01,3.7534,y,T010001 RE-EXPORTS WORLD HS 8472,SGD thousand,4788.0
 SG,re_exports,WLD,HS8472,2026-06-01,4.8404,y,T010001 RE-EXPORTS WORLD HS 8472,SGD thousand,6234.0
 SG,re_exports,WLD,HS8472,2026-07-01,3.0932,y,T010001 RE-EXPORTS WORLD HS 8472,SGD thousand,3995.0
-SG,re_exports,WLD,HS8472,2026-08-01,4.0641,y,T010001 RE-EXPORTS WORLD HS 8472,SGD thousand,5187.0
+SG,re_exports,WLD,HS8472,2026-08-01,4.0649,y,T010001 RE-EXPORTS WORLD HS 8472,SGD thousand,5188.0
 SG,re_exports,WLD,HS8472,2026-09-01,2.8853,y,T010001 RE-EXPORTS WORLD HS 8472,SGD thousand,3672.0
+SG,re_exports,WLD,HS8472,2026-10-01,2.3938,y,T010001 RE-EXPORTS WORLD HS 8472,SGD thousand,3064.0
 SG,re_exports,WLD,HS8473,2021-09-01,237.455,y,T010001 RE-EXPORTS WORLD HS 8473,SGD thousand,320056.0
 SG,re_exports,WLD,HS8473,2021-10-01,210.4647,y,T010001 RE-EXPORTS WORLD HS 8473,SGD thousand,284323.0
 SG,re_exports,WLD,HS8473,2021-11-01,244.9347,y,T010001 RE-EXPORTS WORLD HS 8473,SGD thousand,332362.0
@@ -186414,7 +186535,8 @@ SG,re_exports,WLD,HS8473,2026-05-01,1351.3866,y,T010001 RE-EXPORTS WORLD HS 8473
 SG,re_exports,WLD,HS8473,2026-06-01,1727.8015,y,T010001 RE-EXPORTS WORLD HS 8473,SGD thousand,2225240.0
 SG,re_exports,WLD,HS8473,2026-07-01,2294.2534,y,T010001 RE-EXPORTS WORLD HS 8473,SGD thousand,2963157.0
 SG,re_exports,WLD,HS8473,2026-08-01,2435.3095,y,T010001 RE-EXPORTS WORLD HS 8473,SGD thousand,3108143.0
-SG,re_exports,WLD,HS8473,2026-09-01,2630.6935,y,T010001 RE-EXPORTS WORLD HS 8473,SGD thousand,3347940.0
+SG,re_exports,WLD,HS8473,2026-09-01,2630.6621,y,T010001 RE-EXPORTS WORLD HS 8473,SGD thousand,3347900.0
+SG,re_exports,WLD,HS8473,2026-10-01,3187.8467,y,T010001 RE-EXPORTS WORLD HS 8473,SGD thousand,4080339.0
 SG,re_exports,WLD,HS85,2021-09-01,11717.4846,y,T010001 RE-EXPORTS WORLD HS 85,SGD thousand,15793523.0
 SG,re_exports,WLD,HS85,2021-10-01,11727.1629,y,T010001 RE-EXPORTS WORLD HS 85,SGD thousand,15842570.0
 SG,re_exports,WLD,HS85,2021-11-01,12383.3961,y,T010001 RE-EXPORTS WORLD HS 85,SGD thousand,16803539.0
@@ -186474,8 +186596,9 @@ SG,re_exports,WLD,HS85,2026-04-01,21023.9913,y,T010001 RE-EXPORTS WORLD HS 85,SG
 SG,re_exports,WLD,HS85,2026-05-01,20248.7517,y,T010001 RE-EXPORTS WORLD HS 85,SGD thousand,25830316.0
 SG,re_exports,WLD,HS85,2026-06-01,23007.2105,y,T010001 RE-EXPORTS WORLD HS 85,SGD thousand,29631045.0
 SG,re_exports,WLD,HS85,2026-07-01,22861.6297,y,T010001 RE-EXPORTS WORLD HS 85,SGD thousand,29527078.0
-SG,re_exports,WLD,HS85,2026-08-01,22261.5827,y,T010001 RE-EXPORTS WORLD HS 85,SGD thousand,28412069.0
-SG,re_exports,WLD,HS85,2026-09-01,25438.3576,y,T010001 RE-EXPORTS WORLD HS 85,SGD thousand,32374009.0
+SG,re_exports,WLD,HS85,2026-08-01,22264.8681,y,T010001 RE-EXPORTS WORLD HS 85,SGD thousand,28416262.0
+SG,re_exports,WLD,HS85,2026-09-01,25450.0568,y,T010001 RE-EXPORTS WORLD HS 85,SGD thousand,32388898.0
+SG,re_exports,WLD,HS85,2026-10-01,28020.7288,y,T010001 RE-EXPORTS WORLD HS 85,SGD thousand,35865612.0
 SG,re_exports,WLD,TOTAL,1981-01-01,613.9419,y,"M451001 Total Re-Exports, (At Current Prices)",SGD thousand,1277730.0
 SG,re_exports,WLD,TOTAL,1981-02-01,500.8604,y,"M451001 Total Re-Exports, (At Current Prices)",SGD thousand,1045254.0
 SG,re_exports,WLD,TOTAL,1981-03-01,622.6273,y,"M451001 Total Re-Exports, (At Current Prices)",SGD thousand,1306739.0
@@ -187022,9 +187145,10 @@ SG,re_exports,WLD,TOTAL,2026-03-01,43738.2907,y,"M451001 Total Re-Exports, (At C
 SG,re_exports,WLD,TOTAL,2026-04-01,45838.1996,y,"M451001 Total Re-Exports, (At Current Prices)",SGD thousand,58472044.0
 SG,re_exports,WLD,TOTAL,2026-05-01,39753.089,y,"M451001 Total Re-Exports, (At Current Prices)",SGD thousand,50711020.0
 SG,re_exports,WLD,TOTAL,2026-06-01,44498.2411,y,"M451001 Total Re-Exports, (At Current Prices)",SGD thousand,57309398.0
-SG,re_exports,WLD,TOTAL,2026-07-01,48557.5667,y,"M451001 Total Re-Exports, (At Current Prices)",SGD thousand,62714823.0
-SG,re_exports,WLD,TOTAL,2026-08-01,44178.889,y,"M451001 Total Re-Exports, (At Current Prices)",SGD thousand,56384744.0
-SG,re_exports,WLD,TOTAL,2026-09-01,47206.843,y,"M451001 Total Re-Exports, (At Current Prices)",SGD thousand,60077572.0
+SG,re_exports,WLD,TOTAL,2026-07-01,48557.4336,y,"M451001 Total Re-Exports, (At Current Prices)",SGD thousand,62714651.0
+SG,re_exports,WLD,TOTAL,2026-08-01,44179.8645,y,"M451001 Total Re-Exports, (At Current Prices)",SGD thousand,56385989.0
+SG,re_exports,WLD,TOTAL,2026-09-01,47205.4121,y,"M451001 Total Re-Exports, (At Current Prices)",SGD thousand,60075751.0
+SG,re_exports,WLD,TOTAL,2026-10-01,52838.766,y,"M451001 Total Re-Exports, (At Current Prices)",SGD thousand,67631884.0
 SG,re_exports,US,TOTAL,2003-01-01,478.6128,y,M451511 United States Of America,SGD million,830.6
 SG,re_exports,US,TOTAL,2003-02-01,510.0311,y,M451511 United States Of America,SGD million,890.2
 SG,re_exports,US,TOTAL,2003-03-01,494.7194,y,M451511 United States Of America,SGD million,867.8
@@ -187309,7 +187433,8 @@ SG,re_exports,US,TOTAL,2026-05-01,3315.0164,y,M451511 United States Of America,S
 SG,re_exports,US,TOTAL,2026-06-01,3934.3039,y,M451511 United States Of America,SGD million,5067.0
 SG,re_exports,US,TOTAL,2026-07-01,5152.3119,y,M451511 United States Of America,SGD million,6654.5
 SG,re_exports,US,TOTAL,2026-08-01,3824.7017,y,M451511 United States Of America,SGD million,4881.4
-SG,re_exports,US,TOTAL,2026-09-01,4315.4204,y,M451511 United States Of America,SGD million,5492.0
+SG,re_exports,US,TOTAL,2026-09-01,4316.2062,y,M451511 United States Of America,SGD million,5493.0
+SG,re_exports,US,TOTAL,2026-10-01,4864.2655,y,M451511 United States Of America,SGD million,6226.1
 SG,re_exports,CN,TOTAL,2003-01-01,303.1521,y,M451511 Mainland China,SGD million,526.1
 SG,re_exports,CN,TOTAL,2003-02-01,234.1032,y,M451511 Mainland China,SGD million,408.6
 SG,re_exports,CN,TOTAL,2003-03-01,274.0397,y,M451511 Mainland China,SGD million,480.7
@@ -187594,7 +187719,8 @@ SG,re_exports,CN,TOTAL,2026-05-01,3799.5538,y,M451511 Mainland China,SGD million
 SG,re_exports,CN,TOTAL,2026-06-01,3917.2219,y,M451511 Mainland China,SGD million,5045.0
 SG,re_exports,CN,TOTAL,2026-07-01,4473.0538,y,M451511 Mainland China,SGD million,5777.2
 SG,re_exports,CN,TOTAL,2026-08-01,4676.7075,y,M451511 Mainland China,SGD million,5968.8
-SG,re_exports,CN,TOTAL,2026-09-01,4467.2302,y,M451511 Mainland China,SGD million,5685.2
+SG,re_exports,CN,TOTAL,2026-09-01,4455.8366,y,M451511 Mainland China,SGD million,5670.7
+SG,re_exports,CN,TOTAL,2026-10-01,6555.5589,y,M451511 Mainland China,SGD million,8390.9
 SG,re_exports,HK,TOTAL,2003-01-01,522.694,y,M451511 Hong Kong,SGD million,907.1
 SG,re_exports,HK,TOTAL,2003-02-01,462.7063,y,M451511 Hong Kong,SGD million,807.6
 SG,re_exports,HK,TOTAL,2003-03-01,604.2326,y,M451511 Hong Kong,SGD million,1059.9
@@ -187878,8 +188004,9 @@ SG,re_exports,HK,TOTAL,2026-04-01,5257.6074,y,M451511 Hong Kong,SGD million,6706
 SG,re_exports,HK,TOTAL,2026-05-01,4950.967,y,M451511 Hong Kong,SGD million,6315.7
 SG,re_exports,HK,TOTAL,2026-06-01,6238.9037,y,M451511 Hong Kong,SGD million,8035.1
 SG,re_exports,HK,TOTAL,2026-07-01,6262.6779,y,M451511 Hong Kong,SGD million,8088.6
-SG,re_exports,HK,TOTAL,2026-08-01,6108.4437,y,M451511 Hong Kong,SGD million,7796.1
-SG,re_exports,HK,TOTAL,2026-09-01,7411.3339,y,M451511 Hong Kong,SGD million,9432.0
+SG,re_exports,HK,TOTAL,2026-08-01,6108.5221,y,M451511 Hong Kong,SGD million,7796.2
+SG,re_exports,HK,TOTAL,2026-09-01,7416.5985,y,M451511 Hong Kong,SGD million,9438.7
+SG,re_exports,HK,TOTAL,2026-10-01,6649.3113,y,M451511 Hong Kong,SGD million,8510.9
 SG,re_exports,JP,TOTAL,2003-01-01,266.2161,y,M451511 Japan,SGD million,462.0
 SG,re_exports,JP,TOTAL,2003-02-01,231.4677,y,M451511 Japan,SGD million,404.0
 SG,re_exports,JP,TOTAL,2003-03-01,293.0235,y,M451511 Japan,SGD million,514.0
@@ -188163,8 +188290,9 @@ SG,re_exports,JP,TOTAL,2026-04-01,1260.2516,y,M451511 Japan,SGD million,1607.6
 SG,re_exports,JP,TOTAL,2026-05-01,1269.0003,y,M451511 Japan,SGD million,1618.8
 SG,re_exports,JP,TOTAL,2026-06-01,1262.1297,y,M451511 Japan,SGD million,1625.5
 SG,re_exports,JP,TOTAL,2026-07-01,1209.8584,y,M451511 Japan,SGD million,1562.6
-SG,re_exports,JP,TOTAL,2026-08-01,1409.8759,y,M451511 Japan,SGD million,1799.4
-SG,re_exports,JP,TOTAL,2026-09-01,1487.61,y,M451511 Japan,SGD million,1893.2
+SG,re_exports,JP,TOTAL,2026-08-01,1409.5625,y,M451511 Japan,SGD million,1799.0
+SG,re_exports,JP,TOTAL,2026-09-01,1487.7671,y,M451511 Japan,SGD million,1893.4
+SG,re_exports,JP,TOTAL,2026-10-01,1371.8321,y,M451511 Japan,SGD million,1755.9
 SG,re_exports,EU,TOTAL,2003-01-01,556.2302,y,sum of the 27 current EU members (calculated),SGD million,965.3
 SG,re_exports,EU,TOTAL,2003-02-01,432.1688,y,sum of the 27 current EU members (calculated),SGD million,754.3
 SG,re_exports,EU,TOTAL,2003-03-01,529.5512,y,sum of the 27 current EU members (calculated),SGD million,928.9
@@ -188449,7 +188577,8 @@ SG,re_exports,EU,TOTAL,2026-05-01,1755.8895,y,sum of the 27 current EU members (
 SG,re_exports,EU,TOTAL,2026-06-01,1963.1145,y,sum of the 27 current EU members (calculated),SGD million,2528.3
 SG,re_exports,EU,TOTAL,2026-07-01,2358.8603,y,sum of the 27 current EU members (calculated),SGD million,3046.6
 SG,re_exports,EU,TOTAL,2026-08-01,1928.1778,y,sum of the 27 current EU members (calculated),SGD million,2460.9
-SG,re_exports,EU,TOTAL,2026-09-01,2497.8678,y,sum of the 27 current EU members (calculated),SGD million,3178.9
+SG,re_exports,EU,TOTAL,2026-09-01,2498.0248,y,sum of the 27 current EU members (calculated),SGD million,3179.1
+SG,re_exports,EU,TOTAL,2026-10-01,2607.9577,y,sum of the 27 current EU members (calculated),SGD million,3338.1
 SG,re_exports,TW,TOTAL,2003-01-01,268.7515,y,M451511 Taiwan,SGD million,466.4
 SG,re_exports,TW,TOTAL,2003-02-01,256.6198,y,M451511 Taiwan,SGD million,447.9
 SG,re_exports,TW,TOTAL,2003-03-01,280.8807,y,M451511 Taiwan,SGD million,492.7
@@ -188734,7 +188863,8 @@ SG,re_exports,TW,TOTAL,2026-05-01,5221.4174,y,M451511 Taiwan,SGD million,6660.7
 SG,re_exports,TW,TOTAL,2026-06-01,6802.8439,y,M451511 Taiwan,SGD million,8761.4
 SG,re_exports,TW,TOTAL,2026-07-01,5153.5507,y,M451511 Taiwan,SGD million,6656.1
 SG,re_exports,TW,TOTAL,2026-08-01,3912.6133,y,M451511 Taiwan,SGD million,4993.6
-SG,re_exports,TW,TOTAL,2026-09-01,4173.5113,y,M451511 Taiwan,SGD million,5311.4
+SG,re_exports,TW,TOTAL,2026-09-01,4173.9042,y,M451511 Taiwan,SGD million,5311.9
+SG,re_exports,TW,TOTAL,2026-10-01,5797.2582,y,M451511 Taiwan,SGD million,7420.3
 SG,re_exports,KR,TOTAL,2003-01-01,347.752,y,M451511 Republic Of Korea,SGD million,603.5
 SG,re_exports,KR,TOTAL,2003-02-01,291.2254,y,M451511 Republic Of Korea,SGD million,508.3
 SG,re_exports,KR,TOTAL,2003-03-01,298.6103,y,M451511 Republic Of Korea,SGD million,523.8
@@ -189018,8 +189148,9 @@ SG,re_exports,KR,TOTAL,2026-04-01,1567.7104,y,M451511 Republic Of Korea,SGD mill
 SG,re_exports,KR,TOTAL,2026-05-01,1616.5879,y,M451511 Republic Of Korea,SGD million,2062.2
 SG,re_exports,KR,TOTAL,2026-06-01,1775.4449,y,M451511 Republic Of Korea,SGD million,2286.6
 SG,re_exports,KR,TOTAL,2026-07-01,1791.4823,y,M451511 Republic Of Korea,SGD million,2313.8
-SG,re_exports,KR,TOTAL,2026-08-01,1640.6242,y,M451511 Republic Of Korea,SGD million,2093.9
-SG,re_exports,KR,TOTAL,2026-09-01,1755.1629,y,M451511 Republic Of Korea,SGD million,2233.7
+SG,re_exports,KR,TOTAL,2026-08-01,1640.9376,y,M451511 Republic Of Korea,SGD million,2094.3
+SG,re_exports,KR,TOTAL,2026-09-01,1755.0843,y,M451511 Republic Of Korea,SGD million,2233.6
+SG,re_exports,KR,TOTAL,2026-10-01,1510.0388,y,M451511 Republic Of Korea,SGD million,1932.8
 SG,re_exports,IN,TOTAL,2003-01-01,139.216,y,M451511 India,SGD million,241.6
 SG,re_exports,IN,TOTAL,2003-02-01,119.5726,y,M451511 India,SGD million,208.7
 SG,re_exports,IN,TOTAL,2003-03-01,137.3334,y,M451511 India,SGD million,240.9
@@ -189304,7 +189435,8 @@ SG,re_exports,IN,TOTAL,2026-05-01,1133.4616,y,M451511 India,SGD million,1445.9
 SG,re_exports,IN,TOTAL,2026-06-01,1502.3652,y,M451511 India,SGD million,1934.9
 SG,re_exports,IN,TOTAL,2026-07-01,1496.1797,y,M451511 India,SGD million,1932.4
 SG,re_exports,IN,TOTAL,2026-08-01,1179.1276,y,M451511 India,SGD million,1504.9
-SG,re_exports,IN,TOTAL,2026-09-01,1513.5402,y,M451511 India,SGD million,1926.2
+SG,re_exports,IN,TOTAL,2026-09-01,1513.6974,y,M451511 India,SGD million,1926.4
+SG,re_exports,IN,TOTAL,2026-10-01,1510.5857,y,M451511 India,SGD million,1933.5
 SG,re_exports,ID,TOTAL,2003-01-01,774.3316,y,M451511 Indonesia,SGD million,1343.8
 SG,re_exports,ID,TOTAL,2003-02-01,754.1035,y,M451511 Indonesia,SGD million,1316.2
 SG,re_exports,ID,TOTAL,2003-03-01,888.5338,y,M451511 Indonesia,SGD million,1558.6
@@ -189588,8 +189720,9 @@ SG,re_exports,ID,TOTAL,2026-04-01,2150.957,y,M451511 Indonesia,SGD million,2743.
 SG,re_exports,ID,TOTAL,2026-05-01,2144.5541,y,M451511 Indonesia,SGD million,2735.7
 SG,re_exports,ID,TOTAL,2026-06-01,2181.3762,y,M451511 Indonesia,SGD million,2809.4
 SG,re_exports,ID,TOTAL,2026-07-01,2277.5626,y,M451511 Indonesia,SGD million,2941.6
-SG,re_exports,ID,TOTAL,2026-08-01,2113.6386,y,M451511 Indonesia,SGD million,2697.6
-SG,re_exports,ID,TOTAL,2026-09-01,2347.7082,y,M451511 Indonesia,SGD million,2987.8
+SG,re_exports,ID,TOTAL,2026-08-01,2113.7953,y,M451511 Indonesia,SGD million,2697.8
+SG,re_exports,ID,TOTAL,2026-09-01,2348.4939,y,M451511 Indonesia,SGD million,2988.8
+SG,re_exports,ID,TOTAL,2026-10-01,2608.7389,y,M451511 Indonesia,SGD million,3339.1
 SG,re_exports,MY,TOTAL,2003-01-01,1149.5119,y,M451511 Malaysia,SGD million,1994.9
 SG,re_exports,MY,TOTAL,2003-02-01,964.1433,y,M451511 Malaysia,SGD million,1682.8
 SG,re_exports,MY,TOTAL,2003-03-01,1143.8177,y,M451511 Malaysia,SGD million,2006.4
@@ -189874,7 +190007,8 @@ SG,re_exports,MY,TOTAL,2026-05-01,3934.5438,y,M451511 Malaysia,SGD million,5019.
 SG,re_exports,MY,TOTAL,2026-06-01,4496.3029,y,M451511 Malaysia,SGD million,5790.8
 SG,re_exports,MY,TOTAL,2026-07-01,5014.3388,y,M451511 Malaysia,SGD million,6476.3
 SG,re_exports,MY,TOTAL,2026-08-01,4807.4779,y,M451511 Malaysia,SGD million,6135.7
-SG,re_exports,MY,TOTAL,2026-09-01,5198.3844,y,M451511 Malaysia,SGD million,6615.7
+SG,re_exports,MY,TOTAL,2026-09-01,5199.3273,y,M451511 Malaysia,SGD million,6616.9
+SG,re_exports,MY,TOTAL,2026-10-01,5870.1507,y,M451511 Malaysia,SGD million,7513.6
 SG,re_exports,PH,TOTAL,2003-01-01,114.0926,y,M451511 Philippines,SGD million,198.0
 SG,re_exports,PH,TOTAL,2003-02-01,99.8634,y,M451511 Philippines,SGD million,174.3
 SG,re_exports,PH,TOTAL,2003-03-01,126.3877,y,M451511 Philippines,SGD million,221.7
@@ -190159,7 +190293,8 @@ SG,re_exports,PH,TOTAL,2026-05-01,577.4312,y,M451511 Philippines,SGD million,736
 SG,re_exports,PH,TOTAL,2026-06-01,785.6184,y,M451511 Philippines,SGD million,1011.8
 SG,re_exports,PH,TOTAL,2026-07-01,775.2663,y,M451511 Philippines,SGD million,1001.3
 SG,re_exports,PH,TOTAL,2026-08-01,679.5517,y,M451511 Philippines,SGD million,867.3
-SG,re_exports,PH,TOTAL,2026-09-01,710.8029,y,M451511 Philippines,SGD million,904.6
+SG,re_exports,PH,TOTAL,2026-09-01,711.1172,y,M451511 Philippines,SGD million,905.0
+SG,re_exports,PH,TOTAL,2026-10-01,1010.2603,y,M451511 Philippines,SGD million,1293.1
 SG,re_exports,TH,TOTAL,2003-01-01,280.3912,y,M451511 Thailand,SGD million,486.6
 SG,re_exports,TH,TOTAL,2003-02-01,222.6444,y,M451511 Thailand,SGD million,388.6
 SG,re_exports,TH,TOTAL,2003-03-01,285.3273,y,M451511 Thailand,SGD million,500.5
@@ -190443,8 +190578,9 @@ SG,re_exports,TH,TOTAL,2026-04-01,4109.4583,y,M451511 Thailand,SGD million,5242.
 SG,re_exports,TH,TOTAL,2026-05-01,2826.0107,y,M451511 Thailand,SGD million,3605.0
 SG,re_exports,TH,TOTAL,2026-06-01,3001.0035,y,M451511 Thailand,SGD million,3865.0
 SG,re_exports,TH,TOTAL,2026-07-01,2563.1097,y,M451511 Thailand,SGD million,3310.4
-SG,re_exports,TH,TOTAL,2026-08-01,2507.0468,y,M451511 Thailand,SGD million,3199.7
-SG,re_exports,TH,TOTAL,2026-09-01,3098.9779,y,M451511 Thailand,SGD million,3943.9
+SG,re_exports,TH,TOTAL,2026-08-01,2507.1251,y,M451511 Thailand,SGD million,3199.8
+SG,re_exports,TH,TOTAL,2026-09-01,3099.7637,y,M451511 Thailand,SGD million,3944.9
+SG,re_exports,TH,TOTAL,2026-10-01,4126.9028,y,M451511 Thailand,SGD million,5282.3
 SG,re_exports,VN,TOTAL,2003-01-01,85.5695,y,M451511 Viet Nam,SGD million,148.5
 SG,re_exports,VN,TOTAL,2003-02-01,78.149,y,M451511 Viet Nam,SGD million,136.4
 SG,re_exports,VN,TOTAL,2003-03-01,93.8929,y,M451511 Viet Nam,SGD million,164.7
@@ -190728,8 +190864,9 @@ SG,re_exports,VN,TOTAL,2026-04-01,1338.253,y,M451511 Viet Nam,SGD million,1707.1
 SG,re_exports,VN,TOTAL,2026-05-01,1138.9489,y,M451511 Viet Nam,SGD million,1452.9
 SG,re_exports,VN,TOTAL,2026-06-01,1422.9338,y,M451511 Viet Nam,SGD million,1832.6
 SG,re_exports,VN,TOTAL,2026-07-01,1801.8574,y,M451511 Viet Nam,SGD million,2327.2
-SG,re_exports,VN,TOTAL,2026-08-01,1559.9211,y,M451511 Viet Nam,SGD million,1990.9
-SG,re_exports,VN,TOTAL,2026-09-01,1797.8299,y,M451511 Viet Nam,SGD million,2288.0
+SG,re_exports,VN,TOTAL,2026-08-01,1563.2902,y,M451511 Viet Nam,SGD million,1995.2
+SG,re_exports,VN,TOTAL,2026-09-01,1797.9085,y,M451511 Viet Nam,SGD million,2288.1
+SG,re_exports,VN,TOTAL,2026-10-01,1960.0503,y,M451511 Viet Nam,SGD million,2508.8
 SG,re_exports,AT,TOTAL,2003-01-01,1.6711,y,M451511 Austria,SGD million,2.9
 SG,re_exports,AT,TOTAL,2003-02-01,1.6042,y,M451511 Austria,SGD million,2.8
 SG,re_exports,AT,TOTAL,2003-03-01,2.2233,y,M451511 Austria,SGD million,3.9
@@ -191015,6 +191152,7 @@ SG,re_exports,AT,TOTAL,2026-06-01,12.8892,y,M451511 Austria,SGD million,16.6
 SG,re_exports,AT,TOTAL,2026-07-01,28.4153,y,M451511 Austria,SGD million,36.7
 SG,re_exports,AT,TOTAL,2026-08-01,27.8935,y,M451511 Austria,SGD million,35.6
 SG,re_exports,AT,TOTAL,2026-09-01,26.4803,y,M451511 Austria,SGD million,33.7
+SG,re_exports,AT,TOTAL,2026-10-01,16.4848,y,M451511 Austria,SGD million,21.1
 SG,re_exports,BE,TOTAL,2003-01-01,22.0118,y,M451511 Belgium,SGD million,38.2
 SG,re_exports,BE,TOTAL,2003-02-01,20.454,y,M451511 Belgium,SGD million,35.7
 SG,re_exports,BE,TOTAL,2003-03-01,17.6156,y,M451511 Belgium,SGD million,30.9
@@ -191300,6 +191438,7 @@ SG,re_exports,BE,TOTAL,2026-06-01,68.4058,y,M451511 Belgium,SGD million,88.1
 SG,re_exports,BE,TOTAL,2026-07-01,60.2374,y,M451511 Belgium,SGD million,77.8
 SG,re_exports,BE,TOTAL,2026-08-01,50.9292,y,M451511 Belgium,SGD million,65.0
 SG,re_exports,BE,TOTAL,2026-09-01,103.6424,y,M451511 Belgium,SGD million,131.9
+SG,re_exports,BE,TOTAL,2026-10-01,108.1278,y,M451511 Belgium,SGD million,138.4
 SG,re_exports,BG,TOTAL,2003-01-01,0.2881,y,M451511 Bulgaria,SGD million,0.5
 SG,re_exports,BG,TOTAL,2003-02-01,0.2292,y,M451511 Bulgaria,SGD million,0.4
 SG,re_exports,BG,TOTAL,2003-03-01,0.6271,y,M451511 Bulgaria,SGD million,1.1
@@ -191585,6 +191724,7 @@ SG,re_exports,BG,TOTAL,2026-06-01,1.3976,y,M451511 Bulgaria,SGD million,1.8
 SG,re_exports,BG,TOTAL,2026-07-01,13.085,y,M451511 Bulgaria,SGD million,16.9
 SG,re_exports,BG,TOTAL,2026-08-01,0.7835,y,M451511 Bulgaria,SGD million,1.0
 SG,re_exports,BG,TOTAL,2026-09-01,1.6501,y,M451511 Bulgaria,SGD million,2.1
+SG,re_exports,BG,TOTAL,2026-10-01,1.9532,y,M451511 Bulgaria,SGD million,2.5
 SG,re_exports,CY,TOTAL,2003-01-01,1.2101,y,M451511 Cyprus,SGD million,2.1
 SG,re_exports,CY,TOTAL,2003-02-01,1.1459,y,M451511 Cyprus,SGD million,2.0
 SG,re_exports,CY,TOTAL,2003-03-01,2.3373,y,M451511 Cyprus,SGD million,4.1
@@ -191870,6 +192010,7 @@ SG,re_exports,CY,TOTAL,2026-06-01,1.3976,y,M451511 Cyprus,SGD million,1.8
 SG,re_exports,CY,TOTAL,2026-07-01,0.4646,y,M451511 Cyprus,SGD million,0.6
 SG,re_exports,CY,TOTAL,2026-08-01,0.7052,y,M451511 Cyprus,SGD million,0.9
 SG,re_exports,CY,TOTAL,2026-09-01,1.9644,y,M451511 Cyprus,SGD million,2.5
+SG,re_exports,CY,TOTAL,2026-10-01,2.1876,y,M451511 Cyprus,SGD million,2.8
 SG,re_exports,CZ,TOTAL,2003-01-01,1.0372,y,M451511 Czechia,SGD million,1.8
 SG,re_exports,CZ,TOTAL,2003-02-01,1.3178,y,M451511 Czechia,SGD million,2.3
 SG,re_exports,CZ,TOTAL,2003-03-01,1.3112,y,M451511 Czechia,SGD million,2.3
@@ -192155,6 +192296,7 @@ SG,re_exports,CZ,TOTAL,2026-06-01,134.8705,y,M451511 Czechia,SGD million,173.7
 SG,re_exports,CZ,TOTAL,2026-07-01,187.8354,y,M451511 Czechia,SGD million,242.6
 SG,re_exports,CZ,TOTAL,2026-08-01,99.8212,y,M451511 Czechia,SGD million,127.4
 SG,re_exports,CZ,TOTAL,2026-09-01,95.0775,y,M451511 Czechia,SGD million,121.0
+SG,re_exports,CZ,TOTAL,2026-10-01,299.1483,y,M451511 Czechia,SGD million,382.9
 SG,re_exports,DE,TOTAL,2003-01-01,280.5641,y,M451511 Germany,SGD million,486.9
 SG,re_exports,DE,TOTAL,2003-02-01,178.2989,y,M451511 Germany,SGD million,311.2
 SG,re_exports,DE,TOTAL,2003-03-01,231.3403,y,M451511 Germany,SGD million,405.8
@@ -192439,7 +192581,8 @@ SG,re_exports,DE,TOTAL,2026-05-01,509.1523,y,M451511 Germany,SGD million,649.5
 SG,re_exports,DE,TOTAL,2026-06-01,531.2514,y,M451511 Germany,SGD million,684.2
 SG,re_exports,DE,TOTAL,2026-07-01,691.8786,y,M451511 Germany,SGD million,893.6
 SG,re_exports,DE,TOTAL,2026-08-01,535.9315,y,M451511 Germany,SGD million,684.0
-SG,re_exports,DE,TOTAL,2026-09-01,591.8381,y,M451511 Germany,SGD million,753.2
+SG,re_exports,DE,TOTAL,2026-09-01,591.9166,y,M451511 Germany,SGD million,753.3
+SG,re_exports,DE,TOTAL,2026-10-01,587.2807,y,M451511 Germany,SGD million,751.7
 SG,re_exports,DK,TOTAL,2003-01-01,10.8907,y,M451511 Denmark,SGD million,18.9
 SG,re_exports,DK,TOTAL,2003-02-01,7.7347,y,M451511 Denmark,SGD million,13.5
 SG,re_exports,DK,TOTAL,2003-03-01,5.3588,y,M451511 Denmark,SGD million,9.4
@@ -192725,6 +192868,7 @@ SG,re_exports,DK,TOTAL,2026-06-01,7.9975,y,M451511 Denmark,SGD million,10.3
 SG,re_exports,DK,TOTAL,2026-07-01,9.6782,y,M451511 Denmark,SGD million,12.5
 SG,re_exports,DK,TOTAL,2026-08-01,6.0331,y,M451511 Denmark,SGD million,7.7
 SG,re_exports,DK,TOTAL,2026-09-01,16.3439,y,M451511 Denmark,SGD million,20.8
+SG,re_exports,DK,TOTAL,2026-10-01,14.2191,y,M451511 Denmark,SGD million,18.2
 SG,re_exports,EE,TOTAL,2003-01-01,1.6711,y,M451511 Estonia,SGD million,2.9
 SG,re_exports,EE,TOTAL,2003-02-01,1.6042,y,M451511 Estonia,SGD million,2.8
 SG,re_exports,EE,TOTAL,2003-03-01,3.3065,y,M451511 Estonia,SGD million,5.8
@@ -193010,6 +193154,7 @@ SG,re_exports,EE,TOTAL,2026-06-01,0.6988,y,M451511 Estonia,SGD million,0.9
 SG,re_exports,EE,TOTAL,2026-07-01,0.1549,y,M451511 Estonia,SGD million,0.2
 SG,re_exports,EE,TOTAL,2026-08-01,0.6268,y,M451511 Estonia,SGD million,0.8
 SG,re_exports,EE,TOTAL,2026-09-01,0.3929,y,M451511 Estonia,SGD million,0.5
+SG,re_exports,EE,TOTAL,2026-10-01,0.4688,y,M451511 Estonia,SGD million,0.6
 SG,re_exports,ES,TOTAL,2003-01-01,11.9855,y,M451511 Spain,SGD million,20.8
 SG,re_exports,ES,TOTAL,2003-02-01,10.2556,y,M451511 Spain,SGD million,17.9
 SG,re_exports,ES,TOTAL,2003-03-01,8.1522,y,M451511 Spain,SGD million,14.3
@@ -193294,7 +193439,8 @@ SG,re_exports,ES,TOTAL,2026-05-01,26.3395,y,M451511 Spain,SGD million,33.6
 SG,re_exports,ES,TOTAL,2026-06-01,56.1378,y,M451511 Spain,SGD million,72.3
 SG,re_exports,ES,TOTAL,2026-07-01,26.4023,y,M451511 Spain,SGD million,34.1
 SG,re_exports,ES,TOTAL,2026-08-01,43.4857,y,M451511 Spain,SGD million,55.5
-SG,re_exports,ES,TOTAL,2026-09-01,68.283,y,M451511 Spain,SGD million,86.9
+SG,re_exports,ES,TOTAL,2026-09-01,68.3615,y,M451511 Spain,SGD million,87.0
+SG,re_exports,ES,TOTAL,2026-10-01,45.7824,y,M451511 Spain,SGD million,58.6
 SG,re_exports,FI,TOTAL,2003-01-01,24.0286,y,M451511 Finland,SGD million,41.7
 SG,re_exports,FI,TOTAL,2003-02-01,20.3394,y,M451511 Finland,SGD million,35.5
 SG,re_exports,FI,TOTAL,2003-03-01,21.3212,y,M451511 Finland,SGD million,37.4
@@ -193580,6 +193726,7 @@ SG,re_exports,FI,TOTAL,2026-06-01,47.7521,y,M451511 Finland,SGD million,61.5
 SG,re_exports,FI,TOTAL,2026-07-01,46.0685,y,M451511 Finland,SGD million,59.5
 SG,re_exports,FI,TOTAL,2026-08-01,42.4671,y,M451511 Finland,SGD million,54.2
 SG,re_exports,FI,TOTAL,2026-09-01,21.53,y,M451511 Finland,SGD million,27.4
+SG,re_exports,FI,TOTAL,2026-10-01,56.8765,y,M451511 Finland,SGD million,72.8
 SG,re_exports,FR,TOTAL,2003-01-01,43.2169,y,M451511 France,SGD million,75.0
 SG,re_exports,FR,TOTAL,2003-02-01,39.4756,y,M451511 France,SGD million,68.9
 SG,re_exports,FR,TOTAL,2003-03-01,48.5142,y,M451511 France,SGD million,85.1
@@ -193865,6 +194012,7 @@ SG,re_exports,FR,TOTAL,2026-06-01,298.0816,y,M451511 France,SGD million,383.9
 SG,re_exports,FR,TOTAL,2026-07-01,410.8997,y,M451511 France,SGD million,530.7
 SG,re_exports,FR,TOTAL,2026-08-01,254.0973,y,M451511 France,SGD million,324.3
 SG,re_exports,FR,TOTAL,2026-09-01,389.8965,y,M451511 France,SGD million,496.2
+SG,re_exports,FR,TOTAL,2026-10-01,390.1663,y,M451511 France,SGD million,499.4
 SG,re_exports,GR,TOTAL,2003-01-01,1.3829,y,M451511 Greece,SGD million,2.4
 SG,re_exports,GR,TOTAL,2003-02-01,1.1459,y,M451511 Greece,SGD million,2.0
 SG,re_exports,GR,TOTAL,2003-03-01,2.0523,y,M451511 Greece,SGD million,3.6
@@ -194150,6 +194298,7 @@ SG,re_exports,GR,TOTAL,2026-06-01,13.8986,y,M451511 Greece,SGD million,17.9
 SG,re_exports,GR,TOTAL,2026-07-01,15.4852,y,M451511 Greece,SGD million,20.0
 SG,re_exports,GR,TOTAL,2026-08-01,31.4977,y,M451511 Greece,SGD million,40.2
 SG,re_exports,GR,TOTAL,2026-09-01,6.4433,y,M451511 Greece,SGD million,8.2
+SG,re_exports,GR,TOTAL,2026-10-01,15.0785,y,M451511 Greece,SGD million,19.3
 SG,re_exports,HR,TOTAL,2003-01-01,0.0576,y,M451511 Croatia,SGD million,0.1
 SG,re_exports,HR,TOTAL,2003-02-01,0.2292,y,M451511 Croatia,SGD million,0.4
 SG,re_exports,HR,TOTAL,2003-03-01,0.171,y,M451511 Croatia,SGD million,0.3
@@ -194435,6 +194584,7 @@ SG,re_exports,HR,TOTAL,2026-06-01,0.2329,y,M451511 Croatia,SGD million,0.3
 SG,re_exports,HR,TOTAL,2026-07-01,0.4646,y,M451511 Croatia,SGD million,0.6
 SG,re_exports,HR,TOTAL,2026-08-01,0.1567,y,M451511 Croatia,SGD million,0.2
 SG,re_exports,HR,TOTAL,2026-09-01,0.2357,y,M451511 Croatia,SGD million,0.3
+SG,re_exports,HR,TOTAL,2026-10-01,0.1563,y,M451511 Croatia,SGD million,0.2
 SG,re_exports,HU,TOTAL,2003-01-01,11.6398,y,M451511 Hungary,SGD million,20.2
 SG,re_exports,HU,TOTAL,2003-02-01,15.011,y,M451511 Hungary,SGD million,26.2
 SG,re_exports,HU,TOTAL,2003-03-01,15.6203,y,M451511 Hungary,SGD million,27.4
@@ -194720,6 +194870,7 @@ SG,re_exports,HU,TOTAL,2026-06-01,20.2655,y,M451511 Hungary,SGD million,26.1
 SG,re_exports,HU,TOTAL,2026-07-01,25.8603,y,M451511 Hungary,SGD million,33.4
 SG,re_exports,HU,TOTAL,2026-08-01,20.1366,y,M451511 Hungary,SGD million,25.7
 SG,re_exports,HU,TOTAL,2026-09-01,40.8598,y,M451511 Hungary,SGD million,52.0
+SG,re_exports,HU,TOTAL,2026-10-01,96.8775,y,M451511 Hungary,SGD million,124.0
 SG,re_exports,IE,TOTAL,2003-01-01,12.7922,y,M451511 Ireland,SGD million,22.2
 SG,re_exports,IE,TOTAL,2003-02-01,9.7973,y,M451511 Ireland,SGD million,17.1
 SG,re_exports,IE,TOTAL,2003-03-01,13.625,y,M451511 Ireland,SGD million,23.9
@@ -195005,6 +195156,7 @@ SG,re_exports,IE,TOTAL,2026-06-01,54.6625,y,M451511 Ireland,SGD million,70.4
 SG,re_exports,IE,TOTAL,2026-07-01,74.0967,y,M451511 Ireland,SGD million,95.7
 SG,re_exports,IE,TOTAL,2026-08-01,105.1491,y,M451511 Ireland,SGD million,134.2
 SG,re_exports,IE,TOTAL,2026-09-01,131.537,y,M451511 Ireland,SGD million,167.4
+SG,re_exports,IE,TOTAL,2026-10-01,105.4715,y,M451511 Ireland,SGD million,135.0
 SG,re_exports,IT,TOTAL,2003-01-01,12.8498,y,M451511 Italy,SGD million,22.3
 SG,re_exports,IT,TOTAL,2003-02-01,9.5108,y,M451511 Italy,SGD million,16.6
 SG,re_exports,IT,TOTAL,2003-03-01,9.0073,y,M451511 Italy,SGD million,15.8
@@ -195290,6 +195442,7 @@ SG,re_exports,IT,TOTAL,2026-06-01,88.9819,y,M451511 Italy,SGD million,114.6
 SG,re_exports,IT,TOTAL,2026-07-01,77.8905,y,M451511 Italy,SGD million,100.6
 SG,re_exports,IT,TOTAL,2026-08-01,96.3736,y,M451511 Italy,SGD million,123.0
 SG,re_exports,IT,TOTAL,2026-09-01,77.7907,y,M451511 Italy,SGD million,99.0
+SG,re_exports,IT,TOTAL,2026-10-01,87.2679,y,M451511 Italy,SGD million,111.7
 SG,re_exports,LT,TOTAL,2003-01-01,0.5762,y,M451511 Lithuania,SGD million,1.0
 SG,re_exports,LT,TOTAL,2003-02-01,1.4896,y,M451511 Lithuania,SGD million,2.6
 SG,re_exports,LT,TOTAL,2003-03-01,0.285,y,M451511 Lithuania,SGD million,0.5
@@ -195575,6 +195728,7 @@ SG,re_exports,LT,TOTAL,2026-06-01,3.3388,y,M451511 Lithuania,SGD million,4.3
 SG,re_exports,LT,TOTAL,2026-07-01,2.8648,y,M451511 Lithuania,SGD million,3.7
 SG,re_exports,LT,TOTAL,2026-08-01,1.0969,y,M451511 Lithuania,SGD million,1.4
 SG,re_exports,LT,TOTAL,2026-09-01,4.086,y,M451511 Lithuania,SGD million,5.2
+SG,re_exports,LT,TOTAL,2026-10-01,32.5008,y,M451511 Lithuania,SGD million,41.6
 SG,re_exports,LU,TOTAL,2003-01-01,0.1152,y,M451511 Luxembourg,SGD million,0.2
 SG,re_exports,LU,TOTAL,2003-02-01,0.2292,y,M451511 Luxembourg,SGD million,0.4
 SG,re_exports,LU,TOTAL,2003-03-01,0.114,y,M451511 Luxembourg,SGD million,0.2
@@ -195860,6 +196014,7 @@ SG,re_exports,LU,TOTAL,2026-06-01,32.0676,y,M451511 Luxembourg,SGD million,41.3
 SG,re_exports,LU,TOTAL,2026-07-01,20.2856,y,M451511 Luxembourg,SGD million,26.2
 SG,re_exports,LU,TOTAL,2026-08-01,35.0236,y,M451511 Luxembourg,SGD million,44.7
 SG,re_exports,LU,TOTAL,2026-09-01,0.9429,y,M451511 Luxembourg,SGD million,1.2
+SG,re_exports,LU,TOTAL,2026-10-01,1.7188,y,M451511 Luxembourg,SGD million,2.2
 SG,re_exports,LV,TOTAL,2003-01-01,0.0576,y,M451511 Latvia,SGD million,0.1
 SG,re_exports,LV,TOTAL,2003-02-01,0.0573,y,M451511 Latvia,SGD million,0.1
 SG,re_exports,LV,TOTAL,2003-03-01,0.171,y,M451511 Latvia,SGD million,0.3
@@ -196145,6 +196300,7 @@ SG,re_exports,LV,TOTAL,2026-06-01,5.4352,y,M451511 Latvia,SGD million,7.0
 SG,re_exports,LV,TOTAL,2026-07-01,9.446,y,M451511 Latvia,SGD million,12.2
 SG,re_exports,LV,TOTAL,2026-08-01,3.9176,y,M451511 Latvia,SGD million,5.0
 SG,re_exports,LV,TOTAL,2026-09-01,6.0504,y,M451511 Latvia,SGD million,7.7
+SG,re_exports,LV,TOTAL,2026-10-01,4.4532,y,M451511 Latvia,SGD million,5.7
 SG,re_exports,MT,TOTAL,2003-01-01,12.1584,y,M451511 Malta,SGD million,21.1
 SG,re_exports,MT,TOTAL,2003-02-01,12.3755,y,M451511 Malta,SGD million,21.6
 SG,re_exports,MT,TOTAL,2003-03-01,16.8745,y,M451511 Malta,SGD million,29.6
@@ -196430,6 +196586,7 @@ SG,re_exports,MT,TOTAL,2026-06-01,8.6963,y,M451511 Malta,SGD million,11.2
 SG,re_exports,MT,TOTAL,2026-07-01,9.2911,y,M451511 Malta,SGD million,12.0
 SG,re_exports,MT,TOTAL,2026-08-01,9.0105,y,M451511 Malta,SGD million,11.5
 SG,re_exports,MT,TOTAL,2026-09-01,10.0578,y,M451511 Malta,SGD million,12.8
+SG,re_exports,MT,TOTAL,2026-10-01,9.219,y,M451511 Malta,SGD million,11.8
 SG,re_exports,NL,TOTAL,2003-01-01,100.5513,y,M451511 Netherlands,SGD million,174.5
 SG,re_exports,NL,TOTAL,2003-02-01,94.9361,y,M451511 Netherlands,SGD million,165.7
 SG,re_exports,NL,TOTAL,2003-03-01,124.8485,y,M451511 Netherlands,SGD million,219.0
@@ -196715,6 +196872,7 @@ SG,re_exports,NL,TOTAL,2026-06-01,439.8625,y,M451511 Netherlands,SGD million,566
 SG,re_exports,NL,TOTAL,2026-07-01,505.9014,y,M451511 Netherlands,SGD million,653.4
 SG,re_exports,NL,TOTAL,2026-08-01,404.7693,y,M451511 Netherlands,SGD million,516.6
 SG,re_exports,NL,TOTAL,2026-09-01,752.3698,y,M451511 Netherlands,SGD million,957.5
+SG,re_exports,NL,TOTAL,2026-10-01,593.609,y,M451511 Netherlands,SGD million,759.8
 SG,re_exports,PL,TOTAL,2003-01-01,1.3829,y,M451511 Poland,SGD million,2.4
 SG,re_exports,PL,TOTAL,2003-02-01,1.3178,y,M451511 Poland,SGD million,2.3
 SG,re_exports,PL,TOTAL,2003-03-01,1.9953,y,M451511 Poland,SGD million,3.5
@@ -197000,6 +197158,7 @@ SG,re_exports,PL,TOTAL,2026-06-01,80.2079,y,M451511 Poland,SGD million,103.3
 SG,re_exports,PL,TOTAL,2026-07-01,59.8503,y,M451511 Poland,SGD million,77.3
 SG,re_exports,PL,TOTAL,2026-08-01,85.6393,y,M451511 Poland,SGD million,109.3
 SG,re_exports,PL,TOTAL,2026-09-01,78.1836,y,M451511 Poland,SGD million,99.5
+SG,re_exports,PL,TOTAL,2026-10-01,49.6106,y,M451511 Poland,SGD million,63.5
 SG,re_exports,PT,TOTAL,2003-01-01,1.0372,y,M451511 Portugal,SGD million,1.8
 SG,re_exports,PT,TOTAL,2003-02-01,0.9167,y,M451511 Portugal,SGD million,1.6
 SG,re_exports,PT,TOTAL,2003-03-01,0.5701,y,M451511 Portugal,SGD million,1.0
@@ -197285,6 +197444,7 @@ SG,re_exports,PT,TOTAL,2026-06-01,36.5711,y,M451511 Portugal,SGD million,47.1
 SG,re_exports,PT,TOTAL,2026-07-01,62.7925,y,M451511 Portugal,SGD million,81.1
 SG,re_exports,PT,TOTAL,2026-08-01,49.0487,y,M451511 Portugal,SGD million,62.6
 SG,re_exports,PT,TOTAL,2026-09-01,45.1029,y,M451511 Portugal,SGD million,57.4
+SG,re_exports,PT,TOTAL,2026-10-01,61.0172,y,M451511 Portugal,SGD million,78.1
 SG,re_exports,RO,TOTAL,2003-01-01,0.0576,y,M451511 Romania,SGD million,0.1
 SG,re_exports,RO,TOTAL,2003-02-01,0.1719,y,M451511 Romania,SGD million,0.3
 SG,re_exports,RO,TOTAL,2003-03-01,0.285,y,M451511 Romania,SGD million,0.5
@@ -197570,6 +197730,7 @@ SG,re_exports,RO,TOTAL,2026-06-01,7.9975,y,M451511 Romania,SGD million,10.3
 SG,re_exports,RO,TOTAL,2026-07-01,10.0654,y,M451511 Romania,SGD million,13.0
 SG,re_exports,RO,TOTAL,2026-08-01,10.1858,y,M451511 Romania,SGD million,13.0
 SG,re_exports,RO,TOTAL,2026-09-01,16.5796,y,M451511 Romania,SGD million,21.1
+SG,re_exports,RO,TOTAL,2026-10-01,7.6564,y,M451511 Romania,SGD million,9.8
 SG,re_exports,SE,TOTAL,2003-01-01,2.9387,y,M451511 Sweden,SGD million,5.1
 SG,re_exports,SE,TOTAL,2003-02-01,2.3491,y,M451511 Sweden,SGD million,4.1
 SG,re_exports,SE,TOTAL,2003-03-01,1.6532,y,M451511 Sweden,SGD million,2.9
@@ -197855,6 +198016,7 @@ SG,re_exports,SE,TOTAL,2026-06-01,5.9787,y,M451511 Sweden,SGD million,7.7
 SG,re_exports,SE,TOTAL,2026-07-01,6.1167,y,M451511 Sweden,SGD million,7.9
 SG,re_exports,SE,TOTAL,2026-08-01,10.0291,y,M451511 Sweden,SGD million,12.8
 SG,re_exports,SE,TOTAL,2026-09-01,7.229,y,M451511 Sweden,SGD million,9.2
+SG,re_exports,SE,TOTAL,2026-10-01,17.3442,y,M451511 Sweden,SGD million,22.2
 SG,re_exports,SI,TOTAL,2003-01-01,0.0576,y,M451511 Slovenia,SGD million,0.1
 SG,re_exports,SI,TOTAL,2003-02-01,0.1719,y,M451511 Slovenia,SGD million,0.3
 SG,re_exports,SI,TOTAL,2003-03-01,0.114,y,M451511 Slovenia,SGD million,0.2
@@ -198140,6 +198302,7 @@ SG,re_exports,SI,TOTAL,2026-06-01,2.1741,y,M451511 Slovenia,SGD million,2.8
 SG,re_exports,SI,TOTAL,2026-07-01,1.2388,y,M451511 Slovenia,SGD million,1.6
 SG,re_exports,SI,TOTAL,2026-08-01,1.1753,y,M451511 Slovenia,SGD million,1.5
 SG,re_exports,SI,TOTAL,2026-09-01,1.1786,y,M451511 Slovenia,SGD million,1.5
+SG,re_exports,SI,TOTAL,2026-10-01,0.9375,y,M451511 Slovenia,SGD million,1.2
 SG,re_exports,SK,TOTAL,2003-01-01,0.0,y,M451511 Slovakia,SGD million,0.0
 SG,re_exports,SK,TOTAL,2003-02-01,0.0,y,M451511 Slovakia,SGD million,0.0
 SG,re_exports,SK,TOTAL,2003-03-01,0.057,y,M451511 Slovakia,SGD million,0.1
@@ -198425,6 +198588,7 @@ SG,re_exports,SK,TOTAL,2026-06-01,1.8635,y,M451511 Slovakia,SGD million,2.4
 SG,re_exports,SK,TOTAL,2026-07-01,2.0905,y,M451511 Slovakia,SGD million,2.7
 SG,re_exports,SK,TOTAL,2026-08-01,2.1939,y,M451511 Slovakia,SGD million,2.8
 SG,re_exports,SK,TOTAL,2026-09-01,2.1216,y,M451511 Slovakia,SGD million,2.7
+SG,re_exports,SK,TOTAL,2026-10-01,2.3438,y,M451511 Slovakia,SGD million,3.0
 SG,re_exports,WLD,electronic_products,1999-01-01,1433.5892,y,M451131 Total Electronic Products,SGD thousand,2407844.3
 SG,re_exports,WLD,electronic_products,1999-02-01,1419.1575,y,M451131 Total Electronic Products,SGD thousand,2412545.6
 SG,re_exports,WLD,electronic_products,1999-03-01,1846.4377,y,M451131 Total Electronic Products,SGD thousand,3191876.2
@@ -198755,9 +198919,10 @@ SG,re_exports,WLD,electronic_products,2026-03-01,27941.4922,y,M451131 Total Elec
 SG,re_exports,WLD,electronic_products,2026-04-01,29852.2406,y,M451131 Total Electronic Products,SGD thousand,38080062.9
 SG,re_exports,WLD,electronic_products,2026-05-01,23447.1096,y,M451131 Total Electronic Products,SGD thousand,29910300.7
 SG,re_exports,WLD,electronic_products,2026-06-01,27871.9123,y,M451131 Total Electronic Products,SGD thousand,35896306.8
-SG,re_exports,WLD,electronic_products,2026-07-01,30033.1167,y,M451131 Total Electronic Products,SGD thousand,38789456.0
-SG,re_exports,WLD,electronic_products,2026-08-01,26260.7982,y,M451131 Total Electronic Products,SGD thousand,33516197.8
-SG,re_exports,WLD,electronic_products,2026-09-01,29791.9769,y,M451131 Total Electronic Products,SGD thousand,37914622.6
+SG,re_exports,WLD,electronic_products,2026-07-01,30033.1173,y,M451131 Total Electronic Products,SGD thousand,38789456.8
+SG,re_exports,WLD,electronic_products,2026-08-01,26264.1102,y,M451131 Total Electronic Products,SGD thousand,33520424.8
+SG,re_exports,WLD,electronic_products,2026-09-01,29804.8736,y,M451131 Total Electronic Products,SGD thousand,37931035.5
+SG,re_exports,WLD,electronic_products,2026-10-01,34619.8975,y,M451131 Total Electronic Products,SGD thousand,44312331.1
 TH,exports,WLD,HS8419,2012-01-01,17.790573,,exportharmonizecountries hs_code=8419: sum of all countries,USD million,17.790573
 TH,exports,WLD,HS8419,2012-02-01,16.062268,,exportharmonizecountries hs_code=8419: sum of all countries,USD million,16.062268
 TH,exports,WLD,HS8419,2012-03-01,17.620618,,exportharmonizecountries hs_code=8419: sum of all countries,USD million,17.620618

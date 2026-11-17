@@ -111,7 +111,7 @@ Exports: Asia: Singapore (f88),KR,exports,SG,TOTAL,,KCS 국가별 싱가포르,1
 Exports: Asia: Thailand (f89),KR,exports,TH,TOTAL,,KCS 국가별 태국,1990-01,2026-10,442
 Exports: Asia: Vietnam (f90),KR,exports,VN,TOTAL,,KCS 국가별 베트남,1990-01,2026-10,442
 Exports: USD,IN,exports,WLD,TOTAL,,TradeStat commoditywise HS2 total India's Total Export,2025-12,2026-08,9
-Exports: USD: United States,IN,exports,US,TOTAL,,TradeStat country_wise_all_commodities US,2026-01,2026-08,8
+Exports: USD: United States,IN,exports,US,TOTAL,,TradeStat country_wise_all_commodities US,2025-12,2026-08,9
 Exports: USD: China,IN,exports,CN,TOTAL,,TradeStat country_wise_all_commodities CN,2026-01,2026-08,8
 Exports: USD: Hong Kong SAR (China),IN,exports,HK,TOTAL,,TradeStat country_wise_all_commodities HK,2026-01,2026-08,8
 Exports: USD: Japan,IN,exports,JP,TOTAL,,TradeStat country_wise_all_commodities JP,2026-01,2026-08,8
@@ -193,34 +193,34 @@ Exports: Malaysia (f152),PH,exports,MY,TOTAL,,OpenSTAT FOB 2026: sum over commod
 Exports: Singapore (f153),PH,exports,SG,TOTAL,,OpenSTAT FOB 2026: sum over commodities,2022-01,2026-09,57
 Exports: Thailand (f154),PH,exports,TH,TOTAL,,OpenSTAT FOB 2026: sum over commodities,2022-01,2026-09,57
 Exports: Vietnam (f155),PH,exports,VN,TOTAL,,OpenSTAT FOB 2026: sum over commodities,2022-01,2026-09,57
-Exports (f287),SG,exports,WLD,TOTAL,,"M451001 Total Merchandise Exports, (At Current Prices)",1981-01,2026-09,549
-Exports: USA (f288),SG,exports,US,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-09,285
-Exports: China (f289),SG,exports,CN,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-09,285
-Exports: Hong Kong SAR (China) (f290),SG,exports,HK,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-09,285
-Exports: Japan (f293),SG,exports,JP,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-09,285
-Exports: EU (f291),SG,exports,EU,TOTAL,,sum of the 27 current EU members (calculated),2003-01,2026-09,285
-Exports: Taiwan (f292),SG,exports,TW,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-09,285
-Exports: South Korea (f294),SG,exports,KR,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-09,285
-Exports: India (f295),SG,exports,IN,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-09,285
-Exports: Indonesia (f296),SG,exports,ID,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-09,285
-Exports: Malaysia (f297),SG,exports,MY,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-09,285
-Exports: Philippines (f298),SG,exports,PH,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-09,285
-Exports: Thailand (f299),SG,exports,TH,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-09,285
-Exports: Vietnam (f300),SG,exports,VN,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-09,285
-Domestic Exports (f1),SG,domestic_exports,WLD,TOTAL,,"M451001 Total Domestic Exports, (At Current Prices)",1981-01,2026-09,549
-Domestic Exports: USA (f182),SG,domestic_exports,US,TOTAL,,M451501 United States Of America,2003-01,2026-09,285
-Domestic Exports: China (f183),SG,domestic_exports,CN,TOTAL,,M451501 Mainland China,2003-01,2026-09,285
-Domestic Exports: Hong Kong SAR (China) (f185),SG,domestic_exports,HK,TOTAL,,M451501 Hong Kong,2003-01,2026-09,285
-Domestic Exports: Japan (f187),SG,domestic_exports,JP,TOTAL,,M451501 Japan,2003-01,2026-09,285
-Domestic Exports: EU (f184),SG,domestic_exports,EU,TOTAL,,sum of the 27 current EU members (calculated),2003-01,2026-09,285
-Domestic Exports: Taiwan (f186),SG,domestic_exports,TW,TOTAL,,M451501 Taiwan,2003-01,2026-09,285
-Domestic Exports: South Korea (f188),SG,domestic_exports,KR,TOTAL,,M451501 Republic Of Korea,2003-01,2026-09,285
-Domestic Exports: India (f189),SG,domestic_exports,IN,TOTAL,,M451501 India,2003-01,2026-09,285
-Domestic Exports: Indonesia (f190),SG,domestic_exports,ID,TOTAL,,M451501 Indonesia,2003-01,2026-09,285
-Domestic Exports: Malaysia (f191),SG,domestic_exports,MY,TOTAL,,M451501 Malaysia,2003-01,2026-09,285
-Domestic Exports: Philippines (f192),SG,domestic_exports,PH,TOTAL,,M451501 Philippines,2003-01,2026-09,285
-Domestic Exports: Thailand (f193),SG,domestic_exports,TH,TOTAL,,M451501 Thailand,2003-01,2026-09,285
-Domestic Exports: Vietnam (f194),SG,domestic_exports,VN,TOTAL,,M451501 Viet Nam,2003-01,2026-09,285
+Exports (f287),SG,exports,WLD,TOTAL,,"M451001 Total Merchandise Exports, (At Current Prices)",1981-01,2026-10,550
+Exports: USA (f288),SG,exports,US,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-10,286
+Exports: China (f289),SG,exports,CN,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-10,286
+Exports: Hong Kong SAR (China) (f290),SG,exports,HK,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-10,286
+Exports: Japan (f293),SG,exports,JP,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-10,286
+Exports: EU (f291),SG,exports,EU,TOTAL,,sum of the 27 current EU members (calculated),2003-01,2026-10,286
+Exports: Taiwan (f292),SG,exports,TW,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-10,286
+Exports: South Korea (f294),SG,exports,KR,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-10,286
+Exports: India (f295),SG,exports,IN,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-10,286
+Exports: Indonesia (f296),SG,exports,ID,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-10,286
+Exports: Malaysia (f297),SG,exports,MY,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-10,286
+Exports: Philippines (f298),SG,exports,PH,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-10,286
+Exports: Thailand (f299),SG,exports,TH,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-10,286
+Exports: Vietnam (f300),SG,exports,VN,TOTAL,,M451501 + M451511 (calculated),2003-01,2026-10,286
+Domestic Exports (f1),SG,domestic_exports,WLD,TOTAL,,"M451001 Total Domestic Exports, (At Current Prices)",1981-01,2026-10,550
+Domestic Exports: USA (f182),SG,domestic_exports,US,TOTAL,,M451501 United States Of America,2003-01,2026-10,286
+Domestic Exports: China (f183),SG,domestic_exports,CN,TOTAL,,M451501 Mainland China,2003-01,2026-10,286
+Domestic Exports: Hong Kong SAR (China) (f185),SG,domestic_exports,HK,TOTAL,,M451501 Hong Kong,2003-01,2026-10,286
+Domestic Exports: Japan (f187),SG,domestic_exports,JP,TOTAL,,M451501 Japan,2003-01,2026-10,286
+Domestic Exports: EU (f184),SG,domestic_exports,EU,TOTAL,,sum of the 27 current EU members (calculated),2003-01,2026-10,286
+Domestic Exports: Taiwan (f186),SG,domestic_exports,TW,TOTAL,,M451501 Taiwan,2003-01,2026-10,286
+Domestic Exports: South Korea (f188),SG,domestic_exports,KR,TOTAL,,M451501 Republic Of Korea,2003-01,2026-10,286
+Domestic Exports: India (f189),SG,domestic_exports,IN,TOTAL,,M451501 India,2003-01,2026-10,286
+Domestic Exports: Indonesia (f190),SG,domestic_exports,ID,TOTAL,,M451501 Indonesia,2003-01,2026-10,286
+Domestic Exports: Malaysia (f191),SG,domestic_exports,MY,TOTAL,,M451501 Malaysia,2003-01,2026-10,286
+Domestic Exports: Philippines (f192),SG,domestic_exports,PH,TOTAL,,M451501 Philippines,2003-01,2026-10,286
+Domestic Exports: Thailand (f193),SG,domestic_exports,TH,TOTAL,,M451501 Thailand,2003-01,2026-10,286
+Domestic Exports: Vietnam (f194),SG,domestic_exports,VN,TOTAL,,M451501 Viet Nam,2003-01,2026-10,286
 MoC: Exports: Custom Basis: USD,TH,exports,WLD,TOTAL,,summarycountries: sum of all countries,1991-01,2026-09,429
 Exports: USD: USA,TH,exports,US,TOTAL,,summarycountries US U.S.A.,1991-01,2026-09,429
 Exports: USD: China,TH,exports,CN,TOTAL,,summarycountries CN CHINA,1991-01,2026-09,429
@@ -454,20 +454,20 @@ Imports: Malaysia,PH,imports,MY,TOTAL,,OpenSTAT CIF 2026: sum over commodities,2
 Imports: Singapore,PH,imports,SG,TOTAL,,OpenSTAT CIF 2026: sum over commodities,2026-01,2026-09,9
 Imports: Thailand,PH,imports,TH,TOTAL,,OpenSTAT CIF 2026: sum over commodities,2026-01,2026-09,9
 Imports: Vietnam,PH,imports,VN,TOTAL,,OpenSTAT CIF 2026: sum over commodities,2026-01,2026-09,9
-Imports (f16),SG,imports,WLD,TOTAL,,"M451001 Total Merchandise Imports, (At Current Prices)",1981-01,2026-09,549
-Imports: USA (f17),SG,imports,US,TOTAL,,M451491 United States Of America,2003-01,2026-09,285
-Imports: China (f18),SG,imports,CN,TOTAL,,M451491 Mainland China,2003-01,2026-09,285
-Imports: Hong Kong SAR (China) (f19),SG,imports,HK,TOTAL,,M451491 Hong Kong,2003-01,2026-09,285
-Imports: Japan (f20),SG,imports,JP,TOTAL,,M451491 Japan,2003-01,2026-09,285
-Imports: EU (f21),SG,imports,EU,TOTAL,,sum of the 27 current EU members (calculated),2003-01,2026-09,285
-Imports: Taiwan (f31),SG,imports,TW,TOTAL,,M451491 Taiwan,2003-01,2026-09,285
-Imports: South Korea (f32),SG,imports,KR,TOTAL,,M451491 Republic Of Korea,2003-01,2026-09,285
-Imports: India (f33),SG,imports,IN,TOTAL,,M451491 India,2003-01,2026-09,285
-Imports: Indonesia (f93),SG,imports,ID,TOTAL,,M451491 Indonesia,2003-01,2026-09,285
-Imports: Malaysia (f26),SG,imports,MY,TOTAL,,M451491 Malaysia,2003-01,2026-09,285
-Imports: Philippines (f28),SG,imports,PH,TOTAL,,M451491 Philippines,2003-01,2026-09,285
-Imports: Thailand (f29),SG,imports,TH,TOTAL,,M451491 Thailand,2003-01,2026-09,285
-Imports: Vietnam (f30),SG,imports,VN,TOTAL,,M451491 Viet Nam,2003-01,2026-09,285
+Imports (f16),SG,imports,WLD,TOTAL,,"M451001 Total Merchandise Imports, (At Current Prices)",1981-01,2026-10,550
+Imports: USA (f17),SG,imports,US,TOTAL,,M451491 United States Of America,2003-01,2026-10,286
+Imports: China (f18),SG,imports,CN,TOTAL,,M451491 Mainland China,2003-01,2026-10,286
+Imports: Hong Kong SAR (China) (f19),SG,imports,HK,TOTAL,,M451491 Hong Kong,2003-01,2026-10,286
+Imports: Japan (f20),SG,imports,JP,TOTAL,,M451491 Japan,2003-01,2026-10,286
+Imports: EU (f21),SG,imports,EU,TOTAL,,sum of the 27 current EU members (calculated),2003-01,2026-10,286
+Imports: Taiwan (f31),SG,imports,TW,TOTAL,,M451491 Taiwan,2003-01,2026-10,286
+Imports: South Korea (f32),SG,imports,KR,TOTAL,,M451491 Republic Of Korea,2003-01,2026-10,286
+Imports: India (f33),SG,imports,IN,TOTAL,,M451491 India,2003-01,2026-10,286
+Imports: Indonesia (f93),SG,imports,ID,TOTAL,,M451491 Indonesia,2003-01,2026-10,286
+Imports: Malaysia (f26),SG,imports,MY,TOTAL,,M451491 Malaysia,2003-01,2026-10,286
+Imports: Philippines (f28),SG,imports,PH,TOTAL,,M451491 Philippines,2003-01,2026-10,286
+Imports: Thailand (f29),SG,imports,TH,TOTAL,,M451491 Thailand,2003-01,2026-10,286
+Imports: Vietnam (f30),SG,imports,VN,TOTAL,,M451491 Viet Nam,2003-01,2026-10,286
 MoC: Imports: Custom Basis: USD,TH,imports,WLD,TOTAL,,summarycountries: sum of all countries,1991-01,2026-09,429
 Imports: USD: USA,TH,imports,US,TOTAL,,summarycountries US U.S.A.,1991-01,2026-09,429
 Imports: USD: China,TH,imports,CN,TOTAL,,summarycountries CN CHINA,1991-01,2026-09,429
@@ -581,8 +581,8 @@ Exports: World: Office Machines; Not Elsewhere Classified (f45),MY,exports,WLD,H
 "Exports: Other Office Machines (For Example, Hectograph or Stencil Duplicating Machines, Addressing Machines, Automatic Banknote Dispensers, Coin-Sorting Machines, Coin-Counting or Wrapping Machines, Pencil-Sharpening Machines, Perforating or Stapling Machines) (f37)",PH,exports,WLD,HS8472,,"OpenSTAT FOB 2026: codes 8472*, all countries (calculated)",2022-01,2026-09,57
 "Exports: Calculating Machines & Pocket-Size Data Recording, Reproducing & Displaying Machines With Calculating Functions; Accounting Machines, Postage-Franking Machines, Ticket-Issuing Machines & Similar Machines, Incorporating a Calculating Device; Cash Registers (f38)",PH,exports,WLD,HS8470,,"OpenSTAT FOB 2026: codes 8470*, all countries (calculated)",2022-01,2026-09,57
 "Exports: Machinery, Plant or Laboratory Equipment, Whether or Not Electrically Heated, for the Treatment of Materials by a Process Involving a Change of Temperature Such As Heating, Cooking, Roasting, Distilling, Rectifying, Sterilising, Pasteurising, Steaming, Drying, Evaporating, Vaporising, Condensing or Cooling, Other than Machinery or Plant of a Kind Used for Domestic Purposes; Instantaneous ",PH,exports,WLD,HS8419,,"OpenSTAT FOB 2026: codes 8419*, all countries (calculated)",2022-01,2026-09,57
-Domestic Exports: Non Oil: Electronic Products (EP) (f34),SG,domestic_exports,WLD,electronic_products,,M450981 Total Electronic Products,1997-01,2026-09,357
-Re-Exports: Electronic Products (EP): Total (f35),SG,re_exports,WLD,electronic_products,,M451131 Total Electronic Products,1999-01,2026-09,333
+Domestic Exports: Non Oil: Electronic Products (EP) (f34),SG,domestic_exports,WLD,electronic_products,,M450981 Total Electronic Products,1997-01,2026-10,358
+Re-Exports: Electronic Products (EP): Total (f35),SG,re_exports,WLD,electronic_products,,M451131 Total Electronic Products,1999-01,2026-10,334
 "HS2022 Exports: USD: Electrical Machinery and Equipment and Parts Thereof; Sound Recorders and Reproducers, Television Image and Sound Recorders and Reproducers, and Parts and Accessories of Such Articles",TH,exports,WLD,HS85,,exportharmonizecountries hs_code=85: sum of all countries,2012-01,2026-09,177
 "HS2022 Exports: USD: Parts and Accessories (Other Than Covers, Carrying Cases and the Like) Suitable for Use Solely or Principally With the Machines of Headings 84.70 to 84.72.",TH,exports,WLD,HS8473,,exportharmonizecountries hs_code=8473: sum of all countries,2012-01,2026-09,177
 "HS2022 Exports: USD: Automatic Data Processing Machines and Units Thereof; Magnetic or Optical Readers, Machines for Transcribing Data Onto Data Media in Coded Form and Machines for Processing Such Data, Not Elsewhere Specified or Included",TH,exports,WLD,HS8471,,exportharmonizecountries hs_code=8471: sum of all countries,2012-01,2026-09,177
@@ -603,12 +603,12 @@ Exports: World: Office Machines; Not Elsewhere Classified (f28),VN,exports,WLD,H
 Import: RI: USD: Mineral Products: Petroleum,TW,imports,WLD,mineral_products,,i9122 5.礦產品,2001-01,2026-10,310
 "Imports: World: Oils; Petroleum Oils and Oils Obtained From Bituminous Minerals, Crude (f4)",JP,imports,WLD,crude_oil,,d61ma 原油及び粗油 (30301),1988-01,2026-09,465
 Energy Imports Value: Crude Petroleum,KR,imports,WLD,crude_oil,KCS energy imports: needs a data.go.kr key,KCS energy imports: needs a data.go.kr key,,,0
-"Import: USD: Petroleum Oils And Oils Obtained From Bituminous Minerals, Crude",IN,imports,WLD,HS2709,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M,2026-01,2026-08,8
+"Import: USD: Petroleum Oils And Oils Obtained From Bituminous Minerals, Crude",IN,imports,WLD,HS2709,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M,2025-12,2026-08,9
 Import: cif: OG: Crude Oil,ID,imports,WLD,HS2709,,no national series collected,,,0
 "Imports: Petroleum Oils And Oils Obtained From Bituminous Minerals, Crude (f5) (f6)",MY,imports,WLD,HS2709,,no national series collected,,,0
 "Imports: Petroleum Oils & Oils Obtained from Bituminous Minerals, Crude (f9)",PH,imports,WLD,HS2709,,"OpenSTAT CIF 2026: codes 2709*, all countries (calculated)",2026-01,2026-09,9
-Imports: Petroleum Oils & Oils From Bituminous Minerals Crude (f1) (f2),SG,imports,WLD,HS2709,,T010001 IMPORTS WORLD HS 2709,2021-09,2026-09,61
-Imports: World: Petroleum Oils and Oils Obtained From Bituminous Minerals; Crude (f8),SG,imports,WLD,HS2709,,T010001 IMPORTS WORLD HS 2709,2021-09,2026-09,61
+Imports: Petroleum Oils & Oils From Bituminous Minerals Crude (f1) (f2),SG,imports,WLD,HS2709,,T010001 IMPORTS WORLD HS 2709,2021-09,2026-07,59
+Imports: World: Petroleum Oils and Oils Obtained From Bituminous Minerals; Crude (f8),SG,imports,WLD,HS2709,,T010001 IMPORTS WORLD HS 2709,2021-09,2026-07,59
 "HS2022 Imports: Petroleum Oils and Oils Obtained from Bituminous Minerals, Crude (f3)",TH,imports,WLD,HS2709,,importharmonizecountries hs_code=2709: sum of all countries,2010-01,2026-09,201
 Imports: Crude Oil (f11),VN,imports,WLD,crude_oil,,NSO report 28.NK tháng Dầu thô,2025-01,2026-10,7
 "CN: Import: HS 4: Petroleum Oils and Oils Obtained from Bituminous Minerals, Other Than Crude; Preparations Not Elsewhere Specified or Included, Containing by Weight 70% or More of Petroleum Oils or of Oils Obtained from Bituminous Minerals, These Oils Being the Basic Constituents of the Preparations; Waste Oils.",CN,imports,WLD,petroleum_products,,bulletin (14) Refined petroleum products,2018-01,2026-09,98
@@ -618,11 +618,11 @@ Import: RI: USD: Diesel Fuel,TW,imports,WLD,diesel,,i9162 柴油,2001-01,2026-10
 Import: RI: USD: Liquefied Natural Gas,TW,imports,WLD,lng,,i9162 液化天然氣,2001-01,2026-10,310
 "Imports: World: Petroleum Oils and Oils From Bituminous Minerals, Not Crude; Preparations N.E.C, Containing By Weight 70% or More of Petroleum Oils or Oils From Bituminous Minerals; These Being The Basic Constituents of The Preparations; Waste Oils (f2)",JP,imports,WLD,petroleum_products,,d61ma 石油製品 (30303),1988-01,2026-09,465
 Imports: KCS: Ind Materials and Fuels: Fuels,KR,imports,WLD,kcs_fuels,KCS grouping: needs a data.go.kr key,KCS grouping: needs a data.go.kr key,,,0
-Import: USD: Petroleum Oilsand Oils Obtnd Frm Bitmns Mnrlother Than Crude Prpn Nes:Cntng70% Or Moreby Weight Of These Oils,IN,imports,WLD,HS2710,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER ,2026-01,2026-08,8
+Import: USD: Petroleum Oilsand Oils Obtnd Frm Bitmns Mnrlother Than Crude Prpn Nes:Cntng70% Or Moreby Weight Of These Oils,IN,imports,WLD,HS2710,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER ,2025-12,2026-08,9
 Import: cif: Oil and Gas: Oil Products,ID,imports,WLD,HS2710,,no national series collected,,,0
 "Imports: Petroleum Oils and Oils Obtained From Bituminous Minerals, Other Than Crude: Minerals, These Oils Being The Basic Constituents of The Preparations: Waste Oils (f3)",MY,imports,WLD,HS2710,,no national series collected,,,0
 "Imports: Petroleum Oils & Oils Obtained from Bituminous Minerals, Other than Crude; Preparations Not Elsewhere Specified or Included, Containing by Weight 70 % or More of Petroleum Oils or of Oils Obtained from Bituminous Minerals, these Oils Being the Basic Constituents of the Preparations; Waste Oils",PH,imports,WLD,HS2710,,"OpenSTAT CIF 2026: codes 2710*, all countries (calculated)",2026-01,2026-09,9
-Imports: Petroleum Oils & Oils From Bituminous Minerals Not Crude & Preparations Nes Containing by Weight 70% or More of Petroleum Oils or of Oils From Bituminous Minerals & Waste Oils (f4),SG,imports,WLD,HS2710,,T010001 IMPORTS WORLD HS 2710,2021-09,2026-09,61
-"Imports: World: Petroleum Oils and Oils From Bituminous Minerals, Not Crude; Preparations N.E.C, Containing By Weight 70% or More of Petroleum Oils or Oils From Bituminous Minerals; These Being The Basic Constituents of The Preparations; Waste Oils (f5)",SG,imports,WLD,HS2710,,T010001 IMPORTS WORLD HS 2710,2021-09,2026-09,61
+Imports: Petroleum Oils & Oils From Bituminous Minerals Not Crude & Preparations Nes Containing by Weight 70% or More of Petroleum Oils or of Oils From Bituminous Minerals & Waste Oils (f4),SG,imports,WLD,HS2710,,T010001 IMPORTS WORLD HS 2710,2021-09,2026-07,59
+"Imports: World: Petroleum Oils and Oils From Bituminous Minerals, Not Crude; Preparations N.E.C, Containing By Weight 70% or More of Petroleum Oils or Oils From Bituminous Minerals; These Being The Basic Constituents of The Preparations; Waste Oils (f5)",SG,imports,WLD,HS2710,,T010001 IMPORTS WORLD HS 2710,2021-09,2026-07,59
 "HS2022 Imports: Petroleum Oils and Oils Obtained from Bituminous Minerals, Other Than Crude; Preparations Not Elsewhere Specified or Included, Containing by Weight 70% or More of Petroleum Oils or of Oils Obtained from Bituminous Minerals, These Oils Being the Basic Con (f6)",TH,imports,WLD,HS2710,,importharmonizecountries hs_code=2710: sum of all countries,2010-01,2026-09,201
 Imports: Petroleum Products,VN,imports,WLD,petroleum_products,,NSO report 28.NK tháng Xăng dầu,2025-01,2026-10,7
