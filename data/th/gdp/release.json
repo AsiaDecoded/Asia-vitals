@@ -4,11 +4,11 @@
  "latest_quarter": "2026-Q3",
  "latest_year": 2025,
  "file": "Statistical Tables (Excel Files)",
- "ddl": "122071",
- "url": "https://www.nesdc.go.th/en/?p=47533&ddl=122071",
+ "ddl": "122141",
+ "url": "https://www.nesdc.go.th/en/?p=47533&ddl=122141",
  "nesdc_last_updated": "16 Nov. 2026",
  "table": "NESDC QGDP statistical tables 3, 4, 4.1",
- "processed_at": "2026-11-16T04:42:15Z",
+ "processed_at": "2026-11-18T01:31:00Z",
  "rows": 20274,
  "warnings": [],
  "fingerprint": "9ebac53238bff522",
@@ -20,7 +20,7 @@
   },
   {
    "code": "G2026-Q3",
-   "processed_at": "2026-11-16T04:42:15Z"
+   "processed_at": "2026-11-18T01:31:00Z"
   }
  ]
 }

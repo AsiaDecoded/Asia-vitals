@@ -1,14 +1,14 @@
 {
- "code": "T2026-08b271",
+ "code": "T2026-08b274",
  "label": "2026-08",
  "latest_month": "2026-08-01",
  "source": "trade_in",
  "backfill_complete": false,
  "table": "Commerce TradeStat MEIDB",
- "processed_at": "2026-11-17T04:22:31Z",
- "rows": 297,
+ "processed_at": "2026-11-18T01:55:22Z",
+ "rows": 300,
  "warnings": [],
- "fetched": 42,
+ "fetched": 31,
  "history": [
   {
    "code": "T2026-08b117",
@@ -61,6 +61,10 @@
   {
    "code": "T2026-08b271",
    "processed_at": "2026-11-17T04:22:31Z"
+  },
+  {
+   "code": "T2026-08b274",
+   "processed_at": "2026-11-18T01:55:22Z"
   }
  ]
 }
