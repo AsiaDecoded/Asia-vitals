@@ -1,0 +1,55 @@
+name: China trade test (dev-cn-trade)
+
+# Runs trade_cn live on the dev-cn-trade branch (GACC bulletin tables 2, 4 and 14; listing pages kept in the store)
+# and pushes data/trade/cn, raw/trade/cn and a report back to the branch. Not part of the scheduled update.
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev-cn-trade]
+    paths:
+      - pipeline/sources/trade_cn/**
+      - .github/workflows/trade-cn-test.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: trade-cn-test
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: pip install -q pandas lxml html5lib
+      - name: Run trade_cn
+        run: |
+          python -I - <<'PY' | tee trade_cn_report.txt
+          import sys, traceback
+          sys.path.insert(0, "pipeline")
+          from core.common import CheckFailed
+          from sources import trade_cn
+          try:
+              r = trade_cn.update(force=True)
+              print(r["summary"])
+              [print("WARNING:", w) for w in trade_cn.DIAG[:40]]
+          except CheckFailed as e:
+              print("CHECKS FAILED"); [print(" -", x) for x in e.errors]; [print("DIAG:", x) for x in trade_cn.DIAG[:40]]
+          except Exception:
+              traceback.print_exc()
+          PY
+      - name: Push to dev-cn-trade
+        if: always()
+        run: |
+          git config user.name "asia-vitals bot"
+          git config user.email "actions@users.noreply.github.com"
+          cp trade_cn_report.txt data/trade/cn/test_report.txt || true
+          git add data/trade/cn raw/trade/cn
+          git commit -qm "China trade test run ${{ github.run_id }}" || exit 0
+          for i in 1 2 3; do git pull -q --rebase origin dev-cn-trade && git push -q origin HEAD:dev-cn-trade && break; sleep 5; done
