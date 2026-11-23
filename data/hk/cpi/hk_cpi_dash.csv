@@ -16239,3 +16239,54 @@ date,index_type,basis,series,label,level,order,index,mom,yoy,base_break,release_
 2026-09-01,composite,underlying,misc_goods,Miscellaneous goods,section,9,104.2,0.5,2.1,,2026-10-22
 2026-09-01,composite,underlying,transport,Transport,section,10,117.5,-0.4,5.2,,2026-10-22
 2026-09-01,composite,underlying,misc_services,Miscellaneous services,section,11,115.1,1.0,5.3,,2026-10-22
+2026-10-01,a,headline,all,All items,all,0,114.4,0.8,2.0,,2026-11-20
+2026-10-01,a,underlying,all,All items,all,0,114.6,0.1,1.7,,2026-11-20
+2026-10-01,b,headline,all,All items,all,0,110.5,0.5,2.2,,2026-11-20
+2026-10-01,b,underlying,all,All items,all,0,110.6,0.2,2.1,,2026-11-20
+2026-10-01,c,headline,all,All items,all,0,110.5,0.4,2.3,,2026-11-20
+2026-10-01,c,underlying,all,All items,all,0,110.5,0.2,2.2,,2026-11-20
+2026-10-01,composite,headline,all,All items,all,0,111.8,0.6,2.2,,2026-11-20
+2026-10-01,composite,headline,ex_food_energy,CPI less food and non-alcoholic beverages and energy (calculated),calculated,0.5,110.6,,2.1,,2026-11-20
+2026-10-01,composite,headline,food,Food,section,1,111.8,-0.2,0.3,,2026-11-20
+2026-10-01,composite,headline,meals_out,Meals out and takeaway food,subsection,2,115.0,0.0,0.9,,2026-11-20
+2026-10-01,composite,headline,basic_food,Basic food,subsection,3,106.2,-0.5,-0.8,,2026-11-20
+2026-10-01,composite,headline,housing,Housing,section,4,107.8,1.2,1.4,,2026-11-20
+2026-10-01,composite,headline,egw,"Electricity, gas and water",section,5,160.3,-0.5,12.7,,2026-11-20
+2026-10-01,composite,headline,energy,Energy (calculated),calculated,5.5,168.42,,15.4,,2026-11-20
+2026-10-01,composite,headline,alcohol_tobacco,Alcoholic drinks and tobacco,section,6,149.6,0.0,-0.4,,2026-11-20
+2026-10-01,composite,headline,clothing,Clothing and footwear,section,7,110.3,1.2,0.5,,2026-11-20
+2026-10-01,composite,headline,durables,Durable goods,section,8,96.4,0.3,1.4,,2026-11-20
+2026-10-01,composite,headline,misc_goods,Miscellaneous goods,section,9,104.5,0.3,1.4,,2026-11-20
+2026-10-01,composite,headline,transport,Transport,section,10,117.8,0.2,4.5,,2026-11-20
+2026-10-01,composite,headline,misc_services,Miscellaneous services,section,11,115.7,0.5,5.0,,2026-11-20
+2026-10-01,composite,headline,coicop_01,Food and non-alcoholic beverages,coicop,101,106.2,,-0.8,,2026-11-20
+2026-10-01,composite,headline,coicop_02,Alcoholic beverages and tobacco,coicop,102,149.6,,-0.4,,2026-11-20
+2026-10-01,composite,headline,coicop_03,Clothing and footwear,coicop,103,110.3,,0.5,,2026-11-20
+2026-10-01,composite,headline,coicop_04,"Housing, water, electricity, gas and other fuels",coicop,104,111.0,,2.1,,2026-11-20
+2026-10-01,composite,headline,coicop_05,"Furnishings, household equipment and routine household maintenance",coicop,105,105.8,,1.2,,2026-11-20
+2026-10-01,composite,headline,coicop_06,Health,coicop,106,117.6,,10.8,,2026-11-20
+2026-10-01,composite,headline,coicop_07,Transport,coicop,107,118.1,,4.5,,2026-11-20
+2026-10-01,composite,headline,coicop_08,Information and communication,coicop,108,91.2,,1.6,,2026-11-20
+2026-10-01,composite,headline,coicop_09,"Recreation, sport and culture",coicop,109,117.3,,6.4,,2026-11-20
+2026-10-01,composite,headline,coicop_10,Education services,coicop,110,121.9,,4.3,,2026-11-20
+2026-10-01,composite,headline,coicop_11,Restaurants and accommodation services,coicop,111,115.1,,1.0,,2026-11-20
+2026-10-01,composite,headline,coicop_12,Insurance and financial services,coicop,112,111.7,,1.4,,2026-11-20
+2026-10-01,composite,headline,coicop_13,"Personal care, social protection and miscellaneous goods and services",coicop,113,113.7,,0.6,,2026-11-20
+2026-10-01,composite,headline,g23_1,Private housing rent,subgroup,223.1,102.7,0.9,1.2,,2026-11-20
+2026-10-01,composite,headline,g23_2,Public housing rent,subgroup,223.2,188.3,8.7,2.0,,2026-11-20
+2026-10-01,composite,headline,g24,Management fees and other housing expenses,group,224,120.7,0.1,2.5,,2026-11-20
+2026-10-01,composite,headline,g25,Electricity,group,225,184.7,0.5,15.6,,2026-11-20
+2026-10-01,composite,headline,g26,Towngas,group,226,123.6,-3.6,9.6,,2026-11-20
+2026-10-01,composite,headline,g57,Fuels for personal transport equipment,group,257,175.6,3.1,22.9,,2026-11-20
+2026-10-01,composite,headline,g66,Inbound and outbound transport fares,group,266,122.2,1.4,12.2,,2026-11-20
+2026-10-01,composite,headline,g69,Package holidays,group,269,123.8,3.6,13.6,,2026-11-20
+2026-10-01,composite,underlying,all,All items,all,0,111.9,0.2,2.0,,2026-11-20
+2026-10-01,composite,underlying,food,Food,section,1,111.8,-0.2,0.3,,2026-11-20
+2026-10-01,composite,underlying,housing,Housing,section,4,107.8,0.2,1.4,,2026-11-20
+2026-10-01,composite,underlying,egw,"Electricity, gas and water",section,5,161.3,-0.5,6.6,,2026-11-20
+2026-10-01,composite,underlying,alcohol_tobacco,Alcoholic drinks and tobacco,section,6,149.6,0.0,-0.4,,2026-11-20
+2026-10-01,composite,underlying,clothing,Clothing and footwear,section,7,110.3,1.2,0.5,,2026-11-20
+2026-10-01,composite,underlying,durables,Durable goods,section,8,96.4,0.3,1.4,,2026-11-20
+2026-10-01,composite,underlying,misc_goods,Miscellaneous goods,section,9,104.5,0.3,1.4,,2026-11-20
+2026-10-01,composite,underlying,transport,Transport,section,10,117.8,0.2,4.5,,2026-11-20
+2026-10-01,composite,underlying,misc_services,Miscellaneous services,section,11,115.7,0.5,5.0,,2026-11-20

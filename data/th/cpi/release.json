@@ -5,14 +5,13 @@
  "published_at": "2026-11-06T11:22:17.045463Z",
  "table": "TPSO Open API: Cpig (types TG, 10, CC, NN, EE, SS) and Cpil (TL), base 2023 (BE 2566)",
  "partial": true,
- "processed_at": "2026-11-10T04:03:52Z",
- "rows": 19800,
+ "processed_at": "2026-11-23T08:29:58Z",
+ "rows": 19803,
  "warnings": [
-  "PARTIAL: low-income CPI not yet published for 2026-10",
   "PARTIAL: 175 of 194 series published for 2026-10; missing ['11222', '11510', '11511', '12100', '12200', '21110', '21210', '21260', '21420', '22420', '61210', '61230', '62212', '94000', '95100', '95200', '96000', '97000', '98000']"
  ],
- "fingerprint": "dcb7a92ac96d52c9",
- "long_rows": 57977,
+ "fingerprint": "7c44d7e8b7a32b01",
+ "long_rows": 57986,
  "history": [
   {
    "code": "C2026-09",
@@ -20,7 +19,7 @@
   },
   {
    "code": "C2026-10p",
-   "processed_at": "2026-11-10T04:03:52Z"
+   "processed_at": "2026-11-23T08:29:58Z"
   }
  ]
 }

@@ -2388,8 +2388,8 @@ date,series,label,order,index,yoy
 2025-11-01,c29,Transport equipment,20,90.66,-0.67
 2025-11-01,c31,Furniture,21,92.32,
 2025-11-01,c32,Other manufacturing and repair and installation of machinery and equipment,22,102.42,-0.68
-2025-12-01,manufacturing,Manufacturing,0,99.47,0.87
-2025-12-01,c10,Food products,1,112.78,-0.21
+2025-12-01,manufacturing,Manufacturing,0,99.46,0.86
+2025-12-01,c10,Food products,1,112.75,-0.23
 2025-12-01,c11,Beverages,2,125.97,1.55
 2025-12-01,c12,Tobacco products,3,126.83,3.52
 2025-12-01,c13,Textiles,4,100.52,0.23
@@ -2399,7 +2399,7 @@ date,series,label,order,index,yoy
 2025-12-01,c17,Paper and paper products,8,99.83,-1.45
 2025-12-01,c18,Printing and reproduction of recorded media,9,108.41,0.55
 2025-12-01,c19,Coke and refined petroleum products,10,96.46,4.67
-2025-12-01,c20,Chemical and chemical products,11,100.82,0.27
+2025-12-01,c20,Chemical and chemical products,11,100.65,0.11
 2025-12-01,c21,Basic pharmaceutical products and pharmaceutical preparations,12,80.58,-0.24
 2025-12-01,c22,Rubber and plastic products,13,110.42,-0.07
 2025-12-01,c23,Other non-metallic mineral products,14,103.14,-1.82
@@ -2411,164 +2411,210 @@ date,series,label,order,index,yoy
 2025-12-01,c29,Transport equipment,20,90.52,0.74
 2025-12-01,c31,Furniture,21,92.41,
 2025-12-01,c32,Other manufacturing and repair and installation of machinery and equipment,22,101.91,0.19
-2026-01-01,manufacturing,Manufacturing,0,99.63,1.26
-2026-01-01,c10,Food products,1,113.39,1.23
+2026-01-01,manufacturing,Manufacturing,0,99.64,1.28
+2026-01-01,c10,Food products,1,113.4,1.24
 2026-01-01,c11,Beverages,2,127.03,2.16
-2026-01-01,c12,Tobacco products,3,126.86,1.97
+2026-01-01,c12,Tobacco products,3,126.94,2.02
 2026-01-01,c13,Textiles,4,100.08,-0.24
 2026-01-01,c14,Wearing apparel,5,92.92,-0.47
 2026-01-01,c15,"Leather and related products, including footwear",6,106.21,0.62
 2026-01-01,c16,"Wood, bamboo, cane, rattan articles and related products",7,78.82,1.02
-2026-01-01,c17,Paper and paper products,8,98.83,-2.15
+2026-01-01,c17,Paper and paper products,8,98.88,-2.1
 2026-01-01,c18,Printing and reproduction of recorded media,9,109.41,1.04
-2026-01-01,c19,Coke and refined petroleum products,10,96.83,3.91
-2026-01-01,c20,Chemical and chemical products,11,100.77,-0.35
+2026-01-01,c19,Coke and refined petroleum products,10,97.03,4.13
+2026-01-01,c20,Chemical and chemical products,11,100.52,-0.59
 2026-01-01,c21,Basic pharmaceutical products and pharmaceutical preparations,12,81.03,0.06
-2026-01-01,c22,Rubber and plastic products,13,109.71,-0.98
-2026-01-01,c23,Other non-metallic mineral products,14,103.24,-1.36
-2026-01-01,c24,Basic metals,15,91.34,2.52
-2026-01-01,c25,"Fabricated metal products, except machinery and equipment",16,98.12,1.28
-2026-01-01,c26,"Computer, electronic and optical products",17,89.93,2.56
-2026-01-01,c27,Electrical equipment,18,102.18,-1.87
+2026-01-01,c22,Rubber and plastic products,13,109.69,-1.0
+2026-01-01,c23,Other non-metallic mineral products,14,103.16,-1.44
+2026-01-01,c24,Basic metals,15,91.39,2.58
+2026-01-01,c25,"Fabricated metal products, except machinery and equipment",16,98.1,1.26
+2026-01-01,c26,"Computer, electronic and optical products",17,89.93,2.55
+2026-01-01,c27,Electrical equipment,18,102.15,-1.9
 2026-01-01,c28,Machinery and equipment except electrical,19,95.58,2.3
 2026-01-01,c29,Transport equipment,20,91.1,1.09
 2026-01-01,c31,Furniture,21,92.91,0.75
 2026-01-01,c32,Other manufacturing and repair and installation of machinery and equipment,22,102.65,0.66
-2026-02-01,manufacturing,Manufacturing,0,99.36,1.2
-2026-02-01,c10,Food products,1,113.37,1.15
+2026-02-01,manufacturing,Manufacturing,0,99.41,1.25
+2026-02-01,c10,Food products,1,113.43,1.2
 2026-02-01,c11,Beverages,2,127.24,2.94
-2026-02-01,c12,Tobacco products,3,126.42,0.85
+2026-02-01,c12,Tobacco products,3,126.3,0.76
 2026-02-01,c13,Textiles,4,100.04,-0.19
 2026-02-01,c14,Wearing apparel,5,92.51,-0.57
 2026-02-01,c15,"Leather and related products, including footwear",6,106.89,1.34
 2026-02-01,c16,"Wood, bamboo, cane, rattan articles and related products",7,78.78,0.63
-2026-02-01,c17,Paper and paper products,8,98.77,-2.0
+2026-02-01,c17,Paper and paper products,8,98.82,-1.95
 2026-02-01,c18,Printing and reproduction of recorded media,9,109.94,1.54
-2026-02-01,c19,Coke and refined petroleum products,10,95.82,2.31
-2026-02-01,c20,Chemical and chemical products,11,100.87,-0.1
+2026-02-01,c19,Coke and refined petroleum products,10,96.23,2.75
+2026-02-01,c20,Chemical and chemical products,11,100.63,-0.34
 2026-02-01,c21,Basic pharmaceutical products and pharmaceutical preparations,12,81.07,0.12
-2026-02-01,c22,Rubber and plastic products,13,109.23,-1.78
-2026-02-01,c23,Other non-metallic mineral products,14,103.43,-1.01
-2026-02-01,c24,Basic metals,15,91.71,3.32
-2026-02-01,c25,"Fabricated metal products, except machinery and equipment",16,97.2,0.71
+2026-02-01,c22,Rubber and plastic products,13,109.22,-1.79
+2026-02-01,c23,Other non-metallic mineral products,14,103.34,-1.09
+2026-02-01,c24,Basic metals,15,91.78,3.39
+2026-02-01,c25,"Fabricated metal products, except machinery and equipment",16,97.36,0.88
 2026-02-01,c26,"Computer, electronic and optical products",17,89.28,2.97
-2026-02-01,c27,Electrical equipment,18,102.08,-2.16
+2026-02-01,c27,Electrical equipment,18,102.01,-2.22
 2026-02-01,c28,Machinery and equipment except electrical,19,95.54,2.35
 2026-02-01,c29,Transport equipment,20,90.85,0.68
 2026-02-01,c31,Furniture,21,92.46,1.14
 2026-02-01,c32,Other manufacturing and repair and installation of machinery and equipment,22,102.94,-0.51
-2026-03-01,manufacturing,Manufacturing,0,100.62,2.64
-2026-03-01,c10,Food products,1,113.66,1.01
+2026-03-01,manufacturing,Manufacturing,0,100.87,2.88
+2026-03-01,c10,Food products,1,113.73,1.07
 2026-03-01,c11,Beverages,2,127.38,3.12
-2026-03-01,c12,Tobacco products,3,128.88,2.79
+2026-03-01,c12,Tobacco products,3,128.85,2.77
 2026-03-01,c13,Textiles,4,100.04,-0.25
 2026-03-01,c14,Wearing apparel,5,92.97,0.4
 2026-03-01,c15,"Leather and related products, including footwear",6,110.94,5.36
 2026-03-01,c16,"Wood, bamboo, cane, rattan articles and related products",7,79.37,1.65
-2026-03-01,c17,Paper and paper products,8,98.75,-2.18
+2026-03-01,c17,Paper and paper products,8,98.8,-2.13
 2026-03-01,c18,Printing and reproduction of recorded media,9,109.94,1.57
-2026-03-01,c19,Coke and refined petroleum products,10,101.45,8.63
-2026-03-01,c20,Chemical and chemical products,11,101.55,0.75
+2026-03-01,c19,Coke and refined petroleum products,10,103.7,11.04
+2026-03-01,c20,Chemical and chemical products,11,101.4,0.59
 2026-03-01,c21,Basic pharmaceutical products and pharmaceutical preparations,12,81.2,0.71
-2026-03-01,c22,Rubber and plastic products,13,110.23,-0.69
-2026-03-01,c23,Other non-metallic mineral products,14,104.98,0.68
-2026-03-01,c24,Basic metals,15,92.98,5.15
-2026-03-01,c25,"Fabricated metal products, except machinery and equipment",16,97.59,1.36
+2026-03-01,c22,Rubber and plastic products,13,110.21,-0.71
+2026-03-01,c23,Other non-metallic mineral products,14,104.9,0.6
+2026-03-01,c24,Basic metals,15,93.04,5.21
+2026-03-01,c25,"Fabricated metal products, except machinery and equipment",16,97.73,1.5
 2026-03-01,c26,"Computer, electronic and optical products",17,90.5,4.98
-2026-03-01,c27,Electrical equipment,18,102.72,-0.95
+2026-03-01,c27,Electrical equipment,18,102.62,-1.05
 2026-03-01,c28,Machinery and equipment except electrical,19,95.61,2.49
 2026-03-01,c29,Transport equipment,20,91.01,0.87
 2026-03-01,c31,Furniture,21,93.28,1.93
 2026-03-01,c32,Other manufacturing and repair and installation of machinery and equipment,22,103.58,0.47
-2026-04-01,manufacturing,Manufacturing,0,100.69,2.79
-2026-04-01,c10,Food products,1,113.91,1.57
+2026-04-01,manufacturing,Manufacturing,0,100.99,3.09
+2026-04-01,c10,Food products,1,114.07,1.71
 2026-04-01,c11,Beverages,2,127.54,3.24
-2026-04-01,c12,Tobacco products,3,128.88,3.28
+2026-04-01,c12,Tobacco products,3,128.93,3.33
 2026-04-01,c13,Textiles,4,100.24,-0.06
 2026-04-01,c14,Wearing apparel,5,93.07,0.37
 2026-04-01,c15,"Leather and related products, including footwear",6,110.41,5.14
 2026-04-01,c16,"Wood, bamboo, cane, rattan articles and related products",7,79.22,1.84
-2026-04-01,c17,Paper and paper products,8,98.89,-1.89
+2026-04-01,c17,Paper and paper products,8,98.93,-1.84
 2026-04-01,c18,Printing and reproduction of recorded media,9,109.99,1.61
-2026-04-01,c19,Coke and refined petroleum products,10,99.41,5.53
-2026-04-01,c20,Chemical and chemical products,11,105.21,4.54
+2026-04-01,c19,Coke and refined petroleum products,10,101.91,8.18
+2026-04-01,c20,Chemical and chemical products,11,105.07,4.4
 2026-04-01,c21,Basic pharmaceutical products and pharmaceutical preparations,12,81.41,1.0
-2026-04-01,c22,Rubber and plastic products,13,111.09,0.27
-2026-04-01,c23,Other non-metallic mineral products,14,105.92,1.99
-2026-04-01,c24,Basic metals,15,93.35,4.22
-2026-04-01,c25,"Fabricated metal products, except machinery and equipment",16,97.97,1.82
-2026-04-01,c26,"Computer, electronic and optical products",17,89.73,4.39
-2026-04-01,c27,Electrical equipment,18,102.95,-0.71
+2026-04-01,c22,Rubber and plastic products,13,111.01,0.2
+2026-04-01,c23,Other non-metallic mineral products,14,105.83,1.9
+2026-04-01,c24,Basic metals,15,93.4,4.27
+2026-04-01,c25,"Fabricated metal products, except machinery and equipment",16,98.07,1.93
+2026-04-01,c26,"Computer, electronic and optical products",17,89.72,4.39
+2026-04-01,c27,Electrical equipment,18,102.84,-0.82
 2026-04-01,c28,Machinery and equipment except electrical,19,95.86,2.93
 2026-04-01,c29,Transport equipment,20,91.82,2.61
 2026-04-01,c31,Furniture,21,94.17,2.54
 2026-04-01,c32,Other manufacturing and repair and installation of machinery and equipment,22,105.04,1.44
-2026-05-01,manufacturing,Manufacturing,0,101.01,3.17
-2026-05-01,c10,Food products,1,113.87,1.57
+2026-05-01,manufacturing,Manufacturing,0,101.31,3.48
+2026-05-01,c10,Food products,1,114.04,1.72
 2026-05-01,c11,Beverages,2,127.93,3.56
-2026-05-01,c12,Tobacco products,3,131.76,5.19
+2026-05-01,c12,Tobacco products,3,131.8,5.22
 2026-05-01,c13,Textiles,4,100.28,
-2026-05-01,c14,Wearing apparel,5,93.1,0.64
+2026-05-01,c14,Wearing apparel,5,93.09,0.64
 2026-05-01,c15,"Leather and related products, including footwear",6,111.0,5.84
 2026-05-01,c16,"Wood, bamboo, cane, rattan articles and related products",7,79.4,2.16
-2026-05-01,c17,Paper and paper products,8,99.07,-1.79
+2026-05-01,c17,Paper and paper products,8,99.1,-1.75
 2026-05-01,c18,Printing and reproduction of recorded media,9,109.14,0.83
-2026-05-01,c19,Coke and refined petroleum products,10,98.56,3.32
-2026-05-01,c20,Chemical and chemical products,11,106.63,5.79
+2026-05-01,c19,Coke and refined petroleum products,10,100.72,5.57
+2026-05-01,c20,Chemical and chemical products,11,106.47,5.62
 2026-05-01,c21,Basic pharmaceutical products and pharmaceutical preparations,12,81.8,1.48
-2026-05-01,c22,Rubber and plastic products,13,112.38,1.53
-2026-05-01,c23,Other non-metallic mineral products,14,106.39,2.39
-2026-05-01,c24,Basic metals,15,94.4,6.04
-2026-05-01,c25,"Fabricated metal products, except machinery and equipment",16,98.03,1.74
-2026-05-01,c26,"Computer, electronic and optical products",17,90.51,5.93
-2026-05-01,c27,Electrical equipment,18,102.93,-0.75
+2026-05-01,c22,Rubber and plastic products,13,112.22,1.38
+2026-05-01,c23,Other non-metallic mineral products,14,106.3,2.31
+2026-05-01,c24,Basic metals,15,94.35,5.98
+2026-05-01,c25,"Fabricated metal products, except machinery and equipment",16,98.12,1.83
+2026-05-01,c26,"Computer, electronic and optical products",17,90.71,6.17
+2026-05-01,c27,Electrical equipment,18,102.99,-0.7
 2026-05-01,c28,Machinery and equipment except electrical,19,95.91,3.2
 2026-05-01,c29,Transport equipment,20,91.86,2.38
 2026-05-01,c31,Furniture,21,94.1,1.83
 2026-05-01,c32,Other manufacturing and repair and installation of machinery and equipment,22,105.43,3.32
-2026-06-01,manufacturing,Manufacturing,0,101.05,2.98
-2026-06-01,c10,Food products,1,114.24,1.69
+2026-06-01,manufacturing,Manufacturing,0,101.22,3.15
+2026-06-01,c10,Food products,1,114.4,1.83
 2026-06-01,c11,Beverages,2,127.93,3.56
-2026-06-01,c12,Tobacco products,3,133.88,6.95
+2026-06-01,c12,Tobacco products,3,133.74,6.84
 2026-06-01,c13,Textiles,4,100.32,
-2026-06-01,c14,Wearing apparel,5,93.06,0.28
+2026-06-01,c14,Wearing apparel,5,93.06,0.27
 2026-06-01,c15,"Leather and related products, including footwear",6,111.08,5.75
 2026-06-01,c16,"Wood, bamboo, cane, rattan articles and related products",7,79.33,1.78
-2026-06-01,c17,Paper and paper products,8,98.94,-0.91
+2026-06-01,c17,Paper and paper products,8,98.96,-0.9
 2026-06-01,c18,Printing and reproduction of recorded media,9,109.14,0.83
-2026-06-01,c19,Coke and refined petroleum products,10,97.03,1.27
-2026-06-01,c20,Chemical and chemical products,11,106.75,5.55
+2026-06-01,c19,Coke and refined petroleum products,10,98.0,2.29
+2026-06-01,c20,Chemical and chemical products,11,106.58,5.39
 2026-06-01,c21,Basic pharmaceutical products and pharmaceutical preparations,12,82.3,2.06
-2026-06-01,c22,Rubber and plastic products,13,112.74,1.64
-2026-06-01,c23,Other non-metallic mineral products,14,106.49,3.19
-2026-06-01,c24,Basic metals,15,94.64,5.67
-2026-06-01,c25,"Fabricated metal products, except machinery and equipment",16,97.97,1.46
-2026-06-01,c26,"Computer, electronic and optical products",17,90.61,5.56
-2026-06-01,c27,Electrical equipment,18,103.13,-0.34
+2026-06-01,c22,Rubber and plastic products,13,112.57,1.49
+2026-06-01,c23,Other non-metallic mineral products,14,106.41,3.11
+2026-06-01,c24,Basic metals,15,94.63,5.67
+2026-06-01,c25,"Fabricated metal products, except machinery and equipment",16,98.06,1.55
+2026-06-01,c26,"Computer, electronic and optical products",17,90.8,5.79
+2026-06-01,c27,Electrical equipment,18,103.16,-0.3
 2026-06-01,c28,Machinery and equipment except electrical,19,95.9,3.16
 2026-06-01,c29,Transport equipment,20,92.38,2.97
 2026-06-01,c31,Furniture,21,94.4,1.99
 2026-06-01,c32,Other manufacturing and repair and installation of machinery and equipment,22,104.94,2.39
-2026-07-01,manufacturing,Manufacturing,0,101.13,2.98
-2026-07-01,c10,Food products,1,114.12,1.32
+2026-07-01,manufacturing,Manufacturing,0,101.27,3.12
+2026-07-01,c10,Food products,1,114.32,1.5
 2026-07-01,c11,Beverages,2,127.93,3.13
-2026-07-01,c12,Tobacco products,3,133.88,6.78
+2026-07-01,c12,Tobacco products,3,133.74,6.66
 2026-07-01,c13,Textiles,4,100.9,0.6
-2026-07-01,c14,Wearing apparel,5,93.07,0.08
+2026-07-01,c14,Wearing apparel,5,93.13,0.14
 2026-07-01,c15,"Leather and related products, including footwear",6,111.08,5.75
 2026-07-01,c16,"Wood, bamboo, cane, rattan articles and related products",7,79.12,1.5
-2026-07-01,c17,Paper and paper products,8,99.04,-1.15
+2026-07-01,c17,Paper and paper products,8,99.16,-1.03
 2026-07-01,c18,Printing and reproduction of recorded media,9,109.12,0.8
-2026-07-01,c19,Coke and refined petroleum products,10,96.84,2.41
-2026-07-01,c20,Chemical and chemical products,11,106.53,5.62
+2026-07-01,c19,Coke and refined petroleum products,10,97.6,3.21
+2026-07-01,c20,Chemical and chemical products,11,106.38,5.47
 2026-07-01,c21,Basic pharmaceutical products and pharmaceutical preparations,12,82.82,2.44
-2026-07-01,c22,Rubber and plastic products,13,112.51,1.34
-2026-07-01,c23,Other non-metallic mineral products,14,106.51,3.06
-2026-07-01,c24,Basic metals,15,94.36,5.54
-2026-07-01,c25,"Fabricated metal products, except machinery and equipment",16,98.31,1.72
-2026-07-01,c26,"Computer, electronic and optical products",17,91.27,5.76
-2026-07-01,c27,Electrical equipment,18,103.32,-0.34
-2026-07-01,c28,Machinery and equipment except electrical,19,95.9,3.09
-2026-07-01,c29,Transport equipment,20,92.38,2.84
+2026-07-01,c22,Rubber and plastic products,13,112.27,1.12
+2026-07-01,c23,Other non-metallic mineral products,14,106.38,2.94
+2026-07-01,c24,Basic metals,15,94.32,5.48
+2026-07-01,c25,"Fabricated metal products, except machinery and equipment",16,98.36,1.77
+2026-07-01,c26,"Computer, electronic and optical products",17,91.47,5.99
+2026-07-01,c27,Electrical equipment,18,103.34,-0.31
+2026-07-01,c28,Machinery and equipment except electrical,19,95.93,3.13
+2026-07-01,c29,Transport equipment,20,92.27,2.72
 2026-07-01,c31,Furniture,21,94.5,1.71
 2026-07-01,c32,Other manufacturing and repair and installation of machinery and equipment,22,105.44,3.18
+2026-08-01,manufacturing,Manufacturing,0,101.5,3.16
+2026-08-01,c10,Food products,1,114.41,1.57
+2026-08-01,c11,Beverages,2,128.15,3.22
+2026-08-01,c12,Tobacco products,3,133.74,6.72
+2026-08-01,c13,Textiles,4,100.9,0.6
+2026-08-01,c14,Wearing apparel,5,93.25,0.31
+2026-08-01,c15,"Leather and related products, including footwear",6,111.08,5.57
+2026-08-01,c16,"Wood, bamboo, cane, rattan articles and related products",7,79.15,1.44
+2026-08-01,c17,Paper and paper products,8,99.09,-0.71
+2026-08-01,c18,Printing and reproduction of recorded media,9,109.14,0.83
+2026-08-01,c19,Coke and refined petroleum products,10,98.75,3.83
+2026-08-01,c20,Chemical and chemical products,11,105.94,5.07
+2026-08-01,c21,Basic pharmaceutical products and pharmaceutical preparations,12,82.76,2.19
+2026-08-01,c22,Rubber and plastic products,13,113.1,2.16
+2026-08-01,c23,Other non-metallic mineral products,14,106.58,3.16
+2026-08-01,c24,Basic metals,15,94.31,5.49
+2026-08-01,c25,"Fabricated metal products, except machinery and equipment",16,98.12,1.49
+2026-08-01,c26,"Computer, electronic and optical products",17,91.68,5.6
+2026-08-01,c27,Electrical equipment,18,103.55,0.26
+2026-08-01,c28,Machinery and equipment except electrical,19,95.92,3.12
+2026-08-01,c29,Transport equipment,20,92.47,2.67
+2026-08-01,c31,Furniture,21,94.73,1.81
+2026-08-01,c32,Other manufacturing and repair and installation of machinery and equipment,22,105.77,3.52
+2026-09-01,manufacturing,Manufacturing,0,101.78,3.38
+2026-09-01,c10,Food products,1,114.48,1.66
+2026-09-01,c11,Beverages,2,128.15,3.17
+2026-09-01,c12,Tobacco products,3,133.74,6.03
+2026-09-01,c13,Textiles,4,100.9,0.6
+2026-09-01,c14,Wearing apparel,5,93.32,0.25
+2026-09-01,c15,"Leather and related products, including footwear",6,111.08,5.52
+2026-09-01,c16,"Wood, bamboo, cane, rattan articles and related products",7,79.33,1.37
+2026-09-01,c17,Paper and paper products,8,99.12,-0.51
+2026-09-01,c18,Printing and reproduction of recorded media,9,109.14,0.83
+2026-09-01,c19,Coke and refined petroleum products,10,99.42,6.53
+2026-09-01,c20,Chemical and chemical products,11,105.97,5.11
+2026-09-01,c21,Basic pharmaceutical products and pharmaceutical preparations,12,82.98,1.97
+2026-09-01,c22,Rubber and plastic products,13,113.2,1.83
+2026-09-01,c23,Other non-metallic mineral products,14,106.69,3.07
+2026-09-01,c24,Basic metals,15,94.42,4.73
+2026-09-01,c25,"Fabricated metal products, except machinery and equipment",16,98.15,1.65
+2026-09-01,c26,"Computer, electronic and optical products",17,92.28,5.72
+2026-09-01,c27,Electrical equipment,18,103.97,-0.23
+2026-09-01,c28,Machinery and equipment except electrical,19,95.96,2.99
+2026-09-01,c29,Transport equipment,20,92.75,2.97
+2026-09-01,c31,Furniture,21,94.79,2.88
+2026-09-01,c32,Other manufacturing and repair and installation of machinery and equipment,22,105.25,2.59

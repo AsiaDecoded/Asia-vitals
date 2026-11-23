@@ -1,9 +1,9 @@
 {
- "code": "M2026-07",
- "label": "Jul 2026",
+ "code": "M2026-09",
+ "label": "Sep 2026",
  "source": "ph_mfg_psa",
- "processed_at": "2026-11-09T10:03:46Z",
- "rows": 8568,
+ "processed_at": "2026-11-23T08:29:38Z",
+ "rows": 8688,
  "warnings": [
   "total VoPI y/y 2022-06 left blank by PSA (known)",
   "VoPI C14 2021-04-01: published y/y 502.66 vs index 502.92",
@@ -16,23 +16,27 @@
   "VoPI C19 2022-03-01: published y/y 2225.05 vs index 2224.70",
   "VoPI C 2024-12-01: published y/y 0.45 vs index 0.19",
   "VoPI C27 2024-12-01: published y/y 18.62 vs index 6.61",
-  "... 24 VoPI y/y vs index differences in all"
+  "... 23 VoPI y/y vs index differences in all"
  ],
- "fingerprint": "c1d34766c84cdec1",
- "long_rows": 33684,
+ "fingerprint": "4fc406a6a123cb8a",
+ "long_rows": 33972,
  "stamps": {
   "2B/NA/QT/10MFG/0462B5BMFQ1.px": "2026-11-09T14:35:20",
   "2B/NA/QT/10MFG/0472B5BMFQ2.px": "2026-11-09T14:35:20",
   "2B/NA/QT/10MFG/0492B5BMFQ4.px": "2026-11-09T14:35:20",
-  "2G/MNFG/MISSI/2018/0012G4CMCU2.px": "2026-09-09T09:11:24",
-  "2G/MNFG/MISSI/2018/0032G4CMPO2.px": "2026-09-09T09:22:30",
+  "2G/MNFG/MISSI/2018/0012G4CMCU2.px": "2026-11-19T13:11:55",
+  "2G/MNFG/MISSI/2018/0032G4CMPO2.px": "2026-11-19T13:17:02",
   "2G/MNFG/MISSI/BAC/0012G4CMPO1.px": "2026-06-24T11:27:25"
  },
- "latest": "2026-07-01",
+ "latest": "2026-09-01",
  "history": [
   {
    "code": "M2026-07",
    "processed_at": "2026-11-09T10:03:46Z"
+  },
+  {
+   "code": "M2026-09",
+   "processed_at": "2026-11-23T08:29:38Z"
   }
  ]
 }

@@ -1,16 +1,16 @@
 {
- "code": "X2026-11-10",
- "label": "BIS daily to 2026-11-10",
- "latest_date": "2026-11-10",
+ "code": "X2026-11-17",
+ "label": "BIS daily to 2026-11-17",
+ "latest_date": "2026-11-17",
  "currency": "JPY",
  "unit": "Japanese yen per US dollar",
  "first_date": "1969-12-01",
  "table": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/D.JP.JPY.A?format=csv",
- "processed_at": "2026-11-13T01:49:38Z",
- "rows": 14467,
+ "processed_at": "2026-11-23T08:35:39Z",
+ "rows": 14472,
  "warnings": [],
- "fingerprint": "10641d9cf6c9f661",
- "long_rows": 14467,
+ "fingerprint": "3c07026f71435953",
+ "long_rows": 14472,
  "history": [
   {
    "code": "X2026-10-27",
@@ -23,6 +23,10 @@
   {
    "code": "X2026-11-10",
    "processed_at": "2026-11-13T01:49:38Z"
+  },
+  {
+   "code": "X2026-11-17",
+   "processed_at": "2026-11-23T08:35:39Z"
   }
  ]
 }

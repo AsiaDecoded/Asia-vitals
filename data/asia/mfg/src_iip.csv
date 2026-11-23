@@ -189,6 +189,7 @@ JP,M,2026-05-01,19,87.8,1.86,y,石油・石炭製品工業
 JP,M,2026-06-01,19,87.6,2.94,y,石油・石炭製品工業
 JP,M,2026-07-01,19,99.6,11.53,y,石油・石炭製品工業
 JP,M,2026-08-01,19,94.8,-2.27,y,石油・石炭製品工業
+JP,M,2026-09-01,19,91.2,-2.67,y,石油・石炭製品工業
 JP,M,2018-01-01,20,110.7,,,化学工業（除．医薬品）
 JP,M,2018-02-01,20,112.2,,,化学工業（除．医薬品）
 JP,M,2018-03-01,20,118.4,,,化学工業（除．医薬品）
@@ -293,6 +294,7 @@ JP,M,2026-05-01,20,78.8,-7.94,y,化学工業（除．医薬品）
 JP,M,2026-06-01,20,83.6,-2.68,y,化学工業（除．医薬品）
 JP,M,2026-07-01,20,93.7,-1.78,y,化学工業（除．医薬品）
 JP,M,2026-08-01,20,82.4,-0.36,y,化学工業（除．医薬品）
+JP,M,2026-09-01,20,88.4,-4.64,y,化学工業（除．医薬品）
 JP,M,2018-01-01,21,84.766,,,"医薬品 = 化学工業 less 化学工業（除．医薬品）, METI weights (calculated)"
 JP,M,2018-02-01,21,89.085,,,"医薬品 = 化学工業 less 化学工業（除．医薬品）, METI weights (calculated)"
 JP,M,2018-03-01,21,92.466,,,"医薬品 = 化学工業 less 化学工業（除．医薬品）, METI weights (calculated)"
@@ -397,6 +399,7 @@ JP,M,2026-05-01,21,126.722,4.14,y,"医薬品 = 化学工業 less 化学工業（
 JP,M,2026-06-01,21,164.221,21.18,y,"医薬品 = 化学工業 less 化学工業（除．医薬品）, METI weights (calculated)"
 JP,M,2026-07-01,21,165.865,10.1,y,"医薬品 = 化学工業 less 化学工業（除．医薬品）, METI weights (calculated)"
 JP,M,2026-08-01,21,120.174,3.13,y,"医薬品 = 化学工業 less 化学工業（除．医薬品）, METI weights (calculated)"
+JP,M,2026-09-01,21,135.758,-10.63,y,"医薬品 = 化学工業 less 化学工業（除．医薬品）, METI weights (calculated)"
 JP,M,2018-01-01,23,107.4,,,窯業・土石製品工業
 JP,M,2018-02-01,23,108.8,,,窯業・土石製品工業
 JP,M,2018-03-01,23,122.3,,,窯業・土石製品工業
@@ -501,6 +504,7 @@ JP,M,2026-05-01,23,80.2,-4.3,y,窯業・土石製品工業
 JP,M,2026-06-01,23,90.4,1.23,y,窯業・土石製品工業
 JP,M,2026-07-01,23,91.6,-0.22,y,窯業・土石製品工業
 JP,M,2026-08-01,23,76.7,-0.78,y,窯業・土石製品工業
+JP,M,2026-09-01,23,87.5,-3.21,y,窯業・土石製品工業
 JP,M,2018-01-01,24,119.5,,,鉄鋼・非鉄金属工業 (ISIC 24)
 JP,M,2018-02-01,24,119.2,,,鉄鋼・非鉄金属工業 (ISIC 24)
 JP,M,2018-03-01,24,130.9,,,鉄鋼・非鉄金属工業 (ISIC 24)
@@ -605,6 +609,7 @@ JP,M,2026-05-01,24,98.1,-0.1,y,鉄鋼・非鉄金属工業 (ISIC 24)
 JP,M,2026-06-01,24,103.8,2.06,y,鉄鋼・非鉄金属工業 (ISIC 24)
 JP,M,2026-07-01,24,107.1,1.23,y,鉄鋼・非鉄金属工業 (ISIC 24)
 JP,M,2026-08-01,24,91.9,0.33,y,鉄鋼・非鉄金属工業 (ISIC 24)
+JP,M,2026-09-01,24,100.0,-0.99,y,鉄鋼・非鉄金属工業 (ISIC 24)
 JP,M,2018-01-01,27,105.0,,,"電気機械工業 (JSIC 29; ~ISIC 27, includes electrical measuring instruments)"
 JP,M,2018-02-01,27,113.6,,,"電気機械工業 (JSIC 29; ~ISIC 27, includes electrical measuring instruments)"
 JP,M,2018-03-01,27,146.3,,,"電気機械工業 (JSIC 29; ~ISIC 27, includes electrical measuring instruments)"
@@ -709,6 +714,7 @@ JP,M,2026-05-01,27,92.4,-1.81,y,"電気機械工業 (JSIC 29; ~ISIC 27, includes
 JP,M,2026-06-01,27,119.4,8.64,y,"電気機械工業 (JSIC 29; ~ISIC 27, includes electrical measuring instruments)"
 JP,M,2026-07-01,27,114.7,5.52,y,"電気機械工業 (JSIC 29; ~ISIC 27, includes electrical measuring instruments)"
 JP,M,2026-08-01,27,87.3,7.25,y,"電気機械工業 (JSIC 29; ~ISIC 27, includes electrical measuring instruments)"
+JP,M,2026-09-01,27,115.7,5.09,y,"電気機械工業 (JSIC 29; ~ISIC 27, includes electrical measuring instruments)"
 JP,M,2018-01-01,elec,99.106,,,"ISIC 26: 電子部品・デバイス + 情報通信機械, METI weights (calculated)"
 JP,M,2018-02-01,elec,98.146,,,"ISIC 26: 電子部品・デバイス + 情報通信機械, METI weights (calculated)"
 JP,M,2018-03-01,elec,118.433,,,"ISIC 26: 電子部品・デバイス + 情報通信機械, METI weights (calculated)"
@@ -813,6 +819,7 @@ JP,M,2026-05-01,elec,91.023,10.38,y,"ISIC 26: 電子部品・デバイス + 情�
 JP,M,2026-06-01,elec,99.262,-0.4,y,"ISIC 26: 電子部品・デバイス + 情報通信機械, METI weights (calculated)"
 JP,M,2026-07-01,elec,107.88,0.17,y,"ISIC 26: 電子部品・デバイス + 情報通信機械, METI weights (calculated)"
 JP,M,2026-08-01,elec,93.782,-4.06,y,"ISIC 26: 電子部品・デバイス + 情報通信機械, METI weights (calculated)"
+JP,M,2026-09-01,elec,112.093,-3.06,y,"ISIC 26: 電子部品・デバイス + 情報通信機械, METI weights (calculated)"
 JP,M,2018-01-01,mfg,105.6,,,製造工業
 JP,M,2018-02-01,mfg,111.0,,,製造工業
 JP,M,2018-03-01,mfg,128.1,,,製造工業
@@ -917,6 +924,7 @@ JP,M,2026-05-01,mfg,92.5,-2.12,y,製造工業
 JP,M,2026-06-01,mfg,107.7,4.77,y,製造工業
 JP,M,2026-07-01,mfg,110.4,3.95,y,製造工業
 JP,M,2026-08-01,mfg,90.8,2.71,y,製造工業
+JP,M,2026-09-01,mfg,107.8,1.7,y,製造工業
 JP,M,2018-01-01,nonelec,106.234,,,"製造工業 less ISIC 26 electronics and 電気機械工業 (27), METI weights (calculated)"
 JP,M,2018-02-01,nonelec,111.956,,,"製造工業 less ISIC 26 electronics and 電気機械工業 (27), METI weights (calculated)"
 JP,M,2018-03-01,nonelec,127.536,,,"製造工業 less ISIC 26 electronics and 電気機械工業 (27), METI weights (calculated)"
@@ -1021,6 +1029,7 @@ JP,M,2026-05-01,nonelec,92.641,-3.11,y,"製造工業 less ISIC 26 electronics an
 JP,M,2026-06-01,nonelec,107.539,4.89,y,"製造工業 less ISIC 26 electronics and 電気機械工業 (27), METI weights (calculated)"
 JP,M,2026-07-01,nonelec,110.288,4.18,y,"製造工業 less ISIC 26 electronics and 電気機械工業 (27), METI weights (calculated)"
 JP,M,2026-08-01,nonelec,90.807,3.06,y,"製造工業 less ISIC 26 electronics and 電気機械工業 (27), METI weights (calculated)"
+JP,M,2026-09-01,nonelec,106.788,1.89,y,"製造工業 less ISIC 26 electronics and 電気機械工業 (27), METI weights (calculated)"
 KR,M,2015-01-01,19,98.017,,,"코크스, 연탄 및 석유정제품"
 KR,M,2015-02-01,19,89.991,,,"코크스, 연탄 및 석유정제품"
 KR,M,2015-03-01,19,93.579,,,"코크스, 연탄 및 석유정제품"

@@ -1,16 +1,16 @@
 {
- "code": "X2026-11-10",
- "label": "BIS daily to 2026-11-10",
- "latest_date": "2026-11-10",
+ "code": "X2026-11-17",
+ "label": "BIS daily to 2026-11-17",
+ "latest_date": "2026-11-17",
  "currency": "KRW",
  "unit": "Korean won per US dollar",
  "first_date": "1964-05-04",
  "table": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/D.KR.KRW.A?format=csv",
- "processed_at": "2026-11-13T01:49:58Z",
- "rows": 16571,
+ "processed_at": "2026-11-23T08:35:42Z",
+ "rows": 16576,
  "warnings": [],
- "fingerprint": "fbbb188ee2843a7f",
- "long_rows": 16571,
+ "fingerprint": "8b57bd0cc522211f",
+ "long_rows": 16576,
  "history": [
   {
    "code": "X2026-10-27",
@@ -23,6 +23,10 @@
   {
    "code": "X2026-11-10",
    "processed_at": "2026-11-13T01:49:58Z"
+  },
+  {
+   "code": "X2026-11-17",
+   "processed_at": "2026-11-23T08:35:42Z"
   }
  ]
 }

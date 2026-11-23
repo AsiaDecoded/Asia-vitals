@@ -1,22 +1,22 @@
 {
- "code": "Abb3db22fd5",
+ "code": "A7287d4716b",
  "label": "Asia table",
  "economies": "JP KR TW HK CN IN ID TH MY SG PH VN",
  "latest_cpi_month": "2026-10-01",
- "processed_at": "2026-11-13T02:44:21Z",
- "rows": 6795,
+ "processed_at": "2026-11-23T09:18:09Z",
+ "rows": 6811,
  "warnings": [],
  "missing": [],
  "inputs": {
-  "data/jp/cpi/jp_cpi.csv": "N2026-09_T2026-09",
-  "data/jp/cpi_food/jp_cpi_food.csv": "F2026-09",
-  "data/jp/cpi_core3/jp_cpi_core3.csv": "K2026-09",
+  "data/jp/cpi/jp_cpi.csv": "N2026-10_T2026-10",
+  "data/jp/cpi_food/jp_cpi_food.csv": "F2026-10",
+  "data/jp/cpi_core3/jp_cpi_core3.csv": "K2026-10",
   "data/jp/ppi/jp_ppi.csv": "M2026-10",
   "data/kr/cpi/kr_cpi.csv": "C2026-10",
-  "data/kr/ppi/kr_ppi.csv": "P2026-09",
+  "data/kr/ppi/kr_ppi.csv": "P2026-10",
   "data/tw/cpi/tw_cpi.csv": "C2026-10",
   "data/tw/ppi/tw_ppi.csv": "P2026-10",
-  "data/hk/cpi/hk_cpi.csv": "C2026-09",
+  "data/hk/cpi/hk_cpi.csv": "C2026-10",
   "data/hk/ppi/hk_ppi.csv": "P2026Q2-T2026-09",
   "data/cn/cpi/cn_cpi.csv": "C2026-10",
   "data/cn/ppi/cn_ppi.csv": "P2026-10",
@@ -29,24 +29,24 @@
   "data/id/ppi/id_ppi.csv": "P2026-10",
   "data/th/cpi/th_cpi.csv": "C2026-10p",
   "data/th/ppi/th_ppi.csv": "P2026-10",
-  "data/my/cpi/my_cpi.csv": "M2026-09",
+  "data/my/cpi/my_cpi.csv": "M2026-10",
   "data/my/ppi/my_ppi.csv": "P2026-09",
   "data/sg/cpi/sg_cpi.csv": "C2026-09",
   "data/sg/ppi/sg_ppi.csv": "P2026-09",
   "data/ph/cpi/ph_cpi.csv": "C2026-10",
-  "data/ph/ppi/ph_ppi.csv": "P2026-07",
+  "data/ph/ppi/ph_ppi.csv": "P2026-09",
   "data/vn/cpi/vn_cpi.csv": "C2026-10"
  },
  "latest_cpi": {
-  "JP": "2026-09-01",
+  "JP": "2026-10-01",
   "KR": "2026-10-01",
   "TW": "2026-10-01",
-  "HK": "2026-09-01",
+  "HK": "2026-10-01",
   "CN": "2026-10-01",
   "IN": "2026-10-01",
   "ID": "2026-10-01",
   "TH": "2026-10-01",
-  "MY": "2026-09-01",
+  "MY": "2026-10-01",
   "SG": "2026-09-01",
   "PH": "2026-10-01",
   "VN": "2026-10-01"
@@ -127,6 +127,10 @@
   {
    "code": "Abb3db22fd5",
    "processed_at": "2026-11-13T02:44:21Z"
+  },
+  {
+   "code": "A7287d4716b",
+   "processed_at": "2026-11-23T09:18:09Z"
   }
  ]
 }

@@ -1,19 +1,21 @@
 {
- "code": "P2026-09",
- "label": "Sep 2026",
- "latest_month": "2026-09-01",
+ "code": "P2026-10",
+ "label": "Oct 2026",
+ "latest_month": "2026-10-01",
  "table": "ECOS 404Y014, 405Y006 (Bank of Korea PPI and DSPI, 2020 = 100)",
- "processed_at": "2026-10-29T08:16:48Z",
- "rows": 4647,
- "warnings": [
-  "recent months revised"
- ],
- "fingerprint": "4d8f2af252b3f025",
- "long_rows": 9210,
+ "processed_at": "2026-11-23T08:27:09Z",
+ "rows": 4654,
+ "warnings": [],
+ "fingerprint": "a9899cac96668a08",
+ "long_rows": 9224,
  "history": [
   {
    "code": "P2026-09",
    "processed_at": "2026-10-29T08:16:48Z"
+  },
+  {
+   "code": "P2026-10",
+   "processed_at": "2026-11-23T08:27:09Z"
   }
  ]
 }

@@ -4,8 +4,8 @@
  "units": "% y/y",
  "freq": "monthly",
  "area": "national",
- "source": "Statistics Bureau of Japan, Consumer Price Index (2025 base), National Sep 2026, Tokyo Sep 2026.",
- "release": "N2026-09_T2026-09",
+ "source": "Statistics Bureau of Japan, Consumer Price Index (2025 base), National Oct 2026, Tokyo Oct 2026.",
+ "release": "N2026-10_T2026-10",
  "columns": [
   "all",
   "core",
@@ -4779,24 +4779,31 @@
    "core": 2.1,
    "core_core": 2.4,
    "ex_food_energy": 2.2
+  },
+  {
+   "date": "2026-10-01",
+   "all": 2.3,
+   "core": 2.2,
+   "core_core": 2.2,
+   "ex_food_energy": 2.1
   }
  ],
  "latest": {
   "all": {
-   "date": "2026-09-01",
-   "value": 2.1
+   "date": "2026-10-01",
+   "value": 2.3
   },
   "core": {
-   "date": "2026-09-01",
-   "value": 2.1
+   "date": "2026-10-01",
+   "value": 2.2
   },
   "core_core": {
-   "date": "2026-09-01",
-   "value": 2.4
+   "date": "2026-10-01",
+   "value": 2.2
   },
   "ex_food_energy": {
-   "date": "2026-09-01",
-   "value": 2.2
+   "date": "2026-10-01",
+   "value": 2.1
   }
  }
 }

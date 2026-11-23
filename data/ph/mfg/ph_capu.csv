@@ -2007,7 +2007,7 @@ date,code,name,rate
 2025-04-01,C13,Manufacture of textiles,74.58
 2025-04-01,C14,Manufacture of wearing apparel,76.28
 2025-04-01,C15,"Manufacture of leather and related products, including footwear",75.09
-2025-04-01,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",75.97
+2025-04-01,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",76.02
 2025-04-01,C17,Manufacture of paper and paper products,71.31
 2025-04-01,C18,Printing and reproduction of recorded media,74.69
 2025-04-01,C19,Manufacture of coke and refined petroleum products,78.14
@@ -2046,7 +2046,7 @@ date,code,name,rate
 2025-05-01,C29-C30,Manufacture of transport equipment,74.69
 2025-05-01,C31,Manufacture of furniture,80.37
 2025-05-01,C32-C33,Other Manufacturing and Repair and installation of machinery and equipment,78.54
-2025-06-01,C,Manufacturing,76.79
+2025-06-01,C,Manufacturing,76.81
 2025-06-01,C10,Manufacture of food products,80.5
 2025-06-01,C11,Manufacture of beverages,80.49
 2025-06-01,C12,Manufacture of tobacco products,77.78
@@ -2061,7 +2061,7 @@ date,code,name,rate
 2025-06-01,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,63.5
 2025-06-01,C22,Manufacture of rubber and plastic products,80.68
 2025-06-01,C23,Manufacture of other non-metallic mineral products,79.79
-2025-06-01,C24,Manufacture of basic metals,70.54
+2025-06-01,C24,Manufacture of basic metals,70.76
 2025-06-01,C25,"Manufacture of fabricated metal products, except machinery and equipment",69.68
 2025-06-01,C26,"Manufacture of computer, electronic and optical products",77.77
 2025-06-01,C27,Manufacture of electrical equipment,77.33
@@ -2069,8 +2069,8 @@ date,code,name,rate
 2025-06-01,C29-C30,Manufacture of transport equipment,74.16
 2025-06-01,C31,Manufacture of furniture,79.91
 2025-06-01,C32-C33,Other Manufacturing and Repair and installation of machinery and equipment,80.46
-2025-07-01,C,Manufacturing,77.65
-2025-07-01,C10,Manufacture of food products,80.89
+2025-07-01,C,Manufacturing,77.67
+2025-07-01,C10,Manufacture of food products,80.98
 2025-07-01,C11,Manufacture of beverages,79.6
 2025-07-01,C12,Manufacture of tobacco products,78.17
 2025-07-01,C13,Manufacture of textiles,80.59
@@ -2092,8 +2092,8 @@ date,code,name,rate
 2025-07-01,C29-C30,Manufacture of transport equipment,75.72
 2025-07-01,C31,Manufacture of furniture,80.44
 2025-07-01,C32-C33,Other Manufacturing and Repair and installation of machinery and equipment,80.75
-2025-08-01,C,Manufacturing,77.47
-2025-08-01,C10,Manufacture of food products,81.24
+2025-08-01,C,Manufacturing,77.58
+2025-08-01,C10,Manufacture of food products,81.7
 2025-08-01,C11,Manufacture of beverages,78.8
 2025-08-01,C12,Manufacture of tobacco products,76.58
 2025-08-01,C13,Manufacture of textiles,77.94
@@ -2115,8 +2115,8 @@ date,code,name,rate
 2025-08-01,C29-C30,Manufacture of transport equipment,75.35
 2025-08-01,C31,Manufacture of furniture,78.13
 2025-08-01,C32-C33,Other Manufacturing and Repair and installation of machinery and equipment,79.14
-2025-09-01,C,Manufacturing,77.3
-2025-09-01,C10,Manufacture of food products,79.8
+2025-09-01,C,Manufacturing,77.41
+2025-09-01,C10,Manufacture of food products,80.26
 2025-09-01,C11,Manufacture of beverages,81.77
 2025-09-01,C12,Manufacture of tobacco products,76.15
 2025-09-01,C13,Manufacture of textiles,77.41
@@ -2161,8 +2161,8 @@ date,code,name,rate
 2025-10-01,C29-C30,Manufacture of transport equipment,74.99
 2025-10-01,C31,Manufacture of furniture,78.04
 2025-10-01,C32-C33,Other Manufacturing and Repair and installation of machinery and equipment,82.0
-2025-11-01,C,Manufacturing,77.75
-2025-11-01,C10,Manufacture of food products,81.0
+2025-11-01,C,Manufacturing,77.79
+2025-11-01,C10,Manufacture of food products,81.17
 2025-11-01,C11,Manufacture of beverages,75.81
 2025-11-01,C12,Manufacture of tobacco products,79.14
 2025-11-01,C13,Manufacture of textiles,77.59
@@ -2184,8 +2184,8 @@ date,code,name,rate
 2025-11-01,C29-C30,Manufacture of transport equipment,73.43
 2025-11-01,C31,Manufacture of furniture,77.65
 2025-11-01,C32-C33,Other Manufacturing and Repair and installation of machinery and equipment,80.65
-2025-12-01,C,Manufacturing,77.65
-2025-12-01,C10,Manufacture of food products,79.3
+2025-12-01,C,Manufacturing,77.69
+2025-12-01,C10,Manufacture of food products,79.38
 2025-12-01,C11,Manufacture of beverages,78.54
 2025-12-01,C12,Manufacture of tobacco products,79.09
 2025-12-01,C13,Manufacture of textiles,77.68
@@ -2197,174 +2197,220 @@ date,code,name,rate
 2025-12-01,C19,Manufacture of coke and refined petroleum products,80.5
 2025-12-01,C20,Manufacture of chemical and chemical products,67.78
 2025-12-01,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,65.59
-2025-12-01,C22,Manufacture of rubber and plastic products,77.31
+2025-12-01,C22,Manufacture of rubber and plastic products,77.2
 2025-12-01,C23,Manufacture of other non-metallic mineral products,79.67
 2025-12-01,C24,Manufacture of basic metals,75.53
 2025-12-01,C25,"Manufacture of fabricated metal products, except machinery and equipment",73.92
 2025-12-01,C26,"Manufacture of computer, electronic and optical products",80.85
-2025-12-01,C27,Manufacture of electrical equipment,75.82
+2025-12-01,C27,Manufacture of electrical equipment,76.47
 2025-12-01,C28,Manufacture of machinery and equipment except electrical,79.15
-2025-12-01,C29-C30,Manufacture of transport equipment,73.24
+2025-12-01,C29-C30,Manufacture of transport equipment,73.36
 2025-12-01,C31,Manufacture of furniture,79.19
 2025-12-01,C32-C33,Other Manufacturing and Repair and installation of machinery and equipment,80.95
-2026-01-01,C,Manufacturing,77.42
-2026-01-01,C10,Manufacture of food products,80.57
+2026-01-01,C,Manufacturing,77.26
+2026-01-01,C10,Manufacture of food products,79.87
 2026-01-01,C11,Manufacture of beverages,76.25
 2026-01-01,C12,Manufacture of tobacco products,78.09
 2026-01-01,C13,Manufacture of textiles,74.67
 2026-01-01,C14,Manufacture of wearing apparel,72.28
-2026-01-01,C15,"Manufacture of leather and related products, including footwear",81.08
+2026-01-01,C15,"Manufacture of leather and related products, including footwear",80.92
 2026-01-01,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",76.31
 2026-01-01,C17,Manufacture of paper and paper products,73.28
 2026-01-01,C18,Printing and reproduction of recorded media,77.42
-2026-01-01,C19,Manufacture of coke and refined petroleum products,77.69
+2026-01-01,C19,Manufacture of coke and refined petroleum products,78.15
 2026-01-01,C20,Manufacture of chemical and chemical products,67.82
 2026-01-01,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,61.26
-2026-01-01,C22,Manufacture of rubber and plastic products,76.73
-2026-01-01,C23,Manufacture of other non-metallic mineral products,77.42
+2026-01-01,C22,Manufacture of rubber and plastic products,76.17
+2026-01-01,C23,Manufacture of other non-metallic mineral products,76.91
 2026-01-01,C24,Manufacture of basic metals,76.91
-2026-01-01,C25,"Manufacture of fabricated metal products, except machinery and equipment",70.59
-2026-01-01,C26,"Manufacture of computer, electronic and optical products",79.41
-2026-01-01,C27,Manufacture of electrical equipment,73.53
+2026-01-01,C25,"Manufacture of fabricated metal products, except machinery and equipment",70.83
+2026-01-01,C26,"Manufacture of computer, electronic and optical products",79.39
+2026-01-01,C27,Manufacture of electrical equipment,73.29
 2026-01-01,C28,Manufacture of machinery and equipment except electrical,79.3
-2026-01-01,C29-C30,Manufacture of transport equipment,75.6
+2026-01-01,C29-C30,Manufacture of transport equipment,75.67
 2026-01-01,C31,Manufacture of furniture,78.77
 2026-01-01,C32-C33,Other Manufacturing and Repair and installation of machinery and equipment,80.9
-2026-02-01,C,Manufacturing,77.65
-2026-02-01,C10,Manufacture of food products,79.8
+2026-02-01,C,Manufacturing,77.51
+2026-02-01,C10,Manufacture of food products,79.34
 2026-02-01,C11,Manufacture of beverages,75.63
 2026-02-01,C12,Manufacture of tobacco products,80.42
 2026-02-01,C13,Manufacture of textiles,76.81
 2026-02-01,C14,Manufacture of wearing apparel,71.84
-2026-02-01,C15,"Manufacture of leather and related products, including footwear",79.4
+2026-02-01,C15,"Manufacture of leather and related products, including footwear",81.69
 2026-02-01,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",79.37
 2026-02-01,C17,Manufacture of paper and paper products,74.14
 2026-02-01,C18,Printing and reproduction of recorded media,75.96
 2026-02-01,C19,Manufacture of coke and refined petroleum products,79.62
 2026-02-01,C20,Manufacture of chemical and chemical products,66.82
 2026-02-01,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,66.18
-2026-02-01,C22,Manufacture of rubber and plastic products,76.61
-2026-02-01,C23,Manufacture of other non-metallic mineral products,77.11
-2026-02-01,C24,Manufacture of basic metals,76.26
-2026-02-01,C25,"Manufacture of fabricated metal products, except machinery and equipment",71.7
-2026-02-01,C26,"Manufacture of computer, electronic and optical products",80.68
-2026-02-01,C27,Manufacture of electrical equipment,73.62
+2026-02-01,C22,Manufacture of rubber and plastic products,76.14
+2026-02-01,C23,Manufacture of other non-metallic mineral products,76.58
+2026-02-01,C24,Manufacture of basic metals,76.25
+2026-02-01,C25,"Manufacture of fabricated metal products, except machinery and equipment",71.02
+2026-02-01,C26,"Manufacture of computer, electronic and optical products",80.66
+2026-02-01,C27,Manufacture of electrical equipment,73.43
 2026-02-01,C28,Manufacture of machinery and equipment except electrical,79.63
-2026-02-01,C29-C30,Manufacture of transport equipment,75.53
+2026-02-01,C29-C30,Manufacture of transport equipment,75.6
 2026-02-01,C31,Manufacture of furniture,79.18
 2026-02-01,C32-C33,Other Manufacturing and Repair and installation of machinery and equipment,82.71
-2026-03-01,C,Manufacturing,78.66
-2026-03-01,C10,Manufacture of food products,80.21
+2026-03-01,C,Manufacturing,78.81
+2026-03-01,C10,Manufacture of food products,80.59
 2026-03-01,C11,Manufacture of beverages,77.75
-2026-03-01,C12,Manufacture of tobacco products,78.33
+2026-03-01,C12,Manufacture of tobacco products,78.46
 2026-03-01,C13,Manufacture of textiles,77.57
-2026-03-01,C14,Manufacture of wearing apparel,72.12
-2026-03-01,C15,"Manufacture of leather and related products, including footwear",81.38
+2026-03-01,C14,Manufacture of wearing apparel,72.77
+2026-03-01,C15,"Manufacture of leather and related products, including footwear",82.08
 2026-03-01,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",80.53
 2026-03-01,C17,Manufacture of paper and paper products,74.72
 2026-03-01,C18,Printing and reproduction of recorded media,77.19
 2026-03-01,C19,Manufacture of coke and refined petroleum products,81.17
 2026-03-01,C20,Manufacture of chemical and chemical products,71.18
 2026-03-01,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,67.68
-2026-03-01,C22,Manufacture of rubber and plastic products,77.38
-2026-03-01,C23,Manufacture of other non-metallic mineral products,77.28
+2026-03-01,C22,Manufacture of rubber and plastic products,77.32
+2026-03-01,C23,Manufacture of other non-metallic mineral products,76.76
 2026-03-01,C24,Manufacture of basic metals,75.89
-2026-03-01,C25,"Manufacture of fabricated metal products, except machinery and equipment",71.17
-2026-03-01,C26,"Manufacture of computer, electronic and optical products",82.14
-2026-03-01,C27,Manufacture of electrical equipment,71.2
+2026-03-01,C25,"Manufacture of fabricated metal products, except machinery and equipment",70.82
+2026-03-01,C26,"Manufacture of computer, electronic and optical products",82.51
+2026-03-01,C27,Manufacture of electrical equipment,70.72
 2026-03-01,C28,Manufacture of machinery and equipment except electrical,76.94
-2026-03-01,C29-C30,Manufacture of transport equipment,78.64
+2026-03-01,C29-C30,Manufacture of transport equipment,78.82
 2026-03-01,C31,Manufacture of furniture,76.77
 2026-03-01,C32-C33,Other Manufacturing and Repair and installation of machinery and equipment,81.5
-2026-04-01,C,Manufacturing,78.49
-2026-04-01,C10,Manufacture of food products,79.82
+2026-04-01,C,Manufacturing,78.59
+2026-04-01,C10,Manufacture of food products,79.77
 2026-04-01,C11,Manufacture of beverages,76.07
-2026-04-01,C12,Manufacture of tobacco products,79.17
-2026-04-01,C13,Manufacture of textiles,74.35
-2026-04-01,C14,Manufacture of wearing apparel,72.02
-2026-04-01,C15,"Manufacture of leather and related products, including footwear",82.17
+2026-04-01,C12,Manufacture of tobacco products,79.23
+2026-04-01,C13,Manufacture of textiles,72.67
+2026-04-01,C14,Manufacture of wearing apparel,72.44
+2026-04-01,C15,"Manufacture of leather and related products, including footwear",82.4
 2026-04-01,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",81.07
 2026-04-01,C17,Manufacture of paper and paper products,71.89
 2026-04-01,C18,Printing and reproduction of recorded media,76.69
 2026-04-01,C19,Manufacture of coke and refined petroleum products,85.5
-2026-04-01,C20,Manufacture of chemical and chemical products,69.39
-2026-04-01,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,64.8
-2026-04-01,C22,Manufacture of rubber and plastic products,77.22
-2026-04-01,C23,Manufacture of other non-metallic mineral products,74.9
-2026-04-01,C24,Manufacture of basic metals,77.83
-2026-04-01,C25,"Manufacture of fabricated metal products, except machinery and equipment",72.17
-2026-04-01,C26,"Manufacture of computer, electronic and optical products",81.5
-2026-04-01,C27,Manufacture of electrical equipment,69.74
-2026-04-01,C28,Manufacture of machinery and equipment except electrical,78.64
-2026-04-01,C29-C30,Manufacture of transport equipment,77.29
-2026-04-01,C31,Manufacture of furniture,76.45
+2026-04-01,C20,Manufacture of chemical and chemical products,69.61
+2026-04-01,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,65.76
+2026-04-01,C22,Manufacture of rubber and plastic products,76.92
+2026-04-01,C23,Manufacture of other non-metallic mineral products,74.44
+2026-04-01,C24,Manufacture of basic metals,78.15
+2026-04-01,C25,"Manufacture of fabricated metal products, except machinery and equipment",71.55
+2026-04-01,C26,"Manufacture of computer, electronic and optical products",81.87
+2026-04-01,C27,Manufacture of electrical equipment,69.91
+2026-04-01,C28,Manufacture of machinery and equipment except electrical,79.01
+2026-04-01,C29-C30,Manufacture of transport equipment,77.55
+2026-04-01,C31,Manufacture of furniture,75.1
 2026-04-01,C32-C33,Other Manufacturing and Repair and installation of machinery and equipment,79.86
-2026-05-01,C,Manufacturing,78.98
-2026-05-01,C10,Manufacture of food products,79.87
+2026-05-01,C,Manufacturing,79.03
+2026-05-01,C10,Manufacture of food products,79.97
 2026-05-01,C11,Manufacture of beverages,77.07
-2026-05-01,C12,Manufacture of tobacco products,81.9
-2026-05-01,C13,Manufacture of textiles,76.1
-2026-05-01,C14,Manufacture of wearing apparel,72.27
-2026-05-01,C15,"Manufacture of leather and related products, including footwear",83.33
+2026-05-01,C12,Manufacture of tobacco products,83.55
+2026-05-01,C13,Manufacture of textiles,74.14
+2026-05-01,C14,Manufacture of wearing apparel,73.21
+2026-05-01,C15,"Manufacture of leather and related products, including footwear",83.6
 2026-05-01,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",81.74
 2026-05-01,C17,Manufacture of paper and paper products,74.93
 2026-05-01,C18,Printing and reproduction of recorded media,77.38
-2026-05-01,C19,Manufacture of coke and refined petroleum products,86.09
-2026-05-01,C20,Manufacture of chemical and chemical products,70.37
-2026-05-01,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,65.75
-2026-05-01,C22,Manufacture of rubber and plastic products,77.43
-2026-05-01,C23,Manufacture of other non-metallic mineral products,75.89
-2026-05-01,C24,Manufacture of basic metals,78.57
-2026-05-01,C25,"Manufacture of fabricated metal products, except machinery and equipment",72.73
-2026-05-01,C26,"Manufacture of computer, electronic and optical products",81.69
-2026-05-01,C27,Manufacture of electrical equipment,70.12
-2026-05-01,C28,Manufacture of machinery and equipment except electrical,78.7
-2026-05-01,C29-C30,Manufacture of transport equipment,77.78
-2026-05-01,C31,Manufacture of furniture,76.8
+2026-05-01,C19,Manufacture of coke and refined petroleum products,85.5
+2026-05-01,C20,Manufacture of chemical and chemical products,70.6
+2026-05-01,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,66.67
+2026-05-01,C22,Manufacture of rubber and plastic products,77.24
+2026-05-01,C23,Manufacture of other non-metallic mineral products,75.4
+2026-05-01,C24,Manufacture of basic metals,78.74
+2026-05-01,C25,"Manufacture of fabricated metal products, except machinery and equipment",71.91
+2026-05-01,C26,"Manufacture of computer, electronic and optical products",81.93
+2026-05-01,C27,Manufacture of electrical equipment,70.17
+2026-05-01,C28,Manufacture of machinery and equipment except electrical,79.25
+2026-05-01,C29-C30,Manufacture of transport equipment,77.8
+2026-05-01,C31,Manufacture of furniture,75.43
 2026-05-01,C32-C33,Other Manufacturing and Repair and installation of machinery and equipment,80.4
-2026-06-01,C,Manufacturing,78.87
-2026-06-01,C10,Manufacture of food products,79.41
+2026-06-01,C,Manufacturing,79.07
+2026-06-01,C10,Manufacture of food products,78.52
 2026-06-01,C11,Manufacture of beverages,77.33
-2026-06-01,C12,Manufacture of tobacco products,84.11
-2026-06-01,C13,Manufacture of textiles,72.15
-2026-06-01,C14,Manufacture of wearing apparel,71.92
-2026-06-01,C15,"Manufacture of leather and related products, including footwear",82.61
-2026-06-01,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",79.99
-2026-06-01,C17,Manufacture of paper and paper products,74.89
-2026-06-01,C18,Printing and reproduction of recorded media,77.32
-2026-06-01,C19,Manufacture of coke and refined petroleum products,84.82
-2026-06-01,C20,Manufacture of chemical and chemical products,70.5
-2026-06-01,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,66.15
-2026-06-01,C22,Manufacture of rubber and plastic products,77.56
-2026-06-01,C23,Manufacture of other non-metallic mineral products,75.44
-2026-06-01,C24,Manufacture of basic metals,78.02
-2026-06-01,C25,"Manufacture of fabricated metal products, except machinery and equipment",72.21
-2026-06-01,C26,"Manufacture of computer, electronic and optical products",81.82
-2026-06-01,C27,Manufacture of electrical equipment,69.43
-2026-06-01,C28,Manufacture of machinery and equipment except electrical,79.21
-2026-06-01,C29-C30,Manufacture of transport equipment,79.06
-2026-06-01,C31,Manufacture of furniture,76.85
+2026-06-01,C12,Manufacture of tobacco products,85.18
+2026-06-01,C13,Manufacture of textiles,70.38
+2026-06-01,C14,Manufacture of wearing apparel,72.85
+2026-06-01,C15,"Manufacture of leather and related products, including footwear",82.6
+2026-06-01,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",81.16
+2026-06-01,C17,Manufacture of paper and paper products,74.86
+2026-06-01,C18,Printing and reproduction of recorded media,76.46
+2026-06-01,C19,Manufacture of coke and refined petroleum products,85.42
+2026-06-01,C20,Manufacture of chemical and chemical products,70.69
+2026-06-01,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,67.05
+2026-06-01,C22,Manufacture of rubber and plastic products,77.39
+2026-06-01,C23,Manufacture of other non-metallic mineral products,74.96
+2026-06-01,C24,Manufacture of basic metals,79.85
+2026-06-01,C25,"Manufacture of fabricated metal products, except machinery and equipment",71.21
+2026-06-01,C26,"Manufacture of computer, electronic and optical products",83.03
+2026-06-01,C27,Manufacture of electrical equipment,71.26
+2026-06-01,C28,Manufacture of machinery and equipment except electrical,80.02
+2026-06-01,C29-C30,Manufacture of transport equipment,78.53
+2026-06-01,C31,Manufacture of furniture,75.52
 2026-06-01,C32-C33,Other Manufacturing and Repair and installation of machinery and equipment,80.52
-2026-07-01,C,Manufacturing,78.85
-2026-07-01,C10,Manufacture of food products,79.3
-2026-07-01,C11,Manufacture of beverages,74.21
-2026-07-01,C12,Manufacture of tobacco products,85.6
-2026-07-01,C13,Manufacture of textiles,73.88
-2026-07-01,C14,Manufacture of wearing apparel,72.31
-2026-07-01,C15,"Manufacture of leather and related products, including footwear",83.45
-2026-07-01,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",80.14
-2026-07-01,C17,Manufacture of paper and paper products,77.8
-2026-07-01,C18,Printing and reproduction of recorded media,75.78
-2026-07-01,C19,Manufacture of coke and refined petroleum products,83.5
-2026-07-01,C20,Manufacture of chemical and chemical products,70.28
-2026-07-01,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,61.0
-2026-07-01,C22,Manufacture of rubber and plastic products,77.7
-2026-07-01,C23,Manufacture of other non-metallic mineral products,76.6
-2026-07-01,C24,Manufacture of basic metals,78.07
-2026-07-01,C25,"Manufacture of fabricated metal products, except machinery and equipment",73.03
-2026-07-01,C26,"Manufacture of computer, electronic and optical products",82.06
-2026-07-01,C27,Manufacture of electrical equipment,69.27
-2026-07-01,C28,Manufacture of machinery and equipment except electrical,80.19
-2026-07-01,C29-C30,Manufacture of transport equipment,80.6
-2026-07-01,C31,Manufacture of furniture,73.16
-2026-07-01,C32-C33,Other Manufacturing and Repair and installation of machinery and equipment,80.44
+2026-07-01,C,Manufacturing,78.86
+2026-07-01,C10,Manufacture of food products,77.6
+2026-07-01,C11,Manufacture of beverages,75.0
+2026-07-01,C12,Manufacture of tobacco products,87.5
+2026-07-01,C13,Manufacture of textiles,74.4
+2026-07-01,C14,Manufacture of wearing apparel,75.65
+2026-07-01,C15,"Manufacture of leather and related products, including footwear",84.45
+2026-07-01,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",82.81
+2026-07-01,C17,Manufacture of paper and paper products,75.89
+2026-07-01,C18,Printing and reproduction of recorded media,74.72
+2026-07-01,C19,Manufacture of coke and refined petroleum products,84.5
+2026-07-01,C20,Manufacture of chemical and chemical products,71.02
+2026-07-01,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,65.21
+2026-07-01,C22,Manufacture of rubber and plastic products,77.64
+2026-07-01,C23,Manufacture of other non-metallic mineral products,75.22
+2026-07-01,C24,Manufacture of basic metals,79.79
+2026-07-01,C25,"Manufacture of fabricated metal products, except machinery and equipment",71.73
+2026-07-01,C26,"Manufacture of computer, electronic and optical products",83.09
+2026-07-01,C27,Manufacture of electrical equipment,70.89
+2026-07-01,C28,Manufacture of machinery and equipment except electrical,81.72
+2026-07-01,C29-C30,Manufacture of transport equipment,79.0
+2026-07-01,C31,Manufacture of furniture,73.95
+2026-07-01,C32-C33,Other Manufacturing and Repair and installation of machinery and equipment,80.19
+2026-08-01,C,Manufacturing,78.73
+2026-08-01,C10,Manufacture of food products,77.65
+2026-08-01,C11,Manufacture of beverages,74.8
+2026-08-01,C12,Manufacture of tobacco products,88.33
+2026-08-01,C13,Manufacture of textiles,73.63
+2026-08-01,C14,Manufacture of wearing apparel,74.75
+2026-08-01,C15,"Manufacture of leather and related products, including footwear",82.6
+2026-08-01,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",81.49
+2026-08-01,C17,Manufacture of paper and paper products,72.7
+2026-08-01,C18,Printing and reproduction of recorded media,74.52
+2026-08-01,C19,Manufacture of coke and refined petroleum products,83.67
+2026-08-01,C20,Manufacture of chemical and chemical products,70.96
+2026-08-01,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,68.53
+2026-08-01,C22,Manufacture of rubber and plastic products,76.67
+2026-08-01,C23,Manufacture of other non-metallic mineral products,74.69
+2026-08-01,C24,Manufacture of basic metals,79.5
+2026-08-01,C25,"Manufacture of fabricated metal products, except machinery and equipment",71.57
+2026-08-01,C26,"Manufacture of computer, electronic and optical products",83.89
+2026-08-01,C27,Manufacture of electrical equipment,70.4
+2026-08-01,C28,Manufacture of machinery and equipment except electrical,80.28
+2026-08-01,C29-C30,Manufacture of transport equipment,78.48
+2026-08-01,C31,Manufacture of furniture,73.94
+2026-08-01,C32-C33,Other Manufacturing and Repair and installation of machinery and equipment,79.97
+2026-09-01,C,Manufacturing,78.4
+2026-09-01,C10,Manufacture of food products,76.87
+2026-09-01,C11,Manufacture of beverages,75.36
+2026-09-01,C12,Manufacture of tobacco products,99.5
+2026-09-01,C13,Manufacture of textiles,73.55
+2026-09-01,C14,Manufacture of wearing apparel,75.2
+2026-09-01,C15,"Manufacture of leather and related products, including footwear",78.0
+2026-09-01,C16,"Manufacture of wood, bamboo, cane, rattan articles and related products",81.65
+2026-09-01,C17,Manufacture of paper and paper products,76.09
+2026-09-01,C18,Printing and reproduction of recorded media,76.76
+2026-09-01,C19,Manufacture of coke and refined petroleum products,85.63
+2026-09-01,C20,Manufacture of chemical and chemical products,70.0
+2026-09-01,C21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,68.69
+2026-09-01,C22,Manufacture of rubber and plastic products,79.14
+2026-09-01,C23,Manufacture of other non-metallic mineral products,74.74
+2026-09-01,C24,Manufacture of basic metals,72.32
+2026-09-01,C25,"Manufacture of fabricated metal products, except machinery and equipment",72.82
+2026-09-01,C26,"Manufacture of computer, electronic and optical products",80.89
+2026-09-01,C27,Manufacture of electrical equipment,72.27
+2026-09-01,C28,Manufacture of machinery and equipment except electrical,81.01
+2026-09-01,C29-C30,Manufacture of transport equipment,82.65
+2026-09-01,C31,Manufacture of furniture,73.0
+2026-09-01,C32-C33,Other Manufacturing and Repair and installation of machinery and equipment,83.32

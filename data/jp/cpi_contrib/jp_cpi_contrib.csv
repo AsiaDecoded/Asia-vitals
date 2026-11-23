@@ -737,3 +737,9 @@ date,series,label,order,contrib_yoy
 2026-09-01,energy,Energy,3,-0.04
 2026-09-01,fresh_food,Fresh food,4,0.08
 2026-09-01,goods,Goods,5,1.39
+2026-10-01,all,All items,0,2.3
+2026-10-01,services,Services,1,0.71
+2026-10-01,goods_core,Goods less fresh food and energy,2,1.22
+2026-10-01,energy,Energy,3,0.16
+2026-10-01,fresh_food,Fresh food,4,0.24
+2026-10-01,goods,Goods,5,1.62

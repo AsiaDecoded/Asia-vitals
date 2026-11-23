@@ -4639,10 +4639,17 @@ date,series,label,order,index,yoy
 2026-08-01,utilities,"Electricity, gas, water and waste",4,152.72,2.9
 2026-08-01,services,Services,5,117.14,4.4
 2026-08-01,dspi,Domestic supply prices (all items),6,134.71,8.6
-2026-09-01,ppi,Producer prices (all items),0,129.78,7.7
-2026-09-01,agri,"Agricultural, forestry and fishery products",1,128.8,3.3
-2026-09-01,mining,Mining products,2,125.04,-0.2
-2026-09-01,manufacturing,Manufactured products,3,138.24,12.0
-2026-09-01,utilities,"Electricity, gas, water and waste",4,154.69,3.1
-2026-09-01,services,Services,5,117.04,3.9
-2026-09-01,dspi,Domestic supply prices (all items),6,134.68,8.5
+2026-09-01,ppi,Producer prices (all items),0,129.76,7.6
+2026-09-01,agri,"Agricultural, forestry and fishery products",1,128.18,2.8
+2026-09-01,mining,Mining products,2,124.22,-0.8
+2026-09-01,manufacturing,Manufactured products,3,138.27,12.0
+2026-09-01,utilities,"Electricity, gas, water and waste",4,154.37,2.9
+2026-09-01,services,Services,5,117.05,3.9
+2026-09-01,dspi,Domestic supply prices (all items),6,134.7,8.5
+2026-10-01,ppi,Producer prices (all items),0,129.66,7.2
+2026-10-01,agri,"Agricultural, forestry and fishery products",1,117.54,-1.6
+2026-10-01,mining,Mining products,2,124.01,-1.9
+2026-10-01,manufacturing,Manufactured products,3,138.74,11.6
+2026-10-01,utilities,"Electricity, gas, water and waste",4,154.7,3.7
+2026-10-01,services,Services,5,117.04,3.4
+2026-10-01,dspi,Domestic supply prices (all items),6,135.58,8.2

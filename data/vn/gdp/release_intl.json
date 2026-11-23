@@ -1,6 +1,6 @@
 {
- "code": "X-9/24/2026-2026-10-08",
- "label": "IMF WEO 1980-2031 (update 9/24/2026); WDI 1985-2025 (updated 2026-10-08)",
+ "code": "X-9/24/2026-2026-11-11",
+ "label": "IMF WEO 1980-2031 (update 9/24/2026); WDI 1985-2025 (updated 2026-11-11)",
  "latest_nso_year": 2025,
  "weo_attributes": {
   "SCALE": "0",
@@ -8,8 +8,8 @@
   "OVERLAP": "OL",
   "COUNTRY_UPDATE_DATE": "9/24/2026"
  },
- "wdi_lastupdated": "2026-10-08",
- "fingerprint": "bbbe9a0318260dfc",
+ "wdi_lastupdated": "2026-11-11",
+ "fingerprint": "ef0f5904886a4cf8",
  "rows": 333,
  "long_rows": 333,
  "warnings": [

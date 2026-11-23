@@ -19763,6 +19763,9 @@ date,area,series,code,label,group,order,index,yoy,mom,weight
 2026-10-01,bangkok,food,10000,Bangkok and vicinity: food and non-alcoholic beverages,area,44,107.57,4.68,1.33,
 2026-10-01,bangkok,fresh_food,91000,Bangkok and vicinity: fresh food,area,45,106.96,7.48,4.1,
 2026-10-01,bangkok,energy,92000,Bangkok and vicinity: energy,area,46,105.94,13.37,3.18,
+2026-10-01,lowincome,all,00000,Low-income households,area,47,103.99,3.76,1.08,
+2026-10-01,lowincome,core,93000,Low-income households: core CPI,area,48,103.69,1.61,0.12,
+2026-10-01,lowincome,food,10000,Low-income households: food and non-alcoholic beverages,area,49,105.42,3.93,1.34,
 2026-10-01,national,all,00000,All items,headline,0,103.9,3.9,0.94,100.0
 2026-10-01,national,core,93000,Core CPI,headline,1,103.1,1.58,0.12,69.68
 2026-10-01,national,ex_food_energy,81000,"Excluding food, beverages and energy",measure,2,100.86,0.69,0.09,

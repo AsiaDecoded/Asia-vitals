@@ -1,7 +1,7 @@
 {
- "code": "K2026-09",
- "label": "Sep 2026",
- "latest_month": "2026-09-01",
+ "code": "K2026-10",
+ "label": "Oct 2026",
+ "latest_month": "2026-10-01",
  "weights": {
   "2010": {
    "coicop01": 1904.0,
@@ -20,17 +20,21 @@
    "energy": 749
   }
  },
- "processed_at": "2026-10-29T06:43:21Z",
- "rows": 189,
+ "processed_at": "2026-11-23T08:19:14Z",
+ "rows": 190,
  "warnings": [
   "y/y vs combined index, same base: max gap 0.17pp"
  ],
- "fingerprint": "475a290279681802",
- "long_rows": 189,
+ "fingerprint": "bd5b855d3fa27981",
+ "long_rows": 190,
  "history": [
   {
    "code": "K2026-09",
    "processed_at": "2026-10-29T06:43:21Z"
+  },
+  {
+   "code": "K2026-10",
+   "processed_at": "2026-11-23T08:19:14Z"
   }
  ]
 }

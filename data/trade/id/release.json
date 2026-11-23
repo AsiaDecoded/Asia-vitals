@@ -1,11 +1,11 @@
 {
- "code": "T2026-08h45",
- "label": "2026-08",
- "latest_month": "2026-08-01",
+ "code": "T2026-09h45",
+ "label": "2026-09",
+ "latest_month": "2026-09-01",
  "source": "trade_id",
  "table": "BI SEKI V.11, V.20; BPS WebAPI dataexim",
- "processed_at": "2026-11-18T01:51:15Z",
- "rows": 7325,
+ "processed_at": "2026-11-23T08:53:34Z",
+ "rows": 7353,
  "warnings": [],
  "fetched": 6,
  "history": [
@@ -16,6 +16,10 @@
   {
    "code": "T2026-08h45",
    "processed_at": "2026-11-18T01:51:15Z"
+  },
+  {
+   "code": "T2026-09h45",
+   "processed_at": "2026-11-23T08:53:34Z"
   }
  ]
 }

@@ -219616,3 +219616,452 @@ date,index_type,basis,series,label,level,order,index,mom,yoy,base_break,release_
 2026-09-01,composite,underlying,misc_goods,Miscellaneous goods,section,9,104.2,0.5,2.1,,2026-10-22
 2026-09-01,composite,underlying,transport,Transport,section,10,117.5,-0.4,5.2,,2026-10-22
 2026-09-01,composite,underlying,misc_services,Miscellaneous services,section,11,115.1,1.0,5.3,,2026-10-22
+2026-10-01,a,headline,all,All items,all,0,114.4,0.8,2.0,,2026-11-20
+2026-10-01,a,headline,food,Food,section,1,111.4,-0.2,0.2,,2026-11-20
+2026-10-01,a,headline,meals_out,Meals out and takeaway food,subsection,2,115.6,0.0,0.9,,2026-11-20
+2026-10-01,a,headline,basic_food,Basic food,subsection,3,105.6,-0.5,-1.0,,2026-11-20
+2026-10-01,a,headline,housing,Housing,section,4,114.2,1.9,1.5,,2026-11-20
+2026-10-01,a,headline,egw,"Electricity, gas and water",section,5,168.9,-0.4,13.3,,2026-11-20
+2026-10-01,a,headline,alcohol_tobacco,Alcoholic drinks and tobacco,section,6,158.3,-0.2,-0.7,,2026-11-20
+2026-10-01,a,headline,clothing,Clothing and footwear,section,7,109.8,1.1,1.7,,2026-11-20
+2026-10-01,a,headline,durables,Durable goods,section,8,95.1,0.3,1.5,,2026-11-20
+2026-10-01,a,headline,misc_goods,Miscellaneous goods,section,9,104.2,0.5,1.4,,2026-11-20
+2026-10-01,a,headline,transport,Transport,section,10,112.2,-0.1,3.2,,2026-11-20
+2026-10-01,a,headline,misc_services,Miscellaneous services,section,11,112.4,0.4,5.5,,2026-11-20
+2026-10-01,a,headline,coicop_01,Food and non-alcoholic beverages,coicop,101,105.5,,-1.0,,2026-11-20
+2026-10-01,a,headline,coicop_02,Alcoholic beverages and tobacco,coicop,102,158.3,,-0.7,,2026-11-20
+2026-10-01,a,headline,coicop_03,Clothing and footwear,coicop,103,109.8,,1.7,,2026-11-20
+2026-10-01,a,headline,coicop_04,"Housing, water, electricity, gas and other fuels",coicop,104,118.6,,2.5,,2026-11-20
+2026-10-01,a,headline,coicop_05,"Furnishings, household equipment and routine household maintenance",coicop,105,102.7,,0.9,,2026-11-20
+2026-10-01,a,headline,coicop_06,Health,coicop,106,120.0,,15.9,,2026-11-20
+2026-10-01,a,headline,coicop_07,Transport,coicop,107,112.3,,3.2,,2026-11-20
+2026-10-01,a,headline,coicop_08,Information and communication,coicop,108,89.8,,0.6,,2026-11-20
+2026-10-01,a,headline,coicop_09,"Recreation, sport and culture",coicop,109,117.9,,5.5,,2026-11-20
+2026-10-01,a,headline,coicop_10,Education services,coicop,110,117.9,,3.4,,2026-11-20
+2026-10-01,a,headline,coicop_11,Restaurants and accommodation services,coicop,111,115.6,,1.0,,2026-11-20
+2026-10-01,a,headline,coicop_12,Insurance and financial services,coicop,112,112.5,,1.5,,2026-11-20
+2026-10-01,a,headline,coicop_13,"Personal care, social protection and miscellaneous goods and services",coicop,113,112.6,,0.8,,2026-11-20
+2026-10-01,a,headline,g1,Meals out and takeaway food,group,201,115.6,0.0,0.9,,2026-11-20
+2026-10-01,a,headline,g2,Rice,group,202,103.0,-0.8,-1.3,,2026-11-20
+2026-10-01,a,headline,g3,Other cereals and cereal preparations,group,203,106.7,-0.1,-0.4,,2026-11-20
+2026-10-01,a,headline,g4,"Bread, cakes, biscuits and pastries",group,204,118.6,0.1,-0.3,,2026-11-20
+2026-10-01,a,headline,g5,Salt-water fish,group,205,109.2,-1.3,0.7,,2026-11-20
+2026-10-01,a,headline,g6,Fresh-water fish,group,206,128.6,0.1,1.6,,2026-11-20
+2026-10-01,a,headline,g7,Other fresh seafood,group,207,114.2,0.9,5.8,,2026-11-20
+2026-10-01,a,headline,g8,Processed sea products,group,208,107.7,0.0,-0.5,,2026-11-20
+2026-10-01,a,headline,g9,Pork,group,209,77.8,-0.4,-2.2,,2026-11-20
+2026-10-01,a,headline,g10,Beef,group,210,124.2,0.5,2.1,,2026-11-20
+2026-10-01,a,headline,g11,Poultry,group,211,107.1,-0.6,-2.5,,2026-11-20
+2026-10-01,a,headline,g12,Frozen meat,group,212,108.2,0.3,1.5,,2026-11-20
+2026-10-01,a,headline,g13,Other meat,group,213,111.0,1.4,2.6,,2026-11-20
+2026-10-01,a,headline,g14,Vegetables,group,214,99.1,-2.8,-7.9,,2026-11-20
+2026-10-01,a,headline,g15,Fruits,group,215,133.1,-0.9,3.1,,2026-11-20
+2026-10-01,a,headline,g16,Dairy products,group,216,101.2,0.2,-1.1,,2026-11-20
+2026-10-01,a,headline,g17,Eggs,group,217,111.2,1.3,2.0,,2026-11-20
+2026-10-01,a,headline,g18,Edible oils,group,218,103.5,0.4,-1.8,,2026-11-20
+2026-10-01,a,headline,g19,Non-alcoholic beverages,group,219,102.1,-0.2,-2.9,,2026-11-20
+2026-10-01,a,headline,g20,Confectionery and snacks,group,220,111.1,0.2,0.4,,2026-11-20
+2026-10-01,a,headline,g21,Condiments and sauces,group,221,110.5,-0.1,-0.6,,2026-11-20
+2026-10-01,a,headline,g22,Other food,group,222,111.0,0.5,-1.0,,2026-11-20
+2026-10-01,a,headline,g23,"Rent, including rates and government rent",group,223,113.8,2.1,1.4,,2026-11-20
+2026-10-01,a,headline,g23_1,Private housing rent,subgroup,223.1,103.5,1.0,1.3,,2026-11-20
+2026-10-01,a,headline,g23_2,Public housing rent,subgroup,223.2,188.4,8.7,2.0,,2026-11-20
+2026-10-01,a,headline,g24,Management fees and other housing expenses,group,224,121.9,0.1,2.8,,2026-11-20
+2026-10-01,a,headline,g25,Electricity,group,225,199.6,0.6,16.4,,2026-11-20
+2026-10-01,a,headline,g26,Towngas,group,226,123.5,-3.6,9.6,,2026-11-20
+2026-10-01,a,headline,g27,Liquefied petroleum gas and other fuel,group,227,144.2,0.8,11.9,,2026-11-20
+2026-10-01,a,headline,g28,Water and sewage charges,group,228,100.0,0.0,0.0,,2026-11-20
+2026-10-01,a,headline,g29,Wines and spirits,group,229,97.9,0.9,0.4,,2026-11-20
+2026-10-01,a,headline,g30,Beer,group,230,97.1,-2.1,-5.2,,2026-11-20
+2026-10-01,a,headline,g31,Cigarettes,group,231,174.7,0.0,0.0,,2026-11-20
+2026-10-01,a,headline,g32,Men's clothing,group,232,117.2,1.1,3.6,,2026-11-20
+2026-10-01,a,headline,g33,Women's clothing,group,233,111.7,1.9,2.5,,2026-11-20
+2026-10-01,a,headline,g34,Children's and infants' clothing,group,234,114.5,0.4,2.9,,2026-11-20
+2026-10-01,a,headline,g35,Other clothing,group,235,98.6,1.6,1.0,,2026-11-20
+2026-10-01,a,headline,g36,Men's footwear,group,236,102.0,-2.5,2.9,,2026-11-20
+2026-10-01,a,headline,g37,Women's footwear,group,237,98.9,0.8,-3.6,,2026-11-20
+2026-10-01,a,headline,g38,Children's and infants' footwear,group,238,90.2,1.9,-7.2,,2026-11-20
+2026-10-01,a,headline,g39,Furniture,group,239,104.1,0.5,0.8,,2026-11-20
+2026-10-01,a,headline,g40,"Home appliances, electric and gas",group,240,93.8,0.1,-0.8,,2026-11-20
+2026-10-01,a,headline,g41,Video and sound equipment,group,241,70.8,-1.0,0.3,,2026-11-20
+2026-10-01,a,headline,g42,Information technology and telecommunications equipment,group,242,94.4,1.3,6.5,,2026-11-20
+2026-10-01,a,headline,g43,Tableware and kitchen utensils,group,243,98.1,-0.8,2.6,,2026-11-20
+2026-10-01,a,headline,g44,"Watches, clocks, cameras and optical goods",group,244,104.2,-0.3,0.9,,2026-11-20
+2026-10-01,a,headline,g45,"Travel goods, handbags and other personal effects",group,245,106.3,-0.9,-5.9,,2026-11-20
+2026-10-01,a,headline,g46,Other durable goods,group,246,104.4,0.4,-0.6,,2026-11-20
+2026-10-01,a,headline,g47,Medicines and health products,group,247,92.4,0.8,1.2,,2026-11-20
+2026-10-01,a,headline,g48,"Newspapers, books and stationery",group,248,108.0,-0.8,-0.9,,2026-11-20
+2026-10-01,a,headline,g49,Soft furnishings,group,249,83.3,0.7,0.0,,2026-11-20
+2026-10-01,a,headline,g50,Cosmetics and personal care products,group,250,100.6,1.4,-1.8,,2026-11-20
+2026-10-01,a,headline,g51,Household cleansing tools and supplies,group,251,101.7,-0.9,0.0,,2026-11-20
+2026-10-01,a,headline,g52,Jewellery,group,252,175.9,-2.7,13.9,,2026-11-20
+2026-10-01,a,headline,g53,Toys and hobbies,group,253,95.6,0.2,-1.0,,2026-11-20
+2026-10-01,a,headline,g54,Textbooks,group,254,125.9,0.0,3.7,,2026-11-20
+2026-10-01,a,headline,g55,Other household goods,group,255,106.1,-0.5,1.7,,2026-11-20
+2026-10-01,a,headline,g56,Purchases of and repairs to vehicles,group,256,103.8,0.0,-1.1,,2026-11-20
+2026-10-01,a,headline,g57,Fuels for personal transport equipment,group,257,176.1,3.2,23.2,,2026-11-20
+2026-10-01,a,headline,g58,"Vehicle and driving licences, insurance, instructor's fees, parking fees and road tunnel tolls",group,258,115.0,0.0,1.6,,2026-11-20
+2026-10-01,a,headline,g59,Bus fares,group,259,107.9,0.0,2.0,,2026-11-20
+2026-10-01,a,headline,g60,Tram fares,group,260,119.8,3.7,3.4,,2026-11-20
+2026-10-01,a,headline,g61,Public light bus fares,group,261,108.5,0.4,2.6,,2026-11-20
+2026-10-01,a,headline,g62,Taxi fares,group,262,120.0,0.0,0.0,,2026-11-20
+2026-10-01,a,headline,g63,MTR fares,group,263,103.3,-1.2,-0.6,,2026-11-20
+2026-10-01,a,headline,g64,Ferry fares,group,264,139.1,-0.3,12.4,,2026-11-20
+2026-10-01,a,headline,g65,Other local transport fares,group,265,125.8,0.0,2.8,,2026-11-20
+2026-10-01,a,headline,g66,Inbound and outbound transport fares,group,266,122.2,1.3,11.9,,2026-11-20
+2026-10-01,a,headline,g67,Educational services,group,267,118.0,-0.1,3.3,,2026-11-20
+2026-10-01,a,headline,g68,Health services,group,268,135.4,0.0,18.8,,2026-11-20
+2026-10-01,a,headline,g69,Package holidays,group,269,127.9,3.8,12.3,,2026-11-20
+2026-10-01,a,headline,g70,Other entertainment expenses,group,270,117.4,-1.5,3.4,,2026-11-20
+2026-10-01,a,headline,g71,Household services,group,271,112.2,1.8,2.2,,2026-11-20
+2026-10-01,a,headline,g72,Hair-dressing,group,272,117.3,-0.2,0.1,,2026-11-20
+2026-10-01,a,headline,g73,Beauty treatment and fitness services,group,273,118.6,0.3,1.6,,2026-11-20
+2026-10-01,a,headline,g74,Information and communications services,group,274,89.6,-0.1,-1.5,,2026-11-20
+2026-10-01,a,headline,g75,Other services,group,275,114.4,0.0,1.5,,2026-11-20
+2026-10-01,a,underlying,all,All items,all,0,114.6,0.1,1.7,,2026-11-20
+2026-10-01,a,underlying,food,Food,section,1,111.4,-0.2,0.2,,2026-11-20
+2026-10-01,a,underlying,housing,Housing,section,4,114.2,0.3,1.5,,2026-11-20
+2026-10-01,a,underlying,egw,"Electricity, gas and water",section,5,170.6,-0.4,6.0,,2026-11-20
+2026-10-01,a,underlying,alcohol_tobacco,Alcoholic drinks and tobacco,section,6,158.3,-0.2,-0.7,,2026-11-20
+2026-10-01,a,underlying,clothing,Clothing and footwear,section,7,109.8,1.1,1.7,,2026-11-20
+2026-10-01,a,underlying,durables,Durable goods,section,8,95.1,0.3,1.5,,2026-11-20
+2026-10-01,a,underlying,misc_goods,Miscellaneous goods,section,9,104.2,0.5,1.4,,2026-11-20
+2026-10-01,a,underlying,transport,Transport,section,10,112.2,-0.1,3.2,,2026-11-20
+2026-10-01,a,underlying,misc_services,Miscellaneous services,section,11,112.4,0.4,5.5,,2026-11-20
+2026-10-01,b,headline,all,All items,all,0,110.5,0.5,2.2,,2026-11-20
+2026-10-01,b,headline,food,Food,section,1,112.0,-0.2,0.4,,2026-11-20
+2026-10-01,b,headline,meals_out,Meals out and takeaway food,subsection,2,115.0,0.0,0.9,,2026-11-20
+2026-10-01,b,headline,basic_food,Basic food,subsection,3,106.4,-0.4,-0.6,,2026-11-20
+2026-10-01,b,headline,housing,Housing,section,4,105.2,0.9,1.4,,2026-11-20
+2026-10-01,b,headline,egw,"Electricity, gas and water",section,5,155.4,-0.5,12.3,,2026-11-20
+2026-10-01,b,headline,alcohol_tobacco,Alcoholic drinks and tobacco,section,6,144.0,0.2,-0.7,,2026-11-20
+2026-10-01,b,headline,clothing,Clothing and footwear,section,7,110.6,1.4,1.6,,2026-11-20
+2026-10-01,b,headline,durables,Durable goods,section,8,95.9,0.4,1.6,,2026-11-20
+2026-10-01,b,headline,misc_goods,Miscellaneous goods,section,9,104.3,0.4,1.1,,2026-11-20
+2026-10-01,b,headline,transport,Transport,section,10,118.3,0.3,4.6,,2026-11-20
+2026-10-01,b,headline,misc_services,Miscellaneous services,section,11,115.8,0.5,5.0,,2026-11-20
+2026-10-01,b,headline,coicop_01,Food and non-alcoholic beverages,coicop,101,106.4,,-0.6,,2026-11-20
+2026-10-01,b,headline,coicop_02,Alcoholic beverages and tobacco,coicop,102,144.0,,-0.7,,2026-11-20
+2026-10-01,b,headline,coicop_03,Clothing and footwear,coicop,103,110.6,,1.6,,2026-11-20
+2026-10-01,b,headline,coicop_04,"Housing, water, electricity, gas and other fuels",coicop,104,107.9,,2.1,,2026-11-20
+2026-10-01,b,headline,coicop_05,"Furnishings, household equipment and routine household maintenance",coicop,105,105.7,,1.2,,2026-11-20
+2026-10-01,b,headline,coicop_06,Health,coicop,106,118.4,,11.3,,2026-11-20
+2026-10-01,b,headline,coicop_07,Transport,coicop,107,118.6,,4.7,,2026-11-20
+2026-10-01,b,headline,coicop_08,Information and communication,coicop,108,91.4,,1.8,,2026-11-20
+2026-10-01,b,headline,coicop_09,"Recreation, sport and culture",coicop,109,117.4,,6.6,,2026-11-20
+2026-10-01,b,headline,coicop_10,Education services,coicop,110,121.3,,4.3,,2026-11-20
+2026-10-01,b,headline,coicop_11,Restaurants and accommodation services,coicop,111,115.0,,1.0,,2026-11-20
+2026-10-01,b,headline,coicop_12,Insurance and financial services,coicop,112,111.8,,1.4,,2026-11-20
+2026-10-01,b,headline,coicop_13,"Personal care, social protection and miscellaneous goods and services",coicop,113,113.7,,0.6,,2026-11-20
+2026-10-01,b,headline,g1,Meals out and takeaway food,group,201,115.0,0.0,0.9,,2026-11-20
+2026-10-01,b,headline,g2,Rice,group,202,102.2,-0.8,-1.6,,2026-11-20
+2026-10-01,b,headline,g3,Other cereals and cereal preparations,group,203,106.1,-0.3,-0.8,,2026-11-20
+2026-10-01,b,headline,g4,"Bread, cakes, biscuits and pastries",group,204,118.7,0.1,-0.2,,2026-11-20
+2026-10-01,b,headline,g5,Salt-water fish,group,205,106.7,-0.9,1.1,,2026-11-20
+2026-10-01,b,headline,g6,Fresh-water fish,group,206,127.4,0.0,1.1,,2026-11-20
+2026-10-01,b,headline,g7,Other fresh seafood,group,207,115.7,0.7,4.7,,2026-11-20
+2026-10-01,b,headline,g8,Processed sea products,group,208,107.3,0.0,-0.3,,2026-11-20
+2026-10-01,b,headline,g9,Pork,group,209,78.5,-0.3,-2.3,,2026-11-20
+2026-10-01,b,headline,g10,Beef,group,210,127.3,0.4,1.9,,2026-11-20
+2026-10-01,b,headline,g11,Poultry,group,211,106.1,-0.9,-1.8,,2026-11-20
+2026-10-01,b,headline,g12,Frozen meat,group,212,108.1,0.2,1.7,,2026-11-20
+2026-10-01,b,headline,g13,Other meat,group,213,111.2,2.0,3.2,,2026-11-20
+2026-10-01,b,headline,g14,Vegetables,group,214,99.3,-2.7,-7.0,,2026-11-20
+2026-10-01,b,headline,g15,Fruits,group,215,131.1,-0.9,3.3,,2026-11-20
+2026-10-01,b,headline,g16,Dairy products,group,216,101.0,0.3,-1.0,,2026-11-20
+2026-10-01,b,headline,g17,Eggs,group,217,112.9,2.0,1.1,,2026-11-20
+2026-10-01,b,headline,g18,Edible oils,group,218,104.4,0.2,-2.4,,2026-11-20
+2026-10-01,b,headline,g19,Non-alcoholic beverages,group,219,102.0,-0.1,-2.5,,2026-11-20
+2026-10-01,b,headline,g20,Confectionery and snacks,group,220,110.4,0.1,-0.1,,2026-11-20
+2026-10-01,b,headline,g21,Condiments and sauces,group,221,109.9,-0.2,-0.5,,2026-11-20
+2026-10-01,b,headline,g22,Other food,group,222,110.2,0.4,-0.9,,2026-11-20
+2026-10-01,b,headline,g23,"Rent, including rates and government rent",group,223,103.9,1.0,1.3,,2026-11-20
+2026-10-01,b,headline,g23_1,Private housing rent,subgroup,223.1,102.8,0.9,1.3,,2026-11-20
+2026-10-01,b,headline,g23_2,Public housing rent,subgroup,223.2,187.7,8.7,2.0,,2026-11-20
+2026-10-01,b,headline,g24,Management fees and other housing expenses,group,224,121.0,0.1,2.6,,2026-11-20
+2026-10-01,b,headline,g25,Electricity,group,225,176.9,0.4,15.1,,2026-11-20
+2026-10-01,b,headline,g26,Towngas,group,226,123.6,-3.6,9.6,,2026-11-20
+2026-10-01,b,headline,g27,Liquefied petroleum gas and other fuel,group,227,144.3,0.9,12.1,,2026-11-20
+2026-10-01,b,headline,g28,Water and sewage charges,group,228,100.0,0.0,0.0,,2026-11-20
+2026-10-01,b,headline,g29,Wines and spirits,group,229,95.0,1.1,-0.2,,2026-11-20
+2026-10-01,b,headline,g30,Beer,group,230,96.9,-1.8,-4.9,,2026-11-20
+2026-10-01,b,headline,g31,Cigarettes,group,231,174.7,0.0,0.0,,2026-11-20
+2026-10-01,b,headline,g32,Men's clothing,group,232,119.7,2.4,3.9,,2026-11-20
+2026-10-01,b,headline,g33,Women's clothing,group,233,112.1,1.8,1.5,,2026-11-20
+2026-10-01,b,headline,g34,Children's and infants' clothing,group,234,113.2,0.9,2.0,,2026-11-20
+2026-10-01,b,headline,g35,Other clothing,group,235,99.8,0.6,1.5,,2026-11-20
+2026-10-01,b,headline,g36,Men's footwear,group,236,101.4,-2.4,2.4,,2026-11-20
+2026-10-01,b,headline,g37,Women's footwear,group,237,93.9,0.9,-2.3,,2026-11-20
+2026-10-01,b,headline,g38,Children's and infants' footwear,group,238,93.8,-1.3,-4.5,,2026-11-20
+2026-10-01,b,headline,g39,Furniture,group,239,103.8,0.5,0.2,,2026-11-20
+2026-10-01,b,headline,g40,"Home appliances, electric and gas",group,240,93.4,0.1,-0.8,,2026-11-20
+2026-10-01,b,headline,g41,Video and sound equipment,group,241,71.9,-0.8,0.2,,2026-11-20
+2026-10-01,b,headline,g42,Information technology and telecommunications equipment,group,242,95.2,1.3,5.9,,2026-11-20
+2026-10-01,b,headline,g43,Tableware and kitchen utensils,group,243,100.4,-1.3,1.8,,2026-11-20
+2026-10-01,b,headline,g44,"Watches, clocks, cameras and optical goods",group,244,101.8,-0.3,2.0,,2026-11-20
+2026-10-01,b,headline,g45,"Travel goods, handbags and other personal effects",group,245,104.7,-0.9,-7.2,,2026-11-20
+2026-10-01,b,headline,g46,Other durable goods,group,246,108.3,0.2,-0.7,,2026-11-20
+2026-10-01,b,headline,g47,Medicines and health products,group,247,95.2,0.8,1.7,,2026-11-20
+2026-10-01,b,headline,g48,"Newspapers, books and stationery",group,248,104.5,-0.8,-1.2,,2026-11-20
+2026-10-01,b,headline,g49,Soft furnishings,group,249,82.6,1.1,0.5,,2026-11-20
+2026-10-01,b,headline,g50,Cosmetics and personal care products,group,250,101.2,1.6,-2.5,,2026-11-20
+2026-10-01,b,headline,g51,Household cleansing tools and supplies,group,251,101.5,-0.9,0.2,,2026-11-20
+2026-10-01,b,headline,g52,Jewellery,group,252,170.0,-2.9,12.1,,2026-11-20
+2026-10-01,b,headline,g53,Toys and hobbies,group,253,95.1,0.1,-1.0,,2026-11-20
+2026-10-01,b,headline,g54,Textbooks,group,254,126.1,0.0,3.6,,2026-11-20
+2026-10-01,b,headline,g55,Other household goods,group,255,104.6,-0.6,0.5,,2026-11-20
+2026-10-01,b,headline,g56,Purchases of and repairs to vehicles,group,256,109.5,-0.1,-1.7,,2026-11-20
+2026-10-01,b,headline,g57,Fuels for personal transport equipment,group,257,175.5,3.0,22.8,,2026-11-20
+2026-10-01,b,headline,g58,"Vehicle and driving licences, insurance, instructor's fees, parking fees and road tunnel tolls",group,258,115.3,0.0,1.9,,2026-11-20
+2026-10-01,b,headline,g59,Bus fares,group,259,108.0,0.0,2.0,,2026-11-20
+2026-10-01,b,headline,g60,Tram fares,group,260,119.8,3.7,3.4,,2026-11-20
+2026-10-01,b,headline,g61,Public light bus fares,group,261,108.6,0.4,2.6,,2026-11-20
+2026-10-01,b,headline,g62,Taxi fares,group,262,119.9,0.0,0.0,,2026-11-20
+2026-10-01,b,headline,g63,MTR fares,group,263,103.6,-1.3,-0.7,,2026-11-20
+2026-10-01,b,headline,g64,Ferry fares,group,264,139.1,-0.3,12.4,,2026-11-20
+2026-10-01,b,headline,g65,Other local transport fares,group,265,128.0,0.0,2.6,,2026-11-20
+2026-10-01,b,headline,g66,Inbound and outbound transport fares,group,266,122.0,1.4,12.3,,2026-11-20
+2026-10-01,b,headline,g67,Educational services,group,267,121.0,-0.2,4.0,,2026-11-20
+2026-10-01,b,headline,g68,Health services,group,268,128.4,0.0,11.9,,2026-11-20
+2026-10-01,b,headline,g69,Package holidays,group,269,124.4,3.7,14.3,,2026-11-20
+2026-10-01,b,headline,g70,Other entertainment expenses,group,270,118.3,-1.0,4.1,,2026-11-20
+2026-10-01,b,headline,g71,Household services,group,271,113.0,1.9,2.2,,2026-11-20
+2026-10-01,b,headline,g72,Hair-dressing,group,272,117.2,-0.2,0.2,,2026-11-20
+2026-10-01,b,headline,g73,Beauty treatment and fitness services,group,273,118.7,0.4,1.9,,2026-11-20
+2026-10-01,b,headline,g74,Information and communications services,group,274,90.9,-0.1,-1.3,,2026-11-20
+2026-10-01,b,headline,g75,Other services,group,275,113.2,0.0,1.6,,2026-11-20
+2026-10-01,b,underlying,all,All items,all,0,110.6,0.2,2.1,,2026-11-20
+2026-10-01,b,underlying,food,Food,section,1,112.0,-0.2,0.4,,2026-11-20
+2026-10-01,b,underlying,housing,Housing,section,4,105.2,0.1,1.4,,2026-11-20
+2026-10-01,b,underlying,egw,"Electricity, gas and water",section,5,155.7,-0.5,6.8,,2026-11-20
+2026-10-01,b,underlying,alcohol_tobacco,Alcoholic drinks and tobacco,section,6,144.0,0.2,-0.7,,2026-11-20
+2026-10-01,b,underlying,clothing,Clothing and footwear,section,7,110.6,1.4,1.6,,2026-11-20
+2026-10-01,b,underlying,durables,Durable goods,section,8,95.9,0.4,1.6,,2026-11-20
+2026-10-01,b,underlying,misc_goods,Miscellaneous goods,section,9,104.3,0.4,1.1,,2026-11-20
+2026-10-01,b,underlying,transport,Transport,section,10,118.3,0.3,4.6,,2026-11-20
+2026-10-01,b,underlying,misc_services,Miscellaneous services,section,11,115.8,0.5,5.0,,2026-11-20
+2026-10-01,c,headline,all,All items,all,0,110.5,0.4,2.3,,2026-11-20
+2026-10-01,c,headline,food,Food,section,1,112.0,-0.2,0.4,,2026-11-20
+2026-10-01,c,headline,meals_out,Meals out and takeaway food,subsection,2,114.4,0.0,0.9,,2026-11-20
+2026-10-01,c,headline,basic_food,Basic food,subsection,3,107.1,-0.4,-0.7,,2026-11-20
+2026-10-01,c,headline,housing,Housing,section,4,103.6,0.6,1.1,,2026-11-20
+2026-10-01,c,headline,egw,"Electricity, gas and water",section,5,148.8,-0.5,12.2,,2026-11-20
+2026-10-01,c,headline,alcohol_tobacco,Alcoholic drinks and tobacco,section,6,133.6,0.4,1.1,,2026-11-20
+2026-10-01,c,headline,clothing,Clothing and footwear,section,7,110.3,1.1,-1.4,,2026-11-20
+2026-10-01,c,headline,durables,Durable goods,section,8,97.8,0.1,1.1,,2026-11-20
+2026-10-01,c,headline,misc_goods,Miscellaneous goods,section,9,105.2,0.0,1.7,,2026-11-20
+2026-10-01,c,headline,transport,Transport,section,10,121.1,0.4,5.1,,2026-11-20
+2026-10-01,c,headline,misc_services,Miscellaneous services,section,11,117.8,0.6,4.7,,2026-11-20
+2026-10-01,c,headline,coicop_01,Food and non-alcoholic beverages,coicop,101,107.1,,-0.7,,2026-11-20
+2026-10-01,c,headline,coicop_02,Alcoholic beverages and tobacco,coicop,102,133.6,,1.1,,2026-11-20
+2026-10-01,c,headline,coicop_03,Clothing and footwear,coicop,103,110.3,,-1.4,,2026-11-20
+2026-10-01,c,headline,coicop_04,"Housing, water, electricity, gas and other fuels",coicop,104,105.6,,1.7,,2026-11-20
+2026-10-01,c,headline,coicop_05,"Furnishings, household equipment and routine household maintenance",coicop,105,107.6,,1.5,,2026-11-20
+2026-10-01,c,headline,coicop_06,Health,coicop,106,115.0,,6.4,,2026-11-20
+2026-10-01,c,headline,coicop_07,Transport,coicop,107,121.6,,5.2,,2026-11-20
+2026-10-01,c,headline,coicop_08,Information and communication,coicop,108,92.6,,2.7,,2026-11-20
+2026-10-01,c,headline,coicop_09,"Recreation, sport and culture",coicop,109,116.9,,6.5,,2026-11-20
+2026-10-01,c,headline,coicop_10,Education services,coicop,110,124.8,,4.8,,2026-11-20
+2026-10-01,c,headline,coicop_11,Restaurants and accommodation services,coicop,111,114.6,,1.0,,2026-11-20
+2026-10-01,c,headline,coicop_12,Insurance and financial services,coicop,112,110.9,,1.3,,2026-11-20
+2026-10-01,c,headline,coicop_13,"Personal care, social protection and miscellaneous goods and services",coicop,113,114.3,,0.4,,2026-11-20
+2026-10-01,c,headline,g1,Meals out and takeaway food,group,201,114.4,0.0,0.9,,2026-11-20
+2026-10-01,c,headline,g2,Rice,group,202,101.5,-0.8,-2.2,,2026-11-20
+2026-10-01,c,headline,g3,Other cereals and cereal preparations,group,203,105.3,-0.5,-0.9,,2026-11-20
+2026-10-01,c,headline,g4,"Bread, cakes, biscuits and pastries",group,204,118.8,0.1,0.1,,2026-11-20
+2026-10-01,c,headline,g5,Salt-water fish,group,205,106.1,-0.9,1.5,,2026-11-20
+2026-10-01,c,headline,g6,Fresh-water fish,group,206,126.3,0.1,1.5,,2026-11-20
+2026-10-01,c,headline,g7,Other fresh seafood,group,207,112.6,0.4,4.4,,2026-11-20
+2026-10-01,c,headline,g8,Processed sea products,group,208,108.8,0.1,0.0,,2026-11-20
+2026-10-01,c,headline,g9,Pork,group,209,79.3,-0.3,-2.6,,2026-11-20
+2026-10-01,c,headline,g10,Beef,group,210,133.5,0.8,1.9,,2026-11-20
+2026-10-01,c,headline,g11,Poultry,group,211,106.2,-1.6,-2.4,,2026-11-20
+2026-10-01,c,headline,g12,Frozen meat,group,212,107.3,-0.2,1.0,,2026-11-20
+2026-10-01,c,headline,g13,Other meat,group,213,110.5,2.0,2.9,,2026-11-20
+2026-10-01,c,headline,g14,Vegetables,group,214,99.8,-2.5,-6.5,,2026-11-20
+2026-10-01,c,headline,g15,Fruits,group,215,128.0,-1.0,0.6,,2026-11-20
+2026-10-01,c,headline,g16,Dairy products,group,216,100.0,-0.2,-2.2,,2026-11-20
+2026-10-01,c,headline,g17,Eggs,group,217,113.7,2.9,1.1,,2026-11-20
+2026-10-01,c,headline,g18,Edible oils,group,218,105.5,-0.2,-2.5,,2026-11-20
+2026-10-01,c,headline,g19,Non-alcoholic beverages,group,219,102.7,-0.5,-2.3,,2026-11-20
+2026-10-01,c,headline,g20,Confectionery and snacks,group,220,112.6,0.4,0.6,,2026-11-20
+2026-10-01,c,headline,g21,Condiments and sauces,group,221,110.0,-0.4,-0.9,,2026-11-20
+2026-10-01,c,headline,g22,Other food,group,222,108.7,0.4,-0.1,,2026-11-20
+2026-10-01,c,headline,g23,"Rent, including rates and government rent",group,223,101.9,0.6,1.0,,2026-11-20
+2026-10-01,c,headline,g23_1,Private housing rent,subgroup,223.1,101.9,0.6,1.0,,2026-11-20
+2026-10-01,c,headline,g24,Management fees and other housing expenses,group,224,119.6,0.1,2.3,,2026-11-20
+2026-10-01,c,headline,g25,Electricity,group,225,165.7,0.3,14.5,,2026-11-20
+2026-10-01,c,headline,g26,Towngas,group,226,123.7,-3.6,9.6,,2026-11-20
+2026-10-01,c,headline,g27,Liquefied petroleum gas and other fuel,group,227,144.5,0.9,12.2,,2026-11-20
+2026-10-01,c,headline,g28,Water and sewage charges,group,228,100.0,0.0,0.0,,2026-11-20
+2026-10-01,c,headline,g29,Wines and spirits,group,229,94.0,0.6,2.4,,2026-11-20
+2026-10-01,c,headline,g30,Beer,group,230,98.4,-1.5,-2.9,,2026-11-20
+2026-10-01,c,headline,g31,Cigarettes,group,231,174.7,0.0,0.0,,2026-11-20
+2026-10-01,c,headline,g32,Men's clothing,group,232,116.1,1.7,-1.4,,2026-11-20
+2026-10-01,c,headline,g33,Women's clothing,group,233,111.8,1.4,-2.1,,2026-11-20
+2026-10-01,c,headline,g34,Children's and infants' clothing,group,234,114.1,0.9,-2.0,,2026-11-20
+2026-10-01,c,headline,g35,Other clothing,group,235,93.9,3.6,4.3,,2026-11-20
+2026-10-01,c,headline,g36,Men's footwear,group,236,103.6,-1.4,2.8,,2026-11-20
+2026-10-01,c,headline,g37,Women's footwear,group,237,99.2,0.7,-1.5,,2026-11-20
+2026-10-01,c,headline,g38,Children's and infants' footwear,group,238,86.7,-0.8,-5.3,,2026-11-20
+2026-10-01,c,headline,g39,Furniture,group,239,104.8,0.5,0.4,,2026-11-20
+2026-10-01,c,headline,g40,"Home appliances, electric and gas",group,240,91.2,0.1,-1.2,,2026-11-20
+2026-10-01,c,headline,g41,Video and sound equipment,group,241,79.9,-1.2,0.0,,2026-11-20
+2026-10-01,c,headline,g42,Information technology and telecommunications equipment,group,242,95.2,0.8,6.0,,2026-11-20
+2026-10-01,c,headline,g43,Tableware and kitchen utensils,group,243,96.7,-0.7,2.7,,2026-11-20
+2026-10-01,c,headline,g44,"Watches, clocks, cameras and optical goods",group,244,106.0,-0.2,1.2,,2026-11-20
+2026-10-01,c,headline,g45,"Travel goods, handbags and other personal effects",group,245,104.4,-1.3,-8.3,,2026-11-20
+2026-10-01,c,headline,g46,Other durable goods,group,246,98.7,0.6,-1.4,,2026-11-20
+2026-10-01,c,headline,g47,Medicines and health products,group,247,93.2,0.7,2.1,,2026-11-20
+2026-10-01,c,headline,g48,"Newspapers, books and stationery",group,248,102.8,-0.5,-0.3,,2026-11-20
+2026-10-01,c,headline,g49,Soft furnishings,group,249,82.8,-0.3,-1.5,,2026-11-20
+2026-10-01,c,headline,g50,Cosmetics and personal care products,group,250,100.9,1.4,-2.4,,2026-11-20
+2026-10-01,c,headline,g51,Household cleansing tools and supplies,group,251,100.6,-1.0,-0.2,,2026-11-20
+2026-10-01,c,headline,g52,Jewellery,group,252,130.1,-2.8,7.2,,2026-11-20
+2026-10-01,c,headline,g53,Toys and hobbies,group,253,93.4,0.1,-0.6,,2026-11-20
+2026-10-01,c,headline,g54,Textbooks,group,254,126.6,0.0,3.7,,2026-11-20
+2026-10-01,c,headline,g55,Other household goods,group,255,102.0,-0.8,1.4,,2026-11-20
+2026-10-01,c,headline,g56,Purchases of and repairs to vehicles,group,256,115.2,-0.2,-0.5,,2026-11-20
+2026-10-01,c,headline,g57,Fuels for personal transport equipment,group,257,175.5,3.1,22.8,,2026-11-20
+2026-10-01,c,headline,g58,"Vehicle and driving licences, insurance, instructor's fees, parking fees and road tunnel tolls",group,258,113.9,0.0,1.8,,2026-11-20
+2026-10-01,c,headline,g59,Bus fares,group,259,108.8,0.2,2.3,,2026-11-20
+2026-10-01,c,headline,g60,Tram fares,group,260,119.8,3.7,3.4,,2026-11-20
+2026-10-01,c,headline,g61,Public light bus fares,group,261,108.5,0.4,2.6,,2026-11-20
+2026-10-01,c,headline,g62,Taxi fares,group,262,119.7,0.0,0.0,,2026-11-20
+2026-10-01,c,headline,g63,MTR fares,group,263,103.5,-1.4,-0.7,,2026-11-20
+2026-10-01,c,headline,g64,Ferry fares,group,264,139.1,-0.3,12.4,,2026-11-20
+2026-10-01,c,headline,g65,Other local transport fares,group,265,128.0,0.0,2.6,,2026-11-20
+2026-10-01,c,headline,g66,Inbound and outbound transport fares,group,266,122.5,1.4,12.4,,2026-11-20
+2026-10-01,c,headline,g67,Educational services,group,267,123.8,-0.1,4.4,,2026-11-20
+2026-10-01,c,headline,g68,Health services,group,268,122.0,0.0,6.3,,2026-11-20
+2026-10-01,c,headline,g69,Package holidays,group,269,121.5,3.3,13.0,,2026-11-20
+2026-10-01,c,headline,g70,Other entertainment expenses,group,270,134.9,-0.9,4.8,,2026-11-20
+2026-10-01,c,headline,g71,Household services,group,271,112.8,1.9,2.1,,2026-11-20
+2026-10-01,c,headline,g72,Hair-dressing,group,272,117.8,-0.2,0.3,,2026-11-20
+2026-10-01,c,headline,g73,Beauty treatment and fitness services,group,273,119.6,0.5,2.0,,2026-11-20
+2026-10-01,c,headline,g74,Information and communications services,group,274,91.5,-0.1,-1.1,,2026-11-20
+2026-10-01,c,headline,g75,Other services,group,275,109.7,0.0,1.2,,2026-11-20
+2026-10-01,c,underlying,all,All items,all,0,110.5,0.2,2.2,,2026-11-20
+2026-10-01,c,underlying,food,Food,section,1,112.0,-0.2,0.4,,2026-11-20
+2026-10-01,c,underlying,housing,Housing,section,4,103.6,0.0,1.1,,2026-11-20
+2026-10-01,c,underlying,egw,"Electricity, gas and water",section,5,148.6,-0.5,7.9,,2026-11-20
+2026-10-01,c,underlying,alcohol_tobacco,Alcoholic drinks and tobacco,section,6,133.6,0.4,1.1,,2026-11-20
+2026-10-01,c,underlying,clothing,Clothing and footwear,section,7,110.3,1.1,-1.4,,2026-11-20
+2026-10-01,c,underlying,durables,Durable goods,section,8,97.8,0.1,1.1,,2026-11-20
+2026-10-01,c,underlying,misc_goods,Miscellaneous goods,section,9,105.2,0.0,1.7,,2026-11-20
+2026-10-01,c,underlying,transport,Transport,section,10,121.1,0.4,5.1,,2026-11-20
+2026-10-01,c,underlying,misc_services,Miscellaneous services,section,11,117.8,0.6,4.7,,2026-11-20
+2026-10-01,composite,headline,all,All items,all,0,111.8,0.6,2.2,,2026-11-20
+2026-10-01,composite,headline,ex_food_energy,CPI less food and non-alcoholic beverages and energy (calculated),calculated,0.5,110.6,,2.1,,2026-11-20
+2026-10-01,composite,headline,food,Food,section,1,111.8,-0.2,0.3,,2026-11-20
+2026-10-01,composite,headline,meals_out,Meals out and takeaway food,subsection,2,115.0,0.0,0.9,,2026-11-20
+2026-10-01,composite,headline,basic_food,Basic food,subsection,3,106.2,-0.5,-0.8,,2026-11-20
+2026-10-01,composite,headline,housing,Housing,section,4,107.8,1.2,1.4,,2026-11-20
+2026-10-01,composite,headline,egw,"Electricity, gas and water",section,5,160.3,-0.5,12.7,,2026-11-20
+2026-10-01,composite,headline,energy,Energy (calculated),calculated,5.5,168.42,,15.4,,2026-11-20
+2026-10-01,composite,headline,alcohol_tobacco,Alcoholic drinks and tobacco,section,6,149.6,0.0,-0.4,,2026-11-20
+2026-10-01,composite,headline,clothing,Clothing and footwear,section,7,110.3,1.2,0.5,,2026-11-20
+2026-10-01,composite,headline,durables,Durable goods,section,8,96.4,0.3,1.4,,2026-11-20
+2026-10-01,composite,headline,misc_goods,Miscellaneous goods,section,9,104.5,0.3,1.4,,2026-11-20
+2026-10-01,composite,headline,transport,Transport,section,10,117.8,0.2,4.5,,2026-11-20
+2026-10-01,composite,headline,misc_services,Miscellaneous services,section,11,115.7,0.5,5.0,,2026-11-20
+2026-10-01,composite,headline,coicop_01,Food and non-alcoholic beverages,coicop,101,106.2,,-0.8,,2026-11-20
+2026-10-01,composite,headline,coicop_02,Alcoholic beverages and tobacco,coicop,102,149.6,,-0.4,,2026-11-20
+2026-10-01,composite,headline,coicop_03,Clothing and footwear,coicop,103,110.3,,0.5,,2026-11-20
+2026-10-01,composite,headline,coicop_04,"Housing, water, electricity, gas and other fuels",coicop,104,111.0,,2.1,,2026-11-20
+2026-10-01,composite,headline,coicop_05,"Furnishings, household equipment and routine household maintenance",coicop,105,105.8,,1.2,,2026-11-20
+2026-10-01,composite,headline,coicop_06,Health,coicop,106,117.6,,10.8,,2026-11-20
+2026-10-01,composite,headline,coicop_07,Transport,coicop,107,118.1,,4.5,,2026-11-20
+2026-10-01,composite,headline,coicop_08,Information and communication,coicop,108,91.2,,1.6,,2026-11-20
+2026-10-01,composite,headline,coicop_09,"Recreation, sport and culture",coicop,109,117.3,,6.4,,2026-11-20
+2026-10-01,composite,headline,coicop_10,Education services,coicop,110,121.9,,4.3,,2026-11-20
+2026-10-01,composite,headline,coicop_11,Restaurants and accommodation services,coicop,111,115.1,,1.0,,2026-11-20
+2026-10-01,composite,headline,coicop_12,Insurance and financial services,coicop,112,111.7,,1.4,,2026-11-20
+2026-10-01,composite,headline,coicop_13,"Personal care, social protection and miscellaneous goods and services",coicop,113,113.7,,0.6,,2026-11-20
+2026-10-01,composite,headline,g1,Meals out and takeaway food,group,201,115.0,0.0,0.9,,2026-11-20
+2026-10-01,composite,headline,g2,Rice,group,202,102.5,-0.8,-1.5,,2026-11-20
+2026-10-01,composite,headline,g3,Other cereals and cereal preparations,group,203,106.3,-0.3,-0.6,,2026-11-20
+2026-10-01,composite,headline,g4,"Bread, cakes, biscuits and pastries",group,204,118.7,0.1,-0.2,,2026-11-20
+2026-10-01,composite,headline,g5,Salt-water fish,group,205,107.7,-1.1,1.0,,2026-11-20
+2026-10-01,composite,headline,g6,Fresh-water fish,group,206,127.9,0.1,1.5,,2026-11-20
+2026-10-01,composite,headline,g7,Other fresh seafood,group,207,114.5,0.7,5.0,,2026-11-20
+2026-10-01,composite,headline,g8,Processed sea products,group,208,107.8,0.0,-0.3,,2026-11-20
+2026-10-01,composite,headline,g9,Pork,group,209,78.3,-0.3,-2.3,,2026-11-20
+2026-10-01,composite,headline,g10,Beef,group,210,127.7,0.6,2.0,,2026-11-20
+2026-10-01,composite,headline,g11,Poultry,group,211,106.5,-0.9,-2.3,,2026-11-20
+2026-10-01,composite,headline,g12,Frozen meat,group,212,108.0,0.1,1.5,,2026-11-20
+2026-10-01,composite,headline,g13,Other meat,group,213,111.0,1.7,2.9,,2026-11-20
+2026-10-01,composite,headline,g14,Vegetables,group,214,99.3,-2.7,-7.3,,2026-11-20
+2026-10-01,composite,headline,g15,Fruits,group,215,131.4,-0.9,2.6,,2026-11-20
+2026-10-01,composite,headline,g16,Dairy products,group,216,100.8,0.2,-1.4,,2026-11-20
+2026-10-01,composite,headline,g17,Eggs,group,217,112.2,1.8,1.5,,2026-11-20
+2026-10-01,composite,headline,g18,Edible oils,group,218,104.1,0.2,-2.1,,2026-11-20
+2026-10-01,composite,headline,g19,Non-alcoholic beverages,group,219,102.1,-0.2,-2.6,,2026-11-20
+2026-10-01,composite,headline,g20,Confectionery and snacks,group,220,111.2,0.2,0.2,,2026-11-20
+2026-10-01,composite,headline,g21,Condiments and sauces,group,221,110.1,-0.2,-0.6,,2026-11-20
+2026-10-01,composite,headline,g22,Other food,group,222,110.2,0.4,-0.8,,2026-11-20
+2026-10-01,composite,headline,g23,"Rent, including rates and government rent",group,223,106.8,1.3,1.3,,2026-11-20
+2026-10-01,composite,headline,g23_1,Private housing rent,subgroup,223.1,102.7,0.9,1.2,,2026-11-20
+2026-10-01,composite,headline,g23_2,Public housing rent,subgroup,223.2,188.3,8.7,2.0,,2026-11-20
+2026-10-01,composite,headline,g24,Management fees and other housing expenses,group,224,120.7,0.1,2.5,,2026-11-20
+2026-10-01,composite,headline,g25,Electricity,group,225,184.7,0.5,15.6,,2026-11-20
+2026-10-01,composite,headline,g26,Towngas,group,226,123.6,-3.6,9.6,,2026-11-20
+2026-10-01,composite,headline,g27,Liquefied petroleum gas and other fuel,group,227,144.3,0.9,12.0,,2026-11-20
+2026-10-01,composite,headline,g28,Water and sewage charges,group,228,100.0,0.0,0.0,,2026-11-20
+2026-10-01,composite,headline,g29,Wines and spirits,group,229,95.5,0.9,0.9,,2026-11-20
+2026-10-01,composite,headline,g30,Beer,group,230,97.2,-1.9,-4.7,,2026-11-20
+2026-10-01,composite,headline,g31,Cigarettes,group,231,174.7,0.0,0.0,,2026-11-20
+2026-10-01,composite,headline,g32,Men's clothing,group,232,117.8,1.8,2.0,,2026-11-20
+2026-10-01,composite,headline,g33,Women's clothing,group,233,112.0,1.7,0.4,,2026-11-20
+2026-10-01,composite,headline,g34,Children's and infants' clothing,group,234,113.7,0.8,0.5,,2026-11-20
+2026-10-01,composite,headline,g35,Other clothing,group,235,97.6,2.0,2.4,,2026-11-20
+2026-10-01,composite,headline,g36,Men's footwear,group,236,102.3,-2.1,2.7,,2026-11-20
+2026-10-01,composite,headline,g37,Women's footwear,group,237,96.9,0.8,-2.4,,2026-11-20
+2026-10-01,composite,headline,g38,Children's and infants' footwear,group,238,90.5,-0.3,-5.6,,2026-11-20
+2026-10-01,composite,headline,g39,Furniture,group,239,104.2,0.5,0.4,,2026-11-20
+2026-10-01,composite,headline,g40,"Home appliances, electric and gas",group,240,92.8,0.1,-0.9,,2026-11-20
+2026-10-01,composite,headline,g41,Video and sound equipment,group,241,74.0,-1.0,0.1,,2026-11-20
+2026-10-01,composite,headline,g42,Information technology and telecommunications equipment,group,242,94.9,1.1,6.1,,2026-11-20
+2026-10-01,composite,headline,g43,Tableware and kitchen utensils,group,243,98.5,-0.9,2.3,,2026-11-20
+2026-10-01,composite,headline,g44,"Watches, clocks, cameras and optical goods",group,244,104.3,-0.3,1.4,,2026-11-20
+2026-10-01,composite,headline,g45,"Travel goods, handbags and other personal effects",group,245,104.9,-1.1,-7.5,,2026-11-20
+2026-10-01,composite,headline,g46,Other durable goods,group,246,103.4,0.4,-0.9,,2026-11-20
+2026-10-01,composite,headline,g47,Medicines and health products,group,247,93.8,0.8,1.6,,2026-11-20
+2026-10-01,composite,headline,g48,"Newspapers, books and stationery",group,248,105.0,-0.7,-0.9,,2026-11-20
+2026-10-01,composite,headline,g49,Soft furnishings,group,249,82.8,0.6,-0.2,,2026-11-20
+2026-10-01,composite,headline,g50,Cosmetics and personal care products,group,250,100.9,1.5,-2.2,,2026-11-20
+2026-10-01,composite,headline,g51,Household cleansing tools and supplies,group,251,101.4,-0.9,0.0,,2026-11-20
+2026-10-01,composite,headline,g52,Jewellery,group,252,149.5,-2.8,9.8,,2026-11-20
+2026-10-01,composite,headline,g53,Toys and hobbies,group,253,94.6,0.2,-0.9,,2026-11-20
+2026-10-01,composite,headline,g54,Textbooks,group,254,126.2,0.0,3.7,,2026-11-20
+2026-10-01,composite,headline,g55,Other household goods,group,255,104.2,-0.6,1.1,,2026-11-20
+2026-10-01,composite,headline,g56,Purchases of and repairs to vehicles,group,256,111.3,-0.1,-0.7,,2026-11-20
+2026-10-01,composite,headline,g57,Fuels for personal transport equipment,group,257,175.6,3.1,22.9,,2026-11-20
+2026-10-01,composite,headline,g58,"Vehicle and driving licences, insurance, instructor's fees, parking fees and road tunnel tolls",group,258,114.6,0.0,1.8,,2026-11-20
+2026-10-01,composite,headline,g59,Bus fares,group,259,108.1,0.0,2.0,,2026-11-20
+2026-10-01,composite,headline,g60,Tram fares,group,260,119.8,3.7,3.4,,2026-11-20
+2026-10-01,composite,headline,g61,Public light bus fares,group,261,108.5,0.4,2.6,,2026-11-20
+2026-10-01,composite,headline,g62,Taxi fares,group,262,119.9,0.0,0.0,,2026-11-20
+2026-10-01,composite,headline,g63,MTR fares,group,263,103.5,-1.3,-0.7,,2026-11-20
+2026-10-01,composite,headline,g64,Ferry fares,group,264,139.1,-0.3,12.4,,2026-11-20
+2026-10-01,composite,headline,g65,Other local transport fares,group,265,127.6,0.0,2.6,,2026-11-20
+2026-10-01,composite,headline,g66,Inbound and outbound transport fares,group,266,122.2,1.4,12.2,,2026-11-20
+2026-10-01,composite,headline,g67,Educational services,group,267,121.5,-0.1,4.0,,2026-11-20
+2026-10-01,composite,headline,g68,Health services,group,268,127.7,0.0,11.4,,2026-11-20
+2026-10-01,composite,headline,g69,Package holidays,group,269,123.8,3.6,13.6,,2026-11-20
+2026-10-01,composite,headline,g70,Other entertainment expenses,group,270,122.6,-1.1,4.2,,2026-11-20
+2026-10-01,composite,headline,g71,Household services,group,271,112.8,1.8,2.2,,2026-11-20
+2026-10-01,composite,headline,g72,Hair-dressing,group,272,117.4,-0.2,0.2,,2026-11-20
+2026-10-01,composite,headline,g73,Beauty treatment and fitness services,group,273,119.1,0.4,1.9,,2026-11-20
+2026-10-01,composite,headline,g74,Information and communications services,group,274,90.4,-0.1,-1.3,,2026-11-20
+2026-10-01,composite,headline,g75,Other services,group,275,112.2,0.0,1.4,,2026-11-20
+2026-10-01,composite,underlying,all,All items,all,0,111.9,0.2,2.0,,2026-11-20
+2026-10-01,composite,underlying,food,Food,section,1,111.8,-0.2,0.3,,2026-11-20
+2026-10-01,composite,underlying,housing,Housing,section,4,107.8,0.2,1.4,,2026-11-20
+2026-10-01,composite,underlying,egw,"Electricity, gas and water",section,5,161.3,-0.5,6.6,,2026-11-20
+2026-10-01,composite,underlying,alcohol_tobacco,Alcoholic drinks and tobacco,section,6,149.6,0.0,-0.4,,2026-11-20
+2026-10-01,composite,underlying,clothing,Clothing and footwear,section,7,110.3,1.2,0.5,,2026-11-20
+2026-10-01,composite,underlying,durables,Durable goods,section,8,96.4,0.3,1.4,,2026-11-20
+2026-10-01,composite,underlying,misc_goods,Miscellaneous goods,section,9,104.5,0.3,1.4,,2026-11-20
+2026-10-01,composite,underlying,transport,Transport,section,10,117.8,0.2,4.5,,2026-11-20
+2026-10-01,composite,underlying,misc_services,Miscellaneous services,section,11,115.7,0.5,5.0,,2026-11-20

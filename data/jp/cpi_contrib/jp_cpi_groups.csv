@@ -4175,3 +4175,37 @@ date,series,label,order,block,parent,weight,yoy,contrib_yoy
 2026-09-01,d_goods,Goods,31,gs,,5036.0,2.8,1.39
 2026-09-01,d_services,Services,32,gs,,4964.0,1.5,0.76
 2026-09-01,d_services_ex_rent,Services less imputed rent,33,gs,,3330.0,2.0,0.67
+2026-10-01,all,All items,0,top,,10000.0,2.3,2.3
+2026-10-01,core,Core (less fresh food),1,top,,9621.0,2.2,2.09
+2026-10-01,core1,Core 1 (less fresh food and energy),2,top,,8872.0,2.2,1.93
+2026-10-01,fresh_food,Fresh food,3,top,,379.0,6.3,0.24
+2026-10-01,food_ex_fresh,Food less fresh food,4,top,,2375.0,2.2,0.53
+2026-10-01,energy,Energy,5,top,,749.0,2.2,0.16
+2026-10-01,electricity,Electricity,6,top,energy,376.0,1.6,0.06
+2026-10-01,city_gas,City gas,7,top,energy,89.0,5.3,0.05
+2026-10-01,lp_gas,LP gas,8,top,energy,49.0,6.6,0.03
+2026-10-01,kerosene,Kerosene,9,top,energy,39.0,18.4,0.07
+2026-10-01,gasoline,Gasoline,10,top,energy,195.0,-2.3,-0.04
+2026-10-01,d_food,Food,11,div,,2754.0,2.7,0.76
+2026-10-01,d_eating_out,Eating out,12,div,d_food,508.0,2.4,0.12
+2026-10-01,d_housing,Housing,13,div,,2182.0,1.1,0.25
+2026-10-01,d_rent,Rent (incl. imputed rent),14,div,d_housing,1861.0,0.5,0.09
+2026-10-01,d_imputed_rent,Imputed rent,15,div,d_housing,1634.0,0.5,0.07
+2026-10-01,d_repairs,Repairs and maintenance,16,div,d_housing,321.0,4.8,0.15
+2026-10-01,d_fuel,"Fuel, light and water",17,div,,698.0,3.4,0.23
+2026-10-01,d_furniture,Furniture and household goods,18,div,,372.0,6.0,0.22
+2026-10-01,d_clothing,Clothing and footwear,19,div,,299.0,1.4,0.04
+2026-10-01,d_medical,Medical care,20,div,,466.0,2.9,0.14
+2026-10-01,d_medical_services,Medical services,21,div,d_medical,263.0,2.7,0.07
+2026-10-01,d_transport,Transport and communication,22,div,,1444.0,2.4,0.35
+2026-10-01,d_public_transport,Public transport,23,div,d_transport,177.0,3.0,0.05
+2026-10-01,d_motoring,Motoring costs,24,div,d_transport,928.0,2.0,0.19
+2026-10-01,d_communication,Communication,25,div,d_transport,338.0,3.2,0.11
+2026-10-01,d_education,Education,26,div,,311.0,-3.8,-0.12
+2026-10-01,d_tuition,Tuition fees,27,div,d_education,225.0,-6.4,-0.14
+2026-10-01,d_culture,Culture and recreation,28,div,,906.0,4.1,0.37
+2026-10-01,d_rec_services,Recreational services,29,div,d_culture,550.0,3.2,0.18
+2026-10-01,d_misc,Miscellaneous,30,div,,570.0,1.4,0.08
+2026-10-01,d_goods,Goods,31,gs,,5036.0,3.2,1.62
+2026-10-01,d_services,Services,32,gs,,4964.0,1.4,0.71
+2026-10-01,d_services_ex_rent,Services less imputed rent,33,gs,,3330.0,1.9,0.64
