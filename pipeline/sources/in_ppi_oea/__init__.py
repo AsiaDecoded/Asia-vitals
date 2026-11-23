@@ -24,6 +24,7 @@ import json
 import math
 import re
 import ssl
+from pathlib import Path
 import urllib.request
 
 from core.common import DATA, RAW, CheckFailed, read_json, write_long, write_release
@@ -56,6 +57,9 @@ MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "No
 
 CTX = ssl.create_default_context()
 CTX.options |= getattr(ssl, "OP_LEGACY_SERVER_CONNECT", 0x4)
+# The site sends only its own certificate; its Let's Encrypt issuers (YR1, and Root YR cross-signed by ISRG Root X1)
+# are bundled so the chain can be built to the system's ISRG Root X1. Verification stays on.
+CTX.load_verify_locations(cafile=str(Path(__file__).with_name("lets_encrypt_yr_chain.pem")))
 UA = {"User-Agent": "asia-vitals/0.1 (+https://github.com/AsiaDecoded/asia-vitals)"}
 
 
