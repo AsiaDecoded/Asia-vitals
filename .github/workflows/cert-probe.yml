@@ -1,0 +1,31 @@
+name: Cert probe
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/cert-probe.yml]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Fetch chain and missing issuer
+        run: |
+          mkdir -p /tmp/out && cd /tmp/out
+          H=eaindustry.nic.in
+          openssl s_client -connect $H:443 -servername $H -showcerts </dev/null > chain.txt 2>&1 || true
+          awk '/BEGIN CERT/{n++} n{print > ("c" n ".pem")} /END CERT/{}' chain.txt
+          for f in c*.pem; do openssl x509 -in $f -noout -subject -issuer -ext authorityInfoAccess >> info.txt 2>&1; echo >> info.txt; done
+          last=$(ls c*.pem | sort -V | tail -1)
+          url=$(openssl x509 -in $last -noout -ext authorityInfoAccess | grep -o 'CA Issuers - URI:[^ ]*' | sed 's/CA Issuers - URI://' | head -1)
+          echo "AIA: $url" >> info.txt
+          if [ -n "$url" ]; then curl -sSL "$url" -o issuer.bin; (openssl x509 -inform DER -in issuer.bin -out issuer.pem 2>/dev/null || openssl pkcs7 -inform DER -in issuer.bin -print_certs -out issuer.pem || cp issuer.bin issuer.pem); openssl x509 -in issuer.pem -noout -subject -issuer -ext authorityInfoAccess >> info.txt 2>&1; fi
+          cat info.txt
+      - uses: actions/checkout@v4
+        with: {ref: discovery}
+      - name: Save
+        run: |
+          mkdir -p discovery/cert && cp /tmp/out/*.pem /tmp/out/info.txt discovery/cert/
+          git config user.name "asia-vitals bot"; git config user.email "actions@users.noreply.github.com"
+          git add discovery/cert && git commit -qm "cert probe" && git push origin discovery

@@ -603,6 +603,7 @@ def _tree(idx, names, errors):
 
 
 WEIGHTS_2024 = Path(__file__).with_name("weights_2024.csv")
+WEIGHT_NOTES = []
 
 
 def _published_weights(implied, errors):
@@ -615,9 +616,22 @@ def _published_weights(implied, errors):
         errors.append(f"published weights sum to {sum(pub.values()) * 1e4:.0f}, not 10,000")
     if set(pub) != set(implied):
         errors.append(f"published weights: items differ from the CPI tree: {sorted(set(pub) ^ set(implied))}")
-    for no, w in pub.items():
-        if no in implied and abs(w - implied[no]) > 5e-4:
-            errors.append(f"published weight of {no} ({w * 1e4:.0f}) is far from the index-implied {implied[no] * 1e4:.1f}")
+    off = [no for no, w in pub.items() if no in implied and abs(w - implied[no]) > 5e-4]
+    # Sibling items whose indices move together (e.g. school fees reset once a year) cannot be told apart by the
+    # regression: it gets their sum right but splits it arbitrarily. Where the off items under one parent add up to
+    # their published total, that is a warning, not an error.
+    by_parent = {}
+    for no in off:
+        by_parent.setdefault(no.rsplit(".", 1)[0], []).append(no)
+    for parent, items in by_parent.items():
+        p_sum, i_sum = sum(pub[n] for n in items), sum(implied[n] for n in items)
+        msg = "; ".join(f"{n} published {pub[n] * 1e4:.0f} vs index-implied {implied[n] * 1e4:.1f}" for n in items)
+        if len(items) > 1 and abs(p_sum - i_sum) <= 5e-4:
+            WEIGHT_NOTES.append(f"item weights not separable under {parent} (indices move together), sum matches "
+                                f"({p_sum * 1e4:.0f} vs {i_sum * 1e4:.1f}): {msg}")
+        else:
+            errors.extend(f"published weight of {n} ({pub[n] * 1e4:.0f}) is far from the index-implied {implied[n] * 1e4:.1f}"
+                          for n in items)
     nodes = {}
     for no, w in pub.items():
         parts = no.split(".")
@@ -710,6 +724,7 @@ def update(**_):
     tb_contrib = _contrib_table(idx, mas, errors)
     contrib = sorted(contrib + core_contrib + fe_contrib + xf_contrib + gs_contrib + tb_contrib, key=lambda r: (r["date"], r["order"]))
     implied, worst, _ = _tree(idx, names, errors)
+    WEIGHT_NOTES.clear()
     item_w, node_w = _published_weights(implied, errors)
     diff = _diffusion(S["yoy"][0], names)
     missing = [no for no in FUEL_ITEMS if no not in item_w]
@@ -841,7 +856,7 @@ def update(**_):
     nlong = write_long(long_rows(), OUT / "long.csv")
     release = {"code": code, "label": label, "latest_month": latest,
                "table": "SingStat Table Builder " + ", ".join(T.values()) + " (2024 base)"}
-    write_release(OUT, release, [], len(rows), {"fingerprint": fingerprint, "long_rows": nlong,
+    write_release(OUT, release, list(WEIGHT_NOTES), len(rows), {"fingerprint": fingerprint, "long_rows": nlong,
                                                 "contrib_rows": len(contrib), "diffusion_items": diff[-1]["items"]})
     return {"updated": True, "code": code,
             "summary": f"{label}: {len(rows)} CPI rows, contributions from {contrib[0]['date'][:7]}, {diff[-1]['items']} items"}
