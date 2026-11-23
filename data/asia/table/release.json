@@ -1,10 +1,10 @@
 {
- "code": "A7287d4716b",
+ "code": "Ab534021d5d",
  "label": "Asia table",
  "economies": "JP KR TW HK CN IN ID TH MY SG PH VN",
  "latest_cpi_month": "2026-10-01",
- "processed_at": "2026-11-23T09:18:09Z",
- "rows": 6811,
+ "processed_at": "2026-11-23T09:47:30Z",
+ "rows": 6817,
  "warnings": [],
  "missing": [],
  "inputs": {
@@ -23,7 +23,7 @@
   "data/in/cpi/in_cpi.csv": "M2026-10",
   "data/in/cpi_core/in_cpi_food_energy.csv": "M2026-10",
   "data/in/cpi_core/in_cpi_core.csv": "M2026-10",
-  "data/in/ppi/in_ppi_spliced.csv": "M2026-09",
+  "data/in/ppi/in_ppi_spliced.csv": "M2026-10",
   "data/id/cpi/id_cpi.csv": "C2026-10",
   "data/id/cpi_bps/id_cpi_bps.csv": "C2026-10",
   "data/id/ppi/id_ppi.csv": "P2026-10",
@@ -31,7 +31,7 @@
   "data/th/ppi/th_ppi.csv": "P2026-10",
   "data/my/cpi/my_cpi.csv": "M2026-10",
   "data/my/ppi/my_ppi.csv": "P2026-09",
-  "data/sg/cpi/sg_cpi.csv": "C2026-09",
+  "data/sg/cpi/sg_cpi.csv": "C2026-10",
   "data/sg/ppi/sg_ppi.csv": "P2026-09",
   "data/ph/cpi/ph_cpi.csv": "C2026-10",
   "data/ph/ppi/ph_ppi.csv": "P2026-09",
@@ -47,7 +47,7 @@
   "ID": "2026-10-01",
   "TH": "2026-10-01",
   "MY": "2026-10-01",
-  "SG": "2026-09-01",
+  "SG": "2026-10-01",
   "PH": "2026-10-01",
   "VN": "2026-10-01"
  },
@@ -131,6 +131,10 @@
   {
    "code": "A7287d4716b",
    "processed_at": "2026-11-23T09:18:09Z"
+  },
+  {
+   "code": "Ab534021d5d",
+   "processed_at": "2026-11-23T09:47:30Z"
   }
  ]
 }

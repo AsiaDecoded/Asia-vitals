@@ -1,19 +1,25 @@
 {
- "code": "C2026-09",
- "label": "Sep 2026",
- "latest_month": "2026-09-01",
+ "code": "C2026-10",
+ "label": "Oct 2026",
+ "latest_month": "2026-10-01",
  "table": "SingStat Table Builder M213751, M213752, M213781, M213771, M213792, M213891 (2024 base)",
- "processed_at": "2026-10-28T06:46:41Z",
- "rows": 25266,
- "warnings": [],
- "fingerprint": "f7692b1c49e3a130",
- "long_rows": 68425,
- "contrib_rows": 3843,
+ "processed_at": "2026-11-23T09:47:06Z",
+ "rows": 25328,
+ "warnings": [
+  "item weights not separable under 1.09.1 (indices move together), sum matches (59 vs 58.2): 1.09.1.2 published 39 vs index-implied 45.1; 1.09.1.3 published 20 vs index-implied 13.1"
+ ],
+ "fingerprint": "553e0b2425169fa8",
+ "long_rows": 68652,
+ "contrib_rows": 3902,
  "diffusion_items": 157,
  "history": [
   {
    "code": "C2026-09",
    "processed_at": "2026-10-28T06:46:41Z"
+  },
+  {
+   "code": "C2026-10",
+   "processed_at": "2026-11-23T09:47:06Z"
   }
  ]
 }

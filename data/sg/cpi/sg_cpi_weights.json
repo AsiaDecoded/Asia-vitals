@@ -20,7 +20,7 @@
   },
   {
    "from": "2024-01-01",
-   "to": "2026-09-01",
+   "to": "2026-10-01",
    "published_weights_per_10000": {
     "core": 6438,
     "accommodation": 2656,
@@ -53,7 +53,7 @@
   },
   {
    "from": "2024-01-01",
-   "to": "2026-09-01",
+   "to": "2026-10-01",
    "published_weights_per_10000": {
     "food_ex_fbss": 651,
     "fbss": 1391,
@@ -342,7 +342,7 @@
   "1.02.1.1": {
    "name": "Garments",
    "weight_per_10000": 121,
-   "index_implied": 120.6
+   "index_implied": 120.7
   },
   "1.02.1.2": {
    "name": "Other Articles Of Clothing & Clothing Accessories",
@@ -362,12 +362,12 @@
   "1.03.1.1": {
    "name": "Actual Rentals For Housing",
    "weight_per_10000": 294,
-   "index_implied": 294.4
+   "index_implied": 294.5
   },
   "1.03.1.2": {
    "name": "Imputed Rentals For Housing",
    "weight_per_10000": 2138,
-   "index_implied": 2137.4
+   "index_implied": 2137.1
   },
   "1.03.1.3": {
    "name": "Housing Maintenance & Repairs",
@@ -397,7 +397,7 @@
   "1.04.1": {
    "name": "Furniture & Furnishings",
    "weight_per_10000": 128,
-   "index_implied": 128.2
+   "index_implied": 128.1
   },
   "1.04.2": {
    "name": "Household Textiles",
@@ -462,7 +462,7 @@
   "1.05.2.1": {
    "name": "Fees At Polyclinics",
    "weight_per_10000": 36,
-   "index_implied": 36.1
+   "index_implied": 36.0
   },
   "1.05.2.2": {
    "name": "Fees At General Practitioners (GP) Clinics",
@@ -472,7 +472,7 @@
   "1.05.2.3": {
    "name": "Fees At Specialist Outpatient Clinics",
    "weight_per_10000": 254,
-   "index_implied": 254.6
+   "index_implied": 254.5
   },
   "1.05.2.4": {
    "name": "Outpatient Dental Services",
@@ -487,7 +487,7 @@
   "1.05.3": {
    "name": "Inpatient Care Services",
    "weight_per_10000": 238,
-   "index_implied": 238.4
+   "index_implied": 238.3
   },
   "1.05.4.1": {
    "name": "Diagnostic Imaging Services & Medical Laboratory Services",
@@ -502,7 +502,7 @@
   "1.05.5": {
    "name": "Health Insurance",
    "weight_per_10000": 225,
-   "index_implied": 225.4
+   "index_implied": 225.3
   },
   "1.06.1.1": {
    "name": "Motor Cars",
@@ -592,7 +592,7 @@
   "1.07.1.1": {
    "name": "Mobile Telephone Equipment",
    "weight_per_10000": 31,
-   "index_implied": 30.9
+   "index_implied": 31.0
   },
   "1.07.1.2": {
    "name": "Information Processing Equipment",
@@ -632,7 +632,7 @@
   "1.07.3.3": {
    "name": "Internet, Bundled & Other Telecommunication Services",
    "weight_per_10000": 149,
-   "index_implied": 148.7
+   "index_implied": 148.8
   },
   "1.07.3.4": {
    "name": "Information & Communication Services Nec",
@@ -727,22 +727,22 @@
   "1.08.7.3": {
    "name": "Package Holidays",
    "weight_per_10000": 206,
-   "index_implied": 206.2
+   "index_implied": 206.3
   },
   "1.09.1.1": {
    "name": "Primary Education",
    "weight_per_10000": 26,
-   "index_implied": 26.2
+   "index_implied": 26.5
   },
   "1.09.1.2": {
    "name": "Secondary Education",
    "weight_per_10000": 39,
-   "index_implied": 41.1
+   "index_implied": 45.1
   },
   "1.09.1.3": {
    "name": "Post-Secondary (Non-Tertiary) Education",
    "weight_per_10000": 20,
-   "index_implied": 17.5
+   "index_implied": 13.1
   },
   "1.09.1.4": {
    "name": "Polytechnic Education",
@@ -752,12 +752,12 @@
   "1.09.1.5": {
    "name": "Other Education",
    "weight_per_10000": 284,
-   "index_implied": 283.5
+   "index_implied": 283.3
   },
   "1.09.2": {
    "name": "Private Tuition & Other Educational Courses",
    "weight_per_10000": 184,
-   "index_implied": 183.6
+   "index_implied": 183.5
   },
   "1.09.3": {
    "name": "School Textbooks & Study Guides",
@@ -767,7 +767,7 @@
   "1.10.1.1": {
    "name": "Hairdressing & Personal Grooming Services",
    "weight_per_10000": 95,
-   "index_implied": 95.7
+   "index_implied": 95.6
   },
   "1.10.1.2": {
    "name": "Electric Appliances For Personal Care",
@@ -777,7 +777,7 @@
   "1.10.1.3": {
    "name": "Other Appliances, Articles & Products For Personal Care",
    "weight_per_10000": 112,
-   "index_implied": 112.8
+   "index_implied": 112.7
   },
   "1.10.2.1": {
    "name": "Alcoholic Beverages",
@@ -787,7 +787,7 @@
   "1.10.2.2": {
    "name": "Tobacco",
    "weight_per_10000": 35,
-   "index_implied": 35.3
+   "index_implied": 35.2
   },
   "1.10.3.1": {
    "name": "Jewellery & Watches",
@@ -797,7 +797,7 @@
   "1.10.3.2": {
    "name": "Devotional Articles & Articles For Religious & Ritual Celebrations",
    "weight_per_10000": 7,
-   "index_implied": 7.1
+   "index_implied": 7.0
   },
   "1.10.3.3": {
    "name": "Other Personal Effects Nec",
@@ -807,22 +807,22 @@
   "1.10.4": {
    "name": "Social Services",
    "weight_per_10000": 32,
-   "index_implied": 32.3
+   "index_implied": 32.2
   },
   "1.10.5": {
    "name": "Other Miscellaneous Services",
    "weight_per_10000": 75,
-   "index_implied": 75.6
+   "index_implied": 75.5
   },
   "1.11.1.1": {
    "name": "Restaurants",
    "weight_per_10000": 491,
-   "index_implied": 489.6
+   "index_implied": 490.2
   },
   "1.11.1.2": {
    "name": "Cafes",
    "weight_per_10000": 82,
-   "index_implied": 81.7
+   "index_implied": 81.9
   },
   "1.11.1.3": {
    "name": "Pubs",
@@ -832,17 +832,17 @@
   "1.11.2": {
    "name": "Fast Food Restaurants",
    "weight_per_10000": 85,
-   "index_implied": 85.0
+   "index_implied": 85.1
   },
   "1.11.3.1": {
    "name": "Hawker Centres",
    "weight_per_10000": 169,
-   "index_implied": 168.6
+   "index_implied": 168.7
   },
   "1.11.3.2": {
    "name": "Food Courts, Coffee Shops & Kiosks",
    "weight_per_10000": 538,
-   "index_implied": 536.9
+   "index_implied": 537.4
   },
   "1.11.4": {
    "name": "Other Catering Services, Incl Vending Machines",
@@ -850,5 +850,5 @@
    "index_implied": 14.2
   }
  },
- "item_tree_max_residual": 0.00069
+ "item_tree_max_residual": 0.0007
 }

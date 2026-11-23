@@ -3827,8 +3827,9 @@ IN,India,ppi,"Output PPI, linked to WPI",2026-04-01,8.26,calculated,data/in/ppi/
 IN,India,ppi,"Output PPI, linked to WPI",2026-05-01,9.68,calculated,data/in/ppi/in_ppi_spliced.csv
 IN,India,ppi,"Output PPI, linked to WPI",2026-06-01,9.67,calculated,data/in/ppi/in_ppi_spliced.csv
 IN,India,ppi,"Output PPI, linked to WPI",2026-07-01,9.57,calculated,data/in/ppi/in_ppi_spliced.csv
-IN,India,ppi,"Output PPI, linked to WPI",2026-08-01,9.81,calculated,data/in/ppi/in_ppi_spliced.csv
+IN,India,ppi,"Output PPI, linked to WPI",2026-08-01,9.71,calculated,data/in/ppi/in_ppi_spliced.csv
 IN,India,ppi,"Output PPI, linked to WPI",2026-09-01,11.39,calculated,data/in/ppi/in_ppi_spliced.csv
+IN,India,ppi,"Output PPI, linked to WPI",2026-10-01,12.07,calculated,data/in/ppi/in_ppi_spliced.csv
 ID,Indonesia,cpi,"CPI, all items (BPS, via Bank Indonesia SEKI)",2015-01-01,6.96,published,data/id/cpi/id_cpi.csv
 ID,Indonesia,cpi,"CPI, all items (BPS, via Bank Indonesia SEKI)",2015-02-01,6.29,published,data/id/cpi/id_cpi.csv
 ID,Indonesia,cpi,"CPI, all items (BPS, via Bank Indonesia SEKI)",2015-03-01,6.38,published,data/id/cpi/id_cpi.csv
@@ -5307,6 +5308,7 @@ SG,Singapore,cpi,All items,2026-06-01,1.9,published,data/sg/cpi/sg_cpi.csv
 SG,Singapore,cpi,All items,2026-07-01,2.2,published,data/sg/cpi/sg_cpi.csv
 SG,Singapore,cpi,All items,2026-08-01,2.3,published,data/sg/cpi/sg_cpi.csv
 SG,Singapore,cpi,All items,2026-09-01,2.2,published,data/sg/cpi/sg_cpi.csv
+SG,Singapore,cpi,All items,2026-10-01,1.9,published,data/sg/cpi/sg_cpi.csv
 SG,Singapore,food,Food excl. food and beverage serving services,2015-01-01,1.6,published,data/sg/cpi/sg_cpi.csv
 SG,Singapore,food,Food excl. food and beverage serving services,2015-02-01,3.1,published,data/sg/cpi/sg_cpi.csv
 SG,Singapore,food,Food excl. food and beverage serving services,2015-03-01,2.0,published,data/sg/cpi/sg_cpi.csv
@@ -5448,6 +5450,7 @@ SG,Singapore,food,Food excl. food and beverage serving services,2026-06-01,3.1,p
 SG,Singapore,food,Food excl. food and beverage serving services,2026-07-01,3.2,published,data/sg/cpi/sg_cpi.csv
 SG,Singapore,food,Food excl. food and beverage serving services,2026-08-01,3.0,published,data/sg/cpi/sg_cpi.csv
 SG,Singapore,food,Food excl. food and beverage serving services,2026-09-01,3.2,published,data/sg/cpi/sg_cpi.csv
+SG,Singapore,food,Food excl. food and beverage serving services,2026-10-01,3.0,published,data/sg/cpi/sg_cpi.csv
 SG,Singapore,energy,"Fuel (electricity, gas, petrol, other fuels)",2025-01-01,-0.3,calculated,data/sg/cpi/sg_cpi.csv
 SG,Singapore,energy,"Fuel (electricity, gas, petrol, other fuels)",2025-02-01,-1.0,calculated,data/sg/cpi/sg_cpi.csv
 SG,Singapore,energy,"Fuel (electricity, gas, petrol, other fuels)",2025-03-01,-2.8,calculated,data/sg/cpi/sg_cpi.csv
@@ -5469,6 +5472,7 @@ SG,Singapore,energy,"Fuel (electricity, gas, petrol, other fuels)",2026-06-01,7.
 SG,Singapore,energy,"Fuel (electricity, gas, petrol, other fuels)",2026-07-01,12.1,calculated,data/sg/cpi/sg_cpi.csv
 SG,Singapore,energy,"Fuel (electricity, gas, petrol, other fuels)",2026-08-01,12.2,calculated,data/sg/cpi/sg_cpi.csv
 SG,Singapore,energy,"Fuel (electricity, gas, petrol, other fuels)",2026-09-01,13.4,calculated,data/sg/cpi/sg_cpi.csv
+SG,Singapore,energy,"Fuel (electricity, gas, petrol, other fuels)",2026-10-01,13.2,calculated,data/sg/cpi/sg_cpi.csv
 SG,Singapore,core,CPI less food (excl. serving services) and energy,2016-01-01,-0.7,calculated,data/sg/cpi/sg_cpi.csv
 SG,Singapore,core,CPI less food (excl. serving services) and energy,2016-02-01,-0.7,calculated,data/sg/cpi/sg_cpi.csv
 SG,Singapore,core,CPI less food (excl. serving services) and energy,2016-03-01,-0.8,calculated,data/sg/cpi/sg_cpi.csv
@@ -5598,6 +5602,7 @@ SG,Singapore,core,CPI less food (excl. serving services) and energy,2026-06-01,1
 SG,Singapore,core,CPI less food (excl. serving services) and energy,2026-07-01,1.8,calculated,data/sg/cpi/sg_cpi.csv
 SG,Singapore,core,CPI less food (excl. serving services) and energy,2026-08-01,1.9,calculated,data/sg/cpi/sg_cpi.csv
 SG,Singapore,core,CPI less food (excl. serving services) and energy,2026-09-01,1.7,calculated,data/sg/cpi/sg_cpi.csv
+SG,Singapore,core,CPI less food (excl. serving services) and energy,2026-10-01,1.3,calculated,data/sg/cpi/sg_cpi.csv
 SG,Singapore,official_core,MAS core,2015-01-01,1.0,published,data/sg/cpi/sg_cpi.csv
 SG,Singapore,official_core,MAS core,2015-02-01,1.3,published,data/sg/cpi/sg_cpi.csv
 SG,Singapore,official_core,MAS core,2015-03-01,1.0,published,data/sg/cpi/sg_cpi.csv
@@ -5739,6 +5744,7 @@ SG,Singapore,official_core,MAS core,2026-06-01,1.6,published,data/sg/cpi/sg_cpi.
 SG,Singapore,official_core,MAS core,2026-07-01,2.0,published,data/sg/cpi/sg_cpi.csv
 SG,Singapore,official_core,MAS core,2026-08-01,2.2,published,data/sg/cpi/sg_cpi.csv
 SG,Singapore,official_core,MAS core,2026-09-01,2.0,published,data/sg/cpi/sg_cpi.csv
+SG,Singapore,official_core,MAS core,2026-10-01,1.5,published,data/sg/cpi/sg_cpi.csv
 SG,Singapore,ppi,Manufactured products price index,2015-01-01,-13.2,calculated,data/sg/ppi/sg_ppi.csv
 SG,Singapore,ppi,Manufactured products price index,2015-02-01,-11.7,calculated,data/sg/ppi/sg_ppi.csv
 SG,Singapore,ppi,Manufactured products price index,2015-03-01,-9.2,calculated,data/sg/ppi/sg_ppi.csv

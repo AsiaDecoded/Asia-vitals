@@ -25265,3 +25265,65 @@ date,area,series,label,group,order,index,mom,yoy
 2026-09-01,national,svc_all,"Services, broad: MAS services + accommodation + FBSS + private transport services (calculated)",headline,59,102.829,0.1,1.5
 2026-09-01,national,gs_services,"Services, incl. FBSS (calculated)",headline,60,102.829,0.1,1.5
 2026-09-01,national,gs_goods,Goods (calculated),headline,61,105.69,0.6,4.4
+2026-10-01,national,all,All items,headline,0,103.229,-0.3,1.9
+2026-10-01,national,less_accom,All items less accommodation,headline,1,104.07,0.1,2.2
+2026-10-01,national,less_imputed,All items less imputed rentals for housing,headline,2,103.745,-0.4,2.2
+2026-10-01,national,food,Food,drivers,3,103.974,0.2,2.3
+2026-10-01,national,food_ex_fbss,Food excl. food and beverage serving services,drivers,4,104.537,0.4,3.0
+2026-10-01,national,fbss,Food and beverage serving services,drivers,5,103.711,0.2,2.0
+2026-10-01,national,accommodation,Accommodation,drivers,6,100.903,-1.6,0.9
+2026-10-01,national,imputed_rentals,Imputed rentals for housing,drivers,7,101.333,0.1,0.7
+2026-10-01,national,actual_rentals,Actual rentals for housing,drivers,8,102.366,0.1,1.2
+2026-10-01,national,motor_cars,Motor cars,drivers,9,113.794,-0.5,2.2
+2026-10-01,national,health_insurance,Health insurance,drivers,10,122.841,0.0,4.3
+2026-10-01,national,airfares,Airfares,drivers,11,105.003,0.0,7.7
+2026-10-01,national,private_transport,Private transport,drivers,12,112.834,0.9,6.7
+2026-10-01,national,petrol,Petrol,drivers,13,122.12,6.1,26.2
+2026-10-01,national,electricity,Electricity,drivers,14,95.85,-7.1,1.2
+2026-10-01,national,gas,Gas,drivers,15,97.392,-5.8,-0.6
+2026-10-01,national,other_fuels,Other fuel and lubricants for personal transport,drivers,16,141.611,2.3,43.4
+2026-10-01,national,clothing,Clothing and footwear,groups,17,101.392,0.2,2.2
+2026-10-01,national,housing,Housing and utilities,groups,18,100.862,-1.9,0.9
+2026-10-01,national,household,Household durables and services,groups,19,100.729,0.8,1.3
+2026-10-01,national,health,Health,groups,20,105.427,-1.1,1.5
+2026-10-01,national,transport,Transport,groups,21,112.01,0.6,6.8
+2026-10-01,national,info_comm,Information and communication,groups,22,94.179,1.7,-3.9
+2026-10-01,national,recreation,"Recreation, sport and culture",groups,23,101.723,1.7,1.1
+2026-10-01,national,education,Education,groups,24,100.298,0.1,-0.9
+2026-10-01,national,misc,Miscellaneous goods and services,groups,25,101.982,0.1,1.6
+2026-10-01,national,core,MAS core inflation measure,headline,26,102.837,0.0,1.5
+2026-10-01,national,services,Services,core_parts,27,102.879,0.2,1.1
+2026-10-01,national,retail_goods,Retail and other goods,core_parts,28,101.762,0.5,1.6
+2026-10-01,national,elec_gas,Electricity and gas,core_parts,29,95.998,-7.0,1.0
+2026-10-01,national,all_sa,"All items, seasonally adjusted",sa,30,103.531,0.1,
+2026-10-01,national,less_accom_sa,"All items less accommodation, seasonally adjusted",sa,31,104.03,0.1,
+2026-10-01,national,less_imputed_sa,"All items less imputed rentals for housing, seasonally adjusted",sa,32,104.023,0.0,
+2026-10-01,national,food_sa,"Food, seasonally adjusted",sa,33,104.108,0.2,
+2026-10-01,national,food_ex_fbss_sa,"Food excl. food and beverage serving services, seasonally adjusted",sa,34,104.444,0.2,
+2026-10-01,national,fbss_sa,"Food and beverage serving services, seasonally adjusted",sa,35,103.711,0.2,
+2026-10-01,national,accommodation_sa,"Accommodation, seasonally adjusted",sa,36,102.136,0.3,
+2026-10-01,national,health_insurance_sa,"Health insurance, seasonally adjusted",sa,37,122.745,-0.5,
+2026-10-01,national,private_transport_sa,"Private transport, seasonally adjusted",sa,38,112.834,0.9,
+2026-10-01,national,clothing_sa,"Clothing and footwear, seasonally adjusted",sa,39,102.039,0.6,
+2026-10-01,national,housing_sa,"Housing and utilities, seasonally adjusted",sa,40,101.862,-0.4,
+2026-10-01,national,household_sa,"Household durables and services, seasonally adjusted",sa,41,100.729,0.8,
+2026-10-01,national,health_sa,"Health, seasonally adjusted",sa,42,105.445,-1.2,
+2026-10-01,national,transport_sa,"Transport, seasonally adjusted",sa,43,112.01,0.6,
+2026-10-01,national,info_comm_sa,"Information and communication, seasonally adjusted",sa,44,94.179,1.7,
+2026-10-01,national,recreation_sa,"Recreation, sport and culture, seasonally adjusted",sa,45,101.417,1.8,
+2026-10-01,national,education_sa,"Education, seasonally adjusted",sa,46,100.463,0.1,
+2026-10-01,national,misc_sa,"Miscellaneous goods and services, seasonally adjusted",sa,47,101.965,-0.3,
+2026-10-01,national,fuel,"Fuel (electricity, gas, petrol, other fuels; calculated)",drivers,48,108.572,-0.5,13.2
+2026-10-01,national,ex_food_energy,CPI less food (excl. serving services) and energy (calculated),headline,49,102.907,-0.4,1.3
+2026-10-01,national,core_only,"In MAS core only: food excl. FBSS, electricity and gas (calculated)",headline,50,102.505,-1.4,2.5
+2026-10-01,national,shared,In both MAS core and CPI less food and energy (calculated),headline,51,102.911,0.2,1.4
+2026-10-01,national,exfe_only,In CPI less food and energy only: accommodation and private transport excl. fuel (calculated),headline,52,102.901,-1.3,1.2
+2026-10-01,national,svc_health,Services: health (calculated),headline,53,105.964,-1.0,1.4
+2026-10-01,national,svc_land,Services: land transport (calculated),headline,54,113.062,0.2,7.2
+2026-10-01,national,svc_air,Services: airfares (calculated),headline,55,105.003,0.0,7.7
+2026-10-01,national,svc_rent,Services: actual rentals (calculated),headline,56,102.366,0.1,1.2
+2026-10-01,national,svc_imputed,Services: imputed rentals (calculated),headline,57,101.333,0.1,0.7
+2026-10-01,national,svc_other,Services: other (calculated),headline,58,101.22,-0.7,0.8
+2026-10-01,national,svc_all,"Services, broad: MAS services + accommodation + FBSS + private transport services (calculated)",headline,59,102.378,-0.4,1.2
+2026-10-01,national,gs_services,"Services, incl. FBSS (calculated)",headline,60,102.378,-0.4,1.2
+2026-10-01,national,gs_goods,Goods (calculated),headline,61,105.751,0.1,3.8
