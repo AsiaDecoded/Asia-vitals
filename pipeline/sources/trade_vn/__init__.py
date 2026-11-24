@@ -80,11 +80,11 @@ def update(force=False, **_):
                 if any(r["date"][:7] == ym for r in rows):
                     return [r for r in rows if r["date"][:7] == ym]
             return []
-        if f"q:{ym}" not in st.data and f"m:{ym}" in st.data and st.fetched >= BUDGET:
-            continue
         got = st.get(f"q:{ym}", fetch, refresh=ym >= trade.shift(today, -2), budget=BUDGET)
-        if got is not None:
+        if got:
             st.data.pop(f"m:{ym}", None)
+        elif got is not None and st.data.get(f"m:{ym}"):
+            st.data.pop(f"q:{ym}", None)        # report not found this time: keep the earlier read, try again next run
     st.save()
     rows = [r for k, v in st.data.items() for r in (v or []) if k.startswith("q:") or f"q:{k[2:]}" not in st.data]
     if not rows:
