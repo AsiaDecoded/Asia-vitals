@@ -18,5 +18,7 @@ jobs:
             f=$(echo "$u" | md5sum | cut -c1-8); code=$(curl -sSL -A "$UA" -o "$f" -w "%{http_code} %{content_type} %{size_download}" "$u" || true); echo "$code $f $u" | tee -a log.txt
           done
           cat log.txt
-      - uses: actions/upload-artifact@v4
-        with: {name: eia, path: /tmp/out/}
+      - uses: actions/checkout@v4
+        with: {path: repo}
+      - name: Layout
+        run: pip install -q openpyxl && python repo/pipeline/tools/eia_probe.py /tmp/out/059a2beb
