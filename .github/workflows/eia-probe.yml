@@ -15,13 +15,8 @@ jobs:
           mkdir -p /tmp/out && cd /tmp/out
           UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130.0 Safari/537.36"
           for u in https://www.eia.gov/outlooks/steo/xls/STEO_m.xlsx https://www.eia.gov/outlooks/steo/tables/pdf/3atab.pdf https://www.eia.gov/outlooks/steo/data.php https://www.eia.gov/outlooks/steo/ "https://www.eia.gov/outlooks/steo/data/browser/data/index.php?v=7&f=M&s=0&start=202401&end=202712&map=&linechart=PAPR_WORLD~PATC_WORLD&id=&ctype=linechart&maptype=0&type=csv" "https://api.eia.gov/v2/steo/data/?frequency=monthly&data[0]=value&facets[seriesId][]=PAPR_WORLD"; do
-            f=$(echo "$u" | md5sum | cut -c1-8); code=$(curl -sSL -A "$UA" -o "$f" -w "%{http_code} %{content_type} %{size_download}" "$u"); echo "$code $f $u" | tee -a log.txt
+            f=$(echo "$u" | md5sum | cut -c1-8); code=$(curl -sSL -A "$UA" -o "$f" -w "%{http_code} %{content_type} %{size_download}" "$u" || true); echo "$code $f $u" | tee -a log.txt
           done
           cat log.txt
-      - uses: actions/checkout@v4
-        with: {ref: discovery}
-      - name: Save
-        run: |
-          mkdir -p discovery/eia && cp /tmp/out/059a2beb discovery/eia/STEO_m.xlsx && cp /tmp/out/log.txt discovery/eia/
-          git config user.name "asia-vitals bot"; git config user.email "actions@users.noreply.github.com"
-          git add discovery/eia && git commit -qm "EIA probe" && git push origin discovery
+      - uses: actions/upload-artifact@v4
+        with: {name: eia, path: /tmp/out/}
