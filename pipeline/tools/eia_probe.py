@@ -15,3 +15,6 @@ for name in wb.sheetnames:
         if lab:
             vals = [c for c in r[2:] if c is not None]
             print("ROW", i, lab[:90], "n", len(vals), "last", vals[-3:] if vals else None)
+for r in list(wb["Dates"].iter_rows(values_only=True))[:40]:
+    if any(c is not None for c in r):
+        print("DATES", [c for c in r if c is not None][:8])
