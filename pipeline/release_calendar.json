@@ -27,6 +27,7 @@
   "id_gdp": "BPS: no dated calendar fetched; pattern: about the 5th of the second month after the quarter, 11:00 Jakarta (Q2 2026 on 5 Aug 2026); windows +/-3 days",
   "id_fiscal_monthly": "Ministry of Finance APBN KiTa press conference: no calendar found; it has fallen between the 9th and 22nd (Sep 2026 outturn 9 Oct, Aug 18 Sep), so the source runs daily from the 3rd to the 25th; nominal date the 15th",
   "id_debt_imf": "No fixed dates: SUSPI (Bank Indonesia and Ministry of Finance) is quarterly with no calendar found; IMF WEO in April and October, IMF Global Debt Database once a year. A short monthly window (15th-18th) picks each up within a month; every source exits unchanged when nothing is new",
+  "oil_eia": "EIA publishes the STEO on a Tuesday around the 6th-12th of each month; the source checks daily in a week-long window and does nothing when the workbook is unchanged",
   "trade_backfill": "Trade sources (trade_*) run at every scheduled update until the history is filled; each source stops fetching after 4 minutes and resumes next run. Replace with per-economy release dates once backfill is complete",
   "id_jci_daily": "Yahoo Finance (^JKSE, id_jci_yahoo; benchmark indices, eq_yahoo): daily closes, fetched once a week, Friday 08:15 SGT (to Thursday's close; both sources keep completed sessions only), with the dashboard refresh that Friday",
   "wb_gni": "World Bank: GNI per capita (WDI) updated each July with the new income classifications, revised at other WDI updates; no calendar used, one check a month (15th); exits unchanged when nothing is new",
@@ -251,6 +252,12 @@
    {"ref": "2026-12", "date": "2027-01-15", "from": "2027-01-15", "to": "2027-01-18", "status": "expected"},
    {"ref": "2027-01", "date": "2027-02-15", "from": "2027-02-15", "to": "2027-02-18", "status": "expected"},
    {"ref": "2027-02", "date": "2027-03-15", "from": "2027-03-15", "to": "2027-03-18", "status": "expected"}]},
+  "oil_eia": {"label": "EIA Short-Term Energy Outlook (world oil balance)", "sources": ["oil_eia"], "time_sgt": "08:00", "dates": [
+   {"ref": "2026-11", "date": "2026-11-24", "from": "2026-11-24", "to": "2026-11-30", "status": "expected"},
+   {"ref": "2026-12", "date": "2026-12-08", "from": "2026-12-08", "to": "2026-12-15", "status": "expected"},
+   {"ref": "2027-01", "date": "2027-01-12", "from": "2027-01-12", "to": "2027-01-19", "status": "expected"},
+   {"ref": "2027-02", "date": "2027-02-09", "from": "2027-02-09", "to": "2027-02-16", "status": "expected"},
+   {"ref": "2027-03", "date": "2027-03-09", "from": "2027-03-09", "to": "2027-03-16", "status": "expected"}]},
   "trade_backfill": {"label": "Asia trade dump (national sources): daily backfill runs", "sources": ["trade_jp", "trade_tw", "trade_th", "trade_hk", "trade_ph", "trade_id", "trade_in", "trade_sg", "trade_kr", "trade_cn", "trade_my", "trade_vn", "trade_comtrade"], "time_sgt": "08:00", "dates": [
    {"ref": "backfill", "date": "2026-12-31", "from": "2026-11-10", "to": "2026-12-31", "status": "expected"}]},
   "id_jci_daily": {"label": "Stock indices daily (Yahoo): Indonesia JCI and the 12 Asian benchmarks", "sources": ["id_jci_yahoo", "eq_yahoo"], "time_sgt": "08:00", "dates": [

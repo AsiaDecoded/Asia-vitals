@@ -79,4 +79,5 @@ SOURCES = [
     "trade_my",
     "trade_vn",
     "trade_comtrade",
+    "oil_eia",
 ]
