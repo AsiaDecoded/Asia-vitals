@@ -54,8 +54,7 @@ def last_historical(wb, warnings):
                 if hist:
                     return max(hist)
     if domestic:
-        warnings.append(f"Dates sheet: no international history row; using the domestic last historical month {domestic}")
-        return domestic
+        return domestic          # the workbook has one history marker for all tables
     raise CheckFailed(["Dates sheet: no last historical month"])
 
 
@@ -63,7 +62,8 @@ def parse(blob):
     import openpyxl  # noqa: PLC0415
     wb = openpyxl.load_workbook(io.BytesIO(blob), read_only=True, data_only=True)
     warnings = []
-    steo = next((str(r[1]) for r in wb["Dates"].iter_rows(values_only=True) if r and str(r[0] or "").startswith("Forecast Month")), "")
+    steo = next((str(next((c for c in r[1:] if c is not None), "")) for r in wb["Dates"].iter_rows(values_only=True)
+                 if r and str(r[0] or "").startswith("Forecast Month")), "")
     rows = list(wb["3atab"].iter_rows(values_only=True))
     yr_row = next(i for i, r in enumerate(rows) if any(isinstance(c, int) and 2000 < c < 2100 for c in r[2:]))
     years, y = [], None
