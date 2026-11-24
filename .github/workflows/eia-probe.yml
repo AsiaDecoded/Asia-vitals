@@ -21,4 +21,4 @@ jobs:
       - uses: actions/checkout@v4
         with: {path: repo}
       - name: Layout
-        run: pip install -q openpyxl && python repo/pipeline/tools/eia_probe.py /tmp/out/059a2beb
+        run: pip install -q openpyxl && cp /tmp/out/059a2beb /tmp/steo.xlsx && python repo/pipeline/tools/eia_probe.py /tmp/steo.xlsx
