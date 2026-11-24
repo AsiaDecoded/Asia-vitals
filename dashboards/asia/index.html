@@ -90,6 +90,9 @@
 .ax-table.ax-mfgt td.g { border-left: 1px solid var(--color-border-line); }
 .ax-mfgline { position: relative; width: 100%; }
 .ax-mfgline svg { display: block; width: 100%; height: auto; font-family: var(--font-anthropic-sans); }
+.ax-oil { position: relative; width: 100%; }
+.ax-oil svg { display: block; width: 100%; height: auto; font-family: var(--font-anthropic-sans); }
+.ax-legend span.sw.dash { background: none !important; border-top: 2px dashed currentColor; height: 0; }
 </style>
 
 <div class="ax">
@@ -103,6 +106,7 @@
     <button role="tab" data-tab="mfg" aria-selected="false">Manufacturing</button>
     <button role="tab" data-tab="inflation" aria-selected="false">Inflation</button>
     <button role="tab" data-tab="financial" aria-selected="false">Financial</button>
+    <button role="tab" data-tab="energy" aria-selected="false">Energy</button>
     <button role="tab" data-tab="methodology" aria-selected="false">Methodology</button>
   </nav>
 
@@ -276,6 +280,18 @@
     </section>
   </section>
 
+  <section class="ax-page" id="energy" role="tabpanel" hidden>
+    <section class="ax-sec">
+      <h2>Oil</h2>
+      <div class="ax-card" id="oil-card">
+        <div class="ax-cardhead"><h3>World oil balance</h3></div>
+        <p class="ax-note">Million barrels per day. Supply: world production of crude oil and other liquids. Demand: world consumption of petroleum and other liquid fuels. Dashed: EIA forecast, after <span data-draw="oilHist" data-source="asia_oil_balance">—</span>.</p>
+        <div class="ax-oil" data-draw="oilChart" data-source="asia_oil_balance"></div>
+        <div class="ax-legend" id="oil-legend"></div>
+        <p class="ax-note">Source: US Energy Information Administration, Short-Term Energy Outlook, <span data-draw="oilSteo" data-source="asia_oil_balance">—</span>, table 3a.</p>
+      </div>
+    </section>
+  </section>
   <section class="ax-page" id="financial" role="tabpanel" hidden>
     <section class="ax-sec">
       <h2>Currencies</h2>
@@ -883,6 +899,58 @@
   let gniW = 0;
   new ResizeObserver(() => { const b = document.querySelector('.ax-gni'); if (b && b.clientWidth && b.clientWidth !== gniW) { gniW = b.clientWidth; dash.draw('gniChart'); dash.draw('gnilBars'); } }).observe(document.querySelector('.ax-gni'));
 
+  // Energy tab (24 Nov 2026): world oil supply and demand, EIA STEO
+  const OIL_COL = {supply: '#BD1B21', demand: '#1A8CFF'};
+  const oilRows = () => { const D = dash.data('asia_oil_balance'); return D.status === 'ok' ? D.data.slice().sort((a, b) => (a.date < b.date ? -1 : 1)) : []; };
+  const oilLastHist = (rows) => { const h = rows.filter((r) => !r.forecast); return h.length ? h[h.length - 1].date : null; };
+  dash.draw('oilHist', (n) => { n.textContent = monthLong(oilLastHist(oilRows())); });
+  dash.draw('oilSteo', (n) => { const r = oilRows(); n.textContent = r.length && r[0].steo ? r[0].steo : '—'; });
+  dash.draw('oilChart', (box) => {
+    box.replaceChildren();
+    const leg = document.getElementById('oil-legend'); if (leg) leg.replaceChildren();
+    const rows = oilRows().filter((r) => r.date >= '2022-01-01' && r.supply !== '' && r.demand !== '');
+    if (!rows.length) return;
+    const lastH = oilLastHist(rows);
+    const W = Math.max(320, box.clientWidth || 800), H = Math.round(Math.min(420, Math.max(260, W * 0.42)));
+    const L = 40, R = 16, T = 12, B = 26;
+    const xs = rows.map((r) => mi(r.date)), ys = rows.flatMap((r) => [Number(r.supply), Number(r.demand)]);
+    const x0 = Math.min(...xs), x1 = Math.max(...xs);
+    let lo = Math.floor(Math.min(...ys) / 2) * 2, hi = Math.ceil(Math.max(...ys) / 2) * 2;
+    const step = hi - lo > 16 ? 4 : 2;
+    lo = Math.floor(lo / step) * step; hi = Math.ceil(hi / step) * step;
+    const X = (m) => L + (m - x0) / (x1 - x0 || 1) * (W - L - R), Y = (v) => T + (hi - v) / (hi - lo || 1) * (H - T - B);
+    const svg = document.createElementNS(SVG, 'svg');
+    svg.setAttribute('viewBox', `0 0 ${W} ${H}`); svg.setAttribute('role', 'img');
+    const h = rows.filter((r) => r.date <= lastH).pop() || rows[rows.length - 1];
+    svg.setAttribute('aria-label', `World oil supply and demand, million barrels per day: ${monthLong(h.date)} supply ${f1(Number(h.supply))}, demand ${f1(Number(h.demand))}`);
+    const add = (tag, attrs, text) => { const nd = document.createElementNS(SVG, tag); for (const k in attrs) nd.setAttribute(k, attrs[k]); if (text != null) nd.textContent = text; svg.append(nd); return nd; };
+    if (lastH && lastH < rows[rows.length - 1].date) add('rect', {x: X(mi(lastH)), y: T, width: X(x1) - X(mi(lastH)), height: H - T - B, fill: 'var(--color-border-line)', opacity: 0.25});
+    for (let v = lo; v <= hi + 1e-9; v += step) {
+      add('line', {x1: L, x2: W - R, y1: Y(v), y2: Y(v), stroke: 'var(--color-border-line)', 'stroke-width': 0.6, opacity: 0.7});
+      add('text', {x: L - 6, y: Y(v) + 4, 'text-anchor': 'end', 'font-size': 11, fill: 'var(--color-fg-muted)'}, String(v));
+    }
+    for (let y = Math.ceil(x0 / 12); y <= Math.floor(x1 / 12); y += 1) add('text', {x: X(y * 12), y: H - 8, 'text-anchor': 'start', 'font-size': 11, fill: 'var(--color-fg-muted)'}, String(y));
+    if (lastH && lastH < rows[rows.length - 1].date) add('text', {x: X(mi(lastH)) + 4, y: T + 12, 'font-size': 11, fill: 'var(--color-fg-muted)'}, 'EIA forecast');
+    for (const k of ['supply', 'demand']) {
+      const pts = rows.map((r) => [mi(r.date), Number(r[k]), r.date]);
+      const hist = pts.filter((p) => !lastH || p[2] <= lastH), fc = pts.filter((p) => lastH && p[2] >= lastH);
+      const path = (ps) => ps.map((p, i) => (i ? 'L' : 'M') + X(p[0]).toFixed(1) + ',' + Y(p[1]).toFixed(1)).join('');
+      const a = add('path', {d: path(hist), fill: 'none', stroke: OIL_COL[k], 'stroke-width': 2.2, 'stroke-linejoin': 'round'});
+      const t = document.createElementNS(SVG, 'title'); t.textContent = `${k === 'supply' ? 'Supply' : 'Demand'}: ${f1(hist[hist.length - 1][1])} mb/d (${monthLong(hist[hist.length - 1][2])})`; a.append(t);
+      if (fc.length > 1) add('path', {d: path(fc), fill: 'none', stroke: OIL_COL[k], 'stroke-width': 2, 'stroke-dasharray': '5 4', 'stroke-linejoin': 'round'});
+      if (leg) { const it = el('span'); const sw = el('span', 'sw'); sw.style.background = OIL_COL[k]; it.append(sw, `${k === 'supply' ? 'Supply' : 'Demand'} ${f1(hist[hist.length - 1][1])} (${monthShort(hist[hist.length - 1][2])})`); leg.append(it); }
+    }
+    for (const r of rows) {
+      const hit = add('rect', {x: X(mi(r.date)) - (W - L - R) / (x1 - x0 || 1) / 2, y: T, width: (W - L - R) / (x1 - x0 || 1), height: H - T - B, fill: 'transparent'});
+      const t = document.createElementNS(SVG, 'title');
+      t.textContent = `${monthLong(r.date)}${r.forecast ? ' (EIA forecast)' : ''}: supply ${f1(Number(r.supply))}, demand ${f1(Number(r.demand))}, balance ${f1(Number(r.balance))} mb/d`;
+      hit.append(t);
+    }
+    box.append(svg);
+  });
+  let oilW = 0;
+  new ResizeObserver(() => { const b = document.querySelector('.ax-oil'); if (b && b.clientWidth && b.clientWidth !== oilW) { oilW = b.clientWidth; dash.draw('oilChart'); } }).observe(document.querySelector('.ax-oil'));
+
   let fxW = 0;
   new ResizeObserver(() => { const b = document.querySelector('.ax-fxbars'); if (b && b.clientWidth && b.clientWidth !== fxW) { fxW = b.clientWidth; dash.draw('fxBars'); dash.draw('eqBars'); } }).observe(document.querySelector('.ax-fxbars'));
 
@@ -896,10 +964,11 @@
     document.querySelectorAll('.ax [role=tab]').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === id)));
     document.querySelectorAll('.ax [role=tabpanel]').forEach((p) => { p.hidden = p.id !== id; });
     if (id === 'financial') { dash.draw('fxBars'); dash.draw('eqBars'); }
+    if (id === 'energy') dash.draw('oilChart');
     if (id === 'gdp') { dash.draw('gniChart'); dash.draw('gnilBars'); }
     if (id === 'mfg') { dash.draw('mfgHeat'); dash.draw('mfgShare'); dash.draw('mfgGva'); dash.draw('mfgLine'); }
   };
   document.querySelectorAll('.ax [role=tab]').forEach((t) => t.addEventListener('click', () => { show(t.dataset.tab); dash.setLink(t.dataset.tab); }));
-  if (['methodology', 'financial', 'gdp', 'mfg', 'inflation'].includes(location.hash.slice(1))) show(location.hash.slice(1));
+  if (['methodology', 'financial', 'energy', 'gdp', 'mfg', 'inflation'].includes(location.hash.slice(1))) show(location.hash.slice(1));
 })();
 </script>
