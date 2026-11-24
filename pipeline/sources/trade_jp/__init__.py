@@ -112,6 +112,7 @@ def update(force=False, **_):
         raise CheckFailed([f"partners not found in MOF files: {sorted(miss)}"])
     # oil: principal commodity imports (value columns)
     r61 = list(csv.reader(io.StringIO(texts["d61ma"])))
+    vol = []
     ci = next(i for i, r in enumerate(r61) if r and r[0].strip() == "概況品コード")
     codes, kinds = r61[ci], r61[ci + 1]
     for code, prod, label in (("'30301'", "crude_oil", "原油及び粗油 (30301)"), ("'30303'", "petroleum_products", "石油製品 (30303)")):
@@ -120,12 +121,16 @@ def update(force=False, **_):
         j = None if k is None else (k if kinds[k].strip() == "金額" else k + 1)
         if j is None or kinds[j].strip() != "金額":
             raise CheckFailed([f"d61ma: column {code} not found"])
+        q = k if kinds[k].strip() == "数量" else None
         for r in r61[ci + 2:]:
             d = ym(r[0]) if r else None
             if d and d in live and j < len(r) and num(r[j]) is not None:
                 rows.append(row("imports", "WLD", prod, d, num(r[j]), f"d61ma {label}"))
+            if prod == "crude_oil" and q is not None and d and d in live and q < len(r) and num(r[q]) is not None:
+                vol.append({**row("imports", "WLD", "crude_oil_volume", d, num(r[q]), f"d61ma {label} 数量"), "unit": "kl"})
     trade.to_usd(rows, "jp", 1000)
     rows += trade.eu_sum(rows, trade.EU27)
+    rows += vol         # crude import volume, kL (no US$ conversion)
     # checks
     errors = []
     last = max(live)

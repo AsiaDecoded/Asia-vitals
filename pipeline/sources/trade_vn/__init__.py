@@ -54,6 +54,10 @@ def parse(blob, ym_hint):
             if prod and len(r) > 3 and isinstance(r[3], (int, float)):
                 out.append({"economy": "VN", "flow": flow, "partner": "WLD", "product": prod, "date": d, "value": float(r[3]),
                             "unit": "USD million", "usd_mn": float(r[3]), "usd_calculated": "", "series": f"NSO report {title.strip()} {label}"})
+                if prod == "crude_oil" and isinstance(r[2], (int, float)):     # 'Lượng', thousand tonnes
+                    out.append({"economy": "VN", "flow": flow, "partner": "WLD", "product": "crude_oil_volume", "date": d,
+                                "value": round(float(r[2]) * 1000, 3), "unit": "tonnes", "usd_mn": None, "usd_calculated": "",
+                                "series": f"NSO report {title.strip()} {label} (Lượng, thousand tonnes)"})
     return out
 
 
@@ -76,9 +80,13 @@ def update(force=False, **_):
                 if any(r["date"][:7] == ym for r in rows):
                     return [r for r in rows if r["date"][:7] == ym]
             return []
-        st.get(f"m:{ym}", fetch, refresh=ym >= trade.shift(today, -2), budget=BUDGET)
+        if f"q:{ym}" not in st.data and f"m:{ym}" in st.data and st.fetched >= BUDGET:
+            continue
+        got = st.get(f"q:{ym}", fetch, refresh=ym >= trade.shift(today, -2), budget=BUDGET)
+        if got is not None:
+            st.data.pop(f"m:{ym}", None)
     st.save()
-    rows = [r for v in st.data.values() for r in (v or [])]
+    rows = [r for k, v in st.data.items() for r in (v or []) if k.startswith("q:") or f"q:{k[2:]}" not in st.data]
     if not rows:
         raise CheckFailed(["NSO report tables: nothing read"])
     last = trade.latest(rows)

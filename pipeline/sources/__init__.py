@@ -80,4 +80,5 @@ SOURCES = [
     "trade_vn",
     "trade_comtrade",
     "oil_eia",
+    "oil_crude",
 ]

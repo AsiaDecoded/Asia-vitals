@@ -118,6 +118,10 @@ def kcs_rows(st):
                 v = num(it.get(f))
                 if v is not None:
                     rows.append(row(flow, "WLD", f"HS{code}", ym, v, f"KCS 품목별 HS {code} {it.get('korePrlstNm') or ''}".strip()))
+                w = num(it.get("impTtwg")) if code == "2709" else None
+                if w:
+                    rows.append({**row("imports", "WLD", "crude_oil_volume", ym, w, "KCS 품목별 HS 2709 import weight"),
+                                 "unit": "tonnes", "usd_mn": None})
     return rows
 
 

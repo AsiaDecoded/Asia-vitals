@@ -108,7 +108,8 @@ def update(force=False, **_):
     for (tab, y, m), url in sorted(links.items(), key=lambda kv: (-kv[0][1], -kv[0][2])):
         st.get(f"{tab}:{y}-{m:02d}", lambda: get(url), refresh=y == current and m >= int(time.strftime("%m")) - 3, budget=BUDGET)
     st.save()
-    vals = {}          # (flow, partner, product, y, m) -> (value, is_month, series)
+    vals = {}
+    vols = {}          # (flow, partner, product, y, m) -> (value, is_month, series)
     for key, html in st.data.items():
         tab, ym = key.split(":")
         y, m = int(ym[:4]), int(ym[5:7])
@@ -137,12 +138,27 @@ def update(force=False, **_):
             vcols = [j for j in range(1, len(rows[0])) if any((rr[j] or "").strip().lower().startswith("value") for rr in rows[:6])]
             for r in rows:
                 name = (r[0] or "").lower()
-                prod = "crude_oil" if name.startswith("crude oil") else ("petroleum_products" if "refined petroleum" in name else None)
+                prod = "crude_oil" if re.match(r"crude (petroleum )?oil", name) else ("petroleum_products" if "refined petroleum" in name else None)
                 if prod and vcols and num(r[vcols[0]]) is not None:
                     hdr = " ".join(rr[vcols[0]] for rr in rows[:6])
                     is_month = not re.search(r"1\s*-\s*\d+|1to\d+", hdr) or m == 1
                     vals.setdefault(("imports", "WLD", prod, y, m), (num(r[vcols[0]]), is_month, f"bulletin (14) {r[0]}"))
+                    # quantity sits in the column before the month's value; unit in column 1 (10000T)
+                    qc = vcols[0] - 1
+                    if prod == "crude_oil" and qc > 1 and num(r[qc]) is not None and "quantity" in " ".join(rr[qc] for rr in rows[:6]).lower():
+                        vols.setdefault((y, m), (num(r[qc]), is_month, (r[1] or "").strip(), f"bulletin (14) {r[0]} quantity"))
     rows_out = []
+    for (y, m), (q, is_month, unit, s) in vols.items():
+        if not is_month and m > 1:
+            prev = vols.get((y, m - 1))
+            if not prev or prev[1]:
+                continue
+            q, s = q - prev[0], s + " (year to date less previous month, calculated)"
+        scale = 1e4 if unit.upper() == "10000T" else 1.0 if unit.upper() == "T" else None
+        if scale:
+            rows_out.append({"economy": "CN", "flow": "imports", "partner": "WLD", "product": "crude_oil_volume",
+                             "date": f"{y}-{m:02d}-01", "value": q * scale, "unit": "tonnes", "usd_mn": None,
+                             "usd_calculated": "", "series": s})
     for (flow, p, prod, y, m), (v, is_month, s) in vals.items():
         if not is_month and m > 1:
             prev = vals.get((flow, p, prod, y, m - 1))
