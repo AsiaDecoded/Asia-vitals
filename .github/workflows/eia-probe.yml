@@ -17,21 +17,11 @@ jobs:
           for u in https://www.eia.gov/outlooks/steo/xls/STEO_m.xlsx https://www.eia.gov/outlooks/steo/tables/pdf/3atab.pdf https://www.eia.gov/outlooks/steo/data.php https://www.eia.gov/outlooks/steo/ "https://www.eia.gov/outlooks/steo/data/browser/data/index.php?v=7&f=M&s=0&start=202401&end=202712&map=&linechart=PAPR_WORLD~PATC_WORLD&id=&ctype=linechart&maptype=0&type=csv" "https://api.eia.gov/v2/steo/data/?frequency=monthly&data[0]=value&facets[seriesId][]=PAPR_WORLD"; do
             f=$(echo "$u" | md5sum | cut -c1-8); code=$(curl -sSL -A "$UA" -o "$f" -w "%{http_code} %{content_type} %{size_download}" "$u"); echo "$code $f $u" | tee -a log.txt
           done
-          python3 -m pip install -q openpyxl
-          python3 - <<'PY'
-          import openpyxl, glob
-          for f in glob.glob('*'):
-              try:
-                  wb = openpyxl.load_workbook(f, read_only=True, data_only=True)
-              except Exception:
-                  continue
-              print('XLSX', f, wb.sheetnames)
-              for ws in wb.worksheets:
-                  for r in ws.iter_rows(min_row=1, max_row=200, values_only=True):
-                      if r and any(isinstance(c, str) and c in ('PAPR_WORLD', 'PATC_WORLD', 'T3_STOCKCHG') for c in r):
-                          print(ws.title, [c for c in r[:6]], 'ncols', len(r), 'last', [c for c in r[-6:]])
-                  if ws.title.startswith('3a'):
-                      rows = list(ws.iter_rows(min_row=1, max_row=6, values_only=True))
-                      for r in rows: print('HDR', ws.title, r[:4], r[-4:])
-          PY
           cat log.txt
+      - uses: actions/checkout@v4
+        with: {ref: discovery}
+      - name: Save
+        run: |
+          mkdir -p discovery/eia && cp /tmp/out/059a2beb discovery/eia/STEO_m.xlsx && cp /tmp/out/log.txt discovery/eia/
+          git config user.name "asia-vitals bot"; git config user.email "actions@users.noreply.github.com"
+          git add discovery/eia && git commit -qm "EIA probe" && git push origin discovery
