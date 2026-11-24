@@ -4,13 +4,14 @@
  "latest_month": "2026-09-01",
  "source": "trade_jp",
  "table": "MOF customs suii CSVs d41ma, d42ma001-010, d61ma",
- "processed_at": "2026-11-12T01:32:21Z",
- "rows": 47916,
+ "processed_at": "2026-11-24T11:15:14Z",
+ "rows": 48381,
  "warnings": [],
+ "fingerprint": "1197c43bf9971b42",
  "history": [
   {
    "code": "T2026-09",
-   "processed_at": "2026-11-12T01:32:21Z"
+   "processed_at": "2026-11-24T11:15:14Z"
   }
  ]
 }
