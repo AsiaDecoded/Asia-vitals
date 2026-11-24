@@ -1,11 +1,11 @@
 [
  {
-  "code": "S7d28012f",
-  "label": "EIA STEO None",
-  "steo": "None",
+  "code": "S2026-11",
+  "label": "EIA STEO November 2026",
+  "steo": "November 2026",
   "last_historical": "2026-10",
   "source": "oil_eia",
   "table": "EIA STEO table 3a (STEO_m.xlsx)",
-  "processed_at": "2026-11-24T10:32:24Z"
+  "processed_at": "2026-11-24T10:34:09Z"
  }
 ]
