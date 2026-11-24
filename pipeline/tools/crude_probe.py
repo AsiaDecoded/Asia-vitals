@@ -56,5 +56,5 @@ def idn():
 
 import urllib.error  # noqa: E402
 import urllib.parse  # noqa: E402
-for n, f in (("TH", th), ("TW", tw), ("ID", idn), ("MY", my)):
+for n, f in (("TH", th), ("TW", tw), ("ID", idn)):
     section(n, f)
