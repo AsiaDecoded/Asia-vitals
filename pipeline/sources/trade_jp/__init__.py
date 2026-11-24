@@ -140,7 +140,7 @@ def update(force=False, **_):
                    and r["product"] == "TOTAL" and r["date"] == last)
         if not 0.3 < part / tot < 1:
             errors.append(f"{flow} {last}: listed partners are {part / tot:.0%} of the total")
-    if any(r["usd_mn"] in (None, "") for r in rows if r["date"] >= "1980-01-01"):
+    if any(r["usd_mn"] in (None, "") for r in rows if r["date"] >= "1980-01-01" and r["product"] != "crude_oil_volume"):
         errors.append("US$ conversion missing for some months (BIS yen rate)")
     if errors:
         raise CheckFailed(errors)
