@@ -26,55 +26,35 @@ def section(name, fn):
 
 
 def th():
-    h = get("https://www.eppo.go.th/?p=25878").decode("utf-8", "replace")
-    print("len", len(h))
-    for m in re.findall(r'href="([^"]+)"[^>]*>(.{0,120}?)</a>', h, re.S):
-        t = re.sub(r"<[^>]+>|\s+", " ", m[1]).strip()
-        if re.search(r"xls|2\.1|T02", m[0] + t, re.I):
-            print("LINK", m[0], "|", t[:80])
+    import xlrd
+    for f in ("T02_01_03.xls", "T02_01_03-1.xls"):
+        b = get("https://www.eppo.go.th/wp-content/uploads/2026/06/" + f)
+        wb = xlrd.open_workbook(file_contents=b)
+        print(f, wb.sheet_names())
+        sh = wb.sheet_by_index(0)
+        for i in list(range(min(14, sh.nrows))) + list(range(max(0, sh.nrows - 4), sh.nrows)):
+            print("  ", i, [c for c in sh.row_values(i)[:14]])
 
 
 def tw():
     for sid in (238, 27):
-        b = get(f"https://www.moeaea.gov.tw/ECW/populace/opendata/wHandOpenData_File.ashx?set_id={sid}")
-        print(sid, len(b), b[:1500].decode("utf-8-sig", "replace"))
+        try:
+            b = get(f"https://www.moeaea.gov.tw/ECW/populace/opendata/wHandOpenData_File.ashx?set_id={sid}")
+            print("TWSET", sid, len(b))
+            print(b[:2000].decode("utf-8-sig", "replace"))
+        except Exception as e:  # noqa: BLE001
+            print("TWERR", sid, repr(e)[:300])
 
 
 def idn():
     import os
     key = os.environ.get("BPS_KEY", "")
-    for kw in ("minyak mentah", "impor migas", "volume impor"):
-        u = f"https://webapi.bps.go.id/v1/api/list/model/var/domain/0000/keyword/{urllib.parse.quote(kw)}/key/{key}/"
-        js = json.loads(get(u))
-        data = js.get("data") or []
-        rows = data[1] if len(data) > 1 else []
-        print(kw, js.get("status"), [(r.get("var_id"), r.get("title"), r.get("unit")) for r in rows][:25])
-
-
-def my():
-    import socket
-    socket.setdefaulttimeout(60)
-    body = {"tradeClass": "classification", "hsType": "HS4_digit", "flowTypes": ["Imports"], "frequencyType": "MONTHLY",
-            "years": ["2026"], "months": ["07", "08"], "products": [{"codeValue": "2709", "codeName": ""}]}
-    try:
-        js = json.loads(get("https://metsonline.dosm.gov.my/api/Trade/classification-query", json.dumps(body).encode(), {"Content-Type": "application/json", "Accept": "application/json"}))
-        print("cols", js.get("columns"), str(js.get("items"))[:500], [k for k in js])
-    except Exception as e:  # noqa: BLE001
-        print("ERR", repr(e)[:300])
-
-
-def jp():
-    from sources.trade_jp import fetch
-    r = list(csv.reader(io.StringIO(fetch("d61ma.csv"))))
-    k = next(k for k, c in enumerate(r[4]) if c.strip() == "'30301'")
-    for x in r[:12]:
-        print("ROW", x[0][:30], x[k - 1:k + 3])
-    good = [x for x in r if x and re.match(r"\d{4}/\d{2}", x[0]) and x[k] not in ("-", "")]
-    for x in good[-3:]:
-        print("DATA", x[0], x[k - 1:k + 3])
+    u = f"https://webapi.bps.go.id/v1/api/list/model/data/domain/0000/var/2173/key/{key}/"
+    js = json.loads(get(u))
+    print({k: (str(v)[:600]) for k, v in js.items()})
 
 
 import urllib.error  # noqa: E402
 import urllib.parse  # noqa: E402
-for n, f in (("TH", th), ("TW", tw), ("ID", idn), ("MY", my), ("JP", jp)):
+for n, f in (("TH", th), ("TW", tw), ("ID", idn), ("MY", my)):
     section(n, f)
