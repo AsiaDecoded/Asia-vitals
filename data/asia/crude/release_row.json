@@ -1,0 +1,16 @@
+[
+ {
+  "code": "O2026-10",
+  "label": "Crude oil imports",
+  "latest": {
+   "CN": "2026-09",
+   "IN": "2026-09",
+   "KR": "2026-10",
+   "TH": "2026-09",
+   "VN": "2026-10"
+  },
+  "source": "oil_crude",
+  "table": "national sources (see the source's docstring)",
+  "processed_at": "2026-11-24T11:12:18Z"
+ }
+]

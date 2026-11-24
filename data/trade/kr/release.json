@@ -5,8 +5,8 @@
  "source": "trade_kr",
  "backfill_complete": true,
  "table": "KCS tradedata.go.kr retrieveTrade (국가별, 경제권별, 품목별); BoK ECOS 901Y121 for 1990-1999",
- "processed_at": "2026-11-24T04:38:38Z",
- "rows": 14472,
+ "processed_at": "2026-11-24T11:08:32Z",
+ "rows": 14794,
  "warnings": [],
  "fetched": 11,
  "history": [
@@ -60,7 +60,7 @@
   },
   {
    "code": "T2026-10",
-   "processed_at": "2026-11-24T04:38:38Z"
+   "processed_at": "2026-11-24T11:08:32Z"
   }
  ]
 }
