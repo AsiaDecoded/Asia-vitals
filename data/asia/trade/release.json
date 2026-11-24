@@ -1,9 +1,9 @@
 {
- "code": "Rb7160fadfc",
+ "code": "Rf09ecd3352",
  "label": "452 of 627 CEIC series filled",
  "source": "core.asia_trade",
- "processed_at": "2026-11-23T09:18:12Z",
- "rows": 236607,
+ "processed_at": "2026-11-24T02:04:53Z",
+ "rows": 236608,
  "warnings": [],
  "history": [
   {
@@ -97,6 +97,10 @@
   {
    "code": "Rb7160fadfc",
    "processed_at": "2026-11-23T09:18:12Z"
+  },
+  {
+   "code": "Rf09ecd3352",
+   "processed_at": "2026-11-24T02:04:53Z"
   }
  ]
 }

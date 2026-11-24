@@ -4,7 +4,7 @@
  "latest_month": "2026-09-01",
  "source": "trade_id",
  "table": "BI SEKI V.11, V.20; BPS WebAPI dataexim",
- "processed_at": "2026-11-23T08:53:34Z",
+ "processed_at": "2026-11-24T01:39:58Z",
  "rows": 7353,
  "warnings": [],
  "fetched": 6,
@@ -19,7 +19,7 @@
   },
   {
    "code": "T2026-09h45",
-   "processed_at": "2026-11-23T08:53:34Z"
+   "processed_at": "2026-11-24T01:39:58Z"
   }
  ]
 }
