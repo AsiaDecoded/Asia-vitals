@@ -1,9 +1,9 @@
 {
- "code": "Re9aa887689",
+ "code": "Rc615db9171",
  "label": "453 of 627 CEIC series filled",
  "source": "core.asia_trade",
- "processed_at": "2026-11-24T11:12:47Z",
- "rows": 236743,
+ "processed_at": "2026-11-25T02:08:47Z",
+ "rows": 236753,
  "warnings": [],
  "history": [
   {
@@ -109,6 +109,10 @@
   {
    "code": "Re9aa887689",
    "processed_at": "2026-11-24T11:12:47Z"
+  },
+  {
+   "code": "Rc615db9171",
+   "processed_at": "2026-11-25T02:08:47Z"
   }
  ]
 }

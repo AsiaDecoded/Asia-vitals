@@ -1,4 +1,5 @@
 economy,flow,partner,product,date,value,unit,usd_mn,usd_calculated,series
+IN,exports,WLD,HS8419,2025-10-01,127.92,USD million,127.92,,"TradeStat commoditywise HS4 8419 MCHNRY,PLNT/LABORATORY EQPMNT,W/N ELCTRCLYHEATD,FR"
 IN,exports,WLD,HS8419,2025-11-01,146.3,USD million,146.3,,"TradeStat commoditywise HS4 8419 MCHNRY,PLNT/LABORATORY EQPMNT,W/N ELCTRCLYHEATD,FR"
 IN,exports,WLD,HS8419,2025-12-01,139.38,USD million,139.38,,"TradeStat commoditywise HS4 8419 MCHNRY,PLNT/LABORATORY EQPMNT,W/N ELCTRCLYHEATD,FR"
 IN,exports,WLD,HS8419,2026-01-01,94.02,USD million,94.02,,"TradeStat commoditywise HS4 8419 MCHNRY,PLNT/LABORATORY EQPMNT,W/N ELCTRCLYHEATD,FR"
@@ -10,6 +11,7 @@ IN,exports,WLD,HS8419,2026-06-01,84.98,USD million,84.98,,"TradeStat commoditywi
 IN,exports,WLD,HS8419,2026-07-01,199.32,USD million,199.32,,"TradeStat commoditywise HS4 8419 MCHNRY,PLNT/LABORATORY EQPMNT,W/N ELCTRCLYHEATD,FR"
 IN,exports,WLD,HS8419,2026-08-01,231.97,USD million,231.97,,"TradeStat commoditywise HS4 8419 MCHNRY,PLNT/LABORATORY EQPMNT,W/N ELCTRCLYHEATD,FR"
 IN,exports,WLD,HS8419,2026-09-01,124.61,USD million,124.61,,"TradeStat commoditywise HS4 8419 MCHNRY,PLNT/LABORATORY EQPMNT,W/N ELCTRCLYHEATD,FR"
+IN,exports,WLD,HS8470,2025-10-01,0.43,USD million,0.43,,"TradeStat commoditywise HS4 8470 CALCULTNG AND POCKT-SIZE DATA RECRDNG, REPRDUCNG A"
 IN,exports,WLD,HS8470,2025-11-01,0.36,USD million,0.36,,"TradeStat commoditywise HS4 8470 CALCULTNG AND POCKT-SIZE DATA RECRDNG, REPRDUCNG A"
 IN,exports,WLD,HS8470,2025-12-01,0.57,USD million,0.57,,"TradeStat commoditywise HS4 8470 CALCULTNG AND POCKT-SIZE DATA RECRDNG, REPRDUCNG A"
 IN,exports,WLD,HS8470,2026-01-01,0.35,USD million,0.35,,"TradeStat commoditywise HS4 8470 CALCULTNG AND POCKT-SIZE DATA RECRDNG, REPRDUCNG A"
@@ -21,6 +23,7 @@ IN,exports,WLD,HS8470,2026-06-01,0.55,USD million,0.55,,"TradeStat commoditywise
 IN,exports,WLD,HS8470,2026-07-01,0.81,USD million,0.81,,"TradeStat commoditywise HS4 8470 CALCULTNG AND POCKT-SIZE DATA RECRDNG, REPRDUCNG A"
 IN,exports,WLD,HS8470,2026-08-01,0.24,USD million,0.24,,"TradeStat commoditywise HS4 8470 CALCULTNG AND POCKT-SIZE DATA RECRDNG, REPRDUCNG A"
 IN,exports,WLD,HS8470,2026-09-01,0.77,USD million,0.77,,"TradeStat commoditywise HS4 8470 CALCULTNG AND POCKT-SIZE DATA RECRDNG, REPRDUCNG A"
+IN,exports,WLD,HS8471,2025-10-01,106.45,USD million,106.45,,TradeStat commoditywise HS4 8471 AUTOMATIC DATA PROCESSING MACHINES AND UNITS
 IN,exports,WLD,HS8471,2025-11-01,75.82,USD million,75.82,,TradeStat commoditywise HS4 8471 AUTOMATIC DATA PROCESSING MACHINES AND UNITS
 IN,exports,WLD,HS8471,2025-12-01,90.66,USD million,90.66,,TradeStat commoditywise HS4 8471 AUTOMATIC DATA PROCESSING MACHINES AND UNITS
 IN,exports,WLD,HS8471,2026-01-01,99.75,USD million,99.75,,TradeStat commoditywise HS4 8471 AUTOMATIC DATA PROCESSING MACHINES AND UNITS
@@ -32,6 +35,7 @@ IN,exports,WLD,HS8471,2026-06-01,92.39,USD million,92.39,,TradeStat commoditywis
 IN,exports,WLD,HS8471,2026-07-01,102.86,USD million,102.86,,TradeStat commoditywise HS4 8471 AUTOMATIC DATA PROCESSING MACHINES AND UNITS
 IN,exports,WLD,HS8471,2026-08-01,73.36,USD million,73.36,,TradeStat commoditywise HS4 8471 AUTOMATIC DATA PROCESSING MACHINES AND UNITS
 IN,exports,WLD,HS8471,2026-09-01,108.77,USD million,108.77,,TradeStat commoditywise HS4 8471 AUTOMATIC DATA PROCESSING MACHINES AND UNITS
+IN,exports,WLD,HS8472,2025-10-01,30.78,USD million,30.78,,"TradeStat commoditywise HS4 8472 OTHER OFFICE MACHINES (FOR EXAMPLE, HECTOGRAPH OR "
 IN,exports,WLD,HS8472,2025-11-01,38.53,USD million,38.53,,"TradeStat commoditywise HS4 8472 OTHER OFFICE MACHINES (FOR EXAMPLE, HECTOGRAPH OR "
 IN,exports,WLD,HS8472,2025-12-01,33.64,USD million,33.64,,"TradeStat commoditywise HS4 8472 OTHER OFFICE MACHINES (FOR EXAMPLE, HECTOGRAPH OR "
 IN,exports,WLD,HS8472,2026-01-01,27.66,USD million,27.66,,"TradeStat commoditywise HS4 8472 OTHER OFFICE MACHINES (FOR EXAMPLE, HECTOGRAPH OR "
@@ -43,6 +47,7 @@ IN,exports,WLD,HS8472,2026-06-01,21.66,USD million,21.66,,"TradeStat commoditywi
 IN,exports,WLD,HS8472,2026-07-01,29.37,USD million,29.37,,"TradeStat commoditywise HS4 8472 OTHER OFFICE MACHINES (FOR EXAMPLE, HECTOGRAPH OR "
 IN,exports,WLD,HS8472,2026-08-01,33.02,USD million,33.02,,"TradeStat commoditywise HS4 8472 OTHER OFFICE MACHINES (FOR EXAMPLE, HECTOGRAPH OR "
 IN,exports,WLD,HS8472,2026-09-01,35.45,USD million,35.45,,"TradeStat commoditywise HS4 8472 OTHER OFFICE MACHINES (FOR EXAMPLE, HECTOGRAPH OR "
+IN,exports,WLD,HS8473,2025-10-01,40.35,USD million,40.35,,"TradeStat commoditywise HS4 8473 PARTS AND ACCESSORIES OTH THN COVERS, CARRYING CAS"
 IN,exports,WLD,HS8473,2025-11-01,54.91,USD million,54.91,,"TradeStat commoditywise HS4 8473 PARTS AND ACCESSORIES OTH THN COVERS, CARRYING CAS"
 IN,exports,WLD,HS8473,2025-12-01,50.66,USD million,50.66,,"TradeStat commoditywise HS4 8473 PARTS AND ACCESSORIES OTH THN COVERS, CARRYING CAS"
 IN,exports,WLD,HS8473,2026-01-01,49.76,USD million,49.76,,"TradeStat commoditywise HS4 8473 PARTS AND ACCESSORIES OTH THN COVERS, CARRYING CAS"
@@ -78,6 +83,7 @@ IN,exports,WLD,TOTAL,2026-06-01,40014.06,USD million,40014.06,,TradeStat commodi
 IN,exports,WLD,TOTAL,2026-07-01,44267.64,USD million,44267.64,,TradeStat commoditywise HS2 total India's Total Export
 IN,exports,WLD,TOTAL,2026-08-01,43722.55,USD million,43722.55,,TradeStat commoditywise HS2 total India's Total Export
 IN,exports,WLD,TOTAL,2026-09-01,44355.26,USD million,44355.26,,TradeStat commoditywise HS2 total India's Total Export
+IN,exports,US,TOTAL,2025-10-01,6262.29,USD million,6262.29,,TradeStat country_wise_all_commodities US
 IN,exports,US,TOTAL,2025-11-01,6930.42,USD million,6930.42,,TradeStat country_wise_all_commodities US
 IN,exports,US,TOTAL,2025-12-01,6872.96,USD million,6872.96,,TradeStat country_wise_all_commodities US
 IN,exports,US,TOTAL,2026-01-01,6605.05,USD million,6605.05,,TradeStat country_wise_all_commodities US
@@ -210,6 +216,7 @@ IN,exports,VN,TOTAL,2026-06-01,646.02,USD million,646.02,,TradeStat country_wise
 IN,exports,VN,TOTAL,2026-07-01,629.82,USD million,629.82,,TradeStat country_wise_all_commodities VN
 IN,exports,VN,TOTAL,2026-08-01,602.29,USD million,602.29,,TradeStat country_wise_all_commodities VN
 IN,exports,VN,TOTAL,2026-09-01,648.63,USD million,648.63,,TradeStat country_wise_all_commodities VN
+IN,imports,WLD,HS2709,2025-10-01,11291.12,USD million,11291.12,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M
 IN,imports,WLD,HS2709,2025-11-01,10945.46,USD million,10945.46,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M
 IN,imports,WLD,HS2709,2025-12-01,11282.97,USD million,11282.97,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M
 IN,imports,WLD,HS2709,2026-01-01,10274.36,USD million,10274.36,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M
@@ -221,6 +228,7 @@ IN,imports,WLD,HS2709,2026-06-01,14765.1,USD million,14765.1,,TradeStat commodit
 IN,imports,WLD,HS2709,2026-07-01,14212.43,USD million,14212.43,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M
 IN,imports,WLD,HS2709,2026-08-01,12239.58,USD million,12239.58,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M
 IN,imports,WLD,HS2709,2026-09-01,14247.06,USD million,14247.06,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M
+IN,imports,WLD,HS2710,2025-10-01,901.04,USD million,901.04,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER 
 IN,imports,WLD,HS2710,2025-11-01,663.99,USD million,663.99,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER 
 IN,imports,WLD,HS2710,2025-12-01,617.48,USD million,617.48,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER 
 IN,imports,WLD,HS2710,2026-01-01,606.71,USD million,606.71,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER 
@@ -232,6 +240,7 @@ IN,imports,WLD,HS2710,2026-06-01,1055.18,USD million,1055.18,,TradeStat commodit
 IN,imports,WLD,HS2710,2026-07-01,892.87,USD million,892.87,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER 
 IN,imports,WLD,HS2710,2026-08-01,985.37,USD million,985.37,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER 
 IN,imports,WLD,HS2710,2026-09-01,658.82,USD million,658.82,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER 
+IN,imports,WLD,TOTAL,2025-10-01,76688.9,USD million,76688.9,,TradeStat commoditywise HS2 total India's Total Import
 IN,imports,WLD,TOTAL,2025-11-01,62970.11,USD million,62970.11,,TradeStat commoditywise HS2 total India's Total Import
 IN,imports,WLD,TOTAL,2025-12-01,64389.73,USD million,64389.73,,TradeStat commoditywise HS2 total India's Total Import
 IN,imports,WLD,TOTAL,2026-01-01,71708.97,USD million,71708.97,,TradeStat commoditywise HS2 total India's Total Import
@@ -243,6 +252,7 @@ IN,imports,WLD,TOTAL,2026-06-01,70779.77,USD million,70779.77,,TradeStat commodi
 IN,imports,WLD,TOTAL,2026-07-01,76158.34,USD million,76158.34,,TradeStat commoditywise HS2 total India's Total Import
 IN,imports,WLD,TOTAL,2026-08-01,71000.33,USD million,71000.33,,TradeStat commoditywise HS2 total India's Total Import
 IN,imports,WLD,TOTAL,2026-09-01,74604.61,USD million,74604.61,,TradeStat commoditywise HS2 total India's Total Import
+IN,imports,US,TOTAL,2025-10-01,4515.07,USD million,4515.07,,TradeStat country_wise_all_commodities US
 IN,imports,US,TOTAL,2025-11-01,5260.68,USD million,5260.68,,TradeStat country_wise_all_commodities US
 IN,imports,US,TOTAL,2025-12-01,4153.91,USD million,4153.91,,TradeStat country_wise_all_commodities US
 IN,imports,US,TOTAL,2026-01-01,4765.29,USD million,4765.29,,TradeStat country_wise_all_commodities US
