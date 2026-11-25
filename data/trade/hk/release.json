@@ -5,12 +5,10 @@
  "source": "trade_hk",
  "backfill_complete": true,
  "table": "C&SD Trade-IDDS API",
- "processed_at": "2026-11-25T01:36:14Z",
+ "processed_at": "2026-11-25T13:03:42Z",
  "rows": 29956,
- "warnings": [
-  "IDDS usage limit reached after 0 calls; backfill continues next run ({'name': 'Usage limit', 'code': 2, 'description': 'Usage limit is reached', 'apiHelp': 'https://tradeidds.censtatd.gov.hk/PageID/ApiSpec', 'message': ['You have reached the usage limit of API Call, please try again later.']})"
- ],
- "fetched": 0,
+ "warnings": [],
+ "fetched": 32,
  "history": [
   {
    "code": "T2025-12b400",
@@ -18,7 +16,7 @@
   },
   {
    "code": "T2026-09",
-   "processed_at": "2026-11-25T01:36:14Z"
+   "processed_at": "2026-11-25T13:03:42Z"
   }
  ]
 }

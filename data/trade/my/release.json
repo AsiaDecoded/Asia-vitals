@@ -1,24 +1,24 @@
 {
- "code": "T2026-09",
- "label": "2026-09",
- "latest_month": "2026-09-01",
+ "code": "T2026-10",
+ "label": "2026-10",
+ "latest_month": "2026-10-01",
  "source": "trade_my",
  "table": "OpenDOSM trade_headline",
- "processed_at": "2026-11-25T02:04:16Z",
- "rows": 2622,
+ "processed_at": "2026-11-25T13:34:41Z",
+ "rows": 2626,
  "warnings": [
   "METS Exports HS2_digit ['85'] 2012-2016: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
   "METS Exports HS2_digit ['85'] 2017-2021: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
   "METS Exports HS2_digit ['85'] 2022-2026: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
   "METS Exports HS4_digit ['8419', '8470'] 2012-2016: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
   "METS Exports HS4_digit ['8419', '8470'] 2017-2021: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
-  "METS Exports HS4_digit ['8419', '8470'] 2022-2026: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
+  "METS Exports HS4_digit ['8419', '8470'] 2022-2026: URLError(TimeoutError('_ssl.c:994: The handshake operation timed out'))",
   "METS Imports HS4_digit ['2709', '2710'] 2010-2014: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
   "METS Imports HS4_digit ['2709', '2710'] 2015-2019: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
   "METS Imports HS4_digit ['2709', '2710'] 2020-2024: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))",
   "METS Imports HS4_digit ['2709', '2710'] 2025-2026: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))"
  ],
- "fingerprint": "14036fbbd64e0b2d",
+ "fingerprint": "89ea528a3eb8dc15",
  "hs": 2,
  "fetched": 0,
  "partners_done": false,
@@ -26,6 +26,10 @@
   {
    "code": "T2026-09",
    "processed_at": "2026-11-25T02:04:16Z"
+  },
+  {
+   "code": "T2026-10",
+   "processed_at": "2026-11-25T13:34:41Z"
   }
  ]
 }

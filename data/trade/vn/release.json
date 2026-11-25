@@ -4,10 +4,10 @@
  "latest_month": "2026-10-01",
  "source": "trade_vn",
  "table": "NSO monthly report tables 26, 27",
- "processed_at": "2026-11-25T02:07:18Z",
+ "processed_at": "2026-11-25T13:35:00Z",
  "rows": 63,
  "warnings": [],
- "fetched": 29,
+ "fetched": 3,
  "history": [
   {
    "code": "T2026-10h30",
@@ -23,7 +23,7 @@
   },
   {
    "code": "T2026-10h109",
-   "processed_at": "2026-11-25T02:07:18Z"
+   "processed_at": "2026-11-25T13:35:00Z"
   }
  ]
 }

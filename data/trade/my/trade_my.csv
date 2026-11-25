@@ -439,7 +439,8 @@ MY,domestic_exports,WLD,TOTAL,2026-05-01,143137086167.0,MYR,36227.3891,y,OpenDOS
 MY,domestic_exports,WLD,TOTAL,2026-06-01,138594752052.0,MYR,34058.8624,y,OpenDOSM trade_headline exports_domestic
 MY,domestic_exports,WLD,TOTAL,2026-07-01,141336273064.0,MYR,34618.0374,y,OpenDOSM trade_headline exports_domestic
 MY,domestic_exports,WLD,TOTAL,2026-08-01,150982653033.0,MYR,37141.8948,y,OpenDOSM trade_headline exports_domestic
-MY,domestic_exports,WLD,TOTAL,2026-09-01,162032641213.0,MYR,39807.6119,y,OpenDOSM trade_headline exports_domestic
+MY,domestic_exports,WLD,TOTAL,2026-09-01,162775700411.0,MYR,39990.1641,y,OpenDOSM trade_headline exports_domestic
+MY,domestic_exports,WLD,TOTAL,2026-10-01,175144050779.0,MYR,42904.8963,y,OpenDOSM trade_headline exports_domestic
 MY,exports,WLD,TOTAL,1990-01-01,6030232066.0,MYR,2230.0369,y,OpenDOSM trade_headline exports
 MY,exports,WLD,TOTAL,1990-02-01,5378513116.0,MYR,1989.7147,y,OpenDOSM trade_headline exports
 MY,exports,WLD,TOTAL,1990-03-01,6433553466.0,MYR,2367.9283,y,OpenDOSM trade_headline exports
@@ -880,7 +881,8 @@ MY,exports,WLD,TOTAL,2026-05-01,183860595199.0,MYR,46534.3364,y,OpenDOSM trade_h
 MY,exports,WLD,TOTAL,2026-06-01,177917836119.0,MYR,43722.284,y,OpenDOSM trade_headline exports
 MY,exports,WLD,TOTAL,2026-07-01,193550477483.0,MYR,47407.0635,y,OpenDOSM trade_headline exports
 MY,exports,WLD,TOTAL,2026-08-01,191033198272.0,MYR,46994.3719,y,OpenDOSM trade_headline exports
-MY,exports,WLD,TOTAL,2026-09-01,215112665290.0,MYR,52848.1264,y,OpenDOSM trade_headline exports
+MY,exports,WLD,TOTAL,2026-09-01,215755791490.0,MYR,53006.1274,y,OpenDOSM trade_headline exports
+MY,exports,WLD,TOTAL,2026-10-01,239203680277.0,MYR,58597.5319,y,OpenDOSM trade_headline exports
 MY,exports,US,TOTAL,2024-01-01,13472547761.0,MYR,2874.7986,y,"METS HS2 x partner, sum over chapters (calculated)"
 MY,exports,US,TOTAL,2024-02-01,13575061116.0,MYR,2847.1872,y,"METS HS2 x partner, sum over chapters (calculated)"
 MY,exports,US,TOTAL,2024-03-01,15034839518.0,MYR,3188.0614,y,"METS HS2 x partner, sum over chapters (calculated)"
@@ -1750,7 +1752,8 @@ MY,imports,WLD,TOTAL,2026-05-01,143987153881.0,MYR,36442.5376,y,OpenDOSM trade_h
 MY,imports,WLD,TOTAL,2026-06-01,162140087784.0,MYR,39844.9931,y,OpenDOSM trade_headline imports
 MY,imports,WLD,TOTAL,2026-07-01,171017557495.0,MYR,41887.9887,y,OpenDOSM trade_headline imports
 MY,imports,WLD,TOTAL,2026-08-01,162947819906.0,MYR,40085.3387,y,OpenDOSM trade_headline imports
-MY,imports,WLD,TOTAL,2026-09-01,181388948021.0,MYR,44563.0016,y,OpenDOSM trade_headline imports
+MY,imports,WLD,TOTAL,2026-09-01,181400900592.0,MYR,44565.9381,y,OpenDOSM trade_headline imports
+MY,imports,WLD,TOTAL,2026-10-01,197407978186.0,MYR,48358.8726,y,OpenDOSM trade_headline imports
 MY,imports,US,TOTAL,2024-01-01,8624842032.0,MYR,1840.3857,y,"METS HS2 x partner, sum over chapters (calculated)"
 MY,imports,US,TOTAL,2024-02-01,7665000434.0,MYR,1607.6312,y,"METS HS2 x partner, sum over chapters (calculated)"
 MY,imports,US,TOTAL,2024-03-01,8550189622.0,MYR,1813.0243,y,"METS HS2 x partner, sum over chapters (calculated)"
@@ -2620,4 +2623,5 @@ MY,re_exports,WLD,TOTAL,2026-05-01,40723509032.0,MYR,10306.9473,y,OpenDOSM trade
 MY,re_exports,WLD,TOTAL,2026-06-01,39323084067.0,MYR,9663.4215,y,OpenDOSM trade_headline re_exports
 MY,re_exports,WLD,TOTAL,2026-07-01,52214204419.0,MYR,12789.0261,y,OpenDOSM trade_headline re_exports
 MY,re_exports,WLD,TOTAL,2026-08-01,40050545239.0,MYR,9852.4771,y,OpenDOSM trade_headline re_exports
-MY,re_exports,WLD,TOTAL,2026-09-01,53080024077.0,MYR,13040.5145,y,OpenDOSM trade_headline re_exports
+MY,re_exports,WLD,TOTAL,2026-09-01,52980091079.0,MYR,13015.9633,y,OpenDOSM trade_headline re_exports
+MY,re_exports,WLD,TOTAL,2026-10-01,64059629498.0,MYR,15692.6356,y,OpenDOSM trade_headline re_exports
