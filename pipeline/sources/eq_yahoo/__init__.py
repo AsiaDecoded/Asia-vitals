@@ -41,6 +41,7 @@ INDICES = {
     "PH": ("Philippines", "PSEi", ["cnbc:.PSI"]),
     "VN": ("Vietnam", "VN-Index", ["cnbc:.VNI"]),
     "US": ("United States", "S&P 500", ["cnbc:.SPX", "^GSPC"]),   # benchmark for comparison (asked 25 Nov 2026)
+    "USN": ("United States", "Nasdaq Composite", ["cnbc:.IXIC", "^IXIC"]),   # second US benchmark (asked 25 Nov 2026)
 }
 
 
