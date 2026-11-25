@@ -40,6 +40,7 @@ INDICES = {
     "SG": ("Singapore", "Straits Times Index", ["cnbc:.STI", "^STI"]),
     "PH": ("Philippines", "PSEi", ["cnbc:.PSI"]),
     "VN": ("Vietnam", "VN-Index", ["cnbc:.VNI"]),
+    "US": ("United States", "S&P 500", ["cnbc:.SPX", "^GSPC"]),   # benchmark for comparison (asked 25 Nov 2026)
 }
 
 
