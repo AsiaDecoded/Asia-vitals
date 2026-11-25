@@ -1,15 +1,15 @@
 {
- "code": "E2026-11-24-a0672a",
+ "code": "E2026-11-24-187b02",
  "label": "CNBC daily closes to 2026-11-24",
  "latest_date": "2026-11-24",
- "economies": "JP KR TW HK CN IN ID TH MY SG PH VN US",
- "processed_at": "2026-11-25T06:09:26Z",
- "rows": 13,
+ "economies": "JP KR TW HK CN IN ID TH MY SG PH VN US USN",
+ "processed_at": "2026-11-25T06:37:07Z",
+ "rows": 14,
  "warnings": [
   "latest dates differ: IN 2026-11-23, VN 2026-11-23"
  ],
- "fingerprint": "a0672aa5e725eb94",
- "long_rows": 111699,
+ "fingerprint": "187b0273e1e936c4",
+ "long_rows": 120987,
  "tickers": {
   "JP": "cnbc:.N225",
   "KR": "cnbc:.KS11",
@@ -23,7 +23,8 @@
   "SG": "cnbc:.STI",
   "PH": "cnbc:.PSI",
   "VN": "cnbc:.VNI",
-  "US": "cnbc:.SPX"
+  "US": "cnbc:.SPX",
+  "USN": "cnbc:.IXIC"
  },
  "history": [
   {
@@ -73,6 +74,10 @@
   {
    "code": "E2026-11-24-a0672a",
    "processed_at": "2026-11-25T06:09:26Z"
+  },
+  {
+   "code": "E2026-11-24-187b02",
+   "processed_at": "2026-11-25T06:37:07Z"
   }
  ]
 }
