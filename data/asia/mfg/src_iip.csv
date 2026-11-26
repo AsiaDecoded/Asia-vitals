@@ -4092,7 +4092,8 @@ SG,M,2026-05-01,19,90.612,-12.25,y,EDB cluster/segment: Petroleum (not ISIC)
 SG,M,2026-06-01,19,87.827,-10.24,y,EDB cluster/segment: Petroleum (not ISIC)
 SG,M,2026-07-01,19,94.998,-6.98,y,EDB cluster/segment: Petroleum (not ISIC)
 SG,M,2026-08-01,19,91.977,-11.76,y,EDB cluster/segment: Petroleum (not ISIC)
-SG,M,2026-09-01,19,99.264,4.58,y,EDB cluster/segment: Petroleum (not ISIC)
+SG,M,2026-09-01,19,99.291,4.61,y,EDB cluster/segment: Petroleum (not ISIC)
+SG,M,2026-10-01,19,104.121,7.84,y,EDB cluster/segment: Petroleum (not ISIC)
 SG,M,1992-01-01,20,15.613,,,EDB cluster/segment: Petrochemicals (not ISIC)
 SG,M,1992-02-01,20,15.522,,,EDB cluster/segment: Petrochemicals (not ISIC)
 SG,M,1992-03-01,20,16.43,,,EDB cluster/segment: Petrochemicals (not ISIC)
@@ -4509,7 +4510,8 @@ SG,M,2026-05-01,20,65.434,-42.27,y,EDB cluster/segment: Petrochemicals (not ISIC
 SG,M,2026-06-01,20,57.114,-52.08,y,EDB cluster/segment: Petrochemicals (not ISIC)
 SG,M,2026-07-01,20,58.884,-48.44,y,EDB cluster/segment: Petrochemicals (not ISIC)
 SG,M,2026-08-01,20,47.593,-50.01,y,EDB cluster/segment: Petrochemicals (not ISIC)
-SG,M,2026-09-01,20,65.295,-24.35,y,EDB cluster/segment: Petrochemicals (not ISIC)
+SG,M,2026-09-01,20,65.294,-24.35,y,EDB cluster/segment: Petrochemicals (not ISIC)
+SG,M,2026-10-01,20,69.645,-23.08,y,EDB cluster/segment: Petrochemicals (not ISIC)
 SG,M,1992-01-01,21,4.961,,,EDB cluster/segment: Pharmaceuticals (not ISIC)
 SG,M,1992-02-01,21,3.382,,,EDB cluster/segment: Pharmaceuticals (not ISIC)
 SG,M,1992-03-01,21,6.726,,,EDB cluster/segment: Pharmaceuticals (not ISIC)
@@ -4921,12 +4923,13 @@ SG,M,2025-12-01,21,51.57,-40.1,y,EDB cluster/segment: Pharmaceuticals (not ISIC)
 SG,M,2026-01-01,21,66.266,-40.14,y,EDB cluster/segment: Pharmaceuticals (not ISIC)
 SG,M,2026-02-01,21,62.931,-14.51,y,EDB cluster/segment: Pharmaceuticals (not ISIC)
 SG,M,2026-03-01,21,74.956,-14.58,y,EDB cluster/segment: Pharmaceuticals (not ISIC)
-SG,M,2026-04-01,21,42.313,-35.32,y,EDB cluster/segment: Pharmaceuticals (not ISIC)
+SG,M,2026-04-01,21,41.991,-35.81,y,EDB cluster/segment: Pharmaceuticals (not ISIC)
 SG,M,2026-05-01,21,39.192,-45.69,y,EDB cluster/segment: Pharmaceuticals (not ISIC)
-SG,M,2026-06-01,21,66.211,-32.6,y,EDB cluster/segment: Pharmaceuticals (not ISIC)
-SG,M,2026-07-01,21,61.079,-9.18,y,EDB cluster/segment: Pharmaceuticals (not ISIC)
+SG,M,2026-06-01,21,66.267,-32.54,y,EDB cluster/segment: Pharmaceuticals (not ISIC)
+SG,M,2026-07-01,21,61.11,-9.13,y,EDB cluster/segment: Pharmaceuticals (not ISIC)
 SG,M,2026-08-01,21,61.551,-3.99,y,EDB cluster/segment: Pharmaceuticals (not ISIC)
 SG,M,2026-09-01,21,64.392,-65.92,y,EDB cluster/segment: Pharmaceuticals (not ISIC)
+SG,M,2026-10-01,21,50.499,-73.03,y,EDB cluster/segment: Pharmaceuticals (not ISIC)
 SG,M,1983-01-01,elec,3.603,,,EDB cluster/segment: Electronics Cluster (not ISIC)
 SG,M,1983-02-01,elec,3.261,,,EDB cluster/segment: Electronics Cluster (not ISIC)
 SG,M,1983-03-01,elec,4.478,,,EDB cluster/segment: Electronics Cluster (not ISIC)
@@ -5443,15 +5446,16 @@ SG,M,2025-09-01,elec,109.968,16.69,y,EDB cluster/segment: Electronics Cluster (n
 SG,M,2025-10-01,elec,124.05,25.21,y,EDB cluster/segment: Electronics Cluster (not ISIC)
 SG,M,2025-11-01,elec,116.414,13.59,y,EDB cluster/segment: Electronics Cluster (not ISIC)
 SG,M,2025-12-01,elec,112.879,19.63,y,EDB cluster/segment: Electronics Cluster (not ISIC)
-SG,M,2026-01-01,elec,114.431,23.53,y,EDB cluster/segment: Electronics Cluster (not ISIC)
-SG,M,2026-02-01,elec,108.578,33.05,y,EDB cluster/segment: Electronics Cluster (not ISIC)
-SG,M,2026-03-01,elec,105.651,20.84,y,EDB cluster/segment: Electronics Cluster (not ISIC)
-SG,M,2026-04-01,elec,121.632,33.5,y,EDB cluster/segment: Electronics Cluster (not ISIC)
-SG,M,2026-05-01,elec,132.321,49.48,y,EDB cluster/segment: Electronics Cluster (not ISIC)
-SG,M,2026-06-01,elec,112.299,22.65,y,EDB cluster/segment: Electronics Cluster (not ISIC)
-SG,M,2026-07-01,elec,120.302,11.9,y,EDB cluster/segment: Electronics Cluster (not ISIC)
-SG,M,2026-08-01,elec,123.591,28.35,y,EDB cluster/segment: Electronics Cluster (not ISIC)
-SG,M,2026-09-01,elec,116.25,5.71,y,EDB cluster/segment: Electronics Cluster (not ISIC)
+SG,M,2026-01-01,elec,115.043,24.19,y,EDB cluster/segment: Electronics Cluster (not ISIC)
+SG,M,2026-02-01,elec,109.091,33.68,y,EDB cluster/segment: Electronics Cluster (not ISIC)
+SG,M,2026-03-01,elec,106.47,21.77,y,EDB cluster/segment: Electronics Cluster (not ISIC)
+SG,M,2026-04-01,elec,122.237,34.16,y,EDB cluster/segment: Electronics Cluster (not ISIC)
+SG,M,2026-05-01,elec,132.992,50.24,y,EDB cluster/segment: Electronics Cluster (not ISIC)
+SG,M,2026-06-01,elec,112.974,23.39,y,EDB cluster/segment: Electronics Cluster (not ISIC)
+SG,M,2026-07-01,elec,120.985,12.53,y,EDB cluster/segment: Electronics Cluster (not ISIC)
+SG,M,2026-08-01,elec,124.264,29.05,y,EDB cluster/segment: Electronics Cluster (not ISIC)
+SG,M,2026-09-01,elec,116.987,6.38,y,EDB cluster/segment: Electronics Cluster (not ISIC)
+SG,M,2026-10-01,elec,132.278,6.63,y,EDB cluster/segment: Electronics Cluster (not ISIC)
 SG,M,1983-01-01,mfg,8.786,,,EDB cluster/segment: Total (not ISIC)
 SG,M,1983-02-01,mfg,6.962,,,EDB cluster/segment: Total (not ISIC)
 SG,M,1983-03-01,mfg,8.883,,,EDB cluster/segment: Total (not ISIC)
@@ -5968,15 +5972,16 @@ SG,M,2025-09-01,mfg,107.134,6.05,y,EDB cluster/segment: Total (not ISIC)
 SG,M,2025-10-01,mfg,113.605,15.02,y,EDB cluster/segment: Total (not ISIC)
 SG,M,2025-11-01,mfg,104.179,8.16,y,EDB cluster/segment: Total (not ISIC)
 SG,M,2025-12-01,mfg,109.45,10.94,y,EDB cluster/segment: Total (not ISIC)
-SG,M,2026-01-01,mfg,107.908,9.52,y,EDB cluster/segment: Total (not ISIC)
-SG,M,2026-02-01,mfg,92.215,7.25,y,EDB cluster/segment: Total (not ISIC)
-SG,M,2026-03-01,mfg,102.967,6.36,y,EDB cluster/segment: Total (not ISIC)
-SG,M,2026-04-01,mfg,107.683,13.73,y,EDB cluster/segment: Total (not ISIC)
-SG,M,2026-05-01,mfg,108.675,17.91,y,EDB cluster/segment: Total (not ISIC)
-SG,M,2026-06-01,mfg,107.957,8.32,y,EDB cluster/segment: Total (not ISIC)
-SG,M,2026-07-01,mfg,112.598,7.49,y,EDB cluster/segment: Total (not ISIC)
-SG,M,2026-08-01,mfg,107.373,15.39,y,EDB cluster/segment: Total (not ISIC)
-SG,M,2026-09-01,mfg,110.809,3.43,y,EDB cluster/segment: Total (not ISIC)
+SG,M,2026-01-01,mfg,108.096,9.71,y,EDB cluster/segment: Total (not ISIC)
+SG,M,2026-02-01,mfg,92.333,7.39,y,EDB cluster/segment: Total (not ISIC)
+SG,M,2026-03-01,mfg,106.172,9.67,y,EDB cluster/segment: Total (not ISIC)
+SG,M,2026-04-01,mfg,107.826,13.88,y,EDB cluster/segment: Total (not ISIC)
+SG,M,2026-05-01,mfg,108.943,18.2,y,EDB cluster/segment: Total (not ISIC)
+SG,M,2026-06-01,mfg,108.27,8.64,y,EDB cluster/segment: Total (not ISIC)
+SG,M,2026-07-01,mfg,112.782,7.67,y,EDB cluster/segment: Total (not ISIC)
+SG,M,2026-08-01,mfg,108.311,16.4,y,EDB cluster/segment: Total (not ISIC)
+SG,M,2026-09-01,mfg,112.507,5.02,y,EDB cluster/segment: Total (not ISIC)
+SG,M,2026-10-01,mfg,120.586,6.14,y,EDB cluster/segment: Total (not ISIC)
 SG,M,2011-01-01,nonelec,69.462,,,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
 SG,M,2011-02-01,nonelec,61.419,,,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
 SG,M,2011-03-01,nonelec,80.252,,,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
@@ -6157,15 +6162,16 @@ SG,M,2025-09-01,nonelec,105.232,-1.83,y,"Total less Electronics cluster, EDB imp
 SG,M,2025-10-01,nonelec,106.594,9.23,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
 SG,M,2025-11-01,nonelec,95.967,7.73,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
 SG,M,2025-12-01,nonelec,107.148,4.77,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
-SG,M,2026-01-01,nonelec,103.529,1.02,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
-SG,M,2026-02-01,nonelec,81.233,-8.64,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
-SG,M,2026-03-01,nonelec,101.165,-1.87,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
-SG,M,2026-04-01,nonelec,98.321,1.28,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
-SG,M,2026-05-01,nonelec,92.806,-1.91,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
-SG,M,2026-06-01,nonelec,105.042,-0.05,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
-SG,M,2026-07-01,nonelec,107.427,4.4,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
-SG,M,2026-08-01,nonelec,96.488,6.17,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
-SG,M,2026-09-01,nonelec,107.156,1.83,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
+SG,M,2026-01-01,nonelec,103.434,0.93,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
+SG,M,2026-02-01,nonelec,81.086,-8.8,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
+SG,M,2026-03-01,nonelec,105.971,2.79,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
+SG,M,2026-04-01,nonelec,98.154,1.1,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
+SG,M,2026-05-01,nonelec,92.803,-1.92,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
+SG,M,2026-06-01,nonelec,105.113,0.02,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
+SG,M,2026-07-01,nonelec,107.276,4.26,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
+SG,M,2026-08-01,nonelec,97.604,7.4,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
+SG,M,2026-09-01,nonelec,109.5,4.06,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
+SG,M,2026-10-01,nonelec,112.738,5.76,y,"Total less Electronics cluster, EDB implied cluster weights, chain-linked (calculated)"
 TW,M,1982-01-01,19,26.93,,,MOEA IPI 2021 = 100: 石油及煤製品製造業 (TSIC 17)
 TW,M,1982-02-01,19,25.27,,,MOEA IPI 2021 = 100: 石油及煤製品製造業 (TSIC 17)
 TW,M,1982-03-01,19,25.31,,,MOEA IPI 2021 = 100: 石油及煤製品製造業 (TSIC 17)

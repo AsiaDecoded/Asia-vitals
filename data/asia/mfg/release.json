@@ -1,14 +1,14 @@
 {
- "code": "F3c0477fd",
- "label": "Manufacturing sources: JP to 2026-09-01; KR to 2026-09-01; MY to 2026-09-01; SG to 2026-09-01; HK to 2026-04-01; CN GVA to 2026-Q3",
+ "code": "Ffa066c86",
+ "label": "Manufacturing sources: JP to 2026-09-01; KR to 2026-09-01; MY to 2026-09-01; SG to 2026-10-01; HK to 2026-04-01; CN GVA to 2026-Q3",
  "economies": "HK JP KR MY SG TW",
- "processed_at": "2026-11-23T08:44:31Z",
- "rows": 10352,
+ "processed_at": "2026-11-26T21:46:11Z",
+ "rows": 10358,
  "warnings": [
   "not updated: TW: HTTPError: HTTP Error 403: Forbidden"
  ],
- "fingerprint": "3c0477fdbbba083c",
- "long_rows": 10352,
+ "fingerprint": "fa066c864ca0d133",
+ "long_rows": 10358,
  "history": [
   {
    "code": "Fcae665a5",
@@ -65,6 +65,10 @@
   {
    "code": "F3c0477fd",
    "processed_at": "2026-11-23T08:44:31Z"
+  },
+  {
+   "code": "Ffa066c86",
+   "processed_at": "2026-11-26T21:46:11Z"
   }
  ]
 }
