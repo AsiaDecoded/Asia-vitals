@@ -1,9 +1,9 @@
 {
- "code": "Rb7f4913748",
+ "code": "R23604ac4a4",
  "label": "453 of 627 CEIC series filled",
  "source": "core.asia_trade",
- "processed_at": "2026-11-25T13:36:27Z",
- "rows": 236773,
+ "processed_at": "2026-11-26T09:03:38Z",
+ "rows": 236817,
  "warnings": [],
  "history": [
   {
@@ -117,6 +117,10 @@
   {
    "code": "Rb7f4913748",
    "processed_at": "2026-11-25T13:36:27Z"
+  },
+  {
+   "code": "R23604ac4a4",
+   "processed_at": "2026-11-26T09:03:38Z"
   }
  ]
 }
