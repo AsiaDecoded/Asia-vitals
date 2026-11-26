@@ -252,6 +252,8 @@
    {"ref": "2026-12", "date": "2027-01-15", "from": "2027-01-15", "to": "2027-01-18", "status": "expected"},
    {"ref": "2027-01", "date": "2027-02-15", "from": "2027-02-15", "to": "2027-02-18", "status": "expected"},
    {"ref": "2027-02", "date": "2027-03-15", "from": "2027-03-15", "to": "2027-03-18", "status": "expected"}]},
+  "asia_gdp_mfg": {"label": "Asia GDP and manufacturing tab: rebuilt every day so national GDP and production releases are picked up within a day", "sources": ["mfg_asia"], "time_sgt": "08:00", "dates": [
+   {"ref": "2026-11-27/2027-03-31", "date": "2026-11-27", "from": "2026-11-27", "to": "2027-03-31", "status": "expected"}]},
   "oil_eia": {"label": "EIA Short-Term Energy Outlook (world oil balance)", "sources": ["oil_eia"], "time_sgt": "08:00", "dates": [
    {"ref": "2026-11", "date": "2026-11-24", "from": "2026-11-24", "to": "2026-11-30", "status": "expected"},
    {"ref": "2026-12", "date": "2026-12-08", "from": "2026-12-08", "to": "2026-12-15", "status": "expected"},
