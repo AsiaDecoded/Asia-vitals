@@ -1,17 +1,21 @@
 {
- "code": "T2026-09",
- "label": "2026-09",
- "latest_month": "2026-09-01",
+ "code": "T2026-10",
+ "label": "2026-10",
+ "latest_month": "2026-10-01",
  "source": "trade_jp",
  "table": "MOF customs suii CSVs d41ma, d42ma001-010, d61ma",
- "processed_at": "2026-11-24T11:15:14Z",
- "rows": 48381,
+ "processed_at": "2026-11-27T08:51:54Z",
+ "rows": 48466,
  "warnings": [],
- "fingerprint": "1197c43bf9971b42",
+ "fingerprint": "b2467625e6fd39ef",
  "history": [
   {
    "code": "T2026-09",
    "processed_at": "2026-11-24T11:15:14Z"
+  },
+  {
+   "code": "T2026-10",
+   "processed_at": "2026-11-27T08:51:54Z"
   }
  ]
 }

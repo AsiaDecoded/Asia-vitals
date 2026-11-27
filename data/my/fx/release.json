@@ -1,16 +1,16 @@
 {
- "code": "X2026-11-17",
- "label": "BIS daily to 2026-11-17",
- "latest_date": "2026-11-17",
+ "code": "X2026-11-24",
+ "label": "BIS daily to 2026-11-24",
+ "latest_date": "2026-11-24",
  "currency": "MYR",
  "unit": "Malaysian ringgit per US dollar",
  "first_date": "1971-01-04",
  "table": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/D.MY.MYR.A?format=csv",
- "processed_at": "2026-11-23T08:35:53Z",
- "rows": 14137,
+ "processed_at": "2026-11-27T08:43:34Z",
+ "rows": 14142,
  "warnings": [],
- "fingerprint": "d5da947ec073cbe1",
- "long_rows": 14137,
+ "fingerprint": "b22c8b6380402180",
+ "long_rows": 14142,
  "history": [
   {
    "code": "X2026-10-27",
@@ -27,6 +27,10 @@
   {
    "code": "X2026-11-17",
    "processed_at": "2026-11-23T08:35:53Z"
+  },
+  {
+   "code": "X2026-11-24",
+   "processed_at": "2026-11-27T08:43:34Z"
   }
  ]
 }

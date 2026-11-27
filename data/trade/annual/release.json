@@ -31,13 +31,13 @@
  "version": 3,
  "table": "UN Comtrade data/v1/get/C/A/HS",
  "eu_missing_latest_year": {},
- "processed_at": "2026-11-26T09:01:54Z",
+ "processed_at": "2026-11-27T09:24:04Z",
  "rows": 17087,
  "warnings": [],
  "history": [
   {
    "code": "A2026-10-02",
-   "processed_at": "2026-11-26T09:01:54Z"
+   "processed_at": "2026-11-27T09:24:04Z"
   }
  ]
 }

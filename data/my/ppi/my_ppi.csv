@@ -1205,3 +1205,9 @@ date,series,label,order,index,yoy,mom,index_sa,mom_sa
 2026-09-01,C,Manufacturing,3,127.5,9.442,0.87,,
 2026-09-01,D,"Electricity, gas, steam and air conditioning supply",4,130.7,5.488,-0.759,,
 2026-09-01,E,"Water supply, sewerage, waste management and remediation",5,142.8,3.179,0.351,142.9,0.492
+2026-10-01,total,"PPI, local production",0,132.2,13.966,1.771,132.7,1.453
+2026-10-01,A,"Agriculture, forestry and fishing",1,142.5,0.281,-1.656,147.2,-3.285
+2026-10-01,B,Mining and quarrying,2,149.1,75.412,8.358,148.0,5.488
+2026-10-01,C,Manufacturing,3,129.0,10.351,1.176,,
+2026-10-01,D,"Electricity, gas, steam and air conditioning supply",4,134.3,8.745,2.754,,
+2026-10-01,E,"Water supply, sewerage, waste management and remediation",5,143.7,2.278,0.63,143.4,0.35

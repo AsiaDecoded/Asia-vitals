@@ -1,12 +1,12 @@
 [
  {
-  "code": "X2026-11-17",
-  "label": "BIS daily to 2026-11-17",
-  "latest_date": "2026-11-17",
+  "code": "X2026-11-24",
+  "label": "BIS daily to 2026-11-24",
+  "latest_date": "2026-11-24",
   "currency": "SGD",
   "unit": "Singapore dollar per US dollar",
   "first_date": "1981-01-02",
   "table": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/D.SG.SGD.A?format=csv",
-  "processed_at": "2026-11-23T08:35:54Z"
+  "processed_at": "2026-11-27T08:43:45Z"
  }
 ]

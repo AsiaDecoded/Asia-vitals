@@ -1,15 +1,15 @@
 {
- "code": "P2026-09",
- "label": "Sep 2026",
- "latest_month": "2026-09-01",
+ "code": "P2026-10",
+ "label": "Oct 2026",
+ "latest_month": "2026-10-01",
  "table": "OpenDOSM ppi, ppi_1d (2010 base)",
- "dosm_last_updated": "2026-10-28 12:00",
- "dosm_next_update": "2026-11-27 12:00",
- "processed_at": "2026-10-30T01:14:04Z",
- "rows": 1206,
+ "dosm_last_updated": "2026-11-27 13:00",
+ "dosm_next_update": "2026-12-28 13:00",
+ "processed_at": "2026-11-27T08:40:39Z",
+ "rows": 1212,
  "warnings": [],
- "fingerprint": "624adfe13177cd2f",
- "long_rows": 4543,
+ "fingerprint": "6b5f69528d78c4ab",
+ "long_rows": 4569,
  "history": [
   {
    "code": "P2026-08",
@@ -18,6 +18,10 @@
   {
    "code": "P2026-09",
    "processed_at": "2026-10-30T01:14:04Z"
+  },
+  {
+   "code": "P2026-10",
+   "processed_at": "2026-11-27T08:40:39Z"
   }
  ]
 }

@@ -1,16 +1,16 @@
 {
- "code": "X2026-11-17",
- "label": "BIS daily to 2026-11-17",
- "latest_date": "2026-11-17",
+ "code": "X2026-11-24",
+ "label": "BIS daily to 2026-11-24",
+ "latest_date": "2026-11-24",
  "currency": "PHP",
  "unit": "Philippine peso per US dollar",
  "first_date": "1978-01-03",
  "table": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/D.PH.PHP.A?format=csv",
- "processed_at": "2026-11-23T08:36:11Z",
- "rows": 12320,
+ "processed_at": "2026-11-27T08:43:49Z",
+ "rows": 12325,
  "warnings": [],
- "fingerprint": "b43b65f49cfb05c4",
- "long_rows": 12320,
+ "fingerprint": "09f9f1c8eddab4ba",
+ "long_rows": 12325,
  "history": [
   {
    "code": "X2026-10-27",
@@ -27,6 +27,10 @@
   {
    "code": "X2026-11-17",
    "processed_at": "2026-11-23T08:36:11Z"
+  },
+  {
+   "code": "X2026-11-24",
+   "processed_at": "2026-11-27T08:43:49Z"
   }
  ]
 }

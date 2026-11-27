@@ -1,16 +1,16 @@
 {
- "code": "X2026-11-17",
- "label": "BIS daily to 2026-11-17",
- "latest_date": "2026-11-17",
+ "code": "X2026-11-24",
+ "label": "BIS daily to 2026-11-24",
+ "latest_date": "2026-11-24",
  "currency": "CNY",
  "unit": "Chinese renminbi per US dollar",
  "first_date": "1981-01-02",
  "table": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/D.CN.CNY.A?format=csv",
- "processed_at": "2026-11-23T08:35:45Z",
- "rows": 11591,
+ "processed_at": "2026-11-27T08:42:17Z",
+ "rows": 11596,
  "warnings": [],
- "fingerprint": "03e6ae03e04433d2",
- "long_rows": 11591,
+ "fingerprint": "b010a9d770ae324c",
+ "long_rows": 11596,
  "history": [
   {
    "code": "X2026-10-27",
@@ -27,6 +27,10 @@
   {
    "code": "X2026-11-17",
    "processed_at": "2026-11-23T08:35:45Z"
+  },
+  {
+   "code": "X2026-11-24",
+   "processed_at": "2026-11-27T08:42:17Z"
   }
  ]
 }

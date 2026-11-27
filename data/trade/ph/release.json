@@ -1,12 +1,12 @@
 {
- "code": "T2026-09b6",
- "label": "2026-09",
- "latest_month": "2026-09-01",
+ "code": "T2026-10b6",
+ "label": "2026-10",
+ "latest_month": "2026-10-01",
  "source": "trade_ph",
  "backfill_complete": false,
  "table": "PSA OpenSTAT DB/2L/IMT SUM/0012L4DFTS0, FOB and CIF yearly tables",
- "processed_at": "2026-11-26T08:37:49Z",
- "rows": 3844,
+ "processed_at": "2026-11-27T09:00:42Z",
+ "rows": 3934,
  "warnings": [],
  "fetched": 3,
  "history": [
@@ -17,6 +17,10 @@
   {
    "code": "T2026-09b6",
    "processed_at": "2026-11-26T08:37:49Z"
+  },
+  {
+   "code": "T2026-10b6",
+   "processed_at": "2026-11-27T09:00:42Z"
   }
  ]
 }
