@@ -1,0 +1,67 @@
+run at 2026-11-28T07:52:13Z UTC; sources: in_cpi_imf in_gdp_mospi in_gdp_intl in_iip_mospi sg_cpi_singstat sg_ppi_singstat my_ppi_dosm th_xmpi_tpso th_mpi_oie mfg_asia trade_jp trade_tw trade_th trade_hk trade_ph trade_id trade_in trade_sg trade_kr trade_cn trade_my trade_vn trade_comtrade oil_eia oil_crude
+== in_cpi_imf
+   unchanged: no change (latest 2026-09-01)
+== in_gdp_mospi
+   unchanged: no change (2026-27 Q1 (2022-23 base): real GDP 7.8%, nominal 10.3% y/y)
+== in_gdp_intl
+   unchanged: no change (WDI updated 2026-11-11, to 2025 (2025-26))
+== in_iip_mospi
+   unchanged: no change (2026-09: IIP 6.7%, manufacturing 7.6% y/y (2022-23 base))
+== sg_cpi_singstat
+   unchanged: no change (latest 2026-10-01)
+== sg_ppi_singstat
+   unchanged: no change (latest 2026-09-01)
+== my_ppi_dosm
+   unchanged: no change (latest 2026-10-01)
+== th_xmpi_tpso
+   UPDATED: Oct 2026: 3542 rows, 6 months fetched
+== th_mpi_oie
+   unchanged: no change (Sep 2026)
+== mfg_asia
+   unchanged: no change; JP to 2026-09-01; KR to 2026-09-01; MY to 2026-09-01; SG to 2026-10-01; HK to 2026-04-01; CN GVA to 2026-Q3
+   WARNING: not updated: TW: HTTPError: HTTP Error 403: Forbidden
+== trade_jp
+   unchanged: no change (latest 2026-10)
+== trade_tw
+   unchanged: no change (latest 2026-10)
+== trade_th
+   UPDATED: 2026-10: 37592 rows, 45 calls
+== trade_hk
+   UPDATED: 2026-09: 29956 rows, 32 calls
+== trade_ph
+   UPDATED: 2026-10: 3934 rows, 3 year tables (backfill continuing)
+== trade_id
+   UPDATED: 2026-09: 7353 rows
+== trade_in
+   UPDATED: 2026-09: 465 rows, 42 queries (backfill continuing)
+== trade_sg
+   UPDATED: 2026-10: 50479 rows, 5 detail months
+== trade_kr
+   UPDATED: 2026-10: 14794 rows, 11 queries
+== trade_cn
+   UPDATED: 2026-09: 2944 rows, 6 pages
+== trade_my
+   UPDATED: 2026-10: 2626 rows
+   WARNING: METS Exports HS2_digit ['85'] 2012-2016: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))
+   WARNING: METS Exports HS2_digit ['85'] 2017-2021: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))
+   WARNING: METS Exports HS2_digit ['85'] 2022-2026: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))
+   WARNING: METS Exports HS4_digit ['8419', '8470'] 2012-2016: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))
+   WARNING: METS Exports HS4_digit ['8419', '8470'] 2017-2021: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)'))
+== trade_vn
+   UPDATED: 2026-10: 63 rows
+== trade_comtrade
+   UPDATED: 17087 rows; refreshed []; latest years {'CN': 2025, 'HK': 2025, 'ID': 2025, 'IN': 2025, 'JP': 2025, 'KR': 2025, 'MY': 2025, 'PH': 2025, 'SG': 2025, 'TH': 2025, 'VN': 2023}
+== oil_eia
+   unchanged: no change (November 2026 STEO)
+== oil_crude
+   UPDATED: CN to 2026-09; IN to 2026-09; JP to 2026-10; KR to 2026-10; TH to 2026-09; VN to 2026-10
+   WARNING: ID: no monthly crude oil row in BPS var 2173; labels: ['Jumlah', 'Migas', 'Non Migas', 'Tidak ada']
+== combined long file: 1364425 rows
+== Asia table: unchanged: Asia table unchanged
+== Asia FX: unchanged: Asia FX unchanged
+   WARNING: latest dates differ: TW 2026-11-23
+== Asia manufacturing: unchanged: Asia manufacturing unchanged (HK IN JP KR MY PH SG TH TW VN)
+== Asia trade: UPDATED: 237142 rows; 453 of 627 CEIC series filled
+   WARNING: ACTION: release calendar for Asia GDP and manufacturing tab: rebuilt every day so national GDP and production releases are picked up within a day ends 2026-11-27: add the next dates to pipeline/release_calendar.json
+   WARNING: ACTION: release calendar for Asia trade dump (national sources): daily backfill runs ends 2026-12-31: add the next dates to pipeline/release_calendar.json
+result: updated=['th_xmpi_tpso', 'trade_th', 'trade_hk', 'trade_ph', 'trade_id', 'trade_in', 'trade_sg', 'trade_kr', 'trade_cn', 'trade_my', 'trade_vn', 'trade_comtrade', 'oil_crude'] failed=-
