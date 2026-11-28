@@ -1,17 +1,17 @@
 [
  {
-  "code": "P2026-09",
-  "label": "Sep 2026",
-  "latest_month": "2026-09-01",
+  "code": "P2026-10",
+  "label": "Oct 2026",
+  "latest_month": "2026-10-01",
   "latest": {
-   "EXI": "2026-09",
-   "IMI": "2026-09"
+   "EXI": "2026-10",
+   "IMI": "2026-10"
   },
   "published_at": {
-   "EXI": "2026-10-28T04:21:13.859326Z",
-   "IMI": "2026-10-28T04:21:13.859326Z"
+   "EXI": "2026-11-27T08:49:15.90148Z",
+   "IMI": "2026-11-27T08:49:15.90148Z"
   },
   "table": "TPSO Open API: Imex, types EXI and IMI, base 2012 (BE 2555)",
-  "processed_at": "2026-10-28T06:29:33Z"
+  "processed_at": "2026-11-28T07:57:33Z"
  }
 ]

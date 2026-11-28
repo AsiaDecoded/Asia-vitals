@@ -5,7 +5,7 @@
  "source": "trade_th",
  "backfill_complete": true,
  "table": "MOC tradereport API: summarycountries, exportharmonizecountries, importharmonizecountries",
- "processed_at": "2026-11-27T08:55:03Z",
+ "processed_at": "2026-11-28T08:08:41Z",
  "rows": 37592,
  "warnings": [],
  "fetched": 45,
@@ -48,7 +48,7 @@
   },
   {
    "code": "T2026-10",
-   "processed_at": "2026-11-27T08:55:03Z"
+   "processed_at": "2026-11-28T08:08:41Z"
   }
  ]
 }

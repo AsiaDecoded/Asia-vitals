@@ -97,6 +97,7 @@ IN,exports,WLD,TOTAL,2026-06-01,40014.06,USD million,40014.06,,TradeStat commodi
 IN,exports,WLD,TOTAL,2026-07-01,44267.64,USD million,44267.64,,TradeStat commoditywise HS2 total India's Total Export
 IN,exports,WLD,TOTAL,2026-08-01,43722.55,USD million,43722.55,,TradeStat commoditywise HS2 total India's Total Export
 IN,exports,WLD,TOTAL,2026-09-01,44355.26,USD million,44355.26,,TradeStat commoditywise HS2 total India's Total Export
+IN,exports,US,TOTAL,2025-08-01,6829.03,USD million,6829.03,,TradeStat country_wise_all_commodities US
 IN,exports,US,TOTAL,2025-09-01,5425.06,USD million,5425.06,,TradeStat country_wise_all_commodities US
 IN,exports,US,TOTAL,2025-10-01,6262.29,USD million,6262.29,,TradeStat country_wise_all_commodities US
 IN,exports,US,TOTAL,2025-11-01,6930.42,USD million,6930.42,,TradeStat country_wise_all_commodities US
@@ -110,6 +111,7 @@ IN,exports,US,TOTAL,2026-06-01,8161.16,USD million,8161.16,,TradeStat country_wi
 IN,exports,US,TOTAL,2026-07-01,9007.33,USD million,9007.33,,TradeStat country_wise_all_commodities US
 IN,exports,US,TOTAL,2026-08-01,8321.35,USD million,8321.35,,TradeStat country_wise_all_commodities US
 IN,exports,US,TOTAL,2026-09-01,8027.95,USD million,8027.95,,TradeStat country_wise_all_commodities US
+IN,exports,CN,TOTAL,2025-08-01,1207.49,USD million,1207.49,,TradeStat country_wise_all_commodities CN
 IN,exports,CN,TOTAL,2025-09-01,1456.2,USD million,1456.2,,TradeStat country_wise_all_commodities CN
 IN,exports,CN,TOTAL,2025-10-01,1611.8,USD million,1611.8,,TradeStat country_wise_all_commodities CN
 IN,exports,CN,TOTAL,2025-11-01,2194.08,USD million,2194.08,,TradeStat country_wise_all_commodities CN
@@ -123,6 +125,7 @@ IN,exports,CN,TOTAL,2026-06-01,1797.64,USD million,1797.64,,TradeStat country_wi
 IN,exports,CN,TOTAL,2026-07-01,2186.67,USD million,2186.67,,TradeStat country_wise_all_commodities CN
 IN,exports,CN,TOTAL,2026-08-01,1827.4,USD million,1827.4,,TradeStat country_wise_all_commodities CN
 IN,exports,CN,TOTAL,2026-09-01,1798.72,USD million,1798.72,,TradeStat country_wise_all_commodities CN
+IN,exports,HK,TOTAL,2025-08-01,584.7,USD million,584.7,,TradeStat country_wise_all_commodities HK
 IN,exports,HK,TOTAL,2025-09-01,1115.1,USD million,1115.1,,TradeStat country_wise_all_commodities HK
 IN,exports,HK,TOTAL,2025-10-01,616.92,USD million,616.92,,TradeStat country_wise_all_commodities HK
 IN,exports,HK,TOTAL,2025-11-01,619.99,USD million,619.99,,TradeStat country_wise_all_commodities HK
@@ -136,6 +139,7 @@ IN,exports,HK,TOTAL,2026-06-01,620.33,USD million,620.33,,TradeStat country_wise
 IN,exports,HK,TOTAL,2026-07-01,745.02,USD million,745.02,,TradeStat country_wise_all_commodities HK
 IN,exports,HK,TOTAL,2026-08-01,811.9,USD million,811.9,,TradeStat country_wise_all_commodities HK
 IN,exports,HK,TOTAL,2026-09-01,1322.81,USD million,1322.81,,TradeStat country_wise_all_commodities HK
+IN,exports,JP,TOTAL,2025-08-01,413.17,USD million,413.17,,TradeStat country_wise_all_commodities JP
 IN,exports,JP,TOTAL,2025-09-01,512.63,USD million,512.63,,TradeStat country_wise_all_commodities JP
 IN,exports,JP,TOTAL,2025-10-01,465.05,USD million,465.05,,TradeStat country_wise_all_commodities JP
 IN,exports,JP,TOTAL,2025-11-01,485.25,USD million,485.25,,TradeStat country_wise_all_commodities JP
@@ -149,6 +153,7 @@ IN,exports,JP,TOTAL,2026-06-01,606.25,USD million,606.25,,TradeStat country_wise
 IN,exports,JP,TOTAL,2026-07-01,938.7,USD million,938.7,,TradeStat country_wise_all_commodities JP
 IN,exports,JP,TOTAL,2026-08-01,743.85,USD million,743.85,,TradeStat country_wise_all_commodities JP
 IN,exports,JP,TOTAL,2026-09-01,683.11,USD million,683.11,,TradeStat country_wise_all_commodities JP
+IN,exports,TW,TOTAL,2025-08-01,175.17,USD million,175.17,,TradeStat country_wise_all_commodities TW
 IN,exports,TW,TOTAL,2025-09-01,140.33,USD million,140.33,,TradeStat country_wise_all_commodities TW
 IN,exports,TW,TOTAL,2025-10-01,147.82,USD million,147.82,,TradeStat country_wise_all_commodities TW
 IN,exports,TW,TOTAL,2025-11-01,195.93,USD million,195.93,,TradeStat country_wise_all_commodities TW
@@ -162,6 +167,7 @@ IN,exports,TW,TOTAL,2026-06-01,212.75,USD million,212.75,,TradeStat country_wise
 IN,exports,TW,TOTAL,2026-07-01,214.93,USD million,214.93,,TradeStat country_wise_all_commodities TW
 IN,exports,TW,TOTAL,2026-08-01,168.82,USD million,168.82,,TradeStat country_wise_all_commodities TW
 IN,exports,TW,TOTAL,2026-09-01,186.57,USD million,186.57,,TradeStat country_wise_all_commodities TW
+IN,exports,KR,TOTAL,2025-08-01,492.93,USD million,492.93,,TradeStat country_wise_all_commodities KR
 IN,exports,KR,TOTAL,2025-09-01,520.29,USD million,520.29,,TradeStat country_wise_all_commodities KR
 IN,exports,KR,TOTAL,2025-10-01,450.18,USD million,450.18,,TradeStat country_wise_all_commodities KR
 IN,exports,KR,TOTAL,2025-11-01,448.95,USD million,448.95,,TradeStat country_wise_all_commodities KR
@@ -175,6 +181,7 @@ IN,exports,KR,TOTAL,2026-06-01,571.76,USD million,571.76,,TradeStat country_wise
 IN,exports,KR,TOTAL,2026-07-01,579.41,USD million,579.41,,TradeStat country_wise_all_commodities KR
 IN,exports,KR,TOTAL,2026-08-01,700.09,USD million,700.09,,TradeStat country_wise_all_commodities KR
 IN,exports,KR,TOTAL,2026-09-01,729.86,USD million,729.86,,TradeStat country_wise_all_commodities KR
+IN,exports,ID,TOTAL,2025-08-01,347.11,USD million,347.11,,TradeStat country_wise_all_commodities ID
 IN,exports,ID,TOTAL,2025-09-01,412.33,USD million,412.33,,TradeStat country_wise_all_commodities ID
 IN,exports,ID,TOTAL,2025-10-01,336.68,USD million,336.68,,TradeStat country_wise_all_commodities ID
 IN,exports,ID,TOTAL,2025-11-01,333.96,USD million,333.96,,TradeStat country_wise_all_commodities ID
@@ -253,6 +260,7 @@ IN,exports,VN,TOTAL,2026-06-01,646.02,USD million,646.02,,TradeStat country_wise
 IN,exports,VN,TOTAL,2026-07-01,629.82,USD million,629.82,,TradeStat country_wise_all_commodities VN
 IN,exports,VN,TOTAL,2026-08-01,602.29,USD million,602.29,,TradeStat country_wise_all_commodities VN
 IN,exports,VN,TOTAL,2026-09-01,648.63,USD million,648.63,,TradeStat country_wise_all_commodities VN
+IN,imports,WLD,HS2709,2025-08-01,9827.57,USD million,9827.57,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M
 IN,imports,WLD,HS2709,2025-09-01,10706.32,USD million,10706.32,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M
 IN,imports,WLD,HS2709,2025-10-01,11291.12,USD million,11291.12,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M
 IN,imports,WLD,HS2709,2025-11-01,10945.46,USD million,10945.46,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M
@@ -266,6 +274,7 @@ IN,imports,WLD,HS2709,2026-06-01,14765.1,USD million,14765.1,,TradeStat commodit
 IN,imports,WLD,HS2709,2026-07-01,14212.43,USD million,14212.43,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M
 IN,imports,WLD,HS2709,2026-08-01,12239.58,USD million,12239.58,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M
 IN,imports,WLD,HS2709,2026-09-01,14247.06,USD million,14247.06,,TradeStat commoditywise HS4 2709 PETROLEUM OILS AND OILS OBTAINED FROM BITUMINOUS M
+IN,imports,WLD,HS2710,2025-08-01,771.86,USD million,771.86,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER 
 IN,imports,WLD,HS2710,2025-09-01,721.08,USD million,721.08,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER 
 IN,imports,WLD,HS2710,2025-10-01,901.04,USD million,901.04,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER 
 IN,imports,WLD,HS2710,2025-11-01,663.99,USD million,663.99,,TradeStat commoditywise HS4 2710 PETROLEUM OILSAND OILS OBTND FRM BITMNS MNRLOTHER 
@@ -293,6 +302,7 @@ IN,imports,WLD,TOTAL,2026-06-01,70779.77,USD million,70779.77,,TradeStat commodi
 IN,imports,WLD,TOTAL,2026-07-01,76158.34,USD million,76158.34,,TradeStat commoditywise HS2 total India's Total Import
 IN,imports,WLD,TOTAL,2026-08-01,71000.33,USD million,71000.33,,TradeStat commoditywise HS2 total India's Total Import
 IN,imports,WLD,TOTAL,2026-09-01,74604.61,USD million,74604.61,,TradeStat commoditywise HS2 total India's Total Import
+IN,imports,US,TOTAL,2025-08-01,3601.95,USD million,3601.95,,TradeStat country_wise_all_commodities US
 IN,imports,US,TOTAL,2025-09-01,3986.87,USD million,3986.87,,TradeStat country_wise_all_commodities US
 IN,imports,US,TOTAL,2025-10-01,4515.07,USD million,4515.07,,TradeStat country_wise_all_commodities US
 IN,imports,US,TOTAL,2025-11-01,5260.68,USD million,5260.68,,TradeStat country_wise_all_commodities US
@@ -306,6 +316,7 @@ IN,imports,US,TOTAL,2026-06-01,5509.22,USD million,5509.22,,TradeStat country_wi
 IN,imports,US,TOTAL,2026-07-01,5468.54,USD million,5468.54,,TradeStat country_wise_all_commodities US
 IN,imports,US,TOTAL,2026-08-01,6323.19,USD million,6323.19,,TradeStat country_wise_all_commodities US
 IN,imports,US,TOTAL,2026-09-01,4238.52,USD million,4238.52,,TradeStat country_wise_all_commodities US
+IN,imports,CN,TOTAL,2025-08-01,10913.85,USD million,10913.85,,TradeStat country_wise_all_commodities CN
 IN,imports,CN,TOTAL,2025-09-01,11301.43,USD million,11301.43,,TradeStat country_wise_all_commodities CN
 IN,imports,CN,TOTAL,2025-10-01,11103.35,USD million,11103.35,,TradeStat country_wise_all_commodities CN
 IN,imports,CN,TOTAL,2025-11-01,10278.96,USD million,10278.96,,TradeStat country_wise_all_commodities CN
@@ -319,6 +330,7 @@ IN,imports,CN,TOTAL,2026-06-01,13339.38,USD million,13339.38,,TradeStat country_
 IN,imports,CN,TOTAL,2026-07-01,14670.21,USD million,14670.21,,TradeStat country_wise_all_commodities CN
 IN,imports,CN,TOTAL,2026-08-01,12777.56,USD million,12777.56,,TradeStat country_wise_all_commodities CN
 IN,imports,CN,TOTAL,2026-09-01,14863.94,USD million,14863.94,,TradeStat country_wise_all_commodities CN
+IN,imports,HK,TOTAL,2025-08-01,2095.63,USD million,2095.63,,TradeStat country_wise_all_commodities HK
 IN,imports,HK,TOTAL,2025-09-01,2538.82,USD million,2538.82,,TradeStat country_wise_all_commodities HK
 IN,imports,HK,TOTAL,2025-10-01,3451.46,USD million,3451.46,,TradeStat country_wise_all_commodities HK
 IN,imports,HK,TOTAL,2025-11-01,1869.16,USD million,1869.16,,TradeStat country_wise_all_commodities HK
@@ -332,6 +344,7 @@ IN,imports,HK,TOTAL,2026-06-01,1861.33,USD million,1861.33,,TradeStat country_wi
 IN,imports,HK,TOTAL,2026-07-01,2078.86,USD million,2078.86,,TradeStat country_wise_all_commodities HK
 IN,imports,HK,TOTAL,2026-08-01,2166.64,USD million,2166.64,,TradeStat country_wise_all_commodities HK
 IN,imports,HK,TOTAL,2026-09-01,3059.64,USD million,3059.64,,TradeStat country_wise_all_commodities HK
+IN,imports,JP,TOTAL,2025-08-01,1797.56,USD million,1797.56,,TradeStat country_wise_all_commodities JP
 IN,imports,JP,TOTAL,2025-09-01,2012.79,USD million,2012.79,,TradeStat country_wise_all_commodities JP
 IN,imports,JP,TOTAL,2025-10-01,1861.9,USD million,1861.9,,TradeStat country_wise_all_commodities JP
 IN,imports,JP,TOTAL,2025-11-01,1802.65,USD million,1802.65,,TradeStat country_wise_all_commodities JP
@@ -345,6 +358,7 @@ IN,imports,JP,TOTAL,2026-06-01,1745.58,USD million,1745.58,,TradeStat country_wi
 IN,imports,JP,TOTAL,2026-07-01,1821.86,USD million,1821.86,,TradeStat country_wise_all_commodities JP
 IN,imports,JP,TOTAL,2026-08-01,1969.55,USD million,1969.55,,TradeStat country_wise_all_commodities JP
 IN,imports,JP,TOTAL,2026-09-01,1687.07,USD million,1687.07,,TradeStat country_wise_all_commodities JP
+IN,imports,TW,TOTAL,2025-08-01,771.3,USD million,771.3,,TradeStat country_wise_all_commodities TW
 IN,imports,TW,TOTAL,2025-09-01,626.99,USD million,626.99,,TradeStat country_wise_all_commodities TW
 IN,imports,TW,TOTAL,2025-10-01,706.85,USD million,706.85,,TradeStat country_wise_all_commodities TW
 IN,imports,TW,TOTAL,2025-11-01,627.65,USD million,627.65,,TradeStat country_wise_all_commodities TW
@@ -358,6 +372,7 @@ IN,imports,TW,TOTAL,2026-06-01,1498.14,USD million,1498.14,,TradeStat country_wi
 IN,imports,TW,TOTAL,2026-07-01,1621.23,USD million,1621.23,,TradeStat country_wise_all_commodities TW
 IN,imports,TW,TOTAL,2026-08-01,1606.7,USD million,1606.7,,TradeStat country_wise_all_commodities TW
 IN,imports,TW,TOTAL,2026-09-01,1171.34,USD million,1171.34,,TradeStat country_wise_all_commodities TW
+IN,imports,KR,TOTAL,2025-08-01,1902.52,USD million,1902.52,,TradeStat country_wise_all_commodities KR
 IN,imports,KR,TOTAL,2025-09-01,1743.15,USD million,1743.15,,TradeStat country_wise_all_commodities KR
 IN,imports,KR,TOTAL,2025-10-01,1726.11,USD million,1726.11,,TradeStat country_wise_all_commodities KR
 IN,imports,KR,TOTAL,2025-11-01,1677.77,USD million,1677.77,,TradeStat country_wise_all_commodities KR

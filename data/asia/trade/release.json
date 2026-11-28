@@ -1,9 +1,9 @@
 {
- "code": "Rc463fd265f",
+ "code": "R19fa06e23c",
  "label": "453 of 627 CEIC series filled",
  "source": "core.asia_trade",
- "processed_at": "2026-11-27T09:24:46Z",
- "rows": 237107,
+ "processed_at": "2026-11-28T08:38:50Z",
+ "rows": 237142,
  "warnings": [],
  "history": [
   {
@@ -125,6 +125,10 @@
   {
    "code": "Rc463fd265f",
    "processed_at": "2026-11-27T09:24:46Z"
+  },
+  {
+   "code": "R19fa06e23c",
+   "processed_at": "2026-11-28T08:38:50Z"
   }
  ]
 }

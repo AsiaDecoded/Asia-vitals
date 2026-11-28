@@ -1,11 +1,11 @@
 [
  {
-  "code": "T2026-09b367",
+  "code": "T2026-09b381",
   "label": "2026-09",
   "latest_month": "2026-09-01",
   "source": "trade_in",
   "backfill_complete": false,
   "table": "Commerce TradeStat MEIDB",
-  "processed_at": "2026-11-27T09:05:01Z"
+  "processed_at": "2026-11-28T08:18:14Z"
  }
 ]

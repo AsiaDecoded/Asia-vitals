@@ -3530,3 +3530,14 @@ date,type,series,code,label,order,index,yoy,mom
 2026-09-01,IMI,m_intermediate,300,Raw materials and intermediate goods,8,136.6,9.2,0.4
 2026-09-01,IMI,m_consumer,400,Consumer goods,9,141.2,5.9,0.5
 2026-09-01,IMI,m_vehicles,500,Vehicles and transport equipment,10,94.3,1.5,0.3
+2026-10-01,EXI,export,000,"Export prices, all items",0,115.7,3.6,0.3
+2026-10-01,EXI,x_agri,100,Agricultural products,1,130.3,12.4,2.0
+2026-10-01,EXI,x_agroindustry,200,Agro-industrial products,2,130.3,1.2,0.3
+2026-10-01,EXI,x_industry,300,Manufactured products,3,113.1,1.3,-0.1
+2026-10-01,EXI,x_mineral_fuel,400,Mineral and fuel products,4,145.6,56.2,3.3
+2026-10-01,IMI,import,000,"Import prices, all items",5,131.7,13.0,0.8
+2026-10-01,IMI,m_fuel,100,Fuel,6,150.8,57.1,3.8
+2026-10-01,IMI,m_capital,200,Capital goods,7,125.8,5.1,0.4
+2026-10-01,IMI,m_intermediate,300,Raw materials and intermediate goods,8,136.5,7.6,-0.1
+2026-10-01,IMI,m_consumer,400,Consumer goods,9,141.3,5.6,0.1
+2026-10-01,IMI,m_vehicles,500,Vehicles and transport equipment,10,93.8,1.0,-0.5

@@ -11,7 +11,7 @@
  },
  "source": "oil_crude",
  "table": "national sources (see the source's docstring)",
- "processed_at": "2026-11-27T09:24:26Z",
+ "processed_at": "2026-11-28T08:38:24Z",
  "rows": 1388,
  "warnings": [
   "ID: no monthly crude oil row in BPS var 2173; labels: ['Jumlah', 'Migas', 'Non Migas', 'Tidak ada']"
@@ -19,7 +19,7 @@
  "history": [
   {
    "code": "O2026-10",
-   "processed_at": "2026-11-27T09:24:26Z"
+   "processed_at": "2026-11-28T08:38:24Z"
   }
  ]
 }
